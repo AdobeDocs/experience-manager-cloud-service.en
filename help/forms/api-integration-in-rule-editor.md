@@ -46,12 +46,16 @@ The screenshot below displays the API integration configuration window:
 * **API URL**: Endpoint of the API service.  
 * **Select HTTP Method**: The HTTP request method used to call the API.  
 * **Content Type**: Defines the request and response format.  
-* **Encryption Required**: (Optional) Ensures sensitive data is encrypted during transmission.  
+* **Encryption Required**: (Optional) When selected, request and response payloads can be encrypted using custom functions in **function.js**. A **Public Key** field appears. Paste your public key into this field before saving the API integration configuration.  
 * **Execute at Client**: When enabled, the API call is made from the client (browser) instead of the server.  
+
+>[!NOTE]
+>
+> For steps and sample **encrypt** and **decrypt** functions, see [Encryption and decryption](#encryption-and-decryption).
 
 **Authentication Type**  
 
-* **Options**: None, Basic, API Key, OAuth 2.0.  
+* **Options**: None, Basic, API Key.  
 
 **Input Parameters**
 
@@ -121,6 +125,47 @@ Similarly, **Country of Passport Issuance** and **Destination Country** use the 
 >[!NOTE]
 >
 > You can [retrieve property values from a JSON array by invoking an API and using a custom function](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array). This approach lets you extract values and bind them directly to form fields.
+
+## Encryption and decryption
+
+When **Encryption Required** is selected, the Rule Editor invokes **encrypt** before each outgoing request and **decrypt** after a successful response. If you do not add custom logic in **function.js**, both functions return the payload unchanged.
+
+To encrypt and decrypt request and response data, add **encrypt** and **decrypt** functions to **function.js**:
+
+1. Open the **function.js** file for your Adaptive Form.
+2. Add an **encrypt** function to transform the request (body, headers, and related options) before the API call.
+3. Add a **decrypt** function to transform the response after a successful API call. The **decrypt** function receives the encrypted response and **originalRequest**, which includes any **cryptoMetadata** set during encryption.
+4. Save **function.js**, then test the integration using **Invoke Service** in the Rule Editor.
+
+The following sample code demonstrates how to add **encrypt** and **decrypt** functions in **function.js**. 
+
+The **encrypt** function runs before each request. It can receive a payload with **body**, **headers**, optional **cryptoMetadata**, and optional Fetch API options. It must return encrypted **body** and **headers**, and optional **cryptoMetadata** for use during decryption:
+
+```javascript
+async function encrypt(payload) {
+    const { body, headers, options } = payload;
+    const { encryptedBody, encryptedKey } = await myRsaEncrypt(body);
+    return {
+        body: encryptedBody,
+        headers: { ...headers, 'X-Encrypted-Key': encryptedKey },
+        cryptoMetadata: { keyId: 'rsa-2048-v1' },
+        options
+    };
+}
+```
+
+The following sample code demonstrates a **decrypt** function for successful responses. It receives **encryptedData** and **originalRequest**, and returns the decrypted response (for example, a JSON object):
+
+```javascript
+async function decrypt(encryptedData, originalRequest) {
+    const { keyId } = originalRequest?.cryptoMetadata || {};
+    return await myRsaDecrypt(encryptedData, keyId);
+}
+```
+
+>[!NOTE]
+>
+> In the above examples, replace `myRsaEncrypt` and `myRsaDecrypt` with your encryption functions. 
 
 ## Implementing Retry Mechanism for API Failures
 
@@ -203,4 +248,4 @@ In the above code, the **retryHandler** function manages API requests with autom
 No. With the Visual Rule Editor, you can directly integrate APIs using the **Create API Integration** option without creating a Form Data Model. This approach is best suited for lightweight or form-specific use cases.
 
 * **Can I secure API calls made from the Rule Editor?**  
-Yes. The API Integration Configuration provides authentication options such as **Basic, API Key, and OAuth 2.0**. You can also enable **Encryption Required** to ensure sensitive data is securely transmitted.
+Yes. The API Integration Configuration provides authentication options such as **Basic** and **API Key**. You can also select **Encryption Required** and add custom **encrypt** and **decrypt** logic in **function.js**. For configuration steps and examples, see [Encryption and decryption](#encryption-and-decryption).
