@@ -333,6 +333,7 @@ user-guide-title: AEM as a Cloud Service
   + [JWT Credentials Deprecation in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
   + [Open ID Connect Support for AEM as a Cloud Service on Publish Tier](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
   + [Setting Up IMS Integrations for AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
+  + [Adobe-Managed API Integrations in Adobe Admin Console](/help/security/adobe-managed-api-integrations-in-adobe-admin-console.md)
   + [Principal View for Permissions Management](/help/security/touch-ui-principal-view.md)
   + [Best Practices for Sling Service User Mapping and Service User Definition](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
   + [Customer Managed Keys for Adobe as a Cloud Service](/help/security/customer-managed-keys.md)
