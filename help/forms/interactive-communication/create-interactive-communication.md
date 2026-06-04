@@ -89,7 +89,7 @@ Start building Interactive Communications to streamline your workflows and deliv
 
 ## See also
 
-- [Review and Annotate an Interactive Communication](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md) — Collaborate with reviewers using positioned annotation pins on the IC canvas.
-- [Compare Interactive Communication Versions](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md) — Inspect layout and content differences between two versions side by side.
-- [Merge and Split Table Cells](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md) — Create flexible table layouts by merging or splitting cells.
-- [Move a Component to the Master Page](/help/forms/interactive-communication/howto/move-component-to-master-page.md) — Ensure consistent cross-page component placement.
+* [Review and Annotate an Interactive Communication](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md) — Collaborate with reviewers using positioned annotation pins on the IC canvas.
+* [Compare Interactive Communication Versions](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md) — Inspect layout and content differences between two versions side by side.
+* [Merge and Split Table Cells](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md) — Create flexible table layouts by merging or splitting cells.
+* [Move a Component to the Master Page](/help/forms/interactive-communication/howto/move-component-to-master-page.md) — Ensure consistent cross-page component placement.

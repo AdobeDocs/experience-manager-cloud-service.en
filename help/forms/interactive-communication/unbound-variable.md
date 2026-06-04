@@ -10,7 +10,7 @@ exl-id: unbound-variable-ic-editor
 
 # Unbound Variable Component in Interactive Communication Editor
 
-[!NOTE]
+>[!NOTE]
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
