@@ -45,7 +45,7 @@ To create a Smart Collection:
 
 1. Select **Create smart collection**.
 
-The Smart Collection is created and automatically includes assets that match the configured search criteria.
+The Smart Collection is created and automatically includes assets that match the configured search criteria
 
 ## View Smart Collections {#view-smart-collections}
 
