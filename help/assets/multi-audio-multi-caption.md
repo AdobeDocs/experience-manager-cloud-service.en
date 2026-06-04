@@ -132,7 +132,7 @@ After processing:
 
 ## Download caption or audio files {#download-tracks}
 
-1. Select caption or audio file.
+1. Select caption or audio file
 
 2. Click **Download**.
 
