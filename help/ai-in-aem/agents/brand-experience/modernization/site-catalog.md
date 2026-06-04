@@ -130,3 +130,4 @@ The site catalog skill has the following limitations.
 * **Public sites only** — The target must be publicly accessible (no authentication, VPN, or firewall).
 * **Dynamic content is not supported** — Content requiring user interaction to appear in the DOM may not be captured.
 * **Default 1000 URL limit** - The deep analysis phase is by default limited to 1000 URLs, [which can be overridden](#sampling) to up to a maximum of 4000 URLs.
+
