@@ -18,6 +18,10 @@ These are the release notes for the 4 June 2026 release of the Universal Editor.
 >
 >For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
+## What's New {#what-is-new}
+
+* The Universal Editor now supports [authenticated Document Authoring pages.](https://docs.da.live/developers/reference/access-control)
+
 ## Other Improvements {#other-improvements}
 
 * An issue was fixed where changing selected text from **Heading** to **Code** in the rich text editor could revert the formatting to **Paragraph** instead of preserving the selected style.
