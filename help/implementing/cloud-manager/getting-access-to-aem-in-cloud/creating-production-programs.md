@@ -42,7 +42,7 @@ See [Additional production program options](#options).
 
 1. On the **Security** tab, select the security options you want to use. See [Security](#security).
 
-   ![Security tab in Set up for production wizard](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security.png)
+   ![Security tab in Set up for production wizard](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security-tab.png)
 
 1. Click **Continue**.
 
@@ -91,6 +91,19 @@ See [Additional production program options](#options).
 
    ![Cloud manager overview](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-my-programs.png)
 
+>[!NOTE]
+>
+>If CMK is enabled, the program overview page displays a lock icon to indicate
+>that CMK is active on the program. The icon does not reflect the activation
+>status of CMK for individual environments within the program.
+>
+> ![The lock icon indicating that CMK is active on the program](/help/implementing/cloud-manager/release-notes/assets/cmk-status-on-program-card.png)
+>
+>CMK license consumption is visible in the License Dashboard. To view how many
+>CMK credits your organization has purchased and how many programs are consuming
+>them, see [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md).
+
+
 ## Additional production program options {#options}
 
 Depending on what entitlements are available to your organization, you may have the following additional options available to you when you create a production program.
@@ -99,7 +112,7 @@ Depending on what entitlements are available to your organization, you may have 
 
 If you have the necessary entitlements, the **Security** tab is shown as the first tab in the **`Set up for production`** dialog box.
 
-![Security options](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security.png)
+![Security options](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security-tab.png)
 
 The **Security** tab provides the options to activate **HIPAA**, or **WAF-DDOS Protection**, or both, for your production program.
 
@@ -111,7 +124,18 @@ Adobe HIPAA Compliant and WAF-DDOS (Web Application Firewall - Distributed Denia
 * **WAF-DDOS Protection** - This option enables the Web Application Firewall through rules to protect your application.
   * Once activated, WAF-DDOS protection can then be configured by setting up a [non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
   * See [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md) to learn how to manage traffic filter rules in your repository so they are deployed properly.
-
+* **Customer Managed Keys** - This option activates CMK (Customer Managed Keys) for the program, letting you supply your own encryption keys for data at rest in Azure Blob Storage and MongoDB.
+   * CMK is available for Cloud Service programs only. It cannot be
+       enabled on sandbox programs.
+   * Within a program, CMK covers the Stage and Production environments only.
+   * CMK cannot be disabled after it is enabled on a program.
+   * After enabling CMK, configure your encryption keys in Experience Hub.
+       See [Customer Managed Keys Setup for AEM as a Cloud Service](LINK).
+      
+      >[!IMPORTANT]
+      >
+      >CMK cannot be enabled or disabled after program creation.
+   
 ### Flexible Publish Tier (Beta) {#flexible-publish-tier}
 
 >[!NOTE]

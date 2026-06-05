@@ -46,8 +46,31 @@ Anytime a program is edited, including adding or removing a solution or add-on, 
    * You can configure whether a publish tier is provisioned for new environments (Beta). See [Flexible Publish Tier (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
    * See [Create Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) and [Create Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) for details on the individual options. 
    * [Additional options](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) may be available for your production program depending on the entitlements of your organization.
+   * On the **Security** tab, you can also enable **Customer Managed Keys** for an existing program. CMK cannot be disabled after activation. After enabling CMK, configure your encryption keys in Experience Hub.
+   See [Customer Managed Keys Setup for AEM as a Cloud Service](LINK).
+   
 
 1. Click **Update** to save your changes.
+
+## Configure CMK in Experience Hub {#configure-cmk-experience-hub}
+
+After CMK is enabled for a program, Cloud Manager provides a direct link
+to the CMK configuration page in Experience Hub so you can set up your
+encryption keys without navigating away from your program.
+
+   >[!NOTE]
+   >
+   >Once CMK has been successfully configured for an environment, the Environment details page displays a **CMK configuration** status badge. If CMK is enabled for the program but has not yet been configured for a specific environment, the badge does not appear on that environment's details page.
+
+**To configure CMK in Experience Hub:**
+
+1. On the **My Programs** page, locate the program with CMK enabled.
+2. Click **Configure CMK**.
+
+   Experience Hub opens the CMK configuration page where you can supply
+   your Azure Key Vault details and encryption key information.
+
+   For full configuration steps, see [Customer Managed Keys Setup for AEM as a Cloud Service](/help/security/customer-managed-keys.md).
 
 ## Mark a production program for deletion {#delete-production-program}
 
