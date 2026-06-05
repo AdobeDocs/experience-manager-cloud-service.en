@@ -7,10 +7,6 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 ---
 # Release notes for Cloud Manager 2026.6.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-<!-- 
-https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2025.08.0+Release 
--->
-
 Learn about the release of Cloud Manager 2026.6.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
 See also the [current release notes for Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
@@ -32,7 +28,6 @@ The next planned release is Thursday, July 9, 2026.
     ![My Programs card showing a Customer Managed Key icon](/help/implementing/cloud-manager/release-notes/assets/cmk-status-on-program-card.png)
     *My Programs card*
   
-
     ![Set up for production dialog box showing Security tab with Customer Managed Keys option selected](/help/implementing/cloud-manager/release-notes/assets/cmk-security-tab-in-set-up-for-production-dlg.png)
     *Customer Managed Keys selected in the Security tab of the Set up for production dialog box*
 
@@ -83,7 +78,7 @@ To join the Beta, email [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-bet
 
 ### Faster builds with module caching {#quick-build-cm-pipelines}
 
-A new build model compiles only changed modules (rather than the entire repository) using module-level caching to reduce build times. It applies to production pipelines. You control which production pipelines use **Smart Build**.
+A new build model compiles only changed modules (rather than the entire repository) using module-level caching to improve build performance. It applies to production pipelines. You control which production pipelines use **Smart Build**.
 
 For more information, see the following:
 
@@ -118,7 +113,7 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 * **Environment stuck in Updating with no active operation**
     An issue is now resolved where environments become permanently stuck in an Updating state even when no pipeline run or configuration change is in progress. Affected environments can now be managed normally without requiring manual intervention from Adobe support. (CMGR-77133)
-* **Advanced Networking - wrong port-forward rule deleted on duplicate source ports**
+* **Advanced Networking - wrong port-forwarding rule deleted on duplicate source ports**
     When two port-forwarding rules in Advanced Networking share the same source port (portOrig), deleting one rule incorrectly removes the other. Cloud Manager now correctly identifies and removes only the intended rule. (CMGR-77019)
 
 <!-- There are no significant bug fixes in the June 2026 Cloud Manager release. -->
