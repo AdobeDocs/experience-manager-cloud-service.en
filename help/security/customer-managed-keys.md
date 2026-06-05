@@ -9,7 +9,7 @@ exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
 
 AEM as a Cloud Service currently stores customer data in Azure Blob Storage and MongoDB, utilizing provider-managed encryption keys by default to secure data. While this setup meets the security needs of many organizations, businesses in regulated industries or those requiring enhanced data security seek greater control over their encryption practices. For organizations that prioritize data security, compliance, and the ability to manage their encryption keys, the Customer-Managed Keys (CMK) solution offers a critical enhancement.
 
->![NOTE]
+>[!NOTE]
 >
 >Before configuring your Azure Key Vault, you must first enable CMK for your Cloud Service program in Cloud Manager. CMK is enabled on the **Security** tab during production program creation or when editing an existing program.
 >
@@ -49,7 +49,7 @@ You need to share the key vault URL, the encryption key name, and information ab
 
 ## Set up your environment {#setup-your-environment}
 
-The Azure Command Line Interface (CLI) is the only requirement for this guide. If you do not already have the Azure CLI installed, follow the official installation instructions [here](/en-us/cli/azure/install-azure-cli?view=azure-cli-latest).
+The Azure Command Line Interface (CLI) is the only requirement for this guide. If you do not already have the Azure CLI installed, follow the official installation instructions [here](/https://learn.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest).
 
 Before continuing with the rest of this guide, log in to your CLI with `az login`.
 
