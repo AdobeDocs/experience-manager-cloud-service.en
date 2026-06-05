@@ -49,7 +49,7 @@ You need to share the key vault URL, the encryption key name, and information ab
 
 ## Set up your environment {#setup-your-environment}
 
-The Azure Command Line Interface (CLI) is the only requirement for this guide. If you do not already have the Azure CLI installed, follow the official installation instructions [here](/https://learn.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest).
+The Azure Command Line Interface (CLI) is the only requirement for this guide. If you do not already have the Azure CLI installed, follow the official installation instructions [here](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest).
 
 Before continuing with the rest of this guide, log in to your CLI with `az login`.
 
