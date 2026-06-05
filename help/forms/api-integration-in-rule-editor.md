@@ -128,7 +128,7 @@ Similarly, **Country of Passport Issuance** and **Destination Country** use the 
 
 ## Encryption and decryption
 
-When **Encryption Required** is selected, the Rule Editor invokes **encrypt** before each outgoing request and **decrypt** after a successful response. If you do not add custom logic in **function.js**, both functions return the payload unchanged.
+When **Encryption Required** is selected for an API integration, paste your public key in the **Public Key** field in the API integration configuration window. The Rule Editor invokes **encrypt** before each outgoing request and **decrypt** after a successful response. If you do not add custom logic in **function.js**, both functions return the payload unchanged.
 
 To encrypt and decrypt request and response data, add **encrypt** and **decrypt** functions to **function.js**:
 
@@ -137,9 +137,7 @@ To encrypt and decrypt request and response data, add **encrypt** and **decrypt*
 3. Add a **decrypt** function to transform the response after a successful API call. The **decrypt** function receives the encrypted response and **originalRequest**, which includes any **cryptoMetadata** set during encryption.
 4. Save **function.js**, then test the integration using **Invoke Service** in the Rule Editor.
 
-The following sample code demonstrates how to add **encrypt** and **decrypt** functions in **function.js**. 
-
-The **encrypt** function runs before each request. It can receive a payload with **body**, **headers**, optional **cryptoMetadata**, and optional Fetch API options. It must return encrypted **body** and **headers**, and optional **cryptoMetadata** for use during decryption:
+The following sample code demonstrates how to add **encrypt** function in **function.js**:
 
 ```javascript
 async function encrypt(payload) {
@@ -154,7 +152,14 @@ async function encrypt(payload) {
 }
 ```
 
-The following sample code demonstrates a **decrypt** function for successful responses. It receives **encryptedData** and **originalRequest**, and returns the decrypted response (for example, a JSON object):
+
+
+**encrypt (pre request payload hook)** 
+
+The **encrypt** function receives a payload object with **body**, **headers**, and optional **cryptoMetadata** and **options**. It returns a modified version of the same shape. The **options** field carries Fetch API settings (for example, `credentials: 'include'`) through the request pipeline. Values in **options** are applied to the underlying `fetch()` call. The **cryptoMetadata** field stores data for use during decryption. Whatever you set in **cryptoMetadata** during encryption is preserved in **originalRequest.cryptoMetadata** and made available to the **decrypt** function later. Despite the name, **encrypt** is a general pre request transformer. You can use it to modify headers or the request body, not only for cryptographic encryption. The default implementation returns the payload unchanged.
+>
+
+The following sample code demonstrates a **decrypt** function:
 
 ```javascript
 async function decrypt(encryptedData, originalRequest) {
@@ -162,6 +167,10 @@ async function decrypt(encryptedData, originalRequest) {
     return await myRsaDecrypt(encryptedData, keyId);
 }
 ```
+
+**decrypt (post request response hook)** 
+
+The **decrypt** function runs after a successful response. It receives the response body and **originalRequest**. The **originalRequest** object includes **cryptoMetadata** from your **encrypt** function, along with **url**, **method**, and other request metadata. It must return the decrypted body synchronously or asynchronously. The default implementation returns the data unchanged. The **decrypt** function runs only on successful responses. Error responses do not invoke **decrypt**.
 
 >[!NOTE]
 >
