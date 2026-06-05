@@ -36,11 +36,11 @@ Ensure the following:
 To add audio tracks to a video:
 
 1. Navigate to the uploaded video asset.
-2. Select the asset and click **Properties**.
-3. Open the **Captions & Audio tracks** tab.
-4. Click **Upload Audio Tracks**.
-5. Select one or more `.mp3` files.
-6. Click **Draw** icon next to the audio track file name.
+1. Select the asset and click **Properties**.
+1. Open the **Captions & Audio tracks** tab.
+1. Click **Upload Audio Tracks**.
+1. Select one or more `.mp3` files.
+1. Click **Draw** icon next to the audio track file name.
 
 In the **Edit Audio Track** dialog box:
 
@@ -52,8 +52,8 @@ In the **Edit Audio Track** dialog box:
 ![Audio Track dialog](/help/assets/assets/edit-audio1.png)
 
 1. Click **Save**.
-2. Repeat for additional audio tracks if required.
-3. Click **Save & Close**.
+1. Repeat for additional audio tracks if required.
+1. Click **Save & Close**.
 
 >[!NOTE]
 >
@@ -66,10 +66,10 @@ In the **Edit Audio Track** dialog box:
 To add captions:
 
 1. Open the video **Properties** page.
-2. Open **Captions & Audio tracks** tab.
-3. Click **Create Caption** > **Upload files**.
-4. Select one or more `.vtt` files.
-5. Click **Draw** icon next to caption file.
+1. Open **Captions & Audio tracks** tab.
+1. Click **Create Caption** > **Upload files**.
+1. Select one or more `.vtt` files.
+1. Click **Draw** icon next to caption file.
 
 ![Upload caption dialog](/help/assets/assets/upload-caption.png)
 
@@ -106,16 +106,13 @@ Approval depends on parent video asset:
 By default, original audio is used.
 
 1. Open **Captions & Audio tracks**.
-
-2. Select audio track.
-
-3. Click **Set as Default**.
+1. Select audio track.
+1. Click **Set as Default**.
 
    ![Set as Default action](/help/assets/assets/set-default.png)
 
-4. Click **OK**.
-
-5. Click **Save & Close**.
+1. Click **OK**.
+1. Click **Save & Close**.
 
 ## Preview audio and captions {#preview-audio-captions}
 
@@ -125,7 +122,7 @@ After processing:
 
    ![Video preview player](/help/assets/assets/preview-caption-audio.png)
 
-2. Use player controls:
+1. Use player controls:
 
    * Switch audio tracks
    * Enable captions
@@ -133,23 +130,21 @@ After processing:
 ## Download caption or audio files {#download-tracks}
 
 1. Select caption or audio file.
-
-2. Click **Download**.
+1. Click **Download**.
 
    ![Download track action](/help/assets/assets/download-caption.png)
 
-3. Click **Download**.
+1. Click **Download**.
 
 The selected file is downloaded to your local system.
 
 ## Delete caption or audio files {#delete-tracks}
 
 1. Select caption or audio file.
-
-2. Click **Delete**.
+1. Click **Delete**.
 
    ![Delete track action](/help/assets/assets/delete-caption.png)
 
-3. Click **OK**.
+1. Click **OK**.
 
 Original audio extracted from video cannot be deleted.
