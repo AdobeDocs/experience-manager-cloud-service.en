@@ -217,7 +217,7 @@ The Dispatcher MCP server is bundled with the AEM Dispatcher SDK. It enables AI 
 
 Unlike the dispatcher skill, the Dispatcher MCP server exposes tools only: seven MCP tools and no prompts or resources.
 
->[!VIDEO](https://video.tv.adobe.com/v/3491951?learn=on)	
+>[!VIDEO](https://video.tv.adobe.com/v/3491951?quality=12&learn=on)
 
 ### Prerequisites {#prerequisites}
 
