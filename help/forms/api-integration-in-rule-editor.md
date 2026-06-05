@@ -126,6 +126,19 @@ Similarly, **Country of Passport Issuance** and **Destination Country** use the 
 >
 > You can [retrieve property values from a JSON array by invoking an API and using a custom function](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array). This approach lets you extract values and bind them directly to form fields.
 
+## Edit an existing API integration
+
+After you create an API integration, you can update it from the Rule Editor without creating a new integration. When an **Invoke Service** statement references an API integration, an **Edit** option is available for that integration.
+
+To edit an existing API integration:
+
+1. Open the rule in the Rule Editor that contains an **Invoke Service** statement.
+2. In the **Invoke Service** statement, select the API integration you want to update.
+3. Click **Edit** icon to open the **API Integration Configuration** window.
+4. Update the API URL, authentication, input and output parameters, or other settings, and save your changes.
+
+![Edit API Integration](/help/forms/assets/edit-api-rule-editor.png)
+
 ## Encryption and decryption
 
 When **Encryption Required** is selected for an API integration, paste your public key in the **Public Key** field in the API integration configuration window. The Rule Editor invokes **encrypt** before each outgoing request and **decrypt** after a successful response. If you do not add custom logic in **function.js**, both functions return the payload unchanged.
