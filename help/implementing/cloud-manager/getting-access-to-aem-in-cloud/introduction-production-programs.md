@@ -19,7 +19,7 @@ Your contractual agreement with Adobe defines the number and types of solutions 
 
 >[!NOTE]
 >
->>Depending on your organization's entitlements, you may also be able to enable Customer Managed Keys (CMK) for a production program. CMK lets you supply your own encryption keys for data at rest. See [Create production programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
+>Depending on your organization's entitlements, you may also be able to enable Customer Managed Keys (CMK) for a production program. CMK lets you supply your own encryption keys for data at rest. See [Create production programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
 The following table describes common scenarios of available solutions and the typical production programs created based on them.
 
