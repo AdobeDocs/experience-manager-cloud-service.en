@@ -9,12 +9,13 @@ In Adobe Cloud Manager, you can make your website stand out by adding a custom d
 
 ## Before you begin
 
-If you are using Dynamic Media Prime or Dynamic Media Ultimate, see Configure custom domain in delivery tier in the Dynamic Media Prime and Ultimate documentation.
+### For new license customers
+If you are using Dynamic Media Prime or Dynamic Media Ultimate, see [Configure custom domain in delivery tier in the Dynamic Media Prime and Ultimate documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/enable-dynamic-media-prime-and-ultimate#configure-custom-domain-in-delivery-tier).
 
+### For old license customers
 * You must have a multi-SAN (Subject Alternative Name) TLS or SSL certificate.
 * The SSL certificate should have distinct SANs against the certificate mapped for the Delivery tier within the same domain.
 * The certificate policy must adhere to either Extended Validation (EV) or Organization Validation (OV), and not Domain Validation (DV) policy.
-
 
 ## Configure a custom domain for the Delivery tier
 
