@@ -259,6 +259,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.05.28 Release Notes](/help/release-notes/universal-editor/2026/2026-05-28.md)
       + [2026.05.21 Release Notes](/help/release-notes/universal-editor/2026/2026-05-21.md)
       + [2026.05.14 Release Notes](/help/release-notes/universal-editor/2026/2026-05-14.md)
       + [2026.05.07 Release Notes](/help/release-notes/universal-editor/2026/2026-05-07.md)
@@ -332,6 +333,7 @@ user-guide-title: AEM as a Cloud Service
   + [JWT Credentials Deprecation in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
   + [Open ID Connect Support for AEM as a Cloud Service on Publish Tier](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
   + [Setting Up IMS Integrations for AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
+  + [Adobe-Managed API Integrations in Adobe Admin Console](/help/security/adobe-managed-api-integrations-in-adobe-admin-console.md)
   + [Principal View for Permissions Management](/help/security/touch-ui-principal-view.md)
   + [Best Practices for Sling Service User Mapping and Service User Definition](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
   + [Customer Managed Keys for Adobe as a Cloud Service](/help/security/customer-managed-keys.md)
@@ -751,11 +753,13 @@ user-guide-title: AEM as a Cloud Service
       + [Restrict assets delivery](/help/assets/restrict-assets-delivery.md)
       + [Integrate remote AEM Assets with AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md)
       + [Preview assets](/help/assets/preview-assets.md)
-      + [Frequently asked questions](/help/assets/dynamic-media-open-apis-faqs.md)
       + [Configure custom domain](/help/assets/configure-custom-domain.md)
       + [Optimize images](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
       + [Create vanity URLs](/help/assets/vanity-urls.md)
       + [Cache Management](/help/assets/cache-management-dynamic-media-open-api.md)
+      + [Video smart crops](/help/assets/video-smart-crops.md)
+      + [Multi audio and Multi captions](/help/assets/multi-audio-multi-caption.md)
+      + [Frequently asked questions](/help/assets/dynamic-media-open-apis-faqs.md)
   + Working with Assets view {#assets-view}
     + [Introduction](/help/assets/assets-view-introduction.md)
     + [Getting started](/help/assets/get-started-assets-view.md)
@@ -1149,6 +1153,7 @@ user-guide-title: AEM as a Cloud Service
         + [Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md)
         + [Prompting Guide](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md)
         + [Project Documentation Skill](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md)
+        + [Site Catalog Skill](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
         + [AOE Delivery](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
       + [Development Agent](/help/ai-in-aem/agents/brand-experience/development/development.md)
     + Content Advisor Agent {#content-advisor}
