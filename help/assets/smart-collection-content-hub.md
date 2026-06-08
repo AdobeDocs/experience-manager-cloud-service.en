@@ -52,6 +52,10 @@ The Smart Collection is created and automatically includes assets that match the
 Smart Collections are available in the **Collections** tab in Content Hub.
  ![Collections tab](assets/collections-tab.png)
 
+>[!NOTE]
+>
+> The visibility of Smart Collections is controlled by administrator-defined access permissions. Users will only see collections they are authorized to access. If a collection is not visible, it is due to restricted access rights.
+
 To view a Smart Collection:
 
 1. Navigate to **Collections** in Content Hub.
