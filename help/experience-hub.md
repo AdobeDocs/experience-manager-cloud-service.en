@@ -83,9 +83,7 @@ If no production AEM Cloud Service or Managed Services environments exist, the s
 
 +++**How do I configure Customer Managed Keys from Experience Hub?**
 
-  If CMK is enabled for your program, Experience Hub provides a direct link to the CMK configuration page. Select **Configure CMK** from your program card or
-  from Quick shortcuts. For full configuration steps, see
-  [Customer Managed Keys Setup for AEM as a Cloud Service](/help/security/customer-managed-keys.md).
+  If CMK is enabled for your program, Experience Hub provides a direct link to the CMK configuration page. Select **Configure CMK** from your program card or from Quick shortcuts. For full configuration steps, see [Customer Managed Keys Setup for AEM as a Cloud Service](/help/security/customer-managed-keys.md).
   
 +++
 
