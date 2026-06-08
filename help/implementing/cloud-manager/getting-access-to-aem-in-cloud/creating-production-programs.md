@@ -112,11 +112,7 @@ Adobe HIPAA Compliant and WAF-DDOS (Web Application Firewall - Distributed Denia
 * **WAF-DDOS Protection** - This option enables the Web Application Firewall through rules to protect your application.
   * Once activated, WAF-DDOS protection can then be configured by setting up a [non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
   * See [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md) to learn how to manage traffic filter rules in your repository so they are deployed properly.
-* **Customer Managed Keys** - This option activates CMK (Customer Managed Keys) for the program, letting you supply your own encryption keys for data at rest in Azure Blob Storage and MongoDB.
-
-   >[!IMPORTANT]
-   >
-   >CMK cannot be enabled or disabled after program creation.
+* **Customer Managed Keys** - This option activates CMK (Customer Managed Keys) for the program, letting you supply your own encryption keys for data at rest in Azure Blob Storage and MongoDB. If you choose, you can enable CMK later by [editing a program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing).
 
    * CMK is available for Cloud Service programs only. It cannot be enabled on sandbox programs.
    * Within a program, CMK covers the Stage and Production environments only.
