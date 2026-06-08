@@ -15,7 +15,7 @@ Learn more about program types in the document [Understanding Program and Progra
 
 ## Create a production program {#create}
 
-Depending on your organization's entitlements, you may see additional production program options when adding your program.
+Your organization's entitlements determine the additional production program options available when adding your program.
 See [Additional production program options](#options).
 
 **To create a production program:**
@@ -42,13 +42,13 @@ See [Additional production program options](#options).
 
 1. On the **Security** tab, select the security options you want to use. See [Security](#security).
 
-   ![Security tab in Set up for production wizard](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security.png)
+   ![Security tab in Set up for production wizard](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security-tab.png)
 
 1. Click **Continue**.
 
 1. In the **Solutions &amp; Add-ons** list box, select one or more solutions to include in the program.
 
-   * If you are not sure if you need one or more programs for the various solutions you have available, select the one most of interest to you. You can activate additional solutions by [editing the program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) later. See the [Introduction to Production Programs document](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) for more program setup recommendations.
+   * If you are not sure whether you need one or more programs for the various solutions you have available, select the one of most interest to you. You can activate additional solutions by [editing the program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) later. See the [Introduction to Production Programs document](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) for more program setup recommendations.
    * It is required that you select at least one solution for program creation. For example, you can choose to select **Edge Delivery Services** for a fully managed CDN solution that optimizes digital experiences. See [About using Edge Delivery Services to deliver your Cloud Manager project](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md).
 
    * Click ![Chevron Size 300 icon](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) to the left of a solution name to reveal any optional add-ons. <!-- such as the **Commerce** add-on option under **Sites**. -->
@@ -91,27 +91,43 @@ See [Additional production program options](#options).
 
    ![Cloud manager overview](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-my-programs.png)
 
+
 ## Additional production program options {#options}
 
-Depending on what entitlements are available to your organization, you may have the following additional options available to you when you create a production program.
+Depending on what entitlements are available to your organization, the following additional options are available to you when you create a production program.
 
 ### Security {#security}
 
 If you have the necessary entitlements, the **Security** tab is shown as the first tab in the **`Set up for production`** dialog box.
 
-![Security options](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security.png)
+![Security options](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security-tab.png)
 
 The **Security** tab provides the options to activate **HIPAA**, or **WAF-DDOS Protection**, or both, for your production program.
 
 Adobe HIPAA Compliant and WAF-DDOS (Web Application Firewall - Distributed Denial of Service) facilitates cloud-based security as part of a multi-layered approach for protecting against vulnerabilities.
 
 * **HIPAA** - This option enables Adobe's HIPAA-ready solution implementation.
-  * Learn more about [HIPAA readiness for Adobe Experience Manager as a Cloud Service ](/help/compliance/hipaa/hipaa-readiness.md) and [Adobe's HIPAA ready solution implementation](https://www.adobe.com/trust/compliance/hipaa-ready.html).
+  * Learn more about [HIPAA readiness for Adobe Experience Manager as a Cloud Service ](/help/compliance/hipaa/hipaa-readiness.md) and [Adobe's HIPAA ready solution implementation](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html).
   * HIPAA cannot be enabled or disabled after program creation.
 * **WAF-DDOS Protection** - This option enables the Web Application Firewall through rules to protect your application.
   * Once activated, WAF-DDOS protection can then be configured by setting up a [non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
   * See [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md) to learn how to manage traffic filter rules in your repository so they are deployed properly.
+* **Customer Managed Keys** - This option activates CMK (Customer Managed Keys) for the program, letting you supply your own encryption keys for data at rest in Azure Blob Storage and MongoDB.
 
+   >[!IMPORTANT]
+   >
+   >CMK cannot be enabled or disabled after program creation.
+
+   * CMK is available for Cloud Service programs only. It cannot be enabled on sandbox programs.
+   * Within a program, CMK covers the Stage and Production environments only.
+   * CMK cannot be disabled after it is enabled on a program.
+   * After enabling CMK, configure your encryption keys in Experience Hub.
+       See [Customer Managed Keys Setup for AEM as a Cloud Service](/help/security/customer-managed-keys.md).
+   * If CMK is enabled, the program overview page displays a lock icon to indicate that CMK is active on the program. The icon does not reflect the activation status of CMK for individual environments within the program.
+      ![The lock icon indicating that CMK is active on the program](/help/implementing/cloud-manager/release-notes/assets/cmk-status-on-program-card.png)
+      CMK license consumption is visible in the License Dashboard. To view how many CMK credits your organization has purchased and how many programs are consuming them, see [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md).
+      ![Showing the number of Customer Managed Keys available in the license dashboard](/help/implementing/cloud-manager/release-notes/assets/cmk-license-dashboard.png)
+   
 ### Flexible Publish Tier (Beta) {#flexible-publish-tier}
 
 >[!NOTE]
@@ -143,7 +159,7 @@ By enabling the publish tier only when it is needed, teams can do the following:
 **How it works**
 When the flexible publish tier feature is enabled for your organization:
 
-* All new environments in the program are provisioned with the **Author tier only** by default. An informational message displayed in the user interface confirms this behavior.
+* Cloud Manager provisions all new environments in the program with the **Author tier only** by default. An informational message displayed in the user interface confirms this behavior.
 * If the user selects **AEM Publish** during the creation of a program, the publish tier is activated and provisioned with *new environments*.
 * The publish tier can also be activated later by editing the program. See [Edit programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
@@ -161,7 +177,7 @@ Sites and Forms offer a standard 99.9% service level agreement (SLA). The **99.9
 
 99.99% SLA offers benefits including higher availability and lower latency.
 
-For Sites and Forms programs, the 99.99% SLA requires an [additional publish region](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) to be applied to the production environment in the program. When the [requirements](#sla-requirements) for enabling 99.99% SLA are met, you must run a [full stack pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) to activate it.
+For Sites and Forms programs, the 99.99% SLA requires an [additional publish region](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) to be applied to the production environment in the program. To activate 99.99% SLA when the [requirements](#sla-requirements) are met, run a [full stack pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
 
 For Edge Delivery Services, there is *no* requirement other than configuring the 99.99% SLA license on the program.
 
@@ -192,7 +208,7 @@ In addition to the required entitlements, using the 99.99% SLA for Sites or Form
 
 >[!TIP]
 >
->See [Navigate the Cloud Manager UI](/help/implementing/cloud-manager/navigation.md) for details on how to navigate Cloud Manager and understanding the **My Programs** console.
+>See [Navigate the Cloud Manager UI](/help/implementing/cloud-manager/navigation.md) for details on how to navigate Cloud Manager and understand the **My Programs** console.
 
 >[!NOTE]
 >
