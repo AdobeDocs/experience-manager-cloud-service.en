@@ -106,6 +106,7 @@ The configuration supports up to three services. The top-level keys are:
 | `services` | List of edge function services, each identified by a `name`. |
 | `configs` | Key/value pairs exposed to all edge function services as environment variables. |
 | `secrets` | Key/value pairs referencing Cloud Manager secrets, exposed to all edge function services. |
+| `kvs` | Boolean toggle to provision a KV store for runtime read/write key-value data shared across all edge function services. |
 
 ### 3. Add CDN Origin Selector Rules {#cdn-routing}
 
@@ -238,6 +239,10 @@ const request = new Request("https://example.com/test");
 const response = await fetch(request, { backend: "my-origin-name" });
 ```
 
+>[!NOTE]
+>
+>Service stores (`configs`, `secrets`, and `kvs`) are not available in [sandbox programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Edge function services themselves run normally on sandbox environments — only the stores are not provisioned.
+
 ### Service Configuration {#service-configuration}
 
 Expose environment variables to your functions using the `configs` key in `edgeFunctions.yaml`. Values are stored in a config store named `config_default`:
@@ -287,6 +292,35 @@ const apiToken = await SecretStoreManager.getSecret('API_TOKEN');
 >- Key names are case-sensitive.
 >- Secrets are immutable once created.
 >- The secret store is shared across all edge function services in the same environment.
+
+### Service KV Store {#service-kv-store}
+
+Edge functions can read and write arbitrary key-value data at runtime through a KV store. To enable it, set `kvs: true` in `edgeFunctions.yaml`:
+
+```yaml
+kvs: true
+```
+
+This provisions an empty KV store named `kv_default`. Populate it at runtime from your edge function code using the [Fastly KV Store API](https://js-compute-reference-docs.edgecompute.app/docs/fastly:kv-store/KVStore):
+
+```js
+import { KVStore } from "fastly:kv-store";
+
+const kv = new KVStore('kv_default');
+
+// Read a value
+const entry = await kv.get('visit-count');
+const count = entry ? Number(await entry.text()) : 0;
+
+// Write a value
+await kv.put('visit-count', String(count + 1));
+```
+
+>[!NOTE]
+>
+>- The KV store is always named `kv_default`.
+>- The KV store is empty at provision time; populate it at runtime via the [Fastly KV Store API](https://js-compute-reference-docs.edgecompute.app/docs/fastly:kv-store/KVStore). Declarative key/value entries in `edgeFunctions.yaml` are not supported.
+>- The KV store is shared across all edge function services in the same environment.
 
 ### Logging {#logging}
 
