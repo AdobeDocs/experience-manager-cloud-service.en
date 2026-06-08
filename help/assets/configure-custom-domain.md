@@ -9,6 +9,8 @@ In Adobe Cloud Manager, you can make your website stand out by adding a custom d
 
 ## Before you begin
 
+If you are using Dynamic Media Prime or Dynamic Media Ultimate, see Configure custom domain in delivery tier in the Dynamic Media Prime and Ultimate documentation.
+
 * You must have a multi-SAN (Subject Alternative Name) TLS or SSL certificate.
 * The SSL certificate should have distinct SANs against the certificate mapped for the Delivery tier within the same domain.
 * The certificate policy must adhere to either Extended Validation (EV) or Organization Validation (OV), and not Domain Validation (DV) policy.
@@ -20,13 +22,14 @@ In Adobe Cloud Manager, you can make your website stand out by adding a custom d
  ![image](/help/assets/assets/ssl-certificate.png)
 Learn how to add [SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) in Adobe Cloud Manager.
 
-1. After adding the SSL certificate, add a custom domain. Click **[!UICONTROL Domain Settings]** and specify the custom domain against the **[!UICONTROL Publish service]** option.
+1. After adding the SSL certificate, add a custom domain. Click **[!UICONTROL Domain Settings]** and specify the custom domain for the **[!UICONTROL Delivery tier]**.
 Learn more about [custom domain](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
-1. Add two [CNAME records](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) in your DNS record corresponding to publish domains. 
-DNS verification can take a few hours to process because of DNS propagation delays.
+1. Add a CNAME entry in your DNS records to map the custom domain to cdn.adobeaemcloud.com.
 
-1. Log a support case to facilitate the configuration of the custom domain, ensuring it directs to the delivery tier.
+1. Log an Adobe Support ticket for custom domain mapping.
+
+Adobe performs the domain mapping for the custom domain as part of the support process.
 
 >[!NOTE]
 >
