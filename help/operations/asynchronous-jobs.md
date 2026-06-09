@@ -7,7 +7,7 @@ role: Admin
 ---
 # Asynchronous Operations {#asynchronous-operations}
 
-To reduce negative impact on performance, Adobe Experience Manger processes certain long-running and resource-intensive operations asynchronously as background operations. Asynchronous processing involves enqueuing multiple jobs and running them in a serial manner subject to the availability of system resources.
+To reduce negative impact on performance, Adobe Experience Manager processes certain long-running and resource-intensive operations asynchronously as background operations. Asynchronous processing involves enqueuing multiple jobs and running them in a serial manner subject to the availability of system resources.
 
 These operations include:
 
@@ -45,7 +45,7 @@ To view the status of the asynchronous operations in detail, navigate to the **[
 
    * **[!UICONTROL Fail]** or **[!UICONTROL Error]**: The operation could not be processed
 
-   * **[!UICONTROL Scheduled]**: The operation is scheduled for processing a later time
+   * **[!UICONTROL Scheduled]**: The operation is scheduled for processing at a later time
 
 1. To stop an active operation, select it from the list and click **[!UICONTROL Stop]** from the toolbar.
 
@@ -102,7 +102,7 @@ If the number of assets or folders to be deleted exceeds the threshold number, t
 
    ![Asset delete threshold](assets/async-delete-threshold.png)
 
-1. Check the option **Enable email notification** to receive email notifications for this job status. for example, success, failed.
+1. Check the option **Enable email notification** to receive email notifications for this job status. For example: success, failed.
 1. Save the changes.
 
 ### Configure Asynchronous Asset Move Operations {#configuring-asynchronous-move-operations}
