@@ -31,7 +31,7 @@ The next planned release is Thursday, July 9, 2026.
     ![Set up for production dialog box showing Security tab with Customer Managed Keys option selected](/help/implementing/cloud-manager/release-notes/assets/cmk-security-tab-in-set-up-for-production-dlg.png)
     *Customer Managed Keys selected in the Security tab of the Set up for production dialog box*
 
-    ![Showing the number of Customer Managed Keys available in the license dashboard](/help/implementing/cloud-manager/release-notes/assets/cmk-license-dashboard.png)
+    ![Displaying the number of Customer Managed Keys available in the license dashboard](/help/implementing/cloud-manager/release-notes/assets/cmk-license-dashboard.png)
     *Showing the number of Customer Managed Keys available in the license dashboard*
 
     See [Create Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#create) and [Edit Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing).
