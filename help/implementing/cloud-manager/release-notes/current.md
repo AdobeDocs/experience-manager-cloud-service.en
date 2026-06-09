@@ -21,7 +21,9 @@ The next planned release is Thursday, July 9, 2026.
 ## What's new - Cloud Manager {#cloud-manager-whats-new}
 
 * **Customer-managed keys (CMK) self-service**
-    Customers can now configure Customer-Managed Keys directly from Cloud Manager, without requiring Adobe support involvement. A new CMK option is available during program creation, in program edit settings, and on the Environment details page.
+    Customers can now configure Customer-Managed Keys directly from Cloud Manager, without requiring Adobe support involvement. A new CMK option is available during program creation or program edit, and on the Environment details page.
+
+    See [Create Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#create) and [Edit Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing).
 
     CMK status is displayed on My Programs cards and in the license dashboard, giving administrators clear visibility into encryption configuration across all environments. This approach simplifies compliance workflows for organizations that require control over their own encryption keys.
 
@@ -34,7 +36,6 @@ The next planned release is Thursday, July 9, 2026.
     ![Displaying the number of Customer Managed Keys available in the license dashboard](/help/implementing/cloud-manager/release-notes/assets/cmk-license-dashboard.png)
     *Showing the number of Customer Managed Keys available in the license dashboard*
 
-    See [Create Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#create) and [Edit Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing).
 
 * **Environment variable limit increased to 400**
     Cloud Manager now supports up to 400 environment variables per environment, doubled from the previous limit of 200. 
