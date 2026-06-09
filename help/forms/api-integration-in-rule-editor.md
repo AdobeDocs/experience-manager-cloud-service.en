@@ -153,7 +153,7 @@ To encrypt and decrypt request and response data, add **encrypt** and **decrypt*
 The following sample code demonstrates how to add **encrypt** function in **function.js**:
 
 ```javascript
-async function encrypt(payload) {
+function encrypt(payload) {
     const { body, headers, options } = payload;
     const { encryptedBody, encryptedKey } = await myRsaEncrypt(body);
     return {
@@ -175,7 +175,7 @@ The **encrypt** function receives a payload object with **body**, **headers**, a
 The following sample code demonstrates a **decrypt** function:
 
 ```javascript
-async function decrypt(encryptedData, originalRequest) {
+function decrypt(encryptedData, originalRequest) {
     const { keyId } = originalRequest?.cryptoMetadata || {};
     return await myRsaDecrypt(encryptedData, keyId);
 }
