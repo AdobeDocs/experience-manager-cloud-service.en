@@ -3,6 +3,7 @@ title: Configure a Custom Domain for the Delivery Tier
 description: Learn how to configure a custom domain for Delivery tier in Adobe Cloud Manager.
 exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
 ---
+
 # Configure a custom domain for the Delivery tier{#configure-custom-domain}
 
 In Adobe Cloud Manager, you can make your website stand out by adding a custom domain. While AEM as a Cloud Service comes with a default domain, you can customize it as per your needs.
@@ -10,9 +11,11 @@ In Adobe Cloud Manager, you can make your website stand out by adding a custom d
 ## Before you begin
 
 ### For new license customers
+
 If you are using Dynamic Media Prime or Dynamic Media Ultimate, see [Configure custom domain in delivery tier in the Dynamic Media Prime and Ultimate documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/enable-dynamic-media-prime-and-ultimate#configure-custom-domain-in-delivery-tier).
 
 ### For old license customers
+
 * You must have a multi-SAN (Subject Alternative Name) TLS or SSL certificate.
 * The SSL certificate should have distinct SANs against the certificate mapped for the Delivery tier within the same domain.
 * The certificate policy must adhere to either Extended Validation (EV) or Organization Validation (OV), and not Domain Validation (DV) policy.
