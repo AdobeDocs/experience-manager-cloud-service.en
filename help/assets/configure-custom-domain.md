@@ -8,33 +8,20 @@ exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
 
 In Adobe Cloud Manager, you can make your website stand out by adding a custom domain. While AEM as a Cloud Service comes with a default domain, you can customize it as per your needs.
 
-## Before you begin
+## Prepare yourself to get started
 
-### For new license customers
+Ensure that you fulfil the following requirements before starting the configuration process:
 
-If you are using Dynamic Media Prime or Dynamic Media Ultimate, see [Configure custom domain in delivery tier in the Dynamic Media Prime and Ultimate documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/enable-dynamic-media-prime-and-ultimate#configure-custom-domain-in-delivery-tier).
+* Access to Cloud Manager
+* Already enabled Dynamic Media with OpenAPI on your environment through a support ticket
+* EV or OV type certificate for the domain to be used for the delivery tier. See [Introduction to SSL certificates](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates) for more details
 
-### For old license customers
+## Configure custom domain in delivery tier using Cloud Manager
 
-* You must have a multi-SAN (Subject Alternative Name) TLS or SSL certificate.
-* The SSL certificate should have distinct SANs against the certificate mapped for the Delivery tier within the same domain.
-* The certificate policy must adhere to either Extended Validation (EV) or Organization Validation (OV), and not Domain Validation (DV) policy.
+Execute the following steps in Cloud Manager to configure a custom domain in the delivery tier:
 
-## Configure a custom domain for the Delivery tier
+1. [Add a customer managed SSL certificate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate#add-customer-managed-ssl-cert).
 
-1. Go to **[!UICONTROL Adobe Cloud Manager]** > **[!UICONTROL Program Overview]** > **[!UICONTROL SSL Certificates]**, and add your SSL certificate. 
- ![image](/help/assets/assets/ssl-certificate.png)
-Learn how to add [SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) in Adobe Cloud Manager.
+2. [Add a custom domain name](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings).
 
-1. After adding the SSL certificate, add a custom domain. Click **[!UICONTROL Domain Settings]** and specify the custom domain for the **[!UICONTROL Delivery tier]**.
-Learn more about [custom domain](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
-
-1. Add a CNAME entry in your DNS records to map the custom domain to cdn.adobeaemcloud.com.
-
-1. Log an Adobe Support ticket for custom domain mapping.
-
-Adobe performs the domain mapping for the custom domain as part of the support process.
-
->[!NOTE]
->
->Add the custom domain to the allowed redirect URLs list. The list is in the IMS client for the asset selector.<br>Coordinate with the respective Adobe team to execute this task by providing the custom domain string.
+After completing the above steps, raise an Adobe Support ticket for custom domain mapping. Adobe performs the domain mapping for the custom domain as part of the support process.
