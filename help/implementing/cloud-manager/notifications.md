@@ -15,9 +15,9 @@ Learn how Cloud Manager notifies you of important events.
 
 [!UICONTROL Cloud Manager] sends you notifications when a production pipeline starts and completes (successfully or unsuccessfully) at the start of a production deployment.
 
-These notifications are sent through the [!UICONTROL Experience Cloud] notification system to users in the **Business Owner**, **Program Manager**, and **Deployment Manager** roles.
+These notifications are sent through the [!UICONTROL CX Enterprise] notification system to users in the **Business Owner**, **Program Manager**, and **Deployment Manager** roles.
 
-The notifications appear in a sidebar within [!UICONTROL Cloud Manager] and throughout the Adobe [!UICONTROL Experience Cloud]. The bell icon in the header is assigned a badge when you have new notifications.
+The notifications appear in a sidebar within [!UICONTROL Cloud Manager] and throughout the Adobe [!UICONTROL CX Enterprise]. The bell icon in the header is assigned a badge when you have new notifications.
 
 ![Notifications icon](assets/notifications-bell-badged.png)
 
@@ -39,7 +39,7 @@ Click the **Mark all as read** option at the bottom of the panel to mark all unr
 
 You can customize how you receive notifications and what notifications you receive.
 
-Click the gear icon at the top of the notifications sidebar to open the **Experience Cloud preferences** window. From here, you can define your notification subscriptions and how you receive your notifications.
+Click the gear icon at the top of the notifications sidebar to open the **CX Enterprise preferences** window. From here, you can define your notification subscriptions and how you receive your notifications.
 
 ![Notification settings icon](assets/notifications-configuration.png)
 
@@ -75,7 +75,7 @@ You can define the behavior of the alerts.
 
 ### Emails {#emails}
 
-Notifications are available in the web user interface across Adobe [!UICONTROL Experience Cloud] solutions. You can also opt for these notifications to be sent through email in the **Emails** section.
+Notifications are available in the web user interface across Adobe [!UICONTROL CX Enterprise] solutions. You can also opt for these notifications to be sent through email in the **Emails** section.
 
 ![Notification emails](assets/notifications-emails.png)
 
