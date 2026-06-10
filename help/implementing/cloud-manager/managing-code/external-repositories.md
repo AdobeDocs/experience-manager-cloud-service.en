@@ -1,6 +1,6 @@
 ---
 title: Add External Repositories in Cloud Manager
-description: Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps repositories.
+description: Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub Enterprise Server, GitLab, Bitbucket, and Azure DevOps repositories.
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
@@ -9,7 +9,7 @@ exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
 
 <!-- badge: label="Beta - Azure DevOps only" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket" -->
 
-Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub Enterprise, GitLab, and Bitbucket repositories.
+Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub Enterprise Server, GitLab, Bitbucket, and Azure DevOps repositories.
 
 Customers can now also onboard their Azure DevOps Git repositories into Cloud Manager, with support for both modern Azure DevOps and legacy VSTS (Visual Studio Team Services) repositories.
 
@@ -76,14 +76,14 @@ Configuration of an external repository in Cloud Manager consists of the followi
 
 >[!BEGINTABS]
 
->[!TAB GitHub Enterprise]
+>[!TAB GitHub Enterprise Server]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
 | Access token option | Description |
 | --- | --- |
 | **Use existing Access Token** | If you have already provided a repository access token for your organization and have access to multiple repositories, you can select an existing token. Use the **Token Name** drop-down list to choose the token you want to apply to the repository. Otherwise, add a new access token. |
-| **Add new Access Token** |<ul><li> In the **Token Name** text field, type a name for the access token you are creating.<li>Create a personal access token by following the instructions in the [GitHub documentation](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<li>Required permissions for the GitHub Enterprise Personal Access Token (PAT)<br>These permissions ensure that Cloud Manager can validate pull requests, manage commit status checks, and access necessary repo details.<br>When you generate the PAT in GitHub Enterprise, make sure it includes the following repository permissions:<ul><li>Pull request (read and write)<li>Commit statuses (read and write)<li>Repository metadata (read-only)</li></li></ul></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
+| **Add new Access Token** |<ul><li> In the **Token Name** text field, type a name for the access token you are creating.<li>Create a personal access token by following the instructions in the [GitHub documentation](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<li>Required permissions for the GitHub Enterprise Server Personal Access Token (PAT)<br>These permissions ensure that Cloud Manager can validate pull requests, manage commit status checks, and access necessary repo details.<br>When you generate the PAT in GitHub Enterprise Server, make sure it includes the following repository permissions:<ul><li>Pull request (read and write)<li>Commit statuses (read and write)<li>Repository metadata (read-only)</li></li></ul></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
 
 After validation, the external repository is ready to use and link to a pipeline.
 
@@ -165,9 +165,9 @@ For example, webhooks allow Cloud Manager to trigger actions based on events suc
 * Push events – Starts pipelines when the "On Git Commit" trigger is turned on (enabled).
 * Future comment-based actions – Allows workflows, such as direct deployment from a PR, to a Rapid Development Environment (RDE). 
 
-Webhook configuration is not required for repositories hosted on `GitHub.com` because Cloud Manager integrates directly through the GitHub app.
+Webhook configuration is not required for repositories hosted on `gitub.com` because Cloud Manager integrates directly through the GitHub app.
 
-For all other external repositories that are onboarded with an access token &ndash; such as GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps &ndash; webhook configuration is available and must be set up manually.
+For all other external repositories that are onboarded with an access token &ndash; such as GitHub Enterprise Server, GitLab, Bitbucket, and Azure DevOps &ndash; webhook configuration is available and must be set up manually.
 
 **To configure a webhook for an external repository:**
 
@@ -194,7 +194,7 @@ For all other external repositories that are onboarded with an access token &nda
     1. Next to the **Webhook Secret** token/key field, click **Generate**, then click ![Copy icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
     Paste the secret in a plain text file. The copied secret is required for your Git vendor's Webhook settings.
 1. Click **Close**. 
-1. Navigate to your Git vendor solution (GitHub Enterprise, GitLab, Bitbucket, or Azure DevOps).
+1. Navigate to your Git vendor solution (GitHub Enterprise Server, GitLab, Bitbucket, or Azure DevOps).
 
     All the details on the webhook configuration and the events that are required for each vendor are available in [Add an external repository](#add-ext-repo). Under step 8, see the tabbed table.
 
@@ -209,7 +209,7 @@ For all other external repositories that are onboarded with an access token &nda
 
 >[!BEGINTABS]
 
->[!TAB GitHub Enterprise]
+>[!TAB GitHub Enterprise Server]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
@@ -253,11 +253,11 @@ The behavior varies depending on the Git provider that you use, as outlined belo
 >[!BEGINTABS]
 
 
->[!TAB GitHub Enterprise]
+>[!TAB GitHub Enterprise Server]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
-When the check is created, it appears like the following screenshot below. The key difference from `GitHub.com` is that `GitHub.com` uses a check-run, while GitHub Enterprise (using personal access tokens) generates a commit status:
+When the check is created, it appears like the following screenshot below. The key difference from `GitHub.com` is that `GitHub.com` uses a check-run, while GitHub Enterprise Server (using personal access tokens) generates a commit status:
 
 ![Commit status to indicate PR validation process on GitHub Enterprise](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
 
