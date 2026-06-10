@@ -7,8 +7,26 @@ role: Admin, Developer
 ---
 # Add a private GitHub Cloud repository in Cloud Manager {#private-repositories}
 
-By setting up Cloud Manager to integrate with your private GitHub Cloud (repositories hosted on `github.com`), you can validate your code directly within GitHub using Cloud Manager. This configuration removes the requirement to sync your code regularly with the Adobe repository. 
+By setting up Cloud Manager to integrate with your private GitHub Cloud (repositories hosted on `github.com`), you can validate your code directly within GitHub using Cloud Manager. This configuration removes the requirement to sync your code regularly with the Adobe repository.
 
+Cloud Manager validates GitHub repository ownership in one of two ways, depending on where the repository is hosted:
+
+* Repositories on `github.com`, including GitHub Enterprise Cloud deployments hosted on `github.com`, use the Adobe GitHub app. This page describes that method.
+* GitHub Enterprise Server (self-hosted) repositories use a PAT (Personal Access Token) and a webhook. See [Add external repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+
+
+>[!NOTE]
+>
+>This page applies to repositories hosted on `github.com`, including GitHub Enterprise Cloud deployments hosted on `github.com`. These repositories use the Adobe GitHub app to validate ownership. No webhook configuration is required, because Cloud Manager integrates directly through the app.
+>
+>To add any of the following repository types, see [Add external repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md). These repositories use a PAT (Personal Access Token) and a manually configured webhook to validate ownership.
+>
+>* GitHub Enterprise Server (the self-hosted version of GitHub)
+>* GitLab (both `gitlab.com` and the self-hosted version of GitLab)
+>* Bitbucket (only `bitbucket.org`, the cloud version)
+>* Azure DevOps (`dev.azure.com`)
+
+<!--
 >[!NOTE]
 >
 >You can also add the following repository types with webhooks:
@@ -19,6 +37,7 @@ By setting up Cloud Manager to integrate with your private GitHub Cloud (reposit
 >* Azure DevOps (both [dev.azure.com](https://azure.microsoft.com/en-us/products/devops/?nav=min) and self-hosted versions of Azure DevOps) repositories.
 >
 >See [Add External Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+-->
 
 <!--
  CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
