@@ -274,6 +274,25 @@ Also, disable the force delete button using an overlay, to disallow users from d
    >
    >To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset. You can disallow deletion of referenced assets as it causes broken links. Disable the force delete button using an overlay.
 
+## Asynchronous Background Jobs {#asynchronous-background-jobs}
+
+To improve performance and reliability when processing large numbers of assets, AEM uses asynchronous background jobs for certain asset management operations. Instead of completing these operations immediately, AEM processes them in the background and allows users to continue working while progress is tracked separately.
+
+
+Operations such as moving, copying, or deleting folders that contain more than 150 assets are automatically executed as asynchronous jobs. When starting one of these operations, users can choose to run the job immediately or schedule it for a later time.
+
+![Date Picker](assets/schedule-asnyc-job.png)
+
+As the operation runs, AEM processes assets in batches and periodically saves progress. The AEM User Interface also displays progress updates so that users can monitor the status of the operation.
+
+![Date Picker](assets/move-progress-folder-indicator.png)
+
+For move and delete operations, access to the affected folders is restricted while the job is running to help prevent conflicting actions.
+
+To track job progress, open the Assets Jobs console. The console displays details such as the current status, percentage completed, and other job information. Select a job and click Open to view additional details, including progress information and the estimated time remaining for completion. Users are also notified when the operation finishes.
+
+![Date Picker](assets/async-jobs-status.png)
+
 ## Download assets {#download-assets}
 
 See [download assets from [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
