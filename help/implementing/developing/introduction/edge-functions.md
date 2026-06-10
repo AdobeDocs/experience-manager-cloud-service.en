@@ -91,15 +91,14 @@ kind: "EdgeFunctions"
 version: "1"
 data:
   services:
-    - name: first-function
-    - name: second-function
+    - name: my-edge-function
     # Uncomment to enable secrets
     # secrets:
     #   - key: API_TOKEN
     #     value: ${{ API_TOKEN_SECRET }}
 ```
 
-The configuration supports up to three services. The top-level keys are:
+The default limit is 1 function for AEM as a Cloud Service environments and 3 for Edge Delivery Services sites. The top-level keys are:
 
 | Key | Description |
 |---|---|
@@ -118,19 +117,19 @@ version: '1'
 data:
   originSelectors:
     rules:
-      - name: route-to-first-function
+      - name: route-weather-to-edge-function
         when: { reqProperty: path, equals: "/weather" }
         action:
           type: selectAemOrigin
-          originName: edgefunction-first-function
-      - name: route-to-second-function
+          originName: edgefunction-my-edge-function
+      - name: route-hello-world-to-edge-function
         when: { reqProperty: path, equals: "/hello-world" }
         action:
           type: selectAemOrigin
-          originName: edgefunction-second-function
+          originName: edgefunction-my-edge-function
 ```
 
-The origin selector rules let you route traffic to your edge functions based on any condition available in the CDN rules engine, such as a specific path, domain, or request header. See [Origin Selectors](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) for the full rule syntax.
+The origin selector rules let you route traffic to your edge functions based on any condition available in the CDN rules engine, such as a specific path, domain, or request header. Multiple rules can route different paths to the same edge function. See [Origin Selectors](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) for the full rule syntax.
 
 ### 4. Deploy the Configuration {#deploy-configuration}
 
