@@ -21,10 +21,10 @@ Cloud Manager validates GitHub repository ownership in one of the following two 
 >
 >To add any of the following repository types, see [Add external repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md). These repositories use a PAT (Personal Access Token) and a manually configured webhook to validate ownership.
 >
->* GitHub Enterprise Server (the self-hosted version of GitHub)
->* GitLab (both `gitlab.com` and the self-hosted version of GitLab)
->* Bitbucket (only `bitbucket.org`, the cloud version)
->* Azure DevOps (`dev.azure.com`)
+>* GitHub Enterprise Server (self-hosted version of GitHub) repositories.
+>* GitLab (both `gitlab.com` and the self-hosted version of GitLab) repositories.
+>* Bitbucket (only `bitbucket.org`, cloud version) repositories. The self-hosted version of Bitbucket was deprecated as of February 15, 2024.
+>* Azure DevOps (`dev.azure.com`) repositories.
 
 <!--
 >[!NOTE]

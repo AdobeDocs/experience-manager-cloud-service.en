@@ -165,7 +165,7 @@ For example, webhooks allow Cloud Manager to trigger actions based on events suc
 * Push events – Starts pipelines when the "On Git Commit" trigger is turned on (enabled).
 * Future comment-based actions – Allows workflows, such as direct deployment from a PR, to a Rapid Development Environment (RDE). 
 
-Webhook configuration is not required for repositories hosted on `gitub.com` because Cloud Manager integrates directly through the GitHub app.
+Webhook configuration is not required for repositories hosted on `github.com` because Cloud Manager integrates directly through the GitHub app.
 
 For all other external repositories that are onboarded with an access token &ndash; such as GitHub Enterprise Server, GitLab, Bitbucket, and Azure DevOps &ndash; webhook configuration is available and must be set up manually.
 
@@ -257,9 +257,9 @@ The behavior varies depending on the Git provider that you use, as outlined belo
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
-When the check is created, it appears like the following screenshot below. The key difference from `GitHub.com` is that `GitHub.com` uses a check-run, while GitHub Enterprise Server (using personal access tokens) generates a commit status:
+When the check is created, it appears like the following screenshot below. The key difference from `GitHub.com` is that `GitHub.com` uses a check-run, while GitHub Enterprise Server (using personal access tokens) generates the following commit status:
 
-![Commit status to indicate PR validation process on GitHub Enterprise](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
+![Commit status to indicate PR validation process on GitHub Enterprise Server](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
 
 
 >[!TAB GitLab]
