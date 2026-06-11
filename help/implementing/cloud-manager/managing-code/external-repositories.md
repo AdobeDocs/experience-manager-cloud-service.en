@@ -20,7 +20,7 @@ Customers can now also onboard their Azure DevOps Git repositories into Cloud Ma
 >
 >Cloud Manager validates GitHub repository ownership in one of the following two ways, depending on where the repository is hosted:
 >
->* This page of instructions applies to adding any of the following repository types. These repository types use a PAT (Personal Access Token) and a manually configured webhook to validate ownership.
+>* This page of instructions applies to adding any of the following repository types. These types use a PAT (Personal Access Token) and a manually configured webhook to validate ownership.
 >
 >   * GitHub Enterprise Server (self-hosted version of GitHub) repositories.
 >   * GitLab (both `gitlab.com` and the self-hosted version of GitLab) repositories.

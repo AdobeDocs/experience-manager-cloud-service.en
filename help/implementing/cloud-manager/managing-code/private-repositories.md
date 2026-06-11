@@ -128,7 +128,6 @@ The **Type** column in the table on the **Repositories** page identifies Adobe-p
 To access the repository later to complete the validation, on the **Repositories** page, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) in the row representing the GitHub repository you added. In the drop-down list, select **Ownership Validation**.
 
 
-
 ## Use private GitHub Cloud repositories with Cloud Manager {#using}
 
 After the GitHub repository is validated in Cloud Manager, the integration is complete. You can use the repository with Cloud Manager.
@@ -165,7 +164,7 @@ Validated private repositories can be associated with [full-stack and frontend p
 
 ## Limitations {#limitations}
 
-Certain limitations apply when using private repositories with Cloud Manager.
+The following limitations apply when using private repositories with Cloud Manager.
 
 * No Git tag is created and pushed when using private repositories on production full stack pipelines.
 * If the Adobe GitHub app is removed from your GitHub organization, it removes the pull request validation feature for all repositories.
