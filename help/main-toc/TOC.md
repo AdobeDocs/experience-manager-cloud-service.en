@@ -647,7 +647,6 @@ user-guide-title: AEM as a Cloud Service
     + [Developer docs and APIs references](/help/assets/developer-reference-material-apis.md)
     + [Folder metadata schema](/help/assets/folder-metadata-schema.md)
     + [Work with image and video profiles](/help/assets/dynamic-media/about-image-video-profiles.md)
-    + [Configure transcription for audio and video assets](/help/assets/configure-transcription.md)
     + [Translate assets](/help/assets/translate-assets.md)
     + [Search facets](/help/assets/search-facets.md)
     + [Assets HTTP API](/help/assets/mac-api-assets.md)
