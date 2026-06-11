@@ -16,7 +16,7 @@ Customers can now also onboard their Azure DevOps Git repositories into Cloud Ma
 * For Edge Delivery Services users, the onboarded repository can be used to sync and deploy site code.
 * For AEM as a Cloud Service and Adobe Managed Services (AMS) users, the repository can be linked to both full-stack and frontend pipelines.
 
-Cloud Manager validates GitHub repository ownership in one of two ways, depending on where the repository is hosted:
+Cloud Manager validates GitHub repository ownership in one of the following two ways, depending on where the repository is hosted:
 
 * GitHub Enterprise Server (self-hosted) repositories use a personal access token and a webhook. This page describes that method.
 * Repositories on `github.com`, including GitHub Enterprise Cloud deployments hosted on `github.com`, use the Adobe GitHub app. See [Add a private GitHub Cloud repository in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md).
