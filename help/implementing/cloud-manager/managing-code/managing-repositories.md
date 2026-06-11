@@ -77,7 +77,7 @@ When viewing your repositories in the **Repositories** window, you can view the 
 
 The **Repository Info** window opens with the details. For more information on accessing repository information, see [Accessing Repository Information](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
-## Check Branches / Create Project {#check-branches}
+## Check branches / Create project {#check-branches}
 
 In **AEM Cloud Manager**, the **Check Branches / Create Project** action serves two purposes, depending on the current state of the repository.
 
@@ -86,11 +86,11 @@ In **AEM Cloud Manager**, the **Check Branches / Create Project** action serves 
 
    ![Check branches action](assets/check-branches.png)
 
-## Copy Repository URL {#copy-url}
+## Copy repository URL {#copy-url}
 
 The **Copy Repository URL** action copies the URL of the repository selected in the **Repositories** page to the clipboard to be used elsewhere.
 
-## View &amp; Update a repository {#view-update}
+## View &amp; update a repository {#view-update}
 
 The **View & Update** action opens the **Update Repository** dialog box, where you can view the repository's **Name** and **Repository URL preview**. Additionally, it lets you update the **Description** of the repository.
 
