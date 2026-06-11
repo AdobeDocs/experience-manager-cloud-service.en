@@ -58,7 +58,7 @@ Execute these steps to enable [!DNL Dynamic Media with OpenAPI] for your cloud s
     1. **[!UICONTROL Environment stage]**: **[!UICONTROL Running]**
     1. ![DM activated](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media]**: **[!UICONTROL OpenAPI capabilities are activated]**
     
-       ![activation successful](/help/assets/assets/activation-successful.png){width="700" align="left"}
+       ![activation successful](/help/assets/assets/activation-successful.png){width="700"}
 
 #### Retry activation {#retry-activation}
 
@@ -67,7 +67,7 @@ If activation fails, the Cloud Manager displays the following status updates:
 * **[!UICONTROL Environment stage]**: **[!UICONTROL DM with OpenAPI Failed]**
 * ![DM activated](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media]**: **[!UICONTROL OpenAPI capabilities failed to activate]**
 
-  ![retry activation](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="left"}
+  ![retry activation](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700"}
 
 Select **[!UICONTROL Click to retry]** to restart activation.
 
@@ -144,7 +144,7 @@ Execute these steps to create and list a new [!DNL Dynamic Media] company (accou
 
 1. Specify a unique [!DNL Dynamic Media] company name, select a company region and add a list of company admin email IDs separated by commas.
 
-   ![Create Dynamic Media company](/help/assets/assets/create-dynamic-media-company.png){width="500" align="left"}
+   ![Create Dynamic Media company](/help/assets/assets/create-dynamic-media-company.png){width="500"}
 
 1. Click **[!UICONTROL Create]** to start creating your company. This action adds a new row to **[!UICONTROL [!DNL Dynamic Media] companies]** section and displays **[!UICONTROL Setting up]** as the company's **[!UICONTROL STATUS]**.
 
@@ -208,7 +208,7 @@ Execute the following steps in Cloud Manager to configure a custom domain in the
 
 1. Execute the **[!UICONTROL Configure CNAME]** steps to map `cdn.adobeaemcloud.com` (CNAME record) in the DNS record of the DNS service provider. This mapping ensures that requests received at the custom domain are redirected to Adobe's CDN. 
 
-   ![go live readiness dialogbox](/help/assets/assets/go-live-readiness-dialogbox.png){width="500" align="left"}
+   ![go live readiness dialogbox](/help/assets/assets/go-live-readiness-dialogbox.png){width="500"}
 
 1. Click **[!UICONTROL Ok]**, the **[!UICONTROL STATUS]** updates to **[!UICONTROL Verified]**. The custom domain is ready to use in the delivery URL. 
 

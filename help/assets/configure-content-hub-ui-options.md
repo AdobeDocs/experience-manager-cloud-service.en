@@ -171,6 +171,8 @@ Administrators can define the metadata fields that are searched when a user spec
 >[!CAUTION]
 >
 >It is recommended to carefully select the fields you mark as searchable. Include only those fields that users are likely to search for and that help return meaningful results. Fields such as dates and numbers are better suited for filtering and sorting rather than as searchable content. Marking too many fields as searchable may affect the quality and performance of search results.
+>
+>Tag properties are enabled for filtering only and are not searchable.
 
 1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Add metadata]**.
 
