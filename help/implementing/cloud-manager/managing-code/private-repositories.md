@@ -9,7 +9,7 @@ role: Admin, Developer
 
 By setting up Cloud Manager to integrate with your private GitHub Cloud (repositories hosted on `github.com`), you can validate your code directly within GitHub using Cloud Manager. This configuration removes the requirement to sync your code regularly with the Adobe repository.
 
-Cloud Manager validates GitHub repository ownership in one of two ways, depending on where the repository is hosted:
+Cloud Manager validates GitHub repository ownership in one of the following two ways, depending on where the repository is hosted:
 
 * Repositories on `github.com`, including GitHub Enterprise Cloud deployments hosted on `github.com`, use the Adobe GitHub app. This page describes that method.
 * GitHub Enterprise Server (self-hosted) repositories use a PAT (Personal Access Token) and a webhook. See [Add external repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
