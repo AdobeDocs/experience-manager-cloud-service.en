@@ -14,11 +14,12 @@ Learn how to view, add, and delete your git repositories in Cloud Manager.
 
 Repositories in Cloud Manager are used to store and manage your project's code using Git. For every *program* you add, an Adobe-managed repository is automatically created. 
 
-In addition, you have the option to create more Adobe-managed repositories or add your own private repositories. All repositories linked to your program can be viewed on the **Repositories** page.
+In addition, you have the option to create more Adobe-managed repositories or your own self-managed repositories hosted with an external Git vendor. For self-managed repositories, the onboarding steps differ depending on where your code is hosted. Repositories on `github.com` use the Adobe GitHub app, while self-hosted and other external repositories use a personal access token and a webhook. All repositories linked to your program can be viewed on the **Repositories** page.
 
 Repositories created within Cloud Manager can also be selected when adding or editing pipelines. For more information on configuring pipelines, see [CI-CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 Each pipeline is linked to a primary repository or branch. However, with [Git submodule support](git-submodules.md), multiple secondary branches can be included during the build process.
+
 
 ## View the Repositories page {#repositories-window}
 
@@ -42,21 +43,31 @@ Other available actions on the drop-down menu include **[Copy Repository URL](#c
    ![Repositories page](assets/repositories.png)
    *The Repositories page in Cloud Manager.*
 
-## Add a repository {#adding-repositories}
+## Add an Adobe repository {#adding-repositories}
 
 A user must have the role **Deployment Manager** or **Business Owner** to add a repository.
 
-On the **Repositories** page, near the upper-right corner, click **Add Repository**
+For help choosing between the private and external repository methods, see [Add a non-Adobe repository](#add-non-adobe-repositories).
 
-![Add repository dialog box](assets/repository-add.png)
+1. On the **Repositories** page, near the upper-right corner, click **Add Repository**
+
+   ![Add repository dialog box](assets/repository-add.png)
 *Add Repository dialog box.*
 
-Cloud Manager supports two types of repositories: Adobe-managed repositories (**Adobe Repository**) and self-managed repositories (**Private Repository**). The required fields for setup vary depending on the type of repository you choose to add. For more information, see the following:
+1. Click **Adobe Repository**. See [Add Adobe repositories in Cloud Manager](adobe-repositories.md).
 
-* [Add Adobe repositories in Cloud Manager](adobe-repositories.md)
-* [Add private repositories in Cloud Manager](private-repositories.md)
+   There is a limit of 300 repositories across all programs in any given company or IMS organization.
 
-There is a limit of 300 repositories across all programs in any given company or IMS organization.
+### Add a non-Adobe repository {#add-non-adobe-repositories}
+
+If you host your code outside Adobe, the page of instructions you use and the ownership-validation method both depend on where the repository is hosted. Use the following table to choose the correct path.
+
+| Where your repository is hosted | Validation method | Page of instructions to use |
+| --- | --- | --- |
+| `github.com`, including GitHub Enterprise Cloud deployments hosted on `github.com` | Adobe GitHub app and a secret file. No webhook required. | [Add a private GitHub Cloud repository in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) |
+| GitHub Enterprise Server (self-hosted) | Personal access token and a webhook | [Add external repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) |
+| GitLab, Bitbucket, or Azure DevOps | Personal access token and a webhook | [Add external repositories in Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/external-repositories) |
+
 
 ## Access repository information {#repo-info}
 
@@ -91,7 +102,7 @@ The **Delete** action removes the repository from your project. A repository can
 
 ![Delete](assets/repository-delete.png)
 
-Deleting a repository makes its name unusable for any new repositories created in the future. If you attempt to add a repository using the same name of a deleted repository, you encounter the following error message:
+Deleting a repository prevents its name from being used for any new repositories created in the future. If you attempt to add a repository using the same name of a deleted repository, you encounter the following error message:
 
 `Repository name should be unique within organization.` 
 

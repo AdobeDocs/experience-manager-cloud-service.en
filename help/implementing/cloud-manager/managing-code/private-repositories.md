@@ -5,26 +5,20 @@ exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Developer
 ---
-# Add a private GitHub Cloud repository in Cloud Manager {#private-repositories}
+# Add a private GitHub Enterprise Cloud repository in Cloud Manager {#private-repositories}
 
 By setting up Cloud Manager to integrate with your private GitHub Cloud (repositories hosted on `github.com`), you can validate your code directly within GitHub using Cloud Manager. This configuration removes the requirement to sync your code regularly with the Adobe repository.
 
-Cloud Manager validates GitHub repository ownership in one of the following two ways, depending on where the repository is hosted:
-
-* Repositories on `github.com`, including GitHub Enterprise Cloud deployments hosted on `github.com`, use the Adobe GitHub app. This page describes that method.
-* GitHub Enterprise Server (self-hosted) repositories use a PAT (Personal Access Token) and a webhook. See [Add external repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
-
-
->[!NOTE]
+>[!IMPORTANT]
+>Cloud Manager validates GitHub repository ownership in one of the following two ways, depending on where the repository is hosted:
 >
->This page applies to repositories hosted on `github.com`, including GitHub Enterprise Cloud deployments hosted on `github.com`. These repositories use the Adobe GitHub app to validate ownership. No webhook configuration is required, because Cloud Manager integrates directly through the app.
+>* This page of instructions applies to repositories hosted on `github.com`, including GitHub Enterprise Cloud deployments hosted on `github.com`. These repositories use the Adobe GitHub app to validate ownership. No webhook configuration is required because Cloud Manager integrates directly through the app.
+>* If you want to add any of the following repository types, see [Add external repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md). These repositories use a PAT (Personal Access Token) and a manually configured webhook to validate ownership.
 >
->To add any of the following repository types, see [Add external repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md). These repositories use a PAT (Personal Access Token) and a manually configured webhook to validate ownership.
->
->* GitHub Enterprise Server (the self-hosted version of GitHub)
->* GitLab (both `gitlab.com` and the self-hosted version of GitLab)
->* Bitbucket (only `bitbucket.org`, the cloud version)
->* Azure DevOps (`dev.azure.com`)
+>   * GitHub Enterprise Server (self-hosted version of GitHub) repositories.
+>   * GitLab (both `gitlab.com` and the self-hosted version of GitLab) repositories.
+>   * Bitbucket (only `bitbucket.org`, cloud version) repositories. The self-hosted version of Bitbucket was deprecated as of February 15, 2024.
+>   * Azure DevOps (`dev.azure.com`) repositories.
 
 <!--
 >[!NOTE]
@@ -100,11 +94,11 @@ Configuration of a private GitHub Cloud repository in Cloud Manager consists of 
 
 ### Validate ownership of a private GitHub repository {#validate-ownership}
 
-Cloud Manager now knows about your GitHub repository, but it still needs access to it. To grant access, you need to install the Adobe GitHub app and verify that you own the specified repository.
+Cloud Manager is now configured with your GitHub repository, but it still requires authorization to access the repository. To grant access, you need to install the Adobe GitHub app and verify that you own the specified repository.
 
 **To validate ownership of a private GitHub repository:**
 
-1. After adding your own repository, follow the remaining steps in the **Private Repository Ownership Validation** dialog box.
+1. After adding your repository, follow the remaining steps in the **Private Repository Ownership Validation** dialog box.
 
    ![Private Repository Ownership Validation](/help/implementing/cloud-manager/assets/repos/private-repo-validate.png)
 
@@ -113,25 +107,25 @@ Cloud Manager now knows about your GitHub repository, but it still needs access 
     | **Step 1: GitHub App** | Cloud Manager uses a GitHub app to interact with your private repository securely.<br>&bull; An owner of your GitHub organization must install the app located at `https://github.com/apps/cloud-manager-for-aem` and grant access to the repository.<br>&bull; For details on installing and granting access is done, see GitHub's documentation. |
     | **Step 2: Secret File** | To enhance security, you must create a secret file in the default branch of your repository.<br>&bull; Click **Generate**, then click **Confirm**. Cloud Manager generates the content of the private file in the **Secret file content** text field.<br>&bull; Click ![Copy icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) to copy the content from that field. The contents of the secret file is only shown once. If you do not copy the content before closing this dialog box, regenerate the secret. |
 
-1. Create a new file in the default branch of your GitHub repo called:
+1. Create a new file in the default branch of your GitHub repository with the name
 
     `.well-known/adobe/cloud-manager-challenge`
     
-1. Paste the secret file content into the new file you just created, and save.
+1. Paste the secret file content into the new file, and save.
 
-    Once the app is installed and the secret file exists in the repository, continue the step.
+    Once the app is installed and the secret file exists in the repository, continue the steps.
 
 1. In the **Private Repository Ownership Validation** dialog box, click **Validate**.
 
-The app can be installed and a secret file can be created in any order. However, both steps must be completed before you can validate.
+The app can be installed and a secret file can be created in either order. However, both steps must be completed before you can validate.
 
-Until validation, the repository is listed with a red icon, indicating that it is not yet validated and cannot yet be used.
+Until validation, the repository is listed with a red icon, indicating that it is not yet validated and is not available for use.
 
 ![Unvalidated repo](/help/implementing/cloud-manager/assets/repos/unvalidated-repo.png)
 
 The **Type** column in the table on the **Repositories** page identifies Adobe-provided repositories (**Adobe**) and your own private repositories (**GitHub**).
 
-If you need to return to the repository later to complete the validation, on the **Repositories** page, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) in the row representing the GitHub repository you just added. In the drop-down list, select **Ownership Validation**.
+To access the repository later to complete the validation, on the **Repositories** page, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) in the row representing the GitHub repository you added. In the drop-down list, select **Ownership Validation**.
 
 
 
@@ -174,7 +168,7 @@ Validated private repositories can be associated with [full-stack and frontend p
 Certain limitations apply when using private repositories with Cloud Manager.
 
 * No Git tag is created and pushed when using private repositories on production full stack pipelines.
-* If the Adobe GitHub app is removed from your GitHub organization, it removes the pull requests validation feature for all repositories.
+* If the Adobe GitHub app is removed from your GitHub organization, it removes the pull request validation feature for all repositories.
 * Pipelines using private GitHub Cloud repositories and the "on-commit" build trigger are not started automatically when a new commit is pushed into the selected branch.
 * [Artifact reuse functionality](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) does not apply to private repositories.
 * You cannot pause the pull request validation using the GitHub check from Cloud Manager. If the GitHub repository is validated in Cloud Manager, Cloud Manager always tries to validate the pull requests created for that repository.
