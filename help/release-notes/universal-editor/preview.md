@@ -27,3 +27,4 @@ These **preview** release notes are provided as a convenience so you know what c
 * A bug was fixed where a renderer crashes in some situations when reloading certain models.
 * A bug was fixed where certain tags could not be removed.
 * The Featured Image button's accessible name no longer contains duplicate information.
+
