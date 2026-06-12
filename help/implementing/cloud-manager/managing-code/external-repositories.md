@@ -22,7 +22,7 @@ Customers can now also onboard their Azure DevOps Git repositories into Cloud Ma
 >
 >* This page of instructions applies to adding any of the following repository types. These types use a PAT (Personal Access Token) and a manually configured webhook to validate ownership.
 >
->   * GitHub Enterprise Server (self-hosted version of GitHub) repositories.
+>   * GitHub (Free, Pro, Team, or Enterprise Cloud) repositories.
 >   * GitLab (both `gitlab.com` and the self-hosted version of GitLab) repositories.
 >   * Bitbucket (only `bitbucket.org`, cloud version) repositories. The self-hosted version of Bitbucket was deprecated as of February 15, 2024.
 >   * Azure DevOps (`dev.azure.com`) repositories.
@@ -33,8 +33,8 @@ Customers can now also onboard their Azure DevOps Git repositories into Cloud Ma
 
 Configuration of an external repository in Cloud Manager consists of the following steps:
 
-1. [Add an external repository](#add-external-repo) to a selected program
-1. [Link a validated external repository to a pipeline](#validate-ext-repo)
+1. [Add an external repository](#add-external-repo) to a selected program.
+1. [Link a validated external repository to a pipeline](#validate-ext-repo).
     <!--
      1. Provide an access token to the external repository.
     1. Validate ownership of the private GitHub repository.
