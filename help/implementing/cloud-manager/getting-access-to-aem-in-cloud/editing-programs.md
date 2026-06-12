@@ -26,7 +26,7 @@ You must have the **Business Owner** role to edit programs, delete sandbox progr
 
 ## Edit a program {#editing}
 
-Anytime a program is edited, including adding or removing a solution or add-on, those changes take effect following the next deployment.
+Anytime a program is edited, including adding or removing a solution or add-on, those changes take effect following the next deployment. 
 
 **To edit a program:**
 
