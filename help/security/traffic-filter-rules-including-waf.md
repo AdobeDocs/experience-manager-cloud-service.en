@@ -10,6 +10,7 @@ role: Admin
 
 Traffic filter rules block or allow requests at the CDN layer, which is useful in scenarios such as the following:
 
+
 * Restricting access to specific domains to internal company traffic, before a new site goes live.
 * To be less susceptible to volumetric DoS attacks, establish rate limits.
 * Preventing IP addresses known to be malicious from targeting your pages.
