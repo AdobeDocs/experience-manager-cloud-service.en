@@ -11,8 +11,8 @@ role: Admin, Developer
 
 To manage and edit programs, start at the [**My Programs** console](/help/implementing/cloud-manager/navigation.md). The **My Programs** page provides an overview of all programs to which you have access. When selecting an individual program, the **Program Overview** page provides an overview of the details of the program. 
 
-
 From the **Program Overview**, users with the requisite permissions can edit [production programs created in your organization](creating-production-programs.md) and [sandbox programs created in your organization](creating-sandbox-programs.md). By editing a program, you can do the following:
+
 
 * Enable or disable **WAF-DDOS Protection** on the **Security** tab.
 * Add the Sites solution to an existing program with Assets and add Assets to an existing program with Sites.

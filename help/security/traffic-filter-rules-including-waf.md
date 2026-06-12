@@ -10,10 +10,10 @@ role: Admin
 
 Traffic filter rules block or allow requests at the CDN layer, which is useful in scenarios such as the following:
 
-
 * Restricting access to specific domains to internal company traffic, before a new site goes live.
 * To be less susceptible to volumetric DoS attacks, establish rate limits.
 * Preventing IP addresses known to be malicious from targeting your pages.
+
 
 Many of these traffic filter rules are available to all AEM as a Cloud Service Sites and Forms customers. As *standard traffic filter rules*, they operate on request properties: IP, hostname, path, and user agent. Standard traffic filter rules include rate limit rules to guard against traffic spikes.
 
