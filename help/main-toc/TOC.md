@@ -259,6 +259,8 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.06.05 Release Notes](/help/release-notes/universal-editor/2026/2026-06-05.md)
+      + [2026.05.28 Release Notes](/help/release-notes/universal-editor/2026/2026-05-28.md)
       + [2026.05.21 Release Notes](/help/release-notes/universal-editor/2026/2026-05-21.md)
       + [2026.05.14 Release Notes](/help/release-notes/universal-editor/2026/2026-05-14.md)
       + [2026.05.07 Release Notes](/help/release-notes/universal-editor/2026/2026-05-07.md)
@@ -1152,6 +1154,7 @@ user-guide-title: AEM as a Cloud Service
         + [Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md)
         + [Prompting Guide](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md)
         + [Project Documentation Skill](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md)
+        + [Site Catalog Skill](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
         + [AOE Delivery](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
       + [Development Agent](/help/ai-in-aem/agents/brand-experience/development/development.md)
     + Content Advisor Agent {#content-advisor}
