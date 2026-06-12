@@ -102,7 +102,7 @@ If you have the necessary entitlements, the **Security** tab is shown as the fir
 
 ![Security options](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security-tab.png)
 
-The **Security** tab provides the options to activate **HIPAA**, or **WAF-DDOS Protection**, or both, for your production program.
+The **Security** tab provides the options to activate **HIPAA**, or **WAF-DDOS Protection**, or both, for your production program, and **Customer Managed Keys**.
 
 Adobe HIPAA Compliant and WAF-DDOS (Web Application Firewall - Distributed Denial of Service) facilitates cloud-based security as part of a multi-layered approach for protecting against vulnerabilities.
 
@@ -111,7 +111,17 @@ Adobe HIPAA Compliant and WAF-DDOS (Web Application Firewall - Distributed Denia
   * HIPAA cannot be enabled or disabled after program creation.
 * **WAF-DDOS Protection** - This option enables the Web Application Firewall through rules to protect your application.
   * Once activated, WAF-DDOS protection can then be configured by setting up a [non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
-  * See [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md) to learn how to manage traffic filter rules in your repository so they are deployed properly.
+
+    >[!NOTE]
+    >
+    >Checking **WAF-DDOS Protection** activates the feature, but licensed WAF rules provide protection only after the check box is selected. See [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md) to learn more how to manage traffic filter rules in your repository so they are deployed properly.
+    >
+    >To confirm the feature is active, inspect the [CDN logs](//help/security/traffic-filter-rules-including-waf.md#cdn-logs) once traffic is flowing to the site. Look for log entries that include a `rules` property containing a `waf` attribute. For example,
+    >
+    >`"rules": "waf=SQLI"`
+    >
+    >This attribute appears once WAF is active, even before any WAF rules are deployed.
+
 * **Customer Managed Keys** - This option activates CMK (Customer Managed Keys) for the program, letting you supply your own encryption keys for data at rest in Azure Blob Storage and MongoDB. If you choose, you can enable CMK later by [editing a program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing).
 
    * CMK is available for Cloud Service programs only. It cannot be enabled on sandbox programs.
