@@ -22,7 +22,7 @@ Customers can now also onboard their Azure DevOps Git repositories into Cloud Ma
 >
 >* This page of instructions applies to adding any of the following repository types. These types use a PAT (Personal Access Token) and a manually configured webhook to validate ownership.
 >
->   * GitHub (Free, Pro, Team, or Enterprise Cloud) repositories.
+>   * GitHub Enterprise Server (self-hosted version of GitHub) repositories.
 >   * GitLab (both `gitlab.com` and the self-hosted version of GitLab) repositories.
 >   * Bitbucket (only `bitbucket.org`, cloud version) repositories. The self-hosted version of Bitbucket was deprecated as of February 15, 2024.
 >   * Azure DevOps (`dev.azure.com`) repositories.
