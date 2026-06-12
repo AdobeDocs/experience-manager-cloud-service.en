@@ -90,7 +90,7 @@ Create a file named `edgeFunctions.yaml` in your configuration directory:
 kind: "EdgeFunctions"
 version: "1"
 data:
-  services:
+  functions:
     - name: my-edge-function
     # Uncomment to enable secrets
     # secrets:
@@ -102,10 +102,10 @@ The default limit is 1 function for AEM as a Cloud Service environments and 3 fo
 
 | Key | Description |
 |---|---|
-| `services` | List of edge function services, each identified by a `name`. |
-| `configs` | Key/value pairs exposed to all edge function services as environment variables. |
-| `secrets` | Key/value pairs referencing Cloud Manager secrets, exposed to all edge function services. |
-| `kvs` | Boolean toggle to provision a KV store for runtime read/write key-value data shared across all edge function services. |
+| `functions` | List of edge functions, each identified by a `name`. For backward compatibility, `services` is also accepted but `functions` is the preferred key. Using both in the same file is not allowed. |
+| `configs` | Key/value pairs exposed to all edge functions as environment variables. |
+| `secrets` | Key/value pairs referencing Cloud Manager secrets, exposed to all edge functions. |
+| `kvs` | Boolean toggle to provision a KV store for runtime read/write key-value data shared across all edge functions. |
 
 ### 3. Add CDN Origin Selector Rules {#cdn-routing}
 
