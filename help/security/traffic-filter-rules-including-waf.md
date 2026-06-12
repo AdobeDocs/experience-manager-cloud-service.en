@@ -724,9 +724,9 @@ To gain practical knowledge and experience around traffic filter rules, includin
 
 The tutorials include:
 
-* An overview of standard and WAF traffic filter rules
+* An overview of standard and WAF traffic filter rules.
 * To block attacks, including Denial of Service (DoS), configure the recommended standard and WAF traffic filter rules.
-* Deploying rules using the Cloud Manager config pipeline
-* Testing your rules using tools to simulate malicious traffic
-* Analyzing results using the Log Analysis Tooling
-* Best practices
+* Deploying rules using the Cloud Manager config pipeline.
+* Testing your rules using tools to simulate malicious traffic.
+* Analyzing results using the Log Analysis Tooling.
+* Best practices.

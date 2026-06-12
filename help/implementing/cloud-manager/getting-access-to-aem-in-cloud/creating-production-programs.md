@@ -98,7 +98,7 @@ Depending on what entitlements are available to your organization, the following
 
 ### Security {#security}
 
-If you have the necessary entitlements, the **Security** tab is shown as the first tab in the **`Set up for production`** dialog box.
+If you have the necessary entitlements, the **Security** tab is shown as the first tab in the **`Set up for production`** dialog box. 
 
 ![Security options](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security-tab.png)
 
