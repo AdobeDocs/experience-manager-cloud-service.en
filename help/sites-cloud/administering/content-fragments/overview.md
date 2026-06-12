@@ -158,9 +158,6 @@ Variations are a significant feature of AEM's Content Fragments. They allow you 
   * Can be defined during fragment authoring; from the left panel.
   * Stored in the fragment, to help avoid scattering of content copies.
   * Variations can be [compared and synchronized](/help/sites-cloud/administering/content-fragments/authoring.md#compare-and-synchronize-rich-text) with **Main**.
-  <!--
-  * Can be [Summarized](/help/sites-cloud/administering/content-fragments/authoring.md#summarizing-text) to quickly truncate the text to a predefined length.
-  -->
 
 ## Content Fragments and Content Services {#content-fragments-and-content-services}
 
