@@ -6,7 +6,7 @@ feature: Security
 role: Admin
 ---
 
-# Traffic Filter Rules Including WAF Rules {#traffic-filter-rules-including-waf-rules}
+# Traffic filter rules including WAF rules {#traffic-filter-rules-including-waf-rules}
 
 Traffic filter rules block or allow requests at the CDN layer, which is useful in scenarios such as the following:
 
@@ -26,7 +26,7 @@ To gain expertise on this feature quickly, [complete a tutorial](#tutorial).
 >For additional CDN traffic configuration options—such as editing requests/responses, declaring redirects, and proxying to non-AEM origins—see the [Configuring Traffic at the CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md) article.
 
 
-## How This Article is Organized {#how-organized}
+## How this article is organized {#how-organized}
 
 This article is organized into the following sections:
 
@@ -43,7 +43,7 @@ This article is organized into the following sections:
 * **Recommended Starter Rules:** A set of rules to get started with.
 * **Tutorial:** Information about the feature, including how to use dashboard toolings to declare the appropriate rules.
 
-## Traffic Protection Overview {#traffic-protection-overview}
+## Traffic protection overview {#traffic-protection-overview}
 
 In the current digital landscape, malicious traffic is an ever-present threat. Adobe recognizes the gravity of the risk and offers several approaches to protect customer applications and mitigate attacks when they occur.
 
@@ -57,7 +57,7 @@ For example, at the Apache layer, customers configure either the [Dispatcher mod
 
 As this article describes, traffic filter rules deploy to the Adobe Managed CDN using Cloud Manager's [config pipelines](/help/operations/config-pipeline.md). Beyond *standard traffic filter rules* (IP, path, headers, rate limits), customers license *WAF rules*.
 
-## Suggested Process {#suggested-process}
+## Suggested process {#suggested-process}
 
 The following is a high-level recommended end-to-end process for determining the right traffic filter rules:
 
@@ -112,7 +112,7 @@ The following is a high-level recommended end-to-end process for determining the
 
 1. Create a config pipeline in Cloud Manager, as described in the [config pipeline article](/help/operations/config-pipeline.md#managing-in-cloud-manager). The pipeline references a top level `config` folder with the `cdn.yaml` file placed somewhere below, see [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure).
 
-## Traffic Filter Rules Syntax {#rules-syntax}
+## Traffic filter rules syntax {#rules-syntax}
 
 To match patterns such as IP, user agent, headers, hostname, geo, or URL, you can configure *traffic filter rules*.
 
@@ -150,7 +150,7 @@ The format of the traffic filter rules in the `cdn.yaml` file is described below
 | action  | X  | X  | `Action` | log  | log, allow, block, or Action object. Default is log |
 |  rateLimit | X  |   | `RateLimit`  | not defined  | Rate limiting configuration. Rate limiting is disabled if not defined.<br><br>There is a separate section further below describing the rateLimit syntax, along with examples.  |
 
-### Action Structure {#action-structure}
+### Action structure {#action-structure}
 
 An `action` can either be a string specifying the action (allow, block or log), or an object composed of both the action type (allow, block or log) and options like wafFlags and/or status.
 
@@ -164,11 +164,11 @@ Actions are prioritized according to their types in the following table, which i
 |  **block** | `status, wafFlags` (optional and mutually exclusive), `alert` (optional)  | if wafFlags is not present, returns HTTP error bypassing all other properties, error code is defined by status property or defaults to 406. If wafFlags is present, it enables specified WAF protections and proceeds to further rule processing. <br>If alert is specified, an Actions Center notification is sent if the rule is triggered 10 times in a 5-minute window. Once an alert is triggered for a particular rule, it will not fire off again until the next day (UTC). |
 | **log**  | `wafFlags` (optional), `alert` (optional)  | logs the fact that the rule was triggered, otherwise does not affect the processing. wafFlags has no effect. <br>If alert is specified, an Actions Center notification is sent if the rule is triggered 10 times in a 5-minute window. Once an alert is triggered for a particular rule, it will not fire off again until the next day (UTC). |
 
-### WAF Flags List {#waf-flags-list}
+### WAF flags list {#waf-flags-list}
 
 The `wafFlags` property, used in the licensable WAF traffic filter rules, references the following:
 
-#### Malicious Traffic
+#### Malicious traffic
 
 | **Flag ID**  | **Flag Name** | **Description**  |
 |---|---|---|
@@ -184,7 +184,7 @@ The `wafFlags` property, used in the licensable WAF traffic filter rules, refere
 | LOG4J-JNDI  | Log4J JNDI  |  Log4J JNDI attacks attempt to exploit the [Log4Shell vulnerability](https://en.wikipedia.org/wiki/Log4Shell) present in Log4J versions earlier than 2.16.0 |
 | CVE | CVE | Flag to identify a CVE. Is always combined with a flag `CVE-<CVE Number>`. Contact Adobe to learn more about which CVEs Adobe will protect you from.|
 
-#### Suspicious Traffic
+#### Suspicious traffic
 
 | **Flag ID**  | **Flag Name** | **Description**  |
 |---|---|---|
@@ -204,7 +204,7 @@ The `wafFlags` property, used in the licensable WAF traffic filter rules, refere
 | PRIVATEFILE  | Private files  | Private files are confidential in nature, such as an Apache `.htaccess` file, or a configuration file which could leak sensitive information  |
 | SCANNER  |  Scanner | Identifies popular scanning services and tools  |
 
-#### Miscellaneous Traffic
+#### Miscellaneous traffic
 
 | **Flag ID**  | **Flag Name** | **Description**  |
 |---|---|---|
@@ -226,7 +226,7 @@ The `wafFlags` property, used in the licensable WAF traffic filter rules, refere
 
 * WAF rule matches only appear in CDN logs for CDN misses and passes, not hits.
 
-## Rules Examples {#examples}
+## Rules examples {#examples}
 
 Some rule examples follow. See the [rate limit section](#rate-limit-rules) further down for examples of rate limit rules.
 
@@ -345,7 +345,7 @@ data:
         action: block
 ```
 
-## Rate Limit Rules
+## Rate limit rules
 
 Sometimes it is desirable to block traffic if it exceeds a certain rate of incoming requests, based on a specific condition. Setting a value for the `rateLimit` property limits the rate of those requests that match the rule condition.
 
@@ -355,7 +355,7 @@ Rate limits are calculated per CDN POP. As an example, assume that POPs in Montr
 
 Rate limits are evaluated based on either traffic hitting the edge, traffic hitting the origin, or the number of errors.
 
-### rateLimit Structure {#ratelimit-structure}
+### rateLimit structure {#ratelimit-structure}
 
 | **Property**  | **Type**  | **Default**  | **MEANING**  |
 |---|---|---|---|
@@ -413,7 +413,7 @@ data:
 
 For additional code snippets for advanced scenarios, see the [CDN Configuration Snippets for Common Scenarios](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md) article.
 
-## CVE Rules {#cve-rules}
+## CVE rules {#cve-rules}
 
 If WAF is licensed, Adobe automatically applies blocking rules to protect against many known CVEs (Common Vulnerabilities and Exposures) and new CVEs are added soon after being discovered. Customers do not configure CVE rules themselves.
 
@@ -421,7 +421,7 @@ If a traffic request matches a CVE, it appears in the corresponding CDN log entr
 
 Contact Adobe support if there are questions about a particular CVE or if there is a particular CVE rule that your organization wants to disable.
 
-## Traffic Filter Rules Alerts {#traffic-filter-rules-alerts}
+## Traffic filter rules alerts {#traffic-filter-rules-alerts}
 
 A rule can be configured to send an Actions Center notification if it is triggered ten times within a 5-minute window. Such a rule alerts you when certain traffic patterns occur so that you can take any necessary measures. Once an alert is triggered for a particular rule, it does not trigger again until the next day (UTC).
 
@@ -448,7 +448,7 @@ data:
           alert: true
 ```
 
-## Default Traffic Spike at Origin Alert {#traffic-spike-at-origin-alert}
+## Default traffic spike at origin alert {#traffic-spike-at-origin-alert}
 
 An [Actions Center](/help/operations/actions-center.md) email notification alerts you when high traffic from the same IP address hits the origin, suggesting a DDoS attack.
 
@@ -464,7 +464,7 @@ The system enables this alert by default, but you can disable it using the *defa
       defaultTrafficAlerts: false
    ```
 
-## CDN Logs {#cdn-logs}
+## CDN logs {#cdn-logs}
 
 AEM as a Cloud Service provides access to CDN logs, which are useful for use cases including cache hit ratio optimization, and configuring traffic filter rules. CDN logs appear in the Cloud Manager **Download Logs** dialog, when selecting the Author or Publish service.
 
@@ -551,7 +551,7 @@ data:
 }
 ```
 
-### Log Format {#cdn-log-format}
+### Log format {#cdn-log-format}
 
 Below is a list of the field names used in CDN logs, along with a brief description.
 
@@ -573,7 +573,7 @@ Below is a list of the field names used in CDN logs, along with a brief descript
  | *pop*  | Datacenter of the CDN cache server.  |
  | *rules*  | The name of any matching rules.<br><br>Also indicates if the match resulted in a block. <br><br>For example, "`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`"<br><br>Empty if no rules matched.  |
 
-## Dashboard Tooling {#dashboard-tooling}
+## Dashboard tooling {#dashboard-tooling}
 
 Adobe provides a mechanism to download dashboard tooling onto your computer to ingest CDN logs downloaded via Cloud Manager. To analyze your traffic and help determine the appropriate traffic filter rules to declare, including WAF rules, use this tooling.
 
@@ -581,11 +581,11 @@ Dashboard tooling can be cloned directly from the [AEMCS-CDN-Log-Analysis-Toolin
 
 [A tutorial](#tutorial) is available for concrete instructions on how to use the dashboard tooling.
 
-## Recommended Starter Rules {#recommended-starter-rules}
+## Recommended starter rules {#recommended-starter-rules}
 
 Adobe suggests starting with the traffic filter rules below and then refining over time. *Standard rules* are available with a Sites or Forms license, while *WAF rules* require an Extended Security (formerly named WAF-DDoS Protection) or Extended Security for Healthcare (formerly named Enhanced Security) license.
 
-### Recommended Standard Rules {#recommended-nonwaf-starter-rules}
+### Recommended standard rules {#recommended-nonwaf-starter-rules}
 
 Start with these rules:
 
