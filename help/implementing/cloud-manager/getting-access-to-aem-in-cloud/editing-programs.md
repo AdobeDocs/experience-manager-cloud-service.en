@@ -46,26 +46,24 @@ Anytime a program is edited, including adding or removing a solution or add-on, 
 
    The options available for editing the program are the same options for program creation.
 
-   * On the **Security** tab, you can enable **Customer Managed Keys** for an existing program.
+   * You can configure whether a publish tier is provisioned for new environments (Beta). See [Flexible Publish Tier (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
+   * See [Create Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) and [Create Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) for details on the individual options.
+   * To enable or disable the Web Application Firewall (WAF) at any time, select the **Security** tab, then check or uncheck the **WAF-DDOS Protection** check box. If WAF rules are licensed but this check box is not checked, the feature is not active and its protections do not apply. For more information, see [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md).
 
       >[!NOTE]
-      >
-      >To enable or disable the Web Application Firewall (WAF) at any time, on the same Security tab, check or uncheck the **WAF-DDOS Protection** check box. If WAF rules are licensed but this check box is not checked, the feature is not active and its protections do not apply. For more information, see [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md).
-      >
       >To confirm the feature is active, inspect the [CDN logs](//help/security/traffic-filter-rules-including-waf.md#cdn-logs) once traffic is flowing to the site. Look for log entries that include a `rules` property containing a `waf` attribute. For example,
       >
       >`"rules": "waf=SQLI"`
       >
       >This attribute appears once WAF is active, even before any WAF rules are deployed.
 
-   * You can configure whether a publish tier is provisioned for new environments (Beta). See [Flexible Publish Tier (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
-   * See [Create Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) and [Create Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) for details on the individual options. 
-   * [Additional options](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) are available for your production program depending on the entitlements of your organization.
+      ![Edit Program dialog box showing Security tab options](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cmk-edit-programs.png)
+
+   * On the same **Security** tab, you can enable **Customer Managed Keys** for an existing program.
+
+      CMK cannot be disabled after activation. After enabling CMK, configure your encryption keys in Experience Hub. See [Configure CMK in Experience Hub](#configure-cmk-experience-hub).
  
-
-   ![Edit Program dialog box showing Customer Managed Keys selected](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cmk-edit-programs.png)
-
-   CMK cannot be disabled after activation. After enabling CMK, configure your encryption keys in Experience Hub. See [Configure CMK in Experience Hub](#configure-cmk-experience-hub).
+   * [Additional options](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) are available for your production program depending on the entitlements of your organization.
    
 1. Click **Update** to save your changes.
 
