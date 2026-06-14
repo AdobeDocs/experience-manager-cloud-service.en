@@ -121,7 +121,7 @@ Adobe HIPAA Compliant and WAF-DDOS (Web Application Firewall - Distributed Denia
     >
     >`"rules": "waf=SQLI"`
     >
-    >This attribute appears once WAF is active, even before any WAF rules are deployed.
+    >This attribute appears when WAF is active, even before any WAF rules are deployed.
 
 * **Customer Managed Keys** - This option activates CMK (Customer Managed Keys) for the program, letting you supply your own encryption keys for data at rest in Azure Blob Storage and MongoDB. If you choose, you can enable CMK later by [editing a program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing).
 
