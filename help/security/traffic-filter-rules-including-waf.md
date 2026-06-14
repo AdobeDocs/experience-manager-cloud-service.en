@@ -67,7 +67,7 @@ The following is a high-level recommended end-to-end process for determining the
 
     >[!IMPORTANT]
     >
-    >Licensing WAF rules does not activate them. The feature stays inactive until **WAF-DDOS Protection** is checked on the **Security** tab in Cloud Manager.
+    >Licensing WAF rules *does not* activate them. The feature stays inactive until **WAF-DDOS Protection** is checked on the **Security** tab in Cloud Manager. See [Create Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) or [Edit Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) to enable the feature.
 
 1. Read and complete the tutorial to understand how to use traffic filter rules, including WAF rules if they've been licensed. The tutorial walks you through deploying rules to a dev environment, simulating malicious traffic, downloading the [CDN logs](#cdn-logs), and analyzing them in [dashboard tooling](#dashboard-tooling).
 1. Copy the recommended starter rules to `cdn.yaml` and deploy the configuration to the production environment, with some of the rules in log mode.
