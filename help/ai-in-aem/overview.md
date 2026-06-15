@@ -56,6 +56,10 @@ Generative AI is used throughout AEM:
 * [AI Translation Integration](/help/sites-cloud/administering/translation/ai-translation-integration.md)
 
   AI translation integration lets you use a large language model (LLM) as a translation service for content you author in Adobe Experience Manager. You connect AEM to your LLM provider (starting with Microsoft Azure OpenAI), reuse the same translation workflows as for other connectors, and optionally upload translation style guides so AEM can generate rules that keep tone, terminology, and brand language consistent across locales.
+
+* [AEM Content AI](https://experienceleague.adobe.com/en/docs/experience-manager-content-ai/using/introduction)
+
+  AEM Content AI helps brands maintain accurate, current, and on-brand content as AI systems increasingly represent their messages, providing AI-assisted authoring, natural-language content discovery, and brand-aware generation for both human and AI-driven experiences.
    
 <!-- 
   * [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/aem-ai-assistant.md)

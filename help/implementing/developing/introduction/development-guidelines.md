@@ -14,7 +14,7 @@ role: Admin, Developer
 >abstract="Learn guidelines for developing on AEM as a Cloud Service and about important ways in which it differs from AEM on premises and AEM in AMS."
 >additional-url="https://video.tv.adobe.com/v/330555/" text="Demo of Package Structure"
 
-This document presents guidelines for developing on AEM as a Cloud Service and about important ways in which it differs from AEM on premises and AEM in AMS.
+This document presents guidelines for developing on AEM as a Cloud Service and important ways in which it differs from AEM on premises and AEM in AMS.
 
 ## Code Must Be Cluster-Aware {#cluster-aware}
 
@@ -42,11 +42,11 @@ Similarly, with everything that is asynchronously happening, like acting on obse
 
 Code executed as a background task must assume that the instance it is running in can be brought down at any time. Therefore, the code must be resilient, and most importantly, resumable. That means that if the code gets re-executed, it should not start from the beginning again but rather close to where it left off. While this is not a new requirement for this kind of code, in AEM as a Cloud Service it is more likely that an instance takedown is going to occur.
 
-To minimize the trouble, long-running jobs should be avoided if possible, and they should be resumable at a minimum. For executing such jobs, use Sling Jobs, which have an at-least-once guarantee and hence if they get interrupted will get re-executed as soon as possible. But they should probably not start from the beginning again. For scheduling such jobs, it is best to use the [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) scheduler as this again ensures the at-least-once execution.
+To minimize the trouble, long-running jobs should be avoided if possible, and they should be resumable at a minimum. For executing such jobs, use Sling Jobs, which have an at-least-once guarantee and hence, if they get interrupted, will get re-executed as soon as possible. But they should probably not restart from the beginning. For scheduling such jobs, it is best to use the [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) scheduler, as this again ensures the at-least-once execution.
 
 Do not use the Sling Commons Scheduler for scheduling, as execution cannot be guaranteed. It is just more likely that it is scheduled.
 
-Similarly, with everything that is asynchronously happening, like acting on observation events (being it JCR events or Sling resource events), can't be guaranteed to be executed and therefore must be used with care. This is already true for AEM deployments in the present.
+Similarly, with everything that is asynchronously happening, like acting on observation events (be it JCR events or Sling resource events), jobs can't be guaranteed to be executed and therefore must be used with care. This is already true for AEM deployments at the present.
 
 ## Outgoing HTTP Connections {#outgoing-http-connections}
 
@@ -56,13 +56,13 @@ For code that does not apply these timeouts, AEM instances running on AEM as a C
 
 Adobe recommends the use of the provided [Apache HttpComponents Client 4.x library](https://hc.apache.org/httpcomponents-client-ga/) for making HTTP connections.
 
-Alternatives that are known to work, but may require providing the dependency yourself are:
+Alternatives that are known to work (but may require providing the dependency yourself) are:
 
 * [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html) and/or [java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html) (Provided by AEM)
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (not recommended as it is outdated and replaced by version 4.x)
 * [OK Http](https://square.github.io/okhttp/) (Not provided by AEM)
 
-Next to providing timeouts also a proper handling of such timeouts and unexpected HTTP status codes should be implemented.
+In addition to providing timeouts, a proper handling of those timeouts and unexpected HTTP status codes also should be implemented.
 
 ## Handling request rate limits {#rate-limit-handling}
 
@@ -96,7 +96,7 @@ Content is replicated from Author to Publish through a pub-sub mechanism. Custom
 
 Production environments are sized higher to ensure stable operation, while Stage environments are sized like Production environments to ensure realistic testing under production conditions.
 
-Dev environments and Rapid Dev environments should be limited to development, error analysis, and functional tests, and are not designed to process high workloads, nor large amounts of content.
+Dev environments and Rapid Dev environments should be limited to development, error analysis, and functional tests and are not designed to process high workloads or large amounts of content.
 
 As an example, changing an index definition on a large content repository on a Dev environment can result in re-indexing, resulting in too much processing. Tests that require substantial content should be run on Stage environments.
 
@@ -178,7 +178,7 @@ For local development (using the SDK), `/apps` and `/libs` can be written to dir
 >* Some customers will have the option to try out a revamped experience for the AEM Cloud Service Developer Console. See [this article](/help/implementing/developing/introduction/aem-developer-console.md) for more information.
 >* The AEM as a Cloud Service Developer Console should not be confused with the similarly named [*Adobe Developer Console*](https://developer.adobe.com/developer-console/).
 
-Customers can access CRXDE lite on the author tier's development environment, but not stage or production. The immutable repository (`/libs`, `/apps`) cannot be written to at runtime so attempting to do so will result in errors.
+Customers can access CRXDE lite on the author tier's development environment, but not stage or production. The immutable repository (`/libs`, `/apps`) cannot be written to at runtime and attempting to do so will result in errors.
 
 Instead, the Repository Browser can be launched from the AEM as a Cloud Service Developer Console, providing a read-only view into the repository for all environments on author, publish, and preview tiers. For more information, see the [Repository Browser](/help/implementing/developing/tools/repository-browser.md).
 
