@@ -289,7 +289,7 @@ As the operation runs, AEM processes assets in batches and periodically saves pr
 
 For move and delete operations, access to the affected folders is restricted while the job is running to help prevent conflicting actions.
 
-To track job progress, open the Assets Jobs console. The console displays details such as the current status, percentage completed, and other job information. Select a job and click Open to view additional details, including progress information and the estimated time remaining for completion. Users are also notified when the operation finishes.
+To track job progress, open the Assets Jobs console (**Assets** > **Jobs** within the Admin view). The console displays details such as the current status, percentage completed, and other job information. Select a job and click Open to view additional details, including progress information and the estimated time remaining for completion. Users are also notified when the operation finishes.
 
 ![Date Picker](assets/async-jobs-status.png)
 
