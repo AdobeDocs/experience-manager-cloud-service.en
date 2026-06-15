@@ -63,7 +63,7 @@ This section lists functionality that has been removed.
 
 | Area         | Feature            | Replacement | Target Removal Date |
 | ------------ | ------------------ | ----------- | ------------------- |
-| Sites | Content Fragment text summarization | AEM Generate Variations | Removed |
+| Sites | Content Fragment text summarization | [AEM Generate Variations](/help/generative-ai/generate-variations-integrated-editor.md#access-generate-variations) | Removed |
 | User Interface  | Classic UI is removed from the product user interface. A few Classic UI dialogs are available for a few select capabilities, such as Link Checker, Version Purge, and some Cloud Service configurations. Upcoming [product updates](/help/release-notes/home.md) may further remove Classic UI availability. | Standard UI  | Removed |
 | [!DNL Dynamic Media] | Previous integrations with [Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/integration/scene7#integration) and [Dynamic Media Hybrid mode](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dynamic#dynamic) are not available in [!DNL Experience Manager] as a [!DNL Cloud Service]. | Use [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) provided with [!DNL Experience Manager] as a [!DNL Cloud Service]. | Removed |
 | [!DNL Sites] | Portal Director and Portlet Component | These capabilities were deprecated in [!DNL Experience Manager] 6.4 and have now been removed from [!DNL Experience Manager].| Removed |
