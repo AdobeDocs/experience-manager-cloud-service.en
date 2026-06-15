@@ -64,7 +64,7 @@ In this one-stop shop archived newsletter, you can find valuable knowledge-build
   * Explore how to use the cropping magic of Dynamic Media.
   * To help you get more value from Dynamic Media Classic, take advantage of a free audit from Adobe.
   * Learn about the new user interface for Dynamic Media Classic.
-  * Meet `Georgia Myers`, Manager of Customer Success for Adobe Experience Cloud.
+  * Meet `Georgia Myers`, Manager of Customer Success for Adobe CX Enterprise.
 
 * **[January 2020, Issue 1](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_01_2020_Jan.html)**
 
