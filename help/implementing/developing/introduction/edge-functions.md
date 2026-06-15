@@ -93,10 +93,7 @@ version: "1"
 data:
   services:
     - name: my-edge-function
-    # Uncomment to enable secrets
-    # secrets:
-    #   - key: API_TOKEN
-    #     value: ${{ API_TOKEN_SECRET }}
+    # add advanced configuration under here
 ```
 
 Java-stack environments have 1 edge function and Edge Delivery Services implementations have 3 edge functions. The optional top-level keys are:
@@ -107,6 +104,8 @@ Java-stack environments have 1 edge function and Edge Delivery Services implemen
 | `configs` | Key/value pairs exposed to an environment's edge function(s) as environment variables. |
 | `secrets` | Key/value pairs referencing Cloud Manager secrets to an environment's edge function(s) |
 | `kvs` | Boolean toggle to provision a KV store for runtime read/write key-value data shared across all edge functions in an enviornment. |
+
+See advanced configuration such as `configs`, `secrets`, and `kvs` in the [advanced configuration section](#advanced-function-configuration) below.
 
 ### 3. Deploy the Edge Function via Cloud Manager {#deploy-functions-via-cm}
 
@@ -198,7 +197,7 @@ aio aem edge-functions serve
 
 See this [Compute JavaScript documentation](https://www.fastly.com/documentation/guides/compute/javascript/) for details on what the local runtime supports.
 
-### Test {#test-function}
+### Test {#test-localdev}
 
 Run the test suite with [Mocha](https://mochajs.org/):
 
@@ -247,7 +246,7 @@ Requested backend named '…' does not exist
 
 When you see this error and your origin configuration is correct, the most likely cause is that the per-invocation backend request quota has been exhausted. See [Fastly Compute resource limits](https://docs.fastly.com/products/compute-resource-limits#default-limits) for the full list of platform limits.
 
-## Configuration Reference {#configuration-reference}
+## Advanced Edge Function Configuration {#advanced-function-configuration}
 
 ### Origins {#origins}
 
@@ -270,15 +269,21 @@ const response = await fetch(request, { backend: "my-origin-name" });
 >
 >Configs, secrets, and kvs are not available in [sandbox programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Edge functions themselves run normally on sandbox environments — only these entities are not provisioned.
 
-### Edge Function Configuration {#function-configuration}
+### Edge Function Config Variables {#function-configuration}
 
 Expose environment variables to your functions using the `configs` key in `edgeFunctions.yaml`. Values are stored in a config store named `config_default`:
 
 ```yaml
-configs:
-  - key: LOG_LEVEL
-    value: DEBUG
+kind: "EdgeFunctions"
+version: "1"
+data:
+  services:
+    - name: my-edge-function
+  configs:
+    - key: LOG_LEVEL
+      value: DEBUG
 ```
+
 
 Read configuration values in your function code:
 
@@ -295,14 +300,20 @@ const logLevel = config.get('LOG_LEVEL') || 'info';
 >- Key names are case-sensitive.
 >- The config store is shared across all edge functions in the same environment.
 
-### Edge Function Secrets {#function-secrets}
+### Edge Function Secret Variables {#function-secrets}
 
 Secrets are referenced, not stored, in `edgeFunctions.yaml`. The `value` field must point to a Cloud Manager secret using the `${{SECRET_REFERENCE}}` syntax. Define the underlying secret in Cloud Manager first — see [Cloud Manager Secret Variables](/help/implementing/cloud-manager/environment-variables.md).
 
+
 ```yaml
-secrets:
-  - key: API_TOKEN
-    value: ${{ API_TOKEN_SECRET }}
+kind: "EdgeFunctions"
+version: "1"
+data:
+  services:
+    - name: my-edge-function
+  secrets:
+    - key: API_TOKEN
+      value: ${{ API_TOKEN_SECRET }}
 ```
 
 Retrieve secrets in your function code using the `SecretStoreManager` helper from the boilerplate:
@@ -324,8 +335,14 @@ const apiToken = await SecretStoreManager.getSecret('API_TOKEN');
 
 Edge functions can read and write arbitrary key-value data at runtime through a KV store. To enable it, set `kvs: true` in `edgeFunctions.yaml`:
 
+
 ```yaml
-kvs: true
+kind: "EdgeFunctions"
+version: "1"
+data:
+  services:
+    - name: my-edge-function
+  kvs: true
 ```
 
 This provisions an empty KV store named `kv_default`. Populate it at runtime from your edge function code using the [Fastly KV Store API](https://js-compute-reference-docs.edgecompute.app/docs/fastly:kv-store/KVStore):
