@@ -64,7 +64,7 @@ If you host your code outside Adobe, the page of instructions you use and the ow
 
 | Where your repository is hosted | Validation method | Page of instructions to use |
 | --- | --- | --- |
-| `github.com`, including GitHub Enterprise Cloud deployments hosted on `github.com` | Adobe GitHub app and a secret file. No webhook required. | [Add a private GitHub Cloud repository in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) |
+| `github.com` (any GitHub plan such as Free, Pro, Team, or Enterprise Cloud) | Adobe GitHub app and a secret file. No webhook required. | [Add a private GitHub repository in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) |
 | GitHub Enterprise Server (self-hosted) | Personal access token and a webhook | [Add external repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) |
 | GitLab, Bitbucket, or Azure DevOps | Personal access token and a webhook | [Add external repositories in Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/external-repositories) |
 
@@ -102,7 +102,7 @@ The **Delete** action removes the repository from your project. A repository can
 
 ![Delete](assets/repository-delete.png)
 
-Deleting a repository prevents its name from being used for any new repositories created in the future. If you attempt to add a repository using the same name of a deleted repository, you encounter the following error message:
+Deleting a repository prevents its name from being used for any new repositories created in the future. If you attempt to add a repository using the same name as a deleted repository, you encounter the following error message:
 
 `Repository name should be unique within organization.` 
 
