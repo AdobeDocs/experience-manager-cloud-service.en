@@ -110,7 +110,7 @@ The following is a high-level recommended end-to-end process for determining the
       `"rules": "waf=SQLI" `
       
       This attribute appears once WAF is active, even before any WAF rules are deployed.
-      
+  
 1. Create a config pipeline in Cloud Manager, as described in the [config pipeline article](/help/operations/config-pipeline.md#managing-in-cloud-manager). The pipeline references a top level `config` folder with the `cdn.yaml` file placed somewhere below, see [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure).
 
 ## Traffic filter rules syntax {#rules-syntax}
