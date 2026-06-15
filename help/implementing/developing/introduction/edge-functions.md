@@ -71,7 +71,7 @@ Copy the [aem-edge-functions-boilerplate](https://github.com/adobe/aem-edge-func
 npm install
 ```
 
-## Provision Your AEM Edge Function {#provision-your-function}
+## Register Your AEM Edge Function {#register-your-function}
 
 AEM Edge Functions are declared in a YAML configuration file and deployed through the Cloud Manager configuration pipeline.
 
@@ -108,6 +108,9 @@ Java-stack environments have 1 edge function and Edge Delivery Services implemen
 | `secrets` | Key/value pairs referencing Cloud Manager secrets to an environment's edge function(s) |
 | `kvs` | Boolean toggle to provision a KV store for runtime read/write key-value data shared across all edge functions in an enviornment. |
 
+### 3. Deploy the Edge Function via Cloud Manager {#deploy-functions-via-cm}
+
+Using Cloud Manager, deploy the pipeline so the edge function is registered at the CDN.
 
 ## Author, Build and Deploy AEM Edge Function Code {#build-deploy}
 
@@ -143,7 +146,7 @@ For example, for the AEM Java-stack:<br/>
 or for Edge Delivery Services:<br/>
 `edgefunction-pXXXXX-dYYYYY-my-edge-function.adobeaemcloud.com/weather`
 
-This domain prefixed with *edgefunction* may be used for debugging, but *must not be referenced for live traffic* as it is not guaranteed to be a stable name. To determine the value of dYYYYY, see the output of the deploy command.
+This domain prefixed with *edgefunction* is only for debugging, but *must not be referenced for live traffic* as it is not guaranteed to be a stable name. To determine the value of dYYYYY, see the output of the deploy command.
 
 
 ## Wire into the Content Delivery Flow {#wiring}
@@ -195,7 +198,7 @@ aio aem edge-functions serve
 
 See this [Compute JavaScript documentation](https://www.fastly.com/documentation/guides/compute/javascript/) for details on what the local runtime supports.
 
-### Test {#test}
+### Test {#test-function}
 
 Run the test suite with [Mocha](https://mochajs.org/):
 
