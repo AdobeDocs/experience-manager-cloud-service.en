@@ -648,7 +648,14 @@ Once selected, this will be shown as a filter predicate, and the list will be fi
 
 ## Searching Fragments {#searching-fragments}
 
-The search box supports full-text search. Entering your search terms in the search box:
+The Content Fragment console supports:
+
+* [full-text search](#full-text-search)
+* [semantic search](#semantic-search)
+
+### Full-text search {#full-text-search}
+
+Entering your search terms in the search box:
 
 ![Content Fragments console - Searching](assets/cf-managing-console-search-specification.png)
 
@@ -659,3 +666,5 @@ Will provide the selected results:
 The search box also provides quick access to **Recent Content Fragments** and **Saved Searches**:
 
 ![Content Fragments console - Recent and Saved](assets/cf-managing-console-search-saved.png)
+
+### Semantic search {#semantic-search}
