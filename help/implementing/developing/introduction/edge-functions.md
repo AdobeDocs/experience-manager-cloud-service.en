@@ -137,7 +137,7 @@ aio aem edge-functions deploy <function-name>
 
 Make sure the edge function works as expected. You can test it at:
 
-`edgefunction-pXXXXX-eYYYYY-<function name>.adobeaemcloud.com.adobeaemcloud.com/<path>`
+`edgefunction-pXXXXX-eYYYYY-<function name>.adobeaemcloud.com/<path>`
 
 For example, for the AEM Java-stack:<br/>
 `edgefunction-pXXXXX-eYYYYY-my-edge-function.adobeaemcloud.com/weather`
