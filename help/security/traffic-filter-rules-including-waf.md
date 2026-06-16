@@ -109,7 +109,7 @@ The following is a high-level recommended end-to-end process for determining the
 
       To confirm the feature is *active* after you enable it, inspect the [CDN logs ](#cdn-logs) once traffic is flowing to the site. Look for log entries that include a `rules` property containing a `waf` attribute. For example:
       
-      `"rules": "waf=SQLI" `
+      `"rules": "*waf=*" `
       
       This attribute appears once WAF is active, even before any WAF rules are deployed.
   
