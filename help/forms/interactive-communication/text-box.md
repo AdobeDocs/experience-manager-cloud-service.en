@@ -9,9 +9,6 @@ exl-id: 6bed824c-b959-4882-a5aa-dbb7fbf2f8a0
 ---
 # Text Box Component in Interactive Communication Editor 
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 ## 1. Introduction 
 

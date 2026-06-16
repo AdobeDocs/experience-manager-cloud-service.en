@@ -9,9 +9,6 @@ exl-id: b44cc569-00a1-4a66-ae25-3d672cf5fc12
 ---
 # Barcode Component in Interactive Communication Editor 
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 ## 1. Introduction 
 

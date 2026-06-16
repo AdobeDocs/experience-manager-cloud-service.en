@@ -9,9 +9,6 @@ exl-id: 7db24153-549a-4c36-8cb5-ab33fda8072a
 ---
 # Table Component in Interactive Communication Editor 
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 ## 1. Introduction 
 

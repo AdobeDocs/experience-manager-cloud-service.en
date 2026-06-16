@@ -9,9 +9,6 @@ exl-id: 6bb41cf2-8a9d-499c-979b-b0ee7d092e11
 ---
 # Text Field component in Interactive Communication Editor 
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 ## 1. Introduction 
 

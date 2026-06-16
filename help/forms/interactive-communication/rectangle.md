@@ -9,9 +9,6 @@ exl-id: d2af7706-2b2a-4a40-a4a4-375b5f2b08fb
 ---
 # Rectangle Component in Interactive Communication Editor 
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 ## 1. Introduction 
 

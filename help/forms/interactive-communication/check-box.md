@@ -9,9 +9,6 @@ exl-id: 636e9699-a8db-4cb0-aa9f-0602939006df
 ---
 # Check Box Component in Interactive Communication Editor 
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 ## 1. Introduction 
 

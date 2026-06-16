@@ -10,9 +10,6 @@ exl-id: move-component-to-master-page-ic-editor
 
 # Move a Component to the Master Page
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 ## Introduction
 

@@ -9,9 +9,6 @@ exl-id: f8cc1dd1-3b55-4cd9-b051-959c88195eb4
 ---
 # Date Field Object in Interactive Communication Editor 
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 ## 1. Introduction 
 

@@ -9,9 +9,6 @@ exl-id: 1ff5ac22-d8c8-4109-8334-217dbc239f1f
 ---
 # Line Component in Interactive Communication Editor 
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 ## 1. Introduction 
 

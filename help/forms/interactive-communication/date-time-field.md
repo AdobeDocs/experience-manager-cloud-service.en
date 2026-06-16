@@ -9,9 +9,6 @@ exl-id: 7ac93d8c-5454-4789-a7cd-438571a9ff28
 ---
 # Date/Time Field Component in Interactive Communication Editor 
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 ## 1. Introduction 
 

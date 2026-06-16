@@ -10,9 +10,6 @@ exl-id: review-annotate-interactive-communication
 
 # Review and Annotate an Interactive Communication
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 ## Introduction
 

@@ -9,9 +9,6 @@ exl-id: fe1608f0-8d93-4b89-9dd9-849339b0a175
 ---
 # Radio Button Component in Interactive Communication Editor 
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 ## 1. Introduction 
 

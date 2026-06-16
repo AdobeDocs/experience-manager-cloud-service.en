@@ -9,9 +9,6 @@ exl-id: 60809974-1a39-4e69-9aa5-df9936a26362
 ---
 # Subform Component in Interactive Communication Editor 
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 ## 1. Introduction 
 

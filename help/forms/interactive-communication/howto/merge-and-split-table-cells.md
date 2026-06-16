@@ -10,9 +10,6 @@ exl-id: merge-split-table-cells-ic-editor
 
 # Merge and Split Table Cells in Interactive Communication Editor
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 ## Introduction
 

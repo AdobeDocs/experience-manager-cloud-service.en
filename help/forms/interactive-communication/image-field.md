@@ -9,9 +9,6 @@ exl-id: 0af73ae2-fe1d-4763-ad4d-2934691cb9e1
 ---
 # Image Field Component in Interactive Communication Editor 
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 ## 1. Introduction 
 

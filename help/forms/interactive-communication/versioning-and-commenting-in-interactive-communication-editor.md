@@ -8,9 +8,6 @@ exl-id: ca9917c0-d8bb-4381-afab-7ab888d992e8
 ---
 # Versioning and Commenting in Interactive Communication Editor
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 Interactive Communications (IC) allow organizations to create dynamic, data-driven documents for personalized customer communication. To support better collaboration, governance, and controlled publishing workflows, the Interactive Communication Editor provides versioning, reviewing, and commenting capabilities.
 
