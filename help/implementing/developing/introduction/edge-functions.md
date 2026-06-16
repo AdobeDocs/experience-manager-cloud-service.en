@@ -277,7 +277,7 @@ Expose environment variables to your functions using the `configs` key in `edgeF
 kind: "EdgeFunctions"
 version: "1"
 data:
-  services:
+  functions:
     - name: my-edge-function
   configs:
     - key: LOG_LEVEL
@@ -309,7 +309,7 @@ Secrets are referenced, not stored, in `edgeFunctions.yaml`. The `value` field m
 kind: "EdgeFunctions"
 version: "1"
 data:
-  services:
+  functions:
     - name: my-edge-function
   secrets:
     - key: API_TOKEN
@@ -340,7 +340,7 @@ Edge functions can read and write arbitrary key-value data at runtime through a 
 kind: "EdgeFunctions"
 version: "1"
 data:
-  services:
+  functions:
     - name: my-edge-function
   kvs: true
 ```
