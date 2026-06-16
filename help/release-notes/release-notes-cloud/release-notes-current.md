@@ -152,14 +152,6 @@ The Development Agent expands to handling questions related to Cloud Manager thr
 
 The Development Agent's [pipeline troubleshooting](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-pipeline-troubleshooting) capabilities help developers efficiently diagnose and resolve issues in AEM as a Cloud Service deployments. In addition to supporting Full Stack pipelines (Deployment and Code Quality), the Development Agent now supports troubleshooting for the **Web Tier Config Pipeline**
 
-#### AI-Assisted Code Migration to AEM as a Cloud Service {#aem-ide-cs-migration}
-
-Accelerate your migration from AEM 6.5 (or earlier) to AEM as a Cloud Service (Java-stack) by using IDE AI tooling to act on the recommendations of the Best Practices Analyzer Report. 
-
-Learn more about [IDE AI tooling for Cloud Migration](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md), and also other [Local Development with AI tools](/help/ai-in-aem/local-development-with-ai-tools.md) (Agent Skills and local MCP servers). 
-
->[!VIDEO](https://video.tv.adobe.com/v/3491438/?quality=12)
-
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
 #### IMS Authentication Rich Errors {#ims-auth-rich-errors}
