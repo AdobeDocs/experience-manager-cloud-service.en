@@ -144,6 +144,14 @@ Adaptive Forms that submit to a Microsoft SharePoint list now support [certifica
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation New Features {#foundation-new}
 
+#### Conversational AI Interface for Cloud Manager Questions {#devagent-cloudmanager}
+
+The Development Agent expands to handling questions related to Cloud Manager through the [Cloud Manager Job](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-job). In AI Assistant, retrieve information about programs, environments, and pipelines (e.g., execution status). Quickly find links to error logs, access logs, and build logs. 
+
+#### Web Tier Config Pipeline Troubleshooting {#devagent-webtier}
+
+The Development Agent's [pipeline troubleshooting](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-pipeline-troubleshooting) capabilities help developers efficiently diagnose and resolve issues in AEM as a Cloud Service deployments. In addition to supporting Full Stack pipelines (Deployment and Code Quality), the Development Agent now supports troubleshooting for the **Web Tier Config Pipeline**
+
 #### AI-Assisted Code Migration to AEM as a Cloud Service {#aem-ide-cs-migration}
 
 Accelerate your migration from AEM 6.5 (or earlier) to AEM as a Cloud Service (Java-stack) by using IDE AI tooling to act on the recommendations of the Best Practices Analyzer Report. 
@@ -151,14 +159,6 @@ Accelerate your migration from AEM 6.5 (or earlier) to AEM as a Cloud Service (J
 Learn more about [IDE AI tooling for Cloud Migration](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md), and also other [Local Development with AI tools](/help/ai-in-aem/local-development-with-ai-tools.md) (Agent Skills and local MCP servers). 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3491438/?quality=12)
-
-#### Replication Queue Status Display Changes {#replication-queue-status-display}
-
-In the Author UI, Replication agents now display two consolidated queues—**persisted** and **fully published**—instead of separate queues per publish pod, reducing complexity while reflecting the automatic scaling of the publish tier.
-
-Learn more about [Replication Queues](/help/operations/replication.md#replication-queues).
-
-![Replication queues showing persisted and fully published](/help/operations/assets/replication-queues.png "Replication queues")
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
@@ -174,7 +174,7 @@ It is critical to remove usage of deprecated APIs.
 
 Since **April 14**, Cloud Manager pipelines that contain code using APIs targeting 2/26/2026 removal **fail during the Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.* 
 
-Starting **June 11, 2026**, environments still using these deprecated APIs **will not receive critical Adobe release updates** and will not be subject to Adobe's standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
+Starting **June 24, 2026**, environments still using these deprecated APIs **will not receive critical Adobe release updates** and will not be subject to Adobe's standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
 
 See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
 
@@ -199,23 +199,11 @@ See the [deprecation article](/help/release-notes/deprecated-removed-features.md
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Features {#foundation-early-adopter}
 
-#### Manage Quiet Hours and Update Free Periods with the AEM AI Assistant (Limited Availability) {#quiet-hours-ai}
+#### AEM Edge Functions (Public Beta Program) {#edge-functions}
 
-You can now view, create, and edit Quiet Hours and Update Free Periods directly through the AEM AI Assistant.
-The key benefit is fewer scheduling errors. As you make a request, the assistant guides you through what is possible and flags the limits that apply, such as the three-period cap, the mandatory one-week gap between periods, and the planned maintenance exclusion windows you cannot schedule over. So instead of discovering a constraint after a failed configuration, Business Owners and Deployment Managers are steered to a valid schedule in the same conversation. This protects critical business windows from automatic maintenance updates while reducing back-and-forth and misconfiguration.
+[AEM Edge Functions](/help/implementing/developing/introduction/edge-functions.md) is now in public beta so you can self-serve try it out without contacting Adobe.
 
-#### Snapshots for RDEs (*Public Beta* Program) {#rde-snapshot-program}
-
-In public beta (early June), Rapid Development Environments (RDEs) now support a feature [to take a snapshot](/help/implementing/developing/introduction/rapid-development-environments.md#snapshots) of the current state of code and content, which can be restored at a later time. This can be useful when syncing code that may need to be reverted, or when switching between development of different features. It's also possible to restore just the mutable content as a known starting point for testing.
-
-In early June, updating to the latest aio plugins will enable this feature. 
-
-*By using the RDE Snapshots Beta, you acknowledge that it is still in development and that you should not rely on the correct functioning of the technology or availability of data. While we have tested this feature extensively, there is a small possibility that your RDE could become unstable. If this occurs, a reset will restore it to a working state.*
-
-
-#### AEM Edge Functions (Beta Program) {#edge-functions}
-
-[AEM Edge Functions](/help/implementing/developing/introduction/edge-functions.md) allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge.
+This feature allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge. It's available for both AEM Java Stack and Edge Delivery Services projects.
 
 Common use cases include:
 
@@ -224,13 +212,23 @@ Common use cases include:
 * Reformatting responses from third-party APIs (and perhaps aggregating multiple API responses) before delivering them to the browser
 * Composing and serving server-rendered HTML at the edge using content stitched from various backends
 
-Join the beta for either AEM Publish Delivery or Edge Delivery Services projects for live production sites. If you're interested in participating or want to learn more, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case.
+*By using the AEM Edge Functions Beta, you acknowledge that it is still in development and that you should not rely on the correct functioning of the technology or availability of data. This feature is provided as-is,
+may change without notice, and is not covered by production SLAs.*
 
-#### Web Tier Config Pipeline Troubleshooting (Beta Program) {#devagent-webtier}
 
-The Development Agent's [pipeline troubleshooting](/help/ai-in-aem/agents/brand-experience/development/development.md) capabilities help developers efficiently diagnose and resolve issues in AEM as a Cloud Service deployments. In addition to supporting Full Stack pipelines (Deployment and Code Quality), the Development Agent now supports troubleshooting for the **Web Tier Config Pipeline** as part of a beta program.
+#### Snapshots for RDEs (*Public Beta* Program) {#rde-snapshot-program}
 
-To request access to the beta, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com). Pre-existing access to Agents in AEM is required.
+Snapshots for Rapid Development Environments (RDEs) is now in public beta so you can self-serve try it out without contacting Adobe.
+
+RDEs now support a feature [to take a snapshot](/help/implementing/developing/introduction/rapid-development-environments.md#snapshots) of the current state of code and content, which can be restored at a later time. This can be useful when syncing code that may need to be reverted, or when switching between development of different features. It's also possible to restore just the mutable content as a known starting point for testing.
+
+*By using the RDE Snapshots Beta, you acknowledge that it is still in development and that you should not rely on the correct functioning of the technology or availability of data. While we have tested this feature extensively, there is a small possibility that your RDE could become unstable. If this occurs, a reset will restore it to a working state.*
+
+
+#### Manage Quiet Hours and Update Free Periods with the AEM AI Assistant (Limited Availability) {#quiet-hours-ai}
+
+You can now view, create, and edit Quiet Hours and Update Free Periods directly through the AEM AI Assistant.
+The key benefit is fewer scheduling errors. As you make a request, the assistant guides you through what is possible and flags the limits that apply, such as the three-period cap, the mandatory one-week gap between periods, and the planned maintenance exclusion windows you cannot schedule over. So instead of discovering a constraint after a failed configuration, Business Owners and Deployment Managers are steered to a valid schedule in the same conversation. This protects critical business windows from automatic maintenance updates while reducing back-and-forth and misconfiguration.
 
 #### Replication AI Troubleshooting (Beta Program) {#replication-ai-troubleshooting-alpha}
 
@@ -248,11 +246,11 @@ Validate a production build with internal-only test traffic before exposing it t
 
 Email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) to request access and share feedback.
 
-#### AEM code issue detection and auto-fix via IDE AI agent  (Alpha Program) {#ide-ai-aemcode-issues}
+#### AEM Code Assessment and auto-fix via IDE AI agent (Beta Program) {#ide-ai-aemcode-issues}
 
 Java-stack teams using [AI-assisted development](/help/ai-in-aem/local-development-with-ai-tools.md) in tools like Cursor, Claude Code, Visual Studio, and IntelliJ can now go further: a new IDE agent skill detects and auto-fixes issues directly in your AEM codebase, reducing review cycles and catching problems earlier in development.
 
-This feature is in alpha. Join the program to try it and share feedback with the team at [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com).
+This feature is in beta. Join the program to try it and share feedback with the team at [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com).
 
 #### Expanded Application Performance Monitoring (APM) (Alpha program) {#apm-alpha}
 
