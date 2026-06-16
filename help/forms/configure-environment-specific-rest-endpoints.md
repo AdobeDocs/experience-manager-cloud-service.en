@@ -21,6 +21,8 @@ This article describes how to keep a single, portable Adaptive Form and have its
 
 ## Create the RESTful service configuration on staging {#create-rest-configuration}
 
+>[!VIDEO](https://video.tv.adobe.com/v/3492383)
+
 On the staging author instance, create the named configuration that your form refers to. Set the **Service Endpoint URL** to the REST or webhook endpoint for staging.
 
 1. Go to **Tools** > **Cloud Services** > **Data Sources**.
@@ -37,13 +39,11 @@ On the staging author instance, create the named configuration that your form re
    * **Content Type**: for example, **Multi-Part Form Data**.
    * **Authentication Type**: as required by your endpoint (for example, **None** or **Basic Authentication**).
 
-   >[!NOTE]
-   >
-   >Author capture: replace the placeholder above with a screenshot of the **Authentication Settings** tab for the `restTest` configuration.
-
 1. Select **Save & Close**.
 
 ## Point the Adaptive Form at the Configuration Container {#set-configuration-container}
+
+>[!VIDEO](https://video.tv.adobe.com/v/3492384)
 
 On staging, associate the form with the Configuration Container that holds your REST configuration.
 
@@ -54,6 +54,8 @@ On staging, associate the form with the Configuration Container that holds your 
 1. Select **Save & Close**.
 
 ## Configure the Submit to REST endpoint action {#configure-submit-action}
+
+>[!VIDEO](https://video.tv.adobe.com/v/3492385)
 
 On staging, configure the form to submit through the named REST configuration instead of a hardcoded URL. For the full submit action reference, see [Configure an Adaptive Form for REST Endpoint submit action](/help/forms/configure-submit-action-restpoint.md).
 
@@ -76,6 +78,8 @@ The form now resolves its submission endpoint through the named configuration ra
 After you configure and test on staging, move the same form and Configuration Container to production. You can use either of the following approaches.
 
 ### Option 1: Author and package approach {#option-package}
+
+>[!VIDEO](https://video.tv.adobe.com/v/3492386)
 
 Use this when authors maintain the form and configuration directly in each environment.
 
@@ -101,6 +105,8 @@ For the full procedure, see [Context Aware Cloud Configurations](https://experie
 
 ## Update the endpoint URL on production {#configure-endpoint-on-production}
 
+>[!VIDEO](https://video.tv.adobe.com/v/3492387)
+
 After you install the package on production, the Adaptive Form and the REST configuration **name** (for example, `restTest`) match staging. The **Service Endpoint URL** in that configuration still points to the staging endpoint from the package. Open the configuration on production and replace it with the production endpoint URL.
 
 1. On the **production** author instance, go to **Tools** > **Cloud Services** > **Data Sources**.
@@ -114,6 +120,8 @@ After you install the package on production, the Adaptive Form and the REST conf
 During testing, a request inspector such as a webhook capture service gives you a unique URL per environment so you can confirm which endpoint receives each submission.
 
 ## Verify the routing {#verify}
+
+>[!VIDEO](https://video.tv.adobe.com/v/3492388)
 
 Submit the same form from staging and production and confirm each environment posts to its own endpoint—not the other environment's URL.
 
