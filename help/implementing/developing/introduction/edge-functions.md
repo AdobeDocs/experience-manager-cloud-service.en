@@ -91,7 +91,7 @@ Create a file named `edgeFunctions.yaml` in your configuration directory:
 kind: "EdgeFunctions"
 version: "1"
 data:
-  services:
+  functions:
     - name: my-edge-function
     # add advanced configuration under here
 ```
@@ -100,7 +100,7 @@ Java-stack environments have 1 edge function and Edge Delivery Services implemen
 
 | Key | Description |
 |---|---|
-| `services` | List of edge function services, each identified by a `name`. Note: this will soon be renamed to `functions`. |
+| `functions` | List of edge functions, each identified by a `name`. For backward compatibility, `services` is also accepted but `functions` is the preferred key. Using both in the same file is not allowed. |
 | `configs` | Key/value pairs exposed to an environment's edge function(s) as environment variables. |
 | `secrets` | Key/value pairs referencing Cloud Manager secrets to an environment's edge function(s) |
 | `kvs` | Boolean toggle to provision a KV store for runtime read/write key-value data shared across all edge functions in an enviornment. |
