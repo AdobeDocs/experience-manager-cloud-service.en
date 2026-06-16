@@ -25,12 +25,12 @@ During the deprecation time window, Adobe will remind customers of the actions t
 
 >[!IMPORTANT]
 >
->Several [deprecated APIs](#aem-apis) will be removed on **June 11, 2026**. Please review these key dates and impacts:
+>Several [deprecated APIs](#aem-apis) will be removed on **July 23, 2026**. Please review these key dates and impacts:
 >
 >* **Starting January 26, 2026**: Actions Center notification emails are sent as a reminder to remove usage of these APIs, if a pipeline has been recently executed.
 >* **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
 >* **April 14, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.*
->* **June 11, 2026**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and wil not be subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further. To once again receive Adobe release updates, a fullstack pipeline must be successfully executed; the update will then be applied within a few days.
+>* **July 23, 2026**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and wil not be subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further. To once again receive Adobe release updates, a fullstack pipeline must be successfully executed; the update will then be applied within a few days.
 >
 
 ## Deprecated Functionality {#deprecated-features}
@@ -81,12 +81,12 @@ The APIs in the table below (click to expand to see it) have been announced as d
 
 >[!IMPORTANT]
 >
->Several [deprecated APIs](#aem-apis) will be removed on **June 11, 2026**. Please review these key dates and impacts:
+>Several [deprecated APIs](#aem-apis) will be removed on **July 23, 2026**. Please review these key dates and impacts:
 >
 >* **Starting January 26, 2026**: Actions Center notification emails are sent as a reminder to remove usage of these APIs.
 >* **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
 >* **April 14, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.*
->* **June 11, 2026**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
+>* **July 23, 2026**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
 >
 
 <details>
@@ -245,6 +245,24 @@ The APIs in the table below (click to expand to see it) have been announced as d
     <td>org.apache.tika<br>org.apache.tika.concurrent<br>org.apache.tika.config<br>org.apache.tika.detect<br>org.apache.tika.embedder<br>org.apache.tika.exception<br>org.apache.tika.extractor<br>org.apache.tika.fork<br>org.apache.tika.io<br>org.apache.tika.language<br>org.apache.tika.language.detect<br>org.apache.tika.language.translate<br>org.apache.tika.metadata<br>org.apache.tika.mime<br>org.apache.tika.parser<br>org.apache.tika.parser.apple<br>org.apache.tika.parser.asm<br>org.apache.tika.parser.audio<br>org.apache.tika.parser.captioning<br>org.apache.tika.parser.captioning.tf<br>org.apache.tika.parser.chm<br>org.apache.tika.parser.chm.accessor<br>org.apache.tika.parser.chm.assertion<br>org.apache.tika.parser.chm.core<br>org.apache.tika.parser.chm.exception<br>org.apache.tika.parser.chm.lzx<br>org.apache.tika.parser.code<br>org.apache.tika.parser.crypto<br>org.apache.tika.parser.ctakes<br>org.apache.tika.parser.dbf<br>org.apache.tika.parser.dif<br>org.apache.tika.parser.digest<br>org.apache.tika.parser.dwg<br>org.apache.tika.parser.envi<br>org.apache.tika.parser.epub<br>org.apache.tika.parser.executable<br>org.apache.tika.parser.external<br>org.apache.tika.parser.feed<br>org.apache.tika.parser.font<br>org.apache.tika.parser.gdal<br>org.apache.tika.parser.geo.topic<br>org.apache.tika.parser.geo.topic.gazetteer<br>org.apache.tika.parser.geoinfo<br>org.apache.tika.parser.grib<br>org.apache.tika.parser.hdf<br>org.apache.tika.parser.html<br>org.apache.tika.parser.image<br>org.apache.tika.parser.image.xmp<br>org.apache.tika.parser.iptc<br>org.apache.tika.parser.isatab<br>org.apache.tika.parser.iwork<br>org.apache.tika.parser.iwork.iwana<br>org.apache.tika.parser.jdbc<br>org.apache.tika.parser.journal<br>org.apache.tika.parser.jpeg<br>org.apache.tika.parser.mail<br>org.apache.tika.parser.mat<br>org.apache.tika.parser.mbox<br>org.apache.tika.parser.microsoft<br>org.apache.tika.parser.microsoft.ooxml<br>org.apache.tika.parser.microsoft.ooxml.xslf<br>org.apache.tika.parser.microsoft.ooxml.xwpf<br>org.apache.tika.parser.microsoft.ooxml.xwpf.ml2006<br>org.apache.tika.parser.microsoft.xml<br>org.apache.tika.parser.mp3<br>org.apache.tika.parser.mp4<br>org.apache.tika.parser.ner<br>org.apache.tika.parser.ner.corenlp<br>org.apache.tika.parser.ner.grobid<br>org.apache.tika.parser.ner.mitie<br>org.apache.tika.parser.ner.nltk<br>org.apache.tika.parser.ner.opennlp<br>org.apache.tika.parser.ner.regex<br>org.apache.tika.parser.netcdf<br>org.apache.tika.parser.ocr<br>org.apache.tika.parser.odf<br>org.apache.tika.parser.opendocument<br>org.apache.tika.parser.pdf<br>org.apache.tika.parser.pkg<br>org.apache.tika.parser.pot<br>org.apache.tika.parser.prt<br>org.apache.tika.parser.recognition<br>org.apache.tika.parser.recognition.tf<br>org.apache.tika.parser.rtf<br>org.apache.tika.parser.sentiment<br>org.apache.tika.parser.strings<br>org.apache.tika.parser.txt<br>org.apache.tika.parser.utils<br>org.apache.tika.parser.video<br>org.apache.tika.parser.wordperfect<br>org.apache.tika.parser.xml<br>org.apache.tika.sax<br>org.apache.tika.sax.xpath<br>org.apache.tika.utils<br>org.apache.tika.parser.microsoft.ooxml.xps</td>
     <td>This version of Apache Tika is outdated and therefore will be removed from Cloud Service. Switch to a newer version of Apache Tika.</td>
     <td>4/30/2026</td>
+    <td>9/30/2026</td>
+  </tr>
+  <tr>
+    <td>org.apache.commons.fileupload<br>org.apache.commons.fileupload.disk<br>org.apache.commons.fileupload.portlet<br>org.apache.commons.fileupload.servlet<br>org.apache.commons.fileupload.util</td>
+    <td>Use the official Servlet API for handling file uploads instead.</td>
+    <td>2/6/2026</td>
+    <td>9/30/2026</td>
+  </tr>
+  <tr>
+    <td>com.adobe.cq.smartcontent</td>
+    <td>This API is deprecated and scheduled for removal.</td>
+    <td>6/30/2026</td>
+    <td>9/30/2026</td>
+  </tr>
+  <tr>
+    <td>opennlp.tools.chunker<br>opennlp.tools.dictionary<br>opennlp.tools.dictionary.serializer<br>opennlp.tools.ml<br>opennlp.tools.ml.maxent<br>opennlp.tools.ml.maxent.io<br>opennlp.tools.ml.maxent.quasinewton<br>opennlp.tools.ml.model<br>opennlp.tools.ml.perceptron<br>opennlp.tools.namefind<br>opennlp.tools.ngram<br>opennlp.tools.postag<br>opennlp.tools.tokenize<br>opennlp.tools.tokenize.lang<br>opennlp.tools.util<br>opennlp.tools.util.eval<br>opennlp.tools.util.ext<br>opennlp.tools.util.featuregen<br>opennlp.tools.util.model</td>
+    <td>This version of the OpenNLP library is deprecated. Use your own version of OpenNLP.</td>
+    <td>6/30/2026</td>
     <td>9/30/2026</td>
   </tr>
   <tr>
