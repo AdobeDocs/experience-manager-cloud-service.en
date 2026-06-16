@@ -254,6 +254,18 @@ The APIs in the table below (click to expand to see it) have been announced as d
     <td>9/30/2026</td>
   </tr>
   <tr>
+    <td>com.adobe.cq.smartcontent</td>
+    <td>This API is deprecated and scheduled for removal.</td>
+    <td>6/30/2026</td>
+    <td>9/30/2026</td>
+  </tr>
+  <tr>
+    <td>opennlp.tools.chunker<br>opennlp.tools.dictionary<br>opennlp.tools.dictionary.serializer<br>opennlp.tools.ml<br>opennlp.tools.ml.maxent<br>opennlp.tools.ml.maxent.io<br>opennlp.tools.ml.maxent.quasinewton<br>opennlp.tools.ml.model<br>opennlp.tools.ml.perceptron<br>opennlp.tools.namefind<br>opennlp.tools.ngram<br>opennlp.tools.postag<br>opennlp.tools.tokenize<br>opennlp.tools.tokenize.lang<br>opennlp.tools.util<br>opennlp.tools.util.eval<br>opennlp.tools.util.ext<br>opennlp.tools.util.featuregen<br>opennlp.tools.util.model</td>
+    <td>This version of the OpenNLP library is deprecated. Use your own version of OpenNLP.</td>
+    <td>6/30/2026</td>
+    <td>9/30/2026</td>
+  </tr>
+  <tr>
 <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
     <td>Commons Lang 2 is in maintenance mode. Commons Lang 3 should be used instead. <a href="#apache.commons">See removal notes below.</a></td>
     <td>4/30/2021</td>
