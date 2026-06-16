@@ -196,8 +196,6 @@ To configure submit action based on Swagger Open API specification for Adaptive 
 8. Click Done.
 -->
 
-
-
 ## Best Practices
 
 * When posting data to an external server, make sure the URL is secure, and configure the path to handle the POST request anonymously to protect sensitive information.
