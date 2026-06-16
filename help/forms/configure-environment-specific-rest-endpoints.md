@@ -11,45 +11,29 @@ exl-id: 40410875-96d0-4728-8cbd-b1e1dfa438c4
 
 When you promote an Adaptive Form from development to staging to production, the form usually needs to submit to a *different* REST endpoint in each environment, while the form itself stays identical. Hardcoding the endpoint URL in the form's submit action breaks this, because the same URL then travels with the form to every environment.
 
-This article describes how to keep a single, portable Adaptive Form and have its **Submit to REST endpoint** action resolve to the correct endpoint in each environment. The form references a REST configuration *by name* instead of by URL, and each environment supplies its own value for that configuration.
-
-For the field-level reference of the **Submit to REST endpoint** action itself, see [Configure an Adaptive Form for REST Endpoint submit action](/help/forms/configure-submit-action-restpoint.md).
-
-## How it works {#how-it-works}
-
-Three pieces work together to make the form portable:
-
-* **The Adaptive Form** references a **Configuration Container** (for example, `/conf/restConfigTest`) in its form properties, rather than pointing at a URL.
-* **The Configuration Container** holds a **RESTful service data source configuration** (for example, a configuration named `restTest`). This configuration stores the actual endpoint URL, content type, and authentication settings.
-* **The Submit to REST endpoint action** on the form selects the **Configuration** option and chooses that named configuration, instead of entering a URL directly.
-
-Because the form refers to the configuration *by name*, you can deploy the identical form to every environment. Each environment holds a configuration of the same name, but with an endpoint value appropriate to that environment. At submission time, the form resolves the name to whatever endpoint that environment defines.
-
->[!NOTE]
->
->The capability to specify the REST endpoint using a configuration applies to Adaptive Forms based on Core Components and Edge Delivery Services Forms. Confirm the current availability and any program enrollment requirement for the **Service Endpoint** capability before you rely on it in production. See [Configure data sources](/help/forms/configure-data-sources.md#configure-restful-services-service-endpoint).
+This article describes how to keep a single, portable Adaptive Form and have its [Submit to REST endpoint](/help/forms/configure-submit-action-restpoint.md) action resolve to the correct endpoint in each environment. The form references a REST configuration *by name* instead of by URL, and each environment supplies its own value for that configuration.
 
 ## Prerequisites {#prerequisites}
 
 * An Adaptive Form based on Core Components.
 * A [Configuration Container](/help/implementing/developing/introduction/configurations.md) created through the Configuration Browser (**Tools** > **General** > **Configuration Browser**) with **Cloud Configurations** enabled.
-* Permission to access **Tools** > **Cloud Services** and, for promotion, **CRX Package Manager** on each environment (or a Cloud Manager deployment pipeline).
+* Permission to access **Tools** > **Cloud Services** and, for promotion, [Package Manager](/help/implementing/developing/tools/package-manager.md) on each environment (or a [Cloud Manager deployment pipeline](/help/implementing/deploying/overview.md#deploying-content-packages-via-cloud-manager-and-package-manager)).
 
-## Create the RESTful service configuration {#create-rest-configuration}
+## Create the RESTful service configuration on staging {#create-rest-configuration}
 
-Create the named configuration that your form refers to. Repeat this on each environment, supplying that environment's endpoint value.
+On the staging author instance, create the named configuration that your form refers to. Set the **Service Endpoint URL** to the REST or webhook endpoint for staging.
 
-1. On the AEM Forms author instance, go to **Tools** > **Cloud Services** > **Data Sources**.
+1. Go to **Tools** > **Cloud Services** > **Data Sources**.
 
 1. Select your Configuration Container, then select **Create**.
 
-1. On the **General** tab, provide a **Name** for the configuration (for example, `restTest`). Use the *same* name on every environment so the form resolves consistently.
+1. On the **General** tab, provide a **Name** for the configuration (for example, `restTest`). Use the *same* name on every environment so the form resolves consistently after promotion.
 
 1. On the **Authentication Settings** tab, configure:
 
    * **Select RESTful Service**: **Service Endpoint**.
    * **Method Type**: **POST**.
-   * **Service Endpoint URL**: the endpoint for *this* environment, for example a development endpoint on the development instance and a production endpoint on the production instance.
+   * **Service Endpoint URL**: the staging endpoint URL (for example, a webhook URL you use to test submissions from staging).
    * **Content Type**: for example, **Multi-Part Form Data**.
    * **Authentication Type**: as required by your endpoint (for example, **None** or **Basic Authentication**).
 
@@ -61,6 +45,8 @@ Create the named configuration that your form refers to. Repeat this on each env
 
 ## Point the Adaptive Form at the Configuration Container {#set-configuration-container}
 
+On staging, associate the form with the Configuration Container that holds your REST configuration.
+
 1. In **Forms & Documents**, select your Adaptive Form and open **Properties**.
 
 1. On the **Basic** tab, set **Configuration Container** to the container that holds your RESTful service configuration (for example, `/conf/restConfigTest`).
@@ -68,6 +54,8 @@ Create the named configuration that your form refers to. Repeat this on each env
 1. Select **Save & Close**.
 
 ## Configure the Submit to REST endpoint action {#configure-submit-action}
+
+On staging, configure the form to submit through the named REST configuration instead of a hardcoded URL. For the full submit action reference, see [Configure an Adaptive Form for REST Endpoint submit action](/help/forms/configure-submit-action-restpoint.md).
 
 1. Open the Adaptive Form for editing, select the **Guide Container** component, and open its **Adaptive Form Container** properties.
 
@@ -83,35 +71,57 @@ Create the named configuration that your form refers to. Repeat this on each env
 
 The form now resolves its submission endpoint through the named configuration rather than a fixed URL.
 
-## Promote the form across environments {#promote-across-environments}
+## Promote the form from staging to production {#promote-across-environments}
 
-You can move the portable form between environments in two ways. Choose based on how much you want to automate.
+After you configure and test on staging, move the same form and Configuration Container to production. You can use either of the following approaches.
 
-### Author and package approach {#option-package}
+### Option 1: Author and package approach {#option-package}
 
 Use this when authors maintain the form and configuration directly in each environment.
 
-1. On the source environment, build a content package in **CRX Package Manager** that includes the form and its Configuration Container, for example:
+1. On the **staging** author instance, build a content package in [Package Manager](/help/implementing/developing/tools/package-manager.md) that includes the form and its Configuration Container, for example:
 
    * `/content/dam/formsanddocuments/<your-form-path>`
    * `/content/forms/af/<your-form-path>`
    * `/conf/<your-config-container>` (which contains `.../settings/cloudconfigs/fdm/<your-config>`)
 
-1. Download the package and install it on the target environment.
-
-1. On the target environment, open the configuration (**Tools** > **Cloud Services** > **Data Sources**) and set its **Service Endpoint URL** to that environment's endpoint.
+1. Download the package and install it on the **production** author instance.
 
 >[!IMPORTANT]
 >
->In AEM as a Cloud Service, content packages deployed through a pipeline are installed on all environment types. Because the endpoint value differs per environment, maintain the per-environment value directly on each environment (or use the override approach in Option 2) rather than shipping a single hardcoded value to all of them.
+>The package installs the same configuration on production, including the **Service Endpoint URL** from staging. Do not leave that staging URL in place on production. Update the endpoint on production after installation, as described in the next section.
+
+### Option 2: Context-aware override approach (recommended for automation) {#option-context-aware}
+
+Use this when you want one packaged configuration whose endpoint, user name, and password resolve automatically per environment, with no manual editing after deployment. This approach overrides configuration properties using Cloud Manager environment variables.
+
+For REST configurations, you typically create environment variables for the `serviceEndPoint`, `userName`, and `password` properties, then reference them from an `OsgiConfigurationOverrideProvider` configuration file in your project.
+
+For the full procedure, see [Context Aware Cloud Configurations](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/context-aware-fdm).
+
+## Update the endpoint URL on production {#configure-endpoint-on-production}
+
+After you install the package on production, the Adaptive Form and the REST configuration **name** (for example, `restTest`) match staging. The **Service Endpoint URL** in that configuration still points to the staging endpoint from the package. Open the configuration on production and replace it with the production endpoint URL.
+
+1. On the **production** author instance, go to **Tools** > **Cloud Services** > **Data Sources**.
+
+1. Select the Configuration Container you deployed (for example, `restConfigTest`), then open the named configuration (for example, `restTest`).
+
+1. On the **Authentication Settings** tab, set **Service Endpoint URL** to the production REST or webhook endpoint.
+
+1. Select **Save & Close**.
+
+During testing, a request inspector such as a webhook capture service gives you a unique URL per environment so you can confirm which endpoint receives each submission.
 
 ## Verify the routing {#verify}
 
-1. Open and submit the form on one environment (for example, staging). Confirm the submission reaches that environment's endpoint.
+Submit the same form from staging and production and confirm each environment posts to its own endpoint—not the other environment's URL.
 
-1. Repeat on another environment (for example, production). Confirm the submission reaches the *different* endpoint that the environment defines.
+1. On the **staging** author instance, open the Adaptive Form and submit it with test data (for example, enter `stagetest` in a text field). Confirm the POST request arrives at the **staging** **Service Endpoint URL** you configured on staging.
 
-During testing, a request inspector such as a webhook capture service is a quick way to confirm that each environment posts to its own endpoint with the expected content type and payload. Use a real, secured endpoint for production.
+1. On the **production** author instance, open the same Adaptive Form and submit it with test data (for example, enter `prodtest` in a text field). Confirm the POST request arrives at the **production** **Service Endpoint URL** you configured on production—not the staging URL.
+
+1. Confirm each request uses the expected content type (for example, **Multi-Part Form Data**) and includes the submitted form data. Use a real, secured endpoint (HTTPS) for production.
 
 ## Best practices {#best-practices}
 
