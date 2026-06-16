@@ -26,15 +26,15 @@ Customers can now also onboard their Azure DevOps Git repositories into Cloud Ma
 >   * GitLab (both `gitlab.com` and the self-hosted version of GitLab) repositories.
 >   * Bitbucket (only `bitbucket.org`, cloud version) repositories. The self-hosted version of Bitbucket was deprecated as of February 15, 2024.
 >   * Azure DevOps (`dev.azure.com`) repositories.
->* Repositories hosted on `github.com`, including GitHub Enterprise Cloud deployments hosted on `github.com`, use the Adobe GitHub app to validate ownership. No webhook configuration is required because Cloud Manager integrates directly through the app. See [Add a private GitHub Enterprise Cloud repository in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md).
+>* Repositories hosted on `github.com` use the Adobe GitHub app to validate ownership. No webhook configuration is required because Cloud Manager integrates directly through the app. See [Add a private GitHub repository in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md).
 >
 
 ## Configure an external repository
 
 Configuration of an external repository in Cloud Manager consists of the following steps:
 
-1. [Add an external repository](#add-external-repo) to a selected program
-1. [Link a validated external repository to a pipeline](#validate-ext-repo)
+1. [Add an external repository](#add-external-repo) to a selected program.
+1. [Link a validated external repository to a pipeline](#validate-ext-repo).
     <!--
      1. Provide an access token to the external repository.
     1. Validate ownership of the private GitHub repository.
@@ -70,7 +70,7 @@ Configuration of an external repository in Cloud Manager consists of the followi
     | --- | --- |
     | **Repository Name** | Required. An expressive name for your new repository. |
     | **Repository URL** | Required. The URL of the repository.<br><br>If you are using a GitHub-hosted repository, the path must end in `.git`.<br>For example, *`https://github.com/org-name/repo-name.git`* (URL path is for illustration purposes only).<br><br>If you are using an external repository, it must use the following URL path format:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> or<br>`https://self-hosted-domain/org-name/repo-name.git`<br>And match your Git vendor. |
-    | **Select Repository Type** | Required. Select the repository type that you are using. If the repository URL path includes the Git vendor name, such as GitLab or Bitbucket, the repository type is preselected for you:<br><br>* **GitHub** (GitHub Enterprise Server, the self-hosted version of GitHub). For repositories on `github.com`, including GitHub Enterprise Cloud deployments hosted on `github.com`, see [Add a private GitHub Cloud repository in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) instead.<br>* **GitLab** (both `gitlab.com` and the self-hosted version of GitLab)<br>* **Bitbucket** (only `bitbucket.org`, the cloud version). The self-hosted version of Bitbucket was deprecated as of February 15, 2024.<br>* **Azure DevOps** (`dev.azure.com`) |
+    | **Select Repository Type** | Required. Select the repository type that you are using. If the repository URL path includes the Git vendor name, such as GitLab or Bitbucket, the repository type is preselected for you:<br><br>* **GitHub** For repositories on `github.com`. That is, any GitHub plan (Free, Pro, Team, or Enterprise Cloud), see [Add a private GitHub repository in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) instead.<br>* **GitLab** Both `gitlab.com` and the self-hosted version of GitLab.<br>* **Bitbucket** Only `bitbucket.org`, the cloud version. The self-hosted version of Bitbucket was deprecated as of February 15, 2024.<br>* **Azure DevOps** (`dev.azure.com`) |
     | **Description** | Optional. A detailed description of the repository. |
 
 1. Select **Save** to add the repository. 

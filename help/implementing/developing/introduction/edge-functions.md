@@ -91,7 +91,7 @@ Create a file named `edgeFunctions.yaml` in your configuration directory:
 kind: "EdgeFunctions"
 version: "1"
 data:
-  services:
+  functions:
     - name: my-edge-function
     # add advanced configuration under here
 ```
@@ -100,7 +100,7 @@ Java-stack environments have 1 edge function and Edge Delivery Services implemen
 
 | Key | Description |
 |---|---|
-| `services` | List of edge function services, each identified by a `name`. Note: this will soon be renamed to `functions`. |
+| `functions` | List of edge functions, each identified by a `name`. For backward compatibility, `services` is also accepted but `functions` is the preferred key. Using both in the same file is not allowed. |
 | `configs` | Key/value pairs exposed to an environment's edge function(s) as environment variables. |
 | `secrets` | Key/value pairs referencing Cloud Manager secrets to an environment's edge function(s) |
 | `kvs` | Boolean toggle to provision a KV store for runtime read/write key-value data shared across all edge functions in an enviornment. |
@@ -137,7 +137,7 @@ aio aem edge-functions deploy <function-name>
 
 Make sure the edge function works as expected. You can test it at:
 
-`edgefunction-pXXXXX-eYYYYY-<function name>.adobeaemcloud.com.adobeaemcloud.com/<path>`
+`edgefunction-pXXXXX-eYYYYY-<function name>.adobeaemcloud.com/<path>`
 
 For example, for the AEM Java-stack:<br/>
 `edgefunction-pXXXXX-eYYYYY-my-edge-function.adobeaemcloud.com/weather`
@@ -277,7 +277,7 @@ Expose environment variables to your functions using the `configs` key in `edgeF
 kind: "EdgeFunctions"
 version: "1"
 data:
-  services:
+  functions:
     - name: my-edge-function
   configs:
     - key: LOG_LEVEL
@@ -309,7 +309,7 @@ Secrets are referenced, not stored, in `edgeFunctions.yaml`. The `value` field m
 kind: "EdgeFunctions"
 version: "1"
 data:
-  services:
+  functions:
     - name: my-edge-function
   secrets:
     - key: API_TOKEN
@@ -340,7 +340,7 @@ Edge functions can read and write arbitrary key-value data at runtime through a 
 kind: "EdgeFunctions"
 version: "1"
 data:
-  services:
+  functions:
     - name: my-edge-function
   kvs: true
 ```
