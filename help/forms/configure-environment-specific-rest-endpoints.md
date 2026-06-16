@@ -136,7 +136,7 @@ Submit the same form from staging and production and confirm each environment po
 * Use an identical configuration **name** on every environment so the form resolves consistently after promotion.
 * Keep the endpoint **value** environment-specific. Never hardcode a single environment's URL into the form's submit action.
 * For production endpoints, ensure the URL is secure (HTTPS) and that the receiving path is configured to handle the POST request appropriately for your authentication model.
-* Prefer the context-aware override approach when you want deployment to be repeatable and free of manual post-deployment edits.
+* Prefer the context-aware override approach when you want deployment to be repeatable and free of manual post-deployment edits. 
 
 ## Related articles {#related-articles}
 
