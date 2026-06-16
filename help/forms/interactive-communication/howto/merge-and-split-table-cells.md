@@ -17,11 +17,11 @@ Standard table grids are uniform by default every row has the same number of equ
 
 | Who | Benefit |
 |-----|---------|
-| **Author (IC designer / layout designer)** | Build invoices, schedules, and comparison tables with spanning headers or grouped cells without leaving the IC editor. |
+| **Author (interactive communication designer / layout designer)** | Build invoices, schedules, and comparison tables with spanning headers or grouped cells without leaving the Interactive Communication Editor. |
 
 ## Merge cells
 
-1. In the IC Editor, click the first cell you want to include in the merge.
+1. In the Interactive Communication Editor, click the first cell you want to include in the merge.
 
 1. Hold **Shift** and click the last cell in the range to select all consecutive cells within the same row.
 

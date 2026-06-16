@@ -17,7 +17,7 @@ When an Interactive Communication goes through multiple rounds of editing, it ca
 
 | Who | Benefit |
 |-----|---------|
-| **Author (IC designer / owner)** | Verify that edits between review cycles produced the expected changes before publishing. |
+| **Author (interactive communication designer / owner)** | Verify that edits between review cycles produced the expected changes before publishing. |
 | **Content reviewer** | Confirm that author revisions addressed feedback from a previous version without introducing new issues. |
 
 >[!NOTE]
@@ -26,7 +26,7 @@ When an Interactive Communication goes through multiple rounds of editing, it ca
 
 ## Before you begin
 
-Make sure you have saved at least two versions of the Interactive Communication you want to compare. To create a version, open the IC, navigate to the **Versions** panel, and select **Save as Version**. See [Create Versions and Add Comments](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md) for step-by-step instructions.
+Make sure you have saved at least two versions of the Interactive Communication you want to compare. To create a version, open the interactive communication, navigate to the **Versions** panel, and select **Save as Version**. See [Create Versions and Add Comments](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md) for step-by-step instructions.
 
 ## Compare two versions
 

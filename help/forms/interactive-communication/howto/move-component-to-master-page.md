@@ -19,12 +19,12 @@ If you design a component on a regular page and later decide it belongs on every
 
 | Who | Benefit |
 |-----|---------|
-| **Author (IC designer)** | Promote a component to every page in one action instead of duplicating it manually across design pages. |
+| **Author (interactive communication designer)** | Promote a component to every page in one action instead of duplicating it manually across design pages. |
 | **Template designer** | Refine template structure after initial design without rebuilding components from scratch. |
 
 ## Move a component to the master page
 
-1. Open the Interactive Communication in the IC Editor.
+1. Open the interactive communication in the Interactive Communication Editor.
 
 1. Navigate to the design page that contains the component you want to move.
 
