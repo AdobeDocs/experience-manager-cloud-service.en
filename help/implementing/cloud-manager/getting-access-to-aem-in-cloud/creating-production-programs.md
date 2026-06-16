@@ -115,7 +115,7 @@ Adobe HIPAA Compliant and WAF-DDOS (Web Application Firewall - Distributed Denia
 
     >[!NOTE]
     >
-    >Checking **WAF-DDOS Protection** activates the feature, but licensed WAF rules provide protection only after the check box is selected. See [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md) to learn more how to manage traffic filter rules in your repository so they are deployed properly.
+    >Checking **WAF-DDOS Protection** activates the feature, but beyond some automatic CVE protection, you must deploy the WAF rules through Cloud Manager for full protection. See [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md) to learn more how to manage traffic filter rules in your repository so they are deployed properly.
     >
     >To confirm the feature is active, inspect the [CDN logs](//help/security/traffic-filter-rules-including-waf.md#cdn-logs) once traffic is flowing to the site. Look for log entries that include a `rules` property containing a `waf` attribute. For example,
     >

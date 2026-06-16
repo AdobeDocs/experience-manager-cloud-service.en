@@ -99,7 +99,9 @@ The following is a high-level recommended end-to-end process for determining the
     See [Using Config Pipelines](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be set to *CDN* and the version should be set to `1`.
 
 
-1. If WAF rules are licensed, you *must* enable the feature in Cloud Manager. Licensed WAF rules are not active and provide no protection until **WAF-DDOS Protection** is checked. Enable the feature for both the new and existing program scenarios as described in the following:
+1. If WAF rules are licensed, you *must* enable the feature in Cloud Manager. Licensing WAF rules does not activate them. The feature stays inactive until **WAF-DDOS Protection** is checked on the Security tab in Cloud Manager.
+
+    Enable the feature for both the new and existing program scenarios as described in the following:
 
    1. To configure WAF on a new program, check the **WAF-DDOS Protection** check box on the **Security** tab when you [create a production program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
