@@ -148,9 +148,13 @@ Adaptive Forms that submit to a Microsoft SharePoint list now support [certifica
 
 The Development Agent expands to handling questions related to Cloud Manager through the [Cloud Manager Job](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-job). In AI Assistant, retrieve information about programs, environments, and pipelines (e.g., execution status). Quickly find links to error logs, access logs, and build logs. 
 
-#### Web Tier Config Pipeline Troubleshooting {#devagent-webtier}
+#### Enhancements to Pipeline Troubleshooting Agent Job {#devagent-pipeline-troubleshooting}
 
-The Development Agent's [pipeline troubleshooting](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-pipeline-troubleshooting) capabilities help developers efficiently diagnose and resolve issues in AEM as a Cloud Service deployments. In addition to supporting Full Stack pipelines (Deployment and Code Quality), the Development Agent now supports troubleshooting for the **Web Tier Config Pipeline**
+The Development Agent's [pipeline troubleshooting job](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-pipeline-troubleshooting) help developers diagnose and resolve issues in AEM as a Cloud Service deployments. New features include:
+
+* Support for Web Tier Config Pipeline - In addition to supporting Full Stack pipelines (Deployment and Code Quality), the Development Agent now supports troubleshooting for the **Web Tier Config Pipeline**
+
+* Experience Hub Widget for failed pipelines - IT roles will see a new widget highlighting pipeline failures. A clickable button initates the pipeline troubleshooting job in AI Assistant.
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
