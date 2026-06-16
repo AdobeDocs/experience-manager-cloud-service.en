@@ -53,7 +53,7 @@ Anytime a program is edited, including adding or removing a solution or add-on, 
       >[!NOTE]
       >To confirm the feature is active, inspect the [CDN logs](//help/security/traffic-filter-rules-including-waf.md#cdn-logs) once traffic is flowing to the site. Look for log entries that include a `rules` property containing a `waf` attribute. For example,
       >
-      >`"rules": "waf=SQLI"`
+      >`"rules": "*waf=*"`
       >
       >This attribute appears once WAF is active, even before any WAF rules are deployed.
 

@@ -119,7 +119,7 @@ Adobe HIPAA Compliant and WAF-DDOS (Web Application Firewall - Distributed Denia
     >
     >To confirm the feature is active, inspect the [CDN logs](//help/security/traffic-filter-rules-including-waf.md#cdn-logs) once traffic is flowing to the site. Look for log entries that include a `rules` property containing a `waf` attribute. For example,
     >
-    >`"rules": "waf=SQLI"`
+    >`"rules": "*waf=*"`
     >
     >This attribute appears when WAF is active, even before any WAF rules are deployed.
 
