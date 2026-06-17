@@ -103,7 +103,7 @@ Java-stack environments have 1 edge function and Edge Delivery Services implemen
 | `functions` | List of edge functions, each identified by a `name`. For backward compatibility, `services` is also accepted but `functions` is the preferred key. Using both in the same file is not allowed. |
 | `configs` | Key/value pairs exposed to an environment's edge function(s) as environment variables. |
 | `secrets` | Key/value pairs referencing Cloud Manager secrets to an environment's edge function(s) |
-| `kvs` | Boolean toggle to provision a KV store for runtime read/write key-value data shared across all edge functions in an enviornment. |
+| `kvs` | Boolean toggle to provision a KV store for runtime read/write key-value data shared across all edge functions in an environment. |
 
 See advanced configuration such as `configs`, `secrets`, and `kvs` in the [advanced configuration section](#advanced-function-configuration) below.
 
@@ -234,7 +234,18 @@ For the detailed technical guidance on configuring caching behavior, controlling
 
 ## Limitations {#limitations}
 
-Each Edge Function invocation runs inside a sandbox with resource limits enforced by the underlying compute platform.
+- Each Edge Function invocation runs inside a sandbox with resource limits enforced by the underlying compute platform.
+
+- The max size of the built web assembly (wasm) artifact is 100MB
+
+- Maximum memory consumption is 1MB bytes stack, 128MB heap
+
+- Important information about edge function execution:
+  - An execution is terminated after 120s of wall time
+  - Executions will be terminated at 1s of computation (not wall time)
+  - The average edge function execution time must be under 100ms.
+
+- See limitations related to [Edge Function Config Variables](#function-configuration), [Edge Function Secret Variables](#function-secrets), and [Edge Function KV Stores](#function-kv-store).
 
 ### Maximum Outbound Fetch Calls per Invocation {#max-fetch-calls}
 
@@ -299,6 +310,10 @@ const logLevel = config.get('LOG_LEVEL') || 'info';
 >- The config store is always named `config_default`.
 >- Key names are case-sensitive.
 >- The config store is shared across all edge functions in the same environment.
+>- The config store is replicated across the Adobe-Managed CDN's global network
+>- max 500 entries
+>- max name/value sizes: 255 and 8000 characters
+
 
 ### Edge Function Secret Variables {#function-secrets}
 
@@ -313,7 +328,7 @@ data:
     - name: my-edge-function
   secrets:
     - key: API_TOKEN
-      value: ${{ API_TOKEN_SECRET }}
+      value: ${{API_TOKEN_SECRET}}
 ```
 
 Retrieve secrets in your function code using the `SecretStoreManager` helper from the boilerplate:
@@ -330,6 +345,8 @@ const apiToken = await SecretStoreManager.getSecret('API_TOKEN');
 >- Key names are case-sensitive.
 >- Secrets are immutable once created.
 >- The secret store is shared across all edge functions in the same environment.
+>- The secret store is replicated across the Adobe-Managed CDN's global network
+>- Max size of all secrets is 64 kb
 
 ### Edge Function KV Store {#function-kv-store}
 
@@ -365,6 +382,13 @@ await kv.put('visit-count', String(count + 1));
 >- The KV store is always named `kv_default`.
 >- The KV store is empty at provision time; populate it at runtime via the [Fastly KV Store API](https://js-compute-reference-docs.edgecompute.app/docs/fastly:kv-store/KVStore). Declarative key/value entries in `edgeFunctions.yaml` are not supported.
 >- The KV store is shared across all edge function in the same environment.
+>- The KV store is replicated across the Adobe-Managed CDN's global network
+>- KV Stores provide eventual consistency, which means that reading a key immediately after writing it may not return the updated value.
+>- KV key names are max 1024 byte UTF-8 files 
+>- KV entry size is max 25M
+>- KV Store items have a rate limit of 1 write per second per item.
+>- KV Store item batch requests have a limit of 100,000 items per request.
+
 
 ### Logging {#logging}
 
