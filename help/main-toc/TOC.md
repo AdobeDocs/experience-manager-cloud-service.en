@@ -102,6 +102,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2026 {#2026}
+      + [Maintenance Release Notes for 2026.6.0](/help/release-notes/maintenance/2026/2026-6-0.md)
       + [Maintenance Release Notes for 2026.5.0](/help/release-notes/maintenance/2026/2026-5-0.md)
       + [Maintenance Release Notes for 2026.4.0](/help/release-notes/maintenance/2026/2026-4-0.md)
       + [Maintenance Release Notes for 2026.3.0](/help/release-notes/maintenance/2026/2026-3-0.md)
@@ -259,6 +260,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.06.05 Release Notes](/help/release-notes/universal-editor/2026/2026-06-05.md)
       + [2026.05.28 Release Notes](/help/release-notes/universal-editor/2026/2026-05-28.md)
       + [2026.05.21 Release Notes](/help/release-notes/universal-editor/2026/2026-05-21.md)
       + [2026.05.14 Release Notes](/help/release-notes/universal-editor/2026/2026-05-14.md)
@@ -889,6 +891,7 @@ user-guide-title: AEM as a Cloud Service
       + [Submit an Adaptive Form to Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
       + [Submit an Adaptive Form to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
       + [Configure Submit to REST Endpoint submit action for Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
+      + [Configure environment-specific REST endpoints for the same Adaptive Form](/help/forms/configure-environment-specific-rest-endpoints.md)
       + [Submit an Adaptive Form to Microsoft&reg; OneDrive](/help/forms/configure-submit-action-onedrive.md)
       + [Integrate AEM Adaptive Form with AEM Workflow](/help/forms/configure-submit-action-workflow.md)
       + [AEM Forms Integration with Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
