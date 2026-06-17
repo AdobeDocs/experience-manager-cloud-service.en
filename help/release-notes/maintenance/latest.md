@@ -61,5 +61,3 @@ AEM as a Cloud Service is dedicated to optimizing your platform's security and p
 |Dispatcher|2.0.274||
 |AEM Core Components| 2.31.0|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
 |Node.js|14 (default)|[Supported Node.js versions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions)|
-|Java 21|21.0.11|[JDK 21.0.11](https://www.oracle.com/java/technologies/javase/21-0-11-relnotes.html)|
-|Java 25|25.0.2|[JDK 25.0.2](https://www.oracle.com/java/technologies/javase/25-0-2-relnotes.html)|
