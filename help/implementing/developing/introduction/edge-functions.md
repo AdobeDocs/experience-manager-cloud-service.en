@@ -234,18 +234,18 @@ For the detailed technical guidance on configuring caching behavior, controlling
 
 ## Limitations {#limitations}
 
-* Each Edge Function invocation runs inside a sandbox with resource limits enforced by the underlying compute platform.
+- Each Edge Function invocation runs inside a sandbox with resource limits enforced by the underlying compute platform.
 
-* The max size of the built web assembly (wasm) artifact is 100MB
+- The max size of the built web assembly (wasm) artifact is 100MB
 
-* Maximum memory consumption is 1MB bytes stack, 128MB heap
+- Maximum memory consumption is 1MB bytes stack, 128MB heap
 
-* Important information about edge function execution:
-  * An execution is terminated after 120s of wall time
-  * Executions will be terminated at 1s of computation (not wall time)
-  * The average edge function execution time must be under 100ms.
+- Important information about edge function execution:
+  - An execution is terminated after 120s of wall time
+  - Executions will be terminated at 1s of computation (not wall time)
+  - The average edge function execution time must be under 100ms.
 
-* See limitations related to [Edge Function Config Variables](#function-configuration), [Edge Function Secret Variables](#function-secrets), and [Edge Function KV Stores](#function-kv-store).
+- See limitations related to [Edge Function Config Variables](#function-configuration), [Edge Function Secret Variables](#function-secrets), and [Edge Function KV Stores](#function-kv-store).
 
 ### Maximum Outbound Fetch Calls per Invocation {#max-fetch-calls}
 
