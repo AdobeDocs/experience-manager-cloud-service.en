@@ -1,9 +1,8 @@
 ---
-title: Integrate Content Advisor with Dynamic Media open API
-description: Integrate Content Advisor with various Adobe, non-Adobe, and third party applications.
+title: Integrate Content Advisor with Dynamic Media
+description: Learn how to integrate Content Advisor with Dynamic Media to enable users to browse, preview, and select Dynamic Media renditions for use in their applications and workflows.
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
-exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
 ---
 # Integration with Dynamic Media {#integrate-dynamic-media}
 
@@ -12,6 +11,10 @@ Content Advisor integrates with Dynamic Media to enable users to browse, preview
 ## Build Dynamic Media URLs using selectedMedia {#build-dynamic-media-urls-selectedmedia}
 
 When a user selects a Dynamic Media rendition from the Content Advisor Dynamic Media panel, the selected rendition information is returned in the `selectedMedia` object. The host application must use this information to generate the appropriate Dynamic Media delivery URL.
+
+>[!NOTE]
+>
+> The host application must implement the URL generation logic described in this section to use Dynamic Media renditions selected from Content Advisor. The selected rendition information is returned as metadata and is not automatically converted into a delivery URL.
 
 ### selectedMedia object {#selectedmedia-object}
 
@@ -42,10 +45,12 @@ For example, when a user selects a base rendition and applies the `rotate=90` mo
 ```javascript
 selectedMedia: {
     apiStyle: "scene7",
-    base: "varun/anf_64854_01_model3",
+    base: "scene7company/image",
     modifiers: ["rotate=90"]
 }
 ```
+
+![View Dynamic Media renditions](assets/content-advisor-dm-renditions.png)
 
 ### Access selectedMedia in the handleSelection callback {#access-selectedmedia}
 
@@ -328,7 +333,4 @@ rotate=90&width=1200
 
 The generated string is appended to the final Dynamic Media URL and applies the selected transformations when the asset is delivered.
 
->[!NOTE]
->
-> The host application must implement the URL generation logic described in this section to use Dynamic Media renditions selected from Content Advisor. The selected rendition information is returned as metadata and is not automatically converted into a delivery URL.
 
