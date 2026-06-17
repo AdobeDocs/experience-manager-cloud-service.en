@@ -18,6 +18,10 @@ These are the release notes for the 18 June 2026 release of the Universal Editor
 >
 >For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
+## What's New {#what-is-new}
+
+* The ability to clear all selected checkboxes was added.
+
 ## Other Improvements {#other-improvements}
 
 * The rotate button now properly communicates it current state to assistive technologies.

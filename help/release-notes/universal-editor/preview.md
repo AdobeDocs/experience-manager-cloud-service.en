@@ -20,6 +20,15 @@ These **preview** release notes are provided as a convenience so you know what c
 >
 >The content of the actual release as well as the release date are subject to change.
 
+## Upcoming Features {#upcoming-features}
+
+* A new button has been added to the toolbar to access AEM Sites console.
+  * This brings the functionality of the former **AEM Site Admin Extension** [extension](/help/implementing/universal-editor/extending.md) natively to the Universal Editor.
+  * The button opens the current AEM page in the [Sites console,](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console) or the [Experience Fragments console](/help/sites-cloud/authoring/fragments/experience-fragments.md) for `/content/experience-fragments` paths.
+  * The button is hidden for DAM paths (`/content/dam`) and when no unique AEM page can be determined from the current editables.
+* You can now disable single-character shortcuts to better work with accessibility technologies.
+
 ## Upcoming Changes {#upcoming-improvements}
 
-
+* Numerous buttons now correctly have accessible names.
+* A problem with persisting certain Content Fragments after selecting them with a picker has been fixed.
