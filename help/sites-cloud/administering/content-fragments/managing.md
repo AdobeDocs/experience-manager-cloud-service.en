@@ -650,21 +650,29 @@ Once selected, this will be shown as a filter predicate, and the list will be fi
 
 The Content Fragment console supports:
 
-* [full-text search](#full-text-search)
-* [semantic search](#semantic-search)
-
-### Full-text search {#full-text-search}
-
-Entering your search terms in the search box:
-
-![Content Fragments console - Searching](assets/cf-managing-console-search-specification.png)
-
-Will provide the selected results:
-
-![Content Fragments console - Search Results](assets/cf-managing-console-search-results.png)
+* [Full-text search](#full-text-search)
+* [Semantic search](#semantic-search)
 
 The search box also provides quick access to **Recent Content Fragments** and **Saved Searches**:
 
 ![Content Fragments console - Recent and Saved](assets/cf-managing-console-search-saved.png)
 
+### Full-text search {#full-text-search}
+
+Full-text search allows you to search the Content Fragment content for a specific word or phrase. Entering your search terms in the search box:
+
+![Content Fragments console - full-text search](assets/cf-managing-console-full-text-search-specification.png)
+
+Will provide the selected results:
+
+![Content Fragments console - Search Results](assets/cf-managing-console-full-text-search-results.png)
+
 ### Semantic search {#semantic-search}
+
+Semantic search for Content Fragments improves content discovery by enabling natural-language queries. It allows you to find fragments based on meaning and intent, instead of relying solely on exact keywords or full-text matches.
+
+Again, you enter your search terms in the search box. 
+
+For example `fruity and light roast`:
+
+![Content Fragments console - semantic search](assets/cf-managing-console-semantic-search.png)
