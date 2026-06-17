@@ -26,7 +26,7 @@ These **preview** release notes are provided as a convenience so you know what c
   * This brings the functionality of the former **AEM Site Admin Extension** [extension](/help/implementing/universal-editor/extending.md) natively to the Universal Editor.
   * The button opens the current AEM page in the [Sites console,](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console) or the [Experience Fragments console](/help/sites-cloud/authoring/fragments/experience-fragments.md) for `/content/experience-fragments` paths.
   * The button is hidden for DAM paths (`/content/dam`) and when no unique AEM page can be determined from the current editables.
-* You can now disable single-character shortcuts to better work with accessibility technologies.
+* Single-character shortcuts now work better with accessibility technologies.
 
 ## Upcoming Changes {#upcoming-improvements}
 
