@@ -185,7 +185,7 @@ This property lets you enter a vanity URL for this page, which can allow you to 
 
 * **Generate Sitemap** - When selected, a `sitemap.xml` is generated for this page, and its descendants.
 
-* **Structured Data (JSON-LD)** - The content defined here is emitted inside a `<script type="application/ld+json">` tag in the page head by the [Page Component.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page#edit-dialog)
+* **Structured Data (JSON-LD)** - The content defined here is emitted inside a `<script type="application/ld+json">` tag in the page head by the [Page Component.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page#structured-data)
   * Click **Add** to add structured data.
   * Each entry must be one complete JSON-LD object of a [schema.org](https://schema.org) type (e.g. FAQPage, HowTo, or Product).
 
