@@ -143,6 +143,10 @@ This property lets you enter a vanity URL for this page, which can allow you to 
 
 * **Cloud Configuration** - The path to the selected configuration
 
+### SPA Configuration {#spa-configuration}
+
+* **Remote APP URL** - The URL of the remote app when implementing a [single page application](/help/implementing/developing/hybrid/introduction.md)
+
 ### Template Settings {#template-settings}
 
 * **Allowed Templates** - [Defines the list of templates that are available](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author) within this sub-branch
@@ -180,6 +184,10 @@ This property lets you enter a vanity URL for this page, which can allow you to 
   * Some options conflict with each other, in which case the more permissive option take precedence.
 
 * **Generate Sitemap** - When selected, a `sitemap.xml` is generated for this page, and its descendants.
+
+* **Structured Data (JSON-LD)** - The content defined here is emitted inside a `<script type="application/ld+json">` tag in the page head by the [Page Component.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page#edit-dialog)
+  * Click **Add** to add structured data.
+  * Each entry must be one complete JSON-LD object of a [schema.org](https://schema.org) type (e.g. FAQPage, HowTo, or Product).
 
 ## Images {#images}
 
