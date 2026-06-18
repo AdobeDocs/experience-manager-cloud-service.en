@@ -387,7 +387,7 @@ Tap or click the **Page Properties** icon in the Universal Editor toolbar to ope
 
 >[!NOTE]
 >
->* The **AEM Page Properties Extension** only works for pages, not Content Fragments.
+>* The **AEM Page Properties** button only works for pages, not Content Fragments.
 >* The button is shown only when the remote page has a [connection with protocol](/help/implementing/universal-editor/component-definition.md#plugins) `aem` or `xwalk` and a unique page path can be resolved from the current editable.
 
 ### Access Sites Console {#sites-console}
