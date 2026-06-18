@@ -52,11 +52,11 @@ Getting early access to features that Adobe is developing lets customers and par
 
 **Current beta programs**
 
-The following sections list active beta programs.
+The following sections list active beta and early access programs.
 
-### Agents in AEM {#agents-in-aem}
+### Agents in AEM (Early Access){#agents-in-aem}
 
-If you would like to explore the powerful, new AEM agentic capabilities across production, governance, optimization, discovery, and development, [please learn about how you can access them here.](/help/ai-in-aem/agents/overview.md)
+If you would like to explore the powerful, new AEM agentic capabilities across Production, Governance, Optimization, Discovery, and Development, [please learn about how you can access them here.](/help/ai-in-aem/agents/overview.md)
 
 <!--
 ### Agents in AEM (Explorer program) {#agents-in-aem-beta-program}
@@ -80,6 +80,10 @@ See [AEM Foundation beta programs](#foundation-early-adopter).
 ### Cloud Manager (Beta programs) {#cloud-manager-beta-programs}
 
 See [Cloud Manager beta programs](/help/implementing/cloud-manager/release-notes/current.md).
+
+### AEM Assets (Beta programs) {#aem-assets-beta-programs}
+
+See [AEM Assets beta programs](#assets-beta-program-features).
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -179,7 +183,7 @@ It is critical to remove usage of deprecated APIs.
 
 Since **April 14**, Cloud Manager pipelines that contain code using APIs targeting 2/26/2026 removal **fail during the Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.* 
 
-Starting **June 11, 2026**, environments still using these deprecated APIs **will not receive critical Adobe release updates** and will not be subject to Adobe's standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
+Starting **July 23, 2026**, environments still using these deprecated APIs **will not receive critical Adobe release updates** and will not be subject to Adobe's standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
 
 See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
 
@@ -262,6 +266,15 @@ This feature is in alpha. Join the program to try it and share feedback with the
 #### Expanded Application Performance Monitoring (APM) (Alpha program) {#apm-alpha}
 
 For observability, AEM Cloud Service currently supports Adobe-provided [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) and customer-managed [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace). As we explore support for additional APM options, please email us at [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) with your preferred vendor or technology, along with use cases.
+
+### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta Features {#assets-beta-program-features}
+
+#### UI Extensibility for Assets View {#ui-extensibility-assets-view}
+
+Assets View supports UI Extensibility, a developer-first capability that empowers customers to tailor the out-of-the-box experience to meet their specific business requirements.
+Customers can leverage existing stable extension points by following Adobe's developer documentation to build and deploy extensions with minimal effort. For use cases where a required extension point is not yet available, Adobe works directly with customers to explore the requirements and assess the technical feasibility of delivering new extensibility APIs tailored to their needs, and may deliver such new APIs as **Beta Releases**.
+Additionally, Adobe has developed a **GenAI-powered extension generation tool** currently available in an internal early adoption phase. This tool can significantly accelerate extension development time. Customers participating in this beta program will receive access to the tool and are encouraged to share feedback to help shape its evolution.
+To participate or learn more, send an email to `GRP-ASSETSVIEWUIEXTENSIBILITY@adobe.com`.
 
 ## [!DNL Experience Manager] Guides {#guides}
 

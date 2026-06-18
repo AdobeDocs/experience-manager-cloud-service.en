@@ -10,119 +10,55 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 26353 {#release-26353}
+## Release 26635 {#release-26635}
 
-Summarized below are the continuous improvements for maintenance release 26353, which was publicly released on June 3, 2026. The previous maintenance release was release 26309.
+Summarized below are the continuous improvements for maintenance release 26635, which was publicly released on June 17, 2026. The previous maintenance release was release 26353.
 
 The 2026.6.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-26353}
+### Enhancements {#enhancements-26635}
 
-* CQ-4360727: Added tags & asset metadata and i18n dictionary harvesting support for Agentic Translation workflows in AEM Translation.
-* CQ-4363507: Improved handling of long running dispatcher to increase stability in translation workflows.
-* FORMS-24887: Document of Record (DoR) generation now supports excluding attachments from the DoR Portable Document Format (PDF). Organizations can reduce DoR file size when attachments are delivered separately to the destination.
-* FORMS-21919: Document of Record (DoR) generation is now supported for Adaptive Forms core components embedded in Sites. Authors can generate DoR output directly from embedded forms without moving forms out of the Sites context.
-* FORMS-24318: Authors can now set document expiration (`daysUntilSigningDeadline`) when configuring the Send PDF via Email submit action on Adaptive Forms. Agreements submitted to Adobe Sign honor the configured value instead of defaulting to no expiration.
-* SITES-32578: MSM OpenAPI - Define the Reset inheritance call.
-* SITES-32580: MSM OpenAPI - Implement Detach.
-* SITES-32581: MSM OpenAPI - Implement Reset.
-* SITES-32582: MSM OpenAPI - Implement Suspend.
-* SITES-41333: MSM OpenAPI - Implement Resume.
-* SITES-35050: Release Core Components 2.31.0.
-* SITES-43855: Launch creation / edit performance improvement for Content Fragment count less than batch size.
-* SITES-44267: Fix MSM OpenAPI schema mismatch.
-* SITES-44323: Remove Delete Live Copy endpoint from MSM OpenAPI schema.
-* SITES-44430: MSM OpenAPI - Fix Get Inheritance Details live copy ID validation.
-* SITES-45016: Release CIF components 2.18.4.
-* SITES-11784: Content Fragment Editor: Significantly improved loading performance for fragments containing many Rich Text Editor (RTE) fields.
-* SITES-42675: Introduced new endpoint for searching variations of a provided content fragment.
-* SITES-32196: Get user's first name and last name separately — API responses expose creator/modifier/publisher first and last name separately, alongside the fullName.
-* SITES-34223: Page deletion runs asynchronously.
-* SITES-42899: Retries on async page deletion to improve reliability.
-* SITES-42912: Performance improvements for reference adjustment during folder move.
-* SITES-43942: Edge Delivery with Universal Editor - reject publishing images exceeding maximum image width and height.
-* SITES-42979: Edge Delivery with Universal Editor - reject publishing assets without an extension.
-* SITES-42730: Edge Delivery with Universal Editor - remove editor instrumentation for locked pages.
-* SITES-42706: Edge Delivery with Universal Editor - Support cross-site linking on multi-site setups.
-* SITES-30753: Edge Delivery with Universal Editor - Replace Edge Host configuration with a configurable cache ttl for authoring.
+* GRANITE-67251: Introduced `cqSiteSearch`, a new out-of-the-box index defined over the `cq:Searchable` mixin type. This allows fine-grained control over what content goes into the site index and provides full-fledged site search for AEM websites, including semantic search.
+* GRANITE-68099: Updated the embedded Apache Jackrabbit Oak to the latest public release (2.2.0).
+* SKYOPS-135241: Introduce aem prefix for immutable farm filters to avoid naming conflicts with customer-defined configurations.
 
-### Fixed Issues {#fixed-issues-26353}
-
-* CQ-4361979: Fixed translated sub-pages reverting to English after Experience Fragment translation in AEM Translation.
-* CQ-4362438: Fixed Language Copy did not rewrite internal links inside Experience Fragments during translation in AEM Translation.
-* CQ-4363421: Added fix for Microsoft Translation workflow returning invalid target language code error for Simplified Chinese (zh-CN) for large sized content in AEM Translation.
-* FORMS-24826: Form submissions fail to complete in the MiniMed EForm Sandbox production tenant. External customers validating forms before production use cannot finish their workflows.
-* FORMS-25126: The Adaptive Forms rule editor does not allow edits to previously created rules, preventing updates to business logic and slowing form maintenance.
-* FORMS-25129: Renaming a field to include spaces breaks Rule Editor behavior. The generated script no longer executes as expected, and associated form logic stops working.
-* FORMS-25480: Document of Record (DoR) output from templates with panels configured with wrapData set to true (for example, wrapInData.xdp) can omit panel data, reducing the accuracy of generated documents.
-* FORMS-25501: Adobe Sign workflows remain in a pending state when the sign status is not returned after the Adobe Sign step, blocking downstream processing.
-* SITES-24497: Landmarks of the same type are not labelled.
-* SITES-24525: Incorrect heading role for modal buttons is used.
-* SITES-24703: Focus indicator for listbox popup button is cut off.
-* SITES-25217: Info icon is too small.
-* SITES-25263: Date field in Timewarp modal has `aria-haspopup=dialog`.
-* SITES-25308: Focus indicator of buttons in the Demographic toolbar does not meet minimum contrast requirements.
-* SITES-25364: Input instructions are not linked to the checkbox in code.
-* SITES-25377: Content in the Side Rail Assets reloads when the Filter field receives focus.
-* SITES-28592: Unlocalized strings in Content Fragment Model editor > 'Model is locked' dialog.
-* SITES-31978: Sites pagecolumnpreview leads to OOM when replication queue is huge — Page column preview no longer loads the full replication queue into memory, avoiding OOM when the queue is very large.
-* SITES-37955: Edge Delivery with Universal Editor: Fix replication checks being skipped for referenced assets.
-* SITES-39242: Missing thumbnail of model in configuration with localized characters in name in Content Fragment Models.
-* SITES-40216: Edge Delivery with Universal Editor: Fix unpublishing the source page of a livecopy with localized URLs turned on.
-* SITES-40639: Reverting inheritance and selecting to sync CF element inside LC folder does NOT work.
-* SITES-40752: Side panel components list is keyboard accessible.
-* SITES-41121: Screen reader announces component name and an invisible group name.
-* SITES-41163: Page move/republish dialog no longer pre-selects Republish for pages modified since last publish without warning, preventing accidental publication of work-in-progress content.
-* SITES-41397: ETag for list/search projection summary now matches GET-by-UUID when checkbox enumeration values are patched in a different order than the model defines.
-* SITES-41785: Incorrect root path and name added to create live copy job result for pages.
-* SITES-41928: Contexthub + Unified Shell overlap makes component menu inaccessible in editor.
-* SITES-42086: Orphaned Page Node Remains on Preview After Page Move — Page move on Preview removes the old page node entirely instead of leaving an orphan `cq:Page` without `jcr:content`.
-* SITES-42700: MSM OpenAPI r- Synchronize endpoint returns 500 response if live copy is not found.
-* SITES-42705: Break Inheritance for Thumbnail in Page Properties does not protect `/jcr:content/image` node from rollout.
-* SITES-42735: Investigating create live copy failures when FT_SITES-32861 is enabled.
-* SITES-42736: MSM rollout only updates first hyperlink in RTE.
-* SITES-42889: sourceRootResource property of page launch set as uuid if mix:referenceable mixin applied on source page.
-* SITES-42953: Rollout rewrites DAM links with uppercase file-extensions to non-existent paths.
-* SITES-42986: Unlocalized strings in Skyline > Commerce.
-* SITES-43034: Launches – "Live Date" column sorts alphanumerically instead of chronologically.
-* SITES-43047: Manual Rollout Skipped for Shallow Live Copies after 2026.2 Release.
-* SITES-43116: MSM Rollout dialog stuck (spinner never completes) – NPE in `<code>AsyncOperationServlet.doGet</code>`.
-* SITES-43180: GraphQL: Fixed an issue where queries using duplicate field aliases returned incomplete results — sub-fields present only in the second alias were silently dropped from the response.
-* SITES-43196: MSM OpenAPI - "Get a Live Copy Source Details" call should return 400 when the CF is not a source.
-* SITES-43197: MSM OpenAPI - `PUT /{liveCopyId}/brokenInheritanceElements` returns 204 on success although it is documented to return 200.
-* SITES-43198: MSM OpenAPI - Add 400 Bad Request to "Get the Details of the Live Copy" and "Get Live Copy Sources" call schema.
-* SITES-43413: Component-level "Rollout" Action Throws "doRollout undefined" JS Error – Fails.
-* SITES-43498: Content Fragment Editor: Fixed a save failure for fragments containing `DateTime` fields whose millisecond value ends in a trailing zero (such as 14:12:16.610Z).
-* SITES-43516: Fixed intermittent failure to page events
-* SITES-43543: GraphQL: Fixed schema generation failure when Content Fragment Models reference other models via tag-based lookups across configuration hierarchies.
-* SITES-43668: Incorrect URL Reference Re-write during Blueprint Rollout with Nested Live-Copies.
-* SITES-43802: "false" string displayed in Insert Component modal on AEM Sites.
-* SITES-44145: Nested Launch promotion skips production version, prevents rollback.
-* SITES-44204: MSM OpenAPI r- Reset r- fix Etag path, support empty body.
-* SITES-44433: Edge Delivery with Universal Editor: Fix sanitization of `og:image`, `twitter:image` and `og:image_secure` when publishing.
-* SITES-44682: Batch deactivation of blueprint pages triggers duplicate rollout events for child pages.
-
-### Known Issues {#known-issues-26353}
+### Fixed Issues {#fixed-issues-26635}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-26353}
+#### AEM Guides {#guides-26635}
 
-* Content Fragment text summarization will be sunset in the next major AEM as a Cloud Service release 2026.7. It is recommended to use AEM Generate Variations instead.
+* GUIDES-46275: Image dimensions specified with units such as `mm` are not rendered correctly, causing images to be displayed at their original size instead of the specified dimensions.
+* GUIDES-45800: Copying and pasting `<keywords>` inside `<topicmeta>` within a `<keydef>` or `<topicref>` results in the keywords being inserted inside unwanted foreign tags.
+* GUIDES-45409: When a map contains an external `topicref` pointing to a non-DITA resource (such as `.html`), its preview is not displayed in the Assets UI.
+* GUIDES-45254: When working with `.plt` and `.css` files in PDF templates, the **Generate IDs** option is available in the right-click context menu despite not being applicable to these file types.
+* GUIDES-45508: Applying a baseline to a map with many assets delays loading of the translation report for the selected language, sometimes leading to request timeout before the report renders.
+* GUIDES-45511: The tooltip for the **Version History** icon is missing in the left panel of the Review UI adjacent to the topic name.
+* GUIDES-44942: When adding questions to a quiz using the Insert from question bank option, short answer questions are not listed despite having a valid Question ID.
+
+For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
+
+### Known Issues {#known-issues-26635}
+
+None.
+
+### Deprecated Features and APIs {#deprecated-26635}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-26353}
+### Security Fixes {#security-26635}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 34 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 10 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-26353}
+### Embedded Technologies {#embedded-tech-26635}
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM Oak | 2.0.0 | [Oak 2.0.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/2.0.0/index.html)|
+|AEM Oak | 2.2.0 | [Oak 2.2.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/2.2.0/index.html)|
 |AEM SLING API | 2.27.6 |[Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL| 1.4.28-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
-|Apache HTTP Server| 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES)|
+|Apache HTTP Server| 2.4.67 | [Apache Httpd 2.4.67](https://apache.googlesource.com/httpd/+/refs/tags/2.4.67/CHANGES)|
+|Dispatcher|2.0.274||
 |AEM Core Components| 2.31.0|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
 |Node.js|14 (default)|[Supported Node.js versions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions)|
+

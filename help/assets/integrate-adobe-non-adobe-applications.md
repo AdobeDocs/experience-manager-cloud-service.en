@@ -122,6 +122,8 @@ Click the ![preview icon](assets/do-not-localize/preview-icon.svg) icon to previ
 
 Click **[!UICONTROL Add Modifiers]**, specify a modifier in the text box, and press Enter to apply the transformation to all asset renditions in real-time. Similarly, you can add multiple modifiers to renditions and preview those transformations. Click the rendition name and click **[!UICONTROL Select]** to make the rendition available in your host application. The rendition after applying those modifiers is not saved. See the list of supported modifiers for [Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) and [Dynamic Media with OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
+For information on how to integrate Dynamic Media panel with Content Advisor, see [Integration with Dynamic Media](/help/assets/integration-with-dynamic-media.md).
+
 ### Discovery of Content Fragments {#content-fragments-discovery-content-advisor}
 
 Content Advisor provides discovery of Content Fragments, enabling you to easily browse and incorporate fragments into supported Adobe applications. Search through a list of Content Fragments and select the most relevant content without leaving your current workflow.
