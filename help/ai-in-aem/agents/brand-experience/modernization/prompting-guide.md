@@ -161,17 +161,18 @@ Use this prompt to extract and apply visual design from a source site to Edge De
 * "Migrate the design from `https://example.com`"
 * "Extract design tokens"
 * "Style the hero block"
+* "Style all the blocks"
 
 #### What to Know {#wtk-design}
 
 * Design migration has two phases:
   1. Phase 1 (site-wide) generates `styles/brand.css` and `styles/styles.css`:
-     * `brand.css` contains pure design tokens as CSS custom properties (fonts, colors, spacing, heading sizes) extracted deterministically from the source site.
+     * `brand.css` contains design tokens as CSS custom properties (fonts, colors, spacing, heading sizes).
      * `styles.css` imports `brand.css` and applies the tokens to default content (headings, paragraphs, buttons, links, section backgrounds).
      * If your project already has a `brand.css`, prompt the agent to use it instead of extracting from the source.
-  1. Phase 2 migrates individual block styles in parallel and creates block-specific CSS in `/blocks/{name}/{name}.css`, referencing the tokens from `brand.css`.
+  1. Phase 2 styles individual blocks in parallel and creates block-specific CSS in `/blocks/{name}/{name}.css`, referencing the tokens from `brand.css`.
 * Block styling (phase 2) requires site-wide design (phase 1) to be complete first.
-* Phase 2 uses extraction-based styling: computed styles are captured directly from the source site and translated into CSS, achieving 80-90% block-level style fidelity in a single pass.
+* Phase 2 achieves 80-90% block-level style fidelity in a single pass.
 * Estimated time:
   * Phase 1: 5-10 minutes
   * Phase 2: 10-15 minutes
@@ -198,16 +199,24 @@ Use this prompt to validate and refine individual migrated blocks and ensure vis
 
 ### Site Critique {#site-critique}
 
-Use this prompt to validate and fix all migrated blocks across your site in one pass. This is the recommended approach for multi-page projects.
+Use this prompt to validate all migrated blocks across your site in a single pass, ideal for multi-page migrations.
 
 #### Example Prompts {#example-site-critique}
 
 * "Critique site"
+* "Validate all blocks across the migrated site"
 
 #### What to Know {#wtk-site-critique}
 
-* Runs parallel sub-agents (one per template), applies the same fix cascade as block critique across all pages, and deduplicates fixes automatically.
-* Run after design migration: migrate pages → run design → run `critique site`.
+* Site critique validates all blocks across all migrated templates using parallel sub-agents, one per template.
+* It applies the same fix cascade as block critique (global styles → section transformers → content/structural parsers → block CSS), but across all pages simultaneously.
+* Fixes are deduplicated — if the same issue appears on multiple pages using the same block, the fix is applied once.
+* If `brand.css` does not exist yet, critique runs in content-structural-only mode (fixing parsers and transformers without styling).
+* Site critique is the recommended approach after design migration for multi-page projects.
+* The following workflow is recommended:
+  1. Migrate pages (single or bulk).
+  1. Run design migration.
+  1. Run `critique site` to validate and auto-fix remaining gaps across all templates.
 
 ### Page Critique {#page-critique}
 
