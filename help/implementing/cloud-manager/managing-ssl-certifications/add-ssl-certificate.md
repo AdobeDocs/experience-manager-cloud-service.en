@@ -7,7 +7,7 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 ---
 
-# Add an SSL certificate {#add-ssl-cert}
+# Add an SSL certificate
 
 Learn how to add your own SSL certificate or and Adobe managed DV (Domain Validation) certificate using Cloud
 
@@ -151,7 +151,7 @@ You are now ready to add a [CDN configuration](/help/implementing/cloud-manager/
 
 
 <!--
-## Add an SSL certificate {#add-ssl-cert}
+## Add an SSL certificate
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate program.
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
