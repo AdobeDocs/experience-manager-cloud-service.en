@@ -333,4 +333,3 @@ rotate=90&width=1200
 
 The generated string is appended to the final Dynamic Media URL and applies the selected transformations when the asset is delivered.
 
-
