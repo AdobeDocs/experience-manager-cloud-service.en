@@ -99,7 +99,9 @@ The following is a high-level recommended end-to-end process for determining the
     See [Using Config Pipelines](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be set to *CDN* and the version should be set to `1`.
 
 
-1. If WAF rules are licensed, you *must* enable the feature in Cloud Manager. Licensed WAF rules are not active and provide no protection until **WAF-DDOS Protection** is checked. Enable the feature for both the new and existing program scenarios as described in the following:
+1. If WAF rules are licensed, you *must* enable the feature in Cloud Manager. Licensing WAF rules does not activate them. The feature stays inactive until **WAF-DDOS Protection** is checked on the Security tab in Cloud Manager.
+
+    Enable the feature for both the new and existing program scenarios as described in the following:
 
    1. To configure WAF on a new program, check the **WAF-DDOS Protection** check box on the **Security** tab when you [create a production program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
@@ -107,7 +109,7 @@ The following is a high-level recommended end-to-end process for determining the
 
       To confirm the feature is *active* after you enable it, inspect the [CDN logs ](#cdn-logs) once traffic is flowing to the site. Look for log entries that include a `rules` property containing a `waf` attribute. For example:
       
-      `"rules": "waf=SQLI" `
+      `"rules": "*waf=*" `
       
       This attribute appears once WAF is active, even before any WAF rules are deployed.
   
@@ -161,9 +163,9 @@ Actions are prioritized according to their types in the following table, which i
 
 | **Name**  | **Allowed Properties**  | **Meaning**  |
 |---|---|---|
-|  **allow** | `wafFlags` (optional), `alert` (optional)  | if wafFlags is not present, stops further rule processing and proceeds to serving response. If wafFlags is present, it disables specified WAF protections and proceeds to further rule processing. <br>If alert is specified, an Actions Center notification is sent if the rule is triggered 10 times in a 5-minute window. Once an alert is triggered for a particular rule, it will not fire off again until the next day (UTC). |
-|  **block** | `status, wafFlags` (optional and mutually exclusive), `alert` (optional)  | if wafFlags is not present, returns HTTP error bypassing all other properties, error code is defined by status property or defaults to 406. If wafFlags is present, it enables specified WAF protections and proceeds to further rule processing. <br>If alert is specified, an Actions Center notification is sent if the rule is triggered 10 times in a 5-minute window. Once an alert is triggered for a particular rule, it will not fire off again until the next day (UTC). |
-| **log**  | `wafFlags` (optional), `alert` (optional)  | logs the fact that the rule was triggered, otherwise does not affect the processing. wafFlags has no effect. <br>If alert is specified, an Actions Center notification is sent if the rule is triggered 10 times in a 5-minute window. Once an alert is triggered for a particular rule, it will not fire off again until the next day (UTC). |
+|  **allow** | `wafFlags` (optional), `alert` (optional)  | if wafFlags is not present, stops further rule processing and proceeds to serving response. If wafFlags is present, it disables specified WAF protections and proceeds to further rule processing. <br>If alert is specified, an Actions Center notification is sent if the rule is triggered 10 times in a 5-minute window. Once an alert is triggered for a particular rule, it does not fire off again until the next day (UTC). |
+|  **block** | `status, wafFlags` (optional and mutually exclusive), `alert` (optional)  | if wafFlags is not present, returns HTTP error bypassing all other properties, error code is defined by status property or defaults to 406. If wafFlags is present, it enables specified WAF protections and proceeds to further rule processing. <br>If alert is specified, an Actions Center notification is sent if the rule is triggered 10 times in a 5-minute window. Once an alert is triggered for a particular rule, it does not fire off again until the next day (UTC). |
+| **log**  | `wafFlags` (optional), `alert` (optional)  | logs the fact that the rule was triggered, otherwise does not affect the processing. wafFlags has no effect. <br>If alert is specified, an Actions Center notification is sent if the rule is triggered 10 times in a 5-minute window. Once an alert is triggered for a particular rule, it does not fire off again until the next day (UTC). |
 
 ### WAF flags list {#waf-flags-list}
 
@@ -183,7 +185,7 @@ The `wafFlags` property, used in the licensable WAF traffic filter rules, refere
 | TRAVERSAL  | Directory Traversal  | Directory Traversal is the attempt to navigate privileged folders throughout a system in hopes of obtaining sensitive information.  |
 | USERAGENT  |  Attack tooling |  Attack Tooling is the use of automated software to identify security vulnerabilities or to attempt to exploit a discovered vulnerability. |
 | LOG4J-JNDI  | Log4J JNDI  |  Log4J JNDI attacks attempt to exploit the [Log4Shell vulnerability](https://en.wikipedia.org/wiki/Log4Shell) present in Log4J versions earlier than 2.16.0 |
-| CVE | CVE | Flag to identify a CVE. Is always combined with a flag `CVE-<CVE Number>`. Contact Adobe to learn more about which CVEs Adobe will protect you from.|
+| CVE | CVE | Flag to identify CVE (Common Vulnerabilities and Exposures). Is always combined with a flag `CVE-<CVE Number>`. Contact Adobe to learn more about which CVEs that Adobe protects you from.|
 
 #### Suspicious traffic
 
@@ -364,7 +366,7 @@ Rate limits are evaluated based on either traffic hitting the edge, traffic hitt
 |  window | integer enum: 1, 10 or 60  | 10  | Sampling window in seconds for which request rate is calculated. The accuracy of counters depends on the size of the window (bigger window bigger accuracy). For example, one can expect 50% accuracy for the 1-second window and 90% accuracy for the 60-second window. |
 |  penalty | integer from 60 to 3600  | 300 (5 minutes) | A period in seconds for which matching requests are blocked (rounded to the nearest minute).  |
 |  count | all, fetches, errors | all | evaluate based on edge traffic (all), origin traffic (fetches), or the number of errors (errors). |
-|  groupBy | array[Getter] | none | rate limiter counter will be aggregated by a set of request properties (for example, clientIp).  |
+|  groupBy | array[Getter] | none | rate limiter counter is aggregated by a set of request properties (for example, clientIp).  |
 
 ### Examples {#ratelimiting-examples}
 
