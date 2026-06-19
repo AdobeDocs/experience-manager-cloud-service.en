@@ -49,7 +49,7 @@ For Email Configuration related settings, visit [Email Service Documentation](ht
 
    ![Configure Email Service](/help/assets/assets/config-email-service.png)
 
-## Share assets as a link {#sharelink}
+## Share assets as a link
 
 Sharing assets through a link is a convenient way of making the resources available to external parties, marketers, and other [!DNL Experience Manager] users. The functionality allows anonymous users to access and download the assets shared with them. When downloading assets from a shared link, [!DNL Experience Manager Assets] uses an asynchronous service that offers faster and uninterrupted download. The assets to be downloaded are queued in the background into ZIP archives of manageable file size. For large downloads, the download is bundled into multiple files of 100 GB per file size.
 
@@ -168,7 +168,7 @@ You can also copy the auto-generated link and share it with the users. The defau
 
 
 <!--
-## Share assets as a link {#sharelink}
+## Share assets as a link
 
 To generate the URL for assets you want to share with users, use the Link Sharing dialog. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first log in to Experience Manager Assets.
 

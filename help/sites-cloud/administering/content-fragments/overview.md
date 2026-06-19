@@ -287,7 +287,7 @@ The Content Fragments console is dedicated to managing, searching for, and creat
 
 The console can be directly accessed from the top level of the Global Navigation.
 
-![Global Navigation - Content Fragments console](assets/cf-managing-global-navigation.png)
+![Global Navigation - Content Fragments console](/help/sites-cloud/administering/content-fragments/assets/cf-managing-global-navigation.png)
 
 You can use the far left panel to select the resource type to view, browse and manage:
 

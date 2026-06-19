@@ -46,7 +46,7 @@ You can use the far left panel of the [Content Fragments console](/help/sites-cl
 
 Selecting **Content Fragments** opens the console in a new tab. 
 
-![Content Fragments console - Overview](assets/cf-managing-console-overview.png)
+![Content Fragments console - Overview](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-overview.png)
 
 Here you can see that there are three main areas:
 
@@ -124,17 +124,17 @@ The main/right panel (table view) of the console provides a range of information
 * **Referenced By**: 
   * Provides a link that opens a dialog listing all [parent references](#parent-references-fragment)  of that fragment; including referencing Content Fragments, Experience Fragments and pages. To open a specific reference, click the **Title** in the dialog.
 
-    ![Content Fragments console - References dialog](assets/cf-managing-console-references-dialog.png)
+    ![Content Fragments console - References dialog](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-references-dialog.png)
 
 * **Language**: indicate any [Language](#language-copies-fragment) copies
 
   * Indicates the locale of the content fragment, together with the total number of local/[Language](#language-copies-fragment)  copies associated with the content fragment.
 
-    ![Content Fragments console - Language indicator](assets/cf-managing-console-language-indicator.png)
+    ![Content Fragments console - Language indicator](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-language-indicator.png)
 
   * Select the count to open a dialog that displays all the language copies. To open a specific language copy, click the **Title** in the dialog.
 
-    ![Content Fragments console - Language dialog](assets/cf-managing-console-languages-dialog.png)
+    ![Content Fragments console - Language dialog](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-languages-dialog.png)
 
 * **Workflows**
 
@@ -142,11 +142,11 @@ The main/right panel (table view) of the console provides a range of information
 
   * Select the icon for a specific fragment: 
 
-    ![Content Fragments console - Workflows icon](assets/cf-managing-console-workflows-icon.png)
+    ![Content Fragments console - Workflows icon](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-workflows-icon.png)
 
     To open a dialog with detailed information about workflows (past and current) for the fragment.:
 
-    ![Content Fragments console - Workflows dialog](assets/cf-managing-console-workflows-dialog.png)
+    ![Content Fragments console - Workflows dialog](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-workflows-dialog.png)
 
 ## Actions {#actions}
 
@@ -176,7 +176,7 @@ Certain actions are available from the console - without selecting a specific Co
 
 Selecting a specific fragment opens a toolbar focused on the actions available for that fragment. You can also select multiple fragments - the selection of actions will be adjusted accordingly.
 
-![Content Fragments console - toolbar for a selected fragment](assets/cf-managing-console-fragment-toolbar.png)
+![Content Fragments console - toolbar for a selected fragment](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-fragment-toolbar.png)
 
 * **[Open in new Editor](#editing-the-content-of-your-fragment)**
 * **[Publish](#publishing-and-previewing-a-fragment)** (and **[Unpublish](#unpublishing-a-fragment)**)
@@ -233,7 +233,7 @@ To create a content fragment:
    * **Name** - Auto-completed based on the **Title**, but you can edit it, if necessary.
    * **Description** 
 
-   ![New Content Fragment dialog](assets/cf-managing-new-cf-dialog.png)
+   ![New Content Fragment dialog](/help/sites-cloud/administering/content-fragments/assets/cf-managing-new-cf-dialog.png)
 
 1. Select **Create**, or **Create and open** to persist your definition.
 
@@ -265,7 +265,7 @@ To open your fragment for editing:
 
 1. The fragment editor opens. Select your required **Variation** amd make your changes as required (they will be auto-saved):
 
-   ![Fragment editor](assets/cf-managing-editor.png)
+   ![Fragment editor](/help/sites-cloud/administering/content-fragments/assets/cf-managing-editor.png)
 
 ## Copy a Content Fragment {#copy-a-content-fragment}
 
@@ -379,7 +379,7 @@ To manage the tags:
 1. Select **Manage Tags** in the toolbar.
 1. Use the Tag selector to select tags to apply, or remove:
 
-   ![Manage Tags](assets/cf-managing-manage-tags.png)
+   ![Manage Tags](/help/sites-cloud/administering/content-fragments/assets/cf-managing-manage-tags.png)
 
 1. **Save** updates. This will return you to the console.
 
@@ -444,7 +444,7 @@ After selecting the **Publish** action:
 
 1. Provide all details in the dialog. For example, for a scheduled publish request:
 
-   ![Publish dialog](assets/cf-managing-publish-dialog.png)
+   ![Publish dialog](/help/sites-cloud/administering/content-fragments/assets/cf-managing-publish-dialog.png)
 
    >[!NOTE]
    >
@@ -472,7 +472,7 @@ In both cases, select **Unpublish** from the toolbar, followed by either **Now**
 
 When the relevant dialog opens you can select the appropriate service:
 
-![Unpublish dialog](assets/cf-managing-unpublish-dialog.png)
+![Unpublish dialog](/help/sites-cloud/administering/content-fragments/assets/cf-managing-unpublish-dialog.png)
 
 >[!NOTE]
 >
@@ -486,7 +486,7 @@ When the relevant dialog opens you can select the appropriate service:
 
 The **Replace** action is available (in the top toolbar) to find, and replace, specified text in your selected Content Fragments. 
 
-![Find and Replace](assets/cf-managing-find-replace.png)
+![Find and Replace](/help/sites-cloud/administering/content-fragments/assets/cf-managing-find-replace.png)
 
 Before replacement, validation criteria are checked and you are informed of any conflicts, allowing you to change the replacement string or only replace the validated instances.
 
@@ -496,7 +496,7 @@ Before replacement, validation criteria are checked and you are informed of any 
 >
 >If you select more than 20 Content Fragments, you will see the message **Unable to find and replace**.
 
-![Confirm Replace](assets/cf-managing-confirm-replace.png)
+![Confirm Replace](/help/sites-cloud/administering/content-fragments/assets/cf-managing-confirm-replace.png)
 
 ## Check Out and Check In {#check-out-and-check-in}
 
@@ -580,7 +580,7 @@ Both provide a link that opens a dialog listing all parent references of that fr
 
 For example:
 
-![Content Fragments console - References dialog](assets/cf-managing-console-references-dialog.png)
+![Content Fragments console - References dialog](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-references-dialog.png)
 
 ## Finding Language Copies of your Fragment {#language-copies-fragment}
 
@@ -591,21 +591,21 @@ Details of Language Copies can be accessed from:
 
 The icon indicates the locale of the content fragment, together with the total number of locales/language copies associated with the content fragment. For example, from the console:
 
-![Content Fragments console - Language indicator](assets/cfc-console-language-indicator.png)
+![Content Fragments console - Language indicator](/help/sites-cloud/administering/content-fragments/assets/cfc-console-language-indicator.png)
 
 Select the count to open a dialog that displays all the language copies. To open a specific language copy, click the **Title** in the dialog.
 
-![Content Fragments console - Language dialog](assets/cf-managing-console-languages-dialog.png)
+![Content Fragments console - Language dialog](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-languages-dialog.png)
 
 ## Select columns shown in the console {#select-columns-console}
 
 As with other consoles you can configure the columns that are visible, and available for action:
 
-![Content Fragments console - column configuration](assets/cf-managing-console-column-icon.png)
+![Content Fragments console - column configuration](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-column-icon.png)
 
 This will present a list of columns that you can hide or show:
 
-![Content Fragments console - column configuration](assets/cf-managing-console-column-selection.png)
+![Content Fragments console - column configuration](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-column-selection.png)
 
 ## Filtering Fragments {#filtering-fragments}
 
@@ -620,7 +620,7 @@ The Filter panel offers:
 
  Once selected, the **Filtering by** options are shown (under the Search box). They can be deselected from there. For example:
 
-![Content Fragments console - Filtering](assets/cf-managing-console-filter.png)
+![Content Fragments console - Filtering](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-filter.png)
 
 ### Fast Filtering {#fast-filtering}
 
@@ -632,22 +632,22 @@ For example, select **Published** in the **Status** column:
 >
 >Fast filtering is only supported for the **Model**, **Status**, **Modified By**, **Tags**, and **Published By** columns.
 
-![Content Fragments console - Filtering](assets/cf-managing-console-fast-filter-overview.png)
+![Content Fragments console - Filtering](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-fast-filter-overview.png)
 
 Once selected, this will be shown as a filter predicate, and the list will be filtered accordingly:
 
-![Content Fragments console - Filtering](assets/cf-managing-console-fast-filter-criteria.png)
+![Content Fragments console - Filtering](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-fast-filter-criteria.png)
 
 ## Searching Fragments {#searching-fragments}
 
 The search box supports full-text search. Entering your search terms in the search box:
 
-![Content Fragments console - Searching](assets/cf-managing-console-search-specification.png)
+![Content Fragments console - Searching](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-specification.png)
 
 Will provide the selected results:
 
-![Content Fragments console - Search Results](assets/cf-managing-console-search-results.png)
+![Content Fragments console - Search Results](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-results.png)
 
 The search box also provides quick access to **Recent Content Fragments** and **Saved Searches**:
 
-![Content Fragments console - Recent and Saved](assets/cf-managing-console-search-saved.png)
+![Content Fragments console - Recent and Saved](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-saved.png)
