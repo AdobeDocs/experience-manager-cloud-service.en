@@ -10,9 +10,6 @@ exl-id: move-component-to-master-page-ic-editor
 
 # Move a Component to the Master Page
 
-
-## Introduction
-
 The master page in an Interactive Communication defines elements that repeat across every page, headers, footers, watermarks, page numbers, and any other content that must appear consistently throughout the document. Components that live on individual design pages, by contrast, appear only on those specific pages.
 
 If you design a component on a regular page and later decide it belongs on every page, you can move it directly to the master page from the canvas without having to delete and recreate it. The component is placed at the same visual position it occupied on the design page.
@@ -24,15 +21,29 @@ If you design a component on a regular page and later decide it belongs on every
 
 ## Move a component to the master page
 
+A common use case is moving repeating header elements — such as a **bank logo** and **bank address** — from a design page to the master page so they appear on every page of the interactive communication.
+
 1. Open the interactive communication in the Interactive Communication Editor.
 
-1. Navigate to the design page that contains the component you want to move.
+1. On the **Design** tab, navigate to the design page that contains the components you want to move.
 
 1. Right-click the component on the canvas.
 
-1. In the context menu, select **Move to > Master page**.
+   For example, right-click the bank address text block.
+
+1. In the context menu, select **Move to**, then choose **Master page**.
+
+   ![Move to master page](/help/forms/interactive-communication/assets/move-to-master-page.png)
 
    The component is removed from the design page and added to the master page at the same visual position. It now appears on every page that uses that master page.
+
+1. Repeat steps 3 and 4 for each component you want on the master page.
+
+   For example, after moving the bank address, repeat the same steps to move the bank logo.
+
+1. Select the **Master** tab to verify that the bank logo and bank address appear in the expected positions.
+
+   ![Move to master page](/help/forms/interactive-communication/assets/move-to-master-page2.png)
 
 ## Eligible components
 
@@ -60,7 +71,7 @@ A component on the master page is managed in one place — any edit you make the
 There is no direct "move back" action. To return a component to a specific design page, add a new instance of that component type to the design page and delete it from the master page.
 
 **Why is my component's right-click menu not showing Move to > Master page?**
-The component type may not be eligible (see the eligibility table above), or the component may have a content lock or layout lock applied. Check both conditions and remove any lock before trying again.
+The component type may not be eligible (see the eligibility table above), or the component may have a content lock or layout lock applied. Check both conditions and remove any lock before trying again. Move each eligible component separately — for example, move the bank logo and bank address one at a time.
 
 ## See also
 
