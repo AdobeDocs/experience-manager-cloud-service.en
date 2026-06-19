@@ -45,6 +45,8 @@ Standard table grids are uniform by default every row has the same number of equ
 
 1. In the **Split Cell** dialog, enter the number of columns to split the cell into.
 
+1. Click **OK** to apply.
+
    ![Split cell dialog](/help/forms/interactive-communication/assets/split-merge-table3.png)
 
    The **Max Columns** value shown in the dialog represents the maximum you can split into — equal to the number of cells that were originally merged. For example, if two cells were merged, **Max Columns** is 2.
@@ -53,8 +55,6 @@ Standard table grids are uniform by default every row has the same number of equ
    |-------------|--------|
    | 2 | Cell splits back into 2 individual cells |
    | 1 | Cell remains as a single cell (no change) |
-
-1. Click **OK** to apply.
 
    The table structure updates automatically. Any value between 1 and the **Max Columns** value is valid.
 

@@ -100,5 +100,7 @@ By combining intuitive design, robust backend configuration, and strict complian
 ## See also
 
 - [Enable and configure Associate UI for Interactive Communications](/help/forms/interactive-communication/enable-configure-associate-ui.md)
+- [Configure Dropdown Options for Associate UI](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md)
+- [Configure Bound and Unbound Variables for Associate UI](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md)
 - [Integrate Associate UI in Your Application](/help/forms/interactive-communication/invoke-associate-ui.md)
 - [Submission workflow for Associate UI — IC Generate PDF Output](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
