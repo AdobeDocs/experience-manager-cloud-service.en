@@ -653,10 +653,11 @@ The Content Fragment console supports:
 * [Full-text search](#full-text-search)
 * [Semantic search](#semantic-search)
 
-Use the toggle option to select your search method:
-
 <!-- CQDOC-23674 - activate when toggle visible -->
 <!--
+
+Use the toggle option to select your search method:
+
 ![Content Fragments console - select search method](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-select-search.png)
 -->
 
