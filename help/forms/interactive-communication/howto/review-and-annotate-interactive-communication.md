@@ -32,36 +32,69 @@ Reviewers and authors must each be assigned to the appropriate out-of-the-box re
 
 ## Add an annotation
 
-*Perform these steps as a reviewer.*
+Perform these steps as a reviewer.
 
-1. Open the interactive communication in the read-only annotation view.
+1. Navigate to **Forms & Documents** and select the interactive communication you want to review and click **Annotate** in the toolbar.
 
-1. To attach a comment to a specific component, click that component on the canvas. To leave a general comment not tied to a component, drag the comment cursor to any open area of the canvas.
+   ![Annotate 1](/help/forms/interactive-communication/assets/add-annotate1.png)
 
-1. Enter your feedback in the comment box.
-1. Click Submit Feedback.
+   The read-only **Annotations View** opens with the interactive communication displayed on the canvas.
 
-   The comment appears as an open annotation pin at the location you selected. All other reviewers can see it immediately.
+   ![Annotate 2](/help/forms/interactive-communication/assets/add-annotate2.png)
 
-1. Repeat for each component or area that needs feedback.
+1. To attach a comment to a specific component, click that component on the canvas.
 
-## View and resolve annotations
+   ![Annotate 3](/help/forms/interactive-communication/assets/add-annotate3.png)
 
-*Perform these steps as an author.*
+1. Enter your feedback in the comment box, then click the blue post button to save the comment.
 
-1. Open the interactive communication in the Interactive Communication Editor.
+   ![Annotate 4](/help/forms/interactive-communication/assets/add-annotate4.png)
 
-1. Select a component that shows reviewer annotation pins.
+1. Repeat steps 2 and 3 for each component that needs feedback.
 
-1. Open the **Properties** panel. All annotations attached to that component are listed in the **Comments** section.
+   For example, click the bank address block and add **Update Address**, then click the **Make and Model** cell in the Vehicle Details table and add **Update Car Model**.
 
-1. Review each comment, then make the necessary changes to the design.
+1. When you have finished adding comments, click **Submit Feedback**.
 
-1. Once you have addressed a comment, mark it as **Resolved**.
+   ![Annotate 5](/help/forms/interactive-communication/assets/add-annotate5.png)
+
+   A success message confirms your feedback was submitted. Each comment appears as an annotation pin at the location you selected, and all other reviewers can see it immediately.
+
+## Review the annotations
+
+Perform these steps as an author.
+
+1. Navigate to **Forms & Documents**, select the interactive communication, and click **Edit** to open it in the Interactive Communication Editor.
+
+   ![Resolve 1](/help/forms/interactive-communication/assets/add-annotate6.png)
+
+1. Select a component that shows a reviewer annotation pin.
+
+   For example, select the bank address block. In the **Properties** panel, expand the **Comments** section to view the attached annotation. The reviewer comment **update address** appears here.
+
+   ![Resolve 2](/help/forms/interactive-communication/assets/add-annotate7.png)
+
+1. Review each comment and make the necessary changes to the design.
+
+   For example, update the bank address text as requested by the reviewer.
+
+   ![Resolve 3](/help/forms/interactive-communication/assets/add-annotate8.png)
+
+1. Once you have addressed a comment, click **Resolve** in the **Comments** section.
+
+1. Repeat steps 2 through 4 for each remaining annotation.
+
+   For example, select the **Make and Model** cell in the Vehicle Details table, update the value to **Creta SX(O)** as requested in the **Update Car Model** comment, and mark it as **Resolved**.
+
+   ![Resolve 4](/help/forms/interactive-communication/assets/add-annotate9.png)
+
+1. Click **Save**.
+
+   ![Resolve 5](/help/forms/interactive-communication/assets/add-annotate10.png)
 
    A resolved annotation pin changes from open to closed (grey), distinguishing completed review items from those still outstanding. The resolved comment remains visible in the history so the full review trail is preserved.
 
-## Current limitations
+## Considerations
 
 - Reviewers and authors must be assigned to the appropriate out-of-the-box groups. Custom group configurations are not supported.
 
