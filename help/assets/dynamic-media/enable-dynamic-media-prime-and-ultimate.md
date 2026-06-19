@@ -106,7 +106,7 @@ Execute the following steps:
 
 See [Activate [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi) to start using the capabilities of [!DNL Dynamic Media] with OpenAPI capabilities in your environment.
 
-### Access Dynamic Media APIs {#access-dynamic-media-apis}
+### Access Dynamic Media APIs
 
 After [enabling Dynamic Media with OpenAPI](#activate-dynamic-media-with-openapi), a `delivery` instance gets created. Click the delivery instance to view the `AEM Assets DM OpenAPI Users - delivery  - Program xxxx - Environment yyyy` product profile. The product profile already has **AEM Dynamic Media enable API Services** enabled by default.
 
@@ -237,7 +237,7 @@ Use the [Adobe Developer Console](https://developer.adobe.com/developer-console/
 1. [Access Dynamic Media APIs](#access-dynamic-media-apis)
 1. [Access Delivery tier backed Asset Selector](#access-delivery-tier-backed-asset-selector)
 
-#### Create an API key to access [!DNL Dynamic Media] with OpenAPIs {#access-dynamic-media-apis}
+#### Create an API key to access [!DNL Dynamic Media] with OpenAPIs
 
 Execute the following steps to create an API key to access [!DNL Dynamic Media] with OpenAPIs:
 
