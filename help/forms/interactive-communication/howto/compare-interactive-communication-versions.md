@@ -10,9 +10,6 @@ exl-id: compare-interactive-communication-versions
 
 # Compare Interactive Communication Versions
 
-
-## Introduction
-
 When an Interactive Communication goes through multiple rounds of editing, it can be difficult to know exactly what changed between two saved states. You can open any two versions side by side as PDF previews, making it straightforward to spot layout shifts, component additions or removals, and static content changes, without having to open each version individually or compare screenshots manually.
 
 | Who | Benefit |
@@ -26,23 +23,45 @@ When an Interactive Communication goes through multiple rounds of editing, it ca
 
 ## Before you begin
 
-Make sure you have saved at least two versions of the Interactive Communication you want to compare. To create a version, open the interactive communication, navigate to the **Versions** panel, and select **Save as Version**. See [Create Versions and Add Comments](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md) for step-by-step instructions.
+Make sure you have saved at least one version of the Interactive Communication you want to compare against the current design. 
+
+To create a version, open **Forms & Documents**, select the interactive communication, open the **Timeline** panel from the left rail, and click **Save as Version**. See [Versioning and Commenting in Interactive Communication Editor](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md) for step-by-step instructions.
+
+After saving the version, update the Interactive Communication in the editor so the current design differs from the saved version. You need both a saved version and a modified current state before you can compare them.
+
+## Update the Interactive Communication
+
+After creating a version, open the interactive communication in the Interactive Communication Editor and make your design updates.
+
+For example, after saving **Bank Interactive Communication Version 1**, you might update the bank logo, revise the loan details, and change vehicle information in the table:
+
+- Replace the text-based bank header with a bank logo image
+- Update loan details such as the application reference number, approved loan amount, loan tenure, and EMI start date
+- Update the **Make and Model** value and dealer name in the Vehicle Details table
+
+![Updated Interactive Communication](/help/forms/interactive-communication/assets/compare-ic1.png)
+
+Click **Save** when you finish editing. The current design is now ready to compare against the saved version.
 
 ## Compare two versions
 
-1. Navigate to **Forms > Forms & Documents** in AEM.
+1. Navigate to **Forms & Documents** and select the interactive communication you want to compare.
 
-1. Locate and select the Interactive Communication you want to compare.
+1. Open the **Timeline** panel from the left rail.
 
-1. Click **Compare Version** from the action toolbar.
+1. In the timeline, locate the saved version you want to compare. For example, select **Bank Interactive Communication Version 1** with the comment **This version includes new bank logo and updated details**.
 
-1. In the version selector, choose the version you want to compare against the current version.
+1. Click **Compare to Current**.
 
-1. A new tab opens with both versions displayed side by side as PDF previews, the version you selected on one side and the current version on the other.
+   ![Compare to Current](/help/forms/interactive-communication/assets/compare-ic2.png)
 
-   Scroll through both previews to inspect layout and content differences page by page.
+   A new tab opens with both versions displayed side by side as PDF previews. The saved version appears on the left and the current version appears on the right.
 
-## Current limitations
+   ![Side-by-side comparison](/help/forms/interactive-communication/assets/comapre-ic3.png)
+
+   Scroll through both previews to inspect layout and content differences page by page. For example, the comparison highlights changes to the bank logo, loan details, and vehicle information such as the car model and dealer name.
+
+## Considerations
 
 - **Large text blocks:** If a paragraph or block of text has been rewritten or rearranged, both pages render identically to their source PDF. There is no inline text-diff, the comparison is visual only, and changed text is not flagged.
 
@@ -54,13 +73,13 @@ Make sure you have saved at least two versions of the Interactive Communication 
 You can compare two versions at a time — the version you select and the current version. They open side by side in a new tab.
 
 **Can I compare a version with a version other than the current one?**
-The version selector always compares against the current version. To compare two non-current versions, temporarily revert to the older version, then use Compare Version again.
+The version selector always compares against the current version. To compare two non-current versions, temporarily revert to the older version, then use **Compare to Current** again.
 
 **Is it possible to download or export the comparison view?**
 No. The side-by-side comparison is a visual review tool only — it is not exportable from the editor.
 
 ## See also
 
-- [Create Versions and Add Comments](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
+- [Versioning and Commenting in Interactive Communication Editor](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
 - [Review and Annotate an Interactive Communication](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md)
 - [Create an Interactive Communication](/help/forms/interactive-communication/create-interactive-communication.md)

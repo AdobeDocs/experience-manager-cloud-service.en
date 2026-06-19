@@ -10,9 +10,6 @@ exl-id: review-annotate-interactive-communication
 
 # Review and Annotate an Interactive Communication
 
-
-## Introduction
-
 Reviewing an interactive communication typically means sharing screenshots, composing emails, or holding side conversations, none of which can be tied back to the exact field or section being discussed. Annotations solve this by giving reviewers a dedicated, read-only view of the interactive communication where they can click any component and leave a comment pinned to that exact spot on the canvas.
 
 All reviewers share the same annotation view, so feedback is visible to everyone in one place. Annotations exist only during the authoring and review process, they never appear on published or customer-facing output.
