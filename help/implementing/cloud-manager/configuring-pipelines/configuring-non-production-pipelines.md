@@ -18,7 +18,7 @@ A user must have the **[Deployment Manager](/help/onboarding/cloud-manager-intro
 >
 >You can [edit pipeline settings](managing-pipelines.md) after the initial setup.
 
-## Add a new non-production pipeline {#adding-non-production-pipeline}
+## Add a new non-production pipeline
 
 After you set up a program and create at least one environment in the Cloud Manager UI, you can add non-production pipelines. Use these pipelines to test code quality before you deploy to production environments.
 
@@ -64,7 +64,7 @@ On the **Source Code** tab of the **Add Non-Production Pipeline** dialog box, se
     See [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) for more information about the types of pipelines.
 
 
-### I am using Full Stack Code {#full-stack-code}
+### I am using Full Stack Code
 
 A full-stack code pipeline simultaneously deploys back-end and front-end code builds containing one or more AEM server applications along with HTTPD/Dispatcher configuration.
 
@@ -260,7 +260,7 @@ See [Add a non-production pipeline](#adding-non-production-pipeline) to enable S
    
 
 <!--
-## Add a non-production pipeline {#adding-non-production-pipeline}
+## Add a non-production pipeline
 
 Once you have set up your program and have at least one environment using the Cloud Manager UI, you are ready to add a non-production pipeline by following these steps.
 
@@ -305,7 +305,7 @@ See [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/int
 
 The steps to complete the creation of your non-production pipeline vary depending on the type of source code you selected. Follow the links above to jump to the next section of this document so you can complete the configuration of your pipeline.
 
-### Full Stack Code {#full-stack-code}
+### Full Stack Code
 
 A full-stack code pipeline simultaneously deploys back-end and front-end code builds containing one or more AEM server applications along with HTTPD/Dispatcher configuration.
 
