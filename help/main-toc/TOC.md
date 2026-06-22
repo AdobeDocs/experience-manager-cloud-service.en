@@ -260,6 +260,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.06.11 Release Notes](/help/release-notes/universal-editor/2026/2026-06-11.md)
       + [2026.06.05 Release Notes](/help/release-notes/universal-editor/2026/2026-06-05.md)
       + [2026.05.28 Release Notes](/help/release-notes/universal-editor/2026/2026-05-28.md)
       + [2026.05.21 Release Notes](/help/release-notes/universal-editor/2026/2026-05-21.md)
@@ -650,7 +651,6 @@ user-guide-title: AEM as a Cloud Service
     + [Developer docs and APIs references](/help/assets/developer-reference-material-apis.md)
     + [Folder metadata schema](/help/assets/folder-metadata-schema.md)
     + [Work with image and video profiles](/help/assets/dynamic-media/about-image-video-profiles.md)
-    + [Configure transcription for audio and video assets](/help/assets/configure-transcription.md)
     + [Translate assets](/help/assets/translate-assets.md)
     + [Search facets](/help/assets/search-facets.md)
     + [Assets HTTP API](/help/assets/mac-api-assets.md)

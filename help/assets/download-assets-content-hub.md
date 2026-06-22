@@ -15,7 +15,7 @@ You can download single or multiple assets and their available renditions using 
 
 See the [types of renditions available in Content Hub](#types-of-renditions).
 
-## Download one or more assets and their renditions {#download-asset-renditions}
+## Download one or more assets and their renditions
 
 To download one or more assets and their renditions, execute the following steps: 
 
@@ -58,7 +58,7 @@ If **[!UICONTROL Download assets]** dialog box displays assets licenses, then se
 
 <!--
 
-## Download an asset and its renditions {#download-asset-renditions} 
+## Download an asset and its renditions
 
 To download an asset and its renditions, execute the following steps: 
 
