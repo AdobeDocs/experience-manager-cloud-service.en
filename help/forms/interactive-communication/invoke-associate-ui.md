@@ -4,13 +4,13 @@ description: Learn how to integrate the AEM Forms Associate UI with your applica
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms."
 exl-id: f946ccea-86d0-4086-8208-9583b8206244
 ---
 # Integrate Associate UI in Your Application
 
 
-This article explains how to integrate the Associate UI with your application, enabling customer-facing professionals such as field associates and service agents to generate personalized Interactive Communications in real-time on Publish instances. 
+This article explains how to integrate the Associate UI with your application, enabling customer-facing professionals such as field associates and service representatives to generate personalized Interactive Communications in real-time on Publish instances. 
 
 ## Prerequisites
 

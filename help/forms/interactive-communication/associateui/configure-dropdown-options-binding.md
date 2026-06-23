@@ -4,7 +4,7 @@ description: Learn how to configure Options Binding or manual static options for
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms."
 exl-id: configure-dropdown-options-associate-ui
 ---
 
@@ -15,7 +15,7 @@ Dropdown fields in the Interactive Communication Editor use a focused **Options 
 | Who | Benefit |
 |-----|---------|
 | **Author (interactive communication designer)** | Deliver accurate, data-driven dropdown choices to associates without unsupported Data Binding configurations. |
-| **Associate (agent / service representative)** | See the correct option list and pre-selected value when completing customer communications in the Associate UI. |
+| **Associate (service representative)** | See the correct option list and pre-selected value when completing customer communications in the Associate UI. |
 
 ## Before you begin
 
