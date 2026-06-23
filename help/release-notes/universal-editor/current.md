@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2026.05.28 Release Notes
-description: These are the release notes for the 2026.05.28 release of the Universal Editor.
+title: Universal Editor 2026.06.18 Release Notes
+description: These are the release notes for the 2026.06.18 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2026.05.28 Release Notes {#release-notes}
+# Universal Editor 2026.06.18 Release Notes {#release-notes}
 
-These are the release notes for the 28 May 2026 release of the Universal Editor.
+These are the release notes for the 18 June 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -20,11 +20,12 @@ These are the release notes for the 28 May 2026 release of the Universal Editor.
 
 ## What's New {#what-is-new}
 
-* A new button has been added to the toolbar [to access AEM page properties.](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)
-  * This brings the functionality of the former `aem-page-properties` [extension](/help/implementing/universal-editor/extending.md) natively to the Universal Editor.
-  * The button is shown only when the remote page has a [connection with protocol](/help/implementing/universal-editor/component-definition.md#plugins) `aem` or `xwalk` and a unique page path can be resolved from the current editable.
+* The ability to clear all selected checkboxes was added.
 
 ## Other Improvements {#other-improvements}
 
-* The default background color of the edit canvas is now white (#FFFFFF) when the app sets no background color of its own.
-* An issue was fixed where copy and pasting across pages was not working.
+* The rotate button now properly communicates it current state to assistive technologies.
+* An infinite loading state has been corrected in situations where Content Fragments contain tabs with no content.
+* A bug was fixed where a renderer crashes in some situations when reloading certain models.
+* A bug was fixed where certain tags could not be removed.
+* The Featured Image button's accessible name no longer contains duplicate information.

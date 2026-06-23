@@ -1,13 +1,12 @@
 ---
 title: How to manage [!DNL Dynamic Media] templates?
 description: Learn how to create [!DNL Dynamic Media] templates using a WYSIWYG template editor and include multiple images, texts and shapes layers to quickly create banners and flyers and use them in downstream applications.
-hide: true
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
 ---
 
-# [!DNL Dynamic Media] templates{#dynamic-media-templates}
+# Manage [!DNL Dynamic Media] templates{#dynamic-media-templates}
 
 Create real time customizable templates for your banners and flyers using [!DNL Dynamic Media] templates, a WYSIWYG template editor. Publish your [!DNL Dynamic Media] template and use it in downstream applications. A [!DNL Dynamic Media] template includes image and text layers. Add parameters to the image and text layers of the template and use [[!DNL Dynamic Media] URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) to reposition and resize the layer and update its content in real-time. 
 
@@ -285,7 +284,7 @@ Follow these steps to assign the same name to the [!UICONTROL Hide] parameters (
 1. Click **[!UICONTROL Save]** to group the layers. 
 1. Execute step 3 and then 4 in the [**[!UICONTROL Preview and Publish]**](#preview-and-publish-template-and-copy-template-deliver-url) section to see your changes. 
 
-## Preview and publish the template to copy the delivery URL{#preview-and-publish-template-and-copy-template-deliver-url}
+## Preview and publish the Dynamic Media template to copy the delivery URL{#preview-and-publish-dynamic-media-template-and-copy-template-deliver-url}
 
 Execute these steps to preview and publish the template and copy the delivery URL:
 
@@ -315,7 +314,7 @@ Execute the following steps to copy the delivery URL of the template:
 1. Paste this URL in your browser tab and see your live template. Customize the template in real time by updating the required parameter's value (Key's value) in the URL directly as demonstrated in [step 2](#preview-and-publish-template-and-copy-template-deliver-url) of **Preview and Publish** section.  
 1. Use this URL for rapid merchandising of your products or services. You can share this URL with your customers or integrate it into your website or any downstream third-party application to display the banner and make real-time updates to it to reflect the ongoing offers.
 
-## Make real-time updates to the template from the URL{#update-the-template-from-the-url}
+## Make real-time updates to the Dynamic Media template from the URL{#update-the-template-from-the-url}
 
 Editing parameters directly in the URL can be tedious. To simplify: 
 
@@ -328,7 +327,7 @@ Editing parameters directly in the URL can be tedious. To simplify:
 
 Paste this updated URL in your browser to view the changes. 
 
-## Edit the template{#edit-the-template}
+## Edit the Dynamic Media template{#edit-the-template}
 
 Edit the template by following these steps:
 
@@ -337,7 +336,7 @@ Edit the template by following these steps:
 3. Select the template.
 4. Click **[!UICONTROL Edit Template]**. The template canvas displays the template and the list of all its layers in the Layers panel. Start editing your template as per your requirements.
 
-## Add Call to Action (CTA) link to your template layer{#add-CTA-in-dynamic-media-templates}
+## Add Call to Action (CTA) link to your Dynamic Media template layer{#add-CTA-in-dynamic-media-templates}
 
 Turn any image, text or shape layer of your [!DNL Dynamic Media] template into a hyperlink by adding a CTA link to it that directs users to a target page. 
 

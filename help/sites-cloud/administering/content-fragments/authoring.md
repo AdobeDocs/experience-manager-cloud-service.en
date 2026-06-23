@@ -52,7 +52,7 @@ When you first open the Content Fragment Editor, you see four main areas:
   * [Publish](#publish-content-fragment), and [Unpublish](#unpublish-content-fragment) actions
   * an option to show all **Parent References** (link icon)
   * the fragment **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**, and last saved information
-  * a toggle to switch to the original (Assets-based) editor
+  * a toggle to switch to the original (/help/sites-cloud/administering/content-fragments/assets-based) editor
 
     >[!WARNING]
     >

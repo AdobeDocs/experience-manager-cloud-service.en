@@ -13,7 +13,9 @@ To manage and edit programs, start at the [**My Programs** console](/help/implem
 
 From the **Program Overview**, users with the requisite permissions can edit [production programs created in your organization](creating-production-programs.md) and [sandbox programs created in your organization](creating-sandbox-programs.md). By editing a program, you can do the following:
 
-* Add Sites solution to an existing program with Assets and conversely.
+
+* Enable or disable **WAF-DDOS Protection** on the **Security** tab.
+* Add the Sites solution to an existing program with Assets and add Assets to an existing program with Sites.
 * Remove Sites or Assets from an existing program that has both Sites and Assets.
 * Add an unused solution entitlement to an existing program or create a new program.
 * Mark production programs for deletion.
@@ -25,14 +27,14 @@ You must have the **Business Owner** role to edit programs, delete sandbox progr
 
 ## Edit a program {#editing}
 
-Anytime a program is edited, including adding or removing a solution or add-on, those changes take effect following the next deployment.
+Anytime a program is edited, including adding or removing a solution or add-on, those changes take effect following the next deployment. 
 
 **To edit a program:**
 
 1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
 1. In the **Quick access** section, click **Experience Manager**.
 1. In the left side panel, click **Cloud Manager**.
-1. Select the appropriate organization.
+1. In Cloud Manager, select the appropriate organization.
 1. On the **My Programs** page, click the program that you want to edit.
 1. Near the upper-left corner of the page, click the program's name, then select **Edit program**.
 
@@ -43,11 +45,45 @@ Anytime a program is edited, including adding or removing a solution or add-on, 
    ![General tab](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/edit-program-dialog-box.png)
 
    The options available for editing the program are the same options for program creation.
-   * You can configure whether a publish tier is provisioned for new environments (Beta). See [Flexible Publish Tier (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
-   * See [Create Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) and [Create Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) for details on the individual options. 
-   * [Additional options](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) may be available for your production program depending on the entitlements of your organization.
 
+   * You can configure whether a publish tier is provisioned for new environments (Beta). See [Flexible Publish Tier (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
+   * See [Create Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) and [Create Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) for details on the individual options.
+   * To enable or disable the Web Application Firewall (WAF) at any time, select the **Security** tab, then check or uncheck the **WAF-DDOS Protection** check box. Checking this box activates the feature, but beyond some automatic Common Vulnerabilities and Exposures (CVE) protection, you must deploy the WAF rules through Cloud Manager for full protection. If WAF rules are licensed but this check box is not checked, the feature is not active. For more information,see [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md).
+
+      >[!NOTE]
+      >To confirm the feature is active, inspect the [CDN logs](//help/security/traffic-filter-rules-including-waf.md#cdn-logs) once traffic is flowing to the site. Look for log entries that include a `rules` property containing a `waf` attribute. For example,
+      >
+      >`"rules": "*waf=*"`
+      >
+      >This attribute appears once WAF is active, even before any WAF rules are deployed.
+
+      ![Edit Program dialog box showing Security tab options](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cmk-edit-programs.png)
+
+   * On the same **Security** tab, you can enable **Customer Managed Keys** for an existing program.
+
+      CMK cannot be disabled after activation. After enabling CMK, configure your encryption keys in Experience Hub. See [Configure CMK in Experience Hub](#configure-cmk-experience-hub).
+ 
+   * [Additional options](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) are available for your production program depending on the entitlements of your organization.
+   
 1. Click **Update** to save your changes.
+
+## Configure CMK in Experience Hub {#configure-cmk-experience-hub}
+
+After CMK is enabled for a program, Cloud Manager provides a direct link to the CMK configuration page in Experience Hub so you can set up your
+encryption keys without navigating away from your program.
+
+Once CMK has been successfully configured for an environment, the Environment details page displays a **CMK configuration** status badge. If CMK is enabled for the program but has not yet been configured for a specific environment, the badge does not appear on that environment's details page.
+
+**To configure CMK in Experience Hub:**
+
+1. On the **My Programs** page, locate the program card with CMK enabled.
+2. Click ![Ellipsis - More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), then click **Configure CMK**.
+
+      ![Program card showing CMK icon to indicate enabled, then the Configure CMK option from the ellipsis menu](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cmk-configure-edit-program-dlg.png)
+
+   Experience Hub opens the CMK configuration page where you can supply your Azure Key Vault details and encryption key information.
+
+   For full configuration steps, see [Customer Managed Keys Setup for AEM as a Cloud Service](/help/security/customer-managed-keys.md).
 
 ## Mark a production program for deletion {#delete-production-program}
 
@@ -118,7 +154,7 @@ You can restore a production program that has been *marked* for deletion as long
 
    ![Unmarking the scheduled permanent removal date of the production program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-unmarkfordelete6.png) 
 
-   The production program is unmarked from deletion.
+   The production program is unmarked for deletion.
 
 ## Delete a sandbox program {#delete-sandbox-program}
 
@@ -134,7 +170,6 @@ Deleting a sandbox program removes all environments and pipelines associated wit
 1. In the **Quick access** section, click **Experience Manager**.
 1. In the left side panel, click **Cloud Manager**.
 1. Select the appropriate organization.
-
 1. On the **[My Programs](#my-programs)** page, click the sandbox program that you want to edit to show its details.
 
 1. Click your sandbox program's name in the upper-left of the page and select **Delete Program**.

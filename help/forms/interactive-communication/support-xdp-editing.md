@@ -9,9 +9,6 @@ exl-id: 8dd024aa-d0c1-4e8b-b9f2-ad67c20cdd88
 ---
 # Support XDP Editing in Interactive Communication Editor
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 ## Introduction
 

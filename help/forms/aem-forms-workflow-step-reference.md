@@ -244,7 +244,7 @@ If you specify the path of a folder, for example, attachments, all the files dir
 
 **[!UICONTROL Locale]**: Specify the language of the Document of Record. Select **[!UICONTROL Literal]** to select the locale from a drop-down list or select **[!UICONTROL Variable]** to retrieve the locale from the value stored in a variable of string data type. Define the locale code while storing the value for the locale in a variable. For example, specify **en_US** for English and **fr_FR** for French.
 
-## Invoke DDX step {#invokeddx}
+## Invoke DDX step
 
 Document Description XML (DDX) is a declarative markup language whose elements represent building blocks of documents. These building blocks include PDF and XDP documents, and other elements such as comments, bookmarks, and styled text. DDX defines a set of operations, which can be applied on one or more input documents to generate one or more output documents. A single DDX can be used with a range of source documents. You can use the ***Invoke DDX step*** in an AEM Workflow to perform various operations, like Assembling Disassembling documents, Creating, and modifying Acrobat and XFA Forms, and others described in the [DDX Reference documentation](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).                    
 
@@ -473,7 +473,7 @@ Generate a Non-Interactive PDF. It provides various customization options.
 
 Merges form data into a PDF form. You can import form data into a PDF form.
 
-### Invoke DDX step {#invokeddx}
+### Invoke DDX step
 
 Executes the DDX file on the specified map of input documents and returns the manipulated PDF documents.
 

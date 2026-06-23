@@ -230,11 +230,11 @@ Note: Form discovery currently supports Edge Delivery Services forms only and ta
 
 The Content Discovery Agent returns the top results for each query, sorted by relevance to ensure that the exact matches appear first. The agent combines metadata-driven queries with semantic search to assemble a focused set of likely matches, then uses an LLM to rank them based on user intent. This blended approach delivers accurate, context-aware results without depending entirely on a direct keyword match.
 
-Each result is displayed as an asset card, displaying the asset name, preview, and key metadata such as description and format. You can click the Info icon on a card to view additional asset properties.
+Each result is displayed as an asset card, displaying the asset name, preview, and key metadata such as description and format. You can click the Info icon on a card to view additional asset properties. 
 
-Use the **Show Table** option to display results in a tabular format. Click **Show all results** to view the complete set of 20 retrieved assets in the right pane.
+Use the **Show Table** option to display results in a tabular format. Click **Show all results** to view the complete set of 20 retrieved assets in the right pane. You can also click the Download icon to download the list of 20 assets as a .ZIP file with a maximum size of 1.5 GB.
 
-Each result also includes key asset metadata such as the asset path, size, created date and the creator, modified date along with the user who modified the asset, format, and description. If an asset is in approved state, the results also include [Dynamic Media with OpenAPI URL](/help/assets/dynamic-media-open-apis-overview.md). You can click the asset path to seamlessly navigate to the asset location within AEM.
+Each result also includes key asset metadata such as the asset path, size, created date and the creator, modified date along with the user who modified the asset, format, download link, and description. If an asset is in approved state, the results also include [Dynamic Media with OpenAPI URL](/help/assets/dynamic-media-open-apis-overview.md). You can click the asset path to seamlessly navigate to the asset location within AEM.
 
 ![Search assets using content discovery agent](/help/ai-in-aem/agents/content-advisor/assets/search-results-content-discovery-agent.png)
 
