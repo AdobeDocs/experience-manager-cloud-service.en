@@ -255,7 +255,7 @@ Edge Authentication lets you restrict access to Edge Delivery Services pages to 
 
 If interested, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case and any questions you may have.
 
-#### OpenTelemetry for Application Performance Monitoring (APM) (Alpha program) {#apm-beta}
+#### OpenTelemetry for Application Performance Monitoring (APM) (Alpha program) {#apm-alpha}
 
 AEM as a Cloud Service now supports OpenTelemetry-based telemetry export, letting you monitor AEM alongside the rest of your systems in the APM tools your teams already use.
 
