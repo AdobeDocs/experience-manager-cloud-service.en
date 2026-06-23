@@ -34,7 +34,7 @@ Anytime a program is edited, including adding or removing a solution or add-on, 
 1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
 1. In the **Quick access** section, click **Experience Manager**.
 1. In the left side panel, click **Cloud Manager**.
-1. Select the appropriate organization.
+1. In Cloud Manager, select the appropriate organization.
 1. On the **My Programs** page, click the program that you want to edit.
 1. Near the upper-left corner of the page, click the program's name, then select **Edit program**.
 
@@ -170,7 +170,6 @@ Deleting a sandbox program removes all environments and pipelines associated wit
 1. In the **Quick access** section, click **Experience Manager**.
 1. In the left side panel, click **Cloud Manager**.
 1. Select the appropriate organization.
-
 1. On the **[My Programs](#my-programs)** page, click the sandbox program that you want to edit to show its details.
 
 1. Click your sandbox program's name in the upper-left of the page and select **Delete Program**.

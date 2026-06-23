@@ -8,9 +8,9 @@ exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
 
 # Create your first Edge Delivery site with one click{#about-one-click-edge-delivery-site}
 
-Creating your first Edge Delivery site with one click is designed to help you automate the onboarding and deployment of Edge Delivery sites within Cloud Manager. It greatly simplifies the process by having you click a single button. The single click provisions the required infrastructure, integrates with GitHub for version control, and configures your document and asset storage in Google Drive.
+Creating your first Edge Delivery site with one click is designed to help you automate the onboarding and deployment of Edge Delivery sites within Cloud Manager. It simplifies the process by providing a single button for provisioning. The single click provisions the required infrastructure, integrates with GitHub for version control, and configures your document and asset storage in Google Drive.
 
-This automation helps reduce the manual effort that is required to set up your initial site. It ensures seamless workflows, scalability, and improves the performance of your teams when it comes to managing content at the edge.
+This automation helps reduce the manual effort that is required to set up your initial site. It ensures seamless workflows, scalability, and improves the performance of your teams when managing content at the edge.
 
 >[!IMPORTANT]
 >
@@ -54,7 +54,7 @@ See also [Introduction to Edge Delivery Services in Cloud Manager](/help/impleme
 
 1. Click **Create site now**.
 
-    A toast appears near the top-center of the screen letting you know that Edge Delivery site provisioning has started.
+    A notification appears near the top-center of the screen letting you know that Edge Delivery site provisioning has started.
 
     When Cloud Manager completes site provisioning and validation, the **Site name** (the project name you entered earlier) appears in the **Edge Delivery sites** list box on the Edge Delivery page. A green dot also appears to the left of the **Verified** status column.
 
