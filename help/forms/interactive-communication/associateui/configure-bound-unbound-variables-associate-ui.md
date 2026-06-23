@@ -39,6 +39,7 @@ An unbound variable is created directly in a **Text** component and is not linke
 - The **Field** properties panel shows **Name**, **Value**, **Display type**, and **Binding**.
 - Under **Associate Properties**, you can configure **Tooltip** and **Validations**.
 
+
 ## Edit the whole Text component in the document preview
 
 Turn on **Allow Editing By Associate** on the **Text** component and leave it off for each bound and unbound variable inside the text. In Associate View, the associate selects the text block in the document preview. The entire **Text** component appears with a purple boundary and a formatting toolbar.
@@ -73,6 +74,7 @@ Turn on **Allow Editing By Associate** on the **Text** component and leave it of
    ![Edit whole Text component inline in Associate UI](/help/forms/interactive-communication/assets/bound-unbound-variable2.png)
 
 1. Optionally select **Print Preview** to confirm the generated output matches the preview.
+
 
 ## Edit individual variables in the data entry panel
 
@@ -125,6 +127,7 @@ Turn off **Allow Editing By Associate** on the **Text** component. Turn it on fo
 
 1. Optionally select **Print Preview** to confirm the generated output matches the preview.
 
+
 ## Duplicate variable names (bound and unbound)
 
 When bound and unbound variables with the same name appear in multiple locations on the design canvas, only one instance of each variable name appears in the left-hand data entry panel. The associate enters each value once; it propagates automatically to all corresponding occurrences in the document preview.
@@ -157,6 +160,7 @@ When bound and unbound variables with the same name appear in multiple locations
    ![Verify duplicate variable propagation in Associate UI](/help/forms/interactive-communication/assets/bound-unbound-variable8.png)
 
 1. Optionally select **Print Preview** to confirm the generated output matches the preview.
+
 
 ## Considerations
 

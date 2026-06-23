@@ -6,8 +6,8 @@ feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: ca9917c0-d8bb-4381-afab-7ab888d992e8
 ---
-# Versioning and Commenting in Interactive Communication Editor
 
+# Versioning and Commenting in Interactive Communication Editor
 
 Interactive Communications allow organizations to create dynamic, data-driven documents for personalized customer communication. To support better collaboration, governance, and controlled publishing workflows, the Interactive Communication Editor provides versioning, reviewing, and commenting capabilities.
 

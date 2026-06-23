@@ -38,6 +38,7 @@ When **Options Source** is not set to **Bind from Data**:
 - Authors add options manually through the **Properties** panel.
 - **Default Value** remains available — the form designer can explicitly select which option appears as the pre-selected value in the Associate UI.
 
+
 ## Configure dropdown options
 
 1. Open the interactive communication in the Interactive Communication Editor.
@@ -63,6 +64,7 @@ When **Options Source** is not set to **Bind from Data**:
 1. If using manual options, set **Default Value** as needed.
 
 1. Click **Save** and publish the interactive communication.
+
 
 ## Verify in Associate UI
 
