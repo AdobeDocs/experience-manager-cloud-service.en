@@ -18,7 +18,7 @@ The 2026.6.0 feature activation will provide the full feature set for this maint
 
 >[!NOTE]
 >
->Release 26773 has been made private. 
+>Release 26635 has been made private. 
 
 ### Enhancements {#enhancements-26773}
 
