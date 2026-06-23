@@ -40,7 +40,7 @@ Alternatively, access the [[!DNL Adobe Experience Manager (AEM) Assets Connector
 
 [Access [!UICONTROL Adobe Experience Manager (AEM) Assets Connector] panel](#access-aem-assets-connector) within your [!DNL Figma] design interface and do the following:
 
-1.  Search for assets in the [!UICONTROL Adobe Experience Manager (AEM) Assets Connector] panel. For more information, see [using Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
+1.  Search for assets in the [!UICONTROL Adobe Experience Manager (AEM) Assets Connector] panel. For more information, see [using Content Advisor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
 
 1. Drag and drop the asset to the canvas or select the asset and click **[!UICONTROL Select]** to bring the asset on the canvas.
 
