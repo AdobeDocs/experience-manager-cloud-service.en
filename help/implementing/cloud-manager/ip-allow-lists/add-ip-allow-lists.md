@@ -9,7 +9,7 @@ role: Admin, Developer
 
 # Add an IP Allow List {#add-ip-allow-list}
 
-Learn how to add your own IP Allow List using Cloud Manager.
+Configure your IP Allow List using Cloud Manager.
 
 To add an IP Allow List, a user in the **Business Owner** or **Deployment Manager** role can follow these steps.
 
@@ -22,7 +22,7 @@ To add an IP Allow List, a user in the **Business Owner** or **Deployment Manage
 
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select a program.
 
-1. From the **Program Overview** page, using the left side menu (if necessary, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) in the upper-left corner to see the menu), click ![Task list icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP Allow Lists**.
+1. From the **Program Overview** page, using the left navigation menu (if necessary, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) in the upper-left corner to see the menu), click ![Task list icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP Allow Lists**.
 
    ![IP Allow Lists option in the left side menu](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 
@@ -35,9 +35,9 @@ To add an IP Allow List, a user in the **Business Owner** or **Deployment Manage
 1. In the **IP address / CIDR** field, enter up to 50 IP addresses or CIDR blocks. You can add them in either of the following ways:
 
    * One at a time: Type an address, then press `Enter`. Repeat for each additional address.
-   * Multiple at once: Type addresses separated by commas (,) or tabs, then press `Enter` so that each address is processed individually.
+   * Multiple simultaneously: Type addresses separated by commas (,) or tabs, then press `Enter` to process each address.
 
-1. After you finish entering the last IP address or CIDR block, press `Enter` to confirm the input. The entry is acknowledged only after you press `Enter`, and the **Save** button becomes active.
+1. After you enter the last IP address or CIDR block, press `Enter` to confirm the input. The entry is acknowledged only after you press `Enter`, and the **Save** button becomes active.
 
 1. Click **Save**.
 
