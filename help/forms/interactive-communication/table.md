@@ -112,3 +112,4 @@ The Table Component in the IC editor is a flexible, data-friendly component desi
 - [Merge and Split Table Cells in Interactive Communication Editor](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md) — Learn how to combine adjacent cells into a single cell or split a merged cell to create flexible table layouts.
 - [Create Dynamic Table in Interactive Communication Editor](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
 - [Configure Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/configure-data-binding.md)
+

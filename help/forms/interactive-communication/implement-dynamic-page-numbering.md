@@ -66,3 +66,4 @@ Page 2 of 5
 - Automates page numbering without manual intervention.
 
 - Maintains consistency across all pages linked to a master page.
+

@@ -64,3 +64,4 @@ Authors can **drag and drop** these fragments directly onto the canvas. The refe
 - Use version control to manage updates across XDP and fragment dependencies.
 
 - Validate data bindings post-edit to confirm correct rendering.
+
