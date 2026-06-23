@@ -9,7 +9,7 @@ exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
 
 >[!IMPORTANT]
 >
->Understand why you must onboard your Edge Delivery Services site to Cloud Manager.
+>Understand why you must add your Edge Delivery Services site to Cloud Manager.
 >See [Benefits of using the Adobe recommended path for Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
 
 **To add an Edge Delivery site to Cloud Manager:**
