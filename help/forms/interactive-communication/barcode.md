@@ -150,3 +150,4 @@ The Barcode component in the Interactive Communication editor empowers document 
 
 - [Configure Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/configure-data-binding.md)
 - [Generate PDF Preview in Interactive Communication Editor](/help/forms/interactive-communication/generate-pdf-preview.md)
+

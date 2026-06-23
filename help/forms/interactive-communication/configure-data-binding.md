@@ -71,3 +71,4 @@ Authors typically select the FDM early in the project, visually map fields durin
 - **Secure sensitive data:** Apply masking, encryption, and least-privilege access for PII or payment details.
 
 By configuring Data Binding carefully, authors create a reliable bridge between design and data—accelerating communication authoring, ensuring accuracy, and delivering highly personalized experiences at scale.
+
