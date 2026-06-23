@@ -68,7 +68,7 @@ Once your Figma design is ready, you can [export the asset to the AEM Assets rep
 
 ### What does the AEM Assets integration with Figma allow designers to do? {#aem-assets-figma-integration-overview}
 
-The AEM Assets integration with Figma allows designers to directly access assets stored in Adobe Experience Manager from within the Figma user interface — without switching between tools. Designers can search for and import images, videos, animated files, and vectors from AEM Assets onto the Figma canvas, and export completed or edited designs back to the AEM Assets repository in supported formats. The integration is native, requiring no third-party connectors beyond the Adobe Experience Manager AEM Assets Connector available on the Figma community.
+The AEM Assets integration with Figma allows designers to directly access assets stored in Adobe Experience Manager from within the Figma user interface, without switching between tools. Designers can search for and import images, videos, animated files, and vectors from AEM Assets onto the Figma canvas, and export completed or edited designs back to the AEM Assets repository in supported formats. The integration is native, requiring no third-party connectors beyond the Adobe Experience Manager AEM Assets Connector available on the Figma community.
 
 ### What are the prerequisites for integrating AEM Assets with Figma? {#aem-assets-figma-prerequisites}
 
@@ -76,7 +76,7 @@ Integrating AEM Assets with Figma requires two prerequisites: a minimum AEM rele
 
 ### How do I access the Adobe Experience Manager AEM Assets Connector in Figma? {#access-aem-assets-connector-figma}
 
-The Adobe Experience Manager AEM Assets Connector is accessible in two ways from within Figma. From the Figma home page, click Actions in the toolbar at the bottom of the canvas, search for Adobe Experience Manager AEM Assets Connector in the dialog box, and select it to open the connector panel. Alternatively, access the connector directly from the Figma Community page, click Open in, select a recent file or create a new file, and click Run to launch the connector panel.
+The Adobe Experience Manager AEM Assets Connector is accessible in two ways from within Figma. From the Figma home page, click **Actions** in the toolbar at the bottom of the canvas, search for Adobe Experience Manager AEM Assets Connector in the dialog box, and select it to open the connector panel. Alternatively, access the connector directly from the Figma Community page, click **Open in**, select a recent file or create a new file, and click **Run** to launch the connector panel.
 
 ### What file formats can be imported from AEM Assets into Figma? {#aem-assets-figma-import-formats}
 
@@ -84,11 +84,11 @@ The following file formats are supported for importing AEM Assets into Figma: im
 
 ### How do I import an asset from AEM Assets into my Figma canvas? {#import-aem-assets-figma-canvas}
 
-To import an asset from AEM Assets into Figma, open the Adobe Experience Manager AEM Assets Connector panel within the Figma design interface. Search for the asset using the Asset Selector within the connector panel. Once the asset is located, drag and drop it onto the canvas or select the asset and click Select to place it on the canvas. To navigate folders within the repository, click the three-dot icon in the folder path to view and navigate parent and child folders in the current hierarchy.
+To import an asset from AEM Assets into Figma, open the Adobe Experience Manager AEM Assets Connector panel within the Figma design interface. Search for the asset using Content Advisor within the connector panel. Once the asset is located, drag and drop it onto the canvas or select the asset and click **Select** to place it on the canvas. To navigate folders within the repository, click the three-dot icon in the folder path to view and navigate parent and child folders in the current hierarchy.
 
 ### How do I check if AEM Assets used in my Figma document have been updated? {#check-aem-assets-updates-figma}
 
-The Adobe Experience Manager AEM Assets Connector in Figma includes a Check for Updates option that compares assets currently used in the open Figma document against their versions in AEM Assets. To use it, open the connector panel and click Check for Updates. Any assets that have been updated in AEM are listed in a separate window. Click Update to pull the latest version of each updated asset from AEM into the Figma document.
+The Adobe Experience Manager AEM Assets Connector in Figma includes a **Check for Updates** option that compares assets currently used in the open Figma document against their versions in AEM Assets. To use it, open the connector panel and click **Check for Updates**. Any assets that have been updated in AEM are listed in a separate window. Click **Update** to pull the latest version of each updated asset from AEM into the Figma document.
 
 ### What file formats are supported when exporting a Figma design to AEM Assets? {#figma-export-aem-assets-formats}
 
