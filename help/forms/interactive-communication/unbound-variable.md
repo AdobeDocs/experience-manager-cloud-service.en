@@ -149,3 +149,4 @@ You can place an Unbound Variable inside subforms, layout containers, or directl
 - [Date/Time Field Component](/help/forms/interactive-communication/date-time-field.md) — display pattern syntax for combined date and time values
 - [Use the Rule Editor in Interactive Communication Editor](/help/forms/interactive-communication/use-the-rule-editor.md) — write expressions to compute and assign values to Unbound Variables
 - [Configure Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/configure-data-binding.md)
+
