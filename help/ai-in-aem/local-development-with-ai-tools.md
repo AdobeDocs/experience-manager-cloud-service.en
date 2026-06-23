@@ -153,7 +153,7 @@ The dispatcher skill handles orchestration and advisory guidance. The Dispatcher
 
 **(Beta)** The `code-assessment` skill detects, reviews, and fixes code-quality and correctness issues in an AEM as a Cloud Service project entirely against your local workspace. Describe the issue and the skill routes the request to the appropriate expert skill.
 
-Supported checks include modernizing Sling Model dependency injection, updating outdated Maven dependencies, adding missing timeouts to outbound HTTP calls, and bounding unbounded queries, with more added over time. Depending on the issue, the skill either applies a mechanical fix directly or guides you through one that needs a judgment call.
+Supported checks include modernizing Sling Model dependency injection, updating outdated Maven dependencies, adding missing timeouts to outbound HTTP calls, and bounding unbounded queries, as well as best-practice patterns such as Sling schedulers, resource change listeners, the Replication and Assets APIs, and JCR or OSGi event handling, with more added over time. Depending on the issue, the skill either applies a mechanical fix directly or guides you through one that needs a judgment call.
 
 For a broad or first-time review, ask the skill to assess the whole project rather than naming a single check: it runs every detector, reports all findings, and applies code fixes one pattern at a time.
 
