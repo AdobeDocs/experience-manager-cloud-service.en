@@ -9,9 +9,6 @@ exl-id: 636e9699-a8db-4cb0-aa9f-0602939006df
 ---
 # Check Box Component in Interactive Communication Editor 
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 ## 1. Introduction 
 
@@ -114,3 +111,9 @@ Check boxes can be placed inside layout grids or panels and grouped together for
 - Use visibility rules when checkboxes are dependent on prior inputs or conditions. 
 
 The Check Box component in the Interactive Communication editor is a simple yet essential component for binary inputs. With support for styling, conditional presence, and flexible data binding, it plays a key role in enhancing interactivity and user control in smart digital forms. When implemented with thoughtful labels, consistent styling, and meaningful data integration, checkboxes contribute significantly to a smooth and intuitive form experience.
+
+## See also
+
+- [Radio Button Component](/help/forms/interactive-communication/radio-button.md)
+- [Configure Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/configure-data-binding.md)
+- [Use the Rule Editor in Interactive Communication Editor](/help/forms/interactive-communication/use-the-rule-editor.md)

@@ -9,9 +9,6 @@ exl-id: 0b41fd1a-737f-495f-89da-6cc2e002b424
 ---
 # Add Custom Fonts to Interactive Communication Editor
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 Custom font feature allows you to enhance the look and feel of your Interactive Communications by enabling the use of custom or organization-approved fonts. With this capability, you can package and embed fonts into your AEM Forms as a Cloud Service environment, ensuring consistent PDF rendering across devices and platforms.
 
