@@ -1052,6 +1052,10 @@ user-guide-title: AEM as a Cloud Service
      + [Create Interactive Communication Fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
      + {hide-from-toc} [Introduction to Interactive Communication](/help/forms/introduction-to-interactive-communication.md)
      + {hide-from-toc} [Create your First Interactive Communication](/help/forms/create-your-first-communication.md)
+   + Review and Collaborate {#review-collaborate}
+     + [Versioning and Commenting in Interactive Communication Editor](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
+     + [Review and Annotate an Interactive Communication](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md)
+     + [Compare Interactive Communication Versions](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md)
    + Component {#component}
      + [Text Box](/help/forms/interactive-communication/text-box.md)
      + [Image](/help/forms/interactive-communication/image.md)
@@ -1083,11 +1087,7 @@ user-guide-title: AEM as a Cloud Service
      + [Create Dynamic Table](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
      + [Merge and Split Table Cells](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md)
      + [Move a Component to the Master Page](/help/forms/interactive-communication/howto/move-component-to-master-page.md)
-   + Review and Collaborate {#review-collaborate}
-     + [Create Versions and Add Comments](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
-     + [Review and Annotate an Interactive Communication](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md)
-     + [Compare Interactive Communication Versions](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md)
-   + Associate UI {#associateui} 
+   + Associate UI {#associateui}
      + [Associate UI in Interactive Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
      + [Enable and configure Associate UI for Interactive Communications](/help/forms/interactive-communication/enable-configure-associate-ui.md)
      + [Integrate Associate UI in Your Application](/help/forms/interactive-communication/invoke-associate-ui.md)
