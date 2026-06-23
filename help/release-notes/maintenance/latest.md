@@ -10,27 +10,21 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 26773 {#release-26773}
+## Release X {#release-X}
 
-Summarized below are the continuous improvements for maintenance release 26773, which was publicly released on June 17, 2026. The previous maintenance release was release 26353.
+Summarized below are the continuous improvements for maintenance release X, which was publicly released on June 30, 2026. The previous maintenance release was release 26773.
 
 The 2026.6.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
->[!NOTE]
->
->Release 26635 has been made private. 
-
-### Enhancements {#enhancements-26773}
-
-* GRANITE-67251: Introduced `cqSiteSearch`, a new out-of-the-box index defined over the `cq:Searchable` mixin type. This allows fine-grained control over what content goes into the site index and provides full-fledged site search for AEM websites, including semantic search.
-* GRANITE-68099: Updated the embedded Apache Jackrabbit Oak to the latest public release (2.2.0).
-* SKYOPS-135241: Introduce aem prefix for immutable farm filters to avoid naming conflicts with customer-defined configurations.
-
-### Fixed Issues {#fixed-issues-26773}
+### Enhancements {#enhancements-X}
 
 None.
 
-#### AEM Guides {#guides-26773}
+### Fixed Issues {#fixed-issues-X}
+
+None.
+
+#### AEM Guides {#guides-X}
 
 * GUIDES-46275: Image dimensions specified with units such as `mm` are not rendered correctly, causing images to be displayed at their original size instead of the specified dimensions.
 * GUIDES-45800: Copying and pasting `<keywords>` inside `<topicmeta>` within a `<keydef>` or `<topicref>` results in the keywords being inserted inside unwanted foreign tags.
@@ -42,19 +36,19 @@ None.
 
 For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
 
-### Known Issues {#known-issues-26773}
+### Known Issues {#known-issues-X}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-26773}
+### Deprecated Features and APIs {#deprecated-X}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-26773}
+### Security Fixes {#security-X}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 10 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses X identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-26773}
+### Embedded Technologies {#embedded-tech-X}
 
 |Technology|Version|Link|
 |---|---|---|
