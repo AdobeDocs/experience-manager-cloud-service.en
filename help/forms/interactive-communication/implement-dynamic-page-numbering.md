@@ -9,9 +9,6 @@ exl-id: 9f29da7d-72ad-4737-9ae3-d5cdc4f5ed25
 ---
 # Dynamic Page Numbering in Interactive Communication Editor
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 ## Introduction
 

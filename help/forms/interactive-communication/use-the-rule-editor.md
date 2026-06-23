@@ -10,9 +10,6 @@ exl-id: 9538ae2e-e0f5-4e85-943e-00fe99a64725
 # Rule Editor in Interactive Communication Editor
 
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 
 ## 1. Introduction

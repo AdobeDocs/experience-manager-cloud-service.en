@@ -36,10 +36,8 @@ Before you start to deploy your code, configure your pipeline settings from the 
 
 **To add an Edge Delivery pipeline:**
 
-1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
-1. In the **Quick access** section, click **Experience Manager**.
-1. In the left side panel, click **Cloud Manager**.
-1. Select an organization that you want.
+{{sign-in-to-cloud-manager}}
+
 1. On the **My Programs** console, click a program. 
 
    ![My programs page in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/assets/my-programs.png)

@@ -97,6 +97,8 @@ Ready to start? The following articles provides detailed instructions to use the
 
 -->
 
+<!--
+
 ### Interactive Communications on Cloud
 
 Interactive Communications on Cloud is a powerful solution for creating, managing, and delivering data-driven interactive correspondences such as business correspondence, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
@@ -149,6 +151,8 @@ Automatically display "Page # of ##" on master pages for clear, consistent pagin
 * Managing the creation, assembly, and delivery of data-driven interactive correspondences
 
 Ready to start? The Interactive Communications editor is available under the Early Access program for Forms as a Cloud Service deployments. To request access, email your organization ID and program details to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address.
+
+-->
 
 ### AEM Forms Integration with Adobe Experience Platform (AEP)
 
