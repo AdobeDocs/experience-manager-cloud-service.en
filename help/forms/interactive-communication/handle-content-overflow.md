@@ -80,3 +80,4 @@ Authors manually resize the container to fit additional content.
 - Helps identify overflow quickly through visual indicators.
 
 - Enhances communication design flexibility for both layout types.
+

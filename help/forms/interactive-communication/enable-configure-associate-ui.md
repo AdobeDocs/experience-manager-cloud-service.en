@@ -84,3 +84,4 @@ After enabling Associate View and optionally configuring workflow:
 - [Associate UI in Interactive Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [Integrate Associate UI in Your Application](/help/forms/interactive-communication/invoke-associate-ui.md)
 - [Submission workflow for Associate UI — IC Generate PDF Output](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md) — how submission and workflow work, plus an example workflow that generates PDF from IC submissions.
+

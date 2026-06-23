@@ -106,3 +106,4 @@ The Rectangle component is a non-interactive yet powerful tool in the IC Editor.
 - [Line Component](/help/forms/interactive-communication/line.md)
 - [Image Component](/help/forms/interactive-communication/image.md)
 - [Handle Content Overflow in Interactive Communication Editor](/help/forms/interactive-communication/handle-content-overflow.md)
+
