@@ -153,9 +153,31 @@ The dispatcher skill handles orchestration and advisory guidance. The Dispatcher
 
 **(Beta)** The `code-assessment` skill detects, reviews, and fixes code-quality and correctness issues in an AEM as a Cloud Service project entirely against your local workspace. Describe the issue and the skill routes the request to the appropriate expert skill.
 
-Supported checks include modernizing Sling Model dependency injection, updating outdated Maven dependencies, adding missing timeouts to outbound HTTP calls, and bounding unbounded queries, as well as best-practice patterns such as Sling schedulers, resource change listeners, the Replication and Assets APIs, and JCR or OSGi event handling, with more added over time. Depending on the issue, the skill either applies a mechanical fix directly or guides you through one that needs a judgment call.
+Supported checks include modernizing Sling Model dependency injection, updating outdated Maven dependencies, adding missing timeouts to outbound HTTP calls, bounding unbounded queries, Sling schedulers, resource change listeners, the Replication and Assets APIs, and JCR or OSGi event handling, with more added over time. Depending on the issue, the skill either applies a mechanical fix directly or guides you through one that needs a judgment call.
 
-For a broad or first-time review, ask the skill to assess the whole project rather than naming a single check: it runs every detector, reports all findings, and applies code fixes one pattern at a time.
+For a broad or first-time review, ask the skill to assess the whole project: it runs every detector, reports all findings, and applies code fixes one pattern at a time.
+
+To get started, open a new agent chat in your AEM as a Cloud Service project.
+
+**1. Review your project.** Ask for a report. The skill runs its analyzer and returns the findings inline, grouped by pattern and severity, with a suggested remediation plan. No code is changed at this stage.
+
+```
+scan my AEM project and report any code-quality issues
+```
+
+For a more explicit invocation, name the skill directly:
+
+```
+/code-assessment review my code for AEM as a Cloud Service issues
+```
+
+**2. Apply fixes, one pattern at a time.** Ask the skill to fix a specific pattern. It makes surgical edits and verifies they compile. Mechanical fixes apply directly; guided ones walk you through each decision.
+
+```
+apply unbounded-query
+```
+
+It never commits or pushes — you review the diff and commit. Large fixes run in resumable batches; reply `apply <pattern>` to continue.
 
 ## AEM Quickstart MCP Server {#aem-quickstart-mcp-server}
 
