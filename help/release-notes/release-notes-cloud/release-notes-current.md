@@ -85,6 +85,12 @@ See [Cloud Manager beta programs](/help/implementing/cloud-manager/release-notes
 
 See [AEM Assets beta programs](#assets-beta-program-features).
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### Visual Content Fragments {#visual-content-fragments}
+
+AEM now supports [Visual Content Fragments](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md), which render Content Fragment output as formatted HTML experiences using attached HTML templates. This enables content authors to preview and validate structured content in its final visual form before publication, and to deliver modular experiences consistently across channels — including web, email, and Edge Delivery Services. A built-in generic template is available for basic quality assurance without requiring a custom template.
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 **Edit PSD files in Adobe Express Embedded Editor**
