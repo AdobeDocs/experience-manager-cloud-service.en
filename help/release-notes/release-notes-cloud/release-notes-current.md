@@ -178,6 +178,11 @@ The Development Agent's [pipeline troubleshooting job](/help/ai-in-aem/agents/br
 
 * Experience Hub Widget for failed pipelines - IT roles will see a new widget highlighting pipeline failures. A clickable button initiates the pipeline troubleshooting job in AI Assistant.
 
+#### Manage Quiet Hours and Update Free Periods with AI Assistant {#quiet-hours-ai}
+
+You can now view, create, and edit [Quiet Hours and Update Free Periods](/help/ai-in-aem/agents/brand-experience/development/development.md#control-updates-job) directly through the AEM AI Assistant.
+The key benefit is fewer scheduling errors. As you make a request, the assistant guides you through what is possible and flags the limits that apply, such as the three-period cap, the mandatory one-week gap between periods, and the planned maintenance exclusion windows you cannot schedule over. So instead of discovering a constraint after a failed configuration, Business Owners and Deployment Managers are steered to a valid schedule in the same conversation. This protects critical business windows from automatic maintenance updates while reducing back-and-forth and misconfiguration.
+
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
 #### IMS Authentication Rich Errors {#ims-auth-rich-errors}
@@ -247,12 +252,6 @@ Snapshots for Rapid Development Environments (RDEs) is now in public beta so you
 RDEs now support a feature [to take a snapshot](/help/implementing/developing/introduction/rapid-development-environments.md#snapshots) of the current state of code and content, which can be restored at a later time. This can be useful when syncing code that may need to be reverted, or when switching between development of different features. It's also possible to restore just the mutable content as a known starting point for testing.
 
 *By using the RDE Snapshots Beta, you acknowledge that it is still in development and that you should not rely on the correct functioning of the technology or availability of data. While we have tested this feature extensively, there is a small possibility that your RDE could become unstable. If this occurs, a reset will restore it to a working state.*
-
-
-#### Manage Quiet Hours and Update Free Periods with the AEM AI Assistant (Limited Availability) {#quiet-hours-ai}
-
-You can now view, create, and edit Quiet Hours and Update Free Periods directly through the AEM AI Assistant.
-The key benefit is fewer scheduling errors. As you make a request, the assistant guides you through what is possible and flags the limits that apply, such as the three-period cap, the mandatory one-week gap between periods, and the planned maintenance exclusion windows you cannot schedule over. So instead of discovering a constraint after a failed configuration, Business Owners and Deployment Managers are steered to a valid schedule in the same conversation. This protects critical business windows from automatic maintenance updates while reducing back-and-forth and misconfiguration.
 
 #### Replication AI Troubleshooting (Beta Program) {#replication-ai-troubleshooting-beta}
 
