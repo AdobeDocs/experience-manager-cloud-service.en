@@ -95,7 +95,7 @@ To access this agent, please refer to the [release notes](/help/release-notes/re
 
 [Follow along a tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/agents/development-agent-troubleshoot-ci-cd-pipeline) to learn how to use the Development Agent to troubleshoot pipeline failures.
 
-### Access the Development Agent through Cloud Manager {#how-to-access-the-agent}
+### Access the Development Agent Through Cloud Manager {#how-to-access-the-agent}
 
 You access the Development Agent through the AI Assistant found in user interfaces including Cloud Manager or Experience Hub.
 
@@ -147,6 +147,20 @@ When a pipeline execution fails, Cloud Manager also surfaces a **Troubleshoot wi
 1. Click **Troubleshoot with AI**.
 
     The AI Assistant panel opens on the right side of the screen. The assistant automatically references the failed pipeline execution and begins its analysis, identifying the failing step and suggesting a fix you can apply manually.
+
+1. Review the response and, if needed, continue the conversation in the **AI Assistant** text box to ask follow-up questions or request more detail.
+
+#### Troubleshoot from the Experience Home Failed Pipelines widget {#troubleshoot-from-experience-home}
+
+Experience Home includes a **Failed Pipelines** widget that gives you an at-a-glance view of pipeline failures across your programs without requiring you to navigate into Cloud Manager first. Each row in the widget represents a failed pipeline and shows the pipeline name, last run date and time, duration, and the step that failed. A **Troubleshoot with AI** button is available inline for each entry.
+
+![The Failed Pipelines widget on the Experience Home page, showing a failed pipeline entry with a Troubleshoot with AI button](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-failed-pipelines-widget.png)
+
+1. Open [Experience Home](https://experience.adobe.com) and scroll to the **Failed Pipelines** widget.
+
+1. Locate the pipeline you want to investigate, then click **Troubleshoot with AI** in that row.
+
+    The AI Assistant panel opens with the failed pipeline execution pre-loaded as context. The assistant begins its analysis automatically, identifying the root cause and suggesting a fix.
 
 1. Review the response and, if needed, continue the conversation in the **AI Assistant** text box to ask follow-up questions or request more detail.
 
