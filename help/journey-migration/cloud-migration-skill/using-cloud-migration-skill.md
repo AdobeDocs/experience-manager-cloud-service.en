@@ -15,7 +15,7 @@ Every migration session follows this sequence:
 
 1. **Name the pattern**: specify one pattern (for example, `scheduler`)
 2. **Provide findings**: from a BPA CSV file, CAM via MCP, or specific file paths
-3. **Agent reads transformation rules**: the skill reads the relevant code-assessment module before making any code changes
+3. **Agent reads transformation rules**: the skill reads the relevant transformation rules from the companion `code-assessment` skill before making any code changes
 4. **First batch of five**: the agent transforms up to five findings and reports what it changed
 5. **You review and continue**: after reviewing each batch, reply `continue` to proceed to the next
 
