@@ -22,7 +22,7 @@ A user must have the **[Deployment Manager](/help/onboarding/cloud-manager-intro
 
 After you set up a program and create at least one environment in the Cloud Manager UI, you can add non-production pipelines. Use these pipelines to test code quality before you deploy to production environments.
 
-**To add a new non-productoin pipeline:**
+**To add a new non-production pipeline:**
 
 {{sign-in-to-cloud-manager}}
 
@@ -48,13 +48,13 @@ After you set up a program and create at least one environment in the Cloud Mana
 1. Select the **Important Metric Failures Behavior** that you want to use.
 
    * **Ask every time** - This behavior is the default setting and requires manual intervention on any important failure.
-   * **Fail Immediately** - If selected, the pipeline is canceled whenever an important failure occurs. It essentially emulates a user manually rejecting each failure.
-   * **Continue Immediately** - If selected, the pipeline procedes automatically whenever an important failure occurs. It essentially emulates a user manually approving each failure.
+   * **Fail Immediately** - If selected, the pipeline is canceled whenever an important failure occurs. It emulates a user manually rejecting each failure.
+   * **Continue Immediately** - If selected, the pipeline proceeds automatically whenever an important failure occurs. It emulates a user manually approving each failure.
 
 1. Click **Continue**.
 
 1. The remaining steps that you use to complete the configuration of your non-production pipeline depend on the type of source code you choose to use.
-On the **Source Code** tab of the **Add Non-Production Pipeline** dialog box, select which type of code the non-production pipeline should process.
+On the **Source Code** tab of the **Add Non-Production Pipeline** dialog box, select the type of code the non-production pipeline processes.
 
    * **[I am using Full Stack Code](#full-stack-code)**
    * **[I am using Targeted deployment](#targeted-deployment)**
@@ -74,14 +74,14 @@ To finish the configuration of the full-stack code non-production pipeline, do t
 
 1. In the **Source Code** section, define the following options.
 
-    * **Eligible Deployment Environments** - Available only when you edit a non-production pipeline. If your pipeline is a deployment pipeline, you must select to which environments it should deploy.
+    * **Eligible Deployment Environments** - Available only when you edit a non-production pipeline. If your pipeline is a deployment pipeline, select the environments to which it deploys.
     * **Repository** - From the drop-down list, choose the Git repository that the pipeline uses as its source. Cloud Manager builds code from the repository that you choose here.
 
       >[!TIP]
       > 
       >See [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md) so you can learn how to add and manage repositories in Cloud Manager.
 
-    * **Git Branch** - From the drop-down list, choose which branch in the selected repository the pipeline should build from. The default is `main`. The pipeline uses the chosen branch as the source for build and deployment. If necessary, click **Refresh** to update the list of available branches for the selected repository. Use this option if a recently created branch does not appear in the list.
+    * **Git Branch** - From the drop-down list, choose the branch in the selected repository the pipeline builds from. The default is `main`. The pipeline uses the chosen branch as the source for build and deployment. If necessary, click **Refresh** to update the list of available branches for the selected repository. Use this option if a recently created branch does not appear in the list.
     * **Build Strategy**
       * **Full Build** - Builds all modules in the repository every time
       * BETA **Smart Build** - Builds only modules that have changed since the last commit.<br>Learn more about [using Smart Build in a non-production pipeline](#about-smart-build-non-production-pipeline).
@@ -103,8 +103,7 @@ To finish the configuration of the full-stack code non-production pipeline, do t
 
 1. Click **Save**.
 
-The pipeline is saved and you can now [manage your pipelines](managing-pipe
-lines.md) on the **Pipelines** card on the **Program Overview** page.
+The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
 
 ### I am using Targeted deployment {#targeted-deployment}
 
@@ -124,7 +123,7 @@ A targeted deployment deploys code only for selected parts of your AEM applicati
 * **Front End Code** - Configure JavaScript and CSS for the front end of your AEM application.
   * With front-end pipelines, more independence is given to front-end developers and the development process can be accelerated.
   * See the document [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) for how this process works along with some considerations to be aware of to get the full potential out of this process.
-* **Web Tier Config** - Configure Dispatcher properties to store, process, and delivery web pages to the client.
+* **Web Tier Config** - Configure Dispatcher properties to store, process, and deliver web pages to the client.
   * See the document [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) for more details.
   * If a web-tier code pipeline exists for the selected environment, this selection is disabled.
   * If a full-stack pipeline already deploys to an environment, you can still create a web-tier configuration pipeline for that same environment. When you do, Cloud Manager ignores the web-tier configuration in the full-stack pipeline.
@@ -147,14 +146,14 @@ The steps to complete the creation of your non-production, targeted deployment p
 
 1. Under the **Source Code** section, define the following options:
 
-   * **Repository** - This option defines from which GIT repository that the non-production pipeline should retrieve the code.
+   * **Repository** - This option defines the GIT repository from which the non-production pipeline retrieves the code.
 
       >[!TIP]
       > 
       >See [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md) so you can learn how to add and manage repositories in Cloud Manager.
 
-   * **Git Branch** - This option defines from which branch in the selected pipeline should retrieve the code. Enter the first few characters of the branch name and the auto-complete feature of this field. It finds the matching branches that you can select.
-   * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
+   * **Git Branch** - This option defines the branch from which the selected pipeline retrieves the code. Enter the first few characters of the branch name and use the auto-complete feature of this field. It finds the matching branches that you can select.
+   * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline retrieves the code.
 
 <!--
    * **Pipeline** - For front-end non-production pipelines, you have the option to enable **[Experience Audit](/help/implementing/cloud-manager/reports/report-experience-audit.md)**.
@@ -162,7 +161,7 @@ The steps to complete the creation of your non-production, targeted deployment p
    ![Config pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 -->
 
-1. If you enabled Experience Audit, click **Continue** to advance to the **Experience Audit** tab where you can define the paths that should always be included in the Experience Audit.
+1. If you enabled Experience Audit, click **Continue** to advance to the **Experience Audit** tab. Define the paths that are always included in the Experience Audit.
 
    * If you enabled **Experience Audit**, see the document [Experience Audit](/help/implementing/cloud-manager/reports/report-experience-audit.md) for details on how to configure.
    * If you did not, skip this step.
@@ -204,7 +203,7 @@ The performance gain from using Smart Build depends on several factors including
 * The frequency and scope of code changes.
 * The distribution of dependencies across modules.
 
-Generally, projects with many independent modules can see the greatest improvement.
+Projects with many independent modules see the greatest improvement.
 
 ### Per-module cache opt-out{#smart-build-cache-optout}
 
@@ -224,15 +223,15 @@ You can add the following property to the affected module's `pom.xml`:
 </properties>
 ```
 
-This syntax forces the module to rebuild on every pipeline execution while other modules continue to benefit from caching.
+This configuration requires the module to rebuild on every pipeline execution while other modules continue to benefit from caching.
 
 ### Limitations and considerations when using Smart Build{#smart-build-limitations}
 
 Keep the following in mind when you use Smart Build:
 
 * Smart Build relies on Maven dependency analysis.
-* Changes outside the dependency graph may not trigger rebuilds.
-* Some plug-ins may not be fully compatible with caching.
+* Changes outside the dependency graph do not trigger rebuilds.
+* Some plug-ins are not fully compatible with caching.
 * You can switch back to **Full Build** at any time by editing the non-production pipeline.
 
 If you encounter unexpected build behavior, consider disabling caching for specific modules or temporarily switching your build strategy to **Full Build**.
@@ -245,7 +244,7 @@ If you encounter unexpected build behavior, consider disabling caching for speci
    | No performance improvement | &bull; Ensure that multiple runs have occurred (cache warm-up).<br>&bull; Check if most modules are changing frequently.  |
    | Unexpected artifacts or missing changes | &bull; Review whether changes are outside Maven dependency tracking.<br>&bull; Use **Full Build** for verification. |
 
-See [Add a non-production pipeline](#adding-non-production-pipeline) to enable Smart Build.
+See [Add a non-production pipeline](#add-non-production-pipeline) to enable Smart Build.
 
 
 
@@ -342,9 +341,9 @@ The pipeline is saved and you can now [manage your pipelines](managing-pipelines
 
 ## Exclude Dispatcher packages {#exclude-dispatcher-packages}
 
-If you want Dispatcher packages built in your pipeline but not uploaded to build storage, disable publishing. Doing so can shorten the pipeline's run time.
+If you want Dispatcher packages built in your pipeline but not uploaded to build storage, disable publishing. This configuration can shorten the pipeline's run time.
 
-Add the following configuration to your project `pom.xml` file to disable publishing Dispatcher packages. Set an environment variable in the Cloud Manager build container to flag when to ignore Dispatcher packages. The pipeline reads this flag and ignores them accordingly.
+To disable publishing Dispatcher packages, add the following configuration to your project `pom.xml` file. Set an environment variable in the Cloud Manager build container to flag when to ignore Dispatcher packages. The pipeline reads this flag and ignores them accordingly.
 
 ```xml
 <profile>
