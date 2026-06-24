@@ -176,7 +176,7 @@ The Development Agent's [pipeline troubleshooting job](/help/ai-in-aem/agents/br
 
 * Support for Web Tier Config Pipeline - In addition to supporting Full Stack pipelines (Deployment and Code Quality), the Development Agent now supports troubleshooting for the **Web Tier Config Pipeline**
 
-* Experience Hub Widget for failed pipelines - IT roles will see a new widget highlighting pipeline failures. A clickable button initates the pipeline troubleshooting job in AI Assistant.
+* Experience Hub Widget for failed pipelines - IT roles will see a new widget highlighting pipeline failures. A clickable button initiates the pipeline troubleshooting job in AI Assistant.
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
