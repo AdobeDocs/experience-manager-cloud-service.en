@@ -78,7 +78,7 @@ So instead of discovering a constraint after a failed configuration, Business Ow
 
 
 
-## Pipeline Troubleshooting Job  {#cloud-manager-pipeline-troubleshooting}
+## Pipeline Troubleshooting Job {#cloud-manager-pipeline-troubleshooting}
 
 This job can retrieve pipeline statuses and help you troubleshoot failing build steps by suggesting fixes, saving time when debugging AEM as a Cloud Service deployments to development, stage, and production environments. It examines build logs and related code to recommend a fix that you can apply manually. 
 
@@ -99,13 +99,13 @@ To access this agent, please refer to the [release notes](/help/release-notes/re
 
 You access the Development Agent through the AI Assistant found in user interfaces including Cloud Manager or Experience Hub.
 
-1. To get started, click [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home) to open its home page.
+1. To get started, click [Adobe Experience Cloud](https://experience.adobe.com) to open its home page.
 
     ![Adobe Experience Cloud home page](/help/implementing/cloud-manager/assets/experience-cloud-experiencemanager.png)
 
 1. In the left rail, under the **Services** heading, click **Cloud Manager**.
 
-    ![The drop-down list showing the Content Author preset is selected](/help/implementing/cloud-manager/assets/experience-hub-role-selection.png)
+    ![The Experience Hub left rail showing Cloud Manager listed under the Services heading](/help/implementing/cloud-manager/assets/experience-hub-role-selection.png)
 
     >[!IMPORTANT]
     >
@@ -182,8 +182,6 @@ The pipeline troubleshooting job requires either the Cloud Manager - Developer r
 Pipeline troubleshooting operates on the Build & Unit Testing step and Code Scanning step in Full Stack Deployment and Code Quality pipelines. It also supports [web tier config pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines). 
 
 For other pipeline types and steps, debug failures by downloading and inspecting the logs. See [Access and Download Logs](/help/implementing/cloud-manager/manage-logs.md) for more information.
-
-
 
 ## Replication Troubleshooting Job (Beta) {#replication-troubleshooting-job}
 
