@@ -156,7 +156,7 @@ Experience Home includes a **Failed Pipelines** widget that gives you an at-a-gl
 
 ![The Failed Pipelines widget on the Experience Home page, showing a failed pipeline entry with a Troubleshoot with AI button](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-failed-pipelines-widget.png)
 
-1. Open [Experience Home](https://experience.adobe.com) and scroll to the **Failed Pipelines** widget.
+1. Open [Experience Home](https://experience.adobe.com), click on **Experience Manager** and scroll to the **Failed Pipelines** widget.
 
 1. Locate the pipeline you want to investigate, then click **Troubleshoot with AI** in that row.
 
