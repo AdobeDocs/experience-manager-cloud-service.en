@@ -226,6 +226,25 @@ The Dispatcher local MCP server is now included in the **AEM SDK** in the [Softw
 
 The Dispatcher local MCP server enables AI tools to validate Dispatcher and Apache HTTPD configuration, trace request handling, and inspect cache behavior against a Dispatcher instance running locally in Docker.
 
+#### Preparing for Java 25: AEM Cloud Service Runtime Upgrade Timeline
+
+Java 25 is the next long-term support (LTS) release after Java 21, delivering improvements across performance, developer productivity, and security:
+
+- **Performance** — Reduced memory footprint, more efficient garbage collection, and faster JVM warm-up benefit cloud-native deployments.
+- **Developer productivity** — Cleaner object initialization, more expressive pattern matching, and simplified concurrent task management reduce boilerplate and improve code clarity.
+- **Security** — Modernized cryptographic key derivation API to simplify common security workflows.
+
+To help organizations plan testing and validation ahead of the necessary Java 25 runtime upgrade, Adobe is providing the following target dates. Any updates to this timeline will be communicated via release notes.
+
+| Timeframe | Milestone |
+|---|---|
+| **Mid-October 2026** | AEM Cloud Service SDK supports Java 25 runtime. The Java 25 JDK is available for download from the Adobe Software Distribution portal. |
+| **November 2026** | Customers are encouraged to optionally enable the Java 25 runtime in their Cloud environments to validate behavior. Early adoption maximizes time to surface and resolve issues. |
+| **February – May 2027** | Adobe will gradually migrate lower environments (RDE, Dev) to the Java 25 runtime. Customers should validate behavior and report unexpected issues, and are encouraged to enable staging and production environments as well. A temporary rollback to Java 21 is available while resolving any problems. |
+| **June 2027** | All environment runtimes (including staging and production) migrate to Java 25. Java 21 runtime is decommissioned. The AEM Cloud Service SDK will no longer support Java 21. |
+
+AEM Cloud Service continues to support compiling customer code with Java 11, Java 17, and Java 21. However, Adobe recommends building with Java 25 to take full advantage of the latest language features and performance improvements.
+
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Features {#foundation-early-adopter}
 
 #### AEM Edge Functions (*Public Beta* Program) {#edge-functions}
