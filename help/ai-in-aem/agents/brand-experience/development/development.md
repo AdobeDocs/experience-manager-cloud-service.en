@@ -136,6 +136,20 @@ You access the Development Agent through the AI Assistant found in user interfac
 
     ![AI Assistant prompt and resulting response](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-prompt-response.png)
 
+#### Troubleshoot directly from a failed pipeline execution {#troubleshoot-with-ai-button}
+
+When a pipeline execution fails, Cloud Manager also surfaces a **Troubleshoot with AI** button directly on the pipeline execution page. This is the fastest way to start a troubleshooting session because the failed execution is automatically passed as context to the AI Assistant — no manual prompt entry is required.
+
+1. In Cloud Manager, open the failed pipeline execution. The status banner displays **Failed** and the **Troubleshoot with AI** button appears near the upper-right corner of the page.
+
+    ![Failed pipeline execution page showing the Troubleshoot with AI button and the AI Assistant panel with a pre-loaded analysis](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-troubleshoot-button.png)
+
+1. Click **Troubleshoot with AI**.
+
+    The AI Assistant panel opens on the right side of the screen. The assistant automatically references the failed pipeline execution and begins its analysis, identifying the failing step and suggesting a fix you can apply manually.
+
+1. Review the response and, if needed, continue the conversation in the **AI Assistant** text box to ask follow-up questions or request more detail.
+
 ### Permissions {#permissions}
 
 The pipeline troubleshooting job requires either the Cloud Manager - Developer role or the Cloud Manager - Program Manager role.
