@@ -17,7 +17,7 @@ Fulfill these requirements before adding a custom domain name in Cloud Manager.
 
 * You must have added a domain SSL certificate for the domain you want to add *before* adding a custom domain name as described in the document [Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 * You must have the **Business Owner** or **Deployment Manager** role to add a custom domain name in Cloud Manager.
-* Use the Fastly or other CDN (Content Delivery Network).
+* Use Fastly or another CDN (Content Delivery Network).
 
 >[!IMPORTANT]
 >
@@ -69,7 +69,7 @@ See also [Adobe Managed CDN](https://www.aem.live/docs/byo-cdn-adobe-managed) fo
 1. In the **Verify domain** dialog box, based on the certificate type you selected, do one of the following:
 
    | If you selected the certificate type | Description |
-   | --- | ---  |
+   | --- | --- |
    | Adobe managed certificate |a. Complete the [Adobe managed certificate steps](#adobe-managed-cert-steps) below. When you complete the steps, in the **Verify domain** dialog box, click **Verify**.<ul><li>DNS verification can take a few hours to process because of DNS propagation delays.</li><li>Cloud Manager eventually verifies domain name ownership and updates the status in the **Domain Settings** table. See [Check custom domain name status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) for more details.</li>![Verify domain status](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. You are now ready to [add an Adobe managed (DV) SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert).</li></ul> |
    | Customer managed certificate | a. Click **OK**.<br>b. You are now ready to [add a customer managed (OV/EV) SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert).<br>After you add the certificate, your domain name is marked as verified in the **Domain Settings** table. See [Check custom domain name status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) for more details.</li></ul><br>![Verify domain for a customer managed EV/OV certificate](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
 
@@ -86,7 +86,7 @@ If you selected the certificate type *Adobe managed certificate*, complete the f
 
 To verify the domain in use, you are required to add and verify a CNAME. 
 
-A `CNAME` record type or an `A` record type, once provisioned, routes all Internet traffic for the domain to wherever it is pointing. If that location is not provisioned to serve the traffic, there is an outage. If it has not been tested, there may be errors in the content. This reason is why this step is always done after testing is complete and you are ready to go live.
+A `CNAME` record type or an `A` record type, once provisioned, routes all Internet traffic for the domain to wherever it is pointing. If that location is not provisioned to serve the traffic, there is an outage. If it has not been tested, errors in the content can occur. This verification is why this step is always done after testing is complete and you are ready to go live.
 
 To configure these settings, determine if a `CNAME` or apex record must be configured to point your custom domain name to the Cloud Manager domain name. The following sections of this document can help you determine which type of record is appropriate for your DNS configuration.
 
@@ -99,7 +99,7 @@ To configure these settings, determine if a `CNAME` or apex record must be confi
 
 >[!WARNING]
 >
->The "register before you advertise" principle applies here. That is, configure DNS should only be performed *after* you have added the domain mapping successfully. Doing so ensures that Cloud Manager recognizes and validates that the domain exists in its own configuration before it can respond to requests for it. It also avoids any domain takeover attempts.
+>The "register before you advertise" principle applies here. That is, configuring DNS should only be performed *after* you have added the domain mapping successfully. Doing so ensures that Cloud Manager recognizes and validates that the domain exists in its own configuration before it can respond to requests for it. It also avoids any domain takeover attempts.
 
 Be sure you fulfill the following requirements *before* you configure your DNS records:
 
@@ -113,7 +113,7 @@ A canonical name or CNAME record is a type of DNS record that maps an alias name
 
 Log in to your DNS service provider and create a `CNAME` record to point your custom domain name to the target such as in the following table.
 
-| CNAME | Custom domain dame point to target|
+| CNAME | Custom domain name point to target |
 | --- | --- |
 | `www.customdomain.com` | `cdn.adobeaemcloud.com` |
 

@@ -29,7 +29,7 @@ By clicking ![Ellipsis - More icon](https://spectrum.adobe.com/static/icons/work
 At the bottom of the list of pipelines, you have the following general options:
 
 * **Add** - To [add a new production pipeline](configuring-production-pipelines.md) or [add a new non-production pipeline](configuring-non-production-pipelines.md)
-* **Show All** - Takes the user to the Pipelines screen to view all pipelines in a more detailed table.
+* **Show All** - To view all pipelines in a more detailed table, go to the Pipelines screen.
 * **Access Repo Info** - Displays the information necessary to access the Cloud Manager git repository
 * **Learn More** - Navigates to CI/CD pipeline documentation resources.
 
@@ -43,7 +43,7 @@ The **Pipelines** page shows a complete list of all pipelines for the selected p
 
 1. From the **Program Overview** page, click ![Pipeline tab - Workflow icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Pipelines** tab.
 
-1. On the **Pipelines** page, you can see a list of all pipelines for the program and start and stop pipeline execution as you would in the **Pipelines Card**.
+1. On the **Pipelines** page, view a list of all pipelines for the program and start and stop pipeline execution as you do in the **Pipelines Card**.
 
 If a pipeline is executing, click ![Info - medium icon](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg) in the **Status** column to display a pop-up with details about the execution. Within the pop-up, click **View details** to see the [details of the pipeline execution](#view-details).
 
@@ -69,7 +69,7 @@ You can mark specific pipelines as favorites so they appear at the top of the li
 
 ## Activity page {#activity}
 
-The **Activity** page shows a complete list of all pipelines executions for the selected program and other important program events.
+The **Activity** page shows a complete list of all pipeline executions for the selected program and other important program events.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
@@ -93,7 +93,7 @@ You can also click ![Ellipsis - More icon](https://spectrum.adobe.com/static/ico
 
 1. Navigate to the **Pipelines** card from the **Program Overview** page.
 
-1. Click ![Ellipsis - More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the pipeline that you run.
+1. Click ![Ellipsis - More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the pipeline that you want to run.
 
 1. From the drop-down menu, click ![Run - Play icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PlayCircle_18_N.svg) **Run**.
 
@@ -101,22 +101,22 @@ You can also click ![Ellipsis - More icon](https://spectrum.adobe.com/static/ico
 
 You can see the details of the run by clicking ![Ellipsis - More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) again and clicking **[View details](#view-details)**.
 
-Depending on the type of pipeline, you may be able to cancel the run by clicking ![Ellipsis - More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) again and clicking **Cancel**.
+Depending on the type of pipeline, cancel the run by clicking ![Ellipsis - More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) again and clicking **Cancel**.
 
 ## Run multiple pipelines {#run-multiple-pipelines}
 
-With Cloud Manager you can run multiple pipelines simultaneously, improving deployment efficiency for AEM as a Cloud Service customers. The **Run selected** feature lets you select multiple pipelines and trigger them to run at once. It reduces the manual effort of having to run pipelines individually and optimizes build and deployment workflows.  
+With Cloud Manager you can run multiple pipelines simultaneously, improving deployment efficiency for AEM as a Cloud Service customers. The **Run selected** feature lets you select multiple pipelines and trigger them to run at once. It reduces the manual effort of running pipelines individually and optimizes build and deployment workflows.  
 
 **To run multiple pipelines:** 
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 1. From the left side menu, click ![Workflow icon ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Pipelines**.
 1. In the table on the **Pipeline** page, select the checkboxes next to the pipelines you want to run.
-    If necessary, click ![Filter icon, funnel](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **Filters** to sort pipelines by name, or environment, or deployed code type, or a combination of all three.
+    If necessary, click ![Filter icon, funnel](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **Filters** to sort pipelines by name, environment, or deployed code type, or a combination of all three.
 1. Near the upper-right corner of the page, click **Run selected (x)**.  
 1. In the **Run selected pipelines (x)** dialog box, click **Run (x)**.
 
-    The **Run** button reflects the number of pipelines that can proceed. For example, you may have select four pipelines but one is already running. Or, an environment linked to a selected pipeline no longer exists. In such cases, the system adjusts accordingly. The button updates to "Run (3)" to indicate that three pipelines can proceed.
+    The **Run** button reflects the number of pipelines that can proceed. For example, you have selected four pipelines but one is already running. Or, an environment linked to a selected pipeline no longer exists. In such cases, the system adjusts accordingly. The button updates to "Run (3)" to indicate that three pipelines can proceed.
 
 1. Pipelines begin running, and their status is updated in the **Pipelines** list.
 
@@ -152,20 +152,20 @@ You can delete a pipeline if it is not running.
 
 1. Navigate to the **Pipelines** card from the **Program Overview** page.
 
-1. Click ![Ellipsis - More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the pipeline that you run.
+1. Click ![Ellipsis - More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the pipeline that you want to run.
 
 1. From the drop-down menu, click **Delete**.
 
 
 ## View last run details of a pipeline {#view-details}
 
-You can check the details of a pipeline to view the status and logs from its most recent run. However, you can only access the details if the pipeline is currently running or has been executed at least once.
+To view the status and logs from its most recent run, check the details of a pipeline. However, you can only access the details if the pipeline is currently running or has been executed at least once.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
 1. Navigate to the **Pipelines** card from the **Program Overview** page.
 
-1. From the drop-down menu, click ![Ellipsis - More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the pipeline that you run.
+1. From the drop-down menu, click ![Ellipsis - More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the pipeline that you want to run.
 
 1. From the drop-down menu, click **View last execution**.
 
@@ -189,7 +189,7 @@ You can check the details of a pipeline to view the status and logs from its mos
 
    ![Code quality issues](assets/managing-pipelines-code-quality-issues.png)
 
-   The CSV file includes a **Project File Location** column, showing the path to the problematic code relative to the project. In contrast, the **File Location** column reflects the Maven-generated path.
+   The CSV file includes a **Project File Location** column, showing the path to the code with issues relative to the project. The **File Location** column reflects the Maven-generated path.
 
    ![Project code scan issue details](assets/managing-pipelines-code-quality-details.png)
 

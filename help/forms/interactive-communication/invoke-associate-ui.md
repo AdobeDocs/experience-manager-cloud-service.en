@@ -9,7 +9,6 @@ exl-id: f946ccea-86d0-4086-8208-9583b8206244
 ---
 # Integrate Associate UI in Your Application
 
-<span> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.</span>
 
 This article explains how to integrate the Associate UI with your application, enabling customer-facing professionals such as field associates and service agents to generate personalized Interactive Communications in real-time on Publish instances. 
 
@@ -517,5 +516,4 @@ When implementing the Associate UI integration, follow these best practices:
 - [Associate UI in Interactive Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [Enable and configure Associate UI for Interactive Communications](/help/forms/interactive-communication/enable-configure-associate-ui.md)
 - [Submission workflow for Associate UI — IC Generate PDF Output](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
-- [Interactive Communications on Cloud](/help/forms/early-access-ea-features.md#interactive-communications-on-cloud)
-- [Early Access Features](/help/forms/early-access-ea-features.md)
+
