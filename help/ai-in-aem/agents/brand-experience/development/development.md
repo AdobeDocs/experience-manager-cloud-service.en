@@ -40,7 +40,7 @@ Find information about your AEM programs and environments, including:
 * finding the names of pipelines and current execution status and step details
 * retrieving links to logs that can be downloaded
 
-### Sample prompts {#sample-cm-job-prompts}
+### Sample Prompts {#sample-cm-job-prompts}
 
 
 | Prompt | Result |
@@ -66,7 +66,7 @@ The key benefit is fewer scheduling errors. As you make a request, the assistant
 
 So instead of discovering a constraint after a failed configuration, Business Owners and Deployment Managers are steered to a valid schedule in the same conversation. This protects critical business windows from automatic maintenance updates while reducing back-and-forth and misconfiguration.
 
-### Sample prompts {#sample-updates-prompts}
+### Sample Prompts {#sample-updates-prompts}
 
 | Prompt | Result |
 | --- | --- |
@@ -136,7 +136,7 @@ You access the Development Agent through the AI Assistant found in user interfac
 
     ![AI Assistant prompt and resulting response](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-prompt-response.png)
 
-#### Troubleshoot directly from a failed pipeline execution {#troubleshoot-with-ai-button}
+#### Troubleshoot Directly from a Failed Pipeline Execution {#troubleshoot-with-ai-button}
 
 When a pipeline execution fails, Cloud Manager also surfaces a **Troubleshoot with AI** button directly on the pipeline execution page. This is the fastest way to start a troubleshooting session because the failed execution is automatically passed as context to the AI Assistant — no manual prompt entry is required.
 
@@ -150,7 +150,7 @@ When a pipeline execution fails, Cloud Manager also surfaces a **Troubleshoot wi
 
 1. Review the response and, if needed, continue the conversation in the **AI Assistant** text box to ask follow-up questions or request more detail.
 
-#### Troubleshoot from the Experience Home Failed Pipelines widget {#troubleshoot-from-experience-home}
+#### Troubleshoot from the Experience Home Failed Pipelines Widget {#troubleshoot-from-experience-home}
 
 Experience Home includes a **Failed Pipelines** widget that gives you an at-a-glance view of pipeline failures across your programs without requiring you to navigate into Cloud Manager first. Each row in the widget represents a failed pipeline and shows the pipeline name, last run date and time, duration, and the step that failed. A **Troubleshoot with AI** button is available inline for each entry.
 
@@ -168,7 +168,7 @@ Experience Home includes a **Failed Pipelines** widget that gives you an at-a-gl
 
 The pipeline troubleshooting job requires either the Cloud Manager - Developer role or the Cloud Manager - Program Manager role.
 
-### Sample prompts {#sample-pipeline-prompts}
+### Sample Prompts {#sample-pipeline-prompts}
 
 | Prompt | Result |
 | --- | --- |
@@ -177,7 +177,7 @@ The pipeline troubleshooting job requires either the Cloud Manager - Developer r
 | *Analyze my failed pipeline called "Dev Pipeline."* | This prompt results in an analysis of the failed pipeline with suggestions to fix. If there are multiple failures, additional questions will be asked of the user. |
 | *Troubleshoot pipeline execution 1234567* | By providing an exact pipeline execution id, a pipeline analysis is performed. |
 
-### Out-of-scope features {#out-of-scope-features}
+### Out-of-Scope Features {#out-of-scope-features}
 
 Pipeline troubleshooting operates on the Build & Unit Testing step and Code Scanning step in Full Stack Deployment and Code Quality pipelines. It also supports [web tier config pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines). 
 
