@@ -34,10 +34,8 @@ See also [Introduction to Edge Delivery Services in Cloud Manager](/help/impleme
 
 **To create an Edge Delivery site in Cloud Manager with one click:**
 
-1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
-    1. In the **Quick access** section, click **Experience Manager**.
-    1. In the left side panel, click **Cloud Manager**.
-    1. Select an organization.
+{{sign-in-to-cloud-manager}}
+
 1. On the **My Programs** console, click a program.
 1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the left side menu.
 1. In the left side menu, under the **Program** heading, click **Overview**.

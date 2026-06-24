@@ -41,7 +41,7 @@ Creating and using your own custom permissions requires the following three step
 
 ### Create a product profile {#create}
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+{{sign-in-to-cloud-manager}}
 
 1. On the Cloud Manager landing page, click **Manage Access**. 
 

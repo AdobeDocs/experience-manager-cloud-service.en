@@ -87,3 +87,4 @@ Save the template and create a new IC based on it to confirm that locked element
 - [Move a Component to the Master Page](/help/forms/interactive-communication/howto/move-component-to-master-page.md)
 - [Implement Dynamic Page Numbering in Interactive Communication Editor](/help/forms/interactive-communication/implement-dynamic-page-numbering.md)
 - [Create an Interactive Communication Template](/help/forms/interactive-communication/create-interactive-communication-template.md)
+
