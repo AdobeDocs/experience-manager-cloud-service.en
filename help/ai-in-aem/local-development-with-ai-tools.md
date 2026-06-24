@@ -52,7 +52,7 @@ Adobe publishes AEM as a Cloud Service skills in the **[adobe/skills](https://gi
 |`dispatcher`|AI-powered Dispatcher and Apache HTTPD configuration assistant covering config authoring, technical advisory, incident response, performance tuning, and security hardening|
 |`migration`|Migrates AEM 6.x, AMS, or on-premise Java code and OSGi configurations to AEM as a Cloud Service, driven by [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) findings from a CSV export or [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)|
 |`workflow`|This is the single entry point for all AEM as a Cloud Service Workflow skills. It Covers workflow model design, custom process step and participant chooser development, launcher configuration, workflow triggering, and production support including debugging stuck/failed workflows, triaging incidents with Cloud Manager logs, thread pool analysis, and Sling Job diagnostics for the Granite Workflow Engine.|
-|`code-assessment`|**(Beta)** Detects and fixes AEM best-practice, code-quality, and correctness issues in your local project, reporting findings and applying surgical fixes|
+|`code-assessment`|**(Beta)** Detects and fixes AEM best-practice violations, code-quality, and correctness issues in your local project, reporting findings and applying surgical fixes|
 
 ### Install Skills {#install-skills}
 
@@ -151,7 +151,7 @@ The dispatcher skill handles orchestration and advisory guidance. The Dispatcher
 
 ### Use the code-assessment Skill {#use-the-code-assessment-skill}
 
-**(Beta)** The `code-assessment` skill detects, reviews, and fixes code-quality and correctness issues in an AEM as a Cloud Service project entirely against your local workspace. Describe the issue and the skill routes the request to the appropriate expert skill.
+**(Beta)** The `code-assessment` skill detects, reviews, and fixes code-quality and correctness issues in an AEM as a Cloud Service project entirely within your local workspace. Describe the issue, and the skill routes the request to the appropriate remediation workflow.
 
 Supported checks include modernizing Sling Model dependency injection, updating outdated Maven dependencies, adding missing timeouts to outbound HTTP calls, bounding unbounded queries, Sling schedulers, resource change listeners, the Replication and Assets APIs, and JCR or OSGi event handling, with more added over time. Depending on the issue, the skill either applies a mechanical fix directly or guides you through one that needs a judgment call.
 
