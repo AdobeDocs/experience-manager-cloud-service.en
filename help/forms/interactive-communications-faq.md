@@ -73,3 +73,4 @@ Move the component to the master page. Right-click an eligible component on a de
 
 **Q: Which component types cannot be moved to the master page?**
 The following types are not eligible for the Move to Master Page action: Content Areas, Page Areas, Page Sets, Fragments, Subform, Table Rows, Table Cells, and Radio Buttons. Components with a content lock or layout lock applied are also ineligible.
+

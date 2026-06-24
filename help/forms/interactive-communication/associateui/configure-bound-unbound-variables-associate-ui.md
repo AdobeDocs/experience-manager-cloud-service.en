@@ -211,3 +211,5 @@ Only one instance appears in the left-hand data entry panel. The associate enter
 - [Configure Dropdown Options for Associate UI](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md)
 - [Enable and configure Associate UI for Interactive Communications](/help/forms/interactive-communication/enable-configure-associate-ui.md)
 - [Unbound Variable Component in Interactive Communication Editor](/help/forms/interactive-communication/unbound-variable.md)
+
+

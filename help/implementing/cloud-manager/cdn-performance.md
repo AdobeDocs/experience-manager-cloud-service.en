@@ -20,7 +20,7 @@ Every Cloud Manager program has a CDN performance dashboard. This dashboard pres
 
 The CDN dashboard is available on the overview page of every program.
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+{{sign-in-to-cloud-manager}}
 
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, click the program whose CDN dashboard you want to view.
 

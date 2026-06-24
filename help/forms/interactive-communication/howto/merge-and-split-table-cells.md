@@ -78,3 +78,4 @@ The split dialog shows the **Max Columns** value, which equals the number of cel
 - [Table Component in Interactive Communication Editor](/help/forms/interactive-communication/table.md)
 - [Create Dynamic Table in Interactive Communication Editor](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
 - [Create an Interactive Communication](/help/forms/interactive-communication/create-interactive-communication.md)
+

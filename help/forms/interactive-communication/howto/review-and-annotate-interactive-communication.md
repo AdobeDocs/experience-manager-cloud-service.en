@@ -120,3 +120,4 @@ An annotation is a positioned pin tied to a specific component on the canvas, vi
 - [Create an Interactive Communication](/help/forms/interactive-communication/create-interactive-communication.md)
 - [Template Lock in Interactive Communication Editor](/help/forms/interactive-communication/enable-template-lock.md)
 - [Versioning and Commenting in Interactive Communication Editor](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
+

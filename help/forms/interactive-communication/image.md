@@ -91,3 +91,4 @@ The Image component in AEM Interactive Communication plays a vital role in creat
 - [Image Field Component](/help/forms/interactive-communication/image-field.md)
 - [Rectangle Component](/help/forms/interactive-communication/rectangle.md)
 - [Line Component](/help/forms/interactive-communication/line.md)
+

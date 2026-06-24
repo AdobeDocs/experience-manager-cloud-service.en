@@ -97,3 +97,4 @@ Rule Editor is widely used to ensure forms and communications are responsive and
 
 
 By configuring rules thoughtfully, authors can build communications that respond intelligently to data and user actions—streamlining processes, reducing errors, and delivering a seamless, personalized experience.
+

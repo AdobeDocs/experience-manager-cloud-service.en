@@ -75,3 +75,4 @@ After pasting the Interactive Communication:
 - Review data bindings and output channels after copying to ensure correctness.
 
 The Copy and Paste feature in Interactive Communication simplifies reuse and customization by allowing authors to duplicate existing ICs and modify them independently. It enables faster development, safer experimentation, and consistent communication delivery—without risking changes to the original Interactive Communication.
+
