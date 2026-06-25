@@ -22,8 +22,10 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming Features {#upcoming-features}
 
-* 
+* The editor now supports a `preview` [meta tag](/help/implementing/universal-editor/customizing.md#meta-tags) to force the editor to load in [preview mode.](/help/sites-cloud/authoring/sites-console/previewing-content.md)
+* The editor now supports a `readonly` [meta tag](/help/implementing/universal-editor/customizing.md#meta-tags) to disable editing, so the user can still select any component, but can not change the content.
 
 ## Upcoming Changes {#upcoming-improvements}
 
-* 
+* Accessibility improvements have been made to heading hierarchies.
+* Accessibility improvements have been made to maintain focus properly in the location bar to aid keyboard navigation of the editor.

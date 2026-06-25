@@ -20,7 +20,7 @@ These are the release notes for the 25 June 2026 release of the Universal Editor
 
 ## What's New {#what-is-new}
 
-* A new button has been added to the toolbar to access AEM Sites console.
+* A new **Open in Site Admin** button has been added to the toolbar to access AEM Sites console.
   * This brings the functionality of the former **AEM Site Admin Extension** [extension](/help/implementing/universal-editor/extending.md) natively to the Universal Editor.
   * The button opens the current AEM page in the [Sites console,](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console) or the [Experience Fragments console](/help/sites-cloud/authoring/fragments/experience-fragments.md) for `/content/experience-fragments` paths.
   * The button is hidden for DAM paths (`/content/dam`) and when no unique AEM page can be determined from the current editables.
