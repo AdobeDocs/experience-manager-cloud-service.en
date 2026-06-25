@@ -13,13 +13,13 @@ Learn how code quality testing of pipelines works and how it can improve the qua
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_codequalitytests"
 >title="Code Quality testing"
->abstract="Code quality testing evaluates your application code based on a set of quality rules. It is the primary purpose of a code-quality only pipeline and is executed immediately following the build step in all production and non-production pipelines."
+>abstract="Code quality testing evaluates your application code against quality rules. It is the primary purpose of a code-quality only pipeline, executed after the build step in all pipelines."
 
 ## Introduction {#introduction}
 
 Code quality testing evaluates your application code based on a set of quality rules. It is the primary purpose of a code-quality only pipeline and is executed immediately following the build step in all production and non-production pipelines.
 
-See [Configuring Your CI-CD Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) to learn more about different types of pipelines.
+To learn more about different types of pipelines, see [Configuring Your CI-CD Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 ## Code Quality Rules {#understanding-code-quality-rules}
 
@@ -37,7 +37,7 @@ Issues identified by code quality testing are assigned to one of three categorie
 
 * **Critical** - Issues that cause an immediate failure of the pipeline.
 
-* **Important** - Issues that cause the pipeline to enter a paused state. A deployment manager, project manager, or business owner can either override the issues, allowing the pipeline to proceed. Alternatively, they can accept the issues, causing the pipeline to stop with a failure.
+* **Important** - Issues that cause the pipeline to enter a paused state. A deployment manager, project manager, or business lead can either override the issues, allowing the pipeline to proceed. Alternatively, they can accept the issues, causing the pipeline to stop with a failure.
 
 * **Info** - Issues that are provided purely for informational purposes and have no impact on the pipeline execution
 
@@ -49,7 +49,7 @@ Issues identified by code quality testing are assigned to one of three categorie
 
 The results of this step are delivered as **Ratings**. 
 
-The following table summarizes the ratings and failure thresholds for each of the critical, important and information categories.
+The following table summarizes the ratings and failure thresholds for each of the critical, important, and information categories.
 
 |Name|Definition|Category|Failure Threshold|
 |--- |--- |--- |--- |
@@ -64,7 +64,7 @@ The following table summarizes the ratings and failure thresholds for each of th
 
 >[!NOTE]
 >
->See [SonarQube's Metric Definitions](https://docs.sonarsource.com/sonarqube-server/latest/user-guide/code-metrics/metrics-definition/) for more detailed definitions.
+>See [SonarQube's Metric Definitions](https://docs.sonarsource.com/sonarqube-server/user-guide/code-metrics/metrics-definition) for more detailed definitions.
 
 >[!NOTE]
 >
@@ -72,9 +72,9 @@ The following table summarizes the ratings and failure thresholds for each of th
 
 ## Dealing with False Positives {#dealing-with-false-positives}
 
-The quality scanning process is not perfect and sometimes incorrectly identifies issues that are not actually problems. This state is called a **false positive**.
+The quality scanning process is not error-free and sometimes identifies issues that are not actual defects. This state is called a **false positive**.
 
-In these cases, the source code can be annotated with the standard Java `@SuppressWarnings` annotation specifying the rule ID as the annotation attribute. For example, one common false positive is that the SonarQube rule to detect hardcoded passwords can be aggressive about how a hardcoded password is identified.
+In these cases, the source code can be annotated with the standard Java `@SuppressWarnings` annotation specifying the rule ID as the annotation attribute. For example, one common false positive is that the SonarQube rule to detect hardcoded passwords can be overly restrictive about how a hardcoded password is identified.
 
 The following code is fairly common in an AEM project, which has code to connect to some external service.
 
@@ -91,7 +91,7 @@ SonarQube raises a blocker vulnerability. But after reviewing the code, you reco
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-However, if the code was actually the following:
+If the code was the following:
 
 ```java
 @Property(label = "Service Password", value = "mysecretpassword")
@@ -102,14 +102,14 @@ Then the correct solution is to remove the hardcoded password.
 
 >[!NOTE]
 >
->While it is best practice to make the `@SuppressWarnings` annotation as specific as possible - such as annotating only the statement or block causing the issue - it is also possible to annotate at the class level.
+>While it is best practice to make the `@SuppressWarnings` annotation specific, you can also annotate at the class level.
 
 >[!NOTE]
->While there is no explicit security testing step, there are security-related code quality rules evaluated during the code quality step. See [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) to learn more about security in Cloud Service.
+>While there is no explicit security testing step, there are security-related code quality rules evaluated during the code quality step. To learn more about security in Cloud Service, see [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md).
 
 ## Content Package Scanning Optimization {#content-package-scanning-optimization}
 
-As part of the quality analysis process, Cloud Manager performs analysis of the content packages produced by the Maven build. Cloud Manager offers optimizations to accelerate this process, which is effective when certain packaging constraints are observed. The most significant optimization targets projects producing a single "all" package, containing multiple content packages from the build, which are marked as skipped. When Cloud Manager detects this scenario, rather than unpack the "all" package, the individual content packages are scanned directly and sorted based on dependencies. For example, consider the following build output.
+As part of the quality analysis process, Cloud Manager performs analysis of the content packages produced by the Maven build. Cloud Manager offers optimizations to accelerate this process, which is effective when certain packaging constraints are observed. The most significant optimization targets projects producing a single "all" package. This package contains multiple content packages from the build that are marked as skipped. When Cloud Manager detects this scenario, rather than unpack the "all" package, the individual content packages are scanned directly and sorted based on dependencies. For example, consider the following build output.
 
 * `all/myco-all-1.0.0-SNAPSHOT.zip` (content-package)
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (skipped-content-package)
@@ -117,9 +117,9 @@ As part of the quality analysis process, Cloud Manager performs analysis of the 
 
 If the only items inside `myco-all-1.0.0-SNAPSHOT.zip` are the two skipped content packages, then the two embedded packages are scanned in lieu of the "all" content package.
 
-For projects that produce dozens of embedded packages, this optimization has been shown to save upwards of 10 minutes per pipeline execution.
+For projects that produce dozens of embedded packages, this optimization has been shown to save more than 10 minutes per pipeline execution.
 
-A special case can occur when the "all" content package contains a combination of skipped content packages and OSGi bundles. For example, if `myco-all-1.0.0-SNAPSHOT.zip` contained the two embedded packages previously mentioned and one or more OSGi bundles, then a new, minimal content package is constructed with only the OSGi bundles. This package is always named `cloudmanager-synthetic-jar-package` and the contained bundles are placed in `/apps/cloudmanager-synthetic-installer/install`.
+A special case can occur when the "all" content package contains a combination of skipped content packages and OSGi bundles. For example, if `myco-all-1.0.0-SNAPSHOT.zip` contained the two mentioned embedded packages and OSGi bundles, a new, minimal content package is constructed with only the OSGi bundles. This package is always named `cloudmanager-synthetic-jar-package` and the contained bundles are placed in `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
 >
