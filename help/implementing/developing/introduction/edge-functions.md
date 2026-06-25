@@ -378,7 +378,6 @@ const count = entry ? Number(await entry.text()) : 0;
 // Write a value
 await kv.put('visit-count', String(count + 1));
 ```
-
 >[!NOTE]
 >
 >- The KV store is always named `kv_default`.
