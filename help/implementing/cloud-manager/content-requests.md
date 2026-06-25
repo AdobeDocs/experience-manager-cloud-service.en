@@ -10,7 +10,7 @@ role: Admin, Developer
 
 ## Introduction {#introduction}
 
-Content requests include requests sent to AEM Sites. These requests may route through Edge Delivery Services or customer-provided caching systems such as a Content Delivery Network (CDN). These requests deliver structured data in HTML or JSON format and support page views (for example, pages and Experience Fragments) or JSON returns through APIs in a headless manner.
+Content requests include requests sent to AEM Sites. These requests route through Edge Delivery Services or customer-provided caching systems such as a Content Delivery Network (CDN). These requests deliver structured data in HTML or JSON format and support page views (for example, pages and Experience Fragments) or JSON returns through APIs in a headless manner.
 
 The system counts content requests when a user views a page using HTML or JSON. It measures the request at the point where the first caching system receives it. Certain HTTP requests are included or excluded for purposes of counting content requests. See the full list of HTTP [included content requests](#included-content-requests) and [excluded content requests](#excluded-content-requests).
 
@@ -29,7 +29,7 @@ AEM (Adobe Experience Manager) as a Cloud Service identifies content requests ba
 Requests for static assets such as JavaScript files, CSS style sheets, and images are not counted as content requests.
 
 >[!NOTE] 
->If an API request returns HTML or JSON that serves as page-level content (for example, in headless delivery), it may still be counted as a content request depending on its context.
+>If an API request returns HTML or JSON that serves as page-level content (for example, in headless delivery), it is counted as a content request depending on its context.
 
 Content requests are measured regardless of whether the response was served from the CDN cache or forwarded to the origin AEM environment.
 
@@ -41,7 +41,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 
 ### Variances of Cloud Service content requests {#content-requests-variances}
 
-Content requests can have variances within an organization's analytics reporting tools as summarized in the following table. In general, avoid using analytics tools that rely on client-side instrumentation to report the number of content requests for a site. These tools often miss a large portion of traffic because they depend on user consent to be activated. Analytics tools gathering data server-side in log files, or CDN reports for customers adding their own CDN on top of AEM as a Cloud Service, provide better counts. 
+Content requests can have variances within an organization's analytics reporting tools as summarized in the following table. In general, avoid using analytics tools that rely on client-side instrumentation to report the number of content requests for a site. These tools often miss a large portion of traffic because they depend on user consent to be activated. Analytics tools gathering data server-side in log files, or CDN reports for customers adding their own CDN to AEM as a Cloud Service, provide better counts. 
 
 |Reason for variance|Explanation|
 |---|---|
@@ -68,7 +68,7 @@ The following tables list the types of included and excluded content requests, w
 ### Types of included content requests {#included-content-requests}
 
 >[!NOTE]
->If an API request returns an HTML response, it may be classified as a content request, depending on its usage context. API requests returning non-UI data are typically excluded.
+>If an API request returns an HTML response, it is classified as a content request, depending on its usage context. API requests returning non-UI data are typically excluded.
 
 | Request type | Content request | Description |
 | --- | --- | --- |
@@ -101,20 +101,20 @@ See also [License dashboard](/help/implementing/cloud-manager/license-dashboard.
 
 ## Manage content requests {#managing-content-requests}
 
-As mentioned in [Variances of Cloud Service content requests](#content-requests-variances), content requests can be higher than expected for several reasons, such as traffic reaching the CDN. As an AEM customer, it is helpful for you to monitor and manage your content requests so that you stay within your license budget. Managing content requests is generally a combination of implementation techniques and [traffic filter rules](/help/security/traffic-filter-rules-including-waf.md).
+As mentioned in [Variances of Cloud Service content requests](#content-requests-variances), content requests can be higher than expected for several reasons, such as traffic reaching the CDN. As an AEM customer, it is helpful for you to monitor and manage your content requests so that you stay within your license budget. Managing content requests is a combination of implementation techniques and [traffic filter rules](/help/security/traffic-filter-rules-including-waf.md).
  
 ### Implementation techniques to manage content requests {#implementation-techniques-to-manage-crs}
 
-* Ensure that any Page Not Found responses are delivered with an HTTP status 404. If they are returned with a status 200, they count toward content requests.
+* Ensure that any Page Not Found responses are delivered with an HTTP status 404. If they are returned with a status 200, they count towards content requests.
 * Route health check or monitoring tools to the /system/probes/health URL or use the HEAD method instead of GET to avoid incurring content requests.
-* Balance your needs for freshness of content with AEM license cost for any custom search crawler that you have integrated with your site. An excessively active crawler may consume many content requests.
-* Handle any redirects as server-side (status 301 or 302) rather than client-side (status 200 with JavaScript redirect) to avoid two separate content requests.
-* Combine or reduce API calls, which are JSON responses from AEM that may be loaded to render the page.
+* Balance your needs for freshness of content with AEM license cost for any custom search crawler that you have integrated with your site. An excessively active crawler consumes many content requests.
+* To avoid two separate content requests, handle any redirects as server-side (status 301 or 302) rather than client-side (status 200 with JavaScript redirect).
+* Combine or reduce API calls, which are JSON responses from AEM that are loaded to render the page.
 * Ensure that the browser's user agent is correctly passed to AEM. Doing so leverages the "well-known search engine" content request exclusion rule described above. Sometimes the originating user agent is lost with certain headless implementations or CDN configurations. If that happens, it can prevent the exclusion and lead to higher content requests than if the user agent were passed through.
 
 ### Traffic filter rules to manage content requests {#traffic-filter-rules-to-manage-crs}
 
-To better control your content requests, analyze your CDN traffic before defining filter rules. The [CDN log analysis tooling](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis) helps you get insights into CDN performance and request patterns. First understand where your traffic is coming from and whether unexpected signaling patterns exist (a common bot pattern is to use an empty user agent).
+To control your content requests better, analyze your CDN traffic before defining filter rules. The [CDN log analysis tooling](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis) helps you get insights into CDN performance and request patterns. First understand where your traffic is coming from and whether unexpected signaling patterns exist (a common bot pattern is to use an empty user agent).
 
 **Items to watch and log:**
 
@@ -157,4 +157,4 @@ trafficFilters:
 
 Replace the example values with the country code, network or bot name you want to block. See [Traffic filter rules syntax](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) and [Condition structure](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) for more options.
 
-Some bots can overload a site with traffic one day and then disappear the next. Such functionality can frustrate any attempts to block a specific IP address or user agent. One generic approach is to introduce a [rate limit rule](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules). Review the [examples](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) and craft a rule that matches your tolerance for a rapid rate of requests. Review the [Condition Structure](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) syntax for any exceptions that you may want to allow to a generic rate limit.
+Some bots can overload a site with traffic one day and then disappear the next. Such functionality can complicate any attempts to block a specific IP address or user agent. One generic approach is to introduce a [rate limit rule](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules). Review the [examples](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) and craft a rule that matches your tolerance for a rapid rate of requests. Review the [Condition Structure](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) syntax for any exceptions that you allow to a generic rate limit.
