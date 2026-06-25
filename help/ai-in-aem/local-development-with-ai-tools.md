@@ -52,6 +52,7 @@ Adobe publishes AEM as a Cloud Service skills in the **[adobe/skills](https://gi
 |`dispatcher`|AI-powered Dispatcher and Apache HTTPD configuration assistant covering config authoring, technical advisory, incident response, performance tuning, and security hardening|
 |`migration`|Migrates AEM 6.x, AMS, or on-premise Java code and OSGi configurations to AEM as a Cloud Service, driven by [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) findings from a CSV export or [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)|
 |`workflow`|This is the single entry point for all AEM as a Cloud Service Workflow skills. It Covers workflow model design, custom process step and participant chooser development, launcher configuration, workflow triggering, and production support including debugging stuck/failed workflows, triaging incidents with Cloud Manager logs, thread pool analysis, and Sling Job diagnostics for the Granite Workflow Engine.|
+|`code-assessment`|**(Beta)** Detects and fixes AEM best-practice violations, code-quality, and correctness issues in your local project, reporting findings and applying surgical fixes|
 
 ### Install Skills {#install-skills}
 
@@ -147,6 +148,36 @@ Invoke the dispatcher skill for any Dispatcher or Apache HTTPD configuration wor
 For broad or first-time requests, start with the `workflow-orchestrator` sub-skill. For targeted work, describe the specific concern and the skill routes to the appropriate specialist.
 
 The dispatcher skill handles orchestration and advisory guidance. The Dispatcher MCP server, described in the following section, provides the seven validation and runtime tools the skill uses when it needs local evidence.
+
+### Use the code-assessment Skill {#use-the-code-assessment-skill}
+
+**(Beta)** The `code-assessment` skill detects, reviews, and fixes code-quality and correctness issues in an AEM as a Cloud Service project entirely within your local workspace. Describe the issue, and the skill routes the request to the appropriate remediation workflow.
+
+Supported checks include modernizing Sling Model dependency injection, updating outdated Maven dependencies, adding missing timeouts to outbound HTTP calls, bounding unbounded queries, Sling schedulers, resource change listeners, the Replication and Assets APIs, and JCR or OSGi event handling, with more added over time. Depending on the issue, the skill either applies a mechanical fix directly or guides you through one that needs a judgment call.
+
+For a broad or first-time review, ask the skill to assess the whole project: it runs every detector, reports all findings, and applies code fixes one pattern at a time.
+
+To get started, open a new agent chat in your AEM as a Cloud Service project.
+
+**1. Review your project.** Ask for a report. The skill runs its analyzer and returns the findings inline, grouped by pattern and severity, with a suggested remediation plan. No code is changed at this stage.
+
+```
+scan my AEM project and report any code-quality issues
+```
+
+For a more explicit invocation, name the skill directly:
+
+```
+/code-assessment review my code for AEM as a Cloud Service issues
+```
+
+**2. Apply fixes, one pattern at a time.** Ask the skill to fix a specific pattern. It makes surgical edits and verifies they compile. Mechanical fixes apply directly; guided ones walk you through each decision.
+
+```
+apply unbounded-query
+```
+
+It never commits or pushes — you review the diff and commit. Large fixes run in resumable batches; reply `apply <pattern>` to continue.
 
 ## AEM Quickstart MCP Server {#aem-quickstart-mcp-server}
 
