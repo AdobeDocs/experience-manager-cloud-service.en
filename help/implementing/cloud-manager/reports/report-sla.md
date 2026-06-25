@@ -40,9 +40,9 @@ The line graph of a selected year includes data points for each month from Janua
 
 1. (Optional) Do any of the following:
 
-    * Move your cursor over a data point in the line graph to show the specific values for that point.
+    * To show the specific values for a data point, move your cursor over it in the line graph.
     * Below the line graph's year, click the icon **Download** to save a PNG image file of the line graph.
-    * Click a metric name to see just that metric's data. Or, press `Shift` on the keyboard while selecting or deselecting one or more metric names.  
+    * Click a metric name to see that metric's data. Alternatively, press and hold `Shift` on the keyboard while selecting or deselecting one or more metric names.  
 
 ## Event analysis {#event-analysis}
 
@@ -54,12 +54,12 @@ Each of the incidents has a time range, a cause, and a set of comments.
 
 ## Refresh interval of SLA reports {#refresh}
 
-SLA reporting gives you insight into the performance of your AEM production environment and is up-to-date, but not instantaneous. SLA report generation happens monthly and it is generated for new programs that are marked as `Production previous month`. It is not instant. Because of this delay, keep the following in mind as you review your SLA report:
+SLA reporting provides information about the performance of your AEM production environment and is current, but not instantaneous. SLA report generation happens monthly and it is generated for new programs that are marked as `Production previous month`. It is not instantaneous. Because of this delay, keep the following in mind as you review your SLA report:
 
 * The reported SLA is the one that existed at the start of the month, even if SLA changed during that month.
 * If there was no SLA at the start of the month because the program did not exist, the SLA that existed at the date the program was created applies.
 
 ## Preview environments {#preview}
 
-The preview environment is intended as a tool for content authors to verify the content's final experience before publishing. Because of this functionality, preview environments are not designed with high availability and do not have an associated SLA.
+The preview environment is intended as a tool for content authors to review the content before publishing. Because of this functionality, preview environments are not designed with high availability and do not have an associated SLA.
 
