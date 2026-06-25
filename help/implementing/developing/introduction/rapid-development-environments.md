@@ -706,7 +706,7 @@ For more information about how to use Cloud Manager to manage your environments,
 ## Snapshots {#snapshots}
 
 >[!NOTE]
->RDE Snapshots will be in public beta in early June, at which time it can be enabled by updating to the latest aio plugin. 
+>RDE Snapshots are in public beta and so it can be enabled by updating to the latest aio plugin, without contacting Adobe.
 >
 >By using the RDE Snapshots Beta, you acknowledge that it is still in development and that you should not rely on the correct functioning of the technology or availability of data. While we have tested this feature extensively, there is a small possibility that your RDE could become unstable. If this occurs, a reset will restore it to a working state.
 >We welcome feedback at [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com).
