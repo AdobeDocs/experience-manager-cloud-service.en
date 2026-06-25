@@ -9,7 +9,7 @@ exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
 
 >[!IMPORTANT]
 >
->AEM Edge Functions is a **beta** feature. Features and documentation may change without notice. To join the early access program and provide feedback, email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com).
+>AEM Edge Functions is a **public beta** feature so you can try it out in a self-serve way without contacting Adobe to enable. Adobe encourages you to email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) to describe your use case so Adobe can assure you it is supported, and provide any guidance. By using the AEM Edge Functions Beta, you acknowledge that it is still in development and that you should not rely on the correct functioning of the technology or availability of data. This feature is provided as-is, may change without notice, and is not covered by production. 
 
 AEM Edge Functions lets you execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences without a round trip to your origin.
 
@@ -20,7 +20,9 @@ Common use cases include:
 - Reformatting or aggregating responses from third-party APIs before they reach the browser
 - Composing and serving server-rendered HTML at the edge using content stitched from multiple backends
 
-AEM Edge Functions is compatible with both Edge Delivery Services and the AEM as a Cloud Service Java-stack.
+AEM Edge Functions is compatible with both Edge Delivery Services and AEM as a Cloud Service Java-stack, for AEM Sites customers.
+
+<!-- Follow this tutorial for a concrete walk-through for both Edge Delivery Services and AEM as a Cloud Service Java-stack variations. -->
 
 ## Key Benefits {#key-benefits}
 
