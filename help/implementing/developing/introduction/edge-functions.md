@@ -421,7 +421,7 @@ logger.log(JSON.stringify({
   url: event.request.url
 }));
 ```
-
+ 
 >[!NOTE]
 >
 >CDN logs — which include AEM Edge Function log entries — can be downloaded from Cloud Manager for Java-stack environments, but not for Edge Delivery sites.

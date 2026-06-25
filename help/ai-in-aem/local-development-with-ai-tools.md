@@ -5,7 +5,6 @@ feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
 ---
-
 # Local Development with AI Tools {#local-development-with-ai-tools}
 
 >[!NOTE]
