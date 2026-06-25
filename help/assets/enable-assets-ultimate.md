@@ -197,7 +197,7 @@ You can also access and view the services assigned to Power users, as depicted i
 >
 >You can turn the toggle off and on to enable or disable the available services, as per your requirements, however, Adobe recommends to use the default services enabled for the product profiles.
 
-## Frequently Asked Questions — Enable AEM Assets Ultimate
+## Frequently Asked Questions {#frequently-asked-questions-enable-assets-ultimate}
 
 ### How do new customers enable AEM Assets Ultimate? {#enable-assets-ultimate-new-customers}
 
