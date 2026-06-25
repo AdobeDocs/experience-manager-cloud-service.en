@@ -172,7 +172,7 @@ The Development Agent expands to handling questions related to Cloud Manager thr
 
 #### Enhancements to Pipeline Troubleshooting Agent Job {#devagent-pipeline-troubleshooting}
 
-The Development Agent's [pipeline troubleshooting job](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-pipeline-troubleshooting) help developers diagnose and resolve issues in AEM as a Cloud Service deployments. New features include:
+The Development Agent's [pipeline troubleshooting job](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-pipeline-troubleshooting) helps developers diagnose and resolve issues in AEM as a Cloud Service deployments. New features include:
 
 * Support for Web Tier Config Pipeline - In addition to supporting Full Stack pipelines (Deployment and Code Quality), the Development Agent now supports troubleshooting for the **Web Tier Config Pipeline**
 
@@ -195,7 +195,7 @@ Instead of returning only an HTTP status code, these errors provide additional c
 
 It is critical to remove usage of deprecated APIs. 
 
-Since **April 14**, Cloud Manager pipelines that contain code using APIs targeting 2/26/2026 removal **fail during the Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.* 
+Since **April 14, 2026**, Cloud Manager pipelines that contain code using APIs targeting 2/26/2026 removal **fail during the Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.* 
 
 Starting **July 23, 2026**, environments still using these deprecated APIs **will not receive critical Adobe release updates** and will not be subject to Adobe's standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
 
@@ -220,7 +220,7 @@ See the [deprecation article](/help/release-notes/deprecated-removed-features.md
 
 +++
 
-#### Dispatcher local MCP server is part of AEM SDK {#local-dispacher-mcp}
+#### Dispatcher Local MCP server is part of AEM SDK {#local-dispatcher-mcp}
 
 The Dispatcher local MCP server is now included in the **AEM SDK** in the [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html), packaged inside the AEM Dispatcher tools zip. Previously, the Dispatcher local MCP server was packaged in a separate beta listing of AEM Dispatcher tools.
 
@@ -243,15 +243,15 @@ To help organizations plan testing and validation ahead of the necessary Java 25
 | **February – May 2027** | Adobe will gradually migrate lower environments (RDE, Dev) to the Java 25 runtime. Customers should validate behavior and report unexpected issues, and are encouraged to enable staging and production environments as well. A temporary rollback to Java 21 is available while resolving any problems. |
 | **June 2027** | All environment runtimes (including staging and production) migrate to Java 25. Java 21 runtime is decommissioned. The AEM Cloud Service SDK will no longer support Java 21. |
 
-AEM Cloud Service continues to support compiling customer code with Java 11, Java 17, and Java 21. However, Adobe recommends building with Java 25 to take full advantage of the latest language features and performance improvements.
+AEM Cloud Service continues to support compiling customer code with Java 11, Java 17, and Java 21. However, Adobe recommends building with Java 25 (once available in AEM) to take full advantage of the latest language features and performance improvements.
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Features {#foundation-early-adopter}
 
 #### AEM Edge Functions (*Public Beta* Program) {#edge-functions}
 
-[AEM Edge Functions](/help/implementing/developing/introduction/edge-functions.md) is now in public beta so you can self-serve try it out without contacting Adobe.
+[AEM Edge Functions](/help/implementing/developing/introduction/edge-functions.md) is now in public beta so you can self-serve try it out without contacting Adobe to enable.
 
-This feature allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge. It's available for both AEM Java Stack and Edge Delivery Services projects.
+This feature allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge. It's available for both AEM Cloud Service Java Stack and Edge Delivery Services projects.
 
 Common use cases include:
 
@@ -263,10 +263,9 @@ Common use cases include:
 *By using the AEM Edge Functions Beta, you acknowledge that it is still in development and that you should not rely on the correct functioning of the technology or availability of data. This feature is provided as-is,
 may change without notice, and is not covered by production SLAs.*
 
-
 #### Snapshots for RDEs (*Public Beta* Program) {#rde-snapshot-program}
 
-Snapshots for Rapid Development Environments (RDEs) is now in public beta so you can self-serve try it out without contacting Adobe.
+Snapshots for Rapid Development Environments (RDEs) is now in public beta so you can self-serve try it out without contacting Adobe to enable.
 
 RDEs now support a feature [to take a snapshot](/help/implementing/developing/introduction/rapid-development-environments.md#snapshots) of the current state of code and content, which can be restored at a later time. This can be useful when syncing code that may need to be reverted, or when switching between development of different features. It's also possible to restore just the mutable content as a known starting point for testing.
 
@@ -284,9 +283,19 @@ Email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-
 
 #### AEM Code Assessment and auto-fix via IDE AI agent (Beta Program) {#ide-ai-aemcode-issues}
 
-Java-stack teams using [AI-assisted development](/help/ai-in-aem/local-development-with-ai-tools.md) in tools like Cursor, Claude Code, Visual Studio, and IntelliJ can now go further: a new IDE agent skill detects and auto-fixes issues directly in your AEM codebase, reducing review cycles and catching problems earlier in development.
+AEM Cloud Service Java-stack teams using AI-assisted development in tools like Cursor, Claude Code, Visual Studio, and IntelliJ can now go further. A new [code assessment IDE agent skill]((/help/ai-in-aem/local-development-with-ai-tools.md#use-the-code-assessment-skill)) detects and auto-fixes issues directly in your AEM codebase, reducing review cycles and catching problems earlier in development. 
 
-This feature is in beta. Join the program to try it and share feedback with the team at [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com).
+Supported checks include:
+* replacing deprecated APIs
+* modernizing Sling Model dependency injection
+* updating outdated Maven dependencies
+* adding missing timeouts to outbound HTTP calls
+* bounding unbounded queries
+* Sling schedulers
+* resource change listeners the Replication
+* JCR or OSGi event handling
+
+This feature is in beta. Try it out and share feedback with the team at [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com).
 
 #### Edge Authentication for Edge Delivery Services (Beta Program) {#edge-authentication}
 
@@ -294,7 +303,7 @@ Edge Authentication lets you restrict access to Edge Delivery Services pages to 
 
 If interested, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case and any questions you may have.
 
-#### OpenTelemetry for Application Performance Monitoring (APM) (Alpha program) {#apm-alpha}
+#### OpenTelemetry for Application Performance Monitoring (APM) (Alpha Program) {#apm-alpha}
 
 AEM as a Cloud Service now supports OpenTelemetry-based telemetry export, letting you monitor AEM alongside the rest of your systems in the APM tools your teams already use.
 
