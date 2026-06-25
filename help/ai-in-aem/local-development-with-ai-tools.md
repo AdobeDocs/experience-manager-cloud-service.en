@@ -27,7 +27,7 @@ Review the [AI-assisted development tutorials](https://experienceleague.adobe.co
 
 >[!TIP]
 >
->AEM Cloud Service's remote MCP servers are also useful for local development. Learn more about them in the [Using MCP with Cloud Service article].(/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
+>AEM Cloud Service's remote MCP servers are also useful for local development. Learn more about them in the [Using MCP with Cloud Service article](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
 
 ## AGENTS.md {#agentsmd}
 
@@ -51,7 +51,7 @@ Adobe publishes AEM as a Cloud Service skills in the **[adobe/skills](https://gi
 |`create-component`|Scaffolds a complete AEM component: component definition, dialog XML, HTL template, Sling Model, unit tests, and clientlibs|
 |`dispatcher`|AI-powered Dispatcher and Apache HTTPD configuration assistant covering config authoring, technical advisory, incident response, performance tuning, and security hardening|
 |`migration`|Migrates AEM 6.x, AMS, or on-premise Java code and OSGi configurations to AEM as a Cloud Service, driven by [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) findings from a CSV export or [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)|
-|`workflow`|This is the single entry point for all AEM as a Cloud Service Workflow skills. It Covers workflow model design, custom process step and participant chooser development, launcher configuration, workflow triggering, and production support including debugging stuck/failed workflows, triaging incidents with Cloud Manager logs, thread pool analysis, and Sling Job diagnostics for the Granite Workflow Engine.|
+|`workflow`|This is the single entry point for all AEM as a Cloud Service Workflow skills. It covers workflow model design, custom process step and participant chooser development, launcher configuration, workflow triggering, and production support including debugging stuck/failed workflows, triaging incidents with Cloud Manager logs, thread pool analysis, and Sling Job diagnostics for the Granite Workflow Engine.|
 |`code-assessment`|**(Beta)** Detects and fixes AEM best-practice violations, code-quality, and correctness issues in your local project, reporting findings and applying surgical fixes|
 
 ### Install Skills {#install-skills}
