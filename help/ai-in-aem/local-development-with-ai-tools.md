@@ -25,6 +25,9 @@ Four complementary components address this:
 
 Review the [AI-assisted development tutorials](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview) for additional, hands-on instruction.
 
+Feel free to email [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) with feedback to help shape product development.
+
+
 >[!TIP]
 >
 >AEM Cloud Service's remote MCP servers are also useful for local development. Learn more about them in the [Using MCP with Cloud Service article](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
@@ -237,12 +240,6 @@ Any MCP client can connect by pointing to `http://localhost:4502/bin/mcp` with a
 >The value `Basic YWRtaW46YWRtaW4=` is the Base64 encoding of `admin:admin`, the default credential for a local Quickstart. Do not use this with non-local environments.
 
 ## Dispatcher MCP Server {#dispatcher-mcp-server}
-
->[!IMPORTANT]
->
->This feature is **beta**. Getting early access to features that Adobe is developing lets customers and partners provide feedback (by emailing [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)) and shape product development. It also helps them prepare to adopt new capabilities before general availability. 
->
->Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (by way of Adobe Support Services or otherwise) the beta releases. Adobe advises customers to use caution and not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Accordingly, any use of the beta releases is entirely at the customer's own risk. 
 
 The Dispatcher MCP server is bundled with the AEM Dispatcher SDK. It enables AI tools to validate Dispatcher and Apache HTTPD configuration, trace request handling, and inspect cache behavior against a Dispatcher instance running locally in Docker.
 
