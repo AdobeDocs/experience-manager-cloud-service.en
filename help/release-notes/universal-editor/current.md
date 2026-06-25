@@ -24,7 +24,7 @@ These are the release notes for the 25 June 2026 release of the Universal Editor
   * This brings the functionality of the former **AEM Site Admin Extension** [extension](/help/implementing/universal-editor/extending.md) natively to the Universal Editor.
   * The button opens the current AEM page in the [Sites console,](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console) or the [Experience Fragments console](/help/sites-cloud/authoring/fragments/experience-fragments.md) for `/content/experience-fragments` paths.
   * The button is hidden for DAM paths (`/content/dam`) and when no unique AEM page can be determined from the current editables.
-* Single-character shortcuts now work better with accessibility technologies.
+* Single-character keyboard shortcuts now work better with accessibility technologies.
 
 ## Other Improvements {#other-improvements}
 
