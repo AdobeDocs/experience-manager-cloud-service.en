@@ -61,7 +61,11 @@ Before continuing with the rest of this guide, log in to your CLI with `az login
 ## Start the CMK configuration process for AEM as a Cloud Service {#request-cmk-for-aem-as-a-cloud-service}
 
 You need to request the Customer Managed Keys (CMK) configuration for your AEM as a Cloud Service environment via the UI. To do this, navigate to the AEM Home Security UI, under the **Customer Managed Keys** section. 
-You can then start the onboarding process by clicking on the **Start onboarding** button.
+The page will list all programs which support CMK. You can then start the onboarding process by clicking on the Enable Program button.
+
+![Enable a Program to use CMK](./assets/cmk/step0.png)
+
+If CMK has been enabled within CLoud manager while creating / editing a program, click on the Start Onboarding button.
 
 ![Start onboarding of a website using the CMK UI](./assets/cmk/step1.png)
 
@@ -191,17 +195,27 @@ Revoking or disabling access to the Key Vault, key, or CMK app can result in sig
 
 If you decide to revoke AEM as a Cloud Service access to your data, you can do so by removing the user role associated with the application from the Key Vault within Azure.
 
-## Next steps {#next-steps}
+## Stage CMK Setup {#stage-cmk-setup}
 
-After you provide the required information in the CMK UI, Adobe starts the configuration process for your AEM as a Cloud Service environment. This process requires time, and you are notified once it is completed.
+After you provide the required information in the CMK UI, Adobe starts the configuration process for your AEM as a Cloud Service Stage environment. This process requires time, and you are notified once it is completed.
 
-![Wait for Adobe to configure the environment.](./assets/cmk/step4.png)
+![Wait for Adobe to configure the Stage environment](./assets/cmk/step4.png)
+
+## Prod CMK Setup {#prod-cmk-setup}
+
+Once Stage setup is completed, you should do a thorough end-2-end validation. If everything is working fine, you need to confirm that the production environment can be configured accordingly.
+
+![Confirm the production environment](./assets/cmk/step5.png)
+
+After you confirmation in the CMK UI, Adobe starts the configuration process for your AEM as a Cloud Service Prod environment. This process requires time, and you are notified once it is completed.
+
+![Wait for Adobe to configure the Prod environment](./assets/cmk/step6.png)
 
 
 ## Complete the CMK setup {#complete-the-cmk-setup}
 
 Once the configuration process is completed, you can see the status of your CMK setup in the UI. You can also see the key vault and the encryption key.
-![The process in now completed](./assets/cmk/step5.png)
+![The process in now completed](./assets/cmk/step7.png)
 
 ## Questions and support {#questions-and-support}
 
