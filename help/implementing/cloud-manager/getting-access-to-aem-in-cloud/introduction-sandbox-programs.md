@@ -33,7 +33,7 @@ A sandbox program is limited to one development environment.
 
 ## Usage restrictions and conditions {#usage-notes-conditions}
 
-Because they are not intended for live traffic, sandbox programs have certain limitations and conditions on their usage, which differentiates them from production programs.
+Because they are not intended for live traffic, sandbox programs have certain limitations and conditions on their usage, which distinguishes them from production programs.
 
 | Limitation/condition | Description |
 | --- | --- |

@@ -32,7 +32,7 @@ All Cloud Service deployments follow a rolling process to ensure zero downtime. 
 
 Once you have [configured your production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) including the repository, environment, and testing environment, you are ready to deploy your code.
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+{{sign-in-to-cloud-manager}}
 
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, click the program for which you want to deploy code.
 

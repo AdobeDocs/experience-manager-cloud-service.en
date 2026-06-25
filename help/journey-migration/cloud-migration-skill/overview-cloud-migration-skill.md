@@ -44,7 +44,7 @@ The migration skill is an agent skill for AI-enabled IDEs. It orchestrates a **o
 | `htlLint` | `data-sly-test` redundant constant comparison warnings in HTL templates |
 | OSGi configs | `.cfg.json` conversion, runmode scoping, and Cloud Manager secrets/env-var extraction |
 
-The skill delegates all code transformation steps to the companion `best-practices` skill. Both are distributed together as the `aem-cloud-service` skill package; install the package once to get both.
+The skill delegates all code transformation steps to the companion `code-assessment` skill. Both are distributed together as the `aem-cloud-service` skill package; install the package once to get both.
 
 ### Getting Started {#getting-started-skill}
 
