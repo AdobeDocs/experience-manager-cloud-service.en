@@ -16,9 +16,9 @@ To support customers with enterprise development setups, AEM as a Cloud Service 
 
 ## Cloud Manager's support in enterprise team development setup {#cloud-manager}
 
-To ensure quick onboarding, Cloud Manager provides everything required to get started with developing digital experiences right away, including a Git repository to store customizations, which then get built, verified, and deployed by Cloud Manager.
+To ensure quick onboarding, Cloud Manager provides everything required to begin developing digital experiences, including a Git repository to store customizations. These customizations then get built, verified, and deployed by Cloud Manager.
 
-Using Cloud Manager, development teams can work towards committing changes frequently without being dependent on Adobe personnel. 
+Using Cloud Manager, development teams can commit changes frequently without requiring assistance from Adobe staff. 
 
 Three types of environments are available in Cloud Manager.
 
@@ -30,25 +30,25 @@ Code can be deployed to development environments using a non-production pipeline
 
 The production pipeline deploys the code and the configuration to the staging environment first, tests the application, and finally deploys to production.
 
-A Cloud Service SDK that is always updated with latest AEM as a Cloud Service improvements allows for local development directly using the developer's local hardware. This approach enables rapid development with very low turnaround times. Thus, developers can stay in their familiar local environment and choose from a wide variety of development tools, and push to development environments or production when they see fit. 
+A Cloud Service SDK that is always updated with the latest AEM as a Cloud Service improvements allows for local development directly using the developer's local hardware. This approach enables rapid development with short lead times. Thus, developers can stay in their familiar local environment and choose from a wide variety of development tools, and push to development environments or production when they see fit. 
 
 Cloud Manager supports flexible multi-team setups that can be adjusted to fit the needs of an enterprise. To ensure stable deployments across multiple teams, Cloud Manager's opinionated pipeline validates and tests the code from all teams together. This approach helps prevent situations where one team's changes impact production for all teams.
 
-## Real world example {#real-world-example}
+## Example scenario {#example-scenario}
 
-Each enterprise has different requirements including different team setup, processes, and development workflows. The setup described below is used by Adobe for several projects that deliver experiences on top of AEM as a Cloud Service.
+Each enterprise has different requirements including different team setup, processes, and development workflows. Adobe uses the setup described below for several projects that deliver experiences on top of AEM as a Cloud Service.
 
-For instance, the Adobe Creative Cloud applications, such as Adobe Photoshop or Adobe Illustrator, include content resources such as tutorials, samples, and guides available to their end users. Client applications consume content from AEM as a Cloud Service in a headless manner. They make API calls to the AEM Cloud publish tier to retrieve structured content as JSON streams. Additionally, the [Content Delivery Network (CDN) in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#content-delivery) is used to serve both structured and unstructured content with optimal performance.
+For instance, Adobe Creative Cloud applications, such as Adobe Photoshop or Adobe Illustrator, include content resources like tutorials, samples, and guides. Client applications consume content from AEM as a Cloud Service in a headless manner. They make API calls to the AEM Cloud publish tier to retrieve structured content as JSON streams. Additionally, the [Content Delivery Network (CDN) in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#content-delivery) is used to serve both structured and unstructured content with optimal performance.
 
 The teams contributing to this project adhere to the following process.
 
 Each team uses its own development workflow and has a separate Git repository. An additional shared Git repository is used for onboarding projects. This Git repository contains the root structure of Cloud Manager's Git repository, including the shared Dispatcher configuration.
 
-Onboarding a new project requires listing in the reactor Maven project file at the root of the shared Git repository. For Dispatcher configuration, a new configuration file is created inside the Dispatcher project. The main Dispatcher configuration then includes this file. Each team is responsible for its own Dispatcher configuration file. Changes to the shared Git repository are rare and are usually only required when a new project is onboarded. The main work is done by each project team within their own Git repository.
+Onboarding a new project requires a listing in the reactor Maven project file at the root of the shared Git repository. For Dispatcher configuration, a new configuration file is created inside the Dispatcher project. The main Dispatcher configuration then includes this file. Each team is responsible for its own Dispatcher configuration file. Changes to the shared Git repository are rare and are required only when a new project is onboarded. Each project team performs the primary work within their own Git repository.
  
 ![Workflow diagram](/help/implementing/cloud-manager/assets/team-setup1.png)
 
-The Git repository for each is set up using the [AEM Project Archetype](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview) and thus follows the best practices for setting up AEM Projects. The only exception is the Dispatcher configuration, which is done in the shared Git repository as outlined above.
+The Git repository for each team is set up using the [AEM Project Archetype](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview) and thus follows the best practices for setting up AEM Projects. The only exception is the Dispatcher configuration, which is done in the shared Git repository as outlined above.
 
 Each team uses a simplified Git workflow with two + N branches, following the Git flow model:
 
@@ -73,29 +73,29 @@ All projects follow the same setup for the stable branch. A push to the stable b
 
 ![Push diagram](/help/implementing/cloud-manager/assets/team-setup2.png)
  
-Pushes to the development branch are handled differently. A push to a developer branch in a team's Git repository also triggers a GitHub action. This action automatically pushes the code into the development branch in Cloud Manager's Git repository. However, this code push does not automatically trigger the non-production pipeline. A call to Cloud Manager's API triggers it.
+Pushes to the development branch are handled differently. A push to a development branch in a team's Git repository also triggers a GitHub action. This action automatically pushes the code into the development branch in Cloud Manager's Git repository. However, this code push does not automatically trigger the non-production pipeline. A call to Cloud Manager's API triggers it.
 
 Running the production pipeline includes checking the code of all teams via the provided quality gates. After the code is deployed to stage, the tests and audits are run so everything is working as expected. When all gates are passed, the changes are rolled out to production without any interruption or downtime.
 
-For local development, the [SDK for AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md#developing) is used. The SDK allows a local author, publish, and Dispatcher to be set up. This workflow enables offline development and quick turnaround times. Sometimes only the author environment is used for development, but quickly setting up Dispatcher and publish environments allows testing everything locally before pushing into the Git repository.
+For local development, the [SDK for AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md#developing) is used. The SDK allows a local author, publish, and Dispatcher to be set up. This workflow enables offline development and short lead times. Sometimes only the author environment is used for development, but quickly setting up Dispatcher and publish environments allows testing everything locally before pushing into the Git repository.
 
-Members of each team usually checkout the code from the shared Git for their own project code. There is no need to check out other projects because the projects are independent.
+Members of each team usually check out the code from the shared Git for their own project code. There is no need to check out other projects because the projects are independent.
 
 ![Local checkout and SDK](/help/implementing/cloud-manager/assets/team-setup3.png)
  
-This real-world setup can be used as a blueprint and then customized to the needs of an enterprise. The flexible branching and merging concept of Git allows for variations of the above workflows, customized to every team's needs. AEM as a Cloud Service supports all these variations without sacrificing the core value of the opinionated Cloud Manager pipeline.
+This setup can be used as a reference and then customized to the needs of an enterprise. The flexible branching and merging concept of Git allows for variations of the above workflows, customized to every team's needs. AEM as a Cloud Service supports all these variations without sacrificing the core value of the opinionated Cloud Manager pipeline.
 
 >[!TIP]
 >
->See [Work with Multiple Source Git Repositories](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code) to learn more about this setup.
+>To learn more about this setup, see [Work with Multiple Source Git Repositories](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code).
 
 ### Considerations for a multi-team setup {#considerations}
 
-With Cloud Manager's Git repository and the production pipeline, the full production code always passes through all quality gates, treating it as one deployment unit. This way the production system is always up without interruption or downtime.
+With Cloud Manager's Git repository and the production pipeline, the full production code always passes through all quality gates, treating it as one deployment unit. This way the production system is always available without interruption or downtime.
 
 In contrast, without such a system in place, because each team can deploy separately, there is a risk that an update from a single team can lead to production stability issues. In addition, it requires coordination and planned downtime to roll out updates. With an increasing number of teams, the coordination effort becomes much more complex and quickly unmanageable.
 
-If a problem is detected in the quality gates, production is not affected, and the problem can be detected and fixed without Adobe personnel required to step in. Without Cloud Service and without always testing the whole deployment, partial deployments can cause outages requiring a request to roll back or even a full restore from a backup. Partial testing can also cause additional issues that must be resolved later, once again requiring coordination and support from Adobe personnel.
+If a problem is detected in the quality gates, production is not affected, and the problem can be detected and fixed without Adobe staff being required to step in. Without AEM as a Cloud Service and without always testing the whole deployment, partial deployments can cause outages requiring a request to roll back or even a full restore from a backup. Partial testing can also cause additional issues that must be resolved later, once again requiring coordination and support from Adobe staff.
 
 >[!TIP]
 >
