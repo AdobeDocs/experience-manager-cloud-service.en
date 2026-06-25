@@ -112,3 +112,4 @@ The Radio Button component in the Interactive Communication editor is a fundamen
 - [Check Box Component](/help/forms/interactive-communication/check-box.md)
 - [Configure Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/configure-data-binding.md)
 - [Use the Rule Editor in Interactive Communication Editor](/help/forms/interactive-communication/use-the-rule-editor.md)
+

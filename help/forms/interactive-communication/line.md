@@ -106,3 +106,4 @@ The Line component in the Interactive Communication editor is a simple yet power
 
 - [Rectangle Component](/help/forms/interactive-communication/rectangle.md)
 - [Image Component](/help/forms/interactive-communication/image.md)
+

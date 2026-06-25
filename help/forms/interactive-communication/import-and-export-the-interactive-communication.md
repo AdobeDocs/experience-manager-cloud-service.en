@@ -52,3 +52,4 @@ Create an Interactive Communication (IC) in one environment and reuse it in anot
 
 This allows easy reuse of fragments across different environments, ensuring design consistency and reducing duplication of effort.
 +++
+

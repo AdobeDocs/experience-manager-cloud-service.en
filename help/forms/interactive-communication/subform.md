@@ -104,3 +104,4 @@ The **Subform** component in the Interactive Communication editor provides a pow
 - [Handle Content Overflow in Interactive Communication Editor](/help/forms/interactive-communication/handle-content-overflow.md)
 - [Configure Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/configure-data-binding.md)
 - [Use the Rule Editor in Interactive Communication Editor](/help/forms/interactive-communication/use-the-rule-editor.md)
+
