@@ -68,14 +68,14 @@ Choose the method that matches your AI coding tool. Installing skills once makes
 /plugin install aem-cloud-service@adobe-skills
 ```
 
-#### Npx Skills {#npx-skills}
+#### NPX Skills {#npx-skills}
 
 ```bash
 # Install all available skills
 npx skills add https://github.com/adobe/skills/tree/main/skills/aem/cloud-service --all
 ```
 
-#### Upskill (GitHub CLI extension) {#upskill-github-cli-extension}
+#### Upskill (GitHub CLI Extension) {#upskill-github-cli-extension}
 
 ```bash
 # Install the gh-upskill extension (one-time setup)
@@ -85,11 +85,11 @@ gh extension install ai-ecoverse/gh-upskill
 gh upskill adobe/skills --path plugins/aem/cloud-service --all
 ```
 
-### Use the ensure-agents-md Skill {#use-the-ensure-agents-md-skill}
+### Use the Ensure-agents-md Skill {#use-the-ensure-agents-md-skill}
 
 After installing the skill, open your AI assistant in any AEM as a Cloud Service project that does not yet have an `AGENTS.md`. The skill runs automatically before processing your first request, creating both files at the project root without requiring explicit invocation.
 
-### Use the create-component Skill {#use-the-create-component-skill}
+### Use the Create-component Skill {#use-the-create-component-skill}
 
 On first use, the skill automatically detects `project`, `package`, and `group` from `pom.xml` and existing components, and asks you to confirm the detected values. It then creates `.aem-skills-config.yaml` at the project root. No manual configuration is required before first use.
 
@@ -149,7 +149,7 @@ For broad or first-time requests, start with the `workflow-orchestrator` sub-ski
 
 The dispatcher skill handles orchestration and advisory guidance. The Dispatcher MCP server, described in the following section, provides the seven validation and runtime tools the skill uses when it needs local evidence.
 
-### Use the code-assessment Skill {#use-the-code-assessment-skill}
+### Use the Code-assessment Skill {#use-the-code-assessment-skill}
 
 **(Beta)** The `code-assessment` skill detects, reviews, and fixes code-quality and correctness issues in an AEM as a Cloud Service project entirely within your local workspace. Describe the issue, and the skill routes the request to the appropriate remediation workflow.
 
