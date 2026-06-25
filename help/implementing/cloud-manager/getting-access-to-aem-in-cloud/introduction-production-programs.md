@@ -9,7 +9,7 @@ role: Admin, Developer
 
 # Introduction to production programs {#production-programs}
 
-A production program is intended for a team that is ready to start writing, building, and testing code. The objective is to deploy it to host live traffic. 
+A production program is intended for a team that is ready to start writing, building, and testing code. The objective is to deploy it to support live traffic. 
 
 After you [create your production program](creating-production-programs.md), a [program creation wizard](using-the-wizard.md) guides users through selections depending on their objective in creating the program.
 
