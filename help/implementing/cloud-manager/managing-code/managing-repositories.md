@@ -25,7 +25,7 @@ Each pipeline is linked to a primary repository or branch. However, with [Git su
 
 On the **Repositories** page, you can view details about the selected repository. This information includes the type of repository in use. If the repository is marked as **Adobe**, it indicates that it is an Adobe-managed repository. If it is labeled as **GitHub**, it refers to a private GitHub repository that you manage. Additionally, the page provides details such as when the repository was created and the pipelines associated with it.
 
-To take action on a selected repository, you can click on the repository and use ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) to open a drop-down menu. For Adobe-managed repositories, you can **[Check Branches / Create Project](#check-branches)**. 
+To manage a selected repository, you can click on the repository and use ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) to open a drop-down menu. For Adobe-managed repositories, you can **[Check Branches / Create Project](#check-branches)**. 
 
 ![Repository actions](assets/repository-actions.png)
 *Drop-down menu on the Repositories page.*
@@ -60,7 +60,7 @@ For help choosing between the private and external repository methods, see [Add 
 
 ### Add a non-Adobe repository {#add-non-adobe-repositories}
 
-If you host your code outside Adobe, the page of instructions you use and the ownership-validation method both depend on where the repository is hosted. Use the following table to choose the correct path.
+If you host your code outside Adobe, the page of instructions you use and the ownership-validation method both depend on where the repository is hosted. Use the following table to choose the correct option.
 
 | Where your repository is hosted | Validation method | Page of instructions to use |
 | --- | --- | --- |

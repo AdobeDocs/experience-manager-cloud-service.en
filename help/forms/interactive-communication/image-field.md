@@ -105,3 +105,4 @@ The Image Field component in interactive communication editor is a versatile com
 - [Image Component](/help/forms/interactive-communication/image.md)
 - [Configure Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/configure-data-binding.md)
 - [Use the Rule Editor in Interactive Communication Editor](/help/forms/interactive-communication/use-the-rule-editor.md)
+

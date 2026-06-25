@@ -117,3 +117,4 @@ The Check Box component in the Interactive Communication editor is a simple yet 
 - [Radio Button Component](/help/forms/interactive-communication/radio-button.md)
 - [Configure Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/configure-data-binding.md)
 - [Use the Rule Editor in Interactive Communication Editor](/help/forms/interactive-communication/use-the-rule-editor.md)
+
