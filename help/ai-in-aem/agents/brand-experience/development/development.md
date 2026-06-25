@@ -150,9 +150,13 @@ When a pipeline execution fails, Cloud Manager also surfaces a **Troubleshoot wi
 
 1. Review the response and, if needed, continue the conversation in the **AI Assistant** text box to ask follow-up questions or request more detail.
 
-#### Troubleshoot from the Experience Home Failed Pipelines Widget {#troubleshoot-from-experience-home}
+#### Troubleshoot from the Experience Home Failed Pipelines Widget {#troubleshoot-from-experience-home-widget}
 
 Experience Home includes a **Failed Pipelines** widget that gives you an at-a-glance view of pipeline failures across your programs without requiring you to navigate into Cloud Manager first. Each row in the widget represents a failed pipeline and shows the pipeline name, last run date and time, duration, and the step that failed. A **Troubleshoot with AI** button is available inline for each entry.
+
+>[!NOTE]
+>
+>The **Failed Pipelines** widget is visible only when the **Admin & IT** role is selected in Experience Home. If you do not see the widget, verify that your role is set to **Admin & IT** using the role selector in the upper-right corner of the page.
 
 ![The Failed Pipelines widget on the Experience Home page, showing a failed pipeline entry with a Troubleshoot with AI button](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-failed-pipelines-widget.png)
 
