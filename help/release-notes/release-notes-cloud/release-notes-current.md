@@ -131,11 +131,15 @@ AI-generated video captions in Dynamic Media with OpenAPI capabilities use artif
 
 >[!IMPORTANT]
 >
->AI-generated video captions is available as Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>This feature is available as Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
-**Auto-generation of text transcripts**
+**Embedded video transcripts for improved accessibility and SEO**
 
-Dynamic Media with OpenAPI capabilities now supports auto-generation of text transcripts from the supported audio and video assets. The supported file types are automatically transcribed and the text is stored in WebVTT format. The WebVTT captions are used for more effective searching, captioning, or translation. Also, the feature improves accessibility, discoverability, and localization of the assets.
+The DynamicMedia Component now embeds transcripts for videos to improve accessibility for your customers. These are server side rendered (SSR) transcripts which directly increase the SEO and LLM visibility of videos. It also embeds a compliant VideoObject [ref https://schema.org/VideoObject] that helps search engine and LLM tools recognise videos in your page.
+
+>[!IMPORTANT]
+>
+>This feature is available as Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 **Custom thumbnails for videos**
 
