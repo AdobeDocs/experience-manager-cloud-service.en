@@ -1,6 +1,6 @@
 ---
 title: Dispatcher endpoint configuration with AEM Headless
-description: The Dispatcher is a caching and security layer in front of Adobe Experience Manager Publish environments. Several configurations are used to open GraphQL endpoints to headless applications.
+description: The Dispatcher is a caching and access-filtering layer in front of Adobe Experience Manager Publish environments. Several configurations are used to open GraphQL endpoints to headless applications.
 feature: Headless, Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
 role: Admin, Developer
@@ -8,7 +8,11 @@ role: Admin, Developer
 
 # Dispatcher - Endpoint configuration with AEM Headless
 
-The [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) is a caching and security layer in front of Adobe Experience Manager Publish environments. Several configurations are included by default to open GraphQL endpoints to headless applications.
+The [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) is a caching and access-filtering layer in front of Adobe Experience Manager Publish environments. Several configurations are included by default to open GraphQL endpoints to headless applications.
+
+>[!IMPORTANT]
+>
+>Dispatcher filter rules are access-filtering controls, not a substitute for JCR ACL-based access control on the publish instance. The publish instance must be secured independently of Dispatcher configuration. Dispatcher URL-matching logic and Sling's resource resolution use different URL decomposition rules; certain URL patterns may be parsed differently by each layer. Ensure that sensitive resources are protected by denying `jcr:read` for the `everyone` and `anonymous` principals at the repository level, regardless of Dispatcher filter configuration.
 
 >[!NOTE]
 >
