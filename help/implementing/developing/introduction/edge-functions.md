@@ -378,6 +378,7 @@ const count = entry ? Number(await entry.text()) : 0;
 // Write a value
 await kv.put('visit-count', String(count + 1));
 ```
+
 >[!NOTE]
 >
 >- The KV store is always named `kv_default`.
@@ -420,7 +421,7 @@ logger.log(JSON.stringify({
   url: event.request.url
 }));
 ```
-
+ 
 >[!NOTE]
 >
 >CDN logs — which include AEM Edge Function log entries — can be downloaded from Cloud Manager for Java-stack environments, but not for Edge Delivery sites.
