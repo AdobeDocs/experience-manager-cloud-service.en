@@ -47,7 +47,7 @@ You can use the far left panel of the [Content Fragments console](/help/sites-cl
 
 This will open the view for Content Fragment Models:
 
-![Content Fragments console - Managing Content Fragment Models](assets/cf-managing-content-fragment-models.png)
+![Content Fragments console - Managing Content Fragment Models](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models.png)
 
 Here you can see that there are three main areas:
 
@@ -124,7 +124,7 @@ The main/right panel (table view) of the console provides a range of information
 
 When you select a specific model, the properties of that model are shown (as defined when [creating the model](#creating-a-content-fragment-model)). If the model is not **Locked**, then some items can be updated. You can also use the information icon (next to the model **Title**) to open and close this information panel.
 
-![Content Fragments console - Information for a selected Content Fragment Model](assets/cf-managing-content-fragment-models-selected.png)
+![Content Fragments console - Information for a selected Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-selected.png)
 
 * **[Path](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)**
 * **[Status](#enabling-a-content-fragment-model)**
@@ -175,11 +175,11 @@ Selecting a single model also shows the [model properties](#properties) in the r
 
 As with other consoles you can configure the columns that are visible, and available for action:
 
-![Content Fragments console - column configuration](assets/cf-managing-console-column-icon.png)
+![Content Fragments console - column configuration](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-column-icon.png)
 
 This will present a list of columns that you can hide or show:
 
-![Content Fragments console - column configuration](assets/cf-managing-content-fragment-models-column-selection.png)
+![Content Fragments console - column configuration](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-column-selection.png)
 
 ## Filter Content Fragment Models {#filter-content-fragment-models}
 
@@ -196,7 +196,7 @@ The Filter panel offers:
 
  Once selected, the **Filtering by** options are shown (at the top of the main panel). They can be deselected from there. For example:
 
-![Content Fragments console - Filtering Content Fragment Models](assets/cf-managing-content-fragment-models-filter.png)
+![Content Fragments console - Filtering Content Fragment Models](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-filter.png)
 
 ### Fast Filtering {#fast-filtering}
 
@@ -243,7 +243,7 @@ For example, select **Enabled** in the **Status** column. Once selected, this wi
     >
     >See [Content Fragment Model - Properties](#model-properties) for full details.
 
-   ![Title and description](assets/cf-managing-content-fragment-models-create.png)
+   ![Title and description](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-create.png)
 
 1. Use **Create** to save the empty model, or **Create and open**.
 
@@ -302,7 +302,7 @@ To configure the **Policies** for **Allowed Content Fragment Models**:
 
      Multiple models can be allowed.
 
-   ![Content Fragment Model Policy](assets/cf-cfmodels-policy-assets-folder.png)
+   ![Content Fragment Model Policy](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-policy-assets-folder.png)
 
 1. **Save** any changes.
 
@@ -419,7 +419,7 @@ You can manage **Locked** models from either the console, or the model editor:
 
   * If you select **Edit**, you can edit and save your updates: 
   
-    ![Edit - locked Content Fragment Model](assets/cf-cfmodels-editor-locked-edit.png)
+    ![Edit - locked Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-editor-locked-edit.png)
 
     >[!NOTE]
     >

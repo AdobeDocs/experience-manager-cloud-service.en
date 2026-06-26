@@ -41,10 +41,8 @@ For a newly created program, a New Relic One sub-account is created for you. How
 
 **To activate your New Relic One sub-account:**
 
-1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
-   1. In the **Quick access** section, click **Experience Manager**.
-   1. In the left side panel, click **Cloud Manager**.
-1. Select an organization that you want.
+{{sign-in-to-cloud-manager}}
+
 1. On the **My Programs** console, click a program for which you want to manage your New Relic One users.
 1. From the left side menu, under **Services**, click ![Data icon or Environments icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environments**.
 1. On the Environments page, near the upper-right corner, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), then click **Activate New Relic**.
@@ -65,10 +63,8 @@ You can define the users of your New Relic One sub-account associated with your 
 
 **To manage New Relic One users:**
 
-1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
-   1. In the **Quick access** section, click **Experience Manager**.
-   1. In the left side panel, click **Cloud Manager**.
-1. Select an organization that you want.
+{{sign-in-to-cloud-manager}}
+
 1. On the **My Programs** console, click a program for which you want to manage your New Relic One users.
 1. From the left side menu, under **Services**, click ![Data icon or Environments icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environments**.
 1. On the Environments page, near the upper-right corner, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), then click **Manage Users**.
@@ -118,10 +114,8 @@ Once you have [activated your New Relic account](#activate-account), you can ope
 
 **To open New Relic One using Cloud Manager:**
 
-1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
-   1. In the **Quick access** section, click **Experience Manager**.
-   1. In the left side panel, click **Cloud Manager**.
-1. Select an organization that you want.
+{{sign-in-to-cloud-manager}}
+
 1. On the **My Programs** console, click a program for which you want to open New Relic One.
 1. From the left side menu, under **Services**, click ![Data icon or Environments icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environments**.
 1. On the Environments page, near the upper-right corner, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), then click **Open New Relic**.

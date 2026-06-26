@@ -11,7 +11,7 @@ role: Admin, Developer
 
 Learn how to access and manage logs to aid your development process in AEM as a Cloud Service.
 
-You can access a list of available log files for the selected environment using the **Environments** card from the **Overview** page or Environment Details page.
+You can access a list of available log files for the selected environment using the **Environments** card from the **Overview** page or the **Environment Details** page.
 
 Logs are retained for seven days.
 
@@ -27,7 +27,7 @@ Logs are retained for seven days.
 
    ![Download logs menu item](assets/download-logs1.png)
 
-1. In the **Download Logs** dialog, select the appropriate **Service** from the drop-down menu
+1. In the **Download Logs** dialog box, select the appropriate **Service** from the drop-down menu.
 
    ![Download Logs dialog](assets/download-preview.png)
 
@@ -45,19 +45,19 @@ You can also access your logs from the **Environments** page.
 
 In addition to downloading logs through the UI, logs are available through the API and the command-line interface. 
 
-To download the log files for a specific environment, the command would be similar to the following.
+To download the log files for a specific environment, the command is similar to the following.
 
 ```shell
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-Also, you can tail logs by way of the command-line interface.
+Also, you can tail logs using the command-line interface.
 
 ```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-To obtain the environment Id (1884 in this example) and the available service or log name options, you can use the following commands.
+To obtain the environment ID (1884 in this example) and the available service or log name options, you can use the following commands:
 
 ```shell
 $ aio cloudmanager:list-environments
@@ -84,7 +84,7 @@ Environment Id Service    Name
 
 >[!TIP]
 >
->Check out [this video resource](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) to learn more about debugging AEM as a Cloud Service.
+>Watch [this video resource](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) to learn more about debugging AEM as a Cloud Service.
 
 See the following additional resources to learn more about the Cloud Manager API and Adobe I/O CLI:
 

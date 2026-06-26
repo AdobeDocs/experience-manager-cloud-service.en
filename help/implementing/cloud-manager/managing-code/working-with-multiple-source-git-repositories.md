@@ -12,11 +12,11 @@ Learn how to manage multiple Git repositories when working with Cloud Manager.
 
 ## Sync private Git repositories {#syncing-customer-managed-git-repositories}
 
-Instead of directly working with Cloud Manager's Git repository, [customers can work with their own private Git repository](integrating-with-git.md) or multiple own Git repositories. In these cases, set up an automated synchronization process to ensure that the Git repository in Cloud Manager is always kept up-to-date.
+Instead of directly working with Cloud Manager's Git repository, [customers can work with their own private Git repository](integrating-with-git.md) or multiple private Git repositories. To ensure that the Git repository in Cloud Manager is always kept up-to-date, set up an automated synchronization process.
 
-Depending on where the customer's Git repository is hosted, a GitHub action or a continuous integration solution like Jenkins could be used to set up the automation. With an automation in place, every push to a customer-owned Git repository can be automatically forwarded to Cloud Manager's Git repository.
+Depending on where the customer's Git repository is hosted, a GitHub action or a continuous integration solution like Jenkins sets up the automation. With automation in place, every push to a customer-owned Git repository can be automatically forwarded to Cloud Manager's Git repository.
 
-While such an automation for a single customer-owned Git repository is straight forward, configuring it for multiple repositories requires an initial setup. The contents from multiple Git repositories must be mapped to different directories within the single Cloud Manager Git repository. Cloud Manager's Git repository must be provisioned with a root Maven `pom.xml`, listing the different subprojects in the modules section.
+While such an automation for a single customer-owned Git repository is straightforward, configuring it for multiple repositories requires an initial setup. The contents from multiple Git repositories must be mapped to different directories within the single Cloud Manager Git repository. Cloud Manager's Git repository must be provisioned with a root Maven `pom.xml`, listing the different subprojects in the modules section.
 
 The following is a sample `pom.xml` file for two customer-owned Git repositories.
 
@@ -44,27 +44,27 @@ The following is a sample `pom.xml` file for two customer-owned Git repositories
 
 Such a root `pom.xml` is pushed to a branch in Cloud Manager's Git repository. Then, the two projects must be set up to forward changes automatically to Cloud Manager's Git repository. 
 
-A possible solution would be the following.
+The following is a possible solution.
 
 1. Trigger a GitHub action by pushing to a branch in project A.
 1. The action checks out project A and the Cloud Manager Git repository. Then it copies all contents of project A to the `project-a` directory in Cloud Manager's Git repository.
-1. Then the action commits-pushes the change.
+1. Then the action commits and pushes the change.
 
-For example, a change on the main branch in project A is automatically pushed to the main branch in Cloud Manager's Git repository. There could be a mapping between branches like a push to a branch named `dev` in project A is pushed to a branch named `development` in Cloud Manager's Git repository. Similar steps are required for project B.
+For example, a change on the main branch in project A is automatically pushed to the main branch in Cloud Manager's Git repository. A mapping exists between branches, such as a push to a branch named `dev` in project A being pushed to a branch named `development` in Cloud Manager's Git repository. Similar steps are required for project B.
 
-Depending on the branching strategy and workflows, the syncing can be configured for different branches. If the used Git repository does not provide a concept similar to GitHub actions, an integration by way of Jenkins (or similar) is possible as well. In this case, a webhook triggers a Jenkins job, which does the work.
+Depending on the branching strategy and workflows, the syncing can be configured for different branches. If the Git repository in use does not provide a concept similar to GitHub actions, an integration through Jenkins (or similar) is possible as well. In this case, a webhook triggers a Jenkins job, which performs the task.
 
-Follow these steps so you can add a new, third source or repository.
+To add a new, third source or repository, follow these steps.
 
 1. Add a GitHub action to the new repository, which pushes changes from that repository to Cloud Manager's Git repository.
-1. Perform that action at least once to ensure that project code is in Cloud Manager's Git repository.
+1. To ensure that project code is in Cloud Manager's Git repository, perform that action at least once.
 1. In the Cloud Manager Git repository, add a reference to the new directory in the root Maven `pom.xml`.
 
 
 
 ## Sample GitHub action {#sample-github-action}
 
-The following is a sample GitHub action triggered by a push to the main branch. Then pushing into a subdirectory of Cloud Manager's Git repository. The GitHub actions must be provided with two secrets, `MAIN_USER` and `MAIN_PASSWORD`, to be able to connect and push to Cloud Manager's Git repository.
+The following is a sample GitHub action triggered by a push to the main branch. Then push into a subdirectory of Cloud Manager's Git repository. The GitHub action must be provided with two secrets, `MAIN_USER` and `MAIN_PASSWORD`, to be able to connect and push to Cloud Manager's Git repository.
 
 ```java
 name: SYNC
@@ -125,13 +125,13 @@ Using a GitHub action is flexible. Any mapping between branches of the Git repos
 
 >[!NOTE]
 >
->The sample script uses `git add` to update the repository. The script assumes that removals are included. Depending on the default configuration of Git, it must be replaced with `git add --all`.
+>The sample script uses `git add` to stage files in the repository. The script assumes that removals are handled. Depending on the default configuration of Git, replace it with `git add --all`.
 
 ## Sample Jenkins job {#sample-jenkins-job}
 
 The following is a sample script that can be used in a Jenkins job or similar and has the following flow:
 
-1. It gets triggered by a change in a Git repository.
+1. A change in a Git repository triggers it.
 1. The Jenkins job checks out the latest state of that project or branch.
 1. The job then triggers this script.
 1. This script in turn checks out Cloud Manager's Git repository and commits the project code to a subdirectory.
@@ -194,4 +194,4 @@ Using a Jenkins job is flexible. Any mapping between branches of the Git reposit
 
 >[!NOTE]
 >
->The sample script uses `git add` to update the repository. The script assumes that removals are included. Depending on the default configuration of Git, it must be replaced with `git add --all`.
+>The sample script uses `git add` to update the repository. The script assumes that removals are processed. Depending on the default configuration of Git, it must be replaced with `git add --all`.

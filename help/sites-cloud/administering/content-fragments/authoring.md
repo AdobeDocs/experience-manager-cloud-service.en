@@ -52,7 +52,7 @@ When you first open the Content Fragment Editor, you see four main areas:
   * [Publish](#publish-content-fragment), and [Unpublish](#unpublish-content-fragment) actions
   * an option to show all **Parent References** (link icon)
   * the fragment **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**, and last saved information
-  * a toggle to switch to the original (Assets-based) editor
+  * a toggle to switch to the original (/help/sites-cloud/administering/content-fragments/assets-based) editor
 
     >[!WARNING]
     >
@@ -538,7 +538,17 @@ To enable you to collaborate in-product and in-context, the **Comments** tab in 
 
 ## Preview your Fragment {#preview-content-fragment}
 
-The Content Fragment editor provides authors with the option to preview their edits in an external frontend application. This requires that the **[Default Preview URL Pattern](/help/sites-cloud/administering/content-fragments/preview.md#preview-url-pattern)** is defined, to activate the **Preview** button in the top toolbar of the editor. You can select this button to launch the external application (in a separate tab) to render the Content Fragment. 
+The Content Fragment editor provides authors with two options to preview their fragments. 
+
+Both options are available using **Preview** in the top toolbar:
+
+* **Application**
+
+  * Select this option to launch the [external application (in a separate tab) to render the Content Fragment](/help/sites-cloud/administering/content-fragments/preview.md#preview-in-an-application). 
+
+* **Template**
+
+  * This option allows you to preview your Content Fragment with **[Visualization (HTML) Templates](#preview-with-visualization-html-templates)**.
 
 ## Publish your Fragment {#publish-content-fragment}
 

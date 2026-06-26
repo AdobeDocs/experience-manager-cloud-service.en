@@ -49,7 +49,7 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 **Add shapes to Dynamic Media templates**
 
-You can now [add shape layers to Dynamic Media templates](/help/assets/dynamic-media/dynamic-media-templates.md#add-shapes-to-the-canvas) in Experience Manager Assets. Similar to image and text layers, shape layers support parameters for real-time updates via the template URL. You can also include call-to-action (CTA) links to shapes in your templates.
+You can now [add shape layers to Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md#add-shapes-to-the-canvas) in Experience Manager Assets. Similar to image and text layers, shape layers support parameters for real-time updates via the template URL. You can also include call-to-action (CTA) links to shapes in your templates.
 
 ![Add shpaes to Dynamic Media templates](/help/assets/assets/enable-uniform-radius-shape.png)
 

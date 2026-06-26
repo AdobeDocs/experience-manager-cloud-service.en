@@ -202,7 +202,7 @@ If you have activated additional publish regions, you can check the status of th
 
    ![Additional publish regions status information on the Environments card](assets/additional-publish-region-status-environments-card.png)
 
-Alternatively you can access the same information from the **Environments** tab.
+Alternatively, you can access the same information from the **Environments** tab.
 
 1. On the **Overview** page, click ![Data icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environments**.
 
@@ -215,9 +215,9 @@ Alternatively you can access the same information from the **Environments** tab.
 
    ![Additional publish regions status information on the Environments tab](assets/additional-publish-region-status-environments-tab.png)
  
-If there are any issues reported with additional publish regions, be patient. Cloud Manager continuously tries to recover the region and it may become available at any time. If the problem persists after several hours, you can remove the additional publish region and re-add it (either the same region or another region) to trigger a complete deployment.
+If issues are reported with additional publish regions, wait a while. Cloud Manager continuously attempts to recover the region, and it may become available again at any time. If the issue persists for several hours, remove and re-add the additional publish region (either the same region or a different one) to trigger a full deployment.
 
-How long you wait for the system to recover on its own before taking additional action depends on the impact the failure of that region has to your systems.
+How long you wait for the system to recover on its own before taking additional action depends on the impact the failure of that region has on your systems.
 
 Regardless, [traffic is always routed to the closest region that is online](/help/operations/additional-publish-regions.md). If you continue to see issues, contact Adobe Customer Care.
 
@@ -225,7 +225,7 @@ Regardless, [traffic is always routed to the closest region that is online](/hel
 
 As a cloud-native service, Adobe automatically manages updates for your development, staging, and production environments within production programs.
 
-However, updates to environments in sandbox programs are managed within the programs. When such an environment is not running the latest publicly available AEM version, the status on the **Environments** card on the **Overview** screen of the program shows **Update Available**.
+However, sandbox program environments are updated within the program itself. If an environment is not running the latest public AEM version, the **Environments** card on the program **Overview** screen shows **Update Available**.
 
 ![Environment update status](assets/environ-update.png)
 
@@ -263,7 +263,7 @@ The **Update** option's behavior varies depending on the configuration and curre
 
 | State | The Update option... |
 | --- | --- |
-| The pipeline has already been updated | prompts the user to execute the pipeline. |
+| The pipeline has already been updated | prompts the user to run the pipeline. |
 | The pipeline is already being updated | informs the user that an update is already running. |
 | The pipeline does not exist | prompts the user to create one. |
 
@@ -332,7 +332,7 @@ Custom domain names are supported in Cloud Manager for Sites programs for both p
 
 An IP Allow List is supported in Cloud Manager for author, publish, and preview services for Sites programs.
 
-To manage IP Allow Lists, navigate to the ![Data icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environments** page of the **Overview** page of your program. Click an individual environment so you can manage its details.
+To manage IP Allow Lists, navigate to the ![Data icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environments** page of the **Overview** page of your program. Select an individual environment to manage its details.
 
 ### Apply an IP Allow List {#apply-ip-allow-list}
 

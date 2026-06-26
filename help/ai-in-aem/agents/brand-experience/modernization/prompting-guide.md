@@ -71,6 +71,21 @@ Use this prompt when migrating content from an existing website to Edge Delivery
   * When migrating multiple pages, the agent loads existing custom variants first and reuses them when styling matches (70% similarity threshold based on purpose, colors, typography, spacing, layout).
 * Header, navigation, and footer are excluded from page migration. These are handled by dedicated skills.
 * Each migration creates import infrastructure (page templates, block parsers, transformers) for future bulk imports.
+* Dynamic Media and Scene7 images are detected in the source and preserved as DM URLs rather than imported as static renditions, so responsive and on-the-fly transformations remain intact. This applies to both Document Authoring and AEM Sites/Universal Editor migrations.
+
+### Site Catalog {#site-catalog}
+
+Use this prompt to analyze an existing website in order to understand its scale, templates, and block variants before starting a migration. The results can be used for [bulk imports.](#bulk-import)
+
+#### Example Prompts {#example-prompts-site-catalog}
+
+* "Scope site https://example.com"
+* "Find templates on https://example.com"
+* "Catalog site https://example.com"
+* "How many page types are there on https://example.com"
+* "What are the layouts on https://example.com"
+
+For details on the site catalog skill, please see the document [Site Catalog Skill.](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
 
 ### Bulk Import {#bulk-import}
 
@@ -467,3 +482,4 @@ Use this prompt to troubleshoot problems with blocks, images, CSS, or preview.
 
 @gwalt, is the additional content in the prompting guide wiki ready to be added here?
 -->
+

@@ -146,6 +146,11 @@ After a content set is created, you can use it to copy content.
 
      *  If you don't choose **Wipe destination before import** then the **Copy Content** flow will work as before.
 
+   * **Package Import Failure Policy** Select the policy to use when importing packages:
+     ![Copying content](assets/content-copy-import-policy.png)
+     * **Stop on first failure**: Default mode, will stop after the first failure encountered
+     * **Continue with remaining packages**: Will continue the import process, even after a failure. The packages (and their content) that were not successful can be found in the import logs
+
 1. Click **Copy**.
 
 The copy process starts. The status of the copy process is reflected in the console for the selected content set.

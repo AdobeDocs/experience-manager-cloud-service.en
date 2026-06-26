@@ -4,6 +4,8 @@ description: Use [!DNL AEM Forms] designer to create Document of Record template
 feature: Adaptive Forms, Forms Designer
 role: Admin, Developer, User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
+hide: true
+index: false
 exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
 ---
 # Use Adobe Experience Manager (AEM) Forms Designer {#install-designer}

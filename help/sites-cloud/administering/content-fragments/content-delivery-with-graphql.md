@@ -62,7 +62,7 @@ The AEM GraphQL API implementation is based on the [GraphQL Java libraries](http
 * The [Content Fragment Models](#content-fragments-models) provide the required structure by means of defined data types.
 * The [Fragment Reference](#fragment-references), available when defining a model, can be used to define additional layers of structure.
 
-![Content Fragments for use with GraphQL](assets/cf-contentdelivery-cf-use-with-graphql.png "Content Fragments for use with GraphQL")
+![Content Fragments for use with GraphQL](/help/sites-cloud/administering/content-fragments/assets/cf-contentdelivery-cf-use-with-graphql.png "Content Fragments for use with GraphQL")
 
 ### Content Fragments {#content-fragments}
 
