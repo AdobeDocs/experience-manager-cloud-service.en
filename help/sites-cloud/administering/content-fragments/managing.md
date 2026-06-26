@@ -640,14 +640,37 @@ Once selected, this will be shown as a filter predicate, and the list will be fi
 
 ## Searching Fragments {#searching-fragments}
 
-The search box supports full-text search. Entering your search terms in the search box:
+The Content Fragment console supports:
 
-![Content Fragments console - Searching](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-specification.png)
+* [Full-text search](#full-text-search)
+* [Semantic search](#semantic-search)
 
-Will provide the selected results:
+<!-- CQDOC-23674 - activate when toggle visible -->
+<!--
 
-![Content Fragments console - Search Results](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-results.png)
+Use the toggle option to select your search method:
+
+![Content Fragments console - select search method](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-select-search.png)
+-->
 
 The search box also provides quick access to **Recent Content Fragments** and **Saved Searches**:
 
 ![Content Fragments console - Recent and Saved](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-saved.png)
+
+### Full-text search {#full-text-search}
+
+Full-text search allows you to search the Content Fragment content for a specific word or phrase. Entering your search terms in the search box:
+
+![Content Fragments console - full-text search](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-full-text-search-specification.png)
+
+Will provide the selected results:
+
+![Content Fragments console - Search Results](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-full-text-search-results.png)
+
+### Semantic search {#semantic-search}
+
+Semantic search for Content Fragments improves content discovery by enabling natural-language queries. It allows you to find fragments based on meaning and intent, instead of relying solely on exact keywords or full-text matches.
+
+Enter your search query in the search box; for example `fruity and light roast`:
+
+![Content Fragments console - semantic search](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-semantic-search.png)
