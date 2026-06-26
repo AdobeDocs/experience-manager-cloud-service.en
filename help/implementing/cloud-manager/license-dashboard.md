@@ -96,7 +96,7 @@ For both storage and standard users views, you can use the **Environment Type** 
 
 The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time.
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a pop-up with details per program for the selected point in time.
 
 #### Standard Users {#standard-users}
 
@@ -104,7 +104,7 @@ The right side of the window presents an area chart showing the usage broken dow
 
 The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time.
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a pop-up with details per program for the selected point in time.
 -->
 
 ## Frequently asked questions {#faq}
