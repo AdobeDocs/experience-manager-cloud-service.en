@@ -96,11 +96,11 @@ AEM now supports [Visual Content Fragments](/help/sites-cloud/administering/cont
 
 **Open Photoshop assets in Adobe Express Embedded Editor**
 
-You can now open Photoshop PSD files in addition to JPEG and PNG formats in Adobe Express embedded editor from Assets view. This enhancement enables creative and marketing teams to work with layered design files without leaving AEM Assets, streamlining content updates and reducing the need to switch between applications. PSD support helps accelerate content creation workflows while preserving the flexibility of source design assets. Users can save resulting remixed creations as channel-ready assets to AEM. 
+You can now open Adobe Photoshop (.psd) files in addition to JPEG and PNG formats in Adobe Express embedded editor from Assets view and Content Hub. This enhancement enables creative and marketing teams to work with layered design files without leaving AEM Assets, streamlining content updates and reducing the need to switch between applications. PSD support helps accelerate content creation workflows while preserving the flexibility of source design assets. Users can save resulting remixed creations as channel-ready assets to AEM. 
 
 **Import Adobe Illustrator and Adobe InDesign assets from AEM Assets into Adobe Express**
 
-Adobe Express now supports importing Adobe Illustrator (.ai) and Adobe InDesign (.indd) files from AEM Assets. This capability allows creative and marketing teams to access and reuse approved design assets more easily, accelerating content creation and helping ensure consistent brand experiences across channels.
+Adobe Express now supports importing Adobe Illustrator (.ai) and Adobe InDesign (.indd) files from AEM Assets using the Assets plugin. Adobe Illustrator files can be imported into the current document or imported into a new Express document. Adobe InDesign files can be imported into a new Express document. This capability allows creative and marketing teams to access and reuse approved design assets more easily, accelerating content creation and helping ensure consistent brand experiences across channels.
 
 >[!IMPORTANT]
 >
@@ -108,7 +108,7 @@ Adobe Express now supports importing Adobe Illustrator (.ai) and Adobe InDesign 
 
 **Maintain asset lineage between Adobe Express and AEM Assets**
 
-AEM Assets now preserves lineage information for assets created in Adobe Express using assets sourced from AEM. This capability records relationships between source assets and the resulting content, enabling organizations to trace how approved assets are reused across creative workflows.
+AEM Assets now preserves lineage information for assets created in Adobe Express using assets sourced from AEM. This capability records relationships between source assets and the resulting content and stores it as asset metadata in AEM, enabling organizations to trace how approved assets are reused across creative workflows.
 
 By maintaining asset lineage metadata, teams can improve governance, compliance, and content supply chain transparency. It also helps marketers and content administrators better understand asset reuse, support rights management initiatives, and track the origin of assets used in published content.
 
