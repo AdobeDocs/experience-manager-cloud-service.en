@@ -154,3 +154,4 @@ The following is a full list of anti-patterns and issues that Health Assessment 
 | Repository Structure | Patterns related to JCR repository organization and structure. |
 | Dependencies | Patterns related to code dependencies and version management. |
 | Statistics | Patterns that represent usage statistics and metrics. |
+

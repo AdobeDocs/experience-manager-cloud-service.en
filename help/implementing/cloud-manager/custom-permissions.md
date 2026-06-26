@@ -194,3 +194,4 @@ Yes. A user can be part of multiple profiles including predefined and custom per
 ### What happens if a user has permission to edit an environment/pipeline but doesn't have access to a program which contains the environment/pipeline?
 
 The user is unable to access the environment or pipeline if they do not have the **Program Access** permissions containing the environment or pipeline.
+

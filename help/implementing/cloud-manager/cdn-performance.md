@@ -70,3 +70,4 @@ Cache metrics are updated every 24 hours.
 >[!TIP]
 >
 >For more details on how Cloud Manager and the CDN interact with the Dispatcher, see [Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md).
+

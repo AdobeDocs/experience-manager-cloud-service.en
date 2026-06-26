@@ -1271,3 +1271,4 @@ The context can still be used. A deprecation warning is shown in the RDE plugin.
 ##### Use Any Other Context Name Also for the Cloud Manager Plug-In {#use-any-other-context-name-also-for-the-cloud-manager-plug-in}
 
 The Cloud Manager plug-ins offer a parameter to define a context to be used. It does not support the IMS default context configuration just yet. To do so, configure the RDE plugin using [the example to set up a local context](/help/implementing/developing/introduction/rapid-development-environments.md#install-the-rde-command-line-tools) and tell the Cloud Manager plugin to use `myContext` like `--imsContextName=myContext` in every call to it.
+

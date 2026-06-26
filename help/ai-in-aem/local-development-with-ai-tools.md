@@ -323,3 +323,4 @@ Other IDEs can be configured in a similar manner. The SDK's `docs/DispatcherMCP.
 |`tail_logs`|Tails relevant Dispatcher and HTTPD runtime logs|
 
 The MCP surface intentionally exposes only these seven tools; prompts and resources remain in the skill layer. Full reference documentation is available in `docs/DispatcherMCP.md` inside the extracted Dispatcher SDK.
+

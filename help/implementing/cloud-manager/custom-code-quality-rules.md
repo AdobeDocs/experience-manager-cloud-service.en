@@ -1287,3 +1287,4 @@ AEM Cloud Service prohibits creation of tokenizers with incorrect names in analy
 * **Since**: Version 2024.7.0
 
 AEM Cloud Service prohibits the creation of indexing definitions that contain properties with spaces.
+
