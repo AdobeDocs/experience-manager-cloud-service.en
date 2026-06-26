@@ -29,3 +29,4 @@ These **preview** release notes are provided as a convenience so you know what c
 
 * Accessibility improvements have been made to heading hierarchies.
 * Accessibility improvements have been made to maintain focus properly in the location bar to aid keyboard navigation of the editor.
+

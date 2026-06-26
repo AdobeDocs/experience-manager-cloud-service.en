@@ -30,3 +30,4 @@ These are the release notes for the 25 June 2026 release of the Universal Editor
 
 * Numerous buttons now correctly have accessible names.
 * A problem with persisting certain Content Fragments after selecting them with a picker has been fixed.
+
