@@ -4,7 +4,7 @@ description: Learn how to open two versions of an Interactive Communication side
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms."
 exl-id: compare-interactive-communication-versions
 ---
 
