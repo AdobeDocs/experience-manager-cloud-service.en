@@ -12,7 +12,7 @@ HTML templates allow you to control how your Content Fragments are displayed. Yo
 
 This article explains how to create custom HTML templates with Handlebars syntax for rendering Visual Content Fragments.
 
-After creating your templates you can then:
+After creating your templates you can:
 
 * [Use your templates in AEM](#using-a-content-fragment-html-template-in-aem)
 

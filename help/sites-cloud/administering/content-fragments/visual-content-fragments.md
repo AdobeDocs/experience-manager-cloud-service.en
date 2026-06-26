@@ -20,7 +20,7 @@ You, or your development team, can [create and customize your own HTML templates
 
 >[!NOTE]
 >
->A **Generic Template** is always available within AEM as a default, associated with every model. This template enables key/value pairs in structured content to be displayed in a clean, table-style format to support content Quality Assurance (QA) use cases. 
+>A **Generic Template** is always available within AEM as a default and is associated with every model. This template enables key/value pairs in structured content to be displayed in a clean, table-style format to support content Quality Assurance (QA) use cases. 
 
 ## Create a Template {#create-a-template}
 
