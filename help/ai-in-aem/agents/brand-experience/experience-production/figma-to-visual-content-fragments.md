@@ -9,14 +9,6 @@ role: User, Admin, Developer
 
 The Figma to Visual Content Fragments job of the [Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) automates the process of recreating Figma designs in Adobe Experience Manager (AEM) as a Cloud Service. 
 
-<!-- CQDOC-23232 - remove when GA -->
-
->[!NOTE]
->
->The Figma to Visual Content Fragments job is currently in Limited Availability. 
->
->If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
-
 ## Overview {#overview}
 
 AEM Visual Content Fragments allow previewing and delivering Content Fragments using a visual layout based on an [HTML template](/help/implementing/developing/extending/content-fragments-visualization-templates.md).

@@ -64,7 +64,7 @@ To use the Content Fragment functionality, of Content Fragment Models and GraphQ
       * **Content Fragment Models** 
       * **GraphQL Persisted Queries**
 
-      ![Define configuration](assets/cf-setup-create-conf.png)
+      ![Define configuration](/help/sites-cloud/administering/content-fragments/assets/cf-setup-create-conf.png)
 
 1. Select **Create** to save the definition.
 
@@ -74,4 +74,4 @@ When the configuration **global** is enabled for Content Fragment functionality,
 
 To use other configurations (therefore excluding global) with a comparable Assets folder, you have to define the connection. Do this by selecting the appropriate **Configuration** in the **Cloud Services** tab of the **Folder Properties** of the appropriate folder.
 
-![Apply configuration](assets/cf-setup-apply-conf.png)
+![Apply configuration](/help/sites-cloud/administering/content-fragments/assets/cf-setup-apply-conf.png)

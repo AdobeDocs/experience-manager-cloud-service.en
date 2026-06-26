@@ -51,7 +51,7 @@ To add, update, or delete environment variables, you must be a member of the [De
 
    | Field | Description |
    | --- | --- |
-   | Name | A unique name of the configuration variable. It identifies the specific variable that is used in the environment. It must adhere to the following naming conventions:<ul><li>Variables can only contain alphanumeric characters and the underscore (`_`).</li><li>There is a limit of 200 variables per environment.</li><li>Each name must be 100 characters or less.</li></ul> |
+   | Name | A unique name of the configuration variable. It identifies the specific variable that is used in the environment. It must adhere to the following naming conventions:<ul><li>Variables can only contain alphanumeric characters and the underscore (`_`).</li><li>There is a limit of 400 variables per environment.</li><li>Each name must be 100 characters or less.</li></ul> |
    | Value | The value that the variable holds. |
    | Step Applied | Select the service to which the variable applies. Select **All** to have the variable applied to all services.<ul><li>**All**</li><li>**Author**</li><li>**Publish**</li><li>**Preview**</li></ul> |
    | Type | Select if the variable is normal or a secret. |

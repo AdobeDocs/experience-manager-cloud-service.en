@@ -88,7 +88,7 @@ In this case, [!DNL Assets] saves the changes to the **[!UICONTROL Title]** prop
 >
 >The writeback feature is not enabled by default in [!DNL Assets]. See how to [enable metadata writeback](#enable-xmp-writeback). MSM for digital assets does not work with metadata writeback enabled. Upon writeback, the inheritance breaks.
 
-### Enable XMP writeback {#enable-xmp-writeback}
+### Enable XMP writeback
 
 [!UICONTROL DAM Metadata Writeback] workflow is used to writeback the metadata of an asset. To enable writeback, follow any of the following three methods:
 
@@ -112,7 +112,7 @@ To apply the workflow to all the uploaded assets, add the workflow to a post-pro
 <!--
  Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
-### Enable XMP writeback {#enable-xmp-writeback}
+### Enable XMP writeback
 
 To enable the metadata changes to be propagated to the renditions of the asset when uploading it, modify the **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration in Configuration Manager.
 

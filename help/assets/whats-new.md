@@ -31,10 +31,14 @@ For example, a search for `Woman drinking coffee` can also return assets tagged 
 
 Administrators can enable or disable AI Search in Content Hub using the Configurations menu by selecting either AI Search or traditional keyword search.
 
+[!BADGE Dive Deeper into this Feature]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#ai-search-aem-assets-content-hub"}
+
 
 **Custom Sorting options**
 
 Content Hub now allows administrators to enable custom metadata fields as sorting options on the Content Hub home page. In addition to the default sorting options, Size, Modified, Name, and Relevance, administrators can configure business-specific metadata fields such as Channel, Region, SKU, or Campaign to help users organize search results more effectively.
+
+[!BADGE Dive Deeper into this Feature]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#configure-sorting-aem-assets-content-hub"}
 
 **Asset Search and Download Event Support for Delivery APIs**
 
@@ -42,9 +46,14 @@ AEM Assets Delivery APIs now support asset search and asset download events, ena
 
 With event-driven insights, teams can better understand content engagement and build more connected digital asset workflows. For more details, see the [API documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/asset_downloaded).
 
+**Asset Delivery URL**
+
+Content Hub now allows users to copy an asset's delivery URL directly from the asset properties. This enhancement makes it easier to share and embed approved assets across websites, applications, and external systems. By providing quick access to delivery-ready links, teams can streamline content distribution workflows and accelerate asset reuse across digital experiences.
+
 >[!IMPORTANT]
 >
 >These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+
 
 ## February 2026 release features {#february-2026-release-features}
 

@@ -8,7 +8,7 @@ role: Admin, Developer
 ---
 # Pipeline variables in Cloud Manager {#configuring-pipeline-variables}
 
-Your build process might rely on specific configuration variables that should not be stored in the Git repository. Or, you may need to adjust them between pipeline runs on the same branch. Cloud Manager lets you manage these settings as pipeline variables.
+Your build process uses specific configuration variables that are not stored in the Git repository. Or, you need to adjust them between pipeline runs on the same branch. Cloud Manager lets you manage these settings as pipeline variables.
 
 ## About pipeline variables {#pipeline-variables}
 
@@ -16,13 +16,13 @@ Using Cloud Manager you can configure pipeline variables in several different wa
 
 * [Using the Cloud Manager user interface](#ui)
 * [Using the Cloud Manager CLI](#cli)
-* [Using the Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Variables/operation/getPipelineVariables)
+* [Using the Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#tag/Variables/operation/getPipelineVariables)
 
-Variables may be stored as either plain text or encrypted at rest. In either case, variables are made available inside the build environment as an environment variable, which can then be referenced from inside the `pom.xml` file or other build scripts.
+Variables are stored as either plain text or encrypted at rest. Variables are available inside the build environment as an environment variable, which can then be referenced from the `pom.xml` file or other build scripts.
 
 ## Add a pipeline variable through Cloud Manager {#ui}
 
-Pipeline variables can be configured and managed through the Cloud Manager user interface. They help streamline pipeline management, especially when varying configurations are required across different steps.
+Pipeline variables can be configured and managed through the Cloud Manager user interface. They simplify pipeline management, especially when different configurations are required across different steps.
 
 You must have permissions to edit the pipeline to add, edit, and delete pipeline variables.
 
@@ -91,13 +91,13 @@ If a pipeline is running, variable management is blocked.
 
 ## Set pipeline variables using the Cloud Manager CLI {#cli}
 
-This command in the CLI (Command Line Interface) sets a variable.
+This CLI (Command Line Interface) command configures variables.
 
 ```shell
 $ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test
 ```
 
-This command lists variables.
+This command lists the variables.
 
 ```shell
 $ aio cloudmanager:list-pipeline-variables PIPELINEID

@@ -85,6 +85,16 @@ Get started with the Experience Modernization Console!
 
 Recognizing the time-intensive nature of project handovers, [the project documentation skill](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md) can automatically generate comprehensive documentation once authoring and development work is complete.
 
+## Site Catalog Skill {#site-catalog}
+
+The site catalog skill crawls an existing website, catalogs all page templates and block variants, captures screenshots of every template and block, and generates an interactive HTML report bundle for review. This skill is valuable to: 
+
+* **Anyone starting a migration project** in order to get a complete inventory of page layouts, block variants, locales, and pages-per-template before writing any code, so teams can plan accurately and surface complexity early
+* **Teams doing bulk imports** to identify which pages share the same layout, manually import and perfect the representative pages first, then bulk-import all remaining pages for that template
+* **Project leads and stakeholders** to understand the scope of the effort
+
+Please see the document [Site Catalog Skill](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md) for more information.
+
 ## Agentic Outcome Engineer (AOE) Delivery {#aoe-delivery}
 
 For complex migrations or accelerated outcomes, Adobe offers the Agentic Outcome Engineer (AOE) delivery. This is an optional service where Adobe engineers operate the Experience Modernization Agent on your behalf, combining AI automation with expert guidance to deliver production-ready results at scale. For details on AOE delivery, please see the document [AOE Delivery of the Experience Modernization Agent.](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
@@ -127,3 +137,4 @@ The following requirements are not covered by dedicated automation skills and re
 ## Next Steps {#next-steps}
 
 Get started by migrating a site using the document [Getting Started with the Experience Modernization Agent.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
+

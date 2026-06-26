@@ -12,7 +12,7 @@ These agents are available in Adobe Experience Manager (AEM) as a Cloud Service 
 
 >[!IMPORTANT]
 >
->The agents are only available on AEM as a Cloud Service and Edge Delivery Services. 
+>* The agents are only available on AEM as a Cloud Service and Edge Delivery Services. 
 >
 >* Agents will progressively become available for AEM 6.5 LTS on Managed Services. Customers who are interested to participate in our co-innovation program should contact their Adobe Customer Success Engineer, Technical Account Manager or Customer Service Manager to check for availability.
 >* Agents will not be available on AEM 6.5/AEM 6.5 LTS On-Prem.

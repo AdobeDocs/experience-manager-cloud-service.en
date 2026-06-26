@@ -28,4 +28,4 @@ Open the **Structure tree** tab from the editor toolbar to show the hierarchical
 
 For example:
 
-![Content Fragment Editor - Structure tree](assets/cf-authoring-structure-tree.png)
+![Content Fragment Editor - Structure tree](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)

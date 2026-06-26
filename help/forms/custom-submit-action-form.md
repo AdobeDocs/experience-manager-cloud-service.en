@@ -19,7 +19,7 @@ An Adaptive Form provides multiple Submit Actions out-of-the-box (OOTB). A Submi
 
 You can create a custom Submit Action to add functionality not included in [out-of-the-box Submit Actions](configuring-submit-actions.md) or not supported via a single OOTB Submit Action. For example, submitting data to a workflow, saving the data on a data store,  sending email notification to the person submitting the form, and sending an email to person responsible for processing the submitted form for approvals and rejections through a single Submit Action.
 
-## XML data format {#xml-data-format}
+## XML data format
 
 The XML data is sent to the servlet using the **`jcr:data`** request parameter. Submit Actions can access the parameter to process the data. The following code describes the format of the XML data. The fields that are bound to the Form model appear in the **`afBoundData`** section. Unbound fields appear in the `afUnoundData`section. <!--For more information about the format of the `data.xml` file, see [Introduction to prepopulating Adaptive Form fields](prepopulate-adaptive-form-fields.md).-->
 
@@ -43,7 +43,7 @@ The XML data is sent to the servlet using the **`jcr:data`** request parameter. 
 </afData>
 ```
 
-### Action fields {#action-fields}
+### Action fields
 
 A Submit Action can add hidden input fields (using the HTML [input](https://developer.mozilla.org/en/docs/Web/HTML/Element/Input) tag) to the rendered form HTML. These hidden fields can contain values that it needs while processing form submission. When submitting the form, these field values are posted back as request parameters that the Submit Action can use during submission handling. The input fields are called action fields.
 
@@ -51,7 +51,7 @@ For example, a Submit Action that also captures the time taken to fill a form ca
 
 A script can supply the values of the `startTime` and `endTime` fields when the form renders and before form submission, respectively. The Submit Action script `post.jsp` can then access these fields using request parameters and compute the total time required to fill the form.
 
-### File attachments {#file-attachments}
+### File attachments
 
 Submit Actions can also use the file attachments you upload using the File Attachment component. Submit Action scripts can access these files using the sling [RequestParameter API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html). The [isFormField](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#isFormField()) method of the API helps identify whether the request parameter is a file or a form field. You can iterate over the Request parameters in a Submit Action to identify File Attachment parameters.
 
@@ -75,7 +75,7 @@ When you attach files to the Adaptive Form, the server validates the file attach
 
 * The format of the file attachment is not defined in the [Supported File Types](https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text) section while configuring the File Attachment component in an Adaptive Form. 
 
-### Forward path and Redirect URL {#forward-path-and-redirect-url}
+### Forward path and Redirect URL
 
 After performing the required action, the Submit servlet forwards the request to the forward path. An action uses the setForwardPath API to set the forward path in the Guide Submit servlet.
 
@@ -87,7 +87,7 @@ If the action does not provide a forward path, the Submit servlet redirects the 
 >
 >You can write a custom Submit Action that forwards a request to a resource or servlet. Adobe recommends that the script that performs resource handling for the forward path redirect the request to the Redirect URL when the processing completes.
 
-## Submit Action {#submit-action}
+## Submit Action
 
 A Submit Action is a sling:Folder that includes the following:
 
@@ -105,7 +105,7 @@ A Submit Action is a sling:Folder that includes the following:
 
     * **submitService** of type String. For more information, see [Schedule Adaptive Form submission for custom actions](#schedule-adaptive-form-submission).
 
-## Creating a custom Submit Action {#creating-a-custom-submit-action}
+## Creating a custom Submit Action
 
 >[!NOTE]
 >
@@ -226,7 +226,7 @@ The flowchart depicts the workflow for a Submit Action that is triggered when yo
 
 ![Flowchart depicting the workflow for Submit Action](assets/diagram1.png)
 
-### XML data format {#xml-data-format}
+### XML data format
 
 The XML data is sent to the servlet using the **`jcr:data`** request parameter. Submit Actions can access the parameter to process the data. The following code describes the format of the XML data. The fields that are bound to the Form model appear in the **`afBoundData`** section. Unbound fields appear in the `afUnoundData`section. For more information about the format of the `data.xml` file, see [Introduction to prepopulating Adaptive Form fields](prepopulate-adaptive-form-fields.md).
 
@@ -250,7 +250,7 @@ The XML data is sent to the servlet using the **`jcr:data`** request parameter. 
 </afData>
 ```
 
-### Action fields {#action-fields}
+### Action fields
 
 A Submit Action can add hidden input fields (using the HTML [input](https://developer.mozilla.org/en/docs/Web/HTML/Element/Input) tag) to the rendered form HTML. These hidden fields can contain values that it needs while processing form submission. When submitting the form, these field values are posted back as request parameters that the Submit Action can use during submission handling. The input fields are called action fields.
 
@@ -258,7 +258,7 @@ For example, a Submit Action that also captures the time taken to fill a form ca
 
 A script can supply the values of the `startTime` and `endTime` fields when the form renders and before form submission, respectively. The Submit Action script `post.jsp` can then access these fields using request parameters and compute the total time required to fill the form.
 
-### File attachments {#file-attachments}
+### File attachments
 
 Submit Actions can also use the file attachments you upload using the File Attachment component. Submit Action scripts can access these files using the sling [RequestParameter API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html). The [isFormField](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#isFormField()) method of the API helps identify whether the request parameter is a file or a form field. You can iterate over the Request parameters in a Submit Action to identify File Attachment parameters.
 
@@ -274,7 +274,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 }
 ```
 
-### Forward path and Redirect URL {#forward-path-and-redirect-url}
+### Forward path and Redirect URL
 
 After performing the required action, the Submit servlet forwards the request to the forward path. An action uses the setForwardPath API to set the forward path in the Guide Submit servlet.
 
@@ -286,7 +286,7 @@ If the action does not provide a forward path, the Submit servlet redirects the 
 >
 >You can write a custom Submit Action that forwards a request to a resource or servlet. Adobe recommends that the script that performs resource handling for the forward path redirect the request to the Redirect URL when the processing completes.
 
-## Submit Action {#submit-action}
+## Submit Action
 
 A Submit Action is a sling:Folder that includes the following:
 
@@ -299,7 +299,7 @@ A Submit Action is a sling:Folder that includes the following:
 
     * **jcr:description** of type String. The value of this property is displayed in the Submit Action list in the Submit Actions Tab of the Adaptive Form Edit dialog. The OOTB actions are present in the CRX repository at the location **/libs/fd/af/components/guidesubmittype**.
 
-## Creating a custom Submit Action {#creating-a-custom-submit-action}
+## Creating a custom Submit Action
 
 Perform the following steps to create a custom Submit Action that saves the data in the CRX repository and then sends you an email. The Adaptive Form contains the OOTB Submit Action Store Content (deprecated) that saves the data in the CRX repository. In addition, CQ provides a [Mail](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) API that can be used to send emails. Before using the Mail API, configure the Day CQ Mail service through the system console. You can reuse the Store Content (deprecated) action to store the data in the repository. The Store Content (deprecated) action is available at the location /libs/fd/af/components/guidesubmittype/store in the CRX repository.
 

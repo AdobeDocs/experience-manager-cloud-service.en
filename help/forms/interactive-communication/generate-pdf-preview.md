@@ -9,9 +9,6 @@ exl-id: 17b3fe2b-6a1d-4fe2-9a92-a55a50400824
 ---
 # PDF Preview in Interactive Communication Editor
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 The PDF preview feature enables users to preview Interactive Communications in three different ways: without data, with local JSON-based data, or with sample data from the configured data model. 
 
@@ -60,3 +57,4 @@ Preview Interactive Communications using no data, local data, or sample data fro
 ![Find IC Docu](/help/forms/interactive-communication/assets/datamodel.png)
 
 +++
+

@@ -14,21 +14,13 @@ Content Fragments contain structured content that is intended for JSON output, w
 
 The rendered output of an AEM Content Fragment that uses the layout and design of an attached HTML template is called a *Visual Content Fragment*. 
 
-<!-- CQDOC-23232 - remove when GA -->
-
->[!NOTE]
->
->Visual Content Fragments are currently in Limited Availability. 
->
->If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
-
 HTML templates contain layout and design information, enabling the visualization of Content Fragments. The connection between a template and a Content Fragment is established using Handlebars syntax to map HTML tags to data types (fields) defined in the Content Fragment Model. This definition allows content authored in the respective fields of the Content Fragment Editor to be displayed in the appropriate locations within the template. 
 
 You, or your development team, can [create and customize your own HTML templates](/help/implementing/developing/extending/content-fragments-visualization-templates.md), then [upload and attach one, or more, to Content Fragment Models](#upload-and-assign-your-template) so that the corresponding fragments can be rendered into experiences, [previewed](#preview-your-fragment-with-a-template) and [delivered as required](#deliver-your-visual-content-fragment).
 
 >[!NOTE]
 >
->A **Generic Template** is always available within AEM as a default, associated with every model. This template enables key/value pairs in structured content to be displayed in a clean, table-style format to support content Quality Assurance (QA) use cases. 
+>A **Generic Template** is always available within AEM as a default and is associated with every model. This template enables key/value pairs in structured content to be displayed in a clean, table-style format to support content Quality Assurance (QA) use cases. 
 
 ## Create a Template {#create-a-template}
 

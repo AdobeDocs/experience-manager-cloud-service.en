@@ -63,6 +63,12 @@ The article contains recommendations, reference materials, and resources for dev
 >
 > Adobe does not recommend uploading packages of assets as it violates our best-practices around avoiding binary handling in AEM. Uploading assets via JCR packages does not result in processing being triggered on those assets in AEM as a Cloud Service.
 
+## Set up OpenAPI-based AEM Assets APIs {#setup-openapi-aem-assets}
+
+If `AEM Assets API Users` Product Profile service does not display in Production, Development or lower environments created before November 2024, you must set up OpenAPI-based AEM Assets APIs.
+
+Setting up OpenAPI-based AEM Assets APIs involves Modernization of AEM as a Cloud Service environment and enabling AEM Assets APIs access. Modernization must be executed per environment (Production, Development, and Stage). For more information, see [Set up OpenAPI-based AEM APIs](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup).
+
 ## Asset upload {#asset-upload}
 
 In [!DNL Experience Manager] as a [!DNL Cloud Service], you can directly upload the assets to the cloud storage using HTTP API. The steps to upload a binary file are below. Execute these steps in an external application and not within the [!DNL Experience Manager] JVM.

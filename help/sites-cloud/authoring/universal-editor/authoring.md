@@ -387,18 +387,18 @@ Tap or click the **Page Properties** icon in the Universal Editor toolbar to ope
 
 >[!NOTE]
 >
->* The **AEM Page Properties Extension** only works for pages, not Content Fragments.
+>* The **AEM Page Properties** button only works for pages, not Content Fragments.
 >* The button is shown only when the remote page has a [connection with protocol](/help/implementing/universal-editor/component-definition.md#plugins) `aem` or `xwalk` and a unique page path can be resolved from the current editable.
 
-### Access Sites Console {#sites-console}
+### Open in Site Admin {#sites-console}
 
-The **AEM Site Admin Extension** allows quick access to the page being edited within the [Sites Console of AEM,](/help/sites-cloud/authoring/sites-console/introduction.md) allowing you to navigate the site tree or perform page-level actions in the console.
+The **Open in Site Admin** button allows quick access to the [Sites Console of AEM](/help/sites-cloud/authoring/sites-console/introduction.md) (or the [Experience Fragments console](/help/sites-cloud/authoring/fragments/experience-fragments.md) for `/content/experience-fragments` paths) to show you where the page you are currently editing exists in your content structure. This allows you to navigate the site tree or perform page-level actions in the console.
 
 ![Open in site admin icon](assets/open-in-site-admin-icon.png)
 
 Tap or click the icon to open the Sites Console in a new browser tab, navigated to the page currently in the editor.
 
-For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+The button is hidden for DAM paths (`/content/dam`) and when no unique AEM page can be determined from the current editables.
 
 ### Locking and Unlocking Pages {#locking-pages}
 
@@ -478,3 +478,4 @@ To learn more about the technical details of the Universal Editor, please see th
 * [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.
 * [Attributes and Types](/help/implementing/universal-editor/attributes-types.md) - Learn about the data attributes and types that the Universal Editor requires.
 * [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md) - Learn how the Universal Editor authenticates.
+

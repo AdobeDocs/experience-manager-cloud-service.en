@@ -18,7 +18,6 @@ Learn about the different options to extend the capabilities of Universal Editor
 As an Adobe Experience Cloud service, the Universal Editor's UI can be extended using the App Builder and Experience Manager. Adobe offers many ready-made extensions available through the [Extension Manager](https://experience.adobe.com/aem/extension-manager) that you can use for your project.
 
 * **[AEM Multi-Site-Management (MSM) Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)**: Break or reinstate inheritance at the component level
-* **[AEM Site Admin Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console)**: Open the Sites Console to the location of the page in the Universal Editor
 * **[AEM Page Lock Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)**: View and change the page lock status from the Universal Editor
 * **[AEM Workflows Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)**: Start workflows on the page and page content from the Universal Editor
 * **[Generate Variations](/help/generative-ai/generate-variations-integrated-editor.md)**: Use generative artificial intelligence (AI) to create variations for your content directly in the properties panel.
@@ -57,3 +56,4 @@ In addition to UI extensibility, the Universal Editor offers other customization
 
 * **[Blocks](https://www.aem.live/developer/block-collection)**: In simple JSON format, projects can adjust the blocks and UE features available for content creation.
 * **[Events](/help/implementing/universal-editor/events-universal-editor.md)**: Extensions receive events about the author's actions and selections on the page to respond appropriately.
+
