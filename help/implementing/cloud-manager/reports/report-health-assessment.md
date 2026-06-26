@@ -8,16 +8,16 @@ exl-id: 5467a311-727d-4f67-ba43-4b6548431061
 ---
 # Health Assessment {#about-health-assessment}
 
-Health Assessment is an automated, non-intrusive scan for Production and Stage environments in Cloud Manager within AEM as a Cloud Service. It evaluates content, code, and configurations to find anti-patterns and departures from best practices, improving security and performance.
+Health Assessment is an automated, non-intrusive scan for Production and Stage environments in Cloud Manager within AEM as a Cloud Service. It evaluates content, code, and configurations to identify patterns that depart from best practices, improving security and performance.
 
 The health assessment service does the following:
 
-* Scans environments and exposes performance bottlenecks, inefficiencies, and risks.
+* Scans environments and identifies performance bottlenecks, inefficiencies, and risks.
 * Analyzes content structures, such as blueprints, live copies, and customer configurations.
 * Detects outdated dependencies, including AEM SDK and third-party libraries.
 * Flags code quality issues, such as incorrect annotations and inefficient patterns.
 * Delivers actionable guidance in dashboards (for example, Action Center).
-* Drives proactive remediation to improve system performance.
+* Enables proactive remediation to improve system performance.
 
 Each run lists issues by severity, links to guidance and recommended fixes, and supports a PDF export of the report. You can use the **Latest Report** view for the current state and **Past Reports** to compare runs.
 
@@ -25,16 +25,16 @@ See also [Health Assessment patterns](#ha-patterns) for rule definitions and rem
 
 ## Access the Health Assessment page {#access-health-assessment}
 
-1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
+1. Sign in to Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
 1. In the **Quick access** section, click **Experience Manager**.
-1. In the left side panel, click **Cloud Manager**.
-1. Select an organization that you want to use. The image below is for illustration. Select your own organization name.
+1. In the left panel, click **Cloud Manager**.
+1. In Cloud Manager, near the upper-right corner of the page, select an organization that you want to access. The image below is provided for reference; select your organization.
 
     ![Selecting an organization in Cloud Manager](/help/implementing/cloud-manager/reports/assets/ha-org.png)
 
-1. On the **My Programs** console, click the program for which you want to view its report. 
+1. On the **My Programs** console, click the program for which you want to view the report. 
 
-1. Do either one of the following:
+1. Do one of the following:
     * In the **Environments** card, to the right of an environment name, click ![Ellipsis icon or More icon](https://spectrum.adobe.com/static/icons/ui_18/More.svg), then choose **Health Assessment** from the menu.
 
         ![Selecting Health Assessment from the ellipsis menu in the Environments card](/help/implementing/cloud-manager/reports/assets/ha-myprograms-environments-card.png) 
@@ -54,15 +54,15 @@ See also [Health Assessment patterns](#ha-patterns) for rule definitions and rem
 
     ![Click the Generate new report button on the Health Assessment page](/help/implementing/cloud-manager/reports/assets/ha-run-report.png)
 
-    While a report runs for the selected environment, **Run Report** stays disabled until it finishes.
+    While a report runs for the selected environment, **Run Report** remains disabled until the process completes.
 
     ![Report in the middle of running](/help/implementing/cloud-manager/reports/assets/ha-running-report.png)
 
-    When the report is complete, the report appears on the **Health Assessment** page, in the **Latest Report** section.
+    When the report is complete, it appears in the **Latest Report** section of the **Health Assessment** page.
 
 ## View the latest report {#view-latest-report}
 
-* On the **Health Assessment** page, review the **Latest report** section for the following information:
+* On the **Health Assessment** page, review the **Latest Report** section for the following information:
 
     * Results from the most recent run.
     * Run date and time.
@@ -74,9 +74,9 @@ See also [Health Assessment patterns](#ha-patterns) for rule definitions and rem
 
 ### View the latest report details {#view-report-details}
 
-* On the **Health Assessment** page, to the right of the **Latest Report** title, click ![Ellipsis icon or More icon](https://spectrum.adobe.com/static/icons/ui_18/More.svg), then click **View details** or **Download**.
+* On the **Health Assessment** page, to the right of the **Latest Report** title, click ![Ellipsis icon or More icon](https://spectrum.adobe.com/static/icons/ui_18/More.svg), then click **View Details** or **Download**.
 
-    The **View details** option shows you the following:
+    The **View Details** option shows you the following:
     
     * A comprehensive list of issues.
     * Ability to view findings and issue descriptions.
@@ -84,7 +84,7 @@ See also [Health Assessment patterns](#ha-patterns) for rule definitions and rem
 
         ![Issue descriptions and finding](/help/implementing/cloud-manager/reports/assets/ha-issue-descriptions-and-findings.png)
     
-    * The **Download** option gives you the ability to download individual issue reports in PDF.
+    * The **Download** option lets you download individual issue reports in PDF.
 
         ![Download PDF of individual issue reports](/help/implementing/cloud-manager/reports/assets/ha-details-page-doc-links.png)
 
@@ -93,7 +93,7 @@ See also [Health Assessment patterns](#ha-patterns) for rule definitions and rem
 
 * Near the upper-right corner of the report page, click **Download**.
 
-    A ZIP file is generated that contains PDFs for all issues detected in that report.
+    A ZIP file is generated that contains PDFs for all issues detected in the report.
 
     ![Download PDF of all issues found in a report](/help/implementing/cloud-manager/reports/assets/ha-download-pdf.png)
 
@@ -115,7 +115,7 @@ On the **Health Assessment** page, review the **Past Reports** section for the f
 
 ## Health Assessment patterns {#ha-patterns}
 
-The following is the full list of anti-patterns and issues that Health Assessment detects in AEM as a Cloud Service. The table groups items into three types: Content Analysis, Code Analysis, and Cloud Service Optimizer anti-patterns, with an explanation for each.
+The following is a full list of patterns that depart from best practices and issues that Health Assessment detects in AEM as a Cloud Service. The table groups items into three types: Content Analysis, Code Analysis, and Cloud Service Optimizer patterns that depart from best practices, with an explanation for each.
 
 | Pattern name | Category | Type | Description | Impact | Auto-fixed? |
 | --- | --- | --- | --- | --- | --- |
@@ -154,3 +154,4 @@ The following is the full list of anti-patterns and issues that Health Assessmen
 | Repository Structure | Patterns related to JCR repository organization and structure. |
 | Dependencies | Patterns related to code dependencies and version management. |
 | Statistics | Patterns that represent usage statistics and metrics. |
+

@@ -9,9 +9,6 @@ exl-id: 1f6bda20-7bce-4cfd-9985-f8b49d6e50e0
 ---
 # Numeric Field Component in Interactive Communication Editor 
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 ## 1. Introduction 
 
@@ -19,7 +16,39 @@ The Numeric Field component in the Interactive Communication (IC) editor enables
 
 ![Find IC Doc](/help/forms/interactive-communication/assets/numericfield.png)
 
-## 2. Properties 
+## 2. Display Pattern
+
+You can assign a **display pattern** to a Numeric field from the **Properties** panel — for example, rendering a value as currency: **$1,234.21**.
+
+The configured pattern is immediately reflected in the canvas preview and is preserved across save and reload cycles. For advanced use cases, you can define a **custom XFA picture clause** to achieve any desired output format.
+
+### Configure a display pattern
+
+1. Select the Numeric Field component on the design canvas.
+2. Open the **Properties** panel.
+3. In the **Display Pattern** section, choose a predefined pattern or enter a custom picture clause.
+4. Preview the formatted value on the canvas.
+
+### Custom pattern example (Numeric)
+
+| Pattern | Example output | Description |
+|---------|----------------|-------------|
+| `num{$z,zzz,zz9.99}` | $1,234.21 | Currency with thousands separator |
+
+**Picture clause symbols (Numeric):**
+
+| Symbol | Meaning |
+|--------|---------|
+| 9 | Required digit |
+| z | Suppresses leading zeros |
+
+### Best practices
+
+- Choose a pattern that clearly represents the unit of the value (currency symbol, percentage, etc.).
+- Validate sample data in canvas preview before publishing.
+- Use custom picture clauses only when predefined patterns do not meet your formatting needs.
+
+## 3. Properties 
 
 2.1 Basic Field 
 
@@ -95,7 +124,7 @@ Controls the visibility of the numeric field during runtime.
 
 **No Data Binding:** Keeps the field static for visual-only use or temporary input. 
 
-## 3. Usage 
+## 4. Usage
 
 Numeric Fields are ideal in scenarios where only digits are valid input. Common use cases include: 
 
@@ -109,7 +138,7 @@ Numeric Fields are ideal in scenarios where only digits are valid input. Common 
 
 Authors can place numeric fields inside layout containers or subforms and apply validation (like length, minimum, or maximum value constraints) to improve data quality. 
 
-## 4. Best Practices 
+## 5. Best Practices
 
 - Clearly label numeric fields with units if required (e.g., "Amount in ₹"). 
 
@@ -122,3 +151,13 @@ Authors can place numeric fields inside layout containers or subforms and apply 
 - Keep consistent appearance and typography to match brand guidelines. 
 
 The **Numeric Field** component in the Interactive Communication editor is a precise, reliable tool for digit-based data collection. With robust formatting, visibility controls, and data-binding options, it ensures that numerical inputs are cleanly captured and seamlessly integrated into digital forms. When styled and configured correctly, it significantly enhances form usability and overall data accuracy.
+
+## See also
+
+- [Text Box Component](/help/forms/interactive-communication/text-box.md)
+- [Date Field Component](/help/forms/interactive-communication/date-field.md)
+- [Date/Time Field Component](/help/forms/interactive-communication/date-time-field.md)
+- [Unbound Variable Component](/help/forms/interactive-communication/unbound-variable.md)
+- [Configure Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/configure-data-binding.md)
+- [Use the Rule Editor in Interactive Communication Editor](/help/forms/interactive-communication/use-the-rule-editor.md)
+

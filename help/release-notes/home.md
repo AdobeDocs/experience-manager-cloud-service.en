@@ -5,12 +5,11 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
 ---
-
 # Release Information {#release-information}
 
 | Product | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2026.5.0 |
+| Version | 2026.6.0 |
 | Type | Continuous Updates |
 | Availability date | Continuous Update |
 
@@ -86,3 +85,4 @@ Adobe Experience League offers lots of resources to learn AEMaaCS.
 * [What is New](what-is-new.md)
 * [Notable Changes](aem-cloud-changes.md)
 * [Deprecated and Removed Features](deprecated-removed-features.md)
+

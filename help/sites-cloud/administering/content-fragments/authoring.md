@@ -52,7 +52,7 @@ When you first open the Content Fragment Editor, you see four main areas:
   * [Publish](#publish-content-fragment), and [Unpublish](#unpublish-content-fragment) actions
   * an option to show all **Parent References** (link icon)
   * the fragment **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**, and last saved information
-  * a toggle to switch to the original (Assets-based) editor
+  * a toggle to switch to the original (/help/sites-cloud/administering/content-fragments/assets-based) editor
 
     >[!WARNING]
     >
@@ -549,14 +549,6 @@ Both options are available using **Preview** in the top toolbar:
 * **Template**
 
   * This option allows you to preview your Content Fragment with **[Visualization (HTML) Templates](#preview-with-visualization-html-templates)**.
-
-    <!-- CQDOC-23232 - remove when GA -->
-
-    >[!NOTE]
-    >
-    >Visual Content Fragments are currently in Limited Availability. 
-    >
-    >If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 ## Publish your Fragment {#publish-content-fragment}
 
