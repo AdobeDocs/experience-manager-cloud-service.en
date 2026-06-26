@@ -292,3 +292,57 @@ To enable [!DNL Dynamic Media] Prime:
 <!--
 1. [Onboard API keys using the AEM Dynamic Media API card](#onboarding-api-keys)
 -->
+
+## Frequently Asked Questions {#frequently-asked-questions-dynamic-media-prime-ultimate}
+
+### What is the difference between enabling Dynamic Media Prime and Dynamic Media Ultimate? {#dynamic-media-prime-vs-ultimate}
+
+Dynamic Media Ultimate requires completing five steps: activating Dynamic Media with OpenAPI, configuring Dynamic Media solutions, accessing Dynamic Media APIs, creating and listing Dynamic Media companies, and optionally configuring a custom domain in the delivery tier. Dynamic Media Prime requires only two steps: activating Dynamic Media with OpenAPI and optionally configuring a custom domain in the delivery tier. Dynamic Media Prime does not require configuring Dynamic Media solutions, accessing Dynamic Media APIs, or creating Dynamic Media companies as part of the enablement workflow.
+
+### What are the prerequisites for activating Dynamic Media with OpenAPI? {#dynamic-media-openapi-prerequisites}
+
+Activating Dynamic Media with OpenAPI requires three prerequisites: access to Cloud Manager, a program that includes Dynamic Media solutions, and a valid Dynamic Media Prime or Ultimate license. If no existing environment is available in Cloud Manager, a new environment must be created before activation can begin. The Dynamic Media solution must be added to the program before the activation step is executed on the environment details page.
+
+### How do I activate Dynamic Media with OpenAPI in my Cloud Service environment? {#activate-dynamic-media-openapi}
+
+To activate Dynamic Media with OpenAPI, navigate to the Cloud Manager UI and open the environment details page. In the Environment Information section, locate the Dynamic Media row and click Click to activate. Click Activate on the confirmation dialog to start the activation process. After successful activation, Cloud Manager displays the environment stage as Running and the Dynamic Media status as OpenAPI capabilities are activated.
+
+### What should I do if Dynamic Media with OpenAPI activation fails? {#dynamic-media-openapi-activation-failure}
+
+If Dynamic Media with OpenAPI activation fails, Cloud Manager displays the environment stage as DM with OpenAPI Failed and the Dynamic Media status as OpenAPI capabilities failed to activate. To retry, click Click to retry on the environment details page. Alternatively, navigate to the page listing all environments, click the more options icon at the end of the environment row, and select Retry DM with OpenAPI Activation to restart the process.
+
+### What are the prerequisites for configuring Dynamic Media solutions? {#configure-dynamic-media-solutions-prerequisites}
+
+Configuring Dynamic Media solutions requires access to Cloud Manager and a valid Dynamic Media Ultimate license. Dynamic Media Prime does not require this step — it is applicable only for Dynamic Media Ultimate customers who need to add the Dynamic Media solution to an existing or new program in Cloud Manager.
+
+### How do I add the Dynamic Media solution to an AEM Cloud Service program? {#add-dynamic-media-solution-program}
+
+To add the Dynamic Media solution to a program, create a new program or navigate to an existing program in Cloud Manager and click Edit. On the Set up for production page, select the Solutions & Add-ons tab, then select Assets, Assets Prime, Assets Ultimate, or Sites to make the Dynamic Media solution available. Select Dynamic Media and click Continue to add it to the program. This action restarts all existing environments in the program and adds the Dynamic Media solution. All new environments created under the program automatically receive Dynamic Media.
+
+### How do I access Dynamic Media APIs after enabling Dynamic Media with OpenAPI? {#access-dynamic-media-apis}
+
+After enabling Dynamic Media with OpenAPI, a delivery instance is created in Adobe Admin Console. Click the delivery instance to view the AEM Assets DM OpenAPI Users product profile, which has AEM Dynamic Media enable API Services enabled by default. To access the APIs, create a new project in Adobe Developer Console and use the AEM Dynamic Media API card. Authentication options include Server-to-Server authentication, Web App credentials, or SPA credentials. Before accessing the API, the user must be added to the AEM Assets DM OpenAPI Users delivery product profile for the relevant program and environment.
+
+### What are the prerequisites for creating a Dynamic Media company? {#create-dynamic-media-company-prerequisites}
+
+Creating a Dynamic Media company requires access to Cloud Manager and a valid Dynamic Media Ultimate license. The company is created from the Cloud Manager license page and represents an account that can be configured within the AEM Cloud Service environment. Dynamic Media company creation is a Dynamic Media Ultimate-specific step and is not required for Dynamic Media Prime.
+
+### How do I create a new Dynamic Media company in my IMS organization? {#create-dynamic-media-company}
+
+To create a new Dynamic Media company, navigate to the Cloud Manager license page and click Add Company. In the Create Dynamic Media Company dialog box, specify a unique company name, select a company region, and add company admin email IDs separated by commas. Click Create to initiate company creation — a new row is added to the Dynamic Media companies section with a status of Setting up. When creation is complete, the status updates to Ready. The Dynamic Media Administrator receives a welcome email with steps to configure the Dynamic Media company in the AEM Cloud Service environment.
+
+### What should I do if Dynamic Media company creation fails? {#dynamic-media-company-creation-failure}
+
+If Dynamic Media company creation fails, the action to take depends on the status displayed. If the status is Pending, raise the issue with the Adobe customer support team for resolution. If the status is Failed, retry the creation based on the reason of failure shown. Company creation failure is separate from activation failure — both have their own retry mechanisms in Cloud Manager.
+
+### What are the prerequisites for configuring a custom domain in the Dynamic Media delivery tier? {#custom-domain-delivery-tier-prerequisites}
+
+Configuring a custom domain in the Dynamic Media delivery tier requires four prerequisites: access to Cloud Manager, Dynamic Media with OpenAPI already activated and in a ready state in the environment, and an EV or OV type SSL certificate for the domain to be used on the delivery tier. The custom domain configuration is optional for both Dynamic Media Prime and Dynamic Media Ultimate.
+
+### How do I configure a custom domain for Dynamic Media delivery using Cloud Manager? {#configure-custom-domain-delivery-tier}
+
+To configure a custom domain for Dynamic Media delivery, complete three steps in Cloud Manager: add a customer-managed SSL certificate, add a custom domain name, and add a CDN configuration from the environment details page — selecting Delivery in the Tier field of the Configure CDN dialog box. After adding the CDN configuration, the status updates to Applied. Click more options and select Go live readiness, then follow the Configure CNAME steps to map cdn.adobeaemcloud.com as a CNAME record in the DNS service provider. Once the DNS mapping is confirmed, click Ok and the domain status updates to Verified, making the custom domain ready for use in delivery URLs.
+
+### Does Dynamic Media Prime require all five steps that Dynamic Media Ultimate requires? {#dynamic-media-prime-steps-required}
+
+Dynamic Media Prime requires only two steps from the full Dynamic Media Ultimate enablement workflow: activating Dynamic Media with OpenAPI and optionally configuring a custom domain in the delivery tier. Configuring Dynamic Media solutions, accessing Dynamic Media APIs, and creating Dynamic Media companies are not required for Dynamic Media Prime. Both offerings share the same activation step as the starting point of their respective workflows.
