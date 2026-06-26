@@ -15,17 +15,17 @@ See [Add a Domain Mapping](/help/implementing/cloud-manager/domain-mappings/add-
 
 ## Rename an Edge Delivery Site (#rename-edge-delivery-site)
 
-In Adobe Cloud Manager, you may want to rename an Edge Delivery site for several reasons:
+In Adobe Cloud Manager, you rename an Edge Delivery site for several reasons:
 
 * **Clarity and organization**: To describe the site's purpose better or its associated environment (for example, production, staging).
-* **Avoiding confusion**: If multiple sites are in use, renaming can help easily differentiate between them, reducing the chance of applying configurations or updates to the wrong site.
+* **Avoiding confusion**: If multiple sites are in use, renaming can help differentiate between them, reducing the risk of applying configurations or updates to an incorrect site.
 * **Standardization**: To follow a consistent naming convention that aligns with your organization's guidelines for easier management and auditing.
 
 **To rename an Edge Delivery site:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate program.
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program with Edge Delivery Services configured, where you want to add an Edge Delivery site.
-1. Do either one of the following:
+1. Do one of the following:
 
     * From the **Program Overview** page, click the **Edge Delivery** tab. In the Edge Delivery site table, click the ellipsis at the end of a row whose site you want to rename. 
     Click **Rename**.
@@ -44,7 +44,7 @@ In Adobe Cloud Manager, you may want to rename an Edge Delivery site for several
 
 This capability applies only to Edge Delivery sites created with the **AEM Authoring** option in Programs where the flexible publish tier feature is enabled.
 
-If your Edge Delivery site uses AEM authoring, the publish tier is not provisioned by default because Edge Delivery handles content delivery. However, you can activate the publish tier at any time if your site requires it. For example, if you need to support traditional AEM publishing alongside Edge Delivery.
+If your Edge Delivery site uses AEM authoring, Adobe does not provision the publish tier by default because Edge Delivery handles content delivery. However, you can activate the publish tier at any time if your site requires it. For example, if you need to support traditional AEM publishing alongside Edge Delivery.
 
 After your Edge Delivery site is created and its status shows **Verified** in Cloud Manager, you can author and publish content using the AEM Universal Editor.
 
@@ -70,7 +70,7 @@ After your Edge Delivery site is created and its status shows **Verified** in Cl
 
       Once activated, the publish tier is provisioned automatically. Alternatively, the publish tier can be provisioned automatically if the author tries to publish content from the AEM user interface directly.
 
-      After the publish tier is activated and provisioned successfully, the **Click to Activate** link becomes dimmed/unavailable.
+      After the publish tier is activated and provisioned successfully, the **Click to Activate** link becomes disabled/unavailable.
 
 * **From AEM Author** — In the AEM authoring interface, click **Quick Publish** to publish content directly to your Edge Delivery site. The publish tier is not required for this operation when Edge Delivery handles delivery.
 
@@ -78,7 +78,7 @@ After publishing, preview your content at your site's `.page` URL, or view it li
 
 >[!NOTE]
 >
->Activating the publish tier adds publish infrastructure to your environment. This functionality may affect your program's resource consumption. To configure whether the publish tier is required at the program level, see [Flexible Publish Tier (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
+>Activating the publish tier adds publish infrastructure to your environment. This functionality affects your program's resource consumption. To configure whether the publish tier is required at the program level, see [Flexible Publish Tier (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
 
 
 ## Delete an Edge Delivery site {#delete-edge-delivery-site}
@@ -89,7 +89,7 @@ If you delete an Edge Delivery Services site, any associated CDN configurations 
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate program.
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program with Edge Delivery Services configured, where you want to add an Edge Delivery site.
-1. Do either one of the following:
+1. Do one of the following:
 
     * From the **Program Overview** page, click the **Edge Delivery** tab. In the Edge Delivery site table, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) at the end of a row whose site you want to remove. 
     Click ![Delete Edge Delivery site icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **Delete**, then click **Delete** again to confirm the site's removal.
@@ -107,7 +107,7 @@ Use the `/program/{programId}/site/{siteId}` API endpoint to migrate an Edge Del
 
 >[!IMPORTANT]
 >
->CDN configurations for Helix 4 websites cannot be migrated to Helix 5 automatically. This limitation exists because customer production sites may still run on Helix 4, while their Helix 5 versions are still in development.
+>CDN configurations for Helix 4 websites cannot be migrated to Helix 5 automatically. This limitation exists because customer production sites still run on Helix 4, while their Helix 5 versions are still in development.
 
 **Prerequisites**
 

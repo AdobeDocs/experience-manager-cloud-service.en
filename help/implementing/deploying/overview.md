@@ -112,9 +112,9 @@ It is possible to limit mutable content installation to author or publish by emb
 >[!NOTE]
 >Content packages are deployed to all environment types (dev, stage, prod). It is not possible to limit deployment to a specific environment. This limitation is in place to ensure the option of a test run of automated execution. Content that is specific to an environment requires manual installation by way of [Package Manager](/help/implementing/developing/tools/package-manager.md).
 
-Also, there is no mechanism to roll back the mutable content package changes after they've been applied. If customers detect a problem, they can choose to fix it in their next code release or as a last resort, restore the entire system to a point in time before the deployment.
+Also, there is no mechanism to roll back the mutable content package changes after they have been applied. If customers detect a problem, they can choose to fix it in their next code release or as a last resort, restore the entire system to a point in time before the deployment.
 
-Any included third-party packages must be validated as being AEM as a Cloud Service compatible, otherwise its inclusion results in a deployment failure.
+Any included third-party packages must be validated as being AEM as a Cloud Service compatible; otherwise, their inclusion results in a deployment failure.
 
 As mentioned above, customers with existing code bases should conform to the repository restructuring exercise needed by the 6.5 repository changes described in the [AEM 6.5 documentation](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html).
 

@@ -64,15 +64,6 @@ Content Fragments can also be delivered in:
   * provides a visual representation to help previewing, and reviewing, the content
   * provides a visual representation for direct, and immediate, use by external channels and applications
 
-  <!-- CQDOC-23232 - remove when GA -->
-
-  >[!NOTE]
-  >
-  >Visual Content Fragments are currently in Limited Availability. 
-  >
-  >If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
-
-
 The number of communication channels is increasing annually. Typically channels refer to the delivery mechanism, either as the:
 
 * Physical channel; for example, desktop, mobile.
@@ -296,7 +287,7 @@ The Content Fragments console is dedicated to managing, searching for, and creat
 
 The console can be directly accessed from the top level of the Global Navigation.
 
-![Global Navigation - Content Fragments console](assets/cf-managing-global-navigation.png)
+![Global Navigation - Content Fragments console](/help/sites-cloud/administering/content-fragments/assets/cf-managing-global-navigation.png)
 
 You can use the far left panel to select the resource type to view, browse and manage:
 

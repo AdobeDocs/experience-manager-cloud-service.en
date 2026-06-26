@@ -47,7 +47,7 @@ The Content Fragment Model effectively defines the structure of the resulting Co
 
 1. Open the required model for **Edit**; use either one of the quick action links, or select the model and then the action from the toolbar.
 
-   ![Properties](assets/cf-cfmodels-empty-model.png)
+   ![Properties](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-empty-model.png)
 
    Once open the model editor shows:
 
@@ -80,7 +80,7 @@ The Content Fragment Model effectively defines the structure of the resulting Co
 
    * You can reposition a field using the formation of dots at the left of the field box:
 
-     ![Move field](assets/cf-cfmodels-move-field-icon.png)
+     ![Move field](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-move-field-icon.png)
 
    * Once a field has been added to the model (and is selected), the right panel shows the **Properties** that can be defined for that particular data type. Here you can define what is required for the specific
     field. 
@@ -96,7 +96,7 @@ The Content Fragment Model effectively defines the structure of the resulting Co
 
      For example:
 
-     ![Field properties](assets/cf-cfmodels-field-properties.png)
+     ![Field properties](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
 
      >[!NOTE]
      >
@@ -106,7 +106,7 @@ The Content Fragment Model effectively defines the structure of the resulting Co
 
    Select the trash-can icon for the appropriate field in the middle panel.
 
-   ![Remove](assets/cf-cfmodels-remove-icon.png)
+   ![Remove](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-remove-icon.png)
 
 1. Add all required fields, and define the related properties, as required. 
 
@@ -350,7 +350,7 @@ In addition to standard properties you can specify:
   * Show Thumbnail
   * Image restraints of height and width
 
-![Content Reference](assets/cf-cfmodels-content-reference.png)
+![Content Reference](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-content-reference.png)
 
 ### Fragment Reference (Nested Fragments) {#fragment-reference-nested-fragments}
 
@@ -399,7 +399,7 @@ In addition to standard properties you can define:
 
   * **fragmentreferencecomposite** - allows the fragment author to build a composite, by selecting multiple fragments
 
-  ![Fragment Reference](assets/cf-cfmodels-fragment-reference.png)
+  ![Fragment Reference](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-fragment-reference.png)
 
 >[!NOTE]
 >

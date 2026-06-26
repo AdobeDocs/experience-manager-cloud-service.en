@@ -9,9 +9,6 @@ exl-id: f8cc1dd1-3b55-4cd9-b051-959c88195eb4
 ---
 # Date Field Object in Interactive Communication Editor 
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 ## 1. Introduction 
 
@@ -21,7 +18,39 @@ Ideal for capturing birthdates, appointment schedules, application dates, or pol
 
 ![Find IC Docu](/help/forms/interactive-communication/assets/date.png)
 
-## 2. Properties 
+## 2. Display Pattern
+
+You can assign a **display pattern** to a Date field from the **Properties** panel — for example: **April 01, 2007** or **01/04/2007**.
+
+The configured pattern is immediately reflected in the canvas preview and is preserved across save and reload cycles. For advanced use cases, you can define a **custom XFA picture clause** to achieve any desired output format.
+
+### Configure a display pattern
+
+1. Select the Date Field component on the design canvas.
+2. Open the **Properties** panel.
+3. In the **Display Pattern** section, choose a predefined pattern or enter a custom picture clause.
+4. Preview the formatted value on the canvas.
+
+### Custom pattern example (Date)
+
+| Pattern | Example output | Description |
+|---------|----------------|-------------|
+| `date{DD/MM/YYYY}` | 01/04/2007 | Day / month / year |
+
+**Common date tokens:**
+
+| Token | Meaning |
+|-------|---------|
+| D, DD | Day |
+| M, MM, MMM, MMMM | Month |
+| YY, YYYY | Year |
+| EEEE | Weekday |
+
+>[!NOTE]
+>
+> For display patterns to render correctly, underlying Date field values must conform to **ISO 8601**. Provide values in **YYYY-MM-DD** format (for example, `2007-04-01`). Values that do not follow this format are displayed as-is, without pattern formatting applied.
+
+## 3. Properties 
 
 The Date Field object includes several configurable properties: 
 
@@ -105,7 +134,7 @@ Connects the Date Field to data structures for storing or pre-filling values.
 
 This allows dynamic date values to be fetched, displayed, or stored based on application logic. 
 
-## 3. Usage 
+## 4. Usage
 
 The Date Field is particularly useful in the following scenarios: 
 
@@ -117,7 +146,7 @@ The Date Field is particularly useful in the following scenarios:
 
 Authors can place the Date Field inside layout containers or subforms and configure validation (e.g., date format, range limits) to improve data quality. 
 
-## 4. Best Practices 
+## 5. Best Practices
 
 - Use clear captions like "Start Date" or "Select Appointment Date" for better UX. 
 
@@ -130,3 +159,13 @@ Authors can place the Date Field inside layout containers or subforms and config
 - Hide non-relevant date fields dynamically using visibility rules. 
 
 The **Date Field** object in the Interactive Communication editor is a powerful tool for capturing time-sensitive data with accuracy and ease. When styled thoughtfully and connected to meaningful data paths, it supports a seamless user experience and efficient processing of time-based entries.
+
+## See also
+
+- [Text Box Component](/help/forms/interactive-communication/text-box.md)
+- [Numeric Field Component](/help/forms/interactive-communication/numeric-field.md)
+- [Date/Time Field Component](/help/forms/interactive-communication/date-time-field.md)
+- [Unbound Variable Component](/help/forms/interactive-communication/unbound-variable.md)
+- [Configure Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/configure-data-binding.md)
+- [Use the Rule Editor in Interactive Communication Editor](/help/forms/interactive-communication/use-the-rule-editor.md)
+

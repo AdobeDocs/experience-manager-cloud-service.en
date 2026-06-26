@@ -6,7 +6,7 @@ role: User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 169ea727-0941-4a1d-bc33-d9fe208b27ab
 ---
-# Issue while publishing forms{#form-creation-fails}
+# Issue while publishing forms
 
 After users update to AEM Forms as a Cloud Service version `2024.5.16461`:
 
@@ -30,7 +30,7 @@ To resolve the issue, perform the following steps:
 
 <!--
 
-# Issue {#form-creation-fails}
+# Issue
 
 After updating to AEM Forms as a Cloud Service version `2024.5.16461.20240524T172309Z`, When a user publishes a form using an unpublished template, it fails to create a form and shows an error:
 

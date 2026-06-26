@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2026 {#2026}
+      + [Release Notes for 2026.5.0](/help/release-notes/release-notes-cloud/2026/2026-5-0.md)
       + [Release Notes for 2026.4.0](/help/release-notes/release-notes-cloud/2026/2026-4-0.md)
       + [Release Notes for 2026.3.0](/help/release-notes/release-notes-cloud/2026/2026-3-0.md)
       + [Release Notes for 2026.2.0](/help/release-notes/release-notes-cloud/2026/2026-2-0.md)
@@ -260,6 +261,8 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.06.18 Release Notes](/help/release-notes/universal-editor/2026/2026-06-18.md)
+      + [2026.06.11 Release Notes](/help/release-notes/universal-editor/2026/2026-06-11.md)
       + [2026.06.05 Release Notes](/help/release-notes/universal-editor/2026/2026-06-05.md)
       + [2026.05.28 Release Notes](/help/release-notes/universal-editor/2026/2026-05-28.md)
       + [2026.05.21 Release Notes](/help/release-notes/universal-editor/2026/2026-05-21.md)
@@ -791,7 +794,7 @@ user-guide-title: AEM as a Cloud Service
     + [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
     + [AEM Assets View UI Extensibility](/help/assets/aem-assets-view-ui-extensibility.md)
 
-    + {hide-from-toc} [Manage reports](/help/assets/manage-reports-assets-view.md)
+    + [Manage reports](/help/assets/manage-reports-assets-view.md)
     + [Cascading Metadata Assets View](/help/assets/cascading-metadata-assets-view.md)
   + Content Hub {#content-hub}
     + [Overview](/help/assets/product-overview.md)
@@ -1051,6 +1054,10 @@ user-guide-title: AEM as a Cloud Service
      + [Create Interactive Communication Fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
      + {hide-from-toc} [Introduction to Interactive Communication](/help/forms/introduction-to-interactive-communication.md)
      + {hide-from-toc} [Create your First Interactive Communication](/help/forms/create-your-first-communication.md)
+   + Review and Collaborate {#review-collaborate}
+     + [Versioning and Commenting in Interactive Communication Editor](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
+     + [Review and Annotate an Interactive Communication](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md)
+     + [Compare Interactive Communication Versions](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md)
    + Component {#component}
      + [Text Box](/help/forms/interactive-communication/text-box.md)
      + [Image](/help/forms/interactive-communication/image.md)
@@ -1066,7 +1073,8 @@ user-guide-title: AEM as a Cloud Service
      + [Table](/help/forms/interactive-communication//table.md)
      + [Line](/help/forms/interactive-communication/line.md)
      + [Barcode](/help/forms/interactive-communication/barcode.md)
-   + How To {#howto} 
+     + [Unbound Variable](/help/forms/interactive-communication/unbound-variable.md)
+   + How To {#howto}
      + [Configure Data Binding](/help/forms/interactive-communication/configure-data-binding.md)
      + [Use the Rule Editor](/help/forms/interactive-communication/use-the-rule-editor.md)
      + [Import and Export the Interactive Communication](/help/forms/interactive-communication/import-and-export-the-interactive-communication.md)
@@ -1076,16 +1084,19 @@ user-guide-title: AEM as a Cloud Service
      + [Implement Dynamic Page Numbering](/help/forms/interactive-communication/implement-dynamic-page-numbering.md)
      + [Handle Content Overflow](/help/forms/interactive-communication/handle-content-overflow.md)
      + [Support XDP Editing](/help/forms/interactive-communication/support-xdp-editing.md)
-     + {hide-from-toc} [Create Versions and Add Comments](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
      + {hide-from-toc} [Copy and Paste Interactive Communication](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
      + [Start Workflow in Interactive Communication](/help/forms/interactive-communication/start-workflow-in-interactive-communication-editor.md)
      + [Create Dynamic Table](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
-   + Associate UI {#associateui} 
+     + [Merge and Split Table Cells](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md)
+     + [Move a Component to the Master Page](/help/forms/interactive-communication/howto/move-component-to-master-page.md)
+   + Associate UI {#associateui}
      + [Associate UI in Interactive Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
      + [Enable and configure Associate UI for Interactive Communications](/help/forms/interactive-communication/enable-configure-associate-ui.md)
      + [Integrate Associate UI in Your Application](/help/forms/interactive-communication/invoke-associate-ui.md)
      + [Submission workflow for Associate UI — IC Generate PDF Output](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
-   + {hide-from-toc} [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
+     + [Configure Dropdown Options for Associate UI](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md)
+     + [Configure Bound and Unbound Variables for Associate UI](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md)
+   + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
 + Forms Centric Workflows {#create-form-centric-workflows}
     + {hide-from-toc} [Introduction to Forms-centric workflow](/help/forms/aem-forms-workflow.md)
     + [Use Forms-centric steps in a workflow + step reference](/help/forms/aem-forms-workflow-step-reference.md)
@@ -1102,9 +1113,9 @@ user-guide-title: AEM as a Cloud Service
     + [Generate AFP Output Using the AEM Forms API](/help/forms/document-generation-afp-api.md)
     + {hide-from-toc} [OAuth Server-to-Server Authentication ](/help/forms/oauth-api-authetication.md)
     + {hide-from-toc} [JWT(JSON Web Token) Server-to-Server Authentication](/help/forms/jwt-api-authentication.md)
-    + [Install and configure Forms Designer](/help/forms/installing-configuring-designer.md)
-    + [Use Forms Designer to create templates](/help/forms/use-forms-designer.md)
-    + [Changing Page Zero content in Designer](/help/forms/changing-page-zero-content-designer.md)
+    + {hide-from-toc} [Install and configure Forms Designer](/help/forms/installing-configuring-designer.md)
+    + {hide-from-toc} [Use Forms Designer to create templates](/help/forms/use-forms-designer.md)
+    + {hide-from-toc} [Changing Page Zero content in Designer](/help/forms/changing-page-zero-content-designer.md)
     + [Using custom fonts in PDF documents](/help/forms/use-custom-fonts.md)
     + [List of supported fonts in PDF documents](/help/forms/supported-out-of-the-box-fonts.md)
     + [Known issues, best practices, and frequently asked questions](/help/forms/communications-known-issues-limitations.md)
@@ -1701,3 +1712,4 @@ user-guide-title: AEM as a Cloud Service
     + [A Quick Guide to WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
 + Troubleshooting {#troubleshooting}
   + {hide-from-toc} [Troubleshoot AEM Assets and Forms issues](/help/troubleshooting/home.md)
+
