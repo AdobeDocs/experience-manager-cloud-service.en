@@ -4,7 +4,7 @@ description: Learn how to combine adjacent table cells into a single cell and sp
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms."
 exl-id: merge-split-table-cells-ic-editor
 ---
 
