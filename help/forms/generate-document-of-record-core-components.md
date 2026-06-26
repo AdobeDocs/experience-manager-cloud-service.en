@@ -59,6 +59,8 @@ Your Adaptive Form is now configured to use an XDP file as template for Submissi
 
 ## Use locale-specific custom XDP templates for Submission PDF {#locale-specific-custom-xdp-templates-for-document-of-record}
 
+<span class="preview"> Submission PDF configuration for forms embedded in AEM Sites pages and locale-specific custom XDP templates for Document of Record are under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to these capabilities. </span>
+
 When you associate a custom XFA template (XDP file) as the Submission PDF template, you can provide locale-specific versions of the template. AEM Forms automatically selects the appropriate XDP based on the form locale when generating the Submission PDF.
 
 ### How locale-specific template selection works
