@@ -94,18 +94,21 @@ AEM now supports [Visual Content Fragments](/help/sites-cloud/administering/cont
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Edit PSD files in Adobe Express Embedded Editor**
+**Open Photoshop assets in Adobe Express Embedded Editor**
 
-You can now edit PSD files in addition to JPEG and PNG formats in Adobe Express embedded editor from Assets view. This enhancement enables creative and marketing teams to work with layered design files without leaving AEM Assets, streamlining content updates and reducing the need to switch between applications. PSD support helps accelerate content creation workflows while preserving the flexibility of source design assets.
+You can now open Adobe Photoshop (.psd) files in addition to JPEG and PNG formats in Adobe Express embedded editor from Assets view and Content Hub. This enhancement enables creative and marketing teams to work with layered design files without leaving AEM Assets, streamlining content updates and reducing the need to switch between applications. PSD support helps accelerate content creation workflows while preserving the flexibility of source design assets. Users can save resulting remixed creations as channel-ready assets to AEM. 
 
 **Import Adobe Illustrator and Adobe InDesign assets from AEM Assets into Adobe Express**
 
-Adobe Express now supports importing Adobe Illustrator (.ai) and Adobe InDesign (.indd) files from AEM Assets. This capability allows creative and marketing teams to access and reuse approved design assets more easily, accelerating content creation and helping ensure consistent brand experiences across channels.
+Adobe Express now supports importing Adobe Illustrator (.ai) and Adobe InDesign (.indd) files from AEM Assets using the Assets plugin. Adobe Illustrator files can be imported into the current document or imported into a new Express document. Adobe InDesign files can be imported into a new Express document. This capability allows creative and marketing teams to access and reuse approved design assets more easily, accelerating content creation and helping ensure consistent brand experiences across channels.
 
+>[!IMPORTANT]
+>
+>This feature is available as Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 **Maintain asset lineage between Adobe Express and AEM Assets**
 
-AEM Assets now preserves lineage information for assets created in Adobe Express using assets sourced from AEM. This capability records relationships between source assets and the resulting content, enabling organizations to trace how approved assets are reused across creative workflows.
+AEM Assets now preserves lineage information for assets created in Adobe Express using assets sourced from AEM. This capability records relationships between source assets and the resulting content and stores it as asset metadata in AEM, enabling organizations to trace how approved assets are reused across creative workflows.
 
 By maintaining asset lineage metadata, teams can improve governance, compliance, and content supply chain transparency. It also helps marketers and content administrators better understand asset reuse, support rights management initiatives, and track the origin of assets used in published content.
 
@@ -113,15 +116,15 @@ By maintaining asset lineage metadata, teams can improve governance, compliance,
 >
 >This feature is available as Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
-**AEM integration with Workfront planning standard campaign metadata**
+**AEM integration with Workfront Planning and GenStudio for Performance Marketing for standard campaign metadata**
 
-When AEM Assets is integrated with Workfront Planning, campaign metadata fields, including Campaign, Region, Channel, Persona, and Product, are now available in asset properties under a dedicated read-only Campaign tab.
+When AEM Assets is integrated with [Workfront Planning and GenStudio for Performance Marketing](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-planning/planning-and-genstudio-integration/planning-and-genstudio-integration-article-index), campaign metadata fields, including Campaign Name, Region, Channel, Persona, and Product, are now available in Asset view properties rail under a dedicated read-only Campaign tab. When users in Workfront Planning connect assets from AEM to GenStudio the respective objects in Adobe GenStudio workspace, specific values (e.g., a specific campaign name) is automatically added to AEM asset's metadata. 
 
 The integration enables users to quickly discover and search for assets based on campaign attributes. This enhancement improves asset findability, streamlines content management workflows, and helps teams locate the right assets for specific marketing initiatives more efficiently.
 
 >[!IMPORTANT]
 >
->This feature is available as Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>This feature is available as Limited Availability feature and requires licenses for Workfront Planning and GenStudio for Performance Marketing. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 
 ### New features in Dynamic Media with OpenAPI capabilities {#new-features-dynamic-media-openapi}
