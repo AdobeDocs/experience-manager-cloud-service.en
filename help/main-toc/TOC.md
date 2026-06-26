@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2026 {#2026}
+      + [Release Notes for 2026.5.0](/help/release-notes/release-notes-cloud/2026/2026-5-0.md)
       + [Release Notes for 2026.4.0](/help/release-notes/release-notes-cloud/2026/2026-4-0.md)
       + [Release Notes for 2026.3.0](/help/release-notes/release-notes-cloud/2026/2026-3-0.md)
       + [Release Notes for 2026.2.0](/help/release-notes/release-notes-cloud/2026/2026-2-0.md)
@@ -260,6 +261,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.06.18 Release Notes](/help/release-notes/universal-editor/2026/2026-06-18.md)
       + [2026.06.11 Release Notes](/help/release-notes/universal-editor/2026/2026-06-11.md)
       + [2026.06.05 Release Notes](/help/release-notes/universal-editor/2026/2026-06-05.md)
       + [2026.05.28 Release Notes](/help/release-notes/universal-editor/2026/2026-05-28.md)
@@ -1111,9 +1113,9 @@ user-guide-title: AEM as a Cloud Service
     + [Generate AFP Output Using the AEM Forms API](/help/forms/document-generation-afp-api.md)
     + {hide-from-toc} [OAuth Server-to-Server Authentication ](/help/forms/oauth-api-authetication.md)
     + {hide-from-toc} [JWT(JSON Web Token) Server-to-Server Authentication](/help/forms/jwt-api-authentication.md)
-    + [Install and configure Forms Designer](/help/forms/installing-configuring-designer.md)
-    + [Use Forms Designer to create templates](/help/forms/use-forms-designer.md)
-    + [Changing Page Zero content in Designer](/help/forms/changing-page-zero-content-designer.md)
+    + {hide-from-toc} [Install and configure Forms Designer](/help/forms/installing-configuring-designer.md)
+    + {hide-from-toc} [Use Forms Designer to create templates](/help/forms/use-forms-designer.md)
+    + {hide-from-toc} [Changing Page Zero content in Designer](/help/forms/changing-page-zero-content-designer.md)
     + [Using custom fonts in PDF documents](/help/forms/use-custom-fonts.md)
     + [List of supported fonts in PDF documents](/help/forms/supported-out-of-the-box-fonts.md)
     + [Known issues, best practices, and frequently asked questions](/help/forms/communications-known-issues-limitations.md)
