@@ -26,13 +26,8 @@ None.
 
 #### AEM Guides {#guides-X}
 
-* GUIDES-46275: Image dimensions specified with units such as `mm` are not rendered correctly, causing images to be displayed at their original size instead of the specified dimensions.
-* GUIDES-45800: Copying and pasting `<keywords>` inside `<topicmeta>` within a `<keydef>` or `<topicref>` results in the keywords being inserted inside unwanted foreign tags.
-* GUIDES-45409: When a map contains an external `topicref` pointing to a non-DITA resource (such as `.html`), its preview is not displayed in the Assets UI.
-* GUIDES-45254: When working with `.plt` and `.css` files in PDF templates, the **Generate IDs** option is available in the right-click context menu despite not being applicable to these file types.
-* GUIDES-45508: Applying a baseline to a map with many assets delays loading of the translation report for the selected language, sometimes leading to request timeout before the report renders.
-* GUIDES-45511: The tooltip for the **Version History** icon is missing in the left panel of the Review UI adjacent to the topic name.
-* GUIDES-44942: When adding questions to a quiz using the Insert from question bank option, short answer questions are not listed despite having a valid Question ID.
+* GUIDES-47432: Switching between Source and Author modes causes content inconsistencies, with portions of the topic disappearing or not being reflected across modes.
+* GUIDES-48319: When working with Track changes, rejecting an Imported text insertion removes all content within the tag instead of only rejecting the specific inserted content.
 
 For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
 
