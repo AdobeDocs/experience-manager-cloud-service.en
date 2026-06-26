@@ -152,7 +152,7 @@ Dynamic Media with OpenAPI capabilities now lets you upload custom thumbnails fo
 
 #### Interactive Communication Editor 
 
-Interactive Communication (IC) Editor is now available in AEM Forms as a Cloud Service. It is a browser-based solution for creating, managing, and delivering data-driven interactive correspondences such as business correspondence, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
+[Interactive Communication (IC) Editor](/help/forms/interactive-communication/introduction.md) is now available in AEM Forms as a Cloud Service. It is a browser-based solution for creating, managing, and delivering data-driven interactive correspondences such as business correspondence, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
 
 ![Interactive Communication Editor](/help/forms/assets/ic-editor.png)
 
