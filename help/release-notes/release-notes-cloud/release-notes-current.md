@@ -146,15 +146,11 @@ The DynamicMedia Component now embeds transcripts for videos to improve accessib
 
 Dynamic Media with OpenAPI capabilities now lets you upload custom thumbnails for video assets. By replacing automatically generated thumbnails with branded or purpose-built images, organizations can improve content presentation, enhance asset discoverability, and create a more engaging viewing experience.
 
-
-
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### New Features in AEM Forms
 
 #### Interactive Communication Editor 
-
-The Interactive Communication Editor and Associate UI include new collaboration, layout, and associate-editing capabilities to help authors design faster and enable associates to complete customer communications with greater accuracy.
 
 Interactive Communication (IC) Editor is now available in AEM Forms as a Cloud Service. It is a browser-based solution for creating, managing, and delivering data-driven interactive correspondences such as business correspondence, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
 
@@ -200,17 +196,17 @@ Interactive Communication (IC) Editor is now available in AEM Forms as a Cloud S
 
 * **Configure Bound and Unbound Variables for Associate UI**: Bound and unbound variables in **Text** components can now be configured for the Associate UI. Authors choose whether associates edit the entire text block inline in the document preview or enter values for individual variables in the data entry panel. Duplicate variable names propagate values across all matching occurrences in the preview. For more information, see [Configure Bound and Unbound Variables for Associate UI](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md).
 
-## Early Adopter Features
+### Early Adopter Features
 
-### Document of Record for forms embedded in AEM Sites
+#### Document of Record for forms embedded in AEM Sites
 
 Authors can now configure and generate a Document of Record (Submission PDF) for Adaptive Forms Core Components embedded in AEM Sites pages. DoR settings—including auto-generation, custom XDP templates, and branding—are available directly from the **Adaptive Form Container** in the Sites page editor. [Learn more](/help/forms/generate-document-of-record-core-components.md#configure-document-of-record-for-forms-embedded-in-aem-sites).
 
-### Locale-specific custom XDP templates for Document of Record
+#### Locale-specific custom XDP templates for Document of Record
 
 When you associate a custom XDP template for DoR, you can provide locale-specific versions in the same folder using the `basename.<locale>.xdp` convention (for example, `a.xdp` and `a.fr.xdp`). AEM Forms automatically picks the template that matches the form locale when generating the Submission PDF, with fallback to the default template. [Learn more](/help/forms/generate-document-of-record-core-components.md#locale-specific-custom-xdp-templates-for-document-of-record).
 
-### Adobe Sign agreement expiration
+#### Adobe Sign agreement expiration
 
 You can set how long recipients have to complete signing by specifying **Document Expiration (Days)** in the **Electronic Signature** section of an Adaptive Form. The value is sent to Adobe Sign as `daysUntilSigningDeadline`. If left empty, the agreement does not expire. [Learn more](/help/forms/working-with-adobe-sign.md#set-document-expiration-for-an-adobe-sign-agreement).
 
