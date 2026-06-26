@@ -4,6 +4,7 @@ description: Learn how the Development Agent in AEM analyzes failed pipelines in
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
+nudge: please
 ---
 
 # Development Agent Overview {#development-agent-overview}
@@ -14,7 +15,7 @@ It supports the following jobs, which are accessible through the AI Assistant's 
 
 * Cloud Manager Job: read-only operations, including listing of programs and environments, and pipeline status
 * Pipeline Troubleshooting Job: debug failed pipelines
-* Quiet Hours and Update Free Periods Management Job (Limited Availability): view, create, and edit Quiet Hours and Update Free Periods
+* Quiet Hours and Update Free Periods Management Job: view, create, and edit Quiet Hours and Update Free Periods
 * Replication Troubleshooting Job (Beta): debug replication-related issues such as blocked queues.
 
 >[!NOTE]
@@ -55,10 +56,6 @@ Find information about your AEM programs and environments, including:
 
 
 ## Quiet Hours and Update Free Periods Management Job {#control-updates-job}
-
->[!AVAILABILITY]
->
->This feature is in a Limited Availability phase and will be rolled out over the next few weeks. Email [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com) for immediate access.
 
 View, create, and edit Quiet Hours and Update Free Periods directly through the AEM AI Assistant.
 
@@ -192,3 +189,4 @@ For other pipeline types and steps, debug failures by downloading and inspecting
 Debug replication-related issues such as blocked queues.
 
 Please email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com) for access to the beta program.
+
