@@ -63,3 +63,4 @@ SLA reporting provides information about the performance of your AEM production 
 
 The preview environment is intended as a tool for content authors to review the content before publishing. Because of this functionality, preview environments are not designed with high availability and do not have an associated SLA.
 
+

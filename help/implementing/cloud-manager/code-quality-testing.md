@@ -125,3 +125,4 @@ A special case can occur when the "all" content package contains a combination o
 >
 >* This optimization does not impact the packages which are deployed to AEM.
 >* The matching between embedded content packages and skipped content packages relies on file names. This optimization cannot occur if multiple skipped packages share the same file name or if the file name changes during embedding.
+

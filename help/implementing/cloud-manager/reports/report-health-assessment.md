@@ -154,3 +154,4 @@ The following is a full list of patterns that depart from best practices and iss
 | Repository Structure | Patterns related to JCR repository organization and structure. |
 | Dependencies | Patterns related to code dependencies and version management. |
 | Statistics | Patterns that represent usage statistics and metrics. |
+

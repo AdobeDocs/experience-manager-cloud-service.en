@@ -193,4 +193,5 @@ Yes. A user can be assigned to multiple profiles including predefined and custom
 
 ### What happens if a user has permission to edit an environment/pipeline but does not have access to a program that contains the environment/pipeline?
 
-The user is unable to access the environment or pipeline if they do not have the **Program Access** permissions associated with the environment or pipeline.
+The user is unable to access the environment or pipeline if they do not have the **Program Access** permissions containing the environment or pipeline.
+
