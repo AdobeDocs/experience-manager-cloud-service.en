@@ -33,7 +33,7 @@ When you log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudm
 
 ![My Programs console](assets/my-programs-console.png)
 
-The My Programs console provides an overview of all programs to which you have access in the selected organization. It is made up of several parts.
+The My Programs console provides an overview of all programs to which you have access in the selected organization. It consists of the following parts:
 
 1. [Toolbars](#toolbars-my-programs-toolbars) for organization selection, alerts, and account settings
 1. Tabs that let you toggle the current view of your programs.
@@ -50,7 +50,7 @@ The My Programs console provides an overview of all programs to which you have a
 
 ### Toolbars {#my-programs-toolbars}
 
-There are two toolbars on top of each other. 
+There are two stacked toolbars. 
 
 #### Experience Platform top navigation bar {#cloud-manager-header}
 
@@ -75,13 +75,13 @@ The program toolbar provides links to switch between Cloud Manager programs and 
 
 ### Statistics and call-to-actions {#statistics}
 
-The statistics and call-to-action section provides aggregate data for your organization, for example, if you have successfully set up your programs, statistics of your activities over the past 90 days might show, including:
+The statistics and call-to-action section provides aggregate data for your organization. For example, if you have successfully set up your programs, statistics of your activities over the past 90 days are shown, including:
 
 * Number of [deployments](/help/implementing/cloud-manager/deploy-code.md)
 * Number of [code quality issues](/help/implementing/cloud-manager/code-quality-testing.md) identified
 * Number of builds
 
-Or if you are just beginning the setup of your org, there might be tips on next steps or documentation resources.
+If you are beginning the setup of your org, there are tips on next steps or documentation resources.
 
 ### My Programs section {#my-programs-section}
 
@@ -91,7 +91,7 @@ The **My Programs** section lists cards representing each program. Click a card 
 
 >[!NOTE]
 >
->Depending on your privileges, you may not be able to select certain programs.
+>Depending on your privileges, you might not be able to select certain programs.
 
 
 To find the program you need more easily, use the sorting options.
@@ -124,7 +124,7 @@ A card (or row in a table) represents every program, providing an overview of th
 * Configured solutions. In the image above, Sites and Assets are the configured solutions.
 * Creation date.
 
-A production program might be badged to show additional features you chose at the time you added it, such as the following:
+A production program is badged to show additional features you chose at the time you added it, such as the following:
 
 * ![HIPAA badge](assets/hipaa.png) [HIPAA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
@@ -164,7 +164,7 @@ When a program is selected in the **[My Programs](#my-programs-console)** consol
 
 ![Program overview](assets/program-overview.png)
 
-The program overview gives you access to all details of a Cloud Manager program. Like the **My Programs** console, it is made of several parts.
+The program overview gives you access to all details of a Cloud Manager program. Like the **My Programs** console, it is made of the following parts:
 
 1. [Toolbars](#program-overview-toolbar) to move back to the My Programs console quickly, and to navigate the program.
 1. [Tabs](#program-tabs) to switch between different aspects of the program.
@@ -184,11 +184,11 @@ In the upper-left corner of the page is the Adobe Cloud Manager header. You can 
 
 ![Cloud Manager side menu](assets/cloud-manager-hamburger.png)
 
-Click Adobe Cloud Manager to return to Home.
+Click Adobe Cloud Manager to return to the Home page.
 
 #### Program toolbar {#program-toolbar-2}
 
-The program toolbar still gives you access to switch to other programs quickly, but also gives access to context-appropriate actions, such as adding and editing the program.
+The program toolbar provides access to switch to other programs quickly, and also provides access to context-appropriate actions, such as adding and editing the program.
 
 ![Program toolbar](assets/cloud-manager-program-toolbar.png)
 
@@ -196,7 +196,7 @@ The toolbar always shows the tab that you are currently on, even if you have hid
 
 ### Program tabs {#program-tabs}
 
-Each program has numerous options and data associated with it. These options and data are gathered into tabs to make navigating the program simpler. The tabs give you access to:
+Each program has numerous options and data associated with it. These options and data are organized into tabs to make navigating the program simpler. The tabs give you access to:
 
 **Program**
 
@@ -213,7 +213,7 @@ Each program has numerous options and data associated with it. These options and
 * ![Settings icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) [Domain Settings](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Manage custom domain names for the program
 * ![Lock closed icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) [SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - Manage SSL certificates for the program
 * ![Social network icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [Domain Mappings](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Manage Domain Mappings 
-* ![Task list icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [`IP Allow Lists`](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - Define allow lists for certain IP addresses
+* ![Task list icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [`IP Allow Lists`](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - Define allowlists for certain IP addresses
 * ![Box icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) [Content Sets](/help/implementing/developing/tools/content-copy.md) - Sets of content created for copy purposes
 * ![History icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) [Copy Content Activity](/help/implementing/developing/tools/content-copy.md) - Content copy activities
 * ![Channel icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Channel_18_N.svg) [Network Infrastructures](/help/security/configuring-advanced-networking.md) - Manage advanced networking options for the program
@@ -228,7 +228,7 @@ In the upper-left corner of the [Cloud Manager header](#cloud-manager-header-2),
 
 ### Call-to-action {#cta}
 
-The call-to-action section gives you helpful information depending on the status of your program. For a new program, you may see next steps and a reminder of a go-live date that was [set during program creation](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
+The call-to-action section gives you helpful information depending on the status of your program. For a new program, you see next steps and a reminder of a go-live date that was [set during program creation](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
 ![Call-to-action for a new program](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 
