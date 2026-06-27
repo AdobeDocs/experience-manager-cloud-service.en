@@ -295,10 +295,6 @@ To enable [!DNL Dynamic Media] Prime:
 
 ## Frequently Asked Questions {#frequently-asked-questions-dynamic-media-prime-ultimate}
 
-### What is the difference between enabling Dynamic Media Prime and Dynamic Media Ultimate? {#dynamic-media-prime-vs-ultimate}
-
-Dynamic Media Ultimate requires completing five steps: activating Dynamic Media with OpenAPI, configuring Dynamic Media solutions, accessing Dynamic Media APIs, creating and listing Dynamic Media companies, and optionally configuring a custom domain in the delivery tier. Dynamic Media Prime requires only two steps: activating Dynamic Media with OpenAPI and optionally configuring a custom domain in the delivery tier. Dynamic Media Prime does not require configuring Dynamic Media solutions, accessing Dynamic Media APIs, or creating Dynamic Media companies as part of the enablement workflow.
-
 ### What are the prerequisites for activating Dynamic Media with OpenAPI? {#dynamic-media-openapi-prerequisites}
 
 Activating Dynamic Media with OpenAPI requires three prerequisites: access to Cloud Manager, a program that includes Dynamic Media solutions, and a valid Dynamic Media Prime or Ultimate license. If no existing environment is available in Cloud Manager, a new environment must be created before activation can begin. The Dynamic Media solution must be added to the program before the activation step is executed on the environment details page.
@@ -341,8 +337,4 @@ Configuring a custom domain in the Dynamic Media delivery tier requires four pre
 
 ### How do I configure a custom domain for Dynamic Media delivery using Cloud Manager? {#configure-custom-domain-delivery-tier}
 
-To configure a custom domain for Dynamic Media delivery, complete three steps in Cloud Manager: add a customer-managed SSL certificate, add a custom domain name, and add a CDN configuration from the environment details page — selecting Delivery in the Tier field of the Configure CDN dialog box. After adding the CDN configuration, the status updates to Applied. Click more options and select Go live readiness, then follow the Configure CNAME steps to map cdn.adobeaemcloud.com as a CNAME record in the DNS service provider. Once the DNS mapping is confirmed, click Ok and the domain status updates to Verified, making the custom domain ready for use in delivery URLs.
-
-### Does Dynamic Media Prime require all five steps that Dynamic Media Ultimate requires? {#dynamic-media-prime-steps-required}
-
-Dynamic Media Prime requires only two steps from the full Dynamic Media Ultimate enablement workflow: activating Dynamic Media with OpenAPI and optionally configuring a custom domain in the delivery tier. Configuring Dynamic Media solutions, accessing Dynamic Media APIs, and creating Dynamic Media companies are not required for Dynamic Media Prime. Both offerings share the same activation step as the starting point of their respective workflows.
+To configure a custom domain for Dynamic Media delivery, complete three steps in Cloud Manager: add a customer-managed SSL certificate, add a custom domain name, and add a CDN configuration from the environment details page — selecting Delivery in the Tier field of the Configure CDN dialog box. After adding the CDN configuration, the status updates to Applied. Click more options and select Go live readiness, then follow the Configure CNAME steps to map cdn.adobeaemcloud.com as a CNAME record in the DNS service provider. Once the DNS mapping is confirmed, click OK and the domain status updates to Verified, making the custom domain ready for use in delivery URLs.
