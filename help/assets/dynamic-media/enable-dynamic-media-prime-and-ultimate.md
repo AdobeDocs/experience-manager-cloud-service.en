@@ -106,7 +106,7 @@ Execute the following steps:
 
 See [Activate [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi) to start using the capabilities of [!DNL Dynamic Media] with OpenAPI capabilities in your environment.
 
-### Access Dynamic Media APIs
+### Access Dynamic Media APIs {#access-dynamic-media-apis}
 
 After [enabling Dynamic Media with OpenAPI](#activate-dynamic-media-with-openapi), a `delivery` instance gets created. Click the delivery instance to view the `AEM Assets DM OpenAPI Users - delivery  - Program xxxx - Environment yyyy` product profile. The product profile already has **AEM Dynamic Media enable API Services** enabled by default.
 
@@ -315,7 +315,7 @@ Configuring Dynamic Media solutions requires access to Cloud Manager and a valid
 
 To add the Dynamic Media solution to a program, create a new program or navigate to an existing program in Cloud Manager and click Edit. On the Set up for production page, select the Solutions & Add-ons tab, then select Assets, Assets Prime, Assets Ultimate, or Sites to make the Dynamic Media solution available. Select Dynamic Media and click Continue to add it to the program. This action restarts all existing environments in the program and adds the Dynamic Media solution. All new environments created under the program automatically receive Dynamic Media.
 
-### How do I access Dynamic Media APIs after enabling Dynamic Media with OpenAPI? {#access-dynamic-media-apis}
+### How do I access Dynamic Media APIs after enabling Dynamic Media with OpenAPI? {#dynamic-media-apis-faqs}
 
 After enabling Dynamic Media with OpenAPI, a delivery instance is created in Adobe Admin Console. Click the delivery instance to view the AEM Assets DM OpenAPI Users product profile, which has AEM Dynamic Media enable API Services enabled by default. To access the APIs, create a new project in Adobe Developer Console and use the AEM Dynamic Media API card. Authentication options include Server-to-Server authentication, Web App credentials, or SPA credentials. Before accessing the API, the user must be added to the AEM Assets DM OpenAPI Users delivery product profile for the relevant program and environment.
 
