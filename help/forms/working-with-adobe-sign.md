@@ -189,6 +189,8 @@ To select a Cloud Service and order of signing:
 
 You can set an expiration deadline on Adobe Sign agreements so recipients must complete signing within a specified number of days. When a form is submitted, AEM Forms passes the configured value to Adobe Sign as `daysUntilSigningDeadline`.
 
+<span class="preview"> Setting document expiration for Adobe Sign agreements is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to this capability. </span>
+
 To set document expiration:
 
 1. In the Content browser, select **[!UICONTROL Form Container]**, and select the **[!UICONTROL Configure]** ![configure](assets/Smock_Wrench_18_N.svg) icon.

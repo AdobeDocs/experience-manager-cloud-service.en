@@ -10,7 +10,7 @@ role: Admin, Developer
 
 Adobe provides the ability to use Dynatrace to monitor AEM as a Cloud Service as a part of enterprise deployment, identify the cause of any potential issues, and take action to remediate them as needed. 
 
-With Dynatrace, you can get seamless observability for all your AEM applications. Dynatrace discovers your AEM apps and shows their paths, from website to container to the Cloud Service, to reveal the user experience. Combined with end-to-end tracing across every tier and Real User Monitoring, elevate your AEM content-driven experiences without gaps or blind spots. If anomalies arise, Dynatrace diagnoses them in real time, with the Davis AI engine. It pinpoints the root cause down to the broken code before your customers are affected, minimizing the mean time to repair.
+With Dynatrace, you can get seamless observability for all your AEM applications. Dynatrace discovers your AEM apps and shows their paths, from website to container to the Cloud Service, to monitor the user experience. Combined with end-to-end tracing across every tier and Real User Monitoring, improve your AEM content-driven experiences without gaps or monitoring limitations. If anomalies arise, Dynatrace diagnoses them in real time using the Davis AI engine. It identifies the cause of the issue before your customers are affected, reducing the time required for resolution.
 
 To learn more about Dynatrace, see the [Adobe AEM Cloud Service integration](https://www.dynatrace.com/hub/detail/adobe-experience-manager-1/).
 
@@ -18,7 +18,7 @@ To learn more about Dynatrace, see the [Adobe AEM Cloud Service integration](htt
 
 ## Integrate Dynatrace with AEM as a Cloud Service {#integrating-dynatrace-with-aem-as-a-cloud-service}
 
-Dynatrace customers may monitor their AEM environments by requesting connectivity through a customer support ticket.
+Dynatrace customers can monitor their AEM environments by requesting connectivity through a customer support ticket.
 
 The details required for connectivity requests are described below:
 
@@ -51,7 +51,7 @@ To learn more about Dynatrace licensing, see the [Dynatrace Platform Subscriptio
 
 ### How do I get my Dynatrace Connection Details? {#how-do-i-get-my-dynatrace-connection-details}
 
-1. Run the following API request to your Dynatrace environment:  
+1. Run the following API request against your Dynatrace environment:  
 
    ```
    curl -X GET "<environmentUrl>/api/v1/deployment/installer/agent/connectioninfo" -H "accept: application/json" -H "Authorization: Api-Token <accessToken>"
@@ -60,7 +60,7 @@ To learn more about Dynatrace licensing, see the [Dynatrace Platform Subscriptio
 
    Replace `<environmentUrl>` with your Dynatrace environment URL and `<accessToken>` with your created API access token.  
 
-1. Copy the `<environmentId>` and `<environmentToken>` from the response payload and store them in a secured place.
+1. Copy the `<environmentId>` and `<environmentToken>` from the response payload and store them in a secure place.
       
    ```
    {

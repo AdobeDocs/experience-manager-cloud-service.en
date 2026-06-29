@@ -17,23 +17,23 @@ Environment variables can be either environment-specific values or environment s
 
 Environment variables provide several benefits for AEM as a Cloud Service users, including the following:
 
-* They allow the behavior of your code and application to vary based on context and environment. For example, they can be used to enable different configurations in the development environment compared to the production or stage environments to avoid costly mistakes.
+* They allow the behavior of your code and application to vary based on context and environment. For example, they can be used to enable different configurations in the development environment compared to the production or staging environments to avoid costly mistakes.
 * They only need to be configured and set up once and can be updated and deleted when necessary.
 * Their values can be updated at any time and take effect immediately without requiring code changes or deployments.
 * They can separate code from configuration and remove the need to include sensitive information in version control.
-* They improve AEM as a Cloud Service application security because they exist outside the codebase.
+* They improve AEM as a Cloud Service application security because they are stored outside the codebase.
 
 Typical use cases for using environment variables include the following:
 
 * Connecting your AEM application with different external endpoints.
-* Using a reference when storing passwords instead of storing them directly in the code base.
-* Multiple development environments exist in a program, and some configurations differ from one environment to another.
+* Using a reference when storing passwords instead of storing them directly in the codebase.
+* Multiple development environments exist in a program, and some configurations vary between environments.
 
 ## Add an environment variable {#add-variables}
 
 If you want to add multiple variables, Adobe recommends that you add the first variable, then use ![Add icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg ) **Add** in the **Environment Configuration** dialog to add the additional variables. This method lets you add them with a single environment update.
 
-To add, update, or delete environment variables, you must be a member of the [Deployment Manager role](/help/onboarding/cloud-manager-introduction.md#role-based-premissions).
+To add, update, or delete environment variables, you must be a member of the [Deployment Manager role](/help/onboarding/cloud-manager-introduction.md#role-based-permissions).
 
 **To add an environment variable:**
 
@@ -64,7 +64,7 @@ To add, update, or delete environment variables, you must be a member of the [De
 
 1. Click **Save**.
 
-   A spinner with the status **Updating** is shown in the upper-right corner of the table. A spinner also appears to the left of any newly added variables. These statuses indicate that the environment is being updated with the configuration. After completion, the new environment variable is visible in the table.
+   An indicator with the status **Updating** is shown in the upper-right corner of the table. An indicator also appears to the left of any newly added variables. These statuses indicate that the environment is being updated with the configuration. After completion, the new environment variable is visible in the table.
 
 ![Updating variables](assets/updating-variables.png)
 
@@ -99,7 +99,7 @@ If you want to update multiple variables, Adobe recommends that you use the **En
 
 1. Click **Save**.
 
-   A spinner with the status **Updating** is shown in the upper-right corner of the table. A spinner also appears to the left of any updated variables. These statuses indicate that the environment is being updated with the configuration. After completion, the updated environment variable is visible in the table.
+   A spinner with the status **Updating** is shown in the upper-right corner of the table. An indicator also appears to the left of any updated variables. These statuses indicate that the environment is being updated with the configuration. After completion, the updated environment variable is visible in the table.
 
 ## Delete an environment variable {#delete-env-variable}
 
