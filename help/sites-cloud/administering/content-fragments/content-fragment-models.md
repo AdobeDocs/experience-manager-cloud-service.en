@@ -524,20 +524,24 @@ When to use Composite (and when not):
 
 #### Use Composite {#use-composite}
 
-* From the Content Fragment Model Editor
+* From the original Content Fragment Model Editor
 
   In the Touch UI (original) Content Fragment Model Editor, the Composite data type appears in the list of available field types. 
   
   When configuring it:
 
-  * Allowed model 
-    Pick one or more Content Fragment Models whose fields will appear as composite items. Multi-model is supported (the author chooses which model when adding an item).
-  * Single value vs. multi-value 
-    Single-value composite holds at most one item; multi-value supports add/remove/reorder with min/max constraints.
-  * Min/max
-    For multi-value composites, set min/max bounds.
-  * Variations
-    Composite fields participate in variations.
+  * **Render As**
+    Specify either:
+    * **Multiple Field** supports add/remove/reorder with min/max constraints
+    * **Composite Field** holds at most one item
+  * **Min/Max Number of items**
+    For multi-value composites, set min/max bounds for the number of items
+  * **Type** 
+    Specify one or more Content Fragment Models. Fields from these models will appear as composite items. Multiple models can be selected, the author then chooses which model when adding an item.
+
+  >[!NOTE]
+  >
+  >The new Content Fragment Model Editor will block editing of composite fields.
 
 * From the new Content Fragment Editor
 
@@ -599,11 +603,11 @@ The list below consolidates the current limitations of the Composite data type:
 * Authoring surface
 
   * Touch UI Fragment Editor (original editor)
-    Composite fields are not supported. 
+    * Composite fields are not supported. 
   * New (Headless) Content Fragment Model Editor
     * The Composite type is not yet supported. Model authoring uses the original Touch UI Model Editor.
   * Admin UI / search
-    * Composite fragments do not appear in search results. This is by design to limit content-tree complexity exposed via search, not a defect.
+    * Composite fragments do not appear in search results. This is not a defect, but is by design to limit content-tree complexity exposed via search.
 
 * Nesting and complexity
 
