@@ -421,9 +421,9 @@ In addition to standard properties you can define:
 
 * **Render As**:
 
-  * **multifield** - the fragment author can create multiple, individual, references
+  * **Multiple Field** - the fragment author can create multiple, individual, references
 
-  * **fragmentreference** - allows the fragment author to select a single reference to a fragment
+  * **Fragment Reference** - allows the fragment author to select a single reference to a fragment
 
 * **Model Type**
   Multiple models can be selected. When adding references to a Content Fragment, any referenced fragments must have been created using these models.
@@ -507,7 +507,7 @@ A Composite field embeds a model-defined group of fields directly inside the par
 
 #### When to use Composite {#when-to-use-composite}
 
-When to use Composite (and when not):
+Use of the Composite data type should be considered as your use-case can determine which sort of nested content is the best solution for you.
 
 * Recommended when you:
 
