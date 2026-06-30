@@ -468,9 +468,9 @@ A Composite field has the following properties and characteristics:
   * When defining a Composite field in a Content Fragment Model you must define which models can be used for the composite items. 
   * Multiple models can be selected, the author then chooses which model when adding an item.
 
-* Single-session authoring
+* In place authoring
 
-  * Composite items are edited in the same editor view as the parent fragment, in a dedicated panel, with no tab switching.
+  * Composite items are edited together with the parent fragment, with no switching.
 
 * Step-and-repeat as a multi-field
 
@@ -486,53 +486,57 @@ A Composite field has the following properties and characteristics:
   * Top-level variations apply to composite trees: a variation may have a different number of composite items, or different content per item, than the master. 
   * Selection is at the top-level only; nested content reflects the chosen variation.
 
-* Native in delivery
+* Native delivery
 
   * GraphQL and OpenAI return composite content as a nested object on the parent payload. There is no reference to resolve at delivery time, no separate JCR node to fetch.
 
-* Cleaner reference semantics
+* Clean reference semantics
 
-  * You can model content that belongs to its parent and is not reused as composite.
+  * You can model content that belongs to its parent and is not reused.
   
     >[!NOTE]
     >
     >And reserve fragment references for content that is genuinely reusable. The two are complementary, not substitutes.
 
-#### Use Composite {#use-composite}
+<!-- CQDOC-23582 - check usage details before GA -->
 
-* From the [original Content Fragment Model Editor](/help/assets/content-fragments/content-fragments-models.md)
+#### Define a Composite field {#define-a-composite-field}
 
-  In the Touch UI (original) Content Fragment Model Editor, the Composite data type appears in the list of available field types. 
+From the Touch UI [(original) Content Fragment Model Editor](/help/assets/content-fragments/content-fragments-models.md) the Composite data type appears in the list of available field types. 
 
-  ![Fragment Reference](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-fragment-composite.png)
+![Fragment Reference](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-fragment-composite.png)
 
-  When configuring it:
+To configure:
 
-  * **Render As**
-    Specify either:
-    * **Multiple Field** supports add/remove/reorder with min/max constraints
-    * **Composite Field** holds at most one item
-  * **Min/Max Number of items**
-    For multi-value composites, set min/max bounds for the number of items
-  * **Type** 
-    Specify one or more Content Fragment Models. Fields from these models will appear as composite items. Multiple models can be selected, the author then chooses which model when adding an item.
+* **Render As**
+  Specify either:
+  * **Multiple Field** supports add/remove/reorder with min/max constraints
+  * **Composite Field** holds at most one item
+* **Min/Max Number of items**
+  For multi-value composites, set min/max bounds for the number of items
+* **Type** 
+  Specify one or more Content Fragment Models. Fields from these models will appear as composite items. Multiple models can be selected, the author then chooses which model when adding an item.
 
-  >[!NOTE]
-  >
-  >The new Content Fragment Model Editor will block editing of composite fields.
+>[!NOTE]
+>
+>The new Content Fragment Model Editor will block editing of composite fields.
 
-* From the [new Content Fragment Editor](/help/sites-cloud/administering/content-fragments/authoring.md)
+#### Edit a Composite item {#edit-a-composite-item}
 
-  Authors open a fragment that contains a composite field and see:
+From the [new Content Fragment Editor](/help/sites-cloud/administering/content-fragments/authoring.md) you can open a fragment that contains a composite field and see:
 
-  * A panel-style rendering for the composite field, not an inline form. Selecting the composite item opens its fields in a dedicated editor area within the same browser session.
-  * Add / Remove / Reorder controls for multi-value composites.
-  * For multi-model fields, an **Add** dialog lets the author pick which model to instantiate.
-  * A variation selector at the top level. Once a variation is chosen, the entire nested composite tree reflects that variation. Items can differ in count and content between variations.
+* A panel-style rendering for the composite field, not an inline form. Selecting the composite item opens its fields in a dedicated editor area within the same browser session.
+* Add / Remove / Reorder controls for multi-value composites.
+* For multi-model fields, an **Add** dialog lets the author pick which model to instantiate.
+* A variation selector at the top level. Once a variation is chosen, the entire nested composite tree reflects that variation. Items can differ in count and content between variations.
 
-  >[!NOTE]
-  >
-  >The original Touch UI Fragment Editor will block editing of composite fields.
+>[!NOTE]
+>
+>The original Touch UI Fragment Editor will block editing of composite fields.
+
+#### Deliver a Composite item {#deliver-a-composite-item}
+
+You can deliver your Composite items with the following APIs:
 
 * From the Management OpenAPI (Content Fragments Management API)
 
