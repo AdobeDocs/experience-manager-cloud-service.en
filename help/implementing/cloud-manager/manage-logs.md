@@ -9,7 +9,7 @@ role: Admin, Developer
 
 # Access and manage logs {#manage-logs} 
 
-Learn how to access and manage logs to aid your development process in AEM as a Cloud Service.
+Learn how to access and manage logs to support your development process in AEM as a Cloud Service.
 
 You can access a list of available log files for the selected environment using the **Environments** card from the **Overview** page or the **Environment Details** page.
 
@@ -17,7 +17,7 @@ Logs are retained for seven days.
 
 ## Download logs {#download-logs}
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+1. Sign in to Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 
@@ -31,7 +31,7 @@ Logs are retained for seven days.
 
    ![Download Logs dialog](assets/download-preview.png)
 
-   In case [Additional Publish Regions](/help/operations/additional-publish-regions.md) are enabled for your environment, you can select each region and download its logs separately, as shown below:
+   If [Additional Publish Regions](/help/operations/additional-publish-regions.md) are enabled for your environment, you can select each region and download its logs separately, as shown below:
 
    ![Download Logs for additional publish regions](assets/download-publish-region-logs.png)
 
@@ -43,15 +43,15 @@ You can also access your logs from the **Environments** page.
 
 ## Logs through the API {#logs-through-api}
 
-In addition to downloading logs through the UI, logs are available through the API and the command-line interface. 
+Logs are available through the API and the command-line interface, in addition to the user interface. 
 
-To download the log files for a specific environment, the command is similar to the following.
+To download the log files for a specific environment, use a command similar to the following:
 
 ```shell
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-Also, you can tail logs using the command-line interface.
+You can also access logs immediately using the command-line interface.
 
 ```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
@@ -84,14 +84,14 @@ Environment Id Service    Name
 
 >[!TIP]
 >
->Watch [this video resource](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) to learn more about debugging AEM as a Cloud Service.
+>To learn more about debugging AEM as a Cloud Service, watch [this video resource](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab).
 
-See the following additional resources to learn more about the Cloud Manager API and Adobe I/O CLI:
+To learn more about the Cloud Manager API and Adobe I/O CLI, see the following additional resources:
 
 * [Cloud Manager API Documentation](https://developer.adobe.com/experience-cloud/cloud-manager/)
 * [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 
-See the following additional resources to learn more about log files in AEM as a Cloud Service:
+To learn more about log files in AEM as a Cloud Service, see the following additional resources:
 
 * [Cloud 5 AEM Log Files](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
 * [Debugging AEM as a Cloud Service using logs](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)

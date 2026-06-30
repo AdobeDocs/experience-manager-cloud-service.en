@@ -5,7 +5,6 @@ feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
 ---
-
 # Local Development with AI Tools {#local-development-with-ai-tools}
 
 >[!NOTE]
@@ -24,6 +23,9 @@ Four complementary components address this:
 |**Dispatcher Local MCP server**|Enables runtime validation and inspection of a local Dispatcher instance|
 
 Review the [AI-assisted development tutorials](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview) for additional, hands-on instruction.
+
+Feel free to email [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) with feedback to help shape product development.
+
 
 >[!TIP]
 >
@@ -149,11 +151,15 @@ For broad or first-time requests, start with the `workflow-orchestrator` sub-ski
 
 The dispatcher skill handles orchestration and advisory guidance. The Dispatcher MCP server, described in the following section, provides the seven validation and runtime tools the skill uses when it needs local evidence.
 
-### Use the Code-assessment Skill {#use-the-code-assessment-skill}
+### Use the Code-assessment Skill (Beta) {#use-the-code-assessment-skill}
 
-**(Beta)** The `code-assessment` skill detects, reviews, and fixes code-quality and correctness issues in an AEM as a Cloud Service project entirely within your local workspace. Describe the issue, and the skill routes the request to the appropriate remediation workflow.
+>This feature is **beta**. Adobe encourages you to provide feedback by emailing [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) to shape product development. 
+>
+>Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (by way of Adobe Support Services or otherwise) the beta releases. Adobe advises customers to use caution and not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Accordingly, any use of the beta releases is entirely at the customer's own risk.
 
-Supported checks include modernizing Sling Model dependency injection, updating outdated Maven dependencies, adding missing timeouts to outbound HTTP calls, bounding unbounded queries, Sling schedulers, resource change listeners, the Replication and Assets APIs, and JCR or OSGi event handling, with more added over time. Depending on the issue, the skill either applies a mechanical fix directly or guides you through one that needs a judgment call.
+The `code-assessment` skill detects, reviews, and fixes code-quality and correctness issues in an AEM as a Cloud Service project entirely within your local workspace. Describe the issue, and the skill routes the request to the appropriate remediation workflow.
+
+Supported checks include modernizing Sling Model dependency injection, updating outdated Maven dependencies, adding missing timeouts to outbound HTTP calls, bounding unbounded queries, Sling schedulers, resource change listeners, the Replication and Assets APIs, and JCR or OSGi event handling, plus scanning and fixing usage of [deprecated and removed AEM APIs](/help/release-notes/deprecated-removed-features.md), with more added over time. Depending on the issue, the skill either applies a mechanical fix directly or guides you through one that needs a judgment call.
 
 For a broad or first-time review, ask the skill to assess the whole project: it runs every detector, reports all findings, and applies code fixes one pattern at a time.
 
@@ -169,6 +175,12 @@ For a more explicit invocation, name the skill directly:
 
 ```
 /code-assessment review my code for AEM as a Cloud Service issues
+```
+
+To focus on a single pattern, name it in the prompt:
+
+```
+scan my project for unbounded queries
 ```
 
 **2. Apply fixes, one pattern at a time.** Ask the skill to fix a specific pattern. It makes surgical edits and verifies they compile. Mechanical fixes apply directly; guided ones walk you through each decision.
@@ -237,12 +249,6 @@ Any MCP client can connect by pointing to `http://localhost:4502/bin/mcp` with a
 >The value `Basic YWRtaW46YWRtaW4=` is the Base64 encoding of `admin:admin`, the default credential for a local Quickstart. Do not use this with non-local environments.
 
 ## Dispatcher MCP Server {#dispatcher-mcp-server}
-
->[!IMPORTANT]
->
->This feature is **beta**. Getting early access to features that Adobe is developing lets customers and partners provide feedback (by emailing [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)) and shape product development. It also helps them prepare to adopt new capabilities before general availability. 
->
->Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (by way of Adobe Support Services or otherwise) the beta releases. Adobe advises customers to use caution and not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Accordingly, any use of the beta releases is entirely at the customer's own risk. 
 
 The Dispatcher MCP server is bundled with the AEM Dispatcher SDK. It enables AI tools to validate Dispatcher and Apache HTTPD configuration, trace request handling, and inspect cache behavior against a Dispatcher instance running locally in Docker.
 
@@ -317,3 +323,4 @@ Other IDEs can be configured in a similar manner. The SDK's `docs/DispatcherMCP.
 |`tail_logs`|Tails relevant Dispatcher and HTTPD runtime logs|
 
 The MCP surface intentionally exposes only these seven tools; prompts and resources remain in the skill layer. Full reference documentation is available in `docs/DispatcherMCP.md` inside the extracted Dispatcher SDK.
+
