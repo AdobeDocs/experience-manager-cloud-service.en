@@ -4,7 +4,7 @@ description: Learn how to open two versions of an Interactive Communication side
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms."
 exl-id: compare-interactive-communication-versions
 ---
 
@@ -83,3 +83,4 @@ No. The side-by-side comparison is a visual review tool only — it is not expor
 - [Versioning and Commenting in Interactive Communication Editor](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
 - [Review and Annotate an Interactive Communication](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md)
 - [Create an Interactive Communication](/help/forms/interactive-communication/create-interactive-communication.md)
+
