@@ -466,7 +466,7 @@ A Composite field has the following properties and characteristics:
 * Specify one or more Content Fragment Models
 
   * When defining a Composite field in a Content Fragment Model you must define which models can be used for the composite items. 
-  * Multiple models can be selected, the author then chooses which model when adding an item.
+  * Multiple models can be selected, the author then chooses the model to use when adding an item.
 
 * In place authoring
 
@@ -509,12 +509,18 @@ From the Touch UI [(original) Content Fragment Model Editor](/help/assets/conten
 To configure:
 
 * **Render As**
+
   Specify either:
+
   * **Multiple Field** supports add/remove/reorder with min/max constraints
   * **Composite Field** holds at most one item
+
 * **Min/Max Number of items**
-  For multi-value composites, set min/max bounds for the number of items
+
+  For multi-value composites, set min and max bounds for the number of items
+
 * **Type** 
+
   Specify one or more Content Fragment Models. Fields from these models will appear as composite items. Multiple models can be selected, the author then chooses which model when adding an item.
 
 >[!NOTE]
@@ -604,7 +610,7 @@ The Composite data type offers several benefits when modeling data:
 
 #### When to use Composite {#when-to-use-composite}
 
-Use of the Composite data type should be considered as your use-case can determine which sort of nested content is the best solution for you.
+Use of the Composite data type should be carefully considered, as your use-case can determine which sort of nested content is the best solution for you.
 
 * Recommended when you:
 
@@ -616,10 +622,11 @@ Use of the Composite data type should be considered as your use-case can determi
 * Be cautious when:
 
   * Your content is genuinely reusable across fragments. Fragment references remain the right answer for shared content; composite is for inlined content.
-  * You rely on the (original) Touch UI Editor only. Composite is supported in the new Content Fragment Editor, but the original Touch UI Editor will block editing of composite fields.
-  * You depend on capabilities that are still under construction (MSM Live Copies, Launches, Core Components / .model.json, Universal Editor partial). See limitations.
+  * You only use the (original) Touch UI Editor. Composite is supported in the new Content Fragment Editor, but the original Touch UI Editor will block editing of composite fields.
 
 #### Limitations of Composite{#limitations-of-composite}
+
+<!-- CQDOC-23582 - what will be implemented when - or how/where to keep up-to-date -->
 
 The list below consolidates the current limitations of the Composite data type:
 
@@ -645,8 +652,8 @@ The list below consolidates the current limitations of the Composite data type:
     * Launches do not include composite child nodes.
   * Translation
     * Translatable metadata stays at the element level (this is the intended behavior, not at the composite container level). 
-  * Core Components / .model.json
-    * Page rendering via Core Components and the Sling Model exporter (.model.json) does not yet support composite. 
+  * Core Components and the Sling Model exporter
+    * Page rendering via Core Components and the Sling Model exporter (`.model.json`) does not yet support composite. 
   * Universal Editor
     * Limited changes needed to support partial resolution for composite.
   * Visual Content Fragments (Content Fragments with HTML templates)
