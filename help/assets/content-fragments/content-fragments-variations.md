@@ -13,7 +13,7 @@ solution: Experience Manager Sites
 
 >[!NOTE]
 >
->Content Fragments are a Sites feature, but are stored as **Assets**. 
+>Content Fragments are a Sites feature, but are stored as **Assets**.
 >
 >There are two editors for authoring Content Fragments - the new editor and the original editor. The new editor is the default. Although the basic functionality is the same, there are some differences. 
 >
