@@ -8,7 +8,9 @@ role: Developer
 
 >[!IMPORTANT]
 >
->AEM Edge Functions is a **beta** feature. Features and documentation may change without notice. To join the early access program and provide feedback, email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com).
+>AEM Edge Functions is a **public beta** feature so you can try it out in a self-serve way without contacting Adobe to enable. Adobe encourages you to email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) to describe your use case so Adobe can assure you it is supported, and provide any guidance. It is especially important to contact Adobe before deploying the feature for production traffic.
+>
+>By using the AEM Edge Functions Beta, you acknowledge that it is still in development and that you should not rely on the correct functioning of the technology or availability of data. This feature is provided as-is, may change without notice, and is not covered by production.
 
 This page provides detailed technical guidance on how caching works within AEM Edge Functions, including the two-cache architecture, how to control caching behavior in your code, and how to purge cache entries when content changes.
 
