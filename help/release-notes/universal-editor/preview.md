@@ -20,13 +20,8 @@ These **preview** release notes are provided as a convenience so you know what c
 >
 >The content of the actual release as well as the release date are subject to change.
 
-## Upcoming Features {#upcoming-features}
-
-* The editor now supports a `preview` [meta tag](/help/implementing/universal-editor/customizing.md#meta-tags) to force the editor to load in [preview mode.](/help/sites-cloud/authoring/sites-console/previewing-content.md)
-* The editor now supports a `readonly` [meta tag](/help/implementing/universal-editor/customizing.md#meta-tags) to disable editing, so the user can still select any component, but can not change the content.
-
 ## Upcoming Changes {#upcoming-improvements}
 
-* Accessibility improvements have been made to heading hierarchies.
-* Accessibility improvements have been made to maintain focus properly in the location bar to aid keyboard navigation of the editor.
-
+* Undo/redo actions have been improved.
+* Ordered lists now render properly when editing inline with the rich text editor.
+* Drag and drop reordering of sections now works properly.
