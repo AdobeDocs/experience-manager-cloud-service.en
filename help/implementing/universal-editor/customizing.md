@@ -41,7 +41,7 @@ The following are the supported values for `content`, i.e. the features that can
 |`header-open-page`|Disables the [open page button](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page)|
 |`aem-dev-login`|Disables the [developer login button](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)|
 
-### Changing Editor Mode {#changing-mode}
+### Defining Editor Mode {#defining-mode}
 
 You can force the Universal Editor to open in a particular mode. Use this tag in the `<head>` section of the page to force the editor mode:
 
