@@ -53,10 +53,10 @@ The following are the supported values for `content`, i.e. the features that can
 
 |Content Value|Description|
 |---|---|
-|`preview`|The editor opens in [preview mode.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)|
-|`readonly`|The editor opens in read-only mode.|
+|`preview`|The editor opens in [preview mode.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode) The **Preview** icon is hidden and the user can not switch back to edit mode.|
+|`readonly`|The editor opens in read-only mode. The [**Properties** button and panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) are hidden. Details are available in the content tree, but no changes can be made.|
 
-The selected modes can not be overridden by the user. For example when configuring `preview` mode, the **Preview** icon is hidden and the user can not switch back to edit mode. When configuring `readonly`, information is displayed for selected components, but editing is not allowed.
+When defining modes via meta tags, the modes can not be overridden by the user.
 
 ### Custom Preview URLs {#custom-preview-urls}
 
