@@ -12,7 +12,7 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 26908 {#release-26908}
 
-Summarized below are the continuous improvements for maintenance release 26908, which was publicly released on June 30, 2026. The previous maintenance release was release 26773.
+Summarized below are the continuous improvements for maintenance release 26908, which was publicly released on July 2, 2026. The previous maintenance release was release 26773.
 
 The 2026.7.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
@@ -103,6 +103,6 @@ AEM as a Cloud Service is dedicated to optimizing your platform's security and p
 |AEM HTL| 1.4.28-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
 |Apache HTTP Server| 2.4.67 | [Apache Httpd 2.4.67](https://apache.googlesource.com/httpd/+/refs/tags/2.4.67/CHANGES)|
 |Dispatcher|2.0.274||
-|AEM Core Components| 2.31.0|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
+|AEM Core Components| 2.31.2|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
 |Node.js|14 (default)|[Supported Node.js versions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions)|
 |Java 21|21.0.11|[JDK 21.0.11](https://www.oracle.com/java/technologies/javase/21-0-11-relnotes.html)|
