@@ -643,15 +643,11 @@ Once selected, this will be shown as a filter predicate, and the list will be fi
 The Content Fragment console supports:
 
 * [Full-text search](#full-text-search)
-* [Semantic search](#semantic-search)
+* [Semantic search](#semantic-search) - **AI search**
 
-<!-- CQDOC-23674 - activate when toggle visible -->
-<!--
-
-Use the toggle option to select your search method:
+Use the toggle option **AI search** to select the search method you want to use:
 
 ![Content Fragments console - select search method](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-select-search.png)
--->
 
 The search box also provides quick access to **Recent Content Fragments** and **Saved Searches**:
 
@@ -667,9 +663,9 @@ Will provide the selected results:
 
 ![Content Fragments console - Search Results](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-full-text-search-results.png)
 
-### Semantic search {#semantic-search}
+### Semantic search (AI search) {#semantic-search}
 
-Semantic search for Content Fragments improves content discovery by enabling natural-language queries. It allows you to find fragments based on meaning and intent, instead of relying solely on exact keywords or full-text matches.
+Semantic (AI) search for Content Fragments improves content discovery by enabling natural-language queries. It allows you to find fragments based on meaning and intent, instead of relying solely on exact keywords or full-text matches.
 
 Enter your search query in the search box; for example `fruity and light roast`:
 
