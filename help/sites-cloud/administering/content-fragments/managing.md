@@ -667,6 +667,6 @@ Will provide the selected results:
 
 AI (semantic) search for Content Fragments improves content discovery by enabling natural-language queries. It allows you to find fragments based on meaning and intent, instead of relying solely on exact keywords or full-text matches.
 
-Enter your search query in the search box; for example `fruity and light roast`:
+Enter your search query in the search box. For example `fruity and light roast`:
 
 ![Content Fragments console - semantic search](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-semantic-search.png)
