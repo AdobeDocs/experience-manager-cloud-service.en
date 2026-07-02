@@ -160,3 +160,21 @@ Power Users and Administrators in AEM Assets Ultimate have access to the full ra
 ### Which user type in AEM Assets Ultimate can manage permissions in the AEM Assets author environment? {#permission-management-user-type}
 
 Only Administrators in AEM Assets Ultimate can manage permissions on content in the AEM Assets author environment. Power Users, Collaborator Users, and Limited Users do not have permission management capabilities. This exclusive capability is enabled through the AEM > Production Author instance > AEM Administrators product profile in Adobe Admin Console. Administrators are also responsible for configuring and assigning the correct product profiles to all other user types within the organization.
+
+
+**See also**
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports](/help/assets/manage-reports-assets-view.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

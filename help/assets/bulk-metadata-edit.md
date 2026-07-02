@@ -34,3 +34,21 @@ To see the applied metadata updates to an asset, navigate to the [!DNL asset det
 >[!NOTE]
 >
 >**[!UICONTROL Status]**, **[!UICONTROL Expiration date]**, **[!UICONTROL Author]**, **[!UICONTROL Keywords]** and **[!UICONTROL Tags]** are standard metadata properties available for bulk metadata editing, regardless of folder-specific metadata. These metadata properties display on the [!UICONTROL asset details page] only if they are included in the metadata form applied to the asset's folder. If you cannot find these standard metadata properties on the [!UICONTROL asset details page], edit the asset folder's metadata form to include them. See [Metadata in [!DNL Assets View]](/help/assets/metadata-assets-view.md) to learn how to create or edit a metadata form and apply it to a folder.
+
+
+**See also**
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports](/help/assets/manage-reports-assets-view.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

@@ -105,3 +105,21 @@ Figma designs can be grouped on the canvas before exporting to the AEM Assets re
 ### How do I navigate folders in the AEM Assets repository from within Figma? {#navigate-aem-folders-figma}
 
 Folder navigation within the AEM Assets repository is available directly inside the Adobe Experience Manager AEM Assets Connector panel in Figma. Click the three-dot icon in the folder path to display all parent and child folders in the current hierarchy. Select any folder from the list to navigate to that location. When exporting a design to a different destination folder, click More Options in the folder path to select an alternative folder within the AEM Assets repository.
+
+
+**See also**
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports](/help/assets/manage-reports-assets-view.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

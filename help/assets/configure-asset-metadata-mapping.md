@@ -137,6 +137,8 @@ You can navigate to the image in Experience Manager Assets and view the metadata
 * [Metadata schemas](metadata-schemas.md)
 * [Download assets](download-assets-from-aem.md)
 * [Manage metadata](manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports](/help/assets/manage-reports-assets-view.md)
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)

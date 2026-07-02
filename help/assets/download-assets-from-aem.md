@@ -133,6 +133,8 @@ For more details on adding an empty OSGi configuration, see this [guide](https:/
 * [Asset reports](asset-reports.md)
 * [Metadata schemas](metadata-schemas.md)
 * [Manage metadata](manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports](/help/assets/manage-reports-assets-view.md)
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)

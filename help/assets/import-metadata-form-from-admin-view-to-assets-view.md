@@ -56,3 +56,21 @@ After importing the metadata forms from [!DNL Admin View] to [!DNL Assets View],
    >[!NOTE]
    >
    > In [[!DNL Assets View] details page](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms) or [[!DNL Admin View] properties page](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/metadata-schemas), changes to the metadata property values are automatically synced between the two interfaces. However, structural changes in the form, such as adding or removing fields, or other modifications, are not synced.
+
+
+**See also**
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports](/help/assets/manage-reports-assets-view.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
