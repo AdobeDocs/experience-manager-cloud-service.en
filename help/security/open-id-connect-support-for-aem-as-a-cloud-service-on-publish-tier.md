@@ -21,7 +21,7 @@ Whether you're delivering a personalized consumer website or an authenticated in
 
 ### Prerequisites {#prerequisits}
 
-We assume that following information are available or defined:
+We assume that the following information is available or defined:
 
 1. The paths of the content to be protected in the AEM repository
 1. An identifier for the IdP to be configured. This can be any string
@@ -29,7 +29,7 @@ We assume that following information are available or defined:
 Information from the IdP Configuration:
 
 1. The Client Id configured in the IdP
-1. The Client Secret configured in the Idp. If PKCE was configured on the Idp, the Client Secret is not available. Do not store the plain text value in the configuration file. Use a CM Secret and reference it
+1. The Client Secret configured in the IdP. If PKCE was configured on the IdP, the Client Secret is not available. Do not store the plain text value in the configuration file. Use a CM Secret and reference it
 1. The scopes configured on the Idp. At least the scope `openid` must be provided
 1. Whether PKCE is enabled on the IdP
 1. The `callbackUrl` is defined using one of the configured path defined at point 1 and adding the suffix: `/j_security_check`
@@ -79,7 +79,7 @@ In this configuration mode, the `baseUrl` property must not be set.
    "issuer": "https://idp-url"
    ```
 
-1. Configure the its properties as follows:
+1. Configure its properties as follows:
    * The **"name"** can be defined by the user
    * `baseUrl`, `clientid` and `clientSecret` are configuration values that come from the IdP.
    * The scopes must contain at least the value `openid`. 
@@ -103,7 +103,7 @@ Now, configure the OIDC authentication handler. Multiple OIDC connections can be
 1. Then, configure its properties as follows:
    * `path`: the path to be protected
    * `callbackUri`: the path to be protected, adding the suffix: `/j_security_check`. That same callbackUri must be also configured in the remote IdP as redirect url.
-   * `defaultConnectionName`: configure with the same name defined for the OIDC connection on the previous step+
+   * `defaultConnectionName`: configure with the same name defined for the OIDC connection on the previous step
    * `pkceEnabled`: `true` Proof Key for Code Exchange (PKCE) on Authorization code flow 
    * `idp`: the name of the [OAK External Identity Provider](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html). Note that different OAK IDP cannot share users or groups
 
@@ -126,15 +126,15 @@ Now, configure the OIDC authentication handler. Multiple OIDC connections can be
    * `groupsInIdToken`: Set to true if the groups are sent in ID Token. If the value is false, or not specified, the groups are read from UserInfo endpoint.
    * `groupsClaimName`: Name of the claim contains the groups to be synchronized in AEM.
    * `connection`: configure with the same name defined for the OIDC connection on the previous step
-   * `storeAccessToken`: true if the Access Token must be stored in the repostory. By default this is false. Set it to true only if AEM needs to access resources in behalf of the user stored in external servers protected by the same IdP.
-   * `storeRefreshToken`: true if the Refresh Token must be stored in the repostory. By default this is false. Set it to true only if AEM needs to access resources in behalf of the user stored in external servers protected by the same IdP and need to refresh the token from the IdP.
+   * `storeAccessToken`: true if the Access Token must be stored in the repository. By default this is false. Set it to true only if AEM needs to access resources in behalf of the user stored in external servers protected by the same IdP.
+   * `storeRefreshToken`: true if the Refresh Token must be stored in the repository. By default this is false. Set it to true only if AEM needs to access resources in behalf of the user stored in external servers protected by the same IdP and need to refresh the token from the IdP.
    * `idpNameInPrincipals`: when set to true, the name of the IdP is added as suffix to the user and group principals separated by a ';'. For example, if the IdP name is `azure-idp` and the user name is `john.doe`, the principal stored in oak will be `john.doe;azure-idp`. This is useful when multiple IdPs are configured in oak to avoid conflicts between users or groups with the same name coming from different IdPs. This can also be set to avoid conflicts with users or groups created by other authentication handlers like Saml.
 Remark that Access Token and Refresh Token are stored encrypted with AEM master key.
 
 
 ### Configure the Synchronization Handler {#configure-the-synchronization-handler}
 
-At least one Synchronization Handler must me configured to synchronize the users authenticated in oak. For more details, see [this](https://jackrabbit.apache.org/oak/docs/security/authentication/external/defaultusersync.html) page.
+At least one Synchronization Handler must be configured to synchronize the users authenticated in oak. For more details, see [this](https://jackrabbit.apache.org/oak/docs/security/authentication/external/defaultusersync.html) page.
 
 Create a file named `org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler~azure.cfg.json`. The  **azure** suffix must be a unique identifier. For more information on how to configure its properties, consult the [Oak User and Group Synchronization documentation](https://jackrabbit.apache.org/oak/docs/security/authentication/external/defaultusersync.html). Please find an example configuration below:
 
@@ -157,7 +157,7 @@ Create a file named `org.apache.jackrabbit.oak.spi.security.authentication.exter
 ```
 
 During development, expiration times can be reduced to a lower value (for example: 1s) to speed up testing of user and group synchronization in oak.
-Below some of the most relevant attributes to be configured in DefaultSyncHandler. Remark that Dynamic Group Memberhsip should always be enabled in Cloud Services.
+Below some of the most relevant attributes to be configured in DefaultSyncHandler. Remark that Dynamic Group Membership should always be enabled in Cloud Services.
 
 |  Property name | Notes  | Suggested value  |
 |---|---|---|
@@ -536,7 +536,7 @@ ACLs can be applied directly to external groups using RepoInit scripts.
    * We define the name of oidc Connection, Authentication Handler and DefaultSyncHandler as: `azure`
    * The website url is: `www.mywebsite.com`
    * We protect the path `/content/wknd/us/en/adventures` that is accessible only to authenticated users member of the group `adventures`
-   * Tennant is: `tennat-id`,
+   * Tenant is: `tennat-id`,
    * Client id is: `client-id`,
    * Secret is: `secret`,
    * The groups are sent in the ID Token in a claim called: `groups`
@@ -633,7 +633,7 @@ To enable the group claim in Id Token, add the claim in the **Token Configuratio
 
 The configuration of `SlingUserInfoProcessor` must be modified like in the example below.
 
-The filaname that needs to be modified is `org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessorImpl.cfg.json`. The content should be configured as follows:
+The filename that needs to be modified is `org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessorImpl.cfg.json`. The content should be configured as follows:
 
 ```
 {
@@ -805,7 +805,7 @@ For the stored ID Token to be readable at logout, add an `id_token` mapping to t
 The mapping format is `jcrPropertyPath=credentialAttributeName`. The entry `id_token=id_token` persists the encrypted ID Token set by the `SlingUserInfoProcessor` onto the user node, where the logout handler reads it back to build the `id_token_hint`.
 
 >[!IMPORTANT]
->The ID Token is persisted on the user node and must be available on the publish instance that handles the logout request. On the Publish tier, user nodes are propagated across instances only when [data synchronization](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) is enabled. Enable data synchronization so the stored ID Token is available to the instance that processes the logout, otherwise the `id_token_hint` may be missing.
+>The ID Token is persisted on the user node and must be available on the publish instance that handles the logout request. On the Publish tier, user nodes are propagated across instances only when [data synchronization](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md#data-synchronization) is enabled. Enable data synchronization so the stored ID Token is available to the instance that processes the logout, otherwise the `id_token_hint` may be missing.
 
 >[!NOTE]
 >If the ID Token is not stored (or cannot be read), logout still proceeds — AEM redirects to the `end_session_endpoint` without an `id_token_hint`. Depending on the IdP, the user may then be prompted to confirm the logout.
@@ -822,12 +822,12 @@ The same security constraints as the [login redirect](#custom-redirect-after-aut
 
 ## How to migrate from Saml Authentication Handler to Oidc Authentication Handler
 
-When AEM is already configured with a SAML Authentication Handler, and users are present in the repository with [data synchronization](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) enabled, conflicts can occur between the original SAML users and the new OIDC users.
+When AEM is already configured with a SAML Authentication Handler, and users are present in the repository with [data synchronization](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md#data-synchronization) enabled, conflicts can occur between the original SAML users and the new OIDC users.
 
 1. Configure the [OidcAuthenticationHandler](#configure-oidc-authentication-handler) and enable `idpNameInPrincipals` in [SlingUserInfoProcessor](#configure-slinguserinfoprocessor) configuration
 1. Setup [ACL for external groups](#configure-acl-for-external-groups). 
 1. After login from users, the old users created by the saml authentication handler can be deleted.
 
 >[!NOTE]
->Once the SAML Authentication Handler is disabled and the OIDC Authentication Handler is enabled, if [data synchronization](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) is not enabled, existing sessions become invalid. Users will be required to authenticate again, which results in the creation of new OIDC user nodes in the repository.
+>Once the SAML Authentication Handler is disabled and the OIDC Authentication Handler is enabled, if [data synchronization](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md#data-synchronization) is not enabled, existing sessions become invalid. Users will be required to authenticate again, which results in the creation of new OIDC user nodes in the repository.
 
