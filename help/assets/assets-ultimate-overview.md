@@ -26,7 +26,7 @@ Assets as a Cloud Service Ultimate offers various key benefits that help manage 
 
 ## Key capabilities of Assets Ultimate {#capabilities-assets-ultimate}
 
-Assets as a Cloud Service Ultimate enables you to perform various key Digital Asset Management operations, such as:
+Assets as a Cloud Service Ultimate includes the following key capabilities:
 
 * **Asset management and library services**​: Tools that enable users to ingest, store, catalog, control, manage, and govern a brand's digital assets in a centralized repository 
 
