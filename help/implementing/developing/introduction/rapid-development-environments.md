@@ -4,6 +4,7 @@ description: Learn how to use Rapid Development Environments for rapid developme
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
+nudge: please
 ---
 # Rapid Development Environments {#rapid-development-environments}
 
@@ -706,7 +707,7 @@ For more information about how to use Cloud Manager to manage your environments,
 ## Snapshots {#snapshots}
 
 >[!NOTE]
->RDE Snapshots will be in public beta in early June, at which time it can be enabled by updating to the latest aio plugin. 
+>RDE Snapshots are in public beta and so it can be enabled by updating to the latest aio plugin, without contacting Adobe.
 >
 >By using the RDE Snapshots Beta, you acknowledge that it is still in development and that you should not rely on the correct functioning of the technology or availability of data. While we have tested this feature extensively, there is a small possibility that your RDE could become unstable. If this occurs, a reset will restore it to a working state.
 >We welcome feedback at [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com).
@@ -1270,3 +1271,4 @@ The context can still be used. A deprecation warning is shown in the RDE plugin.
 ##### Use Any Other Context Name Also for the Cloud Manager Plug-In {#use-any-other-context-name-also-for-the-cloud-manager-plug-in}
 
 The Cloud Manager plug-ins offer a parameter to define a context to be used. It does not support the IMS default context configuration just yet. To do so, configure the RDE plugin using [the example to set up a local context](/help/implementing/developing/introduction/rapid-development-environments.md#install-the-rde-command-line-tools) and tell the Cloud Manager plugin to use `myContext` like `--imsContextName=myContext` in every call to it.
+

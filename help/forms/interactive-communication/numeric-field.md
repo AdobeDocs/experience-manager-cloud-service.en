@@ -160,3 +160,4 @@ The **Numeric Field** component in the Interactive Communication editor is a pre
 - [Unbound Variable Component](/help/forms/interactive-communication/unbound-variable.md)
 - [Configure Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/configure-data-binding.md)
 - [Use the Rule Editor in Interactive Communication Editor](/help/forms/interactive-communication/use-the-rule-editor.md)
+

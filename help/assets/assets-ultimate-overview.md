@@ -26,7 +26,7 @@ Assets as a Cloud Service Ultimate offers various key benefits that help manage 
 
 ## Key capabilities of Assets Ultimate {#capabilities-assets-ultimate}
 
-Assets as a Cloud Service Ultimate enables you to perform various key Digital Asset Management operations, such as:
+Assets as a Cloud Service Ultimate includes the following key capabilities:
 
 * **Asset management and library services**​: Tools that enable users to ingest, store, catalog, control, manage, and govern a brand's digital assets in a centralized repository 
 
@@ -102,3 +102,61 @@ The following table summarizes the available AEM Assets user types, the privileg
 For information on how to get started with Assets Ultimate, see [Enable AEM Assets Ultimate](/help/assets/enable-assets-ultimate.md). If existing AEM Assets users have queries on when you can upgrade to Assets Ultimate, contact your Adobe account representative. You can also see [Enable Assets Ultimate for existing customers](/help/assets/enable-assets-ultimate.md#enable-assets-ultimate-existing-customers) for more information.
 
 AEM Assets also provides a lighter weight DAM for customers who do not have advanced requirements such as, UI extensibility, API-driven automation, and custom code deployment. For more information, see [AEM Assets Prime](/help/assets/assets-prime.md).
+
+## Frequently Asked Questions {#frequently-asked-questions-assets-ultimate}
+
+### What is AEM Assets Ultimate and what makes it different from other AEM Assets offerings? {#what-is-assets-ultimate}
+
+AEM Assets Ultimate is Adobe's advanced Digital Asset Management offering within Adobe Experience Manager as a Cloud Service, engineered to manage complex content supply chains and ensure content performs well across all channels. It offers four distinct user types, Limited Users, Collaborator Users, Power Users, and Administrators, each with a defined set of capabilities and product profile assignments. AEM Assets Ultimate also includes seamless Content Hub distribution, AI-powered content creation via Adobe Express and Firefly, and integrations with Adobe and non-Adobe applications.
+
+### What can a Limited User do in AEM Assets Ultimate? {#limited-user-capabilities}
+
+A Limited User in AEM Assets Ultimate can access and use brand-approved assets from the organization through the AEM Assets Content Hub portal. Limited Users cannot create or edit assets, manage metadata, access the AEM Assets author environment, or integrate assets with other applications. Their access is scoped exclusively to discovering and leveraging approved assets through Content Hub, making this user type suitable for extended stakeholders who need governed access to finalized brand assets.
+
+### What product profile must a Limited User be added to in AEM Assets Ultimate? {#limited-user-product-profile}
+
+A Limited User in AEM Assets Ultimate must be added to the following product profile in Adobe Admin Console: AEM > Delivery instance > AEM Assets Limited Users. This is the only product profile required for Limited Users. It grants access to the AEM Assets Content Hub portal for approved asset discovery and usage. No Production Author instance profile is required for this user type.
+
+### What can a Collaborator User do in AEM Assets Ultimate? {#collaborator-user-capabilities}
+
+A Collaborator User in AEM Assets Ultimate can access brand-approved assets through the AEM Assets Content Hub portal, create and edit assets using Adobe Express and Firefly with professionally designed templates, and brand kits, and work with assets from Adobe Experience Manager via integrations available across other Adobe products and non-Adobe applications. Collaborator Users cannot manage assets at the DAM level, configure metadata governance, or manage permissions in the AEM Assets author environment, those capabilities are reserved for Power Users and Administrators.
+
+### What product profiles must a Collaborator User be added to in AEM Assets Ultimate? {#collaborator-user-product-profiles}
+
+A Collaborator User in AEM Assets Ultimate must be added to two product profiles in Adobe Admin Console: AEM > Delivery instance > AEM Assets Limited Users, and AEM > Production Author instance > AEM Assets Collaborator Users. The Delivery instance profile grants Content Hub access. The Production Author instance profile enables asset integrations and Adobe Express and Firefly-powered content creation. Both profiles are required for the full Collaborator User experience.
+
+### What can a Power User do in AEM Assets Ultimate? {#power-user-capabilities}
+
+A Power User in AEM Assets Ultimate has access to the full range of AEM Assets capabilities including asset ingestion, storage, cataloging, metadata management, governance, and automation around digital assets. Power Users can also create and edit assets using Adobe Express and Firefly, work with assets via integrations across Adobe and non-Adobe applications, and access brand-approved assets through the AEM Assets Content Hub portal. Power Users cannot manage permissions in the AEM Assets author environment — that capability is reserved for Administrators.
+
+### What product profiles must a Power User be added to in AEM Assets Ultimate? {#power-user-product-profiles}
+
+A Power User in AEM Assets Ultimate must be added to two product profiles in Adobe Admin Console: AEM > Delivery instance > AEM Assets Limited Users, and AEM > Production Author instance > AEM Assets Power Users. The Delivery instance profile grants Content Hub access. The Production Author instance profile unlocks the full AEM Assets DAM capabilities including asset management, metadata governance, and automation workflows. Both profiles are required for the complete Power User experience.
+
+### What can an Administrator do in AEM Assets Ultimate? {#administrator-capabilities}
+
+An Administrator in AEM Assets Ultimate has all the capabilities of a Power User and additionally manages permissions on content in the AEM Assets author environment. Administrators are responsible for configuring the other three user types — Limited Users, Collaborator Users, and Power Users — within the organization. This includes assigning product profiles in Adobe Admin Console, governing access rights, and ensuring the correct privilege structure is in place for each user type across the organization.
+
+### What product profile must an Administrator be added to in AEM Assets Ultimate? {#administrator-product-profiles}
+
+An Administrator in AEM Assets Ultimate must be added to two product profiles in Adobe Admin Console: AEM > Delivery instance > AEM Assets Limited Users, and AEM > Production Author instance > AEM Administrators. The Delivery instance profile grants Content Hub access. The Production Author instance profile grants full administrative control including permission management in the AEM Assets author environment and the ability to configure all other user types within the organization.
+
+### Which user types in AEM Assets Ultimate can access the Content Hub portal? {#content-hub-access-user-types}
+
+All four user types in AEM Assets Ultimate — Limited Users, Collaborator Users, Power Users, and Administrators — can access the AEM Assets Content Hub portal to discover and use brand-approved assets. Content Hub access is granted through the AEM > Delivery instance > AEM Assets Limited Users product profile in Adobe Admin Console, which is a required profile for every user type in AEM Assets Ultimate regardless of their additional capabilities.
+
+### Which user types in AEM Assets Ultimate can create and edit assets using Adobe Express and Firefly? {#express-firefly-access-user-types}
+
+Collaborator Users, Power Users, and Administrators in AEM Assets Ultimate can create and edit assets using the built-in Adobe Express and Firefly capabilities, including professionally designed templates, brand kits, and Adobe Stock assets. Limited Users do not have access to asset creation or editing capabilities — their access is scoped to discovering and using brand-approved assets through the AEM Assets Content Hub portal only.
+
+### Which user types in AEM Assets Ultimate can integrate assets with Adobe and non-Adobe applications? {#integration-access-user-types}
+
+Collaborator Users, Power Users, and Administrators in AEM Assets Ultimate can work with assets from Adobe Experience Manager via integrations available across other Adobe products and non-Adobe applications. Limited Users cannot access asset integrations — their capabilities are limited to Content Hub portal access for approved asset discovery and usage. Integration access is enabled through the AEM > Production Author instance product profiles assigned to each of these user types.
+
+### Which user type in AEM Assets Ultimate has full DAM management capabilities including metadata governance? {#dam-management-user-types}
+
+Power Users and Administrators in AEM Assets Ultimate have access to the full range of AEM Assets DAM capabilities including asset ingestion, storage, cataloging, metadata management, governance, and automation around digital assets. Collaborator Users and Limited Users do not have access to DAM-level management or metadata governance. Full DAM access is enabled through the AEM > Production Author instance > AEM Assets Power Users or AEM Administrators product profile in Adobe Admin Console.
+
+### Which user type in AEM Assets Ultimate can manage permissions in the AEM Assets author environment? {#permission-management-user-type}
+
+Only Administrators in AEM Assets Ultimate can manage permissions on content in the AEM Assets author environment. Power Users, Collaborator Users, and Limited Users do not have permission management capabilities. This exclusive capability is enabled through the AEM > Production Author instance > AEM Administrators product profile in Adobe Admin Console. Administrators are also responsible for configuring and assigning the correct product profiles to all other user types within the organization.

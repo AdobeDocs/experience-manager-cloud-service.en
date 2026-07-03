@@ -34,14 +34,14 @@ Creating and using your own custom permissions requires the following three step
 1. [Assign users to the product profile](#assign-users).
 
 >[!TIP]
->You may find it helpful to review the [Terms](#terms) and [Configurable Permissions](#configurable-permissions) sections as you create your own custom permissions.
+>Review the [Terms](#terms) and [Configurable Permissions](#configurable-permissions) sections as you create your own custom permissions.
 
 >[!IMPORTANT]
->You must have product administrator rights in the Admin Console for Adobe Experience Manager as a Cloud Service to create product profiles and manage permissions for Cloud Manager.
+>To create product profiles and manage permissions for Cloud Manager, you must have product administrator rights in the Admin Console for Adobe Experience Manager as a Cloud Service.
 
 ### Create a product profile {#create}
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+{{sign-in-to-cloud-manager}}
 
 1. On the Cloud Manager landing page, click **Manage Access**. 
 
@@ -74,7 +74,7 @@ The new product profile is saved and is visible in the list of product profiles 
 
 1. In the **Edit permissions for Custom Profile** dialog box, do one of the following:
 
-   * Near the top of the **Available permissions items** column, click ![Add icon or Plus sign icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Add all** to add all permissions.
+   * Near the top of the **Available permissions items** column, click ![Add icon or Plus sign icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Add all** to include all permissions.
    * To add a single permission to the **Included permission items** column, click its associated ![Add icon or Plus sign icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg).
 
       ![Edit permission items](assets/edit-permission-items.png)
@@ -128,12 +128,12 @@ The following permissions are available when you create a custom product profile
 
 ### Organization-level permissions {#organization-level}
 
-Organization-level permissions refer to permissions which are always given across all programs in an organization.
+Organization-level permissions refer to permissions that are always given across all programs in an organization.
 
 The following permissions are organization-level permissions:
 
 * **`Program Create`** - This permission lets users create a program in the organization.
-* **Repository Info Access** - This tenant/organization level permission allows users to generate a username, password, and repository URL for accessing and contributing to a customer project.
+* **Repository Info Access** - This tenant/organization-level permission lets users generate a username, password, and repository URL for accessing and contributing to a customer project.
   * The username and password for repository access are common across all the repositories in the organization. However, the repository URL is unique to each program.
   * See [Accessing Repositories](/help/implementing/cloud-manager/managing-code/accessing-repos.md) for more information.
 
@@ -161,12 +161,12 @@ Permission items refer to the scope where permissions are applied. Typically, it
 ## Usage notes {#usage-notes}
 
 * A custom permissions profile also lists AMS programs, environments, and pipelines while configuring permissions.
-* Resources like program, environment, and pipeline that were created in Cloud Manager may take several minutes to display in Admin Console for permission configuration.
-* In rare scenarios where a custom permissions service fails to respond, predefined profiles are still available and users in predefined profiles still have appropriate access.
+* Resources like programs, environments, and pipelines that were created in Cloud Manager require several minutes to display in the Admin Console for permission configuration.
+* In cases where a custom permissions service fails to respond, pre-defined profiles are still available and users in pre-defined profiles still have appropriate access.
 
 ## Frequently asked questions {#faq}
 
-### Which permission profiles are predefined permission profiles?
+### Which permission profiles are predefined?
 
 * Business Owner
 * Program Manager
@@ -177,7 +177,7 @@ For details on pre-defined roles, see [AEM as a Cloud Service Team and Product P
 
 ### What happens to predefined permission profiles with the introduction of custom profiles?
 
-Default product profiles and Cloud Manager roles continue to work the same as before.
+Default product profiles and Cloud Manager roles continue to function as previously.
 
 ### Can I edit predefined permission profiles?
 
@@ -185,12 +185,13 @@ No. Default profiles are non-editable. You cannot add or remove permissions from
 
 ### Should I delete predefined permission profiles since custom profiles are now available?
 
-Do not delete predefined permission profiles from the Admin Console. 
+Do not delete pre-defined permission profiles from the Admin Console. 
 
 ### Can I add users to multiple permission profiles?
 
-Yes. A user can be part of multiple profiles including predefined and custom permission profiles. When a user is assigned to multiple profiles, the combined permissions from all the assigned permission profiles are available to that user.
+Yes. A user can be assigned to multiple profiles including predefined and custom permission profiles. When a user is assigned to multiple profiles, the combined permissions from all the assigned permission profiles are available to that user.
 
-### What happens if a user has permission to edit an environment/pipeline but doesn't have access to a program which contains the environment/pipeline?
+### What happens if a user has permission to edit an environment/pipeline but does not have access to a program that contains the environment/pipeline?
 
 The user is unable to access the environment or pipeline if they do not have the **Program Access** permissions containing the environment or pipeline.
+

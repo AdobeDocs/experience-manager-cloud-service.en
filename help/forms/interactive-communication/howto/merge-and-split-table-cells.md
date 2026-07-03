@@ -4,7 +4,7 @@ description: Learn how to combine adjacent table cells into a single cell and sp
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms."
 exl-id: merge-split-table-cells-ic-editor
 ---
 
@@ -78,3 +78,4 @@ The split dialog shows the **Max Columns** value, which equals the number of cel
 - [Table Component in Interactive Communication Editor](/help/forms/interactive-communication/table.md)
 - [Create Dynamic Table in Interactive Communication Editor](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
 - [Create an Interactive Communication](/help/forms/interactive-communication/create-interactive-communication.md)
+

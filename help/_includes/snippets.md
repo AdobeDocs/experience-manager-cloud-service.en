@@ -222,10 +222,10 @@ To log a support ticket, you must first register your Edge Delivery site in Clou
 
 ## Sign in to Cloud Manager {#sign-in-to-cloud-manager}
 
-1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
+1. Sign in to Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
    1. In the **Quick access** section, click **Experience Manager**.
-   1. In the left side panel, click **Cloud Manager**.
-1. In Cloud Manager, near the upper-right corner of the page, select an organization that you want.
+   1. In the left panel, click **Cloud Manager**.
+1. In Cloud Manager, near the upper-right corner of the page, select an organization that you want to use.
 
 
 ## Universal Editor is Preferred over SPA Editor {#ue-over-spa}

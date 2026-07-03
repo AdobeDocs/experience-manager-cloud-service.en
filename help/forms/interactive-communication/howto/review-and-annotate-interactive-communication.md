@@ -4,7 +4,7 @@ description: Learn how reviewers can pin feedback directly to components on the 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms."
 exl-id: review-annotate-interactive-communication
 ---
 
@@ -120,3 +120,4 @@ An annotation is a positioned pin tied to a specific component on the canvas, vi
 - [Create an Interactive Communication](/help/forms/interactive-communication/create-interactive-communication.md)
 - [Template Lock in Interactive Communication Editor](/help/forms/interactive-communication/enable-template-lock.md)
 - [Versioning and Commenting in Interactive Communication Editor](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
+

@@ -4,7 +4,7 @@ description: Learn how to configure Options Binding or manual static options for
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms."
 exl-id: configure-dropdown-options-associate-ui
 ---
 
@@ -15,7 +15,7 @@ Dropdown fields in the Interactive Communication Editor use a focused **Options 
 | Who | Benefit |
 |-----|---------|
 | **Author (interactive communication designer)** | Deliver accurate, data-driven dropdown choices to associates without unsupported Data Binding configurations. |
-| **Associate (agent / service representative)** | See the correct option list and pre-selected value when completing customer communications in the Associate UI. |
+| **Associate (service representative)** | See the correct option list and pre-selected value when completing customer communications in the Associate UI. |
 
 ## Before you begin
 
@@ -37,6 +37,7 @@ When **Options Source** is not set to **Bind from Data**:
 
 - Authors add options manually through the **Properties** panel.
 - **Default Value** remains available — the form designer can explicitly select which option appears as the pre-selected value in the Associate UI.
+
 
 ## Configure dropdown options
 
@@ -63,6 +64,7 @@ When **Options Source** is not set to **Bind from Data**:
 1. If using manual options, set **Default Value** as needed.
 
 1. Click **Save** and publish the interactive communication.
+
 
 ## Verify in Associate UI
 
@@ -102,3 +104,4 @@ Publish the interactive communication and open the Associate UI preview. Confirm
 - [Associate UI in Interactive Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [Configure Bound and Unbound Variables for Associate UI](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md)
 - [Create an Interactive Communication](/help/forms/interactive-communication/create-interactive-communication.md)
+
