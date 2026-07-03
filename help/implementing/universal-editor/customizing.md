@@ -18,6 +18,8 @@ Learn about the different options to customize the Universal Editor to support t
 
 Certain authoring workflows might require the use of some features of the Universal Editor and not others. To support such diverse cases, meta tags are available to configure or disable certain features or buttons of the editor.
 
+### Disabling Features {#disable-features}
+
 Use this tag in the `<head>` section of the page to disable one or more features:
 
 ```html
@@ -39,7 +41,34 @@ The following are the supported values for `content`, i.e. the features that can
 |`header-open-page`|Disables the [open page button](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page)|
 |`aem-dev-login`|Disables the [developer login button](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)|
 
-## Changing Your Endpoint {#custom-endpoint}
+### Defining Editor Mode {#defining-mode}
+
+You can force the Universal Editor to open in a particular mode. Use this tag in the `<head>` section of the page to force the editor mode:
+
+```html
+<meta name="urn:adobe:aue:config:mode" content="..." />
+```
+
+The following are the supported values for `content`, i.e. the features that can be disabled with meta tags.
+
+|Content Value|Description|
+|---|---|
+|`preview`|The editor opens in [preview mode.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode) The **Preview** icon is hidden and the user can not switch back to edit mode.|
+|`readonly`|The editor opens in read-only mode. The [**Properties** button and panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) are hidden. Details are available in the content tree, but no changes can be made.|
+
+When defining modes via meta tags, the modes can not be overridden by the user.
+
+### Custom Preview URLs {#custom-preview-urls}
+
+You can specify a custom preview URL via a `urn:adobe:aue:config:preview` meta configuration, which will open when clicking the **Open page** button in the [editor's top-right toolbar](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
+
+To do so, simply include the desired preview URL in a meta tag of the instrumented app like the following example.
+
+```html
+<meta name="urn:adobe:aue:config:preview" content="https://wknd.site"/>
+```
+
+### Changing Your Endpoint {#custom-endpoint}
 
 If you would like not to use the Universal Editor Service, which is hosted by Adobe, but your own hosted version, you can set this in a meta tag. Please see the document [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md##configuration-settings) for details.
 
@@ -87,13 +116,3 @@ Conditions can be defined using [JsonLogic schema](https://jsonlogic.com/). If t
 ![Shown text field](assets/shown.png)
 
 >[!ENDTABS]
-
-## Custom Preview URLs {#custom-preview-urls}
-
-You can specify a custom preview URL via a `urn:adobe:aue:config:preview` meta configuration, which will open when clicking the **Open page** button in the [editor's top-right toolbar](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
-
-To do so, simply include the desired preview URL in a meta tag of the instrumented app like the following example.
-
-```html
-<meta name="urn:adobe:aue:config:preview" content="https://wknd.site"/>
-```
