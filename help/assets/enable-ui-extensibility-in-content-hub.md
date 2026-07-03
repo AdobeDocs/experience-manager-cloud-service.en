@@ -4,7 +4,7 @@ description: Learn about the UI extensibility capability of [!DNL Content Hub]. 
 feature: App Builder
 role: User, Developer
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets."
-exl-id: 
+exl-id:
 ---
 
 # Enable UI extensibility in [!DNL Content Hub] {#content-hub-ui-extensibility}
@@ -23,46 +23,50 @@ You can add custom extensions to the **Asset Details** page. The added extension
 
 Follow the steps shown in the following image to access [!DNL Content Hub].
 
-![Placeholder - Access Content Hub](assets/content-hub-access.png)
+![access-content-hub](assets/access-content-hub.png)
 
-## View UI extensions in Content Hub {#view-ui-extensions}
+## View UI extensions in [!DNL Content Hub] {#view-ui-extensions}
 
-Open an asset in [!DNL Content Hub] and navigate to the **[!UICONTROL Asset Details]** page. If a custom extension is installed and configured, it appears as a dedicated panel within the Asset Details interface.
+Within [!DNL Content Hub], open an asset and navigate to the **[!UICONTROL Asset Details]** page. If a UI extension is installed and configured, it appears as a dedicated panel within the Asset Details interface.
 
-![Placeholder - Content Hub Asset Details](assets/content-hub-details-panel.png)
+![Asset Details screen with extension panel](assets/asset-details-extension-tab.png)
 
-## Prerequisites {#prerequisites}
+## Prerequisites for adding the extensibility component {#content-hub-prerequisites}
 
-Ensure that the following prerequisites are met before developing UI extensions for [!DNL Content Hub]:
+Fulfil the following requirements before building UI extensions for [!DNL Content Hub]:
 
 * Access to [!DNL Content Hub].
 * Access to Adobe App Builder.
 * Developer or System Administrator permissions within your organization.
-* Adobe I/O CLI (AIO CLI) installed on your local machine.
-* Working knowledge of JavaScript, Node.js, and React.
+* Adobe I/O command line tool (AIO CLI) installed on your local machine.
+* Good understanding of JavaScript, Node.js, and React technologies.
 
-## Add the UI extensibility component to Content Hub {#add-ui-extensibility-content-hub}
+## Add the UI extensibility component to [!DNL Content Hub] {#add-ui-extensibility-content-hub}
 
-1. See **Getting Started** for an overview of Adobe App Builder and the UI extensibility framework.
+1. See **Getting Started** for an introduction to Adobe App Builder and the UI extensibility framework.
 
-1. See **Guides** for information about local development, preview, deployment, and extension management.
+1. See **Guides** for information about local environment setup, local preview, deployment, and extension management.
 
-1. See **Common concepts** to understand the fundamentals required to build Content Hub extensions.
+1. See **Common concepts** to understand the fundamentals required to build UI extensions for Content Hub.
 
-1. Add a custom panel to the **Asset Details** page. The custom panel enables users to perform business-specific actions directly within Content Hub. For implementation details, API references, and code examples, see the developer documentation.
+1. Add a custom panel to the **Asset Details** page to expose your business workflow within Content Hub. The custom panel enables users to perform business-specific actions on the selected asset. For implementation details, API references, code examples, and extension architecture, see the developer documentation.
 
-1. Set up your local development environment and build your extension.
+1. Set up your local development environment and build your first Content Hub extension using Adobe App Builder.
 
 1. Deploy the extension to your target workspace and verify that it is available within Content Hub.
 
-## Extend Content Hub workflows {#extend-content-hub-workflows}
+## Extend business workflows in Content Hub {#extend-business-workflows}
 
-UI extensibility enables organizations to bring business workflows directly into Content Hub. Instead of switching between multiple applications, users can complete workflow-specific actions from within the Content Hub interface.
+UI extensibility enables organizations to bring business workflows directly into Content Hub. Instead of switching between multiple applications, users can complete workflow-specific actions while working with assets.
 
-For example, organizations can implement an **Extend Expiry** workflow that allows users to request an extension for assets approaching expiration. Users submit the request from the extension panel, while the configured backend workflow processes the request and routes it for approval.
+For example, organizations can implement an **Extend Expiry** workflow that enables users to request an extension for assets approaching expiration. Users submit the request from the extension panel, while the configured backend processes the request and routes it through the organization's workflow.
 
-![Placeholder - Extend Expiry workflow](assets/content-hub-extend-expiry.png)
+![Extend Expiry extension panel](assets/extension-tab.png)
+
+After the request is submitted, Content Hub displays a confirmation message.
+
+![Confirmation message](assets/configured-message.png)
 
 >[!NOTE]
 >
->Implementation details, architecture, APIs, local development, deployment, and troubleshooting are covered in the developer documentation.
+>For implementation details, including architecture, APIs, local development, deployment, and troubleshooting, see the Content Hub UI extensibility developer documentation.
