@@ -72,3 +72,57 @@ To invoke the Delivery APIs, an IMS token is required in the `Authorization` det
 
 
 To view request samples, response samples, and response codes, see [Delivery APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
+
+## Frequently Asked Questions {#delivery-apis-faqs}
+
+### What are the Dynamic Media with OpenAPI Delivery APIs and what do they enable? {#delivery-apis-overview}
+
+The Dynamic Media with OpenAPI Delivery APIs enable approved assets stored in Adobe Experience Manager Assets to be delivered to integrated downstream applications via a Delivery URL. Seven distinct APIs are available covering image delivery, original binary delivery, pre-generated rendition delivery, asset metadata retrieval, video player embedding, and video playback manifest delivery. Any changes made to approved assets in DAM — including version updates and metadata modifications — are automatically reflected in the delivery URLs without requiring republishing or manual intervention.
+
+### How quickly do asset updates appear in Delivery API URLs after changes in AEM Assets? {#delivery-api-ttl-updates}
+
+Updates to approved assets in AEM Assets are visible across all authoring and published interfaces in under 10 minutes. Dynamic Media with OpenAPI Delivery APIs use a short Time-to-Live value of 10 minutes configured for asset delivery via CDN. This means version updates, metadata modifications, and other changes made to approved assets in the DAM automatically propagate to delivery URLs within 10 minutes without requiring manual cache invalidation.
+
+### Which Delivery API should I use for delivering image assets? {#delivery-api-image-recommendation}
+
+The Web-optimized binary representation of the asset in requested output format API is the recommended API for all image format types. This API returns the web-optimized binary representation of the asset in the requested output format based on the asset ID sent in the request. It supports various image modifiers including width, height, rotate, flip, quality, crop, format, and smart crop. For document format types and SVG images, the Original uploaded binary of the asset API is recommended instead.
+
+### What image modifiers are supported by the Web-optimized binary representation Delivery API? {#delivery-api-image-modifiers}
+
+The Web-optimized binary representation of the asset in requested output format API supports image modifiers including width, height, rotate, flip, quality, crop, format, and smart crop. These modifiers can be defined as parameters in the delivery URL request to transform the asset at delivery time without modifying the original asset stored in AEM Assets. 
+
+### What does the convenience Web-optimized binary representation Delivery API return by default? {#delivery-api-defaults}
+
+The convenience Web-optimized binary representation of the asset API applies defaults to the asset returned in the response. The default values are JPEG or WEBP format, quality of 65, and width of 1024 pixels. This API is suitable when specific output format or modifier control is not required and a standard web-optimized rendition is sufficient for the downstream application.
+
+### Which Delivery API should I use for documents and SVG images? {#delivery-api-documents-svg}
+
+The Original uploaded binary of the asset API is the recommended API for document format types and SVG images. This API returns the originally uploaded binary for the asset without applying web optimization transformations. For all other image format types, the Web-optimized binary representation API in the requested output format is recommended.
+
+### How do I retrieve pre-generated renditions of an asset using the Delivery APIs? {#delivery-api-pre-generated-renditions}
+
+The Pre-generated rendition of the asset available on AEM Assets authoring environment API returns the bitstream of a specific rendition based on the asset ID and rendition name sent in the request. The rendition must already exist on the AEM Assets authoring environment before it can be retrieved using this API. This API is distinct from the web-optimized binary API which generates the output on demand using image modifiers.
+
+### How do I embed and play a video asset using the Delivery APIs? {#delivery-api-video-player}
+
+The Player container for the video asset API returns a player container for a video asset that can be embedded into an iframe HTML element to enable in-page video playback. For scenarios requiring custom player implementations with adaptive streaming, the Playback manifests in the selected output format API returns the playback manifest file for the specified video asset in HLS or DASH format. A custom player capable of adaptive streaming through HLS or DASH protocols must be built to consume the manifest file and play the video.
+
+### What is the maximum video file size and duration supported by Dynamic Media with OpenAPI Delivery APIs? {#delivery-api-video-limits}
+
+Dynamic Media with OpenAPI Delivery APIs support long-form videos up to 50 GB in file size and up to 2 hours in duration. These limits apply to video assets delivered via the Player container and Playback manifests Delivery APIs.
+
+### How is the Delivery API endpoint URL structured? {#delivery-api-endpoint-structure}
+
+The Delivery API endpoint URL for the web-optimized binary representation in the requested output format follows this structure: https://delivery-pXXXX-eYYYY.adobeaemcloud.com/adobe/assets/{assetId}/as/{seoName}.{format}. The delivery domain is structured similarly to the AEM author environment domain — the only difference is replacing the term author with delivery. In the URL, pXXXX refers to the program ID and eYYYY refers to the environment ID. All Delivery APIs use the HTTP GET request method.
+
+### What authentication is required to call the Dynamic Media with OpenAPI Delivery APIs? {#delivery-api-authentication}
+
+Calling the Dynamic Media with OpenAPI Delivery APIs requires an IMS token in the Authorization header to deliver restricted assets. The header must include two fields: If-None-Match as a string value, and Authorization as a Bearer token containing the IMS token. The IMS token is fetched from a technical account created using the AEM as a Cloud Service Credentials workflow. The technical account must be set up and the access token generated before invoking any Delivery API.
+
+### What are experimental Delivery APIs and how do I access them? {#delivery-api-experimental}
+
+Experimental Delivery APIs allow testing of image modifiers that are not yet generally available. Experimental APIs are accessed using a URL path format that includes the modifier and an expiry date — for example: /adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets. The complete list of available experimental modifiers is documented on Adobe Developer Console. Experimental APIs are intended for testing purposes and are subject to change before general availability.
+
+### What image modifier capabilities are available for Dynamic Media Prime customers compared to Dynamic Media Ultimate? {#delivery-api-prime-vs-ultimate-modifiers}
+
+Dynamic Media Prime customers can use basic image modifiers including rotate, crop, flip, height, width, and quality via the Delivery APIs. Smart Imaging is available for Dynamic Media Prime customers with the exception that AVIF format is not supported for Smart Imaging on Dynamic Media Prime. Dynamic Media Ultimate customers have access to the full range of image modifiers and Smart Imaging capabilities including AVIF format support.
