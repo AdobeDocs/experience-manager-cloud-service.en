@@ -22,7 +22,8 @@ To enable your instance for the Content Fragment functionality you need to enabl
   >* the **Create** option will not be available for creating models.
   >* you will not be able to [select the Sites configuration to create the related end-point](/help/headless/graphql-api/graphql-endpoint.md).
 
-* **GraphQL Persisted Queries** - optional
+* **GraphQL Persisted Queries** - optional, needed for use with GraphQL
+* **[Cloud Configurations](#content-fragment-cloud-configurations)** - optional, needed for editor configuration
 
 Setting up your instance is done:
 
@@ -60,9 +61,10 @@ To use the Content Fragment functionality, of Content Fragment Models and GraphQ
    1. Specify a **Title**.
    1. Upon creation, the **Name** becomes the node name in the repository.
       You can enter a name. If you leave the field blank it is automatically generated based on the title, then adjusted according to [AEM naming conventions](/help/implementing/developing/introduction/naming-conventions.md); you can adjust the result if necessary.
-   1. To enable their use select 
+   1. To enable their use, as required, select 
       * **Content Fragment Models** 
-      * **GraphQL Persisted Queries**
+      * **GraphQL Persisted Queries** 
+      * **Cloud Configurations** 
 
       ![Define configuration](/help/sites-cloud/administering/content-fragments/assets/cf-setup-create-conf.png)
 
@@ -75,3 +77,15 @@ When the configuration **global** is enabled for Content Fragment functionality,
 To use other configurations (therefore excluding global) with a comparable Assets folder, you have to define the connection. Do this by selecting the appropriate **Configuration** in the **Cloud Services** tab of the **Folder Properties** of the appropriate folder.
 
 ![Apply configuration](/help/sites-cloud/administering/content-fragments/assets/cf-setup-apply-conf.png)
+
+
+## Content Fragment Cloud Configurations {#content-fragment-cloud-configurations}
+
+You can define a Content Fragment Cloud Configuration to customize your Content Fragment editor. After defining the configuration you reference it in the Cloud policies of a folder, so that it is applied to all the Content Fragments in that folder.
+
+### Configure the Content Fragment Editor - RTE{#configure-the-content-fragment-editor-rte}
+
+
+### Configure the Content Fragment Editor - Content Reference Selector{#configure-the-content-reference-selector-in-the-content-fragment-editor}
+
+
