@@ -106,10 +106,15 @@ To edit images using [!DNL Adobe Express] embedded editor, follow the steps belo
    1. Optional: Provide details such as Project or Campaign name, Keywords, Channels, Time frame, and Region. 
 1. Click **Save as version** or **Save as new asset** to save the asset(s). 
 
+>[!NOTE]
+>
+>Saving a PSD file as an Adobe Express document preserves the layers from the original PSD file.
+
+
 #### Limitations of editing images in the Express Editor {#limitations-of-editing-images-in-the-express-editor}
 
- * Supported file type: JPEG or PNG. 
- * Maximum file size supported: 40 MB. 
+ * Supported file type: JPEG, PSD, or PNG. 
+ * The asset size must be less than 80 MB for desktop devices and 40 MB for mobile devices. 
  * Supported width and height range: 65MP (For example, 8K x 8K or 16K x 4K).
  * Reload the page to see the latest saved new asset in the source folder.
 
@@ -124,9 +129,7 @@ To edit images using [!DNL Adobe Express] embedded editor, follow the steps belo
 
 #### Limitations {#limitations}
 
-* You can only modify images of `JPEG` and `PNG` format types.
-* The asset size must be less than 80 MB for desktop devices and 40 MB for mobile devices.
-* Supported width and height range is 65MP (For example, 8K x 8K or 16K x 4K).
+* Allow up to 8000 pixels per dimension for the canvas of the new Express document
 * You can save an image in `PDF`, `JPEG`, or `PNG` formats.
 
 <!--
