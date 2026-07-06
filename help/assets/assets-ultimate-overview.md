@@ -26,7 +26,7 @@ Assets as a Cloud Service Ultimate offers various key benefits that help manage 
 
 ## Key capabilities of Assets Ultimate {#capabilities-assets-ultimate}
 
-Assets as a Cloud Service Ultimate enables you to perform various key Digital Asset Management operations, such as:
+Assets as a Cloud Service Ultimate includes the following key capabilities:
 
 * **Asset management and library services**​: Tools that enable users to ingest, store, catalog, control, manage, and govern a brand's digital assets in a centralized repository 
 
@@ -160,3 +160,22 @@ Power Users and Administrators in AEM Assets Ultimate have access to the full ra
 ### Which user type in AEM Assets Ultimate can manage permissions in the AEM Assets author environment? {#permission-management-user-type}
 
 Only Administrators in AEM Assets Ultimate can manage permissions on content in the AEM Assets author environment. Power Users, Collaborator Users, and Limited Users do not have permission management capabilities. This exclusive capability is enabled through the AEM > Production Author instance > AEM Administrators product profile in Adobe Admin Console. Administrators are also responsible for configuring and assigning the correct product profiles to all other user types within the organization.
+
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
