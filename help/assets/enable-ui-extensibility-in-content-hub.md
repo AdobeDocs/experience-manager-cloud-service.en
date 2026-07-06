@@ -9,14 +9,13 @@ exl-id:
 
 # Enable UI extensibility in [!DNL Content Hub] {#content-hub-ui-extensibility}
 
-[!DNL Content Hub] supports UI extensibility, enabling organizations to integrate custom business workflows directly into the Content Hub experience. Powered by Adobe App Builder, UI extensibility allows developers to add custom panels that enable users to perform business-specific actions without leaving Content Hub.
+[!DNL Content Hub] supports UI extensibility, enabling organizations to integrate custom business workflows directly into the Content Hub experience. Using Adobe App Builder, developers can add custom panels that enable users to perform business-specific actions without leaving Content Hub.
 
 You can add custom extensions to the **Asset Details** page. The added extension appears as a dedicated panel where users can perform custom workflows on the selected asset.
 
 >[!IMPORTANT]
 >
->* UI extensibility for [!DNL Content Hub] is generally available (GA).
->* Adobe App Builder is required to build and deploy Content Hub extensions.
+>* Adobe App Builder is required to build and deploy UI extensions for Content Hub.
 >* You can provide documentation feedback by expanding **[!UICONTROL Detailed Feedback options]** and selecting **[!UICONTROL Report an issue]**.
 
 ## Access Content Hub {#access-content-hub}
@@ -37,19 +36,19 @@ Fulfil the following requirements before building UI extensions for [!DNL Conten
 
 * Access to [!DNL Content Hub].
 * Access to Adobe App Builder.
-* Developer or System Administrator permissions within your organization.
-* Adobe I/O command line tool (AIO CLI) installed on your local machine.
+* Entitlement to Developer or System Administrator role within the organization.
+* Adobe I/O command line tool (AIO CLI) installed on your local machine. This tool is essential for creating and deploying extension projects.
 * Good understanding of JavaScript, Node.js, and React technologies.
 
 ## Add the UI extensibility component to [!DNL Content Hub] {#add-ui-extensibility-content-hub}
 
 1. See **Getting Started** for an introduction to Adobe App Builder and the UI extensibility framework.
 
-1. See **Guides** for information about local environment setup, local preview, deployment, and extension management.
+1. See **Guides** for information about local environment setup, local preview, publishing, and extension management.
 
 1. See **Common concepts** to understand the fundamentals required to build UI extensions for Content Hub.
 
-1. Add a custom panel to the **Asset Details** page to expose your business workflow within Content Hub. The custom panel enables users to perform business-specific actions on the selected asset. For implementation details, API references, code examples, and extension architecture, see the developer documentation.
+1. Add a custom panel to the **Asset Details** page. The custom panel enables users to perform business-specific actions directly within Content Hub. For implementation details, API references, code examples, and extension architecture, see the developer documentation.
 
 1. Set up your local development environment and build your first Content Hub extension using Adobe App Builder.
 
