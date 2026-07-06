@@ -19,20 +19,22 @@ To enable your instance for the Content Fragment functionality you need to enabl
   >
   >If you do not enable **Content Fragment Models**:
   >
-  >* the **Create** option will not be available for creating models.
-  >* you will not be able to [select the Sites configuration to create the related end-point](/help/headless/graphql-api/graphql-endpoint.md).
+  >* the **Create** option will not be available for [creating models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+  >* you will not be able to [select the Sites configuration to create the related end-point](/help/headless/graphql-api/graphql-endpoint.md)
 
-* **GraphQL Persisted Queries** - optional, needed for use with GraphQL
-* **[Cloud Configurations](#content-fragment-cloud-configurations)** - optional, needed for editor configuration
+* **[GraphQL Persisted Queries](/help/headless/graphql-api/persisted-queries.md)** - optional, needed for use of GraphQL
+* **[Cloud Configurations](#customize-the-editor-with-a-content-fragment-cloud-configuration)** - optional, used for configuring various aspects of the new Content Fragment editor
 
 Setting up your instance is done:
 
 * by [enabling functionality in the Configuration Browser](#enable-content-fragment-functionality-configuration-browser)
 * then [applying the configuration to your individual Assets folders](#apply-the-configuration-to-your-folder)
 
->[!TIP]
->
->Content Fragments can be [published to Edge Delivery Services.](https://www.aem.live/developer/content-fragment-overlay)
+Then, if needed:
+
+* [enabling your GraphQL endpoint](/help/headless/graphql-api/graphql-endpoint.md)
+* defining a [Content Fragment Cloud Configuration](#customize-the-editor-with-a-content-fragment-cloud-configuration)
+  * and [applying this configuration to your individual Assets folders](#apply-the-configuration-to-your-folder)
 
 ## Enable Content Fragment Functionality in the Configuration Browser {#enable-content-fragment-functionality-configuration-browser}
 
@@ -79,13 +81,31 @@ To use other configurations (therefore excluding global) with a comparable Asset
 ![Apply configuration](/help/sites-cloud/administering/content-fragments/assets/cf-setup-apply-conf.png)
 
 
-## Content Fragment Cloud Configurations {#content-fragment-cloud-configurations}
+## Customize the editor with a Content Fragment Cloud Configuration {#customize-the-editor-with-a-content-fragment-cloud-configuration}
 
-You can define a Content Fragment Cloud Configuration to customize your Content Fragment editor. After defining the configuration you reference it in the Cloud policies of a folder, so that it is applied to all the Content Fragments in that folder.
+With a Content Fragment Cloud Configuration you can customize various aspects of the [new Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md). 
 
-### Configure the Content Fragment Editor - RTE{#configure-the-content-fragment-editor-rte}
+After [creating](#create-a-content-fragment-cloud-configuration) and defining the configuration you also [apply the Cloud Configuration to your individual Assets folders](#apply-the-configuration-to-your-folder), so that it is applied to all the Content Fragments in that folder.
 
+### Create a Content Fragment Cloud Configuration  {#create-a-content-fragment-cloud-configuration}
 
-### Configure the Content Fragment Editor - Content Reference Selector{#configure-the-content-reference-selector-in-the-content-fragment-editor}
+To create a configuration for customizing the new Content Fragment editor:
 
+1. Navigate to **Tools**, **Cloud Services**, then open the **Content Fragment Cloud Configuration**.
+1. In the left panel select the name of the configuration you created in the Configuration Browser; for example `CFModels-Conf`.
+1. Select **Create** from the top right toolbar.
+1. Select **Configuration** from the dropdown menu.
+1. A new configuration name **Content Fragment Cloud Configuration** is created.
+   You can select the configuration to edit the properties, publish, unpublish or delete.
 
+   >[!NOTE]
+   >
+   >For each configuration only one Cloud Configuration can be created.
+
+### Configure the Editor - RTE{#configure-the-content-fragment-editor-rte}
+
+The Cloud Configuration provides ...
+
+### Configure the Editor - Content Reference Selector{#configure-the-content-reference-selector-in-the-content-fragment-editor}
+
+The Cloud Configuration ...
