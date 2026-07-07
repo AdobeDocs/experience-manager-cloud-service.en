@@ -1639,6 +1639,7 @@ user-guide-title: AEM as a Cloud Service
     + [Customizing the Content Fragment Console and Editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
     + [Visual Content Fragments - Templates](/help/implementing/developing/extending/content-fragments-visualization-templates.md)
     + [Visual Content Fragments - Deliver with the Publish URL](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md)
+    + [Content Fragments - Cloud Configurations](/help/implementing/developing/extending/content-fragments-cloud-configurations.md)
     + Manage Search Forms {#manage-search-forms}
       + [Configuring Search Forms](/help/implementing/developing/extending/search-forms.md)
       + [Configure search filters for Inbox](/help/implementing/developing/extending/configure-inbox-search-rail.md)
