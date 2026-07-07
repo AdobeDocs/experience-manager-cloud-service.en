@@ -78,6 +78,20 @@ Use this option to configure the RTE in the new Content Fragment editor, for all
 
 1. Select **Save and Close**.
 
+>[!NOTE]
+>
+>RTE Toolbar:
+>
+>If one, or more, options are selected for a section of the RTE **Toolbar**, then *only* the selected options will be displayed. 
+>
+>If no options are selected for a section of the RTE **Toolbar**, then *all* the available options for that section will be displayed in the RTE toolbar.
+
+>[!CAUTION]
+>
+>RTE Toolbar:
+>
+>If at least one option has already been enabled (and saved), and then another option is enabled, the new selection is not automatically visible in the toolbar unless the user intentionally selects it.
+
 ## Configure the Editor - Content Reference Selector{#configure-the-editor-content-reference-selector}
 
 Use this option to configure the Asset Selector in the new Content Fragment editor, for all Content Fragments in a folder.
@@ -90,6 +104,11 @@ Use this option to configure the Asset Selector in the new Content Fragment edit
 
    * **Disable upload**
    * **Root Path**
+
+     >[!NOTE]
+     >
+     >If a Content Fragment Model has already predefined a root path for any fragments in the folder, then this configuration will override that.
+
    * **Disable remote**
    * **Repository Names**
    * **Selection Tier**: **Author** and **Deliver**
@@ -98,9 +117,15 @@ Use this option to configure the Asset Selector in the new Content Fragment edit
 
 ## Apply the Configuration to your Folder {#apply-the-configuration-to-your-folder}
 
+<!--
 When the configuration **global** is enabled for Content Fragment functionality, it then applies to any Assets folder - accessible through the **Assets** console.
+-->
 
-To use other configurations (therefore excluding global) with a comparable Assets folder, you have to define the connection. Do this by selecting the appropriate **Configuration** in the **Cloud Services** tab of the **Folder Properties** of the appropriate folder.
+To apply your Cloud Configurations to an Assets folder, you have to define the connection. 
+
+You can do this either when creating a new folder, or when editing the properties of an existing folder. 
+
+Select the appropriate **Configuration** in the **Cloud Services** tab of the **Folder Properties** of the appropriate folder.
 
 <!-- new screenshot needed -->
 
