@@ -74,7 +74,7 @@ Choose the method that matches your AI coding tool. Installing skills once makes
 
 ```bash
 # Install all available skills
-npx skills add https://github.com/adobe/skills/tree/main/skills/aem/cloud-service --all
+npx skills add https://github.com/adobe/skills/tree/main/plugins/skills/aem/cloud-service --all
 ```
 
 #### Upskill (GitHub CLI Extension) {#upskill-github-cli-extension}
