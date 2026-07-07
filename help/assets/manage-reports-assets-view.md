@@ -278,3 +278,4 @@ Click **[!UICONTROL Insights]** available in the left navigation pane to view th
 * [Manage collections](/help/assets/manage-collections.md)
 * [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

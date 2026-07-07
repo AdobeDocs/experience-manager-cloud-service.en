@@ -117,3 +117,4 @@ You cannot use smart tags, [!DNL Asset] link, [!DNL Asset] selector, bulk taggin
 >
 >* [DAM features in [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
 >* [[!DNL Experience Manager] as a [!DNL Cloud Service] product description](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+
