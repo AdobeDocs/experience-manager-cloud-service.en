@@ -12,7 +12,7 @@ The [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-disp
 
 >[!IMPORTANT]
 >
->Dispatcher filter rules are access-filtering controls, not a substitute for JCR ACL-based access control on the publish instance. The publish instance must be secured independently of Dispatcher configuration. Dispatcher URL-matching logic and Sling's resource resolution use different URL decomposition rules; certain URL patterns may be parsed differently by each layer. Ensure that sensitive resources are protected by denying `jcr:read` for the `everyone` and `anonymous` principals at the repository level, regardless of Dispatcher filter configuration.
+>Dispatcher filter rules are access-filtering controls, not a substitute for JCR ACL-based access control on the publish instance. The publish instance must be secured independently of Dispatcher configuration. Ensure that sensitive resources are protected by denying `jcr:read` for the `everyone` and `anonymous` principals at the repository level, regardless of Dispatcher filter configuration.
 
 >[!NOTE]
 >
