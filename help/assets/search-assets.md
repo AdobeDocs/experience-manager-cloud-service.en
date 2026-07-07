@@ -552,3 +552,4 @@ Navigate to the folder location for assets displayed in the search results. Sele
 >
 >* [[!DNL Experience Manager] search implementation guide](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html)
 >* [Advanced configuration to boost search results](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)
+

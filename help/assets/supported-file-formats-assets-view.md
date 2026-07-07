@@ -147,3 +147,4 @@ Users of [!DNL Adobe Asset Link] can upload and check-in (upload a new version) 
 * [Manage collections](/help/assets/manage-collections.md)
 * [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
