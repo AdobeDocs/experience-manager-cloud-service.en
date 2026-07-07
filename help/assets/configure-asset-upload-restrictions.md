@@ -72,3 +72,4 @@ Based on the settings depicted in the image, you can upload images in .JPG, .PNG
 * [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
+
