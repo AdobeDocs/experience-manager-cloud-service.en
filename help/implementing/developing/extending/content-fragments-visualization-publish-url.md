@@ -336,8 +336,4 @@ Additional resources are available:
 
 * [AEM Content Fragments documentation](/help/sites-cloud/administering/content-fragments/overview.md)
 
-<!-- CQDOC-23650 - add link when docs are stable; not experimental -->
-
-<!--
-* [Content Fragment Visualization Templates APIs (experimental)](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/cvt/#)
--->
+* [Content Fragment Visualization Templates APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/cvt/)

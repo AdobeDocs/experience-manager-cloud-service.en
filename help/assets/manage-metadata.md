@@ -302,3 +302,4 @@ Creating metadata-driven workflows help you automate some processes, which impro
 >
 >* [XMP metadata](xmp-metadata.md)
 >* [How to edit or add metadata](meta-edit.md)
+
