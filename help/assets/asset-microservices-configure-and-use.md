@@ -213,7 +213,7 @@ After the asset microservices complete the processing of the uploaded assets, yo
 
 #### Apply a workflow model to a folder {#apply-workflow-model-to-folder}
 
-For typical post-processing use cases, consider using the method to apply a workflow to a folder. To apply a workflow model in the folder [!UICONTROL Properties], follow these steps:
+For typical post-processing use cases, consider using the method to apply a workflow to a folder. To apply a workflow model in the folder [!UICONTROL Properties], follow the below steps:
 
 1. Create a workflow model.
 1. Select a folder, click **[!UICONTROL Properties]** from the toolbar, and then click the **[!UICONTROL Assets Processing]** tab.
