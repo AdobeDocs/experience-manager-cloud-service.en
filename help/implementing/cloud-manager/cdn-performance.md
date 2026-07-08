@@ -26,7 +26,7 @@ The CDN dashboard is available on the overview page of every program.
 
    ![My programs page](assets/my-programs.png)
 
-1. On the **Program Overview** page of your program, scroll down below the **Environments** and **Pipelines** cards to see the **Performance** card.
+1. To see the **Performance** card, scroll down below the **Environments** and **Pipelines** cards on the **Program Overview** page of your program.
 
    ![Performance](assets/cdn-performance-overview.png)
 
@@ -46,11 +46,11 @@ For suggestions on how to improve your CDN performance, select the **Recommendat
 
 ![CDN recommendations](assets/cdn-performance-recommendations.png)
 
-Click the chevron next to any recommendation in the list to view details about what steps to take to improve and the cause of the issue.
+Click the chevron next to any recommendation in the list to view details about the required improvement steps and the cause of the issue.
 
 ## Cache hit definition {#cache-hit}
 
-The cache hit ratio is a measurement of how many content requests a cache can fill successfully, compared to how many requests it receives. The higher a cache-hit ratio, the better performing a CDN is.
+The cache hit ratio is a measurement of how many content requests a cache can fill successfully, compared to how many requests it receives. A higher cache hit ratio indicates better CDN performance.
 
 >[!TIP]
 >
@@ -62,11 +62,12 @@ Cache Hit Ratio = Cache Hits / (Hits + Misses + Passes + Other)
 
 * **Hit** - Data is requested from the cache, and it is found.
 * **Miss** - Data is requested from the cache, and it is not found.
-* **Pass** - Data is requested from the cache, and it is set not to cache this data in any case.
+* **Pass** - Data is requested from the cache, and it is set not to cache this data.
 * **Other** - All data requests from the cache that do not match any other case.
 
-Cache metrics are updated every 24 hours.
+Cache metrics are refreshed every 24 hours.
 
 >[!TIP]
 >
 >For more details on how Cloud Manager and the CDN interact with the Dispatcher, see [Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md).
+

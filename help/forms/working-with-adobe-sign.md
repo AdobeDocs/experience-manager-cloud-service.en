@@ -55,11 +55,11 @@ To configure [!DNL Adobe Sign] for an Adaptive Form:
 1. [Enable [!DNL Adobe Sign] for an Adaptive Form](#enableadobsignforanadaptiveform)
 1. [Add [!DNL Adobe Sign] fields to an Adaptive Form](#addadobesignfieldstoanadaptiveform)
 1. [Select [!DNL Adobe Sign] Cloud Service for an Adaptive Form](#select-adobe-sign-cloud-service-and-signing-order)
-
+1. [Set document expiration for an Adobe Sign agreement](#set-document-expiration-for-an-adobe-sign-agreement)
 1. [Add [!DNL Adobe Sign] recipient to an Adaptive Form](#addsignerstoanadaptiveform)
 1. [Select Submit Action for an Adaptive Form](#selectsubmitactionforanadaptiveform)
 
-![Recipient Details](assets/signer_details_new.png)
+![Electronic Signature configuration including Document Expiration (Days) and recipient settings](assets/signer_details_new.png)
 
 ### Enable [!DNL Adobe Sign] for an Adaptive Form  {#enableadobesign}
 
@@ -184,6 +184,24 @@ To select a Cloud Service and order of signing:
    > If an Adaptive Form is created using a Form Data Model(FDM), the Agreement ID field becomes visible in the dialog box.
 
 1. [Add recipients to an Adaptive Form](working-with-adobe-sign.md#addsignerstoanadaptiveform) and select the Done ![Save](assets/save_icon.svg) icon to save the changes.
+
+### Set document expiration for an Adobe Sign agreement {#set-document-expiration-for-an-adobe-sign-agreement}
+
+You can set an expiration deadline on Adobe Sign agreements so recipients must complete signing within a specified number of days. When a form is submitted, AEM Forms passes the configured value to Adobe Sign as `daysUntilSigningDeadline`.
+
+<span class="preview"> Setting document expiration for Adobe Sign agreements is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to this capability. </span>
+
+To set document expiration:
+
+1. In the Content browser, select **[!UICONTROL Form Container]**, and select the **[!UICONTROL Configure]** ![configure](assets/Smock_Wrench_18_N.svg) icon.
+1. In the properties browser, expand the **[!UICONTROL Electronic Signature]** accordion, and select the **[!UICONTROL Enable Adobe Sign]** option.
+1. In the **[!UICONTROL Document Expiration (Days)]** field, specify the number of days within which recipients must complete signing.
+
+1. Select the Done ![Save](assets/save_icon.svg) icon to save the changes.
+
+>[!NOTE]
+>
+> The **[!UICONTROL Document Expiration (Days)]** field is optional. If you leave it empty, the agreement does not expire.
 
 ### Add recipients to an Adaptive Form {#addsignerstoanadaptiveform}
 

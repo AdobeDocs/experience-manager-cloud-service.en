@@ -56,3 +56,4 @@ In addition to UI extensibility, the Universal Editor offers other customization
 
 * **[Blocks](https://www.aem.live/developer/block-collection)**: In simple JSON format, projects can adjust the blocks and UE features available for content creation.
 * **[Events](/help/implementing/universal-editor/events-universal-editor.md)**: Extensions receive events about the author's actions and selections on the page to respond appropriately.
+

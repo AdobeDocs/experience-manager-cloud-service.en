@@ -131,3 +131,23 @@ You can either choose **[!UICONTROL Local]** or **[!UICONTROL Remote]** DAM repo
 ### Access remote assets in Edge Delivery Services {#access-assets-eds}
 
 You can access remote assets while authoring content in Microsoft Word, Google Docs, or Universal Editor and then publish the content to Edge Delivery Services. You can also use Dynamic Media with OpenAPI to deliver brand-approved assets and utilize many other benefits that it offers. For more information, see [Integrate AEM Assets while authoring content for Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md).
+
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

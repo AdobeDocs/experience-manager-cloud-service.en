@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2026.06.25 Release Notes
-description: These are the release notes for the 2026.06.25 release of the Universal Editor.
+title: Universal Editor 2026.07.02 Release Notes
+description: These are the release notes for the 2026.07.02 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2026.06.25 Release Notes {#release-notes}
+# Universal Editor 2026.07.02 Release Notes {#release-notes}
 
-These are the release notes for the 25 June 2026 release of the Universal Editor.
+These are the release notes for the 2 July 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -20,13 +20,10 @@ These are the release notes for the 25 June 2026 release of the Universal Editor
 
 ## What's New {#what-is-new}
 
-* A new **Open in Site Admin** button has been added to the toolbar to access AEM Sites console.
-  * This brings the functionality of the former **AEM Site Admin Extension** [extension](/help/implementing/universal-editor/extending.md) natively to the Universal Editor.
-  * The button opens the current AEM page in the [Sites console,](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console) or the [Experience Fragments console](/help/sites-cloud/authoring/fragments/experience-fragments.md) for `/content/experience-fragments` paths.
-  * The button is hidden for DAM paths (`/content/dam`) and when no unique AEM page can be determined from the current editables.
-* Single-character keyboard shortcuts now work better with accessibility technologies.
+* The editor now supports a `preview` [meta tag](/help/implementing/universal-editor/customizing.md#meta-tags) to force the editor to load in [preview mode.](/help/sites-cloud/authoring/sites-console/previewing-content.md)
+* The editor now supports a `readonly` [meta tag](/help/implementing/universal-editor/customizing.md#meta-tags) to disable editing, so the user can still select any component, but can not change the content.
 
 ## Other Improvements {#other-improvements}
 
-* Numerous buttons now correctly have accessible names.
-* A problem with persisting certain Content Fragments after selecting them with a picker has been fixed.
+* Accessibility improvements have been made to heading hierarchies.
+* Accessibility improvements have been made to maintain focus properly in the location bar to aid keyboard navigation of the editor.

@@ -31,8 +31,10 @@ To create a Submission PDF, an XFA or Acroform based template is merged with dat
 You can:
 
 * [Generate an XFA-based Submission PDF](#generate-an-XFA-based-document-of-record)
+* [Use locale-specific custom XDP templates for Submission PDF](#locale-specific-custom-xdp-templates-for-document-of-record)
 * [Generate an Acroform-based (Acrobat Form PDF) Submission PDF](#generate-an-Acroform-based-document-of-record)
 * [Auto generate a Submission PDF](#auto-generate-a-document-of-record)
+* [Configure Submission PDF for forms embedded in AEM Sites pages](#configure-document-of-record-for-forms-embedded-in-aem-sites)
 
 ## Before you start {#components-to-automatically-generate-a-document-of-record}
 
@@ -54,6 +56,35 @@ Upload your XFA template (XDP file) to your AEM Forms instance. Perform the foll
 1. Click **[!UICONTROL Done]**
 
 Your Adaptive Form is now configured to use an XDP file as template for Submission PDF. The next step is to [bind Adaptive Form components with corresponding template fields](#bind-adaptive-form-components-with-template-fields).
+
+## Use locale-specific custom XDP templates for Submission PDF {#locale-specific-custom-xdp-templates-for-document-of-record}
+
+<span class="preview"> Submission PDF configuration for forms embedded in AEM Sites pages and locale-specific custom XDP templates for Document of Record are under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to these capabilities. </span>
+
+When you associate a custom XFA template (XDP file) as the Submission PDF template, you can provide locale-specific versions of the template. AEM Forms automatically selects the appropriate XDP based on the form locale when generating the Submission PDF.
+
+### How locale-specific template selection works
+
+1. Upload a default XDP template to your AEM Forms instance. For example, `a.xdp`.
+1. To provide localized templates, create and upload locale-specific XDP files in the same folder using the naming convention `basename.<locale>.xdp`. For example:
+
+    * `a.xdp` — default template
+    * `a.fr.xdp` — French locale template
+    * `a.de.xdp` — German locale template
+
+1. Configure the Adaptive Form to **Associate form template as the Document of Record template** and select the default XDP file (for example, `a.xdp`).
+1. When a Submission PDF is generated, AEM Forms uses the locale of the form to resolve the template. For a French locale form, the system uses `a.fr.xdp` if it exists; otherwise, it falls back to the default `a.xdp`.
+
+### Example workflow
+
+1. In **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms and Documents]**, upload `a.xdp` and `a.fr.xdp` to the same folder (for example, `/content/dam/formsanddocuments/testlang/`).
+1. Configure the form's **[!UICONTROL Document of Record]** settings to associate `a.xdp` as the template.
+1. When a user fills the French version of the form and generates or downloads the Submission PDF, the PDF uses content from the French XDP template (for example, localized header text and field labels defined in the template).
+1. Submit actions that include a Submission PDF attachment (such as **[!UICONTROL Send Email]**) also include the locale-appropriate PDF.
+
+>[!NOTE]
+>
+> Locale-specific custom XDP template support applies when you associate a form template as the Document of Record template. For auto-generated Submission PDF localization, see [Use machine translation or human translation to translate a Core Components based Adaptive Form](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md).
 
 ## Generate an Acroform-based Submission PDF {#generate-an-Acroform-based-document-of-record}
 
@@ -113,6 +144,47 @@ You can use submit actions such as "Send Email", "Invoke an AEM workflow", "Invo
 >[!NOTE]
 >
 > You can save the Submission PDF for any Form Data Model by using **[!UICONTROL Document of Record Bind Reference field]** property.
+
+## Configure Submission PDF for forms embedded in AEM Sites pages {#configure-document-of-record-for-forms-embedded-in-aem-sites}
+
+You can configure and generate a Submission PDF (Document of Record) for Adaptive Forms embedded in AEM Sites pages using the **[!UICONTROL Adaptive Form Container]** component. Authors can configure DoR settings directly on the Sites page without opening the form in the Forms editor.
+
+### Before you start
+
+* An Adaptive Form is created using the **[!UICONTROL Adaptive Form Container]** component on an AEM Sites page or Experience Fragment. For details, see [Add an Adaptive Form to an AEM Sites page or Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
+* Adaptive Forms client libraries are added to the Sites page template.
+
+### Configure Submission PDF on a Sites page
+
+1. Open the AEM Sites page or Experience Fragment containing the embedded form in edit mode.
+1. Select the **[!UICONTROL Adaptive Form Container]** component on the page and click the configure ![Configure](assets/configure-icon.svg) icon.
+1. Open the **[!UICONTROL Document of Record]** tab.
+1. Select one of the following options:
+
+    * **None** — Do not generate a Submission PDF.
+    * **Generate Document of Record** — Automatically generate a Submission PDF.
+    * **Associate form template as the Document of Record template** — Use a custom XDP or AcroForm template. Browse and select the template from your AEM Forms instance.
+
+1. (Optional) Select **Exclude file attachments from Document of Record** to omit uploaded attachments from the Submission PDF.
+1. Click **[!UICONTROL Done]**.
+
+### Customize Document of Record properties
+
+After enabling Submission PDF generation, you can customize branding and layout on the Sites page:
+
+1. Select the root panel of the embedded form in the **[!UICONTROL Adaptive Form Container]**.
+1. In the properties sidebar, open the **[!UICONTROL Document of Record]** tab.
+1. Configure options on the **[!UICONTROL Basic]**, **[!UICONTROL Form Field Properties]**, and **[!UICONTROL Master Page Properties]** tabs. For details on each property, see [Customize the branding information in Submission PDF](#customize-the-branding-information-in-document-of-record).
+1. Click **[!UICONTROL Done]**.
+
+### Preview and download the Submission PDF
+
+* Preview the form on the Sites page and submit it, or add a **Download DoR** button using the [Rule Editor](/help/forms/rule-editor-enhancements-use-cases.md#download-document-of-record) to generate the Submission PDF on demand.
+* Submit actions configured on the embedded form (such as **[!UICONTROL Send Email]** or **[!UICONTROL Invoke AEM Workflow]**) can include the generated Submission PDF.
+
+>[!NOTE]
+>
+> Submission PDF generation for forms embedded in Sites pages is supported for Adaptive Forms created with Core Components in the **[!UICONTROL Adaptive Form Container]** component. For forms added using the **[!UICONTROL Adaptive Forms – Embed (v2)]** component, configure DoR in the Forms editor.
 
 ## Incremental updates to Submission PDF template {#document-of-record-template-incremental-updates}
 

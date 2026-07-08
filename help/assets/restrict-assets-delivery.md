@@ -89,3 +89,23 @@ On AEM Cloud Service author services as well as Asset Selector, the IMS Bearer T
 ### Delivery for custom identity providers on Publish service {#delivery-custom-identity-provider}
 
 AEM Sites, AEM Assets and Dynamic Media with OpenAPI licenses can be used together, allowing for restricted delivery of assets to be configured on websites hosted on AEM Publish or Preview service. The secure delivery flow leverages browser cookies to establish user's access and having a custom domain for delivery tier that is subdomain of the publish domain is a pre-requisite for implementing this use case. In case AEM Sites' Publish and Preview services are configured to use a [custom identity provider (IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), a new cookie called `delivery-token` encapsulating user's group membership must be set on publish domain post user's authentication. The delivery tier extracts the authorization material from the secure-cookie and validates the access. Please log an [enterprise support ticket](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) for more details.
+
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

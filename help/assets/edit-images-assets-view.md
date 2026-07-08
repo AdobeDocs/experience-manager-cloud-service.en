@@ -106,10 +106,15 @@ To edit images using [!DNL Adobe Express] embedded editor, follow the steps belo
    1. Optional: Provide details such as Project or Campaign name, Keywords, Channels, Time frame, and Region. 
 1. Click **Save as version** or **Save as new asset** to save the asset(s). 
 
+>[!NOTE]
+>
+>Saving a PSD file as an Adobe Express document preserves the layers from the original PSD file.
+
+
 #### Limitations of editing images in the Express Editor {#limitations-of-editing-images-in-the-express-editor}
 
- * Supported file type: JPEG or PNG. 
- * Maximum file size supported: 40 MB. 
+ * Supported file type: JPEG, PSD, or PNG. 
+ * The asset size must be less than 80 MB for desktop devices and 40 MB for mobile devices. 
  * Supported width and height range: 65MP (For example, 8K x 8K or 16K x 4K).
  * Reload the page to see the latest saved new asset in the source folder.
 
@@ -124,9 +129,7 @@ To edit images using [!DNL Adobe Express] embedded editor, follow the steps belo
 
 #### Limitations {#limitations}
 
-* You can only modify images of `JPEG` and `PNG` format types.
-* The asset size must be less than 80 MB for desktop devices and 40 MB for mobile devices.
-* Supported width and height range is 65MP (For example, 8K x 8K or 16K x 4K).
+* Allow up to 8000 pixels per dimension for the canvas of the new Express document
 * You can save an image in `PDF`, `JPEG`, or `PNG` formats.
 
 <!--
@@ -199,3 +202,23 @@ TBD: Insert a video of the available social media options.
 >
 >* [Quick actions in Adobe Express](https://helpx.adobe.com/in/express/using/resize-image.html)
 >* [View version history of an asset](navigate-assets-view.md)
+
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

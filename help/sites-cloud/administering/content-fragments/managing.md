@@ -399,14 +399,6 @@ You can:
 
   * With [Visualization Templates](/help/sites-cloud/administering/content-fragments/preview.md#preview-with-visualization-html-templates)
 
-    <!-- CQDOC-23232 - remove when GA -->
-
-    >[!NOTE]
-    >
-    >Visual Content Fragments are currently in Limited Availability. 
-    >
-    >If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
-
   * On the [preview](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) instance 
 
 * Publish your Content Fragments to:
@@ -648,14 +640,33 @@ Once selected, this will be shown as a filter predicate, and the list will be fi
 
 ## Searching Fragments {#searching-fragments}
 
-The search box supports full-text search. Entering your search terms in the search box:
+The Content Fragment console supports:
 
-![Content Fragments console - Searching](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-specification.png)
+* [Full-text search](#full-text-search)
+* [AI search](#ai-search) (Semantic search)
 
-Will provide the selected results:
+Use the toggle option **AI search** to select the search method you want to use:
 
-![Content Fragments console - Search Results](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-results.png)
+![Content Fragments console - select search method](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-select-search.png)
 
 The search box also provides quick access to **Recent Content Fragments** and **Saved Searches**:
 
 ![Content Fragments console - Recent and Saved](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-saved.png)
+
+### Full-text search {#full-text-search}
+
+Full-text search allows you to search the Content Fragment content for a specific word or phrase. Entering your search terms in the search box:
+
+![Content Fragments console - full-text search](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-full-text-search-specification.png)
+
+Will provide the selected results:
+
+![Content Fragments console - Search Results](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-full-text-search-results.png)
+
+### AI search (Semantic search) {#ai-search}
+
+AI (semantic) search for Content Fragments improves content discovery by enabling natural-language queries. It allows you to find fragments based on meaning and intent, instead of relying solely on exact keywords or full-text matches.
+
+Enter your search query in the search box. For example `fruity and light roast`:
+
+![Content Fragments console - semantic search](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-semantic-search.png)

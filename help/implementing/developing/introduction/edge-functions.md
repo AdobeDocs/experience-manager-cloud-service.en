@@ -9,7 +9,9 @@ exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
 
 >[!IMPORTANT]
 >
->AEM Edge Functions is a **public beta** feature so you can try it out in a self-serve way without contacting Adobe to enable. Adobe encourages you to email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) to describe your use case so Adobe can assure you it is supported, and provide any guidance. By using the AEM Edge Functions Beta, you acknowledge that it is still in development and that you should not rely on the correct functioning of the technology or availability of data. This feature is provided as-is, may change without notice, and is not covered by production. 
+>AEM Edge Functions is a **public beta** feature so you can try it out in a self-serve way without contacting Adobe to enable. Adobe encourages you to email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) to describe your use case so Adobe can assure you it is supported, and provide any guidance. It is especially important to contact Adobe before deploying the feature for production traffic.
+>
+>By using the AEM Edge Functions Beta, you acknowledge that it is still in development and that you should not rely on the correct functioning of the technology or availability of data. This feature is provided as-is, may change without notice, and is not covered by production. 
 
 AEM Edge Functions lets you execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences without a round trip to your origin.
 
@@ -22,7 +24,9 @@ Common use cases include:
 
 AEM Edge Functions is compatible with both Edge Delivery Services and AEM as a Cloud Service Java-stack, for AEM Sites customers.
 
-<!-- Follow this tutorial for a concrete walk-through for both Edge Delivery Services and AEM as a Cloud Service Java-stack variations. -->
+Follow [this tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) for a concrete walk-through for both Edge Delivery Services and AEM as a Cloud Service Java-stack variations.
+
+Also see [this repository](https://github.com/adobe/aem-edge-functions-examples) of code examples, including stitching content at the CDN, and properly fetching content from the AEM publish tier origin.
 
 ## Key Benefits {#key-benefits}
 
@@ -426,3 +430,4 @@ logger.log(JSON.stringify({
 >
 >CDN logs — which include AEM Edge Function log entries — can be downloaded from Cloud Manager for Java-stack environments, but not for Edge Delivery sites.
 >
+

@@ -74,7 +74,7 @@ Choose the method that matches your AI coding tool. Installing skills once makes
 
 ```bash
 # Install all available skills
-npx skills add https://github.com/adobe/skills/tree/main/skills/aem/cloud-service --all
+npx skills add https://github.com/adobe/skills/tree/main/plugins/skills/aem/cloud-service --all
 ```
 
 #### Upskill (GitHub CLI Extension) {#upskill-github-cli-extension}
@@ -323,3 +323,4 @@ Other IDEs can be configured in a similar manner. The SDK's `docs/DispatcherMCP.
 |`tail_logs`|Tails relevant Dispatcher and HTTPD runtime logs|
 
 The MCP surface intentionally exposes only these seven tools; prompts and resources remain in the skill layer. Full reference documentation is available in `docs/DispatcherMCP.md` inside the extracted Dispatcher SDK.
+

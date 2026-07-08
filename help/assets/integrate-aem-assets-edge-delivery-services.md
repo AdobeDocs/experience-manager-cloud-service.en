@@ -72,7 +72,7 @@ Select the following links to learn how to use [!DNL Dynamic Media with OpenAPI 
 * [Add videos to your content](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-video-references-when-authoring-content)
 * [Add non-image and video assets such as PDF, Zip files and more to your content](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-asset-references-for-pdf-zip-etc-when-authoring-content)
 
-See this video to learn how to deliver assets in your content using Dynamic Media with OpenAPI capabilities.
+See the following video to learn how to deliver assets in your content using Dynamic Media with OpenAPI capabilities.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441155)
 
@@ -86,3 +86,21 @@ Set up the [!DNL Universal Editor] to integrate with [!DNL AEM Assets]. This int
 
 * See [Configuration in [!DNL Edge Delivery] Site](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site) to learn how to add a custom asset picker function in [!DNL Universal Editor]. The custom asset picker enables you to insert assets into your [!DNL Universal Editor] content directly.
 * See [Extension overview](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) to learn how to access to [!DNL AEM Assets] and insert the assets while authoring in [!DNL Universal Editor].
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
