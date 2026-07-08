@@ -314,3 +314,4 @@ Deletes a resource (-tree) at the provided path.
 >[!MORELIKETHIS]
 >
 >* [Developer reference docs for [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
+

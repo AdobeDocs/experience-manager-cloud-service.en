@@ -273,3 +273,4 @@ You can define mandatory fields at a folder level, which is enforced on assets t
 * [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
+

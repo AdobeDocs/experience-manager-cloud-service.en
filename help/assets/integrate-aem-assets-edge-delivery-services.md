@@ -72,7 +72,7 @@ Select the following links to learn how to use [!DNL Dynamic Media with OpenAPI 
 * [Add videos to your content](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-video-references-when-authoring-content)
 * [Add non-image and video assets such as PDF, Zip files and more to your content](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-asset-references-for-pdf-zip-etc-when-authoring-content)
 
-See this video to learn how to deliver assets in your content using Dynamic Media with OpenAPI capabilities.
+See the following video to learn how to deliver assets in your content using Dynamic Media with OpenAPI capabilities.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441155)
 
