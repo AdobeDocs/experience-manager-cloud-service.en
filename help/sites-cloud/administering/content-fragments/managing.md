@@ -490,12 +490,6 @@ The **Replace** action is available (in the top toolbar) to find, and replace, s
 
 Before replacement, validation criteria are checked and you are informed of any conflicts, allowing you to change the replacement string or only replace the validated instances.
 
->[!NOTE]
->
->The find and replace action can only be performed on a maximum of 20 selected Content Fragments (at a time). 
->
->If you select more than 20 Content Fragments, you will see the message **Unable to find and replace**.
-
 ![Confirm Replace](/help/sites-cloud/administering/content-fragments/assets/cf-managing-confirm-replace.png)
 
 ## Check Out and Check In {#check-out-and-check-in}
