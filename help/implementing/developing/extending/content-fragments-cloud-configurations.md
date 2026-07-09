@@ -10,7 +10,7 @@ solution: Experience Manager Sites
 
 With a Content Fragment Cloud Configuration you can customize various aspects of the [new Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md). 
 
-After [creating](#create-a-content-fragment-cloud-configuration) and defining the configuration you also [apply the Cloud Configuration to your individual Assets folders](#apply-the-configuration-to-your-folder), so that it is applied to all the Content Fragments in that folder.
+After [creating](#create-a-content-fragment-cloud-configuration) and [defining](#define-the-content-fragment-cloud-configuration) the configuration you also [apply the Cloud Configuration to your individual Assets folders](#apply-the-configuration-to-your-folder), so that it is applied to all the Content Fragments in that folder.
 
 >[!NOTE]
 >
@@ -38,7 +38,19 @@ To create a configuration for customizing the new Content Fragment editor:
    >
    >For each [workspace (context aware) configuration](/help/implementing/developing/introduction/configurations.md) only one Content Fragment Cloud Configuration can be created.
 
-## Disable Publishing {#disable-publishing}
+## Define the Content Fragment Cloud Configuration  {#define-the-content-fragment-cloud-configuration}
+
+After creating your configuration you can open the **Properties** to define the settings for:
+
+* **[Disable Publishing](#disable-publishing)**
+* **[Configure the Rich Text Editor (RTE)](#configure-the-rte)**
+* **[Configure the Content Reference Asset Selector](#configure-the-content-reference-asset-selector)**
+
+>[!NOTE]
+>
+>When defining the details of a configuration see the **i** icons for more information on each field.
+
+### Disable Publishing {#disable-publishing}
 
 Use this option to disable publishing from the editor:
 
@@ -55,7 +67,7 @@ Use this option to disable publishing from the editor:
 1. **Save and Close**.
 1. [Apply the Cloud Configuration to your folder](#apply-the-configuration-to-your-folder).
 
-## Configure the Editor - RTE {#configure-the-editor-rte}
+### Configure the RTE {#configure-the-rte}
 
 Use this option to configure the Rich Text Editor (RTE):
 
@@ -114,7 +126,7 @@ Use this option to configure the Rich Text Editor (RTE):
 >
 >See [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md) for more details. 
 
-## Configure the Editor - Content Reference Asset Selector{#configure-the-editor-content-reference-asset-selector}
+### Configure the Content Reference Asset Selector{#configure-the-content-reference-asset-selector}
 
 Use this option to configure the Asset Selector for Content **Reference** fields:
 
