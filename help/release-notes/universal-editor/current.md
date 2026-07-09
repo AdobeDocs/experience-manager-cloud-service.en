@@ -20,6 +20,7 @@ These are the release notes for the 9 July 2026 release of the Universal Editor.
 
 ## Other Improvements {#other-improvements}
 
-* Undo/redo actions have been improved.
-* Ordered lists now render properly when editing inline with the rich text editor.
-* Drag and drop reordering of sections now works properly.
+* [Undo/redo](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) actions have been improved.
+* [Ordered lists](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) now render properly when editing inline with the rich text editor.
+* [Drag and drop reordering](/help/sites-cloud/authoring/universal-editor/authoring.md#drag-and-drop-move) of sections now works properly.
+* Field selection dropdowns in the properties panel are no longer obscured by the Experience Platform navigation bar in certain situations.
