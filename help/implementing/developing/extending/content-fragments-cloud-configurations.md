@@ -108,11 +108,11 @@ Use this option to configure the Rich Text Editor (RTE):
 >
 >This works on the same basis as for the Universal Editor. Though there are two features that are not supported for a Content Fragment Cloud Configuration:
 >
->* [hideInline](/https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/configure-rte#action)
+>* [hideInline](/help/implementing/universal-editor/configure-rte.md#action)
 >
->* [Unsupported HTML](/https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/configure-rte#unsupported-html)
+>* [Unsupported HTML](/help/implementing/universal-editor/configure-rte.md#unsupported-html)
 >
->See [Configuring the RTE for the Universal Editor](/https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/configure-rte) for more details. 
+>See [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md) for more details. 
 
 ## Configure the Editor - Content Reference Asset Selector{#configure-the-editor-content-reference-asset-selector}
 
