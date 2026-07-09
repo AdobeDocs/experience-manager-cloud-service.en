@@ -136,3 +136,4 @@ Standardizing metadata usage, file naming, and folder structure ensures that as 
 >* [Video profiles](/help/assets/dynamic-media/video-profiles.md)
 >* [Dynamic Media image profiles](/help/assets/dynamic-media/image-profiles.md)
 
+

@@ -96,3 +96,4 @@ Yes, administrators can configure which fields are mandatory or optional when ad
 * [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
+

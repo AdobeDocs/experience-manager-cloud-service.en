@@ -144,3 +144,4 @@ You can remove a metadata profile from a folder from within the **Tools** menu o
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 
+
