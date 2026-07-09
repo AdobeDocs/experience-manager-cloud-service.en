@@ -490,6 +490,10 @@ The dialog allows you to specify the **Find** and **Replace** texts, then **Revi
 
 ![Confirm Find and Replace](/help/sites-cloud/administering/content-fragments/assets/cf-managing-confirm-replace.png)
 
+>[!NOTE]
+>
+>If more than 20 fragments are to be updated, the operation will be performed asynchronously in batches of 20. You receive a notification when the operation starts, and when it completes you receive another notification indicating the number of resources updated.
+
 ## Check Out and Check In {#check-out-and-check-in}
 
 AEM lets you:
