@@ -104,15 +104,11 @@ Use this option to configure the Rich Text Editor (RTE):
 >
 >RTE Toolbar:
 >
->If one, or more, options are selected for a section of the RTE **Toolbar**, then *only* the selected options will be displayed. 
+>The RTE Toolbar definition is split into sub-sections; for example, the sub-sections include **Format**, **Alignment**, and others. 
 >
->If no options are selected for a section of the RTE **Toolbar**, then *all* the available options for that section will be displayed in the RTE toolbar.
-
->[!CAUTION]
+>If one, or more, options are selected for a sub-section, then *only* the selected options will be displayed in the editor. 
 >
->RTE Toolbar:
->
->If at least one option has already been enabled (and saved), and then another option is enabled, the new selection is not automatically visible in the selection list unless the user intentionally selects it.
+>If no options are selected for a sub-section of the RTE **Toolbar**, then *all* the available options for that sub-section will be displayed in the editor.
 
 >[!NOTE]
 >
@@ -125,6 +121,8 @@ Use this option to configure the Rich Text Editor (RTE):
 >* [Unsupported HTML](/help/implementing/universal-editor/configure-rte.md#unsupported-html)
 >
 >See [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md) for more details. 
+>
+>If a new feature is added while a configuration is being edited then a refresh is needed to see the new feature.
 
 ### Configure the Content Reference Asset Selector{#configure-the-content-reference-asset-selector}
 
