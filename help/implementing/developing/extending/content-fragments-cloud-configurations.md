@@ -8,13 +8,16 @@ solution: Experience Manager Sites
 ---
 # Content Fragments - Cloud Configurations {#content-fragments-setup}
 
-With a Content Fragment Cloud Configuration you can customize various aspects of your Content Fragment environment, including certain actions and the [new Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md). 
+With a Content Fragment Cloud Configuration you can customize various aspects of the [new Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md). 
 
 After [creating](#create-a-content-fragment-cloud-configuration) and defining the configuration you also [apply the Cloud Configuration to your individual Assets folders](#apply-the-configuration-to-your-folder), so that it is applied to all the Content Fragments in that folder.
 
 >[!NOTE]
 >
->The Content Fragment Cloud Configurations do not impact the original Content Fragment editor.
+>The Content Fragment Cloud Configurations do not impact:
+>
+>* the original Content Fragment editor
+>* the Content Fragment console or the Assets console
 
 >[!NOTE]
 >
@@ -25,30 +28,36 @@ After [creating](#create-a-content-fragment-cloud-configuration) and defining th
 To create a configuration for customizing the new Content Fragment editor:
 
 1. Navigate to **Tools**, **Cloud Services**, then open the **Content Fragment Cloud Configuration**.
-1. In the left panel select the name of the configuration you created in the Configuration Browser; for example `CFModels-Conf`.
+1. In the left panel select the name of the configuration (workspace) you created in the Configuration Browser; for example `CFModels-Conf`.
 1. Select **Create** from the top right toolbar.
 1. Select **Configuration** from the dropdown menu.
 1. A new configuration name **Content Fragment Cloud Configuration** is created.
-   You can select the configuration to edit the properties, publish, unpublish or delete.
+   You can select the configuration to edit the properties, publish, unpublish or delete the configuration.
 
    >[!NOTE]
    >
-   >For each context aware configuration only one Content Fragment Cloud Configuration can be created.
+   >For each [workspace (context aware) configuration](/help/implementing/developing/introduction/configurations.md) only one Content Fragment Cloud Configuration can be created.
 
 ## Disable Publishing {#disable-publishing}
 
-Use this option to disable publishing for all Content Fragments in a folder.
+Use this option to disable publishing from the editor:
+
+>[!NOTE]
+>
+>When **Disable Publish** is activate the publish options will not be visible in the new Content Fragment editor. 
+>
+>Publish actions will still be available from the Content Fragments Console and the Assets Console.
 
 1. Navigate to your Content Fragment Cloud Configuration.
 1. Select and open the **Properties**.
 1. Select the **Capabilities** tab.
-1. Select, or deselect, **Disable Publish.**.
+1. Select, or deselect, **Disable Publish**. See the i icons for more information on each field.
 1. **Save and Close**.
 1. [Apply the Cloud Configuration to your folder](#apply-the-configuration-to-your-folder).
 
 ## Configure the Editor - RTE {#configure-the-editor-rte}
 
-Use this option to configure the RTE in the new Content Fragment editor, for all Content Fragments in a folder.
+Use this option to configure the Rich Text Editor (RTE):
 
 1. Navigate to your Content Fragment Cloud Configuration.
 1. Select and open the **Properties**.
@@ -77,6 +86,7 @@ Use this option to configure the RTE in the new Content Fragment editor, for all
      * delete a specific, existing **Action** configuration: select, use the trash can icon to remove the action definition
 
 1. Select **Save and Close**.
+1. [Apply the Cloud Configuration to your folder](#apply-the-configuration-to-your-folder).
 
 >[!NOTE]
 >
@@ -90,11 +100,23 @@ Use this option to configure the RTE in the new Content Fragment editor, for all
 >
 >RTE Toolbar:
 >
->If at least one option has already been enabled (and saved), and then another option is enabled, the new selection is not automatically visible in the toolbar unless the user intentionally selects it.
+>If at least one option has already been enabled (and saved), and then another option is enabled, the new selection is not automatically visible in the selection list unless the user intentionally selects it.
 
-## Configure the Editor - Content Reference Selector{#configure-the-editor-content-reference-selector}
+>[!NOTE]
+>
+>Your development team can add features to the RTE configuration. 
+>
+>This works on the same basis as for the Universal Editor. Though there are two features that are not supported for a Content Fragment Cloud Configuration:
+>
+>* [hideInline](/https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/configure-rte#action)
+>
+>* [Unsupported HTML](/https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/configure-rte#unsupported-html)
+>
+>See [Configuring the RTE for the Universal Editor](/https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/configure-rte) for more details. 
 
-Use this option to configure the Asset Selector in the new Content Fragment editor, for all Content Fragments in a folder.
+## Configure the Editor - Content Reference Asset Selector{#configure-the-editor-content-reference-asset-selector}
+
+Use this option to configure the Asset Selector for Content **Reference** fields:
 
 1. Navigate to your Content Fragment Cloud Configuration.
 1. Select and open the **Properties**.
@@ -107,13 +129,14 @@ Use this option to configure the Asset Selector in the new Content Fragment edit
 
      >[!NOTE]
      >
-     >If a Content Fragment Model has already predefined a root path for any fragments in the folder, then this configuration will override that.
+     >If a Content Fragment Model has already predefined a root path for any fragments in the folder, then this configuration will override that setting.
 
    * **Disable remote**
    * **Repository Names**
    * **Selection Tier**: **Author** and **Deliver**
 
 1. Select **Save and Close**.
+1. [Apply the Cloud Configuration to your folder](#apply-the-configuration-to-your-folder).
 
 ## Apply the Configuration to your Folder {#apply-the-configuration-to-your-folder}
 
@@ -126,6 +149,12 @@ To apply your Cloud Configurations to an Assets folder, you have to define the c
 You can do this either when creating a new folder, or when editing the properties of an existing folder. 
 
 Select the appropriate **Configuration** in the **Cloud Services** tab of the **Folder Properties** of the appropriate folder.
+
+>[!NOTE]
+>
+>A configuration on the folder will be applied to all Content Fragments in that folder. 
+>
+>If no configuration is applied to a folder, then any configuration will only be inherited from the direct parent folder.
 
 <!-- new screenshot needed -->
 
