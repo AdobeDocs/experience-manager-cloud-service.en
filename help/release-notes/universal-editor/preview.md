@@ -23,3 +23,4 @@ These **preview** release notes are provided as a convenience so you know what c
 ## Upcoming Changes {#upcoming-improvements}
 
 * The radio buttons to select the [responsive mode](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator) of the editor now have accessible labels.
+* The clear all option for checkboxes now properly clears all the fields even when there is a default set.
