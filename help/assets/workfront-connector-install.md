@@ -148,7 +148,6 @@ To create a connection with [!DNL Workfront], follow these steps:
 
 1. Navigate to the **[!UICONTROL Advanced]** tab and select the option **[!UICONTROL Is the Server AEM as a Cloud Service]**.
 
-
 **See also**
 
 * [Translate Assets](/help/assets/translate-assets.md)

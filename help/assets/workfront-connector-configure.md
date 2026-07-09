@@ -205,7 +205,6 @@ To subscribe to the changes in [!DNL Workfront] document custom forms, select th
 
 ![Workfront document custom form updates configuration in [!DNL Experience Manager]](/help/assets/assets/wf-custom-form-update.png)
 
-
 **See also**
 
 * [Translate Assets](/help/assets/translate-assets.md)
