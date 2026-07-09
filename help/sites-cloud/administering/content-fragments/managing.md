@@ -486,11 +486,9 @@ When the relevant dialog opens you can select the appropriate service:
 
 The **Replace** action is available (in the top toolbar) to find, and replace, specified text in your selected Content Fragments. 
 
-![Find and Replace](/help/sites-cloud/administering/content-fragments/assets/cf-managing-find-replace.png)
+The dialog allows you to specify the **Find** and **Replace** texts, then **Review** the potential updates. Validation criteria are checked and you are notified of any errors or conflicts. You can then can decide whether to cancel the process, change your criteria, or proceed by skipping fragments where the change provokes an error and only changing fragments where the substitution can be applied successfully:
 
-Before replacement, validation criteria are checked and you are informed of any conflicts, allowing you to change the replacement string or only replace the validated instances.
-
-![Confirm Replace](/help/sites-cloud/administering/content-fragments/assets/cf-managing-confirm-replace.png)
+![Confirm Find and Replace](/help/sites-cloud/administering/content-fragments/assets/cf-managing-confirm-replace.png)
 
 ## Check Out and Check In {#check-out-and-check-in}
 
