@@ -36,8 +36,8 @@ The next planned release is Thursday, August 6, 2026.
 
     For more information, see the following:
 
-    * [About using Smart Build in a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build) and [About using Smart Build in a non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build-non-production-pipeline)
-    * [Add a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code) and [Add a non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#configuring-non-production-pipelines).
+    * [About using Smart Build in a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#about-smart-build-production-pipeline) and [About using Smart Build in a non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build-non-production-pipeline)
+    * [Add a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md##adding-production-pipeline) and [Add a non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#configuring-non-production-pipelines).
 
 * **Content Copy: Cross Program and Forward Flow**  
     Cloud Manager **Content Copy**, which lets teams copy content between AEM environments without a deployment, includes two capabilities available to all programs. Cross Program support allows content to be copied across different Cloud Manager programs, not just within the same program. Forward Flow removes the directional restriction, allowing content to be copied from any environment to any other — including from lower environments upward.

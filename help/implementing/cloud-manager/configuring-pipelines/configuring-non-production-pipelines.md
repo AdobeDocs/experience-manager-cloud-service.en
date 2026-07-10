@@ -18,7 +18,7 @@ A user must have the **[Deployment Manager](/help/onboarding/cloud-manager-intro
 >
 >You can [edit pipeline settings](managing-pipelines.md) after the initial setup.
 
-## Add a new non-production pipeline
+## Add a non-production pipeline
 
 After you set up a program and create at least one environment in the Cloud Manager UI, you can add non-production pipelines. Use these pipelines to test code quality before you deploy to production environments.
 
