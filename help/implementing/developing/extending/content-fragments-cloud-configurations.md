@@ -173,5 +173,7 @@ Select the appropriate **Configuration** in the **Cloud Services** tab of the **
 >A configuration on the folder will be applied to all Content Fragments in that folder. 
 >
 >If no configuration is applied to a folder, then any configuration will only be inherited from the direct parent folder.
+>
+>If no Content Fragment Cloud Configuration is applied to a fragment (either directly, or through inheritance), the default editor settings are used.
 
 ![Apply configuration](/help/sites-cloud/administering/content-fragments/assets/cf-setup-apply-conf.png)
