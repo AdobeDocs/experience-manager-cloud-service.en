@@ -3,7 +3,6 @@ title: AEM Assets Activation report (Beta)
 description: Definitions for AEM Assets Activation report (Beta) metrics, covering activations (downloads, shares) and distributions (Dynamic Media, Sites)."
 role: Admin
 hide: true
-hidefromtoc: yes
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 ---
 
