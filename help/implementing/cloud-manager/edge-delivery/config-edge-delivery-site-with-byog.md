@@ -36,3 +36,22 @@ To pull code from any private Git repository already onboarded in Cloud Manager,
 1. Pick the branch to sync, and click **Sync**.
 
 Each commit on any branch now triggers an automatic sync. Use **Sync code** again whenever a full manual sync is required.
+
+## Authenticate git clone requests {#authenticate-git-clone-requests}
+
+You can clone your [!DNL Bring Your Own Git] repository from Cloud Manager using either an IMS token or the byogit secret that Cloud Manager generates when you configure the site. Both credentials authenticate against the clone endpoint, so you can use the secret that helix-admin already stores for [!DNL Edge Delivery Services] code sync.
+
+The clone endpoint accepts the credential in the `Authorization` header. Cloud Manager validates the byogit secret against the value stored for that repository. Requests that include neither a valid IMS token nor a valid byogit secret return a `401` response.
+
+>[!NOTE]
+>
+>Existing IMS-authenticated clone workflows are unaffected. The byogit secret is an additional option, not a replacement.
+
+**To clone the repository with the byogit secret:**
+
+1. Copy the secret that Cloud Manager returns when you configure the site.
+1. Run your clone command, and pass the secret in the `Authorization` header.
+
+   `git -c http.extraHeader="Authorization: <byogit-secret>"` clone `https://cm-repo.adobe.io/api/program/<program-id>/repository/<repository-id>.git`
+
+    Replace `<byogit-secret>` with the secret from Cloud Manager, and replace `<program-id>` and `<repository-id>` with the values from your program.
