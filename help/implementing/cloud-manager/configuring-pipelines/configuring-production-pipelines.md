@@ -55,7 +55,7 @@ After you have set up your program and have at least one environment using the [
 
     **Important Metric Failures Behavior** - During pipeline setup or edit, the **Deployment Manager** has the option of defining the behavior of the pipeline when an important failure is encountered in any of the quality gates. The available options are:
 
-    * **Ask every time** - Default setting. It requires manual intervention in any important failure.
+    * **Ask every time** - Default setting. It requires manual intervention for any important failure.
     * **Fail Immediately** - If selected, the pipeline is canceled whenever an important failure occurs. This process emulates a user manually rejecting each failure.
     * **Continue Immediately** - If selected, the pipeline proceeds automatically whenever an important failure occurs. This process emulates a user manually approving each failure.
 
@@ -91,11 +91,7 @@ A full-stack code pipeline simultaneously deploys back-end and front-end code bu
    * **Git Branch** - From the drop-down list, choose the branch in the selected repository the pipeline builds from. The default is `main`. The pipeline uses the chosen branch as the source for build and deployment. If necessary, click **Refresh** to update the list of available branches for the selected repository. Use this option if a recently created branch does not appear in the list.
    * **Build Strategy**
         * **Full Build** - Builds all modules in the repository every time
-        * BETA **Smart Build** - Builds only modules that have changed since the last commit.<br>Learn more about [using Smart Build in a non-production pipeline](#about-smart-build-non-production-pipeline).
-  
-          >[!IMPORTANT]
-          >
-          >Smart Build is available only for Code Quality pipelines and Dev Full Stack Code deployment pipelines.
+        * **Smart Build** - Builds only modules that have changed since the last commit.<br>Learn more about [using Smart Build in a non-production pipeline](#about-smart-build-non-production-pipeline).
    * **Ignore Web Tier Configuration** - When checked, the pipeline does not deploy your web tier configuration.
    * **Pause before deploying to Production** - Pauses the pipeline before deploying to production.
    * **Scheduled** - Lets the user enable the scheduled production deployment.
@@ -167,13 +163,9 @@ A targeted deployment deploys code only for selected parts of your AEM applicati
 
 The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
 
-## BETA: About using Smart Build in a production pipeline{#about-smart-build-production-pipeline}
+## About using Smart Build in a production pipeline{#about-smart-build-production-pipeline}
 
 **Smart Build** in Cloud Manager is an optimized build strategy for production pipelines. Smart Build reduces build times by caching modules and rebuilding only those modules that have changed since the last successful run. Unchanged modules are reused from cache, while only modified modules and their dependencies are rebuilt, improving efficiency for iterative development workflows.
-
->[!NOTE]
->
->Interested in this beta? Email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) with your Adobe OrgID and Program ID.
 
 >[!IMPORTANT]
 >

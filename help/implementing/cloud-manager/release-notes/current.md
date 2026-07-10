@@ -1,48 +1,46 @@
 ---
-title: Release Notes for Cloud Manager 2026.6.0
-description: Learn about the release of Cloud Manager 2026.6.0 in Adobe Experience Manager as a Cloud Service.
+title: Release Notes for Cloud Manager 2026.7.0
+description: Learn about the release of Cloud Manager 2026.7.0 in Adobe Experience Manager as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 ---
-# Release notes for Cloud Manager 2026.6.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release notes for Cloud Manager 2026.7.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Learn about the release of Cloud Manager 2026.6.0 in AEM (Adobe Experience Manager) as a Cloud Service.
+Learn about the release of Cloud Manager 2026.7.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
 See also the [current release notes for Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Release dates {#release-date}
 
-The release date for Cloud Manager 2026.6.0 in AEM as a Cloud Service is Thursday, June 4, 2026. 
+The release date for Cloud Manager 2026.7.0 in AEM as a Cloud Service is Thursday, July 9, 2026. 
 
-The next planned release is Thursday, July 9, 2026.
-
-
-## What's new - Cloud Manager {#cloud-manager-whats-new}
-
-* **Customer-managed keys (CMK) self-service**
-    Customers can now configure Customer-Managed Keys directly from Cloud Manager, without requiring Adobe support involvement. A new CMK option is available during program creation or program edit, and on the Environment details page.
-
-    See [Create Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#create) and [Edit Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing).
-
-    CMK status is displayed on My Programs cards and in the license dashboard, giving administrators clear visibility into encryption configuration across all environments. This approach simplifies compliance workflows for organizations that require control over their own encryption keys.
-
-    ![My Programs card showing a Customer Managed Key icon](/help/implementing/cloud-manager/release-notes/assets/cmk-status-on-program-card.png)
-    *My Programs card*
-  
-    ![Set up for production dialog box showing Security tab with Customer Managed Keys option selected](/help/implementing/cloud-manager/release-notes/assets/cmk-security-tab-in-set-up-for-production-dlg.png)
-    *Customer Managed Keys selected in the Security tab of the Set up for production dialog box*
-
-    ![Displaying the number of Customer Managed Keys available in the license dashboard](/help/implementing/cloud-manager/release-notes/assets/cmk-license-dashboard.png)
-    *Showing the number of Customer Managed Keys available in the license dashboard*
+The next planned release is Thursday, August 6, 2026.
 
 
-* **Environment variable limit increased to 400**
-    Cloud Manager now supports up to 400 environment variables per environment, doubled from the previous limit of 200. 
+## New features - Cloud Manager {#cloud-manager-whats-new}
 
-    Pipeline variables remain capped at 200. The UI enforces the correct limit per context and prevents additions beyond the allowed threshold.
+* **Bring Your Own Git (BYOG) — secret-based authentication for Git clone**
 
-    This change supports customers with more complex deployment configurations that require a larger number of environment-specific settings. <!--CMGR-76755 · CMGR-76753 -->
+    You can now authenticate Git clone requests to your [!DNL Bring Your Own Git] repository using the byogit secret that Cloud Manager generates, in addition to an IMS token. This functionality lets [!DNL Edge Delivery Services] customers use the same credential that helix-admin already stores for code sync. Existing IMS-authenticated clone workflows are unaffected.
+    
+    See [Authenticate git clone requests](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md#authenticate-git-clone-requests).
+
+* **VPN Network Infrastructure — BGP routing and multiple connections**  
+    The Advanced Networking VPN network infrastructure API now supports BGP (Border Gateway Protocol) dynamic routing alongside the existing static routing. Teams can configure BGP per connection by providing the customer-side BGP Autonomous System Number and peering address; Cloud Manager handles route learning dynamically — no static prefixes required.
+
+    The previous limit of one VPN connection per infrastructure has also been removed. Multiple connections are now supported within the same infrastructure, and static and BGP connections can coexist. This gives enterprise networking teams more flexibility when designing VPN topologies for AEM Cloud Service environments.
+
+* **Improved build performance with module caching**
+    A new build model compiles only changed modules (rather than the entire repository) using module-level caching to improve build performance. It applies to production pipelines. You control which production pipelines use **Smart Build**.
+
+    For more information, see the following:
+
+    * [About using Smart Build in a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build) and [About using Smart Build in a non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build-non-production-pipeline)
+    * [Add a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code) and [Add a non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#configuring-non-production-pipelines).
+
+* **Content Copy: Cross Program and Forward Flow**  
+    Cloud Manager **Content Copy**, which lets teams copy content between AEM environments without a deployment, includes two capabilities available to all programs. Cross Program support allows content to be copied across different Cloud Manager programs, not just within the same program. Forward Flow removes the directional restriction, allowing content to be copied from any environment to any other — including from lower environments upward.
 
 
 ## Beta programs {#private-beta-program}
@@ -51,7 +49,7 @@ To get exclusive access to upcoming features before their general release, you c
 
 >[!IMPORTANT]
 >
->Beta releases contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support the beta releases. Customers use beta releases at their own risk and should not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Any use of the beta releases is entirely at the customer's own risk.
+>Beta releases contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support the beta releases. Customers use beta releases at their own risk; do not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Any use of the beta releases is entirely at the customer's own risk.
 
 See also [AEM Beta programs](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
 
@@ -77,6 +75,8 @@ For more information, see [Flexible Publish Tier (Beta)](/help/implementing/clou
 
 To join the beta, email [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com) with your Adobe Organization ID and Program ID.
 
+<!-- 
+OLD
 ### Improved build performance with module caching {#quick-build-cm-pipelines}
 
 A new build model compiles only changed modules (rather than the entire repository) using module-level caching to improve build performance. It applies to production pipelines. You control which production pipelines use **Smart Build**.
@@ -88,8 +88,6 @@ For more information, see the following:
 
 To join the Beta, email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) with your Adobe Organization ID and Program ID.
 
-<!-- 
-OLD
 ### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
 
 [Experience Hub](/help/experience-hub.md) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI Extensions so they can help you enable them in Experience Hub with minimal effort.
@@ -112,12 +110,20 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 ## Bug fixes {#bug-fixes}
 
-* **Environment stuck in Updating with no active operation**
-    An issue is now resolved where environments become permanently stuck in an Updating state even when no pipeline run or configuration change is in progress. Affected environments can now be managed normally without requiring manual intervention from Adobe support. (CMGR-77133)
-* **Advanced Networking - wrong port-forwarding rule deleted on duplicate source ports**
-    When two port-forwarding rules in Advanced Networking share the same source port (portOrig), deleting one rule incorrectly removes the other. Cloud Manager now correctly identifies and removes only the intended rule. (CMGR-77019)
+* Core credits not released when both prod-group environments complete soft delete concurrently. This issue has been resolved. Credits are now correctly released regardless of the order in which concurrent deletions complete. (CMGR-77845)
 
-<!-- There are no significant bug fixes in the June 2026 Cloud Manager release. -->
+* Content Hub credit orphaned after environment soft delete followed by hard delete. Cloud Manager now correctly releases the Content Hub credit when the associated environment is fully removed. (CMGR-77585)
+
+* aio cloudmanager:tail-log CLI command disconnects at log rotation instead of reconnecting. The command now reconnects automatically when a log rotation is detected. (CMGR-76557)
+
+* Go-Live complete dialog content not scrollable in Program Overview. The dialog box now scrolls correctly, ensuring all content is accessible regardless of screen size. (CMGR-76405)
+
+* Custom domain mapping fails on newly created RDE environments. After creating a new Rapid Development Environment (RDE), customers encountered the error, "Environment status is not valid for domain config change," when attempting to add a custom domain mapping immediately after provisioning. 
+Cloud Manager now correctly reflects the environment's ready state before any domain mapping is attempted. (CMGR-75904)
+
+* Deleting a DV certificate and recreating it for the same domain fails with "existing certificate" error. When customers deleted a domain-validated (DV) certificate and then tried to create a new one for the same domain, Cloud Manager returned the error "There's an existing certificate that covers all the domains." As a result, it blocked the new certificate from being issued. The deletion appeared successful in the UI but the certificate was not fully removed internally, leaving the domain locked. This issue is now resolved. (CMGR-72784)
+
+<!-- There are no significant bug fixes in the July 2026 Cloud Manager release. -->
 
 <!-- ## Known issues {#known-issues} -->
 
