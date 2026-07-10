@@ -3,7 +3,6 @@ title: AEM Assets Activation report (Beta)
 description: Definitions for AEM Assets Activation report (Beta) metrics, covering activations (downloads, shares) and distributions (Dynamic Media, Sites)."
 role: Admin
 hide: true
-hidefromtoc: yes
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 ---
 
@@ -27,7 +26,7 @@ This is just the start of your journey with AEM Assets, and these metrics will k
 | | Metric | Definition |
 |---|---|---|
 | **Activations** | **Downloads (Assets View)** | The number of times assets are downloaded directly from the core AEM Assets environment, for example, by internal users browsing and downloading files through the Assets view interface. |
-| | **Link Share (Assets View)** | The number of shares (via shareable links generated) from within AEM Assets View in order to give external or unauthenticated users direct access to specific assets, folders, or collections without requiring to login. |
+| | **Shares (Assets View)** | The number of shares (via shareable links generated) from within AEM Assets View in order to give external or unauthenticated users direct access to specific assets, folders, or collections without requiring to login. |
 | | **Downloads (Content Hub)** | The number of times assets are downloaded by users through Content Hub, the self-service UI that lets broader teams browse and download approved, brand-ready assets. |
 | | **Shares (Content Hub)** | The number of shares (via shareable links generated) from within Content Hub in order to give other users direct access to selected assets or collections. |
 | | **Activate to Content Hub** | The action of approving/publishing an asset from AEM Assets so it becomes available to end users in Content Hub. Only approved assets appear in Content Hub. |
