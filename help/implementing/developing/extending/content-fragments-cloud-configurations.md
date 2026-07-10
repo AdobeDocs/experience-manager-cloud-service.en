@@ -116,7 +116,9 @@ Use this option to configure the Rich Text Editor (RTE):
 
 >[!NOTE]
 >
->The configuration works on the same basis as for the Universal Editor. Though there are two features that are not supported for a Content Fragment Cloud Configuration:
+>The configuration works on the same basis as for the Universal Editor, though for the Content Fragment Cloud Configuration all configuration takes place in the UI. 
+>
+>There are two features that are not supported for a Content Fragment Cloud Configuration:
 >
 >* [hideInline](/help/implementing/universal-editor/configure-rte.md#action)
 >
