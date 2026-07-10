@@ -10,14 +10,15 @@ solution: Experience Manager Sites
 
 With a Content Fragment Cloud Configuration you can customize various aspects of the [new Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md). 
 
-After [creating](#create-a-content-fragment-cloud-configuration) and [defining](#define-the-content-fragment-cloud-configuration) the configuration you also [apply the Cloud Configuration to your individual Assets folders](#apply-the-configuration-to-your-folder), so that it is applied to all the Content Fragments in that folder.
+After [creating](#create-a-content-fragment-cloud-configuration) and [defining](#define-the-content-fragment-cloud-configuration) the configuration you also [assign the Cloud Configuration to your individual Assets folders](#apply-the-configuration-to-your-folder), so that it is applied to all the Content Fragments in that folder.
 
 >[!NOTE]
 >
 >The Content Fragment Cloud Configurations do not impact:
 >
 >* the original Content Fragment editor
->* the Content Fragment console or the Assets console
+>* the Content Fragment console 
+>* the Assets console
 
 >[!NOTE]
 >
@@ -42,9 +43,14 @@ To create a configuration for customizing the new Content Fragment editor:
 
 After creating your configuration you can open the **Properties** to define the settings for:
 
-* **[Disable Publishing](#disable-publishing)**
-* **[Configure the Rich Text Editor (RTE)](#configure-the-rte)**
-* **[Configure the Content Reference Asset Selector](#configure-the-content-reference-asset-selector)**
+* **Capabilites**
+  * **[Disable Publishing](#disable-publishing)**
+* **Filters**
+  * **[Configure the Rich Text Editor (RTE)](#configure-the-rte)**
+  * **[Configure the Content Reference Asset Selector](#configure-the-content-reference-asset-selector)**
+
+
+![Content Fragment Cloud Configuration](/help/implementing/developing/extending/assets/cf-cloud-configuration.png)
 
 >[!NOTE]
 >
@@ -52,11 +58,11 @@ After creating your configuration you can open the **Properties** to define the 
 
 >[!NOTE]
 >
->If a new option is added while a configuration is being edited then a refresh is needed to see the new feature.
+>If a new option is added while a configuration is being edited then a refresh is needed to see the new option.
 
 ### Disable Publishing {#disable-publishing}
 
-Use this option to disable publishing from the editor:
+Use this option to disable publishing actions from the editor:
 
 >[!NOTE]
 >
@@ -77,7 +83,7 @@ Use this option to configure the Rich Text Editor (RTE):
 
 1. Navigate to your Content Fragment Cloud Configuration.
 1. Select and open the **Properties**.
-1. Select the **Filter** tab.
+1. Select the **Filters** tab.
 1. Select the **RTE** tab.
 1. Select whether you want to configure the **Toolbar** or **Actions**. In both cases use the **i** icons for more information on each field:
 
@@ -128,11 +134,11 @@ Use this option to configure the Rich Text Editor (RTE):
 
 ### Configure the Content Reference Asset Selector{#configure-the-content-reference-asset-selector}
 
-Use this option to configure the Asset Selector for Content **Reference** fields:
+Use this option to configure the Asset Selector for **Content Reference** fields:
 
 1. Navigate to your Content Fragment Cloud Configuration.
 1. Select and open the **Properties**.
-1. Select the **Filter** tab.
+1. Select the **Filters** tab.
 1. Select the **Assets** tab.
 1. Configure as required. Use the **i** icons for more information on each field:
 
