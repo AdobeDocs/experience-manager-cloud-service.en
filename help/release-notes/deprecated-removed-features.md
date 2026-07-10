@@ -437,7 +437,7 @@ You might want to pick a different version, depending on your requirements.
 
 ### Removal of `com.google.common*` {#com.google.common}
 
-Remove the usage of Google Guava Core Libraries or include an appropriet version in your project. In many cases the usage of this library can be replaced with either collection classes from the JDK or Apache Commons Collections4. If you do not find any replacement, include the latest version of the Google Guave Core Library in your project. If you are using an old version of [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), make sure to update to the latest version.
+Remove the usage of Google Guava Core Libraries or include an appropriate version in your project. In many cases the usage of this library can be replaced with either collection classes from the JDK or Apache Commons Collections4. If you do not find any replacement, include the latest version of the Google Guava Core Library in your project. If you are using an old version of [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), make sure to update to the latest version.
 
 Action list:
 
