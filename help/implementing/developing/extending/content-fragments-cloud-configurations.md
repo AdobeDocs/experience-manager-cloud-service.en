@@ -50,6 +50,10 @@ After creating your configuration you can open the **Properties** to define the 
 >
 >When defining the details of a configuration see the **i** icons for more information on each field.
 
+>[!NOTE]
+>
+>If a new option is added while a configuration is being edited then a refresh is needed to see the new feature.
+
 ### Disable Publishing {#disable-publishing}
 
 Use this option to disable publishing from the editor:
@@ -104,7 +108,7 @@ Use this option to configure the Rich Text Editor (RTE):
 >
 >RTE Toolbar:
 >
->The RTE Toolbar definition is split into sub-sections; for example, the sub-sections include **Format**, **Alignment**, and others. 
+>The RTE Toolbar definition is split into sub-sections; including for example, **Format**, **Alignment**, and others. 
 >
 >If one, or more, options are selected for a sub-section, then *only* the selected options will be displayed in the editor. 
 >
@@ -112,17 +116,13 @@ Use this option to configure the Rich Text Editor (RTE):
 
 >[!NOTE]
 >
->Your development team can add features to the RTE configuration. 
->
->This works on the same basis as for the Universal Editor. Though there are two features that are not supported for a Content Fragment Cloud Configuration:
+>The configuration works on the same basis as for the Universal Editor. Though there are two features that are not supported for a Content Fragment Cloud Configuration:
 >
 >* [hideInline](/help/implementing/universal-editor/configure-rte.md#action)
 >
 >* [Unsupported HTML](/help/implementing/universal-editor/configure-rte.md#unsupported-html)
 >
 >See [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md) for more details. 
->
->If a new feature is added while a configuration is being edited then a refresh is needed to see the new feature.
 
 ### Configure the Content Reference Asset Selector{#configure-the-content-reference-asset-selector}
 
@@ -166,9 +166,4 @@ Select the appropriate **Configuration** in the **Cloud Services** tab of the **
 >
 >If no configuration is applied to a folder, then any configuration will only be inherited from the direct parent folder.
 
-<!-- new screenshot needed -->
-
-<!--
-![Apply cloud configuration](/help/sites-cloud/administering/content-fragments/assets/cf-folder-apply-cloud-configuration.png)
--->
-
+![Apply configuration](/help/sites-cloud/administering/content-fragments/assets/cf-setup-apply-conf.png)
