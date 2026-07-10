@@ -22,7 +22,7 @@ Together, these metrics connect internal asset activity to external reach and en
 
 This is just the start of your journey with AEM Assets, and these metrics will keep evolving alongside it. We'd love your feedback as you put them to use, so we can keep making this reporting more useful for you.
 
-**Note**: If you wish to review these with Adobe Product/Engineering or have feedback, send an email `GRP-AEM-DAM-METRICS-BETA@ADOBE.COM`.
+**Note**: If you wish to review these with Adobe Product/Engineering or have feedback, send an email to `GRP-AEM-DAM-METRICS-BETA@ADOBE.COM`.
 
 | | Metric | Definition |
 |---|---|---|
