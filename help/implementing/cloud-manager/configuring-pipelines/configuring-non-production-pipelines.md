@@ -18,7 +18,7 @@ A user must have the **[Deployment Manager](/help/onboarding/cloud-manager-intro
 >
 >You can [edit pipeline settings](managing-pipelines.md) after the initial setup.
 
-## Add a new non-production pipeline
+## Add a non-production pipeline
 
 After you set up a program and create at least one environment in the Cloud Manager UI, you can add non-production pipelines. Use these pipelines to test code quality before you deploy to production environments.
 
@@ -84,11 +84,11 @@ To finish the configuration of the full-stack code non-production pipeline, do t
     * **Git Branch** - From the drop-down list, choose the branch in the selected repository the pipeline builds from. The default is `main`. The pipeline uses the chosen branch as the source for build and deployment. If necessary, click **Refresh** to update the list of available branches for the selected repository. Use this option if a recently created branch does not appear in the list.
     * **Build Strategy**
       * **Full Build** - Builds all modules in the repository every time
-      * BETA **Smart Build** - Builds only modules that have changed since the last commit.<br>Learn more about [using Smart Build in a non-production pipeline](#about-smart-build-non-production-pipeline).
+      * **Smart Build** - Builds only modules that have changed since the last commit.<br>Learn more about [using Smart Build in a non-production pipeline](#about-smart-build-non-production-pipeline).
 
-        >[!IMPORTANT]
+        >[!NOTE]
         >
-        >Smart Build is available only for Code Quality pipelines and Dev Full Stack Code deployment pipelines.
+        >Smart Build is available for Code Quality pipelines and all Full Stack deployment pipelines (Dev, Stage, Prod).
 
     * **Ignore Web Tier Configuration** check box - When checked, the pipeline does not deploy your web tier configuration.
 
@@ -171,7 +171,7 @@ The steps to complete the creation of your non-production, targeted deployment p
 The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
 
 
-## About using Smart Build in a non-production pipeline{#about-smart-build-non-production-pipeline}
+## About using Smart Build in your pipeline{#about-smart-build-non-production-pipeline}
 
 **Smart Build** in Cloud Manager is an optimized build strategy for non-production pipelines. Smart Build reduces build times by caching modules and rebuilding only those modules that have changed since the last successful run. Unchanged modules are reused from cache, while only modified modules and their dependencies are rebuilt, improving efficiency for iterative development workflows.
 
@@ -179,6 +179,7 @@ Smart Build is currently available only for the following:
 
 * Code Quality pipelines.
 * Dev full-stack deployment pipelines.
+* Stage and Production full-stack deployment pipelines
 
 >[!NOTE]
 >
