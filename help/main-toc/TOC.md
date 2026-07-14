@@ -146,6 +146,8 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2026 {#2026}
+      + [2026.6.0](/help/implementing/cloud-manager/release-notes/2026/2026-6-0.md)
+      + [2026.5.0](/help/implementing/cloud-manager/release-notes/2026/2026-5-0.md)
       + [2026.4.0](/help/implementing/cloud-manager/release-notes/2026/2026-4-0.md)
       + [2026.3.0](/help/implementing/cloud-manager/release-notes/2026/2026-3-0.md)
       + [2026.2.0](/help/implementing/cloud-manager/release-notes/2026/2026-2-0.md)
@@ -261,6 +263,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.07.02 Release Notes](/help/release-notes/universal-editor/2026/2026-07-02.md)
       + [2026.06.25 Release Notes](/help/release-notes/universal-editor/2026/2026-06-25.md)
       + [2026.06.18 Release Notes](/help/release-notes/universal-editor/2026/2026-06-18.md)
       + [2026.06.11 Release Notes](/help/release-notes/universal-editor/2026/2026-06-11.md)
@@ -649,6 +652,7 @@ user-guide-title: AEM as a Cloud Service
     + [Color tags for images](/help/assets/color-tag-images.md)
     + [Manage PDF documents](/help/assets/manage-pdf-documents.md)
     + [Micro-Frontend Destination Selector](/help/assets/destination-selector.md)
+    + {hide-from-toc} [AEM Assets Activation Report (Beta)](/help/assets/aem-assets-activation-report.md)
   + Configure, administer, and extend [!DNL Assets] {#admin}
     + [Detect duplicate assets](/help/assets/detect-duplicate-assets.md)
     + [Developer docs and APIs references](/help/assets/developer-reference-material-apis.md)
