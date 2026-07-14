@@ -199,6 +199,13 @@ Dynamic Media with OpenAPI capabilities now lets you upload custom thumbnails fo
 
 * **Configure Bound and Unbound Variables for Associate UI**: Bound and unbound variables in **Text** components can now be configured for the Associate UI. Authors choose whether associates edit the entire text block inline in the document preview or enter values for individual variables in the data entry panel. Duplicate variable names propagate values across all matching occurrences in the preview. For more information, see [Configure Bound and Unbound Variables for Associate UI](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md).
 
+#### Additional CAPTCHA options for bot protection
+
+AEM Forms now supports two additional CAPTCHA solutions for protecting Adaptive Forms from bots and spam submissions, in addition to the already available Google reCAPTCHA. This gives you more choice and flexibility in securing your forms.
+
+* **Cloudflare Turnstile**: A frictionless CAPTCHA that verifies users through a simple challenge without requiring explicit interaction, improving the user experience. For more information, see [Use Turnstile in an Adaptive Form for Core Components](/help/forms/integrate-adaptive-forms-turnstile-core-components.md) and [Use Turnstile in an Adaptive Form for Foundation Components](/help/forms/integrate-adaptive-forms-turnstile.md).
+* **hCaptcha**: A privacy-focused CAPTCHA that offers a user-friendly alternative with an emphasis on data privacy, balancing security and user experience. For more information, see [Use hCaptcha in an Adaptive Form for Core Components](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md) and [Use hCaptcha in an Adaptive Form for Foundation Components](/help/forms/integrate-adaptive-forms-hcaptcha.md).
+
 ### Early Adopter Features
 
 #### Document of Record for forms embedded in AEM Sites
