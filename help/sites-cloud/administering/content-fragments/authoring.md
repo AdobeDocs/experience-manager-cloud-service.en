@@ -16,6 +16,8 @@ There are two editors available for Content Fragments. The editor described in t
 * has been developed for headless content delivery (though it can be used for all scenarios)
 * is available from the **Content Fragments** console
 
+<!-- CQDOC-23782 -->
+
 This editor provides:
 
 * [Auto-saving](#saving-autosaving), to prevent accidental loss of edits.
@@ -420,6 +422,8 @@ For example:
 
 ## View Properties, and Tags {#view-properties-tags}
 
+<!-- CQDOC-23782 -->
+
 In the properties tab of the right panel, properties (metadata) and tags can be viewed. The properties can be either:
 
 * for the **Content Fragment** - if **Main** is currently selected
@@ -430,6 +434,8 @@ In the properties tab of the right panel, properties (metadata) and tags can be 
 ![Content Fragment Editor - Properties](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-properties.png) 
 
 ### Edit Properties and Tags {#edit-properties-tags}
+
+<!-- CQDOC-23782 -->
 
 In the properties tab (right panel) you can also edit:
 

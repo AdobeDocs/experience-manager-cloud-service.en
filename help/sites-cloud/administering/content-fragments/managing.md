@@ -48,6 +48,8 @@ Selecting **Content Fragments** opens the console in a new tab.
 
 ![Content Fragments console - Overview](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-overview.png)
 
+<!-- CQDOC-23782 --> 
+
 Here you can see that there are three main areas:
 
 * The top toolbar
@@ -147,6 +149,9 @@ The main/right panel (table view) of the console provides a range of information
     To open a dialog with detailed information about workflows (past and current) for the fragment.:
 
     ![Content Fragments console - Workflows dialog](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-workflows-dialog.png)
+
+* **Properties** and **Metadata**
+
 
 ## Actions {#actions}
 
@@ -368,6 +373,8 @@ FolderC
 
 ## View and Manage Tags {#manage-tags}
 
+<!-- CQDOC-23782 -->
+
 From the Content Fragments console you can view any applied tags in the **Tags** column; after ensuring that [the column is showing](#select-columns-console). 
 
 ### Manage Tags (Console) {#manage-tags-console}
@@ -384,6 +391,8 @@ To manage the tags:
 1. **Save** updates. This will return you to the console.
 
 ### Viewing, and Editing, Tags (Editor) {#viewing-and-editing-tags}
+
+<!-- CQDOC-23782 -->
 
 You can also view, and edit, the tags applied to a fragment using the [Properties](/help/sites-cloud/administering/content-fragments/authoring.md) tab of the editor. The information shown differs between **Main** and any **Variations**.
 
