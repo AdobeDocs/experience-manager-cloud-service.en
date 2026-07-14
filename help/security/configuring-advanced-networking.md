@@ -427,9 +427,7 @@ Most VPN devices with IPSec technology are supported. Consult the information in
 
 A VPN infrastructure supports multiple connections, so you can connect to more than one on-premise network or data center from the same infrastructure. Adobe recommends a maximum of 20 connections per infrastructure.
 
-<!--NEW
-Each connection uses either static routing or BGP dynamic routing, and both types can coexist within the same infrastructure. For more information on configuring routing, see [Add a VPN connection]().
--->
+<!-- NEW Each connection uses either static routing or BGP dynamic routing, and both types can coexist within the same infrastructure. For more information on configuring routing, see [Add a VPN connection](). -->
 
 To resolve private host names, DNS resolvers must be listed in the gateway address space.
 
