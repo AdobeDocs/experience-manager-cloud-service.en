@@ -126,6 +126,14 @@ The integration enables users to quickly discover and search for assets based on
 >
 >This feature is available as Limited Availability feature and requires licenses for Workfront Planning and GenStudio for Performance Marketing. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
+**AI-powered content onboarding and content supply chain automation**
+
+Use an AI-powered agent to configure and automate content migrations and recurring synchronization between supported content repositories. The agent guides you through connection setup, metadata mapping, and validation with dry runs before transferring content. By eliminating manual processes and custom integrations, this capability accelerates onboarding, simplifies ongoing synchronization, and helps keep assets and metadata consistent across systems.
+
+>[!IMPORTANT]
+>
+>This feature is available as Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+
 
 ### New features in Dynamic Media with OpenAPI capabilities {#new-features-dynamic-media-openapi}
 
