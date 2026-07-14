@@ -123,15 +123,17 @@ See:
 
 #### Set maximum size for GraphQL query cache {#set-maximum-size-for-graphql-query-cache}
 
-During the execution of a GraphQL query, AEM maintains a per-request, in-memory cache of the deserialized Content Fragment data (path - fragment field map). This cache:
+During the execution of a GraphQL query, AEM maintains an in-memory cache of the deserialized Content Fragment data (path - fragment field map) for the duration of that request. 
+
+This cache:
 
 * is scoped to a single GraphQL request and discarded when the request completes.
 * avoids re-processing the same fragment when it appears multiple times; for example, via references.
-* can consume significant heap when queries resolve many large fragments with many fields.
+* can consume significant heap when queries resolve deeply nested fragments with many fields.
 
 If you experience high memory usage on the publish environment, or out-of-memory issues under concurrent GraphQL load (especially with complex nested reference queries) you may need to configure the maximum cache size. 
 
-To configure the maximum cache size, define the [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md):
+To configure the maximum cache size, define the Cloud Manager Environment Variable:
 
 | Property | Value |
 |--- |--- |
@@ -139,15 +141,15 @@ To configure the maximum cache size, define the [Cloud Manager Environment Varia
 | Type | Integer |
 | Set via | [Cloud Manager - Environment Configuration - Environment Variables](/help/implementing/cloud-manager/environment-variables.md) |
 | Default | `-1` (unbounded cache; bounded mode not active) |
-| Valid values | Positive integer = maximum number of fragment entries cached per request.<br> `-1` or any non-positive value keeps the unbounded cache. |
+| Values | Positive integer = maximum number of fragment entries cached per request.<br> `-1` or any non-positive value keeps the unbounded cache. |
 
 Consider:
 
 * First try using persisted GraphQL queries and Dispatcher/CDN caching to reduce the origin load.
 * Request only the fields you need in your GraphQL selection set.
-* If the publish memory remains high, set a positive maximum size for the cache, then tune based on your workload.
+* If the publish memory remains high, set a positive maximum size for `AEM_HEADLESS_GRAPHQL_BOUNDED_DATA_CACHE_MAXIMUM_SIZE`, then tune based on your workload.
   * Start conservatively, monitor heap and query latency, and adjust as needed.
-* Bounding the cache reduces peak memory per request, but may increase processing time if evicted fragments are needed again within the same query.
+  * Bounding the cache reduces peak memory per request, but may increase processing time if evicted fragments are needed again within the same query.
 
 #### Use GraphQL pagination {#use-aem-graphql-pagination}
 
