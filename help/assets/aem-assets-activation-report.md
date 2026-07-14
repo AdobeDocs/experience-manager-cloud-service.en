@@ -19,7 +19,7 @@ This article breaks down the metrics behind that journey, grouped the way your t
 
 Together, these metrics connect internal asset activity to external reach and engagement, helping you see how your content operations translate into real business outcomes.
 
-This is just the start of your journey with AEM Assets, and these metrics will keep evolving alongside it. We'd love your feedback as you put them to use, so we can keep making this reporting more useful for you.
+This is just the start of your journey with AEM Assets, and these metrics will keep evolving alongside it. We would need your feedback as you put them to use, so we can keep making this reporting more useful for you.
 
 **Note**: If you wish to review these with Adobe Product/Engineering or have feedback, send an email to `GRP-AEM-DAM-METRICS-BETA@ADOBE.COM`.
 
