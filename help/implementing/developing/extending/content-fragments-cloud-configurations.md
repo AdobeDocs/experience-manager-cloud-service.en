@@ -56,10 +56,6 @@ After creating your configuration you can open the **Properties** to define the 
 >
 >When defining the details of a configuration see the **i** icons for more information on each field.
 
->[!NOTE]
->
->If a new option is added while a configuration is being edited then a refresh is needed to see the new option.
-
 ### Disable Publishing {#disable-publishing}
 
 Use this option to disable publishing actions from the editor:
@@ -127,10 +123,16 @@ Use this option to configure the Rich Text Editor (RTE):
 >There are two features that are not supported for a Content Fragment Cloud Configuration:
 >
 >* [hideInline](/help/implementing/universal-editor/configure-rte.md#action)
+>  As the new Content Fragment editor only supports component editing, and not inline editing, this feature is not applicable and cannot be configured.
 >
 >* [Unsupported HTML](/help/implementing/universal-editor/configure-rte.md#unsupported-html)
+>  Unsupported HTML is supported in the new Content Fragment editor, but is always set to true and cannot be configured.
 >
 >See [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md) for more details. 
+
+>[!NOTE]
+>
+>If a Cloud Configuration (with options selected) is already applied, and a new option is added to that Cloud Configuration, then the new option must be explicitly selected to be visible and available in the RTE toolbar of the editor.
 
 ### Configure the Content Reference Asset Selector{#configure-the-content-reference-asset-selector}
 
