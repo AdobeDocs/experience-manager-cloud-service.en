@@ -1,18 +1,18 @@
 ---
-title: AI-powered content onboarding and repository synchronization
-description: Learn how to automate one-time content migrations and recurring synchronization between Adobe and supported third-party repositories.
+title: AI-powered content onboarding and content supply chain automation
+description: Learn how to automate one-time content migrations and content supply chain automation between Adobe and supported third-party repositories.
 role: Admin
 hide: true
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 ---
 
-# AI-powered content onboarding and repository synchronization {#ai-powered-content-onboarding-repository-synchronization}
+# AI-powered content onboarding and content supply chain automation {#ai-powered-content-onboarding-content-supply-chain-automation}
 
 Organizations often store digital assets and metadata across multiple repositories, such as digital asset management (DAM) systems, cloud storage services, and content platforms. Migrating content to a new system or keeping multiple repositories synchronized typically requires manual effort or custom integrations that can be difficult to build and maintain.
 
 This capability helps you automate one-time content migrations and recurring synchronization between supported repositories. An AI-powered agent guides you through configuring content transfers by proposing repository connections, metadata mappings, and transfer settings, reducing the effort required to move and synchronize content across systems.
 
-## Benefits {#benefits-ai-powered-content-onboarding-repository-synchronization}
+## Benefits {#benefits-ai-powered-content-onboarding-content-supply-chain-automation}
 
 Automating content onboarding and synchronization provides the following benefits:
 
@@ -38,7 +38,7 @@ Each configured transfer is called a **connection**. A connection uses **gateway
 
 Runs are stateful. They track previously transferred assets and metadata so that subsequent runs transfer only new or modified content instead of processing the entire repository again.
 
-## Key capabilities {#key-capabilities-ai-powered-content-onboarding-repository-synchronization}
+## Key capabilities {#key-capabilities-ai-powered-content-onboarding-content-supply-chain-automation}
 
 - **Identity mapping**: Maintains the relationship between assets in the source and destination repositories across multiple runs.
 
@@ -88,7 +88,7 @@ Keep content synchronized between cloud storage and a DAM by configuring a recur
 
 Reduce manual content movement by automating transfers between repositories used throughout your organization's content lifecycle.
 
-## When to use this capability {#when-to-use-ai-powered-content-onboarding-repository-synchronization}
+## When to use this capability {#when-to-use-ai-powered-content-onboarding-content-supply-chain-automation}
 
 This capability is well suited for:
 
@@ -98,7 +98,7 @@ This capability is well suited for:
 - Metadata and taxonomy mapping during content transfers.
 - Automating content movement across multiple repositories.
 
-## When not to use this capability {#when-not-to-use-ai-powered-content-onboarding-repository-synchronization}
+## When not to use this capability {#when-not-to-use-ai-powered-content-onboarding-content-supply-chain-automation}
 
 This capability is not intended for:
 
