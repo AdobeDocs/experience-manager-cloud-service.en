@@ -633,4 +633,7 @@ The **Fields** panel lists all fields within the Content Fragment. The icon indi
 
 * See the Assets documentation for full information about the [original Content Fragment editor](/help/assets/content-fragments/content-fragments-variations.md) - it is available from both the **Assets** console and the **Content Fragments** console.
 
-* Your project team can customize the editor if necessary. See [Customizing the Content Fragment Console and Editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md) for further details.
+* Your project team can configure and customize the editor if necessary. For further details see:
+
+  * [Customizing the Content Fragment Console and Editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
+  * [Content Fragments - Cloud Configurations](/help/implementing/developing/extending/content-fragments-cloud-configurations.md)
