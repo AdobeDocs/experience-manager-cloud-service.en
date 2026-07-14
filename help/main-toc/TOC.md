@@ -346,6 +346,8 @@ user-guide-title: AEM as a Cloud Service
   + [Principal View for Permissions Management](/help/security/touch-ui-principal-view.md)
   + [Best Practices for Sling Service User Mapping and Service User Definition](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
   + [Customer Managed Keys for Adobe as a Cloud Service](/help/security/customer-managed-keys.md)
+  + [Security Health for AEM as a Cloud Service](/help/security/security-health.md)
+  + [Penetration Tests for AEM as a Cloud Service](/help/security/penetration-tests.md)
 + Experience Hub {#experience-hub}
   + [About Experience Hub](/help/experience-hub.md)
 + Onboarding {#onboarding}
