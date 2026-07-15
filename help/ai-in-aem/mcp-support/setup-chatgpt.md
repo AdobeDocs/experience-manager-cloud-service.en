@@ -7,7 +7,14 @@ exl-id: 1f116225-168b-483c-9df6-c752a573b57b
 ---
 # Setting Up OpenAI ChatGPT with AEM MCP {#setup-chatgpt}
 
-Follow these steps to connect OpenAI ChatGPT to AEM's MCP servers.
+This article covers two separate ways to use OpenAI ChatGPT with AEM:
+
+- Manually configure one or more of AEM’s MCP servers in ChatGPT (the servers described at [Using MCP with AEM as a Cloud Service — MCP servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#mcp-servers)).
+- Install the Adobe Experience Manager plugin from the ChatGPT plugin marketplace. It currently has feature parity with Content MCP Server and will expose a growing subset of tools available in AEM's MCP servers.
+
+## Manually configure AEM’s MCP servers in ChatGPT {#manual-configure-aems-mcp-servers-in-chatgpt}
+
+This section describes the **manual configuration** approach, where you add one or more of AEM’s MCP servers to ChatGPT as custom apps or connectors.
 
 * Add one or more AEM MCP server URLs in the area where MCP connections or tools are configured.
 * Trigger the connection and sign in with your Adobe ID when redirected.
@@ -48,3 +55,27 @@ Follow these steps to connect OpenAI ChatGPT to AEM's MCP servers.
 1. In a chat, write a prompt that tells ChatGPT to use the configured **AEM Tools** (for example, to query author content or sites).
 
    ![Prompting ChatGPT to use the AEM Content MCP Service.](assets/chatgpt-7.png)
+
+## Install the Adobe Experience Manager plugin (ChatGPT plugin marketplace) {#install-adobe-experience-manager-plugin}
+
+This section describes the **installable plugin** from the ChatGPT plugin marketplace (as opposed to adding a custom MCP server URL). It includes a subset of the tools available in AEM's MCP servers.
+
+>[!NOTE]
+>
+>The OpenAI ChatGPT user interface is subject to change and is not definitive. These instructions are for illustrative purposes.
+
+1. From **Settings**, choose **Plugins**, then at the bottom of the list choose **Browse plugins**.
+
+   ![The Plugins page in ChatGPT Settings with Browse plugins.](assets/chatgpt-plugin-1.png)
+
+1. Search for **Adobe Experience Manager**, then select it.
+
+   ![Searching for the Adobe Experience Manager plugin in the plugin marketplace.](assets/chatgpt-plugin-2.png)
+
+1. Choose **Sign in with Adobe Experience Manager** and log in to AEM when redirected.
+
+   ![The Add Adobe Experience Manager to ChatGPT dialog with Sign in with Adobe Experience Manager.](assets/chatgpt-plugin-3.png)
+
+1. Confirm the green banner indicates that Adobe Experience Manager is now connected.
+
+   ![The green banner confirming the Adobe Experience Manager plugin is connected.](assets/chatgpt-plugin-4.png)
