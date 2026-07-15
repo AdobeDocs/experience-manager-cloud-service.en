@@ -46,6 +46,7 @@ AEM exposes MCP servers as HTTP endpoints. The endpoints listed below are relati
 |**Cloud Manager**|`/cloudmanager`|Manage Cloud Manager entities including programs, environments, repositories and pipelines, which can also be triggered.|
 |**Experience Governance**|`/experience-governance`|Evaluate content (text, images, pages) against brand governance rules, and list brand configurations and checks.<br/>If you are interested, you must sign up for the [agents trial or have a paid license](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) in order to access the Experience Governance MCP.|
 |**Cloud Migration**|`/cloud-migration`|Fetch Best Practices Analyzer (BPA) findings from Cloud Acceleration Manager (CAM) by migration pattern or severity level, enabling AI agents to drive code migration from AEM 6.x to AEM as a Cloud Service. See [Using the Cloud Migration MCP](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md).|
+|**AEM MCP server**|`/aem`|New as of June 2026, this is a single endpoint that aggregates the tools of the AEM MCP servers listed above (excluding Cloud Migration), exposing them through one connection. This is the preferred way to connect to AEM. Note that the access restrictions you can request from Adobe for this aggregated server are different and at this time more limited than for the individual servers, so make sure it satisfies your requirements. See [Restricting MCP Servers](#restricting-mcp-servers).|
 
 The specific tools exposed by each MCP server may evolve over time. In practice, you can ask your MCP-enabled application to discover tools via a prompt such as:
 
@@ -108,7 +109,11 @@ All applications listed under [Supported MCP Applications](#supported-mcp-applic
 
 #### Restricting MCP Servers {#restricting-mcp-servers}
 
-All MCP servers are allowlisted by default. As an administrator, you have the option to restrict access to specific MCP servers at the organization, program, or environment level. This restriction gives you granular control over which MCP capabilities are available to users within your organization.
+All MCP servers are allowlisted by default. As an administrator, you have the option to restrict access to specific MCP servers at the organization, program, or environment level (other than the AEM MCP Server – see note below). This restriction gives you granular control over which MCP capabilities are available to users within your organization.
+
+>[!IMPORTANT]
+>
+>The **AEM MCP server** (`/aem`) aggregates several MCP servers behind a single endpoint. The configuration you can request from Adobe is different, with the option of **read-only** (only allow tools which are read-only) or **no access** (no tools at all). The default is access to all tools (**read-write**). To request a configuration change, contact Adobe at **`aemcs-mcp-feedback@adobe.com`**.
 
 #### Managing MCP Client Access {#managing-mcp-client-access}
 
