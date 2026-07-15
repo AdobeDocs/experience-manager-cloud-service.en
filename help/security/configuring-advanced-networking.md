@@ -427,11 +427,19 @@ Most VPN devices with IPSec technology are supported. Consult the information in
 
 A VPN infrastructure supports multiple connections, so you can connect to more than one on-premise network or data center from the same infrastructure. Adobe recommends a maximum of 20 connections per infrastructure.
 
-<!-- NEW Each connection uses either static routing or BGP dynamic routing, and both types can coexist within the same infrastructure. For more information on configuring routing, see [Add a VPN connection](). -->
+Each connection uses either static routing or BGP dynamic routing, and both types can coexist within the same infrastructure. With static routing, you define the address ranges to route through the connection. With BGP, those routes are learned dynamically. For more information, see [UI configuration](#configuring-vpn-ui).
 
 To resolve private host names, DNS resolvers must be listed in the gateway address space.
 
 ### UI configuration {#configuring-vpn-ui}
+
+Border Gateway Protocol (BGP) lets a VPN connection learn routes dynamically instead of relying on statically defined address ranges. When a connection uses BGP, you do not need to define its address space, because routes are exchanged automatically between your gateway and the Adobe gateway.
+
+To use BGP, you provide an Adobe Gateway ASN at the infrastructure level, and a BGP ASN and BGP peering address for each BGP-enabled connection. You can optionally specify an Adobe APIPA address for the Adobe side of the peering. If you omit it, Adobe assigns one automatically.
+
+When a route learned through BGP and a static route overlap for the same destination, the most specific route wins (longest-prefix match).
+
+**To configure UI:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
@@ -441,47 +449,41 @@ To resolve private host names, DNS resolvers must be listed in the gateway addre
 
    ![Adding network infrastructure](assets/advanced-networking-ui-network-infrastructure.png)
 
-1. In the **Add network infrastructure** wizard that starts, select **Virtual private network** and provide the necessary information before clicking **Continue**.
+1. In the **Add network infrastructure** dialog box, select **Virtual private network**.
 
-   * **Region** - The region in which the infrastructure should be created.
-   * **Address Space** - The address space can only be one /26 CIDR (64 IP addresses) or larger IP range in your own space.
-     * This value can't be changed later.
-   * **DNS Information** - A list of remote DNS resolvers.
-     * Press `Enter` after inputting a DNS server address to add another.
-     * Click the `X` after an address to remove it.
-   * **Shared Key** - Your VPN preshared key.
-     * Select **Show shared key** to reveal the key so you can double-check its value.
+   ![Add network infrastructure dialog box](/help/security/assets/add-network-infrastructure-dlgbox.png)
 
-   ![Configuring vpn](assets/advanced-networking-ui-vpn.png)
+1. In the **Connections** section, in the text field, type a **Connection name**, then click **Add Connection**.
 
-1. To identify your VPN connection, provide a **Connection name** on the **Connections** tab of the wizard and click **Add Connection**.
-
-   ![Add connection](assets/advanced-networking-ui-vpn-add-connection.png)
-
-1. In the **Add connection** dialog box, define your VPN connection, then click **Save**.
+1. In the **Add connection** dialog box, define your VPN connection.
 
    * **Connection name** - A descriptive name of your VPN connection, which you provided in the previous step and can be updated here.
    * **Address** - The VPN device IP address.
-   * **Address space** - The IP address ranges to route through the VPN.
-     * Press `Enter` after inputting a range to add another.
-     * Click the `X` after a range to remove it.
-   * **IP Security Policy** - Adjust from the default values as required
+   * **Address space** - The IP address ranges to route through the VPN. Press `Enter` after inputting a range to add another; click `X` after a range to remove it.
+   * **BGP ASN** - The Autonomous System Number on your side of the BGP peering. Provide this value together with BGP Peering Address to enable BGP on the connection.
+   * **BGP Peering Address** - The IP address used for BGP peering on your side of the connection.
+   * **Adobe APIPA Address** - The IP address for the Adobe side of the BGP peering. If you leave this field empty, Adobe assigns one automatically.
+   * **Shared key** - Your VPN preshared key. Select **Show shared key** to reveal the key so you can double-check its value.
+   * **IP Security policy** - Adjust from the default values as required
 
-   ![Adding a VPN connection](assets/advanced-networking-ui-vpn-adding-connection.png)
+   ![Add connection dialog box](/help/security/assets/add-network-infrastructure-connection-dlgbox.png)
 
-1. The dialog box closes and you return to the **Connections** tab of the wizard. Click **Continue**.
+1. Click **Save**.
 
-   ![A VPN connection is added](assets/advanced-networking-ui-vpn-connection-added.png)
+1. In the **Add network infrastructure** dialog box, provide the following necessary information.
 
-1. The **Confirmation** tab summarizes your selection and the next steps. Click **Save** to create the infrastructure.
+   * **Region** - The region in which the infrastructure should be created.
+   * **Address Space** - The address space can only be one /26 CIDR (64 IP addresses) or larger IP range in your own space. This value cannot be changed later.
+   * **DNS Information** - A list of remote DNS resolvers. Press `Enter` after inputting a DNS server address to add another. Click `X` after an address to remove it.
+   * **Adobe Gateway ASN** - The Autonomous System Number of the Adobe-side gateway. This value is required when any connection in the infrastructure uses BGP.
 
-   ![Confirming configuration of flexible port egress](assets/advanced-networking-ui-vpn-confirm.png)
+1. Click **Add** to create the infrastructure.
 
 A new record appears below the **Network Infrastructures** heading in the side panel. It includes infrastructure type, status, region, and enabled environments.
 
 ### API configuration {#configuring-vpn-api}
 
-Once per program, the POST `/program/<programId>/networkInfrastructures` endpoint is invoked. It passes in a payload of configuration information. That information includes the value of **vpn** for the `kind` parameter, region, address space (list of CIDRs - note that this value cannot be modified later), DNS resolvers (for resolving names in your network). It also includes VPN connection information such as gateway configuration, shared VPN key, and the IP Security policy. The endpoint responds with the `network_id`, and other information including the status. 
+Once per program, the POST `/program/<programId>/networkInfrastructures` endpoint is invoked. It passes in a payload of configuration information. That information includes the value of **vpn** for the `kind` parameter, region, address space, and DNS resolvers. It also includes one or more VPN connections, each with its gateway configuration, shared VPN key, IP Security policy, and, optionally, BGP routing parameters. The endpoint responds with the `network_id` and other information including the status.
 
 Once called, it typically takes from 45 to 60 minutes for the networking infrastructure to be provisioned. The GET method in the API can be called to return the status, which eventually changes from `creating` to `ready`. Consult the API documentation for all states.
 
