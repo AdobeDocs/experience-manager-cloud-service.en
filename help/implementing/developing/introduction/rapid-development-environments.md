@@ -8,7 +8,10 @@ nudge: please
 ---
 # Rapid Development Environments {#rapid-development-environments}
 
->[!New Enhancement: RDE Snapshots]
+>[!NOTE]
+>
+>**New Enhancement: RDE Snapshots**
+>
 >Now in public beta, take an RDE snapshot to later restore code and content. [Learn more](#snapshots) below.
 >
 
