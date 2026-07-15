@@ -20,7 +20,7 @@ To view your security findings:
 ![Admin & IT profile selector in Experience Hub](./assets/security-health/nav-admin-profile.png)
 ![Security Health entry under Security and Compliance in the Experience Hub navigation](./assets/security-health/nav-security-health-menu.png)
 
-## Understand what you see {#understand-what-you-see}
+## Understand What You See {#understand-what-you-see}
 
 The information Security Health displays depends on the current state of your program and environments.
 
@@ -42,11 +42,11 @@ When issues are detected, Security Health shows key performance indicators for v
 
 ![Security Health overview with KPIs and a list of findings](./assets/security-health/security-health-overview.png)
 
-## Types of findings {#types-of-findings}
+## Types of Findings {#types-of-findings}
 
 Security Health reports on three types of issues, aligned with the [OWASP Top 10](https://owasp.org/Top10/2025/).
 
-### Vulnerabilities in third-party libraries {#vulnerabilities-in-third-party-libraries}
+### Vulnerabilities in Third-Party Libraries {#vulnerabilities-in-third-party-libraries}
 
 Corresponds to OWASP Top 10 category A03:2025 (Software Supply Chain Failures).
 
@@ -65,11 +65,19 @@ Findings are grouped to make them easier to act on:
 
 Groups are sorted by descending maximum CVE score. You can export the list of findings as a CSV file.
 
+When multiple groupings are found, Security Health lists each one with its own risk breakdown, so you can see at a glance which groupings need attention first.
+
 ![Multiple vulnerability findings grouped in the list view](./assets/security-health/vulnerabilities-multiple-items.png)
+
+When vulnerabilities come from nested dependencies of a bundle, Security Health groups them under that bundle. Expand it to see the dependency path and every CVE it introduces.
+
 ![A single bundle grouping vulnerabilities from its nested dependencies](./assets/security-health/vulnerabilities-single-bundle.png)
+
+When a single library has a known vulnerability, Security Health lists that library on its own, along with the related CVE.
+
 ![A single library with its own vulnerability details](./assets/security-health/vulnerabilities-single-library.png)
 
-### Redundant permissions {#redundant-permissions}
+### Redundant Permissions {#redundant-permissions}
 
 Corresponds to OWASP Top 10 category A02:2025 (Security Misconfiguration).
 
@@ -79,7 +87,7 @@ Security Health lists these redundant entries by user and path, and lets you sor
 
 ![List of redundant permission entries by user and path](./assets/security-health/redundant-permissions.png)
 
-### Overly broad or insecure permissions {#overly-broad-or-insecure-permissions}
+### Overly Broad or Insecure Permissions {#overly-broad-or-insecure-permissions}
 
 Also corresponds to OWASP Top 10 category A02:2025 (Security Misconfiguration).
 

@@ -13,7 +13,7 @@ AEM as a Cloud Service lets you submit information about planned penetration tes
 >
 >You can only run penetration tests against AEM. Testing any other product requires additional acknowledgement from Adobe. Send findings that include proof of exploitation to [customer-pen-test@adobe.com](mailto:customer-pen-test@adobe.com).
 
-## Access penetration tests {#access-penetration-tests}
+## Access Penetration Tests {#access-penetration-tests}
 
 To manage your penetration tests:
 
@@ -23,7 +23,7 @@ To manage your penetration tests:
 
 ![Penetration Tests entry under Security and Compliance in the Experience Hub navigation](./assets/penetration-tests/nav-penetration-tests-menu.png)
 
-## View planned and past tests {#view-planned-and-past-tests}
+## View Planned and Past Tests {#view-planned-and-past-tests}
 
 The **Penetration Tests** page shows your scheduled and ongoing tests in a table, including their start and end dates, the AEM services tested, the assessor, and the status of each test.
 
@@ -33,14 +33,14 @@ Select the **Past tests** tab to see tests you've already run.
 
 ![Table of past penetration tests](./assets/penetration-tests/past-tests.png)
 
-## Schedule a new test {#schedule-a-new-test}
+## Schedule a New Test {#schedule-a-new-test}
 
 To schedule a penetration test:
 
 1. Select **Schedule new test**.
 1. Provide the following information:
 
-   - **AEM services tested**: the services you plan to test, for example AEM - Cloud Service or AEM - Edge Delivery Services
+   - **AEM services tested**: the services you plan to test, for example, AEM - Cloud Service or AEM - Edge Delivery Services
    - **Start date** and **End date** for the test
    - **Domains in scope** for the test
    - **IP addresses of penetration tests origins**
@@ -54,25 +54,25 @@ You can only schedule a test for the current date or a future date. Scheduling a
 
 ![Dialog for scheduling a new penetration test](./assets/penetration-tests/schedule-test.png)
 
-## View test details {#view-test-details}
+## View Test Details {#view-test-details}
 
 Select a row in the table to see the full details of that penetration test, including options to edit or cancel it.
 
 ![Penetration test details dialog](./assets/penetration-tests/test-details.png)
 
-## Edit a test {#edit-a-test}
+## Edit a Test {#edit-a-test}
 
 You can edit a scheduled penetration test, for example, to update the dates, domains in scope, or IP addresses. Open the test's details, select **Edit**, make your changes, and select **Update**. Adobe is notified of any changes you make.
 
 ![Dialog for editing a scheduled penetration test](./assets/penetration-tests/edit-test.png)
 
-## Cancel a test {#cancel-a-test}
+## Cancel a Test {#cancel-a-test}
 
 To cancel a scheduled penetration test, open its details and select **Cancel test**. Adobe is notified when a test is cancelled, and the test's status changes to **Cancelled** in the table.
 
 ![Table showing a penetration test with a cancelled status](./assets/penetration-tests/cancel-test.png)
 
-## Widget on the Experience Hub landing page {#widget-on-the-experience-hub-landing-page}
+## Widget on the Experience Hub Landing Page {#widget-on-the-experience-hub-landing-page}
 
 The Experience Hub landing page for the Admin & IT profile also shows a summary of your penetration test status:
 
