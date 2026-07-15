@@ -99,7 +99,9 @@ Metadata enabled on the Configuration User Interface display on the asset upload
 
 ### Filters {#configure-filters-content-hub}
 
-Content Hub allows administrators to configure filters that display while searching for assets. Execute the following steps to add a new filter:
+Content Hub allows administrators to configure filters that display while searching for assets. You can configure a maximum of 40 filters using the Configuration User Interface.
+
+Execute the following steps to add a new filter:
 
 1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Filters]**.
 1. Click **[!UICONTROL Add filters]**. 
@@ -170,7 +172,9 @@ Administrators can define the metadata fields that are searched when a user spec
 
 >[!CAUTION]
 >
->It is recommended to carefully select the fields you mark as searchable. Include only those fields that users are likely to search for and that help return meaningful results. Fields such as dates and numbers are better suited for filtering and sorting rather than as searchable content. Marking too many fields as searchable may affect the quality and performance of search results.
+>It is recommended to carefully select the fields you mark as searchable. Include only those fields that users are likely to search for and that help return meaningful results. Fields such as dates and numbers are better suited for filtering and sorting rather than as searchable content. Marking too many fields as searchable or filterable may affect the quality and performance of search results.
+> 
+> You can configure a maximum of 30 search fields using the Configuration User Interface.
 >
 >Tag properties are enabled for filtering only and are not searchable.
 
@@ -182,6 +186,12 @@ Administrators can define the metadata fields that are searched when a user spec
 
 Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available metadata property, to edit the property or click the delete icon to delete any existing property. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
 ![Configuration UI Search on Content Hub](assets/configuration-search.png)
+
+The list of Search fields that you add must be in the order of relevance, as the order impacts the search results.
+
+   >[!NOTE]
+   >
+   >You must keep the Content Hub Configuration page in sync with the fields you intend to use. Do not remove fields using the UI, especially if those fields are being used in ABAC rules or direct Search API usage.
 
 ### Branding {#configure-branding-content-hub}
 
@@ -399,3 +409,4 @@ Yes. Administrators can personalize the look and feel of AEM Assets Content Hub 
 * [Manage collections](/help/assets/manage-collections.md)
 * [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

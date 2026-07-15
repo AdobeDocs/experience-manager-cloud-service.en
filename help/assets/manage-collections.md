@@ -277,3 +277,4 @@ You can run a workflow for the assets within a collection. If the collection con
 >
 >* [Create a review task for Collections](/help/assets/bulk-approval.md)
 
+

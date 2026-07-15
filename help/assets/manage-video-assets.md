@@ -655,3 +655,4 @@ You can add annotations to video assets. While annotating videos, the player pau
 >
 >* [Dynamic Media video documentation](/help/assets/dynamic-media/video.md).
 >* [Know more about use, types, and configuration of processing profiles](/help/assets/asset-microservices-configure-and-use.md).
+

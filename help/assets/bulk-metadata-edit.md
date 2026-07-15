@@ -53,3 +53,4 @@ To see the applied metadata updates to an asset, navigate to the [!DNL asset det
 * [Manage collections](/help/assets/manage-collections.md)
 * [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

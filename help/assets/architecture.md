@@ -36,3 +36,4 @@ To see architecture overview of asset microservices see this [asset microservice
 >* [Overview and what's new](/help/assets/overview.md)
 >* [Supported file formats and MIME types](file-format-support.md)
 >* [Overview of asset microservices](asset-microservices-overview.md)
+

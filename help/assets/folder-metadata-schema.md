@@ -186,3 +186,4 @@ Enter metadata values in the various fields and select **[!UICONTROL Save]** to 
 * [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
+
