@@ -65,7 +65,7 @@ When configuring advanced networking features, the following restrictions apply.
 * Advanced networking is not available for [sandbox programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 * A user must have the **Administrator** role to add and configure network infrastructure in your program.
 * The production environment must be created before network infrastructure can be added in your program.
-* Your network infrastructure must be in the same region as your production environment's primary region.
+* Your network infrastructure must be in the same region as your production environment's region.
   * If your production environment has [extra publish regions](/help/implementing/cloud-manager/manage-environments.md#multiple-regions), create network infrastructure to mirror each additional region.
   * You are not allowed to create more network infrastructures than the maximum number of regions configured in your production environment.
   * You can define as many network infrastructures as there are available regions in your production environment, but the new infrastructure must be of the same type as the previously created one.
@@ -398,7 +398,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 Some libraries require explicit configuration to use standard Java&trade; system properties for proxy configurations.
 
 A code sample using Apache HttpClient that requires explicit calls to
-[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) or use
+[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) or
 [`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()):
 
 ```java
@@ -417,7 +417,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ### Debug considerations {#debugging-considerations}
 
-To validate that traffic is indeed outgoing on the expected dedicated IP address, check logs in the destination service, if available. Otherwise, call out to a debugging service such as [https://ifconfig.me/ip](https://ifconfig.me/ip), which returns the calling IP address.
+To validate that traffic is indeed outgoing on the expected dedicated IP address, check logs in the destination service, if available. Otherwise, use a debugging service such as [https://ifconfig.me/ip](https://ifconfig.me/ip), which returns the calling IP address.
 
 ## Virtual Private Network (VPN) {#vpn}
 
@@ -460,7 +460,7 @@ When a route learned through BGP and a static route overlap for the same destina
    * **Connection name** - A descriptive name of your VPN connection, which you provided in the previous step and can be updated here.
    * **Address** - The VPN device IP address.
    * **Address space** - The IP address ranges to route through the VPN. Press `Enter` after inputting a range to add another; click `X` after a range to remove it.
-   * **BGP ASN** - The Autonomous System Number on your side of the BGP peering. Provide this value together with BGP Peering Address to enable BGP on the connection.
+   * **BGP ASN** - The Autonomous System Number on your side of the BGP peering. To enable BGP on the connection, provide this value together with BGP Peering Address.
    * **BGP Peering Address** - The IP address used for BGP peering on your side of the connection.
    * **Adobe APIPA Address** - The IP address for the Adobe side of the BGP peering. If you leave this field empty, Adobe assigns one automatically.
    * **Shared key** - Your VPN preshared key. Select **Show shared key** to reveal the key so you can double-check its value.
@@ -475,7 +475,7 @@ When a route learned through BGP and a static route overlap for the same destina
    * **Region** - The region in which the infrastructure should be created.
    * **Address Space** - The address space can only be one /26 CIDR (64 IP addresses) or larger IP range in your own space. This value cannot be changed later.
    * **DNS Information** - A list of remote DNS resolvers. Press `Enter` after inputting a DNS server address to add another. Click `X` after an address to remove it.
-   * **Adobe Gateway ASN** - The Autonomous System Number of the Adobe-side gateway. This value is required when any connection in the infrastructure uses BGP.
+   * **Adobe Gateway ASN** - The Autonomous System Number of the Adobe-side VPN gateway. This value is required when any connection in the infrastructure uses BGP. The valid ranges are 64512 to 65514, or 65521 to 65534. The UI validates this value and blocks the update if it falls outside these ranges.
 
 1. Click **Add** to create the infrastructure.
 
@@ -678,7 +678,7 @@ Even if there are no environment traffic routing rules (hosts or bypasses), call
 
 ## Edit and delete Advanced Networking Configurations on Environments {#editing-deleting-environments}
 
-After [enabling advanced networking configurations to environments](#enabling), you can update the details of those configurations or delete them.
+After [enabling advanced networking configurations for environments](#enabling), you can update the details of those configurations or delete them.
 
 >[!NOTE]
 >
@@ -696,7 +696,7 @@ After [enabling advanced networking configurations to environments](#enabling), 
 
 1. In the ellipsis menu, select either **Edit** or **Delete**.
 
-   * If you choose **Edit**, update the information per the steps described in the previous section, [Enabling Using the UI](#enabling-ui), and click **Save**.
+   * If you choose **Edit**, update the information per the steps described in the previous section, [Enable using the UI](#enabling-ui), and click **Save**.
    * If you choose **Delete**, confirm the deletion in the **Delete network configuration** dialog box with **Delete** or abort with **Cancel**.
 
 The changes are reflected on the **Environments** tab.
@@ -783,7 +783,7 @@ When an additional region is added to an environment with advanced networking al
 If an advanced networking configuration is already enabled in the primary region, follow these steps:
 
 1. If you locked down your infrastructure such that the dedicated AEM IP address is allowlisted, temporarily disable any deny rules in that infrastructure. If you skip this step, your infrastructure temporarily denies requests from the new region's IP addresses. This step is not necessary if you have locked down your infrastructure using a Fully Qualified Domain Name (FQDN), such as `p1234.external.adobeaemcloud.com`. All AEM regions egress advanced networking traffic from the same FQDN.
-1. Create the program-scoped networking infrastructure for the secondary region through a POST call to the Cloud Manager Create Network Infrastructure API, as described in advanced networking documentation. The only difference in the payload's JSON configuration relative to primary region is the region property
+1. Create the program-scoped networking infrastructure for the secondary region through a POST call to the Cloud Manager Create Network Infrastructure API, as described in advanced networking documentation. The only difference in the payload's JSON configuration relative to the primary region is the region property.
 1. If you need to lock down your infrastructure by IP to allow AEM traffic, add the IP addresses that correspond to `p1234.external.adobeaemcloud.com`. There is one per region. 
 
 #### Advanced networking not yet configured in any region {#not-yet-configured}
