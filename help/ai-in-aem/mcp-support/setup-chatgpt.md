@@ -36,7 +36,7 @@ This section describes the **manual configuration** approach, where you add one 
 
    ![The Apps and Connectors Advanced Settings panel in ChatGPT.](assets/chatgpt-2.png)
 
-1. Enable **Developer mode** in **Apps and Connectors** so you can add and configure custom apps or connectors.
+1. Enable **Developer mode** in **Apps and Connectors** so you can add and configure a custom plugin.
 
    ![Enabling Developer mode in the Apps and Connectors section.](assets/chatgpt-3.png)
 
