@@ -10,7 +10,8 @@ The custom thumbnail support feature for video assets in both mp4 and mkv format
 
 With the custom thumbnail support, users can now upload or select a custom thumbnail for a video asset in Adobe Experience Manager (AEM). The video player would use that custom thumbnail as the poster image when available, instead of an auto-generated frame.
 
-# Prerequisites {#prerequisites-for-custom-thumbnail}
+## Prerequisites {#prerequisites-for-custom-thumbnail}
+
 To enable the cutom thumbnail feature, ensure you already have videos with captions in the Adobe Experience Manager (AEM) portal.
 
 ## Enabling Custom Thumbnail for videos {#enabling-custom-thumbnail}
@@ -21,7 +22,7 @@ To enable the custom thumbnail feature for videos, follow the steps as mentioned
 1. Navigate to the author instance of any touch UI, for example, [Adobe Experience Manager](https://author-p49105-e258067.adobeaemcloud.com/ui#/aem/sites.html/content/wknd) and go to Assets.
 1. Click on Files. You can see all the assets now inside Files.
 1. Go to any video and open that video asset.
-1. Go to the **[!Properties]** of the selected video asset as shown in the following image.
+1. Go to the **[!UICONTROL Properties]** of the selected video asset as shown in the following image.
 ![Properties of a selected video asset](/help/assets/assets/custom-thumbnail.png)
 1. You can now see the thumbnail of the video along with the title and some other details. 
 ![Custom Thumbnail of a video asset](/help/assets/assets/thumbnail.png)
