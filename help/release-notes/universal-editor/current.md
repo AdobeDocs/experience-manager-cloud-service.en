@@ -22,3 +22,5 @@ These are the release notes for the 16 July 2026 release of the Universal Editor
 
 * The radio buttons to select the [responsive mode](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator) of the editor now have accessible labels.
 * The clear all option for checkboxes now properly clears all the fields even when there is a default set.
+* Select dropdowns now render properly.
+* Labels and icons on extensibility buttons and submenus are now properly aligned.
