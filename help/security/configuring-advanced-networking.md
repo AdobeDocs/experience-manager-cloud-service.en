@@ -49,7 +49,7 @@ AEM as a Cloud Service offers the following advanced networking options:
 * [Dedicated egress IP address](#dedicated-egress-ip-address) - Configure traffic out of AEM as a Cloud Service to originate from a unique IP.
 * [Virtual Private Network (VPN)](#vpn) - Secure traffic between your infrastructure and AEM as a Cloud Service, if you have a VPN.
 
-This article describes each of these options in detail and why you use them, before describing how they are configured using the Cloud Manager UI and by using the API. The article concludes with some advanced use cases.
+This article describes each of these options in detail and why you use them, before describing how they are configured using the Cloud Manager UI and the API. The article concludes with some advanced use cases.
 
 >[!CAUTION]
 >
@@ -65,7 +65,7 @@ When configuring advanced networking features, the following restrictions apply.
 * Advanced networking is not available for [sandbox programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 * A user must have the **Administrator** role to add and configure network infrastructure in your program.
 * The production environment must be created before network infrastructure can be added in your program.
-* Your network infrastructure must be in the same region as your production environment's region.
+* Your network infrastructure must be in the same region as your production environment.
   * If your production environment has [extra publish regions](/help/implementing/cloud-manager/manage-environments.md#multiple-regions), create network infrastructure to mirror each additional region.
   * You are not allowed to create more network infrastructures than the maximum number of regions configured in your production environment.
   * You can define as many network infrastructures as there are available regions in your production environment, but the new infrastructure must be of the same type as the previously created one.
@@ -78,7 +78,7 @@ Using advanced networking features requires two steps:
 1. Configuration of the advanced networking option, whether [flexible port egress](#flexible-port-egress), [dedicated egress IP address](#dedicated-egress-ip-address), or [VPN](#vpn), must first be done at the program level. 
 1. To be used, the advanced networking option must then be [enabled at the environment level](#enabling).
 
-Both steps can be done either using the Cloud Manager UI or the Cloud Manager API.
+Both steps can be done using either the Cloud Manager UI or the Cloud Manager API.
 
 * When using the Cloud Manager UI, this means creating advanced network configurations using a wizard at the program level and then editing each environment where you want to enable the configuration.
 
@@ -96,7 +96,7 @@ This advanced networking feature lets you configure AEM as a Cloud Service to eg
 >
 >After creation, flexible port egress infrastructure types cannot be edited. The only way to change configuration values is to delete and recreate them.
 
-### UI configuration {#configuring-flexible-port-egress-provision-ui}
+### Configure flexible port egress using UI {#configuring-flexible-port-egress-provision-ui}
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
@@ -123,7 +123,7 @@ A new record appears below the **Network Infrastructure** heading in the side pa
 >
 >Creation of the infrastructure for flexible port egress can take up to an hour after which it can be configured at the environment level.
 
-### API configuration {#configuring-flexible-port-egress-provision-api}
+### Configure flexible port egress using API {#configuring-flexible-port-egress-provision-api}
 
 Once per program, the POST `/program/<programId>/networkInfrastructures` endpoint is invoked, passing the value of `flexiblePortEgress` for the `kind` parameter and region. The endpoint responds with the `network_id`, and other information including the status.
 
@@ -258,7 +258,7 @@ Configuring a dedicated egress IP address is similar to [flexible port egress](#
 >
 >Once created, dedicated egress IP address infrastructure types cannot be edited. The only way to change configuration values is to delete and recreate them.
 
-### UI configuration {#configuring-dedicated-egress-provision-ui}
+### Configure dedicated egress IP address using UI {#configuring-dedicated-egress-provision-ui}
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
@@ -285,7 +285,7 @@ A new record appears below the **Network Infrastructures** heading in the side p
 >
 >Creation of the infrastructure for flexible port egress can take up to an hour after which it can be configured at the environment level.
 
-### API configuration {#configuring-dedicated-egress-provision-api}
+### Configure dedicated egress IP address using API {#configuring-dedicated-egress-provision-api}
 
 Once per program, the POST `/program/<programId>/networkInfrastructures` endpoint is invoked, passing the value of `dedicatedEgressIp` for the `kind` parameter and region. The endpoint responds with the `network_id`, and other information including the status.
 
@@ -423,7 +423,7 @@ To validate that traffic is indeed outgoing on the expected dedicated IP address
 
 A VPN allows connecting to an on-premise infrastructure or data center from the author, publish, or preview instances. This ability can be useful, for example, to secure access to a database. It also allows connecting to SaaS vendors such as a CRM vendor that supports VPN.
 
-Most VPN devices with IPSec technology are supported. Consult the information in the **RouteBased configuration instructions** column in [this list of devices](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable). Configure the device as described in the table.
+Most VPN devices with IPsec technology are supported. Consult the information in the **RouteBased configuration instructions** column in [this list of devices](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable). Configure the device as described in the table.
 
 A VPN infrastructure supports multiple connections, so you can connect to more than one on-premise network or data center from the same infrastructure. Adobe recommends a maximum of 20 connections per infrastructure.
 
@@ -431,7 +431,7 @@ Each connection uses either static routing or BGP dynamic routing, and both type
 
 To resolve private host names, DNS resolvers must be listed in the gateway address space.
 
-### UI configuration {#configuring-vpn-ui}
+### Configure VPN using UI {#configuring-vpn-ui}
 
 Border Gateway Protocol (BGP) lets a VPN connection learn routes dynamically instead of relying on statically defined address ranges. When a connection uses BGP, you do not need to define its address space, because routes are exchanged automatically between your gateway and the Adobe gateway.
 
@@ -439,49 +439,55 @@ To use BGP, you provide an Adobe Gateway ASN at the infrastructure level, and a 
 
 When a route learned through BGP and a static route overlap for the same destination, the most specific route wins (longest-prefix match).
 
-**To configure UI:**
+**To configure VPN using UI:**
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+{{sign-in-to-cloud-manager}}
 
-1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
+1. On the **My Programs** console, click a program. 
 
-1. From the **Program Overview** page, navigate to the **Environments** tab and select **Network Infrastructures** in the left panel.
+1. In the left panel, click **Network Infrastructures**.
 
-   ![Adding network infrastructure](assets/advanced-networking-ui-network-infrastructure.png)
+   ![Network infrastructures page](/help/security/assets/network-infrastructures-page.png)
+
+1. Near the upper-right corner of the page, click **Add network infrastructure**.
 
 1. In the **Add network infrastructure** dialog box, select **Virtual private network**.
 
-   ![Add network infrastructure dialog box](/help/security/assets/add-network-infrastructure-dlgbox.png)
+   ![Add network infrastructure dialog box](/help/security/assets/network-infrastructures-vpn-add-dlgbox.png)
 
 1. In the **Connections** section, in the text field, type a **Connection name**, then click **Add Connection**.
 
 1. In the **Add connection** dialog box, define your VPN connection.
 
-   * **Connection name** - A descriptive name of your VPN connection, which you provided in the previous step and can be updated here.
-   * **Address** - The VPN device IP address.
-   * **Address space** - The IP address ranges to route through the VPN. Press `Enter` after inputting a range to add another; click `X` after a range to remove it.
-   * **BGP ASN** - The Autonomous System Number on your side of the BGP peering. To enable BGP on the connection, provide this value together with BGP Peering Address.
-   * **BGP Peering Address** - The IP address used for BGP peering on your side of the connection.
-   * **Adobe APIPA Address** - The IP address for the Adobe side of the BGP peering. If you leave this field empty, Adobe assigns one automatically.
-   * **Shared key** - Your VPN preshared key. Select **Show shared key** to reveal the key so you can double-check its value.
-   * **IP Security policy** - Adjust from the default values as required
+    | Field | Description |
+    | --- | --- |
+    | Connection name | Required. A descriptive name of your VPN connection, which you provided in the previous step and can be updated here. |
+    | Address | Required. The VPN device IP address. |
+    | Address space | Required. The IP address ranges to route through the VPN. Press `Enter` after inputting a range to add another; click `X` after a range to remove it. |
+    | BGP ASN | The Autonomous System Number on your side of the BGP peering. To enable BGP on the connection, provide this value together with BGP Peering Address. |
+    | BGP Peering Address | The IP address used for BGP peering on your side of the connection. |
+    | Adobe APIPA Address | The IP address for the Adobe side of the BGP peering. If you leave this field empty, Adobe assigns one automatically. |
+    | Shared key | Required. Your VPN preshared key. Select **Show shared key** to reveal the key so you can double-check its value. |
+    | IP Security policy | Required. Adjust from the default values as required. |
 
-   ![Add connection dialog box](/help/security/assets/add-network-infrastructure-connection-dlgbox.png)
+     ![Add connection dialog box](/help/security/assets/network-infrastructures-vpn-add-connection-dlgbox.png)
 
 1. Click **Save**.
 
 1. In the **Add network infrastructure** dialog box, provide the following necessary information.
 
-   * **Region** - The region in which the infrastructure should be created.
-   * **Address Space** - The address space can only be one /26 CIDR (64 IP addresses) or larger IP range in your own space. This value cannot be changed later.
-   * **DNS Information** - A list of remote DNS resolvers. Press `Enter` after inputting a DNS server address to add another. Click `X` after an address to remove it.
-   * **Adobe Gateway ASN** - The Autonomous System Number of the Adobe-side VPN gateway. This value is required when any connection in the infrastructure uses BGP. The valid ranges are 64512 to 65514, or 65521 to 65534. The UI validates this value and blocks the update if it falls outside these ranges.
+    | Field | Description |
+    | --- | --- |
+    | Region | Required. The region in which the infrastructure should be created. |
+    | Address Space | Required. The address space can only be one /26 CIDR (64 IP addresses) or larger IP range in your own space. This value cannot be changed later. |
+    | DNS Information | Required. A list of remote DNS resolvers. Press `Enter` after inputting a DNS server address to add another. Click `X` after an address to remove it. |
+    | Adobe Gateway ASN | Required. The Autonomous System Number of the Adobe-side VPN gateway. This value is required when any connection in the infrastructure uses BGP. The valid ranges are 64512 to 65514, or 65521 to 65534. The UI validates this value and blocks the update if it falls outside these ranges. |
 
 1. Click **Add** to create the infrastructure.
 
 A new record appears below the **Network Infrastructures** heading in the side panel. It includes infrastructure type, status, region, and enabled environments.
 
-### API configuration {#configuring-vpn-api}
+### Configure VPN using API {#configuring-vpn-api}
 
 Once per program, the POST `/program/<programId>/networkInfrastructures` endpoint is invoked. It passes in a payload of configuration information. That information includes the value of **vpn** for the `kind` parameter, region, address space, and DNS resolvers. It also includes one or more VPN connections, each with its gateway configuration, shared VPN key, IP Security policy, and, optionally, BGP routing parameters. The endpoint responds with the `network_id` and other information including the status.
 
@@ -805,7 +811,7 @@ The following points are provided as informative guidelines and encompass best p
 
 ### Connection pooling {#connection-pooling-advanced-networking}
 
-Connection pooling is a technique designed to create and maintain a collection of connections. These connections are available for immediate use by any thread that requires them. Various connection pooling techniques are available, each with its unique merits and considerations. Adobe encourages customers to investigate these methodologies to identify the one most compatible with their system's architecture.
+Connection pooling is a technique designed to manage a collection of connections. These connections are available for immediate use by any thread that requires them. Various connection pooling techniques are available, each with its unique merits and considerations. Adobe recommends that customers investigate these methodologies to identify the one most compatible with their system's architecture.
 
 Implementing an appropriate connection pooling strategy is a measure to address a common issue in system configuration, which often leads to reduced performance. By correctly establishing a connection pool, Adobe Experience Manager (AEM) can improve the efficiency of external calls. This approach reduces resource consumption, mitigates the risk of service disruptions, and decreases the probability of failed requests when communicating with external servers.
 
