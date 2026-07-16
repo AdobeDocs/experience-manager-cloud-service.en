@@ -54,6 +54,7 @@ The 2026.7.0 feature activation will provide the full feature set for this maint
 * FORMS-25369: Fixed an issue where copying a theme did not carry over clientlib dependencies from the base client library metadata.
 * FORMS-25372: Fixed prefill failures and JSON merge issues affecting embedded Adaptive Forms.
 * FORMS-24853: Fixed a tabbing issue with the Scribble signature component (Foundation Component) in Adaptive Forms.
+* SCRNS-5141: Fixed an issue where the outgoing transition on an embedded sequence caused the content area to go blank/grey instead of transitioning from the existing content.
 * SITES-41928: Contexthub + Unified Shell overlap makes component menu inaccessible in editor.
 * SITES-46579: Content API: Fix repository traversal in RelationshipService language-copy query — define index and rewrite query.
 * SITES-44192: Forms/Content API: Content API returns 404 for EDS forms using `sling:configRef` instead of `cq:conf`.
