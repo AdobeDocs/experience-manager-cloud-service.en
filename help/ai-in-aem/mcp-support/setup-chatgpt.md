@@ -64,6 +64,16 @@ This section describes the **installable plugin** from the ChatGPT plugin market
 >
 >The OpenAI ChatGPT user interface is subject to change and is not definitive. These instructions are for illustrative purposes.
 
+You can reach the Adobe Experience Manager plugin in either of two ways. Use whichever is more convenient, then continue with the sign-in steps that follow.
+
+**Option 1: Open the plugin page directly**
+
+Go to [https://chatgpt.com/plugins/plugin_asdk_app_6a35d3c1258081919c084a1fd22cd02d](https://chatgpt.com/plugins/plugin_asdk_app_6a35d3c1258081919c084a1fd22cd02d) and choose **Install plugin**.
+
+   ![The Adobe Experience Manager plugin page with the Install plugin button.](assets/chatgpt-plugin-install.png)
+
+**Option 2: Find the plugin in the marketplace**
+
 1. From **Settings**, choose **Plugins**, then at the bottom of the list choose **Browse plugins**.
 
    ![The Plugins page in ChatGPT Settings with Browse plugins.](assets/chatgpt-plugin-1.png)
@@ -71,6 +81,10 @@ This section describes the **installable plugin** from the ChatGPT plugin market
 1. Search for **Adobe Experience Manager**, then select it.
 
    ![Searching for the Adobe Experience Manager plugin in the plugin marketplace.](assets/chatgpt-plugin-2.png)
+
+**Sign in and confirm**
+
+After you locate or install the plugin using either option above, complete the connection:
 
 1. Choose **Sign in with Adobe Experience Manager** and log in to AEM when redirected.
 
