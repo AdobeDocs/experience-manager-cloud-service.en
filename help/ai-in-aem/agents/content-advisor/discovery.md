@@ -256,7 +256,7 @@ You can click the Content Fragment path to seamlessly navigate to the Content Fr
 
 You can now access the Discovery Agent directly from the Content Hub interface. This feature is available for Content Hub environments that use the latest search stack, which also provides AI Search and sorting capabilities. Adobe is rolling out the latest search stack to Content Hub customers in phases. If AI Search is available in your Content Hub interface, you can use the Content Discovery Agent. 
 
-To view if [AI Search](/help/assets/search-assets-content-hub#enable-disable-ai-search-content-hub) is available, navigate to your user profile icon and click **Configurations** on the Content Hub User Interface. Select the **Search** tab. If you can see options to select **AI Search** or **Keyword**, AI Search is available and you are using the latest search stack.
+To view if [AI Search](/help/assets/search-assets-content-hub.md#enable-disable-ai-search-content-hub) is available, navigate to your user profile icon and click **Configurations** on the Content Hub User Interface. Select the **Search** tab. If you can see options to select **AI Search** or **Keyword**, AI Search is available and you are using the latest search stack.
 
 ![AI Search in Content Hub](/help/assets/assets/ai-search-content-hub.png)
 
