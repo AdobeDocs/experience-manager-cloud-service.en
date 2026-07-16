@@ -1,5 +1,5 @@
 ---
-title: How to use hCaptcha&reg; in an AEM Adaptive Form?
+title: How to use hCaptcha&reg; in an AEM Adaptive Form Foundation Components?
 description: Enhance form security with hCaptcha&reg; service effortlessly. Step-by-step guide inside!
 topic-tags: Adaptive Forms, author
 keywords: hCaptcha&reg; service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Form submission security, Form spam prevention
@@ -9,8 +9,6 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: dc7ca723-1008-472a-b6eb-8e9ed6332a16
 ---
 # Connect your AEM Forms environment with hCaptcha&reg; {#connect-your-forms-environment-with-hcaptcha-service}
-
-<span class="preview"> This feature is under Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a program commonly used in online transactions to distinguish between humans and automated programs or bots. It poses a challenge and evaluates user response to determine if it's a human or a bot interacting with the site. It prevents the user to proceed if the test fails and helps make online transactions secure by keeping bots from posting spam or malicious purposes. 
 
