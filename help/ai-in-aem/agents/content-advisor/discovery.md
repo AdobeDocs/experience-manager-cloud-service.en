@@ -252,6 +252,21 @@ The content discovery agent provides full-text search capabilities for Content F
 
 You can click the Content Fragment path to seamlessly navigate to the Content Fragment location within AEM.
 
+## Content Discovery Agent availability within Content Hub {#content-discovery-agent-availability-within-content-hub}
+
+You can now access the Discovery Agent directly from the Content Hub interface. This feature is available for Content Hub environments that use the latest search stack, which also provides AI Search and sorting capabilities. Adobe is rolling out the latest search stack to Content Hub customers in phases. If AI Search is available in your Content Hub interface, you can use the Content Discovery Agent.
+
+>[!IMPORTANT]
+>
+>This feature is available as a Limited Availability feature.
+
+To view if [AI Search](/help/assets/search-assets-content-hub.md#enable-disable-ai-search-content-hub) is available, navigate to your user profile icon and click **Configurations** on the Content Hub User Interface. Select the **Search** tab. If you can see options to select **AI Search** or **Keyword**, AI Search is available and you are using the latest search stack.
+
+![AI Search in Content Hub](/help/assets/assets/ai-search-content-hub.png)
+
+
+If AI Search is not yet available and you want to enable Content Discovery Agent within Content Hub, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+
 ## Prompting Best Practices {#prompting-best-practices-discovery-agent}
 
 Specify concise details in your natural language prompts so that the agent can return accurate and relevant results. The more clearly you describe what you are looking for, the better the agent can refine and narrow the output. For example, you can:
@@ -264,6 +279,5 @@ Specify concise details in your natural language prompts so that the agent can r
 
 * The Content Discovery Agent supports dimension-based prompts only for image and SVG format types. For example, `Find images wider than 1080px`.
 
-* Content Hub administrators can access the Content Discovery Agent using the Content Hub portal, however, the results are retrieved only from the AEM author instance. Content Hub Limited users cannot currently get the benefits of the Content Discovery Agent (Coming Soon).
 
 * Find Similar capability works only for images with [Smart Tags enhancements](/help/assets/ai-generated-metadata-assets-view.md).
