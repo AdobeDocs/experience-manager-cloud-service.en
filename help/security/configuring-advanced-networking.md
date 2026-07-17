@@ -435,7 +435,7 @@ To resolve private host names, DNS resolvers must be listed in the gateway addre
 
 Border Gateway Protocol (BGP) lets a VPN connection learn routes dynamically instead of relying on statically defined address ranges. When a connection uses BGP, you do not need to define its address space, because routes are exchanged automatically between your gateway and the Adobe gateway.
 
-To use BGP, you provide an Adobe Gateway ASN at the infrastructure level, and a BGP ASN and BGP peering address for each BGP-enabled connection. You can optionally specify an Adobe APIPA address for the Adobe side of the peering. If you omit it, Adobe assigns one automatically.
+To use BGP, you provide an Adobe Gateway ASN at the infrastructure level, and a BGP ASN and BGP peering address for each BGP-enabled connection. You can optionally specify an address for the Adobe side of the peering. If you leave it empty, Adobe assigns one from the infrastructure-level address space. To retrieve an auto-assigned address, contact Adobe Support.
 
 When a route learned through BGP and a static route overlap for the same destination, the most specific route is selected (longest-prefix match).
 
