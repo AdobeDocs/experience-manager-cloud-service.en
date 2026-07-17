@@ -98,9 +98,9 @@ This advanced networking feature lets you configure AEM as a Cloud Service to eg
 
 ### Configure flexible port egress using UI {#configuring-flexible-port-egress-provision-ui}
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+{{sign-in-to-cloud-manager}}
 
-1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
+1. On the **My Programs** console, select the program.
 
 1. From the **Program Overview** page, navigate to the **Environments** tab and select **Network Infrastructures** in the left panel.
 
@@ -260,9 +260,9 @@ Configuring a dedicated egress IP address is similar to [flexible port egress](#
 
 ### Configure dedicated egress IP address using UI {#configuring-dedicated-egress-provision-ui}
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+{{sign-in-to-cloud-manager}}
 
-1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
+1. On the **My Programs** console, select the program.
 
 1. From the **Program Overview** page, navigate to the **Environments** tab and select **Network Infrastructures** in the left panel.
 
@@ -398,7 +398,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 Some libraries require explicit configuration to use standard Java&trade; system properties for proxy configurations.
 
 A code sample using Apache HttpClient that requires explicit calls to
-[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) or
+[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) or 
 [`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()):
 
 ```java
@@ -437,7 +437,7 @@ Border Gateway Protocol (BGP) lets a VPN connection learn routes dynamically ins
 
 To use BGP, you provide an Adobe Gateway ASN at the infrastructure level, and a BGP ASN and BGP peering address for each BGP-enabled connection. You can optionally specify an Adobe APIPA address for the Adobe side of the peering. If you omit it, Adobe assigns one automatically.
 
-When a route learned through BGP and a static route overlap for the same destination, the most specific route wins (longest-prefix match).
+When a route learned through BGP and a static route overlap for the same destination, the most specific route is selected (longest-prefix match).
 
 **To configure VPN using UI:**
 
@@ -463,10 +463,10 @@ When a route learned through BGP and a static route overlap for the same destina
     | --- | --- |
     | Connection name | Required. A descriptive name of your VPN connection, which you provided in the previous step and can be updated here. |
     | Address | Required. The VPN device IP address. |
-    | Address space | Required. The IP address ranges to route through the VPN. Press `Enter` after inputting a range to add another; click `X` after a range to remove it. |
+    | Address space | The IP address ranges to route through the VPN. *Required* for static connections. *Not required* when the connection uses BGP, that is, when **BGP ASN** and **BGP Peering Address** are set. Press `Enter` after adding a range to add another; click `X` to remove a range. |
     | BGP ASN | The Autonomous System Number on your side of the BGP peering. To enable BGP on the connection, provide this value together with BGP Peering Address. |
     | BGP Peering Address | The IP address used for BGP peering on your side of the connection. |
-    | Adobe APIPA Address | The IP address for the Adobe side of the BGP peering. If you leave this field empty, Adobe assigns one automatically. |
+    | Adobe APIPA Address | The IP address for the Adobe side of the BGP peering. If you leave this field empty, Adobe assigns an address from the infrastructure-level address space. To retrieve an *auto-assigned* address, contact Adobe Support. |
     | Shared key | Required. Your VPN preshared key. Select **Show shared key** to reveal the key so you can double-check its value. |
     | IP Security policy | Required. Adjust from the default values as required. |
 
@@ -633,9 +633,9 @@ When you enable an advanced networking configuration for an environment, you can
 
 ### Enable using the UI {#enabling-ui}
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+{{sign-in-to-cloud-manager}}
 
-1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
+1. On the **My Programs** console, select the program.
 
 1. From the **Program Overview** page, navigate to the **Environments** tab and select the environment where you want to enable the advanced networking configuration under the **Environments** heading in the left panel. Then select the **Advanced network configuration** tab of the selected environment and click **Enable network infrastructure**.
 
@@ -692,9 +692,9 @@ After [enabling advanced networking configurations for environments](#enabling),
 
 ### Edit or delete using the UI {#editing-ui}
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+{{sign-in-to-cloud-manager}}
 
-1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
+1. On the **My Programs** console, select the program.
 
 1. From the **Program Overview** page, navigate to the **Environments** tab and select the environment where you want to enable the advanced networking configuration under the **Environments** heading in the left panel. Then select the **Advanced network configuration** tab of the selected environment and click the ellipsis button.
 
@@ -730,9 +730,9 @@ Once network infrastructure is created for a program, only limited properties ca
 
 ### Edit, test, or delete with the UI {#delete-ui}
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization
+{{sign-in-to-cloud-manager}}
 
-1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
+1. On the **My Programs** console, select the program.
 
 1. From the **Program Overview** page, navigate to the **Environments** tab.
 1. In the left panel, click **Network Infrastructures**.
