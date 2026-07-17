@@ -78,24 +78,28 @@ For table component properties, see the [Adaptive Forms Core Components document
 Header cells are **Text** components. To change a column header label:
 
 1. Select the header cell in the table.
+1. In the toolbar, select **Edit**.
 1. Update the header label.
 1. Click **Done**.
 
-### Replace ell components
+### Replace body cell components
 
 Body cells are **Text Box** components by default. You can replace a body cell with another Adaptive Form component, such as a **Number Input**, **Date Picker**, or **Drop-down list**:
 
 1. Select the body cell you want to replace.
-1. Delete the existing component or drag a new component from the **Components** browser into the cell.
+1. In the toolbar, select **Replace**.
+1. Select the component you want to use in the cell, such as **Number Input**.
 
-You can use different component types in different cells within the same row.
+>[!NOTE]
+>
+>You can use different component types in different cells within the same row.
 
 ## Add or delete a column {#add-or-delete-a-column}
 
 To add or delete a column:
 
 1. Select a header cell in the column you want to modify.
-1. Use the toolbar options to **Add Column** or **Delete Column**.
+1. In the toolbar, select **Add Column** or **Delete Column**.
 
 When you add a column, a new header cell and corresponding body cells are added to each row. When you delete a column, the header cell and all body cells in that column are removed.
 
@@ -107,9 +111,8 @@ When you add a column, a new header cell and corresponding body cells are added 
 
 To add, delete, or move a row:
 
-1. Click any cell in the row you want to modify.
-1. Open the **Content** browser and select the corresponding row (for example, **Row 1** or **Row 2**).
-1. Use the row toolbar to perform one of the following actions:
+1. Select the row where you want to add, delete, or move a row.
+1. In the toolbar, select one of the following actions:
    * **Move Up** — moves the selected row up.
    * **Move Down** — moves the selected row down.
    * **Add Row** — adds a row below the selected row.
@@ -121,13 +124,13 @@ You can merge adjacent body cells in the same row to create a single cell that s
 
 To merge cells:
 
-1. Select the body cells you want to merge.
-1. Right-click the selection and select **Merge**.
+1. Press and hold **Command** (macOS) or **Control** (Windows) and select the adjacent body cells you want to merge.
+1. In the toolbar, select **Merge Cells**.
 
 To split a merged cell:
 
-1. Right-click the merged cell.
-1. Select **Split Cells**.
+1. Select the merged cell.
+1. In the toolbar, select **Split Cell**.
 
 Merged cells are useful for labels, subheadings, or fields that span multiple columns within a row.
 
@@ -137,18 +140,18 @@ Merged cells are useful for labels, subheadings, or fields that span multiple co
 
 ## Set column width {#set-column-width}
 
-You can set proportional column widths using comma-separated values.
+You can set proportional column widths using comma-separated values in the table configuration dialog.
 
 1. Select the **Table** component.
+1. In the toolbar, select **Configure**.
 1. In the **Column Width** field, enter a comma-separated list of values.
+1. Click **Done**.
 
-For example, for a table with three columns, entering `2,4,6` sets the column widths as follows:
+For example, for a table that includes three columns, specifying `2,4,6` as the value in the **Column Width** field sets the width of columns as 2/12 for the first column, 4/12 for the second column, and 6/12 for the third column. 2/12 as the width for the first column refers to one-sixth of the table width. Similarly, 4/12 sets the second column width as one-third of the table width and 6/12 sets the third column width as half of the table width.
 
-* First column: 2/12 of the table width
-* Second column: 4/12 of the table width
-* Third column: 6/12 of the table width
-
-The values represent relative proportions, not fixed pixel widths.
+>[!NOTE]
+>
+> The values represent relative proportions, not fixed pixel widths.
 
 ## Sort columns {#sort-columns}
 
@@ -159,14 +162,20 @@ Sorting applies to columns that contain static text, data model properties, or a
 ### Enable sorting on the table
 
 1. Select the **Table** component.
-1. Enable sorting on the table.
+1. In the toolbar, select **Configure**.
+1. Select **Enable Sorting**.
 1. Click **Done**.
+1. Switch to **Preview** mode.
+
+>[!NOTE]
+>
+> Sorting is enabled by default.
 
 In **Preview** mode, sorting icons appear in the column headers. Click a column header to sort values in ascending or descending order.
 
 ### Disable sorting on a specific column
 
-Unlike Foundation Components, the Core Component Table supports disabling sorting on individual columns. This helps meet accessibility requirements when certain columns should not be sortable.
+The Core Component Table supports disabling sorting on individual columns. This helps meet accessibility requirements when certain columns should not be sortable.
 
 To disable sorting on a column:
 
@@ -180,9 +189,13 @@ Columns with sorting disabled do not display sorting controls at runtime.
 
 Tables support adding and deleting rows at runtime when a row is configured as repeatable.
 
-1. Select a table row in the **Content** browser.
-1. Specify **Minimum** and **Maximum** repetitions to control how many row instances a user can add or remove.
+1. Select the table row you want to make repeatable.
+1. In the toolbar, select **Configure**.
+1. Select the **Repeat Panel** tab.
+1. Turn on **Make row repeatable**.
+1. Specify **Minimum repetitions** and **Maximum repetitions** to control how many row instances a user can add or remove.
 1. Click **Done**.
+1. Switch to **Preview** mode.
 
 At runtime or in **Preview** mode, users see **Add** and **Delete** buttons to add or remove row instances.
 
