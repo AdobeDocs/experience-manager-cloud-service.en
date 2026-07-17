@@ -126,6 +126,14 @@ The integration enables users to quickly discover and search for assets based on
 >
 >This feature is available as Limited Availability feature and requires licenses for Workfront Planning and GenStudio for Performance Marketing. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
+**AI-powered content onboarding and content supply chain automation**
+
+Use an AI-powered agent to configure and automate content migrations and recurring synchronization between supported content repositories. The agent guides you through connection setup, metadata mapping, and validation with dry runs before transferring content. By eliminating manual processes and custom integrations, this capability accelerates onboarding, simplifies ongoing synchronization, and helps keep assets and metadata consistent across systems.
+
+>[!IMPORTANT]
+>
+>This feature is available as Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+
 
 ### New features in Dynamic Media with OpenAPI capabilities {#new-features-dynamic-media-openapi}
 
@@ -198,6 +206,13 @@ Dynamic Media with OpenAPI capabilities now lets you upload custom thumbnails fo
 * **Configure Dropdown Options for Associate UI**: Dropdown fields in the Associate UI now use an **Options Binding** model. Authors configure **Bind from Data** for dynamic option lists or manual static options so associates see the correct choices and pre-selected value. **Data Binding** is not supported for dropdown fields. For more information, see [Configure Dropdown Options for Associate UI](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md).
 
 * **Configure Bound and Unbound Variables for Associate UI**: Bound and unbound variables in **Text** components can now be configured for the Associate UI. Authors choose whether associates edit the entire text block inline in the document preview or enter values for individual variables in the data entry panel. Duplicate variable names propagate values across all matching occurrences in the preview. For more information, see [Configure Bound and Unbound Variables for Associate UI](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md).
+
+#### Additional CAPTCHA options for bot protection
+
+AEM Forms now supports two additional CAPTCHA solutions for protecting Adaptive Forms from bots and spam submissions, in addition to the already available Google reCAPTCHA. This gives you more choice and flexibility in securing your forms.
+
+* **Cloudflare Turnstile**: A frictionless CAPTCHA that verifies users through a simple challenge without requiring explicit interaction, improving the user experience. For more information, see [Use Turnstile in an Adaptive Form for Core Components](/help/forms/integrate-adaptive-forms-turnstile-core-components.md) and [Use Turnstile in an Adaptive Form for Foundation Components](/help/forms/integrate-adaptive-forms-turnstile.md).
+* **hCaptcha**: A privacy-focused CAPTCHA that offers a user-friendly alternative with an emphasis on data privacy, balancing security and user experience. For more information, see [Use hCaptcha in an Adaptive Form for Core Components](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md) and [Use hCaptcha in an Adaptive Form for Foundation Components](/help/forms/integrate-adaptive-forms-hcaptcha.md).
 
 ### Early Adopter Features
 
@@ -371,20 +386,38 @@ To join the alpha, email [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta Features {#assets-beta-program-features}
 
-#### UI Extensibility for Assets View {#ui-extensibility-assets-view}
+#### UI Extensibility for Assets View {#ui-extensibility-assets-view-beta}
 
 Assets View supports UI Extensibility, a developer-first capability that empowers customers to tailor the out-of-the-box experience to meet their specific business requirements.
 Customers can leverage existing stable extension points by following Adobe's developer documentation to build and deploy extensions with minimal effort. For use cases where a required extension point is not yet available, Adobe works directly with customers to explore the requirements and assess the technical feasibility of delivering new extensibility APIs tailored to their needs, and may deliver such new APIs as **Beta Releases**.
 Additionally, Adobe has developed a **GenAI-powered extension generation tool** currently available in an internal early adoption phase. This tool can significantly accelerate extension development time. Customers participating in this beta program will receive access to the tool and are encouraged to share feedback to help shape its evolution.
 To participate or learn more, send an email to `GRP-ASSETSVIEWUIEXTENSIBILITY@adobe.com`.
 
-#### Brand Aware Metadata (BAM) {#brand-aware-metadata}
+#### Brand Aware Metadata (BAM) {#brand-aware-metadata-beta}
 
 AEM Assets now supports Brand Aware Metadata, an AI-powered capability that automatically generates custom metadata for assets when uploaded or re-processed. This reduces the need for manual entry by orders of magnitude, helping teams find assets and deliver new experiences much faster. Customers maintain a library of prompts that define how AI should populate any given metadata field, tailored to their own brand vocabulary and taxonomy. This prompt library includes a playground to preview results and a prompt optimizer that automatically drafts suggested improvements.
 
 Adobe is actively expanding BAM's capabilities through direct co-innovation with customers. Where a specific use case is not yet supported, Adobe works with participating customers to understand their needs and may deliver expanded capabilities as the beta progresses. Customers in this program gain early access to new features as they ship and are encouraged to share feedback that directly shapes the roadmap.
 
 To participate or learn more, send an email to `GRP-AEM-ASSETS-BRANDAWAREMETADATA@adobe.com`.
+
+#### Assets Onboarding Agent {#assets-onboarding-agent-beta}
+
+If your organization is new to Experience Manager Assets, you can opt in to the **Assets Onboarding Agent Beta program**, which gives you access to the following AEM Brand Experience AI skills for onboarding:
+
+* Guides users through DAM setup and migration planning by using a conversational workflow to capture business needs and recommend how an AEM Assets deployment should be structured.
+
+* Creates core AEM Assets configuration artifacts such as folder hierarchies, tag taxonomies, metadata forms, and can help execute bulk import jobs to accelerate onboarding.
+
+**Why participate?**
+
+* Go live faster with a ready-to-use DAM environment by eliminating repetitive, manual steps with AI assistance.
+
+* Lower operational overhead with automated configuration and preparation of folders, tags, metadata and asset imports.
+
+* Improve consistency, governance, and ensure adherence to best practices through a curated setup experience with intelligent recommendations tailor-made for your business.
+
+To participate or learn more, send an email to `GRP-AEM-ONBOARDING-AGENT@adobe.com`.
 
 ## [!DNL Experience Manager] Guides {#guides}
 
