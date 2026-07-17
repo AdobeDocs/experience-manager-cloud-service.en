@@ -254,7 +254,11 @@ You can click the Content Fragment path to seamlessly navigate to the Content Fr
 
 ## Content Discovery Agent availability within Content Hub {#content-discovery-agent-availability-within-content-hub}
 
-You can now access the Discovery Agent directly from the Content Hub interface. This feature is available for Content Hub environments that use the latest search stack, which also provides AI Search and sorting capabilities. Adobe is rolling out the latest search stack to Content Hub customers in phases. If AI Search is available in your Content Hub interface, you can use the Content Discovery Agent. 
+You can now access the Discovery Agent directly from the Content Hub interface. This feature is available for Content Hub environments that use the latest search stack, which also provides AI Search and sorting capabilities. Adobe is rolling out the latest search stack to Content Hub customers in phases. If AI Search is available in your Content Hub interface, you can use the Content Discovery Agent.
+
+>[!IMPORTANT]
+>
+>This feature is available as a Limited Availability feature.
 
 To view if [AI Search](/help/assets/search-assets-content-hub.md#enable-disable-ai-search-content-hub) is available, navigate to your user profile icon and click **Configurations** on the Content Hub User Interface. Select the **Search** tab. If you can see options to select **AI Search** or **Keyword**, AI Search is available and you are using the latest search stack.
 
@@ -262,10 +266,6 @@ To view if [AI Search](/help/assets/search-assets-content-hub.md#enable-disable-
 
 
 If AI Search is not yet available and you want to enable Content Discovery Agent within Content Hub, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
-
->[!IMPORTANT]
->
->This feature is available as Limited Availability feature.
 
 ## Prompting Best Practices {#prompting-best-practices-discovery-agent}
 
