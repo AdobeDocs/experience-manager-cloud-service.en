@@ -41,8 +41,8 @@ AEM exposes MCP servers as HTTP endpoints. The endpoints listed below are relati
 
 |MCP Server|Endpoint|Description|
 |---|---|---|
-|**Content**|`/content`|Content operations including create, read, update, and delete (CRUD) for pages and content fragments, plus asset importing and assets search (minimum required AEM release version is `26309`). With the [Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md), there is also support for asset upload, download, move/copy/delete, and publish/unpublish for assets, along with editing metadata, inspecting references, and identifying unused assets.|
-|**Content (read-only)**|`/content-readonly`|Read-only content operations (get, list/search) for pages and content fragments, plus assets search (minimum required AEM release version is `26309`). With the [Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md), there is also support for asset download, inspecting references, and identifying unused assets.|
+|**Content**|`/content`|Content operations including create, read, update, and delete (CRUD) for pages and content fragments, plus asset importing and assets search (minimum required AEM release version is `26309`). With the [Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md) and the [ChatGPT plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md), there is also support for asset upload, download, move/copy/delete, and publish/unpublish for assets, along with editing metadata, inspecting references, and identifying unused assets.|
+|**Content (read-only)**|`/content-readonly`|Read-only content operations (get, list/search) for pages and content fragments, plus assets search (minimum required AEM release version is `26309`). With the [Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md) and the [ChatGPT plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md), there is also support for asset download, inspecting references, and identifying unused assets.|
 |**Cloud Manager**|`/cloudmanager`|Manage Cloud Manager entities including programs, environments, repositories and pipelines, which can also be triggered.|
 |**Experience Governance**|`/experience-governance`|Evaluate content (text, images, pages) against brand governance rules, and list brand configurations and checks.<br/>If you are interested, you must sign up for the [agents trial or have a paid license](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) in order to access the Experience Governance MCP.|
 |**Cloud Migration**|`/cloud-migration`|Fetch Best Practices Analyzer (BPA) findings from Cloud Acceleration Manager (CAM) by migration pattern or severity level, enabling AI agents to drive code migration from AEM 6.x to AEM as a Cloud Service. See [Using the Cloud Migration MCP](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md).|
@@ -93,7 +93,7 @@ Configuring MCP for AEM involves two main parts:
 Step-by-step guides covering both steps are available for:
 
 * [Anthropic Claude (both for manually configuring MCP servers, and also installing the AEM Claude Connector)](/help/ai-in-aem/mcp-support/setup-claude.md)
-* [OpenAI ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
+* [OpenAI ChatGPT (both for manually configuring MCP servers, and also installing the AEM ChatGPT plugin)](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
 * [Cursor](/help/ai-in-aem/mcp-support/setup-cursor.md)
 * [JetBrains with GitHub Copilot](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
 * [Microsoft Copilot Studio](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
