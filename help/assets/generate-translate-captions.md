@@ -43,7 +43,7 @@ Caption files are generated for the selected languages and are added to the **Ca
 
 >[!NOTE]
 >
->Only audio tracks that are in the **Processed** or **Processing** state and are in a supported language are available for selection.
+>Only audio tracks that are in the **Processed** or **Processing** state and are in a supported language can be selected for caption generation.
 
 1. Verify the generated caption details, if required.
 1. Click **Save**.
@@ -66,7 +66,7 @@ Translated captions are added to the **Captions** section.
 
 >[!NOTE]
 >
->Only caption files that are in the **Processed** or **Processing** state and are in a supported language are available for selection.
+>Only caption files that are in the Processed or Processing state and are in a supported language can be selected as source captions for translation.
 
 1. Verify the translated caption details, if required.
 1. Click **Save**.
