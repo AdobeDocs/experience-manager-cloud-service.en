@@ -1,6 +1,6 @@
 ---
 title: Add a table to an Adaptive Form (Core Components)
-description: Learn to add and configure the Table component in Adaptive Forms based on Core Components. Create structured rows and columns, merge cells, enable sorting, set column widths, and add repeatable rows.
+description: Learn to add and configure the Table component in Adaptive Forms based on Core Components. Create structured rows and columns, merge table row cells, enable sorting, set column widths, and add repeatable rows.
 feature: Adaptive Forms, Core Components
 keywords: table component, adaptive form table, core components table, merge cells, column sorting, repeatable rows
 role: User, Developer
@@ -17,7 +17,7 @@ exl-id: f4a8c2e1-9b3d-4a7f-8c6e-1d2f3a4b5c6d
 
 Using tables is an effective way to present complex, structured data in Adaptive Forms. Government and financial services forms often require tabular layouts for numeric data, line items, and multi-column inputs.
 
-The **Adaptive Form Table** Core Component lets you author responsive tables with configurable rows and columns, merge and split cells, enable column sorting, set proportional column widths, and add or remove rows at runtime. This article describes how to use the Table component in Adaptive Forms based on Core Components.
+The **Adaptive Form Table** Core Component lets you author responsive tables with configurable rows and columns, merge and split table row cells, enable column sorting, set proportional column widths, and add or remove rows at runtime. This article describes how to use the Table component in Adaptive Forms based on Core Components.
 
 >[!NOTE]
 >
@@ -32,8 +32,8 @@ The Table Core Component supports the following capabilities:
 * Repeatable rows with add and remove actions at runtime
 * Column sorting with ascending and descending order
 * Disable sorting on individual columns for accessibility compliance
-* Proportional column widths using comma-separated values
-* Merge and split body cells
+* Proportional column widths 
+* Merge and split table row cells
 * Replace default text box cells with other Adaptive Form components
 * Bind table data to a form data model
 * Calculations in table rows using the [Rule Editor](/help/forms/rule-editor-core-components.md)
@@ -41,7 +41,7 @@ The Table Core Component supports the following capabilities:
 
 ## Comparison with Foundation Component Table {#comparison-with-foundation-component-table}
 
-If you already use the [Foundation Component Table](/help/forms/adaptive-forms-tables.md), most table authoring operations work the same way—adding rows and columns, merging cells, setting column widths, enabling sorting, and adding repeatable rows.
+If you already use the [Foundation Component Table](/help/forms/adaptive-forms-tables.md), most table authoring operations work the same way—adding rows and columns, merging and splitting table row cells, setting column widths, enabling sorting, and adding repeatable rows.
 
 The Core Component Table adds or improves the following compared to the Foundation Component Table:
 
@@ -118,21 +118,21 @@ To add, delete, or move a row:
    * **Add Row** — adds a row below the selected row.
    * **Delete Row** — deletes the selected row.
 
-## Merge and split cells {#merge-and-split-cells}
+## Merge and split table row cells {#merge-and-split-cells}
 
-You can merge adjacent body cells in the same row to create a single cell that spans multiple columns.
+You can merge adjacent table row cells in the same row to create a single cell that spans multiple columns.
 
-To merge cells:
+To merge table row cells:
 
-1. Press and hold **Command** (macOS) or **Control** (Windows) and select the adjacent body cells you want to merge.
+1. Press and hold **Command** (macOS) or **Control** (Windows) and select the adjacent table row cells you want to merge.
 1. In the toolbar, select **Merge Cells**.
 
-To split a merged cell:
+To split a merged table row cell:
 
 1. Select the merged cell.
 1. In the toolbar, select **Split Cell**.
 
-Merged cells are useful for labels, subheadings, or fields that span multiple columns within a row.
+Merged table row cells are useful for labels, subheadings, or fields that span multiple columns within a row.
 
 >[!NOTE]
 >
@@ -222,7 +222,7 @@ For more information, see:
 
 Keep the following limitations in mind when authoring tables with Core Components:
 
-* **Row span is not supported.** You can merge cells horizontally within a row, but not vertically across rows.
+* **Row span is not supported.** You can merge table row cells horizontally within a row, but not vertically across rows.
 * **Header cells cannot span multiple columns.**
 * **Responsive mobile layouts** such as collapsible columns and headers-on-left layouts available in Foundation Components are planned for a future release of the Core Component Table.
 * **Theme Editor support** for the Table component is planned for a future release. Use Adaptive Form themes until Theme Editor support is available.
