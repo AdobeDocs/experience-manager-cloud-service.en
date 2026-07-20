@@ -233,6 +233,10 @@ The Content Fragment assets are made up of the following parts (either directly 
     * Create and author the fragment
     * Or later, when you [view or edit the properties](/help/sites-cloud/administering/content-fragments/authoring.md#view-properties-tags) when in the fragment editor
 
+  >[!NOTE]
+  >
+  >To use your Assets metadata forms with the Content Fragments console and the new Content Fragment editor you will need to [import your forms](/help/assets/import-metadata-form-from-admin-view-to-assets-view.md) from the Admin View to the [Assets View](/help/assets/assets-view-introduction.md), where you can also [manage your metadata forms](/help/assets/metadata-assets-view.md#metadata-forms).
+  
   >[!CAUTION]
   >
   >Metadata processing profiles do not apply to Content Fragments.
