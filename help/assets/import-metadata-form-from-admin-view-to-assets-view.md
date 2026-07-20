@@ -19,7 +19,7 @@ Ensure you have admin rights to import the metadata forms and their folder assoc
 
 As an administrator, execute the following steps to import the metadata forms available in [!DNL Admin View] to [!DNL Assets View]:
 
-1. Navigate to the [!DNL Assets View] home page and click **[!UICONTROL  Metadata Forms]** under **[!UICONTROL Settings]** to open the **[!UICONTROL Metadata Forms]** page displaying the list of metadata forms available in [!DNL Assets View]. 
+1. Navigate to the [!DNL Assets View] home page and click **[!UICONTROL Metadata Forms]** under **[!UICONTROL Settings]** to open the **[!UICONTROL Metadata Forms]** page displaying the list of metadata forms available in [!DNL Assets View]. 
 
    ![metadata forms page](/help/assets/assets/metadata-forms-page.png)
 
