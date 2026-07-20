@@ -24,7 +24,7 @@ After defining your [Content Fragment Models](#creating-a-content-model) you can
 * [Create your Content Fragments](#creating-a-content-fragment). 
 * Then open the [Content Fragment Editor](#opening-the-fragment-editor) to [author your content and manage your Variations](#editing-the-content-of-your-fragment).
 * [Manage Tags](#manage-tags)
-* [View, and edit, the Properties (Metadata)](#viewing-and-editing-properties)
+* [View, and edit, the Properties and Metadata](#viewing-and-editing-properties)
 * [View the Structure Tree](/help/sites-cloud/administering/content-fragments/authoring.md#structure-tree)
 
 >[!NOTE]
@@ -398,7 +398,7 @@ You can also view, and edit, the tags applied to a fragment using the [Propertie
 
 ## Viewing, and Editing, Properties (Editor) {#viewing-and-editing-properties}
 
-You can view, and edit, the properties (metadata) of a fragment using the [Properties](/help/sites-cloud/administering/content-fragments/authoring.md) tab of the editor. The information shown differs between **Main** and any **Variations**.
+You can view, and edit, the properties and metadata of a fragment using the [Properties](/help/sites-cloud/administering/content-fragments/authoring.md) tab of the editor. The information shown differs between **Main** and any **Variations**.
 
 ## Publishing and Previewing a Fragment {#publishing-and-previewing-a-fragment}
 

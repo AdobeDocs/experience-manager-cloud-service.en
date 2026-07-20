@@ -64,7 +64,7 @@ When you first open the Content Fragment Editor, you see four main areas:
 
 * left panel: shows the **[Variations](#variations)** for the Content Fragment, and its **Fields**:
   * these links can be used to [navigate the Content Fragment structure](#navigate-structure)
-* right panel: presents tabs [showing the properties (metadata) and tags](#view-properties-tags), information about the [version history](#view-version-history), and information related to any [language copies](#view-language-copies)
+* right panel: presents tabs [showing the properties, metadata and tags](#view-properties-tags), information about the [version history](#view-version-history), and information related to any [language copies](#view-language-copies)
   * in the **Properties** tab you can update the **Title** and **Description** for the fragment, or **Variation**
   * In the **Comments** tab you can add, and read, comments to help you collaborate with other authors
 * central panel: shows the actual fields, and content, of the selected variation
@@ -352,6 +352,8 @@ To reference remote assets:
 
 There are some limitations when referencing remote assets:
 
+<!-- CQDOC-23782 - check statements about metadata -->
+
 * Only [Approved](/help/assets/approve-assets.md) assets are available for reference from a remote Asset repository.
 
 * If a referenced asset is removed from the remote repository, this results in a broken Content Reference.
@@ -424,7 +426,7 @@ For example:
 
 <!-- CQDOC-23782 -->
 
-In the properties tab of the right panel, properties (metadata) and tags can be viewed. The properties can be either:
+In the properties tab of the right panel, properties, metadata and tags can be viewed. The properties can be either:
 
 * for the **Content Fragment** - if **Main** is currently selected
 * for a specific **Variation**
@@ -628,6 +630,8 @@ The **Fields** panel lists all fields within the Content Fragment. The icon indi
 </table>
 
 ## Good to know {#good-to-know}
+
+<!-- CQDOC-23782 - check statements about metadata -->
 
 * To edit a Content Fragment you need [the appropriate permissions](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Contact your system administrator if you are experiencing issues.
 
