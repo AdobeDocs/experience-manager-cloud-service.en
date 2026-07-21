@@ -8,14 +8,25 @@ solution: Experience Manager Sites
 ---
 # Properties, Tags and Metadata {#properties-tags-and-metadata}
 
-You can view, and edit, the properties, tags and metadata of a fragment using the:
+You can view, and edit, the properties, tags and metadata of a fragment from both the Content Fragments console and the new Content Fragment editor.
 
-* [Properties](/help/sites-cloud/administering/content-fragments/authoring.md) tab of the editor
-* Properties icon and tab of the Content Fragments console
+* Properties
 
->[!NOTE]
->
->From the editor the information shown can differ between **Main** and any **Variations**.
+  The properties of a Content Fragment are the **Basic** items of information about the fragment. For example, title, path, related Content Fragment Model and more. Many are managed by AEM and cannot be directly edited by the user, but a few can be.
+
+* Tags
+
+  Tags are a quick and easy method of classifying content within a website. Tags may be thought of as keywords or labels that can be attached to a page, an asset, or other content to enable searches to find that content and related content.
+
+  Tags can be managed from either the main panel of the Content Fragments console, or the Properties tab of the new Content Fragment editor.
+
+  >[!NOTE]
+  >
+  >See also [Using Tags](/help/sites-cloud/authoring/sites-console/tags.md).
+
+* Metadata
+
+  Content Fragment metadata allows you to define a set of information that is relevant to, and required for, a group of fragments. This allows you to classify the fragments according to your requirements. The metadata is defined using Assets metadata [schemas](/help/assets/metadata-schemas.md) and [forms](/help/assets/metadata-assets-view.md) and applied to the folders containing your fragments.
 
 ## Properties {#properties}
 
@@ -29,6 +40,10 @@ In the properties tab of the right panel, properties, metadata and tags can be v
 <!-- CQDOC-23473 - new screenshot? -->
 
 ![Content Fragment Editor - Properties](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-properties.png) 
+
+>[!NOTE]
+>
+>From the editor the information shown can differ between **Main** and any **Variations**.
 
 ### Edit Properties and Tags {#edit-properties-tags}
 

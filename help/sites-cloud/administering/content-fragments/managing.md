@@ -385,12 +385,11 @@ You can also view, and edit, the tags applied to a fragment using the [Propertie
 
 ## Manage Properties and Metadata {#manage-properties-and-metadata}
 
-You can view, and edit, the properties and metadata of a fragment using the:
+You can view, and edit, the properties and metadata of a fragment using both the Content Fragments console and the new Content Fragment editor.
 
-* [Properties](/help/sites-cloud/administering/content-fragments/authoring.md) tab of the editor
-* Properties icon and tab of the Content Fragments console
-
-The information shown may differ between **Main** and any **Variations**.
+>[!NOTE]
+>
+>The information shown may differ between **Main** and any **Variations**.
 
 >[!NOTE]
 >
