@@ -58,7 +58,7 @@ Here you can see that there are three main areas:
   * Here you can compress, or expand, links to the panels
   * Here you can hide, or reveal, the folder tree
   * You can select a specific branch of the tree
-  * You can take actions on a folder
+  * You can take [actions on a folder](#folder-actions)
   * This can be resized to show nested folders
   * As well as Content Fragments, you can:
     * View [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) or [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md); you can also compress, or expand, links to the panels
@@ -216,15 +216,22 @@ When the folder tree is expanded you can use the ellipse (three dots) to access 
 
 The following actions are available:
 
-* **Rename**
-* **Copy**
-* **Move**
-* **Delete**
-* **Folder Info** - you can use this for applying [configurations](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder) and cloud configurations to your folder.
-
-For example:
-
 ![Content Fragments - folder actions](/help/sites-cloud/administering/content-fragments/assets/cf-managing-folder-actions.png)
+
+* **Rename**
+  Rename a folder.
+* **Copy**
+  Copy a folder to a new location.
+* **Move**
+  Move a folder to a new location.
+* **Delete**
+  After confirmation you can delete the folder.
+* **Folder Info**
+  Displays a table of information fields for the folder; for example, `ìd`, `childIds`, `permissions` and others.
+
+  For example:
+
+  ![Content Fragments - folder actions](/help/sites-cloud/administering/content-fragments/assets/cf-managing-folder-actions-info.png)
 
 ## Creating Content Fragments {#creating-content-fragments}
 
