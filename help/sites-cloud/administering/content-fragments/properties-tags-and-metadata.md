@@ -86,7 +86,7 @@ Then view and edit the metadata for your Content Fragment in:
 
 1. The [new Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md#view-and-edit-properties-metadata-and-tags)
 
->[!NOTE]
+  >[!NOTE]
   >
   >To use your (older) Assets metadata forms with the Content Fragments console and the new Content Fragment editor you will need to [import your forms](/help/assets/import-metadata-form-from-admin-view-to-assets-view.md) from the Admin View to the [Assets View](/help/assets/assets-view-introduction.md), where you can also [manage your metadata forms](/help/assets/metadata-assets-view.md#metadata-forms).
 
