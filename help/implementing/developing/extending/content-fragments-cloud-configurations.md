@@ -12,6 +12,12 @@ With a Content Fragment Cloud Configuration you can customize various aspects of
 
 After [creating](#create-a-content-fragment-cloud-configuration) and [defining](#define-the-content-fragment-cloud-configuration) the configuration you also [assign the Cloud Configuration to your individual Assets folders](#apply-the-configuration-to-your-folder), so that it is applied to all the Content Fragments in that folder.
 
+>[!IMPORTANT]
+>
+>Content Fragment Cloud Configurations are currently in Limited Availability.
+>
+>If you want to participate you can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to request enablement for your deployment.
+
 >[!NOTE]
 >
 >The Content Fragment Cloud Configurations do not impact:
@@ -174,7 +180,7 @@ Select the appropriate **Configuration** in the **Cloud Services** tab of the **
 >
 >A configuration on the folder will be applied to all Content Fragments in that folder. 
 >
->If no configuration is applied to a folder, then any configuration will only be inherited from the direct parent folder.
+>If no configuration is applied to a folder, then the first configuration found by inheritance (either from the direct parent folder, or another ascending folder) will be applied.
 >
 >If no Content Fragment Cloud Configuration is applied to a fragment (either directly, or through inheritance), the default editor settings are used.
 
