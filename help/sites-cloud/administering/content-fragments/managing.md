@@ -210,8 +210,6 @@ Selecting a specific fragment opens a toolbar focused on the actions available f
 
 ### Folder Actions {#folder-actions}
 
-<!-- CQDOC-23792 - need link after cloud configurations live -->
-
 When the folder tree is expanded you can use the ellipse (three dots) to access and trigger actions on the folder itself.
 
 The following actions are available:
