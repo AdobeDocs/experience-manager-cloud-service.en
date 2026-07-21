@@ -70,8 +70,8 @@ To use the Content Fragment functionality, of Content Fragment Models and GraphQ
 
 ## Apply the Configuration to your Folder {#apply-the-configuration-to-your-folder}
 
-When the configuration **global** is enabled for Content Fragment functionality, it then applies to any Assets folder - accessible through the Assets console.
+When the configuration **global** is enabled for Content Fragment functionality, it then applies to any Assets folder - accessible through the **Assets** console.
 
-To use other configurations (therefore excluding global) with a comparable Assets folder, you have to define the connection. Do this by selecting the appropriate **Configuration** in the **Cloud Services** tab of the **Folder Properties** of the appropriate folder. 
+To use other configurations (therefore excluding global) with a comparable Assets folder, you have to define the connection. Do this by selecting the appropriate **Configuration** in the **Cloud Services** tab of the **Folder Properties** of the appropriate folder.
 
 ![Apply configuration](/help/sites-cloud/administering/content-fragments/assets/cf-setup-apply-conf.png)
