@@ -33,7 +33,7 @@ Now you can put all this knowledge to use and start creating Content Fragments f
 
 ## Additional Resources {#additional-resources}
 
-* [Metadata - Fragment Properties](/help/sites-cloud/administering/content-fragments/authoring.md#view-properties-tags)
+* [Metadata - Fragment Properties](/help/sites-cloud/administering/content-fragments/authoring.md#view-and-edit-properties-metadata-and-tags)
   
 * [Using Tags](/help/sites-cloud/authoring/sites-console/tags.md)
 
