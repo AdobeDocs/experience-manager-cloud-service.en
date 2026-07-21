@@ -11,7 +11,7 @@ solution: Experience Manager Sites
 You can view, and edit, the properties, tags and metadata of a fragment using the:
 
 * [Properties](/help/sites-cloud/administering/content-fragments/authoring.md) tab of the editor
-* [Properties]() icon and tab of the Content Fragments console
+* Properties icon and tab of the Content Fragments console
 
 >[!NOTE]
 >
