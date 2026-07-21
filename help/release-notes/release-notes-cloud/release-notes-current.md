@@ -93,6 +93,10 @@ AEM now supports [Visual Content Fragments](/help/sites-cloud/administering/cont
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
+**Adobe Asset Link UXP for Photoshop now Also Supports Assets Managed Services and On-Premise Deployments**
+
+[Adobe Asset Link UXP](https://helpx.adobe.com/business/enterprise/manage-services/adobe-asset-link/adobe-asset-link.html) plugin for [!DNL Adobe Photoshop] was updated to version 2.0 and adds compatibility with Managed Services and On-Premise deployments of Assets. The UXP plugin works with Photoshop on the navit Apple Sillicon on MacOS, providing native performance and access to the latest Photoshop features while allowing users to connect to any Adobe Experience Manager Assets environment, independently of its deployment model. To install or update the plugin, use [!DNL Adobe Creative Cloud Destkop] app's Plugins section, or go to [this link](https://adobe.com/go/cc_plugins_discover_plugin?pluginId=e800f95d&workflow=share). 
+
 **Open Photoshop assets in Adobe Express Embedded Editor**
 
 You can now open Adobe Photoshop (.psd) files in addition to JPEG and PNG formats in Adobe Express embedded editor from Assets view and Content Hub. This enhancement enables creative and marketing teams to work with layered design files without leaving AEM Assets, streamlining content updates and reducing the need to switch between applications. PSD support helps accelerate content creation workflows while preserving the flexibility of source design assets. Users can save resulting remixed creations as channel-ready assets to AEM. 
