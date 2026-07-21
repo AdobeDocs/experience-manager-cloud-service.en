@@ -72,7 +72,7 @@ The metadata structure for a Content Fragment is defined by a [metadata form](#m
 
 The [metadata values can then be viewed and edited](/help/sites-cloud/administering/content-fragments/authoring.md#view-and-edit-properties-metadata-and-tags) in both the **Metadata** tab of the right hand **Properties** panel of the Content Fragments console and the new Content Fragment editor.
 
-### Metadata forms {#metadata-forms}
+### Create Metadata forms {#create-metadata-forms}
 
 You can define the metadata using metadata forms:
 
@@ -93,6 +93,9 @@ You can define the metadata using metadata forms:
    1. [Assign the metadata form to the folder](/help/assets/metadata-assets-view.md#assign-metadata-form-folder):
 
       ![Assets view - assign the metadata form to a folder](/help/sites-cloud/administering/content-fragments/assets/cf-metadata-form-assign.png)
+
+
+### Use Metadata forms {#use-metadata-forms}
 
 Then view and edit the metadata for your Content Fragment in:
 
