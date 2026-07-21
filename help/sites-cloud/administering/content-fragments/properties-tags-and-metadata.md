@@ -8,11 +8,11 @@ solution: Experience Manager Sites
 ---
 # Properties, Tags and Metadata {#properties-tags-and-metadata}
 
-You can view, and edit, the properties, tags and metadata of a fragment from both the Content Fragments console and the new Content Fragment editor.
+You can view, and edit, the properties, tags and metadata used to manage a Content Fragment from both the Content Fragments console and the new Content Fragment editor.
 
 * [Properties](#properties)
 
-  The properties of a Content Fragment are the **Basic** items of information about the fragment. For example, title, path, related Content Fragment Model and more. Many are managed by AEM and cannot be directly edited by the user, but a few can be.
+  The properties of a Content Fragment are the **Basic** items of information about the fragment. For example, path, related Content Fragment Model, locale and more. Many are managed by AEM and cannot be directly edited by the user, but a few can be.
 
 * [Tags](#tags)
 
@@ -35,6 +35,7 @@ You can view, and edit, the properties, tags and metadata of a fragment from bot
 You can manage the (basic) properties from both:
 
 <!-- CQDOC-23782 -->
+
 * Content Fragments console
 
   In the console you can [manage properties](/help/sites-cloud/administering/content-fragments/managing.md#manage-properties-and-metadata) by using the information ( **i** ) icon to open the right hand panel.
