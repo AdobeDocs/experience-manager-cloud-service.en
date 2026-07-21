@@ -375,9 +375,7 @@ FolderC
 
 <!-- CQDOC-23782 -->
 
-From the Content Fragments console you can [manage any applied tags](/help/sites-cloud/administering/content-fragments/properties-tags-and-metadata.md#manage-tags-console) from either the **Tags** column or the Properties tab. 
-
-### Manage Tags (Console) {#manage-tags-console}
+From the Content Fragments console you can [manage any applied tags](/help/sites-cloud/administering/content-fragments/properties-tags-and-metadata.md#manage-tags-console) from the **Tags** column. 
 
 To manage the tags from the console:
 
@@ -403,6 +401,8 @@ To manage the tags from the console:
 In the Content Fragments console you can view, and edit, the properties and metadata of a fragment using the information ( **i** ) icon to open the right hand panel:
 
 ![Manage Tags](/help/sites-cloud/administering/content-fragments/assets/cf-managing-properties.png)
+
+You can define the metadata structure using [metadata forms](#metadata-forms).
 
 >[!NOTE]
 >

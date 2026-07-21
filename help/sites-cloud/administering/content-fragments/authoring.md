@@ -439,6 +439,7 @@ In the Properties panel there are two tabs:
 
 * the properties are shown under **Basic**
 * the metadata under **Metadata**
+  You can define the metadata structure using [metadata forms](#metadata-forms).
 * Tags are also shown under **Basic**
 
 The properties can be either:

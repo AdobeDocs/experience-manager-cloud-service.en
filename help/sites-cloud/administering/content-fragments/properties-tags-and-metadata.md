@@ -30,14 +30,21 @@ You can view, and edit, the properties, tags and metadata of a fragment from bot
 
 ## Properties {#properties}
 
+You can manage the (basic) properties from both:
+
 <!-- CQDOC-23782 -->
+* Content Fragments console
 
-In the **Basic** tab of the right hand **Properties** panel of the editor, [the properties, metadata and tags can be viewed and edited](/help/sites-cloud/administering/content-fragments/authoring.md#view-and-edit-properties-metadata-and-tags). 
+  In the console you can [manage properties](/help/sites-cloud/administering/content-fragments/managing.md#manage-properties-and-metadata) by using the information ( **i** ) icon to open the right hand panel.
 
-The properties can be either:
+* new Content Fragment editor
 
-* for the **Content Fragment** - if **Main** is currently selected
-* for a specific **Variation**
+  In the **Basic** tab of the right hand **Properties** panel of the editor, [the properties (and metadata and tags) can be viewed and edited](/help/sites-cloud/administering/content-fragments/authoring.md#view-and-edit-properties-metadata-and-tags). 
+
+  The properties can be either:
+
+  * for the **Content Fragment** - if **Main** is currently selected
+  * for a specific **Variation**
 
 >[!NOTE]
 >
@@ -59,5 +66,27 @@ The tags can be:
 
 ## Metadata {#metadata}
 
-In the **Metadata** tab of the right hand **Properties** panel of the editor, [the properties, metadata and tags can be viewed and edited](/help/sites-cloud/administering/content-fragments/authoring.md#view-and-edit-properties-metadata-and-tags). 
+In the **Metadata** tab of the right hand **Properties** panel of the editor, [the metadata can be viewed and edited](/help/sites-cloud/administering/content-fragments/authoring.md#view-and-edit-properties-metadata-and-tags).
+
+The metadata for a Content Fragment is defined by a [metadata form](#metadata-forms) that is assigned to the folder containing the fragment.
+
+### Metadata forms {#metadata-forms}
+
+You can define the metadata using metadata forms:
+
+1. From [Assets View](/help/assets/assets-view-introduction.md):
+
+   1. [Create a metadata form](/help/assets/metadata-assets-view.md#metadata-forms).
+   1. [Define the individual items within that metadata form](/help/assets/metadata-assets-view.md#edit-metadata-forms).
+   1. [Assign the metadata form to the folder](/help/assets/metadata-assets-view.md#assign-metadata-form-folder).
+
+Then view and edit the metadata for your Content Fragment in:
+
+1. [The Content Fragments console](/help/sites-cloud/administering/content-fragments/managing.md#manage-properties-and-metadata)
+
+1. The [new Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md#view-and-edit-properties-metadata-and-tags)
+
+>[!NOTE]
+  >
+  >To use your (older) Assets metadata forms with the Content Fragments console and the new Content Fragment editor you will need to [import your forms](/help/assets/import-metadata-form-from-admin-view-to-assets-view.md) from the Admin View to the [Assets View](/help/assets/assets-view-introduction.md), where you can also [manage your metadata forms](/help/assets/metadata-assets-view.md#metadata-forms).
 
