@@ -217,19 +217,20 @@ The following actions are available:
 ![Content Fragments - folder actions](/help/sites-cloud/administering/content-fragments/assets/cf-managing-folder-actions.png)
 
 * **Rename**
+
   Rename a folder.
+
 * **Copy**
+
   Copy a folder to a new location.
+
 * **Move**
+
   Move a folder to a new location.
+
 * **Delete**
+
   After confirmation you can delete the folder.
-* **Folder Info**
-  Displays a table of information fields for the folder; for example, `ìd`, `childIds`, `permissions` and others.
-
-  For example:
-
-  ![Content Fragments - folder actions](/help/sites-cloud/administering/content-fragments/assets/cf-managing-folder-actions-info.png)
 
 ## Creating Content Fragments {#creating-content-fragments}
 
