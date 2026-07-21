@@ -26,7 +26,9 @@ You can view, and edit, the properties, tags and metadata of a fragment from bot
 
 * [Metadata](#metadata)
 
-  Content Fragment metadata allows you to define a set of information that is relevant to, and required for, a group of fragments. This allows you to classify the fragments according to your requirements. The metadata is defined using Assets metadata [schemas](/help/assets/metadata-schemas.md) and [forms](/help/assets/metadata-assets-view.md) and applied to the folders containing your fragments.
+  Content Fragment metadata allows you to define a set of information that is relevant to, and required for, a group of fragments. This allows you to classify your fragments according to your requirements, then search and action according to the metadata values. 
+  
+  The metadata is defined using Assets metadata [schemas](/help/assets/metadata-schemas.md) and [forms](/help/assets/metadata-assets-view.md) and applied to the folders containing your fragments.
 
 ## Properties {#properties}
 
@@ -66,9 +68,9 @@ The tags can be:
 
 ## Metadata {#metadata}
 
-In the **Metadata** tab of the right hand **Properties** panel of the editor, [the metadata can be viewed and edited](/help/sites-cloud/administering/content-fragments/authoring.md#view-and-edit-properties-metadata-and-tags).
+The metadata structure for a Content Fragment is defined by a [metadata form](#metadata-forms) that is assigned to the folder containing the fragment.
 
-The metadata for a Content Fragment is defined by a [metadata form](#metadata-forms) that is assigned to the folder containing the fragment.
+The [metadata values can then be viewed and edited](/help/sites-cloud/administering/content-fragments/authoring.md#view-and-edit-properties-metadata-and-tags) in both the **Metadata** tab of the right hand **Properties** panel of the Content Fragments console and the new Content Fragment editor.
 
 ### Metadata forms {#metadata-forms}
 
@@ -76,17 +78,32 @@ You can define the metadata using metadata forms:
 
 1. From [Assets View](/help/assets/assets-view-introduction.md):
 
-   1. [Create a metadata form](/help/assets/metadata-assets-view.md#metadata-forms).
-   1. [Define the individual items within that metadata form](/help/assets/metadata-assets-view.md#edit-metadata-forms).
-   1. [Assign the metadata form to the folder](/help/assets/metadata-assets-view.md#assign-metadata-form-folder).
+   1. [Create a metadata form](/help/assets/metadata-assets-view.md#metadata-forms):
+
+      ![Assets view - create a metadata form](/help/sites-cloud/administering/content-fragments/assets/cf-metadata-form-create.png)
+
+   1. Select your metadata form for action:
+
+      ![Assets view - select the metadata form](/help/sites-cloud/administering/content-fragments/assets/cf-metadata-form-overview-actions.png)
+
+   1. [Define the individual items within that metadata form](/help/assets/metadata-assets-view.md#edit-metadata-forms):
+
+      ![Assets view - edit the metadata form](/help/sites-cloud/administering/content-fragments/assets/cf-metadata-form-edit.png)
+
+   1. [Assign the metadata form to the folder](/help/assets/metadata-assets-view.md#assign-metadata-form-folder):
+
+      ![Assets view - assign the metadata form to a folder](/help/sites-cloud/administering/content-fragments/assets/cf-metadata-form-assign.png)
 
 Then view and edit the metadata for your Content Fragment in:
 
 1. [The Content Fragments console](/help/sites-cloud/administering/content-fragments/managing.md#manage-properties-and-metadata)
 
+   ![Content Fragments console - metadata](/help/sites-cloud/administering/content-fragments/assets/cf-metadata-form-console.png)
+
 1. The [new Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md#view-and-edit-properties-metadata-and-tags)
+
+   ![Content Fragments editor - metadata](/help/sites-cloud/administering/content-fragments/assets/cf-metadata-form-editor.png)
 
   >[!NOTE]
   >
   >To use your (older) Assets metadata forms with the Content Fragments console and the new Content Fragment editor you will need to [import your forms](/help/assets/import-metadata-form-from-admin-view-to-assets-view.md) from the Admin View to the [Assets View](/help/assets/assets-view-introduction.md), where you can also [manage your metadata forms](/help/assets/metadata-assets-view.md#metadata-forms).
-
