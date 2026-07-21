@@ -427,11 +427,40 @@ For example:
 
 <!-- CQDOC-23782 -->
 
-In the properties tab of the right panel, properties, metadata and tags can be viewed. 
+In the properties tab of the right panel, properties, metadata and tags can be viewed and edited. 
 
 >[!NOTE]
 >
->See also [Properties, Tags and Metadata](/help/sites-cloud/administering/content-fragments/properties-tags-and-metadata.md).
+>For more information see [Properties, Tags and Metadata](/help/sites-cloud/administering/content-fragments/properties-tags-and-metadata.md).
+
+### View Properties, Metadata and Tags {#view-properties-tags}
+
+In the Properties panel there are two tabs:
+
+* the properties are shown under **Basic**
+* the metadata under **Metadata**
+* Tags are also shown under **Basic**
+
+The properties can be either:
+
+* for the **Content Fragment** - if **Main** is currently selected
+* for a specific **Variation**
+
+<!-- CQDOC-23473 - new screenshot? -->
+
+![Content Fragment Editor - Properties](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-properties.png) 
+
+### Edit Properties and Tags {#edit-properties-tags}
+
+In the properties tab (right panel) you can also edit:
+
+* **Title**
+* **Description**
+* **Tags**: using the drop-down list, or the selection dialog
+
+  <!-- CQDOC-23473 - new screenshot? -->
+
+  ![Content Fragment Editor - Manage Tags](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-edit-tags.png) 
 
 ### Open the Content Fragment Model {#open-content-fragment-model}
 

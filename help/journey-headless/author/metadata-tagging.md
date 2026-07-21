@@ -23,7 +23,9 @@ This article builds on these so you understand how to use metadata and tagging t
 
 ## Adding Metadata and Tags {#adding-metadata-and-tags}
 
-You can add metadata and tags from the right panel of the Content Fragment Editor:
+You can add metadata and tags from the console and from the right panel of the Content Fragment Editor:
+
+<!-- CQDOC-23782 - new screenshot -->
 
 ![Content Fragment Editor - Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
@@ -32,6 +34,10 @@ You can add metadata and tags from the right panel of the Content Fragment Edito
 Now you can put all this knowledge to use and start creating Content Fragments for your project.
 
 ## Additional Resources {#additional-resources}
+
+* [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md)
+
+* [Authoring Content Fragments](/help/sites-cloud/administering/content-fragments/authoring.md)
 
 * [Properties, Tags and Metadata](/help/sites-cloud/administering/content-fragments/properties-tags-and-metadata.md)
   

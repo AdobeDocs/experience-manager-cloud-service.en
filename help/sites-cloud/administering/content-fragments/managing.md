@@ -377,7 +377,22 @@ FolderC
 
 From the Content Fragments console you can [manage any applied tags](/help/sites-cloud/administering/content-fragments/properties-tags-and-metadata.md#manage-tags-console) from either the **Tags** column or the Properties tab. 
 
-You can also view, and edit, the tags applied to a fragment using the [Properties](/help/sites-cloud/administering/content-fragments/authoring.md) tab of the editor. The information shown may differ between **Main** and any **Variations**.
+### Manage Tags (Console) {#manage-tags-console}
+
+To manage the tags from the console:
+
+1. Navigate to the Content Fragment console.
+1. Select a Content Fragment.
+1. Select **Manage Tags** in the toolbar.
+1. Use the Tag selector to select tags to apply, or remove:
+
+   ![Manage Tags](/help/sites-cloud/administering/content-fragments/assets/cf-managing-manage-tags.png)
+
+1. **Save** updates. This will return you to the console.
+
+>[!NOTE]
+>
+>You can also view, and edit, the tags applied to a fragment using the [Properties](/help/sites-cloud/administering/content-fragments/authoring.md) tab of the editor. The information shown may differ between **Main** and any **Variations**.
 
 >[!NOTE]
 >
@@ -385,15 +400,17 @@ You can also view, and edit, the tags applied to a fragment using the [Propertie
 
 ## Manage Properties and Metadata {#manage-properties-and-metadata}
 
-You can view, and edit, the properties and metadata of a fragment using both the Content Fragments console and the new Content Fragment editor.
+In the Content Fragments console you can view, and edit, the properties and metadata of a fragment using the information ( **i** ) icon to open the right hand panel:
+
+![Manage Tags](/help/sites-cloud/administering/content-fragments/assets/cf-managing-properties.png)
 
 >[!NOTE]
 >
->The information shown may differ between **Main** and any **Variations**.
+>You can also use the [new Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 >[!NOTE]
 >
->See also [Properties, Tags and Metadata](/help/sites-cloud/administering/content-fragments/properties-tags-and-metadata.md).
+>For more information see also [Properties, Tags and Metadata](/help/sites-cloud/administering/content-fragments/properties-tags-and-metadata.md).
 
 ## Publishing and Previewing a Fragment {#publishing-and-previewing-a-fragment}
 
