@@ -71,6 +71,14 @@ Some if its key benefits include:
 >
 >This feature is available as Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
+AI Search is available for Content Hub environments that use the latest search stack. Adobe is rolling out the latest search stack to Content Hub customers in phases. 
+
+To verify if you are using the latest search stack, navigate to your user profile icon and click **Configurations** on the Content Hub User Interface. Select the **Search** tab. If you can see options to select **AI Search** or **Keyword**, AI Search is available and you are using the latest search stack.
+
+![AI Search in Content Hub](/help/assets/assets/ai-search-content-hub.png)
+
+If AI Search is not yet available and you want to enable it, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+
 ### Examples for AI Search in Content Hub {#examples-ai-search-aem-assets-content-hub}
 
 **Example Prompt**: *Woman drinking coffee*
@@ -82,7 +90,9 @@ However, AI Search matches similar words such as `Girl`, `Lady` in the case of `
 Similarly, you can specify this prompt in Spanish or misspell `Woman` as `Wman` and still get the same results.
 
 
-### Enable or disable AI search in Content Hub {#enable-disable-ai-search-content-hub}
+### Enable or disable AI Search in Content Hub {#enable-disable-ai-search-content-hub}
+
+The steps to enable or disable AI Search in Content Hub are the same that you use to verify if you are using the latest search stack for Content Hub.
 
 Execute the following steps to enable or disable AI Search in Content Hub:
 
@@ -254,6 +264,14 @@ For example, if the Channel metadata field is enabled for sorting, the sorting m
 This distinction helps users quickly identify standard sorting options versus organization-specific metadata-based sorting options.
 
 ![Basic search](assets/custom-sorting-options.png)
+
+Custom Sorting feature is available for Content Hub environments that use the latest search stack. Adobe is rolling out the latest search stack to Content Hub customers in phases. 
+
+To verify if you are using the latest search stack, navigate to your user profile icon and click **Configurations** on the Content Hub User Interface. Select the **Search** tab. If you can see options to select **AI Search** or **Keyword**, AI Search is available and you are using the latest search stack.
+
+![AI Search in Content Hub](/help/assets/assets/ai-search-content-hub.png)
+
+If AI Search is not yet available and you want to enable it, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Do more with search {#do-more-with-search}
 
