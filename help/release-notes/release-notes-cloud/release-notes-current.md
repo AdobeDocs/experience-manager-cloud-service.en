@@ -87,9 +87,13 @@ See [AEM Assets beta programs](#assets-beta-program-features).
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Visual Content Fragments {#visual-content-fragments}
+### Metadata support for Content Fragments {#metadata-support-content-fragments}
 
-AEM now supports [Visual Content Fragments](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md), which render Content Fragment output as formatted HTML experiences using attached HTML templates. This enables content authors to preview and validate structured content in its final visual form before publication, and to deliver modular experiences consistently across channels — including web, email, and Edge Delivery Services. A built-in generic template is available for basic quality assurance without requiring a custom template.
+Content Fragment metadata is now fully supported in the Content Fragments Admin UI. Authors can view and edit fragment metadata directly where they work with their content, with full parity in the new editors as well, and manage their metadata schemas entirely in the new experience. And clients using Touch UI schemas today can keep using them — now in the Admin UI and Editor for Content Fragments too.
+
+### Content Fragments Folder Actions {#content-fragments-folder-actions}
+
+Now Content Fragments Admin UI supports folder actions like Rename, Copy, Move and Delete. This creates alignment with Touch UI and Assets UI: same actions available on all surfaces.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
