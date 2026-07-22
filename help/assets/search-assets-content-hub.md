@@ -67,6 +67,10 @@ Some if its key benefits include:
 
 * **Contextually relevant search**: Recognizes the intent behind a query, not just the exact words.
 
+>[!IMPORTANT]
+>
+>This feature is available as Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+
 ### Examples for AI Search in Content Hub {#examples-ai-search-aem-assets-content-hub}
 
 **Example Prompt**: *Woman drinking coffee*
@@ -211,6 +215,10 @@ By default, Content Hub includes the following sorting options on the Content Hu
 * Name
 
 * Relevance
+
+>[!IMPORTANT]
+>
+>This feature is available as Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 ### Add custom metadata fields as sorting options {#add-custom-metadata-fields-for-sorting}
 
