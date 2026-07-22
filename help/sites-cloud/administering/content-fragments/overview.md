@@ -227,7 +227,7 @@ The Content Fragment assets are made up of the following parts (either directly 
 
 * **Fragment Metadata**
 
-  * Use the [Assets metadata schemas](/help/assets/metadata-schemas.md).
+  * Use the [Assets Metadata in Assets View](/help/assets/metadata-assets-view.md).
   * Tags can be created when you:
 
     * Create and author the fragment
@@ -247,9 +247,9 @@ The Content Fragment assets are made up of the following parts (either directly 
 
   >[!CAUTION]
   >
-  >A Content Fragment Model can often define data fields named **Title** and **Description**. If these two fields exist, they are user-defined fields and can be updated in the content area of the editor.
+  >A Content Fragment Model can often define data fields named **Title** and **Description**. If these two fields exist, they are user-defined content fields and can be updated in the content area of the editor.
   >
-  >The Content Fragment, and its variations, also has metadata (property) fields called **Title** and **Description**. These two metadata fields are an integral part of any Content Fragment, and variation, and initially defined when the fragment is created. They can be updated in the properties/metadata area of the editor.
+  >The Content Fragment, and its variations, also have property fields called **Title** and **Description**. These two property fields are an integral part of any Content Fragment, and variation, and initially defined when the fragment is created. They can be updated in the properties area of the editor.
 
 * **[Main](#main-and-variations)**
 * **[Variations](#main-and-variations)**

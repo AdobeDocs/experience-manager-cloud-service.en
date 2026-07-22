@@ -23,7 +23,7 @@ After defining your [Content Fragment Models](#creating-a-content-model) you can
 
 * [Create your Content Fragments](#creating-a-content-fragment). 
 * Then open the [Content Fragment Editor](#opening-the-fragment-editor) to [author your content and manage your Variations](#editing-the-content-of-your-fragment).
-* [Manage Tags](#manage-tags)
+* [Manage Tags](#view-and-manage-tags)
 * [View, and edit, the Properties and Metadata](#manage-properties-and-metadata)
 * [View the Structure Tree](/help/sites-cloud/administering/content-fragments/authoring.md#structure-tree)
 
@@ -184,7 +184,7 @@ Selecting a specific fragment opens a toolbar focused on the actions available f
 
 * **[Open in new Editor](#editing-the-content-of-your-fragment)**
 * **[Publish](#publishing-and-previewing-a-fragment)** (and **[Unpublish](#unpublishing-a-fragment)**)
-* **[Manage Tags](#manage-tags)**
+* **[Manage Tags](#view-and-manage-tags)**
 * **[Copy](#copy-a-content-fragment)**
 * **[Replace](#find-and-replace)**
 * **[Preview](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md#preview-your-fragment-with-a-template)**
@@ -370,7 +370,7 @@ FolderC
    Copy_of_FragmentB
 ```
 
-## View and Manage Tags {#manage-tags}
+## View and Manage Tags {#view-and-manage-tags}
 
 From the Content Fragments console you can [manage any applied tags](/help/sites-cloud/administering/content-fragments/properties-tags-and-metadata.md#manage-tags-console) from the **Tags** column. 
 
@@ -399,7 +399,7 @@ In the Content Fragments console you can view, and edit, the properties and meta
 
 ![Manage Tags](/help/sites-cloud/administering/content-fragments/assets/cf-managing-properties.png)
 
-You can define the metadata structure using [metadata forms](#metadata-forms).
+You can define the metadata structure using [metadata forms](/help/sites-cloud/administering/content-fragments/properties-tags-and-metadata.md#metadata-forms).
 
 >[!NOTE]
 >

@@ -442,7 +442,11 @@ In the Properties panel there are two tabs:
 * **Basic** shows the properties of the Content Fragment
   * Tags are also shown under **Basic**
 * **Metadata** show the metadata according to the user defined forms
-  You can define the metadata structure using [metadata forms](#metadata-forms).
+  You can define the metadata structure using [metadata forms](#metadata-forms). If you have not defined and assigned your own form, the **default** is used.
+
+>[!NOTE]
+>
+>It is possible for both Properties and Metadata to have fields with the same name. These fields are distinct.
 
 The properties can be either:
 

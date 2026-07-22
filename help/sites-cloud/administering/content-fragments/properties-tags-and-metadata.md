@@ -28,7 +28,13 @@ You can view, and edit, the properties, tags and metadata used to manage a Conte
 
   Content Fragment metadata allows you to define a set of information that is relevant to, and required for, a group of fragments. This allows you to classify your fragments according to your requirements, then search and action according to the metadata values. 
   
-  The metadata is defined using Assets metadata [schemas](/help/assets/metadata-schemas.md) and [forms](/help/assets/metadata-assets-view.md) and applied to the folders containing your fragments.
+  The metadata is defined using Assets Metadata [forms](/help/assets/metadata-assets-view.md) and then applied to the folders containing your fragments.
+
+  If you do not create, and assign, your own metadata form to a folder, and the Content Fragments in it, then **default** is used. **default** is the default schema for Assets.
+
+>[!NOTE]
+>
+>It is possible for both Properties and Metadata to have fields with the same name. These fields are distinct.
 
 ## Properties {#properties}
 
@@ -90,7 +96,6 @@ You can define the metadata using metadata forms:
    1. [Assign the metadata form to the folder](/help/assets/metadata-assets-view.md#assign-metadata-form-folder):
 
       ![Assets view - assign the metadata form to a folder](/help/sites-cloud/administering/content-fragments/assets/cf-metadata-form-assign.png)
-
 
 ### Use Metadata forms {#use-metadata-forms}
 
