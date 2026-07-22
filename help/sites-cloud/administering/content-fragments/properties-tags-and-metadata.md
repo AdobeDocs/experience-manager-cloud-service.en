@@ -34,7 +34,11 @@ You can view, and edit, the properties, tags and metadata used to manage a Conte
 
 >[!NOTE]
 >
->It is possible for both Properties and Metadata to have fields with the same name. These fields are distinct.
+>It is possible for both Properties and Metadata to have fields with the same name. These fields are distinct and are displayed and (when possible) edited in the appropriate tab of the right hand Properties panel.
+>
+>It is also possible for the user to define fields in the Content Fragment Model with the same name as property or metadata fields. These fields in the model are content and are distinct from both Properties and Metadata. These fields are created in the model and updated in the central panel of the editor.
+
+  For example, fields named **Title** and **Description** can occur in all.
 
 ## Properties {#properties}
 

@@ -64,7 +64,7 @@ When you first open the Content Fragment Editor, you see four main areas:
 * left panel: shows the **[Variations](#variations)** for the Content Fragment, and its **Fields**:
   * these links can be used to [navigate the Content Fragment structure](#navigate-structure)
 * right panel: presents tabs [showing the properties, metadata and tags](#view-and-edit-properties-metadata-and-tags), information about the [version history](#view-version-history), and information related to any [language copies](#view-language-copies)
-  * in the **Properties** tab you can update the **Title** and **Description** for the fragment, or **Variation**
+  * in the **Properties** tab you can update the **Title** and **Description** properties of the fragment, or **Variation**
   * In the **Comments** tab you can add, and read, comments to help you collaborate with other authors
 * central panel: shows the actual fields, and content, of the selected variation
   * allows you to edit the content
@@ -367,11 +367,11 @@ There are some limitations when referencing remote assets:
 
 * Both the AEM instance and remote asset repository instances must be at the same version.
 
-* No Asset metadata is exposed via the either Management API or the Delivery API. You have to use the Asset Metadata API to retrieve the asset metadata details:
+* Only a subset of the Asset metadata (base) is exposed via the either Management API or the Delivery API. For dull metadata you have to use the Asset Metadata API to retrieve the asset metadata details:
 
   * the individual asset metadata: [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata)
   
-  * get bulk metadata information using the search API (experimental): [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search)
+  * get bulk metadata information using the search API: [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search)
 
 >[!NOTE]
 >
@@ -653,9 +653,11 @@ The **Fields** panel lists all fields within the Content Fragment. The icon indi
 
   For example, if you do not have `edit` permissions the editor will be read-only.
 
-* A Content Fragment Model can often define data fields named **Title** and **Description**. If these fields exist, they are user-defined fields and can be updated in the *central panel* when editing the fragment.
+* The Content Fragment, and its variations, has Properties and Metadata. It is possible for both Properties and Metadata to have fields with the same name. These fields are distinct and are displayed and (when possible) edited in the appropriate tab of the right hand Properties panel.
 
-  The Content Fragment, and its variations, also have metadata fields (Variation properties) called **Title** and **Description**. These fields are an integral part of any Content Fragment and initially defined when the fragment. They can be updated in the *right panel* when editing the fragment.
+  It is also possible for the user to define fields in the Content Fragment Model with the same name as property or metadata fields. These fields in the model are content and are distinct from both Properties and Metadata. These fields are created in the model and updated in the central panel of the editor.
+
+  For example, fields named **Title** and **Description** can occur in all.
 
 * See the Assets documentation for full information about the [original Content Fragment editor](/help/assets/content-fragments/content-fragments-variations.md) - it is available from both the **Assets** console and the **Content Fragments** console.
 
