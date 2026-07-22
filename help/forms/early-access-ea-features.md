@@ -326,6 +326,32 @@ Storing PDFs in Azure Blob Storage allows for centralized management of document
 
 * **Customizable Storage Paths**: The ability to define custom directory paths ensures generated PDFs are stored in organized and application-specific locations, improving file management.
 
+### Document Conversion APIs
+
+The Document Conversion APIs provide synchronous services to convert documents between supported formats while preserving their fidelity. These APIs support OAuth authentication and help you integrate document conversion capabilities into custom applications and automated workflows.
+
+Key benefits of using the Document Conversion APIs include:
+
+* **Support for multiple document formats:** Convert documents between supported formats, including HTML, PostScript (PS), PDF, and image formats.
+
+* **Simplified document processing workflows:** Integrate document conversion capabilities into business applications and automate document processing without relying on external tools.
+
+* **High-quality document conversion:** Preserve document layout, formatting, and content during conversion to ensure consistent output across supported formats.
+
+* **Support for print and archival workflows:** Convert documents to formats such as PostScript or flatten PDF transparency to improve compatibility with printing systems and downstream document processing.
+
+The Document Conversion APIs offer the following features:
+
+* **Convert HTML to PDF:** Convert an HTML document to PDF while preserving its layout and styling.
+
+* **Convert PostScript to PDF:** Convert a PostScript (PS) document to PDF.
+
+* **Convert PDF to images:** Convert a PDF document into one or more image files.
+
+* **Convert PDF to PostScript:** Convert a PDF document to a PostScript (PS) document.
+
+* **Flatten PDF transparency:** Flatten transparency in a PDF document to improve compatibility with print and document processing workflows.
+
 ### Enhancements in Visual Rule Editor 
 
 * [Direct API integration](/help/forms/api-integration-in-rule-editor.md): The Visual Rule Editor in Adaptive Forms now supports direct API integration without requiring a Form Data Model. You can connect to an API endpoint by entering its JSON URL or by importing the configuration using a cURL command. After integration, the API can be invoked using the `Invoke Service` action.

@@ -61,7 +61,7 @@ When you add a Table component to an Adaptive Form, the **Content** browser disp
   * **Header Row** — contains one header cell per column (for example, Column 1, Column 2, Column 3)
   * **Row 1**, **Row 2**, and additional rows — each row contains body cells
 
-Each header cell and body cell is an individual Adaptive Form component. Header cells use the **Text** component by default. Body cells use the **Text Box** component by default.
+Each header cell and body cell is an individual Adaptive Form component. By default, header cells use the **Text** component and body cells use the **Text Box** component. You can configure a different default table structure in the template editor so authors get the table layout and default cell components you define. For more information, see [Build an Adaptive Form template with Core Components](/help/forms/template-editor-core-components.md).
 
 ## Create a table {#create-a-table}
 
