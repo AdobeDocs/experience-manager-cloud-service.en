@@ -294,7 +294,7 @@ Yes, you can perform a Bulk Search in AEM Assets Content Hub by entering multipl
 
 Yes, administrators can use the AEM Assets Content Hub Configuration User Interface to configure which filters are available in search interface. While default filters include file format, approval status, expiration date, and more, administrators can tailor these options to fit organizational needs.
 
-### Do you need to ability to filter on custom date fields or use Tags as filters?
+### Do you need the ability to filter on custom date fields or use Tags as filters?
 
 If you need the ability to filter on custom date fields or use Tags as filters, you must get [AI Search](#ai-search-aem-assets-content-hub) enabled for your deployment. [Create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable AI Search.
 
