@@ -119,6 +119,14 @@ Open the **Structure tree** tab from the editor toolbar to show the hierarchical
 >
 >See [Analyzing Content Fragment Structure - Structure tree](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree) for more details.
 
+### JSON preview {#json-preview}
+
+When developing the models for Content Fragments as part of your AEM headless implementation, you might want to view sample JSON output for a content fragment, as based on a model. For example, to get an idea of how the final output will look. This could be helpful when validating the model JSON structure, maybe with default sample content per data type.
+
+To view, open the **JSON preview** tab:
+
+![Content Fragment Editor - JSON preview](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-json-preview.png)
+
 ## Saving and auto-saving {#saving-autosaving}
 
 <!-- CHECK: cannot be saved, no undo, redo -->
@@ -431,10 +439,10 @@ In the properties tab of the right panel, properties, metadata and tags can be v
 
 In the Properties panel there are two tabs:
 
-* the properties are shown under **Basic**
-* the metadata under **Metadata**
+* **Basic** shows the properties of the Content Fragment
+  * Tags are also shown under **Basic**
+* **Metadata** show the metadata according to the user defined forms
   You can define the metadata structure using [metadata forms](#metadata-forms).
-* Tags are also shown under **Basic**
 
 The properties can be either:
 

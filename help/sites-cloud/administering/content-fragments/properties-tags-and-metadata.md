@@ -40,7 +40,7 @@ You can manage the (basic) properties from both:
 
 * new Content Fragment editor
 
-  In the **Basic** tab of the right hand **Properties** panel of the editor, [the properties (and metadata and tags) can be viewed and edited](/help/sites-cloud/administering/content-fragments/authoring.md#view-and-edit-properties-metadata-and-tags). 
+  In the **Basic** tab of the right hand **Properties** panel of the editor, [the properties (and tags) can be viewed and edited](/help/sites-cloud/administering/content-fragments/authoring.md#view-and-edit-properties-metadata-and-tags). 
 
   The properties can be either:
 
@@ -106,4 +106,4 @@ Then view and edit the metadata for your Content Fragment in:
 
   >[!NOTE]
   >
-  >To use your (older) Assets metadata forms with the Content Fragments console and the new Content Fragment editor you will need to [import your forms](/help/assets/import-metadata-form-from-admin-view-to-assets-view.md) from the Admin View to the [Assets View](/help/assets/assets-view-introduction.md), where you can also [manage your metadata forms](/help/assets/metadata-assets-view.md#metadata-forms).
+  >To use your (older) Assets metadata forms with the Content Fragments console and the new Content Fragment editor you will need to [import your forms](/help/assets/import-metadata-form-from-admin-view-to-assets-view.md) from the Admin View to the [Assets View](/help/assets/assets-view-introduction.md), where you can also [manage your metadata forms](/help/assets/metadata-assets-view.md#metadata-forms). Once imported the two versions are not synchronized.
