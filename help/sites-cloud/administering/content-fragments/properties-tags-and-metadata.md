@@ -34,8 +34,6 @@ You can view, and edit, the properties, tags and metadata used to manage a Conte
 
 You can manage the (basic) properties from both:
 
-<!-- CQDOC-23782 -->
-
 * Content Fragments console
 
   In the console you can [manage properties](/help/sites-cloud/administering/content-fragments/managing.md#manage-properties-and-metadata) by using the information ( **i** ) icon to open the right hand panel.
@@ -54,8 +52,6 @@ You can manage the (basic) properties from both:
 >From the editor the information shown can differ between **Main** and any **Variations**.
 
 ## Tags {#tags}
-
-<!-- CQDOC-23782 -->
 
 The tags can be:
 

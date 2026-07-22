@@ -25,8 +25,6 @@ This article builds on these so you understand how to use metadata and tagging t
 
 You can add metadata and tags from the console and from the right panel of the Content Fragment Editor:
 
-<!-- CQDOC-23782 - new screenshot -->
-
 ![Content Fragment Editor - Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## What's Next {#whats-next}

@@ -16,8 +16,6 @@ There are two editors available for Content Fragments. The editor described in t
 * has been developed for headless content delivery (though it can be used for all scenarios)
 * is available from the **Content Fragments** console
 
-<!-- CQDOC-23782 -->
-
 This editor provides:
 
 * [Auto-saving](#saving-autosaving), to prevent accidental loss of edits.
@@ -353,8 +351,6 @@ To reference remote assets:
 
 There are some limitations when referencing remote assets:
 
-<!-- CQDOC-23782 - check statements about metadata -->
-
 * Only [Approved](/help/assets/approve-assets.md) assets are available for reference from a remote Asset repository.
 
 * If a referenced asset is removed from the remote repository, this results in a broken Content Reference.
@@ -425,8 +421,6 @@ For example:
 
 ## View and edit Properties, Metadata and Tags {#view-and-edit-properties-metadata-and-tags}
 
-<!-- CQDOC-23782 -->
-
 In the properties tab of the right panel, properties, metadata and tags can be viewed and edited. 
 
 >[!NOTE]
@@ -446,8 +440,6 @@ The properties can be either:
 
 * for the **Content Fragment** - if **Main** is currently selected
 * for a specific **Variation**
-
-<!-- CQDOC-23473 - new screenshot? -->
 
 ![Content Fragment Editor - Properties](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-properties.png) 
 
@@ -644,8 +636,6 @@ The **Fields** panel lists all fields within the Content Fragment. The icon indi
 </table>
 
 ## Good to know {#good-to-know}
-
-<!-- CQDOC-23782 - check statements about metadata -->
 
 * To edit a Content Fragment you need [the appropriate permissions](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Contact your system administrator if you are experiencing issues.
 

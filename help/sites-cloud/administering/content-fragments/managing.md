@@ -48,8 +48,6 @@ Selecting **Content Fragments** opens the console in a new tab.
 
 ![Content Fragments console - Overview](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-overview.png)
 
-<!-- CQDOC-23782 --> 
-
 Here you can see that there are three main areas:
 
 * The top toolbar
@@ -74,6 +72,7 @@ Here you can see that there are three main areas:
       * Open the appropriate fragment in the editor
       * Show information about references
       * Show information about language versions of the fragment
+      * Show the **Properties** and **Metadata**
     * [Certain other fields of information](#information-content-fragments) about a Content Fragment can be used for [Fast Filtering](#fast-filtering):
       * Select a value in the column and it is immediately applied as a filter
       * Fast filtering is supported for the **Model**, **Status**, **Modified By**, **Tags** and **Published By** columns.
@@ -372,8 +371,6 @@ FolderC
 ```
 
 ## View and Manage Tags {#manage-tags}
-
-<!-- CQDOC-23782 -->
 
 From the Content Fragments console you can [manage any applied tags](/help/sites-cloud/administering/content-fragments/properties-tags-and-metadata.md#manage-tags-console) from the **Tags** column. 
 
