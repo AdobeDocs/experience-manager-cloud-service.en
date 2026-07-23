@@ -45,9 +45,7 @@ Caption files are generated for the selected languages and are added to the **Ca
 >
 >Only audio tracks that are in the **Processed** or **Processing** state and are in a supported language can be selected for caption generation.
 
-1. Verify the generated caption details, if required.
-1. Click **Save**.
-1. Click **Save & Close**.
+1. Click **Save** or **Save & Close**.
 
 ## Translate captions {#translate-captions}
 
@@ -68,9 +66,7 @@ Translated captions are added to the **Captions** section.
 >
 >Only caption files that are in the Processed or Processing state and are in a supported language can be selected as source captions for translation.
 
-1. Verify the translated caption details, if required.
-1. Click **Save**.
-1. Click **Save & Close**.
+1. Click **Save** or **Save & Close**.
 
 ## Edit captions {#edit-captions}
 
@@ -81,8 +77,7 @@ To edit a caption:
 1. Click the **Edit** icon.
 1. Modify the caption text.
 1. Preview the updated caption.
-1. Click **Save**.
-1. Click **Save & Close**.
+1. Click **Save** or **Save & Close**.
 
 The updated caption enters the **Processing** state before it becomes available.
 
