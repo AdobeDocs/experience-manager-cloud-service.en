@@ -8,6 +8,13 @@ nudge: please
 ---
 # Rapid Development Environments {#rapid-development-environments}
 
+>[!NOTE]
+>
+>**New Enhancement: RDE Snapshots**
+>
+>Now in public beta, take an RDE snapshot to later restore code and content. [Learn more](#snapshots) below.
+>
+
 To deploy changes, current Cloud Development environments require the use of a process that employs extensive code security and quality rules called a CI/CD pipeline. For situations where quick and iterative changes are needed, Adobe has introduced Rapid Development Environments (RDEs for short).
 
 RDEs let developers swiftly deploy and review changes, minimizing the amount of time needed to test features that are proven to work in a local development environment.
