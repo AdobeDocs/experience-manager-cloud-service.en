@@ -47,9 +47,13 @@ For example, search for all the **[!UICONTROL JPEG]** images with keyword `archi
 
 ## Narrow your search results using filters {#narrow-down-search-results}
 
-Use the Filters panel to search for assets based on metadata. You can filter search results based on various search predicates. You can select all the appropriate predicates to minimize or narrow down your search results. You can choose more than 10 predicates while filtering your search results. When you select multiple options within a filter, Content Hub displays the assets that match any of the options selected within a filter. However, when you select multiple options across filters, Content Hub only displays the assets that match all options selected across filters to narrow down your search results. 
+Use the Filters panel to search for assets based on metadata. You can filter search results based on various search predicates. You can select all the appropriate predicates to minimize or narrow down your search results. You can choose more than 10 predicates while filtering your search results. When you select multiple options within a filter, Content Hub displays the assets that match any of the options selected within a filter. However, when you select multiple options across filters, Content Hub only displays the assets that match all options selected across filters to narrow down your search results.
 
 The default filters include file format, approved by, date approved, expired and not expired assets, and expiration date. Administrators can also configure the filters that display in the list of filters. For more information, see [Configure Content Hub user interface](configure-content-hub-ui-options.md#configure-filters-content-hub).
+
+   >[!NOTE]
+   >
+   >The new filter gets displayed on the Search page only if there is at least one asset in the repository matching the filter criteria. The maximum number of fields available in the filter panel on the Search page is 40.
 
 ## AI Search in Content Hub {#ai-search-aem-assets-content-hub}
 
@@ -66,6 +70,10 @@ Some if its key benefits include:
 * **Understands synonyms**: Delivers results for related terms and phrases, so users do not need to guess the right keyword.
 
 * **Contextually relevant search**: Recognizes the intent behind a query, not just the exact words.
+
+To enable AI Search:
+
+* Minimum required AEM release version is `25520`.
 
 >[!IMPORTANT]
 >
@@ -233,6 +241,10 @@ By default, Content Hub includes the following sorting options on the Content Hu
 ### Add custom metadata fields as sorting options {#add-custom-metadata-fields-for-sorting}
 
 Administrators can configure additional metadata fields to appear in the sorting menu.
+
+To enable Custom Sorting:
+
+* Minimum required AEM release version is `25520`.
 
 To enable a metadata field for sorting:
 
