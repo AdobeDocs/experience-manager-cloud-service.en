@@ -99,7 +99,7 @@ Metadata enabled on the Configuration User Interface display on the asset upload
 
 ### Filters {#configure-filters-content-hub}
 
-Content Hub allows administrators to configure filters that display while searching for assets. You can configure a maximum of 40 filters using the Configuration User Interface.
+Content Hub allows administrators to configure filters that display while searching for assets.
 
 Execute the following steps to add a new filter:
 
@@ -111,10 +111,12 @@ Execute the following steps to add a new filter:
 
    >[!NOTE]
    >
-   >The new filter gets displayed on the Search page only if there is at least one asset in the repository matching the filter criteria.
+   >The new filter gets displayed on the Search page only if there is at least one asset in the repository matching the filter criteria. The maximum number of fields available in the filter panel on the Search page is 40.
 
 Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available filter, to edit the labels or click the delete icon to delete any existing filter. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
 ![Configuration UI filters on Content Hub](assets/add-filters.png)
+
+You can also define if you require a filter available on the **Configurations** page to be displayed on the Filter panel on the Search page. Click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available filter, and select the **Filter Panel** checkbox in the **Available in** section to make it available on the Search page.
 
 The filters enabled on the Configuration User Interface display on the Search page:
 ![Search on Content Hub](assets/content-hub-filters1.png)
