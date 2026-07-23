@@ -586,3 +586,4 @@ It is recommended, but not required, that a configuration is deployed to all env
 >The `sourcetype` field's values sent to your Splunk index may have changed, so adjust accordingly.
 >
 >When Log Forwarding is deployed to an environment previously configured by Adobe support, you may receive duplicate logs for up to a few hours. This will eventually auto-resolve.
+

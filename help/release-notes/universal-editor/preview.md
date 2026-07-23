@@ -23,3 +23,4 @@ These **preview** release notes are provided as a convenience so you know what c
 ## Upcoming Changes {#upcoming-improvements}
 
 * The publish panel now visually adapts more cleanly when [metadata is used to restrict the user's publishing options.](/help/implementing/universal-editor/customizing.md#disable-features)
+
