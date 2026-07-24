@@ -47,6 +47,10 @@ AEM exposes MCP servers as HTTP endpoints. The endpoints listed below are relati
 |**Experience Governance**|`/experience-governance`|Evaluate content (text, images, pages) against brand governance rules, and list brand configurations and checks.<br/>If you are interested, you must sign up for the [agents trial or have a paid license](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) in order to access the Experience Governance MCP.|
 |**Cloud Migration**|`/cloud-migration`|Fetch Best Practices Analyzer (BPA) findings from Cloud Acceleration Manager (CAM) by migration pattern or severity level, enabling AI agents to drive code migration from AEM 6.x to AEM as a Cloud Service. See [Using the Cloud Migration MCP](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md).|
 
+>[!NOTE]
+>
+>An MCP server is also available for AEM Guides as a Cloud Service, for guides-specific operations such as managing topics, maps, and baselines. See [Configuring the AEM Guides MCP Server](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/install-conf-guide/aemg-integrations/conf-aem-guides-mcp) for details.
+
 The specific tools exposed by each MCP server may evolve over time. In practice, you can ask your MCP-enabled application to discover tools via a prompt such as:
 
 ```
