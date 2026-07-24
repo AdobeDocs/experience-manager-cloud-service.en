@@ -367,7 +367,7 @@ There are some limitations when referencing remote assets:
 
 * Both the AEM instance and remote asset repository instances must be at the same version.
 
-* Only a subset of the Asset metadata (base) is exposed via the either Management API or the Delivery API. For dull metadata you have to use the Asset Metadata API to retrieve the asset metadata details:
+* Only a subset of the Asset metadata is exposed via either the Management API or the Delivery API endpoints for Content Fragments. For full metadata you must use the Asset Metadata API to retrieve the asset metadata details:
 
   * the individual asset metadata: [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata)
   
