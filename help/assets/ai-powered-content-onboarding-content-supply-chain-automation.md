@@ -12,6 +12,10 @@ Organizations often store digital assets and metadata across multiple repositori
 
 This capability helps you automate one-time content migrations and recurring synchronization between supported repositories. An AI-powered agent guides you through configuring content transfers by proposing repository connections, metadata mappings, and transfer settings, reducing the effort required to move and synchronize content across systems.
 
+>[!IMPORTANT]
+>
+>This feature is available as Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+
 ## Benefits {#benefits-ai-powered-content-onboarding-content-supply-chain-automation}
 
 Automating content onboarding and synchronization provides the following benefits:
