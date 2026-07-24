@@ -27,8 +27,8 @@ Ensure that you fulfil the following requirements before using Content Credentia
 3. For image or document assets, Content Credentials is supported for *.jpeg*, *.png*, *.gif*, *.tiff*, *.dng*, *.arw*, and *.nef* file formats. For video assets, Content Credentials is supported for *.mp4*, *.avi*, *.mov*, *.m4v* file formats.
 4. Content Credentials preservation is available only in supported Dynamic Media delivery and export workflows.
     >[!NOTE]
-        >
-        > If Content Credentials cannot be validated or processed, the asset can still be uploaded, processed, delivered, or exported normally, but the output does not include Content Credentials.
+    >
+    > If Content Credentials cannot be validated or processed, the asset can still be uploaded, processed, delivered, or exported normally, but the output does not include Content Credentials.
 
 ## Access Content Credentials {#access-content-credentials-in-dynamic-media}  
 
@@ -39,13 +39,13 @@ Ensure that you fulfil the following requirements before using Content Credentia
 ![downloading](/help/assets/dynamic-media/assets/download.png)
 
    >[!NOTE]
-        >
-        > When you download a generated rendition, Dynamic Media creates a new output file. Because this output is newly generated, Dynamic Media signs the rendition again and returns the generated file with Content Credentials when the source asset is eligible.
+    >
+    > When you download a generated rendition, Dynamic Media creates a new output file. Because this output is newly generated, Dynamic Media signs the rendition again and returns the generated file with Content Credentials when the source asset is eligible.
 
 5. You can also export an asset from Dynamic Media. 
     >[!NOTE]
-        >
-        > For original exports, the original asset is returned with its existing Content Credentials.
+    >
+    > For original exports, the original asset is returned with its existing Content Credentials.
 
 6. Upload the downloaded asset in any C2PA software, for example, Adobe's CAILens interface.
 You can now view the list of actions performed such as opening the asset, converting the asset's type from *.png* to *.avif*, resizing the asset, and editing the asset.
