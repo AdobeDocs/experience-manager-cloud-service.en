@@ -24,7 +24,7 @@ If you have already built a custom API layer or middleware, such as an Azure Fun
 
 Here is how this works at a high level. AEM Forms sends submission data to Azure Blob Storage over HTTPS. It uses the Dedicated Egress IP as the fixed source address for that outbound connection. Azure Storage's firewall then checks this source IP against its allowlist before it accepts or rejects the request.
 
-![Dedicated Egress IP flow for AEM Forms submissions to Azure Blob Storage](help/forms/assets/azure-blob-storage-dedicated-egress-ip-flow.svg)
+![Dedicated Egress IP flow for AEM Forms submissions to Azure Blob Storage](/help/forms/assets/azure-blob-storage-dedicated-egress-ip-flow.svg)
 
 This works when AEM and the Azure Storage account are set up in different Azure regions. But when they are in the same region, Azure sends the traffic over its own internal network instead of the public internet. This means the Dedicated Egress IP is never actually used, so allowlisting it has no effect. The next section explains this region-based behavior in detail. It also covers the network patterns Adobe recommends for each case.
 
