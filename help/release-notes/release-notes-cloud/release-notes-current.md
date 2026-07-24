@@ -214,6 +214,26 @@ AEM Forms now supports two additional CAPTCHA solutions for protecting Adaptive 
 * **Cloudflare Turnstile**: A frictionless CAPTCHA that verifies users through a simple challenge without requiring explicit interaction, improving the user experience. For more information, see [Use Turnstile in an Adaptive Form for Core Components](/help/forms/integrate-adaptive-forms-turnstile-core-components.md) and [Use Turnstile in an Adaptive Form for Foundation Components](/help/forms/integrate-adaptive-forms-turnstile.md).
 * **hCaptcha**: A privacy-focused CAPTCHA that offers a user-friendly alternative with an emphasis on data privacy, balancing security and user experience. For more information, see [Use hCaptcha in an Adaptive Form for Core Components](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md) and [Use hCaptcha in an Adaptive Form for Foundation Components](/help/forms/integrate-adaptive-forms-hcaptcha.md).
 
+#### AEM Forms Integration with Adobe Experience Platform (AEP)
+
+You can now connect AEM Forms with Adobe Experience Platform (AEP) to send form submission data directly to AEP datasets. This lets you enrich customer profiles, personalize form experiences, and trigger downstream workflows based on form submissions. For more information, see [AEM Forms Integration with Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md).
+
+#### Right-to-left (RTL) language support in Adaptive Forms
+
+Adaptive Forms can now be displayed in a Right-to-Left (RTL) language, such as Arabic, Hebrew, and Urdu. This gives you a more inclusive experience for users who read RTL languages, with proper text flow, alignment, and mobile-responsive layouts. For more information, see [Add a locale for Adaptive Forms based on Core Components](/help/forms/supporting-new-language-localization-core-components.md).
+
+#### Usage Rights APIs (Reader Extension)
+
+You can now use the Usage Rights (Reader Extension) API to add usage rights to a PDF document. This lets recipients complete, save, and comment on PDF documents and forms directly from Adobe Reader, without needing extra software or plug-ins. For more information, see [Usage Rights APIs (Reader Extension)](/help/forms/aem-forms-cloud-service-communications-introduction.md#usage-rights-apis-reader-extension).
+
+<!--
+
+#### API Integration Tool for Dynamic Form Data
+
+Form authors can now use the API Integration Tool to build forms that fetch and fill in data from external REST APIs, based on what the user does in the form. This no-code tool supports use cases like address auto-completion, dynamic dropdown lists, and real-time validation. For more information, see [API Integration Tool for Dynamic Form Data](/help/forms/api-integration-tool-dynamic-form-data.md).
+
+-->
+
 ### Early Adopter Features
 
 #### Document of Record for forms embedded in AEM Sites
