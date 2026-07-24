@@ -52,7 +52,8 @@ You can now view the list of actions performed such as opening the asset, conver
 ![C2PA Manifest](/help/assets/dynamic-media/assets/manifest.png)
 
 
-## Limitations of Content Credentials {#limitations} 
+## Limitations of Content Credentials {#limitations}
+ 
 To maintain the integrity and authenticity of Content Credentials, Dynamic Media enforces the following limitations:
 1. Source assets that are above the configured maximum file size of 2 GiB are not processed for Content Credentials preservation.
 2. Source assets that are above the processing timeout of 60 seconds are not processed for Content Credentials preservation. However, these limits are subject to the Dynamic Media service configuration and may vary from environment to environment.
