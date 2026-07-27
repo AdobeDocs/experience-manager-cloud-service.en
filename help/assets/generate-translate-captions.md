@@ -37,11 +37,12 @@ To generate captions from an audio track:
 1. Select one or more output languages.
 1. Click **Done**.
 
- Caption files are generated for the selected languages and are added to the **Captions** section.
+   Caption files are generated for the selected languages and are added to the **Captions** section.
 
- >[!NOTE]
- >
- >Only audio tracks that are in the **Processing**, **Processed**, or **Approved** state and are in a supported language can be selected for caption generation.
+   >[!NOTE]
+   >
+   >Only audio tracks that are in the **Processing**, **Processed**, or **Approved** state and are in a supported language can be selected for caption generation.
+
 1. Click **Save** or **Save & Close**.
 
 ## Translate captions {#translate-captions}
@@ -51,17 +52,18 @@ To translate an existing caption:
 1. Open the **Captions & Audio tracks** tab.
 1. Click **Create Caption** > **Translate caption**.
 
- ![Translate Caption dialog](/help/assets/assets/translate-caption.png)
+   ![Translate Caption dialog](/help/assets/assets/translate-caption.png)
 
 1. Select the source caption.
 1. Select one or more output languages.
 1. Click **Done**.
- 
- Translated captions are added to the **Captions** section.
 
- >[!NOTE]
- >
- >Only caption files that are in the **Processing**, **Processed**, or **Approved**  state and are in a supported language can be selected as source captions for translation.
+   Translated captions are added to the **Captions** section.
+
+   >[!NOTE]
+   >
+   >Only caption files that are in the **Processing**, **Processed**, or **Approved** state and are in a supported language can be selected as source captions for translation.
+
 1. Click **Save** or **Save & Close**.
 
 ## Edit captions {#edit-captions}
