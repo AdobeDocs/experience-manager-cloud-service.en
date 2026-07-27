@@ -264,6 +264,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.07.09 Release Notes](/help/release-notes/universal-editor/2026/2026-07-09.md)
       + [2026.07.02 Release Notes](/help/release-notes/universal-editor/2026/2026-07-02.md)
       + [2026.06.25 Release Notes](/help/release-notes/universal-editor/2026/2026-06-25.md)
       + [2026.06.18 Release Notes](/help/release-notes/universal-editor/2026/2026-06-18.md)
@@ -938,6 +939,7 @@ user-guide-title: AEM as a Cloud Service
         + [Add custom error handler in an Adaptive Form](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
         + [Add a locale for Adaptive Forms based on Core Components](/help/forms/supporting-new-language-localization-core-components.md)
         + [Design JSON Schema for an Adaptive Form (Core Components)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
+        + {hide-from-toc} [API Integration Tool for Dynamic Form Data](/help/forms/api-integration-tool-dynamic-form-data.md)
         + [Add versionings, comments, and annotations to an Adaptive Form](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
         + [Compare Adaptive Forms](/help/forms/compare-forms.md) 
         + [Create custom submit action](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
