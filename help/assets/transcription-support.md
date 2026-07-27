@@ -19,7 +19,7 @@ To enable the transcription feature, follow the steps as mentioned below:
 1. Navigate to the Adobe Experience Manager (AEM) homepage.
 2. Go to the homepage of any website and add a Dynamic Media Dynamic Media [!DNL Dynamic Media with OpenAPI capabilities] component.
 3. You need to add a video element within that Dynamic Media Dynamic Media [!DNL Dynamic Media with OpenAPI capabilities] component.
-4. Configure the settings from the **[!Dynamic Media Settings]** tab as shown in the figure.
+4. Configure the settings from the **[!UICONTROL Dynamic Media Settings]** tab as shown in the figure.
 
    * In the **[!Viewer Preset]** field, select **[!Video New]**.
    ![Dynamic Media Settings](/help/assets/assets/dynamic-media-settings.png)
