@@ -32,7 +32,7 @@ To enable the transcription feature, follow the steps as mentioned below:
 
 ## Key benefits {#key-benefits}
 
-* **Allows Search Engine Optimization (SEO):** The transcription improves the Search Engine Optimization (SEO) performance by converting the video content into searchable text, hence enabling you to easily locate the information they need within the video. This would create a more efficient and intuitive experience.
+* **Allows Search Engine Optimization (SEO):** The transcription improves the Search Engine Optimization (SEO) performance by converting the video content into searchable text, hence enabling you to easily locate the information you need within the video. This would create a more efficient and intuitive experience.
 
 * **In-house transcription solution:** With native transcription capabilities now integrated into the video, you can easily access and search content without the need for transcription through external sources. 
 
