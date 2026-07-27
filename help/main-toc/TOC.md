@@ -103,6 +103,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2026 {#2026}
+      + [Maintenance Release Notes for 2026.7.0](/help/release-notes/maintenance/2026/2026-7-0.md)
       + [Maintenance Release Notes for 2026.6.0](/help/release-notes/maintenance/2026/2026-6-0.md)
       + [Maintenance Release Notes for 2026.5.0](/help/release-notes/maintenance/2026/2026-5-0.md)
       + [Maintenance Release Notes for 2026.4.0](/help/release-notes/maintenance/2026/2026-4-0.md)
@@ -263,6 +264,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.07.09 Release Notes](/help/release-notes/universal-editor/2026/2026-07-09.md)
       + [2026.07.02 Release Notes](/help/release-notes/universal-editor/2026/2026-07-02.md)
       + [2026.06.25 Release Notes](/help/release-notes/universal-editor/2026/2026-06-25.md)
       + [2026.06.18 Release Notes](/help/release-notes/universal-editor/2026/2026-06-18.md)
@@ -671,6 +673,7 @@ user-guide-title: AEM as a Cloud Service
     + [Import and export asset metadata](/help/assets/metadata-import-export.md)
     + [Configure asset upload restrictions](/help/assets/configure-asset-upload-restrictions.md)
     + [AI-powered content onboarding and content supply chain automation](/help/assets/ai-powered-content-onboarding-content-supply-chain-automation.md)
+    + [Asset Sourcing portal for AEM Assets](/help/assets/asset-sourcing-portal-for-aem-assets.md)
   + Share and distribute assets {#brand-portal}
     + [Configure [!DNL Assets] with [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
     + [Publish assets to [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
@@ -936,6 +939,7 @@ user-guide-title: AEM as a Cloud Service
         + [Add custom error handler in an Adaptive Form](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
         + [Add a locale for Adaptive Forms based on Core Components](/help/forms/supporting-new-language-localization-core-components.md)
         + [Design JSON Schema for an Adaptive Form (Core Components)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
+        + {hide-from-toc} [API Integration Tool for Dynamic Form Data](/help/forms/api-integration-tool-dynamic-form-data.md)
         + [Add versionings, comments, and annotations to an Adaptive Form](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
         + [Compare Adaptive Forms](/help/forms/compare-forms.md) 
         + [Create custom submit action](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
