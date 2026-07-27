@@ -4,6 +4,7 @@ description: Learn how the File Attachment Virus Scanner / Validator works in AE
 keywords: virus scan file attachment, antivirus scan Adaptive Forms, malware scanning form upload, block malicious file upload, file attachment security AEM Forms, FileAttachmentValidator
 feature: Adaptive Forms, Core Components
 role: Developer, Admin
+hide: true
 ---
 
 # Scan file attachments in Adaptive Forms with a custom validator
