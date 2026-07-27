@@ -26,7 +26,7 @@ To enable the transcription feature, follow the steps as mentioned below:
    
    * In the **[!UICONTROL Viewer Modifiers]** field, select the preferred language in which you want the transcript to be displayed.
 
-   * Check the **[!UICONTROL Show Transcript]** option and click on **[!UICONTROL Done]**.
+   * Enable the **[!UICONTROL Show Transcript]** option and click on **[!UICONTROL Done]**.
 5. Go to the  **[!UICONTROL View As Published]** option. This opens the video along with the transcript at the bottom of the video as shown in the figure. 
    ![Transcription feature in video](/help/assets/assets/transcription.png)
 
