@@ -1,12 +1,12 @@
 ---
-title: Asset Sourcing portal for AEM Assets
+title: Assets Sourcing portal for AEM Assets
 description: Learn how to create  Assets Sourcing Portal that provides a secure, self-service experience for collecting assets from external contributors without granting them access to Adobe Experience Manager Assets.
 role: Admin
 hide: true
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 ---
 
-# Asset Sourcing portal for AEM Assets {#asset-sourcing-portal-aem-assets}
+# Assets Sourcing portal for AEM Assets {#assets-sourcing-portal-aem-assets}
 
 Organizations often rely on photographers, creative agencies, and other external contributors to provide digital assets. Collecting these assets through email, shared drives, or file-sharing services can lead to inconsistent metadata, manual processing, and additional administrative effort. Providing external contributors with direct access to a digital asset management (DAM) system may also require additional licenses and expose internal content.
 
@@ -26,7 +26,7 @@ Using the Assets Sourcing Portal provides the following benefits:
 - Improve governance by controlling where uploaded assets are stored and what metadata contributors provide.
 - Scale onboarding for multiple contributors without creating custom upload solutions.
 
-## How asset sourcing works? {#how-asset-sourcing-works-in-aem-assets}
+## How assets sourcing works? {#how-asset-sourcing-works-in-aem-assets}
 
 An administrator configures a sourcing portal for an external contributor by defining:
 
