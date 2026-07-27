@@ -24,8 +24,6 @@ Ensure the following:
 
 ## Generate captions from audio tracks {#generate-captions}
 
-![Captions & Audio tracks tab](/help/assets/assets/caption-audio-tracks.png)
-
 To generate captions from an audio track:
 
 1. Navigate to the uploaded video asset.
@@ -41,9 +39,9 @@ To generate captions from an audio track:
 
 Caption files are generated for the selected languages and are added to the **Captions** section.
 
->[!NOTE]
->
->Only audio tracks that are in the **Processed** or **Processing** state and are in a supported language can be selected for caption generation.
+ >[!NOTE]
+ >
+ >Only audio tracks that are in the **Processing**, **Processed**, or **Approved** state and are in a supported language can be selected for caption generation.
 
 1. Click **Save** or **Save & Close**.
 
@@ -62,9 +60,9 @@ To translate an existing caption:
 
 Translated captions are added to the **Captions** section.
 
->[!NOTE]
->
->Only caption files that are in the Processed or Processing state and are in a supported language can be selected as source captions for translation.
+ >[!NOTE]
+ >
+ >Only caption files that are in the **Processing**, **Processed**, or **Approved**  state and are in a supported language can be selected as source captions for translation.
 
 1. Click **Save** or **Save & Close**.
 
