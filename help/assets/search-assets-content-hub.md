@@ -47,9 +47,13 @@ For example, search for all the **[!UICONTROL JPEG]** images with keyword `archi
 
 ## Narrow your search results using filters {#narrow-down-search-results}
 
-Use the Filters panel to search for assets based on metadata. You can filter search results based on various search predicates. You can select all the appropriate predicates to minimize or narrow down your search results. You can choose more than 10 predicates while filtering your search results. When you select multiple options within a filter, Content Hub displays the assets that match any of the options selected within a filter. However, when you select multiple options across filters, Content Hub only displays the assets that match all options selected across filters to narrow down your search results. 
+Use the Filters panel to search for assets based on metadata. You can filter search results based on various search predicates. You can select all the appropriate predicates to minimize or narrow down your search results. You can choose more than 10 predicates while filtering your search results. When you select multiple options within a filter, Content Hub displays the assets that match any of the options selected within a filter. However, when you select multiple options across filters, Content Hub only displays the assets that match all options selected across filters to narrow down your search results.
 
 The default filters include file format, approved by, date approved, expired and not expired assets, and expiration date. Administrators can also configure the filters that display in the list of filters. For more information, see [Configure Content Hub user interface](configure-content-hub-ui-options.md#configure-filters-content-hub).
+
+   >[!NOTE]
+   >
+   >The new filter gets displayed on the Search page only if there is at least one asset in the repository matching the filter criteria. The maximum number of fields available in the filter panel on the Search page is 40.
 
 ## AI Search in Content Hub {#ai-search-aem-assets-content-hub}
 
@@ -67,6 +71,22 @@ Some if its key benefits include:
 
 * **Contextually relevant search**: Recognizes the intent behind a query, not just the exact words.
 
+To enable AI Search:
+
+* Minimum required AEM release version is `25520`.
+
+>[!IMPORTANT]
+>
+>This feature is available as Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+
+AI Search is available for Content Hub environments that use the latest search stack. Adobe is rolling out the latest search stack to Content Hub customers in phases. 
+
+To verify if you are using the latest search stack, navigate to your user profile icon and click **Configurations** on the Content Hub User Interface. Select the **Search** tab. If you can see options to select **AI Search** or **Keyword**, AI Search is available and you are using the latest search stack.
+
+![AI Search in Content Hub](/help/assets/assets/ai-search-content-hub.png)
+
+If AI Search is not yet available and you want to enable it, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+
 ### Examples for AI Search in Content Hub {#examples-ai-search-aem-assets-content-hub}
 
 **Example Prompt**: *Woman drinking coffee*
@@ -78,7 +98,9 @@ However, AI Search matches similar words such as `Girl`, `Lady` in the case of `
 Similarly, you can specify this prompt in Spanish or misspell `Woman` as `Wman` and still get the same results.
 
 
-### Enable or disable AI search in Content Hub {#enable-disable-ai-search-content-hub}
+### Enable or disable AI Search in Content Hub {#enable-disable-ai-search-content-hub}
+
+The steps to enable or disable AI Search in Content Hub are the same that you use to verify if you are using the latest search stack for Content Hub.
 
 Execute the following steps to enable or disable AI Search in Content Hub:
 
@@ -200,6 +222,10 @@ To perform Bulk Search in the [!DNL Content Hub], execute the following steps:
 
 Content Hub provides out-of-the-box sorting options to help users organize asset search results. Administrators can also enable custom metadata fields as sorting options so that users can sort assets based on business-specific metadata, such as Channel, Region, SKU, or Campaign.
 
+To enable Sorting in Content Hub:
+
+* Minimum required AEM release version is `25520`.
+
 ### Default sorting options {#default-sorting-options}
 
 By default, Content Hub includes the following sorting options on the Content Hub home page:
@@ -211,6 +237,18 @@ By default, Content Hub includes the following sorting options on the Content Hu
 * Name
 
 * Relevance
+
+>[!IMPORTANT]
+>
+>This feature is available as Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+
+Sorting is available for Content Hub environments that use the latest search stack. Adobe is rolling out the latest search stack to Content Hub customers in phases. 
+
+To verify if you are using the latest search stack, navigate to your user profile icon and click **Configurations** on the Content Hub User Interface. Select the **Search** tab. If you can see options to select **AI Search** or **Keyword**, AI Search is available and you are using the latest search stack.
+
+![AI Search in Content Hub](/help/assets/assets/ai-search-content-hub.png)
+
+If AI Search is not yet available and you want to enable it, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ### Add custom metadata fields as sorting options {#add-custom-metadata-fields-for-sorting}
 
@@ -268,6 +306,10 @@ Yes, you can perform a Bulk Search in AEM Assets Content Hub by entering multipl
 
 Yes, administrators can use the AEM Assets Content Hub Configuration User Interface to configure which filters are available in search interface. While default filters include file format, approval status, expiration date, and more, administrators can tailor these options to fit organizational needs.
 
+### Do you need the ability to filter on custom date fields or use Tags as filters?
+
+If you need the ability to filter on custom date fields or use Tags as filters, you must get [AI Search](#ai-search-aem-assets-content-hub) enabled for your deployment. [Create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable AI Search.
+
 
 **See also**
 
@@ -281,9 +323,10 @@ Yes, administrators can use the AEM Assets Content Hub Configuration User Interf
 * [Download assets](/help/assets/download-assets-from-aem.md)
 * [Manage metadata](/help/assets/manage-metadata.md)
 * [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
-* [Manage reports](/help/assets/manage-reports-assets-view.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
 * [Search facets](/help/assets/search-facets.md)
 * [Manage collections](/help/assets/manage-collections.md)
 * [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
 
