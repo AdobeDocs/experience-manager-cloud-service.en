@@ -1,22 +1,20 @@
 ---
-title: Tutorial - Scan file attachments with ClamAV | AEM Forms
+title: Tutorial: Scan file attachments with ClamAV
 description: A complete, step-by-step tutorial for scanning Adaptive Form file uploads with the ClamAV antivirus engine. Written to be followed by someone new to AEM, including all assumptions, prerequisites, and values to substitute.
+keywords: ClamAV AEM Forms, virus scan file upload, antivirus scan form attachment, malware scanning tutorial, block malicious file upload
 feature: Adaptive Forms, Core Components
 role: Developer
-exl-id: REPLACE-WITH-GENERATED-EXL-ID
 ---
 
 # Tutorial: Scan file attachments with ClamAV
 
 [!BADGE AEM Forms]{type=Positive tooltip="Applies to AEM Forms"}
 
+<span class="preview"> The File Attachment Virus Scanner / Validator capability is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
 This tutorial takes you end to end. You will run the ClamAV antivirus engine, add a custom validator to AEM, create a sample Adaptive Form with a file-upload field, connect the validator, and confirm that infected files are rejected at submission. It is written to be followed even if you are new to AEM. Every command, screen path, and value you need is spelled out.
 
 For the concepts behind the validator and the interface reference, see the companion article [Scan file attachments in Adaptive Forms with a custom validator](/help/forms/scan-file-attachments-custom-validator.md). You do not need to read it first to complete this tutorial, but it explains why each piece exists.
-
->[!AVAILABILITY]
->
->The **File Attachment Virus Scanner / Validator** capability is available through the AEM Forms Early Adopter Program and is controlled by the feature toggle `FT_FORMS-23497`. You must be enrolled, with the toggle enabled for your program, to use it. To request access, write to **aem-forms-ea@adobe.com** from your official email address.
 
 ## What you will build {#what-you-will-build}
 
@@ -35,12 +33,13 @@ This tutorial assumes the setup below. If any item is missing, install or obtain
 |---|---|---|---|
 | 1 | A local AEM author instance is running and reachable at `http://localhost:4502` | Open `http://localhost:4502` in a browser. You should see the AEM sign-in or Start screen. | This tutorial uses the local AEM as a Cloud Service SDK quickstart. |
 | 2 | You can sign in to AEM as an administrator | Sign in at `http://localhost:4502` with an admin account (default local credentials are `admin` / `admin`) | Admin rights are needed to deploy code, change OSGi configuration, and author forms. |
-| 3 | Your AEM environment is entitled to the Early Access file-attachment validator feature, with feature toggle `FT_FORMS-23497` enabled | Confirm with your Early Adopter Program contact | Without the toggle enabled, the **File Attachment Virus Scanner / Validator** field does not appear on the Submission tab at all, regardless of what you deploy. |
-| 4 | Java JDK is installed and matches your AEM SDK's required version | Run `java -version` in a terminal | Use the Java version required by your AEM SDK (for current SDKs this is Java 11 or Java 21). |
-| 5 | Apache Maven 3.x is installed | Run `mvn -version` | Used to build and deploy the custom code. |
-| 6 | Docker is installed (recommended path for running ClamAV) | Run `docker --version` | If you cannot use Docker, see the native-install note in Step 1. |
-| 7 | You have, or can create, an AEM Maven project to hold custom code | See Step 2 | Step 2 creates one if you do not have it. |
-| 8 | You have the Maven coordinates of the Early Access dependency that provides the `com.adobe.forms.common.service` interfaces | Provided in your Early Adopter Program onboarding materials | **Required.** These coordinates are not public. Obtain them from your EA contact. See Step 3. |
+| 3 | Your AEM environment is entitled to the Early Access file-attachment validator feature, with feature toggle `FT_FORMS-23497` enabled | Confirm with your Early Adopter Program contact | This toggle gates the underlying `FileAttachmentValidatorManager` capability. The Submission tab field itself is something this tutorial adds in Step 7 — it does not exist out of the box either way. |
+| 4 | You have, or can create, an Adaptive Form Container **proxy component** in your project's `ui.apps` module | See Step 7 | This is the standard pattern for extending an AEM Core Component. Step 7 creates the dialog extension on it. |
+| 5 | Java JDK is installed and matches your AEM SDK's required version | Run `java -version` in a terminal | Use the Java version required by your AEM SDK (for current SDKs this is Java 11 or Java 21). |
+| 6 | Apache Maven 3.x is installed | Run `mvn -version` | Used to build and deploy the custom code. |
+| 7 | Docker is installed (recommended path for running ClamAV) | Run `docker --version` | If you cannot use Docker, see the native-install note in Step 1. |
+| 8 | You have, or can create, an AEM Maven project to hold custom code | See Step 2 | Step 2 creates one if you do not have it. |
+| 9 | You have the Maven coordinates of the Early Access dependency that provides the `com.adobe.forms.common.service` interfaces | Provided in your Early Adopter Program onboarding materials | **Required.** These coordinates are not public. Obtain them from your EA contact. See Step 3. |
 
 ### Values you will substitute {#substitute-values}
 
@@ -48,8 +47,7 @@ Wherever you see these placeholders, replace them with your own values:
 
 * `<PROJECT_ROOT>`: the folder of your AEM Maven project.
 * `<APP_ID>`: your project's application id or bundle module name (for example, `mysite`).
-* `<CLAMD_HOST>`: the host where `clamd` runs. In this tutorial it is `localhost`.
-* `<SDK_DEPENDENCY_*>`: the group id, artifact id, and version from assumption #8.
+* `<SDK_DEPENDENCY_*>`: the group id, artifact id, and version from assumption #9.
 
 >[!NOTE]
 >
@@ -65,6 +63,7 @@ You complete these steps in order:
 1. Add the ClamAV validator class.
 1. Build and deploy to AEM.
 1. Configure the `clamd` connection in AEM.
+1. Add the validator field to the form dialog.
 1. Create the sample Adaptive Form.
 1. Connect the ClamAV Scanner to the form.
 1. Test with a clean file and a test-virus file.
@@ -139,7 +138,7 @@ If you do not have one, create a project with the AEM Project Archetype:
 
 ## Step 3: Add the Early Access dependency {#step-3-dependency}
 
-Your code compiles against the `FileAttachmentValidator` interface, which comes from an Early Access dependency (assumption #8).
+Your code compiles against the `FileAttachmentValidator` interface, which comes from an Early Access dependency (assumption #9).
 
 1. Open `<PROJECT_ROOT>/core/pom.xml`.
 
@@ -318,6 +317,8 @@ Your code compiles against the `FileAttachmentValidator` interface, which comes 
 
    **Expected result:** the component is listed and its state is **active** (or **satisfied**). If it is unsatisfied, see Troubleshooting.
 
+   ![Components console showing ClamAVFileAttachmentValidator and FileAttachmentValidatorDataSourceServlet as active](/assets/file-attachment-validator-osgi-components.png)
+
 ## Step 6: Configure the clamd connection {#step-6-config}
 
 Tell the validator where `clamd` is. For local development the defaults (`localhost:3310`) already match Step 1, so this step is only needed if your values differ. Do it once to confirm the settings exist.
@@ -338,13 +339,165 @@ Tell the validator where `clamd` is. For local development the defaults (`localh
    | clamd Port | `3310` |
    | Scan Timeout (ms) | `30000` |
 
+   ![ClamAV File Attachment Scanner configuration dialog in the OSGi configuration console](/assets/clamav-scanner-configmgr.png)
+
 1. Select **Save**.
 
 >[!NOTE]
 >
 >For real environments, deploy these values as a repository OSGi configuration in your project (a `.cfg.json` file per environment) so they travel with each deployment instead of being set by hand.
 
-## Step 7: Create the sample Adaptive Form {#step-7-form}
+## Step 7: Add the validator field to the form dialog {#step-7-dialog-field}
+
+The **File Attachment Virus Scanner / Validator** field does not exist in the out-of-the-box Adaptive Form Container dialog — for Core Components-based forms, you add it once, in your own project. This is a one-time step; you don't repeat it if you later add more validators.
+
+1. If your `formcontainer` proxy component doesn't already exist, create it at:
+
+   ```
+   <PROJECT_ROOT>/ui.apps/src/main/content/jcr_root/apps/<APP_ID>/components/adaptiveForm/formcontainer/.content.xml
+   ```
+
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+       jcr:primaryType="cq:Component"
+       jcr:title="Form Container"
+       sling:resourceSuperType="core/fd/components/form/container/v2/container"/>
+   ```
+
+   If you already have this component (most projects created from the Core Components archetype do), skip to the next step.
+
+1. Create a dialog extension at:
+
+   ```
+   <PROJECT_ROOT>/ui.apps/src/main/content/jcr_root/apps/<APP_ID>/components/adaptiveForm/formcontainer/_cq_dialog/.content.xml
+   ```
+
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+       jcr:primaryType="nt:unstructured">
+     <content jcr:primaryType="nt:unstructured">
+       <items jcr:primaryType="nt:unstructured">
+         <tabs jcr:primaryType="nt:unstructured">
+           <items jcr:primaryType="nt:unstructured">
+             <submitActions jcr:primaryType="nt:unstructured">
+               <items jcr:primaryType="nt:unstructured">
+                 <columns jcr:primaryType="nt:unstructured">
+                   <items jcr:primaryType="nt:unstructured">
+                     <fileAttachmentValidator
+                         jcr:primaryType="nt:unstructured"
+                         sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                         fieldLabel="File Attachment Virus Scanner/Validator"
+                         fieldDescription="Select a registered validator configuration to scan submitted file attachments. Select None to disable validation for this form."
+                         emptyText="None"
+                         name="./fileAttachmentValidator">
+                       <datasource
+                           jcr:primaryType="nt:unstructured"
+                           sling:resourceType="<APP_ID>/datasources/fileattachmentvalidators"/>
+                     </fileAttachmentValidator>
+                   </items>
+                 </columns>
+               </items>
+             </submitActions>
+           </items>
+         </tabs>
+       </items>
+     </content>
+   </jcr:root>
+   ```
+
+   This only defines the one new field, mirroring the real dialog's node names down to the insertion point — it does not redefine or replace any of the existing Submission tab fields. See [Add the validator field to the form dialog](/help/forms/scan-file-attachments-custom-validator.md#add-dialog-field) in the companion article for why this works.
+
+1. Add the datasource servlet that lists your registered validators. It's identical regardless of which validator engine you're using — see [Add the validator field to the form dialog](/help/forms/scan-file-attachments-custom-validator.md#add-dialog-field) in the companion article for what it does and why. Create it at:
+
+   ```
+   <PROJECT_ROOT>/core/src/main/java/com/example/forms/security/FileAttachmentValidatorDataSourceServlet.java
+   ```
+
+   ```java
+   package com.example.forms.security;
+
+   import com.adobe.forms.common.service.FileAttachmentValidator;
+   import com.adobe.forms.common.service.FileAttachmentValidatorManager;
+   import com.adobe.granite.ui.components.ds.DataSource;
+   import com.adobe.granite.ui.components.ds.SimpleDataSource;
+   import com.adobe.granite.ui.components.ds.ValueMapResource;
+   import org.apache.sling.api.SlingHttpServletRequest;
+   import org.apache.sling.api.SlingHttpServletResponse;
+   import org.apache.sling.api.resource.Resource;
+   import org.apache.sling.api.resource.ResourceMetadata;
+   import org.apache.sling.api.servlets.HttpConstants;
+   import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
+   import org.apache.sling.api.wrappers.ValueMapDecorator;
+   import org.apache.sling.servlets.annotations.SlingServletResourceTypes;
+   import org.osgi.service.component.annotations.Component;
+   import org.osgi.service.component.annotations.Reference;
+   import org.osgi.service.component.annotations.ReferenceCardinality;
+   import org.osgi.service.component.annotations.ReferencePolicy;
+
+   import javax.servlet.Servlet;
+   import java.util.ArrayList;
+   import java.util.HashMap;
+   import java.util.List;
+   import java.util.Map;
+
+   @Component(service = { Servlet.class })
+   @SlingServletResourceTypes(
+           resourceTypes = "<APP_ID>/datasources/fileattachmentvalidators",
+           methods = HttpConstants.METHOD_GET)
+   public class FileAttachmentValidatorDataSourceServlet extends SlingSafeMethodsServlet {
+
+       @Reference(cardinality = ReferenceCardinality.OPTIONAL, policy = ReferencePolicy.DYNAMIC)
+       private volatile FileAttachmentValidatorManager fileAttachmentValidatorManager;
+
+       @Override
+       protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) {
+           List<Resource> options = new ArrayList<>();
+
+           FileAttachmentValidatorManager manager = fileAttachmentValidatorManager;
+           if (manager != null) {
+               List<FileAttachmentValidator> validators = manager.getValidators();
+               if (validators != null) {
+                   for (FileAttachmentValidator validator : validators) {
+                       String name = validator.getFileAttachmentValidatorName();
+                       if (name != null && !name.isEmpty()) {
+                           options.add(createOption(request, name));
+                       }
+                   }
+               }
+           }
+
+           DataSource dataSource = new SimpleDataSource(options.iterator());
+           request.setAttribute(DataSource.class.getName(), dataSource);
+       }
+
+       private Resource createOption(SlingHttpServletRequest request, String name) {
+           Map<String, Object> props = new HashMap<>();
+           props.put("value", name);
+           props.put("text", name);
+           return new ValueMapResource(request.getResourceResolver(), new ResourceMetadata(),
+                   "nt:unstructured", new ValueMapDecorator(props));
+       }
+   }
+   ```
+
+   Replace `<APP_ID>` in both the dialog XML and the servlet's `resourceTypes` with your project's actual application ID (matching assumption #4), and adjust the package name if yours differs from Step 4.
+
+1. Build and deploy both changes:
+
+   ```
+   cd <PROJECT_ROOT>
+   mvn clean install -PautoInstallPackage
+   ```
+
+   **Expected result:** the build ends with `BUILD SUCCESS`, and the `ui.apps` content package (including this dialog change) and the `core` bundle are both installed.
+
+>[!NOTE]
+>
+>You might register more than one validator over time — for example, one per antivirus engine, or several differently configured instances of the same engine. Nothing here needs to change for that: every registered `FileAttachmentValidator` shows up in the drop-down automatically because each has its own `getFileAttachmentValidatorName()`, and `emptyText="None"` keeps "no validator" as the default so existing forms are unaffected until you explicitly choose one.
+
+## Step 8: Create the sample Adaptive Form {#step-8-form}
 
 Now create a simple form with a file-upload field.
 
@@ -385,7 +538,7 @@ Now create a simple form with a file-upload field.
 
    **Expected result:** the form now has a file-attachment field and a submit button.
 
-## Step 8: Connect the ClamAV Scanner to the form {#step-8-connect}
+## Step 9: Connect the ClamAV Scanner to the form {#step-9-connect}
 
 1. In the form editor, select the **Guide Container** (the outermost container) to open the **Adaptive Form Container** properties. Use the properties (wrench) icon.
 
@@ -393,15 +546,17 @@ Now create a simple form with a file-upload field.
 
 1. Find the **File Attachment Virus Scanner / Validator** drop-down list and select **ClamAV Scanner**.
 
-   >This field and its list of options are provided by AEM Forms itself — you didn't write any UI code for this. The entry is the name returned by `getFileAttachmentValidatorName()` in your code. If you changed `VALIDATOR_NAME`, select that name instead.
+   >This field and its list of options came from Step 7 — the dialog extension and datasource servlet you deployed to your own project. The entry is the name returned by `getFileAttachmentValidatorName()` in your code. If you changed `VALIDATOR_NAME`, select that name instead.
 
    >[!IMPORTANT]
    >
-   >This field only appears when the `FT_FORMS-23497` feature toggle is enabled for your program (assumption #3). If the field is missing entirely, that's the cause — check with your Early Adopter Program contact before troubleshooting the bundle.
+   >If this field is missing entirely, you haven't completed Step 7, or the `ui.apps` package from Step 7 didn't deploy. This field is never present out of the box for Core Components-based forms.
 
 1. Select **Done**, then save the form.
 
-## Step 9: Test the integration {#step-9-test}
+![Submission tab of the Adaptive Form Container dialog with ClamAV Scanner selected in the File Attachment Virus Scanner/Validator field](/assets/file-attachment-validator-submission-tab.png)
+
+## Step 10: Test the integration {#step-10-test}
 
 Test both outcomes.
 
@@ -449,9 +604,9 @@ Test both outcomes.
 
 **Component is unsatisfied in Step 5.** Open `http://localhost:4502/system/console/components`, find `ClamAVFileAttachmentValidator`, and read the reason. A missing interface usually means the dependency is not present at runtime. Confirm your AEM environment has the Early Access feature.
 
-**The File Attachment Virus Scanner / Validator field doesn't appear on the Submission tab at all (Step 8).** This means the `FT_FORMS-23497` feature toggle isn't enabled for your program. Confirm its status with your Early Adopter Program contact — no amount of redeploying your bundle will make the field appear without it.
+**The File Attachment Virus Scanner / Validator field doesn't appear on the Submission tab at all (Step 9).** Confirm the Step 7 `ui.apps` package (the dialog extension and datasource servlet) actually deployed — check `http://localhost:4502/system/console/components` for `FileAttachmentValidatorDataSourceServlet`. Also confirm the `FT_FORMS-23497` feature toggle is enabled for your program; it gates the underlying `FileAttachmentValidatorManager` capability the datasource depends on.
 
-**The field appears, but ClamAV Scanner isn't in the drop-down (Step 8).** Confirm the component is active, that `getFileAttachmentValidatorName()` returns a unique non-empty value, and reload the form editor after deploying.
+**The field appears, but ClamAV Scanner isn't in the drop-down (Step 9).** Confirm the `ClamAVFileAttachmentValidator` component is active, that `getFileAttachmentValidatorName()` returns a unique non-empty value, and reload the form editor after deploying.
 
 **Every file is rejected, even clean ones.** The validator fails closed, so this usually means it cannot reach `clamd`. Recheck Step 1 (is `clamd` running and returning `PONG`?) and Step 6 (host, port, timeout). Look in `error.log` for connection errors or `ERROR` responses.
 

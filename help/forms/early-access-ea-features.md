@@ -208,6 +208,18 @@ not sure what's going on with this video link. cleaned up version below
 
 Ready to start? The AEM Forms CLI tool is available under the Early Access program for Forms as a Cloud Service deployments. To request access, email your organization ID and program details to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address.
 
+### File Attachment Virus Scanner / Validator
+
+Adaptive Forms can now pass every uploaded file attachment to a virus scanner or validator of your choice before it's persisted, giving you a server-side check that blocks malicious or non-compliant files at submission time, before they ever reach the repository.
+
+**Key capabilities:**
+
+* **Bring your own scanning engine**: Implement a `FileAttachmentValidator` service and connect any antivirus engine, malware scanner, or custom validation logic you already use — the interface is engine-agnostic.
+* **Scan before persist**: Files are evaluated from memory before they're written to the repository, so a rejected file is never stored.
+* **Multiple configurations**: Register more than one validator — one per antivirus engine, or several differently configured instances of the same engine — and choose which one (or none) applies per form.
+
+Ready to start? [Scan file attachments in Adaptive Forms with a custom validator](/help/forms/scan-file-attachments-custom-validator.md) covers the concepts and the interface reference, and [Tutorial: Scan file attachments with ClamAV](/help/forms/scan-file-attachments-clamav.md) walks through a complete, working example end to end.
+
 <!--
 
 ### API Integration Tool for Dynamic Form Data
