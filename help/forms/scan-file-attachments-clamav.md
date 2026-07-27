@@ -1,5 +1,5 @@
 ---
-title: Tutorial: Scan file attachments with ClamAV
+title: "Tutorial: Scan file attachments with ClamAV"
 description: A complete, step-by-step tutorial for scanning Adaptive Form file uploads with the ClamAV antivirus engine. Written to be followed by someone new to AEM, including all assumptions, prerequisites, and values to substitute.
 keywords: ClamAV AEM Forms, virus scan file upload, antivirus scan form attachment, malware scanning tutorial, block malicious file upload
 feature: Adaptive Forms, Core Components
@@ -318,7 +318,7 @@ Your code compiles against the `FileAttachmentValidator` interface, which comes 
 
    **Expected result:** the component is listed and its state is **active** (or **satisfied**). If it is unsatisfied, see Troubleshooting.
 
-   ![Components console showing ClamAVFileAttachmentValidator and FileAttachmentValidatorDataSourceServlet as active](/assets/file-attachment-validator-osgi-components.png)
+   ![Components console showing ClamAVFileAttachmentValidator and FileAttachmentValidatorDataSourceServlet as active](/help/forms/assets/file-attachment-validator-osgi-components.png)
 
 ## Step 6: Configure the clamd connection {#step-6-config}
 
@@ -340,7 +340,7 @@ Tell the validator where `clamd` is. For local development the defaults (`localh
    | clamd Port | `3310` |
    | Scan Timeout (ms) | `30000` |
 
-   ![ClamAV File Attachment Scanner configuration dialog in the OSGi configuration console](/assets/clamav-scanner-configmgr.png)
+   ![ClamAV File Attachment Scanner configuration dialog in the OSGi configuration console](/help/forms/assets/clamav-scanner-configmgr.png)
 
 1. Select **Save**.
 
@@ -555,7 +555,7 @@ Now create a simple form with a file-upload field.
 
 1. Select **Done**, then save the form.
 
-![Submission tab of the Adaptive Form Container dialog with ClamAV Scanner selected in the File Attachment Virus Scanner/Validator field](/assets/file-attachment-validator-submission-tab.png)
+![Submission tab of the Adaptive Form Container dialog with ClamAV Scanner selected in the File Attachment Virus Scanner/Validator field](/help/forms/assets/file-attachment-validator-submission-tab.png)
 
 ## Step 10: Test the integration {#step-10-test}
 
