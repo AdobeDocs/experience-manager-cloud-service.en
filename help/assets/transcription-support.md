@@ -21,12 +21,12 @@ To enable the transcription feature, follow the steps as mentioned below:
 3. You need to add a video element within that Dynamic Media Dynamic Media [!DNL Dynamic Media with OpenAPI capabilities] component.
 4. Configure the settings from the **[!UICONTROL Dynamic Media Settings]** tab as shown in the figure.
 
-   * In the **[!UICONTROL Viewer Preset]** field, select **[!UICONTROL Video New]**.
+   1. In the **[!UICONTROL Viewer Preset]** field, select **[!UICONTROL Video New]**.
    ![Dynamic Media Settings](/help/assets/assets/dynamic-media-settings.png)
    
-   * In the **[!UICONTROL Viewer Modifiers]** field, select the preferred language in which you want the transcript to be displayed.
+   2. In the **[!UICONTROL Viewer Modifiers]** field, select the preferred language in which you want the transcript to be displayed.
 
-   * Enable the **[!UICONTROL Show Transcript]** option and click on **[!UICONTROL Done]**.
+   3. Enable the **[!UICONTROL Show Transcript]** option and click on **[!UICONTROL Done]**.
 5. Go to the  **[!UICONTROL View As Published]** option. This opens the video along with the transcript at the bottom of the video as shown in the figure. 
    ![Transcription feature in video](/help/assets/assets/transcription.png)
 
