@@ -37,7 +37,7 @@ To generate captions from an audio track:
 1. Select one or more output languages.
 1. Click **Done**.
 
-Caption files are generated for the selected languages and are added to the **Captions** section.
+ Caption files are generated for the selected languages and are added to the **Captions** section.
 
  >[!NOTE]
  >
@@ -58,7 +58,7 @@ To translate an existing caption:
 1. Select one or more output languages.
 1. Click **Done**.
 
-Translated captions are added to the **Captions** section.
+ Translated captions are added to the **Captions** section.
 
  >[!NOTE]
  >
