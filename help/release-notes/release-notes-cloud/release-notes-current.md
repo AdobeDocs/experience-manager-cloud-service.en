@@ -374,6 +374,14 @@ If your organization is new to Experience Manager Assets, you can opt in to the 
 
 To participate or learn more, send an email to `GRP-AEM-ONBOARDING-AGENT@adobe.com`.
 
+#### Assets Sourcing portal for AEM Assets {#asset-sourcing-aem-assets}
+
+[The Assets Sourcing Portal](/help/assets/asset-sourcing-portal-for-aem-assets.md) provides a secure, self-service experience for collecting assets from external contributors without granting them access to Adobe Experience Manager Assets. Contributors can upload assets, provide the required metadata, and submit content directly to a designated intake location while administrators maintain control over asset organization and governance.
+
+Adobe works with participating customers to understand their needs and may deliver expanded capabilities as the limited availability program progresses. Customers in this program gain early access to new features as they ship and are encouraged to share feedback that directly shapes the roadmap.
+
+To participate or learn more, send an email to `Grp-AEM-Assets-Sourcing-Portal@adobe.com`.
+
 ## [!DNL Experience Manager] Guides {#guides}
 
 You can find a complete list of new and enhanced features of the latest release of Adobe Experience Manager Guides [here](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
