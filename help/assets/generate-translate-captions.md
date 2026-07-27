@@ -103,11 +103,18 @@ The **Status** column displays the current processing state of each caption.
 * **Processed** – The caption has been generated or translated and is ready for approval.
 * **Approved** – The caption is approved and available for delivery.
 
-## Preview captions {#preview-captions}
+## Deliver videos with captions {#deliver-videos-with-captions}
 
-After caption processing is complete:
+After the caption files are approved, you can deliver the video with captions using the Dynamic Media delivery URL.
 
-1. Open the video preview.
-1. Use the player controls to:
-   * Enable captions.
-   * Switch between available caption languages.
+To copy the delivery URL:
+
+1. Open the video asset.
+1. Open the **Dynamic Media** panel.
+1. Click **Copy URL**.
+
+The copied URL has the following format:
+
+`https://delivery-p<programId>-e<environmentId>.adobeaemcloud.com/adobe/assets/urn:aaid:aem:<asset-uuid>/play`
+
+When the video is played using the `/play` URL, approved captions are available from the **CC (Closed Captions)** button in the video player. If multiple approved caption languages are available, users can switch between them using the **CC** button.
