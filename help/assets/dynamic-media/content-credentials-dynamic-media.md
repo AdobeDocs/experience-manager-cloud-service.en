@@ -6,7 +6,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 ---
 # Content Credentials in Dynamic Media {#content-credentials-dynamic-media}
 
-Brands are more concerned than ever about content transparency, AI disclosure, and preventing the tampering of assets. The Content Authenticity Initiative (CAI) at Adobe builds tools compliant with the [Coalition for Content Provenance and Authenticity](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model) (C2PA) technical standard. Using Content Credentials, images which are generated through AI are digitally signed using the C2PA (Coalition for Content Provenance and Authenticity) specification. These signatures embed secure metadata within the image, enabling users and systems to verify the content's origin and history The metadata can provide information such as:
+Brands are more concerned than ever about content transparency, AI disclosure, and preventing the tampering of assets. The Content Authenticity Initiative (CAI) at Adobe builds tools compliant with the [Coalition for Content Provenance and Authenticity](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model) (C2PA) technical standard. Using Content Credentials, assets which are generated through AI are digitally signed using the C2PA (Coalition for Content Provenance and Authenticity) specification. These signatures embed secure metadata within the asset, enabling users and systems to verify the content's origin and history The metadata can provide information such as:
 
 1. The software or service used to create the image.
 2. Whether generative AI was involved in the image creation process.
@@ -24,7 +24,7 @@ Ensure that you fulfil the following requirements before using Content Credentia
     2. The source brand asset contains valid Content Credentials metadata.
 2. Dynamic Media does not create Content Credentials for assets that do not already contain them.
 3. For image or document assets, Content Credentials is supported for *.jpeg*, *.png*, *.gif*, *.tiff*, *.dng*, *.arw*, and *.nef* file formats. For video assets, Content Credentials is supported for *.mp4*, *.avi*, *.mov*, *.m4v* file formats.
-4. Content Credentials preservation is available only in supported Dynamic Media delivery and export workflows.
+4. Content Credentials preservation is available only in assets that are supported and can be exported in Dynamic Media.
 
     >[!NOTE]
     >
@@ -57,8 +57,7 @@ You can now view the list of actions performed such as opening the asset, conver
  
 To maintain the integrity and authenticity of Content Credentials, Dynamic Media enforces the following limitations:
 
-1. Source assets that are above the configured maximum file size of 2 GiB are not processed for Content Credentials preservation.
-2. Source assets that are above the processing timeout of 60 seconds are not processed for Content Credentials preservation. However, these limits are subject to the Dynamic Media service configuration and may vary from environment to environment.
+1. Source assets that are above the configured maximum file size of 2 GiB and above the processing timeout of 60 seconds are not processed for Content Credentials preservation. However, these limits are subject to the Dynamic Media service configuration and may vary from environment to environment.
 3. Composite Assets is not supported during signing and only the base image is considered for signing. If the base image is generated through any GenAI tool, the output is signed accordingly. However, the signature does not include any information about the GenAI-generated layers that are used to create the final rendition.
 4. Content Credentials processing has a configured timeout.
 If any of these safeguards are reached, the asset continues through normal Dynamic Media processing, but Content Credentials may not be preserved in the generated output.
