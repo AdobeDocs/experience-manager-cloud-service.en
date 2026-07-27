@@ -6,7 +6,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets."
 ---
 # Transcription Support to videos {#transcription-support}
 
-The transcription support feature has now been added in Dynamic Media [!DNL Dynamic Media with OpenAPI capabilities] for new video viewers which shows the transcription of the video. The transcripts are generated based on the captions you have added in the video.
+The transcription support feature has now been added in Dynamic Media [!DNL Dynamic Media with OpenAPI capabilities] which shows the transcription of the video. The transcripts are generated based on the captions you have added in the video.
 
 ## Prerequisites {#prerequisites-for-enabling-transcriptions}
 
@@ -32,7 +32,7 @@ To enable the transcription feature, follow the steps as mentioned below:
 
 ## Key benefits {#key-benefits}
 
-* **Allows Search Engine Optimization (SEO):** The transcription improves the Search Engine Optimization (SEO) performance by converting the video content into searchable text, hence enabling you to easily locate the information they need within the video. This would create a more efficient and user-friendly experience.
+* **Allows Search Engine Optimization (SEO):** The transcription improves the Search Engine Optimization (SEO) performance by converting the video content into searchable text, hence enabling you to easily locate the information they need within the video. This would create a more efficient and intuitive experience.
 
 * **In-house transcription solution:** With native transcription capabilities now integrated into the video, you can easily access and search content without the need for transcription through external sources. 
 
