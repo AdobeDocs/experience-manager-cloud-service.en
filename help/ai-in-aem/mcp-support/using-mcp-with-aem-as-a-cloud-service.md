@@ -40,7 +40,7 @@ With the July 2026 AEM release, Adobe offers a unified MCP server, which with a 
 The endpoint is https://mcp.adobeaemcloud.com/adobe/mcp
 
 
-|Category|Description|On by default|Supports Read-write|Supports Read-only| 
+|Category|Description|On by default|Supports Read-write|Supports Read-only|
 |---|---|---|---|---|
 |**Content**|Content operations including create, read, update, and delete (CRUD) for pages and content fragments, plus asset importing and assets search (minimum required AEM release version is `26309`). There is also support for asset upload, download, move/copy/delete, and publish/unpublish for assets, along with editing metadata, inspecting references, and identifying unused assets.| Yes | Yes (default) | Yes |
 |**Cloud Manager**|Manage Cloud Manager entities including programs, environments, repositories and pipelines, which can also be triggered.| Yes | Yes (default) | -- |
