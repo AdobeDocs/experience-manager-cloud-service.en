@@ -23,11 +23,13 @@ The 2026.8.0 feature activation will provide the full feature set for this maint
 
 ### Fixed Issues {#fixed-issues-27293}
 
+* ASSETS-69193: Fixed a regression in the Adobe Stock integration (updated the stock-api library to 1.0.14).
+* ASSETS-69340: Fixed captions disappearing on Dynamic Media videos after editing or adding a new language.
 * GRANITE-63638: Fixed the unlocalized "Cannot reorder profiles that changed" message in Security > Edit User.
-* SITES-47446: Fixed the rich text editor spell checker incorrectly flagging alphanumeric terms as misspelled.
-* GRANITE-69209: Fixed duplicate replication events when batch-replicating a parent and its descendants.
-* GRANITE-69183: Improved query performance when fetching aborted workflow tasks.
 * GRANITE-67558: Fixed a `NullPointerException` in Felix Log on service-changed events.
+* GRANITE-69183: Improved query performance when fetching aborted workflow tasks.
+* GRANITE-69209: Fixed duplicate replication events when batch-replicating a parent and its descendants.
+* SITES-47446: Fixed the rich text editor spell checker incorrectly flagging alphanumeric terms as misspelled.
 
 #### AEM Guides {#guides-27293}
 
