@@ -78,3 +78,18 @@ AEM achieves these goals by adopting the main characteristics of modern cloud se
 >Once you have an overview of AEM as a Cloud Service, you can onboard quickly by reviewing the [Onboarding Journey](/help/journey-onboarding/overview.md).
 >
 >Already onboarded or ready to dive into testing AEM's features? Install the [AEM Reference Demos Add-On](/help/journey-sites/demos-add-on/overview.md) to explore AEM's powerful features using rich examples.
+
+## AEM Supported Languages {#supported-platforms}
+
+Adobe Experieince Manager as a Cloud Service is available in the following languages:
+
+* English
+* French
+* German
+* Japanese
+* Italian
+* Spanish
+* Brazilian Portuguese
+* Simplified Chinese
+* Traditional Chinese
+* Korean

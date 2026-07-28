@@ -54,6 +54,7 @@ The 2026.7.0 feature activation will provide the full feature set for this maint
 * FORMS-25369: Fixed an issue where copying a theme did not carry over clientlib dependencies from the base client library metadata.
 * FORMS-25372: Fixed prefill failures and JSON merge issues affecting embedded Adaptive Forms.
 * FORMS-24853: Fixed a tabbing issue with the Scribble signature component (Foundation Component) in Adaptive Forms.
+* SCRNS-5141: Screens: Outgoing transition on embedded sequence causes blank/grey content area instead of transitioning from existing content.
 * SITES-41928: Contexthub + Unified Shell overlap makes component menu inaccessible in editor.
 * SITES-46579: Content API: Fix repository traversal in RelationshipService language-copy query — define index and rewrite query.
 * SITES-44192: Forms/Content API: Content API returns 404 for EDS forms using `sling:configRef` instead of `cq:conf`.
@@ -117,3 +118,4 @@ AEM as a Cloud Service is dedicated to optimizing your platform's security and p
 |AEM Core Components| 2.31.2|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
 |Node.js|14 (default)|[Supported Node.js versions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions)|
 |Java 21|21.0.11|[JDK 21.0.11](https://www.oracle.com/java/technologies/javase/21-0-11-relnotes.html)|
+
