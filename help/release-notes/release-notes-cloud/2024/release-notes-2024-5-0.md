@@ -99,6 +99,15 @@ Experience Manager Assets now enables you to quickly [publish assets to Experien
 
 --> 
 
+### New features in AEM Forms {#forms-new-features}
+
+#### Additional CAPTCHA options for bot protection
+
+AEM Forms now supports two additional CAPTCHA solutions for protecting Adaptive Forms from bots and spam submissions, in addition to the already available Google reCAPTCHA. This gives you more choice and flexibility in securing your forms.
+
+* **Cloudflare Turnstile**: A frictionless CAPTCHA that verifies users through a simple challenge without requiring explicit interaction, improving the user experience. For more information, see [Use Turnstile in an Adaptive Form for Core Components](/help/forms/integrate-adaptive-forms-turnstile-core-components.md) and [Use Turnstile in an Adaptive Form for Foundation Components](/help/forms/integrate-adaptive-forms-turnstile.md).
+* **hCaptcha**: A privacy-focused CAPTCHA that offers a user-friendly alternative with an emphasis on data privacy, balancing security and user experience. For more information, see [Use hCaptcha in an Adaptive Form for Core Components](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md) and [Use hCaptcha in an Adaptive Form for Foundation Components](/help/forms/integrate-adaptive-forms-hcaptcha.md).
+
 ### New pre-release features in AEM Forms {#forms-new-prerelease-features}
 
 #### Enhanced Visual Rule Editor for Core Component Based Adaptive Forms
@@ -120,19 +129,6 @@ This release brings a significant upgrade to the visual rule editor for adaptive
 The AEM Forms Early Access Program program offers a unique opportunity to you to get exclusive access to cutting-edge innovations before anyone else, and help shape their development. The program offers access to multiple innovations. 
 
 This release notes lists the innovations delivered in current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
-
-#### Enhanced bot protection methods
-
-AEM Forms has enhanced its security features by adding support for two popular CAPTCHA solutions: Cloudflare Turnstile and hCaptcha. This adds to the already available Google reCAPTCHA, providing users with more choice and flexibility in protecting their forms from bots and spam submissions.
-
-* **Cloudflare Turnstile**: This frictionless CAPTCHA verifies users through a simple challenge that doesn't require explicit interaction. It seamlessly integrates into your forms, improving the user experience.
-* **hCaptcha**: This privacy-focused CAPTCHA offers a user-friendly alternative with a focus on data privacy. It aims to strike a balance between security and user experience.
-* **Google reCAPTCHA**: AEM Forms continue to support both reCAPTCHA v2 and reCAPTCHA Enterprise, offering a reliable and well-established solution.
-
-By offering multiple CAPTCHA options, AEM Forms have empowered you to select the solution that best aligns with your specific needs. 
-
-Ready to integrate any of these CAPTCHA solution with your Adaptive Forms? Our documentation provides detailed instructions for each: [Cloudflare Turnstile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), and [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
-
 
 ### Forms Service
 

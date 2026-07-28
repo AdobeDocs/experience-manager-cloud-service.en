@@ -348,6 +348,8 @@ user-guide-title: AEM as a Cloud Service
   + [Principal View for Permissions Management](/help/security/touch-ui-principal-view.md)
   + [Best Practices for Sling Service User Mapping and Service User Definition](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
   + [Customer Managed Keys for Adobe as a Cloud Service](/help/security/customer-managed-keys.md)
+  + [Security Health for AEM as a Cloud Service](/help/security/security-health.md)
+  + [Penetration Tests for AEM as a Cloud Service](/help/security/penetration-tests.md)
 + Experience Hub {#experience-hub}
   + [About Experience Hub](/help/experience-hub.md)
 + Onboarding {#onboarding}
@@ -939,6 +941,7 @@ user-guide-title: AEM as a Cloud Service
         + [Add custom error handler in an Adaptive Form](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
         + [Add a locale for Adaptive Forms based on Core Components](/help/forms/supporting-new-language-localization-core-components.md)
         + [Design JSON Schema for an Adaptive Form (Core Components)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
+        + {hide-from-toc} [API Integration Tool for Dynamic Form Data](/help/forms/api-integration-tool-dynamic-form-data.md)
         + [Add versionings, comments, and annotations to an Adaptive Form](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
         + [Compare Adaptive Forms](/help/forms/compare-forms.md) 
         + [Create custom submit action](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
