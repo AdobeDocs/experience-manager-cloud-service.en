@@ -118,7 +118,7 @@ Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), ava
 
 You can also define if you require a filter available on the **Configurations** page to be displayed on the Filter panel on the Search page. Click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available filter, and select the **Filter Panel** checkbox in the **Available in** section to make it available on the Search page.
 
-To make a metadata field available as a sorting option on the Search page, select the **Sorting** checkbox. For more information, see [Add custom metadata fields as sorting options](/help/assets/content-hub/search-assets-content-hub.md#add-custom-metadata-fields-for-sorting). Click **[!UICONTROL Save]** after making all modifications to apply the changes.
+To make a metadata field available as a sorting option on the Search page, select the **Sorting** checkbox. For more information, see [Add custom metadata fields as sorting options](/help/assets/search-assets-content-hub.md#add-custom-metadata-fields-for-sorting). Click **[!UICONTROL Save]** after making all modifications to apply the changes.
 
 ![Configure sorting filter panel on Content Hub](assets/sorting-new.png)
 
