@@ -126,6 +126,14 @@ The integration enables users to quickly discover and search for assets based on
 >
 >This feature is available as Limited Availability feature and requires licenses for Workfront Planning and GenStudio for Performance Marketing. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
+**AI-powered content onboarding and content supply chain automation**
+
+Use an AI-powered agent to configure and automate content migrations and recurring synchronization between supported content repositories. The agent guides you through connection setup, metadata mapping, and validation with dry runs before transferring content. By eliminating manual processes and custom integrations, this capability accelerates onboarding, simplifies ongoing synchronization, and helps keep assets and metadata consistent across systems.
+
+>[!IMPORTANT]
+>
+>This feature is available as Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+
 
 ### New features in Dynamic Media with OpenAPI capabilities {#new-features-dynamic-media-openapi}
 
@@ -153,51 +161,13 @@ Dynamic Media with OpenAPI capabilities now lets you upload custom thumbnails fo
 
 ### New Features in AEM Forms
 
-#### Interactive Communication Editor 
+<!--
 
-[Interactive Communication (IC) Editor](/help/forms/interactive-communication/introduction.md) is now available in AEM Forms as a Cloud Service. It is a browser-based solution for creating, managing, and delivering data-driven interactive correspondences such as business correspondence, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
+#### API Integration Tool for Dynamic Form Data
 
-![Interactive Communication Editor](/help/forms/assets/ic-editor.png)
+Form authors can now use the API Integration Tool to build forms that fetch and fill in data from external REST APIs, based on what the user does in the form. This no-code tool supports use cases like address auto-completion, dynamic dropdown lists, and real-time validation. For more information, see [API Integration Tool for Dynamic Form Data](/help/forms/api-integration-tool-dynamic-form-data.md).
 
-* **Cloud-Based Editor**: Unlike AEM Forms Desktop Designer which can only be installed on Windows machines, the Interactive Communications editor runs in any modern browser with no installation required. This cloud-based approach eliminates installation hassles, provides cross-platform accessibility, and enables collaboration from any location with internet access. For more information, see [Getting Started with IC Editor](/help/forms/interactive-communication/getting-started.md).
-
-* **Components and Properties**: Build communications using a drag-and-drop component library — text fields, tables, images, barcodes, subforms, and more. Configure layout, typography, margins, and appearance through the Properties panel. For more information, see [Introduction to Interactive Communication Editor](/help/forms/interactive-communication/introduction.md).
-
-* **Data Binding**: Connect components to Form Data Models (FDM) using visual mapping to drive personalized, data-driven output. For more information, see [Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/configure-data-binding.md).
-
-* **Rule Editor**: Build dynamic, data-driven actions directly within your documents using an intuitive, point-and-click interface. Easily define conditional logic, automate workflows, and personalize content without writing code. For more information, see [Create Rules in Interactive Communication Editor](/help/forms/interactive-communication/use-the-rule-editor.md).
-
-* **Templates and Document Fragments**: Create reusable templates and modular content blocks (headers, footers, disclaimers) for consistency and efficiency across multiple communications. For more information, see [Create a Template](/help/forms/interactive-communication/create-interactive-communication-template.md) and [Create a Fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md).
-
-* **Template Locking**: Lock content and layout elements within templates to maintain brand integrity and prevent unauthorised modifications. For more information, see [Template Lock](/help/forms/interactive-communication/enable-template-lock.md).
-
-* **PDF Preview**: Preview Interactive Communication with no data, local JSON files, or data models for flexible, data-driven testing. For more information, see [PDF Preview](/help/forms/interactive-communication/generate-pdf-preview.md).
-
-* **Custom Fonts**: Embed custom or organization-approved fonts to ensure consistent, branded PDF rendering across devices. For more information, see [Add Custom Fonts](/help/forms/interactive-communication/add-custom-fonts.md).
-
-* **Import and Export**: Seamlessly migrate and reuse Interactive Communication with their fragments and data models across environments. For more information, see [Import and Export](/help/forms/interactive-communication/import-and-export-the-interactive-communication.md).
-
-* **Content Overflow**: "Allow page breaks within content" option for flowed layouts for smooth multi-page editing and better text management for complex documents. For more information, see [Content Overflow Handling](/help/forms/interactive-communication/handle-content-overflow.md).
-
-* **XDP File Editing**: Edit XDP files in a browser instead of Forms Designer that runs only on Microsoft Windows desktop. For more information, see [Support XDP Editing](/help/forms/interactive-communication/support-xdp-editing.md).
-
-* **Associate UI**: A simplified runtime interface for customer-facing associates to enter data and generate personalized communications in real time. Invoke the Associate UI directly on Publish instances to simplify integration and accelerate deployment across environments. For more information, see [Associate UI Overview](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md), [Enable and Configure Associate UI](/help/forms/interactive-communication/enable-configure-associate-ui.md), and [Integrate Associate UI](/help/forms/interactive-communication/invoke-associate-ui.md).
-
-* **Dynamic Page Numbering**: Automatically display "Page # of ##" on master pages for clear, consistent pagination across multi-page documents. For more information, see [Dynamic Page Numbering](/help/forms/interactive-communication/implement-dynamic-page-numbering.md).
-
-* **Versioning and Commenting in Interactive Communication Editor**: The Interactive Communication Editor now supports versioning and commenting so authors can save labeled versions, capture reviewer feedback, revert to earlier states, and maintain an audit trail across the content lifecycle. For more information, see [Versioning and Commenting in Interactive Communication Editor](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md).
-
-* **Review and Annotate an Interactive Communication**: Reviewers can now annotate Interactive Communications in a dedicated read-only view, pin comments to specific components on the canvas, and share feedback in one place without editing the design. Authors can track and resolve annotations directly in the editor. For more information, see [Review and Annotate an Interactive Communication](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md).
-
-* **Compare Interactive Communication Versions**: You can now compare any two saved versions of an Interactive Communication side by side as PDF previews to review layout and static content changes before publishing. For more information, see [Compare Interactive Communication Versions](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md).
-
-* **Merge and Split Table Cells**: The Interactive Communication Editor now supports merging adjacent table cells and splitting merged cells back into individual columns, enabling spanning headers, summary rows, and more flexible table layouts. For more information, see [Merge and Split Table Cells](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md).
-
-* **Move a Component to the Master Page**: You can now move a component from a design page to the master page in one action so it appears consistently across every page of an Interactive Communication without recreating it. For more information, see [Move a Component to the Master Page](/help/forms/interactive-communication/howto/move-component-to-master-page.md).
-
-* **Configure Dropdown Options for Associate UI**: Dropdown fields in the Associate UI now use an **Options Binding** model. Authors configure **Bind from Data** for dynamic option lists or manual static options so associates see the correct choices and pre-selected value. **Data Binding** is not supported for dropdown fields. For more information, see [Configure Dropdown Options for Associate UI](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md).
-
-* **Configure Bound and Unbound Variables for Associate UI**: Bound and unbound variables in **Text** components can now be configured for the Associate UI. Authors choose whether associates edit the entire text block inline in the document preview or enter values for individual variables in the data entry panel. Duplicate variable names propagate values across all matching occurrences in the preview. For more information, see [Configure Bound and Unbound Variables for Associate UI](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md).
+-->
 
 ### Early Adopter Features
 
@@ -248,7 +218,7 @@ It is critical to remove usage of deprecated APIs.
 
 Since **April 14, 2026**, Cloud Manager pipelines that contain code using APIs targeting 2/26/2026 removal **fail during the Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.* 
 
-Starting **July 23, 2026**, environments still using these deprecated APIs **will not receive critical Adobe release updates** and will not be subject to Adobe's standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
+Starting **September 14, 2026**, environments still using these deprecated APIs **will not receive critical Adobe release updates** and will not be subject to Adobe's standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
 
 See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
 
@@ -371,20 +341,46 @@ To join the alpha, email [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta Features {#assets-beta-program-features}
 
-#### UI Extensibility for Assets View {#ui-extensibility-assets-view}
+#### UI Extensibility for Assets View {#ui-extensibility-assets-view-beta}
 
 Assets View supports UI Extensibility, a developer-first capability that empowers customers to tailor the out-of-the-box experience to meet their specific business requirements.
 Customers can leverage existing stable extension points by following Adobe's developer documentation to build and deploy extensions with minimal effort. For use cases where a required extension point is not yet available, Adobe works directly with customers to explore the requirements and assess the technical feasibility of delivering new extensibility APIs tailored to their needs, and may deliver such new APIs as **Beta Releases**.
 Additionally, Adobe has developed a **GenAI-powered extension generation tool** currently available in an internal early adoption phase. This tool can significantly accelerate extension development time. Customers participating in this beta program will receive access to the tool and are encouraged to share feedback to help shape its evolution.
 To participate or learn more, send an email to `GRP-ASSETSVIEWUIEXTENSIBILITY@adobe.com`.
 
-#### Brand Aware Metadata (BAM) {#brand-aware-metadata}
+#### Brand Aware Metadata (BAM) {#brand-aware-metadata-beta}
 
 AEM Assets now supports Brand Aware Metadata, an AI-powered capability that automatically generates custom metadata for assets when uploaded or re-processed. This reduces the need for manual entry by orders of magnitude, helping teams find assets and deliver new experiences much faster. Customers maintain a library of prompts that define how AI should populate any given metadata field, tailored to their own brand vocabulary and taxonomy. This prompt library includes a playground to preview results and a prompt optimizer that automatically drafts suggested improvements.
 
 Adobe is actively expanding BAM's capabilities through direct co-innovation with customers. Where a specific use case is not yet supported, Adobe works with participating customers to understand their needs and may deliver expanded capabilities as the beta progresses. Customers in this program gain early access to new features as they ship and are encouraged to share feedback that directly shapes the roadmap.
 
 To participate or learn more, send an email to `GRP-AEM-ASSETS-BRANDAWAREMETADATA@adobe.com`.
+
+#### Assets Onboarding Agent {#assets-onboarding-agent-beta}
+
+If your organization is new to Experience Manager Assets, you can opt in to the **Assets Onboarding Agent Beta program**, which gives you access to the following AEM Brand Experience AI skills for onboarding:
+
+* Guides users through DAM setup and migration planning by using a conversational workflow to capture business needs and recommend how an AEM Assets deployment should be structured.
+
+* Creates core AEM Assets configuration artifacts such as folder hierarchies, tag taxonomies, metadata forms, and can help execute bulk import jobs to accelerate onboarding.
+
+**Why participate?**
+
+* Go live faster with a ready-to-use DAM environment by eliminating repetitive, manual steps with AI assistance.
+
+* Lower operational overhead with automated configuration and preparation of folders, tags, metadata and asset imports.
+
+* Improve consistency, governance, and ensure adherence to best practices through a curated setup experience with intelligent recommendations tailor-made for your business.
+
+To participate or learn more, send an email to `GRP-AEM-ONBOARDING-AGENT@adobe.com`.
+
+#### Assets Sourcing portal for AEM Assets {#asset-sourcing-aem-assets}
+
+[The Assets Sourcing Portal](/help/assets/asset-sourcing-portal-for-aem-assets.md) provides a secure, self-service experience for collecting assets from external contributors without granting them access to Adobe Experience Manager Assets. Contributors can upload assets, provide the required metadata, and submit content directly to a designated intake location while administrators maintain control over asset organization and governance.
+
+Adobe works with participating customers to understand their needs and may deliver expanded capabilities as the limited availability program progresses. Customers in this program gain early access to new features as they ship and are encouraged to share feedback that directly shapes the roadmap.
+
+To participate or learn more, send an email to `Grp-AEM-Assets-Sourcing-Portal@adobe.com`.
 
 ## [!DNL Experience Manager] Guides {#guides}
 
@@ -409,4 +405,5 @@ You can find a complete list of Generate Variations releases [here](/help/genera
 ## Experience Cloud Release Notes {#experience-cloud}
 
 You can find information about releases of other Experience Cloud applications [here](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current).
+
 
