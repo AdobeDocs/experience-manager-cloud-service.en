@@ -121,7 +121,6 @@ You can also define if you require a filter available on the **Configurations** 
 To make a metadata field available as a sorting option on the Search page, select the **Sorting** checkbox. For more information, see [Add custom metadata fields as sorting options](/help/assets/search-assets-content-hub.md#add-custom-metadata-fields-for-sorting). Click **[!UICONTROL Save]** after making all modifications to apply the changes.
 
 ![Configure sorting filter panel on Content Hub](assets/sorting-new.png)
-
 The filters enabled on the Configuration User Interface display on the Search page:
 ![Search on Content Hub](assets/content-hub-filters-new.png)
 
