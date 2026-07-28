@@ -23,7 +23,7 @@ With the continuous release model in [!DNL Adobe Experience Manager] as a Cloud 
   * This ensures that [!DNL Adobe Experience Manager] as a Cloud Service is always up-to-date with any critical fixes.
   * Check out the [current maintenance release notes](/help/release-notes/maintenance/latest.md) for details on the latest maintenance release.
 
-This model ensures continuous relases with no interruption of service. Upcoming features generally will be announced in one release and then made publicly available in a following release. In this way you can evaluate upcoming functionality and plan for its possible implementation for your own projects. It lets you plan ahead for the next feature release where the feature is available.
+This model ensures continuous releases with no interruption of service. Upcoming features generally will be announced in one release and then made publicly available in a following release. In this way you can evaluate upcoming functionality and plan for its possible implementation for your own projects. It lets you plan ahead for the next feature release where the feature is available.
 
 For example, if it is May, you can evaluate upcoming features that will become generally available in an upcoming release such as June.
 
