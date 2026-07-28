@@ -131,20 +131,22 @@ All applications listed under [Supported MCP Applications](#supported-mcp-applic
 
 #### Restricting MCP Servers {#restricting-mcp-servers}
 
-You can email Adobe support at **`aemcs-mcp-feedback@adobe.com`** for granular control over which MCP capabilities are available.
+For granular control over which MCP capabilities are available, email Adobe support at **`aemcs-mcp-feedback@adobe.com`** with your request.
 
-For **AEM MCP Server**, you can:
-* disable it entirely or specific categories
-* change the default read-write vs read-only behavior by category, assuming it is supported per the AEM MCP Server table
+You can request the following restrictions:
 
-For **domain-specific MCP Servers**, you can
-* disable a specific server
+* **AEM MCP Server** - disable it entirely, disable specific categories, or change the default read-write vs. read-only behavior by category (where supported, per the [AEM MCP Server table](#aem-mcp-server)).
+* **Domain-specific MCP Servers** - disable a [specific server](#mcp-servers).
 
-You can request this at the organizational level.
+By default, restrictions apply at the organizational level. If you need restrictions scoped more narrowly, choose one of the following levels and provide the desired behaviors for **every** instance at that level:
 
-If you would like changes at the program id, environment id, or environment type (rde, dev, stage, prod) level, provide the exact list of behaviors for each of those concepts.
+* **Program ID** - list the desired behaviors separately for each program you have.
+* **Environment ID** - list the desired behaviors separately for each environment you have.
+* **Environment type** (RDE, dev, stage, prod) - list the desired behaviors separately for each environment type you use.
 
-The AEM MCP Server inherits any restrictions configured on the domain-specific MCP servers.
+>[!NOTE]
+>
+>The AEM MCP Server inherits any restrictions configured on the domain-specific MCP servers.
 
 #### Managing MCP Client Access {#managing-mcp-client-access}
 
