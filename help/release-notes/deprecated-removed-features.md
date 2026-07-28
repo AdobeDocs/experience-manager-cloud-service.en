@@ -658,3 +658,4 @@ The values of these OSGi properties are restricted to the rules described below.
 
 Adobe Experience Manager as a Cloud Service has transitioned to the Java 21 runtime. To ensure compatibility, updating library versions as outlined in [Runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) is essential.
 
+
