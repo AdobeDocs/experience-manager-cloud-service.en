@@ -51,7 +51,7 @@ The endpoint is `https://mcp.adobeaemcloud.com/adobe/mcp/aem`
 |**Cloud Manager**|Manage Cloud Manager entities including programs, environments, repositories and pipelines, which can also be triggered.| Yes | Yes (default) | -- |
 -->
 
-Note that the AEM MCP server is used by the AEM Anthropic Connector and AEM ChatGPT Plugin.
+Note that the AEM MCP server is used by the [AEM Anthropic Connector](/help/ai-in-aem/mcp-support/setup-claude.md#install-adobe-experience-manager-connector) and [AEM ChatGPT Plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md#install-adobe-experience-manager-plugin).
 
 ### Listing AEM MCP Server capabilities
 
