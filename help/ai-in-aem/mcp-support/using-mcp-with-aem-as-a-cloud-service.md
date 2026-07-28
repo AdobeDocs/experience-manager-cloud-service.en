@@ -131,7 +131,7 @@ All applications listed under [Supported MCP Applications](#supported-mcp-applic
 
 #### Restricting MCP Servers {#restricting-mcp-servers}
 
-You can email Adobe support for granular control over which MCP capabilities are available.
+You can email Adobe support at **`aemcs-mcp-feedback@adobe.com`** for granular control over which MCP capabilities are available.
 
 For **AEM MCP Server**, you can:
 * disable it entirely or specific categories
