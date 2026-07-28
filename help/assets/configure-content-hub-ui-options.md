@@ -43,7 +43,7 @@ To access configuration options on Content Hub:
 
 1. In the **[!UICONTROL Product Settings]** section, select **[!UICONTROL Configurations]**.
 
-   ![Access configuration options on Content Hub](assets/access-content-hub-configuration-ui.png)
+   ![Access configuration options on Content Hub](assets/access-content-hub-configuration-ui-new.png)
 
 ## Manage configuration options on Content Hub {#manage-configuration-options}
 
@@ -60,7 +60,7 @@ As an administrator, manage the following configuration options for your users:
 
 * [Branding](#configure-branding-content-hub)
 
-* [Expired Assets](#expired-assets-content-hub)
+* [Asset Visibility](#asset-visibility-content-hub)
 
 * [Renditions](#renditions-content-hub)
 
@@ -92,10 +92,10 @@ Click the **[!UICONTROL Auto-approval]** toggle if you need all assets that you 
 
 Click **[!UICONTROL Save]** after making all modifications to apply the changes.
 
-![Configuration UI upload details on Content Hub](assets/filter-new.png)
+![Configuration UI upload details on Content Hub](assets/filter.png)
 
 Metadata enabled on the Configuration User Interface display on the asset upload page:
-![Upload metadata on Content Hub](assets/add-assets-for-approval1.png)
+![Upload metadata on Content Hub](assets/add-assets-for-approval-new.png)
 
 ### Filters {#configure-filters-content-hub}
 
@@ -114,12 +114,16 @@ Execute the following steps to add a new filter:
    >The new filter gets displayed on the Search page only if there is at least one asset in the repository matching the filter criteria. The maximum number of fields available in the filter panel on the Search page is 40.
 
 Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available filter, to edit the labels or click the delete icon to delete any existing filter. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
-![Configuration UI filters on Content Hub](assets/add-filters.png)
+![Configuration UI filters on Content Hub](assets/add-filters-new.png)
 
 You can also define if you require a filter available on the **Configurations** page to be displayed on the Filter panel on the Search page. Click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available filter, and select the **Filter Panel** checkbox in the **Available in** section to make it available on the Search page.
 
+To make a metadata field available as a sorting option on the Search page, select the **Sorting** checkbox. For more information, see [Add custom metadata fields as sorting options](/help/assets/content-hub/search-assets-content-hub.md#add-custom-metadata-fields-for-sorting). Click **[!UICONTROL Save]** after making all modifications to apply the changes.
+
+![Configure sorting filter panel on Content Hub](assets/sorting-new.png)
+
 The filters enabled on the Configuration User Interface display on the Search page:
-![Search on Content Hub](assets/content-hub-filters1.png)
+![Search on Content Hub](assets/content-hub-filters-new.png)
 
 #### Bulk Search {#bulk-search-configuration}
 
@@ -149,26 +153,28 @@ You can also configure the asset properties that display for each asset, such as
 
 Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available property, to edit the labels or click the delete icon to delete any existing asset detail. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
 
-   ![Configuration UI asset details on Content Hub](assets/asset-detailsn.png)
+   ![Configuration UI asset details on Content Hub](assets/asset-details-new.png)
 
 The properties enabled on the Configuration User Interface display on the Asset Details page:
 
-![Asset properties on Content Hub](assets/asset-details-page-content-hub1.png)
+![Asset properties on Content Hub](assets/asset-details-page-content-hub-new.png)
 
 ### Asset Card {#asset-card}
 
 You can also configure the key metadata properties that you need to display on the **Asset Card** up to a maximum of 6 fields. 
-![key metadata on Asset Card](/help/assets/assets/asset-card-metadata.png)
+![key metadata on Asset Card](/help/assets/assets/asset-card-metadata-new.png)
 Execute the following steps to configure the metadata properties to display them on the **[!UICONTROL Asset card]**:
 
 1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **Asset Card**.
 2. Click **Add metadata**. The **Add asset card metadata** dialog box displays.
 3. Specify the metadata name in the **Label** field and select a metadata property in the **Metadata** field.
 4. Click **Confirm** and then click **Save** to apply the changes so that the new property display on the asset details page.
-![asset card](/help/assets/assets/configuration-asset-card1.png)
+![asset card](/help/assets/assets/configuration-asset-card-new.png)
 Similarly, click ![edit](/help/assets/assets/edit-content-hub.svg) that is available next to each available property, to make any required modifications or click ![delete](/help/assets/assets/delete-content-hub.svg) to delete any existing metadata property. Click **Save** after making all modifications to apply the changes.
 
 ### Search {#configure-metadata-search-content-hub}
+
+Content Hub provides two search options: **AI Search** and **Keyword Search**. For more information about these search capabilities, see [AI Search in Content Hub](/help/assets/search-assets-content-hub.md#ai-search-aem-assets-content-hub).
 
 Administrators can define the metadata fields that are searched when a user specifies a search criteria on Content Hub. Execute the following steps:
 
@@ -187,7 +193,7 @@ Administrators can define the metadata fields that are searched when a user spec
 1. Click **[!UICONTROL Save]** to apply the changes so that the new metadata property gets displayed in the list of metadata fields.
 
 Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available metadata property, to edit the property or click the delete icon to delete any existing property. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
-![Configuration UI Search on Content Hub](assets/configuration-search.png)
+![Configuration UI Search on Content Hub](assets/configuration-search-new.png)
 
 The list of Search fields that you add must be in the order of relevance, as the order impacts the search results.
 
@@ -198,7 +204,7 @@ The list of Search fields that you add must be in the order of relevance, as the
 ### Branding {#configure-branding-content-hub}
 
 As an administrator, customize your [!DNL Content Hub] portal to meet your branding requirements. 
-![reset default](/help/assets/assets/reset-default-content-hub.png)
+![reset default](/help/assets/assets/reset-default-content-hub-new.png)
 On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page use **[!UICONTROL Banner]**, **[!UICONTROL Colors]** and **[!UICONTROL Banner image]** sections to execute the following customizations:
 
 1. [Change the logo image from [!UICONTROL Logo image] section](#Change-the-logo-image)
@@ -214,7 +220,7 @@ On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]
 
 1. Click ![select image](/help/assets/assets/Browse.svg) **[!UICONTROL Select Image]** to select a logo image using the asset selector dialog box. The asset selector displays only approved images.
 1. Select the image, click **[!UICONTROL Select]**, and then click **[!UICONTROL Save]** to display it as the logo image of your [!DNL Content Hub] deployment.
-![banner image](/help/assets/assets/logo-image-content-hub1.png)
+![banner image](/help/assets/assets/logo-image-content-hub-new.png)
 
 #### Change the banner image{#Change-the-banner-image}
 
@@ -222,7 +228,7 @@ On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]
 
 1. Click ![select image](/help/assets/assets/Browse.svg) **[!UICONTROL Select from gallery]** to select a banner image using the asset selector dialog box. The asset selector displays only approved images.
 1. Select the image, click **[!UICONTROL Select]**, and then click **[!UICONTROL Save]** to display it as the banner image of your [!DNL Content Hub] deployment.
-![banner image](/help/assets/assets/banner-image-content-hub1.png)
+![banner image](/help/assets/assets/banner-image-content-hub-new.png)
 
 >[!NOTE]
 >
@@ -234,12 +240,12 @@ On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]
 
 On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page, use the respective fields in the **[!UICONTROL Banner]** section to add title and body texts to your banner.
 Click the square box next to the **[!UICONTROL Banner text color]** to select a text color from the color picker for your banner text or specify the color's hex code in the field next to the color picker square box.
-![banner text content hub](/help/assets/assets/banner-text-content-hub.png)
+![banner text content hub](/help/assets/assets/banner-text-content-hub-new.png)
 
 #### Change the primary and secondary color{#Change-the-primary-and-secondary-color}
 
 On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page, use the **[!UICONTROL Colors]** section to set primary and secondary colors by either selecting them using color picker or defining the color's hex code. These colors set the background, text, and icon colors of UI elements to align your [!DNL Content Hub] UI with your brand's theme.
-![primary and secondary color](/help/assets/assets/primary-secondary-color-content-hub1.png)
+![primary and secondary color](/help/assets/assets/primary-secondary-color-content-hub-new.png)
 **[!UICONTROL Primary color]:** The primary color scheme applies to selection actions, interactive elements such as checkboxes, search bars, and toggle switches across [!DNL Content Hub] including [!DNL Content Hub] home page and [!UICONTROL Configuration] page. It also applies to action options available on primary [!DNL Content Hub] interfaces such as options available on **[!UICONTROL All Assets]** and **[!UICONTROL Collections]** pages. 
 
 **[!UICONTROL Secondary color]:** On the [!DNL Content Hub] home page, the secondary color scheme applies to UI options and input fields that are available within dialog boxes. It applies to all configuration menu options available on the [!UICONTROL Configuration] page except selection actions, checkboxes, search bars, and toggle switches.
@@ -260,11 +266,11 @@ To do so, execute the following steps:
 1. Enable the **[!UICONTROL Allow users to view assets approved for delivery]** toggle to display all assets approved for delivery in Content Hub.
 1. Click **[!UICONTROL Save]** to apply the changes.
 
-   ![Expired assets on Content Hub](assets/asset-visibility-content-hub1.png)
+   ![Expired assets on Content Hub](assets/asset-visibility-content-hub-new.png)
 
 After enabling the visibility of assets, you can view the expired assets on Content Hub, as depicted in the following image:
 
-![Expired assets on Content Hub](assets/view-download-expired-assets.png)
+![Expired assets on Content Hub](assets/view-download-expired-assets-new.png)
 
 If the administrator has enabled download, the Content Hub users can also download them, as highlighted in the image.
 
@@ -282,7 +288,7 @@ On the [Configurations](#access-configuration-options-content-hub) user interfac
 
 * Enable or disable **[!UICONTROL Allow users to download original assets]** toggle to control the availability to download original assets.
 
-   ![Configure renditions on Content Hub](assets/configuration-renditions1.png)
+   ![Configure renditions on Content Hub](assets/configuration-renditions-new.png)
 
 For information on how to view and download renditions in Content Hub, see [download assets in Content Hub](/help/assets/download-assets-content-hub.md).
 
@@ -301,10 +307,10 @@ You can also add custom tabs in addition to standard **[!UICONTROL All Assets]**
 1. Click **[!UICONTROL Save]** to apply the changes.
 
 Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each URL, to edit the links or click the delete icon to delete any existing URL. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
-![Configuration UI Custom Links on Content Hub](assets/configuration-custom-links1.png)
+![Configuration UI Custom Links on Content Hub](assets/configuration-custom-links-new.png)
 
 The custom link display as a new tab next to Insights tab on the Content Hub home page.
-![Configuration UI Custom Links tabs on Content Hub](assets/configuration-ui-custom-link-tab.png)
+![Configuration UI Custom Links tabs on Content Hub](assets/configuration-ui-custom-link-tab-new.png)
 
 ### Collections and Sharing {#configure-collections-content-hub}
 
@@ -320,7 +326,7 @@ Administrators can define user permissions while crating collections. To enable 
 
 1. Click **[!UICONTROL Save]** to apply the changes. 
 
-    ![Configuration Collections tab on Content Hub](assets/collections-and-sharing1.png)
+    ![Configuration Collections tab on Content Hub](assets/collections-and-sharing-new.png)
 
 <!--
 ### Enable public link sharing {#enable-public-link-sharing}
