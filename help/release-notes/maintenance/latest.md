@@ -52,7 +52,7 @@ Deprecated and removed features and APIs in AEM as a Cloud Service are detailed 
 
 ### Security Fixes {#security-27293}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 11 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 13 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
 ### Embedded Technologies {#embedded-tech-27293}
 
