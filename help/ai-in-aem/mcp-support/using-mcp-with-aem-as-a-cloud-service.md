@@ -35,31 +35,37 @@ Key benefits include:
 
 ## AEM MCP Server {#aem-mcp-server}
 
-With the July 2026 AEM release, Adobe offers a unified MCP server, which with a few exceptions, should be preferred over the older, domain-specific MCP servers.  You can configure a single URL in your Chat Application or Coding Agent, which gives access to a growing set of tools, including most of those available in the older, domain-specific MCP servers.
+With the July 2026 AEM release, Adobe offers a unified MCP server, which should be preferred over the domain-specific MCP servers. You can configure a single URL in your Chat Application or Coding Agent, which gives access to a growing set of tools, including most of those available in the older, domain-specific MCP servers.
 
-The endpoint is https://mcp.adobeaemcloud.com/adobe/mcp
+Note that the AEM MCP Server does not currently support the Cloud Manager and Cloud Migration MCP servers.
+
+The endpoint is `https://mcp.adobeaemcloud.com/adobe/mcp/aem`
 
 
 |Category|Description|On by default|Supports Read-write|Supports Read-only|
 |---|---|---|---|---|
 |**Content**|Content operations including create, read, update, and delete (CRUD) for pages and content fragments, plus asset importing and assets search (minimum required AEM release version is `26309`). There is also support for asset upload, download, move/copy/delete, and publish/unpublish for assets, along with editing metadata, inspecting references, and identifying unused assets.| Yes | Yes (default) | Yes |
-|**Cloud Manager**|Manage Cloud Manager entities including programs, environments, repositories and pipelines, which can also be triggered.| Yes | Yes (default) | -- |
 |**Experience Governance**|Evaluate content (text, images, pages) against brand governance rules, and list brand configurations and checks.<br/>If you are interested, you must sign up for the [agents trial or have a paid license](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) in order to access the Experience Governance MCP.| Yes, but see note | -- | Yes (default)|
+
+<!-- 
+|**Cloud Manager**|Manage Cloud Manager entities including programs, environments, repositories and pipelines, which can also be triggered.| Yes | Yes (default) | -- |
+-->
 
 Note that the AEM MCP server is used by the AEM Anthropic Connector and AEM ChatGPT Plugin.
 
+### Listing AEM MCP Server capabilities
 
-You can ask your MCP-enabled application to discover tools via a prompt such as:
+In order to determine what features your LLM can use, you can ask your MCP-enabled application to discover the AEM MCP server's capabilities via a prompt such as:
 
 ```
-"List all AEM tools available from this server and describe what they do."
+List AEM capabilities with the AEM MCP Server
 ```
 
-The MCP client uses the MCP protocol to retrieve the tool list and schemas, which the LLM can then use.
+Note that this is different from the literal tools exposed by the AEM MCP server.
 
-## Domain-Specific MCP Servers Provided by AEM {#mcp-servers-provided-by-aem}
+## Domain-Specific MCP Servers {#mcp-servers-provided-by-aem}
 
-AEM also exposes specific MCP servers as HTTP endpoints, but the AEM MCP Server is preferred unless you need the Cloud Migration MCP server. The endpoints listed below are relative to `https://mcp.adobeaemcloud.com/adobe/mcp/`.
+AEM also exposes specific MCP servers, but the AEM MCP Server is preferred unless you need the Cloud Migration MCP server or Cloud Manager MCP server. The endpoints listed below are relative to `https://mcp.adobeaemcloud.com/adobe/mcp`. For example, configure `https://mcp.adobeaemcloud.com/adobe/mcp/content` for the Content MCP Server.
 
 ### MCP Servers {#mcp-servers}
 
@@ -75,7 +81,7 @@ Reference the [Content MCP Server Tutorial](https://experienceleague.adobe.com/e
 
 ## Supported MCP Applications {#supported-mcp-applications}
 
-AEM's MCP servers are designed to work with a defined set of MCP-compatible applications. Each application provides its own configuration experience, but the high-level steps are similar.
+The MCP servers are designed to work with a defined set of MCP-compatible applications. Each application provides its own configuration experience, but the high-level steps are similar.
 
 ### Chat Applications (Web & Desktop) {#chat-applications}
 
@@ -97,11 +103,12 @@ AEM's MCP servers are designed to work with a defined set of MCP-compatible appl
 
 ### Enterprise Platforms {#enterprise-platforms}
 
+* Amazon Quick
 * Microsoft Copilot Studio
 
 ## Setup Overview {#setup-overview}
 
-Configuring MCP for AEM involves two main parts:
+Configuring MCP involves two main parts:
 
 1. **Configure each MCP client application** so that the application knows how to connect to AEM's MCP servers and perform OAuth login.
 1. **Select the MCP Server** before starting to prompt, so that the MCP client knows to use it.
@@ -116,7 +123,7 @@ Step-by-step guides covering both steps are available for:
 
 ### AEM Configuration {#aem-configuration}
 
-By default, the permissions that individual users have within AEM govern access to AEM's MCP servers. When a user authenticates through an MCP client application, the MCP tools enforce the same access rules as manual operations in AEM. A user can only perform actions they are already authorized to perform.
+By default, the permissions that individual users have within AEM govern access to the MCP servers. When a user authenticates through an MCP client application, the MCP tools enforce the same access rules as manual operations in AEM. A user can only perform actions they are already authorized to perform.
 
 #### Permitted MCP Client Applications {#permitted-mcp-client-applications}
 
@@ -126,15 +133,18 @@ All applications listed under [Supported MCP Applications](#supported-mcp-applic
 
 You can email Adobe support for granular control over which MCP capabilities are available.
 
-For **AEM MCP Server**, you may email Adobe support to:
-* disable all categories or specific categories
-* change the default read-write vs read-only behavior for each category, assuming it is supported per the AEM MCP Sever table
+For **AEM MCP Server**, you can:
+* disable it entirely or specific categories
+* change the default read-write vs read-only behavior by category, assuming it is supported per the AEM MCP Server table
 
-For **domain-specific MCP Servers**, you may email Adobe support to:
+For **domain-specific MCP Servers**, you can
 * disable a specific server
 
-You can request each of these changes at the organization, program id, environment id, or environment type (rde, dev, stage, prod) level. 
+You can request this at the organizational level.
 
+If you would like changes at the program id, environment id, or environment type (rde, dev, stage, prod) level, provide the exact list of behaviors for each of those concepts.
+
+The AEM MCP Server inherits any restrictions configured on the domain-specific MCP servers.
 
 #### Managing MCP Client Access {#managing-mcp-client-access}
 
@@ -147,7 +157,7 @@ For all MCP server related requests, feel free to contact Adobe at **`aemcs-mcp-
 Each user performs this step, or an administrator of the MCP client application can perform it where supported. Configuration details vary slightly between applications. MCP clients are evolving rapidly and support for remote MCP servers is being actively developed. You may need to enable Developer Mode to access the functionality for adding remote servers, but the general process is:
 
 1. Add one or more MCP server URLs.
-   * Configure one or more MCP endpoints from the table above. For example:`https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly`
+   * Configure one or more MCP endpoints from the table above. For example:`https://mcp.adobeaemcloud.com/adobe/mcp/aem`
 1. Trigger the connection.
    * Save or activate the configuration so the MCP client application attempts to connect to the MCP server
 1. Sign in with Adobe ID.
@@ -167,13 +177,13 @@ The Adobe-hosted MCP servers implement OAuth and are integrated with Adobe's ide
 ![MCP Client not permitted error](assets/MCP-Client-not-permitted.png)
 
 * Once verified, the MCP server issues tokens that the application uses for subsequent tool calls.
-* MCP tools respect the user's AEM permissions. Only users who have permission to modify a content fragment in AEM can modify it via MCP.
+* MCP tools respect the user's AEM permissions. For example, only users who have permission to modify a content fragment in AEM can modify it via MCP.
 
 This approach ensures that AI-assisted operations comply with your existing AEM security and governance model.
 
-## Using MCP with AEM {#using-mcp-with-aem}
+## Using MCP Servers {#using-mcp-with-aem}
 
-Once AEM and your MCP client applications are configured, you can work in your application of choice and prompt the LLM to perform AEM operations. The LLM reads the MCP tool schemas, chooses which tools to call, and sequences them as needed to fulfill your request.
+Once your MCP client application is configured, you can prompt the LLM to perform AEM operations. The LLM knows the capabilities of the MCP server(s), chooses which tools to call, and sequences them as needed to fulfill your request.
 
 >[!IMPORTANT]
 >
