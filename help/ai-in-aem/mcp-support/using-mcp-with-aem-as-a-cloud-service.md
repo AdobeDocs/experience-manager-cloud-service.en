@@ -33,27 +33,43 @@ Key benefits include:
 * **Consistent experience across applications** - The same AEM MCP tools can be used from multiple MCP-compatible applications, allowing teams to work where they are most productive while calling the same underlying AEM capabilities.
 * **Security and governance preserved** - Requests to AEM MCP tools run under the authenticated user's identity, and each tool enforces the user's existing AEM permissions. AI-assisted operations follow the same access rules as manual work in AEM.
 
-## MCP Servers Provided by AEM {#mcp-servers-provided-by-aem}
+## AEM MCP Server {#aem-mcp-server}
 
-AEM exposes MCP servers as HTTP endpoints. The endpoints listed below are relative to `https://mcp.adobeaemcloud.com/adobe/mcp/`.
+With the July 2026 AEM release, Adobe offers a unified MCP server, which with a few exceptions, should be preferred over the older, domain-specific MCP servers.  You can configure a single URL in your Chat Application or Coding Agent, which gives access to a growing set of tools, including most of those available in the older, domain-specific MCP servers.
 
-### MCP Servers {#mcp-servers}
+The endpoint is https://mcp.adobeaemcloud.com/adobe/mcp
 
-|MCP Server|Endpoint|Description|
-|---|---|---|
-|**Content**|`/content`|Content operations including create, read, update, and delete (CRUD) for pages and content fragments, plus asset importing and assets search (minimum required AEM release version is `26309`). With the [Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md) and the [ChatGPT plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md), there is also support for asset upload, download, move/copy/delete, and publish/unpublish for assets, along with editing metadata, inspecting references, and identifying unused assets.|
-|**Content (read-only)**|`/content-readonly`|Read-only content operations (get, list/search) for pages and content fragments, plus assets search (minimum required AEM release version is `26309`). With the [Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md) and the [ChatGPT plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md), there is also support for asset download, inspecting references, and identifying unused assets.|
-|**Cloud Manager**|`/cloudmanager`|Manage Cloud Manager entities including programs, environments, repositories and pipelines, which can also be triggered.|
-|**Experience Governance**|`/experience-governance`|Evaluate content (text, images, pages) against brand governance rules, and list brand configurations and checks.<br/>If you are interested, you must sign up for the [agents trial or have a paid license](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) in order to access the Experience Governance MCP.|
-|**Cloud Migration**|`/cloud-migration`|Fetch Best Practices Analyzer (BPA) findings from Cloud Acceleration Manager (CAM) by migration pattern or severity level, enabling AI agents to drive code migration from AEM 6.x to AEM as a Cloud Service. See [Using the Cloud Migration MCP](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md).|
 
-The specific tools exposed by each MCP server may evolve over time. In practice, you can ask your MCP-enabled application to discover tools via a prompt such as:
+|Category|Description|On by default|Supports Read-write|Supports Read-only| 
+|---|---|---|---|---|
+|**Content**|Content operations including create, read, update, and delete (CRUD) for pages and content fragments, plus asset importing and assets search (minimum required AEM release version is `26309`). There is also support for asset upload, download, move/copy/delete, and publish/unpublish for assets, along with editing metadata, inspecting references, and identifying unused assets.| Yes | Yes (default) | Yes |
+|**Cloud Manager**|Manage Cloud Manager entities including programs, environments, repositories and pipelines, which can also be triggered.| Yes | Yes (default) | -- |
+|**Experience Governance**|Evaluate content (text, images, pages) against brand governance rules, and list brand configurations and checks.<br/>If you are interested, you must sign up for the [agents trial or have a paid license](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) in order to access the Experience Governance MCP.| Yes, but see note | -- | Yes (default)|
+
+Note that the AEM MCP server is used by the AEM Anthropic Connector and AEM ChatGPT Plugin.
+
+
+You can ask your MCP-enabled application to discover tools via a prompt such as:
 
 ```
 "List all AEM tools available from this server and describe what they do."
 ```
 
 The MCP client uses the MCP protocol to retrieve the tool list and schemas, which the LLM can then use.
+
+## Domain-Specific MCP Servers Provided by AEM {#mcp-servers-provided-by-aem}
+
+AEM also exposes specific MCP servers as HTTP endpoints, but the AEM MCP Server is preferred unless you need the Cloud Migration MCP server. The endpoints listed below are relative to `https://mcp.adobeaemcloud.com/adobe/mcp/`.
+
+### MCP Servers {#mcp-servers}
+
+|MCP Server|Endpoint|Description|On by default|
+|---|---|---|---|
+|**Content**|`/content`|Content operations including create, read, update, and delete (CRUD) for pages and content fragments, plus asset importing and assets search (minimum required AEM release version is `26309`). |Yes|
+|**Content (read-only)**|`/content-readonly`|Read-only content operations (get, list/search) for pages and content fragments, plus assets search (minimum required AEM release version is `26309`). With the [Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md) and the [ChatGPT plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md), there is also support for asset download, inspecting references, and identifying unused assets.|Yes|
+|**Cloud Manager**|`/cloudmanager`|Manage Cloud Manager entities including programs, environments, repositories and pipelines, which can also be triggered.|Yes|
+|**Experience Governance**|`/experience-governance`|Evaluate content (text, images, pages) against brand governance rules, and list brand configurations and checks.<br/>If you are interested, you must sign up for the [agents trial or have a paid license](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) in order to access the Experience Governance MCP.| Yes, but see note|
+|**Cloud Migration**|`/cloud-migration`|Fetch Best Practices Analyzer (BPA) findings from Cloud Acceleration Manager (CAM) by migration pattern or severity level, enabling AI agents to drive code migration from AEM 6.x to AEM as a Cloud Service. See [Using the Cloud Migration MCP](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md).|Yes|
 
 Reference the [Content MCP Server Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) and [Cloud Manager MCP Server Video](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) for more information about their capabilities and how to use them.
 
@@ -108,11 +124,21 @@ All applications listed under [Supported MCP Applications](#supported-mcp-applic
 
 #### Restricting MCP Servers {#restricting-mcp-servers}
 
-All MCP servers are allowlisted by default. As an administrator, you have the option to restrict access to specific MCP servers at the organization, program, or environment level. This restriction gives you granular control over which MCP capabilities are available to users within your organization.
+You can email Adobe support for granular control over which MCP capabilities are available.
+
+For **AEM MCP Server**, you may email Adobe support to:
+* disable all categories or specific categories
+* change the default read-write vs read-only behavior for each category, assuming it is supported per the AEM MCP Sever table
+
+For **domain-specific MCP Servers**, you may email Adobe support to:
+* disable a specific server
+
+You can request each of these changes at the organization, program id, environment id, or environment type (rde, dev, stage, prod) level. 
+
 
 #### Managing MCP Client Access {#managing-mcp-client-access}
 
-Administrators can also disable access for specific MCP client applications if your organization's policies require it. If you would like Adobe to enable support for additional MCP client products, send a link to the product website. If you need to allowlist a custom MCP client, reach out as well.
+Administrators can also disable access for specific MCP client applications (at the organization level) if your organization's policies require it. If you would like Adobe to enable support for additional MCP client products, send a link to the product website. If you need to allowlist a custom MCP client, reach out as well.
 
 For all MCP server related requests, feel free to contact Adobe at **`aemcs-mcp-feedback@adobe.com`**
 
