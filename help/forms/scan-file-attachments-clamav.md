@@ -662,7 +662,11 @@ The sample validator fails closed, so a connection problem with `clamd` causes e
 **Can I use ClamAV with AEM as a Cloud Service?**
 Yes, but you cannot run `clamd` on the AEM host. Run it as a co-located or external service and point the validator at it, ideally in the same region to keep file content within your environment.
 
+**Can I run the check earlier than submission, as soon as the file is attached?**
+Yes. This tutorial's validator runs at submission. To validate as soon as a user attaches a file, before they submit, use the **Invoke Service** operation in the Adaptive Forms Rule Editor to call a scanning service on the file field's change event. See [Invoke Service enhancements in the Rule Editor](/help/forms/invoke-service-enhancements-rule-editor.md).
+
 ## Related articles {#related-articles}
 
 * [Scan file attachments in Adaptive Forms with a custom validator](/help/forms/scan-file-attachments-custom-validator.md)
 * [Configure the File Attachment component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/file-attachment)
+* [Invoke Service enhancements in the Rule Editor](/help/forms/invoke-service-enhancements-rule-editor.md)

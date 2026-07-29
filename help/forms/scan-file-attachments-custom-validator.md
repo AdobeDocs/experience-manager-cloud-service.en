@@ -312,6 +312,9 @@ It is a server-side service you register in AEM that inspects each file uploaded
 **When does AEM call the validator?**
 At submission, before the form data and attachment are persisted. AEM calls your `validateFileAttachment` method with the attachment, and blocks the submission if the result is invalid.
 
+**Can validation run earlier than submission, as soon as the file is attached?**
+Yes, as a separate mechanism. Use the **Invoke Service** operation in the Adaptive Forms Rule Editor to call a scanning service on the file field's change event, before the user submits. This is independent of the `FileAttachmentValidator` interface described in this article. It calls a Form Data Model (FDM) service instead. See [Invoke Service enhancements in the Rule Editor](/help/forms/invoke-service-enhancements-rule-editor.md).
+
 **Does the validator run in the browser or on the server?**
 On the server. The check cannot be bypassed by disabling JavaScript or editing the page in the browser.
 
@@ -329,3 +332,4 @@ Set the `message` value when you construct the `FileAttachmentValidationResult`.
 * [Scan file attachments with ClamAV](/help/forms/scan-file-attachments-clamav.md)
 * [Configure the File Attachment component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/file-attachment)
 * [Configure an Adaptive Form for REST Endpoint submit action](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/set-submit-action/configure-submit-action-restpoint)
+* [Invoke Service enhancements in the Rule Editor](/help/forms/invoke-service-enhancements-rule-editor.md)
