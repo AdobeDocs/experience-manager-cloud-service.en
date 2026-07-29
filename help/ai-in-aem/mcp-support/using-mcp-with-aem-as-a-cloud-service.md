@@ -53,6 +53,10 @@ The endpoint is `https://mcp.adobeaemcloud.com/adobe/mcp/aem`
 
 Note that the AEM MCP Server is used by the [AEM Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md#install-adobe-experience-manager-connector) and [AEM ChatGPT Plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md#install-adobe-experience-manager-plugin).
 
+>[!NOTE]
+>
+>An MCP server is also available for AEM Guides as a Cloud Service, for guides-specific operations such as managing topics, maps, and baselines. See [Configuring the AEM Guides MCP Server](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/install-conf-guide/aemg-integrations/conf-aem-guides-mcp) for details.
+
 ### Listing AEM MCP Server capabilities
 
 To see which features your LLM can use, ask your MCP-enabled application to discover the AEM MCP Server's capabilities with a prompt such as:
