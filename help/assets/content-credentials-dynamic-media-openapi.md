@@ -13,18 +13,18 @@ Brands are more concerned than ever about content transparency, AI disclosure, a
 3. Edits or modifications made to the image, such as modification in height or width after it was generated.
 4. The provenance and authenticity of the content.
 
-Thus Content Credentials, which are a new kind of encrypted, tamper-evident metadata can help viewers understand the lineage of content and ensure the integrity of brand assets. 
+Thus Content Credentials, which are a new kind of encrypted, tamper-evident metadata can help viewers understand the lineage of content and ensure the integrity of brand assets.
 
 ## Prerequisites of Assets using Content Credentials in Dynamic Media {#prerequisites-assets-using-content-credentials}
 
 Ensure that you fulfil the following requirements before using Content Credentials:
 
-1. Only eligible assets that have been created through GenAI such as Adobe's Firefly are supported, non-GenAI assets are not eligible for Content Credentials. An asset is considered eligible in the following conditions:
+1. Only eligible assets that have been created through GenAI such as Adobe's Firefly are supported, non-GenAI assets are not eligible for Content Credentials preservation. An asset is considered eligible in the following conditions:
     1. The source brand asset is identified as a content generated using GenAI.
     2. The source brand asset contains valid Content Credentials metadata.
-2. Dynamic Media does not create Content Credentials for assets that do not already contain them.
+2. Dynamic Media does not preserve Content Credentials for assets that do not already contain them.
 3. For image or document assets, Content Credentials is supported for *.jpeg*, *.png*, *.gif*, *.tiff*, *.dng*, *.arw*, and *.nef* file formats. For video assets, Content Credentials is supported for *.mp4*, *.avi*, *.mov*, *.m4v* file formats.
-4. Content Credentials preservation is available only in assets that are supported and can be exported in Dynamic Media.
+4. Content Credentials preservation is supported only for asset download/export workflows. This includes exports from Adobe Experience Manager (AEM) /  Adobe Dynamic Media Classic and delivery through the **attachment** modifier, which forces download by setting the **[!UICONTROL Content-Disposition]** response header.
 
     >[!NOTE]
     >
@@ -35,12 +35,12 @@ Ensure that you fulfil the following requirements before using Content Credentia
 1. Upload an asset in the Dynamic Media environment.
 2. Open the asset and copy the URL.
 3. Paste the copied URL in any web browser. You can generate rendition by customizing the height and width of the asset. 
-4. Download the asset as shown in the figure. You can download eligible assets or renditions from Dynamic Media using the **attachment** modifier. You can use **attachment=true** or **attachment=1** as a modifier in Dynamic Media - Scene7 mode and **attachment=true** in Dynamic Media with OpenAPI capabilities. For example, see the following URL: [https://<server>/is/image/<company>/<asset>?attachment=1]. When the source asset is eligible, Dynamic Media preserves the Content Credentials in the downloaded output.
-![downloading](/help/assets/dynamic-media/assets/download.png)
+4. Download the asset. You can download eligible assets or renditions from Dynamic Media using the **attachment** modifier. You can use **attachment=true** or **attachment=1** as a modifier in Dynamic Media - Scene7 mode and **attachment=true** in Dynamic Media with OpenAPI capabilities. For example, see the following URL: [https://<server>/is/image/<company>/<asset>?attachment=1]. When the source asset is eligible, Dynamic Media preserves the Content Credentials in the downloaded output.
+For more information on downloading the asset using the **attachment** modifier (**attachment=true**), see [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=attachment&t=request]. 
 
    >[!NOTE]
    >
-   > When you download a generated rendition, Dynamic Media creates a new output file. Because this output is newly generated, Dynamic Media signs the rendition again and returns the generated file with Content Credentials when the source asset is eligible.
+   > When you download a generated rendition, Dynamic Media creates a new output file. Because this output is newly generated, Dynamic Media signs the rendition again using the original asset as a source ingredient to preserve the content credentials chain and returns the generated file with Content Credentials when the source asset is eligible.
 
 5. You can also export an asset from Dynamic Media. 
 
@@ -57,9 +57,9 @@ You can now view the list of actions performed such as opening the asset, conver
  
 To maintain the integrity and authenticity of Content Credentials, Dynamic Media enforces the following limitations:
 
-1. Source assets that are above the configured maximum file size of 2 GiB and above the processing timeout of 60 seconds are not processed for Content Credentials preservation. However, these limits are subject to the Dynamic Media service configuration and may vary from environment to environment.
+1. Source assets that are above the configured maximum file size of 2 GiB and above the processing timeout of 60 seconds are not processed for Content Credentials preservation.
 2. Composite Assets is not supported during signing and only the base image is considered for signing. If the base image is generated through any GenAI tool, the output is signed accordingly. However, the signature does not include any information about the GenAI-generated layers that are used to create the final rendition.
-3. Content Credentials cannot be used to sign video thumbnails and is currently not supported in Dynamic Media hybrid.
+3. Adaptive video streaming files and video thumbnails are not signed. Also, there is no support for Content Credentials preservation for Dynamic Media hybrid solution.
 4. Content Credentials processing has a configured timeout.
 If any of these safeguards are reached, the asset continues through normal Dynamic Media processing, but Content Credentials may not be preserved in the generated output.
 
