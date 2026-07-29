@@ -30,6 +30,10 @@ The Text Field component in the Interactive Communication (IC) editor enables au
 
 - **Appearance:** Set the appearance of the value box as None, Solid Box, or Underline based on the desired visual layout. 
 
+>[!NOTE]
+>
+> The text field supports the text wrapping feature.
+
 2.2 Typography 
 
 Controls the visual style of the typed characters: 
