@@ -194,22 +194,32 @@ You can set how long recipients have to complete signing by specifying **Documen
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation New Features {#foundation-new}
 
-#### Conversational AI Interface for Cloud Manager Questions {#devagent-cloudmanager}
+#### AEM MCP Server {#aem-mcp-server}
 
-The Development Agent expands to handling questions related to Cloud Manager through the [Cloud Manager Job](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-job). In AI Assistant, retrieve information about programs, environments, and pipelines (e.g., execution status). Quickly find links to error logs, access logs, and build logs. 
+Adobe now offers a unified [**AEM MCP Server**](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#aem-mcp-server), replacing the need to configure multiple domain-specific MCP servers individually. Configure a single URL — `https://mcp.adobeaemcloud.com/adobe/mcp/aem` — in your chat application or coding agent to access a growing set of capabilities, including Content operations (pages, content fragments, and assets – see below) and Experience Governance checks.
 
-#### Enhancements to Pipeline Troubleshooting Agent Job {#devagent-pipeline-troubleshooting}
+New Assets capabilities include upload/download, move/copy/delete, publish/un-publish, editing metadata, inspecting references, and identifying unused assets.
 
-The Development Agent's [pipeline troubleshooting job](/help/ai-in-aem/agents/brand-experience/development/development.md#cloud-manager-pipeline-troubleshooting) helps developers diagnose and resolve issues in AEM as a Cloud Service deployments. New features include:
+The AEM MCP Server is also used by the [AEM Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md#install-adobe-experience-manager-connector) and [AEM ChatGPT Plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md#install-adobe-experience-manager-plugin).
 
-* Support for Web Tier Config Pipeline - In addition to supporting Full Stack pipelines (Deployment and Code Quality), the Development Agent now supports troubleshooting for the **Web Tier Config Pipeline**
+#### Snapshots for RDEs {#rde-snapshots}
 
-* Experience Home Widget for failed pipelines - The Admin & IT role will see a [new widget](/help/ai-in-aem/agents/brand-experience/development/development.md#troubleshoot-from-experience-home) highlighting pipeline failures. A clickable button initiates the pipeline troubleshooting job in AI Assistant.
+Rapid Development Environments (RDEs) now support a feature [to take a snapshot](/help/implementing/developing/introduction/rapid-development-environments.md#snapshots) of the current state of code and content, which can be restored at a later time. This can be useful when syncing code that may need to be reverted, or when switching between development of different features. It's also possible to restore just the mutable content as a known starting point for testing.
 
-#### Manage Quiet Hours and Update Free Periods with AI Assistant {#quiet-hours-ai}
 
-You can now view, create, and edit [Quiet Hours and Update Free Periods](/help/ai-in-aem/agents/brand-experience/development/development.md#control-updates-job) directly through the AEM AI Assistant.
-The key benefit is fewer scheduling errors. As you make a request, the assistant guides you through what is possible and flags the limits that apply, such as the three-period cap, the mandatory one-week gap between periods, and the planned maintenance exclusion windows you cannot schedule over. So instead of discovering a constraint after a failed configuration, Business Owners and Deployment Managers are steered to a valid schedule in the same conversation. This protects critical business windows from automatic maintenance updates while reducing back-and-forth and misconfiguration.
+#### AEM Code Assessment and auto-fix via IDE AI agent {#ide-ai-aemcode-issues}
+
+AEM Cloud Service Java-stack teams using AI-assisted development in tools like Cursor, Claude Code, Visual Studio, and IntelliJ can now go further. A new [code assessment IDE agent skill](/help/ai-in-aem/local-development-with-ai-tools.md#use-the-code-assessment-skill) detects and auto-fixes issues directly in your AEM codebase, reducing review cycles and catching problems earlier in development. 
+
+Supported checks include:
+* replacing deprecated APIs
+* modernizing Sling Model dependency injection
+* updating outdated Maven dependencies
+* adding missing timeouts to outbound HTTP calls
+* bounding unbounded queries
+* Sling schedulers
+* resource change listeners the Replication
+* JCR or OSGi event handling
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
@@ -247,12 +257,6 @@ See the [deprecation article](/help/release-notes/deprecated-removed-features.md
 * `org.apache.jackrabbit.oak.plugins.memory`
 
 +++
-
-#### Dispatcher Local MCP server is part of AEM SDK {#local-dispatcher-mcp}
-
-The Dispatcher local MCP server is now included in the **AEM SDK** in the [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html), packaged inside the AEM Dispatcher tools zip. Previously, the Dispatcher local MCP server was packaged in a separate beta listing of AEM Dispatcher tools.
-
-The Dispatcher local MCP server enables AI tools to validate Dispatcher and Apache HTTPD configuration, trace request handling, and inspect cache behavior against a Dispatcher instance running locally in Docker.
 
 #### Preparing for Java 25: AEM Cloud Service Runtime Upgrade Timeline
 
@@ -293,14 +297,6 @@ Follow [this tutorial](https://experienceleague.adobe.com/en/docs/experience-man
 *By using the AEM Edge Functions Beta, you acknowledge that it is still in development and that you should not rely on the correct functioning of the technology or availability of data. This feature is provided as-is,
 may change without notice, and is not covered by production SLAs.*
 
-#### Snapshots for RDEs (*Public Beta* Program) {#rde-snapshot-program}
-
-Snapshots for Rapid Development Environments (RDEs) is now in public beta so you can self-serve try it out without contacting Adobe to enable.
-
-RDEs now support a feature [to take a snapshot](/help/implementing/developing/introduction/rapid-development-environments.md#snapshots) of the current state of code and content, which can be restored at a later time. This can be useful when syncing code that may need to be reverted, or when switching between development of different features. It's also possible to restore just the mutable content as a known starting point for testing.
-
-*By using the RDE Snapshots Beta, you acknowledge that it is still in development and that you should not rely on the correct functioning of the technology or availability of data. While we have tested this feature extensively, there is a small possibility that your RDE could become unstable. If this occurs, a reset will restore it to a working state.*
-
 #### Replication AI Troubleshooting (Beta Program) {#replication-ai-troubleshooting-beta}
 
 Using the AI Assistant in AEM Author and other interfaces, you can troubleshoot replication-related issues such as blocked queues. To join the Beta Program, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com), describing your interest.
@@ -310,22 +306,6 @@ Using the AI Assistant in AEM Author and other interfaces, you can troubleshoot 
 Validate a production build with internal-only test traffic before exposing it to end users. Ship to production, route only canary traffic (using a special header), monitor behavior, then either promote to live traffic or roll back—without impacting customers.
 
 Email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) to request access and share feedback.
-
-#### AEM Code Assessment and auto-fix via IDE AI agent (Beta Program) {#ide-ai-aemcode-issues}
-
-AEM Cloud Service Java-stack teams using AI-assisted development in tools like Cursor, Claude Code, Visual Studio, and IntelliJ can now go further. A new [code assessment IDE agent skill](/help/ai-in-aem/local-development-with-ai-tools.md#use-the-code-assessment-skill) detects and auto-fixes issues directly in your AEM codebase, reducing review cycles and catching problems earlier in development. 
-
-Supported checks include:
-* replacing deprecated APIs
-* modernizing Sling Model dependency injection
-* updating outdated Maven dependencies
-* adding missing timeouts to outbound HTTP calls
-* bounding unbounded queries
-* Sling schedulers
-* resource change listeners the Replication
-* JCR or OSGi event handling
-
-This feature is in beta. Try it out and share feedback with the team at [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com).
 
 #### Edge Authentication for Edge Delivery Services (Beta Program) {#edge-authentication}
 
