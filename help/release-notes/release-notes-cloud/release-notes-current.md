@@ -99,7 +99,7 @@ Now Content Fragments Admin UI supports folder actions like Rename, Copy, Move a
 
 ### New features in Dynamic Media {#new-features-dynamic-media}
 
-**Add a countdown timer to Dynamic Media templates**
+**Add countdown timer to Dynamic Media templates**
 
 You can now add a Countdown Timer layer to Dynamic Media templates to display a live countdown until a specified end time. Customize the timer's appearance, enable or disable time units, define fallback text after expiration, and optionally make the timer clickable by configuring a destination URL.
 
@@ -194,7 +194,7 @@ You can set how long recipients have to complete signing by specifying **Documen
 
 #### ChatGPT Plugin {#aem-chatgpt-plugin}
 
-ChatGPT users can browse OpenAI’s Plugin marketplace to 1-click install the Adobe Experience Manager Plugin. This MCP server exposes a growing set of tools to interact with AEM, including editing content through prompting. 
+ChatGPT users can browse OpenAI's Plugin marketplace to 1-click install the Adobe Experience Manager Plugin. This MCP server exposes a growing set of tools to interact with AEM, including editing content through prompting. 
 
 [Learn more.](/help/ai-in-aem/mcp-support/setup-chatgpt.md#install-adobe-experience-manager-plugin)
 
