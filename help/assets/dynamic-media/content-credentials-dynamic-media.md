@@ -35,7 +35,7 @@ Ensure that you fulfil the following requirements before using Content Credentia
 1. Upload an asset in the Dynamic Media environment.
 2. Open the asset and copy the URL.
 3. Paste the copied URL in any web browser. You can generate rendition by customizing the height and width of the asset. 
-4. Download the asset as shown in the figure. You can download eligible assets or renditions from Dynamic Media using the **attachment** modifier. You can either use **attachment=true** or **attachment=1** as a modifier. For example, see the following URL: [https://<server>/is/image/<company>/<asset>?attachment=1]. When the source asset is eligible, Dynamic Media preserves the Content Credentials in the downloaded output.
+4. Download the asset as shown in the figure. You can download eligible assets or renditions from Dynamic Media using the **attachment** modifier. You can use **attachment=true** or **attachment=1** as a modifier in Dynamic Media - Scene7 mode and **attachment=true** in Dynamic Media with OpenAPI capabilities. For example, see the following URL: [https://<server>/is/image/<company>/<asset>?attachment=1]. When the source asset is eligible, Dynamic Media preserves the Content Credentials in the downloaded output.
 ![downloading](/help/assets/dynamic-media/assets/download.png)
 
    >[!NOTE]
