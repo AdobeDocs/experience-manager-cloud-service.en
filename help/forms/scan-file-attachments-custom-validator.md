@@ -35,7 +35,7 @@ Two properties of this model matter for security:
 
 * An Adaptive Form based on Core Components.
 * A Maven project set up to build and deploy an AEM bundle.
-* A compile-time dependency that provides the `com.adobe.forms.common.service` interfaces (`FileAttachmentValidator`, `FileAttachmentWrapper`, `FileAttachmentValidationResult`, `FileAttachmentValidatorManager`).
+* A compile-time dependency that provides the `com.adobe.forms.common.service` interfaces (`FileAttachmentValidator`, `FileAttachmentWrapper`, `FileAttachmentValidationResult`, `FileAttachmentValidatorManager`) — `com.adobe.forms.foundation:adobe-xfaforms-common`, bundled in the AEM Forms add-on SDK. See [Step 3 of the ClamAV tutorial](/help/forms/scan-file-attachments-clamav.md#step-3-dependency) for where to get it and how to install it locally.
 * An Adaptive Form Container **proxy component** in your project (the standard pattern for extending Core Components), so you have somewhere to add the Submission tab field described in [Add the validator field to the form dialog](#add-dialog-field). This applies to Core Components-based forms only.
 
 >[!NOTE]

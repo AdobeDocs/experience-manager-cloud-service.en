@@ -40,7 +40,7 @@ This tutorial assumes the setup below. If any item is missing, install or obtain
 | 6 | Apache Maven 3.x is installed | Run `mvn -version` | Used to build and deploy the custom code. |
 | 7 | Docker is installed (recommended path for running ClamAV) | Run `docker --version` | If you cannot use Docker, see the native-install note in Step 1. |
 | 8 | You have, or can create, an AEM Maven project to hold custom code | See Step 2 | Step 2 creates one if you do not have it. |
-| 9 | You have the Maven coordinates of the Early Access dependency that provides the `com.adobe.forms.common.service` interfaces | Provided in your Early Adopter Program onboarding materials | **Required.** These coordinates are not public. Obtain them from your EA contact. See Step 3. |
+| 9 | You have downloaded the **latest available build** of the AEM Forms add-on SDK, which bundles the Early Access dependency that provides the `com.adobe.forms.common.service` interfaces | Download `aem-forms-addon-sdk-<version>.zip` from the [Adobe Software Distribution portal](https://experience.adobe.com/#/downloads) (requires Early Adopter Program entitlement) | **Required.** This dependency is not published to a public Maven repository — it's extracted from the SDK download. Earlier builds may not include it. See Step 3. |
 
 ### Values you will substitute {#substitute-values}
 
@@ -48,7 +48,7 @@ Wherever you see these placeholders, replace them with your own values:
 
 * `<PROJECT_ROOT>`: the folder of your AEM Maven project.
 * `<APP_ID>`: your project's application id or bundle module name (for example, `mysite`).
-* `<SDK_DEPENDENCY_*>`: the group id, artifact id, and version from assumption #9.
+* `<SDK_DEPENDENCY_VERSION>`: the `adobe-xfaforms-common` version bundled in the SDK you downloaded (the group id and artifact id are fixed — see Step 3).
 
 >[!NOTE]
 >
@@ -122,7 +122,7 @@ If you do not have one, create a project with the AEM Project Archetype:
 1. In a terminal, go to the folder where you keep code and run the archetype. Replace `<APP_ID>` with a short lowercase name such as `mysite`:
 
    ```
-   mvn -B org.apache.maven.plugins:maven-archetype-plugin:generate -D archetypeGroupId=com.adobe.aem.guides -D archetypeArtifactId=aem-project-archetype -D archetypeVersion=LATEST -D appId=<APP_ID> -D name="<APP_ID>" -D groupId=com.example -D artifactId=<APP_ID> -D aemVersion=cloud
+   mvn -B org.apache.maven.plugins:maven-archetype-plugin:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion=LATEST -D appId=<APP_ID> -D appTitle="<APP_ID>" -D name="<APP_ID>" -D groupId=com.example -D artifactId=<APP_ID> -D aemVersion=cloud
    ```
 
    **Expected result:** a new folder `<APP_ID>` (this is your `<PROJECT_ROOT>`) containing modules including `core`, `ui.apps`, and `all`.
@@ -139,16 +139,37 @@ If you do not have one, create a project with the AEM Project Archetype:
 
 ## Step 3: Add the Early Access dependency {#step-3-dependency}
 
-Your code compiles against the `FileAttachmentValidator` interface, which comes from an Early Access dependency (assumption #9).
+Your code compiles against the `FileAttachmentValidator` interface, which comes from `com.adobe.forms.foundation:adobe-xfaforms-common` (assumption #9). This dependency isn't published to a public Maven repository — it ships bundled inside the AEM Forms add-on SDK, so you extract it from there and install it into your local Maven repository.
+
+1. Download the **latest available build** of `aem-forms-addon-sdk-<version>.zip` from the [Adobe Software Distribution portal](https://experience.adobe.com/#/downloads) (requires Early Adopter Program entitlement). Always use the latest build — earlier builds may not include this dependency yet.
+
+1. Extract the dependency jar. The SDK zip contains a feature archive (`.far`), and the jar is bundled inside that:
+
+   ```
+   unzip -p aem-forms-addon-sdk-<version>.zip aem-forms-addon-<version>.far > addon.far
+   unzip -l addon.far | grep adobe-xfaforms-common
+   ```
+
+   The second command shows you the exact jar path and version bundled in your download, for example `com/adobe/forms/foundation/adobe-xfaforms-common/<version>/adobe-xfaforms-common-<version>.jar`. Use that path and version in the next step.
+
+   ```
+   unzip -p addon.far "com/adobe/forms/foundation/adobe-xfaforms-common/<version>/adobe-xfaforms-common-<version>.jar" > adobe-xfaforms-common.jar
+   ```
+
+1. Install the extracted jar into your local Maven repository so `pom.xml` can resolve it. Include `-DgeneratePom=true` — the jar embeds its own internal Adobe build POM with a parent reference your project can't resolve, and this flag replaces it with a clean, self-contained one:
+
+   ```
+   mvn install:install-file -Dfile=adobe-xfaforms-common.jar -DgroupId=com.adobe.forms.foundation -DartifactId=adobe-xfaforms-common -Dversion=<version> -Dpackaging=jar -DgeneratePom=true
+   ```
 
 1. Open `<PROJECT_ROOT>/core/pom.xml`.
 
-1. Inside the `<dependencies>` section, add the dependency using the coordinates from your Early Adopter onboarding. Use `provided` scope, because the interface is supplied by AEM at runtime:
+1. Inside the `<dependencies>` section, add the dependency using the same version you just installed. Use `provided` scope, because the interface is supplied by AEM at runtime:
 
    ```xml
    <dependency>
-       <groupId><SDK_DEPENDENCY_GROUP_ID></groupId>
-       <artifactId><SDK_DEPENDENCY_ARTIFACT_ID></artifactId>
+       <groupId>com.adobe.forms.foundation</groupId>
+       <artifactId>adobe-xfaforms-common</artifactId>
        <version><SDK_DEPENDENCY_VERSION></version>
        <scope>provided</scope>
    </dependency>
@@ -158,7 +179,7 @@ Your code compiles against the `FileAttachmentValidator` interface, which comes 
 
 >[!IMPORTANT]
 >
->If you do not have these coordinates, stop and request them from your Early Adopter Program contact. Without this dependency the project does not compile.
+>If you don't have Software Distribution portal access yet, request Early Adopter Program entitlement from your Adobe contact. Without this dependency the project does not compile.
 
 ## Step 4: Add the ClamAV validator class {#step-4-class}
 
@@ -485,14 +506,14 @@ The **File Attachment Virus Scanner / Validator** field does not exist in the ou
 
    Replace `<APP_ID>` in both the dialog XML and the servlet's `resourceTypes` with your project's actual application ID (matching assumption #4), and adjust the package name if yours differs from Step 4.
 
-1. Build and deploy both changes:
+1. Build and deploy both changes. You changed content (the dialog) and code (the servlet), so use both profiles together — `autoInstallPackage` alone only deploys the content and leaves the servlet's bundle un-redeployed:
 
    ```
    cd <PROJECT_ROOT>
-   mvn clean install -PautoInstallPackage
+   mvn clean install -PautoInstallPackage,autoInstallBundle
    ```
 
-   **Expected result:** the build ends with `BUILD SUCCESS`, and the `ui.apps` content package (including this dialog change) and the `core` bundle are both installed.
+   **Expected result:** the build ends with `BUILD SUCCESS`, and the `ui.apps` content package (including this dialog change) and the `core` bundle (including the new servlet) are both installed.
 
 >[!NOTE]
 >
@@ -510,9 +531,11 @@ Now create a simple form with a file-upload field.
 
 1. Select **Create** (top right), then **Adaptive Form**.
 
-1. When asked for the foundation, choose **Core Components**, then select **Next**.
+1. Pick a template from the gallery. The foundation isn't a separate question — it's part of the template you pick, shown as a small subtitle under each template's name (for example, **Adaptive Form (Core Components)**).
 
-1. Select a template (for example, a blank Core Components template), then select **Next**.
+   >[!IMPORTANT]
+   >
+   >Several templates are all named **Blank Form** — one for Core Components, one for Foundation Components, one for Edge Delivery Services. Picking the wrong one is easy to miss and fails silently: the rest of this tutorial still appears to work, but the File Attachment Virus Scanner / Validator field never gets invoked, because that pipeline only exists for Core Components-based forms. Confirm the subtitle reads **Adaptive Form (Core Components)** before continuing.
 
 1. In **Properties**, set:
 
@@ -601,7 +624,7 @@ Test both outcomes.
 
 **`PONG` not returned in Step 1.** `clamd` is not ready or the port is not published. Check `docker logs clamav` for database-load completion, and confirm the container maps port `3310` (`docker ps`).
 
-**Project does not compile (cannot find `FileAttachmentValidator`).** The Early Access dependency (Step 3) is missing or has the wrong coordinates. Confirm the values from your EA onboarding.
+**Project does not compile (cannot find `FileAttachmentValidator`).** The Early Access dependency (Step 3) is missing, wasn't installed to your local Maven repository, or `pom.xml`'s version doesn't match the jar you installed. Re-check the version with `unzip -l addon.far | grep adobe-xfaforms-common`.
 
 **Component is unsatisfied in Step 5.** Open `http://localhost:4502/system/console/components`, find `ClamAVFileAttachmentValidator`, and read the reason. A missing interface usually means the dependency is not present at runtime. Confirm your AEM environment has the Early Access feature.
 
