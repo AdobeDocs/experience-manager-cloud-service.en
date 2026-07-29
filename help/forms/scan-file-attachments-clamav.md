@@ -335,7 +335,7 @@ Your code compiles against the `FileAttachmentValidator` interface, which comes 
    http://localhost:4502/system/console/components
    ```
 
-   Search for `ClamAVFileAttachmentValidator`.
+   This page has no built-in search box — with 5,000+ components listed, use your browser's own find-in-page (Cmd+F or Ctrl+F) and search for `ClamAVFileAttachmentValidator`.
 
    **Expected result:** the component is listed and its state is **active** (or **satisfied**). If it is unsatisfied, see Troubleshooting.
 
@@ -351,7 +351,7 @@ Tell the validator where `clamd` is. For local development the defaults (`localh
    http://localhost:4502/system/console/configMgr
    ```
 
-1. Search for **ClamAV File Attachment Scanner** and open it.
+1. This page also has no built-in search box — use your browser's find-in-page (Cmd+F or Ctrl+F) for **ClamAV File Attachment Scanner** and open it.
 
 1. Confirm or set:
 
@@ -610,19 +610,23 @@ Test both outcomes.
 
 1. In the form, attach `eicar.txt` and select **Submit**.
 
-   **Expected result:** the submission is blocked, a message reports that the file is not valid, and the file field is flagged with an error. The form does not submit.
+   **Expected result:** the submission is blocked. How the rejection is surfaced varies by the form's configured **Submit action** — a standard thank-you-page flow typically shows an inline error on the file field, while **Submit to REST endpoint** (this tutorial's sample form uses this) tends to show a generic submission-failed message instead of a field-level one. Either way, the form does not submit.
 
-1. To see what happened on the server, check the AEM error log:
+1. Confirm the validator actually ran and rejected the file — check the AEM error log, which is the reliable way to see what happened regardless of how the failure was displayed in the browser:
 
    ```
    <AEM_SDK_FOLDER>/crx-quickstart/logs/error.log
    ```
+
+   Look for the rejection message from your validator (for example, `A virus was detected in the attached file`).
 
 ## Troubleshooting {#troubleshooting}
 
 **`docker run` fails with `no matching manifest for linux/arm64/v8`.** You're on an Apple Silicon Mac; the `clamav/clamav` image has no native arm64 build. Add `--platform linux/amd64` to the command in Step 1.
 
 **`PONG` not returned in Step 1.** `clamd` is not ready or the port is not published. Check `docker logs clamav` for database-load completion, and confirm the container maps port `3310` (`docker ps`).
+
+**Step 2's archetype command fails with `Unsupported class file major version...`.** Your default `java`/`mvn` is running on a newer JDK than assumption #5 allows — the archetype's post-generation script can't parse class files from Java versions newer than 21. Point `JAVA_HOME` at a Java 11 or 21 installation and re-run the command. If the first attempt already partially generated a project (mismatched module folders, missing files), delete that output directory before retrying rather than re-running in place.
 
 **Project does not compile (cannot find `FileAttachmentValidator`).** The Early Access dependency (Step 3) is missing, wasn't installed to your local Maven repository, or `pom.xml`'s version doesn't match the jar you installed. Re-check the version with `unzip -l addon.far | grep adobe-xfaforms-common`.
 
@@ -635,6 +639,8 @@ Test both outcomes.
 **Every file is rejected, even clean ones.** The validator fails closed, so this usually means it cannot reach `clamd`. Recheck Step 1 (is `clamd` running and returning `PONG`?) and Step 6 (host, port, timeout). Look in `error.log` for connection errors or `ERROR` responses.
 
 **Scans time out or `INSTREAM size limit exceeded`.** The file is too large for the timeout or for `clamd`'s `StreamMaxLength`. Increase the timeout in Step 6, raise `StreamMaxLength` in `clamd.conf`, and set a maximum file size on the File Attachment component so oversized files are stopped earlier.
+
+**EICAR submission shows a generic error, not an inline field message (Step 10).** This is expected with a **Submit to REST endpoint** submit action — it doesn't change whether the file was actually rejected. Check `error.log` for the validator's rejection message to confirm.
 
 ## Frequently asked questions {#faq}
 
