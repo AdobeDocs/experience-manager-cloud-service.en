@@ -35,8 +35,8 @@ Ensure that you fulfil the following requirements before using Content Credentia
 1. Upload an asset in the Dynamic Media environment.
 2. Open the asset and copy the URL.
 3. Paste the copied URL in any web browser. You can generate rendition by customizing the height and width of the asset. 
-4. Download the asset. You can download eligible assets or renditions from Dynamic Media using the **attachment** modifier. You can use **attachment=true** or **attachment=1** as a modifier in Dynamic Media - Scene7 mode and **attachment=true** in Dynamic Media with OpenAPI capabilities. For example, see the following URL: [https://<server>/is/image/<company>/<asset>?attachment=1]. When the source asset is eligible, Dynamic Media preserves the Content Credentials in the downloaded output.
-For more information on downloading the asset using the **attachment** modifier (**attachment=true**), see [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=attachment&t=request]. 
+4. Download the asset. You can download eligible assets or renditions from Dynamic Media using the **attachment** as a modifier. You can use **attachment=true** or **attachment=1** as a modifier in Dynamic Media - Scene7 mode and **attachment=true** in Dynamic Media with OpenAPI capabilities. For example, see the following URL: [https://<server>/is/image/<company>/<asset>?attachment=1]. When the source asset is eligible, Dynamic Media preserves the Content Credentials in the downloaded output.
+For more information on downloading the asset using the **attachment** as a modifier (**attachment=true**), see [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=attachment&t=request]. 
 
    >[!NOTE]
    >
