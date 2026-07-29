@@ -6,7 +6,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 ---
 # Content Credentials in Dynamic Media {#content-credentials-dynamic-media}
 
-Brands are more concerned than ever about content transparency, AI disclosure, and preventing the tampering of assets. The Content Authenticity Initiative (CAI) at Adobe builds tools compliant with the [Coalition for Content Provenance and Authenticity](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model) (C2PA) technical standard. Using Content Credentials, assets which are generated through AI are digitally signed using the C2PA (Coalition for Content Provenance and Authenticity) specification. These signatures embed secure metadata within the asset, enabling users and systems to verify the content's origin and history The metadata can provide information such as:
+Brands are more concerned than ever about content transparency, AI disclosure, and preventing the tampering of assets. The Content Authenticity Initiative (CAI) at Adobe builds tools compliant with the [Coalition for Content Provenance and Authenticity](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model) (C2PA) technical standard. Dynamic Media User-generated content (UGC) is also C2PA-compliant. Using Content Credentials, assets which are generated through AI are digitally signed using the C2PA (Coalition for Content Provenance and Authenticity) specification. These signatures embed secure metadata within the asset, enabling users and systems to verify the content's origin and history. The metadata can provide information such as:
 
 1. The software or service used to create the image.
 2. Whether generative AI was involved in the image creation process.
@@ -35,12 +35,12 @@ Ensure that you fulfil the following requirements before using Content Credentia
 1. Upload an asset in the Dynamic Media environment.
 2. Open the asset and copy the URL.
 3. Paste the copied URL in any web browser. You can generate rendition by customizing the height and width of the asset. 
-4. Download the asset. You can download eligible assets or renditions from Dynamic Media using the **attachment** as a modifier. You can use **attachment=true** or **attachment=1** as a modifier in Dynamic Media - Scene7 mode and **attachment=true** in Dynamic Media with OpenAPI capabilities. For example, see the following URL: [https://<server>/is/image/<company>/<asset>?attachment=1]. When the source asset is eligible, Dynamic Media preserves the Content Credentials in the downloaded output.
-For more information on downloading the asset using the **attachment** as a modifier (**attachment=true**), see [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=attachment&t=request]. 
+4. Download the asset. You can download eligible assets or renditions from Dynamic Media using the **attachment** (**attachment=true**) as a modifier. When the source asset is eligible, Dynamic Media preserves the Content Credentials in the downloaded output.
+For more information on downloading the asset using the **attachment** as a modifier (**attachment=true**), see the [Adobe Experience Manager API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=attachment&t=request). 
 
    >[!NOTE]
    >
-   > When you download a generated rendition, Dynamic Media creates a new output file. Because this output is newly generated, Dynamic Media signs the rendition again using the original asset as a source ingredient to preserve the content credentials chain and returns the generated file with Content Credentials when the source asset is eligible.
+   > When you download a generated rendition, Dynamic Media creates a new output file. As this output is newly generated, Dynamic Media signs the rendition again using the original asset as a source ingredient to preserve the content credentials chain and returns the generated file with Content Credentials when the source asset is eligible.
 
 5. You can also export an asset from Dynamic Media. 
 
