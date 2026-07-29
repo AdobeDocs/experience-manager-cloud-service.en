@@ -219,7 +219,7 @@ Execute these steps to add a countdown timer layer to the canvas:
 
  ![countdown timer layer properties](/help/assets/assets/countdown-timer.png)
 
-See the [**[!UICONTROL Properties Panel]**] to reposition, resize, rotate, delete, or parameterise the countdown timer layer
+See the [**[!UICONTROL Properties Panel]**] to reposition, resize, rotate, delete, or parameterise the countdown timer layer.
 
 >[!NOTE]
 >
