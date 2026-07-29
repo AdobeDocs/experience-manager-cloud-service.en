@@ -154,11 +154,15 @@ Ready to start? The Interactive Communications editor is available under the Ear
 
 -->
 
+<!--
+
 ### AEM Forms Integration with Adobe Experience Platform (AEP)
 
 You can connect AEM Forms with Adobe Experience Platform (AEP) to leverage customer profiles and data for personalized form experiences and trigger downstream workflows based on form submissions. By sending form data directly to AEP datasets, you can enrich customer profiles and gain deeper insights into user interactions.
 
 Ready to start? [Learn more about integrating AEM Forms with Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md).
+
+-->
 
 ### AEM Forms HTML5 Forms
 
@@ -204,6 +208,8 @@ not sure what's going on with this video link. cleaned up version below
 
 Ready to start? The AEM Forms CLI tool is available under the Early Access program for Forms as a Cloud Service deployments. To request access, email your organization ID and program details to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address.
 
+<!--
+
 ### API Integration Tool for Dynamic Form Data
 
 The API Integration Tool enables form authors to create dynamic, intelligent forms that automatically fetch and populate data from external REST APIs based on user interactions. This no-code integration capability transforms static forms into responsive data collection interfaces.
@@ -219,7 +225,7 @@ Key capabilities include:
 
 This tool is particularly useful for scenarios like address auto-completion, dynamic dropdown population, real-time validation against external databases, and creating context-aware form experiences that adapt based on user input.
 
-
+-->
 
 ## Additional Early Access Innovations
 
@@ -246,6 +252,8 @@ Adaptive Forms can now seamlessly send captured data to authenticated external R
 -->
 
 
+<!--
+
 ### Right-to-left (RTL) languages support
 
 Adaptive Forms can now be displayed in a Right-to-Left (RTL) language, allowing a more inclusive user experience and ease of use. 
@@ -266,6 +274,8 @@ Overall, RTL language support in Adaptive Forms empowers businesses to design tr
 
 Ready to start? [Adaptive Forms RTL documentation](/help/forms/supporting-new-language-localization-core-components.md) provides a step-by-step guide to use the RTL innovation.
 
+-->
+
 <!--
 
 ### Enhanced bot protection methods
@@ -281,6 +291,8 @@ By offering multiple CAPTCHA options, AEM Forms have empowered you to select the
 Ready to integrate any of these CAPTCHA solution with your Adaptive Forms? Our documentation provides detailed instructions for each: [Cloudflare Turnstile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), and [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 -->
+
+<!--
 
 ### Doc Assurance APIs
 
@@ -300,6 +312,8 @@ Here's a breakdown of what Doc Assurance APIs can do:
     When PDF documents have the appropriate usage rights added, recipients can do enabled activities from within Adobe Reader. 
 
 Overall, [Doc Assurance APIs](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) help you improve document security and compliance by adding an extra layer of control.
+
+-->
 
 
 ### Forms Service APIs
