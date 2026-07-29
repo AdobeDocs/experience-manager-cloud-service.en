@@ -35,12 +35,12 @@ Two properties of this model matter for security:
 
 * An Adaptive Form based on Core Components.
 * A Maven project set up to build and deploy an AEM bundle.
-* A compile-time dependency that provides the `com.adobe.forms.common.service` interfaces (`FileAttachmentValidator`, `FileAttachmentWrapper`, `FileAttachmentValidationResult`, `FileAttachmentValidatorManager`) — `com.adobe.forms.foundation:adobe-xfaforms-common`, bundled in the AEM Forms add-on SDK. See [Step 3 of the ClamAV tutorial](/help/forms/scan-file-attachments-clamav.md#step-3-dependency) for where to get it and how to install it locally.
+* A compile-time dependency that provides the `com.adobe.forms.common.service` interfaces (`FileAttachmentValidator`, `FileAttachmentWrapper`, `FileAttachmentValidationResult`, `FileAttachmentValidatorManager`): `com.adobe.forms.foundation:adobe-xfaforms-common`, bundled in the AEM Forms add-on SDK. See [Step 3 of the ClamAV tutorial](/help/forms/scan-file-attachments-clamav.md#step-3-dependency) for where to get it and how to install it locally.
 * An Adaptive Form Container **proxy component** in your project (the standard pattern for extending Core Components), so you have somewhere to add the Submission tab field described in [Add the validator field to the form dialog](#add-dialog-field). This applies to Core Components-based forms only.
 
 >[!NOTE]
 >
->The **File Attachment Virus Scanner / Validator** field is **not** provided out of the box — you add it yourself with a small dialog extension on your project's Adaptive Form Container component. This is a one-time step per project (not per validator). See [Add the validator field to the form dialog](#add-dialog-field).
+>The **File Attachment Virus Scanner / Validator** field is **not** provided out of the box. You add it yourself with a small dialog extension on your project's Adaptive Form Container component. This is a one-time step per project (not per validator). See [Add the validator field to the form dialog](#add-dialog-field).
 
 ## The FileAttachmentValidator interface {#interface-reference}
 
@@ -81,11 +81,11 @@ For example: `new FileAttachmentValidationResult(false, "The attached file faile
 
 >[!NOTE]
 >
->If you need to read a `FileAttachmentValidationResult` back (for example, in a test or in code that calls a validator directly), use `isFileAttachmentValid()` and `getResponseString()`/`setResponseString()`. The class does not expose `isValid()` or `getMessage()` methods — those names describe the constructor parameters above, not the getters.
+>If you need to read a `FileAttachmentValidationResult` back (for example, in a test or in code that calls a validator directly), use `isFileAttachmentValid()` and `getResponseString()`/`setResponseString()`. The class does not expose `isValid()` or `getMessage()` methods; those names describe the constructor parameters above, not the getters.
 
 ### FileAttachmentValidatorManager {#fileattachmentvalidatormanager}
 
-AEM registers a single `FileAttachmentValidatorManager` service that sits between the framework and every validator you deploy. You don't normally need to call it yourself — AEM uses it to look up the validator selected on a form and to invoke it — but it's useful to know about when troubleshooting, since it's what the Submission tab's dropdown and the core submission pipeline both go through.
+AEM registers a single `FileAttachmentValidatorManager` service that sits between the framework and every validator you deploy. You don't normally need to call it yourself: AEM uses it to look up the validator selected on a form and to invoke it. It's useful to know about when troubleshooting, since it's what the Submission tab's dropdown and the core submission pipeline both go through.
 
 | Method | Returns | Description |
 |---|---|---|
@@ -193,9 +193,9 @@ The component should be listed with its state shown as **active** (or **satisfie
 
 ## Add the validator field to the form dialog {#add-dialog-field}
 
-This section applies to Adaptive Forms based on **Core Components**. The **File Attachment Virus Scanner / Validator** field does not exist in the out-of-the-box Adaptive Form Container dialog — you add it once, in your own project, as a small extension. Every validator you deploy afterward (see [Build an antivirus-agnostic validator](#build-validator)) then shows up as an option automatically; you don't repeat this step per validator.
+This section applies to Adaptive Forms based on **Core Components**. The **File Attachment Virus Scanner / Validator** field does not exist in the out-of-the-box Adaptive Form Container dialog. You add it once, in your own project, as a small extension. Every validator you deploy afterward (see [Build an antivirus-agnostic validator](#build-validator)) then shows up as an option automatically; you don't repeat this step per validator.
 
-Your project's Adaptive Form Container is a **proxy component** — a component under `/apps` that points at the real Core Component using `sling:resourceSuperType`, for example:
+Your project's Adaptive Form Container is a **proxy component**: a component under `/apps` that points at the real Core Component using `sling:resourceSuperType`, for example:
 
 ```xml
 <!-- /apps/<project>/components/adaptiveForm/formcontainer/.content.xml -->
@@ -207,7 +207,7 @@ Your project's Adaptive Form Container is a **proxy component** — a component 
     xmlns:sling="http://sling.apache.org/jcr/sling/1.0"/>
 ```
 
-Because of `sling:resourceSuperType`, you can add **one new field** to the inherited Submission tab without copying the whole dialog. The Sling Resource Merger only needs the node-name path recreated down to the insertion point — see [Extending Component Dialogs](/help/implementing/developing/components/reference.md#extending-component-dialogs) for the general mechanism. The real OOTB Submission tab keeps its fields under `content/items/tabs/items/submitActions/items/columns/items/`, so that's the path to mirror:
+Because of `sling:resourceSuperType`, you can add **one new field** to the inherited Submission tab without copying the whole dialog. The Sling Resource Merger only needs the node-name path recreated down to the insertion point. See [Extending Component Dialogs](/help/implementing/developing/components/reference.md#extending-component-dialogs) for the general mechanism. The real OOTB Submission tab keeps its fields under `content/items/tabs/items/submitActions/items/columns/items/`, so that's the path to mirror:
 
 ```xml
 <!-- /apps/<project>/components/adaptiveForm/formcontainer/_cq_dialog/.content.xml -->
@@ -247,9 +247,9 @@ Because of `sling:resourceSuperType`, you can add **one new field** to the inher
 Two details worth calling out:
 
 * **`emptyText="None"`** gives the field an unselected default state, so a form with nothing chosen simply has no validator applied. You don't need to add a fake "None" entry to the datasource below.
-* **Multiple configurations are expected.** You might register more than one validator — one per antivirus engine, or several differently configured instances of the same engine. Each registered `FileAttachmentValidator` has its own `getFileAttachmentValidatorName()`, so each one appears as a separate option automatically; nothing about this dialog fragment changes based on how many you register.
+* **Multiple configurations are expected.** You might register more than one validator, for example one per antivirus engine, or several differently configured instances of the same engine. Each registered `FileAttachmentValidator` has its own `getFileAttachmentValidatorName()`, so each one appears as a separate option automatically; nothing about this dialog fragment changes based on how many you register.
 
-The `datasource` child node points at a small Sling servlet you also write. It has one job: ask [`FileAttachmentValidatorManager`](#fileattachmentvalidatormanager) for `getValidators()`, and turn each validator's `getFileAttachmentValidatorName()` into a drop-down option. For the complete, ready-to-use implementation, see [Step 7 of the ClamAV tutorial](/help/forms/scan-file-attachments-clamav.md#step-7-dialog-field) — the servlet is identical regardless of which validator engine you're using, so you can copy it as-is into your project.
+The `datasource` child node points at a small Sling servlet you also write. It has one job: ask [`FileAttachmentValidatorManager`](#fileattachmentvalidatormanager) for `getValidators()`, and turn each validator's `getFileAttachmentValidatorName()` into a drop-down option. For the complete, ready-to-use implementation, see [Step 7 of the ClamAV tutorial](/help/forms/scan-file-attachments-clamav.md#step-7-dialog-field): the servlet is identical regardless of which validator engine you're using, so you can copy it as-is into your project.
 
 Deploy both files as part of your project's `ui.apps` content package and `core` bundle (see [Build and deploy the bundle](#build-deploy)). Once deployed, this dialog extension is verified working: the field appears on the Submission tab alongside the existing OOTB fields (not replacing them), and setting it persists a plain `fileAttachmentValidator` property on the guide container node, which AEM's submission pipeline reads via `FileAttachmentValidatorManager.getFileAttachmentValidator(name)`.
 
@@ -264,7 +264,7 @@ Deploy both files as part of your project's `ui.apps` content package and `core`
 
 >[!IMPORTANT]
 >
->If you don't see a **File Attachment Virus Scanner / Validator** field on the Submission tab at all, you (or your project) haven't completed [Add the validator field to the form dialog](#add-dialog-field) yet — for Core Components-based forms, this field is never present out of the box.
+>If you don't see a **File Attachment Virus Scanner / Validator** field on the Submission tab at all, you (or your project) haven't completed [Add the validator field to the form dialog](#add-dialog-field) yet. For Core Components-based forms, this field is never present out of the box.
 
 ## Runtime behavior and user experience {#runtime-behavior}
 
@@ -279,7 +279,7 @@ Deploy both files as part of your project's `ui.apps` content package and `core`
 
 If the **File Attachment Virus Scanner / Validator** field itself does not appear on the Submission tab:
 
-* Confirm your project has deployed the dialog extension and datasource servlet from [Add the validator field to the form dialog](#add-dialog-field) — this field is not present out of the box for Core Components-based forms.
+* Confirm your project has deployed the dialog extension and datasource servlet from [Add the validator field to the form dialog](#add-dialog-field). This field is not present out of the box for Core Components-based forms.
 * Confirm the `FT_FORMS-23497` feature toggle is enabled for your program; it gates the underlying `FileAttachmentValidatorManager` capability that the datasource servlet depends on.
 
 If the field appears, but your validator is not listed in the drop-down:

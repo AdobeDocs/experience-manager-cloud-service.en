@@ -34,13 +34,13 @@ This tutorial assumes the setup below. If any item is missing, install or obtain
 |---|---|---|---|
 | 1 | A local AEM author instance is running and reachable at `http://localhost:4502` | Open `http://localhost:4502` in a browser. You should see the AEM sign-in or Start screen. | This tutorial uses the local AEM as a Cloud Service SDK quickstart. |
 | 2 | You can sign in to AEM as an administrator | Sign in at `http://localhost:4502` with an admin account (default local credentials are `admin` / `admin`) | Admin rights are needed to deploy code, change OSGi configuration, and author forms. |
-| 3 | Your AEM environment is entitled to the Early Access file-attachment validator feature, with feature toggle `FT_FORMS-23497` enabled | Confirm with your Early Adopter Program contact | This toggle gates the underlying `FileAttachmentValidatorManager` capability. The Submission tab field itself is something this tutorial adds in Step 7 — it does not exist out of the box either way. |
+| 3 | Your AEM environment is entitled to the Early Access file-attachment validator feature, with feature toggle `FT_FORMS-23497` enabled | Confirm with your Early Adopter Program contact | This toggle gates the underlying `FileAttachmentValidatorManager` capability. The Submission tab field itself is something this tutorial adds in Step 7. It does not exist out of the box either way. |
 | 4 | You have, or can create, an Adaptive Form Container **proxy component** in your project's `ui.apps` module | See Step 7 | This is the standard pattern for extending an AEM Core Component. Step 7 creates the dialog extension on it. |
 | 5 | Java JDK is installed and matches your AEM SDK's required version | Run `java -version` in a terminal | Use the Java version required by your AEM SDK (for current SDKs this is Java 11 or Java 21). |
 | 6 | Apache Maven 3.x is installed | Run `mvn -version` | Used to build and deploy the custom code. |
 | 7 | Docker is installed (recommended path for running ClamAV) | Run `docker --version` | If you cannot use Docker, see the native-install note in Step 1. |
 | 8 | You have, or can create, an AEM Maven project to hold custom code | See Step 2 | Step 2 creates one if you do not have it. |
-| 9 | You have downloaded the **latest available build** of the AEM Forms add-on SDK, which bundles the Early Access dependency that provides the `com.adobe.forms.common.service` interfaces | Download `aem-forms-addon-sdk-<version>.zip` from the [Adobe Software Distribution portal](https://experience.adobe.com/#/downloads) (requires Early Adopter Program entitlement) | **Required.** This dependency is not published to a public Maven repository — it's extracted from the SDK download. Earlier builds may not include it. See Step 3. |
+| 9 | You have downloaded the **latest available build** of the AEM Forms add-on SDK, which bundles the Early Access dependency that provides the `com.adobe.forms.common.service` interfaces | Download `aem-forms-addon-sdk-<version>.zip` from the [Adobe Software Distribution portal](https://experience.adobe.com/#/downloads) (requires Early Adopter Program entitlement) | **Required.** This dependency is not published to a public Maven repository; it's extracted from the SDK download. Earlier builds may not include it. See Step 3. |
 
 ### Values you will substitute {#substitute-values}
 
@@ -48,7 +48,7 @@ Wherever you see these placeholders, replace them with your own values:
 
 * `<PROJECT_ROOT>`: the folder of your AEM Maven project.
 * `<APP_ID>`: your project's application id or bundle module name (for example, `mysite`).
-* `<SDK_DEPENDENCY_VERSION>`: the `adobe-xfaforms-common` version bundled in the SDK you downloaded (the group id and artifact id are fixed — see Step 3).
+* `<SDK_DEPENDENCY_VERSION>`: the `adobe-xfaforms-common` version bundled in the SDK you downloaded (the group id and artifact id are fixed; see Step 3).
 
 >[!NOTE]
 >
@@ -139,9 +139,9 @@ If you do not have one, create a project with the AEM Project Archetype:
 
 ## Step 3: Add the Early Access dependency {#step-3-dependency}
 
-Your code compiles against the `FileAttachmentValidator` interface, which comes from `com.adobe.forms.foundation:adobe-xfaforms-common` (assumption #9). This dependency isn't published to a public Maven repository — it ships bundled inside the AEM Forms add-on SDK, so you extract it from there and install it into your local Maven repository.
+Your code compiles against the `FileAttachmentValidator` interface, which comes from `com.adobe.forms.foundation:adobe-xfaforms-common` (assumption #9). This dependency isn't published to a public Maven repository. It ships bundled inside the AEM Forms add-on SDK, so you extract it from there and install it into your local Maven repository.
 
-1. Download the **latest available build** of `aem-forms-addon-sdk-<version>.zip` from the [Adobe Software Distribution portal](https://experience.adobe.com/#/downloads) (requires Early Adopter Program entitlement). Always use the latest build — earlier builds may not include this dependency yet.
+1. Download the **latest available build** of `aem-forms-addon-sdk-<version>.zip` from the [Adobe Software Distribution portal](https://experience.adobe.com/#/downloads) (requires Early Adopter Program entitlement). Always use the latest build; earlier builds may not include this dependency yet.
 
 1. Extract the dependency jar. The SDK zip contains a feature archive (`.far`), and the jar is bundled inside that:
 
@@ -156,7 +156,7 @@ Your code compiles against the `FileAttachmentValidator` interface, which comes 
    unzip -p addon.far "com/adobe/forms/foundation/adobe-xfaforms-common/<version>/adobe-xfaforms-common-<version>.jar" > adobe-xfaforms-common.jar
    ```
 
-1. Install the extracted jar into your local Maven repository so `pom.xml` can resolve it. Include `-DgeneratePom=true` — the jar embeds its own internal Adobe build POM with a parent reference your project can't resolve, and this flag replaces it with a clean, self-contained one:
+1. Install the extracted jar into your local Maven repository so `pom.xml` can resolve it. Include `-DgeneratePom=true`: the jar embeds its own internal Adobe build POM with a parent reference your project can't resolve, and this flag replaces it with a clean, self-contained one:
 
    ```
    mvn install:install-file -Dfile=adobe-xfaforms-common.jar -DgroupId=com.adobe.forms.foundation -DartifactId=adobe-xfaforms-common -Dversion=<version> -Dpackaging=jar -DgeneratePom=true
@@ -335,7 +335,7 @@ Your code compiles against the `FileAttachmentValidator` interface, which comes 
    http://localhost:4502/system/console/components
    ```
 
-   This page has no built-in search box — with 5,000+ components listed, use your browser's own find-in-page (Cmd+F or Ctrl+F) and search for `ClamAVFileAttachmentValidator`.
+   This page has no built-in search box: with 5,000+ components listed, use your browser's own find-in-page (Cmd+F or Ctrl+F) and search for `ClamAVFileAttachmentValidator`.
 
    **Expected result:** the component is listed and its state is **active** (or **satisfied**). If it is unsatisfied, see Troubleshooting.
 
@@ -351,7 +351,7 @@ Tell the validator where `clamd` is. For local development the defaults (`localh
    http://localhost:4502/system/console/configMgr
    ```
 
-1. This page also has no built-in search box — use your browser's find-in-page (Cmd+F or Ctrl+F) for **ClamAV File Attachment Scanner** and open it.
+1. This page also has no built-in search box: use your browser's find-in-page (Cmd+F or Ctrl+F) for **ClamAV File Attachment Scanner** and open it.
 
 1. Confirm or set:
 
@@ -371,7 +371,7 @@ Tell the validator where `clamd` is. For local development the defaults (`localh
 
 ## Step 7: Add the validator field to the form dialog {#step-7-dialog-field}
 
-The **File Attachment Virus Scanner / Validator** field does not exist in the out-of-the-box Adaptive Form Container dialog — for Core Components-based forms, you add it once, in your own project. This is a one-time step; you don't repeat it if you later add more validators.
+The **File Attachment Virus Scanner / Validator** field does not exist in the out-of-the-box Adaptive Form Container dialog. For Core Components-based forms, you add it once, in your own project. This is a one-time step; you don't repeat it if you later add more validators.
 
 1. If your `formcontainer` proxy component doesn't already exist, create it at:
 
@@ -429,9 +429,9 @@ The **File Attachment Virus Scanner / Validator** field does not exist in the ou
    </jcr:root>
    ```
 
-   This only defines the one new field, mirroring the real dialog's node names down to the insertion point — it does not redefine or replace any of the existing Submission tab fields. See [Add the validator field to the form dialog](/help/forms/scan-file-attachments-custom-validator.md#add-dialog-field) in the companion article for why this works.
+   This only defines the one new field, mirroring the real dialog's node names down to the insertion point. It does not redefine or replace any of the existing Submission tab fields. See [Add the validator field to the form dialog](/help/forms/scan-file-attachments-custom-validator.md#add-dialog-field) in the companion article for why this works.
 
-1. Add the datasource servlet that lists your registered validators. It's identical regardless of which validator engine you're using — see [Add the validator field to the form dialog](/help/forms/scan-file-attachments-custom-validator.md#add-dialog-field) in the companion article for what it does and why. Create it at:
+1. Add the datasource servlet that lists your registered validators. It's identical regardless of which validator engine you're using; see [Add the validator field to the form dialog](/help/forms/scan-file-attachments-custom-validator.md#add-dialog-field) in the companion article for what it does and why. Create it at:
 
    ```
    <PROJECT_ROOT>/core/src/main/java/com/example/forms/security/FileAttachmentValidatorDataSourceServlet.java
@@ -506,7 +506,7 @@ The **File Attachment Virus Scanner / Validator** field does not exist in the ou
 
    Replace `<APP_ID>` in both the dialog XML and the servlet's `resourceTypes` with your project's actual application ID (matching assumption #4), and adjust the package name if yours differs from Step 4.
 
-1. Build and deploy both changes. You changed content (the dialog) and code (the servlet), so use both profiles together — `autoInstallPackage` alone only deploys the content and leaves the servlet's bundle un-redeployed:
+1. Build and deploy both changes. You changed content (the dialog) and code (the servlet), so use both profiles together: `autoInstallPackage` alone only deploys the content and leaves the servlet's bundle un-redeployed.
 
    ```
    cd <PROJECT_ROOT>
@@ -517,7 +517,7 @@ The **File Attachment Virus Scanner / Validator** field does not exist in the ou
 
 >[!NOTE]
 >
->You might register more than one validator over time — for example, one per antivirus engine, or several differently configured instances of the same engine. Nothing here needs to change for that: every registered `FileAttachmentValidator` shows up in the drop-down automatically because each has its own `getFileAttachmentValidatorName()`, and `emptyText="None"` keeps "no validator" as the default so existing forms are unaffected until you explicitly choose one.
+>You might register more than one validator over time, for example one per antivirus engine, or several differently configured instances of the same engine. Nothing here needs to change for that: every registered `FileAttachmentValidator` shows up in the drop-down automatically because each has its own `getFileAttachmentValidatorName()`, and `emptyText="None"` keeps "no validator" as the default so existing forms are unaffected until you explicitly choose one.
 
 ## Step 8: Create the sample Adaptive Form {#step-8-form}
 
@@ -531,11 +531,11 @@ Now create a simple form with a file-upload field.
 
 1. Select **Create** (top right), then **Adaptive Form**.
 
-1. Pick a template from the gallery. The foundation isn't a separate question — it's part of the template you pick, shown as a small subtitle under each template's name (for example, **Adaptive Form (Core Components)**).
+1. Pick a template from the gallery. The foundation isn't a separate question: it's part of the template you pick, shown as a small subtitle under each template's name (for example, **Adaptive Form (Core Components)**).
 
    >[!IMPORTANT]
    >
-   >Several templates are all named **Blank Form** — one for Core Components, one for Foundation Components, one for Edge Delivery Services. Picking the wrong one is easy to miss and fails silently: the rest of this tutorial still appears to work, but the File Attachment Virus Scanner / Validator field never gets invoked, because that pipeline only exists for Core Components-based forms. Confirm the subtitle reads **Adaptive Form (Core Components)** before continuing.
+   >Several templates are all named **Blank Form**: one for Core Components, one for Foundation Components, one for Edge Delivery Services. Picking the wrong one is easy to miss and fails silently: the rest of this tutorial still appears to work, but the File Attachment Virus Scanner / Validator field never gets invoked, because that pipeline only exists for Core Components-based forms. Confirm the subtitle reads **Adaptive Form (Core Components)** before continuing.
 
 1. In **Properties**, set:
 
@@ -570,7 +570,7 @@ Now create a simple form with a file-upload field.
 
 1. Find the **File Attachment Virus Scanner / Validator** drop-down list and select **ClamAV Scanner**.
 
-   >This field and its list of options came from Step 7 — the dialog extension and datasource servlet you deployed to your own project. The entry is the name returned by `getFileAttachmentValidatorName()` in your code. If you changed `VALIDATOR_NAME`, select that name instead.
+   >This field and its list of options came from Step 7: the dialog extension and datasource servlet you deployed to your own project. The entry is the name returned by `getFileAttachmentValidatorName()` in your code. If you changed `VALIDATOR_NAME`, select that name instead.
 
    >[!IMPORTANT]
    >
@@ -610,9 +610,9 @@ Test both outcomes.
 
 1. In the form, attach `eicar.txt` and select **Submit**.
 
-   **Expected result:** the submission is blocked. How the rejection is surfaced varies by the form's configured **Submit action** — a standard thank-you-page flow typically shows an inline error on the file field, while **Submit to REST endpoint** (this tutorial's sample form uses this) tends to show a generic submission-failed message instead of a field-level one. Either way, the form does not submit.
+   **Expected result:** the submission is blocked. How the rejection is surfaced varies by the form's configured **Submit action**: a standard thank-you-page flow typically shows an inline error on the file field, while **Submit to REST endpoint** (this tutorial's sample form uses this) tends to show a generic submission-failed message instead of a field-level one. Either way, the form does not submit.
 
-1. Confirm the validator actually ran and rejected the file — check the AEM error log, which is the reliable way to see what happened regardless of how the failure was displayed in the browser:
+1. Confirm the validator actually ran and rejected the file. Check the AEM error log, which is the reliable way to see what happened regardless of how the failure was displayed in the browser:
 
    ```
    <AEM_SDK_FOLDER>/crx-quickstart/logs/error.log
@@ -626,13 +626,13 @@ Test both outcomes.
 
 **`PONG` not returned in Step 1.** `clamd` is not ready or the port is not published. Check `docker logs clamav` for database-load completion, and confirm the container maps port `3310` (`docker ps`).
 
-**Step 2's archetype command fails with `Unsupported class file major version...`.** Your default `java`/`mvn` is running on a newer JDK than assumption #5 allows — the archetype's post-generation script can't parse class files from Java versions newer than 21. Point `JAVA_HOME` at a Java 11 or 21 installation and re-run the command. If the first attempt already partially generated a project (mismatched module folders, missing files), delete that output directory before retrying rather than re-running in place.
+**Step 2's archetype command fails with `Unsupported class file major version...`.** Your default `java`/`mvn` is running on a newer JDK than assumption #5 allows: the archetype's post-generation script can't parse class files from Java versions newer than 21. Point `JAVA_HOME` at a Java 11 or 21 installation and re-run the command. If the first attempt already partially generated a project (mismatched module folders, missing files), delete that output directory before retrying rather than re-running in place.
 
 **Project does not compile (cannot find `FileAttachmentValidator`).** The Early Access dependency (Step 3) is missing, wasn't installed to your local Maven repository, or `pom.xml`'s version doesn't match the jar you installed. Re-check the version with `unzip -l addon.far | grep adobe-xfaforms-common`.
 
 **Component is unsatisfied in Step 5.** Open `http://localhost:4502/system/console/components`, find `ClamAVFileAttachmentValidator`, and read the reason. A missing interface usually means the dependency is not present at runtime. Confirm your AEM environment has the Early Access feature.
 
-**The File Attachment Virus Scanner / Validator field doesn't appear on the Submission tab at all (Step 9).** Confirm the Step 7 `ui.apps` package (the dialog extension and datasource servlet) actually deployed — check `http://localhost:4502/system/console/components` for `FileAttachmentValidatorDataSourceServlet`. Also confirm the `FT_FORMS-23497` feature toggle is enabled for your program; it gates the underlying `FileAttachmentValidatorManager` capability the datasource depends on.
+**The File Attachment Virus Scanner / Validator field doesn't appear on the Submission tab at all (Step 9).** Confirm the Step 7 `ui.apps` package (the dialog extension and datasource servlet) actually deployed. Check `http://localhost:4502/system/console/components` for `FileAttachmentValidatorDataSourceServlet`. Also confirm the `FT_FORMS-23497` feature toggle is enabled for your program; it gates the underlying `FileAttachmentValidatorManager` capability the datasource depends on.
 
 **The field appears, but ClamAV Scanner isn't in the drop-down (Step 9).** Confirm the `ClamAVFileAttachmentValidator` component is active, that `getFileAttachmentValidatorName()` returns a unique non-empty value, and reload the form editor after deploying.
 
@@ -640,7 +640,7 @@ Test both outcomes.
 
 **Scans time out or `INSTREAM size limit exceeded`.** The file is too large for the timeout or for `clamd`'s `StreamMaxLength`. Increase the timeout in Step 6, raise `StreamMaxLength` in `clamd.conf`, and set a maximum file size on the File Attachment component so oversized files are stopped earlier.
 
-**EICAR submission shows a generic error, not an inline field message (Step 10).** This is expected with a **Submit to REST endpoint** submit action — it doesn't change whether the file was actually rejected. Check `error.log` for the validator's rejection message to confirm.
+**EICAR submission shows a generic error, not an inline field message (Step 10).** This is expected with a **Submit to REST endpoint** submit action; it doesn't change whether the file was actually rejected. Check `error.log` for the validator's rejection message to confirm.
 
 ## Frequently asked questions {#faq}
 
