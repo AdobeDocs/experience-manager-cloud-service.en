@@ -14,7 +14,7 @@ After [creating](#create-a-content-fragment-cloud-configuration) and [defining](
 
 >[!IMPORTANT]
 >
->Content Fragment Cloud Configurations are currently in Limited Availability.
+>The Content Reference Asset Selector within Content Fragment Cloud Configurations is currently in Limited Availability.
 >
 >If you want to participate you can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to request enablement for your deployment.
 
@@ -141,6 +141,12 @@ Use this option to configure the Rich Text Editor (RTE):
 >If a Cloud Configuration (with options selected) is already applied, and a new option is added to that Cloud Configuration, then the new option must be explicitly selected to be visible and available in the RTE toolbar of the editor.
 
 ### Configure the Content Reference Asset Selector{#configure-the-content-reference-asset-selector}
+
+>[!IMPORTANT]
+>
+>The Content Reference Asset Selector within Content Fragment Cloud Configurations is currently in Limited Availability.
+>
+>If you want to participate you can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to request enablement for your deployment.
 
 Use this option to configure the Asset Selector for **Content Reference** fields:
 
