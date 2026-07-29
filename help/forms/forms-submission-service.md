@@ -5,6 +5,7 @@ keywords: Forms Submission Service, Edge Delivery Services forms, spreadsheet in
 feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
 ---
 # Forms Submission Service for Edge Delivery Services

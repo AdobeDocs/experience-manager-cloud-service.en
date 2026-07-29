@@ -3,6 +3,7 @@ title: How to manage metadata in Assets view?
 description: Learn how to manage metadata in Assets view. Better metadata management makes an asset more accessible, easier to manage, and complete.
 role: User, Leader, Admin, Developer
 contentOwner: AG
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
 ---
@@ -238,7 +239,8 @@ Execute the following steps to edit a metadata form:
 
 * Contact [Customer Care](https://experienceleague.adobe.com/?support-solution=General#support)
 
-<!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
+<!--
+ TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
 
 * Select a metadata form and click **[!UICONTROL Copy]** from the toolbar, provide a name, and click **[!UICONTROL Confirm]**.
@@ -246,7 +248,8 @@ To reuse an existing form to create a form, do one of these:
 * Click **[!UICONTROL Create]**, select **[!UICONTROL Use existing form structure as template]** option, and select an existing form. 
 -->
 
-<!-- TBD: Queries for PM and engg.
+<!--
+ TBD: Queries for PM and engg.
 
 Can we edit the existing metadata in any form?
 
@@ -261,9 +264,29 @@ Is there a detailed metadata tab. Where do the other details of an asset go?
 How can one search based strictly on the metadata. Similar to AEM Assets GQL queries.
 -->
 
-<!-- TBD: Link to related articles if any.
+<!--
+ TBD: Link to related articles if any.
 
 >[!MORELIKETHIS]
 >
 >* [Search assets](search.md).
 -->
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

@@ -3,6 +3,7 @@ title: How to list forms on an Adobe Experience Manager Sites page using Forms P
 description: Learn how to list forms on an AEM Sites page.
 feature: Adaptive Forms, Core Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 37e3ddd9-b20d-4156-b52e-64e36c455184
 ---
 # List forms on the Sites page

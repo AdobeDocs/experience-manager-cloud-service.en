@@ -3,6 +3,7 @@ title: Auto-tag assets with [!DNL Adobe AI] smart service
 description: Tag assets with an artificially intelligent service that applies contextual and descriptive business tags.
 feature: Smart Tags,Tagging
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 ---
 # Smart Tags for AEM Assets {#using-smart-tags}
@@ -13,7 +14,7 @@ Smart Tags are keywords that not only appear in the text but also best describe 
 
 For instance, words arranged alphabetically in a dictionary are easier to find than randomly scattered ones. Tagging serves a similar purpose. It organizes assets according to business taxonomy, ensuring that the most relevant ones appear in search results. For example, a car manufacturer can tag car images with model names, so that only relevant images are displayed when designing a promotional campaign. Whether tagging "runners" or "running shoes," users do not need to worry about typos, spelling variations, or alternate search terms—Smart Tags recognize them all.
 
-In the background, the functionality uses the artificially intelligent framework of [Adobe AI](https://business.adobe.com/ai/adobe-genai.html) automatically applies Smart Tags to uploaded assets—by default—along with text aligned to the business taxonomy.
+In the background, the functionality uses the artificially intelligent framework of [Adobe AI](https://business.adobe.com/ai/adobe-genai.html), which automatically applies Smart Tags to uploaded assets—by default—along with text aligned to the business taxonomy.
 
 ## Prerequisites and configuration {#smart-tags-prereqs-config}
 
@@ -21,7 +22,7 @@ Smart Tags is automatically provisioned for [!DNL Adobe Experience Manager] as a
 
 ## Smart Tags workflow {#smart-tags-workflow}
 
-[!DNL Adobe AI] powered smart tagging uses artificial intelligence models to analyze content and add tags to the assets. Thereby-reducing time for DAM users to deliver rich experiences to their customers. The Smart Tags are displayed in descending order of their [confidence score](#confidence-score) in asset properties.
+[!DNL Adobe AI] powered smart tagging uses artificial intelligence models to analyze content and add tags to the assets, thereby reducing time for DAM users to deliver rich experiences to their customers. The Smart Tags are displayed in descending order of their [confidence score](#confidence-score) in asset properties.
 
 * **Image-based assets**
   For images, the Smart Tags are based on some visual aspect. Images in many formats are tagged using smart content services. Smart Tags are applied to the [supported file types](#supported-file-formats) that generate renditions in JPG and PNG format.
@@ -29,7 +30,7 @@ Smart Tags is automatically provisioned for [!DNL Adobe Experience Manager] as a
   <!-- ![Image Smart Tag](assets/image-smart-tag.png)-->
 
 * **Video-based assets**
-  For video-based assets, tagging is enabled by default in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. Likewise Image and text based tags, videos are also auto-tagged when you upload new videos or reprocess existing ones. [!DNL Adobe AI] generates two sets of tags for a video: One set corresponds to objects, scenes, and attributes in that video, whereas, the other set relates to actions such as drinking, running, and jogging. Also check [opt out video smart tagging](#opt-out-video-smart-tagging).
+  For video-based assets, tagging is enabled by default in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. As is the case with Image and text based tags, videos are also auto-tagged when you upload new videos or reprocess existing ones. [!DNL Adobe AI] generates two sets of tags for a video: One set corresponds to objects, scenes, and attributes in that video, and the other set relates to actions such as drinking, running, and jogging. Also check [opt out video smart tagging](#opt-out-video-smart-tagging).
 
 * **Text-based assets** 
   For supported assets, [!DNL Experience Manager] already extracts the text, which is then indexed and is used to search for the assets. However, Smart Tags based on keywords in the text provide a dedicated, structured, and higher priority search facet. The latter helps improve asset discovery as compared to a search index.
@@ -82,7 +83,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## Untagged Assets in DAM {#smart-tag-existing-assets}
 
-The existing or older assets in DAM are not smart tagged automatically. You need to [Reprocess](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) Assets manually to generate Smart Tags for them. Once the process completes, navigate to the [!UICONTROL Properties] page of any asset within the folder. The automatically added tags are seen in [!UICONTROL Smart Tags] section in [!UICONTROL Basic] tab. These applied Smart Tags are sorted in descending order of [confidence score](#confidence-score).
+The existing or older assets in DAM are not smart tagged automatically. You need to [Reprocess](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) Assets manually to generate Smart Tags for them. Once the process completes, navigate to the [!UICONTROL Properties] page of any asset within the folder. The automatically added tags are seen in the [!UICONTROL Smart Tags] section of the [!UICONTROL Basic] tab. These applied Smart Tags are sorted in descending order of [confidence score](#confidence-score).
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -95,11 +96,12 @@ To smart tag assets, or folders (including subfolders) of assets that exist in a
 
 1. Select the assets and click ![Reprocess assets icon](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Reprocess Assets] icon and select the [!UICONTROL Full Process] option.
 
-![Reprocess assets to add tags to videos existing DAM repository](assets/reprocess.gif)-->
+![Reprocess assets to add tags to videos existing DAM repository](assets/reprocess.gif)
+-->
 
 ## Confidence Score {#confidence-score}
 
-Your asset search results are ranked based on the confidence scores, which generally improve search results beyond what an inspection of the assigned tags of any asset suggests. Inaccurate tags often have low confidence scores so they seldom appear at the top of the Smart Tags list for assets.
+Your asset search results are ranked based on the confidence scores, which generally improve search results beyond what an inspection of the assigned tags of any asset suggests. Inaccurate tags often have low confidence scores, so they seldom appear at the top of the Smart Tags list for assets.
 <!--
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] applies a minimum confidence threshold for object and action-smart tags to avoid having too many tags for each asset, which slows down indexing. 
 
@@ -271,3 +273,23 @@ These models are not always perfect at identifying tags. The current version of 
 You can [opt out Smart Tagging](#opt-out-smart-tagging) anytime you want to discontinue.
 
 +++
+
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

@@ -4,17 +4,11 @@ description: Dynamic Page Numbering in Interactive Communication Editor allows a
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 9f29da7d-72ad-4737-9ae3-d5cdc4f5ed25
 ---
 # Dynamic Page Numbering in Interactive Communication Editor
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
-
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
 
 ## Introduction
 
@@ -72,3 +66,4 @@ Page 2 of 5
 - Automates page numbering without manual intervention.
 
 - Maintains consistency across all pages linked to a master page.
+

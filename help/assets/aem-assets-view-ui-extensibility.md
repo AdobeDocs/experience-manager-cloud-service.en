@@ -3,6 +3,7 @@ title: Enable UI extensibility in [!DNL AEM Assets View]
 description: Learn about the UI Extensibility capability of [!DNL AEM Assets View]. [!DNL AEM Assets View] UI enables adding custom UI components to meet specific business needs.
 feature: App Builder
 role: User, Developer
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
 ---
 # Enable UI extensibility in [!DNL AEM Assets View] {#AEM-Assets-View-UI-Extensibility}
@@ -54,10 +55,44 @@ AEM Assets view enables you to customize the following actions in Browse view:
 
 * Customize the actions that display when you click More options (...) in the asset card.
 
-* Customize the actions available in the Header menu.
-
 For more information, see [Browse View](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/).
+
+## Customize header menu in Assets view {#customize-header-menu-assets-view}
+
+AEM Assets view enables you to customize the header menu. The header menu refers to the buttons at the top right of the browse and details screens. You can:
+
+* Add custom buttons to the header menu before the built-in header menu buttons.
+
+* Hide built-in header menu buttons for the current browse or details context.
+
+* Override built-in header menu button clicks so your extension handles the action instead of the default handler.
+
+In browse view, header menu customization is context-aware across assets, search, trash, recently viewed, and collections. You can add custom buttons in any of these contexts. Built-in buttons such as **Create folder** and **Add assets** (in the assets context) and **Create collection** (in collections) can be hidden or overridden where they are available.
+
+In details view, you can add custom buttons and customize built-in actions such as **Assign tasks** and **Download**.
+
+For more information, including API references and code examples, see [Browse View](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/#custom-header-menu-buttons) and [Details View](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/details-view/#custom-header-menu-buttons-in-details-view).
 
 ## Open custom dialogs in Assets view {#open-custom-dialogs-assets-view}
 
 Assets view also provides the ability to open custom dialogs with text of your choice. You can also add links to the text. For more information, see [Modal API](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/#modal-api).
+
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

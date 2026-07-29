@@ -3,6 +3,7 @@ title: How to configure Salesforce out of the box form data models for Adaptive 
 description: Learn how to integrate Salesforce with Adaptive Forms.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 184db05b-7237-4dce-8059-03c39b93d7d7
 ---
 # Configure Salesforce for AEM Forms {#configure-azure-storage}

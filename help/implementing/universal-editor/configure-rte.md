@@ -5,6 +5,7 @@ feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
 ---
+
 # Configuring the RTE for the Universal Editor {#configure-rte}
 
 Understand how you can configure the rich text editor (RTE) in the Universal Editor.
@@ -17,7 +18,7 @@ This RTE is configurable using [component filters.](/help/implementing/universal
 
 >[!NOTE]
 >
->When you start a Universal Editor project, all rich text features that your backend supports (AEM with Edge Delivery or headless implementation) are automatically active.
+>When you start a Universal Editor project, all rich text features that your backend supports (AEM with Edge Delivery or headless implementation) are automatically active and available in [the modal editor window of the RTE.](/help/sites-cloud/authoring/universal-editor/authoring.md#modal-editor)
 >
 >* You can deactivate those options you do not need.
 >* Activating options that are not compatible with your project type is not supported.
@@ -70,7 +71,7 @@ The toolbar configuration controls which editing options are available in the UI
     // List options
     "list": ["bullet_list", "ordered_list"],
     // Content insertion
-    "insert": ["link", "unlink", "image"],
+    "insert": ["link", "unlink", "image", "special_characters"],
     // Superscript/subscript
     "sr_script": ["superscript", "subscript"],
     // Editor utilities
@@ -81,9 +82,29 @@ The toolbar configuration controls which editing options are available in the UI
 }
 ```
 
-## Actions Configuration {#actions}
+## Action Configuration {#action}
 
 The actions configuration allows you to customize the behavior and appearance of individual editing actions. These are the available sections.
+
+### Common Action Options {#common-action-options}
+
+Most actions support the following common options:
+
+* `shortcut?`: string - Overrides the default keyboard shortcut for the action (if any)
+* `label?`: string - Overrides the label used for the action in UI
+* `hideInline?`: boolean - When `true`, hides this action from the in-context (inline) RTE editor toolbar
+
+```json
+{
+  "actions": {
+    "bold": {
+      "label": "Bold",
+      "shortcut": "Mod-B",
+      "hideInline": true
+    }
+  }
+}
+```
 
 ### Format Actions {#format}
 
@@ -128,6 +149,56 @@ List actions support content wrapping to control HTML structure. The following s
   }
 }
 ```
+
+### Table Actions {#table-actions}
+
+Table actions support content wrapping to control HTML structure in table cells:
+
+```json
+{
+  "actions": {
+    "table": {
+      "wrapInParagraphs": false, // <td>content</td> (default)
+      "shortcut": "Mod-Alt-T",   // Custom shortcut
+      "label": "Insert Table"    // Custom label
+    }
+  }
+}
+```
+
+#### Table Configuration Options {#table-configuration-options}
+
+* `wrapInParagraphs`: `false` (default) - Table cells contain unwrapped text content
+* `wrapInParagraphs`: `true` - Table cells wrap content in paragraph tags
+
+Samples:
+
+When `wrapInParagraphs`: `false`:
+
+```html
+<!-- Single line -->
+<td>Cell content</td>
+
+<!-- Multiple paragraphs get <br> separation -->
+<td>Line 1<br />Line 2</td>
+```
+
+When `wrapInParagraphs`: `true`:
+
+```html
+<!-- Single paragraph -->
+<td><p>Cell content</p></td>
+
+<!-- Multiple paragraphs preserved -->
+<td>
+  <p>Line 1</p>
+  <p>Line 2</p>
+</td>
+```
+
+>[!NOTE]
+>
+>When unwrapping paragraphs (`wrapInParagraphs`: `false`), the sanitizer automatically inserts `<br>` tags between multiple paragraphs to preserve visual line breaks. This follows HTML standards and common practice across major rich text editors.
 
 ### Link Actions {#link}
 
@@ -215,6 +286,82 @@ Indentation has a feature-level configuration that controls the scope of indenta
 >
 >List nesting via Tab/Shift+Tab keys works independently of general indentation settings.
 
+### Special Characters {#special-characters}
+
+The `special_characters` insert action opens a character picker popover for inserting special characters (symbols, math operators, currency signs, punctuation, arrows, etc.) at the cursor position.
+
+```json
+{
+  "toolbar": {
+    "insert": ["link", "unlink", "image", "table", "special_characters"],
+    "sections": ["insert"],
+  },
+  "actions": {
+    "special_characters": {
+      "label": "Special Characters"
+    }
+  }
+}
+```
+
+A default set of 44 commonly-used characters is included out-of-the-box. The character list can be customized through two configuration options:
+
+* `appendCharacters` - Add characters to the default set
+* `characters` - Replace the default set entirely
+
+Each character entry has `character` (the Unicode character) and `title` (tooltip / accessible name).
+
+#### Append Characters to Defaults {#append-special-characters}
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "appendCharacters": [
+        { "character": "\u2605", "title": "Black star" },
+        { "character": "\u2764", "title": "Heavy black heart" },
+      ];
+    }
+  }
+}
+```
+
+#### Replace Default Special Characters {#replace-special-characters}
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "characters": [
+        { "character": "\u00A9", "title": "Copyright sign" },
+        { "character": "\u00AE", "title": "Registered sign" },
+        { "character": "\u2122", "title": "Trade mark sign" },
+      ];
+    }
+  }
+}
+```
+
+#### Both Options Together {#both-special-character-options}
+
+This example uses `characters` as the base, then appends additional characters using `appendCharacters`.
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "characters": [
+        { "character": "\u00A9", "title": "Copyright sign" },
+        { "character": "\u00AE", "title": "Registered sign" }
+      ],
+      "appendCharacters": [
+        { "character": "\u2605", "title": "Black star" }
+      ]
+    }
+  }
+}
+```
+
 ### Paste as Text {#paste-as-text}
 
 The `paste_text` editor action enables a standard paste-as-plain-text workflow.
@@ -287,7 +434,9 @@ The following is an example of a complete configuration.
         ],
         "insert": [
           "link",
-          "unlink"
+          "unlink",
+          "image",
+          "special_characters"
         ],
         "sections": [
           "format",
@@ -324,6 +473,17 @@ The following is an example of a complete configuration.
         },
         "unlink": {
           "label": "Remove Link"
+        },
+        // Image actions with picture wrapping
+        "image": {
+          "wrapInPicture": false, // Use <img> tag instead of <picture>
+          "shortcut": "Mod-Shift-I",
+          "label": "Insert Image",
+        },
+        // Special characters with custom additions
+        "special_characters": {
+          "label": "Special Characters",
+          "appendCharacters": [{ "character": "\u2605", "title": "Black star" }],
         },
         // Other actions with basic customization
         "h1": {
@@ -481,3 +641,20 @@ Shortcuts use the format `Mod-Key`(s) where:
 
 * `Mod` = `Cmd` on Mac, `Ctrl` on Windows/Linux
 * Examples: `Mod-B`, `Mod-Shift-8`, `Mod-Alt-1`
+
+## Unsupported HTML {#unsupported-html}
+
+By default, unknown HTML tags are stripped when parsed by the editor. To preserve them, opt in via the `unsupportedHtml` configuration option:
+
+```javascript
+const rteConfig = {
+  unsupportedHtml: true, // preserve unknown HTML tags (default: false)
+};
+```
+
+|Value|Behavior|
+|---|---|
+|`false` (default)|Unknown HTML tags are dropped during parsing.|
+|`true`|Unknown HTML tags are wrapped in a custom unsupported-block node so content can round-trip safely.|
+
+When enabled, the editor renders unsupported nodes with a `rte-unsupported-block` class. Consumer apps should provide the styling for this class (e.g., border, padding, background). The tag label inside the block uses `rte-unsupported-label`, which can also be customized.

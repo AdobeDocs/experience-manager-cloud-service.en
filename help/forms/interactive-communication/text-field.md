@@ -4,17 +4,11 @@ description: Text Field component in Interactive Communication Editor  in AEM Fo
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 6bb41cf2-8a9d-499c-979b-b0ee7d092e11
 ---
 # Text Field component in Interactive Communication Editor 
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
-
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
 
 ## 1. Introduction 
 
@@ -127,3 +121,12 @@ Authors can place the field in subforms or layout grids for alignment and attach
 - Bind directly to the data model whenever possible for simpler maintenance. 
 
 The Text Field component in the IC editor is a versatile building block that streamlines data capture. When configured thoughtfully, with well-chosen typography, clear labels, proper validation, and solid data binding, it delivers a seamless, user-friendly experience and reliable data for downstream processing.
+
+## See also
+
+- [Text Box Component](/help/forms/interactive-communication/text-box.md)
+- [Numeric Field Component](/help/forms/interactive-communication/numeric-field.md)
+- [Unbound Variable Component](/help/forms/interactive-communication/unbound-variable.md)
+- [Configure Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/configure-data-binding.md)
+- [Use the Rule Editor in Interactive Communication Editor](/help/forms/interactive-communication/use-the-rule-editor.md)
+

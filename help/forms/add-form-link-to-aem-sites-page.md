@@ -3,6 +3,7 @@ title: How to add forms links on the AEM Sites page using the Link Forms Portal 
 description: Learn how to add forms links to the AEM Sites page.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: a55d0776-8827-46cc-9625-5d6f5f6bda3b
 ---
 # Add form links to Sites page

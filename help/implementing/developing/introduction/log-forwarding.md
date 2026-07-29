@@ -73,7 +73,7 @@ Customers with a license with a logging vendor or who host a logging product can
       <td>Sumo Logic</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td style="background-color: #ffb3b3;">Future</td>
+      <td>Yes</td>
     </tr>
   </tbody>
 </table>
@@ -112,7 +112,7 @@ This article is organized in the following way:
          host: "splunk-host.example.com"
          token: "${{SPLUNK_TOKEN}}"
          index: "AEMaaCS"
-   
+
    ```
 
 1. Place the file somewhere under a top level folder named *config* or similar, as described in [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure).
@@ -138,7 +138,7 @@ It is possible to set different values between CDN logs and AEM logs (including 
           cdn:
             enabled: true
             token: "${{SPLUNK_TOKEN_CDN}}"
-            index: "AEMaaCS_CDN"   
+            index: "AEMaaCS_CDN"
    ```
 
    Another scenario is to disable either forwarding of the CDN logs or AEM logs (including Apache/Dispatcher). For example, to only forward the CDN logs, one can configure the following:
@@ -199,8 +199,10 @@ Use the table below to see what the requirements are for Advanced Networking and
 >Whether your logs appear from a single IP address is determined by your choice of Advanced Networking configuration.  Dedicated Egress must be used to facilitate this.
 >
 > Advanced Networking configuration is a [two-step process](/help/security/configuring-advanced-networking.md#configuring-and-enabling-advanced-networking-configuring-enabling) requiring enablement at program and environment level.
+>
+> Per note below it is not possible to use Log Forwarding with Advanced Networking VPN connections.
 
-For AEM logs (including Apache/Dispatcher), if you have configured [Advanced Networking](/help/security/configuring-advanced-networking.md), you can use the `aem.advancedNetworking` property to forward them from a Dedicated Egress IP address or over a VPN.
+For AEM logs (including Apache/Dispatcher), if you have configured [Advanced Networking](/help/security/configuring-advanced-networking.md), you can use the `aem.advancedNetworking` property to forward them from a Dedicated Egress IP address.
 
 The example below shows how to configure logging on a standard HTTPS port with Advanced Networking.
 
@@ -282,11 +284,11 @@ See [AWS Bucket Policy Documentation](https://docs.aws.amazon.com/AmazonS3/lates
    data:
      azureBlob:
        default:
-         enabled: true       
+         enabled: true
          storageAccountName: "example_acc"
          container: "aem_logs"
          sasToken: "${{AZURE_BLOB_SAS_TOKEN}}
-         
+
    ```
 
 A SAS token should be used for authentication. It should be created from the Shared access signature page, rather than on the Shared access token page, and should be configured with these settings:
@@ -352,13 +354,13 @@ See the log entry formats under [Logging for AEM as a Cloud Service](/help/imple
    data:
      datadog:
        default:
-         enabled: true       
+         enabled: true
          host: "http-intake.logs.datadoghq.eu"
          token: "${{DATADOG_API_KEY}}"
          tags:
             tag1: value1
             tag2: value2
-         
+
    ```
 
 #### Considerations
@@ -383,7 +385,7 @@ See the log entry formats under [Logging for AEM as a Cloud Service](/help/imple
          user: "${{ELASTICSEARCH_USER}}"
          password: "${{ELASTICSEARCH_PASSWORD}}"
          pipeline: "ingest pipeline name"
-   
+
    ```
 
 #### Considerations
@@ -416,7 +418,7 @@ ctx._index = sourceType + "_" + envType + "_" + date;
          url: "https://example.com/aem_logs/aem"
          authHeaderName: "X-AEMaaCS-Log-Forwarding-Token"
          authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
-   
+
    ```
 
 #### Considerations
@@ -484,7 +486,7 @@ The "Ingest Logs" scope attribute is required for the Token.
         default:
           enabled: true
           environmentId: "${{DYNATRACE_ENVID}}"
-          token: "${{DYNATRACE_TOKEN}}"  
+          token: "${{DYNATRACE_TOKEN}}"
   ```
 
 >[!NOTE]
@@ -517,8 +519,6 @@ The "Ingest Logs" scope attribute is required for the Token.
 
 ### Sumo Logic {#sumologic}
 
-Log Forwarding to Sumo Logic supports AEM and Dispatcher Logs; CDN logs are not yet supported.
-
 When configuring Sumo Logic for data ingestion you will be presented with an "HTTP Source Address" which provides the host, receiverURI and the private key in a single string.  For example:
 
 `https://collectors.de.sumologic.com/receiver/v1/http/ZaVnC...`
@@ -538,9 +538,12 @@ You will need to copy the last section of the URL (without the preceeding `/`) a
   ```
 
 >[!NOTE]
->CDN Log support for SumoLogic is planned for the future. Please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to register interest.
+>The `index` field behavior depends on the log type:
 >
-> You will require a Sumo Logic Enterprise subscription to take advantage of the "index" field functionality.  Non-Enterprise subscriptions will have their logs routed to the `sumologic_default` partition as standard.  See the [Sumo Logic Partitioning Documentation](https://help.sumologic.com/docs/search/optimize-search-partitions/) for more information.
+>* **AEM logs (including Apache/Dispatcher)**: routed to the partition specified by `index`, provided you have a Sumo Logic Enterprise subscription. Non-Enterprise subscriptions route to the `sumologic_default` partition instead.
+>* **CDN logs**: the `index` field is ignored, as indexing is not technically supported for CDN logs forwarded to Sumo Logic. CDN logs are always routed to the `sumologic_default` partition.
+>
+>See the [Sumo Logic Partitioning Documentation](https://help.sumologic.com/docs/search/optimize-search-partitions/) for more information.
 
 ## Log Entry Formats {#log-formats}
 
@@ -583,3 +586,4 @@ It is recommended, but not required, that a configuration is deployed to all env
 >The `sourcetype` field's values sent to your Splunk index may have changed, so adjust accordingly.
 >
 >When Log Forwarding is deployed to an environment previously configured by Adobe support, you may receive duplicate logs for up to a few hours. This will eventually auto-resolve.
+

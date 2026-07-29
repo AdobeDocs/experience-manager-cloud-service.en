@@ -1,6 +1,7 @@
 ---
 title: Keyboard Shortcuts for Consoles
 description: Save time when authoring by using these keyboard shortcuts
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 solution: Experience Manager Sites
 feature: Authoring
@@ -22,7 +23,7 @@ The following shortcuts are available for the Sites, Assets, Users, Groups, Proj
 |Consoles|`?`|Keyboard shortcut help|
 ||`/`|Invoke [search](/help/sites-cloud/authoring/search.md)|
 ||`Alt+`&lt;`Number`&gt;|Toggle which [rail selector](/help/sites-cloud/authoring/basic-handling.md#rail-selector) option to view|
-||``` ` ```|Hide rail|
+|| &grave; |Hide rail|
 ||`e`|Edit|
 ||`p`|Properties|
 ||`m`|Move|

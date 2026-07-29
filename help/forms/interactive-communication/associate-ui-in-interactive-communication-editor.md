@@ -1,18 +1,16 @@
 ---
 title: Associate UI in Interactive Communication Editor
-description: Discover associate UI in Interactive Communication Editor by enabling customer-facing agent to generate personalized, compliant communications.
+description: Discover Associate UI in Interactive Communication Editor by enabling customer-facing associates to generate personalized, compliant communications.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms."
 exl-id: 9ba58659-b14c-4ebc-a6d9-e56a4b6aa48b
 ---
 # Associate UI in Interactive Communication Editor
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
-The **Associate UI** is a specialized, simplified interface built on top of Interactive Communications (IC) editor. It is designed for customer-facing professionals, such as field associates and service agents to generate personalized, compliant, and accurate communications in real time during live interactions.
+The **Associate UI** is a specialized, simplified interface built on top of Interactive Communications (IC) editor. It is designed for customer-facing professionals, such as field associates and service representatives, to generate personalized, compliant, and accurate communications in real time during live interactions.
 
 ![Find IC Doc](/help/forms/interactive-communication/assets/associate-ui-preview.png)
 
@@ -50,7 +48,7 @@ Responsible for system setup, governance, backend integrations, and user access.
 
 ### 2. Author
 
-Designs and manages the Interactive Communication using Associate UI. ß
+Designs and manages the Interactive Communication and configures it for Associate UI (including enabling Associate View and optional workflow).
 
 | Responsibility | Focus |
 |---------------|-------|
@@ -71,7 +69,7 @@ Uses the Associate UI to assist customers, update information and generate compl
 
 >[!NOTE]
 >
-> Associate must be part of the **forms-associates** group.
+> Associates must be part of the **forms-associates** group. For authors who also submit from the Associate UI on the Author instance, add them to **workflow-users** as well.
 
 ## Dynamic Use Cases
 
@@ -85,36 +83,25 @@ The Associate UI supports instant, personalized document generation, crucial for
 | **Public Sector** | Generate police verification reports, citizen service receipts, grievance acknowledgment letters, and case update summaries on-the-spot. |
 | **Government** | Create application status summaries, service approval letters, and real-time communication for welfare scheme enrollments. |
 
-## Enabling the Associate UI Workflow
+## Enabling the Associate UI
 
-Author can ollow the steps below to configure and publish an Interactive Communication (IC) for Associate UI access:
+Authors enable the Associate UI and optionally configure a workflow for submissions in **Interactive Communication Settings**:
 
->[!NOTE]
->
-> Supported components for associate: Date Field, Numeric field, Text Field, DateTimeField, DateField, Checkbox, Radio Button, Dropdown.
+1. **Enable Associate View** — In **Associate Properties**, check **Enable Associate View Editing**, then click **Apply Changes** and save the document.
+2. **Configure workflow (optional)** — In **Workflow**, turn **Configure Workflow for Update** On, select a workflow model, and optionally set a success message and redirection URL.
+3. **Configure editable fields** — Enable the fields that associates can edit and set validations.
+4. **Publish and share** — Publish the IC and share the link with associates.
 
-### Create the IC
-
-Design and configure the Interactive Communication, ensuring branding, data bindings, compliance rules, and integrations are correctly set.
-
-### Enable the Associate UI
-
-From the top action bar, enable the Associate UI option to make the IC available for associate-driven.
-
-### Enable the Associate UI in component
-
-### Configure Editable Fields
-
-In the required fields section, enable the fields that associates can edit.
-Set validations to ensure accurate and controlled data input.
-
-### Publish the IC
-
-After finalizing all configurations, publish the Interactive Communication for secure access.
-
-### Share the Published IC with Associates
-
-Provide the published IC link to the Associate, allowing them to authenticate, enter customer-specific information, and generate the final communication with valid inputs.
+For step-by-step instructions with screenshots and submission/workflow behavior (Author on Author vs Associate on Publish), see [Enable and configure Associate UI for Interactive Communications](/help/forms/interactive-communication/enable-configure-associate-ui.md). To build a workflow that generates PDF from IC submissions, see [Submission workflow for Associate UI — IC Generate PDF Output](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md).
 
 The **Associate UI** bridges the gap between structured content authoring and real-time customer engagement.  
 By combining intuitive design, robust backend configuration, and strict compliance controls, organizations can deliver **fast, accurate, and personalized communications** at scale.
+
+## See also
+
+- [Enable and configure Associate UI for Interactive Communications](/help/forms/interactive-communication/enable-configure-associate-ui.md)
+- [Configure Dropdown Options for Associate UI](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md)
+- [Configure Bound and Unbound Variables for Associate UI](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md)
+- [Integrate Associate UI in Your Application](/help/forms/interactive-communication/invoke-associate-ui.md)
+- [Submission workflow for Associate UI — IC Generate PDF Output](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
+

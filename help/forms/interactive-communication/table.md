@@ -4,17 +4,11 @@ description: Table Component in Interactive Communication Editor in AEM Forms en
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 7db24153-549a-4c36-8cb5-ab33fda8072a
 ---
 # Table Component in Interactive Communication Editor 
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
-
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
 
 ## 1. Introduction 
 
@@ -112,3 +106,10 @@ Authors can configure the number of rows and columns, apply conditional visibili
 - Use default templates to standardize tabular content across documents. 
 
 The Table Component in the IC editor is a flexible, data-friendly component designed to support structured content in your communications. With customizable layout options, styling features, and powerful data binding, it empowers authors to present information clearly and effectively.
+
+## See also
+
+- [Merge and Split Table Cells in Interactive Communication Editor](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md) — Learn how to combine adjacent cells into a single cell or split a merged cell to create flexible table layouts.
+- [Create Dynamic Table in Interactive Communication Editor](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
+- [Configure Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/configure-data-binding.md)
+

@@ -1,6 +1,7 @@
 ---
 title: The AEM Page Editor
 description: The AEM page editor is a powerful tool for authoring your content.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring

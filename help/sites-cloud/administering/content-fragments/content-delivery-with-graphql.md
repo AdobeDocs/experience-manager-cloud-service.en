@@ -3,6 +3,7 @@ title: Headless Content Delivery using Content Fragments with GraphQL
 description: Learn the basic concepts of realizing an AEM Headless CMS using Content Fragments with GraphQL for headless content delivery.
 feature: Content Fragments, GraphQL API
 role: Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 3aa7073a-6c6b-47b7-99d8-bba2d9a00af5
 solution: Experience Manager Sites
 ---
@@ -61,7 +62,7 @@ The AEM GraphQL API implementation is based on the [GraphQL Java libraries](http
 * The [Content Fragment Models](#content-fragments-models) provide the required structure by means of defined data types.
 * The [Fragment Reference](#fragment-references), available when defining a model, can be used to define additional layers of structure.
 
-![Content Fragments for use with GraphQL](assets/cf-contentdelivery-cf-use-with-graphql.png "Content Fragments for use with GraphQL")
+![Content Fragments for use with GraphQL](/help/sites-cloud/administering/content-fragments/assets/cf-contentdelivery-cf-use-with-graphql.png "Content Fragments for use with GraphQL")
 
 ### Content Fragments {#content-fragments}
 

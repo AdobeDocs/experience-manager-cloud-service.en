@@ -51,7 +51,7 @@ To add or edit an environment, a user must be a member of the **Business Owner**
 
 1. Do one of the following: 
 
-   If the **Add Environment** option is dimmed (disabled), it may be due to a lack of permissions or dependent on the licensed resources. 
+   If the **Add Environment** option is dimmed (disabled), it can be due to a lack of permissions or dependent on the licensed resources. 
 
    * On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, on the **Environments** card, click **Add Environment**.
 
@@ -63,13 +63,13 @@ To add or edit an environment, a user must be a member of the **Business Owner**
    
 1. In the **Add environment** dialog box, do the following:
    
-   * Select an [**environment type**](#environment-types). The number of available/used environments is displayed in parentheses behind the environment type name.
+   * Select an [**environment type**](#environment-types). The number of available/used environments is displayed in parentheses after the environment type name.
    * Provide an environment **Name**. The environment name cannot be changed after the environment is created.
    * Provide an optional **Description** for the environment.
    * If you are adding a **Production + Stage** environment, you must provide an environment name and description for both your production and staging environments.
-   * Select a **Primary region** from the drop-down. The primary region cannot be changed after creation. Also, depending on your available entitlements, you may be able to configure [multiple regions](#multiple-regions).
+   * Select a **Primary region** from the drop-down. The primary region cannot be changed after creation. Also, depending on your available entitlements, you can configure [multiple regions](#multiple-regions).
   
-   ![Add environment dialog](assets/add-environment2.png)
+   ![Add environment dialog box](assets/add-environment2.png)
 
 1. Click **Save**.
 
@@ -77,11 +77,11 @@ The **Overview** page now displays your new environment in the **Environments** 
 
 ## Multiple publish regions {#multiple-regions}
 
-A user with the **Business Owner** role can configure production and staging environments to include up to three additional publish regions in addition to the primary region. Additional publish regions can improve availability. See the [Additional Publish Regions documentation](/help/operations/additional-publish-regions.md) for more details.
+To include up to three additional publish regions in addition to the primary region, a user with the **Business Owner** role configures production and staging environments. Additional publish regions can improve availability. See the [Additional Publish Regions documentation](/help/operations/additional-publish-regions.md) for more details.
 
 >[!TIP]
 >
->You can use the [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) to query a current list of available regions.
+>You can use the [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments#creating-aem-cloud-service-environments) to query a current list of available regions.
 
 ### Add multiple publish regions to a new environment {#add-regions}
 
@@ -102,13 +102,13 @@ The selected regions apply to both production and staging environments.
 
 If you do not specify any additional regions, [you can do so later after the environments are created](#edit-regions).
 
-If you want to provision [advanced networking](/help/security/configuring-advanced-networking.md) for the program, it is recommended that this provisioning is done before adding additional publish regions to the environments by using the Cloud Manager API. Otherwise, the additional publish regions' traffic goes through the primary region's proxy.
+If you want to provision [advanced networking](/help/security/configuring-advanced-networking.md) for the program, it is recommended that this provisioning be done before adding additional publish regions to the environments by using the Cloud Manager API. Otherwise, the additional publish regions' traffic goes through the primary region's proxy.
 
 ### Edit multiple publish regions {#edit-regions}
 
 If you did not specify any additional regions initially, you can do so after the environment is created and you have the necessary entitlements.
 
-You can also remove additional publish regions. However, you can only add or only remove regions in one transaction. If you must add one region and remove one region, first add, save your change, and then remove (or conversely).
+You can also remove additional publish regions. However, you can add or remove regions in one transaction. If you must add one region and remove one region, first add, save your changes, and then remove (or the reverse).
 
 1. From the Program Overview console of your program, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) for your production environment and select **Edit** from the menu.
 
@@ -124,7 +124,7 @@ You can also remove additional publish regions. However, you can only add or onl
 
 Changes made to the production environment apply to both production and staging environments. Changes to multiple publish regions can only be edited in the production environment.
 
-If you want to provision [advanced networking](/help/security/configuring-advanced-networking.md) for the program, it is recommended that this provisioning is done before adding additional publish regions to the environments. Otherwise, the additional publish regions' traffic goes through the primary region's proxy.
+If you want to provision [advanced networking](/help/security/configuring-advanced-networking.md) for the program, it is recommended that this provisioning be done before adding additional publish regions to the environments. Otherwise, the additional publish regions' traffic goes through the primary region's proxy.
 
 ## View details of an environment {#viewing-environment}
 
@@ -178,7 +178,7 @@ On creation, the preview service has a default IP allowlist applied to it, label
 
 A user with the requisite permissions must complete the following steps before sharing the preview service URL to ensure access to it.
 
-1. Create an appropriate IP Allow List, apply it to the preview service, and immediately unapply the `Preview Default [<envId>]` allowlist.
+1. Create an appropriate IP Allow List, apply it to the preview service, and at once unapply the `Preview Default [<envId>]` allowlist.
 
    See [Apply and unapply IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) for more details.
   
@@ -202,7 +202,7 @@ If you have activated additional publish regions, you can check the status of th
 
    ![Additional publish regions status information on the Environments card](assets/additional-publish-region-status-environments-card.png)
 
-Alternatively you can access the same information from the **Environments** tab.
+Alternatively, you can access the same information from the **Environments** tab.
 
 1. On the **Overview** page, click ![Data icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environments**.
 
@@ -215,9 +215,9 @@ Alternatively you can access the same information from the **Environments** tab.
 
    ![Additional publish regions status information on the Environments tab](assets/additional-publish-region-status-environments-tab.png)
  
-If there are any issues reported with additional publish regions, be patient. Cloud Manager continuously tries to recover the region and it may become available at any time. If the problem persists after several hours, you can remove the additional publish region and re-add it (either the same region or another region) to trigger a complete deployment.
+If issues are reported with additional publish regions, wait for a short period. Cloud Manager continuously attempts to recover the region, and it becomes available again automatically. If the issue persists for several hours, remove and re-add the additional publish region (either the same region or a different one) to initiate a full deployment.
 
-How long you wait for the system to recover on its own before taking additional action depends on the impact the failure of that region has to your systems.
+How long you wait for the system to recover on its own before taking additional action depends on the impact the failure of that region has on your systems.
 
 Regardless, [traffic is always routed to the closest region that is online](/help/operations/additional-publish-regions.md). If you continue to see issues, contact Adobe Customer Care.
 
@@ -225,7 +225,7 @@ Regardless, [traffic is always routed to the closest region that is online](/hel
 
 As a cloud-native service, Adobe automatically manages updates for your development, staging, and production environments within production programs.
 
-However, updates to environments in sandbox programs are managed within the programs. When such an environment is not running the latest publicly available AEM version, the status on the **Environments** card on the **Overview** screen of the program shows **Update Available**.
+However, sandbox program environments are updated within the program itself. If an environment is not running the latest public AEM version, the **Environments** card on the program **Overview** screen shows **Update Available**.
 
 ![Environment update status](assets/environ-update.png)
 
@@ -238,12 +238,12 @@ When Cloud Manager detects a newer version of AEM than the one last deployed wit
 The process of updating is therefore a two-step process:
 
 1. Updating the pipeline with the latest AEM version
-1. Running the pipeline to deploy the new version of AEM to an environment
+1. To deploy the new version of AEM to an environment, run the pipeline.
 
 ### Update your environments {#updating-your-environments}
 
 >[!NOTE]
-> As of 2024, development instances and some sandbox programs are already automatically updated so there is no need to manage updates for them manually. As a result of this transition, the option to Update environment manually for development instances might not be available to _some_ of your programs.
+> As of 2024, development instances and some sandbox programs are already automatically updated so there is no need to manage updates for them manually. As a result of this transition, the option to Update environment manually for development instances is not available to _some_ of your programs.
 
 The **Update** option is available on the **Environments** card for specific development and sandbox environments. Click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the environment to access **Update**.
 
@@ -263,7 +263,7 @@ The **Update** option's behavior varies depending on the configuration and curre
 
 | State | The Update option... |
 | --- | --- |
-| The pipeline has already been updated | prompts the user to execute the pipeline. |
+| The pipeline has already been updated | prompts the user to run the pipeline. |
 | The pipeline is already being updated | informs the user that an update is already running. |
 | The pipeline does not exist | prompts the user to create one. |
 
@@ -292,13 +292,13 @@ Select **Manage Access** from the ellipsis menu of the environment on the **Envi
 
 >[!TIP]
 >
->See [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md) to learn how AEM as a Cloud Service team and product profiles can grant and limit access to your licensed Adobe solutions.
+>To learn how AEM as a Cloud Service team and product profiles grant and limit access to your licensed Adobe solutions, see [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ## Access the Developer console {#accessing-developer-console}
 
 1. From the **Environment** card, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), then click **Developer Console**. 
 
-A new tab is opened in your browser with the logon page to the **Developer Console**. 
+A new tab is opened in your browser with the login page to the **Developer Console**. 
 
 ![Login to the Developer Console](assets/environ-devconsole.png)
 
@@ -332,7 +332,7 @@ Custom domain names are supported in Cloud Manager for Sites programs for both p
 
 An IP Allow List is supported in Cloud Manager for author, publish, and preview services for Sites programs.
 
-To manage IP Allow Lists, navigate to the ![Data icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environments** page of the **Overview** page of your program. Click an individual environment so you can manage its details.
+To manage IP Allow Lists, navigate to the ![Data icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environments** page of the **Overview** page of your program. Select an individual environment to manage its details.
 
 ### Apply an IP Allow List {#apply-ip-allow-list}
 

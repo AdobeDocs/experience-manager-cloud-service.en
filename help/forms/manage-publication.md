@@ -6,6 +6,7 @@ feature: Adaptive Forms
 feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 role: User, Developer
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 6ade40f1-bad5-4f5e-aa0e-84b7c6a82e02
 ---
 
@@ -136,7 +137,8 @@ By default, publishing a folder to Experience Manager Forms publishes all the as
         Selecting the **[!UICONTROL Include folder contents]** checkbox enables the **[!UICONTROL Include only immediate folder contents]** checkbox for selection.
 
         * If you select both options, all the forms and assets of the selected folder, subfolders (empty), and references are published. The forms and assets of the subfolders are not published.
-        * -->
+        *
+        -->
 
 
 ### Publish or unpublish a form later 

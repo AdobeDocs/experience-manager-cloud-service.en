@@ -4,17 +4,11 @@ description: Image Component in Interactive Communication Editor in AEM Forms to
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 247dcd95-9429-4fe9-88fc-c02b93b2f7e0
 ---
 # Image Component in Interactive Communication Editor 
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
-
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
 
 ## 1. Introduction 
 
@@ -91,3 +85,10 @@ The Image component is ideal for:
 - Set the image to show or hide conditionally if it's not always needed. 
 
 The Image component in AEM Interactive Communication plays a vital role in creating branded, personalized, and visually effective communications. With configurable properties, it enhances the user experience while maintaining design consistency across different formats.
+
+## See also
+
+- [Image Field Component](/help/forms/interactive-communication/image-field.md)
+- [Rectangle Component](/help/forms/interactive-communication/rectangle.md)
+- [Line Component](/help/forms/interactive-communication/line.md)
+

@@ -4,6 +4,7 @@ description: Learn how to apply image presets in Dynamic Media.
 contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
 ---
 # Apply Dynamic Media Image Presets {#applying-image-presets}

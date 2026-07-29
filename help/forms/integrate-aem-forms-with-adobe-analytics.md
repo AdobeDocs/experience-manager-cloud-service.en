@@ -3,6 +3,7 @@ title: Form Analytics with Adobe Analytics and AEM Forms - Complete Guide
 seo-title: "Form Analytics: Track Performance, Boost Conversions with Adobe Analytics & AEM Forms"
 description: Complete guide to form analytics with Adobe Analytics and AEM Forms. Track form performance, analyze user behavior, reduce abandonment, and optimize conversions.
 keywords: form analytics, form performance tracking, form abandonment analysis, conversion optimization, user behavior analysis, Adobe Analytics forms, AEM Forms analytics
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
@@ -554,22 +555,23 @@ After installing the **[!UICONTROL Adobe Experience Manager Forms]** extension, 
 <table>
  <tbody>
   <tr>
-   <td>FieldName</th>
-   <td>FieldTitle</th>
-   <td>FormInstance</th>
-  </tr>
-  <tr>
-   <td>FormName<br /> </td>
-   <td>FormTitle<br /> </td>
+   <td>PageTitle</td>
+   <td>PageURL</td>
    <td>PageName</td>
   </tr>
   <tr>
-   <td>PageURL<br /> </td>
-   <td>PanelTitle<br /> </td>
-   <td>TimeSpent</td>
+   <td>FieldTitle</td>
+   <td>PanelTitle</td>
+   <td></td>
   </tr>
  </tbody>
 </table>
+
+The **PageTitle**, **PageURL**, **PageName**, **FieldTitle**, and **PanelTitle** data elements capture page- and field-level context for multi-page adaptive forms. Use **PageTitle** and **PageName** to identify the current form page or panel, **PageURL** to record the URL where the form is rendered, and **FieldTitle** and **PanelTitle** to report the label of the active field and its containing panel.
+
+>[!NOTE]
+>
+> Also, for adaptive forms built with [Foundation Components](/help/forms/creating-adaptive-form.md), if a user wants to see the data in the browser console, use the `window.formAnalytics` object.
 
 Perform the following steps to configure data elements:
 
@@ -577,7 +579,7 @@ Perform the following steps to configure data elements:
 
 1. Select **[!UICONTROL Create New Data Element]**.
 
-1. Specify a name for the Data Element. For example, Form Title for FormTitle data element type.
+1. Specify a name for the Data Element. For example, Page Title for PageTitle data element type.
 
 1. Specify **[!UICONTROL Adobe Experience Manager Forms]** as the Extension name.
 

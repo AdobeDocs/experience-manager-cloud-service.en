@@ -4,7 +4,7 @@ description: This article presents important questions to consider when engaging
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
 feature: Developing
 role: Admin, Developer
-index: no
+index: false
 ---
 
 # Developing SPAs for AEM {#developing-spas-for-aem}

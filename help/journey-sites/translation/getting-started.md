@@ -1,8 +1,7 @@
 ---
 title: Get started with AEM Sites translation
 description: Get to know how to organize your AEM Sites content and how AEM's translation tools work.
-index: yes
-hide: no
+index: true
 hidefromtoc: no
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
 solution: Experience Manager Sites

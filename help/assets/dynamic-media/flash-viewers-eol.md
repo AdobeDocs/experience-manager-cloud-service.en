@@ -4,6 +4,7 @@ description: Effective January 31, 2017, support for the Flash viewer Platform i
 contentOwner: Rick Brough
 feature: FAQ,Dynamic Media,Troubleshooting
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: d1f34d22-abcc-422e-b6da-3fa8097078b0
 ---
 # Flash Viewers End-of-Life {#flash-viewers-end-of-life-notice}

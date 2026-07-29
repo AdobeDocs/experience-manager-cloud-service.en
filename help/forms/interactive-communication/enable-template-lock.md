@@ -4,17 +4,11 @@ description: Template Lock in Interactive Communication Editor provides the abil
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 7c7461fe-a5d7-481e-b5f5-27fd5bcde2d0
 ---
 # Template Lock in Interactive Communication Editor
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
-
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
 
 ## 1. Introduction
 
@@ -85,3 +79,12 @@ Save the template and create a new IC based on it to confirm that locked element
 - **Use layout locks for consistency:** Prevent misalignment or visual distortion in frequently reused templates.
 
 - **Communicate lock usage:** Ensure downstream users are aware of which sections are intentionally restricted to avoid confusion.
+
+- **Locks prevent moving to the master page:** If you apply a content lock or layout lock to a component, you cannot use **Move to Master Page** on it. Remove the lock first, or plan the component's placement on the master page when designing the template.
+
+## See also
+
+- [Move a Component to the Master Page](/help/forms/interactive-communication/howto/move-component-to-master-page.md)
+- [Implement Dynamic Page Numbering in Interactive Communication Editor](/help/forms/interactive-communication/implement-dynamic-page-numbering.md)
+- [Create an Interactive Communication Template](/help/forms/interactive-communication/create-interactive-communication-template.md)
+

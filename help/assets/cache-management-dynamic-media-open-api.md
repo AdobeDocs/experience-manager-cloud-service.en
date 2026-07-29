@@ -2,6 +2,7 @@
 title: Cache Management in Dynamic Media with Open APIs
 description: Cache Management in Dynamic Media with Open APIs
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 203a5291-edb5-4900-8b0a-32e1ebae5395
 ---
 # Cache Management in Dynamic Media with Open APIs {#cache-management-dynamic-media-open-apis}
@@ -62,10 +63,12 @@ Asset URLs remain unchanged, and the cache control header sent to browsers (and 
 
 The cache purge triggers automatically when an asset is updated, modified, archived, or deleted.
 
-<!--The cache purge triggers automatically in the following circumstances:
+<!--
+The cache purge triggers automatically in the following circumstances:
  
  - when an asset is updated, modified, or archived.
- - when an asset reaches `ready_for_delivery` state after approval.-->
+ - when an asset reaches `ready_for_delivery` state after approval.
+ -->
 
 +++
 
@@ -101,7 +104,20 @@ To opt out of prolonged caching, contact [Adobe Support](https://helpx.adobe.com
 +++
 
 
->[!MORELIKETHIS]
->
->- [Integrate Asset Selector with various applications](/help/assets/integrate-asset-selector.md)
->- [Vanity URLs](/help/assets/vanity-urls.md)
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

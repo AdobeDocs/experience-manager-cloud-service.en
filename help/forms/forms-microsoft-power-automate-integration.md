@@ -1,6 +1,7 @@
 ---
 title: How to integrate an Adaptive Form with Microsoft&reg; Power Automate?
 description: Integrate an Adaptive Form with Microsoft&reg; Power Automate.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: connect AEM formns to power automate, Power automate automation AEM Forms, Integrate power automate to Adaptive Forms, send data from Adaptive Forms to Power Automate
 feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services

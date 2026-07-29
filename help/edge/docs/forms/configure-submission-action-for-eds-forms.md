@@ -192,7 +192,8 @@ To enable CORS for your local development environment, refer to [Understand Cros
 Configure your Edge Delivery CDN to route submissions:
 
 - Route requests from `/adobe/forms/af/submit/...` to your AEM Publish instance
-- Implementation varies by CDN provider (Fastly, Akamai, Cloudflare)-->
+- Implementation varies by CDN provider (Fastly, Akamai, Cloudflare)
+-->
 
 #### 4. Form Configuration
 
@@ -249,7 +250,8 @@ Configure Cross-Origin Resource Sharing on the form source:
 
 ![Embedded Form Architecture](/help/forms/assets/eds-embedded-form.png)
 
-+++-->
++++
+-->
 
 +++ Common Issues
 

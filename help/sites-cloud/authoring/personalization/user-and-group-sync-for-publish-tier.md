@@ -1,6 +1,7 @@
 ---
 title: Registration, Login, and User Profile 
 description: Learn about Registration, Login, User Data and Group Synchronization for AEM as a Cloud Service
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 solution: Experience Manager Sites
 feature: Authoring, Personalization
@@ -107,8 +108,7 @@ User profile information can be written and read in two ways:
 
 **Prerequisite:**
 
-For the server-side user profile persistence logic to function correctly, please enable [data synchronization](#data-synchronization-data-synchronization) by submitting
-a request to Customer Support indicating the appropriate program and environments.
+For the server-side user profile persistence logic to function correctly, please enable [data synchronization](#data-synchronization-data-synchronization) by submitting a request to Customer Support indicating the appropriate program and environments.
 
 ### Third-party data stores {#third-party-data-stores}
 
@@ -118,8 +118,7 @@ Real-time access to third-party services to retrieve profile attributes is possi
 
 **Prerequisite:**
 
-For the above-described logic to function correctly, please enable [data synchronization](#data-synchronization-data-synchronization) by submitting
-a request to Customer Support indicating the appropriate program and environments.
+For the above-described logic to function correctly, please enable [data synchronization](#data-synchronization-data-synchronization) by submitting a request to Customer Support indicating the appropriate program and environments.
 
 ## Permissions (Closed User Groups) {#permissions-closed-user-groups}
 

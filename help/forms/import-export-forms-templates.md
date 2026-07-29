@@ -4,6 +4,7 @@ description: Learn to migrate Adaptive Forms, PDF forms, themes, and other suppo
 topic-tags: forms-manager
 role: Admin, User
 feature: Adaptive Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
 ---
 # Import or Export Adaptive Forms and AEM Forms assets {#importing-and-exporting-assets-to-aem-forms}
@@ -286,7 +287,8 @@ To download all the Correspondence Management assets and related dependencies as
 
    To add the assets in the package to another instance of Correspondence Management, [import the package to an [!DNL AEM Forms] instance](import-export-forms-templates.md#p-upload-forms-documents-assets-p).
 
-<!-- ### Import Document Fragments, Letters and/or Data Dictionaries into Correspondence Management {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}
+<!--
+ ### Import Document Fragments, Letters and/or Data Dictionaries into Correspondence Management {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}
 
 You can import assets that are exported into a .cmp file. A .cmp file can have one or more letters, data dictionaries, document fragments, and dependent assets.
 
@@ -304,7 +306,8 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 
    >[!NOTE]
    >
-   >For you to be able to upload XDPs (as part of the cmp file or otherwise), you need to be a part of forms-power-users group. For access rights, contact the administrator. --> 
+   >For you to be able to upload XDPs (as part of the cmp file or otherwise), you need to be a part of forms-power-users group. For access rights, contact the administrator.
+   -->
 
 ## See Also {#see-also}
 

@@ -4,6 +4,7 @@ description: Learn how to work with interactive video and shoppable video in Dyn
 contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 ---
 # Interactive videos{#interactive-videos}
@@ -45,10 +46,12 @@ There was a link here that showed the video frame of an interactive video and wh
 Watch a walkthrough on [how interactive videos are created](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveVideo)(7 minutes and 30 seconds).
 (Although the video walkthrough is branded with Assets on Demand, the principles and steps still apply to Interactive Video in Adobe Experience Manager Assets.)
 
-<!-- NOT FOUND ANYMORE. FIND REPLACEMENT
+<!--
+ NOT FOUND ANYMORE. FIND REPLACEMENT
 ### Adobe customer success webinar {#adobe-customer-success-webinar}
 
-The [Use Interactive Video, Link Sharing, and YouTube sharing in Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/) webinar teaches you how to use interactive video and other features to tie conversion driven events into your video marketing content. -->
+The [Use Interactive Video, Link Sharing, and YouTube sharing in Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/) webinar teaches you how to use interactive video and other features to tie conversion driven events into your video marketing content.
+-->
 
 ## Quick start: Interactive videos {#quick-start-interactive-videos}
 

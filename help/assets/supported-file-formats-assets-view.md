@@ -3,6 +3,7 @@ title: Supported file formats
 description: Supported file formats for the various use cases of [!DNL Assets view]
 role: User, Leader, Admin, Developer
 contentOwner: AG
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 ---
@@ -30,7 +31,8 @@ The various file types have different degrees of support for the use cases and f
 
 ## Add, upload, and view assets {#support-to-upload-view}
 
-<!-- TBD: For AEM, AI files require the PDF option to be selected when saving the AI file.
+<!--
+ TBD: For AEM, AI files require the PDF option to be selected when saving the AI file.
 -->
 
 | Asset type        | [Browse](/help/assets/navigate-assets-view.md)   | Copy     | [Upload](/help/assets/add-delete-assets-view.md)   | Create   | [Delete](/help/assets/add-delete-assets-view.md#delete-assets)   | Details           | Image zoom | [Recently Viewed](/help/assets/navigate-assets-view.md) |
@@ -43,7 +45,8 @@ The various file types have different degrees of support for the use cases and f
 | PSD, PSB, AI, and INDD | &#10003; | &#10003; | &#10003; | &minus;  | &#10003; | &#10003; &Dagger; | &minus;    | &#10003;        |
 | Other binary files | &#10003; | &#10003; | &#10003; | &minus;  | &#10003; | &#10003; | &minus; | &#10003;        |
 
-<!-- Hiding CC Libraries (considered beta) as per PM feedback.
+<!--
+ Hiding CC Libraries (considered beta) as per PM feedback.
 | CC Libraries  | &#10003; | &minus;  | &#10003; | &#10003; | &#10003; | &#10003; | &minus;    | &minus;         |
 -->
 
@@ -101,7 +104,8 @@ The various file types have different degrees of support for the use cases and f
 
 Users of [!DNL Adobe Asset Link] can upload and check-in (upload a new version) files into the [!DNL Assets view] repository from the supported [!DNL Adobe Creative Cloud] desktop applications.
 
-<!-- TBD: Saving the template table separately for later use.
+<!--
+ TBD: Saving the template table separately for later use.
 | Asset type    | Features |
 |---------------|----------|
 | Raster images |          |
@@ -125,3 +129,22 @@ Users of [!DNL Adobe Asset Link] can upload and check-in (upload a new version) 
 * Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar
 
 * Contact [Customer Care](https://experienceleague.adobe.com/?support-solution=General#support)
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

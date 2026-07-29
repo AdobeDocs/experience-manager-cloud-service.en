@@ -5,9 +5,9 @@ landing-page-description: Understand how to use AEM Forms as a Cloud Service for
 keywords: AEM Forms, adaptive forms, form builder, digital forms, workflow automation, document services, form data model
 role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
-hide: yes
-hidefromtoc: yes
-index: no
+hide: true
+index: false
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 50d7ce19-7d76-4ea1-a54c-8ca0e5379982
 ---
 # Introduction to AEM Forms as a Cloud Service {#introduction}

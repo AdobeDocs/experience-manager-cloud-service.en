@@ -61,7 +61,7 @@ Make Dynamic Media with OpenAPI URLs more human-readable by leveraging Vanity UR
 >
 >This feature is available as a Limited Availability feature. See this [article](/help/assets/vanity-urls.md) to get started.
 
-### New Features in Content Hub {#new-features-content-hub}
+### New Features in Content Hub
 
 **Mark Collections as Favourites**
 
@@ -78,7 +78,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 <!--
 
-### New Features in Content Hub {#new-features-content-hub}
+### New Features in Content Hub
 
 **Mark Collections as Favourites**
 
@@ -160,7 +160,7 @@ Go‑live days, live events, peak sales—these moments can't break. [Our new se
 
 >[!NOTE]
 >
->Available as a Limited Availability feature on September 25th.
+>Available as a ilability feature on September 25th.
 >Email [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) to get it activated on your programs.
 
 ### New Release of AEM Developer Tools for Eclipse {#aem-develeper-tools-for-eclipse}

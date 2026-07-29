@@ -3,6 +3,7 @@ title: Enabling the Front-End Pipeline
 description: Learn how you can enable the front-end pipeline for existing traditional AEM authoring sites with publish delivery to use site themes to customize your site more quickly.
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
 recommendations: noDisplay, noCatalog

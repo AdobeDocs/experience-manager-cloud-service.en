@@ -4,7 +4,7 @@ description: This article introduces the concepts of a SPA and walks through usi
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 feature: Developing
 role: Admin, Developer
-index: no
+index: false
 ---
 
 # SPA Introduction and Walkthrough {#spa-introduction}

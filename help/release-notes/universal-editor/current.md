@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2026.02.13 Release Notes
-description: These are the release notes for the 2026.02.13 release of the Universal Editor.
+title: Universal Editor 2026.07.16 Release Notes
+description: These are the release notes for the 2026.07.16 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2026.02.13 Release Notes {#release-notes}
+# Universal Editor 2026.07.16 Release Notes {#release-notes}
 
-These are the release notes for the 13 February 2026 release of the Universal Editor.
+These are the release notes for the 16 July 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -16,21 +16,11 @@ These are the release notes for the 13 February 2026 release of the Universal Ed
 
 >[!TIP]
 >
->For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page](/help/release-notes/release-notes-cloud/release-notes-current.md).
-
-## What's New {#what-is-new}
-
-* Dynamic Media links are now supported.
-* Schema and data type for creating blocks with [Document Authoring](https://docs.da.live/developers/reference/universal-editor) are now available.
-
-## Early Adoption Features {#early-adopter}
-
-If you are interested in testing the upcoming features listed below and sharing your feedback, please send an email to your Adobe Customer Success Manager from the email address associated with your Adobe ID. 
-
-* Shallow copy has been implemented for Content Fragments.
+>For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
 ## Other Improvements {#other-improvements}
 
-* A problem with incorrect URLs for videos has been fixed.
-* Creating multiple components with the same name no longer returns a 409.
-* The headless canvas now persists subsequent updates to a field in container.
+* The radio buttons to select the [responsive mode](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator) of the editor now have accessible labels.
+* The clear all option for checkboxes now properly clears all the fields even when there is a default set.
+* Select dropdowns now render properly.
+* Labels and icons on extensibility buttons and submenus are now properly aligned.

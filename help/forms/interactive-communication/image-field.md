@@ -4,17 +4,11 @@ description: Image Field Component in Interactive Communication Editor  in AEM F
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 0af73ae2-fe1d-4763-ad4d-2934691cb9e1
 ---
 # Image Field Component in Interactive Communication Editor 
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
-
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
 
 ## 1. Introduction 
 
@@ -105,3 +99,10 @@ Authors can place the field within subforms or layout containers for alignment a
 - Bind the field to a meaningful schema path if integration with back-end  
 
 The Image Field component in interactive communication editor is a versatile component that enhances form interactivity by enabling visual content uploads. When designed with styling, validation, and data binding, it supports a seamless user experience and efficient data capture for image-based submissions.
+
+## See also
+
+- [Image Component](/help/forms/interactive-communication/image.md)
+- [Configure Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/configure-data-binding.md)
+- [Use the Rule Editor in Interactive Communication Editor](/help/forms/interactive-communication/use-the-rule-editor.md)
+

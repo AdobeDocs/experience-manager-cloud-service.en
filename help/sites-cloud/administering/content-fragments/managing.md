@@ -3,6 +3,7 @@ title: Managing Content Fragments
 description: Learn how to manage your AEM Content Fragments from the console and editor, to create content as the basis of your headless content, or for page authoring.
 feature: Content Fragments
 role: User, Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
 ---
@@ -16,6 +17,7 @@ Learn how to manage your **Content Fragments** in Adobe Experience Manager (AEM)
 >
 >* [Managing Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) 
 >* [Viewing and Managing Assets in the Content Fragments Console](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+>* [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 
 After defining your [Content Fragment Models](#creating-a-content-model) you can use these to:
 
@@ -44,7 +46,7 @@ You can use the far left panel of the [Content Fragments console](/help/sites-cl
 
 Selecting **Content Fragments** opens the console in a new tab. 
 
-![Content Fragments console - Overview](assets/cf-managing-console-overview.png)
+![Content Fragments console - Overview](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-overview.png)
 
 Here you can see that there are three main areas:
 
@@ -86,17 +88,20 @@ Here you can see that there are three main areas:
 
 The main/right panel (table view) of the console provides a range of information about your Content Fragments. Some items also provide direct links to further actions and/or information:
 
+* **Title**
+  * A padlock icon indicates that the fragment is [checked out](#check-out-and-check-in) and locked by one user; selecting the padlock icon shows details of the account that has checked out the fragment.
+  * The information (i) icon provides quick access to additional, fragment specific, information and configuration options in the right panel. 
 * **Name**
   * Provides a link to open the fragment in the editor.
 * **Model**
   * Information only.
-  * Can be used for [Fast Filtering](#fast-filtering)
+  * Can be used for [Fast Filtering](#fast-filtering).
 * **Folder**
   * Provides a link to open the folder in the console.
     Hovering over the folder name will show the JCR path.
 * **Status**
   * Information only.
-  * Can be used for [Fast Filtering](#fast-filtering)
+  * Can be used for [Fast Filtering](#fast-filtering).
 * **Preview**
   * Information only:
     * **In sync**: Content Fragment is in-sync on the **Author** and **Preview** services.
@@ -119,17 +124,17 @@ The main/right panel (table view) of the console provides a range of information
 * **Referenced By**: 
   * Provides a link that opens a dialog listing all [parent references](#parent-references-fragment)  of that fragment; including referencing Content Fragments, Experience Fragments and pages. To open a specific reference, click the **Title** in the dialog.
 
-    ![Content Fragments console - References dialog](assets/cf-managing-console-references-dialog.png)
+    ![Content Fragments console - References dialog](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-references-dialog.png)
 
 * **Language**: indicate any [Language](#language-copies-fragment) copies
 
   * Indicates the locale of the content fragment, together with the total number of local/[Language](#language-copies-fragment)  copies associated with the content fragment.
 
-    ![Content Fragments console - Language indicator](assets/cf-managing-console-language-indicator.png)
+    ![Content Fragments console - Language indicator](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-language-indicator.png)
 
   * Select the count to open a dialog that displays all the language copies. To open a specific language copy, click the **Title** in the dialog.
 
-    ![Content Fragments console - Language dialog](assets/cf-managing-console-languages-dialog.png)
+    ![Content Fragments console - Language dialog](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-languages-dialog.png)
 
 * **Workflows**
 
@@ -137,11 +142,11 @@ The main/right panel (table view) of the console provides a range of information
 
   * Select the icon for a specific fragment: 
 
-    ![Content Fragments console - Workflows icon](assets/cf-managing-console-workflows-icon.png)
+    ![Content Fragments console - Workflows icon](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-workflows-icon.png)
 
     To open a dialog with detailed information about workflows (past and current) for the fragment.:
 
-    ![Content Fragments console - Workflows dialog](assets/cf-managing-console-workflows-dialog.png)
+    ![Content Fragments console - Workflows dialog](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-workflows-dialog.png)
 
 ## Actions {#actions}
 
@@ -171,17 +176,27 @@ Certain actions are available from the console - without selecting a specific Co
 
 Selecting a specific fragment opens a toolbar focused on the actions available for that fragment. You can also select multiple fragments - the selection of actions will be adjusted accordingly.
 
-![Content Fragments console - toolbar for a selected fragment](assets/cf-managing-console-fragment-toolbar.png)
+![Content Fragments console - toolbar for a selected fragment](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-fragment-toolbar.png)
 
 * **[Open in new Editor](#editing-the-content-of-your-fragment)**
 * **[Publish](#publishing-and-previewing-a-fragment)** (and **[Unpublish](#unpublishing-a-fragment)**)
 * **[Manage Tags](#manage-tags)**
 * **[Copy](#copy-a-content-fragment)**
 * **[Replace](#find-and-replace)**
+* **[Preview](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md#preview-your-fragment-with-a-template)**
 * **Move**
 * **Rename**
+* **[Check Out and Check In](#check-out-and-check-in)**
 * **[Delete](#deleting-a-fragment)** (only available for unpublished fragments)
 
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+<!--
+* [Reuse Content Fragments using MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md) actions:
+  * **[Create Live Copy](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#create-a-live-copy)**
+  * **[Synchronize](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#synchronize)**
+  * **[Rollout](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#rollout)**
+* **[Delete](#deleting-a-fragment)** (only available for unpublished fragments)
+-->
 
 >[!NOTE]
 >
@@ -218,7 +233,7 @@ To create a content fragment:
    * **Name** - Auto-completed based on the **Title**, but you can edit it, if necessary.
    * **Description** 
 
-   ![New Content Fragment dialog](assets/cf-managing-new-cf-dialog.png)
+   ![New Content Fragment dialog](/help/sites-cloud/administering/content-fragments/assets/cf-managing-new-cf-dialog.png)
 
 1. Select **Create**, or **Create and open** to persist your definition.
 
@@ -250,7 +265,7 @@ To open your fragment for editing:
 
 1. The fragment editor opens. Select your required **Variation** amd make your changes as required (they will be auto-saved):
 
-   ![Fragment editor](assets/cf-managing-editor.png)
+   ![Fragment editor](/help/sites-cloud/administering/content-fragments/assets/cf-managing-editor.png)
 
 ## Copy a Content Fragment {#copy-a-content-fragment}
 
@@ -290,7 +305,7 @@ So, if we start with:
 ```xml
 FolderA 
     FragmentA (inside FolderA)
-    | 
+    |
     |___FolderB/FragmentB (referenced by FragmentA)
 
 FolderB
@@ -302,7 +317,7 @@ Copying FragmentA to FolderC, would result in:
 ```xml
 FolderA 
     FragmentA (inside FolderA)
-    | 
+    |
     |___FolderB/FragmentB (referenced by FragmentA)
 
 FolderB
@@ -311,7 +326,7 @@ FolderB
 
 FolderC
     Copy_of_FragmentA
-    | 
+    |
     |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
 ```
 
@@ -324,7 +339,7 @@ So, if we start with:
 ```xml
 FolderA 
     FragmentA (inside FolderA)
-    | 
+    |
     |___FolderB/FragmentB (referenced by FragmentA)
 
 
@@ -337,7 +352,7 @@ Copying FragmentA to FolderC, would result in:
 ```xml
 FolderA 
     FragmentA (inside FolderA) 
-    | 
+    |
     |___FolderB/FragmentB (referenced by FragmentA) 
 
 FolderB 
@@ -346,7 +361,7 @@ FolderB
 
 FolderC
    Copy_of_FragmentA
-   | 
+   |
    |___./Copy_of_FragmentB (referenced by FragmentA)
    Copy_of_FragmentB
 ```
@@ -364,7 +379,7 @@ To manage the tags:
 1. Select **Manage Tags** in the toolbar.
 1. Use the Tag selector to select tags to apply, or remove:
 
-   ![Manage Tags](assets/cf-managing-manage-tags.png)
+   ![Manage Tags](/help/sites-cloud/administering/content-fragments/assets/cf-managing-manage-tags.png)
 
 1. **Save** updates. This will return you to the console.
 
@@ -378,19 +393,27 @@ You can view, and edit, the properties (metadata) of a fragment using the [Prope
 
 ## Publishing and Previewing a Fragment {#publishing-and-previewing-a-fragment}
 
-You can publish your Content Fragments to:
+You can:
 
-* the **[Publish Service](/help/headless/deployment/architecture.md)** - for full, public access
+* Preview your Content Fragments:
 
-* the **[Preview Service](/help/headless/deployment/architecture.md)** - to [preview](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) the content prior to full availability
+  * With [Visualization Templates](/help/sites-cloud/administering/content-fragments/preview.md#preview-with-visualization-html-templates)
 
-  >[!CAUTION]
-  >
-  >Publishing Content Fragments to the **Preview Service** is only available from the Content Fragments console; using the **Publish** action.
+  * On the [preview](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) instance 
 
-  >[!NOTE]
-  >
-  >For more details about the Preview environments, see [Manage Environments](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+* Publish your Content Fragments to:
+
+  * the **[Publish Service](/help/headless/deployment/architecture.md)** - for full, public access
+
+  * the **[Preview Service](/help/headless/deployment/architecture.md)** - to [preview](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) the content prior to full availability
+
+    >[!CAUTION]
+    >
+    >Publishing Content Fragments to the **Preview Service** is only available from the Content Fragments console; using the **Publish** action.
+
+    >[!NOTE]
+    >
+    >For more details about the Preview environments, see [Manage Environments](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 >[!CAUTION]
 >
@@ -421,7 +444,7 @@ After selecting the **Publish** action:
 
 1. Provide all details in the dialog. For example, for a scheduled publish request:
 
-   ![Publish dialog](assets/cf-managing-publish-dialog.png)
+   ![Publish dialog](/help/sites-cloud/administering/content-fragments/assets/cf-managing-publish-dialog.png)
 
    >[!NOTE]
    >
@@ -449,7 +472,7 @@ In both cases, select **Unpublish** from the toolbar, followed by either **Now**
 
 When the relevant dialog opens you can select the appropriate service:
 
-![Unpublish dialog](assets/cf-managing-unpublish-dialog.png)
+![Unpublish dialog](/help/sites-cloud/administering/content-fragments/assets/cf-managing-unpublish-dialog.png)
 
 >[!NOTE]
 >
@@ -463,7 +486,7 @@ When the relevant dialog opens you can select the appropriate service:
 
 The **Replace** action is available (in the top toolbar) to find, and replace, specified text in your selected Content Fragments. 
 
-![Find and Replace](assets/cf-managing-find-replace.png)
+![Find and Replace](/help/sites-cloud/administering/content-fragments/assets/cf-managing-find-replace.png)
 
 Before replacement, validation criteria are checked and you are informed of any conflicts, allowing you to change the replacement string or only replace the validated instances.
 
@@ -473,7 +496,65 @@ Before replacement, validation criteria are checked and you are informed of any 
 >
 >If you select more than 20 Content Fragments, you will see the message **Unable to find and replace**.
 
-![Confirm Replace](assets/cf-managing-confirm-replace.png)
+![Confirm Replace](/help/sites-cloud/administering/content-fragments/assets/cf-managing-confirm-replace.png)
+
+## Check Out and Check In {#check-out-and-check-in}
+
+AEM lets you:
+
+* [check out](#check-out-a-content-fragment) a Content Fragment, preventing other users from working on the fragment 
+* [check in](#check-in-a-content-fragment) Content Fragments, allowing other users to resume working with the fragment
+
+When you check out a fragment it is locked (`jcr:lock`). A padlock icon in the **Title** column indicates a locked fragment. Selecting the padlock icon provides details of the account that has checked out the fragment.
+
+You can edit, publish, unpublish, move, or delete a locked fragment. Other users cannot perform any of these actions on the fragment until you check in the fragment; though they can still change the metadata for the locked fragment.
+
+This functionality helps prevent conflicts when multiple users collaborate on editing fragments.
+
+>[!NOTE]
+>
+>To be able to check out/in a Content Fragment, you must have write access.
+
+>[!CAUTION]
+>
+>It is possible to delete a folder that contains a checked out Content Fragment. 
+>
+>Before deleting a folder, ensure that it does not contain any Content Fragments (or other digital assets) that are checked-out by users.
+
+>[!NOTE]
+>
+>As Content Fragments are stored internally as Assets, this functionality is closely related to [Check-in and check-out files in Experience Manager DAM](/help/assets/check-out-and-submit-assets.md).
+
+### Check Out a Content Fragment {#check-out-a-content-fragment}
+
+To check a fragment out:
+
+1. In the **Content Fragments** console navigate to the location of the Content Fragment.
+1. Select the fragment.
+1. Select **Check Out** from the toolbar.
+1. Confirm the **Check Out** action.
+
+   * A padlock icon in the **Title** column indicates that the fragment is locked and can only be edited by you. 
+   * If another user opens the fragment for editing, they see a message stating that they are in read-only mode.
+
+### Check In a Content Fragment {#check-in-a-content-fragment}
+
+To check a fragment in:
+
+1. In the **Content Fragments** console navigate to the location of the Content Fragment.
+1. Select the fragment.
+1. Select **Check In** from the toolbar.
+1. Confirm the **Check In** action.
+
+### Forced (Administrator) Check In {#forced-adminstrator-check-in}
+
+It can happen that the user who has checked out a Content Fragment is unavailable to check in the fragment. 
+
+In such situations an administrator can perform the **Check In** operation.
+
+>[!NOTE]
+>
+>See also Assets [Forced Check In](/help/assets/check-out-and-submit-assets.md#forced-check-in).
 
 ## Deleting a Fragment {#deleting-a-fragment}
 
@@ -499,7 +580,7 @@ Both provide a link that opens a dialog listing all parent references of that fr
 
 For example:
 
-![Content Fragments console - References dialog](assets/cf-managing-console-references-dialog.png)
+![Content Fragments console - References dialog](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-references-dialog.png)
 
 ## Finding Language Copies of your Fragment {#language-copies-fragment}
 
@@ -510,21 +591,21 @@ Details of Language Copies can be accessed from:
 
 The icon indicates the locale of the content fragment, together with the total number of locales/language copies associated with the content fragment. For example, from the console:
 
-![Content Fragments console - Language indicator](assets/cfc-console-language-indicator.png)
+![Content Fragments console - Language indicator](/help/sites-cloud/administering/content-fragments/assets/cfc-console-language-indicator.png)
 
 Select the count to open a dialog that displays all the language copies. To open a specific language copy, click the **Title** in the dialog.
 
-![Content Fragments console - Language dialog](assets/cf-managing-console-languages-dialog.png)
+![Content Fragments console - Language dialog](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-languages-dialog.png)
 
 ## Select columns shown in the console {#select-columns-console}
 
 As with other consoles you can configure the columns that are visible, and available for action:
 
-![Content Fragments console - column configuration](assets/cf-managing-console-column-icon.png)
+![Content Fragments console - column configuration](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-column-icon.png)
 
 This will present a list of columns that you can hide or show:
 
-![Content Fragments console - column configuration](assets/cf-managing-console-column-selection.png)
+![Content Fragments console - column configuration](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-column-selection.png)
 
 ## Filtering Fragments {#filtering-fragments}
 
@@ -539,7 +620,7 @@ The Filter panel offers:
 
  Once selected, the **Filtering by** options are shown (under the Search box). They can be deselected from there. For example:
 
-![Content Fragments console - Filtering](assets/cf-managing-console-filter.png)
+![Content Fragments console - Filtering](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-filter.png)
 
 ### Fast Filtering {#fast-filtering}
 
@@ -551,22 +632,41 @@ For example, select **Published** in the **Status** column:
 >
 >Fast filtering is only supported for the **Model**, **Status**, **Modified By**, **Tags**, and **Published By** columns.
 
-![Content Fragments console - Filtering](assets/cf-managing-console-fast-filter-overview.png)
+![Content Fragments console - Filtering](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-fast-filter-overview.png)
 
 Once selected, this will be shown as a filter predicate, and the list will be filtered accordingly:
 
-![Content Fragments console - Filtering](assets/cf-managing-console-fast-filter-criteria.png)
+![Content Fragments console - Filtering](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-fast-filter-criteria.png)
 
 ## Searching Fragments {#searching-fragments}
 
-The search box supports full-text search. Entering your search terms in the search box:
+The Content Fragment console supports:
 
-![Content Fragments console - Searching](assets/cf-managing-console-search-specification.png)
+* [Full-text search](#full-text-search)
+* [AI search](#ai-search) (Semantic search)
 
-Will provide the selected results:
+Use the toggle option **AI search** to select the search method you want to use:
 
-![Content Fragments console - Search Results](assets/cf-managing-console-search-results.png)
+![Content Fragments console - select search method](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-select-search.png)
 
 The search box also provides quick access to **Recent Content Fragments** and **Saved Searches**:
 
-![Content Fragments console - Recent and Saved](assets/cf-managing-console-search-saved.png)
+![Content Fragments console - Recent and Saved](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-saved.png)
+
+### Full-text search {#full-text-search}
+
+Full-text search allows you to search the Content Fragment content for a specific word or phrase. Entering your search terms in the search box:
+
+![Content Fragments console - full-text search](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-full-text-search-specification.png)
+
+Will provide the selected results:
+
+![Content Fragments console - Search Results](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-full-text-search-results.png)
+
+### AI search (Semantic search) {#ai-search}
+
+AI (semantic) search for Content Fragments improves content discovery by enabling natural-language queries. It allows you to find fragments based on meaning and intent, instead of relying solely on exact keywords or full-text matches.
+
+Enter your search query in the search box. For example `fruity and light roast`:
+
+![Content Fragments console - semantic search](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-semantic-search.png)

@@ -2,6 +2,7 @@
 title: What's new in Content Hub
 description: Learn more on some of the recenly launched Content Hub capabilities
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
 ---
 # What's new in Content Hub {#whats-new-content-hub}
@@ -18,9 +19,54 @@ The following video demonstrates Content Hub key capabilities:
 
 ## Release Date {#release-date}
 
-The release date of Content Hub feature release (2025.10.0) is October 30, 2025 (same as that of AEM as a Cloud Service release). The next feature release (2025.11.0) is planned for November 20, 2025.
+The release date of Content Hub feature release (2026.05.0) is May 28, 2026 (same as that of AEM as a Cloud Service release). The next feature release (2026.06.0) is planned for June 25, 2026.
 
-## October release features {#october-release-features}
+## May 2026 release features {#may-2026-release-features}
+
+**AI Search**
+
+AEM Assets Content Hub now includes AI Search, an advanced search capability that understands the meaning and intent behind user queries instead of relying only on exact keyword matches. AI Search delivers more accurate and context relevant results by recognizing relationships between words, concepts, and user intent. It supports multilingual queries, handles misspellings and typos, understands synonyms, and surfaces relevant assets even when users do not use exact metadata terms. 
+
+For example, a search for `Woman drinking coffee` can also return assets tagged with related terms such as `Lady`, `Girl`, `Latte`, or `Cappuccino`. 
+
+Administrators can enable or disable AI Search in Content Hub using the Configurations menu by selecting either AI Search or traditional keyword search.
+
+[!BADGE Dive Deeper into this Feature]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#ai-search-aem-assets-content-hub"}
+
+
+**Custom Sorting options**
+
+Content Hub now allows administrators to enable custom metadata fields as sorting options on the Content Hub home page. In addition to the default sorting options, Size, Modified, Name, and Relevance, administrators can configure business-specific metadata fields such as Channel, Region, SKU, or Campaign to help users organize search results more effectively.
+
+[!BADGE Dive Deeper into this Feature]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#configure-sorting-aem-assets-content-hub"}
+
+**Asset Search and Download Event Support for Delivery APIs**
+
+AEM Assets Delivery APIs now support asset search and asset download events, enabling organizations to track and respond to how assets are discovered and consumed across connected applications and experiences. These events help improve visibility into asset usage patterns, support analytics and reporting workflows, and simplify integrations with external systems and automation processes. 
+
+With event-driven insights, teams can better understand content engagement and build more connected digital asset workflows. For more details, see the [API documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/asset_downloaded).
+
+**Asset Delivery URL**
+
+Content Hub now allows users to copy an asset's delivery URL directly from the asset properties. This enhancement makes it easier to share and embed approved assets across websites, applications, and external systems. By providing quick access to delivery-ready links, teams can streamline content distribution workflows and accelerate asset reuse across digital experiences.
+
+>[!IMPORTANT]
+>
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+
+
+## February 2026 release features {#february-2026-release-features}
+
+**Permission management in Content Hub using AEM Governance Agent**
+
+In Content Hub, the AEM Governance Agent ensures that only the right people access the right assets at the right time. By applying granular, attribute-based controls and usage rights, it protects sensitive content while enabling secure collaboration. This means reduced compliance risk, stronger brand integrity, and faster workflows, teams can confidently share and reuse assets without worrying about unauthorized access or misuse. This balance of security and flexibility translates into higher operational efficiency and trust across the organization.
+
+![Permission Management Overview](/help/ai-in-aem/agents/governance/assets/permission-management.png)
+
+[!BADGE Dive Deeper into this Feature]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
+
+
+## October 2025 release features {#october-2025-release-features}
 
 **Enhancements In Content Hub download experience**
 
@@ -28,7 +74,7 @@ Content Hub now supports downloading multiple asset renditions in a flat hierarc
 
 [!BADGE Dive Deeper into this Feature]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
 
-## September release features {#september-release-features}
+## September 2025 release features {#september-2025-release-features}
 
 **Mark Collections as Favourites**
 
@@ -40,11 +86,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 [!BADGE Dive Deeper into this Feature]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
->[!IMPORTANT]
->
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
-
-## August release features {#august-release-features}
+## August 2025 release features {#august-release-features}
 
 **Bulk Search via Filter Properties**
 
@@ -52,7 +94,7 @@ Content Hub now makes it faster to discover the assets you need. With the new Bu
 
 [!BADGE Dive Deeper into this Feature]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#bulk-search"}
 
-## July release features {#july-release-features}
+## July 2025 release features {#july-2025-release-features}
 
 **Enhanced branding flexibility in Content Hub**
 
@@ -72,7 +114,7 @@ You can now add a title when generating a shared link—whether from the asset d
 
 Content Hub now includes a **Show All** option within filters, allowing users to view all available facets along with asset counts from the current limitation of viewing only upto ten facets. Enhanced search and sort capabilities within each filter make it easier to discover and manage assets more efficiently.
 
-## June release features {#june-release-features}
+## June 2025 release features {#june-2025-release-features}
 
 ### Collections governance {#collections-governance}
 
@@ -82,7 +124,7 @@ Content Hub now lets you control access to collections during creation, ensuring
 
 [!BADGE Dive Deeper into this Feature]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}
 
-## May release features {#may-release-features}
+## May 2025 release features {#may-2025-release-features}
 
 Content Hub May release includes the following features:
 
@@ -141,3 +183,23 @@ Access all your Dynamic Media preset renditions and smart-crops for download, di
 ​![Dynamic Media renditions](/help/assets/assets/dm-renditions-content-hub.png)
 
 [!BADGE Dive Deeper into this Feature]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
+
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

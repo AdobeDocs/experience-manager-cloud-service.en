@@ -1,126 +1,131 @@
 ---
-title: Release Notes for Cloud Manager 2026.1.0
-description: Learn about the release of Cloud Manager 2026.1.0 in Adobe Experience Manager as a Cloud Service.
+title: Release Notes for Cloud Manager 2026.7.0
+description: Learn about the release of Cloud Manager 2026.7.0 in Adobe Experience Manager as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 ---
-# Release notes for Cloud Manager 2026.1.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release notes for Cloud Manager 2026.7.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-<!-- https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2025.08.0+Release -->
-
-Learn about the release of Cloud Manager 2026.1.0 in AEM (Adobe Experience Manager) as a Cloud Service.
+Learn about the release of Cloud Manager 2026.7.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
 See also the [current release notes for Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Release dates {#release-date}
 
-The release date for Cloud Manager 2026.1.0 in AEM as a Cloud Service is Thursday, January 22, 2026. 
+The release date for Cloud Manager 2026.7.0 in AEM as a Cloud Service is Thursday, July 9, 2026. 
 
-The next planned release is Thursday, February 5, 2026.
-
-## What's new - Cloud Manager {#cloud-manager-whats-new}
-
-* **Configuration pipelines now support managed secrets**
-
-    Users can now add and manage secrets directly in Cloud Manager configuration pipelines. These secrets securely override values in the pipeline configuration spec and support flexible, environment-specific deployments.
-
-    ![View/Edit variables option on the drop-down menu for a selected pipeline](/help/implementing/cloud-manager/release-notes/assets/view-edit-variables-option.png) 
-    *View/Edit variables option on the drop-down menu for a selected pipeline.* 
-
-    ![Variables Configuration dialog box](/help/implementing/cloud-manager/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*Variables Configuration dialog box.*
-
-* **Improved stability, performance, and reliability**
-
-    This release includes optimization and maintenance updates that improved the stability, performance, and reliability of Cloud Manager.
+The next planned release is Thursday, August 6, 2026.
 
 
+## New features - Cloud Manager {#cloud-manager-whats-new}
+
+* **Bring Your Own Git (BYOG) — secret-based authentication for Git clone**
+
+    You can now authenticate Git clone requests to your [!DNL Bring Your Own Git] repository using the byogit secret that Cloud Manager generates, in addition to an IMS token. This functionality lets [!DNL Edge Delivery Services] customers use the same credential that helix-admin already stores for code sync. Existing IMS-authenticated clone workflows are unaffected.
+    
+    See [Authenticate git clone requests](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md#authenticate-git-clone-requests).
+
+* **VPN Network Infrastructure — BGP routing and multiple connections**  
+    The Advanced Networking VPN network infrastructure API now supports BGP (Border Gateway Protocol) dynamic routing alongside the existing static routing. Teams can configure BGP per connection by providing the customer-side BGP Autonomous System Number and peering address; Cloud Manager handles route learning dynamically — no static prefixes required.
+
+    The previous limit of one VPN connection per infrastructure has also been removed. Multiple connections are now supported within the same infrastructure, and static and BGP connections can coexist. This gives enterprise networking teams more flexibility when designing VPN topologies for AEM Cloud Service environments.
+
+* **Improved build performance with module caching**
+    A new build model compiles only changed modules (rather than the entire repository) using module-level caching to improve build performance. It applies to production pipelines. You control which production pipelines use **Smart Build**.
+
+    For more information, see the following:
+
+    * [About using Smart Build in a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#about-smart-build-production-pipeline) and [About using Smart Build in a non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build-non-production-pipeline)
+    * [Add a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md##adding-production-pipeline) and [Add a non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#configuring-non-production-pipelines).
+
+* **Content Copy: Cross Program and Forward Flow**  
+    Cloud Manager **Content Copy**, which lets teams copy content between AEM environments without a deployment, includes two capabilities available to all programs. Cross Program support allows content to be copied across different Cloud Manager programs, not just within the same one. Forward Flow removes the directional restriction, allowing content to be copied from any environment to any other — including from lower environments upward.
+
+    For details, see [The Content Copy Tool](/help/implementing/developing/tools/content-copy.md).
 
 
 ## Beta programs {#private-beta-program}
 
-Participate in Cloud Manager's beta programs to get exclusive access to upcoming features before their general release.
+To get exclusive access to upcoming features before their general release, you can participate in Cloud Manager's beta programs.
 
 >[!IMPORTANT]
 >
->Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (by way of Adobe Support Services or otherwise) the beta releases. Adobe advises customers to use caution and not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Accordingly, any use of the beta releases is entirely at the customer's own risk.
+>Beta releases contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support the beta releases. Customers use beta releases at their own risk; do not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Any use of the beta releases is entirely at the customer's own risk.
 
 See also [AEM Beta programs](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
 
-The following opportunities are currently available:
-<!--
-### Support for Custom Author Domains in Cloud Service
+The following beta program opportunities are currently available:
 
-AEM Cloud Service is going to soon support one custom domain per Author environment.-->
+### Edge Delivery Services with AEM Authoring and flexible publish tier configuration {#eds-with-aem-authoring}
+
+Cloud Manager introduces two capabilities designed to support modern delivery architectures.
+
+* **Edge Delivery Services with AEM Authoring**
+You can now deliver sites using Edge Delivery Services while continuing to author content in AEM Author mode. Depending on your workflow preferences, you can choose from the following authoring approaches:
+
+    * Document-based authoring
+    * AEM-based authoring
+
+For more information, see [Create Edge Delivery site in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md#one-click-edge-delivery-site).
+
+* **Flexible publish tier configuration**
+
+Cloud Manager now lets you configure whether a publish tier is required for your program. This flexibility lets you set up environments that better match your chosen delivery architecture.
+
+For more information, see [Flexible Publish Tier (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
+
+To join the beta, email [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com) with your Adobe Organization ID and Program ID.
+
+<!-- 
+OLD
+### Improved build performance with module caching {#quick-build-cm-pipelines}
+
+A new build model compiles only changed modules (rather than the entire repository) using module-level caching to improve build performance. It applies to production pipelines. You control which production pipelines use **Smart Build**.
+
+For more information, see the following:
+
+* [Using Smart Build in a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build).
+* [Add a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
+
+To join the Beta, email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) with your Adobe Organization ID and Program ID.
 
 ### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
 
-[Experience Hub](/help/experience-hub.md) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
+[Experience Hub](/help/experience-hub.md) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI Extensions so they can help you enable them in Experience Hub with minimal effort.
 
 ![Diagram of Experience Hub extensibility and customization workflow](/help/implementing/cloud-manager/release-notes/assets/experience-hub-extensibility-customization.png)
 
 Embed custom experiences in Experience Hub to extend and personalize your organization's dashboard. In addition to Adobe's built-in widgets, add your own using the [UI Extensibility](https://developer.adobe.com/uix/docs/) framework. Build JavaScript-based UI apps and surface them to your users to meet business-specific requirements and workflows. 
 
 Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com) with your Adobe OrgID and a short description of the customization you intend to create.
+-->
 
-### Faster builds with module caching {#quick-build-cm-pipelines}
+<!-- 
+OLD
+### Support for Custom Author Domains in Cloud Service
 
-A new build model compiles only changed modules (rather than the entire repo) using module-level caching to shorten build times. It applies to code-quality, full-stack, and stage-only pipelines.
+AEM Cloud Service is going to soon support one custom domain per Author environment.
+-->
 
-![Edit Non-Production Pipeline dialog box showing the two Build Strategy options which are Full Build and Smart Build](/help/implementing/cloud-manager/release-notes/assets/non-production-pipeline-edit.png)
-*Edit Non-Production Pipeline dialog box showing the two Build Strategy options which are Full Build and Smart Build.* 
-
-In the **Add/Edit Pipeline** dialog box, under the **Source Code** tab, a new **Build Strategy** section lets you choose one of the following build options:
-
-* **Full Build** — builds all modules in the repository on every run.
-* **Smart Build** — builds only modules that changed since the last commit, which shortens overall build time.
-
-You control which pipelines use **Smart build**. During the beta, this option appears only for **Code Quality** and **Dev Deployment** pipelines.
-
-Interested? Email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) with your Adobe OrgID and Program ID.
-
-<!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).-->
-
-### Bring Your Own Git (BYOG) {#gitlab-bitbucket-azure-vsts}
-
-<!-- BOTH CS & AMS -->
-
-Customers can now onboard their Azure DevOps Git repositories into Cloud Manager, with support for both modern Azure DevOps and legacy VSTS (Visual Studio Team Services) repositories.
-
-* For Edge Delivery Services users, the onboarded repository can be used to sync and deploy site code.
-* For AEM as a Cloud Service and Adobe Managed Services (AMS) users, the repository can be linked to both full-stack and frontend pipelines.
-
-Support for additional pipeline types and pull request validation through code quality pipelines is coming soon.
-
-See [Add external repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
-
-![Add Repository dialog box](/help/implementing/cloud-manager/release-notes/assets/azure-repo.png)
-
-<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. -->
-
-**Frequently asked questions about BYOG**
-
-| Question | Answer |
-|---|---|
-| *How can a project switch back to the Adobe-managed Git repository if needed?* | Switching back is straightforward. [Update the pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) to point to the Adobe repository and remove the external repository if it is no longer required. |
-| *Is it possible to configure different repositories for different environments (for example, non-production versus production) to allow testing in non-production first?* | Yes, different repositories can be configured for separate environments. For example, the dev or code quality pipeline can point to an external repository while the production pipeline remains connected to the Adobe repository. Make sure that the sync job between the two repositories remains active during this configuration. |
-| *Do existing settings like `IP Allow` lists continue to work?* | Yes, existing `IP Allow` lists continue to work as usual. However, if the external Git repository is protected by a firewall, the necessary [Adobe IP addresses must be added to the allow list](/help/implementing/cloud-manager/ip-allow-lists/introduction.md). |
-| *Do all GitLab repository URLs work? The repository URL in use follows the format `https://gitlab_dedicated_url.com/path/repo-name.git`, which differs from the example in the documentation.* | Yes, any GitLab repository that supports API V3 or V4 is supported, including self-hosted GitLab URLs like the one described in [Add external repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) (`https://git-vendor-name.com/org-name/repo-name.git`). |
-
-
-#### Manage Access Tokens{#manage-access-tokens}
-
-Use **Manage Access Tokens** in Cloud Manager to view, rename, and delete access tokens associated with external BYOG repositories, such as GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps.
-
-See [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
-
-<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. -->
 
 
 ## Bug fixes {#bug-fixes}
 
-There are no significant bug fixes in the December 2025 Cloud Manager release.
+* Core credits not released when both prod-group environments complete soft delete concurrently. This issue has been resolved. Credits are now correctly released regardless of the order in which concurrent deletions complete. (CMGR-77845)
 
+* Content Hub credit orphaned after environment soft delete followed by hard delete. Cloud Manager now correctly releases the Content Hub credit when the associated environment is fully removed. (CMGR-77585)
+
+* aio cloudmanager:tail-log CLI command disconnects at log rotation instead of reconnecting. The command now reconnects automatically when a log rotation is detected. (CMGR-76557)
+
+* Go-Live complete dialog content not scrollable in Program Overview. The dialog box now scrolls correctly, ensuring all content is accessible regardless of screen size. (CMGR-76405)
+
+* Custom domain mapping fails on newly created RDE environments. After creating a new Rapid Development Environment (RDE), customers encountered the error "Environment status is not valid for domain config change" when attempting to add a custom domain mapping immediately after provisioning. 
+Cloud Manager now correctly reflects the environment's ready state before any domain mapping is attempted. (CMGR-75904)
+
+* Deleting a DV certificate and recreating it for the same domain fails with "existing certificate" error. When customers deleted a domain-validated (DV) certificate and then tried to create a new one for the same domain, Cloud Manager returned the error "There's an existing certificate that covers all the domains." As a result, it blocked the new certificate from being issued. The deletion appeared successful in the UI but the certificate was not fully removed internally, leaving the domain locked. This issue is now resolved. (CMGR-72784)
+
+<!-- There are no significant bug fixes in the July 2026 Cloud Manager release. -->
 
 <!-- ## Known issues {#known-issues} -->
 

@@ -3,6 +3,7 @@ title: Distribute and share assets, folders, and collections
 description: Distribute your digital assets using methods like share as a link, downloading, and via [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link].
 feature: Asset Management, Collaboration, Asset Distribution
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 ---
 # Share and distribute assets managed in [!DNL Experience Manager] {#share-assets-from-aem}
@@ -48,7 +49,7 @@ For Email Configuration related settings, visit [Email Service Documentation](ht
 
    ![Configure Email Service](/help/assets/assets/config-email-service.png)
 
-## Share assets as a link {#sharelink}
+## Share assets as a link
 
 Sharing assets through a link is a convenient way of making the resources available to external parties, marketers, and other [!DNL Experience Manager] users. The functionality allows anonymous users to access and download the assets shared with them. When downloading assets from a shared link, [!DNL Experience Manager Assets] uses an asynchronous service that offers faster and uninterrupted download. The assets to be downloaded are queued in the background into ZIP archives of manageable file size. For large downloads, the download is bundled into multiple files of 100 GB per file size.
 
@@ -167,7 +168,7 @@ You can also copy the auto-generated link and share it with the users. The defau
 
 
 <!--
-## Share assets as a link {#sharelink}
+## Share assets as a link
 
 To generate the URL for assets you want to share with users, use the Link Sharing dialog. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first log in to Experience Manager Assets.
 
@@ -273,7 +274,8 @@ To generate the URL for assets that you want to share with users, use the Link S
     * SMTP password: email server password
 -->
 
-<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
+<!--
+ TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 ### Configure maximum data size {#maxdatasize}
 
 When you download assets from the link shared using the Link Sharing feature, Experience Manager compresses the asset hierarchy from the repository and then returns the asset in a ZIP file. However, in the absence of limits to the amount of data that can be compressed in a ZIP file, huge amounts of data is subjected to compression, which causes out of memory errors in JVM. To secure the system from a potential denial of service attack due to this situation, you can configure the maximum size of the downloaded files. If uncompressed size of the asset exceeds the configured value, asset download requests are rejected. The default value is 100 MB.
@@ -312,22 +314,26 @@ See [how to configure [!DNL Assets] to use it with [!DNL Adobe Asset Link]](http
 * If you cannot share assets using link sharing functionality, ensure that you have the appropriate permissions. See [share assets](#sharelink).
 -->
 
-<!-- TBD: Add content or link about how to share using Brand Portal when it is available on [!DNL Cloud Service].
+<!--
+ TBD: Add content or link about how to share using Brand Portal when it is available on [!DNL Cloud Service].
 -->
 
 **See also**
 
-* [Translate Assets](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [Assets supported file formats](file-format-support.md)
-* [Search assets](search-assets.md)
-* [Connected assets](use-assets-across-connected-assets-instances.md)
-* [Asset reports](asset-reports.md)
-* [Metadata schemas](metadata-schemas.md)
-* [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata.md)
-* [Search facets](search-facets.md)
-* [Manage collections](manage-collections.md)
-* [Bulk metadata import](metadata-import-export.md)
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
 

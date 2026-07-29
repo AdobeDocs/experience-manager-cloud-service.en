@@ -4,6 +4,7 @@ Description: Learn how to send data from your Adaptive Form to a SharePoint stor
 keywords: How to connect SharePoint list for an adpative form?, Submit to SharePoint, Create a SharePoint List Configuration, Use the Submit to SharePoint submit action in an Adaptive Form, Connect an Adaptive Form to Microsoft&reg; SharePoint List.
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
 ---
 # Connect an Adaptive Form to Microsoft&reg; SharePoint List {#connect-af-sharepoint-list}
@@ -38,6 +39,43 @@ To connect AEM Forms to your Microsoft&reg; Sharepoint List:
 1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
 1. Select **[!UICONTROL Create]** to create the cloud configuration for the Microsoft&reg; SharePointList.
 
+### Certificate-based authentication {#certificate-based-authentication}
+
+<span class="preview"> Certificate-based authentication for the SharePoint List configuration is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
+In the SharePoint List configuration wizard:
+
+1. Set **[!UICONTROL Authentication Type]** to **Certificate based authentication**.
+1. Specify **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Certificate Alias]**, **[!UICONTROL Tenant Id]**, and **[!UICONTROL Tenant Name]**.
+1. Enter the **[!UICONTROL SharePoint Site URL]**, verify the site connection if needed, and select the **[!UICONTROL SharePoint List]**.
+1. Click **[!UICONTROL Connect]** to verify the connection, then click **[!UICONTROL Save & Close]** to save the configuration.
+
+The below screenshot displays the SharePoint List configuration with **Certificate based authentication**:
+
+![SharePoint List configuration with certificate based authentication](/help/forms/assets/sharepoint-list-certificate-auth-configuration.png){width=50%, height=50%, align=center}
+
+To prepare the certificate for AEM and Microsoft Azure, perform the following steps in AEM, then register the public certificate in Microsoft Azure.
+
+**In AEM**
+
+1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
+1. Search for **[!UICONTROL fd-cloudservice]**, select the user, and click **[!UICONTROL Properties]**.
+1. Open the **[!UICONTROL Keystore]** tab. If a keystore is not created yet, click **[!UICONTROL Create Keystore]** and complete the prompts to set the keystore password.
+1. Add the private key to the keystore: expand **[!UICONTROL Add Private Key From Keystore File]** and upload your **.jks** file. 
+1. Enter an **[!UICONTROL Alias]** that matches the **[!UICONTROL Certificate Alias]** in the SharePoint List configuration, submit the key material, then click **[!UICONTROL Save & Close]**.
+
+The screenshot displays the keystore after the certificate is added. The **[!UICONTROL Alias]** must match the **[!UICONTROL Certificate Alias]** in the SharePoint List cloud configuration:
+
+![fd-cloudservice user Keystore with certificate alias](/help/forms/assets/fd-cloudservice-keystore-certificate.png){width=50%, height=50%, align=center}
+
+**In Microsoft Azure**
+
+1. Open your application registration and go to **Certificates & secrets** > **Certificates**. 
+1. Select **Upload certificate** and upload the certificate file (public key) that Azure must trust for the application.
+
+The screenshot displays the **Certificates** tab in the Azure portal, where you upload the certificate for the app registration:
+
+![Azure app registration Certificates and secrets](/help/forms/assets/azure-app-registration-sharepoint-certificates.png){width=50%, height=50%, align=center}
 
 ## 2. Use the Submit using Form Data Model (FDM) in an Adaptive Form {#use-submit-using-fdm}
 

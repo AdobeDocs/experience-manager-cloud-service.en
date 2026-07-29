@@ -4,48 +4,49 @@ description: Learn how you can split staging and production deployments using de
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-hide: no
 hidefromtoc: no
-index: yes
+index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
 ---
 # Split stage-only and production-only pipelines {#stage-prod-only}
 
-<!-- REMOVED AS PER CQDOC-23086 ON OCTOBER 3, 2025:
-badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#staging-production-only-pipelines" -->
+<!--
+ REMOVED AS PER CQDOC-23086 ON OCTOBER 3, 2025:
+badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#staging-production-only-pipelines"
+-->
 
 You can split staging and production deployments using dedicated pipelines.
 
 ## Overview {#overview}
 
-Staging and production environments are tightly coupled. By default, deployments to them are linked to a singular pipeline. That is, a deployment pipeline deploys to both the staging and production environments in that program. While this coupling is normally suitable, there are certain use cases where disadvantages are present:
+Staging and production environments are tightly coupled. By default, deployments to them are linked to a singular pipeline. A deployment pipeline deploys to both the staging and production environments in that program. While this coupling is normally suitable, there are certain use cases where disadvantages arise:
 
-* If you want to deploy to stage-only, you reject the **Promote to Prod** step in the pipeline. However, the execution becomes marked as canceled.
+* If you want to deploy to staging, you reject the **Promote to Prod** step in the pipeline. However, the execution is marked as canceled.
 * If you want to deploy the latest code in a staging environment to production, you need to redeploy the entire pipeline including the staging deployment even though no code was changed there.
-* Environments cannot be updated during deployments. If you pause to test in the staging environment for several days before promoting to production, the production environment remains locked and cannot be updated. This scenario makes non-dependent tasks such as updating [environment variables](/help/implementing/cloud-manager/environment-variables.md) impossible.
+* Environments cannot be updated during deployments. If you wait to test in the staging environment for several days before promoting to production, the production environment remains unavailable and cannot be updated. This scenario prevents non-dependent tasks such as updating [environment variables](/help/implementing/cloud-manager/environment-variables.md).
 
-Stage-only and prod-only pipelines offer solutions to these use-cases by providing dedicated deployment options.
+Stage-only and prod-only pipelines offer solutions to these use cases by providing dedicated deployment options.
 
 * **Stage-Only Deployment Pipelines:** Deploys only to a staging environment with the execution finishing once the deployment and tests are done. A stage-only pipeline behaves identically to the standard coupled full stack prod pipeline but without the production deployment steps (approval, schedule, deploy).
-* **Prod-Only Deployment Pipelines:** Deploys only to production by selecting the most recent successful stage execution. Then deploying its artifacts to production. Prod-only pipelines reuse stage deployment artifacts, bypassing the build phase.
+* **Prod-Only Deployment Pipelines:** Deploys only to production by selecting the most recent successful stage execution. It then deploys its artifacts to production. Prod-only pipelines reuse stage deployment artifacts, omitting the build phase.
 
-Stage-only and prod-only pipelines are not executed while a full-stack production pipeline is in progress, and vice versa. If both the stage-only and the full-stack production pipeline have the **On Git Changes** trigger configured and are pointing to the same branch and repository, only the stage-only pipeline is automatically started. Prod-only pipelines do not start **`On Git Changes`** because they are not directly linked to a repository.
+Stage-only and prod-only pipelines are not executed while a full-stack production pipeline is in progress, and vice versa. If both the stage-only and the full-stack production pipeline have the **On Git Changes** trigger configured and are pointing to the same branch and repository, only the stage-only pipeline is automatically started. Prod-only pipelines do not trigger **`On Git Changes`** because they are not directly linked to a repository.
 
-Prod-only pipelines are triggered manually, as they are not directly linked to a repository for **On Git Changes**.
+Prod-only pipelines are triggered manually, as they are not directly linked to a repository for **On Git Changes** triggers.
 
-These dedicated pipelines offer more flexibility, but you should note the following details of operation and recommendations.
+These dedicated pipelines offer more flexibility, but note the following details of operation and recommendations.
 
 >[!NOTE]
 >
->Prod-only pipelines always use artifacts from the stage-only pipeline. This process remains true even if the standard coupled production pipeline has deployed something else to stage in the meantime.
+>Prod-only pipelines always use artifacts from the stage-only pipeline. This process remains true even if the standard coupled production pipeline has deployed a different version to stage in the meantime.
 >
->* Such as scenario could lead to unwanted code rollbacks.
->* Adobe recommends to stop using the standard coupled production pipeline once you start using the prod-only and stage-only pipelines.
+>* This scenario leads to unintended code rollbacks.
+>* Adobe recommends stopping the use of the standard coupled production pipeline once you start using the prod-only and stage-only pipelines.
 >* If you still decide to run both the standard coupled pipelines and stage/prod-only pipelines, keep in mind the reuse of artifacts to avoid code rollbacks.
 
 ## Pipeline creation {#pipeline-creation}
 
-Prod-only and stage-only pipelines are created in a similar fashion to the standard coupled [production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) and [non-production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). See those documents for details.
+Prod-only and stage-only pipelines are created similarly to the standard coupled [production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) and [non-production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). See those documents for details.
 
 1. In the **Pipelines** window, click **Add Pipeline**.
 
@@ -56,23 +57,23 @@ Prod-only and stage-only pipelines are created in a similar fashion to the stand
 
 >[!NOTE]
 >
->Certain options may be grayed out if the corresponding pipelines already exist.
+>Certain options are grayed out if the corresponding pipelines already exist.
 >
 >* **Add Production Only Pipeline** is unavailable if a stage-only pipeline does not yet exist.
 >* **Add Production Pipeline** is unavailable if a standard coupled pipeline already exists.
->* Only one prod-only and one stage-only pipelines are allowed per program.
+>* Only one prod-only and one stage-only pipeline are allowed per program.
 
 ### Create a stage-only pipeline {#stage-only}
 
 1. In the **Add Non-Production Pipeline** dialog box, on the **Configuration** tab, select the **Deployment Pipeline** field for your pipeline.
-1. In the Non-Productoin Pipeline Name field, enter a free-text name.
+1. In the Non-Production Pipeline Name field, enter a free-text name.
 1. Select the desired deployment options, then click **Continue**.
 
    ![Configuration tab in the Add Non-Production Pipeline dialog box](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-1.png)
 
 1. On the **Source Code** tab, select **Full Stack Code**. This option builds and deploys the entire AEM application (back-end, Dispatcher/web tier config, and any front-end modules in the repo).
 
-1. In the **Eligible Deployment Environments** drop-down list, select the **stage** environment as the deployment environment for your pipeline. Selecting stage creates a pipeline dedicated to the stage environment (production promotion happens by way of a separate pipeline).
+1. In the **Eligible Deployment Environments** drop-down list, select the **stage** environment as the deployment environment for your pipeline. Selecting stage creates a pipeline dedicated to the stage environment (production promotion happens through a separate pipeline).
 
 1. Select your **Repository** and **Git Branch** in the respective drop-down lists, then click **Continue**. 
 
@@ -91,11 +92,11 @@ Prod-only and stage-only pipelines are created in a similar fashion to the stand
 
 ### Create a prod-only pipeline {#prod-only}
 
-1. In the dialog box **Add Production Only Pipeline**, in the **Pipeline Name** text field, enter the free-text name of the pipeline.
+1. In the **Add Production Only Pipeline** dialog box, in the **Pipeline Name** text field, enter the free-text name of the pipeline.
 1. In the **Pipeline Name** field, type the name you want.
 1. Under **Production Deployment Options**, select **Pause before deploying to Production**.
 
-   This option inserts a manual approval gate right before the production step. The pipeline stops and waits for an approver (such as a Deployment Manager, or a Business Owner) to Approve or Cancel the production deploy. 
+   This option inserts a manual approval gate right before the production step. The pipeline stops and waits for an approver (such as a Deployment Manager or a Business Owner) to approve or cancel the production deploy. 
    
    Use for change control or last-minute checks.
 
@@ -107,7 +108,8 @@ Prod-only and stage-only pipelines are created in a similar fashion to the stand
 
 You can start the new pipelines [like any other pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines). You can also trigger a production-only pipeline directly from a stage-only pipeline's execution details.
 
-<!-- * Stage-only and prod-only pipelines offer a new [emergency mode](#emergency-mode) to skip testing.
+<!--
+ * Stage-only and prod-only pipelines offer a new [emergency mode](#emergency-mode) to skip testing.
 Prod-only pipeline run can be triggered directly from the execution details of a [stage-only pipeline](#stage-only-run).
 
 
@@ -118,7 +120,8 @@ When starting production-only and staging-online pipelines, you are prompted to 
 * **Normal Mode** is a standard run and includes stage testing steps.
 * **Emergency Mode** skips stage testing steps.
 
-![Emergency Mode](/help/assets/configure-pipelines/emergency-mode.png) -->
+![Emergency Mode](/help/assets/configure-pipelines/emergency-mode.png)
+-->
 
 ### Run stage-only pipelines {#stage-only-run}
 
@@ -126,7 +129,7 @@ In the execution details, a **Promote Build** button appears after the testing s
 
 ![Stage-only pipeline run](/help/implementing/cloud-manager/configuring-pipelines/assets/stage-only-pipelines-run.png)
 
-When you click **Promote Build**, a dialog box opens for you to confirm the run of the related production-only pipeline. Click **Run** to start it. 
+When you click **Promote Build**, a dialog box opens for you to confirm the run of the related production-only pipeline. To start it, click **Run**. 
 
 ![Promote Build - Run Pipeline dialog box](/help/implementing/cloud-manager/configuring-pipelines/assets/promote-build-run.png)
 

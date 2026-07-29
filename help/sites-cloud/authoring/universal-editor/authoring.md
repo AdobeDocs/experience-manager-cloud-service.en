@@ -1,6 +1,7 @@
 ---
 title: Authoring Content with the Universal Editor
 description: Learn how easy and intuitive it is for content authors to create content using the Universal Editor.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
@@ -85,7 +86,9 @@ The [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.m
 
 ![Rich text component in the properties panel](assets/rich-text-properties-panel.png)
 
-Tap the entry to open a dialog presenting a larger canvas to edit the rich text.
+#### The Modal Editor {#modal-editor}
+
+Tap the entry in [the properties panel](#properties-rail) to open a modal editor which offers a larger canvas to edit the rich text.
 
 ![Rich text editing dialog](assets/rich-text-canvas.png)
 
@@ -93,27 +96,48 @@ Tap or click **Cancel** or **Done** to discard or save the changes, respectively
 
 #### Rich Text Formatting Options {#formatting-options}
 
-The rich text editor (RTE) of the Universal Editor allows the author to apply standard text formatting. By default, the following options are available.
+The rich text editor (RTE) of the Universal Editor allows the author to apply standard text formatting. The following options are available.
 
-* Paragraph (h1, h2, h3, etc.)
-* Bold
-* Italics
-* Underline
-* Superscript
-* Subscript
-* Bulleted list
-  * Use the tab key to indent and shift+tab to outdent
-* Ordered list
-  * Use the tab key to indent and shift+tab to outdent
-* Link
-* Unlink
-* Image
-* Paste as Text
-* Remove All Formatting
+* **Paragraph Style**
+  * Paragraph, h1-h6, code
+* **Bold**
+* **Italic**
+* **Underline**
+* **Strikethrough**
+* **Text Color**
+  * Opens a color palette where you can select a color or specify a hex value
+  * Only available in the modal editor, not in-context
+* **Superscript**
+* **Subscript**
+* **Bullet list**
+  * Use the tab key to indent and shift+tab to outdent.
+* **Ordered list**
+  * Use the tab key to indent and shift+tab to outdent.
+* **Link**
+  * Specify a URL or use the Content Browser to select a path within AEM.
+* **Unlink**
+  * Remove link from selected text.
+* **Image**
+  * Specify a URL or use the [Content Advisor](/help/assets/integrate-adobe-non-adobe-applications.md) to select an asset from AEM.
+* **Table**
+  * Use the drop-down to insert a new table of the selected number of columns and rows or insert and remove new columns/rows.
+* **Alignment**
+  * **Align Left**
+  * **Align Center**
+  * **Align Right**
+  * **Align Justify**
+* **Right to Left**
+* **Left to Right**
+* **Indent**
+* **Outdent**
+* **Paste as Text**
+  * Remove formatting from text on your clipboard before pasting into the Universal Editor.
+* **Special Character** 
+  * Insert a special character into your text.
+* **Remove All Formatting**
+  * Remove all formatting options from the selected text.
 
-Existing tables can be edited using the RTE, but new tables can not be created.
-
-The RTE can be configured to hide options or show additional options depending on authors' needs. Please see the document [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md) for more information.
+Depending on your back end, the options available by default may vary. The RTE can be configured to hide options or show additional options depending on authors' needs. Please see the document [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md) for more information.
 
 ### Editing Media {#edit-media}
 
@@ -122,7 +146,7 @@ You can view its details in the [properties panel.](/help/sites-cloud/authoring/
 ![Editing media](assets/ue-edit-media.png)
 
 1. Tap or click the preview of the selected image in the properties panel.
-1. The [asset selector](/help/assets/overview-asset-selector.md#using-asset-selector) window opens to allow you to select an asset.
+1. The [Content Advisor](/help/assets/integrate-adobe-non-adobe-applications.md) window opens to allow you to select an asset.
 1. Select to select a new asset.
 1. Select **Select** to return to the properties panel where the asset was replaced.
 
@@ -160,11 +184,23 @@ Depending on the needs of your workflow, you may want to edit the Content Fragme
 
    ![Selecting a component to add to a container](assets/ue-add-component.png)
 
-1. Then select the add icon in the properties panel.
+1. You can then either:
 
-   ![Select add icon](assets/add-icon.png)
+   * Select the **Add** icon in the properties panel.
 
-1. If more than one component is allowed for the container, select which one you wish to insert from the drop-down. If only one component is allowed, it is inserted automatically.
+     ![Select add icon](assets/add-icon.png)
+  
+   * Select the **Add** option in the context menu.
+
+     ![Add from context menu](assets/add-from-context-menu.png)
+
+1. The component picker dialog opens. 
+   * Use the left column to filter components by category or use the search to filter by name.
+   * Click the component name in the right column to insert it into the container.
+   * If only one component is allowed in the container, it is inserted automatically.
+   * Click outside of the picker to cancel component insertion.
+
+   ![Component picker](assets/component-picker.png)
 
 The component is inserted into the container and can be edited in the editor.
 
@@ -175,21 +211,28 @@ The component is inserted into the container and can be edited in the editor.
 ### Duplicating Components in Containers {#duplicating-components}
 
 1. Select a component in a container using the [content tree](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) or the editor.
-1. Then select the **Duplicate** icon in the properties panel.
 
-   ![Selecting a component to add to a container](assets/ue-duplicate-component.png)
-1. The component is duplicated and inserted below the selected component.
+1. You can then either:
 
-The component is inserted into the container and can be edited in the editor.
+   * Select the **Duplicate** icon in the properties panel.
+
+     ![Selecting a component to add to a container](assets/ue-duplicate-component.png)
+
+   * Select the **Duplicate** option from the context menu.
+
+     ![Duplicate from context menu](assets/duplicate-from-context-menu.png)
+
+The component is duplicated and inserted below the selected component.
 
 ### Deleting Components from Containers {#deleting-components}
 
-1. Select a container component in the [content tree](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) or in the editor.
-1. Select the chevron icon of the container to expand its contents in the content tree.
-1. Then, in the content tree, select a component within the container.
-1. Select the delete icon in the properties panel.
+1. Select a component in a container in the [content tree](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) or in the editor.
+1. You can then either:
+   * Select the **Delete** icon in the properties panel.
 
-   ![Deleting a component](assets/ue-delete-component.png)
+     ![Deleting a component](assets/ue-delete-component.png)
+   * Select the **Delete** option in the context menu.
+     ![Delete from the context menu](assets/delete-from-context-menu.png)
 
 The selected component deleted.
 
@@ -199,7 +242,18 @@ The selected component deleted.
 
 ### Reordering and Moving Components {#reordering-components}
 
-You can move and reorder components using the context menu or the content tree.
+You can move and reorder components using drag-and-drop, the context menu, or the content tree.
+
+>[!NOTE]
+>
+>Components can only be moved between containers if the target containers [component filter](/help/implementing/universal-editor/filtering.md) allows the selected component.
+
+#### Move Components with Drag-and-Drop {#drag-and-drop-move}
+
+1. Click and drag the component you wish to move.
+   * As you mouse over the destination, the editor will show you where the component will be placed if you drop it with a horizontal blue line.
+   ![Drag-and-drop a component to move it](assets/drag-and-drop-component-move.png)
+1. Drop the component to relocate it.
 
 #### Move Components with the Context Menu {#move-context-menu}
 
@@ -222,7 +276,7 @@ The component is moved in both the editor and the content tree.
 >
 >The context menu options can only move components within their containers. If you wish to move components between containers, [use the content tree.](#reorder-content-tree)
 
-#### Reorder Components with the Content Tree {#reorder-content-tree}
+#### Move Components with the Content Tree {#reorder-content-tree}
 
 1. If not already in [content tree mode](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode), switch to it.
 1. Select a container component in the content tree or in the editor.
@@ -234,10 +288,6 @@ The component is moved in both the editor and the content tree.
 1. The dragged component is grayed in the content tree, while your insertion point is represented by a blue line. Release the component to place it in its new location.
 
 The components are reordered in both the content tree and in the editor.
-
->[!NOTE]
->
->Components can only be moved between containers if the target containers [component filter](/help/implementing/universal-editor/filtering.md) allows the selected component.
 
 ### Undo and Redo {#undo-redo}
 
@@ -263,21 +313,23 @@ Copy and paste can be on the same browser tab or between browser tabs, provided 
 ![Paste icon](assets/paste.png)
 
 1. Select a component either within the editor or in the content tree.
-1. The **Copy** icon appears in the [properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) Tap or click it.
-1. The **Paste** icon appears in the properties panel.
+1. You can then either:
+   * Click the **Copy** icon in the [properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
+     ![Copy from panel](assets/copy-from-panel.png)
+   * Select the **Copy** option in the context menu.
+     ![Copy from context menu](assets/copy-from-context-menu.png)
 1. Select the component _after_ which you wish to paste the copied component.
-1. Tap or click Paste.
-1. The copied component is pasted _after_ the selected component.
+1. You can then either:
+   * Tap or click **Paste** in the properties panel.
+     ![Paste from panel](assets/paste-from-panel.png)
+   * Select **Paste** in the context menu.
+     ![Paste from context menu](assets/paste-from-context-menu.png)
+
+The copied component is pasted _after_ the selected component.
 
 >[!TIP]
 >
 >Use the hot key `Command-C` or `Command-V` to copy or paste, respectively.
-
-## Context Options {#context-options}
-
-When editing in place, the editor will offer context-relevant options with a right-click such as duplicating, deleting, or copying components.
-
-![Context options menu](assets/context-options-menu.png)
 
 ## Previewing Content {#previewing-content}
 
@@ -327,27 +379,26 @@ For information on how to enable this extension, [please see the Extension Manag
 
 ### Accessing Page Properties {#page-properties}
 
-The **AEM Page Properties Extension** allows quick access to the [Page Properties window](/help/sites-cloud/authoring/sites-console/page-properties.md) for the page currently being edited.
+The **Page Properties** button allows quick access to the [AEM Page Properties window](/help/sites-cloud/authoring/sites-console/page-properties.md) for the page currently being edited.
 
 ![Page properties icon](assets/page-properties-icon.png)
 
 Tap or click the **Page Properties** icon in the Universal Editor toolbar to open the page properties for the page in a new browser tab.
 
-For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
-
 >[!NOTE]
 >
->The **AEM Page Properties Extension** only works for pages, not Content Fragments.
+>* The **AEM Page Properties** button only works for pages, not Content Fragments.
+>* The button is shown only when the remote page has a [connection with protocol](/help/implementing/universal-editor/component-definition.md#plugins) `aem` or `xwalk` and a unique page path can be resolved from the current editable.
 
-### Access Sites Console {#sites-console}
+### Open in Site Admin {#sites-console}
 
-The **AEM Site Admin Extension** allows quick access to the page being edited within the [Sites Console of AEM,](/help/sites-cloud/authoring/sites-console/introduction.md) allowing you to navigate the site tree or perform page-level actions in the console.
+The **Open in Site Admin** button allows quick access to the [Sites Console of AEM](/help/sites-cloud/authoring/sites-console/introduction.md) (or the [Experience Fragments console](/help/sites-cloud/authoring/fragments/experience-fragments.md) for `/content/experience-fragments` paths) to show you where the page you are currently editing exists in your content structure. This allows you to navigate the site tree or perform page-level actions in the console.
 
 ![Open in site admin icon](assets/open-in-site-admin-icon.png)
 
 Tap or click the icon to open the Sites Console in a new browser tab, navigated to the page currently in the editor.
 
-For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+The button is hidden for DAM paths (`/content/dam`) and when no unique AEM page can be determined from the current editables.
 
 ### Locking and Unlocking Pages {#locking-pages}
 
@@ -427,3 +478,4 @@ To learn more about the technical details of the Universal Editor, please see th
 * [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.
 * [Attributes and Types](/help/implementing/universal-editor/attributes-types.md) - Learn about the data attributes and types that the Universal Editor requires.
 * [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md) - Learn how the Universal Editor authenticates.
+

@@ -3,6 +3,7 @@ title: Configuring Live Copy Synchronization
 description: Learn about the powerful Live Copy synchronization options available and how you can configure and customize them for your project's needs.
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 solution: Experience Manager Sites
 ---

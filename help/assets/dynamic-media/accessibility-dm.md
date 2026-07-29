@@ -6,6 +6,7 @@ topic-tags: introduction
 content-type: reference
 feature: Accessibility
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
 ---
 # Accessibility in Dynamic Media {#accessibility-in-dm}

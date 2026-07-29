@@ -2,6 +2,7 @@
 title: Search assets in Content Hub
 description: Learn how to search assets in [!DNL Content Hub]
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
 ---
 # Search Assets in [!DNL Content Hub] {#search-assets}
@@ -42,13 +43,74 @@ For example, search for all the **[!UICONTROL JPEG]** images with keyword `archi
 
 1. Navigate to **[!UICONTROL Modified]** > specify the date range. 
 
-    ![Basic search](assets/basic-search.png)
+   ![Basic search](assets/basic-search.png)
 
 ## Narrow your search results using filters {#narrow-down-search-results}
 
-Use the Filters panel to search for assets based on metadata. You can filter search results based on various search predicates. You can select all the appropriate predicates to minimize or narrow down your search results. You can choose more than 10 predicates while filtering your search results. When you select multiple options within a filter, Content Hub displays the assets that match any of the options selected within a filter. However, when you select multiple options across filters, Content Hub only displays the assets that match all options selected across filters to narrow down your search results. 
+Use the Filters panel to search for assets based on metadata. You can filter search results based on various search predicates. You can select all the appropriate predicates to minimize or narrow down your search results. You can choose more than 10 predicates while filtering your search results. When you select multiple options within a filter, Content Hub displays the assets that match any of the options selected within a filter. However, when you select multiple options across filters, Content Hub only displays the assets that match all options selected across filters to narrow down your search results.
 
 The default filters include file format, approved by, date approved, expired and not expired assets, and expiration date. Administrators can also configure the filters that display in the list of filters. For more information, see [Configure Content Hub user interface](configure-content-hub-ui-options.md#configure-filters-content-hub).
+
+   >[!NOTE]
+   >
+   >The new filter gets displayed on the Search page only if there is at least one asset in the repository matching the filter criteria. The maximum number of fields available in the filter panel on the Search page is 40.
+
+## AI Search in Content Hub {#ai-search-aem-assets-content-hub}
+
+AI Search in AEM Assets Content Hub is an advanced search capability that understands the meaning and intent behind a user's query rather than relying on exact keyword matches. It uses artificial intelligence (AI) and machine learning to deliver more accurate and contextually relevant results.
+
+Unlike traditional keyword-based search, which looks for exact terms, AI Search interprets relationships between words, concepts, and user intent. This ensures that users find what they are looking for—even if their query is phrased differently, contains typos, or is in another language.
+
+Some if its key benefits include:
+
+* **Multilingual support**: Search across multiple languages without requiring exact translations. Users can find relevant content regardless of their query language.
+
+* **Handles misspellings**: Interprets typos and spelling errors, ensuring accurate results even with imperfect input.
+
+* **Understands synonyms**: Delivers results for related terms and phrases, so users do not need to guess the right keyword.
+
+* **Contextually relevant search**: Recognizes the intent behind a query, not just the exact words.
+
+To enable AI Search:
+
+* Minimum required AEM release version is `25520`.
+
+>[!IMPORTANT]
+>
+>This feature is available as Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+
+AI Search is available for Content Hub environments that use the latest search stack. Adobe is rolling out the latest search stack to Content Hub customers in phases. 
+
+To verify if you are using the latest search stack, navigate to your user profile icon and click **Configurations** on the Content Hub User Interface. Select the **Search** tab. If you can see options to select **AI Search** or **Keyword**, AI Search is available and you are using the latest search stack.
+
+![AI Search in Content Hub](/help/assets/assets/ai-search-content-hub.png)
+
+If AI Search is not yet available and you want to enable it, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+
+### Examples for AI Search in Content Hub {#examples-ai-search-aem-assets-content-hub}
+
+**Example Prompt**: *Woman drinking coffee*
+
+The traditional keyword-based search looks for exact matches of asset metadata, such as `Woman`, `drinking`, `Coffee`, and returns assets that include all these terms in the metadata.
+
+However, AI Search matches similar words such as `Girl`, `Lady` in the case of `Woman` and `Cappuccino` and `Latte` in the case of `Coffee`.
+
+Similarly, you can specify this prompt in Spanish or misspell `Woman` as `Wman` and still get the same results.
+
+
+### Enable or disable AI Search in Content Hub {#enable-disable-ai-search-content-hub}
+
+The steps to enable or disable AI Search in Content Hub are the same that you use to verify if you are using the latest search stack for Content Hub.
+
+Execute the following steps to enable or disable AI Search in Content Hub:
+
+1. Navigate to your user profile icon and click **[!UICONTROL Configurations]**.
+
+1. In the **[!UICONTROL Search]** tab, select **[!UICONTROL AI Search]** to enable AI Search for Content Hub or **[!UICONTROL Keyword]** to disable it.
+
+   ![AI Search in Content Hub](/help/assets/assets/ai-search-content-hub.png)
+
+1. Click **[!UICONTROL Save]**.
 
 <!--
 
@@ -112,7 +174,7 @@ The default filters include file format, approved by, date approved, expired and
         </ul>
       </td>
      </tr>
-     <!--<tr>
+     <tr>
       <td>Subject</td>
       <td>Classification of assets based on their theme. For example, colorful, hiking, outdoors.</td>
       <td>NA</td>
@@ -127,7 +189,7 @@ The default filters include file format, approved by, date approved, expired and
         </ul>
       </td>
      </tr>    
-     <!--<tr>
+     <tr>
       <td>Asset ID</td>
       <td>Unique number that identifies the asset.</td>
       <td>NA</td>
@@ -156,10 +218,115 @@ To perform Bulk Search in the [!DNL Content Hub], execute the following steps:
 
   ![Bulk Search UI](assets/bulk-search-ui.png)
 
+## Configure sorting in Content Hub {#configure-sorting-aem-assets-content-hub}
+
+Content Hub provides out-of-the-box sorting options to help users organize asset search results. Administrators can also enable custom metadata fields as sorting options so that users can sort assets based on business-specific metadata, such as Channel, Region, SKU, or Campaign.
+
+To enable Sorting in Content Hub:
+
+* Minimum required AEM release version is `25520`.
+
+### Default sorting options {#default-sorting-options}
+
+By default, Content Hub includes the following sorting options on the Content Hub home page:
+
+* Size
+
+* Modified
+
+* Name
+
+* Relevance
+
+>[!IMPORTANT]
+>
+>This feature is available as Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+
+Sorting is available for Content Hub environments that use the latest search stack. Adobe is rolling out the latest search stack to Content Hub customers in phases. 
+
+To verify if you are using the latest search stack, navigate to your user profile icon and click **Configurations** on the Content Hub User Interface. Select the **Search** tab. If you can see options to select **AI Search** or **Keyword**, AI Search is available and you are using the latest search stack.
+
+![AI Search in Content Hub](/help/assets/assets/ai-search-content-hub.png)
+
+If AI Search is not yet available and you want to enable it, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+
+### Add custom metadata fields as sorting options {#add-custom-metadata-fields-for-sorting}
+
+Administrators can configure additional metadata fields to appear in the sorting menu.
+
+To enable a metadata field for sorting:
+
+1. Click the user profile icon and select **Configurations**.
+1. Navigate to the **Filters** tab.
+1. Locate the metadata field that you want to enable for sorting.
+1. Click the edit icon available for that particular metadata field.
+1. In the Edit Filter dialog, enable the **Sorting** option.
+1. Click **Confirm** and save the configuration. The updates take effect when the **Status** field value for the metadata field is displayed as `Active`.
+
+For example, enabling sorting for the Channel metadata field allows users to sort asset results using the Channel value.
+
+![Basic search](assets/enable-filters-sorting.png)
+
+### Use custom sorting options on the Content Hub home page {#use-custom-sorting-options}
+
+After you enable sorting for a metadata field:
+
+* The field appears in the sorting menu on the Content Hub home page.
+* Custom sorting fields are displayed below a separator line in the sorting menu.
+* The separator visually differentiates administrator-configured custom fields from the default out-of-the-box sorting options.
+
+For example, if the Channel metadata field is enabled for sorting, the sorting menu displays:
+
+* Default fields such as Size, Modified, Name, and Relevance
+* A separator line
+* The custom field Channel
+
+This distinction helps users quickly identify standard sorting options versus organization-specific metadata-based sorting options.
+
+![Basic search](assets/custom-sorting-options.png)
+
 ## Do more with search {#do-more-with-search}
 
 [!DNL The Content Hub] is not limited to search, instead it allows you to perform additional actions, such as [download](download-assets-content-hub.md), [share](share-assets-content-hub.md), and [add assets to collection](collections-content-hub.md), right from the search or preview interface. Select the assets on the search results page to view these options.
 
 Learn more about [configuring assets in the [!DNL Content Hub]](configure-content-hub-ui-options.md).
+
+## Frequently asked questions {#faqs-deploy-content-hub}
+
+### How can I narrow down my search results in AEM Assets Content Hub?
+
+You can narrow down search results in AEM Assets Content Hub by using text-based search, applying various filters (such as file format, approval status, modification date, etc.), searching by tags or smart tags, and using the filters panel. Combining multiple predicates or filter options helps you precisely target the assets you need.
+
+### Can I perform a bulk search in AEM Assets Content Hub for multiple assets at once?
+
+Yes, you can perform a Bulk Search in AEM Assets Content Hub by entering multiple values (such as names, file formats, tags) separated by specified delimiters. The Bulk Search feature allows you to quickly find several assets in a single query, making it more efficient than searching assets one by one.
+
+
+### Can administrators customize the filters available in AEM Assets Content Hub search?
+
+Yes, administrators can use the AEM Assets Content Hub Configuration User Interface to configure which filters are available in search interface. While default filters include file format, approval status, expiration date, and more, administrators can tailor these options to fit organizational needs.
+
+### Do you need the ability to filter on custom date fields or use Tags as filters?
+
+If you need the ability to filter on custom date fields or use Tags as filters, you must get [AI Search](#ai-search-aem-assets-content-hub) enabled for your deployment. [Create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable AI Search.
+
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 

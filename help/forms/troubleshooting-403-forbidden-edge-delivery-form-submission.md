@@ -3,6 +3,7 @@ title: Troubleshooting 403 Forbidden Errors in Edge Delivery Services Form Submi
 description: Learn how to diagnose and resolve 403 Forbidden errors when submitting forms from Edge Delivery Services to AEM Publish. This guide covers common causes including CORS, Dispatcher rules, and Referrer Filter issues.
 feature: Edge Delivery Services
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: f397e059-f1b3-4afa-bd38-8f5fc591bb22
 ---
 # Troubleshooting 403 Forbidden Errors in Edge Delivery Services Form Submission {#troubleshooting-403-forbidden-edge-delivery}

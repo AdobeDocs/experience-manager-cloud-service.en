@@ -3,6 +3,7 @@ title: Analyzing Content Fragments
 description: Understand the structure of your Content Fragments. This provides information relevant for both headless delivery and page authoring.
 feature: Content Fragments
 role: User, Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: d9268c1a-bfe6-4df7-bad9-6007dd79e0aa
 solution: Experience Manager Sites
 ---
@@ -27,4 +28,4 @@ Open the **Structure tree** tab from the editor toolbar to show the hierarchical
 
 For example:
 
-![Content Fragment Editor - Structure tree](assets/cf-authoring-structure-tree.png)
+![Content Fragment Editor - Structure tree](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)

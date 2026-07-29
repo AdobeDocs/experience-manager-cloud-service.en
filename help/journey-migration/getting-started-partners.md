@@ -20,10 +20,12 @@ Cloud Service brings together rich out-of-the-box capabilities and extensibility
 
 This page outlines the phased approach recommended to transition customers from previous Experience Manager deployments to Experience Manager as a Cloud Service. The new, purpose-built platform helps you deliver connected, continuous experiences.
 
-<!-- It primarily focuses on:
+<!--
+ It primarily focuses on:
 * Getting Started with Adobe Experience Manager as a Cloud Service
 * Developer Journey in Adobe Experience Manager as a Cloud Service
-* Moving to Adobe Experience Manager as a Cloud Service -->
+* Moving to Adobe Experience Manager as a Cloud Service
+-->
 
 See the diagram below for a general representation of the migration journey.
 
@@ -143,7 +145,7 @@ Before beginning your transition journey to Cloud Service, you should:
 </tr>
 <tr>
 <td>Measure</td>
-<td><ul><li><a href="https://experienceleague.adobe.com/welcome/aem/part6.html">Establish Project KPIs</a>, success criteria and project timelines</li></ul></td>
+<td><ul><li><a href="/help/overview/assessing-kpis.md">Establish Project KPIs</a>, success criteria and project timelines</li></ul></td>
 </tr>
 </table>
 

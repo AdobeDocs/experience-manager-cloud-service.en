@@ -3,6 +3,7 @@ title: How to add an Adaptive Form to AEM Sites page?
 description: Discover how to create or add an Adaptive Form to your AEM Sites page. Also learn the benefits, and various ways to integrate forms into your website.
 feature: Adaptive Forms, Foundation Components
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 role: User, Developer
 ---
@@ -227,6 +228,17 @@ To configure a JSON Schema or Form Data Model (FDM) for your form:
     * When you select the **[!UICONTROL Schema]** option, use the **[!UICONTROL Schema]** option to select a JSON schema for your form.
 
 1. Click **[!UICONTROL Done]**.
+
+## Configure a Submission PDF (Document of Record) for a form in AEM Sites page or Experience Fragment {#configure-document-of-record-for-form}
+
+You can configure Submission PDF (Document of Record) generation directly from the **[!UICONTROL Adaptive Form Container]** on an AEM Sites page or Experience Fragment.
+
+1. Open the AEM Page Editor or Experience Fragment that contains the Adaptive Form.
+1. Open the Content Tree, and select the **[!UICONTROL Adaptive Forms Container]** that hosts your Adaptive Form. An AEM Sites page can host multiple Adaptive Forms. So, carefully select the correct Adaptive Forms Container.
+1. Click the Adaptive Form Container properties ![Adaptive Form Container properties](/help/forms/assets/configure-icon.svg) icon.
+1. Open the **[!UICONTROL Document of Record]** tab and configure DoR settings.
+
+For detailed instructions, supported options, locale-specific custom XDP templates, and branding customization, see [Generate a Submission PDF (Document of Record) for Adaptive Forms (Core Components)](/help/forms/generate-document-of-record-core-components.md#configure-document-of-record-for-forms-embedded-in-aem-sites).
 
 ## Configure a pre-fill service for a form in AEM Sites page or Expereince Fragment {#configure-prefill-service-for-form}
 

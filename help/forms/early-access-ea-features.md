@@ -3,6 +3,7 @@ title: Current Early Access features of [!DNL Adobe Experience Manager Forms] as
 description: Current Early Access features of [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user, author
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
@@ -20,6 +21,8 @@ The AEM Forms Early Access Program program offers a unique opportunity to you to
 If you're interested in joining our Early Access program for any Early Access innovation, simply send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  to request access. You can request access to all or any specific innovation.  
 
 ## Early Access Innovations 
+
+<!--
 
 ### AEM Forms AI Assistant (Gen AI)
 
@@ -39,8 +42,10 @@ The Generative AI capabilities on offer via AEM Forms AI Assistant are:
 
 * **Configure Submit Action**: Use Generative AI prompts to effortlessly configure a submit action for your form. Choose from a library of pre-built submit actions or from a list of custom submit actions, created and deployed by your own development team.
 
+-->
+<!--
 
-### AEM Forms Workfront Fusion Connector 
+### AEM Forms Workfront Fusion Connector
 
 The AEM Forms Workfront Fusion Connector empowers seamless integration between Adobe Experience Manager (AEM) Forms and Adobe Workfront Fusion. Adobe Workfront serves as a work management application, centralizing the entire work lifecycle, while Workfront Fusion acts as the integration platform facilitating connectivity between Workfront and various business applications. 
 
@@ -48,7 +53,9 @@ Using the AEM Forms Workfront Fusion Connector, you can design workflows that ar
 
 Ready to start? The [submit an Adaptive Form to Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md) documentation provides a step-by-step guide to use the innovation.
 
-<!-- <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> -->
+<br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/>
+
+-->
 
 ### Conversational Forms
 
@@ -66,6 +73,8 @@ Here's what more Conversational Forms bring:
 
 
 Conversational Forms are more than just a new look – they're a game-changer for user experience.  Boost engagement, reduce form abandonment, and make interacting with your website a more enjoyable experience for everyone.
+
+<!--
 
 ### AEM Forms to Marketo Connector
 
@@ -85,6 +94,10 @@ Ready to start? The following articles provides detailed instructions to use the
 * [Integrate an Adaptive Form with Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md) 
 * [Configure Marketo Engage ad data source for existing Adaptive Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
 * [Submit an existing Adaptive Form to Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+
+-->
+
+<!--
 
 ### Interactive Communications on Cloud
 
@@ -139,11 +152,17 @@ Automatically display "Page # of ##" on master pages for clear, consistent pagin
 
 Ready to start? The Interactive Communications editor is available under the Early Access program for Forms as a Cloud Service deployments. To request access, email your organization ID and program details to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address.
 
+-->
+
+<!--
+
 ### AEM Forms Integration with Adobe Experience Platform (AEP)
 
 You can connect AEM Forms with Adobe Experience Platform (AEP) to leverage customer profiles and data for personalized form experiences and trigger downstream workflows based on form submissions. By sending form data directly to AEP datasets, you can enrich customer profiles and gain deeper insights into user interactions.
 
 Ready to start? [Learn more about integrating AEM Forms with Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md).
+
+-->
 
 ### AEM Forms HTML5 Forms
 
@@ -189,6 +208,8 @@ not sure what's going on with this video link. cleaned up version below
 
 Ready to start? The AEM Forms CLI tool is available under the Early Access program for Forms as a Cloud Service deployments. To request access, email your organization ID and program details to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address.
 
+<!--
+
 ### API Integration Tool for Dynamic Form Data
 
 The API Integration Tool enables form authors to create dynamic, intelligent forms that automatically fetch and populate data from external REST APIs based on user interactions. This no-code integration capability transforms static forms into responsive data collection interfaces.
@@ -204,16 +225,21 @@ Key capabilities include:
 
 This tool is particularly useful for scenarios like address auto-completion, dynamic dropdown population, real-time validation against external databases, and creating context-aware form experiences that adapt based on user input.
 
-
+-->
 
 ## Additional Early Access Innovations
 
-### HTML email Templates in Adaptive Forms
+<!--
 
+### HTML email Templates in Adaptive Forms
 
 Adaptive Forms allows you use [HTML email templates](/help/forms/html-email-templates-in-adaptive-forms.md). HTML email templates enable you to send rich, personalized, and visually appealing emails when a form is submitted. These emails can be customized with form data and enhanced using various email tags, such as images and links. With Adaptive Forms, you can either upload a file containing an HTML template or use a plain-text editor to create these templates.
 
 ![HTML email templates](/help/forms/assets/html-email.png)
+
+-->
+
+<!--
 
 ### RESTful Web Services Submit Action
 
@@ -223,7 +249,10 @@ Adaptive Forms can now seamlessly send captured data to authenticated external R
 * Secure Authentication: OAuth 2.0, Basic Auth, API Key, & Custom Authentication
 * Flexible Data Formats: Multi-Part Form Data, JSON, & URL-encoded (Key-Value Pairs)
 
+-->
 
+
+<!--
 
 ### Right-to-left (RTL) languages support
 
@@ -245,6 +274,10 @@ Overall, RTL language support in Adaptive Forms empowers businesses to design tr
 
 Ready to start? [Adaptive Forms RTL documentation](/help/forms/supporting-new-language-localization-core-components.md) provides a step-by-step guide to use the RTL innovation.
 
+-->
+
+<!--
+
 ### Enhanced bot protection methods
 
 AEM Forms has enhanced its security features by adding support for two popular CAPTCHA solutions: Cloudflare Turnstile and hCaptcha. This adds to the already available Google reCAPTCHA, providing users with more choice and flexibility in protecting their forms from bots and spam submissions.
@@ -256,6 +289,10 @@ AEM Forms has enhanced its security features by adding support for two popular C
 By offering multiple CAPTCHA options, AEM Forms have empowered you to select the solution that best aligns with your specific needs. 
 
 Ready to integrate any of these CAPTCHA solution with your Adaptive Forms? Our documentation provides detailed instructions for each: [Cloudflare Turnstile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), and [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+
+-->
+
+<!--
 
 ### Doc Assurance APIs
 
@@ -275,6 +312,8 @@ Here's a breakdown of what Doc Assurance APIs can do:
     When PDF documents have the appropriate usage rights added, recipients can do enabled activities from within Adobe Reader. 
 
 Overall, [Doc Assurance APIs](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) help you improve document security and compliance by adding an extra layer of control.
+
+-->
 
 
 ### Forms Service APIs
@@ -311,6 +350,18 @@ Storing PDFs in Azure Blob Storage allows for centralized management of document
 
 * [Retrieve property values from a JSON array](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array): Invoke an API with a custom function to extract values from a JSON array and bind them directly to form fields.
 
+<!--
+
+### Versioning support in Forms Manager
+
+Forms Manager now supports versioning for Adaptive Forms (Core Components and Foundation Components), form fragments, themes, XDP templates, and binary assets. You can create versions, view history, and restore earlier states from the Forms & Documents console. See [Manage form versions in Forms Manager](/help/forms/manage-form-versions-forms-manager.md).
+
+-->
+
+### Improved accessibility for form components
+
+Adaptive Forms Core Components introduce WCAG-compliant semantic markup for checkbox groups, radio button groups, and panels. These components now leverage `<fieldset>` and `<legend>` elements to establish meaningful relationships between group labels and their options for assistive technologies. See [Fieldset and legend support in Adaptive Forms](/help/forms/creating-accessible-adaptive-forms.md#fieldset-legend-accessibility).
+
 ## See also
 
 * [Latest Innovations in AEM Forms](/help/forms/latest-innovations.md)
@@ -318,4 +369,5 @@ Storing PDFs in Azure Blob Storage allows for centralized management of document
 * [Capabilities of AEM Forms as a Cloud Services](/help/forms/home.md)
 
 * [Difference between AEM 6.5 Forms (AMS and on-prem) and AEM Forms as a Cloud Services (AEM CS Forms)](/help/forms/notable-changes.md)
+
 

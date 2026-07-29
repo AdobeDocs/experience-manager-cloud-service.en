@@ -12,15 +12,15 @@ exl-id: cc80a36b-2fd2-41cc-8cb7-6c25e8e89a4e
 
 <!-- badge: label="Beta" type="Positive" -->
 
-To use AI Assistant in AEM (Adobe Experience Manager), permission to access Product Knowledge through the AI Assistant is mandatory. This permission is turned ON by default.
+To use AI Assistant in AEM (Adobe Experience Manager), permission to access Product Knowledge through the AI Assistant is mandatory. Adobe turns this permission ON by default.
 
 If you want to control who can access Product Knowledge, send an email to [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) from your email address associated with your Adobe ID. Adobe can enable user-level access control. When it is enabled, your Admin can grant user-level access by following the steps described below.
 
-If you requested user-level access control, your organization must opt in by way of the Adobe Admin Console. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to AI Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
+If you requested user-level access control, your organization must opt in through the Adobe Admin Console. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to AI Assistant across AEM. If the goal is company-wide availability, the admin assigns all users to that group.
 
-From an employee's perspective, the process is straightforward: identify the product administrator for Adobe Experience Manager in your organization and request to be added to the AI-enabled user group. Once you appear in that group, the Assistant icon shows up automatically the next time you sign in.
+For users, the process is simple: identify the product administrator for Adobe Experience Manager in your organization and request to be added to the AI-enabled user group. Once you are added to that group, the Assistant icon appears automatically the next time you sign in.
 
-Administrators should keep normal Cloud Manager governance in mind. Hold product administrator rights in the Admin Console to create profiles, manage user groups, or edit permissions. If users also need the Assistant's built-in **Create Support Ticket** feature, add the standard **Support Admin** role (standard Admin Console role) to the same individuals or group.
+Administrators should follow normal Cloud Manager governance. To create profiles, manage user groups, or edit permissions, hold product administrator rights in the Admin Console. If users also need the Assistant's built-in **Create Support Ticket** feature, add the standard **Support Admin** role (standard Admin Console role) to the same individuals or group.
 
 The configuration process of AI Assistant in AEM consists of the following steps:
 
@@ -39,9 +39,9 @@ Before you begin, be sure you have met the following prerequisites:
 
 **Configuration considerations**
     
-* Processing time: Resources created in Cloud Manager may take up to 2 minutes to display in the Admin Console for permission configuration.
+* Processing time: Resources created in Cloud Manager take up to 2 minutes to display in the Admin Console for permission configuration.
 * Multiple profiles: Users can be part of multiple profiles, and permissions are combined from all assigned profiles.
-* Organization scope: Some permissions may apply at the organization level across all programs.
+* Organization scope: Some permissions apply at the organization level across all programs.
 * Predefined profiles: Do not delete predefined permission profiles from the Admin Console.
 
 
@@ -127,7 +127,7 @@ You can use an existing AEM user group if it meets AI Assistant access requireme
 
 >[!TAB Add individual users]
 
-1. On the **User groups** page, in the **Group name** table, click the user group name that you newly created, or an existing user group name.
+1. On the **User groups** page, in the **Group name** table, click the user group name that you newly created or an existing user group name.
 
     ![User groups page showing AI Assistant in AEM user group name in the table](/help/implementing/cloud-manager/assets/ai-assistant-user-group-name-in-table.png)
 
@@ -187,10 +187,11 @@ Have a user from the assigned group do the following:
 
 1. Log into AEM.
 2. Verify that AI Assistant features are accessible.
-3. Test the functionality of AI Assistant to ensure proper activation.
+3. To ensure proper activation, test the functionality of AI Assistant.
 
 ## See also 
 
 * [AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
 * [Adobe Experience Platform Access Control](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/overview)
 * [Cloud Manager Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md)
+

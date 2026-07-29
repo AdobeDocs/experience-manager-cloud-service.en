@@ -1,6 +1,7 @@
 ---
 title: Which workflow steps are available for on AEM Forms Cloud Service to create a workflow or for business process automation (BPM)?
 description: Forms-centric workflows allow you to rapidly build Adaptive Forms-based workflows. You can use Adobe Sign to e-sign documents, create forms-based business processes, retrieve and send data to multiple data sources, and send email notifications
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Use AEM workflows, using assign task steps, convert to PDF/A step, Generate document of recored step, use workflows, Sign document step, Genertae printed output step, Generate non interactive PDF output
@@ -243,7 +244,7 @@ If you specify the path of a folder, for example, attachments, all the files dir
 
 **[!UICONTROL Locale]**: Specify the language of the Document of Record. Select **[!UICONTROL Literal]** to select the locale from a drop-down list or select **[!UICONTROL Variable]** to retrieve the locale from the value stored in a variable of string data type. Define the locale code while storing the value for the locale in a variable. For example, specify **en_US** for English and **fr_FR** for French.
 
-## Invoke DDX step {#invokeddx}
+## Invoke DDX step
 
 Document Description XML (DDX) is a declarative markup language whose elements represent building blocks of documents. These building blocks include PDF and XDP documents, and other elements such as comments, bookmarks, and styled text. DDX defines a set of operations, which can be applied on one or more input documents to generate one or more output documents. A single DDX can be used with a range of source documents. You can use the ***Invoke DDX step*** in an AEM Workflow to perform various operations, like Assembling Disassembling documents, Creating, and modifying Acrobat and XFA Forms, and others described in the [DDX Reference documentation](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).                    
 
@@ -472,7 +473,7 @@ Generate a Non-Interactive PDF. It provides various customization options.
 
 Merges form data into a PDF form. You can import form data into a PDF form.
 
-### Invoke DDX step {#invokeddx}
+### Invoke DDX step
 
 Executes the DDX file on the specified map of input documents and returns the manipulated PDF documents.
 

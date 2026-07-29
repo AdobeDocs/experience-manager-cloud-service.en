@@ -5,6 +5,7 @@ contentOwner: AG
 mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
 ---
 
@@ -28,7 +29,7 @@ Asset search in AEM supports the following use cases and this article describes 
 | [Search rank and boosting](#searchrank) | [Custom predicates](#custompredicates) | [Smart collections](#collections) |
 | [Advanced search: filtering and scope of search](#scope) | | [Understand and troubleshoot unexpected results](#unexpected-results) |
 | [Search from other solutions and apps](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager desktop app](#desktop-app)</li><li>[Adobe Stock images](#adobe-stock)</li><li>[Dynamic Media assets](#search-dynamic-media-assets)</li></ul> | | |
-| [Asset selector](#asset-picker) | | |
+| [Content Advisor](#asset-picker) | | |
 | [Limitations](#limitations) and [Tips](#tips) | | |
 | [Illustrated examples](#samples)| | |
 
@@ -222,7 +223,8 @@ You can search assets based on exact values of metadata fields, such as, title, 
 
 The properties `path`, `limit`, `size`, and `orderby` cannot be combined using `OR` operator with any other property.
 
-<!-- TBD: Where are the limit, size, orderby properties defined?
+<!--
+ TBD: Where are the limit, size, orderby properties defined?
 -->
 
 The keyword for a user-generated property is its field label in the property editor in lowercase, with spaces removed.
@@ -269,31 +271,25 @@ Authors can use Content Finder to search the DAM repository for the relevant ass
 
 [!DNL Experience Manager] search capability supports searching for collections and searching for assets within a collection. See [search collections](/help/assets/manage-collections.md).
 
-## Asset selector {#asset-picker}
+## Content Advisor {#asset-picker}
 
-[AEM Asset Selector](/help/assets/overview-asset-selector.md) (called asset picker in prior versions of [!DNL Adobe Experience Manager]) lets you search, filter, and browse the DAM assets in a special way. Asset selector is available at `https://[aem_server]:[port]/aem/assetpicker.html`. You can fetch the metadata of assets that you select using the asset selector. You can launch it with supported request parameters, such as asset type (image, video, text) and selection mode (single or multiple selections). These parameters set the context of the asset selector for a particular search instance and remain intact throughout the selection.
+[Content Advisor](/help/assets/integrate-adobe-non-adobe-applications.md) (called asset picker in prior versions of [!DNL Adobe Experience Manager]) lets you search, filter, and browse the DAM assets in a special way. Content Advisor is available at `https://[aem_server]:[port]/aem/assetpicker.html`. You can fetch the metadata of assets that you select using the Content Advisor. You can launch it with supported request parameters, such as asset type (image, video, text) and selection mode (single or multiple selections). These parameters set the context of the Content Advisor for a particular search instance and remain intact throughout the selection.
 
-The asset selector uses the HTML5 `Window.postMessage` message to send data for the selected asset to the recipient. It works only in the browse mode and only with the Omnisearch result page.
+Content Advisor uses the HTML5 `Window.postMessage` message to send data for the selected asset to the recipient. It works only in the browse mode and only with the Omnisearch result page.
 
-Pass the following request parameters in a URL to launch the asset selector in a particular context:
+Pass the following request parameters in a URL to launch Content Advisor in a particular context:
 
 | Name | Values | Example | Purpose |
 |---|---|---|---|
-| resource suffix (B) | Folder path as the resource suffix in the URL: [https://localhost:4502/aem/assetpicker.html/&lt;folder_path&gt;](https://localhost:4502/aem/assetpicker.html) | To launch the asset selector with a particular folder selected, for example, with the folder `/content/dam/we-retail/en/activities` selected, the URL should be of the form: `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | If you require a particular folder to be selected when the asset selector is launched, passed it as a resource suffix. |
-| `mode` | single, multiple | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | In multiple mode, you can select several assets simultaneously using the asset selector. |
-| `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Use these parameters to open the asset selector as Granite Dialog. This option is only applicable when you launch the asset selector through Granite Path Field, and configure it as pickerSrc URL. |
-| `root` | &lt;folder_path&gt; | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Use this option to specify the root folder for the asset selector. In this case, the asset selector lets you select only child assets (direct/indirect) under the root folder. |
-| `viewmode` | search | | To launch the asset selector in search mode, with `assettype` and `mimetype` parameters. |
+| resource suffix (B) | Folder path as the resource suffix in the URL: [https://localhost:4502/aem/assetpicker.html/&lt;folder_path&gt;](https://localhost:4502/aem/assetpicker.html) | To launch Content Advisor with a particular folder selected, for example, with the folder `/content/dam/we-retail/en/activities` selected, the URL should be of the form: `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | If you require a particular folder to be selected when the Content Advisor is launched, passed it as a resource suffix. |
+| `mode` | single, multiple | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | In multiple mode, you can select several assets simultaneously using the Content Advisor. |
+| `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Use these parameters to open the Content Advisor as Granite Dialog. This option is only applicable when you launch the Content Advisor through Granite Path Field, and configure it as pickerSrc URL. |
+| `root` | &lt;folder_path&gt; | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Use this option to specify the root folder for the Content Advisor. In this case, the Content Advisor lets you select only child assets (direct/indirect) under the root folder. |
+| `viewmode` | search | | To launch the Content Advisor in search mode, with `assettype` and `mimetype` parameters. |
 | `assettype` | Images, documents, multimedia, archives. | <ul><li>`https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives` </li></ul> | Use the option to filter asset types based on the value provided. |
 | `mimetype` | MIME type (`/jcr:content/metadata/dc:format`) of an asset (wildcard also supported). | <ul><li>`https://localhost:4502/aem/assetpicker.html?mimetype=image/png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png`</li></ul> | Use it to filter assets based on MIME type. |
 
-To access the asset selector interface, go to `https://[aem_server]:[port]/aem/assetpicker`. Navigate to the desired folder, and select one or more assets. Alternatively, search for the desired asset from the Omnisearch box, apply filter as required, and then select it.
-
-![Browse and select asset in the asset selector](assets/select-asset.png)
-
-<!--![Browse and select asset in the asset selector](assets/assetpicker.png)-->
-
-*Figure: Browse and select asset in the asset selector.*
+To access the Content Advisor interface, go to `https://[aem_server]:[port]/aem/assetpicker`. Navigate to the desired folder, and select one or more assets. Alternatively, search for the desired asset from the Omnisearch box, apply filter as required, and then select it.
 
 ## Limitations {#limitations}
 
@@ -536,20 +532,24 @@ Navigate to the folder location for assets displayed in the search results. Sele
 
 **See also**
 
-* [Search best practices](search-best-practices.md) 
-* [Translate Assets](translate-assets.md)
-* [Assets supported file formats](file-format-support.md)
-* [Connected assets](use-assets-across-connected-assets-instances.md)
-* [Asset reports](asset-reports.md)
-* [Metadata schemas](metadata-schemas.md)
-* [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata.md)
-* [Search facets](search-facets.md)
-* [Manage collections](manage-collections.md)
-* [Bulk metadata import](metadata-import-export.md)
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] search implementation guide](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html)
 >* [Advanced configuration to boost search results](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)
+

@@ -3,6 +3,7 @@ title: Defining Content Fragment Models
 description: Learn how Content Fragment Models serve as a foundation for your Content Fragments in AEM, allowing you to create structured content for use in headless delivery, or page authoring.
 feature: Content Fragments
 role: User, Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
 ---
@@ -46,8 +47,7 @@ The Content Fragment Model effectively defines the structure of the resulting Co
 
 1. Open the required model for **Edit**; use either one of the quick action links, or select the model and then the action from the toolbar.
 
-
-   ![Properties](assets/cf-cfmodels-empty-model.png)
+   ![Properties](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-empty-model.png)
 
    Once open the model editor shows:
 
@@ -80,7 +80,7 @@ The Content Fragment Model effectively defines the structure of the resulting Co
 
    * You can reposition a field using the formation of dots at the left of the field box:
 
-     ![Move field](assets/cf-cfmodels-move-field-icon.png)
+     ![Move field](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-move-field-icon.png)
 
    * Once a field has been added to the model (and is selected), the right panel shows the **Properties** that can be defined for that particular data type. Here you can define what is required for the specific
     field. 
@@ -96,7 +96,7 @@ The Content Fragment Model effectively defines the structure of the resulting Co
 
      For example:
 
-     ![Field properties](assets/cf-cfmodels-field-properties.png)
+     ![Field properties](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
 
      >[!NOTE]
      >
@@ -106,7 +106,7 @@ The Content Fragment Model effectively defines the structure of the resulting Co
 
    Select the trash-can icon for the appropriate field in the middle panel.
 
-   ![Remove](assets/cf-cfmodels-remove-icon.png)
+   ![Remove](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-remove-icon.png)
 
 1. Add all required fields, and define the related properties, as required. 
 
@@ -154,11 +154,11 @@ A selection of data types is available for defining your model:
     * Create a new Content Fragment, based on the appropriate model
     * Create new instances of the field 
   * The reference specifies the path to the referenced resource; for example `/content/dam/path/to/resource`
-  
-    <!--
+
+  <!--
     * Internally the reference is held as a universally unique ID (UUID) that references the resource
     * You do not need to know the UUID; in the fragment editor you can browse to the required fragment.
-    -->
+  -->
 
   <!--
   >[!NOTE]
@@ -171,11 +171,11 @@ A selection of data types is available for defining your model:
   * If an image is referenced, you can opt to show a thumbnail
   * The field can be configured to allow fragment authors to create new instances of the field 
   * The reference specifies the path to the referenced resource; for example `/content/dam/path/to/resource` 
-  
-    <!--
+
+  <!--
     * Internally the reference is held as a universally unique ID (UUID) that references the resource
     * You do not need to know the UUID; in the fragment editor you can browse to the required asset resource
-    -->
+  -->
 
   <!--
   >[!NOTE]
@@ -252,7 +252,7 @@ Many properties are self-explanatory, for certain properties additional details 
 * See **[Fragment Reference (Nested Fragments)](#fragment-reference-nested-fragments)** for more details about that specific data type and its properties.
 
 * **Translatable**
-  
+
   Checking the **Translatable** checkbox on a field in the Content Fragment Model editor will:
 
   * Ensure the field's property name is added to the translation configuration, context `/content/dam/<sites-configuration>`, if not already present. 
@@ -280,7 +280,7 @@ Various data types now include the possibility to define validation requirements
   * **Max Number of Items**
 
   These are validated in the [Content Fragment Editor](/help/sites-cloud/administering/content-fragments/authoring.md).
-  
+
 ## Using References to form Nested Content {#using-references-to-form-nested-content}
 
 Content Fragments can form nested content, using either of the following data types:
@@ -294,7 +294,7 @@ Content Fragments can form nested content, using either of the following data ty
   * References other fragments, dependent on the specific models specified.
   * Provided by the **Fragment Reference** data type
   * Allows you to include/retrieve structured data.
-  
+
     >[!NOTE]
     >
     >This method is of particular interest when you are using [Headless Content Delivery using Content Fragments with GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
@@ -350,7 +350,7 @@ In addition to standard properties you can specify:
   * Show Thumbnail
   * Image restraints of height and width
 
-![Content Reference](assets/cf-cfmodels-content-reference.png)
+![Content Reference](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-content-reference.png)
 
 ### Fragment Reference (Nested Fragments) {#fragment-reference-nested-fragments}
 
@@ -399,7 +399,7 @@ In addition to standard properties you can define:
 
   * **fragmentreferencecomposite** - allows the fragment author to build a composite, by selecting multiple fragments
 
-  ![Fragment Reference](assets/cf-cfmodels-fragment-reference.png)
+  ![Fragment Reference](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-fragment-reference.png)
 
 >[!NOTE]
 >

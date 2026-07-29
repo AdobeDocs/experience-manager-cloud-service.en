@@ -1,6 +1,7 @@
 ---
 title: Launches for Pages
 description: Learn how to use Launches for Pages in Adobe Experience Manager as a Cloud Service. Launches enable you to efficiently develop content for a future release, while maintaining your current pages.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches

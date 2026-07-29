@@ -4,6 +4,7 @@ description: Learn how to configure AEM Assets with Brand Portal. The configurat
 contentOwner: AK
 feature: Brand Portal, Asset Distribution, Configuration
 role: Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 ---
 # Configure Experience Manager Assets with Brand Portal {#configure-aem-assets-with-brand-portal}
@@ -202,9 +203,13 @@ The following section describes how to manually configure Experience Manager Ass
 Earlier, Experience Manager Assets as a [!DNL Cloud Service] was manually configured with Brand Portal via Adobe Developer Console, which procures an Adobe Identity Management Services (IMS) account token for authorization of the Brand Portal tenant. It requires configurations in both, Experience Manager Assets and Adobe Developer Console.
 
 <!--1. In Experience Manager Assets, create an IMS account and generate a public key (certificate).-->
-<!--1. Under the project, configure an API using the public key to create a service account connection.
+
+<!--
+1. Under the project, configure an API using the public key to create a service account connection.
 1. Get the service account credentials and JSON Web Token (JWT) payload information.
-1. In Experience Manager Assets, configure the IMS account using the service account credentials and JWT payload.-->
+1. In Experience Manager Assets, configure the IMS account using the service account credentials and JWT payload.
+-->
+
 1. In Adobe Developer Console, create a project for your Brand Portal tenant (organization).
 1. In Experience Manager Assets, configure the Brand Portal cloud service using the IMS account and Brand Portal endpoint (organization URL).
 1. Test your configuration by publishing an asset from Experience Manager Assets to Brand Portal.
@@ -228,11 +233,13 @@ Perform the following steps in the specified sequence to configure Experience Ma
 1. [Configure the OAuth credentials in the Adobe Developer Console](#config-oauth)
 1. [Create a new Adobe IMS Integration using OAuth](#create-ims-account-configuration)
 1. [Configure cloud service](#configure-cloud-service)
+
 <!--1. [Obtain public certificate](#public-certificate)-->
-<!--1. [Create service account (JWT) connection](#createnewintegration) 
-1. [Configure IMS account](#create-ims-account-configuration)-->
 
 <!--
+1. [Create service account (JWT) connection](#createnewintegration) 
+1. [Configure IMS account](#create-ims-account-configuration)
+
 ### Create IMS configuration {#create-ims-configuration}
 
 The IMS configuration authenticates your Experience Manager Assets as a [!DNL Cloud Service] instance with the Brand Portal tenant. 
@@ -241,8 +248,6 @@ IMS configuration includes two steps:
 
 * [Obtain public certificate](#public-certificate) 
 * [Configure IMS account](#create-ims-account-configuration)
--->
-<!--
 
 ### Obtain public certificate {#public-certificate}
 
@@ -268,8 +273,6 @@ The public key (certificate) authenticates your profile on Adobe Developer Conso
     In the **Account** tab, Adobe IMS account is created which requires the service account credentials that are generated in Adobe Developer Console. Keep this page open for now.
 
     Open a new tab and [create a service account (JWT) connection in Adobe Developer Console](#createnewintegration) to get the credentials and JWT payload for configuring the IMS account. 
--->
-<!--
 
 ### Create service account (JWT) connection {#createnewintegration}
 
@@ -322,8 +325,7 @@ Perform the following steps to generate the service account credentials and JWT 
 1. Navigate to the **[!UICONTROL Generate JWT]** tab and copy the **[!UICONTROL JWT Payload]** information. 
 
 You can now use the client ID (API key), client secret, and JWT payload to [configure the IMS account](#create-ims-account-configuration) in Experience Manager Assets.
--->
-<!--
+
 1. Click **[!UICONTROL Create Integration]**.
 
 1. Select **[!UICONTROL Access an API]**, and click **[!UICONTROL Continue]**.
@@ -373,31 +375,27 @@ Ensure that you have performed the following steps:
 
 * [Obtain public certificate](#public-certificate)
 * [Create service account (JWT) connection](#createnewintegration)
--->
 
-<!--1. Open the IMS Configuration and navigate to the **[!UICONTROL Account]** tab. Keep the page open while [obtaining the public certificate](#public-certificate).
+1. Open the IMS Configuration and navigate to the **[!UICONTROL Account]** tab. Keep the page open while [obtaining the public certificate](#public-certificate).
 
 1. Specify a **[!UICONTROL Title]** for the IMS account.
 
    In the **[!UICONTROL Authorization Server]** field, specify the URL: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)  
--->
-<!--
+
 1. Complete the configuration based on details from the [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/). Click **[!UICONTROL Create]**.
--->
-   <!--Specify client ID in the **[!UICONTROL API key]** field, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]** (JWT payload) that you have copied while [creating the service account (JWT) connection](#createnewintegration).
+
+   Specify client ID in the **[!UICONTROL API key]** field, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]** (JWT payload) that you have copied while [creating the service account (JWT) connection](#createnewintegration).
 
    The IMS account is configured. 
 
    ![IMS Account configuration](assets/create-new-integration6.png)
 
- <!--  
 1. Select the IMS account configuration and click **[!UICONTROL Check Health]**.
 
    Click **[!UICONTROL Check]** in the dialog box. On successful configuration, a message appears that the *Token is retrieved successfully*.
 
    ![Adobe IMS Configurations Check Health.](assets/create-new-integration5.png)
--->
-<!--
+
 >[!CAUTION]
 >
 >You must have only one IMS configuration.
@@ -437,7 +435,7 @@ The egress IPs are as follows:
 |--- |--- |
 | NA | 130.248.160.68, 20.94.203.130  |
 | EMEA | 51.132.146.75, 130.248.244.202, 130.248.244.203, 130.248.244.204, 130.248.244.210, 130.248.244.211, 130.248.244.212  |
-| APAC | 63.140.44.54 |
+| APAC | 172.82.240.74, 172.82.240.75 |
 
 <!--
 ### Test configuration {#test-configuration}
@@ -524,9 +522,6 @@ In the above example, an additional request and response is triggered. The syste
 >[!NOTE]
 >
 >Additional request is generated in case the parent folder does not exist in Brand Portal or has been modified in AEM Assets. 
--->
-
-<!--
 
 ## Additional information {#additional-information}
 
@@ -542,15 +537,10 @@ Go to `/system/console/slingmetrics` for statistics related to the distributed c
    * sling: `mac_sync_enqueue_package_duration`
    * sling: `mac_sync_setup_request_duration`
 
--->
-
-<!--
    Comment Type: draft
 
    <li> </li>
-   -->
 
-   <!--
    Comment Type: draft
 
    <li>Step text</li>
@@ -558,16 +548,18 @@ Go to `/system/console/slingmetrics` for statistics related to the distributed c
 
 **See also**
 
-* [Translate Assets](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [Assets supported file formats](file-format-support.md)
-* [Search assets](search-assets.md)
-* [Connected assets](use-assets-across-connected-assets-instances.md)
-* [Asset reports](asset-reports.md)
-* [Metadata schemas](metadata-schemas.md)
-* [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata.md)
-* [Search facets](search-facets.md)
-* [Manage collections](manage-collections.md)
-* [Bulk metadata import](metadata-import-export.md)
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

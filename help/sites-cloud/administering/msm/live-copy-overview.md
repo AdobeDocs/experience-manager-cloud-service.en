@@ -3,6 +3,7 @@ title: Live Copy Overview Console
 description: Learn about the basics of the Live Copy Overview Console to quickly understand the status of your Live Copies to synchronize content.
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
 solution: Experience Manager Sites
 ---

@@ -4,6 +4,7 @@ description: Learn how Content Fragments can be integrated and used with Adobe J
 feature: Content Fragments
 role: User, Developer
 solution: Experience Manager Sites
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 4090ee41-80f1-4389-8961-e4af891f01ff
 ---
 # Content Fragments with Adobe Journey Optimizer {#content-fragments-with-journey-optimizer}

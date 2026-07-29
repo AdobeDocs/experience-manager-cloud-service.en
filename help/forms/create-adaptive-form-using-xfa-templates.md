@@ -4,6 +4,7 @@ description: Learn how to create an Adaptive Form using [!DNL Experience Manager
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: f3c9b798-8b20-4674-9b96-a3a0b143d947
 ---
 # Create an Adaptive Form (Core Components) based on XFA Form templates

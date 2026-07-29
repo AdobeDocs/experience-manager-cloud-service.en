@@ -4,6 +4,7 @@ description: Learn how to publish Dynamic Media video and image assets so you ca
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
 ---
 # Publish Dynamic Media assets {#publishing-dynamic-media-assets}

@@ -3,6 +3,7 @@ title: How to save the Core Components based Adaptive Form as a draft and use th
 description: Learn how to save Core Components based Adaptive Form as a draft. Also understand how to use the Drafts and Submissions component to list drafts and submissions for logged-in users?
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 role: User, Developer
 ---
 
@@ -161,10 +162,6 @@ When **[!UICONTROL Select Type]** is selected as **Submitted Forms** in the [con
 ![Submissions icon](assets/submission-listing.png)
 
 You can also discard the forms by clicking on the ellipsis (...) that appears in the bottom-right corner of the form.
-
->[!NOTE]
->
-> In the Forms Portal, the Drafts & Submissions component supports only submissions from Foundation-based forms.
 
 ## Next Steps
 

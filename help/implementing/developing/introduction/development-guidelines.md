@@ -5,6 +5,7 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Developer
 ---
+
 # AEM as a Cloud Service Development Guidelines {#aem-as-a-cloud-service-development-guidelines}
 
 >[!CONTEXTUALHELP]
@@ -13,7 +14,7 @@ role: Admin, Developer
 >abstract="Learn guidelines for developing on AEM as a Cloud Service and about important ways in which it differs from AEM on premises and AEM in AMS."
 >additional-url="https://video.tv.adobe.com/v/330555/" text="Demo of Package Structure"
 
-This document presents guidelines for developing on AEM as a Cloud Service and about important ways in which it differs from AEM on premises and AEM in AMS.
+This document presents guidelines for developing on AEM as a Cloud Service and important ways in which it differs from AEM on premises and AEM in AMS.
 
 ## Code Must Be Cluster-Aware {#cluster-aware}
 
@@ -41,11 +42,11 @@ Similarly, with everything that is asynchronously happening, like acting on obse
 
 Code executed as a background task must assume that the instance it is running in can be brought down at any time. Therefore, the code must be resilient, and most importantly, resumable. That means that if the code gets re-executed, it should not start from the beginning again but rather close to where it left off. While this is not a new requirement for this kind of code, in AEM as a Cloud Service it is more likely that an instance takedown is going to occur.
 
-To minimize the trouble, long-running jobs should be avoided if possible, and they should be resumable at a minimum. For executing such jobs, use Sling Jobs, which have an at-least-once guarantee and hence if they get interrupted will get re-executed as soon as possible. But they should probably not start from the beginning again. For scheduling such jobs, it is best to use the [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) scheduler as this again ensures the at-least-once execution.
+To minimize the trouble, long-running jobs should be avoided if possible, and they should be resumable at a minimum. For executing such jobs, use Sling Jobs, which have an at-least-once guarantee and hence, if they get interrupted, will get re-executed as soon as possible. But they should probably not restart from the beginning. For scheduling such jobs, it is best to use the [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) scheduler, as this again ensures the at-least-once execution.
 
 Do not use the Sling Commons Scheduler for scheduling, as execution cannot be guaranteed. It is just more likely that it is scheduled.
 
-Similarly, with everything that is asynchronously happening, like acting on observation events (being it JCR events or Sling resource events), can't be guaranteed to be executed and therefore must be used with care. This is already true for AEM deployments in the present.
+Similarly, with everything that is asynchronously happening, like acting on observation events (be it JCR events or Sling resource events), jobs can't be guaranteed to be executed and therefore must be used with care. This is already true for AEM deployments at the present.
 
 ## Outgoing HTTP Connections {#outgoing-http-connections}
 
@@ -55,13 +56,13 @@ For code that does not apply these timeouts, AEM instances running on AEM as a C
 
 Adobe recommends the use of the provided [Apache HttpComponents Client 4.x library](https://hc.apache.org/httpcomponents-client-ga/) for making HTTP connections.
 
-Alternatives that are known to work, but may require providing the dependency yourself are:
+Alternatives that are known to work (but may require providing the dependency yourself) are:
 
 * [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html) and/or [java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html) (Provided by AEM)
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (not recommended as it is outdated and replaced by version 4.x)
 * [OK Http](https://square.github.io/okhttp/) (Not provided by AEM)
 
-Next to providing timeouts also a proper handling of such timeouts and unexpected HTTP status codes should be implemented.
+In addition to providing timeouts, a proper handling of those timeouts and unexpected HTTP status codes also should be implemented.
 
 ## Handling request rate limits {#rate-limit-handling}
 
@@ -95,7 +96,7 @@ Content is replicated from Author to Publish through a pub-sub mechanism. Custom
 
 Production environments are sized higher to ensure stable operation, while Stage environments are sized like Production environments to ensure realistic testing under production conditions.
 
-Dev environments and Rapid Dev environments should be limited to development, error analysis, and functional tests, and are not designed to process high workloads, nor large amounts of content.
+Dev environments and Rapid Dev environments should be limited to development, error analysis, and functional tests and are not designed to process high workloads or large amounts of content.
 
 As an example, changing an index definition on a large content repository on a Dev environment can result in re-indexing, resulting in too much processing. Tests that require substantial content should be run on Stage environments.
 
@@ -109,7 +110,7 @@ In Cloud environments, developers can download logs through Cloud Manager or use
 
 **Setting the Log Level**
 
-To change the log levels for Cloud environments, the Sling Logging OSGI configuration should be modified, followed by a full redeployment. Because this is not instantaneous, be cautious about enabling verbose logs on production environments that receive lots of traffic. In the future, it is possible that there are mechanisms to more quickly change the log level.
+To change the log levels for Cloud environments, the Sling Logging OSGi configuration should be modified, followed by a full redeployment. Because this is not instantaneous, be cautious about enabling verbose logs on production environments that receive lots of traffic. In the future, it is possible that there are mechanisms to more quickly change the log level.
 
 >[!NOTE]
 >
@@ -166,24 +167,22 @@ Thread dumps on Cloud environments are collected on an ongoing basis, but cannot
 
 ### Local Development {#local-development}
 
-For local development, Developers have full access to CRXDE Lite (`/crx/de`)  and the AEM Web Console (`/system/console`).
+For local development, Developers have full access to [CRXDE Lite](/help/implementing/developing/tools/crxde.md) (`/crx/de`)  and the [Web Console](/help/implementing/developing/tools/web-console.md) (`/system/console`).
 
-On local development (using the SDK), `/apps` and `/libs` can be written to directly, which is different from Cloud environments, where those top-level folders are immutable.
+For local development (using the SDK), `/apps` and `/libs` can be written to directly, which is different from Cloud environments, where those top-level folders are immutable.
 
 ### AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
 
 >[!NOTE]
->The AEM as a Cloud Service Developer Console should not be confused with the similarly named [*Adobe Developer Console*](https://developer.adobe.com/developer-console/).
 >
+>* Some customers will have the option to try out a revamped experience for the AEM Cloud Service Developer Console. See [this article](/help/implementing/developing/introduction/aem-developer-console.md) for more information.
+>* The AEM as a Cloud Service Developer Console should not be confused with the similarly named [*Adobe Developer Console*](https://developer.adobe.com/developer-console/).
 
->[!NOTE]
->Some customers will have the option to try out a revamped experience for the AEM Cloud Service Developer Console. See [this article](/help/implementing/developing/introduction/aem-developer-console.md) for more information.
-
-Customers can access CRXDE lite on the author tier's development environment, but not stage or production. The immutable repository (`/libs`, `/apps`) cannot be written to at runtime so attempting to do so will result in errors.
+Customers can access CRXDE lite on the author tier's development environment, but not stage or production. The immutable repository (`/libs`, `/apps`) cannot be written to at runtime and attempting to do so will result in errors.
 
 Instead, the Repository Browser can be launched from the AEM as a Cloud Service Developer Console, providing a read-only view into the repository for all environments on author, publish, and preview tiers. For more information, see the [Repository Browser](/help/implementing/developing/tools/repository-browser.md).
 
-A set of tools for debugging AEM as a Cloud Service developer environments is available in the AEM as a Cloud Service Developer Console for RDE, dev, stage, and production environments. The URL can be determined by adjusting the Author or Publish service URLs as follows:
+A set of tools for debugging AEM as a Cloud Service developer environments is available in the [AEM as a Cloud Service Developer Console](/help/implementing/developing/introduction/aem-developer-console.md) for RDE, dev, stage, and production environments. The URL can be determined by adjusting the Author or Publish service URLs as follows:
 
 `https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -195,7 +194,7 @@ See [Release Information](/help/release-notes/home.md) for more information.
 
 Developers can generate status information and resolve various resources.
 
-As illustrated below, available statuses information includes the state of bundles, components, OSGI configurations, oak indexes, OSGI services, and Sling jobs.
+As illustrated below, available statuses information includes the state of bundles, components, OSGi configurations, oak indexes, OSGi services, and Sling jobs.
 
 ![Dev Console 1](/help/implementing/developing/introduction/assets/devconsole1.png)
 
@@ -237,9 +236,9 @@ The [Day CQ Mail Service OSGI service](https://experienceleague.adobe.com/docs/e
 
 ### Configuration {#email-configuration}
 
-E-mails in AEM should be sent using the [Day CQ Mail Service OSGi service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
+E-mails in AEM should be sent using the [Day CQ Mail Service OSGI service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
 
-See the [AEM 6.5 documentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) for details around configuring email settings. For AEM as a Cloud Service, note the following necessary adjustments to the `com.day.cq.mailer.DefaultMailService OSGI` service:
+See the [AEM 6.5 documentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) for details around configuring email settings. For AEM as a Cloud Service, note the following necessary adjustments to the `com.day.cq.mailer.DefaultMailService` OSGi service:
 
 * The SMTP server host name should be set to $[env:AEM_PROXY_HOST;default=proxy.tunnel]
 * The SMTP server port should be set to the value of the original proxy port set in the portForwards parameter used in the API call when configuring up advanced networking. For example, 30465 (rather than 465)
@@ -263,7 +262,7 @@ The Mail Service can optionally be configured with OAuth2 support. For more info
 
 ### Legacy email configuration {#legacy-email-configuration}
 
-Prior to the 2021.9.0 release, email was configured through a customer support request. Note the following necessary adjustments to the `com.day.cq.mailer.DefaultMailService OSGI` service:
+Prior to the 2021.9.0 release, email was configured through a customer support request. Note the following necessary adjustments to the `com.day.cq.mailer.DefaultMailService` OSGi service:
 
 AEM as a Cloud Service requires mail to be sent through port 465. If a mail server does not support port 465, port 587 can be used, as long as the TLS option is enabled.
 
@@ -277,7 +276,7 @@ and if port 587 has been requested:
 * set `smtp.port` to `587`
 * set `smtp.ssl` to `false`
 
-The `smtp.starttls` property will automatically be set by AEM as a Cloud Service at runtime to an appropriate value. Thus, if `smtp.ssl` is set to true, `smtp.startls` is ignored. If `smtp.ssl` is set to false, `smtp.starttls` is set to true. This is regardless of the `smtp.starttls` values set in your OSGI configuration.
+The `smtp.starttls` property will automatically be set by AEM as a Cloud Service at runtime to an appropriate value. Thus, if `smtp.ssl` is set to true, `smtp.startls` is ignored. If `smtp.ssl` is set to false, `smtp.starttls` is set to true. This is regardless of the `smtp.starttls` values set in your OSGi configuration.
 
 The SMTP server host should be set to that of your mail server.
 

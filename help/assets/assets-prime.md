@@ -3,6 +3,7 @@ title: Assets Prime
 description: Learn more about key aspects of Assets Prime, such as, key benefits, user types and their privileges.
 feature: Asset Management
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
 ---
 # [!DNL Assets] as a Cloud Service Prime  {#assets-prime}
@@ -149,3 +150,22 @@ You can also access and view the services assigned to Power users, as depicted i
 ![Services for Power users](assets/aem-assets-power-users.png)
 
 `Adobe Express` and `AEM Assets Power Users` services are enabled by default. You can turn the toggle off and on, as per your requirements, however, Adobe recommends to use the default services enabled for the product profiles.
+
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

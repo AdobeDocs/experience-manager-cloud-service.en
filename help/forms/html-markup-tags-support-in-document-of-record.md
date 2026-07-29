@@ -1,18 +1,19 @@
 ---
-title: Supported HTML markup tags in Document of Record
-description: Reference guide for HTML markup tags now supported in Document of Record generation, including rendering behavior and accessibility considerations
+title: Supported HTML markup tags in Submission PDF (formerly Document of Record)
+description: Reference guide for HTML markup tags supported when generating a Submission PDF (formerly Document of Record), including rendering behavior and accessibility considerations.
 feature: Adaptive Forms
 role: Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 8481b0dc-aae7-4bd2-acfe-1f1b6d747683
 ---
 
-# Supported HTML markup tags in Document of Record
+# Supported HTML markup tags in Submission PDF (formerly Document of Record)
 
 ## What this reference covers?
 
-AEM Forms now supports HTML markup tags in rich text fields when generating Document of Record (DoR) PDFs. This guide explains which HTML markup tags you can safely use in Adaptive Forms and how they render in the generated documents.
+AEM Forms now supports HTML markup tags in rich text fields when generating a Submission PDF (formerly Document of Record) PDF. This guide explains which HTML markup tags you can safely use in Adaptive Forms and how they render in the generated Submission PDF.
 
-If you add rich text content (such as bold formatting, lists, or links) to your forms, it's important to understand which tags are supported and any limitations they may have. This reference helps you choose the appropriate tags to ensure your content displays correctly and remains accessible in the Document of Record.
+If you add rich text content (such as bold formatting, lists, or links) to your forms, it's important to understand which tags are supported and any limitations they may have. This reference helps you choose the appropriate tags to ensure your content displays correctly and remains accessible in the Submission PDF.
 
 ## Before you start
 
@@ -21,18 +22,18 @@ If you add rich text content (such as bold formatting, lists, or links) to your 
 You should be familiar with:
 
 - Basic HTML markup syntax
-- [Document of Record fundamentals](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+- [Submission PDF (formerly Document of Record) fundamentals](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 - Accessibility principles and WCAG guidelines
 - PDF accessibility requirements
 - Adaptive Form components that accept HTML markup
 
 ### Considerations
 
-The Document of Record (DoR) can be a tagged PDF, which helps ensure accessibility and proper structure for assistive technologies. To enable tagged PDF output, [set the XCI property `config/present/pdf/tagged` to `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). After generating your PDF, it's important to verify that accessibility tags are correctly applied. You can use [Adobe Acrobat to check accessibility tags](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html) and ensure your document meets accessibility standards.
+The Submission PDF (formerly Document of Record) can be a tagged PDF, which helps ensure accessibility and proper structure for assistive technologies. To enable tagged PDF output, [set the XCI property `config/present/pdf/tagged` to `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). After generating your PDF, it's important to verify that accessibility tags are correctly applied. You can use [Adobe Acrobat to check accessibility tags](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html) and ensure your document meets accessibility standards.
 
 ### What's new
 
-Rich text support in Document of Record is a recent enhancement. Previously, rich text content appeared as plain text in generated documents. This new capability allows formatted content to render properly in PDF outputs.
+Rich text support in Submission PDF is a recent enhancement. Previously, rich text content appeared as plain text in generated documents. This new capability allows formatted content to render properly in PDF outputs.
 
 ## HTML tag support reference
 
@@ -40,7 +41,7 @@ Rich text support in Document of Record is a recent enhancement. Previously, ric
 
 These tags are fully supported with proper accessibility node creation:
 
-| HTML Tag | Description | Document of Record Support | Accessibility | Example |
+| HTML Tag | Description | Submission PDF support | Accessibility | Example |
 |----------|-------------|-------------|---------------|---------|
 | `<p>` | Paragraph |  Yes |  Fully Supported - Correct `<P>` node | `<p>This is a paragraph.</p>` |
 | `<br/>` | Line break |  Yes | Fully Supported - within `<P>` node | `<p>Line 1<br/>Line 2</p>` |
@@ -129,7 +130,7 @@ These tags are not supported and will not render properly:
 ## Related Content
 
 
-- [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-- [Generate Document of Record for Core Components](/help/forms/generate-document-of-record-core-components.md)
-- [Document of Record template customization](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
+- [Generate Submission PDF (formerly Document of Record) for Adaptive Forms](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+- [Generate Submission PDF for Core Components](/help/forms/generate-document-of-record-core-components.md)
+- [Submission PDF template customization](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
 

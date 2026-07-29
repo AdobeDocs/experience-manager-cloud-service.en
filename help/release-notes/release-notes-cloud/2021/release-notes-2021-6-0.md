@@ -90,7 +90,8 @@ The next release is planned for July 15, 2021.
   * Support for [!DNL Assets Essentials].
   * Ability to automatically connect to [!DNL Experience Manager] as a [!DNL Cloud Service] or [!DNL Assets Essentials].
 
-<!-- TBD: Checking with PMs if AAE release should be mentioned here.
+<!--
+ TBD: Checking with PMs if AAE release should be mentioned here.
 -->
 
 ### New features available in the [!DNL Assets] prerelease channel {#beta-features-assets}

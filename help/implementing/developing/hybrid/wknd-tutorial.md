@@ -4,7 +4,7 @@ description: Immerse yourself in SPA development with this multi-part tutorial l
 exl-id: 3e4445b7-6215-4126-aefa-bdba1ee1398d
 feature: Developing
 role: Admin, Developer
-index: no
+index: false
 recommendations: noDisplay, noCatalog
 ---
 

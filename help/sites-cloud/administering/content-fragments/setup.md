@@ -3,6 +3,7 @@ title: Content Fragments - Setup
 description: Learn how to enable Content Fragment, and GraphQL, functionality for use with AEM headless delivery features and page authoring.
 feature: Content Fragments
 role: Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 3974d698-1e7d-4a5f-a6d5-cbf8d96b4095
 solution: Experience Manager Sites
 ---
@@ -63,7 +64,7 @@ To use the Content Fragment functionality, of Content Fragment Models and GraphQ
       * **Content Fragment Models** 
       * **GraphQL Persisted Queries**
 
-      ![Define configuration](assets/cf-setup-create-conf.png)
+      ![Define configuration](/help/sites-cloud/administering/content-fragments/assets/cf-setup-create-conf.png)
 
 1. Select **Create** to save the definition.
 
@@ -73,4 +74,4 @@ When the configuration **global** is enabled for Content Fragment functionality,
 
 To use other configurations (therefore excluding global) with a comparable Assets folder, you have to define the connection. Do this by selecting the appropriate **Configuration** in the **Cloud Services** tab of the **Folder Properties** of the appropriate folder.
 
-![Apply configuration](assets/cf-setup-apply-conf.png)
+![Apply configuration](/help/sites-cloud/administering/content-fragments/assets/cf-setup-apply-conf.png)

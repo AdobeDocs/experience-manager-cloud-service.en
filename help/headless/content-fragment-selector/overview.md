@@ -1,7 +1,7 @@
 ---
 title: Micro-Frontend Content Fragment Selector for Adobe Experience Manager as a Cloud Service
 description: Use the Micro-Frontend Content Fragment Selector to search, find, and retrieve content fragments from your application.
-role: Admin, User
+role: Admin, User, Developer
 exl-id: 5b18fb2c-26c8-4d9d-ba2e-9e53c09f5022
 ---
 # Micro-Frontend Content Fragment Selector {#micro-frontend-content-fragment-selector}
@@ -63,9 +63,11 @@ Use the `ContentFragmentSelector` component. There are several installation opti
 
 Once the Content Fragment Selector is set up and authenticated to use the Content Fragment Selector with your AEM as a Cloud Service application, you can select Content Fragments or perform various other operations to search for your fragments in the repository:
 
-![The Content Fragment Selector](/help/headless/assets/content-fragment-selector-using.png)
+![The Content Fragment Selector](/help/headless/assets/content-fragment-selector-unwrapped.png)
 
-* With the **Repository** selector at the top right, you can select the repository you want to use
+* From the top toolbar you can:
+  * Use the **Repository** selector at the top right, to select the repository you want to use
+  * Select the format; list or grid
 * In the far left panel you can:
   * Hide, or show, folders from the selected repository
   * Select a specific folder to show Content Fragments in that folder
@@ -75,6 +77,9 @@ Once the Content Fragment Selector is set up and authenticated to use the Conten
   * Sort the current list according to various columns; both ascending or descending
   * See the view format indicator
   * Show, hide, and specify filters
+* In the far right panel you can:
+  * View properties
+  * View references
 
 ### Hide/Show panel {#hide-show-panel}
 
@@ -124,3 +129,16 @@ You can sort fragments in the Content Fragment Selector by various properties. Y
 Content Fragment Selector lets you view the fragment in the:
 
 * **Table View**
+* **Grid View**
+
+The required view can be selected from the icons in the top toolbar: 
+
+![The Content Fragment Selector - View Type](/help/headless/assets/content-fragment-selector-view-type.png)
+
+## Integrate the Content Fragment Selector with applications {#integrate-the-content-fragment-selector-with-applications}
+
+You can integrate the Content Fragment Selector with various applications such as:
+
+* [Integrate the Content Fragment Selector with an Adobe application](/help/headless/content-fragment-selector/integrate-adobe-application.md) 
+* [Integrate the Content Fragment Selector with non-Adobe or third party application](/help/headless/content-fragment-selector/integrate-non-adobe-application.md)
+* [Integrate the Content Fragment Selector using Vanilla JS](/help/headless/content-fragment-selector/integrate-using-vanilla-js.md)

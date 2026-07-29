@@ -2,13 +2,16 @@
 title: Metadata management and best practices
 description: Learn about metadata best practices to effectively manage your digital assets.
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
 ---
-<!-- Keywords to focus on:
+<!--
+ Keywords to focus on:
 metadata best practices
 aem metadata 
-experience manager metadata-->
+experience manager metadata
+-->
 
 # Metadata management and best practices {#metadata-best-practices}
 
@@ -163,3 +166,23 @@ Try the following best practices to simplify the metadata:
    Communicate objectives, progress, milestones, and challenges early to receive input and cooperation from all stakeholders. Encourage collaboration throughout the organization to create efficient processes and valuable metadata. 
 
 Learn more about [metadata and its related concepts](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html) to effectively manage your Experience Manager metadata.
+
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

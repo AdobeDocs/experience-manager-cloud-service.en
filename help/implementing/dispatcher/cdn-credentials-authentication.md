@@ -34,9 +34,28 @@ data:
     ...
 ```
 
+## Deploying secrets: Environment variables vs. Pipeline variables {#deploying-secrets}
+
+You can deploy secrets used in CDN configuration in two ways:
+
+* **Pipeline secret variables** – Configured in Cloud Manager as [pipeline variables](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) of type **Secret** with **Step Applied** set to **Deploy**. These are available as config pipeline level configuration..
+
+* **Environment secret variables** – Configured in Cloud Manager as [environment variables](/help/implementing/cloud-manager/environment-variables.md) of type **Secret**  and **Service Applied** set to **All**. These are available as an environment level configuration.
+
+**Preferred: Pipeline secret variables.** Use pipeline secret variables when possible, because they are deployed together with your configuration in the same pipeline run. This keeps secrets and configuration in sync and simplifies rollouts.
+
+You cannot mix pipeline secrets with environment secrets for the same configuration. If pipeline secret variables are defined for the deploy step, they are used in preference.
+
+The following image shows how to configure pipeline secret variables in Cloud Manager:
+
+![Configuring pipeline secret variables](/help/implementing/dispatcher/assets/pipeline-secrets-configuration.png)
+
+For full details on adding, editing, and managing pipeline variables (including secrets), see [Pipeline variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).
+
+## Guidelines for working with secrets {#secrets-guidelines}
+
 Here are some guidelines to keep in mind when working with secrets:
 
-* Environment secrets must de deployed as a [Cloud Manager secret-type environment variable](/help/operations/config-pipeline.md#secret-env-vars). For the Service Applied field, select All.
 * Secret references are not interpolated inside strings (eg. `"Token ${{AUTH_TOKEN}}"` will not work)
 * A referenced environment secret should not be removed if it is still referenced in the configuration. 
 
@@ -81,6 +100,8 @@ data:
 
 ```
 
+For additional code snippets for common scenarios, see the [CDN Configuration Snippets for Common Scenarios](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md) article.
+
 See [Using Config Pipelines](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be *CDN* and the `version` property should be set to `1`.
 
 See [Configure and deploy HTTP Header validation CDN rule](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) tutorial step for more details.
@@ -97,7 +118,7 @@ Additional properties include:
 <!--   * OnFailure - defines the action, either `log` or `block`, when a request doesn't match either `edgeKey1` or `edgeKey2`. For `log`, request processing will continue, while `block` will serve a 403 error. The `log` value is useful when testing a new token on a live site since you can first confirm that the CDN is correctly accepting the new token before changing to `block` mode; it also reduces the chance of lost connectivity between the customer CDN and the Adobe CDN, as a result of an incorrect configuration. -->
 * Rules: Lets you declare which of the authenticators should be used, and whether it's for the publish and/or preview tier.  It includes:
    * name - a descriptive string.
-   * when - a condition that determines when the rule should be evaluated, according to the syntax in the [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md) article. Typically, it will include a comparison of the current tier (for example., publish) so all live traffic is validated as routing through the customer CDN.
+   * when - a condition that determines when the rule should be evaluated, according to the syntax in [Condition Structure](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure). Typically, it will include a comparison of the current tier (for example., publish) so all live traffic is validated as routing through the customer CDN.
    * action - must specify "authenticate", with the intended authenticator referenced.
 
 >[!NOTE]
@@ -198,7 +219,7 @@ Additional properties include:
   * purgeKey2 - used for rotation of secrets, which is described in the [rotating secrets](#rotating-secrets) section below. At least one of `purgeKey1` and `purgeKey2` must be declared.
 * Rules: Lets you declare which of the authenticators should be used, and whether it's for the publish and/or preview tier.  It includes:
   * name - a descriptive string
-  * when - a condition that determines when the rule should be evaluated, according to the syntax in the [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md) article. Typically, it will include a comparison of the current tier (for example., publish).
+  * when - a condition that determines when the rule should be evaluated, according to the syntax in [Condition Structure](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure). Typically, it will include a comparison of the current tier (for example., publish).
   * action - must specify "authenticate", with the intended authenticator referenced.
 
 >[!NOTE]
@@ -254,7 +275,7 @@ In addition, the syntax includes:
     * password - its value must reference a [Cloud Manager secret-type environment variable](/help/operations/config-pipeline.md#secret-env-vars), with **All** selected as the service field.
 * Rules: Lets you declare which of the authenticators should be used, and which resources should be protected. Each rule includes:
   * name - a descriptive string
-  * when - a condition that determines when the rule should be evaluated, according to the syntax in the [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md) article. Typically, it will include a comparison of the publish tier or specific paths. 
+  * when - a condition that determines when the rule should be evaluated, according to the syntax in [Condition Structure](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure). Typically, it will include a comparison of the publish tier or specific paths. 
   * action - must specify "authenticate", with the intended authenticator referenced, which is basic-auth for this scenario
 
 >[!NOTE]
