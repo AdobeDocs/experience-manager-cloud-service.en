@@ -124,17 +124,9 @@ Use this option to configure the Rich Text Editor (RTE):
 
 >[!NOTE]
 >
->The configuration works on the same basis as for the Universal Editor, though for the Content Fragment Cloud Configuration all configuration takes place in the UI. 
+>The configuration works on the same basis as for the Universal Editor, though for the Content Fragment Cloud Configuration all configuration takes place in the UI.
 >
->There are two features that are not supported for a Content Fragment Cloud Configuration:
->
->* [hideInline](/help/implementing/universal-editor/configure-rte.md#action)
->  As the new Content Fragment editor only supports component editing, and not inline editing, this feature is not applicable and cannot be configured.
->
->* [Unsupported HTML](/help/implementing/universal-editor/configure-rte.md#unsupported-html)
->  Unsupported HTML is supported in the new Content Fragment editor, but is always set to true and cannot be configured.
->
->See [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md) for more details. 
+>There are a few small differences in the two editors and the configuration methods. See [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md) for more details. 
 
 >[!NOTE]
 >
