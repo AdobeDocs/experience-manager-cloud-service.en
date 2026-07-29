@@ -51,7 +51,7 @@ The endpoint is `https://mcp.adobeaemcloud.com/adobe/mcp/aem`
 |**Cloud Manager**|Manage Cloud Manager entities including programs, environments, repositories and pipelines, which can also be triggered.| Yes | Yes (default) | -- |
 -->
 
-Note that the AEM MCP Server is used by the [AEM Anthropic Connector](/help/ai-in-aem/mcp-support/setup-claude.md#install-adobe-experience-manager-connector) and [AEM ChatGPT Plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md#install-adobe-experience-manager-plugin).
+Note that the AEM MCP Server is used by the [AEM Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md#install-adobe-experience-manager-connector) and [AEM ChatGPT Plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md#install-adobe-experience-manager-plugin).
 
 ### Listing AEM MCP Server capabilities
 
@@ -72,7 +72,7 @@ AEM also exposes domain-specific MCP servers, but it is recommended to use the [
 |MCP Server|Endpoint|Description|On by default|
 |---|---|---|---|
 |**Content**|`/content`|Content operations including create, read, update, and delete (CRUD) for pages and content fragments, plus asset importing and assets search (minimum required AEM release version is `26309`). |Yes|
-|**Content (read-only)**|`/content-readonly`|Read-only content operations (get, list/search) for pages and content fragments, plus assets search (minimum required AEM release version is `26309`). With the [AEM Anthropic Connector](/help/ai-in-aem/mcp-support/setup-claude.md) and the [AEM ChatGPT Plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md), there is also support for asset download, inspecting references, and identifying unused assets.|Yes|
+|**Content (read-only)**|`/content-readonly`|Read-only content operations (get, list/search) for pages and content fragments, plus assets search (minimum required AEM release version is `26309`). With the [AEM Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md) and the [AEM ChatGPT Plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md), there is also support for asset download, inspecting references, and identifying unused assets.|Yes|
 |**Cloud Manager**|`/cloudmanager`|Manage Cloud Manager entities including programs, environments, repositories and pipelines, which can also be triggered.|Yes|
 |**Experience Governance**|`/experience-governance`|Evaluate content (text, images, pages) against brand governance rules, and list brand configurations and checks.<br/>If you are interested, you must sign up for the [agents trial or have a paid license](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) in order to access the Experience Governance MCP.| Yes, but see note|
 |**Cloud Migration**|`/cloud-migration`|Fetch Best Practices Analyzer (BPA) findings from Cloud Acceleration Manager (CAM) by migration pattern or severity level, enabling AI agents to drive code migration from AEM 6.x to AEM as a Cloud Service. See [Using the Cloud Migration MCP](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md).|Yes|
@@ -116,7 +116,7 @@ Configuring MCP involves two main parts:
 Step-by-step guides covering both steps are available for:
 
 * [Anthropic Claude (both for manually configuring MCP servers, and also installing the AEM Claude Connector)](/help/ai-in-aem/mcp-support/setup-claude.md)
-* [OpenAI ChatGPT (both for manually configuring MCP servers, and also installing the AEM ChatGPT plugin)](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
+* [OpenAI ChatGPT (both for manually configuring MCP servers, and also installing the AEM ChatGPT Plugin)](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
 * [Cursor](/help/ai-in-aem/mcp-support/setup-cursor.md)
 * [JetBrains with GitHub Copilot](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
 * [Microsoft Copilot Studio](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
@@ -159,7 +159,7 @@ For all MCP server related requests, feel free to contact Adobe at **`aemcs-mcp-
 Each user performs this step, or an administrator of the MCP client application can perform it where supported. Configuration details vary slightly between applications. MCP clients are evolving rapidly and support for remote MCP servers is being actively developed. You may need to enable Developer Mode to access the functionality for adding remote servers, but the general process is:
 
 1. Add one or more MCP server URLs.
-   * Configure one or more MCP endpoints from the table above. For example:`https://mcp.adobeaemcloud.com/adobe/mcp/aem`
+   * Configure one or more MCP endpoints. For example:`https://mcp.adobeaemcloud.com/adobe/mcp/aem`
 1. Trigger the connection.
    * Save or activate the configuration so the MCP client application attempts to connect to the MCP server
 1. Sign in with Adobe ID.
@@ -173,7 +173,7 @@ Refer to [Supported MCP Applications](#supported-mcp-applications) for the full 
 
 The Adobe-hosted MCP servers implement OAuth and are integrated with Adobe's identity system.
 
-* When an MCP client application connects to a MCP server, users see an Adobe login dialog and authenticate with their **Adobe ID**
+* When an MCP client application connects to an MCP server, users see an Adobe login dialog and authenticate with their **Adobe ID**
 * After successful login, the system verifies that the MCP client application is permitted in your organization and that the requested MCP server is allowed. If either check fails, an error message is displayed.
 
 ![MCP Client not permitted error](assets/MCP-Client-not-permitted.png)
