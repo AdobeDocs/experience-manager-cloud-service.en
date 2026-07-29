@@ -58,7 +58,7 @@ You can now view the list of actions performed such as opening the asset, conver
 To maintain the integrity and authenticity of Content Credentials, Dynamic Media enforces the following limitations:
 
 1. Source assets that are above the configured maximum file size of 2 GiB and above the processing timeout of 60 seconds are not processed for Content Credentials preservation.
-2. Composite Assets is not supported during signing and only the base image is considered for signing. If the base image is generated through any GenAI tool, the output is signed accordingly. However, the signature does not include any information about the GenAI-generated layers that are used to create the final rendition.
+2. Composite Assets are not supported during signing and only the base image is considered for signing. If the base image is generated through any GenAI tool, the output is signed accordingly. However, the signature does not include any information about the GenAI-generated layers that are used to create the final rendition.
 3. Adaptive video streaming files and video thumbnails are not signed. Also, there is no support for Content Credentials preservation for Dynamic Media hybrid solution.
 4. Content Credentials processing has a configured timeout.
 If any of these safeguards are reached, the asset continues through normal Dynamic Media processing, but Content Credentials may not be preserved in the generated output.
