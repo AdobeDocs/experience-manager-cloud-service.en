@@ -183,6 +183,10 @@ When you associate a custom XDP template for DoR, you can provide locale-specifi
 
 You can set how long recipients have to complete signing by specifying **Document Expiration (Days)** in the **Electronic Signature** section of an Adaptive Form. The value is sent to Adobe Sign as `daysUntilSigningDeadline`. If left empty, the agreement does not expire. [Learn more](/help/forms/working-with-adobe-sign.md#set-document-expiration-for-an-adobe-sign-agreement).
 
+#### Virus scanning and custom validation for file attachments
+
+Validate file attachments in Adaptive Forms before or on submission using custom validation logic, such as integrating a malware or virus scanning service. You can use form rules to trigger validation, or configure validation to run on form submission. Both approaches reject invalid or infected files before persistence, helping protect sensitive data and systems. For details, see [Implement a custom validator](/help/forms/scan-file-attachments-custom-validator.md) and [Tutorial: Antivirus scanning integration](/help/forms/scan-file-attachments-clamav.md).
+
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation New Features {#foundation-new}
