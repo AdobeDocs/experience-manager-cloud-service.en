@@ -24,11 +24,11 @@ Follow these steps to configure the locale for an Interactive Communication:
 
 1. Open the required **Interactive Communication** in the editor.
 
-1. From the top toolbar, click the **Settings** (gear) icon.
+1. From the top toolbar, click the **Settings** icon.
 
 1. In the **Interactive Communication Settings** dialog, select **Locale**.
 
-![Interactive Communication Locale Settings](/help/forms/interactive-communication/assets/ic-locale-settings.png)
+    ![Interactive Communication Locale Settings](/help/forms/interactive-communication/assets/ic-locale-settings.png)
 
 1. From the **Form locale** drop-down list, select the required locale.
 
