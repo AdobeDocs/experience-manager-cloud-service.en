@@ -1,6 +1,6 @@
 ---
 title: Connect AEM Forms with Adobe Real-Time CDP | Data Integration Guide
-description: Learn how to integrate AEM Forms with Adobe Real-Time CDP to leverage customer profiles, submit form data, and create personalized experiences. Step-by-step guide.
+description: Learn how to integrate AEM Forms with Adobe Real-Time CDP (RTCDP) to leverage customer profiles, submit form data, and create personalized experiences. Step-by-step guide.
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
@@ -16,7 +16,7 @@ You can connect AEM Forms with Adobe Real-Time CDP to transform your form experi
 
 ### What is the AEM Forms Connector for Adobe Real-Time CDP? {#what-is-connector}
 
-The AEM Forms Connector for Adobe Real-Time CDP is an out of the box (OOTB) connector provided by AEM Forms that enables seamless integration between AEM Forms and Adobe Real-Time CDP. This integration allows you to create forms using XDM schemas available in Adobe Experience Platform and submit data back to Real-Time CDP for personalization and profile hydration purposes.
+The AEM Forms Connector for Adobe Real-Time CDP (RTCDP) is an out of the box (OOTB) connector provided by AEM Forms that enables seamless integration between AEM Forms and Adobe Real-Time CDP. This integration allows you to create forms using XDM schemas available in Adobe Experience Platform and submit data back to Real-Time CDP for personalization and profile hydration purposes.
 
 ## Why connect AEM Forms with Adobe Real-Time CDP? {#benefits}
 
@@ -294,7 +294,7 @@ Schema markup for technical documentation
   "@context": "https://schema.org",
   "@type": "TechArticle",
   "headline": "Connect AEM Forms with Adobe Real-Time CDP | Data Integration Guide",
-  "description": "Learn how to integrate AEM Forms with Adobe Real-Time CDP to leverage customer profiles, submit form data, and create personalized experiences.",
+  "description": "Learn how to integrate AEM Forms with Adobe Real-Time CDP (RTCDP) to leverage customer profiles, submit form data, and create personalized experiences.",
   "datePublished": "2025-05-28",
   "author": {
     "@type": "Corporation",
