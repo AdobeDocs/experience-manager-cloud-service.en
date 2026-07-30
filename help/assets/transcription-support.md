@@ -22,7 +22,7 @@ To enable the transcription feature, follow the steps mentioned below:
 
 1. In Adobe Experience Manager (AEM) Sites, navigate to the homepage of any website. For example, from the homepage, navigate to **[!UICONTROL English]** > **[!UICONTROL Home]** as shown in the figure.
    ![Homepage](/help/assets/assets/homepage.png)
-3. Click the **[!UICONTROL Edit]** button ![Edit icon](assets/do-not-localize/edit_icon.svg) on the top of the page to add a Dynamic Media component and a video element inside that Dynamic Media component.
+2. Click the **[!UICONTROL Edit]** button ![Edit icon](assets/do-not-localize/edit_icon.svg) on the top of the page to add a Dynamic Media component and a video element inside that Dynamic Media component.
    1. To add a video element inside the Dynamic Media component, select Videos from the Category drop-down. Drag and drop the video element to add it in Dynamic Media.
 
       ![Video](/help/assets/assets/videos.png)
