@@ -9,6 +9,8 @@ hide: true
 
 # Scan file attachments in Adaptive Forms with a custom validator
 
+![File Attachment Virus Scanner / Validator pipeline: a file is attached, your FileAttachmentValidator runs, and the submission is either accepted or rejected](/help/forms/assets/file-attachment-validator-banner.svg)
+
 [!BADGE AEM Forms]{type=Positive tooltip="Applies to AEM Forms"}
 
 <span class="preview"> The File Attachment Virus Scanner / Validator capability is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
@@ -326,6 +328,26 @@ No. Because the file is evaluated from memory before it is persisted, a rejected
 
 **How do I show a custom message when a file is rejected?**
 Set the `message` value when you construct the `FileAttachmentValidationResult`. AEM displays that message to the user when it rejects the file.
+
+## Example scenarios {#example-scenarios}
+
+* **Scenario:** Every file is being rejected, including clean ones.
+  **Action:** Check whether the scanning engine or dependency your validator calls is reachable. A validator that fails closed rejects everything when it can't connect, so confirm connectivity first and check your validator's logs for connection errors.
+
+* **Scenario:** The File Attachment Virus Scanner / Validator field doesn't appear on the Submission tab at all.
+  **Action:** Confirm your project has deployed the dialog extension and datasource servlet from [Add the validator field to the form dialog](#add-dialog-field), and that any feature toggle gating the underlying manager capability is enabled for your program.
+
+* **Scenario:** The field appears, but your validator isn't listed in the drop-down.
+  **Action:** Confirm the bundle is active and registered under `FileAttachmentValidator` (not in an unsatisfied state), that `getFileAttachmentValidatorName()` returns a non-empty, unique name, and reload the form editor after deploying.
+
+* **Scenario:** Form submissions feel noticeably slower after adding the validator.
+  **Action:** Scanning runs synchronously during submission, so the scan time is added to the user's submit experience. Check your scanning engine's latency and set a sensible timeout. See [Account for latency](#best-practices).
+
+* **Scenario:** You need to support more than one antivirus engine, or several differently configured instances of the same engine.
+  **Action:** Register each as its own `FileAttachmentValidator` implementation. Every registered validator shows up automatically in the Submission tab drop-down through its own `getFileAttachmentValidatorName()`, so nothing about the dialog extension needs to change.
+
+* **Scenario:** You want validation to run before the user submits, not just at submission.
+  **Action:** See [Can validation run earlier than submission?](#faq) above. Use the Invoke Service operation in the Rule Editor instead of, or alongside, this validator.
 
 ## Related articles {#related-articles}
 
