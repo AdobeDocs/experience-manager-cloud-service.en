@@ -14,7 +14,7 @@ The following section outlines the feature release notes for the current (latest
 >
 >From here, you can navigate to release notes of previous versions such as 2024 or 2025.
 >
->Have a look at the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) to learn about the upcoming feature activations for [!DNL Experience Manager] as a Cloud Service. 
+>Have a look at the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) to learn about the upcoming feature activations for [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Have a look at the May 2026 Release Overview video for a summary of the features
 
 ## AEM Beta Programs {#aem-beta-programs}
 
-Adobe Experience Manager (AEM) beta programs are a way for customers to get access to prerelease features and code, provide feedback, and guide the future of AEM. 
+Adobe Experience Manager (AEM) beta programs are a way for customers to get access to prerelease features and code, provide feedback, and guide the future of AEM.
 
 >[!IMPORTANT]
 >
@@ -93,15 +93,15 @@ Content Fragment metadata is now fully supported in the Content Fragments Admin 
 
 ### New Content Reference Picker for new Content Fragment Editor {#content-fragment-editor-new-content-picker}
 
-An improved content reference picker will be rolled out for the new Content Fragment Editor. In a phased approach, it will be rolled out for all RDE and Development environments on August 10th. September 7th, it will be enabled for all Stage environments, followed by Production on September 21st. To request earlier access please reach out via Adobe support channel.
+An improved content reference picker will be rolled out for the new Content Fragment Editor. In a phased approach, it will be rolled out for all RDE and Development environments on August 10. On September 7, it will be enabled for all Stage environments, followed by Production on September 21. To request earlier access, please reach out via Adobe support channel.
 
 ### Content Fragments Folder Actions {#content-fragments-folder-actions}
 
-Now Content Fragments Admin UI supports folder actions like Rename, Copy, Move and Delete. This creates alignment with Touch UI and Assets UI: same actions available on all surfaces.
+The Content Fragments Admin UI now supports folder actions like Rename, Copy, Move and Delete. This creates alignment with Touch UI and Assets UI: same actions available on all surfaces.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features in Dynamic Media {#new-features-dynamic-media}
+### New Features in Dynamic Media {#new-features-dynamic-media}
 
 **Add countdown timer to Dynamic Media templates**
 
@@ -119,7 +119,7 @@ You can now apply Content Credentials to assets in Dynamic Media with OpenAPI ca
 
 **Support for Assets Managed Services and On-Premise Deployments in Adobe Asset Link UXP for Photoshop**
 
-[Adobe Asset Link UXP](https://helpx.adobe.com/business/enterprise/manage-services/adobe-asset-link/adobe-asset-link.html) plugin for [!DNL Adobe Photoshop] is updated to version 2.0 and adds compatibility with Managed Services and On-Premise deployments of Assets. The UXP plugin works with Photoshop on the native Apple Silicon on MacOS, providing native performance and access to the latest Photoshop features while allowing users to connect to any Adobe Experience Manager Assets environment, independently of its deployment model. To install or update the plugin, use [!DNL Adobe Creative Cloud Desktop] app's Plugins section, or go to [this link](https://adobe.com/go/cc_plugins_discover_plugin?pluginId=e800f95d&workflow=share). 
+[Adobe Asset Link UXP](https://helpx.adobe.com/business/enterprise/manage-services/adobe-asset-link/adobe-asset-link.html) plugin for [!DNL Adobe Photoshop] is updated to version 2.0 and adds compatibility with Managed Services and On-Premise deployments of Assets. The UXP plugin works with Photoshop on the native Apple Silicon macOS, providing native performance and access to the latest Photoshop features while allowing users to connect to any Adobe Experience Manager Assets environment, independently of its deployment model. To install or update the plugin, use [!DNL Adobe Creative Cloud Desktop] app's Plugins section, or go to [this link](https://adobe.com/go/cc_plugins_discover_plugin?pluginId=e800f95d&workflow=share).
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta Features {#assets-beta-program-features}
 
@@ -164,7 +164,7 @@ Adobe works with participating customers to understand their needs and may deliv
 
 To participate or learn more, send an email to `Grp-AEM-Assets-Sourcing-Portal@adobe.com`.
 
-#### Generate renditions from the Content Hub search bar {#generate-renditions-content-hu-search-bar}
+#### Generate renditions from the Content Hub search bar {#generate-renditions-content-hub-search-bar}
 
 You can now generate optimized asset renditions directly from the Content Hub search bar without leaving the search experience. Create channel-specific asset variants by resizing, cropping, compressing, reformatting, or applying composite transformations, enabling faster asset preparation while maintaining brand consistency.
 
@@ -200,9 +200,15 @@ You can set how long recipients have to complete signing by specifying **Documen
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation New Features {#foundation-new}
 
+#### Security Health {#security-health}
+
+[Security Health](/help/security/security-health.md) gives administrators a clear view of their security posture, updated daily. AEM as a Cloud Service now scans your production environments daily and surfaces the findings directly in Experience Hub, under the Admin and IT profile. The checks align with the OWASP Top 10 and cover the issues that most often turn into real incidents. Security Health detects known vulnerabilities in the third-party Java libraries your custom code depends on, with the CVE ID, score, and severity grouping for each finding. It also flags permission problems before they become security problems, from redundant access control entries that create a false sense of protection to too broad permissions that grant far more access than a user actually needs. Every finding comes with the detail to act on it, and each list can be exported as CSV. You can also automatically fix the security health findings with ASO (AEM Sites Optimizer) as an extra option. This release covers the first set of security checks, and additional types of security findings will be added over time.
+
+![Security Health](/help/release-notes/assets/security-health.png)
+
 #### ChatGPT Plugin {#aem-chatgpt-plugin}
 
-ChatGPT users can browse OpenAI's Plugin marketplace to 1-click install the Adobe Experience Manager Plugin. This MCP server exposes a growing set of tools to interact with AEM, including editing content through prompting. 
+ChatGPT users can browse OpenAI's Plugin marketplace to 1-click install the Adobe Experience Manager Plugin. This MCP server exposes a growing set of tools to interact with AEM, including editing content through prompting.
 
 [Learn more.](/help/ai-in-aem/mcp-support/setup-chatgpt.md#install-adobe-experience-manager-plugin)
 
@@ -230,7 +236,8 @@ Supported checks include:
 * adding missing timeouts to outbound HTTP calls
 * bounding unbounded queries
 * Sling schedulers
-* resource change listeners the Replication
+* resource change listeners
+* the Replication
 * JCR or OSGi event handling
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
