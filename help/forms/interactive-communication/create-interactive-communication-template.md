@@ -65,6 +65,6 @@ By following the above steps, you can successfully create an Interactive Communi
 
 ## Next Steps
 
-* [Create an interactive communication](/help/forms/interactive-communication/create-interactive-communication.md)
-* [Create an interactive communication Fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+- [Create an interactive communication](/help/forms/interactive-communication/create-interactive-communication.md)
+- [Create an interactive communication Fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
 
