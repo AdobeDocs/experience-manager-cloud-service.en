@@ -12,7 +12,7 @@ This article covers two separate ways to use OpenAI ChatGPT with AEM:
 - Manually configure one or more of AEM's MCP servers in ChatGPT (the servers described at [Using MCP with AEM as a Cloud Service — MCP servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#mcp-servers)).
 - Install the Adobe Experience Manager plugin from the ChatGPT plugin marketplace. It currently has feature parity with Content MCP Server and will expose a growing subset of tools available in AEM's MCP servers.
 
-## Manually configure AEM's MCP servers in ChatGPT {#manual-configure-aems-mcp-servers-in-chatgpt}
+## Manually configure AEM's MCP servers in ChatGPT {#manually-configure-aems-mcp-servers-in-chatgpt}
 
 This section describes the **manual configuration** approach, where you add one or more of AEM's MCP servers to ChatGPT as custom plugins.
 
@@ -30,19 +30,19 @@ This section describes the **manual configuration** approach, where you add one 
 
 1. Open **Settings** so you can reach the area where MCP connections or tools are configured.
 
-   ![The ChatGPT Settings dialog.](assets/chatgpt-1.png)
+   ![The ChatGPT Settings dialog.](assets/chatgpt-1.png){width="50%"}
 
 1. In **Plugins**, select **Developer mode**.
 
-   ![The Developer mode option under Plugins in ChatGPT settings.](assets/chatgpt-2.png)
+   ![The Developer mode option under Plugins in ChatGPT settings.](assets/chatgpt-2.png){width="80%"}
 
 1. Enable **Developer mode** so you can add and configure a custom plugin.
 
-   ![Enabling the Developer mode setting in ChatGPT.](assets/chatgpt-3.png)
+   ![Enabling the Developer mode setting in ChatGPT.](assets/chatgpt-3.png){width="60%"}
 
 1. In the left navigation menu, select **Plugins** again, then select **Browse plugins**.
 
-   ![The Browse plugins option in the ChatGPT Plugins settings menu.](assets/chatgpt-4.png)
+   ![The Browse plugins option in the ChatGPT Plugins settings menu.](assets/chatgpt-4.png){width="80%"}
 
 1. Select the plus sign (**+**) in the upper-right corner to add an app entry for your AEM MCP server.
 
@@ -50,11 +50,11 @@ This section describes the **manual configuration** approach, where you add one 
 
 1. Complete the **New Plugin** form—for example, name the plugin and enter your AEM MCP server URL and any other required fields—then **Create**.
 
-   ![The New Plugin configuration form in ChatGPT.](assets/chatgpt-6.png)
+   ![The New Plugin configuration form in ChatGPT.](assets/chatgpt-6.png){width="50%"}
 
 1. Confirm **AEM Content MCP Service** (or your configured plugin) appears under **Plugins** so ChatGPT can use it.
 
-   ![The AEM Content MCP Service listed under Plugins in ChatGPT.](assets/chatgpt-7.png)
+   ![The AEM Content MCP Service listed under Plugins in ChatGPT.](assets/chatgpt-7.png){width="80%"}
 
 1. In a chat, write a prompt that tells ChatGPT to use the configured **AEM Tools** (for example, to query author content or sites).
 
