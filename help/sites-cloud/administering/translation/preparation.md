@@ -131,13 +131,13 @@ Language roots can also be grouped under nodes, for example, by region, while st
 
 >[!NOTE]
 >
->Only one level is allowed. For example, the following will not allow the `es` page to resolve to a language copy:
+>Only one level is allowed. For example, the following does not allow the `es` page to resolve to a language copy:
 >
 >* `/content/wknd/language-masters/en`
 >* `/content/wknd/language-masters/americas/central-america/es`
 >
-> This `es` language copy will not be detected as it is 2 levels (`americas/central-america`) away from the `en` node.
+> This `es` language copy is not detected as it is 2 levels (`americas/central-america`) away from the `en` node.
 
 >[!TIP]
 >
->In such a setup, language roots can have any page name, rather than just the ISO-code of the language. AEM will always check the path and name first, but if the page name does not identify a language, AEM will check the `cq:language` property of the page for the language identification.
+>In such a setup, language roots can have any page name, rather than just the ISO-code of the language. AEM always checks the path and name first, but if the page name does not identify a language, AEM checks the `cq:language` property of the page for the language identification.
