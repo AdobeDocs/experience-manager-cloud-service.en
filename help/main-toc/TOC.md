@@ -1099,6 +1099,7 @@ user-guide-title: AEM as a Cloud Service
      + [Support XDP Editing](/help/forms/interactive-communication/support-xdp-editing.md)
      + {hide-from-toc} [Copy and Paste Interactive Communication](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
      + [Start Workflow in Interactive Communication](/help/forms/interactive-communication/start-workflow-in-interactive-communication-editor.md)
+     + [Configure Locale in Interactive Communication Editor](/help/forms/interactive-communication/support-localization.md)
      + [Create Dynamic Table](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
      + [Merge and Split Table Cells](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md)
      + [Move a Component to the Master Page](/help/forms/interactive-communication/howto/move-component-to-master-page.md)
