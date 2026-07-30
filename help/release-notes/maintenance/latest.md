@@ -10,51 +10,33 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 27293 {#release-27293}
+## Release X {#release-X}
 
-Summarized below are the continuous improvements for maintenance release 27293, which was publicly released on July 28, 2026. The previous maintenance release was release 27083.
+Summarized below are the continuous improvements for maintenance release X, which was publicly released on August 12, 2026. The previous maintenance release was release 27293.
 
 The 2026.8.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-27293}
-
-* GRANITE-64872: Added support for asynchronous inclusion and dynamic enabling for OpenTelemetry tracing.
-* GRANITE-67893: Added a configurable allow-list of trusted URI schemes for the Granite UI.
-
-### Fixed Issues {#fixed-issues-27293}
-
-* ASSETS-69193: Fixed a regression in the Adobe Stock integration (updated the stock-api library to 1.0.14).
-* ASSETS-69340: Fixed captions disappearing on Dynamic Media videos after editing or adding a new language.
-* GRANITE-63638: Fixed the unlocalized "Cannot reorder profiles that changed" message in Security > Edit User.
-* GRANITE-67558: Fixed a `NullPointerException` in Felix Log on service-changed events.
-* GRANITE-69183: Improved query performance when fetching aborted workflow tasks.
-* GRANITE-69209: Fixed duplicate replication events when batch-replicating a parent and its descendants.
-* SITES-47446: Fixed the rich text editor spell checker incorrectly flagging alphanumeric terms as misspelled.
-
-#### AEM Guides {#guides-27293}
-
-* GUIDES-45277: Topics fail to open in the Editor when accessed from Topic reports in Map Dashboard.
-* GUIDES-46601: When a MathML equation is inserted as a `conref`, it does not render correctly.
-* GUIDES-47085: Bulk asset processing incorrectly includes Content Fragment assets, causing error logs and failures in the processing reports.
-* GUIDES-46480: A blank **Topic list** is displayed when a new baseline is used in the AEM Sites preset with composite component mapping.
-* GUIDES-37940, GUIDES-20156: In Native PDF output, topic references marked with `toc="no"` attribute are still included in the TOC, resulting in a lengthy and cluttered table of contents.
-* GUIDES-33420: In the Review UI, the tagging list displays all users in the review task, which makes it difficult to select the correct user in a comment or reply.
-
-For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
-
-### Known Issues {#known-issues-27293}
+### Enhancements {#enhancements-X}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-27293}
+### Fixed Issues {#fixed-issues-X}
+
+None.
+
+### Known Issues {#known-issues-X}
+
+None.
+
+### Deprecated Features and APIs {#deprecated-X}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-27293}
+### Security Fixes {#security-X}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 13 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses X identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-27293}
+### Embedded Technologies {#embedded-tech-X}
 
 |Technology|Version|Link|
 |---|---|---|
