@@ -32,7 +32,7 @@ The Text Field component in the Interactive Communication (IC) editor enables au
 
 >[!NOTE]
 >
-> The text field supports the text wrapping feature.
+> The text field supports text wrapping. When the entered text exceeds the available width, it automatically wraps to the next line, ensuring that all content remains visible without requiring horizontal scrolling.
 
 2.2 Typography 
 
