@@ -22,7 +22,7 @@
 
   <!-- Panel 1: File attached -->
   <rect class="panel" x="20" y="80" width="380" height="160" rx="8" ry="8"/>
-  <text class="panel-title" x="60" y="112">1. File attached</text>
+  <text class="panel-title" x="60" y="112">1. File Attached</text>
   <path class="icon-stroke" d="M150,145 h60 v70 h-60 z M195,145 v20 h20"/>
   <text class="panel-sub" x="210" y="232" text-anchor="middle">User attaches a file and selects Submit</text>
 
@@ -32,8 +32,7 @@
 
   <!-- Panel 2: Validator runs -->
   <rect class="panel" x="470" y="80" width="410" height="160" rx="8" ry="8"/>
-  <text class="panel-title" x="675" y="104" text-anchor="middle">2. File Attachment Validator /</text>
-  <text class="panel-title" x="675" y="122" text-anchor="middle">Antivirus runs</text>
+  <text class="panel-title" x="675" y="112" text-anchor="middle">2. Validator/Antivirus Runs</text>
   <path class="icon-stroke" d="M655,140 l25,-8 l25,8 v28 c0,16 -10,26 -25,30 c-15,-4 -25,-14 -25,-30 z"/>
   <text class="panel-sub" x="675" y="216" text-anchor="middle">Your OSGi service scans the attachment</text>
   <text class="panel-sub" x="675" y="232" text-anchor="middle">in memory, before it is persisted</text>
