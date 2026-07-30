@@ -388,6 +388,17 @@ Forms Manager now supports versioning for Adaptive Forms (Core Components and Fo
 
 Adaptive Forms Core Components introduce WCAG-compliant semantic markup for checkbox groups, radio button groups, and panels. These components now leverage `<fieldset>` and `<legend>` elements to establish meaningful relationships between group labels and their options for assistive technologies. See [Fieldset and legend support in Adaptive Forms](/help/forms/creating-accessible-adaptive-forms.md#fieldset-legend-accessibility).
 
+### Locale support for Interactive Communication
+
+Configure locale settings directly in the Interactive Communication Editor to create region-specific communications. Authors can select a supported locale to apply language and regional formatting conventions for dates, numbers, currencies, and other locale-sensitive content, helping deliver consistent and localized customer communications.
+
+Key benefits include:
+
+* Configure locale settings directly from the Interactive Communication Editor.
+* Support language and region-specific formatting for dates, numbers, currencies, and other locale-sensitive content.
+* Deliver localized Interactive Communications tailored to regional audiences.
+* Ensure consistent formatting and presentation across generated communications.
+
 ## See also
 
 * [Latest Innovations in AEM Forms](/help/forms/latest-innovations.md)

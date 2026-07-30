@@ -10,6 +10,8 @@ exl-id: 7d4a8b9f-4f15-4f37-a6d2-0d1c5f3e8b12
 
 # Configure Locale in Interactive Communication Editor
 
+<span class="preview"> The feature is available under the early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
 The **Locale** setting in the Interactive Communication (IC) Editor allows authors to specify the language and regional settings for an Interactive Communication. The selected locale determines how locale-sensitive content, such as dates, numbers, currencies, and other region-specific formats, is displayed and processed.
 
 Setting the appropriate locale helps ensure that the Interactive Communication is rendered according to the language and formatting conventions of the intended audience.
