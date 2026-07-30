@@ -107,9 +107,13 @@ Now Content Fragments Admin UI supports folder actions like Rename, Copy, Move a
 
 You can now add a Countdown Timer layer to Dynamic Media templates to display a live countdown until a specified end time. Customize the timer's appearance, enable or disable time units, define fallback text after expiration, and optionally make the timer clickable by configuring a destination URL.
 
+<!--
+
 **Content Credentials support in Dynamic Media**
 
 You can now apply Content Credentials to assets in Dynamic Media with OpenAPI capabilities and Dynamic Media Scene7. Content Credentials embed secure metadata that helps viewers verify an asset's origin, edit history, and whether generative AI was used during its creation, enabling greater transparency and trust in digital content.
+
+-->
 
 ### New features in Adobe Asset Link {#new-features-adobe-asset-link}
 
