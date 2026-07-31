@@ -526,7 +526,7 @@ Users can see the properties for both, licensed and unlicensed assets.
 * [Download assets](/help/assets/download-assets-from-aem.md)
 * [Manage metadata](/help/assets/manage-metadata.md)
 * [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
-* [Manage reports](/help/assets/manage-reports-assets-view.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
 * [Search facets](/help/assets/search-facets.md)
 * [Manage collections](/help/assets/manage-collections.md)
 * [Bulk metadata import](/help/assets/metadata-import-export.md)
@@ -537,3 +537,4 @@ Users can see the properties for both, licensed and unlicensed assets.
 >* [Video tutorial on using Adobe Stock assets with Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
 >* [Adobe Stock enterprise plan help](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
 >* [Adobe Stock FAQ](https://helpx.adobe.com/stock/faq.html)
+

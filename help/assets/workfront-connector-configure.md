@@ -205,7 +205,6 @@ To subscribe to the changes in [!DNL Workfront] document custom forms, select th
 
 ![Workfront document custom form updates configuration in [!DNL Experience Manager]](/help/assets/assets/wf-custom-form-update.png)
 
-
 **See also**
 
 * [Translate Assets](/help/assets/translate-assets.md)
@@ -218,7 +217,7 @@ To subscribe to the changes in [!DNL Workfront] document custom forms, select th
 * [Download assets](/help/assets/download-assets-from-aem.md)
 * [Manage metadata](/help/assets/manage-metadata.md)
 * [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
-* [Manage reports](/help/assets/manage-reports-assets-view.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
 * [Search facets](/help/assets/search-facets.md)
 * [Manage collections](/help/assets/manage-collections.md)
 * [Bulk metadata import](/help/assets/metadata-import-export.md)

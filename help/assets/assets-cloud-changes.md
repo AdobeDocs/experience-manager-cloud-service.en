@@ -74,7 +74,7 @@ To do an end-to-end validation of the code and process including asset ingestion
 * [Download assets](/help/assets/download-assets-from-aem.md)
 * [Manage metadata](/help/assets/manage-metadata.md)
 * [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
-* [Manage reports](/help/assets/manage-reports-assets-view.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
 * [Search facets](/help/assets/search-facets.md)
 * [Manage collections](/help/assets/manage-collections.md)
 * [Bulk metadata import](/help/assets/metadata-import-export.md)
@@ -91,3 +91,4 @@ To do an end-to-end validation of the code and process including asset ingestion
 >* [Notable changes](/help/release-notes/aem-cloud-changes.md)
 >* [Notable changes [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
 >* [Video tutorials](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/overview)
+

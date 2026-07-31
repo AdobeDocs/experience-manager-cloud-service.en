@@ -25,12 +25,12 @@ During the deprecation time window, Adobe will remind customers of the actions t
 
 >[!IMPORTANT]
 >
->Several [deprecated APIs](#aem-apis) will be removed on **July 23, 2026**. Please review these key dates and impacts:
+>Several [deprecated APIs](#aem-apis) will be removed on **September 14, 2026**. Please review these key dates and impacts:
 >
 >* **Starting January 26, 2026**: Actions Center notification emails are sent as a reminder to remove usage of these APIs, if a pipeline has been recently executed.
 >* **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
 >* **April 14, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.*
->* **July 23, 2026**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and wil not be subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further. To once again receive Adobe release updates, a fullstack pipeline must be successfully executed; the update will then be applied within a few days.
+>* **September 14, 2026**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and wil not be subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further. To once again receive Adobe release updates, a fullstack pipeline must be successfully executed; the update will then be applied within a few days.
 >
 
 ## Deprecated Functionality {#deprecated-features}
@@ -81,12 +81,12 @@ The APIs in the table below (click to expand to see it) have been announced as d
 
 >[!IMPORTANT]
 >
->Several [deprecated APIs](#aem-apis) will be removed on **July 23, 2026**. Please review these key dates and impacts:
+>Several [deprecated APIs](#aem-apis) will be removed on **September 14, 2026**. Please review these key dates and impacts:
 >
 >* **Starting January 26, 2026**: Actions Center notification emails are sent as a reminder to remove usage of these APIs.
 >* **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
 >* **April 14, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.*
->* **July 23, 2026**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
+>* **September 14, 2026**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
 >
 
 <details>
@@ -462,7 +462,7 @@ You might want to pick a different version, depending on your requirements.
 
 ### Removal of `com.google.common*` {#com.google.common}
 
-Remove the usage of Google Guava Core Libraries or include an appropriet version in your project. In many cases the usage of this library can be replaced with either collection classes from the JDK or Apache Commons Collections4. If you do not find any replacement, include the latest version of the Google Guave Core Library in your project. If you are using an old version of [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), make sure to update to the latest version.
+Remove the usage of Google Guava Core Libraries or include an appropriate version in your project. In many cases the usage of this library can be replaced with either collection classes from the JDK or Apache Commons Collections4. If you do not find any replacement, include the latest version of the Google Guava Core Library in your project. If you are using an old version of [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), make sure to update to the latest version.
 
 Action list:
 
@@ -657,4 +657,5 @@ The values of these OSGi properties are restricted to the rules described below.
 ## Java runtime update to version 21 {#java-runtime-update-21}
 
 Adobe Experience Manager as a Cloud Service has transitioned to the Java 21 runtime. To ensure compatibility, updating library versions as outlined in [Runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) is essential.
+
 

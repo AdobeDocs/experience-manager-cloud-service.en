@@ -149,6 +149,32 @@ You can sort the tags structure in ascending or descending order based on the **
 
    ![add-tags](assets/add-tags-to-asset.png)
 
+## Applying query restrictions using the Hidden predicate {#add-query-restriction-using-search-predicate}
+
+The Hidden Omnisearch predicate lets you add default restrictions to all searches. These can be used to customise the search query (for example, to exclude particular items from all searches) without requiring end-user intervention at search time, by adding additional QueryBuilder predicates (such as the `excludepaths` or `property` predicate) to the Omnisearch query.
+
+Each QueryBuilder predicate needs to have a unique numeric prefix; we suggest using values starting with the index 100 to avoid clashes with other fields in the search form.
+
+To exclude results beneath a specific folder `/content/dam/asset-import/.*` , you can add a single Hidden Omnisearch predicate to add an instance of the `excludedpaths` QueryBuilder predicate to the query:
+
+* **Property Name** :  100_excludepaths, Property Value : /content/dam/asset-import/.*
+
+To exclude all assets of type `image/tiff` from search results, you can use 3 Hidden Omnisearch predicates to add an instance of the QueryBuilder `property` predicate.
+
+* **Property Name**:  100_property, Property Value : jcr:content/metadata/@dc:format
+
+* **Property Name**:  100_property.value, Property Value : image/tiff
+
+* **Property Name**:  100_property.operation, Property Value : unequals
+
+>[!NOTE]
+>
+>* Properties used in the QueryBuilder `property` Predicate should be indexed in damAssetLucene with `propertyIndex = true`. If necessary, create a custom version of this index, using the method described in [this article](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/indexing#simplified-index-management-using-the-diff-index).
+>
+>* Since the QueryBuilder `excludepaths` QueryBuilder predicate is a filtering predicate, which removes results after the indexed query, it can impact search performance if large numbers of results are excluded. A more scalable approach would be use the `property` predicate to exclude unwanted results based on an indexed metadata property.
+
+See [this article](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-predicates#excludepaths) for details of other Query Builder predicates.
+
 
 ## Adding other predicates {#adding-other-predicates}
 
@@ -347,7 +373,7 @@ If you are not assigned an administrator role, here is a list of permissions you
 * [Download assets](/help/assets/download-assets-from-aem.md)
 * [Manage metadata](/help/assets/manage-metadata.md)
 * [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
-* [Manage reports](/help/assets/manage-reports-assets-view.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
 * [Search facets](/help/assets/search-facets.md)
 * [Manage collections](/help/assets/manage-collections.md)
 * [Bulk metadata import](/help/assets/metadata-import-export.md)
@@ -357,3 +383,4 @@ If you are not assigned an administrator role, here is a list of permissions you
 >[!MORELIKETHIS]
 >
 >* [Search digital assets](search-assets.md).
+

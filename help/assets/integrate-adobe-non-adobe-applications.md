@@ -209,7 +209,7 @@ This allows you to discover, evaluate, and use approved assets from AEM Assets d
 
 For more information about the integrations, properties, and customizations, refer to the following articles:
 
-* [Content Advisor integration examples](https://github.com/adobe/aem-assets-selectors-mfe-examples/tree/consolidate-docs-to-experience-league/examples)
+* [Content Advisor integration examples](https://github.com/adobe/aem-assets-selectors-mfe-examples/tree/main)
 
 * [Content Advisor properties](/help/assets/content-advisor-properties.md)
 
@@ -228,8 +228,9 @@ For more information about the integrations, properties, and customizations, ref
 * [Download assets](/help/assets/download-assets-from-aem.md)
 * [Manage metadata](/help/assets/manage-metadata.md)
 * [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
-* [Manage reports](/help/assets/manage-reports-assets-view.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
 * [Search facets](/help/assets/search-facets.md)
 * [Manage collections](/help/assets/manage-collections.md)
 * [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

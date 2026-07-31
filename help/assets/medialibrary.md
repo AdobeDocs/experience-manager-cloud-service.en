@@ -107,7 +107,7 @@ You cannot use smart tags, [!DNL Asset] link, [!DNL Asset] selector, bulk taggin
 * [Download assets](/help/assets/download-assets-from-aem.md)
 * [Manage metadata](/help/assets/manage-metadata.md)
 * [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
-* [Manage reports](/help/assets/manage-reports-assets-view.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
 * [Search facets](/help/assets/search-facets.md)
 * [Manage collections](/help/assets/manage-collections.md)
 * [Bulk metadata import](/help/assets/metadata-import-export.md)
@@ -117,3 +117,4 @@ You cannot use smart tags, [!DNL Asset] link, [!DNL Asset] selector, bulk taggin
 >
 >* [DAM features in [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
 >* [[!DNL Experience Manager] as a [!DNL Cloud Service] product description](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+

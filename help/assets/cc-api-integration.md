@@ -110,7 +110,7 @@ To process the existing assets, select the assets, select **[!UICONTROL Reproces
 * [Download assets](/help/assets/download-assets-from-aem.md)
 * [Manage metadata](/help/assets/manage-metadata.md)
 * [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
-* [Manage reports](/help/assets/manage-reports-assets-view.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
 * [Search facets](/help/assets/search-facets.md)
 * [Manage collections](/help/assets/manage-collections.md)
 * [Bulk metadata import](/help/assets/metadata-import-export.md)
@@ -121,3 +121,4 @@ To process the existing assets, select the assets, select **[!UICONTROL Reproces
 >* [Configure and use asset microservices via processing profiles](/help/assets/asset-microservices-configure-and-use.md).
 >* [Integrate [!DNL Experience Manager] with [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
 >* [Asset ingestion and processing with asset microservices: An overview](/help/assets/asset-microservices-overview.md).
+

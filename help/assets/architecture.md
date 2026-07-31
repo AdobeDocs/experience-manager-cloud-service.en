@@ -25,7 +25,7 @@ To see architecture overview of asset microservices see this [asset microservice
 * [Download assets](/help/assets/download-assets-from-aem.md)
 * [Manage metadata](/help/assets/manage-metadata.md)
 * [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
-* [Manage reports](/help/assets/manage-reports-assets-view.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
 * [Search facets](/help/assets/search-facets.md)
 * [Manage collections](/help/assets/manage-collections.md)
 * [Bulk metadata import](/help/assets/metadata-import-export.md)
@@ -36,3 +36,4 @@ To see architecture overview of asset microservices see this [asset microservice
 >* [Overview and what's new](/help/assets/overview.md)
 >* [Supported file formats and MIME types](file-format-support.md)
 >* [Overview of asset microservices](asset-microservices-overview.md)
+

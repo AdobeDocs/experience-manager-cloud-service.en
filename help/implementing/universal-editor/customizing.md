@@ -116,3 +116,9 @@ Conditions can be defined using [JsonLogic schema](https://jsonlogic.com/). If t
 ![Shown text field](assets/shown.png)
 
 >[!ENDTABS]
+
+### Limitation: Conditions Inside Multi-Field Containers {#conditions-multi-field-limitation}
+
+Condition `var` resolution is absolute, not relative to the current row. A `var` must be either a root-level `fieldName`, or, for fields inside a container, prefixed with the container name as `containerName|fieldName`.
+
+The same approach does not work for multi containers (repeatable rows). Row content is indexed at runtime as `containerName/0|fieldName`, `containerName/1|fieldName`, etc., but that index isn't known when authoring the condition, and it shifts as rows are added, removed, or reordered. As a result, there is no way for an author to target a specific field within the same row, so conditions inside multi containers aren't supported.

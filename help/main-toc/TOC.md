@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2026 {#2026}
+      + [Release Notes for 2026.6.0](/help/release-notes/release-notes-cloud/2026/2026-6-0.md)
       + [Release Notes for 2026.5.0](/help/release-notes/release-notes-cloud/2026/2026-5-0.md)
       + [Release Notes for 2026.4.0](/help/release-notes/release-notes-cloud/2026/2026-4-0.md)
       + [Release Notes for 2026.3.0](/help/release-notes/release-notes-cloud/2026/2026-3-0.md)
@@ -103,6 +104,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2026 {#2026}
+      + [Maintenance Release Notes for 2026.7.0](/help/release-notes/maintenance/2026/2026-7-0.md)
       + [Maintenance Release Notes for 2026.6.0](/help/release-notes/maintenance/2026/2026-6-0.md)
       + [Maintenance Release Notes for 2026.5.0](/help/release-notes/maintenance/2026/2026-5-0.md)
       + [Maintenance Release Notes for 2026.4.0](/help/release-notes/maintenance/2026/2026-4-0.md)
@@ -146,6 +148,8 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2026 {#2026}
+      + [2026.6.0](/help/implementing/cloud-manager/release-notes/2026/2026-6-0.md)
+      + [2026.5.0](/help/implementing/cloud-manager/release-notes/2026/2026-5-0.md)
       + [2026.4.0](/help/implementing/cloud-manager/release-notes/2026/2026-4-0.md)
       + [2026.3.0](/help/implementing/cloud-manager/release-notes/2026/2026-3-0.md)
       + [2026.2.0](/help/implementing/cloud-manager/release-notes/2026/2026-2-0.md)
@@ -261,6 +265,9 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.07.16 Release Notes](/help/release-notes/universal-editor/2026/2026-07-16.md)
+      + [2026.07.09 Release Notes](/help/release-notes/universal-editor/2026/2026-07-09.md)
+      + [2026.07.02 Release Notes](/help/release-notes/universal-editor/2026/2026-07-02.md)
       + [2026.06.25 Release Notes](/help/release-notes/universal-editor/2026/2026-06-25.md)
       + [2026.06.18 Release Notes](/help/release-notes/universal-editor/2026/2026-06-18.md)
       + [2026.06.11 Release Notes](/help/release-notes/universal-editor/2026/2026-06-11.md)
@@ -343,6 +350,8 @@ user-guide-title: AEM as a Cloud Service
   + [Principal View for Permissions Management](/help/security/touch-ui-principal-view.md)
   + [Best Practices for Sling Service User Mapping and Service User Definition](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
   + [Customer Managed Keys for Adobe as a Cloud Service](/help/security/customer-managed-keys.md)
+  + [Security Health for AEM as a Cloud Service](/help/security/security-health.md)
+  + [Penetration Tests for AEM as a Cloud Service](/help/security/penetration-tests.md)
 + Experience Hub {#experience-hub}
   + [About Experience Hub](/help/experience-hub.md)
 + Onboarding {#onboarding}
@@ -649,6 +658,7 @@ user-guide-title: AEM as a Cloud Service
     + [Color tags for images](/help/assets/color-tag-images.md)
     + [Manage PDF documents](/help/assets/manage-pdf-documents.md)
     + [Micro-Frontend Destination Selector](/help/assets/destination-selector.md)
+    + {hide-from-toc} [AEM Assets Activation Report (Beta)](/help/assets/aem-assets-activation-report.md)
   + Configure, administer, and extend [!DNL Assets] {#admin}
     + [Detect duplicate assets](/help/assets/detect-duplicate-assets.md)
     + [Developer docs and APIs references](/help/assets/developer-reference-material-apis.md)
@@ -666,6 +676,8 @@ user-guide-title: AEM as a Cloud Service
     + [MediaLibrary capabilities](/help/assets/medialibrary.md)
     + [Import and export asset metadata](/help/assets/metadata-import-export.md)
     + [Configure asset upload restrictions](/help/assets/configure-asset-upload-restrictions.md)
+    + [AI-powered content onboarding and content supply chain automation](/help/assets/ai-powered-content-onboarding-content-supply-chain-automation.md)
+    + [Asset Sourcing portal for AEM Assets](/help/assets/asset-sourcing-portal-for-aem-assets.md)
   + Share and distribute assets {#brand-portal}
     + [Configure [!DNL Assets] with [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
     + [Publish assets to [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
@@ -925,17 +937,21 @@ user-guide-title: AEM as a Cloud Service
         + [Use machine translation or human translation to translate an Adaptive Form](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
         + [Configuring redirect page or thank you message](/help/forms/configure-redirect-page-or-thank-you-message.md)
         + [Create forms with repeatable sections](/help/forms/create-forms-repeatable-sections.md)
+        + [Add a table to an Adaptive Form (Core Components)](/help/forms/adaptive-forms-tables-core-components.md)
         + [Use Google reCAPTCHA in an Adaptive Form ](/help/forms/captcha-adaptive-forms-core-components.md)
-        + [Use hCaptcha in an Adaptive Form Core Components ](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
-        + [Use Turnstile Captcha in an Adaptive Form Core Components ](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+        + [Use hCaptcha in an Adaptive Form for Core Components](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+        + [Use Turnstile in an Adaptive Form for Core Components](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
         + [Add custom error handler in an Adaptive Form](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
         + [Add a locale for Adaptive Forms based on Core Components](/help/forms/supporting-new-language-localization-core-components.md)
         + [Design JSON Schema for an Adaptive Form (Core Components)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
+        + {hide-from-toc} [API Integration Tool for Dynamic Form Data](/help/forms/api-integration-tool-dynamic-form-data.md)
         + [Add versionings, comments, and annotations to an Adaptive Form](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
         + [Compare Adaptive Forms](/help/forms/compare-forms.md) 
         + [Create custom submit action](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
         + {hide-from-toc} [Converting Adaptive Forms based on foundation components to Core Component-based forms using migration utility tool](/help/forms/migration-utility-tool-for-af-core-components.md)
         + {hide-from-toc} [Email Templates in Adaptive Forms](/help/forms/html-email-templates-in-adaptive-forms.md)
+        + [Scan file attachments in Adaptive Forms with a custom validator](/help/forms/scan-file-attachments-custom-validator.md)
+        + [Tutorial: Scan file attachments with an antivirus](/help/forms/scan-file-attachments-clamav.md)
         + [Manage Publication in Experience Manager Forms](/help/forms/manage-publication.md)
         + Introduction to Rule Editor for Adaptive Forms based on Core Components{#rule-editor-core-components}
           + [Introduction to Rule Editor for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components.md)
@@ -977,8 +993,8 @@ user-guide-title: AEM as a Cloud Service
         + {hide-from-toc} [Publishing and unpublishing forms and documents](/help/forms/publishing-unpublishing-forms.md)
       + Add components to an Adaptive Form {#add-components-to-an-adaptive-form}
         + [Use CAPTCHA in an Adaptive Form](/help/forms/captcha-adaptive-forms.md)
-        + [Use hCaptcha in an Adaptive Form](/help/forms/integrate-adaptive-forms-hcaptcha.md)
-        + [Use Turnstile CAPTCHA in an Adaptive Form ](/help/forms/integrate-adaptive-forms-turnstile.md)
+        + [Use hCaptcha in an Adaptive Form for Foundation Components](/help/forms/integrate-adaptive-forms-hcaptcha.md)
+        + [Use Turnstile in an Adaptive Form for Foundation Components](/help/forms/integrate-adaptive-forms-turnstile.md)
         + [Use Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
         + [Apply Scribble Signature](/help/forms/signing-forms-using-scribble.md)
         + [Add a table to an adaptive form](/help/forms/adaptive-forms-tables.md)
@@ -1087,6 +1103,7 @@ user-guide-title: AEM as a Cloud Service
      + [Support XDP Editing](/help/forms/interactive-communication/support-xdp-editing.md)
      + {hide-from-toc} [Copy and Paste Interactive Communication](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
      + [Start Workflow in Interactive Communication](/help/forms/interactive-communication/start-workflow-in-interactive-communication-editor.md)
+     + [Configure Locale in Interactive Communication Editor](/help/forms/interactive-communication/support-localization.md)
      + [Create Dynamic Table](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
      + [Merge and Split Table Cells](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md)
      + [Move a Component to the Master Page](/help/forms/interactive-communication/howto/move-component-to-master-page.md)
