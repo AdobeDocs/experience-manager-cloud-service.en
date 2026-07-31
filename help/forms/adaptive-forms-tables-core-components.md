@@ -15,6 +15,8 @@ exl-id: f4a8c2e1-9b3d-4a7f-8c6e-1d2f3a4b5c6d
 | AEM as a Cloud Service (Foundation Components) | [Click here](/help/forms/adaptive-forms-tables.md) |
 | AEM as a Cloud Service (Core Components) | This article |
 
+<span class="preview"> The feature is available under the early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
 Using tables is an effective way to present complex, structured data in Adaptive Forms. Government and financial services forms often require tabular layouts for numeric data, line items, and multi-column inputs.
 
 The **Adaptive Form Table** Core Component lets you author responsive tables with configurable rows and columns, merge and split table row cells, enable column sorting, set proportional column widths, and add or remove rows at runtime. This article describes how to use the Table component in Adaptive Forms based on Core Components.
