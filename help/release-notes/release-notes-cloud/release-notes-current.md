@@ -172,8 +172,6 @@ To participate or learn more, send an email to `aemcontenthubbeta@adobe.com`.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### New Features in AEM Forms
-
 <!--
 
 #### API Integration Tool for Dynamic Form Data
@@ -181,10 +179,6 @@ To participate or learn more, send an email to `aemcontenthubbeta@adobe.com`.
 Form authors can now use the API Integration Tool to build forms that fetch and fill in data from external REST APIs, based on what the user does in the form. This no-code tool supports use cases like address auto-completion, dynamic dropdown lists, and real-time validation. For more information, see [API Integration Tool for Dynamic Form Data](/help/forms/api-integration-tool-dynamic-form-data.md).
 
 -->
-
-### Early Adopter Features
-
-## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Early Access Features in AEM Forms
 

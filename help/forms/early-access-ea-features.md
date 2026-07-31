@@ -388,9 +388,20 @@ Forms Manager now supports versioning for Adaptive Forms (Core Components and Fo
 
 Adaptive Forms Core Components introduce WCAG-compliant semantic markup for checkbox groups, radio button groups, and panels. These components now leverage `<fieldset>` and `<legend>` elements to establish meaningful relationships between group labels and their options for assistive technologies. See [Fieldset and legend support in Adaptive Forms](/help/forms/creating-accessible-adaptive-forms.md#fieldset-legend-accessibility).
 
+### Configurable tables for Adaptive Forms
+
+Create [configurable tables in Adaptive Forms based on Core Components](/help/forms/adaptive-forms-tables-core-components.md) to collect structured and tabular data. Authors can customize table rows and columns to design forms that efficiently capture grid-based information.
+
+**Benefits**
+* Simplifies the collection of structured and tabular data in a single form.
+* Reduces form complexity by grouping related information in a table.
+* Supports dynamic data entry scenarios where users need to provide multiple records, such as educational qualifications, employment history, or expense details.
+* Improves form usability and readability by organizing repeated information in a structured layout.
+* Reduces authoring effort by providing a reusable and configurable table component.
+
 ### Locale support for Interactive Communication
 
-Configure locale settings directly in the Interactive Communication Editor to create region-specific communications. Authors can select a supported locale to apply language and regional formatting conventions for dates, numbers, currencies, and other locale-sensitive content, helping deliver consistent and localized customer communications.
+[Configure locale](/help/forms/interactive-communication/support-localization.md) settings directly in the Interactive Communication Editor to create region-specific communications. Authors can select a supported locale to apply language and regional formatting conventions for dates, numbers, currencies, and other locale-sensitive content, helping deliver consistent and localized customer communications.
 
 Key benefits include:
 
