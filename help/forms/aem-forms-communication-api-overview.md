@@ -85,6 +85,16 @@ The table below lists all the [AEM Forms Communications APIs](https://developer.
 | API Endpoint |  Description | Execution Model     | Authentication Method        |
 |--------- | -------|---------|----------------------|
 | [/adobe/document/convert/pdftoxdp](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Conversion/paths/~1convert~1pdftoxdp/post) | Converts a PDF form into XDP format. | Synchronous | [OAuth](/help/forms/oauth-api-authetication.md)  |
+| /adobe/document/convert/htmltopdf | Converts an HTML document to PDF while preserving its layout and styling. | Synchronous | [OAuth](/help/forms/oauth-api-authetication.md) |
+| /adobe/document/convert/pstopdf | Converts a PostScript (PS) document to PDF. | Synchronous | [OAuth](/help/forms/oauth-api-authetication.md) |
+| /adobe/document/convert/pdftoimage | Converts a PDF document into one or more image files. | Synchronous | [OAuth](/help/forms/oauth-api-authetication.md) |
+| /adobe/document/convert/pdftops | Converts a PDF document to a PostScript (PS) document. | Synchronous | [OAuth](/help/forms/oauth-api-authetication.md) |
+| /adobe/document/transform/flattentransparency | Flattens transparency in a PDF document to improve compatibility with print and document processing workflows. | Synchronous | [OAuth](/help/forms/oauth-api-authetication.md) |
+
+>[!NOTE]
+>
+> <span class="preview">The HTML to PDF, PostScript to PDF, PDF to Image, PDF to PostScript, and Flatten Transparency APIs are under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email address to join the Early Adopter Program and request access to these capabilities.</span>
+
 
 #### Document Extraction APIs
 
