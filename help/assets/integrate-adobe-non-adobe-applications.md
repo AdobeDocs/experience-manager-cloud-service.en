@@ -59,6 +59,10 @@ Content Advisor uses an advanced search capability that understands the meaning 
 
 Unlike traditional keyword-based search, which looks for exact terms, AI Search interprets relationships between words, concepts, and user intent. This ensures that users find what they are looking for—even if their query is phrased differently, contains typos, or is in another language.
 
+>[!IMPORTANT]
+>
+>If you require searching for assets using natural language with prompts such as, `find me approved jpeg assets about coffee`, Adobe recommends to use Content Discovery Agent. For more information on how to access the agent, sample prompts, and so on, see [Content Discovery Agent](/help/ai-in-aem/agents/content-advisor/discovery.md).
+
 ![AI Search for assets in Content Advisor](assets/content-advisor-ai-search.png)
 
 Some if its key benefits include:
