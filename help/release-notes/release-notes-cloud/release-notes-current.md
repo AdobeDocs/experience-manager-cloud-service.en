@@ -172,8 +172,6 @@ To participate or learn more, send an email to `aemcontenthubbeta@adobe.com`.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### New Features in AEM Forms
-
 <!--
 
 #### API Integration Tool for Dynamic Form Data
@@ -182,19 +180,35 @@ Form authors can now use the API Integration Tool to build forms that fetch and 
 
 -->
 
-### Early Adopter Features
+### Early Access Features in AEM Forms
 
-#### Document of Record for forms embedded in AEM Sites
+#### Table component in Adaptive Forms based on Core Components
 
-Authors can now configure and generate a Document of Record (Submission PDF) for Adaptive Forms Core Components embedded in AEM Sites pages. DoR settings—including auto-generation, custom XDP templates, and branding—are available directly from the **Adaptive Form Container** in the Sites page editor. [Learn more.](/help/forms/generate-document-of-record-core-components.md#configure-document-of-record-for-forms-embedded-in-aem-sites)
+Adaptive Forms based on Core Components can now include a Table component to present complex, structured data in tabular layouts. Government and financial services forms often require tabular layouts for numeric data, line items, and multi-column inputs. The Table component supports:
+- Structured row and column authoring with header and body rows
+- Repeatable rows with add and remove actions at runtime
+- Column sorting with ascending and descending order
+- Disable sorting on individual columns for accessibility compliance
+- Proportional column widths
+- Merge and split table row cells
+- Replace default text box cells with other Adaptive Form components
+- Row-level calculations using the Rule Editor
+- Table rendering in Submission PDF (Document of Record).
+ 
+For more information, see [Add a table to an Adaptive Form (Core Components)](/help/forms/adaptive-forms-tables-core-components.md).
 
-#### Locale-specific custom XDP templates for Document of Record
+#### Document conversion APIs
 
-When you associate a custom XDP template for DoR, you can provide locale-specific versions in the same folder using the `basename.<locale>.xdp` convention (for example, `a.xdp` and `a.fr.xdp`). AEM Forms automatically picks the template that matches the form locale when generating the Submission PDF, with fallback to the default template. [Learn more](/help/forms/generate-document-of-record-core-components.md#locale-specific-custom-xdp-templates-for-document-of-record).
+Added support for new [document conversion APIs](/help/forms/aem-forms-communication-api-overview.md#document-conversion-apis) that enable applications to convert documents to supported formats and optimize PDFs for printing and processing. The following APIs are available:
+- **HTML to PDF** – Converts HTML documents to PDF while preserving page layout and styling.
+- **PostScript (PS) to PDF** – Converts PostScript documents to PDF.
+- **PDF to Image** – Converts PDF documents into one or more image files.
+- **PDF to PostScript (PS)** – Converts PDF documents to PostScript format.
+- **Flatten PDF Transparency** – Flattens transparent objects in PDF documents to improve compatibility with print and document processing workflows.
 
-#### Adobe Sign agreement expiration
+#### Locale support for Interactive Communication
 
-You can set how long recipients have to complete signing by specifying **Document Expiration (Days)** in the **Electronic Signature** section of an Adaptive Form. The value is sent to Adobe Sign as `daysUntilSigningDeadline`. If left empty, the agreement does not expire. [Learn more](/help/forms/working-with-adobe-sign.md#set-document-expiration-for-an-adobe-sign-agreement).
+Interactive Communication Editor now allows authors to [configure the locale for an Interactive Communication](/help/forms/interactive-communication/support-localization.md). The selected locale determines language and region-specific formatting, such as dates, numbers, and currencies, enabling localised content for different audiences
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
