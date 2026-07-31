@@ -947,8 +947,8 @@ user-guide-title: AEM as a Cloud Service
         + [Create custom submit action](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
         + {hide-from-toc} [Converting Adaptive Forms based on foundation components to Core Component-based forms using migration utility tool](/help/forms/migration-utility-tool-for-af-core-components.md)
         + {hide-from-toc} [Email Templates in Adaptive Forms](/help/forms/html-email-templates-in-adaptive-forms.md)
-        + {hide-from-toc} [Scan file attachments in Adaptive Forms with a custom validator](/help/forms/scan-file-attachments-custom-validator.md)
-        + {hide-from-toc} [Tutorial: Scan file attachments with ClamAV](/help/forms/scan-file-attachments-clamav.md)
+        + [Scan file attachments in Adaptive Forms with a custom validator](/help/forms/scan-file-attachments-custom-validator.md)
+        + [Tutorial: Scan file attachments with an antivirus](/help/forms/scan-file-attachments-clamav.md)
         + [Manage Publication in Experience Manager Forms](/help/forms/manage-publication.md)
         + Introduction to Rule Editor for Adaptive Forms based on Core Components{#rule-editor-core-components}
           + [Introduction to Rule Editor for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components.md)
