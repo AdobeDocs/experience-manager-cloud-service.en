@@ -56,7 +56,7 @@ Basically, you hit the ground running with your new AEM as a Cloud Service proje
 
 >[!NOTE]
 >
->If you are an AEM Assets customer and want to use the Assets Onboarding Agent, send an email to `GRP-AEM-ONBOARDING-AGENT@adobe.com`. For more information, see [Assets Onboarding Agent](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>If you are an AEM Assets customer and want to use the Assets Onboarding Agent, send an email to `GRP-AEM-ONBOARDING-AGENT@adobe.com`. For more information, see [Assets Onboarding Agent](/help/release-notes/release-notes-cloud/release-notes-current.md#assets-onboarding-agent-beta).
 
 ## Audience {#audience}
 
