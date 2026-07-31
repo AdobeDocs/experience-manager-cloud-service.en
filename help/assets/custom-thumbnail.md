@@ -10,7 +10,7 @@ Adobe Experience Manager (AEM) Assets custom video thumbnails provide authors wi
 
 ## Prerequisites {#prerequisites-for-custom-thumbnail}
 
-To enable cutom thumbnails, ensure you already have videos with captions in AEM.
+To enable custom thumbnail, ensure you have videos with captions in Adobe Experience Manager (AEM).
 
 ## Enabling Custom Thumbnail for videos {#enabling-custom-thumbnail}
 
