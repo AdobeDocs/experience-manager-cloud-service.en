@@ -14,25 +14,25 @@ The transcripts are generated based on the captions you have added in the video.
 
 ## Prerequisites {#prerequisites-for-enabling-transcriptions}
 
-To enable the transcription feature, ensure you have videos with captions in Adobe Experience Manager (AEM) Sites.
+To enable transcription, ensure you have videos with captions in Adobe Experience Manager (AEM) Sites.
 
 ## Enabling Transcription for videos in Adobe Experience Manager (AEM)  {#enable-transcription}
 
-To enable the transcription feature, follow the steps mentioned below:
+To enable transcription, follow the steps mentioned below:
 
 1. In Adobe Experience Manager (AEM) Sites, navigate to the homepage of any website. For example, from the homepage, navigate to **[!UICONTROL English]** > **[!UICONTROL Home]** as shown in the figure.
    ![Homepage](/help/assets/assets/homepage.png)
 2. Click the **[!UICONTROL Edit]** button ![Edit icon](assets/do-not-localize/edit_icon.svg) on the top of the page to add a Dynamic Media component and a video element inside that Dynamic Media component.
-   1. To add a video element inside the Dynamic Media component, select Videos from the Category drop-down. Drag and drop the video element to add it in Dynamic Media.
+   1. To add a video element inside the Dynamic Media component, select **[!UICONTROL Videos]** from the **[!UICONTROL Category]** drop-down. Drag and drop the video element to add it in Dynamic Media.
 
       ![Video](/help/assets/assets/videos.png)
    
-   2. To add a Dynamic Media component, click the Components icon. Drag and drop a Dynamic Media component as shown in the figure.
+   2. To add a Dynamic Media component, click the **[!UICONTROL Components]** icon. Drag and drop a Dynamic Media component as shown in the figure.
    ![Dynamic Media Component](/help/assets/assets/dmcomponents.png)
 
-3. Right click on the Dynamic Media component and click on Configure to configure some settings.
+3. Right click on the Dynamic Media component and click on **[!UICONTROL Configure]** to configure some settings.
    ![Configure](/help/assets/assets/component.png)
-4. From the **[!UICONTROL Viewer Preset]** drop down, select **[!UICONTROL Video (new)]** and enable the **[!UICONTROL Show transcript]**. The **[!UICONTROL Viewer Modifiers]** field allows you to select the language in which you want the transcript to be displayed. For example, you can select English as the default language and click **[!UICONTROL Done]**.
+4. From the **[!UICONTROL Viewer Preset]** drop down, select **[!UICONTROL Video (new)]** and enable **[!UICONTROL Show transcript]**. The **[!UICONTROL Viewer Modifiers]** field allows you to select the language in which you want the transcript to be displayed. For example, you can select English as the default language and click **[!UICONTROL Done]**.
    ![Dynamic Media Tab](/help/assets/assets/dmtab.png)
 5. Click the **[!UICONTROL Page Information]** icon and select **[!UICONTROL View As Published]**.
       ![Page Information](/help/assets/assets/icon.png)
