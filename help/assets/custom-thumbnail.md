@@ -22,9 +22,8 @@ To enable custom thumbnails for videos, follow the steps mentioned below:
    ![Properties](/help/assets/assets/properties.png)
 3. You can now see the **[!UICONTROL Change Thumbnail]** option along with the title and other details of the video asset. 
     ![Custom Thumbnail of a video asset](/help/assets/assets/thumbnails.png)
-   1. To generate a new thumbnail, click on **[!UICONTROL Change Thumbnail]**.
-   2. To generate a thumbnail from an existing video asset, select **[!UICONTROL Select Frame from Video]**. Play the video and navigate to the desired frame. Once you have identified the frame you want to use as the thumbnail, click **[!UICONTROL Save Change]** to generate and save the thumbnail from that specific moment in the video.
-   3. If you want to select any thumbnail from Assets, click **[!UICONTROL Select Thumbnail from Assets]** > **[!UICONTROL Save Change]**. 
+   1. To generate a thumbnail from an existing video asset, click on **[!UICONTROL Change Thumbnail]** and select **[!UICONTROL Select Frame from Video]**. Play the video and navigate to the desired frame. Once you have identified the frame you want to use as the thumbnail, click **[!UICONTROL Save Change]** to generate and save the thumbnail from that specific moment in the video.
+   2. If you want to select any thumbnail from Assets, click on **[!UICONTROL Change Thumbnail]** and select **[!UICONTROL Select Thumbnail from Assets]** > **[!UICONTROL Save Change]**. 
       ![Selecting Thumbnail of a video asset](/help/assets/assets/changethumbnail.png)
 You can now be able to see the newly generated thumbnail. 
     ![Selecting Thumbnail of a video asset](/help/assets/assets/newthumbnail.png)
