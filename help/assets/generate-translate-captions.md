@@ -9,6 +9,10 @@ badgeSaas: label="AEM Assets" type="Positive"
 
 [!DNL Adobe Experience Manager Assets] Dynamic Media with OpenAPI capabilities enables you to generate captions from audio tracks and translate existing captions into multiple supported languages. These capabilities improve accessibility, simplify subtitle creation, and support localized video playback experiences.
 
+>[!NOTE]
+>
+>Generate and translate captions is a Limited Availability feature. To enable this feature, create a [support ticket](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+
 You can manage captions directly from the **Captions & Audio tracks** tab on the video asset properties page.
 
 >[!NOTE]
