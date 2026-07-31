@@ -20,7 +20,10 @@ These **preview** release notes are provided as a convenience so you know what c
 >
 >The content of the actual release as well as the release date are subject to change.
 
+## Upcoming Features {#upcoming-features}
+
+* When the asset selector is used with the `xwalk` protocol and a Dynamic Media with Open API asset, the mimeType and alt text is now also stored.
+
 ## Upcoming Changes {#upcoming-improvements}
 
-* The publish panel now visually adapts more cleanly when [metadata is used to restrict the user's publishing options.](/help/implementing/universal-editor/customizing.md#disable-features)
-
+* When a multifield contains three or more items, dragging an item to reorder it upwards now works properly.
