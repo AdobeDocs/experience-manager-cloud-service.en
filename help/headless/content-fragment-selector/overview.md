@@ -6,7 +6,7 @@ exl-id: 5b18fb2c-26c8-4d9d-ba2e-9e53c09f5022
 ---
 # Micro-Frontend Content Fragment Selector {#micro-frontend-content-fragment-selector}
 
-The Micro-Frontend Content Fragment Selector provides a user interface that easily integrates with the Adobe Experience Manager (AEM) as a Cloud Service repository. The interface allows you to browse or search Content Fragments in the repository, and use them in your application.
+The Micro-Frontend Content Fragment Selector provides a user interface that easily integrates with the Adobe Experience Manager (AEM) as a Cloud Service repository. The interface allows you to browse or search Content Fragments in the selected repository, and use them in your application.
 
 The Micro-Frontend user interface is made available in your application using the Content Fragment Selector package. Any updates to the package are automatically imported and loaded into your application.
 
@@ -18,7 +18,7 @@ The Content Fragment Selector provides many benefits, such as:
 * Easy to maintain, as updates to the Content Fragment Selector package are automatically deployed to the Content Fragment Selector available to your application. This means that your application does not need to take action to load the latest modifications.
 * Ease of customization, using properties that control the Content Fragment Selector display within your application.
 * Full-text search, together with customizable filters, allow the quick navigation of Content Fragments within the authoring experience.
-* Ability to switch repositories within an IMS organization for Content Fragment selection.
+* Ability to switch repositories for Content Fragment selection. You can select from within an IMS organization, from AMS repositories, or a combination of both.
 * Ability to sort Content Fragments, and view them in your selected view.
 
 ## Prerequisites {#prerequisites}
@@ -93,7 +93,7 @@ You can select the repository of your choice from the **Repository** drop-down, 
 
 ![The Content Fragment Selector](/help/headless/assets/content-fragment-repository-selector.png)
 
-The repository options available in the drop-down list are based on the `repositoryId` property defined in the `index.html` file. This property is based on the environment from the selected IMS org accessed by the user currently logged in. 
+The repository options available in the drop-down list are based on the `repositoryId` property defined in the `index.html` file. This property is based on either the environment from the selected IMS org accessed by the user currently logged in, or your AMS repositories, or a combination of both. 
 
 Consumers can pass a preferred `repositoryID` to render fragments from a specific repository, and stop rendering the repository switcher.
 
