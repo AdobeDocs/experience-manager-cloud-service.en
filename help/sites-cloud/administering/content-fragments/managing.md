@@ -58,6 +58,7 @@ Here you can see that there are three main areas:
   * Here you can compress, or expand, links to the panels
   * Here you can hide, or reveal, the folder tree
   * You can select a specific branch of the tree
+  * You can take [actions on a folder](#folder-actions)
   * This can be resized to show nested folders
   * As well as Content Fragments, you can:
     * View [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) or [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md); you can also compress, or expand, links to the panels
@@ -154,6 +155,7 @@ Within the console there is a range of actions that you can use, either directly
 
 * Various actions are directly [available from the console](#actions-unselected)
 * You can [select one, or more, Content Fragments to show appropriate actions](#actions-selected-content-fragment)
+* In the left panel you can also trigger [actions on folders](#folder-actions)
 
 ### Actions (unselected) {#actions-unselected}
 
@@ -205,6 +207,30 @@ Selecting a specific fragment opens a toolbar focused on the actions available f
 >[!NOTE]
 >
 >Actions such as Publish, Unpublish, Delete, Move, Rename, and Copy each trigger an asynchronous job. The progress of that job can be monitored via the AEM Async Jobs UI.
+
+### Folder Actions {#folder-actions}
+
+When the folder tree is expanded you can use the ellipse (three dots) to access and trigger actions on the folder itself.
+
+The following actions are available:
+
+![Content Fragments - folder actions](/help/sites-cloud/administering/content-fragments/assets/cf-managing-folder-actions.png)
+
+* **Rename**
+
+  Rename a folder.
+
+* **Copy**
+
+  Copy a folder to a new location.
+
+* **Move**
+
+  Move a folder to a new location.
+
+* **Delete**
+
+  After confirmation you can delete the folder.
 
 ## Creating Content Fragments {#creating-content-fragments}
 
