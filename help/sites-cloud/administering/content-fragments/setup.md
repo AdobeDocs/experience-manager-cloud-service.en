@@ -33,7 +33,7 @@ Setting up your instance is done:
 Then, if needed:
 
 * [enable your GraphQL endpoint](/help/headless/graphql-api/graphql-endpoint.md)
-* customize the new Content Fragment editor by defining, and applying, a [Content Fragment Cloud Configuration](#customize-the-editor-with-a-content-fragment-cloud-configuration)
+* customize the new Content Fragment editor by defining, and applying, a [Content Fragment Cloud Configuration](#customize-the-environment-with-a-content-fragment-cloud-configuration)
 
 ## Enable Content Fragment Functionality in the Configuration Browser {#enable-content-fragment-functionality-configuration-browser}
 
