@@ -15,6 +15,7 @@ You can use the following properties to customize how the Content Fragment Selec
 | Property | Type | Required | Default | Description |
 |--- |--- |--- |--- |--- |
 | `ref` | FragmentSelectorRef | No | | Reference to the `ContentFragmentSelector` instance, allowing access to provided functionality such as `reload`. |
+| `apiKey` | string | No | | API key reported to analytics on `digitalData.page.attributes.apiKey`. Used only for tracking — not for data API calls. If not provided, it is derived from the `imsToken` (`client_id` claim), falling back to the package default. |
 | `imsToken` | string | No | | IMS token used for authentication. If not provided, the IMS login flow will be initiated. |
 | `repoId` | string | No | | Repository ID used for the Fragment Selector. When provided, the selector automatically connects to the specified repository, and the repository dropdown is hidden. If not provided, the user can select a repository from the list of available repositories they have access to. |
 | `allowedRepositoryIds` | string[] | No | | List of repository IDs to filter repositories and content fragments in the Content Fragment Selector. When provided with repository IDs, only these repositories will be visible in the repository selector. If not provided or empty array, all repositories the user has access to will be available. |
