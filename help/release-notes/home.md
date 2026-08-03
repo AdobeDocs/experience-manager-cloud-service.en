@@ -9,7 +9,7 @@ role: Admin
 
 | Product | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2026.6.0 |
+| Version | 2026.7.0 |
 | Type | Continuous Updates |
 | Availability date | Continuous Update |
 
@@ -85,4 +85,3 @@ Adobe Experience League offers lots of resources to learn AEMaaCS.
 * [What is New](what-is-new.md)
 * [Notable Changes](aem-cloud-changes.md)
 * [Deprecated and Removed Features](deprecated-removed-features.md)
-
