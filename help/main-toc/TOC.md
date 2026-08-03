@@ -540,6 +540,7 @@ user-guide-title: AEM as a Cloud Service
       + [Defining Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
       + [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md)
       + [Authoring Fragment Content](/help/sites-cloud/administering/content-fragments/authoring.md)
+      + [Properties, Tags and Metadata](/help/sites-cloud/administering/content-fragments/properties-tags-and-metadata.md)
       + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
       + [Delete Considerations](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
       + [Analyzing Structure](/help/sites-cloud/administering/content-fragments/analysis.md)

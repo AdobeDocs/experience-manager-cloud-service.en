@@ -23,8 +23,8 @@ After defining your [Content Fragment Models](#creating-a-content-model) you can
 
 * [Create your Content Fragments](#creating-a-content-fragment). 
 * Then open the [Content Fragment Editor](#opening-the-fragment-editor) to [author your content and manage your Variations](#editing-the-content-of-your-fragment).
-* [Manage Tags](#manage-tags)
-* [View, and edit, the Properties (Metadata)](#viewing-and-editing-properties)
+* [Manage Tags](#view-and-manage-tags)
+* [View, and edit, the Properties and Metadata](#manage-properties-and-metadata)
 * [View the Structure Tree](/help/sites-cloud/administering/content-fragments/authoring.md#structure-tree)
 
 >[!NOTE]
@@ -73,6 +73,7 @@ Here you can see that there are three main areas:
       * Open the appropriate fragment in the editor
       * Show information about references
       * Show information about language versions of the fragment
+      * Show the **Properties** and **Metadata**
     * [Certain other fields of information](#information-content-fragments) about a Content Fragment can be used for [Fast Filtering](#fast-filtering):
       * Select a value in the column and it is immediately applied as a filter
       * Fast filtering is supported for the **Model**, **Status**, **Modified By**, **Tags** and **Published By** columns.
@@ -149,6 +150,9 @@ The main/right panel (table view) of the console provides a range of information
 
     ![Content Fragments console - Workflows dialog](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-workflows-dialog.png)
 
+* **[Properties](#manage-properties-and-metadata)** and **[Metadata](#manage-properties-and-metadata)**
+
+
 ## Actions {#actions}
 
 Within the console there is a range of actions that you can use, either directly, or after selecting a specific fragment:
@@ -182,7 +186,7 @@ Selecting a specific fragment opens a toolbar focused on the actions available f
 
 * **[Open in new Editor](#editing-the-content-of-your-fragment)**
 * **[Publish](#publishing-and-previewing-a-fragment)** (and **[Unpublish](#unpublishing-a-fragment)**)
-* **[Manage Tags](#manage-tags)**
+* **[Manage Tags](#view-and-manage-tags)**
 * **[Copy](#copy-a-content-fragment)**
 * **[Replace](#find-and-replace)**
 * **[Preview](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md#preview-your-fragment-with-a-template)**
@@ -392,13 +396,11 @@ FolderC
    Copy_of_FragmentB
 ```
 
-## View and Manage Tags {#manage-tags}
+## View and Manage Tags {#view-and-manage-tags}
 
-From the Content Fragments console you can view any applied tags in the **Tags** column; after ensuring that [the column is showing](#select-columns-console). 
+From the Content Fragments console you can [manage any applied tags](/help/sites-cloud/administering/content-fragments/properties-tags-and-metadata.md#manage-tags-console) from the **Tags** column. 
 
-### Manage Tags (Console) {#manage-tags-console}
-
-To manage the tags:
+To manage the tags from the console:
 
 1. Navigate to the Content Fragment console.
 1. Select a Content Fragment.
@@ -409,13 +411,29 @@ To manage the tags:
 
 1. **Save** updates. This will return you to the console.
 
-### Viewing, and Editing, Tags (Editor) {#viewing-and-editing-tags}
+>[!NOTE]
+>
+>You can also view, and edit, the tags applied to a fragment using the [Properties](/help/sites-cloud/administering/content-fragments/authoring.md) tab of the editor. The information shown may differ between **Main** and any **Variations**.
 
-You can also view, and edit, the tags applied to a fragment using the [Properties](/help/sites-cloud/administering/content-fragments/authoring.md) tab of the editor. The information shown differs between **Main** and any **Variations**.
+>[!NOTE]
+>
+>See also [Properties, Tags and Metadata](/help/sites-cloud/administering/content-fragments/properties-tags-and-metadata.md).
 
-## Viewing, and Editing, Properties (Editor) {#viewing-and-editing-properties}
+## Manage Properties and Metadata {#manage-properties-and-metadata}
 
-You can view, and edit, the properties (metadata) of a fragment using the [Properties](/help/sites-cloud/administering/content-fragments/authoring.md) tab of the editor. The information shown differs between **Main** and any **Variations**.
+In the Content Fragments console you can view, and edit, the properties and metadata of a fragment using the information ( **i** ) icon to open the right hand panel:
+
+![Manage Tags](/help/sites-cloud/administering/content-fragments/assets/cf-managing-properties.png)
+
+You can define the metadata structure using [metadata forms](/help/sites-cloud/administering/content-fragments/properties-tags-and-metadata.md#metadata-forms).
+
+>[!NOTE]
+>
+>You can also use the [new Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md).
+
+>[!NOTE]
+>
+>For more information see also [Properties, Tags and Metadata](/help/sites-cloud/administering/content-fragments/properties-tags-and-metadata.md).
 
 ## Publishing and Previewing a Fragment {#publishing-and-previewing-a-fragment}
 
