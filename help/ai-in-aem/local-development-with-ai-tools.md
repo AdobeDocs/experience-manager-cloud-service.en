@@ -54,7 +54,7 @@ Adobe publishes AEM as a Cloud Service skills in the **[adobe/skills](https://gi
 |`dispatcher`|AI-powered Dispatcher and Apache HTTPD configuration assistant covering config authoring, technical advisory, incident response, performance tuning, and security hardening|
 |`migration`|Migrates AEM 6.x, AMS, or on-premise Java code and OSGi configurations to AEM as a Cloud Service, driven by [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) findings from a CSV export or [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)|
 |`workflow`|This is the single entry point for all AEM as a Cloud Service Workflow skills. It covers workflow model design, custom process step and participant chooser development, launcher configuration, workflow triggering, and production support including debugging stuck/failed workflows, triaging incidents with Cloud Manager logs, thread pool analysis, and Sling Job diagnostics for the Granite Workflow Engine.|
-|`code-assessment`|**(Beta)** Detects and fixes AEM best-practice violations, code-quality, and correctness issues in your local project, reporting findings and applying surgical fixes|
+|`code-assessment`| Detects and fixes AEM best-practice violations, code-quality, and correctness issues in your local project, reporting findings and applying surgical fixes|
 
 ### Install Skills {#install-skills}
 
@@ -151,11 +151,7 @@ For broad or first-time requests, start with the `workflow-orchestrator` sub-ski
 
 The dispatcher skill handles orchestration and advisory guidance. The Dispatcher MCP server, described in the following section, provides the seven validation and runtime tools the skill uses when it needs local evidence.
 
-### Use the Code-assessment Skill (Beta) {#use-the-code-assessment-skill}
-
->This feature is **beta**. Adobe encourages you to provide feedback by emailing [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) to shape product development. 
->
->Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (by way of Adobe Support Services or otherwise) the beta releases. Adobe advises customers to use caution and not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Accordingly, any use of the beta releases is entirely at the customer's own risk.
+### Use the Code-assessment Skill {#use-the-code-assessment-skill}
 
 The `code-assessment` skill detects, reviews, and fixes code-quality and correctness issues in an AEM as a Cloud Service project entirely within your local workspace. Describe the issue, and the skill routes the request to the appropriate remediation workflow.
 

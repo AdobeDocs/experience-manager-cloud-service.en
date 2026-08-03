@@ -58,6 +58,7 @@ Here you can see that there are three main areas:
   * Here you can compress, or expand, links to the panels
   * Here you can hide, or reveal, the folder tree
   * You can select a specific branch of the tree
+  * You can take [actions on a folder](#folder-actions)
   * This can be resized to show nested folders
   * As well as Content Fragments, you can:
     * View [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) or [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md); you can also compress, or expand, links to the panels
@@ -158,6 +159,7 @@ Within the console there is a range of actions that you can use, either directly
 
 * Various actions are directly [available from the console](#actions-unselected)
 * You can [select one, or more, Content Fragments to show appropriate actions](#actions-selected-content-fragment)
+* In the left panel you can also trigger [actions on folders](#folder-actions)
 
 ### Actions (unselected) {#actions-unselected}
 
@@ -209,6 +211,30 @@ Selecting a specific fragment opens a toolbar focused on the actions available f
 >[!NOTE]
 >
 >Actions such as Publish, Unpublish, Delete, Move, Rename, and Copy each trigger an asynchronous job. The progress of that job can be monitored via the AEM Async Jobs UI.
+
+### Folder Actions {#folder-actions}
+
+When the folder tree is expanded you can use the ellipse (three dots) to access and trigger actions on the folder itself.
+
+The following actions are available:
+
+![Content Fragments - folder actions](/help/sites-cloud/administering/content-fragments/assets/cf-managing-folder-actions.png)
+
+* **Rename**
+
+  Rename a folder.
+
+* **Copy**
+
+  Copy a folder to a new location.
+
+* **Move**
+
+  Move a folder to a new location.
+
+* **Delete**
+
+  After confirmation you can delete the folder.
 
 ## Creating Content Fragments {#creating-content-fragments}
 
@@ -504,17 +530,13 @@ When the relevant dialog opens you can select the appropriate service:
 
 The **Replace** action is available (in the top toolbar) to find, and replace, specified text in your selected Content Fragments. 
 
-![Find and Replace](/help/sites-cloud/administering/content-fragments/assets/cf-managing-find-replace.png)
+The dialog allows you to specify the **Find** and **Replace** texts, then **Review** the potential updates. Validation criteria are checked and you are notified of any errors or conflicts. You can then can decide whether to cancel the process, change your criteria, or proceed by skipping fragments where the change provokes an error and only changing fragments where the substitution can be applied successfully:
 
-Before replacement, validation criteria are checked and you are informed of any conflicts, allowing you to change the replacement string or only replace the validated instances.
+![Confirm Find and Replace](/help/sites-cloud/administering/content-fragments/assets/cf-managing-confirm-replace.png)
 
 >[!NOTE]
 >
->The find and replace action can only be performed on a maximum of 20 selected Content Fragments (at a time). 
->
->If you select more than 20 Content Fragments, you will see the message **Unable to find and replace**.
-
-![Confirm Replace](/help/sites-cloud/administering/content-fragments/assets/cf-managing-confirm-replace.png)
+>If more than 20 fragments are to be updated, the operation will be performed asynchronously in batches of 20. You receive a notification when the operation starts, and when it completes you receive another notification indicating the number of resources updated.
 
 ## Check Out and Check In {#check-out-and-check-in}
 
