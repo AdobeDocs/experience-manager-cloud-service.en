@@ -19,19 +19,21 @@ To enable your instance for the Content Fragment functionality you need to enabl
   >
   >If you do not enable **Content Fragment Models**:
   >
-  >* the **Create** option will not be available for creating models.
-  >* you will not be able to [select the Sites configuration to create the related end-point](/help/headless/graphql-api/graphql-endpoint.md).
+  >* the **Create** option will not be available for [creating models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+  >* you will not be able to [select the Sites configuration to create the related end-point](/help/headless/graphql-api/graphql-endpoint.md)
 
-* **GraphQL Persisted Queries** - optional
+* **[GraphQL Persisted Queries](/help/headless/graphql-api/persisted-queries.md)** - optional, needed for use of GraphQL
+* **[Cloud Configurations](#customize-the-environment-with-a-content-fragment-cloud-configuration)** - optional, used for configuring various aspects of the Content Fragment environment
 
 Setting up your instance is done:
 
 * by [enabling functionality in the Configuration Browser](#enable-content-fragment-functionality-configuration-browser)
 * then [applying the configuration to your individual Assets folders](#apply-the-configuration-to-your-folder)
 
->[!TIP]
->
->Content Fragments can be [published to Edge Delivery Services.](https://www.aem.live/developer/content-fragment-overlay)
+Then, if needed:
+
+* [enable your GraphQL endpoint](/help/headless/graphql-api/graphql-endpoint.md)
+* customize the new Content Fragment editor by defining, and applying, a [Content Fragment Cloud Configuration](#customize-the-editor-with-a-content-fragment-cloud-configuration)
 
 ## Enable Content Fragment Functionality in the Configuration Browser {#enable-content-fragment-functionality-configuration-browser}
 
@@ -60,9 +62,10 @@ To use the Content Fragment functionality, of Content Fragment Models and GraphQ
    1. Specify a **Title**.
    1. Upon creation, the **Name** becomes the node name in the repository.
       You can enter a name. If you leave the field blank it is automatically generated based on the title, then adjusted according to [AEM naming conventions](/help/implementing/developing/introduction/naming-conventions.md); you can adjust the result if necessary.
-   1. To enable their use select 
+   1. To enable their use, as required, select 
       * **Content Fragment Models** 
-      * **GraphQL Persisted Queries**
+      * **GraphQL Persisted Queries** 
+      * **Cloud Configurations** 
 
       ![Define configuration](/help/sites-cloud/administering/content-fragments/assets/cf-setup-create-conf.png)
 
@@ -75,3 +78,9 @@ When the configuration **global** is enabled for Content Fragment functionality,
 To use other configurations (therefore excluding global) with a comparable Assets folder, you have to define the connection. Do this by selecting the appropriate **Configuration** in the **Cloud Services** tab of the **Folder Properties** of the appropriate folder.
 
 ![Apply configuration](/help/sites-cloud/administering/content-fragments/assets/cf-setup-apply-conf.png)
+
+## Customize the environment with a Content Fragment Cloud Configuration {#customize-the-environment-with-a-content-fragment-cloud-configuration}
+
+With a [Content Fragment Cloud Configuration](/help/implementing/developing/extending/content-fragments-cloud-configurations.md) you can customize various aspects of your Content Fragment environment, including certain actions and the new Content Fragment editor.
+
+After [creating](/help/implementing/developing/extending/content-fragments-cloud-configurations.md#create-a-content-fragment-cloud-configuration) and defining the configuration you also [apply the Cloud Configuration to your individual Assets folders](/help/implementing/developing/extending/content-fragments-cloud-configurations.md#apply-the-configuration-to-your-folder), so that it is applied to all the Content Fragments in that folder.
