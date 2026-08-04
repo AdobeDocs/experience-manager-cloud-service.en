@@ -63,7 +63,7 @@ To maintain the integrity and authenticity of Content Credentials, Dynamic Media
 4. Content Credentials processing has a configured timeout.
 If any of these safeguards are reached, the asset continues through normal Dynamic Media processing, but Content Credentials may not be preserved in the generated output.
 
-## About User-generated content in Adobe Dynamic Media Classic {#user-generated content} 
+## About User-generated content in Adobe Dynamic Media Classic {#user-generated-content} 
 
 User-Generated Content (UGC) consists of uploading assets to a dedicated Adobe Dynamic Media Classic storage repository and performing related operations.
 
