@@ -63,6 +63,29 @@ To maintain the integrity and authenticity of Content Credentials, Dynamic Media
 4. Content Credentials processing has a configured timeout.
 If any of these safeguards are reached, the asset continues through normal Dynamic Media processing, but Content Credentials may not be preserved in the generated output.
 
+## About User-generated content in Adobe Dynamic Media Classic {#user-generated content} 
+
+User-Generated Content (UGC) consists of uploading assets to a dedicated Adobe Dynamic Media Classic storage repository and performing related operations.
+
+UGC supports raster image file formats *bmp*, *gif*, *jpg*, *png*, *psd*, *tiff*.
+
+>[!IMPORTANT]
+>
+> Starting May 1, 2023, UGC assets in Dynamic Media remain available for use up to 60 days from the date of upload. After 60 days, the assets are removed.
+
+>[!NOTE]
+>
+> Support for new or existing UGC vector image assets in Adobe Dynamic Media Classic ended on September 30, 2021.
+
+Before uploading assets, you must obtain a shared-secret key. You use this key to retrieve an upload token. You submit the upload token when you upload assets and perform other UGC tasks.
+
+After you retrieve a shared-secret key and upload token, you can perform the following operations for user-generated content:
+
+* Upload an asset.
+* Get image asset metadata.
+* Delete an uploaded asset.
+* Get information about a company’s disk space usage.
+
 **See also**
 
 * [Translate Assets](/help/assets/translate-assets.md)
