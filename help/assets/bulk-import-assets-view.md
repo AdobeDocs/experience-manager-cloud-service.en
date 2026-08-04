@@ -221,7 +221,11 @@ Click ![More icon](assets/do-not-localize/more-icon.svg) corresponding to the co
 
 ## Navigate to assets after performing bulk import {#view-assets-after-bulk-import}
 
-To view the Assets target location where the assets are imported after running the Bulk Import job, click ![More icon](assets/do-not-localize/more-icon.svg) corresponding to the configuration name, and then click **[!UICONTROL View Assets]**. 
+To view the Assets target location where the assets are imported after running the Bulk Import job, click ![More icon](assets/do-not-localize/more-icon.svg) corresponding to the configuration name, and then click **[!UICONTROL View Assets]**.
+
+## Limitations and authentication constraints {#limitations-authentication-constraints}
+
+* OneDrive Bulk Import uses delegated (user-based) OAuth only:  app-only or service principal are not supported.  For unattended imports, use Azure Blob Storage or S3.
 
 
 **See also**
@@ -236,7 +240,7 @@ To view the Assets target location where the assets are imported after running t
 * [Download assets](/help/assets/download-assets-from-aem.md)
 * [Manage metadata](/help/assets/manage-metadata.md)
 * [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
-* [Manage reports](/help/assets/manage-reports-assets-view.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
 * [Search facets](/help/assets/search-facets.md)
 * [Manage collections](/help/assets/manage-collections.md)
 * [Bulk metadata import](/help/assets/metadata-import-export.md)

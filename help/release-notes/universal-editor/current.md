@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2026.07.09 Release Notes
-description: These are the release notes for the 2026.07.09 release of the Universal Editor.
+title: Universal Editor 2026.07.30 Release Notes
+description: These are the release notes for the 2026.07.30 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2026.07.09 Release Notes {#release-notes}
+# Universal Editor 2026.07.30 Release Notes {#release-notes}
 
-These are the release notes for the 9 July 2026 release of the Universal Editor.
+These are the release notes for the 30 July 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -20,7 +20,4 @@ These are the release notes for the 9 July 2026 release of the Universal Editor.
 
 ## Other Improvements {#other-improvements}
 
-* [Undo/redo](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) actions have been improved.
-* [Ordered lists](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) now render properly when editing inline with the rich text editor.
-* [Drag and drop reordering](/help/sites-cloud/authoring/universal-editor/authoring.md#drag-and-drop-move) of sections now works properly.
-* Field selection dropdowns in the properties panel are no longer obscured by the Experience Platform navigation bar in certain situations.
+* The publish panel now visually adapts more cleanly when [metadata is used to restrict the user's publishing options.](/help/implementing/universal-editor/customizing.md#disable-features)

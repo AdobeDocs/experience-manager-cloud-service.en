@@ -40,7 +40,9 @@ The next planned release is Thursday, August 6, 2026.
     * [Add a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md##adding-production-pipeline) and [Add a non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#configuring-non-production-pipelines).
 
 * **Content Copy: Cross Program and Forward Flow**  
-    Cloud Manager **Content Copy**, which lets teams copy content between AEM environments without a deployment, includes two capabilities available to all programs. Cross Program support allows content to be copied across different Cloud Manager programs, not just within the same program. Forward Flow removes the directional restriction, allowing content to be copied from any environment to any other — including from lower environments upward.
+    Cloud Manager **Content Copy**, which lets teams copy content between AEM environments without a deployment, includes two capabilities available to all programs. Cross Program support allows content to be copied across different Cloud Manager programs, not just within the same one. Forward Flow removes the directional restriction, allowing content to be copied from any environment to any other — including from lower environments upward.
+
+    For details, see [The Content Copy Tool](/help/implementing/developing/tools/content-copy.md).
 
 
 ## Beta programs {#private-beta-program}
@@ -118,7 +120,7 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 * Go-Live complete dialog content not scrollable in Program Overview. The dialog box now scrolls correctly, ensuring all content is accessible regardless of screen size. (CMGR-76405)
 
-* Custom domain mapping fails on newly created RDE environments. After creating a new Rapid Development Environment (RDE), customers encountered the error, "Environment status is not valid for domain config change," when attempting to add a custom domain mapping immediately after provisioning. 
+* Custom domain mapping fails on newly created RDE environments. After creating a new Rapid Development Environment (RDE), customers encountered the error "Environment status is not valid for domain config change" when attempting to add a custom domain mapping immediately after provisioning. 
 Cloud Manager now correctly reflects the environment's ready state before any domain mapping is attempted. (CMGR-75904)
 
 * Deleting a DV certificate and recreating it for the same domain fails with "existing certificate" error. When customers deleted a domain-validated (DV) certificate and then tried to create a new one for the same domain, Cloud Manager returned the error "There's an existing certificate that covers all the domains." As a result, it blocked the new certificate from being issued. The deletion appeared successful in the UI but the certificate was not fully removed internally, leaving the domain locked. This issue is now resolved. (CMGR-72784)

@@ -25,12 +25,12 @@ During the deprecation time window, Adobe will remind customers of the actions t
 
 >[!IMPORTANT]
 >
->Several [deprecated APIs](#aem-apis) will be removed on **July 23, 2026**. Please review these key dates and impacts:
+>Several [deprecated APIs](#aem-apis) will be removed on **September 14, 2026**. Please review these key dates and impacts:
 >
 >* **Starting January 26, 2026**: Actions Center notification emails are sent as a reminder to remove usage of these APIs, if a pipeline has been recently executed.
 >* **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
 >* **April 14, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.*
->* **July 23, 2026**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and wil not be subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further. To once again receive Adobe release updates, a fullstack pipeline must be successfully executed; the update will then be applied within a few days.
+>* **September 14, 2026**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and wil not be subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further. To once again receive Adobe release updates, a fullstack pipeline must be successfully executed; the update will then be applied within a few days.
 >
 
 ## Deprecated Functionality {#deprecated-features}
@@ -40,7 +40,6 @@ The functionality in the table below have been announced as deprecated, but have
 | Capabilities | Deprecated feature | Replacement |
 | ------------ | ------------------ | ----------- |
 | Sites | [Content Fragment Support in Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) | [Content Fragment Delivery with OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>together with<br> [Content Fragments and Content Fragment Models Management OpenAPIs](/help/headless/content-fragment-openapis.md) |
-| Sites | Content Fragment text summarization | AEM Generate Variations |
 |Sites|[PWA Features](/help/sites-cloud/authoring/sites-console/enable-pwa.md)|None|
 |Sites|[SPA Editor](/help/implementing/developing/hybrid/introduction.md)|The preferred editors for managing headless content in AEM are:<br>- [The Universal Editor](https://www.aem.live/docs/aem-authoring) for visual editing.<br>- [The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md) for form-based editing.|
 |[!DNL Sites]|[JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api)|[Java Use API](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api)|
@@ -64,6 +63,7 @@ This section lists functionality that has been removed.
 
 | Area         | Feature            | Replacement | Target Removal Date |
 | ------------ | ------------------ | ----------- | ------------------- |
+| Sites | Content Fragment text summarization | [AEM Generate Variations](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-content-fragment-editor) | Removed |
 | User Interface  | Classic UI is removed from the product user interface. A few Classic UI dialogs are available for a few select capabilities, such as Link Checker, Version Purge, and some Cloud Service configurations. Upcoming [product updates](/help/release-notes/home.md) may further remove Classic UI availability. | Standard UI  | Removed |
 | [!DNL Dynamic Media] | Previous integrations with [Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/integration/scene7#integration) and [Dynamic Media Hybrid mode](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dynamic#dynamic) are not available in [!DNL Experience Manager] as a [!DNL Cloud Service]. | Use [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) provided with [!DNL Experience Manager] as a [!DNL Cloud Service]. | Removed |
 | [!DNL Sites] | Portal Director and Portlet Component | These capabilities were deprecated in [!DNL Experience Manager] 6.4 and have now been removed from [!DNL Experience Manager].| Removed |
@@ -81,12 +81,12 @@ The APIs in the table below (click to expand to see it) have been announced as d
 
 >[!IMPORTANT]
 >
->Several [deprecated APIs](#aem-apis) will be removed on **July 23, 2026**. Please review these key dates and impacts:
+>Several [deprecated APIs](#aem-apis) will be removed on **September 14, 2026**. Please review these key dates and impacts:
 >
 >* **Starting January 26, 2026**: Actions Center notification emails are sent as a reminder to remove usage of these APIs.
 >* **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
 >* **April 14, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.*
->* **July 23, 2026**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
+>* **September 14, 2026**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
 >
 
 <details>
@@ -657,4 +657,5 @@ The values of these OSGi properties are restricted to the rules described below.
 ## Java runtime update to version 21 {#java-runtime-update-21}
 
 Adobe Experience Manager as a Cloud Service has transitioned to the Java 21 runtime. To ensure compatibility, updating library versions as outlined in [Runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) is essential.
+
 
