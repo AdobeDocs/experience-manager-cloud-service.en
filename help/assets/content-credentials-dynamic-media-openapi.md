@@ -6,7 +6,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 ---
 # Content Credentials in Dynamic Media {#content-credentials-dynamic-media}
 
-Brands are more concerned than ever about content transparency, AI disclosure, and preventing the tampering of assets. The Content Authenticity Initiative (CAI) at Adobe builds tools compliant with the [Coalition for Content Provenance and Authenticity](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model) (C2PA) technical standard. Dynamic Media User-Generated Content (UGC) also follows the C2PA specification. Using Content Credentials, assets which are generated through AI are digitally signed using the C2PA specification. These signatures embed secure metadata within the asset, enabling users and systems to verify the content's origin and history. The metadata can provide information such as:
+Brands are more concerned than ever about content transparency, AI disclosure, and preventing the tampering of assets. The Content Authenticity Initiative (CAI) at Adobe builds tools compliant with the [Coalition for Content Provenance and Authenticity](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model) (C2PA) technical standard. User-Generated Content (UGC) consists of uploading assets to a dedicated Adobe Dynamic Media Classic storage repository and performing related operations. Dynamic Media User-Generated Content (UGC) also follows the C2PA specification. Using Content Credentials, assets which are generated through AI are digitally signed using the C2PA specification. These signatures embed secure metadata within the asset, enabling users and systems to verify the content's origin and history. The metadata can provide information such as:
 
 1. The software or service used to create the image.
 2. Whether generative AI was involved in the image creation process.
@@ -63,28 +63,6 @@ To maintain the integrity and authenticity of Content Credentials, Dynamic Media
 4. Content Credentials processing has a configured timeout.
 If any of these safeguards are reached, the asset continues through normal Dynamic Media processing, but Content Credentials may not be preserved in the generated output.
 
-## About User-generated content in Adobe Dynamic Media Classic {#user-generated-content} 
-
-User-Generated Content (UGC) consists of uploading assets to a dedicated Adobe Dynamic Media Classic storage repository and performing related operations.
-
-UGC supports raster image file formats *bmp*, *gif*, *jpg*, *png*, *psd*, *tiff*.
-
->[!IMPORTANT]
->
-> Starting May 1, 2023, UGC assets in Dynamic Media remain available for use up to 60 days from the date of upload. After 60 days, the assets are removed.
-
->[!NOTE]
->
-> Support for new or existing UGC vector image assets in Adobe Dynamic Media Classic ended on September 30, 2021.
-
-Before uploading assets, you must obtain a shared-secret key. You use this key to retrieve an upload token. You submit the upload token when you upload assets and perform other UGC tasks.
-
-After you retrieve a shared-secret key and upload token, you can perform the following operations for user-generated content:
-
-* Upload an asset.
-* Get image asset metadata.
-* Delete an uploaded asset.
-* Get information about a company’s disk space usage.
 
 **See also**
 
