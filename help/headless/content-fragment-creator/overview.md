@@ -47,7 +47,7 @@ To install the package you can either:
 
 You can integrate the Content Fragment Creator with React applications:
 
-* [Integrate the Content Fragment Creator with a React application](/help/headless/content-fragment-selector/integrate-react-application.md) 
+* [Integrate the Content Fragment Creator with a React application](/help/headless/content-fragment-creator/integrate-react-application.md) 
 
 ## Related Resources {#related-resources}
 
