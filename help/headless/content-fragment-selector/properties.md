@@ -70,3 +70,230 @@ The `ImsAuthService` class handles the authentication flow for the Content Fragm
 | `signIn` | Initiates the sign-in process for the user. This function uses the `ImsAuthProps` to show authentication in either a pop-up or a full page reload. |
 | `signOut` | Signs the user out of the service, invalidating their authentication token and requiring them to sign in again to access protected resources. Invoking this function will reload the current page. |
 | `refreshToken` | Refreshes the authentication token for the currently signed-in user, preventing it from expiring and ensuring uninterrupted access to protected resources. Returns a new authentication token that can be used for subsequent requests. |
+
+
+
+
+
+## ContentFragmentSelection Type {#contentfragmentselection-type}
+
+The `ContentFragmentSelection` type represents the structure of Content Cragments returned by the Content Fragment Selector when a user selects fragments.
+
+### Type Definitions
+
+#### ContentFragmentSelection
+
+```typescript
+type ContentFragmentSelection = {
+    id: string;
+    path: string;
+    title: string;
+    model: ContentFragmentModel;
+    variations: string[];
+    status: string;
+    publishedBy: string;
+    publishedByFullName: string;
+    publishedDate: number | undefined;
+    modifiedBy: string;
+    modifiedByFullName: string;
+    modifiedDate: number;
+    createdBy: string;
+    createdByFullName: string;
+    createdDate: number;
+    selectedFields?: Record<string, unknown>;
+    selectedTemplateId?: string | null;
+}[];
+```
+
+#### ContentFragmentModel
+
+```typescript
+type ContentFragmentModel = {
+    name: string;
+    id: string;
+    path?: string;
+    tagIds?: string[];
+};
+```
+
+### Properties
+
+#### ContentFragmentSelection Properties
+
+| Property | Type | Required | Description |
+|--- |--- |--- |--- |
+| `id` | string | Yes | Unique identifier for the content fragment |
+| `path` | string | Yes | Full path to the fragment in the DAM (e.g., `/content/dam/my-project/article-fragment`) |
+| `title` | string | Yes | Display title of the content fragment |
+| `model` | ContentFragmentModel | Yes | Complete Content Fragment Model information |
+| `variations` | string[] | Yes | Array of variation names available for this fragment (e.g., `["master", "mobile", "tablet"]`) |
+| `status` | string | Yes | Publication status of the fragment (e.g., "PUBLISHED", "MODIFIED", "DRAFT", "NEW", "UNPUBLISHED") |
+| `publishedBy` | string | Yes | Email/username of the user who published the fragment |
+| `publishedByFullName` | string | Yes | Full name of the user who published the fragment |
+| `publishedDate` | number \| undefined | Yes | Timestamp (in milliseconds) when the fragment was published, or undefined if never published |
+| `modifiedBy` | string | Yes | Email/username of the user who last modified the fragment |
+| `modifiedByFullName` | string | Yes | Full name of the user who last modified the fragment |
+| `modifiedDate` | number | Yes | Timestamp (in milliseconds) when the fragment was last modified |
+| `createdBy` | string | Yes | Email/username of the user who created the fragment |
+| `createdByFullName` | string | Yes | Full name of the user who created the fragment |
+| `createdDate` | number | Yes | Timestamp (in milliseconds) when the fragment was created |
+| `selectedFields` | `Record<string, unknown>` | No | Map of field-name → field-value for the fields the user picked in the field-selection step. Keys are field names; **values mirror the underlying `ContentFragmentField["values"]` array** — i.e. each value is an array of primitives (`string[]`, `boolean[]`, `number[]`, …) whose element type depends on the field's model type. Present only when the selector was opened with `selectFields={true}` **and** the user picked at least one field for this fragment; omitted otherwise. |
+| `selectedTemplateId` | `string \| null` | No | Id of the HTML template chosen for this fragment in the Quick Details panel's template picker (upstream `@aem-sites/fragment-selector`). `null` means the generic (default) template was explicitly selected — a real selection that is forwarded. The key is **omitted entirely** when nothing was chosen (e.g. the template picker was never opened for this fragment, or the upstream feature toggle gating the picker is off). |
+
+#### ContentFragmentModel Properties
+
+| Property | Type     | Required | Description |
+|--- |--- |--- |--- |
+| `name` | string | Yes | Display name of the Content Fragment Model |
+| `id` | string | Yes | Unique identifier for the model |
+| `path` | string | No | Full path to the model definition (e.g., `/conf/my-project/settings/dam/cfm/models/article`) |
+| `tagIds` | string[] | No | Array of tag IDs associated with the model |
+
+### Example Usage
+
+#### Basic Example
+
+```javascript
+PureJSContentFragmentSelectors.renderContentFragmentSelectorWithAuthFlow(
+    container,
+    {
+        orgId: "YOUR_ORG_ID@AdobeOrg",
+        onSubmit: ({ contentFragments, domainName, repoId }) => {
+            // contentFragments is of type ContentFragmentSelection
+            contentFragments.forEach(fragment => {
+                console.log('Fragment ID:', fragment.id);
+                console.log('Fragment Path:', fragment.path);
+                console.log('Fragment Title:', fragment.title);
+                console.log('Model Name:', fragment.model?.name);
+                console.log('Model Path:', fragment.model?.path);
+                console.log('Variations:', fragment.variations);
+                console.log('Status:', fragment.status);
+                console.log('Published By:', fragment.publishedBy);
+                console.log('Published By Full Name:', fragment.publishedByFullName);
+                console.log('Published Date:', new Date(fragment.publishedDate));
+                console.log('Modified By:', fragment.modifiedBy);
+                console.log('Modified By Full Name:', fragment.modifiedByFullName);
+                console.log('Modified Date:', new Date(fragment.modifiedDate));
+                console.log('Created By:', fragment.createdBy);
+                console.log('Created By Full Name:', fragment.createdByFullName);
+                console.log('Created Date:', new Date(fragment.createdDate));
+                // Only present when the selector was opened with `selectFields={true}`
+                // and the user picked at least one field for this fragment.
+                if (fragment.selectedFields) {
+                    console.log('Selected Fields:', fragment.selectedFields);
+                }
+                // Only present when a template was chosen in the Quick Details panel;
+                // `null` means the generic (default) template was picked.
+                if (fragment.selectedTemplateId !== undefined) {
+                    console.log('Selected Template Id:', fragment.selectedTemplateId);
+                }
+            });
+        }
+    }
+);
+```
+
+#### Complete Example Response
+
+```javascript
+{
+    contentFragments: [
+        {
+            id: "fragment-uuid-123",
+            path: "/content/dam/my-project/article-fragment",
+            title: "My Article Fragment",
+            model: {
+                name: "Article",
+                id: "model-id-456",
+                path: "/conf/my-project/settings/dam/cfm/models/article",
+                tagIds: ["tag:product", "tag:news"]
+            },
+            variations: ["master", "mobile", "tablet"],
+            status: "PUBLISHED",
+            publishedBy: "sitestest+adminui@adobetest.com",
+            publishedByFullName: "SissiCreek AEM Bucharest",
+            publishedDate: 1765728541321,
+            modifiedBy: "editor@adobe.com",
+            modifiedByFullName: "Jane Editor",
+            modifiedDate: 1765728541320,
+            createdBy: "ens65187@adobe.com",
+            createdByFullName: "Valeria Timo",
+            createdDate: 1754035541525,
+            // Returned per-fragment when the selector was opened with
+            // `selectFields={true}` and the user picked fields for it.
+            // Each value mirrors the underlying ContentFragmentField["values"]
+            // array — usually a single-element array of the field's primitive
+            // type. Multi-valued fields contain multiple entries.
+            selectedFields: {
+                title: ["My Article Fragment"],
+                body: ["Lorem ipsum dolor sit amet…"],
+                featured: [true]
+            },
+            // Returned per-fragment when a template was chosen in the Quick
+            // Details panel. `null` means the generic (default) template;
+            // omitted entirely when no template was chosen.
+            selectedTemplateId: "template-abc-123"
+        },
+        {
+            id: "fragment-uuid-789",
+            path: "/content/dam/my-project/blog-post",
+            title: "Sample Blog Post",
+            model: {
+                name: "Blog Post",
+                id: "model-id-789",
+                path: "/conf/my-project/settings/dam/cfm/models/blog-post",
+                tagIds: ["tag:blog"]
+            },
+            variations: ["master"],
+            status: "MODIFIED",
+            publishedBy: "user@adobe.com",
+            publishedByFullName: "John Doe",
+            publishedDate: 1765728541321,
+            modifiedBy: "admin@adobe.com",
+            modifiedByFullName: "Admin User",
+            modifiedDate: 1765728541322,
+            createdBy: "admin@adobe.com",
+            createdByFullName: "Admin User",
+            createdDate: 1754035541525
+        }
+    ],
+    domainName: "author-p12345-e67890.adobeaemcloud.com",
+    repoId: "repository-id",
+    tenantInfo: "tenant-info"
+}
+```
+
+### TypeScript Integration
+
+If you are using TypeScript, you can import the type from the package:
+
+```typescript
+import type { 
+    ContentFragmentSelection, 
+    ContentFragmentModel 
+} from '@aem-sites/content-fragment-selector';
+
+// Use in your code
+const handleSubmit = (data: { 
+    contentFragments: ContentFragmentSelection 
+}) => {
+    // TypeScript will provide full type checking
+    data.contentFragments.forEach(fragment => {
+        const title: string = fragment.title;
+        const modelName: string = fragment.model.name;
+    });
+};
+```
+
+### Source Code Reference
+
+The complete type definition can be found in the source code:
+
+* **Location**: `packages/@aem-sites/content-fragment-selector/src/types/index.ts`
+* **Repository**: [sites-content-fragment-selector](https://github.com/OneAdobe/sites-content-fragment-selector)
+
+## Related Types
+
+* [FragmentFilter](https://github.com/OneAdobe/aem-headless-ui-commons/blob/main/packages/headless-sdk/src/fragments/FragmentFilter.ts#L16)
+* [FragmentFilterWithReadonlySupport](https://github.com/OneAdobe/aem-headless-ui-commons/blob/main/packages/headless-sdk/src/fragments/FragmentFilter.ts#L20)
+* [FragmentSelectorRef](https://github.com/OneAdobe/aem-headless-ui-commons/blob/main/packages/fragment-selector/src/components/FragmentSelector/FragmentSelector.tsx#L115)
