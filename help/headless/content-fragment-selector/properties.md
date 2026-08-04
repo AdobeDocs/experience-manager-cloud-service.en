@@ -8,7 +8,7 @@ exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
 
 The Micro-Frontend Content Fragment Selector allows you to browse or search Content Fragments in the repository, and use them in your application.
 
-You can use the following properties to customize how the Content Fragment Selector is rendered and how it can be used:
+You can use the following properties to customize how the Content Fragment Selector is rendered and how it can be used.
 
 ## Content Fragment Selector Properties {#content-fragment-selector-properties}
 

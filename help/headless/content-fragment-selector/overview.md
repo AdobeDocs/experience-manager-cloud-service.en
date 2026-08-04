@@ -142,3 +142,7 @@ You can integrate the Content Fragment Selector with various applications such a
 * [Integrate the Content Fragment Selector with an Adobe application](/help/headless/content-fragment-selector/integrate-adobe-application.md) 
 * [Integrate the Content Fragment Selector with non-Adobe or third party application](/help/headless/content-fragment-selector/integrate-non-adobe-application.md)
 * [Integrate the Content Fragment Selector using Vanilla JS](/help/headless/content-fragment-selector/integrate-using-vanilla-js.md)
+
+## Related Resources {#related-resources}
+
+* For a complete list of all supported properties, their types, defaults, and descriptions, see [Content Fragment Selector - Related Properties](/help/headless/content-fragment-selector/properties.md).
