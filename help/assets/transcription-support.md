@@ -14,7 +14,7 @@ The transcripts are generated based on the captions you have added in the video.
 
 ## Prerequisites {#prerequisites-for-enabling-transcriptions}
 
-To enable transcription, ensure you have videos with captions in Adobe Experience Manager (AEM) Sites.
+To enable transcription, ensure you have Dynamic Media [!DNL Dynamic Media with OpenAPI capabilities] and videos with captions in Adobe Experience Manager (AEM) Sites. 
 
 ## Enabling Transcription for videos in Adobe Experience Manager (AEM)  {#enable-transcription}
 
