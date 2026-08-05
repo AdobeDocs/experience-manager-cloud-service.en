@@ -10,11 +10,6 @@ exl-id: 4f28c260-9842-467e-8abb-bcca224280b8
 
 # Interactive Communications 
 
-| Version | Article link |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service |   This article                |
-| AEM 6.5     |  [Click here](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/interactive-communications-overview)        |
-
 Interactive Communications centralizes and manages the creation, assembly, and delivery of data-driven interactive correspondences such as business correspondence, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
 
 You can use our intuitive point-and-click graphical design tool (Interactive Communications editor) to generate correspondences and business documents for print, web, or archival. You can use the editor to design a correspondences, connect it to a data source, define its logic, and modify it to match its paper counterparts or to meet strict legislative requirements. The editor runs on cloud, you can use it without worrying about installing or upgrading to the latest version. 
