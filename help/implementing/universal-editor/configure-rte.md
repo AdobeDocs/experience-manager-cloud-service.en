@@ -67,7 +67,7 @@ The toolbar configuration controls which editing options are available in the UI
     // Indentation controls
     "indentation": ["indent", "outdent"],
     // Block-level elements
-    "blocks": ["paragraph", "h1", "h2", "h3", "h4", "h5", "h6", "code_block"],
+    "blocks": ["paragraph", "h1", "h2", "h3", "h4", "h5", "h6", "code_block", "blockquote"],
     // List options
     "list": ["bullet_list", "ordered_list"],
     // Content insertion
