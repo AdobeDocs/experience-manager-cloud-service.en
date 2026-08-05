@@ -18,7 +18,7 @@ The Content Fragment Selector provides many benefits, such as:
 * Easy to maintain, as updates to the Content Fragment Selector package are automatically deployed to the Content Fragment Selector available to your application. This means that your application does not need to take action to load the latest modifications.
 * Ease of customization, using properties that control the Content Fragment Selector display within your application.
 * Full-text search, together with customizable filters, allow the quick navigation of Content Fragments within the authoring experience.
-* Ability to switch repositories for Content Fragment selection. You can select from within an IMS organization, from AMS repositories, or a combination of both.
+* Ability to switch repositories for Content Fragment selection. You can select from AEM as a Cloud Service repositories, from AMS repositories, or a combination of both.
 * Ability to sort Content Fragments, and view them in your selected view.
 
 ## Prerequisites {#prerequisites}
@@ -93,7 +93,21 @@ You can select the repository of your choice from the **Repository** drop-down, 
 
 ![The Content Fragment Selector](/help/headless/assets/content-fragment-repository-selector.png)
 
-The repository options available in the drop-down list are based on the `repositoryId` property defined in the `index.html` file. This property is based on either the environment from the selected IMS org accessed by the user currently logged in, or your AMS repositories, or a combination of both. 
+<!--
+The repository options available in the drop-down list are based on the `repositoryId` property defined in the `index.html` file. This property is based on either the environment from the selected IMS org accessed by the user currently logged in, or your AMS repositories, or a combination of both.
+--> 
+
+The repository options available in the drop-down list are based on the `repositoryId` and `amsRepositories` properties defined:
+
+* If you provide a `repositoryId` property the app will automatically connect to it, regardless of whether it is an AEM as a Cloud Service or an AMS repository.
+
+* If no `repositoryId` is provided, the app uses the token to retrieve the available repositories through the discovery request; this returns only Cloud Service repositories. The app then populates the repository selector with the returned results. 
+
+* If the `amsRepositories` property is provided, those AMS repositories are appended to the repository selector as well.
+
+>[!NOTE]
+>
+>The discovery request may return an empty list if the user only has access to AMS repositories.
 
 Consumers can pass a preferred `repositoryID` to render fragments from a specific repository, and stop rendering the repository switcher.
 

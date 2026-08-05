@@ -30,7 +30,7 @@ import {
 
 const MyComponent = () => {
     const [open, setOpen] = React.useState(false);
-    const repoId = 'author-p12345-e67890.adobeaemcloud.com';
+    const repoId = 'author-pXXXXX-eYYYYY.adobeaemcloud.com';
     // Obtain this from your own auth flow (e.g. an ImsAuthService instance) —
     // CreateContentFragmentDialog does not fetch a token for you.
     const imsToken = getImsTokenFromYourAuthFlow();

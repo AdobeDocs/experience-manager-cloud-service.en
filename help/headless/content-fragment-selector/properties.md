@@ -71,10 +71,6 @@ The `ImsAuthService` class handles the authentication flow for the Content Fragm
 | `signOut` | Signs the user out of the service, invalidating their authentication token and requiring them to sign in again to access protected resources. Invoking this function will reload the current page. |
 | `refreshToken` | Refreshes the authentication token for the currently signed-in user, preventing it from expiring and ensuring uninterrupted access to protected resources. Returns a new authentication token that can be used for subsequent requests. |
 
-
-
-
-
 ## ContentFragmentSelection Type {#contentfragmentselection-type}
 
 The `ContentFragmentSelection` type represents the structure of Content Cragments returned by the Content Fragment Selector when a user selects fragments.
@@ -210,14 +206,14 @@ PureJSContentFragmentSelectors.renderContentFragmentSelectorWithAuthFlow(
             },
             variations: ["master", "mobile", "tablet"],
             status: "PUBLISHED",
-            publishedBy: "sitestest+adminui@adobetest.com",
-            publishedByFullName: "SissiCreek AEM Bucharest",
+            publishedBy: "user@adobetest.com",
+            publishedByFullName: "John Doe",
             publishedDate: 1765728541321,
             modifiedBy: "editor@adobe.com",
             modifiedByFullName: "Jane Editor",
             modifiedDate: 1765728541320,
-            createdBy: "ens65187@adobe.com",
-            createdByFullName: "Valeria Timo",
+            createdBy: "abc12345@adobe.com",
+            createdByFullName: "Peter Editor",
             createdDate: 1754035541525,
             // Returned per-fragment when the selector was opened with
             // `selectFields={true}` and the user picked fields for it.
@@ -257,7 +253,7 @@ PureJSContentFragmentSelectors.renderContentFragmentSelectorWithAuthFlow(
             createdDate: 1754035541525
         }
     ],
-    domainName: "author-p12345-e67890.adobeaemcloud.com",
+    domainName: "author-pXXXXX-eYYYYY.adobeaemcloud.com",
     repoId: "repository-id",
     tenantInfo: "tenant-info"
 }
