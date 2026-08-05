@@ -23,7 +23,7 @@ AI Assistant supports AEM as a Cloud Service, including the following solutions:
 
 It is directly embedded in AEM and accessible from AEM Experience Hub, Cloud Manager, and Author UI.
 
-The following 3-minute, 25-second video delivers a step-by-step walkthrough of AI Assistant in AEM.
+The following 3-minute, 25-second video provides a step-by-step walkthrough of AI Assistant in AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops) 
 
@@ -55,7 +55,7 @@ The current scope of AI Assistant in AEM focuses on addressing product knowledge
 
 ## Privacy, Security, and Governance{#privacy-security-governance}
  
-AI Assistant in AEM is designed to support privacy, security, and governance.
+AI Assistant in AEM is designed to maintain privacy, security, and governance.
 
 This article outlines the trust-centered features that you can expect from AI Assistant in AEM:
 
@@ -83,7 +83,7 @@ Product knowledge encompasses concepts and topics derived from Adobe Experience 
 {style="table-layout:auto"}
 
 
-## How to write effective questions {#ai-craft-questions}
+## Guidelines for writing questions {#ai-craft-questions}
 
 To receive the most accurate responses from AI Assistant in AEM, it is important to phrase your questions clearly and with context. Use the following tips to ensure that your queries are clear and well-structured:
 
@@ -105,7 +105,7 @@ To receive the most accurate responses from AI Assistant in AEM, it is important
 
 ### Start an AI Assistant in AEM conversation
 
-You can reset the AI Assistant in AEM and start a new conversation when you want to change topics. This feature is especially helpful when troubleshooting queries that are failing or producing inaccurate results.
+You can reset the AI Assistant in AEM and start a new conversation when you want to change topics. This feature is especially useful when troubleshooting queries that are failing or producing incorrect results.
 
 **To start an AI Assistant in AEM conversation:** 
 
