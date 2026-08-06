@@ -81,7 +81,7 @@ To join the beta, email [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-bet
 OLD
 ### Improved build performance with module caching {#quick-build-cm-pipelines}
 
-A new build model compiles only changed modules (rather than the entire repository) using module-level caching to improve build performance. It applies to production pipelines. You control which production pipelines use **Smart Build**.
+A new build model compiles only changed modules (rather than the entire repository) using module-level caching to improve build performance. It applies to production pipelines. You control which production pipelines use **Smart Build**. 
 
 For more information, see the following:
 
