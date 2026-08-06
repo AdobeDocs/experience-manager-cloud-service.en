@@ -25,13 +25,6 @@ If your external Git repository (Bring Your Own Git) uses Git submodules, Cloud 
 For more information, see [Git submodule support for external repositories](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/git-submodules#external-repositories).
 
 
-
-
-
-
-
-
-
 ## New features - Cloud Manager {#cloud-manager-whats-new}
 
 * **GitHub Apps for EDS sites**  
