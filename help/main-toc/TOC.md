@@ -1375,6 +1375,10 @@ user-guide-title: AEM as a Cloud Service
     + [Integrate with an Adobe application](/help/headless/content-fragment-selector/integrate-adobe-application.md) 
     + [Integrate with non-Adobe or third party application](/help/headless/content-fragment-selector/integrate-non-adobe-application.md)
     + [Integrate Content Fragment Selector using Vanilla JS](/help/headless/content-fragment-selector/integrate-using-vanilla-js.md)
+  + Content Fragment Creator {#content-fragment-creator}
+    + [Micro-Frontend Content Fragment Creator - Overview](/help/headless/content-fragment-creator/overview.md)
+    + [Content Fragment Creator - Related Properties](/help/headless/content-fragment-creator/properties.md)
+    + [Integrate with a React application](/help/headless/content-fragment-creator/integrate-react-application.md) 
   + [AEM APIs for Structured Content Delivery and Management](/help/headless/apis-headless-and-content-fragments.md)
   + GraphQL API {#graphql-api}
     + [GraphQL API for Content Fragments](/help/headless/graphql-api/content-fragments.md)
