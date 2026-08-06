@@ -8,7 +8,7 @@ exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 
 # Universal Editor 2026.08.06 Release Notes {#release-notes}
 
-These are the release notes for the 30 July 2026 release of the Universal Editor.
+These are the release notes for the 6 August 2026 release of the Universal Editor.
 
 >[!TIP]
 >
