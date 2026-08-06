@@ -148,7 +148,7 @@ When you have configured AEM Assets Content Hub for Production and other lower e
 
 To provide a thumbnail preview for file types such as .ZIP in AEM Assets Content Hub, you can add a rendition named `cq5dam.<label>.<width>.<height>.<ext>` to the root of the path where the .ZIP is available in AEM as a Cloud Service authoring environment. For example, `cq5dam.preview.500.500.png`.
 
-Content Hub picks the rendition with the greatest width among all `cq5dam.*` renditions; a custom rendition displays as a thumbnal preview only if its encoded width exceeds existing auto-generated renditions.
+Content Hub picks the rendition with the greatest width among all `cq5dam.*` renditions; a custom rendition displays as a thumbnail preview only if its encoded width exceeds existing auto-generated renditions.
 
 The image that you add as rendition:
 
@@ -160,7 +160,13 @@ When available, Content Hub displays the image as the preview thumbnail for .ZIP
 
 >[!NOTE]
 >
->A rendition named `cq5dam.preview.png` (without dimensions) is not displayed as a preview thumbnail.
+>A rendition named `cq5dam.preview.png` (without width and height in the filename) is not used as the preview thumbnail. Include the dimensions in the filename, for example, `cq5dam.preview.500.500.png`.
+
+If you do not add a custom rendition, Content Hub determines the thumbnail from the contents of the .ZIP file:
+
+* If the .ZIP contains one or more images, Content Hub picks one of them as the thumbnail. When there are multiple images, it selects the first one in alphanumeric filename order.
+
+* If the .ZIP contains only non-image files (for example, only a PDF, or only a video, with no eligible image inside), no thumbnail is generated. Content Hub does not extract a preview frame from a video or render a preview from a PDF inside the .ZIP file.
 
 
 **See also**
