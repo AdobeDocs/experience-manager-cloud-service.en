@@ -22,6 +22,8 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming Features {#upcoming-features}
 
+* Find and replace is now available in the RTE.
 
 ## Upcoming Changes {#upcoming-improvements}
 
+* A problem was fixed where the cursor could not be inserted below a table if the table was the last item in a block.
