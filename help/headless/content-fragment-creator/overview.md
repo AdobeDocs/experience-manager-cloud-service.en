@@ -51,4 +51,8 @@ You can integrate the Content Fragment Creator with React applications:
 
 ## Related Resources {#related-resources}
 
-* For a complete list of all supported properties, their types, defaults, and descriptions, see [Content Fragment Creator - Related Properties](/help/headless/content-fragment-creator/properties.md).
+For a complete list of all supported properties, their types, defaults, and descriptions, see:
+
+* [Content Fragment Creator - Related Properties](/help/headless/content-fragment-creator/properties.md)
+
+* the [Create Content Fragment Dialog Properties](/help/headless/content-fragment-creator/properties.md##createcontentfragmentdialog-properties)

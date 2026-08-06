@@ -5,7 +5,7 @@ role: Admin, User, Developer
 ---
 # Integrate Content Fragment Creator using React {#integrate-content-fragment-creator-using-react}
 
-You can integrate a React application with Adobe Experience Manager (AEM) as a Cloud repository and select Content Fragments from within that application. 
+You can integrate a React application with Adobe Experience Manager (AEM) as a Cloud repository and create Content Fragments from within that application. 
 
 The integration is done by importing the Content Fragment Creator package and connecting to the AEM as a Cloud Service using the React library. Edit an `index.html` or any appropriate file within your application to:
 
@@ -20,7 +20,7 @@ You can perform authentication without defining some of the IMS properties, if y
 
 ## Example - React {#example-react}
 
-`CreateContentFragmentDialog` does not include a built-in sign-in flow — it expects a valid imsToken to already be available. For example, from an `ImsAuthService` you registered separately, or from your host application's own auth.
+`CreateContentFragmentDialog` does not include a built-in sign-in flow — it expects a valid `imsToken` to already be available. For example, from an `ImsAuthService` you registered separately, or from your host application's own auth.
 
 ```javascript
 import {
