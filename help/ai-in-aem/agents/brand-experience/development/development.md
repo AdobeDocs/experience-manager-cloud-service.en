@@ -7,7 +7,7 @@ exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
 nudge: please
 ---
 
-# Development Agent Overview {#development-agent-overview}
+# Development Agent overview {#development-agent-overview}
 
 [As part of the Brand Experience Agent,](/help/ai-in-aem/agents/brand-experience/overview.md) the Development Agent helps traditional AEM Java-stack developers and administrators create, debug, deploy, and optimize code more efficiently.
 
@@ -28,11 +28,11 @@ It supports the following jobs, which are accessible through the AI Assistant's 
 
 >[!IMPORTANT]
 >
->AI-generated responses may be inaccurate or misleading. Be sure you double-check suggested fixes and responses. 
+>AI-generated responses may be inaccurate or misleading. Be sure you verify suggested fixes and responses. 
 >
 >See also [Adobe Experience Cloud Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html).
 
-You can email development agent–specific feedback to [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com).
+You can email Development Agent-specific feedback to [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com).
 
 ## Cloud Manager Job {#cloud-manager-job}
 
@@ -57,13 +57,13 @@ Find information about your AEM programs and environments, including:
 | *Get me the build log links for pipeline execution 12345* | Retrieves links to pipeline build logs for a specific pipeline execution. |
 
 
-## Quiet hours and update free periods management job {#control-updates-job}
+## Quiet Hours and Update Free Periods Management Job {#control-updates-job}
 
 View, create, and edit Quiet Hours and Update Free Periods directly through the AEM AI Assistant.
 
-The key benefit is fewer scheduling errors. The assistant guides you through requests and flags limits, such as the three-period cap, the mandatory one-week gap, and planned maintenance exclusion windows. 
+The primary benefit is fewer scheduling errors. The assistant guides you through requests and flags limits, such as the three-period cap, the mandatory one-week gap, and planned maintenance exclusion windows. 
 
-Instead of discovering a constraint after a failed configuration, Business Owners and Deployment Leads are guided to a valid schedule in the same conversation. This protects critical business windows from automatic maintenance updates while reducing back-and-forth and misconfiguration.
+Instead of discovering a constraint after a failed configuration, business owners and deployment leads are guided to a valid schedule in the same conversation. This protects critical business windows from automatic maintenance updates while reducing back-and-forth and misconfiguration.
 
 ### Sample prompts {#sample-updates-prompts}
 
@@ -79,7 +79,7 @@ Instead of discovering a constraint after a failed configuration, Business Owner
 
 ## Pipeline troubleshooting job {#cloud-manager-pipeline-troubleshooting}
 
-This job can retrieve pipeline statuses and help you troubleshoot failing build steps by suggesting fixes, saving time when debugging AEM as a Cloud Service deployments to development, stage, and production environments. It examines build logs and related code to recommend a fix that you can apply by hand. 
+This job can retrieve pipeline statuses and help you troubleshoot failing build steps by suggesting fixes, saving time when debugging AEM as a Cloud Service deployments to development, stage, and production environments. It examines build logs and related code to recommend a fix that you can apply manually. 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
@@ -145,7 +145,7 @@ When a pipeline execution fails, Cloud Manager also surfaces a **Troubleshoot wi
 
 1. Click **Troubleshoot with AI**.
 
-    The AI Assistant panel opens on the right side of the screen. The assistant references the failed pipeline execution and begins its analysis, identifying the failing step and suggesting a fix you can apply by hand.
+    The AI Assistant panel opens on the right side of the screen. The assistant references the failed pipeline execution and begins its analysis, identifying the failing step and suggesting a fix you can apply manually.
 
 1. Review the response and, if needed, continue the conversation in the **AI Assistant** text box to ask follow-up questions or request more detail.
 
