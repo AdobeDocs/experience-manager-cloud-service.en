@@ -20,7 +20,7 @@ These are the release notes for the 13 August 2026 release of the Universal Edit
 
 ## What's New {#what-is-new}
 
-* Find and replace is now available in the RTE.
+* [Find and replace](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) is now available in the RTE.
 
 ## Other Improvements {#other-improvements}
 
