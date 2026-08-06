@@ -24,7 +24,7 @@ This editor provides:
 * [Preview](#preview-content-fragment) of the rendered experience delivered by the Content Fragment.
 * Ability to [Publish](#publish-content-fragment) and [Unpublish](#unpublish-content-fragment) from the editor.
 * Ability to [view, and open, associated language copies](#view-language-copies) in the editor.
-* Ability to [view version details](#view-version-history) in the editor. You can also revert to a selected version.
+* Ability to manage the [Version history](#version-history). In the editor you can view version details, create a new version, compare versions, and revert to a selected version.
 * Ability to [view, and open, parent references](#view-parent-references).
 * Ability to [show, and edit, the properties, metadata and tags](#view-and-edit-properties-metadata-and-tags),
 * A hierarchical view of the Content Fragment, and its references, using the [Structure tree](#structure-tree).
@@ -63,7 +63,7 @@ When you first open the Content Fragment Editor, you see four main areas:
 
 * left panel: shows the **[Variations](#variations)** for the Content Fragment, and its **Fields**:
   * these links can be used to [navigate the Content Fragment structure](#navigate-structure)
-* right panel: presents tabs [showing the properties, metadata and tags](#view-and-edit-properties-metadata-and-tags), information about the [version history](#view-version-history), and information related to any [language copies](#view-language-copies)
+* right panel: presents tabs [showing the properties, metadata and tags](#view-and-edit-properties-metadata-and-tags), information about the [version history](#version-history), and information related to any [language copies](#view-language-copies)
   * in the **Properties** tab you can update the **Title** and **Description** properties of the fragment, or **Variation**
   * In the **Comments** tab you can add, and read, comments to help you collaborate with other authors
 * central panel: shows the actual fields, and content, of the selected variation
@@ -475,9 +475,13 @@ For example:
 
 ![Content Fragment Editor - open Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-open-model.png)
 
-## View the Version History {#view-version-history}
+## Version History {#version-history}
 
-In the **Version history** tab of the right panel, details of the current, and previous, versions are shown:
+In the **Version history** tab of the editor you can view version details, create a new version, compare versions, and revert to a selected version.
+
+### View the Version History {#view-version-history}
+
+When you select the **Version history** tab of the right panel, details of the current, and previous, versions are shown:
 
 >[!NOTE]
 >
@@ -486,6 +490,14 @@ In the **Version history** tab of the right panel, details of the current, and p
 <!-- CQDOC-23473 - new screenshot? -->
 
 ![Content Fragment Editor - Version History Overview](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-overview.png)
+
+### Create a Version {#create-a-version}
+
+To open the **Create Version** dialog use the `+` icon at the top of the **Version history** tab of the editor. 
+
+Here you can specify a **Label** and **Comment**:
+
+![Content Fragment Editor - Create Version](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-create.png)
 
 ### Compare Version {#compare-version}
 
@@ -523,6 +535,7 @@ To revert to a specific version:
 1. Select **Revert**.
 
 <!-- CQDOC-23473 - new screenshot? -->
+<!-- CQDOC-23851 - new screenshot -->
 
 ![Content Fragment Editor - Version History Revert](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-revert.png)
 
