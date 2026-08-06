@@ -477,15 +477,16 @@ For example:
 
 ## Version History {#version-history}
 
-In the **Version history** tab of the editor you can view version details, create a new version, compare versions, and revert to a selected version.
+Each Content Fragment has a history as new versions are created over time. New versions are created for various reasons; including:
+
+* when you publish your fragment
+* when you manually create a new version
+
+In the **Version history** tab of the editor you can view the history, together with the details of specific versions. You can also create a new version, compare versions, and revert to a selected version.
 
 ### View the Version History {#view-version-history}
 
-When you select the **Version history** tab of the right panel, details of the current, and previous, versions are shown:
-
->[!NOTE]
->
->A new version is created when the content fragment is published.
+When you select the **Version history** tab of the right panel, details of the current, and previous, versions are shown. Select a specific version to show the details.
 
 <!-- CQDOC-23473 - new screenshot? -->
 
