@@ -75,9 +75,9 @@ The `ImsAuthService` class handles the authentication flow for the Content Fragm
 
 The `ContentFragmentSelection` type represents the structure of Content Cragments returned by the Content Fragment Selector when a user selects fragments.
 
-### Type Definitions
+### Type Definitions {#type-definitions}
 
-#### ContentFragmentSelection
+#### ContentFragmentSelection {#contentfragmentselection}
 
 ```typescript
 type ContentFragmentSelection = {
@@ -112,9 +112,9 @@ type ContentFragmentModel = {
 };
 ```
 
-### Properties
+### Properties {#properties}
 
-#### ContentFragmentSelection Properties
+#### ContentFragmentSelection Properties {#contentfragmentselection-properties}
 
 | Property | Type | Required | Description |
 |--- |--- |--- |--- |
@@ -136,7 +136,7 @@ type ContentFragmentModel = {
 | `selectedFields` | `Record<string, unknown>` | No | Map of field-name → field-value for the fields the user picked in the field-selection step. Keys are field names; **values mirror the underlying `ContentFragmentField["values"]` array** — i.e. each value is an array of primitives (`string[]`, `boolean[]`, `number[]`, …) whose element type depends on the field's model type. Present only when the selector was opened with `selectFields={true}` **and** the user picked at least one field for this fragment; omitted otherwise. |
 | `selectedTemplateId` | `string \| null` | No | Id of the HTML template chosen for this fragment in the Quick Details panel's template picker (upstream `@aem-sites/fragment-selector`). `null` means the generic (default) template was explicitly selected — a real selection that is forwarded. The key is **omitted entirely** when nothing was chosen (e.g. the template picker was never opened for this fragment, or the upstream feature toggle gating the picker is off). |
 
-#### ContentFragmentModel Properties
+#### ContentFragmentModel Properties {#contentfragmentmodel-properties}
 
 | Property | Type     | Required | Description |
 |--- |--- |--- |--- |
@@ -145,9 +145,9 @@ type ContentFragmentModel = {
 | `path` | string | No | Full path to the model definition (e.g., `/conf/my-project/settings/dam/cfm/models/article`) |
 | `tagIds` | string[] | No | Array of tag IDs associated with the model |
 
-### Example Usage
+### Example Usage {#example-usage}
 
-#### Basic Example
+#### Basic Example {#basic-example}
 
 ```javascript
 PureJSContentFragmentSelectors.renderContentFragmentSelectorWithAuthFlow(
@@ -189,7 +189,7 @@ PureJSContentFragmentSelectors.renderContentFragmentSelectorWithAuthFlow(
 );
 ```
 
-#### Complete Example Response
+#### Complete Example Response {#complete-example-response}
 
 ```javascript
 {
@@ -259,7 +259,7 @@ PureJSContentFragmentSelectors.renderContentFragmentSelectorWithAuthFlow(
 }
 ```
 
-### TypeScript Integration
+### TypeScript Integration {#typescript-integration}
 
 If you are using TypeScript, you can import the type from the package:
 
@@ -281,14 +281,16 @@ const handleSubmit = (data: {
 };
 ```
 
-### Source Code Reference
+### Source Code Reference {#source-code-reference}
 
 The complete type definition can be found in the source code:
 
 * **Location**: `packages/@aem-sites/content-fragment-selector/src/types/index.ts`
 * **Repository**: [sites-content-fragment-selector](https://github.com/OneAdobe/sites-content-fragment-selector)
 
-## Related Types
+## Related Resources {#related-resources}
+
+* * [Content Fragment Selector example](https://github.com/adobe/aem-content-fragment-selector-mfe-examples/tree/main/examples/react)
 
 * [FragmentFilter](https://github.com/OneAdobe/aem-headless-ui-commons/blob/main/packages/headless-sdk/src/fragments/FragmentFilter.ts#L16)
 * [FragmentFilterWithReadonlySupport](https://github.com/OneAdobe/aem-headless-ui-commons/blob/main/packages/headless-sdk/src/fragments/FragmentFilter.ts#L20)
