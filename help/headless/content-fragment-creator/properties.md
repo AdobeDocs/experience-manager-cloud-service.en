@@ -47,7 +47,7 @@ Properties for the `CreateContentFragmentDialog` component:
 |--- |--- |--- |--- |--- |
 | `open` | boolean | Yes | | Controls whether the dialog is visible. |
 | `onDismiss` | () => void | Yes | | Callback when the dialog is dismissed (cancel or close). |
-| `env` | `Env` ("QA" \| "DEV" \| "DEV_443" \| "STAGE" \| "PROD") | No | | Deployment environment for the embedded dialog. If not provided, it is inferred from the hostname of the current page. |
+| `env` | [Env](https://www.npmjs.com/package/@aem-sites/content-fragment-creator) | No | | Deployment environment for the embedded dialog. If not provided, it is inferred from the hostname of the current page. |
 | `imsToken` | string | No | | IMS token for authentication. When provided together with `repoId`, the dialog renders without needing repository discovery. |
 | `repoId` | string | No | | Repository ID (AEM host). When provided together with `imsToken`, the dialog uses this repo and skips discovery. |
 | `orgId` | string | No | | Organization ID used for repository discovery. |
