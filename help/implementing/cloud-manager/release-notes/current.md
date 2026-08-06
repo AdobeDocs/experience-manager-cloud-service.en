@@ -90,7 +90,7 @@ For more information, see the following:
 
 To join the Beta, email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) with your Adobe Organization ID and Program ID.
 
-### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
+### Experience Hub Extensibility and Customization {#exp-hub-extensibility} 
 
 [Experience Hub](/help/experience-hub.md) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI Extensions so they can help you enable them in Experience Hub with minimal effort.
 
