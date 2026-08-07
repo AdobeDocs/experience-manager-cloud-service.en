@@ -23,16 +23,16 @@ Once your context is in place, it becomes the source of truth that guides conten
 
 ## Why Capture It in One Place? {#why-capture-it-in-one-place}
 
-Most organizations already *have* this knowledge, but it is fragmented. Brand voice lives in a style guide, claim rules live in a Legal team's inbox, positioning guidance lives in regional playbooks, and design standards live in a design file. When knowledge is scattered, every new piece of content depends on the right person remembering the right rule. That does not scale, and it does not hold up when AI enters the workflow.
+Most organizations already *have* this knowledge, but it is fragmented. Brand voice lives in a style guide, claim rules live in a Legal team's inbox, positioning guidance lives in regional playbooks, and design standards live in a design file. When knowledge is scattered, every new piece of content depends on the right person remembering the right rule. This approach does not scale, and it becomes unreliable when AI is part of the workflow.
 
 Capturing everything in Enterprise Context gives you:
 
-* **One source of truth.** Every team and every tool works from the same rules, so content stays consistent no matter who, or what, produces it.
-* **On-brand by construction.** Because generation draws on your context up front, output respects your voice, claims, positioning, and design standards from the start, rather than being fixed in review.
-* **Continuous consistency.** Rules evolve. Enterprise Context lets you audit existing content against the *current* rules and surface what has drifted out of line.
+* **One source of truth.** Every team and every tool works from the same rules, so content stays consistent regardless of who or what produces it.
+* **Consistent from the start.** Because generation draws on your context up front, output follows your voice, claims, positioning, and design standards from the beginning, instead of being corrected in review.
+* **Ongoing validation.** Because rules change over time, Enterprise Context lets you audit existing content against the current rules and identify content that no longer complies.
 * **Reusable across tools.** Your context is not locked inside a single application. It is exposed through a standard interface, the Model Context Protocol (MCP), so that any AI system or agent, Adobe's or your own, can query the rules that apply to a task and stay within approved bounds.
 
-In short, Enterprise Context is the input that different AI agents share. Capture it once, and every agent that generates, adapts, distributes, or checks your content can rely on it.
+Enterprise Context is the shared input for different AI agents. After you capture it once, any agent that generates, adapts, distributes, or checks your content can use it.
 
 ## What Data to Capture {#what-data-to-capture}
 
@@ -89,7 +89,7 @@ The sections below describe the building blocks of Enterprise Context: the **bra
 
 >[!NOTE]
 >
->Many entities carry a **Status**, and the agents use only **Active** entities. New entities are typically created as **Draft**, so setting them to *Active* is what puts them into effect. Status notes appear on the relevant sections below.
+>Many entities carry a **Status**, and the agents use only *Active* ones. New entities are created as *Draft* by default, so you must set an entity to *Active* to put it into effect. This applies to brands, context rules, checks, and domains alike; the sections below add only the steps specific to each entity.
 
 ### Brands {#brands}
 
@@ -99,7 +99,7 @@ A brand has a **Name**, an optional **Description**, and a **Status**.
 
 >[!IMPORTANT]
 >
->New brands are created with a default **Draft** status. A brand must be set to **Active** before the agents can use it. To activate a brand, edit it and set its status to *Active*.
+>To put a brand into effect, edit it and set its **Status** to *Active*.
 
 <!-- Screenshot: the Brands list, showing the Status column. -->
 
@@ -173,7 +173,7 @@ A **domain** defines which URLs a brand's checks apply to, for example a pattern
 
 >[!IMPORTANT]
 >
->Just like new brands, new domains are created with a default **Draft** status. To change this, go to your brand, click **Domains**, then edit the domain using the pencil icon and set its status to **Active**.
+>To put a domain into effect, go to your brand, click **Domains**, edit the domain using the pencil icon, and set its **Status** to *Active*.
 
 ### Batch Analysis {#batch-analysis}
 
