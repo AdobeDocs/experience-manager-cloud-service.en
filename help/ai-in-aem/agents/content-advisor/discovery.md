@@ -265,7 +265,7 @@ When you search for assets via the AI Assistant, Content Discovery Agent enriche
 
 What's New:
 
-* Performance context on every result set. Alongside the usual asset previews (name, format, thumbnail), Content Discovery Agent now surfaces an aggregate performance summary for the returned assets — for example, `These assets average a 9.0% CTR.`
+* Performance context on every result set. Alongside the usual asset previews (name, format, thumbnail), Content Discovery Agent now surfaces an aggregate performance summary for the returned assets — for example, `These assets average a 9.0% CTR`.
 
 * One-click performance filters. Suggested follow-up prompts let you instantly refine results by performance thresholds without re-typing a query:
 
