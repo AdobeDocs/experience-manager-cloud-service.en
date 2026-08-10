@@ -19,6 +19,7 @@ This article describes how to manage and edit assets in [!DNL Adobe Experience M
 
 
 ## Asset folder management and operations {#Asset-folder-management-and-operations}
+
 ### Permission model for move/publish operations {#permission-model}
 
 Moving an asset or [!DNL Content Fragments] in AEM requires more than write access to the source and destination folders; it also requires replicate permission for the operation to complete. While initiating if you lack replicate access, the move does not fail outright: it enters a pending approval workflow state and waits for an administrator (a user who does have replicate permission) to approve/complete it. This is expected, by-design behavior, not a defect since AEM intentionally gates replication-triggering actions behind the replicate permission so that only authorized users can push the content changes.
