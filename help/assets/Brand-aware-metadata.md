@@ -7,31 +7,18 @@ badgeSaas: label="AEM Assets" type="Positive"
 
 # Generate AI metadata using Brand Aware Metadata {#generate-ai-metadata-brand-aware}
 
-[!DNL Adobe Experience Manager Assets] Brand Aware Metadata (BAM) enables you to configure AI-powered prompts to generate metadata values for assets.
+[!DNL Adobe Experience Manager Assets] Brand Aware Metadata (BAM) is an AI-powered capability that automatically generates custom metadata values for assets when they are uploaded or reprocessed. It reduces the need for manual metadata entry, helping you manage metadata consistently and make assets easier to find and use.
 
-Instead of manually populating repetitive metadata fields, BAM allows you to define prompts that guide AI to generate values for standard and custom metadata properties.
+BAM uses a layered prompting approach to define how AI generates values for specific metadata properties. You can use brand prompts to provide reusable brand and campaign context and property prompts to define instructions for individual metadata properties. You can also provide additional context through referenced properties and restrict generated values to predefined options using controlled vocabulary. BAM also provides a Prompt Playground to preview generated metadata and a Prompt Enhancer to improve prompt instructions.
 
-Brand Aware Metadata can be used for metadata fields such as:
-
-* Alt text
-* Product attributes
-* Asset classification
-* Region
-* Language
-
-BAM uses a layered prompting approach to generate metadata values:
-
-* **Brand prompt** - Provides brand, campaign, and other always-on context that is applied during metadata generation.
-* **Property prompt** - Defines instructions for generating values for a specific metadata property.
-* **Controlled vocabulary** - Restricts AI-generated values to predefined options.
-
-Generated metadata is applied to assets through processing profiles.
+You can use Brand Aware Metadata to generate values for metadata properties such as alt text, product attributes, asset classification, region, and language. Generated metadata is applied to assets through processing profiles.
 
 ## Before you begin {#before-you-begin}
 
 Ensure the following:
 
 * Access to [!DNL Adobe Experience Manager Assets as a Cloud Service].
+* Access to **[!UICONTROL Admin view]**.
 * Brand Aware Metadata enabled for your environment.
 * Required permissions to access Prompt Editor and configure metadata.
 
@@ -46,10 +33,10 @@ To request access:
 
 ## Configure Brand Aware Metadata {#configure-brand-aware-metadata}
 
-Before creating prompts, open the Prompt Editor.
+Before creating prompts, open the **[!UICONTROL Prompt Editor]**.
 
-1. In [!DNL Adobe Experience Manager Assets], navigate to **[!UICONTROL Assets]**.
-1. Select **[!UICONTROL Prompt Editor]**.
+1. In [!DNL Adobe Experience Manager Assets], switch to **[!UICONTROL Admin view]**, then navigate to **[!UICONTROL Assets]**.
+2. Select **[!UICONTROL Prompt Editor]**.
  ![Navigate to Prompt Editor](/help/assets/assets/prompt-editor.png)
 
 The AI Metadata Prompts Manager displays the available property prompts, brand prompts, quality reports, and GenAI metrics.
@@ -122,43 +109,62 @@ To create a property prompt:
 
 You can add the property prompt to one or more processing profiles and use Prompt Playground to refine the prompt before deploying it.
 
-### Use referenced properties {#use-referenced-properties}
+## Use referenced properties {#use-referenced-properties}
 
-Referenced properties allow prompts to use additional asset metadata or file path information as context while generating metadata.
+Referenced properties provide additional asset metadata or file path information as context when generating metadata values. You can use existing information such as product details, campaign information, metadata values, dates, or asset file path information to provide additional context to the property prompt.
 
-For example, referenced properties can provide:
-
-* Product values
-* Campaign information
-* Dates
-* Existing metadata values
-
-![Referenced properties](/help/assets/assets/referenced-properties.png)
+For example, if an asset contains an existing product name, you can reference that property so that AI can use the product name when generating another metadata value.
 
 To add referenced properties:
 
-1. In the property prompt editor, add one or more referenced properties.
-1. Define how AI should use the referenced values in the prompt.
-1. Preview the generated output using **[!UICONTROL Prompt Playground]**.
+1. In the property prompt editor, open the **[!UICONTROL Referenced properties]** field.
+2. Add the metadata property or asset information that you want to provide as additional context.
+3. In the **[!UICONTROL Prompt]** field, specify how AI should use the referenced information.
+![Referenced properties](/help/assets/assets/referenced-properties1.png)
+4. Use **[!UICONTROL Prompt Playground]** to preview the generated output.
+5. Refine the prompt if required.
+ ![Referenced properties](/help/assets/assets/referenced-properties-output.png)
 
-### Configure controlled vocabulary {#configure-controlled-vocabulary}
-
-Controlled vocabulary keeps AI-generated values within existing dropdown or taxonomy values.
-
-Use controlled vocabulary for metadata fields that have predefined values.
-
-![Controlled vocabulary](/help/assets/assets/controlled-vocabulary.png)
-
-To configure controlled vocabulary:
-
-1. Open the controlled vocabulary section for the selected metadata property.
-1. Add descriptions explaining when each value should be used.
-1. Configure the property prompt.
-1. Preview the generated values using **[!UICONTROL Prompt Playground]**.
-
->[!NOTE]
+> **NOTE**
 >
->A field can use either generative output or controlled vocabulary. Combining both options for the same field is currently not supported.
+> Referenced properties provide additional context to the prompt. They do not define the metadata property that AI generates.
+
+## Configure controlled vocabulary {#configure-controlled-vocabulary}
+
+Controlled vocabulary restricts AI-generated metadata values to a predefined set of approved options. Use controlled vocabulary when a metadata property must use values from an established list, such as product categories, regions, asset classifications, or other brand-specific terminology.
+
+For example, if a **Coffee Blend** metadata property supports only **House Blend**, **Espresso**, and **Morning Muse**, you can configure these values as controlled vocabulary. For each value, provide a description that explains when the value should be selected. BAM uses these descriptions to determine the appropriate value for an asset.
+
+You can configure controlled vocabulary to return either a single value or multiple values for a metadata property.
+
+> **NOTE**
+>
+> A metadata property can use either generative output or controlled vocabulary. Combining both options for the same property is currently not supported.
+
+### Add controlled vocabulary values {#add-controlled-vocabulary-values}
+
+To configure controlled vocabulary for a metadata property:
+
+1. In the property prompt editor, select the metadata property for which you want to configure controlled vocabulary.
+2. Enable **[!UICONTROL Controlled vocabulary]**.
+3. Select whether the property should return a **single value** or **multiple values**.
+
+   ![Controlled vocabulary](/help/assets/assets/controlled-vocabulary.png)
+
+4. Add the approved values that AI can return.
+5. For each value, provide a description that explains when the value should be selected.
+6. Add additional values as required.
+
+    ![Addition vocabulary](/help/assets/assets/addition-vocabulary.png)
+
+7. Review the configured values and their descriptions.
+8. Save the property prompt.
+
+For example, you can configure **House Blend**, **Espresso**, and **Morning Muse** as approved values for a Coffee Blend property. Define each value with a description that explains when AI should select it.
+
+The value descriptions provide additional context that helps AI select the appropriate predefined value.
+
+After configuring the controlled vocabulary, use **[!UICONTROL Prompt Playground]** to test how AI selects values for sample assets.
 
 ## Enhance prompts using Prompt Enhancer {#prompt-enhancer}
 
