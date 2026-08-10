@@ -21,7 +21,7 @@ It supports the following jobs, which are accessible through the AI Assistant's 
 >[!NOTE]
 >
 > Developers find these AI-powered features useful:
-
+>
 > * [IDE Agent Skills](/help/ai-in-aem/local-development-with-ai-tools.md#agent-skills) for local development scenarios such as generating AEM components.
 > * [Local MCP servers](/help/ai-in-aem/local-development-with-ai-tools.md#aem-quickstart-mcp-server) for local development, debugging AEM and Dispatcher issues.
 > * [Remote MCP servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) for accessing APIs and AEM agents.
