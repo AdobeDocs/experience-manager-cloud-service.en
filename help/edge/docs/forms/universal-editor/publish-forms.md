@@ -144,6 +144,12 @@ export const submitBaseUrl = 'https://publish-staging-p120-e12.adobeaemcloud.com
 
 **Implementation**: Add CORS configuration to your AEM dispatcher or Apache configuration
 
+>[!IMPORTANT]
+>
+>This step modifies your dispatcher vhost configuration. On AEM as a Cloud Service, the shipped default.vhost file is immutable and enforced by checksum during Cloud Manager pipeline validation; direct edits will fail to deploy. Create a customer-owned copy under available_vhosts/ first, and repoint the enabled_vhosts/ symlink at it, before applying the CORS settings below.
+>
+>Reference: https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/dispatcher/disp-overview#file-structure
+
 ```apache
 # Local Development Environment
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http://localhost(:\d+)?$)#" CORSTrusted=true
