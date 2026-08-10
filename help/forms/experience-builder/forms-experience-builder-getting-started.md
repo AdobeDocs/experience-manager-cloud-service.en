@@ -1,8 +1,6 @@
 ---
 title: Getting started with Forms Experience Builder
 description: Learn the basics of creating your first AI-powered form with Forms Experience Builder. Step-by-step tutorial with examples and best practices.
-hide: true
-index: false
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: c4f838bc-a001-48e7-afaa-c2ff9034f5d4
@@ -31,7 +29,6 @@ Forms Experience Builder is an AI-powered form creation tool that allows you to 
 
 Before you begin, ensure you have:
 
-* **Access to Forms Experience Builder** - Available through the Early Access Program
 * **AEM Forms as a Cloud Service** - Production author environment with Adaptive Forms Core Components
 * **Basic understanding** - Familiarity with form concepts and business requirements
 
