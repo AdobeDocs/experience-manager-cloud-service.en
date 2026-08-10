@@ -26,6 +26,7 @@ This editor provides:
 * Ability to [view, and open, associated language copies](#view-language-copies) in the editor.
 * Ability to manage the [Version history](#version-history). In the editor you can view version details, create a new version, compare versions, and revert to a selected version.
 * Ability to [view, and open, parent references](#view-parent-references).
+* Ability to view details of ongoing and completed [workflows](#view-workflows) that have been applied to the fragment.
 * Ability to [show, and edit, the properties, metadata and tags](#view-and-edit-properties-metadata-and-tags),
 * A hierarchical view of the Content Fragment, and its references, using the [Structure tree](#structure-tree).
 
@@ -52,6 +53,7 @@ When you first open the Content Fragment Editor, you see four main areas:
   * links to [Preview](#preview-content-fragment); if the Default Preview URL Pattern is configured for the model
   * [Publish](#publish-content-fragment), and [Unpublish](#unpublish-content-fragment) actions
   * an option to show all **Parent References** (link icon)
+  * an option to show details of the ongoing and completed [workflows](#view-workflows) that have been applied to the fragment
   * the fragment **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**, and last saved information
   * a toggle to switch to the original (/help/sites-cloud/administering/content-fragments/assets-based) editor
 
@@ -426,6 +428,22 @@ For example:
 
   ![Revert to inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-revert-to-inheritance.png)
 -->
+
+## View Workflows {#view-workflows}
+
+The editor provides an option to show details about ongoing and completed [workflows](#view-workflows) that have been applied to the fragment.
+
+>[!NOTE]
+>
+>The option is for information only.
+
+Select the icon from the top toolbar: 
+
+![Content Fragments console - Workflows icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-editor-workflows-icon.png)
+
+This shows detailed information about workflows (past and current) for the fragment:
+
+![Content Fragments console - Workflows dialog](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-editor-workflows-dialog.png)
 
 ## View and edit Properties, Metadata and Tags {#view-and-edit-properties-metadata-and-tags}
 
