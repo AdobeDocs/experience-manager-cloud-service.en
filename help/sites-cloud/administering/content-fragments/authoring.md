@@ -441,7 +441,7 @@ Select the icon from the top toolbar:
 
 ![Content Fragments console - Workflows icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-editor-workflows-icon.png)
 
-This shows detailed information about workflows (past and current) for the fragment:
+A dialog opens that shows detailed information about workflows (past and current) for the fragment:
 
 ![Content Fragments console - Workflows dialog](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-editor-workflows-dialog.png)
 
