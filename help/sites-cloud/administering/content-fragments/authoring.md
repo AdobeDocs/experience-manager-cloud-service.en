@@ -521,24 +521,29 @@ Differences are indicated by color:
 * Green: indicates content added (to the current version)
 * Red: indicates content removed (from the current version)
 
+You can also select to **Revert** to the older version, or **Close** the dialog.
+
 <!-- CQDOC-23473 - new screenshot? -->
 
 ![Content Fragment Editor - Version History Compare Versions](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-compare-versions.png)
 
 ### Revert to a Version {#revert-version}
 
+<!-- CQDOC-23473 - new screenshot? -->
+
 You can revert to any version. 
 
 To revert to a specific version:
 
-1. Select the three dots icon next to the version.
+1. Select the three dots icon next to the required version.
 
-1. Select **Revert**.
+1. Select **Revert**:
 
-<!-- CQDOC-23473 - new screenshot? -->
-<!-- CQDOC-23851 - new screenshot -->
+   ![Content Fragment Editor - Version History Revert](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-revert.png)
 
-![Content Fragment Editor - Version History Revert](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-revert.png)
+1. Confirm the action:
+
+   ![Content Fragment Editor - Version History Revert](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-revert-confirm.png)
 
 ## View the Language Copies {#view-language-copies}
 
