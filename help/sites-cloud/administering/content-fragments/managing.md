@@ -124,7 +124,8 @@ The main/right panel (table view) of the console provides a range of information
   * Information only.
   * Can be used for [Fast Filtering](#fast-filtering).
 * **Referenced By**: 
-  * Provides a link that opens a dialog listing all [parent references](#parent-references-fragment)  of that fragment; including referencing Content Fragments, Experience Fragments and pages. To open a specific reference, click the **Title** in the dialog.
+  * Visible in the right panel after selecting the  **i** icon in the **Title** field. 
+  * Provides links showing all [parent references](#parent-references-fragment)  of that fragment; including referencing Content Fragments, Experience Fragments and pages. To open a specific reference, select the link.
 
     ![Content Fragments console - References dialog](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-references-dialog.png)
 
@@ -613,10 +614,10 @@ To delete a fragment:
 
 Details of parent references can be accessed from the
 
-* **References** column of the Content Fragments Console
+* **Parent References** tab of the right hand information panel of the Content Fragments Console
 * the [parent references link in the top toolbar of the Content Fragments editor](/help/sites-cloud/administering/content-fragments/authoring.md#view-parent-references)
 
-Both provide a link that opens a dialog listing all parent references of that fragment; including referencing Content Fragments, Experience Fragments and pages. To open a specific reference, click the **Title**, or the link icon, in the dialog.
+Both provide links that list all parent references of that fragment; including referencing Content Fragments, Experience Fragments and pages. To open a specific reference, select the link.
 
 For example:
 
