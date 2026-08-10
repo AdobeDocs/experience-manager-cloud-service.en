@@ -149,16 +149,16 @@ export const submitBaseUrl = 'https://publish-staging-p120-e12.adobeaemcloud.com
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http://localhost(:\d+)?$)#" CORSTrusted=true
 
 # Edge Delivery Services - Preview/Stage Environment  
-SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.page$)#" CORSTrusted=true
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.aem\.page$)#" CORSTrusted=true
 
 # Edge Delivery Services - Production Environment
-SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.aem\.live$)#" CORSTrusted=true
 ```
 
 **Validation Checkpoint:**
 
 - CORS rules applied to dispatcher configuration
-- All required domains (localhost, hlx.page, hlx.live) are included
+- All required domains (localhost, aem.page, aem.live) are included
 - Configuration deployed to target environment
 
 **Reference Documentation:**
@@ -183,8 +183,8 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
   "allow.empty": false,
   "allow.hosts": [],
   "allow.hosts.regexp": [
-    "https://.*\\.hlx\\.page:443",
-    "https://.*\\.hlx\\.live:443"
+    "https://.*\\.aem\\.page:443",
+    "https://.*\\.aem\\.live:443"
   ],
   "filter.methods": [
     "POST",
