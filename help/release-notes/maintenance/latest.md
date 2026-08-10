@@ -12,7 +12,7 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 27550 {#release-27550}
 
-Summarized below are the continuous improvements for maintenance release 27550, which was [TBD -- fill in actual/planned public date; do not assume the docs team's placeholder date is confirmed]. The previous maintenance release was release 27293.
+Summarized below are the continuous improvements for maintenance release 27550, which was publicly released on August 10, 2026. The previous maintenance release was release 27293.
 
 The 2026.8.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
@@ -73,15 +73,13 @@ The 2026.8.0 feature activation will provide the full feature set for this maint
 
 None.
 
-> **Internal note (remove before publishing):** confirm against current RV/RO triage state for release 27550 before publishing -- an unresolved cross-program indexing regression candidate was identified during triage (10 programs, same failure signature, root cause not yet confirmed). If still unresolved by publish time, this section may need a real entry instead of "None."
-
 ### Deprecated Features and APIs {#deprecated-27550}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
 ### Security Fixes {#security-27550}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses [TBD -- confirm official PSIRT figure before publish; git-diff-derived estimate is 2] identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 2 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
 ### Embedded Technologies {#embedded-tech-27550}
 
