@@ -18,7 +18,7 @@ You can use Brand Aware Metadata to generate values for metadata properties such
 Ensure the following:
 
 * Access to [!DNL Adobe Experience Manager Assets as a Cloud Service].
-* Access to **[!UICONTROL Admin view]**.
+* Administrator permissions to access AEM Assets.
 * Brand Aware Metadata enabled for your environment.
 * Required permissions to access Prompt Editor and configure metadata.
 
@@ -42,9 +42,15 @@ Before creating prompts, open the **[!UICONTROL Prompt Editor]**.
 The AI Metadata Prompts Manager displays the available property prompts, brand prompts, quality reports, and GenAI metrics.
 ![AI Metadata Prompts Manager](/help/assets/assets/ai-metadata-prompts-manager.png)
 
+If you need to access Prompt Editor using Assets view, navigate to the following URL:
+
+`https://experience.adobe.com/?repoId=author-<Program-ID>-<Environment ID>.adobeaemcloud.com#/@aemshowcase/assets/prompteditor`
+
+where `aemshowcase` refers to an example organization name
+
 ## Create prompts {#create-prompts}
 
-### Create a brand prompt {#create-brand-prompt}
+### Create a brand prompt (Optional) {#create-brand-prompt}
 
 A brand prompt provides common brand and campaign context that is applied during metadata generation.
 
@@ -109,7 +115,7 @@ To create a property prompt:
 
 You can add the property prompt to one or more processing profiles and use Prompt Playground to refine the prompt before deploying it.
 
-## Use referenced properties {#use-referenced-properties}
+## Use referenced properties (optional) {#use-referenced-properties}
 
 Referenced properties provide additional asset metadata or file path information as context when generating metadata values. You can use existing information such as product details, campaign information, metadata values, dates, or asset file path information to provide additional context to the property prompt.
 
@@ -129,7 +135,7 @@ To add referenced properties:
 >
 > Referenced properties provide additional context to the prompt. They do not define the metadata property that AI generates.
 
-## Configure controlled vocabulary {#configure-controlled-vocabulary}
+## Configure controlled vocabulary (optional) {#configure-controlled-vocabulary}
 
 Controlled vocabulary restricts AI-generated metadata values to a predefined set of approved options. Use controlled vocabulary when a metadata property must use values from an established list, such as product categories, regions, asset classifications, or other brand-specific terminology.
 
@@ -166,7 +172,7 @@ The value descriptions provide additional context that helps AI select the appro
 
 After configuring the controlled vocabulary, use **[!UICONTROL Prompt Playground]** to test how AI selects values for sample assets.
 
-## Enhance prompts using Prompt Enhancer {#prompt-enhancer}
+## Enhance prompts using Prompt Enhancer (optional) {#prompt-enhancer}
 
 Prompt Enhancer converts simple prompts into structured prompts with suggested improvements.
 
