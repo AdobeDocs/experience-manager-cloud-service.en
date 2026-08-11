@@ -1,6 +1,6 @@
 ---
 title: AI-powered content onboarding and content supply chain automation
-description: Learn how to automate one-time content migrations and content supply chain automation between Adobe and supported third-party repositories.
+description: Learn how the Content Supply Chain Agent helps blueprint your content lifecycle and configure governed content and metadata movement between Adobe and third-party systems.
 role: Admin
 hide: true
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
@@ -10,45 +10,59 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 
 Organizations often store digital assets and metadata across multiple repositories, such as digital asset management (DAM) systems, cloud storage services, and content platforms. Migrating content to a new system or keeping multiple repositories synchronized typically requires manual effort or custom integrations that can be difficult to build and maintain.
 
-This capability helps you automate one-time content migrations and recurring synchronization between supported repositories. An AI-powered agent guides you through configuring content transfers by proposing repository connections, metadata mappings, and transfer settings, reducing the effort required to move and synchronize content across systems.
+The Content Supply Chain Agent provides two cooperating AI-powered agents:
+
+- **CSC Blueprint Agent** maps your end-to-end content supply chain, identifies gaps and anti-patterns, and helps define an agreed future state and prioritized action plan.
+- **CSC Integration Agent** implements governed content and metadata movement between systems through configured connections, supporting both one-time migrations and recurring synchronization.
+
+Together, the agents help you plan improvements across the content lifecycle and implement transfers between Adobe and third-party systems.
 
 >[!IMPORTANT]
 >
->This feature is available as Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>This feature is available as a Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 ## Benefits {#benefits-ai-powered-content-onboarding-content-supply-chain-automation}
 
-Automating content onboarding and synchronization provides the following benefits:
+The Content Supply Chain Agent provides the following benefits:
 
+- Establish a shared view of your current and future content supply chain.
 - Accelerate onboarding by reducing the time required to migrate existing assets and metadata into a new repository.
 - Simplify recurring synchronization by automating scheduled content transfers between systems of record.
 - Reduce maintenance overhead by replacing custom integrations with configurable connections.
-- Support content transfers between Adobe and third-party repositories.
+- Support governed content and metadata movement between Adobe and third-party systems.
 - Validate transfer settings before moving content by using dry runs.
 
-## How content transfers work? {#how-content-transfer-work}
+## Blueprint your content supply chain {#blueprint-content-supply-chain}
 
-The AI-powered agent helps configure a content transfer between a source repository and a destination repository.
+Use the CSC Blueprint Agent when you need to understand and improve the complete content lifecycle rather than configure a single transfer. It maps your systems, processes, and handoffs across the six phases of the content supply chain, then produces confirmed current-state and future-state diagrams and a prioritized action plan.
+
+The Blueprint Agent may recommend Adobe product capabilities, native integrations, CSC Integration Agent connections, or customer-owned implementation work. Its recommendations are not limited to systems with an available gateway.
+
+Where the agreed action plan includes governed content or metadata movement, the Blueprint Agent can move approved connection work into CSC Integration Agent setup.
+
+## Configure content transfers with the CSC Integration Agent {#how-content-transfer-work}
+
+The AI-powered agent helps configure governed content and metadata movement between source and destination systems or endpoints.
 
 During configuration, the agent:
 
-- Collects the information required to connect to each repository.
-- Proposes mappings between metadata fields and taxonomies.
+- Collects the information required to connect to each system or endpoint.
+- Proposes mappings between metadata fields, including taxonomy or classification fields exposed by a gateway.
 - Allows you to review and validate the proposed mappings before transferring content.
 - Supports dry runs so you can verify the configuration before moving production content.
 - Configures one-time or recurring transfer schedules.
 
-Each configured transfer is called a **connection**. A connection uses **gateways** to communicate with the source and destination repositories. Each execution of a connection is called a **run**.
+Each configured transfer is called a **connection**. A connection uses **gateways** to communicate with source and destination systems or endpoints. Each execution of a connection is called a **run**.
 
-Runs are stateful. They track previously transferred assets and metadata so that subsequent runs transfer only new or modified content instead of processing the entire repository again.
+Successful non-dry runs preserve identity and change-detection state. Later runs use this state to reduce unnecessary destination updates while processing additions, modifications, and eligible deletions. Source enumeration and content retransmission depend on gateway capabilities and destination requirements.
 
-## Key capabilities {#key-capabilities-ai-powered-content-onboarding-content-supply-chain-automation}
+## Key Integration Agent capabilities {#key-capabilities-ai-powered-content-onboarding-content-supply-chain-automation}
 
-- **Identity mapping**: Maintains the relationship between assets in the source and destination repositories across multiple runs.
+- **Identity mapping**: Maintains the relationship between assets in source and destination systems across multiple runs.
 
-- **Change detection**: Transfers only assets and metadata that have changed since the previous run, reducing unnecessary processing and improving efficiency.
+- **Change detection**: Uses persisted state to reduce unnecessary destination updates while processing additions, modifications, and eligible deletions.
 
-- **Metadata mapping**: Maps metadata fields and taxonomies between repositories as part of the content transfer process.
+- **Metadata mapping**: Maps metadata fields, including taxonomy or classification fields exposed by a gateway, between source and destination systems.
 
 - **Dry runs**: Validates mappings and transfer settings before moving content into the destination repository.
 
@@ -56,29 +70,21 @@ Runs are stateful. They track previously transferred assets and metadata so that
 
 - **Custom transformations**: Supports additional transformation logic when required, including JavaScript, regular expressions, webhooks, and content hashing.
 
-## Supported repositories {#supported-repositories}
+## Available gateways {#supported-repositories}
 
-Content can be transferred between Adobe and third-party repositories through supported source and destination gateways.
+Content and metadata can be transferred between Adobe and third-party systems through source and destination gateways.
 
-Examples of supported repositories include:
+**Gateways ready now for co-innovation or Limited Availability:** AEM Assets as a Cloud Service, AEM Assets (Managed Services / On-Prem 6.5), Adobe Commerce, Adobe Content Platform, Document Cloud, Adobe Dynamic Media Classic, Adobe Lightroom, Adobe Stock, Adobe Workfront, AWS S3™, Azure Blob Storage™, Box™, Dropbox™, Drupal™, FTP (Classic), Google Drive™, HTTP Basic (Apache Directory Index) Source, OneDrive™ and SharePoint™, OpTEL Media Source, SFTP / SSH File Server, SMB / Samba / CIFS File Share, Synology™ NAS (File Station), TFTP (UDP), WebDAV File Server, WordPress™.
 
-- Adobe Experience Manager Assets
-- Adobe Content Platform
-- Adobe Commerce
-- Amazon S3
-- Azure Blob Storage
-- Box
-- Dropbox
-- Google Drive
-- OneDrive
-- WordPress
-- Workfront
-- FTP and SFTP servers
-- SMB file shares
+**Gateways in development:** CSV Gateway, Web Crawl Media Source, Google Cloud Storage™, LucidLink™, VNTANA™, Cloudinary™, Nasuni™, Adobe Marketo Engage, Syndigo™, Aprimo™ DAM, Veeva Vault™ (QA), WebDAM™, Bynder™, Figma™, Frame.io (V4 API), Frame.io (V2/V3 API), Canva™, Iconik™, Acquia™ DAM, OpenText™ Media Management, Canto™, Frontify™, Brandfolder™, Orange Logic™ DAM, MediaValet™.
 
-Additional repositories are planned for future releases.
+> **Trademark notice:** All third-party trademarks are the property of their respective owners. Their inclusion does not imply affiliation with or endorsement by Adobe.
 
 ## Example use cases {#example-use-cases}
+
+### Plan and improve an end-to-end content supply chain
+
+Map the systems, processes, and handoffs used throughout the content lifecycle, identify improvement opportunities, and prioritize integrations before configuring individual connections.
 
 ### Migrate content into a new repository
 
@@ -86,7 +92,7 @@ Configure a one-time migration from a legacy DAM or cloud storage repository int
 
 ### Synchronize repositories
 
-Keep content synchronized between cloud storage and a DAM by configuring a recurring transfer that processes only newly added or modified assets.
+Keep content synchronized between cloud storage and a DAM with a recurring transfer that processes additions, modifications, and eligible deletions while reducing unnecessary destination updates.
 
 ### Streamline your content supply chain
 
@@ -96,11 +102,14 @@ Reduce manual content movement by automating transfers between repositories used
 
 This capability is well suited for:
 
+- Mapping the current and future state of an end-to-end content supply chain.
+- Identifying gaps, anti-patterns, and opportunities for improvement.
+- Producing a prioritized implementation action plan.
 - One-time content migrations.
 - Onboarding new systems of record.
 - Recurring synchronization between repositories.
-- Metadata and taxonomy mapping during content transfers.
-- Automating content movement across multiple repositories.
+- Metadata mapping, including supported taxonomy or classification fields.
+- Automating content movement across multiple systems.
 
 ## When not to use this capability {#when-not-to-use-ai-powered-content-onboarding-content-supply-chain-automation}
 
@@ -110,7 +119,3 @@ This capability is not intended for:
 - Analytics or customer data ETL pipelines.
 - Real-time event-driven propagation.
 - Continuous byte-streaming between repositories.
-
-
-
-
