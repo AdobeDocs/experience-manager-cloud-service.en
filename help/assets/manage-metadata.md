@@ -105,6 +105,11 @@ Descriptive metadata is metadata concerned with the application domain, for exam
 The cost of manually creating descriptive metadata information is high. So, standards are established to ease the exchange of metadata across software systems and organizations. [!DNL Experience Manager Assets] supports all relevant standards for metadata management.
 -->
 
+### Assets View versus Sites/Admin View metadata differences {#metadata-differences}
+
+AEM Assets view (the experience cloud/react-based UI) and classic Sites/Admin view maintain **[!UICONTROL separate]** metadata form definitions, and do not share client-library-based UI customizations. A custom metadata schema extension or clientlib built for Admin View does not automatically appear or function in Assets View. To bring an Admin-View-defined schema into Assets view, use the **[!UICONTROL Import]** capability for metadata forms rather than expecting automatic synchronization.
+
+
 ## Metadata and Last Modification {#last-modification}
 
 The last modified date of an asset reflects the last time the original file for an asset is modified. As a result, the modification date and user only change when:
