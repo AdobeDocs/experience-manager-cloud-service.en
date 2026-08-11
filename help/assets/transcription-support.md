@@ -6,7 +6,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets."
 ---
 # Transcription Support to videos {#transcription-support}
 
-Transcription in Dynamic Media [!DNL Dynamic Media with OpenAPI capabilities] uses the Automatic Speech Recognition (ASR) technology to convert spoken audio into a written text transcript. It processes audio recordings or live speech, identifies spoken words, and generates a searchable, time-aligned transcript that can be reviewed, edited, and shared. 
+Transcription in Dynamic Media [!DNL Dynamic Media] uses the Automatic Speech Recognition (ASR) technology to convert spoken audio into a written text transcript. It processes audio recordings or live speech, identifies spoken words, and generates a searchable, time-aligned transcript that can be reviewed, edited, and shared. 
 
 Transcripts for videos improves the accessibility for your customers. These are Server Side Rendered (SSR) transcripts which directly increase the SEO and LLM visibility of videos. It also embeds a compliant [VideoObject](https://schema.org/VideoObject) that helps search engine and LLM tools recognise videos in your page. 
 
@@ -14,7 +14,7 @@ The transcripts are generated based on the captions you have added in the video.
 
 ## Prerequisites {#prerequisites-for-enabling-transcriptions}
 
-To enable transcription, ensure you have Dynamic Media [!DNL Dynamic Media with OpenAPI capabilities] and videos with captions in Adobe Experience Manager (AEM) Sites. 
+To enable transcription, ensure you have Dynamic Media [!DNL Dynamic Media] and videos with captions in Adobe Experience Manager (AEM) Sites. 
 
 ## Enabling Transcription for videos in Adobe Experience Manager (AEM)  {#enable-transcription}
 
