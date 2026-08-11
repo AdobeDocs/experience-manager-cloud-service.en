@@ -439,11 +439,19 @@ The editor provides an option to show details about ongoing and completed [workf
 
 Select the icon from the top toolbar: 
 
-![Content Fragments console - Workflows icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-editor-workflows-icon.png)
+![Content Fragments editor - Workflows icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-editor-workflows-icon.png)
 
 A dialog opens that shows detailed information about workflows (past and current) for the fragment:
 
-![Content Fragments console - Workflows dialog](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-editor-workflows-dialog.png)
+![Content Fragments editor - Workflows dialog](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-editor-workflows-dialog.png)
+
+Failed workflows are marked. Selecting the icon opens an additional dialog with information about the failure:
+
+![Content Fragments editor - Failures in the Workflows dialog](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-editor-workflows-dialog-failure.png)
+
+>[!NOTE]
+>
+>If the workflow fails when publishing a Content Fragment, a toast message for the failure is triggered. The toast message contains a link to open the dialog, so you can see the cause of the failure.
 
 ## View and edit Properties, Metadata and Tags {#view-and-edit-properties-metadata-and-tags}
 
