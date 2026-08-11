@@ -15,13 +15,13 @@ To enable custom thumbnails for videos, follow the steps mentioned below:
 1. In [Adobe Experience Manager](https://author-p49105-e258067.adobeaemcloud.com/ui#/aem/sites.html/content/wknd) (AEM), navigate to **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 2. Click any video asset and navigate to **[!UICONTROL Properties]**.
 3. You can now see the **[!UICONTROL Change Thumbnail]** option along with the title and other details of the video asset. 
-    ![Custom Thumbnail of a video asset](/help/assets/assets/thumbnails.png)
+    ![Custom Thumbnail of a video asset](/help/assets/dynamic-media/assets/thumbnails.png)
    1. To generate a thumbnail from an existing video asset, click **[!UICONTROL Change Thumbnail]** and select **[!UICONTROL Select Frame from Video]**. Play the video asset and navigate to the desired frame. Once you have identified the frame you want to use as the thumbnail, click **[!UICONTROL Save Change]** to generate and save the thumbnail from that specific moment in the video asset.
-       ![Selecting Thumbnail of a video asset](/help/assets/assets/changethumbnail.png)
+       ![Selecting Thumbnail of a video asset](/help/assets/dynamic-media/assets/changethumbnail.png)
    2. To select a thumbnail from an existing image in Assets, click **[!UICONTROL Change Thumbnail]** and select **[!UICONTROL Select Thumbnail from Assets]**. Click **[!UICONTROL Select Thumbnail]** and select the thumbnail. Click **[!UICONTROL Save Change]**. 
-      ![Selecting Thumbnail of a video asset from existing thumbnail](/help/assets/assets/changethumbnail1.png)
+      ![Selecting Thumbnail of a video asset from existing thumbnail](/help/assets/dynamic-media/assets/changethumbnail1.png)
     You can now see the newly generated thumbnail image. 
-       ![Selecting Thumbnail of a video asset](/help/assets/assets/newthumbnail.png)
+       ![Selecting Thumbnail of a video asset](/help/assets/dynamic-media/assets/newthumbnail.png)
 
 **See also**
 
