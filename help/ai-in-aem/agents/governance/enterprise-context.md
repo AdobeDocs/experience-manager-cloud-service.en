@@ -177,14 +177,33 @@ A **domain** defines which URLs a brand's checks apply to, for example a pattern
 
 ### Batch Analysis {#batch-analysis}
 
-**Batch analysis** runs your checks against a set of existing pages, so you can validate content you already have. You can analyze either:
+**Batch analysis** runs your checks against a set of existing pages, so you can validate content you already have.
 
-* a **list of URLs** you provide directly, or
-* pages **discovered from a sitemap**, with an optional page limit and include/exclude patterns to narrow which pages are analyzed.
+To run a batch analysis:
 
-Results show the scope that was analyzed, per-page outcomes, and summary counts of total, completed, and failed pages.
+1. From the brand's **Governance Insights** tab, select **Batch Analysis** in the left panel, then click **+ Start batch analysis** to open the **Start a new batch analysis** dialog.
 
-<!-- Screenshot: a batch analysis result, showing the summary counts and the per-page results table. -->
+1. For **Type**, select **List** to paste the URLs you want to analyze directly, one per line.
+
+   ![Starting a batch analysis with a list of URLs](/help/ai-in-aem/agents/governance/assets/start_batch_analysis_list.png){width="70%"}
+
+1. Alternatively, select **Sitemap Discovery** to have Batch Analysis crawl a sitemap instead of supplying URLs manually. Enter the site or page URL to crawl, set a **Max pages** limit (default 50), and optionally add **Include patterns** or **Exclude patterns** (glob patterns, for example `*/en/*` to include only certain paths, or `*/content/dam/*` to exclude others).
+
+   ![Starting a batch analysis with sitemap discovery](/help/ai-in-aem/agents/governance/assets/start_batch_analysis_sitemap_discovery.png){width="70%"}
+
+1. Click **Start analysis** to queue the job. The **Batch Analysis** list shows every job you run, along with its date, type, scope, status, and number of pages.
+
+1. Once a job completes, review its results under **Evaluation Results**, as shown below:
+
+   ![Overview of batch analysis results](/help/ai-in-aem/agents/governance/assets/batch_analysis_results.png)
+
+   This view reports:
+
+   * Summary cards for **Total Pages** evaluated, **Aligned Pages** and **Non-Aligned Pages** (whether pages meet brand standards), and the overall **Pass Rate**
+   * A **Checks** breakdown showing how many individual checks passed, failed, or did not apply (N/A) across the analyzed pages
+   * A per-page table listing each URL with its last check date, alignment status, and counts of succeeded, failed, not-applicable, and errored checks, with a link to view full details for that page
+
+   Results can be filtered to **Pages** or **Images**.
 
 ## Related Topics {#related-topics}
 
