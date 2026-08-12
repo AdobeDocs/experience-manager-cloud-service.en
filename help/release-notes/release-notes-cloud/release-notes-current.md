@@ -166,7 +166,7 @@ To participate or learn more, send an email to `Grp-AEM-Assets-Sourcing-Portal@a
 
 #### AI-powered content onboarding and content supply chain automation {#ai-powered-content-onboarding-content-supply-chain-automation}
 
-AI-powered content onboarding and content supply chain automation capability helps you automate one-time content migrations and recurring synchronization between supported repositories. An AI-powered agent guides you through configuring content transfers by proposing repository connections, metadata mappings, and transfer settings, reducing the effort required to move and synchronize content across systems.
+[AI-powered content onboarding and content supply chain automation](/help/assets/ai-powered-content-onboarding-content-supply-chain-automation.md) capability helps you automate one-time content migrations and recurring synchronization between supported repositories. An AI-powered agent guides you through configuring content transfers by proposing repository connections, metadata mappings, and transfer settings, reducing the effort required to move and synchronize content across systems.
 
 Adobe works with participating customers to understand their needs and may deliver expanded capabilities as the limited availability program progresses. Customers in this program gain early access to new features as they ship and are encouraged to share feedback that directly shapes the roadmap.
 
