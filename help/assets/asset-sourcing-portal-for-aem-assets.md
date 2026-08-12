@@ -12,9 +12,7 @@ Organizations often rely on photographers, creative agencies, and other external
 
 The Assets Sourcing Portal provides a secure, self-service experience for collecting assets from external contributors without granting them access to Adobe Experience Manager Assets. Contributors can upload assets, provide the required metadata, and submit content directly to a designated intake location while administrators maintain control over asset organization and governance.
 
->[!IMPORTANT]
->
->This feature is available as Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+For information on how to get it enabled for your deployment, see [Assets as a Cloud Service release notes](/help/release-notes/release-notes-cloud/release-notes-current.md#asset-sourcing-aem-assets).
 
 ## Benefits {#benefits-asset-sourcing-aem-assets}
 
