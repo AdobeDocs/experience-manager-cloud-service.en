@@ -29,7 +29,7 @@ Capturing everything in Enterprise Context gives you:
 
 * **One source of truth.** Every team and every tool works from the same rules, so content stays consistent regardless of who or what produces it.
 * **Consistent from the start.** Because generation draws on your context up front, output follows your voice, claims, positioning, and design standards from the beginning, instead of being corrected in review.
-* **Ongoing validation.** Because rules change over time, Enterprise Context lets you audit existing content against the current rules and identify content that no longer complies.
+* **Ongoing validation.** Because rules change over time, Enterprise Context lets you [audit existing content](#batch-analysis) against the current rules and identify content that no longer complies.
 * **Reusable across tools.** Your context is not locked inside a single application. It is exposed through a standard interface, the Model Context Protocol (MCP), so that any AI system or agent, Adobe's or your own, can query the rules that apply to a task and stay within approved bounds.
 
 Enterprise Context is the shared input for different AI agents. After you capture it once, any agent that generates, adapts, distributes, or checks your content can use it.
@@ -40,7 +40,7 @@ Enterprise Context is organized into categories. Each one answers a different qu
 
 | Category | Answers the question | Examples |
 |---|---|---|
-| **Brand Voice** | *How should we sound?* | Tone, terminology, sentence style, words to prefer or avoid |
+| [**Brand Voice**](#brand-voice) | *How should we sound?* | Tone, terminology, sentence style, words to prefer or avoid |
 | **Claim Guardrails** | *What are we allowed to say?* | Positioning limits and messaging rules pre-approved by your organization |
 | **Market Positioning** | *How do we talk about alternatives?* | Approved comparisons and differentiation language |
 | **Design System** | *How should it look?* | Approved components, layouts, typography, color, and asset templates |
@@ -72,7 +72,7 @@ Rules resolve by inheritance: a global baseline applies everywhere, and segment-
 Once your context is in place, it does two jobs:
 
 1. **Guides generation.** Before an AI produces content, it consults the rules that apply to the task, such as voice, claims, positioning, and design, so the result is on-brand from the start.
-1. **Powers validation.** Enterprise Context also lets you audit content you *already have* against your current rules, surfacing where content has drifted from your voice, claims, or design standards so you can fix or regenerate it.
+1. **Powers validation.** Enterprise Context also lets you [audit content you *already have*](#batch-analysis) against your current rules, surfacing where content has drifted from your voice, claims, or design standards so you can fix or regenerate it.
 
 Because your context is exposed through a standard interface, the *same* rules drive both jobs, and remain available to any other AI tool or agent your organization uses.
 
@@ -80,7 +80,7 @@ Because your context is exposed through a standard interface, the *same* rules d
 
 You do not have to author every rule from a blank page. There are two main ways to populate Enterprise Context, and most organizations use both:
 
-* **Add rules manually** for the knowledge you already have written down. Each context category (Brand Voice, Claim Guardrails, Market Positioning, and Design System) has its own guided form.
+* **Add rules manually** for the knowledge you already have written down. Each context category ([Brand Voice](#brand-voice), Claim Guardrails, Market Positioning, and [Design System](#design-system)) has its own guided form.
 * **Import from a document.** Upload an existing style guide, brand guidelines, or policy PDF as source material for your context. For step-by-step instructions, see [How to Import a Brand Policy](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md).
 
 ## Work with Enterprise Context {#work-with-enterprise-context}
@@ -107,7 +107,7 @@ A brand has a **Name**, an optional **Description**, and a **Status**.
 
 A **brand policy** is a structured representation of your brand rules that an AI can understand and enforce. Instead of rewriting your guidelines in a technical format, you import them in their original form, a policy document (PDF) and/or a page URL, and the Governance Agent reads them and extracts everything it can into your Enterprise Context.
 
-Importing does more than create checks. Any information the agent finds is added to your context. Depending on what the document contains, that can include brand voice guidance, claim guardrails, market positioning, design-system standards, and the policy checks used to enforce them. A single import can populate your context rules *and* checks at once.
+Importing does more than create checks. Any information the agent finds is added to your context. Depending on what the document contains, that can include [brand voice](#brand-voice) guidance, claim guardrails, market positioning, design-system standards, and the policy checks used to enforce them. A single import can populate your context rules *and* checks at once.
 
 Once in place, this context lets the agents:
 
@@ -120,7 +120,7 @@ This lets you reuse your existing brand documentation while gaining automated go
 
 ### Context Rules {#context-rules}
 
-Context rules capture *how your content should be created*. Three categories are available, **Brand Voice**, **Claim Guardrails**, and **Market Positioning**, and they share the same fields:
+Context rules capture *how your content should be created*. Three categories are available, [**Brand Voice**](#brand-voice), **Claim Guardrails**, and **Market Positioning**, and they share the same fields:
 
 | Field | What it is |
 |---|---|
@@ -137,7 +137,15 @@ A rule applies only while its **Status** is *Active*. Set it to *Inactive*, *Dra
 >
 >**Segments** are what let you set a global default and then layer market- or audience-specific overrides on top. See [Where Rules Apply](#where-rules-apply) for how segments and inheritance work.
 
-<!-- Screenshot: a brand's Brand Voice rules. -->
+For an example of these fields in practice, see [Brand Voice](#brand-voice) below.
+
+### Brand Voice {#brand-voice}
+
+**Brand Voice** is one of the three [context rule](#context-rules) categories in Enterprise Context. It answers the question *how should we sound?*, capturing your organization's tone, terminology, sentence style, and the words you prefer or avoid, the kind of guidance that would otherwise live scattered across a style guide.
+
+Brand Voice rules use the same fields as any other context rule: **Category**, **Name**, **ID**, **Rule**, **Segments**, and **Status**. Rules extracted automatically when you [import a brand policy](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md) appear alongside those you add manually, and only rules with an *Active* **Status** are applied by the agents.
+
+![A brand's Brand Voice rules](/help/ai-in-aem/agents/governance/assets/brand_voice_rules.png)
 
 ### Design System {#design-system}
 
