@@ -4,7 +4,7 @@ description: Generate channel-specific Dynamic Media renditions from the Content
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets."
 exl-id: 9b7f5c81-e2ff-444f-97c8-b4ed56f3ef9e
-feature: Content Hub, Dynamic Media, AI, Asset Management
+feature: Generative AI
 ---
 
 # Generate Dynamic Media renditions on the fly from the Content Hub Search bar {#generate-dynamic-media-renditions}
