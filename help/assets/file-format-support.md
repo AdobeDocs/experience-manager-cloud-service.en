@@ -227,7 +227,7 @@ Concurrent updates to an asset's metadata node (**[!UICONTROL cqdam.metadata.xml
 
 1. If a rendition failure only affects a rendition type that does not apply to the asset's format (for example, video preview on an image), treat it as expected and check whether the format-appropriate renditions succeeded instead.
 2. If a processing profile is failing on files that were never meant to be processed by it (dor example, *ZIP*, *3D* packages), fix the profile's asset selection criteria rather than trying to make the file type **[!UICONTROL work]**.
-3. If a specific file fails while similar files succeed, suspect the file itself first. Check for restricted or licensed fonts (*PPTX* / *PDF*), SVG compliance, or an unsupported format or extension mismatch (*AVIF*, *JFIF*) before assuming an AEM configuration issue.
+3. If a specific file fails while similar files succeed, suspect the file itself first. Check for restricted or licensed fonts (*PPTX* / *PDF*), *SVG* compliance, or an unsupported format or extension mismatch (*AVIF*, *JFIF*) before assuming an AEM configuration issue.
 4. If workflows are backing up in an unhealthy state, check for both the unsupported-format processing failures and metadata writeback conflicts. They can co-occur and compound the backlog.
 
 ## Tips and limitations {#limitations-and-tips}
