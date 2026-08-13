@@ -10,13 +10,17 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 27550 {#release-27550}
+## Release 27673 {#release-27673}
 
-Summarized below are the continuous improvements for maintenance release 27550, which was publicly released on August 11, 2026. The previous maintenance release was release 27293.
+Summarized below are the continuous improvements for maintenance release 27673, which was publicly released on August 11, 2026. The previous maintenance release was release 27293.
 
 The 2026.8.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-27550}
+>[!NOTE]
+>
+>Release 27550 has been made private. 
+
+### Enhancements {#enhancements-27673}
 
 * AEMARCH-328: Exposed a default 404 message constant in the OpenAPI support layer.
 * ASSETS-52544: Introduced countdown timer support in Dynamic Media templates for Open Time Personalization.
@@ -49,7 +53,7 @@ The 2026.8.0 feature activation will provide the full feature set for this maint
 * SITES-47432: Improved performance of the BFF List Folders API query.
 * SITES-49250: Added per-component marker filter support for headless components on author.
 
-### Fixed Issues {#fixed-issues-27550}
+### Fixed Issues {#fixed-issues-27673}
 
 * ASSETS-52795: Fixed asset UUID not being retained when an asset is replaced.
 * ASSETS-62661: Fixed WebP renditions showing generic size labels instead of configured processing profile names.
@@ -69,19 +73,19 @@ The 2026.8.0 feature activation will provide the full feature set for this maint
 * ASSETS-75767: Fixed asset processing failures caused by broken event handler registration.
 * SITES-48494: Fixed incorrect minimum length validation on model metadata (regression rollback).
 
-### Known Issues {#known-issues-27550}
+### Known Issues {#known-issues-27673}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-27550}
+### Deprecated Features and APIs {#deprecated-27673}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-27550}
+### Security Fixes {#security-27673}
 
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 2 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-27550}
+### Embedded Technologies {#embedded-tech-27673}
 
 |Technology|Version|Link|
 |---|---|---|
