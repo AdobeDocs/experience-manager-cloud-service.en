@@ -191,6 +191,45 @@ The document formats supported for asset management features are as follows.
 * WAVE/WAV (.wav)
 * QuickTime (.mov)
 
+## Asset file format support and validation {#asset-file-format-support-and-validation}
+
+AEM Assets processing has two distinct mechanisms that behave differently when a file type isn't fully supported: standard renditions (always requested for every asset, non-configurable) and Dynamic Media / custom processing profiles (configurable, and can be scoped by MIME type or asset selection criteria). Knowing which one is failing determines whether an error is expected behavior or something to fix.
+
+### Standard rendition failures are often expected, not a defect {#standard-rendition-failures}
+
+AEM's asset microservices always request a fixed set of standard renditions (e.g., text extraction, MP4 preview) for every uploaded asset, regardless of its MIME type. For a PNG image, renditions such as cqdam.text.txt or cq5dam.preview.mp4 are inherently inapplicable and will appear as entries in dam:failedRenditions. This is expected, by-design behavior — not a misconfiguration — as long as the renditions relevant to the asset's actual type (e.g., standard image renditions, Dynamic Media processing for images) complete successfully.
+
+### Unsupported or restricted input formats {#unsupported-or-restricted-input-formats}
+
+| File type / scenario | Behavior | Guidance |
+|---|---|---|
+| ZIP files sent through Dynamic Media processing profiles | Processing step fails explicitly with an unsupported-format error; can cause workflow instances to accumulate in an unhealthy/retrying state at scale | Exclude ZIP (and other archive/3D package files) from Dynamic Media processing profiles using asset selection criteria so the profile is never applied to non-media file types in the first place. |
+| AVIF images| File is stored in the DAM, but AEM does not process it — no thumbnail or preview is generated | AVIF is not a supported input format for asset processing in AEM as a Cloud Service. Convert to JPG or PNG before upload if a preview/rendition is required. |
+| JFIF images | Not recognized as image/jpeg because of the file extension; the standard image processing pipeline does not run, so no renditions are generated | Rename or re-export JFIF files as .jpg before upload. |
+| PPTX files containing restricted (read-only/licensed) fonts, e.g. Avenir| PDF rendition generation fails; the file is reported as corrupted by the PDF conversion microservice (the same underlying service used by Acrobat) | Restricted fonts not bundled with Windows and blocked from export by the font vendor will cause conversion failures independent of AEM. Replace restricted fonts in the source file before upload. Local conversion in Acrobat can be used to confirm whether a given PPTX will fail before uploading, since it uses the same conversion service. |
+| SVG files missing the offset attribute on <stop> elements| Dynamic Media's image server returns HTTP 403 via /is/image for that specific file (while /is/content may still render it), because the SVG violates the SVG 1.1 specification| Validate SVGs against the SVG 1.1 spec (e.g. with the W3C Validator) before upload, and re-export from the source tool (e.g. Illustrator) with SVG 1.1 compliance.|
+| Files with MIME types outside the configured allow-list (e.g. .pem certificates)| Upload is rejected in the UI | AEM Assets can technically store any binary file, but an organization's asset upload restrictions may limit accepted MIME types. Update the allowed MIME type list (globally, or per folder — see below) to include the required type. |
+| Metadata values in a bulk CSV import that start with or contain reserved characters (#, /, ;, \, |, [, ], %, {, }, ?, &)| The parser skips or ignores the affected metadata entry without a hard failure| Remove or replace reserved characters in metadata values before running a bulk CSV metadata import. |
+| DAM assets carrying non-standard/unregistered XML metadata namespaces (e.g. exifEX, mwg-rs, photomechanic)| Content package import/copy between environments fails with "Unknown namespace prefix" or "No namespace mapping found" | Identify and clean the offending metadata properties on the source assets (they are often introduced by external tools) before re-attempting the package import/content copy. |
+
+### Restricting upload types per folder {#restricting-upload-types-per-folder}
+
+Out-of-the-box MIME type restrictions apply globally across the DAM by default, but folder-specific restrictions are also possible: configure the allowed MIME types for a specific folder (e.g. /content/dam/projects) via Tools > Assets > Assets Configuration, listing only the MIME types that should be accepted for that folder — all other types, including common ones like Excel spreadsheets, will then be blocked for that folder specifically without affecting the rest of the DAM.
+
+### XMP metadata writeback conflicts {#XMP-metadata-writeback-conflicts}
+
+Concurrent updates to an asset's metadata node (cqdam.metadata.xml) — for example, from multiple custom workflows or services writing to the same asset at once — can produce repository conflicts (InvalidItemStateException, CommitFailedException) during XMP writeback. Repeated failures of this kind can also contribute to a backlog of unhealthy/retrying workflow instances. To avoid this:
+
+* Review custom workflows or services for concurrent writes to the same asset's metadata, and serialize them where possible.
+* Enable and configure workflow purge maintenance so that completed and stale workflow instances are cleaned up automatically rather than accumulating.
+
+### Troubleshooting checklist {#troubleshooting-checklist}
+
+1. If a rendition failure only affects a rendition type that doesn't apply to the asset's format (e.g. video preview on an image), treat it as expected — check whether the format-appropriate renditions succeeded instead.
+2. If a processing profile is failing on files that were never meant to be processed by it (e.g. ZIP, 3D packages), fix the profile's asset selection criteria rather than trying to make the file type "work."
+3. If a specific file fails while similar files succeed, suspect the file itself first: check for restricted/licensed fonts (PPTX/PDF), SVG spec compliance, or an unsupported format/extension mismatch (AVIF, JFIF) before assuming an AEM configuration issue.
+4. If workflows are backing up in an unhealthy state, check for both unsupported-format processing failures and metadata writeback conflicts — they can co-occur and compound the backlog.
+
 ## Tips and limitations {#limitations-and-tips}
 
 * Currently, the file size limit for metadata extraction is approximately 15 GB. When uploading large assets, sometimes the metadata extraction operation fails.
