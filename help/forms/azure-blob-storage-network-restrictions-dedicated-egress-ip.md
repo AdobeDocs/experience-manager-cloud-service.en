@@ -30,6 +30,16 @@ This works when AEM and the Azure Storage account are set up in different Azure 
 
 By the end of this article, you will understand how the Azure Blob Storage connector authenticates. You will also know why Dedicated Egress IP behaves differently depending on region, and which network pattern fits your deployment: the planned Private Link option, VPN with a private endpoint, or a CDN or Front Door layer.
 
+## Prerequisites
+
+Dedicated Egress IP only works when your AEM as a Cloud Service program has **Advanced Networking** enabled and configured. Before you set up the Azure Blob Storage connector with IP allowlisting, verify:
+
+- Your AEM as a Cloud Service program has [Advanced Networking](/help/security/configuring-advanced-networking.md) enabled and at least one Dedicated Egress IP provisioned.
+- You have [created and configured an Azure Storage Configuration](/help/forms/configure-submit-action-azure-blob-storage.md#create-azure-configuration) in AEM Forms Cloud Services with your Storage Account name and Access key.
+- Your Azure Storage account has a firewall rule that explicitly allows traffic from the AEM Dedicated Egress IP address.
+
+If Advanced Networking is not enabled on your program, the traffic will not route through the Dedicated Egress IP at all, and the configuration steps below will not work. Contact your Adobe account team to enable it.
+
 ## Azure Blob Storage Connector Authentication
 
 The Azure Blob Storage connector uses **Storage Account Shared Key** authentication to connect to your storage account. The Azure Java SDK handles this internally. You provide the **[!UICONTROL Azure Storage Account]** name and **[!UICONTROL Azure Access key]** once, when you [create the Azure Storage Configuration](/help/forms/configure-submit-action-azure-blob-storage.md#create-azure-configuration) in AEM Forms Cloud Services. The connector then uses that key for every submission after that.
@@ -58,11 +68,45 @@ When AEM and the Azure Storage account are in the *same* Azure region, the Dedic
 
 This is the root cause of the problem described in the [Overview](#overview). The Dedicated Egress IP is set up and allowlisted correctly, but submissions still fail.
 
-**Example:** A healthcare provider's AEM as a Cloud Service program and its Azure Storage account are both set up in the same Azure region. The provider allowlists the Dedicated Egress IP on the storage account's firewall, exactly as documented. Submissions still fail with `403 AuthorizationFailure`, because the traffic never leaves the region over the public internet, so the firewall never sees the allowlisted IP as the source.
+**Example:** A healthcare provider's AEM as a Cloud Service program and its Azure Storage account are both set up in the same Azure region (U.S. East). The provider allowlists the Dedicated Egress IP on the storage account's firewall, exactly as documented. Submissions still fail with `403 AuthorizationFailure`, because the traffic never leaves the region over the public internet, so the firewall never sees the allowlisted IP as the source. The provider implemented an Azure Function App as middleware between AEM Forms and the storage account. The Function App received submissions from AEM (routed through the Dedicated Egress IP) and then wrote them to Blob Storage from within the same region, bypassing the firewall restriction. This workaround resolved the issue while keeping data in the same region.
 
 >[!IMPORTANT]
 >
-> Before you troubleshoot further, check which scenario applies to your deployment. Compare your AEM as a Cloud Service program's region (visible in Cloud Manager) with your Azure Storage account's region (visible in the Azure portal). If the regions match, you cannot meet IP-based restrictions using Dedicated Egress IP alone. Instead, use one of the private connectivity options in the next section.
+> Before you troubleshoot further, check which scenario applies to your deployment. Compare your AEM as a Cloud Service program's region (visible in Cloud Manager) with your Azure Storage account's region (visible in the Azure portal). If the regions match, you cannot meet IP-based restrictions using Dedicated Egress IP alone. Instead, use one of the private connectivity options in the next section, or consider a middleware layer like the example above.
+
+## Troubleshooting
+
+### Submissions fail with 403 AuthorizationFailure even after allowlisting the Dedicated Egress IP
+
+This error usually means the Dedicated Egress IP is not actually being used for the request. The most common cause is a same-region deployment.
+
+**Step 1: Verify your AEM and Azure Storage regions**
+
+1. In Adobe Cloud Manager, check your program's region. This is visible in the program's **Environments** section.
+2. In the Azure portal, navigate to your Storage account and check its **Region** field.
+3. If both are in the same region, proceed to **Step 2 (Same-Region)** below. If they are in different regions, proceed to **Step 3 (Different-Region)** below.
+
+**Step 2: Same-Region Diagnosis**
+
+If your AEM and Azure Storage account are in the same region:
+
+- The 403 error is expected. Dedicated Egress IP does not protect same-region traffic because Azure routes it over an internal network instead of the public internet.
+- Allowlisting the Dedicated Egress IP will not help.
+- Review the [Recommended Approaches for Restricted or Firewalled Storage Accounts](#recommended-approaches-for-restricted-or-firewalled-storage-accounts) section below and choose a solution that works for same-region deployments:
+  - **Preferred long-term:** Private Link (planned, not yet available)
+  - **Available today:** VPN + Azure Private Endpoint
+  - **Situational workaround:** Azure Front Door or CDN
+  - **Application-level workaround:** Middleware such as an Azure Function App or similar REST API layer
+
+**Step 3: Different-Region Diagnosis**
+
+If your AEM and Azure Storage account are in different regions, the 403 error indicates a different problem:
+
+1. Verify that the Dedicated Egress IP is correctly provisioned on the AEM side. Check the **Advanced Networking** configuration in Cloud Manager.
+2. Confirm that the Dedicated Egress IP address is added to the Storage account's firewall allowlist in the Azure portal (under **Networking** > **Firewalls and virtual networks**).
+3. Verify that the Azure Storage Configuration in AEM Forms Cloud Services has the correct Storage Account name and Access key. (Invalid or expired credentials also produce a 403 error, though the root cause is different.)
+4. Check whether any custom code that connects to Azure Storage (such as an Azure Function App, Azure Logic App, or other middleware) is using the AEM proxy setup. Some HTTP clients, including the Azure SDK's default client, do not automatically inherit JVM proxy settings. You must configure the proxy explicitly in that code.
+5. If all of the above are correct, contact Adobe Support with your program ID and Cloud Manager environment details.
 
 ## Recommended Approaches for Restricted or Firewalled Storage Accounts
 
