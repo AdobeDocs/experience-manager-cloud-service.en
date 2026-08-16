@@ -16,10 +16,6 @@ The following section outlines the feature release notes for the current (latest
 >
 >Have a look at the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) to learn about the upcoming feature activations for [!DNL Experience Manager] as a Cloud Service.
 
->[!NOTE]
->
->To receive a monthly email notification about updates to Experience Cloud release notes, subscribe to the [Adobe Priority Product Update](https://www.adobe.com/subscription/priority-product-update.html).
-
 ## Release Date {#release-date}
 
 The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2026.7.0) is July 30, 2026. The next feature release (2026.8.0) is planned for August 27, 2026.
@@ -163,6 +159,14 @@ To participate or learn more, send an email to `GRP-AEM-ONBOARDING-AGENT@adobe.c
 Adobe works with participating customers to understand their needs and may deliver expanded capabilities as the limited availability program progresses. Customers in this program gain early access to new features as they ship and are encouraged to share feedback that directly shapes the roadmap.
 
 To participate or learn more, send an email to `Grp-AEM-Assets-Sourcing-Portal@adobe.com`.
+
+#### AI-powered content onboarding and content supply chain automation {#ai-powered-content-onboarding-content-supply-chain-automation}
+
+[AI-powered content onboarding and content supply chain automation](/help/assets/ai-powered-content-onboarding-content-supply-chain-automation.md) capability helps you automate one-time content migrations and recurring synchronization between supported repositories. An AI-powered agent guides you through configuring content transfers by proposing repository connections, metadata mappings, and transfer settings, reducing the effort required to move and synchronize content across systems.
+
+Adobe works with participating customers to understand their needs and may deliver expanded capabilities as the limited availability program progresses. Customers in this program gain early access to new features as they ship and are encouraged to share feedback that directly shapes the roadmap.
+
+To participate or learn more, send an email to `Grp-AEM_Assets_AI_contentonboarding_Automation@adobe.com`.
 
 #### Generate renditions from the Content Hub search bar {#generate-renditions-content-hub-search-bar}
 
