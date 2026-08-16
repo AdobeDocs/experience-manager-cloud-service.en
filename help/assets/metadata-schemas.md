@@ -36,13 +36,13 @@ To view and edit the properties page for an asset, follow these steps:
 ### Adding and mapping a custom metadata field {#adding-and-mapping-a-custom-metadata-field}
 
 1. Open the Metadata Schema editor for the schema you want to extend (**[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**).
-2. Add a new field (for example, a text box) and set its **[!UICONTROL Map to property value]**. The convention is **[!UICONTROL ./jcr:content/metadata/<propertyName>]**. Only the final segment after **[!UICONTROL /jcr:content/metadata/]** needs to be specified or changed; you do not need to construct the full path yourself.
+2. Add a new field, for example, a text box and set its **[!UICONTROL Map to property value]**. The convention is **[!UICONTROL ./jcr:content/metadata/<propertyName>]**. Only the final segment after **[!UICONTROL /jcr:content/metadata/]** needs to be specified or changed; you do not need to construct the full path yourself.
 3. Save the schema. The first time a schema is applied and saved against an asset, Adobe Experience Manager (AEM) automatically creates the mapped property on an asset's **[!UICONTROL jcr:content/metadata]** node. There is no need to manually create the corresponding node in CRXDE Lite.
 4. To promote the schema change to another environment, either deploy it through the standard Cloud Manager pipeline or repeat the same schema and edit manually in each target environment; a UI-created schema field is not automatically propagated between environments outside of a deployment.
 A common use case is a text field mapped to a custom property, for example, **[!UICONTROL ./jcr:content/metadata/cdnLink]** to store an external CDN or URL reference alongside the asset.
 
 
-### Reserved namespaces — do not extend these {#reserved-namespaces}
+### Reserved namespaces {#reserved-namespaces}
 
 Do not add custom properties under AEM or JCR's reserved namespaces: **[!UICONTROL dam]**, **[!UICONTROL cq]**, **[!UICONTROL granite]**, **[!UICONTROL sling]**, **[!UICONTROL jcr]**, **[!UICONTROL rep]**, **[!UICONTROL oak]**, **[!UICONTROL nt]**. These are used internally by AEM and the underlying repository; custom fields added under them are filtered out or hidden by AEM's internal mechanisms and by the Asset HTTP APIs, so they appear to silently fail to save or display. Use a unique custom namespace instead, for example, **[!UICONTROL <yourorg>.cdnLink]**.
 
@@ -52,8 +52,8 @@ Do not add custom properties under AEM or JCR's reserved namespaces: **[!UICONTR
 If a metadata value entered through the UI does not appear to persist:
 
 * Confirm the property is not mapped under one of the reserved namespaces above.
-* Confirm the schema was saved and applied to the correct folder or asset (schema assignment is per-folder through folder properties, not automatic).
-* For assets that existed before a metadata **[!UICONTROL profile]** (bulk-apply configuration) was created: profiles only auto-apply their properties (for example, approval status) to the newly uploaded assets. Existing assets in the folder do not retroactively pick up the profile's values. Use the **[!UICONTROL Reprocess]**  option to bulk-apply it to existing assets, or update them manually.
+* Confirm the schema is saved and applied to the correct folder or asset (schema assignment is per-folder through folder properties, not automatic).
+* For assets that existed before a metadata **[!UICONTROL profile]** (bulk-apply configuration) was created; profiles only auto-apply their properties (for example, approval status) to the newly uploaded assets. Existing assets in the folder do not retroactively pick up the profile's values. Use the **[!UICONTROL Reprocess]**  option to bulk-apply it to existing assets, or update them manually.
 * Confirm the field is actually present under **[!UICONTROL jcr:content/metadata]** on the asset node (for example, through CRXDE Lite or the Assets HTTP API) to distinguish a save failure from a display-only issue.
 
 ### Multi-language and integration considerations {#Multi-language-and-integration-considerations}
@@ -117,11 +117,12 @@ You can edit a newly added or existing metadata schema form. The metadata schema
 
 ### Permissions required to edit metadata schemas {#Permissions-required-to-edit-metadata-schemas}
 
-Creating or editing the custom metadata schemas (for example, as a non-admin DAM Librarian role) requires more than write access to the schema node itself:
+Creating or editing the custom metadata schemas, for example, as a non-admin DAM Librarian role requires more than write access to the schema node itself.
 
-* Recursive **[!UICONTROL jcr:read]** on **[!UICONTROL /conf]** and on **[!UICONTROL /conf/global/settings/dam/adminui-extension/metadataschema]**
-* **[!UICONTROL jcr:write]** on **[!UICONTROL /conf/global/settings/dam/adminui-extension]** and its **[!UICONTROL metadataschema]** subnode
-Granting write access only to the **[!UICONTROL metadataschema]** node without the accompanying recursive read on **[!UICONTROL /conf]** causes the schema editor to fail to display correctly for non-admin users. The same underlying **[!UICONTROL /conf]** read dependency also affects asset search/browse for read-only users. If a group has full read access to **[!UICONTROL /content/dam]** but not to **[!UICONTROL /conf/global/settings/dam/adminui-extension/metadataschema]**, the Assets UI cannot resolve the metadata schema needed to render results and throws a **[!UICONTROL NullPointerException]**, blocking the search entirely.
+* Recursive **[!UICONTROL jcr:read]** on **[!UICONTROL /conf]** and on **[!UICONTROL /conf/global/settings/dam/adminui-extension/metadataschema]**.
+* **[!UICONTROL jcr:write]** on **[!UICONTROL /conf/global/settings/dam/adminui-extension]** and its **[!UICONTROL metadataschema]** subnode.
+
+Granting write access only to the **[!UICONTROL metadataschema]** node without the accompanying recursive read on **[!UICONTROL /conf]** causes the schema editor to fail to display correctly for non administrators. The same underlying **[!UICONTROL /conf]** read dependency also affects the asset search or browse for read-only users. If a group has full read access to **[!UICONTROL /content/dam]**, but not to **[!UICONTROL /conf/global/settings/dam/adminui-extension/metadataschema]**, the Assets UI cannot resolve the metadata schema needed to render results and throws a **[!UICONTROL NullPointerException]**, blocking the search entirely.
 
 
 ### Components within the [!UICONTROL Build Form] tab {#components-within-the-build-form-tab}
