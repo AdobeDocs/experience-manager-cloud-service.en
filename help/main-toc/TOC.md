@@ -1177,7 +1177,7 @@ user-guide-title: AEM as a Cloud Service
   + [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md)
   + Agentic Capabilities in AEM {#agentic-capabilities}
     + [Overview](/help/ai-in-aem/agentic-capabilities/overview.md)
-    + Brand Experience Agent {#brand-experience}
+    + Brand Experience {#brand-experience}
       + [Brand Experience](/help/ai-in-aem/agentic-capabilities/brand-experience/overview.md)
       + Experience Production {#experience-production}
         + [Experience Production](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/overview.md)
