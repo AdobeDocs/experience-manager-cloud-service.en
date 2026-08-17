@@ -68,7 +68,7 @@ When configuring advanced networking features, the following restrictions apply.
 * Your network infrastructure must be in the same region as your production environment.
   * If your production environment has [extra publish regions](/help/implementing/cloud-manager/manage-environments.md#multiple-regions), create network infrastructure to mirror each additional region.
   * You are not allowed to create more network infrastructures than the maximum number of regions configured in your production environment.
-  * You can define as many network infrastructures as there are available regions in your production environment, but the new infrastructure must be of the same type as the previously created one.
+  * You can define as many network infrastructures as there are available regions in your production environment, but the new infrastructure must be of the same type as the previously created ones.
   * When creating multiple infrastructures, you are permitted to select from only those regions in which advanced networking infrastructure has not been created.
 
 ### Configure and enable advanced networking {#configuring-enabling}
