@@ -22,6 +22,16 @@ AEM provides a range of [agents](/help/ai-in-aem/agents/overview.md) to accelera
 * [Content Advisor Agent](/help/ai-in-aem/agents/content-advisor/overview.md)
 * [Governance Agent](/help/ai-in-aem/agents/governance/overview.md)
 
+<!-- CQDOC-23874 - needs adjustment? -->
+
+## AEM Agentic Capability use cases in Coworker {#aem-use-cases-in-coworker}
+
+From agents to skills, for more information see:
+
+* [Adobe Experience Manager skills in Coworker](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/use-cases/overview)
+
+* [Agentic Capabilities in AEM](/help/ai-in-aem/agentic-capabilities/overview.md)
+
 ## Generative AI in AEM {#generative-ai-in-aem}
 
 Adobe Generative AI for Adobe Experience Manager (AEM) as a Cloud Service enables brands to create high performance experiences with both copy and image generation all within the editing interface. With generative AI, you can autonomously create content that is:

@@ -27,11 +27,15 @@ You have three options to access agents.
 
 As new skills become available under early release, we will provide additional opportunities to participate and share feedback. We encourage you to watch [this page](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) for updates.
 
-<!-- CQDOC-23874 -->
+<!-- CQDOC-23874 - needs adjustment? -->
 
-### AEM use cases in Coworker {#aem-use-cases-in-coworker}
+### AEM Agentic Capability use cases in Coworker {#aem-use-cases-in-coworker}
 
-From agents to skills, see [Adobe Experience Manager skills in Coworker](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/use-cases/overview) for more information.
+From agents to skills, for more information see:
+
+* [Adobe Experience Manager skills in Coworker](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/use-cases/overview)
+
+* [Agentic Capabilities in AEM](/help/ai-in-aem/agentic-capabilities/overview.md)
 
 ## Brand Experience Agent {#brand-experience-agent}
 

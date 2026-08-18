@@ -1,13 +1,13 @@
 ---
 title: Experience Production Agentic Capabilities Overview
-description: Learn how the Experience Production Agentic Capabilities in AEM helps you accelerate your content creation and automatically orchestrate changes.
+description: Learn how the Experience Production Agentic Capabilities in AEM help you accelerate your content creation and automatically orchestrate changes.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 ---
 
 # Experience Production Agentic Capabilities {#experience-production-agentic-capabilites}
 
-The Experience Production Agentic Capability helps you accelerate your content creation and automatically orchestrate changes. 
+The Experience Production Agentic Capability of Adobe Enterprise Manager (AEM) as a Cloud Service collaborates with [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) to help you accelerate your content creation and automatically orchestrate changes. 
 
 ## Use cases {#use-cases}
 
