@@ -8,7 +8,7 @@ exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
 
 # Universal Editor Preview Release Notes {#preview}
 
-These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 30 July 2026.
+These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 20 August 2026.
 
 These **preview** release notes are provided as a convenience so you know what changes to the Universal Editor are upcoming and you can test them by [switching to your preview version.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -20,7 +20,9 @@ These **preview** release notes are provided as a convenience so you know what c
 >
 >The content of the actual release as well as the release date are subject to change.
 
+
 ## Upcoming Changes {#upcoming-improvements}
 
-* The publish panel now visually adapts more cleanly when [metadata is used to restrict the user's publishing options.](/help/implementing/universal-editor/customizing.md#disable-features)
-
+* Preserved table column widths when importing TinyMCE tables into TipTap, ensuring the widths survive the editing round trip.
+* Fixed focus detection for text fields using `url` or `email` value formats so they are correctly marked as busy.
+* Fixed select boxes omitting configured entries, ensuring all options with distinct values are displayed.

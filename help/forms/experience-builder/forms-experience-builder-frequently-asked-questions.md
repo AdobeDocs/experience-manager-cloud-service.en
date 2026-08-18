@@ -2,17 +2,11 @@
 title: Forms Experience Builder - Frequently asked questions
 description: Find answers to common questions about Forms Experience Builder, including setup, usage, troubleshooting, and best practices.
 feature: Edge Delivery Services
-hide: true
-index: false
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: f43c2586-9075-47dc-aa45-5ed2d2979b6d
 ---
 # Forms Experience Builder - Frequently asked questions
-
->[!NOTE]
->
-> The Forms Experience Builder is available under an early access program. Before you begin, please ensure you have requested and been granted access.
 
 This FAQ addresses the most common questions about Forms Experience Builder, from basic setup to advanced features and troubleshooting.
 
@@ -31,9 +25,24 @@ Forms Experience Builder is designed for:
 - **Developers** who want to leverage AI for rapid form prototyping
 - **Administrators** who need to configure and manage form creation workflows
 
+### When should I use Forms Experience Builder vs. a traditional form editor?
+
+Use Forms Experience Builder when you want to:
+
+- **Create forms faster** — Describe your form in natural language instead of drag-and-drop
+- **Include non-technical users** — Business users can build forms without coding knowledge
+- **Import existing documents** — Convert PDFs, images, and design mockups to interactive forms
+- **Add AI-powered features** — Use intelligent fields with pre-populated options (countries, job titles, etc.)
+
+Use a traditional editor when you need:
+
+- **Fine-grained control** — Pixel-perfect layouts and advanced CSS styling
+- **Low-code UX** — Visual component placement without conversational prompts
+- **Foundation Components** — The traditional form component library (contact Adobe for timeline)
+
 ### Is Forms Experience Builder available for all AEM Forms customers?
 
-Forms Experience Builder is currently available through an Early Access Program. Contact your Adobe representative to request access and learn about availability for your organization.
+Forms Experience Builder is now generally available for all AEM Forms as a Cloud Service customers. Contact your Adobe representative to learn about deployment options for your organization.
 
 ## Setup and configuration
 
@@ -41,7 +50,6 @@ Forms Experience Builder is currently available through an Early Access Program.
 
 Before using Forms Experience Builder, ensure you have:
 
-- Access to Forms Experience Builder through the Early Access Program
 - AEM Forms as a Cloud Service with Adaptive Forms Core Components
 - Basic understanding of form concepts and business requirements
 
