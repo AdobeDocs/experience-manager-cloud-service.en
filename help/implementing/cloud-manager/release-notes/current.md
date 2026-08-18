@@ -29,7 +29,7 @@ For more information, see [Git submodule support for external repositories](http
 
 <!--
 * **GitHub Apps for EDS sites**  
-    Cloud Manager now exposes an option for managing GitHub App connections on provisioned Edge Delivery Services (EDS) sites. This option allows teams and automation tools to configure GitHub App integrations programmatically, rather than through manual setup for each site. (CMGR-78197) <!-- new doc needed -->
+    Cloud Manager now exposes an option for managing GitHub App connections on provisioned Edge Delivery Services (EDS) sites. This option allows teams and automation tools to configure GitHub App integrations programmatically, rather than through manual setup for each site. (CMGR-78197) new doc needed
 -->
 
 * **Git submodule authentication for external repositories** 
