@@ -10,6 +10,10 @@ role: User, Leader
 
 Assets view notifications enable you to monitor the operations performed on the assets, folders, or collections available in the repository. You need to select and subscribe to the content for which the notifications are sent to you. You can also configure the categories for which the notifications are sent to you.
 
+>[!NOTE]
+>
+>The Notifications capability is compatible with Assets view and does not monitor the actions performed if you are using Admin view. 
+
 ## Subscribe to notification categories {#subscribe-to-notification-categories}
 
 You can choose and subscribe from a list of categories to receive notifications. Assets view sends the notifications to you only for the categories that you select from the available options:
