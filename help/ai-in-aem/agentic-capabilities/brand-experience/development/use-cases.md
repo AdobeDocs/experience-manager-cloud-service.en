@@ -8,3 +8,7 @@ role: User, Admin, Developer
 # Development Agentic Capabilities {#development-agentic-capabilities}
 
 The Development Agentic Capabilities .... tbc.
+
+## Use cases {#use-cases}
+
+A range of use-cases are covered.

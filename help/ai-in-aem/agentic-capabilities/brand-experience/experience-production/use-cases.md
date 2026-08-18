@@ -7,9 +7,11 @@ role: User, Admin, Developer
 
 # Experience Production Agentic Capabilities {#experience-production-agentic-capabilites}
 
-The Experience Production Agentic Capability helps you accelerate your content creation and automatically orchestrate changes.
+The Experience Production Agentic Capability helps you accelerate your content creation and automatically orchestrate changes. 
 
 ## Use cases {#use-cases}
+
+A range of use-cases are covered.
 
 | Use Case | Description | Skill(s) | Application | Sample Prompts |
 | --- | --- | --- | --- | --- |
