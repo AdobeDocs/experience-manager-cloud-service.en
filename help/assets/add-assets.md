@@ -410,26 +410,26 @@ Two authentication mechanisms exist for AEM API access, and they are not interch
 >
 >The older asset HTTP API for directly updating an asset's binary is deprecated. New integrations use the **[!UICONTROL Direct Binary Upload]** flow instead.
 
-The technical account used for API uploads must have explicit repository-level ACLs **[!UICONTROL jcr:read]** on **[!UICONTROL /content/dam]** and **[!UICONTROL rep:write]** (or **[!UICONTROL jcr:all]**) on the specific target subfolder, in addition to the correct credential type and administrator console product profile/group membership. A technical account can be correctly licensed and grouped and still receive 403 forbidden errors if the path-level ACLs have not been granted. Product-profile/group assignment and repository ACLs are independent and both required.
+The technical account used for API uploads must have explicit repository-level ACLs **[!UICONTROL jcr:read]** on **[!UICONTROL /content/dam]** and **[!UICONTROL rep:write]** (or **[!UICONTROL jcr:all]**) on the specific target subfolder, in addition to the correct credential type and administrator console product profile or group membership. A technical account can be correctly licensed and grouped and still receive 403 forbidden errors if the path-level ACLs have not been granted. Product-profile or group assignment and repository ACLs are independent and both required.
 
 ### File type handling and upload restrictions {#file-type-handling-and-upload-restrictions}
 
-* AEM does not impose default file-type restrictions on uploads; it is possible to upload files with executable extensions (for example, *.exe*, *.exe.pdf*) as asset renditions.
-* This is an expected behavior, and not a vulnerability that AEM does not render or execute uploaded active content or scripts, whether in the browser or on the server. Uploading an executable file hence does not by itself create a remote-code-execution risk under AEM's default security model. Organizations with stricter compliance requirements should apply their own upload validation/allow-listing if needed, since AEM does not enforce this natively.
+* AEM does not impose default file-type restrictions on uploads. It is possible to upload files with executable extensions (for example, *.exe*, *.exe.pdf*) as asset renditions.
+* This is an expected behavior, and not a vulnerability that AEM does not render or execute uploaded active content or scripts, whether in the browser or on the server. Uploading an executable file hence does not by itself create a remote-code-execution risk under AEM's default security model. Organizations with stricter compliance requirements should apply their own upload validation or allow-listing if needed, since AEM does not enforce this natively.
 * Supported file formats and MIME types for asset processing are documented separately, unsupported types are not fully processed (for example, they may not generate the expected renditions).
 
 ### Upload reliability best practices {#upload-reliability-best-practices}
 
 * For large or specialized asset types such as video, PDF, GIF, follow the recommended file size limits, encoding, and preferred formats to avoid platform performance impact during upload, processing, and preview generation.
-* Prefer the supported upload APIs/UI flows over ad hoc folder-level bulk uploads for business-critical files. Folder-level drag-and-drop uploads have been reported to occasionally result in file corruption; if this occurs, capture the exact error/behavior (screenshots, HAR/network logs) immediately, since the underlying cause is often environment or file-specific and difficult to diagnose after the fact without that evidence.
+* Prefer the supported upload APIs or UI flows over ad hoc folder-level bulk uploads for business-critical files. Folder-level drag-and-drop uploads have been reported to occasionally result in file corruption; if this occurs, capture the exact error or behavior (screenshots, HAR or network logs) immediately, since the underlying cause is often environment or file-specific and difficult to diagnose after the fact without that evidence.
 
 ## Troubleshooting checklist for upload failures {#troubleshooting-checklist-for-upload-failures}
 
-1. **[!UICONTROL 403 Forbidden on API upload]**: confirm the credential type. OAuth S2S from Adobe Developer console is not supported for asset upload API; use the Service Credentials (JWT) from the AEM Developer console instead.
-2. **[!UICONTROL 403 Forbidden despite correct credentials and group membership]**: confirm the technical account has explicit **[!UICONTROL jcr:read]** on **[!UICONTROL /content/dam]** and **[!UICONTROL rep:write/jcr:all]** on the specific target folder. Group/profile membership does not substitute for the folder-level ACLs.
-3. **[!UICONTROL Upload succeeds but asset fails to appear / binary looks corrupted]**: rule out folder-level bulk upload as the ingestion method; retry through the standard upload API/UI and capture logs if it recurs.
-4. **[!UICONTROL Security review flags unrestricted file upload]**: clarify that AEM does not execute uploaded active content server-side or in-browser by default, so this is an expected platform behavior rather than a defect, unless your organization requires additional upload-time validation.
-5. **[!UICONTROL Concerned about presigned URL exposure]**: confirm that the URL was used within its short validity window and that asset finalization still required a separate authenticated call with a valid **[!UICONTROL uploadToken]**. This is what limits the blast radius of a leaked URL.
+1. **[!UICONTROL 403 Forbidden on API upload]**: Confirm the credential type. OAuth S2S from Adobe Developer console is not supported for asset upload API. Use the Service Credentials (JWT) from the AEM Developer console instead.
+2. **[!UICONTROL 403 Forbidden despite correct credentials and group membership]**: Confirm the technical account has explicit **[!UICONTROL jcr:read]** on **[!UICONTROL /content/dam]** and **[!UICONTROL rep:write/jcr:all]** on the specific target folder. Group or profile membership does not substitute for the folder-level ACLs.
+3. **[!UICONTROL Upload succeeds but asset fails to appear or binary looks corrupted]**: Rule out folder-level bulk upload as the ingestion method; retry through the standard upload API or UI and capture logs if it recurs.
+4. **[!UICONTROL Security review flags unrestricted file upload]**: Clarify that AEM does not execute uploaded active content server-side or in-browser by default, so this is an expected platform behavior rather than a defect, unless your organization requires additional upload-time validation.
+5. **[!UICONTROL Concerned about presigned URL exposure]**: Confirm that the URL was used within its short validity window and that asset finalization still required a separate authenticated call with a valid **[!UICONTROL uploadToken]**. This is what limits the blast radius of a leaked URL.
 
 
 ## Tips, best practices, and limitations {#tips-limitations}
