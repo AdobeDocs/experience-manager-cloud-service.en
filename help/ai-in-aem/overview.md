@@ -10,18 +10,6 @@ exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
 
 Artificial Intelligence (AI) is an integral part of Adobe Experience Manager as a Cloud Service, supporting users finding information or generating experiences.
 
-## AI Assistant {#ai-assistant}
-
-The [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/ai-assistant-in-aem.md) offers a conversational interface designed to streamline finding answers to your AEM-related queries.
-
-## Agentic AI in AEM {#agentic-ai-in-aem}
-
-AEM provides a range of [agents](/help/ai-in-aem/agents/overview.md) to accelerate your content creation and automatically orchestrate changes:
-
-* [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) 
-* [Content Advisor Agent](/help/ai-in-aem/agents/content-advisor/overview.md)
-* [Governance Agent](/help/ai-in-aem/agents/governance/overview.md)
-
 <!-- CQDOC-23874 - needs adjustment? -->
 
 ## AEM Agentic Capability use cases in Coworker {#aem-use-cases-in-coworker}
@@ -31,6 +19,18 @@ From agents to skills, for more information see:
 * [Adobe Experience Manager skills in Coworker](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/use-cases/overview)
 
 * [Agentic Capabilities in AEM](/help/ai-in-aem/agentic-capabilities/overview.md)
+
+## Agentic AI in AEM {#agentic-ai-in-aem}
+
+AEM provides a range of [agents](/help/ai-in-aem/agents/overview.md) to accelerate your content creation and automatically orchestrate changes:
+
+* [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) 
+* [Content Advisor Agent](/help/ai-in-aem/agents/content-advisor/overview.md)
+* [Governance Agent](/help/ai-in-aem/agents/governance/overview.md)
+
+## AI Assistant {#ai-assistant}
+
+The [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/ai-assistant-in-aem.md) offers a conversational interface designed to streamline finding answers to your AEM-related queries.
 
 ## Generative AI in AEM {#generative-ai-in-aem}
 
