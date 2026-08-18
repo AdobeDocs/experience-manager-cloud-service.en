@@ -112,7 +112,8 @@ If your AEM and Azure Storage account are in different regions, the 403 error in
 
 If your deployment falls into the same-region case described above, IP allowlisting alone cannot secure your Azure Storage account. The options below start with Adobe's preferred long-term direction, then move to workarounds you can use today. Each option has a different setup effort and trade-off.
 
-<!-- ### Private Link
+<!--
+### Private Link
 
 Adobe's long-term plan for Advanced Networking is to add support for Azure Private Link. This would let you create a private endpoint on your dedicated VNET. You could then set the storage account to accept traffic only from that private endpoint. This would be the most reliable approach for customers who need tightly controlled, private Azure Storage access for Forms and similar integrations.
 
@@ -142,7 +143,8 @@ You can place Azure Front Door or Azure CDN in front of the storage account. The
 >
 > This is a workaround for specific situations, not a universal fix. It adds the cost and effort of running Front Door or CDN. It also does not help if the storage account is in the same Azure region as your Advanced Networking proxy. Same-region internal routing can still apply at that layer.
 
-<!-- ## Choosing Between the Azure Blob Storage Connector and Submit to REST Endpoint
+<!--
+## Choosing Between the Azure Blob Storage Connector and Submit to REST Endpoint
 
 If your destination is Azure Blob Storage, use the [Azure Blob Storage connector](/help/forms/configure-submit-action-azure-blob-storage.md) instead of building a custom integration. It is built for this exact purpose. It handles Shared Key authentication for you, and it is the connector that the network guidance in this article applies to.
 
