@@ -20,7 +20,7 @@ In practice, some customers still see a `403 AuthorizationFailure` error, even a
 
 This guidance is for you if your organization handles regulated data, such as healthcare or financial data, and needs Azure Storage to block all traffic except from known IPs. It applies whether you are setting up a new integration and want to plan the network path correctly from the start, or you are troubleshooting submissions that are already failing after you set up a Dedicated Egress IP. Understanding how the routing works can save you time. Otherwise, you may allowlist an IP that is never actually used for same-region traffic, and then wrongly blame the connector or its authentication.
 
-If you have already built a custom API layer or middleware, such as an Azure Function App, in front of Azure Storage, most of the network guidance below still applies to you, but you may want to jump straight to [Choosing Between the Azure Blob Storage Connector and Submit to REST Endpoint](#choosing-between-the-azure-blob-storage-connector-and-submit-to-rest-endpoint).
+If you have already built a custom API layer or middleware, such as an Azure Function App, in front of Azure Storage, most of the network guidance below still applies to you.
 
 Here is how this works at a high level. AEM Forms sends submission data to Azure Blob Storage over HTTPS. It uses the Dedicated Egress IP as the fixed source address for that outbound connection. Azure Storage's firewall then checks this source IP against its allowlist before it accepts or rejects the request.
 
@@ -112,13 +112,14 @@ If your AEM and Azure Storage account are in different regions, the 403 error in
 
 If your deployment falls into the same-region case described above, IP allowlisting alone cannot secure your Azure Storage account. The options below start with Adobe's preferred long-term direction, then move to workarounds you can use today. Each option has a different setup effort and trade-off.
 
-### Private Link
+<!-- ### Private Link
 
 Adobe's long-term plan for Advanced Networking is to add support for Azure Private Link. This would let you create a private endpoint on your dedicated VNET. You could then set the storage account to accept traffic only from that private endpoint. This would be the most reliable approach for customers who need tightly controlled, private Azure Storage access for Forms and similar integrations.
 
 >[!NOTE]
 >
 > Private Link support for Advanced Networking is planned, but it is not available yet. Contact your Adobe account team to check its current status before you design your architecture around it.
+-->
 
 ### VPN and Private Endpoint
 
@@ -141,11 +142,12 @@ You can place Azure Front Door or Azure CDN in front of the storage account. The
 >
 > This is a workaround for specific situations, not a universal fix. It adds the cost and effort of running Front Door or CDN. It also does not help if the storage account is in the same Azure region as your Advanced Networking proxy. Same-region internal routing can still apply at that layer.
 
-## Choosing Between the Azure Blob Storage Connector and Submit to REST Endpoint
+<!-- ## Choosing Between the Azure Blob Storage Connector and Submit to REST Endpoint
 
 If your destination is Azure Blob Storage, use the [Azure Blob Storage connector](/help/forms/configure-submit-action-azure-blob-storage.md) instead of building a custom integration. It is built for this exact purpose. It handles Shared Key authentication for you, and it is the connector that the network guidance in this article applies to.
 
 Use [Submit to REST Endpoint](/help/forms/configure-submit-action-restpoint.md) when your submission target is not Azure Blob Storage itself, but a REST API layer that you or your team built in front of it. For example, this could be an Azure Function App or similar middleware that receives the submission and writes it to Blob Storage for you. Submit to REST Endpoint lets you call any REST API. However, you are responsible for setting up its authentication and any network requirements at that endpoint yourself.
+-->
 
 ## Decision Summary
 
