@@ -195,28 +195,28 @@ Moving an asset or Content Fragment in Adobe Experience Manager (AEM) requires m
 
 |Operation|Minimum permission needed|What happens if missing|
 |--- |--- |--- |
-|Move a folder/asset within the Digital Asset Management (DAM)|Write on the source, destination, and a destination folder explicitly selected in the **[!UICONTROL Select Destination]** dialog box.|The **[!UICONTROL Move]** button stays disabled until a destination folder checkbox is actually checked. This is a common false alarm reported as **[!UICONTROL Move button not working]**.|
-|Move/copy an asset or Content Fragment that triggers the replication|**[!UICONTROL replicate]** permission|The move/copy operation starts a workflow that pauses in a pending state awaiting administrator approval, rather than failing with an error.|
-|View a folder marked **[!UICONTROL private]**|You must own the folder, or you must be an explicit member (owner/editor/viewer) of that private folder.|Private folder settings **[!UICONTROL override standard ACLs]**: a user/group with **[!UICONTROL jcr:read]** access can still see the folder, but sharing is restricted to owners/members only.|
-|Use **[!UICONTROL Share Link]** on a private folder|Explicit membership (owner/editor/viewer) on the private folder, in addition to **[!UICONTROL jcr:modifyAccessControl]**/edit ACL and link share configuration.|Plain read access is not sufficient, a group with **[!UICONTROL jcr:read]** on a folder that is later marked private loses the ability to generate share links even though they can still browse the folder.|
+|Move a folder or asset within the Digital Asset Management (DAM)|Write on the source, destination, and a destination folder explicitly selected in the **[!UICONTROL Select Destination]** dialog box.|The **[!UICONTROL Move]** button stays disabled until a destination folder checkbox is actually checked. This is a common false alarm reported as **[!UICONTROL Move button not working]**.|
+|Move or copy an asset or Content Fragment that triggers the replication|**[!UICONTROL replicate]** permission|The move or copy operation starts a workflow that pauses in a pending state awaiting administrator approval, rather than failing with an error.|
+|View a folder marked **[!UICONTROL private]**|You must own the folder, or you must be an explicit member (owner or editor or viewer) of that private folder.|Private folder settings **[!UICONTROL override standard ACLs]**: a user or group with **[!UICONTROL jcr:read]** access can still see the folder, but sharing is restricted to owners or members only.|
+|Use **[!UICONTROL Share Link]** on a private folder|Explicit membership (owner or editor or viewer) on the private folder, in addition to **[!UICONTROL jcr:modifyAccessControl]** or edit ACL and link share configuration.|Plain read access is not sufficient, a group with **[!UICONTROL jcr:read]** on a folder that is later marked private loses the ability to generate share links even though they can still browse the folder.|
 
 ### Troubleshooting stuck/pending move-replicate workflows {#troubleshooting-stuck-pending}
 
-1. Identify the user who initiated the move/copy and check whether they hold the replicate permission on the target path.
-2. If they do not, either grant the replicate permission (if that is the intended long-term access level) or get an administrator who has the replicate permission to approve/complete the pending workflow to unblock it.
+1. Identify the user who initiated the move or copy and check whether they hold the replicate permission on the target path.
+2. If they do not, either grant the replicate permission (if that is the intended long-term access level) or get an administrator who has the replicate permission to approve or complete the pending workflow to unblock it.
 3. Do not treat a stuck workflow as a system defect before checking this. This is the standard AEM behavior enforcing the replicate permission gate, and the underlying content is not corrupted or lost.
 
 ### Troubleshooting the disabled Move button {#troubleshooting-move-button}
 
-If the **[!UICONTROL Move]** action in the Assets UI is grayed out or unresponsive, confirm that a destination folder checkbox has actually been selected (checked) in the **[!UICONTROL Select Destination]** dialog box. The button only activates once a specific destination is confirmed, and this step is easy to miss.
+If the **[!UICONTROL Move]** action in the Assets UI is grayed out or unresponsive, confirm that a destination folder checkbox has actually been selected or checked in the **[!UICONTROL Select Destination]** dialog box. The button only activates once a specific destination is confirmed, and this step is easy to miss.
 
 ### Private folders versus standard ACLs {#private-folders-versus-standard-ACLs}
 
-Private folders use a membership-based model that layers on top of (and effectively overrides) the standard ACL-based sharing for the **[!UICONTROL Share Link]** feature specifically. The read access through group ACL still lets members browse a private folder, but only the folder's owner and explicitly added members can generate shared links or otherwise use sharing features on it. When investigating why this group can no longer share a folder, check whether the folder was recently converted to private. That explains restricted sharing even with unchanged group ACLs.
+Private folders use a membership-based model that layers on top of and effectively overrides the standard ACL-based sharing for the **[!UICONTROL Share Link]** feature specifically. The read access through group ACL still lets members browse a private folder, but only the folder's owner and explicitly added members can generate shared links or otherwise use sharing features on it. When investigating why this group can no longer share a folder, check whether the folder was recently converted to private. That explains restricted sharing even with unchanged group ACLs.
 
 ### Folder structure and performance guidance {#folder-structure-and-performance-guidance}
 
-AEM does not enforce a hard technical limit on the number of subfolders or assets under a single folder. However, for performance and usability, keep the number of direct children (subfolders and assets combined) under a single folder to roughly 1,000. Folders with several thousand direct children can show degraded performance for listing, moving, and workflow operations. If a folder is expected to grow beyond this, introduce additional grouping/subfolder levels proactively before performance issues appear.
+AEM does not enforce a hard technical limit on the number of subfolders or assets under a single folder. However, for performance and usability, keep the number of direct children, that is, subfolders and assets combined under a single folder to roughly 1,000. Folders with several thousand direct children can show degraded performance for listing, moving, and workflow operations. If a folder is expected to grow beyond this, introduce additional grouping or subfolder levels proactively before performance issues appear.
 
 ### Known UI quirk: folder titles containing slashes {#known-UI-quirk}
 
@@ -226,7 +226,7 @@ Avoid using slashes (/) in folder titles. A slash in a folder title can interfer
 
 1. **[!UICONTROL Move/copy workflow stuck in pending]**: Check the initiating user's replicate permission; get approval from an administrator if it is expected to remain pending, or grant replicate access if appropriate.
 2. **[!UICONTROL Move button disabled]**: Confirm a destination folder is actually checked or selected in the destination picker.
-3. **[!UICONTROL Group can see a folder but cannot share it]**: Check whether the folder is marked private. Private folders restrict sharing to owners/explicit members regardless of the read ACLs.
+3. **[!UICONTROL Group can see a folder but cannot share it]**: Check whether the folder is marked private. Private folders restrict sharing to owners or explicit members regardless of the read ACLs.
 4. **[!UICONTROL Column View shows a folder as empty when it has children]**: Check for slashes in the child folder titles.
 5. **[!UICONTROL Folder operations feel slow at scale]**: Count direct children under the folder; if it is in thousands, plan an additional subfolder grouping.
 
