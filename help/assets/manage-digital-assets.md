@@ -189,9 +189,9 @@ The other properties and metadata information is retained. A partial copy is not
    If you do not update references, they continue to point to the previous path of the asset. If you adjust the references, they are updated to the new asset path.
 
 
-### Permission model for move/publish operations {#permission-model}
+### Permission model for move or publish operations {#permission-model}
 
-Moving an asset or Content Fragment in Adobe Experience Manager (AEM) requires more than write access to the source and destination folders; it also requires **[!UICONTROL replicate]** permission for the operation to complete. If you lack replicate access, the move does not fail outright; it enters a **[!UICONTROL pending approval]** workflow state and waits for an administrator (a user who does have the replicate permission) to approve or complete it. This is expected, by-design behavior, and not a defect. AEM intentionally gates replication-triggering actions behind the replicate permission so that only authorized users can push the content changes.
+Moving an asset or Content Fragment in Adobe Experience Manager (AEM) requires more than write access to the source and destination folders; it also requires **[!UICONTROL replicate]** permission for the operation to complete. If you lack replicate access, the move does not fail outright; it enters a **[!UICONTROL pending approval]** workflow state and waits for an administrator, that is, a user who does have the replicate permission to approve or complete it. This is expected, by-design behavior, and not a defect. AEM intentionally gates replication-triggering actions behind the replicate permission so that only authorized users can push the content changes.
 
 |Operation|Minimum permission needed|What happens if missing|
 |--- |--- |--- |
@@ -200,7 +200,7 @@ Moving an asset or Content Fragment in Adobe Experience Manager (AEM) requires m
 |View a folder marked **[!UICONTROL private]**|You must own the folder, or you must be an explicit member (owner or editor or viewer) of that private folder.|Private folder settings **[!UICONTROL override standard ACLs]**: a user or group with **[!UICONTROL jcr:read]** access can still see the folder, but sharing is restricted to owners or members only.|
 |Use **[!UICONTROL Share Link]** on a private folder|Explicit membership (owner or editor or viewer) on the private folder, in addition to **[!UICONTROL jcr:modifyAccessControl]** or edit ACL and link share configuration.|Plain read access is not sufficient, a group with **[!UICONTROL jcr:read]** on a folder that is later marked private loses the ability to generate share links even though they can still browse the folder.|
 
-### Troubleshooting stuck/pending move-replicate workflows {#troubleshooting-stuck-pending}
+### Troubleshooting stuck or pending move-replicate workflows {#troubleshooting-stuck-pending}
 
 1. Identify the user who initiated the move or copy and check whether they hold the replicate permission on the target path.
 2. If they do not, either grant the replicate permission (if that is the intended long-term access level) or get an administrator who has the replicate permission to approve or complete the pending workflow to unblock it.
