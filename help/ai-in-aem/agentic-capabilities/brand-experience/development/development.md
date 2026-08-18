@@ -5,6 +5,6 @@ feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 ---
 
-# Development Agentic Capabilities {#development-agentic-capabilites}
+# Development Agentic Capabilities {#development-agentic-capabilities}
 
-The Development Agentic Capabilites .... tbc.
+The Development Agentic Capabilities .... tbc.
