@@ -59,7 +59,7 @@ The toolbar configuration controls which editing options are available in the UI
 {
   "toolbar": {
     // Text formatting options
-    "format": ["bold", "italic", "underline", "strike", "text_color"],
+    "format": ["bold", "italic", "underline", "strike", "code_inline", "text_color"],
     // Text alignment options
     "alignment": ["left", "center", "right", "justify"],
     // Text direction options, right-to-left or left-to-right
