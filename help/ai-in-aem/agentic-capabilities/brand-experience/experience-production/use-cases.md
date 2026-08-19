@@ -21,7 +21,36 @@ A range of use-cases are covered.
 | Discovery Content Fragments | Find content fragments using natural language. Supports both semantic (intent) based or keyword based search. | `aem-sites-contentfragments-discover` | Adobe Experience Manager (AEM) | find Content Fragments under /content/dam/agentic-cf whose calories field is set to 150  |
 | Go from Figma to Visual Content Fragment - technical | Import designs directly from Figma into Adobe Experience Manager using natural language. The skill automatically creates the required content model, content fragment, assets, and visualization template, enabling business users to move from design to web-ready content in minutes without manual setup. | `aem-sites-visualcontentfragments-create` | Adobe Experience Manager (AEM) | Import from &lt;figma path&gt;<br><br>`import-https-www.figma.com-design-DbNX47efHBu8LaDUWmdvb5-Frescopa-Coffee-node-id-2026-08-06 (2).txt` |
 | Inspect Content Fragments from a Couple of Perspectives (references, semantic readiness, publish readiness) | Optimize and manage Content Fragments for AI-powered experiences through readiness checks that include semantic analysis and impact assessment. Evaluates content quality, metadata, structure, schema compliance, and references to surface issues affecting search, publishing, translation, or headless delivery. Analyzes dependencies across Content Fragments, collections, assets, models, and pages to identify risks and recommend safe actions. Finally it provides assessments with guided, human-reviewed remediation steps. | `aem-sites-contentfragments-inspect` | Adobe Experience Manager (AEM) |Run a health check on the folder /content/dam/agentic-cf/beverages<br><br>Is content fragment  /content/dam/agentic-cf/beverages/cafe-de-olla ready to publish?<br><br>is folder "/content/dam/gw26summer/semantic-ready" ready for semantic search?<br><br>Is this Content Fragment /content/dam/agentic-cf/muster/americano being referenced by other fragments? What will happen if I delete it?<br><br>Show me the dependency tree for /content/dam/agentic-cf/muster/cocktails-and-specialty<br><br>What are the implications if I modify CF Model /conf/aemshowcase/Agentic-CF/muster/settings/dam/cfm/models/beverage-product? Could it break or alter existing CFs? If yes, which ones?<br><br>Which are the CFs I should think of archiving (not in use) under /content/dam/agentic-cf/muster?<br><br>What content fragments are using the picture content/dam/shared/boilerplate-frescopa/campaigns/3cups.png? |
-|  |  |  |  |  |
-| Read/write AEM form content | Creating a new Adaptive Form or changing its structure: add/edit/delete/move fields and panels, fragments, templates and themes, submit action, prefill, schema binding. | `aem-forms-adaptiveform-author` | Adobe Experience Manager (AEM) | Create a new form based on attached brief / screenshot<br><br>Now bring this form in line with attached guidelines - the standard wizard structure and approved wording<br><br>Create a coffee subscription form with personal info, subscription preferences. Keep only relevant fields mandatory, use wizard layout for easier navigation. |
-| Create form | Generate a new Adaptive Form from a plain-language description, an attached brief, an image, or a PDF | Form creation | Adobe Experience Manager (AEM) | "Create an employee onboarding form"<br><br>"Create a form using the attached brief (image or pdf)" |
-| Update form | Modify an existing form — add/edit fields, adjust simple layout, configure submit actions, or apply changes from an attached guidelines document | Form creation | Adobe Experience Manager (AEM) | "Add Middle Name field below First Name field"<br><br>"Put First Name and Last Name fields in a 2 column layout, 50/50"<br><br>"Configure the form to send data to a REST endpoint"<br><br>"Update this form to match the attached guidelines document" |
+| Create form using natural language intent | Generate a new Adaptive Form from a plain-language description of the fields and purpose | Form creation | Adobe Experience Manager (AEM) | "Create an employee onboarding form" |
+| Create form using attached brief | Generate a form from an uploaded requirements brief describing fields and flow | Form creation | Adobe Experience Manager (AEM) | "Create a form using the attached brief" |
+| Create form using attached image/screenshot | Generate a form by interpreting a screenshot or image of a reference form or mockup | Form creation | Adobe Experience Manager (AEM) | "Create a form as per the attached image" |
+| Create form using attached PDF | Generate a form by importing an existing PDF form | Form creation | Adobe Experience Manager (AEM) | "Create a form from this attached PDF" |
+| Update form — add/edit fields | Add, edit, or remove fields on an existing form | Form creation | Adobe Experience Manager (AEM) | "Add Middle Name field below First Name field" |
+| Update form layout | Adjust the layout of an existing form — field order, column span, panel structure | Form creation | Adobe Experience Manager (AEM) | "Put First Name and Last Name fields in a 2 column layout, 50/50" |
+| Update form using attached guidelines | Revise an existing form to align with an uploaded guidelines document | Form creation | Adobe Experience Manager (AEM) | "Update this form to match the attached guidelines document" |
+| Configure form submit action | Set up how a form submits — REST endpoint, email, etc. | Form creation | Adobe Experience Manager (AEM) | "Configure the form to send data to a REST endpoint" |
+| Embed form onto a site's page | Place an existing or newly created form onto a designated AEM Sites page (supported on Edge Delivery Services pages only) | Form creation | Adobe Experience Manager (AEM) | "Embed this form on the homepage of our site" |
+
+<!--
+## Known limitations {#known-limitations}
+
+Based on a team bug bash (~191 scripted scenarios), cross-checked against independent verification. Point-in-time snapshot as of 2026-08-14 — re-verify against ongoing testing before publishing.
+
+Confirmed working:
+
+- All four creation paths: natural-language intent, attached brief, attached screenshot, attached PDF
+- Simple layout edits: column span/width, field and panel reordering, multi-column layout within a panel
+- Guidelines-file-driven updates (e.g., a markdown guidelines doc)
+- Site-page embedding — Edge Delivery Services (EDS) only
+- Simple field-level rules (show/hide) on non-fragment fields
+- REST and email submit to a known endpoint
+
+Confirmed broken / not yet supported:
+
+1. Structural layout conversion (flat form to wizard/accordion/tabs) is additive-only — it adds a new, empty structure alongside existing content instead of migrating it. Even a wizard built from scratch has no real multi-step or collapse behavior.
+2. Site-page embedding on Core Components pages is not supported (EDS only).
+3. Form Fragment blindness — fields living inside a referenced Form Fragment are invisible to rename, rules, colspan/styling, and field-count introspection. Largest cluster of bugs in the bash. High risk for any form built on reusable fragments/panels.
+4. No post-creation branding/theme workflow — theme is only selectable at creation time; no way to change brand color, font, or add a logo afterward.
+5. Repeatable fields/panels — backend properties (min/max, repeatable flag) can be set correctly, but the "add another instance" gesture is unreliable in the previewer.
+6. Minor: checkbox creation intermittently fails (missing checked/unchecked values).
+-->
