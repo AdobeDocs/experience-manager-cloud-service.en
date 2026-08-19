@@ -28,6 +28,7 @@ A range of use-cases are covered.
 | Update form — add/edit fields | Add, edit, or remove fields on an existing form | Form creation | Adobe Experience Manager (AEM) | "Add Middle Name field below First Name field" |
 | Update form layout | Adjust the layout of an existing form — field order, column span, panel structure | Form creation | Adobe Experience Manager (AEM) | "Put First Name and Last Name fields in a 2 column layout, 50/50" |
 | Update form using attached guidelines | Revise an existing form to align with an uploaded guidelines document | Form creation | Adobe Experience Manager (AEM) | "Update this form to match the attached guidelines document" |
+| Add business logic | Create conditional logic, show/hide rules, field dependencies, and define validation rules | Form creation | Adobe Experience Manager (AEM) | "Show the Company field only when Employee Type is Contractor"<br><br>"Make the Email field required and validate it as an email address"<br><br>"Hide the Shipping Address section when Same as Billing Address is checked" |
 | Configure form submit action | Set up how a form submits — REST endpoint, email, etc. | Form creation | Adobe Experience Manager (AEM) | "Configure the form to send data to a REST endpoint" |
 | Embed form onto a site's page | Place an existing or newly created form onto a designated AEM Sites page (supported on Edge Delivery Services pages only) | Form creation | Adobe Experience Manager (AEM) | "Embed this form on the homepage of our site" |
 
