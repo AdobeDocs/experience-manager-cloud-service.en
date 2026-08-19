@@ -37,7 +37,8 @@ To pull code from any private Git repository already onboarded in Cloud Manager,
 
 Each commit on any branch now triggers an automatic sync. Use **Sync code** again whenever a full manual sync is required.
 
-<!-- REMOVED AS PER CQDOC-23912 ON AUGUST 19, 2026
+<!-- 
+REMOVED AS PER CQDOC-23912 ON AUGUST 19, 2026
 ## Authenticate git clone requests {#authenticate-git-clone-requests}
 
 You can clone your [!DNL Bring Your Own Git] repository from Cloud Manager using either an IMS token or the byogit secret that Cloud Manager generates when you configure the site. Both credentials authenticate against the clone endpoint, so you can use the secret that helix-admin already stores for [!DNL Edge Delivery Services] code sync.
