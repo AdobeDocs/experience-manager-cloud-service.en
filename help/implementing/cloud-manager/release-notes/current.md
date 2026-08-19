@@ -1,48 +1,52 @@
 ---
-title: Release Notes for Cloud Manager 2026.7.0
-description: Learn about the release of Cloud Manager 2026.7.0 in Adobe Experience Manager as a Cloud Service.
+title: Release Notes for Cloud Manager 2026.8.0
+description: Learn about the release of Cloud Manager 2026.8.0 in Adobe Experience Manager as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 ---
-# Release notes for Cloud Manager 2026.7.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release notes for Cloud Manager 2026.8.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Learn about the release of Cloud Manager 2026.7.0 in AEM (Adobe Experience Manager) as a Cloud Service.
+Learn about the release of Cloud Manager 2026.8.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
 See also the [current release notes for Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Release dates {#release-date}
 
-The release date for Cloud Manager 2026.7.0 in AEM as a Cloud Service is Thursday, July 9, 2026. 
+The release date for Cloud Manager 2026.8.0 in AEM as a Cloud Service is Thursday, August 6, 2026. 
 
-The next planned release is Thursday, August 6, 2026.
+The next planned release is Thursday, September 3, 2026.
+
+
+### Git submodule authentication for external repositories
+
+If your external Git repository (Bring Your Own Git) uses Git submodules, Cloud Manager now automatically authenticates submodule fetches from other repositories in the same organization during pipeline builds. Previously, submodule repositories not individually registered in Cloud Manager failed authentication, so those fetches failed. Credentials are handled server-side and are never exposed to the build environment. No configuration is required, and existing pipelines continue to run without changes.
+
+For more information, see [Git submodule support for external repositories](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/git-submodules#external-repositories).
 
 
 ## New features - Cloud Manager {#cloud-manager-whats-new}
 
-* **Bring Your Own Git (BYOG) — secret-based authentication for Git clone**
+<!--
+* **GitHub Apps for EDS sites**  
+    Cloud Manager now exposes an option for managing GitHub App connections on provisioned Edge Delivery Services (EDS) sites. This option allows teams and automation tools to configure GitHub App integrations programmatically, rather than through manual setup for each site. (CMGR-78197) new doc needed
+-->
 
-    You can now authenticate Git clone requests to your [!DNL Bring Your Own Git] repository using the byogit secret that Cloud Manager generates, in addition to an IMS token. This functionality lets [!DNL Edge Delivery Services] customers use the same credential that helix-admin already stores for code sync. Existing IMS-authenticated clone workflows are unaffected.
+* **Git submodule authentication for external repositories** 
+    If your external Git repository (Bring Your Own Git) uses Git submodules, Cloud Manager now automatically authenticates submodule fetches from other repositories in the same organization during pipeline builds. Previously, submodule repositories not individually registered in Cloud Manager failed authentication, so those fetches failed. Credentials are handled server-side and are never exposed to the build environment. No configuration is required, and existing pipelines continue to run without changes. (CMGR-76737) <!-- new doc already added for this release -->
+
+    For more information, see [Git Submodule Support for Adobe Repositories](/help/implementing/cloud-manager/managing-code/git-submodules.md#external-repositories).
+
+* **Content sync API returns an Execution-Id for tracking**  
+    Content sync actions triggered through the Cloud Manager API now return an Execution-Id header in the response. Customers can use this identifier to track and correlate the status of a specific content sync operation, making it easier to monitor sync activity from external tooling. (CMGR-78234) <!-- no new doc needed -->
+
+* **GitLab External Git (BYOG) required a manual Sync Code step for new branches**
+    Customers using GitLab with External Git (BYOG) manually triggered a Sync Code action in Cloud Manager before the Edge Delivery Services webhook picked up a new branch. New branches are now synced automatically, removing the need for this manual step. (CMGR-77786) <!-- no new doc needed -->
     
-    See [Authenticate git clone requests](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md#authenticate-git-clone-requests).
 
-* **VPN Network Infrastructure — BGP routing and multiple connections**  
-    The Advanced Networking VPN network infrastructure API now supports BGP (Border Gateway Protocol) dynamic routing alongside the existing static routing. Teams can configure BGP per connection by providing the customer-side BGP Autonomous System Number and peering address; Cloud Manager handles route learning dynamically — no static prefixes required.
 
-    The previous limit of one VPN connection per infrastructure has also been removed. Multiple connections are now supported within the same infrastructure, and static and BGP connections can coexist. This gives enterprise networking teams more flexibility when designing VPN topologies for AEM Cloud Service environments.
 
-* **Improved build performance with module caching**
-    A new build model compiles only changed modules (rather than the entire repository) using module-level caching to improve build performance. It applies to production pipelines. You control which production pipelines use **Smart Build**.
 
-    For more information, see the following:
-
-    * [About using Smart Build in a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#about-smart-build-production-pipeline) and [About using Smart Build in a non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build-non-production-pipeline)
-    * [Add a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md##adding-production-pipeline) and [Add a non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#configuring-non-production-pipelines).
-
-* **Content Copy: Cross Program and Forward Flow**  
-    Cloud Manager **Content Copy**, which lets teams copy content between AEM environments without a deployment, includes two capabilities available to all programs. Cross Program support allows content to be copied across different Cloud Manager programs, not just within the same one. Forward Flow removes the directional restriction, allowing content to be copied from any environment to any other — including from lower environments upward.
-
-    For details, see [The Content Copy Tool](/help/implementing/developing/tools/content-copy.md).
 
 
 ## Beta programs {#private-beta-program}
@@ -77,53 +81,22 @@ For more information, see [Flexible Publish Tier (Beta)](/help/implementing/clou
 
 To join the beta, email [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com) with your Adobe Organization ID and Program ID.
 
-<!-- 
-OLD
-### Improved build performance with module caching {#quick-build-cm-pipelines}
-
-A new build model compiles only changed modules (rather than the entire repository) using module-level caching to improve build performance. It applies to production pipelines. You control which production pipelines use **Smart Build**.
-
-For more information, see the following:
-
-* [Using Smart Build in a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build).
-* [Add a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
-
-To join the Beta, email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) with your Adobe Organization ID and Program ID.
-
-### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
-
-[Experience Hub](/help/experience-hub.md) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI Extensions so they can help you enable them in Experience Hub with minimal effort.
-
-![Diagram of Experience Hub extensibility and customization workflow](/help/implementing/cloud-manager/release-notes/assets/experience-hub-extensibility-customization.png)
-
-Embed custom experiences in Experience Hub to extend and personalize your organization's dashboard. In addition to Adobe's built-in widgets, add your own using the [UI Extensibility](https://developer.adobe.com/uix/docs/) framework. Build JavaScript-based UI apps and surface them to your users to meet business-specific requirements and workflows. 
-
-Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com) with your Adobe OrgID and a short description of the customization you intend to create.
--->
-
-<!-- 
-OLD
-### Support for Custom Author Domains in Cloud Service
-
-AEM Cloud Service is going to soon support one custom domain per Author environment.
--->
 
 
 
 ## Bug fixes {#bug-fixes}
 
-* Core credits not released when both prod-group environments complete soft delete concurrently. This issue has been resolved. Credits are now correctly released regardless of the order in which concurrent deletions complete. (CMGR-77845)
+* Forms add-on incorrectly blocked on programs with Enhanced Security enabled. Customers with Enhanced Security enabled on their program were unable to add the Forms add-on to a Sites environment, even though the two are fully compatible. This restriction has been removed, and Forms can now be added normally regardless of Enhanced Security configuration. (CMGR-78266)
 
-* Content Hub credit orphaned after environment soft delete followed by hard delete. Cloud Manager now correctly releases the Content Hub credit when the associated environment is fully removed. (CMGR-77585)
+* Content Hub credit not released after restoring an environment from soft delete. When an environment was restored from a soft-deleted state, its associated Content Hub credit remained marked as consumed even though the environment was active again. Cloud Manager now correctly re-consumes the credit on restore, ensuring credit usage accurately reflects the environment's real state. (CMGR-78204)
 
-* aio cloudmanager:tail-log CLI command disconnects at log rotation instead of reconnecting. The command now reconnects automatically when a log rotation is detected. (CMGR-76557)
+* Custom domain mappings stuck in Pending for EDS sites with many domains. EDS sites configured with a large number of domains experienced domain mappings that remained stuck in a Pending state indefinitely, due to a memory issue in the underlying status update process. This issue has been resolved, and domain mapping status now updates reliably regardless of domain count. (CMGR-78179)
 
-* Go-Live complete dialog content not scrollable in Program Overview. The dialog box now scrolls correctly, ensuring all content is accessible regardless of screen size. (CMGR-76405)
+* Production-only pipelines incorrectly showed an editable Build variable service. Pipelines configured to run production deployments only, with no build phase — were still displaying "Build" as an editable environment variable service in the UI, even though no build step executed. This configuration has been corrected so the variable service list now accurately reflects the pipeline's actual configuration. (CMGR-78120)
 
-* Custom domain mapping fails on newly created RDE environments. After creating a new Rapid Development Environment (RDE), customers encountered the error "Environment status is not valid for domain config change" when attempting to add a custom domain mapping immediately after provisioning. 
-Cloud Manager now correctly reflects the environment's ready state before any domain mapping is attempted. (CMGR-75904)
+* Pipeline execution status not updating in the UI. In certain cases, the Cloud Manager UI did not reflect the current status of a running pipeline execution, showing outdated information to the user. Pipeline execution status now updates correctly and consistently in the UI. (CMGR-77642)
 
-* Deleting a DV certificate and recreating it for the same domain fails with "existing certificate" error. When customers deleted a domain-validated (DV) certificate and then tried to create a new one for the same domain, Cloud Manager returned the error "There's an existing certificate that covers all the domains." As a result, it blocked the new certificate from being issued. The deletion appeared successful in the UI but the certificate was not fully removed internally, leaving the domain locked. This issue is now resolved. (CMGR-72784)
+* EDS Sites showed a generic error when adding a collaborator failed. When adding a collaborator to an EDS site failed, the Cloud Manager UI displayed a generic error message instead of the specific failure reason. The UI now surfaces the actual error detail, helping users self-diagnose collaborator issues. (CMGR-75810)
 
 <!-- There are no significant bug fixes in the July 2026 Cloud Manager release. -->
 
