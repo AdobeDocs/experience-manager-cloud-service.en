@@ -37,6 +37,9 @@ Before fixing anything, ask the agent to *"Review my code for AEMaaCS migration.
 
 The runbook is the recommended entry point for a whole-project assessment: it gives you a prioritized, no-surprises picture of the migration effort before any file is changed. When you later start a pattern session, the agent reuses the findings already recorded in the runbook, so no re-scan is required.
 
+>[!NOTE]
+>The runbook only covers the patterns the migration skill can address (those listed under [Supported Patterns](#supported-patterns)). Migration work handled outside these skills—such as repository structure, dispatcher configuration, or content transfer—is not included. See [How They Fit Into the Migration Journey](#migration-journey) for the complementary tools.
+
 ### Supported Patterns {#supported-patterns}
 
 **Code and configuration patterns**

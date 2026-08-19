@@ -22,14 +22,6 @@ AEM provides a range of [agents](/help/ai-in-aem/agents/overview.md) to accelera
 * [Content Advisor Agent](/help/ai-in-aem/agents/content-advisor/overview.md)
 * [Governance Agent](/help/ai-in-aem/agents/governance/overview.md)
 
-## AI Tools for Development {#ai-tools-for-development}
-
-Developers can ground AI coding agents in AEM as a Cloud Service context and connect them to AEM through the Model Context Protocol (MCP):
-
-* [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md) - Configure `AGENTS.md`, agent skills, and local MCP servers to accelerate AEM Java-stack development.
-* [Using MCP with AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) - Connect IDEs and chat applications to AEM's hosted MCP servers.
-* [AI-Assisted Code Migration to AEM as a Cloud Service](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md) - Use the migration skill and Cloud Migration MCP to migrate AEM 6.x, AMS, or on-premise code, pattern by pattern.
-
 ## Generative AI in AEM {#generative-ai-in-aem}
 
 Adobe Generative AI for Adobe Experience Manager (AEM) as a Cloud Service enables brands to create high performance experiences with both copy and image generation all within the editing interface. With generative AI, you can autonomously create content that is:
