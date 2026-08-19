@@ -71,11 +71,11 @@ The toolbar configuration controls which editing options are available in the UI
     // List options
     "list": ["bullet_list", "ordered_list"],
     // Content insertion
-    "insert": ["link", "unlink", "image", "special_characters"],
+    "insert": ["link", "unlink", "image", "table", "special_characters"],
     // Superscript/subscript
     "sr_script": ["superscript", "subscript"],
     // Editor utilities
-    "editor": ["removeformat", "clean_unsupported_tags", "paste_text", "fullscreen"],
+    "editor": ["removeformat", "clean_unsupported_tags", "paste_text", "fullscreen", "find_and_replace"],
     // Advanced items (e.g. the class picker).
     "advanced": ["classes"],
     // Section ordering (optional)
@@ -781,6 +781,16 @@ Format actions allow switching between HTML variants.
 |`strike`|`<del>`|`<s>`|Visual vs. semantic deletion|
 
 Choose semantic tags (`<strong>`, `<em>`, `<del>`) for better accessibility and SEO.
+
+### Inline Code {#inline-code}
+
+The `code_inline` format option marks a span of text as inline code, rendering `<code>` (for example, referencing a `foo()` call inside a sentence). Unlike `bold`/`italic`/`strike` it has no tag-switching option, and it excludes all other marks. Inline code is rendered verbatim, so `bold`/`italic`/`link` can not be applied on top of it. The default keyboard shortcut is `Mod-e`.
+
+This is distinct from the `code_block` block (`<pre><code>`) available in the `blocks` dropdown. `code_inline` is an inline mark within a line, while `code_block` is a standalone, multi-line block. Code blocks hold plain text only (no marks), so an inline `<code>` is never nested inside a `<pre>`.
+
+```html
+Use the <code>foo()</code> helper here.
+```
 
 ### Text Color {#color}
 
