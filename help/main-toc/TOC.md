@@ -913,7 +913,6 @@ user-guide-title: AEM as a Cloud Service
         + [Configure SharePoint Site with limited access using authorization scope](/help/forms/configure-sharepoint-site-limited-access.md)
       + [Submit an Adaptive Form to Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
       + [Submit an Adaptive Form to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
-      + [Azure Blob Storage Network Restrictions and Dedicated Egress IP Considerations](/help/forms/azure-blob-storage-network-restrictions-dedicated-egress-ip.md)
       + [Configure Submit to REST Endpoint submit action for Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
       + [Configure environment-specific REST endpoints for the same Adaptive Form](/help/forms/configure-environment-specific-rest-endpoints.md)
       + [Submit an Adaptive Form to Microsoft&reg; OneDrive](/help/forms/configure-submit-action-onedrive.md)
@@ -1183,6 +1182,8 @@ user-guide-title: AEM as a Cloud Service
         + [Experience Production use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/use-cases.md)
       + Development {#development}
         + [Development use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/development/use-cases.md)
+      + Onboarding {#onboarding}
+        + [Onboarding use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/onboarding/use-cases.md)
     + Content Advisor {#content-advisor}
       + Discovery {#discovery}
         + [Discovery use cases](/help/ai-in-aem/agentic-capabilities/content-advisor/discovery/use-cases.md)
