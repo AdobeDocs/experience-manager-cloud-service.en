@@ -15,3 +15,10 @@ A selection of agentic capabilities are available in AEM:
 
   * [Experience Production](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/use-cases.md)
   * [Development](/help/ai-in-aem/agentic-capabilities/brand-experience/development/use-cases.md)
+
+* Content Advisor
+
+  * [Discovery](/help/ai-in-aem/agentic-capabilities/content-advisor/discovery/use-cases.md)
+  * [Content Optimization](/help/ai-in-aem/agentic-capabilities/content-advisor/content-optimization/use-cases.md)
+
+* [Brand Governance](/help/ai-in-aem/agentic-capabilities/brand-governance/use-cases.md)

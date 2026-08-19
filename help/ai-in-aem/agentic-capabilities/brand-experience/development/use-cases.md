@@ -12,3 +12,7 @@ The Development Agentic Capability of Adobe Enterprise Manager (AEM) as a Cloud 
 ## Use cases {#use-cases}
 
 A range of use-cases are covered.
+
+| Use Case | Description | Skill(s) | Application | Sample Prompts |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
