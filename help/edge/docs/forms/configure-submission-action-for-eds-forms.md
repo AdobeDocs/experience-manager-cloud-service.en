@@ -154,9 +154,14 @@ Configure CORS settings in AEM to allow requests from your specific Edge Deliver
 
 >[!IMPORTANT]
 >
->This step modifies your dispatcher vhost configuration. On AEM as a Cloud Service, the shipped default.vhost file is immutable and enforced by checksum during Cloud Manager pipeline validation; direct edits will fail to deploy. Create a customer-owned copy under available_vhosts/ first, and repoint the enabled_vhosts/ symlink at it, before applying the CORS settings below.
+>The CORS settings below go in your dispatcher vhost file. On AEM as a Cloud Service, the shipped `default.vhost` file is read-only and checksum-validated during the Cloud Manager pipeline, so direct edits to it fail to deploy.
 >
->Reference: https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/dispatcher/disp-overview#file-structure
+>Before applying the CORS settings, make the vhost file editable:
+>
+>1. Copy `default.vhost` to a new, customer-owned file under `available_vhosts/`.
+>1. Point the `enabled_vhosts/` symlink to that new file.
+>
+>For more information on this file structure, see [Dispatcher overview](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/dispatcher/disp-overview#file-structure).
 
 **Developer Localhost**
 
