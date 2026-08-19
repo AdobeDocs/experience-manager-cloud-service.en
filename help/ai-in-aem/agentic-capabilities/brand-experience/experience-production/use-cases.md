@@ -32,7 +32,7 @@ A range of use-cases are covered.
 | Update form using attached guidelines | Revise an existing form to align with an uploaded guidelines document | Form creation | Adobe Experience Manager (AEM) | "Update this form to match the attached guidelines document" |
 | Add business logic | Create conditional logic, show/hide rules, field dependencies, and define validation rules | Form creation | Adobe Experience Manager (AEM) | "Show the Company field only when Employee Type is Contractor"<br><br>"Make the Email field required and validate it as an email address"<br><br>"Hide the Shipping Address section when Same as Billing Address is checked" |
 | Configure form submit action | Set up how a form submits — REST endpoint, email, etc. | Form creation | Adobe Experience Manager (AEM) | "Configure the form to send data to a REST endpoint" |
-| Embed form onto a site's page | Place an existing or newly created form onto a designated AEM Sites page | Form creation | Adobe Experience Manager (AEM) | "Embed this form on the homepage of our site" |
+| Embed form onto a site's page | Place an existing or newly created form onto a designated AEM Sites page (supported on Edge Delivery Services pages only) | Form creation | Adobe Experience Manager (AEM) | "Embed this form on the homepage of our site" |
 
 <!--
 ## Known limitations {#known-limitations}
@@ -44,15 +44,16 @@ Confirmed working:
 - All four creation paths: natural-language intent, attached brief, attached screenshot, attached PDF
 - Simple layout edits: column span/width, field and panel reordering, multi-column layout within a panel
 - Guidelines-file-driven updates (e.g., a markdown guidelines doc)
-- Site-page embedding — all AEM Sites page types (per engineering confirmation; supersedes the earlier EDS-only bug-bash finding)
+- Site-page embedding — Edge Delivery Services (EDS) only
 - Simple field-level rules (show/hide) on non-fragment fields
 - REST and email submit to a known endpoint
 
 Confirmed broken / not yet supported:
 
 1. Structural layout conversion (flat form to wizard/accordion/tabs) is additive-only — it adds a new, empty structure alongside existing content instead of migrating it. Even a wizard built from scratch has no real multi-step or collapse behavior.
-2. Form Fragment blindness — fields living inside a referenced Form Fragment are invisible to rename, rules, colspan/styling, and field-count introspection. Largest cluster of bugs in the bash. High risk for any form built on reusable fragments/panels.
-3. No post-creation branding/theme workflow — theme is only selectable at creation time; no way to change brand color, font, or add a logo afterward.
-4. Repeatable fields/panels — backend properties (min/max, repeatable flag) can be set correctly, but the "add another instance" gesture is unreliable in the previewer.
-5. Minor: checkbox creation intermittently fails (missing checked/unchecked values).
+2. Site-page embedding on Core Components pages is not supported (EDS only).
+3. Form Fragment blindness — fields living inside a referenced Form Fragment are invisible to rename, rules, colspan/styling, and field-count introspection. Largest cluster of bugs in the bash. High risk for any form built on reusable fragments/panels.
+4. No post-creation branding/theme workflow — theme is only selectable at creation time; no way to change brand color, font, or add a logo afterward.
+5. Repeatable fields/panels — backend properties (min/max, repeatable flag) can be set correctly, but the "add another instance" gesture is unreliable in the previewer.
+6. Minor: checkbox creation intermittently fails (missing checked/unchecked values).
 -->
