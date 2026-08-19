@@ -27,8 +27,10 @@ For more information, see [Git submodule support for external repositories](http
 
 ## New features - Cloud Manager {#cloud-manager-whats-new}
 
+<!--
 * **GitHub Apps for EDS sites**  
-    Cloud Manager now exposes an option for managing GitHub App connections on provisioned Edge Delivery Services (EDS) sites. This option allows teams and automation tools to configure GitHub App integrations programmatically, rather than through manual setup for each site. (CMGR-78197) <!-- new doc needed -->
+    Cloud Manager now exposes an option for managing GitHub App connections on provisioned Edge Delivery Services (EDS) sites. This option allows teams and automation tools to configure GitHub App integrations programmatically, rather than through manual setup for each site. (CMGR-78197) new doc needed
+-->
 
 * **Git submodule authentication for external repositories** 
     If your external Git repository (Bring Your Own Git) uses Git submodules, Cloud Manager now automatically authenticates submodule fetches from other repositories in the same organization during pipeline builds. Previously, submodule repositories not individually registered in Cloud Manager failed authentication, so those fetches failed. Credentials are handled server-side and are never exposed to the build environment. No configuration is required, and existing pipelines continue to run without changes. (CMGR-76737) <!-- new doc already added for this release -->
