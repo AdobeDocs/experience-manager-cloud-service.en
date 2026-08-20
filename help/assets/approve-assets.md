@@ -55,6 +55,18 @@ To approve assets in [!DNL Experience Manager Admin view], follow these steps:
 
    Similarly, you can approve assets using the [new Assets view](/help/assets/manage-organize-assets-view.md).
 
+## Assets Approval Target of Delivery versus Content Hub
+
+Approving an asset is not a single binary state — the Approval Target selected at approval time determines what the approval actually enables:
+
+* Approving with Content Hub as the target makes the asset visible inside the Content Hub portal itself, but does not make it accessible via a public share link.
+* Approving with Delivery as the target is what is required for the asset to be reachable through public link-sharing.
+
+A "There is no content to display" or 404 error on a shared public link is frequently caused by the underlying asset having been approved with Content Hub as the target rather than Delivery. When troubleshooting a broken share link, check and correct the asset's Approval Target to Delivery before investigating further.
+
+Separately, when an asset is approved with Content Hub as the target, AEM auto-populates the dam:roles metadata field with a system-managed IMS group identifier. This is an expected, system-managed security mechanism (used to restrict access to authenticated users) — it is not evidence of a workflow bug, should not be manually edited or removed, and does not conflict with Attribute-Based Access Control (ABAC) rules. If a metadata schema exposes this field, consider marking it read-only/hidden so authors don't inadvertently change it; control visibility through ABAC and metadata rather than by editing dam:roles.
+
+
 ## Bulk approve assets {#bulk-approve-assets}
 
 Streamline your workflow by quickly approving multiple assets at once. You can bulk approve assets to expedite the approval process, saving time and enhancing productivity.

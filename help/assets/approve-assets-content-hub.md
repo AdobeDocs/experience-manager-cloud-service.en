@@ -137,6 +137,11 @@ Follow these steps to automate approval for newly ingested assets in [!DNL Exper
 > 
 >This approach approves the newly created assets in the folder. For existing assets in the folder, you need to manually select and approve them.
 
+## Asset visibility in Content Hub {#asset-visibility-in-content-hub}
+
+Content Hub displays only assets whose dam.status metadata is Approved — there is no separate publish action beyond the standard AEM approval workflow, and Content Hub has no folder-creation capability; assets there are organized purely via metadata filters and Collections, not a folder hierarchy. For assets ingested via integrations such as Workfront, note that integration does not automatically set review status to Approved — approval in AEM DAM still has to happen (manually or via a configured workflow) before those assets will appear in Content Hub.
+
+
 ## Manage assets uploaded using Content Hub {#manage-assets-uploaded-using-content-hub}
 
 [Content Hub users with rights to add assets](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) can [add assets to the Content Hub](/help/assets/upload-brand-approved-assets.md) either from local file system or import assets from OneDrive or Dropbox data sources. All assets display at the top-level in Content Hub irrespective of the folder structure available on your local file system or OneDrive and Dropbox data sources to enhance the search capabilities.
