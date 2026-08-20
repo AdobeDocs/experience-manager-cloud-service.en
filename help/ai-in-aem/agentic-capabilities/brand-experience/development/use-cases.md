@@ -7,17 +7,11 @@ role: User, Admin, Developer
 
 # Development Agentic Capabilities {#development-agentic-capabilities}
 
-The Development Agentic Capability of Adobe Enterprise Manager (AEM) as a Cloud Service collaborates with [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) to help you ..... tbc 
+The Development Agentic Capability of Adobe Enterprise Manager (AEM) as a Cloud Service collaborates with [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) to help traditional AEM Java-stack developers and administrators create, debug, deploy, and optimize code more efficiently.
 
 ## Use cases {#use-cases}
 
 A range of use-cases are covered.
-
-<!--
-| Use Case | Description | Skill(s) | Application | Sample Prompts |
-| --- | --- | --- | --- | --- |
-|  |  |  |  |  |
--->
 
 ### AEM Cloud Manager Pipeline Troubleshooting
 
