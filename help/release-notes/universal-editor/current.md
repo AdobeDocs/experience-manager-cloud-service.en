@@ -18,12 +18,8 @@ These are the release notes for the 20 August 2026 release of the Universal Edit
 >
 >For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-## What's New {#what-is-new}
-
-
-
 ## Other Improvements {#other-improvements}
 
-* Preserved table column widths when importing TinyMCE tables into TipTap, ensuring the widths survive the editing round trip.
-* Fixed focus detection for text fields using `url` or `email` value formats so they are correctly marked as busy.
-* Fixed select boxes omitting configured entries, ensuring all options with distinct values are displayed.
+* Table column widths are now preserved when importing TinyMCE tables into TipTap, ensuring the widths survive the editing round trip.
+* Focus detection for text fields using `url` or `email` value formats was fixed so they are correctly marked as busy.
+* Select boxes omitting configured entries were fixed, ensuring all options with distinct values are displayed.
