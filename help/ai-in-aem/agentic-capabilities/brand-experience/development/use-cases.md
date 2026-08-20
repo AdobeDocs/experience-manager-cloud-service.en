@@ -32,7 +32,7 @@ The AEM Cloud Manager Pipeline Management skill lets you manage your CI/CD pipel
 
 When something goes wrong, the skill goes beyond status checks: it can retrieve step metrics, logs, artifacts, and execution failures so you can diagnose an issue without downloading and searching through raw log files yourself. It also handles day-to-day pipeline configuration — managing pipeline variables, invalidating cached artifacts, and adjusting pipeline settings — so routine maintenance tasks that used to require several clicks through the UI can be done with a single request.
 
-As with all AI responses, review suggested actions and configuration changes before applying them, particularly for actions that affect a running pipeline or production settings.
+AI can make mistakes so review suggested actions before applying them, particularly for destructive operations.
 
 | Capability | Sample Prompts |
 | --- | --- |
@@ -55,7 +55,7 @@ The AEM Cloud Manager Environment Management skill lets you manage your Cloud Ma
 
 Day-to-day environment upkeep is covered too: managing environment variables, downloading logs for debugging, resetting a Rapid Development Environment (RDE) when you need a clean slate, and configuring region deployments — all from a single conversation instead of several trips through Cloud Manager. When something needs to be rolled back, the skill can also restore an environment from a backup.
 
-As with all AI responses, review suggested actions before applying them — this is especially important for destructive operations like deleting an environment or restoring from backup, since these can affect running programs and should not be confirmed automatically.
+AI can make mistakes so review suggested actions before applying them, particularly for destructive operations.
 
 | Capability | Sample Prompts |
 | --- | --- |
@@ -76,7 +76,7 @@ The AEM Cloud Manager Program Management skill lets you look up and manage your 
 
 Since programs are the umbrella that pipelines and environments live under, this skill also acts as a quick entry point into those related resources — you can ask it to show the pipelines or environments tied to a given program without first tracking down the program ID yourself.
 
-As with all AI responses, review suggested actions before applying them — this is especially important for deleting a program, since that's a destructive operation that also removes its associated pipelines and environments, and should not be confirmed automatically.
+AI can make mistakes so review suggested actions before applying them, particularly for destructive operations.
 
 | Capability | Sample Prompts |
 | --- | --- |
@@ -92,7 +92,7 @@ The AEM Cloud Manager Release Management skill lets you control when Adobe appli
 
 If your plans change, you can remove an Update-Free Period just as easily as you scheduled it. The skill can also show you Adobe's own global Code-Freeze periods — the windows Adobe has already blocked off for planned maintenance exclusions — so you know upfront which dates are already off-limits before you try to schedule your own.
 
-As with all AI responses, review suggested actions before applying them — this is especially true for update-schedule changes, since an incorrectly scheduled or removed Update-Free Period could allow updates to land during a window you meant to protect.
+AI can make mistakes so review suggested actions before applying them — this is especially true for update-schedule changes, since an incorrectly scheduled or removed Update-Free Period could allow updates to land during a window you meant to protect.
 
 | Capability | Sample Prompts |
 | --- | --- |
