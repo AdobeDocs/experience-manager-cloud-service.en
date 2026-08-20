@@ -55,7 +55,7 @@ To approve assets in [!DNL Experience Manager Admin view], follow these steps:
 
    Similarly, you can approve assets using the [new Assets view](/help/assets/manage-organize-assets-view.md).
 
-## Assets Approval Target of Delivery versus Content Hub {assets-approval-target}
+## Assets Approval Target of Delivery versus Content Hub {#assets-approval-target}
 
 Approving an asset is not a single binary state, the **[!UICONTROL Approval Target]** selected at approval time determines what the approval actually enables:
 
