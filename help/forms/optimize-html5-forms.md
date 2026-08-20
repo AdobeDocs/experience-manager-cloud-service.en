@@ -12,9 +12,6 @@ role: Admin, User, Developer
 ---
 # Optimizing HTML5 forms {#optimizing-html-forms}
 
-<span class="preview"> The HTML5 Forms capability is offered as part of Early Access Program. To request access, send an email from your official (work) email ID to aem-forms-ea@adobe.com.
-</span>
-
 HTML5 forms renders forms in the HTML5 format. The resultant output could be large depending on factors like the form size and images in the form. To optimize the data transfer, the recommended approach is to compress the HTML response using the Web Server from which the request is being served. This approach reduces the response size, network traffic, and the time required to stream data between the server and client machines.
 
 This article describes the steps required to enable compression for the Apache Web Server 2.0 32 bit, with JBoss.

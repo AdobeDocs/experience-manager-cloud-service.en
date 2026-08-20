@@ -20,9 +20,11 @@ These **preview** release notes are provided as a convenience so you know what c
 >
 >The content of the actual release as well as the release date are subject to change.
 
+## Upcoming Features {#upcoming-features}
+
+* An inline code format option has been [added to the RTE](/help/implementing/universal-editor/configure-rte.md#inline-code) and is available in [the editor UI.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 
 ## Upcoming Changes {#upcoming-improvements}
 
-* Preserved table column widths when importing TinyMCE tables into TipTap, ensuring the widths survive the editing round trip.
-* Fixed focus detection for text fields using `url` or `email` value formats so they are correctly marked as busy.
-* Fixed select boxes omitting configured entries, ensuring all options with distinct values are displayed.
+* A bug was fixed where the find and replace feature was not correctly highlighting the matched text in certain situations.
+* A bug was fixed when the undo was not properly applied in some situations.
