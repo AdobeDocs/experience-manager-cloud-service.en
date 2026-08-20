@@ -83,7 +83,6 @@ To join the beta, email [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-bet
 
 
 
-
 ## Bug fixes {#bug-fixes}
 
 * Forms add-on incorrectly blocked on programs with Enhanced Security enabled. Customers with Enhanced Security enabled on their program were unable to add the Forms add-on to a Sites environment, even though the two are fully compatible. This restriction has been removed, and Forms can now be added normally regardless of Enhanced Security configuration. (CMGR-78266)
