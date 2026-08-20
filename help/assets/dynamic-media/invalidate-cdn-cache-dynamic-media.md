@@ -87,16 +87,16 @@ This invalidation, however, is not the case for generic domains that do not supp
 
 ## CDN behavior {#CDN-behavior}
 
-* Dynamic Media/Scene7 does not pre-warm or globally cache every published asset ahead of time. Cache entries are created lazily, on the first request for each unique asset URL — the first request for a given URL will always be an origin fetch.
-* Requests for Dynamic Media/Scene7 assets are routed directly from the browser to Adobe's managed CDN (Akamai) and bypass any customer-configured CDN sitting in front of the rest of the site (e.g. a corporate CDN or Fastly) — this is architectural, not something to "fix" at the customer's CDN layer. Default TTL at this layer is on the order of ~12 hours unless otherwise configured.
-* If sample URLs show no meaningful caching (frequent origin fetches even for the same URL), check whether the URL itself was constructed with Cache-Control: max-age=0 or no-cache — this can happen when specific delivery parameters are used — since that will prevent caching regardless of Dynamic Media's normal behavior.
+* Dynamic Media or Scene7 does not pre-warm or globally cache every published asset ahead of time. Cache entries are created only when needed, on the first request for each unique asset URL. The first request for a given URL always is an origin fetch.
+* Requests for Dynamic Media or Scene7 assets are routed directly from the browser to Adobe's managed CDN, that is, Akamai. Bypass any customer-configured CDN sitting in front of the rest of the site, for example, a corporate CDN or Fastly. This is architectural, not something to fix at the customer's CDN layer. Default TTL at this layer is on the order of nearly 12 hours unless otherwise configured.
+* If the sample URLs show no meaningful caching (frequent origin fetches even for the same URL), check whether the URL itself was constructed with cache control **[!UICONTROL max-age=0]** or no cache. This happens when specific delivery parameters are used since that prevents the caching regardless of Dynamic Media's normal behavior.
 
 ## Bandwidth or data-volume reporting {#bandwidth-or-data-volume-reporting}
 
-The AEM Assets Dynamic Media Delivery report only exposes asset-level hit counts — it does not report bandwidth or data-volume metrics. For actual bandwidth/storage usage figures, use one of:
+The AEM Assets Dynamic Media Delivery report only exposes the asset level hit counts, it does not report the bandwidth or data-volume metrics. For actual bandwidth or storage usage figures, use one of:
 
-* The Scene7 Reporting Web App, for Usage Summary-type reports.
-* The Dynamic Media Classic "Bandwidth & Storage" page, for company-level usage data.
+* The Scene7 reporting web based application, for usage summary type reports.
+* The Dynamic Media Classic **[!UICONTROL Bandwidth and Storage]** page, for company level usage data.
 
 
 ## Troubleshoot CDN Invalidation errors
