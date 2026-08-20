@@ -342,9 +342,9 @@ Enable the following setting on the Configurations user interface to allow Conte
 
 Learn more about [sharing assets in the [!DNL Content Hub]](share-assets-content-hub.md).
 
-## Assets from the wrong environment or repository
+## Assets from the wrong environment or repository {#assets-from-the-wrong-environment-or-repository}
 
-If assets from a specific environment (e.g. STAGE) are not appearing in Content Hub while assets from another environment (e.g. PROD) are, check the "Select Repository" setting in the user's Content Hub profile — Content Hub connects to one specific delivery repository at a time, and the UI can remain pointed at a different environment's repository (e.g. still PROD) than the one currently being tested. Switching the repository selection to the correct environment resolves this without any change to asset approval or ABAC configuration.
+If assets from a specific environment, for example, **[!UICONTROL STAGE]** are not appearing in Content Hub while assets from another environment, for example, **[!UICONTROL PROD]** are, check the **[!UICONTROL Select Repository]** setting in your Content Hub profile. Content Hub connects to one specific delivery repository at a time, and the UI can remain pointed at a different environment's repository, for example, still **[!UICONTROL PROD]** than the one currently being tested. Switching the repository selection to the correct environment resolves this without any change to asset approval or ABAC configuration.
 
 
 ## Frequently asked questions {#faqs-content-hub-upload-assets}

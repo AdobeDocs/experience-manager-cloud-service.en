@@ -198,10 +198,10 @@ You can mark Collections as Favorite in Content Hub, making it easier to organiz
 
 ## Collections UI latency {#collections-UI-latency}
 
-Content Hub Collections are subject to backend propagation/index-refresh latency: after creating a collection, or adding/removing assets from one, the UI may not reflect the change immediately. This is expected system behavior, not a failure of the add/remove action itself. If a change doesn't appear right away:
+Content Hub Collections are subject to backend propagation or index-refresh latency. After creating a collection, or adding and removing assets from one, the UI may not reflect the change immediately. This is an expected system behavior, not a failure of the add or remove action itself. If a change does not appear right away:
 
 * Refresh the browser or retry in a new session before assuming the operation failed.
-* Re-verify after a short wait rather than repeating the same add/remove action multiple times, which can create confusing duplicate-looking states.
+* Re-verify after a short wait rather than repeating the same add or remove action multiple times, which creates confusing duplicate-looking states.
 
 
 ## Frequently asked questions {#faqs-manage-collections-content-hub}

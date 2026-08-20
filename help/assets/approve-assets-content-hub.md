@@ -139,7 +139,7 @@ Follow these steps to automate approval for newly ingested assets in [!DNL Exper
 
 ## Asset visibility in Content Hub {#asset-visibility-in-content-hub}
 
-Content Hub displays only assets whose dam.status metadata is Approved — there is no separate publish action beyond the standard AEM approval workflow, and Content Hub has no folder-creation capability; assets there are organized purely via metadata filters and Collections, not a folder hierarchy. For assets ingested via integrations such as Workfront, note that integration does not automatically set review status to Approved — approval in AEM DAM still has to happen (manually or via a configured workflow) before those assets will appear in Content Hub.
+Content Hub displays only assets whose **[!UICONTROL dam.status]** metadata is approved; there is no separate publish action beyond the standard AEM approval workflow, and Content Hub has no folder-creation capability. Assets are organized purely through the metadata filters and collections, not a folder hierarchy. For assets ingested through integrations such as Workfront, note that the integration does not automatically set the review status to **[!UICONTROL Approved]**, approval in AEM DAM still has to happen manually or through a configured workflow before those assets appear in Content Hub.
 
 
 ## Manage assets uploaded using Content Hub {#manage-assets-uploaded-using-content-hub}
