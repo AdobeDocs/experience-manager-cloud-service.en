@@ -267,6 +267,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.08.13 Release Notes](/help/release-notes/universal-editor/2026/2026-08-13.md)
       + [2026.08.06 Release Notes](/help/release-notes/universal-editor/2026/2026-08-06.md)
       + [2026.07.30 Release Notes](/help/release-notes/universal-editor/2026/2026-07-30.md)
       + [2026.07.16 Release Notes](/help/release-notes/universal-editor/2026/2026-07-16.md)
