@@ -50,7 +50,7 @@ As with all AI responses, review suggested actions and configuration changes bef
 | Getting step metrics | "Show me the build step metrics for execution 12345"<br><br>"How long did the Code Scan step take on my last run?" |
 | Getting logs | "Get me the build log links for pipeline execution 12345"<br><br>"Pull the logs for the failed Code Scan step" |
 | Getting artifacts | "Show me the artifacts produced by execution 12345"<br><br>"Where can I download the build artifact from my last run?" |
-| Getting execution failures | "Why did my Dev Pipeline execution fail?"<br><br>"List all failed executions for program 12345 this week" | 
+| Getting execution failures | "Why did my Dev Pipeline execution fail?"<br><br>"List all failed executions for program 12345 this week" |
 | Managing pipeline variables | "Show me the variables for Dev Pipeline"<br><br>"Update the API_ENDPOINT variable on pipeline 67890" |
 | Invalidating cached artifacts | "Invalidate the cached artifact for Dev Pipeline"<br><br>"Clear the build cache before my next run" |
 | Configuring pipeline settings | "Enable email notifications for Dev Pipeline"<br><br>"Change the trigger branch for pipeline 67890 to release" |
