@@ -7,7 +7,7 @@ role: User, Admin, Developer
 
 # Brand Governance Agentic Capabilities {#brand-governance-agentic-capabilites}
 
-The Brand Governance Agentic Capability of Adobe Enterprise Manager (AEM) as a Cloud Service collaborates with [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) to ... tbd.
+The Brand Governance Agentic Capability of Adobe Enterprise Manager (AEM) as a Cloud Service collaborates with [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) to safeguard brand integrity and compliance. It enforces security, regulatory, and brand policies to ensure every interaction and activation adheres to established standards.
 
 ## Use cases {#use-cases}
 
