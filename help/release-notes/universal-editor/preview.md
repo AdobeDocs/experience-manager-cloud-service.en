@@ -23,6 +23,4 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming Changes {#upcoming-improvements}
 
-* Preserved table column widths when importing TinyMCE tables into TipTap, ensuring the widths survive the editing round trip.
-* Fixed focus detection for text fields using `url` or `email` value formats so they are correctly marked as busy.
-* Fixed select boxes omitting configured entries, ensuring all options with distinct values are displayed.
+
