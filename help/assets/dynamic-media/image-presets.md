@@ -52,7 +52,7 @@ Adobe Experience Manager (AEM) as a cloud service generates more than one image 
 |---------------------|----------------|-----------------|
 | Dynamic Media with OpenAPI  | **[!UICONTROL /adobe/assets/...]** | AEM Assets UI, custom components using the Delivery API. |
 | Web-Optimized Image Delivery | **[!UICONTROL /adobe/dynamicmedia/deliver/...]** | GraphQL, custom components not using the OpenAPI Delivery API. |
-| Dynamic Media Classic (Scene7) viewer or embed URLs | Scene7-hosted viewer or player page URLs. | Direct embedding through viewer or embed code. It is not a raw file reference. |
+| Dynamic Media Classic (Scene7) viewer or embed URLs | Scene7 hosted viewer or player page URLs. | Direct embedding through viewer or embed code. It is not a raw file reference. |
 
 Seeing different URL formats returned for the same logical asset across different integration points (for example, Page Editor versus Content Fragment Editor versus GraphQL) is expected, documented behavior driven by which mechanism served the request; it is not a defect or misconfiguration. GraphQL does not currently return OpenAPI (**[!UICONTROL /adobe/assets/]**) URLs. To standardize on a single URL format across all channels, the channels that does not natively produce it, for example, GraphQL need their own integration pattern to construct or substitute the desired format, since there is no built-in automatic standardization.
 
