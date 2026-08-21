@@ -9,9 +9,9 @@ role: User, Admin, Developer
 
 The Experience Production Agentic Capability of Adobe Enterprise Manager (AEM) as a Cloud Service collaborates with [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) to help you accelerate your content creation and automatically orchestrate changes. 
 
-## Use cases {#use-cases}
-
 A range of use-cases are covered.
+
+## Use cases - Sites {#use-cases-sites}
 
 | Use Case | Description | Skill(s) | Application | Sample Prompts |
 | --- | --- | --- | --- | --- |
@@ -21,6 +21,11 @@ A range of use-cases are covered.
 | Discovery Content Fragments | Find content fragments using natural language. Supports both semantic (intent) based or keyword based search. | `aem-sites-contentfragments-discover` | Adobe Experience Manager (AEM) | find Content Fragments under &lt;CF_path&gt; whose calories field is set to 150  |
 | Go from Figma to Visual Content Fragment | Import designs directly from Figma into Adobe Experience Manager using natural language. The skill automatically creates the required content model, content fragment, assets, and visualization template, enabling business users to move from design to web-ready content in minutes without manual setup. | `aem-sites-visualcontentfragments-create` | Adobe Experience Manager (AEM) | Import from &lt;Figma_URL&gt; |
 | Inspect Content Fragments for dependencies, semantic readiness, and publish readiness | Optimize and manage Content Fragments for AI-powered experiences through readiness checks that include semantic analysis and impact assessment. Evaluates content quality, metadata, structure, schema compliance, and references to surface issues affecting search, publishing, translation, or headless delivery. Analyzes dependencies across Content Fragments, collections, assets, models, and pages to identify risks and recommend safe actions. Finally it provides assessments with guided, human-reviewed remediation steps. | `aem-sites-contentfragments-inspect` | Adobe Experience Manager (AEM) |Run a health check on the folder &lt;CF_path&gt;<br><br>Is content fragment  &lt;CF_path&gt; ready to publish?<br><br>is folder &lt;CF_path&gt; ready for semantic search?<br><br>Is this Content Fragment &lt;CF_path&gt; being referenced by other fragments? What will happen if I delete it?<br><br>Show me the dependency tree for &lt;CF_path&gt; |
+
+## Use cases - Forms {#use-cases-forms}
+
+| Use Case | Description | Skill(s) | Application | Sample Prompts |
+| --- | --- | --- | --- | --- |
 | Create form using natural language intent | Generate a new Adaptive Form from a plain-language description of the fields and purpose | `aem-forms-adaptiveform-create` | Adobe Experience Manager (AEM) | "Create an employee onboarding adaptive form"<br><br>"Create a &lt;form type&gt; adaptive form" |
 | Create form using attached brief | Generate a form from an uploaded requirements brief describing fields and flow | `aem-forms-adaptiveform-create` | Adobe Experience Manager (AEM) | "Create a form using the attached brief" |
 | Create form using attached image/screenshot | Generate a form by interpreting a screenshot or image of a reference form or mockup | `aem-forms-adaptiveform-create` | Adobe Experience Manager (AEM) | "Create a form as per the attached image" |
@@ -33,6 +38,7 @@ A range of use-cases are covered.
 | Add business logic | Create conditional logic, show/hide rules, field dependencies, and define validation rules | `aem-forms-adaptiveform-edit` | Adobe Experience Manager (AEM) | "Show the Company field only when Employee Type is Contractor"<br><br>"Make the Email field required and validate it as an email address"<br><br>"Hide the Shipping Address section when Same as Billing Address is checked"<br><br>"Show the &lt;field&gt; field only when &lt;other field&gt; is &lt;value&gt;" |
 | Configure form submit action | Set up how a form submits — cloud storage (Azure Blob, OneDrive, SharePoint doc library, SharePoint list), CRM/marketing platforms (Marketo), Adobe Experience Platform, generic web protocols (REST via FDM, OData, SOAP, REST endpoint/webhook), email, or a custom submit action bundle. Supported on both Cloud Service and Edge Delivery Services. The connector must already be configured in AEM before the skill can select and set it. | `aem-forms-adaptiveform-edit` | Adobe Experience Manager (AEM) | "Configure the form to send data to a REST endpoint"<br><br>"Submit to Azure Blob"<br><br>"Submit to SharePoint doc library"<br><br>"Submit to Adobe Experience Platform"<br><br>"Send email on submit"<br><br>"Use my custom submit action"<br><br>"Submit to REST endpoint &lt;url&gt;" |
 | Embed form onto a site's page | Place an existing or newly created form onto a designated AEM Sites page (supported on Edge Delivery Services pages only) | `aem-forms-adaptiveform-embed` | Adobe Experience Manager (AEM) | "Embed this form on the homepage of our site"<br><br>"Embed this form on &lt;page path&gt;" |
+
 
 <!--
 ## Known limitations {#known-limitations}
