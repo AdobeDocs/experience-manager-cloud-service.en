@@ -15,7 +15,7 @@ A range of use-cases are covered.
 
 ### AEM Cloud Manager Pipeline Troubleshooting
 
-The AEM Cloud Manager Pipeline Troubleshooting skill helps you get to the bottom of a failed pipeline execution without digging through raw logs yourself. Reference a failed pipeline and it investigates issues that occurred in the Build & Unit Testing step and the Code Scanning step in Full Stack Deployment and Code Quality pipelines. It also supports dispatcher configuration issues in web tier config pipelines. It explains what went wrong in plain language with the specific files and error details involved, not.
+The AEM Cloud Manager Pipeline Troubleshooting skill helps you get to the bottom of a failed pipeline execution without digging through raw logs yourself. Reference a failed pipeline and it investigates issues that occurred in the Build & Unit Testing step and the Code Scanning step in Full Stack Deployment and Code Quality pipelines. It also supports dispatcher configuration issues in web tier config pipelines. It explains what went wrong in plain language.
 
 When a fix is identified with enough confidence, the skill can go a step further: it shows you the exact diff for review that you can download, and optionally pushes it to a new branch if you approve. 
 
@@ -24,7 +24,7 @@ Review the diagnosis and any proposed fix before acting on it — particularly b
 | Capability | Sample Prompts |
 | --- | --- |
 | Troubleshooting a pipeline | Troubleshoot my failed pipeline. Troubleshoot pipeline execution 1234567. |
-| Generating a fix (as a diff) | Generate a fix for my failed pipeline execution 1234567 |
+| Generating a fix (with a diff) | Generate a fix for my failed pipeline execution 1234567 |
 
 ### Manage Cloud Manager pipelines
 
