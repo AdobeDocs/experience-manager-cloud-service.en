@@ -15,7 +15,7 @@ A range of use-cases are covered.
 
 ### AEM Cloud Manager Pipeline Troubleshooting
 
-The AEM Cloud Manager Pipeline Troubleshooting skill helps you get to the bottom of a failed pipeline execution without digging through raw logs yourself. Reference a failed pipeline and it investigates issues that occurred in the Build & Unit Testing step and the Code Scanning step in Full Stack Deployment and Code Quality pipelines. It also supports dispatcher configuration issues in web tier config pipelines. It explains what went wrong in plain language.
+The AEM Cloud Manager Pipeline Troubleshooting skill helps you get to the bottom of a failed pipeline execution without digging through raw logs yourself. Reference a failed pipeline and it investigates issues that occurred in the Build & Unit Testing step and the Code Scanning step in Full Stack Deployment and Code Quality pipelines. It also supports Dispatcher configuration issues in web tier config pipelines. It explains what went wrong in plain language.
 
 When a fix is identified with enough confidence, the skill can go a step further: it shows you the exact diff for review that you can download, and optionally pushes it to a new branch if you approve. 
 
@@ -72,7 +72,7 @@ AI can make mistakes so review suggested actions before applying them, particula
 
 ### AEM Cloud Manager Program Management
 
-The AEM Cloud Manager Program Management skill lets you look up and manage your Cloud Manager programs through natural language, instead of navigating Cloud Manager's program listings to find the one you're after. You can list all the programs you have access to, pull up details for a specific one, and delete a program when it's no longer needed.
+The AEM Cloud Manager Program Management skill lets you look up and manage your Cloud Manager programs through natural language, instead of navigating Cloud Manager's program listings to find the one you are looking for. You can list all the programs you have access to, pull up details for a specific one, and delete a program when it is no longer needed.
 
 Since programs are the umbrella that pipelines and environments live under, this skill also acts as a quick entry point into those related resources — you can ask it to show the pipelines or environments tied to a given program without first tracking down the program ID yourself.
 
