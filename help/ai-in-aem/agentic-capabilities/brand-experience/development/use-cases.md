@@ -1,6 +1,6 @@
 ---
 title: Development Agentic Capabilities Overview
-description: Learn how the Development Agentic Capabilities in AEM help you accelerate your content creation and automatically orchestrate changes.
+description: Learn how the Development Agentic Capabilities in AEM help your traditional AEM Java-stack developers and administrators create, debug, deploy, and optimize code more efficiently.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 ---

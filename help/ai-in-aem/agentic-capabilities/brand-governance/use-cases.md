@@ -1,6 +1,6 @@
 ---
 title: Brand Governance Agentic Capabilities Overview
-description: Learn how the Brand Governance Agentic Capabilities in AEM help you accelerate your content creation and automatically orchestrate changes.
+description: Learn how the Brand Governance Agentic Capabilities in AEM help you safeguard brand integrity and compliance.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 ---
