@@ -181,7 +181,7 @@ Sample prompts:
 
 * How many approved PDFs are in the campaign folder?
 
-**Faceted exploration**
+**Explore metadata values**
 
 The Content Discovery Agentic Capability can discover the distinct values available for a metadata field across assets, enabling users to explore available classifications and refine subsequent searches.
 
@@ -203,7 +203,7 @@ The Content Discovery Agentic Capability can provide optimized Dynamic Media del
 
 Sample prompts:
 
-* Get the delivery URL for Morning Muse Capsules.png.
+* Get the delivery URL for `Morning Muse Capsules.png`.
 
 **Download links**
 
