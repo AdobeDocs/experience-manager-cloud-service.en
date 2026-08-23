@@ -26,7 +26,7 @@ When a report is generated, you are notified via <!-- through an email (optional
 
 AEM Assets provides several distinct reporting mechanisms for different purposes. Confusing one for another or misconfiguring the permissions needed to run them is the most common source of **[!UICONTROL My report is empty or stuck or missing]** support cases.
 
-### Report types {#report-types} 
+## Report types {#report-types} 
 
 | Report or tool|What it measures| Description|
 |---|---|---|
