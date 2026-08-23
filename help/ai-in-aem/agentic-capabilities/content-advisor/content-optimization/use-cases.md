@@ -64,7 +64,7 @@ Regional marketers and agency workers can also use the Content Optimization Agen
 
 ## How to Access {#access-content-optimization-agentic-capability}
 
-You can access the Content Optimization Agentic Capability via the [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview).
+You can access the Content Optimization Agentic Capabilities via the [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview).
 
 ## Common Use Cases and Sample Prompts {#use-cases-prompts}
 
