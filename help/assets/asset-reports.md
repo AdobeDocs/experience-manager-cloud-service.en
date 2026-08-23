@@ -30,14 +30,14 @@ AEM Assets provides several distinct reporting mechanisms for different purposes
 
 | Report or tool | What it measures | Description |
 | -------- | -------- | -------- |
-| Upload/Download (expiration, activity) reports under Tools > Assets > Reports  |    Event-based: only assets uploaded or downloaded by a named user within the selected date range | Assets created by system/service processes (e.g. a contentbackflow-import-service integration) are not included, even if they exist in the target folder — the report is not a folder inventory, it is a log of user upload/download events. |
-| Disk Usage report | File count and total storage size (MB) for a folder and its subfolders | Useful for license/cost allocation accounting across teams sharing a DAM. |
-| Publish / Files report with the References column | Reference counts per asset, so you can identify high-usage ("hot") assets ahead of a bulk restructuring | AEM does not store a "date this asset started being used" flag — to find the oldest asset in a tree, generate a Files report with the widest possible date range and sort/filter on creation date instead. |
-| DAM Export Metadata feature | A full metadata dump for selected assets | Use this instead of the Reports tool when you need every metadata property rather than a curated column set. |
-| Dynamic Media Delivery Report (Assets View UI) | Per-asset hit counts / delivery volume for Dynamic Media (Scene7)-served assets over a date range | Covers Dynamic Media URLs only. | 
-| Adobe Analytics (via Experience Platform Tags in DM viewers) | User interactions, click tracking, traffic sources, geographic data | Required for anything beyond simple hit counts, and required for assets delivered via direct publish URLs rather than Dynamic Media — publish-URL traffic is not visible in any AEM Assets report. |
+| Upload or Download (expiration, activity) reports under **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**  | Event-based: only assets uploaded or downloaded by you within the selected date range. | Assets created by the system or service processes (for example, a **[!UICONTROL contentbackflow-import-service]** integration) are not included, even if they exist in the target folder, the report is not a folder inventory, it is a log of the upload or download events. |
+| Disk Usage report | File count and total storage size in megabytes for a folder and its subfolders. | This is useful for license or cost allocation accounting across teams sharing a Digital Asset Management (DAM). |
+| Publish or Files report with the **[!UICONTROL References]** column | Reference counts per asset, so you can identify high-usage assets ahead of a bulk restructuring. | AEM does not store a **[!UICONTROL date this asset started being used]** flag. To find the oldest asset in a tree, generate a **[!UICONTROL Files]** report with the widest possible date range and sort or filter on the creation date instead. |
+| DAM **[!UICONTROL Export Metadata]** feature | A full metadata dump for the selected assets. | Use this instead of the **[!UICONTROL Reports]** tool when you need every metadata property rather than a curated column set. |
+| Dynamic Media Delivery Report (Assets View UI) | Per-asset hit counts or delivery volume for Dynamic Media (Scene7) served assets over a date range. | Covers the Dynamic Media URLs only. | 
+| Adobe Analytics through Experience Platform Tags in Dynamic Media viewers | User interactions, click tracking, traffic sources, geographic data. | It is required for anything beyond simple hit counts, and required for assets delivered through direct **[!UICONTROL publish]** URLs rather than Dynamic Media. Publish-URL traffic is not visible in any AEM Assets report. |
 
-Dynamic Media license billing is based on aggregated page views/visits, not a per-operation (transcode/crop/download) breakdown — the DM Delivery Report and CDN/asset reports do not natively split usage by operation type, so do not expect an operation-level cost report out of the box.
+Dynamic Media license billing is based on the aggregated page views or visits, and not a per-operation (transcode or crop or download) breakdown. The DM Delivery Report and CDN or asset reports do not natively split usage by operation type, so do not expect an operation-level cost report out of the box.
 
 
 ## Generate reports {#generate-reports}
@@ -134,11 +134,11 @@ Dynamic Media license billing is based on aggregated page views/visits, not a pe
 
 ### Permissions required to generate and use reports {#permissions-required-to-generate-and-use-reports}
 
-* Asset Reports (Tools > Assets > Reports) are restricted to users with the Administrator product profile at the IMS level. This is by design — there is no configuration or alternate role that grants non-administrator users the ability to review, create, or download Asset Reports.
-* Users who need to run expiration/scheduled reports must not be granted write access to /libs/dam/gui. Correct permission structure is:
-   * Read access to /libs/dam/gui
-   * Write access only to /var/dam/reports
-* Excess /libs write access is a common misconfiguration to audit for proactively — it does not just fail to work, it can silently corrupt report generation for every user sharing the affected group (see below).
+* Asset Reports (**[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**) are restricted with the Administrator product profile at the IMS level. This is by design, there is no configuration or alternate role that grants non-administrators the ability to review, create, or download the Asset Reports.
+* If you need to run expiration or scheduled reports, you must not be granted write access to **[!UICONTROL /libs/dam/gui]**. The correct permission structure is:
+   * Read access to **[!UICONTROL /libs/dam/gui]**
+   * Write access only to **[!UICONTROL /var/dam/reports]**
+* Excess **[!UICONTROL /libs]** write access is a common misconfiguration to audit for proactively. This does not just fail to work, it can silently corrupt the report generation for sharing the affected group.
 
 ## Add custom columns to reports {#add-custom-columns}
 
@@ -220,14 +220,13 @@ TBD: How do enable this in CS now? Is it done using some OSGi config now?
    >The [!UICONTROL Download] report displays details of only those assets which are downloaded after selecting individually or are downloaded using Quick Action. However, it does not include the details of the assets that are inside a downloaded folder.
 -->
 
-### Troubleshooting: reports fail silently, don't appear in the listing, or notifications aren't sent {#troubleshooting-reports-fail-silently}
-
-1. Check for an unexpected node at /libs/dam/gui/content/reports. If a user with write access to /libs/dam/gui has ever triggered report creation, AEM can create a stray generatereport.export.json node there. Its presence causes report-generation requests to be routed to the default servlet instead of the intended report-generation servlet, so the report never appears in the listing and no email notification is sent — for any user, not just the one who created the node.
-   1. Fix: remove create/modify/delete permissions on /libs/dam/gui from the affected users/groups, then delete the stray node, then retest.
-2. Check for a NullPointerException tied to report configuration. If no values were selected under Configure Columns when creating the report, the reportColumns value is null and the report gets stuck in a queued state indefinitely (this can also block report deletion/cancellation). Fix: recreate the report and explicitly select the default columns.
-3. Confirm the requesting user has the Administrator product profile. A non-administrator will not be able to see or use the Reports feature at all — this is expected, not a bug.
-4. Distinguish "report ran but looks incomplete" from "report is broken": if an Upload/Download report is missing assets you expect to see, first confirm whether those assets were created by a named user vs. a system/import process, and whether they fall within the selected date range, before treating it as a defect.
-5. Periodically audit for users/groups with /libs write access who only need report-generation capability — this prevents the stray-node failure mode described above before it happens.
+* **[!UICONTROL Check for an unexpected node at  /libs/dam/gui/content/reports]**. If you with write access to **[!UICONTROL /libs/dam/gui]** have ever triggered the report creation, AEM creates a stray **[!UICONTROL generatereport.export.json]** node there. Its presence causes report-generation requests to be routed to the default servlet instead of the intended report-generation servlet, so the report never appears in the listing and no email notification is sent for anyone, not just the one who created the node.
+   * To fix the issue, remove **[!UICONTROL create/modify/delete]** permissions on **[!UICONTROL /libs/dam/gui]** from the affected users or groups, then delete the stray node, then retest.
+* **[!UICONTROL Check for a  NullPointerException]** tied to the report configuration. If no values were selected under **[!UICONTROL Configure]** Columns when creating the report, the **[!UICONTROL reportColumns]** value is null and the report gets stuck in a queued state indefinitely. This can also block the report deletion or cancellation. 
+   * To fix the issue, recreate the report and explicitly select the default columns.
+* **[!UICONTROL Confirm the requesting user has the Administrator product profile.]** A non-administrator cannot see or use the **[!UICONTROL Reports]** feature at all. This is expected, not a bug.
+* **[!UICONTROL Distinguish report ran but looks incomplete from report is broken]**: if an **[!UICONTROL Upload]** or **[!UICONTROL Download]** report is missing in assets you expect to see, first confirm whether those assets were created by a named user versus a **[!UICONTROL system/import]** process, and whether they fall within the selected date range, before treating it as a defect.
+* Periodically audit for users or groups with **[!UICONTROL /libs]** write access who only need the report-generation capability. This prevents the stray-node failure mode before it happens.
 
 **See also**
 
