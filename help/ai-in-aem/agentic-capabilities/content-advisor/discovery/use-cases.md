@@ -288,6 +288,8 @@ Sample prompts:
 
 * List all content fragments created in last 2 weeks.
 
+<!--
+
 ### Forms {#discovery-agent-use-cases-forms}
 
 The Content Discovery Agent helps you quickly find adaptive forms using natural language prompts. It searches through form content and metadata to find matches based on keywords from your prompts. This means you can successfully discover relevant forms even if your search terms are not in the form's title or description.
@@ -301,6 +303,8 @@ Sample prompts:
 * Show me credit card application forms.
 
 Note: Form discovery currently supports Edge Delivery Services forms only and tag-based search is not available for forms at this time.
+
+-->
 
 
 ## Search Results {#content-discovery-agentic-capability-search-results}
@@ -319,7 +323,7 @@ Asset metadata includes asset path, Format, Size, Dimensions, Description, Creat
 
 >[!NOTE]
 >
->The [Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md) field displays in the search results only if the asset is published and you have a valid Dynamic Media license. Similarly, [Dynamic Media with OpenAPI URL](/help/assets/dynamic-media-open-apis-overview.md) field displays only if you have a valid Dynamic Media license and Dynamic Media with OpenAPI is enabled for your AEM as a Cloud Service instance.
+>The [Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md) field displays in the search results only if the asset is published and you have a valid Dynamic Media license. Similarly, [Dynamic Media with OpenAPI URL](/help/assets/dynamic-media-open-apis-overview.md) field displays only if the asset is approved, you have a valid Dynamic Media license, and Dynamic Media with OpenAPI is enabled for your AEM as a Cloud Service instance.
 
 <!--
 
@@ -333,9 +337,9 @@ You can click the Content Fragment path to seamlessly navigate to the Content Fr
 
 -->
 
-## Content Discovery Agentic Capability availability within Content Hub {#content-discovery-agentic-capability-availability-within-content-hub}
+## Content Discovery Agentic Capability for Content Hub assets {#content-discovery-agentic-capability-availability-within-content-hub}
 
-You can now access the Content Discovery Agentic Capability directly from the Content Hub interface. This feature is available for Content Hub environments that use the latest search stack, which also provides [AI Search](/help/assets/search-assets-content-hub.md#ai-search-aem-assets-content-hub) and sorting capabilities. Adobe is rolling out the latest search stack to Content Hub customers in phases. If AI Search is available in your Content Hub interface, you can use the Content Discovery Agentic Capability.
+You can use the Content Discovery Agentic Capability in [Coworker](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) to discover approved assets available in Content Hub. The capability retrieves these assets from the delivery repository. To use the Content Discovery Agentic Capability with Content Hub assets, your Content Hub environment must use the latest search stack, which also provides AI Search and sorting capabilities. Adobe is rolling out the latest search stack to Content Hub customers in phases. If AI Search is available in your Content Hub interface, you can use the Content Discovery Agentic Capability in Coworker to discover approved assets available in Content Hub.
 
 To view if [AI Search](/help/assets/search-assets-content-hub.md#enable-disable-ai-search-content-hub) is available, navigate to your user profile icon and click **Configurations** on the Content Hub User Interface. Select the **Search** tab. If you can see options to select **AI Search** or **Keyword**, AI Search is available and you are using the latest search stack.
 
@@ -423,7 +427,7 @@ Specify concise details in your natural language prompts so that the Content Dis
 * The Content Discovery Agentic Capability supports dimension-based prompts only for image and SVG format types. For example, `Find images wider than 1080px`.
 
 
-* Editing or writing metadata is not supported (Use [OneAEM MCP](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)).
+* Editing or writing metadata is not supported (Use OneAEM MCP).
 
-* Creating or deleting assets is not supported (Use AEM Assets author)
+* Creating or deleting assets is not supported (Use [AEM Assets author User Interface](/help/assets/add-delete-assets-view.md))
 
