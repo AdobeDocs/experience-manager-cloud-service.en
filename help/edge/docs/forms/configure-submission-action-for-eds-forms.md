@@ -152,6 +152,17 @@ For detailed OSGi Referrer Filter configuration, refer to the [Referrer Filter](
 
 Configure CORS settings in AEM to allow requests from your specific Edge Delivery site domains:
 
+>[!IMPORTANT]
+>
+>The CORS settings below go in your dispatcher vhost file. On AEM as a Cloud Service, the shipped `default.vhost` file is read-only and checksum-validated during the Cloud Manager pipeline, so direct edits to it fail to deploy.
+>
+>Before applying the CORS settings, make the vhost file editable:
+>
+>1. Copy `default.vhost` to a new, customer-owned file under `available_vhosts/`.
+>1. Point the `enabled_vhosts/` symlink to that new file.
+>
+>For more information on this file structure, see [Dispatcher overview](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/dispatcher/disp-overview#file-structure).
+
 **Developer Localhost**
 
 ```apache

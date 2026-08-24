@@ -26,6 +26,8 @@ AEM Edge Functions is compatible with both Edge Delivery Services and AEM as a C
 
 Follow [this tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) for a concrete walk-through for both Edge Delivery Services and AEM as a Cloud Service Java-stack variations.
 
+Also see [this repository](https://github.com/adobe/aem-edge-functions-examples) of code examples, including stitching content at the CDN, and properly fetching content from the AEM publish tier origin.
+
 ## Key Benefits {#key-benefits}
 
 | Benefit | Description |

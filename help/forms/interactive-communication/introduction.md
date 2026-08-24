@@ -10,6 +10,11 @@ exl-id: 50709c68-8666-47da-8788-fad793d870e6
 
 # Introduction to Interactive Communication Editor
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |   This article                |
+| AEM 6.5     |  [Click here](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/interactive-communications-overview)        |
+
 ## What is Interactive Communication Editor?
 
 Interactive Communication (IC) Editor is an intuitive visual design environment within Adobe Experience Manager Forms. It enables organizations to create highly personalized, data-integrated communications in print format using a single authoring experience. These communications are often used for customer correspondence such as billing statements, policy documents, welcome kits, and investment summaries.

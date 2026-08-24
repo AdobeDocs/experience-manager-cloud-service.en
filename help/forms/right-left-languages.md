@@ -12,9 +12,6 @@ role: Admin, User, Developer
 ---
 # Right-to-left languages in HTML5 forms {#right-to-left-languages-in-html-forms}
 
-<span class="preview"> The HTML5 Forms capability is offered as part of Early Access Program. To request access, send an email from your official (work) email ID to aem-forms-ea@adobe.com.
-</span>
-
 HTML5 forms support right-to-left languages such as Hebrew. You can display and fill HTML5 forms in right-to-left languages. You both right-to-left and left-to-right languages in the same form. For example, you can use both English and Hebrew in a common field. Mobile Forms use locale to display localized days and date information in a form.
 
 **Limitation**

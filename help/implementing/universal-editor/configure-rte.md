@@ -59,7 +59,7 @@ The toolbar configuration controls which editing options are available in the UI
 {
   "toolbar": {
     // Text formatting options
-    "format": ["bold", "italic", "underline", "strike"],
+    "format": ["bold", "italic", "underline", "strike", "code_inline", "text_color"],
     // Text alignment options
     "alignment": ["left", "center", "right", "justify"],
     // Text direction options, right-to-left or left-to-right
@@ -67,15 +67,17 @@ The toolbar configuration controls which editing options are available in the UI
     // Indentation controls
     "indentation": ["indent", "outdent"],
     // Block-level elements
-    "blocks": ["paragraph", "h1", "h2", "h3", "h4", "h5", "h6", "code_block"],
+    "blocks": ["paragraph", "h1", "h2", "h3", "h4", "h5", "h6", "code_block", "blockquote"],
     // List options
     "list": ["bullet_list", "ordered_list"],
     // Content insertion
-    "insert": ["link", "unlink", "image", "special_characters"],
+    "insert": ["link", "unlink", "image", "table", "special_characters"],
     // Superscript/subscript
     "sr_script": ["superscript", "subscript"],
     // Editor utilities
-    "editor": ["removeformat"],
+    "editor": ["removeformat", "clean_unsupported_tags", "paste_text", "fullscreen", "find_and_replace"],
+    // Advanced items (e.g. the class picker).
+    "advanced": ["classes"],
     // Section ordering (optional)
     "sections": ["format", "alignment", "list"]
   }
@@ -200,6 +202,40 @@ When `wrapInParagraphs`: `true`:
 >
 >When unwrapping paragraphs (`wrapInParagraphs`: `false`), the sanitizer automatically inserts `<br>` tags between multiple paragraphs to preserve visual line breaks. This follows HTML standards and common practice across major rich text editors.
 
+#### Properties Dialogs {#properties-dialog}
+
+The table plugin ships three property-editor dialogs that open from the **Table** menu when these flags are enabled:
+
+* **Table Properties** — Edit the enclosing table's width/height, cell spacing, cell padding, alignment, border (width/style/color), and background color. Border and cell padding changes fan out to every cell in the same transaction so the visual result matches what a user would expect.
+* **Row Properties** — Edit the enclosing row's row type (Header/Body/Footer), alignment, height, border (width/style/color), and background color. Row type is section-only (matching TinyMCE's default `table_header_type: "section"`): a Header row moves into `<thead>` on serialization but its cells remain `<td>`. Use **Cell Properties** -> **Header cell** for `<th>`. On serialization the rows are grouped into real `<thead>`/`<tbody>`/`<tfoot>` sections (matching TinyMCE/Word). See the storage note below. Borders fan out to the row's cells so they render under border-collapse.
+* **Cell Properties** — Edit the selected cell(s) cell type (Cell/Header cell), width/height, horizontal and vertical alignment, border (width/style/color), and background color. When a `CellSelection` spans multiple cells, the patch is applied to every selected cell at once. The cell type toggles the cell between `table_cell` (`<td>`) and `table_header` (`<th>`).
+
+All three default to disabled (opt-in), matching the rest of the RTE config surface where capabilities are off until a consumer explicitly enables them. Opt in per consumer when you want the dialogs surfaced:
+
+```json
+{
+  actions: {
+    table: {
+      showTableProperties: true, // default false: show "Table Properties" menu item
+      showRowProperties: true,   // default false: show "Row Properties" menu item
+      showCellProperties: true,  // default false: show "Cell Properties" menu item
+    }
+  }
+}
+```
+
+#### Properties Dialog Options {#properties-dialog-options}
+
+|---|---|---|
+|Option|Default|Effect|
+|`showTableProperties`|`false`|Show the **Table Properties** item in the **Table** dropdown|
+|`showRowProperties`|`false`|Show the **Row Properties** item in the **Row** submenu|
+|`showCellProperties`|`false`|Show the **Cell Properties** item in the **Cell** submenu|
+
+The dialogs round-trip through `htmlAttrs.style` on the respective ProseMirror node, i.e. inline CSS like TinyMCE/Word emit, not custom data attributes. Cell width also writes the schema-level `colwidth` so it survives PM's table machinery. Cell type is carried by the node tag (`<td>`/`<th>`).
+
+The `prosemirror-tables` schema is flat (`table` -> `table_row` -> `cell`) with no `<thead>`/`<tbody>`/`<tfoot>` section nodes, so internally a row's Header/Body/Footer intent is held on the `<tr>` as a `data-row-type` marker. When a row's type changes, the rows are re-sorted in place into header -> body -> footer order within the same transaction, so the editor canvas matches the exported structure live (Header rows hoist to the top, Footer rows sink to the bottom, like TinyMCE). This in-editor reorder is skipped when any cell spans multiple rows (`rowspan > 1`), where moving a row would corrupt the grid. On the way out, `sanitizeHTML` groups the rows into real `<thead>`/`<tbody>`/`<tfoot>` sections (header rows first, footer rows last) and drops the marker, producing the same structure TinyMCE/Word emit. On the way in, a `<tr>`'s enclosing section is read back into the marker, so sectioned HTML round-trips.
+
 ### Link Actions {#link}
 
 Link actions support target attribute control to manage link behavior. The following sections are available.
@@ -247,6 +283,22 @@ Image actions support picture element wrapping to generate responsive image mark
 
 * `wrapInPicture`: `false` (default) - Generate simple `<img>` elements
 * `wrapInPicture`: `true` - Wrap images in `<picture>` elements for responsive design
+
+### Full Screen {#full-screen}
+
+The full screen action toggles the editor into and out of full screen mode:
+
+```json
+{
+  actions: {
+    fullscreen: {
+      label: "Fullscreen"; // Custom button label
+    }
+  }
+}
+```
+
+When full screen is active, the editor wrapper receives the class `rte-fullscreen-wrapper`. Consumer apps can target this class to apply custom styles or CSS properties (e.g. z-index, dimensions, overlay). (Not supported in the Universal Editor)
 
 ### Indentation Configuration {#indentation}
 
@@ -362,6 +414,70 @@ This example uses `characters` as the base, then appends additional characters u
 }
 ```
 
+### CSS Classes {#css-classes}
+
+The `classes` action adds a dropdown that applies a configurable CSS class to RTE content. It is listed as an item in the `advanced` section. The plugin only writes/removes class names on the produced HTML. The consumer app owns the actual CSS for each class and is responsible for loading it wherever the RTE content is rendered (editor, preview, publish).
+
+The dropdown only appears when at least one option is configured. The plugin ships with no defaults.
+
+```json
+{
+  toolbar: {
+    advanced: ["classes"],
+    sections: ["blocks", "format", "advanced"],
+  },
+  actions: {
+    classes: {
+      label: "Add Custom Class",
+      options: [
+        { value: "rte-hero", label: "Hero title" },
+        { value: "rte-lede", label: "Lede paragraph" },
+        { value: "rte-callout", label: "Callout block" },
+        { value: "rte-pill", label: "Pill (inline)" },
+      ],
+    },
+  },
+}
+```
+
+Each entry has value (the CSS class name written to the HTML) and label (the human-readable text shown in the dropdown).
+
+The target follows the closest-to-caret-wins rule:
+
+* **Empty selection inside a managed span:** The class is applied to that span run, not the block. Picking a different class swaps the span's class; **Remove Custom Class** clears it.
+* **Empty selection elsewhere (cursor only):** The chosen class is applied to the nearest block-level ancestor of the cursor (`<p>`, `<h1>`, etc.). When the cursor is inside a list item or table cell that wraps a paragraph, the `<li>`/`<td>`/`<th>` receives the class, not the inner paragraph.
+* **Real selection:** The selected text is wrapped in a `<span class="...">`. If the selection already has a span, the existing span's class is updated.
+* **Remove Custom Class**: Remove the managed class from the target (span run or block, whichever the caret resolves to). If the only remaining attribute on a span was the managed class, the span itself is unwrapped. The **Remove Custom Class** option only appears when a managed class is currently active.
+
+Existing classes that aren't part of the configured options list are preserved untouched. Only the managed classes are swapped in/out. Consumer-set classes coexist safely with the plugin.
+
+Dropdown reflection:
+
+* With only the cursor placed, the dropdown reflects the closest managed class: the span at the caret if there is one, otherwise the block under the cursor.
+* With a selection, the dropdown reflects the managed class on the span wrapping the selection. Only when the entire selection shares the same class. Mixed selections show nothing selected.
+
+### Block Types {#block-types}
+
+The `blocks` toolbar section renders a dropdown that switches the current block between the configured block types. Supported values are `paragraph`, `h1`–`h6`, `code_block`, and `blockquote`.
+
+* `blockquote` is a wrapping block (its ProseMirror `content` is `block+`), unlike `paragraph`/`h1`–`h6`/`code_block` which are text blocks. Selecting **Quote** wraps the current block in a `<blockquote>` The dropdown then shows **Quote** as selected while the caret is inside one. Selecting any other block type (e.g. **Paragraph**) while inside a quote lifts the block out of the quote first, so it also leaves the quote. This mirrors TinyMCE's blocks dropdown.
+* Because it is a wrapping node, a `<blockquote>` can hold multiple paragraphs, lists, or even nested quotes. This is what lets externally-authored content round-trip losslessly: TinyMCE (legacy content) and Word (paste) both emit `<blockquote><p>…</p></blockquote>` (often multi-paragraph), and that structure is preserved on load, edit, and serialize rather than being flattened.
+* As with all block types, the consumer app owns the CSS that visually styles `<blockquote>` wherever the RTE content is rendered.
+
+```json
+{
+  "toolbar": {
+    "blocks": ["paragraph", "h1", "h2", "h3", "code_block", "blockquote"],
+    "sections": ["blocks"],
+  },
+  "actions": {
+    "blockquote": {
+      "label": "Quote", // Custom dropdown label
+    },
+  },
+}
+```
+
 ### Paste as Text {#paste-as-text}
 
 The `paste_text` editor action enables a standard paste-as-plain-text workflow.
@@ -381,6 +497,28 @@ The `paste_text` editor action enables a standard paste-as-plain-text workflow.
       "label": "Paste as Text"
     }
   }
+}
+```
+
+### Find and Replace {#find-replace}
+
+The `find_and_replace` editor action uses [`prosemirror-search`](https://github.com/ProseMirror/prosemirror-search) (match highlights) plus a command plugin keyed by `FIND_AND_REPLACE_PLUGIN_KEY`.
+
+* **Integration:** Add `createFindAndReplacePlugin()` to your editor's ProseMirror plugins when `toolbar.editor` includes `find_and_replace`.
+* **API:** Use `FIND_AND_REPLACE_PLUGIN_KEY.getState(state)` to access `find`, `replaceNext`, `replaceAll`, and `getMatchCount`.
+* **Styles:** Ensure your app loads CSS for `.ProseMirror-search-match` and `.ProseMirror-active-search-match` (from `prosemirror-search`'s style/`search.css` or your own equivalent).
+
+```json
+{
+  "toolbar": {
+    "editor": ["find_and_replace"],
+    "sections": ["editor"],
+  },
+  "actions": {
+    "find_and_replace": {
+      "label": "Find and replace",
+    },
+  },
 }
 ```
 
@@ -421,7 +559,8 @@ The following is an example of a complete configuration.
       "toolbar": {
         "format": [
           "bold",
-          "italic"
+          "italic",
+          "text_color"
         ],
         "blocks": [
           "paragraph",
@@ -437,6 +576,10 @@ The following is an example of a complete configuration.
           "unlink",
           "image",
           "special_characters"
+        ],
+        "editor": [
+          "removeformat",
+          "paste_text"
         ],
         "sections": [
           "format",
@@ -486,6 +629,10 @@ The following is an example of a complete configuration.
           "appendCharacters": [{ "character": "\u2605", "title": "Black star" }],
         },
         // Other actions with basic customization
+        "paste_text": {
+          "shortcut": "Mod-Shift-v",
+          "label": "Paste as Text",
+        },
         "h1": {
           "shortcut": "Mod-Alt-1",
           "label": "Main Heading"
@@ -635,6 +782,30 @@ Format actions allow switching between HTML variants.
 
 Choose semantic tags (`<strong>`, `<em>`, `<del>`) for better accessibility and SEO.
 
+### Inline Code {#inline-code}
+
+The `code_inline` format option marks a span of text as inline code, rendering `<code>` (for example, referencing a `foo()` call inside a sentence). Unlike `bold`/`italic`/`strike` it has no tag-switching option, and it excludes all other marks. Inline code is rendered verbatim, so `bold`/`italic`/`link` can not be applied on top of it. The default keyboard shortcut is `Mod-e`.
+
+This is distinct from the `code_block` block (`<pre><code>`) available in the `blocks` dropdown. `code_inline` is an inline mark within a line, while `code_block` is a standalone, multi-line block. Code blocks hold plain text only (no marks), so an inline `<code>` is never nested inside a `<pre>`.
+
+```html
+Use the <code>foo()</code> helper here.
+```
+
+### Text Color {#color}
+
+The `text_color` format option adds text coloring capabilities to the editor.
+
+```html
+<!-- With color applied -->
+<span style="color: #ff0000">Colored text</span>
+
+<!-- Color removed -->
+Plain text
+```
+
+The plugin also parses legacy `<font color="...">` elements for backward compatibility.
+
 ### Keyboard Shortcuts {#keyboard-shortcuts}
 
 Shortcuts use the format `Mod-Key`(s) where:
@@ -657,4 +828,35 @@ const rteConfig = {
 |`false` (default)|Unknown HTML tags are dropped during parsing.|
 |`true`|Unknown HTML tags are wrapped in a custom unsupported-block node so content can round-trip safely.|
 
-When enabled, the editor renders unsupported nodes with a `rte-unsupported-block` class. Consumer apps should provide the styling for this class (e.g., border, padding, background). The tag label inside the block uses `rte-unsupported-label`, which can also be customized.
+### `unsupportedHtmlOptions.structuralTags` (optional) {#unsupportedhtmloptions}
+
+Use `unsupportedHtmlOptions.structuralTags` to control which additional structural tags are treated as supported HTML.
+
+```javascript
+const rteConfig = {
+  unsupportedHtml: true,
+  unsupportedHtmlOptions: {
+    structuralTags: ["div", "section"], // preserve configured tags as supported
+  },
+};
+```
+
+|Value|Behavior|
+|---|---|
+|Omitted/`[]`|No additional structural tags are whitelisted.|
+|`["div"]`|`<div>` is treated as supported HTML and is not wrapped as unsupported.|
+|`["div", "section"]`|Both `<div>` and `<section>` are treated as supported HTML and are not wrapped as unsupported.|
+
+>[!NOTE]
+>
+>`unsupportedHtmlOptions` only affects behavior when `unsupportedHtml` is enabled.
+
+When enabled, the editor renders unsupported nodes with wrapper tags (`unsupported-block`/`unsupported-inline`) and wrapper classes. Consumer apps should provide the styling for this class (e.g., border, padding, background). The tag label inside the block uses `rte-unsupported-label`, which can also be customized.
+
+* `rte-unsupported-block`
+* `rte-unsupported-inline`
+* `rte-unsupported-label`
+
+Consumer apps should provide styling for these classes (e.g. border, spacing, background, and inline alignment).
+
+When `unsupportedHtml` is enabled, the consumer should add the unsupported nodes plugin (e.g. `createUnsupportedNodesPlugin()`) so that copying an unsupported block or inline node puts its inner text on the clipboard (plain text only) and users can paste the content elsewhere.

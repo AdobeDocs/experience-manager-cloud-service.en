@@ -12,9 +12,6 @@ role: Admin, User, Developer
 ---
 # Rendering form template for HTML5 forms {#rendering-form-template-for-html-forms}
 
-<span class="preview"> The HTML5 Forms capability is offered as part of Early Access Program. To request access, send an email from your official (work) email ID to aem-forms-ea@adobe.com.
-</span>
-
 ## Render Endpoint {#render-endpoint}
 
 HTML5 forms have the notion of **Profiles** which are exposed as REST Endpoints to enable Mobile Rendering of Form Templates. These Profiles have associated **Profile Renderer**. They are JSP pages responsible for generating HTML representation of the form by calling the Forms OSGi service. The JCR path of the Profile node determines the URL of the render end point. The default render end point of the form pointing to 'default' profile looks like:

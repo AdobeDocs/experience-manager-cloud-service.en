@@ -1,48 +1,52 @@
 ---
-title: Release Notes for Cloud Manager 2026.6.0
-description: Learn about the release of Cloud Manager 2026.6.0 in Adobe Experience Manager as a Cloud Service.
+title: Release Notes for Cloud Manager 2026.8.0
+description: Learn about the release of Cloud Manager 2026.8.0 in Adobe Experience Manager as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 ---
-# Release notes for Cloud Manager 2026.6.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release notes for Cloud Manager 2026.8.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Learn about the release of Cloud Manager 2026.6.0 in AEM (Adobe Experience Manager) as a Cloud Service.
+Learn about the release of Cloud Manager 2026.8.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
 See also the [current release notes for Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Release dates {#release-date}
 
-The release date for Cloud Manager 2026.6.0 in AEM as a Cloud Service is Thursday, June 4, 2026. 
+The release date for Cloud Manager 2026.8.0 in AEM as a Cloud Service is Thursday, August 6, 2026. 
 
-The next planned release is Thursday, July 9, 2026.
-
-
-## What's new - Cloud Manager {#cloud-manager-whats-new}
-
-* **Customer-managed keys (CMK) self-service**
-    Customers can now configure Customer-Managed Keys directly from Cloud Manager, without requiring Adobe support involvement. A new CMK option is available during program creation or program edit, and on the Environment details page.
-
-    See [Create Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#create) and [Edit Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing).
-
-    CMK status is displayed on My Programs cards and in the license dashboard, giving administrators clear visibility into encryption configuration across all environments. This approach simplifies compliance workflows for organizations that require control over their own encryption keys.
-
-    ![My Programs card showing a Customer Managed Key icon](/help/implementing/cloud-manager/release-notes/assets/cmk-status-on-program-card.png)
-    *My Programs card*
-  
-    ![Set up for production dialog box showing Security tab with Customer Managed Keys option selected](/help/implementing/cloud-manager/release-notes/assets/cmk-security-tab-in-set-up-for-production-dlg.png)
-    *Customer Managed Keys selected in the Security tab of the Set up for production dialog box*
-
-    ![Displaying the number of Customer Managed Keys available in the license dashboard](/help/implementing/cloud-manager/release-notes/assets/cmk-license-dashboard.png)
-    *Showing the number of Customer Managed Keys available in the license dashboard*
+The next planned release is Thursday, September 3, 2026.
 
 
-* **Environment variable limit increased to 400**
-    Cloud Manager now supports up to 400 environment variables per environment, doubled from the previous limit of 200. 
+### Git submodule authentication for external repositories
 
-    Pipeline variables remain capped at 200. The UI enforces the correct limit per context and prevents additions beyond the allowed threshold.
+If your external Git repository (Bring Your Own Git) uses Git submodules, Cloud Manager now automatically authenticates submodule fetches from other repositories in the same organization during pipeline builds. Previously, submodule repositories not individually registered in Cloud Manager failed authentication, so those fetches failed. Credentials are handled server-side and are never exposed to the build environment. No configuration is required, and existing pipelines continue to run without changes.
 
-    This change supports customers with more complex deployment configurations that require a larger number of environment-specific settings. <!--CMGR-76755 · CMGR-76753 -->
+For more information, see [Git submodule support for external repositories](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/git-submodules#external-repositories).
+
+
+## New features - Cloud Manager {#cloud-manager-whats-new}
+
+<!--
+* **GitHub Apps for EDS sites**  
+    Cloud Manager now exposes an option for managing GitHub App connections on provisioned Edge Delivery Services (EDS) sites. This option allows teams and automation tools to configure GitHub App integrations programmatically, rather than through manual setup for each site. (CMGR-78197) new doc needed
+-->
+
+* **Git submodule authentication for external repositories** 
+    If your external Git repository (Bring Your Own Git) uses Git submodules, Cloud Manager now automatically authenticates submodule fetches from other repositories in the same organization during pipeline builds. Previously, submodule repositories not individually registered in Cloud Manager failed authentication, so those fetches failed. Credentials are handled server-side and are never exposed to the build environment. No configuration is required, and existing pipelines continue to run without changes. (CMGR-76737) <!-- new doc already added for this release -->
+
+    For more information, see [Git Submodule Support for Adobe Repositories](/help/implementing/cloud-manager/managing-code/git-submodules.md#external-repositories).
+
+* **Content sync API returns an Execution-Id for tracking**  
+    Content sync actions triggered through the Cloud Manager API now return an Execution-Id header in the response. Customers can use this identifier to track and correlate the status of a specific content sync operation, making it easier to monitor sync activity from external tooling. (CMGR-78234) <!-- no new doc needed -->
+
+* **GitLab External Git (BYOG) required a manual Sync Code step for new branches**
+    Customers using GitLab with External Git (BYOG) manually triggered a Sync Code action in Cloud Manager before the Edge Delivery Services webhook picked up a new branch. New branches are now synced automatically, removing the need for this manual step. (CMGR-77786) <!-- no new doc needed -->
+    
+
+
+
+
 
 
 ## Beta programs {#private-beta-program}
@@ -51,7 +55,7 @@ To get exclusive access to upcoming features before their general release, you c
 
 >[!IMPORTANT]
 >
->Beta releases contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support the beta releases. Customers use beta releases at their own risk and should not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Any use of the beta releases is entirely at the customer's own risk.
+>Beta releases contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support the beta releases. Customers use beta releases at their own risk; do not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Any use of the beta releases is entirely at the customer's own risk.
 
 See also [AEM Beta programs](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
 
@@ -77,47 +81,23 @@ For more information, see [Flexible Publish Tier (Beta)](/help/implementing/clou
 
 To join the beta, email [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com) with your Adobe Organization ID and Program ID.
 
-### Improved build performance with module caching {#quick-build-cm-pipelines}
-
-A new build model compiles only changed modules (rather than the entire repository) using module-level caching to improve build performance. It applies to production pipelines. You control which production pipelines use **Smart Build**.
-
-For more information, see the following:
-
-* [Using Smart Build in a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build).
-* [Add a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
-
-To join the Beta, email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) with your Adobe Organization ID and Program ID.
-
-<!-- 
-OLD
-### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
-
-[Experience Hub](/help/experience-hub.md) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI Extensions so they can help you enable them in Experience Hub with minimal effort.
-
-![Diagram of Experience Hub extensibility and customization workflow](/help/implementing/cloud-manager/release-notes/assets/experience-hub-extensibility-customization.png)
-
-Embed custom experiences in Experience Hub to extend and personalize your organization's dashboard. In addition to Adobe's built-in widgets, add your own using the [UI Extensibility](https://developer.adobe.com/uix/docs/) framework. Build JavaScript-based UI apps and surface them to your users to meet business-specific requirements and workflows. 
-
-Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com) with your Adobe OrgID and a short description of the customization you intend to create.
--->
-
-<!-- 
-OLD
-### Support for Custom Author Domains in Cloud Service
-
-AEM Cloud Service is going to soon support one custom domain per Author environment.
--->
-
 
 
 ## Bug fixes {#bug-fixes}
 
-* **Environment stuck in Updating with no active operation**
-    An issue is now resolved where environments become permanently stuck in an Updating state even when no pipeline run or configuration change is in progress. Affected environments can now be managed normally without requiring manual intervention from Adobe support. (CMGR-77133)
-* **Advanced Networking - wrong port-forwarding rule deleted on duplicate source ports**
-    When two port-forwarding rules in Advanced Networking share the same source port (portOrig), deleting one rule incorrectly removes the other. Cloud Manager now correctly identifies and removes only the intended rule. (CMGR-77019)
+* Forms add-on incorrectly blocked on programs with Enhanced Security enabled. Customers with Enhanced Security enabled on their program were unable to add the Forms add-on to a Sites environment, even though the two are fully compatible. This restriction has been removed, and Forms can now be added normally regardless of Enhanced Security configuration. (CMGR-78266)
 
-<!-- There are no significant bug fixes in the June 2026 Cloud Manager release. -->
+* Content Hub credit not released after restoring an environment from soft delete. When an environment was restored from a soft-deleted state, its associated Content Hub credit remained marked as consumed even though the environment was active again. Cloud Manager now correctly re-consumes the credit on restore, ensuring credit usage accurately reflects the environment's real state. (CMGR-78204)
+
+* Custom domain mappings stuck in Pending for EDS sites with many domains. EDS sites configured with a large number of domains experienced domain mappings that remained stuck in a Pending state indefinitely, due to a memory issue in the underlying status update process. This issue has been resolved, and domain mapping status now updates reliably regardless of domain count. (CMGR-78179)
+
+* Production-only pipelines incorrectly showed an editable Build variable service. Pipelines configured to run production deployments only, with no build phase — were still displaying "Build" as an editable environment variable service in the UI, even though no build step executed. This configuration has been corrected so the variable service list now accurately reflects the pipeline's actual configuration. (CMGR-78120)
+
+* Pipeline execution status not updating in the UI. In certain cases, the Cloud Manager UI did not reflect the current status of a running pipeline execution, showing outdated information to the user. Pipeline execution status now updates correctly and consistently in the UI. (CMGR-77642)
+
+* EDS Sites showed a generic error when adding a collaborator failed. When adding a collaborator to an EDS site failed, the Cloud Manager UI displayed a generic error message instead of the specific failure reason. The UI now surfaces the actual error detail, helping users self-diagnose collaborator issues. (CMGR-75810)
+
+<!-- There are no significant bug fixes in the July 2026 Cloud Manager release. -->
 
 <!-- ## Known issues {#known-issues} -->
 

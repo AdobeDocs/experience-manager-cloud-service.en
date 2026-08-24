@@ -13,9 +13,6 @@ role: Admin, User, Developer
 ---
 # Best practices for HTML5 forms{#best-practices-for-html-forms}
 
-<span class="preview"> The HTML5 Forms capability is offered as part of Early Access Program. To request access, send an email from your official (work) email ID to aem-forms-ea@adobe.com.
-</span>
-
 ## Overview {#overview}
 
 AEM Forms has a component called HTML5 forms. It helps render existing XFA-based PDF forms (XDP files) in HTML5 format. This document provides guidelines and recommendations to reduce the load time and improve the performance of HTML5 forms on mobile devices.
