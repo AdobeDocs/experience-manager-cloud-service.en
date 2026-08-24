@@ -85,6 +85,8 @@ You can access the AEM Onboarding Agentic Capability via the [Coworker Chat](htt
 | Index custom properties for search | Adds custom `dam:Asset` properties to the search index using a simplified configuration approach, deployed through Adobe Cloud Manager Git change and pipeline. | `aem-search-index` | AEM Assets + Cloud Manager | "Make this custom property searchable"<br>"My custom field isn't showing in search — add it to the index" |
 | Add search filters to the UI | Adds indexed properties as filter fields in the AEM Assets search panel for files, folders, or collections. Requires the property to be indexed first. | `aem-search-form` | AEM Assets | "Add this field as a filter in the search panel"<br>"Customize the AEM Assets search form" |
 
+<!--
+
 ## Metadata form field type reference
 
 | Element Type | Description | Example Properties |
@@ -96,4 +98,6 @@ You can access the AEM Onboarding Agentic Capability via the [Coworker Chat](htt
 | `tag_picker` | Tag selection widget linked to AEM taxonomy | `cq:tags`, `xcm:keywords` |
 | `smart_tags` | AI-generated tags — read-only | `xcm:machineKeywords` |
 | `multi_val` | Multiple free-form values | `dc:subject`, `dc:contributor` |
+
+-->
 

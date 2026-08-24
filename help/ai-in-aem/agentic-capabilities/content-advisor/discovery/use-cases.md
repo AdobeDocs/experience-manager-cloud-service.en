@@ -44,27 +44,101 @@ The Content Discovery Agentic Capability provides the following key skills:
 
 ## Personas {#personas-content-discovery}
 
-### Campaign Managers {#campaign-managers}
-
-The Content Discovery Agentic Capability enables campaign managers to quickly identify and reuse trusted, high-performing content for ideation.
-
-### Channel Marketers {#channel-marketers}
-
-The Content Discovery Agentic Capability allows channel marketers to efficiently find relevant assets to create cohesive, multi-channel experiences.
-
-### DAM Librarians {#dam-librarians}
-
-DAM librarians can flag assets that are missing the metadata standards set by the organization, supporting consistent governance and ensuring assets remain complete and ready for use across channels.
-
-### Agencies and Partners {#agencies-partners}
-
-Agencies and partners can easily find brand-approved assets within Content Hub and reuse them to accelerate creative work while staying aligned with brand standards.
+| Persona | How they use the capability |
+| --- | --- |
+| **Campaign Managers** | Quickly identify and reuse trusted, high-performing content for ideation. |
+| **Channel Marketers** | Efficiently find relevant assets to create cohesive, multi-channel experiences. |
+| **DAM Librarians** | Flag assets missing organizational metadata standards to support governance and ensure assets are complete and ready for use across channels. |
+| **Agencies and Partners** | Find brand-approved assets within Content Hub and reuse them to accelerate creative work while staying aligned with brand standards. |
 
 ## How to Access {#access}
 
 You can access the Content Discovery Agentic Capability via the [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview).
 
 ## Common Use Cases and Sample Prompts {#use-cases-prompts}
+
+### Find assets
+
+| Use case | Description | Sample prompts |
+| --- | --- | --- |
+| **Metadata-based asset discovery** | The Content Discovery Agentic Capability uses natural language prompts to find assets based on metadata available for assets in AEM. Users can discover assets using the following metadata properties: Tags, Created by Email ID, Modified by Email ID, Published by Email ID, Created Date, Modified Date, Published Date, MIME type, Asset Type, Status, file format, file size, image width, image height, and multiple metadata filters within a single prompt.<br><br>The Content Discovery Agentic Capability also searches the custom properties available in metadata schemas for Admin view and metadata forms for Assets view. You can modify your prompts accordingly to search values available within those custom asset properties. | See [Metadata-based asset discovery prompt variations](#metadata-based-prompts) below. |
+| **Natural language support for custom metadata** | The Content Discovery Agentic Capability supports querying custom metadata properties defined in metadata schemas. You can reference metadata values directly in your prompts without needing to specify them using a strict key-value format. The agentic capability interprets intent and matches relevant metadata fields automatically. | See [Custom metadata prompt variations](#custom-metadata-prompt-variations) below. |
+| **Folder-based content discovery** | The Content Discovery Agentic Capability can identify assets by interpreting natural language prompts that reference folder names in AEM. Users can simply mention the folder in their prompt, without manually navigating through the repository, significantly reducing the number of clicks needed to locate the right content. For additional questions to enable folder-based content discovery, see [this response](#additional-questions-folder-content-discovery). | Are there any svgs in folder `WKND`?<br><br>Show assets modified after `Nov 1 2025` in folder `WKND`.<br><br>List `lifestyle` images in folder `WKND`. |
+| **Semantic asset discovery** | The Content Discovery Agentic Capability can find assets based on concepts, moods, and visual themes using semantic matching. This enables users to describe the content they are looking for without relying on exact filenames, tags, or metadata values. | Find me morning coffee lifestyle images. |
+| **Format-based asset discovery** | The Content Discovery Agentic Capability can identify assets that meet specific quality requirements, such as file format, allowing users to quickly locate product visuals that are ready for high-quality delivery and reuse across channels. | Find product packaging PNG images. |
+| **Orientation-based content discovery** | The Content Discovery Agentic Capability can filter assets by recognizing visual attribute, such as the presence of people and the orientation of an image. This allows users to quickly narrow down content to the most relevant visuals without manually applying multiple filters in AEM. | Show assets with person in landscape orientation. |
+| **Filename-based asset discovery** | The Content Discovery Agentic Capability can find assets using an exact or partial filename, allowing users to locate known or partially known assets without navigating the DAM repository. | Find assets with `Morning Muse` in the filename. |
+
+#### Metadata-based asset discovery prompt variations {#metadata-based-prompts}
+
+**Sample prompts**
+
+- **Search based on tags**: Show images tagged `office` in folder `WKND`.
+- **Search based on file format, asset type, asset status and Published by Email ID**: Show images in `.PNG` format that are `approved` and `published by <user email ID>`.
+- **Search based on file format, asset type, asset status and Created by Email ID**: Show videos in `.mp4` format that are approved and `created by <user email ID>`.
+- **Search based on file format, asset type, asset status and Created Date**: Show images in `.PNG` format that are created after January 1, 2025 and `published by <user email ID>`.
+- **Search based on MIME type, Created Date, and Published by Email ID**: Show `image/jpeg` created after `January 1, 2025` and `published by <user email ID>`.
+- **Search for assets with missing metadata**: Show assets created in the last 90 days with `<Name of metadata property including custom properties>` is blank.
+- **Search for assets using file size, image width, and image height**: Show images larger than 5 MB with width greater than 2000 pixels and height greater than 1200 pixels.
+
+>[!NOTE]
+>
+>To improve discovery performance, index relevant custom metadata properties. Indexed properties enable the agentic capability to retrieve matching content faster when users include those properties in their prompts.
+
+#### Custom metadata prompt variations {#custom-metadata-prompt-variations}
+
+**Sample prompts**
+
+- **Finding assets which have a property value is not set**: Find me assets whose campaign Name is not set (the property must be indexed for appropriate results).
+- **Finding assets which have a property value set**: Find me assets whose campaign Name is set (the property must be indexed for appropriate results).
+- **Finding assets which have a property value set to X**: Find me assets whose campaign Name is Coffee-day.
+- **Finding assets which have a property value set to set of values X, Y**: Find me assets whose campaign Name is Coffee-day along with those whose campaign Name is tea-day.
+- **Showing the value of a particular property field**: Get me coffee assets also show me the campaign name of these assets.
+- **Find assets which match a date based property condition**: Get me assets whose license is not expired.
+
+#### Additional questions to enable folder-based content discovery {#additional-questions-folder-content-discovery}
+
+When a folder name is included in a prompt (without the full asset path), the Content Discovery Agentic Capability first checks for a matching folder at the root path `/content/dam/<folder-name>`.
+
+If a matching folder is not found at the root-level, the agentic capability suggests alternative folder paths where the specified folder name exists in the repository. This helps users quickly identify the correct location without manually browsing the folder structure.
+
+For example, the path `/content/dam/<folder-name>` was not found. Did you mean one of these?
+
+- Option 1
+- Option 2
+
+### Explore and refine results
+
+| Use case | Description | Sample prompts |
+| --- | --- | --- |
+| **Expanding search results** | The Content Discovery Agentic Capability returns the top 20 most relevant results per content type for a prompt. If additional matching results are available, users can request the next set by entering a follow-up prompt such as `show me more`. The agentic capability then retrieves the next set of results from the original search, allowing users to progressively explore larger result sets without refining the prompt. | Show me more.|
+| **Sorting search results** | The Content Discovery Agentic Capability allows users to sort search results directly within their natural language prompts. Users can specify sorting criteria such as modified date, created date, or asset name, and choose ascending or descending order. | Find mountain images sorted by modified date in descending order (shows the most recently modified assets first).<br><br>Show mountain images sorted by name in ascending order (shows the image names starting with letter A first followed by B, and so on). |
+| **Asset count and inventory** | The Content Discovery Agentic Capability can count assets based on criteria such as asset type, folder, approval status, or metadata values. This enables users to quickly understand the composition of a result set or asset repository. | How many approved PDFs are in the campaign folder? |
+| **Explore metadata values** | The Content Discovery Agentic Capability can discover the distinct values available for a metadata field across assets, enabling users to explore available classifications and refine subsequent searches. | What Coffee Blend values exist in the products folder? |
+| **Post-processing search results** | After assets are returned, users can continue working with the existing result set by filtering, grouping, sorting, or comparing the returned assets without starting a new search. | From those results, show only the JPEGs. |
+
+### Assess asset readiness
+
+| Use case | Description | Sample prompts |
+| --- | --- | --- |
+| **Metadata completeness audit** | The Content Discovery Agentic Capability helps users identify assets with missing metadata fields, making it easier to find incomplete asset metadata and address gaps before assets are used or published. | Which assets are missing descriptions? |
+| **Approval readiness check** | The Content Discovery Agentic Capability helps users identify assets that do not have an approval status, enabling teams to find assets that may require review before go-live. | Which Frescopa videos have no approval status? |
+| **Large file identification** | The Content Discovery Agentic Capability helps users identify and rank assets by file size, making it easier to find large assets for storage review. | Show me the largest assets in the DAM. |
+| **Duplicate detection** | The Content Discovery Agentic Capability provides limited support for identifying potential duplicate assets. | Are these `coffee-capsules.png` files duplicates? |
+
+Duplicate detection is based on:
+
+1. **Filename matching** — Searches for assets with the same or similar filename, for example, `WKND Brand Guidelines.pdf` and `WKND Brand Guidelines (1).pdf`.
+2. **File size comparison** — When two assets have the exact same byte count, they are likely to be byte-for-byte duplicates.
+
+### Use and continue with discovered assets
+
+| Use case | Description | Sample prompts |
+| --- | --- | --- |
+| **Dynamic Media delivery URLs** | The Content Discovery Agentic Capability can provide optimized Dynamic Media delivery URLs for approved assets, enabling users to retrieve delivery-ready references directly from their discovery results. | Get the delivery URL for `Morning Muse Capsules.png`. |
+| **Next Best Action Suggestions** | The Content Discovery Agentic Capability proactively suggests relevant follow-up actions based on the current search results. The suggestions take into account factors such as folder structure, approval status, file formats, result count, and applied filters, helping users refine, broaden, or continue exploring their results without determining the next prompt themselves.<br><br>Suggested actions can include filtering by folder, format, date range, or approval status; getting counts or breakdowns; retrieving more information about a specific asset; generating delivery or download URLs; exploring metadata values; and paging through additional results. | Filter to only approved assets.<br><br>Show only JPEGs from these results.<br><br>Which assets are missing descriptions?<br><br>Show all assets in this folder.<br><br>What other Coffee Blend values exist?<br><br>Find more results — next page.<br><br>Get the Dynamic Media delivery URL for asset #2. |
+
+<!--
 
 **Metadata-based asset discovery**
 
@@ -234,6 +308,8 @@ Sample prompts:
 
 * Are these `coffee-capsules.png` files duplicates?
 
+-->
+
 <!--
 
 **Performance-aware asset recommendations**
@@ -245,8 +321,6 @@ Sample prompts:
 * Show high-performing assets by view count.
 * Show assets on popular pages by page views.
 * Show high-engagement assets by CTR.
-
--->
 
 **Next Best Action Suggestions**
 
@@ -263,6 +337,8 @@ Sample prompts:
 * What other Coffee Blend values exist?
 * Find more results — next page.
 * Get the Dynamic Media delivery URL for asset #2.
+
+-->
 
 ### AEM Sites pages {#content-discovery-agent-aem-sites-pages}
 
@@ -288,7 +364,6 @@ Sample prompts:
 
 * List all content fragments created in last 2 weeks.
 
-<!--
 
 ### Forms {#discovery-agent-use-cases-forms}
 
@@ -303,8 +378,6 @@ Sample prompts:
 * Show me credit card application forms.
 
 Note: Form discovery currently supports Edge Delivery Services forms only and tag-based search is not available for forms at this time.
-
--->
 
 
 ## Search Results {#content-discovery-agentic-capability-search-results}
