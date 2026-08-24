@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" width="720" height="480" role="img" aria-labelledby="regionCompareTitle regionCompareDesc">
+  <title id="regionCompareTitle">Comparison of AEM Forms traffic routing for different-region and same-region Azure Storage deployments</title>
+  <desc id="regionCompareDesc">Left panel: when AEM and Azure Storage are in different regions, traffic flows from AEM Forms through the Dedicated Egress IP, over the public internet, through the Azure Storage firewall allowlist check, and the submission is stored. Right panel: when AEM and Azure Storage are in the same region, traffic flows from AEM Forms directly over Azure's internal network, bypassing the Dedicated Egress IP, the public internet, and the firewall allowlist check entirely, so the request is rejected with a 403 AuthorizationFailure error.</desc>
+
+  <defs>
+    <marker id="arrowHead2" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#000000"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="720" height="480" fill="#FFFFFF"/>
+
+  <!-- Column headers -->
+  <text x="175" y="28" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" fill="#000000">Different Azure Regions</text>
+  <text x="545" y="28" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" fill="#000000">Same Azure Region</text>
+
+  <!-- LEFT COLUMN -->
+  <rect x="25" y="45" width="300" height="55" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+  <text x="175" y="78" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#000000">AEM Forms submission</text>
+
+  <line x1="175" y1="100" x2="175" y2="134" stroke="#000000" stroke-width="2" marker-end="url(#arrowHead2)"/>
+
+  <rect x="25" y="140" width="300" height="55" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+  <text x="175" y="173" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#000000">Dedicated Egress IP</text>
+
+  <line x1="175" y1="195" x2="175" y2="229" stroke="#000000" stroke-width="2" marker-end="url(#arrowHead2)"/>
+
+  <rect x="25" y="235" width="300" height="55" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+  <text x="175" y="268" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#000000">Public internet</text>
+
+  <line x1="175" y1="290" x2="175" y2="324" stroke="#000000" stroke-width="2" marker-end="url(#arrowHead2)"/>
+
+  <rect x="25" y="330" width="300" height="55" rx="6" fill="#D6EAF8" stroke="#000000" stroke-width="2"/>
+  <text x="175" y="358" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#000000">Azure Storage firewall</text>
+  <text x="175" y="374" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#333333">(allowlist check)</text>
+
+  <line x1="175" y1="385" x2="175" y2="419" stroke="#000000" stroke-width="2" marker-end="url(#arrowHead2)"/>
+
+  <rect x="25" y="425" width="300" height="50" rx="6" fill="#D6EAF8" stroke="#000000" stroke-width="2"/>
+  <path d="M50,451 L58,459 L75,438" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="185" y="455" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#000000">Submission stored</text>
+
+  <!-- RIGHT COLUMN -->
+  <rect x="395" y="45" width="300" height="55" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+  <text x="545" y="78" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#000000">AEM Forms submission</text>
+
+  <line x1="545" y1="100" x2="545" y2="134" stroke="#000000" stroke-width="2" marker-end="url(#arrowHead2)"/>
+
+  <!-- Bypassed / ghosted region spanning the three skipped steps -->
+  <rect x="395" y="140" width="300" height="245" rx="6" fill="#E8E8E8" stroke="#000000" stroke-width="2" stroke-dasharray="6,5"/>
+  <text x="545" y="168" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#333333">Bypassed entirely</text>
+  <text x="545" y="188" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333333">Dedicated Egress IP</text>
+  <text x="545" y="206" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333333">Public internet</text>
+  <text x="545" y="224" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333333">Azure Storage firewall allowlist check</text>
+  <line x1="410" y1="150" x2="680" y2="375" stroke="#000000" stroke-width="2"/>
+  <line x1="680" y1="150" x2="410" y2="375" stroke="#000000" stroke-width="2"/>
+  <text x="545" y="335" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333333">Traffic instead travels over</text>
+  <text x="545" y="352" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333333">Azure's internal network</text>
+  <text x="545" y="369" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333333">(same-region routing)</text>
+
+  <line x1="545" y1="385" x2="545" y2="419" stroke="#000000" stroke-width="2" marker-end="url(#arrowHead2)"/>
+
+  <rect x="395" y="425" width="300" height="50" rx="6" fill="#E8E8E8" stroke="#000000" stroke-width="2"/>
+  <path d="M415,438 L429,452 M429,438 L415,452" stroke="#000000" stroke-width="3" stroke-linecap="round"/>
+  <text x="555" y="455" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#000000">403 AuthorizationFailure</text>
+</svg>
