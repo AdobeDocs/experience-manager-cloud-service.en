@@ -4,7 +4,7 @@ description: C2PA metadata, integrated into Dynamic Media, can offer context int
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 ---
-# C2PA metadata in Dynamic Media {#C2PA-metadata-dynamic-media}
+# C2PA metadata in Dynamic Media {#c2pa-metadata-dynamic-media}
 
 Brands are more concerned than ever about content transparency, AI disclosure, and preventing the tampering of assets. The Content Authenticity Initiative (CAI) at Adobe builds tools compliant with the [Coalition for Content Provenance and Authenticity](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model) (C2PA) technical standard. User-Generated Content (UGC) consists of uploading assets to a dedicated Adobe Dynamic Media Classic storage repository and performing related operations. Dynamic Media User-Generated Content (UGC) also follows the C2PA specification. Using C2PA metadata, assets which are generated through AI are digitally signed using the C2PA specification. These signatures embed secure metadata within the asset, enabling users and systems to verify the content's origin and history. The metadata can provide information such as:
 
