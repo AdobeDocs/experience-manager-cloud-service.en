@@ -148,9 +148,6 @@ Sample prompts:
 
 The Content Discovery Agentic Capability returns the top 20 most relevant results per content type for a prompt. If additional matching results are available, users can request the next set by entering a follow-up prompt such as `show me more`. The agentic capability then retrieves the next set of results from the original search, allowing users to progressively explore larger result sets without refining the prompt.
 
-**Finding similar assets**
-
-The Content Discovery Agentic Capability allows users to find assets similar to a specific result returned in the search results. After the agentic capability displays the top results for a prompt, you can request similar assets by referencing the position of an item in the results list. For example, a prompt such as `find assets similar to the 3rd result` instructs the agentic capability to identify and return other relevant assets related to that item. This helps users quickly discover related content without creating a new search prompt.
 
 **Sorting search results**
 
@@ -160,10 +157,6 @@ Sample prompts:
 
 * Find mountain images sorted by modified date in descending order (shows the most recently modified assets first).
 * Show mountain images sorted by name in ascending order (shows the image names starting with letter A first followed by B, and so on).
-
-**Context-aware environment detection**
-
-In Admin view, the Content Discovery Agentic Capability automatically detects the authoring environment and uses it to resolve prompts, without requiring you to specify the author URL explicitly.
 
 **Filename-based asset discovery**
 
@@ -205,13 +198,6 @@ Sample prompts:
 
 * Get the delivery URL for `Morning Muse Capsules.png`.
 
-**Download links**
-
-The Content Discovery Agentic Capability can provide download URLs for individual assets returned in the search results.
-
-Sample prompts:
-
-* Give me a download link for asset #2.
 
 **Metadata completeness audit**
 
@@ -323,7 +309,7 @@ Note: Form discovery currently supports Edge Delivery Services forms only and ta
 
 The Content Discovery Agentic Capability returns the top results for each query, sorted by relevance to ensure that the exact matches appear first. The agentic capability combines metadata-driven queries with semantic search to assemble a focused set of likely matches, then uses an LLM to rank them based on user intent. This blended approach delivers accurate, context-aware results without depending entirely on a direct keyword match.
 
-Each result is displayed as an asset card, displaying the asset name and preview. You can view the search results in a card view or a list view. Click **View all** to view the complete list of results, up to a maximum of 50 assets.
+Each result is displayed as an asset card, displaying the asset name and preview. You can view the search results in a card view or a list view. Click **View all** to view the complete list of results, up to a maximum of 10 assets.
 
 Click the More options icon (...) adjacent to each asset card to either download the asset or view asset metadata.
 
@@ -350,10 +336,6 @@ You can click the Content Fragment path to seamlessly navigate to the Content Fr
 ## Content Discovery Agentic Capability availability within Content Hub {#content-discovery-agentic-capability-availability-within-content-hub}
 
 You can now access the Content Discovery Agentic Capability directly from the Content Hub interface. This feature is available for Content Hub environments that use the latest search stack, which also provides [AI Search](/help/assets/search-assets-content-hub.md#ai-search-aem-assets-content-hub) and sorting capabilities. Adobe is rolling out the latest search stack to Content Hub customers in phases. If AI Search is available in your Content Hub interface, you can use the Content Discovery Agentic Capability.
-
->[!IMPORTANT]
->
->This feature is available as a Limited Availability feature.
 
 To view if [AI Search](/help/assets/search-assets-content-hub.md#enable-disable-ai-search-content-hub) is available, navigate to your user profile icon and click **Configurations** on the Content Hub User Interface. Select the **Search** tab. If you can see options to select **AI Search** or **Keyword**, AI Search is available and you are using the latest search stack.
 
@@ -440,8 +422,6 @@ Specify concise details in your natural language prompts so that the Content Dis
 
 * The Content Discovery Agentic Capability supports dimension-based prompts only for image and SVG format types. For example, `Find images wider than 1080px`.
 
-
-* Find Similar capability works only for images with [Smart Tags enhancements](/help/assets/ai-generated-metadata-assets-view.md).
 
 * Editing or writing metadata is not supported (Use [OneAEM MCP](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)).
 

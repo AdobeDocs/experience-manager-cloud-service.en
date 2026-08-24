@@ -144,13 +144,7 @@ Use the Content Optimization Agentic Capability by searching for the right asset
    * Get the progressive download URL for this video.
    * Get the delivery URL for this PDF.
 
-* **Video thumbnail generation**
-
-   The Content Optimization Agentic Capability can generate a thumbnail image from a video asset for use in previews and downstream experiences.
-
-   Sample prompts
-
-   * Get a thumbnail for this video.
+<!--
 
 * **Dynamic Media template personalization**
 
@@ -162,14 +156,7 @@ Use the Content Optimization Agentic Capability by searching for the right asset
    * Auto-parameterize this PSD template.
    * Generate variants from this template using my CSV.
 
-* **DAM path resolution**
-
-   The Content Optimization Agentic Capability can resolve a `/content/dam` path to the corresponding asset ID for delivery URL generation, allowing users to reference an asset by its repository path.
-
-   Sample prompts
-
-   * Get the delivery URL for `/content/dam/frescopa/hero.jpg`.
-
+   -->
 
 ## Optimization Results {#content-optimization-agentic-capability-results}
 
