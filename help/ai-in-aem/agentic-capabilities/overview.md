@@ -42,4 +42,4 @@ The initial release of AEM Agentic Capabilities in CX Enterprise Coworker cover 
 
 The in-app side panel is not part of this release. Use cases that depend on it are therefore not yet available; including conversational authoring of Attribute-Based Access Control (ABAC) policies and assets review.
 
-This page is updated as capabilities become available in Coworker.
+These pages are updated as capabilities become available in Coworker.
