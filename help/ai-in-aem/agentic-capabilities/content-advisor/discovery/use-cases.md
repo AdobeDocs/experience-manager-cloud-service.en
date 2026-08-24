@@ -234,6 +234,8 @@ Sample prompts:
 
 * Are these `coffee-capsules.png` files duplicates?
 
+<!--
+
 **Performance-aware asset recommendations**
 
 The Content Discovery Agentic Capability surfaces asset performance data in search and recommendation results, helping users identify relevant content based on how assets perform on AEM Sites. Performance signals such as average click-through rate (CTR), page views, and view counts provide additional context when evaluating and refining asset results.
@@ -243,6 +245,8 @@ Sample prompts:
 * Show high-performing assets by view count.
 * Show assets on popular pages by page views.
 * Show high-engagement assets by CTR.
+
+-->
 
 **Next Best Action Suggestions**
 
