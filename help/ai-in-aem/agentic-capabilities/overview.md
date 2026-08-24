@@ -34,7 +34,7 @@ A selection of agentic capabilities are available in AEM:
 
 ## Known Limitations {#known-limitations}
 
-The initial release of AEM Agentic Capabilities in CX Enterprise Coworker cover the use cases listed on the pages in this section. 
+The initial release of AEM Agentic Capabilities in CX Enterprise Coworker covers the use cases listed on the pages in this section. 
 
 >[!WARNING]
 >
