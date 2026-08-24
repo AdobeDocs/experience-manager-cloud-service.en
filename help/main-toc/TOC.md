@@ -785,7 +785,7 @@ user-guide-title: AEM as a Cloud Service
       + [Cache Management](/help/assets/cache-management-dynamic-media-open-api.md)
       + [Video smart crops](/help/assets/video-smart-crops.md)
       + [Multi audio and Multi captions](/help/assets/multi-audio-multi-caption.md)
-      + [C2PA metadata](/help/assets/C2PA-metadata-dynamic-media-openapi.md)
+      + [C2PA metadata](/help/assets/c2pa-metadata-dynamic-media-openapi.md)
       + [Frequently asked questions](/help/assets/dynamic-media-open-apis-faqs.md)
   + Working with Assets view {#assets-view}
     + [Introduction](/help/assets/assets-view-introduction.md)
