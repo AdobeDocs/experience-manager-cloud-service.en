@@ -104,6 +104,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2026 {#2026}
+      + [Maintenance Release Notes for 2026.8.0](/help/release-notes/maintenance/2026/2026-8-0.md)
       + [Maintenance Release Notes for 2026.7.0](/help/release-notes/maintenance/2026/2026-7-0.md)
       + [Maintenance Release Notes for 2026.6.0](/help/release-notes/maintenance/2026/2026-6-0.md)
       + [Maintenance Release Notes for 2026.5.0](/help/release-notes/maintenance/2026/2026-5-0.md)
@@ -148,6 +149,7 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2026 {#2026}
+      + [2026.7.0](/help/implementing/cloud-manager/release-notes/2026/2026-7-0.md)      
       + [2026.6.0](/help/implementing/cloud-manager/release-notes/2026/2026-6-0.md)
       + [2026.5.0](/help/implementing/cloud-manager/release-notes/2026/2026-5-0.md)
       + [2026.4.0](/help/implementing/cloud-manager/release-notes/2026/2026-4-0.md)
@@ -265,6 +267,9 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.08.13 Release Notes](/help/release-notes/universal-editor/2026/2026-08-13.md)
+      + [2026.08.06 Release Notes](/help/release-notes/universal-editor/2026/2026-08-06.md)
+      + [2026.07.30 Release Notes](/help/release-notes/universal-editor/2026/2026-07-30.md)
       + [2026.07.16 Release Notes](/help/release-notes/universal-editor/2026/2026-07-16.md)
       + [2026.07.09 Release Notes](/help/release-notes/universal-editor/2026/2026-07-09.md)
       + [2026.07.02 Release Notes](/help/release-notes/universal-editor/2026/2026-07-02.md)
@@ -763,6 +768,8 @@ user-guide-title: AEM as a Cloud Service
     + [HTTP2 Delivery of Content FAQ](/help/assets/dynamic-media/http2faq.md)
     + [Flash Viewers End-of-Life](/help/assets/dynamic-media/flash-viewers-eol.md)
     + [DHTML Viewers End-of-Life](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
+    + [Custom Thumbnail Support for Videos](/help/assets/dynamic-media/custom-thumbnail.md)
+    + [Transcription Support in Dynamic Media Components](/help/assets/dynamic-media/transcription-support.md)
     + Dynamic Media with OpenAPI capabilities {#dynamic-media-open-apis}
       + [Overview](/help/assets/dynamic-media-open-apis-overview.md)
       + [Approve assets](/help/assets/approve-assets.md)
@@ -808,7 +815,7 @@ user-guide-title: AEM as a Cloud Service
     + [Content Credentials](/help/assets/content-credentials.md)
     + [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
     + [AEM Assets View UI Extensibility](/help/assets/aem-assets-view-ui-extensibility.md)
-
+    + [Dynamic Media delivery reports](/help/assets/dynamic-media-delivery-reports.md)
     + [Manage reports](/help/assets/manage-reports-assets-view.md)
     + [Cascading Metadata Assets View](/help/assets/cascading-metadata-assets-view.md)
   + Content Hub {#content-hub}
@@ -907,6 +914,7 @@ user-guide-title: AEM as a Cloud Service
         + [Configure SharePoint Site with limited access using authorization scope](/help/forms/configure-sharepoint-site-limited-access.md)
       + [Submit an Adaptive Form to Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
       + [Submit an Adaptive Form to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
+      + [Azure Blob Storage Network Restrictions and Dedicated Egress IP Considerations](/help/forms/azure-blob-storage-network-restrictions-dedicated-egress-ip.md)
       + [Configure Submit to REST Endpoint submit action for Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
       + [Configure environment-specific REST endpoints for the same Adaptive Form](/help/forms/configure-environment-specific-rest-endpoints.md)
       + [Submit an Adaptive Form to Microsoft&reg; OneDrive](/help/forms/configure-submit-action-onedrive.md)
@@ -1204,16 +1212,16 @@ user-guide-title: AEM as a Cloud Service
     + [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md)
     + [Generate Variations](/help/generative-ai/generate-variations.md)
   + Forms Experience Builder {#forms-experience-builder}
-    + {hide-from-toc} [Forms Experience Builder - Overview](/help/forms/experience-builder/product-overview.md)
-    + {hide-from-toc} [Getting started with Forms Experience Builder](/help/forms/experience-builder/forms-experience-builder-getting-started.md)
-    + {hide-from-toc} [Deploy and configure Forms Experience Builder](/help/forms/experience-builder/deploy-forms-experience-builder.md)
+    + [Forms Experience Builder - Overview](/help/forms/experience-builder/product-overview.md)
+    + [Getting started with Forms Experience Builder](/help/forms/experience-builder/forms-experience-builder-getting-started.md)
+    + [Deploy and configure Forms Experience Builder](/help/forms/experience-builder/deploy-forms-experience-builder.md)
     + How to {#forms-experience-builder-how-to}
-      + {hide-from-toc} [How to convert an image to a form?](/help/forms/experience-builder/intelligent-import-conversion.md)
-      + {hide-from-toc} [How to configure form submissions and integrations?](/help/forms/experience-builder/form-submission-integration.md)
-      + {hide-from-toc} [How to create LLM-enhanced smart fields in Forms Experience Builder? ](/help/forms/experience-builder/forms-experience-builder-llm-smart-fields.md)
-      + {hide-from-toc} [How to start a new thread conversation in forms experience builder?](/help/forms/experience-builder/configure-forms-experience-builder-ui-options.md)
-    + {hide-from-toc} [Prompt Library](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)
-    + {hide-from-toc} [Frequently asked questions (FAQ)](/help/forms/experience-builder/forms-experience-builder-frequently-asked-questions.md)
+      + [How to convert an image to a form?](/help/forms/experience-builder/intelligent-import-conversion.md)
+      + [How to configure form submissions and integrations?](/help/forms/experience-builder/form-submission-integration.md)
+      + [How to create LLM-enhanced smart fields in Forms Experience Builder?](/help/forms/experience-builder/forms-experience-builder-llm-smart-fields.md)
+      + [How to start a new thread conversation in forms experience builder?](/help/forms/experience-builder/configure-forms-experience-builder-ui-options.md)
+    + [Prompt Library](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)
+    + [Frequently asked questions (FAQ)](/help/forms/experience-builder/forms-experience-builder-frequently-asked-questions.md)
 + Screens {#screens-as-cloud-service}
   + Overview to Screens as a Cloud Service {#overview}
     + [Introduction](/help/screens-cloud/introduction/introduction.md)
@@ -1375,6 +1383,10 @@ user-guide-title: AEM as a Cloud Service
     + [Integrate with an Adobe application](/help/headless/content-fragment-selector/integrate-adobe-application.md) 
     + [Integrate with non-Adobe or third party application](/help/headless/content-fragment-selector/integrate-non-adobe-application.md)
     + [Integrate Content Fragment Selector using Vanilla JS](/help/headless/content-fragment-selector/integrate-using-vanilla-js.md)
+  + Content Fragment Creator {#content-fragment-creator}
+    + [Micro-Frontend Content Fragment Creator - Overview](/help/headless/content-fragment-creator/overview.md)
+    + [Content Fragment Creator - Related Properties](/help/headless/content-fragment-creator/properties.md)
+    + [Integrate with a React application](/help/headless/content-fragment-creator/integrate-react-application.md) 
   + [AEM APIs for Structured Content Delivery and Management](/help/headless/apis-headless-and-content-fragments.md)
   + GraphQL API {#graphql-api}
     + [GraphQL API for Content Fragments](/help/headless/graphql-api/content-fragments.md)

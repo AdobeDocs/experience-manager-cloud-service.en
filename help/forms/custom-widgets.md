@@ -20,9 +20,6 @@ role: Admin, User, Developer
 ---
 # Create custom appearances in HTML5 forms{#create-custom-appearances-in-html-forms}
 
-<span class="preview"> The HTML5 Forms capability is offered as part of Early Access Program. To request access, send an email from your official (work) email ID to aem-forms-ea@adobe.com.
-</span>
-
 You can plug in custom widgets to a Mobile Forms. You can extend existing jQuery Widgets or develop your own custom widgets using appearances framework. XFA engine uses various widgets, see [Appearance framework for adaptive and HTML5 forms](/help/forms/custom-widgets.md) for detailed information.
 
 ![An example of default and custom widget](assets/custom-widgets.jpg)
