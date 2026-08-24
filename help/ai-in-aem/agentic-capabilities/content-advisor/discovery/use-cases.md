@@ -7,13 +7,13 @@ role: User, Admin, Developer
 
 # Content Discovery Agentic Capabilities {#content-discovery-agentic-capabilites}
 
-The Content Discovery Agentic Capability of Adobe Enterprise Manager (AEM) as a Cloud Service collaborates with [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) to deliver AEM content on demand through natural, conversational prompts for a streamlined, click-free discovery experience. It intelligently searches across Assets, Content Fragments, AEM Sites pages, and Adaptive Forms to deliver relevant materials such as images, videos, PDF documents, articles, and form templates. Using natural language, you can search for content without building complex queries or applying filters in the AEM Assets interface. Based on your prompt, the agentic capability returns curated results along with asset metadata and delivery URLs, ready to be embedded in other applications.
+The Content Discovery Agentic Capability of Adobe Enterprise Manager (AEM) as a Cloud Service collaborates with [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) to deliver AEM content on demand through natural, conversational prompts for a streamlined, click-free discovery experience. It intelligently searches across Assets, Content Fragments, and AEM Sites pages to deliver relevant materials such as images, videos, PDF documents, and articles. Using natural language, you can search for content without building complex queries or applying filters in the AEM Assets interface. Based on your prompt, the agentic capability returns curated results along with asset metadata and delivery URLs, ready to be embedded in other applications.
 
 Some of the key benefits of the Content Discovery Agentic Capability include:
 
-* **Unified Content Discovery**: Access all types of AEM content, such as images, videos, PDF documents, articles, pages, and forms from a single conversational interface.
+* **Unified Content Discovery**: Access all types of AEM content, such as images, videos, PDF documents, articles, and pages from a single conversational interface.
 
-* **Faster Campaign Planning**: Quickly gather visuals and forms for marketing campaigns across Emails, Web, and Social channels.
+* **Faster Campaign Planning**: Quickly gather visuals for marketing campaigns across Emails, Web, and Social channels.
 
 * **Enhanced Productivity**: Reduce time spent browsing repositories or filtering metadata through automated, intent-based search.
 
@@ -364,6 +364,8 @@ Sample prompts:
 
 * List all content fragments created in last 2 weeks.
 
+<!--
+
 
 ### Forms {#discovery-agent-use-cases-forms}
 
@@ -378,6 +380,8 @@ Sample prompts:
 * Show me credit card application forms.
 
 Note: Form discovery currently supports Edge Delivery Services forms only and tag-based search is not available for forms at this time.
+
+-->
 
 
 ## Search Results {#content-discovery-agentic-capability-search-results}
