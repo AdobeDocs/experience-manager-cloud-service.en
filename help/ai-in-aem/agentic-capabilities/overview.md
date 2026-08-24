@@ -31,3 +31,15 @@ A selection of agentic capabilities are available in AEM:
   * [Content Optimization](/help/ai-in-aem/agentic-capabilities/content-advisor/content-optimization/use-cases.md)
 
 * [Brand Governance](/help/ai-in-aem/agentic-capabilities/brand-governance/use-cases.md)
+
+## Known Limitations {#known-limitations}
+
+The initial release of AEM Agentic Capabilities in CX Enterprise Coworker cover the use cases listed on the pages in this section. 
+
+>[!WARNING]
+>
+>Some capabilities that are available today in AI Assistant are not yet available in Coworker.
+
+The in-app side panel is not part of this release. Use cases that depend on it are therefore not yet available; including conversational authoring of Attribute-Based Access Control (ABAC) policies and assets review.
+
+This page is updated as capabilities become available in Coworker.
