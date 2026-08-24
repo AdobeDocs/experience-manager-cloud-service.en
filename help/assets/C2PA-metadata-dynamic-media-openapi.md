@@ -40,7 +40,7 @@ For more information on downloading the asset using the **attachment** as a modi
 
    >[!NOTE]
    >
-   > When you download a generated rendition, Dynamic Media creates a new output file. As this output is newly generated, Dynamic Media signs the rendition again using the original asset as a source ingredient to preserve the content credentials chain and returns the generated file with C2PA metadata when the source asset is eligible. Similarly, for video assets, Dynamic Media signs each video encode with C2PA metadata, provided the source video is eligible.
+   > When you download a generated rendition, Dynamic Media creates a new output file. As this output is newly generated, Dynamic Media signs the rendition again using the original asset as a source ingredient to preserve the C2PA metadata chain and returns the generated file with C2PA metadata when the source asset is eligible. Similarly, for video assets, Dynamic Media signs each video encode with C2PA metadata, provided the source video is eligible.
 
 5. You can also export an asset from Dynamic Media. 
 
