@@ -12,7 +12,7 @@ Brands are more concerned than ever about content transparency, AI disclosure, a
 This information may include: 
 
 * **Issuer or Signer:** Information about the entity or company that issued the digital signature to certify the certifies or signs the asset.
-* **Issue Date:** The date on which the Content Credential was applied to the asset. 
+* **Issue Date:** The date on which Content Credential was applied to the asset. 
 * **Credit and Usage:** Information about the producer of the asset, including name, social media handles, or other identity-related information. 
 * **Process:** Records of any edits or modifications made to the asset. 
 * **Device Details:** Information about the app or device used to create or edit the asset.
@@ -21,7 +21,7 @@ This information may include:
 
 For a complete view, [Verify](https://contentcredentials.org/verify) can offer a more comprehensive insight into asset history.
  
-Adobe Experience Manager Assets now supports Content Credentials, enabling users to see Content Credentials directly within the Assets view of AEM. When looking at the asset details, any image with Content Credentials (such as those created with GenAI services) shows the manifest details in a dedicated panel. If the asset is downloaded, published, or shared, the Content Credentials remain intact with the asset.
+Adobe Experience Manager Assets now supports Content Credentials, enabling users to see Content Credentials directly within the Assets view of AEM. When looking at the asset details, any image with Content Credentials (such as those created with GenAI services) shows the manifest details in a dedicated panel. If the asset is downloaded, published, or shared, the Content Credentials remains intact with the asset.
 
 ![assets](/help/assets/assets/content-credentials.png)
 
