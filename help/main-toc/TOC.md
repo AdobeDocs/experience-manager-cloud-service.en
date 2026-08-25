@@ -914,7 +914,6 @@ user-guide-title: AEM as a Cloud Service
         + [Configure SharePoint Site with limited access using authorization scope](/help/forms/configure-sharepoint-site-limited-access.md)
       + [Submit an Adaptive Form to Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
       + [Submit an Adaptive Form to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
-      + [Azure Blob Storage Network Restrictions and Dedicated Egress IP Considerations](/help/forms/azure-blob-storage-network-restrictions-dedicated-egress-ip.md)
       + [Configure Submit to REST Endpoint submit action for Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
       + [Configure environment-specific REST endpoints for the same Adaptive Form](/help/forms/configure-environment-specific-rest-endpoints.md)
       + [Submit an Adaptive Form to Microsoft&reg; OneDrive](/help/forms/configure-submit-action-onedrive.md)
@@ -1177,6 +1176,22 @@ user-guide-title: AEM as a Cloud Service
       + [Setting Up Microsoft Copilot Studio with AEM MCP](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
       + [Setting Up JetBrains with GitHub Copilot and AEM MCP](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
   + [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md)
+  + Agentic Capabilities in AEM {#agentic-capabilities}
+    + [Overview](/help/ai-in-aem/agentic-capabilities/overview.md)
+    + Brand Experience {#brand-experience}
+      + Experience Production {#experience-production}
+        + [Experience Production use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/use-cases.md)
+      + Development {#development}
+        + [Development use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/development/use-cases.md)
+      + Onboarding {#onboarding}
+        + [Onboarding use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/onboarding/use-cases.md)
+    + Content Advisor {#content-advisor}
+      + Discovery {#discovery}
+        + [Discovery use cases](/help/ai-in-aem/agentic-capabilities/content-advisor/discovery/use-cases.md)
+      + Content Optimization {#content-optimization}
+        + [Content Optimization use cases](/help/ai-in-aem/agentic-capabilities/content-advisor/content-optimization/use-cases.md)
+    + Brand Governance {#brand-governance}
+      + [Brand Governance use cases](/help/ai-in-aem/agentic-capabilities/brand-governance/use-cases.md)
   + Agents in AEM {#agents}
     + [Overview](/help/ai-in-aem/agents/overview.md)
     + Brand Experience Agent {#brand-experience}
