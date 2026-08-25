@@ -24,6 +24,8 @@ A range of use-cases are covered.
 
 ## Use cases - Forms {#use-cases-forms}
 
+For a fuller picture of the Forms capability, including benefits, skills, personas, and limitations, see [Forms Agentic Capabilities Overview](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/use-cases.md).
+
 | Use Case | Description | Skill(s) | Application | Sample Prompts |
 | --- | --- | --- | --- | --- |
 | Create form using natural language intent | Generate a new Adaptive Form from a plain-language description of the fields and purpose | `aem-forms-adaptiveform-create` | Adobe Experience Manager (AEM) | "Create an employee onboarding adaptive form"<br><br>"Create a &lt;form type&gt; adaptive form" |
