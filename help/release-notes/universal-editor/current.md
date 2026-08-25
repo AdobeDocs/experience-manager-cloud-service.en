@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2026.08.13 Release Notes
-description: These are the release notes for the 2026.08.13 release of the Universal Editor.
+title: Universal Editor 2026.08.20 Release Notes
+description: These are the release notes for the 2026.08.20 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2026.08.13 Release Notes {#release-notes}
+# Universal Editor 2026.08.20 Release Notes {#release-notes}
 
-These are the release notes for the 13 August 2026 release of the Universal Editor.
+These are the release notes for the 20 August 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -18,10 +18,8 @@ These are the release notes for the 13 August 2026 release of the Universal Edit
 >
 >For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-## What's New {#what-is-new}
-
-* [Find and replace](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) is now available in the RTE.
-
 ## Other Improvements {#other-improvements}
 
-* A problem was fixed where the cursor could not be inserted below a table if the table was the last item in a block.
+* Table column widths are now preserved when importing TinyMCE tables into TipTap, ensuring the widths survive the editing round trip.
+* Focus detection for text fields using `url` or `email` value formats was fixed so they are correctly marked as busy.
+* Select boxes omitting configured entries were fixed, ensuring all options with distinct values are displayed.
