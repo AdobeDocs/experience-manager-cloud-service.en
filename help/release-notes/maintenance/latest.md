@@ -10,7 +10,7 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 27830 {#release-X}
+## Release 27830 {#release-27830}
 
 Summarized below are the continuous improvements for maintenance release 27830, which was publicly released on August 26, 2026. The previous maintenance release was release 27673.
 
