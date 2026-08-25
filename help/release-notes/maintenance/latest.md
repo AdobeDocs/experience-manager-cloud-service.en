@@ -43,7 +43,7 @@ The 2026.9.0 feature activation will provide the full feature set for this maint
 * FORMS-26236: The `fd-service` user was missing `jcr:versionManagement` permissions on `/conf`.
 * FORMS-26250: Switching fields in the Rule Editor while rules were still loading applied or saved the wrong field's rules, due to a race condition.
 * FORMS-26476: The Content Tree did not load in the Adaptive Forms editor.
-* FORMS-26500: Uploading multiple files with the same name to a foundation Adaptive Forms file-attachment field saved only one binary on the server.
+* FORMS-26500: On iOS devices, uploading multiple files with the same name to a foundation Adaptive Forms file-attachment field saved only one binary on the server.
 * FORMS-26627: Concurrent read and update calls in the Rule Editor could overlap and corrupt rule state; a blocking loader now prevents this.
 * FORMS-26633: A Forms script misidentified non-Forms dialogs, which broke any component that has an "Advanced" tab.
 * FORMS-26813: The File Attachment component ignored the custom "unsupported file type" message (`acceptMessage`).
