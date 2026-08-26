@@ -786,6 +786,7 @@ user-guide-title: AEM as a Cloud Service
       + [Video smart crops](/help/assets/video-smart-crops.md)
       + [Multi audio and Multi captions](/help/assets/multi-audio-multi-caption.md)
       + [Generate and translate captions](/help/assets/generate-translate-captions.md)
+      + [C2PA metadata](/help/assets/c2pa-metadata.md)
       + [Frequently asked questions](/help/assets/dynamic-media-open-apis-faqs.md)
   + Working with Assets view {#assets-view}
     + [Introduction](/help/assets/assets-view-introduction.md)
@@ -812,7 +813,7 @@ user-guide-title: AEM as a Cloud Service
     + [Watch asset, folders, and collections](/help/assets/manage-notifications-assets-view.md)
     + [Reprocessing](/help/assets/reprocessing-assets-view.md)
     + [Manage tags](/help/assets/tagging-management-assets-view.md)
-    + [Content Credentials](/help/assets/content-credentials.md)
+    + [C2PA metadata](/help/assets/c2pa-metadata-assets-view.md)
     + [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
     + [AEM Assets View UI Extensibility](/help/assets/aem-assets-view-ui-extensibility.md)
     + [Dynamic Media delivery reports](/help/assets/dynamic-media-delivery-reports.md)
@@ -833,6 +834,7 @@ user-guide-title: AEM as a Cloud Service
     + [Manage Licensed Assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md)
     + [Manage collections in Content Hub](/help/assets/collections-content-hub.md)
     + [Edit images using Adobe Express in Content Hub](/help/assets/edit-images-content-hub.md)
+    + [Generate on the fly Dynamic Media Renditions](/help/assets/generate-on-the-fly-dynamic-media-renditions.md)
     + [Asset Insights in Content Hub](/help/assets/insights-content-hub.md)
     + [Frequently asked questions for Content Hub](/help/assets/frequently-asked-questions-content-hub.md)  
   + Best practices{#best-practices}
@@ -1181,7 +1183,7 @@ user-guide-title: AEM as a Cloud Service
     + Brand Experience {#brand-experience}
       + Experience Production {#experience-production}
         + [Experience Production use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/use-cases.md)
-        + [Forms use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/use-cases.md)
+        + [Forms use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/forms-use-cases.md)
       + Development {#development}
         + [Development use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/development/use-cases.md)
       + Onboarding {#onboarding}

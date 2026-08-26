@@ -24,7 +24,7 @@ A range of use-cases are covered.
 
 ## Use cases - Forms {#use-cases-forms}
 
-For a fuller picture of the Forms capability, including benefits, skills, personas, and limitations, see [Forms Agentic Capabilities Overview](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/use-cases.md).
+For a fuller picture of the Forms capability, including benefits, skills, personas, and limitations, see [Forms Agentic Capabilities Overview](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/forms-use-cases.md).
 
 | Use Case | Description | Skill(s) | Application | Sample Prompts |
 | --- | --- | --- | --- | --- |
