@@ -8,7 +8,7 @@ exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
 
 # Universal Editor Preview Release Notes {#preview}
 
-These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 30 July 2026.
+These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 20 August 2026.
 
 These **preview** release notes are provided as a convenience so you know what changes to the Universal Editor are upcoming and you can test them by [switching to your preview version.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -22,8 +22,9 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming Features {#upcoming-features}
 
-* When the asset selector is used with the `xwalk` protocol and a Dynamic Media with Open API asset, the mimeType and alt text is now also stored.
+* An inline code format option has been [added to the RTE](/help/implementing/universal-editor/configure-rte.md#inline-code) and is available in [the editor UI.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 
 ## Upcoming Changes {#upcoming-improvements}
 
-* When a multifield contains three or more items, dragging an item to reorder it upwards now works properly.
+* A bug was fixed where the find and replace feature was not correctly highlighting the matched text in certain situations.
+* A bug was fixed when the undo was not properly applied in some situations.
