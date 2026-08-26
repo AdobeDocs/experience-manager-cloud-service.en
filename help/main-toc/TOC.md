@@ -812,7 +812,7 @@ user-guide-title: AEM as a Cloud Service
     + [Watch asset, folders, and collections](/help/assets/manage-notifications-assets-view.md)
     + [Reprocessing](/help/assets/reprocessing-assets-view.md)
     + [Manage tags](/help/assets/tagging-management-assets-view.md)
-    + [Content Credentials](/help/assets/c2pa-metadata-assets-view.md)
+    + [C2PA metadata](/help/assets/c2pa-metadata-assets-view.md)
     + [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
     + [AEM Assets View UI Extensibility](/help/assets/aem-assets-view-ui-extensibility.md)
     + [Dynamic Media delivery reports](/help/assets/dynamic-media-delivery-reports.md)
