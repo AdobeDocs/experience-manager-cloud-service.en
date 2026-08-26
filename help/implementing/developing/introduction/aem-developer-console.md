@@ -6,7 +6,7 @@ role: Admin, Developer
 exl-id: 4b0fc3e9-b7c4-4c95-bd97-8b24e4d5cb3d
 ---
 
-# AEM as a Cloud Service Developer Console {#developer-console}
+# AEM as a Cloud Service Developer Console (New UI) {#developer-console}
 
 The AEM as a Cloud Service Developer Console includes a set of read-only tools for debugging cloud environments. It can be accessed through a per-environment link in Cloud Manager and offers features to view bundles, OSGi settings, services and servlets, and more.
 
