@@ -1,6 +1,6 @@
 ---
 title: Generate Dynamic Media renditions on the fly from the Content Hub Search bar
-description: Generate channel-specific Dynamic Media renditions from the Content Hub Search bar using natural language prompts.
+description: Generate channel-specific Dynamic Media renditions from the Content Hub Search bar using natural language prompts
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets."
 exl-id: 9b7f5c81-e2ff-444f-97c8-b4ed56f3ef9e
