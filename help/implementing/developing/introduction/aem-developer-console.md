@@ -91,6 +91,7 @@ The environment selector also shows a status light for the selected tier:
 * **Red** — down. You cannot select this tier.
 
 The status light is accompanied by status text, such as running, restarting, hibernated, or stopped.
+If the tier is running (green) but greyed out, that means you lack access. Please ensure you have appropriate rights assigned to the tier.
 
 ## OSGi Bundles Tab {#osgi-bundles}
 
