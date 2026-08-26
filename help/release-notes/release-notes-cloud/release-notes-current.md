@@ -218,45 +218,24 @@ Validate file attachments in Adaptive Forms before or on submission using custom
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation New Features {#foundation-new}
 
+#### AEM Edge Functions (*Public Beta* Program) {#edge-functions}
+
+[AEM Edge Functions](/help/implementing/developing/introduction/edge-functions.md) allows you to execute JavaScript at the Adobe-Managed CDN, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge. It's available for both AEM Cloud Service Java Stack and Edge Delivery Services projects, for AEM Sites customers.
+
+Common use cases include:
+
+* Personalizing content based on geolocation, device type, or user attributes
+* Acting as middleware between the CDN and your origin
+* Reformatting responses from third-party APIs (and perhaps aggregating multiple API responses) before delivering them to the browser
+* Composing and serving server-rendered HTML at the edge using content stitched from various backends
+
+Follow [this tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) for a concrete walk-through for both Edge Delivery Services and AEM as a Cloud Service Java-stack variations.
+
 #### Security Health {#security-health}
 
 [Security Health](/help/security/security-health.md) gives administrators a clear view of their security posture, updated daily. AEM as a Cloud Service now scans your production environments daily and surfaces the findings directly in Experience Hub, under the Admin and IT profile. The checks align with the OWASP Top 10 and cover the issues that most often turn into real incidents. Security Health detects known vulnerabilities in the third-party Java libraries your custom code depends on, with the CVE ID, score, and severity grouping for each finding. It also flags permission problems before they become security problems, from redundant access control entries that create a false sense of protection to too broad permissions that grant far more access than a user actually needs. Every finding comes with the detail to act on it, and each list can be exported as CSV. You can also automatically fix the security health findings with ASO (AEM Sites Optimizer) as an extra option. This release covers the first set of security checks, and additional types of security findings will be added over time.
 
 ![Security Health](/help/release-notes/assets/security-health.png)
-
-#### ChatGPT Plugin {#aem-chatgpt-plugin}
-
-ChatGPT users can browse OpenAI's Plugin marketplace to 1-click install the Adobe Experience Manager Plugin. This MCP server exposes a growing set of tools to interact with AEM, including editing content through prompting.
-
-[Learn more.](/help/ai-in-aem/mcp-support/setup-chatgpt.md#install-adobe-experience-manager-plugin)
-
-#### AEM MCP Server {#aem-mcp-server}
-
-Adobe now offers a unified [**AEM MCP Server**](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#aem-mcp-server), replacing the need to configure multiple domain-specific MCP servers individually. Configure a single URL — `https://mcp.adobeaemcloud.com/adobe/mcp/aem` — in your chat application or coding agent to access a growing set of capabilities, including Content operations (pages, content fragments, and assets – see below) and Experience Governance checks.
-
-New Assets capabilities include upload/download, move/copy/delete, publish/un-publish, editing metadata, inspecting references, and identifying unused assets.
-
-The AEM MCP Server is also used by the [AEM Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md#install-adobe-experience-manager-connector) and [AEM ChatGPT Plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md#install-adobe-experience-manager-plugin).
-
-#### Snapshots for RDEs {#rde-snapshots}
-
-Rapid Development Environments (RDEs) now support a feature [to take a snapshot](/help/implementing/developing/introduction/rapid-development-environments.md#snapshots) of the current state of code and content, which can be restored at a later time. This can be useful when syncing code that may need to be reverted, or when switching between development of different features. It's also possible to restore just the mutable content as a known starting point for testing.
-
-
-#### AEM Code Assessment and auto-fix via IDE AI agent {#ide-ai-aemcode-issues}
-
-AEM Cloud Service Java-stack teams using AI-assisted development tools like Cursor, Claude Code, Visual Studio, and IntelliJ get a new capability: a [code assessment IDE agent skill](/help/ai-in-aem/local-development-with-ai-tools.md#use-the-code-assessment-skill) that automatically detects and fixes issues right in your AEM codebase — catching problems earlier and cutting down on review cycles.
-
-Supported checks include:
-* replacing deprecated APIs
-* modernizing Sling Model dependency injection
-* updating outdated Maven dependencies
-* adding missing timeouts to outbound HTTP calls
-* bounding unbounded queries
-* Sling schedulers
-* resource change listeners
-* the Replication
-* JCR or OSGi event handling
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
@@ -316,28 +295,6 @@ AEM Cloud Service continues to support compiling customer code with Java 11, Jav
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Features {#foundation-early-adopter}
 
-#### AEM Edge Functions (*Public Beta* Program) {#edge-functions}
-
-[AEM Edge Functions](/help/implementing/developing/introduction/edge-functions.md) is now in public beta so you can try it out in a self-serve way without contacting Adobe to enable.
-
-This feature allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge. It's available for both AEM Cloud Service Java Stack and Edge Delivery Services projects, for AEM Sites customers.
-
-Common use cases include:
-
-* Personalizing content based on geolocation, device type, or user attributes
-* Acting as middleware between the CDN and your origin
-* Reformatting responses from third-party APIs (and perhaps aggregating multiple API responses) before delivering them to the browser
-* Composing and serving server-rendered HTML at the edge using content stitched from various backends
-
-Follow [this tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) for a concrete walk-through for both Edge Delivery Services and AEM as a Cloud Service Java-stack variations.
-
-*By using the AEM Edge Functions Beta, you acknowledge that it is still in development and that you should not rely on the correct functioning of the technology or availability of data. This feature is provided as-is,
-may change without notice, and is not covered by production SLAs.*
-
-#### Replication AI Troubleshooting (Beta Program) {#replication-ai-troubleshooting-beta}
-
-Using the AI Assistant in AEM Author and other interfaces, you can troubleshoot replication-related issues such as blocked queues. To join the Beta Program, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com), describing your interest.
-
 #### Canary Production Deployments to Test Code Before Accepting Live Traffic (Beta Program) {#canary-beta}
 
 Validate a production build with internal-only test traffic before exposing it to end users. Ship to production, route only canary traffic (using a special header), monitor behavior, then either promote to live traffic or roll back—without impacting customers.
@@ -349,6 +306,10 @@ Email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-
 Edge Authentication lets you restrict access to Edge Delivery Services pages to only those who have authenticated with your identity provider (IdP). This is achieved by deploying an OpenID Connect (OIDC) configuration YAML file.
 
 If interested, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case and any questions you may have.
+
+#### Replication AI Troubleshooting (Beta Program) {#replication-ai-troubleshooting-beta}
+
+Using the AI Assistant in AEM Author and other interfaces, you can troubleshoot replication-related issues such as blocked queues. To join the Beta Program, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com), describing your interest.
 
 #### OpenTelemetry for Application Performance Monitoring (APM) (Alpha Program) {#apm-alpha}
 
