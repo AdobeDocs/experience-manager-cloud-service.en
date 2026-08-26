@@ -7,7 +7,7 @@ exl-id: 9b7f5c81-e2ff-444f-97c8-b4ed56f3ef9e
 feature: Generative AI
 ---
 
-# Generate Dynamic Media renditions on the fly from the Content Hub Search bar {#generate-dynamic-media-renditions}
+# Generate on the fly Dynamic Media renditions {#generate-on-the-fly-dynamic-media-renditions}
 
 You can generate channel-specific Dynamic Media renditions directly from the Content Hub Search bar using natural language prompts. Content Hub creates optimized renditions on demand for different channels by applying transformations such as resize, smart crop, compression, reformatting, and composite images. These transformations help optimize assets for different channels and improve delivery performance.
 
