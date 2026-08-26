@@ -1,5 +1,5 @@
 ---
-title: Generate Dynamic Media renditions on the fly from the Content Hub Search bar
+title: Generate on the fly Dynamic Media Renditions
 description: Generate channel-specific Dynamic Media renditions from the Content Hub Search bar using natural language prompts
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets."
@@ -12,13 +12,6 @@ feature: Generative AI
 You can generate channel-specific Dynamic Media renditions directly from the Content Hub Search bar using natural language prompts. Content Hub creates optimized renditions on demand for different channels by applying transformations such as resize, smart crop, compression, reformatting, and composite images. These transformations help optimize assets for different channels and improve delivery performance.
 
 Generated renditions are displayed in the **[!UICONTROL Renditions]** tab. You can download a generated rendition or copy its Dynamic Media URL for use in downstream applications and channels.
-
-## Prerequisites {#prerequisites}
-
-Before you begin:
-
-* Ensure that you have access to Content Hub.
-* Ensure that the Generate Dynamic Media renditions feature is enabled for your organization.
 
 ## Generate Dynamic Media renditions {#generate-renditions}
 
