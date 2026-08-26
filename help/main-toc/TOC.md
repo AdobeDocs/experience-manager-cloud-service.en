@@ -785,7 +785,7 @@ user-guide-title: AEM as a Cloud Service
       + [Cache Management](/help/assets/cache-management-dynamic-media-open-api.md)
       + [Video smart crops](/help/assets/video-smart-crops.md)
       + [Multi audio and Multi captions](/help/assets/multi-audio-multi-caption.md)
-      + [C2PA metadata](/help/assets/c2pa-metadata-dynamic-media-openapi.md)
+      + [C2PA metadata](/help/assets/c2pa-metadata.md)
       + [Frequently asked questions](/help/assets/dynamic-media-open-apis-faqs.md)
   + Working with Assets view {#assets-view}
     + [Introduction](/help/assets/assets-view-introduction.md)
@@ -812,7 +812,7 @@ user-guide-title: AEM as a Cloud Service
     + [Watch asset, folders, and collections](/help/assets/manage-notifications-assets-view.md)
     + [Reprocessing](/help/assets/reprocessing-assets-view.md)
     + [Manage tags](/help/assets/tagging-management-assets-view.md)
-    + [Content Credentials](/help/assets/content-credentials.md)
+    + [Content Credentials](/help/assets/c2pa-metadata-assets-view.md)
     + [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
     + [AEM Assets View UI Extensibility](/help/assets/aem-assets-view-ui-extensibility.md)
     + [Dynamic Media delivery reports](/help/assets/dynamic-media-delivery-reports.md)
