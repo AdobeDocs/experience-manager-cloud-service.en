@@ -6,7 +6,7 @@ role: Admin, Developer
 exl-id: 4b0fc3e9-b7c4-4c95-bd97-8b24e4d5cb3d
 ---
 
-# AEM as a Cloud Service Developer Console (Beta) {#developer-console}
+# AEM as a Cloud Service Developer Console (New UI) {#developer-console}
 
 The AEM as a Cloud Service Developer Console includes a set of read-only tools for debugging cloud environments. It can be accessed through a per-environment link in Cloud Manager and offers features to view bundles, OSGi settings, services and servlets, and more.
 
@@ -14,7 +14,7 @@ The AEM as a Cloud Service Developer Console includes a set of read-only tools f
 >
 >This article describes a revamped experience for the AEM as a Cloud Service Developer Console.
 >
->* Adobe is phasing out the old Developer Console and making the new one the default in the summer of 2026.
+>* Adobe is phasing out the Old Developer Console and making the new one the default in the summer of 2026.
 >* For the time being, you can still switch back to the old console, but that option will be removed at a later date.
 >* Adobe welcomes any feedback, which you can send to `aemcs-new-devconsole-ui-beta@adobe.com`.
 >* For the documentation about the current AEM Developer Console, see [this article.](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console)
