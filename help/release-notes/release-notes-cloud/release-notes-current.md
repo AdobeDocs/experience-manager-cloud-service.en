@@ -170,6 +170,25 @@ You can now generate optimized asset renditions directly from the Content Hub se
 
 To participate or learn more, send an email to `aemcontenthubbeta@adobe.com`.
 
+#### Support for additional asset types in Adobe Express integration {#assets-express-integration-asset-types-beta}
+
+Adobe Express integration with Assets helps all users create and edit on-brand content and increase content reuse. We have worked on supporting a growing list of asset / file types to be supported by the integration, and some of them are available early to customers  interested in using them:
+
+**Asset view UI - "Open in Express"** to import an asset into a new Express document in the embedded Express editor:
+
+* **.mp4** video assets
+
+**Assets plugin in Adobe Express** to import an asset into the current Express document:
+
+* **.ai** Adobe Illustrator assets
+* **.indd** Adobe InDesign assets
+* **.mov** video assets
+* **.mp3** audio assets
+* **.gif** animated assets
+
+To participate or learn more, send an email to `aem-assets-express@adobe.com`.
+
+
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 <!--
