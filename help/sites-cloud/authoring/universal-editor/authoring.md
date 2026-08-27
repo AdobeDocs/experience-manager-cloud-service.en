@@ -104,6 +104,7 @@ The rich text editor (RTE) of the Universal Editor allows the author to apply st
 * **Italic**
 * **Underline**
 * **Strikethrough**
+* **Inline code**
 * **Text Color**
   * Opens a color palette where you can select a color or specify a hex value
   * Only available in the modal editor, not in-context
