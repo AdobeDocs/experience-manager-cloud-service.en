@@ -22,9 +22,8 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming Features {#upcoming-features}
 
-* An inline code format option has been [added to the RTE](/help/implementing/universal-editor/configure-rte.md#inline-code) and is available in [the editor UI.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
+* 
 
 ## Upcoming Changes {#upcoming-improvements}
 
-* A bug was fixed where the find and replace feature was not correctly highlighting the matched text in certain situations.
-* A bug was fixed when the undo was not properly applied in some situations.
+*
