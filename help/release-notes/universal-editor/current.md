@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2026.07.30 Release Notes
-description: These are the release notes for the 2026.07.30 release of the Universal Editor.
+title: Universal Editor 2026.08.27 Release Notes
+description: These are the release notes for the 2026.08.27 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2026.07.30 Release Notes {#release-notes}
+# Universal Editor 2026.08.27 Release Notes {#release-notes}
 
-These are the release notes for the 30 July 2026 release of the Universal Editor.
+These are the release notes for the 27 August 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -18,6 +18,11 @@ These are the release notes for the 30 July 2026 release of the Universal Editor
 >
 >For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
+## What's New {#what-is-new}
+
+* An inline code format option has been [added to the RTE](/help/implementing/universal-editor/configure-rte.md#inline-code) and is available in [the editor UI.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
+
 ## Other Improvements {#other-improvements}
 
-* The publish panel now visually adapts more cleanly when [metadata is used to restrict the user's publishing options.](/help/implementing/universal-editor/customizing.md#disable-features)
+* A bug was fixed where the find and replace feature was not correctly highlighting the matched text in certain situations.
+* A bug was fixed when undo was not properly applied in some situations.
