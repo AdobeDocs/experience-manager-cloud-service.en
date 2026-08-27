@@ -240,12 +240,6 @@ Common use cases include:
 
 Follow [this tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) for a concrete walk-through for both Edge Delivery Services and AEM as a Cloud Service Java-stack variations.
 
-#### Security Health {#security-health}
-
-[Security Health](/help/security/security-health.md) gives administrators a clear view of their security posture, updated daily. AEM as a Cloud Service now scans your production environments daily and surfaces the findings directly in Experience Hub, under the Admin and IT profile. The checks align with the OWASP Top 10 and cover the issues that most often turn into real incidents. Security Health detects known vulnerabilities in the third-party Java libraries your custom code depends on, with the CVE ID, score, and severity grouping for each finding. It also flags permission problems before they become security problems, from redundant access control entries that create a false sense of protection to too broad permissions that grant far more access than a user actually needs. Every finding comes with the detail to act on it, and each list can be exported as CSV. You can also automatically fix the security health findings with ASO (AEM Sites Optimizer) as an extra option. This release covers the first set of security checks, and additional types of security findings will be added over time.
-
-![Security Health](/help/release-notes/assets/security-health.png)
-
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
 #### IMS Authentication Rich Errors {#ims-auth-rich-errors}
