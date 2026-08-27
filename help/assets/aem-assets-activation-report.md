@@ -138,11 +138,7 @@ The following will need to be taken into account if:
 4. **Note: Link share on Author:**
    - Folder-level asset counts are available and included from August 20, 2026.
 
-5. **Note: Content Hub downloads:**
-   - Content Hub downloads is available starting November 19, 2025.
-   - Data is available only from Nov 19, 2025.
-
-6. **Note: Dynamic Media:**
+5. **Note: Dynamic Media:**
    - If there is any customer on the list and we do not have full time period data.
 
 ### Asset Insights is still evolving {#asset-insights-is-still-evolving}
