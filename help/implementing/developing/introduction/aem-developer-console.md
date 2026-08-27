@@ -12,12 +12,6 @@ The AEM as a Cloud Service Developer Console includes a set of read-only tools f
 
 >[!NOTE]
 >
->This article describes a revamped experience for the AEM as a Cloud Service Developer Console.
->
->* Adobe is phasing out the Old Developer Console and making the new one the default in the summer of 2026.
->* For the time being, you can still switch back to the old console, but that option will be removed at a later date.
->* Adobe welcomes any feedback, which you can send to `aemcs-new-devconsole-ui-beta@adobe.com`.
->* For the documentation about the current AEM Developer Console, see [this article.](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console)
 >* The AEM as a Cloud Service Developer Console should not be confused with the similarly named [*Adobe Developer Console*.](https://developer.adobe.com/developer-console/)
 
 >[!TIP]
