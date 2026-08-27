@@ -22,9 +22,11 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming Features {#upcoming-features}
 
-* An inline code format option has been [added to the RTE](/help/implementing/universal-editor/configure-rte.md#inline-code) and is available in [the editor UI.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
+* `beforeSave` and `beforeLoad` extensions are now supported in the RTE.
+* [The Page Lock feature](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages) is no longer an [extension,](/help/implementing/universal-editor/extending.md) but a native feature of the Universal Editor.
 
 ## Upcoming Changes {#upcoming-improvements}
 
-* A bug was fixed where the find and replace feature was not correctly highlighting the matched text in certain situations.
-* A bug was fixed when the undo was not properly applied in some situations.
+* A problem was fixed where conditional mandatory validation was no properly updated when a drop-down changed.
+* Filter definitions and flags are now shared with asset picker.
+* Drag and drop is now keyboard accessible.
