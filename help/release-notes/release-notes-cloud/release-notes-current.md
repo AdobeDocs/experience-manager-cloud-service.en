@@ -101,25 +101,27 @@ The Content Fragments Admin UI now supports folder actions like Rename, Copy, Mo
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
+**C2PA metadata support**
+
+Renditions of assets now supports C2PA metadata based on the original, enabling easy labelling of Gen AI manipulated content. This helps Experience Manager customers comply with Gen AI labelling laws; customers should validate compliance with regulations on their own. Metadata can be inspected using any C2PA inspection tool. See [Adobe C2PA inspection tool](https://contentauthenticity.adobe.com/inspect). 
+
+New JCR properties for a C2PA manifest (dam:hasC2PAManifest) and Gen AI (dam:isAiGenerated) labels are available on Assets processed with an embedded C2PA manifest. The Gen AI label property can be used in cases where C2PA is not utilized. This is not recommended since management of the property is manual and many of the Adobe and 3rd party tools use C2PA.
+
+**Assets Insights now supports Adobe Analytics 2.0 API**
+
+Assets Insights in AEM Admin View now supports the Adobe Analytics 2.0 API with OAuth Server-to-Server authentication, enabling continued access to current asset usage insights following the retirement of the Adobe Analytics 1.4 API. Customers can reconfigure their Assets Insights integration to resume synchronization of impressions and clicks from Adobe Analytics, including data collected during the transition period, without losing existing insights data.
+
 ### New Features in Dynamic Media {#new-features-dynamic-media}
 
-**Add countdown timer to Dynamic Media templates**
+**C2PA metadata support in Dynamic Media**
 
-You can now add a Countdown Timer layer to Dynamic Media templates to display a live countdown until a specified end time. Customize the timer's appearance, enable or disable time units, define fallback text after expiration, and optionally make the timer clickable by configuring a destination URL.
+You can now apply C2PA metadata to assets in Dynamic Media with OpenAPI capabilities and Dynamic Media Scene7. C2PA metadata embeds secure metadata that helps viewers verify an asset's origin, edit history, and whether generative AI was used during its creation, enabling greater transparency and trust in digital content.
 
-<!--
+### New features in Content Hub {#new-features-content-hub}
 
-**Content Credentials support in Dynamic Media**
+**Generate on-the-fly Dynamic Media renditions in Content Hub**
 
-You can now apply Content Credentials to assets in Dynamic Media with OpenAPI capabilities and Dynamic Media Scene7. Content Credentials embed secure metadata that helps viewers verify an asset's origin, edit history, and whether generative AI was used during its creation, enabling greater transparency and trust in digital content.
-
--->
-
-### New features in Adobe Asset Link {#new-features-adobe-asset-link}
-
-**Support for Assets Managed Services and On-Premise Deployments in Adobe Asset Link UXP for Photoshop**
-
-[Adobe Asset Link UXP](https://helpx.adobe.com/business/enterprise/manage-services/adobe-asset-link/adobe-asset-link.html) plugin for [!DNL Adobe Photoshop] is updated to version 2.0 and adds compatibility with Managed Services and On-Premise deployments of Assets. The UXP plugin works with Photoshop on the native Apple Silicon macOS, providing native performance and access to the latest Photoshop features while allowing users to connect to any Adobe Experience Manager Assets environment, independently of its deployment model. To install or update the plugin, use [!DNL Adobe Creative Cloud Desktop] app's Plugins section, or go to [this link](https://adobe.com/go/cc_plugins_discover_plugin?pluginId=e800f95d&workflow=share).
+Generate on-the-fly Dynamic Media renditions in Content Hub to quickly create asset variations tailored to different channels and content needs. This eliminates the need to maintain multiple pre-generated renditions, making it easier to adapt and reuse assets across experiences. With optimized renditions available on demand, teams can accelerate content activation and deliver the right asset variation for every experience.
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta Features {#assets-beta-program-features}
 
@@ -137,6 +139,8 @@ AEM Assets now supports Brand Aware Metadata, an AI-powered capability that auto
 Adobe is actively expanding BAM's capabilities through direct co-innovation with customers. Where a specific use case is not yet supported, Adobe works with participating customers to understand their needs and may deliver expanded capabilities as the beta progresses. Customers in this program gain early access to new features as they ship and are encouraged to share feedback that directly shapes the roadmap.
 
 To participate or learn more, send an email to `GRP-AEM-ASSETS-BRANDAWAREMETADATA@adobe.com`.
+
+<!--
 
 #### Assets Onboarding Agent {#assets-onboarding-agent-beta}
 
@@ -156,6 +160,8 @@ If your organization is new to Experience Manager Assets, you can opt in to the 
 
 To participate or learn more, send an email to `GRP-AEM-ONBOARDING-AGENT@adobe.com`.
 
+-->
+
 #### Assets Sourcing portal for AEM Assets {#asset-sourcing-aem-assets}
 
 [The Assets Sourcing Portal](/help/assets/asset-sourcing-portal-for-aem-assets.md) provides a secure, self-service experience for collecting assets from external contributors without granting them access to Adobe Experience Manager Assets. Contributors can upload assets, provide the required metadata, and submit content directly to a designated intake location while administrators maintain control over asset organization and governance.
@@ -163,12 +169,6 @@ To participate or learn more, send an email to `GRP-AEM-ONBOARDING-AGENT@adobe.c
 Adobe works with participating customers to understand their needs and may deliver expanded capabilities as the limited availability program progresses. Customers in this program gain early access to new features as they ship and are encouraged to share feedback that directly shapes the roadmap.
 
 To participate or learn more, send an email to `Grp-AEM-Assets-Sourcing-Portal@adobe.com`.
-
-#### Generate renditions from the Content Hub search bar {#generate-renditions-content-hub-search-bar}
-
-You can now generate optimized asset renditions directly from the Content Hub search bar without leaving the search experience. Create channel-specific asset variants by resizing, cropping, compressing, reformatting, or applying composite transformations, enabling faster asset preparation while maintaining brand consistency.
-
-To participate or learn more, send an email to `aemcontenthubbeta@adobe.com`.
 
 #### Support for additional asset types in Adobe Express integration {#assets-express-integration-asset-types-beta}
 
