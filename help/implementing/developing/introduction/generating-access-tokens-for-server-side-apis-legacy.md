@@ -33,31 +33,17 @@ The server-to-server flow involves the following steps:
 
 Users with access to the AEM as a Cloud Service developer console see the integrations tab in the Developer Console for a given environment, and two buttons. A user with the AEM as a Cloud Service Environment administrator role can click the **Generate Service Credentials** button to generate and display the service credentials json. The json contains all the information required for the non-AEM server, including client id, client secret, private key, certificate, and configuration for author and publish tiers of the environment, regardless of the pod selection.
 
-![JWT Generation](assets/JWTtoken3.png)
 
-The output is similar to the following:
+![JWT Generation](assets/dev-console/create-ta-account.png)
 
-```
-{
-  "ok": true,
-  "integration": {
-    "imsEndpoint": "ims-na1.adobelogin.com",
-    "metascopes": "ent_aem_cloud_sdk,ent_cloudmgr_sdk",
-    "technicalAccount": {
-      "clientId": "cm-p123-e1234",
-      "clientSecret": "4AREDACTED17"
-    },
-    "email": "abcd@techacct.adobe.com",
-    "id": "ABCDAE10A495E8C@techacct.adobe.com",
-    "org": "1234@AdobeOrg",
-    "privateKey": "-----BEGIN RSA PRIVATE KEY-----\r\REDACTED\r\n==\r\n-----END RSA PRIVATE KEY-----\r\n",
-    "publicKey": "-----BEGIN CERTIFICATE-----\r\nREDACTED\r\n-----END CERTIFICATE-----\r\n"
-  },
-  "statusCode": 200
-}
-```
+After being generated, you can retrieve the credentials by clicking the hamburger menu and Click "View" on the Credential.
+![JWT Generation](assets/dev-console/cert-list-overview.png)
 
-After being generated, the credentials can be retrieved later by pressing the **Get Service Credentials** button in the same location.
+You will get output like:
+![JWT Generation](assets/dev-console/cert-view.png)
+
+You can use the copy to clipboard button to copy the json to your clipboard and save it in a file. The file should be treated as a secret and stored securely.
+
 
 >[!IMPORTANT]
 >
@@ -111,6 +97,7 @@ By default, on the AEM Author service, the technical account user is added to th
 
 This technical account user in AEM can be further provisioned with permissions using the usual methods.
 
+
 ## Developer Flow {#developer-flow}
 
 Developers should test using a development instance of their non-AEM application (either running on their laptop or hosted) that makes requests to a development AEM as a Cloud Service dev environment. However, because developers do not necessarily have IMS admin role permissions, Adobe cannot assume they can generate the JWT bearer described in the regular server-to-server flow. Thus, Adobe provides a mechanism for a developer to generate an access token directly that can be used in requests to an AEM as a Cloud Service environment that they have access to. 
@@ -132,7 +119,9 @@ Developers can also make API calls to an AEM project running on their local mach
 
 ### Generating the Access Token {#generating-the-access-token}
 
-To generate an access token, in the Developer Console, click **Get Local Development Token**.
+To generate an access token, in the Developer Console, Integrations tab, click **Get Local Development Token**.
+![JWT Generation](assets/dev-console/get-local-token.png)
+
 
 ### Call then AEM Application with an Access Token {#call-the-aem-application-with-an-access-token}
 
@@ -140,9 +129,9 @@ Make the appropriate server-to-server API calls from the non-AEM application to 
 
 ## Refresh Credentials {#refresh-credentials}
 
-By default, credential on AEM as a Cloud Service expire after a year. To ensure service continuity, developers have the option of refreshing the credentials, extending their availability for an extra year. Use **Refresh Service Credentials** from the **Integrations** tab in the Developer Console, as shown below.
-
-![Credential Refresh](assets/credential-refresh.png)
+By default, credential on AEM as a Cloud Service expire after a year. To ensure service continuity, developers have the option of refreshing the credentials, extending their availability for an extra year. 
+To generate new credentials under the same Technical User, click "Add certificate" as shown below
+![Credential Refresh](assets/dev-console/ta-refresh-credentials.png)
 
 After pressing the button, a new set of credentials is generated. You can update your secret storage with the new credentials and validate that they work as they should.
 
