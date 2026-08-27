@@ -267,6 +267,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.08.13 Release Notes](/help/release-notes/universal-editor/2026/2026-08-13.md)
       + [2026.08.06 Release Notes](/help/release-notes/universal-editor/2026/2026-08-06.md)
       + [2026.07.30 Release Notes](/help/release-notes/universal-editor/2026/2026-07-30.md)
       + [2026.07.16 Release Notes](/help/release-notes/universal-editor/2026/2026-07-16.md)
@@ -785,6 +786,7 @@ user-guide-title: AEM as a Cloud Service
       + [Video smart crops](/help/assets/video-smart-crops.md)
       + [Multi audio and Multi captions](/help/assets/multi-audio-multi-caption.md)
       + [Generate and translate captions](/help/assets/generate-translate-captions.md)
+      + [C2PA metadata](/help/assets/c2pa-metadata.md)
       + [Frequently asked questions](/help/assets/dynamic-media-open-apis-faqs.md)
   + Working with Assets view {#assets-view}
     + [Introduction](/help/assets/assets-view-introduction.md)
@@ -811,7 +813,7 @@ user-guide-title: AEM as a Cloud Service
     + [Watch asset, folders, and collections](/help/assets/manage-notifications-assets-view.md)
     + [Reprocessing](/help/assets/reprocessing-assets-view.md)
     + [Manage tags](/help/assets/tagging-management-assets-view.md)
-    + [Content Credentials](/help/assets/content-credentials.md)
+    + [C2PA metadata](/help/assets/c2pa-metadata-assets-view.md)
     + [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
     + [AEM Assets View UI Extensibility](/help/assets/aem-assets-view-ui-extensibility.md)
     + [Dynamic Media delivery reports](/help/assets/dynamic-media-delivery-reports.md)
@@ -832,6 +834,7 @@ user-guide-title: AEM as a Cloud Service
     + [Manage Licensed Assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md)
     + [Manage collections in Content Hub](/help/assets/collections-content-hub.md)
     + [Edit images using Adobe Express in Content Hub](/help/assets/edit-images-content-hub.md)
+    + [Generate on the fly Dynamic Media Renditions](/help/assets/generate-on-the-fly-dynamic-media-renditions.md)
     + [Asset Insights in Content Hub](/help/assets/insights-content-hub.md)
     + [Frequently asked questions for Content Hub](/help/assets/frequently-asked-questions-content-hub.md)  
   + Best practices{#best-practices}
@@ -1176,6 +1179,23 @@ user-guide-title: AEM as a Cloud Service
       + [Setting Up Microsoft Copilot Studio with AEM MCP](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
       + [Setting Up JetBrains with GitHub Copilot and AEM MCP](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
   + [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md)
+  + Agentic Capabilities in AEM {#agentic-capabilities}
+    + [Overview](/help/ai-in-aem/agentic-capabilities/overview.md)
+    + Brand Experience {#brand-experience}
+      + Experience Production {#experience-production}
+        + [Experience Production use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/use-cases.md)
+        + [Forms use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/forms-use-cases.md)
+      + Development {#development}
+        + [Development use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/development/use-cases.md)
+      + Onboarding {#onboarding}
+        + [Onboarding use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/onboarding/use-cases.md)
+    + Content Advisor {#content-advisor}
+      + Discovery {#discovery}
+        + [Discovery use cases](/help/ai-in-aem/agentic-capabilities/content-advisor/discovery/use-cases.md)
+      + Content Optimization {#content-optimization}
+        + [Content Optimization use cases](/help/ai-in-aem/agentic-capabilities/content-advisor/content-optimization/use-cases.md)
+    + Brand Governance {#brand-governance}
+      + [Brand Governance use cases](/help/ai-in-aem/agentic-capabilities/brand-governance/use-cases.md)
   + Agents in AEM {#agents}
     + [Overview](/help/ai-in-aem/agents/overview.md)
     + Brand Experience Agent {#brand-experience}
@@ -1539,7 +1559,7 @@ user-guide-title: AEM as a Cloud Service
     + [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
     + [AEM Rapid Development Environments](/help/implementing/developing/introduction/rapid-development-environments.md)
     + [AEM as a Cloud Service Development Guidelines](/help/implementing/developing/introduction/development-guidelines.md)
-    + [AEM as a Cloud Service Developer Console (Beta)](/help/implementing/developing/introduction/aem-developer-console.md)
+    + [AEM as a Cloud Service Developer Console](/help/implementing/developing/introduction/aem-developer-console.md)
     + [Logging](/help/implementing/developing/introduction/logging.md)
     + [Log Forwarding](/help/implementing/developing/introduction/log-forwarding.md)
     + [Configurations and the Configuration Browser](/help/implementing/developing/introduction/configurations.md)

@@ -33,23 +33,17 @@ The server-to-server flow involves the following steps:
 
 ### Fetch the AEM as a Cloud Service Credentials {#fetch-the-aem-as-a-cloud-service-credentials}
 
-Users with access to the AEM as a Cloud Service developer console see the integrations tab in the Developer Console for a given environment. A user with the AEM as a Cloud Service Environment administrator role can create, view, or manage credentials.
+Users with access to the AEM as a Cloud Service developer console see the integrations tab in the Developer Console for a given environment, and two buttons. A user with the AEM as a Cloud Service Environment administrator role can click the **Generate Service Credentials** button to generate and display the service credentials json. The json contains all the information required for the non-AEM server, including client id, client secret, private key, certificate, and configuration for author and publish tiers of the environment, regardless of the pod selection.
 
-Clicking **Create new technical account**, a set of credentials is created that includes client id, client secret, private key, certificate, and configuration for author and publish tiers of the environment, regardless of the pod selection.
+![JWT Generation](assets/dev-console/create-ta-account.png)
 
-![Creating a new Technical Account](/help/implementing/developing/introduction/assets/s2s-createtechaccount.png)
+After being generated, you can retrieve the credentials by clicking the hamburger menu and Click "View" on the Credential.
+![JWT Generation](assets/dev-console/cert-list-overview.png)
 
-A new browser tab opens up, displaying the credentials. You can use this view to download the credentials by pressing the download icon next to the status title:
+You will get output like:
+![JWT Generation](assets/dev-console/cert-view.png)
 
-![Download Credentials](/help/implementing/developing/introduction/assets/s2s-credentialdownload.png)
-
-After the credentials are created, they will appear under the **Technical Accounts** tab in the **Integrations** section:
-
-![View Credentials](/help/implementing/developing/introduction/assets/s2s-viewcredentials.png)
-
-Users can later view the credentials using the View action. In addition, as described later in the article, users can edit the credentials for the same technical account. They accomplish this editing by creating a private key or certificate, for cases when the certificate must be renewed or revoked.
-
-Users with the AEM as a Cloud Service Environment Administrator role can later create credentials for additional technical accounts. This ability is useful when different APIs have differing access requirements. For example, read versus read-write.
+You can use the copy to clipboard button to copy the json to your clipboard and save it in a file. The file should be treated as a secret and stored securely.
 
 >[!NOTE]
 >

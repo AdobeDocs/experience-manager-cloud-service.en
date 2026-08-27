@@ -1,22 +1,17 @@
 ---
-title: AEM as a Cloud Service Developer Console - Beta
+title: AEM as a Cloud Service Developer Console
 description: Learn about the AEM as a Cloud Service Developer Console and its set of read-only tools for debugging cloud environments.
 feature: Developing
 role: Admin, Developer
 exl-id: 4b0fc3e9-b7c4-4c95-bd97-8b24e4d5cb3d
 ---
 
-# AEM as a Cloud Service Developer Console (Beta) {#developer-console}
+# AEM as a Cloud Service Developer Console (New UI) {#developer-console}
 
 The AEM as a Cloud Service Developer Console includes a set of read-only tools for debugging cloud environments. It can be accessed through a per-environment link in Cloud Manager and offers features to view bundles, OSGi settings, services and servlets, and more.
 
 >[!NOTE]
 >
->This article describes a revamped experience for the AEM Cloud Service Developer Console, which is now in beta.
->
->* A limited set of users can access the new console via a button at the top of the current Developer Console.
->* Adobe welcomes any feedback, which you can send to `aemcs-new-devconsole-ui-beta@adobe.com`.
->* For the documentation about the current AEM Developer Console, please see [this article.](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console)
 >* The AEM as a Cloud Service Developer Console should not be confused with the similarly named [*Adobe Developer Console*.](https://developer.adobe.com/developer-console/)
 
 >[!TIP]
@@ -46,13 +41,50 @@ There are multiple ways of accessing it:
 
 The Developer Console is only accessible to users with certain roles in certain programs.
 
-* For production programs, the "Cloud Manager - Developer Role" in the Adobe Admin Console controls access to the Developer Console.
+* For production programs, the "Cloud Manager - Developer Role" in the Adobe Admin Console controls access to the Developer Console. This role provides broad access across programs and environments.
 * For sandbox programs, any user with a product profile granting AEM access can use the Developer Console.
 * For all programs, the "Cloud Manager - Developer Role" is required for status dumps and access to the repository browser.
 
-To view data from both author and publish services, users must also be assigned to the "AEM Users" or "AEM Administrators Product Profile" on both services. 
+Alternatively, a user assigned as an **AEM Administrator** on the author instance can access the Developer Console. Use this option when you want to grant more fine-grained access instead of the broad "Cloud Manager - Developer Role".
 
-For more information about setting up user permissions, please see the [Cloud Manager Documentation.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)
+To view data from both the author and publish services, users must also be assigned to the "AEM Users" or "AEM Administrators" product profile on each service. Because access is granted per tier, assign the profile on the tier whose data you want to view. For example:
+
+* To see the OSGi bundles or the repository browser for the publish instance, you need "AEM Users - publish" assigned to your profile.
+* To see the OSGi components on the author instance, you need "AEM Users - author" assigned to your profile.
+
+For more information about setting up user permissions, see the [Cloud Manager documentation.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)
+
+>[!NOTE]
+>
+>When new permissions are assigned, they can take up to 30 minutes to take effect. To test your permissions, log in to the console from an incognito (private) browser window.
+
+### IP restrictions {#ip-restrictions}
+
+Access to the Developer Console depends on your ability to reach the author instance. If your organization has configured an IP allowlist on the author service in Cloud Manager, you must connect from an IP address within that allowed range.
+
+For example, if the author instance is restricted to your corporate VPN, you can only use the Developer Console while connected to that VPN.
+
+## Program and environment selector {#program-environment-selector}
+
+Use the program and environment selector to choose which program and environment the Developer Console inspects.
+
+* If you have the "Cloud Manager - Developer Role" assigned, the selector lists all programs and environments available to you.
+* If you instead have the "AEM Administrator" role assigned to the author instance, the selector lists only the programs to which you have access.
+
+The environment selector shows the tiers that are available for selection, such as **author**, **publish**, **preview**, and **rde**. Selecting a tier applies it to all views except the **Integrations** view, which always defaults to the author tier.
+
+For example:
+
+* To check the repository browser for publish, select the **publish** tier in the environment selector, then click the repository browser link.
+* To search packages for preview, select the **preview** tier, then start searching packages.
+
+The environment selector also shows a status light for the selected tier:
+
+* **Green** — up and running.
+* **Orange** — degraded or restarting.
+* **Red** — down. You cannot select this tier.
+
+The status light is accompanied by status text, such as running, restarting, hibernated, or stopped. If the tier is running (green) but appears greyed out, you do not have access to it. Ensure that you have the appropriate rights assigned for the tier.
 
 ## OSGi Bundles Tab {#osgi-bundles}
 
@@ -61,7 +93,7 @@ The **OSGi Bundles** tab provides an overview of OSGi bundles that are deployed 
 ![New OSGi Bundles Screen in the Developer Console](/help/implementing/developing/introduction/assets/osgi-bundles.png)
 
 * The tab provides information on the actual state of bundles in the environment such as exported packages, imported packages, used services, and more.
-* It is ideal to check the status of bundles see if the bundle does what it is expected to do. 
+* It is ideal for checking the status of bundles to see if the bundle does what it is expected to do.
 
 **Example use-case:** Let's say you specify a version range for a dependency in your bundle. But something goes wrong with the dependency and you need to check which version of the dependency is actually used by the bundle. To check, open the Developer Console and click on a bundle name on the **OSGi Bundles** tab to access the bundle details, and use the **Importing Bundles** accordion to check which bundle version or package version is being used at runtime. With this information, you can adjust your maven dependency version range or adapt your code.
 
@@ -78,7 +110,7 @@ The **Java Packages** tab offers a search field to search packages that are acti
 
 ## Configurations Tab {#configurations}
 
-The **Configurations** tab offers a searchable list of configurations that are active in the environment. You can see which properties are provided by each configuration by click on it and viewing the details page.
+The **Configurations** tab offers a searchable list of configurations that are active in the environment. You can see which properties are provided by each configuration by clicking on it and viewing the details page.
 
 ![Configurations tab in the Developer Console UI](/help/implementing/developing/introduction/assets/configurations-dev-console.png)
 
@@ -115,9 +147,20 @@ The **Integrations** tab allows admins to generate, rename, and delete service c
 
 ![Integrations tab in the Developer Console UI](/help/implementing/developing/introduction/assets/integrations-dev-console-ui.png)
 
+The following permissions are required:
+
+* **Viewing** — assignment to the "AEM Users" or "AEM Administrators" product profile on the author tier.
+* **Provisioning integrations** — a system administrator profile for your IMS organization.
+
 ## Repository Tab {#repository}
 
 The **Repository** tab opens the [Repository browser.](/help/implementing/developing/tools/repository-browser.md)
+
+To inspect the publish or preview tier in the repository browser, first select that tier in the environment selector before clicking the link.
+
+The following permission is required:
+
+* "AEM Users" or "AEM Administrators" on the tier you want to view.
 
 ## Status Dumps / Queries Tab {#status-dumps-queries}
 
