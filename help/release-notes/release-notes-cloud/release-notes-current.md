@@ -85,20 +85,6 @@ See [Cloud Manager beta programs](/help/implementing/cloud-manager/release-notes
 
 See [AEM Assets beta programs](#assets-beta-program-features).
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### Metadata support for Content Fragments {#metadata-support-content-fragments}
-
-Content Fragment metadata is now fully supported in the Content Fragments Admin UI. Authors can view and edit fragment metadata directly where they work with their content, with full parity in the new editors as well, and manage their metadata schemas entirely in the new experience. And clients using Touch UI schemas today can keep using them — now in the Admin UI and Editor for Content Fragments too.
-
-### New Content Reference Picker for new Content Fragment Editor {#content-fragment-editor-new-content-picker}
-
-An improved content reference picker will be rolled out for the new Content Fragment Editor. In a phased approach, it will be rolled out for all RDE and Development environments on August 10. On September 7, it will be enabled for all Stage environments, followed by Production on September 21. To request earlier access, please reach out via Adobe support channel.
-
-### Content Fragments Folder Actions {#content-fragments-folder-actions}
-
-The Content Fragments Admin UI now supports folder actions like Rename, Copy, Move and Delete. This creates alignment with Touch UI and Assets UI: same actions available on all surfaces.
-
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 **C2PA metadata support**
