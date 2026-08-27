@@ -48,42 +48,42 @@ You can access the AEM Onboarding Agentic Capability via the [Coworker Chat](htt
 
 | Use Case | Description | Skills | Application | Sample Prompts |
 |---|---|---|---|---|
-| Guided end-to-end onboarding | Orchestrates the full onboarding lifecycle and delegates to the folder, tag, metadata, import, and search skills for users who do not yet know which task they need. | `aem-onboarding-workflow` | AEM Assets | "Onboard our team to AEM Assets"<br>"Walk me through AEM DAM onboarding" |
+| Guided end-to-end onboarding | Orchestrates the full onboarding lifecycle and delegates to the folder, tag, metadata, import, and search skills for users who do not yet know which task they need. | `aem-assets-onboarding-workflow` | AEM Assets | "Onboard our team to AEM Assets"<br>"Walk me through AEM DAM onboarding" |
 
 ### Environment & access
 
 | Use Case | Description | Skills | Application | Sample Prompts |
 |---|---|---|---|---|
-| Provision AEM environments | Sets up the Cloud Manager resources for a new AEM Cloud Service instance, including tenant discovery, program creation or reuse, and Stage and Production environments as a sequential, progress-tracked workflow. | `aem-environment-setup` | Adobe Cloud Manager | "Set up a new AEM Cloud Service program"<br>"Provision Stage and Production environments" |
-| Provision users & access | Adds users to the Adobe Admin Console organization, creates user groups, and attaches product profiles to groups. | `aem-user-provisioning` | Adobe Admin Console | "Add these users to the org and give them AEM access"<br>"Create a user group and assign product profiles"<br>"Provision users from this CSV" |
+| Provision AEM environments | Sets up the Cloud Manager resources for a new AEM Cloud Service instance, including tenant discovery, program creation or reuse, and Stage and Production environments as a sequential, progress-tracked workflow. | `aem-assets-environment-provisioning` | Adobe Cloud Manager | "Set up a new AEM Cloud Service program"<br>"Provision Stage and Production environments" |
+| Provision users & access | Adds users to the Adobe Admin Console organization, creates user groups, and attaches product profiles to groups. | `aem-assets-user-provisioning` | Adobe Admin Console | "Add these users to the org and give them AEM access"<br>"Create a user group and assign product profiles"<br>"Provision users from this CSV" |
 
 ### Content architecture
 
 | Use Case | Description | Skills | Application | Sample Prompts |
 |---|---|---|---|---|
-| Design & create folder hierarchies | Recommends and creates folder structures under `/content/dam`, including building a hierarchy from a CSV definition. | `aem-folder-management` | AEM Assets | "Recommend a folder hierarchy for our brand assets"<br>"Build a folder structure under /content/dam from this CSV" |
-| Design & create tag taxonomies | Designs and creates controlled tag vocabularies under `/content/cq:tags`, including namespaces, hierarchical tags, and batch tag operations. | `aem-tag-taxonomy` | AEM Assets | "Design a tag taxonomy with namespaces for our product categories"<br>"Create these hierarchical tags in AEM" |
+| Design & create folder hierarchies | Recommends and creates folder structures under `/content/dam`, including building a hierarchy from a CSV definition. | `aem-assets-folder-onboarding` | AEM Assets | "Recommend a folder hierarchy for our brand assets"<br>"Build a folder structure under /content/dam from this CSV" |
+| Design & create tag taxonomies | Designs and creates controlled tag vocabularies under `/content/cq:tags`, including namespaces, hierarchical tags, and batch tag operations. | `aem-assets-tag-onboarding` | AEM Assets | "Design a tag taxonomy with namespaces for our product categories"<br>"Create these hierarchical tags in AEM" |
 
 ### Metadata
 
 | Use Case | Description | Skills | Application | Sample Prompts |
 |---|---|---|---|---|
-| Metadata schema advisory | Provides read-only expert guidance on metadata architecture, including fields to capture, namespace conventions, organization by asset type, and migration from an existing DAM. Makes no changes in AEM. | `aem-metadata-schema` | AEM Assets (advisory) | "What metadata should I capture for campaign assets?"<br>"Which namespace should I use for these fields?"<br>"Advise on migrating metadata from our old DAM" |
-| Create & assign metadata forms | Designs and creates custom metadata forms—the authoring UI content authors use—from a CSV, table, requirements document, or description, then optionally assigns them to folders. | `aem-metadata-form` | AEM Assets | "Create a metadata form from this list of fields"<br>"Assign this form to the campaigns folder" |
+| Metadata schema advisory | Provides read-only expert guidance on metadata architecture, including fields to capture, namespace conventions, organization by asset type, and migration from an existing DAM. Makes no changes in AEM. | `aem-assets-metadata-advisory` | AEM Assets (advisory) | "What metadata should I capture for campaign assets?"<br>"Which namespace should I use for these fields?"<br>"Advise on migrating metadata from our old DAM" |
+| Create & assign metadata forms | Designs and creates custom metadata forms—the authoring UI content authors use—from a CSV, table, requirements document, or description, then optionally assigns them to folders. | `aem-assets-metadata-form-onboarding` | AEM Assets | "Create a metadata form from this list of fields"<br>"Assign this form to the campaigns folder" |
 
 ### Asset & metadata migration
 
 | Use Case | Description | Skills | Application | Sample Prompts |
 |---|---|---|---|---|
-| Run & monitor bulk asset import | Manages existing bulk import jobs—list, run, schedule, stop, dry-run, and monitor progress. Creating new import configurations is done in the AEM Assets UI. | `aem-bulk-import` | AEM Assets | "Run my bulk import job"<br>"Do a dry run first, then check import progress"<br>"Show me my bulk import configurations" |
-| Bulk metadata import from CSV | Populates metadata for existing assets in bulk from a CSV file and monitors the import job status. | `aem-metadata-import` | AEM Assets | "Import metadata from this CSV for existing assets"<br>"Check the status of my metadata import" |
+| Run & monitor bulk asset import | Manages existing bulk import jobs—list, run, schedule, stop, dry-run, and monitor progress. Creating new import configurations is done in the AEM Assets UI. | `aem-assets-bulk-import` | AEM Assets | "Run my bulk import job"<br>"Do a dry run first, then check import progress"<br>"Show me my bulk import configurations" |
+| Bulk metadata import from CSV | Populates metadata for existing assets in bulk from a CSV file and monitors the import job status. | `aem-assets-metadata-import` | AEM Assets | "Import metadata from this CSV for existing assets"<br>"Check the status of my metadata import" |
 
 ### Search configuration
 
 | Use Case | Description | Skills | Application | Sample Prompts |
 |---|---|---|---|---|
-| Index custom properties for search | Adds custom `dam:Asset` properties to the search index using a simplified configuration approach, deployed through Adobe Cloud Manager Git change and pipeline. | `aem-search-index` | AEM Assets + Cloud Manager | "Make this custom property searchable"<br>"My custom field isn't showing in search — add it to the index" |
-| Add search filters to the UI | Adds indexed properties as filter fields in the AEM Assets search panel for files, folders, or collections. Requires the property to be indexed first. | `aem-search-form` | AEM Assets | "Add this field as a filter in the search panel"<br>"Customize the AEM Assets search form" |
+| Index custom properties for search | Adds custom `dam:Asset` properties to the search index using a simplified configuration approach, deployed through Adobe Cloud Manager Git change and pipeline. | `aem-assets-search-indexing` | AEM Assets + Cloud Manager | "Make this custom property searchable"<br>"My custom field isn't showing in search — add it to the index" |
+| Add search filters to the UI | Adds indexed properties as filter fields in the AEM Assets search panel for files, folders, or collections. Requires the property to be indexed first. | `aem-assets-search-filter-onboarding` | AEM Assets | "Add this field as a filter in the search panel"<br>"Customize the AEM Assets search form" |
 
 <!--
 
