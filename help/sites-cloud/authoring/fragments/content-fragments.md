@@ -1,6 +1,7 @@
 ---
 title: Content Fragments
 description: Adobe Experience Manager as a Cloud Service Content Fragments allow you to design, create, curate, and use channel-independent content that can also be used when authoring your pages.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
@@ -27,6 +28,7 @@ Content fragments in Adobe Experience Manager (AEM) as a Cloud Service are [crea
 >[!NOTE]
 >
 >**Content Fragments** and **[Experience Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md)** are different features within AEM:
+>
 >* **Content Fragments** are editorial content, with definition and structure, but without additional visual design and/or layout. They can be used to access structured data, including texts, numbers, and dates, amongst others. 
 >* **Experience Fragments** are fully laid out content; a fragment of a web page.
 >
@@ -142,16 +144,17 @@ For in-between content you can:
 >
 >After you have added in-between content to a content fragment on your page, then changing the structure of the underlying content fragment (that is, in the content fragment editor) could lead to erroneous/unexpected results.
 >
->When this occurs the in-between content is kept as is:
+>When this occurs, the in-between content is kept as is:
 >
 >* In-between components have an absolute position within the sequence of components in the fragment flow. This position does not change, even when the content of paragraphs in the fragment changes.
 >
 >  This can make it appear as if the relative positioning has changed, as in-between paragraphs have no contextual relationship to the (fragment) paragraphs they are positioned next to.
+>
 >* Unless the two paragraph structures conflict; in such a case, the in-between content is not displayed (although it is still present internally).
 
 ### Using Associated Content {#using-associated-content}
 
-If you have [associated content](/help/assets/content-fragments/content-fragments-assoc-content.md) with the [content fragment](/help/assets/content-fragments/content-fragments.md) these assets are available from the side panel (after you place your fragment on the content page). Associated content is effectively a special source of content for [in-between content](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments). 
+If you have [associated content](/help/assets/content-fragments/content-fragments-assoc-content.md) with the [content fragment](/help/assets/content-fragments/content-fragments.md), these assets are available from the side panel (after you place your fragment on the content page). Associated content is effectively a special source of content for [in-between content](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments). 
 
 >[!NOTE]
 >
@@ -161,7 +164,7 @@ If you have [associated content](/help/assets/content-fragments/content-fragment
 >
 >If you have multiple content fragments on the one page, the **Associated Content** tab will show assets appropriate to all fragments.
 
-Once you have added a fragment with associated content to your page a new tab (**Associated Content**) is opened in the side panel.
+Once you have added a fragment with associated content to your page, a new tab (**Associated Content**) is opened in the side panel.
 
 From here you can drag the assets to the required location (either to an existing component or to the required position where the appropriate component is created):
 
@@ -171,7 +174,7 @@ From here you can drag the assets to the required location (either to an existin
 
 If assets (for example, images) have been inserted into the fragment itself (as [mixed-media fragments](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)), then the options for editing these assets in the page editor is limited.
 
-For example, for an image you can
+For example, for an image you can:
 
 * Crop, rotate or flip the image.
 * Add a title or alternative text.

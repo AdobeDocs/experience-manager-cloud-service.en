@@ -4,7 +4,7 @@ description: Learn how to create and bootstrap a new App Builder application.
 version: Experience Manager as a Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
-role: Developer, Architect
+role: Developer
 level: Beginner
 kt: 9455, 9471, 9472, 9473
 thumbnail: 339168.jpg

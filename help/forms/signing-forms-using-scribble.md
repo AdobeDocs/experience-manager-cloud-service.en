@@ -5,6 +5,7 @@ uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
 products: SG_EXPERIENCEMANAGER/FORMS
 topic-tags: author
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 role: User, Developer
 ---
@@ -34,9 +35,8 @@ You can use the **Scribble Signature** component to draw (Scribble) signature on
  Once you select the Done ![aem_forms_save](assets/aem_forms_save.png) icon in Scribble signature window, you cannot edit the signature. In case, if you want to edit the signature, you have to disregard the current signature and re-sign using the above Paint Brush/Keyboard option.
 
 You can select the **Configure** ![configure icon](assets/configure.png) icon to set the aspect ratio of Scribble Signature canvas. 
+
 * When the aspect ratio of the Scribble Signature canvas is less than 1, the geolocation information is added at the bottom of the Scribble Signature canvas.
-
-
 * When the aspect ratio of the Scribble Signature canvas is more than 1, the geolocation information is added to the right-side of the Scribble Signature canvas. 
  
 
@@ -44,10 +44,9 @@ You can select the **Configure** ![configure icon](assets/configure.png) icon to
 
 
 
-   >[!NOTE]
-   >
-   >Signatures are always saved in a PNG format.
-   >
+ >[!NOTE]
+ >
+ >Signatures are always saved in a PNG format.
    
 ## Configure an Adaptive Form to use Scribble Signature {#configure-an-adaptive-form-to-use-scribble-signature}
 
@@ -133,7 +132,8 @@ On the **Accessibility** tab, values are set for [ARIA accessibility](https://ww
 
    ![Complete the signing process](assets/scribblecomplete.jpg)
 
-The signatures are added to the form and the form control moves to the next panel. -->
+The signatures are added to the form and the form control moves to the next panel.
+-->
 
 ## See Also {#see-also}
 

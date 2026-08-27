@@ -1,6 +1,7 @@
 ---
 title: Bulk metadata edit in [!DNL Assets View]
 description: Learn how you can update a predefined set of standard metadata fields for multiple assets available on the [DNL! Assets View] simultaneously.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
 ---
 # Bulk metadata edit in [!DNL Assets View]{#how-to-edit-the-metadata-of-multiple-assets-simultaneously}
@@ -33,3 +34,23 @@ To see the applied metadata updates to an asset, navigate to the [!DNL asset det
 >[!NOTE]
 >
 >**[!UICONTROL Status]**, **[!UICONTROL Expiration date]**, **[!UICONTROL Author]**, **[!UICONTROL Keywords]** and **[!UICONTROL Tags]** are standard metadata properties available for bulk metadata editing, regardless of folder-specific metadata. These metadata properties display on the [!UICONTROL asset details page] only if they are included in the metadata form applied to the asset's folder. If you cannot find these standard metadata properties on the [!UICONTROL asset details page], edit the asset folder's metadata form to include them. See [Metadata in [!DNL Assets View]](/help/assets/metadata-assets-view.md) to learn how to create or edit a metadata form and apply it to a folder.
+
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

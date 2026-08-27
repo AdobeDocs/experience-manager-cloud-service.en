@@ -40,6 +40,7 @@ With AEM as a Cloud Service,
 * Marketing Professionals can achieve faster time-to-value. 
 
 >[!NOTE]
+>
 >See [Terminology](terminology.md) for some of the new terms that have been introduced with AEM as a Cloud Service.
 
 ## Value Added as a Cloud Service {#value-added-as-a-cloud-service}
@@ -77,3 +78,18 @@ AEM achieves these goals by adopting the main characteristics of modern cloud se
 >Once you have an overview of AEM as a Cloud Service, you can onboard quickly by reviewing the [Onboarding Journey](/help/journey-onboarding/overview.md).
 >
 >Already onboarded or ready to dive into testing AEM's features? Install the [AEM Reference Demos Add-On](/help/journey-sites/demos-add-on/overview.md) to explore AEM's powerful features using rich examples.
+
+## AEM Supported Languages {#supported-platforms}
+
+Adobe Experieince Manager as a Cloud Service is available in the following languages:
+
+* English
+* French
+* German
+* Japanese
+* Italian
+* Spanish
+* Brazilian Portuguese
+* Simplified Chinese
+* Traditional Chinese
+* Korean

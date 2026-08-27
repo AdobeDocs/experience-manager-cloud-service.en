@@ -2,7 +2,7 @@
 title: Component Definition
 description: Understand the JSON contract between the component definition and the Universal Editor in detail.
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
 ---
 # Component Definition {#component-definition}
@@ -88,9 +88,9 @@ The following is a complete, but simple `component-definition.json` as an exampl
 
 `plugins` defines which plugin is responsible for persisting the component. Common plugins include:
 
-* `aem` for [AEM as a Cloud Service.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service)
-* `aem65` for [AEM 6.5.](https://experienceleague.adobe.com/en/docs/experience-manager-65) and [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts)
+* `aem` for [AEM as a Cloud Service,](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service) [AEM 6.5.,](https://experienceleague.adobe.com/en/docs/experience-manager-65) and [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts)
 * `xwalk` for [Authoring with AEM Sites for Edge Delivery Services.](https://www.aem.live/developer/ue-tutorial)
+* `da` for [Document Authoring](https://docs.da.live/developers/reference/universal-editor)
 
 ## `page` or `cf` {#page-cf}
 

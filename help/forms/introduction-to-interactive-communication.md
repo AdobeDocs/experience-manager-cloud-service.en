@@ -3,10 +3,11 @@ title: Introduction to Interactive Communication
 description: Design Dynamic, Data-Driven Communications with Ease with AEM Forms Interactive Communications
 feature: Release Information
 role: Admin
-hide: yes
-hidefromtoc: yes
+hide: true
+index: false
 exl-id: 4f28c260-9842-467e-8abb-bcca224280b8
 ---
+
 # Interactive Communications 
 
 Interactive Communications centralizes and manages the creation, assembly, and delivery of data-driven interactive correspondences such as business correspondence, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
@@ -18,7 +19,6 @@ Unlike AEM Forms Desktop Designer which can only be installed on Windows machine
 ![Interactive Communication Editor](/help/forms/assets/ic-editor.png)
 
 From financial institutions generating account statements to government agencies streamlining benefit notices, Interactive Communications is the goto tool for crafting high-quality, secure, and legally compliant correspondence with ease and efficiency.
-
 
 ## Core Capabilities 
 

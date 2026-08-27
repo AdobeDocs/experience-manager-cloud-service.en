@@ -4,6 +4,7 @@ description: Learn how to invalidate your CDN (Content Delivery Network) cached 
 contentOwner: Rick Brough
 feature: Asset Management
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
 ---
 # Invalidate the CDN cache by way of Dynamic Media {#invalidating-cdn-cache-for-dm-assets-in-aem-cs}
@@ -90,7 +91,7 @@ In all cases, either the entire batch is processed for invalidation, or the enti
 | Error | Explanation |
 | --- | --- |
 | *Failed to retrieve URLs for selected assets.* | Occurs if any of the following scenarios are met:<br>&ndash; A Dynamic Media configuration is not found.<br>&ndash; There is an exception while retrieving a service user through which the Dynamic Media configuration is read.<br>&ndash; The publish server or the company root used to form the URLs is missing in the Dynamic Media configuration. |
-| *Some URLs are not defined correctly. Correct and resubmit.* | Occurs if the IPS CDN cache invalidation API returns an error. The error indicates that the URL refers to a different company or the URL is not valid as per the validation done by the IPS cdnCacheInvalidation API. | 
+| *Some URLs are not defined correctly. Correct and resubmit.* | Occurs if the IPS CDN cache invalidation API returns an error. The error indicates that the URL refers to a different company or the URL is not valid as per the validation done by the IPS cdnCacheInvalidation API. |
 | *Failed to invalidate CDN cache.* | Occurs if the CDN cache invalidation request fails for any other reason. |
 | *No URLs entered to be invalidated.* | Occurs if there are no URLs present in the **[!UICONTROL CDN Invalidation]** &ndash; **[!UICONTROL Confirm]** page, and you select **[!UICONTROL Submit]**. |
 

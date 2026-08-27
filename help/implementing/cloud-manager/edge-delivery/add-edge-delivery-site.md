@@ -2,30 +2,37 @@
 title: Add an Edge Delivery Site to Cloud Manager
 description: Learn how to add an Edge Delivery site to your production program or sandbox program.
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
 ---
 # Add an Edge Delivery site to Cloud Manager {#adding}
 
 >[!IMPORTANT]
 >
->Learn why you must onboard your Edge Delivery Services site to Cloud Manager.
+>Understand why you must add your Edge Delivery Services site to Cloud Manager.
 >See [Benefits of using the Adobe recommended path for Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
 
 **To add an Edge Delivery site to Cloud Manager:**
 
-1. Be sure you have first created your program with an Edge Delivery Services license before you onboard an Edge Delivery site in Cloud Manager.
-    See [Create a production program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
-1. Log into Cloud Manager at [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) and select the appropriate program.
+1. Ensure you have created your program with an Edge Delivery Services license before you onboard an Edge Delivery site in Cloud Manager. 
+See [Create a production program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
+
+    >[!TIP]
+    >
+    >If you want to create a new Edge Delivery site that uses AEM authoring with the Universal Editor, rather than registering an existing site, see [Create your first Edge Delivery site with one click](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md). For programs that use Edge Delivery for delivery, a publish tier may not be required. See [Flexible Publish Tier (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
+
+{{sign-in-to-cloud-manager}}
+
+1. On the **My Programs** console, click a program. 
 1. Do one of the following:
 
     * From the **Program Overview** page, click the **Edge Delivery** tab. Then, near the lower-right corner of the page, click **Add Edge Delivery site**.
 
         ![Add Edge Delivery site from the Edge Delivery tab](/help/implementing/cloud-manager/assets/cm-eds-add1.png)       
 
-    * In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the left side menu.
+    * In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to open the left side menu.
     Under the **Services** heading, click ![Web page icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**.
-    Near the upper-right corner of the page, click **Add site**.
+    Near the upper-right corner of the page, click ![Link icon or Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg) **Add Edge Delivery site**.
 
         ![Add Edge Delivery site from the Edge Delivery Sites button](/help/implementing/cloud-manager/assets/cm-eds-add2.png)
 
@@ -39,7 +46,7 @@ exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
 
 1. In the lower-right corner of the dialog box, click **Add**.
 
-1. In the **Verify repository ownership** dialog box, verify the ownership of your repository by doing the following steps:
+1. In the **Verify repository ownership** dialog box, verify the ownership of your repository by doing the following:
 
     | Step number | Description |
     | - | - |
@@ -49,6 +56,12 @@ exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
 
 1. Click **Verify**.
 
-When the repository is verified, its status in the Edge Delivery sites table gets updated. A green circle with a white check mark inside indicates the status.
+    >[!NOTE]
+    >
+    >If your Edge Delivery Services site uses Helix authentication, the verification challenge is not accessible. Temporarily disable authentication, complete site verification, and then turn authentication back on.
+
+
+
+When the repository is verified, its status in the Edge Delivery sites table is updated. A green circle with a white check mark inside indicates the status.
 
 In the same table, click ![Information about Edge Delivery site icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) to view site details. This information includes the verified Repository URL, along with the Preview and Production website URLs.

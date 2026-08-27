@@ -4,6 +4,7 @@ description: The article outlines various use cases for a custom function in an 
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
 ---
 # Examples of developing and using custom function
@@ -219,11 +220,12 @@ Let's learn how custom functions use field and global objects to submit manipula
 
 The following line of code: 
 `globals.functions.submitForm(globals.functions.exportData(), false);` is used to submit the form data after manipulation. 
+
 * The first argument is the data to be submitted. 
 * The second argument represents whether the form is to be validated before submission. It is `optional` and set as `true` by default. 
 * The third argument is the `contentType` of the submission, which is also optional with the default value as `multipart/form-data`. The other values can be `application/json` and `application/x-www-form-urlencoded`.
   
-Add the following code in the custom function as explained in the [create-custom-function ](/help/forms/custom-function-core-component-create-function.md) section, to submit the manipulated data at the server:
+Add the following code in the custom function as explained in the [create-custom-function](/help/forms/custom-function-core-component-create-function.md) section, to submit the manipulated data at the server:
 
 ```javascript
 

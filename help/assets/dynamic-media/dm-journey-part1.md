@@ -8,8 +8,8 @@ content-type: reference
 feature: Image Profiles,Best Practices
 role: User, Admin
 mini-toc-levels: 4
-hide: no
 hidefromtoc: no
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
 ---
 # Dynamic Media Journey: The Basics, Part I {#dm-journey-part1}
@@ -152,7 +152,7 @@ Let's look closer at the issues Dynamic Media is solving with the one file and s
 | Create and store every asset. | Use a single image file, automatically creating required renditions only at the moment of delivery. |
 | High storage costs. | Eliminates the need to create and store multiple copies of an asset. |
 | Difficulty maintaining chain of custody. | Guarantees delivery of device-optimized and consistent experiences. |
-| No version history. | | 
+| No version history. | |
 | Inconsistent brand experiences across devices. | |
 | Unnecessary cost of duplicate asset creation. | |
 
@@ -173,7 +173,7 @@ Another use case that Dynamic Media solves for is video. Video is complex. It is
 | Difficult to manage and deliver video optimized for various devices. | Use a single video that automatically sizes for all devices. |
 | Videos stall or play in low quality due to user's available bandwidth. | Deliver video through an HTML player that auto-detects available bandwidth and adapts quality to ensure high fidelity and smooth playback. |
 | Unfeasible and time-consuming to manually create all versions of a video just to ensure good display and playback across devices. | Eliminate hours of tedious transcoding work with a simplified workflow. |
-| | Free up time for higher value work. | 
+| | Free up time for higher value work. |
 
 Customers come to Dynamic Media with the following issues that they are hoping to solve:
 
@@ -195,7 +195,7 @@ Here are several more use cases to consider.
 
 | **Issue** | **Dynamic Media solution** |
 |---|---|
-| Time-consuming and labor intensive to manually draw, measure, and cut images or videos to highlight the focal point and display appropriately across all screen sizes and devices. | Uses Smart Crop in Dynamic Media, an Adobe Sensei AI capability, to automatically detect the focal point in any image or video, and crop to maintain it. |
+| Time-consuming and labor intensive to manually draw, measure, and cut images or videos to highlight the focal point and display appropriately across all screen sizes and devices. | Uses Smart Crop in Dynamic Media, an Adobe AI capability, to automatically detect the focal point in any image or video, and crop to maintain it. |
 | Time lost that could be better spent creating high-impact experiences. | Captures the intended point of interest regardless of screen size. |
 | Single-use assets created for every experience and device. | Eliminates tedious manual tasks and delivers high-quality, fast-loading imagery and video that looks good on any device or screen. |
 
@@ -274,7 +274,8 @@ _Dynamic Media Help topics_
 * [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
 * [How to deliver Dynamic Media Assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
 * [How to publish assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
-* [Work with Selective Publish in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md) -->
+* [Work with Selective Publish in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)
+-->
 
 _Dynamic Media tutorials_
 

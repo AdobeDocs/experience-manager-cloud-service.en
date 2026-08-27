@@ -4,7 +4,7 @@ description: Learn about defining Metadata and Tagging for Content Fragments
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Learn about defining Metadata and Tagging for Content Fragments {#author-headless-metadata-tagging}
 
@@ -23,7 +23,7 @@ This article builds on these so you understand how to use metadata and tagging t
 
 ## Adding Metadata and Tags {#adding-metadata-and-tags}
 
-You can add metadata and tags from the right panel of the Content Fragment Editor:
+You can add metadata and tags from the console and from the right panel of the Content Fragment Editor:
 
 ![Content Fragment Editor - Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
@@ -33,7 +33,11 @@ Now you can put all this knowledge to use and start creating Content Fragments f
 
 ## Additional Resources {#additional-resources}
 
-* [Metadata - Fragment Properties](/help/sites-cloud/administering/content-fragments/authoring.md#view-properties-tags)
+* [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md)
+
+* [Authoring Content Fragments](/help/sites-cloud/administering/content-fragments/authoring.md)
+
+* [Properties, Tags and Metadata](/help/sites-cloud/administering/content-fragments/properties-tags-and-metadata.md)
   
 * [Using Tags](/help/sites-cloud/authoring/sites-console/tags.md)
 

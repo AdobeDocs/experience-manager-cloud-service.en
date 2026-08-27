@@ -3,7 +3,7 @@ title: Editable Templates
 description: Learn about how editable templates are used when creating a page, defining its initial content, structured content, authoring policies, and layout.
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Editable Templates {#editable-templates}
 

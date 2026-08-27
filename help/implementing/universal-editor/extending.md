@@ -2,7 +2,7 @@
 title: Extending the Universal Editor
 description: Learn about the different options to extend the capabilities of Universal Editor to support the needs of your content authors.
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
 ---
 # Extending the Universal Editor {#extending}
@@ -18,11 +18,8 @@ Learn about the different options to extend the capabilities of Universal Editor
 As an Adobe Experience Cloud service, the Universal Editor's UI can be extended using the App Builder and Experience Manager. Adobe offers many ready-made extensions available through the [Extension Manager](https://experience.adobe.com/aem/extension-manager) that you can use for your project.
 
 * **[AEM Multi-Site-Management (MSM) Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)**: Break or reinstate inheritance at the component level
-* **[AEM Page Properties Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)**: Access the page properties window of the page in the Universal Editor
-* **[AEM Site Admin Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console)**: Open the Sites Console to the location of the page in the Universal Editor
 * **[AEM Page Lock Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)**: View and change the page lock status from the Universal Editor
 * **[AEM Workflows Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)**: Start workflows on the page and page content from the Universal Editor
-* **[AEM Universal Editor Dev Login Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#developer-login)**: Easily authenticate to your local AEM SDK when developing locally
 * **[Generate Variations](/help/generative-ai/generate-variations-integrated-editor.md)**: Use generative artificial intelligence (AI) to create variations for your content directly in the properties panel.
 * **[AEM Product Picker for Universal Editor](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/ue-product-picker/)**: Integrate Adobe Commerce data by selecting or removing product data from the editor.
 * **[Universal Editor Content Drafts](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/universal-editor-content-drafts/)**: Create, edit, and manage multiple drafts of content.
@@ -49,10 +46,14 @@ If you would like to explore the possibilities of creating your own extensions, 
 
 [Using Extension Manager in AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/), you can enable or disable your extensions on a per-instance basis, access Adobe's first-party extensions including those for the Universal Editor, and much more.
 
-## Extension Points {#extension-points}
+### Extension Points {#extension-points}
 
-In addition to UI extensibility, the Universal Editor offers many other flexible extension points to enable seamless integration of custom business requirements.
+For a full list of extension points available in the Universal Editor UI, see the Adobe Developer documentation [The Universal Editor Extension Points.](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/)
+
+## Additional Resources {#additional-resources}
+
+In addition to UI extensibility, the Universal Editor offers other customization options to enable seamless integration of custom business requirements.
 
 * **[Blocks](https://www.aem.live/developer/block-collection)**: In simple JSON format, projects can adjust the blocks and UE features available for content creation.
-* **[Custom User Interface](#extending-ui)**: Extensions can display necessary UI in side-panels or modal dialogs.
-* **[Events](/help/implementing/universal-editor/events.md)**: Extensions receive events about the author's actions and selections on the page to respond appropriately.
+* **[Events](/help/implementing/universal-editor/events-universal-editor.md)**: Extensions receive events about the author's actions and selections on the page to respond appropriately.
+

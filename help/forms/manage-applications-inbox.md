@@ -7,8 +7,8 @@ topic-tags: document_services, publish
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 feature: Adaptive Forms
 role: User
-hide: yes
-hidefromtoc: yes
+hide: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 92130660-9942-426f-ae2f-4f3300f9735c
 ---
 # Manage Forms applications and tasks in AEM Inbox{#manage-forms-applications-and-tasks-in-aem-inbox}
@@ -20,6 +20,22 @@ In addition, AEM Inbox consolidates notifications and tasks from various AEM com
 The Inbox user interface provides list and calendar views to view tasks. You can also configure the view settings. You can filter tasks based on various parameters. For more information about view and filters, see [Your Inbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html#inbox-in-the-header).
 
 In summary, Inbox allows you to create an application and manage assigned tasks.
+
+## Applicability and use cases
+
+### Insurance
+
+## Can AEM Forms track the status of insurance claims or applications?
+
+Yes. AEM Forms workflows allow insurers to track form submission and processing status across different stages of the business process.
+
+## Does AEM Forms support audit trails for insurance processes?
+
+Yes. AEM Forms supports auditability through workflow history, access controls, and system logs, which help insurers meet internal and external audit needs.
+
+## Can agents submit insurance forms on behalf of customers?
+
+Yes. AEM Forms supports assisted and agent-led form filling, allowing authorized users to submit forms on behalf of customers while maintaining auditability.
 
 >[!NOTE]
 >

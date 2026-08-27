@@ -4,6 +4,7 @@ description: Generate, manipulate, and secure documents with AEM Forms Communica
 Keywords: document generation, PDF manipulation, document security, batch processing, document conversion, PDF/A compliance
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 ---
 
@@ -35,6 +36,18 @@ Communications APIs provide a comprehensive set of document processing capabilit
 | Generate personalized documents by merging templates with data in various formats including PDF and print formats. | Combine, rearrange, and validate PDF documents programmatically to create new document packages. | Extract properties, metadata, and content from PDF documents for further processing. | Convert documents between formats, including PDF/A compliance validation for archival needs. | Apply digital signatures, certification, and encryption to secure and protect documents. |
 
 The [API reference documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is also available in the .yaml format. You can download the .yaml and upload it to Postman to check the functionality of the APIs.
+
+## Applicability and use cases
+
+### Insurance
+
+## Can AEM Forms generate insurance policy documents?
+
+Yes. AEM Forms can generate policy-related documents using templates and structured data captured through forms.
+
+## Can AEM Forms handle insurance operations at scale?
+
+Yes. When deployed using recommended architectures on Adobe Managed Services or private cloud, AEM Forms supports high-volume form submissions and enterprise-scale workloads.
 
 ## Document Generation
 
@@ -73,6 +86,10 @@ The document generation API returns the generated PDF document or AFP document. 
 
 <span class="preview"> Uploading the generated PDFs using document generation API to Azure Blob Storage capability is under [Early Adopter Program](/help/forms/early-access-ea-features.md). You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 
+>[!NOTE]
+>
+> Document Generation APIs include batch and synchronous output generation endpoints.These APIs support server-to-server authentication using JWT or OAuth, depending on the endpoint. To know more about Document Generation APIs, [click here](/help/forms/aem-forms-communication-api-overview.md#document-generation-apis).
+
 #### Create PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) document {#create-PS-PCL-ZPL-documents}
 
 You can use document generation APIs to create PostScript (PS), Printer Command Language (PCL), and Zebra Printing Language (ZPL) document that is based on an XDP form design or PDF document. These APIs help to merge a form design with form data to generate a document. You can save the document to a file and develop a custom process to send it to a printer.
@@ -86,6 +103,10 @@ You can use document generation APIs to create separate documents for each recor
 ## Document Manipulation
 
 Communications document manipulation (Document Transformation) APIs help to combine, rearrange PDF documents. Typically, you create a DDX and submit it to document manipulation APIs to assemble or rearrange a document. The [DDX document](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) provides instructions on how to use the source documents to produce a set of required documents. The DDX reference documentation provides detailed information about all the supported operations.
+
+>[!NOTE]
+>
+> Document Manipulation APIs support server-to-server authentication using JWT. To know more about Document Manipulation APIs, [click here](/help/forms/aem-forms-communication-api-overview.md#document-manipulation-apis).
 
 ### Key Document Manipulation Capabilities
 
@@ -126,7 +147,10 @@ Document Extraction service provides you with the capability to get the properti
 * Extract the usage rights enabled in a PDF document, users retrieve the usage rights enabled or disabled to a PDF document for Adobe Acrobat Reader extensibility.
 * Get the metadata information present in a PDF document, the metadata is information about the document (as distinguished from the contents of the document, such as text and graphics). The Adobe Extensible Metadata Platform (XMP) is a standard for handling document metadata. The XMP Utilities service can retrieve XMP metadata from PDF documents and export XMP metadata into PDF documents.
 
-The [API reference documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) provides detailed information about all the parameters, authentication methods, and the services provided by APIs. The API reference documentation is also available in the .yaml format. You can download the .yaml and upload it to Postman to check the functionality of APIs.
+>[!NOTE]
+>
+> Document Extraction APIs support server-to-server authentication using OAuth. To know more about Document Extraction APIs, [click here](/help/forms/aem-forms-communication-api-overview.md#document-extraction-apis).
+>
 
 ## Document Conversion
 
@@ -139,6 +163,10 @@ Communications document conversion APIs help to Convert a PDF document to PDF/A.
 <span class="preview"> The Convert PDF to XDP capability is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 
 Converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary.
+
+>[!NOTE]
+>
+> Document Conversion APIs support server-to-server authentication using OAuth. To know more about Document Conversion APIs, [click here](/help/forms/aem-forms-communication-api-overview.md#document-conversion-apiss).
 
 ## Document Assurance {#doc-assurance}
 
@@ -156,6 +184,10 @@ The Signature APIs let your organization protect the security and privacy of Ado
 * Delete the specified signature field from a PDF document
 
 <span class="preview"> Remove the signature from the specified signature field and delete the specified signature field, from a PDF document are available under the early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
+>[!NOTE]
+>
+> Document Assurance APIs support server-to-server authentication using OAuth. To know more about Document Assurance APIs, [click here](/help/forms/aem-forms-communication-api-overview.md#document-assurance-apis).
 
 ### Encryption APIs
 
@@ -176,8 +208,6 @@ Document utilities with synchronous APIs help you convert documents between PDF 
 
 #### Usage Rights APIs (Reader Extension)
 
-<span class="preview"> The Usage Rights (Reader Extension) capability is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
-  
 The Usage Rights capability enables your organization to easily share interactive PDF documents by extending the functionality of Adobe Reader with additional usage rights. The service works with Adobe Reader 7.0 or later and adds usage rights to a PDF document. This action activates features that are not usually available when a PDF document is opened using Adobe Reader, such as adding comments to a document, filling forms, and saving the document.
 
 When PDF documents have the appropriate usage rights added, recipients can do the following activities from within Adobe Reader:
@@ -197,29 +227,29 @@ These special usage rights capabilities are automatically activated when a right
 
 The various usage rights capabilities for extending PDF Reader services are:
 
-  * **Barcodes Decoding**: To decode barcodes within the PDF document.
+* **Barcodes Decoding**: To decode barcodes within the PDF document.
 
-  * **Comments**: To comment offline on the PDF document.
+* **Comments**: To comment offline on the PDF document.
 
-  * **Comments Online**: To comment online on the PDF document.
+* **Comments Online**: To comment online on the PDF document.
 
-  * **Digital Signature**: To add digital signatures to a PDF document.
+* **Digital Signature**: To add digital signatures to a PDF document.
 
-  * **Dynamic Form Fields**: To add form fields to a PDF document.
+* **Dynamic Form Fields**: To add form fields to a PDF document.
 
-  * **Dynamic Form Pages**: To add form pages to a PDF document.
+* **Dynamic Form Pages**: To add form pages to a PDF document.
 
-  * **Embedded Files**: To embed files within a PDF document.
+* **Embedded Files**: To embed files within a PDF document.
 
-  * **Form Data Import**: To import form data to a PDF document.
+* **Form Data Import**: To import form data to a PDF document.
 
-  * **Form Data Export**: To import form data to a PDF document.
+* **Form Data Export**: To import form data to a PDF document.
 
-  * **Form Fill In**: To fill form fields within a PDF document.
+* **Form Fill In**: To fill form fields within a PDF document.
 
-  * **Online Forms**: To access a web service or database from a PDF document.
+* **Online Forms**: To access a web service or database from a PDF document.
 
-  * **Submit Standalone**: To submit form data offline from a PDF document.
+* **Submit Standalone**: To submit form data offline from a PDF document.
 
 #### Other capabilities
 
@@ -261,10 +291,12 @@ After onboarding, to enable Communications capability for your Forms as a Cloud 
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
 
-## Additional Resources {#see-also}
-
-* [Communication Processing - Synchronous APIs](/help/forms/aem-forms-cloud-service-communications.md)
-* [Communication Processing - Batch APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
-* [AEM Forms as a Cloud Service Architecture](/help/forms/aem-forms-cloud-service-architecture.md)
-* [API Reference Documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
-* [Early Adopter Program Features](/help/forms/early-access-ea-features.md)
+>[!MORELIKETHIS]
+>
+>* [Introduction to AEM Forms as a Cloud Service Communications](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [AEM Forms as a Cloud Service Architecture for Adaptive Forms and Communication APIs](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Communication Processing - Synchronous APIs](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Communication Processing - Batch APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Forms Communications API - Tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
+>* [API Reference Documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
+>* [Early Adopter Program Features](/help/forms/early-access-ea-features.md)

@@ -4,7 +4,7 @@ description: Learn about Adobe Runtime actions and to use them App Builder appli
 version: Experience Manager as a Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
-role: Developer, Architect
+role: Developer
 level: Beginner
 kt: 9456, 9475, 9476, 9477
 thumbnail: 327313.jpg

@@ -86,7 +86,7 @@ The following table demonstrates the difference between the features available i
   <tr>
     <td>Set the drop-down list of options </td>
     <td>The drop-down list of options is set using the Rule Editor's <b>Set Options of</b> property.</td>
-    <td>The dropdown options are set using the custom functions. 
+    <td>The drop-down list of options is set using the Rule Editor's <b>Invoke Service</b> property. 
    </td>
    </tr>
      </tr>
@@ -220,6 +220,14 @@ To log a support ticket, you must first register your Edge Delivery site in Clou
     * URL of the live website. For example: `www.mydomain.com`.
     * URL of the origin website (`.hlx` URL).
 
+## Sign in to Cloud Manager {#sign-in-to-cloud-manager}
+
+1. Sign in to Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
+   1. In the **Quick access** section, click **Experience Manager**.
+   1. In the left panel, click **Cloud Manager**.
+1. In Cloud Manager, near the upper-right corner of the page, select an organization that you want to use.
+
+
 ## Universal Editor is Preferred over SPA Editor {#ue-over-spa}
 
 >[!IMPORTANT]
@@ -280,3 +288,4 @@ To accelerate site creation, Adobe provides a number of templates suited to diff
 * [AEM Site with Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) - For authoring AEM pages with the Universal Editor and delivering through [edge delivery](/help/edge/overview.md)
 * [Edge Delivery Services with AEM Authoring for Commerce](https://github.com/adobe-rnd/aem-boilerplate-xcom/releases) - For authoring AEM pages with the Universal Editor for commerce projects and delivery through [edge delivery](/help/edge/overview.md)
 * [Standard AEM Site Template](https://github.com/adobe/aem-site-template-standard/releases) - For authoring traditional AEM pages and delivering through [publish delivery](/help/sites-cloud/authoring/author-publish.md)
+

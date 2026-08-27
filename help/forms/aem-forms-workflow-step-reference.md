@@ -1,6 +1,7 @@
 ---
 title: Which workflow steps are available for on AEM Forms Cloud Service to create a workflow or for business process automation (BPM)?
 description: Forms-centric workflows allow you to rapidly build Adaptive Forms-based workflows. You can use Adobe Sign to e-sign documents, create forms-based business processes, retrieve and send data to multiple data sources, and send email notifications
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Use AEM workflows, using assign task steps, convert to PDF/A step, Generate document of recored step, use workflows, Sign document step, Genertae printed output step, Generate non interactive PDF output
@@ -171,6 +172,7 @@ The convert to PDF/A step has the following properties:
 **[!UICONTROL Input Document]**: The input document can be relative to the payload, have an absolute path, can be provided as a payload or stored in a variable of Document data type.
 
 **[!UICONTROL Conversion Options]**: Using this property, the settings for converting PDF documents to PDF/A documents are specified. Various options available under this tab are:
+
 * **[!UICONTROL Compliance]**: Specifies the standard to which the output PDF/A document must comply. It supports different PDF standards such as PDF/A-1b, PDF/A-2b, or PDF/A-3b.
 * **[!UICONTROL Result Level]**: Specifies the result level as PassFail, Summary, or Detailed, for the conversion output.
 * **[!UICONTROL Color Space]**: Specifies the predefined color space as S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED or SWOP, that can be used for output PDF/A files. 
@@ -242,18 +244,20 @@ If you specify the path of a folder, for example, attachments, all the files dir
 
 **[!UICONTROL Locale]**: Specify the language of the Document of Record. Select **[!UICONTROL Literal]** to select the locale from a drop-down list or select **[!UICONTROL Variable]** to retrieve the locale from the value stored in a variable of string data type. Define the locale code while storing the value for the locale in a variable. For example, specify **en_US** for English and **fr_FR** for French.
 
-## Invoke DDX step {#invokeddx}
+## Invoke DDX step
 
 Document Description XML (DDX) is a declarative markup language whose elements represent building blocks of documents. These building blocks include PDF and XDP documents, and other elements such as comments, bookmarks, and styled text. DDX defines a set of operations, which can be applied on one or more input documents to generate one or more output documents. A single DDX can be used with a range of source documents. You can use the ***Invoke DDX step*** in an AEM Workflow to perform various operations, like Assembling Disassembling documents, Creating, and modifying Acrobat and XFA Forms, and others described in the [DDX Reference documentation](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).                    
 
 Invoke DDX step has the following properties: 
 
 **[!UICONTROL Input Documents]**: Used to set properties of an input document. Various options available under this tab are:
+
 * **[!UICONTROL Specify DDX Using]**: Specifies the input document relative to the payload, have an absolute path, can be provided as payload, or stored in a variable of Document data type.
 * **[!UICONTROL Create Map from Payload]**: Add all the documents under the payload folder to Input Document's Map for the invoke API in Assembler. The node name for each document is used as a key in the map.
 * **[!UICONTROL Input Document's Map]**: Option is used to add multiple entries using the **[!UICONTROL ADD]** button. Each entry represents the document's key in the map and the document's source.
 
 **[!UICONTROL Environment Options]**: This option is used to set processing settings for invoke API. Various options available under this tab are:
+
 * **[!UICONTROL Validate Only]**: Checks the validity of the input DDX document.
 * **[!UICONTROL Fail on Error]**: Boolean value to indicate whether the invoke API service fails, if there is an error or not. By default, its value is set to False.
 * **[!UICONTROL First Bates Number]**: Specifies the number, which is self-incrementing. This self-incrementing number is displayed on each consecutive page automatically.  
@@ -264,6 +268,7 @@ Invoke DDX step has the following properties:
 >Environment options are kept in sync with HTTP APIs.
 
 **[!UICONTROL Output Documents]**: Specifies the location to save the output file. Various options available under this tab are:
+
 * **[!UICONTROL Save Output in Payload]**: Saves output documents under the payload folder, or overwrites the payload, in case, the payload is a file.
 * **[!UICONTROL Output Document's Map]**: Specifies the location to save each document file explicitly, by adding one entry per document. Each entry represents the document and the location, where to save it. If there are multiple output documents, this option is used.   
 
@@ -356,8 +361,13 @@ The Invoke Form Data Model (FDM) Service step has the below listed fields to fac
   * **[!UICONTROL Retrieve from Workflow Metadata]**: Use the option when the value to use is saved in a workflow metadata property. For example, emailAddress.
 
   * **[!UICONTROL Relative to Payload]**: Use the option to retrieve the file attachment saved at a path relative to the payload. Select the option and specify either the folder name which includes the file attachment or specify the file attachment name in the text box.
-  
-    For example, if the Relative to Payload folder in the CRX repository includes a file attachment at the `attachment\attachment-folder` location, specify `attachment\attachment-folder` in the text box after selecting the **[!UICONTROL Relative to Payload]** option.
+    
+    >[!NOTE]
+    >
+    > The **Invoke Form Data Model** workflow step supports workflow side metadata for Base64 encoded attachment arrays in [SharePoint List based Form Data Models](/help/forms/connect-forms-to-sharepoint-list.md) and lets workflows pass, store, and retrieve metadata such as file name, MIME type, or custom properties for the attachments.
+    > ![SP List Attachments](/help/edge/docs/forms/assets/workflow-sp-list.png)
+    >
+    > The Relative to Payload folder includes a file attachment at the `attachment` location, specify `attachment` in the text box after selecting the **[!UICONTROL Relative to Payload]** option.
 
   * **[!UICONTROL JSON Dot Notation]**: Use the option when the value to use is in a JSON file. For example, insurance.customerDetails.emailAddress. The JSON Dot Notation option is available only if Map input fields from the input JSON option are selected.
   * **[!UICONTROL Map input fields from input JSON]**: Specify the path of a JSON file to obtain the input value of some service arguments from the JSON file. The path of the JSON file can be relative to the payload, an absolute path, or you can select an input JSON document using a variable of JSON or Form Data Model (FDM) type.
@@ -463,7 +473,7 @@ Generate a Non-Interactive PDF. It provides various customization options.
 
 Merges form data into a PDF form. You can import form data into a PDF form.
 
-### Invoke DDX step {#invokeddx}
+### Invoke DDX step
 
 Executes the DDX file on the specified map of input documents and returns the manipulated PDF documents.
 
@@ -529,7 +539,7 @@ The Generate Printed Output step has the following properties:
   * **[!UICONTROL IPL 400 DPI]**: Use IPL 400 DPI. The ipl400.xdc file is used.
   * **[!UICONTROL TPCL 600 DPI]**: Use TPCL 600 DPI. The tpcl600.xdc file is used.
   * **[!UICONTROL PostScript Plain]**: Use the option to specify a plain text XDC file for PostScript.
-   * **[!UICONTROL DPL300DPI]**: Use DPL 300 DPI. The dpl300.xdc is used.
+  * **[!UICONTROL DPL300DPI]**: Use DPL 300 DPI. The dpl300.xdc is used.
   * **[!UICONTROL DPL400DPI]**: Use DPL 400 DPI. The dpl400.xdc is used.
   * **[!UICONTROL DPL600DPI]**: Use DPL 600 DPI. The dpl600.xdc is used.
   * **[!UICONTROL HP_PCL_5e]**: Use the option to support multiple Canon devices. 

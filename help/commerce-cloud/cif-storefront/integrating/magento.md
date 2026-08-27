@@ -5,7 +5,7 @@ thumbnail: aem-magento-architecture.jpg
 exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b
 feature: Commerce Integration Framework
 role: Admin
-index: no
+index: false
 ---
 
 # AEM and Adobe Commerce Integration Using Commerce Integration Framework {#aem-framework}
@@ -48,6 +48,6 @@ The business logic and backend communication with Adobe Commerce for the AEM CIF
 
 Within projects, AEM CIF Core Components and custom project components can easily retrieve the configured client for an Adobe Commerce store associated with an AEM page via Sling Context-Aware configuration.
 
-## Search {#search}
+## Search
 
 CIF provides out-of-the-box a [Search Core Component](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) that is a server-side rendered search experience based on [Commerce GraphQL API.](https://developer.adobe.com/commerce/webapi/graphql/) Commerce customers have the option to use [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html) instead. Follow this [link](/help/commerce-cloud/cif-storefront/integrating/live-search-plp.md) to learn more about the CIF - Live Search integration.

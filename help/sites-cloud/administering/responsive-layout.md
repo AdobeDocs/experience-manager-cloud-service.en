@@ -1,6 +1,7 @@
 ---
 title: Configuring the Layout Container and Layout Mode
 description: Learn how to configure layout container and layout mode to enable responsive layouts for your content authors.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering

@@ -4,6 +4,7 @@ description: This article describes how to import and export metadata in bulk.
 contentOwner: AG
 feature: Metadata
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
 ---
 # Import and export asset metadata in bulk {#import-and-export-asset-metadata-in-bulk}
@@ -26,7 +27,7 @@ The metadata import is asynchronous and does not impede the system performance. 
    | ---------------------- | ------- |
    | Batch Size             | Number of assets in a batch for which metadata is to be imported. The default value is 50. Maximum value is 100. |
    | Field Separator        | Default value is `,` (a comma). You can specify any other character. |
-   | Multi value Delimiter  | Separator for metadata values. Default value is `|`. |
+   | Multi value Delimiter  | Separator for metadata values. Default value is `\|`. |
    | Launch Workflows       | False by default. When set to `true` and default settings are in effect for the DAM Metadata WriteBack workflow (that writes metadata to the binary XMP data). Enabling the workflows slows the system down. |
    | Asset Path Column Name | Defines the column name for the CSV file with assets.  |
 
@@ -37,7 +38,8 @@ The metadata import is asynchronous and does not impede the system performance. 
    * The date format is dependent on the column heading and the format in it. For example, if the date is complaint with format `yyyy-MM-dd'T'HH:mm:ssXXX` then the respective column header must be `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`. 
    * The default date format is `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`.
 
-<!-- Hidden via cqdoc-17869>
+<!--
+ Hidden via cqdoc-17869>
 
 >[!CAUTION]
 >
@@ -77,19 +79,23 @@ A few use cases for exporting metadata in bulk are:
 
 **See also**
 
-* [Translate Assets](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [Assets supported file formats](file-format-support.md)
-* [Search assets](search-assets.md)
-* [Connected assets](use-assets-across-connected-assets-instances.md)
-* [Asset reports](asset-reports.md)
-* [Metadata schemas](metadata-schemas.md)
-* [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata.md)
-* [Search facets](search-facets.md)
-* [Manage collections](manage-collections.md)
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
 >* [Import metadata when importing assets in bulk](/help/assets/add-assets.md#asset-bulk-ingestor)
+

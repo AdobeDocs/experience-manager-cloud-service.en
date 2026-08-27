@@ -2,6 +2,7 @@
 title: How can we create an Adaptive Form template?
 description: Create Adaptive Form templates to define the basic structure and initial content using the Template Editor.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
 role: User, Developer, Admin
 ---
@@ -51,11 +52,11 @@ When you open a template for editing, you can see the following AEM Editor compo
 * **Page toolbar**
   Contains the following options:
 
-    * **Toggle Side Panel**: Lets you show or hide the sidebar.
-    * **Page Information**: Lets you specify information such as the publish/unpublish time, thumbnails, client-side libraries, page policy, and page design client-side library.
+  * **Toggle Side Panel**: Lets you show or hide the sidebar.
+  * **Page Information**: Lets you specify information such as the publish/unpublish time, thumbnails, client-side libraries, page policy, and page design client-side library.
    <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
-    * **Mode selector:** Lets you change the mode.You can choose **[!UICONTROL Structure]** mode, **[!UICONTROL Initial Content]**, **[!UICONTROL Layout Control]** mode. Structure mode lets you add and customize the header and footer. Initial Content mode lets you customize the form content.
-    * **Preview:** Lets you preview how the template looks when you publish it. You can use Layer Selector and Preview to toggle editing and preview modes.
+  * **Mode selector:** Lets you change the mode.You can choose **[!UICONTROL Structure]** mode, **[!UICONTROL Initial Content]**, **[!UICONTROL Layout Control]** mode. Structure mode lets you add and customize the header and footer. Initial Content mode lets you customize the form content.
+  * **Preview:** Lets you preview how the template looks when you publish it. You can use Layer Selector and Preview to toggle editing and preview modes.
 * **Sidebar:** Provides the Content, Properties, Assets, and Components browsers.
 * **Component toolbar:** When you select a component, you see a toolbar that lets you customize the component.
 * **Page**: The area where you add content to create the template.
@@ -158,7 +159,7 @@ A form works with its template. When you download an Adaptive Form created using
 
 >[!NOTE]
 >
-> * You can also configure the [!UICONTROL Document of Record] template directly from the Adaptive Form editor or Adaptive Form template editor. For more information, see [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+> * You can also configure the [!UICONTROL Document of Record] template directly from the Adaptive Form builder or Adaptive Form template builder. For more information, see [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
 
 ## Associate a Form Data Model Schema to a template {#associating-form-data-model-schema-in-template}
@@ -197,7 +198,8 @@ Perform the following steps to show and hide templates:
     * To show or hide out of the box Adaptive Forms template, check or uncheck the **Include Out of the box AF and AD Templates** option.
     * To show or hide out of the box Adaptive Form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, and you want it to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
 
-1. Click **Save**. The display options for the out of the box templates are changed. -->
+1. Click **Save**. The display options for the out of the box templates are changed.
+-->
 
 ## Save an Adaptive Form as a template {#saving-adaptive-form-as-template}
 

@@ -4,6 +4,7 @@ description: Learn to create Adaptive Forms and Fragments based on a form data m
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
 ---
 # Use Form Data Model (FDM) {#use-form-data-model}
@@ -32,6 +33,22 @@ A Form Data Model (FDM) is an extension of JSON schema that you can use to:
 * [Write submitted Adaptive Form data back into data sources](#write-af)
 * [Invoke services using Adaptive Form rules](#invoke-services)
 
+## Applicability and use cases
+
+### Insurance
+
+## Can AEM Forms integrate with insurance core systems?
+
+Yes. AEM Forms supports integration using REST and SOAP APIs, allowing it to connect with policy administration systems, claims management systems, and CRMs.
+
+## Can AEM Forms write form data back to insurance systems?
+
+Yes. AEM Forms supports data write-back to backend systems as part of form submission and workflow execution.
+
+## Can customers securely upload claim documents using AEM Forms?
+
+Yes. AEM Forms supports secure document upload as part of form submissions, with access controls and secure data handling aligned to enterprise security requirements.
+
 ## Create Adaptive Forms and fragments {#create-af}
 
 You can create [Adaptive Forms](creating-adaptive-form.md) and Adaptive Form Fragments <!-- [Adaptive Form Fragments](adaptive-form-fragments.md) --> based on a form data model (FDM). Do the following to use a Form Data Model (FDM) when creating an Adaptive Form or Adaptive Form Fragment:
@@ -50,7 +67,7 @@ You can create [Adaptive Forms](creating-adaptive-form.md) and Adaptive Form Fra
 
    ![create-af-3](assets/create-af-3.png)
 
-   Once the Adaptive Form or Adaptive Form Fragment based on a Form Data Model (FDM) is created, Form Data Model objects appear in the **[!UICONTROL Data Sources]** tab of the Content browser in Adaptive Form editor.
+   Once the Adaptive Form or Adaptive Form Fragment based on a Form Data Model (FDM) is created, Form Data Model objects appear in the **[!UICONTROL Data Sources]** tab of the Content browser in Adaptive Form builder.
 
    >[!NOTE]
    >
@@ -60,7 +77,8 @@ You can create [Adaptive Forms](creating-adaptive-form.md) and Adaptive Form Fra
 
    You can drag-drop data model objects onto the Adaptive Form or fragment to add form fields. The added form fields retain the metadata properties and binding with data model object properties. The binding ensures that the field values are updated in the corresponding data sources on form submission and prefilled when the form is rendered.
 
-<!-- ## Create interactive communications {#create-ic}
+<!--
+ ## Create interactive communications {#create-ic}
 
 You can create an interactive communication based on a Form Data Model that you can use to prefill interactive communication with data from configured data sources. In addition, the building blocks of an interactive communication, such as text, list, and condition document fragments can be based on a form data model.
 
@@ -78,13 +96,15 @@ For more information, see:
 
 [Conditions in Interactive Communications](conditions-interactive-communications.md)
 
-[List fragments](lists.md) --> 
+[List fragments](lists.md)
+-->
 
 ## Preview with sample data {#preview-ic}
 
 Form Data Model editor lets you generate and edit sample data for data model objects in the form data model (FDM). You can use this data to preview and test <!--interactive communications and--> Adaptive Forms. You must generate the sample data before previewing as described in [Work with form data model](work-with-form-data-model.md#sample).
 
-<!--To preview an interactive communication with sample Form Data Model data:
+<!--
+To preview an interactive communication with sample Form Data Model data:
 
 1. On [!DNL  Experience Manager] author instance, navigate to **[!UICONTROL Forms > Forms & Documents]**.
 1. Select an interactive communication and select **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
@@ -92,23 +112,26 @@ Form Data Model editor lets you generate and edit sample data for data model obj
 
 The interactive communication opens with prefilled sample data.
 
-![web-preview](assets/web-preview.png)-->
+![web-preview](assets/web-preview.png)
+-->
 
 To preview an Adaptive Form with sample data, open the Adaptive Form in author mode and select **[!UICONTROL Preview]**.
 
 ## Prefill using Form Data Model service {#prefill}
 
-[!DNL Experience Manager Forms] provides out-of-the-box Form Data Model Prefill Service that you can enable for Adaptive Forms <!--and interactive communications--> based on form data model (FDM). The prefill service queries data sources for data model objects in the Adaptive Form <!--and interactive communication--> and accordingly prefills data while rendering the form or the communication.
+[!DNL Experience Manager Forms] provides out-of-the-box Form Data Model Prefill Service that you can enable for Adaptive Forms <!--and interactive communications--> based on form data model (FDM). The prefill service queries data sources for data model objects in the Adaptive Form and accordingly prefills data while rendering the form or the communication.
 
 To enable the Form Data Model Prefill Service for an Adaptive Form, open the Adaptive Form Container properties and select **[!UICONTROL Form Data Model Prefill service]** from the **[!UICONTROL Prefill Service]** drop-down in the Basic accordion. Then, save the properties.
 
 ![prefill-service](assets/prefill-service.png)
 
-<!--To configure Form Data Model prefill service in an interactive communication, you can select Form Data Model Prefill Service in the Prefill Service drop-down while creating it or later by modifying the properties.
+<!--
+To configure Form Data Model prefill service in an interactive communication, you can select Form Data Model Prefill Service in the Prefill Service drop-down while creating it or later by modifying the properties.
 
 ![edit-ic-props](assets/edit-ic-props.png)
 
-Edit Properties dialog for an interactive communication-->
+Edit Properties dialog for an interactive communication
+-->
 
 ## Write submitted Adaptive Form data into data sources {#write-af}
 

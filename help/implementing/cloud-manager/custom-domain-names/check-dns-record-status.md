@@ -4,7 +4,7 @@ description: Learn how to determine whether your DNS settings are properly resol
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Check DNS record status {#check-dns-record-status}
@@ -31,9 +31,9 @@ You must have already configured the DNS settings for your custom domain name as
 
 1. Click the **Status** icon for the domain name.
 
-Cloud Manager performs a DNS lookup for your domain name and displays it [current status](#statuses).
+Cloud Manager performs a DNS lookup for your domain name and displays its [current status](#statuses).
 
-Cloud Manager automatically triggers a DNS lookup when your custom domain name is first successfully verified and deployed. For subsequent attempts, you must actively select the **Resolve Again** icon next to the status.
+Cloud Manager automatically triggers a DNS lookup when your custom domain name is first successfully verified and deployed. For subsequent attempts, you must select the **Resolve Again** icon next to the status.
 
 ## DNS statuses in Cloud Manager {#statuses}
 

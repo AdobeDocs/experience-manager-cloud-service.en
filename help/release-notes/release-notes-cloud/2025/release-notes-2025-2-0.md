@@ -122,6 +122,7 @@ The more performant Java 21 **runtime** will be automatically deployed when a Ja
 Edge computing brings data processing closer to the browser, which has benefits including reduced latency. Adobe would like to hear if you find this technology useful for AEM Publish Delivery and Edge Delivery Services projects. Additionally, let us know what you envision using it for as input into the product roadmap. 
 
 Some possible use cases:
+
 * Authentication with an IdP to gate access to content
 * Rendering dynamic (personalized, localized) content based on geolocation, device type, user attributes, etc.
 * Advanced image manipulation 

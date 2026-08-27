@@ -3,7 +3,8 @@ title: Developer references for [!DNL Assets]
 description: "[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments]."
 contentOwner: AG
 feature: Assets HTTP API
-role: Developer, Architect, Admin
+role: Developer, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
 ---
 # [!DNL Adobe Experience Manager Assets] developer use cases, APIs, and reference material {#assets-cloud-service-apis}
@@ -57,6 +58,16 @@ The article contains recommendations, reference materials, and resources for dev
 | Delete folder      |&#10003;|&#10003;|-|&#10003;|-|-|
 | Copy folder        |&#10003;|&#10003;|-|&#10003;|-|-|
 | Move folder        |&#10003;|&#10003;|-|&#10003;|-|-|
+
+>[!NOTE]
+>
+> Adobe does not recommend uploading packages of assets as it violates our best-practices around avoiding binary handling in AEM. Uploading assets via JCR packages does not result in processing being triggered on those assets in AEM as a Cloud Service.
+
+## Set up OpenAPI-based AEM Assets APIs {#setup-openapi-aem-assets}
+
+If `AEM Assets API Users` Product Profile service does not display in Production, Development or lower environments created before November 2024, you must set up OpenAPI-based AEM Assets APIs.
+
+Setting up OpenAPI-based AEM Assets APIs involves Modernization of AEM as a Cloud Service environment and enabling AEM Assets APIs access. Modernization must be executed per environment (Production, Development, and Stage). For more information, see [Set up OpenAPI-based AEM APIs](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup).
 
 ## Asset upload {#asset-upload}
 
@@ -488,7 +499,8 @@ The following technical workflow models are either replaced by asset microservic
 * `com.day.cq.dam.core.process.AssetOffloadingProcess`
 * `com.adobe.cq.dam.dm.process.workflow.DMImageProcess`
 
-<!-- Commenting the previous list documented at the time of GA. Replacing it with the updated list via cqdoc-18231.
+<!--
+ Commenting the previous list documented at the time of GA. Replacing it with the updated list via cqdoc-18231.
 
 * `com.day.cq.dam.core.process.DeleteImagePreviewProcess`
 * `com.day.cq.dam.s7dam.common.process.DMEncodeVideoWorkflowCompletedProcess`
@@ -524,24 +536,27 @@ The following technical workflow models are either replaced by asset microservic
 * `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
 -->
 
-<!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of
+<!--
+ PPTX source: slide in add-assets.md - overview of direct binary upload section of
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
 **See also**
 
-* [Translate Assets](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [Assets supported file formats](file-format-support.md)
-* [Search assets](search-assets.md)
-* [Connected assets](use-assets-across-connected-assets-instances.md)
-* [Asset reports](asset-reports.md)
-* [Metadata schemas](metadata-schemas.md)
-* [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata.md)
-* [Search facets](search-facets.md)
-* [Manage collections](manage-collections.md)
-* [Bulk metadata import](metadata-import-export.md)
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]

@@ -140,9 +140,9 @@ Once access to a [production clone](#proof-of-migration) is established proceed 
 
 | Action Item | Key Takeaways |
 |---------|----------|
-Users, Groups and Permissions | You need to understand the volume of users, groups, and complexity around memberships. Look for opportunities to clean up any unused users, groups in the source before migration.
-Incomplete Asset processing | Try to complete the processing of assets in the source system before starting the migration to avoid potential concerns in AEM as a Cloud Service post migration. |
-Content Health | It is recommended to query for bad content and purge it before you start the migration. For example, look for assets or pages that do not have original renditions or that are stuck in workflow processing. Also see [Asset Health](#asset-health). |
+|Users, Groups and Permissions | You need to understand the volume of users, groups, and complexity around memberships. Look for opportunities to clean up any unused users, groups in the source before migration.|
+|Incomplete Asset processing | Try to complete the processing of assets in the source system before starting the migration to avoid potential concerns in AEM as a Cloud Service post migration. |
+|Content Health | It is recommended to query for bad content and purge it before you start the migration. For example, look for assets or pages that do not have original renditions or that are stuck in workflow processing. Also see [Asset Health](#asset-health). |
 
 ## Gathering Data {#gathering-data}
 
@@ -157,7 +157,8 @@ Gathering data can help you plan the migration activities and associated tasks. 
 * Total amount of time taken for top-up [ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)
 
 
-<!-- Alexandru: hiding this for now
+<!--
+ Alexandru: hiding this for now
 
 One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, because it is added to the overall extraction timeline and it may not be required to run it during top-ups.
 

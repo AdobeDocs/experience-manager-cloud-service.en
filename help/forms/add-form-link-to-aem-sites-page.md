@@ -3,6 +3,7 @@ title: How to add forms links on the AEM Sites page using the Link Forms Portal 
 description: Learn how to add forms links to the AEM Sites page.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: a55d0776-8827-46cc-9625-5d6f5f6bda3b
 ---
 # Add form links to Sites page
@@ -11,11 +12,6 @@ In the bank website scenario, the **Link** Forms Portal component enhances navig
 
 ![Link icon](/help/forms/assets/link-forms.png)
 
-## Pre-requisite
-
-Before exploring the various capabilities of a Forms Portal component, ensure that Core Components are enabled for your environment. Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.
-
-After deploying the latest Core Components to your environment, the Forms Portal components become accessible in your authoring environment.
 
 ## Add the Link component to your Sites page
 

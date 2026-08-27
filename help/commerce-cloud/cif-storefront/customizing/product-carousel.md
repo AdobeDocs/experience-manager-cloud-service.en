@@ -4,7 +4,7 @@ description: Learn how to extend the AEM CIF Product Carousel component by updat
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 758e0e13-c4d8-4d32-bcc9-91a36b3ffa98
-index: no
+index: false
 ---
 
 # Custom Attributes to CIF Product Carousel {#product-carousel}

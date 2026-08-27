@@ -46,9 +46,11 @@ The following video provides a high-level overview on how to deploy code to AEM 
 
 ### Deployments by way of Cloud Manager {#deployments-via-cloud-manager}
 
-<!-- Alexandru: temporarily commenting this out, until I get some clarification from Brian 
+<!--
+ Alexandru: temporarily commenting this out, until I get some clarification from Brian 
 
-![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
+![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8)
+-->
 
 Customers deploy custom code to cloud environments through Cloud Manager. Cloud Manager transforms locally assembled content packages into an artifact conforming to the Sling Feature Model, which is how an application on AEM as a Cloud Service is described when running in a cloud environment. As a result, when looking at the packages in [Package Manager](/help/implementing/developing/tools/package-manager.md) on Cloud environments, the name includes "cp2fm" and the transformed packages have all metadata removed. They cannot be interacted with, meaning they cannot be downloaded, replicated, or opened. For detailed documentation about the converter see [sling-org-apache-sling-feature-cpconverter on GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
@@ -110,9 +112,9 @@ It is possible to limit mutable content installation to author or publish by emb
 >[!NOTE]
 >Content packages are deployed to all environment types (dev, stage, prod). It is not possible to limit deployment to a specific environment. This limitation is in place to ensure the option of a test run of automated execution. Content that is specific to an environment requires manual installation by way of [Package Manager](/help/implementing/developing/tools/package-manager.md).
 
-Also, there is no mechanism to roll back the mutable content package changes after they've been applied. If customers detect a problem, they can choose to fix it in their next code release or as a last resort, restore the entire system to a point in time before the deployment.
+Also, there is no mechanism to roll back the mutable content package changes after they have been applied. If customers detect a problem, they can choose to fix it in their next code release or as a last resort, restore the entire system to a point in time before the deployment.
 
-Any included third-party packages must be validated as being AEM as a Cloud Service compatible, otherwise its inclusion results in a deployment failure.
+Any included third-party packages must be validated as being AEM as a Cloud Service compatible; otherwise, their inclusion results in a deployment failure.
 
 As mentioned above, customers with existing code bases should conform to the repository restructuring exercise needed by the 6.5 repository changes described in the [AEM 6.5 documentation](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html).
 
@@ -160,9 +162,11 @@ To create `repoinit` statements, follow the below procedure:
 
 More detail about `repoinit` can be found in the [Sling documentation](https://sling.apache.org/documentation/bundles/repository-initialization.html)
 
-<!-- ### Packaging of Immutable and Mutable Packages {#packaging-of-immutable-and-mutable-packages}
+<!--
+ ### Packaging of Immutable and Mutable Packages {#packaging-of-immutable-and-mutable-packages}
 
-above appears to be internal, to confirm with Brian -->
+above appears to be internal, to confirm with Brian
+-->
 
 ### Package Manager "one offs" for Mutable Content Packages {#package-manager-oneoffs-for-mutable-content-packages}
 
@@ -321,9 +325,11 @@ When developing locally, a run mode startup parameter, `-r`, is used to specify 
 $ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
 ```
 
-<!-- ### Performance Monitoring {#performance-monitoring}
+<!--
+ ### Performance Monitoring {#performance-monitoring}
 
-Developers want to ensure that their custom code is performing well. For Cloud environments, performance reports can be viewed on Cloud Manager. -->
+Developers want to ensure that their custom code is performing well. For Cloud environments, performance reports can be viewed on Cloud Manager.
+-->
 
 ## Maintenance Tasks Configuration in Source Control {#maintenance-tasks-configuration-in-source-control}
 

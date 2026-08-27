@@ -1,6 +1,7 @@
 ---
 title: How to integrate an Adaptive Form with Microsoft&reg; Power Automate?
 description: Integrate an Adaptive Form with Microsoft&reg; Power Automate.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: connect AEM formns to power automate, Power automate automation AEM Forms, Integrate power automate to Adaptive Forms, send data from Adaptive Forms to Power Automate
 feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services
@@ -8,6 +9,11 @@ role: Admin, User, Developer
 ---
 
 # Connect an Adaptive Form with Microsoft&reg; Power Automate {#connect-adaptive-form-with-power-automate}
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration)                  |
+| AEM as a Cloud Service     | This article            |
 
 <span class="preview"> If you're on GovCloud and need to connect to a GCC (Government Cloud Computing) tenant, send an email from your official address to aem-forms-ea@adobe.com to request access through the Early Adopter Program. </span>
 
@@ -129,6 +135,14 @@ Perform the following actions to connect your Forms as a Cloud Service instance 
 1. On the Publish page, select **[!UICONTROL All Configurations]** and select **[!UICONTROL Publish]**. Publish both Power Automate Dataverse and Power Automate Flow Service Cloud Configurations.
 
 Your Forms as a Cloud Service instance is now connected with Microsoft&reg; Power Automate. You can now send Adaptive Forms data to a Power Automate flow. 
+
+>[!IMPORTANT]
+>
+>Tokens used for the Microsoft&reg; Power Automate connection expire after 90 days.
+>
+> To keep the integration working, re-authenticate and re-publish both the Microsoft&reg; Power Automate Dataverse and Microsoft&reg; Power Automate Flow Service cloud configurations before or when the token expires, use the steps documented at [Publish both the Microsoft&reg; Power Automate Dataverse and Microsoft&reg; Power Automate Flow Service Cloud Configurations](#publish-microsoft-power-automate-dataverse-cloud-configuration).
+>
+> For details on token lifetime policies, see the [Microsoft Entra documentation on configurable token lifetimes](https://learn.microsoft.com/en-us/entra/identity-platform/configurable-token-lifetimes#token-lifetime-policies-for-refresh-tokens-and-session-tokens). If the token is not renewed, form submissions to Power Automate may fail.
 
 ## Use the Invoke a Microsoft&reg; Power Automate flow submit action to send data to a Power Automate Flow {#use-the-invoke-microsoft-power-automate-flow-submit-action}
 

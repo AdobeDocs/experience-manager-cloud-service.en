@@ -90,7 +90,8 @@ The next release is planned for July 15, 2021.
   * Support for [!DNL Assets Essentials].
   * Ability to automatically connect to [!DNL Experience Manager] as a [!DNL Cloud Service] or [!DNL Assets Essentials].
 
-<!-- TBD: Checking with PMs if AAE release should be mentioned here.
+<!--
+ TBD: Checking with PMs if AAE release should be mentioned here.
 -->
 
 ### New features available in the [!DNL Assets] prerelease channel {#beta-features-assets}
@@ -166,7 +167,7 @@ The Release Date for AEM Screens as a Cloud Service is June 24, 2021.
 * New CIF product and category reference data types for Content Fragments (Incl. product / category picker UI support)
 * New Commerce Content Fragment Core Component
 * Full-text commerce search supported in AEM backend
-* Commerce Core Components support Adobe Commerce Sensei Recs data collection
+* Commerce Core Components support Adobe Commerce AI Recs data collection
 * Improved SEO-friendly URLs for category pages
 * Support for custom HTTP headers per site/config
 

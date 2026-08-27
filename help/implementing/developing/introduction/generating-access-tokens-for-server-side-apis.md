@@ -3,7 +3,7 @@ title: Generating Access Tokens for Server-Side APIs
 description: Learn how to facilitate communication between a third-party server and AEM as a Cloud Service by generating a secure JWT Token
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Generating Access Tokens for Server-Side APIs {#generating-access-tokens-for-server-side-apis}
 
@@ -11,11 +11,13 @@ Some architectures rely on making calls to AEM as a Cloud Service from an applic
 
 The server-to-server flow is described below, along with a simplified flow for development. The AEM as a Cloud Service [Developer Console](development-guidelines.md#crxde-lite-and-developer-console) is used to generate tokens needed for the authentication process.
 
-<!-- Alexandru: hiding this until the tutorials reflect the new UI
+<!--
+ Alexandru: hiding this until the tutorials reflect the new UI
 
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html).
+-->
 
 ## The Server-to-server Flow {#the-server-to-server-flow}
 
@@ -59,14 +61,15 @@ The application making calls to AEM should be able to access the credentials for
 
 Use the credentials to create a JWT token in a call to Adobe's IMS service to retrieve an access token, which is valid for 24 hours.
 
-The AEM CS Service Credentials may be exchanged for an access token using client libraries designed for this purpose. The client libraries are available from [Adobe's public GitHub repository](https://github.com/adobe/aemcs-api-client-lib), which contains more detailed guidance and latest information.
+The AEM CS Service Credentials may be exchanged for an access token using code samples designed for this purpose. Sample code is available from [Adobe's public GitHub repository](https://github.com/adobe/aemcs-api-client-lib), which contains code examples that you can copy and adapt for your own projects. Note that this repository contains sample code for reference and is not maintained as a production-ready library dependency.
 
 ```
 /*jshint node:true */
 "use strict";
 
 const fs = require('fs');
-const exchange = require("@adobe/aemcs-api-client-lib");
+// Sample code adapted from Adobe's GitHub repository
+const exchange = require("./your-local-aemcs-client"); // Copy and adapt the code from the GitHub repository
 
 const jsonfile = "aemcs-service-credentials.json";
 
@@ -211,7 +214,6 @@ To achieve this refresh extension, do the following:
 
 * After pressing the button, a set of credentials that includes a new certificate is generated. Install the new credentials on your off-AEM server and ensure that connectivity is as expected, without removing the old credentials.
 * Make sure that the new credentials are used instead of the old ones when generating the access token.
-* Optionally revoke (and then delete) the prior certificate so it can no longer be used to authenticate with AEM as a Cloud Service.
 
 ## Credentials Revocation {#credentials-revocation}
 
@@ -239,3 +241,15 @@ If the private key is compromised, you must create credentials with a new certif
    ![Revoke certificate confirmation](/help/implementing/developing/introduction/assets/s2s-revokecertificateconfirmation.png)
 
 1. Finally, delete the compromised certificate.
+
+### Note on Revocating Individual Certificates {#note-on-recovacting-individual-certificates}
+
+For the JWT handshake (used to retrieve a bearer token) all that needs to be satisfied is that:
+
+1. You have the private key
+1. There are one or more active certificates present under the respective private key in the Developer Console
+1. During the retrieval of the token (JWT handshake), IMS checks that the JWT signature matches with any bound and active (not expired) certificate on record in our system, which you can see in the console.
+
+Adding a new certificate under a PK could make it seem that revoked certificates are still usable. In effect, all certificates under a PK are equivalent. If at one is active, all are considered active.
+
+If you consider this to be a security issue, you should create a separate private key, and revoke all certificates on the old private key.

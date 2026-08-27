@@ -4,6 +4,7 @@ description: This article explores various use cases for the rule editor in an A
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
 ---
 # Rule Editor Enhancements and Use Cases
@@ -16,12 +17,13 @@ The table below lists recent enhancements to the rule editor in Adaptive Forms, 
 
 | Enhancement    | Description     | Advantages|
 |---|----|---|
-| **Validation using the `validate()` method**     | Available in the function list to validate individual fields, panels, or the entire form.            | - Granular validation at panel, field, or form level  <br> - Better user experience with targeted error messaging <br> - Prevents progression with incomplete data <br> - Reduces form submission errors |
-| **Download DOR**                                 | Out-of-the-box function available in the rule editor to download the Document of Record (DoR).        | - No custom development required for downloading DoR <br> - Consistent download experience across forms |
-| **Dynamic variables**                            | Create rules using variables that change based on user input or other conditions.                     | - Enables flexible rule conditions <br> - Reduces need for duplicate logic <br> - Eliminates requirement to create hidden fields  |
-| **Custom event-based rules**                     | Define rules that respond to custom events beyond the standard triggers.                              | - Supports advanced use cases <br> - Greater control over when and how rules are executed <br> - Enhances interactivity |
-| **Context-aware repeatable panel execution**     | Rules now execute in the correct context for each repeated panel, instead of only the last instance.  | - Accurate rule application for each repeat instance <br> - Reduces errors in dynamic sections <br> - Improves user experience with repeated content |
-| **Support for query string, UTM, and browser parameters** | Create rules that adapt form behavior based on URL parameters or browser-specific values.        | - Enables personalization based on source or environment <br> - Useful for marketing or tracking-specific flows <br> - No need for extra scripting or customization |
+| [Validation using the validate() method](#validate-method-in-function-list)     | Available in the function list to validate individual fields, panels, or the entire form.            | - Granular validation at panel, field, or form level  <br> - Better user experience with targeted error messaging <br> - Prevents progression with incomplete data <br> - Reduces form submission errors |
+| [Download Dcocument of Record](#download-document-of-record)                                 | Out-of-the-box function available in the rule editor to download the Document of Record (DoR).        | - No custom development required for downloading DoR <br> - Consistent download experience across forms |
+| [Dynamic variables](#support-for-dynamic-variables-in-rules)                            | Create rules using variables that change based on user input or other conditions.                     | - Enables flexible rule conditions <br> - Reduces need for duplicate logic <br> - Eliminates requirement to create hidden fields  |
+| [Custom event-based rules](#custom-event-based-rules-support)                     | Define rules that respond to custom events beyond the standard triggers.                              | - Supports advanced use cases <br> - Greater control over when and how rules are executed <br> - Enhances interactivity |
+| [Context-aware repeatable panel execution](#context-based-rule-execution-for-repeatable-panels)     | Rules now execute in the correct context for each repeated panel, instead of only the last instance.  | - Accurate rule application for each repeat instance <br> - Reduces errors in dynamic sections <br> - Improves user experience with repeated content |
+| [Combined When conditions with the File Attachment component](#combined-when-conditions-with-the-file-attachment-component) | Create a When rule for the File Attachment component using Add Condition and AND or OR logic, so the attachment is evaluated together with other validations. | - Actions run only when attachment state and other checks evaluate as intended <br> - Fewer chained rules for upload scenarios <br> - Clearer authoring for forms that require files and validated inputs together |
+| [Support for query string, UTM, and browser parameters](#url-and-browser-parameter-based-rules-in-adaptive-forms) | Create rules that adapt form behavior based on URL parameters or browser-specific values.        | - Enables personalization based on source or environment <br> - Useful for marketing or tracking-specific flows <br> - No need for extra scripting or customization |
 
 >[!NOTE]
 >
@@ -58,7 +60,7 @@ In the above rule, the **Next** button checks whether the fields in the **Person
 >
 >You can use the **validate()** method on forms, fragments, or individual fields. When a fragment is included in a form, both the form and the fragment appear as options in the validation context. In this case, the fragment refers to the fields within it, while the form refers to the parent form where the fragment is embedded.
 
-## DownloadDor as OOTB fuction in Rule Editor
+## Download Document of Record
 
 Using the  **DownloadDor()** out-of-the-box (OOTB) function in the Rule Editor, allows user to download the Document of Record , if the form is configured to generate Document of Recored. 
 
@@ -132,7 +134,6 @@ Instead of binding logic directly to the fields, the form uses an event-based ap
 
 **Implementation using Dispatch Event and On Trigger Event**
 
-
 >[!VIDEO](https://video.tv.adobe.com/v/3471610/dispatch-trigger-final/?quality=12&learn=on)
 
 The login fragment is added to the form, containing predefined fields for Username and Password. A rule is configured on the **Get OTP** button to display the **Validation Panel**, which includes the input field for entering and validating the OTP.
@@ -151,6 +152,10 @@ When the user submits the form with correct credentials and a valid OTP, the log
 
 Support for custom events allowing developers to create and trigger custom events that can be used as conditions in rule editor.
 
+### Simplified grammar for OOTB and custom events {#simplified-grammar-for-ootb-and-custom-events}
+
+The enhanced rule editor includes a **simplified grammar** for event-based rules that use **Dispatch Event** and **On Trigger Event**. Previously, this grammar applied only to **custom** events; out-of-the-box (OOTB) events were not supported, which often required **When** rules for OOTB triggers and **On Trigger Event** rules for custom events. OOTB events are now supported with the same simplified grammar, enabling a consistent authoring pattern without switching between **When** and **On Trigger Event** based on whether the trigger is OOTB or custom.
+
 ## Context-Based Rule Execution for Repeatable Panels
 
 Adaptive Forms support context-aware rule execution for repeatable panels. This allows rules to apply specifically to the panel instance where the user interacts, rather than affecting all instances or defaulting to the last one.
@@ -168,6 +173,26 @@ The below screenshot displays the rule for the **Number of Product** field insid
 When the quantity is changed, the rule fetches the unit price of the selected product and calculates the total cost for that panel only. 
 
 ![Context aware rule output](/help/forms/assets/context-aware-rule-output.png)
+
+## Combined When conditions with the File Attachment component {#combined-when-conditions-with-the-file-attachment-component}
+
+The enhanced rule editor supports **When** rules that combine the **File Attachment** component with other conditions using **AND** or **OR** logic. **Add Condition** in the **When** clause can include file attachment state together with checks on other fields or panel validation, so an action runs only when every selected condition is met.
+
+**Scenario**: A pet registration form collects **Pet ID**, **Pet Name**, and **Pet Category**, and includes an **Add Photo** file attachment. The form runs an action, for example, clear or refresh **Add Photo**, when the attachment changes **and** the configured conditions on the other fields (their values) are satisfied.
+
+**Implementation using When conditions with the File Attachment component in the Rule Editor**
+
+A rule is configured on the target object (such as **Add Photo**). The **When** section uses **Add Condition** to combine the file attachment trigger with conditions on one or more other fields, so the action depends on both the attachment and those field values.
+
+The below screenshot displays the **When** condition with multiple conditions and **Add Condition** options:
+
+![When rule with multiple conditions and Add Condition](/help/forms/assets/rule-editor-when-file-attachment-conditions.png)
+
+When the **When** clause evaluates as true for the configured **AND** or **OR** logic, the rule runs the configured action.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3483735/file-attachment/?quality=12&learn=on)
+
+When **Pet ID** contains `101`, the **Add Photo** attachment clears; similarly, when **Pet Name** contains `a`, the attachment clears.
 
 ## URL and Browser Parameter-Based Rules in Adaptive Forms
 

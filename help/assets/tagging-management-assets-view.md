@@ -1,6 +1,7 @@
 ---
 title: How to manage tags in Assets view?
 description: Learn how to manage tags in Assets view. Tags help you categorize assets that can be browsed and searched more efficiently.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
 feature: Smart Tags
 role: User, Admin, Developer
@@ -192,10 +193,30 @@ Assets view provides the ability to import blocked tags from a data source (CSV)
 1. Choose the CSV file from your device. Click **[!UICONTROL select a file]** to navigate to the file from your device. Alternatively, you can drag and drop the CSV file from your device.
 1. Click **[!UICONTROL Upload]**. The tags from the CSV file are listed in the blocked tags list.
 
-    ![Import blocked tags list](assets/import-blocked-tags.png)
+    ![Import blocked tags list](assets/import-csv-new.png)
 
 In case you want to download a blocked tags template, follow the steps below: 
 
 1. Click **[!UICONTROL Download Template]**. 
 1. Choose the appropriate location to save the CSV file. You can also rename the file as per the requirement. 
 1. Click **[!UICONTROL Save]**. Block tags template in CSV format are downloaded at the selected location.
+
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

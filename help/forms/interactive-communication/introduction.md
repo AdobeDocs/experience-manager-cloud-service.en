@@ -1,0 +1,77 @@
+---
+title: Introduction to Interactive Communication Editor
+description: Discover Interactive Communication Editor in AEM Forms. Learn key features, onboarding steps, and real-world use cases to create dynamic, personalized communications.
+products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
+feature: Interactive Communication
+role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
+exl-id: 50709c68-8666-47da-8788-fad793d870e6
+---
+
+# Introduction to Interactive Communication Editor
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |   This article                |
+| AEM 6.5     |  [Click here](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/interactive-communications-overview)        |
+
+## What is Interactive Communication Editor?
+
+Interactive Communication (IC) Editor is an intuitive visual design environment within Adobe Experience Manager Forms. It enables organizations to create highly personalized, data-integrated communications in print format using a single authoring experience. These communications are often used for customer correspondence such as billing statements, policy documents, welcome kits, and investment summaries.
+
+You can integrate components such as text, images, charts, tables, and barcodes, while binding each element to structured data sources. This dynamic binding ensures that communications are automatically tailored for every recipient.
+
+![Find IC Doc](/help/forms/interactive-communication/assets/introduction.png)
+
+## Purpose and Use Cases
+
+Common Use Cases Include:
+
+* **Financial Services:** Generating dynamic account statements, investment summaries, and loan documents personalized by client data
+* **Insurance:** Designing policy documents, claim summaries, or renewal notices with embedded charts and visuals
+* **Healthcare:** Producing member health statements, lab reports, and benefits summaries
+* **Utilities:** Creating monthly billing communications with charts and breakdowns
+* **Government & Education:** Populating citizen notices, certificates, and personalized mailers
+* **Human Resources:** Creating offer letters, onboarding kits, and employee communication documents
+
+## Key Features and Capabilities
+
+Interactive Communication (IC) Editor is designed for efficiency, usability, and control. Its features empower authors to create visually appealing, personalized, and data-integrated communications.
+
+| **Feature**                          | **Key Capabilities**                                                                 |
+|--------------------------------------|---------------------------------------------------------------------------------------|
+| **WYSIWYG Editor**         | - Pixel perfection for accurate rendering <br> - [Font styling controls](/help/forms/interactive-communication/add-custom-fonts.md) <br> - Flexible layout for professional design |
+| [**Layout Control**](/help/forms/interactive-communication/handle-content-overflow.md)                   | - Positioning (absolute and flowed) <br> - Easy drag-and-drop functionality <br> - Use master pages to define consistent layouts          |
+| **Components** | - Access to newly introduced components, including [tables](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md), charts, and [barcodes](/help/forms/interactive-communication/barcode.md) <br> - Ready-to-use components for faster design |
+| [**Data Binding**](/help/forms/interactive-communication/configure-data-binding.md)                     | - Directly link components to data sources <br> - Automatically prefill fields for personalized communication |
+| [**Rule Editor**](/help/forms/interactive-communication/use-the-rule-editor.md) | - Configure dynamic validations <br> - Add calculations and conditional logic for interactivity |
+| [**Fragment Library**](/help/forms/interactive-communication/create-interactive-communication-fragment.md)               | - Create modular building blocks (headers, footers, disclaimers, icons) <br> - Maintain consistency across multiple communications |
+| [**Templates**](/help/forms/interactive-communication/create-interactive-communication-template.md) | - Ensure uniform branding and structure across communications |
+
+## Onboarding 
+
+To get started with Interactive Communication, follow the [Onboard to the Service](/help/forms/setup-forms-cloud-service.md) documentation to enable Interactive Communication in your AEM Forms environment.
+
+https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
+
+## Next Steps
+
+[Create an interactive communication](/help/forms/interactive-communication/create-interactive-communication.md)
+[Create an interactive communication Template](/help/forms/interactive-communication/create-interactive-communication-template.md)
+[Create an interactive communication Fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+
+<!-- 
+## Where to Find IC Documentation, Samples, and Tutorials
+
+Whether you're just getting started or looking to build complex communications, Adobe offers extensive learning resources:
+[Note: we'll add resources afterwards, below is just the format]
+
+* Official Documentation:
+
+[Create your first interactive communication]()
+AEM Forms Interactive Communication Guide
+
+* Tutorials & Videos:
+Visit Adobe Experience League and explore the "Forms" section for step-by-step videos and use-case-based tutorials.
+-->
+

@@ -1,38 +1,25 @@
 ---
-title: Universal Editor 2025.09.11 Release Notes
-description: These are the release notes for the 2025.09.11 release of the Universal Editor.
+title: Universal Editor 2026.08.20 Release Notes
+description: These are the release notes for the 2026.08.20 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2025.09.11 Release Notes {#release-notes}
+# Universal Editor 2026.08.20 Release Notes {#release-notes}
 
-These are the release notes for the 11 September 2025 release of the Universal Editor.
+These are the release notes for the 20 August 2026 release of the Universal Editor.
 
 >[!TIP]
 >
->For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>If you wish to test **upcoming** Universal Editor features before they are released, please see the [Universal Editor Preview Release Notes.](/help/release-notes/universal-editor/preview.md)
 
-## What's New {#what-is-new}
-
-* [Copy and paste](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) is now available for components within containers on the same page.
-* 6.5 LTS SP1 is now supported.
-* The Universal Editor now supports [multi-site-management inheritance](/help/sites-cloud/authoring/universal-editor/inheritance.md) for Content Fragments including automatically breaking inheritance when a live copy Content Fragment is edited.
-
-## Early Adoption Features {#early-adopter}
-
-If you are interested in testing these upcoming features and sharing your feedback, please send an email to your Adobe Customer Success Manager from the email address associated with your Adobe ID. 
-
-### New RTE {#new-rte}
-
-The new ProseMirror RTE, featuring a page picker in the link dialog, is now available in the right panel.
-
-### Copy and Paste Across Pages {#copy-paste}
-
-Copy and pasting is now possible across pages in addition to within the same page.
+>[!TIP]
+>
+>For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
 ## Other Improvements {#other-improvements}
 
-* Several small performance improvements have been implemented around the Universal Editor works with AEM as a backend system.
-* Content Fragments are now published using Open API, bringing performance improvements and consistency with how the Content Fragment Editor and console publish.
+* Table column widths are now preserved when importing TinyMCE tables into TipTap, ensuring the widths survive the editing round trip.
+* Focus detection for text fields using `url` or `email` value formats was fixed so they are correctly marked as busy.
+* Select boxes omitting configured entries were fixed, ensuring all options with distinct values are displayed.

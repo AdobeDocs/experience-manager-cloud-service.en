@@ -5,6 +5,7 @@ keywords: Add a custom error handler, add a default error handler, add a error h
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
 role: User, Developer
 ---
@@ -95,19 +96,19 @@ With the improvements in features and subsequent updates in the versions of AEM 
 Where:
 
 * `type (required)` specifies the type of failure. It can be one of the following values:
-    * `SERVER_SIDE_VALIDATION` indicates a failure due to server-side validation.
-    * `FORM_SUBMISSION` indicates a failure during form submission
-    * `SERVICE_INVOCATION` indicates a failure during a third-party service invocation.
-    * `FAILURE` indicates a general failure.
-    * `VALIDATION_ERROR` indicates a failure due to a validation error.
+  * `SERVER_SIDE_VALIDATION` indicates a failure due to server-side validation.
+  * `FORM_SUBMISSION` indicates a failure during form submission
+  * `SERVICE_INVOCATION` indicates a failure during a third-party service invocation.
+  * `FAILURE` indicates a general failure.
+  * `VALIDATION_ERROR` indicates a failure due to a validation error.
 
 * `title (optional)` provides a title or brief description of the failure. 
 * `detail (optional)` provides additional details about the failure if necessary. 
 * `instance (optional)` represents an instance or identifier associated with the failure and helps in tracking or identifying the specific occurrence of the failure.
 * `validationErrors (required)` contains information about validation errors. It includes the following fields:
-    * `fieldname` mentions the qualified fieldname of the fields that failed the validation criteria.
-    * `dataRef` represents the JSON path or XPath of the fields that failed the validation.
-    * `details` contain the validation error message with the erroneous field. 
+  * `fieldname` mentions the qualified fieldname of the fields that failed the validation criteria.
+  * `dataRef` represents the JSON path or XPath of the fields that failed the validation.
+  * `details` contain the validation error message with the erroneous field. 
 * `originCode (optional)` field added by AEM and contains the http status code returned by the external service
 * `originMessage (optional)` field added by AEM and contains the raw error data returned by the external service.
 
@@ -165,8 +166,6 @@ You can view the value of dataRef in the **[!UICONTROL Properties]** window of a
 
 Before you add an error handler using the Rule Editor's Invoke service:
 
-* Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.
-
 * Learn how to [create custom functions](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#write-rules).
 
  
@@ -195,9 +194,13 @@ To understand how to use a default error handler using the [Rule Editor's Invoke
 1. Create a condition in the **When** section of the rule. For example, **When[Name of Pet ID field]** is changed. Select is changed from the **Select State** drop-down list.
 1. In the **Then** section, select **[!UICONTROL Invoke Service]** from the **Select Action** drop-down list.
 1. Select a **Post service** and its corresponding data bindings from the **Input** section. For example, to validate **Pet ID**, select a **Post service** as **GET /pet/{petId}** and select **Pet ID** in the **Input** section.
-1. Select the data bindings from the **Output** section. Select **Pet Name** in the **Output** section.
-1. Select **[!UICONTROL Default Error Handler]** from the **Error Handler** section. 
-1. Click **[!UICONTROL Done]**.
+1. Click **[!UICONTROL Add Success Handler]**. The **[!UICONTROL Invoke Service Success Handler]** rule editor opens.
+1. In the **[!UICONTROL Then]** section, add a rule to set the value of **[!UICONTROL Pet Name]** to **`name`** using the eventpayload data.
+1. Click **[!UICONTROL Done]** to close the **[!UICONTROL Invoke Service Success Handler]** editor.
+1. Click **[!UICONTROL Add Failure Handler]**. The **[!UICONTROL Invoke Service Failure Handler]** rule editor opens.
+1. In the **[!UICONTROL Then]** section, select **[!UICONTROL Function Output]** and choose **[!UICONTROL Default Error Handler]**.
+1. Click **[!UICONTROL Done]** to close the **[!UICONTROL Invoke Service Failure Handler]** editor.
+1. Click **[!UICONTROL Done]** to save the rule.
 
  ![add a default error handler for a field validation checks in a form](/help/forms/assets/default-error-handler.png)
 
@@ -306,12 +309,15 @@ To use a custom error handler using the **[!UICONTROL Rule Editor's Invoke Servi
 1. Create a condition in the **When** section of the rule. For example, When **[Name of Pet ID field]** is changed, select **is changed** from the **Select State** drop-down list.
 1. In the **Then** section, select **[!UICONTROL Invoke Service ]** from the **Select Action** drop-down list.
 1. Select a **Post service** and its corresponding data bindings from the **Input** section. For example, to validate **Pet ID**, select a **Post service** as **GET /pet/{petId}** and select **Pet ID** in the **Input** section.
-1. Select the data bindings from the **Output** section. For example, Select **Pet Name** in the **Output** section.
-1. Select **[!UICONTROL Custom Error Handler]** from the **[!UICONTROL Error Handler]** section. 
-1. Click **[!UICONTROL Done]**.
+1. Click **[!UICONTROL Add Success Handler]**. The **[!UICONTROL Invoke Service Success Handler]** rule editor opens.
+1. In the **[!UICONTROL Then]** section, add a rule to set the value of **[!UICONTROL Pet Name]** to **`name`** using the eventpayload data.
+1. Click **[!UICONTROL Done]** to close the **[!UICONTROL Invoke Service Success Handler]** editor.
+1. Click **[!UICONTROL Add Failure Handler]**. The **[!UICONTROL Invoke Service Failure Handler]** rule editor opens.
+1. In the **[!UICONTROL Then]** section, select **[!UICONTROL Function Output]** and choose **[!UICONTROL Custom Error Handler Function]**.
+1. Click **[!UICONTROL Done]** to close the **[!UICONTROL Invoke Service Failure Handler]** editor.
+1. Click **[!UICONTROL Done]** to save the rule.
 
- ![add custom error handler in a form to handle error responses](/help/forms/assets/custom-error-handler.png)s
-
+ ![add custom error handler in a form to handle error responses](/help/forms/assets/custom-error-handler.png)
 
 As a result of this rule, the values you enter for **Pet ID** checks validation for **Pet Name** using external service invoked by REST endpoint. If the validation criteria based on the data source fail, the error messages are displayed at the field level.
 

@@ -3,8 +3,9 @@ title: Optimize images using Dynamic Media with OpenAPI Capabilities
 description: Learn how to optimize images on the fly before public delivery using the image optimization capabilities of Dynamic Media with OpenAPI Capabilities
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
+exl-id: 7822732b-e2b9-4b35-b92b-cb7b31d84489
 ---
-
 # Optimize images using Dynamic Media with OpenAPI Capabilities{#Optimize-images-using-Dynamic-Media-with-OpenAPI-Capabilities}
  
 [!DNL Dynamic Media with OpenAPI capabilities] offers image optimization capabilities such as [!DNL Smart Crop], [!DNL Image Presets], and [!DNL Smart Imaging]. These capabilities help deliver high-quality, responsive images that load fast across different devices and networks.
@@ -71,6 +72,7 @@ The preset thumbnail bundles the same image modifier settings.
 
 Authors can select [!DNL Image Presets] during page editing in [!DNL AEM Sites] authoring page when [!DNL Dynamic Media] support is enabled. 
 Execute the following steps to use image presets in your authoring page:
+
 1. Navigate to your Sites authoring page. 
 1. Execute the steps in [Access remote assets in AEM Page Editor](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) section to use the [!DNL Asset Selector] panel for selecting an asset.
 1. In the [!DNL asset selector] panel, scroll down to **[!UICONTROL Preset type]**, and specify `Preset=Preset Name` in the **[!UICONTROL Image Modifiers]** field and click **[!UICONTROL Done]**.
@@ -108,7 +110,7 @@ Disable `auto-format` by setting the query parameter to `false`, then specify th
 
 Images are automatically optimized based on the client's network conditions to ensure faster delivery and smooth loading. The [Quality](#quality-parameter) and [Max-quality](#max-quality-parameter) parameters automatically adjusts the quality by controlling the image compression levels, with values ranging from 1 to 100. 
 
-See the following key behaviors of `quality` and `max-quality `parameters:
+See the following key behaviors of `quality` and `max-quality` parameters:
 
 * If both [!DNL quality] and [!DNL max-quality] are specified, [!DNL quality] takes precedence.
 * If only [!DNL quality] is specified, the quality is delivered regardless of load time based on network speed.
@@ -122,3 +124,23 @@ The quality parameter prioritizes image quality over loading speed. It fixes the
 #### Max-quality parameter{#max-quality-parameter}
 
 Max-quality balances image quality and load time based on the client's network speed. It prioritizes faster load times by lowering image quality on slower networks, while still delivering the highest possible quality (1–100) for the given network conditions. Learn more about the [max-quality parameter](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=quality&t=request).
+
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

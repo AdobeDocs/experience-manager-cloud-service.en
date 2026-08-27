@@ -4,6 +4,7 @@ description: Learn how to relate digital assets that share some common attribute
 role: User
 feature: Collaboration,Asset Management
 solution: Experience Manager, Experience Manager Assets
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 89149283-bbf2-40d3-9a4c-5b27ff5f944e
 ---
 # Asset relations {#related-assets}
@@ -58,3 +59,23 @@ See [Translate assets in AEM](/help/assets/translate-assets.md).
 >* [View versions of an asset](/help/assets/manage-organize-assets-view.md#view-versions)
 >* [Translate assets in AEM](/help/assets/translate-assets.md)
 >* [Supported File Formats in Assets View](/help/assets/supported-file-formats-assets-view.md).
+
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

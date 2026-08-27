@@ -4,7 +4,7 @@ description: Learn how to configure custom HTTP headers that would be sent to th
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
 feature: Commerce Integration Framework
 role: Admin
-index: no
+index: false
 ---
 
 # Custom HTTP Headers {#custom-http-headers}

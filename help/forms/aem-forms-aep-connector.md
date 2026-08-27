@@ -1,27 +1,26 @@
 ---
-title: Connect AEM Forms with Adobe Experience Platform (AEP) | Data Integration Guide
-description: Learn how to integrate AEM Forms with Adobe Experience Platform to leverage customer profiles, submit form data, and create personalized experiences. Step-by-step guide.
+title: Connect AEM Forms with Adobe Real-Time CDP | Data Integration Guide
+description: Learn how to integrate AEM Forms with Adobe Real-Time CDP (RTCDP) to leverage customer profiles, submit form data, and create personalized experiences. Step-by-step guide.
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: b0eb19d3-0297-4583-8471-edbb7257ded4
 ---
-# AEM Forms Integration with Adobe Experience Platform (AEP) {#aem-forms-aep-integration}
-
-<span class="preview"> The capability to connect Adaptive Forms (AEM Forms) with Adobe Experience Platform (AEP) is under the early access program. To request access to the capability, simply send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com?subject=Request%20for%20Early%20Access%20to%20AEP%20Connector%20\(AEM%20Forms%20Integration%20with%20Adobe%20Experience%20Platform\)&body=Dear%20AEM%20Forms%20Team%2C%0D%0A%0D%0AI%20hope%20this%20message%20finds%20you%20well.%0D%0A%0D%0AI%20am%20writing%20to%20request%20access%20to%20the%20Early%20Access%20Program%20for%20the%20AEP%20Connector%2C%20which%20enables%20integration%20between%20AEM%20Forms%20and%20Adobe%20Experience%20Platform.%0D%0A%0D%0AOrganization%20Name%3A%20%5BYour%20organization%20name%5D%0D%0AOrganization%20ID%3A%20%5BYour%20organization%20ID%2C%20if%20available%5D%0D%0AUse%20Case%3A%20%5BBriefly%20describe%20your%20intended%20use%20case%2C%20including%20goals%20or%20benefits%20you%20aim%20to%20achieve%20with%20the%20integration%5D%0D%0A%0D%0AThank%20you%20for%20your%20time%20and%20consideration.%0D%0A%0D%0ABest%20regards%2C%0D%0A%5BYour%20Full%20Name%5D%0D%0A%5BYour%20Job%20Title%2C%20if%20applicable%5D%0D%0A%5BYour%20Contact%20Information%2C%20if%20appropriate%5D). You can also visit the <a href="/help/forms/early-access-ea-features.md">Early Access Program </a>page to discover all the available innovations and capabilities. . </span>
+# AEM Forms Integration with Adobe Real-Time CDP {#aem-forms-aep-integration}
 
 ## Overview {#overview}
 
-You can connect AEM Forms with Adobe Experience Platform to transform your form experiences. This powerful integration enables organizations to leverage real-time customer profiles for personalized form experiences, streamline **AEM Forms data submission to Experience Platform**, and create unified customer records across the Adobe ecosystem. By connecting your adaptive forms with Experience Platform's robust data management capabilities, you can create more relevant experiences and improve conversion rates while maintaining a single source of truth for customer data.
+You can connect AEM Forms with Adobe Real-Time CDP to transform your form experiences. This powerful integration enables organizations to leverage real-time customer profiles for personalized form experiences, streamline **AEM Forms data submission to Experience Platform**, and create unified customer records across the Adobe ecosystem. By connecting your adaptive forms with Experience Platform's robust data management capabilities, you can create more relevant experiences and improve conversion rates while maintaining a single source of truth for customer data.
 
-### What is AEM Forms Connector for Adobe Experience Platform (AEP)? {#what-is-connector}
+### What is the AEM Forms Connector for Adobe Real-Time CDP? {#what-is-connector}
 
-The AEM Forms Connector for Adobe Experience Platform (AEP) is an out of the box (OOTB) connector provided by AEM Forms that enables seamless integration between AEM Forms and Adobe Experience Platform (AEP). This integration allows you to create forms using XDM schemas available in AEP and submit data back to AEP for personalization and profile hydration purposes.
+The AEM Forms Connector for Adobe Real-Time CDP (RTCDP) is an out of the box (OOTB) connector provided by AEM Forms that enables seamless integration between AEM Forms and Adobe Real-Time CDP. This integration allows you to create forms using XDM schemas available in Adobe Experience Platform and submit data back to Real-Time CDP for personalization and profile hydration purposes.
 
-## Why connect AEM Forms with Adobe Experience Platform (AEP)? {#benefits}
+## Why connect AEM Forms with Adobe Real-Time CDP? {#benefits}
 
-Connecting your Adaptive Forms with Adobe Experience Platform delivers significant advantages for both your organization and your customers:
+Connecting your Adaptive Forms with Adobe Real-Time CDP delivers significant advantages for both your organization and your customers:
 
 * **Unified customer profiles** - Enrich customer profiles with form submission data, creating a comprehensive view of customer interactions and preferences
 * **Personalized form experiences** - Leverage existing profile data to pre-populate fields and customize forms based on known customer information
@@ -41,7 +40,7 @@ Connecting your Adaptive Forms with Adobe Experience Platform delivers significa
 * XDM schema integration with adaptive forms for standardized data collection
 * AEP streaming connection for forms enabling real-time data processing
 
-The video below gives a step-by-step guide on the prerequisites (like creating a schema, setting up data configuration, and authentication) and shows how to create and connect Adaptive Forms to Adobe Experience Platform (AEP)
+The video below gives a step-by-step guide on the prerequisites (like creating a schema, setting up data configuration, and authentication) and shows how to create and connect Adaptive Forms to Adobe Real-Time CDP.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457850/)
 
@@ -187,7 +186,7 @@ Perform the following steps to create Adaptive Form authored using Universal Edi
         >* If you do not see the Data Sources icon in your Universal Editor interface or Bind Reference property in the right property panel, enable the **Data source** extension in the Extension Manager.
         >* If you do not see the **Edit Form Properties** icon in your Universal Editor interface, enable the **Edit Form Properties** extension in the Extension Manager.
         > 
-        > * Refer to the [Extension Manager Feature Highlights](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) article to learn how to enable or disable extensions in the Universal Editor.
+        >* Refer to the [Extension Manager Feature Highlights](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) article to learn how to enable or disable extensions in the Universal Editor.
 
     The prefill service for forms in the Universal Editor is currently not supported.
 
@@ -233,8 +232,8 @@ Perform the following steps to create Adaptive Form authored using Universal Edi
 
 ### General Questions {#general-questions}
 
-**Q: "Is this connector available with multiple offerings of AEM Forms?**
-A: No, this integration is only available for AEM Forms as a Cloud Service and is under the Early Access program.
+**Q: Is the AEM Forms Connector for Adobe Real-Time CDP available with multiple offerings of AEM Forms?**
+A: No, this integration is only available for AEM Forms as a Cloud Service.
 
 **Q: Does this connector work with both Adaptive Forms Core Components and Foundation Components?**
 A: This connector works with both Adaptive Forms Core Components and Adaptive Forms Foundation Components.
@@ -248,7 +247,8 @@ A: Form submissions are subject to your AEP streaming ingestion [quotas and rate
 <!-- 
 >
 **Q: Can form attachments be sent to AEP?**
-A: No, form attachments cannot be directly sent to AEP. You would need to store attachments separately and only send metadata to AEP. -->
+A: No, form attachments cannot be directly sent to AEP. You would need to store attachments separately and only send metadata to AEP.
+-->
 
 ### Implementation Questions {#implementation-questions}
 
@@ -269,15 +269,14 @@ A: No, this integration is specific to AEM Forms as a Cloud Service.
 
 ## Summary and Next Steps {#summary-next-steps}
 
-The AEM Forms Integration with Adobe Experience Platform enables organizations to create a seamless flow of data between forms and the broader Experience Platform ecosystem. This integration empowers you to build more personalized form experiences, streamline data collection, and enhance customer profiles with valuable form submission data.
+The AEM Forms Integration with Adobe Real-Time CDP enables organizations to create a seamless flow of data between forms and the broader Experience Platform ecosystem. This integration empowers you to build more personalized form experiences, streamline data collection, and enhance customer profiles with valuable form submission data.
 
 To get started with this integration:
 
-1. **Request access** - If you haven't already, join the Early Access program by contacting [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com?subject=Request%20for%20Early%20Access%20to%20AEP%20Connector%20\(AEM%20Forms%20Integration%20with%20Adobe%20Experience%20Platform\)&body=Dear%20AEM%20Forms%20Team%2C%0D%0A%0D%0AI%20hope%20this%20message%20finds%20you%20well.%0D%0A%0D%0AI%20am%20writing%20to%20request%20access%20to%20the%20Early%20Access%20Program%20for%20the%20AEP%20Connector%2C%20which%20enables%20integration%20between%20AEM%20Forms%20and%20Adobe%20Experience%20Platform.%0D%0A%0D%0AOrganization%20Name%3A%20%5BYour%20organization%20name%5D%0D%0AOrganization%20ID%3A%20%5BYour%20organization%20ID%2C%20if%20available%5D%0D%0AUse%20Case%3A%20%5BBriefly%20describe%20your%20intended%20use%20case%2C%20including%20goals%20or%20benefits%20you%20aim%20to%20achieve%20with%20the%20integration%5D%0D%0A%0D%0AThank%20you%20for%20your%20time%20and%20consideration.%0D%0A%0D%0ABest%20regards%2C%0D%0A%5BYour%20Full%20Name%5D%0D%0A%5BYour%20Job%20Title%2C%20if%20applicable%5D%0D%0A%5BYour%20Contact%20Information%2C%20if%20appropriate%5D)
-2. **Prepare your environment** - Ensure you have the necessary permissions and configurations in both AEM Forms and Adobe Experience Platform
-3. **Follow the implementation steps** - Use the guide above to set up your cloud configuration and create your first AEP-connected form with XDM schema integration
-4. **Test thoroughly** - Validate both the data submission and prefill capabilities in a development environment
-5. **Plan for production** - Work with your implementation team to schedule the deployment of AEM Forms data submission to Experience Platform in production
+1. **Prepare your environment** - Ensure you have the necessary permissions and configurations in both AEM Forms and Adobe Experience Platform
+1. **Follow the implementation steps** - Use the guide above to set up your cloud configuration and create your first AEP-connected form with XDM schema integration
+1. **Test thoroughly** - Validate both the data submission and prefill capabilities in a development environment
+1. **Plan for production** - Work with your implementation team to schedule the deployment of AEM Forms data submission to Experience Platform in production
 
 ## Related Resources {#related-resources}
 
@@ -286,7 +285,6 @@ To get started with this integration:
 * [XDM System overview](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)
 * [Streaming ingestion in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html)
 * [Real-time Customer Profile overview](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
-* [AEM Forms Early Access Features](/help/forms/early-access-ea-features.md)
 * [Creating Adaptive Forms with Core Components](/help/forms/creating-adaptive-form-core-components.md)
 * [Using Form Data Models in AEM Forms](/help/forms/using-form-data-model.md)
 
@@ -295,8 +293,8 @@ Schema markup for technical documentation
 {
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "headline": "Connect AEM Forms with Adobe Experience Platform (AEP) | Data Integration Guide",
-  "description": "Learn how to integrate AEM Forms with Adobe Experience Platform to leverage customer profiles, submit form data, and create personalized experiences.",
+  "headline": "Connect AEM Forms with Adobe Real-Time CDP | Data Integration Guide",
+  "description": "Learn how to integrate AEM Forms with Adobe Real-Time CDP (RTCDP) to leverage customer profiles, submit form data, and create personalized experiences.",
   "datePublished": "2025-05-28",
   "author": {
     "@type": "Corporation",

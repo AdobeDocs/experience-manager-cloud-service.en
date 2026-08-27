@@ -4,6 +4,7 @@ description: Learn how to preview 3D assets in Experience Manager.
 contentOwner: Rick Brough
 feature: 3D Assets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
 ---
 # Preview 3D assets in Adobe Experience Manager{#previewing-3d-assets}

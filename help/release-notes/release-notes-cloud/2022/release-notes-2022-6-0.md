@@ -43,7 +43,7 @@ Have a look at the June 2022 Release Overview video for a summary of the feature
 
 ### New features in [!DNL Assets] {#assets-features}
 
-Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish between colors in an image and apply those as tags automatically on ingestion](/help/assets/color-tag-images.md). These tags enable enhanced Search experience, based on image color composition. You can configure the number of colors, within a range of one to 40, that are tagged to an image so that you can search for images based on those colors later.
+Experience Manager Assets uses Adobe AI capabilities to now [distinguish between colors in an image and apply those as tags automatically on ingestion](/help/assets/color-tag-images.md). These tags enable enhanced Search experience, based on image color composition. You can configure the number of colors, within a range of one to 40, that are tagged to an image so that you can search for images based on those colors later.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -90,7 +90,7 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish 
 
 ### What is New {#what-is-new-foundation}
 
-* As mentioned in the May (2022.5.0) release notes, the "Add tree" option under the replication agent admin screen's **Distribute** tab was removed. Packages with a tree hierarchy of content should instead be replicated using [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) workflow.
+* As mentioned in the May (2022.5.0) release notes, the "Add tree" option under the replication agent admin screen's **Distribute** tab was removed. Packages with a tree hierarchy of content should instead be replicated using [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree](/help/operations/tree-replication-workflows.md#publish-content-tree-workflow) workflow.
 
 ## Cloud Manager {#cloud-manager}
 

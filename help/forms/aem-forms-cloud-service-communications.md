@@ -1,6 +1,7 @@
 ---
 title: How to use Forms as a Cloud Service to merge data with XDP and PDF templates or generate output in PCL, ZPL, and PostScript formats?
 description: Automatically merge data with XDP and PDF templates or generate output in PCL, ZPL, and PostScript formats
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 feature: Adaptive Forms,APIs & Integrations
 role: Admin, Developer, User
@@ -30,7 +31,8 @@ A synchronous operation is a process of generating documents in a linear manner.
 <!-- 
 ### Multi-tenant APIs
 
-* Document utility APIs -->
+* Document utility APIs
+-->
 
 
 ### Authenticate a single-tenant API
@@ -51,6 +53,9 @@ Single-tenant API operations support two type of authentication:
     >
     >Adobe recommends using token-based authentication on a production environment.
 
+    >[!IMPORTANT]
+    >
+    > For more information, see [OAuth server-to-server authentication](/help/forms/oauth-api-authetication.md) and [JWT server-to-server authentication](/help/forms/jwt-api-authentication.md).
 <!-- 
 
 ### Authenticate a multi-tenant API
@@ -137,7 +142,7 @@ The [API reference documentation](https://developer.adobe.com/experience-manager
 
 >[!NOTE]
 >
->Only members of forms-users group can access Communications APIs.
+> Learn the detailed steps to invoke AEM Forms Communication APIs, see the [Invoke AEM Forms Communications APIs using OAuth Server-to-Server Authentication](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md) article.
 
 >[!MORELIKETHIS]
 >
@@ -145,3 +150,4 @@ The [API reference documentation](https://developer.adobe.com/experience-manager
 >* [AEM Forms as a Cloud Service Architecture for Adaptive Forms and Communication APIs](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [Communication Processing - Synchronous APIs](/help/forms/aem-forms-cloud-service-communications.md)
 >* [Communication Processing - Batch APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Forms Communications API - Tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)

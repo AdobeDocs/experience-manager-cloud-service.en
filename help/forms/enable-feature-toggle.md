@@ -3,6 +3,7 @@ title: Enable Feature Toggle to Integrate Early Adopter and Prerelease Features
 description: Feature Toggle is a functionality in AEM that allows administrators to enable new features in a runtime environment.
 feature: Adaptive Forms, Foundation Components, Core Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 3ad1370a-a399-4fbe-8168-c3a1cee06336
 ---
 # Enable Feature Toggle  on Adobe Experience Software Development Kit (AEM SDK)
@@ -29,7 +30,7 @@ Before enabling feature toggles in your AEM SDK setup, ensure the following:
 
 * User is member of `forms-users` group.
 
-* Navigate to `http://<author-instance-url>:portnumber/system/console/bundles` and check whether **(com.adobe.granite.toggle.impl.dev-1.1.2.jar)** bundle is present or not. In case it is not present [download the bundle from the link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.2%20.jar).
+* Navigate to `http://<author-instance-url>:portnumber/system/console/bundles` and check whether **(com.adobe.granite.toggle.impl.dev-1.1.2.jar)** bundle is present or not. In case it is not present [download the bundle from the link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[…]s/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.8.jar).
 
     ![Feature Toggle](/help/forms/assets/aem-web-console-bundle.png)
 

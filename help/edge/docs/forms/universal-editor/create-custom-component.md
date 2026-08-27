@@ -2,7 +2,7 @@
 title: Create Custom Components for an EDS Form
 description: Create Custom Components for an EDS Form
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
 ---
 
@@ -242,7 +242,7 @@ Now that the form contains the custom component, you can proxy the form and make
 
 Let's add a class **card** to the component for styling and add an image for each radio, use the below code for this.
 
-**Style the Custom Component using decorate function in cards.js**
+**Style the component using card.js**
 
 ```javascript
 import { createOptimizedPicture } from '../../../../scripts/aem.js';
@@ -252,7 +252,7 @@ export default function decorate(element, fieldJson, container, formId) {
 
   element.querySelectorAll('.radio-wrapper').forEach((radioWrapper) => {
     const image = createOptimizedPicture(
-      'https://main--afb--jalagari.hlx.live/lab/images/card.png',
+      'https://main--afb--jalagari.aem.live/lab/images/card.png',
       'card-image'
     );
     radioWrapper.appendChild(image);
@@ -262,7 +262,7 @@ export default function decorate(element, fieldJson, container, formId) {
 }
 ```
 
-**Add Runtime Behaviour for the Custom Component in cards.css**
+**Add Runtime Behaviour using cards.css**
 
 ```javascript
 .card .radio-wrapper {
@@ -315,7 +315,7 @@ function createCard(element, enums) {
     }
 
     const image = createOptimizedPicture(
-      enums[index]?.image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png',
+      enums[index]?.image || 'https://main--afb--jalagari.aem.page/lab/images/card.png',
       'card-image'
     );
 
@@ -376,7 +376,7 @@ function createCard(element, enums) {
     radioWrapper.querySelector('input').dataset.index = index;
 
     const image = createOptimizedPicture(
-      enums[index]?.image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png',
+      enums[index]?.image || 'https://main--afb--jalagari.aem.page/lab/images/card.png',
       'card-image'
     );
 
@@ -582,7 +582,7 @@ Keep the below points in mind before creating your own custom component:
 
 ## References
 
-- form-field-types: Base HTML structures and properties for all field types. [Click here](/help/edge/docs/forms/eds-form-field-properties) to view detailed form field structures and properties.
+- [form-field-types](/help/edge/docs/forms/eds-form-field-properties.md): Base HTML structures and properties for all field types.
 
 - **blocks/form/models/form-components**: OOTB and custom component property definitions.
 

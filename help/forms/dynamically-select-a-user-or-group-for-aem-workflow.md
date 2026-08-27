@@ -5,8 +5,8 @@ content-type: troubleshooting
 topic-tags: publish
 feature: Adaptive Forms
 role: User
-hide: yes
-hidefromtoc: yes
+hide: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 597fa30c-6fb7-46c2-8ee1-2986c4860266
 ---
 # Dynamic User or Group Selection in AEM Workflow {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}

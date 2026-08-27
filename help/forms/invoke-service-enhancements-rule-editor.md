@@ -5,6 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 keywords: invoke service enhancements in VRE, populating drop-down options using invoke service, Set repeatable panel using output of invoke service, Set panel using output of invoke service, Use output parameter of invoke service to validate other field.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
 ---
 # Integrating External APIs with Visual Rule Editor in Core Component Forms
@@ -34,9 +35,11 @@ Visual rule editor allows you to create rules for success and failure handlers f
 
 ![Invoke service handlers](/help/forms/assets/invoke-service-rule-editor.png)
 
+### Adding Success Handler and Failure Handler
+
 To add success or failure handler, click **[!UICONTROL Add Success Handler]** or **[!UICONTROL Add Failure Handler]**, respectively. 
 
-When you click **[!UICONTROL Add Success Handler]**, the **[!UICONTROL Invoke Service Success Handler]** rule editor appears, allowing you to specify rules or logic to manage the **Invoke Service** output response when the operation is successful. You can specify rules even without defining conditions; however, you can add conditions for the success handler by clicking the **[!UICONTROL Add Condition]** option. 
+When you click **[!UICONTROL Add Success Handler]**, the **[!UICONTROL Invoke Service Success Handler]** rule editor appears, allowing you to specify rules or logic to manage the **Invoke Service** output response when the operation is successful. You can specify rules even without defining conditions; however, you can add conditions for the success handler by clicking the **[!UICONTROL Add Condition]** option.  
 
 ![Invoke service success hadler](/help/forms/assets/invoke-service-success-handler.png)
 
@@ -58,7 +61,6 @@ Below are the prerequisites you must satisfy before using **Invoke Service** in 
 
 * Make sure you have configured a data source. For instructions on configuring a data source, [click here](/help/forms/configure-data-sources.md).
 * Create a Form Data Model using the configured data source. For guidance on creating a Form Data Model, [click here](/help/forms/create-form-data-models.md).
-* Ensure that Core Components are enabled for your environment. Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.
 
 ## Exploring Invoke Service through different use cases
 
@@ -72,6 +74,7 @@ The table below describes a few scenarios in which the **Invoke Service** can be
 | **Set repeatable panel using output of Invoke Service**  | Configures a repeatable panel by using data from the Invoke Service output, allowing for dynamic panels. [Click here](#use-case-2-set-repeatable-panel-using-output-of-invoke-service), to see the implementation.   |
 | **Set panel using output of Invoke Service**             | Sets the content or visibility of a panel using specific values from the Invoke Service output. [Click here](#use-case-3-set-panel-using-output-of-invoke-service), to see the implementation.          |
 | **Use output parameter of Invoke Service to validate other fields** | Uses specific output parameters from the Invoke Service to validate the form fields. [Click here](#use-case-4-use-output-parameter-of-invoke-service-to-validate-other-fields), to see the implementation.  |
+| **Use Event Payload in Navigate To Action in Invoke Service** | Uses the event payload to handle success and failure responses and to pass data to the Navigate To action during navigation. [Click here](#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service) to see the implementation. |
 
 Create a `Get Information` form that retrieves values based on the input entered in the `Pet ID` text box. The screenshot below shows the form used in these use cases:
 
@@ -80,6 +83,7 @@ Create a `Get Information` form that retrieves values based on the input entered
 **Form Fields**
 
 Add the following fields to the form:  
+
 * **Enter Pet ID**: Textbox  
 * **Select Photo URLs**: Dropdown  
 * **Tags**: Panel  
@@ -95,7 +99,8 @@ Add the following fields to the form:
 
 **Configuring panels**  
 
-Set the panels as repetitive with the following constraints:  
+Set the panels as repetitive with the following constraints:
+
 * Minimum value: 1  
 * Maximum value: 4  
 
@@ -138,7 +143,6 @@ Let's post the following JSON using the [addPet](https://petstore.swagger.io/#/p
 
 ```
 
-
 Rules and logic are implemented using the **Invoke Service** action in the rule editor on the `Pet ID` textbox to demonstrate the mentioned use cases.  
 
 Let's now explore the implementation of each use case in detail.
@@ -153,11 +157,19 @@ To achieve this, create a rule on the `Pet ID` text box to invoke the `getPetByI
 
 ![Set drop-down value](/help/forms/assets/set-dropdownoption.png)  
 
+>[!NOTE]
+>
+> See the [Adding Success Handler and Failure Handler](#adding-success-handler-and-failure-handler) section to learn how to set success and failure handlers. 
+
 #### Output  
 
 Enter `101` in the `Pet ID` text box to dynamically populate the dropdown options based on the entered value.  
 
 ![Result](/help/forms/assets/output1.png)  
+
+>[!NOTE]
+>
+> Dropdown options can also be populated dynamically by invoking a service, parsing the JSON response, and applying custom functions. For more details, see [this section](#retrieve-property-values-from-a-json-array).
 
 ### Use Case 2: Set repeatable panel using output of Invoke Service  
 
@@ -173,6 +185,10 @@ This use case demonstrates how to populate repeatable panels dynamically based o
 Create a rule on the `Pet ID` text box to invoke the `getPetById` service. In **[!UICONTROL Add Success Handler]**, add another success handler response. Set the value of the `tags` panel to `tags` in the rule.  
 
 ![Create rule for repeatable panel](/help/forms/assets/create-rule-repeatable-panel.png)  
+
+>[!NOTE]
+>
+> See the [Adding Success Handler and Failure Handler](#adding-success-handler-and-failure-handler) section to learn how to set success and failure handlers. 
 
 #### Output  
 
@@ -193,6 +209,10 @@ This use case demonstrates how to dynamically set the value of a panel based on 
 
 Create a rule on the `Pet ID` text box to invoke the `getPetById` service. In **[!UICONTROL Add Success Handler]**, add another success handler response. Set the value of the `categoryname` text box to `category.name` in the rule.  
 
+>[!NOTE]
+>
+> See the [Adding Success Handler and Failure Handler](#adding-success-handler-and-failure-handler) section to learn how to set success and failure handlers. 
+
 ![Create rule for repeatable panel](/help/forms/assets/set-panel-values.png)  
 
 #### Output  
@@ -207,7 +227,7 @@ This use case demonstrates how to use the output of an **Invoke Service** to dyn
 
 #### Implementation  
 
-Create a rule on the `Pet ID` text box to invoke the `getPetById` service. In **[!UICONTROL Add Failure Handler]**, add a failure handler response. Hide the **Submit** button if an incorrect `Pet ID` is entered.  
+Create a rule on the `Pet ID` text box to invoke the `getPetById` service. In **[!UICONTROL Add Failure Handler]**, add a failure handler response. Hide the **Submit** button if an incorrect `Pet ID` is entered. 
 
 ![Failure Handler](/help/forms/assets/create-rule-failure-handler.png)  
 
@@ -217,9 +237,155 @@ Enter `102` in the `Pet ID` text box, and the **Submit** button is hidden.
 
 ![Output](/help/forms/assets/output4.png)  
 
+### Use Case 5: Use Event Payload in Navigate To Action in Invoke Service
+
+This use case demonstrates how to configure a rule on the **Submit** button that calls an **Invoke Service** and then redirects the user to another page using the **Navigate To** action.
+
+#### Implementation
+
+Create a rule on the **Submit** button to invoke the `redirect-api` API service. This service is responsible for redirecting the user to the **Contact Us** form.
+
+You can directly integrate an API as the `redirect-api` API service into your Rule Editor using the JSON data provided below:
+
+```json
+{
+  "id": "1",
+  "path": "/content/dam/formsanddocuments/contact-detail/jcr:content?wcmmode=disabled"
+}
+```
+
 >[!NOTE]
 >
-> You can also [integrate API directly in the Rule Editor interface](/help/forms/api-integration-in-rule-editor.md) without using a predefined Form Data Model. 
+> To learn how to integrate API directly in the Rule Editor interface, [click here](/help/forms/api-integration-in-rule-editor.md) without using a predefined Form Data Model. 
+
+In **[!UICONTROL Add Success Handler]**, configure the **Navigate To** action to redirect the user to the **Contact Us** page using the `Event Payload` parameter. Here, the user can submit their contact details.
+
+![Event Payload](/help/edge/docs/forms/assets/navigate-to-eventpayload.png)
+
+Optionally, configure a failure handler to display an error message if the service call fails.
+
+#### Output
+
+When the **Submit** button is clicked, the `redirect-api` API service is invoked. Upon success, the user is redirected to the **Contact Us** page.
+
+![Event payload Output](/help/forms/assets/output5.gif)
+
+## Retrieve Property Values from a JSON array
+
+<span class="preview"> This is a early-adopter feature. If you are interested, send a quick email from your work address to mailto:aem-forms-ea@adobe.com to request access to the feature</a>. </span>
+
+Adaptive Forms supports invoking a service, processing JSON responses, and populating form fields dynamically. This section describes how to extract property values from a JSON array and bind them to form fields.
+
+### Sample JSON Response
+
+The following example represents US sales regions and list of sales representatives:
+
+
+```json
+[
+  {
+    "region": "East",
+    "salesPerson": "Emily Carter"
+  },
+  {
+    "region": "South",
+    "salesPerson": "Michael Brown"
+  },
+  {
+    "region": "Midwest",
+    "salesPerson": "Sophia Martinez"
+  },
+  {
+    "region": "Southwest",
+    "salesPerson": "David Johnson"
+  },
+  {
+    "region": "West",
+    "salesPerson": "Linda Walker"
+  }
+]
+```
+
+### Custom Function to Extract Property Values
+
+Use the following custom function to extract property values from the JSON array.
+
+```js
+/**
+ * Returns an array of values for a specific property from an array of objects.
+ *
+ * @name getPropertyValues
+ * @param {Object[]} jsonArray An array of objects
+ * @param {string} propertyName The property whose values should be extracted
+ * @returns {Array} An array containing the values of the specified property
+ *
+ */
+
+function getPropertyValues(jsonArray, propertyName)
+{
+    return jsonArray.map((obj) => obj[propertyName]);
+
+}
+```
+
+The custom function accepts:
+
+* **jsonArray**: JSON array returned from the service
+* **propertyName**: Property to extract value
+
+The custom function returns a simple array of values.
+
+>[!NOTE]
+>
+> For detailed steps on how to add custom functions, refer to the [Introduction to Custom Functions for Adaptive Forms based on Core Components](/help/forms/create-and-use-custom-functions.md) article.
+
+
+### Use the function in Rule Editor
+
+To retriveve the specific value from the JSON array:
+
+```
+event.payload.invokeServiceResponse.rawPayloadBody
+```
+
+The following example demonstrates how to populate a `Sales Department` form using this response.
+
+For example, let's create a `Sales Department` form which include the `Select Region` and `Select Sales Representative` dropdowns. 
+
+**Step 1: Invoke the service on form initialization**
+
+```
+WHEN
+    Form is initialized
+THEN
+    Invoke Service → salesdeptinfo
+```
+
+>[!NOTE]
+>
+> To learn how to integrate API without creating a Form Data Model in the Visual Rule Editor, [click here](/help/forms/api-integration-in-rule-editor.md).
+
+**Step 2: Populate the Region dropdown**
+
+Add a Success Handler for the service call and configure the following action:
+
+```
+Set enum → Region dropdown
+getPropertyValues(
+    event.payload.invokeServiceResponse.rawPayloadBody,
+    "region"
+)
+```
+
+This rule reads the JSON array, extracts the `region` property values and assigns the values to the `Select Region` dropdown.
+
+Similarly, configure the action for the `Select Sales Representative` dropdown in the Success Handler.
+
+![Event Payload for JSON array](/help/forms/assets/event-payload.png)
+
+When the form loads the JSON data is returned and the custom function extracts property values and the dropdown is populated automatically:
+
+![Event Payload Form](/help/forms/assets/event-payload-form.png)
 
 ## Frequently asked questions
 

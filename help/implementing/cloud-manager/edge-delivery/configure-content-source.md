@@ -1,9 +1,9 @@
 ---
-title: Configure Your Content Source
+title: Configure Your Content Source for Edge Delivery Services
 description: Learn how to configure the content source for your Edge Delivery site. Use `fstab.yaml` with the Helix 4 architecture, or use the guided wizard in Cloud Manager (or the Configuration Service API) with the Helix 5 architecture.
 
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: f82eafc0-03d0-4c69-9b28-e769a012531b
 ---
 # Configure your content source in one click for Edge Delivery Services {#config-content-source}
@@ -12,7 +12,7 @@ exl-id: f82eafc0-03d0-4c69-9b28-e769a012531b
 >
 >*Helix* is the internal name for the underlying architecture powering AEM Sites with document-based authoring. It is not a feature or product name. In this article, *Helix* refers to the architecture version used by your Edge Delivery Sites. Helix 5 is the current version of the underlying architecture; Helix 4 is the previous version.
 
-Adobe Experience Manager (AEM) Edge Delivery Services allows content delivery from multiple sources such as Google Drive, SharePoint, or AEM itself, using a fast, globally distributed edge network.
+Adobe Experience Manager (AEM) Edge Delivery Services delivers content from Google Drive, SharePoint, or AEM using a fast, globally distributed edge network.
 
 The content source configuration differs between the two architecture versions in the following way:
 
@@ -43,7 +43,7 @@ mountpoints:
   /: https://drive.google.com/drive/folders/your-folder-id
 ```
 
-The example above is for illustration only. The actual URL should point to your content source, such as a Google Drive folder, SharePoint directory, or AEM path.
+The example above is for illustration only. The actual URL points to your content source, such as a Google Drive folder, SharePoint directory, or AEM path.
 
 **To configure the content source for Helix 4:**
 
@@ -96,7 +96,7 @@ Steps vary by the source system that you use.
 
 ## Configure the content source for Helix 5 {#config-helix5}
 
-Helix 5 is repoless, does not use `fstab.yaml`, and supports multiple sites sharing the same directory. Configuration is managed through the Configuration Service API or the Edge Delivery Sites user interface. Configuration is site-level (not repository-level).
+Helix 5 is repo-less, does not use `fstab.yaml`, and supports multiple sites sharing the same directory. Configuration is managed through the Configuration Service API or the Edge Delivery Sites user interface. Configuration is site-level (not repository-level).
 
 Conceptual differences are the following:
 

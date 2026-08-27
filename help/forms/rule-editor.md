@@ -4,6 +4,7 @@ description: Adaptive Forms rule editor allows you to add dynamic behavior and b
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
 ---
 # Add rules to an Adaptive Form {#adaptive-forms-rule-editor}
@@ -152,6 +153,7 @@ For more information about configuring services in form data model (FDM), see [[
 For more information about configuring services in form data model (FDM), see [[!DNL Experience Manager Forms] Data Integration](data-integration.md).
 
 The **[!UICONTROL Set Property]** rule type lets you set the value of a property of the specified object based on a condition action. You can set property to one of the following:
+
 * visible (Boolean)
 * dorExclusion (Boolean)
 * chartType (String)
@@ -195,7 +197,8 @@ The following figure depicts an example of dynamically adding checkboxes based o
 
 **[!UICONTROL Remove Instance]** Removes an instance of the specified repeatable panel or table row.
 
-**[!UICONTROL Navigate to]** Navigates to other <!--Interactive Communications,--> Adaptive Forms, other assets such as images or document fragments, or an external URL. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL Navigate to]** Navigates to other <!--Interactive Communications,--> Adaptive Forms, other assets such as images or document fragments, or an external URL. 
+<!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
 ### [!UICONTROL Set Value of] {#set-value-of}
 
@@ -527,7 +530,8 @@ To write rules, perform the following steps:
 
 ![write-rules-visual-editor-18](assets/write-rules-visual-editor-18.png)
 
-<!-- ### Using code editor {#using-code-editor}
+<!--
+ ### Using code editor {#using-code-editor}
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
@@ -549,6 +553,10 @@ While writing JavaScript code in the rule editor, the following visual cues help
 -->
 
 #### Custom functions in rule editor {#custom-functions}
+
+>[!NOTE]
+>
+> Custom functions must be compatible with ECMAScript 5 (ES5). Foundation Forms support only ES5; use of newer ECMAScript versions (ES6 and above) is not supported and may result in errors or unexpected behavior.
 
 Apart from the out-of-the-box functions like *Sum of* that are listed under Functions Output, you can write custom functions that you frequently need. Ensure that the function you write is accompanied by the `jsdoc` above it.
 
@@ -825,11 +833,13 @@ When the user signifies living at the present residential address for less than 
 
 ![More proof requested](assets/additionalproofrequested.png)
 
-<!-- ## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
+<!--
+ ## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
 
 In [!DNL Experience Manager Forms] versions prior to [!DNL Experience Manager 6.1 Forms] feature pack 1, form authors and developers used to write expressions in the Scripts tab of the Edit component dialog to add dynamic behavior to Adaptive Forms. The Scripts tab is now replaced by the rule editor.
 
-Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor. -->
+Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor.
+-->
 
 ## Example rules {#example}
 
@@ -861,11 +871,13 @@ Rule in the visual editor
 
 In the example rule, the statement in the When section is the condition, which when returns True, executes the actions specified in the Then section.
 
-<!-- The rule appears as follows in the code editor.
+<!--
+ The rule appears as follows in the code editor.
 
 ![when-rule-example-code](assets/when-rule-example-code.png) 
 
-Rule in the code editor -->
+Rule in the code editor
+-->
 
 ### Using a function output in a rule {#using-a-function-output-in-a-rule}
 
@@ -885,11 +897,13 @@ Now, you want to add specified quantities in the Product Quantity column for all
 
 Rule in the visual editor
 
-<!-- he rule appears as follows in the code editor.
+<!--
+ he rule appears as follows in the code editor.
 
 ![example-function-output-code](assets/example-function-output-code.png)
 
-Rule in the code editor -->
+Rule in the code editor
+-->
 
 ### Validating a field value using expression {#validating-a-field-value-using-expression}
 
@@ -899,8 +913,10 @@ In the purchase order form explained in the previous example, you want to restri
 
 Rule in the visual editor
 
-<!-- The rule appears as follows in the code editor.
+<!--
+ The rule appears as follows in the code editor.
 
 ![example-validate-code](assets/example-validate-code.png)
 
-Rule in the code editor -->
+Rule in the code editor
+-->

@@ -3,6 +3,7 @@ title: Troubleshooting 403 Forbidden Errors in Edge Delivery Services Form Submi
 description: Learn how to diagnose and resolve 403 Forbidden errors when submitting forms from Edge Delivery Services to AEM Publish. This guide covers common causes including CORS, Dispatcher rules, and Referrer Filter issues.
 feature: Edge Delivery Services
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: f397e059-f1b3-4afa-bd38-8f5fc591bb22
 ---
 # Troubleshooting 403 Forbidden Errors in Edge Delivery Services Form Submission {#troubleshooting-403-forbidden-edge-delivery}
@@ -52,6 +53,12 @@ A 403 Forbidden error in Edge Delivery Services form submission can have multipl
 **Solution:**
 Configure CORS settings in AEM to allow requests from your specific Edge Delivery site domains:
 
+>[!IMPORTANT]
+>
+>This step modifies your dispatcher vhost configuration. On AEM as a Cloud Service, the shipped default.vhost file is immutable and enforced by checksum during Cloud Manager pipeline validation; direct edits will fail to deploy. Create a customer-owned copy under available_vhosts/ first, and repoint the enabled_vhosts/ symlink at it, before applying the CORS settings below.
+>
+>Reference: https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/dispatcher/disp-overview#file-structure
+
 ```apache
 # Developer Localhost
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http://localhost(:\d+)?$)#" CORSTrusted=true
@@ -60,7 +67,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc--adobe\.aem\.live$)#" CORSTrusted=true
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc1--adobe\.aem\.live$)#" CORSTrusted=true
 
-# Legacy Franklin domains (if still in use)
+# Legacy Franklin domains (deprecated - included for backward compatibility only)
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.page$)#" CORSTrusted=true  
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
 ```

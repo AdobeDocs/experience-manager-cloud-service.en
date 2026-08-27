@@ -4,7 +4,7 @@ description: In this part of the AEM Headless Developer Journey, you will unders
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Path to Your First Experience Using AEM Headless {#path-to-first-experience}
 
@@ -126,23 +126,21 @@ Now that you have completed this part of the AEM Headless Developer Journey, you
 * Know what necessary tools and AEM configurations are required.
 * Know best practices to make your headless journey smooth, keep content generation efficient, and ensure content is delivered quickly.
 
-We want you to build on this foundational knowledge to fully understand the power and flexibility of AEM Headless so you can take advantage of it for your own projects. To do this, you have options.
+We want you to build on this foundational knowledge to fully understand the power and flexibility of AEM Headless so you can take advantage of it for your own projects. 
 
-### Choose Your Own Adventure {#choose-your-path}
-
-No matter what your learning style, Adobe wants you to succeed as you get started with your AEM Headless project.
-
-* If you prefer to continue to **learn about headless concepts and AEM's headless technologies**, you should continue your AEM headless journey by next reviewing the document [How to Model Your Content as AEM Content Models](model-your-content.md) where you learn how to model your content structure in AEM.
-* If you prefer to **learn by doing**, you can jump to the [Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) where you will jump directly into AEM Headless development by implementing a simple project to expose AEM headless content.
+To do this, continue your AEM headless journey with [How to Model Your Content as AEM Content Models](/help/journey-headless/developer/model-your-content.md) where you learn how to model your content structure in AEM.
 
 ## Additional Resources {#additional-resources}
 
 While it is recommended that you move on to the next part of the headless development journey by reviewing the document [How to Model Your Content as AEM Content Models](model-your-content.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
 
+If you prefer to **learn by doing**, you can jump to the [Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) where you will jump directly into AEM Headless development by implementing a simple project to expose AEM headless content.
+
+Further resources:
+
 * [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md) - This documentation journey gives you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it.
 * [Headless Development for AEM Sites as a Cloud Service](/help/headless/introduction.md) - A quick introduction to orient the AEM Headless developer with the necessary features
 * [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [AEM Headless Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Use these hands-on tutorials to explore how to use the various options for delivering content to headless endpoints with AEM and chose what's right for you.
 * [Headless Content Management Using GraphQL APIs](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses) - Follow this course for an overview of the GraphQL API implemented in AEM. Authentication via AdobeID is required.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) -  This GitHub project includes example applications that highlight AEM's GraphQL APIs.
 * [Introduction to the Architecture of Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - A complete overview of AEM's architecture

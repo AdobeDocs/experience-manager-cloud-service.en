@@ -4,7 +4,7 @@ description: Learn about the self-service tools Cloud Manager provides you to in
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Introduction to SSL certificates{#introduction}
@@ -14,7 +14,7 @@ Learn about the self-service tools Cloud Manager provides you to install and man
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="Manage SSL certificates"
->abstract="Learn how Cloud Manager has self-service tools to install and manage SSL certificates to secure your site for your users. Cloud Manager uses a platform TLS service to manage SSL certificates and private keys owned by customers and obtained from third-party certification authorities."
+>abstract="Cloud Manager provides self-service tools to install and manage SSL certificates. It uses a Platform TLS service to manage customer-owned certificates and private keys from third-party certification authorities."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="View, Updating & Replace an SSL Certificate"
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Check Status of an SSL Certificate"
 
@@ -22,7 +22,7 @@ Learn about the self-service tools Cloud Manager provides you to install and man
 
 Businesses and organizations use SSL (Secure Socket Layer) certificates to secure their websites and allow their customers to place trust in them. To use the SSL protocol, a web server requires an SSL certificate. 
 
-When an entity, such as an organization or business, requests a certificate from a Certificate Authority (CA), the CA completes a verification process. This process can range from verifying domain name control to collecting company registration documents and subscriber agreements. After an entity's information is verified, the CA signs their public key using the CA's private key. Because all major Certificate Authorities have root certificates in web browsers, the entity's certificate is linked through a *chain of trust*, and the web browser recognizes it as a trusted certificate.
+When an entity requests a certificate from a Certificate Authority (CA), the CA completes a verification process. This process can range from verifying domain name control to collecting company registration documents and subscriber agreements. After an entity's information is verified, the CA signs their public key using the CA's private key. Because all major Certificate Authorities have root certificates in web browsers, the entity's certificate is linked through a *chain of trust*, and the web browser recognizes it as a trusted certificate.
 
 >[!IMPORTANT]
 >
@@ -35,13 +35,13 @@ Cloud Manager offers self-service tools to install and manage SSL certificates, 
 | | Model | Description |
 | --- | --- | --- |
 | A | **[Adobe-managed SSL certificate (DV)](#adobe-managed)** | Cloud Manager lets users configure DV (Domain Validation) certificates that are provided by Adobe for quick domain setup.|
-| B | **[Customer-managed SSL certificate (OV/EV)](#customer-managed)** | Cloud Manager offers a platform TLS (Transport Layer Security) service to let you manage OV and EV SSL certificates that you own and private keys from third-party Certificate Authorities, such as *Let's Encrypt*. | 
+| B | **[Customer-managed SSL certificate (OV/EV)](#customer-managed)** | Cloud Manager offers a platform TLS (Transport Layer Security) service to let you manage OV and EV SSL certificates that you own and private keys from third-party Certificate Authorities, such as *Let's Encrypt*. |
 
 Both models offer the following general features for managing your certificates:
 
 * Each Cloud Manager environment can use multiple certificates.
-* A private key may issue multiple SSL certificates.
-* The platform TLS service routes requests to the customer's CDN service based on the SSL certificate used to terminate and the CDN service that hosts that domain.
+* A private key is used to issue multiple SSL certificates.
+* The Platform TLS service routes requests to the customer's CDN service. This routing is based on the SSL certificate used to terminate the connection. It is also based on the CDN service that hosts that domain.
 
 >[!IMPORTANT]
 >
@@ -69,7 +69,7 @@ OV and EV additionally offer these features over DV certificates in Cloud Manage
 
 >[!TIP]
 >
->If you have multiple custom domains, you may not want to upload a certificate each time you add a new domain. In that case, you could benefit from obtaining a single certificate that covers multiple domains.
+>If you have multiple custom domains, you may not want to upload a certificate each time you add a new domain. In that case, you benefit from obtaining a single certificate that covers multiple domains.
 
 #### Requirements for customer-managed OV/EV SSL certificates {#requirements}
 
@@ -95,7 +95,7 @@ If you choose to add your own customer-managed SSL certificate, it must meet the
 
 * **Avoid overlapping certificates:**
 
-  * To ensure smooth certificate management, avoid deploying overlapping certificates that match the same domain. For example, having a wildcard certificate (*.example.com) alongside a specific certificate (dev.example.com) may lead to confusion.
+  * To ensure smooth certificate management, avoid deploying overlapping certificates that match the same domain. For example, having a wildcard certificate (*.example.com) alongside a specific certificate (dev.example.com) leads to confusion.
   * The TLS layer prioritizes the most specific and recently deployed certificate.
 
   Example scenarios:
@@ -126,7 +126,7 @@ If you choose to add your own customer-managed SSL certificate, it must meet the
 
 #### Format for customer-managed certificates {#certificate-format}
 
-SSL certificate files must be in PEM format to be installed with Cloud Manager. Common file extensions of the PEM format include `.pem,`. `crt`, `.cer`, and `.cert`. 
+SSL certificate files must be in PEM format to be installed with Cloud Manager. Common file extensions of the PEM format include `.pem`, `.crt`, `.cer`, and `.cert`. 
 
 The following `openssl` commands can be used to convert non-PEM certificates.
 
@@ -148,11 +148,17 @@ The following `openssl` commands can be used to convert non-PEM certificates.
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
 
-## Limitation on number of installed SSL certificates {#limitations}
+## Limitations {#limitations}
 
-At any given time, Cloud Manager supports up to 50 installed certificates. These certificates can be associated with one or more environments across your program and also include any expired certificates.
+### Number of installed SSL certificates {#number-installed-ssl-certs}
+
+At any given time, Cloud Manager supports up to 70 installed certificates. These certificates can be associated with one or more environments across your program and also include any expired certificates.
 
 If you have reached the limit, review your certificates and consider deleting any expired certificates. Or, group multiple domains in the same certificate since a certificate can cover multiple domains (up to 100 SANs).
+
+### Let's Encrypt rate limits for Adobe-managed DV certificates
+
+Adobe-managed DV certificates rely on Let's Encrypt. In addition to the Cloud Manager limit on installed certificates, Let's Encrypt enforces its own rate limits. One key limit is **New Certificates per Exact Set of Identifiers**: up to 5 certificates are issued for the set of hostnames within any 7-day period. If this limit is reached, Cloud Manager shows an error and cannot create more certificates for that hostname set until the rate-limit window is reset. For the latest values and other related limits, see the [Let's Encrypt rate-limits documentation](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers).
 
 ## Learn more {#learn-more}
 

@@ -4,23 +4,16 @@ description: Learn how to use Marketo Engage schema in Adaptive Forms.
 keywords: Use Marketo Engage data source in Adaptive Forms, How to connect a Marketo instance data source with form? , Connect a form to Marketo.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
 ---
 # Configure Marketo Engage data source for existing Adaptive Forms
 
-<span class="preview"> The feature is available under early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
-
 ![Workflow](/help/forms/assets/workflow-marketo-2.png)
 
-After creating the cloud service configuration to integrate Marketo Engage with existing AEM Forms, you can configure the data source for forms.
+After creating the cloud service configuration to integrate Marketo Engage with existing AEM Forms, you can configure the data source for forms. 
 
 Configuring data integration enables users to connect to various data sources or schemas. Integrating with the Marketo Engage data source and using it across different forms facilitates operations on that data. To explore the supported out-of-the-box data sources for an Adaptive Form, refer to the [Configure Data Sources](/help/forms/configure-data-sources.md) article.
-
-## Consideration for configuring the Marketo Engage data source for forms
-
-Consideration while configuring Marketo Engage data source for forms are:
-
-* It is not possible to connect Edge Delivery Services Forms with Marketo Engage.
 
 ## Prerequisite to use Marketo Engage data source for forms
 
@@ -109,8 +102,10 @@ The form is now configured with the data source from the connected Marketo Engag
 **Q: What happens when you change the connector of the form?**  
     **A:** If you change the connector of the form, the existing bindings become invalid.
 
-**Q: What are the three operations available in the Invoke Service of the Rule Editor for forms integrated with Marketo Engage?**  
-    **A:** The three out-of-the-box operations available in the **Invoke Service** for forms integrated with Marketo Engage are:
+**Q: What are the three operations available in the Invoke Service of the Rule Editor for forms integrated with Marketo Engage?**
+
+**A:** The three out-of-the-box operations available in the **Invoke Service** for forms integrated with Marketo Engage are:
+
 * Sync Lead
 * Get Lead by ID
 * Get Lead by Filter Type

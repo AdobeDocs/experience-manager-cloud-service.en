@@ -1,6 +1,7 @@
 ---
 title: Templates to Create Pages that are Editable with the Page Editor
 description: You can use the Template Editor to create templates that your content authors can use to create pages that are editable with the Page Editor.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring

@@ -3,8 +3,7 @@ title: Changes in User Group and Product Profile Synchronization
 description: Learning about the changes in user group and product profile synchronization coming to AEM as a Cloud Service
 feature: Security
 role: Admin
-hide: yes
-hidefromtoc: yes
+hide: true
 exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
 ---
 # Changes in User Group and Product Profile Synchronization {#changes-in-user-group-and-product-profile-synchronization}

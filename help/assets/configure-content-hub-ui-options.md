@@ -29,6 +29,8 @@ Experience Manager Assets enables administrators to configure the options availa
 
 * Any custom links that you need to include on Content Hub in addition to assets, collections, and insights.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
+
 ## Prerequisites {#prerequisites-configuration-ui}
 
 [Content Hub administrators](/help/assets/deploy-content-hub.md#step-3-onboard-content-hub-administrator) can set the configuration options for other users within your organization. 
@@ -41,7 +43,7 @@ To access configuration options on Content Hub:
 
 1. In the **[!UICONTROL Product Settings]** section, select **[!UICONTROL Configurations]**.
 
-   ![Access configuration options on Content Hub](assets/access-content-hub-configuration-ui.png)
+   ![Access configuration options on Content Hub](assets/access-content-hub-configuration-ui-new.png)
 
 ## Manage configuration options on Content Hub {#manage-configuration-options}
 
@@ -58,7 +60,7 @@ As an administrator, manage the following configuration options for your users:
 
 * [Branding](#configure-branding-content-hub)
 
-* [Expired Assets](#expired-assets-content-hub)
+* [Asset Visibility](#asset-visibility-content-hub)
 
 * [Renditions](#renditions-content-hub)
 
@@ -76,7 +78,7 @@ You can configure the metadata fields that display to the users while uploading 
 
 1. Click **[!UICONTROL Add metadata]**. 
 
-1. Specify a label for the property, map it to a property using the **[!UICONTROL Metadata]** field, and select the input type for the new asset metadata.
+1. Specify a label for the property, map it to a property using the **[!UICONTROL Metadata]** field, and select the appropriate input type for the new asset metadata. The input type labels are updated to align with Adobe Experience Manager (AEM). The available input types include Text, Tags, Date, Number, Dropdown, Multi Value Text, Smart Tags, and Smart Color Tags. For certain metadata fields (xcm:colorDistribution, xcm:machineKeywords), the input type is automatically assigned and cannot be modified.
 
 1. Click the **[!UICONTROL Required field]** toggle to make the new metadata field mandatory to specify for users while uploading new assets.
 
@@ -90,33 +92,37 @@ Click the **[!UICONTROL Auto-approval]** toggle if you need all assets that you 
 
 Click **[!UICONTROL Save]** after making all modifications to apply the changes.
 
-![Configuration UI upload details on Content Hub](/help/assets/assets/import-content-hub1.png)
+![Configuration UI upload details on Content Hub](assets/filter.png)
 
 Metadata enabled on the Configuration User Interface display on the asset upload page:
-![Upload metadata on Content Hub](assets/add-assets-for-approval1.png)
+![Upload metadata on Content Hub](assets/add-assets-for-approval-new.png)
 
 ### Filters {#configure-filters-content-hub}
 
-Content Hub allows administrators to configure filters that display while searching for assets. Execute the following steps to add a new filter:
+Content Hub allows administrators to configure filters that display while searching for assets.
+
+Execute the following steps to add a new filter:
 
 1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Filters]**.
-
 1. Click **[!UICONTROL Add filters]**. 
-
-1. Specify a label for the filter, map it to a property using the **[!UICONTROL Metadata]** field, and select the input type for the new filter.
+1. Specify a label for the filter, map it to a property using the **[!UICONTROL Metadata]** field, and select the appropriate input type for the new filter. The input type labels are updated to align with Adobe Experience Manager (AEM). The available input types include Text, Tags, Date, Number, Dropdown, Multi Value Text, Smart Tags, and Smart Color Tags. For certain metadata fields (xcm:colorDistribution, xcm:machineKeywords), the input type is automatically assigned and cannot be modified.
 1. Click **[!UICONTROL Confirm]**. The new filter displays in the list of the existing filters.
-
 1. Click **[!UICONTROL Save]** to apply the changes so that the new filter gets displayed on the Search page while filtering assets.
 
    >[!NOTE]
    >
-   >The new filter gets displayed on the Search page only if there is at least one asset in the repository matching the filter criteria.
+   >The new filter gets displayed on the Search page only if there is at least one asset in the repository matching the filter criteria. The maximum number of fields available in the filter panel on the Search page is 40.
 
 Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available filter, to edit the labels or click the delete icon to delete any existing filter. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
-![Configuration UI filters on Content Hub](assets/configuration-filter1.png)
+![Configuration UI filters on Content Hub](assets/add-filters-new.png)
 
+You can also define if you require a filter available on the **Configurations** page to be displayed on the Filter panel on the Search page. Click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available filter, and select the **Filter Panel** checkbox in the **Available in** section to make it available on the Search page.
+
+To make a metadata field available as a sorting option on the Search page, select the **Sorting** checkbox. For more information, see [Add custom metadata fields as sorting options](/help/assets/search-assets-content-hub.md#add-custom-metadata-fields-for-sorting). Click **[!UICONTROL Save]** after making all modifications to apply the changes.
+
+![Configure sorting filter panel on Content Hub](assets/sorting-new.png)
 The filters enabled on the Configuration User Interface display on the Search page:
-![Search on Content Hub](assets/content-hub-filters1.png)
+![Search on Content Hub](assets/content-hub-filters-new.png)
 
 #### Bulk Search {#bulk-search-configuration}
 
@@ -128,7 +134,7 @@ To enable searching multiple assets at once in [!DNL Content Hub], execute the s
 
 1. Enable **[!UICONTROL Bulk Search]** toggle. The default delimiters `[ , | \t | \r\n | \r | \n ]` are displayed automatically. Moreover, you can also add additional delimiters. To to this, specify delimiters in the input box separated by a `pipe symbol (|)`.
 
-   ![Bulk Search Configuration](assets/bulk-search-configuration.png)
+   ![Bulk Search Configuration](assets/edit-filter-new.png)
 
 1. Click **[!UICONTROL Confirm]** to save the changes. See [Bulk Search in Content Hub](search-assets-content-hub.md#bulk-search) in action.
 
@@ -139,36 +145,45 @@ You can also configure the asset properties that display for each asset, such as
 1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Asset details]**.
 
 1. Click **[!UICONTROL Add metadata]**. 
-
-1. Specify a label for the property, map it to a property using the **[!UICONTROL Metadata]** field, and select the input type for the new asset metadata.
+1. Specify a label for the property, map it to a property using the **[!UICONTROL Metadata]** field, and select the appropriate input type for the new asset metadata. The input type labels are updated to align with Adobe Experience Manager (AEM). The available input types include Text, Tags, Date, Number, Dropdown, Multi Value Text, Smart Tags, and Smart Color Tags. For certain metadata fields (xcm:colorDistribution, xcm:machineKeywords), the input type is automatically assigned and cannot be modified.
 1. Click **[!UICONTROL Confirm]**. The new metadata displays in the list of the existing asset properties.
 
 1. Click **[!UICONTROL Save]** to apply the changes so that the new property gets displayed on the asset details page.
 
 Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available property, to edit the labels or click the delete icon to delete any existing asset detail. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
 
-   ![Configuration UI asset details on Content Hub](assets/configuration-asset-details.png)
+   ![Configuration UI asset details on Content Hub](assets/asset-details-new.png)
 
 The properties enabled on the Configuration User Interface display on the Asset Details page:
 
-![Asset properties on Content Hub](assets/asset-details-page-content-hub1.png)
+![Asset properties on Content Hub](assets/asset-details-page-content-hub-new.png)
 
 ### Asset Card {#asset-card}
 
 You can also configure the key metadata properties that you need to display on the **Asset Card** up to a maximum of 6 fields. 
-![key metadata on Asset Card](/help/assets/assets/asset-card-metadata.png)
+![key metadata on Asset Card](/help/assets/assets/asset-card-metadata-new.png)
 Execute the following steps to configure the metadata properties to display them on the **[!UICONTROL Asset card]**:
 
 1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **Asset Card**.
 2. Click **Add metadata**. The **Add asset card metadata** dialog box displays.
 3. Specify the metadata name in the **Label** field and select a metadata property in the **Metadata** field.
 4. Click **Confirm** and then click **Save** to apply the changes so that the new property display on the asset details page.
-![asset card](/help/assets/assets/configuration-asset-card1.png)
+![asset card](/help/assets/assets/configuration-asset-card-new.png)
 Similarly, click ![edit](/help/assets/assets/edit-content-hub.svg) that is available next to each available property, to make any required modifications or click ![delete](/help/assets/assets/delete-content-hub.svg) to delete any existing metadata property. Click **Save** after making all modifications to apply the changes.
 
 ### Search {#configure-metadata-search-content-hub}
 
+Content Hub provides two search options: **AI Search** and **Keyword Search**. For more information about these search capabilities, see [AI Search in Content Hub](/help/assets/search-assets-content-hub.md#ai-search-aem-assets-content-hub).
+
 Administrators can define the metadata fields that are searched when a user specifies a search criteria on Content Hub. Execute the following steps:
+
+>[!CAUTION]
+>
+>It is recommended to carefully select the fields you mark as searchable. Include only those fields that users are likely to search for and that help return meaningful results. Fields such as dates and numbers are better suited for filtering and sorting rather than as searchable content. Marking too many fields as searchable or filterable may affect the quality and performance of search results.
+> 
+> You can configure a maximum of 30 search fields using the Configuration User Interface.
+>
+>Tag properties are enabled for filtering only and are not searchable.
 
 1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Add metadata]**.
 
@@ -177,12 +192,18 @@ Administrators can define the metadata fields that are searched when a user spec
 1. Click **[!UICONTROL Save]** to apply the changes so that the new metadata property gets displayed in the list of metadata fields.
 
 Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available metadata property, to edit the property or click the delete icon to delete any existing property. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
-![Configuration UI Search on Content Hub](assets/configuration-search.png)
+![Configuration UI Search on Content Hub](assets/configuration-search-new.png)
+
+The list of Search fields that you add must be in the order of relevance, as the order impacts the search results.
+
+   >[!NOTE]
+   >
+   >You must keep the Content Hub Configuration page in sync with the fields you intend to use. Do not remove fields using the UI, especially if those fields are being used in ABAC rules or direct Search API usage.
 
 ### Branding {#configure-branding-content-hub}
 
 As an administrator, customize your [!DNL Content Hub] portal to meet your branding requirements. 
-![reset default](/help/assets/assets/reset-default-content-hub.png)
+![reset default](/help/assets/assets/reset-default-content-hub-new.png)
 On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page use **[!UICONTROL Banner]**, **[!UICONTROL Colors]** and **[!UICONTROL Banner image]** sections to execute the following customizations:
 
 1. [Change the logo image from [!UICONTROL Logo image] section](#Change-the-logo-image)
@@ -198,7 +219,7 @@ On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]
 
 1. Click ![select image](/help/assets/assets/Browse.svg) **[!UICONTROL Select Image]** to select a logo image using the asset selector dialog box. The asset selector displays only approved images.
 1. Select the image, click **[!UICONTROL Select]**, and then click **[!UICONTROL Save]** to display it as the logo image of your [!DNL Content Hub] deployment.
-![banner image](/help/assets/assets/logo-image-content-hub1.png)
+![banner image](/help/assets/assets/logo-image-content-hub-new.png)
 
 #### Change the banner image{#Change-the-banner-image}
 
@@ -206,7 +227,7 @@ On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]
 
 1. Click ![select image](/help/assets/assets/Browse.svg) **[!UICONTROL Select from gallery]** to select a banner image using the asset selector dialog box. The asset selector displays only approved images.
 1. Select the image, click **[!UICONTROL Select]**, and then click **[!UICONTROL Save]** to display it as the banner image of your [!DNL Content Hub] deployment.
-![banner image](/help/assets/assets/banner-image-content-hub1.png)
+![banner image](/help/assets/assets/banner-image-content-hub-new.png)
 
 >[!NOTE]
 >
@@ -218,12 +239,12 @@ On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]
 
 On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page, use the respective fields in the **[!UICONTROL Banner]** section to add title and body texts to your banner.
 Click the square box next to the **[!UICONTROL Banner text color]** to select a text color from the color picker for your banner text or specify the color's hex code in the field next to the color picker square box.
-![banner text content hub](/help/assets/assets/banner-text-content-hub.png)
+![banner text content hub](/help/assets/assets/banner-text-content-hub-new.png)
 
 #### Change the primary and secondary color{#Change-the-primary-and-secondary-color}
 
 On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page, use the **[!UICONTROL Colors]** section to set primary and secondary colors by either selecting them using color picker or defining the color's hex code. These colors set the background, text, and icon colors of UI elements to align your [!DNL Content Hub] UI with your brand's theme.
-![primary and secondary color](/help/assets/assets/primary-secondary-color-content-hub1.png)
+![primary and secondary color](/help/assets/assets/primary-secondary-color-content-hub-new.png)
 **[!UICONTROL Primary color]:** The primary color scheme applies to selection actions, interactive elements such as checkboxes, search bars, and toggle switches across [!DNL Content Hub] including [!DNL Content Hub] home page and [!UICONTROL Configuration] page. It also applies to action options available on primary [!DNL Content Hub] interfaces such as options available on **[!UICONTROL All Assets]** and **[!UICONTROL Collections]** pages. 
 
 **[!UICONTROL Secondary color]:** On the [!DNL Content Hub] home page, the secondary color scheme applies to UI options and input fields that are available within dialog boxes. It applies to all configuration menu options available on the [!UICONTROL Configuration] page except selection actions, checkboxes, search bars, and toggle switches.
@@ -244,11 +265,11 @@ To do so, execute the following steps:
 1. Enable the **[!UICONTROL Allow users to view assets approved for delivery]** toggle to display all assets approved for delivery in Content Hub.
 1. Click **[!UICONTROL Save]** to apply the changes.
 
-   ![Expired assets on Content Hub](assets/asset-visibility-content-hub1.png)
+   ![Expired assets on Content Hub](assets/asset-visibility-content-hub-new.png)
 
 After enabling the visibility of assets, you can view the expired assets on Content Hub, as depicted in the following image:
 
-![Expired assets on Content Hub](assets/view-download-expired-assets.png)
+![Expired assets on Content Hub](assets/view-download-expired-assets-new.png)
 
 If the administrator has enabled download, the Content Hub users can also download them, as highlighted in the image.
 
@@ -266,7 +287,7 @@ On the [Configurations](#access-configuration-options-content-hub) user interfac
 
 * Enable or disable **[!UICONTROL Allow users to download original assets]** toggle to control the availability to download original assets.
 
-   ![Configure renditions on Content Hub](assets/configuration-renditions1.png)
+   ![Configure renditions on Content Hub](assets/configuration-renditions-new.png)
 
 For information on how to view and download renditions in Content Hub, see [download assets in Content Hub](/help/assets/download-assets-content-hub.md).
 
@@ -285,10 +306,10 @@ You can also add custom tabs in addition to standard **[!UICONTROL All Assets]**
 1. Click **[!UICONTROL Save]** to apply the changes.
 
 Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each URL, to edit the links or click the delete icon to delete any existing URL. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
-![Configuration UI Custom Links on Content Hub](assets/configuration-custom-links1.png)
+![Configuration UI Custom Links on Content Hub](assets/configuration-custom-links-new.png)
 
 The custom link display as a new tab next to Insights tab on the Content Hub home page.
-![Configuration UI Custom Links tabs on Content Hub](assets/configuration-ui-custom-link-tab.png)
+![Configuration UI Custom Links tabs on Content Hub](assets/configuration-ui-custom-link-tab-new.png)
 
 ### Collections and Sharing {#configure-collections-content-hub}
 
@@ -304,7 +325,7 @@ Administrators can define user permissions while crating collections. To enable 
 
 1. Click **[!UICONTROL Save]** to apply the changes. 
 
-    ![Configuration Collections tab on Content Hub](assets/collections-and-sharing1.png)
+    ![Configuration Collections tab on Content Hub](assets/collections-and-sharing-new.png)
 
 <!--
 ### Enable public link sharing {#enable-public-link-sharing}
@@ -321,3 +342,77 @@ Enable the following setting on the Configurations user interface to allow Conte
 
 Learn more about [sharing assets in the [!DNL Content Hub]](share-assets-content-hub.md).
 
+## Frequently asked questions {#faqs-content-hub-upload-assets}
+
+### Who can access and configure the AEM Assets Content Hub user interface settings?
+
+Only users with Content Hub administrator rights can access and configure the Content Hub user interface settings. Administrative permissions must be granted via the Adobe Admin Console before accessing the configuration interface.
+
+### What can administrators configure in the AEM Assets Content Hub UI?
+
+Administrators can configure the following setting in AEM Assets Content Hub Configuration User Interface:
+
+* Import metadata fields (including required fields and auto-approval settings)
+
+* Search filters shown on the search page
+
+* Searchable metadata fields used for indexing
+
+* Asset card metadata (up to six fields displayed on cards)
+
+* Asset details view properties
+
+* Branding elements (logo, banner text, colors, banner image)
+
+* Asset visibility rules (including expired asset behavior)
+
+* Rendition and download options
+
+* Custom navigation links (external tabs)
+
+* Collection and sharing settings (public links and permissions)
+
+These settings control both the visual experience and functional behavior of Content Hub for end users.
+
+
+### How can administrators add new metadata fields for asset uploads in AEM Assets Content Hub?
+
+Administrators can add new metadata fields for asset uploads by clicking **Add metadata** in the **Import** tab, specifying the label, mapping it to the appropriate property from the metadata schema, selecting the input type, and deciding if the field is required or optional. After confirming and saving, the new field becomes available to users during asset uploads.
+
+### What is the Auto Approval setting for assets in AEM Assets Content Hub and how does it work?
+
+The Auto Approval setting, when enabled, allows new assets to become immediately available on Content Hub upon upload. By default, this setting is off, requiring AEM authors or administrators to manually approve new assets before they display on the Content Hub portal.
+
+### How do administrators configure filters for asset searches in AEM Assets Content Hub?
+
+Administrators can configure filters for asset searches by clicking **Add filters**, specifying the filter label, mapping it to the appropriate metadata property, selecting the data type, and confirming the addition. Filters become available in the interface once there is at least one asset matching the filter criteria. Changes are applied by clicking **Save**.
+
+### What asset properties can be displayed in the Asset Details view and how are they configured in AEM Assets Content Hub?
+
+Asset properties such as file name, title, format, size, and custom fields such as categories can be displayed in the Asset Details view. Administrators add these properties by clicking **Add metadata**, specifying the label, mapping it to the metadata schema, selecting the data type, confirming, and saving the changes.
+
+### How can administrators customize metadata details shown on asset cards in AEM Assets Content Hub?
+
+Administrators can customize metadata details shown on asset cards by clicking **Add metadata** in the Asset Card settings, specifying the label (for example, file format), mapping it to the appropriate property in the metadata schema, and confirming the addition. Up to six metadata fields can be displayed on asset cards.
+
+### Can administrators customize your AEM Assets Content Hub portal to meet your organization's branding requirements?
+
+Yes. Administrators can personalize the look and feel of AEM Assets Content Hub by editing the title and body text for the main banner, selecting text colors via a color picker or hex code, and setting secondary and primary colors for background, text, and icons.
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

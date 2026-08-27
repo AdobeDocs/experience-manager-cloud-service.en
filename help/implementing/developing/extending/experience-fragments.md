@@ -3,7 +3,7 @@ title: Experience Fragments Overview
 description: Extend Experience Fragments for Adobe Experience Manager as a Cloud Service
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 feature: Developing, Experience Fragments
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Experience Fragments{#experience-fragments}
 
@@ -124,7 +124,8 @@ One of the use cases for such groups is for embedding content in third-party tou
 
 ### Default Link Rewriting {#default-link-rewriting}
 
-<!--Using the [Export to Target](/help/sites-administering/experience-fragments-target.md) feature, you can:
+<!--
+Using the [Export to Target](/help/sites-administering/experience-fragments-target.md) feature, you can:
 -->
 
 Using the Export to Target feature, you can:
