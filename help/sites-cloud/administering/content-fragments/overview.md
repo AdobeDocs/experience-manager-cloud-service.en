@@ -1,14 +1,19 @@
 ---
-title: An Overview of working with Content Fragments
+title: An Overview of the Concepts and Best Practices of Working with Content Fragments
 description: Learn how Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service allow you to create and use structured content; ideal for headless delivery, and page authoring.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
 ---
-# An overview of working with Content Fragments {#overview-working-with-content-fragments}
+# Working with Content Fragments - Concepts and Best Practices {#working-with-content-fragments-concepts-and-best-practices}
 
-With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate, and publish page-independent content. They allow you to prepare content ready for use in multiple locations, and over multiple channels, ideal for [headless delivery](/help/headless/what-is-headless.md), and [page authoring](/help/sites-cloud/authoring/fragments/content-fragments.md).
+With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate, and publish page-independent content. They allow you to prepare content, ready for use in multiple locations, and over multiple channels, ideal for [headless delivery](/help/headless/what-is-headless.md), and [page authoring](/help/sites-cloud/authoring/fragments/content-fragments.md).
+
+>[!TIP]
+>
+>Content Fragments can be [published to Edge Delivery Services.](https://www.aem.live/developer/content-fragment-overlay)
 
 >[!IMPORTANT]
 >
@@ -27,7 +32,6 @@ With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow 
 >* use of the **Assets** console for [managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md)
 >* use of the [*original* Content Fragment editor](/help/assets/content-fragments/content-fragments-variations.md),
 >* using [Content Fragments for page-authoring](/help/sites-cloud/authoring/fragments/content-fragments.md).
-
 
 Content fragments contain structured content:
 
@@ -48,10 +52,17 @@ Content fragments contain structured content:
     * The reference data types available allow you to nest your content.
     * Tends to be used for headless delivery to your application.
 
-Content Fragments can also be delivered in JSON format, using the Sling Model (JSON) export capabilities of AEM core components. This form of delivery:
+Content Fragments can also be delivered in:
 
-* enables you to use the component to manage which elements of a fragment to deliver
-* allows bulk-delivery; by adding multiple [Content Fragment Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) on the page being used for API delivery
+* JSON format, using the Sling Model (JSON) export capabilities of AEM core components. This form of delivery:
+
+  * enables you to use the component to manage which elements of a fragment to deliver
+  * allows bulk-delivery; by adding multiple [Content Fragment Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) on the page being used for API delivery
+
+* HTML format, using [Visual Content Fragments](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md) rendered with [HTML templates, developed with Handlebars](/help/implementing/developing/extending/content-fragments-visualization-templates.md). This form of delivery:
+
+  * provides a visual representation to help previewing, and reviewing, the content
+  * provides a visual representation for direct, and immediate, use by external channels and applications
 
 The number of communication channels is increasing annually. Typically channels refer to the delivery mechanism, either as the:
 
@@ -74,6 +85,7 @@ These Content Fragments can then be assembled to provide experiences over a vari
 >[!NOTE]
 >
 >**Content Fragments** and **[Experience Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md)** are different features within AEM:
+>
 >* **Content Fragments** are editorial content, with definition and structure, but without additional visual design and/or layout. They can be used to access structured data, including texts, numbers, and dates, among others. 
 >* **Experience Fragments** are fully laid out content; a fragment of a web page.
 >
@@ -97,7 +109,9 @@ After the fragments have been created, you can:
 * [Analyze](/help/sites-cloud/administering/content-fragments/analysis.md)  the structure of your Content Fragment, using the editor
 * [Access your fragments with GraphQL, for headless delivery to your applications](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
 * [Integrate and use your Content Fragments in Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md) 
+* Create, and manage, [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 * [Or use your fragments for page authoring](/help/sites-cloud/authoring/fragments/content-fragments.md)
+* Deliver a [visual (HTML) representation](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md) of your fragment
 
 >[!NOTE]
 >
@@ -109,7 +123,6 @@ After the fragments have been created, you can:
 >* [AEM GraphQL API for use with Content Fragments](/help/headless/graphql-api/content-fragments.md)
 >* [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md).
 >* The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
-
 
 ## Main and Variations {#main-and-variations}
 
@@ -131,14 +144,11 @@ Variations are a significant feature of AEM's Content Fragments. They allow you 
 
 * **Variations**
 
-  * Renditions of fragment text that are specific to editorial purpose; can be related to channel but is not compulsory, can also be for ad-hoc local modifications.
+  * Renditions of fragment text that are specific to editorial purpose; can be related to a channel, but this is not compulsory; can also be for ad-hoc local modifications.
   * Are created as copies of **Main**, but can then be edited as required; there is often content overlap between the variations themselves.
   * Can be defined during fragment authoring; from the left panel.
   * Stored in the fragment, to help avoid scattering of content copies.
   * Variations can be [compared and synchronized](/help/sites-cloud/administering/content-fragments/authoring.md#compare-and-synchronize-rich-text) with **Main**.
-  <!--
-  * Can be [Summarized](/help/sites-cloud/administering/content-fragments/authoring.md#summarizing-text) to quickly truncate the text to a predefined length.
-  -->
 
 ## Content Fragments and Content Services {#content-fragments-and-content-services}
 
@@ -148,7 +158,7 @@ They provide the delivery of content to channels that are not traditional AEM we
 
 * Single Page Applications
 * Native Mobile Applications
-* other channels and touch-points external to AEM
+* other channels and touch points external to AEM
 
 Delivery is made in JSON format using the JSON Exporter.
 
@@ -181,7 +191,7 @@ Content fragments are:
 
   * The [Content Fragment Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) is available to page authors. It allows them to reference, and deliver, the required Content Fragment in either HTML or JSON format.
 
-Content Fragments are a content structure that:
+Content Fragments are content structures that:
 
 * Are without layout or design (text formatting is possible for text fields).
 * Are independent from the delivery mechanism (such as the page, or channel).
@@ -214,11 +224,19 @@ The Content Fragment assets are made up of the following parts (either directly 
 
 * **Fragment Metadata**
 
-  * Use the [Assets metadata schemas](/help/assets/metadata-schemas.md).
+  * Use the [Assets Metadata in Assets View](/help/assets/metadata-assets-view.md).
   * Tags can be created when you:
 
     * Create and author the fragment
-    * Or later, when you [view or edit the properties](/help/sites-cloud/administering/content-fragments/authoring.md#view-properties-tags) when in the fragment editor
+    * Or later, when you [view or edit the properties, metadata and tags](/help/sites-cloud/administering/content-fragments/authoring.md#view-and-edit-properties-metadata-and-tags) when in the fragment editor
+
+  >[!NOTE]
+  >
+  >To use your (older) Assets metadata forms with the Content Fragments console and the new Content Fragment editor you will need to [import your forms](/help/assets/import-metadata-form-from-admin-view-to-assets-view.md) from the Admin View to the [Assets View](/help/assets/assets-view-introduction.md), where you can also [manage your metadata forms](/help/assets/metadata-assets-view.md#metadata-forms). Once imported the two versions are not synchronized.
+
+  >[!NOTE]
+  >
+  >See also [Properties, Tags and Metadata](/help/sites-cloud/administering/content-fragments/properties-tags-and-metadata.md).
 
   >[!CAUTION]
   >
@@ -226,9 +244,9 @@ The Content Fragment assets are made up of the following parts (either directly 
 
   >[!CAUTION]
   >
-  >A Content Fragment Model can often define data fields named **Title** and **Description**. If these two fields exist, they are user-defined fields and can be updated in the content area of the editor.
+  >A Content Fragment Model can often define data fields named **Title** and **Description**. If these two fields exist, they are user-defined content fields and can be updated in the content area of the editor.
   >
-  >The Content Fragment, and its variations, also has metadata (property) fields called **Title** and **Description**. These two metadata fields are an integral part of any Content Fragment, and variation, and initially defined when the fragment is created. They can be updated in the properties/metadata area of the editor.
+  >The Content Fragment, and its variations, also have property fields called **Title** and **Description**. These two property fields are an integral part of any Content Fragment, and variation, and initially defined when the fragment is created. They can be updated in the properties area of the editor.
 
 * **[Main](#main-and-variations)**
 * **[Variations](#main-and-variations)**
@@ -237,14 +255,14 @@ The Content Fragment assets are made up of the following parts (either directly 
 
 To create Content Fragments you need:
 
-* **Content Model**
+* a **Content Fragment Model**
 
-  * Are [enabled using the Configuration Browser](/help/sites-cloud/administering/content-fragments/setup.md).
-  * Are [created using the Content Fragment Console](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model).
+  * Is [enabled using the Configuration Browser](/help/sites-cloud/administering/content-fragments/setup.md).
+  * Is [created using the Content Fragment Console](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model).
   * Required to [create a fragment](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments).
   * Defines the structure of a fragment (title, content elements, tag definitions).
   * Content Fragment Model definitions require a title and one data element; everything else is optional. 
-  * The model can define default content - if applicable. 
+  * The model can define default content, if applicable. 
   * Authors cannot change the defined structure when authoring fragment content; though they can open the model editor from the fragment editor.
   * Changes made to a model after dependent Content Fragments have been created, can impact those Content Fragments.
 
@@ -259,7 +277,7 @@ To use your Content Fragments for headless content delivery you also need:
 
 To use your Content Fragments for page authoring you also need:
 
-* A **Content Fragment Component**
+* a **Content Fragment Component**
 
   * Instrumental to delivering the fragment in HTML and/or JSON format.
   * Required to [reference the fragment on a page](/help/sites-cloud/authoring/fragments/content-fragments.md).
@@ -274,7 +292,7 @@ The Content Fragments console is dedicated to managing, searching for, and creat
 
 The console can be directly accessed from the top level of the Global Navigation.
 
-![Global Navigation - Content Fragments console](assets/cf-managing-global-navigation.png)
+![Global Navigation - Content Fragments console](/help/sites-cloud/administering/content-fragments/assets/cf-managing-global-navigation.png)
 
 You can use the far left panel to select the resource type to view, browse and manage:
 
@@ -317,3 +335,56 @@ The WKND project includes:
 * Content Fragments (and other content) available under:
 
   * `.../assets.html/content/dam/wknd/en`
+
+## Best Practices {#best-practices}
+
+Content Fragments can be used to form complex structures. Adobe offers recommendations for best practices when defining, and using, both models and fragments.
+
+### Keep it Simple {#keep-it-simple}
+
+When modeling structured content in AEM, keep content structures as simple as possible to ensure strong system performance and streamlined governance.
+
+### Number of Models {#number-of-models}
+
+Create as many content models as needed, but no more.
+
+Too many models complicate governance and can slow down GraphQL queries. A small set of models, maximum of low tens, is usually sufficient. If you approach the high tens or more, reconsider your modeling strategy.
+
+### Nesting Models and Fragments (very important) {#nesting-models-and-fragments}
+
+Avoid deep or excessive nesting of content fragments using Content Fragment References, which allow fragments to reference other fragments, sometimes across multiple levels. 
+
+Heavy use of Content Fragment references can significantly impact system performance, UI responsiveness, and GraphQL query execution. Aim to keep nesting to no more than ten levels.
+
+### Number of Data Fields and Types per Model {#number-of-data-fields-and-types-per-model}
+
+Include only the data fields and types a model truly needs. 
+
+Overly complex models lead to overly complex fragments that can make authoring difficult and reduce editor performance.
+
+### Rich Text Fields {#rich-text-fields}
+
+Use Rich Text fields (the **Multi line text** Data Type) with consideration:
+
+* Fields
+
+  Limit the number of Rich Text fields per model. For performance reasons it is not recommended to have more than ten Rich Text fields in one model. If needed, it is recommended that you use [nested Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#using-references-to-form-nested-content).
+
+* Content
+
+  You should also limit the amount of text stored in each fragment, and the amount of HTML formatting. Very large rich-text content can negatively affect system performance.
+
+### Number of Variations {#number-of-variations}
+
+Create as many fragment variations as needed, but no more.
+
+Variations add processing time to a Content Fragment, on the author environment and upon delivery too. 
+
+It is recommended that you:
+
+* keep the number of variations to a manageable minimum 
+* do not exceed ten variations per Content Fragment
+
+### Test Before Production {#test-before-production}
+
+When in doubt, prototype your intended content structures before rolling them out to production. Early proof-of-concepts together with adequate testing, both technical and user acceptance, can help avoid issues later when facing deadlines in production.

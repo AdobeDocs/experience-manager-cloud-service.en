@@ -2,18 +2,15 @@
 title: Enabling attachments for an HTML5 form
 description: By default, the attachment support for HTML5 forms is disabled.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 68912260-179a-4d1b-b944-0a1777c021ac
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 ---
 # Enabling attachments for an HTML5 form {#enabling-attachments-for-an-html-form}
-
-<span class="preview"> The HTML5 Forms capability is offered as part of Early Access Program. To request access, send an email from your official (work) email ID to aem-forms-ea@adobe.com.
-</span>
 
 You can upload, preview, and submit attachments with HTML5 forms. By default, the attachment support is disabled. To enable the attachment support:
 

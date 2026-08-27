@@ -5,6 +5,7 @@ topic-tags: develop
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
 ---
 # Use [!DNL Adobe Sign] in an Adaptive Form {#using-adobe-sign-in-an-adaptive-form}
@@ -54,11 +55,11 @@ To configure [!DNL Adobe Sign] for an Adaptive Form:
 1. [Enable [!DNL Adobe Sign] for an Adaptive Form](#enableadobsignforanadaptiveform)
 1. [Add [!DNL Adobe Sign] fields to an Adaptive Form](#addadobesignfieldstoanadaptiveform)
 1. [Select [!DNL Adobe Sign] Cloud Service for an Adaptive Form](#select-adobe-sign-cloud-service-and-signing-order)
-
+1. [Set document expiration for an Adobe Sign agreement](#set-document-expiration-for-an-adobe-sign-agreement)
 1. [Add [!DNL Adobe Sign] recipient to an Adaptive Form](#addsignerstoanadaptiveform)
 1. [Select Submit Action for an Adaptive Form](#selectsubmitactionforanadaptiveform)
 
-![Recipient Details](assets/signer_details_new.png)
+![Electronic Signature configuration including Document Expiration (Days) and recipient settings](assets/signer_details_new.png)
 
 ### Enable [!DNL Adobe Sign] for an Adaptive Form  {#enableadobesign}
 
@@ -79,7 +80,7 @@ To create a sign-enabled Adaptive Form:
 
     1. Select the [configuration container](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) created while [integrating [!DNL Adobe Sign] with [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 
-      The configuration container contains the [!DNL Adobe Sign] Cloud Services configured for your environment. These services are available for selection in Adaptive Form editor.  
+      The configuration container contains the [!DNL Adobe Sign] Cloud Services configured for your environment. These services are available for selection in Adaptive Form builder.  
 
 1. In the **[!UICONTROL Form Model]** tab, select one of the following options:
 
@@ -118,8 +119,8 @@ To add fields to an Adaptive Form and customize various options related to these
 
    >[!NOTE]
    >
-   >  * Using [!DNL Adobe Sign] block is not mandatory to use [!DNL Adobe Sign] in an Adaptive Form. If you do not use [!DNL Adobe Sign] block and add fields for the recipients, then the default signature field is displayed at the bottom of the signing documents.
-   >  * Use [!DNL Adobe Sign] block only for those Adaptive Forms which automatically generate Document of Record. If you are using a custom XDP for generating Document of Record or a form template based Adaptive Form, [!DNL Adobe Sign] block is not supported.
+   > * Using [!DNL Adobe Sign] block is not mandatory to use [!DNL Adobe Sign] in an Adaptive Form. If you do not use [!DNL Adobe Sign] block and add fields for the recipients, then the default signature field is displayed at the bottom of the signing documents.
+   > * Use [!DNL Adobe Sign] block only for those Adaptive Forms which automatically generate Document of Record. If you are using a custom XDP for generating Document of Record or a form template based Adaptive Form, [!DNL Adobe Sign] block is not supported.
 
 
 1. Select the **[!UICONTROL Adobe Sign Block]** component and select the **[!UICONTROL Edit]** ![Edit](assets/Smock_Edit_18_N.svg) icon. It displays options to add fields and format appearance of a field.
@@ -184,6 +185,24 @@ To select a Cloud Service and order of signing:
 
 1. [Add recipients to an Adaptive Form](working-with-adobe-sign.md#addsignerstoanadaptiveform) and select the Done ![Save](assets/save_icon.svg) icon to save the changes.
 
+### Set document expiration for an Adobe Sign agreement {#set-document-expiration-for-an-adobe-sign-agreement}
+
+You can set an expiration deadline on Adobe Sign agreements so recipients must complete signing within a specified number of days. When a form is submitted, AEM Forms passes the configured value to Adobe Sign as `daysUntilSigningDeadline`.
+
+<span class="preview"> Setting document expiration for Adobe Sign agreements is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to this capability. </span>
+
+To set document expiration:
+
+1. In the Content browser, select **[!UICONTROL Form Container]**, and select the **[!UICONTROL Configure]** ![configure](assets/Smock_Wrench_18_N.svg) icon.
+1. In the properties browser, expand the **[!UICONTROL Electronic Signature]** accordion, and select the **[!UICONTROL Enable Adobe Sign]** option.
+1. In the **[!UICONTROL Document Expiration (Days)]** field, specify the number of days within which recipients must complete signing.
+
+1. Select the Done ![Save](assets/save_icon.svg) icon to save the changes.
+
+>[!NOTE]
+>
+> The **[!UICONTROL Document Expiration (Days)]** field is optional. If you leave it empty, the agreement does not expire.
+
 ### Add recipients to an Adaptive Form {#addsignerstoanadaptiveform}
 
 You can have one or multiple recipients for an Adobe Sign agreement. When you add a recipient, you can also configure authentication details for the recipient and select if the form filler and recipient are the same person. Perform the following steps to add and provide various details about a recipient:
@@ -211,7 +230,7 @@ You can have one or multiple recipients for an Adobe Sign agreement. When you ad
 
    >[!NOTE]
    >
-   >    * By default, the social identity-based authentication provides an option to authenticate using Facebook, Google, and LinkedIn. You can contact [!DNL Adobe Sign] support to enable other social authentication providers.
+   > * By default, the social identity-based authentication provides an option to authenticate using Facebook, Google, and LinkedIn. You can contact [!DNL Adobe Sign] support to enable other social authentication providers.
    >
 
     * **[!DNL Adobe Sign] fields to fill or sign:** Select [!DNL Adobe Sign] fields for the recipient. An Adaptive Form can have multiple [!DNL Adobe Sign] fields. You can choose to enable specific fields for a recipient. The field displays all the available [!DNL Adobe Sign] Blocks. When you select a block, all the fields of the block are selected. You can use the X icon to deselect a field.
@@ -291,7 +310,8 @@ After you, add [!DNL Adobe Sign] fields to an Adaptive Form, enable [!DNL Adobe 
 
 ```
 
-<!-- Remove when forms portal goes live
+<!--
+ Remove when forms portal goes live
 >[!NOTE]
 >
 >Data of the Adaptive Form is stored temporarily on Forms Portal. Adobe recommends using [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 

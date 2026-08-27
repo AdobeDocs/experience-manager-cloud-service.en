@@ -1,8 +1,9 @@
 ---
 title: '[!DNL Experience Manager Assets] integration with [!DNL Adobe Workfront]'
 description: Introduction to integration between [!DNL Assets] and [!DNL Workfront]
-role: Admin, Leader, Architect
+role: Admin, Leader, Developer
 feature: Workfront Integrations and Apps
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
 ---
 # [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] integration with [!DNL Adobe Workfront] {#assets-integration-overview}
@@ -44,3 +45,21 @@ For installations prior to June 2022, the following are some points to note for 
 * Adobe may release updates to [!DNL Adobe Workfront] and [!DNL Adobe Experience Manager] that make this connector redundant; if this occurs, customers may be required to transition from the use of this connector.
 * Adobe supports enhanced connector versions 1.7.4 and higher. Previous prerelease and custom versions are not supported. To check the enhanced connector version, see step 5(a) of [enhanced connector installation instructions](workfront-connector-install.md).
 * See [Partner certification exam for Workfront for Experience Manager Assets enhanced connector](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). For information about the exam, see [Exam Guide](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

@@ -4,8 +4,8 @@ description: Learn how to use the Forms Usage Insights dashboard to monitor and 
 role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
-hide: yes
-hidefromtoc: yes
+hide: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: f58aa2df-dfb6-4eb4-b20d-e81bb01be8a7
 ---
 # Using the value realization dashboard to analyze forms & documents usage trends

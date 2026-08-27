@@ -1,10 +1,9 @@
 ---
 title: Generating Access Tokens for Server-Side APIs (Legacy)
 description: Learn how to facilitate communication between a third-party server and AEM as a Cloud Service by generating a secure JWT Token
-hidefromtoc: yes
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Generating Access Tokens for Server-Side APIs (Legacy) {#generating-access-tokens-for-server-side-apis-legacy}
 
@@ -12,10 +11,12 @@ Some architectures rely on making calls to AEM as a Cloud Service from an applic
 
 The server-to-server flow is described below, along with a simplified flow for development. The AEM as a Cloud Service [Developer Console](development-guidelines.md#crxde-lite-and-developer-console) is used to generate tokens needed for the authentication process.
 
-<!-- ERROR: Not Found (HTTP error 404)
+<!--
+ ERROR: Not Found (HTTP error 404)
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html).
+-->
 
 ## The Server-to-server Flow {#the-server-to-server-flow}
 
@@ -57,14 +58,15 @@ The non-AEM application making calls to AEM should be able to access the credent
 
 Use the credentials to create a JWT token in a call to Adobe's IMS service to retrieve an access token, which is valid for 24 hours.
 
-The AEM CS Service Credentials may be exchanged for an access token using client libraries designed for this purpose. The client libraries are available from [Adobe's public GitHub repository](https://github.com/adobe/aemcs-api-client-lib), which contains more detailed guidance and latest information.
+The AEM CS Service Credentials may be exchanged for an access token using code samples designed for this purpose. Sample code is available from [Adobe's public GitHub repository](https://github.com/adobe/aemcs-api-client-lib), which contains code examples that you can copy and adapt for your own projects. Note that this repository contains sample code for reference and is not maintained as a production-ready library dependency.
 
 ```
 /*jshint node:true */
 "use strict";
 
 const fs = require('fs');
-const exchange = require("@adobe/aemcs-api-client-lib");
+// Sample code adapted from Adobe's GitHub repository
+const exchange = require("./your-local-aemcs-client"); // Copy and adapt the code from the GitHub repository
 
 const jsonfile = "aemcs-service-credentials.json";
 

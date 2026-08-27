@@ -100,7 +100,7 @@ Follow this section to learn about what is new and the updates for Cloud Manager
 
 ## What's New in [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-**Guided User Experience for Enhanced Smart Tags, powered by Adobe Sensei**
+**Guided User Experience for Enhanced Smart Tags, powered by Adobe AI**
 
 Enhanced Smart Tags allow organizations to train smart tagging models to recognize images based on customer-specific business tags in addition to generic smart tags.
 

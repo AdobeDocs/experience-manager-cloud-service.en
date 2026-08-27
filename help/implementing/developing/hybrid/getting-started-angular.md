@@ -3,8 +3,8 @@ title: Getting Started with SPAs in AEM Using Angular
 description: This article presents a sample SPA application, explains how it is put together, and lets you get up-and-running with your own SPA quickly using the Angular framework.
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
 feature: Developing
-role: Admin, Architect, Developer
-index: no
+role: Admin, Developer
+index: false
 ---
 
 # Getting Started with SPAs in AEM Using Angular {#getting-started-with-spas-in-aem-using-angular}

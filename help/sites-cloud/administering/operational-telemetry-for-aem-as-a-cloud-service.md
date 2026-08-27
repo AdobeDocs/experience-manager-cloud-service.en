@@ -1,6 +1,7 @@
 ---
 title: Operational Telemetry for AEM as a Cloud Service
 description: Learn about Operational Telemetry , an automated service that allows to monitor the client-side collection of data.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
@@ -49,9 +50,11 @@ As the decision of whether the data is collected, it is made on a page view by p
 
 Operational Telemetry automatically monitors client-side traffic. As an Adobe customer, you do not need to take any additional steps, as this service is seamlessly integrated into your existing setup. With Operational Telemetry service being generally available , you automatically benefit from this new feature. Operational Telemetry service does not expose any customer facing metrics today to monitor. We are working to deliver this functionality to you as soon as possible.
 
-<!-- Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
+<!--
+ Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
 
-If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99). -->
+If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99).
+-->
 
 ## How Adobe uses Operational Telemetry {#how-operational-telemetry-data-is-being-used}
 
@@ -75,7 +78,8 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
 ## FAQ {#faq}
 
-<!-- REMOVED THIS FAQ AS PER EMAIL REQUEST FROM SHWETA DUA, SEPTEMBER 4, 2024 TO THE DL-AEM-DOCS GROUP 
+<!--
+ REMOVED THIS FAQ AS PER EMAIL REQUEST FROM SHWETA DUA, SEPTEMBER 4, 2024 TO THE DL-AEM-DOCS GROUP 
 1. **Can customers integrate the Operational Telemetry service scripts with third-party systems like Dynatrace?**
 
    Yes.
@@ -99,7 +103,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    Opting out may mean missing out a chance to improve traffic engagement on your website. However, if you encounter any issues, you can disable Operational Telemetry by [setting an environment variable in Cloud Manager](/help/implementing/cloud-manager/environment-variables.md#add-variables) named `AEM_OPTEL_DISABLED` to the value `true`. If you want to enable Operational Telemetry again at a later point, simply remove that environment variable again.
 
-1. **Can I use a Content Security Policy with a nonce?
+1. **Can I use a Content Security Policy with a Nonce?**
 
    The support for Operational Telemetry contains an experimental feature to support a Content Security Policy with a nonce. This feature can be enabled by [setting an environment variable in Cloud Manager](/help/implementing/cloud-manager/environment-variables.md#add-variables) named `AEM_OPTEL_NONCE` to the value `true`. If you want to disable this again at a later point, simply remove that environment variable again.
 

@@ -2,7 +2,7 @@
 title: Page Editor and Universal Editor
 description: The Page Editor remains supported by Adobe, but the Universal Editor brings exciting possibilities to your new projects.
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
 ---
 # Page Editor and Universal Editor {#page-editor-universal-editor}
@@ -54,7 +54,7 @@ Because the feature gap between the two editors is constantly shrinking, be sure
 |[Generate Variations](/help/generative-ai/generate-variations.md)|[!BADGE Unavailable]{type=Negative}||[!BADGE Available]{type=Positive}|[Available as an extension](/help/implementing/universal-editor/extending.md)|
 |Insert new block|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
 |Reorder Block|[!BADGE Available]{type=Positive}|Possible with in-context drag-and-drop, but not in the "tree view" side panel|[!BADGE Available]{type=Positive}|Possible via drag-and-drop in the "tree view" side panel, but not yet in-context (planned)|
-|Cut/Copy-Paste Block|[!BADGE Available]{type=Positive}||[!BADGE Unavailable]{type=Negative}|Planned|
+|Cut/Copy-Paste Block|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
 |Apply Styles|[!BADGE Available]{type=Positive}|Styles can be applied to components using [the Style System.](/help/sites-cloud/authoring/page-editor/style-system.md)|[!BADGE Available]{type=Positive}|Styles can be applied using regular component (or Content Fragment) properties. The same Style picker is not available in the Universal Editor, however using a multiselect widget a very similar UX can be achieved.|
 |Apply Layout|[!BADGE Available]{type=Positive}|Sites must implement the [AEM Responsive Grid](/help/implementing/developing/introduction/responsive-design.md) to enable authors to resize components across three predefined breakpoints.|[!BADGE Available]{type=Positive}|Layouts can be applied using regular component (or Content Fragment) properties, however the Responsive Grid is not supported.|
 |Undo-Redo|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
@@ -68,10 +68,11 @@ Because the feature gap between the two editors is constantly shrinking, be sure
 |Device simulation|[!BADGE Available]{type=Positive}|[Configured devices can be simulated,](/help/sites-cloud/administering/responsive-layout.md) but the user cannot manually enter any different screen dimensions to simulate.|[!BADGE Available]{type=Positive}|[Any screen dimensions to simulate can be manually entered,](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator) but default breakpoints can not be configured.|
 |[Page locking](/help/sites-cloud/authoring/sites-console/managing-pages.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Respects lock status set in Sites Console with extension available to lock/unlock pages from the editor|
 |[Page properties](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Available from the Site Admin, with extension to also access the properties of pages from the editor|
-|Multi-field properties|[!BADGE Available]{type=Positive}||[!BADGE Unavailable]{type=Negative}|Planned|
+|Multi-field properties|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
 |[Remote DAM](/help/assets/dynamic-media-open-apis-overview.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
 |[Page versioning](/help/sites-cloud/authoring/sites-console/page-versions.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
-|[TimeWarp](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) and [Diff View](/help/sites-cloud/authoring/sites-console/page-diff.md)|[!BADGE Available]{type=Positive}||[!BADGE Unavailable]{type=Negative}|Planned|
+|[Diff View](/help/sites-cloud/authoring/sites-console/page-diff.md)|[!BADGE Available]{type=Positive}||[!BADGE Partially Available]{type=Caution}|Available for Edge Delivery Services use cases, but not headless|
+|[TimeWarp](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp)|[!BADGE Available]{type=Positive}||[!BADGE Unavailable]{type=Negative}|Planned, versions still available in the Sites Console|
 |View in admin|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Available as an extension for pages|
 |View page status|[!BADGE Available]{type=Positive}||[!BADGE Unavailable]{type=Negative}|Available in the Sites Console|
 |Extensibility|[!BADGE Available]{type=Positive}|As AEM overlays|[!BADGE Available]{type=Positive}|As clearly-defined extension points using the App Builder and very little AEM-specific knowledge|

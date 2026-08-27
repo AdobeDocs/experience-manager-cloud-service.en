@@ -3,6 +3,7 @@ title: AEM Forms as a Cloud Service Architecture for Adaptive Forms and Communic
 description: Understand the architecture of [!DNL AEM Forms] as a Cloud Service to learn about the scalability, resilience, and performance aspects of the platform.
 role: Admin, Developer, User
 feature: Adaptive Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
 ---
 # [!DNL AEM] Forms as a Cloud Service architecture {#architecture}
@@ -23,6 +24,18 @@ AEM Forms as a Cloud Service supports two major use cases: Digital Enrollment an
 ## Forms Communications
 
 ![Forms-Communication](assets/forms-cloud-service-architecture-forms-communications.svg)
+
+## Applicability and use cases
+
+### Insurance
+
+## Can AEM Forms handle insurance operations at scale?
+
+Yes. When deployed using recommended architectures on Adobe Managed Services or private cloud, AEM Forms supports high-volume form submissions and enterprise-scale workloads.
+
+## Is AEM Forms secure for insurance data?
+
+Yes. AEM Forms supports secure data transmission, controlled access, and enterprise authentication mechanisms, making it suitable for handling sensitive insurance data.
 
 ## Components
 
@@ -71,8 +84,10 @@ Reverse Replication is not available on AEM as a Cloud Service to send content/d
 
 Adobe Sign is a cloud-based e-signature service that allows the user to send, sign, track, and manage signature processes using a browser or mobile device. You can integrate Adobe Sign with an adaptive form to automate signing workflows, simplify single and multi-signature processes, and to electronically sign adaptive forms.
 
-<!-- **PDF Service API**
-Adobe’s PDF Services API lets create, combine, export, and extract data from PDFs through powerful and flexible cloud-based APIs. -->
+<!--
+ **PDF Service API**
+Adobe’s PDF Services API lets create, combine, export, and extract data from PDFs through powerful and flexible cloud-based APIs.
+-->
 
 ### Customer Managed Storage
 
@@ -118,7 +133,7 @@ Adaptive Forms enable customers to author web-friendly reflowable web forms and 
 +++
 
 +++Automated Forms Conversion Service (AFCS)
-Automated Forms Conversion service helps accelerate digitization and modernization of data capture experience through automated conversion of PDF forms to adaptive forms. The service, powered by Adobe Sensei, automatically converts your PDF forms to device-friendly, responsive, and HTML5-based adaptive forms. While using the existing investments in PDF Forms and XFA, the service also applies appropriate validations, styling, and layout to adaptive form fields during conversion.
+Automated Forms Conversion service helps accelerate digitization and modernization of data capture experience through automated conversion of PDF forms to adaptive forms. The service, powered by Adobe AI, automatically converts your PDF forms to device-friendly, responsive, and HTML5-based adaptive forms. While using the existing investments in PDF Forms and XFA, the service also applies appropriate validations, styling, and layout to adaptive form fields during conversion.
 
 +++
 
@@ -144,7 +159,8 @@ A Document of Record is a PDF version of a form. It provides an ability to keep 
 
 ## Terminologies
 
-<!-- ## Cloud Manager{#cloud-manager}
+<!--
+ ## Cloud Manager{#cloud-manager}
 
 Cloud Manager is an essential component to [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=en). Each new tenant of the [!DNL AEM Forms] as a Cloud Service is first provisioned for Cloud Manager access. Cloud Manager is the single-entry point for the operations and developer persona of our customers. It is the place from where the AEM programs and environments can be managed. Cloud Manager has evolved as a self-service portal where the main components of the AEM as a Cloud Service can be created and configured:
 
@@ -181,7 +197,8 @@ Also, one of the most common requirements for developers is quick access to the 
 * Search index definitions
 * ACLs and permissions
 * Service users and user groups
-Set up your development environment, [Configure your CI/CD Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html), and learn to [deploy your code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) on the environment. -->
+Set up your development environment, [Configure your CI/CD Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html), and learn to [deploy your code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) on the environment.
+-->
 
 ### Adaptive Form Authoring {#local-development}
 

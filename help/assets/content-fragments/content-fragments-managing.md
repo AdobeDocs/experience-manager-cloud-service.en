@@ -1,6 +1,7 @@
 ---
 title: Managing Content Fragments (Assets - Content Fragments)
 description: Learn how to use the Assets console to manage your AEM Content Fragments, as either the basis of your headless content or for page authoring.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
@@ -21,6 +22,9 @@ The [Content Fragment Editor](#opening-the-fragment-editor) provides various [mo
 * [View the Structure Tree](/help/assets/content-fragments/content-fragments-structure-tree.md)
 * [Preview the JSON representation](/help/assets/content-fragments/content-fragments-json-preview.md)
 
+>[!NOTE]
+>
+>Be aware of the [Best Practices](/help/assets/content-fragments/content-fragments.md#best-practices) when working with your Content Fragment Models and Content Fragments.
 
 >[!NOTE]
 >
@@ -130,7 +134,7 @@ Select the fragment to reveal the toolbar with applicable actions:
 
 >[!NOTE]
 >
->Many of these are [standard actions for Assets](/help/assets/manage-digital-assets.md) and/or the [AEM desktop app](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
+>Many of these are [standard actions for Assets](/help/assets/manage-digital-assets.md) and/or the [AEM desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html).
 
 ## Opening the Fragment Editor {#opening-the-fragment-editor}
 
@@ -215,7 +219,8 @@ Some features in the top toolbar are available from multiple modes:
   * **[Manage Publication](#publishing-and-referencing-a-fragment)**
 
 <!--
-This updates any page references and ensures that the Dispatcher is flushed as required. -->
+This updates any page references and ensures that the Dispatcher is flushed as required.
+-->
 
 ## Save, Close and Versions {#save-close-and-versions}
 

@@ -5,7 +5,9 @@ exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
+recommendations: noDisplay, noCatalog
 ---
+
 # Grant Access to the Front-End Developer {#grant-fed-access}
 
 {{traditional-aem}}

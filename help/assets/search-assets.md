@@ -5,6 +5,7 @@ contentOwner: AG
 mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
 ---
 
@@ -28,7 +29,7 @@ Asset search in AEM supports the following use cases and this article describes 
 | [Search rank and boosting](#searchrank) | [Custom predicates](#custompredicates) | [Smart collections](#collections) |
 | [Advanced search: filtering and scope of search](#scope) | | [Understand and troubleshoot unexpected results](#unexpected-results) |
 | [Search from other solutions and apps](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager desktop app](#desktop-app)</li><li>[Adobe Stock images](#adobe-stock)</li><li>[Dynamic Media assets](#search-dynamic-media-assets)</li></ul> | | |
-| [Asset selector](#asset-picker) | | |
+| [Content Advisor](#asset-picker) | | |
 | [Limitations](#limitations) and [Tips](#tips) | | |
 | [Illustrated examples](#samples)| | |
 
@@ -222,7 +223,8 @@ You can search assets based on exact values of metadata fields, such as, title, 
 
 The properties `path`, `limit`, `size`, and `orderby` cannot be combined using `OR` operator with any other property.
 
-<!-- TBD: Where are the limit, size, orderby properties defined?
+<!--
+ TBD: Where are the limit, size, orderby properties defined?
 -->
 
 The keyword for a user-generated property is its field label in the property editor in lowercase, with spaces removed.
@@ -243,7 +245,7 @@ Here are some examples of search formats for complex queries:
 
 ### Search assets from Adobe Asset Link panel {#aal}
 
-Using Adobe Asset Link, the creative professionals can now access content stored in [!DNL Experience Manager Assets], without leaving the supported Adobe Creative Cloud apps. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in the [!DNL Adobe Creative Cloud] apps: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign]. Asset Link also allows users to search visually similar results. The visual search display results are powered by Adobe Sensei's machine learning algorithms and help users find aesthetically similar images. See [search and browse assets](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) using Adobe Asset Link.
+Using Adobe Asset Link, the creative professionals can now access content stored in [!DNL Experience Manager Assets], without leaving the supported Adobe Creative Cloud apps. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in the [!DNL Adobe Creative Cloud] apps: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign]. Asset Link also allows users to search visually similar results. The visual search display results are powered by Adobe AI machine learning algorithms and help users find aesthetically similar images. See [search and browse assets](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) using Adobe Asset Link.
 
 ### Search assets in [!DNL Experience Manager] desktop app {#desktop-app}
 
@@ -269,31 +271,25 @@ Authors can use Content Finder to search the DAM repository for the relevant ass
 
 [!DNL Experience Manager] search capability supports searching for collections and searching for assets within a collection. See [search collections](/help/assets/manage-collections.md).
 
-## Asset selector {#asset-picker}
+## Content Advisor {#asset-picker}
 
-[AEM Asset Selector](/help/assets/overview-asset-selector.md) (called asset picker in prior versions of [!DNL Adobe Experience Manager]) lets you search, filter, and browse the DAM assets in a special way. Asset selector is available at `https://[aem_server]:[port]/aem/assetpicker.html`. You can fetch the metadata of assets that you select using the asset selector. You can launch it with supported request parameters, such as asset type (image, video, text) and selection mode (single or multiple selections). These parameters set the context of the asset selector for a particular search instance and remain intact throughout the selection.
+[Content Advisor](/help/assets/integrate-adobe-non-adobe-applications.md) (called asset picker in prior versions of [!DNL Adobe Experience Manager]) lets you search, filter, and browse the DAM assets in a special way. Content Advisor is available at `https://[aem_server]:[port]/aem/assetpicker.html`. You can fetch the metadata of assets that you select using the Content Advisor. You can launch it with supported request parameters, such as asset type (image, video, text) and selection mode (single or multiple selections). These parameters set the context of the Content Advisor for a particular search instance and remain intact throughout the selection.
 
-The asset selector uses the HTML5 `Window.postMessage` message to send data for the selected asset to the recipient. It works only in the browse mode and only with the Omnisearch result page.
+Content Advisor uses the HTML5 `Window.postMessage` message to send data for the selected asset to the recipient. It works only in the browse mode and only with the Omnisearch result page.
 
-Pass the following request parameters in a URL to launch the asset selector in a particular context:
+Pass the following request parameters in a URL to launch Content Advisor in a particular context:
 
 | Name | Values | Example | Purpose |
 |---|---|---|---|
-| resource suffix (B) | Folder path as the resource suffix in the URL: [https://localhost:4502/aem/assetpicker.html/&lt;folder_path&gt;](https://localhost:4502/aem/assetpicker.html) | To launch the asset selector with a particular folder selected, for example, with the folder `/content/dam/we-retail/en/activities` selected, the URL should be of the form: `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | If you require a particular folder to be selected when the asset selector is launched, passed it as a resource suffix. |
-| `mode` | single, multiple | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | In multiple mode, you can select several assets simultaneously using the asset selector. |
-| `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Use these parameters to open the asset selector as Granite Dialog. This option is only applicable when you launch the asset selector through Granite Path Field, and configure it as pickerSrc URL. |
-| `root` | &lt;folder_path&gt; | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Use this option to specify the root folder for the asset selector. In this case, the asset selector lets you select only child assets (direct/indirect) under the root folder. |
-| `viewmode` | search | | To launch the asset selector in search mode, with `assettype` and `mimetype` parameters. |
+| resource suffix (B) | Folder path as the resource suffix in the URL: [https://localhost:4502/aem/assetpicker.html/&lt;folder_path&gt;](https://localhost:4502/aem/assetpicker.html) | To launch Content Advisor with a particular folder selected, for example, with the folder `/content/dam/we-retail/en/activities` selected, the URL should be of the form: `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | If you require a particular folder to be selected when the Content Advisor is launched, passed it as a resource suffix. |
+| `mode` | single, multiple | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | In multiple mode, you can select several assets simultaneously using the Content Advisor. |
+| `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Use these parameters to open the Content Advisor as Granite Dialog. This option is only applicable when you launch the Content Advisor through Granite Path Field, and configure it as pickerSrc URL. |
+| `root` | &lt;folder_path&gt; | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Use this option to specify the root folder for the Content Advisor. In this case, the Content Advisor lets you select only child assets (direct/indirect) under the root folder. |
+| `viewmode` | search | | To launch the Content Advisor in search mode, with `assettype` and `mimetype` parameters. |
 | `assettype` | Images, documents, multimedia, archives. | <ul><li>`https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives` </li></ul> | Use the option to filter asset types based on the value provided. |
 | `mimetype` | MIME type (`/jcr:content/metadata/dc:format`) of an asset (wildcard also supported). | <ul><li>`https://localhost:4502/aem/assetpicker.html?mimetype=image/png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png`</li></ul> | Use it to filter assets based on MIME type. |
 
-To access the asset selector interface, go to `https://[aem_server]:[port]/aem/assetpicker`. Navigate to the desired folder, and select one or more assets. Alternatively, search for the desired asset from the Omnisearch box, apply filter as required, and then select it.
-
-![Browse and select asset in the asset selector](assets/select-asset.png)
-
-<!--![Browse and select asset in the asset selector](assets/assetpicker.png)-->
-
-*Figure: Browse and select asset in the asset selector.*
+To access the Content Advisor interface, go to `https://[aem_server]:[port]/aem/assetpicker`. Navigate to the desired folder, and select one or more assets. Alternatively, search for the desired asset from the Omnisearch box, apply filter as required, and then select it.
 
 ## Limitations {#limitations}
 
@@ -324,7 +320,7 @@ The search functionality can have performance limitations in the following scena
 * Full-text search supports operators such as `-` and `^`. To search these letters as string literals, enclose the search expression in double quotes. For example, use `"Notebook - Beauty"` instead of `Notebook - Beauty`.
 * If the search results are too many, limit the [scope of search](#scope) to zero-in on the desired assets. It works best when you have some idea of how to better look for the desired assets, for example, specific file type, specific location, specific metadata, and so on.
 
-* **Tagging**: Tags help you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. [!DNL Experience Manager] offers methods to automatically tag assets using Adobe Sensei's artificially intelligent services that keep getting better at tagging your assets with usage and training. When you search for assets, the smart tags are factored in. It works alongside the in-built search functionality. See [search behavior](#searchbehavior). To optimize the order in which the search results are displayed, you can [boost the search ranking](#searchrank) of a few select assets.
+* **Tagging**: Tags help you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. [!DNL Experience Manager] offers methods to automatically tag assets using Adobe AI services that keep getting better at tagging your assets with usage and training. When you search for assets, the smart tags are factored in. It works alongside the in-built search functionality. See [search behavior](#searchbehavior). To optimize the order in which the search results are displayed, you can [boost the search ranking](#searchrank) of a few select assets.
 
 * **Indexing**: Only indexed metadata and assets are returned in the search results. For better coverage and performance, ensure proper indexing and follow the best practices. See [indexing](#searchindex).
 
@@ -367,44 +363,54 @@ Use double quotations around keywords to find assets that contain the exact phra
 
 *Figure: Use of dash to search for assets not containing an excluded keyword.*
 
+## AI Search {#ai-search}
+
+AI Search is an advanced search capability that understands the meaning and intent behind a user's query rather than relying on exact keyword matches. It uses artificial intelligence (AI) and machine learning to deliver more accurate and context-aware results.
+
+Unlike traditional keyword-based search, which looks for exact terms, AI Search interprets relationships between words, concepts, and user intent. This ensures that users find what they are looking for—even if their query is phrased differently, contains typos, or is in another language.
+
+>[!IMPORTANT]
+>
+>If you require searching for assets using natural language with prompts such as, `find me approved jpeg assets about coffee`, Adobe recommends to use Content Discovery Agent. For more information on how to access the agent, sample prompts, and so on, see [Content Discovery Agent](/help/ai-in-aem/agents/content-advisor/discovery.md#use-cases-prompts).
+
+Some if its key benefits include:
+
+* **Multilingual support**: Search across multiple languages without requiring exact translations. Users can find relevant content regardless of their query language.
+
+* **Handles misspellings**: Interprets typos and spelling errors, ensuring accurate results even with imperfect input.
+
+* **Understands synonyms**: Delivers results for related terms and phrases, so users do not need to guess the right keyword.
+
+* **Context-Aware search**: Recognizes the intent behind a query, not just the exact words.
+
+### Examples for AI Search {#examples-ai-search}
+
+**Example Prompt**: *Woman drinking coffee*
+
+The traditional keyword-based search looks for exact matches of asset metadata, such as `Woman`, `drinking`, `Coffee`, and returns assets that include all these terms in the metadata.
+
+However, AI Search matches similar words such as `Girl`, `Lady` in the case of `Woman` and `Cappuccino` and `Latte` in the case of `Coffee`.
+
+Similarly, you can specify this prompt in Spanish or misspell `Woman` as `Wman` and still get the same results.
+
+
+### Enable or disable AI search in Admin view {#enable-disable-ai-search}
+
+Execute the following steps to enable or disable AI Search in Admin view:
+
+1. Navigate to **[!UICONTROL Tools]** >> **[!UICONTROL Assets]** >> **[!UICONTROL Assets Configurations]** >> **[!UICONTROL Assets Omnisearch Configuration]**.
+
+1. In the **[!UICONTROL Search]** section, select **[!UICONTROL AI Search]** to enable AI Search or **[!UICONTROL Keyword]** to disable it.
+
+   ![Enable or disable AI Search](/help/assets/assets/enable-ai-search-admin-view.png)
+
+1. Click **[!UICONTROL Save]**.
+
 ## Configuration and administration tasks related to search functionality {#configadmin}
 
 ### Search index configurations {#searchindex}
 
 Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [indexing](/help/operations/indexing.md).
-
-### Visual or similarity search {#configvisualsearch}
-
-Visual search uses Smart Tags. After configuring smart tagging functionality, follow these steps.
-
-1. In [!DNL Experience Manager] CRXDE, in `/oak:index/lucene` node, add the following properties and values and save the changes.
-
-    * `costPerEntry` property of type `Double` with the value `10`.
-
-    * `costPerExecution` property of type `Double` with the value `2`.
-
-    * `refresh` property of type `Boolean` with the value `true`.
-
-   This configuration allows searches from the appropriate index.
-
-1. To create Lucene index, in CRXDE, at `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`, create node named `imageFeatures` of type `nt-unstructured`. In `imageFeatures` node,
-
-    * Add `name` property of type `String` with the value `jcr:content/metadata/imageFeatures/haystack0`.
-
-    * Add `nodeScopeIndex` property of type `Boolean` with the value of `true`.
-
-    * Add `propertyIndex` property of type `Boolean` with the value of `true`.
-
-    * Add `useInSimilarity` property of type `Boolean` with the value `true`.
-
-   Save the changes.
-
-1. Access `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` and add `similarityTags` property of type `Boolean` with the value of `true`.
-1. Apply Smart Tags to the assets in your [!DNL Experience Manager] repository. See [how to configure smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring).
-1. In CRXDE, in `/oak-index/damAssetLucene` node, set the `reindex` property to `true`. Save the changes.
-1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save the changes.
-
-For related information, see [understand smart tags in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html) and [how to manage smart tags](/help/assets/smart-tags.md).
 
 ### Mandatory metadata {#mandatorymetadata}
 
@@ -530,20 +536,24 @@ Navigate to the folder location for assets displayed in the search results. Sele
 
 **See also**
 
-* [Search best practices](search-best-practices.md) 
-* [Translate Assets](translate-assets.md)
-* [Assets supported file formats](file-format-support.md)
-* [Connected assets](use-assets-across-connected-assets-instances.md)
-* [Asset reports](asset-reports.md)
-* [Metadata schemas](metadata-schemas.md)
-* [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata.md)
-* [Search facets](search-facets.md)
-* [Manage collections](manage-collections.md)
-* [Bulk metadata import](metadata-import-export.md)
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] search implementation guide](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html)
 >* [Advanced configuration to boost search results](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)
+

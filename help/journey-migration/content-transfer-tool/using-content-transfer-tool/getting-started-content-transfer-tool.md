@@ -143,8 +143,10 @@ To populate the migration set you created in the Cloud Acceleration Manager, ins
       >Starting from CTT Version (3.0.24), new features have been included to the Content Transfer Tool, enhancing the process of including and excluding paths. Previously, paths had to be selected one by one, which was tedious and time-consuming. Now, users can include paths directly from the UI or upload a CSV file according to their preference.  The CSV file must have one path per line, and no commas.
 
    1. **Paths to be included**: Use path browser to select paths which need to be migrated. Path picker accepts input by typing or by selection. Users can select only one option for including paths: either from the UI or by uploading a CSV file.
+
       >[!IMPORTANT]
       >Following paths are restricted while creating a migration set:
+      >
       >* `/apps`
       >* `/libs`
       >* `/home`
@@ -174,7 +176,8 @@ To populate the migration set you created in the Cloud Acceleration Manager, ins
 
 1. Click **Save** after you populate all the fields in the **Create Migration Set** details screen.
 
-<!-- 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
+<!--
+ 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt07.png)
 
@@ -186,7 +189,8 @@ To populate the migration set you created in the Cloud Acceleration Manager, ins
 
 1. Select a migration set and click **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png) -->
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
+   -->
 
 ### Determining migration set size {#migration-set-size}
 
@@ -214,13 +218,15 @@ Follow the steps below to run a size check:
  
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/checkSizeAfterFinished.png)
    
- 1. If the **Check Size** results indicate that either there is insufficient disk space, or the migration set exceeds product limits, or both, a **WARNING** status is displayed.
+1. If the **Check Size** results indicate that either there is insufficient disk space, or the migration set exceeds product limits, or both, a **WARNING** status is displayed.
 
-<!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
+<!--
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
    
    Below is an example of **Check Size** results with warnings.
  
-   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png) -->
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png)
+   -->
 
 
 ## What's Next {#whats-next}

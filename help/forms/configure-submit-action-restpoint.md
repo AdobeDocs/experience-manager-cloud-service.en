@@ -4,11 +4,10 @@ description: Discover the steps to set up Rest Endpoint when submitting an Adapt
 keywords: AEM Forms REST Endpoint, Submit to REST Endpoint, Post Data to REST URL, Configure REST Endpoint Action
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
 ---
-# Configure an Adaptive Form for REST Endpoint submit action
-
-<span class="preview"> The capability to specify the REST Endpoint using configuration  is an Early Adopter Program and it is applicable to Core Components and Edge Delivery Services Forms only. You can write to `aem-forms-ea@adobe.com` from your official email id to join the early adopter program and request access to the capability. </span>
+# Configure an Adaptive Form for REST Endpoint submit action 
 
 Use the **[!UICONTROL Submit to REST Endpoint]** action to post the submitted data to a REST URL. The URL can be of an internal (the server on which the form is rendered) or an external server.
 
@@ -113,7 +112,7 @@ To configure submit action based on Swagger Open API specification for Adaptive 
 
     +++Configuration
 
-    This option allows you to add a predefined HTTP configuration managed via AEM's Configuration Browser. You can select the Configuration created for your Service Rest Endpoint Authentication Type and the Content Types. To know more about Authentication Type and the Content Types, visit [configure data sources](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
+    This option allows you to add a predefined HTTP configuration managed via AEM's Configuration Browser. You can select the Configuration created for your Service Rest Endpoint Authentication Type and the Content Types. To know more about Authentication Type and the Content Types, visit [configure data sources](/help/forms/configure-data-sources.md#configure-restful-services-service-endpoint). To route the same form to a different endpoint in each environment, see [Configure environment-specific REST endpoints for the same Adaptive Form](/help/forms/configure-environment-specific-rest-endpoints.md).
 
     +++
 
@@ -125,11 +124,14 @@ To configure submit action based on Swagger Open API specification for Adaptive 
 
 1. Open the Adaptive Form for editing.
 1. Click the **Edit Form Properties** extension on the editor. 
+
     The **Form Properties** dialog appears.
+
     >[!NOTE]
     >
     > * If you do not see the **Edit Form Properties** icon in your Universal Editor interface, enable the **Edit Form Properties** extension in the Extension Manager. 
     > * Refer to the [Extension Manager Feature Highlights](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) article to learn how to enable or disable extensions in the Universal Editor.
+
 1. Click **Submission** tab and select **[!UICONTROL Submit to Rest endpoint]** submit action.
 
     To post data to an internal server, provide path of the resource. The data is posted the path of the resource. For example, `/content/restEndPoint`. For such post requests, the authentication information of the submit request is used.
@@ -170,7 +172,7 @@ To configure submit action based on Swagger Open API specification for Adaptive 
 
     +++Configuration
 
-    This option allows you to add a predefined HTTP configuration managed via AEM's Configuration Browser. You can select the Configuration created for your Service Rest Endpoint Authentication Type and the Content Types. To know more about Authentication Type and the Content Types, visit [configure data sources](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
+    This option allows you to add a predefined HTTP configuration managed via AEM's Configuration Browser. You can select the Configuration created for your Service Rest Endpoint Authentication Type and the Content Types. To know more about Authentication Type and the Content Types, visit [configure data sources](/help/forms/configure-data-sources.md#configure-restful-services-service-endpoint). To route the same form to a different endpoint in each environment, see [Configure environment-specific REST endpoints for the same Adaptive Form](/help/forms/configure-environment-specific-rest-endpoints.md).
 
     +++
 
@@ -178,7 +180,8 @@ To configure submit action based on Swagger Open API specification for Adaptive 
 
 >[!ENDTABS]
 
-<!-- ### Configure submit action based on Service Rest Endpoint {#config-service-endpoint-auth}
+<!--
+ ### Configure submit action based on Service Rest Endpoint {#config-service-endpoint-auth}
 
 
 
@@ -190,14 +193,14 @@ To configure submit action based on Swagger Open API specification for Adaptive 
 6. Specify the REST endpoint URL.
 7. Select the Configuration you have created for your Service Rest Endpoint Authentication Type and the Content Types. To know more about Authentication Type and the Content Types, visit [configure data sources](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
     ![Configuring Rest Endpoint](assets/rest-service-endpoint-config.png)
-8. Click Done. -->
-
-
+8. Click Done.
+-->
 
 ## Best Practices
 
 * When posting data to an external server, make sure the URL is secure, and configure the path to handle the POST request anonymously to protect sensitive information.
 * To pass the fields as parameters in a REST URL, all the fields must have different element names, even if the fields are placed on different panels.
+* To use a different REST endpoint URL in staging and production without changing the form, see [Configure environment-specific REST endpoints for the same Adaptive Form](/help/forms/configure-environment-specific-rest-endpoints.md).
 
 ## Related Articles
 

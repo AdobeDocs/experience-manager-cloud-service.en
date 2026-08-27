@@ -1,17 +1,14 @@
 ---
 title: Customizing error messages for HTML5 forms
 description: Learn how to customize the display of error messages for HTML5 forms including how to change their position and appearance.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: c4ae53a3-8de1-4985-a73e-829749de9814
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 ---
 # Customizing error messages for HTML5 forms {#customizing-error-messages-for-html-forms}
-
-<span class="preview"> The HTML5 Forms capability is offered as part of Early Access Program. To request access, send an email from your official (work) email ID to aem-forms-ea@adobe.com.
-</span>
 
 In HTML5 forms, out of the box, the error messages, and warnings have a fixed position and appearance (font and color), the error is displayed only for a selected field, and only one error is displayed.
 

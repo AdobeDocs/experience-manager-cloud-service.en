@@ -6,22 +6,14 @@ description: HTML5 forms is deployed as a package within the embedded AEM instan
 
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-
-docset: aem65
-
 feature: HTML5 Forms,Mobile Forms
 exl-id: ed8349a1-f761-483f-9186-bf435899df7d
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-hide: yes
-hidefromtoc: yes
+hide: true
 ---
 # Architecture of HTML5 forms{#architecture-of-html-forms}
-
-<span class="preview"> The HTML5 Forms capability is offered as part of Early Access Program. To request access, send an email from your official (work) email ID to aem-forms-ea@adobe.com.
-</span>
 
 ## Architecture {#architecture}
 

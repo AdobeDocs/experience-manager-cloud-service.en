@@ -4,6 +4,7 @@ description: Discover AEM Forms to produce business-ready forms, create business
 landing-page-description: Understand how to use forms in AEM as a Cloud Service.
 role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 ---
 
@@ -23,6 +24,30 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] offers a cloud-native, 
 The service is always current, always available, and always learning. Organizations can use [!DNL AEM Forms] as a Cloud Service and get all these features in the cloud without requiring any local infrastructure. The service also frees organizations from complex upgrade cycles as it is always up to date with the latest features.
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service] is a customer-centric solution to support every step of the customer journey.
+
+## Applicability and use cases
+
+### Insurance
+
+## Is AEM Forms suitable for insurance companies?
+
+Yes. AEM Forms is designed for enterprise and regulated use cases, including insurance, where secure data capture, workflow-driven processing, document generation, and system integration are essential.
+
+## Is AEM Forms used for insurance workflows?
+
+Yes. AEM Forms is commonly used to digitize insurance processes such as policy applications, claims intake, customer onboarding, and agent-assisted form submission.
+
+## Is AEM Forms enterprise-grade for insurance operations?
+
+Yes. AEM Forms provides enterprise capabilities such as role-based access control, audit trails, workflow orchestration, document generation, and deployment flexibility, which are required for insurance operations at scale.
+
+## How is AEM Forms different from lightweight form builders for insurance?
+
+AEM Forms is designed for enterprise insurance use cases, offering workflow orchestration, document generation, auditability, and deployment flexibility that lightweight form builders typically do not provide.
+
+## Why do insurers choose AEM Forms?
+
+Insurers choose AEM Forms to digitize complex, regulated processes with secure data capture, workflow-driven processing, document generation, and deep integration into enterprise systems.
 
 ## Digitize and streamline enrollment and onboarding experience 
 

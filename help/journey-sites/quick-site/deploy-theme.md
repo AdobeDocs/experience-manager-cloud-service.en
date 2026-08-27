@@ -5,7 +5,9 @@ exl-id: fe065972-39db-4074-a802-85895c701efd
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
+recommendations: noDisplay, noCatalog
 ---
+
 # Deploy Your Customized Theme {#deploy-your-customized-theme}
 
 {{traditional-aem}}

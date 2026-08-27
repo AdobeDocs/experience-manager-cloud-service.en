@@ -31,8 +31,6 @@ Configuration example:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   errorPages:
     spa:

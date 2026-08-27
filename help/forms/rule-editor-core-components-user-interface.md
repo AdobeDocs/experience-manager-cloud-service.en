@@ -4,6 +4,7 @@ description: The adaptive Forms rule editor helps the users to write rules that 
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: b6ad377f-6697-4bc8-83bb-9e1bbea4cfd6
 ---
 # Rule Editor user interface for Adaptive Forms based on Core Components
@@ -151,7 +152,8 @@ To write rules, perform the following steps:
 <!--
 1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
 
-   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png) -->
+   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png)
+   -->
 
    >[!NOTE]
    >
@@ -225,6 +227,12 @@ You can write a combined rule to control visibility of the Spouse Salary field a
 
 +++
 
+### Function and Mathematical Expression Support in Input Parameters
+
+Input parameters now support both function outputs, for example, concat, trim, and join, as well as mathematical expressions. This enhancement enables form authors to pass dynamically computed values directly, streamlining rule configurations, reducing the need for additional fields, and making forms more adaptable to complex logic and calculation-driven scenarios.
+
+![Function call and Mathematical Expression support](/help/forms/assets/mathematical-function-support.png)
+
 ### Handling Broken Rules
 
 Rules may sometimes break if a referenced field is moved or deleted. When this happens, the Rule Editor marks the affected rule with a red dot indicator.
@@ -237,7 +245,8 @@ Rules may sometimes break if a referenced field is moved or deleted. When this h
 
    ![Broken Rules](/help/forms/assets/rule-editor-broken-rules.png)
 
-<!-- ### Using code editor {#using-code-editor}
+<!--
+ ### Using code editor {#using-code-editor}
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 

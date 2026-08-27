@@ -27,7 +27,7 @@ CIF provides out-of-the-box commerce core components that reduce the need for cu
 
 The CIF add-on brings product context into Experience Manager and provides authoring tools such as a product console and product/category pickers that empower the marketer to create and deliver shoppable experiences in Experience Manager without relying on the developer. Advantages include:
 
-* [Compelling expereinces](#experiences)
+* [Compelling experiences](#experiences)
 * [Faster time-to-value](#ttv)
 * [Robust integrations](#integrations)
   

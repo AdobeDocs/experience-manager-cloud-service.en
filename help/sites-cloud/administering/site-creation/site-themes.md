@@ -3,6 +3,7 @@ title: Site Themes
 description: Learn how AEM site themes can be used to customize the style and design of your site for traditional AEM authoring projects with publish delivery.
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 solution: Experience Manager Sites
 ---

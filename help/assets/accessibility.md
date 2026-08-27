@@ -3,7 +3,7 @@ title: Accessibility in [!DNL Experience Manager Assets]
 description: Know how accessibility features in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] help users with disabilities.
 contentOwner: AG
 feature: Accessibility, Asset Management
-role: User, Architect, Leader
+role: User, Developer, Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
 ---
 <!--
@@ -37,7 +37,8 @@ Possible topics to cover in this article are below.
 
 To read a report with details of the level of compliance, see [Accessibility conformance report](https://www.adobe.com/accessibility/compliance.html) (ACR) page.
 
-<!-- TBD: Add link after release.
+<!--
+ TBD: Add link after release.
 To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dynamic Media]](). 
 -->
 
@@ -64,7 +65,8 @@ The core features in [!DNL Assets] are more accessible than before and are regul
 
 Many user interface elements that are clickable or actionable with a pointer can also be engaged with using keyboard. Using a keyboard, users can focus upon UI elements and take an appropriate action. Users can directly use keyboard shortcuts to trigger a command or an action without having to focus on UI elements and trigger it using keyboard. For example, users can open the timeline of an asset in the left side by browsing to the user interface control using a keyboard and selecting `Return`, and selecting `Alt + 2` keyboard shortcut.
 
-<!-- TBD items:
+<!--
+ TBD items:
 
 * The button/menu to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into 'basic handling' info aka article to 'understand and use the workspace'.
 * How to open and browse through the profile pop-up dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into 'basic handling' info aka article to 'understand and use the workspace'. What about setting preferences and impersonating a user?
@@ -107,7 +109,8 @@ After logging in, DAM users can navigate within [!DNL Assets] user interface usi
 
 If a user expands the help or user profile option from the menu, the appropriate option or status are announced by screen reader. If a user expands the user profile option, the available options can be selected using a keyboard. For example, an administrator can impersonate a different user. If a user searches for a string from the [!UICONTROL Help] option, a narrator announces "Searching Help" to indicate that a search is in progress.
 
-<!-- TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
+<!--
+ TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
 
 ![Keyboard navigation of top options in [!DNL Experience Manager] user interface](assets/keyboard-navigation-in-aem.gif)
 
@@ -118,7 +121,8 @@ If a user expands the help or user profile option from the menu, the appropriate
 
 In the [!DNL Assets] user interface, users can use keyboard to browse through the list of existing digital assets in DAM repository, preview or download an asset, see generated renditions, switch views, see the generated renditions, see timeline and version history, see comments and references, and view and manage metadata.
 
-<!-- TBD: Not sure about the following list items mean:
+<!--
+ TBD: Not sure about the following list items mean:
 
 In [!DNL Experience Manager] header section, when navigating in browse mode, screen reader now announces,
   
@@ -144,7 +148,8 @@ When browsing the assets repository, the following functionality improves access
 * Comments on an asset are available in the asset timeline. It is accessible if left rail is accessed using a keyboard or a keyboard shortcut.
 * [!UICONTROL View Settings] in [!DNL Experience Manager] are accessible using a keyboard. Users can navigate through the available card sizes using the arrow keys and select and tab through to navigate through and set other elements in the existing View Settings view.
 
-<!-- TBD: Gradually, as more enhancements are done in these categories, add more content.
+<!--
+ TBD: Gradually, as more enhancements are done in these categories, add more content.
 
 ## Add and upload digital assets {#upload}
 
@@ -189,7 +194,8 @@ When filtering search results:
 
 ## Share assets {#share-assets}
 
-<!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
+<!--
+ TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
 -->
 
 When sharing assets, the following functionalities improve the accessibility:
@@ -213,18 +219,20 @@ When sharing assets, the following functionalities improve the accessibility:
 
 **See also**
 
-* [Translate Assets](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [Assets supported file formats](file-format-support.md)
-* [Search assets](search-assets.md)
-* [Connected assets](use-assets-across-connected-assets-instances.md)
-* [Asset reports](asset-reports.md)
-* [Metadata schemas](metadata-schemas.md)
-* [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata.md)
-* [Search facets](search-facets.md)
-* [Manage collections](manage-collections.md)
-* [Bulk metadata import](metadata-import-export.md)
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 ## Provide feedback {#a11y-feedback}
@@ -239,3 +247,4 @@ To provide feedback, ask questions, and request product enhancements, related to
 >* [Release notes of enhancements done in each release](/help/release-notes/release-notes-cloud/release-notes-current.md).
 >* [[!DNL Adobe Experience Manager] accessibility guidance](/help/compliance/accessibility/web-accessibility.md).
 >* [Conformance reports (ACR) and VPAT listing for Adobe solutions](https://www.adobe.com/accessibility/compliance.html).
+

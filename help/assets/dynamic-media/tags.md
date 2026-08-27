@@ -4,15 +4,18 @@ description: Learn about the Dynamic Media Viewers extension for Experience Plat
 contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
 ---
 # Integrate Dynamic Media Viewers with Adobe Analytics and Experience Platform Tags {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## What is Dynamic Media Viewers integration with Adobe Analytics and Experience Platform Tags? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
-<!-- Leave this hidden path here; it points to the topic source from Sasha https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=~oufimtse&title=Dynamic+Media+Viewers+integration+with+Adobe+Launch 
+<!--
+ Leave this hidden path here; it points to the topic source from Sasha https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=~oufimtse&title=Dynamic+Media+Viewers+integration+with+Adobe+Launch 
 
-name used to be Experience Platform Launch. Changed to Experience Platform Data Collection-->
+name used to be Experience Platform Launch. Changed to Experience Platform Data Collection
+-->
 
 The *Dynamic Media Viewers* extension for Experience Platform Tags works with Dynamic Media Viewers 5.13. It allows Adobe Analytics and Experience Platform Tags customers to use Dynamic Media Viewers' events and data in their tag configurations.
 
@@ -118,7 +121,7 @@ The following sample configuration within Experience Platform Tags demonstrates 
 
 ### About Adobe Analytics for Audio and Video {#about-adobe-analytics-for-audio-and-video}
 
-When an Experience Cloud account is subscribed to use Adobe Analytics for Audio and Video, it is enough to enable video tracking in the *Dynamic Media Viewers* extension settings. Video metrics become available in Adobe Analytics. Video tracking depends on the presence of Adobe Media Analytics for Audio and Video extension.
+When an CX Enterprise account is subscribed to use Adobe Analytics for Audio and Video, it is enough to enable video tracking in the *Dynamic Media Viewers* extension settings. Video metrics become available in Adobe Analytics. Video tracking depends on the presence of Adobe Media Analytics for Audio and Video extension.
 
 See [Installation and setup of extensions](#installing-and-setup-of-extensions).
 
@@ -412,7 +415,7 @@ Also, if this integration solution is used with Experience Manager Sites, the fo
 * [Adobe Developer Console](https://developer.adobe.com/console/home) - integration is created for Experience Platform Tags.
 * Experience Manager author node - IMS configuration and Experience Platform Tags Cloud Configuration.
 
-As part of the configuration, be sure you have access to a company in Adobe Experience Cloud that has Adobe Analytics and Experience Platform Tags already enabled.
+As part of the configuration, be sure you have access to a company in Adobe CX Enterprise that has Adobe Analytics and Experience Platform Tags already enabled.
 
 ## Configure Adobe Analytics for the integration {#configuring-adobe-analytics-for-the-integration}
 
@@ -426,7 +429,7 @@ See also [Analytics Implementation Guide](https://experienceleague.adobe.com/en/
 
 **To configure Adobe Analytics for the integration:**
 
-1. Start by accessing Adobe Analytics from the Experience Cloud [home page](https://experience.adobe.com/#/home). On the menu bar, click ![Apps icon, solutions](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) **Solutions** near the upper-right corner of the page, then selecting **[!UICONTROL Analytics]**.
+1. Start by accessing Adobe Analytics from the CX Enterprise [home page](https://experience.adobe.com/#/home). On the menu bar, click ![Apps icon, solutions](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) **Solutions** near the upper-right corner of the page, then selecting **[!UICONTROL Analytics]**.
 
    ![2019-07-22_18-08-47](assets/2019-07-22_18-08-47.png)
 
@@ -493,7 +496,7 @@ After you configure Experience Platform Tags, the following items are set up for
 
 **To configure Experience Platform Tags for the integration:**
 
-1. Start by accessing Experience Platform Tags from the Experience Cloud [home page](https://experience.adobe.com/#/home). On the menu bar, click ![Apps icon, solutions](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) **Solutions** near the upper-right corner of the page, then click **[!UICONTROL Tags]**.
+1. Start by accessing Experience Platform Tags from the CX Enterprise [home page](https://experience.adobe.com/#/home). On the menu bar, click ![Apps icon, solutions](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) **Solutions** near the upper-right corner of the page, then click **[!UICONTROL Tags]**.
 
    ![image2019-7-8_15-38-44](assets/image2019-7-8_15-38-44.png)
 
@@ -524,11 +527,11 @@ To install an extension, click **[!UICONTROL Install]**. If needed, perform a on
 
 Where required, the following extensions must be installed and configured:
 
-* (Required) *Experience Cloud ID Service* extension
+* (Required) *CX Enterprise ID Service* extension
 
 No additional configuration is needed, except for any proposed values. When you are done, be sure you click **[!UICONTROL Save]**.
 
-See [Experience Cloud Identity Service extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/id-service/overview).
+See [CX Enterprise Identity Service extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/id-service/overview).
 
 * (Required) *Adobe Analytics* extension
 
@@ -797,7 +800,7 @@ The Experience Manager configuration consists of the following two major steps:
 
     * **[!UICONTROL Associated Adobe IMS Configuration]** - Select the IMS configuration that you created earlier in [Configure Experience Manager IMS](#configuring-aem-ims).
 
-    * **[!UICONTROL Company]** - From the **[!UICONTROL Company]** drop-down list, select your Experience Cloud company. The list populates automatically.
+    * **[!UICONTROL Company]** - From the **[!UICONTROL Company]** drop-down list, select your CX Enterprise company. The list populates automatically.
 
     * **[!UICONTROL Property]** - From the Property drop-down list, select your Experience Platform Tags property that you created previously. The list populates automatically.
 

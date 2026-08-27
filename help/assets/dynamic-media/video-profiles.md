@@ -4,6 +4,7 @@ description: Dynamic Media already comes with a predefined Adaptive Video Encodi
 contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
 ---
 # Dynamic Media Video Profiles{#video-profiles}
@@ -88,7 +89,7 @@ The following table identifies best practices when encoding profiles for adaptiv
 
 ## About using smart crop in Video Profiles {#about-smart-crop-video}
 
-Smart crop for video is an optional feature available in Video Profiles. It is a tool that uses Adobe Sensei to automatically detect and crop the focal point in any adaptive video or progressive video that you have uploaded, regardless of size. 
+Smart crop for video is an optional feature available in Video Profiles. It is a tool that uses Adobe AI to automatically detect and crop the focal point in any adaptive video or progressive video that you have uploaded, regardless of size. 
 
 Supported video formats for smart cropping include MP4, MKV, MOV, AVI, FLV, and WMV.
 
@@ -98,7 +99,7 @@ The maximum supported video file size for smart crop is the following criteria:
 * 30 frames per second (FPS).
 * File size of 300 MB.
 
-Adobe Sensei is limited to 9000 frames. That is, five minutes at 30 FPS. If your video has a higher FPS, the maximum-supported video duration decreases. For example, a 60 FPS video must be two and a half minutes long to be supported by Adobe Sensei and smart crop.
+Adobe AI is limited to 9000 frames. That is, five minutes at 30 FPS. If your video has a higher FPS, the maximum-supported video duration decreases. For example, a 60 FPS video must be two and a half minutes long to be supported by Adobe AI and smart crop.
 
 ![Smart Crop for Video](assets/smart-crop-video.png)
 

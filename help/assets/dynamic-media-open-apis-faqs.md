@@ -2,6 +2,7 @@
 title: Dynamic Media with OpenAPI capabilities frequently asked questions
 description: Dynamic Media with OpenAPI capabilities frequently asked questions
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
 ---
 # Dynamic Media with OpenAPI capabilities frequently asked questions {#new-dynaminc-media-apis-frequently-asked-questions}
@@ -100,7 +101,7 @@ The following are some of the key differences between Dynamic Media with OpenAPI
 | [Available only with Assets as a Cloud Service](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | Also available with On-premise or Adobe Managed Services with additional configuration and provisioning steps. |
 | [Rich set of supported image modifiers, such as width, height, rotate, flip, quality, and format](/help/assets/deliver-assets-apis.md) | Rich set of available image modifiers |
 | [Restricted asset delivery based on users, roles, date, and time](/help/assets/restrict-assets-delivery.md) | Assets published to Dynamic Media are accessible to all users |
-| Most developers are familiar with OpenAPI specifications. AEM Assets extensibility becomes really simple by using [Micro-Frontend Asset Selector](/help/assets/overview-asset-selector.md). | SOAP -based APIs, which become a barrier while developing integration customizations. |
+| Most developers are familiar with OpenAPI specifications. AEM Assets extensibility becomes really simple by using [Content Advisor](/help/assets/integrate-adobe-non-adobe-applications.md). | SOAP -based APIs, which become a barrier while developing integration customizations. |
 | Any changes made to approved assets in DAM, including version updates and metadata modifications, are automatically reflected in the delivery URLs. With a short Time-to-Live (TTL) value of 10 minutes configured for Dynamic Media with OpenAPI capabilities via CDN, updates become visible across all authoring and published interfaces in under 10 minutes. | Recommended CDN TTL of 10 hours. You can override the TTL value using the cache invalidation action. |
 | Only approved assets are available for asset delivery to downstream applications, enabling on brand approved assets in digital experiences.| Any updates to a Dynamic Media published asset are auto-published without any approval workflow, which does not ensure on brand approved assets in digital experiences.    |
 | Usage reports based on number of assets delivered. This feature will be available soon.| Usage reports are not available. This feature will be available soon. |
@@ -121,7 +122,7 @@ The table below outlines the key differences between the two solutions:
 | Support for all asset format types that are supported by AEM Assets. | No support for videos. |
 |You can use Dynamic Media on the local Sites deployment while fetching assets from remote DAM deployment.  |Dynamic Media on local Sites deployment is read-only.  |
 | No restrictions on the number of AEM Sites instances connected to a remote DAM deployment. You can [restrict the access to assets on the Sites instance by configuring roles](/help/assets/restrict-assets-delivery.md) for approved assets on remote DAM. |Restriction to connect no more than 4 AEM Sites instances to the remote DAM deployment. Increased number requires additional testing.  |
-|Both Asset Selector and Dynamic Media with OpenAPI capabilities are extensible to allow custom integrations.  |  Connected Assets APIs are not extensible to allow custom integrations.  |
+|Both Content Advisor and Dynamic Media with OpenAPI capabilities are extensible to allow custom integrations.  |  Connected Assets APIs are not extensible to allow custom integrations.  |
 | Any changes made to approved assets available on remote DAM deployment, including version updates and metadata modifications, are automatically reflected on the Sites instance within a short Time-to-Live (TTL) value of 10 minutes. |  Asset updates on remote DAM deployment are handled via lifecycle events automatically but takes much more time as compared to Dynamic Media with OpenAPI capabilities. |
 | Asset metadata on remote DAM is available on AEM Sites instance as well.  |Asset metadata on remote DAM is not available on AEM Sites instance.  |
 
@@ -142,3 +143,23 @@ To enable the production use of [modifiers in Limited Availability](https://deve
 
 You can test any modifier, which is not generally available via experimental APIs. For example, </adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>
 Click here to know more on how to use the [experimental APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) and the [complete list of modifiers](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

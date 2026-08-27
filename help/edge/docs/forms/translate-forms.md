@@ -2,10 +2,9 @@
 title: Translate and localize an Edge Delivery Services for AEM Forms
 description: Translate and localize an Edge Delivery Services for AEM Forms
 feature: Edge Delivery Services
-hide: yes
-hidefromtoc: yes
+hide: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Translate and localize an Edge Delivery Services for AEM Forms
@@ -38,7 +37,7 @@ You can refer to the [spreadsheet](/help/forms/assets/enquirytranslate.xlsx) con
 ![Enquiry Translated Form](/help/forms/assets/translate-form-french.png)
 
 Refer to the URL below, where you can view the form with its French language translation:
-https://main--portal--wkndforms.hlx.live/enquirytranslate
+https://main--portal--wkndforms.aem.live/enquirytranslate
 
 ## Translate forms within SharePoint Site{#translate-form-sharepoint}
 
@@ -58,7 +57,7 @@ Refer to the [spreadsheet](/help/forms/assets/enquirytranslate-sp.xlsx) containi
 ![Enquiry Translated Form](/help/forms/assets/translate-form-french.png)
 
 Refer to the URL below, where you can view the form with its French language translation:
-https://main--wefinance--wkndforms.hlx.live/enquirytranslate 
+https://main--wefinance--wkndforms.aem.live/enquirytranslate 
 
 ## Known issues {#known-issues}
 

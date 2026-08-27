@@ -3,7 +3,7 @@ title: Manage Domain Mappings
 description: Learn about how to use Cloud Manager to edit and update, or delete CDN configurations for an Edge Delivery site or a Cloud Manager environment.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
 ---
 # Manage Domain Mappings {#manage-domain-mappings}

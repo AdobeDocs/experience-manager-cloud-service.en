@@ -4,7 +4,7 @@ description: Learn how to deploy your code using Cloud Manager pipelines in AEM 
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Deploy your code {#deploy-your-code} 
@@ -13,12 +13,12 @@ Learn how to deploy your code to Production using Cloud Manager pipelines in AEM
 
 ![Production pipeline diagram](./assets/configure-pipeline/production-pipeline-diagram.png)
 
-Deploying code seamlessly to Stage and then through to Production is done through a Production pipeline. The Production pipeline execution is broken into the two following logical phases:
+Deploying code seamlessly to Stage and then through to Production is done through a Production pipeline. The Production pipeline execution is broken into two logical phases:
 
 1. **Deployment to Stage environment** - The code is built and deployed to the Stage environment for automated functional testing, UI testing, experience audit, and User Acceptance Testing (UAT).
 1. **Deployment to Production environment** - Once the build is validated on Stage, and approved for promotion to Production, the same build artifact is deployed to the Production environment.
 
-_Only the Full Stack Code pipeline type supports code scanning, function testing, UI testing, and experience audit._
+_Only the Full Stack Code pipeline type supports code scanning, functional testing, UI testing, and experience audit._
 
 ## Deployment process {#deployment-process}
 
@@ -26,13 +26,13 @@ All Cloud Service deployments follow a rolling process to ensure zero downtime. 
 
 >[!NOTE]
 >
->The Dispatcher cache is wiped out on each deployment. It is subsequently "warmed up" before the new publish nodes accept traffic.
+>The Dispatcher cache is cleared with each deployment and then refreshed before the new publish nodes begin accepting traffic.
 
 ## Deploy your code with Cloud Manager in AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 
-Once you have [configured your production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) including repository, environment, and testing environment, you are ready to deploy your code.
+Once you have [configured your production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) including the repository, environment, and testing environment, you are ready to deploy your code.
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+{{sign-in-to-cloud-manager}}
 
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, click the program for which you want to deploy code.
 
@@ -77,25 +77,25 @@ The **Stage testing** phase involves the following steps:
 | Product Functional Testing | Cloud Manager pipeline executes tests that run against the stage environment.<br>See also [Product Functional Testing](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing). |
 | Custom Functional Testing | This step in the pipeline is always executed and cannot be skipped. If the build does not produce a test JAR, the test automatically passes.<br>See also [Custom Functional Testing](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing).  |
 | Custom UI Testing | An optional feature that automatically runs UI tests created for custom applications.<br>UI tests are Selenium-based and packaged in a Docker image to offer flexibility in language and frameworks. This approach lets you use Java and Maven, Node and WebDriver.io, or any Selenium-based framework or technology.<br>See also [Custom UI Testing](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).  |
-| Experience Audit | This step in the pipeline is always executed and cannot be skipped. As a production pipeline is executed, an experience audit step is included after custom functional testing that runs the checks.<ul><li>The pages that are configured are submitted to the service and evaluated.</li><li>The results are informational and show the scores and the change between the current and previous scores.</li><li>This insight is valuable to determine if there is a regression that is introduced with the current deployment.</li></ul>See [Understanding Experience Audit results](/help/implementing/cloud-manager/experience-audit-dashboard.md).</li></ul> |
+| Experience Audit | This step in the pipeline is always executed and cannot be skipped. As a production pipeline is executed, an experience audit step is included after custom functional testing that runs the checks.<ul><li>The pages that are configured are submitted to the service and evaluated.</li><li>The results are informational and show the scores and the change between the current and previous scores.</li><li>This insight is valuable to determine if there is a regression that is introduced with the current deployment.</li></ul>See [Understanding Experience Audit results](/help/implementing/cloud-manager/reports/report-experience-audit.md).</li></ul> |
 
 ![Stage Testing](assets/stage-testing.png)
 
 ### Production deployment phase {#production-deployment}
 
-The process for deploying to production topologies differs slightly to minimize the impact on visitors to an AEM site.
+The process for deploying to production topologies differs slightly to minimize the impact on users of an [!DNL AEM] site.
 
-Production deployments generally follow the same steps as previously described, but in a rolling manner. These steps include the following:
+Production deployments follow the same steps as previously described, but in a rolling manner. These steps include the following:
 
 1. Deploy AEM packages to author.
 1. Detach `dispatcher1` from the load balancer.
 1. Deploy AEM packages to `publish1` and the Dispatcher package to `dispatcher1`, flush Dispatcher cache.
-1. Put `dispatcher1` back into the load balancer.
+1. Add `dispatcher1` back into the load balancer.
 1. When `dispatcher1` is back in service, detach `dispatcher2` from the load balancer.
 1. Deploy AEM packages to `publish2` and the Dispatcher package to `dispatcher2`, flush Dispatcher cache.
-1. Put `dispatcher2` back into the load balancer.
+1. Add `dispatcher2` back into the load balancer.
 
-This process continues until the deployment has reached all publishers and Dispatchers in the topology.
+This process repeats until the deployment is applied to all publishers and Dispatchers in the topology.
 
 ![Production Deployment phase](assets/production-deployment.png)
 
@@ -114,10 +114,10 @@ The following steps time out if they are left waiting for user feedback during a
 
 ## Re-execute a production deployment {#reexecute-deployment}
 
-In rare cases, production deployment steps may fail for transient reasons. In such cases, re-execution of the production deployment step is supported so long as the production deployment step has been completed, regardless of the type of completion (for example, canceled or unsuccessful). Re-execution creates a new execution using the same pipeline consisting of the following three steps:
+In rare cases, production deployment steps can fail for transient reasons. In such cases, re-execution of the production deployment step is supported so long as the production deployment step has been completed, regardless of the type of completion (for example, canceled or unsuccessful). Re-execution creates a new execution using the same pipeline consisting of the following three steps:
 
 1. **Validation** - The same validation that occurs during a normal pipeline execution.
-1. **Build** - In the context of a re-execution, the build step copies artifacts and does not actually execute a new build process.
+1. **Build** - In the context of a re-execution, the build step copies artifacts and does not execute a new build process.
 1. **Production deployment** - Uses the same configuration and options as the production deployment step in a normal pipeline execution.
 
 In such circumstances where a re-execution is possible, the production pipeline status page provides the **Re-execute** option next to the usual **Download build log** option.
@@ -136,7 +136,7 @@ In such circumstances where a re-execution is possible, the production pipeline 
 
 ### Re-execute API {#reexecute-API}
 
-In addition to being available in the UI, you can use [the Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) to trigger re-executions and identify executions that were triggered as re-executions.
+In addition to being available in the UI, you can use [the Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#tag/Pipeline-Execution) to trigger re-executions and identify executions that were triggered as re-executions.
 
 #### Trigger a re-execution {#reexecute-deployment-api}
 
@@ -186,6 +186,6 @@ The syntax of the HAL link's href value is only an example. The actual value sho
 
 Submitting a PUT request to this endpoint results in a 201 response if successful, and the response body is the representation of the new execution. This workflow is similar to starting a regular execution through the API.
 
-#### Identify a re-execute execution {#identify-reexecution}
+#### Identify a re-execution {#identify-reexecution}
 
 The system identifies re-executions by setting the `trigger` field to the value `RE_EXECUTE`.

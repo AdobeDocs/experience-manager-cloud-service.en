@@ -1,22 +1,22 @@
 ---
 title: The Content Copy Tool
-description: The content copy tool enables users to copy mutable content on-demand from their production environments on AEM as a Cloud Service to lower environments for testing purposes.
+description: The content copy tool lets users copy mutable content On-demand from their production environments on AEM as a Cloud Service to lower environments for testing purposes.
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # The Content Copy Tool {#content-copy}
 
-The content copy tool enables users to copy mutable content on-demand from their production environments on AEM as a Cloud Service to lower environments for testing purposes.
+The content copy tool enables users to copy mutable content On-demand from their production environments on AEM as a Cloud Service to lower environments for testing purposes.
 
 >[!NOTE]
->While the primary content copy flow is from higher environments to lower environments, an additional capability - **Forward Flow** - allows copying from lower non-production environments to higher non-production environments (for example Dev → Stage, RDE → Stage). See [Limitations](#limitations) for details, including availability requirements.
+>The primary content copy flow is from higher environments to lower environments. **Forward Flow** also allows copying from lower non-production environments to higher non-production environments (for example, Development to Stage, or RDE to Stage). See [Limitations](#limitations) for details.
 
 ## Introduction {#introduction}
 
 Current, real data is valuable for testing, validation, and user-acceptance purposes. The content copy tool lets you copy content from a production AEM as a Cloud Service environment to a staging, development, or [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) environment for such testing.
 
-The content to copy is defined by a content set. A content set consists of a list of JCR paths that contain the mutable content to be copied from a source authoring service environment to a target authoring service environment within the same Cloud Manager program. The following paths are permitted in a content set.
+A content set defines the content to copy. A content set consists of a list of JCR paths. These paths contain the mutable content to be copied from a source authoring service environment to a target authoring service environment, all within the same Cloud Manager program. The following paths are permitted in a content set:
 
 ```text
 /content
@@ -26,9 +26,9 @@ The content to copy is defined by a content set. A content set consists of a lis
 /etc/clientlibs/fd/themes
 ```
 
-When copying content, the source environment is the source of truth.
+When copying content, the source environment is the primary data source.
 
-* If content has been modified in the destination environment, it is overwritten by content in the source, if the paths are the same.
+* If the source and destination paths match, content from the source overwrites modified content in the destination environment.
 * If the paths are different, content from the source is merged with the content in the destination.
 
 ## Permissions {#permissions}
@@ -42,11 +42,11 @@ To use the content copy tool, certain permissions are required in both the sourc
 
 For more details on permissions and how to set them, see [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md).
 
-## Creating a Content Set {#create-content-set}
+## Create a content set {#create-content-set}
 
-Before any content can be copied, a content set must be defined. After it is defined, content sets can be reused to copy content. Follow these steps so you can create a content set.
+Before any content can be copied, a content set must be defined. After it is defined, content sets can be reused to copy content. To create a content set, follow these steps.
 
-1. Log on to Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+1. Sign in to Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
 1. Using the side navigation panel, navigate to the **Content Sets** tab from the **Overview** page.
 
@@ -69,8 +69,8 @@ Before any content can be copied, a content set must be defined. After it is def
 
 1. If you must refine or restrict your content set, subpaths can be excluded.
 
-   1. In the list of included paths, click **Add exclude sub-paths** next to the path you want to restrict.
-   1. Enter the subpath to exclude beneath the selected path.
+   1. In the list of included paths, click the option **Add exclude sub-paths** next to the path you want to restrict.
+   1. Enter the subpath to exclude from the selected path.
    1. Select **Exclude Path**.
    1. Select **Add exclude sub-paths** again to add additional paths to exclude as necessary.
       * Excluded paths must be relative to the included path.
@@ -80,8 +80,8 @@ Before any content can be copied, a content set must be defined. After it is def
 
 1. You can edit the specified paths, if necessary.
 
-   1. Click the X next to the excluded subpaths so you can delete them.
-   1. Click the ellipsis button next to the paths so you can reveal the **Edit** and **Delete** options.
+   1. Click the X next to the excluded subpaths to delete them.
+   1. Click the ellipsis button next to the paths to reveal the **Edit** and **Delete** options.
 
    ![Editing path list](assets/add-content-set-excluded-paths.png)
 
@@ -89,56 +89,73 @@ Before any content can be copied, a content set must be defined. After it is def
 
 The content set can now be used to copy content between environments.
 
-## Editing a Content Set {#edit-content-set}
+## Edit a content set {#edit-content-set}
 
-Follow similar steps as when creating a content step. Instead of clicking **Add Content Set**, select an existing set from the console, and select **Edit** from the ellipsis menu.
+1. Follow similar steps as when creating a content set. Instead of clicking **Add Content Set**, select an existing set from the console, and select **Edit** from the ellipsis menu.
 
 ![Edit content set](assets/edit-content-set.png)
 
-When editing your content set, you can expand the configured paths to reveal the excluded subpaths.
+1. To reveal the excluded subpaths, you can expand the configured paths when editing your content set.
 
-## Copying Content {#copy-content}
+## Copy content {#copy-content}
 
-After a content set is created, you can use it to copy content. Follow these steps so you can copy content.
+After a content set is created, you can use it to copy content.
 
 >[!NOTE]
-> Do not use content copy on an environment while a [content transfer](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) operation is running on that environment. 
+> Do not use content copy in an environment while a [content transfer](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) operation is running in that environment. 
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+**To copy content:**
 
-1. Navigate to the **Environments** screen from the **Overview** page.
+1. Sign in to Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Navigate to the **Content Sets** page from the **Environments** screen.
+1. On the **Overview** page, navigate to **Environments** > **Content Sets**.
 
-1. Select a content set from the console and select **Copy Content** from the ellipsis menu.
+1. On the console, select a content set.
+
+1. From the ellipsis menu, click **Copy Content**.
 
    ![Content copy](assets/copy-content.png)
 
    >[!NOTE]
    >
-   >An environment may not be selectable if:
+   >An environment may not be selectable if any of the following is true:
    >
    >* The user does not have the appropriate permissions.
    >* The environment has a running pipeline or a copy content operation in progress.
    >* The environment is hibernating or starting up.
 
-1. In the **Copy content** dialog, specify the source and destination for your content copy action.
+1. In the **Copy content** dialog box, specify the source and destination for your content copy action.
 
-   ![Copying content](assets/copying-content.png)
+   ![Copying content](/help/implementing/developing/tools/assets/copy-content2.png)
 
-   * Content can only be copied from a higher environment to a lower environment or between development/RDE environments where the hierarchy of environments is as follows (from highest to lowest):
+   * Content can be copied from a higher environment to a lower environment, between Development and RDE environments, or from a lower non-production environment to a higher non-production environment (Forward Flow). The environment hierarchy is as follows, from highest to lowest:
      * Production
      * Staging
      * Development/RDE
-   * By default, Cross-Program content copy is disabled. However, upon customer request, it can be enabled, which will make an additional **Destination Program** input field available.
+   * Cross Program content copy is available by default. In the **Destination** section, select a **Program**, then select the destination environment.
 
-1. If necessary, you can also elect to **Include Access Control Lists** in your copy process.
+1. (Optional) If desired, set the following:
 
-1. Select **Copy**.
+   * **Include Access Control Lists** - Select if you want to copy the content's access control permissions along with the content.
+   * **Wipe** - Select to delete the existing content at the destination before starting the import, so you can begin with an empty state and avoid conflicts with existing content. If you leave **Wipe** deselected, Cloud Manager imports the new content on top of the existing destination content. A confirmation prompt appears before the wipe begins, and Cloud Manager logs the wipe action and import details for traceability.
+     ![Copying content](assets/content_copy_wipe-destination.png) 
+     * When choosing the **Wipe destination before import** option and clicking **Copy** a popup will appear with a warning where you have the options to:
+       * **Cancel** (In this case the **Copy Content** flow will not start)
+       * **Confirm** (the **Copy Content** flow will start and the content on the destination will be wiped)
+          ![Copying content](assets/content-copy-wipe-destination-warning.png)
+
+     *  If you don't choose **Wipe destination before import** then the **Copy Content** flow will work as before.
+
+   * **Package Import Failure Policy** Select the policy to use when importing packages:
+     ![Copying content](assets/content-copy-import-policy.png)
+     * **Stop on first failure**: Default mode, stops after the first failure encountered.
+     * **Continue with remaining packages**: Continues the import process, even after a failure. The packages (and their content) that were not successful can be found in the import logs
+
+1. Click **Copy**.
 
 The copy process starts. The status of the copy process is reflected in the console for the selected content set.
 
-## Content Copy Activity {#copy-activity}
+## Content copy activity {#copy-activity}
 
 You can monitor the status of your copy processes in the **Copy Content Activity** page.
 
@@ -150,18 +167,18 @@ You can monitor the status of your copy processes in the **Copy Content Activity
 
 ![Content Copy Activity](assets/copy-content-activity.png)
 
-### Content Copy Statuses {#statuses}
+### Content copy statuses {#statuses}
 
 Once you start copying content, the process can have one of the following statuses.
 
-|Status|Description|
-|---|---|
-|In progress|Content copy operation is ongoing|
-|Failed|Content copy operation failed|
-|Completed|Content copy operation completed successfully|
-|Canceled|User cancels a content copy operation after starting it|
+| Status | Description |
+| --- | --- |
+| In progress | Content copy operation is ongoing. |
+| Failed | Content copy operation failed. |
+| Completed | Content copy operation completed successfully. |
+| Canceled | A user cancels a content copy operation after starting it. |
 
-### Canceling a Copy Process {#canceling}
+### Cancel a copy process {#canceling}
 
 If you must abort a content copy operation after starting it, you can optionally cancel it.
 
@@ -175,28 +192,32 @@ To do so, on the **Copy Content Activity** page, select the **Cancel** action fr
 >
 >If your environment is in such a state due to cancellation, contact Adobe Customer Care for assistance.
 
-### Accessing Logs {#accessing-logs}
+### Access logs {#accessing-logs}
 
 You can check the logs for both the source and destination environments for any completed content copy process.
 
-To do so, on the **Copy Content Activity** page, select the **Logs** action from the ellipsis menu of the copy process for which you would like to review the logs and then choose for which environment.
+**To access logs:**
+
+1. On the **Copy Content Activity** page, from the ellipsis menu, click **Logs** for the copy process you want to review. Then select the environment.
 
 ![Accessing logs for copy content process](assets/copy-content-logs.png)
 
-The logs are downloaded to your local machine. If the download does not commence, check your pop-up blocker settings.
+The logs are downloaded to your local machine.
+
+1. If the download does not commence, check your pop-up blocker settings.
 
 ## Limitations {#limitations}
 
 The content copy tool has the following limitations.
 
 * The content copy tool supports two flow modes:
-   1. Top-Down Flow – Content can be copied from higher environments to lower environments (for example Production → Stage, Stage → Development/RDE).
-   2. Forward Flow (new feature) – Content can also be copied from a lower non-production environment to a higher non-production environment (for example Development → Stage, RDE → Stage). This feature is available only upon explicit request and remains enabled until explicitly requested to be disabled. Production environments are never valid destinations for Forward Flow. 
+   1. Top-Down Flow: Content can be copied from higher environments to lower environments (for example Production → Stage, Stage → Development/RDE).
+   2. Forward Flow: Content can also be copied from a lower non-production environment to a higher non-production environment (for example, Development to Stage, or RDE to Stage). Production environments are never valid destinations for Forward Flow. 
 * Content can only be copied from and to authoring services.
 * Running concurrent content copy operations in the same environment is not possible.
 * Up to 50 paths can be specified per content set. There is no limitation on excluded paths.
 * Do not use the content copy tool as a cloning or mirroring tool because it cannot track moved or deleted content on the source.
 * The content copy tool has no versioning capability and cannot automatically detect modified content or created content on the source environment in a content set since the last content copy operation.
-  * If you want to update your destination environment with content changes only, since the last content copy operation, you must create a content set. Then, specify the paths on the source instance where changes were made since the last content copy operation.
+  * If you want to update your destination environment with content changes since the last content copy operation, you must use an existing content set. Then, specify the paths on the source instance where changes were made since the last content copy operation.
 * Version information is not included in a content copy.
-* [Content Fragments Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) can specify reference fields based on universally unique IDs (UUID). Such UUIDs are repository specific, so the content copy tool will recalculate these UUIDs in the target environment when copying Content Fragments.
+* [Content Fragments Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) can specify reference fields based on universally unique IDs (UUID). Such UUIDs are repository-specific, so the content copy tool recalculates these UUIDs in the target environment when copying Content Fragments.

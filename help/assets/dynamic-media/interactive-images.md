@@ -4,6 +4,7 @@ description: Learn how to work with Interactive Images in Dynamic Media.
 contentOwner: Rick Brough
 feature: Interactive Images
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
 ---
 # Interactive images{#interactive-images}

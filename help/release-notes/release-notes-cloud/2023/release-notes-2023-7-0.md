@@ -109,6 +109,7 @@ Subscribe to email notifications that alert you when critical incidents happen r
 ### CDN and WAF Rules early adopter program {#waf-early-adopter}
 
 Filter traffic at the CDN based on:
+
 * request headers and properties (for example, IP address)
 * traffic patterns known to be associated with malicious traffic
 

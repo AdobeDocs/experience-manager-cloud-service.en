@@ -3,7 +3,7 @@ title: Model Definitions, Fields, and Component Types
 description: Learn about fields and the component types that the Universal Editor can edit in the properties panel with examples. Understand how you can instrument your own app by creating a model definition and linking to the component.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Model Definitions, Fields, and Component Types {#field-types}
@@ -88,8 +88,7 @@ A field object has the following type definition.
 |`name`|`string`|Property [or path](#nesting) where the data shall be persisted|Yes|
 |`label`|`FieldLabel`|Label of the field|Yes|
 |`description`|`FieldDescription`|Description of the field|No|
-|`placeholder`|`string`|Placeholder for the field|No|
-|`value`|`FieldValue`|Default value|No|
+|`value`|`FieldValue`|This is a default value, which serves as a placeholder. If no value is set, the Universal Editor will persist whatever is defined as `value` in the model definition. This ensures that what you see will match what is persisted in the backend.|No|
 |`valueType`|`ValueType`|Standard validation, can be `string`, `string[]`, `number`, `date`, `boolean`|No|
 |`required`|`boolean`|Is the field required|No|
 |`readOnly`|`boolean`|Is the field read only|No|
@@ -98,6 +97,10 @@ A field object has the following type definition.
 |`multi`|`boolean`|Is the field a multi field<br/>Note that container nesting is not permitted for multi-fields in the properties panel|No|
 |`validation`|`ValidationType`|Validation rule or rules for the field|No|
 |`raw`|`unknown`|Raw data which can be used by the component|No|
+
+>[!NOTE]
+>
+>The underscore (`_`) is not allowed in field names when using the [`aem` or `xwalk` plugins.](/help/implementing/universal-editor/component-definition.md#plugins)
 
 ### name Field and Nesting {#nesting}
 
@@ -129,6 +132,7 @@ The following are the component types that are possible to use for rendering fie
 |[Select](#select)|`select`|
 |[Tab](#tab)|`tab`|
 |[Text](#text)|`text`|
+|[Text Area](#textarea)|`textarea`|
 
 #### AEM Tag {#aem-tag}
 
@@ -613,7 +617,13 @@ A multiselect component type presents multiple items for selection in a drop-dow
 
 #### Number {#number}
 
-A number component type allows for the input of a number. It offers additional validation types.
+A number component type allows for the input of a number. It offers an additional configuration.
+
+|Configuration|Value Type|Description|Required|
+|---|---|---|---|
+|`valueFormat`|`string`|The type of number to store can be `long` (default) or `double`.|No|
+
+It also offers additional validation types.
 
 |Validation Type|Value Type|Description|Required|
 |---|---|---|---|
@@ -897,5 +907,33 @@ Text allows for a single line of text input.  It includes additional validation 
 >[!TAB Screenshot]
 
 ![Screenshot of text component type](assets/component-types/simpletext.png)
+
+>[!ENDTABS]
+
+#### Text Area {#textarea}
+
+Text area allows for multiple lines of text input.
+
+>[!BEGINTABS]
+
+>[!TAB Sample]
+
+```json
+{
+  "id": "longertext",
+  "fields": [
+    {
+      "component": "textarea",
+      "name": "textarea",
+      "label": "Text Area",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+>[!TAB Screenshot]
+
+![Screenshot of textarea component type](assets/component-types/textarea.png)
 
 >[!ENDTABS]

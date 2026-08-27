@@ -38,6 +38,7 @@ Have a look at the October 2024 Release Overview video for a summary of the feat
 **Modernized Page Events**
 
 The following AEM Sites page events are now available as externally consumable events that are based on the AEM as a Cloud Service Eventing Platform. The events can be processed via Adobe I/O to interact with external processes. 
+
 * Page published
 * Page unpublished
 * Page deleted
@@ -95,6 +96,10 @@ Administrators can now control if they need expired assets to be visible on Cont
 ### New feature in AEM Forms {#forms-new-features}
 
 * [Enhance User Experience with Navigation Buttons in Panel Layouts](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button): You can now add navigation buttons to your panel layouts, such as Horizontal Tabs, Vertical Tabs, Accordions, or Wizard. These buttons enhance the user experience by simplifying transitions between panels, focusing on the selected panel.
+
+#### Right-to-left (RTL) language support in Adaptive Forms
+
+Adaptive Forms can now be displayed in a Right-to-Left (RTL) language, such as Arabic, Hebrew, and Urdu. This gives you a more inclusive experience for users who read RTL languages, with proper text flow, alignment, and mobile-responsive layouts. For more information, see [Add a locale for Adaptive Forms based on Core Components](/help/forms/supporting-new-language-localization-core-components.md).
 
 <!--* **Specify Display Styles for Document of Record (DoR) Components**: In an XFA file, you can now specify the display styles for Document of Record components. These styles can later be applied to the corresponding components in Adaptive Forms Editor.-->
 

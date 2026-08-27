@@ -4,7 +4,7 @@ description: Learn how to use Cloud Manager to view, update, replace, and delete
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Manage custom domain names {#managing-custom-domain-names}
@@ -13,7 +13,7 @@ Cloud Manager lets you edit, update, replace, verify, and delete custom domain n
 
 ## Edit a custom domain name configuration {#view-and-update}
 
-In Adobe Cloud Manager, you might want to edit a custom domain name configuration for the following reasons:
+In Adobe Cloud Manager, you can edit a custom domain name configuration for the following reasons:
 
 * **Switching environments**: To apply the correct configuration depending on whether you are serving content to end users (Publish) or internal users (Author).
 * **Security updates**: To upgrade to a newer SSL certificate for enhanced security or compliance purposes.
@@ -25,7 +25,7 @@ In Adobe Cloud Manager, you might want to edit a custom domain name configuratio
 
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 
-1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the left side menu.
+1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to open the left side menu.
 
 1. Under the **Services** heading, click ![Social network icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Domain Mappings**.
 
@@ -43,7 +43,7 @@ In Adobe Cloud Manager, you might want to edit a custom domain name configuratio
 
 ## Update a custom domain name's SSL certificate {#update-cert}
 
-Follow the same steps above to update a custom domain name's SSL certificate.
+To update a custom domain name's SSL certificate, follow the same steps above.
 
 >[!NOTE]
 >
@@ -102,7 +102,7 @@ A user with the **Business Owner** or **Deployment Manager** role can use Cloud 
 
 >[!WARNING]
 >
->Remove the domain's DNS records with your DNS provider *before* deleting the domain in Cloud Manager. Abandoned (dangling) DNS entries can be hijacked and pose a security risk.
+>Remove the domain's DNS records with your DNS provider *before* deleting the domain in Cloud Manager. Unused DNS entries can be compromised and pose a security risk.
 
 **To delete a custom domain name from a specific environment:**
 
@@ -110,7 +110,7 @@ A user with the **Business Owner** or **Deployment Manager** role can use Cloud 
 
 1. Navigate to the **Environments** screen from the **Overview** page.
 
-1. From the **Environments** page, navigate to a details screen of the environment of interest.
+1. From the **Environments** page, navigate to a details screen of the selected environment.
 
 1. From the Domain Mappings table, identify the row of the custom domain name you want to delete.
 

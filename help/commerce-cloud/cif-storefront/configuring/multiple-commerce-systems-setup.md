@@ -7,12 +7,12 @@ doc-type: technical-video
 activity: setup
 feature: Commerce Integration Framework
 topic: Commerce
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Beginner
 kt: 10529
 thumbnail: 346811.jpeg
 exl-id: 5328fe30-79ca-4496-8ebd-f1ef51ccfccf
-index: no
+index: false
 ---
 
 # Setup multiple commerce systems

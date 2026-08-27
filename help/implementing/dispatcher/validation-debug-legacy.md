@@ -2,7 +2,6 @@
 title: Validating and Debugging using Dispatcher Tools (Legacy)
 description: Validating and Debugging using Dispatcher Tools (Legacy)
 feature: Dispatcher
-hidefromtoc: yes
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
 role: Admin
 ---

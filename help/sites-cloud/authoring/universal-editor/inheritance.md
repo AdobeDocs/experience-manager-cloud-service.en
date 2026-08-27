@@ -4,6 +4,7 @@ description: Learn how the Universal Editor supports content inheritance for Mul
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
 ---
 # Content Inheritance in the Universal Editor {#inheritance}

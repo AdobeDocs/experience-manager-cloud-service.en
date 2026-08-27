@@ -2,6 +2,7 @@
 title: Learn how to search and discover assets in [!DNL Assets view]?
 description: Learn how to search and discover assets in AEM Assets view. The powerful search functionality lets you quickly discover the appropriate asset and help you improve your content velocity.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 ---
@@ -27,26 +28,25 @@ To search assets:
 
 ## Filter the search results {#refine-search-results}
 
+You can refine search results to find relevant assets by applying multiple filters. These filters, configured by an admin, are based on files, folders, and collections. See [Customize Search Filters](custom-search-filters.md).
+
+![Search filters](assets/filters-panel.gif)
+
 You can filter the search results based on the following parameters.
 
-![Search filters](assets/filters1.png)
-
-*Figure: Filter searched assets based on various parameters.*
-
 * Asset Status: Filter the search results using an `Approved`, `Rejected`, or `No Status` asset status.
-
 * File type: Filter the search results by the supported types of files that is, `Images`, `Documents`, and `Videos`.
 * MIME type: Filter for one or more of the supported file formats. <!-- TBD:  [supported file formats](/help/using/supported-file-formats.md). -->
 * Image size: Provide one of more of the minimum and maximum dimensions to filter images. Size is provided in dimensions in pixel and is not the file size of the images.
 * Created date: The creation date of the asset as provided in the metadata. The standard date format used is `yyyy-mm-dd`.
 * Modified date: The last modified date of the assets. The standard date format used is `yyyy-mm-dd`.
-
 * Expiration Date: Filter the search results based on an `Expired` asset status. In addition, you can specify an expiration date range for assets to further filter your search results.
-
 * Custom Filters: [Add custom filters](#custom-filters) to the Assets view user interface. Apply the custom filters in addition to the standard filters to refine your search results.
 
 You can sort the searched assets in increasing or decreasing order of `Name`, `Relevance`, `Size`, `Modified`, and `Created`. The searched assets are sorted based on `Relevance`, by default.
 
+<!--
+  
 ## Manage custom filters {#custom-filters}
 
 **Permissions required:**  `Can Edit`, `Owner`, or Administrator.
@@ -87,7 +87,7 @@ Assets view provides the following custom filters:
 
    You can use a wildcard operator (*) to enable Assets view to display assets in the results that partially match the search criteria. You can specify multiple smart tags separated by a comma in the search criteria.
 
-   -->
+   
 
 ### Add custom filters {#add-custom-filters}
 
@@ -115,39 +115,52 @@ To remove custom filters:
 
 1. Click **[!UICONTROL Confirm]** to remove the filters from the user interface.
 
-## Semantic Search {#semantic-search}
+-->
 
-Semantic Search is an advanced search capability that understands the meaning and intent behind a user's query rather than relying on exact keyword matches. It uses artificial intelligence (AI), natural language processing (NLP), and machine learning to deliver more accurate and context-aware results.
+## AI Search {#ai-search}
 
-Unlike traditional keyword-based search, which looks for exact terms, Semantic Search interprets relationships between words, concepts, and user intent. This ensures that users find what they are looking for—even if their query is phrased differently, contains typos, or is in another language.
+AI Search is an advanced search capability that understands the meaning and intent behind a user's query rather than relying on exact keyword matches. It uses artificial intelligence (AI) and machine learning to deliver more accurate and context-aware results.
+
+Unlike traditional keyword-based search, which looks for exact terms, AI Search interprets relationships between words, concepts, and user intent. This ensures that users find what they are looking for—even if their query is phrased differently, contains typos, or is in another language.
+
+>[!IMPORTANT]
+>
+>If you require searching for assets using natural language with prompts such as, `find me approved jpeg assets about coffee`, Adobe recommends to use Content Discovery Agent. For more information on how to access the agent, sample prompts, and so on, see [Content Discovery Agent](/help/ai-in-aem/agents/content-advisor/discovery.md#use-cases-prompts).
 
 Some if its key benefits include:
 
 * **Multilingual support**: Search across multiple languages without requiring exact translations. Users can find relevant content regardless of their query language.
 
-* **Handles misspellings**: Automatically corrects or interprets typos and spelling errors, ensuring accurate results even with imperfect input.
+* **Handles misspellings**: Interprets typos and spelling errors, ensuring accurate results even with imperfect input.
 
 * **Understands synonyms**: Delivers results for related terms and phrases, so users do not need to guess the right keyword.
 
-* **Context-Aware search**: Recognizes the intent behind a query, not just the words.
+* **Context-Aware search**: Recognizes the intent behind a query, not just the exact words.
 
-* **Search based on text-based prompts**: Experience Manager Assets applies filters to content and displays appropriate results automatically based on simple text-based prompts.
-
->[!IMPORTANT]
->
-> Specify three or more than three words for the Semantic Search to display appropriate results.
-
-### Examples for Semantic Search {#examples-semantic-search}
+### Examples for AI Search {#examples-ai-search}
 
 **Example Prompt**: *Woman drinking coffee*
 
-The traditional keyword-based search looks for exact matches of asset metadata, such as Woman, Coffee, and so on, and returns assets that include these keywords.
+The traditional keyword-based search looks for exact matches of asset metadata, such as `Woman`, `drinking`, `Coffee`, and returns assets that include all these terms in the metadata.
 
-However, Semantic Search looks for similar words such as `Girl`, `Lady` in case of `Woman` and coffee options, such as `Cappuccino` and `Latte` in case of `Coffee`.
+However, AI Search matches similar words such as `Girl`, `Lady` in the case of `Woman` and `Cappuccino` and `Latte` in the case of `Coffee`.
 
 Similarly, you can specify this prompt in Spanish or misspell `Woman` as `Wman` and still get the same results.
 
 ![Semantic Search in Assets view](assets/semantic-search.png)
+
+### Enable or disable AI search in Assets view {#enable-disable-ai-search}
+
+Execute the following steps to enable or disable AI Search:
+
+1. Navigate to **[!UICONTROL Settings]** >> **[!UICONTROL General Settings]** and select the **[!UICONTROL Search]** tab.
+
+1. In the **[!UICONTROL Search]** section, select **[!UICONTROL AI Search]** to enable AI Search or **[!UICONTROL Keyword]** to disable it.
+
+   ![Semantic Search in Assets view](/help/assets/assets/enable-disable-ai-search.png)
+
+1. Click **[!UICONTROL Save]**.
+
 
 ## Search assets using [!DNL Adobe Firefly] {#search-firefly}
 
@@ -183,6 +196,8 @@ To generate new assets using [!DNL Adobe Firefly]:
 
 1. Click **Save as new asset** to save the asset(s).
 
+<!--
+
 ### Upload assets {#upload-assets-firefly}
 
 To upload the generated asset to the assets repository:
@@ -190,6 +205,8 @@ To upload the generated asset to the assets repository:
 1. Click **[!UICONTROL Upload]**.
 1. Select the asset folder to which you need to upload the asset and click **[!UICONTROL Select Folder]**.
  ![Upload asset](assets/upload-asset-firefly.jpg)
+
+ -->
 
 ## Saved searches {#saved-search}
 
@@ -201,7 +218,8 @@ To create a saved search, search for some asset, apply one or more filters, and 
 
 ![Create smart collection](assets/create-smart-collection.png)
 
-<!-- TBD: Search behavior. Full-text search. Ranking and rank boosts. Hidden assets.
+<!--
+ TBD: Search behavior. Full-text search. Ranking and rank boosts. Hidden assets.
 Report poor UX that users can only save a filtered search and not a simple search.
 .
 Are other supported files fully indexed and support full-text search? Eg. audio/videos files can at best have metadata indexed.
@@ -278,6 +296,9 @@ You can preview to check the layout and formatting of the search first homepage.
 1. Click **[!UICONTROL Close]** to close the preview screen.
 
    ![Search first homepage preview](/help/assets/assets/search-first-preview.gif)
+
+
+<!--
 
 ## Contextual Search {#contextual-search}
 
@@ -363,6 +384,8 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 ![Contextual Search feedback](assets/contextual-search-feedback.png)
 
+-->
+
 ## Next Steps {#next-steps}
 
 * [Watch a video to search assets in Assets view](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html)
@@ -374,3 +397,21 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 * Contact [Customer Care](https://experienceleague.adobe.com/?support-solution=General#support)
 
 
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+         

@@ -8,11 +8,13 @@ content-type: reference
 feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rulesets, Viewers, Smart Crop, SEO Optimization, Publishing, Video, Renditions, Asset Management
 role: User, Admin
 mini-toc-levels: 4
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
 ---
 # Dynamic Media best practices{#about-dm-best-practices}
 
-<!--**Organizations today must connect with their customers through an ever-growing array of channels and devices.** The customer experience spans physical stores, websites, mobile apps, social media, email, and e-commerce platforms. This diversity requires organizations to create many more versions of each piece of content. Personalization adds complexity by increasing the number of variations needed for each item. Despite budget constraints for content creation, there's still a need to produce more campaigns in the same timeframe, on a global scale. AEM Dynamic Media offers a comprehensive set of tools to meet these challenges, providing consistent, personalized, high-performance, and optimized brand experiences across all channels and devices. 
+<!--
+**Organizations today must connect with their customers through an ever-growing array of channels and devices.** The customer experience spans physical stores, websites, mobile apps, social media, email, and e-commerce platforms. This diversity requires organizations to create many more versions of each piece of content. Personalization adds complexity by increasing the number of variations needed for each item. Despite budget constraints for content creation, there's still a need to produce more campaigns in the same timeframe, on a global scale. AEM Dynamic Media offers a comprehensive set of tools to meet these challenges, providing consistent, personalized, high-performance, and optimized brand experiences across all channels and devices. 
 
 Key Features of AEM Dynamic Media:
 
@@ -25,7 +27,8 @@ Key Features of AEM Dynamic Media:
 
 In the accompanying guide, you'll find a comprehensive list of best practices for maximizing the benefits of AEM Dynamic Media. As you embark on your Dynamic Media journey, make sure to consult these expert recommendations and resources.
 
-Stage Business Problem Best Practice Recommendation: This section will outline specific business challenges and provide targeted best practices and recommendations to address them effectively. -->
+Stage Business Problem Best Practice Recommendation: This section will outline specific business challenges and provide targeted best practices and recommendations to address them effectively.
+-->
 
 {{see-also-dm}}
 
@@ -105,7 +108,7 @@ For efficient asset organization that streamlines workflows, use one or more of 
 Organizing assets effectively involves categorizing them into folders, similar to file organization on a computer. Proper naming, structuring subfolders, and file management within these folders are crucial for efficient asset processing. Implementing systematic naming conventions and metadata practices maximizes the utility of your digital asset repository.
 Want to learn more? Go to [Organize assets in folders](/help/assets/organize-assets.md#organize-using-folders).
 * **Organize assets using tags:**
-Tagging assets enhances searchability, collection creation, and search ranking. Adobe Sensei's AI employs a self-learning algorithm for precise tagging, enabling quick asset retrieval. Adobe Sensei also recognizes and assigns relevant tags&ndash;including custom ones&ndash;to assets, simplifying asset management with automatic, descriptive tagging.
+Tagging assets enhances searchability, collection creation, and search ranking. Adobe AI employs a self-learning algorithm for precise tagging, enabling quick asset retrieval. Adobe AI also recognizes and assigns relevant tags&ndash;including custom ones&ndash;to assets, simplifying asset management with automatic, descriptive tagging.
 Want to learn more? Go to [Organize assets using tags](/help/assets/organize-assets.md#use-tags-to-organize-assets).
 * **Organize assets as collections:**
 Dynamic Media along with Experience Manager Assets allows for the efficient creation, editing, and sharing of asset collections among users. You can establish various collection types, including static lists and dynamic, search-based compilations. These collection types can be shared across diverse locations with customizable access and editing rights.
@@ -144,9 +147,9 @@ Want to try it? Go to [Fundamentals of creating image presets to render assets](
 
 **Business case:** *Ensure that the main point of interest of my images or videos remains in focus across devices.*
 
-Smart Crop is a feature in Dynamic Media that uses Adobe Sensei, Adobe's AI and machine learning framework, to automate the cropping of images and videos. It intelligently detects and focuses on the main subject or point of interest in an image or video. This intelligence ensures that the focal point is maintained across various screen sizes on desktop computers and mobile devices.
+Smart Crop is a feature in Dynamic Media that uses Adobe AI, Adobe's AI and machine learning framework, to automate the cropping of images and videos. It intelligently detects and focuses on the main subject or point of interest in an image or video. This intelligence ensures that the focal point is maintained across various screen sizes on desktop computers and mobile devices.
 
-A best practice is to create an Image Profile with Smart Crop. In the profile, you can define various screen sizes and let Adobe Sensei do the rest, ensuring that your images and videos are always optimized for the viewer's device.
+A best practice is to create an Image Profile with Smart Crop. In the profile, you can define various screen sizes and let Adobe AI do the rest, ensuring that your images and videos are always optimized for the viewer's device.
 
 Want to learn more? Watch [Using Smart Crop with AEM Assets Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minutes, 35 seconds) and [Using Dynamic Media Smart Crop for Video](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) (6 minutes, 22 seconds).
 
@@ -193,7 +196,7 @@ Dynamic Media offers a suite of commands for enhancing images and creating visua
 | Task | What to do |
 | --- | --- |
 | **Upload and publish your original image** | <ul><li> Start by uploading the original image to Dynamic Media.</li><li> Make sure that it is published and accessible through a URL.</li><li> In this example, a stock image of a watch with a white background (let's call it "Image X") is uploaded to Dynamic Media.<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer)</li></ul> |
-| **Create a mask** | <ul><li> Develop a mask that defines the subject (the area where you want to apply effects) and the background (the area you want to change).<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)</li><li> Masks are typically grayscale images, where white represents the subject, and black represents the background. You can create masks using tools like Adobe Photoshop.<br>Want to learn more? Go to [Creating and editing a quick mask in Photoshop](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).</li><li> For "Image X," create a mask that precisely outlines the subject you want to enhance. For example, a person, an object, and so on.</li></ul> | 
+| **Create a mask** | <ul><li> Develop a mask that defines the subject (the area where you want to apply effects) and the background (the area you want to change).<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)</li><li> Masks are typically grayscale images, where white represents the subject, and black represents the background. You can create masks using tools like Adobe Photoshop.<br>Want to learn more? Go to [Creating and editing a quick mask in Photoshop](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).</li><li> For "Image X," create a mask that precisely outlines the subject you want to enhance. For example, a person, an object, and so on.</li></ul> |
 | **Apply Dynamic Media URL commands for effects** |  After you have your mask, use URL commands to apply effects like an outer glow or change the background color to "Image X." Here are two examples:<ul><li> **Outer glow effect:**<br>To add an outer glow effect along the subject's boundary, edit the URL like this:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25)<br>In this URL, the `op_blur`, `op_grow`, and `opac` parameters create the outer glow effect.</li><li> **Background color change:**<br>To change the background color, use the URL with a different background color value:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&maskUse=invert&color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&maskUse=invert&color=255,255,0)<br> In this example, `color=255,255,0` sets the background color to yellow. Edit the background to a specific color for visual impact.</li></ul> |
 
 #### Add an image border
@@ -202,7 +205,7 @@ Dynamic Media lets you manipulate images directly through URLs, making it a powe
 
 | Task | What to do |
 | --- | --- |
-| **White border** | To add a white border, use the following URL:<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10)<br>In this URL, the `extend=10,10,10,10` parameter specifies the border size of ten pixels on all sides. | 
+| **White border** | To add a white border, use the following URL:<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10)<br>In this URL, the `extend=10,10,10,10` parameter specifies the border size of ten pixels on all sides. |
 | **Blur along the white border** | To add a blur effect along the white border, you can edit the URL as follows:<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0)<br>In this URL, the `effect=-1` parameter applies the blur effect, and `op_blur=60` controls the blur intensity. |
 | **Drop shadow effect along the outer boundary** | To add a drop shadow effect along the outer boundary, use this URL:<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&color=0,0,0)<br>The `$shadow$` parameter creates the shadow effect, and `color=0,0,0` sets the shadow color to black.  |
 
@@ -214,7 +217,7 @@ If you are looking to superimpose a logo or icon on an existing image, Dynamic M
 
 | Step | What to do |
 | --- | --- |
-| **Upload and publish the base image** | First, upload and publish the base image on which you want to superimpose the logo or icon. You can use any image as your base.<br>For example, here is a base image:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa). | 
+| **Upload and publish the base image** | First, upload and publish the base image on which you want to superimpose the logo or icon. You can use any image as your base.<br>For example, here is a base image:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa). |
 | **Upload and publish the logo or icon image** | Next, upload and publish the image that you want to superimpose over the base image. This image should be a transparent PNG with the logo or icon you want to overlay.<br>Here is the transparent PNG image of a star object with transparency effects that is going to be superimposed:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
 | **Apply the Dynamic Media URL** | Now, create a Dynamic Media URL that combines the base image and the logo or icon image. You can use URL commands to achieve this effect.<br>The URL structure looks something like this:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png)<br>where the asset<ul><li> `hotspotRetailBaseImage` is the base image.</li><li> `starxp` is the logo/icon image.</li><li> `layer=1` specifies that the logo or icon should be layered over the base image.</li><li> `scale=1.25` adjusts the size of the logo/icon.</li><li> `posN=0.33,-.25` determines the position of the logo/icon relative to the base image.</li><li> `fmt=png` ensures that the output is in PNG format.</li></ul> |
 

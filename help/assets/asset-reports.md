@@ -4,6 +4,7 @@ description: Reports about your assets in [!DNL Adobe Experience Manager Assets]
 contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
 ---
 # Asset reports {#asset-reports}
@@ -37,7 +38,8 @@ When a report is generated, you are notified via <!-- through an email (optional
 * Files
 * Link Share
 
-<!-- Removed download report.
+<!--
+ Removed download report.
 * Upload
 * Download
 * Expiration
@@ -118,7 +120,8 @@ When a report is generated, you are notified via <!-- through an email (optional
 
 You can add custom columns to the following reports to display more data for your custom requirements:
 
-<!-- Remove download report.
+<!--
+ Remove download report.
 * Upload
 * Download
 * Expiration
@@ -156,7 +159,8 @@ To add custom columns to these reports, follow these steps:
 
 1. Click **[!UICONTROL Create]** from the toolbar. A message notifies that the report generation is initiated.
 
-<!-- TBD: How to configure purge now? Is it using OSGi configurations?
+<!--
+ TBD: How to configure purge now? Is it using OSGi configurations?
 
 ## Configure purging service {#configure-purging-service}
 
@@ -172,7 +176,8 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 
 * If the [!UICONTROL Disk Usage Report] does not generate and if you are using [!DNL Dynamic Media], ensure that all assets are processed correctly. To resolve, reprocess the assets and generate the report again.
 
-<!-- These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
+<!--
+ These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
 
 TBD: How do enable this in CS now? Is it done using some OSGi config now?
    >[!NOTE]
@@ -180,7 +185,8 @@ TBD: How do enable this in CS now? Is it done using some OSGi config now?
    >Before you can generate an **[!UICONTROL Asset Downloaded]** report, ensure that the Asset Download service is enabled. From the web console (`https://[aem_server]:[port]/system/console/configMgr`), open the **[!UICONTROL Day CQ DAM Event Recorder]** configuration, and select the **[!UICONTROL Asset Downloaded (DOWNLOADED)]** option in Event Types if not already selected.
 -->
 
-<!-- Removed download report.
+<!--
+ Removed download report.
    >[!NOTE]
    >
    >By default, the Content Fragments and link shares are included in the asset [!UICONTROL Download] report. Select the appropriate option to create a report of link shares or to exclude Content Fragments from the download report.
@@ -192,15 +198,20 @@ TBD: How do enable this in CS now? Is it done using some OSGi config now?
 
 **See also**
 
-* [Translate Assets](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [Assets supported file formats](file-format-support.md)
-* [Search assets](search-assets.md)
-* [Connected assets](use-assets-across-connected-assets-instances.md)
-* [Metadata schemas](metadata-schemas.md)
-* [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata.md)
-* [Search facets](search-facets.md)
-* [Manage collections](manage-collections.md)
-* [Bulk metadata import](metadata-import-export.md)
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
+

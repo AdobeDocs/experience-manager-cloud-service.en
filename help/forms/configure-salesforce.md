@@ -3,6 +3,7 @@ title: How to configure Salesforce out of the box form data models for Adaptive 
 description: Learn how to integrate Salesforce with Adaptive Forms.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 184db05b-7237-4dce-8059-03c39b93d7d7
 ---
 # Configure Salesforce for AEM Forms {#configure-azure-storage}
@@ -53,6 +54,7 @@ Perform the following steps to configure the [!DNL Salesforce] cloud service:
 A [!DNL Salesforce] Form Data Model (FDM) is available out of the box on the [!DNL AEM Forms] Server after you [set up a development project for Forms based on Experience Manager archetype](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
 
 To access the Form Data Model (FDM):
+
 1. Navigate to **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Data Integrations]**.  
 1. Select the folder name, select the **[!UICONTROL Salesforce Data Model]**, and select the Edit ![Edit](assets/edit.png) icon to view the form data model (FDM).
 

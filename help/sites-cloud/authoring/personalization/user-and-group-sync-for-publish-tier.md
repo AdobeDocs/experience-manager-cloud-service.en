@@ -1,6 +1,7 @@
 ---
 title: Registration, Login, and User Profile 
 description: Learn about Registration, Login, User Data and Group Synchronization for AEM as a Cloud Service
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 solution: Experience Manager Sites
 feature: Authoring, Personalization
@@ -107,8 +108,7 @@ User profile information can be written and read in two ways:
 
 **Prerequisite:**
 
-For the server-side user profile persistence logic to function correctly, please enable [data synchronization](#data-synchronization-data-synchronization) by submitting
-a request to Customer Support indicating the appropriate program and environments.
+For the server-side user profile persistence logic to function correctly, please enable [data synchronization](#data-synchronization-data-synchronization) by submitting a request to Customer Support indicating the appropriate program and environments.
 
 ### Third-party data stores {#third-party-data-stores}
 
@@ -118,8 +118,7 @@ Real-time access to third-party services to retrieve profile attributes is possi
 
 **Prerequisite:**
 
-For the above-described logic to function correctly, please enable [data synchronization](#data-synchronization-data-synchronization) by submitting
-a request to Customer Support indicating the appropriate program and environments.
+For the above-described logic to function correctly, please enable [data synchronization](#data-synchronization-data-synchronization) by submitting a request to Customer Support indicating the appropriate program and environments.
 
 ## Permissions (Closed User Groups) {#permissions-closed-user-groups}
 
@@ -143,6 +142,22 @@ Unlike other AEM solutions, user and group membership synchronization in AEM as 
 >[!IMPORTANT]
 >
 >Test the implementation at scale before enabling data synchronization in the production environment. Depending on the use case and the data persisted, some consistency and latency issues might occur.
+
+### Custom Code and Migration Requirements {#custom-code-and-migration-requirements}
+
+The following requirements apply only in cases where custom code is used to create local users or local groups. When Data Synchronization is enabled, such custom code must be updated to create external users and external groups with dynamic group membership.
+
+**Required Steps:**
+
+* **Modifications to custom code**: Any custom logic responsible for creating users or groups must be updated to:
+
+  * Create external users by setting the `rep:externalId` property
+  * Create external groups by setting the `rep:externalId` property
+  * Implement dynamic group membership using the `rep:externalPrincipalNames` property, rather than using direct user-to-group relationships
+
+* **Migration of pre-existing data**: All existing local users and groups are required to be migrated to the external identity model before Data Synchronization is enabled in production environments.
+
+For detailed technical guidance on updating custom implementations and migrating existing users and groups, refer to [Migrating to External Identity and Dynamic Group Membership](/help/security/migrating-to-external-identity.md).
 
 ## Cache Considerations {#cache-considerations}
 

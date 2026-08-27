@@ -1,6 +1,7 @@
 ---
 title: Approve assets for Content Hub
 description: Learn how to approve assets in Assets as a Cloud Service to make them available in Content Hub.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
 ---
 # Approve assets for Content Hub {#approve-assets-content-hub}
@@ -77,10 +78,6 @@ To set approval target:
 
    For more information on the available options, see [Default Approval Target and publish destinations for approved assets](#default-approval-target-options-publish-destinations).
 
-   >[!NOTE]
-   >
-   >Setting an approval target is a limited availability feature. You can get it enabled or disabled by creating a support ticket. If you have Dynamic Media with OpenAPI enabled, it is enabled by default.
-
    ![Approval status](/help/assets/assets/approval-status-delivery.png)
 
 1. Specify other asset properties and click **[!UICONTROL Save]**.
@@ -151,3 +148,61 @@ The display of assets uploaded using Content Hub depends on if you have [enabled
 * If the **[!UICONTROL Auto-approval]** toggle is disabled, the assets that you upload using Content Hub do not display automatically. The assets are available in the `hydrated-assets` folder of your Assets as a Cloud Service environment. Navigate to the folder and [bulk edit](#bulk-approve-assets-content-hub) the status of those assets to `Approved` for those assets to display in Content Hub.
 
 ![Content Hub approval process](/help/assets/assets/content-hub-approval.png)
+
+## Frequently asked questions {#faqs-content-hub-approved-assets}
+
+### What is the purpose of approving assets for AEM Assets Content Hub in Experience Manager as a Cloud Service? {#approving-assets-content-hub}
+
+Approving assets ensures that only the latest and approved versions are available for use within AEM Assets Content Hub, maintaining strict brand consistency across all channels and applications. This controlled process streamlines asset management for brand managers and marketers.
+
+### What are the prerequisites required to approve assets for AEM Assets Content Hub?
+
+You must have access to AEM Assets as a Cloud Service and write permissions to edit asset metadata, specifically the **Status** field in asset properties.
+
+### How do you approve a single asset using the Assets view in AEM as a Cloud Service so that it is available in AEM Assets Content Hub?
+
+Select the asset, click **Details** in the toolbar, navigate to the **Basic** tab, choose **Approved** from the **Status** drop-down list, and click **Save**. The asset is made available in AEM Assets Content Hub.
+
+### Can assets be approved in bulk for AEM Assets Content Hub, and if so, how?
+
+Yes, assets can be approved in bulk. In the Assets view, select multiple assets, click **Bulk Metadata Edit**, select **Approved** in the **Status** field under Properties, and click **Save**. All selected assets are available in AEM Assets Content Hub.
+
+### How does the asset approval process work in AEM Assets Content Hub? {#asset-approval-content-hub}
+
+If the Auto-approval toggle is enabled, assets uploaded using AEM Assets Content Hub are automatically available. If it is disabled, uploaded assets are placed in the **hydrated-assets** folder in Assets as a Cloud Service, and you need to manually bulk edit their status to **Approved** to make them display in Content Hub.
+
+### What is the Approval Target field in AEM Assets view and how does it affect asset publishing?
+
+The **Approval Target** field on the Asset Details page lets you choose where approved assets are published. Options include **Delivery** (publishes to both Dynamic Media with OpenAPI and Content Hub) or **Content Hub** only. If no option is selected, the default for your Assets as a Cloud Service environment is applied. See [Default Approval Target and publish destinations for approved assets](#default-approval-target-options-publish-destinations) for more information.
+
+
+### What happens if you do not see the Approval Target field on the AEM Assets View asset details page?
+
+If the **Approval Target** field is missing on the Assets View asset details page, you should edit your metadata form, drag the **Approval for** field from available components to your form, and click **Save**. This allows you to set approval targets for assets.
+
+### How can you automate approval for newly ingested assets in AEM Assets Admin view?
+
+Create a folder in the author environment, navigate to **Tools** > **Assets** > **Metadata Profiles**, create and edit a metadata profile. Add a Single Line Text Field, label it **Approved Assets**, map it to './jcr:content/metadata/dam:status', and set its default value to `approved`. Apply the metadata profile to the folder. This automatically approves new assets added to the folder.
+
+### Who can access approved assets in AEM Assets Content Hub, and what controls are in place?
+
+Approved assets are available to users who are part of the same organization within AEM Assets Content Hub. Strict controls ensure only the latest, approved versions are accessible, helping maintain brand consistency and security.
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

@@ -4,8 +4,9 @@ description: Configure Rich Text Editor to author content in [!DNL Adobe Experie
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
+
 # Configure the Rich Text Editor {#configure-the-rich-text-editor}
 
 The Rich Text Editor (RTE) provides authors with a wide range of functionality to edit text content. Icons, selection boxes, toolbar, and menus are provided for a WYSIWYG text-editing experience. Administrators configure the RTE to enable, disable, and extend the features available in the authoring components. See how authors [use RTE for authoring](/help/sites-cloud/authoring/page-editor/rich-text-editor.md) web content.
@@ -17,6 +18,10 @@ The RTE concepts and steps required to configure it are listed below.
 | [Understand the interface](#understand-rte-ui) | [Understand and set config locations](#understand-the-configuration-paths-and-locations) | [Configure plug-ins](#enable-rte-functionalities-by-activating-plug-ins) |
 | [Types of editing modes](#editingmodes) | [Activate plug-ins](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#activateplugin) | [Set feature properties](#aboutplugins) |
 | [About plug-ins](#aboutplugins) | [Configure RTE toolbars](#dialogfullscreen) | [Configure the paste modes](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles) |
+
+>[!NOTE]
+>
+>The RTE described in this document describes the one available in the Page Editor. If you are using the modern Universal Editor, please see the document [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md) for details.
 
 ## Understand the user interface available to authors {#understand-rte-ui}
 
@@ -145,8 +150,10 @@ RTE functionalities are made available via a series of plug-ins, each with featu
 
 For detailed configurations of the RTE plug-ins, see [how to activate and configure the RTE plug-ins](configure-rich-text-editor-plug-ins.md).
 
-<!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
-**Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
+<!--
+ TBD ENGREVIEW: To confirm if the sample works in CS or not?
+**Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled.
+-->
 
 The [Core Components text component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) lets template editors to configure many RTE plug-ins using the user interface as content policies, eliminating the need for technical configuration. Content policies can work with RTE UI configurations as described in this document. For more information, see [create page templates](/help/sites-cloud/authoring/page-editor/templates.md) and the [Core Components developer documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 

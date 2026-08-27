@@ -3,6 +3,7 @@ title: Managing Translation Projects
 description: Learn how to create and manage both machine and human translation projects in AEM.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 solution: Experience Manager Sites
 ---

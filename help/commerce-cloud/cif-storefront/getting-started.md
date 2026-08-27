@@ -55,7 +55,7 @@ There are two options to configure the endpoint:
 
 This configuration can be done using a dialog box on the Environment Details page. When viewing this page for a Commerce-enabled program, a button is displayed if the endpoint is not currently configured:
 
-![CM Enviornment Information](/help/commerce-cloud/cif-storefront/assets/commerce-cmui.png)
+![CM Environment Information](/help/commerce-cloud/cif-storefront/assets/commerce-cmui.png)
 
 Clicking this button opens a dialog box:
 
@@ -63,7 +63,7 @@ Clicking this button opens a dialog box:
 
 After the endpoint and optionally an authorization header for staged catalog support is set, the endpoint is displayed on the detail page. Clicking the Edit icon to open the same dialog box where you can edit the endpoint, if necessary.
 
-![CM Enviornment Information](/help/commerce-cloud/cif-storefront/assets/commerce-cmui-done.png)
+![CM Environment Information](/help/commerce-cloud/cif-storefront/assets/commerce-cmui-done.png)
 
 ### By way of Adobe I/O CLI  {#adobe-cli}
 
@@ -122,14 +122,19 @@ The following properties can be configured:
 * GraphQL Client - select the configured GraphQL client for commerce backend communication. This client should typically stay at default.
 * Store View - the store view identifier. If empty, the default store view is used.
 * GraphQL Proxy Path - the URL path GraphQL Proxy in AEM use to proxy requests to the commerce backend GraphQL endpoint.
+
   >[!NOTE]
   >
   > In most setups, the default value `/api/graphql` must not be changed. Only advanced setup not using the provided GraphQL proxy should change this setting.
+
 * Enable Catalog UID Support - enable support for UID instead of ID in the commerce backend GraphQL calls.
+
   >[!NOTE]
   >
   > Support for UIDs got introduced in Adobe Commerce 2.4.2. Only enable UIDs if your commerce backend supports a GraphQL schema of version 2.4.2 or later.
+
 * Catalog Root Category Identifier - the identifier (UID or ID) of the store catalog root
+
   >[!CAUTION]
   >
   > Starting with CIF Core Components version 2.0.0 the support for `id` was removed and replaced with `uid`. If your project uses CIF Core Components version 2.0.0 you must enable Catalog UID Support and use a valid category UID as "Catalog Root Category Identifier".

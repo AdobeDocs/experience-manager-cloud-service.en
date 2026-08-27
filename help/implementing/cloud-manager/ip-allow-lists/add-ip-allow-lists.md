@@ -4,27 +4,25 @@ description: Learn how to add your own IP Allow Lists using Cloud Manager.
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Add an IP Allow List {#add-ip-allow-list}
 
-Learn how to add your own IP Allow List using Cloud Manager.
+Configure your IP Allow List using Cloud Manager.
 
-A user in the **Business Owner** or **Deployment Manager** role can follow these steps to add an IP Allow List.
+To add an IP Allow List, a user in the **Business Owner** or **Deployment Manager** role can follow these steps.
 
 {{add-cm-allowlist-frontend-pipeline}}
 {{ip-allow-lists-ue}}
 
 **To add an IP Allow List:**
 
-1. Log into Cloud Manager at [experience.adobe.com](https://experience.adobe.com/experiencemanager/).
+{{sign-in-to-cloud-manager}}
 
-1. In the left side menu, click Cloud Manager, then select the appropriate organization.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select a program.
 
-1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
-
-1. From the **Program Overview** page, using the left side menu (you may need to click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) in the upper-left corner to see the menu), click ![Task list icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP Allow Lists**.
+1. From the **Program Overview** page, using the left navigation menu (if necessary, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) in the upper-left corner to see the menu), click ![Task list icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP Allow Lists**.
 
    ![IP Allow Lists option in the left side menu](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 
@@ -32,16 +30,16 @@ A user in the **Business Owner** or **Deployment Manager** role can follow these
 
    ![The Add IP Allow List dialog box](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create02.png)
 
-1. In the **Add IP Allow List** dialog box, in the **IP Allow List name** field, enter a name that you want to use to reference the IP Allow List. This name is informational only. Be sure it is descriptive enough to help you identify the list.
+1. In the **Add IP Allow List** dialog box, in the **IP Allow List name** field, enter a name that you want to use to reference the IP Allow List. This name is informational only. Ensure it is descriptive enough to help you identify the list.
 
 1. In the **IP address / CIDR** field, enter up to 50 IP addresses or CIDR blocks. You can add them in either of the following ways:
 
    * One at a time: Type an address, then press `Enter`. Repeat for each additional address.
-   * Multiple at once: Type addresses separated by commas (,) or tabs, then press `Enter` so that each address is recognized individually.
+   * Multiple simultaneously: Type addresses separated by commas (,) or tabs, then press `Enter` to process each address.
 
-1. After you finish entering the last IP address or CIDR block, press `Enter` to confirm the input. The entry is acknowledged only after you press `Enter`, and the **Save** button becomes active.
+1. After you enter the last IP address or CIDR block, press `Enter` to confirm the input. The entry is acknowledged only after you press `Enter`, and the **Save** button becomes active.
 
 1. Click **Save**.
 
-After saving, the newly created IP Allow List appears as a row in the table in the **IP Allow Lists** page.
+After saving, the newly created IP Allow List appears as a row in the **IP Allow Lists** page table.
 

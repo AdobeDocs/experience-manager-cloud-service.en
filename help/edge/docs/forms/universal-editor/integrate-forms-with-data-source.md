@@ -161,7 +161,7 @@ After completing the integration:
 
 1. **Test data binding**: Verify form fields display correct data
 2. **Validate submissions**: Ensure data saves to configured sources
-3. **Check error handling**: Test with invalid data scenarios
+3. **Check error handling**: Test with invalid data scenarios 
 
 ## Next Steps
 

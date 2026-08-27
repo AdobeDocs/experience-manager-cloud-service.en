@@ -3,8 +3,8 @@ title: SPA Reference Materials
 description: An overview of the single page application API references and source code repositories
 exl-id: c1cc2bd8-8ff1-406c-a0ce-0af001d66b53
 feature: Developing
-role: Admin, Architect, Developer
-index: no
+role: Admin, Developer
+index: false
 ---
 
 # SPA Reference Materials {#spa-reference-materials}

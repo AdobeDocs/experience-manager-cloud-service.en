@@ -49,7 +49,7 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 **Add shapes to Dynamic Media templates**
 
-You can now [add shape layers to Dynamic Media templates](/help/assets/dynamic-media/dynamic-media-templates.md#add-shapes-to-the-canvas) in Experience Manager Assets. Similar to image and text layers, shape layers support parameters for real-time updates via the template URL. You can also include call-to-action (CTA) links to shapes in your templates.
+You can now [add shape layers to Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md#add-shapes-to-the-canvas) in Experience Manager Assets. Similar to image and text layers, shape layers support parameters for real-time updates via the template URL. You can also include call-to-action (CTA) links to shapes in your templates.
 
 ![Add shpaes to Dynamic Media templates](/help/assets/assets/enable-uniform-radius-shape.png)
 
@@ -119,7 +119,8 @@ Key benefits include:
 
 The [AFP Output Sync API](/help/forms/document-generation-afp-api.md) enables administrators and users to generate AFP (Advanced Function Presentation) output from Adaptive Forms and synchronize the output with external systems or storage locations. AFP is a high-performance document format optimized for printing, often used in large-scale enterprise environments.
 
-<!-- ### New pre-release features in AEM Forms {#forms-new-pre-release-features}
+<!--
+ ### New pre-release features in AEM Forms {#forms-new-pre-release-features}
 
 **Enhancements in Rule Editor**
 
@@ -141,7 +142,8 @@ The AEM Forms Early Access Program offers a unique opportunity for you to get ex
 These release notes list the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
 
-<!-- **Forms Optimization opportunities**
+<!--
+ **Forms Optimization opportunities**
 
 Forms Optimization uses AI to analyze your forms and suggest improvements for better performance. It highlights forms with low engagement, flags accessibility issues, and generates AI-powered variations to help increase conversion rates and compliance with WCAG standards.
 
@@ -154,7 +156,8 @@ Key optimization opportunities include:
 * Addressing accessibility compliance issues
 * Streamlining navigation to enhance user experience
 
-With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. --> 
+With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive.
+-->
 
 **Rule Editor for Interactive Communications Editor** 
 
@@ -236,18 +239,20 @@ Please review and update any downstream processes that rely on custom logging be
 
 ### Default Purging of Older Versions and Audit Logs {#mt-defaults}
 
-Currently, content versions and audit logs have their associated *purge maintenance tasks- disabled by default and thus no data is removed unless explicitly configured. 
+Currently, content versions and audit logs have their associated *purge maintenance tasks* disabled by default and thus no data is removed unless explicitly configured. 
 
-However, to optimize repository performance, purging will be enabled by default at a future announced date, following these guidelines:
+However, to optimize repository performance, purging will be enabled by default at a future announced date.
+
+For more details, see the [Maintenance Tasks article](/help/operations/maintenance.md#defaults).
 
 #### Content Versions {#mt-content}
 
-* **New environments*- (created after an upcoming date (to be communicated later)
-  * Versions older than **30 days*- will periodically be deleted.
+* **New environments** (created after an upcoming date, to be communicated later):
+  * Versions older than 30 days will periodically be deleted.
   * The most recent five versions within the last 30 days are retained, along with the most recent version and the current version, regardless of their age.
 
-* **Existing environments*- (created before this upcoming date):
-  * Versions older than **7 years*- will periodically be deleted.
+* **Existing environments** (created before this upcoming date):
+  * Versions older than 7 years will periodically be deleted.
   * All versions within the past 7 years are retained.
   * This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
 
@@ -255,18 +260,16 @@ However, to optimize repository performance, purging will be enabled by default 
 
 #### Audit Log {#mt-auditlogs}
 
-* **New environments*- (created after an upcoming date, which will be communicated separately):
-  * Replication, DAM, and page audit logs older than **7 days*- will periodically be deleted.
+* **New environments** (created after an upcoming date, which will be communicated separately):
+  * Replication, DAM, and page audit logs older than 7 days will periodically be deleted.
   * All events are logged by default.
 
-* **Existing environments*- (created before this upcoming date):
-  * Replication, DAM, and page audit logs older than **7 years*- will periodically be deleted.
+* **Existing environments** (created before this upcoming date):
+  * Replication, DAM, and page audit logs older than 7 years will periodically be deleted.
   * All events are logged by default.
   * This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
 
 * You may modify these defaults through YAML configuration, deployed using the config pipeline.
-
-For more details, see the [Maintenance Tasks article](/help/operations/maintenance.md#defaults).
 
 ### Edge Computing (Alpha Program) {#edge-computing}
 

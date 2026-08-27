@@ -4,16 +4,16 @@ description: Learn about Cloud Manager's custom code quality rules, based on Ado
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
-# Custom code quality rules {#custom-code-quality-rules} 
+# Custom code quality rules {#custom-code-quality-rules}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_customcodequalityrules"
 >title="Custom Code Quality Rules"
->abstract="Learn about Cloud Manager's custom code quality rules, based on Adobe Experience Manager Engineering best practices, to ensure high-quality code through thorough testing."
+>abstract="To ensure high-quality code through thorough testing, learn about Cloud Manager's custom code quality rules, based on Adobe Experience Manager Engineering best practices."
 
-Learn about Cloud Manager's custom code quality rules, based on Adobe Experience Manager Engineering best practices, to ensure high-quality code through thorough testing. See also [code quality testing](/help/implementing/cloud-manager/code-quality-testing.md).
+To ensure high-quality code through thorough testing, learn about Cloud Manager's custom code quality rules, based on Adobe Experience Manager Engineering best practices. See also [code quality testing](/help/implementing/cloud-manager/code-quality-testing.md).
 
 Full SonarQube rules are not available for download due to Adobe proprietary information. You can download the complete list of *current* rules [using this link](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx). Continue reading this document for descriptions and examples of the rules.
 
@@ -23,7 +23,7 @@ Full SonarQube rules are not available for download due to Adobe proprietary inf
 
 >[!NOTE]
 >
->The code samples provided here are only for illustrative purposes. See the SonarQube [Concepts documentation](https://docs.sonarsource.com/sonarqube/latest/) to learn about SonarQube concepts and quality rules.
+>The code samples provided here are only for illustrative purposes. To learn about SonarQube concepts and quality rules, see the SonarQube [Concepts documentation](https://docs.sonarsource.com/sonarqube/latest).
 
 ## SonarQube rules {#sonarqube-rules}
 
@@ -43,16 +43,16 @@ The methods `Thread.stop()` and `Thread.interrupt()` can produce hard-to-reprodu
 ```java
 public class DontDoThis implements Runnable {
   private Thread thread;
- 
+
   public void start() {
     thread = new Thread(this);
     thread.start();
   }
- 
+
   public void stop() {
     thread.stop();  // UNSAFE!
   }
- 
+
   public void run() {
     while (true) {
         somethingWhichTakesAWhileToDo();
@@ -67,16 +67,16 @@ public class DontDoThis implements Runnable {
 public class DoThis implements Runnable {
   private Thread thread;
   private boolean keepGoing = true;
- 
+
   public void start() {
     thread = new Thread(this);
     thread.start();
   }
- 
+
   public void stop() {
     keepGoing = false;
   }
- 
+
   public void run() {
     while (this.keepGoing) {
         somethingWhichTakesAWhileToDo();
@@ -85,14 +85,14 @@ public class DoThis implements Runnable {
 }
 ```
 
-### Do not use format strings that may be externally controlled {#do-not-use-format-strings-which-may-be-externally-controlled}
+### Do not use format strings that are externally controlled {#do-not-use-format-strings-which-may-be-externally-controlled}
 
 * **Key**: CQRules:CWE-134
 * **Type**: Vulnerability
 * **Severity**: Major
 * **Since**: Version 2018.4.0
 
-Using a format string from an external source (such as a request parameter or user-generated content) can expose an application to denial of service attacks. There are circumstances where a format string may be externally controlled, but is only allowed from trusted sources.
+Using a format string from an external source (such as a request parameter or user-generated content) can expose an application to denial of service attacks. There are circumstances where a format string is externally controlled, but is only allowed from trusted sources.
 
 #### Non-compliant code {#non-compliant-code-1}
 
@@ -111,7 +111,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **Severity**: Critical
 * **Since**: Version 2018.6.0
 
-When making HTTP requests within an Experience Manager application, it is essential to configure appropriate timeouts to prevent unnecessary thread consumption. 
+When making HTTP requests within an Experience Manager application, it is essential to configure appropriate timeouts to prevent unnecessary thread consumption.
 By default, both the Java&trade; HTTP Client (java.net.HttpUrlConnection) and the widely used Apache HTTP Components client do not impose timeouts, so they must be manually configured. As a best practice, timeouts should be set to 60 seconds or less.
 
 #### Non-compliant code {#non-compliant-code-2}
@@ -119,7 +119,7 @@ By default, both the Java&trade; HTTP Client (java.net.HttpUrlConnection) and th
 ```java
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
- 
+
 public void dontDoThis() {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   HttpClient httpClient = builder.build();
@@ -130,15 +130,15 @@ public void dontDoThis() {
 public void dontDoThisEither() {
   URL url = new URL("http://www.google.com");
   URLConnection urlConnection = url.openConnection();
- 
+
   BufferedReader in = new BufferedReader(new InputStreamReader(
     urlConnection.getInputStream()));
- 
+
   String inputLine;
   while ((inputLine = in.readLine()) != null) {
     logger.info(inputLine);
   }
- 
+
   in.close();
 }
 ```
@@ -148,7 +148,7 @@ public void dontDoThisEither() {
 ```java
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
- 
+
 public void doThis() {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   RequestConfig requestConfig = RequestConfig.custom()
@@ -156,9 +156,9 @@ public void doThis() {
     .setSocketTimeout(5000)
     .build();
   builder.setDefaultRequestConfig(requestConfig);
- 
+
   HttpClient httpClient = builder.build();
-   
+
   // do something with the client
 }
 
@@ -167,15 +167,15 @@ public void orDoThis () {
   URLConnection urlConnection = url.openConnection();
   urlConnection.setConnectTimeout(5000);
   urlConnection.setReadTimeout(5000);
- 
+
   BufferedReader in = new BufferedReader(new InputStreamReader(
     urlConnection.getInputStream()));
- 
+
   String inputLine;
   while ((inputLine = in.readLine()) != null) {
     logger.info(inputLine);
   }
- 
+
   in.close();
 }
 ```
@@ -229,7 +229,7 @@ public void orDoThis(Session session) throws Exception {
 * **Severity**: Major
 * **Since**: Version 2018.4.0
 
-As described in the [Sling documentation](https://sling.apache.org/documentation/the-sling-engine/servlets.html), bindings servlets by paths are discouraged. Path-bound servlets cannot use standard JCR access controls and, as a result, require additional security rigor. Rather than using path-bound servlets, it is recommended to create nodes in the repository and register servlets by resource type.
+As described in the [`Sling` documentation](https://sling.apache.org/documentation/the-sling-engine/servlets.html), binding servlets by paths is discouraged. Path-bound servlets cannot use standard JCR access controls and, as a result, require additional security rigor. Rather than using path-bound servlets, it is recommended to create nodes in the repository and register servlets by resource type.
 
 #### Non-compliant code {#non-compliant-code-5}
 
@@ -249,7 +249,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
-In general, an exception should be logged exactly one time. Logging exceptions multiple times can cause confusion. The reason is because it is unclear how many times an exception occurred. The most common pattern that leads to this effect is logging and throwing a caught exception.
+In general, an exception should be logged exactly one time. Logging exceptions multiple times can cause confusion. The reason is that it is unclear how many times an exception occurred. The most common pattern that leads to this result is logging and throwing a caught exception.
 
 #### Non-compliant code {#non-compliant-code-6}
 
@@ -291,7 +291,7 @@ public void orDoThis() throws MyCustomException {
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
-Another common pattern to avoid is to log a message and then immediately throw an exception. This practice generally indicates that the exception message ends up duplicated in log files.
+Another common pattern to avoid is logging a message and then immediately throwing an exception. This practice indicates that the exception message ends up duplicated in log files.
 
 #### Non-compliant code {#non-compliant-code-7}
 
@@ -316,7 +316,7 @@ public void doThis() throws Exception {
 * **Type**: `Code Smell`
 * **Severity**: Minor
 
-In general, the INFO log level should be used to demarcate important actions and, by default, Experience Manager is configured to log at the INFO level or above. GET and HEAD methods should only ever be read-only operations and thus do not constitute important actions. Logging at the INFO level in response to GET or HEAD requests is likely to create significant log noise, making it harder to identify useful information in log files. When handling GET or HEAD requests, log at the WARN or ERROR levels if something has gone wrong. Use DEBUG or TRACE levels if detailed troubleshooting information is needed.
+In general, the INFO log level should be used to demarcate important actions and, by default, Experience Manager is configured to log at the INFO level or above. GET and HEAD methods should only ever be read-only operations and thus do not constitute important actions. Logging at the INFO level in response to GET or HEAD requests creates significant log noise, making it harder to identify useful information in log files. When handling GET or HEAD requests, log at the WARN or ERROR levels if something has gone wrong. Use DEBUG or TRACE levels if detailed troubleshooting information is needed.
 
 >[!NOTE]
 >
@@ -345,7 +345,7 @@ public void doGet() throws Exception {
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
-As a best practice, log messages should provide contextual information about where in the application an exception has occurred. While context can also be determined by using stack traces, in general the log message is going to be easier to read and understand. As a result, when logging an exception, it is a bad practice to use the exception's message as the log message. The exception message explains what went wrong, while the log message should inform the reader about what the application was doing when the exception occurred. The exception message is still logged. By specifying your own message, the logs are easier to understand.
+As a best practice, log messages should provide contextual information about where in the application an exception has occurred. While context is also determined by using stack traces, in general the log message is easier to read and understand. As a result, when logging an exception, it is a bad practice to use the exception's message as the log message. The exception message explains what went wrong, while the log message informs the reader about what the application was doing when the exception occurred. The exception message is still logged. By specifying your own message, the logs are easier to understand.
 
 #### Non-compliant code {#non-compliant-code-9}
 
@@ -411,7 +411,7 @@ public void doThis() {
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
-As mentioned, context is critical when understanding log messages. Using `Exception.printStackTrace()` causes only the stack trace to be output to the standard error stream, losing all context. Further, in a multi-threaded application like Experience Manager, if multiple exceptions are printed using this method in parallel, their stack traces may overlap, which produces significant confusion. Exceptions should be logged through the logging framework only.
+As mentioned, context is critical when understanding log messages. Using `Exception.printStackTrace()` causes only the stack trace to be output to the standard error stream, losing all context. Further, in a multi-threaded application like Experience Manager, parallel exceptions printed using this method cause overlapping stack traces and confusion. Exceptions should be logged through the logging framework only.
 
 #### Non-compliant code {#non-compliant-code-11}
 
@@ -444,7 +444,7 @@ public void doThis() {
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
-Logging in Experience Manager should always be done through the logging framework (SLF4J). Outputting directly to the standard output or standard error streams loses the structural and contextual information provided by the logging framework. Sometimes, it may cause performance issues.
+Logging in Experience Manager should always be done through the logging framework (SLF4J). Outputting directly to the standard output or standard error streams loses the structural and contextual information provided by the logging framework. Sometimes, it causes performance issues.
 
 #### Non-compliant code {#non-compliant-code-12}
 
@@ -477,7 +477,7 @@ public void doThis() {
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
-Paths starting with `/libs` and `/apps` should generally not be hardcoded. These paths are usually stored relative to the Sling search path, which defaults to `/libs,/apps`. Using the absolute path may introduce subtle defects that would only appear later in the project lifecycle.
+Paths starting with `/libs` and `/apps` are not hardcoded. These paths are usually stored relative to the `Sling` search path, which defaults to `/libs,/apps`. Using the absolute path introduces subtle defects that only appear later in the project lifecycle.
 
 #### Non-compliant code {#non-compliant-code-13}
 
@@ -502,9 +502,22 @@ public void doThis(Resource resource) {
 * **Severity**: Minor
 * **Since**: Version 2020.5.0
 
-Do not use the Sling Scheduler for tasks that require a guaranteed execution. Sling Scheduled Jobs guarantee execution and better suited for both clustered and non-clustered environments. 
+Do not use the `Sling` Scheduler for tasks that require a guaranteed execution. Sling Scheduled Jobs guarantee execution and are better suited for both clustered and non-clustered environments.
 
-See [Apache Sling Eventing and Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) to learn more about how Sling Jobs are handled in clustered environments.
+To learn more about how Sling Jobs are handled in clustered environments, see [`Apache Sling` Eventing and Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html).
+
+### Do not use Experience Manager deprecated APIs {#sonarqube-aem-api-deprecated}
+
+* **Key**: java:S1874
+* **Type**: `Vulnerability` or `Bug`/Cloud Service Compatibility
+* **Severity**: Info, Minor, or Major
+* **Since**: Version 2026.1.0
+
+The Experience Manager API surface is under constant revision to identify APIs for which usage needs to be stopped. These APIs are deprecated and marked with a removal date.
+
+The closer the removal date gets, the higher the severity of violating this rule is. Usage of such APIs must be replaced with a safe alternative.
+
+Reference [this article](/help/release-notes/deprecated-removed-features.md#aem-apis) for guidance on how to remove usage of deprecated APIs.
 
 ### Do not use Experience Manager deprecated APIs {#sonarqube-aem-deprecated}
 
@@ -513,11 +526,11 @@ See [Apache Sling Eventing and Job Handling](https://sling.apache.org/documentat
 * **Severity**: Minor
 * **Since**: Version 2020.5.0
 
-The Experience Manager API surface is under constant revision to identify APIs for which usage is discouraged and thus considered deprecated. 
+The Experience Manager API surface is under constant revision to identify APIs for which usage is discouraged and thus considered deprecated.
 
-Often, these APIs are deprecated using the standard Java&trade; `@Deprecated` annotation and, as such, as identified by `squid:CallToDeprecatedMethod`.
+Often, these APIs are deprecated using the standard Java&trade; `@Deprecated` annotation and, as such, `squid:CallToDeprecatedMethod` identifies it.
 
-However, there are cases where an API is deprecated in the context of Experience Manager but may not be deprecated in other contexts. This rule identifies this second class.
+However, there are cases where an API is deprecated in the context of Experience Manager but is not deprecated in other contexts. This rule identifies this second class.
 
 ### Do not use @Inject annotation with @Optional in Sling Models {#sonarqube-slingmodels-inject-optional}
 
@@ -526,9 +539,9 @@ However, there are cases where an API is deprecated in the context of Experience
 * **Severity**: Minor
 * **Since**: Version 2023.11
 
-The Apache Sling project discourages the use of the `@Inject` annotation in the context of Sling Models, as it can lead to bad performance when combined with the `DefaultInjectionStrategy.OPTIONAL` (either at field or class level). Instead, more specific injections (like the `@ValueMapValue` or `@OsgiInjector` annotations) should be used.
+The `Apache Sling` project discourages the use of the `@Inject` annotation in the context of Sling Models, as it can lead to bad performance when combined with the `DefaultInjectionStrategy.OPTIONAL` (either at field or class level). Instead, more specific injections (like the `@ValueMapValue` or `@OsgiInjector` annotations) should be used.
 
-Check the [Apache Sling documentation](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) for more information about the recommended annotations and why this recommendation was made in the first place.
+Check the [`Apache Sling` documentation](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) for more information about the recommended annotations and why this recommendation was made in the first place.
 
 
 ### Reuse instances of a HTTPClient {#sonarqube-reuse-httpclient}
@@ -538,9 +551,9 @@ Check the [Apache Sling documentation](https://sling.apache.org/documentation/bu
 * **Severity**: Minor
 * **Since**: Version 2023.11
 
-AEM applications often reach out to other applications using the HTTP protocol, and the Apache HttpClient is an often used library to achieve this end. But the creation of such an HttpClient object comes with some overhead, so these objects should be reused as much as possible. 
+AEM applications often connect to other applications using the HTTP protocol, and the Apache HttpClient is an often used library to achieve this goal. But the creation of such an HttpClient object comes with some overhead, so these objects should be reused as much as possible.
 
-This rule checks that such an HttpClient object is not private within a method, but global on a class level, so it can be reused. In this case, the HttpClient field should be set in the constructor of the class or the `activate()` method (if this class is an OSGi component/service). 
+This rule checks that such an HttpClient object is not private within a method, but global on a class level, so it can be reused. In this case, the HttpClient field should be set in the constructor of the class or the `activate()` method (if this class is an OSGi component/service).
 
 Check the [Optimization Guide](https://hc.apache.org/httpclient-legacy/performance.html) of the HttpClient for some best practices regarding the use of the HttpClient.
 
@@ -606,7 +619,7 @@ public class DontDoThis implements Page {
 * **Severity**: Blocker
 * **Since**: 2021.8.0
 
-Multiple out-of-the-box Experience Manager Oak indexes include a Tika configuration and customizations of these indexes must include a Tika configuration. This rule checks for customizations of the `damAssetLucene`, `lucene`, and `graphqlConfig` indexes and raises an issue if either the `tika`  node is missing or if the `tika` node is missing a child node named `config.xml`.
+Multiple standard Experience Manager Oak indexes include a Tika configuration and customizations of these indexes must include a Tika configuration. This rule checks for customizations of the `damAssetLucene`, `lucene`, and `graphqlConfig` indexes and raises an issue if either the `tika`  node is missing or if the `tika` node is missing a child node named `config.xml`.
 
 See [indexing documentation](/help/operations/indexing.md#preparing-the-new-index-definition) for more information on customizing index definitions.
 
@@ -643,7 +656,7 @@ See [indexing documentation](/help/operations/indexing.md#preparing-the-new-inde
 * **Severity**: Blocker
 * **Since**: 2021.8.0
 
-Oak indexes of type `lucene` must always be asynchronously indexed. Failure to do so may result in system instability. More information on the structure of Lucene indexes can be found in the [Oak documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition).
+Oak indexes of type `lucene` must always be asynchronously indexed. Failure to do so results in system instability. More information on the structure of Lucene indexes can be found in the [Oak documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition).
 
 #### Non-compliant code {#non-compliant-code-indexasync}
 
@@ -708,7 +721,7 @@ For asset search to work correctly in Experience Manager Assets, customizations 
         + config.xml
 ```
 
-### Customer packages should not create or modify nodes under libs {#oakpal-customer-package}
+### Do not create or modify nodes under libs in customer packages {#oakpal-customer-package}
 
 * **Key**: BannedPath
 * **Type**: Bug
@@ -732,7 +745,7 @@ A common problem that occurs in complex projects is where the same OSGi componen
 >
 >For example, if the build produces packages named `com.myco:com.myco.ui.apps` and `com.myco:com.myco.all` where `com.myco:com.myco.all` embeds `com.myco:com.myco.ui.apps`, then all configurations within `com.myco:com.myco.ui.apps` are reported as duplicates.
 >
->Generally, this situation is a case of not following the [Content Package Structure Guidelines](/help/implementing/developing/introduction/aem-project-content-package-structure.md). In this example, the package `com.myco:com.myco.ui.apps` is missing the `<cloudManagerTarget>none</cloudManagerTarget>` property.
+>This situation is a case of not following the [Content Package Structure Guidelines](/help/implementing/developing/introduction/aem-project-content-package-structure.md). In this example, the package `com.myco:com.myco.ui.apps` is missing the `<cloudManagerTarget>none</cloudManagerTarget>` property.
 
 #### Non-compliant code {#non-compliant-code-osgi}
 
@@ -792,7 +805,7 @@ A common problem is use of nodes named `config` within component dialogs or when
 * **Severity**: Major
 * **Since**: Version 2019.6.0
 
-Similar to the [Packages Should Not Contain Duplicate OSGi Configurations rule](#oakpal-package-osgi), this situation is a common problem on complex projects where the same node path is written to by multiple separate content packages. While using content package dependencies can be used to ensure a consistent result, it is better to avoid overlaps entirely.
+Similar to the [Packages Should Not Contain Duplicate OSGi Configurations rule](#oakpal-package-osgi), this situation is a common problem on complex projects where multiple separate content packages write to the same node path. While using content package dependencies can be used to ensure a consistent result, it is better to avoid overlaps entirely.
 
 ### The default authoring mode should not be classic UI {#oakpal-default-authoring}
 
@@ -825,7 +838,7 @@ The Experience Manager Modernization Tools documentation provides documentation 
 * **Severity**: Minor
 * **Since**: Version 2020.5.0
 
-To be compatible with the Cloud Service deployment model, individual content packages must contain either content for the immutable areas of the repository (`/apps` and `/libs`), or the mutable area (everything not in `/apps` or `/libs`), but not both. For example, a package that includes both `/apps/myco/components/text` and `/etc/clientlibs/myco` is not compatible with Cloud Service and cause an issue to be reported.
+To be compatible with the Cloud Service deployment model, individual content packages must contain either immutable repository content (`/apps` and `/libs`) or mutable content, but not both. For example, a package that includes both `/apps/myco/components/text` and `/etc/clientlibs/myco` is not compatible with Cloud Service and causes an issue to be reported.
 
 >[!NOTE]
 >
@@ -851,7 +864,7 @@ Customers using reverse replication should contact Adobe for alternative solutio
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
-Experience Manager client libraries may contain static resources like images and fonts. As described in the document [Using Preprocessors](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors), when using proxied client libraries these static resources must be contained in a child folder named `resources` to be effectively referenced on the publish instances.
+Experience Manager client libraries contain static resources like images and fonts. As described in the document [Using Preprocessors](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors), when using proxied client libraries these static resources must be contained in a child folder named `resources` to be effectively referenced on the publish instances.
 
 #### Non-compliant code {#non-compliant-proxy-enabled}
 
@@ -987,7 +1000,7 @@ Experience Manager as a Cloud Service prohibits custom search index definitions 
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
-Experience Manager as a Cloud Service prohibits custom search index definitions (that is, nodes of type `oak:QueryIndexDefinition`) from containing a property named `reindex`. Indexing using this property must be updated before migration to Experience Manager as a 
+Experience Manager as a Cloud Service prohibits custom search index definitions (that is, nodes of type `oak:QueryIndexDefinition`) from containing a property named `reindex`. Indexing using this property must be updated before migration to Experience Manager as a
 Cloud Service. See the document [Content Search and Indexing](/help/operations/indexing.md#how-to-use) for more information.
 
 ### Custom DAM asset lucene nodes must not specify `queryPaths` {#oakpal-damAssetLucene-queryPaths}
@@ -1049,7 +1062,7 @@ For custom indexes, configure `includedPaths` and `queryPaths` with identical va
 * **Severity**: Minor
 * **Since**: Version 2023.1.0
 
-When setting the `nodeScopeIndex` property on a "generic" node type like `nt:unstructured` or `nt:base`, you must also specify the `includedPaths` and `queryPaths` properties. 
+When setting the `nodeScopeIndex` property on a "generic" node type like `nt:unstructured` or `nt:base`, you must also specify the `includedPaths` and `queryPaths` properties.
 The node type `nt:base` can be considered "generic," because all node types inherit from it. So, setting a `nodeScopeIndex` on `nt:base` makes it index all nodes in the repository. Similarly, `nt:unstructured` is also considered "generic" as there are many nodes in repositories that are of this type.
 
 #### Non-compliant code {#non-compliant-code-full-text-on-generic-node-type}
@@ -1077,7 +1090,7 @@ The node type `nt:base` can be considered "generic," because all node types inhe
   - evaluatePathRestrictions: true
   - tags: [visualSimilaritySearch]
   - type: lucene
-  - includedPaths: ["/content/dam/"] 
+  - includedPaths: ["/content/dam/"]
   - queryPaths: ["/content/dam/"]
     + indexRules
       - jcr:primaryType: nt:unstructured
@@ -1095,7 +1108,7 @@ The node type `nt:base` can be considered "generic," because all node types inhe
 * **Severity**: Minor
 * **Since**: Version 2023.1.0
 
-Overriding the default value can lead to slow page reads, particularly when more content is added. 
+Overriding the default value leads to slow page reads when more content is added.
 
 ### Multiple active versions of the same index {#oakpal-multiple-active-versions}
 
@@ -1152,7 +1165,7 @@ The expected pattern for fully custom index names is: `[prefix].[indexName]-cust
 
 #### Compliant code {#compliant-code-same-property-different-analyzed-values}
 
-Example: 
+Example:
 
 ```text
 + indexRules
@@ -1168,7 +1181,7 @@ Example:
         - analyzed: true
 ```
 
-Example: 
+Example:
 
 ```text
 + indexRules
@@ -1183,7 +1196,7 @@ Example:
         - analyzed: true
 ```
 
-If the analyzed property is not explicitly set, its default value is false. 
+If the analyzed property is not explicitly set, its default value is false.
 
 ### Tags property {#tags-property}
 
@@ -1205,7 +1218,7 @@ AEM Cloud Service prohibits custom search index definitions (nodes of type `oak:
 
 >[!WARNING]
 >
->YYou should resolve this issue as soon as possible, as it may cause pipeline failures beginning with the [Cloud Manager August 2024 release](/help/implementing/cloud-manager/release-notes/current.md).
+>Resolve this issue as soon as possible, as it causes pipeline failures beginning with the [Cloud Manager August 2024 release](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### Custom full-text index definition of type damAssetLucene must be correctly prefixed with 'damAssetLucene' {#oakpal-dam-asset-lucene}
 
@@ -1218,7 +1231,7 @@ AEM Cloud Service prohibits custom full-text index definitions of type `damAsset
 
 >[!WARNING]
 >
->Resolve this issue as soon as possible, as it may cause pipeline failures beginning with the [Cloud Manager August 2024 release](/help/implementing/cloud-manager/release-notes/current.md).
+>Resolve this issue as soon as possible, as it causes pipeline failures beginning with the [Cloud Manager August 2024 release](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### Index definition nodes must not contain properties with the same name {#oakpal-index-property-name}
 
@@ -1231,16 +1244,16 @@ AEM Cloud Service prohibits custom search index definitions (that is, nodes of t
 
 >[!WARNING]
 >
->Resolve this issue as soon as possible, as it may cause pipeline failures beginning with the [Cloud Manager August 2024 release](/help/implementing/cloud-manager/release-notes/current.md).
+>Resolve this issue as soon as possible, as it causes pipeline failures beginning with the [Cloud Manager August 2024 release](/help/implementing/cloud-manager/release-notes/current.md).
 
-### Customizing of certain out-of-the-box index definitions is prohibited {#oakpal-customizing-ootb-index}
+### Customizing of certain standard index definitions is prohibited {#oakpal-customizing-ootb-index}
 
 * **Key**: RestrictIndexCustomization
 * **Type**: Improvement
 * **Severity**: Minor
 * **Since**: Version 2024.6.0
 
-AEM Cloud Service prohibits unauthorized modifications of the following OOTB indexes:
+AEM Cloud Service prohibits unauthorized modifications of the following standard indexes:
 
 * `nodetypeLucene`
 * `slingResourceResolver`
@@ -1251,7 +1264,7 @@ AEM Cloud Service prohibits unauthorized modifications of the following OOTB ind
 
 >[!WARNING]
 >
->Resolve this issue as soon as possible, as it may cause pipeline failures beginning with the [Cloud Manager August 2024 release](/help/implementing/cloud-manager/release-notes/current.md).
+>Resolve this issue as soon as possible, as it causes pipeline failures beginning with the [Cloud Manager August 2024 release](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### Configuration of the tokenizers in analyzers should be created with the name 'tokenizer' {#oakpal-tokenizer}
 
@@ -1264,7 +1277,7 @@ AEM Cloud Service prohibits creation of tokenizers with incorrect names in analy
 
 >[!WARNING]
 >
->Resolve this issue as soon as possible, as it may cause pipeline failures beginning with the [Cloud Manager August 2024 release](/help/implementing/cloud-manager/release-notes/current.md).
+>Resolve this issue as soon as possible, as it causes pipeline failures beginning with the [Cloud Manager August 2024 release](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### Configuration of indexing definitions should not contain spaces {#oakpal-indexing-definitions-spaces}
 
@@ -1274,3 +1287,4 @@ AEM Cloud Service prohibits creation of tokenizers with incorrect names in analy
 * **Since**: Version 2024.7.0
 
 AEM Cloud Service prohibits the creation of indexing definitions that contain properties with spaces.
+

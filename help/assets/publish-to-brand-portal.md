@@ -4,6 +4,7 @@ description: Publish assets, folders, and collections to Brand Portal.
 contentOwner: Adobe
 feature: Brand Portal, Asset Distribution, Configuration
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
 ---
 # Publish assets to Brand Portal {#publish-assets-to-brand-portal}
@@ -156,7 +157,7 @@ To schedule the publishing the asset folders to a later date or time:
 
 <!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
-   ![generated report status](assets/report-status.JPG)
+![generated report status](assets/report-status.JPG)
 
 ### Unpublish folders from Brand Portal {#unpublish-folders-from-brand-portal}
 
@@ -263,26 +264,25 @@ See, [Brand Portal documentation](https://experienceleague.adobe.com/docs/experi
    Comment Type: draft
 
    <li> </li>
-   -->
-
-   <!--
    Comment Type: draft
 
    <li>Step text</li>
-   -->
+-->
 
 **See also**
 
-* [Translate Assets](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [Assets supported file formats](file-format-support.md)
-* [Search assets](search-assets.md)
-* [Connected assets](use-assets-across-connected-assets-instances.md)
-* [Asset reports](asset-reports.md)
-* [Metadata schemas](metadata-schemas.md)
-* [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata.md)
-* [Search facets](search-facets.md)
-* [Manage collections](manage-collections.md)
-* [Bulk metadata import](metadata-import-export.md)
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

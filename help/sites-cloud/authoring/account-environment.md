@@ -1,6 +1,7 @@
 ---
 title: Configuring Your Account Environment
 description: Adobe Experience Manager (AEM) provides you with the capability to configure your account and certain aspects of the Author environment.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 solution: Experience Manager Sites
 feature: Authoring

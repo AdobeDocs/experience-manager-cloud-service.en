@@ -4,7 +4,7 @@ description: Learn how to use Cloud Manager to create your own sandbox program f
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Create sandbox programs {#create-sandbox-program}
 
@@ -20,13 +20,13 @@ Learn more about program types in the document [Understanding Program and Progra
 
    ![Cloud Manager landing page](assets/log-in.png) 
 
-1. In the *Let's create your Program* wizard, in the **Program name** text field, type the name you want for the program.
+1. In the *Let's create your Program* wizard, in the **Program name** text field, enter the name you want for the program.
 
 1. Under **Program Objective**, select ![Magic wand icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MagicWand_18_N.svg) **Set up a sandbox**.
 
    ![Program type creation](assets/create-sandbox.png)
 
-1. (Optional) In the lower-right corner of the wizard dialog box, do any one of the following:
+1. (Optional) In the lower-right corner of the wizard dialog box, do any of the following:
 
    * Drag and drop an image file onto the ![Image icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **Add a program image** target.
    * Click ![Image icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **Add a program image**, then select an image from a file browser.
@@ -37,7 +37,7 @@ Learn more about program types in the document [Understanding Program and Progra
 1. In the **Solutions &amp; Add-ons** list box, select one or more solutions to include in the program.
    
    * Click the chevron to the left of a solution name to reveal any available optional add-ons that you want to include with a selected solution.
-   * The **Sites**, **Assets**, and **Edge Delivery Services** solutions are always selected by default when you create a sandbox program. You cannot de-select them.
+   * Cloud Manager always selects the **Sites**, **Assets**, and **Edge Delivery Services** solutions by default when you create a sandbox program. You cannot deselect them.
 
    ![Select solutions and add-ons for a sandbox](assets/sandbox-solutions-add-ons.png)
 
@@ -47,13 +47,13 @@ Learn more about program types in the document [Understanding Program and Progra
 
 ## Sandbox access {#access}
 
-After a new sandbox program is finished being created, you can view the detail of your sandbox setup and access the environment by viewing the program overview page.
+After a new sandbox program is created, you can view the details of your sandbox setup and access the environment by viewing the program overview page.
 
-1. From the Cloud Manager landing page, in the Sandbox program, click ![More small list icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) on your created sandbox program.
+1. From the Cloud Manager landing page, for the Sandbox program, click ![More small list icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) on your created sandbox program.
 
    ![Accessing program overview](assets/program-overview-sandbox.png)
 
-1. When the project creation step completes, you can click the **Access Repo Info** link to be able to use your git repo.
+1. When the project creation step completes, you can click the **Access Repo Info** link to use your git repo.
 
    ![Program configuration](assets/create-program4.png)
    
@@ -65,10 +65,10 @@ After a new sandbox program is finished being created, you can view the detail o
 
    ![Access AEM link](assets/create-program5.png)
 
-1. When the non-production pipeline deploying to development is complete, the wizard in the call-to-action guides you to either access the AEM development environment or to deploy code to the development environment.
+1. When the non-production pipeline deployment to development is complete, the wizard in the call-to-action guides you to either access the AEM development environment or deploy code to it.
 
    ![Deploying sandbox](assets/create-program-setup-deploy.png)
 
 >[!TIP]
 >
->See [Navigating the Cloud Manager UI](/help/implementing/cloud-manager/navigation.md) for details on how to navigate Cloud Manager and understanding the **My Programs** console.
+>See [Navigating the Cloud Manager UI](/help/implementing/cloud-manager/navigation.md) for details on how to navigate Cloud Manager and understand the **My Programs** console.

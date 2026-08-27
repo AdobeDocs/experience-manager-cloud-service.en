@@ -4,7 +4,7 @@ description: Learn about the three different types of functional testing built i
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Introduction {#functional-testing-introduction}
@@ -12,7 +12,7 @@ role: Admin, Architect, Developer
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="Functional Testing"
->abstract="Learn about the three different types of functional testing built into the AEM as a Cloud Service deployment process to ensure the quality and reliability of your code."
+>abstract="Learn about the three different types of functional testing built into the AEM as a Cloud Service deployment process. The testing ensures the quality and reliability of your code."
 
 Discover the quality gates available in the [AEM as a Cloud Service deployment process](/help/implementing/cloud-manager/deploy-code.md) and the various types of built-in functional testing. Learn how you can contribute and optimize their use within the framework of a comprehensive testing strategy.
 
@@ -20,7 +20,7 @@ Discover the quality gates available in the [AEM as a Cloud Service deployment p
 
 The following diagram provides a high-level overview of the available pipelines in the context of an overall testing strategy and the [AEM as a Cloud Service deployment process](/help/implementing/cloud-manager/deploy-code.md).
 
-![AEM Cloud Service deployment quality gates](assets/functional-testing/quality-gates-compact.svg)
+![AEM Cloud Service deployment quality gates](assets/functional-testing/quality-gates-compact.png)
 
 ## Purpose of functional testing
 
@@ -30,15 +30,15 @@ Adobe provides several built-in quality gates, while others require your interve
 
 The built-in quality gates primarily validate the functionality of the AEM product within the context of your AEM application. In contrast, the custom quality gates you set up are designed to verify that your application's critical features and user interactions perform as intended. Collectively, these two sets of quality gates work together to ensure robust and secure automated deployments for both your code modifications and AEM product updates.
 
-It is important to note that these quality gates are not intended to be a comprehensive testing framework for your entire testing strategy. The AEM product is subjected to extensive testing before entering the AEM cloud service deployment process. Similarly, your application should already be of high quality before it reaches the deployment phase. This approach ensures that the quality gates focus on their primary objective of safeguarding the deployment process, rather than being a substitute for a full testing regimen.
+It is important to note that these quality gates are not intended to be a comprehensive testing framework for your entire testing strategy. The AEM product is subjected to extensive testing before entering the AEM Cloud Service deployment process. Similarly, your application is already of high quality before it reaches the deployment phase. This approach ensures that the quality gates focus on their primary objective of safeguarding the deployment process, rather than serving as a replacement for a full testing plan.
 
 ## Quality gates in testing
 
 The following diagram provides a detailed view of available quality gates and their use in the overall testing strategy and the [AEM as a Cloud Service deployment process](/help/implementing/cloud-manager/deploy-code.md).
 
-![AEM Cloud Service deployment quality gates](assets/functional-testing/quality-gates-overview.svg)
+![AEM Cloud Service deployment quality gates](assets/functional-testing/quality-gates-overview.png)
 
-### Summary customer provided quality gates
+### Summary of customer-provided quality gates
 
 |                               |      Unit Tests       |    Custom<br/> Functional Tests     |        Custom<br/> UI Tests         | Customer<br/> Validations | Manual<br/> Testing |
 |:------------------------------|:---------------------:|:-----------------------------------:|:-----------------------------------:|:-------------------------:|:-------------------:|
@@ -50,22 +50,22 @@ The following diagram provides a detailed view of available quality gates and th
 
 ### Unit test
 
-You are encouraged to provide the unit tests for your AEM application, which are the foundation of every testing strategy. They are intended to run fast and often and give early and fast feedback. They are tightly integrated into the developer workflows, your own CI/CD and the AEM cloud service deployment pipelines.
+You are encouraged to provide the unit tests for your AEM application, which are the foundation of every testing strategy. They are designed to run quickly and frequently, providing early feedback. They are tightly integrated into the developer workflows, your own CI/CD and the AEM Cloud Service deployment pipelines.
 
 They are implemented using JUnit and are executed with Maven. See the [core module of the AEM Project Archetype](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests) for an example unit test for AEM and getting started.
 
 ### Code quality
 
-This quality gate is configured out-of-the-box and runs static code analysis on your AEM application code.
+This quality gate comes preconfigured and runs static code analysis on your AEM application code.
 
 See [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md) and [Custom code quality rules](/help/implementing/cloud-manager/custom-code-quality-rules.md) for more information.
 
 ### Product tests
 
-Product functional tests are stable HTTP integration tests (ITs) for core AEM functionality, including authoring and replication tasks. Adobe provides and maintains them out-of-the-box. They are intended to prevent changes to custom application code from being deployed if it breaks core functionality in the AEM product.
+Product functional tests are stable HTTP integration tests (ITs) for core AEM functionality, including authoring and replication tasks. Adobe provides and maintains them by default. They are intended to prevent changes to custom application code from being deployed if they break core functionality in the AEM product.
 
 They use JUnit for implementation, run with Maven, and rely on the official [AEM Testing Clients](https://github.com/adobe/aem-testing-clients). The product test suite is maintained as
-an [open-source project](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke), follows best-practices and can be considered a good starting point for the implementation of your tests.
+an [open-source project](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke), follows best practices, and can be considered a good starting point for the implementation of your tests.
 
 ### Custom functional tests
 
@@ -73,7 +73,7 @@ Similar to the product tests, customer functional tests are HTTP integration tes
 
 >[!NOTE]
 >
->Custom functional tests run in both production and non-production (opt-in) pipelines used for AEM application change deployments and AEM product push updates. They play a crucial role in ensuring your application functions properly and enhancing release safety. The customer functional tests are also executed in internal pre-release validation pipelines for each customer, which helps provide early feedback.
+>Custom functional tests run in both production and non-production (opt-in) pipelines used for AEM application change deployments and AEM product updates. They play a crucial role in ensuring your application functions properly and enhancing release safety. The customer functional tests are also executed in internal pre-release validation pipelines for each customer, which helps provide early feedback.
 
 To maintain efficient pipeline runs, Adobe advises focusing on key features and primary user interaction flows, aiming for a functional test runtime of around 15 minutes or less. Full functional test suites that exceed this time should be executed as part of the general customer validation pipelines during the development process.
 
@@ -83,15 +83,15 @@ See [Java Functional Tests](/help/implementing/cloud-manager/java-functional-tes
 
 ### Custom UI tests
 
-To maximize risk control for your customer-specific development, Adobe encourages you to capture critical UI tests into AEM as a Cloud Service. Keep them limited but focused on maximizing their impact on the customer experience.
+To maximize risk control for customer-specific development, Adobe encourages you to include critical UI tests in AEM as a Cloud Service. Keep the tests limited and focused on customer experience impact.
 
-The tests are packaged in a Docker image - designed to be as volatile as possible (with support for Cypress, Playwright, Selenium, Java, and JavaScript). They follow the same characteristics and purposes like the custom functional tests.
+The tests are packaged in a Docker image designed for maximum flexibility, supporting Cypress, Playwright, Selenium, Java, and JavaScript. They follow the same characteristics and purposes as the custom functional tests.
 
 >[!NOTE]
 >
->Custom UI tests are executed in both production and non-production (opt-in) pipelines used for AEM application change deployments and AEM product push updates. They are essential in ensuring your application's proper functioning and enhancing release safety. The customer UI tests are also executed in internal pre-release validation pipelines for each customer, which helps provide early feedback.
+>Custom UI tests are executed in both production and non-production (opt-in) pipelines used for AEM application change deployments and AEM product updates. They are essential in ensuring your application's proper functioning and enhancing release safety. The customer UI tests are also executed in internal pre-release validation pipelines for each customer, which helps provide early feedback.
 >
->Non-Selenium containers should execute tests using an HTTP proxy based on the environment variables in the [UI Testing Section](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing).
+>Non-Selenium containers run tests using an HTTP proxy based on the environment variables in the [UI Testing Section](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing).
 
 To keep pipeline executions efficient, Adobe recommends focusing on key features and main user interaction flows. Full UI test suites that exceed this quality gate should be executed as part of the general customer validation pipelines. Incorporate them into the customer's development process.
 
@@ -101,17 +101,17 @@ See [Custom UI Testing](/help/implementing/cloud-manager/ui-testing.md#custom-ui
 
 ### Experience audit
 
-The experience audit quality gate is performing [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) audits against the customer's webpage.
+The experience audit quality gate performs [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) audits against the customer's webpage.
 
-This quality gate is provided by AEM out-of-the-box, but is not blocking the deployment pipelines. By default, an audit against the root page (`/`) of the publish instance is performed. You can contribute by configuring up to 25 custom paths that are considered for audits.
+AEM provides this quality gate by default, but it does not block deployment pipelines. By default, an audit against the root page (`/`) of the publish instance is performed. You can contribute by configuring up to 25 custom paths that are considered for audits.
 
-See [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-dashboard.md) for more information.
+See [Experience Audit Testing](/help/implementing/cloud-manager/reports/report-experience-audit.md) for more information.
 
 ### Customer validations
 
 The customer validations quality gate is a placeholder for the customer's own testing strategy and effort, executed before the customer's application changes reach the AEM cloud deployment pipelines.
 
-Here you can choose the tools and frameworks you prefer. In contrast to customer function tests and custom UI tests, there is no AEM as a Cloud Service-related limits. As such, Adobe recommends that you perform long-running functional and UI testing here.
+Here you can choose the tools and frameworks you prefer. In contrast to customer functional tests and custom UI tests, there are no AEM as a Cloud Service-related limits. As such, Adobe recommends that you perform long-running functional and UI testing here.
 
 While you can choose any tool and framework, Adobe suggests aligning HTTP-based integration and UI tests with the tools and frameworks used in the custom functional and UI test quality gates. Additionally, Adobe recommends incorporating [Rapid Development Environments (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) into your local testing strategy to mirror AEM cloud environments closely.
 
@@ -119,4 +119,4 @@ While you can choose any tool and framework, Adobe suggests aligning HTTP-based 
 
 The Manual testing quality gate is a placeholder for customers who do manual testing. Because AEM cloud pipelines do not support manual testing, it must be included in your local testing strategy.
 
-For manual testing, it can be useful to integrate with an additional AEM Cloud Service development environment. 
+For manual testing, it can be useful to use an additional AEM Cloud Service development environment. 

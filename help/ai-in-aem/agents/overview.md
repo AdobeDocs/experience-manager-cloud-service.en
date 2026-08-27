@@ -1,0 +1,71 @@
+---
+title: Overview of Agents in AEM
+description: Learn about the Agents available in AEM to accelerate your content creation and automatically orchestrate changes.
+feature: Edge Delivery Services, Agentic AI
+role: User, Admin, Developer
+exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
+---
+
+# Overview of Agents in AEM {#overview-of-agents-in-aem}
+
+These agents are available in Adobe Experience Manager (AEM) as a Cloud Service to accelerate your content creation and automatically orchestrate changes.
+
+>[!IMPORTANT]
+>
+>* The agents are only available on AEM as a Cloud Service and Edge Delivery Services. 
+>
+>* Agents will progressively become available for AEM 6.5 LTS on Managed Services. Customers who are interested to participate in our co-innovation program should contact their Adobe Customer Success Engineer, Technical Account Manager or Customer Service Manager to check for availability.
+>* Agents will not be available on AEM 6.5/AEM 6.5 LTS On-Prem.
+
+## Accessing Agents {#accessing-agents}
+
+You have three options to access agents.
+
+1. You may have the option to access AEM Agents through the [Try Before You Buy program,](http://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) which is rolling out in phases. Your CSM or TAM can help confirm availability for your organization.
+1. Explore AEM agents [through a trial.](https://www.aem.live/developer/aem-playground)
+1. Connect with your CSM or TAM to discuss access via the Agentic SKU if that aligns with your roadmap and evaluation plans.
+
+As new skills become available under early release, we will provide additional opportunities to participate and share feedback. We encourage you to watch [this page](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) for updates.
+
+<!-- CQDOC-23874 - needs adjustment? -->
+
+### AEM Agentic Capability use cases in Coworker {#aem-use-cases-in-coworker}
+
+From agents to skills, for more information see:
+
+* [Adobe Experience Manager skills in Coworker](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/use-cases/overview)
+
+* [Agentic Capabilities in AEM](/help/ai-in-aem/agentic-capabilities/overview.md)
+
+## Brand Experience Agent {#brand-experience-agent}
+
+The [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) automates high effort and high-volume tasks through the following agents, each specializing in a specific set of jobs.
+
+* **[Experience Modernization Agent](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)** - Migrates websites to cloud-ready formats
+* **[Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)** - Reduces time-to-market with content updates, form creation, and communications
+* **[Development Agent](/help/ai-in-aem/agents/brand-experience/development/development.md)** - Provides AI-assisted troubleshooting and build automation
+
+Through these agents, the Brand Experience Agent absorbs the heavy operational work behind updates and modernization, helping teams deliver changes faster and with greater confidence in today's AI era.
+
+## Content Advisor Agent {#content-advisor-agent}
+
+The [Content Advisor Agent](/help/ai-in-aem/agents/content-advisor/overview.md) transforms how users discover, refine, and adapt assets by applying natural language instructions to create channel-ready variations, simplifying the following jobs.
+
+* **Discovery** - Deliver AEM content for a streamlined, click-free discovery experience. Intelligently search across Assets, Content Fragments, and Adaptive Forms to deliver relevant materials such as images, videos, PDF documents, articles, and form templates. 
+* **Content Optimization** - Transform how users refine and adapt assets by applying natural language instructions to create channel-ready variations. Interpret user intent and performs complex editing tasks automatically to perform tasks including generating new renditions, adjusting visual properties, changing backgrounds, or preparing assets for specific digital channels.
+
+The agent interprets user intent and performs complex editing tasks automatically including generating new renditions, adjusting visual properties, changing backgrounds, or preparing assets for specific digital channels.
+
+## Governance Agent {#governance-agent}
+
+The [Governance Agent](/help/ai-in-aem/agents/governance/overview.md) safeguards brand integrity and compliance across AEM. By enforcing security, regulatory, and brand policies the agent performs the necessary jobs to ensure that every interaction and activation adheres to established standards.
+
+## Limitations {#limitations}
+
+Please be aware of the following general limitations of the AEM agents:
+
+* The agents are available on AEM as a Cloud Service and Edge Delivery Services.
+* Agents will progressively become available for AEM 6.5 LTS on Managed Services. Customers who are interested to participate in our co-innovation program should contact their Adobe Customer Success Engieer, Technical Account Manager or Customer Service Manager to check for availability.
+* Agents will not be available on AEM 6.5/AEM 6.5 LTS On-Prem.
+
+See the individual pages for agent-specific limitations.

@@ -4,7 +4,7 @@ description: Learn about using references in Content Fragments, for content, oth
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Learn about using references in Content Fragments {#author-headless-references}
 
@@ -83,10 +83,6 @@ There are two sorts:
   * specifies the path to the referenced resource 
 * **Fragment Reference (UUID)**
   * In the editor, the reference specifies the path to the referenced resource; internally the reference is held as a universally unique ID (UUID) that references the resource 
-
-<!--
-![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
---> 
 
 ### How to author nested fragments {#author-nested-fragment}
 

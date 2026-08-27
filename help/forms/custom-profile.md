@@ -2,18 +2,15 @@
 title: Creating a custom profile for HTML5 forms
 description: A HTML5 forms profile is a resource node in Apache Sling. It represents a customized version of HTML5 forms Render service.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: cf86c810-c466-4894-acc2-d4faf49754cc
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 ---
 # Creating a custom profile for HTML5 forms {#creating-a-custom-profile-for-html-forms}
-
-<span class="preview"> The HTML5 Forms capability is offered as part of Early Access Program. To request access, send an email from your official (work) email ID to aem-forms-ea@adobe.com.
-</span>
 
 A profile is a resource node in [Apache Sling](https://sling.apache.org/). It represents custom version of HTML5 forms rendition service. You can use the HTML5 forms Rendition service to customize appearance, behavior, and interactions of the HTML5 forms. A profile node exists in the `/content` folder in the JCR repository. You can place the node directly under the `/content` folder or any subfolder of the `/content` folder.
 

@@ -2,18 +2,15 @@
 title: Screen readers for HTML5 forms
 description: Lists the screen readers supported with HTML5 forms.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 07d20c2f-7d13-48ac-8d58-b367eb194558
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 ---
 # Screen readers for HTML5 forms {#screen-readers-for-html-forms}
-
-<span class="preview"> The HTML5 Forms capability is offered as part of Early Access Program. To request access, send an email from your official (work) email ID to aem-forms-ea@adobe.com.
-</span>
 
 HTML5 forms components render XFA form template to an HTML5 format. All standard browsers supporting HTML5 can render these forms. To support similar data capture experience across PDF and HTML5 forms, the layout of PDF forms is retained in HTML5 forms.
 

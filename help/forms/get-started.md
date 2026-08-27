@@ -2,18 +2,15 @@
 title: Getting started with HTML5 forms
 description: To get started, deploy AEM Forms add-on package and import existing HTML5 forms to AEM.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: f276d150-8936-4bfb-8475-7ca36815b233
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: a3245f05-6ea3-4f90-8981-bfa89d2e7335
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 ---
 # Getting started with HTML5 forms {#getting-started-with-html-forms}
-
-<span class="preview"> The HTML5 Forms capability is offered as part of Early Access Program. To request access, send an email from your official (work) email ID to aem-forms-ea@adobe.com.
-</span>
 
 HTML5 forms bring numerous capabilities that are mobile-ready. It helps you expand your current solutions and workflows to tablets or smartphones devices with HTML5 browsers. Some of the capabilities include:
 

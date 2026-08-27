@@ -4,7 +4,7 @@ description: Learn how to deploy App Builder applications for Adobe Experience M
 version: Experience Manager as a Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
-role: Developer, Architect
+role: Developer
 level: Beginner
 kt: 9461
 thumbnail: 339250.jpg

@@ -4,7 +4,8 @@ description: Learn about various asset management and editing methods
 contentOwner: AG
 mini-toc-levels: 3
 feature: Asset Management, Publishing,Collaboration, Asset Processing
-role: User, Architect, Admin
+role: User, Developer, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 ---
 # Manage assets {#manage-assets}
@@ -22,8 +23,8 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
 
 >[!NOTE]
 >
->* Sharing an Assets folder of the type `sling:OrderedFolder`, is not supported when sharing to Experience Cloud. If you want to share a folder, do not select [!UICONTROL Ordered] when creating a folder.
->* Experience Manager does not allow using `subassets` word as the name of a folder. It is a keyword reserved for node that contain subassets for compound assets
+>* Sharing an Assets folder of the type `sling:OrderedFolder` is not supported when sharing to Experience Cloud. If you want to share a folder, do not select [!UICONTROL Ordered] when creating a folder.
+>* Experience Manager does not allow using `subassets` word as the name of a folder. It is a keyword reserved for nodes that contain subassets for compound assets.
 
 1. Navigate to the place in your digital assets folder where you want to create a folder. In the menu, click **[!UICONTROL Create]**. Select **[!UICONTROL New Folder]**.
 1. In the **[!UICONTROL Title]** field, provide a folder name. By default, DAM uses the title that you provided as the folder name. Once the folder is created, you can override the default and specify another folder name.
@@ -53,10 +54,10 @@ To extract the ZIP files, perform the following steps:
 
    ![zip extraction](assets/zip-extraction.png)
 
->[!NOTE]
->
->* The maximum supported ZIP file size is 15 GB.
->* You can extract a maximum of three ZIP files at one time. 
+   >[!NOTE]
+   >
+   >* The maximum supported ZIP file size is 15 GB.
+   >* You can extract a maximum of three ZIP files at one time. 
 
 ## Preview assets {#previewing-assets}
 
@@ -64,7 +65,6 @@ To preview an asset, follow these steps.
 
 1. From the Assets user interface, navigate to the location of the asset you want to preview.
 1. Select the desired asset to open it.
-
 1. In the preview mode, zoom options are available for [supported Image types](/help/assets/file-format-support.md) (with interactive editing).
 
    To zoom into an asset, select `+` (or select the magnifying glass on the asset). To zoom out, select `-`. When you zoom in, you can look closely at any area of the image by panning. The reset zoom arrow brings you back to the original view.
@@ -74,7 +74,6 @@ To preview an asset, follow these steps.
 ## Edit properties {#editing-properties}
 
 1. Navigate to the location of the asset whose metadata you want to edit.
-
 1. Select the asset, and select **[!UICONTROL Properties]** from the toolbar to view asset properties. Alternatively, choose the **[!UICONTROL Properties]** quick action on the asset card.
 
    ![properties_quickaction](assets/properties_quickaction.png)
@@ -91,7 +90,7 @@ To preview an asset, follow these steps.
 
 1. To deactivate the asset after a particular duration, choose the deactivation date/time from the date picker beside the **[!UICONTROL Off Time]** field. The deactivation date should be later than the activation date for an asset. After the [!UICONTROL Off Time], an asset and its renditions are not available either via the Assets web interface or through the HTTP API.
 
-   <!--![chlimage_1-218](assets/chlimage_1-218.png)
+   <!--![chlimage_1-218](assets/chlimage_1-218.png)-->
 
 1. In the **[!UICONTROL Tags]** field, select one or more tags. To add a custom tag, type the name of the tag in the box and select the `Enter` key. The new tag is saved in [!DNL Experience Manager].
 
@@ -99,13 +98,13 @@ To preview an asset, follow these steps.
 
    >[!NOTE]
    >
-   > To create tags, you must have write permission at `/content/cq:tags/default` path in the CRX repository.
+   >To create tags, you must have write permission at `/content/cq:tags/default` path in the CRX repository.
 
 1. Select **[!UICONTROL Save & Close]**.
-
 1. Navigate to the Assets user interface. The edited metadata properties, including title, description, and tags are displayed on the asset card in Card view and under relevant columns in the List view.
 
-<!-- TBD: Uncomment after verification for Dec release.
+<!--
+ TBD: Uncomment after verification for Dec release.
 
 ## View asset usage and references {#usage-and-references}
 
@@ -237,9 +236,9 @@ The other properties and metadata information is retained. A partial copy is not
 
    * cq5dam 
 
-   To configure rendition dimensions of an image at the asset detail level, overlay the `renditionpicker` node (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) and configure the value of the width property. Configure the property **[!UICONTROL size (Long) in KB]** in place of width to customize rendition on asset detail page based on image size. For size-based customization, the property `preferOriginal` assigns preference to the original if the size of the matched rendition is greater than the original.
+   To configure rendition dimensions of an image at the asset detail level, overlay the `renditionpicker` node (`/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) and configure the value of the width property. Configure the property **[!UICONTROL size (Long) in KB]** in place of width to customize rendition on asset detail page based on image size. For size-based customization, the property `preferOriginal` assigns preference to the original if the size of the matched rendition is greater than the original.
 
-   Similarly, you can customize the Annotation page image by overlaying `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
+   Similarly, you can customize the Annotation page image by overlaying `/libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
    <!--![chlimage_1-222](assets/chlimage_1-222.png)-->
 
@@ -275,6 +274,25 @@ Also, disable the force delete button using an overlay, to disallow users from d
    >
    >To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset. You can disallow deletion of referenced assets as it causes broken links. Disable the force delete button using an overlay.
 
+## Asynchronous Background Jobs {#asynchronous-background-jobs}
+
+To improve performance and reliability when processing large numbers of assets, AEM uses asynchronous background jobs for certain asset management operations. Instead of completing these operations immediately, AEM processes them in the background and allows users to continue working while progress is tracked separately.
+
+
+Operations such as moving, copying, or deleting folders that contain more than 150 assets are automatically executed as asynchronous jobs. When starting one of these operations, users can choose to run the job immediately or schedule it for a later time.
+
+![Date Picker](assets/schedule-asnyc-job.png)
+
+As the operation runs, AEM processes assets in batches and periodically saves progress. The AEM User Interface also displays progress updates so that users can monitor the status of the operation.
+
+![Date Picker](assets/move-progress-folder-indicator.png)
+
+For move and delete operations, access to the affected folders is restricted while the job is running to help prevent conflicting actions.
+
+To track job progress, open the Assets Jobs console (**Assets** > **Jobs** within the Admin view). The console displays details such as the current status, percentage completed, and other job information. Select a job and click Open to view additional details, including progress information and the estimated time remaining for completion. Users are also notified when the operation finishes.
+
+![Date Picker](assets/async-jobs-status.png)
+
 ## Download assets {#download-assets}
 
 See [download assets from [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
@@ -301,7 +319,7 @@ Understand the following limitations and tips related to publishing or unpublish
 * The option to [!UICONTROL Manage Publication] is available only to the user accounts that have replication permissions.
 * While unpublishing a complex asset, unpublish the asset only. Avoid unpublishing the references because those may be referenced by other published assets.
 * Empty folders are not published.
-* If you publish an assets that is being processed, only the original content is published. The renditions are missing. Either wait for processing to complete and then publish or re-publish the asset once the processing completes.
+* If you publish an asset that is being processed, only the original content is published. The renditions are missing. Either wait for processing to complete and then publish or re-publish the asset once the processing completes.
 
 ## Closed user group {#closed-user-group}
 
@@ -338,7 +356,8 @@ Quick action icons are available for a single asset at a time. Depending upon yo
 * Touch devices: Touch and hold. For example, on an iPad, you can select-and-hold an asset so that the quick actions display.
 * Non-touch devices: Hover pointer. For example, On a desktop device, the quick action bar is displayed if you hover the pointer over the asset thumbnail.
 
-<!-- Hiding this topic via cqdoc-18707
+<!--
+ Hiding this topic via cqdoc-18707
 
 ## Edit images {#editing-images}
 
@@ -447,7 +466,7 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
    >[!NOTE]
    >
-   >You can add multiple annotations, before you save them.
+   >You can add multiple annotations before you save them.
 
 1. Select **[!UICONTROL Close]** to exit from the Annotation mode.
 1. To view the notification, log in to Assets with Aaron MacDonald's credentials and click the **[!UICONTROL Notifications]** icon to view the notification.
@@ -642,7 +661,7 @@ To know details of Collection management, see [manage Collections](/help/assets/
 
 When browsing assets from within [!DNL Experience Manager] user interface, the expired assets are not displayed. To prevent viewing, searching, and fetching of expired assets when browsing assets from desktop app and Asset Link, administrators can do the following configuration. The configuration works for all users, irrespective of administrator privilege.
 
-Execute the following CURL command. Ensure read access on `/conf/global/settings/dam/acpapi/` for the users who access assets. Users who are part of `dam-user` group have the permission by default.
+Execute the following CURL command. Ensure read access on `/conf/global/settings/dam/acpapi/` for the users who access assets. Users who are part of the `dam-user` group have the permission by default.
 
 ```curl
 curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/global/settings/dam/acpapi/configuration/_jcr_content' \
@@ -658,16 +677,20 @@ To know more, see how to [browse DAM assets using desktop app](https://experienc
 
 **See also**
 
-* [Translate Assets](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [Assets supported file formats](file-format-support.md)
-* [Search assets](search-assets.md)
-* [Connected assets](use-assets-across-connected-assets-instances.md)
-* [Asset reports](asset-reports.md)
-* [Metadata schemas](metadata-schemas.md)
-* [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata.md)
-* [Search facets](search-facets.md)
-* [Manage collections](manage-collections.md)
-* [Bulk metadata import](metadata-import-export.md)
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
+

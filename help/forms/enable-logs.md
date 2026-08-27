@@ -6,20 +6,15 @@ description: The logger utility enables logging for a form and helps you debug f
 
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 
-
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 ---
 # Enable logging for HTML5 forms{#enable-logging-for-html-forms}
-
-<span class="preview"> The HTML5 Forms capability is offered as part of Early Access Program. To request access, send an email from your official (work) email ID to aem-forms-ea@adobe.com.
-</span>
 
 You can configure the logger utility to start creating logs for HTML5 forms. The logger utility has various levels, you can set a level as per your requirements. HTML5 forms has server and client components. You can configure logs for both the components.
 

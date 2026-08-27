@@ -81,6 +81,22 @@ Assets view now enables you to access Dynamic Media and Dynamic Media with OpenA
 
 ### New features in AEM Forms {#forms-new-features}
 
+* **[AEM Forms AI Assistant](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/form-creation)**: Generative AI for Adaptive Forms brings a whole new level of power and ease to your forms development processes. It allows you to build better forms faster than ever before. 
+
+   ![Generative AI Assistant, Adaptive Forms](/help/forms/assets/generative-ai-assistant.png)
+
+   The Generative AI capabilities on offer are: 
+
+   * **AI Assistant for Product Queries**: Get instant answers to your AEM form-related questions. The AI assistant acts as your own personal knowledge base, providing insightful guidance and recommendations directly within the platform.
+
+   * **Adaptive Form Generation**: Effortlessly create full-fledged forms with generative AI prompts. Adobe's generative AI automatically generates user-friendly forms that reduce drop-offs and personalize the experience.
+
+   * **Panel Generation for Forms**: Generate form sections tailored to specific data collection needs. For example, generate sections for collecting payment information, customer preferences, or travel details.
+
+   * **Changing Form Layouts**: Experiment with different layouts and designs using generative AI prompts. Try out different layouts like wizard or tabbed views to find the perfect fit for your form. Use generative AI prompts to optimize your forms for mobile responsiveness and create visually engaging forms that users love.
+
+   * **Configure Submit Action**: Use generative AI prompts to configure a submit action effortlessly for your form. Choose from a library of pre-built submit actions or custom submit actions created and deployed by your development team.
+
 * **[Update Adobe Sign scopes easily](/help/forms/adobe-sign-integration-adaptive-forms.md)**: You can modify the scopes of an Adobe Sign configuration directly from the AEM Cloud Configurations page, making it quicker and easier to update existing configurations.
 
 * **[Asynchronous function support for Adaptive Forms](/help/forms/using-async-funct-in-rule-editor.md)**: When your Adaptive Form requires asynchronous operations, such as waiting for external processes or data retrieval, you can implement these operations with custom functions and configure them in the Rule Editor.
@@ -158,7 +174,7 @@ intuitive and improving the mobile form-filling experience.
 
 ### Improved Tree Replication Performance (and deprecation of Publish Content Tree Workflow) {#tree-replication-performance}
 
-[Tree Activation Workflow Step](/help/operations/replication.md#tree-activation) is a new workflow model step recommended for replicating deep content hierarchies. Of note, it allows independent replications (e.g., through quick publish or manage publication) to proceed in parallel with the in-progress tree replication workflow. This is particularly useful if you need to publish some time-sensitive content while a bulk replication is still in-progress. Tree Replication Step replaces Publish Content Tree Workflow and its related Workflow Step, which are now deprecated. 
+[Tree Activation Workflow Step](/help/operations/tree-replication-workflows.md#tree-activation) is a new workflow model step recommended for replicating deep content hierarchies. Of note, it allows independent replications (e.g., through quick publish or manage publication) to proceed in parallel with the in-progress tree replication workflow. This is particularly useful if you need to publish some time-sensitive content while a bulk replication is still in-progress. Tree Replication Step replaces Publish Content Tree Workflow and its related Workflow Step, which are now deprecated. 
 
 ### OpenAPI-based APIs - Early Adopter Program {#open-apis-earlyadopter}
 
@@ -167,6 +183,7 @@ Developers can deeply integrate AEM as Cloud Service features into their own app
 Learn more about [OpenAPI-based AEM APIs](/help/implementing/developing/open-api-based-apis.md) and try out an [end-to-end tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) illustrating configuration and usage.
 
 Concretely, the API endpoints listed below are available as part of an early adopter program. If interested, email [aem-apis@adobe.com](mailto:aem-apis@adobe.com) describing how you intend to make use of them.
+
 * [Sites Content Fragments APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
 * [Assets APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * Sites and Assets Folders APIs

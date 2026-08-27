@@ -1,11 +1,11 @@
 ---
-title: Git Submodule Support
-description: Learn how you can use Git submodules to merge the content of multiple branches across Git repositories at build time.
+title: Git Submodule Support in Cloud Manager
+description: Learn how to use Git submodules with Adobe, private, and external repositories in Cloud Manager to merge multiple branches at build time.
 exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
-# Git submodule support for Adobe repositories {#git-submodule-support}
+# Git submodule support for Cloud Manager {#git-submodule-support}
 
 Git submodules can be used to merge the content of multiple branches across Git repositories at build time.
 
@@ -17,9 +17,9 @@ The following command checks out each submodule into the appropriate directory.
 $ git submodule update --init
 ```
 
-This technique offers an alternative to the solution described in [Working with Multiple Source Git Repositories](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md). It is ideal for organizations comfortable with Git submodules and preferring not to manage an external merging process.
+This technique offers an alternative to the solution described in [Working with Multiple Source Git Repositories](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md). It is suitable for organizations comfortable with Git submodules and preferring not to manage an external merging process.
 
-For example, suppose that there are three repositories. Each repository contains a single branch named `main`. In the primary repository, that is, the one configured in the pipelines, the `main` branch has a `pom.xml` file declaring the projects contained in the other two repositories:
+For example, suppose that there are three repositories. Each repository contains a single branch named `main`. In the primary repository—that is, the one configured in the pipelines—the `main` branch has a `pom.xml` file declaring the projects contained in the other two repositories:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -40,7 +40,7 @@ For example, suppose that there are three repositories. Each repository contains
 </project>
 ```
 
-You would then add submodules for the other two repositories:
+Add submodules for the other two repositories:
 
 ```shell
 $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectA/ project-a
@@ -64,28 +64,42 @@ See also the [Git Reference Manual](https://git-scm.com/book/en/v2/Git-Tools-Sub
 
 ## Usage notes for Adobe repositories {#usage-notes-recommendations-adobe-repos}
 
-* The Git URL must be exactly in the syntax described in the previous section.
+* The Git URL must follow the syntax described in the previous section.
 * Only submodules at the root of the branch are supported.
 * For security reasons, do not embed credentials in Git URLs.
 * Unless otherwise necessary, Adobe recommends that you use shallow submodules by running the following:
   `git config -f .gitmodules submodule.<submodule path>.shallow true` for each submodule.
-* Git submodule references are stored to specific Git commits. As a result, when changes to the submodule repository are made, the commit referenced must be updated.
+* Git submodule references are stored to specific Git commits. When changes to the submodule repository are made, the referenced commit must be updated.
   For example, by using the following: 
   
   `git submodule update --remote`
 
 ## Git submodule support for private repositories {#private-repositories}
 
-Support for Git submodules in [private repositories](private-repositories.md) is generally similar to their use with Adobe repositories.
+Support for Git submodules in [private repositories](private-repositories.md) is similar to their use with Adobe repositories.
 
-However, after configuring your `pom.xml` file and executing the `git submodule` commands, you must add a `.gitmodules` file to the root directory of the aggregator repository for Cloud Manager to recognize the submodule configuration.
+However, for Cloud Manager to recognize the submodule configuration, add a `.gitmodules` file to the root directory of the aggregator repository after configuring your `pom.xml` file and executing the `git submodule` commands.
 
 ![.gitmodules file](assets/gitmodules.png)
 
 ![Aggregator](assets/aggregator.png)
 
+## Git submodule support for external repositories {#external-repositories}
+
+Support for Git submodules in external repositories (Bring Your Own Git) works much like their use with Adobe repositories and private repositories. Cloud Manager authenticates submodule fetches during the build, so submodules hosted on your external Git provider resolve without additional pipeline configuration.
+
+As with the other repository types, add a `.gitmodules` file to the root directory of the aggregator repository after you configure your `pom.xml` file and run the `git submodule` commands.
+
+For Cloud Manager to authenticate a submodule fetch, the submodule repository must belong to the same organization as an external repository that is already registered in Cloud Manager. Cloud Manager uses the access token of a registered repository in that organization to authenticate the fetch. The token is applied server-side and is never exposed to the build environment.
+
+
 ### Usage notes {#usage-notes-recommendations-private-repos}
 
-* Submodule Git URLs can be in HTTPS or SSH format, but must point to a GitHub.com repository. Adding an Adobe repository submodule to a GitHub aggregator repository or the reverse is not supported.
-* GitHub submodules must be accessible by the Adobe GitHub App.
+* These notes apply to submodules that point to a GitHub.com repository. For submodules hosted on an external Git provider, see [Git submodule support for external repositories](#external-repositories).
+* Both relative and absolute submodule URLs in the `.gitmodules` file are supported.
+* The submodule repository must be hosted on a supported external Git provider: GitHub Enterprise, GitLab, Bitbucket, or Azure DevOps.
+* At least one repository from the same organization must be registered in Cloud Manager so that a valid access token is available.
+* For security reasons, do not embed credentials in Git URLs.
 * [The limitations of using Git submodules with Adobe-managed repositories](#usage-notes-recommendations-adobe-repos) also apply.
+
+

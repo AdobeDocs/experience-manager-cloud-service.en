@@ -1,12 +1,12 @@
 ---
 title: Micro-Frontend Content Fragment Selector for Adobe Experience Manager as a Cloud Service
 description: Use the Micro-Frontend Content Fragment Selector to search, find, and retrieve content fragments from your application.
-role: Admin, User
+role: Admin, User, Developer
 exl-id: 5b18fb2c-26c8-4d9d-ba2e-9e53c09f5022
 ---
 # Micro-Frontend Content Fragment Selector {#micro-frontend-content-fragment-selector}
 
-The Micro-Frontend Content Fragment Selector provides a user interface that easily integrates with the Adobe Experience Manager (AEM) as a Cloud Service repository. The interface allows you to browse or search Content Fragments in the repository, and use them in your application.
+The Micro-Frontend Content Fragment Selector provides a user interface that easily integrates with the Adobe Experience Manager (AEM) as a Cloud Service repository. The interface allows you to browse or search Content Fragments in the selected repository, and use them in your application.
 
 The Micro-Frontend user interface is made available in your application using the Content Fragment Selector package. Any updates to the package are automatically imported and loaded into your application.
 
@@ -18,7 +18,7 @@ The Content Fragment Selector provides many benefits, such as:
 * Easy to maintain, as updates to the Content Fragment Selector package are automatically deployed to the Content Fragment Selector available to your application. This means that your application does not need to take action to load the latest modifications.
 * Ease of customization, using properties that control the Content Fragment Selector display within your application.
 * Full-text search, together with customizable filters, allow the quick navigation of Content Fragments within the authoring experience.
-* Ability to switch repositories within an IMS organization for Content Fragment selection.
+* Ability to switch repositories for Content Fragment selection. You can select from AEM as a Cloud Service repositories, from AMS repositories, or a combination of both.
 * Ability to sort Content Fragments, and view them in your selected view.
 
 ## Prerequisites {#prerequisites}
@@ -63,9 +63,11 @@ Use the `ContentFragmentSelector` component. There are several installation opti
 
 Once the Content Fragment Selector is set up and authenticated to use the Content Fragment Selector with your AEM as a Cloud Service application, you can select Content Fragments or perform various other operations to search for your fragments in the repository:
 
-![The Content Fragment Selector](/help/headless/assets/content-fragment-selector-using.png)
+![The Content Fragment Selector](/help/headless/assets/content-fragment-selector-unwrapped.png)
 
-* With the **Repository** selector at the top right, you can select the repository you want to use
+* From the top toolbar you can:
+  * Use the **Repository** selector at the top right, to select the repository you want to use
+  * Select the format; list or grid
 * In the far left panel you can:
   * Hide, or show, folders from the selected repository
   * Select a specific folder to show Content Fragments in that folder
@@ -75,6 +77,9 @@ Once the Content Fragment Selector is set up and authenticated to use the Conten
   * Sort the current list according to various columns; both ascending or descending
   * See the view format indicator
   * Show, hide, and specify filters
+* In the far right panel you can:
+  * View properties
+  * View references
 
 ### Hide/Show panel {#hide-show-panel}
 
@@ -88,7 +93,21 @@ You can select the repository of your choice from the **Repository** drop-down, 
 
 ![The Content Fragment Selector](/help/headless/assets/content-fragment-repository-selector.png)
 
-The repository options available in the drop-down list are based on the `repositoryId` property defined in the `index.html` file. This property is based on the environment from the selected IMS org accessed by the user currently logged in. 
+<!--
+The repository options available in the drop-down list are based on the `repositoryId` property defined in the `index.html` file. This property is based on either the environment from the selected IMS org accessed by the user currently logged in, or your AMS repositories, or a combination of both.
+--> 
+
+The repository options available in the drop-down list are based on the `repositoryId` and `amsRepositories` properties defined:
+
+* If you provide a `repositoryId` property the app will automatically connect to it, regardless of whether it is an AEM as a Cloud Service or an AMS repository.
+
+* If no `repositoryId` is provided, the app uses the token to retrieve the available repositories through the discovery request; this returns only Cloud Service repositories. The app then populates the repository selector with the returned results. 
+
+* If the `amsRepositories` property is provided, those AMS repositories are appended to the repository selector as well.
+
+>[!NOTE]
+>
+>The discovery request may return an empty list if the user only has access to AMS repositories.
 
 Consumers can pass a preferred `repositoryID` to render fragments from a specific repository, and stop rendering the repository switcher.
 
@@ -124,3 +143,20 @@ You can sort fragments in the Content Fragment Selector by various properties. Y
 Content Fragment Selector lets you view the fragment in the:
 
 * **Table View**
+* **Grid View**
+
+The required view can be selected from the icons in the top toolbar: 
+
+![The Content Fragment Selector - View Type](/help/headless/assets/content-fragment-selector-view-type.png)
+
+## Integrate the Content Fragment Selector with applications {#integrate-the-content-fragment-selector-with-applications}
+
+You can integrate the Content Fragment Selector with various applications such as:
+
+* [Integrate the Content Fragment Selector with an Adobe application](/help/headless/content-fragment-selector/integrate-adobe-application.md) 
+* [Integrate the Content Fragment Selector with non-Adobe or third party application](/help/headless/content-fragment-selector/integrate-non-adobe-application.md)
+* [Integrate the Content Fragment Selector using Vanilla JS](/help/headless/content-fragment-selector/integrate-using-vanilla-js.md)
+
+## Related Resources {#related-resources}
+
+* For a complete list of all supported properties, their types, defaults, and descriptions, see [Content Fragment Selector - Related Properties](/help/headless/content-fragment-selector/properties.md).

@@ -5,7 +5,7 @@ contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Configure the Rich Text Editor plug-ins {#configure-the-rich-text-editor-plug-ins}
 
@@ -351,7 +351,7 @@ To enable the `paraformat` plug-in, follow these steps:
 
 >[!CAUTION]
 >
->When configuring the paragraph formats of the RTE, do not remove the paragraph tag &lt;p&gt; as a formatting option. If the `<p>` tag is removed, then the content authorcannot select the [!UICONTROL Paragraph formats] option even if there are additional formats configured.
+>When configuring the paragraph formats of the RTE, do not remove the paragraph tag &lt;p&gt; as a formatting option. If the `<p>` tag is removed, then the content author cannot select the [!UICONTROL Paragraph formats] option even if there are additional formats configured.
 
 ### Specify the available Paragraph Formats {#paraformatsindropdown}
 

@@ -2,8 +2,9 @@
 title: Using Content Fragments with Adobe Journey Optimizer
 description: Learn how Content Fragments can be integrated and used with Adobe Journey Optimizer.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 solution: Experience Manager Sites
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 4090ee41-80f1-4389-8961-e4af891f01ff
 ---
 # Content Fragments with Adobe Journey Optimizer {#content-fragments-with-journey-optimizer}
@@ -19,7 +20,7 @@ The connection between Content Fragments and AJO simplifies the process of acces
 
 For details start with the AJO documentation:
 
-* [Using Content Fragments in AJO](https://experienceleague.adobe.com/docs/journey-optimizer/using/integrations/aem-fragments.html#integrations)
+* [Using Content Fragments in AJO](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem/aem-fragments)
 * [Integration AJO Offers with Content Fragment](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-representations#urls)
 
 ## Dispatcher Configuration {#dispatcher-configuration}

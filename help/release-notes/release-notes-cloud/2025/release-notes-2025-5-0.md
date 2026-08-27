@@ -144,6 +144,7 @@ Expand the list below to view the deprecated APIs and OSGi configurations that m
   <summary>Expand to see the deprecations</summary>
 
 Java APIs:
+
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
 * `org.eclipse.jetty`

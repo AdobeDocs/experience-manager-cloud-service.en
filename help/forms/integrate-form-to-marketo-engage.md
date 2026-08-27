@@ -4,13 +4,12 @@ description: Learn how to integrate your Marketo Engage instance with AEM Forms.
 keywords: How to connect a Marketo instance with form? , Connect a form to Marketo, Integrate a form with Marketo Engage, Integrate an Adaptive Form with a Marketo instance.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 74cd25f9-1ee1-4f3f-8e02-8714071e7c86
 ---
 # Integrate Marketo Engage with AEM Forms
 
-<span class="preview"> The feature is available under early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
-
-Integrating AEM Forms with [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) enables users to leverage the capabilities of Marketo Engage to create business logic from captured data and automate workflows, including smart campaigns and email automation. The configured form can send captured data to Marketo Engage for processing.
+Integrating AEM Forms with [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) enables users to leverage the capabilities of Marketo Engage to create business logic from captured data and automate workflows, including smart campaigns and email automation. The configured form can send captured data to Marketo Engage for processing.   
 
 ## Advantages of integrating Marketo Engage with forms
 
@@ -70,18 +69,19 @@ The Cloud configuration connects your Experience Manager instance to the Adobe M
 
     ![Marketo Engage](/help/forms/assets/marketo-engage.png)
 
-2. Open a folder to host the configuration and click **Create**. The **Create Marketo Engage Configuration** window appears.
+1. Open a folder to host the configuration and click **Create**. The **Create Marketo Engage Configuration** window appears.
 
     >[!NOTE]
     >
     > You can also [configure folder for cloud service configurations](/help/forms/configure-data-sources.md#configure-folder-for-cloud-service-configurations).
 
-3. Specify the **Title** of the configuration and credentials to connect to the service. You can retrieve the authentication credentials from the Adobe Marketo Engage dashboard:
-   * **Client ID** and **Client Secret** are available in **Admin** > **Integration** > **LaunchPoint** by selecting the custom service and clicking **View Details**.
-    * **Identity URL** is available in **Admin** > **Integration** > **Web Services** as **Identity** in the **REST API** section.
+1. Specify the **Title** of the configuration and credentials to connect to the service. You can retrieve the authentication credentials from the Adobe Marketo Engage dashboard:
 
-4. Click **Connect**.  On a successful connection, the `Authentication Successful` message appears. 
-5. Click **[!UICONTROL Create]** to save the cloud configuration settings.
+   * **Client ID** and **Client Secret** are available in **Admin** > **Integration** > **LaunchPoint** by selecting the custom service and clicking **View Details**.
+   * **Identity URL** is available in **Admin** > **Integration** > **Web Services** as **Identity** in the **REST API** section.
+
+1. Click **Connect**.  On a successful connection, the `Authentication Successful` message appears. 
+1. Click **[!UICONTROL Create]** to save the cloud configuration settings.
 
 ![Marketo Engage Cloud Configuration](/help/forms/assets/marketo-engage-cloud-configuration.png)
 
@@ -90,6 +90,7 @@ Now you can use the created cloud service configuration to connect the Marketo E
 ## Next step
 
 You have created the cloud service configuration to integrate Adobe Marketo Engage with AEM Forms. Now, you can integrate:
+
 * [New Adaptive Form with Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
 * [Existing Adaptive Form with Marketo Engage](/help/forms/use-marketo-engage-data-source-in-form.md)
 

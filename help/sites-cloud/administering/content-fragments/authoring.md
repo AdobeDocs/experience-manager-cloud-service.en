@@ -2,7 +2,8 @@
 title: Authoring Content Fragments
 description: Understand how to author content for your Content Fragments, and create variations of that content according to purpose. Content Fragments provide added flexibility for both headless delivery and page authoring.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
 ---
@@ -23,9 +24,20 @@ This editor provides:
 * [Preview](#preview-content-fragment) of the rendered experience delivered by the Content Fragment.
 * Ability to [Publish](#publish-content-fragment) and [Unpublish](#unpublish-content-fragment) from the editor.
 * Ability to [view, and open, associated language copies](#view-language-copies) in the editor.
-* Ability to [view version details](#view-version-history) in the editor. You can also revert to a selected version.
+* Ability to manage the [Version history](#version-history). In the editor you can view version details, create a new version, compare versions, and revert to a selected version.
 * Ability to [view, and open, parent references](#view-parent-references).
+* Ability to view details of ongoing and completed [workflows](#view-workflows) that have been applied to the fragment.
+* Ability to [show, and edit, the properties, metadata and tags](#view-and-edit-properties-metadata-and-tags),
 * A hierarchical view of the Content Fragment, and its references, using the [Structure tree](#structure-tree).
+
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+<!--
+* Ability to [cancel, and revert to, inheritance](#cancel-and-revert-to-inheritance), when the fragment is part of a [Live Copy](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
+--> 
+
+>[!NOTE]
+>
+>Be aware of the [Best Practices](/help/sites-cloud/administering/content-fragments/overview.md#best-practices) when working with your Content Fragment Models and Content Fragments.
 
 >[!WARNING]
 >
@@ -38,20 +50,23 @@ When you first open the Content Fragment Editor, you see four main areas:
 * top toolbar: for key information, and actions
   * a link to the Content Fragment Console (Home icon)
   * information about the model, and folder
-  * links to [Preview (if the Default Preview URL Pattern is configured for the model)](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)
+  * links to [Preview](#preview-content-fragment); if the Default Preview URL Pattern is configured for the model
   * [Publish](#publish-content-fragment), and [Unpublish](#unpublish-content-fragment) actions
   * an option to show all **Parent References** (link icon)
+  * an option to show details of the ongoing and completed [workflows](#view-workflows) that have been applied to the fragment
   * the fragment **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**, and last saved information
-  * a toggle to switch to the original (Assets-based) editor
+  * a toggle to switch to the original (/help/sites-cloud/administering/content-fragments/assets-based) editor
 
     >[!WARNING]
     >
     >The original editor opens in the same tab. It is not recommended to have both editors open at the same time.
 
+  * Any warnings that are valid for the fragment and your account. For example, if you do not have the correct privileges to edit the fragment, or if another user has [checked out](/help/sites-cloud/administering/content-fragments/managing.md#check-out-and-check-in) the fragments you will only have read access.
+
 * left panel: shows the **[Variations](#variations)** for the Content Fragment, and its **Fields**:
   * these links can be used to [navigate the Content Fragment structure](#navigate-structure)
-* right panel: presents tabs [showing the properties (metadata) and tags](#view-properties-tags), information about the [version history](#view-version-history), and information related to any [language copies](#view-language-copies)
-  * in the **Properties** tab you can update the **Title** and **Description** for the fragment, or **Variation**
+* right panel: presents tabs [showing the properties, metadata and tags](#view-and-edit-properties-metadata-and-tags), information about the [version history](#version-history), and information related to any [language copies](#view-language-copies)
+  * in the **Properties** tab you can update the **Title** and **Description** properties of the fragment, or **Variation**
   * In the **Comments** tab you can add, and read, comments to help you collaborate with other authors
 * central panel: shows the actual fields, and content, of the selected variation
   * allows you to edit the content
@@ -62,9 +77,9 @@ When you first open the Content Fragment Editor, you see four main areas:
 
   >[!NOTE]
   >
-  >Depending on definitions in the underlying model, fields can be subject to certain types of [Validation](/help/assets/content-fragments/content-fragments-models.md#validation).
+  >Depending on definitions in the underlying model, fields can be subject to certain types of [Validation](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#validation).
 
-![Content Fragment Editor - Overview](assets/cf-authoring-overview.png)
+![Content Fragment Editor - Overview](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## Navigate the Content Fragment structure {#navigate-structure}
 
@@ -83,7 +98,7 @@ In the left panel you can see:
 
 * the list of **[Variations](#variations)** that have been created for this fragment:
   * **Main** is the Variation that is present when the Content Fragment is first created, you can add others later
-  * you can use Generate Variations(#generate-variations) to use a prompt based template that Adobe has created for a specific use case.
+  * you can use [Generate Variations](#generate-variations-ai) to use a prompt based template that Adobe has created for a specific use case.
   * you can also [create a Variation](#create-variation)
 * the **Fields** within the fragment, and its variations:
   * the icon indicates the [Data Type](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
@@ -94,17 +109,25 @@ In the left panel you can see:
 
 In various parts of the editor you can see the link icon. This icon can be used to open the item shown; for example, a Content Fragment Model, a Parent Reference, or a fragment that is referenced:
 
-![Content Fragment Editor - Link Icon](assets/cf-authoring-link-icon.png)
+![Content Fragment Editor - Link Icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-link-icon.png)
 
 ### Structure tree {#structure-tree}
 
 Open the **Structure tree** tab from the editor toolbar to show the hierarchical structure of the Content Fragment, and its references. Use the link icons to navigate to the references.
 
-![Content Fragment Editor - Structure tree](assets/cf-authoring-structure-tree.png)
+![Content Fragment Editor - Structure tree](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)
 
 >[!NOTE]
 >
 >See [Analyzing Content Fragment Structure - Structure tree](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree) for more details.
+
+### JSON preview {#json-preview}
+
+When developing the models for Content Fragments as part of your AEM headless implementation, you might want to view sample JSON output for a content fragment, as based on a model. For example, to get an idea of how the final output will look. This could be helpful when validating the model JSON structure, maybe with default sample content per data type.
+
+To view, open the **JSON preview** tab:
+
+![Content Fragment Editor - JSON preview](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-json-preview.png)
 
 ## Saving and auto-saving {#saving-autosaving}
 
@@ -138,11 +161,11 @@ To create a Variation of your Content Fragment:
    >
    >After creating your first variation, existing variations will be listed in the same panel.
 
-   ![Content Fragment Editor - Create your first Variation](assets/cf-authoring-create-variation-01.png)
+   ![Content Fragment Editor - Create your first Variation](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-create-variation-01.png)
 
 1. In the dialog, enter a **Title** for your variation, and a **Description** if wanted:
 
-   ![Content Fragment Editor - Create Variation dialog](assets/cf-authoring-create-variation-02.png)
+   ![Content Fragment Editor - Create Variation dialog](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-create-variation-02.png)
 
 1. **Create** the variation. It appears in the list.
 
@@ -170,15 +193,15 @@ See [Generate Variations - Integrated in AEM Editors](/help/generative-ai/genera
 
 To delete a Variation of your Content Fragment:
 
-    >[!NOTE]
-    >
-    >You cannot delete **Main**.
+>[!NOTE]
+>
+>You cannot delete **Main**.
 
 1. Select the Variation.
 
 1. In the **Variation** panel, select the delete icon (Trash Can):
 
-   ![Content Fragment Editor - Delete Variation icon](assets/cf-authoring-delete-variation.png)
+   ![Content Fragment Editor - Delete Variation icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-delete-variation.png)
 
 1. A dialog opens. Select **Delete** to confirm the action.
 
@@ -192,7 +215,7 @@ To delete a Variation of your Content Fragment:
 
 Fields that are defined as either Plain Text or Markdown have a simple text box, without (on-screen) formatting options:
 
-![Content Fragment Editor - Multi line text - full screen](assets/cf-authoring-multilinetext-plaintext-markdown.png)
+![Content Fragment Editor - Multi line text - full screen](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-plaintext-markdown.png)
 
 ## Edit Multi line text fields - Rich Text {#edit-multi-line-text-fields-rich-text}
 
@@ -218,7 +241,7 @@ For **[Multi line text](/help/sites-cloud/administering/content-fragments/conten
 
 For example:
 
-![Content Fragment Editor - Multi line text - full screen toggle](assets/cf-authoring-multilinetext-fullscreen-toggle.png)
+![Content Fragment Editor - Multi line text - full screen toggle](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-fullscreen-toggle.png)
 
 >[!NOTE]
 >
@@ -230,7 +253,7 @@ The full-screen editor offers the same editing options as when in-flow - but off
 
 For example:
 
-![Content Fragment Editor - Multi line text - full screen](assets/cf-authoring-multilinetext-fullscreen.png)
+![Content Fragment Editor - Multi line text - full screen](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-fullscreen.png)
 
 ### Statistics - Rich Text {#statistics-rich-text}
 
@@ -238,7 +261,7 @@ The action **Statistics** displays a range of information about the text in a Mu
 
 For example:
 
-![Content Fragment Editor - Statistics](assets/cf-authoring-multilinetext-statistics.png)
+![Content Fragment Editor - Statistics](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-statistics.png)
 
 ### Compare and Synchronize - Rich Text {#compare-and-synchronize-rich-text}
 
@@ -267,7 +290,7 @@ This opens the Multi line field in full-screen and:
 
 For example, a scenario where the variation content had been completely rewritten, so a synchronization will replace that new content with the content from **Main**:
 
-![Content Fragment Editor - Compare and Sync](assets/cf-authoring-multilinetext-compare.png)
+![Content Fragment Editor - Compare and Sync](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-compare.png)
 
 ## Manage References {#manage-references}
 
@@ -320,7 +343,7 @@ To reference a local asset, you can either:
 * drag and drop the new asset file directly (for example, from your file system) into the **Content Reference** field
 * use the **Add asset** action, then select either **Browse Assets** or **Upload** to open the appropriate selector for you to use:
 
-  ![Content Fragment Editor - Add asset options](assets/cf-authoring-add-asset-options.png)
+  ![Content Fragment Editor - Add asset options](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-add-asset-options.png)
 
 ##### Reference Remote Assets {#reference-remote-assets}
 
@@ -328,11 +351,11 @@ To reference remote assets:
 
 1. Specify the remote **Repository** when browsing for assets:
 
-   ![Content Fragment Editor - Select Asset from remote](assets/cf-authoring-remote-asset-01.png)
+   ![Content Fragment Editor - Select Asset from remote](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-remote-asset-01.png)
 
 2. After selection the location can be seen in the asset information: 
   
-   ![Content Fragment Editor - Asset from remote repository](assets/cf-authoring-remote-asset-02.png)
+   ![Content Fragment Editor - Asset from remote repository](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-remote-asset-02.png)
 
 ###### Remote Assets - Limitations {#remote-assets-limitations}
 
@@ -346,11 +369,11 @@ There are some limitations when referencing remote assets:
 
 * Both the AEM instance and remote asset repository instances must be at the same version.
 
-* No Asset metadata is exposed via the either Management API or the Delivery API. You have to use the Asset Metadata API to retrieve the asset metadata details:
+* Only a subset of the Asset metadata is exposed via either the Management API or the Delivery API endpoints for Content Fragments. For full metadata you must use the Asset Metadata API to retrieve the asset metadata details:
 
   * the individual asset metadata: [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata)
   
-  * get bulk metadata information using the search API (experimental): [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search)
+  * get bulk metadata information using the search API: [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search)
 
 >[!NOTE]
 >
@@ -379,22 +402,84 @@ Selecting the link icon in the top toolbar opens a list of all parent references
 
 For example:
 
-![Content Fragment Editor - Show References](assets/cf-authoring-show-references-link.png)
+![Content Fragment Editor - Show References](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-show-references-link.png)
 
 A window opens, listing all related references. To open a reference, select the name or title, or the link icon. 
 
 For example:
 
-![Content Fragment Editor - Show References](assets/cf-authoring-show-references.png)
+![Content Fragment Editor - Show References](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-show-references.png)
 
-## View Properties, and Tags {#view-properties-tags}
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+<!--
+## Cancel, and revert to, inheritance {#cancel-and-revert-to-inheritance}
 
-In the properties tab of the right panel, properties (metadata) and tags can be viewed. The properties can be either:
+Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of [Multi-Site Management](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md).
+
+You can cancel (then revert to) the inheritance. Depending on the context, this can be available for a variation, or an individual field, if the fragment is part of a live copy.
+
+For example:
+
+* Cancel inheritance
+
+  ![Cancel inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-cancel-inheritance.png)
+
+* Revert to inheritance (if inheritance is already canceled)
+
+  ![Revert to inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-revert-to-inheritance.png)
+-->
+
+## View Workflows {#view-workflows}
+
+The editor provides an option to show details about ongoing and completed [workflows](#view-workflows) that have been applied to the fragment.
+
+>[!NOTE]
+>
+>The option is for information only.
+
+Select the icon from the top toolbar: 
+
+![Content Fragments editor - Workflows icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-editor-workflows-icon.png)
+
+A dialog opens that shows detailed information about workflows (past and current) for the fragment:
+
+![Content Fragments editor - Workflows dialog](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-editor-workflows-dialog.png)
+
+Failed workflows are marked. Selecting the icon opens an additional dialog with information about the failure:
+
+![Content Fragments editor - Failures in the Workflows dialog](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-editor-workflows-dialog-failure.png)
+
+>[!NOTE]
+>
+>If the workflow fails when publishing a Content Fragment, a toast message for the failure is triggered. The toast message contains a link to open the dialog, so you can see the cause of the failure.
+
+## View and edit Properties, Metadata and Tags {#view-and-edit-properties-metadata-and-tags}
+
+In the properties tab of the right panel, properties, metadata and tags can be viewed and edited. 
+
+>[!NOTE]
+>
+>For more information see [Properties, Tags and Metadata](/help/sites-cloud/administering/content-fragments/properties-tags-and-metadata.md).
+
+### View Properties, Metadata and Tags {#view-properties-tags}
+
+In the Properties panel there are two tabs:
+
+* **Basic** shows the properties of the Content Fragment
+  * Tags are also shown under **Basic**
+* **Metadata** show the metadata according to the user defined forms
+  You can define the metadata structure using [metadata forms](#metadata-forms). If you have not defined and assigned your own form, the **default** is used.
+
+>[!NOTE]
+>
+>It is possible for both Properties and Metadata to have fields with the same name. These fields are distinct.
+
+The properties can be either:
 
 * for the **Content Fragment** - if **Main** is currently selected
 * for a specific **Variation**
 
-![Content Fragment Editor - Properties](assets/cf-authoring-properties.png) 
+![Content Fragment Editor - Properties](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-properties.png) 
 
 ### Edit Properties and Tags {#edit-properties-tags}
 
@@ -404,7 +489,9 @@ In the properties tab (right panel) you can also edit:
 * **Description**
 * **Tags**: using the drop-down list, or the selection dialog
 
-  ![Content Fragment Editor - Manage Tags](assets/cf-authoring-edit-tags.png) 
+  <!-- CQDOC-23473 - new screenshot? -->
+
+  ![Content Fragment Editor - Manage Tags](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-edit-tags.png) 
 
 ### Open the Content Fragment Model {#open-content-fragment-model}
 
@@ -412,17 +499,32 @@ When you have **Main** selected, the name of the underlying Content Fragment Mod
 
 For example:
 
-![Content Fragment Editor - open Content Fragment Model](assets/cf-authoring-open-model.png)
+![Content Fragment Editor - open Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-open-model.png)
 
-## View the Version History {#view-version-history}
+## Version History {#version-history}
 
-In the **Version history** tab of the right panel, details of the current, and previous, versions are shown:
+Each Content Fragment has a history as new versions are created over time. New versions are created for various reasons; including:
 
->[!NOTE]
->
->A new version is created when the content fragment is published.
+* when you publish your fragment
+* when you manually create a new version
 
-![Content Fragment Editor - Version History Overview](assets/cf-authoring-version-history-overview.png)
+In the **Version history** tab of the editor you can view the history, together with the details of specific versions. You can also create a new version, compare versions, and revert to a selected version.
+
+### View the Version History {#view-version-history}
+
+When you select the **Version history** tab of the right panel, details of the current, and previous, versions are shown. Select a specific version to show the details.
+
+<!-- CQDOC-23473 - new screenshot? -->
+
+![Content Fragment Editor - Version History Overview](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-overview.png)
+
+### Create a Version {#create-a-version}
+
+To open the **Create Version** dialog use the `+` icon at the top of the **Version history** tab of the editor. 
+
+Here you can specify a **Label** and **Comment**:
+
+![Content Fragment Editor - Create Version](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-create.png)
 
 ### Compare Version {#compare-version}
 
@@ -434,7 +536,9 @@ To compare a previous version to the current:
 
 1. Select **Compare**. 
 
-![Content Fragment Editor - Version History Compare](assets/cf-authoring-version-history-compare.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![Content Fragment Editor - Version History Compare](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-compare.png)
 
 This opens up a view that displays differences between the current version of the content, and the selected previous version of the content fragment. From the **Variations with changes** drop-down, you can select to see differences from the Main content and/or content from a Variation. 
 
@@ -443,19 +547,29 @@ Differences are indicated by color:
 * Green: indicates content added (to the current version)
 * Red: indicates content removed (from the current version)
 
-![Content Fragment Editor - Version History Compare Versions](assets/cf-authoring-version-history-compare-versions.png)
+You can also select to **Revert** to the older version, or **Close** the dialog.
+
+<!-- CQDOC-23473 - new screenshot? -->
+
+![Content Fragment Editor - Version History Compare Versions](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-compare-versions.png)
 
 ### Revert to a Version {#revert-version}
+
+<!-- CQDOC-23473 - new screenshot? -->
 
 You can revert to any version. 
 
 To revert to a specific version:
 
-1. Select the three dots icon next to the version.
+1. Select the three dots icon next to the required version.
 
-1. Select **Revert**.
+1. Select **Revert**:
 
-![Content Fragment Editor - Version History Revert](assets/cf-authoring-version-history-revert.png)
+   ![Content Fragment Editor - Version History Revert](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-revert.png)
+
+1. Confirm the action:
+
+   ![Content Fragment Editor - Version History Revert](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-revert-confirm.png)
 
 ## View the Language Copies {#view-language-copies}
 
@@ -463,7 +577,9 @@ In the **Language properties** tab details of any related language copies are sh
 
 For example:
 
-![Content Fragment Editor - open Language Copy](assets/cf-authoring-open-language-copies.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![Content Fragment Editor - open Language Copy](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-open-language-copies.png)
 
 >[!NOTE]
 >
@@ -483,7 +599,9 @@ To enable you to collaborate in-product and in-context, the **Comments** tab in 
 * Edit an existing comment
 * Delete comments
 
-![Content Fragment Editor - Comments tab](assets/cf-authoring-comments.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![Content Fragment Editor - Comments tab](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-comments.png)
 
 >[!NOTE]
 >
@@ -491,14 +609,17 @@ To enable you to collaborate in-product and in-context, the **Comments** tab in 
 
 ## Preview your Fragment {#preview-content-fragment}
 
-The Content Fragment editor provides authors with the option to preview their edits in an external frontend application. 
+The Content Fragment editor provides authors with two options to preview their fragments. 
 
-To use this feature, you first need to:
+Both options are available using **Preview** in the top toolbar:
 
-* Work with your IT team to set up the external frontend application that will render the Content Fragment by consuming its JSON output. 
-* When the external frontend application is set up, the **Default Preview URL Pattern** must be defined as a [property of the appropriate Content Fragment Model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties).
+* **Application**
 
-When the URL has been defined, the **Preview** button is active. You can select this button to launch the external application (in a separate tab) to render the Content Fragment. 
+  * Select this option to launch the [external application (in a separate tab) to render the Content Fragment](/help/sites-cloud/administering/content-fragments/preview.md#preview-in-an-application). 
+
+* **Template**
+
+  * This option allows you to preview your Content Fragment with **[Visualization (HTML) Templates](#preview-with-visualization-html-templates)**.
 
 ## Publish your Fragment {#publish-content-fragment}
 
@@ -577,10 +698,15 @@ The **Fields** panel lists all fields within the Content Fragment. The icon indi
 
   For example, if you do not have `edit` permissions the editor will be read-only.
 
-* A Content Fragment Model can often define data fields named **Title** and **Description**. If these fields exist, they are user-defined fields and can be updated in the *central panel* when editing the fragment.
+* The Content Fragment, and its variations, has Properties and Metadata. It is possible for both Properties and Metadata to have fields with the same name. These fields are distinct and are displayed and (when possible) edited in the appropriate tab of the right hand Properties panel.
 
-  The Content Fragment, and its variations, also have metadata fields (Variation properties) called **Title** and **Description**. These fields are an integral part of any Content Fragment and initially defined when the fragment. They can be updated in the *right panel* when editing the fragment.
+  It is also possible for the user to define fields in the Content Fragment Model with the same name as property or metadata fields. These fields in the model are content and are distinct from both Properties and Metadata. These fields are created in the model and updated in the central panel of the editor.
+
+  For example, fields named **Title** and **Description** can occur in all.
 
 * See the Assets documentation for full information about the [original Content Fragment editor](/help/assets/content-fragments/content-fragments-variations.md) - it is available from both the **Assets** console and the **Content Fragments** console.
 
-* Your project team can customize the editor if necessary. See [Customizing the Content Fragment Console and Editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md) for further details.
+* Your project team can configure and customize the editor if necessary. For further details see:
+
+  * [Customizing the Content Fragment Console and Editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
+  * [Content Fragments - Cloud Configurations](/help/implementing/developing/extending/content-fragments-cloud-configurations.md)

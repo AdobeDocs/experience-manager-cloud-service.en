@@ -3,7 +3,7 @@ title: Universal Editor Calls
 description: Learn about the different types of calls made to your app by the Universal Editor to help you when debugging.
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Universal Editor Calls {#calls}
@@ -21,7 +21,7 @@ For the developer, however, understanding these calls and what they do can be va
 * The **Payload** of the call contains details of what is being updated by the editor including identifying what to update and how to update it.
 * The **Response** includes details of what exactly was updated by the editor service. This is to facilitate refreshing the content in the editor. In certain cases, like a `move` call, the entire page must be refreshed.
 
-Once a call is completed successfully, events are triggered that include the request's and response's payload, which can be customized for your own app. Please see the document [Universal Editor Events](/help/implementing/universal-editor/events.md) for more details.
+Once a call is completed successfully, events are triggered that include the request's and response's payload, which can be customized for your own app. Please see the document [Universal Editor Events](/help/implementing/universal-editor/events-universal-editor.md) for more details.
 
 The following is a list of the types of calls that the Universal Editor makes to your app along with sample payloads and responses.
 
@@ -378,5 +378,5 @@ The Universal Editor iterates over the content and generates a list of reference
 
 ## Additional Resources {#additional-resources}
 
-* [Universal Editor Events](/help/implementing/universal-editor/events.md)
+* [Universal Editor Events](/help/implementing/universal-editor/events-universal-editor.md)
 

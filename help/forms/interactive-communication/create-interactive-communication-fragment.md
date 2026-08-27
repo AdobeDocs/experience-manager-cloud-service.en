@@ -4,25 +4,18 @@ description: Create Interactive Communication Fragments in AEM Forms to build mo
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: yes
-index: no
-hidefromtoc: yes
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
+exl-id: d1c62f32-372b-475a-9258-67c2276e79f3
 ---
+
 # Create an Interactive Communication Fragment
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
-
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
 
 An Interactive Communication Fragment allows users to create reusable, modular content blocks such as headers, footers, or standard disclaimers that can be used across multiple communication documents. These fragments help maintain consistency, reduce repetitive work, and accelerate the design process when building personalized, data-integrated communications.
 
-## Prerequisite
-
-* [Ensure that the author is a member of the forms-users group](/help/forms/setup-forms-cloud-service.md#configure-users)
+>[!NOTE]
+>
+> [Author must be a member of the "forms-users" group](/help/forms/setup-forms-cloud-service.md#configure-users)
 
 ## Create an Interactive Communication Fragment
 
@@ -51,3 +44,4 @@ By creating Interactive Communication Fragments, you ensure design consistency, 
 
 [Create an interactive communication](/help/forms/interactive-communication/create-interactive-communication.md)
 [Create an interactive communication Template](/help/forms/interactive-communication/create-interactive-communication-template.md)
+

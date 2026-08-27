@@ -5,21 +5,22 @@ feature: Adaptive Forms, Core Components, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
 keywords: integrating API in rule editor, invoke service enhancements
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
 ---
 # Integrating API in Rule Editor
 
 <span>Integrating API in Rule Editor is under Early Adopter Program. You can write to `aem-forms-ea@adobe.com` from your official email id to join the early adopter program and request access to the capability.</span>
 
+>[!NOTE]
+>
+> The Visual Rule Editor supports API integration in Adaptive Forms based on Core Components and [Edge Delivery Services Forms authored in Universal Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
+
 The Visual Rule Editor in Adaptive Forms supports direct API integration without creating a Form Data Model. You can connect to an API endpoint by either entering the API URL (in JSON format) or importing the configuration through a cURL command. Once integrated, the **Invoke Service** action can be used to call the API.
 
 Form fields can be mapped directly to the input parameters defined in the API configuration. Similarly, output parameters can be mapped to form fields using the **event payload** option for the corresponding API response.
 
 Additionally, the Visual Rule Editor lets you define **success** and **failure handlers** when invoking a service. Success handlers specify the actions to be executed after a successful API call, while failure handlers define how the form should respond when an error occurs.
-
->[!NOTE]
->
-> API integration in Rule Editor is also applicable to [Edge Delivery Services Forms authored in Universal Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
 
 ## Comparison: API Integration Methods
 
@@ -45,12 +46,16 @@ The screenshot below displays the API integration configuration window:
 * **API URL**: Endpoint of the API service.  
 * **Select HTTP Method**: The HTTP request method used to call the API.  
 * **Content Type**: Defines the request and response format.  
-* **Encryption Required**: (Optional) Ensures sensitive data is encrypted during transmission.  
+* **Encryption Required**: (Optional) When selected, request and response payloads can be encrypted using custom functions in **function.js**. A **Public Key** field appears. Paste your public key into this field before saving the API integration configuration.  
 * **Execute at Client**: When enabled, the API call is made from the client (browser) instead of the server.  
+
+>[!NOTE]
+>
+> For steps and sample **encrypt** and **decrypt** functions, see [Encryption and decryption](#encryption-and-decryption).
 
 **Authentication Type**  
 
-* **Options**: None, Basic, API Key, OAuth 2.0.  
+* **Options**: None, Basic, API Key.  
 
 **Input Parameters**
 
@@ -116,6 +121,73 @@ For example, when the user opens **Country of Citizenship**, the list of countri
 ![API integration Output](/help/forms/assets/api-integration-output.png)
 
 Similarly, **Country of Passport Issuance** and **Destination Country** use the same API call, ensuring consistent and up-to-date data across all three fields.
+
+>[!NOTE]
+>
+> You can [retrieve property values from a JSON array by invoking an API and using a custom function](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array). This approach lets you extract values and bind them directly to form fields.
+
+## Edit an existing API integration
+
+After you create an API integration, you can update it from the Rule Editor without creating a new integration. When an **Invoke Service** statement references an API integration, an **Edit** option is available for that integration.
+
+To edit an existing API integration:
+
+1. Open the rule in the Rule Editor that contains an **Invoke Service** statement.
+2. In the **Invoke Service** statement, select the API integration you want to update.
+3. Click **Edit** icon to open the **API Integration Configuration** window.
+4. Update the API URL, authentication, input and output parameters, or other settings, and save your changes.
+
+![Edit API Integration](/help/forms/assets/edit-api-rule-editor.png)
+
+## Encryption and decryption
+
+When **Encryption Required** is selected for an API integration, paste your public key in the **Public Key** field in the API integration configuration window. The Rule Editor invokes **encrypt** before each outgoing request and **decrypt** after a successful response. If you do not add custom logic in **function.js**, both functions return the payload unchanged.
+
+To encrypt and decrypt request and response data, add **encrypt** and **decrypt** functions to **function.js**:
+
+1. Open the **function.js** file for your Adaptive Form.
+2. Add an **encrypt** function to transform the request (body, headers, and related options) before the API call.
+3. Add a **decrypt** function to transform the response after a successful API call. The **decrypt** function receives the encrypted response and **originalRequest**, which includes any **cryptoMetadata** set during encryption.
+4. Save **function.js**, then test the integration using **Invoke Service** in the Rule Editor.
+
+The following sample code demonstrates how to add **encrypt** function in **function.js**:
+
+```javascript
+function encrypt(payload) {
+    const { body, headers, options } = payload;
+    const { encryptedBody, encryptedKey } = await myRsaEncrypt(body);
+    return {
+        body: encryptedBody,
+        headers: { ...headers, 'X-Encrypted-Key': encryptedKey },
+        cryptoMetadata: { keyId: 'rsa-2048-v1' },
+        options
+    };
+}
+```
+
+
+
+**encrypt (pre request payload hook)** 
+
+The **encrypt** function receives a payload object with **body**, **headers**, and optional **cryptoMetadata** and **options**. It returns a modified version of the same shape. The **options** field carries Fetch API settings (for example, `credentials: 'include'`) through the request pipeline. Values in **options** are applied to the underlying `fetch()` call. The **cryptoMetadata** field stores data for use during decryption. Whatever you set in **cryptoMetadata** during encryption is preserved in **originalRequest.cryptoMetadata** and made available to the **decrypt** function later. Despite the name, **encrypt** is a general pre request transformer. You can use it to modify headers or the request body, not only for cryptographic encryption. The default implementation returns the payload unchanged.
+>
+
+The following sample code demonstrates a **decrypt** function:
+
+```javascript
+function decrypt(encryptedData, originalRequest) {
+    const { keyId } = originalRequest?.cryptoMetadata || {};
+    return await myRsaDecrypt(encryptedData, keyId);
+}
+```
+
+**decrypt (post request response hook)** 
+
+The **decrypt** function runs after a successful response. It receives the response body and **originalRequest**. The **originalRequest** object includes **cryptoMetadata** from your **encrypt** function, along with **url**, **method**, and other request metadata. It must return the decrypted body synchronously or asynchronously. The default implementation returns the data unchanged. The **decrypt** function runs only on successful responses. Error responses do not invoke **decrypt**.
+
+>[!NOTE]
+>
+> In the above examples, replace `myRsaEncrypt` and `myRsaDecrypt` with your encryption functions. 
 
 ## Implementing Retry Mechanism for API Failures
 
@@ -192,14 +264,10 @@ function retryHandler(requestFn) {
 
 In the above code, the **retryHandler** function manages API requests with automatic retries in case of failure. It takes a request function (requestFn) and attempts the request up to two times, adding metadata for each retry.
 
->[!NOTE]
->
-> For detailed steps on how to add custom functions, refer to the [Introduction to Custom Functions for Adaptive Forms based on Core Components](/help/forms/create-and-use-custom-functions.md) article.
-
 ## Frequently Asked Questions
 
 * **Do I need to create a Form Data Model to integrate an API in Adaptive Forms?**  
 No. With the Visual Rule Editor, you can directly integrate APIs using the **Create API Integration** option without creating a Form Data Model. This approach is best suited for lightweight or form-specific use cases.
 
 * **Can I secure API calls made from the Rule Editor?**  
-Yes. The API Integration Configuration provides authentication options such as **Basic, API Key, and OAuth 2.0**. You can also enable **Encryption Required** to ensure sensitive data is securely transmitted.
+Yes. The API Integration Configuration provides authentication options such as **Basic** and **API Key**. You can also select **Encryption Required** and add custom **encrypt** and **decrypt** logic in **function.js**. For configuration steps and examples, see [Encryption and decryption](#encryption-and-decryption).

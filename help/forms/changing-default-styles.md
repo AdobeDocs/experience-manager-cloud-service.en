@@ -2,24 +2,16 @@
 title: Changing default styles of HTML5 forms
 
 description: HTML5 forms styling is based on CSS. You can change the default styles of the form.
-
-
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 topic-tags: hTML5_forms
-
-
-docset: aem65
-
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 4c84cfd1-50a4-416f-b4a5-7f2f4c7f10af
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 ---
 # Changing default styles of HTML5 forms{#changing-default-styles-of-html-forms}
-
-<span class="preview"> The HTML5 Forms capability is offered as part of Early Access Program. To request access, send an email from your official (work) email ID to aem-forms-ea@adobe.com.
-</span>
 
 HTML5 forms are rendered using HTML5 capabilities and the styling of the rendered form is done using CSS. Default appearance of a HTML5 forms is similar to its PDF rendition. Developers can use custom CSS to change default appearance of HTML5 forms.
 

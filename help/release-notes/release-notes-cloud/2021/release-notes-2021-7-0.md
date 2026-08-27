@@ -31,7 +31,7 @@ Have a look at the [July 2021 Release Overview](https://video.tv.adobe.com/v/335
 ### What's New {#what-is-new-foundation}
 
 * More flexible Dispatcher configuration: Projects can be more easily organized. For example, you can now include multiple rewrite rule files that reflect your site structure. [Learn about](/help/implementing/dispatcher/disp-overview.md#validation-debug) this flexible mode, including how to structure your Dispatcher configuration so you can take advantage of it.
-* The tree replication UI under the replication agent's "Distribute" tab should be considered deprecated and was removed after September 30, 2021. [Learn about](/help/operations/replication.md#tree-activation) alternative replication strategies.
+* The tree replication UI under the replication agent's "Distribute" tab should be considered deprecated and was removed after September 30, 2021. [Learn about](/help/operations/tree-replication-workflows.md#tree-activation) alternative replication strategies.
 * Bundle `org.apache.sling.datasource-1.0.4.jar` for Sling datasource support has been removed, as it has outdated functionality and is not in use by customers.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
@@ -58,7 +58,8 @@ Have a look at the [July 2021 Release Overview](https://video.tv.adobe.com/v/335
 
 ### New features available in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 
-<!-- TBD: Not sure about GA of these enh. Shall check with the team.
+<!--
+ TBD: Not sure about GA of these enh. Shall check with the team.
 
 * A user experience enhancements displays the number of assets present in a folder. For more than 1000 assets in a folder, [!DNL Assets] displays 1000+.
 
@@ -104,7 +105,7 @@ The API `com.day.cq.dam.api.collection.SmartCollection` is not available in [!DN
   * Visual indicator for staged product data in authoring mode for better visibility of upcoming changes
   * New sitemap component for content and commerce pages
 
-* Support for [Adobe Commerce Sensei Product Recommendation, powered by Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront using pre-defined or on-the-fly created recommendations
+* Support for [Adobe Commerce AI Product Recommendation, powered by Adobe AI](https://business.adobe.com/ai/adobe-genai.html) in AEM Storefront using pre-defined or on-the-fly created recommendations
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 

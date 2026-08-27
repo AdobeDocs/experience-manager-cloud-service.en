@@ -4,7 +4,7 @@ description: Cloud Manager's UI lets you add a custom domain to identify your si
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Introduction to custom domain names {#introduction}
@@ -16,13 +16,17 @@ role: Admin, Architect, Developer
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name" text="Adding a Custom Domain Name"
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/managing-custom-domain-names" text="View & Update Custom Domain Name"
 
-Adobe Experience Manager as a Cloud Service is provisioned with a default domain name, ending in `*.adobeaemcloud.com`. Using Cloud Manager's UI you can add a custom domain to identify your site with a unique, branded name in a self-service manner. The default `*.adobeaemcloud.com` domain name remains, even after you associate custom domain names to your website.
+Adobe Experience Manager as a Cloud Service is provisioned with a default domain name, ending in `*.adobeaemcloud.com`. To identify your site with a unique, branded name in a self-service manner, you can add a custom domain using Cloud Manager's UI. The default `*.adobeaemcloud.com` domain name remains, even after you associate custom domain names with your website.
 
 ## What are custom domain names? {#what-are-custom-domain-names}
 
 Each website has a unique, machine-readable, numerical address associated with it such as `184.33.123.64`. The Domain Name System (DNS) is what lets you have custom, branded domains attached to websites by translating numerical addresses into memorable addresses such as `wknd.com`.
 
 It is good practice to have a domain name for your site that is memorable for your customers and reflects your brand.
+
+>[!IMPORTANT]
+>
+> Default domains under adobeaemcloud.com **should not be used** to serve content that is important for SEO purposes. The adobeaemcloud.com domains and subdomains are not indexable by search engines since they serve a [default robots.txt](https://cdn.adobeaemcloud.com/robots.txt) that prevents crawling and indexing. Instead, use your own custom domain to serve a custom robots.txt.
 
 You can buy a domain name from a domain name registrar, a company or organization managing and selling domain names. Domain name registrars manage domain names on DNS servers.
 
@@ -37,7 +41,7 @@ AEM as a Cloud Service offers a built-in CDN (Content Delivery Network) service,
 * Cloud Manager manages custom domain names and certificates installed in the AEM-managed CDN.
 * Custom domain names and certificates installed in a BYO CDN are managed directly within that CDN. 
 
-**Domains managed in your own CDN do not require installation through Cloud Manager** - They are made available to AEM by way of X-Forwarded-Host and match the vhosts defined in the Dispatcher. See the [CDN documentation](/help/implementing/dispatcher/cdn.md).
+**Domains managed in your own CDN do not require installation through Cloud Manager** — they are made available to AEM through X-Forwarded-Host and match the vhosts defined in the Dispatcher. See the [CDN documentation](/help/implementing/dispatcher/cdn.md).
 
 In one environment, you can have both domains installed in the AEM-managed CDN and installed in a BYO CDN.
 
@@ -59,7 +63,7 @@ Adding a custom domain name requires interaction between the DNS service and Clo
 
 >[!TIP]
 >
->Setting up custom domain names with AEM as a Cloud service is typically a simple process. However, on occasion, domain delegation issues can occur which can take 1-2 business days to resolve. For this reason, it is recommended to install the domains well before their go live date. See the document [Check domain name status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) for more information.
+>Setting up custom domain names with AEM as a Cloud Service is typically a simple process. However, on occasion, domain delegation issues can occur which can take 1-2 business days to resolve. For this reason, Adobe recommends that you install the domains well before their go-live date. See the document [Check domain name status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) for more information.
 
 ## Usage notes {#usage-notes}
 

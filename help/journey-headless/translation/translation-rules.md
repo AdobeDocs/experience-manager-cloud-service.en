@@ -4,7 +4,7 @@ description: Learn how to define translation rules to identify content for trans
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Configure Translation Rules {#configure-translation-rules}
 
@@ -25,7 +25,7 @@ Now that your integration is set up, this article takes you through the next ste
 >
 >* The **Translatable** flag automatically creates translation rules for you and requires no intervention.
 >* The **Translatable** flag is only used if the Translation Integration Framework configuration is set to **[Enable Content Model Fields for Translation](/help/sites-cloud/administering/translation/integration-framework.md)**.
->* Enabling this option in the TIF configuration will supersede any manually-created translation rules.| 
+>* Enabling this option in the TIF configuration will supersede any manually-created translation rules.|
 
 ## Objective {#objective}
 

@@ -4,7 +4,7 @@ description: Learn how the Cloud Manager UI is organized and how to navigate to 
 exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Navigate the Cloud Manager UI {#navigation}
@@ -12,14 +12,14 @@ role: Admin, Architect, Developer
 Learn how the Cloud Manager UI is organized and how to navigate to manage your programs and environments.
 
 
-The Cloud manage UI is primarily composed of two graphical interfaces:
+The Cloud Manager UI is primarily composed of two graphical interfaces:
 
 * [The My Programs console](#my-programs-console) is where you can view and manage all of your programs.
 * [The Program Overview window](#program-overview) is where you can see the detail of and manage an individual program.
 
 >[!TIP]
 >
->Also check out the [onboarding documentation journey](/help/journey-onboarding/overview.md) for a complete overview of how to get up-and-running with AEM as a Cloud Service using Cloud Manager.
+>See the [onboarding documentation journey](/help/journey-onboarding/overview.md) for a complete overview of how to get started quickly with AEM as a Cloud Service using Cloud Manager.
 
 
 ## AI Assistant in AEM
@@ -29,11 +29,11 @@ For customers who have [completed pre-requisite criteria](/help/implementing/clo
 
 ## My Programs Console {#my-programs-console}
 
-When you log into Cloud Manager at at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization, you arrive at the **My Programs** console.
+When you log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization, you arrive at the **My Programs** console.
 
 ![My Programs console](assets/my-programs-console.png)
 
-The My Programs console provides an overview of all programs to which you have access in the selected organization. It is made up of several parts.
+The My Programs console provides an overview of all programs to which you have access in the selected organization. It consists of the following parts:
 
 1. [Toolbars](#toolbars-my-programs-toolbars) for organization selection, alerts, and account settings
 1. Tabs that let you toggle the current view of your programs.
@@ -50,22 +50,18 @@ The My Programs console provides an overview of all programs to which you have a
 
 ### Toolbars {#my-programs-toolbars}
 
-There are two toolbars on top of each other. 
+There are two stacked toolbars. 
 
-#### Cloud Manager header {#cloud-manager-header}
+#### Experience Platform top navigation bar {#cloud-manager-header}
 
-The first is the Cloud Manager header, which is persistent as you navigate Cloud Manager. It is an anchor that gives you access to settings and information that apply across Cloud Manager programs.
+The first is the Experience Platform top navigation bar, which is persistent as you navigate Cloud Manager. It is an anchor that gives you access to settings and information that apply across Cloud Manager programs.
 
-![The Experience Cloud header](assets/experience-cloud-header.png)
+![Experience Platform top navigation bar](assets/experience-cloud-header.png)
 
-1. Click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (show or hide side menu) to give you access to a variety of tabs that can take you to specific parts of an individual program. Or, you can switch between the [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md) and the **[My Programs](#my-programs-console)** console depending on the context.
-1. Click the Adobe Cloud Manager button takes you back to the My Programs console of Cloud Manager no matter where you are in Cloud Manager.
-1. Click **Feedback** to provide feedback to Adobe about Cloud Manager.
-1. Click the organization selector displays the organization that you are currently signed into (in this example, Foundation Internal). Click to switch to another organization if your Adobe ID is associated with multiple.
-1. Click ![Apps icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) (Solutions switcher) to jump quickly to other Experience Cloud solutions.
-1. Click ![Help icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Help_18_N.svg) to give you quick access to learning and support resources.
-1. Click ![Bell icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) ([Notifications](/help/implementing/cloud-manager/notifications.md)) to see notifications and announcements, among other things.
-1. Click the icon representing user access to your user settings. If you do not have a user picture configured, an icon is randomly assigned.
+* The ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (show or hide side menu) gives you access to a variety of tabs that can take you to specific parts of an individual program. Or, you can switch between the [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md) and the **[My Programs](#my-programs-console)** console depending on the context.
+* The ![Bell icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) ([Notifications](/help/implementing/cloud-manager/notifications.md)) gives you access to notifications and announcements, among other things.
+
+For more details on the Experience Platform top navigation bar, see the [Adobe Experience Platform UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar).
 
 #### Program toolbar {#program-toolbar}
 
@@ -74,18 +70,18 @@ The program toolbar provides links to switch between Cloud Manager programs and 
 ![Program toolbar](assets/program-toolbar.png)
 
 1. The **My Programs** selector opens a drop-down where you can select other programs quickly or take context-appropriate actions such as creating a new program
-1. The **Getting Started** link gives you access to the [onboarding documentation journey](/help/journey-onboarding/overview.md) to get you up-and-running with Cloud Manager.
+1. The **Getting Started** link gives you access to the [onboarding documentation journey](/help/journey-onboarding/overview.md) to get you started quickly with Cloud Manager.
 1. The action button offers context-appropriate actions such as adding a program.
 
 ### Statistics and call-to-actions {#statistics}
 
-The statistics and call-to-action section provides aggregate data for your organization, for example, if you have successfully set up your programs, statistics of your activities over the past 90 days might show, including:
+The statistics and call-to-action section provides aggregate data for your organization. For example, if you have successfully set up your programs, statistics of your activities over the past 90 days are shown, including:
 
 * Number of [deployments](/help/implementing/cloud-manager/deploy-code.md)
 * Number of [code quality issues](/help/implementing/cloud-manager/code-quality-testing.md) identified
 * Number of builds
 
-Or if you are just beginning the setup of your org, there might be tips on next steps or documentation resources.
+If you are beginning the setup of your org, there are tips on next steps or documentation resources.
 
 ### My Programs section {#my-programs-section}
 
@@ -95,7 +91,7 @@ The **My Programs** section lists cards representing each program. Click a card 
 
 >[!NOTE]
 >
->Depending on your privileges, you may not be able to select certain programs.
+>Depending on your privileges, you might not be able to select certain programs.
 
 
 To find the program you need more easily, use the sorting options.
@@ -128,7 +124,7 @@ A card (or row in a table) represents every program, providing an overview of th
 * Configured solutions. In the image above, Sites and Assets are the configured solutions.
 * Creation date.
 
-A production program might be badged to show additional features you chose at the time you added it, such as the following:
+A production program is badged to show additional features you chose at the time you added it, such as the following:
 
 * ![HIPAA badge](assets/hipaa.png) [HIPAA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
@@ -160,7 +156,7 @@ The ![More icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_More_
 
 ### Quick links section {#quick-links-section}
 
-The quick links section gives you access to commonly used resources that are related.
+The quick links section gives you access to related, commonly used resources.
 
 ## Program overview page {#program-overview}
 
@@ -168,39 +164,39 @@ When a program is selected in the **[My Programs](#my-programs-console)** consol
 
 ![Program overview](assets/program-overview.png)
 
-The program overview gives you access to all details of a Cloud Manager program. Like the **My Programs** console, it is made of several parts.
+The program overview gives you access to all details of a Cloud Manager program. Like the **My Programs** console, it is made of the following parts:
 
-1. [Toolbars](#program-overview-toolbar) to jump back to the My Programs console quickly, and to navigate the program
-1. [Tabs](#program-tabs) to switch between different aspects of the program
-1. A [call-to-action](#cta) based on the last actions of the program
-1. An [overview of the environments](#environments) of the program
-1. An [overview of the pipelines](#pipelines) of the program
-1. An [overview of the performance](#performance) of the program
-1. Links to [useful resources](#useful-resources)
+1. [Toolbars](#program-overview-toolbar) to move back to the My Programs console quickly, and to navigate the program.
+1. [Tabs](#program-tabs) to switch between different aspects of the program.
+1. A [call-to-action](#cta) based on the last actions of the program.
+1. An [overview of the environments](#environments) of the program.
+1. An [overview of the pipelines](#pipelines) of the program.
+1. An [overview of the performance](#performance) of the program.
+1. Links to [useful resources](#useful-resources).
 
 ### Toolbars {#program-overview-toolbar}
 
-The toolbars for the program overview are similar to those toolbars of the [My Programs console](#my-programs-toolbars). Only the differences are illustrated here.
+The toolbars for the program overview are similar to those of the [My Programs console](#my-programs-toolbars). Only the differences are illustrated here.
 
 #### Cloud Manager header {#cloud-manager-header-2}
 
-In the upper-left corner of the page is the Adobe Cloud Manager header. You can click ![Side menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to show or hide the side menu of tabs to other areas of the software.
+In the upper-left corner of the page is the Adobe Cloud Manager header. You can click ![Side menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to show or hide the side menu of tabs to other areas of the application.
 
 ![Cloud Manager side menu](assets/cloud-manager-hamburger.png)
 
-Click Adobe Cloud Manager to return to Home.
+Click Adobe Cloud Manager to return to the Home page.
 
 #### Program toolbar {#program-toolbar-2}
 
-The program toolbar still gives you access to switch to other programs quickly, but additionally gives access to context-appropriate actions such as adding and editing the program.
+The program toolbar provides access to switch to other programs quickly, and also provides access to context-appropriate actions, such as adding and editing the program.
 
 ![Program toolbar](assets/cloud-manager-program-toolbar.png)
 
-The toolbar always shows the tab that you currently are on, even if you have hidden the tabs using ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg).
+The toolbar always shows the tab that you are currently on, even if you have hidden the tabs using ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg).
 
 ### Program tabs {#program-tabs}
 
-Each program has numerous options and data associated with it. These options and data are gathered into tabs to make navigating the program simpler. The tabs give you access to:
+Each program has numerous options and data associated with it. These options and data are organized into tabs to make navigating the program simpler. The tabs give you access to:
 
 **Program**
 
@@ -208,7 +204,7 @@ Each program has numerous options and data associated with it. These options and
 * ![Bell icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) [Activity](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) - The history of pipeline runs of the program
 * ![Workflow icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) [Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) - All pipelines configured for the program
 * ![Folder icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) [Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - All repositories configured for the program
-* ![Graph pie icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GraphPie_18_N.svg) [Reports](/help/implementing/cloud-manager/sla-reporting.md) - Metrics such as SLA data
+* ![Graph pie icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GraphPie_18_N.svg) [Reports](/help/implementing/cloud-manager/reports/report-sla.md) - Metrics such as SLA data
 
 **Services**
 
@@ -217,7 +213,7 @@ Each program has numerous options and data associated with it. These options and
 * ![Settings icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) [Domain Settings](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Manage custom domain names for the program
 * ![Lock closed icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) [SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - Manage SSL certificates for the program
 * ![Social network icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [Domain Mappings](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Manage Domain Mappings 
-* ![Task list icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - Define allow lists for certain IP addresses
+* ![Task list icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [`IP Allow Lists`](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - Define allowlists for certain IP addresses
 * ![Box icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) [Content Sets](/help/implementing/developing/tools/content-copy.md) - Sets of content created for copy purposes
 * ![History icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) [Copy Content Activity](/help/implementing/developing/tools/content-copy.md) - Content copy activities
 * ![Channel icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Channel_18_N.svg) [Network Infrastructures](/help/security/configuring-advanced-networking.md) - Manage advanced networking options for the program
@@ -232,11 +228,11 @@ In the upper-left corner of the [Cloud Manager header](#cloud-manager-header-2),
 
 ### Call-to-action {#cta}
 
-The call-to-action section gives you helpful information depending on the status of your program. For a new program, you may see next steps given and a reminder of a go-live date, [set during program creation](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
+The call-to-action section gives you helpful information depending on the status of your program. For a new program, you see next steps and a reminder of a go-live date that was [set during program creation](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
 ![Call-to-action for a new program](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 
-For a live program, the status of your last deployment with links for details and starting a new deployment.
+For a live program, the status of your last deployment is shown with links for details and starting a new deployment.
 
 ![Call-to-action](/help/implementing/cloud-manager/assets/info-banner.png)
 

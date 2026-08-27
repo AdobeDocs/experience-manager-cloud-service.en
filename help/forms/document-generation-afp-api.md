@@ -3,6 +3,7 @@ title: How to use AFP output sync API?
 description: Learn how to use the AFP Output Sync API to retrieve and synchronize output renditions.
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
 ---
 # Generate AFP Output Using the AEM Forms API
@@ -25,7 +26,8 @@ To support AFP output generation, the following OSGi bundles must be present and
 >[!NOTE]
 >
 > * If any bundle is inactive, resolve dependency issues or reinstall manually.
-> * To enable AFP generation, the `FT_FORMS-17887` toggle configurations must be set in AEM configuration manager.-->
+> * To enable AFP generation, the `FT_FORMS-17887` toggle configurations must be set in AEM configuration manager.
+ -->
 
 ## AFP Generation API
 
@@ -33,12 +35,13 @@ Generates an AFP (Advanced Function Presentation) file using an XDP template and
 
 ### Authorization
 
-You can either use **BasicAuth** (Admin credentials) for local environments or **BearerAuth** authorization for AEM Cloud instances.
+You can either use **BasicAuth** (Admin credentials) for local environments or **OAuth Server-to-Server** authorization for AEM Cloud instances.
 
 ### Request
 
 **Endpoint:**
-`POST http://<server>:<port>/adobe/forms/document/generate/afp`
+[https://[publish-url].adobeaemcloud.com/adobe/forms/doc/v1/adobe/forms/doc/v1/generate/afp](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generate~1afp/post
+)
 
 ### Headers
 

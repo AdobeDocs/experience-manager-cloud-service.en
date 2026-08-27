@@ -4,7 +4,7 @@ description: Learn about App Builder application security for AEM as a Cloud Ser
 version: Experience Manager as a Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
-role: Developer, Architect
+role: Developer
 level: Beginner
 kt: 9460
 thumbnail: 339249.jpg

@@ -3,7 +3,7 @@ title: API Reference Materials
 description: AEM has extensive and powerful APIs that you can use for your digital experience project.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # API Reference Materials {#api-reference-materials}
 
@@ -19,9 +19,11 @@ The following APIs are core to AEM.
 |[Granite UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#)|Adobe's Open Web stack, providing various essential components (The 6.5 Granite materials apply to AEMaaCS)|
 |[Coral UI](https://opensource.adobe.com/coral-spectrum/documentation/)|Adobe's visual style for cloud UIs, designed to provide consistency in the user experience|
 
-<!---
+<!--
+-
 |Editor core JavaScript API reference|Provides all the base objects and concepts to support authoring of content resources|
---->
+-
+-->
 
 >[!NOTE]
 >

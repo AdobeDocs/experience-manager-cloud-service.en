@@ -2,8 +2,9 @@
 title: Using the Content Fragments AJO External References Extension
 description: Learn about the Content Fragment AJO External References Extension
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 solution: Experience Manager Sites
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 79c90e6b-91da-4f5a-ac96-a98ef7f8d4cd
 ---
 # The Content Fragment AJO External References Extension {#content-fragment-external-references-extension}

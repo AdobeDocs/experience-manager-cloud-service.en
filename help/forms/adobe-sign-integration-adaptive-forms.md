@@ -4,6 +4,7 @@ description: Learn how to configure Adobe Acrobat Sign for [!DNL AEM Forms] as a
 feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
 ---
 # Connect [!DNL AEM Forms] as a Cloud Service with [!DNL Adobe Acrobat Sign] {#integrate-adobe-sign-with-aem-forms}
@@ -83,7 +84,7 @@ After prerequisites are in place, perform the following steps to configure [!DNL
       >[!NOTE]
       >
       >* Keep the **Create Adobe Acrobat Sign Configuration** page open. Do not close it. You can retrieve **Client Id** and **Client Secret** after configuring OAuth settings for the [!DNL Adobe Acrobat Sign] application as described in upcoming steps.
-      > * After logging in your Adobe Sign account,navigate to **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** to access information related to Adobe Sign OAuth URL and Access Token URL.
+      >* After logging in your Adobe Sign account,navigate to **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** to access information related to Adobe Sign OAuth URL and Access Token URL.
 
 1. Configure OAuth settings for the [!DNL Adobe Acrobat Sign] application:
 

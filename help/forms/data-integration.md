@@ -3,6 +3,7 @@ title: How to connect a database to [!DNL AEM Forms] as a Cloud Service?
 description: Retrieve and save data to RESTful web services, SOAP-based web services, and OData services from an Adaptive Form or an AEM Workflow.
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
 ---
 # Connect AEM Forms to a database {#aem-forms-data-integration}
@@ -39,6 +40,26 @@ Once you have created a form data model (FDM), you can use it to:
 * Prefill Adaptive Forms from configured data sources
 * Invoke data source services/operations using Adaptive Form rules
 * Write submitted Adaptive Form data to data sources
+
+## Applicability and use cases
+
+### Insurance
+
+## Can AEM Forms be used for insurance policy applications?
+
+Yes. AEM Forms can be used to build digital insurance application forms that collect applicant information, validate inputs, and integrate with backend underwriting systems.
+
+## Does AEM Forms support underwriting workflows?
+
+Yes, with workflows and integrations. AEM Forms supports workflow-driven processes and backend integrations that allow application data to flow into underwriting and decisioning systems.
+
+## Can AEM Forms integrate with insurance core systems?
+
+Yes. AEM Forms supports integration using REST and SOAP APIs, allowing it to connect with policy administration systems, claims management systems, and CRMs.
+
+## Can AEM Forms write form data back to insurance systems?
+
+Yes. AEM Forms supports data write-back to backend systems as part of form submission and workflow execution.
 
 ## Get started with data integration {#get-started-with-data-integration}
 

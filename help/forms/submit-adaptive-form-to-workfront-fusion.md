@@ -5,17 +5,17 @@ keywords: Submit an Adaptive Form to Adobe Workfront Fusion, Integration of Adob
 topic-tags: author, developer
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: Admin, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
 ---
-# Submit an Adaptive Form to Adobe Workfront Fusion
-
-<span class="preview"> The feature is available under early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+# Submit an Adaptive Form to Adobe Workfront Fusion 
 
 [Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) automates the process of repeating the same tasks, like document approval workflows, email filtering and sorting, allowing you to focus on new tasks instead of recurring ones. Adobe Workfront Fusion includes multiple scenarios. A scenario consists of series of modules which executes data transfer between applications and web services. In a scenario, you add various steps (modules) to automate a task. 
 
 For example, using Workfront Fusion, you can create a scenario to gather data with Adaptive Form, process the data, and send the data to a data store for archival. Once a scenario is set up, Workfront Fusion automatically executes the tasks whenever a user fills out a form, updating the data store seamlessly.
 
-AEM Forms as a Cloud Service provides an OOTB connector to connect and submit an Adaptive Form to Adobe Workfront Fusion. Submitting a form to Adobe Workfront Fusion can offer several advantages:
+AEM Forms as a Cloud Service provides an OOTB connector to connect and submit an Adaptive Form to Adobe Workfront Fusion. Submitting a form to Adobe Workfront Fusion can offer several advantages: 
+
 * It enabled seamless transfer of form submissions data to Workfront Fusion workflows.
 * It helps automate various tasks triggered by form submissions. This can include initiating projects, assigning tasks to specific team members, sending notifications, and updating project statuses—all without manual intervention.
 * All form submissions captured within Workfront Fusion, provide a single source of truth for project-related information
@@ -31,7 +31,7 @@ AEM Forms as a Cloud Service provides an OOTB connector to connect and submit an
 
 To establish a connection between Workfront Fusion and AEM Forms, the following are necessary:
 
-* A valid [ Workfront and Workfront Fusion license](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* A valid [Workfront and Workfront Fusion license](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
 * An AEM user with right to access [Dev Console](https://my.cloudmanager.adobe.com/) to [retrieve the service credentials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## Integrate AEM Forms with Adobe Workfront Fusion
@@ -50,7 +50,7 @@ To create a scenario:
 
 1. Sign into your [Workfront Fusion account](https://app-qa.workfrontfusion.com/).
 1. Click **[!UICONTROL Scenarios]** ![Share icon](/help/forms/assets/Smock_ShareAndroid_18_N.svg) in the left panel. 
- 1. Click **[!UICONTROL Create a new scenario]** in the upper-right corner of the page. A page to create new scenario appears on-screen.
+1. Click **[!UICONTROL Create a new scenario]** in the upper-right corner of the page. A page to create new scenario appears on-screen.
 1. Select **[!UICONTROL New scenario]** in the upper-left corner on the page and type a proper name for the scenario.
 1. Click the question mark and make sure you add first module as **[!UICONTROL AEM Forms]**.
 
@@ -81,7 +81,7 @@ To add a webhook:
 
 >[!NOTE]
 >
-> Ensure that the Technical Account is a member of the **forms-users** group; otherwise, adding a webhook fails.
+> Ensure that the Technical Account is a member of the **forms-users** group; otherwise, adding a webhook fails. To add the technical account to the forms-users group in AEM, [click here](#add-technical-account-to-the-forms-users-group).
 
 #### Add a connection to a webhook {#add-connection}
 
@@ -190,6 +190,27 @@ To configure submit action of an Adaptive Form authored using Universal Editor:
 1. Click **[!UICONTROL Save&Close]**.
 
 >[!ENDTABS]
+
+## Add technical account to the forms-users group
+
+To add the Technical Account to `forms-users` Group in AEM, perform the following steps:
+
+1. Go to **Tools** > **Security** > **Users**.
+1. In the list of users, locate the technical account email for your organization. For example, let's search for the user as `Workfront-test`.
+1. Click on the user to view the user details.
+1. In the user details, select the **Groups** tab.
+1. Select `forms-users` from the **[!UICONTROL Select Group]** drop-down list.
+1. Click **Save & Close**.
+
+![Add technical account to group](/help/forms/assets/add-technical-account.png)
+
+You can also verify the Group membership for the user:
+
+1. Go to **Tools** > **Security** > **Groups**.
+1. Search for the `forms-users` group.
+1. Open the group and go to the **Members** tab and confirm that the the user appears in the list of group members.
+
+![verify-group](/help/forms/assets/verify-group.png)
 
 ## Best Practices {#best-practices}
 

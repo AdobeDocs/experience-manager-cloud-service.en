@@ -3,6 +3,7 @@ title: How to save the Core Components based Adaptive Form as a draft and use th
 description: Learn how to save Core Components based Adaptive Form as a draft. Also understand how to use the Drafts and Submissions component to list drafts and submissions for logged-in users?
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 role: User, Developer
 ---
 
@@ -15,10 +16,6 @@ Consider a user who begins filling out a form but needs to pause and return late
 ![Drafts icon](assets/drafts-component.png)
 
 ## Pre-requisites
-
-* Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.
-
-    After deploying the latest Core Components to your environment, the Forms Portal components become accessible in your authoring environment.
 
 * [Configure Azure Storage and Unified Storage Connector for Drafts & Submissions Forms Portal component](#configure-azure-storage-and-unified-storage-connector-for-drafts--submissions-forms-portal-component) 
 
@@ -62,7 +59,7 @@ The **Drafts & Submissions** component needs a storage setup for saving and list
 
 >[!NOTE]
 >
-> If you need to configure a storage option, other than Azure, write to aem-forms-ea@adobe.com from your official email address with your detailed requirements.
+> If you need to configure a storage option, other than Azure, write to <aem-forms-ea@adobe.com> from your official email address with your detailed requirements.
 
 Once you have successfully configured Azure Storage and Unified Storage Connector for storing the drafts and submitted forms, add the **Drafts & Submissions** component on AEM Sites page.
 
@@ -98,18 +95,21 @@ Now, configure the properties of the **Drafts and Submissions** component accord
 ## Configure properties of the Drafts & Submissions Component 
 
 You can configure the properties of the **Drafts & Submissions**:
+
 1. Select the **Drafts & Submissions** component.
 1. Click the ![Configure icon](assets/configure_icon.png) and the dialog box appears. 
 1. In the **[!UICONTROL Drafts and Submissions]** dialog, specify the following:
+
    * **Title** To identify a component in a Sites page and by default, the title appears on top of the component.
    * **Select Type**: To indicate the form listing as draft or submitted forms. If you choose **Draft Forms**, the forms saved as drafts are displayed. Alternatively, selecting **Submitted Forms** shows the forms submitted by logged-in users.
-   *  **Layout**: To display list draft forms or submitted forms in the card or list format.
+   * **Layout**: To display list draft forms or submitted forms in the card or list format.
  
     ![Draft and Submission Component proeprties](/help/forms/assets/save-form-as-draft-dns-properties.png)
 
 ## Configure forms to save as drafts
 
 You can configure Adaptive Forms in the following two ways to save them as drafts for later use:
+
 * [User action](#user-action)
 * [Auto-save](#auto-save)
 

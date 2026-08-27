@@ -1,8 +1,7 @@
 ---
 title: Migrating Closed User Groups
 description: Learn about the required special considerations to enable Closed User Groups after migrating content to Adobe Experience Manager as a Cloud Service.
-hide: yes
-hidefromtoc: yes
+hide: true
 exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
 feature: Migration
 role: Admin
@@ -25,6 +24,7 @@ Groups are automatically included in a CTT/CAM migration to Adobe Experience Man
 To use CUGs in AEM as a Cloud Service, users must be present on the Author instance and be members of the relevant CUGs groups.  This can be accomplished using packages, or if the CUGs users are IMS users, they may already be present.  CUGs users must then be made members of the AEM CUGs groups.
 
 To enable CUGs behavior on the Publish instance,
+
 1. The CUGs groups must be activated (which replicates them and their members to the Publish instance),
 1. *All* pages protected with CUGs policies must be unpublished (to clear the global CUGs count), and
 1. The pages protected with CUGs policies must then be published (which enables the Publish instance and to track the policies).

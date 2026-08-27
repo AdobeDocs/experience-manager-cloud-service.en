@@ -21,6 +21,8 @@ Additionally, if the CDN cannot contact its origin, you can write a rule that re
 
 All these rules, declared in a configuration file in source control, are deployed by using the Cloud Manager [config pipeline](/help/operations/config-pipeline.md). Be aware that the cumulative size of the configuration file, including traffic filter rules, cannot exceed 100KB.
 
+For additional code snippets for common scenarios, see the [CDN Configuration Snippets for Common Scenarios](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md) article.
+
 ## Order of Evaluation {#order-of-evaluation}
 
 Functionally, the various features mentioned previously are evaluated in the following sequence:
@@ -38,8 +40,6 @@ Before you can configure traffic at the CDN you need to do the following:
     ```
     kind: "CDN"
     version: "1"
-    metadata:
-      envTypes: ["dev"]
     ```
 
 1. Place the file somewhere under a top level folder named *config* or similar, as described under [Config Pipeline](/help/operations/config-pipeline.md#folder-structure).
@@ -52,9 +52,82 @@ Before you can configure traffic at the CDN you need to do the following:
 
 The rule types in the sections below share a common syntax.
 
-A rule is referenced by a name, a conditional "when clause", and actions.
+Typical rule syntax is a list entry with a name, a `when` condition, and an action or actions:
 
-The "when" clause determines whether a rule will be evaluated, based on properties including domain, path, query strings, headers, and cookies. The syntax is the same across rule types; for details, see the [Condition Structure section](/help/security/traffic-filter-rules-including-waf.md#condition-structure) in the Traffic Filter Rules article.
+```
+- name: <name>
+  when: <condition>
+  action: <action>
+```
+
+Each top-level section (`requestTransformations`, `responseTransformations`, `redirects`, `originSelectors`, and `trafficFilters` in [Traffic filter rules](/help/security/traffic-filter-rules-including-waf.md)) supports its own set of action types and properties; the allowed `type` values and fields are defined in that section’s tables and examples, not shared across all rule kinds. Sections such as `requestTransformations` and `responseTransformations` support multiple actions specified as a yaml list under `actions` property.
+
+The "when" clause determines whether a rule will be evaluated, based on properties including domain, path, query strings, headers, and cookies. The syntax is the same across rule types; see [Condition Structure](#condition-structure) below. Traffic filter rules (including WAF) use the same condition syntax; see [Traffic Filter Rules including WAF rules](/help/security/traffic-filter-rules-including-waf.md) for actions, rate limits, and WAF-specific behavior.
+
+### Condition Structure {#condition-structure}
+
+A Condition can be either a simple Condition or a group of Conditions.
+
+**Simple Condition**
+
+A Simple Condition is composed of a getter and a predicate.
+
+```
+{ <getter>: <value>, <predicate>: <value> }
+```
+
+**Group Conditions**
+
+A Group of Conditions is composed of multiple Simple and/or Group Conditions.
+
+```
+<allOf|anyOf>:
+  - { <getter>: <value>, <predicate>: <value> }
+  - { <getter>: <value>, <predicate>: <value> }
+  - <allOf|anyOf>:
+    - { <getter>: <value>, <predicate>: <value> }
+```
+
+|  **Property** | **Type**  | **Meaning**  |
+|---|---|---|
+| **allOf**  | `array[Condition]` | **and** operation. true if all listed conditions return true  |
+|  **anyOf** |  `array[Condition]` | **or** operation. true if any of listed conditions return true  |
+
+**Getter**
+
+| **Property**   | **Type**  | **Description**  |
+|---|---|---|
+| reqProperty  | `string`  | Request property.<br><br>One of:<br><ul><li>`path`: Returns the full path of a URL without the query parameters. (use `pathRaw` for the unescaped variant)</li><li>`originalPath`: Returns the immutable original path of the request without the query parameters — the path before any CDN request transformations.</li><li>`url`: Returns the full URL including the query parameters. (use `urlRaw` for the unescaped variant)</li><li>`originalUrl`: Returns the immutable original full URL of the request including the query parameters — the URL before any CDN request transformations.</li><li>`queryString`: Returns the query part of a URL</li><li>`method`: Returns the HTTP method used in the request.</li><li>`tier`: Returns one of `author`, `preview`, or `publish`.</li><li>`domain`: Returns the domain property (as defined in the `Host` header) in lower-case</li><li>`clientIp`: Returns the client IP.</li><li>`forwardedDomain`: Returns the first domain defined in the `X-Forwarded-Host` header in lower-case</li><li>`forwardedIp`: Returns the first IP in `X-Forwarded-For` header.</li><li>`clientRegion`: Returns the country subdivision code that identify in which region the client is located as described in [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2).</li><li>`clientCountry`: Returns a two letter code ([Regional indicator symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) that identify in which country the client is located.</li><li>`clientContinent`: Returns a two letter code (AF, AN, AS, EU, NA, OC, SA) that identify in which continent the client is located.</li><li>`clientAsNumber`: Returns the [Autonomous System](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) number associated to the client IP.</li><li>`clientAsName`: Returns the name associated to the Autonomous System number.</li></ul> |
+| reqHeader  | `string`  | Returns Request Header with specified name  |
+| queryParam  | `string` | Returns Query Parameter with specified name  |
+| reqCookie  | `string`  | Returns Cookie with specified name  |
+| postParam  | `string`  | Returns Post Parameter with specified name from Request body. Only works when body is of content type `application/x-www-form-urlencoded` |
+
+**Predicate**
+
+| **Property**  | **Type**  | **Meaning**  |
+|---|---|---|
+|  **equals** | `string`  | true if the getter result equals to provided value  |
+|  **doesNotEqual** | `string`  | true if the getter result is not equal to provided value  |
+| **like**  | `string`  | true if getter result matches provided pattern  |
+| **notLike**  | `string`  | true if getter result does not match provided pattern  |
+| **matches**  | `string`  | true if getter result matches provided regex  |
+| **doesNotMatch**  | `string`  | true if getter result does not match provided regex  |
+| **in**  | `array[string]`  | true if provided list contains getter result  |
+|  **notIn** | `array[string]`  | true if provided list does not contain getter result  |
+|  **exists** | `boolean`  | true when set to true and property exists or when set to false and property does not exist  |
+
+**Notes**
+
+* The request property `clientIp` can only be used with the following predicates: `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` can also be compared against IP ranges when using `in` and `notIn` predicates. The following example implements a condition to evaluate if a client IP is in the IP range of 192.168.0.0/24 (so from 192.168.0.0 to 192.168.0.255):
+
+```
+when:
+  reqProperty: clientIp
+  in: [ "192.168.0.0/24" ]
+```
+
+* Adobe recommends the use of [regex101](https://regex101.com/) and [Fastly Fiddle](https://fiddle.fastly.dev/) when working with regex. You can also learn more about how Fastly handles regex from [fastly documentation - Regular expressions in Fastly VCL](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
 
 The details of the actions node differ per rule type, and are outlined in the individual sections below.
 
@@ -74,8 +147,6 @@ Configuration example:
 
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev", "stage", "prod"]
 data:
   requestTransformations:
     removeMarketingParams: true
@@ -222,8 +293,6 @@ Configuration example:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["prod", "dev"]
 data:
   requestTransformations:
     rules:
@@ -308,8 +377,6 @@ Configuration example:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["prod", "dev"]
 data:
   responseTransformations:
     rules:
@@ -387,22 +454,24 @@ Explained in the table below are the available actions.
 
 You can leverage the AEM CDN to route traffic to different backends, including non-Adobe applications (perhaps on a per-path or subdomain basis).
 
+The request properties `originalPath` and `originalUrl` are the immutable original path (without query parameters) and full URL (including query parameters), respectively—each taken before any CDN [request transformations](#request-transformations). Use them in `when` conditions when you need to anchor rules on what the client initially sent, rather than values that may have been rewritten earlier in the evaluation sequence. Use `originalPath` for path-only matching; use `originalUrl` when the query string must be part of the condition (for example, routing or filtering on a specific initial request URL).
+
 Configuration example:
 
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
       - name: example-com
-        when: { reqProperty: path, like: /proxy* }
+        when: { reqProperty: originalPath, like: /proxy* }
         action:
           type: selectOrigin
           originName: example-com
           # skipCache: true
+          # headers:
+          #   Authorization: ${{AUTH_TOKEN}}
     origins:
       - name: example-com
         domain: www.example.com
@@ -417,10 +486,14 @@ data:
 
 Explained in the table below is the available action.
 
-| Name      | Properties               | Meaning     |
-|-----------|--------------------------|-------------|
-|**selectOrigin** |originName|Name of one of the defined origins.|
-|     |skipCache (optional, default is false)| Flag whether to use caching for requests matching this rule. By default, responses will be cached according to the response caching header (e.g., Cache-Control or Expires) |
+| Name                | Properties                                 | Meaning                                                                                                                                                                                             |
+|---------------------|--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **selectOrigin**    | originName                             | Name of one of the defined origins.                                                                                                                                                                 |
+|                     | skipCache (optional, default is false) | Flag whether to use caching for requests matching this rule. By default, responses will be cached according to the response caching header (e.g., Cache-Control or Expires)                         |
+|                     | headers (optional, default is `{}`)    | Key-value pairs containing additional HTTP headers to be sent to the selected backend when the rule is triggered. With keys corresponding to header names and values corresponding to header values |
+| **selectAemOrigin** | originName                             | Name of one of the predefined AEM origins (supported value: `static`).                                                                                                                              |
+|                     | skipCache (optional, default is false) | Flag whether to use caching for requests matching this rule. By default, responses will be cached according to the response caching header (e.g., Cache-Control or Expires)                         |
+|                     | headers (optional, default is `{}`)    | Key-value pairs containing additional HTTP headers to be sent to the selected backend when the rule is triggered. With keys corresponding to header names and values corresponding to header values |
 
 **Origins**
 
@@ -435,6 +508,31 @@ Connections to origins are SSL only and use port 443.
 | **forwardCookie** (optional, default is false) |If set to true then the "Cookie" header from the client request will be passed to backend, otherwise the Cookie header is removed.|
 | **forwardAuthorization** (optional, default is false) |If set to true then the "Authorization" header from the client request will be passed to the backend, otherwise the Authorization header is removed.|
 | **timeout** (optional, in seconds, default is 60) |Number of seconds the CDN should wait for a backend server to deliver the first byte of an HTTP response body. This value is also used as a between bytes timeout to the backend server.|
+
+>[!IMPORTANT]
+>
+>The **domain** value must not contain `.adobeaemcloud.com`. You cannot proxy directly to an adobeaemcloud.com domain. This restriction protects against unwanted request loops. To proxy traffic to your AEM as a Cloud Service environment, use a [custom domain](#proxying-to-aemaacs) installed in your AEMaaCS environment as the origin backend instead.
+
+### Proxying custom domain to AEM static tier {#proxy-custom-domain-static}
+
+Origin selectors can be used to route AEM publish traffic to AEM static content deployed using the [front end pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Use cases include serving static resources on the same domain as the page (e.g., example.com/static) or on an explicitly different domain (e.g., static.example.com).
+
+Here is an example of an origin selector rule that can accomplish this:
+
+```
+kind: CDN
+version: '1'
+data:
+  originSelectors:
+    rules:
+      - name: select-aem-static-origin
+        when:
+          reqProperty: domain
+          equals: static.example.com
+        action:
+          type: selectAemOrigin
+          originName: static
+```
 
 ### Proxying to Edge Delivery Services {#proxying-to-edge-delivery}
 
@@ -474,6 +572,41 @@ data:
 >Because the Adobe Managed CDN is used, make sure to configure push invalidation in **managed** mode, by following the Edge Delivery Services [Setup push invalidation documentation](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
 
 
+### Proxying to AEMaaCS environment {#proxying-to-aemaacs}
+
+You cannot use an `adobeaemcloud.com` domain directly as an origin in your CDN configuration. Doing so is rejected (domain must not contain `.adobeaemcloud.com`) to protect against unwanted request loops. This also applies when routing from a domain installed for an Edge Delivery Site.
+
+If your custom domain (`www.example.com`) is already installed to an AEMaaCS environment, the default routing will route to AEM backend without any CDN rule. Use origin selectors when you need to route cross-environment (for example, from `pXXXX-eYYYY` to `pXXXX-eZZZZ`) or from an Edge Delivery Site to an AEMaaCS environment.
+
+To proxy traffic to your AEM as a Cloud Service environment in those cases (for example, to route specific paths such as `/graphql` to a backend), install a custom domain in your AEMaaCS environment and use that custom domain as the origin in your CDN configuration.
+
+**Example:** If your AEM publish tier is reachable at `publish-pXXXXX-eYYYYY.adobeaemcloud.com`, do not use that domain in `originSelectors`. Instead:
+
+1. Install a custom domain in your AEMaaCS environment (for example, `aem-publish-origin.example.com`) that points to your publish service.
+2. In your CDN config, define an origin with that custom domain and route the desired paths (for example, `/graphql`) to it.
+
+```
+kind: CDN
+version: '1'
+data:
+  originSelectors:
+    rules:
+      - name: graphql-to-aem-publish
+        when:
+          allOf:
+            - reqProperty: domain
+              equals: www.example.com
+            - reqProperty: originalPath
+              like: /graphql*
+        action:
+          type: selectOrigin
+          originName: aem-publish-origin
+    origins:
+      - name: aem-publish-origin
+        domain: aem-publish-origin.example.com
+```
+
+
 ## Server-side Redirects {#server-side-redirectors}
 
 You can use client side redirect rules for 301, 302 and similar client side redirects. If a rule matches, the CDN responds with a status line that includes the status code and message (for example, HTTP/1.1 301 Moved Permanently), as well as the location header set.
@@ -488,19 +621,17 @@ Configuration example:
 
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   redirects:
     rules:
       - name: redirect-absolute
-        when: { reqProperty: path, equals: "/page.html" }
+        when: { reqProperty: originalPath, equals: "/page.html" }
         action:
           type: redirect
           status: 301
           location: https://example.com/page
       - name: redirect-relative
-        when: { reqProperty: path, equals: "/anotherpage.html" }
+        when: { reqProperty: originalPath, equals: "/anotherpage.html" }
         action:
           type: redirect
           location: /anotherpage

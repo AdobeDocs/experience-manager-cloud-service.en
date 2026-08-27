@@ -1,6 +1,7 @@
 ---
 title: How to integrate DocuSign with an Adaptive Form?
 description: Learn how to use DocuSign with an adaptive form to collect e-signatures.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
@@ -171,7 +172,7 @@ To create a sign-enabled Adaptive Form:
 
    1. Select the [configuration container](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) created while [integrating [!DNL DocuSign] with [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 
-   The configuration container contains the [!DNL DocuSign] Cloud Services configured for your environment. These services are available for selection in Adaptive Form editor.
+   The configuration container contains the [!DNL DocuSign] Cloud Services configured for your environment. These services are available for selection in Adaptive Form builder.
 
 1. In the **[!UICONTROL Form Model]** tab, select one of the following options:
 

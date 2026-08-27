@@ -9,7 +9,7 @@ kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 role: Admin
-index: no
+index: false
 ---
 
 # Develop AEM Commerce for AEM as a Cloud Service {#develop}

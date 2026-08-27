@@ -1,20 +1,21 @@
 ---
 title: Smart Imaging
-description: Learn how Smart Imaging with Adobe Sensei AI applies each user's unique viewing characteristics to serve the right images optimized for their experience automatically, resulting in better performance and engagement.
+description: Learn how Smart Imaging with Adobe AI applies each user's unique viewing characteristics to serve the right images optimized for their experience automatically, resulting in better performance and engagement.
 contentOwner: Rick Brough
 feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 ---
 # Smart Imaging {#smart-imaging}
 
-Learn how Smart Imaging with Adobe Sensei AI applies each user's unique viewing characteristics to serve the right images optimized for their experience automatically, resulting in better performance and engagement.
+Learn how Smart Imaging with Adobe AI applies each user's unique viewing characteristics to serve the right images optimized for their experience automatically, resulting in better performance and engagement.
 
 
 ## About Smart Imaging {#about-smart-imaging}
 
-Smart Imaging technology applies Adobe Sensei AI capabilities and works with existing "image presets." It works to enhance image delivery performance by automatically optimizing image format, size, and quality based on client browser capabilities.
+Smart Imaging technology applies Adobe AI capabilities and works with existing "image presets." It works to enhance image delivery performance by automatically optimizing image format, size, and quality based on client browser capabilities.
 
 And now, get a better Google Core Web Vital score for LCP (Largest Contentful Paint) with improved Smart Imaging, which now comes with both AVIF and WebP support.
 
@@ -51,12 +52,14 @@ Compare WebP and AVIF to PNG, you can see an 84% size reduction with WebP and 87
 
 See also [Image Optimization with Next-gen Image Formats (WebP and AVIF)](https://blog.developer.adobe.com/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 
-<!-- HIDDEN ON MAY 19, 2022 BASED ON CQDOC-19280 On the mobile web, the challenges are compounded by two factors:
+<!--
+ HIDDEN ON MAY 19, 2022 BASED ON CQDOC-19280 On the mobile web, the challenges are compounded by two factors:
 
 * Large variety of devices with different form factors and high-resolution displays.
 * Constrained network bandwidth.
 
-In terms of images, the goal is to serve the best quality images as efficiently as possible. -->
+In terms of images, the goal is to serve the best quality images as efficiently as possible.
+-->
 
 **Benefits of Smart Imaging**
 
@@ -92,13 +95,14 @@ Currently, the pixel density of the display comes from Akamai CDN header values.
 
 | Permitted values in an image's URL | Description |
 |---|---|
-| `dpr=off` | Turn off DPR optimization at an individual image URL level.| 
+| `dpr=off` | Turn off DPR optimization at an individual image URL level.|
 | `dpr=on,dprValue` | Override the DPR value detected by Smart Imaging, with a custom value (as detected by any client-side logic or other means). Permitted value for `dprValue` is any number greater than 0.  |
 
 >[!NOTE]
 >
 >* You can use `dpr=on,dprValue` even if the company level DPR setting as off.
->* Owing to DPR optimization, when the resultant image is greater than the MaxPix Dynamic Media setting, MaxPix width is always recognized by maintaining the image's aspect ratio. -->
+>* Owing to DPR optimization, when the resultant image is greater than the MaxPix Dynamic Media setting, MaxPix width is always recognized by maintaining the image's aspect ratio.
+>-->
 
 | Requested image size | Device Pixel Ratio (dpr) value | Delivered image size |
 |---|---|---|
@@ -123,7 +127,7 @@ DPR and network bandwidth values are based on the detected client-side values of
 
 * Improved Google SEO ranking for web pages that use the latest Smart Imaging.
 * Serves optimized content immediately (at runtime).
-* Uses Adobe Sensei technology to convert according to the quality (`qlt`) specified in the image request.
+* Uses Adobe AI technology to convert according to the quality (`qlt`) specified in the image request.
 * TTL (Time To Live) independent. Previously, a minimum TTL of 12 hours was mandatory for Smart Imaging to work.
 * Previously, both the original and derivative images were cached, and it was a 2-step process to invalidate the cache. In the latest Smart Imaging, only the derivatives get cached, allowing a single-step cache invalidation process.
 * Customers that use custom headers in their ruleset benefit from the latest Smart Imaging, as these headers are not blocked, unlike the previous version of Smart Imaging.
@@ -205,24 +209,30 @@ For example, let's say an image preset specifies a JPEG format at 500 &times; 50
 
 +++
 
-<!-- OLD VERSION BELOW AS PER CQDOC-22085>
+<!--
+ OLD VERSION BELOW AS PER CQDOC-22085>
 Yes. Smart Imaging works with your existing image presets and observes all your image settings. What changes is the image format, or the quality setting, or both. For format conversion, Smart Imaging maintains full visual fidelity as defined by your image preset settings, but at a smaller file size.
 
-For example, suppose that an image preset is defined with JPEG format, size 500 x 500, quality=85, and unsharp mask=0.1,1,5. When Smart Imaging detects that a user is on a Chrome browser, the image is converted to WebP format, with size 500 x 500. And, unsharp mask=0.1,1,5 is at a WebP quality that matches a JPEG quality of 85 as close as possible. The footprint of that WebP conversion is compared with the JPEG, and the smaller of the two is returned. -->
+For example, suppose that an image preset is defined with JPEG format, size 500 x 500, quality=85, and unsharp mask=0.1,1,5. When Smart Imaging detects that a user is on a Chrome browser, the image is converted to WebP format, with size 500 x 500. And, unsharp mask=0.1,1,5 is at a WebP quality that matches a JPEG quality of 85 as close as possible. The footprint of that WebP conversion is compared with the JPEG, and the smaller of the two is returned.
+-->
 
-<!-- QUESTION BELOW WAS REMOVED AS PER CQDOC-22085
+<!--
+ QUESTION BELOW WAS REMOVED AS PER CQDOC-22085
 
 +++**Do I have to change any URLs, image presets, or deploy new code on my site?**
 
 No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add code to your website to detect a user's browser. All of this functionality is handled automatically.
 
-<!-- Smart Imaging works seamlessly with your existing image URLs and image presets if you configure Smart Imaging on your existing custom domain. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. It is all handled automatically.
+<!--
+ Smart Imaging works seamlessly with your existing image URLs and image presets if you configure Smart Imaging on your existing custom domain. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. It is all handled automatically.
 
 In case you must configure a new custom domain to use Smart Imaging, the URLs must be updated to reflect this custom domain.
 
-To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging) -->
+To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging)
+-->
 
-<!-- OLD As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. 
+<!--
+ OLD As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. 
 
 -->
 
@@ -444,11 +454,14 @@ Yes. Smart Imaging now supports lossy conversion based on the quality level. You
 
 
 
-<!-- ## If Smart Imaging manages the quality settings, are there minimums and maximums I can set? For example, is it possible to set "no lower than 60" and "no greater than 80 quality"? {#minimum-maximum}
+<!--
+ ## If Smart Imaging manages the quality settings, are there minimums and maximums I can set? For example, is it possible to set "no lower than 60" and "no greater than 80 quality"? {#minimum-maximum}
 
-There is no such provisioning ability in the current Smart Imaging. -->
+There is no such provisioning ability in the current Smart Imaging.
+-->
 
-<!-- ## Sometimes a JPEG image is returned to Chrome instead of a WebP image. Why does that change happen? {#jpeg-webp}
+<!--
+ ## Sometimes a JPEG image is returned to Chrome instead of a WebP image. Why does that change happen? {#jpeg-webp}
 
 Smart Imaging determines if the conversion is beneficial or not. It returns the new image only if the conversion results in a smaller file size with comparable quality.
 

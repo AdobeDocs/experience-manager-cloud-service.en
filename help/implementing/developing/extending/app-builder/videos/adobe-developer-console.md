@@ -4,7 +4,7 @@ description: Learn about Adobe Developer Console and App Builder projects.
 version: Experience Manager as a Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
-role: Developer, Architect
+role: Developer
 level: Beginner
 kt: 9453, 9467, 9468, 9469
 thumbnail: 339162.jpg

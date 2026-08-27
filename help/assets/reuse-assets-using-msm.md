@@ -3,8 +3,9 @@ title: Reuse assets using MSM
 description: Use assets across multiple pages/folders that are derived from and linked to parent assets. The assets stay in sync with a primary copy and with a few clicks, receive the updates from parent assets.
 contentOwner: AG
 mini-toc-levels: 1
-role: User, Admin, Architect
+role: User, Admin, Developer
 feature: Asset Management
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
 ---
 # Reuse assets using MSM for [!DNL Assets] {#reuse-assets-using-msm-for-assets}
@@ -319,7 +320,8 @@ If you have multiple assets in a live copy folder, initiating actions on each as
 
    *Figure: Easily update many assets in live copy folders from the [!UICONTROL Live Copy Overview] console.*
 
-<!-- TBD: Can MSM be extended using Java APIs in CS?
+<!--
+ TBD: Can MSM be extended using Java APIs in CS?
 
 ## Extend MSM for [!DNL Assets] {#extend-api}
 
@@ -367,17 +369,18 @@ Following are limitations of MSM for [!DNL Assets].
 
 **See also**
 
-* [Translate Assets](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [Assets supported file formats](file-format-support.md)
-* [Search assets](search-assets.md)
-* [Connected assets](use-assets-across-connected-assets-instances.md)
-* [Asset reports](asset-reports.md)
-* [Metadata schemas](metadata-schemas.md)
-* [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata.md)
-* [Search facets](search-facets.md)
-* [Manage collections](manage-collections.md)
-* [Bulk metadata import](metadata-import-export.md)
-* [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

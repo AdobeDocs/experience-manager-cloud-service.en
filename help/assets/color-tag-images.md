@@ -1,6 +1,7 @@
 ---
 title: Color tags for images
 description: Adobe Experience Manager Assets enables you to distinguish between colors in an image and apply those as tags automatically. You can then use these tags to search and filter images.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 feature: Smart Imaging, Interactive Images, Asset Management
 role: User, Admin
@@ -9,7 +10,7 @@ role: User, Admin
 
 ![Color Tagging Banner](assets/banner-image.png)
 
-Adobe Experience Manager (AEM) Assets uses Adobe Sensei AI capabilities to distinguish between colors in an image and apply those as tags automatically on ingestion. These tags enable an enhanced Search experience, based on image color composition. 
+Adobe Experience Manager (AEM) Assets uses Adobe AI capabilities to distinguish between colors in an image and apply those as tags automatically on ingestion. These tags enable an enhanced Search experience, based on image color composition. 
 
 You can configure the number of colors, within a range of one to 40, that are tagged to an image so that you can search for images based on those colors later. Experience Manager Assets applies the tags based on the color coverage in an image. You can also configure the display format for a color tag.
 
@@ -21,7 +22,7 @@ The following figure illustrates the sequence of tasks that you perform to confi
 
 |File format |Extension | MIME type |Input Colorspace |Maximum supported source file size |Maximum supported file size resolution|
 |---|---|---|---|---|---|
-| JPEG |.jpg and .jpeg|image/jpeg |sRGB|15 GB |20000 × 20000 pixels | 
+| JPEG |.jpg and .jpeg|image/jpeg |sRGB|15 GB |20000 × 20000 pixels |
 | PNG |.png|image/png |sRGB |15 GB |20000 × 20000 pixels |
 | TIFF |.tif and .tiff|image/tiff |sRGB | 4 GB (limited by format specifications) |20000 × 20000 pixels |
 | PSD |.psd|image/vnd.adobe.photoshop |sRGB|2 GB (limited by format specifications)|20000 × 20000 pixels|
@@ -180,16 +181,19 @@ To search images based on colors:
 
 **See also**
 
-* [Translate Assets](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [Assets supported file formats](file-format-support.md)
-* [Search assets](search-assets.md)
-* [Connected assets](use-assets-across-connected-assets-instances.md)
-* [Asset reports](asset-reports.md)
-* [Metadata schemas](metadata-schemas.md)
-* [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata.md)
-* [Search facets](search-facets.md)
-* [Manage collections](manage-collections.md)
-* [Bulk metadata import](metadata-import-export.md)
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

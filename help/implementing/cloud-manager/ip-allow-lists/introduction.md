@@ -4,7 +4,7 @@ description: Learn how IP Allow Lists can limit from which addresses users can a
 exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Introduction to IP Allow Lists {#introduction}
@@ -14,13 +14,13 @@ Learn how IP Allow Lists can limit from which addresses users can access domains
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_ipallowlist"
 >title="Manage IP Allow Lists"
->abstract="AEM as a Cloud Service is accessible by way of the Internet and is secured through user authentication and authorization. Cloud Manager's IP Allow Lists can be used to limit and control access only to trusted IP addresses. Cloud Manager users with appropriate permissions can create allowlists of trusted IP addresses from which their site's users can access their AEM domains."
+>abstract="AEM as a Cloud Service is accessible through the Internet and is secured through user authentication and authorization. Cloud Manager's IP Allow Lists can be used to limit and control access only to trusted IP addresses. Cloud Manager users with appropriate permissions can create allowlists of trusted IP addresses from which their site's users can access their AEM domains."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists" text="Add an IP Allow List"
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/managing-ip-allow-lists" text="View and update an IP Allow List"
 
 ## Overview {#overview}
 
-AEM as a cloud service is by default accessible by way of the Internet. While security is handled through user authentication and authorization, IP allow-listing is a way to limit access only to trusted IP addresses.
+AEM as a Cloud Service is, by default, accessible through the Internet. While security is handled through user authentication and authorization, IP allow-listing is a way to limit access only to trusted IP addresses.
 
 Cloud Manager's IP Allow Lists can be used to limit and control access only to such trusted IP addresses. Cloud Manager users with appropriate permissions can [create and add IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) of trusted IP addresses from which their site's users can access their AEM domains.
 

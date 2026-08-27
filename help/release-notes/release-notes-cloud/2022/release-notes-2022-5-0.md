@@ -45,7 +45,7 @@ Have a look at the May 2022 Release Overview video for a summary of the features
 
 ### New features available in [!DNL Assets] prerelease channel {#prerelease-features-assets}
 
-Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish between colors in an image and apply those as tags automatically on ingestion](/help/assets/color-tag-images.md). These tags enable enhanced Search experience, based on image color composition. You can configure the number of colors, within a range of one to 40, that are tagged to an image so that you can search for images based on those colors later.
+Experience Manager Assets uses Adobe AI capabilities to now [distinguish between colors in an image and apply those as tags automatically on ingestion](/help/assets/color-tag-images.md). These tags enable enhanced Search experience, based on image color composition. You can configure the number of colors, within a range of one to 40, that are tagged to an image so that you can search for images based on those colors later.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -75,9 +75,9 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish 
 
 ### What is New {#what-is-new-foundation}
 
-*  The "Add tree" option under the replication agent admin screen's **Distribute tab**, which was previously announced as deprecated, was removed June 20, 2022 or soon thereafter. Packages with a tree hierarchy of content should instead be replicated using [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/replication.md#publish-content-tree-workflow).
+*  The "Add tree" option under the replication agent admin screen's **Distribute tab**, which was previously announced as deprecated, was removed June 20, 2022 or soon thereafter. Packages with a tree hierarchy of content should instead be replicated using [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/tree-replication-workflows.md#publish-content-tree-workflow).
 
-*  Using the replication agent admin screen or replication API for distributing content packages larger than 10 MB (nodes with properties, not including binaries) is deprecated and enforced on September 12, 2022 or soon thereafter. Instead, [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/replication.md#publish-content-tree-workflow) must be used to replicate these large content packages. In July, a warning message will appear in the replication agent admin screen's **Distribute tab** if attempting to replicate these large content packages and also in the AEM error log whenever the replication API is used to replicate these large content packages. In September, warnings were replaced by errors. Adjust your processes accordingly.
+*  Using the replication agent admin screen or replication API for distributing content packages larger than 10 MB (nodes with properties, not including binaries) is deprecated and enforced on September 12, 2022 or soon thereafter. Instead, [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/tree-replication-workflows.md#publish-content-tree-workflow) must be used to replicate these large content packages. In July, a warning message will appear in the replication agent admin screen's **Distribute tab** if attempting to replicate these large content packages and also in the AEM error log whenever the replication API is used to replicate these large content packages. In September, warnings were replaced by errors. Adjust your processes accordingly.
 
 ### New features available in [!DNL Experience Manager] prerelease channel {#prerelease-features-foundation}
 

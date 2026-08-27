@@ -3,7 +3,8 @@ title: Configure and use asset microservices
 description: Configure and use the cloud-native asset microservices to process assets at scale.
 contentOwner: AG
 feature: Asset Compute Microservices, Asset Processing, Asset Management
-role: Architect, Admin
+role: Developer, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
 ---
 # Use asset microservices and processing profiles {#get-started-using-asset-microservices}
@@ -14,7 +15,8 @@ Asset microservices lets you process a [broad range of file types](/help/assets/
 
 Asset processing depends on the configuration in **[!UICONTROL Processing Profiles]**. Experience Manager provides a basic default setup and lets administrators add more specific asset processing configuration. Administrators create, maintain, and modify the configurations of post-processing workflows, including optional customization. Customizing the workflows lets developers extend the default offering.
 
-<!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
+<!--
+ Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
@@ -35,7 +37,8 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 |[Custom configuration](#standard-config) | Configured by administrators by way of the user interface. More options are provided for rendition generation by extending the default option. Extend the out-of-the-box option to provide different formats and renditions. | <ul><li>FPO (For Placement Only) rendition. </li> <li>Change file format and resolution of images</li> <li> Conditionally apply to configured file types. </li> </ul> |
 |[Custom profile](#custom-config) | Configured by administrators via user interface to use custom code through custom applications to call [Asset Compute Service](https://experienceleague.adobe.com/en/docs/asset-compute/using/introduction). Supports more complex requirements in a cloud-native and scalable method. | See [allowed use cases](#custom-config). |
 
-<!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
+<!--
+ To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
 
 ## Supported file formats {#supported-file-formats}
@@ -48,12 +51,13 @@ Some defaults are pre-configured to ensure that the default renditions required 
 
 With the default configuration, only the most basic processing profile is configured. Such a processing profile is not visible on the user interface and you cannot modify it. It always executes to process uploaded assets. Such a default processing profile ensures that the basic processing required by [!DNL Experience Manager] is completed on all assets.
 
-<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png)
+<!--
+ ![processing-profiles-standard](assets/processing-profiles-standard.png)
 -->
 
 ## Standard configuration {#standard-config}
 
-[!DNL Experience Manager] provides capabilities to generate more specific renditions for common formats as per the user's needs. An administrator can create additional [!UICONTROL Processing Profiles] to facilitate such rendition creation. Users then assign one or more of the available profiles to specific folders to get the additional processing done. Say, for example, the additional processing can generate renditions for web, mobile, and tablet. The following video illustrates how to create and apply [!UICONTROL Processing Profiles] and how to access the created renditions.
+[!DNL Experience Manager] provides capabilities to generate more specific renditions for common formats as per the user's needs. An administrator can create additional [!UICONTROL Processing Profiles] to facilitate such rendition creation. Users then assign one or more of the available profiles to specific folders to get the additional processing done. Say, for example, the additional processing can generate renditions for web, mobile, and tablet. [See this video to understand, how to create and apply [!UICONTROL Processing Profiles] and how to access the created renditions](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-automation/creative-operations).
 
 * **Rendition width and height**: Rendition width and height specification provide maximum sizes of the generated output image. Asset microservices tries to produce the largest possible rendition, which width and height is not bigger than the specified width and height, respectively. The aspect ratio is preserved, that is the same as the original. An empty value means that asset processing assumes the pixel dimension of the original.
 
@@ -80,14 +84,16 @@ The processing profile can include an FPO (For Placement Only) rendition. See th
 
 1. Click **[!UICONTROL Save]**.
 
-<!-- TBD: Update the video link when a new video is available from Tech Marketing.
+<!--
+ TBD: Update the video link when a new video is available from Tech Marketing.
 
 The following video demonstrates the usefulness and usage of standard profile.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
 -->
 
-<!-- This image was removed per cqdoc-15624, as requested by engineering.
+<!--
+ This image was removed per cqdoc-15624, as requested by engineering.
  ![processing-profiles-list](assets/processing-profiles-list.png) 
  -->
 
@@ -207,7 +213,7 @@ After the asset microservices complete the processing of the uploaded assets, yo
 
 #### Apply a workflow model to a folder {#apply-workflow-model-to-folder}
 
-For typical post-processing use cases, consider using the method to apply a workflow to a folder. To apply a workflow model in the folder [!UICONTROL Properties], follow these steps:
+For typical post-processing use cases, consider using the method to apply a workflow to a folder. To apply a workflow model in the folder [!UICONTROL Properties], follow the below steps:
 
 1. Create a workflow model.
 1. Select a folder, click **[!UICONTROL Properties]** from the toolbar, and then click the **[!UICONTROL Assets Processing]** tab.
@@ -258,18 +264,20 @@ Follow the steps outlined in [apply a workflow model to a folder](#apply-workflo
 
 **See also**
 
-* [Translate Assets](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [Assets supported file formats](file-format-support.md)
-* [Search assets](search-assets.md)
-* [Connected assets](use-assets-across-connected-assets-instances.md)
-* [Asset reports](asset-reports.md)
-* [Metadata schemas](metadata-schemas.md)
-* [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata.md)
-* [Search facets](search-facets.md)
-* [Manage collections](manage-collections.md)
-* [Bulk metadata import](metadata-import-export.md)
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
@@ -279,7 +287,8 @@ Follow the steps outlined in [apply a workflow model to a folder](#apply-workflo
 >* [How to create custom applications](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/develop-custom-application).
 >* [Supported MIME types for various use cases](/help/assets/file-format-support.md).
 
-<!-- TBD: 
+<!--
+ TBD: 
 * How/where can admins check what's already configured and provisioned.
 * How/where to request for new provisioning/purchase.
 -->

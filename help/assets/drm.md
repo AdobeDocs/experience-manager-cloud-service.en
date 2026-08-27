@@ -4,6 +4,7 @@ description: Learn how to manage asset expiration states and information for lic
 contentOwner: AG
 feature: Asset Management,DRM
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
 ---
 # Digital Rights Management for digital assets {#digital-rights-management-in-assets}
@@ -68,7 +69,8 @@ You can configure the scheduler using the following properties:
 * The maximum number of assets expired in one iteration of the scheduler is the value of the property `asset_expired_limit`.
 * To run the job periodically, set the value of the property `cq.dam.expiry.notification.scheduler.istimebased` as `false` and set the value of the property `cq.dam.expiry.notification.scheduler.period.rule` with time in seconds.
 
-<!-- TBD: Web Console not available in CS.
+<!--
+ TBD: Web Console not available in CS.
 
 1. Open [!DNL Experience Manager] Configuration Manager.
 1. Choose **[!UICONTROL Adobe CQ DAM Expiry Notification]**. By default, **[!UICONTROL Time-based Scheduler]** is selected, which 
@@ -149,18 +151,40 @@ An asset is considered protected if either of these conditions are fulfilled:
 
 1. To download the asset or its renditions, select **[!UICONTROL Download]** in the dialog.
 
+### Expiring asset notification and unpublication {#expiring-asset-notification-unpublication}
+
+The removal of expired Assets from Publish and Dynamic Media Scene7 is handled by a background job `com.day.cq.dam.core.impl.ExpiryNotificationJobImpl`, which triggers every day at midnight by default. The frequency or timing of the job can be configured using the `com.day.cq.dam.core.impl.ExpiryNotificationJobImpl` OSGI configuration. 
+
+This job performs the following tasks:
+
+* Unpublish assets which have passed their expiration date (stored in the `/jcr:content/metadata/prism:expirationDate` property beneath the Asset node).
+
+* When email notification is enabled:
+   * Identify soon-to-expire assets and notify the user who uploaded them. The period to notify is configured by the `prior_notification_seconds` configuration property (set to 86400 seconds, or 24 hours by default).
+   * Notify the uploading user of assets which have expired since the previous execution.
+
+The email templates used for the notification emails are stored at `/libs/settings/dam/notification/email/default` and can be customised by overlaying beneath `/conf/global/settings/dam/notification/email/default` or `/apps/settings/dam/notification/email/default`.
+
+### Asset on-time and off-time {#asset-on-time-off-time}
+
+The Asset on-time and off-time behaviour is separate from Asset expiration. The on-time and off-time behaviour can be enabled by providing the `com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter` OSGI configuration and is enforced at the point an asset is requested by path. When the configuration is present, the asset is only delivered to the requester if the current time and date is after the configured on-time (if available) and before the configured off-time (if available).
+
+
 **See also**
 
-* [Translate Assets](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [Assets supported file formats](file-format-support.md)
-* [Search assets](search-assets.md)
-* [Connected assets](use-assets-across-connected-assets-instances.md)
-* [Asset reports](asset-reports.md)
-* [Metadata schemas](metadata-schemas.md)
-* [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata.md)
-* [Search facets](search-facets.md)
-* [Manage collections](manage-collections.md)
-* [Bulk metadata import](metadata-import-export.md)
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

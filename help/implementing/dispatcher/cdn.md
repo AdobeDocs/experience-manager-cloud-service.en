@@ -33,7 +33,7 @@ To prepare for content delivery using AEM's built-in CDN through Cloud Manager's
 * [Introduction to SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
 * [Configure a CDN](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)
 
-**Restricting traffic**
+### Restricting traffic {#restricting-traffic}
 
 By default, for an AEM-managed CDN setup, all public traffic can make its way to the publish service, for both production and non-production (development and stage) environments. You can limit traffic to the publish service for a given environment (for example, limiting staging by a range of IP addresses) by way of the Cloud Manager user interface.
 
@@ -62,13 +62,13 @@ You can configure a CDN error page to replace the default, unbranded page. This 
 
 Setting TTL using the HTTP Cache-Control header is an effective approach to balance content delivery performance and content freshness. However, in scenarios where it is critical to serve updated content immediately, it may be beneficial to purge the CDN cache directly.
 
-Read about [configuring a purge API token](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token) and [purging cached CDN content](/help/implementing/dispatcher/cdn-cache-purge.md).
+Read about [configuring a purge API token](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) and [purging cached CDN content](/help/implementing/dispatcher/cdn-cache-purge.md).
 
 ### Basic authentication at the CDN {#basic-auth}
 
 For light authentication use cases including business stakeholders reviewing content, protect content by displaying a basic auth dialog requiring a username and password. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md).
 
-## Customer managed CDN points to AEM managed CDN {#point-to-point-CDN}
+## Customer managed CDN points to AEM managed CDN {#point-to-point-cdn}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
@@ -89,9 +89,9 @@ Configuration instructions:
 1. Set SNI to the Adobe CDN's ingress.
 1. Set the Host header to the origin domain. For example: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Set the `X-Forwarded-Host` header with the domain name so AEM can determine the host header. For example: `X-Forwarded-Host:example.com`.
-1. Set `X-AEM-Edge-Key`. The value should be configured using a Cloud Manager config pipeline, as described in [this article](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
+1. Set `X-AEM-Edge-Key`. The value should be configured using a Cloud Manager config pipeline first and then the same edge key should be configured in the customer CDN, as described in [this article](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
-   * Needed so that the Adobe CDN can validate the source of the requests and pass the `X-Forwarded-*` headers to the AEM application. For example,`X-Forwarded-For` is used to determine the client IP. So, it becomes the responsibility of the trusted caller (that is, the customer managed CDN) to ensure the correctness of the `X-Forwarded-*` headers (see the note below).
+   * Needed so that the Adobe CDN can validate the source of the requests and pass the `X-Forwarded-*` headers to the AEM application. For example,`X-Forwarded-For` is used to determine the client IP. So, it becomes the responsibility of the trusted caller (that is, the customer managed CDN) to ensure the correctness of the `X-Forwarded-*` headers (see the note below). See also [how to test forwarded headers with `x-aem-debug`](#test-forwarded-headers).
    * Optionally, access to Adobe CDN's ingress can be blocked when an `X-AEM-Edge-Key` is not present. Inform Adobe if you need direct access to Adobe CDN's ingress (to be blocked).
 
 See the [Sample CDN vendor configurations](#sample-configurations) section for configuration examples from leading CDN vendors.
@@ -100,7 +100,7 @@ Before accepting live traffic, you should validate with Adobe's customer support
 
 After setting the `X-AEM-Edge-Key`, you can test that the request is routed correctly as follows.
 
-In Linux&reg;:
+In Linux:
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>"
@@ -113,6 +113,7 @@ In Windows:
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>"
 
 ```
+
 
 >[!NOTE]
 >
@@ -128,20 +129,12 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 The extra hop between the customer CDN and the AEM CDN is only needed if there is a cache miss. By using the cache optimization strategies described in this article, the addition of a customer CDN should only introduce negligible latency.
 
-This customer CDN configuration is supported for the publish tier, but not in front of the author tier.
+This customer CDN configuration is supported for the publish tier and the preview tier, but not in front of the author tier.
 
 ### Debugging configuration
 
 To debug a BYOCDN configuration, use the `x-aem-debug` header with a value of `edge=true`. For example:
 
-In Linux&reg;:
-
-```
-curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" -H "x-aem-debug: edge=true"
-
-```
-
-In Windows:
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" --header "x-aem-debug: edge=true"
@@ -151,26 +144,53 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Fo
 This process reflects certain properties used in the request in the `x-aem-debug` response header. For example:
 
 ```
-x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-Edge-Key=set,host=publish-p87058-e257304-cmstg.adobeaemcloud.com,x-forwarded-host=wknd.site,adobe_unlocked_byocdn=true
+x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,x-aem-edge-Key=set,host=redactedaemdomain,x-forwarded-host=wknd.site
 ```
 
+
+
 This process allows verification of details such as the host values, edge authentication configuration, and the x-forwarded-host header value. It also identifies whether an edge key is set and which key is used if a match exists.
+
+#### Test forwarded headers with x-aem-debug {#test-forwarded-headers}
+
+To test that a visitor cannot control forwarded headers (`X-Forwarded-For`, `X-Forwarded-Host`, `Forwarded`), the AEM-managed CDN clears visitor-supplied values and sets trusted ones. Call your site with random values and inspect the `x-aem-debug` response header:
+
+```
+curl https://www.example.com -v --header "X-Forwarded-Host: bad.example.com" --header "x-aem-debug: edge=true"
+```
+
+```
+curl https://www.example.com -v --header "X-Forwarded-For: 1.2.3.4" --header "x-aem-debug: edge=true"
+```
+
+Replace `www.example.com` with your site's domain. The `x-aem-debug` response header should reflect your site's host and your client IP; the values you sent must not appear. For example:
+
+```
+x-aem-debug: edge=true,x-forwarded-host=www.example.com, x-forwarded-for=....
+```
+
+>[!NOTE]
+>
+>You can use a Rapid Development Environment (RDE) to deploy, and test, your configuration:
+>
+>* [Rapid Development Environments](/help/implementing/developing/introduction/rapid-development-environments.md)
+>* [How to use Rapid Development Environment](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### Sample CDN Vendor Configurations {#sample-configurations}
 
 Presented below are several configuration examples from several leading CDN vendors.
 
-**Akamai**
+#### Akamai {#byocdn-akamai}
 
 ![Akamai1](assets/akamai1.png "Akamai")
 ![Akamai2](assets/akamai2.png "Akamai")
 
-**Amazon CloudFront**
+#### Amazon CloudFront {#byocdn-cloudfront}
 
 ![CloudFront1](assets/cloudfront1.png "Amazon CloudFront")
 ![CloudFront2](assets/cloudfront2.png "Amazon CloudFront")
 
-**Cloudflare**
+#### Cloudflare {#byocdn-cloudflare}
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
@@ -179,15 +199,15 @@ Presented below are several configuration examples from several leading CDN vend
 
 The sample configurations provided show the base settings needed. However, a customer configuration may have other impacting rules that remove, edit, or re-arrange the headers needed for AEM as a Cloud Service to serve the traffic. Below are common errors that occur when configuring a customer managed CDN to point to AEM as a Cloud Service.
 
-**Redirection to the publish service endpoint**
+#### Redirection to the publish service endpoint {#redirect-publish}
 
 When a request receives a 403 forbidden response, it means that the request is missing some required headers. A common cause for this is that the CDN is managing both apex and `www` domain traffic, but is not adding the correct header for the `www` domain. This problem can be triaged by checking your AEM as a Cloud Service CDN logs and verifying the needed request headers.
 
-**Error 421 Misdirected redirect**
+#### Error 421 Misdirected redirect {#error-421}
 
 A 421 error with the message `Requested host does not match any Subject Alternative Names (SANs) on TLS certificate` indicates that the HTTP `Host` does not match any hosts listed on the certificate. This issue usually indicates that either `Host` or the SNI setting is wrong. Make sure that both `Host` as well as SNI settings point to the publish-p<PROGRAM_ID>-e.adobeaemcloud.com host.
 
-**Too many redirects Loop**
+#### Too many redirects loop {#redirect-loop}
 
 When a page gets a "Too Many Redirect" loop, some request header is being added at the CDN that matches a redirect that forces it back to itself. As an example:
 
@@ -208,7 +228,7 @@ The AEM managed CDN adds headers to each request with:
 
 >[!NOTE]
 >
->If there is a customer managed CDN, these headers reflect the location of the customer's CDN proxy server rather than the actual client. Customers should manage geolocation headers through their own CDN when using a customer managed CDN.  
+>If there is a customer managed CDN, these headers reflect the location of the customer's CDN proxy server rather than the actual client. Customers should manage geolocation headers through their own CDN when using a customer managed CDN.
 
 The values for the country codes are the Alpha-2 codes described under [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1).
 
