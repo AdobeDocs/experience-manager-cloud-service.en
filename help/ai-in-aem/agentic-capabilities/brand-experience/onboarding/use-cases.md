@@ -7,7 +7,7 @@ role: User, Admin, Developer
 
 # Onboarding Agentic Capabilities {#development-agentic-capabilities}
 
-The Onboarding Agentic Capability of Adobe Enterprise Manager (AEM) as a Cloud Service collaborates with [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) to help you configure Adobe Experience Manager Assets using natural language, coordinating the full onboarding lifecycle, from environment provisioning through content structure, metadata, migration, and search.
+The Onboarding Agentic Capability of Adobe Experience Manager (AEM) as a Cloud Service collaborates with [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) to help you configure Adobe Experience Manager Assets using natural language, coordinating the full onboarding lifecycle, from environment provisioning through content structure, metadata, migration, and search.
 
 The Onboarding Agentic Capability brings onboarding guidance and execution into a single experience, helping teams move from their requirements to a configured DAM in a structured and controlled manner. It recommends appropriate approaches based on the user's context and requires confirmation before making changes, allowing teams to establish their AEM Assets foundation with greater consistency and confidence.
 
