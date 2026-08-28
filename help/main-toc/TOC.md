@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2026 {#2026}
+      + [Release Notes for 2026.7.0](/help/release-notes/release-notes-cloud/2026/2026-7-0.md)
       + [Release Notes for 2026.6.0](/help/release-notes/release-notes-cloud/2026/2026-6-0.md)
       + [Release Notes for 2026.5.0](/help/release-notes/release-notes-cloud/2026/2026-5-0.md)
       + [Release Notes for 2026.4.0](/help/release-notes/release-notes-cloud/2026/2026-4-0.md)
@@ -267,6 +268,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.08.20 Release Notes](/help/release-notes/universal-editor/2026/2026-08-20.md)
       + [2026.08.13 Release Notes](/help/release-notes/universal-editor/2026/2026-08-13.md)
       + [2026.08.06 Release Notes](/help/release-notes/universal-editor/2026/2026-08-06.md)
       + [2026.07.30 Release Notes](/help/release-notes/universal-editor/2026/2026-07-30.md)
