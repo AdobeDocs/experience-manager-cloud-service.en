@@ -6,13 +6,13 @@ role: Admin, Developer
 exl-id: 4b0fc3e9-b7c4-4c95-bd97-8b24e4d5cb3d
 ---
 
-# AEM as a Cloud Service Developer Console (New UI) {#developer-console}
+# AEM as a Cloud Service Developer Console {#developer-console}
 
 The AEM as a Cloud Service Developer Console includes a set of read-only tools for debugging cloud environments. It can be accessed through a per-environment link in Cloud Manager and offers features to view bundles, OSGi settings, services and servlets, and more.
 
 >[!NOTE]
 >
->* The AEM as a Cloud Service Developer Console should not be confused with the similarly named [*Adobe Developer Console*.](https://developer.adobe.com/developer-console/)
+>* The AEM Developer Console (Cloud Service) should not be confused with the similarly named [*Adobe Developer Console*.](https://developer.adobe.com/developer-console/)
 
 >[!TIP]
 >
@@ -21,42 +21,45 @@ The AEM as a Cloud Service Developer Console includes a set of read-only tools f
 >* [CRXDE Lite](/help/implementing/developing/tools/crxde.md)
 >* [The Web Console](/help/implementing/developing/tools/web-console.md)
 
-<!--
-There are multiple ways of accessing it:
 
-1. Launch from Cloud Manager  
+## AEM Developer Console access
 
-1. Type a url that can be determined by adjusting the Author or Publish service urls as follows:
-   ```  
-   https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com
-   ```  
+To access and use the AEM Developer Console the following permissions must be given to the developer's Adobe ID via [Adobe's Admin Console](https://adminconsole.adobe.com).
 
-1. As a shortcut, the following Cloud Manager CLI command can be used to launch the AEM as a Cloud Service Developer Console based on an environment parameter described below:    
-   ```
-   aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>
-   ```
--->
-
-## Prerequisites {#prerequisites}
-
-The Developer Console is only accessible to users with certain roles in certain programs.
-
-* For production programs, the "Cloud Manager - Developer Role" in the Adobe Admin Console controls access to the Developer Console. This role provides broad access across programs and environments.
-* For sandbox programs, any user with a product profile granting AEM access can use the Developer Console.
-* For all programs, the "Cloud Manager - Developer Role" is required for status dumps and access to the repository browser.
-
-Alternatively, a user assigned as an **AEM Administrator** on the author instance can access the Developer Console. Use this option when you want to grant more fine-grained access instead of the broad "Cloud Manager - Developer Role".
-
-To view data from both the author and publish services, users must also be assigned to the "AEM Users" or "AEM Administrators" product profile on each service. Because access is granted per tier, assign the profile on the tier whose data you want to view. For example:
-
-* To see the OSGi bundles or the repository browser for the publish instance, you need "AEM Users - publish" assigned to your profile.
-* To see the OSGi components on the author instance, you need "AEM Users - author" assigned to your profile.
-
-For more information about setting up user permissions, see the [Cloud Manager documentation.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)
+1. Ensure the in the Adobe Org switcher, you can see the Adobe Org related to the environments you want to inspect in the AEM Developer Console.
+1. To be able to login in to the AEM Developer Console, the developer must be a member of any of the following roles:
+    + [Cloud Manager Product's __Developer - Cloud Service__ Product Profile](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html#assign-developer): In this case, the developer will see the full list of environments available under the selected AEM Developer Console URL; if a Development environment or RDE had been selected in Cloud Manager, other Development environment or RDEs in that same Program may appear.
+    + [__AEM Administrators__ Product Profile on __AEM Author__](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles): In this case, the list of environments described in the previous bullet  will be limited to the related product profiles where this role is assigned.
+1. The developer must be a member of the [__AEM Users__ or __AEM Administrators__ Product Profile on AEM Author and/or Publish](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles).
+    + If this membership does not exist, the [status](#status) dumps will timeout with a 401 Unauthorized error.
 
 >[!NOTE]
->
->When new permissions are assigned, they can take up to 30 minutes to take effect. To test your permissions, log in to the console from an incognito (private) browser window.
+>Sometimes it can take up to 30 minutes for the Adobe IMS Product Profile membership to sync into AEM as a Cloud Service. If you are unable to access the AEM Developer Console, please wait 30 minutes and try again.
+>Please clear your browser's cookies as well as application state (local storage) and re-log into AEM Developer Console
+
+### Troubleshooting AEM Developer Console access
+
+#### When I login I do not see listed the environment I'm looking for
+
+Ensure the following:
+
++ You have selected the correct AEM Developer Console URL by clicking on the three dots for the selected environment via Cloud Manager and select AEM Developer Console.
++ You either have [Cloud Manager Product's __Developer - Cloud Service__ Product Profile](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html#assign-developer) to see the full list of environments or you are part of the [__AEM Administrators__ Product Profile on __AEM Author__](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles) for the environment you do not find.
+
+#### 401 Unauthorized error when dumping status
+
+![AEM Developer Console - 401 Unauthorized](./assets/dev-console/permissions-denied.png)
+
+To resolve the unauthorized issue:
+
+1. Ensure your user is a member of the appropriate Adobe IMS Product Profile (AEM Administrators or AEM Users) for the AEM Developer Console's associated AEM as a Cloud Service Product instance.
+   + Remember that AEM Developer Console access 2 Adobe IMS Product Instances; the AEM as a Cloud Service Author and Publish product instances, so ensure the correct Product Profiles are used depending on which service tier requires access via AEM Developer Console.
+1. Wait up to 30 minutes for the Adobe IMS Product Profile membership to sync into AEM as a Cloud Service.
+2. Log in to the AEM as a Cloud Service (Author or Publish) and ensure your user and groups have properly synced into AEM.
+   + AEM Developer Console requires your user record to be created in the corresponding AEM service tier for it to authenticate to that service tier.
+1. Clear your browsers cookies as well as application state (local storage) and re-log into AEM Developer Console, ensuring the access token AEM Developer Console is using is correct and unexpired.
+
+
 
 ### IP restrictions {#ip-restrictions}
 
@@ -64,110 +67,157 @@ Access to the Developer Console depends on your ability to reach the author inst
 
 For example, if the author instance is restricted to your corporate VPN, you can only use the Developer Console while connected to that VPN.
 
-## Program and environment selector {#program-environment-selector}
+## Navigate to Developer Console
 
-Use the program and environment selector to choose which program and environment the Developer Console inspects.
+Developer Console is accessed per AEM as a Cloud Service environment via Cloud Manager.
 
-* If you have the "Cloud Manager - Developer Role" assigned, the selector lists all programs and environments available to you.
-* If you instead have the "AEM Administrator" role assigned to the author instance, the selector lists only the programs to which you have access.
+![Navigate to Developer Console](./assets/dev-console/navigate.png)
 
-The environment selector shows the tiers that are available for selection, such as **author**, **publish**, **preview**, and **rde**. Selecting a tier applies it to all views except the **Integrations** view, which always defaults to the author tier.
+1. Navigate to __[Cloud Manager](https://my.cloudmanager.adobe.com/)__
+2. Open the __Program__ that contains the AEM as a Cloud Service environment to open Developer Console.
+3. Locate the __Environment__, and select the `...`.
+4. Select __Developer Console__ from the dropdown list.
 
-For example:
+Or open this URL to sign in: [https://experience.adobe.com/skyline-console](https://experience.adobe.com/skyline-console)
 
-* To check the repository browser for publish, select the **publish** tier in the environment selector, then click the repository browser link.
-* To search packages for preview, select the **preview** tier, then start searching packages.
+Or use this command from the Cloud manager CLI:
 
-The environment selector also shows a status light for the selected tier:
+```
+aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>
+```
 
-* **Green** — up and running.
-* **Orange** — degraded or restarting.
-* **Red** — down. You cannot select this tier.
+## Environment / program selector
+In order to use the AEM Developer Console, you must select the environment and program you want to inspect.
+The selectors are located in the top left and right corner of the AEM Developer Console UI.
+![New OSGi Bundles Screen in Dev Console](./assets/dev-console/env-selector.png)
 
-The status light is accompanied by status text, such as running, restarting, hibernated, or stopped. If the tier is running (green) but appears greyed out, you do not have access to it. Ensure that you have the appropriate rights assigned for the tier.
+Selecting an environment will trigger a refresh of the data in the AEM Developer Console, and you will see the data for the selected environment.
+When going to the repository browser, the selected environment will be used to open the repository browser in a new tab.
 
-## OSGi Bundles Tab {#osgi-bundles}
+The refresh buttons next to the selectors trigger a browser cache clear for the programs / environment calls to cloud manager.
+You may use this if a new environment has been created and you do not see it in the list of environments.
+It still might take a few minutes for the new environment to be available in the AEM Developer Console.
 
-The **OSGi Bundles** tab provides an overview of OSGi bundles that are deployed in the selected environment and offers a full-text search.
+The status lights indicate the health of the environment.
+1. Red: Indicates that the environment is not healthy and unavailable (possibly hibernated).
+2. Orange: the environment might be restarting or degraded (some of the pods are temporarily down, but there are still healthy pods available).
+3. Green: Running, all pods are up and healthy
 
-![New OSGi Bundles Screen in the Developer Console](/help/implementing/developing/introduction/assets/osgi-bundles.png)
+Once you selected an environment, you can use the tabs to navigate to the different views of the AEM Developer Console.
 
-* The tab provides information on the actual state of bundles in the environment such as exported packages, imported packages, used services, and more.
-* It is ideal for checking the status of bundles to see if the bundle does what it is expected to do.
+>[!NOTE]
+>Please note, unlike the old AEM Developer console, we do not expose individual pod status anymore.
+>You can see the status of each tier of the environment.
+>
+>
+## OSGi Bundles
 
-**Example use-case:** Let's say you specify a version range for a dependency in your bundle. But something goes wrong with the dependency and you need to check which version of the dependency is actually used by the bundle. To check, open the Developer Console and click on a bundle name on the **OSGi Bundles** tab to access the bundle details, and use the **Importing Bundles** accordion to check which bundle version or package version is being used at runtime. With this information, you can adjust your maven dependency version range or adapt your code.
+![New OSGi Bundles Screen in Dev Console](./assets/dev-console/osgi-bundles-list.png)
 
-## Java Packages Tab {#java-packages}
+* An overview of OSGI bundles that are deployed in the selected environment type. It enables a full-text search.
+* It is useful to get information of the actual state of bundles in the environment. You can get information such as exported packages, imported packages, used services and more.
+* Developers want to verify on the actual environment, and check if the bundle does what they expect it to do.
+* **Example use-case:** A version range of a dependency is specified in your bundle. Something is going wrong in the dependency. You want to check which version of the dependency is being wired into your bundle. To check, go to the bundle details, and use importing bundles / packages to check which bundle version or package version is being used at runtime. With this information, you can adjust your maven dependency version range or adapt your code.
 
-The **Java Packages** tab offers a search field to search packages that are active in the environment's OSGi system. 
+To search, use the search bar. To download the list of bundles as json, click the Download list button on the top right to get a full JSON dump.
+If you want to get the publish or preview dump, you can use the environment selector to select the publish or preview environment and then download the list.
 
-![Java Packages tab in the Developer Console UI](/help/implementing/developing/introduction/assets/java-packages-dev-console-ui.png)
+## Java Packages
 
-* You can see which bundle exports (or provides) the package, and you can see which bundles import (or use) the package.
-* You can also check for duplicate packages (same package, different versions), which can cause problems in some cases.
+![Java Packages tab in the Dev Console UI](./assets/dev-console/java-package-search.png)
 
-**Example use-case:** Let's say that a custom service using the [dynamic class loader](https://sling.apache.org/apidocs/sling9/org/apache/sling/commons/classloader/DynamicClassLoaderManager.html) loads a class without specifying a version. Since multiple bundles export different versions, the implementation varies, causing changes in behavior. You want to check which packages are in the environment without analyzing the feature model. Using this tab you can search for the package and view all exported versions and you can then use a better version range.
+Java Packages is used to trouble shoot Bundles not be starting because of unresolved imports, or unresolved classes in scripts (HTL, JSP, etc). If Java Packages reports no bundles export a Java package (or the version does not match that imported by an OSGi bundle):
 
-## Configurations Tab {#configurations}
++ Ensure your project's AEM API maven dependency's version matches the environment's AEM Release version (and if possible, update everything to the latest).
++ If extra Maven dependencies are used in the Maven project
+   + Determine if an alternative API provided by the AEM SDK API dependency can be used instead.
+   + If the extra dependency is required, ensure it's provide as an OSGi bundle (rather than a plain Jar) and it is embedded in your project's code package, (`ui.apps`), similar to how the core OSGi Bundle is embedded in the `ui.apps` package.
 
-The **Configurations** tab offers a searchable list of configurations that are active in the environment. You can see which properties are provided by each configuration by clicking on it and viewing the details page.
+Clicking on a package results into going to a package detail:
 
-![Configurations tab in the Developer Console UI](/help/implementing/developing/introduction/assets/configurations-dev-console.png)
+![Java Packages tab in the Dev Console UI](./assets/dev-console/java-package-detail.png)
 
-* **Example use case:** Let's say you want to make sure that the configurations you specified are actually present in the environment. If you search the **Configurations** tab in the console and the configuration is missing, you can check the feature model, the configuration run mode, or folder.
+## Configurations {#configurations}
 
-## Servlets Tab {#servlets}
+![Configurations tab in the Dev Console UI](./assets/dev-console/configurations.png)
 
-The **Servlets** tab offers a search field where you can specify a path with selectors and an extension with either GET or POST. It then provides a list of servlets in order of preference which handles the request in Sling.
+* A searchable list of configurations that are active in the environment. You can see which properties are provided by the configurations by checking out the details page.
+* **Example use case:** A developer wants to make sure that the configurations they specified are actually present in the environment. If the configuration is lacking, they can check the feature model or the configuration run mode or folder.
 
-![Servlets tab in the Developer Console UI](/help/implementing/developing/introduction/assets/servlets-dev-console-ui.png)
+For more information about setting up user permissions, see [Cloud Manager Documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
 
-**Example use case:** Let's say you have an OSGi servlet that should activate upon a request and print output to the response. However, instead of the expected output, you get an empty response. You need to check if some other servlet is taking precedence over your servlet due to more specific selectors, `resourceType`, extensions, or ranking. You search for the expected path, and find another servlet is active with a higher rank. You can then decide if you can increase the rank of your servlet by adding selectors, for example. 
+## Servlets {#servlets}
 
-## Services Tab {#services}
+![Servlets tab in the Dev Console UI](./assets/dev-console/servlets-dev-console-ui.png)
 
-The **Services** tab provides an overview of the services present in the selected environment and offers a full-text search.
+* A search prompt on which you can specify a path with selectors and an extension with either GET or POST. It then provides the results of servlets in order of preference which handles the request in Sling.
+* **Example use case:** You have an OSGI servlet that should activate upon a request and print output to the response. However, instead of the expected output, the response returns empty. You need to check if some other servlet is taking precedence over your servlet due to more specific selectors, `resourceType`, extensions or ranking. You search for the expected path, and find out another servlet is active with a higher rank. Then, you decide if you can get your servlet above in rank by adding selectors, for example.
 
-![Services tab in the Developer Console UI](/help/implementing/developing/introduction/assets/services-dev-console.png)
+## Services {#services}
 
-Click on a service to view its details.
+![Services tab in the Dev Console UI](./assets/dev-console/services.png)
 
-## OSGi Components Tab {#osgi-components}
+Components lists all the OSGi services. 
 
-The **OSGi Components** tab provides an overview of OSGi components that are present in the selected environment type and offers a full-text search. You can see the live state of OSGi components in the environment and which services it satisfies, the bundle providing it, and the activation type (immediate or delayed).
+OSGi Services help in debugging by:
 
-![OSGi Components Tab in the Developer Console UI](/help/implementing/developing/introduction/assets/osgi-components-dev-console.png)
++ Listing all OSGi services in AEM, along with its providing OSGi bundle, and all OSGi bundles that consume it
 
-* **Example use case 1:** Let's say you need to check whether a component activated with a configuration is active in a specific environment since you are encountering unexpected behavior. You simply look up the component in the search and check to see if the component is active or not.
-* **Example use case 2:** Let's say you want to see which out-of-the-box components are available in the environment and identify the services they support in order to learn more about Adobe Experience Manager as a Cloud Service. You can check the components in the component list. 
+## OSGi Components {#osgi-components}
 
-## Integrations Tab {#integrations}
+![OSGi Components Tab in the Dev Console UI](./assets/dev-console/osgi-components.png)
 
-The **Integrations** tab allows admins to generate, rename, and delete service credentials and developer tokens.
+Components help in debugging by:
 
-![Integrations tab in the Developer Console UI](/help/implementing/developing/introduction/assets/integrations-dev-console-ui.png)
++ Listing all OSGi components deployed to AEM as a Cloud Service
++ Providing each OSGi component's state; including if they are active or unsatisfied
++ Providing details into unsatisfied service references may cause OSGi components from becoming active
++ Listing OSGi properties and their values bound to the OSGi component.
+   + This will display actual values injected via [OSGi environment configuration variables](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values).
 
-The following permissions are required:
+## Integrations {#integrations}
 
-* **Viewing** — assignment to the "AEM Users" or "AEM Administrators" product profile on the author tier.
-* **Provisioning integrations** — a system administrator profile for your IMS organization.
+* System Admins have the capability to generate, rename, and delete, service-credentials and developer tokens.
+* More information about this can be found here: [Generating Access Tokens for Server-Side APIs](./generating-access-tokens-for-server-side-apis.md).
 
-## Repository Tab {#repository}
+## Repository {#repository}
 
-The **Repository** tab opens the [Repository browser.](/help/implementing/developing/tools/repository-browser.md)
+* Opens the [Repository browser](/help/implementing/developing/tools/repository-browser.md).
+* Notice: You will need to be able to login on the AEM service to access the repository browser. If you are not able to login, please contact your system administrator to get access.
+* You need access granted on the tier you are trying to access. For example, if you are trying to access the repository browser on the publish tier, you need to have access (AEM Administrator or AEM User) granted on the publish tier.
 
-To inspect the publish or preview tier in the repository browser, first select that tier in the environment selector before clicking the link.
+## Status Dumps / Queries {#status-dumps-queries}
 
-The following permission is required:
+![Status Dumps / Queries tab in the Dev Console UI](./assets/dev-console/status-and-query-dumps.png)
 
-* "AEM Users" or "AEM Administrators" on the tier you want to view.
+* A full text or JSON dump of the current state of bundles, packages, configurations, services, components, sling jobs or Oak definitions.
+* Useful especially if the developer has discovered some unexpected state, and wants to communicate or document this state for other developers. Downloading the dump gives you a snapshot of the state for later reference.
 
-## Status Dumps / Queries Tab {#status-dumps-queries}
+### Sling Jobs
 
-The **Status dumps / queries** tab allows you to download a full text or JSON dump of the current state of bundles, packages, configurations, services, components, sling jobs, or Oak definitions.
+Sling Jobs lists all the Sling Jobs queues.
 
-![Status Dumps / Queries tab in the Developer Console UI](/help/implementing/developing/introduction/assets/status-dumps-queries.png)
+Sling Jobs help in debugging by:
 
-You can also open the [Query Performance tool.](/help/operations/query-and-indexing-best-practices.md#query-performance-tool)
++ Listing of Sling Job queues and their configurations
++ Providing insights into the number of active, queued and processed Sling jobs, which is helpful for debugging issues with Workflow, Transient Workflow and other work performed by Sling Jobs in AEM.
 
-* **Example use case:** This tab is especially useful if you encounter an unexpected state and want to communicate or document it for other developers. Downloading the dump gives you a snapshot of the state for later reference.
+### Oak definitions
+
+Oak Indexes provide a dump of the nodes defined beneath `/oak:index`. Keep in mind this does not show merged indexes, which occurs when an AEM index is modified.
+
+Oak Indexes help in debugging by:
+
++ Listing all Oak Index definitions providing insights into how search queries are executed in AEM. Keep in mind, that modified to AEM indexes are not reflected here. This view is only helpful for indexes that are solely provided by AEM, or solely provided by the custom code.
+
+### Query performance tool
+* Queries help provide insights into what and how search queries are executed on AEM.
+* Queries only works when a specific pod is selected, as it opens that pod's Query Performance web console, requiring the developer to have access to log into the AEM service.
+
+Queries helps in debugging by:
+
++ Explaining how queries are interpreted, analyzed and executed by Oak. This is very important when tracking why a query is slow, and understanding how it can be sped up.
++ Listing the most popular queries running in AEM, with the ability to Explain them.
++ Listing the slowest queries running in AEM, with the ability to Explain them.
+
+More documentation can be found [here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices#query-performance-tool).
