@@ -55,11 +55,9 @@ To resolve the unauthorized issue:
 1. Ensure your user is a member of the appropriate Adobe IMS Product Profile (AEM Administrators or AEM Users) for the AEM Developer Console's associated AEM as a Cloud Service Product instance.
    + Remember that AEM Developer Console access 2 Adobe IMS Product Instances; the AEM as a Cloud Service Author and Publish product instances, so ensure the correct Product Profiles are used depending on which service tier requires access via AEM Developer Console.
 1. Wait up to 30 minutes for the Adobe IMS Product Profile membership to sync into AEM as a Cloud Service.
-2. Log in to the AEM as a Cloud Service (Author or Publish) and ensure your user and groups have properly synced into AEM.
+1. Log in to the AEM as a Cloud Service (Author or Publish) and ensure your user and groups have properly synced into AEM.
    + AEM Developer Console requires your user record to be created in the corresponding AEM service tier for it to authenticate to that service tier.
 1. Clear your browsers cookies as well as application state (local storage) and re-log into AEM Developer Console, ensuring the access token AEM Developer Console is using is correct and unexpired.
-
-
 
 ### IP restrictions {#ip-restrictions}
 
@@ -87,6 +85,7 @@ aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>
 ```
 
 ## Environment / program selector
+
 In order to use the AEM Developer Console, you must select the environment and program you want to inspect.
 The selectors are located in the top left and right corner of the AEM Developer Console UI.
 ![New OSGi Bundles Screen in Dev Console](./assets/dev-console/env-selector.png)
@@ -211,6 +210,7 @@ Oak Indexes help in debugging by:
 + Listing all Oak Index definitions providing insights into how search queries are executed in AEM. Keep in mind, that modified to AEM indexes are not reflected here. This view is only helpful for indexes that are solely provided by AEM, or solely provided by the custom code.
 
 ### Query performance tool
+
 * Queries help provide insights into what and how search queries are executed on AEM.
 * Queries only works when a specific pod is selected, as it opens that pod's Query Performance web console, requiring the developer to have access to log into the AEM service.
 
