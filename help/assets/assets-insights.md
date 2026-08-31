@@ -19,11 +19,11 @@ Assets Insights functionality lets you track user ratings and usage statistics o
 
 Assets Insights captures user activity details, such as the number of times an image is rated, clicked, and impressions (number of times an image is loaded on the website). It assigns scores to images based on these statistics. You can use the scores and performance statistics to select popular images for inclusion in catalogs, marketing campaigns, and so on. You can even formulate archival and license renewal policies based on these statistics.
 
-To let Assets Insights display usage statistics for assets, configure the integration with [!DNL Adobe Analytics]. For details, see [Configure Assets Insights](#configure-asset-insights). You must have an [!DNL Adobe Analytics] license to use this feature.
+**Assets Insights now supports Adobe Analytics 2.0 API**
 
->[!IMPORTANT]
->
->Adobe Analytics 1.4 API and its legacy authentication method are being retired. Assets Insights now uses the Adobe Analytics 2.0 API with OAuth Server-to-Server authentication through Adobe IMS. After your AEM as a Cloud Service environment receives the update that provides the new integration, you must configure Assets Insights to continue retrieving current insights data.
+Assets Insights in AEM Admin View now supports the Adobe Analytics 2.0 API with OAuth Server-to-Server authentication, enabling continued access to current asset usage insights following the retirement of the Adobe Analytics 1.4 API. You can [reconfigure Assets Insights integration to resume synchronization of impressions and clicks from Adobe Analytics](#configure-assets-insights), including data collected during the transition period, without losing existing insights data.
+
+You must have an [!DNL Adobe Analytics] license to use this feature.
 
 >[!NOTE]
 >
@@ -81,7 +81,19 @@ You can view scores of all assets within a folder simultaneously using **[!UICON
 
 3. The page displays usage scores for the assets. Compare the ratings of the various assets and draw insights.
 
-## Configure Assets Insights {#configure-asset-insights}
+## Impact of the Adobe Analytics API retirement {#api-retirement-impact}
+
+|                                                    |                                                                                                 |                                                                               |
+| -------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| Asset impressions and clicks collected on websites | Continue to be captured as usual, assuming the existing page instrumentation remains functional | No change to the collection implementation is required for this retirement    |
+| Adobe Analytics data                               | Continues to receive and store the insights data                                                | No action required for this specific issue                                    |
+| Assets Insights in AEM Admin View                  | Does not display fresh insights data after the legacy API is retired                            | [Reconfigure Assets Insights](#configure-assets-insights) after the new AEM release is available            |
+| Existing data already stored in AEM                | Remains available                                                                               | No data migration or deletion is required                                     |
+| Data collected during the temporary gap            | Remains available in Adobe Analytics and can be retrieved after reconfiguration                 | [Complete the new configuration](#configure-assets-insights) and allow the [next AEM synchronization](#verify-configuration-data-flow)         |
+| Assets View Insights                               | Not affected by this Admin View integration issue                                               | No action required                                                            |
+| Adobe Analytics reports                            | Not affected by this AEM retrieval issue                                                        | Use Adobe Analytics reporting during the temporary AEM display gap, if needed |
+
+## Configure Assets Insights {#configure-assets-insights}
 
 [!DNL Experience Manager Assets] fetches usage data around digital assets used by third-party websites from [!DNL Adobe Analytics]. To enable Assets Insights to retrieve this data and generate insights, configure the integration with [!DNL Adobe Analytics] using an Adobe IMS Configuration and an OAuth Server-to-Server credential.
 
@@ -90,7 +102,7 @@ You can view scores of all assets within a folder simultaneously using **[!UICON
 Before configuring Assets Insights, ensure that the following requirements are met:
 
 * Your AEM as a Cloud Service environment has received the update that provides the **[!UICONTROL Asset Insights]** Cloud Solution.
-* **AEM Assets Reporting** is enabled for the [!DNL Adobe Analytics] report suite used for Assets Insights.
+* [AEM Assets Reporting is enabled](#enable-aem-assets-reporting) for the [!DNL Adobe Analytics] report suite used for Assets Insights.
 * You have an active [!DNL Adobe Analytics] entitlement.
 * You have access to Adobe Developer Console and can create an OAuth Server-to-Server credential.
 
@@ -112,7 +124,7 @@ Before configuring Assets Insights, ensure that the following requirements are m
 
    * Confirm that the IMS Org has an active [!DNL Adobe Analytics] entitlement and that the credential has access to the required report suite.
 
-### Create the Adobe IMS Configuration {#create-ims-configuration}
+### Create the Adobe IMS Configuration in AEM {#create-ims-configuration}
 
 1. In [!DNL Experience Manager], click **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe IMS Configurations]** > **[!UICONTROL Create]**.
 
@@ -133,7 +145,7 @@ Before configuring Assets Insights, ensure that the following requirements are m
 
 4. Click **[!UICONTROL Save]**, then use **[!UICONTROL Check Health]** to confirm that the configuration authenticates successfully through Adobe IMS.
 
-### Configure Assets Insights {#configure-assets-insights}
+### Configure Assets Insights with the IMS integration {#configure-assets-insights-ims-integration}
 
 1. In [!DNL Experience Manager], click **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
 
@@ -167,21 +179,7 @@ The [!DNL Adobe Analytics] report suite used for Assets Insights must have **AEM
 
 This setting provisions the Analytics dimensions and events used for asset impressions, clicks, and asset identifiers.
 
-### Page Tracker {#page-tracker}
-
-After you configure Assets Insights, the Page Tracker code is available for download. To enable Assets Insights to track [!DNL Experience Manager] assets used on third-party websites, include the Page Tracker code in the website code.
-
-The Page Tracker and asset tracking implementation are separate from the Adobe IMS authentication configuration described in [Configure Assets Insights](#configure-asset-insights). If your website is already instrumented for Assets Insights and successfully sends asset impressions and clicks to [!DNL Adobe Analytics], you do not need to change the existing tracking implementation as part of this configuration update.
-
-1. In [!DNL Experience Manager], click **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
-
-   ![chlimage\_1-73](assets/chlimage_1-73.png)
-
-2. From the **[!UICONTROL Navigation]** page, click the **[!UICONTROL Insights Page Tracker]** card.
-
-3. Click **[!UICONTROL Download]** to download the page tracker code.
-
-### Verify data is flowing {#verify-data-flow}
+### Verify the configuration and data flow {#verify-configuration-data-flow}
 
 After configuring Assets Insights:
 
@@ -203,19 +201,22 @@ If your existing website instrumentation already sends asset impressions and cli
 >
 >Existing asset data is not deleted as a result of the Adobe Analytics 1.4 API retirement. Adobe Analytics continues to store the collected asset activity.
 
-## Impact of the Adobe Analytics API retirement {#api-retirement-impact}
+## Page Tracker {#page-tracker}
 
-|                                                    |                                                                                                 |                                                                               |
-| -------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| Asset impressions and clicks collected on websites | Continue to be captured as usual, assuming the existing page instrumentation remains functional | No change to the collection implementation is required for this retirement    |
-| Adobe Analytics data                               | Continues to receive and store the insights data                                                | No action required for this specific issue                                    |
-| Assets Insights in AEM Admin View                  | Does not display fresh insights data after the legacy API is retired                            | Reconfigure Assets Insights after the new AEM release is available            |
-| Existing data already stored in AEM                | Remains available                                                                               | No data migration or deletion is required                                     |
-| Data collected during the temporary gap            | Remains available in Adobe Analytics and can be retrieved after reconfiguration                 | Complete the new configuration and allow the next AEM synchronization         |
-| Assets View Insights                               | Not affected by this Admin View integration issue                                               | No action required                                                            |
-| Adobe Analytics reports                            | Not affected by this AEM retrieval issue                                                        | Use Adobe Analytics reporting during the temporary AEM display gap, if needed |
+After you configure Assets Insights, the Page Tracker code is available for download. To enable Assets Insights to track [!DNL Experience Manager] assets used on third-party websites, include the Page Tracker code in the website code.
 
-## Troubleshooting {#troubleshooting}
+The Page Tracker and asset tracking implementation are separate from the Adobe IMS authentication configuration described in [Configure Assets Insights](#configure-asset-insights). If your website is already instrumented for Assets Insights and successfully sends asset impressions and clicks to [!DNL Adobe Analytics], you do not need to change the existing tracking implementation as part of this configuration update.
+
+1. In [!DNL Experience Manager], click **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
+
+   ![chlimage\_1-73](assets/chlimage_1-73.png)
+
+2. From the **[!UICONTROL Navigation]** page, click the **[!UICONTROL Insights Page Tracker]** card.
+
+3. Click **[!UICONTROL Download]** to download the page tracker code.
+
+
+## Troubleshooting {#troubleshooting-assets-insights}
 
 ### The Asset Insights Cloud Solution is not available
 
@@ -261,7 +262,7 @@ After completing the configuration:
 
 * Confirm that the selected report suite is the one receiving the asset activity.
 
-## Frequently asked questions {#frequently-asked-questions}
+## Frequently asked questions {#frequently-asked-questions-assets-insights}
 
 ### Will asset impressions and clicks stop being collected?
 
