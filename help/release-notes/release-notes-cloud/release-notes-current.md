@@ -253,6 +253,10 @@ Common use cases include:
 
 Follow [this tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) for a concrete walk-through for both Edge Delivery Services and AEM as a Cloud Service Java-stack variations.
 
+#### AEM Developer Console refresh {#aem-developer-console}
+
+The [AEM Developer Console](/help/implementing/developing/introduction/aem-developer-console.md) brings a more interactive debugging experience for Cloud environments. Previously available as a public beta, it has been rolling out progressively as the new default and so many organizations already have access. Full rollout completes in early September.
+
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
 #### IMS Authentication Rich Errors {#ims-auth-rich-errors}
