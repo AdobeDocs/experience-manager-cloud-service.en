@@ -83,15 +83,15 @@ You can view scores of all assets within a folder simultaneously using **[!UICON
 
 ## Impact of the Adobe Analytics API retirement {#api-retirement-impact}
 
-|                                                    |                                                                                                 |                                                                               |
-| -------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| Asset impressions and clicks collected on websites | Continue to be captured as usual, assuming the existing page instrumentation remains functional | No change to the collection implementation is required for this retirement    |
-| Adobe Analytics data                               | Continues to receive and store the insights data                                                | No action required for this specific issue                                    |
-| Assets Insights in AEM Admin View                  | Does not display fresh insights data after the legacy API is retired                            | [Reconfigure Assets Insights](#configure-assets-insights) after the new AEM release is available            |
-| Existing data already stored in AEM                | Remains available                                                                               | No data migration or deletion is required                                     |
-| Data collected during the temporary gap            | Remains available in Adobe Analytics and can be retrieved after reconfiguration                 | [Complete the new configuration](#configure-assets-insights) and allow the [next AEM synchronization](#verify-configuration-data-flow)         |
-| Assets View Insights                               | Not affected by this Admin View integration issue                                               | No action required                                                            |
-| Adobe Analytics reports                            | Not affected by this AEM retrieval issue                                                        | Use Adobe Analytics reporting during the temporary AEM display gap, if needed |
+| Area | Impact | Required action |
+| --- | --- | --- |
+| Asset impressions and clicks collected on websites | Continue to be captured as usual, assuming the existing page instrumentation remains functional | No change to the collection implementation is required for this retirement |
+| Adobe Analytics data | Continues to receive and store the insights data | No action required for this specific issue |
+| Assets Insights in AEM Admin View | Does not display fresh insights data after the legacy API is retired | [Reconfigure Assets Insights](#configure-assets-insights) after the new AEM release is available |
+| Existing data already stored in AEM | Remains available | No data migration or deletion is required |
+| Data collected during the temporary gap | Remains available in Adobe Analytics and can be retrieved after reconfiguration | [Complete the new configuration](#configure-assets-insights) and allow the [next AEM synchronization](#verify-configuration-data-flow) |
+| Assets View Insights | Not affected by this Admin View integration issue | No action required |
+| Adobe Analytics reports | Not affected by this AEM retrieval issue | Use Adobe Analytics reporting during the temporary AEM display gap, if needed |
 
 ## Configure Assets Insights {#configure-assets-insights}
 
