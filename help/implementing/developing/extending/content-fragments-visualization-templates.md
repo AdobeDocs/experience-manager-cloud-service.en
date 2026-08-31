@@ -586,6 +586,31 @@ An example of nested conditional:
 {{/if}}
 ```
 
+### Comparison and Boolean helpers {#comparison-and-boolean-helpers}
+
+Beyond the stock `{{#if}}` and `{{#unless}}` helpers, the service registers comparison and boolean-logic helpers so a template can render conditionally on field values. Each works both as a block and as an inline sub-expression:
+
+```handlebars
+{{#eq fields.tier "gold"}}Gold{{else}}Standard{{/eq}}     equality (null-safe, type-aware)
+{{#neq fields.status "draft"}}Published{{/neq}}           inequality
+{{#gte metadata.values.quantity 5}}Lots{{/gte}}           ordering: gt, gte, lt, lte
+{{#and a b}}both{{/and}} {{#or a b}}either{{/or}} {{#not flag}}off{{/not}}   boolean logic
+{{#if (and (gt n 0) (lt n 10))}}in range{{/if}}           composed as sub-expressions
+{{gt n 5 yes="big" no="small"}}                           inline, with yes/no substitution
+``` 
+
+#### Numeric comparison on single-valued fields
+
+A single-valued field arrives pre-rendered as a string (`fields.quantity is "7"`, not `7`), but the helpers coerce a numeric string at comparison time, so `{{#gte fields.quantity 5}}` and `{{#eq fields.quantity 0}}` compare as numbers — alongside `{{#gte metadata.values.quantity 5}}`, where the value is already typed. Ordering (`gt`/`gte`/`lt`/`lte`) always compares numerically. Equality coerces with intent: a string field compares as a number only when the other operand is a genuine number — a numeric literal (`{{#eq fields.qty 0}}`) or a typed field such as `metadata.values.*`. Comparing two string fields or a quoted literal (`{{#eq fields.version "1.0"}}`) stays exact string equality, so versions, zip codes and ids modeled as text are never collapsed (`"007"` does not equal `"7"`). Dates cross the wire as ISO-8601 strings, so `eq`/`neq` compare them by exact string equality and the ordering helpers reject them as non-numeric. A missing, blank or non-numeric operand is treated as “condition unmet” and renders the `else` branch rather than erroring.
+
+#### Boolean helpers use plain truthiness (no coercion)
+
+The boolean helpers `and`/`or`/`not` do not coerce — they apply stock Handlebars truthiness, where any non-empty string is truthy (falsy values are `false`, `null`, `undefined`, `0`, `""`, `[]`). A single-valued Boolean field arrives as the string `"true"` or `"false"`, and `"false"` is a non-empty string, so `{{#not fields.flag}}` sees a truthy value and takes the else branch even when the field reads false. Compare a scalar Boolean field explicitly `({{#eq fields.flag "true"}})` rather than feeding it to `and`/`or`/`not`; a Boolean read from `metadata.values.*` is already typed and works with the boolean helpers directly.
+
+#### Fields named after a helper
+
+Registering these helpers claims their names globally, but a field named after one still renders its own value when read without arguments: `{{eq}}` inside `{{#with fields}}` prints the eq field’s text, not a comparison result. The helpers are available both in the visualization template and inside Handlebars embedded in a content-fragment field value.
+
 ## Built-in Handlebars helpers {#built-in-handlebars-helpers}
 
 Handlebars includes several built-in helpers, beyond `{{#if}}` and `{{#each}}`.
