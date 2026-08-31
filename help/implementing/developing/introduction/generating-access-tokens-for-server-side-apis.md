@@ -223,11 +223,7 @@ If the private key is compromised, you must create credentials with a new certif
 
    ![Add new private key](/help/implementing/developing/introduction/assets/s2s-addnewprivatekey.png)
 
-1. Select **Add** at the prompt that follows:
-
-   ![Confirm adding of new private key](/help/implementing/developing/introduction/assets/s2s-addprivatekeyconfirm.png)
-
-   A new browse tab with the new credentials opens and the user interface is updated to show both private keys with the new one marked as **current**:
+1. A new browse tab with the new credentials opens and the user interface is updated to show both private keys with the new one marked as **current**:
 
    ![Private keys in the UI](/help/implementing/developing/introduction/assets/s2s-twokeys.png)
 
