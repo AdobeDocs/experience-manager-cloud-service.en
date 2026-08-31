@@ -46,7 +46,7 @@ The 2026.8.0 release of [!DNL Experience Manager] as a [!DNL Cloud Service] deli
 
 * **Content authenticity with C2PA** — Asset renditions now carry C2PA metadata based on the original, and C2PA support extends to Dynamic Media (OpenAPI and Scene7), helping customers label Gen AI content and meet transparency requirements.
 * **AI-powered Assets workflows** — Content Hub can generate Dynamic Media renditions on the fly, and Assets Insights now supports the Adobe Analytics 2.0 API with OAuth Server-to-Server authentication ahead of the Analytics 1.4 API retirement.
-* **Foundation and platform** — Agentic permission management for real-time ACL auditing, AEM Edge Functions (Public Beta) for running JavaScript at the CDN, and IMS authentication rich errors for easier troubleshooting.
+* **Foundation and platform** — Agentic permission management for real-time ACL auditing, AEM Edge Functions for running JavaScript at the CDN, and IMS authentication rich errors for easier troubleshooting.
 * **Plan-ahead notices** — Important timelines for Java API deprecations and the upcoming Java 25 runtime upgrade help customers prepare their environments.
 
 A range of beta, early adopter, and alpha programs are also available this release. See the sections below for details.
@@ -252,6 +252,10 @@ Common use cases include:
 * Composing and serving server-rendered HTML at the edge using content stitched from various backends
 
 Follow [this tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) for a concrete walk-through for both Edge Delivery Services and AEM as a Cloud Service Java-stack variations.
+
+#### AEM Developer Console refresh {#aem-developer-console}
+
+The [AEM Developer Console](/help/implementing/developing/introduction/aem-developer-console.md) brings a more interactive debugging experience for Cloud environments. Previously available as a public beta, it has been rolling out progressively as the new default and so many organizations already have access. Full rollout completes in early September.
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
