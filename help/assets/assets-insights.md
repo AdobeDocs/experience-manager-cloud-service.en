@@ -22,11 +22,11 @@ Assets Insights captures user activity details, such as the number of times an i
 To let Assets Insights display usage statistics for assets, configure the integration with [!DNL Adobe Analytics]. For details, see [Configure Assets Insights](#configure-asset-insights). You must have an [!DNL Adobe Analytics] license to use this feature.
 
 > [!IMPORTANT]
-
+>
 > Adobe Analytics 1.4 API and its legacy authentication method are being retired. Assets Insights now uses the Adobe Analytics 2.0 API with OAuth Server-to-Server authentication through Adobe IMS. After your AEM as a Cloud Service environment receives the update that provides the new integration, you must configure Assets Insights to continue retrieving current insights data.
 
 > [!NOTE]
-
+>
 > Insights are supported and provided only for images.
 
 ## View statistics for an image {#viewing-statistics-for-an-image}
@@ -56,7 +56,7 @@ You can view the Assets Insights scores from the metadata page.
    ![usage\_statistics](assets/usage_statistics.png)
 
    > [!NOTE]
-
+   >
    > Because the Assets Insights feature typically fetches the Solutions data from [!DNL Adobe Analytics] in a periodic manner, the Solutions section may not display the most recent data. The time period for which the data is displayed depends the schedule of the fetch operation that Assets Insights runs to retrieve Analytics data.
 
 5. To view performance statistics for the asset graphically over a period of time, select period in the **[!UICONTROL Performance Statistics]** section. Details, including clicks and impressions are displayed as trend lines of a graph.
@@ -64,7 +64,7 @@ You can view the Assets Insights scores from the metadata page.
    ![chlimage\_1-3](assets/chlimage_1-3.jpeg)
 
    > [!NOTE]
-
+   >
    > Unlike the data in the Solutions section, the Performance Statistics section displays the most recent data.
 
 6. To obtain the embed code for the asset that you include in websites to get performance data, click **[!UICONTROL Get Embed Code]** below the asset thumbnail.
@@ -95,7 +95,7 @@ Before configuring Assets Insights, ensure that the following requirements are m
 * You have access to Adobe Developer Console and can create an OAuth Server-to-Server credential.
 
 > [!NOTE]
-
+>
 > Insights are only supported and provided for images.
 
 ### Create an OAuth Server-to-Server credential {#create-oauth-credential}
@@ -119,7 +119,7 @@ Before configuring Assets Insights, ensure that the following requirements are m
 2. For **[!UICONTROL Cloud Solution]**, select **[!UICONTROL Asset Insights]**.
 
    > [!NOTE]
-
+   >
    > If **[!UICONTROL Asset Insights]** is not available as a Cloud Solution, your AEM as a Cloud Service environment may not yet have received the update that introduces the new integration. Confirm that the required update is available in your environment. Do not create a new legacy configuration.
 
 3. Enter the values from the OAuth Server-to-Server credential that you created in Adobe Developer Console:
@@ -142,7 +142,7 @@ Before configuring Assets Insights, ensure that the following requirements are m
 3. In **[!UICONTROL Analytics Company]**, enter the [!DNL Adobe Analytics] **Global Company ID**.
 
    > [!NOTE]
-
+   >
    > The Global Company ID is different from the company display name used in the legacy Assets Insights configuration. Do not enter the company display name in this field. Using the display name instead of the Global Company ID can result in an empty report suite list.
 
 4. Select the **[!UICONTROL Report Suite]** used for Assets Insights.
@@ -200,7 +200,7 @@ After configuring Assets Insights:
 If your existing website instrumentation already sends asset impressions and clicks correctly, you do not need to replace it as part of this configuration change.
 
 > [!NOTE]
-
+>
 > Existing asset data is not deleted as a result of the Adobe Analytics 1.4 API retirement. Adobe Analytics continues to store the collected asset activity.
 
 ## Impact of the Adobe Analytics API retirement {#api-retirement-impact}
