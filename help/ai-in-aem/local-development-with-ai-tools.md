@@ -207,7 +207,7 @@ Download the content package from the [Software Distribution Portal](https://exp
 |`diagnose-osgi-bundle`|Diagnoses why a bundle or DS component is not starting; reports missing packages, unsatisfied references, and configuration problems|
 |`recent-requests`|Returns recent HTTP requests with Sling's full internal processing trace (resource resolution, script resolution, filter chain), filterable by path regex|
 
-### Configure Your IDE {#configure-your-ide}
+### Configure Your IDE or coding agent {#configure-your-ide}
 
 #### Cursor {#cursor}
 
@@ -223,7 +223,20 @@ In Cursor Settings, add a new custom MCP server:
 }
 ```
 
-#### GitHub Copilot with IntelliJ IDEA {#github-copilot-with-ihtellij-idea}
+#### Claude Code {#aemmcp-claude-code}
+
+At the command line, execute:
+
+`$ claude mcp add --transport http aem-cs-sdk http://localhost:4502/bin/mcp --header "Authorization: Basic YWRtaW46YWRtaW4="`
+
+
+#### GitHub Copilot CLI {#aemmcp-github-copilot-cli}
+
+At the command line, execute:
+
+`$ copilot mcp add --transport http --header "Authorization: Basic YWRtaW46YWRtaW4=" aem-cs-sdk http://localhost:4502/bin/mcp`
+
+#### GitHub Copilot with IntelliJ IDEA {#github-copilot-with-intellij-idea}
 
 Navigate to **Tools > GitHub Copilot > Model Context Protocol (MCP)** and click **Configure**. Add:
 

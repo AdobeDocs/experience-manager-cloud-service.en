@@ -58,6 +58,40 @@ In Content Hub, the governance agent ensures that only the right people access t
 * *Delete all the rules which gives access to external-agency*
 * *What is ABAC in Content Hub and what can you help me do?*
 
+#### Permission Management in AEM {#permission-management-in-aem}
+
+In Adobe Experience Manager, the governance agent helps you understand and troubleshoot repository permissions across your content tree. Ask a question in plain language about who can do what on a given path, and the agent audits the effective access control lists (ACLs) on your author environment in real time to explain the result.
+
+The agent can:
+
+* **Explain an access decision:** Determine whether a specific user or group is allowed or denied an action on a path, and cite the exact policies behind that outcome, including policies inherited from parent paths and any restrictions that narrow their scope.
+* **Report who holds a privilege:** List the users and groups that effectively have a given privilege, such as `jcr:write` or `jcr:removeNode`, on a path.
+* **Identify the source of a denial:** Show who is denied an action and which specific entries cause it.
+* **Recommend groups for a grant:** Suggest which existing groups are best suited to receive a privilege, so you can apply changes following the principle of least privilege.
+
+The agent is read-only: it diagnoses permissions and recommends changes, but it does not modify access control lists, groups, or content on your behalf.
+
+This capability is available through [CX Coworker](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview).
+
+![The governance agent auditing why a principal has write access on a path in AEM](/help/ai-in-aem/agents/governance/assets/permission-management-aem-audit-access.png)
+
+**Prompt Examples:**
+
+* *Why can't sample-author write in /content/dam on `https://author-p<program-id>-e<environment-id>.adobeaemcloud.com`?*
+* *Why can principal admin write /content/wknd/us on `https://author-p<program-id>-e<environment-id>.adobeaemcloud.com`?*
+* *Which groups have jcr:removeNode on /content/projects/masters?*
+* *Who is denied jcr:write on /content/secure, and which entries cause it?*
+* *Show all effective ACL entries on /content/wknd, including inherited policies.*
+* *Recommend groups suitable for granting jcr:removeNode and jcr:removeChildNodes on /content/projects/masters.*
+
+When you ask the agent to recommend groups for a grant, it reviews the principals that already hold the privilege at or above the path and suggests the most suitable candidates:
+
+![The governance agent recommending groups for granting delete privileges in AEM](/help/ai-in-aem/agents/governance/assets/permission-management-aem-recommend-groups.png)
+
+If the agent cannot reach the target environment, it reports that the connection failed and outlines the likely causes:
+
+![The governance agent reporting that the target AEM environment is unreachable](/help/ai-in-aem/agents/governance/assets/permission-management-aem-environment-unreachable.png)
+
 #### Assets Digital Rights Management {#assets-digital-rights-management}
 
 Using the agent, you can manage your Assets digital rights across your content ecosystem. It controls permissions and usage rights at a granular level, ensuring that assets are accessed and used only within defined compliance boundaries. This delivers peace of mind, protecting intellectual property, reducing regulatory risk, and maintaining brand integrity. By automating rights enforcement, teams can collaborate securely and confidently, accelerating content distribution without compromising security or compliance.

@@ -40,8 +40,6 @@ After you have set up your program and have at least one environment using the [
 
 1. On the **My Programs** console, click a program. 
 
-1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
-
 1. Navigate to the **Pipelines** card from the **Program Overview** page and click **Add** to select **Add Production Pipeline**. 
 
    ![The Pipelines card on the Program Manager overview](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)

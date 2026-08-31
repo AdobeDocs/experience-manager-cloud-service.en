@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2026.08.13 Release Notes
-description: These are the release notes for the 2026.08.13 release of the Universal Editor.
+title: Universal Editor 2026.08.27 Release Notes
+description: These are the release notes for the 2026.08.27 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2026.08.13 Release Notes {#release-notes}
+# Universal Editor 2026.08.27 Release Notes {#release-notes}
 
-These are the release notes for the 13 August 2026 release of the Universal Editor.
+These are the release notes for the 27 August 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -20,8 +20,9 @@ These are the release notes for the 13 August 2026 release of the Universal Edit
 
 ## What's New {#what-is-new}
 
-* [Find and replace](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) is now available in the RTE.
+* An inline code format option has been [added to the RTE](/help/implementing/universal-editor/configure-rte.md#inline-code) and is available in [the editor UI.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 
 ## Other Improvements {#other-improvements}
 
-* A problem was fixed where the cursor could not be inserted below a table if the table was the last item in a block.
+* A bug was fixed where the find and replace feature was not correctly highlighting the matched text in certain situations.
+* A bug was fixed when undo was not properly applied in some situations.
