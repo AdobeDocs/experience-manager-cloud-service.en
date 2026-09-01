@@ -121,6 +121,7 @@ The structure of the context object for the (selected) Content Fragment:
 | `fields` | Map | Direct access to field values by name |
 | `allFields` | List | Array of `{name, value}` for iteration |
 | `hasFields` | Boolean | `true` if the fragment has fields |
+| `metadata.values`| Map | Custom metadata properties of the Content Fragment |
 
 ### Properties structure {#properties-structure}
 
@@ -173,6 +174,7 @@ Each item in `referencedFragments` contains:
 | `hasFields` | Boolean | True if the fragment has fields |
 | `fields` | Map | Direct access to fields within this fragment |
 | `allFields` | List | Array of `{name, value}` for iteration |
+| `metadata.values` | Map | Custom metadata properties of the Content Fragment |
 
 Examples: Template access for the first referenced Content Fragment (first item in the 0-indexed list):
 
@@ -185,6 +187,14 @@ Or from the fields map:
 ```handlebars
 {{{ fields.referenced_cf_field_name.properties.description }}}
 ```
+
+### Referenced Assets Structure {#referenced-assets-structure}
+
+Each item in `referencedAssets` contains:
+
+| Property | Type | Description |
+|--- |--- |--- |
+| `properties` | Map | Custom metadata properties of the Asset |
 
 ## Basic field access {#basic-field-access}
 
@@ -566,6 +576,12 @@ An `unless` helper:
 {{/unless}}
 ```
 
+>[!NOTE]
+>
+>Boolean fields: 
+>
+>This reads correctly when `hideAuthor` is a real boolean; for example, from `metadata.values.*`. However, a single-valued Boolean field, arrives pre-rendered as the string `"true"` or `"false"`, and `"false"` is a non-empty (truthy) string — so `{{#unless fields.hideAuthor}}` hides the author even when the field is `false`. Compare the scalar field explicitly instead; for example, `{{#if (eq fields.hideAuthor "true")}}`. See also [Comparison and Boolean Logic Helpers](#comparison-and-boolean-helpers).
+
 ### Nested Conditionals {#nested-conditials}
 
 An example of nested conditional:
@@ -588,7 +604,7 @@ An example of nested conditional:
 
 ### Comparison and Boolean helpers {#comparison-and-boolean-helpers}
 
-Beyond the stock `{{#if}}` and `{{#unless}}` helpers, the service registers comparison and boolean-logic helpers so a template can render conditionally on field values. Each works both as a block and as an inline sub-expression:
+In addition to the stock `{{#if}}` and `{{#unless}}` helpers, the service registers comparison and boolean-logic helpers so that a template can render conditionally on field values. Both comparison and boolean-logic helpers work as a block and as an inline sub-expression:
 
 ```handlebars
 {{#eq fields.tier "gold"}}Gold{{else}}Standard{{/eq}}     equality (null-safe, type-aware)
@@ -599,15 +615,15 @@ Beyond the stock `{{#if}}` and `{{#unless}}` helpers, the service registers comp
 {{gt n 5 yes="big" no="small"}}                           inline, with yes/no substitution
 ``` 
 
-#### Numeric comparison on single-valued fields
+#### Numeric comparison on single-valued fields {#numeric-comparison-on-single-valued-fields}
 
 A single-valued field arrives pre-rendered as a string (`fields.quantity is "7"`, not `7`), but the helpers coerce a numeric string at comparison time, so `{{#gte fields.quantity 5}}` and `{{#eq fields.quantity 0}}` compare as numbers — alongside `{{#gte metadata.values.quantity 5}}`, where the value is already typed. Ordering (`gt`/`gte`/`lt`/`lte`) always compares numerically. Equality coerces with intent: a string field compares as a number only when the other operand is a genuine number — a numeric literal (`{{#eq fields.qty 0}}`) or a typed field such as `metadata.values.*`. Comparing two string fields or a quoted literal (`{{#eq fields.version "1.0"}}`) stays exact string equality, so versions, zip codes and ids modeled as text are never collapsed (`"007"` does not equal `"7"`). Dates cross the wire as ISO-8601 strings, so `eq`/`neq` compare them by exact string equality and the ordering helpers reject them as non-numeric. A missing, blank or non-numeric operand is treated as “condition unmet” and renders the `else` branch rather than erroring.
 
-#### Boolean helpers use plain truthiness (no coercion)
+#### Boolean helpers use plain truthiness (no coercion) {#boolean-helpers-use-plain-truthiness-no-coercion}
 
 The boolean helpers `and`/`or`/`not` do not coerce — they apply stock Handlebars truthiness, where any non-empty string is truthy (falsy values are `false`, `null`, `undefined`, `0`, `""`, `[]`). A single-valued Boolean field arrives as the string `"true"` or `"false"`, and `"false"` is a non-empty string, so `{{#not fields.flag}}` sees a truthy value and takes the else branch even when the field reads false. Compare a scalar Boolean field explicitly `({{#eq fields.flag "true"}})` rather than feeding it to `and`/`or`/`not`; a Boolean read from `metadata.values.*` is already typed and works with the boolean helpers directly.
 
-#### Fields named after a helper
+#### Fields named after a helper {#fields-named-after-a-helper}
 
 Registering these helpers claims their names globally, but a field named after one still renders its own value when read without arguments: `{{eq}}` inside `{{#with fields}}` prints the eq field’s text, not a comparison result. The helpers are available both in the visualization template and inside Handlebars embedded in a content-fragment field value.
 
