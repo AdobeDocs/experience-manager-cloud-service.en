@@ -40,7 +40,7 @@ Before creating prompts, open the **[!UICONTROL Prompt Editor]**.
  ![Navigate to Prompt Editor](/help/assets/assets/prompt-editor.png)
 
 The AI Metadata Prompts Manager displays the available property prompts, brand prompts, quality reports, and GenAI metrics.
-![AI Metadata Prompts Manager](/help/assets/assets/ai-metadata-prompts-manager.png)
+![AI Metadata Prompts Manager](/help/assets/assets/ai-metadata-prompts-manager.png) 
 
 If you need to access Prompt Editor using Assets view, navigate to the following URL:
 

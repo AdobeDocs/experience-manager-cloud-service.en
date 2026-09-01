@@ -676,6 +676,7 @@ user-guide-title: AEM as a Cloud Service
     + [XMP metadata](/help/assets/xmp-metadata.md)
     + [MediaLibrary capabilities](/help/assets/medialibrary.md)
     + [Import and export asset metadata](/help/assets/metadata-import-export.md)
+    + [Generate AI metadata using Brand Aware Metadata](/help/assets/generate-ai-metadata-brand-aware.md)
     + [Configure asset upload restrictions](/help/assets/configure-asset-upload-restrictions.md)
     + [AI-powered content onboarding and content supply chain automation](/help/assets/ai-powered-content-onboarding-content-supply-chain-automation.md)
     + [Asset Sourcing portal for AEM Assets](/help/assets/asset-sourcing-portal-for-aem-assets.md)
