@@ -111,7 +111,7 @@ When your template is rendered, it receives a context object containing all the 
   >* in the UI: to the maximum depth of 5
   >* when using the API: the depth is configurable, up to the maximum depth of 10
 
-### Content Fragment {#content-fragment}
+### Main Content Fragment {#main-content-fragment}
 
 The structure of the context object for the (selected) Content Fragment:
 
@@ -121,9 +121,9 @@ The structure of the context object for the (selected) Content Fragment:
 | `fields` | Map | Direct access to field values by name |
 | `allFields` | List | Array of `{name, value}` for iteration |
 | `hasFields` | Boolean | `true` if the fragment has fields |
-| `metadata.values`| Map | Custom metadata properties of the Content Fragment |
+| `metadata` | Map | Metadata schema block of the fragment. See also [Content Fragment Metadata Structure](#content-fragment-metadata-structure) |
 
-### Properties structure {#properties-structure}
+### Properties structure (Main and Referenced fragments) {#properties-structure-main-and-referenced-fragments}
 
 The `properties` object has the same structure for the selected fragment and for each referenced fragment.
 
@@ -174,7 +174,7 @@ Each item in `referencedFragments` contains:
 | `hasFields` | Boolean | True if the fragment has fields |
 | `fields` | Map | Direct access to fields within this fragment |
 | `allFields` | List | Array of `{name, value}` for iteration |
-| `metadata.values` | Map | Custom metadata properties of the Content Fragment |
+| `metadata` | Map | Metadata schema block of the fragment. See also [Content Fragment Metadata Structure](#content-fragment-metadata-structure) |
 
 Examples: Template access for the first referenced Content Fragment (first item in the 0-indexed list):
 
@@ -188,7 +188,92 @@ Or from the fields map:
 {{{ fields.referenced_cf_field_name.properties.description }}}
 ```
 
-### Referenced Assets Structure {#referenced-assets-structure}
+### Content Fragment Metadata Structure {#content-fragment-metadata-structure}
+
+A fragment's metadata - the metadata/fields block backed by its metadata schema - is surfaced under `metadata`. It is distinct from `properties`, which holds the structural values (`title`, `description`, `path`, `tags`, `dates`, `status`).
+
+| Variable | Type | Description |
+|--- |--- |--- |
+| `metadata` | Map | The fragment's metadata schema block. Absent when the fragment has no metadata, so `metadata` expressions render empty instead of erroring |
+| `metadata.schemaId` | String | Identifier of the metadata form linked to the fragment, resolved from the fragment or its parent folders; `default` when none is found |
+| `metadata.values` | Map | Custom metadata properties of the Content Fragment, keyed by property name. Values keep their JSON type - a number stays a number, a boolean stays a boolean |
+| `metadata.fields` | List | The same properties as an iterable list. Each item has `name`, `type` (string, integer, number, boolean, array, object), `value` and `title` (human-readable label from the schema) |
+
+```handlebars
+{{metadata.schemaId}}
+{{metadata.values.[dc:title]}}        <!-- colon keys need bracket syntax -->
+{{metadata.values.version}}
+{{#each metadata.fields}}{{title}}: {{value}}{{/each}}
+
+<!-- A referenced fragment carries the same block on its row -->
+{{fields.author.metadata.values.[dc:title]}}
+{{#each referencedFragments}}{{metadata.schemaId}}{{/each}}
+```
+
+>[!NOTE]
+>
+>The main fragment's metadata arrives with the fragment itself. A referenced fragment's metadata is fetched separately, per reference, and only for the references a template actually reads. 
+>
+>Because `metadata.values` keeps JSON types, a number or boolean read from there works directly with the comparison and boolean helpers, unlike a scalar field which reaches the template pre-rendered as a string. See also [Comparison and Boolean Logic Helpers](#comparison-and-boolean-logic-helpers).
+
+### Asset field structure {#asset-field-structure}
+
+Referenced assets are not a top-level collection; there is no `referencedAssets`. An asset is reached through the field that holds it, `fields.<assetField>`, or `fields.<ref>.fields.<assetField>` for an asset inside a referenced fragment.
+
+An asset field value is dual-natured. Printed raw it is the pre-rendered asset HTML; drilled into, it exposes the asset's metadata under `properties`.
+
+| Variable | Type | Description |
+|--- |--- |--- |
+| the value itself | String (HTML) | The pre-rendered asset HTML (`<img>` for an image).<br> Requires triple braces: `{{{fields.heroImage}}}` |
+| `properties` | Map | Metadata properties of the asset |
+
+A multi-valued asset field is a list. Iterate it with `{{#each fields.gallery}}`, using `{{{this}}}` for the HTML and `{{this.properties.assetId}}` for metadata.
+
+#### Properties of a local DAM asset {#properties-of-a-local-dam-asset}
+
+These keys are carried by the Content Fragment response and are always available:
+
+| Property | Type | Description | Example |
+|--- |--- |--- |--- |
+| `assetId` | String | Asset identifier as a URN | `urn:aaid:aem:1fb05fe4-...` |
+| `path` | String | DAM path of the asset | `/content/dam/wknd/ian_provo.jpg` |
+| `name` | String | File name | `ian_provo.jpg` |
+| `title` | String | Asset title | |
+| `description` | String | Asset description | |
+| `type` | String | Reference type; always `asset` | `asset` |
+| `fieldName` | String | Name of the Content Fragment field holding the reference | `profilePicture` |
+| `status` | String | `NEW`, `DRAFT`, `PUBLISHED`, `MODIFIED`, `UNPUBLISHED` | `DRAFT` |
+| `previewReplicationStatus` | String | `PUBLISHED`, `UNPUBLISHED`, `MODIFIED`, `NEVER_PUBLISHED` | |
+| `created`, `modified`, `published` | Map | Authoring info: `at` (ISO-8601), `by`, `fullName`, `firstName`, `lastName` | |
+| `dc:format` | String | Mime type | `image/jpeg` |
+| `repo:size` | Number | Size in bytes | `251434` |
+| `tiff:ImageWidth` | Number | Width in pixels | `1152` |
+| `tiff:ImageHeight` | Number | Height in pixels | `1152` |
+| any other metadata property | typed | Every other property the asset carries, including custom namespaced ones such as `lilly:persistentID`. Fetched from the asset on demand |  |
+
+Property names that contain a colon require bracket syntax:
+
+```handlebars
+{{{fields.heroImage}}}
+{{fields.heroImage.properties.assetId}}
+{{fields.heroImage.properties.[dc:format]}}
+{{fields.heroImage.properties.[lilly:persistentID]}}
+```
+
+#### Properties of a Dynamic Media asset {#properties-of-a-dynamic-media-asset}
+
+A Dynamic Media (remote) asset carries no DAM path. Only two keys are inline:
+
+| Property | Type | Description | Example |
+|--- |--- |--- |--- |
+| `repository` | String | Delivery host serving the asset | `delivery-p12345-e67890.adobeaemcloud.com` |
+| `assetId` | String | Asset identifier as a URN | `urn:aaid:aem:1fb05fe4-...` |
+
+Together these are enough to build a Dynamic Media delivery URL instead of using the embedded image. Every other property is fetched from the asset's own delivery host. Only approved (published) assets are served there, so an unapproved Dynamic Media asset resolves nothing beyond these two keys.
+
+>[!NOTE]
+>
+>Inside a loop, write `this.properties.<key>` and not a bare `properties.<key>`. A bare path whose key is also a Content Fragment property, such as `title`, `description`, `path` or `status`, resolves against the fragment and not the asset.
 
 Each item in `referencedAssets` contains:
 
@@ -580,7 +665,7 @@ An `unless` helper:
 >
 >Boolean fields: 
 >
->This reads correctly when `hideAuthor` is a real boolean; for example, from `metadata.values.*`. However, a single-valued Boolean field, arrives pre-rendered as the string `"true"` or `"false"`, and `"false"` is a non-empty (truthy) string — so `{{#unless fields.hideAuthor}}` hides the author even when the field is `false`. Compare the scalar field explicitly instead; for example, `{{#if (eq fields.hideAuthor "true")}}`. See also [Comparison and Boolean Logic Helpers](#comparison-and-boolean-helpers).
+>This reads correctly when `hideAuthor` is a real boolean; for example, from `metadata.values.*`. However, a single-valued Boolean field, arrives pre-rendered as the string `"true"` or `"false"`, and `"false"` is a non-empty (truthy) string — so `{{#unless fields.hideAuthor}}` hides the author even when the field is `false`. Compare the scalar field explicitly instead; for example, `{{#if (eq fields.hideAuthor "true")}}`. See also [Comparison and Boolean Logic Helpers](#comparison-and-boolean-logic-helpers).
 
 ### Nested Conditionals {#nested-conditials}
 
@@ -602,7 +687,7 @@ An example of nested conditional:
 {{/if}}
 ```
 
-### Comparison and Boolean helpers {#comparison-and-boolean-helpers}
+### Comparison and Boolean Logic Helpers {#comparison-and-boolean-logic-helpers}
 
 In addition to the stock `{{#if}}` and `{{#unless}}` helpers, the service registers comparison and boolean-logic helpers so that a template can render conditionally on field values. Both comparison and boolean-logic helpers work as a block and as an inline sub-expression:
 
