@@ -275,12 +275,6 @@ Together these are enough to build a Dynamic Media delivery URL instead of using
 >
 >Inside a loop, write `this.properties.<key>` and not a bare `properties.<key>`. A bare path whose key is also a Content Fragment property, such as `title`, `description`, `path` or `status`, resolves against the fragment and not the asset.
 
-Each item in `referencedAssets` contains:
-
-| Property | Type | Description |
-|--- |--- |--- |
-| `properties` | Map | Custom metadata properties of the Asset |
-
 ## Basic field access {#basic-field-access}
 
 Direct field access is recommended, when necessary you can iterate through all fields.
