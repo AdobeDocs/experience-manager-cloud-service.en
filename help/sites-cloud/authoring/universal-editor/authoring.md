@@ -104,6 +104,7 @@ The rich text editor (RTE) of the Universal Editor allows the author to apply st
 * **Italic**
 * **Underline**
 * **Strikethrough**
+* **Inline code**
 * **Text Color**
   * Opens a color palette where you can select a color or specify a hex value
   * Only available in the modal editor, not in-context
@@ -136,6 +137,13 @@ The rich text editor (RTE) of the Universal Editor allows the author to apply st
   * Insert a special character into your text.
 * **Remove All Formatting**
   * Remove all formatting options from the selected text.
+* **Find and replace** to find occurrences of specified text in the RTE and optionally replace with different text
+  * **Find** field: String to search for
+  * **Replace** field: String to replace the **Find** string with
+  * **Match case**: Make search of **Find** string case-sensitive (default is case-insensitive)
+  * **Find** button: Find the next occurrence of the **Find** string
+  * **Replace** button: Replace the next occurrence of the **Find** string
+  * **Replace all**: Replace all occurrences of the **Find** string with the **Replace** string
 
 Depending on your back end, the options available by default may vary. The RTE can be configured to hide options or show additional options depending on authors' needs. Please see the document [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md) for more information.
 

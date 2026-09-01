@@ -24,8 +24,9 @@ This editor provides:
 * [Preview](#preview-content-fragment) of the rendered experience delivered by the Content Fragment.
 * Ability to [Publish](#publish-content-fragment) and [Unpublish](#unpublish-content-fragment) from the editor.
 * Ability to [view, and open, associated language copies](#view-language-copies) in the editor.
-* Ability to [view version details](#view-version-history) in the editor. You can also revert to a selected version.
+* Ability to manage the [Version history](#version-history). In the editor you can view version details, create a new version, compare versions, and revert to a selected version.
 * Ability to [view, and open, parent references](#view-parent-references).
+* Ability to view details of ongoing and completed [workflows](#view-workflows) that have been applied to the fragment.
 * Ability to [show, and edit, the properties, metadata and tags](#view-and-edit-properties-metadata-and-tags),
 * A hierarchical view of the Content Fragment, and its references, using the [Structure tree](#structure-tree).
 
@@ -52,6 +53,7 @@ When you first open the Content Fragment Editor, you see four main areas:
   * links to [Preview](#preview-content-fragment); if the Default Preview URL Pattern is configured for the model
   * [Publish](#publish-content-fragment), and [Unpublish](#unpublish-content-fragment) actions
   * an option to show all **Parent References** (link icon)
+  * an option to show details of the ongoing and completed [workflows](#view-workflows) that have been applied to the fragment
   * the fragment **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**, and last saved information
   * a toggle to switch to the original (/help/sites-cloud/administering/content-fragments/assets-based) editor
 
@@ -63,7 +65,7 @@ When you first open the Content Fragment Editor, you see four main areas:
 
 * left panel: shows the **[Variations](#variations)** for the Content Fragment, and its **Fields**:
   * these links can be used to [navigate the Content Fragment structure](#navigate-structure)
-* right panel: presents tabs [showing the properties, metadata and tags](#view-and-edit-properties-metadata-and-tags), information about the [version history](#view-version-history), and information related to any [language copies](#view-language-copies)
+* right panel: presents tabs [showing the properties, metadata and tags](#view-and-edit-properties-metadata-and-tags), information about the [version history](#version-history), and information related to any [language copies](#view-language-copies)
   * in the **Properties** tab you can update the **Title** and **Description** properties of the fragment, or **Variation**
   * In the **Comments** tab you can add, and read, comments to help you collaborate with other authors
 * central panel: shows the actual fields, and content, of the selected variation
@@ -427,6 +429,30 @@ For example:
   ![Revert to inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-revert-to-inheritance.png)
 -->
 
+## View Workflows {#view-workflows}
+
+The editor provides an option to show details about ongoing and completed [workflows](#view-workflows) that have been applied to the fragment.
+
+>[!NOTE]
+>
+>The option is for information only.
+
+Select the icon from the top toolbar: 
+
+![Content Fragments editor - Workflows icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-editor-workflows-icon.png)
+
+A dialog opens that shows detailed information about workflows (past and current) for the fragment:
+
+![Content Fragments editor - Workflows dialog](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-editor-workflows-dialog.png)
+
+Failed workflows are marked. Selecting the icon opens an additional dialog with information about the failure:
+
+![Content Fragments editor - Failures in the Workflows dialog](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-editor-workflows-dialog-failure.png)
+
+>[!NOTE]
+>
+>If the workflow fails when publishing a Content Fragment, a toast message for the failure is triggered. The toast message contains a link to open the dialog, so you can see the cause of the failure.
+
 ## View and edit Properties, Metadata and Tags {#view-and-edit-properties-metadata-and-tags}
 
 In the properties tab of the right panel, properties, metadata and tags can be viewed and edited. 
@@ -475,17 +501,30 @@ For example:
 
 ![Content Fragment Editor - open Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-open-model.png)
 
-## View the Version History {#view-version-history}
+## Version History {#version-history}
 
-In the **Version history** tab of the right panel, details of the current, and previous, versions are shown:
+Each Content Fragment has a history as new versions are created over time. New versions are created for various reasons; including:
 
->[!NOTE]
->
->A new version is created when the content fragment is published.
+* when you publish your fragment
+* when you manually create a new version
+
+In the **Version history** tab of the editor you can view the history, together with the details of specific versions. You can also create a new version, compare versions, and revert to a selected version.
+
+### View the Version History {#view-version-history}
+
+When you select the **Version history** tab of the right panel, details of the current, and previous, versions are shown. Select a specific version to show the details.
 
 <!-- CQDOC-23473 - new screenshot? -->
 
 ![Content Fragment Editor - Version History Overview](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-overview.png)
+
+### Create a Version {#create-a-version}
+
+To open the **Create Version** dialog use the `+` icon at the top of the **Version history** tab of the editor. 
+
+Here you can specify a **Label** and **Comment**:
+
+![Content Fragment Editor - Create Version](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-create.png)
 
 ### Compare Version {#compare-version}
 
@@ -508,23 +547,29 @@ Differences are indicated by color:
 * Green: indicates content added (to the current version)
 * Red: indicates content removed (from the current version)
 
+You can also select to **Revert** to the older version, or **Close** the dialog.
+
 <!-- CQDOC-23473 - new screenshot? -->
 
 ![Content Fragment Editor - Version History Compare Versions](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-compare-versions.png)
 
 ### Revert to a Version {#revert-version}
 
+<!-- CQDOC-23473 - new screenshot? -->
+
 You can revert to any version. 
 
 To revert to a specific version:
 
-1. Select the three dots icon next to the version.
+1. Select the three dots icon next to the required version.
 
-1. Select **Revert**.
+1. Select **Revert**:
 
-<!-- CQDOC-23473 - new screenshot? -->
+   ![Content Fragment Editor - Version History Revert](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-revert.png)
 
-![Content Fragment Editor - Version History Revert](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-revert.png)
+1. Confirm the action:
+
+   ![Content Fragment Editor - Version History Revert](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-revert-confirm.png)
 
 ## View the Language Copies {#view-language-copies}
 
