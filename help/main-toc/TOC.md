@@ -671,6 +671,7 @@ user-guide-title: AEM as a Cloud Service
     + [Detect duplicate assets](/help/assets/detect-duplicate-assets.md)
     + [Developer docs and APIs references](/help/assets/developer-reference-material-apis.md)
     + [Folder metadata schema](/help/assets/folder-metadata-schema.md)
+    + [Generate AI metadata using Brand Aware Metadata](/help/assets/brand-aware-metadata.md)
     + [Work with image and video profiles](/help/assets/dynamic-media/about-image-video-profiles.md)
     + [Translate assets](/help/assets/translate-assets.md)
     + [Search facets](/help/assets/search-facets.md)
