@@ -249,7 +249,7 @@ These keys are carried by the Content Fragment response and are always available
 | `repo:size` | Number | Size in bytes | `251434` |
 | `tiff:ImageWidth` | Number | Width in pixels | `1152` |
 | `tiff:ImageHeight` | Number | Height in pixels | `1152` |
-| any other metadata property | typed | Every other property the asset carries, including custom namespaced ones such as `lilly:persistentID`. Fetched from the asset on demand |  |
+| any other metadata property | typed | Every other property the asset carries, including custom namespaced ones such as `yournamespace:persistentID`. Fetched from the asset on demand |  |
 
 Property names that contain a colon require bracket syntax:
 
@@ -257,7 +257,7 @@ Property names that contain a colon require bracket syntax:
 {{{fields.heroImage}}}
 {{fields.heroImage.properties.assetId}}
 {{fields.heroImage.properties.[dc:format]}}
-{{fields.heroImage.properties.[lilly:persistentID]}}
+{{fields.heroImage.properties.[yournamespace:persistentID]}}
 ```
 
 #### Properties of a Dynamic Media asset {#properties-of-a-dynamic-media-asset}
