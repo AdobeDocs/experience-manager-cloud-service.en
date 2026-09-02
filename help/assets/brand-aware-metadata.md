@@ -1,17 +1,24 @@
 ---
-title: Generate AI metadata using Brand Aware Metadata
+title: Generate Brand Aware Metadata
 description: Learn how to configure AI-powered prompts to generate metadata values for assets using Brand Aware Metadata in Adobe Experience Manager Assets.
+hidefromtoc: yes
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive"
 ---
 
-# Generate AI metadata using Brand Aware Metadata {#generate-ai-metadata-brand-aware}
+# Generate Brand Aware Metadata {#generate-ai-metadata-brand-aware}
 
 [!DNL Adobe Experience Manager Assets] Brand Aware Metadata (BAM) is an AI-powered capability that automatically generates custom metadata values for assets when they are uploaded or reprocessed. It reduces the need for manual metadata entry, helping you manage metadata consistently and make assets easier to find and use.
 
 BAM uses a layered prompting approach to define how AI generates values for specific metadata properties. You can use brand prompts to provide reusable brand and campaign context and property prompts to define instructions for individual metadata properties. You can also provide additional context through referenced properties and restrict generated values to predefined options using controlled vocabulary. BAM also provides a Prompt Playground to preview generated metadata and a Prompt Enhancer to improve prompt instructions.
 
 You can use Brand Aware Metadata to generate values for metadata properties such as alt text, product attributes, asset classification, region, and language. Generated metadata is applied to assets through processing profiles.
+
+>[!IMPORTANT]
+>
+>Adobe is actively expanding BAM's capabilities through direct co-innovation with customers. Where a specific use case is not yet supported, Adobe works with participating customers to understand their needs and may deliver expanded capabilities as the beta progresses. Customers in this program gain early access to new features as they ship and are encouraged to share feedback that directly shapes the roadmap.
+>
+>To participate or learn more, send an email to AEM-ASSETS-BRANDAWAREMETADATA@adobe.com.
 
 ## Before you begin {#before-you-begin}
 
