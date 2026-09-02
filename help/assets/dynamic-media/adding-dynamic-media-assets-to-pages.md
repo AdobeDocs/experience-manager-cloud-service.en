@@ -9,9 +9,9 @@ exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
 ---
 # Add Dynamic Media Assets to pages{#adding-dynamic-media-assets-to-pages}
 
-To add the Dynamic Media functionality to assets that you use on your websites, you can add the **Dynamic Media**, **Interactive Media**, **Panoramic Media**, or **Video 360 Media** component directly on the page. You enter Layout mode and enable the Dynamic Media components. Then you add these components to the page and add assets to the component. The Dynamic Media components are smart - they know whether you are adding an image or a video and the configuration options available change accordingly.
+Add the **Dynamic Media**, **Interactive Media**, **Panoramic Media**, or **Video 360 Media** component directly to your page to enable Dynamic Media functionality. You access Layout mode and enable the Dynamic Media components. Then you add these components to the page and add assets to the component. The Dynamic Media components are configured to detect whether you are adding an image or a video and the configuration options available change accordingly.
 
-You add Dynamic Media assets directly to the page if you are using [!DNL Adobe Experience Manager] as your WCM. If you are using a third-party for your WCM, either [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) or [embed](/help/assets/dynamic-media/embed-code.md) your assets. For a responsive third-party website, see [delivering optimized images to a responsive site](/help/assets/dynamic-media/responsive-site.md).
+You add Dynamic Media Assets directly to the page if you are using [!DNL Adobe Experience Manager] as your WCM. If you are using a third-party service for your WCM, either [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) or [embed](/help/assets/dynamic-media/embed-code.md) your assets. For a responsive third-party website, see [delivering optimized images to a responsive site](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
@@ -26,13 +26,13 @@ Adding a 3D Media, Dynamic Media, Interactive Media, Panoramic Media, Smart Crop
 1. In [!DNL Experience Manager], open the page where you want to add the Dynamic Media component.
 1. In the left pane, select the **[!UICONTROL Components]** icon, then filter for Dynamic Media.
 
-    If no list of Dynamic Media components is available, you likely must enable the Dynamic Media components that you want to use. See [Enable Dynamic Media components](#enabling-dynamic-media-components).
+    If no list of Dynamic Media components is available, enable the Dynamic Media components that you want to use. See [Enable Dynamic Media components](#enabling-dynamic-media-components).
 
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
 1. Drag a **[!UICONTROL Dynamic Media]** component and drop it in the desired location on the page.
 
-1. Hover the pointer directly on the component. When the component is surrounded by a blue box, select once to display the component's toolbar. Select the **[!UICONTROL Configuration (wrench)]** icon.
+1. Position the pointer directly on the component. When a blue box surrounds the component, select it once to display the component's toolbar. Select the **[!UICONTROL Configuration (wrench)]** icon.
 
    ![6_5_360video_wcmcomponentconfigure](assets/6_5_360video_wcmcomponentconfigure.png)
 
@@ -44,11 +44,11 @@ Adding a 3D Media, Dynamic Media, Interactive Media, Panoramic Media, Smart Crop
 
    The Dynamic Media Video 360 Media component.
 
-1. When you have finish, in the upper-right corner of the dialog box, select the check mark to save your changes.
+1. When you have finished, in the upper-right corner of the dialog box, select the icon to save your changes.
 
 ### Enable Dynamic Media components {#enabling-dynamic-media-components}
 
-If no Dynamic Media components are available to add to a page, it likely means that you must enable the components that you want to use.
+If no Dynamic Media components are available to add to a page, enable the components that you want to use.
 
 1. In [!DNL Experience Manager], open the page where you want to add the Dynamic Media component.
 1. To the left of the toolbar near the top of the page, select the Page Information icon, then select **[!UICONTROL Edit Template]** from the drop-down list.
@@ -69,10 +69,10 @@ If no Dynamic Media components are available to add to a page, it likely means t
 
     ![Dynamic Media components list](/help/assets/assets-dm/dm-components-select.png)
 
-1. Near the upper-right corner of the **[!UICONTROL Layout Container]** page, select the Done (check mark) icon.
+1. Near the upper-right corner of the **[!UICONTROL Layout Container]** page, select the Done icon.
 
 1. On the right side of the toolbar near the top of the page, from the drop-down list, select **[!UICONTROL Initial Content]**.
-1. [Add a Dynamic Media component to a page](#adding-a-dynamic-media-component-to-a-page) as usual.
+1. [Add a Dynamic Media component to a page](#adding-a-dynamic-media-component-to-a-page) as described.
 
 ## Localize Dynamic Media Components {#localizing-dynamic-media-components}
 
@@ -101,7 +101,7 @@ The Dynamic Media components that are available include the following:
 
 >[!NOTE]
 >
->These components are not available by default and must be made available by way of the template editor before using. After they are made available in the template editor, you can add the components to your page as you would any other [!DNL Experience Manager] component.
+>These components are not available by default; use the template editor to enable them before use. Make them available in the template editor, then add the components to your page as you do any other [!DNL Experience Manager] component.
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
@@ -122,7 +122,7 @@ The Dynamic Media component is smart. Whether you add an image or a video, you h
 
 When you add the Dynamic Media component, and **[!UICONTROL Dynamic Media Settings]** is blank or you cannot add an asset properly, check the following:
 
-* The image has a pyramid tiff file. Images that are imported before you enable Dynamic Media do not have a pyramid tiff file.
+* The image has a pyramid TIFF file. Images that are imported before you enable Dynamic Media do not have a pyramid TIFF file.
 
 #### When working with images {#when-working-with-images}
 
@@ -136,15 +136,15 @@ You can edit the following Dynamic Media Settings by selecting the **[!UICONTROL
 
 >[!NOTE]
 >
->By default, the Dynamic Media image component is adaptive. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height]**.
+>By default, the Dynamic Media image component is adaptive. To set a fixed size, use the **[!UICONTROL Width]** and **[!UICONTROL Height]** fields in the **[!UICONTROL Advanced]** tab of the component.
 
-* **[!UICONTROL Viewer preset]** - Select an existing viewer preset from the drop-down list. If the viewer preset you are looking for is not visible, you must make it visible. See Managing Viewer Presets. You cannot select a viewer preset if you are using an image preset and conversely.
+* **[!UICONTROL Viewer preset]** - Select an existing viewer preset from the drop-down list. If the viewer preset you are looking for is not visible, you must make it visible. See Managing Viewer Presets. You cannot select a viewer preset if you are using an image preset and vice versa.
 
   This option is the only one available if you are viewing image sets, spin sets, or mixed media sets. The viewer presets displayed are also smart&ndash;only relevant viewer presets appear.
 
-* **[!UICONTROL Viewer modifiers]** - Viewer modifiers take the form of name=value pair with a & delimiter and let you change viewers as outlined in the Viewers Reference Guide. An example of a viewer modifier is `posterimage=img.jpg&caption=text.vtt,1` which sets a different image for the video thumbnail and associates a closed caption file with the video.
+* **[!UICONTROL Viewer modifiers]** - Viewer modifiers take the form of a name=value pair with a & delimiter and let you change viewers as outlined in the Viewers Reference Guide. An example of a viewer modifier is `posterimage=img.jpg&caption=text.vtt,1` which sets a different image for the video thumbnail and associates a closed caption file with the video.
 
-* **[!UICONTROL Image preset]** - Select an existing image preset from the drop-down list. If the image preset you are looking for is not visible, you must make it visible. See [Manage Image Presets](/help/assets/dynamic-media/managing-image-presets.md). You cannot select a viewer preset if you are using an image preset and conversely.
+* **[!UICONTROL Image preset]** - Select an existing image preset from the drop-down list. If the image preset you are looking for is not visible, you must make it visible. See [Manage Image Presets](/help/assets/dynamic-media/managing-image-presets.md). You cannot select a viewer preset if you are using an image preset and vice versa.
 
   This option is not available if you are viewing image sets, spin sets, or mixed media sets.
 
@@ -152,7 +152,7 @@ You can edit the following Dynamic Media Settings by selecting the **[!UICONTROL
 
   This option is not available if you are viewing image sets, spin sets, or mixed media sets.
 
-* **[!UICONTROL Breakpoints]** - If you are using this asset on a responsive site, you must add the image breakpoints. Image breakpoints must be separated by commas (,). This option works when there is no height or width defined in an image preset.
+* **[!UICONTROL Breakpoints]** - If you are using this asset on a responsive site, you must add the image breakpoints. Separate image breakpoints with commas (,). This option works when there is no height or width defined in an image preset.
 
   This option is not available if you are viewing image sets, spin sets, or mixed media sets.
 
@@ -175,7 +175,7 @@ You can edit the following Dynamic Media Settings by selecting the **[!UICONTROL
 
   This option is not available if you are viewing image sets, spin sets, or mixed media sets.
 
-* **[!UICONTROL URL, Open in]** - You can set an asset to open a link. Set the URL and in Open in indicate whether you want it to open in the same window or a new window.
+* **[!UICONTROL URL, Open in]** - To open a link, set the asset URL. Set the URL and in Open in indicate whether you want it to open in the same window or a new window.
 
   This option is not available if you are viewing image sets, spin sets, or mixed media sets.
 
@@ -197,12 +197,12 @@ You can edit the following Dynamic Media Settings by selecting **[!UICONTROL Edi
 
 * **[!UICONTROL Viewer preset]** - Select an existing video viewer preset from the drop-down list. If the viewer preset you are looking for is not visible, you must make it visible. See Managing Viewer Presets.
 
-* **[!UICONTROL Viewer modifiers]** - Viewer modifiers take the form of `name=value` pair with a `&` delimiter. They let you change viewers as outlined in the Adobe Viewers Reference Guide. An example of a viewer modifier is `posterimage=img.jpg&caption=text.vtt,1`
+* **[!UICONTROL Viewer modifiers]** - Viewer modifiers take the form of a `name=value` pair with a `&` delimiter. They let you change viewers as outlined in the Adobe Viewers Reference Guide. An example of a viewer modifier is `posterimage=img.jpg&caption=text.vtt,1`
 
     With viewer modifiers you can, for example, do the following:
 
-  * Associate a caption file with a video: [caption](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-  * Associate a navigation file with a video: [navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+  * Associate a caption file with a video: [caption](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption)
+  * Associate a navigation file with a video: [navigation](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation)
 
     You can edit the following Advanced Settings by selecting **[!UICONTROL Edit]** in the component.
 
@@ -216,7 +216,7 @@ You can edit the following Dynamic Media Settings by selecting **[!UICONTROL Edi
 
 Use the Dynamic Media component to add Smart Crop image assets to your web pages. When you edit the component, you can choose to use a predefined video viewer preset for playing the video on the page.
 
-See [Use Smart Crop with Experience Manager Assets Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use.html)
+See [Use Smart Crop with Experience Manager Assets Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)
 
 See also [Image Profiles](/help/assets/dynamic-media/image-profiles.md).
 
@@ -226,7 +226,7 @@ You can edit the following Dynamic Media Setting by selecting **[!UICONTROL Edit
 
 >[!NOTE]
 >
->By default, the Dynamic Media image component is adaptive. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height]**.
+>By default, the Dynamic Media image component is adaptive. To set a fixed size, use the **[!UICONTROL Width]** and **[!UICONTROL Height]** fields in the **[!UICONTROL Advanced]** tab of the component.
 
 * **[!UICONTROL Image Modifiers]** - You can apply image effects by supplying more image commands. These commands are described in Image Presets and the Image Serving Command reference.
 
@@ -254,7 +254,7 @@ You can edit the following Dynamic Media Setting by selecting **[!UICONTROL Edit
 
     This option is not available if you are viewing image sets, spin sets, or mixed media sets.
 
-* **[!UICONTROL URL, Open in]** - You can set an asset to open a link. Set the URL and in Open in indicate whether you want it to open in the same window or a new window.
+* **[!UICONTROL URL, Open in]** - To open a link, set the asset URL. Set the URL and in Open in indicate whether you want it to open in the same window or a new window.
 
     This option is not available if you are viewing image sets, spin sets, or mixed media sets.
 
@@ -264,9 +264,9 @@ You can edit the following Dynamic Media Setting by selecting **[!UICONTROL Edit
 
 ### Component: Interactive Media {#interactive-media-component}
 
-Interactive Media component is for those assets that have interactivity on them such hotspots or image maps. If you have an interactive image, interactive video, or carousel banner, use the **[!UICONTROL Interactive Media]** component.
+The Interactive Media component is for those assets that have interactivity on them such as hotspots or image maps. If you have an interactive image, interactive video, or carousel banner, use the **[!UICONTROL Interactive Media]** component.
 
-The Interactive Media component is smart. Whether you add an image or a video, you have various options. In addition, the viewer is responsive - the size of the screen changes automatically based onscreen size. All viewers are HTML5 viewers.
+The Interactive Media component is automated. Whether you add an image or a video, you have various options. In addition, the viewer is responsive—the size of the screen changes automatically based on onscreen size. All viewers are HTML5 viewers.
 
 >[!NOTE]
 >
@@ -293,11 +293,11 @@ You can edit the following **[!UICONTROL General]** settings by selecting **[!UI
 
     You can edit the following **[!UICONTROL Add To Cart]** settings by selecting **[!UICONTROL Edit]** in the component.
 
-* **[!UICONTROL Show Product Asset]** - By default, this value is selected. The product asset shows an image of the product as defined in the Commerce module. Clear the check mark to not show the product asset.
+* **[!UICONTROL Show Product Asset]** - By default, this value is selected. The product asset shows an image of the product as defined in the Commerce module. To hide the product asset, clear the check mark.
 
-* **[!UICONTROL Show Product Price]** - By default, this value is selected. Product price shows the price of the item as defined in the Commerce module. Clear the check mark to not show the product price.
+* **[!UICONTROL Show Product Price]** - By default, this value is selected. Product price shows the price of the item as defined in the Commerce module. To hide the product price, clear the check mark.
 
-* **[!UICONTROL Show Product Form]** - By default, this value is not selected. The Product Form includes any product variants such as size and color. Clear the check mark to not show the product variants.
+* **[!UICONTROL Show Product Form]** - By default, this value is not selected. The Product Form includes any product variants such as size and color. To hide the product variants, clear the check mark.
 
 ### Component: Panoramic Media {#panoramic-media-component}
 
@@ -333,7 +333,7 @@ Use the **[!UICONTROL Video 360 Media]** component to render equirectangular vid
 
 During playback on a flat display, the user has control of the viewing angle; playback on mobile devices usually uses their built-in gyroscopic controls.
 
-The viewer includes native support for the delivery of 360 video assets. By default, no additional configuration is necessary for viewing or playback. You deliver 360 Video using standard video extensions such as .mp4, .mkv, and .mov. The most common codec is H.264.
+The viewer includes native support for the delivery of 360 video assets. By default, no additional configuration is necessary for viewing or playback. You deliver 360 Video using standard video extensions such as `.mp4`, `.mkv`, and `.mov`. The most common codec is H.264.
 
 ![6_5_360video_wcmcomponent-1](assets/6_5_360video_wcmcomponent-1.png)
 
@@ -343,17 +343,17 @@ You can edit the following setting by selecting **[!UICONTROL Configure]** in th
 
 If the viewer preset you are looking for is not visible, check to ensure that it is published. Publish viewer presets before you use them. See [Manage Viewer Presets](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-### Use HTTP/2 to delivery Dynamic Media assets {#using-http-to-delivery-dynamic-media-assets}
+### Use HTTP/2 to deliver Dynamic Media Assets {#using-http-to-delivery-dynamic-media-assets}
 
-HTTP/2 is the new, updated web protocol that improves the way browsers and servers communicate. It provides faster transfer of information and reduces the amount of processing power that is needed. Delivery of Dynamic Media assets can now be over HTTP/2 which provides better response and load times.
+HTTP/2 is the new, updated web protocol that improves the way browsers and servers communicate. It provides faster transfer of information and reduces the amount of processing power that is needed. Delivery of Dynamic Media Assets can now be over HTTP/2 which provides better response and load times.
 
 See [HTTP2 Delivery of Content](/help/assets/dynamic-media/http2faq.md) for complete details on getting started using HTTP/2 with your Dynamic Media account.
 
 >[!MORELIKETHIS]
 >
->* [Use the Video Player in Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-player-feature-video-use.html)
->* [Use Interactive Video with Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-interactive-video-feature-video-use.html)
->* [Understand the Asset Viewer with Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/viewers/dynamic-media-viewer-feature-video-understand.html)
->* [Use Custom Video Thumbnail with Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-thumbnails-feature-video-use.html)
->* [Understand Color Management with Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-color-management-technical-video-setup.html#dynamic-media)
->* [Use Image Sharpening with Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use.html)
+>* [Use the Video Player in Experience Manager Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-player-feature-video-use)
+>* [Use Interactive Video with Experience Manager Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/interactive-videos)
+>* [Understand the Asset Viewer with Experience Manager Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/viewers/dynamic-media-viewer-feature-video-understand)
+>* [Use Custom Video Thumbnail with Experience Manager Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-thumbnails-feature-video-use)
+>* [Understand Color Management with Experience Manager Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-color-management-technical-video-setup#dynamic-media)
+>* [Use Image Sharpening with Experience Manager Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use)
