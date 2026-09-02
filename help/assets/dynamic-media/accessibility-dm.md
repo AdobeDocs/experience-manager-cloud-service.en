@@ -22,12 +22,12 @@ Because Dynamic Media is a plug-in to [!DNL Experience Manager Assets], most of 
 Dynamic Media keystrokes for user interface elements are accessible and discoverable. Keyboard control in Dynamic Media includes the following:
 
 * Use `Tab` and `Shift+Tab` keystrokes to navigate between interactive elements on the page.
-Using `Tab` advances input focus to the next user interface element in the tabbing order; using `Shift+Tab` brings input focus back to the previous user interface element. 
-The focus traversal follows the natural user interface element location on the screen and moves in a left-to-right, then top-to-bottom order. In addition, if any field has an error, you can press `Tab` to move the focus to it.
+Use `Tab` to move input focus to the next user interface element in the tabbing order; use `Shift+Tab` to move input focus to the previous user interface element. 
+The focus traversal follows the user interface element location on the screen and moves in a left-to-right, then top-to-bottom order. Additionally, if any field has an error, you can press `Tab` to move the focus to it.
 * Use the `Spacebar` and `Enter` keys to activate standard user interface elements, such as buttons and drop-down lists.
 * See the keyboard focus highlight on the active element. The user interface element that has input focus receives a visual focus indication as a border rendered around the user interface element.
 * In the Hotspot editor, you can use some custom keystrokes, such as arrow keys, to interact with complex user interface elements to reposition hotspots. 
-* In the Interactive Video editor, you can use the `Spacebar` to select an image and add it to a segment. In addition, you can use the `Backspace` key to delete the selected item from the **[!UICONTROL Content]** tab. Also, pressing `Tab` navigates between interactive elements on the page.
+* In the Interactive Video editor, you can use the `Spacebar` to select an image and add it to a segment. Additionally, you can use the `Backspace` key to delete the selected item from the **[!UICONTROL Content]** tab. Also, pressing `Tab` navigates between interactive elements on the page.
 * In the Image Crop/Smart Crop editor, you can do the following:
   * Use arrow keys to crop the frame size, or reposition the image, or both.
   * The first `Tab` stop highlights the entire image frame. You can then use the arrow keys on the keyboard to reposition the frame.
