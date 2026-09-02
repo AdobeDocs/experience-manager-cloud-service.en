@@ -19,13 +19,13 @@ Dynamic Media supports keyboard control and assistive technologies, such as JAWS
 
 Because Dynamic Media is a plug-in to [!DNL Experience Manager Assets], most of the keyboard control behavior is the same as in [!DNL Experience Manager Assets]. For example, the `Cancel` button in Dynamic Media has the same focus highlight as in [!DNL Experience Manager Assets]. It also reacts to the `Spacebar` key as in [!DNL Experience Manager Assets]. See [keyboard shortcuts in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
-Dynamic Media keystrokes for user interface elements are—in most cases—accessible and discoverable. Keyboard control in Dynamic Media is about the following:
+Dynamic Media keystrokes for user interface elements are accessible and discoverable. Keyboard control in Dynamic Media includes the following:
 
-* Ability to use `Tab` and `Shift+Tab` keystrokes to navigate between interactive elements on the page.
+* Use `Tab` and `Shift+Tab` keystrokes to navigate between interactive elements on the page.
 Using `Tab` advances input focus to the next user interface element in the tabbing order; using `Shift+Tab` brings input focus back to the previous user interface element. 
 The focus traversal follows the natural user interface element location on the screen and moves in a left-to-right, then top-to-bottom order. In addition, if any field has an error, you can press `Tab` to move the focus to it.
-* Ability to use the `Spacebar` and `Enter` keys to activate standard user interface elements, such as buttons and drop-down lists.
-* Ability to see the keyboard focus highlight on the active element. The user interface element that has input focus receives a visual focus indication as a border rendered around the user interface element.
+* Use the `Spacebar` and `Enter` keys to activate standard user interface elements, such as buttons and drop-down lists.
+* See the keyboard focus highlight on the active element. The user interface element that has input focus receives a visual focus indication as a border rendered around the user interface element.
 * In the Hotspot editor, you can use some custom keystrokes, such as arrow keys, to interact with complex user interface elements to reposition hotspots. 
 * In the Interactive Video editor, you can use the `Spacebar` to select an image and add it to a segment. In addition, you can use the `Backspace` key to delete the selected item from the **[!UICONTROL Content]** tab. Also, pressing `Tab` navigates between interactive elements on the page.
 * In the Image Crop/Smart Crop editor, you can do the following:
@@ -55,7 +55,7 @@ See [Keyboard accessibility and navigation](https://experienceleague.adobe.com/e
 ## Assistive technology support in Dynamic Media viewers {#assistive-technology-support-for-dm-viewers}
 
 All Dynamic Media viewer components support ARIA (Accessible Rich Internet Applications) roles and attributes to improve integration with assistive technologies such as screen readers.
-See the **Assistive technology support** Help topic in any customizing viewer topic in the Dynamic Media Viewers Reference Guide. For example, see [Assistive technology support](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive#) for the Video viewer, or [Assistive technology support](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive#viewers-for-aem-assets-only) for the Interactive Image viewer.
+See the **Assistive technology support** Help topic in any customizing viewer topic within the Dynamic Media Viewers Reference Guide. For example, see [Assistive technology support](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive#) for the Video viewer, or [Assistive technology support](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive#viewers-for-aem-assets-only) for the Interactive Image viewer.
 
 ## Closed caption support in [!DNL Dynamic Media] {#closed-caption-support}
 
