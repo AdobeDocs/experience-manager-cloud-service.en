@@ -4,7 +4,6 @@ description: Get answers to common questions about AEM Forms with Edge Delivery 
 feature: Edge Delivery Services
 role: User, Developer
 hide: true
-hidefromtoc: yes
 exl-id: b39601a1-7f37-4a7d-a4c8-7e79dca074e5
 ---
 # Frequently Asked Questions (FAQ)

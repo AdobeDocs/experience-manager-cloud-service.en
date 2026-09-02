@@ -8,7 +8,6 @@ discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: yes
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 27c52969-1213-4fd3-8e16-988caafb4ad6
 ---

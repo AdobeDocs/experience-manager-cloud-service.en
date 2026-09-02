@@ -20,9 +20,9 @@ Follow these steps to navigate to Cloud Manager.
 
 1. Select the program from Cloud Manager's **Programs and Products** page to launch the **Overview** page.
 
-You can also navigate to Cloud Manager's Programs and Products page from Adobe Experience Cloud home page by following these steps.
+You can also navigate to Cloud Manager's Programs and Products page from Adobe CX Enterprise home page by following these steps.
 
-1. Navigate to Adobe Experience Cloud at [`https://experience.adobe.com`](https://experience.adobe.com) and login using your Adobe ID.
+1. Navigate to Adobe CX Enterprise at [`https://experience.adobe.com`](https://experience.adobe.com) and login using your Adobe ID.
 
 1. Ensure that you are in the correct organization by referring to the organization name displayed at the top-right of the toolbar.
 

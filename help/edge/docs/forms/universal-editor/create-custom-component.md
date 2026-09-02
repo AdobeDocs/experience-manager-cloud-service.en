@@ -252,7 +252,7 @@ export default function decorate(element, fieldJson, container, formId) {
 
   element.querySelectorAll('.radio-wrapper').forEach((radioWrapper) => {
     const image = createOptimizedPicture(
-      'https://main--afb--jalagari.hlx.live/lab/images/card.png',
+      'https://main--afb--jalagari.aem.live/lab/images/card.png',
       'card-image'
     );
     radioWrapper.appendChild(image);
@@ -315,7 +315,7 @@ function createCard(element, enums) {
     }
 
     const image = createOptimizedPicture(
-      enums[index]?.image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png',
+      enums[index]?.image || 'https://main--afb--jalagari.aem.page/lab/images/card.png',
       'card-image'
     );
 
@@ -376,7 +376,7 @@ function createCard(element, enums) {
     radioWrapper.querySelector('input').dataset.index = index;
 
     const image = createOptimizedPicture(
-      enums[index]?.image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png',
+      enums[index]?.image || 'https://main--afb--jalagari.aem.page/lab/images/card.png',
       'card-image'
     );
 

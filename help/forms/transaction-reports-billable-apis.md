@@ -82,9 +82,9 @@ Billing APIs does not account for the number of pages, the length of a document 
 
 <!--
 
-## Billable Document Services APIs {#billable-document-services-apis}
+## Billable Document Services APIs
 
-### Generate PDF Service {#generate-pdf-service}
+### Generate PDF Service
 
 <table>
  <tbody>
@@ -181,9 +181,9 @@ Billing APIs does not account for the number of pages, the length of a document 
 </table>
 -->
 
-## Billable Document Services APIs {#billable-document-services-apis}
+## Billable Document Services APIs
 
-### Generate PDF Service {#generate-pdf-service}
+### Generate PDF Service
 
 <table>
  <tbody>

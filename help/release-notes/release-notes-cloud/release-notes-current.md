@@ -12,9 +12,9 @@ The following section outlines the feature release notes for the current (latest
 
 >[!NOTE]
 >
->From here, you can navigate to release notes of previous versions such as 2023 or 2024.
+>From here, you can navigate to release notes of previous versions such as 2024 or 2025.
 >
->Have a look at the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) to learn about the upcoming feature activations for [!DNL Experience Manager] as a Cloud Service. 
+>Have a look at the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) to learn about the upcoming feature activations for [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -22,23 +22,38 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2026.4.0) is April 30, 2026. The next feature release (2026.5.0) is planned for May 28, 2026.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2026.8.0) is August 27, 2026. The next feature release (2026.9.0) is planned for September 24, 2026.
 
 ## Maintenance Release Notes {#maintenance}
 
 You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
 
 <!-- 
+
 ## Release Video {#release-video}
 
-Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
+Have a look at the May 2026 Release Overview video for a summary of the features added in the 2026.5.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491490/?quality=12)
+
 -->
+
+## Release Overview {#overview}
+
+The 2026.8.0 release of [!DNL Experience Manager] as a [!DNL Cloud Service] delivers new capabilities across Assets, Forms, and Foundation, with a continued emphasis on AI-assisted workflows, content authenticity, and preparing customers for upcoming platform changes.
+
+**Highlights of this release**
+
+* **Content authenticity with C2PA** — Asset renditions now carry C2PA metadata based on the original, and C2PA support extends to Dynamic Media (OpenAPI and Scene7), helping customers label Gen AI content and meet transparency requirements.
+* **AI-powered Assets workflows** — Content Hub can generate Dynamic Media renditions on the fly, and Assets Insights now supports the Adobe Analytics 2.0 API with OAuth Server-to-Server authentication ahead of the Analytics 1.4 API retirement.
+* **Foundation and platform** — Agentic permission management for real-time ACL auditing, AEM Edge Functions for running JavaScript at the CDN, and IMS authentication rich errors for easier troubleshooting.
+* **Plan-ahead notices** — Important timelines for Java API deprecations and the upcoming Java 25 runtime upgrade help customers prepare their environments.
+
+A range of beta, early adopter, and alpha programs are also available this release. See the sections below for details.
 
 ## AEM Beta Programs {#aem-beta-programs}
 
-Adobe Experience Manager (AEM) beta programs are a way for customers to get access to prerelease features and code, provide feedback, and guide the future of AEM. 
+Adobe Experience Manager (AEM) beta programs are a way for customers to get access to prerelease features and code, provide feedback, and guide the future of AEM.
 
 >[!IMPORTANT]
 >
@@ -79,79 +94,168 @@ See [AEM Foundation beta programs](#foundation-early-adopter).
 
 See [Cloud Manager beta programs](/help/implementing/cloud-manager/release-notes/current.md).
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+### AEM Assets (Beta programs) {#aem-assets-beta-programs}
 
-### AI Translation Integration {#ai-translation-integration}
-
-AEM users can now leverage Large Language Models (LLMs) for content translation, delivering human-translation quality at machine-translation speed. Similar to traditional third-party translation services, Azure OpenAI can be configured as a translation provider in AEM, with support for additional LLMs planned for future releases. Customers use their own LLM licenses for this capability. Additionally, corporate translation style guides can be uploaded to AEM, enabling the extraction of translation rules to ensure brand and style consistency. See [Configuring AI Translation Integration](/help/sites-cloud/administering/translation/ai-translation-integration.md) for more information.
-
-### Content Fragment Editor {#cf-editor}
-
-The new Content Fragment Editor now allows you to preview the JSON representation of a content fragment. This helps validate the content structure independently of rendering and restores parity with the previous Content Fragment Editor in AEM Touch UI for this capability.
+See [AEM Assets beta programs](#assets-beta-program-features).
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Content Advisor now available for Adobe Workfront and non-Adobe applications**
+**C2PA metadata support**
 
-Content Advisor is now available for Adobe Workfront and non-Adobe (third-party) applications, extending intelligent asset discovery and content reuse beyond Adobe Express and AEM Sites. This release brings the full Content Advisor experience, including AI-powered search, context-aware recommendations, campaign brief–based discovery, access to Dynamic Media renditions, Content Fragment discovery, filters, and asset metadata to Adobe Workfront workflows and external applications.
+Renditions of assets now supports C2PA metadata based on the original, enabling easy labelling of Gen AI manipulated content. This helps Experience Manager customers comply with Gen AI labelling laws; customers should validate compliance with regulations on their own. Metadata can be inspected using any C2PA inspection tool. See [Adobe C2PA inspection tool](https://contentauthenticity.adobe.com/inspect). 
 
-You can now discover, evaluate, and reuse approved assets from AEM Assets directly within your preferred applications, enabling consistent asset usage, improved efficiency, and streamlined content creation across both Adobe and non-Adobe applications.
+New JCR properties for a C2PA manifest (dam:hasC2PAManifest) and Gen AI (dam:isAiGenerated) labels are available on Assets processed with an embedded C2PA manifest. The Gen AI label property can be used in cases where C2PA is not utilized. This is not recommended since management of the property is manual and many of the Adobe and 3rd party tools use C2PA.
+
+**Assets Insights now supports Adobe Analytics 2.0 API**
+
+Assets Insights in AEM Admin View now supports the Adobe Analytics 2.0 API with OAuth Server-to-Server authentication, enabling continued access to current asset usage insights following the retirement of the Adobe Analytics 1.4 API. Customers can reconfigure their Assets Insights integration to resume synchronization of impressions and clicks from Adobe Analytics, including data collected during the transition period, without losing existing insights data.
+
+### New Features in Dynamic Media {#new-features-dynamic-media}
+
+**C2PA metadata support in Dynamic Media**
+
+You can now apply C2PA metadata to assets in Dynamic Media with OpenAPI capabilities and Dynamic Media Scene7. C2PA metadata embeds secure metadata that helps viewers verify an asset's origin, edit history, and whether generative AI was used during its creation, enabling greater transparency and trust in digital content.
+
+### New features in Content Hub {#new-features-content-hub}
+
+**Generate on-the-fly Dynamic Media renditions in Content Hub**
+
+Generate on-the-fly Dynamic Media renditions in Content Hub to quickly create asset variations tailored to different channels and content needs. This eliminates the need to maintain multiple pre-generated renditions, making it easier to adapt and reuse assets across experiences. With optimized renditions available on demand, teams can accelerate content activation and deliver the right asset variation for every experience.
+
+### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta Features {#assets-beta-program-features}
+
+#### UI Extensibility for Assets View {#ui-extensibility-assets-view-beta}
+
+Assets View supports UI Extensibility, a developer-first capability that empowers customers to tailor the out-of-the-box experience to meet their specific business requirements.
+Customers can leverage existing stable extension points by following Adobe's developer documentation to build and deploy extensions with minimal effort. For use cases where a required extension point is not yet available, Adobe works directly with customers to explore the requirements and assess the technical feasibility of delivering new extensibility APIs tailored to their needs, and may deliver such new APIs as **Beta Releases**.
+Additionally, Adobe has developed a **GenAI-powered extension generation tool** currently available in an internal early adoption phase. This tool can significantly accelerate extension development time. Customers participating in this beta program will receive access to the tool and are encouraged to share feedback to help shape its evolution.
+To participate or learn more, send an email to `GRP-ASSETSVIEWUIEXTENSIBILITY@adobe.com`.
+
+#### Brand Aware Metadata (BAM) {#brand-aware-metadata-beta}
+
+AEM Assets now supports Brand Aware Metadata, an AI-powered capability that automatically generates custom metadata for assets when uploaded or re-processed. This reduces the need for manual entry by orders of magnitude, helping teams find assets and deliver new experiences much faster. Customers maintain a library of prompts that define how AI should populate any given metadata field, tailored to their own brand vocabulary and taxonomy. This prompt library includes a playground to preview results and a prompt optimizer that automatically drafts suggested improvements.
+
+Adobe is actively expanding BAM's capabilities through direct co-innovation with customers. Where a specific use case is not yet supported, Adobe works with participating customers to understand their needs and may deliver expanded capabilities as the beta progresses. Customers in this program gain early access to new features as they ship and are encouraged to share feedback that directly shapes the roadmap.
+
+To participate or learn more, send an email to `GRP-AEM-ASSETS-BRANDAWAREMETADATA@adobe.com`.
+
+<!--
+
+#### Assets Onboarding Agent {#assets-onboarding-agent-beta}
+
+If your organization is new to Experience Manager Assets, you can opt in to the **Assets Onboarding Agent Beta program**, which gives you access to the following AEM Brand Experience AI skills for onboarding:
+
+* Guides users through DAM setup and migration planning by using a conversational workflow to capture business needs and recommend how an AEM Assets deployment should be structured.
+
+* Creates core AEM Assets configuration artifacts such as folder hierarchies, tag taxonomies, metadata forms, and can help execute bulk import jobs to accelerate onboarding.
+
+**Why participate?**
+
+* Go live faster with a ready-to-use DAM environment by eliminating repetitive, manual steps with AI assistance.
+
+* Lower operational overhead with automated configuration and preparation of folders, tags, metadata and asset imports.
+
+* Improve consistency, governance, and ensure adherence to best practices through a curated setup experience with intelligent recommendations tailor-made for your business.
+
+To participate or learn more, send an email to `GRP-AEM-ONBOARDING-AGENT@adobe.com`.
+
+-->
+
+#### Assets Sourcing portal for AEM Assets {#asset-sourcing-aem-assets}
+
+[The Assets Sourcing Portal](/help/assets/asset-sourcing-portal-for-aem-assets.md) provides a secure, self-service experience for collecting assets from external contributors without granting them access to Adobe Experience Manager Assets. Contributors can upload assets, provide the required metadata, and submit content directly to a designated intake location while administrators maintain control over asset organization and governance.
+
+Adobe works with participating customers to understand their needs and may deliver expanded capabilities as the limited availability program progresses. Customers in this program gain early access to new features as they ship and are encouraged to share feedback that directly shapes the roadmap.
+
+To participate or learn more, send an email to `Grp-AEM-Assets-Sourcing-Portal@adobe.com`.
+
+#### Support for additional asset types in Adobe Express integration {#assets-express-integration-asset-types-beta}
+
+Adobe Express integration with Assets helps all users create and edit on-brand content and increase content reuse. We have worked on supporting a growing list of asset / file types to be supported by the integration, and some of them are available early to customers  interested in using them:
+
+**Asset view UI - "Open in Express"** to import an asset into a new Express document in the embedded Express editor:
+
+* **.mp4** video assets
+
+**Assets plugin in Adobe Express** to import an asset into the current Express document:
+
+* **.ai** Adobe Illustrator assets
+* **.indd** Adobe InDesign assets
+* **.mov** video assets
+* **.mp3** audio assets
+* **.gif** animated assets
+
+To participate or learn more, send an email to `aem-assets-express@adobe.com`.
+
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### New Features in AEM Forms
+<!--
 
-* **Override reCAPTCHA cloud configuration with OSGi**  
-reCAPTCHA Enterprise project IDs, site keys, and secrets that you keep with your source files can resolve to different values on each Cloud Service environment after you [add the Context-Aware Configuration override and deploy through Cloud Manager](/help/forms/captcha-adaptive-forms.md#override-recaptcha-osgi).
+#### API Integration Tool for Dynamic Form Data
 
-* **Certificate-based authentication**  
-Adaptive Forms that submit to a Microsoft SharePoint list now support [certificate-based authentication](/help/forms/connect-forms-to-sharepoint-list.md#certificate-based-authentication) alongside OAuth URL authentication. For certificate-based sign-in, register a certificate alias and tenant details in AEM and Microsoft Azure.
+Form authors can now use the API Integration Tool to build forms that fetch and fill in data from external REST APIs, based on what the user does in the form. This no-code tool supports use cases like address auto-completion, dynamic dropdown lists, and real-time validation. For more information, see [API Integration Tool for Dynamic Form Data](/help/forms/api-integration-tool-dynamic-form-data.md).
 
-* **Rule Editor Enhancements**
+-->
 
-  * The Adaptive Forms rule editor now supports the simplified grammar for [Dispatch Event and On Trigger Event rules for out-of-the-box (OOTB) triggers and for custom events](/help/forms/rule-editor-enhancements-use-cases.md#simplified-grammar-for-ootb-and-custom-events), so authors are not limited to grammar on custom triggers only. 
-  * When rules on Adaptive Forms based on Core Components now include the [File Attachment component together with other conditions using AND or OR logic](/help/forms/rule-editor-enhancements-use-cases.md#combined-when-conditions-with-the-file-attachment-component), so the rule runs its actions only when the attachment state and the other checks all evaluate as intended.
-  
+### Early Access Features in AEM Forms
+
+#### Table component in Adaptive Forms based on Core Components
+
+Adaptive Forms based on Core Components can now include a Table component to present complex, structured data in tabular layouts. Government and financial services forms often require tabular layouts for numeric data, line items, and multi-column inputs. The Table component supports:
+- Structured row and column authoring with header and body rows
+- Repeatable rows with add and remove actions at runtime
+- Column sorting with ascending and descending order
+- Disable sorting on individual columns for accessibility compliance
+- Proportional column widths
+- Merge and split table row cells
+- Replace default text box cells with other Adaptive Form components
+- Row-level calculations using the Rule Editor
+- Table rendering in Submission PDF (Document of Record).
+ 
+For more information, see [Add a table to an Adaptive Form (Core Components)](/help/forms/adaptive-forms-tables-core-components.md).
+
+#### Document conversion APIs
+
+Added support for new [document conversion APIs](/help/forms/aem-forms-communication-api-overview.md#document-conversion-apis) that enable applications to convert documents to supported formats and optimize PDFs for printing and processing. The following APIs are available:
+- **HTML to PDF** – Converts HTML documents to PDF while preserving page layout and styling.
+- **PostScript (PS) to PDF** – Converts PostScript documents to PDF.
+- **PDF to Image** – Converts PDF documents into one or more image files.
+- **PDF to PostScript (PS)** – Converts PDF documents to PostScript format.
+- **Flatten PDF Transparency** – Flattens transparent objects in PDF documents to improve compatibility with print and document processing workflows.
+
+#### Locale support for Interactive Communication
+
+Interactive Communication Editor now allows authors to [configure the locale for an Interactive Communication](/help/forms/interactive-communication/support-localization.md). The selected locale determines language and region-specific formatting, such as dates, numbers, and currencies, enabling localised content for different audiences
+
+#### Virus scanning and custom validation for file attachments
+
+Validate file attachments in Adaptive Forms before or on submission using custom validation logic, such as integrating a malware or virus scanning service. You can use form rules to trigger validation, or configure validation to run on form submission. Both approaches reject invalid or infected files before persistence, helping protect sensitive data and systems. For details, see [Implement a custom validator](/help/forms/scan-file-attachments-custom-validator.md) and [Tutorial: Antivirus scanning integration](/help/forms/scan-file-attachments-clamav.md).
+
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation New Features {#foundation-new}
 
-#### IDE AI tooling for AEM Java and Dispatcher Development {#ai-dev}
+#### Permission Management Agentic Capabilities in AEM {#permission-management-in-aem}
 
-Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. 
+Ask plain-language questions about who can do what on a content path, and the governance agent audits effective ACLs on your author environment in real time — explaining access decisions and their source policies, listing who holds a given privilege, pinpointing what causes a denial, and recommending groups for grants that follow the least privilege principle. For more information, see [Permission Management in AEM](/help/ai-in-aem/agents/governance/overview.md#permission-management-in-aem)‎
 
-IDE tooling can be used by coding agents to generate and debug AEM code and dispatcher configuration. As one example, the video walkthrough below demonstrates building an AEM component using Agent Skills.  
+#### AEM Edge Functions {#edge-functions}
 
-Learn more about [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md) and feel free to email [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) with questions or feedback.
+[AEM Edge Functions](/help/implementing/developing/introduction/edge-functions.md) allows you to execute JavaScript at the Adobe-Managed CDN, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge. It's available for both AEM Cloud Service Java Stack and Edge Delivery Services projects, for AEM Sites customers.
 
+Common use cases include:
 
->[!VIDEO](https://video.tv.adobe.com/v/3484978/?learn=on&enablevpops)
+* Personalizing content based on geolocation, device type, or user attributes
+* Acting as middleware between the CDN and your origin
+* Reformatting responses from third-party APIs (and perhaps aggregating multiple API responses) before delivering them to the browser
+* Composing and serving server-rendered HTML at the edge using content stitched from various backends
 
-#### Experience Governance MCP Server {#gov-mcp-server}
+Follow [this tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) for a concrete walk-through for both Edge Delivery Services and AEM as a Cloud Service Java-stack variations.
 
-The Experience Governance MCP Server is now generally available (GA). It integrates with AI developer tools and chatbots that support the Model Context Protocol (MCP), allowing you to safeguard brand integrity and compliance using natural language prompts in your chatbot or IDE. You can evaluate content (text, images, pages) against brand governance rules, and retrieve brand configurations and available governance checks.
+#### AEM Developer Console refresh {#aem-developer-console}
 
-Learn more about [AEM MCP Servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) and the [Governance Agent](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
-
-
->[!VIDEO](https://video.tv.adobe.com/v/3486258/?learn=on&enablevpops)
-
-#### Claude Connector {#aem-claude-connector}
-
-Claude users can browse Anthropic’s [Connector marketplace](https://claude.ai/settings/connectors) to 1-click install the [Adobe Experience Manager Connector](/help/ai-in-aem/mcp-support/setup-claude.md#aem-claude-connector). This MCP server exposes a growing set of tools to interact with AEM, including editing content through prompting.
-
-#### AEM OIDC on Publish New Features {#aem-oidc-on-publish-new-features}
-
-* Fix: Query parameters from original request are lost after authentication
-* Custom Redirect After Authentication in OIDC Authentication [documentation](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md#custom-redirect-after-authentication)
-
-#### Mail Service support for Microsoft Graph API {#mail-service-graph-api}
-
-AEM's Mail Service now supports Microsoft&reg; Outlook (via Microsoft 365) using the Microsoft Graph API. This is particularly helpful for organizations that do not allow SMTP, which is already supported by the Mail Service. Authentication is via OAuth 2.0. [Learn how to configure](/help/security/oauth2-support-for-mail-service.md#microsoft-graph-api).
-
-#### CDN Logs can be Forwarded to Sumo Logic {#sumo-cdn-logforwarding}
-
-The [Log Forwarding feature](/help/implementing/developing/introduction/log-forwarding.md#sumologic) now supports sending CDN logs to Sumo Logic. Previously, log forwarding to Sumo Logic was limited to AEM logs.
+The [AEM Developer Console](/help/implementing/developing/introduction/aem-developer-console.md) brings a more interactive debugging experience for Cloud environments. Previously available as a public beta, it has been rolling out progressively as the new default and so many organizations already have access. Full rollout completes in early September.
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
@@ -165,9 +269,9 @@ Instead of returning only an HTTP status code, these errors provide additional c
 
 It is critical to remove usage of deprecated APIs. 
 
-Since **April 14**, Cloud Manager pipelines that contain code using APIs targeting 2/26/2026 removal **fail during the Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.* 
+Since **April 14, 2026**, Cloud Manager pipelines that contain code using APIs targeting 2/26/2026 removal **fail during the Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.* 
 
-Starting **June 11, 2026**, environments still using these deprecated APIs **will not receive critical Adobe release updates** and will not be subject to Adobe's standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
+Starting **September 14, 2026**, environments still using these deprecated APIs **will not receive critical Adobe release updates** and will not be subject to Adobe's standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
 
 See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
 
@@ -190,43 +294,26 @@ See the [deprecation article](/help/release-notes/deprecated-removed-features.md
 
 +++
 
+#### Preparing for Java 25: AEM Cloud Service Runtime Upgrade Timeline
+
+Java 25 is the next long-term support (LTS) release after Java 21, delivering improvements across performance, developer productivity, and security:
+
+- **Performance** — Reduced memory footprint, more efficient garbage collection, and faster JVM warm-up benefit cloud-native deployments.
+- **Developer productivity** — Cleaner object initialization, more expressive pattern matching, and simplified concurrent task management reduce boilerplate and improve code clarity.
+- **Security** — Modernized cryptographic key derivation API to simplify common security workflows.
+
+To help organizations plan testing and validation ahead of the necessary Java 25 runtime upgrade, Adobe is providing the following target dates. Any updates to this timeline will be communicated via release notes.
+
+| Timeframe | Milestone |
+|---|---|
+| **Mid-October 2026** | AEM Cloud Service SDK supports Java 25 runtime. The Java 25 JDK is available for download from the Adobe Software Distribution portal. |
+| **November 2026** | Customers are encouraged to optionally enable the Java 25 runtime in their Cloud environments to validate behavior. Early adoption maximizes time to surface and resolve issues. |
+| **February – May 2027** | Adobe will gradually migrate lower environments (RDE, Dev) to the Java 25 runtime. Customers should validate behavior and report unexpected issues, and are encouraged to enable staging and production environments as well. A temporary rollback to Java 21 is available while resolving any problems. |
+| **June 2027** | All environment runtimes (including staging and production) migrate to Java 25. Java 21 runtime is decommissioned. The AEM Cloud Service SDK will no longer support Java 21. |
+
+AEM Cloud Service continues to support compiling customer code with Java 11, Java 17, and Java 21. However, Adobe recommends building with Java 25 (once available in AEM) to take full advantage of the latest language features and performance improvements.
+
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Features {#foundation-early-adopter}
-
-#### AEM Edge Functions (Beta Program) {#edge-functions}
-
-[AEM Edge Functions](/help/implementing/developing/introduction/edge-functions.md) allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge.
-
-Common use cases include:
-
-* Personalizing content based on geolocation, device type, or user attributes
-* Acting as middleware between the CDN and your origin
-* Reformatting responses from third-party APIs (and perhaps aggregating multiple API responses) before delivering them to the browser
-* Composing and serving server-rendered HTML at the edge using content stitched from various backends
-* Exposing an MCP server for AI Assistants like ChatGPT and Claude to access custom tools
-
-We have a limited number of opportunities available for either AEM Publish Delivery or Edge Delivery Services projects for live production sites. If you're interested in participating or want to learn more, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case.
-
-#### Web Tier Config Pipeline Troubleshooting (Beta Program) {#devagent-webtier}
-
-The Development Agent's [pipeline troubleshooting](/help/ai-in-aem/agents/brand-experience/development/development.md) capabilities help developers efficiently diagnose and resolve issues in AEM as a Cloud Service deployments. In addition to supporting Full Stack pipelines (Deployment and Code Quality), the Development Agent now supports troubleshooting for the **Web Tier Config Pipeline** as part of a beta program.
-
-To request access to the beta, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com). Pre-existing access to Agents in AEM is required.
-
-#### Replication AI Troubleshooting (Alpha Program) {#replication-ai-troubleshooting-alpha}
-
-Using the AI Assistant in AEM Author and other interfaces, you can troubleshoot replication-related issues such as blocked queues. To join the Alpha Program, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com), describing your interest.
-
-#### IDE AI tooling for AEM 6.5 to AEM Cloud Service Migration (Beta Program) {#cm-ide-migration}
-
-Accelerate your migration from AEM 6.5 to AEM as a Cloud Service (Java stack) by using IDE AI tooling to act on the recommendations of the [Best Practices Analyzer Report](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
-
-Email [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) for more information and to request access to the feature.
-
-#### Edge Authentication for Edge Delivery Services (Beta Program) {#edge-authentication}
-
-Edge Authentication lets you restrict access to Edge Delivery Services pages to only those who have authenticated with your identity provider (IdP). This is achieved by deploying an OpenID Connect (OIDC) configuration YAML file.
-
-If interested, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case and any questions you may have.
 
 #### Canary Production Deployments to Test Code Before Accepting Live Traffic (Beta Program) {#canary-beta}
 
@@ -234,15 +321,28 @@ Validate a production build with internal-only test traffic before exposing it t
 
 Email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) to request access and share feedback.
 
-#### Snapshots for RDEs (Beta Program) {#rde-snapshot-program}
+#### Edge Authentication for Edge Delivery Services (Beta Program) {#edge-authentication}
 
-In beta, Rapid Development Environments (RDEs) now support a feature [to take a snapshot](/help/implementing/developing/introduction/rapid-development-environments.md#snapshots) of the current state of code and content, which can be restored at a later time. This can be useful when syncing code that may need to be reverted, or when switching between development of different features. It's also possible to restore just the mutable content as a known starting point for testing.
+Edge Authentication lets you restrict access to Edge Delivery Services pages to only those who have authenticated with your identity provider (IdP). This is achieved by deploying an OpenID Connect (OIDC) configuration YAML file.
 
-Please email [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) if there is interest in using and providing feedback on this feature.
+If interested, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case and any questions you may have.
 
-#### Expanded Application Performance Monitoring (APM) (Alpha program) {#apm-alpha}
+#### Replication AI Troubleshooting (Beta Program) {#replication-ai-troubleshooting-beta}
 
-For observability, AEM Cloud Service currently supports Adobe-provided [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) and customer-managed [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace). As we explore support for additional APM options, please email us at [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) with your preferred vendor or technology, along with use cases.
+Using the AI Assistant in AEM Author and other interfaces, you can troubleshoot replication-related issues such as blocked queues. To join the Beta Program, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com), describing your interest.
+
+#### OpenTelemetry for Application Performance Monitoring (APM) (Alpha Program) {#apm-alpha}
+
+AEM as a Cloud Service now supports OpenTelemetry-based telemetry export, letting you monitor AEM alongside the rest of your systems in the APM tools your teams already use.
+
+Use this integration to:
+
+- Investigate slow or failing requests
+- Track JVM health and resource usage over time
+- Build dashboards and alerts for your AEM tiers
+- Correlate AEM behavior with other services during incidents
+
+To join the alpha, email [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com), describing your use case.
 
 ## [!DNL Experience Manager] Guides {#guides}
 

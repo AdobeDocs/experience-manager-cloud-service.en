@@ -54,6 +54,10 @@ These concepts are laid out in detail in this onboarding journey. The goal is th
 
 Basically, you hit the ground running with your new AEM as a Cloud Service project!
 
+>[!NOTE]
+>
+>If you are an AEM Assets customer and want to use the Assets Onboarding Agent, send an email to `GRP-AEM-ONBOARDING-AGENT@adobe.com`. For more information, see [Assets Onboarding Agent](/help/release-notes/release-notes-cloud/release-notes-current.md#assets-onboarding-agent-beta).
+
 ## Audience {#audience}
 
 The onboarding journey is written specifically for the **system administrator** of customers that are new to AEM as a Cloud Service and to AEM in general. The system administrator is the individual who Adobe contacts first after your AEM as a Cloud Service contract is signed. They are typically the first person to access and set up your resources on AEM as a Cloud Service. If you are reading this topic, it is likely that you are the system administrator.
@@ -109,3 +113,4 @@ If you want to know what Adobe recommends on how to get your team onboarded onto
 The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
 
 * [Onboarding to AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding) - This brief video gives an overview of the Cloud Service onboarding process for AEM.
+

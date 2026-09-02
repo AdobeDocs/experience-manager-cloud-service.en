@@ -6,7 +6,6 @@ topic-tags: author
 feature: Adaptive Forms, Foundation Components
 role: User
 hide: true
-hidefromtoc: yes
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 9abc6e42-3b53-4dca-bd6a-ced5cf6c6ac4
 ---

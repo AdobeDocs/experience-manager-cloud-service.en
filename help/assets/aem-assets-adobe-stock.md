@@ -40,7 +40,7 @@ An enterprise [!DNL Adobe Stock] plan,
 Within the entitlement, a default product profile for [!DNL Adobe Stock] exists in [!DNL Admin Console]. Multiple profiles can be created, and these profiles determines who can license Stock assets. A user having a direct access to the product profile can access [https://stock.adobe.com/](https://stock.adobe.com/) and license Stock assets. Whereas there is another method of using the Developer Access to create an integration (API). This integration authenticates the communication between [!DNL Experience Manager Assets] and [!DNL Adobe Stock].
 
 <!--
-### Create an IMS configuration {#create-an-ims-configuration}
+### Create an IMS configuration
 
 1. In the [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Click **[!UICONTROL Create]** and select **[!UICONTROL Cloud Solution]** > **[!UICONTROL Adobe Stock]**.
 1. Either reuse an existing certificate or select **[!UICONTROL Create new certificate]**.
@@ -91,7 +91,7 @@ As a developer, execute the following steps to integrate [!DNL Adobe Experience 
    In [!DNL Experience Manager], configure an [!DNL Adobe Stock] cloud service using the IMS account.
 
 
-### Create an IMS configuration {#create-an-ims-configuration}
+### Create an IMS configuration
 
 The IMS configuration authenticates your [!DNL Experience Manager Assets] author instance with the [!DNL Adobe Stock] entitlement. 
 
@@ -378,7 +378,7 @@ The following table explains how the user permissions work while accessing the [
 | test-doc1 | DAM user | /conf/global/settings/stock/cloud-config | No | Error: Failed to load data | No |
 | test-doc1 | DAM user | **allow**: /conf/global/settings/stock **deny**: /cloud-config| Stock configuration is not visible | Yes | No |
 
-## Use and manage [!DNL Adobe Stock] assets in [!DNL Experience Manager] {#usemanage}
+## Use and manage [!DNL Adobe Stock] assets in [!DNL Experience Manager]
 
 Using this capability, organizations can allow its users to work using [!DNL Adobe Stock] assets in [!DNL Experience Manager Assets]. From within the [!DNL Experience Manager] user interface, users can search [!DNL Adobe Stock] assets and license the required assets.
 
@@ -388,7 +388,7 @@ Once an [!DNL Adobe Stock] asset is licensed in [!DNL Experience Manager], it ca
 
 **A.** Search assets similar to the assets whose [!DNL Adobe Stock] ID is provided. **B.** Search assets that match your selection of shape or orientation. **C.** Search for one of more supported asset types **D.** Open or collapse the filters pane **E.** License and save the selected asset in [!DNL Experience Manager] **F.** Save the asset in [!DNL Experience Manager] with watermark **G.** Explore assets on [!DNL Adobe Stock] website that are similar to the selected asset **H.** View the selected assets on [!DNL Adobe Stock] website **I.** Number of selected assets from the search results **J.** Switch between Card view and List view
 
-### Find assets {#find-assets}
+### Find assets
 
 Your [!DNL Experience Manager] users, can search for assets in both, [!DNL Experience Manager] and [!DNL Adobe Stock]. When the search location is not limited to [!DNL Adobe Stock], the search results from [!DNL Experience Manager] and [!DNL Adobe Stock] are displayed.
 
@@ -404,7 +404,7 @@ Alternatively, start typing `Location: Adobe Stock` in the search bar to select 
 
 ![Search filters in [!DNL Experience Manager] and highlighted [!DNL Adobe Stock] assets in search results](assets/aem-search-filters2.jpg)
 
-### Save and view the required assets {#saveassets}
+### Save and view the required assets
 
 Select an asset that you want to save in [!DNL Experience Manager]. Click [!UICONTROL Save] in the toolbar at the top and provide the name and location of the asset. The unlicensed assets are saved locally with a watermark.
 
@@ -414,14 +414,14 @@ Next time when you search for assets, the saved assets are highlighted with a ba
 >
 >The recently added assets display a New badge instead of Licensed badge.
 
-### License assets {#licenseassets}
+### License assets
 
 Users can license [!DNL Adobe Stock] assets by using the quota of their [!DNL Adobe Stock] enterprise plan. When you license an asset, it is saved without a watermark and is available for searching and using in [!DNL Experience Manager Assets].
 
 ![Dialog to license and save [!DNL Adobe Stock] assets in [!DNL Experience Manager Assets]](assets/aem-stock_licenseandsave.jpg)
 
 
-### Access metadata and asset properties {#access-metadata-and-asset-properties}
+### Access metadata and asset properties
 
 Users can access and preview the metadata, including the [!DNL Adobe Stock] metadata properties for the assets saved in [!DNL Experience Manager], and add **[!UICONTROL License References]** for an asset. However, the updates to license reference are not synced between [!DNL Experience Manager] and [!DNL Adobe Stock] website.
 
@@ -430,7 +430,7 @@ Users can see the properties for both, licensed and unlicensed assets.
 ![View and access metadata and license references of saved assets](assets/metadata_properties.jpg)
 
 
-## Known limitations {#known-limitations}
+## Known limitations
 
 * **Functionality to restrict users from licensing is not working properly**: All users having `read` permissions to the stock configuration are allowed to search and license the [!DNL Adobe Stock] assets. 
 
@@ -443,7 +443,7 @@ Users can see the properties for both, licensed and unlicensed assets.
 * **Reference fields and metadata are not synced**: When a user updates a license reference field, the license reference information is updated in [!DNL Experience Manager] but not on the [!DNL Adobe Stock] website. Similarly, if the user updates the reference fields on the [!DNL Adobe Stock] website, the updates are not synchronized in [!DNL Experience Manager].
 
 <!--
-## Use and manage [!DNL Adobe Stock] assets in [!DNL Experience Manager] {#usemanage}
+## Use and manage [!DNL Adobe Stock] assets in [!DNL Experience Manager]
 
 Using this capability, organizations users can work using [!DNL Adobe Stock] assets in [!DNL Experience Manager Assets]. From within the [!DNL Experience Manager] user interface, users can search [!DNL Adobe Stock] assets and license the required assets.
 
@@ -459,7 +459,7 @@ Once an [!DNL Adobe Stock] asset is licensed in [!DNL Experience Manager], it ca
 -->
 
 <!--
-### Find assets {#find-assets}
+### Find assets
 
 Your [!DNL Experience Manager] users, can search for assets in both, [!DNL Experience Manager] and [!DNL Adobe Stock]. When the search location is not limited to [!DNL Adobe Stock], the search results from [!DNL Experience Manager] and [!DNL Adobe Stock] are displayed.
 
@@ -477,7 +477,7 @@ Alternatively, start typing `Location: Adobe Stock` in the search bar to select 
 
 *Figure: Search filters in [!DNL Experience Manager] and highlighted [!DNL Adobe Stock] assets in search results.*
 
-### Save and view the required assets {#saveassets}
+### Save and view the required assets
 
 Select an asset that you want to save in [!DNL Experience Manager]. Click [!UICONTROL Save] in the toolbar at the top and provide the name and location of the asset. The unlicensed assets are saved locally with a watermark.
 
@@ -487,7 +487,7 @@ Next time when you search for assets, the saved assets are highlighted with a ba
 >
 >The recently added assets display a New badge instead of Licensed badge.
 
-### License assets {#licenseassets}
+### License assets
 
 Users can license [!DNL Adobe Stock] assets by using the quota of their [!DNL Adobe Stock] enterprise plan. When you license an asset, it is saved without a watermark and is available for searching and using in [!DNL Experience Manager Assets].
 
@@ -495,7 +495,7 @@ Users can license [!DNL Adobe Stock] assets by using the quota of their [!DNL Ad
 
 *Figure: Dialog to license and save [!DNL Adobe Stock] assets in [!DNL Experience Manager Assets].*
 
-### Access metadata and asset properties {#access-metadata-and-asset-properties}
+### Access metadata and asset properties
 
 Users can access and preview the metadata, including the [!DNL Adobe Stock] metadata properties for the assets saved in [!DNL Experience Manager], and add **[!UICONTROL License References]** for an asset. However, the updates to license reference are not synced between [!DNL Experience Manager] and [!DNL Adobe Stock] website.
 
@@ -505,7 +505,7 @@ Users can see the properties for both, licensed and unlicensed assets.
 
 *Figure: View and access metadata and license references of saved assets.*
 
-## Known limitations {#known-limitations}
+## Known limitations
 
 * **Editorial image warning is not displayed**: When licensing an image, users cannot check if an image is Editorial Use Only. To prevent possible misuse, the administrators can turn off the access to editorial assets from the Admin Console.
 
@@ -516,18 +516,20 @@ Users can see the properties for both, licensed and unlicensed assets.
 
 **See also**
 
-* [Translate Assets](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [Assets supported file formats](file-format-support.md)
-* [Search assets](search-assets.md)
-* [Connected assets](use-assets-across-connected-assets-instances.md)
-* [Asset reports](asset-reports.md)
-* [Metadata schemas](metadata-schemas.md)
-* [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata.md)
-* [Search facets](search-facets.md)
-* [Manage collections](manage-collections.md)
-* [Bulk metadata import](metadata-import-export.md)
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
@@ -535,3 +537,4 @@ Users can see the properties for both, licensed and unlicensed assets.
 >* [Video tutorial on using Adobe Stock assets with Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
 >* [Adobe Stock enterprise plan help](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
 >* [Adobe Stock FAQ](https://helpx.adobe.com/stock/faq.html)
+

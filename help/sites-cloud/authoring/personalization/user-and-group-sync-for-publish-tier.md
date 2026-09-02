@@ -108,8 +108,7 @@ User profile information can be written and read in two ways:
 
 **Prerequisite:**
 
-For the server-side user profile persistence logic to function correctly, please enable [data synchronization](#data-synchronization-data-synchronization) by submitting
-a request to Customer Support indicating the appropriate program and environments.
+For the server-side user profile persistence logic to function correctly, please enable [data synchronization](#data-synchronization-data-synchronization) by submitting a request to Customer Support indicating the appropriate program and environments.
 
 ### Third-party data stores {#third-party-data-stores}
 
@@ -119,8 +118,7 @@ Real-time access to third-party services to retrieve profile attributes is possi
 
 **Prerequisite:**
 
-For the above-described logic to function correctly, please enable [data synchronization](#data-synchronization-data-synchronization) by submitting
-a request to Customer Support indicating the appropriate program and environments.
+For the above-described logic to function correctly, please enable [data synchronization](#data-synchronization-data-synchronization) by submitting a request to Customer Support indicating the appropriate program and environments.
 
 ## Permissions (Closed User Groups) {#permissions-closed-user-groups}
 

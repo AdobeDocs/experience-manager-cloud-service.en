@@ -6,15 +6,11 @@ feature: Interactive Communication
 role: User, Developer, Admin
 hide: true
 index: false
-hidefromtoc: yes
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 127abe2a-d8cf-4488-959f-f7316a8ddc3e
 ---
 # Copy and Paste in Interactive Communication Editor
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 The Copy and Paste feature in the Interactive Communication (IC) editor allows authors to duplicate an existing Interactive Communication and reuse it in a different folder or location. This capability helps teams work efficiently by enabling multiple variations of an IC without modifying the original version.
 
@@ -79,3 +75,4 @@ After pasting the Interactive Communication:
 - Review data bindings and output channels after copying to ensure correctness.
 
 The Copy and Paste feature in Interactive Communication simplifies reuse and customization by allowing authors to duplicate existing ICs and modify them independently. It enables faster development, safer experimentation, and consistent communication delivery—without risking changes to the original Interactive Communication.
+

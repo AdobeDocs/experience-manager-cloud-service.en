@@ -1,19 +1,16 @@
 ---
 title: Associate UI in Interactive Communication Editor
-description: Discover associate UI in Interactive Communication Editor by enabling customer-facing agent to generate personalized, compliant communications.
+description: Discover Associate UI in Interactive Communication Editor by enabling customer-facing associates to generate personalized, compliant communications.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms."
 exl-id: 9ba58659-b14c-4ebc-a6d9-e56a4b6aa48b
 ---
 # Associate UI in Interactive Communication Editor
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
-The **Associate UI** is a specialized, simplified interface built on top of Interactive Communications (IC) editor. It is designed for customer-facing professionals, such as field associates and service agents to generate personalized, compliant, and accurate communications in real time during live interactions.
+The **Associate UI** is a specialized, simplified interface built on top of Interactive Communications (IC) editor. It is designed for customer-facing professionals, such as field associates and service representatives, to generate personalized, compliant, and accurate communications in real time during live interactions.
 
 ![Find IC Doc](/help/forms/interactive-communication/assets/associate-ui-preview.png)
 
@@ -103,5 +100,8 @@ By combining intuitive design, robust backend configuration, and strict complian
 ## See also
 
 - [Enable and configure Associate UI for Interactive Communications](/help/forms/interactive-communication/enable-configure-associate-ui.md)
+- [Configure Dropdown Options for Associate UI](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md)
+- [Configure Bound and Unbound Variables for Associate UI](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md)
 - [Integrate Associate UI in Your Application](/help/forms/interactive-communication/invoke-associate-ui.md)
 - [Submission workflow for Associate UI — IC Generate PDF Output](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
+

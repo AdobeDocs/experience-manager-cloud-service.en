@@ -17,7 +17,7 @@ Adobe Experience Manager as a Cloud Service uses the [Sling Content Distribution
 
 >[!NOTE]
 >
->If you are interested in bulk publishing content, create a workflow using the [Tree Activation Workflow Step](#tree-activation), which can efficiently handle large payloads. 
+>If you are interested in bulk publishing content, create a workflow using the [Tree Activation Workflow Step](/help/operations/tree-replication-workflows.md#tree-activation), which can efficiently handle large payloads. 
 >It is not recommended to build your own bulk publishing custom code. 
 >If you must customize for whatever reason, you can trigger a workflow with this step by using existing Workflow APIs. 
 >It is always a good practice to only publish content that must be published. And be prudent about not trying to publish large numbers of content, if not necessary. However, there are no limits as to how much content you can send through workflows with the Tree Activation Workflow Step.
@@ -40,154 +40,11 @@ To realize the automatic replication for this feature, enable **Auto Replicate**
 
 Manage Publication offers more options than Quick Publish, allowing for the inclusion of child pages, customization of the references, and starting any applicable workflows and offering the option to publish later.
 
-Including a folder's children for the "publish later" option invokes the Publish Content Tree workflow, described in this article.
+Including a folder's children for the "publish later" option invokes the Publish Content Tree workflow, described in [Tree Replication Workflows](/help/operations/tree-replication-workflows.md#publish-content-tree-workflow).
 
 You can find more detailed information on Manage Publication on the [Publishing Fundamentals documentation](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication).
 
-### Tree Activation Workflow Step {#tree-activation}
-
-The Tree Activaton workflow step is intended to performantly replicate a deep hierarchy of content nodes. It automatically pauses when the queue grows too large in order to allow other replications to proceed in parallel with minimal latency. 
-
-Create a Workflow Model that uses the `TreeActivation` process step:
-
-1. From the AEM as a Cloud Service homepage, go to **Tools - Workflow - Models**.
-1. In the Workflow Models page, press **Create** in the upper right corner of the screen.
-1. Add a title and a name to your model. For more information, see [Creating Workflow Models](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
-1. Select the created model from the list, and press **Edit**
-1. In the following window, delete the Step that appears by default
-1. Drag and drop the Process Step to the current model flow:
-   
-   ![Process Step](/help/operations/assets/processstep.png)
-
-1. Select the Process step in the flow and select **Configure** by pressing the wrench icon.
-1. Select the **Process** tab and select `Publish Content Tree` from the drop-down list, then check the **Handler Advance** check box
-   
-   ![Treeactivation](/help/operations/assets/new-treeactivationstep.png)
-
-1. Set any additional parameters in the **Arguments** field. Multiple comma-separated arguments can be strung together. For example:
-   
-   `enableVersion=false,agentId=publish,chunkSize=50,maxTreeSize=500000,dryRun=false,filters=onlyModified,maxQueueSize=10`  
-   
-   >[!NOTE]
-   >
-   >For the list of parameters, see the **Parameters** section below.
-
-1. Press **Done** to save the Workflow model.
-
-**Parameters**
-
-| Name           | default | description                                                     |
-| -------------- | ------- | --------------------------------------------------------------- |
-| path           |         | root path to start from                                         |
-| agentId        | publish | Replication agent name to use                                   |
-| chunkSize      | 50      | Number of paths to bundle into a single replication             |
-| maxTreeSize    | 500000  | Maximum number of nodes for a tree to be considered small       |
-| maxQueueSize   | 10      | Maximum number of items in replication queue                    |
-| enableVersion  | false   | Enable versioning                                               |
-| dryRun         | false   | When set to true replication is not acutally called             |
-| userId         |         | only for job. On workflow the user calling the workflow is used |
-| filters        |         | List of node filter names. See supported filter below           |
-
-**Support Filters**
-
-| Name          | Description                                 |
-| ------------- | ------------------------------------------- |
-| onlyModified  | Nodes: both new, and pre-existing that have been modified since the last publish |
-| onlyActivated | Nodes: that have been published before the last publish |
-
-
-**Resume Support**
-
-The workflow processes content in chunks, each of which represents a subset of the full content to be published.  If the workflow is stopped by the system, it will continue where it left off. 
-
-**Monitoring Workflow Progress**
-
-1. From the AEM as a Cloud Service homepage, go to **Tools - General - Jobs**.
-1. Look at the row corresponding to your workflow. The *progress* column gives an indication of how the replication is progressing. For example, it may display 41/564 and upon refreshing, it may be updated to 52/564.
-
-   ![Treeactivation progress](/help/operations/assets/treeactivation-progress.png)
-
-
-1. Selecting the row and opening it will provide additional details about the status of the workflow execution.
-
-   ![Treeactivation status details](/help/operations/assets/treeactivation-progress-details.png)
-
-
-
-### Publish Content Tree Workflow {#publish-content-tree-workflow}
-
->[!NOTE]
->
->This feature is deprecated in favor of the more performant Tree Activation step, which can be included in a custom workflow.  
-
-+++ Click here to learn more about this deprecated feature.
-
-You can trigger a tree replication by choosing **Tools - Workflow - Models** and copying the **Publish Content Tree** out-of-the-box workflow model, as shown below:
-
-![The Publish Content Tree Workflow Card](/help/operations/assets/publishcontenttreeworkflow.png)
-
-Do not invoke the original model. Instead, make sure to first copy the model and invoke that copy.
-
-Like all workflows, it can also be invoked via API. For more information, see [Interacting with Workflows Programmatically](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
-
-Alternatively, you can create a Workflow Model that uses the `Publish Content Tree` process step. 
-
-1. From the AEM as a Cloud Service homepage, go to **Tools - Workflow - Models**.
-1. In the Workflow Models page, press **Create** in the upper right corner of the screen.
-1. Add a title and a name to your model. For more information, see [Creating Workflow Models](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
-1. Select the created model from the list, and press **Edit**
-1. In the following window, drag and drop the Process Step to the current model flow:
-   
-   ![Process Step](/help/operations/assets/processstep.png)
-
-1. Select the Process step in the flow and select **Configure** by pressing the wrench icon.
-1. Select the **Process** tab and select `Publish Content Tree` from the drop-down list, then check the **Handler Advance** check box
-   
-   ![Treeactivation](/help/operations/assets/newstep.png)
-
-1. Set any additional parameters in the **Arguments** field. Multiple comma-separated arguments can be strung together. For example:
-   
-   `enableVersion=true,agentId=publish,includeChildren=true`  
-
-   
-   >[!NOTE]
-   >
-   >For the list of parameters, see the **Parameters** section below.
-
-1. Press **Done** to save the Workflow model.
-
-**Parameters**
-
-* `includeChildren` (boolean value, default: `false`). The value `false` means that only the path is published; `true` means that children are published too.
-* `replicateAsParticipant` (boolean value, default: `false`). If configured as `true`, the replication is using the `userid` of the principal which performed the participant step.
-* `enableVersion` (boolean value, default: `false`). This parameter determines if a new version is created upon replication.
-* `agentId` (string value, default means only agents for publish are used). It is recommended to be explicit about the agentId; for example, setting it the value: publish. Setting the agent to `preview` publishes to the preview service.
-* `filters` (string value, default means that all paths are activated). Available values are: 
-  * `onlyActivated` - only activate pages that have (already) been activated. Acts as a form of reactivation.
-  * `onlyModified` - activate only paths which are already activated and have a modification date later than the activation date.
-  * The above can be ORed with a pipe "|". For example, `onlyActivated|onlyModified`.  
-
-**Logging**
-
-When the tree activation workflow step starts, it logs its configuration parameters on the INFO loglevel. When paths are activated, an INFO statement is also logged.
-
-A final INFO statement is logged after the workflow step has replicated all paths.
-
-Also, you can increase the loglevel of the loggers below `com.day.cq.wcm.workflow.process.impl` to DEBUG/TRACE to get even more log information.
-
-If there are errors, the workflow step terminates with a `WorkflowException`, which wraps the underlying Exception.
-
-The following are examples of logs that are generated during a sample publish content tree workflow:
-
-```
-21.04.2021 19:14:55.566 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.treeactivation.TreeActivationWorkflowProcess TreeActivation options: replicateAsParticipant=false(userid=workflow-process-service), agentId=publish, chunkSize=100, filter=, enableVersion=false
-```
-
-```
-21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
-```
-
-+++
+To replicate deep content hierarchies in bulk, use a workflow-based approach. See [Tree Replication Workflows](/help/operations/tree-replication-workflows.md) for the recommended Tree Activation workflow step, configuration parameters, and monitoring guidance. The deprecated Publish Content Tree workflow is also documented there for reference.
 
 ### Replication API {#replication-api}
 
@@ -214,15 +71,26 @@ replicator.replicate(session,ReplicationActionType.ACTIVATE, new String[]{"/cont
 Resource enResource = resourceResolver.getResource("/content/we-retail/en");
 Resource deResource = resourceResolver.getResource("/content/we-retail/de");
 ReplicationStatus enStatus = enResource.adaptTo(ReplicationStatus.class);
-// if you need to get the status for more more than 1 resource at once, this approach is more performant
+// if you need to get the status for more than 1 resource at once, this approach is more performant
 Map<String,ReplicationStatus> allStatus = replicationStatusProvider.getBatchReplicationStatus(enResource,deResource);
 ```
 
+**Replication Agents**
+
+AEM as a Cloud Service provides two predefined replication agents that route content from author to a target tier through Sling Content Distribution:
+
+* **publish** — Replicates activated content to the live publish tier. This agent is enabled by default and is used when you publish from the UI, workflows, or the Replication API unless you specify otherwise.
+* **preview** — Replicates content to the preview tier so authors can review changes before they go live. This agent is not enabled by default.
+
+You can view and monitor both agents from **Tools** > **Deployment** > **Distribution**:
+
+   ![Distribution agents showing publish and preview](/help/operations/assets/replication-agents.png "Distribution agents")
+
+Selecting an agent card opens its status, logs, and [queue details](#replication-queues).
+
 **Replication with Specific Agents**
 
-When replicating resources, as in the example above, only the agents that are active by default are used. In AEM as a Cloud Service, it means only the agent called "publish", which connects the author to the publish tier.
-
-To support the preview functionality, a new agent called "preview" has been added, which is not active by default. This agent is used to connect the author to the preview tier. If you want to replicate only by way of the preview agent, you must explicitly select this preview agent by way of an `AgentFilter`.
+When you replicate with the API as shown above, only agents that are enabled by default are used—in AEM as a Cloud Service, that is **publish** only. To replicate exclusively to the preview tier, pass an `AgentFilter` that selects the preview agent:
 
 See the following example:
 
@@ -245,37 +113,48 @@ ReplicationStatus afterStatus = enResource.adaptTo(ReplicationStatus.class); // 
 ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); // previewStatus.isActivated == true
 ```
 
-In case you do not provide such a filter and only use the "publish" agent, the "preview" agent is not used and the replication action does not affect the preview tier.
+If you replicate without an `AgentFilter`, only **publish** is used and the preview tier is not affected.
 
-The overall `ReplicationStatus` of a resource is only modified if the replication action includes at least one agent which is active by default. In the example above, this flow was not the case. The replication was just using the "preview" agent. Therefore, you must use the new `getStatusForAgent()` method, which allows querying the status for a specific agent. This method also works for the "publish" agent. It returns a non-null value if there has been any replication action done using the provided agent.
+The overall `ReplicationStatus` of a resource updates only when the replication includes at least one agent that is enabled by default. In the example above, only **preview** was used, so `ReplicationStatus.isActivated` remains `false`. Use `getStatusForAgent()` to check status for a specific agent—for example, `getStatusForAgent("preview")` after a preview-only replication, or `getStatusForAgent("publish")` for the live publish tier.
 
 ### Methods of Invalidating Content {#invalidating-content}
 
 You can directly invalidate content by using either Sling Content Invalidation (SCD) from author (the preferred method) or by using the Replication API to invoke the publish Dispatcher flush replication agent. See [Caching](/help/implementing/dispatcher/caching.md) page for further details.
 
-**Replication API capacity limits**
+**Replication API Capacity Limits**
 
 Replicate fewer than 100 paths at a time, with 500 being the limit. Above the limit, a `ReplicationException` is thrown. 
-If your application logic does not require atomic replication, this limit can be overcome by setting the `ReplicationOptions.setUseAtomicCalls` to false, which accepts any number of paths, but internally create buckets to stay below this limit.
+If your application logic does not require atomic replication, this limit can be overcome by setting the `ReplicationOptions.setUseAtomicCalls` to false, which accepts any number of paths, but internally creates buckets to stay below this limit.
 
 The size of the content transmitted per replication call must not exceed `10 MB`. This rule includes the nodes and properties, but not any binaries (workflow packages and content packages are considered binaries). 
 
 
+## Replication Queues {#replication-queues}
+
+Each replication agent displays two replication queues. AEM as a Cloud Service no longer shows a separate queue for each publish pod—the publish tier scales automatically, so per-pod queues added complexity without practical benefit. Queue status is consolidated as follows:
+
+* **persisted** — The change is durably stored on the publish tier. After an item clears this queue, the content is persisted; publish instances reach a consistent state over time.
+* **fully published** — The change is live on all publish pods and the Dispatcher cache is cleared for the affected paths. After an item clears this queue, visitors receive the updated content.
+
+### Monitor Replication Queues {#monitor-replication-queues}
+
+1. From the AEM [Global Navigation](/help/sites-cloud/authoring/basic-handling.md#global-navigation), navigate to **Tools** > **Deployment**.
+
+   ![Navigate to Distribution from Tools](/help/operations/assets/replication-agent-navigation.png "Distribution navigation")
+
+1. Select **Distribution**, then open the **publish** or **preview** agent card.
+
+1. On the **Status** tab, verify each queue shows a healthy status. Review **Items Pending** for work waiting to process, and **Last Item Processed** for recent activity.
+
+   ![Replication queues showing persisted and fully published](/help/operations/assets/replication-queues.png "Replication queues")
+
+1. Select **Test Connection** to verify the agent can reach the distribution service.
+1. Select the **Logs** tab to view the history of content publications.
+
+   ![Replication logs](/help/operations/assets/publish-logs.png "Logs")
+
 ## Troubleshooting {#troubleshooting}
 
-To troubleshoot replication, navigate to the Replication Queues in the AEM Author Service Web UI:
+If content cannot be published, the publication is reverted from the AEM Publish Service. Use [Monitor Replication Queues](#monitor-replication-queues) to open the agent **Status** tab and identify the affected queue.
 
-1. From the AEM [Global Navigation](/help/sites-cloud/authoring/basic-handling.md#global-navigation), navigate to **Tools** > **Deployment** > **Distribution**
-1. Select the card **publish**
-
-   ![Status](assets/publish-status.png "Status")
-
-1. Check the queue status which should be green
-1. You can test the connection to the replication service
-1. Select the **Logs** tab which shows the history of content publications
-
-![Logs](assets/publish-logs.png "Logs")
-
-If the content couldn't be published, the whole publication is reverted from the AEM Publish Service.
-
-In that case, the main, editable queue shows a red status and should be reviewed to identify which items caused the cancelation of the publication. By clicking that queue, its pending items show up, from which a single item or all items can be cleared if needed.
+When a queue shows a red status, review its pending items to find what caused the failure. Select the queue to view pending items, then clear individual items or the entire queue if needed.

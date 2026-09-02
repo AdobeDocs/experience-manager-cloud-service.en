@@ -9,9 +9,6 @@ exl-id: b44cc569-00a1-4a66-ae25-3d672cf5fc12
 ---
 # Barcode Component in Interactive Communication Editor 
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 ## 1. Introduction 
 
@@ -148,3 +145,9 @@ Authors can embed the barcode in layout containers and style it according to the
 - Maintain adequate margins to prevent clipping when printed. 
 
 The Barcode component in the Interactive Communication editor empowers document creators to bridge the gap between digital and physical systems. When implemented effectively, it enhances automation, improves user convenience, and supports seamless integration with scanning devices and workflows.
+
+## See also
+
+- [Configure Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/configure-data-binding.md)
+- [Generate PDF Preview in Interactive Communication Editor](/help/forms/interactive-communication/generate-pdf-preview.md)
+

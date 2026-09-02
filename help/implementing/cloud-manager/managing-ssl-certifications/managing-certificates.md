@@ -15,9 +15,9 @@ Learn how to use Cloud Manager to check the status of your SSL certificates and 
 
 Cloud Manager gives an overview of the status of all certificates for your program.
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate program.
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
-1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the side menu. 
+1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to open the side menu. 
 1. Under the **Services** heading, click ![Lock closed icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificates**. 
 
 The **SSL Certificates** page provides the status of your SSL certificates.
@@ -25,18 +25,18 @@ The **SSL Certificates** page provides the status of your SSL certificates.
 | Status of SSL certificate | Description |
 | --- | --- |
 | Green  | The certificate is valid for at least 14 days from the current date.  |
-| Orange  | The certificate is due to expire in less than 14 days.<br>&bull; Ensure that you have a plan to renew your certificate and replace it by way of the Cloud Manager user interface to avoid possible site access or outages.<br>&bull; Cloud Manager sends regular notifications in the UI to alert you of an impending certificate expiration. |
+| Orange  | The certificate is due to expire in less than 14 days.<br>&bull; Ensure that you have a plan to renew your certificate and replace it through the Cloud Manager user interface to avoid possible site access or outages.<br>&bull; Cloud Manager sends regular notifications in the UI to alert you of an impending certificate expiration. |
 | Red | The SSL certificate is expired.<br>See [Update an expired customer managed SSL certificate](#update-ssl-certificate) or [Delete an SSL certificate](#deleting-an-ssl-certificate). |
 
 ## Update an expired customer managed SSL certificate {#update-ssl-certificate}
 
-When a customer managed certificate expires any domains that are in use with the expired certificate no longer work. Updating your certificates ensures that your domain continues to work as desired.
+When a customer managed certificate expires, any domains that are in use with the expired certificate no longer work. Updating your certificates ensures that your domain continues to function correctly.
 
 A user must be a member of the **Business Owner** or **Deployment Manager** role to complete this task.
 
 >[!IMPORTANT]
 >
->When adding or updating an SSL certificate, do not include the new certificate in the certificate chain. Including it prevents the upload from completing successfully. 
+>When adding or updating an SSL certificate, do not include the new certificate in the certificate chain. Including it prevents the upload from completing. 
 
 **To update an expired customer managed SSL certificate:**
 
@@ -51,7 +51,7 @@ A user must be a member of the **Business Owner** or **Deployment Manager** role
 1. In the **View & Update SSL Certificate** dialog box, do the following:
 
     * (Optional) In the **Certificate name** field, type a new name. 
-    * In the **Certificate** field, paste the new certificate contents key.
+    * In the **Certificate** field, paste the new certificate contents.
     * In the **Private key** field, update this field only if you made changes to the certificate.
     * In the **Certificate chain** field (or chain of trust), paste the certificate chain.
 
@@ -66,15 +66,15 @@ A user must be a member of the **Business Owner** or **Deployment Manager** role
 
 ## Replace an expired customer managed SSL certificate {#replace-ssl-certificate}
 
-Follow the same steps that are described in [Update an expired SSL certificate](#update-ssl-certificate) to replace an expired, customer managed SSL certificate.
+Follow the same steps that are described in [Update an expired SSL certificate](#update-ssl-certificate) to replace an expired customer managed SSL certificate.
 
 ## Rename an Adobe managed SSL certificate (#rename-an-ssl-certificate)
 
-The following are a few reasons why you might want to rename an SSL certificate:
+The following are reasons to rename an SSL certificate:
 
 * **Improved organization**: Renaming the certificate can help clarify its purpose, such as identifying which environment (for example, staging, production) or domain it is for.
 * **Avoiding confusion**: If you are managing multiple certificates, a clear, descriptive name can help prevent mistakes, like applying the wrong certificate to the wrong domain.
-* **Compliance and auditing**: Properly named certificates may be easier to track for security and audit purposes.
+* **Compliance and auditing**: Properly named certificates are easier to track for security and audit purposes.
 
 **To rename an Adobe managed SSL certificate:**
 
@@ -101,7 +101,7 @@ Deleting Adobe managed or customer managed SSL certificates from Cloud Manager i
 
 >[!NOTE]
 >
->You cannot delete an Adobe managed SSL certificate that has one or more active domains associated with it. All associated active domains must be deleted before deleting the SSL certificate. See [Manage custom domain names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) to learn more.
+>You cannot delete an Adobe managed SSL certificate that has one or more active domains associated with it. All associated active domains must be deleted before deleting the SSL certificate. To learn more, see [Manage custom domain names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md).
 
 A user must be a member of the **Business Owner** or **Deployment Manager** role to complete this task.
 
@@ -117,20 +117,20 @@ A user must be a member of the **Business Owner** or **Deployment Manager** role
 
 1. On the SSL Certificates page, in the table row of the certificate you want to delete, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) at the far right, then click **Delete**.
 
-   If **Delete** has an information icon as seen in the following image, see the Note above.
+   If **Delete** has an information icon as seen in the following image, see the note above.
 
    ![Delete button with Information icon](/help/implementing/cloud-manager/assets/ssl/ssl-cert-delete-infoicon.png)
 
 1. In the **Delete SSL Certificate** dialog box, click **Delete** to confirm the deletion.
 
-1. Run the pipeline to undeploy the deleted certificate.
+1. To undeploy the deleted certificate, run the pipeline.
 
 
 ## Pre-existing CDN configurations {#pre-existing-cdn}
 
 If you already have a CDN configuration for your SSL certificate, the **SSL Certificates** page displays an informative message. It encourages you to add these configurations through the UI so they are visible and manageable in Cloud Manager.
 
-The message disappears after all pre-existing environment configurations are migrated using the UI. It may take one to two business days for the message to disappear.
+The message disappears after all pre-existing environment configurations are migrated using the UI. The message is removed within one to two business days.
 
 See [Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) for more details.
 

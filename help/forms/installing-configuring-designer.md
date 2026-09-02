@@ -5,6 +5,8 @@ keywords: Installing Designer, Installing Forms designer, Requirements for insta
 feature: Adaptive Forms, Forms Designer
 role: Admin, Developer, User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
+hide: true
+index: false
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
 ---
 # Download and Install Forms Designer {#installing-and-configuring-designer}

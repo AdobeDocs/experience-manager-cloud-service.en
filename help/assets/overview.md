@@ -1012,7 +1012,7 @@ Adobe offers robust Digital Asset Management (DAM) solutions for you to get the 
 
 * **Assets View**: Adobe's lightweight asset management experience to store, manage, discover, and use digital assets. Streamlined user interface containing essential Digital Asset Management capabilities. Designed for the light-weight DAM users with a focus on upload, metadata management, search, download, and sharing.
 
-![add-tags](assets/newui-overview.svg)
+![add-tags](assets/newui-overview.png)
 
 Users with access to the Admin view can also access the Assets view. Assets View provides a simplified user interface which makes it easy to manage, discover, and distribute your digital assets. A broad set of users from across different functions, including creatives, marketing and line-of-business teams, can collaborate on assets and access the right, approved assets when and where they need them. Many casual DAM users prefer the Assets view because it only contains a subset of features. The experience is targeted to creatives, read-only asset consumers, and lighter-weight DAM users.  
 
@@ -1023,3 +1023,23 @@ For information on how to access the Assets view and some of the simplifications
 ## AI Assistant in AEM
 
 For customers who have [completed pre-requisite criteria](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), the AI Assistant in AEM is available to users of their organization. See [AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

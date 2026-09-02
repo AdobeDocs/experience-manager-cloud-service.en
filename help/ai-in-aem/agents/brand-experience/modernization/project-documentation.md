@@ -33,7 +33,7 @@ Ensure the following before using this skill.
 
 Once the prerequisites are fulfilled, you simply need to ask the agent to create documentation for your project.
 
-1. In the chat ask "Create documentation of this project."
+1. In the chat ask `Create documentation for this project`.
 1. Provide the organization name of the project if the agent asks for it.
 1. The agent will ask which documentation you would like to create. Normally, you would select **All**.
 

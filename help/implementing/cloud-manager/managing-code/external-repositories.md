@@ -1,6 +1,6 @@
 ---
 title: Add External Repositories in Cloud Manager
-description: Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps repositories.
+description: Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub Enterprise Server, GitLab, Bitbucket, and Azure DevOps repositories.
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
@@ -9,19 +9,32 @@ exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
 
 <!-- badge: label="Beta - Azure DevOps only" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket" -->
 
-Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub Enterprise, GitLab, and Bitbucket repositories.
+Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub Enterprise Server, GitLab, Bitbucket, and Azure DevOps repositories.
 
 Customers can now also onboard their Azure DevOps Git repositories into Cloud Manager, with support for both modern Azure DevOps and legacy VSTS (Visual Studio Team Services) repositories.
 
 * For Edge Delivery Services users, the onboarded repository can be used to sync and deploy site code.
 * For AEM as a Cloud Service and Adobe Managed Services (AMS) users, the repository can be linked to both full-stack and frontend pipelines.
 
+>[!IMPORTANT]
+>
+>Cloud Manager validates GitHub repository ownership in one of the following two ways, depending on where the repository is hosted:
+>
+>* This page of instructions applies to adding any of the following repository types. These types use a PAT (Personal Access Token) and a manually configured webhook to validate ownership.
+>
+>   * GitHub Enterprise Server (self-hosted version of GitHub) repositories.
+>   * GitLab (both `gitlab.com` and the self-hosted version of GitLab) repositories.
+>   * Bitbucket (only `bitbucket.org`, cloud version) repositories. The self-hosted version of Bitbucket was deprecated as of February 15, 2024.
+>   * Azure DevOps (`dev.azure.com`) repositories.
+>* Repositories hosted on `github.com` use the Adobe GitHub app to validate ownership. No webhook configuration is required because Cloud Manager integrates directly through the app. See [Add a private GitHub repository in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md).
+>
+
 ## Configure an external repository
 
 Configuration of an external repository in Cloud Manager consists of the following steps:
 
-1. [Add an external repository](#add-external-repo) to a selected program
-1. [Link a validated external repository to a pipeline](#validate-ext-repo)
+1. [Add an external repository](#add-external-repo) to a selected program.
+1. [Link a validated external repository to a pipeline](#validate-ext-repo).
     <!--
      1. Provide an access token to the external repository.
     1. Validate ownership of the private GitHub repository.
@@ -57,28 +70,28 @@ Configuration of an external repository in Cloud Manager consists of the followi
     | --- | --- |
     | **Repository Name** | Required. An expressive name for your new repository. |
     | **Repository URL** | Required. The URL of the repository.<br><br>If you are using a GitHub-hosted repository, the path must end in `.git`.<br>For example, *`https://github.com/org-name/repo-name.git`* (URL path is for illustration purposes only).<br><br>If you are using an external repository, it must use the following URL path format:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> or<br>`https://self-hosted-domain/org-name/repo-name.git`<br>And match your Git vendor. |
-    | **Select Repository Type** | Required. Select the repository type that you are using. If the repository URL path includes the Git vendor name, such as GitLab or Bitbucket, the repository type is already pre-selected for you.:<ul><li>**GitHub** (GitHub Enterprise and the self-hosted version of GitHub)</li><li>**GitLab** (both `gitlab.com` and the self-hosted version of GitLab) </li><li>**Bitbucket** (only `bitbucket.org` - cloud version) is supported. The self-hosted version of Bitbucket was deprecated starting February 15, 2024.</li><li>**Azure DevOps** (`dev.azure.com`) </ul> |
+    | **Select Repository Type** | Required. Select the repository type that you are using. If the repository URL path includes the Git vendor name, such as GitLab or Bitbucket, the repository type is preselected for you:<br><br>* **GitHub** For repositories on `github.com`. That is, any GitHub plan (Free, Pro, Team, or Enterprise Cloud), see [Add a private GitHub repository in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) instead.<br>* **GitLab** Both `gitlab.com` and the self-hosted version of GitLab.<br>* **Bitbucket** Only `bitbucket.org`, the cloud version. The self-hosted version of Bitbucket was deprecated as of February 15, 2024.<br>* **Azure DevOps** (`dev.azure.com`) |
     | **Description** | Optional. A detailed description of the repository. |
 
 1. Select **Save** to add the repository. 
 
-    Now, provide an access token to validate ownership of the external repository. 
+    To validate ownership of the external repository, provide an access token. 
 
-1. In the **Private Repository Ownership Validation** dialog box, provide an access token to validate ownership of the external repository so you can access it, then click **Validation**.
+1. In the **Private Repository Ownership Validation** dialog box, to validate ownership of the external repository so you can access it, provide an access token, then click **Validation**.
 
     ![Selecting an existing access token for a repository](/help/implementing/cloud-manager/managing-code/assets/repositories-exisiting-access-token.png)
     *Selecting an existing access token for a Bitbucket repository (for illustration only).*
 
 >[!BEGINTABS]
 
->[!TAB GitHub Enterprise]
+>[!TAB GitHub Enterprise Server]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
 | Access token option | Description |
 | --- | --- |
 | **Use existing Access Token** | If you have already provided a repository access token for your organization and have access to multiple repositories, you can select an existing token. Use the **Token Name** drop-down list to choose the token you want to apply to the repository. Otherwise, add a new access token. |
-| **Add new Access Token** |<ul><li> In the **Token Name** text field, type a name for the access token you are creating.<li>Create a personal access token by following the instructions in the [GitHub documentation](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<li>Required permissions for the GitHub Enterprise Personal Access Token (PAT)<br>These permissions ensure that Cloud Manager can validate pull requests, manage commit status checks, and access necessary repo details.<br>When you generate the PAT in GitHub Enterprise, make sure it includes the following repository permissions:<ul><li>Pull request (read and write)<li>Commit statuses (read and write)<li>Repository metadata (read-only)</li></li></ul></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
+| **Add new Access Token** |<ul><li> In the **Token Name** text field, type a name for the access token you are creating.<li>Create a personal access token by following the instructions in the [GitHub documentation](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<li>Required permissions for the GitHub Enterprise Server Personal Access Token (PAT)<br>These permissions ensure that Cloud Manager can validate pull requests, manage commit status checks, and access necessary repo details.<br>When you generate the PAT in GitHub Enterprise Server, make sure it includes the following repository permissions:<ul><li>Pull request (read and write)<li>Commit statuses (read and write)<li>Repository metadata (read-only)</li></li></ul></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
 
 After validation, the external repository is ready to use and link to a pipeline.
 
@@ -160,9 +173,9 @@ For example, webhooks allow Cloud Manager to trigger actions based on events suc
 * Push events – Starts pipelines when the "On Git Commit" trigger is turned on (enabled).
 * Future comment-based actions – Allows workflows, such as direct deployment from a PR, to a Rapid Development Environment (RDE). 
 
-Webhook configuration is not required for repositories hosted on `GitHub.com` because Cloud Manager integrates directly through the GitHub app.
+Webhook configuration is not required for repositories hosted on `github.com` because Cloud Manager integrates directly through the GitHub app.
 
-For all other external repositories that are onboarded with an access token &ndash; such as GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps &ndash; webhook configuration is available and must be set up manually.
+For all other external repositories that are onboarded with an access token &ndash; such as GitHub Enterprise Server, GitLab, Bitbucket, and Azure DevOps &ndash; webhook configuration is available and must be set up manually.
 
 **To configure a webhook for an external repository:**
 
@@ -170,11 +183,11 @@ For all other external repositories that are onboarded with an access token &nda
 
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program to which you want to configure a webhook for an external Git repository.
 
-1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the left side menu.
+1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to display the left side menu.
 
 1. In the left side menu, Under the **Program** heading, click ![Folder outline icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **Repositories**.
 
-1. On the **Repositories** page, using the **Type** column to guide you in your selection, locate the repository you want, then click ![Ellipsis - More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to it.
+1. On the **Repositories** page, using the **Type** column to assist you in your selection, locate the repository you want, then click ![Ellipsis - More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to it.
 
    ![Config Webhook option on drop-down menu for a selected repository](/help/implementing/cloud-manager/managing-code/assets/repository-config-webhook.png)
 
@@ -189,7 +202,7 @@ For all other external repositories that are onboarded with an access token &nda
     1. Next to the **Webhook Secret** token/key field, click **Generate**, then click ![Copy icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
     Paste the secret in a plain text file. The copied secret is required for your Git vendor's Webhook settings.
 1. Click **Close**. 
-1. Navigate to your Git vendor solution (GitHub Enterprise, GitLab, Bitbucket, or Azure DevOps).
+1. Navigate to your Git vendor solution (GitHub Enterprise Server, GitLab, Bitbucket, or Azure DevOps).
 
     All the details on the webhook configuration and the events that are required for each vendor are available in [Add an external repository](#add-ext-repo). Under step 8, see the tabbed table.
 
@@ -197,14 +210,14 @@ For all other external repositories that are onboarded with an access token &nda
 1. Paste the Webhook URL that you copied earlier into the URL text field.
     1. Replace the `api_key` query parameter in the Webhook URL with your own real API key.
 
-        To generate an API key, you must create an integration project in Adobe Developer Console. See [Creating an API Integration Project](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) for full details.
+        To generate an API key, you must create an integration project in Adobe Developer Console. See [Creating an API Integration Project](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration) for full details.
     
 1. Paste the Webhook Secret that you copied earlier into the **Secret** (or **Secret key**, or **Secret token**) text field.
-1. Configure the webhook to send the events that Cloud Manager requires. Use the following table to determine the correct events for your Git provider.
+1. To send the events that Cloud Manager requires, configure the webhook. Use the following table to determine the correct events for your Git provider.
 
 >[!BEGINTABS]
 
->[!TAB GitHub Enterprise]
+>[!TAB GitHub Enterprise Server]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
@@ -248,26 +261,26 @@ The behavior varies depending on the Git provider that you use, as outlined belo
 >[!BEGINTABS]
 
 
->[!TAB GitHub Enterprise]
+>[!TAB GitHub Enterprise Server]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
-When the check is created, it appears like the following screenshot below. The key difference from `GitHub.com` is that `GitHub.com` uses a check-run, while GitHub Enterprise (using personal access tokens) generates a commit status:
+When the check is created, it appears as shown in the following screenshot. The key difference from `GitHub.com` is that `GitHub.com` uses a check-run, while GitHub Enterprise Server (using personal access tokens) generates the following commit status:
 
-![Commit status to indicate PR validation process on GitHub Enterprise](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
+![Commit status to indicate PR validation process on GitHub Enterprise Server](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
 
 
 >[!TAB GitLab]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
-GitLab interactions rely solely on comments. When validation begins, a comment is added. When validation is complete (whether successful or failed), the initial comment is removed and replaced with a new comment containing validation results or error details.
+GitLab interactions rely only on comments. When validation begins, a comment is added. When validation is complete (whether successful or failed), the initial comment is removed and replaced with a new comment containing validation results or error details.
 
 When code quality validation is running:
 
 ![When code quality validation is running](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab1.png)
 
-When cold quality validation is finished:
+When code quality validation is finished:
 
 ![When cold quality validation is finished](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab2.png)
 

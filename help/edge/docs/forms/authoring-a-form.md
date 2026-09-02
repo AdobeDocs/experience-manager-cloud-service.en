@@ -6,7 +6,6 @@ role: User, Developer
 exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
 hide: true
 index: false
-hidefromtoc: yes
 ---
 # How to Author Forms in Adobe Experience Manager (AEM)?
 

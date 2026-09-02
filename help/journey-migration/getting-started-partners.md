@@ -145,7 +145,7 @@ Before beginning your transition journey to Cloud Service, you should:
 </tr>
 <tr>
 <td>Measure</td>
-<td><ul><li><a href="https://experienceleague.adobe.com/welcome/aem/part6.html">Establish Project KPIs</a>, success criteria and project timelines</li></ul></td>
+<td><ul><li><a href="/help/overview/assessing-kpis.md">Establish Project KPIs</a>, success criteria and project timelines</li></ul></td>
 </tr>
 </table>
 

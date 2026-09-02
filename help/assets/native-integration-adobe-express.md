@@ -317,4 +317,96 @@ The [Content Fragments](/help/assets/content-fragments/content-fragments.md) tab
 ![Browse assets using Content Fragments](assets/browse-assets-content-fragment.png)
 -->
 
+## Frequently Asked Questions {#frequently-asked-questions-content-advisor}
+
+### What is Content Advisor in the AEM Assets and Adobe Express integration? {#content-advisor-overview}
+
+Content Advisor is an intelligent, context-aware asset discovery capability built into the native AEM Assets integration within Adobe Express. It surfaces relevant, approved assets based on the content of the Express canvas, campaign brief, and creative intent — without requiring manual keyword searches. Content Advisor also provides access to Dynamic Media renditions, asset metadata, filters, saved searches, and collections, enabling designers to locate, evaluate, and use AEM Assets directly within the Adobe Express interface without switching tools.
+
+### What are the prerequisites for using AEM Assets in Adobe Express? {#aem-assets-express-prerequisites}
+
+Using AEM Assets in Adobe Express requires entitlements to access Adobe Express and at least one AEM Assets environment. The environment can be any Adobe Experience Manager Assets as a Cloud Service repository. No additional connector or plugin installation is required — the integration is native to Adobe Express.
+
+### How do I start using AEM Assets in the Adobe Express editor? {#access-aem-assets-in-express}
+
+To start using AEM Assets in Adobe Express, open the Adobe Express web application and open a new blank canvas, template, or project. Click Assets in the left navigation pane to open Content Advisor, which displays the repositories available along with assets and folders at the root level. Browse or search for assets, then drag and drop them onto the canvas or click an asset to place it automatically. Assets can also be filtered by approval status, file type, MIME type, and dimensions. Note that filter by dimension does not apply to video assets.
+
+### Which repository type must I select in Content Advisor to access all features? {#content-advisor-repository-selection}
+
+An author repository must be selected from the Repository drop-down in Content Advisor to access all Content Advisor features including AI Search, Smart Suggestions, campaign briefs, and Dynamic Media renditions. A delivery repository does not display any Content Advisor features. Assets in a delivery repository are displayed at the root level only in a flat structure — they are not organized in folders or collections.
+
+### What file formats can be added to the Adobe Express canvas using Content Advisor? {#content-advisor-supported-formats}
+
+Content Advisor supports adding assets in PNG, JPEG, PSD, MP4, SVG, and PDF formats to the Adobe Express canvas. PDF files can be previewed as scrollable documents by clicking the Info icon on the asset card before placing them on the canvas. Asset metadata and Dynamic Media renditions are also accessible via the Info icon for each asset in both List and Grid views.
+
+### How does AI Search work in Content Advisor? {#content-advisor-ai-search-faq}
+
+AI Search in Content Advisor uses artificial intelligence and machine learning to interpret the meaning and intent behind a search query rather than matching exact keywords. It supports multilingual queries, handles misspellings and typos, understands synonyms and related terms, and delivers context-aware results based on user intent — enabling users to find relevant assets even when queries are phrased differently or entered in a different language. The minimum required AEM release version to access AI Search within Content Advisor is 21994.
+
+### What are Smart Suggestions in Content Advisor and what content do they analyze? {#content-advisor-smart-suggestions-overview}
+
+Smart Suggestions in Content Advisor automatically surface relevant assets based on the context and intent of text layers or the title present in the Adobe Express canvas. Smart Suggestions analyze text content on the canvas only — they do not analyze images available in the canvas. Smart Suggestions do not update automatically as the canvas changes; click the refresh icon on the Suggested Content panel to view an updated list of suggestions. The minimum required AEM release version to access Smart Suggestions is 21994.
+
+### Do Smart Suggestions in Content Advisor require any additional agreement to access? {#content-advisor-smart-suggestions-genai-rider}
+
+Accessing Smart Suggestions in Content Advisor requires signing a GenAI Rider. Contact your Adobe representative to sign the GenAI Rider and enable Smart Suggestions for your organization. Once the GenAI Rider is signed, Smart Suggestions become available within Content Advisor in Adobe Express for all users in the organization who meet the minimum AEM release version requirement of 21994.
+
+### How do I use a campaign brief to discover assets in Content Advisor? {#content-advisor-campaign-briefs}
+
+Content Advisor supports uploading a campaign brief document to discover relevant assets without manually entering search keywords. Upload a campaign brief in PDF, DOCX, or TXT format and Content Advisor analyzes the text content to understand the campaign's intent and recommends relevant assets from AEM Assets. Campaign briefs are analyzed based on text content only — images within the brief document are not analyzed. Accessing campaign briefs requires signing a GenAI Rider — contact your Adobe representative to enable this. The minimum required AEM release version is 21994.
+
+### How do I access Dynamic Media renditions for an asset in Content Advisor? {#content-advisor-dynamic-media-renditions}
+
+To access Dynamic Media renditions in Content Advisor, click the Info icon on an asset card and select the Dynamic Media tab. Available renditions include image presets, Smart Crops, format types, and color profiles optimized for specific channels. Select either Dynamic Media Scene7 or Dynamic Media with OpenAPI renditions. For OpenAPI renditions, available renditions display only when the asset is approved and available in Dynamic Media with OpenAPI. A valid AEM Dynamic Media license is required to view the Dynamic Media tab.
+
+### Can I preview and apply modifiers to Dynamic Media renditions before placing them on the canvas? {#content-advisor-dynamic-media-modifiers}
+
+Dynamic Media renditions in Content Advisor can be previewed and modified before being placed on the Adobe Express canvas. Click the preview icon on a rendition to preview it, or click the rendition name to place it directly on the canvas. Click Add Modifiers, specify a modifier in the text box, and press Enter to apply real-time transformations. Multiple modifiers can be applied and previewed simultaneously. Drag and drop the previewed rendition onto the canvas to place it — modifiers applied during preview are not saved to the asset in AEM Assets.
+
+### How does Dynamic Media help with the file size limit in Adobe Express? {#content-advisor-dynamic-media-file-size}
+
+Dynamic Media in Content Advisor overcomes the 80 MB upload file size limit in Adobe Express by delivering optimized renditions of large assets directly from AEM Assets. A 300 MB TIFF asset, for example, can be delivered as a 2.5 MB rendition without compromising visual quality. This enables efficient use of high-resolution assets in Adobe Express without requiring manual file size reduction or duplication before importing.
+
+### How do saved searches work in Content Advisor and are they shared with Assets view? {#content-advisor-saved-searches}
+
+Saved searches created in the Assets view are available in Content Advisor and work consistently across browsers, enabling reuse of predefined search criteria in both interfaces. To save a search in Content Advisor, apply the desired filters, click the filters icon, select Manage Saved Searches, click Create New Saved Search, and specify a name. Recent searches, however, are not consistent between Assets view and Content Advisor — the same user may have different recent searches in each interface. Recent searches are not shared across different browsers, are not available in Incognito mode, and are AEM environment-specific. The Default Saved Search feature available in Assets view is not available in Content Advisor.
+
+### Can I search for assets within a specific collection using Content Advisor? {#content-advisor-collection-search}
+
+Content Advisor supports searching for assets across all collections or limiting search to a specific collection. This enables quick access to assets from curated collections while preserving their intended organizational context. The same filtering capabilities available in Assets view apply to searches within collections in Content Advisor, ensuring a consistent asset discovery experience across AEM Assets and Adobe Express.
+
+### How do I replace an image on the Express canvas with an asset from AEM Assets? {#replace-image-aem-assets-express}
+
+To replace an image on the Adobe Express canvas with an asset from AEM Assets, select the image on the canvas, click Replace, and select AEM Assets from the available options. Content Advisor opens in the left navigation pane displaying the available repositories and assets. Select the replacement asset to preview it on the canvas, then click Replace to confirm. SVG file types are not supported for image replacement using this workflow.
+
+### How do I save an Adobe Express project back to the AEM Assets repository? {#save-express-project-aem-assets}
+
+To save an Adobe Express project to AEM Assets, click Share on the Express canvas to open the Share dialog, then select AEM Assets. In the upload dialog, select either Current Page or All Pages, specify a name and export format, and click the folder icon under Destination Folder to select a save location. Supported export formats include PNG, JPEG, PDF, MP4, MP4+PNG, and MP4+JPEG. Optionally add campaign metadata using the Project or Campaign Name, Keywords, and Channels fields before clicking Upload. If saving to a Content Hub delivery repository, the Project or Campaign Name field is mandatory and the destination folder is automatically derived from metadata.
+
+### What are the file size and dimension limits for assets imported into Adobe Express from AEM Assets? {#aem-assets-express-file-size-limits}
+
+Adobe Express via AEM Assets supports the following file size and dimension limits: JPEG and PNG assets support up to 65 megapixels — for example 8K × 8K or 16K × 4K — with a maximum file size of 80 MB on desktop and 40 MB on mobile. SVG files support a maximum file size of 250 KB. MP4 videos support up to 3840 × 3840 pixels with a maximum file size of 200 MB. PSD files support up to 65 megapixels with a maximum file size of 80 MB on desktop and 40 MB on mobile. PDF files have no defined maximum dimension or file size limit.
+
+### What are the video limitations in the AEM Assets and Adobe Express integration? {#aem-assets-express-video-limitations}
+
+The AEM Assets and Adobe Express integration supports MP4 as the only video file type for both import and export. For MP4 video import, videos with transparent backgrounds (alpha channel) are not supported. For MP4 video export, the maximum supported file size is 200 MB. If the export file size exceeds 200 MB, an alert recommends trimming the video to 200 MB or less, or manually uploading the video to the AEM Assets destination folder after downloading it locally.
+
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 

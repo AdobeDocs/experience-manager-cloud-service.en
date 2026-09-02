@@ -2,7 +2,6 @@
 title: Migrating Closed User Groups
 description: Learn about the required special considerations to enable Closed User Groups after migrating content to Adobe Experience Manager as a Cloud Service.
 hide: true
-hidefromtoc: yes
 exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
 feature: Migration
 role: Admin

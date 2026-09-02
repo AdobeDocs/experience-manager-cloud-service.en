@@ -9,7 +9,7 @@ role: Admin, Developer
 
 # Programs and program types {#understanding-programs} 
 
-Cloud Manager is built around a hierarchy of entities. The details are not critical to your everyday work in Cloud Manager, but an overview of it can help you as you understand programs and set up your own.
+Cloud Manager is organized as a hierarchy of entities. The details are not critical to your everyday work in Cloud Manager, but an overview of them can help you understand programs and set up your own.
 
 ![Cloud Manager hierarchy](assets/program-types1.png)
 
@@ -22,9 +22,9 @@ Cloud Manager is built around a hierarchy of entities. The details are not criti
 
 An example is often helpful in contextualizing this hierarchy.
 
-* WKND Travel and Adventure Enterprises might be a **tenant** that focuses on travel-related media.
-* The WKND Travel and Adventure Enterprises tenant might have two **programs**: one Sites program for WKND Magazine and one Assets program for WKND Media.
-* The WKND Magazine and WKND Media programs would both have dev, stage, and production **environments**.
+* WKND Travel and Adventure Enterprises is a **tenant** that focuses on travel-related media.
+* The WKND Travel and Adventure Enterprises tenant has two **programs**: one Sites program for WKND Magazine and one Assets program for WKND Media.
+* The WKND Magazine and WKND Media programs both have dev, stage, and production **environments**.
 
 ## Source code repository {#source-code-repository}
 
@@ -32,7 +32,7 @@ A Cloud Manager program comes auto-provisioned with its own Git repository.
 
 Users can access the Cloud Manager Git repository using a Git client with a command-line tool or a standalone visual Git client. Alternatively, they can use their preferred Integrated Development Environment (IDE), such as Eclipse, IntelliJ, or NetBeans.
 
-Once a Git client is set up, you can manage your Git repository from the Cloud Manager user interface. To learn about how to manage Git using the Cloud Manager user interface, see [Access Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
+Once a Git client is set up, you can manage your Git repository from the Cloud Manager user interface. To learn how to manage Git using the Cloud Manager user interface, see [Access Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 To start developing the AEM Cloud application, check out the application code from the Cloud Manager repository to your local computer.
 
@@ -46,7 +46,7 @@ The workflow follows a standard Git process:
 1. The user makes changes in their local repository.
 1. When ready, the user commits the changes back into the remote Git repository.
 
-The only difference is that the remote Git repository is part of Cloud Manager, which is transparent to the developer.
+The only difference is that the remote Git repository is part of Cloud Manager, which is not visible to the developer.
 
 ## Program types {#program-types}
 

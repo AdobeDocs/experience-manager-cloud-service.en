@@ -45,10 +45,7 @@ Before you install the connector, follow these pre-installation steps:
    >
    >* To find the IP of your program, open a terminal window and run a command, such as:
    >
-   >    ```
-   >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
-   >
-   >    ```
+   >  `>dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com`
 
 1. Ensure that the following overlays do not exist in [!DNL Experience Manager] repository. If you have pre-existing overlays on these paths you either need to remove the overlays, or merge the delta of changes between the two:
 
@@ -150,3 +147,21 @@ To create a connection with [!DNL Workfront], follow these steps:
    ![Connect [!DNL Experience Manager] and [!DNL Workfront]](/help/assets/assets/wf-connection-config.png)
 
 1. Navigate to the **[!UICONTROL Advanced]** tab and select the option **[!UICONTROL Is the Server AEM as a Cloud Service]**.
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

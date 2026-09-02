@@ -34,9 +34,9 @@ Use Cases:
 EDS with CDN integration is beneficial for various scenarios, including e-commerce storefronts and websites requiring high performance and scalability.
 -->
 
-## Edge Delivery Services deployment options in Adobe Managed CDN in Cloud Manager {#deployment-options}
+## Edge Delivery Services deployment options for Adobe Managed CDN in Cloud Manager {#deployment-options}
 
-This topic explains the two ways you can deploy Edge Delivery Services on Adobe Managed CDN in Cloud Manager and, just as importantly, helps you decide which option is best for your use case.
+This topic explains the two ways you can deploy Edge Delivery Services on Adobe Managed CDN in Cloud Manager and helps you decide which option is best for your use case.
 
 Edge Delivery Services can be set up using one of the following two options. Each has different capabilities.
 

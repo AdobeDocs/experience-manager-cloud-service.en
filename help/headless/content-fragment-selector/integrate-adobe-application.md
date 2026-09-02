@@ -86,7 +86,7 @@ For property details see [ImsAuthService Properties](/help/headless/content-frag
     function renderFragmentSelectorInline() {
     console.log("initializing Fragment Selector");
     const props = {
-    "repositoryId": "delivery-p64502-e544757.adobeaemcloud.com",
+    "repositoryId": "delivery-pXXXXX-eYYYYY.adobeaemcloud.com",
     "apiKey": "ngdm_test_client",
     "imsOrg": "<IMS org>",
     "imsToken": apiToken,

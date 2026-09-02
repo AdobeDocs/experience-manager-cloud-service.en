@@ -6,7 +6,6 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 hide: true
-hidefromtoc: yes
 exl-id: 09d9c6ef-8079-4085-b494-8c58dbdeaf02
 ---
 # Create your loan application form

@@ -4,7 +4,6 @@ description: Learn how to configure form submissions and integrate Forms Experie
 feature: Edge Delivery Services
 hide: true
 index: false
-hidefromtoc: yes
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: c772556b-dab6-4fa8-b728-1fe52c6596a4

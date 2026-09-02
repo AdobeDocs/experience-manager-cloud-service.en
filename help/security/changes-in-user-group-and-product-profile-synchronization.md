@@ -4,7 +4,6 @@ description: Learning about the changes in user group and product profile synchr
 feature: Security
 role: Admin
 hide: true
-hidefromtoc: yes
 exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
 ---
 # Changes in User Group and Product Profile Synchronization {#changes-in-user-group-and-product-profile-synchronization}

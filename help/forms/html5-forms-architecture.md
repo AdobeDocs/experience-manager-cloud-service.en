@@ -12,12 +12,8 @@ exl-id: ed8349a1-f761-483f-9186-bf435899df7d
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
-hidefromtoc: yes
 ---
 # Architecture of HTML5 forms{#architecture-of-html-forms}
-
-<span class="preview"> The HTML5 Forms capability is offered as part of Early Access Program. To request access, send an email from your official (work) email ID to aem-forms-ea@adobe.com.
-</span>
 
 ## Architecture {#architecture}
 

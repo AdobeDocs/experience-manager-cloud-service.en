@@ -134,6 +134,7 @@ Viewer modifiers allow you to control asset loading, playback behavior, streamin
 | `isletterboxed=true/false` | Controls whether the video is letterboxed or stretched. |
 | `customcss` | Specifies a custom CSS file for viewer styling. |
 | `transition` | Specifies the show or hide transition behavior for viewer controls. |
+| `mode=smartcrop` | Displays the smart cropped output for the video. |
 
 Modifiers are specified as query parameters in the **Viewer Modifiers** field.
 

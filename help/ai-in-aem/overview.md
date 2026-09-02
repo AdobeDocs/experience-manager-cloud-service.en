@@ -10,9 +10,15 @@ exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
 
 Artificial Intelligence (AI) is an integral part of Adobe Experience Manager as a Cloud Service, supporting users finding information or generating experiences.
 
-## AI Assistant {#ai-assistant}
+<!-- CQDOC-23874 - needs adjustment? -->
 
-The [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/ai-assistant-in-aem.md) offers a conversational interface designed to streamline finding answers to your AEM-related queries.
+## AEM Agentic Capability use cases in Coworker {#aem-use-cases-in-coworker}
+
+From agents to skills, for more information see:
+
+* [Adobe Experience Manager skills in Coworker](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/use-cases/overview)
+
+* [Agentic Capabilities in AEM](/help/ai-in-aem/agentic-capabilities/overview.md)
 
 ## Agentic AI in AEM {#agentic-ai-in-aem}
 
@@ -21,6 +27,10 @@ AEM provides a range of [agents](/help/ai-in-aem/agents/overview.md) to accelera
 * [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) 
 * [Content Advisor Agent](/help/ai-in-aem/agents/content-advisor/overview.md)
 * [Governance Agent](/help/ai-in-aem/agents/governance/overview.md)
+
+## AI Assistant {#ai-assistant}
+
+The [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/ai-assistant-in-aem.md) offers a conversational interface designed to streamline finding answers to your AEM-related queries.
 
 ## Generative AI in AEM {#generative-ai-in-aem}
 
@@ -56,6 +66,10 @@ Generative AI is used throughout AEM:
 * [AI Translation Integration](/help/sites-cloud/administering/translation/ai-translation-integration.md)
 
   AI translation integration lets you use a large language model (LLM) as a translation service for content you author in Adobe Experience Manager. You connect AEM to your LLM provider (starting with Microsoft Azure OpenAI), reuse the same translation workflows as for other connectors, and optionally upload translation style guides so AEM can generate rules that keep tone, terminology, and brand language consistent across locales.
+
+* [AEM Content AI](https://experienceleague.adobe.com/en/docs/experience-manager-content-ai/using/introduction)
+
+  AEM Content AI helps brands maintain accurate, current, and on-brand content as AI systems increasingly represent their messages, providing AI-assisted authoring, natural-language content discovery, and brand-aware generation for both human and AI-driven experiences.
    
 <!-- 
   * [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/aem-ai-assistant.md)

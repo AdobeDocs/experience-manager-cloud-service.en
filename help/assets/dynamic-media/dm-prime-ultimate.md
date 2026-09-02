@@ -48,7 +48,7 @@ In addition to the Dynamic Media Prime features such as AEM Assets integration w
 
 * [Dynamic Media solution in AEM as a Cloud Service](/help/assets/dynamic-media/dynamic-media.md), which also includes the following key capabilities: 
    
-   * [Dynamic Media templates](/help/assets/dynamic-media/dynamic-media-templates.md)
+   * [Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
    * [Template Basics](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
    * [Visual Configuration](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 

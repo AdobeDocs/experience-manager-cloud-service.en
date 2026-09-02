@@ -52,9 +52,82 @@ Before you can configure traffic at the CDN you need to do the following:
 
 The rule types in the sections below share a common syntax.
 
-A rule is referenced by a name, a conditional "when clause", and actions.
+Typical rule syntax is a list entry with a name, a `when` condition, and an action or actions:
 
-The "when" clause determines whether a rule will be evaluated, based on properties including domain, path, query strings, headers, and cookies. The syntax is the same across rule types; for details, see the [Condition Structure section](/help/security/traffic-filter-rules-including-waf.md#condition-structure) in the Traffic Filter Rules article.
+```
+- name: <name>
+  when: <condition>
+  action: <action>
+```
+
+Each top-level section (`requestTransformations`, `responseTransformations`, `redirects`, `originSelectors`, and `trafficFilters` in [Traffic filter rules](/help/security/traffic-filter-rules-including-waf.md)) supports its own set of action types and properties; the allowed `type` values and fields are defined in that section’s tables and examples, not shared across all rule kinds. Sections such as `requestTransformations` and `responseTransformations` support multiple actions specified as a yaml list under `actions` property.
+
+The "when" clause determines whether a rule will be evaluated, based on properties including domain, path, query strings, headers, and cookies. The syntax is the same across rule types; see [Condition Structure](#condition-structure) below. Traffic filter rules (including WAF) use the same condition syntax; see [Traffic Filter Rules including WAF rules](/help/security/traffic-filter-rules-including-waf.md) for actions, rate limits, and WAF-specific behavior.
+
+### Condition Structure {#condition-structure}
+
+A Condition can be either a simple Condition or a group of Conditions.
+
+**Simple Condition**
+
+A Simple Condition is composed of a getter and a predicate.
+
+```
+{ <getter>: <value>, <predicate>: <value> }
+```
+
+**Group Conditions**
+
+A Group of Conditions is composed of multiple Simple and/or Group Conditions.
+
+```
+<allOf|anyOf>:
+  - { <getter>: <value>, <predicate>: <value> }
+  - { <getter>: <value>, <predicate>: <value> }
+  - <allOf|anyOf>:
+    - { <getter>: <value>, <predicate>: <value> }
+```
+
+|  **Property** | **Type**  | **Meaning**  |
+|---|---|---|
+| **allOf**  | `array[Condition]` | **and** operation. true if all listed conditions return true  |
+|  **anyOf** |  `array[Condition]` | **or** operation. true if any of listed conditions return true  |
+
+**Getter**
+
+| **Property**   | **Type**  | **Description**  |
+|---|---|---|
+| reqProperty  | `string`  | Request property.<br><br>One of:<br><ul><li>`path`: Returns the full path of a URL without the query parameters. (use `pathRaw` for the unescaped variant)</li><li>`originalPath`: Returns the immutable original path of the request without the query parameters — the path before any CDN request transformations.</li><li>`url`: Returns the full URL including the query parameters. (use `urlRaw` for the unescaped variant)</li><li>`originalUrl`: Returns the immutable original full URL of the request including the query parameters — the URL before any CDN request transformations.</li><li>`queryString`: Returns the query part of a URL</li><li>`method`: Returns the HTTP method used in the request.</li><li>`tier`: Returns one of `author`, `preview`, or `publish`.</li><li>`domain`: Returns the domain property (as defined in the `Host` header) in lower-case</li><li>`clientIp`: Returns the client IP.</li><li>`forwardedDomain`: Returns the first domain defined in the `X-Forwarded-Host` header in lower-case</li><li>`forwardedIp`: Returns the first IP in `X-Forwarded-For` header.</li><li>`clientRegion`: Returns the country subdivision code that identify in which region the client is located as described in [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2).</li><li>`clientCountry`: Returns a two letter code ([Regional indicator symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) that identify in which country the client is located.</li><li>`clientContinent`: Returns a two letter code (AF, AN, AS, EU, NA, OC, SA) that identify in which continent the client is located.</li><li>`clientAsNumber`: Returns the [Autonomous System](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) number associated to the client IP.</li><li>`clientAsName`: Returns the name associated to the Autonomous System number.</li></ul> |
+| reqHeader  | `string`  | Returns Request Header with specified name  |
+| queryParam  | `string` | Returns Query Parameter with specified name  |
+| reqCookie  | `string`  | Returns Cookie with specified name  |
+| postParam  | `string`  | Returns Post Parameter with specified name from Request body. Only works when body is of content type `application/x-www-form-urlencoded` |
+
+**Predicate**
+
+| **Property**  | **Type**  | **Meaning**  |
+|---|---|---|
+|  **equals** | `string`  | true if the getter result equals to provided value  |
+|  **doesNotEqual** | `string`  | true if the getter result is not equal to provided value  |
+| **like**  | `string`  | true if getter result matches provided pattern  |
+| **notLike**  | `string`  | true if getter result does not match provided pattern  |
+| **matches**  | `string`  | true if getter result matches provided regex  |
+| **doesNotMatch**  | `string`  | true if getter result does not match provided regex  |
+| **in**  | `array[string]`  | true if provided list contains getter result  |
+|  **notIn** | `array[string]`  | true if provided list does not contain getter result  |
+|  **exists** | `boolean`  | true when set to true and property exists or when set to false and property does not exist  |
+
+**Notes**
+
+* The request property `clientIp` can only be used with the following predicates: `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` can also be compared against IP ranges when using `in` and `notIn` predicates. The following example implements a condition to evaluate if a client IP is in the IP range of 192.168.0.0/24 (so from 192.168.0.0 to 192.168.0.255):
+
+```
+when:
+  reqProperty: clientIp
+  in: [ "192.168.0.0/24" ]
+```
+
+* Adobe recommends the use of [regex101](https://regex101.com/) and [Fastly Fiddle](https://fiddle.fastly.dev/) when working with regex. You can also learn more about how Fastly handles regex from [fastly documentation - Regular expressions in Fastly VCL](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
 
 The details of the actions node differ per rule type, and are outlined in the individual sections below.
 
