@@ -44,7 +44,7 @@ The endpoint is `https://mcp.adobeaemcloud.com/adobe/mcp/aem`
 
 |Category|Description|On by default|Supports Read-write|Supports Read-only|
 |---|---|---|---|---|
-|**Content**|Content operations including create, read, update, and delete (CRUD) for pages and content fragments, plus asset importing and assets search (minimum required AEM release version is `26309`). There is also support for asset upload, download, move/copy/delete, and publish/unpublish for assets, along with editing metadata, inspecting references, and identifying unused assets.| Yes | Yes (default) | Yes |
+|**Content**|Content operations including create, read, update, and delete (CRUD) for pages and content fragments, plus asset importing and assets search (minimum required AEM release version is `26309`). There is also support for asset upload, download, move/copy/delete, and publish/unpublish for assets, along with editing metadata, inspecting references, and identifying unused assets. If you have Dynamic Media with OpenAPI enabled, you can also generate on-the-fly renditions.| Yes | Yes (default) | Yes |
 |**Experience Governance**|Evaluate content (text, images, pages) against brand governance rules, and list brand configurations and checks.<br/>If you are interested, you must sign up for the [agents trial or have a paid license](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) in order to access the Experience Governance MCP.| Yes, but see note | -- | Yes (default)|
 
 <!-- 
@@ -215,6 +215,12 @@ Some representative scenarios include:
    >[!NOTE]
    >
    >Minimum required AEM release version to access **Assets Search** via MCP endpoint is `26309`.
+
+* Content (image) optimization: Generate web-optimized image URLs with resizing, cropping, Smart Crop, and conversion to WebP, AVIF, PNG, and other formats.
+
+   >[!NOTE]
+   >
+   >You must have Dynamic Media with OpenAPI enabled to generate on-the-fly renditions.
 
 ### Example Workflows {#example-workflows}
 
