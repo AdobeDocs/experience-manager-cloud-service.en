@@ -20,9 +20,7 @@ These **preview** release notes are provided as a convenience so you know what c
 >
 >The content of the actual release as well as the release date are subject to change.
 
-## Upcoming Features {#upcoming-features}
-
-
-
 ## Upcoming Changes {#upcoming-improvements}
 
+* The rich text validator now correctly treats tag/markup-only content as empty, removing stale handling for a non-string rich text shape.
+* A but was fixed for the alert icon layout in Tabs.
