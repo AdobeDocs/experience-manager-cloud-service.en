@@ -48,7 +48,7 @@ To obtain access to upcoming features before their general release, you can part
 
 See also [AEM Beta programs](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
 
-The following beta program opportunities are currently available:
+The following beta program opportunity is currently available:
 
 ### Edge Delivery Services with AEM Authoring and flexible publish tier configuration {#eds-with-aem-authoring}
 
