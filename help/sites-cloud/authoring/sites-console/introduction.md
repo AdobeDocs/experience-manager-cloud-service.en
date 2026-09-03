@@ -153,7 +153,7 @@ Selecting a resource in the leftmost column will display the child resources in 
   * The details of the selected resource are shown in the final column.
   * The action toolbar becomes available.
 
-* When a page is selected in column view, the selected page is displayed in the final colum along with the following details:
+* When a page is selected in column view, the selected page is displayed in the final column along with the following details:
 
   * Page title
   * Page name (part of the page's URL)
@@ -161,6 +161,7 @@ Selecting a resource in the leftmost column will display the child resources in 
   * Modification details
   * Page language
   * Publication, and Preview details
+  * [Page on/off time](/help/sites-cloud/authoring/sites-console/page-properties.md#on-off-time) (if set)
 
 ### Card View {#card-view}
 
@@ -195,7 +196,12 @@ List view provides information for each resource at the current level in a list.
 
   * **Name** - Page name, which can be useful in a multilingual authoring environment since it is part of the page's URL and does not change regardless of language
   * **Modified** - Last modified date and last modified by user
+    * The column entry will be badged with a warning icon if the page has been updated since last publication.
+    * ![Modified since last publication](assets/modified.png)
   * **Published** - Publication status
+    * The column entry will be badged with a clock icon if the page has on/off times set.
+    * Hover over the icon for details.
+    * ![On off time set](assets/on-off-time.png)
   * **Preview** - Preview status
   * **Template** - Template on which the page is based
   * **Operation**
