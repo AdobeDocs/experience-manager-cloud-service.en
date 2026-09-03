@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2026 {#2026}
+      + [Release Notes for 2026.7.0](/help/release-notes/release-notes-cloud/2026/2026-7-0.md)
       + [Release Notes for 2026.6.0](/help/release-notes/release-notes-cloud/2026/2026-6-0.md)
       + [Release Notes for 2026.5.0](/help/release-notes/release-notes-cloud/2026/2026-5-0.md)
       + [Release Notes for 2026.4.0](/help/release-notes/release-notes-cloud/2026/2026-4-0.md)
@@ -104,6 +105,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2026 {#2026}
+      + [Maintenance Release Notes for 2026.8.0](/help/release-notes/maintenance/2026/2026-8-0.md)
       + [Maintenance Release Notes for 2026.7.0](/help/release-notes/maintenance/2026/2026-7-0.md)
       + [Maintenance Release Notes for 2026.6.0](/help/release-notes/maintenance/2026/2026-6-0.md)
       + [Maintenance Release Notes for 2026.5.0](/help/release-notes/maintenance/2026/2026-5-0.md)
@@ -148,6 +150,7 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2026 {#2026}
+      + [2026.7.0](/help/implementing/cloud-manager/release-notes/2026/2026-7-0.md)      
       + [2026.6.0](/help/implementing/cloud-manager/release-notes/2026/2026-6-0.md)
       + [2026.5.0](/help/implementing/cloud-manager/release-notes/2026/2026-5-0.md)
       + [2026.4.0](/help/implementing/cloud-manager/release-notes/2026/2026-4-0.md)
@@ -265,6 +268,9 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.08.20 Release Notes](/help/release-notes/universal-editor/2026/2026-08-20.md)
+      + [2026.08.13 Release Notes](/help/release-notes/universal-editor/2026/2026-08-13.md)
+      + [2026.08.06 Release Notes](/help/release-notes/universal-editor/2026/2026-08-06.md)
       + [2026.07.30 Release Notes](/help/release-notes/universal-editor/2026/2026-07-30.md)
       + [2026.07.16 Release Notes](/help/release-notes/universal-editor/2026/2026-07-16.md)
       + [2026.07.09 Release Notes](/help/release-notes/universal-editor/2026/2026-07-09.md)
@@ -665,6 +671,7 @@ user-guide-title: AEM as a Cloud Service
     + [Detect duplicate assets](/help/assets/detect-duplicate-assets.md)
     + [Developer docs and APIs references](/help/assets/developer-reference-material-apis.md)
     + [Folder metadata schema](/help/assets/folder-metadata-schema.md)
+    + {hide-from-toc} [Generate Brand Aware Metadata](/help/assets/brand-aware-metadata.md)
     + [Work with image and video profiles](/help/assets/dynamic-media/about-image-video-profiles.md)
     + [Translate assets](/help/assets/translate-assets.md)
     + [Search facets](/help/assets/search-facets.md)
@@ -764,6 +771,8 @@ user-guide-title: AEM as a Cloud Service
     + [HTTP2 Delivery of Content FAQ](/help/assets/dynamic-media/http2faq.md)
     + [Flash Viewers End-of-Life](/help/assets/dynamic-media/flash-viewers-eol.md)
     + [DHTML Viewers End-of-Life](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
+    + [Custom Thumbnail Support for Videos](/help/assets/dynamic-media/custom-thumbnail.md)
+    + [Transcription Support in Dynamic Media Components](/help/assets/dynamic-media/transcription-support.md)
     + Dynamic Media with OpenAPI capabilities {#dynamic-media-open-apis}
       + [Overview](/help/assets/dynamic-media-open-apis-overview.md)
       + [Approve assets](/help/assets/approve-assets.md)
@@ -780,6 +789,7 @@ user-guide-title: AEM as a Cloud Service
       + [Video smart crops](/help/assets/video-smart-crops.md)
       + [Multi audio and Multi captions](/help/assets/multi-audio-multi-caption.md)
       + [Generate and translate captions](/help/assets/generate-translate-captions.md)
+      + [C2PA metadata](/help/assets/c2pa-metadata.md)
       + [Frequently asked questions](/help/assets/dynamic-media-open-apis-faqs.md)
   + Working with Assets view {#assets-view}
     + [Introduction](/help/assets/assets-view-introduction.md)
@@ -806,7 +816,7 @@ user-guide-title: AEM as a Cloud Service
     + [Watch asset, folders, and collections](/help/assets/manage-notifications-assets-view.md)
     + [Reprocessing](/help/assets/reprocessing-assets-view.md)
     + [Manage tags](/help/assets/tagging-management-assets-view.md)
-    + [Content Credentials](/help/assets/content-credentials.md)
+    + [C2PA metadata](/help/assets/c2pa-metadata-assets-view.md)
     + [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
     + [AEM Assets View UI Extensibility](/help/assets/aem-assets-view-ui-extensibility.md)
     + [Dynamic Media delivery reports](/help/assets/dynamic-media-delivery-reports.md)
@@ -827,6 +837,7 @@ user-guide-title: AEM as a Cloud Service
     + [Manage Licensed Assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md)
     + [Manage collections in Content Hub](/help/assets/collections-content-hub.md)
     + [Edit images using Adobe Express in Content Hub](/help/assets/edit-images-content-hub.md)
+    + [Generate on the fly Dynamic Media Renditions](/help/assets/generate-on-the-fly-dynamic-media-renditions.md)
     + [Asset Insights in Content Hub](/help/assets/insights-content-hub.md)
     + [Frequently asked questions for Content Hub](/help/assets/frequently-asked-questions-content-hub.md)  
   + Best practices{#best-practices}
@@ -908,6 +919,7 @@ user-guide-title: AEM as a Cloud Service
         + [Configure SharePoint Site with limited access using authorization scope](/help/forms/configure-sharepoint-site-limited-access.md)
       + [Submit an Adaptive Form to Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
       + [Submit an Adaptive Form to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
+      + [Azure Blob Storage Network Restrictions and Dedicated Egress IP Considerations](/help/forms/azure-blob-storage-network-restrictions-dedicated-egress-ip.md)
       + [Configure Submit to REST Endpoint submit action for Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
       + [Configure environment-specific REST endpoints for the same Adaptive Form](/help/forms/configure-environment-specific-rest-endpoints.md)
       + [Submit an Adaptive Form to Microsoft&reg; OneDrive](/help/forms/configure-submit-action-onedrive.md)
@@ -1170,6 +1182,23 @@ user-guide-title: AEM as a Cloud Service
       + [Setting Up Microsoft Copilot Studio with AEM MCP](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
       + [Setting Up JetBrains with GitHub Copilot and AEM MCP](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
   + [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md)
+  + Agentic Capabilities in AEM {#agentic-capabilities}
+    + [Overview](/help/ai-in-aem/agentic-capabilities/overview.md)
+    + Brand Experience {#brand-experience}
+      + Experience Production {#experience-production}
+        + [Experience Production use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/use-cases.md)
+        + [Forms use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/forms-use-cases.md)
+      + Development {#development}
+        + [Development use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/development/use-cases.md)
+      + Onboarding {#onboarding}
+        + [Onboarding use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/onboarding/use-cases.md)
+    + Content Advisor {#content-advisor}
+      + Discovery {#discovery}
+        + [Discovery use cases](/help/ai-in-aem/agentic-capabilities/content-advisor/discovery/use-cases.md)
+      + Content Optimization {#content-optimization}
+        + [Content Optimization use cases](/help/ai-in-aem/agentic-capabilities/content-advisor/content-optimization/use-cases.md)
+    + Brand Governance {#brand-governance}
+      + [Brand Governance use cases](/help/ai-in-aem/agentic-capabilities/brand-governance/use-cases.md)
   + Agents in AEM {#agents}
     + [Overview](/help/ai-in-aem/agents/overview.md)
     + Brand Experience Agent {#brand-experience}
@@ -1206,16 +1235,16 @@ user-guide-title: AEM as a Cloud Service
     + [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md)
     + [Generate Variations](/help/generative-ai/generate-variations.md)
   + Forms Experience Builder {#forms-experience-builder}
-    + {hide-from-toc} [Forms Experience Builder - Overview](/help/forms/experience-builder/product-overview.md)
-    + {hide-from-toc} [Getting started with Forms Experience Builder](/help/forms/experience-builder/forms-experience-builder-getting-started.md)
-    + {hide-from-toc} [Deploy and configure Forms Experience Builder](/help/forms/experience-builder/deploy-forms-experience-builder.md)
+    + [Forms Experience Builder - Overview](/help/forms/experience-builder/product-overview.md)
+    + [Getting started with Forms Experience Builder](/help/forms/experience-builder/forms-experience-builder-getting-started.md)
+    + [Deploy and configure Forms Experience Builder](/help/forms/experience-builder/deploy-forms-experience-builder.md)
     + How to {#forms-experience-builder-how-to}
-      + {hide-from-toc} [How to convert an image to a form?](/help/forms/experience-builder/intelligent-import-conversion.md)
-      + {hide-from-toc} [How to configure form submissions and integrations?](/help/forms/experience-builder/form-submission-integration.md)
-      + {hide-from-toc} [How to create LLM-enhanced smart fields in Forms Experience Builder? ](/help/forms/experience-builder/forms-experience-builder-llm-smart-fields.md)
-      + {hide-from-toc} [How to start a new thread conversation in forms experience builder?](/help/forms/experience-builder/configure-forms-experience-builder-ui-options.md)
-    + {hide-from-toc} [Prompt Library](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)
-    + {hide-from-toc} [Frequently asked questions (FAQ)](/help/forms/experience-builder/forms-experience-builder-frequently-asked-questions.md)
+      + [How to convert an image to a form?](/help/forms/experience-builder/intelligent-import-conversion.md)
+      + [How to configure form submissions and integrations?](/help/forms/experience-builder/form-submission-integration.md)
+      + [How to create LLM-enhanced smart fields in Forms Experience Builder?](/help/forms/experience-builder/forms-experience-builder-llm-smart-fields.md)
+      + [How to start a new thread conversation in forms experience builder?](/help/forms/experience-builder/configure-forms-experience-builder-ui-options.md)
+    + [Prompt Library](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)
+    + [Frequently asked questions (FAQ)](/help/forms/experience-builder/forms-experience-builder-frequently-asked-questions.md)
 + Screens {#screens-as-cloud-service}
   + Overview to Screens as a Cloud Service {#overview}
     + [Introduction](/help/screens-cloud/introduction/introduction.md)
@@ -1534,7 +1563,7 @@ user-guide-title: AEM as a Cloud Service
     + [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
     + [AEM Rapid Development Environments](/help/implementing/developing/introduction/rapid-development-environments.md)
     + [AEM as a Cloud Service Development Guidelines](/help/implementing/developing/introduction/development-guidelines.md)
-    + [AEM as a Cloud Service Developer Console (Beta)](/help/implementing/developing/introduction/aem-developer-console.md)
+    + [AEM as a Cloud Service Developer Console](/help/implementing/developing/introduction/aem-developer-console.md)
     + [Logging](/help/implementing/developing/introduction/logging.md)
     + [Log Forwarding](/help/implementing/developing/introduction/log-forwarding.md)
     + [Configurations and the Configuration Browser](/help/implementing/developing/introduction/configurations.md)
