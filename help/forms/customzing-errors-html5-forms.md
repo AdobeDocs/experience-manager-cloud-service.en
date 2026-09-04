@@ -10,9 +10,6 @@ role: Admin, User, Developer
 ---
 # Customizing error messages for HTML5 forms {#customizing-error-messages-for-html-forms}
 
-<span class="preview"> The HTML5 Forms capability is offered as part of Early Access Program. To request access, send an email from your official (work) email ID to aem-forms-ea@adobe.com.
-</span>
-
 In HTML5 forms, out of the box, the error messages, and warnings have a fixed position and appearance (font and color), the error is displayed only for a selected field, and only one error is displayed.
 
 The article provides the steps to customize HTML5 forms error messages so you can do the following:
