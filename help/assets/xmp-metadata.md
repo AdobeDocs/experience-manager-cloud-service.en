@@ -73,7 +73,7 @@ XMP offers you the ability to add an `xml:lang` property to text properties to s
 
 ## Customizing the XMP metadata blocklist (OSGi) {#customizing-the-XMP-metadata-blocklist}
 
-The **[!UICONTROL com.day.cq.dam.commons.metadata.XmpFilterBlackWhite]** OSGi component that controls which XMP metadata properties are filtered out of the Digital Asset Management (DAM) assets is supported in Adobe Experience Manager (AEM) as a cloud service. Note that the configuration property name has been changed from **[!UICONTROL xmp.filter.blacklist]** (AEM 6.5) to **[!UICONTROL xmp.filter.blocklist]** (AEMaaCS). Using the old property name silently has no effect. Deploy the OSGi configuration as usual and verify the applied values in the developer console after deployment.
+The `com.day.cq.dam.commons.metadata.XmpFilterBlackWhite` OSGi component that controls which XMP metadata properties are filtered out of the Digital Asset Management (DAM) assets is supported in Adobe Experience Manager (AEM) as a cloud service. Note that the configuration property name has been changed from `xmp.filter.blacklist` (AEM 6.5) to `xmp.filter.blocklist` (AEMaaCS). Using the old property name silently has no effect. Deploy the OSGi configuration as usual and verify the applied values in the developer console after deployment.
 
 
 ## XMP writeback to renditions {#xmp-writeback-to-renditions}

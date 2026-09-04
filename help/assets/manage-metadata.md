@@ -107,7 +107,7 @@ The cost of manually creating descriptive metadata information is high. So, stan
 
 ### Assets View versus Sites or Admin View metadata differences {#metadata-differences}
 
-AEM Assets view (the experience cloud or react-based UI) and classic Sites or Admin view maintain separate metadata form definitions, and do not share client-library-based UI customizations. A custom metadata schema extension or **[!UICONTROL clientlib]** built for Admin view does not automatically appear or function in Assets view. To bring an Admin-view-defined schema into Assets view, use the **[!UICONTROL Import]** capability for metadata forms rather than expecting automatic synchronization. For details about the **[!UICONTROL Import]** capability, see [Import metadata forms](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/import-metadata-form-from-admin-view-to-assets-view).
+AEM Assets view (the experience cloud or react-based UI) and classic Sites or Admin view maintain separate metadata form definitions, and do not share client-library-based UI customizations. A custom metadata schema extension or `clientlib` built for Admin view does not automatically appear or function in Assets view. To bring an Admin-view-defined schema into Assets view, use the `Import` capability for metadata forms rather than expecting automatic synchronization. For details about the `Import` capability, see [Import metadata forms](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/import-metadata-form-from-admin-view-to-assets-view).
 
 
 ## Metadata and Last Modification {#last-modification}
