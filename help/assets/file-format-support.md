@@ -267,6 +267,45 @@ See also [3D formats supported](/help/assets/file-format-support.md#support-3d-f
 | STL | Stereolithography|application/vnd.ms-pki.stl | |
 | USDZ | Universal Scene Description Zip archive|model/vnd.usdz+zip |*Support for ingestion and thumbnail generation; 3D previews not yet supported.* USDZ is a 3D format that can be viewed natively by Safari or iOS. |
 
+## Asset file format support and validation {#asset-file-format-support-and-validation}
+
+Adobe Experience Manager (AEM) Assets processing has two distinct mechanisms that behave differently when a file type is not fully supported: standard renditions that is always requested for every asset, non-configurable and Dynamic Media or custom processing profiles that are configurable, and can be scoped by the MIME type or the asset selection criteria. Knowing which one is failing makes it easier to determine whether the behavior is expected or there is something to fix.
+
+### Expected Rendition Failures {#expected-rendition-failures}
+
+AEM's asset microservices always request a fixed set of standard renditions, for example, text extraction, *MP4* preview for every uploaded asset, regardless of its MIME type. For a *PNG* image, renditions such as **[!UICONTROL cqdam.text.txt]** or **[!UICONTROL cq5dam.preview.mp4]**  are inherently inapplicable and appears as entries in **[!UICONTROL dam:failedRenditions]**. This is expected, by-design behavior and not a misconfiguration as long as the renditions relevant to the asset's actual type (for example, standard image renditions, Dynamic Media processing for images) complete successfully.
+
+### Unsupported or restricted input formats {#unsupported-or-restricted-input-formats}
+
+| File type or scenario | Behavior | Guidance |
+|---|---|---|
+| *ZIP* files sent through Dynamic Media processing profiles | Processing step fails explicitly with an unsupported-format error. This causes the workflow instance to accumulate in an unhealthy or retrying state at scale. | Exclude *ZIP* (and other archive or 3D package files) from Dynamic Media processing profiles using asset selection criteria so the profile is never applied to non-media file types in the first place. |
+| *AVIF* images| File is stored in the Digital Asset Management (DAM), but AEM does not process it and no thumbnail or preview is generated. | *AVIF* is not a supported input format for asset processing in AEM as a cloud service. Convert to *JPG* or *PNG* before uploading if a preview or rendition is required. |
+| *JFIF* images | This is not recognized as an image or *JPEG* because of the file extension. The standard image processing pipeline does not run, so no renditions are generated. | Rename or re-export the *JFIF* files as *.JPG* before uploading. |
+| *PPTX* files containing restricted (read-only or licensed) fonts, for example, Avenir| PDF rendition generation fails; the file is reported as corrupted by the PDF conversion microservice (the same underlying service used by Acrobat) | Restricted fonts not bundled with Windows and blocked from export by the font vendor causes conversion failures independent of AEM. Replace the restricted fonts in the source file before uploading. Local conversion in Acrobat can be used to confirm whether a given *PPTX* fails before uploading, since it uses the same conversion service. |
+| *SVG* files missing the **[!UICONTROL offset]** attribute on <stop> elements| Dynamic Media's image server returns HTTP 403 through **[!UICONTROL /is/image]** for that specific file, while **[!UICONTROL /is/content]** still renders it. This is because *SVG* violates the *SVG 1.1* compliance.| Validate *SVG*s against the *SVG 1.1* compliance, for example, with the W3C Validator before uploading. Re-export from the source tool, for example, Illustrator with *SVG 1.1* compliance.|
+| Files with MIME types outside the configured allow-list, for example, *.pem* certificates| Upload is rejected in the user interface. | AEM Assets can technically store any binary file, but an organization's asset upload restrictions may limit the accepted MIME types. Update the allowed MIME type list globally, or per folder to include the required type. |
+| Metadata values in a bulk CSV import that start with or contain reserved characters such as #, /, ;, backslash symbol, pipe symbol, [, ], %, {, }, ?, & | The parser skips or ignores the affected metadata entry without a hard failure.| Remove or replace the reserved characters in metadata values before running a bulk CSV metadata import. |
+| DAM assets carrying non-standard or unregistered XML metadata namespaces, for example, **[!UICONTROL exifEX]**, **[!UICONTROL mwg-rs]**, **[!UICONTROL photomechanic]**| Content package import or copy between the environments fail with messages such as unknown namespace prefix or no namespace mapping found. | Identify and clean the offending metadata properties on the source assets (they are often introduced by the external tools) before re-attempting the package import or content copy. |
+
+### Restricting upload types per folder {#restricting-upload-types-per-folder}
+
+Out-of-the-box MIME type restrictions apply globally across the DAM by default, but folder-specific restrictions are also possible. Configure the allowed MIME types for a specific folder, for example, **[!UICONTROL /content/dam/projects]** through **[!UICONTROL Tools]** > **[!UICONTROL /Assets]** > **[!UICONTROL Assets Configuration]**, listing only the MIME types that should be accepted for that folder. All other types, including common ones like Excel spreadsheets, are then blocked for that folder specifically without affecting rest of the DAM.
+
+### XMP metadata writeback conflicts {#XMP-metadata-writeback-conflicts}
+
+Concurrent updates to an asset's metadata node (**[!UICONTROL cqdam.metadata.xml]**), for example, from multiple custom workflows or services writing to the same asset at once can produce repository conflicts (**[!UICONTROL InvalidItemStateException]**, **[!UICONTROL CommitFailedException]**) during Extensible Metadata Platform (XMP) writeback. Repeated failures of this kind can also contribute to a backlog of unhealthy or retrying workflow instances. To avoid this:
+
+* Review custom workflows or services for concurrent writes to the same asset's metadata, and serialize them where possible.
+* Enable and configure workflow purge maintenance so that completed and stale workflow instances are cleaned up automatically rather than accumulating.
+
+### Troubleshooting checklist {#troubleshooting-checklist}
+
+1. If a rendition failure only affects a rendition type that does not apply to the asset's format, for example, video preview on an image, treat it as expected and check whether the format-appropriate renditions succeeded instead.
+2. If a processing profile is failing on files that were never meant to be processed by it, for example, *ZIP*, *3D* packages, fix the profile's asset selection criteria rather than trying to make the file type **[!UICONTROL work]**.
+3. If a specific file fails while similar files succeed, suspect the file itself first. Check for restricted or licensed fonts (*PPTX* or *PDF*), *SVG* compliance, or an unsupported format or extension mismatch (*AVIF* or *JFIF*) before assuming an AEM configuration issue.
+4. If workflows are backing up in an unhealthy state, check for both the unsupported-format processing failures and metadata writeback conflicts. They can co-occur and compound the backlog.
+
 **See also**
 
 * [Translate Assets](/help/assets/translate-assets.md)
