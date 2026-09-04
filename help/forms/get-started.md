@@ -12,9 +12,6 @@ role: Admin, User, Developer
 ---
 # Getting started with HTML5 forms {#getting-started-with-html-forms}
 
-<span class="preview"> The HTML5 Forms capability is offered as part of Early Access Program. To request access, send an email from your official (work) email ID to aem-forms-ea@adobe.com.
-</span>
-
 HTML5 forms bring numerous capabilities that are mobile-ready. It helps you expand your current solutions and workflows to tablets or smartphones devices with HTML5 browsers. Some of the capabilities include:
 
 * **HTML5-based rendering of XFA form templates:** In addition to regular PDF forms, you can now render your existing XFA-based forms in HTML5 format. It helps you to expand your client platform to mobile devices (Apple iPad, Android tablet, smartphones, and so on) that supports HTML5 and do not support Adobe Reader with XFA Forms. For more information about HTML5-based rendering capability, see [Introduction to HTML5 forms](/help/forms/introductionhtml5.md).

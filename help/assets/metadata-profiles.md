@@ -73,6 +73,16 @@ Folders that have a profile assigned to it are indicated in the user interface b
 
 You can reprocess assets in a folder that already has an existing metadata profile that you later changed. <!-- See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
+>[!IMPORTANT]
+>
+>Both `Full` and `Metadata-only` reprocess operations might replace metadata that has been added to an asset after it was first uploaded if: 
+>
+>* The nearest ancestor metadata profile is applied
+>
+>* XMP extraction is re-run
+>
+>If either of these update properties that had previously been manually entered in the asset metadata, then the manually entered values are overwritten.
+
 ### Apply metadata profiles to specific folders {#applying-metadata-profiles-to-specific-folders}
 
 You can apply a metadata profile to a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from **[!UICONTROL Properties]**. This section describes how to apply metadata profiles to folders both ways.

@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2026.08.13 Release Notes
-description: These are the release notes for the 2026.08.13 release of the Universal Editor.
+title: Universal Editor 2026.09.03 Release Notes
+description: These are the release notes for the 2026.09.03 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2026.08.13 Release Notes {#release-notes}
+# Universal Editor 2026.09.03 Release Notes {#release-notes}
 
-These are the release notes for the 13 August 2026 release of the Universal Editor.
+These are the release notes for the 3 September 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -20,8 +20,11 @@ These are the release notes for the 13 August 2026 release of the Universal Edit
 
 ## What's New {#what-is-new}
 
-* [Find and replace](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) is now available in the RTE.
+* `beforeSave` and `beforeLoad` extensions are now supported in the RTE.
+* [The Page Lock feature](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages) is no longer an [extension,](/help/implementing/universal-editor/extending.md) but a native feature of the Universal Editor.
 
 ## Other Improvements {#other-improvements}
 
-* A problem was fixed where the cursor could not be inserted below a table if the table was the last item in a block.
+* A problem was fixed where conditional mandatory validation was no properly updated when a drop-down changed.
+* Filter definitions and flags are now shared with asset picker.
+* Drag and drop is now keyboard accessible.
