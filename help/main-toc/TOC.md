@@ -150,6 +150,7 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2026 {#2026}
+      + [2026.8.0](/help/implementing/cloud-manager/release-notes/2026/2026-8-0.md)
       + [2026.7.0](/help/implementing/cloud-manager/release-notes/2026/2026-7-0.md)      
       + [2026.6.0](/help/implementing/cloud-manager/release-notes/2026/2026-6-0.md)
       + [2026.5.0](/help/implementing/cloud-manager/release-notes/2026/2026-5-0.md)
@@ -268,6 +269,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.08.27 Release Notes](/help/release-notes/universal-editor/2026/2026-08-27.md)
       + [2026.08.20 Release Notes](/help/release-notes/universal-editor/2026/2026-08-20.md)
       + [2026.08.13 Release Notes](/help/release-notes/universal-editor/2026/2026-08-13.md)
       + [2026.08.06 Release Notes](/help/release-notes/universal-editor/2026/2026-08-06.md)
@@ -1226,6 +1228,7 @@ user-guide-title: AEM as a Cloud Service
       + [Content Optimization Agent](/help/ai-in-aem/agents/content-advisor/content-optimization.md)
     + Brand Governance Agent {#governance}
       + [Overview](/help/ai-in-aem/agents/governance/overview.md)
+      + [Enterprise Context](/help/ai-in-aem/agents/governance/enterprise-context.md)
       + [How to Import a Brand Policy](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md)
   + AI Assistant {#ai-assistant}
     + [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
