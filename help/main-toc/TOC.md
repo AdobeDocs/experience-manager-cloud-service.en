@@ -1166,6 +1166,7 @@ user-guide-title: AEM as a Cloud Service
     + [Communications APIs - Synchronous processing](/help/forms/aem-forms-cloud-service-communications.md)
     + [Communications APIs - Batch processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
     + [Forms Communications APIs - Tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
+    + [Create accessible interactive communications in IC Editor](/help/forms/accessibility-ic-editor.md)
     + [Generate AFP Output Using the AEM Forms API](/help/forms/document-generation-afp-api.md)
     + {hide-from-toc} [OAuth Server-to-Server Authentication ](/help/forms/oauth-api-authetication.md)
     + {hide-from-toc} [JWT(JSON Web Token) Server-to-Server Authentication](/help/forms/jwt-api-authentication.md)
