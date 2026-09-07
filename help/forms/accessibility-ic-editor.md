@@ -22,12 +22,18 @@ Once you have set the accessibility properties and tab order you want, select **
 
 ## Set accessibility properties for a field
 
-You can set accessibility properties for text, images, interactive fields (such as text fields, numeric fields, date fields, checkboxes, radio buttons, and dropdowns), subforms, and tables. The properties available depend on the field type:
+You can set accessibility properties for text, images, interactive fields (such as text fields, numeric fields, date fields, checkboxes, radio buttons, and dropdowns), subforms, and tables. The properties available, and their behavior, depend on the field type:
 
-* **Role**: for text elements, tables, and subforms, assign a semantic role (for example, a heading level, or, for a subform, Table, Header Row, Body Row, Footer Row, List, or TOC) so assistive technologies understand the element's purpose in the document structure.
+* **Role**: assign a semantic role so assistive technologies understand the element's purpose in the document structure.
+  * For text elements, choose a heading level (Heading Level 1 to 6), Caption, Artifact, or None.
+  * For subforms, choose Table, Header Row, Body Row, Footer Row, List, TOC, or None.
+  * For tables, the role is always Table. You can't change it.
+  * Images and interactive fields don't have a Role option.
 * **Screen Reader Precedence**: choose what a screen reader announces for the field.
-  * For interactive fields, the options are Caption, Name, Tooltip, or None.
+  * For interactive fields (such as text fields, numeric fields, date fields, checkboxes, radio buttons, dropdowns, and exclusion groups), the options are Caption, Name, Tooltip, or None.
   * For non-interactive elements such as images and plain text, the options are Name, Helper Text, or None.
+  * For tables, the options are Name, Tooltip, or None.
+  * For subforms, Screen Reader Precedence isn't available until you set the subform's Role to Table. Once you do, the options are Name, Tooltip, or None.
 * **Tooltip**: a general Tooltip field is available at the top of the property sheet for interactive fields. If you set Screen Reader Precedence to Tooltip, a separate Tooltip text field appears where you can set the text a screen reader announces.
 
 For example, for an image you can set Screen Reader Precedence to Helper Text and enter text such as "This is a bank logo." When a user opens the generated PDF with a screen reader tool such as NVDA or JAWS, the tool reads this text aloud.
@@ -63,7 +69,7 @@ Tab order defines two related behaviors:
 * The order in which a screen reader reads the fields on a document.
 * The order in which keyboard focus moves between fields when a user presses the Tab key.
 
-By default, IC Editor numbers fields left to right and top to bottom (1, 2, 3, 4, and so on).
+By default, IC Editor numbers fields left to right and top to bottom (1, 2, 3, 4, and so on). IC Editor displays this order as a numbered badge on each field on the canvas, so you can see the current tab order without opening the Tab Order panel.
 
 ### Set a custom tab order
 
