@@ -51,8 +51,13 @@ Additional checks are added to environments provisioned for Forms. Check definit
 
 Customers can use the [New Relic Application Performance Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html) suite that provides real-time performance data collected and charted for analysis and troubleshooting. By using the monitoring suite, customers can directly observe various metrics such as: JVM performance metrics, transaction time for Java&trade;, background external calls, and database calls.
 
+>[!NOTE]
+>
+>Adobe is introducing a new, OpenTelemetry-based observability integration for AEM as a Cloud Service, available today through a Beta program. See [The Future of Observability in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/opentelemetry-apm-integration.html) for details.
+
 ## Additional Resources {#resources}
 
 * [New Relic Application Performance Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html)
+* [The Future of Observability in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/opentelemetry-apm-integration.html)
 * [Logging for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html)
 * [Monitoring Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html)
