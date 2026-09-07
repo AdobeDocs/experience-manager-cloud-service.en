@@ -60,6 +60,38 @@ Access the shared assets page through the link and do the following:
 * On the shared assets page ([accessed through a private link](#share-assets)), click an asset thumbnail and select ![download](/help/assets/assets/download-icon.svg) to select and view the available dynamic renditions of the asset on the **[!UICONTROL Download]** panel before selecting and downloading them.
 ![](/help/assets/assets/download-renditions-shared-assets-page.png)
 
+
+## Enhanced Public Link Sharing {#enhanced-public-link-sharing}
+
+Enhanced public link sharing enables you to securely share multiple assets and collections through a single public link. You can update shared content without regenerating links, protect access with passwords and expiration dates, revoke access when needed, un-share publicly shared links anytime, and provide recipients with a branded landing experience. This streamlines external content distribution while improving security, governance, and brand consistency.
+
+Follow these steps to share one or more assets with private or public users:
+
+1. Navigate to your Content Hub homepage, select the collection, and click **[!UICONTROL Share in Public Link]**.
+   
+   ![share in public link](/help/assets/assets/public-link.png)
+
+2. The New public link dialog box appears. Add a title and description to provide context and intended use of the collection. For added security, you can set an expiration date to automatically revoke access after a specified period and configure a password to restrict access to authorized users. Click **[!UICONTROL Create public link]**.
+   
+   ![new public link dialog box](/help/assets/assets/new-public-link.png)
+
+From the dialog box shown below, you can add additional assets, update link details such as title, description, and password, copy the shared link, or delete the link.  
+
+![customize](/help/assets/assets/customize.png)
+
+
+## Access the shared assets {#access-shared-assets}
+
+Use the shared link to access the assets page, and then follow these steps:
+
+1. Enter the shared password to access the assets. This provides an additional layer of security and helps prevent unauthorized access.
+
+   ![password protected](/help/assets/assets/password.png)
+
+2. Once password authentication is complete, the shared collection page is displayed. You can browse the collection and download the shared assets as needed.
+
+   ![browse](/help/assets/assets/browse.png)
+
 ## Frequently asked questions {#faqs-share-assets-content-hub}
 
 ### What does sharing assets in AEM Assets Content Hub mean?
