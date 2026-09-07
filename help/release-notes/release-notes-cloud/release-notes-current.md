@@ -124,6 +124,40 @@ Generate on-the-fly Dynamic Media renditions in Content Hub to quickly create as
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta Features {#assets-beta-program-features}
 
+#### Dynamic Media: Video Engagement Report {#video-engagement-report}
+
+Turn video playback into actionable insight by providing per-video engagement metrics for the New Video Viewer, including views, impressions, watch time, completion rate, and engagement score, delivered as a monthly CSV to help teams measure content performance.
+
+To participate or learn more, send an email to `grp-dm-beta-feedback@adobe.com`.
+
+#### Dynamic Media: Operations and Error Report {#operations-and-error-report}
+
+Give teams visibility into delivery health by reporting operational activity such as delivery request counts, smart crops, video encodes, and templates created, while surfacing failed delivery URLs with their referrer and failure count so issues can be pinpointed and fixed.
+
+To participate or learn more, send an email to `grp-dm-beta-feedback@adobe.com`.
+
+#### Dynamic Media: Auto Reflow and Auto Translate {#auto-reflow-and-auto-translate}
+
+Eliminate repetitive redesign and manual localization by using AI to automatically adapt a single master template into layouts that fit different formats and aspect ratios (web, social, display, and email) and to instantly translate text across languages, all while preserving the visual integrity of the design, turning one master asset into variants across many device sizes and locales.
+
+To participate or learn more, send an email to `grp-dm-beta-feedback@adobe.com`.
+
+#### Content Hub: Smart Collections {#smart-collections}
+
+Smart Collections enable you to automatically organize assets based on defined search criteria.
+When you create a Smart Collection, the collection stores the search query and filter criteria instead of storing individual assets. Assets that match the configured criteria are automatically displayed in the collection.
+
+Smart Collections automatically remain up to date. When newly approved assets satisfy the configured search criteria, they are automatically added to the collection.
+
+To participate or learn more, send an email to `aemcontenthubbeta@adobe.com`.
+
+#### Multi-portal Content Hub {#multi-portal-content-hub}
+
+Deliver tailored Content Hub experiences for each brand or business unit, while managing content centrally from a single source of truth.
+
+To participate or learn more, send an email to `aemcontenthubbeta@adobe.com`.
+
+
 #### AI-powered content onboarding and content supply chain automation {#ai-powered-content-onboarding-content-supply-chain-automation}
 
 The Content Supply Chain Agent provides two cooperating AI-powered agents:
@@ -138,7 +172,7 @@ To participate or learn more, send an email to `aem-assets-coinnovation-interest
 Assets View supports UI Extensibility, a developer-first capability that empowers customers to tailor the out-of-the-box experience to meet their specific business requirements.
 Customers can leverage existing stable extension points by following Adobe's developer documentation to build and deploy extensions with minimal effort. For use cases where a required extension point is not yet available, Adobe works directly with customers to explore the requirements and assess the technical feasibility of delivering new extensibility APIs tailored to their needs, and may deliver such new APIs as **Beta Releases**.
 Additionally, Adobe has developed a **GenAI-powered extension generation tool** currently available in an internal early adoption phase. This tool can significantly accelerate extension development time. Customers participating in this beta program will receive access to the tool and are encouraged to share feedback to help shape its evolution.
-To participate or learn more, send an email to `GRP-ASSETSVIEWUIEXTENSIBILITY@adobe.com`.
+To participate or learn more, send an email to `ASSETSVIEWUIEXTENSIBILITY@adobe.com`.
 
 #### Brand Aware Metadata (BAM) {#brand-aware-metadata-beta}
 
@@ -146,7 +180,7 @@ AEM Assets now supports Brand Aware Metadata, an AI-powered capability that auto
 
 Adobe is actively expanding BAM's capabilities through direct co-innovation with customers. Where a specific use case is not yet supported, Adobe works with participating customers to understand their needs and may deliver expanded capabilities as the beta progresses. Customers in this program gain early access to new features as they ship and are encouraged to share feedback that directly shapes the roadmap.
 
-To participate or learn more, send an email to `GRP-AEM-ASSETS-BRANDAWAREMETADATA@adobe.com`.
+To participate or learn more, send an email to `AEM-ASSETS-BRANDAWAREMETADATA@adobe.com`.
 
 <!--
 
@@ -176,7 +210,7 @@ To participate or learn more, send an email to `GRP-AEM-ONBOARDING-AGENT@adobe.c
 
 Adobe works with participating customers to understand their needs and may deliver expanded capabilities as the limited availability program progresses. Customers in this program gain early access to new features as they ship and are encouraged to share feedback that directly shapes the roadmap.
 
-To participate or learn more, send an email to `Grp-AEM-Assets-Sourcing-Portal@adobe.com`.
+To participate or learn more, send an email to `AEM-Assets-Sourcing-Portal@adobe.com`.
 
 #### Support for additional asset types in Adobe Express integration {#assets-express-integration-asset-types-beta}
 
