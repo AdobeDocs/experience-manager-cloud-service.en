@@ -92,10 +92,6 @@ The resulting OSGi configuration for an 8-hour maximum session duration looks li
 >
 >Because `tokenExpiration` is a repository-wide setting, it also governs the lifetime of opaque tokens. Choose a value appropriate for both token modes.
 
->[!NOTE]
->
->On sign-out, the current session is revoked: any previously issued token for that user is rejected on subsequent requests, even if the token has not yet reached its expiry.
-
 ## Applying the configuration {#applying-the-configuration}
 
 1. Install a version of the AEM SDK Quickstart locally.
