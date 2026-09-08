@@ -94,6 +94,7 @@ This article is organized in the following way:
 
 * Setup - common for all logging destinations
 * Transport & Advanced Networking - consideration should be given to network setup before creating logging configuration
+* Mutual TLS (mTLS) Authentication - securing log delivery to supported destinations with client certificates
 * Logging destination configurations - each destination has a slightly different format
 * Log Entry Formats - information about the log entry formats
 * Migrating from legacy log forwarding - how to move from log forwarding previously setup by Adobe to the self-serve approach
@@ -228,6 +229,141 @@ For CDN logs, you can allow-list the IP addresses, as described in [Fastly docum
 >It is not possible for CDN logs to appear from the same IP address that your AEM logs appear from, this is because logs are sent directly from Fastly and not AEM Cloud Service.
 >
 >For this reason it is not possible to use Log Forwarding with Advanced Networking VPN configurations.
+
+## Mutual TLS (mTLS) Authentication {#mtls}
+
+In addition to token- or credential-based authentication, some logging destinations support mutual TLS (mTLS), where AEM as a Cloud Service presents a client certificate to your logging endpoint so it can verify the connection is coming from your AEM environment, in addition to (or instead of) any username/token already configured for that destination.
+
+### Supported Destinations {#mtls-supported}
+
+<table>
+  <tbody>
+    <tr>
+      <th>Log Technology</th>
+      <th>mTLS Support</th>
+    </tr>
+    <tr>
+      <td>Elasticsearch / OpenSearch</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Splunk</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>HTTPS</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+### Configuration Fields {#mtls-fields}
+
+Where supported, mTLS is configured with an additional `mtls` block alongside a destination's existing properties, under `default`, `aem`, or `cdn` as appropriate:
+
+* `cert` - the client certificate, PEM encoded.
+* `key` - the private key corresponding to the client certificate, PEM encoded.
+* `ca` - the CA bundle used to verify your logging endpoint's server certificate, PEM encoded.
+* `keyPasswd` - optional; the password for the private key, if it is encrypted.
+
+All four values should be declared as Cloud Manager [Secret Environment Variables](/help/operations/config-pipeline.md#secret-env-vars) rather than stored in Git; see [Adding Certificates to Cloud Manager](#mtls-cloud-manager) below.
+
+### Splunk Example {#mtls-splunk}
+
+   ```yaml
+   kind: "LogForwarding"
+   version: "1"
+   data:
+     splunk:
+       default:
+         enabled: true
+         host: "splunk-host.example.com"
+         token: "${{SPLUNK_TOKEN}}"
+         index: "aemaacs"
+         mtls:
+           cert: "${{SPLUNK_MTLS_CERT}}"
+           key: "${{SPLUNK_MTLS_KEY}}"
+           ca: "${{SPLUNK_MTLS_CA}}"
+   ```
+
+### Elasticsearch and OpenSearch Example {#mtls-elastic}
+
+   ```yaml
+   kind: "LogForwarding"
+   version: "1"
+   data:
+     elasticsearch:
+       default:
+         enabled: true
+         host: "example.com"
+         user: "${{ELASTICSEARCH_USER}}"
+         password: "${{ELASTICSEARCH_PASSWORD}}"
+         pipeline: "ingest pipeline name"
+         mtls:
+           cert: "${{ELASTICSEARCH_MTLS_CERT}}"
+           key: "${{ELASTICSEARCH_MTLS_KEY}}"
+           ca: "${{ELASTICSEARCH_MTLS_CA}}"
+   ```
+
+>[!NOTE]
+>
+>Elasticsearch and OpenSearch still accept `user`/`password` alongside `mtls`. Whether both are required, or the client certificate alone is sufficient, depends on how your cluster's security settings are configured.
+
+### HTTPS Example {#mtls-https}
+
+   ```yaml
+   kind: "LogForwarding"
+   version: "1"
+   data:
+     https:
+       default:
+         enabled: true
+         url: "https://example.com/aem_logs/aem"
+         authHeaderName: "X-AEMaaCS-Log-Forwarding-Token"
+         authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
+         mtls:
+           cert: "${{HTTPS_MTLS_CERT}}"
+           key: "${{HTTPS_MTLS_KEY}}"
+           ca: "${{HTTPS_MTLS_CA}}"
+   ```
+
+>[!NOTE]
+>
+>The `mtls` block can be used together with, or instead of, the `authHeaderName`/`authHeaderValue` token-based header.
+
+### Using mTLS with Advanced Networking {#mtls-advnet}
+
+mTLS can be combined with [Advanced Networking](#transport-advancednetworking) - for example, to route AEM logs through a Dedicated Egress IP while also authenticating with a client certificate:
+
+   ```yaml
+   kind: "LogForwarding"
+   version: "1"
+   data:
+     elasticsearch:
+       default:
+         enabled: true
+         host: "example.com"
+         port: 443
+         user: "${{ELASTICSEARCH_USER}}"
+         password: "${{ELASTICSEARCH_PASSWORD}}"
+         pipeline: "ingest pipeline name"
+         mtls:
+           cert: "${{ELASTICSEARCH_MTLS_CERT}}"
+           key: "${{ELASTICSEARCH_MTLS_KEY}}"
+           ca: "${{ELASTICSEARCH_MTLS_CA}}"
+       aem:
+         advancedNetworking: true
+   ```
+
+### Adding Certificates to Cloud Manager {#mtls-cloud-manager}
+
+Certificates and keys are declared the same way as any other secret referenced in `logForwarding.yaml`: as Cloud Manager [Secret Environment Variables](/help/operations/config-pipeline.md#secret-env-vars), never committed to Git. Create one secret environment variable per token used above (for example `SPLUNK_MTLS_CERT`, `SPLUNK_MTLS_KEY`, `SPLUNK_MTLS_CA`), and as with other Log Forwarding secrets, select **All** as the dropdown value for the Service Applied field so the certificate is available to author, publish, and preview tiers.
+
+When pasting certificate and key material into a secret's value field:
+
+* Paste the entire PEM block exactly as it appears in the source file, including the `-----BEGIN CERTIFICATE-----`/`-----END CERTIFICATE-----` (or `-----BEGIN PRIVATE KEY-----`/`-----END PRIVATE KEY-----`) marker lines.
+* If your CA is a bundle of more than one certificate, paste all certificates one after another, each with its own BEGIN/END markers.
+* Only set `keyPasswd` if the private key itself is encrypted; leave it unset (or omit the property) for an unencrypted key.
 
 ## Logging Destination Configuration {#logging-destinations}
 
