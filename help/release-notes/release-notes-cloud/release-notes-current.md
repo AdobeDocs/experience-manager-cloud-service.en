@@ -124,6 +124,15 @@ Generate on-the-fly Dynamic Media renditions in Content Hub to quickly create as
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta Features {#assets-beta-program-features}
 
+#### AI-powered content onboarding and content supply chain automation {#ai-powered-content-onboarding-content-supply-chain-automation}
+
+The Content Supply Chain Agent provides two cooperating AI-powered agents:
+
+* **CSC Blueprint Agent** maps your end-to-end content supply chain, identifies gaps and anti-patterns, and helps define an agreed future state and prioritized action plan.
+* **CSC Integration Agent** implements governed content and metadata movement between systems through configured connections, supporting both one-time migrations and recurring synchronization.
+
+To participate or learn more, send an email to `aem-assets-coinnovation-interest@adobe.com`.
+
 #### UI Extensibility for Assets View {#ui-extensibility-assets-view-beta}
 
 Assets View supports UI Extensibility, a developer-first capability that empowers customers to tailor the out-of-the-box experience to meet their specific business requirements.
