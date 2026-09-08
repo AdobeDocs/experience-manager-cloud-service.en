@@ -7,24 +7,11 @@ role: User, Admin, Developer
 
 # Development Agentic Capabilities {#development-agentic-capabilities}
 
-The Development Agentic Capability of Adobe Enterprise Manager (AEM) as a Cloud Service collaborates with [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) to help traditional AEM Java-stack developers and administrators create, debug, deploy, and optimize code more efficiently.
+The Development Agentic Capability of Adobe Experience Manager (AEM) as a Cloud Service collaborates with [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) to help traditional AEM Java-stack developers and administrators create, debug, deploy, and optimize code more efficiently.
 
 ## Use cases {#use-cases}
 
 A range of use-cases are covered.
-
-### AEM Cloud Manager Pipeline Troubleshooting
-
-The AEM Cloud Manager Pipeline Troubleshooting skill helps you get to the bottom of a failed pipeline execution without digging through raw logs yourself. Reference a failed pipeline and it investigates issues that occurred in the Build & Unit Testing step and the Code Scanning step in Full Stack Deployment and Code Quality pipelines. It also supports Dispatcher configuration issues in web tier config pipelines. It explains what went wrong in plain language.
-
-When a fix is identified with enough confidence, the skill can go a step further: it shows you the exact diff for review that you can download, and optionally pushes it to a new branch if you approve. 
-
-Review the diagnosis and any proposed fix before acting on it — particularly before merging a pushed fix into your target branch.
-
-| Capability | Sample Prompts |
-| --- | --- |
-| Troubleshooting a pipeline | Troubleshoot my failed pipeline. Troubleshoot pipeline execution 1234567. |
-| Generating a fix (with a diff) | Generate a fix for my failed pipeline execution 1234567 |
 
 ### Manage Cloud Manager pipelines
 

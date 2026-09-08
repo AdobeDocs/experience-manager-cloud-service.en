@@ -15,7 +15,7 @@ role: User, Admin, Developer
 >
 >All eligible customers will get access to Adobe Experience Manager agentic capabilities in Coworker, on a rolling basis.
 
-The Agentic Capabilities of Adobe Enterprise Manager (AEM) as a Cloud Service collaborate with [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) to let you query, analyze, and act on your Experience Platform data using natural language instead of navigating multiple UIs or writing queries by hand.
+The Agentic Capabilities of Adobe Experience Manager (AEM) as a Cloud Service collaborate with [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) to let you query, analyze, and act on your Experience Platform data using natural language instead of navigating multiple UIs or writing queries by hand.
 
 A selection of agentic capabilities are available in AEM:
 
