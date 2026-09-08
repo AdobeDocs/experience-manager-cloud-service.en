@@ -234,6 +234,10 @@ For CDN logs, you can allow-list the IP addresses, as described in [Fastly docum
 
 In addition to token- or credential-based authentication, some logging destinations support mutual TLS (mTLS), where AEM as a Cloud Service presents a client certificate to your logging endpoint so it can verify the connection is coming from your AEM environment, in addition to (or instead of) any username/token already configured for that destination.
 
+>[!NOTE]
+>
+>mTLS support for Log Forwarding is currently in beta. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access for your program and environment before adding an `mtls` block to your configuration; until access is granted, a configuration containing an `mtls` block will fail validation.
+
 ### Supported Destinations {#mtls-supported}
 
 <table>
