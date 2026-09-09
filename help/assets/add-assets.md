@@ -390,11 +390,11 @@ Technical details of the upload APIs and protocol, and links to open-source SDK 
 
 ### Direct Binary Upload with presigned URLs {#direct-binary-upload}
 
-Adobe Experience Manager (AEM) as a Cloud Service uploads assets through a **[!UICONTROL Direct Binary Upload]** flow. You can request a presigned URL, the binary gets uploaded directly to the storage using that URL, and then the asset is finalized with an authenticated API call.
+Adobe Experience Manager (AEM) as a Cloud Service uploads assets through a **Direct Binary Upload** flow. You can request a presigned URL, the binary gets uploaded directly to the storage using that URL, and then the asset is finalized with an authenticated API call.
 
 * Presigned URLs are short-lived for an hour approximately, but the exact Time to Live (TTL) is not a published or guaranteed Service Level Agreement (SLA). Treat the duration as an implementation detail that can change, not a value to hard-code into the integrations.
 * A presigned URL must be used immediately as part of a single upload session. It is not designed to be stored and reused later, and is not intended to be reusable across multiple uploads.
-* Leaking a presigned URL alone is not sufficient to create an asset. Asset creation or finalization requires an authenticated API call using valid credentials and an **[!UICONTROL uploadToken]**. If you get only the presigned URL, you cannot complete asset registration without having valid authentication and the associated upload token. This limits the practical impact of a leaked URL.
+* Leaking a presigned URL alone is not sufficient to create an asset. Asset creation or finalization requires an authenticated API call using valid credentials and an `uploadToken`. If you get only the presigned URL, you cannot complete asset registration without having valid authentication and the associated upload token. This limits the practical impact of a leaked URL.
 * Treat presigned URLs as sensitive values in your own integrations; avoid logging them, always use HTTPS, and do not persist them beyond the upload session.
 
 ### Authentication for programmatic uploads {#authentication-for-programmatic-uploads}
@@ -408,9 +408,13 @@ Two authentication mechanisms exist for AEM API access, and they are not interch
 
 >[!NOTE]
 >
->The older asset HTTP API for directly updating an asset's binary is deprecated. New integrations use the **[!UICONTROL Direct Binary Upload]** flow instead.
+>The older asset HTTP API for directly updating an asset's binary is deprecated. New integrations use the **Direct Binary Upload** flow instead.
 
-The technical account used for API uploads must have explicit repository-level ACLs **[!UICONTROL jcr:read]** on **[!UICONTROL /content/dam]** and **[!UICONTROL rep:write]** (or **[!UICONTROL jcr:all]**) on the specific target subfolder, in addition to the correct credential type and administrator console product profile or group membership. A technical account can be correctly licensed and grouped and still receive 403 forbidden errors if the path-level ACLs have not been granted. Product-profile or group assignment and repository ACLs are independent and both required.
+The technical account used for API uploads must have explicit repository-level ACLs `jcr:read` on `/content/dam` and `rep:write` (or `jcr:all`) on the specific target subfolder, in addition to the correct credential type and administrator console product profile or group membership. A technical account can be correctly licensed and grouped and still receive 403 forbidden errors if the path-level ACLs have not been granted. Product-profile or group assignment and repository ACLs are independent and both required.
+
+### Malware detection and quarantine {#malware-detection-and-quarantine}
+
+When malware detection is enabled, the uploaded files are scanned and infected files are placed in a **[!UICONTROL Quarantine]** area. Access to quarantined assets is controlled by the standard AEM permissions through a **[!UICONTROL Quarantine Administrators]** group; additional custom groups can be granted access to the quarantine area as needed. Quarantine visibility is not limited to a single fixed role. For more information on malware detection and quarantine, see [Malware Detection](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/malware-detection).
 
 ### File type handling and upload restrictions {#file-type-handling-and-upload-restrictions}
 
@@ -425,11 +429,11 @@ The technical account used for API uploads must have explicit repository-level A
 
 ## Troubleshooting checklist for upload failures {#troubleshooting-checklist-for-upload-failures}
 
-1. **[!UICONTROL 403 Forbidden on API upload]**: Confirm the credential type. OAuth S2S from Adobe Developer console is not supported for asset upload API. Use the Service Credentials (JWT) from the AEM Developer console instead.
-2. **[!UICONTROL 403 Forbidden despite correct credentials and group membership]**: Confirm the technical account has explicit **[!UICONTROL jcr:read]** on **[!UICONTROL /content/dam]** and **[!UICONTROL rep:write/jcr:all]** on the specific target folder. Group or profile membership does not substitute for the folder-level ACLs.
-3. **[!UICONTROL Upload succeeds but asset fails to appear or binary looks corrupted]**: Rule out folder-level bulk upload as the ingestion method; retry through the standard upload API or UI and capture logs if it recurs.
-4. **[!UICONTROL Security review flags unrestricted file upload]**: Clarify that AEM does not execute uploaded active content server-side or in-browser by default, so this is an expected platform behavior rather than a defect, unless your organization requires additional upload-time validation.
-5. **[!UICONTROL Concerned about presigned URL exposure]**: Confirm that the URL was used within its short validity window and that asset finalization still required a separate authenticated call with a valid **[!UICONTROL uploadToken]**. This is what limits the blast radius of a leaked URL.
+1. **403 Forbidden on API upload**: Confirm the credential type. OAuth S2S from Adobe Developer console is not supported for asset upload API. Use the Service Credentials (JWT) from the AEM Developer console instead.
+2. **403 Forbidden despite correct credentials and group membership**: Confirm the technical account has explicit `jcr:read` on `/content/dam` and `rep:write/jcr:all` on the specific target folder. Group or profile membership does not substitute for the folder-level ACLs.
+3. **Upload succeeds but asset fails to appear or binary looks corrupted**: Rule out folder-level bulk upload as the ingestion method; retry through the standard upload API or UI and capture logs if it recurs.
+4. **Security review flags unrestricted file upload**: Clarify that AEM does not execute uploaded active content server-side or in-browser by default, so this is an expected platform behavior rather than a defect, unless your organization requires additional upload-time validation.
+5. **Concerned about presigned URL exposure**: Confirm that the URL was used within its short validity window and that asset finalization still required a separate authenticated call with a valid `uploadToken`. This is what limits the blast radius of a leaked URL.
 
 
 ## Tips, best practices, and limitations {#tips-limitations}
