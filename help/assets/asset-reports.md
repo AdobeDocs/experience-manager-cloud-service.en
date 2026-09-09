@@ -38,9 +38,9 @@ AEM Assets provides several distinct reporting mechanisms for different purposes
 * Files
 * Link Share
 
-The following table describes the available report types and what each report measures.
-
 ## Report types {#report-types} 
+
+The following table describes the available report types and what each report measures.
 
 | Report or tool|What it measures| Description|
 |---|---|---|
