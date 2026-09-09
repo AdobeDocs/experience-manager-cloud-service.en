@@ -55,7 +55,7 @@ Dynamic Media license billing is based on the aggregated page views or visits, a
 
 ### Permissions required to generate and use reports {#permissions-required-to-generate-and-use-reports}
 
-* Asset Reports (**[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**) are restricted with the Administrator product profile at the IMS level. This is by design, there is no configuration or alternate role that grants non-administrators the ability to review, create, or download the Asset Reports.
+* Asset Reports (**[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**) are restricted with the administrator product profile at the IMS level. This is by design, there is no configuration or alternate role that grants non-administrators the ability to review, create, or download the Asset Reports.
 * If you need to run expiration or scheduled reports, you must not be granted write access to `/libs/dam/gui`. The correct permission structure is:
    * Read access to `/libs/dam/gui`
    * Write access to `/var/dam/reports`
