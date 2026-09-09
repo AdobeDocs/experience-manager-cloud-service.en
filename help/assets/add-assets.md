@@ -403,7 +403,7 @@ Two authentication mechanisms exist for AEM API access, and they are not interch
 
 | Credential type | Where generated | Supported for Asset Upload API? |
 |---|---|---|
-|OAuth Server-to-Server (S2S) credentials|Adobe Developer Console| This is not supported for asset upload API calls; using them results in persistent 403 forbidden errors even with a correctly assigned product profile (for example, Assets Collaborator Users). |
+|OAuth Server-to-Server (S2S) credentials|Adobe Developer Console| This is not supported for asset upload API calls; using them results in persistent **403 Forbidden** errors even with a correctly assigned product profile (for example, Assets Collaborator Users). |
 |Service credentials (JWT) | AEM Developer Console | This is supported for server-to-server asset upload API calls. |
 
 >[!NOTE]
