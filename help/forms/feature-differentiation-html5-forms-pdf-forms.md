@@ -12,9 +12,6 @@ role: Admin, User, Developer
 ---
 # Feature differentiation between HTML5 forms and PDF forms {#feature-differentiation-between-html-forms-and-pdf-forms}
 
-<span class="preview"> The HTML5 Forms capability is offered as part of Early Access Program. To request access, send an email from your official (work) email ID to aem-forms-ea@adobe.com.
-</span>
-
 The following table specifies the feature support provided for HTML5 forms and PDF forms:
 
 <table>

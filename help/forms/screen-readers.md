@@ -12,9 +12,6 @@ role: Admin, User, Developer
 ---
 # Screen readers for HTML5 forms {#screen-readers-for-html-forms}
 
-<span class="preview"> The HTML5 Forms capability is offered as part of Early Access Program. To request access, send an email from your official (work) email ID to aem-forms-ea@adobe.com.
-</span>
-
 HTML5 forms components render XFA form template to an HTML5 format. All standard browsers supporting HTML5 can render these forms. To support similar data capture experience across PDF and HTML5 forms, the layout of PDF forms is retained in HTML5 forms.
 
 HTML5 forms use standard HTML constructs allowing regular accessibility tools for HTML to be used with these forms. If a form is designed according to the best practices for accessible forms, it works with any supported screen reader. Also, such forms are enabled for keyboard navigation.
