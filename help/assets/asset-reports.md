@@ -38,7 +38,7 @@ AEM Assets provides several distinct reporting mechanisms for different purposes
 * Files
 * Link Share
 
-The following table describes the available report types.
+The following table describes the available report types and what each report measures.
 
 ## Report types {#report-types} 
 
@@ -221,11 +221,11 @@ TBD: How do enable this in CS now? Is it done using some OSGi config now?
    >The [!UICONTROL Download] report displays details of only those assets which are downloaded after selecting individually or are downloaded using Quick Action. However, it does not include the details of the assets that are inside a downloaded folder.
 -->
 
-* Check for an unexpected node at `/libs/dam/gui/content/reports`**. If you with write access to `/libs/dam/gui` have ever triggered the report creation, AEM creates a stray `generatereport.export.json` node there. Its presence causes report-generation requests to be routed to the default servlet instead of the intended report-generation servlet, so the report never appears in the listing and no email notification is sent for anyone, not just the one who created the node.
+* Check for an unexpected node at `/libs/dam/gui/content/reports`. If you with write access to `/libs/dam/gui` have ever triggered the report creation, AEM creates a stray `generatereport.export.json` node there. Its presence causes report-generation requests to be routed to the default servlet instead of the intended report-generation servlet, so the report never appears in the listing and no email notification is sent for anyone, not just the one who created the node.
    * To fix the issue, remove `create/modify/delete` permissions on `/libs/dam/gui` from the affected users or groups, then delete the stray node, then retest.
-* Check for a NullPointerException** tied to the report configuration. If no values were selected under **[!UICONTROL Configure]** columns when creating the report, the `reportColumns` value is null and the report gets stuck in a queued state indefinitely. This can also block the report deletion or cancellation. 
+* Check for a `NullPointerException` tied to the report configuration. If no values were selected under **[!UICONTROL Configure]** columns when creating the report, the `reportColumns` value is null and the report gets stuck in a queued state indefinitely. This can also block the report deletion or cancellation. 
    * To fix the issue, recreate the report and explicitly select the default columns.
-* Confirm the requesting user has the Administrator product profile. A non-administrator cannot see or use the **[!UICONTROL Reports]** feature at all.
+* Confirm the requesting user has the administrator product profile. A non-administrator cannot see or use the **Reports** feature at all.
 * Distinguish report ran but looks incomplete from report is broken: if an **Upload** or **Download** report is missing in assets you expect to see, first confirm whether those assets were created by a named user versus a `system/import` process, and whether they fall within the selected date range, before treating it as a defect.
 * Periodically audit for users or groups with `/libs` write access who only need the report-generation capability. This prevents the stray-node failure mode before it happens.
 
