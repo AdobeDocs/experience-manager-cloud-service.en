@@ -410,11 +410,11 @@ Two authentication mechanisms exist for AEM API access, and they are not interch
 >
 >The older asset HTTP API for directly updating an asset's binary is deprecated. New integrations use the **Direct Binary Upload** flow instead.
 
-The technical account used for API uploads must have explicit repository-level ACLs `jcr:read` on `/content/dam` and `rep:write` (or `jcr:all`) on the specific target subfolder, in addition to the correct credential type and administrator console product profile or group membership. A technical account can be correctly licensed and grouped and still receive 403 forbidden errors if the path-level ACLs have not been granted. Product-profile or group assignment and repository ACLs are independent and both required.
+The technical account used for API uploads must have explicit repository-level ACLs `jcr:read` on `/content/dam` and `rep:write` (or `jcr:all`) on the specific target subfolder, in addition to the correct credential type and administrator console product profile or group membership. A technical account can be correctly licensed and grouped and still receive **403 Forbidden** errors if the path-level ACLs have not been granted. Product-profile or group assignment and repository ACLs are independent and both required.
 
 ### Malware detection and quarantine {#malware-detection-and-quarantine}
 
-When malware detection is enabled, the uploaded files are scanned and infected files are placed in a **[!UICONTROL Quarantine]** area. Access to quarantined assets is controlled by the standard AEM permissions through a **[!UICONTROL Quarantine Administrators]** group; additional custom groups can be granted access to the quarantine area as needed. Quarantine visibility is not limited to a single fixed role. For more information on malware detection and quarantine, see [Malware Detection](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/malware-detection).
+When malware detection is enabled, the uploaded files are scanned and infected files are placed in a **Quarantine** area. Access to quarantined assets is controlled by the standard AEM permissions through a **Quarantine Administrators** group; additional custom groups can be granted access to the quarantine area as needed. Quarantine visibility is not limited to a single fixed role. For more information on malware detection and quarantine, see [Malware Detection](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/malware-detection).
 
 ### File type handling and upload restrictions {#file-type-handling-and-upload-restrictions}
 
