@@ -1,20 +1,20 @@
 ---
-title: The Future of Observability in AEM as a Cloud Service
-description: Adobe is replacing the Application Performance Monitoring integration built into AEM as a Cloud Service with OpenTelemetry, an open, vendor-neutral observability standard. Learn what's changing and how to get started early through the Beta program.
+title: OpenTelemetry (Beta)
+description: Adobe is replacing the Application Performance Monitoring integration built into AEM as a Cloud Service with OpenTelemetry, an open, industry-standard approach to observability. Learn what's changing and how to get started early through the Beta program.
 exl-id: 50053a23-b552-4554-b4b0-21e978aa7f0a
 feature: Operations
 role: Admin, Developer
 ---
-# The Future of Observability in AEM as a Cloud Service {#opentelemetry-apm}
+# OpenTelemetry (Beta) {#opentelemetry-apm}
 
-Adobe is replacing the Application Performance Monitoring (APM) integration built into AEM as a Cloud Service with [OpenTelemetry](https://opentelemetry.io/), an open, vendor-neutral observability standard supported by every major monitoring platform.
+Adobe is replacing the Application Performance Monitoring (APM) integration built into AEM as a Cloud Service with [OpenTelemetry](https://opentelemetry.io/), an open, industry-standard approach to observability supported by every major monitoring platform.
 
 <!-- AUTHOR NOTE (advance notice, added 2026-09): this framing is deliberately written to
 avoid naming any specific current or future APM provider by name - the intended audience
 is any customer relying on the APM integration currently included with their environment,
 without singling that provider out. Do not add a provider name back into this section. -->
 
-Today, AEM as a Cloud Service includes a built-in APM integration provided directly by Adobe, with no monitoring backend of your own required. As that integration is replaced, **you will need to bring your own APM endpoint** — either a vendor platform that accepts OpenTelemetry data, or a self-hosted (on-premises) OpenTelemetry-compatible backend. In exchange, you gain the freedom to send your AEM application's traces, metrics, and logs to the provider of your choice, rather than being limited to a single, Adobe-selected integration.
+Today, AEM as a Cloud Service includes a built-in APM integration provided directly by Adobe, with no monitoring backend of your own required. As that integration is replaced, **you will need to bring your own APM endpoint** — either a vendor platform that accepts OpenTelemetry data, or a self-hosted (on-premises) OpenTelemetry-compatible backend.
 
 >[!IMPORTANT]
 >
@@ -27,14 +27,14 @@ Today, AEM as a Cloud Service includes a built-in APM integration provided direc
 ## Benefits of this change {#benefits}
 
 - **More telemetry, out of the box** — traces, metrics, and logs together, giving you a broader picture of your AEM application's behavior than today's built-in integration provides.
-- **An open, industry-standard approach** — OpenTelemetry is a vendor-neutral standard adopted across the observability industry, not a single, Adobe-selected tool.
-- **Freedom to choose your own vendor** — send your telemetry to the APM or observability platform that best fits your organization, including your current provider if it supports OpenTelemetry.
+- **An open, industry standard** — OpenTelemetry is adopted broadly across the observability industry, giving your telemetry a consistent, widely supported format.
+- **Send telemetry to the provider that fits your organization** — including your current provider, if it supports OpenTelemetry.
 - **Advanced Networking support** — if your endpoint is private, or requires outbound traffic to leave from a known, stable IP address, this integration supports dedicated egress.
 - **One unified method for metrics, traces, and logs** — a single integration point for all three, rather than separate mechanisms. Log Forwarding continues to work as-is alongside this — you are not required to change how you forward logs today.
 
 ## Overview {#overview}
 
-AEM as a Cloud Service can emit telemetry from your application using OpenTelemetry, the vendor-neutral observability standard, and forward it to the APM provider of your choice. This lets you monitor your AEM application alongside the rest of your systems, in the tools your teams already use.
+AEM as a Cloud Service can emit telemetry from your application using OpenTelemetry, an open, industry-standard approach to observability, and forward it to the APM provider of your choice. This lets you monitor your AEM application alongside the rest of your systems, in the tools your teams already use.
 
 Common reasons to use this integration include investigating slow or failing requests, tracking JVM health and resource usage over time, building dashboards and alerts for your AEM tiers, and correlating AEM behavior with the rest of your services during an incident — all without leaving the monitoring tools your teams already use.
 
@@ -339,6 +339,24 @@ If telemetry does not appear in your APM provider, check the following:
 | Duplicate log messages at your destination | You likely have both this integration's logs and [Log Forwarding](/help/implementing/developing/introduction/log-forwarding.md) sending to the same destination. See [Overview](#overview) — enable only one path per destination. |
 
 If telemetry still does not appear after these checks, contact [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) with your program and environment details.
+
+## FAQ {#faq}
+
+**Why is this change happening?**
+
+AEM as a Cloud Service customers have asked for additional metrics and operational data, as well as traces, spans, and logs in context. OpenTelemetry is an industry standard that supports all of these capabilities, and outputs them in a widely supported format (OTLP).
+
+**What happens to New Relic if I enable OpenTelemetry?**
+
+When you run the Configuration Pipeline, data to New Relic will no longer be transmitted from AEM as a Cloud Service.
+
+**If I migrate to OpenTelemetry from New Relic, can I move back?**
+
+Yes. Disable OpenTelemetry via the Configuration Pipeline, then run a Full Stack pipeline to completion. This is possible until the end of November 2026.
+
+**What happens after November 2026?**
+
+Adobe will move from its built-in APM solution to OpenTelemetry as its permanent observability solution.
 
 ## Related articles {#related-articles}
 

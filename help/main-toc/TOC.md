@@ -1568,7 +1568,7 @@ user-guide-title: AEM as a Cloud Service
     + [AEM as a Cloud Service Developer Console](/help/implementing/developing/introduction/aem-developer-console.md)
     + [Logging](/help/implementing/developing/introduction/logging.md)
     + [Log Forwarding](/help/implementing/developing/introduction/log-forwarding.md)
-    + [The Future of Observability in AEM as a Cloud Service (Beta)](/help/implementing/developing/introduction/opentelemetry-apm-integration.md)
+    + [OpenTelemetry (Beta)](/help/implementing/developing/introduction/opentelemetry-apm-integration.md)
     + [Configurations and the Configuration Browser](/help/implementing/developing/introduction/configurations.md)
     + [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md)
     + [API Reference Materials](/help/implementing/developing/reference-materials.md)

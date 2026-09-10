@@ -53,11 +53,11 @@ Customers can use the [New Relic Application Performance Monitoring](https://exp
 
 >[!NOTE]
 >
->Adobe is introducing a new, OpenTelemetry-based observability integration for AEM as a Cloud Service, available today through a Beta program. See [The Future of Observability in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/opentelemetry-apm-integration.html) for details.
+>Adobe is introducing a new, OpenTelemetry-based observability integration for AEM as a Cloud Service, available today through a Beta program. See [OpenTelemetry (Beta)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/opentelemetry-apm-integration.html) for details.
 
 ## Additional Resources {#resources}
 
 * [New Relic Application Performance Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html)
-* [The Future of Observability in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/opentelemetry-apm-integration.html)
+* [OpenTelemetry (Beta)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/opentelemetry-apm-integration.html)
 * [Logging for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html)
 * [Monitoring Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html)
