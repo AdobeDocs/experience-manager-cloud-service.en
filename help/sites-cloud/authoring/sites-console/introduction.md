@@ -242,6 +242,10 @@ These settings are persisted as you navigate and changes windows in the **Sites*
 
 Update your preferences for the view settings and click **Update** to save.
     
+>[!NOTE]
+>
+>There are additional columns available when in the [Assets console](/help/assets/navigate-assets-view.md) such as metadata information and Content Fragment model.
+
 ## Actions Toolbar {#actions-toolbar}
 
 Whenever a resource is selected, you can carry out various actions on the selected item. These actions are displayed in the actions toolbar.
