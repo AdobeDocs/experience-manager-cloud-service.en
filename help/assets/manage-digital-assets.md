@@ -687,7 +687,7 @@ Moving an asset or Content Fragment in Adobe Experience Manager (AEM) requires m
 |View a folder marked private|You must own the folder, or you must be an explicit member (owner or editor or viewer) of that private folder.|Private folder settings **override standard ACLs**: a user or group with `jcr:read` access can still see the folder, but sharing is restricted to owners or members only.|
 |Use **Share Link** on a private folder|Explicit membership (owner or editor or viewer) on the private folder, in addition to `jcr:modifyAccessControl` or edit ACL and link share configuration.|Plain read access is not sufficient, a group with `jcr:read` on a folder that is later marked private loses the ability to generate share links even though they can still browse the folder.|
 
-### Stuck or pending move-replicate workflows {#stuck-pending}
+### Stuck or pending move-replicate workflow {#stuck-pending}
 
 1. Identify the user who initiated the move or copy and check whether they hold the replicate permission on the target path.
 2. If they do not, either grant the replicate permission (if that is the intended long-term access level) or get an administrator who has the replicate permission to approve or complete the pending workflow to unblock it.
@@ -705,7 +705,7 @@ Private folders use a membership-based model that layers on top of and effective
 
 AEM does not enforce a hard technical limit on the number of subfolders or assets under a single folder. However, for performance and usability, keep the number of direct children, that is, subfolders and assets combined under a single folder to roughly 1,000. Folders with several thousand direct children can show degraded performance for listing, moving, and workflow operations. If a folder is expected to grow beyond this, introduce additional grouping or subfolder levels proactively before performance issues appear.
 
-### Known UI quirk: folder titles containing slashes {#known-UI-quirk}
+### Known UI behavior {#known-UI-behavior}
 
 Avoid using slashes (/) in folder titles. A slash in a folder title can interfere with the Assets UI's **[!UICONTROL Column View]** rendering logic, causing the subfolders to fail to display even though they exist in the repository. If the **[!UICONTROL Column View]** unexpectedly shows an empty folder that has children, check the folder titles under that path for slashes before assuming a deeper indexing or permissions problem.
 
