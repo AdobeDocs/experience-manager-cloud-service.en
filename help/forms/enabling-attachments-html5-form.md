@@ -12,9 +12,6 @@ role: Admin, User, Developer
 ---
 # Enabling attachments for an HTML5 form {#enabling-attachments-for-an-html-form}
 
-<span class="preview"> The HTML5 Forms capability is offered as part of Early Access Program. To request access, send an email from your official (work) email ID to aem-forms-ea@adobe.com.
-</span>
-
 You can upload, preview, and submit attachments with HTML5 forms. By default, the attachment support is disabled. To enable the attachment support:
 
 1. Create a [custom profile](/help/forms/custom-profile.md) with a `mfAttachmentOptions` multiselect string property. Each string in the `mfAttachmentOptions` property must have a `property=value` format to configure options of the file attachment widget. The `property` and `value` can have any of the following values:
