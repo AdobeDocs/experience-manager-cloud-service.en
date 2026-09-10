@@ -11,9 +11,9 @@ exl-id: 34541302-6610-4f5e-af93-c95328dda910
 
 Carousel banners enable marketers to drive conversion by easily creating interactive rotating promotional content and delivering it to any screen.
 
-Creating and modifying content featured in promotional banners can be time-consuming, limiting your ability to quickly publish new content or make it more targeted. Carousel Banners let you quickly create or modify rotating banners and add interactivity such as hotspot linking to product detail or related resources. You can deliver them to any screen, letting you bring new promotional content to market faster.
+Creating and modifying content featured in promotional banners can be time-consuming, limiting your ability to publish new content quickly or make it more targeted. Carousel Banners let you quickly create or modify rotating banners and add interactivity such as hotspot linking to product detail or related resources. You can deliver them to any screen, letting you release new promotional content faster.
 
-Carousel Banners are designated by a banner with the word **[!UICONTROL CAROUSELSET]**:
+A banner with the word **[!UICONTROL CAROUSELSET]** designates Carousel Banners:
 
 ![chlimage_1-438](assets/chlimage_1-438.png)
 
@@ -21,7 +21,7 @@ On your website, a carousel banner can look as follows:
 
 ![chlimage_1-439](assets/chlimage_1-439.png)
 
-Here you can navigate through the images by selecting the numbers. In addition, the slides automatically rotate based on a time interval you can customize. Images in a carousel banner support both hotspots and image maps. Users can either select or to go to a hyperlink or access a Quickview window.
+Here you can navigate through the images by selecting the numbers. In addition, the slides automatically rotate based on a time interval you can customize. Images in a carousel banner support both hotspots and image maps. Users can select a hyperlink or access a Quickview window.
 
 In this example, a user has selected an image map and accessed the Quickview window for gloves:
 
@@ -33,15 +33,15 @@ Watch a walkthrough on [how carousel banners are created](https://s7d5.scene7.co
 
 >[!NOTE]
 >
->Non-administrative users must be added to the **[!UICONTROL dam-users]** group to be able to create or edit carousel banners. If you are having trouble creating or editing, see your system administrator who can add you to the **d[!UICONTROL am-users]** group.
+>Non-administrative users must be added to the **[!UICONTROL dam-users]** group to be able to create or edit carousel banners. If you are having trouble creating or editing, see your system administrator who can add you to the **[!UICONTROL dam-users]** group.
 
 ## Quick Start: Carousel Banners {#quick-start-carousel-banners}
 
-To get you up and running quickly:
+To get started quickly:
 
 1. [Identify hotspot and image map variables](#identifying-hotspot-and-image-map-variables) (only for customers using Adobe Experience Manager Assets + Dynamic Media)
 
-   Start by identifying dynamic variables used by the existing Quick view implementation. Doing so helps you to enter hotspots and image map data properly during the carousel banner creation process in Experience Manager Assets.
+   Identify dynamic variables the existing Quickview implementation uses. Doing so helps you to enter hotspots and image map data properly during the carousel banner creation process in Experience Manager Assets.
 
 <!--
  LEAVE; COMMERCE BEING ADDED AGAIN IN THE FUTURE
@@ -65,7 +65,7 @@ To get you up and running quickly:
 
 1. [Create a Carousel Set](#creating-carousel-sets).
 
-   In Carousels Sets, users navigate through banner images and select hotspots or image maps to access relevant content.
+   In Carousel Sets, users navigate through banner images and select hotspots or image maps to access relevant content.
 
    To create a Carousel Set in Assets, select **[!UICONTROL Create]**, then select **[!UICONTROL Carousel Sets]**. Add assets to slides and select **[!UICONTROL Save]**. You can also edit the appearance and behavior of the carousel directly within the editor.
 
@@ -77,11 +77,11 @@ To get you up and running quickly:
 
 1. [Publish Carousel Banners](#publishing-carousel-banners).
 
-   You publish a Carousel Set as you would any asset. In Assets, navigate to the Carousel Set and select it and select **[!UICONTROL Publish]**. Publishing a Carousel Set activates the URL and Embed string.
+   Publish a Carousel Set as you do any asset. In Assets, navigate to the Carousel Set, select it, and select **[!UICONTROL Publish]**. Publishing a Carousel Set activates the URL and Embed string.
 
 1. Do one of the following:
 
-    * [Add a carousel banner to your website page](#adding-a-carousel-banner-to-your-website-page)You can add the carousel banner URL or embed code you have copied onto the website page.
+    * [Add a carousel banner to your website page](#adding-a-carousel-banner-to-your-website-page). You can add the carousel banner URL or embed code you have copied to the website page.
 
         * [Integrate the carousel banner with an existing Quick view](#integrating-the-carousel-banner-with-an-existing-quickview). If you are using a third-party web content management system, you must integrate the new carousel banner with the existing Quick view implementation on your website.
 
@@ -91,7 +91,7 @@ If you must edit Carousel Sets, see [Edit Carousel Sets](#editing-carousel-sets)
 
 ## Identify Hotspot and Image Map Variables {#identifying-hotspot-and-image-map-variables}
 
-Start by identifying dynamic variables used by the existing Quick view implementation. This method helps you to enter hotspots or image map data properly during the carousel set creation process in Experience Manager Assets.
+Identify dynamic variables the existing Quick view implementation uses. This method helps you to enter hotspots or image map data properly during the carousel set creation process in Experience Manager Assets.
 
 When you add hotspots or image maps to a banner image, you assign a SKU (Stock Keeping Unit). You can also assign optional extra variables to each hotspot or image map. Such variables are used later to match hotspots or image maps with Quick view content.
 
@@ -106,11 +106,11 @@ When you add hotspots or image maps to a banner image, you assign a SKU (Stock K
 
 -->
 
-It is important to properly identify the number and type of variables to associate with hotspot or image map data. Each hotspot or image map added to a banner image must carry enough information to unambiguously identify the product in the existing back-end system. At the same time, ensure that each hotspot or image map does not include more data than is necessary. The reason is because that would make the data entry process overly complex and on-going hotspot or image map management more error-prone.
+It is important to identify the number and type of variables properly to associate with hotspot or image map data. Each hotspot or image map added to a banner image must carry enough information to identify the product in the existing back-end system unambiguously. At the same time, ensure that each hotspot or image map does not include more data than is necessary. This complexity makes the data entry process difficult and ongoing hotspot or image map management more likely to result in errors.
 
 There are different ways to identify a set of variables to use for hotspot or image map data.
 
-Sometimes it is enough to consult with IT specialists responsible for the existing Quickview implementation. They are likely to know what is the minimum set of data to identify Quick view in the system. However, it is possible to simply analyze the existing behavior of the front-end code.
+Sometimes it is enough to consult with IT specialists responsible for the existing Quickview implementation. They know the minimum set of data to identify Quickview in the system. However, it is possible to analyze the existing behavior of the front-end code.
 
 Most Quickview implementations use the following paradigm:
 
@@ -121,20 +121,20 @@ Most Quickview implementations use the following paradigm:
 
 The approach then is to visit different areas of the existing website where the Quickview feature is implemented. Then trigger the Quickview and acquire the Ajax URL sent by the web page for loading the Quickview data or content.
 
-Normally there is no need for you to use any specialized debugging tools. Modern web browsers feature web inspectors that do an adequate job. The following are a few examples of web browsers that include web inspectors:
+Specialized debugging tools are typically not required. Modern web browsers feature web inspectors that are sufficient. The following are a few examples of web browsers that include web inspectors:
 
 * To see all outgoing HTTP requests in Google Chrome, press F12 (Windows&reg;) or Command-Option-I (Mac) to open the Developer tool panel. Select the Network tab.
 * In Firefox, you can either activate the Firebug plug-in by pressing F12 (Windows&reg;) or Command-Option-I (Mac). Use its Network tab, or use the built-in Inspector tool and its Network tab.
 
 When network monitoring is turned on in the browser, trigger the Quickview on the page.
 
-Now find the Quick view Ajax URL in the network log and copy the recorded URL for future analysis. Usually when you trigger the Quickview there are numerous requests that are sent out to the server. Typically, the Quickview Ajax URL is one of the first in the list. It has either a complex query string portion or path, and its response MIME type is either `text/html`, `text/xml`, or `text/javascript`.
+Now find the Quick view Ajax URL in the network log and copy the recorded URL for future analysis. Usually when you trigger the Quickview there are numerous requests sent to the server. Typically, the Quickview Ajax URL is one of the first in the list. It has either a complex query string portion or path, and its response MIME type is either `text/html`, `text/xml`, or `text/javascript`.
 
-During this process, it is important to visit different areas of your website, with different product categories and types. The reason is that Quick view URLs have parts that are common for a given website category, but change only if you visit a different area of the website.
+During this process, it is important to visit different areas of your website, with different product categories and types. Quick view URLs have parts that are common for a given website category, but change only if you visit a different area of the website.
 
 In the simplest case, the only variable part in the Quickview URL is the product SKU. In this case, the SKU value is the only data piece that you need for adding hotspots or image maps to the banner image.
 
-However, in complex cases, the Quickview URL has different varying elements in addition to the SKU. Some of those elements include category ID, color code, size code, and so forth. In such cases, every element is a separate variable in your hotspot or image map data definition in the carousel banner feature.
+However, in complex cases, the Quickview URL has different varying elements besides the SKU. Some of those elements include category ID, color code, size code, and so forth. In such cases, every element is a separate variable in your hotspot or image map data definition in the carousel banner feature.
 
 Consider the following examples of Quickview URLs and their resulting hotspot or image map variables:
 
@@ -195,25 +195,25 @@ To upload image banners, see [Upload assets](/help/assets/manage-digital-assets.
 
    On the Carousel Banner Editor page, do either one of the following:
 
-    * Near the upper-left corner of the page, select **[!UICONTROL Add Slide]** icon.
+    * Near the upper-left corner of the page, select the **[!UICONTROL Add Slide]** icon.
 
     * Near the middle of the page, select **[!UICONTROL Tap to open Asset Selector]**.
 
-   Select to select assets that you want to include in your Carousel Set. Selected assets have a check mark icon over them. When you have finish, near the upper-right corner of the page, select **[!UICONTROL Select]**.
+   Select assets that you want to include in your Carousel Set. Selected assets have a check mark icon over them. When you have finished, near the upper-right corner of the page, select **[!UICONTROL Select]**.
 
-   With the Asset Selector, you can search for assets by typing in a keyword and selecting **[!UICONTROL Return]**. You can also apply filters to refine your search results. You can filter by path, collection, file type, and tag. Select the filter and then select the **[!UICONTROL Filter]** icon in the toolbar. Change the view by selecting the View icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View]**.
+   With the Asset Selector, you can search for assets by typing in a keyword and selecting **[!UICONTROL Return]**. To refine your search results, apply filters. You can filter by path, collection, file type, and tag. Select the filter and then select the **[!UICONTROL Filter]** icon in the toolbar. Change the view by selecting the View icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View]**.
 
    See [Work with Selectors](/help/assets/dynamic-media/working-with-selectors.md) for more information.
 
-1. Continue to add slides until you have added all the images that you want to rotate through in the Carousel Set.
+1. Continue to add slides until you have added all the images. These images are the ones you want to rotate through in the Carousel Set.
 1. (Optional) Do any of the following:
 
-    * If necessary, drag slide's to reorder images intheset list.
+    * If necessary, drag slides to reorder images in the set list.
     * To delete an image, select the image, then select **[!UICONTROL Delete Slide]** in the toolbar.
 
     * To apply a preset, near the upper-right corner of the page, select the preset drop-down list, then select a preset to apply to the set at once.
 
-   To delete a slide, select the slide. On the toolbar, select **[!UICONTROL Delete Slide]** on the toolbar. To move a slide, select the reorder icon and move to the desired location.
+   To delete a slide, select the slide. On the toolbar, select **[!UICONTROL Delete Slide]**. To move a slide, select the reorder icon and move it to the desired location.
 
 1. After you have added the images in slides, you can add a hotspot, image map, or both to your image. See [Add hotspots or image maps to an Image Banner](#adding-hotspots-or-image-maps-to-an-image-banner).
 1. You can change the visual design and behavior of carousel sets. Select the **[!UICONTROL Behavior]** and **[!UICONTROL Appearance]** tabs if you want to adjust how your carousel banner appears or how specific components behave. See [Manage Viewer Presets](/help/assets/dynamic-media/viewer-presets.md) for more information on how to use the viewer editor.
@@ -236,7 +236,7 @@ To upload image banners, see [Upload assets](/help/assets/manage-digital-assets.
 
 You can add hotspots or image maps to a banner using the Carousel Set editor.
 
-When you add hotspots or image maps, you can define them as a Quick view pop-up display, as a hyperlink, or an Experience Fragment.
+When you add hotspots or image maps, you can define them as a Quick view pop-up display, as a hyperlink, or as an Experience Fragment.
 
 See [Experience Fragment](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
@@ -244,7 +244,7 @@ See [Experience Fragment](/help/sites-cloud/authoring/fragments/content-fragment
 >
 >The social media sharing tools in Carousel Banner are not supported when you embed the viewer in an Experience Fragment.
 >
->To work around this issue, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.
+>To work around this issue, you can use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed them in Experience Fragments.
 
 As you add hotspots or image maps to an image, remember to save your work. Undo and Redo options, near the upper-right corner of the page, are supported during your current creation/editing session.
 
@@ -256,7 +256,7 @@ See [(Optional) Preview Carousel Banners](#optional-previewing-carousel-banners)
 >
 >When you add hotspots to an image banner, the hotspot information is stored in the same metadata location &ndash; relative to the image's location. This point is true regardless of whether it is an Interactive Image or a Carousel Banner. This functionality means that you can easily reuse the same image &ndash; along with its defined hotspot data &ndash; in either viewer.
 >
->Be aware, however, that Carousel Banners support image maps on images that can also contain hotspots; an Interactive Image does not. Keep this tip in mind if you intend to create an Interactive Image or Carousel Banner that uses the same image. Consider creating Interactive Images and Carousel Banners using separate copies of the same image instead.
+>Be aware, however, that Carousel Banners support image maps on images that can also contain hotspots, whereas an Interactive Image does not. Keep this tip in mind if you intend to create an Interactive Image or Carousel Banner that uses the same image. Consider creating Interactive Images and Carousel Banners using separate copies of the same image instead.
 
 >[!NOTE]
 >
@@ -279,7 +279,7 @@ See [(Optional) Preview Carousel Banners](#optional-previewing-carousel-banners)
 
    To delete a hotspot or image map, select the **[!UICONTROL Actions]** tab. Under the **[!UICONTROL Maps & Hotspots]** heading, from the **[!UICONTROL Selected Type]** drop-down list, select the name of the hotspot or image map you want to remove. Select the **[!UICONTROL Trash]** icon next to the menu, then select **[!UICONTROL Delete]**.
 
-1. In the Name text field, type the name of the hotspot or the image map. This name also appears in the **[!UICONTROL Maps & Hotspot]** drop-down list. Providing a name makes it easy to identify the hotspot or image map if you decide to change it in the future.
+1. In the Name text field, type the name of the hotspot or the image map. This name also appears in the **[!UICONTROL Maps & Hotspots]** drop-down list. Providing a name makes it easy to identify the hotspot or image map. Do this if you decide to change it in the future.
 1. Do one of the following in the **[!UICONTROL Actions]** tab:
 
     * Select **[!UICONTROL Quickview]**.
@@ -288,8 +288,8 @@ See [(Optional) Preview Carousel Banners](#optional-previewing-carousel-banners)
         * If you are not an Experience Manager Sites <!-- or Ecommerce --> customer:
 
             * Define variables. See [Identify hotspot variables](#identifying-hotspot-and-image-map-variables).
-            * Then, manually enter the SKU value. In the SKU Value text field, type the product's SKU (Stock Keeping Unit), which is a unique identifier for each distinct product or service that you offer. The entered SKU value automatically populates the variable portion of the Quick view template. The system now knows to associate the selected hotspot with a particular SKU's Quick view.
-            * (Optional) If there are other variables within the Quick view that you must use to further identify a product, select **[!UICONTROL Add Generic Variable]**. In the text field, specify an extra variable. For example, category=Mens is an added variable.
+            * Then, manually enter the SKU value. In the SKU Value text field, type the product's SKU (Stock Keeping Unit), which is a unique identifier for each distinct product or service that you offer. The entered SKU value automatically populates the variable portion of the Quick view template. The system now knows to associate the selected hotspot with a particular SKU's Quickview.
+            * (Optional) If there are other variables within the Quick view that you must use to identify a product further, select **[!UICONTROL Add Generic Variable]**. In the text field, specify an extra variable. For example, category=Menswear is an additional variable.
 
             * See [Work with Selectors](/help/assets/dynamic-media/working-with-selectors.md) for more information.
 
@@ -348,7 +348,7 @@ You can perform various editing tasks on Carousel Sets such as the following:
 
 **To edit Carousel Sets:**
 
-1. Do any one of the following:
+1. Do one of the following:
 
     * Hover over a Carousel Set asset, then select **[!UICONTROL Edit]** (pencil icon).
     * Hover over a Carousel Set asset, select **[!UICONTROL Select]** (check mark icon), then on the toolbar, select **[!UICONTROL Edit]**.
@@ -372,16 +372,16 @@ You can perform various editing tasks on Carousel Sets such as the following:
 
 ## (Optional) Preview Carousel Banners {#optional-previewing-carousel-banners}
 
-You can use Preview to see how the carousel banner appears to customers. Using Preview also lets you test the carousel banner's hotspots and image maps to ensure they behave as expected.
+You can use Preview to see how the carousel banner appears to customers. Using Preview also lets you test the carousel banner's hotspots and image maps. This ensures they behave as expected.
 
 When you are satisfied with the carousel banner, you can publish it.
 See [Embed the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
-See [Link URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). The URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to Experience Manager Sites pages.
+See [Link URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). The URL-based method of linking is not possible if your interactive content has links with relative URLs, links to Experience Manager Sites pages.
 See [Add Dynamic Media Assets to pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 You can preview carousel banners from the Carousel Editor (preferred method) or from the **[!UICONTROL Viewers]** list.
 
-**To optionally preview Carousel Banners:**
+**To preview Carousel Banners optionally:**
 
 1. In **[!UICONTROL Assets]**, navigate to an existing carousel banner that you have created and select to open it.
 1. Select **[!UICONTROL Edit]**.
@@ -413,7 +413,7 @@ See [Publish Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamic
 
 ## Add a Carousel Banner to your website page {#adding-a-carousel-banner-to-your-website-page}
 
-After you have uploaded banner images to create a carousel, added hotspots, or image maps, or both, to the banner. Published the carousel set. You are now ready to add it to your existing website page.
+To create a carousel, upload banner images, add hotspots or image maps, and publish the carousel set. You are now ready to add it to your existing website page.
 
 >[!NOTE]
 >
@@ -431,7 +431,7 @@ However, if you are a stand-alone Experience Manager Assets customer you can man
 
 Note: this step applies only if you are a stand-alone Experience Manager Assets customer.
 
-The last step in this process is integrating the carousel banner with an existing Quickview implementation on your website. Every Quick view implementation is unique and a specific approach is needed that usually involves the assistance of a front-end IT person.
+The last step in this process is integrating the carousel banner with an existing Quickview implementation on your website. Every Quick view implementation is unique and a specific approach is needed that usually involves the assistance of a front-end developer.
 
 The existing Quickview implementation normally represents a chain of inter-related actions that happen on the web page in the following order:
 
@@ -443,9 +443,9 @@ The existing Quickview implementation normally represents a chain of inter-relat
 1. Optionally, the front-end code converts the loaded Quick view data into an HTML representation.
 1. The front-end code displays a modal dialog box or panel and renders the HTML content on the screen for the user.
 
-These calls do not represent independent public API calls which can be called by the web page logic from an arbitrary step. Instead, it is a chained call where every next step is hidden in the last phase (callback) of the previous step.
+These calls do not represent independent public API calls which the web page logic can call from an arbitrary step. Instead, it is a chained call where every next step is hidden in the last phase (callback) of the previous step.
 
-At the same time that the carousel banner is replacing step 1, and partially step 2, when a user selects a hotspot or image map, such interaction is handled by the viewer. The viewer returns an event to the web page that contains all the hotspot or image map data previously added.
+At the same time that the carousel banner is replacing step 1, and partially step 2, when a user selects a hotspot or image map, the viewer handles such interaction. The viewer returns an event to the web page that contains all the hotspot or image map data previously added.
 
 In such an event handler, the front-end code does the following:
 
@@ -457,11 +457,11 @@ The embed code returned by Experience Manager Assets already has a ready-to-use 
 
 So, it is only necessary to uncomment the code and replace the dummy handler body with the code that is specific to the particular web page.
 
-The process of constructing the Quick view URL is opposite of the process used for identifying hotspot and image map variables covered earlier.
+The process of constructing the Quick view URL is the reverse of the process used for identifying hotspot and image map variables covered earlier.
 
 See [Identify hotspot and image map variables](#identifying-hotspot-and-image-map-variables).
 
-The last step to trigger the Quick view URL and activate the Quick view panel most likely requires the assistance of a front-end IT person from your IT department. They have the knowledge to know best how to accurately trigger the Quick view implementation from the proper step, having a ready-to-use Quick view URL.
+The last step to trigger the Quick view URL and activate the Quick view panel requires the assistance of a front-end IT professional from your IT department. They have the knowledge to determine how to trigger the Quick view implementation from the proper step accurately. They have a ready-to-use Quick view URL.
 
 ## Create custom pop-up Windows&reg; using Quickview {#using-quickviews-to-create-custom-pop-ups}
 
