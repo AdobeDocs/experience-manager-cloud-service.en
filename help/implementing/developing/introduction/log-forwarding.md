@@ -20,60 +20,70 @@ Customers with a license with a logging vendor or who host a logging product can
       <th>AEM</th>
       <th>Dispatcher</th>
       <th>CDN</th>
+      <th>mTLS</th>
     </tr>
     <tr>
       <td>Amazon S3</td>
       <td>Yes</td>
       <td>Yes</td>
       <td style="background-color: #ffb3b3;">Future</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Azure Blob Storage</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>DataDog</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Dynatrace</td>
       <td>Yes</td>
       <td>Yes</td>
       <td style="background-color: #ffb3b3;">Future</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>ElasticSearch<br>OpenSearch</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
+      <td>Beta</td>
     </tr>
     <tr>
       <td>HTTPS</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
+      <td>Beta</td>
     </tr>
     <tr>
       <td>New Relic</td>
       <td>Yes</td>
       <td>Yes</td>
       <td style="background-color: #ffb3b3;">Future</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Splunk</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
+      <td>Beta</td>
     </tr>
     <tr>
       <td>Sumo Logic</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
+      <td>-</td>
     </tr>
   </tbody>
 </table>
@@ -81,6 +91,10 @@ Customers with a license with a logging vendor or who host a logging product can
 >[!NOTE]
 >
 > For upcoming CDN Log Technologies planned for the future, please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to register interest.
+
+>[!NOTE]
+>
+> Log Technologies marked **Beta** in the mTLS column support mutual TLS (mTLS), where AEM as a Cloud Service authenticates to your logging destination using a client certificate, in addition to (or instead of) standard token/credential-based authentication. mTLS support is currently in beta; email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access. See [Mutual TLS (mTLS) Authentication](#mtls) for setup details.
 
 Log forwarding is configured in a self-service manner by declaring a configuration in Git, and can be deployed via Cloud Manager config pipelines to dev, stage, and production environment types. The configuration file can be deployed to Rapid Development Environments (RDEs) using command line tooling.
 
