@@ -21,4 +21,5 @@ These are the release notes for the 10 September 2026 release of the Universal E
 ## Other Improvements {#other-improvements}
 
 * The rich text validator now correctly treats tag/markup-only content as empty, removing stale handling for a non-string rich text shape.
-* A but was fixed for the alert icon layout in Tabs.
+* The alert icon in tabs now shows properly.
+* The loading indicator now loads properly.
