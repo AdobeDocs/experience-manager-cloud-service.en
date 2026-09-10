@@ -289,7 +289,7 @@ If **Smart Tag Training** is not visible under Assets in `/aem/start.html`, chec
 
 ### Enablement history and self-service status {#enablement-history-and-self-service-status}
 
-AI-Generated metadata enablement or disablement previously required Adobe Engineering intervention in some cases. This has now been moved to a fully self-service model. You can enable or disable it at any time through the **Smart Tag Enhancement Configuration** screen, without needing to open a support ticket for enablement.
+AI-Generated metadata enablement or disablement previously required Adobe Engineering intervention in some cases. This has now been moved to a fully self-service model. You can enable or disable it at any time through the **[!UICONTROL Smart Tag Enhancement Configuration]** screen, without needing to open a support ticket for enablement.
 
 ### Requirements and Limitations {#requirements-and-limitations}
 
