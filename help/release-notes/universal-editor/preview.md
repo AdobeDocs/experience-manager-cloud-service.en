@@ -23,4 +23,3 @@ These **preview** release notes are provided as a convenience so you know what c
 ## Upcoming Changes {#upcoming-improvements}
 
 * Asset previews now update in the editor canvas on undo/redo.
-* The loading indicator now loads properly.
