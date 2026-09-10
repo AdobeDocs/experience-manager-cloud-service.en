@@ -276,14 +276,14 @@ You can [opt out Smart Tagging](#opt-out-smart-tagging) anytime you want to disc
 
 ## Troubleshooting Scenarios {#troubleshooting-scenarios}
 
-### Feature naming and navigation of Smart Tags {#feature-naming-and-navigation}
+### Feature naming and navigation {#feature-naming-and-navigation}
 
 AI-Generated metadata or Smart Tags automatically tags assets using artificial intelligence. There are two related but distinct configuration/navigation surfaces.
 
 |Task | Correct location | Frequently Encountered Issues |
 |----|-----|------|
 | Enable or disable the AI-Generated metadata (Smart Tag enhancements) at the platform level | **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Assets Configurations]** > **[!UICONTROL Smart Tag Enhancement Configuration]** | This is a configuration toggle, self-service. |
-| Train a custom Smart Tag model | **[!UICONTROL Assets]** > **[!UICONTROL Smart Tag Training]**, reached from `/aem/start.html` | This feature is not available under **[!UICONTROL Tools]** or under **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Smart Tags Training]** |
+| Train a custom Smart Tag model | **[!UICONTROL Assets]** > **[!UICONTROL Smart Tag Training]**, reached from `/aem/start.html` | This feature is not available under **[!UICONTROL Tools]** or under **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Smart Tags Training]**. |
 
 If **Smart Tag Training** is not visible under Assets in `/aem/start.html`, check (in order) the user's group or role assignment, whether Smart Tags auto-tagging is enabled for the instance, the availability of Adobe Experience Manager (AEM) as a Cloud Service version or feature, and whether the asset types in question are supported for custom model training. For more information on AI-Generated metadata or Smart Tags, see [Enhancing content discovery with AI-Generated metadata](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/enhance-content-discovery-with-ai-generated-metadata).
 
