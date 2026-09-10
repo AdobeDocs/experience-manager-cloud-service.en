@@ -1,11 +1,11 @@
 ---
-title: OpenTelemetry (Beta)
-description: Adobe is replacing the Application Performance Monitoring integration built into AEM as a Cloud Service with OpenTelemetry, an open, industry-standard approach to observability. Learn what's changing and how to get started early through the Beta program.
+title: OpenTelemetry (Limited Availability)
+description: Adobe is replacing the Application Performance Monitoring integration built into AEM as a Cloud Service with OpenTelemetry, an open, industry-standard approach to observability, now in Limited Availability.
 exl-id: 50053a23-b552-4554-b4b0-21e978aa7f0a
 feature: Operations
 role: Admin, Developer
 ---
-# OpenTelemetry (Beta) {#opentelemetry-apm}
+# OpenTelemetry (Limited Availability) {#opentelemetry-apm}
 
 Adobe is replacing the Application Performance Monitoring (APM) integration built into AEM as a Cloud Service with [OpenTelemetry](https://opentelemetry.io/), an open, industry-standard approach to observability supported by every major monitoring platform.
 
@@ -22,7 +22,7 @@ Today, AEM as a Cloud Service includes a built-in APM integration, managed entir
 
 >[!AVAILABILITY]
 >
->This page is an advance notice. The OpenTelemetry integration described below is available today through a **Beta** program; broader availability is planned for later in 2026. To join the Beta program, email [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com), describing your use case. If your organization currently relies on Adobe's built-in APM integration, use this Beta period to evaluate OpenTelemetry, choose your own APM endpoint, and plan your transition ahead of that change. Once enrolled, see [Step 1](#request-access) below to enable it for your environment.
+>This feature is in **Limited Availability**, effective October 1, 2026. If your organization currently relies on Adobe's built-in APM integration, you are automatically enrolled — deploying your OpenTelemetry configuration automatically disables that integration, since the two cannot run at the same time. If you are not currently using Adobe's built-in APM integration, request access by emailing [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com). Not yet available to HIPAA-scoped environments. Once enrolled, see [Step 1](#request-access) to configure the integration.
 
 ## Benefits of this change {#benefits}
 
@@ -349,6 +349,10 @@ If telemetry still does not appear after these checks, contact [aemcs-apm-beta@a
 **Why is this change happening?**
 
 AEM as a Cloud Service customers have asked for additional metrics and operational data, as well as traces, spans, and logs in context. OpenTelemetry is an industry standard that supports all of these capabilities, and outputs them in a widely supported format (OTLP).
+
+**Do I need to request access?**
+
+If your organization currently relies on Adobe's built-in APM integration, no — you are automatically enrolled. Otherwise, email [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) to request access. This is not yet available to HIPAA-scoped environments.
 
 **What happens to New Relic if I enable OpenTelemetry?**
 
