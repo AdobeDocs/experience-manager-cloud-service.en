@@ -23,7 +23,7 @@ The MCP server exposes two tools that the migration skill invokes automatically 
 
 | Tool | Description |
 |------|-------------|
-| `fetch-cam-bpa-findings-by-pattern` | Returns BPA findings for a specific migration pattern (`scheduler`, `assetApi`, `eventListener`, `resourceChangeListener`, `eventHandler`, or `all`) from the latest BPA report in a CAM project. |
+| `fetch-cam-bpa-findings-by-pattern` | Returns BPA findings for a specific migration pattern (`scheduler`, `assetApi`, `eventListener`, `resourceChangeListener`, `eventHandler`, `lui`, `cdw`, or `all`) from the latest BPA report in a CAM project. |
 | `fetch-cam-bpa-findings-by-importance` | Returns all BPA findings at a given severity (`CRITICAL`, `MAJOR`, `ADVISORY`, `INFO`) from the latest BPA report, sorted by descending count. Useful for prioritizing which patterns to address first. |
 
 ## Prerequisites {#prerequisites}
