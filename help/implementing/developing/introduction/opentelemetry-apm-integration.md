@@ -14,15 +14,11 @@ avoid naming any specific current or future APM provider by name - the intended 
 is any customer relying on the APM integration currently included with their environment,
 without singling that provider out. Do not add a provider name back into this section. -->
 
-Today, AEM as a Cloud Service includes a built-in APM integration provided directly by Adobe, with no monitoring backend of your own required. As that integration is replaced, **you will need to bring your own APM endpoint** — either a vendor platform that accepts OpenTelemetry data, or a self-hosted (on-premises) OpenTelemetry-compatible backend.
-
->[!IMPORTANT]
->
->This page is an advance notice. The OpenTelemetry integration described below is available today through a **Beta** program; broader availability is planned for later in 2026. If your organization currently relies on Adobe's built-in APM integration, use this Beta period to evaluate OpenTelemetry, choose your own APM endpoint, and plan your transition ahead of that change.
+Today, AEM as a Cloud Service includes a built-in APM integration, managed entirely by Adobe. As that integration is replaced, **you will need to bring your own APM endpoint** — either a vendor platform that accepts OpenTelemetry data, or a self-hosted (on-premises) OpenTelemetry-compatible backend.
 
 >[!AVAILABILITY]
 >
->This feature is available as part of a **Beta** program. See [Step 1](#request-access) below to enable it for your environment.
+>This page is an advance notice. The OpenTelemetry integration described below is available today through a **Beta** program; broader availability is planned for later in 2026. If your organization currently relies on Adobe's built-in APM integration, use this Beta period to evaluate OpenTelemetry, choose your own APM endpoint, and plan your transition ahead of that change. See [Step 1](#request-access) below to enable it for your environment.
 
 ## Benefits of this change {#benefits}
 
