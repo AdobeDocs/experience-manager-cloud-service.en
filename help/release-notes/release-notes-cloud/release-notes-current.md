@@ -128,19 +128,19 @@ Generate on-the-fly Dynamic Media renditions in Content Hub to quickly create as
 
 Turn video playback into actionable insight by providing per-video engagement metrics for the New Video Viewer, including views, impressions, watch time, completion rate, and engagement score, delivered as a monthly CSV to help teams measure content performance.
 
-To participate or learn more, send an email to `grp-dm-beta-feedback@adobe.com`.
+To participate or learn more, send an email to `dm-beta-feedback@adobe.com`.
 
 #### Dynamic Media: Operations and Error Report {#operations-and-error-report}
 
 Give teams visibility into delivery health by reporting operational activity such as delivery request counts, smart crops, video encodes, and templates created, while surfacing failed delivery URLs with their referrer and failure count so issues can be pinpointed and fixed.
 
-To participate or learn more, send an email to `grp-dm-beta-feedback@adobe.com`.
+To participate or learn more, send an email to `dm-beta-feedback@adobe.com`.
 
 #### Dynamic Media: Auto Reflow and Auto Translate {#auto-reflow-and-auto-translate}
 
 Eliminate repetitive redesign and manual localization by using AI to automatically adapt a single master template into layouts that fit different formats and aspect ratios (web, social, display, and email) and to instantly translate text across languages, all while preserving the visual integrity of the design, turning one master asset into variants across many device sizes and locales.
 
-To participate or learn more, send an email to `grp-dm-beta-feedback@adobe.com`.
+To participate or learn more, send an email to `dm-beta-feedback@adobe.com`.
 
 #### Content Hub: Smart Collections {#smart-collections}
 
