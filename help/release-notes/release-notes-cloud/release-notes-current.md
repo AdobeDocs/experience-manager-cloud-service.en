@@ -122,7 +122,28 @@ You can now apply C2PA metadata to assets in Dynamic Media with OpenAPI capabili
 
 Generate on-the-fly Dynamic Media renditions in Content Hub to quickly create asset variations tailored to different channels and content needs. This eliminates the need to maintain multiple pre-generated renditions, making it easier to adapt and reuse assets across experiences. With optimized renditions available on demand, teams can accelerate content activation and deliver the right asset variation for every experience.
 
+### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Limited Availability Features {#assets-limited-availability-features}
+
+#### Dynamic Media with OpenAPI capabilities: Multi-caption and multi-audio track support for videos {#multi-caption-multi-audio}
+
+Dynamic Media with OpenAPI capabilities now support [multiple captions and multiple audio tracks for video assets](/help/assets/multi-audio-multi-caption.md). It enables organizations to deliver localized and accessible video experiences to global audiences by associating multiple language-specific caption and audio tracks with a single primary video. Authors can efficiently manage these tracks from a unified interface, simplifying multilingual content delivery and supporting regional accessibility requirements.
+
+#### Dynamic Media with OpenAPI capabilities: AI-generated video captions {#ai-generated-video-captions} 
+
+AI-generated video captions in Dynamic Media with OpenAPI capabilities [use artificial intelligence to generate captions automatically for video content](/help/assets/generate-translate-captions.md). This feature is designed to improve accessibility and enhance the user experience by providing accurate, real-time captions. The AI analyzes the video's audio track to transcribe speech and create captions, which can be edited for accuracy or customization. These captions help meet accessibility requirements and improve video engagement for audiences who rely on or prefer text-based video support.
+
+#### Dynamic Media with OpenAPI capabilities: Secure Delivery with Attribute-based Access Control {#secure-delivery-attribute-based-access-control}
+
+Attribute-based access control lets admins govern access to Dynamic Media with OpenAPI capabilities assets using metadata-driven rules defined for each user group. IMS-based restrictions allow DAM admins and brand managers to restrict delivery of specific assets to designated Adobe IMS users or groups. Users outside the permitted list receive a 404 response, and the asset is not delivered. This provides a secure way to manage asset delivery for campaigns, product launches, and other controlled distribution scenarios.
+
+
+#### Dynamic Media: New Video Viewer {#new-video-viewer}
+
+The [new video viewer delivers a performant, accessible, and fully customizable playback experience](/help/assets/dynamic-media/new-video-viewer.md). Configurable playback modifiers, including autoplay, loop, and muted, give you complete control over viewer behavior. Custom CSS support ensures a consistent, on-brand experience across all touchpoints. Actionable analytics track views, watch time, completion rate, and engagement score, providing your teams with meaningful insights into video performance.
+
+
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta Features {#assets-beta-program-features}
+
 
 #### Dynamic Media: Video Engagement Report {#video-engagement-report}
 
