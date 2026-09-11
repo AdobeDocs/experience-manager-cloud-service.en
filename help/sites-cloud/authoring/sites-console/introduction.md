@@ -99,13 +99,9 @@ Tapping or clicking it allows you to select a different view.
 
 ![Views button](assets/sites-console-views-button.png)
 
-You can switch between column view, card view, and list view. In the list view it also shows the view settings.
+You can switch between column view, card view, and list view as well as change your [view settings defaults.](#view-settings)
 
 ![Views](assets/sites-console-view.png)
-
->[!NOTE]
->
->The **View Settings** option is only available when in **List View** mode.
 
 Viewing, navigating, and selecting are each conceptually the same across all views, but have small variations in handling, dependent on the view you are using.
 
@@ -183,6 +179,8 @@ Card view also offers [quick actions](#quick-actions) for the items such as sele
 
 You can navigate down the tree by tapping/clicking on cards (taking care to avoid tapping the quick actions) or up again by using the [breadcrumbs in the header](#the-header).
 
+You can change the size of the cards displayed in your [view settings.](#view-settings)
+
 ### List View {#list-view}
 
 List view provides information for each resource at the current level in a list.
@@ -191,41 +189,62 @@ List view provides information for each resource at the current level in a list.
 
 * You can navigate down through the tree by tapping/clicking on the resource name and back up by using the [breadcrumbs in the header](#the-header).
 * To easily select all items in the list, use the [**Select All** checkbox in the toolbar](#select-all).
-
-* Select the columns to be shown using **View Settings** option located under the Views button. The following columns are available for display:
-
-  * **Name** - Page name, which can be useful in a multilingual authoring environment since it is part of the page's URL and does not change regardless of language
-  * **Modified** - Last modified date and last modified by user
-    * The column entry will be badged with a warning icon if the page has been updated since last publication.
-    * ![Modified since last publication](assets/modified.png)
-  * **Published** - Publication status
-    * The column entry will be badged with a clock icon if the page has on/off times set.
-    * Hover over the icon for details.
-    * ![On off time set](assets/on-off-time.png)
-  * **Preview** - Preview status
-  * **Template** - Template on which the page is based
-  * **Operation**
-  * **Workflow** - Workflow currently applied to the page. More information is available when you mouse over, or open Timeline.
-  * **Translated**
-  * **Page Views**
-  * **Unique Visitors**
-  * **Time on Page**
-
-![Configure columns](assets/sites-console-select-columns.png)
-
-By default the **Name** column is shown, which makes up part of the URL for the page. In some cases the author might need to access pages that are in a different language and seeing the name of the page (which is usually unchanging) can be of great help if the author does not know the language of the page.
-
+* Select the columns to be shown using [the **View Settings** option.](#view-settings)
+  * By default the **Name** column is shown, which makes up part of the URL for the page. In some cases the author might need to access pages that are in a different language and seeing the name of the page (which is usually unchanging) can be of great help if the author does not know the language of the page.
 * Change the order of items using the dotted vertical bar at the far right of each item in the list.
-
-![Column order](assets/sites-console-column-order.png)
-
-Select the vertical selection bar and drag the item to a new position in the list.
-
-![Order list](assets/sites-console-order-list.png)
+  * Select the vertical selection bar and drag the item to a new position in the list.
+    ![Order list](assets/sites-console-order-list.png)
 
 >[!NOTE]
 >
 >Changing the order works only within an ordered folder that has `jcr:primaryType` value as `sling:OrderedFolder`.
+
+### View Settings {#view-settings}
+
+The **View Settings** option, available when clicking [the **Views** icon,](#views) allows you to configure what information is displayed and how for a particular view.
+
+![The View Settings dialog](assets/view-settings.png)
+
+These settings are persisted as you navigate and changes windows in the **Sites** console and allow authors to maintain their selected view across sessions and interactions.
+
+* **Default view** - Define which view the console opens with and in which order
+  * **View** - Select default view
+    * **[Card](#card-view)**
+    * **[Column](#column-view)**
+    * **[List](#list-view)**
+  * **Sort by** - Define the default sort order for the view
+    * **Created** - Sort by the date the page is created
+    * **Modified** - Sort by the date the page was last modified
+    * **Name** - Sort by page name
+    * **None** - Impose no sort order
+* **Card** - Define options specific to a particular view
+  * **Card** - Define the size of the cards shown by default
+    * **Large**
+    * **Medium**
+    * **Small**
+  * **List**  - Define which columns are shown by default
+    * **Name** - Page name, which can be useful in a multilingual authoring environment since it is part of the page's URL and does not change regardless of language
+    * **Modified** - Last modified date and last modified by user
+      * The column entry will be badged with a warning icon if the page has been updated since last publication.
+      * ![Modified since last publication](assets/modified.png)
+    * **Published** - Publication status
+      * The column entry will be badged with a clock icon if the page has on/off times set.
+      * Hover over the icon for details.
+      * ![On off time set](assets/on-off-time.png)
+    * **Preview** - Preview status
+    * **Template** - Template on which the page is based
+    * **Operation**
+    * **Workflow** - Workflow currently applied to the page. More information is available when you mouse over, or open Timeline.
+    * **Translated**
+    * **Page Views**
+    * **Unique Visitors**
+    * **Time on Page**
+
+Update your preferences for the view settings and click **Update** to save.
+    
+>[!NOTE]
+>
+>There are additional columns available when in the [Assets console](/help/assets/navigate-assets-view.md) such as metadata information and Content Fragment model.
 
 ## Actions Toolbar {#actions-toolbar}
 

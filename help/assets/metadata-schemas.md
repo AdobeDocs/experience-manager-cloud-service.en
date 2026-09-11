@@ -290,7 +290,7 @@ If a metadata value entered through the UI does not appear to persist:
 
 * Confirm the property is not mapped under one of the reserved namespaces above.
 * Confirm the schema is saved and applied to the correct folder or asset (schema assignment is per-folder through folder properties, not automatic).
-* For assets that existed before a metadata profile (bulk-apply configuration) was created; profiles only auto-apply their properties (for example, approval status) to the newly uploaded assets. Existing assets in the folder do not retroactively pick up the profile's values. Use the *Reprocess* option to bulk-apply it to existing assets, or update them manually.
+* For assets that existed before a metadata profile (bulk-apply configuration) was created; profiles only auto-apply their properties (for example, approval status) to the newly uploaded assets. Existing assets in the folder do not retroactively pick up the profile's values. Use the **[!UICONTROL Reprocess]** option to bulk-apply it to existing assets, or update them manually.
 * Confirm the field is actually present under `jcr:content/metadata` on the asset node (for example, through CRXDE Lite or the Assets HTTP API) to distinguish a save failure from a display-only issue.
 
 ### Multi-language and integration considerations {#Multi-language-and-integration-considerations}
