@@ -102,27 +102,94 @@ See [AEM Assets beta programs](#assets-beta-program-features).
 
 **C2PA metadata support**
 
-Renditions of assets now supports C2PA metadata based on the original, enabling easy labelling of Gen AI manipulated content. This helps Experience Manager customers comply with Gen AI labelling laws; customers should validate compliance with regulations on their own. Metadata can be inspected using any C2PA inspection tool. See [Adobe C2PA inspection tool](https://contentauthenticity.adobe.com/inspect). 
+Renditions of assets now [supports C2PA metadata based on the original, enabling easy labelling of Gen AI manipulated content](/help/assets/c2pa-metadata-assets-view.md). This helps Experience Manager customers comply with Gen AI labelling laws; customers should validate compliance with regulations on their own. Metadata can be inspected using any C2PA inspection tool. See [Adobe C2PA inspection tool](https://contentauthenticity.adobe.com/inspect). 
 
 New JCR properties for a C2PA manifest (dam:hasC2PAManifest) and Gen AI (dam:isAiGenerated) labels are available on Assets processed with an embedded C2PA manifest. The Gen AI label property can be used in cases where C2PA is not utilized. This is not recommended since management of the property is manual and many of the Adobe and 3rd party tools use C2PA.
 
 **Assets Insights now supports Adobe Analytics 2.0 API**
 
-Assets Insights in AEM Admin View now supports the Adobe Analytics 2.0 API with OAuth Server-to-Server authentication, enabling continued access to current asset usage insights following the retirement of the Adobe Analytics 1.4 API. Customers can reconfigure their Assets Insights integration to resume synchronization of impressions and clicks from Adobe Analytics, including data collected during the transition period, without losing existing insights data.
+Assets Insights in AEM Admin View now [supports the Adobe Analytics 2.0 API with OAuth Server-to-Server authentication, enabling continued access to current asset usage insights following the retirement of the Adobe Analytics 1.4 API](/help/assets/assets-insights.md). Customers can reconfigure their Assets Insights integration to resume synchronization of impressions and clicks from Adobe Analytics, including data collected during the transition period, without losing existing insights data.
 
 ### New Features in Dynamic Media {#new-features-dynamic-media}
 
 **C2PA metadata support in Dynamic Media**
 
-You can now apply C2PA metadata to assets in Dynamic Media with OpenAPI capabilities and Dynamic Media Scene7. C2PA metadata embeds secure metadata that helps viewers verify an asset's origin, edit history, and whether generative AI was used during its creation, enabling greater transparency and trust in digital content.
+You can now [apply C2PA metadata to assets in Dynamic Media with OpenAPI capabilities](/help/assets/c2pa-metadata.md) and Dynamic Media Scene7. C2PA metadata embeds secure metadata that helps viewers verify an asset's origin, edit history, and whether generative AI was used during its creation, enabling greater transparency and trust in digital content.
 
 ### New features in Content Hub {#new-features-content-hub}
 
 **Generate on-the-fly Dynamic Media renditions in Content Hub**
 
-Generate on-the-fly Dynamic Media renditions in Content Hub to quickly create asset variations tailored to different channels and content needs. This eliminates the need to maintain multiple pre-generated renditions, making it easier to adapt and reuse assets across experiences. With optimized renditions available on demand, teams can accelerate content activation and deliver the right asset variation for every experience.
+[Generate on-the-fly Dynamic Media renditions in Content Hub to quickly create asset variations tailored to different channels and content needs](/help/assets/generate-on-the-fly-dynamic-media-renditions.md). This eliminates the need to maintain multiple pre-generated renditions, making it easier to adapt and reuse assets across experiences. With optimized renditions available on demand, teams can accelerate content activation and deliver the right asset variation for every experience.
+
+### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Limited Availability Features {#assets-limited-availability-features}
+
+#### Dynamic Media with OpenAPI capabilities: Multi-caption and multi-audio track support for videos {#multi-caption-multi-audio}
+
+Dynamic Media with OpenAPI capabilities now support [multiple captions and multiple audio tracks for video assets](/help/assets/multi-audio-multi-caption.md). It enables organizations to deliver localized and accessible video experiences to global audiences by associating multiple language-specific caption and audio tracks with a single primary video. Authors can efficiently manage these tracks from a unified interface, simplifying multilingual content delivery and supporting regional accessibility requirements.
+
+#### Dynamic Media with OpenAPI capabilities: AI-generated video captions {#ai-generated-video-captions} 
+
+AI-generated video captions in Dynamic Media with OpenAPI capabilities [use artificial intelligence to generate captions automatically for video content](/help/assets/generate-translate-captions.md). This feature is designed to improve accessibility and enhance the user experience by providing accurate, real-time captions. The AI analyzes the video's audio track to transcribe speech and create captions, which can be edited for accuracy or customization. These captions help meet accessibility requirements and improve video engagement for audiences who rely on or prefer text-based video support.
+
+#### Dynamic Media with OpenAPI capabilities: Secure Delivery with Attribute-based Access Control {#secure-delivery-attribute-based-access-control}
+
+Attribute-based access control lets admins govern access to Dynamic Media with OpenAPI capabilities assets using metadata-driven rules defined for each user group. IMS-based restrictions allow DAM admins and brand managers to restrict delivery of specific assets to designated Adobe IMS users or groups. Users outside the permitted list receive a 404 response, and the asset is not delivered. This provides a secure way to manage asset delivery for campaigns, product launches, and other controlled distribution scenarios.
+
+
+#### Dynamic Media: New Video Viewer {#new-video-viewer}
+
+The [new video viewer delivers a performant, accessible, and fully customizable playback experience](/help/assets/dynamic-media/new-video-viewer.md). Configurable playback modifiers, including autoplay, loop, and muted, give you complete control over viewer behavior. Custom CSS support ensures a consistent, on-brand experience across all touchpoints. Actionable analytics track views, watch time, completion rate, and engagement score, providing your teams with meaningful insights into video performance.
+
+#### Content Hub: AI Search {#ai-search-content-hub}
+
+AEM Assets Content Hub now includes [AI Search, an advanced search capability that understands the meaning and intent behind user queries instead of relying only on exact keyword matches](/help/assets/search-assets-content-hub.md#ai-search-aem-assets-content-hub). AI Search delivers more accurate and context relevant results by recognizing relationships between words, concepts, and user intent. It supports multilingual queries, handles misspellings and typos, understands synonyms, and surfaces relevant assets even when users do not use exact metadata terms. 
+
+For example, a search for `Woman drinking coffee` can also return assets tagged with related terms such as `Lady`, `Girl`, `Latte`, or `Cappuccino`. 
+
+Administrators can enable or disable AI Search in Content Hub using the Configurations menu by selecting either AI Search or traditional keyword search.
+
+#### Content Hub: Custom Sorting options {#custom-sorting-options-content-hub}
+
+Content Hub now allows administrators to [enable custom metadata fields as sorting options on the Content Hub home page](/help/assets/search-assets-content-hub.md#configure-sorting-aem-assets-content-hub). In addition to the default sorting options, Size, Modified, Name, and Relevance, administrators can configure business-specific metadata fields such as Channel, Region, SKU, or Campaign to help users organize search results more effectively.
+
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta Features {#assets-beta-program-features}
+
+
+#### Dynamic Media: Video Engagement Report {#video-engagement-report}
+
+Turn video playback into actionable insight by providing per-video engagement metrics for the New Video Viewer, including views, impressions, watch time, completion rate, and engagement score, delivered as a monthly CSV to help teams measure content performance.
+
+To participate or learn more, send an email to `dm-beta-feedback@adobe.com`.
+
+#### Dynamic Media: Operations and Error Report {#operations-and-error-report}
+
+Give teams visibility into delivery health by reporting operational activity such as delivery request counts, smart crops, video encodes, and templates created, while surfacing failed delivery URLs with their referrer and failure count so issues can be pinpointed and fixed.
+
+To participate or learn more, send an email to `dm-beta-feedback@adobe.com`.
+
+#### Dynamic Media: Auto Reflow and Auto Translate {#auto-reflow-and-auto-translate}
+
+Eliminate repetitive redesign and manual localization by using AI to automatically adapt a single master template into layouts that fit different formats and aspect ratios (web, social, display, and email) and to instantly translate text across languages, all while preserving the visual integrity of the design, turning one master asset into variants across many device sizes and locales.
+
+To participate or learn more, send an email to `dm-beta-feedback@adobe.com`.
+
+#### Content Hub: Smart Collections {#smart-collections}
+
+Smart Collections enable you to automatically organize assets based on defined search criteria.
+When you create a Smart Collection, the collection stores the search query and filter criteria instead of storing individual assets. Assets that match the configured criteria are automatically displayed in the collection.
+
+Smart Collections automatically remain up to date. When newly approved assets satisfy the configured search criteria, they are automatically added to the collection.
+
+To participate or learn more, send an email to `aemcontenthubbeta@adobe.com`.
+
+#### Multi-portal Content Hub {#multi-portal-content-hub}
+
+Deliver tailored Content Hub experiences for each brand or business unit, while managing content centrally from a single source of truth.
+
+To participate or learn more, send an email to `aemcontenthubbeta@adobe.com`.
+
 
 #### AI-powered content onboarding and content supply chain automation {#ai-powered-content-onboarding-content-supply-chain-automation}
 
@@ -138,7 +205,7 @@ To participate or learn more, send an email to `aem-assets-coinnovation-interest
 Assets View supports UI Extensibility, a developer-first capability that empowers customers to tailor the out-of-the-box experience to meet their specific business requirements.
 Customers can leverage existing stable extension points by following Adobe's developer documentation to build and deploy extensions with minimal effort. For use cases where a required extension point is not yet available, Adobe works directly with customers to explore the requirements and assess the technical feasibility of delivering new extensibility APIs tailored to their needs, and may deliver such new APIs as **Beta Releases**.
 Additionally, Adobe has developed a **GenAI-powered extension generation tool** currently available in an internal early adoption phase. This tool can significantly accelerate extension development time. Customers participating in this beta program will receive access to the tool and are encouraged to share feedback to help shape its evolution.
-To participate or learn more, send an email to `GRP-ASSETSVIEWUIEXTENSIBILITY@adobe.com`.
+To participate or learn more, send an email to `ASSETSVIEWUIEXTENSIBILITY@adobe.com`.
 
 #### Brand Aware Metadata (BAM) {#brand-aware-metadata-beta}
 
@@ -146,7 +213,7 @@ AEM Assets now supports Brand Aware Metadata, an AI-powered capability that auto
 
 Adobe is actively expanding BAM's capabilities through direct co-innovation with customers. Where a specific use case is not yet supported, Adobe works with participating customers to understand their needs and may deliver expanded capabilities as the beta progresses. Customers in this program gain early access to new features as they ship and are encouraged to share feedback that directly shapes the roadmap.
 
-To participate or learn more, send an email to `GRP-AEM-ASSETS-BRANDAWAREMETADATA@adobe.com`.
+To participate or learn more, send an email to `AEM-ASSETS-BRANDAWAREMETADATA@adobe.com`.
 
 <!--
 
@@ -176,7 +243,7 @@ To participate or learn more, send an email to `GRP-AEM-ONBOARDING-AGENT@adobe.c
 
 Adobe works with participating customers to understand their needs and may deliver expanded capabilities as the limited availability program progresses. Customers in this program gain early access to new features as they ship and are encouraged to share feedback that directly shapes the roadmap.
 
-To participate or learn more, send an email to `Grp-AEM-Assets-Sourcing-Portal@adobe.com`.
+To participate or learn more, send an email to `AEM-Assets-Sourcing-Portal@adobe.com`.
 
 #### Support for additional asset types in Adobe Express integration {#assets-express-integration-asset-types-beta}
 
