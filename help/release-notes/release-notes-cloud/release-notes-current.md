@@ -407,9 +407,9 @@ If interested, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-
 
 Using the AI Assistant in AEM Author and other interfaces, you can troubleshoot replication-related issues such as blocked queues. To join the Beta Program, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com), describing your interest.
 
-#### OpenTelemetry for Application Performance Monitoring (APM) (Alpha Program) {#apm-alpha}
+#### OpenTelemetry for Application Performance Monitoring (APM) (Beta Program) {#apm-beta}
 
-AEM as a Cloud Service now supports OpenTelemetry-based telemetry export, letting you monitor AEM alongside the rest of your systems in the APM tools your teams already use.
+AEM as a Cloud Service is replacing its built-in APM integration with [OpenTelemetry](https://opentelemetry.io/), an open, industry-standard approach to observability -- traces, metrics, and logs together, in the APM tools your teams already use.
 
 Use this integration to:
 
@@ -418,7 +418,7 @@ Use this integration to:
 - Build dashboards and alerts for your AEM tiers
 - Correlate AEM behavior with other services during incidents
 
-To join the alpha, email [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com), describing your use case.
+To join the Beta Program, email [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com), describing your use case. See [OpenTelemetry (Beta)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/opentelemetry-apm-integration.html) for full setup steps and supported providers.
 
 ## [!DNL Experience Manager] Guides {#guides}
 
