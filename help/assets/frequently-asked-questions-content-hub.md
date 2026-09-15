@@ -144,6 +144,10 @@ When you have configured AEM Assets Content Hub for Production and other lower e
 
    Content Hub now displays assets for the selected environment.
 
+   >[!NOTE]
+   >
+   >If assets from a specific environment, for example, **STAGE** are not appearing in Content Hub while assets from another environment, for example, **PRODUCTION** are, check the **[!UICONTROL Select Repository]** setting in your Content Hub profile. Content Hub connects to one specific delivery repository at a time, and the UI can remain pointed at a different environment's repository, for example, still **PRODUCTION** than the one currently being tested. Switching the repository selection to the correct environment resolves this without any change to asset approval or ABAC configuration.
+
 ## How can AEM Assets Content Hub display the thumbnail preview for .ZIP file type? {#thumbnail-preview-zip-file}
 
 To provide a thumbnail preview for file types such as .ZIP in AEM Assets Content Hub, you can add a rendition named `cq5dam.<label>.<width>.<height>.<ext>` to the root of the path where the .ZIP is available in AEM as a Cloud Service authoring environment. For example, `cq5dam.preview.500.500.png`.
@@ -167,6 +171,18 @@ If you do not add a custom rendition, Content Hub determines the thumbnail from 
 * If the .ZIP contains one or more images, Content Hub picks one of them as the thumbnail. When there are multiple images, it selects the first one in alphanumeric filename order.
 
 * If the .ZIP contains only non-image files (for example, only a PDF, or only a video, with no eligible image inside), no thumbnail is generated. Content Hub does not extract a preview frame from a video or render a preview from a PDF inside the .ZIP file.
+
+
+## What Happens When I Approve an Asset for Content Hub versus Delivery? {#approve-an-asset}
+
+Approving an asset is not a single binary state, the **Approval Target** selected at approval time determines what the approval actually enables:
+
+* Approving with Content Hub as the target makes the asset visible inside the Content Hub portal itself, but does not make it accessible through a public share link.
+* Approving with Delivery as the target is what is required for the asset to be reachable through public link-sharing.
+
+A **There is no content to display** or **404 Error** on a shared public link is frequently caused by the underlying asset having been approved with Content Hub as the target rather than Delivery. When troubleshooting a broken share link, check and correct the asset's **Approval Target** to Delivery before investigating further.
+
+Separately, when an asset is approved with Content Hub as the target, AEM auto-populates the `dam:roles` metadata field with a system-managed IMS group identifier. This is an expected, system-managed security mechanism used to restrict access to authenticated users. It is not an evidence of a workflow bug, it should not be manually edited or removed, and does not conflict with the Attribute-Based Access Control (ABAC) rules. If a metadata schema exposes this field, consider marking it read-only or hidden so authors do not inadvertently change it. Control the visibility through ABAC and metadata rather than by editing `dam:roles`.
 
 
 **See also**
