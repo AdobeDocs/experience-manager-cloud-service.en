@@ -54,7 +54,7 @@ The runbook is the recommended entry point for a whole-project assessment: it gi
 | `assetApi` | Deprecated `AssetManager` and DAM API calls replaced with supported equivalents |
 | `guavaCache` | Guava cache (`com.google.common.cache.*`) usage swapped for the Cloud Service–supported Caffeine cache |
 | `htlLint` | `data-sly-test` redundant constant comparison warnings in HTL templates |
-| OSGi configs | `.cfg.json` conversion, runmode scoping, and Cloud Manager secrets/env-var extraction |
+| OSGi configs | `.cfg.json` conversion, runmode scoping, Cloud Manager secrets/env-var extraction, and unsupported run mode (URC) detection and safe reordering |
 
 **Legacy UI and template modernization patterns**
 
@@ -64,14 +64,13 @@ The runbook is the recommended entry point for a whole-project assessment: it gi
 | `cdw` (custom design widgets) | Custom ExtJS widgets (`cq:Widget` xtypes) mapped to Coral 3 or scaffolded as Granite UI components |
 | Template modernization | Static templates converted to editable templates, with AEM Modernize Tools structure, component, and policy rewrite rules generated. Detects and classifies both legacy and custom static templates, including nested template folders |
 
-**Dispatcher configuration (beta)**
+**Dispatcher configuration**
 
 | Pattern | What it fixes |
 |---------|--------------|
 | `dispatcherConversion` | AMS or on-premise Apache HTTPD and Dispatcher configurations converted to the AEM as a Cloud Service structure |
 
->[!IMPORTANT]
->Dispatcher configuration conversion is in **beta** and under active development. Review its output carefully before applying it to production Dispatcher configurations. See [Dispatcher Conversion](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md#dispatcher-conversion) for the workflow.
+See [Dispatcher Conversion](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md#dispatcher-conversion) for the workflow.
 
 The skill delegates all code transformation steps to the companion `code-assessment` skill. Both are distributed together as the `aem-cloud-service` skill package; install the package once to get both.
 
@@ -124,7 +123,7 @@ The skill delegates all code transformation steps to the companion `code-assessm
    Fix guavaCache findings using BPA CSV at ./reports/bpa.csv
    ```
 
-   **Dispatcher conversion (beta):**
+   **Dispatcher conversion:**
 
    ```
    Convert my AMS / on-prem Dispatcher config to AEM as a Cloud Service.

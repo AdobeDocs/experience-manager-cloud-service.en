@@ -102,7 +102,7 @@ Targets HTL templates under `ui.apps` that produce `data-sly-test: redundant con
 
 ### OSGi Configs to Cloud Manager {#osgi-cloud-manager}
 
-Converts OSGi configurations in `ui.config` to Cloud Manager–compatible `.cfg.json` format with full environment-specific handling. This covers two related tasks:
+Converts OSGi configurations in `ui.config` to Cloud Manager–compatible `.cfg.json` format with full environment-specific handling. This covers several related tasks:
 
 **Config format conversion**
 
@@ -125,7 +125,17 @@ The corresponding variables and secrets are applied in Cloud Manager and injecte
 >[!IMPORTANT]
 >The agent never outputs secret values in the conversation. All sensitive data is written to a gitignored handoff file for you to apply via the Cloud Manager API or UI.
 
-**This pattern does not use BPA CSV or CAM.** Start a session with:
+**Unsupported run modes (URC)**
+
+AEM as a Cloud Service supports a fixed set of run mode identifiers. Configuration folders that use an unsupported run mode have no effect once deployed. The agent flags these Unsupported Run mode Configurations (URC), including:
+
+* Unknown run mode tokens, for example `config.qa` or `install.local`
+* A tier token that follows instead of precedes the environment token—`config.dev.author` instead of the valid `config.author.dev`
+* Non-lowercase tokens, such as `config.Author.dev`, and the reserved `config.preview` (preview inherits from publish)
+
+URC findings come from the Best Practices Analyzer first (subtype `unsupported.runmode`, severity `CRITICAL`); when no BPA source reports them, the agent scans `config.*` and `install.*` folders locally as a safety net. For each finding it reports the folder path, the offending run mode, and the remediation—evaluate whether the configuration is still needed, rename it to a supported run mode, or remove it if obsolete. For ordering-only violations, where every token is valid but out of order, the agent can apply a safe reorder automatically (for example, renaming `config.dev.author` to `config.author.dev`); unknown tokens and other ambiguous cases are flagged for you to resolve.
+
+**Config format conversion and secret externalization do not require a BPA CSV or CAM, and URC detection uses BPA findings when available.** Start a session with:
 
 ```
 Scan my config files and create Cloud Manager environment secrets or variables.
@@ -165,10 +175,7 @@ During discovery, the agent walks the templates under `apps/<appId>/templates/` 
 Migrate my static templates to editable templates and generate the Modernize Tools rewrite rules.
 ```
 
-### Dispatcher Conversion (Beta) {#dispatcher-conversion}
-
->[!IMPORTANT]
->Dispatcher configuration conversion is in **beta** and under active development. Review its output carefully before applying it to production Dispatcher configurations.
+### Dispatcher Conversion {#dispatcher-conversion}
 
 Converts an AMS or on-premise Apache HTTPD and Dispatcher configuration to the AEM as a Cloud Service structure. This capability wraps Adobe's maintained [Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) tool, adding detection, configuration generation, output verification, and validation around it.
 
