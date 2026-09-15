@@ -18,7 +18,7 @@ Today, AEM as a Cloud Service includes a built-in APM integration, managed entir
 
 >[!AVAILABILITY]
 >
->This page is an advance notice. The OpenTelemetry integration described below is available today through a **Beta** program; broader availability is planned for later in 2026. If your organization currently relies on Adobe's built-in APM integration, use this Beta period to evaluate OpenTelemetry, choose your own APM endpoint, and plan your transition ahead of that change. See [Step 1](#request-access) below to enable it for your environment.
+>This page is an advance notice. The OpenTelemetry integration described below is available today through a **Beta** program; broader availability is planned for later in 2026. To join the Beta program, email [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com), describing your use case. If your organization currently relies on Adobe's built-in APM integration, use this Beta period to evaluate OpenTelemetry, choose your own APM endpoint, and plan your transition ahead of that change. Once enrolled, see [Step 1](#request-access) below to enable it for your environment.
 
 ## Benefits of this change {#benefits}
 
