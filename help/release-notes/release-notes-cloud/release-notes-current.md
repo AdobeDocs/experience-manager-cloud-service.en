@@ -340,6 +340,12 @@ If interested, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-
 
 Using the AI Assistant in AEM Author and other interfaces, you can troubleshoot replication-related issues such as blocked queues. To join the Beta Program, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com), describing your interest.
 
+#### mTLS Authentication for Log Forwarding (Beta Program) {#mtls-log-forwarding-beta}
+
+Log Forwarding now supports mutual TLS (mTLS) for Splunk, Elasticsearch (and OpenSearch), and HTTPS destinations. AEM presents a client certificate to your logging endpoint so it can verify the connection is coming from your AEM environment, in addition to (or instead of) any existing username/token authentication.
+
+To join the Beta Program, email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access before adding an `mtls` block to your configuration. Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md#mtls).
+
 #### OpenTelemetry for Application Performance Monitoring (APM) (Alpha Program) {#apm-alpha}
 
 AEM as a Cloud Service now supports OpenTelemetry-based telemetry export, letting you monitor AEM alongside the rest of your systems in the APM tools your teams already use.
