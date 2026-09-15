@@ -678,7 +678,7 @@ To know more, see how to [browse DAM assets using desktop app](https://experienc
 
 ## Permission model for move or publish operations {#permission-model}
 
-Moving an asset or Content Fragment in Adobe Experience Manager (AEM) requires more than write access to the source and destination folders; it also requires **replicate** permission for the operation to complete. If you lack replicate access, the move does not fail outright; it enters a **pending approval** workflow state and waits for an administrator, that is, a user who does have the replicate permission to approve or complete it. This is expected, by-design behavior, and not a defect. AEM intentionally gates replication-triggering actions behind the replicate permission so that only authorized users can push the content changes.
+Moving an asset or Content Fragment in Adobe Experience Manager (AEM) requires more than write access to the source and destination folders; it also requires **replicate** permission for the operation to complete. If you lack replicate access, the move does not fail outright; it enters a **pending approval** workflow state and waits for an administrator, that is, a user who does have the **replicate** permission to approve or complete it. This is expected, by-design behavior, and not a defect. AEM intentionally gates replication-triggering actions behind the **replicate** permission so that only authorized users can push the content changes.
 
 |Operation|Minimum permission needed|What happens if missing|
 |--- |--- |--- |
@@ -690,24 +690,24 @@ Moving an asset or Content Fragment in Adobe Experience Manager (AEM) requires m
 ### Stuck or pending move-replicate workflow {#stuck-pending}
 
 1. Identify the user who initiated the move or copy and check whether they hold the replicate permission on the target path.
-2. If they do not, either grant the replicate permission (if that is the intended long-term access level) or get an administrator who has the replicate permission to approve or complete the pending workflow to unblock it.
+2. If they do not, either grant the **replicate** permission (if that is the intended long-term access level) or get an administrator who has the **replicate** permission to approve or complete the pending workflow to unblock it.
 3. Do not treat a stuck workflow as a system defect before checking this. This is the standard AEM behavior enforcing the replicate permission gate, and the underlying content is not corrupted or lost.
 
 ### Disabled Move button {#move-button}
 
-If the **[!UICONTROL Move]** action in the Assets UI is grayed out or unresponsive, confirm that a destination folder checkbox has actually been selected or checked in the **[!UICONTROL Select Destination]** dialog box. The button only activates once a specific destination is confirmed, and this step is easy to miss.
+If the **[!UICONTROL Move]** action in the Assets UI is grayed out or unresponsive, confirm that a destination folder checkbox has actually been selected or checked in the **[!UICONTROL Select Destination]** dialog box. The button only activates once a specific destination is confirmed. Do not miss this step.
 
 ### Private folders versus standard ACLs {#private-folders-versus-standard-ACLs}
 
-Private folders use a membership-based model that layers on top of and effectively overrides the standard ACL-based sharing for the **Share Link** feature specifically. The read access through group ACL still lets members browse a private folder, but only the folder's owner and explicitly added members can generate shared links or otherwise use sharing features on it. When investigating why this group can no longer share a folder, check whether the folder was recently converted to private. That explains restricted sharing even with unchanged group ACLs.
+Private folders use a membership-based model that layers on top of and effectively overrides the standard ACL-based sharing for the **Share Link** feature specifically. The read access through group ACL still lets members browse a private folder, but only the folder's owner and explicitly added members generate shared links or otherwise use sharing features on it. When investigating why this group can no longer share a folder, check whether the folder was recently converted to private. That explains restricted sharing even with unchanged group ACLs.
 
 ### Folder structure and performance guidance {#folder-structure-and-performance-guidance}
 
-AEM does not enforce a hard technical limit on the number of subfolders or assets under a single folder. However, for performance and usability, keep the number of direct children, that is, subfolders and assets combined under a single folder to roughly 1,000. Folders with several thousand direct children can show degraded performance for listing, moving, and workflow operations. If a folder is expected to grow beyond this, introduce additional grouping or subfolder levels proactively before performance issues appear.
+AEM does not enforce a hard technical limit on the number of subfolders or assets under a single folder. However, for performance and usability, keep the number of direct children, that is, subfolders and assets combined under a single folder to roughly 1,000. Folders with several thousand direct children shows degraded performance for listing, moving, and workflow operations. If a folder is expected to grow beyond this, introduce additional grouping or subfolder levels proactively before performance issues appear.
 
 ### Known UI behavior {#known-UI-behavior}
 
-Avoid using slashes (/) in folder titles. A slash in a folder title can interfere with the Assets UI's **[!UICONTROL Column View]** rendering logic, causing the subfolders to fail to display even though they exist in the repository. If the **[!UICONTROL Column View]** unexpectedly shows an empty folder that has children, check the folder titles under that path for slashes before assuming a deeper indexing or permissions problem.
+Avoid using slashes (/) in the folder titles. A slash in a folder title can interfere with the Assets UI's **[!UICONTROL Column View]** rendering logic, causing the subfolders to fail to display even though they exist in the repository. If the **[!UICONTROL Column View]** unexpectedly shows an empty folder that has children, check the folder titles under that path for slashes before assuming a deeper indexing or permissions problem.
 
 ### Troubleshooting checklist {#troubleshooting-checklist}
 

@@ -418,9 +418,9 @@ When malware detection is enabled, the uploaded files are scanned and infected f
 
 ### File type handling and upload restrictions {#file-type-handling-and-upload-restrictions}
 
-* AEM does not impose default file-type restrictions on uploads. It is possible to upload files with executable extensions (for example, *.exe*, *.exe.pdf*) as asset renditions.
+* AEM does not impose default file-type restrictions on uploads. It is possible to upload files with executable extensions (for example, .exe, .exe.pdf) as asset renditions.
 * This is an expected behavior, and not a vulnerability that AEM does not render or execute uploaded active content or scripts, whether in the browser or on the server. Uploading an executable file hence does not by itself create a remote-code-execution risk under AEM's default security model. Organizations with stricter compliance requirements should apply their own upload validation or allow-listing if needed, since AEM does not enforce this natively.
-* Supported file formats and MIME types for asset processing are documented separately, unsupported types are not fully processed (for example, they may not generate the expected renditions).
+* The supported file formats and MIME types for asset processing are documented separately, unsupported types are not fully processed (for example, they may not generate the expected renditions).
 
 ### Upload reliability best practices {#upload-reliability-best-practices}
 
@@ -432,7 +432,7 @@ When malware detection is enabled, the uploaded files are scanned and infected f
 1. **403 Forbidden on API upload**: Confirm the credential type. OAuth S2S from Adobe Developer console is not supported for asset upload API. Use the Service Credentials (JWT) from the AEM Developer console instead.
 2. **403 Forbidden despite correct credentials and group membership**: Confirm the technical account has explicit `jcr:read` on `/content/dam` and `rep:write/jcr:all` on the specific target folder. Group or profile membership does not substitute for the folder-level ACLs.
 3. **Upload succeeds but asset fails to appear or binary looks corrupted**: Rule out folder-level bulk upload as the ingestion method; retry through the standard upload API or UI and capture logs if it recurs.
-4. **Security review flags unrestricted file upload**: Clarify that AEM does not execute uploaded active content server-side or in-browser by default, so this is an expected platform behavior rather than a defect, unless your organization requires additional upload-time validation.
+4. **Security review flags unrestricted file upload**: Clarify that AEM does not execute the uploaded active content server-side or in-browser by default, so this is an expected platform behavior rather than a defect, unless your organization requires additional upload-time validation.
 5. **Concerned about presigned URL exposure**: Confirm that the URL was used within its short validity window and that asset finalization still required a separate authenticated call with a valid `uploadToken`. This is what limits the blast radius of a leaked URL.
 
 

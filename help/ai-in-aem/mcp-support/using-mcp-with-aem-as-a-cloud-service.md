@@ -109,6 +109,7 @@ The MCP servers are designed to work with a defined set of MCP-compatible applic
 
 * Amazon Quick
 * Microsoft Copilot Studio
+* Workfront Fusion
 
 ## Setup Overview {#setup-overview}
 
