@@ -9,48 +9,48 @@ exl-id: 8057e82b-36d4-4280-b433-f26cfcfe9fe6
 
 ## Overview {#overview}
 
-[Enterprise Context](/help/ai-in-aem/agents/governance/enterprise-context.md) provides Adobe Experience Manager (AEM) agents with organization-specific knowledge and guidance, enabling them to understand the context in which they operate. It can capture brand identity, tone of voice, terminology, editorial guidance, and other standards that are important for creating consistent and relevant experiences.
+[Experience Context](/help/ai-in-aem/agents/governance/experience-context.md) provides Adobe Experience Manager (AEM) agents with organization-specific knowledge and guidance, enabling them to understand the context in which they operate. It can capture brand identity, tone of voice, terminology, editorial guidance, and other standards that are important for creating consistent and relevant experiences.
 
-Importing a brand policy is one way to establish this Enterprise Context in AEM. The Governance Agent processes your organization's existing brand policy and transforms it into structured, precise, and actionable context. From this context, the Governance Agent can derive [governance checks](/help/ai-in-aem/agents/governance/enterprise-context.md#checks) to evaluate content against specific brand requirements.
+Importing a brand policy is one way to establish this Experience Context in AEM. The Governance Agent processes your organization's existing brand policy and transforms it into structured, precise, and actionable context. From this context, the Governance Agent can derive [governance checks](/help/ai-in-aem/agents/governance/experience-context.md#checks) to evaluate content against specific brand requirements.
 
-Enterprise Context goes beyond governance checks. Once established, it can provide AI-powered and agentic capabilities with the relevant and targeted context they need for a given task. This enables agents to use the appropriate brand guidance when generating, updating, or evaluating content, rather than relying on generic instructions or the complete brand policy for every interaction.
+Experience Context goes beyond governance checks. Once established, it can provide AI-powered and agentic capabilities with the relevant and targeted context they need for a given task. This enables agents to use the appropriate brand guidance when generating, updating, or evaluating content, rather than relying on generic instructions or the complete brand policy for every interaction.
 
 ## What is a Brand Policy in the Governance Agent {#what-is-a-brand-policy-in-the-governance-agent}
 
 A brand policy contains the principles, guidelines, and requirements that define how your organization's brand should be represented, including tone of voice, terminology, messaging, visual identity, and other brand-specific guidance.
 
-When a brand policy is imported, the Governance Agent analyzes its content and transforms the relevant guidance into structured [Enterprise Context](/help/ai-in-aem/agents/governance/enterprise-context.md). This makes the information easier for AI-powered and agentic capabilities to consume and apply to specific tasks.
+When a brand policy is imported, the Governance Agent analyzes its content and transforms the relevant guidance into structured [Experience Context](/help/ai-in-aem/agents/governance/experience-context.md). This makes the information easier for AI-powered and agentic capabilities to consume and apply to specific tasks.
 
-As part of this process, the Governance Agent derives [governance checks](/help/ai-in-aem/agents/governance/enterprise-context.md#checks) from the Enterprise Context. These checks translate specific brand requirements into actionable criteria that can be used to evaluate content for brand compliance.
+As part of this process, the Governance Agent derives [governance checks](/help/ai-in-aem/agents/governance/experience-context.md#checks) from the Experience Context. These checks translate specific brand requirements into actionable criteria that can be used to evaluate content for brand compliance.
 
-Enterprise Context itself remains broader than these checks. It provides a reusable source of precise brand knowledge that can be segmented and surfaced according to the needs of different agentic workflows.
+Experience Context itself remains broader than these checks. It provides a reusable source of precise brand knowledge that can be segmented and surfaced according to the needs of different agentic workflows.
 
 This approach allows teams to reuse their existing brand documentation while benefiting from automated governance and scalable content production.
 
 ## How Brand Policies are Used {#how-brand-policies-are-used}
 
-After a brand policy is imported and processed, the resulting Enterprise Context can be used across AI-powered and agentic workflows in AEM.
+After a brand policy is imported and processed, the resulting Experience Context can be used across AI-powered and agentic workflows in AEM.
 
-Enterprise Context enables agents to retrieve and apply the specific brand knowledge that is relevant to the task they are performing, rather than relying on the complete brand policy for every interaction. Agents select the appropriate context based on the brand, content, or task at hand.
+Experience Context enables agents to retrieve and apply the specific brand knowledge that is relevant to the task they are performing, rather than relying on the complete brand policy for every interaction. Agents select the appropriate context based on the brand, content, or task at hand.
 
-For governance use cases, the Governance Agent derives actionable [checks](/help/ai-in-aem/agents/governance/enterprise-context.md#checks) from this context. These checks can be used to:
+For governance use cases, the Governance Agent derives actionable [checks](/help/ai-in-aem/agents/governance/experience-context.md#checks) from this context. These checks can be used to:
 
 * Analyze existing content and identify brand inconsistencies
 * Flag deviations from specific brand requirements
 * Provide actionable guidance for content updates
 * Help ensure generated or updated content remains aligned with the brand
 
-Beyond governance, Enterprise Context can also provide other AI-powered and agentic capabilities with precise, relevant brand guidance when generating, updating, or evaluating content.
+Beyond governance, Experience Context can also provide other AI-powered and agentic capabilities with precise, relevant brand guidance when generating, updating, or evaluating content.
 
 ## Import a Brand Policy {#import-a-brand-policy}
 
 To import a brand into the Governance Agent:
 
-1. In AEM, select **Enterprise Context** from the left navigation. The Enterprise Context console displays the brands available in your organization. To create Enterprise Context for a new brand, select **+ Add Brand**.
+1. In AEM, select **Experience Context** from the left navigation. The Experience Context console displays the brands available in your organization. To create Experience Context for a new brand, select **+ Add Brand**.
 
-   ![The Enterprise Context console](/help/ai-in-aem/agents/governance/assets/enterprise_context_console.png){width="70%"}
+   ![The Experience Context console](/help/ai-in-aem/agents/governance/assets/experience_context_console.png){width="70%"}
 
-1. In the **Add brand** dialog, enter the information used to establish the brand and its initial Enterprise Context:
+1. In the **Add brand** dialog, enter the information used to establish the brand and its initial Experience Context:
 
    * **Name** — Enter the name of the brand. This field is required.
    * **Description** — Optionally provide a description of the brand.
@@ -80,7 +80,7 @@ To import a brand into the Governance Agent:
 1. Pressing **+ Add Policy** opens the **Add context** dialog, where you provide the actual policy content: a **Context page URL**, a PDF document, or both:
 
    * **Context page URL** — Specify the public page where the relevant context or policy is available.
-   * **Upload PDF** — Upload a PDF containing the brand guidelines or policy information that you want to add to the brand's Enterprise Context.
+   * **Upload PDF** — Upload a PDF containing the brand guidelines or policy information that you want to add to the brand's Experience Context.
 
    Select **Add context** to start processing the information.
 
@@ -123,9 +123,9 @@ To import a brand into the Governance Agent:
    ![Configuring the check details](/help/ai-in-aem/agents/governance/assets/add_check_window.png)
 -->
 
-For details on how checks are created, categorized, and managed, see the [Checks](/help/ai-in-aem/agents/governance/enterprise-context.md#checks) section of Enterprise Context.
+For details on how checks are created, categorized, and managed, see the [Checks](/help/ai-in-aem/agents/governance/experience-context.md#checks) section of Experience Context.
 
 ## Related topics {#related-topics}
 
-* [Enterprise Context](/help/ai-in-aem/agents/governance/enterprise-context.md)
+* [Experience Context](/help/ai-in-aem/agents/governance/experience-context.md)
 * [Governance Agent overview](/help/ai-in-aem/agents/governance/overview.md)
