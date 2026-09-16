@@ -31,11 +31,11 @@ Asset Insights shows how your team uses assets and where those assets reach cust
   <tbody>
     <tr>
       <td rowspan="7"><strong>Team activity</strong></td>
-      <td><strong>Downloads (Assets View)</strong></td>
+      <td><strong>Downloads (Author)</strong></td>
       <td>Assets downloaded directly from core AEM Assets</td>
     </tr>
     <tr>
-      <td><strong>Shares (Assets View)</strong></td>
+      <td><strong>Shares (Author)</strong></td>
       <td>Shareable links created in Assets View</td>
     </tr>
     <tr>
@@ -72,21 +72,29 @@ Asset Insights shows how your team uses assets and where those assets reach cust
       <td>Distinct asset variations delivered</td>
     </tr>
     <tr>
-      <td><strong>AEM Sites Distribution</strong> <em>(coming soon)</em></td>
+      <td><strong>AEM Sites Distribution</td>
       <td>Assets published to live AEM Sites pages</td>
     </tr>
   </tbody>
 </table>
+
+>[!NOTE]
+>
+>Author metrics include activity generated through both the **Author UI** and the **Admin UI**.
 
 ## How is your team working with assets? {#how-is-your-team-working-with-assets}
 
 
 ### Finding & sharing {#finding--sharing}
 
-- **Downloads (Assets View)** — Times assets are downloaded directly from the core AEM Assets environment.
-- **Shares (Assets View)** — Shareable links created in Assets View, giving external or unauthenticated users access without a login.
+- **Downloads (Author)** — Times assets are downloaded directly from the core AEM Assets environment.
+- **Shares (Author)** — Shareable links created in Assets View, giving external or unauthenticated users access without a login.
 - **Downloads (Content Hub)** — Times assets are downloaded through Content Hub, the self-service space where broader teams grab approved, brand-ready assets.
 - **Shares (Content Hub)** — Shareable links created in Content Hub, giving other users access to selected assets or collections.
+
+>[!NOTE]
+>
+>Author metrics include activity generated through both the **Author UI** and the **Admin UI**.
 
 Splitting downloads and shares by source shows whether activity comes from your core creative operations (Assets View) or from the wider organization using approved assets (Content Hub) — two different signals about how content spreads.
 
@@ -108,9 +116,30 @@ A low number is not a problem — it just means there is room to lean on these s
 - **Dynamic Media Delivery Requests** — Total times any asset was requested and delivered across all channels through Dynamic Media. Your overall delivery volume.
 - **Dynamic Media Unique Assets Served** — Distinct assets delivered at least once in the period, counted once each regardless of requests or renditions.
 - **Dynamic Media Unique Transformations** — Distinct variations of your assets delivered in the period, showing how content adapts across devices, screens, and use cases.
-- **AEM Sites Distribution** *(coming soon)* — Assets published from AEM Assets to live AEM Sites pages, reaching customers on your website.
+- **AEM Sites Distribution** — Assets published from AEM Assets to live AEM Sites pages, reaching customers on your website.
 
 These three answer different questions about the same activity. Delivery Requests is raw volume; Unique Assets Served is breadth (how much of your library is in use); Unique Transformations is adaptability. A high request count with few unique assets means a small set is doing heavy lifting.
+
+## Important points to note {#important-points-to-note}
+
+The following will need to be taken into account if:
+
+1. **Content Hub metrics are displayed as `-`**, then one of the following applies:
+   - Content Hub metrics are not applicable because Content Hub is not enabled for the customer.
+   - No Content Hub activity was observed during the selected period.
+
+2. **Dynamic Media metrics are displayed as `-`**, then one of the following applies:
+   - Dynamic Media metrics are not applicable because the customer does not have a Dynamic Media entitlement.
+   - No Dynamic Media activity was observed during the selected period.
+
+3. **All metrics in your dashboard are displayed as `-`:**
+   - This is an AEM Sites-only customer. Metric is not applicable.
+
+4. **Note: Link share on Author:**
+   - Folder-level asset counts are available and included from August 20, 2026.
+
+5. **Note: Dynamic Media:**
+   - If there is any customer on the list and we do not have full time period data.
 
 ### Asset Insights is still evolving {#asset-insights-is-still-evolving}
 

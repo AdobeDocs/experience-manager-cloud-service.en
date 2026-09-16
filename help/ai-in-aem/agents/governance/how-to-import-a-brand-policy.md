@@ -13,6 +13,10 @@ A brand policy defines the rules, standards, and constraints that ensure all con
 
 The Governance Agent uses brand policies as a source of truth to analyze existing pages and guide content generation. Customers can provide their own original brand policies, which the Governance Agent automatically converts into AI-readable policy checks. These checks are then used to validate content and to provide the Production Agent with a reliable, enforceable framework to generate or update pages that remain aligned with the brand.
 
+>[!NOTE]
+>
+>Importing a brand policy is one way to populate your [Enterprise Context](/help/ai-in-aem/agents/governance/enterprise-context.md), the shared set of rules the agents use to generate and validate on-brand content.
+
 ## What is a Brand Policy in the Governance Agent {#what-is-a-brand-policy-in-the-governance-agent}
 
 In the context of the Governance Agent, a brand policy is a structured representation of your brand rules that can be understood and enforced by AI. Rather than requiring customers to rewrite their guidelines in a technical format, the Governance Agent accepts brand policies in their original form (for example, documents, guidelines, or rule descriptions).
@@ -108,3 +112,8 @@ To import a brand into the Governance Agent:
    ![Configuring the check details](/help/ai-in-aem/agents/governance/assets/add_check_window.png)
 
 1. Lastly, for a list of domains and the brands they are associated with, you can press the **Domains** tab. This section will allow you to add, delete or modify domains in your list.
+
+## Related topics {#related-topics}
+
+* [Enterprise Context](/help/ai-in-aem/agents/governance/enterprise-context.md)
+* [Governance Agent overview](/help/ai-in-aem/agents/governance/overview.md)
