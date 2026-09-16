@@ -9,10 +9,14 @@ role: Admin, Developer
 
 Adobe is replacing the Application Performance Monitoring (APM) integration built into AEM as a Cloud Service with [OpenTelemetry](https://opentelemetry.io/), an open, industry-standard approach to observability supported by every major monitoring platform.
 
-<!-- AUTHOR NOTE (advance notice, added 2026-09): this framing is deliberately written to
+<!--
+
+AUTHOR NOTE (advance notice, added 2026-09): this framing is deliberately written to
 avoid naming any specific current or future APM provider by name - the intended audience
 is any customer relying on the APM integration currently included with their environment,
-without singling that provider out. Do not add a provider name back into this section. -->
+without singling that provider out. Do not add a provider name back into this section. 
+
+-->
 
 Today, AEM as a Cloud Service includes a built-in APM integration, managed entirely by Adobe. As that integration is replaced, **you will need to bring your own APM endpoint** — either a vendor platform that accepts OpenTelemetry data, or a self-hosted (on-premises) OpenTelemetry-compatible backend.
 
@@ -180,10 +184,14 @@ The following table summarizes the endpoint and authentication for some common p
 
 Add a file like one of the following examples to `config/otel.yaml` in your Config Pipeline repository, based on your provider from [Provider-specific settings](#provider-specific).
 
-<!-- AUTHOR NOTE: type enum is generic | splunk | grafana | newrelic | dynatrace only - Datadog
+<!-- 
+
+AUTHOR NOTE: type enum is generic | splunk | grafana | newrelic | dynatrace only - Datadog
 and Dash0 are NOT typed values, they use type: "generic" with an authHeaderName override (Datadog)
 or the default Authorization header with a Bearer-prefixed secret value (Dash0). Do not add
-"datadog"/"dash0" as a type value, it will fail validation. -->
+"datadog"/"dash0" as a type value, it will fail validation.
+
+-->
 
 **New Relic**:
 
