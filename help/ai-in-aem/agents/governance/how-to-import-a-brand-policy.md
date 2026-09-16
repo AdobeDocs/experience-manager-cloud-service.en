@@ -90,7 +90,8 @@ To import a brand into the Governance Agent:
 
    ![An overview of the brand policy status, including linked checks](/help/ai-in-aem/agents/governance/assets/policy_status_linked_checks.png)
 
-<!-- Alexandru: commenting out for now
+<!--
+Alexandru: commenting out for now
 1. Once your brand is created, and your policy document is uploaded, you can get a detailed per-brand view by going to the **Brands** tab, and clicking on a brand's card. This is the view you'll want to use for creating cagtegories of checks, by pressing the three dots next to an existing category, and selecting **+ Add Category**, as shown in the screenshot below:
 
    ![Add category](/help/ai-in-aem/agents/governance/assets/add_category.png)
