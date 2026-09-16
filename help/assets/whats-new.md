@@ -19,7 +19,15 @@ The following video demonstrates Content Hub key capabilities:
 
 ## Release Date {#release-date}
 
-The release date of Content Hub feature release (2026.05.0) is May 28, 2026 (same as that of AEM as a Cloud Service release). The next feature release (2026.06.0) is planned for June 25, 2026.
+The release date of Content Hub feature release (2026.08.0) is August 27, 2026 (same as that of AEM as a Cloud Service release). The next feature release (2026.09.0) is planned for September 24, 2026.
+
+## August 2026 release features {#august-2026-release-features}
+
+**Generate on-the-fly Dynamic Media renditions in Content Hub**
+
+Generate on-the-fly Dynamic Media renditions in Content Hub to quickly create asset variations tailored to different channels and content needs. This eliminates the need to maintain multiple pre-generated renditions, making it easier to adapt and reuse assets across experiences. With optimized renditions available on demand, teams can accelerate content activation and deliver the right asset variation for every experience.
+
+[!BADGE Dive Deeper into this Feature]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/generate-on-the-fly-dynamic-media-renditions"}
 
 ## May 2026 release features {#may-2026-release-features}
 

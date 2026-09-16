@@ -9,6 +9,25 @@ role: Developer
 
 This reference covers each supported migration pattern, how to provide BPA findings, and how to manage sessions across a large project. For an introduction and setup instructions, see the [overview](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md).
 
+## Generate a Migration Runbook {#migration-runbook}
+
+For a whole-project assessment, start with a runbook instead of naming a single pattern. Prompt the agent with:
+
+```
+Review my code for AEMaaCS migration
+```
+
+The skill generates a **read-only `migration-runbook.md`** at your project root without changing any code. The runbook covers **every** pattern the migration skill can address and, for each one, records:
+
+* The detection strategy used (BPA/CAM findings, analyzer, or heuristic content scan)
+* The affected files and a per-pattern finding count
+* A copy-paste prompt to start that pattern's migration session
+
+Because the runbook also writes a findings cache alongside the markdown, a later pattern session reuses the findings already discovered — the agent does not re-scan. Use the runbook to prioritize which patterns to tackle first, then start pattern sessions as described below.
+
+>[!NOTE]
+>The runbook is read-only. It never edits code, and heuristic (non-BPA) findings are candidate matches to confirm rather than authoritative counts.
+
 ## How a Session Works {#workflow-overview}
 
 Every migration session follows this sequence:
@@ -99,6 +118,38 @@ The corresponding variables and secrets are applied in Cloud Manager and injecte
 
 ```
 Scan my config files and create Cloud Manager environment secrets or variables.
+```
+
+### Dialog Migration (Legacy UI) {#dialog-migration}
+
+Converts Classic UI dialogs to Touch UI. The agent handles two dialog sub-types: ExtJS / Classic UI `cq:Dialog` definitions are rebuilt as Coral 3 `_cq_dialog` structures, and existing Coral 2 dialogs are upgraded in place to Coral 3. It also carries over listeners, `optionsProvider`, `namePrefix`, and updates `filter.xml`.
+
+**BPA pattern id:** `lui` (dialog sub-types only)
+
+When both dialog and custom widget findings exist for the same components, run custom widget migration first so all `xtype` references resolve before the dialogs are converted.
+
+```
+Convert my Classic UI dialogs to Touch UI Coral 3.
+```
+
+### Custom Design Widgets (Legacy UI) {#custom-design-widgets}
+
+Migrates custom ExtJS widgets (`cq:Widget` definitions with custom `xtype` values). The agent inventories the widgets, then either maps each `xtype` to a known Coral 3 equivalent or scaffolds a Granite UI form component when no direct mapping exists.
+
+**BPA pattern id:** `cdw`
+
+```
+Migrate my custom ExtJS widgets (CDW findings) from CAM.
+```
+
+### Template Modernization {#template-modernization}
+
+Converts static templates to editable templates and generates the corresponding [AEM Modernize Tools](/help/journey-migration/refactoring-tools/aem-modernization-tools.md) rewrite rules (structure, component, and policy rules). The agent runs in three phases: it discovers the templates and produces a per-template plan, executes the plan template by template, and validates the generated `/conf` structures.
+
+**This pattern does not use a BPA pattern id.** Start a session with:
+
+```
+Migrate my static templates to editable templates and generate the Modernize Tools rewrite rules.
 ```
 
 ## BPA Source Options {#bpa-source}
