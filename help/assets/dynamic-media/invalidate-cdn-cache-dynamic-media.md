@@ -87,16 +87,16 @@ This invalidation, however, is not the case for generic domains that do not supp
 
 ## CDN behavior {#CDN-behavior}
 
-* Dynamic Media or Scene7 does not pre-warm or globally cache every published asset ahead of time. Cache entries are created only when needed, on the first request for each unique asset URL. The first request for a given URL always is an origin fetch.
+* Dynamic Media or Scene7 does not pre-warm or globally cache every published asset ahead of time. Cache entries are created only when needed, on the first request for each unique asset URL. The first request for a given URL is always an origin fetch.
 * Requests for Dynamic Media or Scene7 assets are routed directly from the browser to Adobe's managed CDN, that is, Akamai. Bypass any customer-configured CDN sitting in front of the rest of the site, for example, a corporate CDN or Fastly. This is architectural, not something to fix at the customer's CDN layer. Default TTL at this layer is on the order of nearly 12 hours unless otherwise configured.
-* If the sample URLs show no meaningful caching (frequent origin fetches even for the same URL), check whether the URL itself was constructed with cache control **[!UICONTROL max-age=0]** or no cache. This happens when specific delivery parameters are used since that prevents the caching regardless of Dynamic Media's normal behavior.
+* If the sample URLs show no meaningful caching (frequent origin fetches even for the same URL), check whether the URL itself was constructed with cache control `max-age=0` or no cache. This happens when specific delivery parameters are used since that prevents the caching regardless of Dynamic Media's normal behavior.
 
 ## Bandwidth or data-volume reporting {#bandwidth-or-data-volume-reporting}
 
 The AEM Assets Dynamic Media Delivery report only exposes the asset level hit counts, it does not report the bandwidth or data-volume metrics. For actual bandwidth or storage usage figures, use one of:
 
-* The Scene7 reporting web based application, for usage summary type reports.
-* The Dynamic Media Classic **[!UICONTROL Bandwidth and Storage]** page, for company level usage data.
+* The Scene7 reporting web based application for usage of summary type reports.
+* The Dynamic Media Classic **Bandwidth and Storage** page for company level usage data.
 
 
 ## Troubleshoot CDN Invalidation errors
