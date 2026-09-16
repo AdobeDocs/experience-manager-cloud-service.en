@@ -272,7 +272,7 @@ You can define mandatory fields at a folder level, which is enforced on assets t
 ### Adding and mapping a custom metadata field {#adding-and-mapping-a-custom-metadata-field}
 
 1. Open the Metadata Schema editor for the schema you want to extend (**[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**).
-2. Add a new field, for example, a text box and set its **[!UICONTROL Map to property value]**. The convention is `./jcr:content/metadata/<propertyName>`. Only the final segment after `/jcr:content/metadata/` needs to be specified or changed; you do not need to construct the full path yourself.
+2. Add a new field, for example, a text box and set its **[!UICONTROL Map to property]** value. The convention is `./jcr:content/metadata/<propertyName>`. Only the final segment after `/jcr:content/metadata/` needs to be specified or changed; you do not need to construct the full path yourself.
 3. Save the schema. The first time a schema is applied and saved against an asset, Adobe Experience Manager (AEM) automatically creates the mapped property on an asset's `jcr:content/metadata` node. There is no need to manually create the corresponding node in CRXDE Lite.
 4. To promote the schema change to another environment, either deploy it through the standard Cloud Manager pipeline or repeat the same schema and edit manually in each target environment; a UI-created schema field is not automatically propagated between environments outside of a deployment.
 
@@ -288,14 +288,14 @@ Do not add custom properties under AEM or JCR's reserved namespaces: `dam`, `cq`
 
 If a metadata value entered through the UI does not appear to persist:
 
-* Confirm the property is not mapped under one of the reserved namespaces above.
+* Confirm the property is not mapped under one of the reserved namespaces.
 * Confirm the schema is saved and applied to the correct folder or asset (schema assignment is per-folder through folder properties, not automatic).
-* For assets that existed before a metadata profile (bulk-apply configuration) was created; profiles only auto-apply their properties (for example, approval status) to the newly uploaded assets. Existing assets in the folder do not retroactively pick up the profile's values. Use the *Reprocess* option to bulk-apply it to existing assets, or update them manually.
+* For assets that existed before a metadata profile (bulk-apply configuration) was created, profiles only auto-apply their properties (for example, approval status) to the newly uploaded assets. Existing assets in the folder do not retroactively pick up the profile's values. Use the **[!UICONTROL Reprocess]** option to bulk-apply it to the existing assets, or update them manually.
 * Confirm the field is actually present under `jcr:content/metadata` on the asset node (for example, through CRXDE Lite or the Assets HTTP API) to distinguish a save failure from a display-only issue.
 
 ### Multi-language and integration considerations {#Multi-language-and-integration-considerations}
 
-The out-of-the-box **[!UICONTROL Language]** metadata field is informational only by default, it does not drive delivery or routing logic to downstream systems on its own. For assets that need to represent multiple languages, or that need to drive channel or locale-based selection for downstream systems (for example, Adobe Commerce or Edge Delivery Services), add a custom multi-value metadata field rather than relying on the OOTB **[!UICONTROL Language]** field, and expose it as a search facet or filter to support reliable selection by language and channel.
+The out-of-the-box **[!UICONTROL Language]** metadata field is informational only by default, it does not drive delivery or routing logic to the downstream systems on its own. For assets that need to represent multiple languages, or that need to drive the channel or locale-based selection for downstream systems (for example, Adobe Commerce or Edge Delivery Services), add a custom multi-value metadata field rather than relying on the OOTB **[!UICONTROL Language]** field, and expose it as a search facet or filter to support reliable selection by the language and channel.
 
 ### Deployment persistence {#deployment-persistence}
 

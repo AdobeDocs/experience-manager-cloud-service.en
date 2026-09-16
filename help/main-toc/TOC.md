@@ -270,6 +270,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.09.03 Release Notes](/help/release-notes/universal-editor/2026/2026-09-03.md)
       + [2026.08.27 Release Notes](/help/release-notes/universal-editor/2026/2026-08-27.md)
       + [2026.08.20 Release Notes](/help/release-notes/universal-editor/2026/2026-08-20.md)
       + [2026.08.13 Release Notes](/help/release-notes/universal-editor/2026/2026-08-13.md)
@@ -1569,6 +1570,7 @@ user-guide-title: AEM as a Cloud Service
     + [AEM as a Cloud Service Developer Console](/help/implementing/developing/introduction/aem-developer-console.md)
     + [Logging](/help/implementing/developing/introduction/logging.md)
     + [Log Forwarding](/help/implementing/developing/introduction/log-forwarding.md)
+    + [OpenTelemetry (Beta)](/help/implementing/developing/introduction/opentelemetry-apm-integration.md)
     + [Configurations and the Configuration Browser](/help/implementing/developing/introduction/configurations.md)
     + [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md)
     + [API Reference Materials](/help/implementing/developing/reference-materials.md)
