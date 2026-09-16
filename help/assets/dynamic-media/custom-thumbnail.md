@@ -6,7 +6,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets."
 ---
 # Custom Thumbnail Support for videos {#custom-thumbnail}
 
-Adobe Experience Manager (AEM) Assets custom video thumbnails provide authors with the ability to select an appropriate thumbnail from a frame within the video or use an uploaded image asset. The number of thumbnails generated for a video asset can be easily customized. Custom video thumbnails provide you with greater control over the visual presentation of video assets across digital experiences.
+Adobe Experience Manager (AEM) Assets custom video thumbnails let authors select an appropriate thumbnail from a frame within the video or use an uploaded image asset. The number of thumbnails generated for a video asset can be customized. Custom video thumbnails provide greater control over the visual presentation of video assets across digital experiences.
 
 ## Enabling Custom Thumbnail for videos {#enabling-custom-thumbnail}
 
@@ -16,7 +16,7 @@ To enable custom thumbnails for videos, follow the steps mentioned below:
 2. Click any video asset and navigate to **[!UICONTROL Properties]**.
 3. You can now see the **[!UICONTROL Change Thumbnail]** option along with the title and other details of the video asset. 
     ![Custom Thumbnail of a video asset](/help/assets/dynamic-media/assets/thumbnails.png)
-   1. To generate a thumbnail from an existing video asset, click **[!UICONTROL Change Thumbnail]** and select **[!UICONTROL Select Frame from Video]**. Play the video asset and navigate to the desired frame. Once you have identified the frame you want to use as the thumbnail, click **[!UICONTROL Save Change]** to generate and save the thumbnail from that specific moment in the video asset.
+   1. To generate a thumbnail from an existing video asset, click **[!UICONTROL Change Thumbnail]** and select **[!UICONTROL Select Frame from Video]**. Play the video asset and navigate to the desired frame. Once you have identified the frame you want to use as the thumbnail, click **[!UICONTROL Save Change]** to generate and save the thumbnail from that specific frame in the video asset.
        ![Selecting Thumbnail of a video asset](/help/assets/dynamic-media/assets/changethumbnail.png)
    2. To select a thumbnail from an existing image in Assets, click **[!UICONTROL Change Thumbnail]** and select **[!UICONTROL Select Thumbnail from Assets]**. Click **[!UICONTROL Select Thumbnail]** and select the thumbnail. Click **[!UICONTROL Save Change]**. 
       ![Selecting Thumbnail of a video asset from existing thumbnail](/help/assets/dynamic-media/assets/changethumbnail1.png)

@@ -151,6 +151,7 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2026 {#2026}
+      + [2026.8.0](/help/implementing/cloud-manager/release-notes/2026/2026-8-0.md)
       + [2026.7.0](/help/implementing/cloud-manager/release-notes/2026/2026-7-0.md)      
       + [2026.6.0](/help/implementing/cloud-manager/release-notes/2026/2026-6-0.md)
       + [2026.5.0](/help/implementing/cloud-manager/release-notes/2026/2026-5-0.md)
@@ -269,6 +270,8 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.09.03 Release Notes](/help/release-notes/universal-editor/2026/2026-09-03.md)
+      + [2026.08.27 Release Notes](/help/release-notes/universal-editor/2026/2026-08-27.md)
       + [2026.08.20 Release Notes](/help/release-notes/universal-editor/2026/2026-08-20.md)
       + [2026.08.13 Release Notes](/help/release-notes/universal-editor/2026/2026-08-13.md)
       + [2026.08.06 Release Notes](/help/release-notes/universal-editor/2026/2026-08-06.md)
@@ -672,6 +675,7 @@ user-guide-title: AEM as a Cloud Service
     + [Detect duplicate assets](/help/assets/detect-duplicate-assets.md)
     + [Developer docs and APIs references](/help/assets/developer-reference-material-apis.md)
     + [Folder metadata schema](/help/assets/folder-metadata-schema.md)
+    + {hide-from-toc} [Generate Brand Aware Metadata](/help/assets/brand-aware-metadata.md)
     + [Work with image and video profiles](/help/assets/dynamic-media/about-image-video-profiles.md)
     + [Translate assets](/help/assets/translate-assets.md)
     + [Search facets](/help/assets/search-facets.md)
@@ -1226,6 +1230,7 @@ user-guide-title: AEM as a Cloud Service
       + [Content Optimization Agent](/help/ai-in-aem/agents/content-advisor/content-optimization.md)
     + Brand Governance Agent {#governance}
       + [Overview](/help/ai-in-aem/agents/governance/overview.md)
+      + [Enterprise Context](/help/ai-in-aem/agents/governance/enterprise-context.md)
       + [How to Import a Brand Policy](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md)
   + AI Assistant {#ai-assistant}
     + [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
@@ -1565,6 +1570,7 @@ user-guide-title: AEM as a Cloud Service
     + [AEM as a Cloud Service Developer Console](/help/implementing/developing/introduction/aem-developer-console.md)
     + [Logging](/help/implementing/developing/introduction/logging.md)
     + [Log Forwarding](/help/implementing/developing/introduction/log-forwarding.md)
+    + [OpenTelemetry (Beta)](/help/implementing/developing/introduction/opentelemetry-apm-integration.md)
     + [Configurations and the Configuration Browser](/help/implementing/developing/introduction/configurations.md)
     + [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md)
     + [API Reference Materials](/help/implementing/developing/reference-materials.md)

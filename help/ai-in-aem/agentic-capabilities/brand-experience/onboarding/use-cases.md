@@ -23,17 +23,13 @@ Some of the key benefits include:
 
 The AEM Onboarding Agentic Capability provides the following skills:
 
-* **End-to-end onboarding**: Orchestrates the overall AEM onboarding journey and routes requests to the appropriate skills for environment setup, access, content architecture, metadata, migration, and search configuration.
+- **End-to-end onboarding**: Orchestrates the overall AEM onboarding journey and routes requests to the appropriate skills for environment setup, access, content architecture, metadata, migration, and search configuration.
 
-* **Environment and access setup**: Provisions AEM Cloud Service environments and configures user access through Adobe Cloud Manager and Adobe Admin Console, including programs, environments, user groups, and product profiles.
+- **Content architecture**: Designs and creates folder hierarchies under `/content/dam` and controlled tag taxonomies under `/content/cq:tags`, including support for CSV-based definitions and batch operations.
 
-* **Content architecture**: Designs and creates folder hierarchies under `/content/dam` and controlled tag taxonomies under `/content/cq:tags`, including support for CSV-based definitions and batch operations.
+- **Metadata management**: Provides guidance on metadata architecture and creates and assigns custom metadata forms. The metadata advisory capability is read-only and helps define fields, namespaces, asset-type structures, and migration approaches.
 
-* **Metadata management**: Provides guidance on metadata architecture and creates and assigns custom metadata forms. The metadata advisory capability is read-only and helps define fields, namespaces, asset-type structures, and migration approaches.
-
-* **Asset and metadata migration**: Runs and monitors existing bulk asset import jobs and supports bulk metadata imports for existing assets from CSV files.
-
-* **Search configuration**: Makes custom `dam:Asset` properties searchable and configures indexed properties as filters in the AEM Assets search interface.
+- **Asset and metadata migration**: Runs and monitors existing bulk asset import jobs and supports bulk metadata imports for existing assets from CSV files.
 
 These skills provide a unified onboarding experience while allowing users to work at the level of the business task rather than needing to know the underlying AEM configuration or implementation details.
 
@@ -54,7 +50,6 @@ You can access the AEM Onboarding Agentic Capability via the [Coworker Chat](htt
 
 | Use Case | Description | Skills | Application | Sample Prompts |
 |---|---|---|---|---|
-| Provision AEM environments | Sets up the Cloud Manager resources for a new AEM Cloud Service instance, including tenant discovery, program creation or reuse, and Stage and Production environments as a sequential, progress-tracked workflow. | `aem-assets-environment-provisioning` | Adobe Cloud Manager | "Set up a new AEM Cloud Service program"<br>"Provision Stage and Production environments" |
 | Provision users & access | Adds users to the Adobe Admin Console organization, creates user groups, and attaches product profiles to groups. | `aem-assets-user-provisioning` | Adobe Admin Console | "Add these users to the org and give them AEM access"<br>"Create a user group and assign product profiles"<br>"Provision users from this CSV" |
 
 ### Content architecture
@@ -82,7 +77,6 @@ You can access the AEM Onboarding Agentic Capability via the [Coworker Chat](htt
 
 | Use Case | Description | Skills | Application | Sample Prompts |
 |---|---|---|---|---|
-| Index custom properties for search | Adds custom `dam:Asset` properties to the search index using a simplified configuration approach, deployed through Adobe Cloud Manager Git change and pipeline. | `aem-assets-search-indexing` | AEM Assets + Cloud Manager | "Make this custom property searchable"<br>"My custom field isn't showing in search — add it to the index" |
 | Add search filters to the UI | Adds indexed properties as filter fields in the AEM Assets search panel for files, folders, or collections. Requires the property to be indexed first. | `aem-assets-search-filter-onboarding` | AEM Assets | "Add this field as a filter in the search panel"<br>"Customize the AEM Assets search form" |
 
 <!--
