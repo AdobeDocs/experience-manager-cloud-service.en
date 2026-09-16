@@ -237,6 +237,10 @@ The following actions are available:
 
   After confirmation you can delete the folder.
 
+* **Publish**
+
+  After confirmation you can publish all [fragments in the folder](#publish-folder) according to your specifications.
+
 ## Creating Content Fragments {#creating-content-fragments}
 
 Before creating your Content Fragment, the underlying Content Fragment Model must be created.
@@ -452,13 +456,19 @@ You can:
 
   * the **[Preview Service](/help/headless/deployment/architecture.md)** - to [preview](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) the content prior to full availability
 
-    >[!CAUTION]
-    >
-    >Publishing Content Fragments to the **Preview Service** is only available from the Content Fragments console; using the **Publish** action.
+You can publish your Content Fragments using the **Publish** option for either:
 
-    >[!NOTE]
-    >
-    >For more details about the Preview environments, see [Manage Environments](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+* For [individually selected fragments](#publish-individually-selected-fragments)
+
+* For all [fragments in a folder](#publish-folder)
+
+>[!CAUTION]
+>
+>Publishing Content Fragments to the **Preview Service** is only available from the Content Fragments console; using the **Publish** action.
+
+>[!NOTE]
+>
+>For more details about the Preview environments, see [Manage Environments](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 >[!CAUTION]
 >
@@ -470,9 +480,9 @@ You can:
 >
 >Content Fragments can be [published to Edge Delivery Services.](https://www.aem.live/developer/content-fragment-overlay)
 
-### Publishing {#publishing}
+### Publish individually selected fragments {#publish-individually-selected-fragments}
 
-You can publish your Content Fragments using the **Publish** option from either:
+To publish individually selected fragments use either:
 
 * the toolbar of the [Content Fragments console](#actions-selected-content-fragment)
 
@@ -502,6 +512,22 @@ After publication the fragment status will be updated and visible in the editor 
 >[!NOTE]
 >
 >In addition, when you [publish a page that uses the fragment](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing); the fragment will be listed in the page references.
+
+### Publish Folder {#publish-folder}
+
+To select fragments from a specific folder:
+
+1. Select the **Publish** action for the required folder.
+
+   ![Content Fragments - folder actions](/help/sites-cloud/administering/content-fragments/assets/cf-managing-folder-actions.png)
+
+1. A dialog will open. Here you can specify your criteria:
+
+   ![Content Fragments - Publish criteria](/help/sites-cloud/administering/content-fragments/assets/cf-managing-folder-publish-dialog.png)
+
+1. Select **Publish** to confirm the publish action.
+
+After publication the fragment status will be updated and visible in the editor and console. 
 
 ## Unpublishing a Fragment {#unpublishing-a-fragment}
 

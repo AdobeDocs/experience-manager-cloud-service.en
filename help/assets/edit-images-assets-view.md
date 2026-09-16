@@ -43,7 +43,7 @@ Resizing an image to a specific size is a popular use case. Assets View lets you
 1. Click **[!UICONTROL Apply]** to apply your changes.
    ![Image editing with Adobe Express](assets/adobe-express-resize-image.png)
 
-   Your edited image is available for download. You can either save the edited asset as a new version of the same asset or save it as a new asset.
+   You can either save the edited asset as a new version of the same asset or save it as a new asset.
    ![Save image with Adobe Express](assets/adobe-express-resize-save.png)
 
 #### Remove background {#remove-background-using-express}
@@ -54,7 +54,7 @@ You can remove background from an image by following the steps mentioned below:
 1. Click **[!UICONTROL Apply]** to apply your changes.
 ![Save image with Adobe Express](assets/adobe-express-remove-background.png)
 
-   Your edited image is available for download. You can either save the edited asset as a new version of the same asset or save it as a new asset.
+   You can either save the edited asset as a new version of the same asset or save it as a new asset.
 
 #### Crop image {#crop-image-using-express}
 
@@ -64,7 +64,7 @@ Transforming an image into a perfect size is simple using embedded [!DNL Adobe E
 2. Drag the handles on the corners of the image to create your desired crop.
 3. Click **[!UICONTROL Apply]**.
    ![Save image with Adobe Express](assets/adobe-express-crop-image.png)
-   The cropped image is available for download. You can either save the edited asset as a new version of the same asset or save it as a new asset.
+   You can either save the edited asset as a new version of the same asset or save it as a new asset.
 
 #### Convert JPEG to PNG {#convert-image-types-using-express}
 
