@@ -184,10 +184,14 @@ The following table summarizes the endpoint and authentication for some common p
 
 Add a file like one of the following examples to `config/otel.yaml` in your Config Pipeline repository, based on your provider from [Provider-specific settings](#provider-specific).
 
-<!-- AUTHOR NOTE: type enum is generic | splunk | grafana | newrelic | dynatrace only - Datadog
+<!-- 
+
+AUTHOR NOTE: type enum is generic | splunk | grafana | newrelic | dynatrace only - Datadog
 and Dash0 are NOT typed values, they use type: "generic" with an authHeaderName override (Datadog)
 or the default Authorization header with a Bearer-prefixed secret value (Dash0). Do not add
-"datadog"/"dash0" as a type value, it will fail validation. -->
+"datadog"/"dash0" as a type value, it will fail validation.
+
+-->
 
 **New Relic**:
 
