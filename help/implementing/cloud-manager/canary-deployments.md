@@ -74,9 +74,7 @@ When the canary instances are ready, a validation window opens so that you can t
 >
 >If you take no action within the 3-hour validation window, Cloud Manager automatically promotes the canary release.
 
-<!-- TODO: Add the deployment step screenshot showing the Promote to production and Cancel deployment actions (source: Customer Support Guide). 
-![Deployment step showing the Promote to production and Cancel deployment actions](assets/canary-deployment-actions.png)
--->
+<!-- TODO: Add the deployment step screenshot showing the Promote to production and Cancel deployment actions -->
 
 ### Promote the canary release {#promote-the-canary-release}
 
