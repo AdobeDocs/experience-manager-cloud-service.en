@@ -64,6 +64,16 @@ Setting TTL using the HTTP Cache-Control header is an effective approach to bala
 
 Read about [configuring a purge API token](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) and [purging cached CDN content](/help/implementing/dispatcher/cdn-cache-purge.md).
 
+### AEM Edge Functions {#aem-edgefunctions}
+
+Execute JavaScript at the CDN layer, enabling use cases including:
+
+* Personalized content based on data like geolocation, device type, or user attributes
+* Retrieving data from external services via API and stitching that data into the rendered page
+* Making outbound calls to services with a securely stored API secret
+
+Learn more in the [AEM Edge Functions article](/help/implementing/developing/introduction/edge-functions.md).
+
 ### Basic authentication at the CDN {#basic-auth}
 
 For light authentication use cases including business stakeholders reviewing content, protect content by displaying a basic auth dialog requiring a username and password. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md).
