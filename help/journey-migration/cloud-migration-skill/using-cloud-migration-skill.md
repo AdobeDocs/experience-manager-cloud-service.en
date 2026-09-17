@@ -80,6 +80,17 @@ Targets classes using deprecated `AssetManager`, `DAMEvent`, or unsupported DAM 
 
 **BPA pattern id:** `assetApi`
 
+### Guava Cache to Caffeine {#guava-cache}
+
+Targets bundles that use Guava's cache (`com.google.common.cache.*`, such as `Cache`, `CacheBuilder`, and `LoadingCache`). On AEM as a Cloud Service the supported in-process cache library is [Caffeine](https://github.com/ben-manes/caffeine), so the agent swaps the Maven dependency, updates imports, and adjusts the affected call sites. Because Caffeine was written by the same author and its API is intentionally near-identical, the change is mostly mechanical.
+
+**BPA pattern id:** `guavaCache`
+
+BPA reports this pattern at **bundle** granularity (subtype `custom.guava.cache`), so the agent resolves the bundle to the Java files that actually import the Guava cache and edits those. This pattern is provided by the migration skill only—not `code-assessment`—because Guava cache usage occurs only in code carried over from legacy AEM, never in native Cloud Service code.
+
+>[!NOTE]
+>`guavaCache` relies on BPA as the source of truth. When no BPA or CAM source is available, the agent falls back to scanning your Java files for `import com.google.common.cache` imports as unconfirmed candidates.
+
 ### HTL Lint (data-sly-test) {#htl-lint}
 
 Targets HTL templates under `ui.apps` that produce `data-sly-test: redundant constant value comparison` lint warnings. The agent discovers affected templates by scanning the content package directly; this pattern does not require a BPA CSV or CAM connection.
@@ -91,7 +102,7 @@ Targets HTL templates under `ui.apps` that produce `data-sly-test: redundant con
 
 ### OSGi Configs to Cloud Manager {#osgi-cloud-manager}
 
-Converts OSGi configurations in `ui.config` to Cloud Manager–compatible `.cfg.json` format with full environment-specific handling. This covers two related tasks:
+Converts OSGi configurations in `ui.config` to Cloud Manager–compatible `.cfg.json` format with full environment-specific handling. This covers several related tasks:
 
 **Config format conversion**
 
@@ -114,7 +125,17 @@ The corresponding variables and secrets are applied in Cloud Manager and injecte
 >[!IMPORTANT]
 >The agent never outputs secret values in the conversation. All sensitive data is written to a gitignored handoff file for you to apply via the Cloud Manager API or UI.
 
-**This pattern does not use BPA CSV or CAM.** Start a session with:
+**Unsupported run modes (URC)**
+
+AEM as a Cloud Service supports a fixed set of run mode identifiers. Configuration folders that use an unsupported run mode have no effect once deployed. The agent flags these Unsupported Run mode Configurations (URC), including:
+
+* Unknown run mode tokens, for example `config.qa` or `install.local`
+* A tier token that follows instead of precedes the environment token—`config.dev.author` instead of the valid `config.author.dev`
+* Non-lowercase tokens, such as `config.Author.dev`, and the reserved `config.preview` (preview inherits from publish)
+
+URC findings come from the Best Practices Analyzer first (subtype `unsupported.runmode`, severity `CRITICAL`); when no BPA source reports them, the agent scans `config.*` and `install.*` folders locally as a safety net. For each finding it reports the folder path, the offending run mode, and the remediation—evaluate whether the configuration is still needed, rename it to a supported run mode, or remove it if obsolete. For ordering-only violations, where every token is valid but out of order, the agent can apply a safe reorder automatically (for example, renaming `config.dev.author` to `config.author.dev`); unknown tokens and other ambiguous cases are flagged for you to resolve.
+
+**Config format conversion and secret externalization do not require a BPA CSV or CAM, and URC detection uses BPA findings when available.** Start a session with:
 
 ```
 Scan my config files and create Cloud Manager environment secrets or variables.
@@ -146,11 +167,35 @@ Migrate my custom ExtJS widgets (CDW findings) from CAM.
 
 Converts static templates to editable templates and generates the corresponding [AEM Modernize Tools](/help/journey-migration/refactoring-tools/aem-modernization-tools.md) rewrite rules (structure, component, and policy rules). The agent runs in three phases: it discovers the templates and produces a per-template plan, executes the plan template by template, and validates the generated `/conf` structures.
 
+During discovery, the agent walks the templates under `apps/<appId>/templates/` at any depth—including nested or grouped template folders—and classifies each static template as legacy or custom based on its page-component resource type. This classification holds even without a BPA report, so custom templates are handled distinctly from legacy ones.
+
 **This pattern does not use a BPA pattern id.** Start a session with:
 
 ```
 Migrate my static templates to editable templates and generate the Modernize Tools rewrite rules.
 ```
+
+### Dispatcher Conversion {#dispatcher-conversion}
+
+Converts an AMS or on-premise Apache HTTPD and Dispatcher configuration to the AEM as a Cloud Service structure. This capability wraps Adobe's maintained [Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) tool, adding detection, configuration generation, output verification, and validation around it.
+
+The agent works through a phased flow:
+
+1. **Detect and inventory** - Determines the configuration *mode* and records a baseline count of filter, rewrite, and cache rules. Recognized modes are `standard` (AMS), `flexible` (monolithic on-premise), `v1` (older layouts), `already-cloud`, `not-dispatcher`, and `unknown`. For `already-cloud`, `not-dispatcher`, or `unknown`, the agent stops and asks you to confirm before proceeding.
+2. **Plan and generate config** - Builds the converter configuration and confirms the plan with you.
+3. **Convert** - Runs Adobe's Dispatcher converter (installed automatically on first use).
+4. **Verify** - Checks the output against the baseline. An emptied filter set (`filter-acl-loss`) is a hard stop that must be resolved before continuing.
+5. **Cross-boundary handoff** - Routes Cloud Manager environment variables to the OSGi configs flow and flags CDN or security-header candidates.
+6. **Validate** - Runs the Cloud Service Dispatcher validator and produces a consolidated conversion report.
+
+**Runbook pattern id:** `dispatcherConversion` (detected heuristically from the configuration layout). This pattern does not use BPA or CAM. Start a session with:
+
+```
+Convert my AMS / on-prem Dispatcher config to AEM as a Cloud Service.
+```
+
+>[!NOTE]
+>Run this against a clean working tree so the converted output is easy to review and roll back. The degree of automation depends on the detected mode—`standard` (AMS) configurations are near-automated, while `flexible` and `v1` layouts need more review.
 
 ## BPA Source Options {#bpa-source}
 

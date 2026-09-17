@@ -1,45 +1,28 @@
 ---
-title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2024.09
-description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2024.09.0
+title: Current Release Notes for Migration Tools in AEM as a Cloud Service
+description: Current Release Notes for Migration Tools in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
 role: Admin
 ---
-# Release Notes for Migration Tools in AEM as a Cloud Service Release 2024.09.0 {#release-notes}
+# Release Notes for Migration Tools in AEM as a Cloud Service {#release-notes}
 
-This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2024.09.0.
+This page outlines the current Release Notes for Migration Tools in AEM as a Cloud Service. For earlier releases, see the previous versions listed in the navigation.
 
-## Content Transfer Tool {#ctt-release}
+## 2026 {#2026}
 
-### Release Date {#release-date-ctt}
+### AI-Assisted Code Migration {#ai-assisted-code-migration}
 
-The Release Date for Content Transfer Tool v3.0.20 is August 28, 2024.
+AI-Assisted Code Migration provides an IDE-based, AI-driven path for migrating AEM 6.5 (or earlier) Java-stack projects to AEM as a Cloud Service. A migration agent skill reads Best Practices Analyzer findings and applies the required code transformations one pattern at a time, while a companion Cloud Migration MCP server fetches those findings directly from Cloud Acceleration Manager. The skill also generates a read-only migration runbook that assesses the whole project and lists every applicable pattern before it changes any code.
 
-### What's New {#what-is-new-ctt}
+The skill now includes these patterns:
 
-* Users will no longer be ingested with this release and for that reason the User Mapping optional capability has been removed.
-* An OSGI config option has been added to disable or enable the migration of principals during extraction and ingestion (the default setting is to enable it)
+* Legacy UI: Classic UI, ExtJS, and Coral 2 dialogs convert to Coral 3, and custom ExtJS design widgets migrate to Granite UI.
+* Template modernization: static templates convert to editable templates with AEM Modernize Tools rewrite rules.
+* Guava cache to Caffeine: Guava cache usage switches to Caffeine, the supported Cloud Service cache library.
+* Dispatcher configuration conversion: AMS and on-premise Apache HTTPD and Dispatcher configurations convert to the Cloud Service structure.
+* Unsupported run mode (URC) detection: the skill flags OSGi configuration folders with unsupported run modes and reorders them safely where possible.
 
-### Bug fixes {#bug-fixes-ctt}
+Existing supported patterns include Sling Scheduler, ResourceChangeListener, Replication API, OSGi EventListener and EventHandler, Assets API, HTL lint fixes, and OSGi configuration conversion.
 
-* CTT was improved to prevent an error while unprotecting a secret key in azcopy config
-* CTT now gracefully handles any error while copying AzCopy logs in validation phase
-* Change azcopy log directory created during extraction process
-
-## Best Practices Analyzer {#bpa-release}
-
-### Release Date {#release-date-bpa}
-
-The Release Date for Best Practices Analyzer v2.1.52 is September 4, 2024
-
-### What's New {#what-is-new-bpa}
-
-* A new pattern was introduced to detect JCR based eventing in AEM
-
-### Bug fixes {#bug-fixes-bpa}
-
-* Fixed false positives
-* Improved robustness to handle redirected response from dispatcher
-* Fixed non-reporting of NCC finding for all languages under /apps/wcm/core/resources/languages/
-* added a check to detect if a multi-property of a node has no values
-
+For more information, see [AI-Assisted Code Migration to AEM as a Cloud Service](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md).
