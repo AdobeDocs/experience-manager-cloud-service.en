@@ -15,31 +15,31 @@ Create a link to selected assets to share them with others easily. As an authori
 
 [Content Hub users](deploy-content-hub.md#onboard-content-hub-users) can create a link to selected assets and share it with other users. 
 
-## Share assets {#share-assets}
+## Share Assets {#share-assets}
 
-To share one or more assets with private or public users, execute the following steps:
+Public link sharing enables you to securely share multiple assets and collections through a single public link. You can update shared content without regenerating links, protect access with passwords and expiration dates, revoke access when needed, un-share publicly shared links anytime, and provide recipients with a branded landing experience. This streamlines external content distribution while improving security, governance, and brand consistency.
 
-1. Navigate to your [!DNL Content Hub] homepage, select one or more assets and click ![share](/help/assets/assets/share.svg) **[!UICONTROL Share]** to display a single selected asset or a list of multiple selected assets in the **[!UICONTROL Share assets]** dialog box.
+Follow these steps to share assets and collections with private or public users:
 
-   You can also select and share assets available in ![collections](/help/assets/assets/Smock_Collection_18_N.svg) **[!UICONTROL Collections]**. 
+1. Navigate to your Content Hub homepage, select the asset or collection, and click **[!UICONTROL Share]** > **[!UICONTROL Share with a link]** and select the **[!UICONTROL New link]** option. The process for sharing assets and collections is identical.
+   
+   ![share in public link](/help/assets/assets/public-link.png)
 
-1. View an asset or review the list of assets available in **[!UICONTROL Share assets]** dialog box. Click ![unselect](/help/assets/assets/Close.svg) next to an asset to remove it from the list. 
+2. The public link creation dialog box appears. Add a title and description to provide context and intended use of the asset or collection. For added security, you can set an expiration date to automatically revoke access after a specified period. To create a password to restrict access to authorized users, select **[!UICONTROL Anyone with the link]** under **[!UICONTROL Who has access]** and toggle the **[!UICONTROL Require password protection]** option. Click **[!UICONTROL Create link]**. 
+   
+   ![new public link dialog box](/help/assets/assets/new-public-link.png)
 
-1. Specify a title and an optional description that defines the set of selected assets.
+You can add additional assets to the shared collection. To add assets, go to **[!UICONTROL All assets]** in the Content Hub homepage and select the assets you want to add. Click on ![share](/help/assets/assets/share.svg) and then select **[!UICONTROL Add to link]**. From the dialog box, search for the link you created, click the add button and then click on **[!UICONTROL Save]**. 
 
-1. Select **[!UICONTROL Period of expiration]**.
+![new public link dialog box](/help/assets/assets/add-assets.png)
 
-1. Under **[!UICONTROL Who can access]** drop down, select the access options and click **[!UICONTROL Get Link]** to generate a link to share with the selected users. Private users need to sign in to their [!DNL Content Hub] environment to access the shared assets page. Whereas, public users, as guests, can access the shared assets page without signing in to [!DNL Content Hub].
+You can view the newly added assets within the existing collection under **[!UICONTROL Shared]**.  
 
-<!--1. Select a **[!UICONTROL period of expiration]** and click **[!UICONTROL Get Link]** to generate a link to share with private users. Private users sign in to their [!DNL Content Hub] environment to access the shared assets page.-->
+![new public link dialog box](/help/assets/assets/added-assets.png)
 
-   ![private and public link](/help/assets/assets/shared-link-for-assets.png)
+To update the link details such as title, description, and password, or delete the link, click on the three dots and then select **[!UICONTROL Details]**. 
 
-   <!--Enable the **[!UICONTROL Public Link]** toggle, select a **[!UICONTROL period of expiration]** and click **[!UICONTROL Generate Public Link]** to generate a link to share with public users. Public users, as guests, access the shared assets page without signing in to [!DNL Content Hub].-->
-
-   >[!NOTE]
-   > 
-   > [Enable public link sharing from the configuration page](/help/assets/configure-content-hub-ui-options.md#enable-public-link-sharing) to display **[!UICONTROL Public Link]** toggle on the **[!UICONTROL Share assets]** dialog box.
+![customize](/help/assets/assets/customize.png)
 
 ## Share an asset from its preview page {#share-asset-from-preview-page}
 
@@ -54,41 +54,22 @@ Execute the following steps to share an asset while previewing it:
 
 Access the shared assets page through the link and do the following:
 
-* Select one or more assets and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** to select the  **[!UICONTROL Original]**,  **[!UICONTROL Static]** or both renditions from the available download options.
+* Select one or more assets and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** to select the  **[!UICONTROL Original]**,  **[!UICONTROL Static Renditions]** or **[!UICONTROL Smart Crop]** from the available download options.
 ![](/help/assets/assets/download-shared-assets.png)
 * Click the asset thumbnail to see the asset's metadata. 
 * On the shared assets page ([accessed through a private link](#share-assets)), click an asset thumbnail and select ![download](/help/assets/assets/download-icon.svg) to select and view the available dynamic renditions of the asset on the **[!UICONTROL Download]** panel before selecting and downloading them.
 ![](/help/assets/assets/download-renditions-shared-assets-page.png)
 
 
-## Enhanced Public Link Sharing {#enhanced-public-link-sharing}
-
-Enhanced public link sharing enables you to securely share multiple assets and collections through a single public link. You can update shared content without regenerating links, protect access with passwords and expiration dates, revoke access when needed, un-share publicly shared links anytime, and provide recipients with a branded landing experience. This streamlines external content distribution while improving security, governance, and brand consistency.
-
-Follow these steps to share one or more assets with private or public users:
-
-1. Navigate to your Content Hub homepage, select the collection, and click **[!UICONTROL Share in Public Link]**.
-   
-   ![share in public link](/help/assets/assets/public-link.png)
-
-2. The New public link dialog box appears. Add a title and description to provide context and intended use of the collection. For added security, you can set an expiration date to automatically revoke access after a specified period and configure a password to restrict access to authorized users. Click **[!UICONTROL Create public link]**.
-   
-   ![new public link dialog box](/help/assets/assets/new-public-link.png)
-
-From the dialog box shown below, you can add additional assets, update link details such as title, description, and password, copy the shared link, or delete the link.  
-
-![customize](/help/assets/assets/customize.png)
-
-
 ## Access the shared assets {#access-shared-assets}
 
 Use the shared link to access the assets page, and then follow these steps:
 
-1. Enter the shared password to access the assets. This provides an additional layer of security and helps prevent unauthorized access.
+1. Enter the shared password to access the assets or collection. This provides an additional layer of security and helps prevent unauthorized access.
 
    ![password protected](/help/assets/assets/password.png)
 
-2. Once password authentication is complete, the shared collection page is displayed. You can browse the collection and download the shared assets as needed.
+2. Once password authentication is complete, the shared assets or collection page is displayed. You can browse the assets or collection and download them as needed.
 
    ![browse](/help/assets/assets/browse.png)
 
