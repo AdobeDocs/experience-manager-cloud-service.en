@@ -356,7 +356,19 @@ As part of this release, the code assessment tool has expanded its capabilities 
 
 #### New Capabilities in Cloud Migration Agent Skill {#cloud-migration-skill}
 
--placeholder for text
+The [AI-Assisted Code Migration](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md) skill migrates AEM 6.5 (or earlier) Java-stack projects to AEM as a Cloud Service in the IDE. The skill now generates a read-only migration runbook that assesses the whole project and lists every applicable pattern before it changes any code.
+
+The skill now includes these patterns:
+
+* Legacy UI: Classic UI, ExtJS, and Coral 2 dialogs convert to Coral 3, and custom ExtJS design widgets migrate to Granite UI.
+* Template modernization: static templates convert to editable templates with AEM Modernize Tools rewrite rules.
+* Guava cache to Caffeine: Guava cache usage switches to Caffeine, the supported Cloud Service cache library.
+* Dispatcher configuration conversion: AMS and on-premise Apache HTTPD and Dispatcher configurations convert to the Cloud Service structure.
+* Unsupported run mode (URC) detection: the skill flags OSGi configuration folders with unsupported run modes and reorders them safely where possible.
+
+Existing supported patterns include Sling Scheduler, ResourceChangeListener, Replication API, OSGi EventListener and EventHandler, Assets API, HTL lint fixes, and OSGi configuration conversion.
+
+For more information, see [AI-Assisted Code Migration to AEM as a Cloud Service](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md).
 
 #### Permission Management Agentic Capabilities in AEM {#permission-management-in-aem}
 
