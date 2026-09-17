@@ -240,6 +240,10 @@ The following Maven `POM.xml` snippet shows how third-party packages can be embe
 
 Like AEM updates, customer releases are deployed using a rolling deployment strategy to eliminate author cluster downtime under the right circumstances. The general sequence of events is described below, where nodes with both the old and new versions of customer code are running the same version of AEM code.
 
+>[!TIP]
+>
+>As an alternative to a standard rolling deployment, you can use a canary deployment to validate a new build on production infrastructure before you route live traffic to it. See [Use Canary Deployments to Validate Code](/help/implementing/cloud-manager/canary-deployments.md).
+
 * Nodes with the old version are active and a release candidate for the new version is built and becomes available.
 * If there are any new or updated index definitions, the corresponding indexes are processed. Nodes with the old version always use the old indexes, while nodes with the new version always use the new indexes.
 * Nodes with the new version start up, while old versions still serve traffic.
