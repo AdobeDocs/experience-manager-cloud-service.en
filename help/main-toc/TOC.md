@@ -241,6 +241,7 @@ user-guide-title: AEM as a Cloud Service
       + [Release Notes for 2024.01.0](/help/journey-migration/release-notes/release-notes-migration-tools-2024-01-0.md)
       + [Release Notes for 2024.05.0](/help/journey-migration/release-notes/release-notes-migration-tools-2024-05-0.md)
       + [Release Notes for 2024.07.0](/help/journey-migration/release-notes/release-notes-migration-tools-2024-07-0.md)
+      + [Release Notes for 2024.09.0](/help/journey-migration/release-notes/release-notes-migration-tools-2024-09-0.md)
     + 2023 {#2023}
       + [Release Notes for 2023.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-10-0.md)
       + [Release Notes for 2023.9.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-09-0.md)
@@ -269,6 +270,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.09.10 Release Notes](/help/release-notes/universal-editor/2026/2026-09-10.md)
       + [2026.09.03 Release Notes](/help/release-notes/universal-editor/2026/2026-09-03.md)
       + [2026.08.27 Release Notes](/help/release-notes/universal-editor/2026/2026-08-27.md)
       + [2026.08.20 Release Notes](/help/release-notes/universal-editor/2026/2026-08-20.md)
@@ -1229,7 +1231,7 @@ user-guide-title: AEM as a Cloud Service
       + [Content Optimization Agent](/help/ai-in-aem/agents/content-advisor/content-optimization.md)
     + Brand Governance Agent {#governance}
       + [Overview](/help/ai-in-aem/agents/governance/overview.md)
-      + [Enterprise Context](/help/ai-in-aem/agents/governance/enterprise-context.md)
+      + [Experience Context](/help/ai-in-aem/agents/governance/experience-context.md)
       + [How to Import a Brand Policy](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md)
   + AI Assistant {#ai-assistant}
     + [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
