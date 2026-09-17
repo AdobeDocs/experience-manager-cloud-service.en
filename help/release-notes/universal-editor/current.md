@@ -21,3 +21,6 @@ These are the release notes for the 17 September 2026 release of the Universal E
 ## Other Improvements {#other-improvements}
 
 * Asset previews now update in the editor canvas on undo/redo.
+* Content Fragment patch/update requests with a date-time value that do not including an offset will now succeed  instead of returning a 400.
+* The toolbar loading indicator is now displayed as expected.
+* The Content Fragment picker now properly enforces the allowed Content Fragment models filter configured for a Content Fragment reference field.

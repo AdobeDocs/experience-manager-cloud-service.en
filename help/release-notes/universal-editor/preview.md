@@ -22,4 +22,5 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming Changes {#upcoming-improvements}
 
-
+* The component “Move to top” action now correctly moves the component to top when the container renders fields before child components.
+* Container field labels now properly inherit the light/white color when the dark theme is active, ensuring readability.
