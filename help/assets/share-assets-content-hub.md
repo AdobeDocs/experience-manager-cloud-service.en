@@ -23,21 +23,21 @@ Follow these steps to share assets and collections with private or public users:
 
 1. Navigate to your Content Hub homepage, select the asset or collection, and click **[!UICONTROL Share]** > **[!UICONTROL Share with a link]** and select the **[!UICONTROL New link]** option. The process for sharing assets and collections is identical.
    
-   ![share in public link](/help/assets/assets/public-link.png)
+![share in public link](/help/assets/assets/public-link.png)
 
 2. The public link creation dialog box appears. Add a title and description to provide context and intended use of the asset or collection. For added security, you can set an expiration date to automatically revoke access after a specified period. To create a password to restrict access to authorized users, select **[!UICONTROL Anyone with the link]** under **[!UICONTROL Who has access]** and toggle the **[!UICONTROL Require password protection]** option. Click **[!UICONTROL Create link]**. 
    
-   ![new public link dialog box](/help/assets/assets/new-public-link.png)
+![new public link dialog box](/help/assets/assets/new-public-link.png)
 
-You can add additional assets to the shared collection. To add assets, go to **[!UICONTROL All assets]** in the Content Hub homepage and select the assets you want to add. Click on ![share](/help/assets/assets/share.svg) and then select **[!UICONTROL Add to link]**. From the dialog box, search for the link you created, click the add button and then click on **[!UICONTROL Save]**. 
+3. To add additional assets to the shared collection, go to **[!UICONTROL All assets]** in the Content Hub homepage and select the assets you want to add. Click on ![share](/help/assets/assets/share.svg) and then select **[!UICONTROL Add to link]**. From the dialog box, search for the link you created, click the add button and then click on **[!UICONTROL Save]**. 
 
 ![new public link dialog box](/help/assets/assets/add-assets.png)
 
-You can view the newly added assets within the existing collection under **[!UICONTROL Shared]**.  
+   You can view the newly added assets within the existing collection under **[!UICONTROL Shared]**.  
 
-![new public link dialog box](/help/assets/assets/added-assets.png)
+   ![new public link dialog box](/help/assets/assets/added-assets.png)
 
-To update the link details such as title, description, and password, or delete the link, click on the three dots and then select **[!UICONTROL Details]**. 
+4. To update the link details such as title, description, and password, or delete the link, click on the three dots and then select **[!UICONTROL Details]**. 
 
 ![customize](/help/assets/assets/customize.png)
 
@@ -61,7 +61,7 @@ Access the shared assets page through the link and do the following:
 ![](/help/assets/assets/download-renditions-shared-assets-page.png)
 
 
-## Access the shared assets {#access-shared-assets}
+## Shared assets view {#shared-assets-view}
 
 Use the shared link to access the assets page, and then follow these steps:
 
