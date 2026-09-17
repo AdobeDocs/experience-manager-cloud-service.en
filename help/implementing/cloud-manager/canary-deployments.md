@@ -133,4 +133,7 @@ Keep the following scope and limitations in mind when you use canary deployments
 
 ## More help on this topic {#more-help}
 
-* [Use Canary Deployments to Validate Code](/help/implementing/cloud-manager/canary-deployments.md).
+* [Deploy your code](/help/implementing/cloud-manager/deploy-code.md)
+* [Introduction to CI/CD pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+* [Add a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+* [How rolling deployments work](/help/implementing/deploying/overview.md#how-rolling-deployments-work)
