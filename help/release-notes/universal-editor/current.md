@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2026.09.10 Release Notes
-description: These are the release notes for the 2026.09.10 release of the Universal Editor.
+title: Universal Editor 2026.09.17 Release Notes
+description: These are the release notes for the 2026.09.17 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2026.09.10 Release Notes {#release-notes}
+# Universal Editor 2026.09.17 Release Notes {#release-notes}
 
-These are the release notes for the 10 September 2026 release of the Universal Editor.
+These are the release notes for the 17 September 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -20,6 +20,4 @@ These are the release notes for the 10 September 2026 release of the Universal E
 
 ## Other Improvements {#other-improvements}
 
-* The rich text validator now correctly treats tag/markup-only content as empty, removing stale handling for a non-string rich text shape.
-* The alert icon in tabs now shows properly.
-* The loading indicator now loads properly.
+* Asset previews now update in the editor canvas on undo/redo.
