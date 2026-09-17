@@ -23,17 +23,13 @@ Some of the key benefits include:
 
 The AEM Onboarding Agentic Capability provides the following skills:
 
-* **End-to-end onboarding**: Orchestrates the overall AEM onboarding journey and routes requests to the appropriate skills for environment setup, access, content architecture, metadata, migration, and search configuration.
+- **End-to-end onboarding**: Orchestrates the overall AEM onboarding journey and routes requests to the appropriate skills for environment setup, access, content architecture, metadata, migration, and search configuration.
 
-* **Environment and access setup**: Provisions AEM Cloud Service environments and configures user access through Adobe Cloud Manager and Adobe Admin Console, including programs, environments, user groups, and product profiles.
+- **Content architecture**: Designs and creates folder hierarchies under `/content/dam` and controlled tag taxonomies under `/content/cq:tags`, including support for CSV-based definitions and batch operations.
 
-* **Content architecture**: Designs and creates folder hierarchies under `/content/dam` and controlled tag taxonomies under `/content/cq:tags`, including support for CSV-based definitions and batch operations.
+- **Metadata management**: Provides guidance on metadata architecture and creates and assigns custom metadata forms. The metadata advisory capability is read-only and helps define fields, namespaces, asset-type structures, and migration approaches.
 
-* **Metadata management**: Provides guidance on metadata architecture and creates and assigns custom metadata forms. The metadata advisory capability is read-only and helps define fields, namespaces, asset-type structures, and migration approaches.
-
-* **Asset and metadata migration**: Runs and monitors existing bulk asset import jobs and supports bulk metadata imports for existing assets from CSV files.
-
-* **Search configuration**: Makes custom `dam:Asset` properties searchable and configures indexed properties as filters in the AEM Assets search interface.
+- **Asset and metadata migration**: Runs and monitors existing bulk asset import jobs and supports bulk metadata imports for existing assets from CSV files.
 
 These skills provide a unified onboarding experience while allowing users to work at the level of the business task rather than needing to know the underlying AEM configuration or implementation details.
 

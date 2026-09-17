@@ -50,7 +50,7 @@ Execute the following steps to share an asset while previewing it:
 ![share asset while previewing it](/help/assets/assets/share-link-asset-preview.png)
 1. Follow Steps 3 to 5 in [Share assets](#share-assets) section to generate and share the asset link (Private or public) from this **[!UICONTROL Share]** panel. 
 
-## Access the shared assets {#access-shared-assets}
+## Access the shared assets
 
 Access the shared assets page through the link and do the following:
 
