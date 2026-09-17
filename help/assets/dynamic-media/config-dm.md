@@ -11,7 +11,7 @@ exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 
 {{work-with-dynamic-media}}
 
-If you use Adobe Experience Manager as a Cloud Service for different environments, such as development, staging, and live production, configure Dynamic Media Cloud Services for each of those environments.
+Configure Dynamic Media Cloud Services for each Adobe Experience Manager as a Cloud Service environment.
 
 See also [Configure a Dynamic Media Company alias account](/help/assets/dynamic-media/dm-alias-account.md)
 
@@ -23,11 +23,11 @@ See also [Configure a Dynamic Media Company alias account](/help/assets/dynamic-
 >
 >Starting with the April 2025 AEM as a Cloud Service release, a technical restriction prevents Dynamic Media (Scene7) from being configured in environments with Enhanced Security. As a result, the **Dynamic Media Configuration** card under **Tools** > **Cloud Services** is no longer visible in these environments.
 >
->Additionally, customers using AEM 6.5 should be aware that the Dynamic Media (Scene7) stack is not HIPAA-ready.
+>Additionally, customers using AEM 6.5 must note that the Dynamic Media (Scene7) stack is not HIPAA-ready.
 
 >[!NOTE]
 >
->See also [HIPAA readiness for Adobe Experience Manager as a Cloud Service ](/help/compliance/hipaa/hipaa-readiness.md) for the documentation that Adobe provides to help you understand HIPAA readiness, and become compliant with the regulations. 
+>See also [HIPAA readiness for Adobe Experience Manager as a Cloud Service](/help/compliance/hipaa/hipaa-readiness.md) for the documentation that Adobe provides to help you understand HIPAA readiness, and become compliant with the regulations. 
 
 ## Architecture diagram of Dynamic Media {#architecture-diagram-of-dynamic-media}
 
@@ -37,13 +37,13 @@ With the new architecture, Experience Manager is responsible for primary source 
 
 1. When the primary source asset is uploaded to Adobe Experience Manager as a Cloud Service, it is replicated to Dynamic Media. At that point, Dynamic Media handles all asset processing and rendition generation, such as video encoding and dynamic variants of an image.
 1. After the renditions are generated, Experience Manager as a Cloud Service can securely access and preview the remote Dynamic Media renditions (no binaries are sent back to the Experience Manager as a Cloud Service instance).
-1. After content is ready to publish and approve, it triggers the Dynamic Media service to push content to delivery servers and cache content at the CDN (Content Delivery Network).
+1. After content is ready to be published and approved, it triggers the Dynamic Media service to push content to delivery servers and cache content at the CDN (Content Delivery Network).
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
 >[!NOTE]
 >
->The following list of features requires you to use the out-of-the-box CDN that is bundled with Adobe Experience Manager - Dynamic Media. Any other custom CDN is not supported with these features.
+>The following list of features requires you to use the standard CDN that is bundled with Adobe Experience Manager - Dynamic Media. Any other custom CDN is not supported with these features.
 >
 >* [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md)
 >* [Cache invalidation](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
@@ -80,7 +80,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. In Experience Manager as a Cloud Service, select the Experience Manager as a Cloud Service logo to access the global navigation console.
 1. On the left of the console, select the Tools icon, then go to **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
 1. On the Dynamic Media Configuration Browser page, in the left pane, select **[!UICONTROL global]** (do not select the folder icon to the left of **[!UICONTROL global]**). Then select **[!UICONTROL Create]**.
-1. On the **[!UICONTROL Create Dynamic Media Configuration]** page, enter the title, Dynamic Media account email address, and password of the company administrator of the Dynamic Media account, then select your region. This information is provided to you by Adobe in the provisioning email. Contact Adobe Customer Support if you did not receive this email. 
+1. On the **[!UICONTROL Create Dynamic Media Configuration]** page, enter the title, Dynamic Media account email address, and password of the company administrator of the Dynamic Media account, then select your region. Adobe provides this information in the provisioning email. Contact Adobe Customer Support if you did not receive this email. 
 1. Select **[!UICONTROL Connect to Dynamic Media]**.
 1. In the **[!UICONTROL Change Password]** dialog box, in the **[!UICONTROL New Password]** field, enter a new password that consists of 8-25 characters. The password must contain at least one of each of the following:
 
@@ -130,7 +130,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >This Inbox notification informs you if the configuration was either successful or not.
    > See [Troubleshoot a new Dynamic Media configuration](#troubleshoot-dm-config) and [Your Inbox](/help/sites-cloud/authoring/inbox.md) for more information. 
 
-1. To preview Dynamic Media content securely before it gets published, Experience Manager as a Cloud Service uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to preview content securely. To set up this action in Experience Manager as a Cloud Service, see the topic [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
+1. To preview Dynamic Media content securely before it gets published, Experience Manager as a Cloud Service uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. To provide users access to preview content securely, you can *permit* more IPs. To set up this action in Experience Manager as a Cloud Service, see the topic [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
 <!--
     * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
@@ -157,7 +157,7 @@ See also [Your Inbox](/help/sites-cloud/authoring/inbox.md).
 
 **To troubleshoot a new Dynamic Media configuration:**
 
-1. Near the upper-right corner of the Experience Manager as a Cloud Service page, select the bell icon, then select **[!UICONTROL View All]**.
+1. In the upper-right corner of the Experience Manager as a Cloud Service page, select the bell icon, then select **[!UICONTROL View All]**.
 1. On the Inbox page, select the success notification to read an overview of the status and logs of the configuration.
 
    If the configuration failed, select the failure notification similar to the following screenshot.
@@ -292,15 +292,15 @@ To configure the default color properties for enabling color correction when req
 
 1. Select **[!UICONTROL Save]**.
 
-For example, you could set the **[!UICONTROL RGB Default Color Space]** to *sRGB*, and **[!UICONTROL CMYK Default Color Space]** to *WebCoated*.
+For example, set the **[!UICONTROL RGB Default Color Space]** to *sRGB*, and **[!UICONTROL CMYK Default Color Space]** to *WebCoated*.
 
-Doing so would do the following:
+Doing so performs the following:
 
 * Enables color correction for RGB and CMYK images.
 * RGB images that do not have a color profile are assumed to be in the *sRGB* color space.
 * CMYK images that do not have a color profile are assumed to be in *WebCoated* color space.
-* Dynamic renditions that return RGB output, return it in the *sRGB* color space.
-* Dynamic renditions that return CMYK output, return it in the *WebCoated* color space.
+* Dynamic renditions that return RGB output return it in the *sRGB* color space.
+* Dynamic renditions that return CMYK output return it in the *WebCoated* color space.
 
 #### Edit MIME types for supported formats {#editing-mime-types-for-supported-formats}
 
@@ -362,7 +362,7 @@ You can add custom MIME types for unsupported formats in Experience Manager Asse
 
    ![Adobe CQ Scene7 Asset Mime Type Service](assets/2019-08-02_16-27-27.png)
 
-1. Type `DWG=image/vnd.dwg` in the empty text field that you just added.
+1. Type `DWG=image/vnd.dwg` in the empty text field.
 
    The `DWG=image/vnd.dwg` MIME type is for sample purposes only. The MIME type that you add here can be any other unsupported format.
 
@@ -383,7 +383,7 @@ You can add custom MIME types for unsupported formats in Experience Manager Asse
 
    `conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
 
-1. Drag the MIME type `image_vnd.dwg` and drop it directly above `image_` in the tree as seen in the following screenshot.
+1. Drag the MIME type `image_vnd.dwg` and drop it directly above `image_` in the tree, as shown in the following screenshot.
 
    ![Editing a DWG file in CRXDE Lite](assets/crxdelite_cqdoc-14627.png)
 
@@ -396,7 +396,7 @@ You can add custom MIME types for unsupported formats in Experience Manager Asse
 
 ### (Optional) Tune the performance of Dynamic Media {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-To keep Dynamic Media running smoothly, Adobe recommends the following synchronization performance/scalability fine-tuning tip:
+To maintain Dynamic Media performance, Adobe recommends the following synchronization performance/scalability fine-tuning tip:
 
 * [Update the predefined Job parameters for processing of different file formats](#update-job-para).
 <!--
@@ -407,9 +407,9 @@ To keep Dynamic Media running smoothly, Adobe recommends the following synchroni
 
 #### Update the predefined Job parameters for processing of different file formats {#update-job-para}
 
-You can tune job parameters for faster processing when you upload files. For example, if you upload PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter appears as follows: `process=None&createTemplate=false`.
+You can tune job parameters for faster processing when you upload files. For example, if you upload PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such a case, the tuned job parameter appears as follows: `process=None&createTemplate=false`.
 
-In case you do want to turn on template creation, use the following parameters: `process=MaintainLayers&layerNaming=AppendName&createTemplate=true`.
+If you do want to turn on template creation, use the following parameters: `process=MaintainLayers&layerNaming=AppendName&createTemplate=true`.
 
 <!-- THIS PARAGRAPH WAS REPLACED WITH THE TWO PARAGRAPHS DIRECTLY ABOVE BASED ON CQDOC-17657 You can tune job parameters for faster processing when you upload files. For example, if you are uploading PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter would appear as `process=None&createTemplate=false`. -->
 
