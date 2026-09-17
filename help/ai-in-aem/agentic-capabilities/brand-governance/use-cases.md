@@ -15,9 +15,9 @@ A range of use-cases are covered.
 
 | Use Case | Description | Skill(s) | Application | Sample Prompts |
 | --- | --- | --- | --- | --- |
-| Full brand context lookup | Retrieve the cascade-resolved brand rules and verticals for a brand | enterprise-context | Adobe Experience Manager (AEM)  | "Give me the full brand context for this brand"<br>"What verticals exist for this brand?"<br>"Resolve the owning brand for this asset path" |
-| Create or update brand rules | Add or modify a brand-context rule for a claim-type vertical | enterprise-context | Adobe Experience Manager (AEM) | "Add a new disclaimer rule for the pharma vertical"<br>"Update rule #42 to require a citation" |
-| Guideline & segment lookup | Retrieve detailed brand guidelines, scoped by segment, market, or category | enterprise-context | Adobe Experience Manager (AEM) | "What are the tone-of-voice guidelines for this brand?"<br>"List the claim categories used in the health vertical" |
+| Full brand context lookup | Retrieve the cascade-resolved brand rules and verticals for a brand | experience-context | Adobe Experience Manager (AEM)  | "Give me the full brand context for this brand"<br>"What verticals exist for this brand?"<br>"Resolve the owning brand for this asset path" |
+| Create or update brand rules | Add or modify a brand-context rule for a claim-type vertical | experience-context | Adobe Experience Manager (AEM) | "Add a new disclaimer rule for the pharma vertical"<br>"Update rule #42 to require a citation" |
+| Guideline & segment lookup | Retrieve detailed brand guidelines, scoped by segment, market, or category | experience-context | Adobe Experience Manager (AEM) | "What are the tone-of-voice guidelines for this brand?"<br>"List the claim categories used in the health vertical" |
 | Evaluate content against brand guidelines | Evaluate a published/authored page, text block, or image against configured brand checks | aem-governance | Adobe Experience Manager (AEM) | "Evaluate this landing page against SecurBank guidelines"<br>"Does this tagline pass our tone-of-voice checks?" |
 | Check configuration | List all configured checks (guidelines) for one or every brand | aem-governance | Adobe Experience Manager (AEM) | "List every check configured for SecurBank"<br>"What guidelines apply to this URL?" |
 | Brand inventory discovery | List and identify all configured brands for the organization | aem-governance | Adobe Experience Manager (AEM) | "List all brands configured"<br>"What guidelines apply to this URL `http://frescopa-coffee`" |
