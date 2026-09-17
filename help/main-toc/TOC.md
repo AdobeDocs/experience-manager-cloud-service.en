@@ -1230,7 +1230,7 @@ user-guide-title: AEM as a Cloud Service
       + [Content Optimization Agent](/help/ai-in-aem/agents/content-advisor/content-optimization.md)
     + Brand Governance Agent {#governance}
       + [Overview](/help/ai-in-aem/agents/governance/overview.md)
-      + [Enterprise Context](/help/ai-in-aem/agents/governance/enterprise-context.md)
+      + [Experience Context](/help/ai-in-aem/agents/governance/experience-context.md)
       + [How to Import a Brand Policy](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md)
   + AI Assistant {#ai-assistant}
     + [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
