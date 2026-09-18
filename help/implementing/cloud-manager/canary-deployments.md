@@ -108,7 +108,7 @@ After Cloud Manager promotes the canary release and removes the canary instances
 
 ## Scope and limitations {#scope-and-limitations}
 
-Keep the following scope and limitations in mind when you use canary deployments:
+Consider the following scope and limitations when you use canary deployments:
 
 * Canary deployments apply to the publish tier only. The author tier stays on the stable version during canary validation.
 * Your changes must be backward compatible so that the canary publish instances can serve your existing content structures.
