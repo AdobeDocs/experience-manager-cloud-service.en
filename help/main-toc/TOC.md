@@ -1157,18 +1157,18 @@ user-guide-title: AEM as a Cloud Service
     + [Using custom fonts in PDF documents](/help/forms/use-custom-fonts.md)
     + [List of supported fonts in PDF documents](/help/forms/supported-out-of-the-box-fonts.md)
     + [Known issues, best practices, and frequently asked questions](/help/forms/communications-known-issues-limitations.md)
-  + Transaction Reports {#transaction-reports}
++ Transaction Reports {#transaction-reports}
     + [Transaction Reports Billable APIs ](/help/forms/transaction-reports-billable-apis.md)
     + [Record a transaction for a custom implementation](/help/forms/record-transaction-custom-implementation.md)
-  + Value Realization Dashboard  {#vr-dashboard}
++ Value Realization Dashboard  {#vr-dashboard}
     + {hide-from-toc} [Understanding your value realization dashboard](/help/forms/aem-forms-value-realization-dashboard.md)
     + {hide-from-toc} [Using the value realization dashboard to analyze forms & documents usage trends](/help/forms/using-the-value-realization-dashboard.md)
-  + Developer API Reference {#aem-forms-developer-api-reference}
++ Developer API Reference {#aem-forms-developer-api-reference}
     + [Adaptive Forms API reference](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
     + [AEM Forms Cloud Service Communications API Reference](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
     + [AEM Forms Cloud Service JavaScript API Reference](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
     + [AEM Forms Cloud Service Java API Reference](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/index.html)
-  + Troubleshooting {#troubleshooting-aem-forms-cloud-service}
++ Troubleshooting {#troubleshooting-aem-forms-cloud-service}
     + [Installation and configuration](/help/forms/troubleshooting-installation-and-configuration.md)
     + [Dispatcher and CDN caching](/help/forms/troubleshooting-caching-performance.md)
     + [Restarting AEM SDK](/help/forms/restart-aem-sdk.md)
