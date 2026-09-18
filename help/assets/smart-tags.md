@@ -295,16 +295,16 @@ AI-Generated metadata enablement or disablement previously required Adobe Engine
 
 * Smart Tags requires the **Smart Content Services** add-on or entitlement.
 * Smart Tags and Dynamic Media both process and deliver content through Adobe's global cloud infrastructure. For customers with data residency requirements (for example, data must stay within a specific country), be explicit that using these features may involve processing or transferring asset data outside that region. This is a characteristic of the global infrastructure, not a configurable regional restriction.
-* Image generation through Smart Tags or AI features in AEM Assets uses Adobe-owned (first-party) Firefly models such as Image Model 4 only by default. There is currently no AEM-side configuration or model picker to select or restrict which model is used, and model attribution is not exposed in asset metadata. Plan compliance reporting accordingly if model provenance needs to be tracked externally.
+* Image generation through Smart Tags or AI features in AEM Assets uses Adobe-owned (first-party) Firefly models such as Image Model 4 only by default. There is currently no AEM-side configuration or model picker to select or restrict which model is used, and model attribution is not exposed in the asset metadata. Plan compliance reports accordingly if the model provenance needs to be tracked externally.
 * The separate **Generate Variations** generative feature is licensed specifically under AEM Sites with Edge Delivery Services (EDS) and is not available to Assets-only environments regardless of Smart Tags or AI-Generated metadata status. Do not conflate the two generative AI capabilities.
 
 ### Resolution Workflow {#resolution-workflow}
 
 1. **Smart Tag Training menu option is not visible**: Confirm you are looking under **[!UICONTROL Assets]** > **[!UICONTROL Smart Tag Training]** in `/aem/start.html`, and not under **[!UICONTROL Tools]**.
-2. **Feature seems disabled and no one can find the toggle**: Check **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Assets Configurations]** > **[!UICONTROL Smart Tag Enhancement Configuration]**. This is self-service and does not require an Adobe support ticket.
-3. **Data residency or compliance question**: Clarify that Smart Tags and Dynamic Media uses Adobe's global infrastructure, which can include processing outside your home region.
-4. **Compliance question about which AI model was used**: Clarify that only Adobe-owned Firefly models are invoked, there is no selectable alternative, and model attribution is not currently surfaced in metadata.
-5. **Generate Variations are not available**: Confirm the organisation has the AEM Sites and Edge Delivery Services (EDS) SKU. This is a separate entitlement from Smart Tags or AI-Generated metadata.
+2. **Feature seems disabled and no one can find the toggle**: Check **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Assets Configurations]** > **[!UICONTROL Smart Tag Enhancement Configuration]**. This is a self-service and does not require an Adobe support ticket.
+3. **Data residency or compliance question**: Clarify that Smart Tags and Dynamic Media uses Adobe's global infrastructure, which includes processing outside your home region.
+4. **Compliance question about which AI model was used**: Clarify that only Adobe-owned Firefly models are invoked, there is no selectable alternative, and model attribution is not currently surfaced in the metadata.
+5. **Generate Variations are not available**: Confirm the organisation has AEM Sites and Edge Delivery Services (EDS) SKU. This is a separate entitlement from Smart Tags or AI-Generated metadata.
 
 
 **See also**

@@ -297,6 +297,8 @@ If the field appears, but your validator is not listed in the drop-down:
 
 **Account for latency.** Scanning happens synchronously during submission, so the scan time is added to the user's submit experience. Set sensible timeouts on calls to your engine, and set expectations with a service-level agreement if you depend on an external service.
 
+**Plan for high-volume, public submissions.** Latency and throughput depend on the third-party scanning service you integrate, not on AEM Forms. For public, high-traffic forms, size your scanning service for peak submission volume, keep it highly available because it sits in the submission path, and pair it with bot protection such as CAPTCHA to reduce junk submissions. Typical attachment volumes are handled by most scanning solutions; confirm expected load against your provider's SLA.
+
 **Bound the payload.** `getValue()` returns the file as an in-memory `byte[]`, so large uploads consume heap. Constrain uploads at the source using the File Attachment component's maximum file size and supported file types, so the validator only handles reasonably sized, expected files.
 
 **Layer your controls.** A validator is strongest as one layer among several. Restrict file types and sizes on the File Attachment component, scan at submission with your validator, and add bot protection such as CAPTCHA. No single layer is sufficient on its own.
@@ -316,11 +318,17 @@ At submission, before the form data and attachment are persisted. AEM calls your
 **Can validation run earlier than submission, as soon as the file is attached?**
 Yes, as a separate mechanism. Use the **Invoke Service** operation in the Adaptive Forms Rule Editor to call a scanning service on the file field's change event, before the user submits. This is independent of the `FileAttachmentValidator` interface described in this article. It calls a Form Data Model (FDM) service instead. See [Invoke Service enhancements in the Rule Editor](/help/forms/invoke-service-enhancements-rule-editor.md).
 
+**Does the validator scan input fields or URLs, or only file attachments?**
+It scans file attachments at submission. Values in other fields, such as a URL typed into a text field, are not scanned by the validator. To validate those, use fill-time rules in the Adaptive Forms Rule Editor (for example, a regular-expression pattern) or the **Invoke Service** operation. If a URL points to a file you want scanned, send that URL to your scanning service at fill time through Invoke Service.
+
 **Does the validator run in the browser or on the server?**
 On the server. The check cannot be bypassed by disabling JavaScript or editing the page in the browser.
 
 **Can I use any antivirus with this interface?**
-Yes. The interface does not depend on any specific engine. Your implementation can call a local scanning daemon, a commercial antivirus or data-loss-prevention product, or a remote scanning API, then map the result to a `FileAttachmentValidationResult`.
+Yes. The interface does not depend on any specific engine. Your implementation can call a local scanning daemon, a commercial antivirus or data-loss-prevention product, or a remote scanning API, then map the result to a `FileAttachmentValidationResult`. There is no Adobe-approved or certified list of scanning products; choose a service based on your needs, volume, and service-level agreement.
+
+**Which file types can be scanned?**
+Which files are inspected is determined by the third-party scanning service you integrate, not by AEM Forms. AEM passes the raw attachment bytes to your validator, so what can be scanned (PDF, PNG, JPG, DOCX, and so on) depends on that engine. To control which files users can attach in the first place, use the File Attachment component's supported file types and maximum file size settings, which apply regardless of the validator.
 
 **Does a rejected file get saved in AEM?**
 No. Because the file is evaluated from memory before it is persisted, a rejected file is never written to the repository.
