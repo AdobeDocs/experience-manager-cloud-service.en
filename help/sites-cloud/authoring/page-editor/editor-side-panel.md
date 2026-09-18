@@ -158,7 +158,7 @@ A page can easily be composed of many of the same type of components, so the con
 
 Component types are shown in the user language, whereas the component description text comes from the page language.
 
-Clicking the chevron next to a component will collapse or expand that level. The side panel remembers the collapsed or expanded state of the tree across pages and refreshes of the page editor.
+Clicking the chevron next to a component will collapse or expand that level. The side panel remembers the collapsed or expanded state of the tree across pages and refreshes of the page editor. However the top level will always (re)load as expanded.
 
 ![Content Tree chevron expansion](assets/editor-side-panel-content-tree-chevron.png)
 
