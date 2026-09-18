@@ -62,12 +62,6 @@ Where the canary deployment runs depends on the type of pipeline.
 
     During the validation window, only requests that include the canary header reach the newly deployed release. All other requests continue to reach the stable release.
 
-
-<!-- TRANSCRIPT from video
-1. Run the production pipeline with canary deployment enabled. 1. In the Run Pipeline dialog box, click **Run**. 1. The canary deployment will be applied only to the production environment. 1. Once the canary instance is available, the pipeline's execution is paused and waits for customer input (Execution pause dialog box is showing). Closes the dialog box. 1. At this point, there are two options. "Promote to production" or "Cancel deployment". 1. This is how we can test the new code changes. 1. When we edit the canary header set to true, we can see the new version. If we remove the canary header (turn off "True"), we continue to see the current production push. If no action is taken within 3 hours, Cloud Manager automatically promotes the new versiom to production. If validation is successful (clicked "Promote to production" buttion), we can promote the deployment. Once the deployment completes, all traffic is routed to the new version and then the new content is available without the canary header.
--->
-
-
 ## Access the canary release {#access-the-canary-release}
 
 After Cloud Manager starts the canary instances, you reach the new version by adding an HTTP header to your requests. The stable version continues to serve requests without the header.
