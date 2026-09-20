@@ -9,7 +9,11 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 ---
 # Use canary deployments to validate code {#canary-deployments}
 
-Canary deployments in Cloud Manager let you validate new code on live production infrastructure before you route real user traffic to it. You deploy the new version alongside the current stable version and reach it through a dedicated request header. After you confirm that the new version works successfully, you can either promote it to all traffic or roll it back.
+For AEM Cloud Service implementations, canary deployments in Cloud Manager let you validate new code on the live production infrastructure's publish tier before you route real user traffic to it. You deploy the new version alongside the current stable version and reach it through a dedicated request header. After you confirm that the new version works successfully, you can either promote it to all traffic (this happens automatically after a 12-hour window) or roll it back.
+
+Dev and stage environments remain the primary places to test code releases; canary deployments serve as an additional opportunity to sanity check that a release functions as you expect. For example, it could be useful if AEM production integrates with an external service's production endpoint, which could not be explicitly validated in lower AEM environments.
+
+Canary deployments are intended for internal validation, not gradual traffic shifting real user traffic from the old release to the new one — since only requests with an explicit header reach the canary instances, real user traffic never routes there automatically.
 
 >[!IMPORTANT]
 >
@@ -26,25 +30,18 @@ When you run a full stack pipeline that has canary deployments enabled, Cloud Ma
 1. You reach the new version selectively by adding a canary request header. See [Access the canary release](#access-the-canary-release).
 1. During a validation window, you promote the canary release to all traffic or cancel it. See [Validate and promote or cancel](#validate-and-promote-or-cancel).
 
-<!-- Added the canary deployment workflow diagram (source: Canary Deployments Customer Support Guide PDF). -->
-![Sequence diagram of the canary deployment workflow between the user and Cloud Manager across the deployment, cancel, and promotion phases. Line style distinguishes user actions, Cloud Manager steps, and canary lifecycle steps.](/help/implementing/cloud-manager/assets/canary-deployment-workflow.png)
-
 ## Enable canary deployments {#enable-canary-deployments}
 
-You enable (turn on) canary deployments on the full stack pipeline. Canary deployments are supported only for **stage** and **production** environments. 
+You enable (turn on) canary deployments on the full stack pipeline. Canary deployments are supported only for **stage** and **production** environments. Note that a pipeline configured to deploy to both stage and production runs the canary deployment only in production, as shown below.
 
 **Canary deployment behavior by pipeline type**
 Where the canary deployment runs depends on the type of pipeline.
 
 | Pipeline type | Where it runs |
 | --- | --- |
-| Stage-only pipeline | The canary deployment runs in the stage environment. |
+| [Stage-only pipeline](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md#stage-only) | The canary deployment runs in the stage environment. This allows you gain familiarity with how the canary will function when deployed on the production environment |
 | Production-only pipeline | The canary deployment runs in the production environment. |
 | Stage and production pipeline | The canary deployment runs only in the production environment. |
-
-
-
-
 
 
 **To enable canary deployments:**
@@ -78,7 +75,7 @@ When the canary instances are ready, a validation window opens so that you can t
 
 >[!IMPORTANT]
 >
->If you take no action within the 3-hour validation window, Cloud Manager automatically promotes the canary release.
+>If you take no action within the 12-hour validation window, Cloud Manager automatically promotes the canary release.
 
 ![Cloud Manager deployment step showing the Cancel deployment and Promote to production actions for a ready canary release.](/help/implementing/cloud-manager/assets/canary-deployments-cancel-or-promote-options.png)
 
@@ -98,6 +95,7 @@ If you find issues during the validation window, click **[!UICONTROL Cancel depl
 * The previous stable version continues to serve traffic.
 * Cancellation is available only during the validation window.
 
+<!--
 ## Canary header behavior after promotion {#header-behavior-after-promotion}
 
 After Cloud Manager promotes the canary release and removes the canary instances, requests that still include the `X-Aem-Canary: true` header return an HTTP `503` response.
@@ -105,6 +103,7 @@ After Cloud Manager promotes the canary release and removes the canary instances
 >[!TIP]
 >
 >To make these requests succeed instead, use the fallback header `X-Aem-Canary: fallback`. With the fallback header, requests route to the stable instances when the canary instances return a `503` response.
+-->
 
 ## Scope and limitations {#scope-and-limitations}
 
