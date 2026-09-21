@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1350 270">
+  <defs>
+    <style>
+      .bg { fill: #f5f7f9; }
+      .header { fill: #1473e6; }
+      .header-text { fill: #fff; font-family: Arial-BoldMT, Arial; font-weight: 700; font-size: 20px; }
+      .panel { fill: #fff; stroke: #ddd; stroke-width: 2px; }
+      .panel-title { fill: #333; font-family: Arial-BoldMT, Arial; font-weight: 700; font-size: 16px; }
+      .panel-sub { fill: #666; font-family: ArialMT, Arial; font-size: 12px; }
+      .arrow { stroke: #666; stroke-width: 2px; fill: none; }
+      .accept { fill: #2ecc71; }
+      .reject { fill: #ff8a00; }
+      .icon-stroke { stroke: #1473e6; stroke-width: 2px; fill: none; }
+      .outcome-mark { stroke: #fff; stroke-width: 2px; fill: none; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1350" height="270" rx="8" ry="8"/>
+  <rect class="header" x="20" y="15" width="1310" height="40" rx="8" ry="8"/>
+  <text class="header-text" x="420" y="42">File Attachment Virus Scanner / Validator</text>
+
+  <!-- Panel 1: File attached -->
+  <rect class="panel" x="20" y="80" width="380" height="160" rx="8" ry="8"/>
+  <text class="panel-title" x="60" y="112">1. File Attached</text>
+  <path class="icon-stroke" d="M150,145 h60 v70 h-60 z M195,145 v20 h20"/>
+  <text class="panel-sub" x="210" y="232" text-anchor="middle">User attaches a file and selects Submit</text>
+
+  <!-- Arrow 1 -->
+  <line class="arrow" x1="410" y1="160" x2="450" y2="160"/>
+  <path class="arrow" d="M438,152 l12,8 l-12,8"/>
+
+  <!-- Panel 2: Validator runs -->
+  <rect class="panel" x="470" y="80" width="410" height="160" rx="8" ry="8"/>
+  <text class="panel-title" x="675" y="112" text-anchor="middle">2. Validator/Antivirus Runs</text>
+  <path class="icon-stroke" d="M655,140 l25,-8 l25,8 v28 c0,16 -10,26 -25,30 c-15,-4 -25,-14 -25,-30 z"/>
+  <text class="panel-sub" x="675" y="216" text-anchor="middle">Your OSGi service scans the attachment</text>
+  <text class="panel-sub" x="675" y="232" text-anchor="middle">in memory, before it is persisted</text>
+
+  <!-- Arrow 2 splits toward the two outcomes -->
+  <line class="arrow" x1="890" y1="160" x2="930" y2="122"/>
+  <path class="arrow" d="M916,120 l14,-4 l2,14"/>
+  <line class="arrow" x1="890" y1="160" x2="930" y2="198"/>
+  <path class="arrow" d="M916,200 l14,4 l2,-14"/>
+
+  <!-- Panel 3a: Accepted -->
+  <rect class="panel" x="950" y="70" width="380" height="75" rx="8" ry="8"/>
+  <circle class="accept" cx="990" cy="107" r="16"/>
+  <path class="outcome-mark" d="M982,107 l6,7 l14,-15"/>
+  <text class="panel-title" x="1020" y="102">Accepted</text>
+  <text class="panel-sub" x="1020" y="122">Submission continues normally</text>
+
+  <!-- Panel 3b: Rejected -->
+  <rect class="panel" x="950" y="155" width="380" height="75" rx="8" ry="8"/>
+  <circle class="reject" cx="990" cy="192" r="16"/>
+  <path class="outcome-mark" d="M982,184 l16,16 M998,184 l-16,16"/>
+  <text class="panel-title" x="1020" y="187">Rejected</text>
+  <text class="panel-sub" x="1020" y="207">Blocked before the file is persisted</text>
+</svg>

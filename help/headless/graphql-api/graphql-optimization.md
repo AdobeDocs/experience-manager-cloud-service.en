@@ -121,6 +121,32 @@ See:
 * [Updating your Content Fragments for Paging and Sorting in GraphQL Filtering](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
 * [Sample Query with filtering by _tags ID and excluding variations](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
 
+#### Set maximum size for GraphQL query cache {#set-maximum-size-for-graphql-query-cache}
+
+During the execution of a GraphQL query, AEM maintains an in-memory cache of the deserialized Content Fragment data (path - fragment field map) for the duration of that request. 
+
+This cache:
+
+* is scoped to a single GraphQL request and discarded when the request completes.
+* avoids re-processing the same fragment when it appears multiple times; for example, via references.
+* can consume significant heap when queries resolve deeply nested fragments with many fields.
+
+If you experience high memory usage on the publish environment, or out-of-memory issues under concurrent GraphQL load (especially with complex nested reference queries) you may need to configure the maximum cache size. 
+
+To configure the maximum cache size, define the Cloud Manager Environment Variable:
+
+| Property | Value |
+|--- |--- |
+| Name | `AEM_HEADLESS_GRAPHQL_BOUNDED_DATA_CACHE_MAXIMUM_SIZE` |
+| Type | Integer |
+| Set via | [Cloud Manager - Environment Configuration - Environment Variables](/help/implementing/cloud-manager/environment-variables.md) |
+| Default | `-1` (unbounded cache; bounded mode not active) |
+| Values | Positive integer = maximum number of fragment entries cached per request.<br> `-1` or any non-positive value keeps the unbounded cache. |
+
+>[!NOTE]
+>
+>Bounding the cache reduces peak memory per request, but may increase processing time if evicted fragments are needed again within the same query.
+
 #### Use GraphQL pagination {#use-aem-graphql-pagination}
 
 **Recommendation**

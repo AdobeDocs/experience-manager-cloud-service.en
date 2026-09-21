@@ -134,7 +134,7 @@ The table below outlines the key differences between AEM Assets Content Hub and 
 
 ## How can I select a repository to view assets only for the selected environment in AEM Assets Content Hub? {#select-repository-multiple-environments}
 
-When you have configured AEM Assets Content Hub for Production and other lower environments for the same Program, you can select the repository and display the assets for the selected environment. Execute the following steps:
+When you have configured AEM Assets Content Hub for Production and other lower environments for the same program, you can select the repository and display the assets for the selected environment. Execute the following steps:
 
 1. Click the user icon in the right pane.
 
@@ -144,11 +144,15 @@ When you have configured AEM Assets Content Hub for Production and other lower e
 
    Content Hub now displays assets for the selected environment.
 
+   >[!NOTE]
+   >
+   >If assets from a specific environment, for example, Stage are not appearing in Content Hub while assets from another environment, for example, Production are, check the **[!UICONTROL Select Repository]** setting in your Content Hub profile. Content Hub connects to one specific delivery repository at a time, and the UI remains pointed at a different environment's repository, for example, still Production than the one currently being tested. Switching the repository selection to the correct environment resolves this without any change to the asset approval or ABAC configuration.
+
 ## How can AEM Assets Content Hub display the thumbnail preview for .ZIP file type? {#thumbnail-preview-zip-file}
 
 To provide a thumbnail preview for file types such as .ZIP in AEM Assets Content Hub, you can add a rendition named `cq5dam.<label>.<width>.<height>.<ext>` to the root of the path where the .ZIP is available in AEM as a Cloud Service authoring environment. For example, `cq5dam.preview.500.500.png`.
 
-Content Hub picks the rendition with the greatest width among all `cq5dam.*` renditions; a custom rendition displays as a thumbnal preview only if its encoded width exceeds existing auto-generated renditions.
+Content Hub picks the rendition with the greatest width among all `cq5dam.*` renditions; a custom rendition displays as a thumbnail preview only if its encoded width exceeds existing auto-generated renditions.
 
 The image that you add as rendition:
 
@@ -160,6 +164,42 @@ When available, Content Hub displays the image as the preview thumbnail for .ZIP
 
 >[!NOTE]
 >
->A rendition named `cq5dam.preview.png` (without dimensions) is not displayed as a preview thumbnail.
+>A rendition named `cq5dam.preview.png` (without width and height in the filename) is not used as the preview thumbnail. Include the dimensions in the filename, for example, `cq5dam.preview.500.500.png`.
 
+If you do not add a custom rendition, Content Hub determines the thumbnail from the contents of the .ZIP file:
+
+* If the .ZIP contains one or more images, Content Hub picks one of them as the thumbnail. When there are multiple images, it selects the first one in alphanumeric filename order.
+
+* If the .ZIP contains only non-image files (for example, only a PDF, or only a video, with no eligible image inside), no thumbnail is generated. Content Hub does not extract a preview frame from a video or render a preview from a PDF inside the .ZIP file.
+
+
+## What Happens When I Approve an Asset for Content Hub versus Delivery? {#approve-an-asset}
+
+Approving an asset is not a single binary state, the **Approval Target** selected at approval time determines what the approval actually enables.
+
+* Approving with Content Hub as the target makes the asset visible inside the Content Hub portal itself, but does not make it accessible through a public share link.
+* Approving with Delivery as the target is what is required for the asset to be reachable through public link-sharing.
+
+A **There is no content to display** or **404 Error** on a shared public link is frequently caused by the underlying asset having been approved with Content Hub as the target rather than Delivery. When troubleshooting a broken share link, check and correct the asset's **Approval Target** to Delivery before investigating further.
+
+Separately, when an asset is approved with Content Hub as the target, AEM auto-populates the `dam:roles` metadata field with a system-managed IMS group identifier. This is an expected, system-managed security mechanism used to restrict access to authenticated users. It is not an evidence of a workflow bug, it should not be manually edited or removed, and does not conflict with the Attribute-Based Access Control (ABAC) rules. If a metadata schema exposes this field, consider marking it read-only or hidden. Control the visibility through ABAC and metadata rather than by editing `dam:roles`.
+
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 

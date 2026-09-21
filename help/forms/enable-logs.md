@@ -16,9 +16,6 @@ role: Admin, User, Developer
 ---
 # Enable logging for HTML5 forms{#enable-logging-for-html-forms}
 
-<span class="preview"> The HTML5 Forms capability is offered as part of Early Access Program. To request access, send an email from your official (work) email ID to aem-forms-ea@adobe.com.
-</span>
-
 You can configure the logger utility to start creating logs for HTML5 forms. The logger utility has various levels, you can set a level as per your requirements. HTML5 forms has server and client components. You can configure logs for both the components.
 
 ## Configuring server-side logging {#configuring-server-side-logging}

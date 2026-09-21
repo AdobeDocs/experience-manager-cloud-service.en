@@ -101,7 +101,7 @@ To configure these settings, determine if a `CNAME` or apex record must be confi
 >
 >The "register before you advertise" principle applies here. That is, configuring DNS should only be performed *after* you have added the domain mapping successfully. Doing so ensures that Cloud Manager recognizes and validates that the domain exists in its own configuration before it can respond to requests for it. It also avoids any domain takeover attempts.
 
-Be sure you fulfill the following requirements *before* you configure your DNS records:
+Make sure you fulfill the following requirements *before* you configure your DNS records:
 
 * Identify your domain host or registrar if you do not know it already.
 * Be able to edit the DNS records for your organization's domain, or contact the appropriate person who can.

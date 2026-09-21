@@ -1,5 +1,5 @@
 ---
-title: How to use Turnstile in an AEM Adaptive Form?
+title: How to use Turnstile in an AEM Adaptive Form Foundation Components?
 description: Enhance form security with Turnstile service effortlessly. Step-by-step guide inside!
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Foundation Components
@@ -8,8 +8,6 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 644c351b-a167-4d18-8b99-b7cae6be48d5
 ---
 # Integrate Turnstile CAPTCHA with Adaptive Forms
-
-<span class="preview"> This feature is under Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a program commonly used in online transactions to distinguish between humans and automated programs or bots. It poses a challenge and evaluates user response to determine if it's a human or a bot interacting with the site. It prevents the user to proceed if the test fails and helps make online transactions secure by keeping bots from posting spam or malicious purposes. 
 

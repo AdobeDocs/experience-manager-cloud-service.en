@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" width="720" height="480" role="img" aria-labelledby="vpnArchTitle vpnArchDesc">
+  <title id="vpnArchTitle">Components required for VPN and Private Endpoint access to Azure Blob Storage</title>
+  <desc id="vpnArchDesc">AEM as a Cloud Service connects over a VPN tunnel into the customer's Azure VNET. Inside the VNET, a Private DNS Resolver inbound endpoint and a Private Endpoint work together: the Private DNS zone hosts records that the resolver uses, and maps the storage account's blob endpoint to the private endpoint's private IP address. The Private Endpoint then connects privately to the Azure Storage Account, which sits outside the VNET as an Azure-managed service.</desc>
+
+  <defs>
+    <marker id="arrowHead3" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#000000"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="720" height="480" fill="#FFFFFF"/>
+
+  <!-- AEM box -->
+  <rect x="210" y="10" width="300" height="55" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+  <text x="360" y="43" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#000000">AEM as a Cloud Service</text>
+
+  <line x1="360" y1="65" x2="360" y2="105" stroke="#000000" stroke-width="2" marker-end="url(#arrowHead3)"/>
+  <text x="400" y="90" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333333">VPN tunnel</text>
+
+  <!-- VNET container -->
+  <rect x="40" y="110" width="640" height="280" rx="8" fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-dasharray="7,5"/>
+  <text x="60" y="132" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#000000">Customer VNET</text>
+
+  <!-- DNS Resolver box -->
+  <rect x="70" y="150" width="280" height="70" rx="6" fill="#E8E8E8" stroke="#000000" stroke-width="2"/>
+  <text x="210" y="180" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#000000">Private DNS Resolver</text>
+  <text x="210" y="198" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#333333">(inbound endpoint)</text>
+
+  <!-- Private Endpoint box -->
+  <rect x="390" y="150" width="260" height="70" rx="6" fill="#D6EAF8" stroke="#000000" stroke-width="2"/>
+  <text x="520" y="190" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#000000">Private Endpoint</text>
+
+  <!-- Private DNS zone box -->
+  <rect x="70" y="270" width="280" height="70" rx="6" fill="#E8E8E8" stroke="#000000" stroke-width="2"/>
+  <text x="210" y="300" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#000000">Private DNS zone</text>
+  <text x="210" y="318" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#333333">(blob endpoint records)</text>
+
+  <!-- dashed line: DNS zone hosts records for Resolver -->
+  <line x1="210" y1="270" x2="210" y2="224" stroke="#000000" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrowHead3)"/>
+  <text x="222" y="250" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#333333">hosts records for</text>
+
+  <!-- dashed line: DNS zone maps blob endpoint to Private Endpoint's private IP -->
+  <line x1="350" y1="300" x2="386" y2="210" stroke="#000000" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrowHead3)"/>
+  <text x="352" y="255" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#333333">maps blob endpoint</text>
+  <text x="352" y="268" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#333333">to private IP</text>
+
+  <!-- arrow from Private Endpoint down out of VNET to Storage Account -->
+  <line x1="520" y1="220" x2="520" y2="424" stroke="#000000" stroke-width="2" marker-end="url(#arrowHead3)"/>
+
+  <!-- Storage Account box (outside VNET, Azure-managed service) -->
+  <rect x="390" y="430" width="260" height="55" rx="6" fill="#D6EAF8" stroke="#000000" stroke-width="2"/>
+  <text x="520" y="453" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#000000">Azure Storage Account</text>
+  <text x="520" y="470" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#333333">(Blob Storage)</text>
+</svg>

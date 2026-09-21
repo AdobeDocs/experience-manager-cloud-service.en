@@ -17,7 +17,7 @@ Upon creation of a new code repository in Cloud Manager, an `it.tests` folder is
 
 >[!NOTE]
 >
->If your repository was created before Cloud Manager automatically created `it.tests` folders, you may also generate the latest version using the [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
+>If your repository was created before Cloud Manager automatically created `it.tests` folders, generate the latest version using the [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
 
 Once you have the contents of the `it.tests` folder, you can use them as the basis for your own tests and then complete the following steps:
 
@@ -29,13 +29,13 @@ Once you have the contents of the `it.tests` folder, you can use them as the bas
 
 The same tools that Adobe uses to write product functional tests can be used to write your custom functional tests. Use the [product functional tests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub as an example of how to write your tests.
 
-The code for custom functional tests is Java&trade; code in the `it.tests` folder of your project. It should produce a single JAR with all the functional tests. If the build produces more than one test JAR, the JAR that is selected is non-deterministic. If it produces zero test JARs, the test step passes by default. See [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) for sample tests.
+The code for custom functional tests is Java&trade; code in the `it.tests` folder of your project. It produces a single JAR with all the functional tests. If the build produces more than one test JAR, the JAR that is selected is non-deterministic. If it produces zero test JARs, the test step passes by default. See [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) for sample tests.
 
-The tests are run on Adobe-maintained testing infrastructure including at least two author instances, two publish instances, and a Dispatcher configuration. This setup means that your custom functional tests run against the entire AEM stack.
+The tests are run on Adobe-maintained testing infrastructure including at least two author instances, two publish instances, and a Dispatcher configuration. This configuration means that your custom functional tests run against the entire AEM environment.
 
 ### Functional tests structure {#functional-tests-structure}
 
- Custom functional tests must be packaged as a separate JAR file produced by the same Maven build as the artifacts to be deployed to AEM. Generally, this build would be a separate Maven module. The resulting JAR file must contain all required dependencies and would generally be created using the `maven-assembly-plugin` using the `jar-with-dependencies` descriptor.
+ Custom functional tests must be packaged as a separate JAR file produced by the same Maven build as the artifacts to be deployed to AEM. This build is a separate Maven module. The resulting JAR file must contain all required dependencies and is created using the `maven-assembly-plugin` using the `jar-with-dependencies` descriptor.
 
 In addition, the JAR must have the `Cloud-Manager-TestType` manifest header set to `integration-test`.
 
@@ -75,7 +75,7 @@ The following is an example configuration for the `maven-assembly-plugin`.
 
 Within this JAR file, the class names of the actual tests to be executed must end in `IT`.
 
-For example, a class named `com.myco.tests.aem.it.ExampleIT` would be executed, but a class named `com.myco.tests.aem.it.ExampleTest` would not.
+For example, a class named `com.myco.tests.aem.it.ExampleIT` runs, but a class named `com.myco.tests.aem.it.ExampleTest` does not.
 
 Furthermore, to exclude test code from the coverage check of the code scanning, the test code must be below a package named `it` (the coverage exclusion filter is `**/it/**/*.java`).
 
@@ -85,15 +85,15 @@ See [`aem-testing-clients` GitHub repo](https://github.com/adobe/aem-testing-cli
 
 >[!TIP]
 >
->[Watch this video](https://www.youtube.com/watch?v=yJX6r3xRLHU) about how you can use custom functional tests to improve your confidence in your CI/CD pipelines.
+>[View this video](https://www.youtube.com/watch?v=yJX6r3xRLHU) about how you can use custom functional tests to improve your CI/CD pipelines.
 
 ### Prerequisites {#prerequisites}
 
-1. The tests in Cloud Manager are run using a technical admin user.
+1. The tests in Cloud Manager are run using a technical administrator user.
 
 >[!NOTE]
 >
->For running functional tests on your local machine, create a user with administrative permissions to ensure the same behavior.
+>To ensure the same behavior when running functional tests on your local machine, create a user with administrative permissions.
 
 1. The following boundaries limit the containerized infrastructure scoped for functional testing:
 

@@ -187,3 +187,26 @@ Create a folder in the author environment, navigate to **Tools** > **Assets** > 
 ### Who can access approved assets in AEM Assets Content Hub, and what controls are in place?
 
 Approved assets are available to users who are part of the same organization within AEM Assets Content Hub. Strict controls ensure only the latest, approved versions are accessible, helping maintain brand consistency and security.
+
+### Why is my approved asset not visible in Content Hub?
+
+Content Hub displays only assets whose `dam.status` metadata is approved; there is no separate publish action beyond the standard AEM approval workflow, and Content Hub has no folder-creation capability. Assets are organized purely through the metadata filters and collections, not a folder hierarchy. For assets ingested through integrations such as Workfront, the integration does not automatically set the review status to **Approved**. The approval in AEM DAM happens manually or through a configured workflow before those assets appear in Content Hub. For more information on why uploaded assets are not displayed automatically in AEM Assets Content Hub, see [Upload brand approved assets to Content Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/upload-brand-approved-assets).
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

@@ -10,59 +10,82 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 26773 {#release-26773}
+## Release 27830 {#release-27830}
 
-Summarized below are the continuous improvements for maintenance release 26773, which was publicly released on June 17, 2026. The previous maintenance release was release 26353.
+Summarized below are the continuous improvements for maintenance release 27830, which was publicly released on August 26, 2026. The previous maintenance release was release 27673.
 
-The 2026.6.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
+The 2026.9.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
->[!NOTE]
->
->Release 26635 has been made private. 
+### Enhancements {#enhancements-27830}
 
-### Enhancements {#enhancements-26773}
+* ASSETS-68245: Expose additional Adobe Stock licensing metadata.
+* CQ-4361361: Improved Watchdog efficiency by dynamically releasing unused thread resources.
+* CQ-4363548: Optimized translation session handling to skip saves when there are no changes.
+* SITES-43659: Composite Data-Type: Prevent composite fields from being editable in the content-fragment Touch-UI editor.
+* SITES-43538: Composite Data-Type: GraphQL support for composite field variations.
+* SITES-38060: Content Fragment Model Editor: Show a warning if a model with the same title already exists.
+* SITES-38666: New frontend for CIF.
+* SITES-49657: Release CIF components 2.18.8.
+* SITES-49673: Release Core Components 2.32.6.
+* SITES-46868: Content Fragment composite data types now support tag-based dynamic model referencing, matching Content Fragment Reference behavior.
+* SITES-47277: Edge Delivery with Universal Editor: add Edge Delivery roles based permissions to preview/publish (early access).
+* SITES-42708: Edge Delivery with Universal Editor: respect configured limits and features of Edge Delivery for asset validation.
+* SITES-46007: Edge Delivery with Universal Editor: add support for custom names for the Columns block.
+* SITES-47291: Edge Delivery with Universal Editor: add primary-language-url for localized urls (w/ sling:alias).
+* SITES-47399: Edge Delivery with Universal Editor: add support for authorable login page paths for gated content.
 
-* GRANITE-67251: Introduced `cqSiteSearch`, a new out-of-the-box index defined over the `cq:Searchable` mixin type. This allows fine-grained control over what content goes into the site index and provides full-fledged site search for AEM websites, including semantic search.
-* GRANITE-68099: Updated the embedded Apache Jackrabbit Oak to the latest public release (2.2.0).
-* SKYOPS-135241: Introduce aem prefix for immutable farm filters to avoid naming conflicts with customer-defined configurations.
+### Fixed Issues {#fixed-issues-27830}
 
-### Fixed Issues {#fixed-issues-26773}
+* CQ-4363926: Fixes unnecessary TAGMETADATA object addition when unmodified content is added during translation project creation, potentially causing translation job failures.
+* CQ-4363431: Fixed creation of empty-translation jobs during Scheduled Repeat Translation considering  jcr:language property.
+* SITES-47827: Content Fragment Touch-UI Editor: Saving a Content Fragment in the CF Editor Posts Empty Tag Field When No Tag Is Selected.
+* SITES-46019: GraphQL: GraphQL support for `GenericContentRef` in content reference fields.
+* SITES-45383: Content Fragment Model Editor : fix localization bugs
+* SITES-37328: Content Fragment Model Console : `StringIndexOutOfBoundsException` when a folder below /conf endsWith "settings" in ModelConsole.
+* SITES-48264: GraphQL: Fix some corner cases in the schema cache.
+* SITES-47330: Rich Text Field in Page Properties Not Editable.
+* SITES-46681: Breakpoints Now Mandatory in Responsive Grid Cause Authoring Regression & Large-Scale Content Remediation.
+* SITES-46532: Special characters not displayed in RTE.
+* SITES-46191: `crop#launchwithratio` fails in inline (non-fullscreen) image editor: screen flickers, no crop box.
+* SITES-45771: Inline-Editing (mode=hybrid) does not load / apply custom Crop-Ratios & fails outside Fullscreen.
+* SITES-44958: Experience Fragment variation switch while component dialog is open blocks further editing.
+* SITES-43186: Unlocalized 'to exit text editor press Esc key' tooltip in Page Editor > Text component configure.
+* SITES-42987: [LOC] ENU format used in calendar under 'Skyline' > 'Commerce'.
+* SITES-48426: Performance improvements in Sites Console.
+* SITES-30879: Unlocalized strings in Sites > Page Editor > Search component.
+* SITES-48305: Launch promotion with Live Sync still duplicates nested components when using Promote modified pages.
+* SITES-44270: Live-Copy Content Fragments revert to “Draft” instead of “Modified” after rollout.
+* SITES-43194: MSM Live Copy Page Properties – `cq:tags` collapse into single tag & data loss on save.
+* SITES-48136: Fixed an issue in the Universal Editor where moving a referenced Content Fragment could replace an entire rich-text field with a link.
+* SITES-48494: Removed the minimum-length constraint on Content Fragment model metadata.
+* SITES-47737: Fixed Preview publication incorrectly republishing up-to-date references (Experience Fragments and pages), which could cause workflow failures.
+* SITES-49073: Fixed the Adobe Target IMS configuration dropdown appearing empty in Classic UI, which blocked Experience Fragment export.
+* SITES-42708: Edge Delivery with Universal Editor: fix false-negatives publishing validation errors when images are already published.
+* SITES-48879: Edge Delivery with Universal Editor: fix publishing validation errors when json-ld is authored as richtext.
+* SITES-49193: Edge Delivery with Universal Editor: fix authoring of authenticated sites when using file-based path mapping.
+* SITES-49345: Edge Delivery with Universal Editor: fix reference rewriting in metadata when arbitrary keywords resolve to a resource.
+
+### Known Issues {#known-issues-27830}
 
 None.
 
-#### AEM Guides {#guides-26773}
-
-* GUIDES-46275: Image dimensions specified with units such as `mm` are not rendered correctly, causing images to be displayed at their original size instead of the specified dimensions.
-* GUIDES-45800: Copying and pasting `<keywords>` inside `<topicmeta>` within a `<keydef>` or `<topicref>` results in the keywords being inserted inside unwanted foreign tags.
-* GUIDES-45409: When a map contains an external `topicref` pointing to a non-DITA resource (such as `.html`), its preview is not displayed in the Assets UI.
-* GUIDES-45254: When working with `.plt` and `.css` files in PDF templates, the **Generate IDs** option is available in the right-click context menu despite not being applicable to these file types.
-* GUIDES-45508: Applying a baseline to a map with many assets delays loading of the translation report for the selected language, sometimes leading to request timeout before the report renders.
-* GUIDES-45511: The tooltip for the **Version History** icon is missing in the left panel of the Review UI adjacent to the topic name.
-* GUIDES-44942: When adding questions to a quiz using the Insert from question bank option, short answer questions are not listed despite having a valid Question ID.
-
-For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
-
-### Known Issues {#known-issues-26773}
-
-None.
-
-### Deprecated Features and APIs {#deprecated-26773}
+### Deprecated Features and APIs {#deprecated-27830}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-26773}
+### Security Fixes {#security-27830}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 10 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 13 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-26773}
+### Embedded Technologies {#embedded-tech-27830}
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM Oak | 2.2.0 | [Oak 2.2.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/2.2.0/index.html)|
+|AEM Oak | 2.4.0 | [Oak 2.4.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/2.4.0/index.html)|
 |AEM SLING API | 2.27.6 |[Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL| 1.4.28-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
 |Apache HTTP Server| 2.4.67 | [Apache Httpd 2.4.67](https://apache.googlesource.com/httpd/+/refs/tags/2.4.67/CHANGES)|
 |Dispatcher|2.0.274||
-|AEM Core Components| 2.31.0|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
+|AEM Core Components| 2.32.6|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
 |Node.js|14 (default)|[Supported Node.js versions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions)|
 |Java 21|21.0.11|[JDK 21.0.11](https://www.oracle.com/java/technologies/javase/21-0-11-relnotes.html)|

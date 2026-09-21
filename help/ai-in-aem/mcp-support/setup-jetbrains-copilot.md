@@ -27,7 +27,7 @@ Follow these steps to connect GitHub Copilot in a JetBrains IDE (such as Intelli
    {
      "servers": {
        "aem": {
-         "url": "https://mcp.adobeaemcloud.com/adobe/mcp/content"
+         "url": "https://mcp.adobeaemcloud.com/adobe/mcp/aem"
        }
      }
    }

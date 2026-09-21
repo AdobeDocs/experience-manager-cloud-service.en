@@ -14,9 +14,6 @@ role: Admin, User, Developer
 ---
 # Picture clause support for HTML5 forms {#picture-clause-support-for-html-forms}
 
-<span class="preview"> The HTML5 Forms capability is offered as part of Early Access Program. To request access, send an email from your official (work) email ID to aem-forms-ea@adobe.com.
-</span>
-
 HTML5 forms supports XFA Picture clause for display value and formatted value for date, text, and numeric symbols. Following Picture clause Expressions are supported:
 
 * category(locale){picture-clause} | category(locale){picture-clause} | category(locale){picture-clause}

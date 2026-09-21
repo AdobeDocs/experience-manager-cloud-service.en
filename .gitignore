@@ -19,3 +19,4 @@ setup-agent.md
 .cursor/
 .vscode/
 .gitmodules
+.tokensave/

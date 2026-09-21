@@ -104,6 +104,7 @@ The rich text editor (RTE) of the Universal Editor allows the author to apply st
 * **Italic**
 * **Underline**
 * **Strikethrough**
+* **Inline code**
 * **Text Color**
   * Opens a color palette where you can select a color or specify a hex value
   * Only available in the modal editor, not in-context
@@ -136,6 +137,13 @@ The rich text editor (RTE) of the Universal Editor allows the author to apply st
   * Insert a special character into your text.
 * **Remove All Formatting**
   * Remove all formatting options from the selected text.
+* **Find and replace** to find occurrences of specified text in the RTE and optionally replace with different text
+  * **Find** field: String to search for
+  * **Replace** field: String to replace the **Find** string with
+  * **Match case**: Make search of **Find** string case-sensitive (default is case-insensitive)
+  * **Find** button: Find the next occurrence of the **Find** string
+  * **Replace** button: Replace the next occurrence of the **Find** string
+  * **Replace all**: Replace all occurrences of the **Find** string with the **Replace** string
 
 Depending on your back end, the options available by default may vary. The RTE can be configured to hide options or show additional options depending on authors' needs. Please see the document [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md) for more information.
 
@@ -402,7 +410,7 @@ The button is hidden for DAM paths (`/content/dam`) and when no unique AEM page 
 
 ### Locking and Unlocking Pages {#locking-pages}
 
-The **AEM Page Lock Extension** displays the current lock status of the page in the editor and allows you to [lock or unlock the page.](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)
+The **Unlocked** and **Locked by** icons display the current lock status of the page in the editor and allows you to [lock or unlock the page.](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)
 
 The **Unlocked** icon in the Universal Editor toolbar shows that the page currently in the editor is not locked.
 
@@ -410,17 +418,15 @@ The **Unlocked** icon in the Universal Editor toolbar shows that the page curren
 
 Tap or click the icon to lock the page.
 
-The **Locked** icon in the Universal Editor toolbar shows that the page currently in the editor is locked. Hover your mouse over the icon for a tooltip indicating the user who locked the page.
+The **Locked by** icon in the Universal Editor toolbar shows that the page currently in the editor is locked. Hover your mouse over the icon for a tooltip indicating the user who locked the page.
 
 ![Locked icon](assets/locked-icon.png)
 
-Tap or click the icon to unlock the page if you are the user who locked it.
-
-For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+If you are the user who locked the page, you can tap or click the icon to unlock it.
 
 >[!NOTE]
 >
->The **AEM Page Lock Extension** only works for pages, not Content Fragments.
+>The **AEM Page Lock** feature only works for pages, not Content Fragments.
 
 ### Workflows {#workflows}
 

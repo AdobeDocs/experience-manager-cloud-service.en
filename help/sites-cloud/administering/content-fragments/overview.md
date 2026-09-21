@@ -149,9 +149,6 @@ Variations are a significant feature of AEM's Content Fragments. They allow you 
   * Can be defined during fragment authoring; from the left panel.
   * Stored in the fragment, to help avoid scattering of content copies.
   * Variations can be [compared and synchronized](/help/sites-cloud/administering/content-fragments/authoring.md#compare-and-synchronize-rich-text) with **Main**.
-  <!--
-  * Can be [Summarized](/help/sites-cloud/administering/content-fragments/authoring.md#summarizing-text) to quickly truncate the text to a predefined length.
-  -->
 
 ## Content Fragments and Content Services {#content-fragments-and-content-services}
 
@@ -227,11 +224,19 @@ The Content Fragment assets are made up of the following parts (either directly 
 
 * **Fragment Metadata**
 
-  * Use the [Assets metadata schemas](/help/assets/metadata-schemas.md).
+  * Use the [Assets Metadata in Assets View](/help/assets/metadata-assets-view.md).
   * Tags can be created when you:
 
     * Create and author the fragment
-    * Or later, when you [view or edit the properties](/help/sites-cloud/administering/content-fragments/authoring.md#view-properties-tags) when in the fragment editor
+    * Or later, when you [view or edit the properties, metadata and tags](/help/sites-cloud/administering/content-fragments/authoring.md#view-and-edit-properties-metadata-and-tags) when in the fragment editor
+
+  >[!NOTE]
+  >
+  >To use your (older) Assets metadata forms with the Content Fragments console and the new Content Fragment editor you will need to [import your forms](/help/assets/import-metadata-form-from-admin-view-to-assets-view.md) from the Admin View to the [Assets View](/help/assets/assets-view-introduction.md), where you can also [manage your metadata forms](/help/assets/metadata-assets-view.md#metadata-forms). Once imported the two versions are not synchronized.
+
+  >[!NOTE]
+  >
+  >See also [Properties, Tags and Metadata](/help/sites-cloud/administering/content-fragments/properties-tags-and-metadata.md).
 
   >[!CAUTION]
   >
@@ -239,9 +244,9 @@ The Content Fragment assets are made up of the following parts (either directly 
 
   >[!CAUTION]
   >
-  >A Content Fragment Model can often define data fields named **Title** and **Description**. If these two fields exist, they are user-defined fields and can be updated in the content area of the editor.
+  >A Content Fragment Model can often define data fields named **Title** and **Description**. If these two fields exist, they are user-defined content fields and can be updated in the content area of the editor.
   >
-  >The Content Fragment, and its variations, also has metadata (property) fields called **Title** and **Description**. These two metadata fields are an integral part of any Content Fragment, and variation, and initially defined when the fragment is created. They can be updated in the properties/metadata area of the editor.
+  >The Content Fragment, and its variations, also have property fields called **Title** and **Description**. These two property fields are an integral part of any Content Fragment, and variation, and initially defined when the fragment is created. They can be updated in the properties area of the editor.
 
 * **[Main](#main-and-variations)**
 * **[Variations](#main-and-variations)**

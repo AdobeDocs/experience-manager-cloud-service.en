@@ -8,6 +8,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 
 Content Advisor integrates with Dynamic Media to enable users to browse, preview, and select Dynamic Media renditions for use in their applications and workflows. Users can select from available renditions, image presets, Smart Crops, and apply supported Dynamic Media modifiers to customize asset delivery. The following sections describe how to process the selected rendition information and generate Dynamic Media delivery URLs for use in your application.
 
+>[!NOTE]
+>
+> Content Advisor integration with Dynamic Media is available when you are connected to an `author` repository and not a `delivery` repository.
+
 ## Build Dynamic Media URLs using selectedMedia {#build-dynamic-media-urls-selectedmedia}
 
 When a user selects a Dynamic Media rendition from the Content Advisor Dynamic Media panel, the selected rendition information is returned in the `selectedMedia` object. The host application must use this information to generate the appropriate Dynamic Media delivery URL.
@@ -332,4 +336,22 @@ rotate=90&width=1200
 ```
 
 The generated string is appended to the final Dynamic Media URL and applies the selected transformations when the asset is delivered.
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 

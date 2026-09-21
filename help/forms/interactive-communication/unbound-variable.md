@@ -49,7 +49,7 @@ Because an Unbound Variable can hold any data type, the picture clause syntax yo
 
 ## 3. Properties
 
-The Unbound Variable component shares a common property set with other field components, with one key distinction: it has no external data binding options because, by definition, its value is unbound from any data source.
+The Unbound Variable component shares a common set of properties with other field components, with one key distinction: it supports external data binding options for any data source or an Interactive Communication fragment.
 
 3.1 Basic Field
 

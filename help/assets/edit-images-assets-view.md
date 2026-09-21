@@ -43,7 +43,7 @@ Resizing an image to a specific size is a popular use case. Assets View lets you
 1. Click **[!UICONTROL Apply]** to apply your changes.
    ![Image editing with Adobe Express](assets/adobe-express-resize-image.png)
 
-   Your edited image is available for download. You can either save the edited asset as a new version of the same asset or save it as a new asset.
+   You can either save the edited asset as a new version of the same asset or save it as a new asset.
    ![Save image with Adobe Express](assets/adobe-express-resize-save.png)
 
 #### Remove background {#remove-background-using-express}
@@ -54,7 +54,7 @@ You can remove background from an image by following the steps mentioned below:
 1. Click **[!UICONTROL Apply]** to apply your changes.
 ![Save image with Adobe Express](assets/adobe-express-remove-background.png)
 
-   Your edited image is available for download. You can either save the edited asset as a new version of the same asset or save it as a new asset.
+   You can either save the edited asset as a new version of the same asset or save it as a new asset.
 
 #### Crop image {#crop-image-using-express}
 
@@ -64,7 +64,7 @@ Transforming an image into a perfect size is simple using embedded [!DNL Adobe E
 2. Drag the handles on the corners of the image to create your desired crop.
 3. Click **[!UICONTROL Apply]**.
    ![Save image with Adobe Express](assets/adobe-express-crop-image.png)
-   The cropped image is available for download. You can either save the edited asset as a new version of the same asset or save it as a new asset.
+   You can either save the edited asset as a new version of the same asset or save it as a new asset.
 
 #### Convert JPEG to PNG {#convert-image-types-using-express}
 
@@ -106,10 +106,15 @@ To edit images using [!DNL Adobe Express] embedded editor, follow the steps belo
    1. Optional: Provide details such as Project or Campaign name, Keywords, Channels, Time frame, and Region. 
 1. Click **Save as version** or **Save as new asset** to save the asset(s). 
 
+>[!NOTE]
+>
+>Saving a PSD file as an Adobe Express document preserves the layers from the original PSD file.
+
+
 #### Limitations of editing images in the Express Editor {#limitations-of-editing-images-in-the-express-editor}
 
- * Supported file type: JPEG or PNG. 
- * Maximum file size supported: 40 MB. 
+ * Supported file type: JPEG, PSD, or PNG. 
+ * The asset size must be less than 80 MB for desktop devices and 40 MB for mobile devices. 
  * Supported width and height range: 65MP (For example, 8K x 8K or 16K x 4K).
  * Reload the page to see the latest saved new asset in the source folder.
 
@@ -124,9 +129,7 @@ To edit images using [!DNL Adobe Express] embedded editor, follow the steps belo
 
 #### Limitations {#limitations}
 
-* You can only modify images of `JPEG` and `PNG` format types.
-* The asset size must be less than 80 MB for desktop devices and 40 MB for mobile devices.
-* Supported width and height range is 65MP (For example, 8K x 8K or 16K x 4K).
+* Allow up to 8000 pixels per dimension for the canvas of the new Express document
 * You can save an image in `PDF`, `JPEG`, or `PNG` formats.
 
 <!--
@@ -199,3 +202,23 @@ TBD: Insert a video of the available social media options.
 >
 >* [Quick actions in Adobe Express](https://helpx.adobe.com/in/express/using/resize-image.html)
 >* [View version history of an asset](navigate-assets-view.md)
+
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

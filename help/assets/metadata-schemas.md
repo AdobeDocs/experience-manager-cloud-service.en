@@ -79,6 +79,17 @@ You can edit a newly added or existing metadata schema form. The metadata schema
 
 1. To configure a component, select it and modify its properties in the **[!UICONTROL Settings]** tab.
 
+
+### Permissions required to edit metadata schemas {#Permissions-required-to-edit-metadata-schemas}
+
+Creating or editing the custom metadata schemas, for example, as a non-admin DAM Librarian role requires more than write access to the schema node itself.
+
+* Recursive `jcr:read` on `/conf` and on `/conf/global/settings/dam/adminui-extension/metadataschema`.
+* `jcr:write` on `/conf/global/settings/dam/adminui-extension` and its `metadataschema` subnode.
+
+Granting write access only to the `metadataschema` node without the accompanying recursive read on `/conf` causes the schema editor to fail to display correctly for non administrators. The same underlying `/conf` read dependency also affects the asset search or browse for read-only users. If a group has full read access to `/content/dam`, but not to `/conf/global/settings/dam/adminui-extension/metadataschema`, the Assets UI cannot resolve the metadata schema needed to render results and throws a `NullPointerException`, blocking the search entirely.
+
+
 ### Components within the [!UICONTROL Build Form] tab {#components-within-the-build-form-tab}
 
 The **[!UICONTROL Build Form]** tab lists form items that you use in your schema form. The **[!UICONTROL Settings]** tab provides the attributes of each item that you select in the **[!UICONTROL Build Form]** tab. The following table lists the form items available in the **[!UICONTROL Build Form]** tab:
@@ -255,17 +266,57 @@ You can define mandatory fields at a folder level, which is enforced on assets t
    >
    >The metadata validation checks are resource intensive and may impact the performance of your system. Schedule the checks accordingly. If the server cannot cope up with the load, try disabling this job
 
+
+## Metadata schema configuration and properties {#metadata-schema-configuration-and-properties}
+
+### Adding and mapping a custom metadata field {#adding-and-mapping-a-custom-metadata-field}
+
+1. Open the Metadata Schema editor for the schema you want to extend (**[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**).
+2. Add a new field, for example, a text box and set its **[!UICONTROL Map to property]** value. The convention is `./jcr:content/metadata/<propertyName>`. Only the final segment after `/jcr:content/metadata/` needs to be specified or changed; you do not need to construct the full path yourself.
+3. Save the schema. The first time a schema is applied and saved against an asset, Adobe Experience Manager (AEM) automatically creates the mapped property on an asset's `jcr:content/metadata` node. There is no need to manually create the corresponding node in CRXDE Lite.
+4. To promote the schema change to another environment, either deploy it through the standard Cloud Manager pipeline or repeat the same schema and edit manually in each target environment; a UI-created schema field is not automatically propagated between environments outside of a deployment.
+
+A common use case is a text field mapped to a custom property, for example, `./jcr:content/metadata/cdnLink` to store an external CDN or URL reference alongside the asset.
+
+
+### Reserved namespaces {#reserved-namespaces}
+
+Do not add custom properties under AEM or JCR's reserved namespaces: `dam`, `cq`, `granite`, `sling`, `jcr`, `rep`, `oak`, `nt`. These are used internally by AEM and the underlying repository; custom fields added under them are filtered out or hidden by AEM's internal mechanisms and by the Asset HTTP APIs, so they appear to silently fail to save or display. Use a unique custom namespace instead, for example, `<yourorg>.cdnLink`.
+
+
+### Validating a mapping and troubleshooting when values do not persist {#Validating-a-mapping}
+
+If a metadata value entered through the UI does not appear to persist:
+
+* Confirm the property is not mapped under one of the reserved namespaces.
+* Confirm the schema is saved and applied to the correct folder or asset (schema assignment is per-folder through folder properties, not automatic).
+* For assets that existed before a metadata profile (bulk-apply configuration) was created, profiles only auto-apply their properties (for example, approval status) to the newly uploaded assets. Existing assets in the folder do not retroactively pick up the profile's values. Use the **[!UICONTROL Reprocess]** option to bulk-apply it to the existing assets, or update them manually.
+* Confirm the field is actually present under `jcr:content/metadata` on the asset node (for example, through CRXDE Lite or the Assets HTTP API) to distinguish a save failure from a display-only issue.
+
+### Multi-language and integration considerations {#Multi-language-and-integration-considerations}
+
+The out-of-the-box **[!UICONTROL Language]** metadata field is informational only by default, it does not drive delivery or routing logic to the downstream systems on its own. For assets that need to represent multiple languages, or that need to drive the channel or locale-based selection for downstream systems (for example, Adobe Commerce or Edge Delivery Services), add a custom multi-value metadata field rather than relying on the OOTB **[!UICONTROL Language]** field, and expose it as a search facet or filter to support reliable selection by the language and channel.
+
+### Deployment persistence {#deployment-persistence}
+
+Metadata schema fields created through the Metadata Schema Editor UI are stored in the repository, not in code, and are not affected by standard application code deployments unless the deployment package explicitly overwrites or removes that schema's repository path. A new build being deployed over a previous one does not remove a UI-created field on its own.
+
 **See also**
 
-* [Translate Assets](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [Assets supported file formats](file-format-support.md)
-* [Search assets](search-assets.md)
-* [Connected assets](use-assets-across-connected-assets-instances.md)
-* [Asset reports](asset-reports.md)
-* [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata.md)
-* [Search facets](search-facets.md)
-* [Manage collections](manage-collections.md)
-* [Bulk metadata import](metadata-import-export.md)
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
+

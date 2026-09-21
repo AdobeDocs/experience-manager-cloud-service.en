@@ -71,4 +71,4 @@ Adobe Analytics can be added as an extension in the Launch Property. Rules can b
 
 >[!NOTE]
 >
->Existing (legacy) frameworks still work, but cannot be configured in the Touch UI. It is advisable to rebuild the variable mapping configurations in Launch.
+>The [Adobe Analytics 1.4 API has reached end-of-life](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/). As a result, legacy frameworks that use user credentials no longer work. Migrate to the IMS-based configuration in the Touch UI and Adobe Launch.

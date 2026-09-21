@@ -41,7 +41,7 @@ The 3D Media WCM component and 3D preview on an asset's Details page is not comp
 
 ## Quick Start: 3D assets in Dynamic Media {#quick-start-three-d}
 
-The following step-by-step workflow description is designed to help you get up and running quickly with 3D assets in Dynamic Media. 
+The following step-by-step workflow description is designed to help you begin using 3D assets in Dynamic Media. 
 
 Before you work with 3D assets in Dynamic Media, make sure that your [!DNL Experience Manager] administrator has already enabled and configured Dynamic Media Cloud Services.
 
@@ -78,19 +78,19 @@ See [Configure Dynamic Media Cloud Services](/help/assets/dynamic-media/config-d
 
 This section describes how to view and interact with 3D assets two different ways: from within the asset details page and from within the 3D Media component in Sites.
 
-The interactive 3D viewer includes, among other things, a collection of interactive camera controls that let you orbit, zoom, and pan the 3D asset.
+The interactive 3D viewer includes a collection of interactive camera controls that let you orbit, zoom, and pan the 3D asset.
 
-The time it takes to open a 3D asset in the Asset Details page view depends on several factors. These factors include such things as the following:
+The time it takes to open a 3D asset in the Asset Details page view depends on several factors. These factors include the following:
 
 * Bandwidth to the server.
 * Latencies to the server
 * Complexity of the image.
 
-In addition, the capabilities of the client computer-such as a workstation, notebook, or mobile touch device-are also important to consider when you manipulate the camera interactively. A reasonably powerful system with good graphics capabilities can make the interactive 3D viewing experience smoother and more favorable.
+Also, consider the client computer's capabilities when you manipulate the camera interactively. A reasonably powerful system with good graphics capabilities can make the interactive 3D viewing experience more efficient and effective.
 
 >[!TIP]
 >
->You can open the Dimensional viewer preset in the Viewer Preset Editor to practice navigating a 3D asset without the need to first upload any 3D files. The Dimensional viewer preset has a built-in 3D asset for you to interact with.
+>To practice navigating a 3D asset without the need to upload any 3D files first, you can open the Dimensional viewer preset in the Viewer Preset Editor. The Dimensional viewer preset has a built-in 3D asset for you to interact with.
 >
 >See [Manage viewer presets](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -158,7 +158,7 @@ Dynamic Media includes a Dynamic Media 3D Media component that you can use in [!
 
 * [Add the 3D Media component to the page template](#adding-three-d-media-component-to-page-template)
 * [Add the 3D Media component to a web page](#adding-the-three-d-media-component-to-a-web-page)
-  * [Optional - Configuring the 3D Media component](#configuring-the-three-d-component)
+  * [Optional — Configuring the 3D Media component](#configuring-the-three-d-component)
 * [Assign a 3D asset to the 3D Media component](#assigning-a-three-d-asset-to-the-component)
 
 ## Add the 3D Media component to the page template {#adding-three-d-media-component-to-page-template}
@@ -181,14 +181,14 @@ Dynamic Media includes a Dynamic Media 3D Media component that you can use in [!
 
 If you are using [!DNL Experience Manager] as your web content management system, you can add 3D assets to your web pages by way of the 3D Media component.
 
-See also [Add Dynamic Media assets to pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+See also [Add Dynamic Media Assets to pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 1. Open [!DNL Experience Manager Sites] and select the web page to which you want to add the Dynamic Media 3D Media component.  
-1. To open the page into the page editor, select the **[!UICONTROL Edit]** (pencil) icon. Make sure that **[!UICONTROL Edit]** mode is selected near the upper right of page.
+1. To open the page into the page editor, select the **[!UICONTROL Edit]** (pencil) icon. Make sure that **[!UICONTROL Edit]** mode is selected near the upper right of the page.
 
    ![3d-media-component-add](/help/assets/dynamic-media/assets/3d-media-component-edita.png)
 
-1. On the toolbar, select the Side Panel icon to toggle or "turn on" the display of the panel.  
+1. On the toolbar, select the Side Panel icon to toggle or display the panel.  
 
 1. In the side panel, select the plus sign icon to open the **[!UICONTROL Components]** list.
 
@@ -232,7 +232,7 @@ See [Add the 3D Media component to a web page](#adding-the-three-d-media-compone
 
 ## Publish static Dynamic Media 3D assets {#publishing-three-d-assets}
 
-Dynamic Media accepts various 3D file formats that are supported as *static content* in Dynamic Media. Static content means that you can upload and published 3D assets, but there is no support for *dynamic* imaging or image refitting that is associated with the 3D asset. The reason is because Dynamic Media Imaging Server does not recognize 3D formats. As such, after you publish a 3D asset in Dynamic Media, you have an instant URL that you can copy. The URL for the 3D asset follows the usual Dynamic Media URL structure. However, you cannot edit any parameters in the asset's URL, unlike traditional image assets in Dynamic Media.
+Dynamic Media accepts various 3D file formats that are supported as *static content* in Dynamic Media. Static content means that you can upload and publish 3D assets, but there is no support for *dynamic* imaging or image refitting that is associated with the 3D asset. The reason is that Dynamic Media Imaging Server does not recognize 3D formats. As such, after you publish a 3D asset in Dynamic Media, you have an instant URL that you can copy. The URL for the 3D asset follows the usual Dynamic Media URL structure. However, you cannot edit any parameters in the asset's URL, unlike traditional image assets in Dynamic Media.
 
 See also [Obtain a URL for a static asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset).
 
@@ -240,7 +240,7 @@ In the **[!UICONTROL Card View]**, a small globe icon appears directly below an 
 
 If you are using [!DNL Experience Manager] as your WCM, use this publishing method to add the Dynamic Media 3D assets directly on your web page.
 
-See also [Publish Dynamic Media assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+See also [Publish Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 See also [Publish pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md).
 
@@ -273,6 +273,6 @@ Use the following two methods for publishing Dynamic Media 3D assets if you are 
 
   See [Link URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
 
-* **[!UICONTROL Embed]** - Use **[!UICONTROL Embed]** when you want to view a Dynamic Media 3D asset embedded on a web page using the Dimensional viewer. You copy the embed code to the clipboard so you can paste it in your web pages. Editing of the code is not permitted in the **[!UICONTROL Embed]** dialog box.
+* **[!UICONTROL Embed]** - Use **[!UICONTROL Embed]** when you want to view a Dynamic Media 3D asset embedded on a web page. You can use the Dimensional viewer for this. You copy the embed code to the clipboard so you can paste it in your web pages. Editing of the code is not permitted in the **[!UICONTROL Embed]** dialog box.
 
   See [Embed the Dynamic Media Video, Image viewer, or Dimensional viewer on a web page](/help/assets/dynamic-media/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).

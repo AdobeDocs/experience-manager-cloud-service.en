@@ -204,7 +204,7 @@ Once you have estimated the level of effort that is required to move to Cloud Se
 
 If you have not established Key Performance Indicators (KPIs) previously, it is recommended to establish KPIs for your AEM implementation to help your team focus on what matters the most.
 
-See [Developing KPIs](https://experienceleague.adobe.com/welcome/aem/part6.html) so you can learn how to choose the right KPIs for your business objectives.
+See [Assessing KPIs](/help/overview/assessing-kpis.md) so you can learn how to choose the right KPIs for your business objectives.
 
 ## What's Next {#what-is-next}
 

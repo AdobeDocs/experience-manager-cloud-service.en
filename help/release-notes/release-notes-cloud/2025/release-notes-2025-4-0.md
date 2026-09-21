@@ -86,6 +86,10 @@ Adaptive Forms allows you to use [HTML email templates](/help/forms/html-email-t
 
 ![HTML email templates](/help/forms/assets/html-email.png)
 
+#### AEM Forms Integration with Adobe Experience Platform (AEP)
+
+You can now connect AEM Forms with Adobe Experience Platform (AEP) to send form submission data directly to AEP datasets. This lets you enrich customer profiles, personalize form experiences, and trigger downstream workflows based on form submissions. For more information, see [AEM Forms Integration with Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md).
+
 ### Pre-release Features 
 
 * [Universal Editor for Adaptive Forms and Form Fragments](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): The Universal Editor now supports the creation of both Adaptive Forms and reusable Form Fragments. Authors can visually build forms, configure submit actions, and add reCAPTCHA validation, all in a simplified, WYSIWYG authoring environment. This capability accelerates form creation, enhances consistency, and improves protection against spam and automated abuse.
@@ -104,10 +108,6 @@ Adaptive Forms allows you to use [HTML email templates](/help/forms/html-email-t
 The AEM Forms Early Access Program program offers a unique opportunity to you to get exclusive access to cutting-edge innovations, and help shape their development.
 
 This release notes lists the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
-
-#### Adobe Experience Platform (AEP) Integration with Forms
-
-* [Integration of AEM Forms with Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md): The AEM Forms to Adobe Experience Platform Connector enables seamless integration between Adaptive Forms and Adobe Experience Platform. This feature allows form data to be mapped to XDM schemas and submitted directly to AEP in real time. It streamlines data capture for personalization and activation use cases across Adobe Experience Cloud solutions.
 
 ## CIF Add-on {#cloud-services-cif}
 

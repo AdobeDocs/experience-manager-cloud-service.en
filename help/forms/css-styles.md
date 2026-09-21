@@ -13,9 +13,6 @@ role: Admin, User, Developer
 ---
 # Creating CSS styles for HTML5 forms {#creating-css-styles-for-html-forms}
 
-<span class="preview"> The HTML5 Forms capability is offered as part of Early Access Program. To request access, send an email from your official (work) email ID to aem-forms-ea@adobe.com.
-</span>
-
 HTML5 rendition of a XFA-based form template consists of several HTML elements. These elements are arranged in an order. Every element has well-defined CSS classes. You can use these CSS class to select and change the appearance of an element.
 
 >[!NOTE]
