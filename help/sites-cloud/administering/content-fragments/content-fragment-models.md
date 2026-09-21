@@ -19,7 +19,7 @@ This page covers how to define your content fragment model, using the dedicated 
 
 >[!CAUTION]
 >
->If you will be querying against multiple referenced fragments, then it is not recommended that the various fragment models have field names with the same name, but different types.
+>If you will be querying against multiple referenced fragments, then it is not recommended that your various fragment models have field names with the same name, but different types.
 >
 >For further details see [AEM GraphQL API for use with Content Fragments - Limitations](/help/headless/graphql-api/content-fragments.md#limitations)
 
