@@ -66,10 +66,7 @@ Access the shared assets page through the link and do the following:
 Use the shared link to access the assets page, and then follow these steps:
 
 1. Enter the shared password to access the assets or collection. This provides an additional layer of security and helps prevent unauthorized access.
-
-   ![password protected](/help/assets/assets/password.png)
-
-2. Once password authentication is complete, the shared assets or collection page is displayed. You can browse the assets or collection and download them as needed.
+2. Once password authentication is complete, the shared assets or collection page is displayed. You can browse the shared assets or collection and download them as needed.
 
    ![browse](/help/assets/assets/browse.png)
 
