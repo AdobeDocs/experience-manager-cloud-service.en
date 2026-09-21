@@ -30,7 +30,6 @@ Follow these steps to share assets and collections with private or public users:
    You can view and download the newly added assets within the existing collection under **[!UICONTROL Shared]**.  
    ![new public link dialog box](/help/assets/assets/added-assets.png)
 4. To update the link details such as title, description, and password, or delete the link, click on the three dots and then select **[!UICONTROL Details]**. 
-
 ![customize](/help/assets/assets/customize.png)
 
 ## Share an asset from its preview page {#share-asset-from-preview-page}
