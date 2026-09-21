@@ -1,20 +1,21 @@
 ---
 title: AEM Forms Value Realization Dashboard
-description: Effortlessly monitor form submissions on your AEM Forms instances with an intuitive tracking dashboard.
+description: Learn how the AEM Forms Value Realization Dashboard, or Forms Usage Insights, tracks form submissions, document renditions, and form fragment reuse.
 feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
-hide: true
 exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
 ---
-# Understanding your value realization dashboard
+# Understand the AEM Forms Value Realization Dashboard
 
-![Fvalue realization dashboard](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
-
-
-<span class="preview"> This feature is available through the early access program. To request access, send an email from your official address to aem-forms-ea@adobe.com. <span>
+![AEM Forms Value Realization Dashboard overview banner](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 
 
-Welcome to your one-stop shop for understanding the value that your forms are bringing! This dashboard equips you with valuable insights to optimize your forms, streamline workflows, and ultimately achieve your goals faster.
+<span class="preview"> This feature is available through the early access program. To request access, send an email from your official address to aem-forms-ea@adobe.com. </span>
+
+
+The Value Realization Dashboard, also known as Forms Usage Insights, is a built-in analytics dashboard in AEM Forms. It shows how your forms are used over time by tracking form submissions, document renditions, forms created and published, and form fragment reuse. Use these insights to measure form performance, optimize form design, and demonstrate the return on investment of your forms.
+
+The Value Realization Dashboard is available directly in the AEM Forms user interface and is separate from the [Adobe Analytics integration for Adaptive Forms](/help/forms/integrate-aem-forms-with-adobe-analytics.md), which captures detailed metrics such as field-level activity and form abandonment.
 
 This article provides a conceptual overview of the Value Realization Dashboard and its benefits. For detailed usage instructions and metrics interpretation, see [using the value realization dashboard to analyze forms & documents usage trends](/help/forms/using-the-value-realization-dashboard.md).
 
@@ -65,6 +66,21 @@ By analyzing these trends, you can build better forms, save time on creation, an
 
 Remember, this dashboard is your ally! By using it effectively, you can transform your forms from simple data collection tools into strategic assets that drive success for you and your business.
 
+## Frequently Asked Questions
+
+**Q: What is the AEM Forms Value Realization Dashboard?**
+**Ans:** It is a built-in analytics dashboard in AEM Forms, also called Forms Usage Insights, that tracks how your forms and documents are used over time so you can measure form performance and return on investment.
+
+**Q: What metrics does the Value Realization Dashboard track?**
+**Ans:** It tracks form submissions, document renditions, forms created, forms published, the number of form fragments in use, and form fragment re-use.
+
+**Q: How do I access the Value Realization Dashboard?**
+**Ans:** Open **Forms** > **Forms and Documents**, then select **InProduct Dashboard**. For step-by-step guidance, see [using the value realization dashboard](/help/forms/using-the-value-realization-dashboard.md).
+
+**Q: Is the Value Realization Dashboard generally available?**
+**Ans:** The dashboard is currently available through the AEM Forms early access program. To request access, email aem-forms-ea@adobe.com from your official address.
+
 ## See also
 
 * [Using the dashboard to analyze Forms & Documents usage trends](/help/forms/using-the-value-realization-dashboard.md)
+* [Integrate AEM Forms with Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)

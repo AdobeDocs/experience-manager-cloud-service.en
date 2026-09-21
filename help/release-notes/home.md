@@ -9,7 +9,7 @@ role: Admin
 
 | Product | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2026.7.0 |
+| Version | 2026.8.0 |
 | Type | Continuous Updates |
 | Availability date | Continuous Update |
 

@@ -65,7 +65,9 @@ The **Timeline** side panel lets you view various events related to a selected i
 
 * Comments
 * [Annotations](/help/sites-cloud/authoring/page-editor/annotations.md)
-* [Activities](/help/sites-cloud/authoring/personalization/activities.md)
+* Activities including edits and publishing
+  * If the page has [on/off times](/help/sites-cloud/authoring/sites-console/page-properties.md#on-off-time) set and the current time is outside of the on/off time window, a Page Invalid activity may show.
+  * This indicates only that the page is outside of its validity window, not necessarily that the page is unpublished.
 * [Launches](/help/sites-cloud/authoring/launches/overview.md)
 * [Versions](/help/sites-cloud/authoring/sites-console/page-versions.md)
 * [Workflows](/help/sites-cloud/authoring/workflows/overview.md)

@@ -180,7 +180,7 @@ When you download a collection, the entire hierarchy of assets within the collec
 
 ## Edit metadata properties of multiple collections {#editing-metadata-properties-of-multiple-collections}
 
-Adobe Enterprise Manager Assets lets you edit the metadata of many collections in bulk. Use the [!UICONTROL Properties] page to perform metadata changes on multiple collections, for example, change metadata properties to a common value or add or modify tags.
+Adobe Experience Manager Assets lets you edit the metadata of many collections in bulk. Use the [!UICONTROL Properties] page to perform metadata changes on multiple collections, for example, change metadata properties to a common value or add or modify tags.
 
 To customize the metadata [!UICONTROL Properties] page, including adding, modifying, deleting metadata properties, use the Schema editor.
 
