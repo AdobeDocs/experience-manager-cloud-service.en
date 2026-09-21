@@ -11,9 +11,9 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 
 For AEM Cloud Service implementations, canary deployments in Cloud Manager let you validate new code on the live production infrastructure's publish tier before you route real user traffic to it. You deploy the new version alongside the current stable version and reach it through a dedicated request header. After you confirm that the new version works successfully, you can either promote it to all traffic (this happens automatically after a 12-hour window) or roll it back.
 
-Dev and stage environments remain the primary places to test code releases; canary deployments serve as an additional opportunity to sanity check that a release functions as you expect. For example, it could be useful if AEM production integrates with an external service's production endpoint, which could not be explicitly validated in lower AEM environments.
+Dev and stage environments remain the primary places to test code releases; canary deployments serve as an additional opportunity to verify that a release functions as you expect. For example, it is useful if AEM production integrates with an external service's production endpoint, which is not explicitly validated in lower AEM environments.
 
-Canary deployments are intended for internal validation, not gradual traffic shifting real user traffic from the old release to the new one — since only requests with an explicit header reach the canary instances, real user traffic never routes there automatically.
+Canary deployments are for internal validation, not for shifting real user traffic from the old release to the new one; real user traffic never routes to canary instances automatically.
 
 >[!IMPORTANT]
 >
