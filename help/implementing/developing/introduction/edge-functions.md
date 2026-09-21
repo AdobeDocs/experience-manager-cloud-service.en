@@ -415,18 +415,26 @@ data:
       index: "AEMaaCS"
 ```
 
-Use the logger in your function code to write structured log entries:
+Use the logger in your function code to write structured log entries. Splunk's HTTP Event Collector (HEC) requires each entry to be wrapped in a JSON envelope with an `event` field, so send `{ event: <record> }` rather than the bare record:
 
 ```js
 import { Logger } from "fastly:logger";
 
 const logger = new Logger("customerSplunk");
 logger.log(JSON.stringify({
-  method: event.request.method,
-  url: event.request.url
+  event: {
+    method: event.request.method,
+    url: event.request.url
+  },
+  sourcetype: "aem-edge-function" // optional: lets you filter Edge Function logs in Splunk
 }));
 ```
- 
+
+>[!IMPORTANT]
+>
+>On AEM Edge Functions, whatever you pass to `Logger.log()` is sent to the destination verbatim. Splunk's HEC endpoint rejects any payload that is not wrapped in an `event` field (returning an HTTP 400 error), so a bare `JSON.stringify(record)` is silently dropped even though the deployment reports success. This wrapping is specific to Splunk; a generic HTTPS destination accepts any payload shape.
+>
+
 >[!NOTE]
 >
 >CDN logs — which include AEM Edge Function log entries — can be downloaded from Cloud Manager for Java-stack environments, but not for Edge Delivery sites.
