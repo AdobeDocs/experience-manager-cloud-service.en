@@ -24,7 +24,6 @@ The 2026.10.0 feature activation will provide the full feature set for this main
 * GRANITE-67893: Added support for custom URI schemes in HTML sanitization via the ALLOWED_URI_SCHEMES configuration.
 * GRANITE-69821: Added last-activity timestamp tracking on user profile nodes.
 * GRANITE-71327: Added the ability to inspect configured preprocessors.
-* GRANITE-72425: Reduced the Elasticsearch permissions required for index statistics, so cluster-level monitoring access is no longer needed.
 * GRANITE-72442: Added support for Bouncy Castle-based JSafe-compatible keystores.
 * SKYOPS-124458: Increased the AEM Developer Console IMS integration limit to 40 technical accounts.
 * SKYOPS-137568: Added support for running the AEM Quickstart on Java 25.
