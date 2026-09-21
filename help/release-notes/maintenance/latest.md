@@ -18,7 +18,7 @@ The 2026.10.0 feature activation will provide the full feature set for this main
 
 ### Enhancements {#enhancements-28187}
 
-* CQ-4361811: Removed the deprecated 'commons-lang' dependency from 'cq-commons' (in favor of 'commons-lang3').
+* CQ-4361811: Removed the deprecated `commons-lang` dependency from `cq-commons` (in favor of `commons-lang3`).
 * CQ-4365034: Migrated to Adobe Analytics API 2.0 ahead of the Analytics 1.4 API end-of-life (August 31, 2026).
 * GRANITE-65723: Added session prolongation support for JWT-based authentication on page requests.
 * GRANITE-67893: Added support for custom URI schemes in HTML sanitization via the ALLOWED_URI_SCHEMES configuration.
