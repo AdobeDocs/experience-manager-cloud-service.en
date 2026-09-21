@@ -1,21 +1,21 @@
 ---
-title: Share Assets in [!DNL the Content Hub]
-description: Share Assets in [!DNL the Content Hub]
+title: Share Assets and Collections in [!DNL the Content Hub]
+description: Share Assets and Collections in [!DNL the Content Hub]
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
 ---
-# Share assets in Content Hub {#search-assets-as-a-link}
+# Share assets and collections in Content Hub {#search-assets-collections-as-a-link}
 
-Create a link to selected assets to share them with others easily. As an authorized [!DNL Content Hub] user, select one or more assets available in your [!DNL Content Hub] environment, generate a link, and send it to other private or public users.
+Create a link to selected assets and collections to share them with others easily. As an authorized [!DNL Content Hub] user, select one or more assets and collections available in your [!DNL Content Hub] environment, generate a link, and send it to other private or public users.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
 
 ## Prerequisites {#prerequisites}
 
-[Content Hub users](deploy-content-hub.md#onboard-content-hub-users) can create a link to selected assets and share it with other users. 
+[Content Hub users](deploy-content-hub.md#onboard-content-hub-users) can create a link to selected assets and collections and share it with other users. 
 
-## Share Assets {#share-assets}
+## Share Assets and Collections {#share-assets-and-collections}
 
 Public link sharing enables you to securely share multiple assets and collections through a single public link. You can update shared content without regenerating links, protect access with passwords and expiration dates, revoke access when needed, un-share publicly shared links anytime, and provide recipients with a branded landing experience. This streamlines external content distribution while improving security, governance, and brand consistency.
 
@@ -23,43 +23,41 @@ Follow these steps to share assets and collections with private or public users:
 
 1. Navigate to your Content Hub homepage, select the asset or collection, and click **[!UICONTROL Share]** > **[!UICONTROL Share with a link]** and select the **[!UICONTROL New link]** option. The process for sharing assets and collections is identical.
 ![share in public link](/help/assets/assets/public-link.png)
-2. The public link creation dialog box appears. Add a title and description to provide context and intended use of the asset or collection. For added security, you can set an expiration date to automatically revoke access after a specified period. To create a password to restrict access to authorized users, select **[!UICONTROL Anyone with the link]** under **[!UICONTROL Who has access]** and toggle the **[!UICONTROL Require password protection]** option. Click **[!UICONTROL Create link]**. 
+2. The public link creation dialog box appears. Add a title and description to provide context and intended use of the asset or collection. For added security, you can set an expiration date to automatically revoke access after a specified period. If you want to create a password to restrict access to authorized users, select **[!UICONTROL Anyone with the link]** under **[!UICONTROL Who has access]** and toggle the **[!UICONTROL Require password protection]** option. Click **[!UICONTROL Create link]** to create the shared link. 
 [new public link dialog box](/help/assets/assets/new-public-link.png)
-3. To add additional assets to the shared collection, go to **[!UICONTROL All assets]** in the Content Hub homepage and select the assets you want to add. Click on ![share](/help/assets/assets/share.svg) and then select **[!UICONTROL Add to link]**. From the dialog box, search for the link you created, click the add button and then click on **[!UICONTROL Save]**. 
+
+If you want to update the link details such as title, description, and password, or delete the link, click on the three dots and then select **[!UICONTROL Details]**. 
+![customize](/help/assets/assets/customize.png)
+
+### Add assets in an existing collection {#add-assets-in-an-existing-collection}
+
+To add additional assets to the shared collection, go to **[!UICONTROL All assets]** in the Content Hub homepage and select the assets you want to add. Click on ![share](/help/assets/assets/share.svg) and then select **[!UICONTROL Add to link]**. From the dialog box, search for the link you created, click the add button and then click on **[!UICONTROL Save]**. 
 ![new public link dialog box](/help/assets/assets/add-assets.png)
    You can view and download the newly added assets within the existing collection under **[!UICONTROL Shared]**.  
    ![new public link dialog box](/help/assets/assets/added-assets.png)
-4. To update the link details such as title, description, and password, or delete the link, click on the three dots and then select **[!UICONTROL Details]**. 
-![customize](/help/assets/assets/customize.png)
 
-## Share an asset from its preview page {#share-asset-from-preview-page}
 
-Execute the following steps to share an asset while previewing it:
+## Share an asset or collection from its preview page {#share-asset-or-collection-from-preview-page}
 
-1. Navigate to the [!DNL Content Hub] homepage and click the asset thumbnail to preview the asset and display the menu options on the right pane of the dialog box.
+Execute the following steps to share an asset or collection while previewing it:
+
+1. Navigate to the [!DNL Content Hub] homepage and click the asset thumbnail to preview the asset or collection and display the menu options on the right pane of the dialog box.
 2. Select ![share](/help/assets/assets/share.svg) to display the **[!UICONTROL Share]** panel.
 ![share asset while previewing it](/help/assets/assets/share-link-asset-preview.png)
-3. Follow Steps 3 to 5 in [Share assets](#share-assets) section to generate and share the asset link (Private or public) from this **[!UICONTROL Share]** panel. 
+3. Follow Steps 3 to 5 in [Share assets](#share-assets) section to generate and share the asset or collection link (Private or public) from this **[!UICONTROL Share]** panel. 
 
-## Access the shared assets
+## Access the shared assets and collections
 
-Access the shared assets page through the link and do the following:
+Access the shared assets and collections page through the link and do the following:
 
-* Select one or more assets and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** to select the  **[!UICONTROL Original]**,  **[!UICONTROL Static Renditions]** or **[!UICONTROL Smart Crop]** from the available download options.
+* Enter the shared password if you have set to access the assets or collection. This provides an additional layer of security and helps prevent unauthorized access.
+* Once password authentication is complete, the shared assets or collection page is displayed. You can browse the shared assets or collection and download them as needed.
+* Select one or more assets or collections and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** to select the  **[!UICONTROL Original]**,  **[!UICONTROL Static]** or both from the available download options.
 ![](/help/assets/assets/download-shared-assets.png)
-* Click the asset thumbnail to see the asset's metadata. 
-* On the shared assets page ([accessed through a private link](#share-assets)), click an asset thumbnail and select ![download](/help/assets/assets/download-icon.svg) to select and view the available dynamic renditions of the asset on the **[!UICONTROL Download]** panel before selecting and downloading them.
+* Click the asset or collection thumbnail to see the asset's or collection's metadata. 
+* On the shared assets or collections page ([accessed through a private link](#share-assets)), click an asset or collection thumbnail and select ![download](/help/assets/assets/download-icon.svg) to select and view the available dynamic renditions of the asset or collection on the **[!UICONTROL Download]** panel before selecting and downloading them.
 ![](/help/assets/assets/download-renditions-shared-assets-page.png)
 
-
-## Shared assets view {#shared-assets-view}
-
-Use the shared link to access the assets page, and then follow these steps:
-
-1. Enter the shared password to access the assets or collection. This provides an additional layer of security and helps prevent unauthorized access.
-2. Once password authentication is complete, the shared assets or collection page is displayed. You can browse the shared assets or collection and download them as needed.
-
-   ![browse](/help/assets/assets/browse.png)
 
 ## Frequently asked questions {#faqs-share-assets-content-hub}
 
