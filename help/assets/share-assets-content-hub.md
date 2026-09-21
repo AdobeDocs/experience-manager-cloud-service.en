@@ -21,13 +21,22 @@ Public link sharing enables you to securely share multiple assets and collection
 
 Follow these steps to share assets and collections with private or public users:
 
-1. Navigate to your Content Hub homepage, select the asset or collection, and click **[!UICONTROL Share]** > **[!UICONTROL Share with a link]** and select the **[!UICONTROL New link]** option. The process for sharing assets and collections is identical.
+1. Navigate to your Content Hub homepage, select one or more assets and collections, and click ![share](/help/assets/assets/share.svg) **[!UICONTROL Share]** > **[!UICONTROL Share with a link]** and select the **[!UICONTROL New link]** option.
 ![share in public link](/help/assets/assets/public-link.png)
-2. The public link creation dialog box appears. Add a title and description to provide context and intended use of the asset or collection. For added security, you can set an expiration date to automatically revoke access after a specified period. If you want to create a password to restrict access to authorized users, select **[!UICONTROL Anyone with the link]** under **[!UICONTROL Who has access]** and toggle the **[!UICONTROL Require password protection]** option. Click **[!UICONTROL Create link]** to create the shared link. 
+2. The public link creation dialog box appears. Specify a title and an optional description that defines the set of selected assets and collections. 
+3. Select **[!UICONTROL Period of expiration]**. 
+4. Under **[!UICONTROL Who can access]** drop down, select the access options and click **[!UICONTROL Get Link]** to generate a link to share with the selected users. Private users need to sign in to their Content Hub environment to access the shared assets page. Whereas, public users, as guests, can access the shared assets page without signing in to Content Hub.
+4. If you want to create a password to restrict access to private users, select **[!UICONTROL Anyone with the link]** under **[!UICONTROL Who has access]** and toggle the **[!UICONTROL Require password protection]** option. 
+5. Click **[!UICONTROL Create link]** to create the shared link. 
 [new public link dialog box](/help/assets/assets/new-public-link.png)
 
-If you want to update the link details such as title, description, and password, or delete the link, click on the three dots and then select **[!UICONTROL Details]**. 
+If you want to update the link details such as title, description, and password, or delete the link, click on the three dots and select **[!UICONTROL Details]**. 
+
 ![customize](/help/assets/assets/customize.png)
+
+>[!NOTE]
+   > 
+   > [Enable public link sharing from the configuration page](/help/assets/configure-content-hub-ui-options.md#enable-public-link-sharing) to display **[!UICONTROL Public Link]** toggle on the **[!UICONTROL Share assets]** dialog box.
 
 ### Add assets in an existing collection {#add-assets-in-an-existing-collection}
 
@@ -50,7 +59,7 @@ Execute the following steps to share an asset or collection while previewing it:
 
 Access the shared assets and collections page through the link and do the following:
 
-* Enter the shared password if you have set to access the assets or collection. This provides an additional layer of security and helps prevent unauthorized access.
+* Enter the password (if shared) to access the assets or collection. This provides an additional layer of security and helps prevent unauthorized access.
 * Once password authentication is complete, the shared assets or collection page is displayed. You can browse the shared assets or collection and download them as needed.
 * Select one or more assets or collections and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** to select the  **[!UICONTROL Original]**,  **[!UICONTROL Static]** or both from the available download options.
 ![](/help/assets/assets/download-shared-assets.png)
