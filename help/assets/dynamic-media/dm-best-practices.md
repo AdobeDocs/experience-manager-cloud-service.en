@@ -37,32 +37,32 @@ Organizations face an explosion of channels and devices for engaging with users.
 Some of the key tenets of Dynamic Media include the following:
 
 * **Single file approach:** With Dynamic Media, you store one primary source file, and all size variations and visual effects are dynamically created and optimized at the time of delivery. This approach saves storage costs and eliminates workflow complexity.
-* **Truly global:** Smart Imaging, applied during content delivery, significantly reduces image size and page weight without compromising visual quality. It's optimized for network bandwidth and device pixel ratios.
-* **AI powered:** Smart Crop, an AI-driven feature, automates image and video point-of-interest cropping. It eliminates manual effort and scales efficiently for enterprise use.
-* **Easy video:** Upload primary source videos into Dynamic Media and stream them adaptively across multiple languages with descriptive audio.
+* **Global:** Smart Imaging, applied during content delivery, reduces image size and page weight without compromising visual quality. It is optimized for network bandwidth and device pixel ratios.
+* **AI-powered:** Smart Crop, an AI-powered feature, automates image and video subject cropping. It eliminates manual effort and scales efficiently for enterprise use.
+* **Video support:** Upload primary source videos into Dynamic Media and stream them adaptively across multiple languages with descriptive audio.
 * **Experience viewer library:** Customize and brand experience viewers for images and videos. These viewers seamlessly integrate into your digital experiences.
 * **Emerging format support:** Dynamic Media enables the delivery of 3D and panoramic experiences.
 
-As you explore the [Dynamic Media Journey](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1), reviewing the consolidated list of best practices below can help you make the most of its capabilities. Adapt these Dynamic Media best practices to your specific context and project requirements so you can optimize your experiences across channels and devices. 
+As you explore the [Dynamic Media Journey](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1), reviewing the consolidated list of best practices below can help you use its capabilities. Adapt these Dynamic Media best practices to your specific context and project requirements so you can optimize your experiences across channels and devices. 
 
 <!-- In Dynamic Media on AEM, there are sets of methods, techniques, and guidelines that can help you maximize the potential of your rich media content. These best practices can lead to optimal results and increase efficiency in your use of Dynamic Media. They represent the most efficient and effective courses of action in a particular situation. They also unlock high value for your audience and deliver high-quality, engaging content. -->
 
 >[!IMPORTANT]
 >
->The Dynamic Media best practices in this article may evolve over time as new technologies in Dynamic Media emerge. The information below is current for the latest version of Dynamic Media.
+>The Dynamic Media best practices in this article can evolve over time as new technologies in Dynamic Media emerge. The information below is current for the latest version of Dynamic Media.
 
 
 ## Ingest assets into Dynamic Media
 
 **Business case:** *Efficiently manage large volumes of assets and ensure that only relevant, approved content is delivered to end users.*
 
-Streamline your management of large numbers of assets efficiently. Ensure that only the appropriate, authorized content reaches your end-users by using Dynamic Media's **Selective Sync** and **Selective Publish** features.
+Streamline your management of large numbers of assets efficiently. Ensure that only the appropriate, authorized content reaches your users by using Dynamic Media's **Selective Sync** and **Selective Publish** features.
 
 * **Selective sync:**
-A proactive feature that lets you choose which assets to sync with Dynamic Media. For example, you might decide to sync only those folders containing assets that have received final approval. This workflow helps you maintain control over which assets are being prepared for delivery to your customers.
+A proactive feature that lets you choose which assets to sync with Dynamic Media. For example, sync only those folders containing assets that have received final approval. This workflow helps you maintain control over which assets are being prepared for delivery to your customers.
 
 * **Selective publish:**
-After syncing your assets, Selective Publish gives you control over which assets are visible to your customers. This ability means you can govern which approved assets are actually delivered through your channels, ensuring that your customers see only the best and most relevant content.
+After syncing your assets, Selective Publish gives you control over which assets are visible to your customers. This ability lets you govern which approved assets are delivered through your channels, ensuring that your audience sees only the best and most relevant content.
 
 These two best practices help you achieve better control, governance, and productivity over your rich-media content. 
 
@@ -71,14 +71,14 @@ Want to learn more? Go to [Configure Selective Publish at the folder level in Dy
 
 ## Dynamic Media Viewers
 
-Dynamic Media Viewer best practices are essential guidelines designed to optimize the performance, functionality, and user experience of Dynamic Media assets on AEM. These practices ensure that assets are properly synchronized, published, and configured to use the full capabilities of Dynamic Media. 
+Dynamic Media Viewer best practices are essential guidelines designed to optimize the performance, functionality, and user experience of Dynamic Media Assets on AEM. These practices ensure that assets are properly synchronized, published, and configured to use the full capabilities of Dynamic Media. 
 
 By following these best practices, you can achieve seamless integration, efficient asset management, and enhanced viewer interactions. Synchronizing assets, using smart cropping, and adhering to JavaScript file inclusion guidelines are all important practices. These recommendations help maintain the integrity and reliability of media delivery across various platforms and devices.
 
 * **Synchronize Viewer Assets:**
 Ensure that all viewer assets are synchronized with Dynamic Media before using the player. 
 
-  * Access the sample manager page at `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`. This page lets you resynchronize a viewer's assets, including out-of-the-box icons, CSS files, and presets.
+  * Access the sample manager page at `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`. This page lets you resynchronize a viewer's assets, including standard icons, CSS files, and presets.
   * If you encounter any viewer issues, go to the [Troubleshoot Dynamic Media Viewers](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) article. 
 
 * **Publish Assets:**
@@ -88,7 +88,7 @@ For autoplay functionality in videos, use muted video settings because browsers 
 * **Smart Cropping:**
 Use the Image v3 component for smart cropping to enhance image asset presentation.
 * **JavaScript File Inclusion:**
-Only include the primary viewer JavaScript file on your page. Avoid referencing additional JavaScript files that the viewer's runtime logic may download. Specifically, do not directly link to the HTML5 SDK `Utils.js` library from the `/s7viewers` context path (known as consolidated SDK include). The viewer's logic manages the location of `Utils.js` or similar runtime viewer libraries, which can change between releases. Adobe does not retain older versions of secondary viewer includes on the server, so directly referencing them can break viewer functionality in future updates.
+Only include the primary viewer JavaScript file on your page. Avoid referencing additional JavaScript files that the viewer's runtime logic downloads. Specifically, do not directly link to the HTML5 SDK `Utils.js` library from the `/s7viewers` context path (known as consolidated SDK include). The viewer's logic manages the location of `Utils.js` or similar runtime viewer libraries, which can change between releases. Adobe does not retain older versions of secondary viewer includes on the server, so directly referencing them can break viewer functionality in future updates.
 * **Embedding Guidelines:**
 Use the documentation for embedding guidelines that are specific to each viewer. 
 Want to learn more? Go to [Viewers for AEM Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
@@ -100,7 +100,7 @@ Review the [Viewer SDK Tutorial](https://experienceleague.adobe.com/en/docs/dyna
 
 ### Organize your assets
 
-**Business case:** *Efficiently organize assets to streamline workflows.*
+**Business case:** *To streamline workflows, efficiently organize assets.*
 
 For efficient asset organization that streamlines workflows, use one or more of the following best practices: 
 
@@ -108,7 +108,7 @@ For efficient asset organization that streamlines workflows, use one or more of 
 Organizing assets effectively involves categorizing them into folders, similar to file organization on a computer. Proper naming, structuring subfolders, and file management within these folders are crucial for efficient asset processing. Implementing systematic naming conventions and metadata practices maximizes the utility of your digital asset repository.
 Want to learn more? Go to [Organize assets in folders](/help/assets/organize-assets.md#organize-using-folders).
 * **Organize assets using tags:**
-Tagging assets enhances searchability, collection creation, and search ranking. Adobe AI employs a self-learning algorithm for precise tagging, enabling quick asset retrieval. Adobe AI also recognizes and assigns relevant tags&ndash;including custom ones&ndash;to assets, simplifying asset management with automatic, descriptive tagging.
+Tagging assets enhances searchability, collection creation, and search ranking. Adobe AI assigns relevant tags&ndash;including custom ones&ndash;to assets, simplifying asset management with automatic, descriptive tagging.
 Want to learn more? Go to [Organize assets using tags](/help/assets/organize-assets.md#use-tags-to-organize-assets).
 * **Organize assets as collections:**
 Dynamic Media along with Experience Manager Assets allows for the efficient creation, editing, and sharing of asset collections among users. You can establish various collection types, including static lists and dynamic, search-based compilations. These collection types can be shared across diverse locations with customizable access and editing rights.
@@ -123,7 +123,7 @@ Want to learn more? Go to [Organize assets using profiles](/help/assets/organize
 
 **Business case:** *Obtain good quality images from Dynamic Media.*
 
-Enhancing image quality requires careful consideration of various factors. It can be a time-intensive process. However, there are some tried-and-true practices that can help you achieve desirable results. Some of those best practices include how to obtain optimal image sizing, image sharpening, and the best image formats to use.
+Enhancing image quality requires careful consideration of various factors. It can be a time-intensive process. However, there are some proven practices that can help you achieve desirable results. Some of those best practices include how to obtain optimal image sizing, image sharpening, and the best image formats to use.
 
 Want to learn more? Go to [Best practices for optimizing the quality of your images](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md).
 
@@ -139,7 +139,7 @@ Want to try it? Launch [Dynamic Media Snapshot](https://snapshot.scene7.com/)
 
 **Business case:** *Efficiently standardize the style and transformation applied to my image assets.*
 
-Use Image Presets regularly in Dynamic Media so you can consistently and dynamically adjust image sizes, formats, and properties. Think of an Image Preset as a macro: it's a named set of commands for sizing and formatting. For example, if your site needs product images in various sizes and formats, with specific compression for desktop and mobile, Image Presets automate this process efficiently.
+Use Image Presets regularly in Dynamic Media so you can consistently and dynamically adjust image sizes, formats, and properties. An Image Preset is a named set of commands for sizing and formatting. For example, Image Presets automate product image sizing and formatting for desktop and mobile.
 
 Want to try it? Go to [Fundamentals of creating image presets to render assets](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-e)
 
@@ -149,7 +149,7 @@ Want to try it? Go to [Fundamentals of creating image presets to render assets](
 
 Smart Crop is a feature in Dynamic Media that uses Adobe AI, Adobe's AI and machine learning framework, to automate the cropping of images and videos. It intelligently detects and focuses on the main subject or point of interest in an image or video. This intelligence ensures that the focal point is maintained across various screen sizes on desktop computers and mobile devices.
 
-A best practice is to create an Image Profile with Smart Crop. In the profile, you can define various screen sizes and let Adobe AI do the rest, ensuring that your images and videos are always optimized for the viewer's device.
+A best practice is to create an Image Profile with Smart Crop. In the profile, you can define various screen sizes and let Adobe AI perform the remaining tasks, ensuring that your images and videos are always optimized for the viewer's device.
 
 Want to learn more? Watch [Using Smart Crop with AEM Assets Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minutes, 35 seconds) and [Using Dynamic Media Smart Crop for Video](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) (6 minutes, 22 seconds).
 
@@ -163,14 +163,14 @@ Use the following recommendations regularly to ensure that your images contribut
 Use descriptive file names that reflect the image content. For example,
 
   * use `myCompany-Silver-Wrist-Watch`
-  * *avoid* `myCompany_Silver_Wrist_Watch` or `myCompanySilverWristWatch`
+  * avoid using `myCompany_Silver_Wrist_Watch` or `myCompanySilverWristWatch`
 
-  Doing so helps search engines understand the image context and improves SEO. Google prefers hyphens over underscores or spaces in a file name. Also, avoid concatenating words in a file name.
+  Using descriptive file names helps search engines understand the image context and improves SEO. Google prefers hyphens over underscores or spaces in a file name. Also, avoid concatenating words in a file name.
 * **Custom domain:** 
 Implement a custom domain that includes your company or brand name to reinforce brand recognition and trust. For example,
 
   * use `http://images.mycompany.com/is/image/companyname/`
-  * *avoid* `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
+  * avoid using `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
 
 * **SEO-friendly folder structure:**
 Organize your images in a folder structure that includes your company name or brand for better indexing, like `http://images.mycompany.com/is/image/companyname/`.
@@ -178,7 +178,7 @@ Organize your images in a folder structure that includes your company name or br
 Learn how you can conditionally transform URLs based on various factors, enhancing SEO and user experience.
 Want to learn more? Go to [Use rule sets to transform URLs](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md).
 * **Smart Imaging and Smart Crop:**
-Use Smart Imaging and Smart Crop features in Dynamic Media to serve optimized and responsive images. Doing so not only improves page load times but also contributes positively to SEO rankings.
+Use Smart Imaging and Smart Crop features in Dynamic Media to serve optimized and responsive images. Using these features not only improves page load times but also contributes positively to SEO rankings.
 Want to learn more? Go to [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md), or watch [Using Smart Crop with AEM Assets Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minutes, 35 seconds).
 
 Remember, these best practices align well with Google's image SEO best practices. Such practices emphasize the importance of providing context and clarity to search engines through proper naming conventions, structured data, and optimized image delivery. 
@@ -221,7 +221,7 @@ If you are looking to superimpose a logo or icon on an existing image, Dynamic M
 | **Upload and publish the logo or icon image** | Next, upload and publish the image that you want to superimpose over the base image. This image should be a transparent PNG with the logo or icon you want to overlay.<br>Here is the transparent PNG image of a star object with transparency effects that is going to be superimposed:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
 | **Apply the Dynamic Media URL** | Now, create a Dynamic Media URL that combines the base image and the logo or icon image. You can use URL commands to achieve this effect.<br>The URL structure looks something like this:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png)<br>where the asset<ul><li> `hotspotRetailBaseImage` is the base image.</li><li> `starxp` is the logo/icon image.</li><li> `layer=1` specifies that the logo or icon should be layered over the base image.</li><li> `scale=1.25` adjusts the size of the logo/icon.</li><li> `posN=0.33,-.25` determines the position of the logo/icon relative to the base image.</li><li> `fmt=png` ensures that the output is in PNG format.</li></ul> |
 
-What to learn more? Go to [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) for more details on the `src` command and other Dynamic Media URL commands.
+Want to learn more? See [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) for more details on the `src` command and other Dynamic Media URL commands.
 
 
 #### Overlaying promotional text
@@ -244,7 +244,7 @@ Digital images consist of tiny dots called pixels. When an image is created, it 
 * **Aspect ratio:**
 Maintaining the aspect ratio (the relationship between width and height) is crucial to prevent distortion. Whether you're making an image larger (upscaling) or smaller (downscaling), preserving the aspect ratio ensures visual consistency.
 * **Quality considerations:**
-Resizing can impact image quality. Avoid drastic upscaling, as it may lead to pixelation. Instead, consider reproducing the image at a larger size and resolution. For smaller images, use the appropriate tools to maintain resolution.
+Resizing can impact image quality. Avoid drastic upscaling, as it leads to pixelation. Instead, consider reproducing the image at a larger size and resolution. For smaller images, use the appropriate tools to maintain resolution.
 
 ##### Cropping versus resizing
 
@@ -302,20 +302,20 @@ You can upload and deliver GIFs through Dynamic Media. To render an animated GIF
 **Business case:** *Quickly publish a video for a marketing site.*
 
 * **Select a video profile:** 
-  First, in Dynamic Media, you should select a suitable video profile. You can opt for the *Adaptive Video Encoding* profile available in AEM Assets under Video Profiles. These pre-defined encoding settings ensure that your video is optimized for playback across various devices and bandwidth conditions. Alternatively, you can create your own Adaptive Video profile.
+  First, in Dynamic Media, select a suitable video profile. You can opt for the *Adaptive Video Encoding* profile available in AEM Assets under Video Profiles. These pre-defined encoding settings ensure that your video is optimized for playback across various devices and bandwidth conditions. Alternatively, you can create your own Adaptive Video profile.
 * **Assign the profile:**
-  Assign the chosen video profile to the folders where your video is going to be uploaded. This step ensures that the correct encoding settings are applied during the upload process.
+  Assign the chosen video profile to the folders where your video uploads. This step ensures that the correct encoding settings are applied during the upload process.
 * **Upload the original video:**
   Upload the original video file. Make sure it's a high-resolution video with good quality. The better the source video, the better the final result.
 * **Preview and publish:**
-  Preview the video so you can ensure that everything looks as expected. Once satisfied, go ahead and publish it. This step makes the video accessible to your audience.
+  Preview the video so you can ensure that everything looks as expected. Once satisfied, publish it. This step makes the video accessible to your audience.
 * **Link or embed:**
   After publishing, you have two options.
 
     * **Link directly:**
     Use the provided URL to link directly to the video. Hyperlink it appropriately on your marketing site.
     * **Embed the video:**
-    Copy the embedded code provided and paste it into the HTML of your web page where you want the video to appear. Doing so allows the video to play directly on your site.
+    Copy the embedded code provided and paste it into the HTML of your web page where you want the video to appear. Embedding the video allows the video to play directly on your site.
 
 Want to learn more? Go to [Video](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video). 
 
@@ -359,7 +359,7 @@ Internationalizing videos for multilingual consumption is essential for reaching
      * Organize, browse, and search video assets within AEM.
      * Preview and publish video assets.
      * View the source video and its encoded renditions along with associated thumbnails.
-     * Edit video properties, such as title, description, and tags2.
+     * Edit video properties, such as title, description, and tags.
 
 * **Localization:**
      * For each target geography/language, create audio tracks and subtitles.
@@ -400,7 +400,7 @@ Want to learn more? Go to [Smart Imaging](/help/assets/dynamic-media/imaging-faq
 
 **Business case:** *After publishing new content or overwriting existing content, how can it be ensured that the changes appear immediately on the CDN?*
 
-The CDN (Content Delivery Network) caches Dynamic Media assets for quick delivery to customers. When updates are made to these assets, it is important for the changes to take effect immediately on the website. By purging or invalidating the CDN cache, assets delivered by Dynamic Media can be updated quickly. This approach eliminates the need to wait for the cache to expire based on the TTL (Time To Live) value, which is typically set to ten hours. Depending on your specific use case, you can update the CDN TTL (Time to Live) settings accordingly.
+The CDN (Content Delivery Network) caches Dynamic Media Assets for quick delivery to customers. When updates are made to these assets, it is important for the changes to take effect immediately on the website. By purging or invalidating the CDN cache, assets delivered by Dynamic Media can be updated quickly. This approach eliminates the need to wait for the cache to expire based on the TTL (Time To Live) value, which is typically set to ten hours. Depending on your specific use case, you can update the CDN TTL (Time to Live) settings accordingly.
 
 Want to learn more? Go to [Invalidate the CDN cache by way of Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
