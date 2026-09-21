@@ -10,21 +10,44 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release X {#release-X}
+## Release 28187 {#release-28187}
 
-Summarized below are the continuous improvements for maintenance release X, which was publicly released on September 9, 2026. The previous maintenance release was release 27830.
+Summarized below are the continuous improvements for maintenance release 28187, which was publicly released on September 11, 2026. The previous maintenance release was release 27830.
 
 The 2026.9.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-X}
+### Enhancements {#enhancements-28187}
 
-None.
+* CQ-4361811: Removed the deprecated commons-lang dependency from cq-commons (in favor of commons-lang3).
+* CQ-4365034: Migrated to Adobe Analytics API 2.0 ahead of the Analytics 1.4 API end-of-life (August 31, 2026).
+* GRANITE-65723: Added session prolongation support for JWT-based authentication on page requests.
+* GRANITE-67893: Added support for custom URI schemes in HTML sanitization via the ALLOWED_URI_SCHEMES configuration.
+* GRANITE-69821: Added last-activity timestamp tracking on user profile nodes.
+* GRANITE-71327: Added the ability to inspect configured preprocessors.
+* GRANITE-72425: Reduced the Elasticsearch permissions required for index statistics, so cluster-level monitoring access is no longer needed.
+* GRANITE-72442: Added support for Bouncy Castle-based JSafe-compatible keystores.
+* SKYOPS-124458: Increased the AEM Developer Console IMS integration limit to 40 technical accounts.
+* SKYOPS-137568: Added support for running the AEM Quickstart on Java 25.
+* SKYOPS-138717: Removed a deprecated API from the AEM public API surface.
+* SKYOPS-145215: Added a CQ Quickstart MCP server to the AEM as a Cloud Service SDK.
+* SKYOPS-155829: Updated Cloud Service platform bundles to remove the deprecated commons-lang dependency.
 
-### Fixed Issues {#fixed-issues-X}
+### Fixed Issues {#fixed-issues-28187}
 
-None.
+* ASSETS-9938: Fixed Link Share download failing for ZIP files.
+* CQ-4364676: Fixed a broken Help link in the login screen footer.
+* GRANITE-64470: Fixed the Publish mail service requiring a pod restart to pick up OSGi configuration changes (for example, OAuth token updates).
+* GRANITE-70798: Fixed a login failure on AMS publish instances after the 6.5 LTS SP2 upgrade (TokenAuthenticationHandler/SAML regression).
+* GRANITE-71458: Fixed a missing "Remove member" button in the Groups UI for long user or group names.
+* GRANITE-72210: Fixed OIDC authentication failures caused by JWK Set size limits; the HTTP retrieval limits are now configurable.
+* GRANITE-72324: Fixed precompile-maven-plugin incompatibility with Maven 3.10.
+* GRANITE-73303: Fixed JSafe keystores loading only on first use, which caused delayed initialization.
+* SITES-48426: Fixed a severe performance slowdown in the Sites console for large sites.
+* SITES-50164: Fixed the Preflight Play button failing to launch highlighting, the preview-mode banner, and popover auto-minimize due to a client library load issue.
+* SKYOPS-147677: Fixed jcr:content child node deletions not replicating to Publish when a page has comments.
+* SKYOPS-152346: Fixed customer-provided overlays being overwritten by the product overlay.
 
-#### AEM Guides {#guides-X}
+#### AEM Guides {#guides-28187}
 
 * GUIDES-48304: On low-resolution screens, the Insert Keyword dialog fails to appear when inserting a keyword from the toolbar, while it opens as expected when using **More** option.
 * GUIDES-48893: Opening the Review panel or applying a project filter takes some time to load the task list.
@@ -37,23 +60,23 @@ None.
 
 For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
 
-### Known Issues {#known-issues-X}
+### Known Issues {#known-issues-28187}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-X}
+### Deprecated Features and APIs {#deprecated-28187}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-X}
+### Security Fixes {#security-28187}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses X identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 16 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-X}
+### Embedded Technologies {#embedded-tech-28187}
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM Oak | 2.4.0 | [Oak 2.4.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/2.4.0/index.html)|
+|AEM Oak | 2.6.0 | [Oak 2.6.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/2.6.0/index.html)|
 |AEM SLING API | 2.27.6 |[Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL| 1.4.28-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
 |Apache HTTP Server| 2.4.67 | [Apache Httpd 2.4.67](https://apache.googlesource.com/httpd/+/refs/tags/2.4.67/CHANGES)|
