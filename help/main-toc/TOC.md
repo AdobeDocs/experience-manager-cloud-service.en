@@ -1719,6 +1719,7 @@ user-guide-title: AEM as a Cloud Service
     + [Extensions and the Extension Manager](/help/implementing/developing/extending/extension-manager.md)
   + Deploying to AEM as a Cloud Service {#deploying}
     + [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md)
+    + [Canary Deployments](/help/implementing/cloud-manager/canary-deployments.md)
     + [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md)
     + [Quiet Hours and Update Free Periods](/help/implementing/deploying/quiet-hours-update-free-periods.md)
     + [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md)
