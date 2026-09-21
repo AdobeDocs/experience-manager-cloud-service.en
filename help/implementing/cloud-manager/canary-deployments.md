@@ -32,7 +32,7 @@ When you run a full stack pipeline that has canary deployments enabled, Cloud Ma
 
 ## Enable canary deployments {#enable-canary-deployments}
 
-You enable (turn on) canary deployments on the full stack pipeline. Canary deployments are supported only for **stage** and **production** environments. Note that a pipeline configured to deploy to both stage and production runs the canary deployment only in production, as shown below.
+You enable canary deployments on the full stack pipeline. Canary deployments are supported only for **stage** and **production** environments. Note that a pipeline configured to deploy to both stage and production runs the canary deployment only in production, as shown below.
 
 **Canary deployment behavior by pipeline type**
 Where the canary deployment runs depends on the type of pipeline.
