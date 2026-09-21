@@ -9,7 +9,7 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 ---
 # Use canary deployments to validate code {#canary-deployments}
 
-For AEM Cloud Service implementations, canary deployments in Cloud Manager let you validate new code on the live production infrastructure's publish tier before you route real user traffic to it. You deploy the new version alongside the current stable version and reach it through a dedicated request header. After you confirm that the new version works successfully, you can either promote it to all traffic (this happens automatically after a 12-hour window) or roll it back.
+For AEM Cloud Service implementations, canary deployments in Cloud Manager let you validate new code on the live production infrastructure's publish tier before you route real user traffic to it. You deploy the new version alongside the current stable version and reach it through a dedicated request header. After you confirm that the new version works successfully, you can either promote it to all traffic (this happens automatically after a 3-hour window) or roll it back.
 
 Dev and stage environments remain the primary places to test code releases; canary deployments serve as an additional opportunity to verify that a release functions as you expect. For example, it is useful if AEM production integrates with an external service's production endpoint, which is not explicitly validated in lower AEM environments.
 
@@ -75,7 +75,7 @@ When the canary instances are ready, a validation window opens so that you can t
 
 >[!IMPORTANT]
 >
->If you take no action within the 12-hour validation window, Cloud Manager automatically promotes the canary release.
+>If you take no action within the 3-hour validation window, Cloud Manager automatically promotes the canary release.
 
 ![Cloud Manager deployment step showing the Cancel deployment and Promote to production actions for a ready canary release.](/help/implementing/cloud-manager/assets/canary-deployments-cancel-or-promote-options.png)
 
