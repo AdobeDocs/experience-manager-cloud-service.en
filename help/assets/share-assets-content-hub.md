@@ -25,6 +25,7 @@ Follow these steps to share assets and collections with private or public users:
 ![share in public link](/help/assets/assets/public-link.png)
 
 You can view an asset or collection available from the **[!UICONTROL List View]**. Click ![unselect](/help/assets/assets/Close.svg) next to an asset to remove it from the ![unselect](/help/assets/assets/ViewList.svg) **[!UICONTROL List View]**. 
+
 2. Specify a title and an optional description that defines the set of selected assets and collections. 
 3. Select **[!UICONTROL Period of expiration]**. 
 4. Under **[!UICONTROL Who can access]** drop down, select the access option **[!UICONTROL Anyone with the link]** or **[!UICONTROL Authenticated users]** and click **[!UICONTROL Create Link]** to generate the link. 
