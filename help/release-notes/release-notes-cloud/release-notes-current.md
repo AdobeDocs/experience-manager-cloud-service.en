@@ -320,6 +320,30 @@ During the validation window of several hours, promote the canary release to ser
 
 [Canary deployments](/help/implementing/cloud-manager/canary-deployments.md) will roll out with the next Cloud Manager release on October 1st.
 
+#### New capabilities in AEM MCP {#aem-mcp}
+
+[AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) allows you to configure a single URL in your chat application or coding agent to access a growing set of capabilities. In addition to Content operations (pages, content fragments, and assets) and Experience Governance checks, AEM MCP now supports:
+
+- Cloud Manager: manage programs, environments, repositories and pipelines
+- Cloud Migration: fetch Best Practices Analyzer (BPA) findings from Cloud Acceleration Manager (CAM) by migration pattern or severity level, enabling AI agents to drive code migration from AEM 6.x to AEM as a Cloud Service.
+
+These capabilities were previously only available in the deprecated domain-specific MCPs. It is recommended to switch to the AEM MCP Server.
+
+The AEM MCP Server is also used by the [AEM Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md#install-adobe-experience-manager-connector) and [AEM ChatGPT Plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md#install-adobe-experience-manager-plugin).
+
+#### OpenTelemetry for Application Performance Monitoring (APM) (Limited Availability) {#optel}
+
+In limited availability – and so gradually rolling out throughout the year – AEM as a Cloud Service supports [OpenTelemetry](/help/implementing/developing/introduction/opentelemetry-apm-integration.md). OTel is an open, industry-standard way to get traces, metrics, and logs together, sent to the APM provider of your choice.
+
+Use this integration to:
+
+- Investigate slow or failing requests
+- Track JVM health and resource usage over time
+- Build dashboards and alerts for your AEM tiers
+- Correlate AEM behavior with other services during incidents
+
+To get on the list for access, email [aemcs-optel-access@adobe.com](mailto:aemcs-optel-access@adobe.com), describing your use case and how you intend on ingesting the data. 
+
 #### Permission Management Agentic Capabilities in AEM {#permission-management-in-aem}
 
 Ask plain-language questions about who can do what on a content path, and the governance agent audits effective ACLs on your author environment in real time — explaining access decisions and their source policies, listing who holds a given privilege, pinpointing what causes a denial, and recommending groups for grants that follow the least privilege principle. For more information, see [Permission Management in AEM](/help/ai-in-aem/agents/governance/overview.md#permission-management-in-aem)‎
@@ -391,19 +415,6 @@ If interested, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-
 #### Replication AI Troubleshooting (Beta Program) {#replication-ai-troubleshooting-beta}
 
 Using the AI Assistant in AEM Author and other interfaces, you can troubleshoot replication-related issues such as blocked queues. To join the Beta Program, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com), describing your interest.
-
-#### OpenTelemetry for Application Performance Monitoring (APM) (Beta Program) {#apm-beta}
-
-AEM as a Cloud Service is replacing its built-in APM integration with [OpenTelemetry](https://opentelemetry.io/), an open, industry-standard approach to observability -- traces, metrics, and logs together, in the APM tools your teams already use.
-
-Use this integration to:
-
-- Investigate slow or failing requests
-- Track JVM health and resource usage over time
-- Build dashboards and alerts for your AEM tiers
-- Correlate AEM behavior with other services during incidents
-
-To join the Beta Program, email [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com), describing your use case. See [OpenTelemetry (Beta)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/opentelemetry-apm-integration.html) for full setup steps and supported providers.
 
 ## [!DNL Experience Manager] Guides {#guides}
 
