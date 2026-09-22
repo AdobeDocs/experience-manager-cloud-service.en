@@ -395,7 +395,7 @@ AEM Cloud Service continues to support compiling customer code with Java 11, Jav
 
 Validate a production build with internal-only test traffic before exposing it to end users. Ship to production, route only canary traffic (using a special header), monitor behavior, then either promote to live traffic or roll back—without impacting customers.
 
-Email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) to request access and share feedback.
+[Learn more](/help/implementing/cloud-manager/canary-deployments.md) and email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) to request access and share feedback.
 
 #### Edge Authentication for Edge Delivery Services (Beta Program) {#edge-authentication}
 
