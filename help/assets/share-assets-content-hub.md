@@ -43,7 +43,7 @@ Follow these steps to share assets and collections with private or public users:
 
 ### Add assets in an existing collection {#add-assets-in-an-existing-collection}
 
-To add additional assets to the shared collection, go to **[!UICONTROL All assets]** in the Content Hub homepage and select the assets you want to add. Click ![share](/help/assets/assets/share.svg) **[!UICONTROL Share]** > **[!UICONTROL Add to link]**. Search for the link you created, click the add button and click **[!UICONTROL Save]**. 
+To add additional assets to the shared collection, go to **[!UICONTROL All assets]** in the Content Hub homepage and select the assets you want to add. Click ![share](/help/assets/assets/share.svg) **[!UICONTROL Share]** > **[!UICONTROL Add to link]**. Search for the shared link you created, click the add button and click **[!UICONTROL Save]**. 
 ![new public link dialog box](/help/assets/assets/add-assets.png)
    You can view and download the newly added assets within an existing collection under **[!UICONTROL Shared]**.  
    ![new public link dialog box](/help/assets/assets/added-assets.png)
