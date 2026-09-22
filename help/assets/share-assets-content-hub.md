@@ -26,8 +26,8 @@ Follow these steps to share assets and collections with private or public users:
 2. The public link creation dialog box appears. Specify a title and an optional description that defines the set of selected assets and collections. 
 3. Select **[!UICONTROL Period of expiration]**. 
 4. Under **[!UICONTROL Who can access]** drop down, select the access options and click **[!UICONTROL Get Link]** to generate a link to share with the selected users. Private users need to sign in to their Content Hub environment to access the shared assets page. Whereas, public users, as guests, can access the shared assets page without signing in to Content Hub.
-4. If you want to create a password to restrict access to private users, select **[!UICONTROL Anyone with the link]** under **[!UICONTROL Who has access]** and toggle the **[!UICONTROL Require password protection]** option. 
-5. Click **[!UICONTROL Create link]** to create the shared link. 
+5. If you want to create a password to restrict access to private users, select **[!UICONTROL Anyone with the link]** under **[!UICONTROL Who has access]** and toggle the **[!UICONTROL Require password protection]** option. 
+6. Click **[!UICONTROL Create link]** to create the shared link. 
 [new public link dialog box](/help/assets/assets/new-public-link.png)
 
 If you want to update the link details such as title, description, and password, or delete the link, click on the three dots and select **[!UICONTROL Details]**. 
