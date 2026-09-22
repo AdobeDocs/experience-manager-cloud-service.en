@@ -41,7 +41,7 @@ See also the following topics:
 >
 >**If you are upgrading:**
 >
->* After you have Adobe [!DNL Experience Manager] up and running, any asset you upload has Dynamic Media automatically enabled (unless it was explicitly disabled by your system administrator). If you are on an upgraded instance of [!DNL Experience Manager] and new to Dynamic Media, you likely must reprocess your assets to make them Dynamic Media-enabled. See [Reprocess assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>* After you have Adobe [!DNL Experience Manager] configured and operational, any asset you upload has Dynamic Media automatically enabled (unless your system administrator explicitly disabled it). If you are on an upgraded instance of [!DNL Experience Manager] and are new to Dynamic Media, you must reprocess your assets to enable Dynamic Media. See [Reprocess assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 
 ## One-time DNS update required for Dynamic Media certificate renewals {#dns-update-dynamic-media-certificate-renewals}
@@ -55,7 +55,7 @@ Add the following CAA record at the root (apex) of your domain:
 
 ```
 
-This is a one-time change.
+This update is a one-time change.
 
 You can verify whether a CAA record exists using your DNS provider tools or a [CAA lookup utility](https://caatest.co.uk/).
 

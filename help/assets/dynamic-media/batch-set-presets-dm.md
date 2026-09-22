@@ -13,23 +13,23 @@ Use **[!UICONTROL Batch Set Presets]** to create and organize multiple assets in
 
 >[!IMPORTANT]
 >
->Are you using batch set presets in [!DNL Dynamic Media Classic], and migrating from [!DNL Dynamic Media Classic] to Adobe Experience Manager as a Cloud Service? If so, you must manually re-create your batch set presets definitions within [!DNL Adobe Experience Manager as a Cloud Service].
+>Are you using batch set presets in [!DNL Dynamic Media Classic], and migrating from [!DNL Dynamic Media Classic] to Adobe Experience Manager as a Cloud Service? If so, you must manually re-create your batch set preset definitions within [!DNL Adobe Experience Manager as a Cloud Service].
 
-**Best Practice** - When working with batch set presets Adobe recommends the following workflow:
+**Recommendation** — When working with batch set presets Adobe recommends the following workflow:
 
 1. Create a batch set preset. See [Create a batch set preset for an image set or a spin set](#creating-bsp).
 1. Create an asset folder or use an existing asset folder and ensure it is synced to [!DNL Dynamic Media]. See [Create folders](/help/assets/manage-digital-assets.md#creating-folders).
 1. Apply the batch set preset to the asset folder. See [About applying batch set presets to folders](#apply-bsp).
 1. Upload images to the asset folder. See [Upload assets for Image Sets](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [Upload assets for Spin Sets](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets), or [Add digital assets to Adobe Experience Manager](/help/assets/add-assets.md#add-assets-to-experience-manager).
-1. Image set or spin set gets auto generated in the desired folder.
+1. An image set or spin set gets auto-generated in the desired folder.
 1. Publish your image set or spin set. See [Publish Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md). 
 
 ## Create a batch set preset for an image set or a spin set {#creating-bsp}
 
-To create Batch Set Presets, it is desirable that you have some familiarity and understanding of regular expressions.
+To create Batch Set Presets, it is recommended that you have knowledge of regular expressions.
 
-Ideally, your company has already defined a naming convention for how assets are grouped in a set.
-To help you understand the importance of using a naming convention, suppose your company's defined naming convention is `<style>-<color>-<view>`. And, the base name for the set must always be `<style>-<color>`, and the set name extension be `-SET`. If you upload an image named `0123-RED-01`, then a set would be created named `0123-RED-SET`. If you later upload images `0123-RED-03` and `0123-BLUE-01`, then the `RED-03` image would be added to the set in the second position because it is sorted lower than `01`. However, the `BLUE-01` image would be part of a new set named `0123-BLUE-SET`. For the next asset upload, you add files `0123-RED-02` and `0123-BLUE-02`. Each asset would be added to its respective set. The `RED-02` image would be automatically sorted between the existing `01` and `03` images, because of the sort order.
+Your company has already defined a naming convention for how assets are grouped in a set.
+To understand the importance of using a naming convention, assume your company's defined naming convention is `<style>-<color>-<view>`. And the base name for the set must always be `<style>-<color>`, and the set name extension must be `-SET`. If you upload an image named `0123-RED-01`, then a set is created named `0123-RED-SET`. If you later upload images `0123-RED-03` and `0123-BLUE-01`, the `RED-03` image is added to the set in the second position because it is sorted after `01`. However, the `BLUE-01` image is part of a new set named `0123-BLUE-SET`. For the next asset upload, you add files `0123-RED-02` and `0123-BLUE-02`. Each asset is added to its respective set. The `RED-02` image is automatically sorted between the existing `01` and `03` images, based on the sort order.
 
 The **[!UICONTROL Batch Set Preset]** page in [!DNL Dynamic Media] lets you create, edit, or delete batch set presets, and apply or remove batch set presets to or from asset folders. You can use either the form field drop-down lists to define a batch set preset or use the **[!UICONTROL Raw Code]** field, which lets you type regular expression syntax.
 
@@ -37,11 +37,11 @@ You can create many batch set presets so you cover all asset ingest jobs you req
 
 ### About Asset Naming Convention
 
-The **[!UICONTROL Asset Naming Convention]** area on the **[!UICONTROL Batch Set Preset]** page has two elements that you can use to define your batch set preset: **[!UICONTROL Match]** and **[!UICONTROL Base Name]**. These elements let you define a naming convention and identify the part of the convention used to name the set in which they are contained. <!-- While **[!UICONTROL Match]** is required, **[!UICONTROL Base Name]** is mandatory only if the **[!UICONTROL Match]** field does not already specify a base name through the use of a bracket grouping. -->
+The **[!UICONTROL Asset Naming Convention]** area on the **[!UICONTROL Batch Set Preset]** page has two elements that you can use to define your batch set preset: **[!UICONTROL Match]** and **[!UICONTROL Base Name]**. These elements let you define a naming convention. They also identify the part of the convention used to name the set in which they are contained. <!-- While **[!UICONTROL Match]** is required, **[!UICONTROL Base Name]** is mandatory only if the **[!UICONTROL Match]** field does not already specify a base name through the use of a bracket grouping. -->
 
-A company's individual naming convention often uses one or more lines of definition from each of these two elements. You can use as many lines for your unique definition and group them into distinct elements, such as for Main Image, Color element, Alternate View element, and Swatch element.
+A company's individual naming convention often uses one or more lines of definition from each of these two elements. You can use multiple lines to define elements such as Main Image, Color, Alternate View, and Swatch.
  
-For example, the syntax for a literal match regular expression could look like the following:
+For example, the syntax for a literal match regular expression looks like the following:
 
 `(\w+)-\w+-\w+`
 
@@ -49,11 +49,11 @@ For example, the syntax for a literal match regular expression could look like t
 
 You can optionally define the order in which images are displayed after the image set or spin set is grouped in [!DNL Dynamic Media]. By default, your assets are ordered alphanumerically. However, you can use a comma-separated list of regular expressions to define the order.
 
-Regarding sequence ordering automation, you specify rules to force-sort assets in a certain way, if necessary. For example, suppose your first asset is always named `_main` and you want it followed with `_alt1`, `_alt2`, `_alt3`, and so on. In such cases, you can create a sequence ordering rule with the following syntax:
+To sort assets automatically, specify sequence ordering rules if necessary. For example, suppose your first asset is always named `_main` and you want it followed by `_alt1`, `_alt2`, `_alt3`, and additional assets. In such cases, you can create a sequence ordering rule with the following syntax:
 
 `.*_main,.*_alt[0-9]`
 
-While a force-sort sequence is possible, it is best to rely on alphanumeric numbering for sequence ordering, as much as possible. Furthermore, you can use the image set or spin set editor tools in [!DNL Dynamic Media] to rearrange the sequence order of assets, or add and delete new assets in the set by using a drag-and-drop operation.
+While a forced sequence is possible, it is recommended to use alphanumeric numbering for sequence ordering, whenever possible. Furthermore, you can use the image set or spin set editor tools in [!DNL Dynamic Media] to rearrange the sequence order of assets, or add and delete new assets in the set by using a drag-and-drop operation.
 
 When you finish creating a batch set preset, you apply it to one or more folders that you have created. See [About applying batch set presets to folders](#apply-bsp).
 
@@ -71,28 +71,28 @@ When you finish creating a batch set preset, you apply it to one or more folders
 1. In the **[!UICONTROL Preset Type]** drop-down list, select **[!UICONTROL ImageSet]** or **[!UICONTROL SpinSet]**. Be sure you choose the correct preset type; it is not editable later.
 1. Select **[!UICONTROL Create]**.
 1. On the right of the **[!UICONTROL Edit Batch Set Preset]** page, set the editable options you want under the **[!UICONTROL Preset Details]** and **[!UICONTROL Set Naming Convention]** headings.
-   To learn more about the editable options that are available to you, see [Preset Details, Set Naming Convention, and Rule Results - RegX options](#features-options-bsp).
+   To learn more about the editable options that are available to you, see [Preset Details, Set Naming Convention, and Rule Results — RegX options](#features-options-bsp).
 
    ![bsp-create4.png](/help/assets/assets-dm/bsp-create4.png)
 
 1. Create one or more regular expression groups. 
 
    * On the left of the **[!UICONTROL Edit Batch Set Preset]** page, under **[!UICONTROL Match]**, **[!UICONTROL Base Name]**, or **[!UICONTROL Sequence Ordering]**, select **[!UICONTROL Add Group]**.
-   * The **[!UICONTROL Match]** field is required. **[!UICONTROL Base Name]** is mandatory only if the **[!UICONTROL Match]** field does not already specify a base name by using a bracket grouping. **[!UICONTROL Sequence Ordering]** is optional.
+   * The **[!UICONTROL Match]** field is required. **[!UICONTROL Base Name]** is mandatory only if the **[!UICONTROL Match]** field does not already specify a base name by using a bracket grouping. **[!UICONTROL Sequence Ordering]** It is optional.
    * Using the drop-down lists and text boxes in the group's form, specify an expression group that you want to use to define the naming criteria for image set or spin set asset members.
-      * As you select and specify expressions for a group, notice that the actual regular expression syntax is reflected near the lower right of the page, under the **[!UICONTROL Rule Results - RegX]** heading. To see the regular expression string updated in the lower right, select anywhere outside the form area. These regular expression strings represent the pattern that you want to match in a search of [!DNL Dynamic Media] assets to create your image set or spin set.
+      * As you select and specify expressions for a group, notice that the actual regular expression syntax is reflected near the lower right of the page, under the **[!UICONTROL Rule Results — RegX]** heading. To see the regular expression string updated in the lower right, select anywhere outside the form area. These regular expression strings represent the pattern that you want to match in a search of [!DNL Dynamic Media] assets to create your image set or spin set.
       * If you have added a group and want to remove it, select **[!UICONTROL X]**.
-   * When you add two or more groups, in the **[!UICONTROL And]** drop-down list, select **[!UICONTROL And]** to conjoin a newly added group with any previous expression group you have added. Or, select **[!UICONTROL Or]** to add an alternation between the previous expression group and the new group you create. The **[!UICONTROL Or]** operand is defined by the use of a vertical line character `|` in the regular expression syntax itself.
+   * When you add two or more groups, in the **[!UICONTROL And]** drop-down list, select **[!UICONTROL And]** to conjoin a newly added group with any previous expression group you have added. Or, select **[!UICONTROL Or]** to add an alternation between the previous expression group and the new group you create. The vertical line character `|` in the regular expression syntax defines the **[!UICONTROL Or]** operand.
 
 1. Do one of the following:
 
    * To add another new group, under **[!UICONTROL Match]**, **[!UICONTROL Base Name]**, or **[!UICONTROL Sequencing Order]**, select **[!UICONTROL Add Group]**. Create another regular expression group as you did in the previous step.
-   * Review the regular expression syntax in the **[!UICONTROL Rule Results - RegX]** area. If you must change the syntax, make your edits in the respective group on the left of the page.
+   * Review the regular expression syntax in the **[!UICONTROL Rule Results — RegX]** area. If you must change the syntax, make your edits in the respective group on the left of the page.
    * If you have finished creating expression groups, continue to the next step.
 
 1. In the upper-right corner of the page, select **[!UICONTROL Save]**.
 
-You are now ready to apply the batch set preset to an asset folder. Then, you upload assets to that folder. This workflow results in the auto generation of your image set or spin set. See [About applying batch set presets to asset folders](#apply-bsp).
+You are now ready to apply the batch set preset to an asset folder. Then, you upload assets to that folder. This workflow results in the auto-generation of your image set or spin set. See [About applying batch set presets to asset folders](#apply-bsp).
 
 ### Preset Details, Set Naming Convention, and Rule Results - RegX options {#features-options-bsp}
 
@@ -115,18 +115,18 @@ See [Create a batch set preset for an image set or a spin set](#creating-bsp) or
 
 ## About applying batch set presets to asset folders {#apply-bsp}
 
-When you assign batch set presets to one or more asset folders, any subfolders automatically inherit the presets from its parent folder.
+When you assign batch set presets to one or more asset folders, any subfolders automatically inherit the presets from their parent folder.
 
 You can apply multiple batch set presets to an asset folder.
 
-Folders that have a batch preset assigned to it are indicated in the user interface with the name of the preset appearing in the folder, in the **[!UICONTROL Card]** view.
+Folders with an assigned batch preset display the preset name in the **[!UICONTROL Card]** view.
 
 To apply batch set presets to asset folders, use either one of the following two methods:
 
-* [Apply batch set presets to asset folders from the Batch Set Preset page](#apply-bsp-to-folders-via-bsp-page) - This method offers you the most flexibility. You can apply a single preset or multiple presets to a single folder or multiple folders.
-* [Apply batch set presets from an asset folder's Properties page](#apply-bsp-to-folders-via-properties) - This method lets you apply one or more batch set presets to a single folder.
+* [Apply batch set presets to asset folders from the Batch Set Preset page](#apply-bsp-to-folders-via-bsp-page) — This method offers you the most flexibility. You can apply a single preset or multiple presets to a single folder or multiple folders.
+* [Apply batch set presets from an asset folder's Properties page](#apply-bsp-to-folders-via-properties) — This method lets you apply one or more batch set presets to a single folder.
 
-As a best practice, make sure that the asset folders are synced [!DNL Dynamic Media], then apply the presets you want.
+As a best practice, make sure that the asset folders are synced to [!DNL Dynamic Media], then apply the presets you want.
 
 Reprocess assets in a folder if you experience either of the following two scenarios:
 
@@ -169,7 +169,7 @@ You cannot, however, change the preset's name or preset type (Image Set or Spin 
 
 If you edit a batch set preset that was previously applied to a folder, the newly edited batch set preset gets applied only to new assets uploaded to that folder.
 
-If you want the newly edited preset to be reapplied to the existing assets in the folder, you must reprocess the folder. <!-- See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). -->In this way, the existing assets would now qualify to be part of an image set or spin set and be added. Furthermore, the existing assets that were already included in the image set or spin set - based on the previous batch set preset that was used - do not get removed and show as-is. This scenario assumes they no longer qualify based on the newly edited preset.
+If you want the newly edited preset to be reapplied to the existing assets in the folder, you must reprocess the folder. <!-- See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). -->The existing assets now qualify to be part of an image set or spin set and are added to it. Furthermore, the existing assets that were already included in the image set or spin set based on the previous batch set preset are not removed and remain as is. This scenario applies if they no longer qualify based on the newly edited preset.
 
 **To edit a batch set preset:**
 
@@ -181,9 +181,9 @@ If you want the newly edited preset to be reapplied to the existing assets in th
 
 ## Copy an existing batch set preset {#copy-bsp}
 
-You can copy an existing batch set preset to avoid having to manually re-create a complex preset, or if you simply want to rename a preset. You cannot, however, change the preset type used (Image Set or Spin Set).
+To avoid manually re-creating a complex preset or to rename a preset, copy an existing batch set preset. You cannot, however, change the preset type used (Image Set or Spin Set).
 
-If you copy an existing preset that is reference by asset folders, those folders are not affected.
+If you copy an existing preset that asset folders reference, those folders remain unaffected.
 
 **Copy an existing batch set preset:**
 
@@ -204,10 +204,10 @@ If you want to *delete* presets from folders instead, see [Delete batch set pres
 
 There are two methods you can use to remove batch set presets from folders.
 
-* [Remove batch set presets from folders by way of the Batch Set Preset page](#remove-bsp-from-folders-via-bsp-page) - This method offers you the most flexibility. You can remove a single preset or multiple presets from a single folder or multiple folders.
-* [Remove batch set presets from a folder's Properties page](#remove-bsp-from-folders-via-properties) - This method lets you remove one or more batch set presets from a single folder only.
+* [Remove batch set presets from folders using the Batch Set Preset page](#remove-bsp-from-folders-via-bsp-page) — This method offers you the most flexibility. You can remove a single preset or multiple presets from a single folder or multiple folders.
+* [Remove batch set presets from a folder's Properties page](#remove-bsp-from-folders-via-properties) — This method lets you remove one or more batch set presets from a single folder only.
 
-### Remove batch set presets from folders by way of the Batch Set Preset page {#remove-bsp-from-folders-via-bsp-page}
+### Remove batch set presets from folders using the Batch Set Preset page {#remove-bsp-from-folders-via-bsp-page}
 
 1. Select the Experience Manager logo and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
 1. On the **[!UICONTROL Batch Set Presets]** page, to the left of the **[!UICONTROL Preset Name]** column, select the check box of one or more batch set presets that you want to remove from one or more folders.
@@ -223,7 +223,7 @@ There are two methods you can use to remove batch set presets from folders.
 ### Remove batch set presets from a folder's Properties page {#remove-bsp-from-folders-via-properties}
 
 1. Select the Experience Manager logo and navigate to **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
-1. Navigate to a folder to which you want to remove one or more batch set presets.
+1. Navigate to a folder from which you want to remove one or more batch set presets.
 1. On the page, to the left of the **[!UICONTROL Name]** column, select the check box of a folder.
 1. In the toolbar, select **[!UICONTROL Properties]**.
 1. On the folder's Properties page, select **[!UICONTROL Dynamic Media Processing]**.
@@ -236,7 +236,7 @@ There are two methods you can use to remove batch set presets from folders.
 
 ## Delete batch set presets {#delete-bsp}
 
-You can delete batch set presets to remove them permanently from [!DNL Dynamic Media]. That is, they no longer show on the [!UICONTROL Batch Set Preset] page nor are they shown in the **[!UICONTROL Batch Set Presets]** drop-down list of the **[!UICONTROL Dynamic Media Processing]** tab on the folder's **[!UICONTROL Properties]** page. As such, the preset is not applied to existing assets on a folder reprocess or when new assets are uploaded in the folder.
+To remove batch set presets permanently from [!DNL Dynamic Media], delete them. That is, they no longer show on the [!UICONTROL Batch Set Preset] page nor are they shown in the **[!UICONTROL Batch Set Presets]** drop-down list of the **[!UICONTROL Dynamic Media Processing]** tab on the folder's **[!UICONTROL Properties]** page. As such, the preset is not applied to existing assets on a folder reprocess or when new assets are uploaded in the folder.
 
 If you delete a preset that was previously applied to one or more folders, any image sets or spin sets that were created from assets in those folders continue to show as-is.
 
@@ -252,7 +252,7 @@ If you want to *remove* presets from folders instead, see [Remove batch set pres
 
 1. In the **[!UICONTROL Delete Batch Set Presets]** dialog box, select **[!UICONTROL Delete]**.
 
-   If the preset you are deleting was referenced by an asset folder, select **[!UICONTROL Force Delete]** instead.
+   If an asset folder references the preset you are deleting, select **[!UICONTROL Force Delete]** instead.
 
    ![bsp-delete3.png](/help/assets/assets-dm/bsp-delete3.png)
 

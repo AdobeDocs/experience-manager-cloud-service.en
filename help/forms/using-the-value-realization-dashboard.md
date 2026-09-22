@@ -4,13 +4,12 @@ description: Learn how to use the Forms Usage Insights dashboard to monitor and 
 role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
-hide: true
-badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms."
 exl-id: f58aa2df-dfb6-4eb4-b20d-e81bb01be8a7
 ---
 # Using the value realization dashboard to analyze forms & documents usage trends
 
-<span class="preview"> This feature is available through the early access program. To request access, send an email from your official address to aem-forms-ea@adobe.com. <span>
+<span class="preview"> This feature is available through the early access program. To request access, send an email from your official address to aem-forms-ea@adobe.com. </span>
 
 ![Value Realization Dashboard](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 
@@ -122,6 +121,24 @@ This section provides insights into the usage of form fragments, which are reusa
 
 
 
+## Frequently Asked Questions
+
+**Q: How do I access the Forms Usage Insights dashboard in AEM Forms?**
+**Ans:** Go to **Forms** > **Forms and Documents**, then select **InProduct Dashboard**. The dashboard opens in a new window.
+
+**Q: What time periods can I view in the dashboard?**
+**Ans:** Each activity chart can be filtered to the last 30 days or the last 12 months using the time-period dropdown.
+
+**Q: What is the difference between forms created and forms published?**
+**Ans:** Forms created counts new forms built in a period, while forms published counts forms made available for use. A large gap between the two can indicate a bottleneck in your approval or deployment process.
+
+**Q: What does the document renditions metric measure?**
+**Ans:** It tracks the number of documents generated as a result of form submissions, such as contracts or reports. It should correlate closely with form submissions.
+
+**Q: How is form fragment re-use measured?**
+**Ans:** Form fragment re-use is the total number of times form fragments have been reused across different forms. A higher value indicates more effective use of reusable components.
+
 ## See also
 
 - [Understanding your value realization dashboard](/help/forms/aem-forms-value-realization-dashboard.md)
+- [Integrate AEM Forms with Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)

@@ -386,6 +386,56 @@ For folders that have a processing profile assigned, the profile name appears on
 
 Technical details of the upload APIs and protocol, and links to open-source SDK and sample clients is provided in [asset upload](developer-reference-material-apis.md#asset-upload) section of the developer reference.
 
+## Asset upload security and best practices {#asset-upload-security-and-best-practices}
+
+### Direct Binary Upload with presigned URLs {#direct-binary-upload}
+
+Adobe Experience Manager (AEM) as a Cloud Service uploads assets through a **Direct Binary Upload** flow. You can request a presigned URL, the binary gets uploaded directly to the storage using that URL, and then the asset is finalized with an authenticated API call.
+
+* Presigned URLs are short-lived for an hour approximately, but the exact Time to Live (TTL) is not a published or guaranteed Service Level Agreement (SLA). Treat the duration as an implementation detail that can change, not a value to hard-code into the integrations.
+* A presigned URL must be used immediately as part of a single upload session. It is not designed to be stored and reused later, and is not intended to be reusable across multiple uploads.
+* Leaking a presigned URL alone is not sufficient to create an asset. Asset creation or finalization requires an authenticated API call using valid credentials and an `uploadToken`. If you get only the presigned URL, you cannot complete asset registration without having valid authentication and the associated upload token. This limits the practical impact of a leaked URL.
+* Treat presigned URLs as sensitive values in your own integrations; avoid logging them, always use HTTPS, and do not persist them beyond the upload session.
+
+### Authentication for programmatic uploads {#authentication-for-programmatic-uploads}
+
+Two authentication mechanisms exist for AEM API access, and they are not interchangeable for asset upload operations. 
+
+| Credential type | Where it is generated | Whether it is supported for Asset Upload API |
+|---|---|---|
+|OAuth Server-to-Server (S2S) credentials|Adobe Developer Console| This is not supported for asset upload API calls; using them results in persistent **403 Forbidden** errors even with a correctly assigned product profile (for example, Assets Collaborator Users). |
+|Service credentials (JWT) | AEM Developer Console | This is supported for server-to-server asset upload API calls. |
+
+>[!NOTE]
+>
+>The older asset HTTP API for directly updating an asset's binary is deprecated. New integrations use the **Direct Binary Upload** flow instead.
+
+The technical account used for API uploads must have explicit repository-level ACLs `jcr:read` on `/content/dam` and `rep:write` (or `jcr:all`) on the specific target subfolder, in addition to the correct credential type and administrator console product profile or group membership. A technical account can be correctly licensed and grouped and still receive **403 Forbidden** errors if the path-level ACLs have not been granted. Product-profile or group assignment and repository ACLs are independent and both required.
+
+### Malware detection and quarantine {#malware-detection-and-quarantine}
+
+When malware detection is enabled, the uploaded files are scanned and infected files are placed in a **Quarantine** area. Access to quarantined assets is controlled by the standard AEM permissions through a **Quarantine Administrators** group; additional custom groups can be granted access to the quarantine area as needed. Quarantine visibility is not limited to a single fixed role. For more information on malware detection and quarantine, see [Malware Detection](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/malware-detection).
+
+### File type handling and upload restrictions {#file-type-handling-and-upload-restrictions}
+
+* AEM does not impose default file-type restrictions on uploads. It is possible to upload files with executable extensions (for example, .exe, .exe.pdf) as asset renditions.
+* This is an expected behavior, and not a vulnerability that AEM does not render or execute uploaded active content or scripts, whether in the browser or on the server. Uploading an executable file hence does not by itself create a remote-code-execution risk under AEM's default security model. Organizations with stricter compliance requirements should apply their own upload validation or allow-listing if needed, since AEM does not enforce this natively.
+* The supported file formats and MIME types for asset processing are documented separately, unsupported types are not fully processed (for example, they may not generate the expected renditions).
+
+### Upload reliability best practices {#upload-reliability-best-practices}
+
+* For large or specialized asset types such as video, PDF, GIF, follow the recommended file size limits, encoding, and preferred formats to avoid platform performance impact during upload, processing, and preview generation.
+* Prefer the supported upload APIs or UI flows over ad hoc folder-level bulk uploads for business-critical files. Folder-level drag-and-drop uploads have been reported to occasionally result in file corruption; if this occurs, capture the exact error or behavior (screenshots, HAR or network logs) immediately, since the underlying cause is often environment or file-specific and difficult to diagnose after the fact without that evidence.
+
+## Troubleshooting checklist for upload failures {#troubleshooting-checklist-for-upload-failures}
+
+1. **403 Forbidden on API upload**: Confirm the credential type. OAuth S2S from Adobe Developer console is not supported for asset upload API. Use the Service Credentials (JWT) from the AEM Developer console instead.
+2. **403 Forbidden despite correct credentials and group membership**: Confirm the technical account has explicit `jcr:read` on `/content/dam` and `rep:write/jcr:all` on the specific target folder. Group or profile membership does not substitute for the folder-level ACLs.
+3. **Upload succeeds but asset fails to appear or binary looks corrupted**: Rule out folder-level bulk upload as the ingestion method; retry through the standard upload API or UI and capture logs if it recurs.
+4. **Security review flags unrestricted file upload**: Clarify that AEM does not execute the uploaded active content server-side or in-browser by default, so this is an expected platform behavior rather than a defect, unless your organization requires additional upload-time validation.
+5. **Concerned about presigned URL exposure**: Confirm that the URL was used within its short validity window and that asset finalization still required a separate authenticated call with a valid `uploadToken`. This is what limits the blast radius of a leaked URL.
+
+
 ## Tips, best practices, and limitations {#tips-limitations}
 
 * Direct binary upload is a new method to upload assets. It is supported by default by the product capabilities and clients, like [!DNL Experience Manager] user interface, [!DNL Adobe Asset Link], and [!DNL Experience Manager] desktop app. Any custom code that is customized or extended by customers technical teams must use the new upload APIs and protocols.
