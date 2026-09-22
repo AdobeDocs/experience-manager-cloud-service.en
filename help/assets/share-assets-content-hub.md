@@ -31,9 +31,9 @@ Follow these steps to share assets and collections with private or public users:
 7. Click **[!UICONTROL Create link]** to create the shared link. 
 ![new public link dialog box](/help/assets/assets/new-public-link.png)
 
-If you want to update the link details such as title, description, and password, or delete the link, click on the three dots and select **[!UICONTROL Details]**. 
+   If you want to update the link details such as title, description, and password, or delete the link, click on the three dots and select **[!UICONTROL Details]**. 
 
-![customize](/help/assets/assets/customize.png)
+   ![customize](/help/assets/assets/customize.png)
 
    >[!NOTE]
    > 
