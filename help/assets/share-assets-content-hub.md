@@ -24,7 +24,7 @@ Follow these steps to share assets and collections with private or public users:
 1. Navigate to your Content Hub homepage, select one or more assets and collections, and click ![share](/help/assets/assets/share.svg) **[!UICONTROL Share]** > **[!UICONTROL Share with a link]** and select the **[!UICONTROL New link]** option.
 ![share in public link](/help/assets/assets/public-link.png)
 
-You can view an asset or collection available from the **[!UICONTROL List View]**. Click ![unselect](/help/assets/assets/Close.svg) next to an asset to remove it from the ![unselect](/help/assets/assets/ViewList.svg) **[!UICONTROL List View]**. 
+   You can view an asset or collection available from the **[!UICONTROL List View]**. Click ![unselect](/help/assets/assets/Close.svg) next to an asset to remove it from the ![unselect](/help/assets/assets/ViewList.svg) **[!UICONTROL List View]**. 
 
 2. Specify a title and an optional description that defines the set of selected assets and collections. 
 3. Select **[!UICONTROL Period of expiration]**. 
