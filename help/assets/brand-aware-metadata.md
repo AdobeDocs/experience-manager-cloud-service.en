@@ -101,6 +101,10 @@ To create a property prompt:
    Selecting a metadata form loads the available metadata properties.
 ![Metadata properties](/help/assets/assets/metadata-properties.png)
 
+>[!NOTE]
+>
+>The **[!UICONTROL Metadata form]** list is populated only with metadata forms defined in the **[!UICONTROL Admin view]**. Metadata forms defined in the **[!UICONTROL Assets view]** are not available in this list.
+
 1. From the **Metadata property** list, select the metadata property that you want AI to populate.
 1. In the **Prompt** field, enter instructions for generating the metadata value.
 
@@ -131,9 +135,9 @@ To add referenced properties:
 5. Refine the prompt if required.
  ![Referenced properties](/help/assets/assets/referenced-properties-output.png)
 
-> **NOTE**
+>[!NOTE]
 >
-> Referenced properties provide additional context to the prompt. They do not define the metadata property that AI generates.
+>Referenced properties provide additional context to the prompt. They do not define the metadata property that AI generates.
 
 ## Configure controlled vocabulary (optional) {#configure-controlled-vocabulary}
 
@@ -143,9 +147,9 @@ For example, if a **Coffee Blend** metadata property supports only **House Blend
 
 You can configure controlled vocabulary to return either a single value or multiple values for a metadata property.
 
-> **NOTE**
+>[!NOTE]
 >
-> A metadata property can use either generative output or controlled vocabulary. Combining both options for the same property is currently not supported.
+>A metadata property can use either generative output or controlled vocabulary. Combining both options for the same property is currently not supported.
 
 ### Add controlled vocabulary values {#add-controlled-vocabulary-values}
 
@@ -279,3 +283,18 @@ Keep the following considerations in mind before applying BAM at scale:
 * Brand Guidelines configured in governance are not automatically applied during metadata generation. Include brand context directly in the brand prompt.
 
 * For dropdown and taxonomy-backed fields, use controlled vocabulary to restrict generated values to existing options.
+
+* If you experience an error when selecting a value from the **[!UICONTROL Metadata property]** list, the metadata form may contain more than 1,000 nodes. To resolve the error, increase the value of the `json.maximumresults` property for the `org.apache.sling.servlets.get.DefaultGetServlet` OSGi configuration to 10,000.
+
+## Troubleshooting {#troubleshooting}
+
+### Error when selecting a metadata property
+
+If you experience an error when selecting a value from the **[!UICONTROL Metadata property]** list, the metadata form may contain more than 1,000 nodes.
+
+To resolve the error:
+
+1. Open the OSGi configuration for `org.apache.sling.servlets.get.DefaultGetServlet`.
+1. Set the `json.maximumresults` property to `10000`.
+1. Save the configuration.
+1. Return to the property prompt and select the metadata property again.
