@@ -284,8 +284,6 @@ Keep the following considerations in mind before applying BAM at scale:
 
 * For dropdown and taxonomy-backed fields, use controlled vocabulary to restrict generated values to existing options.
 
-* If you experience an error when selecting a value from the **[!UICONTROL Metadata property]** list, the metadata form may contain more than 1,000 nodes. To resolve the error, increase the value of the `json.maximumresults` property for the `org.apache.sling.servlets.get.DefaultGetServlet` OSGi configuration to 10,000.
-
 ## Troubleshooting {#troubleshooting}
 
 ### Error when selecting a metadata property
