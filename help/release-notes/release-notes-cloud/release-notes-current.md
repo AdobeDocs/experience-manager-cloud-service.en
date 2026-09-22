@@ -312,26 +312,17 @@ Validate file attachments in Adaptive Forms before or on submission using custom
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation New Features {#foundation-new}
 
+#### Canary Deployments to Validate Features Before Accepting Live Traffic {#canary-deployments}
+
+For AEM Cloud Service implementations, validate a new release against production infrastructure before it serves customer traffic. Deploy the build alongside your current stable release on the publish tier, then route selected requests to it with a request header. All other traffic continues to be served by the stable release, unaffected. The author tier remains on the stable version throughout.
+
+During the validation window of several hours, promote the canary release to serve all live traffic, or cancel it and keep the current release running. No action within the window results in automatic promotion.
+
+[Canary deployments](/help/implementing/cloud-manager/canary-deployments.md) will roll out with the next Cloud Manager release on October 1st.
+
 #### Permission Management Agentic Capabilities in AEM {#permission-management-in-aem}
 
 Ask plain-language questions about who can do what on a content path, and the governance agent audits effective ACLs on your author environment in real time — explaining access decisions and their source policies, listing who holds a given privilege, pinpointing what causes a denial, and recommending groups for grants that follow the least privilege principle. For more information, see [Permission Management in AEM](/help/ai-in-aem/agents/governance/overview.md#permission-management-in-aem)‎
-
-#### AEM Edge Functions {#edge-functions}
-
-[AEM Edge Functions](/help/implementing/developing/introduction/edge-functions.md) allows you to execute JavaScript at the Adobe-Managed CDN, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge. It's available for both AEM Cloud Service Java Stack and Edge Delivery Services projects, for AEM Sites customers.
-
-Common use cases include:
-
-* Personalizing content based on geolocation, device type, or user attributes
-* Acting as middleware between the CDN and your origin
-* Reformatting responses from third-party APIs (and perhaps aggregating multiple API responses) before delivering them to the browser
-* Composing and serving server-rendered HTML at the edge using content stitched from various backends
-
-Follow [this tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) for a concrete walk-through for both Edge Delivery Services and AEM as a Cloud Service Java-stack variations.
-
-#### AEM Developer Console refresh {#aem-developer-console}
-
-The [AEM Developer Console](/help/implementing/developing/introduction/aem-developer-console.md) brings a more interactive debugging experience for Cloud environments. Previously available as a public beta, it has been rolling out progressively as the new default and so many organizations already have access. Full rollout completes in early September.
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
@@ -343,7 +334,7 @@ Instead of returning only an HTTP status code, these errors provide additional c
 
 #### Java API Deprecations {#java-api-deprecation}
 
-It is critical to remove usage of deprecated APIs. 
+It is critical to remove usage of deprecated APIs before **September 28, 2026**.
 
 Since **April 14, 2026**, Cloud Manager pipelines that contain code using APIs targeting 2/26/2026 removal **fail during the Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.* 
 
@@ -390,12 +381,6 @@ To help organizations plan testing and validation ahead of the necessary Java 25
 AEM Cloud Service continues to support compiling customer code with Java 11, Java 17, and Java 21. However, Adobe recommends building with Java 25 (once available in AEM) to take full advantage of the latest language features and performance improvements.
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Features {#foundation-early-adopter}
-
-#### Canary Production Deployments to Test Code Before Accepting Live Traffic (Beta Program) {#canary-beta}
-
-Validate a production build with internal-only test traffic before exposing it to end users. Ship to production, route only canary traffic (using a special header), monitor behavior, then either promote to live traffic or roll back—without impacting customers.
-
-Email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) to request access and share feedback.
 
 #### Edge Authentication for Edge Delivery Services (Beta Program) {#edge-authentication}
 
