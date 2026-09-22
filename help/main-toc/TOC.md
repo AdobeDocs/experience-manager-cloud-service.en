@@ -105,6 +105,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2026 {#2026}
+      + [Maintenance Release Notes for 2026.9.0](/help/release-notes/maintenance/2026/2026-9-0.md)
       + [Maintenance Release Notes for 2026.8.0](/help/release-notes/maintenance/2026/2026-8-0.md)
       + [Maintenance Release Notes for 2026.7.0](/help/release-notes/maintenance/2026/2026-7-0.md)
       + [Maintenance Release Notes for 2026.6.0](/help/release-notes/maintenance/2026/2026-6-0.md)
@@ -1577,7 +1578,6 @@ user-guide-title: AEM as a Cloud Service
     + [API Reference Materials](/help/implementing/developing/reference-materials.md)
     + [OpenAPI-Based APIs](/help/implementing/developing/open-api-based-apis.md)
     + [Generating Access Tokens for Server Side APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-    + {hide-from-toc} [Generating Access Tokens for Server Side APIs (Legacy)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
     + [Quick Site Creation and Front-End Customization](/help/implementing/developing/introduction/quick-site-creation.md)
     + [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
     + [Customizing Site Templates and Themes](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
@@ -1719,6 +1719,7 @@ user-guide-title: AEM as a Cloud Service
     + [Extensions and the Extension Manager](/help/implementing/developing/extending/extension-manager.md)
   + Deploying to AEM as a Cloud Service {#deploying}
     + [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md)
+    + [Canary Deployments](/help/implementing/cloud-manager/canary-deployments.md)
     + [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md)
     + [Quiet Hours and Update Free Periods](/help/implementing/deploying/quiet-hours-update-free-periods.md)
     + [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md)
