@@ -14,7 +14,7 @@ Learn about Cloud Manager's CI/CD (Continuous Integration/Continuous Delivery) p
 
 ## Introduction to CI/CD pipelines {#introduction}
 
-A CI/CD pipeline in Cloud Manager is a mechanism to build code from a source repository and deploy it to an environment. An event triggers a pipeline, such as a pull request from a source code repository such as Git (that is, a code change). Or, it can be triggered on a regular schedule to match a release cadence.
+A CI/CD pipeline in Cloud Manager is a mechanism to build code from a source repository and deploy it to an environment. An event triggers a pipeline, such as a pull request from a source code repository like Git (that is, a code change). Alternatively, it can be triggered on a regular schedule to match a release cadence.
 
 To configure a pipeline, you must do the following:
 
@@ -56,7 +56,7 @@ Pipelines also differ by the code they deploy, beyond production and non-product
 
 These pipeline types are described later in this document. 
 
-### Understand CI-CD pipelines in Cloud Manager {#understand-pipelines}
+### Understand CI/CD pipelines in Cloud Manager {#understand-pipelines}
 
 The following table summarizes the pipelines available in Cloud Manager and their usages.
 
@@ -82,7 +82,7 @@ Full-stack pipelines deploy back-end code, front-end code, and web tier configur
 * Front-End Code - Application UI resources such as JavaScript, CSS, fonts
 * Web Tier Config - HTTPD/Dispatcher configurations
 
-The full-stack pipeline represents a comprehensive pipeline. It handles everything simultaneously, while also allowing users to deploy their front-end code or Dispatcher configurations separately. This deployment is through the front-end pipeline and the web tier config pipelines, respectively.
+The full-stack pipeline is a comprehensive pipeline. It processes all components simultaneously, while also letting users deploy their front-end code or Dispatcher configurations independently. This deployment is through the front-end pipeline and the web tier config pipeline, respectively.
 
 Full-stack pipelines package front-end code (JavaScript/CSS) as [AEM client libraries](/help/implementing/developing/introduction/clientlibs.md).
 
@@ -116,7 +116,7 @@ See [Use config pipelines](/help/operations/config-pipeline.md) for a comprehens
 >Edge Delivery Configuration Pipelines do not have separate development, staging, and production environments. In AEM as a Cloud Service, changes move through development, stage, and production tiers. In contrast, an Edge Delivery Configuration Pipeline applies its configuration directly to all Edge Delivery Sites domains registered in Cloud Manager. To learn more, see [Add an Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
 
 
-### Configure config Pipelines {#configure-config-deployment}
+### Configure config pipelines {#configure-config-deployment}
 
 See [Add a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment).
 See [Add a non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment).
@@ -156,7 +156,7 @@ Web tier config pipelines allow exclusive deployment of HTTPD/Dispatcher configu
 
 >[!TIP]
 >
->Web tier config pipelines let you store your web config in the same or a different source location as the full stack pipeline, depending on what best suits your project structure.
+>Web tier config pipelines let you store your web config in the same or a different source location as the full stack pipeline, depending on what best aligns with your project structure.
 
 The following restrictions apply.
 
@@ -165,7 +165,7 @@ The following restrictions apply.
 * A user must be logged in with the **Deployment Manager** role to configure or run pipelines.
 * At any time, there can only be one web tier config pipeline per environment.
 * The user cannot configure a web tier config pipeline when its corresponding full-stack pipeline is running.
-* The web tier structure must adhere to the flexible mode structure defined in [Dispatcher in the Cloud](/help/implementing/dispatcher/disp-overview.md#validation-debug).
+* The web tier structure must follow the flexible mode structure defined in [Dispatcher in the Cloud](/help/implementing/dispatcher/disp-overview.md#validation-debug).
 
 In addition, be aware of how the [full stack pipeline](#full-stack-pipeline) behaves when introducing a web tier pipeline.
 
@@ -185,3 +185,9 @@ See [Add a non-production pipeline](/help/implementing/cloud-manager/configuring
 For a quick overview of pipeline types, view the following video (2 minutes, 26 seconds).
 
 >[!VIDEO](https://video.tv.adobe.com/v/342363)
+
+## More help on this topic {#more-help}
+
+* [Use Canary Deployments to Validate Code](/help/implementing/cloud-manager/canary-deployments.md)
+
+

@@ -20,6 +20,11 @@ Deploying code seamlessly to Stage and then through to Production is done throug
 
 _Only the Full Stack Code pipeline type supports code scanning, functional testing, UI testing, and experience audit._
 
+>[!TIP]
+>
+>As an alternative to a standard rolling deployment, you can use a canary deployment to validate a new build on production infrastructure before you route live traffic to it. See [Use Canary Deployments to Validate Code](/help/implementing/cloud-manager/canary-deployments.md).
+
+
 ## Deployment process {#deployment-process}
 
 All Cloud Service deployments follow a rolling process to ensure zero downtime. See [How Rolling Deployments Work](/help/implementing/deploying/overview.md#how-rolling-deployments-work) to learn more.
@@ -83,7 +88,7 @@ The **Stage testing** phase involves the following steps:
 
 ### Production deployment phase {#production-deployment}
 
-The process for deploying to production topologies differs slightly to minimize the impact on users of an [!DNL AEM] site.
+The process for deploying to production topologies differs slightly to reduce the impact on users of an [!DNL AEM] site.
 
 Production deployments follow the same steps as previously described, but in a rolling manner. These steps include the following:
 
