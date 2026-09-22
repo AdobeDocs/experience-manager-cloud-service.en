@@ -344,6 +344,20 @@ Use this integration to:
 
 To get on the list for access, email [aemcs-optel-access@adobe.com](mailto:aemcs-optel-access@adobe.com), describing your use case and how you intend on ingesting the data. 
 
+#### New Capabilities in Code Assessment Agent Skill for Local IDE Development {#code-assessment-skill}
+
+AI coding agents (Claude Code, Cursor, GitHub Copilot, and similar tools) have broad knowledge of AEM’s underlying technologies (Java, OSGi, Sling, JCR, HTL), but don’t necessarily know best practices for generating and optimizing code or how to debug common AEM development issues. 
+
+For this, Adobe provides installable agent skills, which instruct your coding agent. If interested in this topic, you may find value in watching the Adobe Developers Live 2026 Session [AI-Powered development with AEM CS & AEM Edge Functions](https://www.youtube.com/watch?v=9SWWG3b3oNc).
+
+As part of this release, the code assessment tool has expanded its capabilities to include ...
+
+-placeholder for text
+
+#### New Capabilities in Cloud Migration Agent Skill {#cloud-migration-skill}
+
+-placeholder for text
+
 #### Permission Management Agentic Capabilities in AEM {#permission-management-in-aem}
 
 Ask plain-language questions about who can do what on a content path, and the governance agent audits effective ACLs on your author environment in real time — explaining access decisions and their source policies, listing who holds a given privilege, pinpointing what causes a denial, and recommending groups for grants that follow the least privilege principle. For more information, see [Permission Management in AEM](/help/ai-in-aem/agents/governance/overview.md#permission-management-in-aem)‎
