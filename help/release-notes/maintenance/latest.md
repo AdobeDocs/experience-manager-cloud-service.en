@@ -73,6 +73,10 @@ None.
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
+>[!NOTE]
+>
+> On September 28, 2026, environments still using deprecated APIs **will not receive critical Adobe release updates** and will not be subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further. To once again receive Adobe release updates, a fullstack pipeline must be successfully executed; the update will then be applied within a few days.
+
 ### Security Fixes {#security-28386}
 
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 16 identified vulnerabilities, reinforcing our commitment to robust system protection.
