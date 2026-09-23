@@ -433,6 +433,12 @@ AEM Cloud Service continues to support compiling customer code with Java 11, Jav
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Features {#foundation-early-adopter}
 
+#### Canary Production Deployments to Test Code Before Accepting Live Traffic (Beta Program) {#canary-beta}
+
+Validate a production build with internal-only test traffic before exposing it to end users. Ship to production, route only canary traffic (using a special header), monitor behavior, then either promote to live traffic or roll back—without impacting customers.
+
+[Learn more](/help/implementing/cloud-manager/canary-deployments.md) and email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) to request access and share feedback.
+
 #### Edge Authentication for Edge Delivery Services (Beta Program) {#edge-authentication}
 
 Edge Authentication lets you restrict access to Edge Delivery Services pages to only those who have authenticated with your identity provider (IdP). This is achieved by deploying an OpenID Connect (OIDC) configuration YAML file.
