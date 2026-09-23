@@ -16,33 +16,34 @@ exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
 
 {{see-also-dm}}
 
-Welcome to the Dynamic Media Journey.
-
-**Dynamic Media** is a system for storing, rendering, and delivering interactive rich media — including images and video — from a single high-resolution master asset. This journey covers the basics of Dynamic Media, how it works, what it can do for you, and what value it brings to your work and your customers. Because Dynamic Media renders responsive, on-demand variations of an asset rather than requiring you to produce and store each size manually, it enables interactive, high-quality rich media experiences to be delivered consistently and at scale.
+This guide introduces **Dynamic Media** on **Adobe Experience Manager**, explaining how the system works, the core capabilities it delivers, and how it accelerates the creation, management, and delivery of rich visual media across web, mobile, and marketing channels. **Dynamic Media** enables organizations to serve interactive, responsive, and on-demand imagery and video from a single master asset, reducing production overhead and improving the customer experience across every touchpoint.
 
 **_Prerequisites_**
 
-* Basic understanding of image and video formats
-* Basic understanding of HTML and CSS
-* Basic understanding of design tools such as Adobe Illustrator, Adobe Photoshop, Adobe XD
-* Access to Dynamic Media on Experience Manager is helpful, but not required
+Before beginning this journey, readers benefit from familiarity with the following areas, because **Dynamic Media** interacts directly with these formats, technologies, and design workflows:
+
+* Basic understanding of image and video formats — required because **Dynamic Media** ingests, transforms, and delivers assets in a variety of encodings.
+* Basic understanding of HyperText Markup Language (HTML) and Cascading Style Sheets (CSS) — helpful for embedding and styling **Dynamic Media** deliveries on web pages.
+* Basic understanding of design tools such as Adobe Illustrator, Adobe Photoshop, and Adobe XD — useful because source assets for **Dynamic Media** are typically produced in these applications.
+* Access to **Dynamic Media** on **Adobe Experience Manager** is helpful, but not required to follow along conceptually.
 
 **_What you can expect to learn_**
 
 _Part I_
 
-* What is Dynamic Media and how can it help you?
-* Use cases for Dynamic Media, including interactive product imagery, zoom and pan, and responsive video delivery
-* How an asset flows through the Dynamic Media system — from upload and ingestion to rendering and delivery
+* What **Dynamic Media** is and how it supports scalable, high-performance delivery of rich media.
+* Practical use cases for **Dynamic Media**, including responsive imagery, interactive video, 360° product spins, and personalized visual experiences for eCommerce and marketing.
+* How an asset flows through the **Dynamic Media** system, from ingestion through processing to end-user delivery.
 
 _Part II_
 
-* Anatomy of a Dynamic Media URL and how Dynamic Media delivers content
-* Fundamentals of creating image presets to render assets
-* Image sets, spin sets, and mixed media sets
+* Anatomy of a **Dynamic Media** Uniform Resource Locator (URL) and how **Dynamic Media** delivers content on demand through its image server.
+* Fundamentals of creating **image presets** to render assets at the required dimensions, formats, and quality settings.
+* **Image sets** (collections of related product images for alternate views), **spin sets** (sequences of images that create a 360° rotating view of a product), and **mixed media sets** (combinations of images, video, and spin sets in a single interactive viewer).
 
 **_Audience_**
-The audience that best fits readers of this journey are the following who are new to Dynamic Media on Experience Manager:
+
+This journey is designed for the following roles that are new to **Dynamic Media** on **Adobe Experience Manager**:
 
 * Administrator
 * Business Analyst
@@ -50,386 +51,401 @@ The audience that best fits readers of this journey are the following who are ne
 * Content Author
 * Designer
 * Developer
-* Marketing
-* Product Manager/Owner
+* Marketer
+* Product Manager/Lead
 
 >[!TIP]
 >
->For best results, Adobe recommends that you read and view this Dynamic Media Journey on a desktop computer.
+>For best results, Adobe recommends that you read and view this **Dynamic Media** documentation on a desktop computer, because the visual examples, interactive viewers, and code samples render most clearly on a larger screen.
 
 ## What is Dynamic Media and how can it help you? {#dm-journey-a}
 
-**Dynamic Media delivers rich visual merchandising and marketing assets on demand**, generating multiple channel-ready variations from a single set of source files. It also creates and serves interactive viewing experiences directly to shoppers and site visitors.
+**Dynamic Media** is an Adobe solution that enables brands and marketers to deliver rich visual merchandising and marketing assets on demand. Working from a set of **primary source assets** — such as images, video, and 3D — Dynamic Media generates and delivers multiple variations of this rich content **in real time** through its **global, scalable, performance-optimized CDN (Content Delivery Network)**.
 
-### Key capabilities
+### Key Capabilities
 
-Dynamic Media produces and delivers interactive experiences that increase engagement and reduce the need to store separate files for every use case:
+Dynamic Media creates and serves interactive viewing experiences, including:
 
-- **Zoom** – close, high-resolution inspection of product detail
-- **360-degree spin** – interactive rotation for a complete view of an item
-- **Video** – streaming playback optimized for each viewing context
+- **Zoom** — high-resolution close-up viewing of product imagery
+- **360-degree spin** — rotational product views that let shoppers examine an item from every angle
+- **Video** — streaming media delivered alongside static assets
 
-Assets are dynamically scaled for consumption across **web, mobile, and social** channels, ensuring each viewer receives an appropriately sized rendition without manual resizing or duplicate uploads.
+Assets are dynamically scaled for consumption across **web, mobile, and social sites**. Because rendering happens in real time on the CDN, a single master asset can be reused across every channel and device size, eliminating the need to manually produce and store separate versions for each destination. This reduces production overhead and helps ensure a consistent brand experience wherever customers encounter the content.
 
-### How Dynamic Media works
+### Integration with Adobe Experience Manager Assets
 
-Using a set of primary source assets – such as **images**, **video**, and **3D** – Dynamic Media generates and delivers multiple variations of this rich content in real time. A single source asset therefore produces every device- and channel-specific rendition automatically, which eliminates repetitive production work and keeps every variant consistent with the original.
+Dynamic Media incorporates the workflows of the **Adobe Experience Manager Assets** digital asset management (DAM) solution to simplify and streamline the digital campaign management process. This integration means creative, marketing, and merchandising teams can manage source files, approvals, metadata, and delivery from a unified environment — connecting asset governance directly to omnichannel delivery.
 
-Delivery occurs through a **global, scalable, performance-optimized CDN (Content Delivery Network)**. Because a CDN caches and serves content from locations close to each user, this architecture supports fast load times and consistent visual quality regardless of where the audience is located.
+### One file with multiple delivery options
 
-Dynamic Media incorporates the workflows of the **Adobe Experience Manager Assets** digital asset management solution to simplify and streamline the digital campaign management process. This integration connects asset creation, management, and delivery in one system, so teams can move approved assets from production to publication without switching tools or rebuilding content for each channel.
+**Adobe Dynamic Media operates on a single core principle: one primary asset file, multiple delivery options.** Instead of duplicating and manually re-versioning media for every channel, device, or web page, Dynamic Media stores a single **primary asset** and generates every rendition on demand from that one source.
 
-### One file with endless possibilities
+To appreciate why this matters, consider the traditional workflow for a single asset such as an image or a video. Teams typically create one primary asset and then manually produce versions of that same asset for every experience, every target device, every web page, and every property where the asset appears. Over time, that single asset can balloon to 20, 30, or more versions — often with no version history attached. Now multiply that effort across every image and video in a library. The volume of asset variants becomes overwhelming to maintain and update, and storage costs climb accordingly.
 
-**Adobe Dynamic Media is built on a single principle: one primary asset file, endless possibilities.** From a single source file, Dynamic Media delivers unlimited on-demand renditions of an image or video, eliminating the need to manually produce and store separate copies for every device, page, and experience.
+#### How Dynamic Media is different
 
-#### The traditional problem: version sprawl
+Dynamic Media is fundamentally different from traditional systems because marketers and developers use Dynamic Media to deliver media *dynamically* from single, primary assets through URL calls. The **Dynamic Media URL paths** that a client requests contain embedded instructions that tell the Adobe publish server how to display the asset when it is delivered to a customer's screen. As a result, the same single primary asset can be delivered instantly in **unlimited renditions**, with on-the-fly variations such as:
 
-To understand why this matters, consider the conventional workflow for a single asset such as an image or a video. You create one primary asset. You then manually create versions of that same asset for every experience, every device, every web page, and every property where it is used. Over time, that single asset can grow to **20, 30, or more versions**, none of which carry version history.
+- **Size** — dimensions tailored to the target layout or breakpoint
+- **Format** — image or video format optimized for the requesting client
+- **Resolution** — pixel density matched to the display
 
-Now multiply that effort across your entire library of images and videos. Because each new experience demands another hand-made copy, the number of asset versions quickly becomes overwhelming to maintain and update. This proliferation directly drives up storage costs and increases the risk of inconsistent, outdated assets appearing across channels.
+This means teams no longer need to pre-generate and store every possible variant. Instead, the URL itself defines the rendition, and the server produces it in real time.
 
-#### How Dynamic Media works differently
+#### Consistent quality across every screen and bandwidth
 
-Dynamic Media is fundamentally different from traditional systems because it delivers media _dynamically_ from **single primary assets** through **URL calls**. Each Dynamic Media URL path you request includes instructions that tell the Adobe publish server how to render the asset at the moment of delivery to a customer's screen. Because the transformation happens at request time rather than in advance, one primary asset can be delivered instantly in unlimited renditions.
-
-From that same single primary asset, Dynamic Media can adjust:
-
-- **Size** — dimensions tailored to the target layout or device
-- **Format** — the appropriate file type for the delivery context
-- **Resolution** — sharpness matched to the screen
-- **Weight** — file size optimized for available bandwidth
-- **Color** — color adjustments as needed
-- **Crop** — framing for different placements and aspect ratios
-- **Effects** — interactive treatments such as a zoom view
+This delivery method ensures Adobe Dynamic Media sends consistent, high-quality experiences to any screen, regardless of size or bandwidth. Dynamic Media also optimizes full-size videos for all screen types and **adaptively streams** them, adjusting quality based on the viewer's connection to preserve a smooth, uninterrupted user experience.
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
 ![Adobe Dynamic Media delivers the same primary image to different mediums in different sizes and formats](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+*Adobe Dynamic Media ensures consistent, quality experiences are delivered to any screen, regardless of size or bandwidth.*
 
-_Adobe Dynamic Media ensures consistent, quality experiences are delivered to any screen, regardless of size or bandwidth._
+#### Why "one primary asset, multiple delivery options" matters
 
-This on-demand delivery method ensures consistent, quality experiences reach any screen, regardless of size or bandwidth. Full-size videos are optimized for all screen types and adaptively streamed, so playback adjusts to the viewer's connection and device to preserve a consistent, quality user experience.
+Consolidating on a single primary asset produces several practical benefits that follow directly from the model:
 
-#### Why this matters
+- **Reduced storage footprint** — one source file replaces dozens of manually produced variants.
+- **Faster iteration** — updating the primary asset propagates changes across every downstream rendition automatically.
+- **Consistent brand experience** — every device and channel is served from the same authoritative source, eliminating drift between versions.
+- **Simplified governance** — a single source of truth is easier to track, audit, and update than a sprawling collection of ad hoc copies.
 
-The "one primary asset file, endless possibilities" model streamlines asset management, reduces storage overhead, and guarantees brand consistency across every channel. By managing a single source of truth and generating renditions dynamically, teams update once and deliver everywhere—removing the manual, error-prone work of maintaining dozens of static versions per asset.
+As the following sections explain, this "one primary asset file, multiple delivery options" concept is the foundation for how Dynamic Media scales media delivery efficiently across web, mobile, and connected experiences.
 
 ### The Content Delivery Network
 
-<!-- USE AN IMAGE HERE? ![Content delivery network](/help/assets/assets-dm/cdn.png) -->
-
-When an administrator is ready to publish an image or video asset, that asset is supported by Dynamic Media's backbone: a powerful, top-tier delivery network that serves hundreds of clients around the world every day. Assets are distributed across the **Content Delivery Network (CDN)**, hosted by **Akamai**. The CDN is a distributed network of servers that cooperate transparently to deliver content — especially large, rich media content such as high-resolution images and streaming video — to end users worldwide.
+When you are ready to go live with an image or video asset, Dynamic Media's backbone — a powerful, top-tier delivery network serving hundreds of clients worldwide every day — supports it. Dynamic Media distributes assets across a **Content Delivery Network (CDN)** hosted by **Akamai**. The CDN is a distributed network of edge servers that work together seamlessly to deliver content, especially large rich media files, to end users around the globe.
 
 #### How the CDN Works
 
-Within the CDN system, web content is stored in web caches positioned across the Internet, then delivered from the nearest cache to end users for faster performance. This model relies on edge caching, a widely used approach in which copies of content are held on servers close to the audiences that request them.
+Web content is stored in web caches positioned across the Internet, then served from the nearest cache directly to end users for faster delivery. The process works as follows:
 
-- **First request:** The first time someone downloads a web page, the assets they see are delivered to a CDN cache and stored on that server.
-- **Subsequent requests:** The next time someone in the same geographic area accesses the webpage, the identical cached content is delivered far more quickly.
+1. **First request:** When someone downloads a web page for the first time, the assets are delivered to a CDN cache in that geographic region.
+2. **Cache storage:** Those assets are stored on the local edge server.
+3. **Subsequent requests:** The next time a user in the same area accesses the page, the cached content is delivered from the nearby server rather than the origin.
 
-Because the cached content is located physically closer to the user, it reaches them faster. A CDN therefore accelerates web page displays while simultaneously reducing bandwidth demands on the central server, since content is served from the cache network rather than from a single central server in every instance. This optimized flow directly improves the user experience — faster-loading pages reduce abandonment and friction — which in turn drives increased sales and conversions.
+Content arrives faster because it sits physically closer to the user, reducing network latency and round-trip time. This is the core mechanism that makes CDNs faster than traditional single-origin delivery.
 
-#### CDN Performance at Scale
+#### Benefits for End Users and Businesses
 
-The scale of this delivery network underscores its enterprise-grade reliability:
+A CDN delivers measurable advantages:
 
-- The CDN historically delivers **3.5 petabytes of traffic** to customers every month.
-- The system can deliver **52 billion assets** in a single day.
-- That volume equates to **864,000 images and videos** successfully delivered to customers _every second_.
+- **Faster web page displays** through geographically proximate caching
+- **Reduced bandwidth demand on the central server**, because content is served from the cache network rather than the origin for every request
+- **Improved user experience**, driven by lower latency and quicker asset rendering
+- **Increased sales**, as the optimized delivery flow keeps visitors engaged rather than lost to slow load times
 
-These figures demonstrate the throughput required to serve rich media reliably to a global audience without straining any single origin server.
+#### Performance and Scale
+
+Operating at massive global scale, the CDN historically delivers:
+
+- **3.5 petabytes of traffic to customers every month**
+- **52 billion assets in a single day**
+
+<!-- USE AN IMAGE HERE? ![Content delivery network](/help/assets/assets-dm/cdn.png) -->
+- **864,000 images and videos successfully delivered to customers _every second_**
+
+These figures illustrate the throughput and reliability that Dynamic Media's Akamai-backed CDN brings to rich media distribution.
 
 ### Smart Imaging
 
-Dynamic Media already optimizes assets and ensures that each asset loads quickly on mobile and desktop systems by way of the **content delivery network (CDN)**. To make that happen, **image presets** are used in Dynamic Media to define the quality of your image. They also define the type of image you are sending, its sharpness, and other characteristics for various parts of your experiences or pages.
+Dynamic Media already optimizes assets and ensures that each asset loads quickly on mobile and desktop systems using a Content Delivery Network (CDN). To make that happen, Dynamic Media uses **image presets** to define the quality of your image. Image presets also define the type of image that you are sending, its sharpness, and other rendering parameters for different parts of your experiences or pages.
 
-Beyond image presets, **Smart Imaging** delivers additional value. With Smart Imaging enabled, you can expect a **22% to 47% performance improvement**, depending on your existing image preset settings and specific end-user characteristics — all while keeping image quality as if it were never touched.
+But to add value to Dynamic Media further beyond image presets, there is _Smart Imaging_.
+
+**Smart Imaging delivers a 22% to 47% performance improvement** over standard Dynamic Media delivery, depending on your existing image preset settings and specific end-user characteristics — all while preserving image quality as if the asset were never touched.
 
 #### How Smart Imaging Works
 
-**Smart Imaging automatically optimizes an image's format and file size based on a customer's browser capability and network speed.** It works with your existing image presets (image presets are discussed in Part II of this journey) and applies intelligence at the point of delivery.
+Smart Imaging provides even better image asset delivery performance by automatically optimizing an image's **format** and **file size** based on a customer's **browser capability**. It works with your existing image presets (image presets are discussed in Part II of this journey) and applies intelligence at delivery time.
 
-This intelligence further reduces image file size based on browser capability and network connection speed. Because modern browsers support more efficient image formats than older ones, Smart Imaging selects the most optimal format each browser can render, then compresses accordingly. This happens dynamically at delivery, so no manual re-processing of your presets is required.
+This intelligence further reduces image file size based on browser and **network connection speed**. In short, Smart Imaging automatically optimizes an image's format and file size based on a customer's browser capability and network speed, adapting each delivery to the specific viewing conditions.
 
-#### Business Impact of Smart Imaging
+#### Performance and Business Impact
 
-Because image assets make up most of a page's load time, faster image delivery reduces overall page load time. As a result, this performance improvement directly influences key business indicators, including:
+Because image assets make up most of a page's load time, the performance improvement produced by Smart Imaging directly influences several key business indicators. Faster image delivery leads to:
 
-* **Higher conversion** — faster pages reduce friction that causes users to abandon before completing an action.
-* **Increased time spent on site** — quicker load times keep visitors engaged rather than waiting.
-* **Lower site bounce rate** — pages that render quickly are less likely to be abandoned on arrival.
+* **Higher conversion** rates
+* Increased **time spent on site**
+* **Lower site bounce rate**
 
-Overall, the **22% to 47% performance improvement** is achieved without any perceptible loss in image quality.
+The causal chain is straightforward: smaller, better-optimized images load faster, faster pages create smoother user experiences, and smoother experiences translate into stronger engagement and revenue outcomes.
 
 #### How to Enable Smart Imaging
 
 ![Smart Imaging](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
 
-_Smart Imaging automatically optimizes an image's format and file size based on a customer's browser capability and network speed._
+Adobe Dynamic Media technical support does not turn on Smart Imaging by default because it requires a coordinated effort. Enabling Smart Imaging also requires a complete clearing of your CDN cache, which is then refilled over time — this ensures that previously cached, unoptimized image variants are replaced with the newly optimized deliveries.
 
-Smart Imaging is not turned on by default because it requires a coordinated effort between you and Adobe Dynamic Media technical support. In addition, enabling Smart Imaging requires a complete clearing of your CDN cache, which is then refilled over time. To enable Smart Imaging:
+To use Smart Imaging, follow these steps:
 
-1. **Submit a technical support ticket** to Adobe indicating your interest in using Smart Imaging.
-2. **Receive a URL parameter** from technical support that lets you try out Smart Imaging beforehand.
-3. **Test the parameter** on any of your web pages or images to observe the performance gains and file-size savings firsthand.
+1. **Submit a technical support ticket** to Adobe Dynamic Media technical support.
+2. **Receive a URL parameter** from technical support that lets you preview Smart Imaging behavior before full activation.
+3. **Test on any web page or image** to measure the performance gains and file-size savings on your own content.
 4. **Request full activation** so that Smart Imaging is turned on for your entire site.
 
-This staged approach lets you validate the performance improvement on real pages before committing to a full CDN cache clearing, ensuring the results meet your expectations across your specific browser and network conditions.
+This trial-then-activate approach allows you to validate the expected 22% to 47% performance improvement against your specific presets and audience before committing to a site-wide rollout.
 
 ### Adaptive Video Sets
 
-An **Adaptive Video Set** groups versions of the same video that are **encoded at different bit rates and formats**, an approach known as **adaptive bitrate streaming**. Dynamic Media uses these sets to deliver the right version of a video to each viewer automatically, based on their device and network conditions.
+An **Adaptive Video Set** groups multiple encoded versions of the same source video — each rendered at a different **bit rate** and **format** — so that the optimal file can be delivered to any device under any network condition. This is Dynamic Media's solution for streaming video smoothly across phones, tablets, and desktops without the publisher having to manually manage encoding, sizing, or delivery logic.
 
-Video is one of the most powerful forms of on-page content. When a video appears on a page, or on a main page, customers tend to engage with that content longer and stay on the page longer, which improves engagement — a behavior Adobe's analytics confirm. However, delivering video is technically complex, because a single large primary file must be adapted to many playback conditions. Determining how to size and deliver that video — so the experience runs smoothly regardless of the device it is viewed on and regardless of available bandwidth — is a significant challenge. Adaptive Video Sets solve this problem.
+#### Why Video Delivery Is Complex
+
+When a page contains video, customers typically engage with that content longer and remain on the page longer — a behavior pattern that Adobe has observed through its own analytics. Capturing that engagement, however, requires solving several technical problems at once:
+
+- The **primary source file is large**, often too heavy to serve directly.
+- The player must decide **how to size, encode, and deliver** the video so that playback is smooth.
+- Playback must remain reliable **regardless of the viewer's device or available bandwidth**.
+
+Dynamic Media addresses these challenges by generating and serving an Adaptive Video Set in place of a single static file.
 
 #### How Adaptive Video Sets Work
 
-Dynamic Media builds an Adaptive Video Set through a straightforward, automated process:
+1. **Upload the primary video.** You start with your original, high-quality source file and upload it into the system.
+2. **Automatic transcoding.** Dynamic Media automatically sizes, or _transcodes_, that source into multiple derivative videos — each encoded at a different resolution and bit rate optimized for a specific class of device or connection speed.
+3. **Intelligent delivery at request time.** When a viewer requests the video, Dynamic Media determines **which encoded version, which quality level, and which format** to serve, then streams it to the phone, tablet, or desktop computer.
 
-1. **Upload the primary video.** You start with your original, primary video, which you upload into the system.
-2. **Automatic transcoding.** Dynamic Media automatically sizes, or **transcodes**, that primary video into multiple videos at different bit rates and formats.
-3. **Intelligent delivery.** At the time of delivery, Dynamic Media intelligently determines which video, what quality, and what format to use, then delivers it to the phone, tablet, or desktop computer.
+For example, on an iOS mobile device, Dynamic Media detects whether the connection is **4G, 5G, or Wi-Fi**. Based on that signal, it automatically selects the appropriate encoded video from the various bit rates within the Adaptive Video Set and streams it to the device.
 
-This automated pipeline ensures that a single uploaded file becomes a full library of optimized renditions, ready to match any playback scenario without manual encoding work.
+#### Automatic Quality Switching
 
-#### Adaptive Playback Across Devices and Networks
+Adaptive Video Sets respond continuously to viewing conditions:
 
-Adaptive Video Sets adjust delivery in real time to match both the device and the connection quality. For example, on an iOS mobile device, Dynamic Media detects the available bandwidth — such as **4G, 5G, or Wi-Fi** — and then automatically selects the correctly encoded video from among the various video bit rates within the Adaptive Video Set. The video is streamed to mobile devices, tablets, or desktop computers.
+- **Network fluctuations:** When network conditions change mid-playback, the player automatically switches to a different encoded version within the set. This keeps playback continuous and reduces interruptions caused by bandwidth drops.
+- **Full-screen viewing on desktop:** When a customer enters full-screen mode, the Adaptive Video Set responds by delivering a higher-resolution encoding, improving the viewing experience at the larger display size.
 
-Playback also adapts continuously during viewing:
+#### Key Benefits
 
-- **Dynamic quality switching:** Video quality is dynamically switched automatically when network conditions change. As a result, viewers on a weakening connection receive a lower bit rate to avoid buffering, while viewers on a stronger connection receive higher quality — keeping playback smooth without interruption.
-- **Full-screen optimization:** If a customer enters full-screen mode on a desktop, the Adaptive Video Set responds by using a better resolution, improving the customer's viewing experience because a larger display benefits from a higher-quality rendition.
+Using Adaptive Video Sets delivers:
 
-Using Adaptive Video Sets provides smooth, high-quality playback for customers viewing Dynamic Media video across multiple screens and devices. This delivers a consistent, professional viewing experience whether the audience is on a phone, tablet, or desktop, and it reduces buffering and quality issues that can drive viewers away. This removes the technical complexity of video delivery from the workflow.
+- **Smooth, high-quality playback** for customers watching Dynamic Media video across multiple screens and devices.
+- **Simplified video management**, because a single source upload is automatically transcoded into every version needed — eliminating the need to manually create, store, and target separate files for each device or bandwidth scenario.
+- **Consistent viewer experience**, since the same Adaptive Video Set adapts on the fly to device capability, connection type, and playback context.
 
 ## Use cases for Dynamic Media {#dm-journey-b}
 
-**Dynamic Media** is a capability for managing, enhancing, and delivering rich media—including images, video, and interactive content—consistently across web, mobile, and social channels. It addresses common media-delivery challenges by automatically optimizing and serving the right asset for each device and context. Solving these challenges drives positive customer engagement, loyalty, conversion, and increased **return on investment (ROI)**, because faster, richer, and more relevant visual experiences directly influence how customers browse, evaluate, and purchase.
+The following are common use-case issues and solutions that Dynamic Media solves to drive positive customer engagement, loyalty, conversion, and increased **Return on Investment (ROI)**.
 
-The following are common use-case issues and solutions that Dynamic Media resolves.
+Dynamic Media addresses recurring challenges faced by marketing, e-commerce, and digital experience teams that must deliver rich visual content at scale across every device, channel, and audience segment. By centralizing image, video, and interactive media production and delivery, Dynamic Media reduces manual production overhead, accelerates time-to-market, and ensures that customers see the right visual experience in the right context — which in turn strengthens engagement and lifts conversion rates.
 
-### Common Dynamic Media use cases
+### Common Dynamic Media Use Cases
 
-- **Responsive imaging across devices** — Delivering large, unoptimized images slows page load and frustrates shoppers. Dynamic Media automatically resizes, crops, and compresses images to match each device and screen size, which improves page performance and reduces bounce rates.
-- **Video delivery and playback** — Hosting and streaming high-quality video reliably across browsers and mobile devices is complex. Dynamic Media encodes and adaptively streams video so playback remains smooth regardless of connection speed, increasing engagement with product and marketing content.
-- **Interactive viewers and zoom** — Static product photos limit how much detail a customer can inspect. Dynamic Media provides interactive viewers with high-resolution zoom, spin sets, and image sets, giving shoppers a closer look that builds purchase confidence and reduces returns.
-- **On-demand image and asset variations** — Creating and storing every image crop, size, and format manually is time-consuming and error-prone. Dynamic Media generates renditions on demand from a single master asset, which streamlines production workflows and ensures visual consistency.
-- **Personalized and contextual media** — Serving the same generic imagery to every visitor reduces relevance. Dynamic Media supports rules-based and contextual delivery so the most appropriate media appears for each audience, supporting higher conversion and stronger brand loyalty.
-- **Scalable delivery and workflow efficiency** — Managing rich media at scale strains creative and IT teams. Dynamic Media centralizes assets and automates delivery, freeing teams to focus on strategy while maintaining fast, reliable media across all channels.
+- **Responsive, device-optimized imagery** — Automatically deliver images sized, cropped, and compressed for the requesting device and viewport. This eliminates the need to produce and store multiple manual renditions, improves page load performance, and creates a consistent visual experience across desktop, tablet, and mobile.
+- **On-demand video delivery and streaming** — Encode, host, and adaptively stream video across channels without third-party video platforms. Adaptive bitrate delivery ensures smooth playback under varying network conditions, which supports higher watch-through rates and richer product storytelling.
+- **Interactive viewers and rich media experiences** — Provide zoom, 360-degree spin, image sets, carousels, and video-with-hotspot viewers that let shoppers examine products in detail. Interactive experiences deepen engagement and reduce purchase hesitation, contributing directly to higher conversion.
+- **Smart cropping and AI-assisted imaging** — Use intelligent cropping to keep the subject of an image centered across every aspect ratio and channel. This removes repetitive manual editing work and keeps merchandising visuals on-brand at scale.
+- **Personalized and contextual visual experiences** — Serve variations of the same asset — different colors, languages, price overlays, or promotional messages — from a single master file. Personalization at the asset level increases relevance for each audience segment and supports loyalty by making experiences feel tailored.
+- **Consistent omnichannel delivery** — Publish once and deliver everywhere: web, mobile apps, email, social, in-store screens, and marketplaces. A single source of truth for media prevents inconsistencies that erode brand trust.
+- **Faster time-to-market for campaigns** — Reuse master assets with dynamic parameters instead of re-shooting or re-editing for every campaign. Marketing teams can launch, iterate, and localize campaigns more rapidly, which sustains momentum and improves campaign ROI.
 
-Together, these solutions help organizations improve customer engagement, strengthen loyalty, lift conversion, and increase overall return on investment (ROI).
+Each of these use cases links a concrete production or delivery problem to a measurable business outcome — reduced operational cost, faster launch cycles, stronger customer engagement, higher conversion, and improved long-term loyalty.
 
 ### Use case: Primary file approach
 
-One of the most important use cases for Dynamic Media is also one of the most obvious: reducing the weight of pages and experiences, and the size of the content being delivered — whether it is an image or a video.
+#### The page-weight problem
 
-#### How one primary file reduces page weight
-
-**About 90% of a typical web page is made up of rich media**, such as images and videos, which are commonly much heavier files. The remaining **10%** consists of **HTML**, **CSS (Cascading Style Sheets)** code, and specific tags. Because rich media dominates the payload, optimizing that 90% delivers the greatest reduction in overall page weight — and **Dynamic Media directly optimizes that 90%, reducing file size at the moment of delivery.**
+**Approximately 90% of a typical web page's weight comes from rich media** — images and video files that are often significantly heavier than other page components. The remaining **10% is HTML, CSS code, and specific tags**. Reducing page weight and content size — whether for an image or a video — is one of the most important and most obvious use cases for Dynamic Media. Lighter pages load faster, perform better on mobile networks, and deliver a smoother experience across devices, all of which contribute to stronger engagement and conversion outcomes.
 
 ![Content page weight](/help/assets/dynamic-media/assets/dm-content-page-weight.png)
-
 _Content page weight of a typical web page._
 
-Earlier, you read about the concept of _one primary asset file with endless possibilities_. **This approach is a decisive lever for reducing overall page weight**, because a single primary asset can be reused on a product detail page, a thumbnail page, the shopping cart, and the search grid. The result is a significant time savings and — just as important — guaranteed consistency across every experience.
+Because rich media dominates page weight, optimizing that 90% is where Dynamic Media focuses. The core concept is **one primary asset file with multiple delivery options**, and this approach is central to reducing overall page weight.
+
+<!-- **The Value of Renditioning??? or Demo portion** -->
+
+#### The single primary file approach
+
+A single primary asset can power many surfaces at once. For example, one product image can be reused on:
+
+- The product detail page
+- A thumbnail page
+- The shopping cart
+- The search grid
 
 ![Primary file approach](/help/assets/dynamic-media/assets/dm-onefile.png)
-
 _The watch is one primary asset file, but with multiple renditions of it &ndash; not copies &ndash; created on the fly._
 
-Let's look closer at the issues Dynamic Media solves with the one file, and the solutions that approach provides.
+This reuse is highly efficient and ensures visual consistency across every experience where the asset appears.
 
-#### Issues solved by the one-file approach
+#### Issues Dynamic Media solves with the single-file approach
 
 | **Issue** | **Dynamic Media solution** |
 |---|---|
 | Create and store every asset. | Use a single image file, automatically creating required renditions only at the moment of delivery. |
 | High storage costs. | Eliminates the need to create and store multiple copies of an asset. |
 | Difficulty maintaining chain of custody. | Guarantees delivery of device-optimized and consistent experiences. |
-| No version history. | Maintains a single source of truth from which every rendition derives, so there is no fragmented trail of duplicate files to track. |
-| Inconsistent brand experiences across devices. | Delivers uniform, brand-accurate renditions optimized for each screen and device. |
-| Unnecessary cost of duplicate asset creation. | Removes the manual duplication step entirely, since variations are generated on demand rather than produced and stored in advance. |
+| No version history. | Maintains a single source of truth, so every rendition traces back to one primary asset and updates propagate everywhere it is used. |
+| Inconsistent brand experiences across devices. | Delivers device-optimized renditions from one master file, ensuring the brand looks the same across screens, resolutions, and form factors. |
+| Unnecessary cost of duplicate asset creation. | Generates variations dynamically at delivery, removing the need to commission, approve, and store duplicates of the same asset. |
 
-When you rely on stored copies instead of one file, you must build an asset for every kind of experience. A single starting image can require 20, 30, or 40 variations — each of which you then have to store and pay for. You also have to ensure the right image is used, which can undermine brand consistency, and if you cannot find a given asset, you are forced back in to duplicate it.
+#### Why duplicating assets creates hidden costs
 
-Dynamic Media eliminates that cycle. It creates variations of images on the fly from one starting image, letting you be creative with that primary asset without returning to a graphic design artist or photo studio to produce additional content. That is money and time saved.
+When teams create a separate asset for every kind of experience, one starting image typically becomes 20, 30, or 40 stored variations — each of which must be paid for and managed. Teams then have to ensure that the correct image is used in each context, which directly affects brand consistency. When an image cannot be located, teams end up duplicating assets again, compounding both storage and coordination costs.
 
 #### Benefits of the one-file approach
 
-With the one-file approach, you use a single primary file and then generate the versions or renditions required across your sites, properties, and experiences only at the moment they are delivered to a customer. This efficiency produces several concrete advantages:
+Dynamic Media creates variations of images dynamically from that one starting image. Creative teams can work flexibly with the primary asset without repeatedly coordinating with the graphic design team or the photo studio to generate additional content. This directly reduces production costs and shortens time-to-market, because renditions are produced on demand rather than pre-built and warehoused.
 
-- **Lower storage requirements** — renditions are generated on demand rather than created and stored in advance.
-- **Reduced workflow complexity** — a single source asset removes the need to manage dozens of duplicate files.
-- **Consistent brand experiences** — every rendition derives from the same primary file, ensuring visual uniformity across channels.
-- **Optimized delivery on every device** — Dynamic Media's delivery system automatically sizes and compresses each image and video for the requesting screen, so assets load quickly and look great on all devices.
-
-Because renditions are produced at the point of delivery and matched to the device requesting them, every image and video arrives optimized — loading quickly and rendering cleanly across desktops, tablets, and phones.
+With the one-file approach, a single primary file powers every downstream version. Renditions required across sites, properties, and customer experiences are generated only at the moment they are delivered to a customer. This efficiency substantially decreases the storage footprint required for assets and reduces overall workflow complexity. Dynamic Media's delivery system guarantees that every image and video is optimized, loads quickly, and looks great on all screens and devices.
 
 ### Use case: Video
 
-Dynamic Media solves the core challenges of video by taking a single source file and automatically optimizing it for every device, network condition, and page placement. Video is one of the most complex asset types to manage: video files carry large inherent file sizes, which makes them difficult to store, move, and deliver reliably. Because viewers access content across a wide range of screen sizes and connection speeds, delivering high-quality video consistently is a persistent technical hurdle.
-
-#### Common Video Delivery Challenges Dynamic Media Solves
+Dynamic Media addresses one of digital commerce's most demanding asset types: **video**. Video assets are inherently complex to manage, store, and distribute because of their large file sizes, multiple format requirements, and the need to render smoothly across a wide range of devices, screen resolutions, and network conditions. Without an automated pipeline, teams typically face manual transcoding, inconsistent playback quality, and slow load times — all of which directly impact brand perception and conversion.
 
 | **Issue** | **Dynamic Media solution** |
 |---|---|
-| Difficult to manage and deliver video optimized for various devices. | Use a single video that automatically sizes for all devices. |
-| Videos stall or play in low quality due to user's available bandwidth. | Deliver video through an **HTML5 (HyperText Markup Language) player** that automatically detects available bandwidth and applies **adaptive bitrate streaming**, ensuring high fidelity and smooth playback while eliminating stalls and buffering. |
-| Unfeasible and time-consuming to manually create all versions of a video just to ensure good display and playback across devices. | Eliminate hours of tedious **transcoding** work with a simplified workflow. |
-| | Free up time for higher value work, allowing teams to focus on strategy and content creation rather than manual encoding tasks. |
+| Difficult to manage and deliver video optimized for various devices. | Use a **single master video** that automatically sizes and reformats for all devices, screen resolutions, and orientations. |
+| Videos stall or play in low quality due to the user's available bandwidth. | Deliver video through an **HTML5 player** that **auto-detects available bandwidth** and dynamically adapts stream quality (adaptive bitrate streaming) to ensure high fidelity and smooth, uninterrupted playback. |
+| Unfeasible and time-consuming to manually create all versions of a video just to ensure good display and playback across devices. | Eliminate hours of tedious **transcoding** work — the process of converting a source video into multiple encoded formats and resolutions — with a simplified, automated workflow. |
+| | **Free up team capacity for higher-value creative and strategic work**, since production teams no longer have to hand-produce device-specific renditions. |
 
-Customers come to Dynamic Media with the following issues that they are hoping to solve. As one representative account illustrates, uncertainty about playback quality can cause organizations to withhold video they have already invested in producing:
+Customers come to Dynamic Media with the following issues that they are hoping to solve:
 
-"_My business has the video, and the department spent a large amount of money creating it, but shied away from placing it on pages, or delivering it. The reason was because from testing, the quality of the video could not be guaranteed, or even if it was really going to play. And ultimately, that affects the business's brand and potentially its role to conversion._"
+"_My business has the video, but avoided delivering it. Testing showed the video quality was inconsistent. This affects the brand and conversion._"
 
-#### How Dynamic Media Delivers Consistent Video Quality
+Inconsistent playback erodes user trust and increases bounce rates, because visitors interpret stalled or low-quality video as a signal of poor product or brand quality. Dynamic Media's solution is to take that one primary video file and let Dynamic Media generate all the required sizes and encodings through its automated **transcoding** process. That output is then paired with Dynamic Media's **intelligent video player**, which selects the optimal rendition in real time based on device and connection.
 
-Dynamic Media's solution takes that one primary video file and generates all required sizes through its **transcoding process**. It then pairs that output with Dynamic Media's **intelligent video player**. This workflow guarantees a consistent, high-quality experience across every placement. Whether marketers place the video on a main landing page, a category page, or a product detail page, the video renders consistently and delivers **high quality** across every touchpoint. As a result, brands avoid the playback failures and quality inconsistencies that can undermine both user trust and conversion.
+As a result, this workflow guarantees consistent, high-quality playback wherever the video appears — whether on the main landing page, a category page, or a product detail page — helping preserve brand integrity and supporting stronger conversion performance across the customer journey.
 
-Dynamic Media addresses additional use cases beyond video.
+Here are several more use cases to consider.
 
 ### Use case: Single source of truth
 
-A **single source of truth** consolidates every digital asset into one authoritative location, giving teams a consistent, up-to-date foundation for all content across channels.
-
 | **Issue** | **Dynamic Media solution** |
 |---|---|
-| Digital assets scattered across the organization, siloed in different teams or business units. | Store and manage all digital assets in a **single, central location**. |
-| Team members download and create local versions. | Team members use a **single primary source file** to create _and_ deliver every version needed across various screen sizes and devices, ensuring brand consistency. |
-| Single-use assets created for every experience and device. | Eliminates single-use assets, **saving time and money** because one source file serves every experience. |
+| Digital assets scattered across the organization, siloed in different teams or business units. | Store and manage all digital assets in a **single central repository**, giving every team one authoritative source. |
+| Team members download and create local versions. | Team members work from **one primary master file** to create _and_ deliver every version needed across screen sizes and devices. |
+| Single-use assets created for every experience and device. | **Eliminates single-use assets**, which reduces duplicated production work and lowers the time and cost of creating them. |
 
 ### Use case: AI-powered Smart Cropping for rich media
 
 | **Issue** | **Dynamic Media solution** |
 |---|---|
-| Time-consuming and labor intensive to manually draw, measure, and cut images or videos to highlight the focal point and deliver responsively across all screen sizes and devices. | Uses **Smart Crop** in Dynamic Media, an **Adobe AI capability**, to automatically detect the focal point in any image or video and crop around it, preserving that focus. |
-| Time lost that could be better spent creating high-impact experiences. | Preserves the intended point of interest at any screen size. |
-| Single-use assets created for every experience and device. | Eliminates manual tasks, so teams deliver high-quality, fast-loading imagery and video optimized for any device or screen. |
+| Time-consuming and labor intensive to manually crop, resize, and reframe images or videos to highlight the focal point and display appropriately across all screen sizes and devices. | Uses **Smart Crop** in Dynamic Media, an Adobe Artificial Intelligence (AI) capability, to automatically identify the focal point—the visual subject or point of interest—in any image or video, then intelligently crops around it to preserve that focus across every rendition. |
+| Time lost that could be better spent creating high-impact experiences. | Captures the intended point of interest regardless of screen size, so creative teams can redirect effort toward designing high-impact campaigns rather than reformatting assets. |
+| Single-use assets created for every experience and device. | Eliminates repetitive manual production work while delivering high-quality, fast-loading imagery and video that supports stronger engagement and conversion, rendering sharply and consistently across desktops, tablets, mobile phones, and other screen sizes. |
 
 ### Use case: Interactive media authoring
 
 | **Issue** | **Dynamic Media solution** |
 |---|---|
-| Flat and static customer experiences fail to engage shoppers, and because they do not hold attention, they weaken loyalty and reduce conversion. | Empowers non-technical users — including marketers and merchandisers — to easily and seamlessly add interactive elements such as **hot spots**, **carousels**, and **spin sets**, transforming static product pages into interactive, exploratory experiences that hold attention and encourage discovery. |
-| Limited return on investment from underused digital assets, resulting in lackluster customer experiences that leave the full value of rich media untapped. | Drives conversion and return on investment by turning digital assets into interactive rich media that lets customers examine products closely, which builds purchase confidence and maximizes the value extracted from each asset. |
+| **Flat and static customer experiences** that fail to engage audiences, build loyalty, or drive conversion. | Empowers non-technical users to easily and seamlessly add interactive elements such as **hot spots**, **carousels**, and **spin sets**, producing more dynamic, engaging shopping and browsing experiences without developer involvement. |
+| **Limited return on investment** from underused digital assets and lackluster customer experiences. | Drives higher conversion rates and stronger return on investment by transforming static digital assets into interactive rich media experiences that hold shopper attention, encourage product exploration, and reduce reliance on additional creative production. |
 
 ## How an asset flows through the Dynamic Media system {#dm-journey-c}
 
-A typical **Adobe Dynamic Media** workflow moves an asset through three sequential phases: **Creation**, **Authoring**, and **Publishing**. Each phase builds on the previous one, ultimately delivering optimized content across every major channel.
-
-![Dynamic Media workflow](/help/assets/dynamic-media/assets/dm-workflow.png)
+A typical **Dynamic Media** workflow moves an asset through three sequential phases: **(1) Creation**, **(2) Authoring/Upload**, and **(3) Optimization and Publishing**. The end result is a single **primary asset** delivered dynamically across web, print, email, desktop, and mobile channels from centralized **Dynamic Media servers**.
 
 _How an asset flows through the Dynamic Media system._
 
-### Phase 1: Creation — Producing the Primary Asset
+**1. Creation phase — producing the primary asset**
 
-The workflow begins with the **creation phase**, whose primary goal is to finish with a completed **primary asset**. Primary assets typically originate from one of the following sources:
+The workflow begins in the creation phase, where the goal is to produce a high-quality **primary asset**. These primary assets typically originate from:
 
-- **Photo shoots**, producing high-resolution imagery
-- **Video vendors**, supplying video content
-- **Audio files** created specifically for the project
+![Dynamic Media workflow](/help/assets/dynamic-media/assets/dm-workflow.png)
 
-Adobe Creative Suite applications support this phase, including **Adobe InDesign**, **Adobe Photoshop**, and **Adobe Illustrator**, which help produce and refine the content before it enters the system.
+- Professional photo shoots
+- Video vendors and production partners
+- Audio files produced for the project
 
-### Phase 2: Authoring — Uploading and Configuring in Dynamic Media
+**Adobe Creative Suite** applications support this stage, including **Adobe InDesign**, **Adobe Photoshop**, and **Adobe Illustrator**, which are used to design, retouch, and finalize the source content before it enters the Dynamic Media system.
 
-Once creation is complete, the asset moves into the **Authoring solution** by being uploaded into Dynamic Media. Within Dynamic Media, the key configuration step is aligning the correct **image presets** and **viewers** with the various web pages across the site. This ensures each asset renders correctly and is presented in the appropriate interactive experience for its intended page.
+**2. Authoring phase — uploading into Dynamic Media**
 
-### Phase 3: Publishing — Optimizing and Delivering to Servers
+Once creation is complete, the finished asset is uploaded into the Authoring solution within **Dynamic Media**. During this phase, the correct **image presets** and **viewers** are configured and aligned with the various web pages on the site, so that each asset renders with the appropriate size, quality, and interactive behavior for its intended placement.
 
-In the final phase, the content is optimized and published to the **Dynamic Media servers**, making the asset available for delivery. As a result, the published content is ready to serve across every major channel:
+**3. Publishing phase — optimization and multi-channel delivery**
 
-- **Web**
-- **Print**
-- **Email**
-- **Desktops**
-- **Mobile devices**
+In the final phase, the content is optimized and published to **Dynamic Media servers**. This optimization prepares the asset for dynamic delivery, which enables a single master file to be reused efficiently across every output channel. Once published, the asset becomes available for delivery to:
 
-Publishing to the Dynamic Media servers is what makes the optimized asset accessible to end users, completing the journey from initial creation through authoring to multi-channel delivery.
+- **Web** pages and responsive sites
+- **Print** production
+- **Email** campaigns
+- **Desktop** experiences
+- **Mobile** devices
+
+This centralized publish-once, deliver-anywhere model ensures visual consistency across channels while reducing the need to store and manage separate renditions for each destination.
 
 ### Uploading Assets into Dynamic Media
 
-**Adobe recommends uploading assets in a lossless format** to maximize the value of Dynamic Media's single-file support. When you finish creating a primary asset, you upload it into Dynamic Media, where the file type, format, and size are critical attributes. Upload is the moment to ensure you extract the maximum value from **one primary asset file**, because Dynamic Media generates every rendition and delivery variation from that original.
+After creating a primary asset, upload it into Dynamic Media. The **file type, format, and size** are critical attributes that determine how Dynamic Media processes and delivers the asset. At the time of upload, ensure you extract the maximum value from the **one-file support** model.
 
-For example, the watch image referenced below measures **4560 x 3020 pixels**. Even if you never publish an image at that full size, you can still upload it. **The larger the source image, the higher the quality Dynamic Media can deliver — down to the smallest thumbnail rendition** — because Dynamic Media scales down from the original rather than up.
-
-Remember this rule: you can easily **decrease** the resolution of an existing image, but increasing the resolution produces poor results. If you attempt to **increase** the resolution of an image, the result is unsatisfactory because upscaling cannot recover detail that was never captured in the original file.
-
-![Recommended formats to upload into Dynamic Media](/help/assets/dynamic-media/assets/dm-upload-formats.png)
+For example, the watch image below measures **4560 x 3020 pixels**. Even if you never intend to display an image at that full size, you should still upload it at the highest available resolution. The larger the source image, the better the quality Dynamic Media can deliver across every rendition — down to the smallest thumbnail — because Dynamic Media can downsample from a high-resolution master without introducing artifacts. Remember this key principle: you can easily _decrease_ the resolution of an existing image, but attempting to _increase_ the resolution of a low-resolution image produces unsatisfactory, pixelated results.
 
 #### Considerations for Asset Uploads
 
-**Adobe recommends starting with the highest-resolution images in a lossless format** that you can practically work with. Key guidance for uploads includes:
+![Recommended formats to upload into Dynamic Media](/help/assets/dynamic-media/assets/dm-upload-formats.png)
 
-- **Use a lossless format.** The preferred formats are **TIFF** or **PNG**, which preserve full image quality.
-- **Avoid JPEG.** JPEG uses lossy compression, so each time you deliver a JPEG or re-save a JPEG, image quality degrades further over time. This cumulative loss is why lossless formats are the safer starting point.
-- **Upload the largest quality you can maintain.** A higher-resolution source gives Dynamic Media more data to work from for every downstream rendition.
+**Recommended file formats:** Adobe recommends uploading assets in a **lossless format**. Avoid **JPEG** as a source format because each time you deliver or save a JPEG, image quality degrades due to its lossy compression. Instead, begin with the highest-resolution images in a lossless format. The preferred formats are typically:
 
-#### Color Space: RGB vs. CMYK
+- **TIFF** (Tagged Image File Format)
+- **PNG** (Portable Network Graphics)
 
-For digital channels and web views, you typically think in terms of **RGB (Red, Green, Blue)**, the standard color space for on-screen delivery.
+**Color space considerations:** When planning for digital channels or web delivery, the default color space is **RGB (Red, Green, Blue)**, which corresponds to how screens render color using light.
 
-By contrast, **CMYK (Cyan, Magenta, Yellow, Key/Black)** is the color space most often used for delivering printed items. Many people never consider delivering in CMYK — but **Dynamic Media can deliver in both color spaces**.
+Most users do not consider delivering assets in **CMYK (Cyan, Magenta, Yellow, Key/Black)** or why they would need to. CMYK is the standard color space for printed materials because it corresponds to the inks used in offset and digital printing presses. However, Dynamic Media supports delivery in both color spaces.
 
-This matters because many customers still produce printed materials. Warehouse wholesale clubs and grocery stores, for instance, often print flyers on a weekly basis. Such customers require their images in **both RGB and CMYK**. Traditionally, meeting that requirement meant maintaining two separate images: one in RGB and one in CMYK.
+Many customers still rely on print production, including:
 
-Dynamic Media eliminates this duplication. You can upload **CMYK assets directly into Dynamic Media** and have Dynamic Media automatically deliver **RGB assets through an image preset or a color profile**. As a result, there is no need to create multiple versions of a file, which preserves the core principle of **one primary asset file with endless possibilities**.
+- **Warehouse wholesale clubs** producing member catalogs
+- **Grocery stores** printing weekly flyers and circulars
 
-<!-- **The Value of Renditioning??? or Demo portion** -->
+These customers require their images in both RGB and CMYK. Traditionally, meeting this requirement meant maintaining two separate files: one RGB version and one CMYK version. With Dynamic Media, however, you can upload CMYK assets directly, and Dynamic Media will automatically deliver RGB assets through an image preset or a color profile. This eliminates the need to create and manage multiple versions of the same file, preserving the core principle of **one primary asset file with multiple delivery options**.
 
 ### Publish and preview assets
 
-Publishing is required before uploaded assets can be used in any Dynamic Media experience, because unpublished assets are not accessible through Dynamic Media delivery. As a best practice, publish assets immediately after uploading them.
+#### Publish assets in Dynamic Media
 
-#### Publishing assets
+After you upload assets into Dynamic Media, publish them so they become deliverable to any customer-facing experience. To publish manually:
 
-To publish assets manually in Dynamic Media:
+1. Select the uploaded assets in Dynamic Media.
+2. Click **[!UICONTROL Publish]** or **[!UICONTROL Quick Publish]**.
 
-1. Select the assets you want to make available.
-2. Click **[!UICONTROL Publish]** or **[!UICONTROL Quick Publish]** in Dynamic Media.
+Publishing is required whenever you intend to use assets in any experience, because unpublished assets are not served through Dynamic Media's delivery layer and therefore cannot be referenced from a live web page. Once assets are published, as a result they become available for inclusion in a web page in two ways:
 
-After assets are published, they are available for inclusion in a web page in two ways:
+- Copy the **Dynamic Media-generated URL** and reference it directly.
+- Copy the **embed code** and paste it into the page markup.
 
-- **Copy a Dynamic Media-generated URL (Uniform Resource Locator)** and reference it directly on the page.
-- **Embed the provided code** on the page.
+#### Automatic publishing on upload
 
-##### Automatic publishing on upload
+Beyond the manual workflow, Dynamic Media supports automatic publishing. You can configure Dynamic Media to instantly publish assets at the moment of upload, without any user intervention. This eliminates the manual publish step and shortens the time between ingesting a new asset and having it available for web delivery.
 
-Besides manually publishing assets, you can configure Dynamic Media to publish assets automatically—without any user intervention—at the time of upload. Automatic publishing eliminates the manual selection and publish step, which streamlines high-volume workflows and ensures newly uploaded assets are immediately ready for delivery.
+#### Preview asset renditions
 
-#### Previewing asset renditions
+After upload, Dynamic Media offers multiple ways to preview an asset's renditions. Previewing shows you what a customer sees before the asset is embedded in production, which helps validate cropping, sizing, viewer behavior, and overall visual quality.
 
-Following upload, Dynamic Media provides multiple ways to preview an asset's renditions. Previewing renditions shows how the asset appears to the end customer before it is used in a live experience. There are two common preview methods.
+##### Preview with an image preset
 
-##### Method 1: Preview with an image preset
+A common preview method uses **image presets**:
 
-To preview a rendition using an image preset:
+1. Select an asset in Dynamic Media.
+2. Open its **Renditions**.
+3. Choose an **image preset** (for example, "Large").
 
-1. Select an asset.
-2. View its **Renditions** by selecting an _image preset_, as shown below.
+The resulting URL path contains the image preset name (such as "Large") and is the same URL you use in a web page.
 
 ![Previewing a rendition of an asset based on the Large image preset](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
+_Previewing a rendition of an asset based on the selected "Large" image preset. The resulting URL path contains the "Large" image preset name and is used in a web page._
 
-_Previewing a rendition of an asset based on the selected "Large" image preset. The URL button was clicked. The resulting URL path contains the "Large" image preset name and can be used in a web page._
+The URL above is live! [Try it](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target="_blank"}.
 
-The URL above is live. [Try it](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target="_blank"}.
+##### Preview with a viewer preset
 
-##### Method 2: Preview with a Viewers preset
-
-To preview an asset using a Viewers preset:
+Another method to preview an asset uses **viewer presets**, which render the asset inside an interactive HTML5 viewer:
 
 1. Select the image asset.
-2. Select a _Viewers_ preset, as shown below.
+2. Choose a **Viewers** preset (for example, "ZoomVertical_light").
+3. Use the URL and Embed buttons to copy the delivery URL or the embed snippet.
 
 ![Previewing an asset based on the Zoom Vertical Light viewer preset](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
-
 _Previewing an asset based on the selected "ZoomVertical_light" viewer preset. The mouse pointer (`+`) was moved over the watch to zoom in. Notice the URL and Embed buttons._
 
-The rendition above is live. [Try it](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&config=jpearldemo/ZoomVertical_light){target="_blank"}.
+The rendition above is live! [Try it](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&config=jpearldemo/ZoomVertical_light){target="_blank"}.
 
 ## Optional - Learn more
+
+Part I of this documentation covered the fundamentals of Dynamic Media in Adobe Experience Manager, a capability designed to deliver responsive, interactive rich media — including images, sets, and video — across web, mobile, and connected channels. To deepen your understanding of the concepts introduced in Part I, use the curated resources below. These supplementary materials expand on Dynamic Media workflows, configuration, and delivery patterns in greater technical detail. Otherwise, continue with Part II of this documentation. See [What's next in this Dynamic Media Journey](#whats-next).
 
 <!--
 _Dynamic Media Help topics_
@@ -446,33 +462,27 @@ _Dynamic Media Help topics_
 * [Work with Selective Publish in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)
 -->
 
-Part I of this journey covered the fundamentals of Dynamic Media, including asset delivery, interactive viewers, and integration with Adobe Experience Manager (AEM). To explore these Dynamic Media concepts in greater depth, use the curated resources below. Otherwise, you can continue directly with Part II of this journey. See [What's next in this Dynamic Media Journey](#whats-next).
+_Dynamic Media tutorials_
 
-These supplementary materials expand on the core topics introduced in Part I, providing deeper technical explanation, guided walkthroughs, and live examples that reinforce practical understanding.
+* [Use Dynamic Media with Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use) — feature videos and guided walkthroughs demonstrating how to enable, configure, and apply Dynamic Media capabilities directly within Adobe Experience Manager Assets, including asset ingestion, image presets, and dynamic delivery.
+* [Adobe Experience Manager content library](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (search on _Dynamic Media_) — a broader Experience League learning hub where you can filter recommended tutorials, courses, and articles by searching for _Dynamic Media_ to find role-based learning paths for administrators, developers, and marketers.
 
-### Dynamic Media Tutorials
+_Dynamic Media viewers_
 
-* [Use Dynamic Media with Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html) — a feature-focused overview demonstrating how Dynamic Media works within Adobe Experience Manager (AEM) Assets to deliver rich, responsive media experiences.
-* [Adobe Experience Manager content library](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) — the comprehensive Adobe Experience Manager (AEM) learning hub. Search on _Dynamic Media_ to surface additional tutorials, articles, and reference documentation.
+* [Live Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) of each viewer — interactive, working demonstrations of each Dynamic Media viewer type (such as zoom, spin, video, and carousel viewers), useful for evaluating viewer appearance, user interaction, and behavior before implementing them on production sites.
 
-### Dynamic Media Viewers
+## What's next in this Dynamic Media documentation {#whats-next}
 
-* [Live Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) of each viewer — interactive demonstrations that showcase how each Dynamic Media viewer renders and behaves in a real browser environment, so you can evaluate viewer capabilities and appearance before implementation.
+Part II of this documentation continues the Dynamic Media journey with a deeper technical focus on asset delivery and multi-asset viewer experiences. Specifically, Part II covers:
 
-## What's next in this Dynamic Media Journey {#whats-next}
+- **Dynamic Media URLs** — a close examination of URL structure and parameters, so you understand exactly what happens behind the scenes when an asset is requested and delivered.
+- **Image presets** — the fundamentals of creating presets that dynamically render assets at the size, format, and quality required by each delivery context.
+- **Image Sets** — how to create sets that let users view a product or asset from multiple angles or variations within a single interactive viewer.
+- **Spin Sets** — how to assemble sequences of images that produce a 360-degree rotational viewing experience.
+- **Mixed Media Sets** — how to combine different asset types, such as images, spin sets, and video, into a unified viewer.
 
-Part II of this journey examines **Dynamic Media URLs** in detail, explaining how an asset is processed and delivered to the requesting browser or application. Understanding the structure of these URLs clarifies exactly how Dynamic Media generates and serves each rendition on demand.
+Together, these topics build directly on the foundational concepts introduced in Part I and prepare you to configure richer, more interactive Dynamic Media experiences.
 
-Part II covers the following core topics:
-
-- **Dynamic Media URLs** — a close look at URL syntax to understand what happens during asset delivery.
-- **Image presets** — the fundamentals behind creating image presets that render assets at specific sizes, formats, and quality settings.
-- **Image sets** — collections that let viewers browse multiple related images of a product or subject.
-- **Spin sets** — sets that enable interactive 360-degree rotation of an asset.
-- **Mixed Media sets** — sets that combine images, spin sets, and video into a single unified viewing experience.
-
-Because image presets and these viewer sets determine how assets appear across devices and channels, mastering their creation is essential to delivering consistent, responsive visual experiences at scale.
-
-Take me to [Dynamic Media Journey: The Basics, Part II](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
+Continue to [Dynamic Media: The Basics, Part II](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->
