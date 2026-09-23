@@ -352,7 +352,7 @@ AI coding agents (Claude Code, Cursor, GitHub Copilot, and similar tools) have b
 
 Available on October 1st, the code assessment tool has expanded its capabilities to include query optimization. It checks whether a JCR/Oak query is actually served by an index — and flags index definitions that look correct but are subtly misconfigured in ways that cause missed queries or silently incomplete results.
 
-If interested in AI tooling for developers, consider watching the Adobe Developers Live 2026 session [AI-Powered development with AEM CS & AEM Edge Functions](https://www.youtube.com/watch?v=9SWWG3b3oNc).
+If interested in AI tooling for developers, consider watching the Adobe Developers Live 2026 session [*AI-Powered development with AEM CS & AEM Edge Functions*](https://www.youtube.com/watch?v=9SWWG3b3oNc).
 
 #### New Capabilities in Cloud Migration Agent Skill {#cloud-migration-skill}
 
@@ -439,16 +439,16 @@ Edge Authentication lets you restrict access to Edge Delivery Services pages to 
 
 If interested, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case and any questions you may have.
 
-#### CX Enterprise Coworker: AEM Developer-Focused Capabilities (Beta Program) {#replication-ai-troubleshooting-beta}
+#### CX Enterprise Coworker: AEM Developer-Focused Capabilities (Beta Program) {#coworker-ai-troubleshooting-beta}
 
-Coworker supports [AI-prompts to drive Cloud Managerand](/help/ai-in-aem/agentic-capabilities/brand-experience/development/use-cases.md) and there are opportunities for agentic AI to support developer use cases including troubleshooting, insights, and productivity in areas such as:
+Today for developers, Coworker supports AI prompts to drive Cloud Manager. We're further expanding agentic AI support for developer use cases — troubleshooting, insights, and productivity — in areas including:
 
-* CDN and dispatcher (e.g., *Why is my site slow? Why do I see stale content?*)
-* replication (e.g., *why is my replication queue blocked?*)
-* workflows (e.g., 
-* code modernization (e.g., *propose a patch to replace deprecated APIs*)
- 
-To join the Beta Program, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com), describing your interest.
+* **CDN and dispatcher** (e.g., *Why is my site slow? Why do I see stale content?*)
+* **Replication** (e.g., *Why is my replication queue blocked?*)
+* **Workflows** (e.g., *List any failed workflows*)
+* **Code modernization** (e.g., *Propose a patch to replace deprecated APIs*)
+
+To join the Beta Program, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com) describing your interest.
 
 ## [!DNL Experience Manager] Guides {#guides}
 
