@@ -314,28 +314,31 @@ Validate file attachments in Adaptive Forms before or on submission using custom
 
 #### Canary Deployments - Validate Features Before Accepting Live Traffic {#canary-deployments}
 
-For AEM Cloud Service implementations, validate a new release against production infrastructure before it serves customer traffic. Deploy the build alongside your current stable release on the publish tier, then route selected requests to it with a request header. All other traffic continues to be served by the stable release, unaffected. The author tier remains on the stable version throughout.
+[Canary deployments] let you validate a new release against production infrastructure before it serves customer traffic. Available **October 1st** for AEM Cloud Service implementations.
 
-During the validation window of several hours, promote the canary release to serve all live traffic, or cancel it and keep the current release running. No action within the window results in automatic promotion.
+Deploy the build alongside your current stable release on the publish tier, then route selected requests to it with a request header. All other traffic continues to be served by the stable release, unaffected. The author tier remains on the stable version throughout.
 
-[Canary deployments](/help/implementing/cloud-manager/canary-deployments.md) will roll out with the upcoming Cloud Manager release on October 1st.
+During the validation window of 3 hours, you can:
+
+* Promote the canary release to serve all live traffic, or
+* Cancel it and keep the current release running.
 
 #### New capabilities in AEM MCP {#aem-mcp}
 
 [AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) allows you to configure a single URL in your chat application or coding agent to access a growing set of capabilities. 
 
-In addition to Content operations (pages, content fragments, and assets) and Experience Governance checks, AEM MCP now supports Cloud Manager operations to manage programs, environments, repositories and pipelines.
+In addition to Content operations (pages, content fragments, and assets) and Experience Governance checks, AEM MCP now supports Cloud Manager operations to manage programs, environments, and pipelines.
+
+Cloud Manager operations were previously only available through the deprecated domain-specific MCPs. Customers using those should switch to the AEM MCP Server.
+
+The AEM MCP Server is also used by the [AEM Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md#install-adobe-experience-manager-connector) and [AEM ChatGPT Plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md#install-adobe-experience-manager-plugin).
 
 <!--
 - Cloud Migration: fetch Best Practices Analyzer (BPA) findings from Cloud Acceleration Manager (CAM) by migration pattern or severity level, enabling AI agents to drive code migration from AEM 6.x to AEM as a Cloud Service. -->
 
-This capability was previously only available in the deprecated domain-specific MCPs, but it is recommended to switch to the AEM MCP Server.
-
-The AEM MCP Server is also used by the [AEM Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md#install-adobe-experience-manager-connector) and [AEM ChatGPT Plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md#install-adobe-experience-manager-plugin).
-
 #### OpenTelemetry for Application Performance Monitoring (APM) (Limited Availability) {#optel}
 
-In Limited Availability – so gradually rolling out in the weeks to come – AEM as a Cloud Service supports [OpenTelemetry](/help/implementing/developing/introduction/opentelemetry-apm-integration.md). OTel is an open, industry-standard way to get traces, metrics, and logs together, sent to the APM provider of your choice.
+In Limited Availability (see note below for access), AEM as a Cloud Service supports [OpenTelemetry](/help/implementing/developing/introduction/opentelemetry-apm-integration.md). OTel is an open, industry-standard way to get traces, metrics, and logs together, sent to the APM provider of your choice.
 
 Use this integration to:
 
@@ -344,13 +347,13 @@ Use this integration to:
 - Build dashboards and alerts for your AEM tiers
 - Correlate AEM behavior with other services during incidents
 
-OpenTelemetry will be available in limited availability on October 1st. To get on the list for access, email [aemcs-otel-access@adobe.com](mailto:aemcs-otel-access@adobe.com), describing your use case and how you intend on ingesting the data. 
+OpenTelemetry will be in Limited Availability on **October 1st**. To get on the list for access, email [aemcs-otel-access@adobe.com](mailto:aemcs-otel-access@adobe.com), describing your use case and how you intend on ingesting the data. 
 
 #### AEM Query Optimization in the Code Assessment Agent Skill (IDE AI Tooling) {#code-assessment-skill}
 
 AI coding agents (Claude Code, Cursor, GitHub Copilot, and similar tools) have broad knowledge of AEM’s underlying technologies, but don’t necessarily know best practices for generating and optimizing code or how to debug common AEM development issues. For this, Adobe provides installable agent skills, which instruct your coding agent. 
 
-Available on October 1st, the code assessment tool has expanded its capabilities to include query optimization. It checks whether a JCR/Oak query is actually served by an index — and flags index definitions that look correct but are subtly misconfigured in ways that cause missed queries or silently incomplete results.
+Available **October 1st**, one such skill – code assessment – has expanded its capabilities to include query optimization. It checks whether a JCR/Oak query is actually served by an index — and flags index definitions that look correct but are subtly misconfigured in ways that cause missed queries or silently incomplete results.
 
 If interested in AI tooling for developers, consider watching the Adobe Developers Live 2026 session [*AI-Powered development with AEM CS & AEM Edge Functions*](https://www.youtube.com/watch?v=9SWWG3b3oNc).
 
