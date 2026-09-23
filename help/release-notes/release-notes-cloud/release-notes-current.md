@@ -312,28 +312,30 @@ Validate file attachments in Adaptive Forms before or on submission using custom
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation New Features {#foundation-new}
 
-#### Canary Deployments to Validate Features Before Accepting Live Traffic {#canary-deployments}
+#### Canary Deployments - Validate Features Before Accepting Live Traffic {#canary-deployments}
 
 For AEM Cloud Service implementations, validate a new release against production infrastructure before it serves customer traffic. Deploy the build alongside your current stable release on the publish tier, then route selected requests to it with a request header. All other traffic continues to be served by the stable release, unaffected. The author tier remains on the stable version throughout.
 
 During the validation window of several hours, promote the canary release to serve all live traffic, or cancel it and keep the current release running. No action within the window results in automatic promotion.
 
-[Canary deployments](/help/implementing/cloud-manager/canary-deployments.md) will roll out with the next Cloud Manager release on October 1st.
+[Canary deployments](/help/implementing/cloud-manager/canary-deployments.md) will roll out with the upcoming Cloud Manager release on October 1st.
 
 #### New capabilities in AEM MCP {#aem-mcp}
 
-[AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) allows you to configure a single URL in your chat application or coding agent to access a growing set of capabilities. In addition to Content operations (pages, content fragments, and assets) and Experience Governance checks, AEM MCP now supports:
+[AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) allows you to configure a single URL in your chat application or coding agent to access a growing set of capabilities. 
 
-- Cloud Manager: manage programs, environments, repositories and pipelines
-- Cloud Migration: fetch Best Practices Analyzer (BPA) findings from Cloud Acceleration Manager (CAM) by migration pattern or severity level, enabling AI agents to drive code migration from AEM 6.x to AEM as a Cloud Service.
+In addition to Content operations (pages, content fragments, and assets) and Experience Governance checks, AEM MCP now supports Cloud Manager operations to manage programs, environments, repositories and pipelines.
 
-These capabilities were previously only available in the deprecated domain-specific MCPs. It is recommended to switch to the AEM MCP Server.
+<!--
+- Cloud Migration: fetch Best Practices Analyzer (BPA) findings from Cloud Acceleration Manager (CAM) by migration pattern or severity level, enabling AI agents to drive code migration from AEM 6.x to AEM as a Cloud Service. -->
+
+This capability was previously only available in the deprecated domain-specific MCPs, but it is recommended to switch to the AEM MCP Server.
 
 The AEM MCP Server is also used by the [AEM Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md#install-adobe-experience-manager-connector) and [AEM ChatGPT Plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md#install-adobe-experience-manager-plugin).
 
 #### OpenTelemetry for Application Performance Monitoring (APM) (Limited Availability) {#optel}
 
-In limited availability – and so gradually rolling out throughout the year – AEM as a Cloud Service supports [OpenTelemetry](/help/implementing/developing/introduction/opentelemetry-apm-integration.md). OTel is an open, industry-standard way to get traces, metrics, and logs together, sent to the APM provider of your choice.
+In Limited Availability – so gradually rolling out in the weeks to come – AEM as a Cloud Service supports [OpenTelemetry](/help/implementing/developing/introduction/opentelemetry-apm-integration.md). OTel is an open, industry-standard way to get traces, metrics, and logs together, sent to the APM provider of your choice.
 
 Use this integration to:
 
@@ -342,17 +344,15 @@ Use this integration to:
 - Build dashboards and alerts for your AEM tiers
 - Correlate AEM behavior with other services during incidents
 
-To get on the list for access, email [aemcs-optel-access@adobe.com](mailto:aemcs-optel-access@adobe.com), describing your use case and how you intend on ingesting the data. 
+OpenTelemetry will be available in limited availability on October 1st. To get on the list for access, email [aemcs-otel-access@adobe.com](mailto:aemcs-otel-access@adobe.com), describing your use case and how you intend on ingesting the data. 
 
-#### New Capabilities in Code Assessment Agent Skill for Local IDE Development {#code-assessment-skill}
+#### AEM Query Optimization in the Code Assessment Agent Skill (IDE AI Tooling) {#code-assessment-skill}
 
-AI coding agents (Claude Code, Cursor, GitHub Copilot, and similar tools) have broad knowledge of AEM’s underlying technologies (Java, OSGi, Sling, JCR, HTL), but don’t necessarily know best practices for generating and optimizing code or how to debug common AEM development issues. 
+AI coding agents (Claude Code, Cursor, GitHub Copilot, and similar tools) have broad knowledge of AEM’s underlying technologies, but don’t necessarily know best practices for generating and optimizing code or how to debug common AEM development issues. For this, Adobe provides installable agent skills, which instruct your coding agent. 
 
-For this, Adobe provides installable agent skills, which instruct your coding agent. If interested in this topic, you may find value in watching the Adobe Developers Live 2026 Session [AI-Powered development with AEM CS & AEM Edge Functions](https://www.youtube.com/watch?v=9SWWG3b3oNc).
+Available on October 1st, the code assessment tool has expanded its capabilities to include query optimization. It checks whether a JCR/Oak query is actually served by an index — and flags index definitions that look correct but are subtly misconfigured in ways that cause missed queries or silently incomplete results.
 
-As part of this release, the code assessment tool has expanded its capabilities to include ...
-
--placeholder for text
+If interested in AI tooling for developers, consider watching the Adobe Developers Live 2026 session [AI-Powered development with AEM CS & AEM Edge Functions](https://www.youtube.com/watch?v=9SWWG3b3oNc).
 
 #### New Capabilities in Cloud Migration Agent Skill {#cloud-migration-skill}
 
@@ -433,21 +433,22 @@ AEM Cloud Service continues to support compiling customer code with Java 11, Jav
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Features {#foundation-early-adopter}
 
-#### Canary Production Deployments to Test Code Before Accepting Live Traffic (Beta Program) {#canary-beta}
-
-Validate a production build with internal-only test traffic before exposing it to end users. Ship to production, route only canary traffic (using a special header), monitor behavior, then either promote to live traffic or roll back—without impacting customers.
-
-[Learn more](/help/implementing/cloud-manager/canary-deployments.md) and email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) to request access and share feedback.
-
 #### Edge Authentication for Edge Delivery Services (Beta Program) {#edge-authentication}
 
 Edge Authentication lets you restrict access to Edge Delivery Services pages to only those who have authenticated with your identity provider (IdP). This is achieved by deploying an OpenID Connect (OIDC) configuration YAML file.
 
 If interested, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case and any questions you may have.
 
-#### Replication AI Troubleshooting (Beta Program) {#replication-ai-troubleshooting-beta}
+#### CX Enterprise Coworker: AEM Developer-Focused Capabilities (Beta Program) {#replication-ai-troubleshooting-beta}
 
-Using the AI Assistant in AEM Author and other interfaces, you can troubleshoot replication-related issues such as blocked queues. To join the Beta Program, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com), describing your interest.
+Coworker supports [AI-prompts to drive Cloud Managerand](/help/ai-in-aem/agentic-capabilities/brand-experience/development/use-cases.md) and there are opportunities for agentic AI to support developer use cases including troubleshooting, insights, and productivity in areas such as:
+
+* CDN and dispatcher (e.g., *Why is my site slow? Why do I see stale content?*)
+* replication (e.g., *why is my replication queue blocked?*)
+* workflows (e.g., 
+* code modernization (e.g., *propose a patch to replace deprecated APIs*)
+ 
+To join the Beta Program, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com), describing your interest.
 
 ## [!DNL Experience Manager] Guides {#guides}
 
