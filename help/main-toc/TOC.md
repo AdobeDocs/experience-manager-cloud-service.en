@@ -845,6 +845,7 @@ user-guide-title: AEM as a Cloud Service
     + [Edit images using Adobe Express in Content Hub](/help/assets/edit-images-content-hub.md)
     + [Generate on the fly Dynamic Media Renditions](/help/assets/generate-on-the-fly-dynamic-media-renditions.md)
     + [Asset Insights in Content Hub](/help/assets/insights-content-hub.md)
+    + [Smart Collections in Content Hub](/help/assets/smart-collection-content-hub.md)
     + [Frequently asked questions for Content Hub](/help/assets/frequently-asked-questions-content-hub.md)  
   + Best practices{#best-practices}
     + [Search best practices](/help/assets/search-best-practices.md)
