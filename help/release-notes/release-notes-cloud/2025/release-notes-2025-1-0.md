@@ -116,6 +116,52 @@ AI-generated video captions in Adobe Dynamic Media use artificial intelligence t
 
 * **[Enhance User Experience with Navigation Buttons in Panel Layouts](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)**: You can now add navigation buttons to your panel layouts, such as Horizontal Tabs, Vertical Tabs, Accordions, or Wizard. These buttons enhance the user experience by simplifying transitions between panels, focusing on the selected panel.
 
+#### Interactive Communication Editor 
+
+[Interactive Communication (IC) Editor](/help/forms/interactive-communication/introduction.md) is now available in AEM Forms as a Cloud Service. It is a browser-based solution for creating, managing, and delivering data-driven interactive correspondences such as business correspondence, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
+
+![Interactive Communication Editor](/help/forms/assets/ic-editor.png)
+
+* **Cloud-Based Editor**: Unlike AEM Forms Desktop Designer which can only be installed on Windows machines, the Interactive Communications editor runs in any modern browser with no installation required. This cloud-based approach eliminates installation hassles, provides cross-platform accessibility, and enables collaboration from any location with internet access. For more information, see [Getting Started with IC Editor](/help/forms/interactive-communication/getting-started.md).
+
+* **Components and Properties**: Build communications using a drag-and-drop component library — text fields, tables, images, barcodes, subforms, and more. Configure layout, typography, margins, and appearance through the Properties panel. For more information, see [Introduction to Interactive Communication Editor](/help/forms/interactive-communication/introduction.md).
+
+* **Data Binding**: Connect components to Form Data Models (FDM) using visual mapping to drive personalized, data-driven output. For more information, see [Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/configure-data-binding.md).
+
+* **Rule Editor**: Build dynamic, data-driven actions directly within your documents using an intuitive, point-and-click interface. Easily define conditional logic, automate workflows, and personalize content without writing code. For more information, see [Create Rules in Interactive Communication Editor](/help/forms/interactive-communication/use-the-rule-editor.md).
+
+* **Templates and Document Fragments**: Create reusable templates and modular content blocks (headers, footers, disclaimers) for consistency and efficiency across multiple communications. For more information, see [Create a Template](/help/forms/interactive-communication/create-interactive-communication-template.md) and [Create a Fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md).
+
+* **Template Locking**: Lock content and layout elements within templates to maintain brand integrity and prevent unauthorised modifications. For more information, see [Template Lock](/help/forms/interactive-communication/enable-template-lock.md).
+
+* **PDF Preview**: Preview Interactive Communication with no data, local JSON files, or data models for flexible, data-driven testing. For more information, see [PDF Preview](/help/forms/interactive-communication/generate-pdf-preview.md).
+
+* **Custom Fonts**: Embed custom or organization-approved fonts to ensure consistent, branded PDF rendering across devices. For more information, see [Add Custom Fonts](/help/forms/interactive-communication/add-custom-fonts.md).
+
+* **Import and Export**: Seamlessly migrate and reuse Interactive Communication with their fragments and data models across environments. For more information, see [Import and Export](/help/forms/interactive-communication/import-and-export-the-interactive-communication.md).
+
+* **Content Overflow**: "Allow page breaks within content" option for flowed layouts for smooth multi-page editing and better text management for complex documents. For more information, see [Content Overflow Handling](/help/forms/interactive-communication/handle-content-overflow.md).
+
+* **XDP File Editing**: Edit XDP files in a browser instead of Forms Designer that runs only on Microsoft Windows desktop. For more information, see [Support XDP Editing](/help/forms/interactive-communication/support-xdp-editing.md).
+
+* **Associate UI**: A simplified runtime interface for customer-facing associates to enter data and generate personalized communications in real time. Invoke the Associate UI directly on Publish instances to simplify integration and accelerate deployment across environments. For more information, see [Associate UI Overview](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md), [Enable and Configure Associate UI](/help/forms/interactive-communication/enable-configure-associate-ui.md), and [Integrate Associate UI](/help/forms/interactive-communication/invoke-associate-ui.md).
+
+* **Dynamic Page Numbering**: Automatically display "Page # of ##" on master pages for clear, consistent pagination across multi-page documents. For more information, see [Dynamic Page Numbering](/help/forms/interactive-communication/implement-dynamic-page-numbering.md).
+
+* **Versioning and Commenting in Interactive Communication Editor**: The Interactive Communication Editor now supports versioning and commenting so authors can save labeled versions, capture reviewer feedback, revert to earlier states, and maintain an audit trail across the content lifecycle. For more information, see [Versioning and Commenting in Interactive Communication Editor](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md).
+
+* **Review and Annotate an Interactive Communication**: Reviewers can now annotate Interactive Communications in a dedicated read-only view, pin comments to specific components on the canvas, and share feedback in one place without editing the design. Authors can track and resolve annotations directly in the editor. For more information, see [Review and Annotate an Interactive Communication](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md).
+
+* **Compare Interactive Communication Versions**: You can now compare any two saved versions of an Interactive Communication side by side as PDF previews to review layout and static content changes before publishing. For more information, see [Compare Interactive Communication Versions](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md).
+
+* **Merge and Split Table Cells**: The Interactive Communication Editor now supports merging adjacent table cells and splitting merged cells back into individual columns, enabling spanning headers, summary rows, and more flexible table layouts. For more information, see [Merge and Split Table Cells](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md).
+
+* **Move a Component to the Master Page**: You can now move a component from a design page to the master page in one action so it appears consistently across every page of an Interactive Communication without recreating it. For more information, see [Move a Component to the Master Page](/help/forms/interactive-communication/howto/move-component-to-master-page.md).
+
+* **Configure Dropdown Options for Associate UI**: Dropdown fields in the Associate UI now use an **Options Binding** model. Authors configure **Bind from Data** for dynamic option lists or manual static options so associates see the correct choices and pre-selected value. **Data Binding** is not supported for dropdown fields. For more information, see [Configure Dropdown Options for Associate UI](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md).
+
+* **Configure Bound and Unbound Variables for Associate UI**: Bound and unbound variables in **Text** components can now be configured for the Associate UI. Authors choose whether associates edit the entire text block inline in the document preview or enter values for individual variables in the data entry panel. Duplicate variable names propagate values across all matching occurrences in the preview. For more information, see [Configure Bound and Unbound Variables for Associate UI](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md).
+
  
 ### Early Access features in AEM Forms {#forms-new-early-access-features}
 
@@ -123,9 +169,9 @@ The AEM Forms Early Access Program program offers a unique opportunity to you to
 
 This release notes lists the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
-#### [HTML email Templates in Adaptive Forms](/help/forms/html-email-templates-in-adaptive-forms.md)
+**[HTML email Templates in Adaptive Forms](/help/forms/html-email-templates-in-adaptive-forms.md)**
 
-Adaptive Forms allows you use HTML email templates. HTML email templates enable you to send rich, personalized, and visually appealing emails when a form is submitted. These emails can be customized with form data and enhanced using various email tags, such as images and links. With Adaptive Forms, you can either upload a file containing an HTML template or use a plain-text editor to create these templates.
+Adaptive Forms allows you use [HTML email templates](/help/forms/html-email-templates-in-adaptive-forms.md). HTML email templates enable you to send rich, personalized, and visually appealing emails when a form is submitted. These emails can be customized with form data and enhanced using various email tags, such as images and links. With Adaptive Forms, you can either upload a file containing an HTML template or use a plain-text editor to create these templates.
 
 ![HTML email templates](/help/forms/assets/html-email.png)
 

@@ -19,36 +19,36 @@ exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
 
 {{work-with-dynamic-media}}
 
-Configuring **[!UICONTROL Dynamic Media General Settings]** is available only if:
+Configuring **[!UICONTROL Dynamic Media General Settings]** is possible only if:
 
-* You have an *existing* **[!UICONTROL Dynamic Media Configuration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager as a Cloud Service. See [Create a Dynamic Media Configuration in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
+* You have an *existing* **[!UICONTROL Dynamic Media Configuration]** in **[!UICONTROL Cloud Services]** for Adobe Experience Manager as a Cloud Service. See [Create a Dynamic Media Configuration in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 * You are an Experience Manager system administrator with administrator privileges.
 
-Experienced website developers and programmers are the intended audience for Dynamic Media General Settings. Adobe Dynamic Media recommends that users who change publish settings be familiar with Dynamic Media on Adobe Experience Manager and basic imaging technology.
+Web developers and programmers are the target audience for Dynamic Media General Settings. Adobe Dynamic Media recommends that users who change publish settings have experience with Dynamic Media on Adobe Experience Manager and basic imaging technology.
 
-On account creation, Adobe Dynamic Media automatically provides the assigned servers for your company. These servers are used to construct URL strings for your web site and applications. These URL calls are specific to your account.
+On account creation, Adobe Dynamic Media automatically provides the assigned servers for your company. These servers are used to construct URL strings for your website and applications. These URL calls are specific to your account.
 
-The Dynamic Media Publish Setup page establishes default settings that determine how assets are delivered from Adobe Dynamic Media servers to web sites or applications. If no setting is specified, the Adobe Dynamic Media server delivers an asset according to a default setting that was configured on the Dynamic Media Publish Setup page.
+The Dynamic Media Publish Setup page establishes default settings that determine how assets are delivered from Adobe Dynamic Media servers to websites or applications. If no setting is specified, the Adobe Dynamic Media server delivers an asset according to the default setting that was configured on the Dynamic Media Publish Setup page.
 
-See also [Optional - Setup and configuration of Dynamic Media settings](/help/assets/dynamic-media/config-dm.md#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings) for more optional configuration tasks.
+See also [Optional – Setup and configuration of Dynamic Media settings](/help/assets/dynamic-media/config-dm.md#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings) for more configuration tasks.
 
 >[!NOTE]
 >
->Upgrading from Dynamic Media Classic to Dynamic Media on Adobe Experience Manager? The General Settings page and [Publish Setup](/help/assets/dynamic-media/dm-publish-settings.md) page in Dynamic Media are pre-populated with the values taken from your Dynamic Media Classic account. The exceptions are all the values that are listed under the **[!UICONTROL Default upload options]** area of the General Settings page. Those values are already in Experience Manager. As such, any changes that you make under **[!UICONTROL Default upload options]**, across any of the five tabs, by way of the Experience Manager user interface, are reflected in Dynamic Media, not in Dynamic Media Classic. All other settings and values in the General Settings page and the [Publish Setup](/help/assets/dynamic-media/dm-publish-settings.md) page are maintained between Dynamic Media Classic and Dynamic Media on Experience Manager.
+>Upgrading from Dynamic Media Classic to Dynamic Media on Adobe Experience Manager? The General Settings page and [Publish Setup](/help/assets/dynamic-media/dm-publish-settings.md) page in Dynamic Media are pre-populated with the values taken from your Dynamic Media Classic account. The exceptions are the values that are listed under the **[!UICONTROL Default upload options]** area of the General Settings page. Those values are present in Experience Manager. Any changes you make under **[!UICONTROL Default upload options]** on the five Experience Manager user interface tabs are reflected in Dynamic Media, rather than Dynamic Media Classic. All other settings and values in the General Settings page and the [Publish Setup](/help/assets/dynamic-media/dm-publish-settings.md) page are maintained between Dynamic Media Classic and Dynamic Media on Experience Manager.
 
 **To configure Dynamic Media General Settings:**
 
 1. In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
-1. In the left rail, click ![Tools icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) > **[!UICONTROL Assets]** > ![Gears edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GearsEdit_18_N.svg) **[!UICONTROL Dynamic Media General Settings]**.
-1. In the Server page, set your **[!UICONTROL Published Server Name]** and **[!UICONTROL Origin Server Name]**, and then use the five tabs to configure default upload options for Image Editing, and for Postscript, Photoshop, PDF, and Illustrator files.
+1. In the left navigation, click ![Tools icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) > **[!UICONTROL Assets]** > ![Gears edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GearsEdit_18_N.svg) **[!UICONTROL Dynamic Media General Settings]**.
+1. In the Server page, set your **[!UICONTROL Published Server Name]** and **[!UICONTROL Origin Server Name]**, and then use the five tabs to configure default upload options for Image Editing and for Postscript, Adobe Photoshop, PDF, and Adobe Illustrator files.
 
    * [Server](#server-general-setting)
    * [Upload to Application](#upload-to-application)
    * [Image Editing](#image-editing-tab) tab
    * [PostScript](#postscript-tab) tab
-   * [Photoshop](#photoshop-tab) tab
+   * [Adobe Photoshop](#photoshop-tab) tab
    * [PDF](#pdf-tab) tab
-   * [Illustrator](#illustrator-tab) tab
+   * [Adobe Illustrator](#illustrator-tab) tab
 
    ![Dynamic Media General Settings page](/help/assets/assets-dm/dm-general-settings.png)
    *Dynamic Media General Settings page, with the **[!UICONTROL Image Editing]** tab selected.*<br><br>
@@ -57,7 +57,7 @@ See also [Optional - Setup and configuration of Dynamic Media settings](/help/as
 
 ## Server {#server-general-setting}
 
-On account creation, Adobe Dynamic Media automatically provides the assigned servers for your company. These servers are used to construct URL strings for your web site and applications. These URL calls are specific to your account.
+On account creation, Adobe Dynamic Media automatically provides the assigned servers for your company. These servers are used to construct URL strings for your website and applications. These URL calls are specific to your account.
 
 | Option | Description |
 | --- | --- |
@@ -68,7 +68,7 @@ On account creation, Adobe Dynamic Media automatically provides the assigned ser
 
 * **[!UICONTROL Overwrite Images]**
 
-    Adobe Dynamic Media does not allow two files to have the same name. Each item's Adobe Dynamic Media ID (the image name minus the filename extension) must be unique. Because of this rule, **[!UICONTROL Upload to Application]** has an overwrite. The exact effect of this option depends on the specified Overwrite Images option you have chosen. These options specify how replacement images are uploaded: whether they replace the original images, or become duplicate images. Duplicate images are renamed with a `-1`. For example, `chair.tif` is renamed `chair-1.tif`. These options affect images uploaded to a different folder than the original or images with a different filename extension from the original, such as JPG, TIF, or PNG.
+    Adobe Dynamic Media requires unique filenames for all files. Each item's Adobe Dynamic Media ID (the image name excluding the filename extension) must be unique. Because of this requirement, **[!UICONTROL Upload to Application]** has an overwrite option. The exact effect of this option depends on the specified Overwrite Images option you have chosen. These options specify how replacement images are uploaded: whether they replace the original images, or become duplicate images. Duplicate images are renamed with a `-1`. For example, `chair.tif` is renamed `chair-1.tif`. These options affect images uploaded to a different folder than the original or images with a different filename extension from the original, such as JPG, TIF, or PNG.
 
     >[!NOTE]
     >
@@ -85,7 +85,7 @@ On account creation, Adobe Dynamic Media automatically provides the assigned ser
 
     Controls the preservation of any existing manual crop definition.
 
-    See also `preserveCrop` in [UploadPostJob](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job) and [ReprocessAssetsJob](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job), both in the Dynamic Media Viewers Reference Guide.
+    See also `preserveCrop` in [UploadPostJob](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job) and [ReprocessAssetsJob](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job) in the Dynamic Media Viewers Reference Guide.
 
 ## Default Upload Options {#default-upload-options}
 
@@ -93,7 +93,7 @@ On account creation, Adobe Dynamic Media automatically provides the assigned ser
 
 This filter lets you fine-tune a sharpening filter effect on the final downsampled image. It helps you control the intensity of the effect, the radius of the effect (as measured in pixels), and a threshold of contrast that is ignored.
 
-The Unsharp Mask effect uses the same options as Photoshop's Unsharp Mask filter. Contrary to what the name suggests, Unsharp Mask is a sharpening filter.
+The Unsharp Mask effect uses the same options as Adobe Photoshop's Unsharp Mask filter. Unsharp Mask is a sharpening filter.
 
 | Unsharp Mask options |Description |
 | --- | --- |
@@ -119,7 +119,7 @@ When you upload PostScript (EPS) image files, you can format them in various way
 | **[!UICONTROL Resolution (pixel/inch)]** | Determines the resolution setting. This setting determines how many pixels are displayed per inch in the file. |
 | **[!UICONTROL Color space]** | &bull; **[!UICONTROL Detect automatically]** - Retains the color space of the file.<br>&bull; **[!UICONTROL Force as RGB]** - It converts to the RGB color space.<br>&bull; **[!UICONTROL Force as CMYK]** - Converts to the CMYK color space.<br>&bull; **[!UICONTROL Force as Grayscale]** - It converts to the Grayscale color space.|
 
-### Photoshop tab {#photoshop-tab}
+### Adobe Photoshop tab {#photoshop-tab}
 
 You can create templates from Adobe&reg; Photoshop&reg; files, maintain layers, specify how layers are named, extract text, and specify how images are anchored into templates.
 
@@ -134,7 +134,7 @@ You can create templates from Adobe&reg; Photoshop&reg; files, maintain layers, 
 
 ### PDF tab {#pdf-tab}
 
-The maximum number of pages for a PDF to be considered for extraction is 5000 for new uploads. This limit will change to 100 pages (for all PDFs) on December 31, 2022. See also [Dynamic Media limitations](/help/assets/dynamic-media/limitations.md).
+The maximum number of pages for a PDF to be considered for extraction is 5000 for new uploads. This limit changes to 100 pages (for all PDFs) on December 31, 2022. See also [Dynamic Media limitations](/help/assets/dynamic-media/limitations.md).
 
 You can choose to rasterize the files, extract search words and links, set the resolution, and choose a color space.
 
@@ -145,13 +145,13 @@ You can choose to rasterize the files, extract search words and links, set the r
 | **[!UICONTROL Resolution (pixel/inch)]** | Determines the resolution setting. This setting determines how many pixels are displayed per inch in the PDF file. The default is 150. |
 | **[!UICONTROL Color space]** | &bull; **[!UICONTROL Detect automatically]** - Maintains the color space of the PDF file.<br>&bull; **[!UICONTROL Force as RGB]** - It converts to the RGB color space.<br>&bull; **[!UICONTROL Force as CMYK]** - It converts to the CMYK color space.<br>&bull; **[!UICONTROL Force as Grayscale]** - Converts to the Grayscale color space. |
 
-### Illustrator tab {#illustrator-tab}
+### Adobe Illustrator tab {#illustrator-tab}
 
 You can rasterize Adobe Illustrator&reg; files, maintain transparent backgrounds, choose a resolution, and choose a color space.
 
 You can use Adobe&reg; Illustrator&reg; (AI) files in Adobe Dynamic Media. Adobe Dynamic Media offers commands for configuring these files as you upload them.
 
-When you upload Illustrator (AI) image files, you can format them in various ways. You can rasterize the files, maintain the transparent background, choose a resolution, and choose a color space. Options for formatting PostScript and Illustrator files are available on the Upload screen under PostScript Options and Illustrator Options in the Upload Job Options box.
+When you upload Adobe Illustrator (AI) image files, you can format them in various ways. You can rasterize the files, maintain the transparent background, choose a resolution, and choose a color space. Options for formatting PostScript and Adobe Illustrator files are available on the Upload screen under PostScript Options and Adobe Illustrator Options in the Upload Job Options box.
 
 
 | Illustrator option | Description |

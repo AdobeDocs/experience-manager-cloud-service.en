@@ -10,9 +10,6 @@ exl-id: 926fd6af-aea1-40be-9d38-8f1ea0900132
 
 # Create an Interactive Communication Template
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 Interactive Communication Templates in AEM allow users to define reusable layout structures such as headers, footers, logos, and default styling. These templates serve as a base to create consistent, branded, and efficient communications.
 
@@ -68,5 +65,6 @@ By following the above steps, you can successfully create an Interactive Communi
 
 ## Next Steps
 
-[Create an interactive communication](/help/forms/interactive-communication/create-interactive-communication.md)
-[Create an interactive communication Fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+- [Create an interactive communication](/help/forms/interactive-communication/create-interactive-communication.md)
+- [Create an interactive communication Fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+

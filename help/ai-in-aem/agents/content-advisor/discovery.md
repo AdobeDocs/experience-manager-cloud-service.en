@@ -116,17 +116,6 @@ Sample prompts:
 
 * **Find assets which match a date based property condition**: Get me assets whose license is not expired.
 
-
-
-
-
-
-
-
-
-
-
-
 **Folder-based content discovery:**  
   The Content Discovery Agent can identify assets by interpreting natural language prompts that reference folder names in AEM. Users can simply mention the folder in their prompt, without manually navigating through the repository, significantly reducing the number of clicks needed to locate the right content.
 
@@ -252,6 +241,83 @@ The content discovery agent provides full-text search capabilities for Content F
 
 You can click the Content Fragment path to seamlessly navigate to the Content Fragment location within AEM.
 
+## Content Discovery Agent availability within Content Hub {#content-discovery-agent-availability-within-content-hub}
+
+You can now access the Discovery Agent directly from the Content Hub interface. This feature is available for Content Hub environments that use the latest search stack, which also provides [AI Search](/help/assets/search-assets-content-hub.md#ai-search-aem-assets-content-hub) and sorting capabilities. Adobe is rolling out the latest search stack to Content Hub customers in phases. If AI Search is available in your Content Hub interface, you can use the Content Discovery Agent.
+
+>[!IMPORTANT]
+>
+>This feature is available as a Limited Availability feature.
+
+To view if [AI Search](/help/assets/search-assets-content-hub.md#enable-disable-ai-search-content-hub) is available, navigate to your user profile icon and click **Configurations** on the Content Hub User Interface. Select the **Search** tab. If you can see options to select **AI Search** or **Keyword**, AI Search is available and you are using the latest search stack.
+
+![AI Search in Content Hub](/help/assets/assets/ai-search-content-hub.png)
+
+
+If AI Search is not yet available and you want to enable Content Discovery Agent within Content Hub, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+
+## What's New in Content Discovery Agent {#whats-new-content-discovery-agent}
+
+### Performance-Aware Asset Recommendations {#performance-aware-asset-recommendations}
+
+Content Discovery Agent now surfaces asset performance data directly in search and recommendation results, helping teams prioritize content that drives engagement on AEM Sites.
+When you search for assets via the AI Assistant, Content Discovery Agent enriches its natural-language search results with real-time performance signals pulled from AEM Sites analytics — average CTR, page views, and view counts — so you can see not just which assets match your query, but which of those are actually working for your audience.
+
+What's New:
+
+* Performance context on every result set. Alongside the usual asset previews (name, format, thumbnail), Content Discovery Agent now surfaces an aggregate performance summary for the returned assets — for example, `These assets average a 9.0% CTR`.
+
+* One-click performance filters. Suggested follow-up prompts let you instantly refine results by performance thresholds without re-typing a query:
+
+   * Show high-performing assets (by view count)
+
+   * Show assets on popular pages (by page views)
+
+   * Show high-engagement assets (by CTR)
+
+* Grounded in real usage data. Recommendations are backed by first-party AEM Sites analytics, not just metadata or tagging relevance — so `best asset for this campaign` now factors in how similar assets have actually performed in live experiences.
+
+>[!IMPORTANT]
+>
+>This feature is available as Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+
+### Discovery skill— Next Best Action Suggestions {#discovery-skill}
+
+Discovery skill now proactively suggests relevant follow-up actions after every search result, helping you dig deeper into your assets without having to guess the right query.
+After returning any set of assets, Discovery Agent now analyzes the result context — folder structure, approval status, file formats, result count, and applied filters — and surfaces a contextual `Here are some things you can do next` list, so your next step is one click away instead of a blank prompt.
+
+>[!IMPORTANT]
+>
+>This skill is available only in Coworker.
+
+What's New:
+
+* Context-aware suggestions, not generic ones. The suggested actions change based on what is actually in the result set. If some assets are still pending approval, Content Discovery Agent surfaces that directly (`Show the 7 images that are not yet approved`). If a result set spans multiple folders, it suggests narrowing by the folder holding the most assets. If there are more results than shown, it offers to page through them.
+
+* Common next actions surfaced automatically, including:
+
+   * Filtering by folder, format, date range, or approval status
+
+   * Getting a count or breakdown by format or folder
+
+   * Drilling into a specific asset by number (`tell me more about #4`)
+
+   * Generating a download link for any asset in the result set
+
+   * Exporting the full result set as a CSV table
+
+   * Paging to the next set of results when more are available
+
+* Precise, actionable phrasing. Suggestions reference real numbers from your data (for example, `Filter to only images in /content/dam/frescopa/en/stock/ — that folder holds 91 of your images`) rather than generic prompts, so you know exactly what each option will return before selecting it.
+
+**Why it matters**
+
+Instead of knowing what to ask for next, you get a running set of relevant, data-backed suggestions after every interaction — turning a single search into a guided exploration of your asset library. This is especially useful for large repositories.
+
+>[!IMPORTANT]
+>
+>This feature is available as Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+
 ## Prompting Best Practices {#prompting-best-practices-discovery-agent}
 
 Specify concise details in your natural language prompts so that the agent can return accurate and relevant results. The more clearly you describe what you are looking for, the better the agent can refine and narrow the output. For example, you can:
@@ -264,6 +330,5 @@ Specify concise details in your natural language prompts so that the agent can r
 
 * The Content Discovery Agent supports dimension-based prompts only for image and SVG format types. For example, `Find images wider than 1080px`.
 
-* Content Hub administrators can access the Content Discovery Agent using the Content Hub portal, however, the results are retrieved only from the AEM author instance. Content Hub Limited users cannot currently get the benefits of the Content Discovery Agent (Coming Soon).
 
 * Find Similar capability works only for images with [Smart Tags enhancements](/help/assets/ai-generated-metadata-assets-view.md).

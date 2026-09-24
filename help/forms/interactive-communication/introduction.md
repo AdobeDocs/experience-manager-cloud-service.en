@@ -10,9 +10,10 @@ exl-id: 50709c68-8666-47da-8788-fad793d870e6
 
 # Introduction to Interactive Communication Editor
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |   This article                |
+| AEM 6.5     |  [Click here](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/interactive-communications-overview)        |
 
 ## What is Interactive Communication Editor?
 
@@ -49,7 +50,7 @@ Interactive Communication (IC) Editor is designed for efficiency, usability, and
 
 ## Onboarding 
 
-The Interactive Communication (IC) capability is available through the Early Access (EA) program. To request access, email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official email ID with your Environment ID and Organization ID. Once Adobe confirms your enrollment, follow the [Onboard to the Service](/help/forms/setup-forms-cloud-service.md) documentation to enable Interactive Communication in your AEM Forms environment.
+To get started with Interactive Communication, follow the [Onboard to the Service](/help/forms/setup-forms-cloud-service.md) documentation to enable Interactive Communication in your AEM Forms environment.
 
 https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
 
@@ -73,3 +74,4 @@ AEM Forms Interactive Communication Guide
 * Tutorials & Videos:
 Visit Adobe Experience League and explore the "Forms" section for step-by-step videos and use-case-based tutorials.
 -->
+

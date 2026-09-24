@@ -28,25 +28,48 @@ Learn the first steps to get started using the Experience Modernization Agent an
    * This allows Edge Delivery Services to sync your code.
    * If your repo is based the on the tutorial, this step is already complete.
 
+>[!NOTE]
+>
+>**Using a different Git host?** Edge Delivery Services also supports GitHub Enterprise (self-hosted), Adobe-hosted repositories, GitLab, Bitbucket, and Azure DevOps. Onboard the repository in Adobe Cloud Manager, then configure your Edge Delivery site to use it. See [Bring Your Own Git.](https://www.aem.live/developer/byo-git)
+
+>[!IMPORTANT]
+>
+>The Experience Modernization agent pushes changes and opens pull requests in your repository. The access token you create in Cloud Manager must grant write access to repository code, alongside the permissions listed at [step 8 of Add external repositories.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/external-repositories)
+>
+>**Already onboarded a token without write access?** You do not need to re-onboard the repository. In Cloud Manager, go to **Repositories > Manage Access Tokens**, edit the token, and paste a value that includes write access. Cloud Manager revalidates the associated repositories automatically. See [Manage access tokens.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/manage-access-tokens#edit-access-tokens)
+
 ## Open the Experience Modernization Console {#open-console}
 
 1. Navigate to [`aemcoder.adobe.io`.](https://aemcoder.adobe.io)
 1. Log in with your Adobe ID.
 
-## Connect Your GitHub Repository {#connect-repo}
+## Demo Mode {#demo-mode}
 
-The console prompts you for a repository when you first sign in.
+The console launches in demo mode when you first sign in. This mode allows you to explore an existing site where you can try out migrating additional pages. A banner at the bottom the screen indicates that you are in demo mode.
 
-![First sign in screen of the console](assets/first-sign-on.png)
+![Demo mode](assets/demo-mode.png)
 
-1. Click **Connect repository**.
-1. This opens the AEM Code Connector app on a new browser tab. Click **Authorize AEM Code Connector**.
-1. Back in the console, specify the Preview URL of the site. The preview URL can be obtained by previewing any document in the site, or by constructing it from branch, site-name and org. The system will retrieve the associated Github Project automatically, in some cases you may be asked to provide the github coordinates too.
+## Connect Your Site {#connect-repo}
+
+When ready to begin working on your own site you can exit demo mode by connecting to your own project. 
+
+1. Click **Switch site** in the demo mode banner.
+1. This will prompt you to authorize the AEM Code Connector app using your GitHub credentials. Click **Authorize AEM Code Connector**.
+1. Back in the console, specify the Preview URL of the site. The preview URL can be obtained by previewing any document in the site, or by constructing it from branch, site-name and org. The system will retrieve the associated Github Project automatically. Alternatively, you can search through your authorized GitHub projects to find a site.
    ![Connecting to GitHub project](assets/connect-site-and-github.png)
+1. Click **Checkout to workspace** once the site has been verified.
 1. When prompted to **Replace existing workspace**, click **Replace workspace**.
    ![Replace existing workspace](assets/replace-existing-workspace.png)
 
-Your GitHub project is now connected to the console and you are on the home screen.
+Your GitHub project and site is now connected to the console.
+
+If demo mode has been exited but a new project has not been connected, subsequent visits to Experience Modernization agent will force a site to be connected first.
+
+![Site connection](assets/first-sign-on.png)
+
+## Console Home {#console-home}
+
+When you visit [aemcoder](https://aemcoder.adobe.io) the Home Page will appear until a chat conversation has been started. The home page allows you to get started chatting by either typing your first prompt or by selecting one of the suggested prompts.
 
 ![Console home](assets/console-home.png)
 
@@ -76,22 +99,17 @@ Now you have both the content and styles imported into the console.
 
 ## Upload Content {#upload-content}
 
->[!TIP]
->
->If you are working on an AEM Sites and Universal Editor project, uploading content to AEM works slightly differently. Refer to [Getting Started with the Experience Modernization Agent for AEM Sites/Universal Editor Projects](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md#upload-content) for specific upload instructions.
-
 To upload your content to [Document Authoring](https://da.live):
 
-1. Make sure you are in the **Content** view and then click the **Upload content** button on the top-right.
+1. Make sure you are in a **Content** view and then click the **Upload content** button on the top-right.
    * By default you are in **Content** view when entering the console.
-   * Your view is indicated by the highlighted icon in the sidebar along the left side of the console.
-1. The **Upload content** dialog opens with the destination org and repo pre-filled from your `fstab.yaml`.
+   * Your view is indicated by the selected View Picker item in the workspace area of the console.
+1. The **Upload content** dialog opens with the destination org and repo pre-filled from your project settings.
    * If an `fstab.yaml` is not present in your connected repository, you will need to manually enter your **Organization** and **Repository**..
    * If you used the boilerplate, an `fstab.yaml` is provided.
 1. Select the files you want to upload and click **Upload**.
    ![Upload content dialog](assets/upload-content.png)
-1. The console indicates upload process by graying the **Upload** button.
-   ![Uploading](assets/uploading.png)
+1. The console indicates upload process by disabling the **Upload** button.
 1. Once complete, a notification appears at the bottom of the console.
    ![View in AEM](assets/view-in-aem.png)
 
@@ -101,14 +119,18 @@ To access the uploaded content in Document Authoring, optionally click **View in
 
 Your imported content is now in Document Authoring.
 
+>[!TIP]
+>
+>If you are working on an AEM Sites and Universal Editor project, uploading content to AEM works slightly differently. Refer to [Getting Started with the Experience Modernization Agent for AEM Sites/Universal Editor Projects](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md#upload-content) for specific upload instructions.
+
 ## Push Code Changes {#push-code-changes}
 
 Once you are satisfied with the changes you have made to your code, you can push them to your GitHub repository.
 
-1. Switch to **Code** view (`</>` icon in the left sidebar) and then the **Git Changes** tab (branch icon at the top-right).
+1. Switch to **Changes** view (branch icon in the view picker).
    ![Code view](assets/code-view-git-changes.png)
 1. In the list of files changed, if some files show up as untracked, click their `+` button to stage them.
-1. Click the **GitHub actions** button at the top-right and then select **Push** from the drop-down.
+1. Click **Push** button on the top-right.
 1. In the **Push changes** dialog, choose to push changes to a new PR (default) or the current branch and click **Confirm** to push.
    * When in doubt, you can push to the current branch to keep things simple.
 1. Once complete, a notification appears at the bottom of the console.
@@ -149,7 +171,7 @@ If your site is behind a firewall or access restrictions, you can allowlist the 
 
 ## Additional Resources {#additional-resources}
 
-The following documents may be useful as you continue to explore the Experience Modernization Agent and its console.
+The following documents may be useful as you continue to explore the Experience Modernization agent and its console.
 
 * [Experience Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md) - Details on the console, it's views, options, and capabilities
 * [Prompting Guide for Experience Modernization Agent](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md) - Ideas on how to prompt the agent and what its skills can do

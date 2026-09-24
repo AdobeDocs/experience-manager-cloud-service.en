@@ -23,6 +23,8 @@ Dynamic Media with OpenAPI capabilities provides the following key benefits:
 
 * **Brand consistency**: Only [brand-approved assets](/help/assets/approve-assets.md) are exposed to downstream applications. [Brand Managers and Marketers maintain strict control over brand assets](/help/assets/restrict-assets-delivery.md). Only approved and latest version of the asset is available for use, ensuring brand consistency across all channels and applications.
 
+* **Enhanced video experiences**: Dynamic Media with OpenAPI capabilities provides advanced video capabilities that improve accessibility, localization, responsive delivery, and content presentation. These capabilities include support for [multiple audio tracks and captions](/help/assets/multi-audio-multi-caption.md), [automatic caption generation and translation](/help/assets/generate-translate-captions.md), [Video Smart Crops](/help/assets/video-smart-crops.md) that dynamically keep key subjects in focus across different aspect ratios and devices, and [customizable video thumbnails](/help/assets/dynamic-media/custom-thumbnail.md).
+
 * **Web-optimized delivery**: Digital assets are delivered in web-optimized formats to enhance your digital experiences' Core Web Vitals. This includes support for WebP renditions for images, adaptive streaming through HLS or DASH protocols for videos, and original renditions for documents.
 
 * [Dynamic asset transformation](https://developer.adobe.com/experience-cloud/experience-manager-apis): Our system allows for on-the-fly image transformation using URL parameters known as image modifiers. For example, width, height, rotate, flip, quality, crop, format, and smart crop. Transformed renditions are generated dynamically and delivered seamlessly via the CDN.
@@ -207,3 +209,23 @@ Once you submit the support ticket, Adobe enables Dynamic Media with OpenAPI cap
 </td>
 
 </table>
+
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

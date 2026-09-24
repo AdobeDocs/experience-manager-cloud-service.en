@@ -5,7 +5,6 @@ feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
 ---
-
 # Local Development with AI Tools {#local-development-with-ai-tools}
 
 >[!NOTE]
@@ -25,9 +24,12 @@ Four complementary components address this:
 
 Review the [AI-assisted development tutorials](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview) for additional, hands-on instruction.
 
+Feel free to email [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) with feedback to help shape product development.
+
+
 >[!TIP]
 >
->AEM Cloud Service's remote MCP servers are also useful for local development. Learn more about them in the [Using MCP with Cloud Service article].(/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
+>AEM Cloud Service's remote MCP servers are also useful for local development. Learn more about them in the [Using MCP with Cloud Service article](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
 
 ## AGENTS.md {#agentsmd}
 
@@ -50,8 +52,9 @@ Adobe publishes AEM as a Cloud Service skills in the **[adobe/skills](https://gi
 |`ensure-agents-md`|Bootstraps `AGENTS.md` and `CLAUDE.md` tailored to the project's actual module structure|
 |`create-component`|Scaffolds a complete AEM component: component definition, dialog XML, HTL template, Sling Model, unit tests, and clientlibs|
 |`dispatcher`|AI-powered Dispatcher and Apache HTTPD configuration assistant covering config authoring, technical advisory, incident response, performance tuning, and security hardening|
-|`migration`|Migrates AEM 6.x, AMS, or on-premise Java code and OSGi configurations to AEM as a Cloud Service, driven by [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) findings from a CSV export or [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)|
-|`workflow`|This is the single entry point for all AEM as a Cloud Service Workflow skills. It Covers workflow model design, custom process step and participant chooser development, launcher configuration, workflow triggering, and production support including debugging stuck/failed workflows, triaging incidents with Cloud Manager logs, thread pool analysis, and Sling Job diagnostics for the Granite Workflow Engine.|
+|`migration`|Migrates AEM 6.x, AMS, or on-premise Java code, OSGi configurations, legacy UI dialogs, static templates, and Dispatcher configurations to AEM as a Cloud Service, driven by [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) findings from a CSV export or [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)|
+|`workflow`|This is the single entry point for all AEM as a Cloud Service Workflow skills. It covers workflow model design, custom process step and participant chooser development, launcher configuration, workflow triggering, and production support including debugging stuck/failed workflows, triaging incidents with Cloud Manager logs, thread pool analysis, and Sling Job diagnostics for the Granite Workflow Engine.|
+|`code-assessment`| Detects and fixes AEM best-practice violations, code-quality, and correctness issues in your local project, reporting findings and applying surgical fixes|
 
 ### Install Skills {#install-skills}
 
@@ -67,14 +70,14 @@ Choose the method that matches your AI coding tool. Installing skills once makes
 /plugin install aem-cloud-service@adobe-skills
 ```
 
-#### Npx Skills {#npx-skills}
+#### NPX Skills {#npx-skills}
 
 ```bash
 # Install all available skills
-npx skills add https://github.com/adobe/skills/tree/main/skills/aem/cloud-service --all
+npx skills add https://github.com/adobe/skills/tree/main/plugins/aem/cloud-service --all
 ```
 
-#### Upskill (GitHub CLI extension) {#upskill-github-cli-extension}
+#### Upskill (GitHub CLI Extension) {#upskill-github-cli-extension}
 
 ```bash
 # Install the gh-upskill extension (one-time setup)
@@ -84,11 +87,11 @@ gh extension install ai-ecoverse/gh-upskill
 gh upskill adobe/skills --path plugins/aem/cloud-service --all
 ```
 
-### Use the ensure-agents-md Skill {#use-the-ensure-agents-md-skill}
+### Use the Ensure-agents-md Skill {#use-the-ensure-agents-md-skill}
 
 After installing the skill, open your AI assistant in any AEM as a Cloud Service project that does not yet have an `AGENTS.md`. The skill runs automatically before processing your first request, creating both files at the project root without requiring explicit invocation.
 
-### Use the create-component Skill {#use-the-create-component-skill}
+### Use the Create-component Skill {#use-the-create-component-skill}
 
 On first use, the skill automatically detects `project`, `package`, and `group` from `pom.xml` and existing components, and asks you to confirm the detected values. It then creates `.aem-skills-config.yaml` at the project root. No manual configuration is required before first use.
 
@@ -123,9 +126,11 @@ Learn more by following the [Component development using AEM Agent Skills tutori
 
 ### Use the Migration Skill {#use-the-migration-skill}
 
-The `migration` skill guides the agent through migrating AEM Java code and OSGi configurations to AEM as a Cloud Service. It works one pattern at a time: you name the pattern (for example, `scheduler` or `replication`), point the agent at your Best Practices Analyzer findings, and it locates the affected files in your project and applies the correct transformations in batches, pausing for your review after each one.
+The `migration` skill guides the agent through migrating AEM Java code, OSGi configurations, legacy UI, and static templates to AEM as a Cloud Service. It works one pattern at a time: you name the pattern (for example, `scheduler` or `replication`), point the agent at your Best Practices Analyzer findings, and it locates the affected files in your project and applies the correct transformations in batches, pausing for your review after each one. The transformation steps themselves live in the companion `code-assessment` skill; both install together as the `aem-cloud-service` package.
 
-Supported patterns include Sling Scheduler, ResourceChangeListener, Replication API, OSGi EventListener and EventHandler, Assets API, HTL lint fixes, and OSGi config conversion with Cloud Manager secrets and environment variable extraction.
+To assess a whole project first, prompt *"Review my code for AEMaaCS migration."* The skill generates a read-only `migration-runbook.md` covering every supported pattern, the affected files, and per-pattern finding counts—no code is changed until you start a pattern session.
+
+Supported patterns include Sling Scheduler, ResourceChangeListener, Replication API, OSGi EventListener and EventHandler, Assets API, Guava cache to Caffeine swaps, HTL lint fixes, OSGi config conversion with Cloud Manager secrets and environment variable extraction, legacy UI dialog migration (Classic UI/Coral 2 to Coral 3), custom design widget migration, static-to-editable template modernization, and AMS or on-premise Dispatcher configuration conversion.
 
 The skill pairs with the [Cloud Migration MCP](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md) to fetch findings directly from [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md). Without the MCP configured, the skill falls back to a local [BPA](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) CSV export, or you can point it at specific files manually.
 
@@ -148,6 +153,42 @@ For broad or first-time requests, start with the `workflow-orchestrator` sub-ski
 
 The dispatcher skill handles orchestration and advisory guidance. The Dispatcher MCP server, described in the following section, provides the seven validation and runtime tools the skill uses when it needs local evidence.
 
+### Use the Code-assessment Skill {#use-the-code-assessment-skill}
+
+The `code-assessment` skill detects, reviews, and fixes code-quality and correctness issues in an AEM as a Cloud Service project entirely within your local workspace. Describe the issue, and the skill routes the request to the appropriate remediation workflow.
+
+Supported checks include modernizing Sling Model dependency injection, updating outdated Maven dependencies, adding missing timeouts to outbound HTTP calls, bounding unbounded queries, Sling schedulers, resource change listeners, the Replication and Assets APIs, and JCR or OSGi event handling, plus scanning and fixing usage of [deprecated and removed AEM APIs](/help/release-notes/deprecated-removed-features.md), with more added over time. Depending on the issue, the skill either applies a mechanical fix directly or guides you through one that needs a judgment call.
+
+For a broad or first-time review, ask the skill to assess the whole project: it runs every detector, reports all findings, and applies code fixes one pattern at a time.
+
+To get started, open a new agent chat in your AEM as a Cloud Service project.
+
+**1. Review your project.** Ask for a report. The skill runs its analyzer and returns the findings inline, grouped by pattern and severity, with a suggested remediation plan. No code is changed at this stage.
+
+```
+scan my AEM project and report any code-quality issues
+```
+
+For a more explicit invocation, name the skill directly:
+
+```
+/code-assessment review my code for AEM as a Cloud Service issues
+```
+
+To focus on a single pattern, name it in the prompt:
+
+```
+scan my project for unbounded queries
+```
+
+**2. Apply fixes, one pattern at a time.** Ask the skill to fix a specific pattern. It makes surgical edits and verifies they compile. Mechanical fixes apply directly; guided ones walk you through each decision.
+
+```
+apply unbounded-query
+```
+
+It never commits or pushes — you review the diff and commit. Large fixes run in resumable batches; reply `apply <pattern>` to continue.
+
 ## AEM Quickstart MCP Server {#aem-quickstart-mcp-server}
 
 The Model Context Protocol (MCP) is an open standard that allows AI coding tools to connect to external data sources and services. The AEM Quickstart MCP server is a content package that, once installed in a local AEM SDK instance, exposes runtime data directly to connected AI tools, enabling agents to retrieve logs, diagnose OSGi failures, and inspect request processing without leaving the IDE.
@@ -166,7 +207,7 @@ Download the content package from the [Software Distribution Portal](https://exp
 |`diagnose-osgi-bundle`|Diagnoses why a bundle or DS component is not starting; reports missing packages, unsatisfied references, and configuration problems|
 |`recent-requests`|Returns recent HTTP requests with Sling's full internal processing trace (resource resolution, script resolution, filter chain), filterable by path regex|
 
-### Configure Your IDE {#configure-your-ide}
+### Configure Your IDE or coding agent {#configure-your-ide}
 
 #### Cursor {#cursor}
 
@@ -182,7 +223,20 @@ In Cursor Settings, add a new custom MCP server:
 }
 ```
 
-#### GitHub Copilot with IntelliJ IDEA {#github-copilot-with-ihtellij-idea}
+#### Claude Code {#aemmcp-claude-code}
+
+At the command line, execute:
+
+`$ claude mcp add --transport http aem-cs-sdk http://localhost:4502/bin/mcp --header "Authorization: Basic YWRtaW46YWRtaW4="`
+
+
+#### GitHub Copilot CLI {#aemmcp-github-copilot-cli}
+
+At the command line, execute:
+
+`$ copilot mcp add --transport http --header "Authorization: Basic YWRtaW46YWRtaW4=" aem-cs-sdk http://localhost:4502/bin/mcp`
+
+#### GitHub Copilot with IntelliJ IDEA {#github-copilot-with-intellij-idea}
 
 Navigate to **Tools > GitHub Copilot > Model Context Protocol (MCP)** and click **Configure**. Add:
 
@@ -207,15 +261,11 @@ Any MCP client can connect by pointing to `http://localhost:4502/bin/mcp` with a
 
 ## Dispatcher MCP Server {#dispatcher-mcp-server}
 
->[!IMPORTANT]
->
->This feature is **beta**. Getting early access to features that Adobe is developing lets customers and partners provide feedback (by emailing [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)) and shape product development. It also helps them prepare to adopt new capabilities before general availability. 
->
->Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (by way of Adobe Support Services or otherwise) the beta releases. Adobe advises customers to use caution and not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Accordingly, any use of the beta releases is entirely at the customer's own risk. 
-
 The Dispatcher MCP server is bundled with the AEM Dispatcher SDK. It enables AI tools to validate Dispatcher and Apache HTTPD configuration, trace request handling, and inspect cache behavior against a Dispatcher instance running locally in Docker.
 
 Unlike the dispatcher skill, the Dispatcher MCP server exposes tools only: seven MCP tools and no prompts or resources.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3491951?quality=12&learn=on)
 
 ### Prerequisites {#prerequisites}
 
@@ -284,3 +334,4 @@ Other IDEs can be configured in a similar manner. The SDK's `docs/DispatcherMCP.
 |`tail_logs`|Tails relevant Dispatcher and HTTPD runtime logs|
 
 The MCP surface intentionally exposes only these seven tools; prompts and resources remain in the skill layer. Full reference documentation is available in `docs/DispatcherMCP.md` inside the extracted Dispatcher SDK.
+

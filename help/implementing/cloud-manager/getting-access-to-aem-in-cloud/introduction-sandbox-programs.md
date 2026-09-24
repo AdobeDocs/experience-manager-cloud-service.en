@@ -13,9 +13,9 @@ Learn what sandbox programs are and how they differ from production programs.
 
 ## Introduction {#introduction}
 
-A sandbox program is typically created to serve the purposes of training, running demos, enablement, or proof of concepts (POCs) and thus are not meant to carry live traffic.
+A sandbox program is typically created to serve the purposes of training, running demos, enablement, or proof of concepts (POCs) and thus is not meant to carry live traffic.
 
-A sandbox program is one of the two types of programs available in AEM Cloud Service, the other being a [production program](introduction-production-programs.md). See [Understanding Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) to learn more about program types.
+A sandbox program is one of the two types of programs available in AEM Cloud Service, the other being a [production program](introduction-production-programs.md). To learn more about program types, see [Understanding Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 ## Auto-creation {#auto-creation}
 
@@ -25,15 +25,15 @@ Sandbox programs feature auto-creation. Whenever you [create a sandbox program](
 
    ![Select solutions and add-ons for a sandbox](assets/sandbox-solutions-add-ons.png)
 
-* Sets up a project git repository with a sample project based on the [AEM Project Archetype](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview).
+* Initializes a project Git repository with a sample project based on the [AEM Project Archetype](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview).
 * Creates a development environment.
 * Creates a non-production pipeline that deploys to the development environment.
 
-A sandbox program has only one development environment.
+A sandbox program is limited to one development environment.
 
-## Usage notes and conditions {#usage-notes-conditions}
+## Usage restrictions and conditions {#usage-notes-conditions}
 
-Because they are not meant for live traffic, sandbox programs have certain limitations and conditions on their usage, which differentiates them from production programs.
+Because they are not intended for live traffic, sandbox programs have certain limitations and conditions on their usage, which distinguishes them from production programs.
 
 | Limitation/condition | Description |
 | --- | --- |
@@ -45,4 +45,4 @@ Because they are not meant for live traffic, sandbox programs have certain limit
 | No advanced networking | [Advanced networking features](/help/security/configuring-advanced-networking.md) (for example, self-serve provisioning of VPN, non-standard ports, dedicated egress IP addresses, and so on) are not available in sandbox programs. |
 | No automatic AEM updates | AEM updates are not automatically pushed to sandbox programs, but can be applied manually to the environments in your sandbox program.<br>&bull; A manual update can only be run when the targeted environment has a properly configured pipeline.<br>&bull; A manual update to either a production or staging environment automatically updates the other. The Production+Stage environment set must be on the same AEM release.<br>See [AEM version updates](/help/implementing/deploying/aem-version-updates.md) for more details.<br>See [Updating Environment](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) to learn how to update an environment. |
 | No technical support | Because a sandbox program is typically created to serve the purposes of training, running demos, enablement, or POCs (proof of concepts), technical support is not available for issues experienced in a sandbox program.<br>If you experience issues creating and managing your sandbox programs, these issues are within the scope of technical support. |
-| Hibernation and deletion | Environments in a sandbox program are automatically hibernated after eight hours of inactivity. Sandbox environments are deleted after six continuous months of hibernation.<br>See [Hibernating and De-hibernating Sandbox Environments](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) for more details about how to de-hibernate environments and automatic sandbox deletion. |
+| Hibernation and deletion | Environments in a sandbox program are automatically hibernated after eight hours of inactivity. Sandbox environments are deleted after three continuous months of hibernation.<br>See [Hibernating and De-hibernating Sandbox Environments](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) for more details about how to de-hibernate environments and automatic sandbox deletion. |

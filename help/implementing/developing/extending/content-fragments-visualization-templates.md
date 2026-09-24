@@ -8,19 +8,11 @@ role: Admin, Developer
 
 In Adobe Experience Manager (AEM) as a Cloud Service, HTML templates can be used to visualize Content Fragments and deliver them in HTML format.
 
-<!-- CQDOC-23232 - remove when GA -->
-
->[!NOTE]
->
->Visual Content Fragments and the Figma to Visual Content Fragments job are currently in Limited Availability. 
->
->If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
-
 HTML templates allow you to control how your Content Fragments are displayed. You can create HTML templates in your code editor of choice, then upload and assign them to Content Fragment Models in AEM.  Content placeholders using Handlebars.js allow mapping the template to data types in the Content Fragment Model. Once assigned to a model, a template is available to be used with any Content Fragment based on the model, to visualize the fragment or to delivery it as a modular experience in HTML format to any channel, for example web, email, mobile application, or others. 
 
 This article explains how to create custom HTML templates with Handlebars syntax for rendering Visual Content Fragments.
 
-After creating your templates you can then:
+After creating your templates you can:
 
 * [Use your templates in AEM](#using-a-content-fragment-html-template-in-aem)
 
@@ -119,7 +111,7 @@ When your template is rendered, it receives a context object containing all the 
   >* in the UI: to the maximum depth of 5
   >* when using the API: the depth is configurable, up to the maximum depth of 10
 
-### Content Fragment {#content-fragment}
+### Main Content Fragment {#main-content-fragment}
 
 The structure of the context object for the (selected) Content Fragment:
 
@@ -129,8 +121,9 @@ The structure of the context object for the (selected) Content Fragment:
 | `fields` | Map | Direct access to field values by name |
 | `allFields` | List | Array of `{name, value}` for iteration |
 | `hasFields` | Boolean | `true` if the fragment has fields |
+| `metadata` | Map | Metadata schema block of the fragment. See also [Content Fragment Metadata Structure](#content-fragment-metadata-structure) |
 
-### Properties structure {#properties-structure}
+### Properties structure (Main and Referenced fragments) {#properties-structure-main-and-referenced-fragments}
 
 The `properties` object has the same structure for the selected fragment and for each referenced fragment.
 
@@ -181,6 +174,7 @@ Each item in `referencedFragments` contains:
 | `hasFields` | Boolean | True if the fragment has fields |
 | `fields` | Map | Direct access to fields within this fragment |
 | `allFields` | List | Array of `{name, value}` for iteration |
+| `metadata` | Map | Metadata schema block of the fragment. See also [Content Fragment Metadata Structure](#content-fragment-metadata-structure) |
 
 Examples: Template access for the first referenced Content Fragment (first item in the 0-indexed list):
 
@@ -193,6 +187,93 @@ Or from the fields map:
 ```handlebars
 {{{ fields.referenced_cf_field_name.properties.description }}}
 ```
+
+### Content Fragment Metadata Structure {#content-fragment-metadata-structure}
+
+A fragment's metadata - the metadata/fields block backed by its metadata schema - is surfaced under `metadata`. It is distinct from `properties`, which holds the structural values (`title`, `description`, `path`, `tags`, `dates`, `status`).
+
+| Variable | Type | Description |
+|--- |--- |--- |
+| `metadata` | Map | The fragment's metadata schema block. Absent when the fragment has no metadata, so `metadata` expressions render empty instead of erroring |
+| `metadata.schemaId` | String | Identifier of the metadata form linked to the fragment, resolved from the fragment or its parent folders; `default` when none is found |
+| `metadata.values` | Map | Custom metadata properties of the Content Fragment, keyed by property name. Values keep their JSON type - a number stays a number, a boolean stays a boolean |
+| `metadata.fields` | List | The same properties as an iterable list. Each item has `name`, `type` (string, integer, number, boolean, array, object), `value` and `title` (human-readable label from the schema) |
+
+```handlebars
+{{metadata.schemaId}}
+{{metadata.values.[dc:title]}}        <!-- colon keys need bracket syntax -->
+{{metadata.values.version}}
+{{#each metadata.fields}}{{title}}: {{value}}{{/each}}
+
+<!-- A referenced fragment carries the same block on its row -->
+{{fields.author.metadata.values.[dc:title]}}
+{{#each referencedFragments}}{{metadata.schemaId}}{{/each}}
+```
+
+>[!NOTE]
+>
+>The main fragment's metadata arrives with the fragment itself. A referenced fragment's metadata is fetched separately, per reference, and only for the references a template actually reads. 
+>
+>Because `metadata.values` keeps JSON types, a number or boolean read from there works directly with the comparison and boolean helpers, unlike a scalar field which reaches the template pre-rendered as a string. See also [Comparison and Boolean Logic Helpers](#comparison-and-boolean-logic-helpers).
+
+### Asset field structure {#asset-field-structure}
+
+Referenced assets are not a top-level collection; there is no `referencedAssets`. An asset is reached through the field that holds it, `fields.<assetField>`, or `fields.<ref>.fields.<assetField>` for an asset inside a referenced fragment.
+
+An asset field value is dual-natured. Printed raw it is the pre-rendered asset HTML; drilled into, it exposes the asset's metadata under `properties`.
+
+| Variable | Type | Description |
+|--- |--- |--- |
+| the value itself | String (HTML) | The pre-rendered asset HTML (`<img>` for an image).<br> Requires triple braces: `{{{fields.heroImage}}}` |
+| `properties` | Map | Metadata properties of the asset |
+
+A multi-valued asset field is a list. Iterate it with `{{#each fields.gallery}}`, using `{{{this}}}` for the HTML and `{{this.properties.assetId}}` for metadata.
+
+#### Properties of a local DAM asset {#properties-of-a-local-dam-asset}
+
+These keys are carried by the Content Fragment response and are always available:
+
+| Property | Type | Description | Example |
+|--- |--- |--- |--- |
+| `assetId` | String | Asset identifier as a URN | `urn:aaid:aem:1fb05fe4-...` |
+| `path` | String | DAM path of the asset | `/content/dam/wknd/ian_provo.jpg` |
+| `name` | String | File name | `ian_provo.jpg` |
+| `title` | String | Asset title | |
+| `description` | String | Asset description | |
+| `type` | String | Reference type; always `asset` | `asset` |
+| `fieldName` | String | Name of the Content Fragment field holding the reference | `profilePicture` |
+| `status` | String | `NEW`, `DRAFT`, `PUBLISHED`, `MODIFIED`, `UNPUBLISHED` | `DRAFT` |
+| `previewReplicationStatus` | String | `PUBLISHED`, `UNPUBLISHED`, `MODIFIED`, `NEVER_PUBLISHED` | |
+| `created`, `modified`, `published` | Map | Authoring info: `at` (ISO-8601), `by`, `fullName`, `firstName`, `lastName` | |
+| `dc:format` | String | Mime type | `image/jpeg` |
+| `repo:size` | Number | Size in bytes | `251434` |
+| `tiff:ImageWidth` | Number | Width in pixels | `1152` |
+| `tiff:ImageHeight` | Number | Height in pixels | `1152` |
+| any other metadata property | typed | Every other property the asset carries, including custom namespaced ones such as `yournamespace:persistentID`. Fetched from the asset on demand |  |
+
+Property names that contain a colon require bracket syntax:
+
+```handlebars
+{{{fields.heroImage}}}
+{{fields.heroImage.properties.assetId}}
+{{fields.heroImage.properties.[dc:format]}}
+{{fields.heroImage.properties.[yournamespace:persistentID]}}
+```
+
+#### Properties of a Dynamic Media asset {#properties-of-a-dynamic-media-asset}
+
+A Dynamic Media (remote) asset carries no DAM path. Only two keys are inline:
+
+| Property | Type | Description | Example |
+|--- |--- |--- |--- |
+| `repository` | String | Delivery host serving the asset | `delivery-p12345-e67890.adobeaemcloud.com` |
+| `assetId` | String | Asset identifier as a URN | `urn:aaid:aem:1fb05fe4-...` |
+
+Together these are enough to build a Dynamic Media delivery URL instead of using the embedded image. Every other property is fetched from the asset's own delivery host. Only approved (published) assets are served there, so an unapproved Dynamic Media asset resolves nothing beyond these two keys.
+
+>[!NOTE]
+>
+>Inside a loop, write `this.properties.<key>` and not a bare `properties.<key>`. A bare path whose key is also a Content Fragment property, such as `title`, `description`, `path` or `status`, resolves against the fragment and not the asset.
 
 ## Basic field access {#basic-field-access}
 
@@ -574,6 +655,12 @@ An `unless` helper:
 {{/unless}}
 ```
 
+>[!NOTE]
+>
+>Boolean fields: 
+>
+>This reads correctly when `hideAuthor` is a real boolean; for example, from `metadata.values.*`. However, a single-valued Boolean field, arrives pre-rendered as the string `"true"` or `"false"`, and `"false"` is a non-empty (truthy) string — so `{{#unless fields.hideAuthor}}` hides the author even when the field is `false`. Compare the scalar field explicitly instead; for example, `{{#if (eq fields.hideAuthor "true")}}`. See also [Comparison and Boolean Logic Helpers](#comparison-and-boolean-logic-helpers).
+
 ### Nested Conditionals {#nested-conditials}
 
 An example of nested conditional:
@@ -593,6 +680,31 @@ An example of nested conditional:
 </div>
 {{/if}}
 ```
+
+### Comparison and Boolean Logic Helpers {#comparison-and-boolean-logic-helpers}
+
+In addition to the stock `{{#if}}` and `{{#unless}}` helpers, the service registers comparison and boolean-logic helpers so that a template can render conditionally on field values. Both comparison and boolean-logic helpers work as a block and as an inline sub-expression:
+
+```handlebars
+{{#eq fields.tier "gold"}}Gold{{else}}Standard{{/eq}}     equality (null-safe, type-aware)
+{{#neq fields.status "draft"}}Published{{/neq}}           inequality
+{{#gte metadata.values.quantity 5}}Lots{{/gte}}           ordering: gt, gte, lt, lte
+{{#and a b}}both{{/and}} {{#or a b}}either{{/or}} {{#not flag}}off{{/not}}   boolean logic
+{{#if (and (gt n 0) (lt n 10))}}in range{{/if}}           composed as sub-expressions
+{{gt n 5 yes="big" no="small"}}                           inline, with yes/no substitution
+``` 
+
+#### Numeric comparison on single-valued fields {#numeric-comparison-on-single-valued-fields}
+
+A single-valued field arrives pre-rendered as a string (`fields.quantity is "7"`, not `7`), but the helpers coerce a numeric string at comparison time, so `{{#gte fields.quantity 5}}` and `{{#eq fields.quantity 0}}` compare as numbers — alongside `{{#gte metadata.values.quantity 5}}`, where the value is already typed. Ordering (`gt`/`gte`/`lt`/`lte`) always compares numerically. Equality coerces with intent: a string field compares as a number only when the other operand is a genuine number — a numeric literal (`{{#eq fields.qty 0}}`) or a typed field such as `metadata.values.*`. Comparing two string fields or a quoted literal (`{{#eq fields.version "1.0"}}`) stays exact string equality, so versions, zip codes and ids modeled as text are never collapsed (`"007"` does not equal `"7"`). Dates cross the wire as ISO-8601 strings, so `eq`/`neq` compare them by exact string equality and the ordering helpers reject them as non-numeric. A missing, blank or non-numeric operand is treated as “condition unmet” and renders the `else` branch rather than erroring.
+
+#### Boolean helpers use plain truthiness (no coercion) {#boolean-helpers-use-plain-truthiness-no-coercion}
+
+The boolean helpers `and`/`or`/`not` do not coerce — they apply stock Handlebars truthiness, where any non-empty string is truthy (falsy values are `false`, `null`, `undefined`, `0`, `""`, `[]`). A single-valued Boolean field arrives as the string `"true"` or `"false"`, and `"false"` is a non-empty string, so `{{#not fields.flag}}` sees a truthy value and takes the else branch even when the field reads false. Compare a scalar Boolean field explicitly `({{#eq fields.flag "true"}})` rather than feeding it to `and`/`or`/`not`; a Boolean read from `metadata.values.*` is already typed and works with the boolean helpers directly.
+
+#### Fields named after a helper {#fields-named-after-a-helper}
+
+Registering these helpers claims their names globally, but a field named after one still renders its own value when read without arguments: `{{eq}}` inside `{{#with fields}}` prints the eq field’s text, not a comparison result. The helpers are available both in the visualization template and inside Handlebars embedded in a content-fragment field value.
 
 ## Built-in Handlebars helpers {#built-in-handlebars-helpers}
 
@@ -950,7 +1062,7 @@ Some troubleshooting hints include:
 | Multi-valued field shows only the first item | Array with five items renders only one | Use `{{#each fields.tags}}` to iterate all items |
 | Array index access not working | `{{{fields.tags[0]}}}` renders empty | Use dot-bracket syntax: `{{{fields.tags.[0]}}}` |
 | Referenced fragments not appearing | `hasReferencedFragments` is always false | Enable hydration: `?hydration=%7B%22enabled%22%3Atrue%7D;` also check `{{#if referencesError}}` |
-| Template renders nothing | Empty page or blank output | Check for unclosed `{{#if}}` or `{{#each}}` blocks; add diagnostic output: `<pre>hasFields: {{hasFields}}`&#124;`title: {{properties.title}}</pre>` |
+| Template renders nothing | Empty page or blank output | Check for unclosed `{{#if}}` or `{{#each}}` blocks; add diagnostic output: `<pre>hasFields: {{hasFields}} \| title: {{properties.title}}</pre>` |
 | Comments appear in the rendered page | HTML comment text visible to end users | Use Handlebars comments `{{! comment }}` instead of HTML `<!-- comment -->` |
 | Conditional always evaluates to true | `{{#if fields.enabled}}` is always truthy | Note: the string `"false"` is truthy in Handlebars. Only actual `false`, `null`, `undefined`, `0`, `""`, and `[]` are falsy. |
 | Special characters rendering as entities | `&lt;`, `&amp;` shown instead of `<`, `&` | Use triple braces for pre-rendered HTML content: `{{{fields.content}}}` |
@@ -1274,4 +1386,5 @@ Additional resources are available:
 * [Handlebars documentation](https://handlebarsjs.com/)
 * [Handlebars built-in helpers](https://handlebarsjs.com/guide/builtin-helpers.html)
 * [AEM Content Fragments documentation](/help/sites-cloud/administering/content-fragments/overview.md)
+* [Content Fragment Visualization Templates APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/cvt/)
 

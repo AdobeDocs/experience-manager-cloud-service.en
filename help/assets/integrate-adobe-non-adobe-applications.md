@@ -59,6 +59,10 @@ Content Advisor uses an advanced search capability that understands the meaning 
 
 Unlike traditional keyword-based search, which looks for exact terms, AI Search interprets relationships between words, concepts, and user intent. This ensures that users find what they are looking for—even if their query is phrased differently, contains typos, or is in another language.
 
+>[!IMPORTANT]
+>
+>If you require searching for assets using natural language with prompts such as, `find me approved jpeg assets about coffee`, Adobe recommends to use Content Discovery Agent. For more information on how to access the agent, sample prompts, and so on, see [Content Discovery Agent](/help/ai-in-aem/agents/content-advisor/discovery.md#use-cases-prompts).
+
 ![AI Search for assets in Content Advisor](assets/content-advisor-ai-search.png)
 
 Some if its key benefits include:
@@ -121,6 +125,8 @@ Click the ![preview icon](assets/do-not-localize/preview-icon.svg) icon to previ
 ![Preview Dynamic Media renditions](assets/content-advisor-dm-preview.png)
 
 Click **[!UICONTROL Add Modifiers]**, specify a modifier in the text box, and press Enter to apply the transformation to all asset renditions in real-time. Similarly, you can add multiple modifiers to renditions and preview those transformations. Click the rendition name and click **[!UICONTROL Select]** to make the rendition available in your host application. The rendition after applying those modifiers is not saved. See the list of supported modifiers for [Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) and [Dynamic Media with OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
+
+For information on how to integrate Dynamic Media panel with Content Advisor, see [Integration with Dynamic Media](/help/assets/integration-with-dynamic-media.md).
 
 ### Discovery of Content Fragments {#content-fragments-discovery-content-advisor}
 
@@ -197,7 +203,7 @@ The following table illustrates the Content Advisor feature support across Adobe
 | Adobe Workfront Planning                     |  &#10003;                                            | &#10003;                                                         | &minus;                                                      |  &#10003;                                        |
 | [AEM Assets View](/help/assets/assets-view-introduction.md)                     |  &#10003;                                            | &minus;                                                         | &minus;                                                      | &minus;                                        |
 | [AEM Content Hub](/help/assets/product-overview.md)                     |  &#10003;                                            | &#10003;                                                         | &minus;                                                      |  &minus;                                        |
-| [Adobe Journey Optimizer (AJO) for B2C](http://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home)                     |  &#10003;                                            | &#10003;                                                         | &#10003;                                                      |  &#10003;                                        |
+| [Adobe Journey Optimizer (AJO) for B2C](http://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home)                     |  &#10003;                                            | &minus;                                                         | &#10003;                                                      |  &#10003;                                        |
 
 ## Content Advisor feature support across non-Adobe applications {#content-advisor-feature-support-non-adobe-applications}
 
@@ -207,9 +213,28 @@ This allows you to discover, evaluate, and use approved assets from AEM Assets d
 
 For more information about the integrations, properties, and customizations, refer to the following articles:
 
-* [Content Advisor integration examples](https://github.com/adobe/aem-assets-selectors-mfe-examples/tree/consolidate-docs-to-experience-league/examples)
+* [Content Advisor integration examples](https://github.com/adobe/aem-assets-selectors-mfe-examples/tree/main)
 
 * [Content Advisor properties](/help/assets/content-advisor-properties.md)
 
 * [Content Advisor customizations](/help/assets/content-advisor-customization.md)
+
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 

@@ -8,9 +8,9 @@ exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
 
 # Create your first Edge Delivery site with one click{#about-one-click-edge-delivery-site}
 
-Creating your first Edge Delivery site with one click is designed to help you automate the onboarding and deployment of Edge Delivery sites within Cloud Manager. It greatly simplifies the process by having you click a single button. The single click provisions the required infrastructure, integrates with GitHub for version control, and configures your document and asset storage in Google Drive.
+Creating your first Edge Delivery site with one click is designed to help you automate the onboarding and deployment of Edge Delivery sites within Cloud Manager. It simplifies the process by providing a single button for provisioning. The single click provisions the required infrastructure, integrates with GitHub for version control, and configures your document and asset storage in Google Drive.
 
-This automation helps reduce the manual effort that is required to set up your initial site. It ensures seamless workflows, scalability, and improves the performance of your teams when it comes to managing content at the edge.
+This automation helps reduce the manual effort that is required to set up your initial site. It ensures seamless workflows, scalability, and improves the performance of your teams when managing content at the edge.
 
 >[!IMPORTANT]
 >
@@ -34,10 +34,8 @@ See also [Introduction to Edge Delivery Services in Cloud Manager](/help/impleme
 
 **To create an Edge Delivery site in Cloud Manager with one click:**
 
-1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
-    1. In the **Quick access** section, click **Experience Manager**.
-    1. In the left side panel, click **Cloud Manager**.
-    1. Select an organization.
+{{sign-in-to-cloud-manager}}
+
 1. On the **My Programs** console, click a program.
 1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the left side menu.
 1. In the left side menu, under the **Program** heading, click **Overview**.
@@ -54,7 +52,7 @@ See also [Introduction to Edge Delivery Services in Cloud Manager](/help/impleme
 
 1. Click **Create site now**.
 
-    A toast appears near the top-center of the screen letting you know that Edge Delivery site provisioning has started.
+    A notification appears near the top-center of the screen letting you know that Edge Delivery site provisioning has started.
 
     When Cloud Manager completes site provisioning and validation, the **Site name** (the project name you entered earlier) appears in the **Edge Delivery sites** list box on the Edge Delivery page. A green dot also appears to the left of the **Verified** status column.
 

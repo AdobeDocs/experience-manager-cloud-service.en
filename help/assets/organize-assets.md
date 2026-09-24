@@ -42,7 +42,7 @@ You can limit who can access certain folders in Assets by making the folder part
 1. Select the **Enabled** check box to make the folder and its assets available only to a closed user group.  
 1. Browse to the login page, if there is one, to add that information. Add admitted groups by clicking **Add item**. If necessary, add the realm. Click **OK** to save your changes.
 
-## Use tags to organize assets {#use-tags-to-organize-assets}
+## Use tags to organize assets
 
 You can use folders or tags or both to organize assets. Adding tags to assets makes them easier to retrieve during a search. To add tags to an asset, follow these steps:
 
@@ -73,7 +73,7 @@ The most basic way to organize assets is to save the assets in folders. It is an
 * Create a directory of folders that are not likely to change so that any customization or automation continues to work. For example, the assigned processing profiles continue to work.
 * If an asset is already published, then you use [!DNL Experience Manager] to move the asset to another folder, and republish from its new location. The original published asset location is still available along with the newly republished asset. The original published asset, however, is *lost* to [!DNL Experience Manager] and cannot be unpublished. Therefore, as a best practice, first unpublish an asset and then move it to a different folder.
 
-## Organize assets using tags {#use-tags-to-organize-assets}
+## Organize assets using tags
 
 Adding tags to assets makes them easier to retrieve during a search, create collections using the search results, boost search ranking for some assets, and apply AI algorithms of Adobe AI for asset discovery.
 
@@ -113,18 +113,20 @@ Standardizing metadata usage, file naming, and folder structure ensures that as 
 
 **See also**
 
-* [Translate Assets](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [Assets supported file formats](file-format-support.md)
-* [Search assets](search-assets.md)
-* [Connected assets](use-assets-across-connected-assets-instances.md)
-* [Asset reports](asset-reports.md)
-* [Metadata schemas](metadata-schemas.md)
-* [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata.md)
-* [Search facets](search-facets.md)
-* [Manage collections](manage-collections.md)
-* [Bulk metadata import](metadata-import-export.md)
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
@@ -133,4 +135,5 @@ Standardizing metadata usage, file naming, and folder structure ensures that as 
 >* [Metadata profiles](metadata-profiles.md)
 >* [Video profiles](/help/assets/dynamic-media/video-profiles.md)
 >* [Dynamic Media image profiles](/help/assets/dynamic-media/image-profiles.md)
+
 

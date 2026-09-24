@@ -61,17 +61,17 @@ For more details about version handling, see [Maven Project Version Handling](/h
 
 In stage and production deployments, an automatic version is generated. See [Maven Project Version Handling](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
-For custom versioning in stage and production deployments, set a proper three-part maven version like `1.0.0`. Increase the version each time you deploy to production.
+For custom versioning in stage and production deployments, set a proper three-part Maven version like `1.0.0`. Increase the version each time you deploy to production.
 
-Cloud Manager automatically adds its version to stage and production builds and creates a git branch. No special configuration is required. If you do not set a maven version, the deployment still succeeds and a version is automatically set.
+Cloud Manager automatically adds its version to stage and production builds and creates a git branch. No special configuration is required. If you do not set a Maven version, the deployment still succeeds and a version is automatically set.
 
-## My maven build fails for Cloud Manager deployments but it builds locally without errors. What is wrong? {#maven-build-fail}
+## My maven build fails for Cloud Manager deployments but it builds locally without errors. What is the cause? {#maven-build-fail}
 
 See [this git resource](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md) for more details.
 
 ## What do I do if a Cloud Manager deployment fails at the deploy step in AEM as a Cloud Service? {#cloud-manager-deployment-cloud-service}
 
-The most common reason for a deployment to fail is due to insufficient permissions for the `sling-distribution-importer` user. In this situation, the deploy step fails during a Cloud Manager deployment and errors such as the following are generated.
+The most common reason for a deployment to fail is insufficient permissions for the `sling-distribution-importer` user. In this situation, the deploy step fails during a Cloud Manager deployment and errors such as the following are generated.
 
 ```text
 [Queue Processor for Subscriber agent forwardPublisherSubscriber] org.apache.jackrabbit.vault.fs.io.Importer Error while committing changes. Retrying import from checkpoint at /. Retries 4/10
@@ -82,7 +82,7 @@ Caused by: org.apache.sling.api.resource.PersistenceException: Unable to commit 
 Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventAdminAsyncThread #7] org.apache.sling.distribution.journal.impl.publisher.DistributionPublisher [null] Error processing distribution package` `dstrpck-1583514457813-c81e7751-2da6-4d00-9814-434187f08d32. Retry attempts 344/infinite. Message: Error trying to extract package at path /etc/packages/com.myapp/myapp-base.ui.content-5.1.0-SNAPSHOT.
 ```
 
-The `sling-distribution-importer` user needs additional permissions for the content paths defined in the `ui.content package`. This rule usually requires adding permissions for both `/conf` and `/var`.
+The `sling-distribution-importer` user needs additional permissions for the content paths defined in the `ui.content package`. This configuration usually requires adding permissions for both `/conf` and `/var`.
 
 The solution is to add a [RepositoryInitializer OSGi configuration](/help/implementing/deploying/overview.md#repoint) script to your apps deployment package to add ACLs for the `sling-distribution-importer` user.
 
@@ -92,16 +92,16 @@ Here's an example of an [`org.apache.sling.jcr.repoinit.RepositoryInitializer-Di
 
 ## My Cloud Manager deployment fails at the deploy step in AEM as a Cloud Service and I already added a RepositoryInitializer OSGi configuration. What else can I do? {#build-failures}
 
-If [adding a RepositoryInitializer OSGi configuration](#cloud-manager-deployment-cloud-service) did not solve the error, it may be due to one of these additional issues.
+If [adding a RepositoryInitializer OSGi configuration](#cloud-manager-deployment-cloud-service) did not solve the error, it can be due to one of the following issues:
 
-* The deployment might fail because of an invalid OSGi configuration that disrupts a default service.
+* The deployment fails because of an invalid OSGi configuration that disrupts a default service.
   * Check the logs during deployment so you can see if there are any obvious errors.
 
-* The deployment might fail because of invalid Dispatcher or Apache configurations.
+* The deployment fails because of invalid Dispatcher or Apache configurations.
   * Make sure to test your Apache and Dispatcher configurations locally using the Docker image included in the SDK.
-  * See [Dispatcher in the Cloud](/help/implementing/dispatcher/disp-overview.md#content-delivery) on how to set up the Dispatcher Docker container for easy local testing.
+  * See [Dispatcher in the Cloud](/help/implementing/dispatcher/disp-overview.md#content-delivery) for how to set up the Dispatcher Docker container for easy local testing.
 
-* The deployment might fail due to some other failure during replication of the content packages (Sling distribution) from author to publish instances. 
+* The deployment fails due to some other failure during replication of the content packages (Sling distribution) from author to publish instances. 
   * Follow these steps so you can simulate the issue on a local setup.
     1. Install an Author and a Publish instance locally using the latest AEM SDK jars.
     1. Log on to the author instance.
@@ -110,7 +110,7 @@ If [adding a RepositoryInitializer OSGi configuration](#cloud-manager-deployment
 
 ## I am unable to set a variable using an aio command. What can I do? {#set-variable} 
 
-You may receive a `403` error such as the following when attempting to list or set pipeline variables using `aio` commands.
+You receive a `403` error such as the following when attempting to list or set pipeline variables using `aio` commands.
 
 ```shell
 $ aio cloudmanager:list-pipeline-variables 222
@@ -130,4 +130,4 @@ Cannot set variables: https://cloudmanager.adobe.io/api/program/111/environment/
 
 In this case, the user running these commands must be added to the **Deployment Manager** role in the Admin Console.
 
-See [API Permissions](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/) for more details.
+See [API Permissions](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions) for more details.

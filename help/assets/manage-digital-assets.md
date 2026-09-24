@@ -186,7 +186,8 @@ The other properties and metadata information is retained. A partial copy is not
 
     * Select **[!UICONTROL Cancel]** to stop the move operation.
 
-   If you do not update references, they continue to point to the previous path of the asset. If you adjust the references, they are updated to the new asset path.
+   If you do not update references, they continue to point to the previous path of the asset. If you adjust the references, they are updated to the new asset path. For more information on moving an asset, see [Permission model for move or publish operations](#permission-model).
+
 
 ### Manage renditions {#managing-renditions}
 
@@ -273,6 +274,25 @@ Also, disable the force delete button using an overlay, to disallow users from d
    >[!NOTE]
    >
    >To resolve or remove the incoming references from other pages, update the relevant references before deleting an asset. You can disallow deletion of referenced assets as it causes broken links. Disable the force delete button using an overlay.
+
+## Asynchronous Background Jobs {#asynchronous-background-jobs}
+
+To improve performance and reliability when processing large numbers of assets, AEM uses asynchronous background jobs for certain asset management operations. Instead of completing these operations immediately, AEM processes them in the background and allows users to continue working while progress is tracked separately.
+
+
+Operations such as moving, copying, or deleting folders that contain more than 150 assets are automatically executed as asynchronous jobs. When starting one of these operations, users can choose to run the job immediately or schedule it for a later time.
+
+![Date Picker](assets/schedule-asnyc-job.png)
+
+As the operation runs, AEM processes assets in batches and periodically saves progress. The AEM User Interface also displays progress updates so that users can monitor the status of the operation.
+
+![Date Picker](assets/move-progress-folder-indicator.png)
+
+For move and delete operations, access to the affected folders is restricted while the job is running to help prevent conflicting actions.
+
+To track job progress, open the Assets Jobs console (**Assets** > **Jobs** within the Admin view). The console displays details such as the current status, percentage completed, and other job information. Select a job and click Open to view additional details, including progress information and the estimated time remaining for completion. Users are also notified when the operation finishes.
+
+![Date Picker](assets/async-jobs-status.png)
 
 ## Download assets {#download-assets}
 
@@ -656,18 +676,63 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 
 To know more, see how to [browse DAM assets using desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) and [how to use Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
 
+## Permission model for move or publish operations {#permission-model}
+
+Moving an asset or Content Fragment in Adobe Experience Manager (AEM) requires more than write access to the source and destination folders; it also requires **replicate** permission for the operation to complete. If you lack replicate access, the move does not fail outright; it enters a **pending approval** workflow state and waits for an administrator, that is, a user who does have the **replicate** permission to approve or complete it. This is expected, by-design behavior, and not a defect. AEM intentionally gates replication-triggering actions behind the **replicate** permission so that only authorized users can push the content changes.
+
+|Operation|Minimum permission needed|What happens if missing|
+|--- |--- |--- |
+|Move a folder or asset within the Digital Asset Management (DAM)|Write on the source, destination, and a destination folder explicitly selected in the **[!UICONTROL Select Destination]** dialog box.|The **[!UICONTROL Move]** button stays disabled until a destination folder checkbox is actually checked. This is a common false alarm reported as **Move button not working**.|
+|Move or copy an asset or Content Fragment that triggers the replication|**replicate** permission|The move or copy operation starts a workflow that pauses in a pending state awaiting administrator approval, rather than failing with an error.|
+|View a folder marked private|You must own the folder, or you must be an explicit member (owner or editor or viewer) of that private folder.|Private folder settings override standard ACLs, hence a user or group with `jcr:read` access can still see the folder, but sharing is restricted to owners or members only.|
+|Use **Share Link** on a private folder|Explicit membership (owner or editor or viewer) on the private folder, in addition to `jcr:modifyAccessControl` or edit ACL and link share configuration.|Plain read access is not sufficient, a group with `jcr:read` on a folder that is later marked private loses the ability to generate share links even though they can still browse the folder.|
+
+### Stuck or pending move-replicate workflow {#stuck-pending}
+
+1. Identify the user who initiated the move or copy and check whether they hold the replicate permission on the target path.
+2. If they do not, either grant the **replicate** permission (if that is the intended long-term access level) or get an administrator who has the **replicate** permission to approve or complete the pending workflow to unblock it.
+3. Do not treat a stuck workflow as a system defect before checking this. This is the standard AEM behavior enforcing the replicate permission gate, and the underlying content is not corrupted or lost.
+
+### Disabled Move button {#move-button}
+
+If the **[!UICONTROL Move]** action in the Assets UI is grayed out or unresponsive, confirm that a destination folder checkbox has actually been selected or checked in the **[!UICONTROL Select Destination]** dialog box. The button only activates once a specific destination is confirmed. Do not miss this step.
+
+### Private folders versus standard ACLs {#private-folders-versus-standard-ACLs}
+
+Private folders use a membership-based model that layers on top of and effectively overrides the standard ACL-based sharing for the **Share Link** feature specifically. The read access through group ACL still lets members browse a private folder, but only the folder's owner and explicitly added members generate shared links or otherwise use sharing features on it. When investigating why this group can no longer share a folder, check whether the folder was recently converted to private. That explains restricted sharing even with unchanged group ACLs.
+
+### Folder structure and performance guidance {#folder-structure-and-performance-guidance}
+
+AEM does not enforce a hard technical limit on the number of subfolders or assets under a single folder. However, for performance and usability, keep the number of direct children, that is, subfolders and assets combined under a single folder to roughly 1,000. Folders with several thousand direct children shows degraded performance for listing, moving, and workflow operations. If a folder is expected to grow beyond this, introduce additional grouping or subfolder levels proactively before performance issues appear.
+
+### Known UI behavior {#known-UI-behavior}
+
+Avoid using slashes (/) in the folder titles. A slash in a folder title can interfere with the Assets UI's **[!UICONTROL Column View]** rendering logic, causing the subfolders to fail to display even though they exist in the repository. If the **[!UICONTROL Column View]** unexpectedly shows an empty folder that has children, check the folder titles under that path for slashes before assuming a deeper indexing or permissions problem.
+
+### Troubleshooting checklist {#troubleshooting-checklist}
+
+1. **Move or copy workflow stuck in pending**: Check the initiating user's replicate permission; get approval from an administrator if it is expected to remain pending, or grant replicate access if appropriate.
+2. **Move button disabled**: Confirm a destination folder is actually checked or selected in the destination picker.
+3. **Group can see a folder but cannot share it**: Check whether the folder is marked private. Private folders restrict sharing to owners or explicit members regardless of the read ACLs.
+4. **Column View shows a folder as empty when it has children**: Check for slashes in the child folder titles.
+5. **Folder operations feel slow at scale**: Count direct children under the folder; if it is in thousands, plan an additional subfolder grouping.
+
 **See also**
 
-* [Translate Assets](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [Assets supported file formats](file-format-support.md)
-* [Search assets](search-assets.md)
-* [Connected assets](use-assets-across-connected-assets-instances.md)
-* [Asset reports](asset-reports.md)
-* [Metadata schemas](metadata-schemas.md)
-* [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata.md)
-* [Search facets](search-facets.md)
-* [Manage collections](manage-collections.md)
-* [Bulk metadata import](metadata-import-export.md)
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
+

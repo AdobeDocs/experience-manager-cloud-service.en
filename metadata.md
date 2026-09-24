@@ -4,13 +4,13 @@ description: Adobe Experience Manager as a Cloud Service documentation.
 git-repo: https://github.com/AdobeDocs/experience-manager-cloud-service.en
 index: true
 type: Documentation
-solution: Experience Manager, Experience Manager as a Cloud Service
+solution: Experience Manager as a Cloud Service, Experience Manager
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager, Experience Manager Screens
 product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
     internal-label: "Experience Manager"
 usetq: true
-landing-page-name: experience-manager
+landing-page-name: experience-manager-cloud-service
 landing-page-breadcrumb-title: AEM
 version: Experience Manager as a Cloud Service
 cloud: Experience Cloud

@@ -86,6 +86,10 @@ To enable complete functionality of the Adaptive Forms Container component, add 
         </sly> 
     ```
 
+    >[!NOTE]
+    >
+    >`core.forms.components.runtime.all` includes all the out-of-the-box (OOTB) components. Instead, create a custom client library that includes only the components that are part of the design policy and intended to be included in the form, and add it to the page.
+
 1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` file and add the following code to the file:
 
     ```
@@ -228,6 +232,17 @@ To configure a JSON Schema or Form Data Model (FDM) for your form:
     * When you select the **[!UICONTROL Schema]** option, use the **[!UICONTROL Schema]** option to select a JSON schema for your form.
 
 1. Click **[!UICONTROL Done]**.
+
+## Configure a Submission PDF (Document of Record) for a form in AEM Sites page or Experience Fragment {#configure-document-of-record-for-form}
+
+You can configure Submission PDF (Document of Record) generation directly from the **[!UICONTROL Adaptive Form Container]** on an AEM Sites page or Experience Fragment.
+
+1. Open the AEM Page Editor or Experience Fragment that contains the Adaptive Form.
+1. Open the Content Tree, and select the **[!UICONTROL Adaptive Forms Container]** that hosts your Adaptive Form. An AEM Sites page can host multiple Adaptive Forms. So, carefully select the correct Adaptive Forms Container.
+1. Click the Adaptive Form Container properties ![Adaptive Form Container properties](/help/forms/assets/configure-icon.svg) icon.
+1. Open the **[!UICONTROL Document of Record]** tab and configure DoR settings.
+
+For detailed instructions, supported options, locale-specific custom XDP templates, and branding customization, see [Generate a Submission PDF (Document of Record) for Adaptive Forms (Core Components)](/help/forms/generate-document-of-record-core-components.md#configure-document-of-record-for-forms-embedded-in-aem-sites).
 
 ## Configure a pre-fill service for a form in AEM Sites page or Expereince Fragment {#configure-prefill-service-for-form}
 

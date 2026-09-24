@@ -13,13 +13,13 @@ Learn how to verify that Cloud Manager has successfully confirmed your custom do
 
 ## Check the status of a custom domain name {#how-to}
 
-Before checking your domain name status in Cloud Manager, make sure you have already added a customer managed (OV/EV) SSL certificate for your custom domain as described in [Add a customer managed SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md##add-customer-managed-ssl-cert).
+Before checking your domain name status in Cloud Manager, make sure you have already added a customer-managed (OV/EV) SSL certificate for your custom domain as described in [Add a customer-managed SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert).
 
 **To check the status of a custom domain name:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
+1. On the **My Programs** console, select the program.
 
 1. Navigate to the **Environments** screen from the **Overview** page.
 
@@ -33,12 +33,12 @@ The status detail is shown. Your custom domain is ready to be used when the stat
 >
 >If you are using an *Adobe managed (DV) SSL certificate* with the domain, Cloud Manager automatically triggers verification when you click **Verify** in the Verify domain dialog box when [adding a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 >
->If you plan on using a **customer managed (OV/EV) SSL certificate**, your domain is verified *after* you [add the OV/EV SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). 
+>If you plan on using a **customer-managed (OV/EV) SSL certificate**, your domain is verified *after* you [add the OV/EV SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). 
 
 
 ## Verification statuses {#statuses}
 
-Cloud Manager verifies domain ownership through the customer managed (OV/EV) SSL certificate. When done, it displays one of the following status messages:
+Cloud Manager verifies domain ownership through the customer-managed (OV/EV) SSL certificate. When done, it displays one of the following status messages:
 
 | Status | Description |
 | --- | --- |
@@ -52,7 +52,7 @@ Cloud Manager verifies domain ownership through the customer managed (OV/EV) SSL
 
 ## Domain name error {#domain-error}
 
-The following is a common domain name verification error and its typical resolution.
+The following are common domain name verification errors and their typical resolutions.
 
 ### Domain not installed error {#domain-not-installed}
 
@@ -60,35 +60,61 @@ The following is a common domain name verification error and its typical resolut
 
 When you attempt to add a domain mapping in Cloud Manager, you may encounter the following error message: 
 
-*The domain is already installed in a Fastly account. Please remove it first from there before adding to Cloud Service.*
+*The domain is already installed in a Fastly account. Remove it before adding it to Cloud Service.*
 
 <!-- This message indicates that the domain is currently associated with a different Fastly account—typically outside of Adobe's control. To proceed, the domain must be disassociated from the other account before it can be added to the Adobe-managed Cloud Service. This issue usually occurs when the same domain is already mapped to a different origin in a non-Adobe Fastly configuration. -->
 
 **Error cause**
-Fastly locks a domain to the account that first registers it, and other accounts must request permission to register a subdomain. Furthermore, Fastly only lets you assign an apex domain and associated subdomains to one Fastly service and account. If you have an existing Fastly account that links the same apex and subdomains used for your AEM Cloud Service domains you see this error.
+Fastly restricts a domain to the account that first registers it, and other accounts must request permission to register a subdomain. Furthermore, Fastly lets you assign an apex domain and associated subdomains to only one Fastly service and account. If you have an existing Fastly account that links the same apex and subdomains used for your AEM as a Cloud Service domains, it is possible to see the following error.
 
 **Error resolution**
-The error is fixed as follows:
+The error is resolved as follows:
 
 * Remove the apex and subdomains from the existing account before installing the domain in Cloud Manager.
 
 * Use this option to link the apex domain and all subdomains to the AEM as a Cloud Service Fastly account. See [Working with domains](https://www.fastly.com/documentation/guides/getting-started/domains/working-with-domains/working-with-domains/) in the Fastly documentation for additional details.
 
-* If your apex domain has multiple subdomains for AEM as a Cloud Service and non-AEM sites that need to link to different Fastly accounts, attempt to install the domain in Cloud Manager. This process helps manage subdomain connections across different Fastly accounts. If the domain installation fails, create a Customer Support ticket with Fastly so Adobe can follow up with Fastly on your behalf.
+* If your apex domain has multiple subdomains for AEM as a Cloud Service and non-AEM sites that need to link to different Fastly accounts, try to install the domain in Cloud Manager. This process facilitates the management of subdomain connections across different Fastly accounts. If the domain installation fails, create a Customer Support ticket with Fastly so Adobe can follow up with Fastly on your behalf.
 
 >[!TIP]
 >
->Solving domain delegation issues with Fastly typically takes 1-2 business days. For this reason, it is recommended to install the domains well before their go live date.
+>Domain delegation resolutions with Fastly are completed in 1-2 business days on average. For this reason, Adobe recommends that you install the domains well before their go-live date.
 
 >[!NOTE]
 >
 >Do not route the DNS of your site to AEM as a Cloud Service IPs if the domain was not installed successfully.
 
+### Domain already registered error {#domain-already-registered}
+
+When you attempt to add a domain mapping in Cloud Manager, you may encounter the following error:
+
+```
+400 - DOMAIN_ALREADY_REGISTERED: Domain already registered
+```
+
+**Error cause**  
+The `DOMAIN_ALREADY_REGISTERED` error means that the domain is already registered in another Fastly-backed service, so Cloud Manager cannot register it again. This situation usually occurs when the following happens:
+
+* The domain is installed in another Adobe service that uses Fastly, such as Adobe Commerce Cloud (Magento).
+* A previous domain mapping was not removed when its environment was deleted, so a stale mapping still claims the domain.
+* The domain is still attached to an Edge Delivery Services site.
+
+**Error resolution**  
+You can resolve the error by doing the following:
+
+- If the domain is installed in Adobe Commerce Cloud (Magento), remove it from the Adobe Commerce Fastly account before you add it to AEM as a Cloud Service.
+- If a stale mapping or a stale site attachment holds the domain, remove the domain from the service that currently claims it.
+- If you cannot determine where the domain is registered, contact Adobe Customer Support. Provide your program ID, the domain name, and your IMS organization ID so that Adobe can locate and release the registration.
+
+>[!NOTE]
+>
+>The `DOMAIN_ALREADY_REGISTERED` error and the *Domain not installed error* share the same root cause. That is, another Fastly account or service already claims the domain. In both cases, release the domain from the other service before you add it to AEM as a Cloud Service.
+
 ## Pre-existing CDN configurations for custom domain names {#pre-existing-cdn}
 
 If you already have a CDN (Content Delivery Network) configuration for your custom domain names, an informative message appears on the **Custom Domain Names** and **Environment** pages. It encourages you to add these configurations through the UI so they can be managed and viewed within Cloud Manager.
 
-The message disappears after all pre-existing environment configurations are migrated using the UI. It may take 1-2 business days for the message to disappear.
+The message disappears after all pre-existing environment configurations are migrated using the UI. It takes 1-2 business days for the message to disappear.
 
 See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) for more details.
 

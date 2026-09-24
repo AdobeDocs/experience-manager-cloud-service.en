@@ -10,7 +10,6 @@ exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
 Content Advisor allows you to customize various components according to preferences, requirements, or functional needs. You can customize the following components [Micro-Frontend Content Advisor](#overview-asset-selector.md):
 
 * [Customize filter panel](#customize-filter-panel)
-* [Customize information in modal view](#customize-info-in-modal-view)
 * [Enable or disable drag and drop mode](#enable-disable-drag-and-drop)
 * [Selection of Assets](#selection-of-assets)
 * [Customize expired assets](#customize-expired-assets)
@@ -100,20 +99,6 @@ You can add the following code snippet in `assetSelectorProps` object to customi
       "groupKey":"FoodCategoryGroup"
    }
 ]
-```
-
-## Customize information in modal view {#customize-info-in-modal-view}
-
-You can customize the details view of an asset when you click the ![info icon](assets/info-icon.svg) icon. Execute the code below:
-
-```
-// Create an object infoPopoverMap and set the property `infoPopoverMap` with it in assetSelectorProps
-const infoPopoverMap = (map) => {
-// for example, to skip `path` from the info popover view
-let defaultPopoverData = PureJSSelectors.getDefaultInfoPopoverData(map);
-return defaultPopoverData.filter((i) => i.label !== 'Path')
-};
-assetSelectorProps.infoPopoverMap = infoPopoverMap;
 ```
 
 ## Enable or disable drag and drop mode {#enable-disable-drag-and-drop}
@@ -658,4 +643,22 @@ dragOptions: {
             },
          }
 ```
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
