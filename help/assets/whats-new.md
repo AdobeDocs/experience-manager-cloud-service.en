@@ -19,7 +19,29 @@ The following video demonstrates Content Hub key capabilities:
 
 ## Release Date {#release-date}
 
-The release date of Content Hub feature release (2026.05.0) is May 28, 2026 (same as that of AEM as a Cloud Service release). The next feature release (2026.06.0) is planned for June 25, 2026.
+The release date of Content Hub feature release (2026.09.0) is September 24, 2026 (same as that of AEM as a Cloud Service release). The next feature release (2026.10.0) is planned for October 29, 2026.
+
+## September 2026 release features {#september-2026-release-features}
+
+**Smart Collections**
+
+Smart Collections enable you to automatically organize assets based on defined search criteria. When you create a Smart Collection, the collection stores the search query and filter criteria instead of storing individual assets. Assets that match the configured criteria are automatically displayed in the collection.
+
+Smart Collections automatically remain up to date. When newly approved assets satisfy the configured search criteria, they are automatically added to the collection.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3503809)
+
+>[!IMPORTANT]
+>
+>This feature is available as a Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+
+## August 2026 release features {#august-2026-release-features}
+
+**Generate on-the-fly Dynamic Media renditions in Content Hub**
+
+Generate on-the-fly Dynamic Media renditions in Content Hub to quickly create asset variations tailored to different channels and content needs. This eliminates the need to maintain multiple pre-generated renditions, making it easier to adapt and reuse assets across experiences. With optimized renditions available on demand, teams can accelerate content activation and deliver the right asset variation for every experience.
+
+[!BADGE Dive Deeper into this Feature]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/generate-on-the-fly-dynamic-media-renditions"}
 
 ## May 2026 release features {#may-2026-release-features}
 
@@ -183,3 +205,23 @@ Access all your Dynamic Media preset renditions and smart-crops for download, di
 ​![Dynamic Media renditions](/help/assets/assets/dm-renditions-content-hub.png)
 
 [!BADGE Dive Deeper into this Feature]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
+
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+

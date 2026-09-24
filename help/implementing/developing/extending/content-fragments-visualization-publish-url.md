@@ -4,23 +4,16 @@ description: Use the Publish URL to deliver Visual Content Fragments.
 feature: Developing, Content Fragments
 role: Admin, Developer
 ---
+
 # Visual Content Fragments - Deliver with the Publish URL {#visual-content-fragments-deliver-with-the-publish-url}
 
-When a Content Fragment that is based on a model with one, or multiple, attached HTML templates is published, the rendered HTML of that fragment is made available via the Adobe Experience Manager (AEM) as a Cloud Service publish tier at a URL with this structure:
+When a Content Fragment that is based on a model with attached HTML templates is published, the rendered HTML of that fragment is made available via the Adobe Experience Manager (AEM) as a Cloud Service publish tier at a URL with this structure:
 
 ```html
 https://publish-p<programId>-e<envId>.adobeaemcloud.com/adobe/stable/previewtemplates/contentFragments/<templateId>/<fragmentId>/<variation>.html
 ```
 
 This URL returns a *self-contained HTML document* (including inline CSS and structure) that can be embedded in any web context. 
-
-<!-- CQDOC-23232 - remove when GA -->
-
->[!NOTE]
->
->Visual Content Fragments are currently in Limited Availability. 
->
->If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 ## Embedding Techniques — Overview {#embedding-techniques-overview}
 
@@ -335,3 +328,12 @@ Use the following as a decision guide to help you choose the appropriate techniq
 | Need fastest prototype, same-origin, and CSS conflicts are acceptable? | Inline Element |
 | Embedding in Edge Delivery Services? | Embed block (iframe under the hood) |
 | Embedding in AEM Sites pages? | Core Component (Shadow DOM, built-in) |
+
+
+## Additional resources {#additional-resources}
+
+Additional resources are available:
+
+* [AEM Content Fragments documentation](/help/sites-cloud/administering/content-fragments/overview.md)
+
+* [Content Fragment Visualization Templates APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/cvt/)

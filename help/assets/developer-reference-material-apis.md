@@ -63,6 +63,12 @@ The article contains recommendations, reference materials, and resources for dev
 >
 > Adobe does not recommend uploading packages of assets as it violates our best-practices around avoiding binary handling in AEM. Uploading assets via JCR packages does not result in processing being triggered on those assets in AEM as a Cloud Service.
 
+## Set up OpenAPI-based AEM Assets APIs {#setup-openapi-aem-assets}
+
+If `AEM Assets API Users` Product Profile service does not display in Production, Development or lower environments created before November 2024, you must set up OpenAPI-based AEM Assets APIs.
+
+Setting up OpenAPI-based AEM Assets APIs involves Modernization of AEM as a Cloud Service environment and enabling AEM Assets APIs access. Modernization must be executed per environment (Production, Development, and Stage). For more information, see [Set up OpenAPI-based AEM APIs](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup).
+
 ## Asset upload {#asset-upload}
 
 In [!DNL Experience Manager] as a [!DNL Cloud Service], you can directly upload the assets to the cloud storage using HTTP API. The steps to upload a binary file are below. Execute these steps in an external application and not within the [!DNL Experience Manager] JVM.
@@ -537,18 +543,20 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 **See also**
 
-* [Translate Assets](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [Assets supported file formats](file-format-support.md)
-* [Search assets](search-assets.md)
-* [Connected assets](use-assets-across-connected-assets-instances.md)
-* [Asset reports](asset-reports.md)
-* [Metadata schemas](metadata-schemas.md)
-* [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata.md)
-* [Search facets](search-facets.md)
-* [Manage collections](manage-collections.md)
-* [Bulk metadata import](metadata-import-export.md)
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]

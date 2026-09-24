@@ -73,6 +73,20 @@ Use this prompt when migrating content from an existing website to Edge Delivery
 * Each migration creates import infrastructure (page templates, block parsers, transformers) for future bulk imports.
 * Dynamic Media and Scene7 images are detected in the source and preserved as DM URLs rather than imported as static renditions, so responsive and on-the-fly transformations remain intact. This applies to both Document Authoring and AEM Sites/Universal Editor migrations.
 
+### Site Catalog {#site-catalog}
+
+Use this prompt to analyze an existing website in order to understand its scale, templates, and block variants before starting a migration. The results can be used for [bulk imports.](#bulk-import)
+
+#### Example Prompts {#example-prompts-site-catalog}
+
+* "Scope site https://example.com"
+* "Find templates on https://example.com"
+* "Catalog site https://example.com"
+* "How many page types are there on https://example.com"
+* "What are the layouts on https://example.com"
+
+For details on the site catalog skill, please see the document [Site Catalog Skill.](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
+
 ### Bulk Import {#bulk-import}
 
 Use this prompt to import many pages of the same template after completing an [initial single-page migration.](#migrate-a-site)
@@ -147,20 +161,18 @@ Use this prompt to extract and apply visual design from a source site to Edge De
 * "Migrate the design from `https://example.com`"
 * "Extract design tokens"
 * "Style the hero block"
+* "Style all the blocks"
 
 #### What to Know {#wtk-design}
 
 * Design migration has two phases:
-  1. Phase 1 (site-wide) extracts the following to `styles/styles.css`:
-     * Global color palette and accent colors
-     * Typography system (fonts, sizes, weights)
-     * Spacing system (padding, margins, gaps)
-     * Section backgrounds (light, dark, colored)
-     * Base component styles (buttons, links, images)
-     * Outputs to 
-  1. Phase 2 migrates individual block styles and creates block-specific CSS in `/blocks/{name}/{name}.css`.
+  1. Phase 1 (site-wide) generates `styles/brand.css` and `styles/styles.css`:
+     * `brand.css` contains design tokens as CSS custom properties (fonts, colors, spacing, heading sizes).
+     * `styles.css` imports `brand.css` and applies the tokens to default content (headings, paragraphs, buttons, links, section backgrounds).
+     * If your project already has a `brand.css`, prompt the agent to use it instead of extracting from the source.
+  1. Phase 2 styles individual blocks in parallel and creates block-specific CSS in `/blocks/{name}/{name}.css`, referencing the tokens from `brand.css`.
 * Block styling (phase 2) requires site-wide design (phase 1) to be complete first.
-  * The global design system provides CSS custom properties that blocks reference.
+* Phase 2 achieves 80-90% block-level style fidelity in a single pass.
 * Estimated time:
   * Phase 1: 5-10 minutes
   * Phase 2: 10-15 minutes
@@ -177,21 +189,38 @@ Use this prompt to validate and refine individual migrated blocks and ensure vis
 
 #### What to Know {#wtk-block-critique}
 
-* Block critique compares a migrated block against its original source and iteratively applies CSS fixes until an 85% visual similarity is achieved or three iterations are completed.
+* Block critique compares a migrated block against its original source and applies fixes until an 85% similarity is achieved or three iterations are completed.
 * The skill requires the block to have been created by page migration first.
-* A block critique follows a six-step workflow:
-  1. It captures the original block from source page using an XPath selector.
-  1. It initializes the critique session.
-  1. It inspects the original block (screenshots, styles, HTML).
-  1. It inspects the migrated block.
-  1.  It compares elements and generates a similarity score with CSS fixes.
-  1. It applies fixes and re-inspects until the 85% target is reached.
-* Each iteration displays a complete critique report with all differences, applies all CSS fixes (prioritized by visual impact), verifies in preview, re-inspects, and shows improvement metrics.
+* Critique detects and fixes both **content/structural issues** and **styling issues**:
+  * Content/structural: missing headings, paragraphs, links, wrong table row/cell count — fixed by updating parsers and reimporting.
+  * Styling: CSS differences in colors, spacing, typography, layout — fixed by updating block CSS.
+* The fix cascade runs in order: global styles → section transformers → content/structural parsers → block CSS. Each layer is reimported and re-assessed before moving to the next.
 * Use the block critique after [design migration](#design-migration) is complete.
+
+### Site Critique {#site-critique}
+
+Use this prompt to validate all migrated blocks across your site in a single pass, ideal for multi-page migrations.
+
+#### Example Prompts {#example-site-critique}
+
+* "Critique site"
+* "Validate all blocks across the migrated site"
+
+#### What to Know {#wtk-site-critique}
+
+* Site critique validates all blocks across all migrated templates using parallel sub-agents, one per template.
+* It applies the same fix cascade as block critique (global styles → section transformers → content/structural parsers → block CSS), but across all pages simultaneously.
+* Fixes are deduplicated — if the same issue appears on multiple pages using the same block, the fix is applied once.
+* If `brand.css` does not exist yet, critique runs in content-structural-only mode (fixing parsers and transformers without styling).
+* Site critique is the recommended approach after design migration for multi-page projects.
+* The following workflow is recommended:
+  1. Migrate pages (single or bulk).
+  1. Run design migration.
+  1. Run `critique site` to validate and auto-fix remaining gaps across all templates.
 
 ### Page Critique {#page-critique}
 
-Use this prompt to validate entire migrated pages for full-page visual fidelity against the original website.
+Use this prompt to validate a single migrated page for visual fidelity against the original website.
 
 #### Example Prompts {#example-page-critique}
 
@@ -200,21 +229,10 @@ Use this prompt to validate entire migrated pages for full-page visual fidelity 
 
 #### What to Know {#wtk-page-critique}
 
-* Page critique performs a full-page visual comparison between the original and the migrated page, iterating until reaching an 85% similarity target or three iterations are completed.
-* A page critique has a five-step workflow:
-  1. It Initializes a critique session.
-  1. It inspects all elements on the original page.
-  1. It inspects all elements on the migrated page.
-  1. It compares and generates a similarity score with prioritized CSS fixes.
-  1. It applies fixes and re-inspects until the 85% target is  reached.
-* A page critique needs the source page URL and the migrated path (e.g.,"/about") as input.
-* Use page critique when validating overall page fidelity or validating multiple blocks simultaneously.
-* [Use block critique](#block-critique) for focused validation on specific components.
-* The following workflow is recommended:
-  1. Migrate a page.
-  1. Apply a design.
-  1. Run a block critique on key blocks
-  1. Run a page critique for full validation.
+* Page critique validates a single page, applying the same fix cascade (global → sections → content → styling) until 85% similarity or three iterations.
+* Requires the source page URL and the migrated path (e.g., "/about") as input.
+* Use page critique for single-page refinement after site critique, or for targeted validation.
+* For multi-page projects, [use site critique](#site-critique) instead — it handles all pages and deduplicates fixes automatically.
 
 ### Figma Block Migration {#figma-block-migration}
 
@@ -468,3 +486,4 @@ Use this prompt to troubleshoot problems with blocks, images, CSS, or preview.
 
 @gwalt, is the additional content in the prompting guide wiki ready to be added here?
 -->
+

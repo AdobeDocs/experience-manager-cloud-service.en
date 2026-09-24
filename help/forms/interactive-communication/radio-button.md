@@ -9,9 +9,6 @@ exl-id: fe1608f0-8d93-4b89-9dd9-849339b0a175
 ---
 # Radio Button Component in Interactive Communication Editor 
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 ## 1. Introduction 
 
@@ -109,3 +106,10 @@ Authors can group related radio buttons together and position them inside layout
 - Apply consistent spacing and alignment for better visual clarity, especially in mobile-friendly layouts. 
 
 The Radio Button component in the Interactive Communication editor is a fundamental input component that offers clean, structured decision-making for end users. When configured with clear labels, thoughtful spacing, and data binding, it ensures reliable data collection and a smoother user experience for forms, surveys, and onboarding workflows.
+
+## See also
+
+- [Check Box Component](/help/forms/interactive-communication/check-box.md)
+- [Configure Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/configure-data-binding.md)
+- [Use the Rule Editor in Interactive Communication Editor](/help/forms/interactive-communication/use-the-rule-editor.md)
+

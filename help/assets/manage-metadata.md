@@ -105,6 +105,11 @@ Descriptive metadata is metadata concerned with the application domain, for exam
 The cost of manually creating descriptive metadata information is high. So, standards are established to ease the exchange of metadata across software systems and organizations. [!DNL Experience Manager Assets] supports all relevant standards for metadata management.
 -->
 
+### Assets View versus Sites or Admin View metadata differences {#metadata-differences}
+
+AEM Assets view (the experience cloud or react-based UI) and classic Sites or Admin view maintain separate metadata form definitions, and do not share client-library-based UI customizations. A custom metadata schema extension or `clientlib` built for Admin view does not automatically appear or function in Assets view. To bring an Admin-view-defined schema into Assets view, use the `Import` capability for metadata forms rather than expecting automatic synchronization. For details about the `Import` capability, see [Import metadata forms](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/import-metadata-form-from-admin-view-to-assets-view).
+
+
 ## Metadata and Last Modification {#last-modification}
 
 The last modified date of an asset reflects the last time the original file for an asset is modified. As a result, the modification date and user only change when:
@@ -282,20 +287,24 @@ Creating metadata-driven workflows help you automate some processes, which impro
 
 **See also**
 
-* [Translate Assets](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [Assets supported file formats](file-format-support.md)
-* [Search assets](search-assets.md)
-* [Connected assets](use-assets-across-connected-assets-instances.md)
-* [Asset reports](asset-reports.md)
-* [Metadata schemas](metadata-schemas.md)
-* [Download assets](download-assets-from-aem.md)
-* [Search facets](search-facets.md)
-* [Manage collections](manage-collections.md)
-* [Bulk metadata import](metadata-import-export.md)
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
 >* [XMP metadata](xmp-metadata.md)
 >* [How to edit or add metadata](meta-edit.md)
+
