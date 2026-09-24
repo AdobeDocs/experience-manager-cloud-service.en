@@ -44,6 +44,7 @@ Before you install the connector, follow these pre-installation steps:
    >* p{PROGRAM_ID}.external.adobeaemcloud.com
    >
    >* To find the IP of your program, open a terminal window and run a command, such as:
+   >
    >    ```
    >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
    >    ```
