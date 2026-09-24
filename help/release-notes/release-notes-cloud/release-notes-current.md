@@ -309,20 +309,14 @@ During the validation window of 3 hours, you can:
 
 #### AEM Agentic Capabilities with CX Coworker {#capabilities-cx}
 
-Starting early September, [AEM agentic capabilities](/help/ai-in-aem/agentic-capabilities/overview.md) are generally available in Adobe CX Enterprise Coworker. CX Coworker serves as an AI-powered teammate for your marketing and customer experience teams. Users can describe what they need in plain language, while AEM agentic capabilities specialized in creating, updating, and preparing content and experiences—all while enforcing your existing brand and governance controls.
+Starting early September, [AEM agentic capabilities](/help/ai-in-aem/agentic-capabilities/overview.md) are generally available in Adobe CX Enterprise Coworker. Coworker is an AI-powered teammate for your marketing and CX teams, they describe what they need in plain language, while AEM agentic capabilities specialize in creating, updating, and readying content and experiences, all under the brand and governance controls you already have in place. Together, teams can unlock core use cases like managing content faster, discovering and readying assets for channels, and brand governance and trust.
 
-Together, teams can accelerate core use cases such as:
+A quick way to think about it: being seen and recommended by AI increasingly depends on high-quality, consistent content and the context around it. This helps your team produce and manage that content with more speed, quality, and scale, supporting your brand's visibility and affinity as more of your customers discover and decide through AI.
 
-* Faster Content Management: Speed up creation and updates across channels.
-* Asset Discovery & Preparation: Streamline discovering and readying assets for omnichannel delivery.
-* Brand Governance & Trust: Maintain brand consistency and compliance automatically.
-
-Being discovered and recommended by AI engines relies heavily on high-quality, consistent content and rich context. These capabilities enable your team to produce and manage content with greater speed, quality, and scale—boosting your brand's visibility and affinity as customer discovery shifts toward AI-driven channels.
-
-**Key Details & Availability**
-
-* Automatic Rollout: No action is required on your side; access will be enabled automatically.
-* Interface Availability: Upon enablement, access is currently provided via the Coworker immersive experience. The in-product right-rail panel experience will be released soon.
+>[!NOTE]
+>
+> * No action is required on your side; access will be enabled automatically.
+> * Once you are enabled, only the Coworker immersive experience will be available for now. The in-product right-rail panel experience will be released soon.
 
 #### New capabilities in AEM MCP {#aem-mcp}
 
