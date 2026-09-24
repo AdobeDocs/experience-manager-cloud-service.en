@@ -90,12 +90,32 @@ jobs:
             exit 1
           fi
           URL="https://x-access-token:${ADOBEDOCS_PUSH_TOKEN}@github.com/${TARGET_REPO}.git"
+          git config http.postBuffer 1048576000   # 1GB client buffer
+
+          # The first-time catch-up transfers years of rewritten history in ONE pack, which
+          # makes GitHub return HTTP 500 / "remote end hung up". Push in bounded chunks along
+          # first-parent history so no single pack is huge. Steady-state pushes only add a few
+          # commits, so the loop effectively just sends the final HEAD.
+          # CHUNK is tunable: if a chunk still 500s (media-heavy span), lower it and re-run.
+          CHUNK=250
+          push_in_chunks() {
+            flag="$1"; n=0
+            for sha in $(git rev-list --reverse --first-parent HEAD); do
+              n=$((n+1))
+              if [ $((n % CHUNK)) -eq 0 ]; then
+                echo "seeding public main up to ${sha} (${n} commits)"
+                git push $flag origin "${sha}:refs/heads/main"
+              fi
+            done
+            git push $flag origin HEAD:refs/heads/main
+          }
+
           if [ "$OVERSIZED" = "true" ]; then
             # History was rewritten to drop oversized blobs -> SHAs differ from public -> force-push.
             git remote add origin "$URL"
-            git push --force origin HEAD:refs/heads/main
+            push_in_chunks --force
           else
             # No rewrite happened -> plain push (fast-forward once the source is clean).
             git remote set-url origin "$URL"
-            git push origin HEAD:refs/heads/main
+            push_in_chunks ""
           fi
