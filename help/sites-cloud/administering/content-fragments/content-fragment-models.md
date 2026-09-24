@@ -298,6 +298,7 @@ Content Fragments can form nested content, using either of the following data ty
     >[!NOTE]
     >
     >This method is of particular interest when you are using [Headless Content Delivery using Content Fragments with GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+
   * Can be configured for one or multiple references (in the resulting fragment).
 
 <!--
