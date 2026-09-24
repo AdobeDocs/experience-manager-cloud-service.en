@@ -30,7 +30,7 @@ Follow the steps shown in the following image to access [!DNL Content Hub].
 
 ![access-content-hub](assets/access-content-hub.png)
 
-## View UI extensions in [!DNL Content Hub] {#view-ui-extensions}**
+## View UI extensions in [!DNL Content Hub] {#view-ui-extensions}
 
 Within [!DNL Content Hub], UI extensions can be added to the following extension points.
 
@@ -89,7 +89,3 @@ For example, organizations can implement an **Extend Expiry** workflow that enab
 After the request is submitted, Content Hub displays a confirmation message.
 
 ![Confirmation message](assets/configured-message.png)
-
->[!NOTE]
->
->For implementation details, including architecture, APIs, local development, deployment, and troubleshooting, see the Content Hub UI extensibility developer documentation.
