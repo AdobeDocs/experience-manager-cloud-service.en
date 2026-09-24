@@ -100,29 +100,13 @@ See [AEM Assets beta programs](#assets-beta-program-features).
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**C2PA metadata support**
-
-Renditions of assets now [supports C2PA metadata based on the original, enabling easy labelling of Gen AI manipulated content](/help/assets/c2pa-metadata-assets-view.md). This helps Experience Manager customers comply with Gen AI labelling laws; customers should validate compliance with regulations on their own. Metadata can be inspected using any C2PA inspection tool. See [Adobe C2PA inspection tool](https://contentauthenticity.adobe.com/inspect). 
-
-New JCR properties for a C2PA manifest (dam:hasC2PAManifest) and Gen AI (dam:isAiGenerated) labels are available on Assets processed with an embedded C2PA manifest. The Gen AI label property can be used in cases where C2PA is not utilized. This is not recommended since management of the property is manual and many of the Adobe and 3rd party tools use C2PA.
-
-**Assets Insights now supports Adobe Analytics 2.0 API**
-
-Assets Insights in AEM Admin View now [supports the Adobe Analytics 2.0 API with OAuth Server-to-Server authentication, enabling continued access to current asset usage insights following the retirement of the Adobe Analytics 1.4 API](/help/assets/assets-insights.md). Customers can reconfigure their Assets Insights integration to resume synchronization of impressions and clicks from Adobe Analytics, including data collected during the transition period, without losing existing insights data.
-
-### New Features in Dynamic Media {#new-features-dynamic-media}
-
-**C2PA metadata support in Dynamic Media**
-
-You can now [apply C2PA metadata to assets in Dynamic Media with OpenAPI capabilities](/help/assets/c2pa-metadata.md) and Dynamic Media Scene7. C2PA metadata embeds secure metadata that helps viewers verify an asset's origin, edit history, and whether generative AI was used during its creation, enabling greater transparency and trust in digital content.
-
-### New features in Content Hub {#new-features-content-hub}
-
-**Generate on-the-fly Dynamic Media renditions in Content Hub**
-
-[Generate on-the-fly Dynamic Media renditions in Content Hub to quickly create asset variations tailored to different channels and content needs](/help/assets/generate-on-the-fly-dynamic-media-renditions.md). This eliminates the need to maintain multiple pre-generated renditions, making it easier to adapt and reuse assets across experiences. With optimized renditions available on demand, teams can accelerate content activation and deliver the right asset variation for every experience.
+This section highlights new and recently available capabilities for [!DNL Experience Manager Assets]. It includes features that became Generally Available (GA) in the current release, as well as features that are currently in Limited Availability (LA) or Beta. LA and Beta features remain listed in this section until they become generally available.
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Limited Availability Features {#assets-limited-availability-features}
+
+#### Native Dynamic Media Template component in Adobe Journey Optimizer {#dynamic-media-component-ajo}
+
+The native Dynamic Media Template component lets marketers add and personalize AEM Dynamic Media templates directly in the Adobe Journey Optimizer email editor. Marketers can select existing templates or import layered PSD files, edit individual layers such as countdown timers, and configure text, CTAs, positioning, and timing without leaving the email editor. This enables governed, personalized, and dynamic email experiences, including open-time countdowns and personalized product content.
 
 #### Dynamic Media with OpenAPI capabilities: Multi-caption and multi-audio track support for videos {#multi-caption-multi-audio}
 
@@ -153,6 +137,15 @@ Administrators can enable or disable AI Search in Content Hub using the Configur
 
 Content Hub now allows administrators to [enable custom metadata fields as sorting options on the Content Hub home page](/help/assets/search-assets-content-hub.md#configure-sorting-aem-assets-content-hub). In addition to the default sorting options, Size, Modified, Name, and Relevance, administrators can configure business-specific metadata fields such as Channel, Region, SKU, or Campaign to help users organize search results more effectively.
 
+#### Content Hub: Smart Collections {#smart-collections}
+
+Smart Collections enable you to automatically organize assets based on defined search criteria.
+When you create a Smart Collection, the collection stores the search query and filter criteria instead of storing individual assets. Assets that match the configured criteria are automatically displayed in the collection.
+
+Smart Collections automatically remain up to date. When newly approved assets satisfy the configured search criteria, they are automatically added to the collection.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3503807)
+
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta Features {#assets-beta-program-features}
 
@@ -174,15 +167,6 @@ To participate or learn more, send an email to `dm-beta-feedback@adobe.com`.
 Eliminate repetitive redesign and manual localization by using AI to automatically adapt a single master template into layouts that fit different formats and aspect ratios (web, social, display, and email) and to instantly translate text across languages, all while preserving the visual integrity of the design, turning one master asset into variants across many device sizes and locales.
 
 To participate or learn more, send an email to `dm-beta-feedback@adobe.com`.
-
-#### Content Hub: Smart Collections {#smart-collections}
-
-Smart Collections enable you to automatically organize assets based on defined search criteria.
-When you create a Smart Collection, the collection stores the search query and filter criteria instead of storing individual assets. Assets that match the configured criteria are automatically displayed in the collection.
-
-Smart Collections automatically remain up to date. When newly approved assets satisfy the configured search criteria, they are automatically added to the collection.
-
-To participate or learn more, send an email to `aemcontenthubbeta@adobe.com`.
 
 #### Multi-portal Content Hub {#multi-portal-content-hub}
 
@@ -354,7 +338,7 @@ OpenTelemetry will be in Limited Availability on **October 1st**. To get on the 
 
 #### AEM Query Optimization in the Code Assessment Agent Skill (IDE AI Tooling) {#code-assessment-skill}
 
-AI coding agents (Claude Code, Cursor, GitHub Copilot, and similar tools) have broad knowledge of AEM’s underlying technologies, but don’t necessarily know best practices for generating and optimizing code or how to debug common AEM development issues. For this, Adobe provides installable agent skills, which instruct your coding agent. 
+AI coding agents (Claude Code, Cursor, GitHub Copilot, and similar tools) have broad knowledge of AEM's underlying technologies, but don't necessarily know best practices for generating and optimizing code or how to debug common AEM development issues. For this, Adobe provides installable agent skills, which instruct your coding agent. 
 
 Available **October 1st**, one such skill – code assessment – has expanded its capabilities to include query optimization. It checks whether a JCR/Oak query is actually served by an index — and flags index definitions that look correct but are subtly misconfigured in ways that cause missed queries or silently incomplete results.
 
