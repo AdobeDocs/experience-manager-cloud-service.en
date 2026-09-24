@@ -19,7 +19,7 @@ Before checking your domain name status in Cloud Manager, make sure you have alr
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
+1. On the **My Programs** console, select the program.
 
 1. Navigate to the **Environments** screen from the **Overview** page.
 
@@ -52,13 +52,13 @@ Cloud Manager verifies domain ownership through the customer-managed (OV/EV) SSL
 
 ## Domain name error {#domain-error}
 
-The following is a common domain name verification error and its typical resolution.
+The following are common domain name verification errors and their typical resolutions.
 
 ### Domain not installed error {#domain-not-installed}
 
 <!-- This error may occur during domain validation of the EV/OV certificate even after you have checked that the certificate has been updated appropriately. -->
 
-When you attempt to add a domain mapping in Cloud Manager, it is possible for you to encounter the following error message: 
+When you attempt to add a domain mapping in Cloud Manager, you may encounter the following error message: 
 
 *The domain is already installed in a Fastly account. Remove it before adding it to Cloud Service.*
 
@@ -74,15 +74,41 @@ The error is resolved as follows:
 
 * Use this option to link the apex domain and all subdomains to the AEM as a Cloud Service Fastly account. See [Working with domains](https://www.fastly.com/documentation/guides/getting-started/domains/working-with-domains/working-with-domains/) in the Fastly documentation for additional details.
 
-* If your apex domain has multiple subdomains for AEM as a Cloud Service and non-AEM sites that need to link to different Fastly accounts, attempt to install the domain in Cloud Manager. This process helps manage subdomain connections across different Fastly accounts. If the domain installation fails, create a Customer Support ticket with Fastly so Adobe can follow up with Fastly on your behalf.
+* If your apex domain has multiple subdomains for AEM as a Cloud Service and non-AEM sites that need to link to different Fastly accounts, try to install the domain in Cloud Manager. This process facilitates the management of subdomain connections across different Fastly accounts. If the domain installation fails, create a Customer Support ticket with Fastly so Adobe can follow up with Fastly on your behalf.
 
 >[!TIP]
 >
->Solving domain delegation issues with Fastly takes 1-2 business days on average. For this reason, Adobe recommends that you install the domains well before their go-live date.
+>Domain delegation resolutions with Fastly are completed in 1-2 business days on average. For this reason, Adobe recommends that you install the domains well before their go-live date.
 
 >[!NOTE]
 >
 >Do not route the DNS of your site to AEM as a Cloud Service IPs if the domain was not installed successfully.
+
+### Domain already registered error {#domain-already-registered}
+
+When you attempt to add a domain mapping in Cloud Manager, you may encounter the following error:
+
+```
+400 - DOMAIN_ALREADY_REGISTERED: Domain already registered
+```
+
+**Error cause**  
+The `DOMAIN_ALREADY_REGISTERED` error means that the domain is already registered in another Fastly-backed service, so Cloud Manager cannot register it again. This situation usually occurs when the following happens:
+
+* The domain is installed in another Adobe service that uses Fastly, such as Adobe Commerce Cloud (Magento).
+* A previous domain mapping was not removed when its environment was deleted, so a stale mapping still claims the domain.
+* The domain is still attached to an Edge Delivery Services site.
+
+**Error resolution**  
+You can resolve the error by doing the following:
+
+- If the domain is installed in Adobe Commerce Cloud (Magento), remove it from the Adobe Commerce Fastly account before you add it to AEM as a Cloud Service.
+- If a stale mapping or a stale site attachment holds the domain, remove the domain from the service that currently claims it.
+- If you cannot determine where the domain is registered, contact Adobe Customer Support. Provide your program ID, the domain name, and your IMS organization ID so that Adobe can locate and release the registration.
+
+>[!NOTE]
+>
+>The `DOMAIN_ALREADY_REGISTERED` error and the *Domain not installed error* share the same root cause. That is, another Fastly account or service already claims the domain. In both cases, release the domain from the other service before you add it to AEM as a Cloud Service.
 
 ## Pre-existing CDN configurations for custom domain names {#pre-existing-cdn}
 
