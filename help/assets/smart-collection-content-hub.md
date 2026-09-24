@@ -13,6 +13,10 @@ When you create a Smart Collection, the collection stores the search query and f
 
 Smart Collections automatically remain up to date. When newly approved assets satisfy the configured search criteria, they are automatically added to the collection.
 
+>[!NOTE]
+>
+>Smart Collections is a Limited Availability feature. To enable this feature, create a [support ticket](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+
 ## Create a Smart Collection {#create-smart-collection}
 
 Create a Smart Collection by saving a search and its associated criteria.
