@@ -22,3 +22,5 @@ These are the release notes for the 24 September 2026 release of the Universal E
 
 * The component "Move to top" action now correctly moves the component to top when the container renders fields before child components.
 * Container field labels now properly inherit the light/white color when the dark theme is active, ensuring readability.
+* Missing styling on the Container Wrapper's style fields were properly added.
+* Proper validation messaging for invalid site URLs on the Get Started screen was added.
