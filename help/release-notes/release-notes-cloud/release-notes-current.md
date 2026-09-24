@@ -40,16 +40,17 @@ Have a look at the May 2026 Release Overview video for a summary of the features
 
 ## Release Overview {#overview}
 
-The 2026.8.0 release of [!DNL Experience Manager] as a [!DNL Cloud Service] delivers new capabilities across Assets, Forms, and Foundation, with a continued emphasis on AI-assisted workflows, content authenticity, and preparing customers for upcoming platform changes.
+The 2026.9.0 release of [!DNL Experience Manager] as a [!DNL Cloud Service] delivers new capabilities across Assets, Forms, and Foundation, with a continued emphasis on AI-assisted authoring and discovery, richer Dynamic Media experiences, and developer productivity.
 
 **Highlights of this release**
 
-* **Content authenticity with C2PA** — Asset renditions now carry C2PA metadata based on the original, and C2PA support extends to Dynamic Media (OpenAPI and Scene7), helping customers label Gen AI content and meet transparency requirements.
-* **AI-powered Assets workflows** — Content Hub can generate Dynamic Media renditions on the fly, and Assets Insights now supports the Adobe Analytics 2.0 API with OAuth Server-to-Server authentication ahead of the Analytics 1.4 API retirement.
-* **Foundation and platform** — Agentic permission management for real-time ACL auditing, AEM Edge Functions for running JavaScript at the CDN, and IMS authentication rich errors for easier troubleshooting.
-* **Plan-ahead notices** — Important timelines for Java API deprecations and the upcoming Java 25 runtime upgrade help customers prepare their environments.
+* **Smarter Assets discovery and organization** — Content Hub adds AI Search for intent-based, multilingual results, Smart Collections that stay up to date automatically, and custom metadata sorting options.
+* **Richer Dynamic Media experiences** — A new, fully customizable video viewer with actionable analytics, AI-generated video captions, multi-caption and multi-audio track support, and attribute-based access control for secure delivery.
+* **AI-assisted authoring and development** — AEM agentic capabilities are now generally available in Adobe CX Enterprise Coworker, the AEM MCP Server adds Cloud Manager operations, and IDE agent skills expand with AEM query optimization and additional code-migration patterns.
+* **Foundation and platform** — Canary deployments to validate a release against production before it serves live traffic, OpenTelemetry-based APM (Limited Availability), and IMS authentication rich errors for easier troubleshooting.
+* **Plan-ahead notices** — Important timelines for Java API deprecations (September 28, 2026) and the upcoming Java 25 runtime upgrade help customers prepare their environments.
 
-A range of beta, early adopter, and alpha programs are also available this release. See the sections below for details.
+A range of beta, early adopter, and Limited Availability programs are also available this release. See the sections below for details.
 
 ## AEM Beta Programs {#aem-beta-programs}
 
