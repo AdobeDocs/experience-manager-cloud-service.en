@@ -19,22 +19,22 @@ exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
 
 {{work-with-dynamic-media}}
 
-Configuring Dynamic Media Publish Setup options are available only if the following are true:
+Dynamic Media Publish Setup options are available only if the following are true:
 
-* You have an *existing* **[!UICONTROL Dynamic Media Configuration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager as a Cloud Service. See [Create a Dynamic Media Configuration in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
+* You have an *existing* **[!UICONTROL Dynamic Media Configuration]** in **[!UICONTROL Cloud Services]** for Adobe Experience Manager as a Cloud Service. See [Create a Dynamic Media Configuration in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 * You are an Experience Manager system administrator with administrator privileges.
 
-Experienced website developers and programmers use Dynamic Media Publish Setup. Adobe Dynamic Media recommends that users who change publish settings be familiar with Adobe Dynamic Media, HTTP protocol standards and conventions, and basic imaging technology.
+Website developers and software engineers use Dynamic Media Publish Setup. Adobe Dynamic Media recommends that users who change publish settings possess knowledge of Adobe Dynamic Media, HTTP protocol standards and conventions, and fundamental imaging technology.
 
-The Dynamic Media Publish Setup page establishes default settings that determine how assets are delivered from Adobe Dynamic Media servers to web sites or applications. If no setting is specified, the Adobe Dynamic Media server delivers an asset according to a default setting that was configured on the Dynamic Media Publish Setup page.
+The Dynamic Media Publish Setup page establishes default settings that determine how assets are delivered from Adobe Dynamic Media servers to websites or applications. If no setting is specified, the Adobe Dynamic Media server delivers an asset according to a default setting that was configured on the Dynamic Media Publish Setup page.
 
-See also [Optional - Setup and configuration of Dynamic Media settings](/help/assets/dynamic-media/config-dm.md#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings) for more optional configuration tasks.
+See also [Optional – Setup and configuration of Dynamic Media settings](/help/assets/dynamic-media/config-dm.md#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings) for more optional configuration tasks.
 
 >[!NOTE]
 >
->Upgrading from Dynamic Media Classic to Dynamic Media on Adobe Experience Manager as a Cloud Service? The [General Settings](/help/assets/dynamic-media/dm-general-settings.md) page and Publish Setup page in Dynamic Media are pre-populated with the values taken from your Dynamic Media Classic account. The exceptions are all the values that are listed under the **[!UICONTROL Default upload options]** area of the General Settings page. Those values are already in Experience Manager. As such, any changes that you make under **[!UICONTROL Default upload options]**, across any of the five tabs, by way of the Experience Manager user interface, are reflected in Dynamic Media, not in Dynamic Media Classic. All other settings and values in the [General Settings](/help/assets/dynamic-media/dm-general-settings.md) page and the Publish Setup page are maintained between Dynamic Media Classic and Dynamic Media on Experience Manager.
+>Migrating from Dynamic Media Classic to Dynamic Media on Adobe Experience Manager as a Cloud Service? The [General Settings](/help/assets/dynamic-media/dm-general-settings.md) page and Publish Setup page in Dynamic Media are pre-populated with the values taken from your Dynamic Media Classic account. The exceptions are the values that are listed under the **[!UICONTROL Default upload options]** area of the General Settings page. Those values are already in Experience Manager. Any changes you make under **[!UICONTROL Default upload options]** in the five Experience Manager user interface tabs reflect in Dynamic Media, rather than Dynamic Media Classic. All other settings and values in the [General Settings](/help/assets/dynamic-media/dm-general-settings.md) page and the Publish Setup page are maintained between Dynamic Media Classic and Dynamic Media on Experience Manager.
 
-**To configure Dynamic Media Publish Setup Image Server:**
+**To configure Dynamic Media Publish Setup for Image Server:**
 
 1. In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
 1. In the left rail, select the Tools icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
@@ -66,7 +66,7 @@ See also [Optional - Setup and configuration of Dynamic Media settings](/help/as
 
 When *Test Image Serving* is set as the publish context, you can set the following security setting:
 
-**[!UICONTROL Client address]** - Lets you specify one or more IP addresses or IP address ranges. When specified, requests to this image catalog that originates from a client at an unlisted IP address is rejected. This rule applies both to delivery of images and rendered images.
+**[!UICONTROL Client address]** - Lets you specify one or more IP addresses or IP address ranges. When specified, requests to this image catalog that originate from a client at an unlisted IP address are rejected. This rule applies both to delivery of images and rendered images.
 
    ![Security tab](/help/assets/assets-dm/dm-ipallowlist.png)<br>*The security tab showing IP "allow" field.*
 
@@ -147,7 +147,7 @@ See also the [IccRenderIntent](https://experienceleague.adobe.com/en/docs/dynami
 
 ## Test assets before making them public {#test-assets-before-making-public}
 
-Secure Testing helps you define a secure test environment and build a robust business-to-business solution, based on a configurable set of IP address and ranges. This functionality lets you match your Adobe Dynamic Media deployments with the architecture of your content management and business system.
+Secure Testing helps you define a secure test environment and build a reliable business-to-business solution, based on a configurable set of IP addresses and ranges. This functionality lets you match your Adobe Dynamic Media deployments with the architecture of your content management and business system.
 
 With Secure Testing, you can preview the staging version of the website with unpublished content.
 
@@ -155,7 +155,7 @@ If desired, create a staging environment rather than making assets publicly avai
 
 * Preview websites before public launch (staging website).
 * Serve assets that require restricted access, such as eCatalogs that show prices in a B2B web application.
-* Use assets behind a firewall as part of a product information management system, customer service application, training site, and so on.
+* Use assets behind a firewall as part of a product information management system, customer service application, training site, and other similar applications.
 
 >[!NOTE]
 >
@@ -163,7 +163,7 @@ If desired, create a staging environment rather than making assets publicly avai
 
 ### How Secure Testing works {#how-test-assets-works}
 
-Most corporations run their Internet behind a firewall. Access to the Internet is possible through certain routes and typically through a limited range of public IP addresses.
+Most corporations access the Internet through a firewall. Access to the Internet is possible through certain routes and typically through a limited range of public IP addresses.
 
 From your corporate network, you can discover your public IP address using various websites or request this information from your corporate IT organization.
 
@@ -182,7 +182,7 @@ Secure Testing services currently support the following asset types and function
 * Images.
 * Vignettes (Render Server requests).
 * Customers must explicitly request Render Server support, which is available.
-* Sets, including image sets, eCatalog, render sets, and media sets.
+* Sets, including image, eCatalog, and media sets.
 * Standard Adobe Dynamic Media rich media viewers.
 * Adobe Dynamic Media OnDemand JSP pages.
 * Static content, such as PDF files and progressively served videos.
@@ -198,7 +198,7 @@ The following asset types and functionalities are currently not supported:
 
   >[!IMPORTANT]
   >
-  >Starting May 1, 2023, UGC assets in Dynamic Media are available for use up to 60 days from the date of upload. After 60 days, the assets are removed.
+  >Starting May 1, 2023, UGC assets in Dynamic Media remain available for use up to 60 days from the date of upload. After 60 days, the assets are removed.
 
   >[!NOTE]
   >
@@ -227,19 +227,19 @@ To ensure that the Secure Testing service works as expected, do the following:
    * To add more IP addresses, repeat the previous three steps.
    * Continue to the next step.
 
-1. In the upper right corner of the Image Server page, select **[!UICONTROL Save]**.
+1. In the upper-right corner of the Image Server page, select **[!UICONTROL Save]**.
 1. Upload the desired images to your Adobe Dynamic Media account.
 
 <!--    See [Upload files](uploading-files.md#uploading_files). -->
 
-1. Make sure some of the images are marked for publish and others are unmarked, and then submit the publish job.
+1. Make sure some of the images are marked for publishing and others are unmarked, and then submit the publish job.
 
 <!--    See [Publish files](publishing-files.md#publishing_files). -->
 
-1. Determine the name of your Secure Testing service by going to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media General Setting]**.
+1. Determine the name of your Secure Testing service by navigating to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media General Settings]**.
 1. On the **[!UICONTROL Server]** page, find the server name to the right of **[!UICONTROL Published Server Name]**.
 
-Contact Adobe Care if the server name is missing or the URL to the server does not work.
+Contact Adobe Customer Care if the server name is missing or the URL to the server is not functional.
 
 #### Prepare website variations
 
@@ -254,12 +254,12 @@ Perform the following tests:
 
 1. Check whether assets are visible from within your corporate network.
 
-   From within the corporate network identified by the previously defined IP address range, the staging version of the website displays all images, whether marked for publish or not. As such, you can test without accidentally making images available before preview approval or product launch.
+   From within the corporate network identified by the previously defined IP address range, the staging version of the website displays all images, whether marked for publish or not. Therefore, you can test without inadvertently making images available before preview approval or product launch.
 
-   Confirm that the public version of your site shows published assets as previously experienced with Adobe Dynamic Media.
+   Confirm that the public version of your site shows published assets as previously configured with Adobe Dynamic Media.
 
-1. From outside your corporate network, verify that nonpublished assets (that is, unmarked for publish) are protected from third-party access.
+1. From outside your corporate network, verify that unpublished assets (that is, unmarked for publishing) are protected from third-party access.
 
-   Access your network from outside (such as from your home computer, or over a 4G/5G connection), then verify that the public version of the site shows all published assets but none of the unpublished content.
+   Access your network from outside (such as from a personal computer or over a 4G/5G connection), then verify that the public version of the site shows all published assets but none of the unpublished content.
 
    Confirm that the staging version does not show any asset because you are accessing the Secure Testing service from an unapproved IP address.
