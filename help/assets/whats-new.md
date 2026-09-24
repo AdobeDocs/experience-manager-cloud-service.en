@@ -25,8 +25,7 @@ The release date of Content Hub feature release (2026.09.0) is September 24, 202
 
 **Smart Collections**
 
-Smart Collections enable you to automatically organize assets based on defined search criteria.
-When you create a Smart Collection, the collection stores the search query and filter criteria instead of storing individual assets. Assets that match the configured criteria are automatically displayed in the collection.
+Smart Collections enable you to automatically organize assets based on defined search criteria. When you create a Smart Collection, the collection stores the search query and filter criteria instead of storing individual assets. Assets that match the configured criteria are automatically displayed in the collection.
 
 Smart Collections automatically remain up to date. When newly approved assets satisfy the configured search criteria, they are automatically added to the collection.
 
