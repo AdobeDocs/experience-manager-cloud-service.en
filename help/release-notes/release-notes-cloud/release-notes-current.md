@@ -334,7 +334,10 @@ Cloud Manager operations were previously only available through the deprecated d
 The AEM MCP Server is also used by the [AEM Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md#install-adobe-experience-manager-connector) and [AEM ChatGPT Plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md#install-adobe-experience-manager-plugin).
 
 <!--
-- Cloud Migration: fetch Best Practices Analyzer (BPA) findings from Cloud Acceleration Manager (CAM) by migration pattern or severity level, enabling AI agents to drive code migration from AEM 6.x to AEM as a Cloud Service. -->
+
+- Cloud Migration: fetch Best Practices Analyzer (BPA) findings from Cloud Acceleration Manager (CAM) by migration pattern or severity level, enabling AI agents to drive code migration from AEM 6.x to AEM as a Cloud Service. 
+
+-->
 
 #### OpenTelemetry for Application Performance Monitoring (APM) (Limited Availability) {#optel}
 
@@ -342,10 +345,10 @@ In Limited Availability (see note below for access), AEM as a Cloud Service supp
 
 Use this integration to:
 
-- Investigate slow or failing requests
-- Track JVM health and resource usage over time
-- Build dashboards and alerts for your AEM tiers
-- Correlate AEM behavior with other services during incidents
+* Investigate slow or failing requests
+* Track JVM health and resource usage over time
+* Build dashboards and alerts for your AEM tiers
+* Correlate AEM behavior with other services during incidents
 
 OpenTelemetry will be in Limited Availability on **October 1st**. To get on the list for access, email [aemcs-otel-access@adobe.com](mailto:aemcs-otel-access@adobe.com), describing your use case and how you intend on ingesting the data. 
 
