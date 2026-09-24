@@ -317,6 +317,7 @@ A quick way to think about it: being seen and recommended by AI increasingly dep
 >
 > * No action is required on your side; access will be enabled automatically.
 > * Once you are enabled, only the Coworker immersive experience will be available for now. The in-product right-rail panel experience will be released soon.
+> * If you have questions, please email [cx-coworker-questions@adobe.com](mailto:cx-coworker-questions@adobe.com).
 
 #### New capabilities in AEM MCP {#aem-mcp}
 
