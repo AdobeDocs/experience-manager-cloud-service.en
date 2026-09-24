@@ -307,6 +307,23 @@ During the validation window of 3 hours, you can:
 * Promote the canary release to serve all live traffic, or
 * Cancel it and keep the current release running.
 
+#### AEM Agentic Capabilities with CX Coworker {#capabilities-cx}
+
+Starting early September, [AEM agentic capabilities](/help/ai-in-aem/agentic-capabilities/overview.md) are generally available in Adobe CX Enterprise Coworker. CX Coworker serves as an AI-powered teammate for your marketing and customer experience teams. Users can describe what they need in plain language, while AEM agentic capabilities specialized in creating, updating, and preparing content and experiences—all while enforcing your existing brand and governance controls.
+
+Together, teams can accelerate core use cases such as:
+
+* Faster Content Management: Speed up creation and updates across channels.
+* Asset Discovery & Preparation: Streamline discovering and readying assets for omnichannel delivery.
+* Brand Governance & Trust: Maintain brand consistency and compliance automatically.
+
+Being discovered and recommended by AI engines relies heavily on high-quality, consistent content and rich context. These capabilities enable your team to produce and manage content with greater speed, quality, and scale—boosting your brand’s visibility and affinity as customer discovery shifts toward AI-driven channels.
+
+**Key Details & Availability**
+
+* Automatic Rollout: No action is required on your side; access will be enabled automatically.
+* Interface Availability: Upon enablement, access is currently provided via the Coworker immersive experience. The in-product right-rail panel experience will be released soon.
+
 #### New capabilities in AEM MCP {#aem-mcp}
 
 [AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) allows you to configure a single URL in your chat application or coding agent to access a growing set of capabilities. 
@@ -361,11 +378,7 @@ Existing supported patterns include Sling Scheduler, ResourceChangeListener, Rep
 
 For more information, see [AI-Assisted Code Migration to AEM as a Cloud Service](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md).
 
-#### Permission Management Agentic Capabilities in AEM {#permission-management-in-aem}
-
-Ask plain-language questions about who can do what on a content path, and the governance agent audits effective ACLs on your author environment in real time — explaining access decisions and their source policies, listing who holds a given privilege, pinpointing what causes a denial, and recommending groups for grants that follow the least privilege principle. For more information, see [Permission Management in AEM](/help/ai-in-aem/agents/governance/overview.md#permission-management-in-aem)‎
-
-### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
+onthl### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
 #### IMS Authentication Rich Errors {#ims-auth-rich-errors}
 
