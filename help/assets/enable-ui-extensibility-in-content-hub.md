@@ -9,13 +9,19 @@ exl-id:
 
 # Enable UI extensibility in [!DNL Content Hub] {#content-hub-ui-extensibility}
 
-[!DNL Content Hub] supports UI extensibility, enabling organizations to integrate custom business workflows directly into the Content Hub experience. Using Adobe App Builder, developers can add custom panels that enable users to perform business-specific actions without leaving Content Hub.
+[!DNL Content Hub] supports UI extensibility, enabling organizations to integrate custom business workflows directly into the Content Hub experience. Using Adobe App Builder, developers can add custom UI components that enable users to perform business-specific actions without leaving Content Hub.
 
-You can add custom extensions to the **Asset Details** page. The added extension appears as a dedicated panel where users can perform custom workflows on the selected asset.
+You can add custom extensions at the **Asset** and **Collection** level. [!DNL Content Hub] supports the following extension points:
+
+* **Asset Card**
+* **Selection Bar**
+* **Asset Details**
+* **Collection Card**
 
 >[!IMPORTANT]
 >
 >* Adobe App Builder is required to build and deploy UI extensions for Content Hub.
+>* [!DNL Content Hub] UI extensibility is currently available under **Limited Availability**. To enable this capability, contact the Content Hub team and request access to the feature and the related technical documentation.
 >* You can provide documentation feedback by expanding **[!UICONTROL Detailed Feedback options]** and selecting **[!UICONTROL Report an issue]**.
 
 ## Access Content Hub {#access-content-hub}
@@ -24,11 +30,37 @@ Follow the steps shown in the following image to access [!DNL Content Hub].
 
 ![access-content-hub](assets/access-content-hub.png)
 
-## View UI extensions in [!DNL Content Hub] {#view-ui-extensions}
+## View UI extensions in [!DNL Content Hub] {#view-ui-extensions}**
 
-Within [!DNL Content Hub], open an asset and navigate to the **[!UICONTROL Asset Details]** page. If a UI extension is installed and configured, it appears as a dedicated panel within the Asset Details interface.
+Within [!DNL Content Hub], UI extensions can be added to the following extension points.
 
-![Asset Details screen with extension panel](assets/asset-details-extension-tab.png)
+### Asset Card
+
+Open the **[!UICONTROL More]** menu on an asset card and select **[!UICONTROL Asset label]** to open the custom dialog.
+
+![Asset card showing the Asset label option](assets/asset-label.png)
+
+The custom dialog displays the resource type and resource ID for the selected asset.
+
+### Selection Bar
+
+Select an asset to display the selection bar. Select **[!UICONTROL Custom label]** to open the custom dialog.
+
+![Selection bar showing the Custom label option](assets/selection-bar-custom-label.png)
+
+The custom dialog displays the selected asset and its resource ID.
+
+### Asset Details
+
+Open an asset and navigate to the Asset Details page. Select the **Asset Details Extension Tab** icon to open the UI extension.
+
+![Asset Details page showing the Asset Details Extension Tab](assets/asset-details-extension-tab.png)
+
+### Collection Card
+
+Open the **[!UICONTROL More]** menu on a collection card and select **[!UICONTROL Collection label]** to open the UI extension.
+
+![Collection card showing the Collection label option](assets/collection-label.png)
 
 ## Prerequisites for adding the extensibility component {#content-hub-prerequisites}
 
@@ -42,17 +74,9 @@ Fulfil the following requirements before building UI extensions for [!DNL Conten
 
 ## Add the UI extensibility component to [!DNL Content Hub] {#add-ui-extensibility-content-hub}
 
-1. See **Getting Started** for an introduction to Adobe App Builder and the UI extensibility framework.
-
-1. See **Guides** for information about local environment setup, local preview, publishing, and extension management.
-
-1. See **Common concepts** to understand the fundamentals required to build UI extensions for Content Hub.
-
-1. Add a custom panel to the **Asset Details** page. The custom panel enables users to perform business-specific actions directly within Content Hub. For implementation details, API references, code examples, and extension architecture, see the developer documentation.
-
-1. Set up your local development environment and build your first Content Hub extension using Adobe App Builder.
-
-1. Deploy the extension to your target workspace and verify that it is available within Content Hub.
+> [!IMPORTANT]
+>
+> Detailed technical documentation for [!DNL Content Hub] UI extensibility is currently available through the Content Hub team because the capability is under **Limited Availability**. Contact the Content Hub team to request access to the documentation.
 
 ## Extend business workflows in Content Hub {#extend-business-workflows}
 
