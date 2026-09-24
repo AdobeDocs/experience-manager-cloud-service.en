@@ -144,7 +144,7 @@ When you create a Smart Collection, the collection stores the search query and f
 
 Smart Collections automatically remain up to date. When newly approved assets satisfy the configured search criteria, they are automatically added to the collection.
 
->[!VIDEO](https://video.tv.adobe.com/v/3503807)
+>[!VIDEO](https://video.tv.adobe.com/v/3503809)
 
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta Features {#assets-beta-program-features}
@@ -317,7 +317,7 @@ Together, teams can accelerate core use cases such as:
 * Asset Discovery & Preparation: Streamline discovering and readying assets for omnichannel delivery.
 * Brand Governance & Trust: Maintain brand consistency and compliance automatically.
 
-Being discovered and recommended by AI engines relies heavily on high-quality, consistent content and rich context. These capabilities enable your team to produce and manage content with greater speed, quality, and scale—boosting your brand’s visibility and affinity as customer discovery shifts toward AI-driven channels.
+Being discovered and recommended by AI engines relies heavily on high-quality, consistent content and rich context. These capabilities enable your team to produce and manage content with greater speed, quality, and scale—boosting your brand's visibility and affinity as customer discovery shifts toward AI-driven channels.
 
 **Key Details & Availability**
 
