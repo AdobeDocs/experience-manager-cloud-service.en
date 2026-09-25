@@ -64,11 +64,11 @@ To populate the dropdown list options using a custom function, complete the foll
 
 2. To populate the dropdown list, create a rule for the `Next` button that sets the dropdown list options when the user clicks the `Next` button. The rule binds the `enum` and `enumNames` properties of the dropdown to the values returned by the `setEnums` and `setEnumNames` custom functions, so the options are generated at the moment the button is clicked rather than being hard-coded at design time.
 
-    **Create a rule to invoke the custom function**
+**Create a rule to invoke the custom function**
 
-    ![Drop down options in rule Editor](/help/forms/assets/drop-down-option-rule-editor.png)
+![Drop down options in rule Editor](/help/forms/assets/drop-down-option-rule-editor.png)
 
-    Refer to the illustration below, which demonstrates where the options of the dropdown list are set upon clicking the button. Once the rule is applied, the dropdown is populated with the seven day-of-week options at runtime, confirming that the custom function has successfully supplied both the stored values and their display labels.
+Refer to the illustration below, which demonstrates where the options of the dropdown list are set upon clicking the button. Once the rule is applied, the dropdown is populated with the seven day-of-week options at runtime, confirming that the custom function has successfully supplied both the stored values and their display labels.
 
 ## Show a panel using the `SetProperty` rule
 
