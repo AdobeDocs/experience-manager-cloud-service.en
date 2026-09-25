@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2026 {#2026}
+      + [Release Notes for 2026.8.0](/help/release-notes/release-notes-cloud/2026/2026-8-0.md)
       + [Release Notes for 2026.7.0](/help/release-notes/release-notes-cloud/2026/2026-7-0.md)
       + [Release Notes for 2026.6.0](/help/release-notes/release-notes-cloud/2026/2026-6-0.md)
       + [Release Notes for 2026.5.0](/help/release-notes/release-notes-cloud/2026/2026-5-0.md)
@@ -271,6 +272,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.09.17 Release Notes](/help/release-notes/universal-editor/2026/2026-09-17.md)
       + [2026.09.10 Release Notes](/help/release-notes/universal-editor/2026/2026-09-10.md)
       + [2026.09.03 Release Notes](/help/release-notes/universal-editor/2026/2026-09-03.md)
       + [2026.08.27 Release Notes](/help/release-notes/universal-editor/2026/2026-08-27.md)
@@ -845,6 +847,7 @@ user-guide-title: AEM as a Cloud Service
     + [Edit images using Adobe Express in Content Hub](/help/assets/edit-images-content-hub.md)
     + [Generate on the fly Dynamic Media Renditions](/help/assets/generate-on-the-fly-dynamic-media-renditions.md)
     + [Asset Insights in Content Hub](/help/assets/insights-content-hub.md)
+    + [Smart Collections in Content Hub](/help/assets/smart-collection-content-hub.md)
     + [Frequently asked questions for Content Hub](/help/assets/frequently-asked-questions-content-hub.md)  
   + Best practices{#best-practices}
     + [Search best practices](/help/assets/search-best-practices.md)

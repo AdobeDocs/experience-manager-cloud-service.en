@@ -29,7 +29,7 @@ Smart Collections enable you to automatically organize assets based on defined s
 
 Smart Collections automatically remain up to date. When newly approved assets satisfy the configured search criteria, they are automatically added to the collection.
 
->[!VIDEO](https://video.tv.adobe.com/v/3503807)
+>[!VIDEO](https://video.tv.adobe.com/v/3503809)
 
 >[!IMPORTANT]
 >
