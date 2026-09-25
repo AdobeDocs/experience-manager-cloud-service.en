@@ -281,7 +281,7 @@ Renditions are the alternate versions of an asset—such as different sizes or f
 
    Navigate to the asset details page for the asset, and select the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset.
 
-<!--![chlimage_1-221](assets/chlimage_1-221.png)-->
+   <!--![chlimage_1-221](assets/chlimage_1-221.png)-->
 
    >[!NOTE]
    >
@@ -303,7 +303,7 @@ Renditions are the alternate versions of an asset—such as different sizes or f
 
    Similarly, you can customize the Annotation page image by overlaying `/libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
-<!--![chlimage_1-222](assets/chlimage_1-222.png)-->
+   <!--![chlimage_1-222](assets/chlimage_1-222.png)-->
 
    To configure rendition dimensions for a video asset, navigate to the `videopicker` node in the **CRX (Content Repository Extreme)** repository at the location `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, overlay the node, and then edit the appropriate property.
 

@@ -64,7 +64,7 @@ To populate the dropdown list options using a custom function, complete the foll
 
 2. To populate the dropdown list, create a rule for the `Next` button that sets the dropdown list options when the user clicks the `Next` button. The rule binds the `enum` and `enumNames` properties of the dropdown to the values returned by the `setEnums` and `setEnumNames` custom functions, so the options are generated at the moment the button is clicked rather than being hard-coded at design time.
 
-    ### Create a rule to invoke the custom function
+    **Create a rule to invoke the custom function**
 
     ![Drop down options in rule Editor](/help/forms/assets/drop-down-option-rule-editor.png)
 
@@ -661,9 +661,9 @@ To ensure compatibility, replace every regular expression literal with an equiva
 1. **Identify** each regular expression written in literal form (for example, `/^abc$/`).
 2. **Convert** the literal into the constructor form by passing the pattern as a string:
 
-```
-const pattern = new RegExp("^abc$");
-```
+   ```
+   const pattern = new RegExp("^abc$");
+   ```
 
 3. **Apply** any flags—such as case-insensitivity—as a second string argument to the constructor when needed.
 

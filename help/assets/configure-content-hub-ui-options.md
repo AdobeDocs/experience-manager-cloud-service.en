@@ -214,9 +214,9 @@ Similarly, administrators can click ![Edit icon](assets/do-not-localize/edit_ico
 
 Add the list of Search fields in order of relevance, because this order directly impacts the ranking of search results—fields placed higher carry greater weight in matching.
 
-   >[!NOTE]
-   >
-   >You must keep the [!DNL Content Hub] Configuration page in sync with the fields you intend to use. Do not remove fields using the UI, especially if those fields are being used in ABAC rules or direct Search API usage.
+>[!NOTE]
+>
+>You must keep the [!DNL Content Hub] Configuration page in sync with the fields you intend to use. Do not remove fields using the UI, especially if those fields are being used in ABAC rules or direct Search API usage.
 
 ### Branding {#configure-branding-content-hub}
 

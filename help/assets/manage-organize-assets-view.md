@@ -118,10 +118,10 @@ To view and compare versions:
 
    ![compare versions of asset](/help/assets/assets/version-compare2.png)
 
-<!--
- old content
-To view versions, open an asset's preview and click **[!UICONTROL Versions]** ![Versions icon](assets/do-not-localize/versions-clock-icon.png) from the right sidebar. To preview a specific version, select it. To revert to it, click **[!UICONTROL Make Latest]**. 
--->
+   <!--
+   old content
+   To view versions, open an asset's preview and click **[!UICONTROL Versions]** ![Versions icon](assets/do-not-localize/versions-clock-icon.png) from the right sidebar. To preview a specific version, select it. To revert to it, click **[!UICONTROL Make Latest]**.
+   -->
 
    >[!NOTE]
    >
