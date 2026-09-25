@@ -1,0 +1,121 @@
+name: Mirror to public (custom, strips oversized files)
+
+# Self-contained replacement for the shared reusable mirror workflow
+# (Adobe-Enterprise-Docs/workflows/.github/workflows/mirror-to-public.yml), kept in THIS
+# repo on purpose: this repo's history contains a file larger than GitHub's hard 100MB
+# per-file limit (a 139MB demo .mp4 added in 2023), which the shared workflow pushes
+# verbatim -> the public mirror has been frozen since 2022. This workflow strips any
+# >100MB blob from the copy it pushes, so the public mirror stays healthy regardless of
+# what is in internal history.
+#
+# IMPORTANT: after adding this, DISABLE the stock "Mirror" workflow for this repo via the
+# Actions UI (Actions -> Mirror -> ... -> Disable workflow) so the two don't both run.
+# Disabling via the UI persists and does not require editing the centrally-synced
+# .github/workflows/mirror.yml.
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: {}   # manual trigger (e.g. to force the initial 2022->today catch-up)
+
+jobs:
+  mirror-to-public:
+    # Only run in the private source org, never on the public AdobeDocs copy (this file is
+    # mirrored along with the tree, so without this guard it would try to mirror onto itself).
+    if: github.repository_owner == 'Adobe-Enterprise-Docs'
+    runs-on: gh-hosted
+    permissions:
+      contents: read
+    env:
+      TARGET_REPO: AdobeDocs/experience-manager-cloud-service.en
+    steps:
+      - name: Generate GitHub App token
+        id: generate-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.ADOBEDOCS_MIRRORING_APP_ID }}
+          private-key: ${{ secrets.ADOBEDOCS_MIRRORING_APP_PRIVATE_KEY }}
+          owner: AdobeDocs
+          repositories: experience-manager-cloud-service.en
+
+      - name: Checkout repository (full history for reliable push)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Detect files over GitHub's 100MB limit
+        id: bigcheck
+        run: |
+          set -euo pipefail
+          BIG=$(git rev-list --objects HEAD \
+            | git cat-file --batch-check='%(objecttype) %(objectname) %(objectsize) %(rest)' \
+            | awk '/^blob/ && $3>104857600 {print $3"\t"$4}')
+          if [ -n "$BIG" ]; then
+            echo "oversized=true" >> "$GITHUB_OUTPUT"
+            echo "$BIG" | while IFS="$(printf '\t')" read -r size path; do
+              echo "::warning title=Oversized file in mirror::'$path' is $size bytes (>100MB). It is being stripped from the PUBLIC mirror. Clean it at the source (BFG/filter-repo) to remove this step."
+            done
+          else
+            echo "oversized=false" >> "$GITHUB_OUTPUT"
+            echo "No files over 100MB; mirroring history unchanged."
+          fi
+
+      # Only runs while an oversized file is still present in history (rare once the source
+      # is cleaned). Rewrites/simplifies the graph and can take several minutes; that is
+      # acceptable because the public mirror is a disposable, one-way copy.
+      - name: Strip >100MB blobs with git-filter-repo
+        if: steps.bigcheck.outputs.oversized == 'true'
+        run: |
+          set -euo pipefail
+          python3 -m pip install --user git-filter-repo
+          export PATH="$(python3 -m site --user-base)/bin:$PATH"
+          git filter-repo --strip-blobs-bigger-than 100M --force
+          if git rev-list --objects --all \
+               | git cat-file --batch-check='%(objecttype) %(objectsize)' \
+               | awk '/^blob/ && $2>104857600 {found=1} END{exit !found}'; then
+            echo "::error::git-filter-repo did not remove all >100MB blobs; aborting."
+            exit 1
+          fi
+
+      - name: Push main to public mirror
+        env:
+          ADOBEDOCS_PUSH_TOKEN: ${{ steps.generate-token.outputs.token }}
+          OVERSIZED: ${{ steps.bigcheck.outputs.oversized }}
+        run: |
+          set -euo pipefail
+          if [ -z "$ADOBEDOCS_PUSH_TOKEN" ]; then
+            echo "::error::GitHub App token is empty. Check ADOBEDOCS_MIRRORING_APP_* org secrets and that the AdobeDocs Mirroring App is installed on AdobeDocs with access to ${TARGET_REPO}."
+            exit 1
+          fi
+          URL="https://x-access-token:${ADOBEDOCS_PUSH_TOKEN}@github.com/${TARGET_REPO}.git"
+          git config http.postBuffer 1048576000   # 1GB client buffer
+
+          # The first-time catch-up transfers years of rewritten history in ONE pack, which
+          # makes GitHub return HTTP 500 / "remote end hung up". Push in bounded chunks along
+          # first-parent history so no single pack is huge. Steady-state pushes only add a few
+          # commits, so the loop effectively just sends the final HEAD.
+          # CHUNK is tunable: if a chunk still 500s (media-heavy span), lower it and re-run.
+          CHUNK=250
+          push_in_chunks() {
+            flag="$1"; n=0
+            for sha in $(git rev-list --reverse --first-parent HEAD); do
+              n=$((n+1))
+              if [ $((n % CHUNK)) -eq 0 ]; then
+                echo "seeding public main up to ${sha} (${n} commits)"
+                git push $flag origin "${sha}:refs/heads/main"
+              fi
+            done
+            git push $flag origin HEAD:refs/heads/main
+          }
+
+          if [ "$OVERSIZED" = "true" ]; then
+            # History was rewritten to drop oversized blobs -> SHAs differ from public -> force-push.
+            git remote add origin "$URL"
+            push_in_chunks --force
+          else
+            # No rewrite happened -> plain push (fast-forward once the source is clean).
+            git remote set-url origin "$URL"
+            push_in_chunks ""
+          fi
