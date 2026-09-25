@@ -205,9 +205,9 @@ Follow these steps to download the shared assets:
 
 * Once the processing is complete, click the **[!UICONTROL Download]** button to download the zip file.
 
-<!--
-You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.
--->
+  <!--
+  You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.
+  -->
 
   >[!NOTE]
   >
@@ -338,13 +338,13 @@ Sharing assets through a link is a convenient way of making resources available 
 
 #### Security recommendation for the Author instance
 
-   >[!NOTE]
-   >
-   >If you want to share links from your Author instance to external entities, expose only the following URLs for `GET` requests. Blocking all other URLs limits the exposed attack surface and keeps your Author instance secure.
-   >
-   >* `[aem_server]:[port]/linkshare.html`
-   >* `[aem_server]:[port]/linksharepreview.html`
-   >* `[aem_server]:[port]/linkexpired.html`
+>[!NOTE]
+>
+>If you want to share links from your Author instance to external entities, expose only the following URLs for `GET` requests. Blocking all other URLs limits the exposed attack surface and keeps your Author instance secure.
+>
+>* `[aem_server]:[port]/linkshare.html`
+>* `[aem_server]:[port]/linksharepreview.html`
+>* `[aem_server]:[port]/linkexpired.html`
 
 <!--
 1. From the list of services, locate **[!UICONTROL Day CQ Mail Service]**.

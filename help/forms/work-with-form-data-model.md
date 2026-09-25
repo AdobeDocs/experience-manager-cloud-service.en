@@ -147,7 +147,7 @@ To create a data model object without data sources:
 
    ![new-entity](assets/new-entity.png)
 
-#### Next steps
+#### Next steps {#next-steps-data-model-object}
 
 After the unbound data model object is created, add child properties to define its structure. These child properties let you specify the fields and attributes the object holds, and they can be bound to data sources later once your data integrations are configured. This ensures the data model object becomes fully functional and ready for use in forms.
 
