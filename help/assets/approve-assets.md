@@ -60,9 +60,9 @@ Follow these steps to configure the metadata schema:
 
 1. Click **[!UICONTROL Save]** to apply the schema changes.
 
-  >[!NOTE]
-  >
-  >If your assets or folders have a different default schema, make sure to make this update in that particular schema. Applying the update only to the correct default schema ensures the approval target field appears for the assets that use it.
+   >[!NOTE]
+   >
+   >If your assets or folders have a different default schema, make sure to make this update in that particular schema. Applying the update only to the correct default schema ensures the approval target field appears for the assets that use it.
 
 ## Approve assets {#approve-assets}
 
