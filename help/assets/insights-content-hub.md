@@ -10,6 +10,7 @@ exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
 **Assets [!DNL Insights]** in [!DNL Content Hub] delivers a clear, data-driven view of how digital assets perform across marketing campaigns, channels, and regions. It directly addresses a common challenge for marketing stakeholders: understanding **asset usage statistics** so teams can see which content is actually being adopted and where.
 
 ## What Assets [!DNL Insights] Delivers
+
 ![Assets insights](assets/asset-insights-banner.jpg)
 
 Assets [!DNL Insights] tracks **asset performance** and **asset popularity** across the key dimensions marketing teams care about:
