@@ -98,9 +98,9 @@ Administrators can also configure which filters display in the list of filters. 
 
 ### Filter display limits
 
-   >[!NOTE]
-   >
-   >A new filter displays on the Search page only if at least one asset in the repository matches the filter criteria. This ensures users see only filters that return usable results. The maximum number of fields available in the filter panel on the Search page is **40**.
+>[!NOTE]
+>
+>A new filter displays on the Search page only if at least one asset in the repository matches the filter criteria. This ensures users see only filters that return usable results. The maximum number of fields available in the filter panel on the Search page is **40**.
 
 ## AI Search in [!DNL Content Hub] {#ai-search-aem-assets-content-hub}
 

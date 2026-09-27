@@ -303,22 +303,6 @@ For asset filenames, [!DNL Experience Manager] sanitizes the JCR name and path u
 * Replace the special characters with their URL Escape Code, for example, `new%asset.png` is updated to `new%25asset.png`:
 
   ```
-
-<!-- 
-[!DNL Experience Manager Assets] manages the forbidden characters in the filenames while you upload assets or folders. [!DNL Experience Manager] updates only the node names in the DAM repository. However, the `title` of the asset or folder remains unchanged.
-
-Following are the file naming conventions that are applied while uploading assets or folders in [!DNL Experience Manager Assets]:
-
-| Characters &Dagger; | When occurring in file names | When occurring in folder names | Example |
-|---|---|---|---|
-| `. / : [ ] | *` | Replaced with `-` (hyphen). | Replaced with `-` (hyphen). A `.` (dot) in the filename extension is retained as is. | Replaced with `-` (hyphen). | `myimage.jpg` remains as is and `my.image.jpg` changes to `my-image.jpg`. |
-| `% ; # , + ? ^ { } "` and whitespaces | Whitespaces are retained | Replaced with `-` (hyphen). | `My Folder.` changes to `my-folder-`. |
-| `# % { } ? & .` | Replaced with `-` (hyphen). | NA. | `#My New File.` changes to `-My New File-`. |
-| Uppercase characters | Casing is retained as is. | Changed to lowercase characters. | `My New Folder` changes to `my-new-folder`. |
-| Lppercase characters | Casing is retained as is. | Casing is retained as is. | NA. |
-
-&Dagger; The list of characters is a whitespace-separated list.
--->
                   URL escape code   
 
   "               %22
@@ -367,6 +351,22 @@ For folder filenames, [!DNL Experience Manager] sanitizes the JCR name and path 
   space     It is the space character.
 
   ```
+
+<!-- 
+[!DNL Experience Manager Assets] manages the forbidden characters in the filenames while you upload assets or folders. [!DNL Experience Manager] updates only the node names in the DAM repository. However, the `title` of the asset or folder remains unchanged.
+
+Following are the file naming conventions that are applied while uploading assets or folders in [!DNL Experience Manager Assets]:
+
+| Characters &Dagger; | When occurring in file names | When occurring in folder names | Example |
+|---|---|---|---|
+| `. / : [ ] | *` | Replaced with `-` (hyphen). | Replaced with `-` (hyphen). A `.` (dot) in the filename extension is retained as is. | Replaced with `-` (hyphen). | `myimage.jpg` remains as is and `my.image.jpg` changes to `my-image.jpg`. |
+| `% ; # , + ? ^ { } "` and whitespaces | Whitespaces are retained | Replaced with `-` (hyphen). | `My Folder.` changes to `my-folder-`. |
+| `# % { } ? & .` | Replaced with `-` (hyphen). | NA. | `#My New File.` changes to `-My New File-`. |
+| Uppercase characters | Casing is retained as is. | Changed to lowercase characters. | `My New Folder` changes to `my-new-folder`. |
+| Lppercase characters | Casing is retained as is. | Casing is retained as is. | NA. |
+
+&Dagger; The list of characters is a whitespace-separated list.
+-->
 
 ### Schedule a one-time or a recurring bulk import {#schedule-bulk-import}
 

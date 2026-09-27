@@ -21,9 +21,13 @@ on:
 
 jobs:
   mirror-to-public:
-    # Only run in the private source org, never on the public AdobeDocs copy (this file is
-    # mirrored along with the tree, so without this guard it would try to mirror onto itself).
-    if: github.repository_owner == 'Adobe-Enterprise-Docs'
+    # Run ONLY in the EN source repo. This file gets copied into (a) the public AdobeDocs
+    # mirror and (b) the localized *.<lang> source repos via content sync — in both cases it
+    # must NOT run: on the public copy it would mirror onto itself, and in a localized repo it
+    # would force-push localized content onto the hardcoded EN target below (TARGET_REPO).
+    # A repo-scoped guard (not owner-scoped) is required, because the localized source repos
+    # are also under the Adobe-Enterprise-Docs org.
+    if: github.repository == 'Adobe-Enterprise-Docs/experience-manager-cloud-service.en'
     runs-on: gh-hosted
     permissions:
       contents: read
