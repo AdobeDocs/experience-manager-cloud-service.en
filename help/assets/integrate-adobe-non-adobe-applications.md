@@ -219,6 +219,59 @@ For more information about the integrations, properties, and customizations, ref
 
 * [Content Advisor customizations](/help/assets/content-advisor-customization.md)
 
+## Use Content Advisor with the browser extension {#content-advisor-browser-extension}
+
+The Content Advisor browser extension lets you access Content Advisor while working in supported web applications and web pages. It helps you discover relevant AEM Assets based on the content of a page or a specific region without switching to AEM Assets.
+
+The extension provides the following capabilities:
+
+* **Suggest from page** — Get asset recommendations based on the content of the current page.
+* **Suggest from region** — Select a specific area of the page to get more targeted asset recommendations.
+* **Add assets to your content** — Drag and drop a recommended asset into a supported editor.
+* **Copy assets** — Copy an asset to the clipboard when the host application does not support drag and drop.
+* **Find related content** — Select text on a supported page and use the inline toolbar to get asset recommendations related to the selected text.
+
+### Install and use the extension {#content-advisor-browser-extension-install}
+
+1. Install the [Content Advisor extension from the Chrome Web Store](https://chromewebstore.google.com/detail/content-advisor/hgagfaikdinmneghfgjjocmfidmnadga).
+2. Sign in with your Adobe ID when prompted.
+3. Open a supported web application or web page.
+4. Open Content Advisor by selecting the **Content Advisor** extension button or the floating Content Advisor widget.
+5. Select one of the following options:
+   * **Suggest from page** to get recommendations based on the page content.
+   * **Suggest from region** to get recommendations based on a selected area of the page.
+
+   ![Content Advisor Browser Extension](assets/content-advisor-browser-extension.png)
+
+6. Drag a recommended asset into the editor, or copy the asset if direct drag and drop is not supported.
+
+### Configure Content Advisor {#content-advisor-browser-extension-configure}
+
+Select the **Settings** icon in the Content Advisor panel to configure the extension.
+
+| Setting | Description |
+| --- | --- |
+| **Show floating widget** | Displays the floating Content Advisor widget on supported pages. You can use the widget to open the Content Advisor panel and access suggestion options. |
+| **Show inline toolbar** | Displays the **Find related content** option when you select text on a supported page. Use this option to get asset recommendations based on the selected text. |
+| **Reload panel** | Reloads the Content Advisor panel. |
+| **Reset layout** | Restores the Content Advisor panel and floating widget to their default layout and positions. |
+| **Sign out** | Signs you out of Content Advisor. |
+| **Show transfer progress** | Displays the progress of asset transfers when assets are being transferred. |
+| **Theme** | Select **System**, **Light**, or **Dark** to control the appearance of Content Advisor. |
+| **Asset reference** | Specifies how an asset is referenced when it is used in supported applications. Select **Local (DAM path)** to use the asset's AEM Assets path, or **Remote (delivery)** to use the asset's delivery URL. |
+
+>[!NOTE]
+>
+>The available settings and asset reference options can vary depending on your Content Advisor configuration.
+
+### Important points to note {#content-advisor-browser-extension-important-points}
+
+* The Content Advisor extension is supported in **Chrome and Chromium-based browsers**.
+* The extension does not work on every website. Some websites restrict browser extensions, and the Content Advisor extension button or panel might not be available.
+* The capabilities available in Content Advisor depend on the host application. **Drag and drop and adding assets directly to content are supported only when the host application allows these operations.** In other applications, you can copy the asset instead.
+* Asset recommendations depend on the content available on the page or in the selected region. Pages with limited or inaccessible content might return fewer recommendations.
+* You must sign in with an Adobe ID that has access to the required AEM Assets repository.
+
 
 **See also**
 
