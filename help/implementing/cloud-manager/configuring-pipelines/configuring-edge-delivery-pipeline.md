@@ -42,7 +42,7 @@ A user must have the **[Deployment Manager](/help/onboarding/cloud-manager-intro
 
 <!-- CMGR‑69680 -->
 
-Before you start to deploy your code, configure your pipeline settings from the [!UICONTROL Cloud Manager].
+Before you start to deploy your code, configure your pipeline settings from the [!UICONTROL Cloud Manager]. 
 
 >[!NOTE]
 >
