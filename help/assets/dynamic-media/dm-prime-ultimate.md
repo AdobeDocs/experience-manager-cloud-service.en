@@ -9,13 +9,13 @@ exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
 
 ![Dynamic Media banner](/help/assets/assets/dm-pnp-banner.png)
 
-Adobe Experience Manager as a Cloud Service enables you to access Dynamic Media Prime and Ultimate offerings to streamline your digital workflows and optimize content management. This article introduces each offering, outlines their benefits, and also highlights key differences between the two.
+Adobe Experience Manager as a Cloud Service enables you to access Dynamic Media Prime and Ultimate offerings to streamline your digital workflows and optimize content management. This article introduces each offering, outlines their benefits, and also describes key differences between the two.
 
 ## Dynamic Media Prime {#dynamic-media-prime}
 
 Dynamic Media Prime is an activation service for Experience Manager Assets, which offers [Dynamic Media with OpenAPI basic capabilities](/help/assets/dynamic-media-open-apis-overview.md) enabling organizations to integrate AEM Assets with Adobe or non-Adobe applications. It supports transformation (rotate, crop, flip, height, width, quality) and optimized delivery.
 
-If you need Dynamic Media basic as well as advanced capabilities and access to Dynamic Media solution in AEM as a Cloud Service, see [Dynamic Media Ultimate](#dynamic-media-ultimate).
+If you need Dynamic Media basic as well as advanced capabilities and access to the Dynamic Media solution in AEM as a Cloud Service, see [Dynamic Media Ultimate](#dynamic-media-ultimate).
 
 Some of the other key benefits of Dynamic Media Prime include:
 
@@ -27,7 +27,7 @@ Some of the other key benefits of Dynamic Media Prime include:
 
 >[!NOTE]
 >
->DM Prime customers can use basic image modifiers, including rotate, crop, flip, height, width, and quality. Smart Imaging does not support AVIF for DM Prime customers.
+>Dynamic Media Prime customers can use basic image modifiers, such as rotate, crop, flip, and resize. Smart Imaging does not support AVIF for DM Prime customers.
 
 ### Prerequisites {#pre-requisites-dm-prime}
 
@@ -39,9 +39,9 @@ Some of the other key benefits of Dynamic Media Prime include:
 
 Dynamic Media Ultimate is an activation service for Experience Manager Assets, which includes [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) basic and advanced capabilities as well as [Dynamic Media solution in AEM as a Cloud Service](/help/assets/dynamic-media/dynamic-media.md). It enables organizations to generate and deliver multiple variations of rich content in real-time through its global, scalable, performance-optimized network.
 
-In addition to the Dynamic Media Prime features such as AEM Assets integration with Adobe or non-Adobe applications, transformation (rotate, crop, flip, height, width, quality), and optimized delivery, Dynamic Media Ultimate also offers:
+Beyond Dynamic Media Prime features like AEM Assets integration, transformation, and delivery, Dynamic Media Ultimate also offers:
 
-* [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) capabilities advanced features such as:
+* [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) advanced capabilities such as:
 
    * Secure delivery of assets, 
    * [Smart Crop, Smart Imaging, Image Presets, and additional image modifiers](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
