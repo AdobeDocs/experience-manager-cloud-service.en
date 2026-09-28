@@ -213,6 +213,23 @@ In addition to the required entitlements, using the 99.99% SLA for Sites or Form
 
    ![Program overview](assets/set-up-prod5.png)
 
+## Frequently asked question {#faqs-create-production-program}
+
+### When I create a Program in Cloud Manager, I only see the Set up a sandbox option. What are some causes for why a **Set up for production** option is not there?
+
+   ![Let's create your Program wizard showing the program name field and the Set up a sandbox objective.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-set-up-a-sandbox-option.png)
+
+The usual cause is entitlement. That is, the IMS organization is provisioned only for Sandbox programs and does not have an available AEM Cloud Service production program entitlement. Cloud Manager therefore only presents a **Set up a sandbox** option.
+
+Other things to check:
+
+* You are in the intended IMS organization/tenant; a different organization has the production entitlement.
+* The production program entitlement is already consumed, or the contract/order does not include another production program.
+* Your Cloud Manager role/access needs verification, although the organization's provisioning primarily determines the available program objectives.
+
+Have the account/customer team or Adobe Support verify the organization's production program entitlement and capacity. The stage/production environment configuration is relevant after a production program exists; Cloud Manager expects supported STAGE and PROD environment types for Go-to-Production pipelines.
+
+
 >[!TIP]
 >
 >See [Navigate the Cloud Manager UI](/help/implementing/cloud-manager/navigation.md) for details on how to navigate Cloud Manager and understand the **My Programs** console.
