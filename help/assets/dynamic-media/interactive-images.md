@@ -6,6 +6,12 @@ feature: Interactive Images
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Interactive images{#interactive-images}
 
