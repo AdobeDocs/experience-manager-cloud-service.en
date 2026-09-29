@@ -53,6 +53,16 @@ See [use asset microservices and processing profiles](https://experienceleague.a
 
 After selecting the appropriate options, click **[!UICONTROL Reprocess]**. The success message appears.
 
+>[!IMPORTANT]
+>
+>Both `Full` and `Metadata-only` reprocess operations might replace metadata that has been added to an asset after it was first uploaded if: 
+>
+>* The nearest ancestor metadata profile is applied
+>
+>* XMP extraction is re-run
+>
+>If either of these update properties that had previously been manually entered in the asset metadata, then the manually entered values are overwritten.
+
 ## Scenarios for reprocessing digital assets {#scenarios-reprocessing}
 
 [!DNL Experience Manager] allows reprocessing of digital assets for the following components.

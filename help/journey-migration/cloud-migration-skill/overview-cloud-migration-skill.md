@@ -38,7 +38,7 @@ Before fixing anything, ask the agent to *"Review my code for AEMaaCS migration.
 The runbook is the recommended entry point for a whole-project assessment: it gives you a prioritized, no-surprises picture of the migration effort before any file is changed. When you later start a pattern session, the agent reuses the findings already recorded in the runbook, so no re-scan is required.
 
 >[!NOTE]
->The runbook only covers the patterns the migration skill can address (those listed under [Supported Patterns](#supported-patterns)). Migration work handled outside these skills—such as repository structure, dispatcher configuration, or content transfer—is not included. See [How They Fit Into the Migration Journey](#migration-journey) for the complementary tools.
+>The runbook only covers the patterns the migration skill can address (those listed under [Supported Patterns](#supported-patterns)). Migration work handled outside these skills—such as repository structure or content transfer—is not included. See [How They Fit Into the Migration Journey](#migration-journey) for the complementary tools.
 
 ### Supported Patterns {#supported-patterns}
 
@@ -52,8 +52,9 @@ The runbook is the recommended entry point for a whole-project assessment: it gi
 | `eventListener` | OSGi `EventListener` implementations updated for AEMaaCS event semantics |
 | `eventHandler` | Synchronous OSGi `EventHandler` services adapted for Cloud Service |
 | `assetApi` | Deprecated `AssetManager` and DAM API calls replaced with supported equivalents |
+| `guavaCache` | Guava cache (`com.google.common.cache.*`) usage swapped for the Cloud Service–supported Caffeine cache |
 | `htlLint` | `data-sly-test` redundant constant comparison warnings in HTL templates |
-| OSGi configs | `.cfg.json` conversion, runmode scoping, and Cloud Manager secrets/env-var extraction |
+| OSGi configs | `.cfg.json` conversion, runmode scoping, Cloud Manager secrets/env-var extraction, and unsupported run mode (URC) detection and safe reordering |
 
 **Legacy UI and template modernization patterns**
 
@@ -61,7 +62,15 @@ The runbook is the recommended entry point for a whole-project assessment: it gi
 |---------|--------------|
 | `lui` (dialog migration) | Classic UI / ExtJS (`cq:Dialog`) and Coral 2 dialogs converted to Coral 3 Touch UI dialogs |
 | `cdw` (custom design widgets) | Custom ExtJS widgets (`cq:Widget` xtypes) mapped to Coral 3 or scaffolded as Granite UI components |
-| Template modernization | Static templates converted to editable templates, with AEM Modernize Tools structure, component, and policy rewrite rules generated |
+| Template modernization | Static templates converted to editable templates, with AEM Modernize Tools structure, component, and policy rewrite rules generated. Detects and classifies both legacy and custom static templates, including nested template folders |
+
+**Dispatcher configuration**
+
+| Pattern | What it fixes |
+|---------|--------------|
+| `dispatcherConversion` | AMS or on-premise Apache HTTPD and Dispatcher configurations converted to the AEM as a Cloud Service structure |
+
+See [Dispatcher Conversion](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md#dispatcher-conversion) for the workflow.
 
 The skill delegates all code transformation steps to the companion `code-assessment` skill. Both are distributed together as the `aem-cloud-service` skill package; install the package once to get both.
 
@@ -106,6 +115,18 @@ The skill delegates all code transformation steps to the companion `code-assessm
 
    ```
    Fix htlLint in ui.apps - scan for data-sly-test redundant constant warnings.
+   ```
+
+   **Guava cache:**
+
+   ```
+   Fix guavaCache findings using BPA CSV at ./reports/bpa.csv
+   ```
+
+   **Dispatcher conversion:**
+
+   ```
+   Convert my AMS / on-prem Dispatcher config to AEM as a Cloud Service.
    ```
 
 >[!NOTE]
