@@ -5,7 +5,12 @@ feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 ---
 
-# Content Create Skill {#content-create}
+# Content Create {#content-create}
 
-The Content Create job is the part of the [Experience Production Agentic Capability](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/overview.md) that creates new on-brand pages using natural language, a marketing brief, and an AEM template. The skill accelerates page production for Adobe Experience Manager (AEM) as a Cloud Service and Edge Delivery Services.
+Content Create generates new, on-brand Adobe Experience Manager (AEM) pages in minutes, so accelerating time to market. It uses a natural language prompt together with a marketing brief to provide guidance, and an AEM reference page as a template for the layout. 
 
+For more details see this video.
+
+>[!NOTE]
+>
+>The Content Create skill is the part of the [Experience Production Agentic Capability](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/overview.md).
