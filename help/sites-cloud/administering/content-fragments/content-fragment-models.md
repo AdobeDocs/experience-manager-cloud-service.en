@@ -188,7 +188,7 @@ A selection of data types is available for defining your model:
   * The **Composite** data type can be used to [create nested content](#nested-content)
   * The **Composite** data type enables Content Fragments to store hierarchical, structured data
     * This is achieved by allowing fields to contain nested sub-fields
-    * The sub-fields are other Content Fragments
+    * The sub-fields are defined by Content Fragment Models
     * The Content Fragments in a sub-field are restricted to the Content Fragment Models that you specify when defining the sub-field
   * This feature provides a way to model complex data structures within a single fragment, similar to nested objects in JSON or embedded documents in NoSQL databases 
 
