@@ -291,6 +291,8 @@ Keep the following considerations in mind before applying BAM at scale:
 
 * For dropdown and taxonomy-backed fields, use controlled vocabulary to restrict generated values to existing options.
 
+* Quality Report data is updated overnight and includes asset processing completed during the previous day. As a result, newly processed assets may not appear in the report immediately.
+
 ## Troubleshooting {#troubleshooting}
 
 ### Error when selecting a metadata property
