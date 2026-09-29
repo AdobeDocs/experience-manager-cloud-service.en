@@ -52,8 +52,9 @@ To configure Turnstile for AEM Forms, you need to obtain the [Turnstile sitekey 
 
         ![Configure the Cloud Service to connect your AEM Forms environment with Turnstile](assets/config-turntstile.png)
 
-  >[!NOTE]
-  > Users need not to modify Client-side JavaScript validation URL and Server-side validation URL as they are already prefilled for Turnstile validation.
+>[!NOTE]
+>
+>Users need not to modify Client-side JavaScript validation URL and Server-side validation URL as they are already prefilled for Turnstile validation.
 
 Once the Turnstile Captcha service is configured, it is available for use in an Adaptive Form.
 
