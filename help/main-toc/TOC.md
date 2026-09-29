@@ -1195,6 +1195,10 @@ user-guide-title: AEM as a Cloud Service
     + [Overview](/help/ai-in-aem/agentic-capabilities/overview.md)
     + Brand Experience {#brand-experience}
       + Experience Production {#experience-production}
+        + [Overview](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/overview.md)
+        + [Content Update Job](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/content-update.md)
+        + [Content Create Job](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/content-create.md)
+        + [Figma to Visual Content Fragments Job](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/figma-to-visual-content-fragments.md)
         + [Experience Production use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/use-cases.md)
         + [Forms use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/forms-use-cases.md)
       + Development {#development}
