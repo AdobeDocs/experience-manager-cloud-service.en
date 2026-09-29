@@ -7,5 +7,5 @@ role: User, Admin, Developer
 
 # Content Update Skill {#content-update}
 
-The content update job of the [Experience Production Agentic Capability](/help/ai-in-aem/agentic-capabilites/brand-experience/experience-production/overview.md) automates content production to accelerate everyday tasks for Adobe Experience Manager (AEM) as a Cloud Service and Edge Delivery Services. 
+The content update job of the [Experience Production Agentic Capability](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/overview.md) automates content production to accelerate everyday tasks for Adobe Experience Manager (AEM) as a Cloud Service and Edge Delivery Services. 
 
