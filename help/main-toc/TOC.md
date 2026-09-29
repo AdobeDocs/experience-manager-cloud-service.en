@@ -355,6 +355,7 @@ user-guide-title: AEM as a Cloud Service
   + {hide-from-toc} [Changes in User Group and Product Profile Synchronization](/help/security/changes-in-user-group-and-product-profile-synchronization.md)
   + [Migrating to External Identity and Dynamic Group Membership](/help/security/migrating-to-external-identity.md)
   + [Same Site Cookie Support for AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
+  + [Login Token Inactivity Timeout Support for AEM as a Cloud Service](/help/security/login-token-inactivity-timeout.md)
   + [OAuth2 Support for the mail Service](/help/security/oauth2-support-for-mail-service.md)
   + [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md)
   + {hide-from-toc} [AEM as a Cloud Service Security Considerations](/help/security/security-considerations.md)
