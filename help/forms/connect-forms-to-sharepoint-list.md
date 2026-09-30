@@ -1,6 +1,6 @@
 ---
 title: How to send data to a SharePoint List storage on submission of an Adaptive Form?
-Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list when you submit the form.
+description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list when you submit the form.
 keywords: How to connect SharePoint list for an adpative form?, Submit to SharePoint, Create a SharePoint List Configuration, Use the Submit to SharePoint submit action in an Adaptive Form, Connect an Adaptive Form to Microsoft&reg; SharePoint List.
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
@@ -85,6 +85,10 @@ You can use the created SharePoint List configuration in an Adaptive Form, to sa
 1. [Configure the Form Data Model (FDM) to retrieve and send data](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
 1. [Configure Submit action using a Form Data Model (FDM)](/help/forms/using-form-data-model.md)
+
+>[!NOTE]
+>
+> The maximum attachment size for Foundation Forms submitted via Microsoft&reg; SharePoint List is **14 MB**.
 
 When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint List Storage. 
 
