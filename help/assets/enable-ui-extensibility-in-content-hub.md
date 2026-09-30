@@ -11,24 +11,18 @@ exl-id:
 
 [!DNL Content Hub] supports UI extensibility, enabling organizations to integrate custom business workflows directly into the Content Hub experience. Using Adobe App Builder, developers can add custom UI components that enable users to perform business-specific actions without leaving Content Hub.
 
-You can add custom extensions at the **Asset** and **Collection** level. [!DNL Content Hub] supports the following extension points:
+You can add custom extensions to different areas of the [!DNL Content Hub] interface. [!DNL Content Hub] supports the following extension points:
 
 * **Asset Card**
-* **Selection Bar**
-* **Asset Details**
 * **Collection Card**
+* **Asset Details**
+* **Bulk Action Bar**
 
 >[!IMPORTANT]
 >
 >* Adobe App Builder is required to build and deploy UI extensions for Content Hub.
 >* [!DNL Content Hub] UI extensibility is currently available under **Limited Availability**. To enable this capability, contact the Content Hub team and request access to the feature and the related technical documentation.
 >* You can provide documentation feedback by expanding **[!UICONTROL Detailed Feedback options]** and selecting **[!UICONTROL Report an issue]**.
-
-## Access Content Hub {#access-content-hub}
-
-Follow the steps shown in the following image to access [!DNL Content Hub].
-
-![access-content-hub](assets/access-content-hub.png)
 
 ## View UI extensions in [!DNL Content Hub] {#view-ui-extensions}
 
@@ -42,13 +36,11 @@ Open the **[!UICONTROL More]** menu on an asset card and select **[!UICONTROL As
 
 The custom dialog displays the resource type and resource ID for the selected asset.
 
-### Selection Bar
+### Collection Card
 
-Select an asset to display the selection bar. Select **[!UICONTROL Custom label]** to open the custom dialog.
+Open the **[!UICONTROL More]** menu on a collection card and select **[!UICONTROL Collection label]** to open the UI extension.
 
-![Selection bar showing the Custom label option](assets/selection-bar-custom-label.png)
-
-The custom dialog displays the selected asset and its resource ID.
+![Collection card showing the Collection label option](assets/collection-label.png)
 
 ### Asset Details
 
@@ -56,11 +48,13 @@ Open an asset and navigate to the Asset Details page. Select the **Asset Details
 
 ![Asset Details page showing the Asset Details Extension Tab](assets/asset-details-extension-tab.png)
 
-### Collection Card
+### Bulk Action Bar
 
-Open the **[!UICONTROL More]** menu on a collection card and select **[!UICONTROL Collection label]** to open the UI extension.
+Select one or more assets to display the **Bulk Action Bar**. Select **[!UICONTROL Custom label]** to open the custom dialog.
 
-![Collection card showing the Collection label option](assets/collection-label.png)
+![Bulk Action Bar showing the Custom label option](assets/selection-bar-custom-label.png)
+
+The custom dialog displays the selected asset or assets and their resource IDs.
 
 ## Prerequisites for adding the extensibility component {#content-hub-prerequisites}
 
