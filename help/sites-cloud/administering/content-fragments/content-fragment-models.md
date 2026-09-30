@@ -460,8 +460,6 @@ The **Composite** data type enables Content Fragments to store hierarchical, str
 
 The Composite data type provides a way to model complex data structures within a single fragment, similar to nested objects in JSON or embedded documents in NoSQL databases.
 
-#### Properties and characteristics {#properties-and-characteristics}
-
 A Composite field has the following properties and characteristics:
 
 * Specify one or more Content Fragment Models
@@ -499,8 +497,36 @@ A Composite field has the following properties and characteristics:
     >
     >And reserve fragment references for content that is genuinely reusable. The two are complementary, not substitutes.
 
-<!-- CQDOC-23582 - check usage details before GA -->
+In addition to standard properties you can define:
 
+* **Render As**
+
+  Specify either:
+
+  * **Multiple Field** supports add/remove/reorder with min/max constraints
+  * **Composite Field** holds at most one item
+
+* **Min/Max Number of items**
+
+  For multi-value composites, set min and max bounds for the number of items
+
+  >[!NOTE]
+  >
+  >Instances of the Composite Data Type cannot be defined as a Single Field. 
+  >
+  >If this is needed, define the instance as a **Multiple Field** with **Min Number of Items** and **Max Number of Items** both set to `1`.
+
+* **Type** 
+
+  Specify one or more Content Fragment Models. Fields from these models will appear as composite items. Multiple models can be selected, the author then chooses which model when adding an item.
+
+>[!NOTE]
+>
+>The new Content Fragment Model Editor will block editing of composite fields.
+
+<!-- CQDOC-23582 - should not be needed have moved details to Properties section -->
+
+<!--
 #### Define a Composite field {#define-a-composite-field}
 
 From the Touch UI [(original) Content Fragment Model Editor](/help/assets/content-fragments/content-fragments-models.md) the Composite data type appears in the list of available field types. 
@@ -527,6 +553,7 @@ To configure:
 >[!NOTE]
 >
 >The new Content Fragment Model Editor will block editing of composite fields.
+-->
 
 <!-- CQDOC-23582 - moved to authoring - check usage before GA -->
 
