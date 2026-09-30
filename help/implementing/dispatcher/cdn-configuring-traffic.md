@@ -454,6 +454,8 @@ Explained in the table below are the available actions.
 
 You can leverage the AEM CDN to route traffic to different backends, including non-Adobe applications (perhaps on a per-path or subdomain basis).
 
+If your backend restricts inbound connections by source IP, see [CDN egress IP addresses](/help/implementing/dispatcher/cdn.md#cdn-egress-ips) for important limitations.
+
 The request properties `originalPath` and `originalUrl` are the immutable original path (without query parameters) and full URL (including query parameters), respectively—each taken before any CDN [request transformations](#request-transformations). Use them in `when` conditions when you need to anchor rules on what the client initially sent, rather than values that may have been rewritten earlier in the evaluation sequence. Use `originalPath` for path-only matching; use `originalUrl` when the query string must be part of the condition (for example, routing or filtering on a specific initial request URL).
 
 Configuration example:
