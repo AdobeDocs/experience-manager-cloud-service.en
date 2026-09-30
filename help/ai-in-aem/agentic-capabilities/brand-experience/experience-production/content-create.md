@@ -16,3 +16,10 @@ For more details see this video.
 >[!NOTE]
 >
 >The Content Create skill is the part of the [Experience Production Agentic Capability](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/overview.md).
+
+## Use cases - Sites {#use-cases-sites}
+
+| Use Case | Description | Skill(s) | Application | Sample Prompts |
+| --- | --- | --- | --- | --- |
+| Create a new AEM page | Creates new on-brand pages using natural language. The skill accelerates page production for Adobe Experience Manager (AEM) as a Cloud Service and Edge Delivery Services. | `aem-sites-pages-create` | Adobe Experience Manager (AEM) | Create a new page based on the attached brief using the reference page &lt;aem page&gt; and put it here &lt;destination_URL&gt;. |
+
