@@ -21,7 +21,7 @@ A selection of agentic capabilities are available in AEM:
 
 * Brand Experience
 
-  * [Experience Production](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/use-cases.md)
+  * [Experience Production](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/overview.md)
   * [Development](/help/ai-in-aem/agentic-capabilities/brand-experience/development/use-cases.md)
   * [Onboarding](/help/ai-in-aem/agentic-capabilities/brand-experience/onboarding/use-cases.md)
 

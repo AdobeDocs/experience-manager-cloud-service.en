@@ -11,7 +11,12 @@ Visual Content Fragments in Adobe Experience Manager (AEM) allow you to preview 
 
 While defining style and layout information in hand-coded HTML templates is entirely feasible, it is a highly technical process that is usually performed by web developers. As visual designs for modular experiences are often created in Figma, it is possible to streamline this process for Visual Content Fragments by directly importing designs from Figma into AEM.
 
+<!-- Add link when available -->
+
+<!--
 For more details see this video.
+-->
+
 
 >[!NOTE]
 >
@@ -27,7 +32,7 @@ Before you start:
 
 This is achieved by:
 
-1. Generating a personal token in Figma
+1. [Generating a personal token in Figma](https://developers.figma.com/docs/rest-api/personal-access-tokens/)
 1. Logging into Adobe Experience Manager as a Cloud Service at [https://experience.adobe.com](https://experience.adobe.com)
 1. Persisting the token at [https://experience.adobe.com/#/aem/figmatocontentfragment](https://experience.adobe.com/#/aem/figmatocontentfragment)
 

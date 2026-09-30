@@ -9,6 +9,8 @@ role: User, Admin, Developer
 
 Content Create generates new, on-brand Adobe Experience Manager (AEM) pages in minutes, so accelerating time to market. It uses a natural language prompt together with a marketing brief to provide guidance, and an AEM reference page as a template for the layout. 
 
+<!-- Add link when available -->
+
 For more details see this video.
 
 >[!NOTE]
