@@ -7,7 +7,7 @@ role: User, Admin, Developer
 
 # Figma to Visual Content Fragments Skill {#figma-to-visual-content-fragments-skill}
 
-Visual Content Fragments in Adobe Experience Manager (AEM) allow you to preview and deliver Content Fragments using a [layout that is defined in a visualization template](/help/implementing/developing/extending/content-fragments-visualization-templates.md). These templates are based on an HTML template.
+Visual Content Fragments in Adobe Experience Manager (AEM) allow you to preview and deliver Content Fragments using a [layout that is defined in a visualization template](/help/implementing/developing/extending/content-fragments-visualization-templates.md). These templates are based on an HTML template using Handlebars.
 
 While defining style and layout information in hand-coded HTML templates is entirely feasible, it is a highly technical process that is usually performed by web developers. As visual designs for modular experiences are often created in Figma, it is possible to streamline this process for Visual Content Fragments by directly importing designs from Figma into AEM.
 

@@ -7,9 +7,7 @@ role: User, Admin, Developer
 
 # Content Update Skill {#content-update}
 
-The content update skill is part of the [Experience Production Agentic Capability](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/overview.md) automates content production to accelerate everyday tasks for Adobe Experience Manager (AEM) as a Cloud Service and Edge Delivery Services. 
-
-Content Update performs updates to existing content in Adobe Experience Manager (AEM), including Content Fragments, Pages and Assets. It can perform actions such as updating, removing, replacing, or adding content elements to keep experiences current and accurate. It can use natural language descriptions or visual elements such as annotated PDFs and screenshots.
+Content Update performs updates to existing content in Adobe Experience Manager (AEM), including Content Fragments, Pages and Assets. It can perform actions such as updating, removing, replacing, or adding content elements to keep experiences current and accurate. The skill accepts both natural language descriptions or visual elements such as annotated PDFs and screenshots.
 
 <!-- Add link when available -->
 
