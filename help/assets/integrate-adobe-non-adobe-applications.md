@@ -219,17 +219,16 @@ For more information about the integrations, properties, and customizations, ref
 
 * [Content Advisor customizations](/help/assets/content-advisor-customization.md)
 
-## Use Content Advisor with the browser extension {#content-advisor-browser-extension}
+## Use Content Advisor with the browser extension (Beta) {#content-advisor-browser-extension}
 
 The Content Advisor browser extension lets you access Content Advisor while working in supported web applications and web pages. It helps you discover relevant AEM Assets based on the content of a page or a specific region without switching to AEM Assets.
 
 The extension provides the following capabilities:
 
-* **Suggest from page** — Get asset recommendations based on the content of the current page.
-* **Suggest from region** — Select a specific area of the page to get more targeted asset recommendations.
-* **Add assets to your content** — Drag and drop a recommended asset into a supported editor.
-* **Copy assets** — Copy an asset to the clipboard when the host application does not support drag and drop.
-* **Find related content** — Select text on a supported page and use the inline toolbar to get asset recommendations related to the selected text.
+* **Suggest from page**: Get asset recommendations based on the content of the current page.
+* **Suggest from region**: Select a specific area of the page to get more targeted asset recommendations.
+* **Add assets to your content**: Drag and drop a recommended asset into a supported editor.
+* **Copy assets**: Copy an asset to the clipboard when the host application does not support the drag and drop action.
 
 ### Install and use the extension {#content-advisor-browser-extension-install}
 
@@ -243,7 +242,17 @@ The extension provides the following capabilities:
 
    ![Content Advisor Browser Extension](assets/content-advisor-browser-extension.png)
 
-6. Drag a recommended asset into the editor, or copy the asset if direct drag and drop is not supported.
+6. Drag a recommended asset into the editor, or select to copy the asset if direct drag and drop is not supported.
+
+   If the asset status is `Approved`, you can click the ![Info icon](assets/info-icon.svg) icon on the asset card and select the  **[!UICONTROL Dynamic Media]** tab to view the [available renditions](#dynamic-media-renditions-content-advisor) for an asset. Select the rendition to open its preview and you can drag the asset from the preview to editor. Optionally, you can also click ![Link icon or Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg) to copy the asset link to the clipboard.
+
+   ![Content Advisor Browser Extension](assets/content-advisor-browser-extension-dm-openapi-renditions.png)
+
+   You can optionally click **[!UICONTROL Add Modifiers]**, specify a modifier in the text box, and press Enter to apply the transformation to all asset renditions in real-time. Similarly, you can add multiple modifiers to renditions and preview those transformations. You can drag the asset from Preview to the editor. The rendition after applying those modifiers is not saved. See the list of supported modifiers for [Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) and [Dynamic Media with OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
+
+   >[!IMPORTANT]
+   >
+   >If you are working with AEM Sites 6.5 as your authoring environment and you have selected [Remote (Delivery) using the Asset Reference field](#content-advisor-browser-extension-configure) while configuring the extension, the Delivery or Author repositories for remote AEM Assets must be the same as the Sites environment. In addition, only Approved assets are available to use for the AEM Assets Author repository.   
 
 ### Configure Content Advisor {#content-advisor-browser-extension-configure}
 
@@ -260,15 +269,11 @@ Select the **Settings** icon in the Content Advisor panel to configure the exten
 | **Theme** | Select **System**, **Light**, or **Dark** to control the appearance of Content Advisor. |
 | **Asset reference** | Specifies how an asset is referenced when it is used in supported applications. Select **Local (DAM path)** to use the asset's AEM Assets path, or **Remote (delivery)** to use the asset's delivery URL. |
 
->[!NOTE]
->
->The available settings and asset reference options can vary depending on your Content Advisor configuration.
-
 ### Important points to note {#content-advisor-browser-extension-important-points}
 
-* The Content Advisor extension is supported in **Chrome and Chromium-based browsers**.
+* The Content Advisor extension is supported in Google Chrome and other browsers based on Chromium, such as Microsoft Edge.
 * The extension does not work on every website. Some websites restrict browser extensions, and the Content Advisor extension button or panel might not be available.
-* The capabilities available in Content Advisor depend on the host application. **Drag and drop and adding assets directly to content are supported only when the host application allows these operations.** In other applications, you can copy the asset instead.
+* The capabilities available in Content Advisor depend on the host application. Drag and drop and adding assets directly to content are supported only when the host application allows these operations. In other applications, you can select and copy the asset instead.
 * Asset recommendations depend on the content available on the page or in the selected region. Pages with limited or inaccessible content might return fewer recommendations.
 * You must sign in with an Adobe ID that has access to the required AEM Assets repository.
 
