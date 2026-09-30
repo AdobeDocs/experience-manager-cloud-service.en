@@ -188,17 +188,19 @@ A selection of data types is available for defining your model:
   * The **Composite** data type can be used to [create nested content](#nested-content)
   * The **Composite** data type enables Content Fragments to store hierarchical, structured data
     * This is achieved by allowing fields to contain nested sub-fields
-    * The sub-fields are other Content Fragments
-    * The Content Fragments in a sub-field are restricted to the Content Fragment Models that you specify when defining the sub-field
+    * The sub-fields are structured
+    * The sub-fields are structured according to Content Fragment Models
+    * The sub-field are restricted to the Content Fragment Models that you specify when defining the sub-field
   * This feature provides a way to model complex data structures within a single fragment, similar to nested objects in JSON or embedded documents in NoSQL databases 
 
-<!-- CQDOC-23582 - remove when GA -->
-
-  >[!NOTE]
+  >[!WARNING]
   >
-  >The Composite data type is currently in Limited Availability. 
+  >The Composite data type can be used: 
   >
-  >If you would like to participate, create a [support ticket](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+  >* in the Touch UI (original) Content Fragment Model Editor
+  >* in the new Content Fragment Editor
+  >
+  >The new Content Fragment Model Editor and the Touch UI (original) Content Fragment Editor will block access to the Composite Data Type and any dependent fields.
 
 * **JSON Object**
   * Allows the Content Fragment author to enter JSON syntax into the corresponding elements of a fragment. 
@@ -274,6 +276,12 @@ Many properties are self-explanatory, for certain properties additional details 
 
   * Ensure the field's property name is added to the translation configuration, context `/content/dam/<sites-configuration>`, if not already present. 
   * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
+
+>[!NOTE]
+>
+>Instances of the Composite Data Type cannot be defined as a Single Field. 
+>
+>If this is needed, define the instance as a **Multiple Field** with **Min Number of Items** and **Max Number of Items** both set to `1`.
 
 ## Validation {#validation}
 
@@ -447,15 +455,7 @@ In addition to standard properties you can define:
 
 ### Composite Data {#composite-data}
 
-<!-- CQDOC-23582 - remove when GA -->
-
->[!NOTE]
->
->The Composite data type is currently in Limited Availability. 
->
->If you would like to participate, create a [support ticket](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
-
-The **Composite** data type enables Content Fragments to store hierarchical, structured data by allowing fields to contain nested sub-fields. The *children* (sub-fields) are themselves Content Fragments, dependent on user-specified Content Fragment Models and fully embedded in the *parent* fragment. 
+The **Composite** data type enables Content Fragments to store hierarchical, structured data by allowing fields to contain nested sub-fields. The *children* (sub-fields) are themselves structured content, defined by user-specified Content Fragment Models and fully embedded in the *parent* fragment.
 
 The Composite data type provides a way to model complex data structures within a single fragment, similar to nested objects in JSON or embedded documents in NoSQL databases.
 
@@ -527,6 +527,9 @@ To configure:
 >
 >The new Content Fragment Model Editor will block editing of composite fields.
 
+<!-- CQDOC-23582 - moved to authoring - check usage before GA -->
+
+<!--
 #### Edit a Composite item {#edit-a-composite-item}
 
 From the [new Content Fragment Editor](/help/sites-cloud/administering/content-fragments/authoring.md) you can open a fragment that contains a composite field and see:
@@ -539,7 +542,11 @@ From the [new Content Fragment Editor](/help/sites-cloud/administering/content-f
 >[!NOTE]
 >
 >The original Touch UI Fragment Editor will block editing of composite fields.
+-->
 
+<!-- CQDOC-23582 - review -->
+
+<!--
 #### Deliver a Composite item {#deliver-a-composite-item}
 
 You can deliver your Composite items with the following APIs:
@@ -568,7 +575,11 @@ You can deliver your Composite items with the following APIs:
   >If the model used inside a composite field is not published, the delivery API will skip that composite content (with a warn log on the server). This is similar to the existing behavior for fragments missing a published model. 
   >
   >Make sure customer publish pipelines include all models that compositions reference.
+-->
 
+<!-- CQDOC-23582 - review -->
+
+<!--
 #### Migrate Fragment References to Composite  {#migrate-fragment-references-to-composite}
 
 If you already have a content model based on Fragment references and want to convert to composite you can use the model migration mechanism. 
@@ -588,6 +599,11 @@ To use the migration tool for composite conversion:
 >[!NOTE]
 >
 >The same framework also supports simpler type changes (for example, converting a number field to a string), which is the original use case.
+-->
+
+### Comparison of Nested Content {#comparison-of-nested-content}
+
+<!-- CQDOC-23582 - check usage details before GA -->
 
 #### Benefits of Composite {#benefits-of-composite}
 
@@ -607,6 +623,8 @@ The Composite data type offers several benefits when modeling data:
 
   * Simpler content structures with fewer fragment references reduce the overhead of reference resolution during authoring, publishing, and delivery operations. 
   * They also decrease the size and complexity of JSON payloads, helping improve API efficiency and overall client-side performance. 
+
+<!-- CQDOC-23582 - check usage details before GA -->
 
 #### When to use Composite {#when-to-use-composite}
 

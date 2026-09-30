@@ -429,6 +429,19 @@ For example:
   ![Revert to inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-revert-to-inheritance.png)
 -->
 
+## Edit a Composite item {#edit-a-composite-item}
+
+From the [new Content Fragment Editor](/help/sites-cloud/administering/content-fragments/authoring.md) you can open a fragment that contains a composite field and see:
+
+* A panel-style rendering for the composite field, not an inline form. Selecting the composite item opens its fields in a dedicated editor area within the same browser session.
+* Add / Remove / Reorder controls for multi-value composites.
+* For multi-model fields, an **Add** dialog lets the author pick which model to instantiate.
+* A variation selector at the top level. Once a variation is chosen, the entire nested composite tree reflects that variation. Items can differ in count and content between variations.
+
+>[!NOTE]
+>
+>The original Touch UI Fragment Editor will block editing of composite fields.
+
 ## View Workflows {#view-workflows}
 
 The editor provides an option to show details about ongoing and completed [workflows](#view-workflows) that have been applied to the fragment.
