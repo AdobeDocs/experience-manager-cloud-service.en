@@ -55,9 +55,9 @@ Once the field names are added to the `incoming` sheet, your form becomes ready 
 
 Once sheet is  set up to receive data, you can [preview the form](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) <!--or [use POST requests](#use-admin-apis-to-send-data-to-your-sheet)--> to start sending data to the sheet.
 
- >[!WARNING] 
- >
- >  Never should the "shared-aem" sheets contain any personally identifiable information or sensitive data that you are not comfortable with being publicly accessible.
+>[!WARNING] 
+>
+>  Never should the "shared-aem" sheets contain any personally identifiable information or sensitive data that you are not comfortable with being publicly accessible.
 
 
 ## Use Admin APIs to enable a spreadsheet to accept data

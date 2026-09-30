@@ -14,36 +14,58 @@ feature: Asset Management, Publishing, Collaboration, Asset Processing
 >abstract="Search for assets by specifying a keyword in the Search bar or by filtering assets based on their status, file type, MIME type, size, creation, modification, and expiration dates. You can also apply custom filters in addition to the standard filters. You can save the filtered results as a Saved Search or a Smart Collection."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-collections.html?lang=en#manage-smart-collection" text="Create Smart Collections"
 
-[!DNL Assets view] provides an effective search, that just works by default. The search is comprehensive as it is a full-text search. The powerful search functionality lets you quickly discover the appropriate asset and help you improve your content velocity. [!DNL Assets view] provides full-text search and even searches through the metadata such as smart tags, title, date created, and copyright.
+[!DNL Assets view] delivers a comprehensive **full-text search** that works by default, with no additional configuration required. The search indexes both the asset content and its associated **metadata**, including **smart tags, title, date created, and copyright** information. This full-text approach lets you quickly discover the right asset and improves your content velocity, because relevant results surface even when you remember only a fragment of the file name, a tag, or a metadata attribute.
 
-To search assets:
+## How to search assets
 
-* Click in the search box at the top of the page. By default, it searches within the folder that you are currently browsing. Do one of the following:
+To search assets in [!DNL Assets view], follow these steps:
 
-  ![search box](assets/search-box.png)
+1. **Click in the search box** at the top of the page. By default, the search runs within the folder you are currently browsing.
+2. Choose one of the following options:
+   * **Search using a keyword**, and optionally change the target folder, then press **Return** to run the search.
+   * **Start from a recently viewed asset** by clicking in the search box and selecting a recently viewed asset from the suggestions. This opens the asset directly, saving you from re-entering a full query.
 
-  * Search using a keyword and optionally change the folder. Press Return.
+## Filter and refine search results
 
-  * Start working with a recently viewed asset, by searching for it directly. Click in the search box and select a recently viewed asset from the suggestions. 
+Beyond keyword search, [!DNL Assets view] lets you narrow results using standard filters and custom filters:
+
+* Filter assets by **status, file type, MIME type, and size**.
+* Filter by **creation, modification, and expiration dates** to isolate assets within a specific timeframe.
+* Apply **custom filters** in addition to the standard filters for more precise, targeted results.
+
+![search box](assets/search-box.png)
+
+Because these filters combine with full-text search, you can progressively refine a broad query down to the exact assets you need, which reduces browsing time and improves discovery accuracy.
+
+## Save search results as a Saved Search or Smart Collection
+
+After you filter your results, you can preserve them for reuse:
+
+* Save the filtered results as a **Saved Search** to rerun the same query later without rebuilding the filters.
+* Save the filtered results as a **Smart Collection**, which automatically updates its membership as assets that match the criteria are added or modified.
+
+Saving searches and creating Smart Collections ensures consistent, repeatable access to frequently needed asset sets, supporting faster workflows across teams.
 
 ## Filter the search results {#refine-search-results}
 
-You can refine search results to find relevant assets by applying multiple filters. These filters, configured by an admin, are based on files, folders, and collections. See [Customize Search Filters](custom-search-filters.md).
+<!-- TBD:  [supported file formats](/help/using/supported-file-formats.md). -->
+
+Refine search results to locate relevant assets by applying multiple filters simultaneously. These filters, configured by an admin, are based on files, folders, and collections, allowing users to narrow large asset libraries down to precise matches. See [Customize Search Filters](custom-search-filters.md).
 
 ![Search filters](assets/filters-panel.gif)
 
-You can filter the search results based on the following parameters.
+You can filter the search results based on the following parameters:
 
-* Asset Status: Filter the search results using an `Approved`, `Rejected`, or `No Status` asset status.
-* File type: Filter the search results by the supported types of files that is, `Images`, `Documents`, and `Videos`.
-* MIME type: Filter for one or more of the supported file formats. <!-- TBD:  [supported file formats](/help/using/supported-file-formats.md). -->
-* Image size: Provide one of more of the minimum and maximum dimensions to filter images. Size is provided in dimensions in pixel and is not the file size of the images.
-* Created date: The creation date of the asset as provided in the metadata. The standard date format used is `yyyy-mm-dd`.
-* Modified date: The last modified date of the assets. The standard date format used is `yyyy-mm-dd`.
-* Expiration Date: Filter the search results based on an `Expired` asset status. In addition, you can specify an expiration date range for assets to further filter your search results.
-* Custom Filters: [Add custom filters](#custom-filters) to the Assets view user interface. Apply the custom filters in addition to the standard filters to refine your search results.
+* **Asset Status**: Filter the search results using an `Approved`, `Rejected`, or `No Status` asset status.
+* **File type**: Filter the search results by the supported types of files, that is, `Images`, `Documents`, and `Videos`.
+* **MIME type**: Filter for one or more of the supported file formats.
+* **Image size**: Provide one or more of the minimum and maximum dimensions to filter images. Size refers to pixel dimensions (width and height) and does not represent the file size of the images. This ensures filtering matches image resolution rather than storage size.
+* **Created date**: The creation date of the asset as provided in the metadata. The standard date format used is `yyyy-mm-dd`.
+* **Modified date**: The last modified date of the assets. The standard date format used is `yyyy-mm-dd`.
+* **Expiration Date**: Filter the search results based on an `Expired` asset status. In addition, you can specify an expiration date range for assets to further filter your search results.
+* **Custom Filters**: [Add custom filters](#custom-filters) to the [!DNL Assets view] user interface. Apply the custom filters in addition to the standard filters to refine your search results.
 
-You can sort the searched assets in increasing or decreasing order of `Name`, `Relevance`, `Size`, `Modified`, and `Created`. The searched assets are sorted based on `Relevance`, by default.
+Users can sort the searched assets in increasing or decreasing order of `Name`, `Relevance`, `Size`, `Modified`, and `Created`. The searched assets are sorted based on `Relevance` by default, so the most closely matching assets appear first without any additional configuration.
 
 <!--
   
@@ -119,82 +141,109 @@ To remove custom filters:
 
 ## AI Search {#ai-search}
 
-AI Search is an advanced search capability that understands the meaning and intent behind a user's query rather than relying on exact keyword matches. It uses artificial intelligence (AI) and machine learning to deliver more accurate and context-aware results.
+AI Search is an advanced, **intent-driven search capability** that understands the meaning behind a user's query instead of relying on exact keyword matches. It applies **artificial intelligence (AI)** and **machine learning (ML)** to power **semantic search**, delivering more accurate, context-aware results that reflect what a user actually intends to find.
 
-Unlike traditional keyword-based search, which looks for exact terms, AI Search interprets relationships between words, concepts, and user intent. This ensures that users find what they are looking for—even if their query is phrased differently, contains typos, or is in another language.
+Unlike traditional keyword-based search, which matches only exact terms, AI Search interprets the relationships between words, concepts, and user intent. As a result, users find what they are looking for—even when a query is phrased differently, contains typos, or is written in another language. This makes AI Search especially effective for large content repositories, where the same idea may be expressed in many different ways.
 
 >[!IMPORTANT]
 >
 >If you require searching for assets using natural language with prompts such as, `find me approved jpeg assets about coffee`, Adobe recommends to use Content Discovery Agent. For more information on how to access the agent, sample prompts, and so on, see [Content Discovery Agent](/help/ai-in-aem/agents/content-advisor/discovery.md#use-cases-prompts).
 
-Some if its key benefits include:
+Key benefits of AI Search include:
 
-* **Multilingual support**: Search across multiple languages without requiring exact translations. Users can find relevant content regardless of their query language.
+* **Multilingual support**: AI Search retrieves relevant content across multiple languages without requiring exact translations, because it matches meaning rather than words. Users find the content they need regardless of the language in which they phrase their query.
 
-* **Handles misspellings**: Interprets typos and spelling errors, ensuring accurate results even with imperfect input.
+* **Handles misspellings**: AI Search interprets typos and spelling errors and still returns accurate results, so imperfect input does not prevent users from reaching the right content.
 
-* **Understands synonyms**: Delivers results for related terms and phrases, so users do not need to guess the right keyword.
+* **Understands synonyms**: AI Search delivers results for related terms and phrases, which means users do not need to guess the exact keyword an asset was labeled with to find it.
 
-* **Context-Aware search**: Recognizes the intent behind a query, not just the exact words.
+* **Context-aware search**: AI Search recognizes the intent behind a query rather than just the literal words, ensuring results align with what the user is actually trying to accomplish.
 
 ### Examples for AI Search {#examples-ai-search}
 
 **Example Prompt**: *Woman drinking coffee*
 
-The traditional keyword-based search looks for exact matches of asset metadata, such as `Woman`, `drinking`, `Coffee`, and returns assets that include all these terms in the metadata.
+**Traditional keyword-based search** looks for exact matches of asset metadata. For the prompt above, it searches for the individual terms `Woman`, `drinking`, and `Coffee`. It then returns only the assets whose metadata contains all of these exact terms, which means synonyms, translations, and misspellings are typically missed.
 
-However, AI Search matches similar words such as `Girl`, `Lady` in the case of `Woman` and `Cappuccino` and `Latte` in the case of `Coffee`.
+**AI Search**, by contrast, understands the meaning and context behind the words rather than matching literal text. As a result, AI Search matches semantically similar words such as **`Girl`** and **`Lady`** in the case of `Woman`, and **`Cappuccino`** and **`Latte`** in the case of `Coffee`. This happens because AI Search interprets the intent of the query instead of relying on exact metadata strings.
 
-Similarly, you can specify this prompt in Spanish or misspell `Woman` as `Wman` and still get the same results.
+This semantic understanding delivers two practical advantages:
 
-![Semantic Search in Assets view](assets/semantic-search.png)
+![Semantic Search in [!DNL Assets view]](assets/semantic-search.png)
 
-### Enable or disable AI search in Assets view {#enable-disable-ai-search}
+- **Multilingual support**: Users can specify the same prompt in Spanish and still retrieve the same relevant results, because AI Search recognizes the underlying concept across languages.
+- **Misspelling tolerance**: Users can misspell `Woman` as `Wman` and still get the same results, because AI Search matches on intended meaning rather than exact spelling.
+
+### Enable or disable AI search in [!DNL Assets view] {#enable-disable-ai-search}
+
+Configuring the search mode in the [!DNL Assets view] determines how users find content: **AI Search** interprets natural-language, intent-based queries using semantic understanding, while **Keyword** search matches the exact terms a user types. Selecting the mode that fits your team's workflow controls how assets are surfaced across the [!DNL Assets view].
 
 Execute the following steps to enable or disable AI Search:
 
 1. Navigate to **[!UICONTROL Settings]** >> **[!UICONTROL General Settings]** and select the **[!UICONTROL Search]** tab.
 
-1. In the **[!UICONTROL Search]** section, select **[!UICONTROL AI Search]** to enable AI Search or **[!UICONTROL Keyword]** to disable it.
+2. In the **[!UICONTROL Search]** section, select **[!UICONTROL AI Search]** to enable AI Search, or select **[!UICONTROL Keyword]** to disable it. **AI Search** returns results based on meaning and context, so it works well when users search conversationally or do not know exact file names. **Keyword** search returns results that match precise terms and is well suited to users who search by exact asset names, IDs, or metadata values.
 
-   ![Semantic Search in Assets view](/help/assets/assets/enable-disable-ai-search.png)
+   ![Semantic Search in [!DNL Assets view]](/help/assets/assets/enable-disable-ai-search.png)
 
-1. Click **[!UICONTROL Save]**.
+3. Click **[!UICONTROL Save]**.
 
+Once saved, the selected search mode applies to how assets are retrieved in the [!DNL Assets view], and users immediately experience search results based on the mode you enabled.
 
 ## Search assets using [!DNL Adobe Firefly] {#search-firefly}
 
-You can search for an asset that is not available in any of the asset folders by utilizing the [!DNL Adobe Firefly] asset search feature within [!DNL Experience Manager Assets]. This allows you to efficiently generate assets in real-time that are not stored in the asset folders.
+The **[!DNL Adobe Firefly] asset search** feature within [!DNL Experience Manager Assets] lets you locate and produce assets that are not stored in any existing asset folder. [!DNL Experience Manager Assets] users can search for a required asset, and when no matching file exists in the asset folders, generate it directly through Firefly instead. This capability generates assets in real time, delivering visuals that are not stored in any asset folder.
+
+### How it works
+
+The feature draws on [!DNL Adobe Firefly]'s generative capabilities to create assets on demand. When a search returns no existing match in the asset repository, Firefly produces a new asset based on the search intent, eliminating the need to source, upload, or manually create the file. Because the asset is generated within the [!DNL Experience Manager Assets] workflow, users remain in the same environment rather than switching between separate tools.
+
+### Key benefits
+
+- **On-demand generation:** Produce assets that do not exist in any asset folder without leaving [!DNL Experience Manager Assets].
+- **Real-time results:** Firefly generates the requested visual immediately, reducing turnaround time.
+- **Streamlined workflow:** Search and generation are integrated, so users move directly from an unsuccessful folder search to a generated result.
+- **Coverage for gaps:** Fill content gaps quickly when the required asset is unavailable in the existing library.
+
+### Practical applications
+
+This feature is useful whenever a needed image or asset is missing from the asset folders — for example, when creating campaign variations, filling placeholder slots, or producing supporting visuals on a deadline. Instead of pausing the workflow to commission or import new files, users generate a suitable asset in real time and continue their work within [!DNL Experience Manager Assets].
 
 ### Before you begin {#search-assets-firefly-prereqs}
 
-You must have an active [!DNL Adobe Express] subscription.
+To complete this workflow, confirm that the following prerequisite is met:
+
+- **An active [!DNL Adobe Express] subscription.** You must have an **active [!DNL Adobe Express] subscription** in good standing before you begin.
+
+An active subscription is required because it authorizes access to the [!DNL Adobe Express] features and generative capabilities used in this workflow. Without an active subscription, the associated tools and assets remain unavailable, so verifying subscription status first ensures the steps that follow can be completed without interruption.
 
 ### Generate assets {#generate-assets-firefly}
 
-To generate new assets using [!DNL Adobe Firefly]:
+Generate new, relevant assets directly within your workspace using **[!DNL Adobe Firefly]**, Adobe's generative AI tool for creating images from text prompts. This workflow lets you produce a required asset on demand when no matching file already exists in your libraries.
 
-1. Navigate to the [!DNL AEM Assets] workspace.
+To generate new assets using **[!DNL Adobe Firefly]**:
 
-1. Type the asset name in the search bar. For example, you can search an asset using the keyword `Bugatti Type 57`. When searching for the asset, no results are found because the asset is not present in any of the asset folders. To generate assets using AI, click **[!UICONTROL Generate with Firefly]**. The [!DNL Adobe Firefly] screen appears. 
+1. Navigate to the **Adobe Experience Manager (AEM) Assets** workspace.
+
+1. Type the asset name in the search bar. For example, search for an asset using the keyword `Bugatti Type 57`. If the search returns no results because the asset is not present in any of the asset folders, generate it with AI instead. Click **[!UICONTROL Generate with Firefly]** to create the missing asset. The **[!DNL Adobe Firefly]** screen appears.
 
    ![Firefly integration](assets/firefly-integration.png)
 
-   The new assets are successfully generated. Additionally, you can change the image description by typing the new text prompt in the description box. [Learn how to write a good AI prompt to generate extraordinary and relevant content](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html). Alternatively, you can [edit image with various other features like changing style, image dimensions, and more](https://helpx.adobe.com/in/firefly/using/text-to-image.html).
+   **[!DNL Adobe Firefly]** generates the new assets. You can refine the output by changing the image description—type a new text prompt in the description box to steer the result toward the content you need. [Learn how to write a good AI prompt to generate extraordinary and relevant content](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html). Alternatively, [edit the image with various other features like changing style, image dimensions, and more](https://helpx.adobe.com/in/firefly/using/text-to-image.html), giving you full control over the final asset.
 
    ![Firefly integration](assets/bugatti-type-57.png)
 
-1. Select an image that you want to save. Click **[!UICONTROL Save]** to save the assets in your preferred folder for easy access.
+1. Select the image you want to keep. Click **[!UICONTROL Save]** to store the asset in your preferred folder for easy access.
 
-1. Save asset form appears. Specify the following fields:
+1. When the **Save asset** form appears, specify the following fields:
 
    * Enter a name for the file in the **Save As** field.
-   * Select a destination folder. 
-   * Enter details such as Project or Campaign name, Keywords, Channels, Time frame, and Region. 
+   * Select a destination folder.
+   * Enter details such as **Project** or **Campaign** name, **Keywords**, **Channels**, **Time frame**, and **Region**. Completing these metadata fields improves the asset's discoverability and organization for future searches.
 
    ![Firefly integration](assets/save-generated-asset.png)
 
-1. Click **Save as new asset** to save the asset(s).
+1. Click **Save as new asset** to save the generated asset(s) to the destination folder you selected.
 
 <!--
 
@@ -210,11 +259,27 @@ To upload the generated asset to the assets repository:
 
 ## Saved searches {#saved-search}
 
-Search functionality is quite easy to use in [!DNL Assets view]. From within the search box, you cannot only type a keyword and press return to see the results, you can also quickly search again for your recently searched keywords in a single click.
+A **saved search** stores a set of search keywords and filters in [!DNL Assets view] so you can rerun the exact same search and reapply its filters with a **single click**. This eliminates the need to retype keywords and rebuild filters each time, making saved searches especially useful for queries you perform frequently.
 
-You can also filter the search results based on specific criteria around metadata and type of assets. For frequently used filters, to improve the search experience, [!DNL Assets view] lets you save the search parameters. You can then select the saved search to search and apply the filter with just a single click as well.
+### Searching in [!DNL Assets view]
 
-To create a saved search, search for some asset, apply one or more filters, and click **[!UICONTROL Save as]** > **[!UICONTROL Saved Search]** in the [!UICONTROL Filters] panel. You can also click **[!UICONTROL Save as]** and select **[!UICONTROL Smart Collection]** to save the results as a Smart Collection. See [Create a Smart Collection](manage-collections.md#create-a-smart-collection) for more details.
+Search functionality in [!DNL Assets view] is straightforward and efficient. From within the search box, you can:
+
+- Type a keyword and press **Return** to display the matching results.
+- Rerun any of your **recently searched keywords** in a single click, without retyping them.
+- Filter the results based on specific criteria, including **asset metadata** and **asset type**, to narrow down large asset libraries quickly.
+
+### Why save a search
+
+For frequently used filters, [!DNL Assets view] lets you save the complete set of search parameters. Saving a search improves the overall search experience because it turns a multi-step process—typing a keyword and applying one or more filters—into a **single-click action**. Once saved, you select the saved search to run the query and apply its filters instantly, which is valuable for recurring workflows and repeated asset lookups.
+
+### Create a saved search
+
+To create a saved search:
+
+1. Search for an asset using a keyword.
+2. Apply one or more filters to refine the results.
+3. In the **[!UICONTROL Filters]** panel, click **[!UICONTROL Save as]** > **[!UICONTROL Saved Search]**.
 
 ![Create smart collection](assets/create-smart-collection.png)
 
@@ -230,73 +295,97 @@ What about temporarily hiding an asset (suspending search on it) from the search
 When userA is searching and userB add an asset that matches search results, will the asset display in search as soon as userA refreshes the page? Assuming indexing is near real-time. May not be so for bulk uploads.
 -->
 
+### Save results as a Smart Collection
+
+You can also save the same search results as a **Smart Collection**, a dynamic collection that automatically groups assets matching your defined criteria. To do this, click **[!UICONTROL Save as]** and select **[!UICONTROL Smart Collection]**. See [Create a Smart Collection](manage-collections.md#create-a-smart-collection) for more details.
+
 ## Work with Search results {#work-with-search-results}
 
-You can select the assets that display in the search results and do the following actions:
+Search results in [!DNL Experience Manager Assets] let you select one or more displayed assets and perform a complete set of management, editing, and collaboration actions directly from the results view. Selecting an asset makes the following actions available:
 
-* **Find Similar Image**: Find a similar image asset in the Assets UI based on the metadata and smart tags.
+* **Find Similar Image**: Find a similar image asset in the Assets UI based on the metadata and smart tags. This helps you quickly locate visually and semantically related images without repeating a manual search.
 
-* **Details**: View and edit asset properties.
+* **Details**: View and edit asset properties, including metadata, descriptive attributes, and other stored details that govern how the asset is classified and retrieved.
 
-* **Download**: Download an asset.
+* **Download**: Download an asset to your local system for offline use or distribution.
 
-* **Add to Collection**: Add the selected asset to a collection.
+* **Add to Collection**: Add the selected asset to a collection, grouping related assets together for easier organization and reuse.
 
-* **Pin to Quick Access**: [Pin an asset](my-workspace-assets-view.md) for faster access when you need it later. All pinned items display in the **Quick access** section of My Workspace.
+* **Pin to Quick Access**: [Pin an asset](my-workspace-assets-view.md) for faster access when it is needed later. All pinned items display in the **Quick access** section of My Workspace, keeping frequently used assets readily available.
 
-* **Open in Adobe Express**: Edit an image in the integrated Adobe Express from the Experience Manager Assets screen.
+* **Open in [!DNL Adobe Express]**: Edit an image in the integrated [!DNL Adobe Express] directly from the [!DNL Experience Manager Assets] screen, without leaving the Assets environment.
 
-* **Edit**: Edit the image using Adobe Express. 
+* **Edit**: Edit the image using [!DNL Adobe Express] to make design and creative adjustments.
 
-* **Share Link**: [Share links](share-links-for-assets-view.md) for an asset with other users so that they can access and download it.
+* **Share Link**: [Share links](share-links-for-assets-view.md) for an asset with other users so that they can access and download it, enabling collaboration without granting broader system access.
 
-* **Delete**: Delete an asset.
+* **Delete**: Delete an asset that is no longer needed.
 
-* **Copy**: Copy an asset to a different folder location.
+* **Copy**: Copy an asset to a different folder location while retaining the original.
 
-* **Move**: Move an asset to a different folder location.
+* **Move**: Move an asset to a different folder location, relocating it from its current folder.
 
-* **Rename**: Rename an asset.
+* **Rename**: Rename an asset to reflect updated naming conventions or content.
 
-* **Copy to Libraries**: Add an asset to the Library.
+* **Copy to Libraries**: Add an asset to the Library so that it is available for reuse across projects and creative workflows.
 
-* **Assign Tasks**: Assign tasks to users for an asset.
+* **Assign Tasks**: Assign tasks to users for an asset, coordinating review, approval, or production work.
 
-* **Watch**: [Monitor the operations](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/search-assets) performed on an asset.
+* **Watch**: [Monitor the operations](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/search-assets) performed on an asset, tracking activity and changes over time.
 
 ## Configure search first homepage {#configuring-search-first-homepage}
 
-Assets view enables you to select the default landing page for your organization. When using Search First as the home page, you also have options to tailor the branding of the page by configuring the background and logo images to match your brand.
+[!DNL Assets view] lets you set the default landing page for your organization, and **Search First** is one of the homepage options available. When configured as the home page, **Search First** presents a search-centric landing experience that places the search bar at the center of the user journey, allowing users to locate assets immediately upon accessing the application. This is particularly valuable for organizations that prioritize fast asset discovery over browsing.
 
-To configure the search first homepage, execute the steps below:
+When using **Search First** as the home page, you can also tailor the branding of the page by configuring the **background and logo images** to match your brand. Aligning these visual elements with your corporate identity reinforces brand consistency and delivers a cohesive experience for every user who lands on the page.
+
+### Steps to configure the Search First homepage
+
+To configure the Search First homepage, execute the steps below:
 
 1. Navigate to **[!UICONTROL Settings]** > **[!UICONTROL General Settings]**.
-1. Select **[!UICONTROL Search first]**. It further opens the search first related configuration. You can set [alignment](#setting-alignment-search-bar) or [set the background and logo image](#setting-background-image-and-logo) of your homepage.
+2. Select **[!UICONTROL Search first]**. This opens the Search First related configuration, where you can set the [alignment](#setting-alignment-search-bar) of the search bar or [set the background and logo image](#setting-background-image-and-logo) of your homepage.
+
+By configuring both the search bar alignment and the branding assets, you create a homepage that is both functional and consistent with your organization's visual identity.
 
 ### Setting alignment of search bar {#setting-alignment-search-bar}
 
-[!DNL Assets view] allows you to change the alignment of the search bar. You can make the search bar appear either at the center or at the top. Select the appropriate alignment and click **[!UICONTROL Save]**.
+The [!DNL Assets view] lets you configure the alignment of the search bar, giving you control over where the search field is displayed within the interface. This placement setting determines how prominently the search bar appears when users open the [!DNL Assets view].
 
-   ![Search first homepage alignment](assets/search-first-alignment.png)
+You can position the search bar in one of two alignments:
+
+- **Center** — displays the search bar in the middle of the view. A centered search bar draws immediate attention and is well suited to search-first workflows where locating assets quickly is the primary task.
+- **Top** — displays the search bar at the top of the view. A top-aligned search bar keeps the search field anchored above the content, maximizing the space available for browsing assets while keeping search readily accessible.
+
+![Search first homepage alignment](assets/search-first-alignment.png)
+
+To set the search bar alignment, follow these steps:
+
+1. Open the **[!DNL Assets view]** and locate the search bar alignment setting.
+2. Select the alignment you want to apply — either **Center** or **Top**.
+3. Click **[!UICONTROL Save]** to apply the selected alignment.
+
+Once saved, the search bar appears in the chosen position each time the [!DNL Assets view] is opened, ensuring a consistent layout for everyone who accesses the view.
 
 ### Setting background and logo image of homepage {#setting-background-image-and-logo}
 
-You can add a brand logo and background image to your search first homepage. Execute the following steps:
+Administrators can add a brand logo and background image to the search-first homepage to reinforce brand identity and create a consistent visual experience. This customization ensures the homepage aligns with organizational branding before users begin their search. Complete the following steps:
 
 1. Navigate to the **[!UICONTROL Background and Logo image]** section under **[!UICONTROL Homepage]**.
-1. Click **[!UICONTROL Replace]** to browse images from the existing assets repository.
-1. Click **[!UICONTROL Save]**. [Preview](#preview-configured-homepage) the changes to review the modifications.
+1. Click **[!UICONTROL Replace]** to browse and select images from the existing assets repository, then choose the logo or background image you want to apply.
+1. Click **[!UICONTROL Save]** to apply the selected images. [Preview](#preview-configured-homepage) the changes to review the modifications and confirm the logo and background appear as intended.
 
 ### Preview configured homepage {#preview-configured-homepage}
 
-You can preview to check the layout and formatting of the search first homepage. Using **[!UICONTROL Preview]**, you can fix the layout or make modifications as per the requirement. To preview the configured homepage, execute the steps below:
+Preview the search first homepage to verify its layout and formatting before publishing. The **[!UICONTROL Preview]** option displays the homepage exactly as end users will see it, so you can adjust the layout or make modifications as needed. This ensures the configured design appears correctly before it goes live. Previewing early helps catch layout or formatting issues in both light and dark display modes, avoiding a poor experience for users who reach the live homepage.
+
+To preview the configured homepage, complete the following steps:
 
 1. Click **[!UICONTROL General Settings]** and select **[!UICONTROL Search first]**.
-1. Navigate to **[!UICONTROL Customize search first homepage]** and click **[!UICONTROL Preview]**. Toggle through the **[!UICONTROL Dark theme]** button to preview the homepage in dark or light theme.
-1. Click **[!UICONTROL Close]** to close the preview screen.
+1. Navigate to **[!UICONTROL Customize search first homepage]** and click **[!UICONTROL Preview]**. Toggle the **[!UICONTROL Dark theme]** button to switch the preview between the dark and light appearance, allowing you to validate how the homepage renders in both display modes.
+1. Click **[!UICONTROL Close]** to exit the preview screen and return to the customization view.
 
    ![Search first homepage preview](/help/assets/assets/search-first-preview.gif)
-
 
 <!--
 
@@ -388,16 +477,17 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 ## Next Steps {#next-steps}
 
-* [Watch a video to search assets in Assets view](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html)
+Complete the following steps to continue working with the [!DNL Assets view]:
 
-* Provide product feedback using the [!UICONTROL Feedback] option available on the Assets view user interface
+* [Watch a video to search assets in [!DNL Assets view]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html)
 
-* Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar.
+* Provide product feedback using the [!UICONTROL Feedback] option available on the [!DNL Assets view] user interface to help improve the [!DNL Assets view] experience.
 
-* Contact [Customer Care](https://experienceleague.adobe.com/?support-solution=General#support)
+* Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar to suggest corrections or improvements to this article.
 
+* Contact [Customer Care](https://experienceleague.adobe.com/?support-solution=General#support) for direct assistance with the [!DNL Assets view].
 
-**See also**
+**See also: related [!DNL Assets view] topics**
 
 * [Translate Assets](/help/assets/translate-assets.md)
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
@@ -409,9 +499,8 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 * [Download assets](/help/assets/download-assets-from-aem.md)
 * [Manage metadata](/help/assets/manage-metadata.md)
 * [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
-* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Manage reports in [!DNL Assets view]](/help/assets/manage-reports-assets-view.md)
 * [Search facets](/help/assets/search-facets.md)
 * [Manage collections](/help/assets/manage-collections.md)
 * [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
-         

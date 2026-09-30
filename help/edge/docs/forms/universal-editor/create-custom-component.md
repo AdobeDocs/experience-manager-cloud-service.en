@@ -107,9 +107,9 @@ The Custom Component JavaScript API defines how to control the behavior, appeara
 
 The **decorate** function is the entry point for your custom component. It initializes the component, links it with its JSON definition, and allows you to manipulate its HTML structure and behavior.
 
-  >[!NOTE]
-  >
-  > The custom component's JavaScript file must export a default function as decorate:
+>[!NOTE]
+>
+> The custom component's JavaScript file must export a default function as decorate:
 
 #### Function Signature:
 

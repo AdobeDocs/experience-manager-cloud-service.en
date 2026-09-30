@@ -94,24 +94,24 @@ Unlike traditional keyword-based search, which looks for exact terms, AI Search 
 
 Some if its key benefits include:
 
-   * Multilingual support: Search across multiple languages without requiring exact translations. Users can find relevant content regardless of their query language.
+* Multilingual support: Search across multiple languages without requiring exact translations. Users can find relevant content regardless of their query language.
 
-   * Handles misspellings: Interprets typos and spelling errors, ensuring accurate results even with imperfect input.
+* Handles misspellings: Interprets typos and spelling errors, ensuring accurate results even with imperfect input.
 
-   * Understands synonyms: Delivers results for related terms and phrases, so users do not need to guess the right keyword.
+* Understands synonyms: Delivers results for related terms and phrases, so users do not need to guess the right keyword.
 
-   * Context-Aware search: Recognizes the intent behind a query, not just the exact words.
+* Context-Aware search: Recognizes the intent behind a query, not just the exact words.
 
-   >[!IMPORTANT]
-   > 
-   >* Minimum required AEM release version to access AI Search within Content Advisor is `21994`.
-   
+>[!IMPORTANT]
+> 
+>* Minimum required AEM release version to access AI Search within Content Advisor is `21994`.
+
 
 ### Smart suggestions based on context and intent {#smart-suggestions-content-advisor}
 
- Content Advisor displays smart suggestions based on the context and intent of the content in the Express canvas. This helps you quickly discover and use assets that align with your content needs without the time-consuming manual search.
+Content Advisor displays smart suggestions based on the context and intent of the content in the Express canvas. This helps you quickly discover and use assets that align with your content needs without the time-consuming manual search.
 
-   ![Suggested Content Advisor content in Adobe Express](assets/express-native-integration-suggested-content.png)
+![Suggested Content Advisor content in Adobe Express](assets/express-native-integration-suggested-content.png)
 
 >[!IMPORTANT]
 > 
@@ -124,14 +124,14 @@ Some if its key benefits include:
 
 Content Advisor allows you to upload a campaign brief document to discover relevant assets without manually entering search keywords. Content Advisor analyzes the information in the campaign brief to understand the campaign's intent and recommends relevant assets available in AEM Assets.
 
-  ![Include assets from Assets add-on](assets/upload-brief-native-express.png)
+![Include assets from Assets add-on](assets/upload-brief-native-express.png)
 
-   >[!IMPORTANT]
-   >
-   >* Content Advisor analyzes the information available as text in the campaign brief to recommend relevant assets. It does not analyze the information available as images in the campaign brief.
-   >* The supported file types that you can upload as a campaign brief include PDF, DOCX, and TXT documents. 
-   >* You must sign a GenAI Rider to access this feature within Content Advisor. To sign GenAI rider, contact your Adobe representative.
-   >* Minimum required AEM release version to access this feature is `21994`.
+>[!IMPORTANT]
+>
+>* Content Advisor analyzes the information available as text in the campaign brief to recommend relevant assets. It does not analyze the information available as images in the campaign brief.
+>* The supported file types that you can upload as a campaign brief include PDF, DOCX, and TXT documents. 
+>* You must sign a GenAI Rider to access this feature within Content Advisor. To sign GenAI rider, contact your Adobe representative.
+>* Minimum required AEM release version to access this feature is `21994`.
 
 ### Dynamic Media asset renditions available for use {#dynamic-media-renditions-content-advisor}
 
@@ -247,14 +247,14 @@ As a best practice, Adobe recommends specifying values in the rest of the fields
 
 Adobe Express natively supports the formats available at [Review the minimum image requirements](https://helpx.adobe.com/express/web/image-creation-and-editing/change-file-formats/image-requirements.html). However, AEM Assets supports the following format types:
 
-   | Supported format | Max dimensions / resolution                 | Max file size |
-   |------------------|---------------------------------------------|---------------|
-   | JPEG             | 65 MP (for example, 8K × 8K or 16K × 4K)    | 80 MB Desktop, 40 MB Mobile             |
-   | PNG              | 65 MP (for example, 8K × 8K or 16K × 4K)    | 80 MB Desktop, 40 MB Mobile            |
-   | SVG              | —                                           | 250 KB        |
-   | MP4              | 3840 × 3840 pixels                          | 200 MB        |
-   | PSD              | 65 MP (for example, 8K × 8K or 16K × 4K)    | 80 MB Desktop, 40 MB Mobile            |
-   | PDF              | —                                           | —             |
+| Supported format | Max dimensions / resolution                 | Max file size |
+|------------------|---------------------------------------------|---------------|
+| JPEG             | 65 MP (for example, 8K × 8K or 16K × 4K)    | 80 MB Desktop, 40 MB Mobile             |
+| PNG              | 65 MP (for example, 8K × 8K or 16K × 4K)    | 80 MB Desktop, 40 MB Mobile            |
+| SVG              | —                                           | 250 KB        |
+| MP4              | 3840 × 3840 pixels                          | 200 MB        |
+| PSD              | 65 MP (for example, 8K × 8K or 16K × 4K)    | 80 MB Desktop, 40 MB Mobile            |
+| PDF              | —                                           | —             |
 
 
 ## Limitations {#limitations}

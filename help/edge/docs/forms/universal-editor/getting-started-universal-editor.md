@@ -181,9 +181,9 @@ The `fstab.yaml` file connects your GitHub repository to AEM authoring environme
 
 **Validation:** Confirm your GitHub repository connection to AEM.
     
-   >[!NOTE]
-   >
-   > Having build issues? See [Troubleshooting GitHub build issues](#troubleshooting-github-build-issues).
+>[!NOTE]
+>
+> Having build issues? See [Troubleshooting GitHub build issues](#troubleshooting-github-build-issues).
 
 +++
 

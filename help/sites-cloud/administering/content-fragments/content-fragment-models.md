@@ -19,7 +19,7 @@ This page covers how to define your content fragment model, using the dedicated 
 
 >[!CAUTION]
 >
->If you will be querying against multiple referenced fragments, then it is not recommended that the various fragment models have field names with the same name, but different types.
+>If you will be querying against multiple referenced fragments, then it is not recommended that your various fragment models have field names with the same name, but different types.
 >
 >For further details see [AEM GraphQL API for use with Content Fragments - Limitations](/help/headless/graphql-api/content-fragments.md#limitations)
 
@@ -324,6 +324,7 @@ Content Fragments can form nested content, using any of the following data types
     >[!NOTE]
     >
     >This method is of particular interest when you are using [Headless Content Delivery using Content Fragments with GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+
   * Can be configured for one or multiple references (in the resulting fragment).
   * Suitable when modular, reusable content is required.
 

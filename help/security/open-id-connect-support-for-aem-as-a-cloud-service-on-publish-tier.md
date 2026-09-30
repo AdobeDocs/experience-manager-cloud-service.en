@@ -106,6 +106,13 @@ Now, configure the OIDC authentication handler. Multiple OIDC connections can be
    * `defaultConnectionName`: configure with the same name defined for the OIDC connection on the previous step
    * `pkceEnabled`: `true` Proof Key for Code Exchange (PKCE) on Authorization code flow 
    * `idp`: the name of the [OAK External Identity Provider](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html). Note that different OAK IDP cannot share users or groups
+   * `jwkSetHttpSizeLimit`: maximum size, in bytes, of the JWK set document fetched from the IdP's `jwks_uri` when validating the ID token signature. Increase this if the IdP publishes a large key set and token validation fails with `Exceeded configured input limit`. Must be between 1 and 10485760 (10 MB); an unbounded value is not allowed on the authentication path. Defaults to `51200` (50 KB).
+   * `jwkSetHttpConnectTimeout`: connect timeout, in milliseconds, for retrieving the JWK set from the IdP's `jwks_uri`. Must be between 1 and 60000; an unbounded value is not allowed on the authentication path. Defaults to `500`.
+   * `jwkSetHttpReadTimeout`: read timeout, in milliseconds, for retrieving the JWK set from the IdP's `jwks_uri`. Must be between 1 and 60000; an unbounded value is not allowed on the authentication path. Defaults to `500`.
+
+   >[!NOTE]
+   >
+   >The three `jwkSetHttp*` properties are validated on activation: values of `0` or negative are rejected. A misconfigured value causes the handler to fail activation immediately with a descriptive error, instead of activating successfully and failing later on every OIDC callback.
 
 ### Configure SlingUserInfoProcessor {#configure-slinguserinfoprocessor}
 

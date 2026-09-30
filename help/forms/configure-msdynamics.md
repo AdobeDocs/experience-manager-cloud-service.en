@@ -75,7 +75,7 @@ Once you have configured the prerequisites above, you can proceed with integrati
 
 ### 1. Configure cloud service configuration for Microsoft Dynamics
 
- >[!VIDEO](https://video.tv.adobe.com/v/3444370/cloudconfiguration-dataintegration-adobeexperiencemanager-aemforms-microsoftdynamics)
+>[!VIDEO](https://video.tv.adobe.com/v/3444370/cloudconfiguration-dataintegration-adobeexperiencemanager-aemforms-microsoftdynamics)
 
 Perform the following steps to configure the [!DNL Microsoft&reg; Dynamics 365] cloud service configuration:
 

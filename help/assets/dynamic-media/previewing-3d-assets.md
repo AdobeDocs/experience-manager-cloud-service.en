@@ -6,6 +6,12 @@ feature: 3D Assets
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Preview 3D assets in Adobe Experience Manager{#previewing-3d-assets}
 
