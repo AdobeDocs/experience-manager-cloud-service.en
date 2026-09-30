@@ -66,11 +66,9 @@ A collection groups related assets together for organized access. To create a co
 
    ![Create collection](assets/create-collection.png)
 
-<!--
-   
+   <!--
    for viewing and editing only to users with the appropriate [permissions](#manage-collection-access).
-
--->
+   -->
 
 4. Click **[!UICONTROL Create]** to create the collection. The new collection then appears in the [!DNL Collections] list, ready for you to add assets.
 

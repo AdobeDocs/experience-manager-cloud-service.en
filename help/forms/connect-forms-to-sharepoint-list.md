@@ -86,6 +86,10 @@ You can use the created SharePoint List configuration in an Adaptive Form, to sa
 1. [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
 1. [Configure Submit action using a Form Data Model (FDM)](/help/forms/using-form-data-model.md)
 
+>[!NOTE]
+>
+> The maximum attachment size for Foundation Forms submitted via Microsoft&reg; SharePoint List is **14 MB**.
+
 When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint List Storage. 
 
 >[!NOTE]
