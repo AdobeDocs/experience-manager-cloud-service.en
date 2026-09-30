@@ -22,7 +22,7 @@ Today, AEM as a Cloud Service includes a built-in APM integration, managed entir
 
 >[!AVAILABILITY]
 >
->This feature is in **Limited Availability**, starting in mid-October 2026. To use it, request access by emailing [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) — Adobe enables OpenTelemetry for your environments shortly after replying to your request. If your environment currently uses Adobe's built-in APM integration, that integration stops sending data once OpenTelemetry is enabled, since the two cannot run at the same time. Not yet available to HIPAA-scoped environments. See [Step 1](#request-access) to get started.
+>This feature is in **Limited Availability**, starting October 19, 2026. To use it, request access by emailing [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) — Adobe enables OpenTelemetry for your environments shortly after replying to your request. If your environment currently uses Adobe's built-in APM integration, that integration stops sending data once OpenTelemetry is enabled, since the two cannot run at the same time. Not yet available to HIPAA-scoped environments. See [Step 1](#request-access) to get started.
 
 ## Benefits of this change {#benefits}
 
