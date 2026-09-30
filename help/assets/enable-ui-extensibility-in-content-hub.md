@@ -68,9 +68,9 @@ Fulfil the following requirements before building UI extensions for [!DNL Conten
 
 ## Add the UI extensibility component to [!DNL Content Hub] {#add-ui-extensibility-content-hub}
 
-> [!IMPORTANT]
+>[!IMPORTANT]
 >
-> Detailed technical documentation for [!DNL Content Hub] UI extensibility is currently available through the Content Hub team because the capability is under **Limited Availability**. Contact the Content Hub team to request access to the documentation.
+>Detailed technical documentation for [!DNL Content Hub] UI extensibility is currently available through the Content Hub team because the capability is under **Limited Availability**. Contact the Content Hub team to request access to the documentation.
 
 ## Extend business workflows in Content Hub {#extend-business-workflows}
 
