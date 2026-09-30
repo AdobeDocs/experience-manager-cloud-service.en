@@ -624,12 +624,13 @@ If you select Adobe Target as the engine:
 |Context Params|Select Add field to configure additional context parameters (same as what is available in Target framework). Context parameters added to the component apply only to the component and not to other component as would be the case if you added context parameters directly to the framework.|
 |Static Params|Select Add field to configure additional static parameters (same as what is available in Target framework). Static parameters added to the component apply only to the component and not to other component as would be the case if you added static parameters directly to the framework. Static parameters do not come from context (client context of content hub).|
 
-   >[!NOTE]
-   >
-   >When you select a component and make it target-able, AEM also replaces the component and injects an Adobe Target component. (The Adobe Target component is not only used when you add it manually to the page, but also when you target an existing component.)
-   >
-   >You select **Adobe Campaign** as the engine if you are integrating AEM with Adobe Campaign. See Integrating AEM with Adobe Campaign for more information.
-   >
-   >Select **ContextHub** as the engine if you are using ContextHub for targeting. See Configuring ContextHub for more information.
-   <!--You select **Adobe Campaign** as the engine if you are integrating AEM with Adobe Campaign. See [Integrating AEM with Adobe Campaign](/help/sites-administering/campaign.md) for more information.-->
-   <!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub](/help/sites-administering/contexthub-config.md).-->
+>[!NOTE]
+>
+>When you select a component and make it target-able, AEM also replaces the component and injects an Adobe Target component. (The Adobe Target component is not only used when you add it manually to the page, but also when you target an existing component.)
+>
+>You select **Adobe Campaign** as the engine if you are integrating AEM with Adobe Campaign. See Integrating AEM with Adobe Campaign for more information.
+>
+>Select **ContextHub** as the engine if you are using ContextHub for targeting. See Configuring ContextHub for more information.
+
+<!--You select **Adobe Campaign** as the engine if you are integrating AEM with Adobe Campaign. See [Integrating AEM with Adobe Campaign](/help/sites-administering/campaign.md) for more information.-->
+<!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub](/help/sites-administering/contexthub-config.md).-->

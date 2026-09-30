@@ -937,7 +937,7 @@ See [Serving static (non-image) contents](https://experienceleague.adobe.com/en/
 
    There are many websites that offer both free and premium tools and services that you can use to author WebVTT caption files outside Dynamic Media.
 
-  Follow the onscreen instructions from a site to author and save your WebVTT file. When you have finished, copy the caption file contents and paste it into a plain text editor and save it with a VTT filename extension.
+   Follow the onscreen instructions from a site to author and save your WebVTT file. When you have finished, copy the caption file contents and paste it into a plain text editor and save it with a VTT filename extension.
 
    >[!NOTE]
    >

@@ -17,10 +17,11 @@ The Implementation Phase includes:
 
 Click your project card so you can open the project landing page and navigate to the **Implementation** section, as shown in the following figure.
 
-   ![Project landing page - Implementation](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
+![Project landing page - Implementation](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
-   >[!NOTE]
-   >See [Creating and Managing a Project in Cloud Acceleration Manager](getting-started-cam.md#create-project) to learn more.
+>[!NOTE]
+>
+>See [Creating and Managing a Project in Cloud Acceleration Manager](getting-started-cam.md#create-project) to learn more.
 
 
 ## Using Local Development Card {#local-development}
@@ -56,8 +57,9 @@ Follow this section so you can explore the Code Refactoring activity card:
    * Dispatcher
    * Testing
 
-  >[!NOTE]
-  >Review the content in these tabs to understand some additional areas that are not covered by the Best Practices Analyzer.
+   >[!NOTE]
+   >
+   >Review the content in these tabs to understand some additional areas that are not covered by the Best Practices Analyzer.
    
    The **Dispatcher** tab provides information on how to structure the AEM as a Cloud Service Apache and Dispatcher configurations, and how to validate and run it locally before deploying to Cloud environments. It also describes debugging in Cloud environments.
    

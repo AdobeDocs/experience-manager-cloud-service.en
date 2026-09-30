@@ -250,7 +250,8 @@ Use secret environment variables when you want to have different secret values p
 
 For details on how to use environment variables, see [Cloud Manager Environment Variables](/help/implementing/cloud-manager/environment-variables.md).
 
-  >[!NOTE]
-  >Using secret environment variables is more cumbersome and involves strict discipline: environment variables are not deployed together with the config pipeline. You must deploy them before running the pipeline, and you must not remove them while the pipeline configuration still references them. This is why pipeline secrets are preferred.
+>[!NOTE]
+>
+>Using secret environment variables is more cumbersome and involves strict discipline: environment variables are not deployed together with the config pipeline. You must deploy them before running the pipeline, and you must not remove them while the pipeline configuration still references them. This is why pipeline secrets are preferred.
 
 

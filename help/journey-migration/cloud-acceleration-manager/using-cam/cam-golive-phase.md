@@ -11,10 +11,11 @@ The Go Live card provides all the relevant content that highlights preparation, 
 
 Click your project card to open the project landing page and navigate to the **Go Live** section, as shown in the figure below.
 
-   ![Go Live](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
+![Go Live](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
-   >[!NOTE]
-   >See [Creating and Managing a Project in Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html#create-project) to learn more.
+>[!NOTE]
+>
+>See [Creating and Managing a Project in Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html#create-project) to learn more.
 
 
 ## Using the Go Live Activity Card {#go-live}
