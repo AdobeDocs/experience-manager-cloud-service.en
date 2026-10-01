@@ -258,10 +258,15 @@ Follow the steps outlined in [apply a workflow model to a folder](#apply-workflo
 
 ## Best practices and limitations {#best-practices-limitations-tips}
 
-* Consider your needs for all types of renditions when designing workflows. If you do not foresee the need of a rendition in the future, remove its creation step from the workflow. Renditions cannot be deleted in bulk afterwards. Undesired renditions may take up large amounts of storage space after prolonged use of [!DNL Experience Manager]. For individual assets, you can remove renditions manually from the user interface. For multiple assets, you can either customize [!DNL Experience Manager] to delete specific renditions or delete the assets and upload them again.
-* Currently, the support is limited to generating renditions. Generating new asset is not supported.
-* Currently, the file size limit for metadata extraction is approximately 15 GB. When uploading very large assets, sometimes the metadata extraction operation fails.
-* It is recommended to limit the number of renditions applied to an asset to fewer than 40, as exceeding this limit can cause requests to be truncated.
+**Best practices**
+
+* Consider your needs for all types of renditions when designing workflows. If you do not foresee the need of a rendition in the future, remove its creation step from the workflow. **Renditions cannot be deleted in bulk afterwards**. Because unused renditions cannot be removed collectively, undesired renditions may accumulate and consume large amounts of storage space after prolonged use of Adobe [!DNL Experience Manager] (AEM). For individual assets, you can remove renditions manually from the user interface. For multiple assets, you can either customize [!DNL Experience Manager] to delete specific renditions or delete the assets and upload them again.
+
+**Current limitations**
+
+* Currently, the support is limited to generating renditions. **Generating new assets is not supported**.
+* The file size limit for metadata extraction is **approximately 15 GB**. When uploading very large assets, the metadata extraction operation can fail for files that exceed this threshold.
+* It is recommended to limit the number of renditions applied to an asset to fewer than 40, as exceeding this limit causes requests to be truncated.
 
 **See also**
 
