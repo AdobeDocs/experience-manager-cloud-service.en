@@ -22,8 +22,21 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming Features {#upcoming-features}
 
-* 
+* Authors can choose custom styles in the in-context rich text editor.
+* Rich text asset selection now supports configured remote asset sources.
+* Asset filters can be configured globally in `filter-definition.json`. 
+* Extensions can customize the properties panel header through a new extension point.
+* Number fields now support custom validation error messages.
+* Text, combo box, and select fields now display configured placeholder text in their components.
+* Select and multiselect menus share consistent sizing behavior that keeps their overlays within the editor area.
 
 ## Upcoming Changes {#upcoming-improvements}
 
-* 
+* Copying content now targets the correct container when multiple containers share the same resource but use different properties.
+* Rich text paragraphs no longer retain unwanted leading non-breaking spaces. 
+* Rich text components were updated to include the paragraph-spacing correction and additional rich text fixes.
+* The component picker sidebar and layout now fill the available height. 
+* Overlay labels no longer wrap over small editable elements.
+* Drag previews for multiple selections stay within the picker's bounds. 
+* Asset reference validation now respects the field's configured filter.
+* With  `FT_SITES-52747` enabled, page updates handle replacements between object and primitive values without the previous type-mismatch crash.

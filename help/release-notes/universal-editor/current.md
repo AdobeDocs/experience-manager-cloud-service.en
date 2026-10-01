@@ -20,14 +20,16 @@ These are the release notes for the 1 October 2026 release of the Universal Edit
 
 ## New Features {#what-is-new}
 
-* A `getPageDom` method was added to the extensibility remote app API, letting connected apps read the current page's rendered DOM.
-* The custom class markers (dashed box and label chip) are now hidden from the in-context rich text editor so they no longer decorate the rendered page. The class picker remains available in both editors.
-* Global ad item actions (add/delete) were added to the select renderer in the canvas.
+* New reference renderers for the [AEM content,](/help/implementing/universal-editor/field-types.md#aem-content) [Content Fragment,](/help/implementing/universal-editor/field-types.md#content-fragment) [Experience Fragment,](/help/implementing/universal-editor/field-types.md#experience-fragment) and [generic reference types](/help/implementing/universal-editor/field-types.md#reference) were added.
+  * Please contact Adobe if you would like to use these new renderers.
+* Extensions can retrieve the page's HTML through the new `getPageDom` API. 
+* Custom CSS class markers are hidden in the in-context rich text editor for a cleaner editing experience.
+* Select fields now support field-level and per-item actions.
 
 ## Other Improvements {#other-improvements}
 
-* The new general reference renderers now fall back to the legacy reference renderers on AEM 6.5, since the new renderers are not yet supported in 6.5.
-* Single reference fields now render as a proper single field and are no longer forced into a multi-field shape when the general asset renderer feature is enabled.
-* Invalid rich text fields in the property rail are now highlighted with a red border.
-* The clear queue button in the debug events panel was repositioned so it aligns with the panel's top.
-* The unpublish action now only reports the target resource itself and no longer includes pages that merely reference it.
+* Unpublishing a page no longer includes other pages that merely reference it.
+* Enabling the new asset picker no longer incorrectly turns single-value reference fields into multifields.
+* Invalid rich text fields now display a red border in the properties panel, with added coverage for required page fields.
+* The clear-queue button is positioned correctly in the debug events panel.
+* Content Fragment reference fields retain their icon, add/delete actions, and required-value checks after release branch reconciliation.
