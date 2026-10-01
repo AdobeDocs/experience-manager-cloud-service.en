@@ -105,21 +105,11 @@ You can send your telemetry to any Application Performance Monitoring vendor tha
 
 This list is not exhaustive — any backend that exposes an OTLP/HTTPS endpoint can be used.
 
-<!-- AUTHOR NOTE (narrowed July 2026): the three OpenTelemetry variants (upstream/Grafana/Splunk) are confirmed against the shipping configuration — no other variant is currently supported. The APM-vendor list, however, is a product/business decision (which vendor names Adobe wants to publicly name), not something derivable from the implementation — still needs sign-off before publishing. -->
+<!-- AUTHOR NOTE (narrowed July 2026): the three OpenTelemetry variants (upstream/Grafana/Splunk) are confirmed against the shipping configuration — no other variant is currently supported. The APM-vendor list has been signed off by Legal via PLA. -->
 
 ## Supported environments {#supported-environments}
 
-You can enable this integration on your Cloud Manager **production**, **stage**, and **development** environments, and on Rapid Development Environments (RDE). Each environment is enabled individually — see [Step 1](#request-access).
-
-On an RDE, deploy your `config/otel.yaml` file with the RDE command line tooling instead of a Config Pipeline — see [Deploy Config Pipeline related configuration](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline-related-configuration-yaml-configurations) — and include `rde` in the file's `envTypes`. Advanced Networking is not available on RDEs, so your APM endpoint must be reachable from the public internet.
-
-<!--
-
-AUTHOR NOTE (2026-09-30): RDE support is based on the operator (Otel kind is RDE-compatible, rde is a
-valid envType) and the platform switch being enabled for the RDE namespace. Not yet validated
-end-to-end on a real RDE - do that before this page is published.
-
--->
+You can enable this integration on your Cloud Manager **production**, **stage**, and **development** environments. Each environment is enabled individually — see [Step 1](#request-access). Rapid Development Environments (RDE) are not supported.
 
 ## Existing APM integrations {#existing-apm}
 
@@ -402,7 +392,7 @@ data:
 
 ### Step 4: Deploy {#deploy}
 
-Once Adobe has confirmed that OpenTelemetry is enabled for your environment (see [Step 1](#request-access)), run your Config Pipeline to deploy `config/otel.yaml`. On an RDE, use the command line tooling described in [Supported environments](#supported-environments). The pipeline validates your configuration and checks your endpoint and credential before applying the configuration, so most mistakes are reported directly in the pipeline log.
+Once Adobe has confirmed that OpenTelemetry is enabled for your environment (see [Step 1](#request-access)), run your Config Pipeline to deploy `config/otel.yaml`. The pipeline validates your configuration and checks your endpoint and credential before applying the configuration, so most mistakes are reported directly in the pipeline log.
 
 After the pipeline completes, traces, metrics, and (if enabled) logs from your AEM application begin to appear in your APM provider. Use [Step 5](#verify) to confirm.
 
