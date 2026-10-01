@@ -22,7 +22,7 @@ For more details see this video.
 
 >[!NOTE]
 >
->The Figma to Visual Content Fragments skill is part of the [xperience Production Agentic Capability.
+>The Figma to Visual Content Fragments skill is part of the Experience Production Agentic Capability.
 
 ## Prerequisites {#prerequisites}
 
