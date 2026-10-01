@@ -27,28 +27,28 @@ Customers with a license with a logging vendor or who host a logging product can
       <td>Yes</td>
       <td>Yes</td>
       <td style="background-color: #ffb3b3;">Future</td>
-      <td>-</td>
+      <td>No</td>
     </tr>
     <tr>
       <td>Azure Blob Storage</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td>-</td>
+      <td>No</td>
     </tr>
     <tr>
       <td>DataDog</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td>-</td>
+      <td>No</td>
     </tr>
     <tr>
       <td>Dynatrace</td>
       <td>Yes</td>
       <td>Yes</td>
       <td style="background-color: #ffb3b3;">Future</td>
-      <td>-</td>
+      <td>No</td>
     </tr>
     <tr>
       <td>ElasticSearch<br>OpenSearch</td>
@@ -69,7 +69,7 @@ Customers with a license with a logging vendor or who host a logging product can
       <td>Yes</td>
       <td>Yes</td>
       <td style="background-color: #ffb3b3;">Future</td>
-      <td>-</td>
+      <td>No</td>
     </tr>
     <tr>
       <td>Splunk</td>
@@ -83,7 +83,7 @@ Customers with a license with a logging vendor or who host a logging product can
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td>-</td>
+      <td>No</td>
     </tr>
   </tbody>
 </table>
@@ -91,10 +91,8 @@ Customers with a license with a logging vendor or who host a logging product can
 >[!NOTE]
 >
 > For upcoming CDN Log Technologies planned for the future, please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to register interest.
-
->[!NOTE]
 >
-> Log Technologies marked **Beta** in the mTLS column support mutual TLS (mTLS), where AEM as a Cloud Service authenticates to your logging destination using a client certificate, in addition to (or instead of) standard token/credential-based authentication. mTLS support is currently in beta; email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access. See [Mutual TLS (mTLS) Authentication](#mtls) for setup details.
+> Log Technologies marked **Beta** in the mTLS column support client certificate authentication (mutual TLS) for AEM, Dispatcher, and CDN logs. mTLS is in beta; to request access, email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com). See [Mutual TLS (mTLS) authentication](#mtls).
 
 Log forwarding is configured in a self-service manner by declaring a configuration in Git, and can be deployed via Cloud Manager config pipelines to dev, stage, and production environment types. The configuration file can be deployed to Rapid Development Environments (RDEs) using command line tooling.
 
@@ -108,7 +106,7 @@ This article is organized in the following way:
 
 * Setup - common for all logging destinations
 * Transport & Advanced Networking - consideration should be given to network setup before creating logging configuration
-* Mutual TLS (mTLS) Authentication - securing log delivery to supported destinations with client certificates
+* Mutual TLS (mTLS) authentication - authenticating to Splunk, Elasticsearch/OpenSearch, and HTTPS destinations with a client certificate (beta)
 * Logging destination configurations - each destination has a slightly different format
 * Log Entry Formats - information about the log entry formats
 * Migrating from legacy log forwarding - how to move from log forwarding previously setup by Adobe to the self-serve approach
@@ -244,49 +242,26 @@ For CDN logs, you can allow-list the IP addresses, as described in [Fastly docum
 >
 >For this reason it is not possible to use Log Forwarding with Advanced Networking VPN configurations.
 
-## Mutual TLS (mTLS) Authentication {#mtls}
-
-In addition to token- or credential-based authentication, some logging destinations support mutual TLS (mTLS), where AEM as a Cloud Service presents a client certificate to your logging endpoint so it can verify the connection is coming from your AEM environment, in addition to (or instead of) any username/token already configured for that destination.
+## Mutual TLS (mTLS) authentication {#mtls}
 
 >[!NOTE]
 >
->mTLS support for Log Forwarding is currently in beta. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access for your program and environment before adding an `mtls` block to your configuration; until access is granted, a configuration containing an `mtls` block will fail validation.
+>mTLS for Log Forwarding is in beta and must be enabled for each environment, including development and stage environments. Until it is enabled, deploying a configuration that contains an `mtls` block fails with an error. To request access, email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) with your program ID and environment IDs.
 
-### Supported Destinations {#mtls-supported}
+Splunk, Elasticsearch/OpenSearch, and HTTPS destinations support mutual TLS (mTLS). With mTLS, AEM as a Cloud Service presents a client certificate when it connects to your logging destination, so the destination can verify that the logs come from your environment. mTLS applies to AEM logs (including Apache/Dispatcher) and to CDN logs.
 
-<table>
-  <tbody>
-    <tr>
-      <th>Log Technology</th>
-      <th>mTLS Support</th>
-    </tr>
-    <tr>
-      <td>Elasticsearch / OpenSearch</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td>Splunk</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td>HTTPS</td>
-      <td>Yes</td>
-    </tr>
-  </tbody>
-</table>
+mTLS works alongside the destination's existing authentication. Keep the destination's existing authentication properties, such as `token` (Splunk) or `user` and `password` (Elasticsearch/OpenSearch). For HTTPS destinations that forward CDN logs, `authHeaderName` and `authHeaderValue` are required.
 
-### Configuration Fields {#mtls-fields}
+### Configuration {#mtls-configuration}
 
-Where supported, mTLS is configured with an additional `mtls` block alongside a destination's existing properties, under `default`, `aem`, or `cdn` as appropriate:
+Add an `mtls` block alongside the destination's other properties:
 
-* `cert` - the client certificate, PEM encoded.
-* `key` - the private key corresponding to the client certificate, PEM encoded.
-* `ca` - the CA bundle used to verify your logging endpoint's server certificate, PEM encoded.
-* `keyPasswd` - optional; the password for the private key, if it is encrypted.
+* `cert` - required. The client certificate, in PEM format. It can be followed by intermediate CA certificates, with the client certificate first.
+* `key` - required. The private key for the client certificate, in PEM format.
+* `ca` - optional. The CA certificate, in PEM format, used to verify your destination's server certificate. It can contain more than one certificate, such as a certificate chain. Set it when the server certificate is issued by a private CA.
+* `keyPasswd` - optional. The password for the private key. Set it only if the key is encrypted.
 
-All four values should be declared as Cloud Manager [Secret Environment Variables](/help/operations/config-pipeline.md#secret-env-vars) rather than stored in Git; see [Adding Certificates to Cloud Manager](#mtls-cloud-manager) below.
-
-### Splunk Example {#mtls-splunk}
+The following example forwards AEM and CDN logs to Splunk using mTLS:
 
    ```yaml
    kind: "LogForwarding"
@@ -304,84 +279,22 @@ All four values should be declared as Cloud Manager [Secret Environment Variable
            ca: "${{SPLUNK_MTLS_CA}}"
    ```
 
-### Elasticsearch and OpenSearch Example {#mtls-elastic}
+The following rules apply:
 
-   ```yaml
-   kind: "LogForwarding"
-   version: "1"
-   data:
-     elasticsearch:
-       default:
-         enabled: true
-         host: "example.com"
-         user: "${{ELASTICSEARCH_USER}}"
-         password: "${{ELASTICSEARCH_PASSWORD}}"
-         pipeline: "ingest pipeline name"
-         mtls:
-           cert: "${{ELASTICSEARCH_MTLS_CERT}}"
-           key: "${{ELASTICSEARCH_MTLS_KEY}}"
-           ca: "${{ELASTICSEARCH_MTLS_CA}}"
-   ```
+* `cert` and `key` must be provided together. An `mtls` block that contains only `ca` or `keyPasswd` is rejected.
+* Each `mtls` property must be a secret reference, such as `${{SPLUNK_MTLS_CERT}}`, and nothing else. Certificate or key text placed directly in the file is rejected.
+* Declare each secret as a Cloud Manager [Secret Environment Variable](/help/operations/config-pipeline.md#secret-env-vars), as described in [Setup](#setup). Paste the complete PEM text, including the `-----BEGIN` and `-----END` lines. If the line breaks are removed when you paste the value into Cloud Manager, they are restored automatically. To provide more than one certificate, paste them one after another in the same secret.
+* The client certificate is checked when you deploy. It must be valid PEM and within its validity period. If `cert` contains more than one certificate, the client certificate must come first and the certificates must form a valid chain. If a check fails, the deployment fails.
 
->[!NOTE]
->
->Elasticsearch and OpenSearch still accept `user`/`password` alongside `mtls`. Whether both are required, or the client certificate alone is sufficient, depends on how your cluster's security settings are configured.
+#### CDN logs {#mtls-cdn}
 
-### HTTPS Example {#mtls-https}
+Like other properties, an `mtls` block under `default` applies to both AEM logs and CDN logs. To use a different certificate for CDN logs, set the `mtls` properties in a `cdn` block. To use mTLS for only AEM logs or only CDN logs, place the `mtls` block in the `aem` or `cdn` block instead of `default`.
 
-   ```yaml
-   kind: "LogForwarding"
-   version: "1"
-   data:
-     https:
-       default:
-         enabled: true
-         url: "https://example.com/aem_logs/aem"
-         authHeaderName: "X-AEMaaCS-Log-Forwarding-Token"
-         authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
-         mtls:
-           cert: "${{HTTPS_MTLS_CERT}}"
-           key: "${{HTTPS_MTLS_KEY}}"
-           ca: "${{HTTPS_MTLS_CA}}"
-   ```
+### Certificate rotation and expiry {#mtls-rotation}
 
->[!NOTE]
->
->The `mtls` block can be used together with, or instead of, the `authHeaderName`/`authHeaderValue` token-based header.
+To rotate a certificate, update the Cloud Manager secret environment variables that hold the certificate (and the key, if it changed), then re-run the config pipeline. If the log forwarding configuration file itself is unchanged, also make a change to it so that the configuration is applied again. For example, store the new values in new secret environment variables and reference those names in the `mtls` block.
 
-### Using mTLS with Advanced Networking {#mtls-advnet}
-
-mTLS can be combined with [Advanced Networking](#transport-advancednetworking) - for example, to route AEM logs through a Dedicated Egress IP while also authenticating with a client certificate:
-
-   ```yaml
-   kind: "LogForwarding"
-   version: "1"
-   data:
-     elasticsearch:
-       default:
-         enabled: true
-         host: "example.com"
-         port: 443
-         user: "${{ELASTICSEARCH_USER}}"
-         password: "${{ELASTICSEARCH_PASSWORD}}"
-         pipeline: "ingest pipeline name"
-         mtls:
-           cert: "${{ELASTICSEARCH_MTLS_CERT}}"
-           key: "${{ELASTICSEARCH_MTLS_KEY}}"
-           ca: "${{ELASTICSEARCH_MTLS_CA}}"
-       aem:
-         advancedNetworking: true
-   ```
-
-### Adding Certificates to Cloud Manager {#mtls-cloud-manager}
-
-Certificates and keys are declared the same way as any other secret referenced in `logForwarding.yaml`: as Cloud Manager [Secret Environment Variables](/help/operations/config-pipeline.md#secret-env-vars), never committed to Git. Create one secret environment variable per token used above (for example `SPLUNK_MTLS_CERT`, `SPLUNK_MTLS_KEY`, `SPLUNK_MTLS_CA`), and as with other Log Forwarding secrets, select **All** as the dropdown value for the Service Applied field so the certificate is available to author, publish, and preview tiers.
-
-When pasting certificate and key material into a secret's value field:
-
-* Paste the entire PEM block exactly as it appears in the source file, including the `-----BEGIN CERTIFICATE-----`/`-----END CERTIFICATE-----` (or `-----BEGIN PRIVATE KEY-----`/`-----END PRIVATE KEY-----`) marker lines.
-* If your CA is a bundle of more than one certificate, paste all certificates one after another, each with its own BEGIN/END markers.
-* Only set `keyPasswd` if the private key itself is encrypted; leave it unset (or omit the property) for an unencrypted key.
+You may also receive a proactive [Actions Center](/help/operations/actions-center.md) notification about 21 days before a client certificate expires. Track certificate expiry dates yourself rather than relying on this notification.
 
 ## Logging Destination Configuration {#logging-destinations}
 

@@ -451,9 +451,9 @@ To join the Beta Program, email [aem-devagent@adobe.com](mailto:aem-devagent@ado
 
 #### mTLS Authentication for Log Forwarding (Beta Program) {#mtls-log-forwarding-beta}
 
-Log Forwarding now supports mutual TLS (mTLS) for Splunk, Elasticsearch (and OpenSearch), and HTTPS destinations. AEM presents a client certificate to your logging endpoint so it can verify the connection is coming from your AEM environment, in addition to (or instead of) any existing username/token authentication.
+Log Forwarding now supports mutual TLS (mTLS) client certificate authentication for Splunk, Elasticsearch/OpenSearch, and HTTPS destinations, for both AEM logs (including Apache/Dispatcher) and CDN logs. AEM as a Cloud Service presents a client certificate when it connects to your logging destination, so the destination can verify that the logs come from your environment.
 
-To join the Beta Program, email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access before adding an `mtls` block to your configuration. Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md#mtls).
+mTLS is in beta and must be enabled for each environment, including development and stage environments. To join the Beta Program, email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) with your program ID and environment IDs. Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md#mtls).
 
 ## [!DNL Experience Manager] Guides {#guides}
 
