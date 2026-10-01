@@ -319,6 +319,7 @@ Follow the steps outlined in [apply a workflow model to a folder](#apply-workflo
 
 * Currently, the support is limited to generating renditions. **Generating new assets is not supported**.
 * The file size limit for metadata extraction is **approximately 15 GB**. When uploading very large assets, the metadata extraction operation can fail for files that exceed this threshold.
+* It is recommended to limit the number of renditions applied to an asset to fewer than 40, as exceeding this limit causes requests to be truncated.
 
 **See also**
 
