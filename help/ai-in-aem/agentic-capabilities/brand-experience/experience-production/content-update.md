@@ -21,4 +21,4 @@ For more details see:
 
 >[!NOTE]
 >
->The Content Update skill is part of the [Experience Production Agentic Capability](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/overview.md).
+>The Content Update skill is part of the Experience Production Agentic Capability.
