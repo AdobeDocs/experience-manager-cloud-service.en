@@ -99,54 +99,6 @@ For more abstract prompts such as:
 
 During generation the agent will utilize the brand guidelines to ensure that the output is on-brand.
 
-## Jira {#jira}
-
-Using the content update job with Jira allows you to create a ticket with instructions that automate your edits.
-
-### Create a Ticket {#create-a-ticket}
-
-Create a Jira ticket (of any type). There are two essential details needed in the **Description** field of your ticket:
-
-1. The public facing URL of the page you need to edit.
-
-1. The changes needed. 
-
-   The job supports the following range of formats to describe your changes:
-
-   * Natural Language in the ticket description
-     * for example "Change the headline from X to Y"
-   * Annotated PDF attached
-     * for example, create a PDF of your page and add annotations detailing what you want changed
-   * Comments in attached PDF
-     * for example, create a PDF of your page and add comments detailing what you want changed
-   * Annotated screenshot attached
-     * for example, take a screenshot of part of your page and add annotations detailing what you want changed
-   * Microsoft Word file attached, containing natural language changes
-
-### Invoke the Job from Your Ticket {#invoke-the-job-from-your-ticket}
-
-To use the job, add a comment to your ticket. In the comment mention the job with the `@` symbol, together with the instructions.
-
-For example:
-
-* `@aemagent@adobe.com process this ticket`
-
-### How the Job Interacts {#how-the-agent-interacts}
-
-After you issue a command to the job, it responds with comments in the Jira. The comments detail the job's progress, and actions taken.
-
-In the case of a `process` command to trigger updates, the responses might follow the sequence:
-
-* The initial comment confirms that the job has started.
-
-* Once the task is completed, the job responds with another comment containing details of the actions taken. 
-  * The content updates made by the job are non-destructive - this means that they are made to a preview instance. 
-  * The comment contains links to the updates, so that you can review and publish as required, or assign the Jira to whoever will be responsible.
-
-* The following image shows an example Jira that triggers the `process`command for the content update job:
-
-  ![Example Jira using the content update job of the Brand Experience Agent](assets/content-update-jira-example.png)
-
 ## Further refinement in authoring {#further-refinement-in-authoring}
 
 After you choose to edit the page in AEM, it opens in your authoring environment (for example, the [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) or the [Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md)).

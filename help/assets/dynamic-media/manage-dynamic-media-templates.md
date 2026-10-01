@@ -5,6 +5,12 @@ hide: true
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 
 # Manage [!DNL Dynamic Media] templates{#dynamic-media-templates}
@@ -115,9 +121,9 @@ Execute these steps to create a blank canvas:
 Click ![template to create flyers rapidly](/help/assets/assets/show-layers-list.svg) and select more options (![](/help/assets/assets/three-dots.svg)) on the Canvas layer to edit the canvas dimensions anytime while creating the template.
 ![](/help/assets/assets/edit-canvas1.png)
 
-   >[!NOTE]
-   >
-   > Templates allow a maximum of 20 layers, including the Canvas.
+>[!NOTE]
+>
+> Templates allow a maximum of 20 layers, including the Canvas.
 
 ### Add images to the canvas{#add-images-to-the-canvas}
 

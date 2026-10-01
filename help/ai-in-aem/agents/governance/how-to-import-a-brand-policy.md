@@ -9,77 +9,89 @@ exl-id: 8057e82b-36d4-4280-b433-f26cfcfe9fe6
 
 ## Overview {#overview}
 
-A brand policy defines the rules, standards, and constraints that ensure all content produced or updated by Adobe Experience Manager remains consistent with a company's brand identity. This typically includes tone of voice, terminology, visual guidelines, and editorial rules.
+[Experience Context](/help/ai-in-aem/agents/governance/experience-context.md) provides Adobe Experience Manager (AEM) agents with organization-specific knowledge and guidance, enabling them to understand the context in which they operate. It can capture brand identity, tone of voice, terminology, editorial guidance, and other standards that are important for creating consistent and relevant experiences.
 
-The Governance Agent uses brand policies as a source of truth to analyze existing pages and guide content generation. Customers can provide their own original brand policies, which the Governance Agent automatically converts into AI-readable policy checks. These checks are then used to validate content and to provide the Production Agent with a reliable, enforceable framework to generate or update pages that remain aligned with the brand.
+Importing a brand policy is one way to establish this Experience Context in AEM. The Governance Agent processes your organization's existing brand policy and transforms it into structured, precise, and actionable context. From this context, the Governance Agent can derive [governance checks](/help/ai-in-aem/agents/governance/experience-context.md#checks) to evaluate content against specific brand requirements.
 
->[!NOTE]
->
->Importing a brand policy is one way to populate your [Enterprise Context](/help/ai-in-aem/agents/governance/enterprise-context.md), the shared set of rules the agents use to generate and validate on-brand content.
+Experience Context goes beyond governance checks. Once established, it can provide AI-powered and agentic capabilities with the relevant and targeted context they need for a given task. This enables agents to use the appropriate brand guidance when generating, updating, or evaluating content, rather than relying on generic instructions or the complete brand policy for every interaction.
 
 ## What is a Brand Policy in the Governance Agent {#what-is-a-brand-policy-in-the-governance-agent}
 
-In the context of the Governance Agent, a brand policy is a structured representation of your brand rules that can be understood and enforced by AI. Rather than requiring customers to rewrite their guidelines in a technical format, the Governance Agent accepts brand policies in their original form (for example, documents, guidelines, or rule descriptions).
+A brand policy contains the principles, guidelines, and requirements that define how your organization's brand should be represented, including tone of voice, terminology, messaging, visual identity, and other brand-specific guidance.
 
-Once imported, the policy is transformed into a set of AI policy checks that can:
+When a brand policy is imported, the Governance Agent analyzes its content and transforms the relevant guidance into structured [Experience Context](/help/ai-in-aem/agents/governance/experience-context.md). This makes the information easier for AI-powered and agentic capabilities to consume and apply to specific tasks.
 
-* Analyze existing pages to detect brand inconsistencies
-* Flag deviations from tone, terminology, or mandatory rules
-* Provide clear guidance to downstream agents
-* Ensure that generated or updated content remains brand-compliant by design
+As part of this process, the Governance Agent derives [governance checks](/help/ai-in-aem/agents/governance/experience-context.md#checks) from the Experience Context. These checks translate specific brand requirements into actionable criteria that can be used to evaluate content for brand compliance.
+
+Experience Context itself remains broader than these checks. It provides a reusable source of precise brand knowledge that can be segmented and surfaced according to the needs of different agentic workflows.
 
 This approach allows teams to reuse their existing brand documentation while benefiting from automated governance and scalable content production.
 
 ## How Brand Policies are Used {#how-brand-policies-are-used}
 
-After a brand policy is imported:
+After a brand policy is imported and processed, the resulting Experience Context can be used across AI-powered and agentic workflows in AEM.
 
-* The Governance Agent interprets and normalizes the policy into enforceable AI checks
-* Pages can be analyzed against the policy to identify gaps or violations
-* The Production Agent uses these checks as constraints when generating or updating content
-* Brand compliance becomes consistent, repeatable, and auditable across sites and teams
+Experience Context enables agents to retrieve and apply the specific brand knowledge that is relevant to the task they are performing, rather than relying on the complete brand policy for every interaction. Agents select the appropriate context based on the brand, content, or task at hand.
 
+For governance use cases, the Governance Agent derives actionable [checks](/help/ai-in-aem/agents/governance/experience-context.md#checks) from this context. These checks can be used to:
+
+* Analyze existing content and identify brand inconsistencies
+* Flag deviations from specific brand requirements
+* Provide actionable guidance for content updates
+* Help ensure generated or updated content remains aligned with the brand
+
+Beyond governance, Experience Context can also provide other AI-powered and agentic capabilities with precise, relevant brand guidance when generating, updating, or evaluating content.
 
 ## Import a Brand Policy {#import-a-brand-policy}
 
 To import a brand into the Governance Agent:
 
-1. Create a brand, by giving a name and a main domain. You can do this by clicking on the **Governance Context** button on the left hand navigation in your Experience Manager home, then press the **+ Add Brand** button, as shown below:
+1. In AEM, select **Experience Context** from the left navigation. The Experience Context console displays the brands available in your organization. To create Experience Context for a new brand, select **+ Add Brand**.
 
-   ![Adding a new brand](/help/ai-in-aem/agents/governance/assets/add_brand.png){width="70%"}
+   ![The Experience Context console](/help/ai-in-aem/agents/governance/assets/experience_context_console.png){width="70%"}
 
-1. Set the name of the brand and a description in the following window
+1. In the **Add brand** dialog, enter the information used to establish the brand and its initial Experience Context:
 
-   ![Naming the brand](/help/ai-in-aem/agents/governance/assets/add_brand_dialogue.png){width="60%"}
+   * **Name** — Enter the name of the brand. This field is required.
+   * **Description** — Optionally provide a description of the brand.
+   * **Domain** — Optionally specify the primary website URL associated with the brand.
+   * **Brand guideline document** — upload an existing brand guideline in PDF format. The Governance Agent analyzes the document to extract key brand information and uses it to establish structured context for the brand.
 
-1. New brands are created in draft status. Make sure you change your newly created brand to an Active status, by clicking on your brand's card, pressing the edit (pencil) in the top right corner of the screen, set the **Status** to **Active** in the following window, and click **Save Changes**. You need to enable the brands by setting them to Active before being able to use them.
+   You can drag and drop the brand guideline document, or select **Browse files** to choose it. When finished, select **Add brand**.
+
+   ![The Add brand dialog](/help/ai-in-aem/agents/governance/assets/add_brand_dialog.png){width="60%"}
+
+1. New brands are created in draft status. Make sure you change your newly created brand to an Active status by clicking on your brand's card, pressing the edit (pencil) icon in the top right corner of the screen, setting the **Status** to **Active** in the following window, and clicking **Save Changes**. You need to enable the brands by setting them to Active before being able to use them.
 
    ![Set the brand's status to Active](/help/ai-in-aem/agents/governance/assets/set_brand_active.png){width="60%"}
 
-1. Once the brand is created, create a main domain in the following window by pressing the **Domains** link on the left:
+1. To manage the domains associated with a brand, open the brand and select **Enterprise Knowledge**, then select **Domains** in the left navigation. The **Allowed Domains** section lists the domains associated with the brand. From here, you can add a new domain by entering its URL and selecting **Add Domain**, edit an existing domain, or delete a domain that is no longer needed. Wildcards are supported for subdomains. For example, `*.example.com` allows subdomains of `example.com`.
 
-   ![Configuring a domain for the brand](/help/ai-in-aem/agents/governance/assets/add_domain.png)
+   ![Managing a brand's allowed domains](/help/ai-in-aem/agents/governance/assets/manage_allowed_domains.png){width="70%"}
 
    >[!IMPORTANT]
    >
-   >Just like new brands, new domains are created with a default Draft status. To change this, go to your Brand, click on **Domains**, then edit your domain using the pencil icon and set its status to **Active**. 
+   >Just like new brands, new domains are created with a default Draft status. To change this, edit your domain using the pencil icon and set its status to **Active**.
 
-1. After you've configured the main domain, you can upload your brand policy document by goint to **Policies** in the upper left corner of the window, and pressing the **+ Add Policy** button.
+1. After configuring your brand, you can add a brand policy by opening the brand, selecting **Enterprise Knowledge**, then **Policies**, and pressing **+ Add Policy**.
 
-   ![Adding a policy from the Brand card](/help/ai-in-aem/agents/governance/assets/add_policy_treeview.png)
+   ![Adding a policy from Enterprise Knowledge](/help/ai-in-aem/agents/governance/assets/add_policy_enterprise_knowledge.png){width="70%"}
 
-   >[!NOTE]
-   >
-   >Alternatively, you can also add policies by switching over to the **Policies** tab and pressing the **+ Add Policy** link.
+1. Pressing **+ Add Policy** opens the **Add context** dialog, where you provide the actual policy content: a **Context page URL**, a PDF document, or both:
 
-1. In the next window, press on **Upload PDFs** and select your brand policy document(s) in PDF format
+   * **Context page URL** — Specify the public page where the relevant context or policy is available.
+   * **Upload PDF** — Upload a PDF containing the brand guidelines or policy information that you want to add to the brand's Experience Context.
 
-   ![Upload your brand policy document](/help/ai-in-aem/agents/governance/assets/upload_brand_policy_document.png){width="70%"}
+   Select **Add context** to start processing the information.
 
-   The Governance Agent will parse your brand policy guideline using natural lanuguage, and it will extract the checks obtained from the document and translate them into actual tasks. Once the document is processed, you can view a summary of the import, including the number of checks and the status of the policy, as shown below:
+   ![The Add context dialog](/help/ai-in-aem/agents/governance/assets/add_context_dialog.png){width="60%"}
 
-   ![An overview window of the brand policy status](/help/ai-in-aem/agents/governance/assets/policy_status.png)
+   The Governance Agent analyzes the submitted document or page using natural language, and extracts the checks obtained from it, translating them into actual tasks. This processing can take some time; you can return to the **Policies** view to check the status. Once processing is complete, the policy is displayed with its status and the number of governance checks linked to it, as shown below:
 
+   ![An overview of the brand policy status, including linked checks](/help/ai-in-aem/agents/governance/assets/policy_status_linked_checks.png)
+
+<!--
+Alexandru: commenting out for now
 1. Once your brand is created, and your policy document is uploaded, you can get a detailed per-brand view by going to the **Brands** tab, and clicking on a brand's card. This is the view you'll want to use for creating cagtegories of checks, by pressing the three dots next to an existing category, and selecting **+ Add Category**, as shown in the screenshot below:
 
    ![Add category](/help/ai-in-aem/agents/governance/assets/add_category.png)
@@ -110,10 +122,11 @@ To import a brand into the Governance Agent:
    * The scope(s) it applies to
 
    ![Configuring the check details](/help/ai-in-aem/agents/governance/assets/add_check_window.png)
+-->
 
-1. Lastly, for a list of domains and the brands they are associated with, you can press the **Domains** tab. This section will allow you to add, delete or modify domains in your list.
+For details on how checks are created, categorized, and managed, see the [Checks](/help/ai-in-aem/agents/governance/experience-context.md#checks) section of Experience Context.
 
 ## Related topics {#related-topics}
 
-* [Enterprise Context](/help/ai-in-aem/agents/governance/enterprise-context.md)
+* [Experience Context](/help/ai-in-aem/agents/governance/experience-context.md)
 * [Governance Agent overview](/help/ai-in-aem/agents/governance/overview.md)

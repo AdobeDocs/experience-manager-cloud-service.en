@@ -12,38 +12,57 @@ feature: Asset Management, Publishing, Collaboration, Asset Processing
 
 <!-- TBD: The options in left sidebar may change. Shared with me and Shared by me are missing for now. Update this section as UI is updated. -->
 
+
+
+
+
+
+
 ## Understand the [!DNL Assets view] user interface {#understand-interface-navigation}
 
-[!DNL Assets view] offers an intuitive and user-friendly user interface. The clean interface makes assets and related information easy to find and remember.
+[!DNL Assets view] provides a clean, organized user interface that makes assets and related information easy to locate, browse, and manage. The layout is designed so that both frequently used actions and navigation controls remain readily accessible.
 
-When you log into [!DNL Assets view], you see the following interface.
+When you log into [!DNL Assets view], the following interface elements are displayed.
 
-![[!DNL Assets view] user interface](assets/assets-view-interface.png)
+### [!DNL Assets view] interface elements
 
-**A**: Left sidebar to browse repository and provides access to a few other options **B**: Display or collapse the left sidebar to increase asset-viewing area **C**: Filter search results **D**: Select all contents of the selected folder **E**: Options to sort assets **F**: Search box **G**: Upload or drag and drop files using `Add Assets` button **H**: Create a new folder **I**: Switch between different views
+The interface is organized around a set of labeled controls, each mapped to a specific navigation or asset-management task:
+
+![Assets view user interface](assets/assets-view-interface.png)
+
+- **A — Left sidebar**: Browse the repository and access additional navigation options.
+- **B — Sidebar toggle**: Display or collapse the left sidebar to increase the **asset-viewing area**, so you can focus on the content itself.
+- **C — Filter**: Filter search results to narrow down displayed assets.
+- **D — Select all**: Select all contents of the currently selected folder in a single action.
+- **E — Sort options**: Choose how assets are ordered within the view.
+- **F — Search box**: Search for assets across the repository.
+- **G — Add Assets**: Upload or drag and drop files using the **`Add Assets`** button.
+- **H — New folder**: Create a new **folder** to organize assets.
+- **I — View switcher**: Switch between different views to change how assets are presented.
 
 <!-- TBD: Need an embedded video here with narration. It has to be hosted on MPC to be embeddable. -->
 
 ## Browse and view assets and folders {#browse-repository}
 
-You can browse the folders from the main user interface or from the left sidebar. Experience Manager Assets displays visual previews of folder contents on the folder thumbnail when browsing or searching for content. This improves the discoverability of assets available within AEM Assets repository. This folder thumbnail saves your time spent on searching specific assets within a folder in AEM Assets repository.
+You can browse the folders from the main user interface or from the left sidebar. Experience Manager Assets displays visual previews of folder contents on the folder thumbnail when browsing or searching for content. These visual previews improve the discoverability of assets stored within the Adobe Experience Manager (AEM) Assets repository. The folder thumbnail reduces the time spent locating specific assets within a folder, because you can identify relevant content visually before opening the folder.
+
 When browsing through assets in a folder, you can use the interface to view asset thumbnails to visually browse the repository or view asset details to quickly find the asset you want. The options available in the left sidebar are:
 
-* [My Workspace](/help/assets/my-workspace-assets-view.md): Assets now includes a customizable workspace that provides widgets for convenient access to key areas of the Assets user interface and information that is most relevant to you. This page serves as a one-stop solution to provide an overview of your work items and to give quick access to key workflows. More convenient access to these options increases your efficiency and content velocity.
+* [My Workspace](/help/assets/my-workspace-assets-view.md): Assets now includes a customizable workspace that provides widgets for convenient access to key areas of the Assets user interface and information that is most relevant to you. This page serves as a one-stop solution to provide an overview of your work items and to give quick access to key workflows. This convenient, centralized access increases your efficiency and accelerates content velocity.
 * [Tasks](/help/assets/my-workspace-assets-view.md): You can view the tasks assigned to you under **My tasks** tab. Whereas, the tasks that are created by you can be viewed under **Assigned tasks** tab. Also, the tasks that you complete are located under **Completed tasks** tab.
 * [Assets](/help/assets/manage-organize-assets-view.md): List of all folders in a tree view, that you have access to.
 * **Recently Viewed**: List of assets that you previewed recently. [!DNL Assets view] displays only the assets that you preview. It does not display the assets that you scroll past when browsing the repository files or folders.
-* [Collections](/help/assets/manage-collections-assets-view.md): A collection is a set of assets, folders, or other collections within Adobe Experience Manager Assets view. Use collections to share assets between users. Unlike folders, a collection can include assets from different locations. You can share multiple collections with a user. Each collection contains references to assets. The referential integrity of assets is maintained across collections.
+* [Collections](/help/assets/manage-collections-assets-view.md): A collection is a set of assets, folders, or other collections within Adobe Experience Manager [!DNL Assets view]. Use collections to share assets between users, which streamlines collaboration across teams. Unlike folders, a collection can include assets from different locations. You can share multiple collections with a user. Each collection contains references to assets. The referential integrity of assets is maintained across collections.
 
-* [Insights](/help/assets/manage-reports-assets-view.md#view-live-statistics): In [!DNL Assets view], you can view real-time insights on your dashboard. Assets view enables you to view real-time data for your Assets view environment with the Insights dashboard. You can view real-time event metrics during the last 30 days or for the last 12 months. 
+* [Insights](/help/assets/manage-reports-assets-view.md#view-live-statistics): In [!DNL Assets view], you can view real-time insights on your dashboard. [!DNL Assets view] enables you to view real-time data for your [!DNL Assets view] environment with the Insights dashboard. You can view real-time event metrics for the **last 30 days** or the **last 12 months**.
 
 * **Trash**: List the assets deleted from the root **[!UICONTROL Assets]** folder. You can select an asset in the Trash folder to restore it to its original location or permanently delete it. You can specify a keyword or apply filters such as asset status, file type, mime type, image size, asset creation, modification, and expiration dates, as well as filtering by assets discarded by the current user. You can also apply custom filters to search appropriate assets within the Trash folder.
 
    The assets are not deleted automatically from the Trash folder. You need to delete them manually.
 
-   For more information on using standard and custom filters, see how to [search assets in Assets view](/help/assets/search-assets-view.md).
+   For more information on using standard and custom filters, see how to [search assets in [!DNL Assets view]](/help/assets/search-assets-view.md).
 
-* **Settings**: You can configure various options of Assets view using **Settings**, such as, Metadata forms, Reports, and Taxonomy Management.
+* **Settings**: You can configure various options of [!DNL Assets view] using **Settings**, such as, Metadata forms, Reports, and Taxonomy Management.
 
 <!--
  TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
@@ -56,7 +75,7 @@ When browsing through assets in a folder, you can use the interface to view asse
 
 You can open or collapse the left sidebar to increase the available asset-viewing area.
 
-In [!DNL Assets view], you can view assets, folders, and search results in four different types of layouts.
+In [!DNL Assets view], you can view assets, folders, and search results in **four** different layout types. Each layout supports a distinct browsing preference, from dense listings to visual, image-forward displays:
 
 * ![list view icon](assets/do-not-localize/list-view.png) [!UICONTROL List View]
 * ![grid view icon](assets/do-not-localize/grid-view.png) [!UICONTROL Grid View]
@@ -73,19 +92,47 @@ To navigate in a folder, double-click the folder's thumbnails or select the fold
 
 ## Preview assets {#preview-assets}
 
-Before you use, share, or download an asset, you can view it more closely. The preview feature lets you view not just the images but a few other supported asset types.
+Before you use, share, or download an asset, view it more closely first. The preview feature displays not only images but also several other supported asset types, so you can confirm you have the correct file before committing to an action.
 
-To preview an asset, select it and click [!UICONTROL Details] ![details icon](assets/do-not-localize/edit-in-icon.png) from the toolbar at the top. You cannot only view the asset but also view its detailed metadata and take other actions.
+### Preview an asset
+
+To preview an asset:
+
+1. Select the asset you want to inspect.
+2. Click [!UICONTROL Details] ![details icon](assets/do-not-localize/edit-in-icon.png) from the toolbar at the top.
+
+In the preview, you not only view the asset but also inspect its detailed metadata and perform additional actions such as assigning tasks, commenting, annotating, and managing versions and renditions — all without leaving the preview screen.
 
 ![Preview an asset](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A**: Return to the current folder or current search result in the repository **B**: Name and format for the file you are previewing **C**: Assign tasks **D**: Advanced metadata **E**: Keywords and smart tags **F**: Comment and annotate **G**: View tasks related to the selected Asset **H**: [View and manage versions](/help/assets/manage-organize-assets-view.md#versions-of-assets) **I**: View renditions of the image **J**: Edit image **K**: View Dynamic Media renditions including Smart Crop and Dynamic Media with OpenAPI capabilities renditions. **L**: Basic metadata **M**: Advanced metadata **N**: Keywords and smart tags **O**: Proceed to previous or next asset in the current folder without going back to the folder **P**: Preview more closely. Zoom, full screen, and other options.
+### Preview toolbar options (A–P)
 
-You can also preview videos.
+The preview toolbar provides the following controls and panels:
+
+- **A**: Return to the current folder or current search result in the repository.
+- **B**: Name and format for the file you are previewing.
+- **C**: Assign tasks.
+- **D**: Advanced metadata.
+- **E**: Keywords and smart tags.
+- **F**: Comment and annotate.
+- **G**: View tasks related to the selected asset.
+- **H**: [View and manage versions](/help/assets/manage-organize-assets-view.md#versions-of-assets).
+- **I**: View renditions of the image.
+- **J**: Edit image.
+- **K**: View Dynamic Media renditions, including Smart Crop and Dynamic Media with OpenAPI capabilities renditions.
+- **L**: Basic metadata.
+- **M**: Advanced metadata.
+- **N**: Keywords and smart tags.
+- **O**: Proceed to the previous or next asset in the current folder without going back to the folder.
+- **P**: Preview more closely. Zoom, full screen, and other options.
 
 ![Video preview](assets/preview-video.png)
 
-If you explicitly preview an asset, then [!DNL Assets view] displays it as a recently viewed asset.
+### Preview videos and recently viewed assets
+
+You can also preview videos, not just static images.
+
+When you explicitly preview an asset, [!DNL Assets view] records it and displays it as a recently viewed asset, making it easier to return to files you have recently opened.
 
 <!--
  TBD: Describe the options.
@@ -96,11 +143,13 @@ Other use cases after previewing.
 
 ## Next Steps {#next-steps}
 
-* Provide product feedback using the [!UICONTROL Feedback] option available on the Assets view user interface
+After managing asset versions, take the following actions to share input, resolve issues, and continue building expertise with **[!DNL Assets view]**:
 
-* Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar
+* Provide product feedback using the [!UICONTROL Feedback] option available on the [!DNL Assets view] user interface to help improve the product experience and shape future capabilities
 
-* Contact [Customer Care](https://experienceleague.adobe.com/?support-solution=General#support)
+* Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar, allowing contributors to suggest corrections, clarify instructions, or report gaps in the documentation
+
+* Contact [Customer Care](https://experienceleague.adobe.com/?support-solution=General#support) for assistance with technical issues, account questions, or additional support
 
 >[!MORELIKETHIS]
 >
@@ -108,6 +157,8 @@ Other use cases after previewing.
 
 
 **See also**
+
+Explore these related [!DNL Assets view] topics to translate, manage, search, and publish digital assets more effectively:
 
 * [Translate Assets](/help/assets/translate-assets.md)
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
@@ -119,9 +170,8 @@ Other use cases after previewing.
 * [Download assets](/help/assets/download-assets-from-aem.md)
 * [Manage metadata](/help/assets/manage-metadata.md)
 * [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
-* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Manage reports in [!DNL Assets view]](/help/assets/manage-reports-assets-view.md)
 * [Search facets](/help/assets/search-facets.md)
 * [Manage collections](/help/assets/manage-collections.md)
 * [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
-
