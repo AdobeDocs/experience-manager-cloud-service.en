@@ -80,7 +80,7 @@ For light authentication use cases including business stakeholders reviewing con
 
 ### CDN egress IP addresses {#cdn-egress-ips}
 
-The AEM-managed CDN is powered by Fastly. Its egress IP addresses are managed entirely by Fastly and may change. Monitor [Fastly's public IP list](https://api.fastly.com/public-ip-list) for changes; see the [Fastly Public IP List documentation](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/) for details.
+The AEM-managed CDN's egress IP addresses may change over time. Monitor the [public IP list](https://api.fastly.com/public-ip-list) for changes; see the [Public IP List documentation](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/) for details.
 
 >[!CAUTION]
 >
