@@ -17,11 +17,16 @@ role: User, Admin, Developer
 
 The Agentic Capabilities of Adobe Experience Manager (AEM) as a Cloud Service collaborate with [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) to let you query, analyze, and act on your Experience Platform data using natural language instead of navigating multiple UIs or writing queries by hand.
 
-A selection of agentic capabilities are available in AEM:
+A selection of agentic capabilities and skills are available in AEM:
 
 * Brand Experience
 
-  * [Experience Production](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/overview.md)
+  * Experience Production
+
+    * [Content Create](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/content-create.md)
+    * [Content Update](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/content-update.md)
+    * [Figma to Visual Content Fragments Skill](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/figma-to-visual-content-fragments.md)
+
   * [Development](/help/ai-in-aem/agentic-capabilities/brand-experience/development/use-cases.md)
   * [Onboarding](/help/ai-in-aem/agentic-capabilities/brand-experience/onboarding/use-cases.md)
 

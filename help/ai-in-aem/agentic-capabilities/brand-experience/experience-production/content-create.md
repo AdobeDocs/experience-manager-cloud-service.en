@@ -5,7 +5,7 @@ feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 ---
 
-# Content Create {#content-create}
+# Content Create Skill {#content-create}
 
 Content Create generates new, on-brand Adobe Experience Manager (AEM) pages in minutes, so accelerating time to market. It uses a natural language prompt together with a marketing brief to provide guidance, and an AEM reference page as a template for the layout. 
 
