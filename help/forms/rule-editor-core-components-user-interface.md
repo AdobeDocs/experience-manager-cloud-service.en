@@ -153,13 +153,13 @@ To write rules, perform the following steps:
 1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
 
    ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png)
-   -->
+-->
 
-   >[!NOTE]
-   >
-   > Alternatively, you can write a Show rule on the Spouse Salary field, instead of a When rules on the Marital Status field, to implement the same behavior.
+>[!NOTE]
+>
+> Alternatively, you can write a Show rule on the Spouse Salary field, instead of a When rules on the Marital Status field, to implement the same behavior.
 
-   ![write-rules-visual-editor-9](assets/write-rules-visual-editor-9-cc.png)
+![write-rules-visual-editor-9](assets/write-rules-visual-editor-9-cc.png)
 
 1. Next, write a rule to compute the loan eligibility amount, which is 50% of the total salary, and display it in the Loan Eligibility field. To achieve this outcome, create **[!UICONTROL Set value Of]** rules on the Loan Eligibility field.
 

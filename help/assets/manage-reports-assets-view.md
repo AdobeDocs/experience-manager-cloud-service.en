@@ -174,9 +174,9 @@ Scheduled reports display under **Scheduled Reports** tab in a systematically or
 To resume the canceled schedule, select the report row and click **Resume Schedule**. When resumed, the next runtime entries display again and the status shows ongoing. 
 ![resume schedule](/help/assets/assets/resume-schedule.png) 
 
-   >[!NOTE]
-   >
-   > If you resume a canceled report before the scheduled end date, the reports from the cancellation date to the resumption date automatically generates.
+>[!NOTE]
+>
+> If you resume a canceled report before the scheduled end date, the reports from the cancellation date to the resumption date automatically generates.
 
 ## View Insights in Assets view {#view-live-statistics}
 
