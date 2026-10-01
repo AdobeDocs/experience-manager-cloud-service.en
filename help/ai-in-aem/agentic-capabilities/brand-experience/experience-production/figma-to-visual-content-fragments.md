@@ -11,8 +11,11 @@ Visual Content Fragments in Adobe Experience Manager (AEM) allow you to preview 
 
 While defining style and layout information in hand-coded HTML templates is entirely feasible, it is a highly technical process that is usually performed by web developers. As visual designs for modular experiences are often created in Figma, it is possible to streamline this process for Visual Content Fragments by directly importing designs from Figma into AEM.
 
-<!-- Add link when available -->
+For more details see:
 
+* [Use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/use-cases.md)
+
+<!-- Add link when available -->
 <!--
 For more details see this video.
 -->
@@ -20,12 +23,6 @@ For more details see this video.
 >[!NOTE]
 >
 >The Figma to Visual Content Fragments skill is part of the [Experience Production Agentic Capability](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/overview.md). 
-
-## Use cases {#use-cases}
-
-| Use Case | Description | Skill(s) | Application | Sample Prompts |
-| --- | --- | --- | --- | --- |
-| Go from Figma to Visual Content Fragment | Import designs directly from Figma into Adobe Experience Manager using natural language. The skill automatically creates the required content model, content fragment, assets, and visualization template, enabling business users to move from design to web-ready content in minutes without manual setup. | `aem-sites-visualcontentfragments-create` | Adobe Experience Manager (AEM) | Import from &lt;Figma_URL&gt; |
 
 ## Prerequisites {#prerequisites}
 
