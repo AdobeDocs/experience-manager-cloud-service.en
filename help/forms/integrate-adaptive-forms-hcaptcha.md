@@ -55,8 +55,9 @@ To configure hCaptcha&reg; with AEM Forms, you need to obtain the [hCaptcha&reg;
 
         ![Configure the Cloud Service to connect your AEM Forms environment with hCaptcha&reg;](assets/create-hcaptcha-config.png)
 
-  >[!NOTE]
-  > Users need not to modify [Client-side JavaScript validation URL](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) and [Server-side validation URL](https://docs.hcaptcha.com/#verify-the-user-response-server-side) as they are already prefilled for hCaptcha&reg; validation. For some countries, the endpoints may differ, visit [hCaptcha&reg; FAQs](https://docs.hcaptcha.com/faq#does-hcaptcha-support-access-by-users-in-china) for more information.
+>[!NOTE]
+>
+>Users need not to modify [Client-side JavaScript validation URL](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) and [Server-side validation URL](https://docs.hcaptcha.com/#verify-the-user-response-server-side) as they are already prefilled for hCaptcha&reg; validation. For some countries, the endpoints may differ, visit [hCaptcha&reg; FAQs](https://docs.hcaptcha.com/faq#does-hcaptcha-support-access-by-users-in-china) for more information.
 
 Once the hCAPTCHA service is configured, it is available for use in an Adaptive Form.
 

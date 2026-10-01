@@ -28,17 +28,17 @@ Developers can create i18n dictionaries in AEM to manage localized component str
 
 Developers can create additional dictionaries by adding a root node (`sling:Folder`) for a new dictionary to hold language definitions for component strings.
 
-   ```shell
-   /apps/myProject/i18n [sling:Folder]
-       - de.json [nt:file] [mix:language]
-           + jcr:language = de
-       - fr.json [nt:file] [mix:language]
-           + jcr:language = fr
-   ```
+```shell
+/apps/myProject/i18n [sling:Folder]
+      - de.json [nt:file] [mix:language]
+         + jcr:language = de
+      - fr.json [nt:file] [mix:language]
+         + jcr:language = fr
+```
 
-   >[!NOTE]
-   >
-   >This is the structure from the [Sling i18n module](https://sling.apache.org/site/internationalization-support.html).
+>[!NOTE]
+>
+>This is the structure from the [Sling i18n module](https://sling.apache.org/site/internationalization-support.html).
 
 Once created in an AEM GitHub repository, dictionaries can be deployed via an AEM [CI/CD pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md). 
 
