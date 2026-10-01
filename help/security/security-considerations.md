@@ -16,7 +16,7 @@ To support asymmetric, cryptographic operations, AEM stores certificates inside 
 
 * The trust-store is located below `/etc/truststore` and consists of a Java&trade; keystore file, the keystore password, and repository metadata. Both the password and the keystore are encrypted for technical reasons, even though the contained certificates are accessible to everyone by default through the API
 * Out of the box the certificates are used for HTTPS and SAML support only, and the store must be manually created first
-* Customers can use it in their own code through the [keystore API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-)
+* Customers can use it in their own code through the [keystore API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-)
 * The trust-store can be managed through the UI at **Tools** - **Security** - **Trust Store** or by accessing *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`*, as shown below:
 
   ![Trust Store Management](/help/security/assets/global-trust-store-modified.png)

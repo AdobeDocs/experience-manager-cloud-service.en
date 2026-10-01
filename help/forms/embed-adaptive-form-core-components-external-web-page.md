@@ -174,8 +174,8 @@ When embedding an adaptive form in a web page, consider the following best pract
 
 * Ensure that the styling rules defined in the web page CSS do not conflict with the form object CSS. To avoid the conflicts, you can reuse the web page CSS in the adaptive form theme using AEM client library. For information about using client library in adaptive form themes, see [Themes in AEM Forms](/help/forms/using-themes-in-core-components.md).
 * Make the form container in the web page use the entire window width. It ensures that the CSS rules configured for mobile devices work without any changes. If the form container does not take the entire window width, you must write custom CSS to make the form adapt to different mobile devices.
-* Use `[getData](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)` API to get the XML or JSON representation of form data in client.
-* Use `[unloadAdaptiveForm](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)` API to unload the adaptive form from HTML DOM.
+* Use `[getData](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/GuideBridge.html)` API to get the XML or JSON representation of form data in client.
+* Use `[unloadAdaptiveForm](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/GuideBridge.html)` API to unload the adaptive form from HTML DOM.
 * Set up the access-control-origin header when sending a response from an AEM server.
 
 ## Enable AEM Forms to serve adaptive forms to a cross-domain site {#cross-site}
