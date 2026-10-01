@@ -347,7 +347,7 @@ Use this integration to:
 * Build dashboards and alerts for your AEM tiers
 * Correlate AEM behavior with other services during incidents
 
-OpenTelemetry will be in Limited Availability on **October 1st**. To get on the list for access, email [aemcs-otel-access@adobe.com](mailto:aemcs-otel-access@adobe.com), describing your use case and how you intend on ingesting the data. 
+OpenTelemetry will be in Limited Availability on **October 19th**. To get on the list for access, email [aemcs-otel-access@adobe.com](mailto:aemcs-otel-access@adobe.com), describing your use case and how you intend on ingesting the data. 
 
 #### AEM Query Optimization in the Code Assessment Agent Skill (IDE AI Tooling) {#code-assessment-skill}
 
