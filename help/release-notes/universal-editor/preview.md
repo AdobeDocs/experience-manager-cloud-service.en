@@ -39,4 +39,4 @@ These **preview** release notes are provided as a convenience so you know what c
 * Overlay labels no longer wrap over small editable elements.
 * Drag previews for multiple selections stay within the picker's bounds. 
 * Asset reference validation now respects the field's configured filter.
-* With  `FT_SITES-52747` enabled, page updates handle replacements between object and primitive values without the previous type-mismatch crash.
+* With `FT_SITES-52747` enabled, page updates handle replacements between object and primitive values without the previous type-mismatch crash.
