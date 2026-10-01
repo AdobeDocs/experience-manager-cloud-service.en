@@ -15,6 +15,8 @@ For more details see:
 
 * [Use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/use-cases.md)
 
+* [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/ui-guide)
+
 * Feature video
 
 >[!VIDEO](https://video.tv.adobe.com/v/3504013?learn=on)
