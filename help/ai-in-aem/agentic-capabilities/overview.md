@@ -52,3 +52,9 @@ The in-app side panel is not part of this release. Use cases that depend on it a
 
 These pages are updated as capabilities become available in Coworker.
 -->
+
+## Access Coworker from AEM {#access-coworker-from-aem}
+
+To access Coworker from AEM you can use the **Ask Coworker** icon to give you direct access to the [Coworker Chat UI](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/ui-guide). The icon is available from multiple locations in AEM.
+
+![Ask Coworker in AEM t](/help/ai-in-aem/agentic-capabilities/assets/ai-ac-access-coworker.png)
