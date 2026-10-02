@@ -196,7 +196,15 @@ An AEM content component type enables an AEM content picker, which can be used t
 }
 ```
 
->[!TAB Screenshot]
+>[!TAB Screenshot (AEMaaCS)]
+
+![Screenshot of AEM content component type](assets/component-types/aem_content.png)
+
+Mousing over a populated field reveals details.
+
+![Screenshot of AEM content component type](assets/component-types/aem_content_detailed.png)
+
+>[!TAB Screenshot (AEM 6.5 and LTS)]
 
 ![Screenshot of AEM content component type](assets/component-types/aem-content-picker.png)
 
@@ -383,7 +391,7 @@ It also offers an additional validation type.
 
 >[!BEGINTABS]
 
->[!TAB Sample 1]
+>[!TAB Sample]
 
 ```json
 [
@@ -405,7 +413,15 @@ It also offers an additional validation type.
 ]
 ```
 
->[!TAB Screenshot]
+>[!TAB Screenshot (AEMaaCS)]
+
+![Screenshot of Content Fragment picker](assets/component-types/content_fragment.png)
+
+Mousing over a populated field reveals details.
+
+![Screenshot of Content Fragment picker](assets/component-types/content_fragment_detailed.png)
+
+>[!TAB Screenshot (AEM 6.5 and LTS)]
 
 ![Screenshot of Content Fragment picker](assets/component-types/aem-content-fragment.png)
 
@@ -518,7 +534,7 @@ It also offers an additional validation type.
 
 >[!BEGINTABS]
 
->[!TAB Sample 1]
+>[!TAB Sample]
 
 ```json
 [
@@ -540,7 +556,15 @@ It also offers an additional validation type.
 ]
 ```
 
->[!TAB Screenshot]
+>[!TAB Screenshot (AEMaaCS)]
+
+![Screenshot of Experience Fragment picker](assets/component-types/experience_fragment.png)
+
+Mousing over a populated field reveals details.
+
+![Screenshot of Experience Fragment picker](assets/component-types/experience_fragment_detailed.png)
+
+>[!TAB Screenshot (AEM 6.5 and LTS)]
 
 ![Screenshot of Experience Fragment picker](assets/component-types/aem-experience-fragment.png)
 
@@ -736,9 +760,17 @@ A reference component type allows for a reference to another data object from th
 }
 ```
 
->[!TAB Screenshot]
+>[!TAB Screenshot (AEMaaCS)]
 
 ![Screenshot of reference component type](assets/component-types/reference.png)
+
+Mousing over a populated field reveals details.
+
+![Screenshot of reference component type](assets/component-types/reference_detailed.png)
+
+>[!TAB Screenshot (AEM 6.5 and LTS)]
+
+![Screenshot of reference component type](assets/component-types/reference-old.png)
 
 >[!ENDTABS]
 
