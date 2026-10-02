@@ -50,13 +50,13 @@ The flow is as follows:
 
 1. In AEM, the AEM user can start with an initial prompt to use Coworker to recreate the approved design in AEM. AEM will automatically create the required Content Fragment Models, Content Fragments and HTML templates.
 
-   * When necessary, the agentic skill will ask for more information, such as the AEM environment to use.
+   * When necessary, the skill will ask for more information, such as the AEM environment to use.
 
-   * The agentic creation process also includes capabilities that allow reusing existing content models or fragments when already available.
+   * The creation process also includes capabilities that allow reusing existing content models or fragments when already available.
 
-1. The agent generates a Content Fragment and a Content Fragment Model for the content, and an HTML template for the layout and design.
+1. The skill generates a Content Fragment and a Content Fragment Model for the content, and an HTML template for the layout and design.
 
-   * The agent provides a direct link to the fragment, from where you can access the model and the template.
+   * The skill provides a direct link to the fragment, from where you can access the model and the template.
 
 ## Sample Prompts {#sample-prompts}
 
