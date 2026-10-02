@@ -25,11 +25,11 @@ For more details see:
 >
 >The Content Update skill is part of the Experience Production Agentic Capability.
 
-## Configure the Publish URL (one time) {#configuring-the-publish-url}
+## Prerequisites {#prerequisites}
 
 To instruct the skill where to apply updates you must supply a page link. You may provide either an author URL or a publish URL. 
 
-To use a publish (public facing) URL a one-time configuration must be made:
+Before you start you need to configure the Publish (public facing) URL, a one-time configuration:
 
 * Prerequisites:
 
