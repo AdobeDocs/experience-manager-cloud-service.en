@@ -94,25 +94,11 @@ To join the beta, email [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-bet
 
 ## Bug fixes {#bug-fixes}
 
-* Regenerating a repository access password now invalidates the old password. Previously, regenerating the Git repository access password did not immediately invalidate the previous password, leaving the old credential usable. Regenerating the password now invalidates the old one immediately, ensuring the previous credential can no longer be used. (CMGR-41820)
+* Dynamic Media and Content Hub activation could fail for all EDS programs. A placeholder offer used during Edge Delivery Services provisioning could disrupt the shared activation batch, causing Dynamic Media with OpenAPI and Content Hub activation to fail across every EDS program. The provisioning flow has been corrected so these activations complete reliably for all EDS programs. (CMGR-80012)
 
+* Custom domain deletions could remain stuck indefinitely. In some situations, deleting a CDN domain configuration could leave the deletion stuck with no completion, blocking further domain changes. The domain-configuration deletions now complete as expected. (CMGR-79997)
 
-* EDS site management endpoints returning errors after platform upgrade. Following a platform upgrade, several Edge Delivery Services site management endpoints, such as listing site administrators and connected GitHub Apps, began returning errors. These endpoints have been fixed and now return their results correctly. (CMGR-79247)
-
-
-* EDS sites fail to serve traffic due to an incorrect stored origin. In some cases a Cloud Manager-connected EDS site returned an unknown-domain error at the CDN because the stored origin incorrectly included a validation challenge path. The stored origin is now recorded correctly, allowing the site to serve traffic as expected. (CMGR-78479)
-
-
-* Large Git updates cause errors on Edge Delivery Services sites. For Edge Delivery Services sites using External Git (also known as Bring Your Own Git), a push with many changed files is synced only in part. This causes the live site to fail. This occurred because the incoming push notification truncated its list of changed files. Cloud Manager now falls back to a full branch sync when a push reports a large number of changed files, ensuring every changed file is applied and the site stays consistent. (CMGR-79250)
-
-
-* Environment deletion fails permanently in rare cases. Environment deletion fails permanently when a regional deployment has no associated Kubernetes namespace, leaving the environment in a state that cannot be cleaned up. Deletion now handles this case correctly and completes successfully. (CMGR-79263)
-
-
-* BYOG repositories using certain certificate authorities incorrectly reported as failing. Bring Your Own Git validation incorrectly reports a connection failure for repositories hosted behind certificates issued by the HARICA certificate authority, misreporting a trust issue as a server error. The certificate authority is now trusted, and these repositories validate successfully. (CMGR-78711)
-
-
-* Permission checks hardened to enforce resource ownership. Resolved an issue in how permission checks were evaluated so that access to a program is always validated against the organization that owns it. This strengthens isolation between organizations for permission-gated operations. (CMGR-79156)
+* Universal Editor (EDS) site provisioning could fail intermittently. Universal Editor site provisioning could fail intermittently when a GitHub deployment step exceeded a three-minute timeout. The provisioning flow has been made more resilient so these sites provision reliably. (CMGR-75897)
 
 <!-- There are no significant bug fixes in the July 2026 Cloud Manager release. -->
 
