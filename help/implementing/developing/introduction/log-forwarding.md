@@ -290,6 +290,8 @@ The following rules apply:
 
 Like other properties, an `mtls` block under `default` applies to both AEM logs and CDN logs. To use a different certificate for CDN logs, set the `mtls` properties in a `cdn` block. To use mTLS for only AEM logs or only CDN logs, place the `mtls` block in the `aem` or `cdn` block instead of `default`.
 
+After you deploy a configuration that enables CDN log forwarding to a destination, it can take several minutes before the first CDN logs arrive. For HTTPS destinations, CDN log delivery also starts only after your server completes the one-time challenge described in [HTTPS](#https). The challenge request is sent with the same client certificate, so your server must accept that certificate on the challenge path too.
+
 ### Certificate rotation and expiry {#mtls-rotation}
 
 To rotate a certificate, update the Cloud Manager secret environment variables that hold the certificate (and the key, if it changed), then re-run the config pipeline. If the log forwarding configuration file itself is unchanged, also make a change to it so that the configuration is applied again. For example, store the new values in new secret environment variables and reference those names in the `mtls` block.
