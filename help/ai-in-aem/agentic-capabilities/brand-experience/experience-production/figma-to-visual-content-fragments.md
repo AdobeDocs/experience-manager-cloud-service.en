@@ -19,7 +19,7 @@ For more details see:
 
 <!-- Add link when available -->
 <!--
-For more details see this video.
+* Demonstration video
 -->
 
 >[!NOTE]
