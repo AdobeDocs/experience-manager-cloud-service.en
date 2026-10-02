@@ -41,22 +41,18 @@ The next planned release is Thursday, November 5, 2026.
 
     Cloud Manager now supports canary (hybrid) releases at the deployment step. When configuring a production pipeline, teams can roll out code to a subset of production nodes, then promote the release or roll back from the Cloud Manager UI.
 
-    If no action is taken within the configured validation window, Cloud Manager automatically promotes the deployment. This reduces deployment risk for mission-critical applications by letting teams validate real traffic behavior before committing to a full rollout, and enables faster detection and resolution of issues without impacting all users.
+    If no action is taken within the configured validation window, Cloud Manager automatically promotes the deployment. This reduces deployment risk for mission-critical applications by allowing teams to validate real traffic behavior before performing a full rollout, and enables faster detection and resolution of issues without impacting all users.
 
     For more information, see [Use Canary Deployments to Validate Code](/help/implementing/cloud-manager/canary-deployments.md) (CMGR-71220, CMGR-74599)
 
-* **Git submodule authentication for external repositories** 
-    If your external Git repository (Bring Your Own Git) uses Git submodules, Cloud Manager now automatically authenticates submodule fetches from other repositories in the same organization during pipeline builds. Previously, submodule repositories not individually registered in Cloud Manager failed authentication, so those fetches failed. Credentials are handled server-side and are never exposed to the build environment. No configuration is required, and existing pipelines continue to run without changes. (CMGR-76737) <!-- new doc already added for this release -->
+* **VPN Network Infrastructure — BGP routing and multiple connections**
 
-    For more information, see [Git Submodule Support for Adobe Repositories](/help/implementing/cloud-manager/managing-code/git-submodules.md#external-repositories).
+    The Advanced Networking VPN network infrastructure API now supports BGP (Border Gateway Protocol) dynamic routing alongside static routing, and the previous limit of one VPN connection per infrastructure has been removed. Teams can now configure multiple connections and, with BGP enabled, have routes learned dynamically rather than maintaining static prefixes. Static and BGP connections can coexist in the same infrastructure, providing enterprise networking teams with increased flexibility.
 
-* **Content sync API returns an Execution-Id for tracking**  
-    Content sync actions triggered through the Cloud Manager API now return an Execution-Id header in the response. Customers can use this identifier to track and correlate the status of a specific content sync operation, making it easier to monitor sync activity from external tooling. (CMGR-78234) <!-- no new doc needed -->
+    New API fields support the capability (bgpAsn, bgpPeeringAddress, adobeApipaAddress, and a top-level adobeAsn required whenever a connection uses BGP); see the Cloud Manager API reference for details. (SKYOPS-140538)
 
-* **GitLab External Git (BYOG) now syncs new branches automatically**
-    Customers using GitLab with External Git (BYOG) no longer need to trigger a manual Sync Code action for new branches. New branches are now synced automatically, removing the need for this manual step. (CMGR-77786) <!-- no new doc needed -->
+    For more information, see [Virtual Private Network (VPN)](/help/security/configuring-advanced-networking.md#vpn)
     
-
 
 ## Beta programs {#private-beta-program}
 
@@ -64,7 +60,7 @@ To obtain access to upcoming features before their general release, you can part
 
 >[!IMPORTANT]
 >
->Beta releases contain defects and are provided without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support the beta releases. Customers use beta releases at their own risk; do not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Any use of the beta releases is entirely at the customer's own risk.
+>Beta releases contain defects and are provided without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support the beta releases. Customers use beta releases at their own risk; do not rely on beta release functionality, performance, or accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Any use of the beta releases is entirely at the customer's own risk.
 
 See also [AEM Beta programs](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
 
@@ -94,11 +90,11 @@ To join the beta, email [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-bet
 
 ## Bug fixes {#bug-fixes}
 
-* Dynamic Media and Content Hub activation could fail for all EDS programs. A placeholder offer used during Edge Delivery Services provisioning could disrupt the shared activation batch, causing Dynamic Media with OpenAPI and Content Hub activation to fail across every EDS program. The provisioning flow has been corrected so these activations complete reliably for all EDS programs. (CMGR-80012)
+* Dynamic Media and Content Hub activation failed for all EDS programs. A placeholder offer used during Edge Delivery Services provisioning disrupted the shared activation batch, causing Dynamic Media with OpenAPI and Content Hub activation to fail across every EDS program. The provisioning flow has been corrected so these activations complete reliably for all EDS programs. (CMGR-80012)
 
-* Custom domain deletions could remain stuck indefinitely. In some situations, deleting a CDN domain configuration could leave the deletion stuck with no completion, blocking further domain changes. The domain-configuration deletions now complete as expected. (CMGR-79997)
+* Custom domain deletions remained pending indefinitely. In some situations, deleting a CDN domain configuration caused the deletion process to stop, blocking further domain changes. The domain-configuration deletions now finish as expected. (CMGR-79997)
 
-* Universal Editor (EDS) site provisioning could fail intermittently. Universal Editor site provisioning could fail intermittently when a GitHub deployment step exceeded a three-minute timeout. The provisioning flow has been made more resilient so these sites provision reliably. (CMGR-75897)
+* Universal Editor (EDS) site provisioning failed intermittently. Universal Editor site provisioning failed intermittently when a GitHub deployment step exceeded a three-minute timeout. The provisioning flow has been made more resilient so these sites provision reliably. (CMGR-75897)
 
 <!-- There are no significant bug fixes in the July 2026 Cloud Manager release. -->
 
