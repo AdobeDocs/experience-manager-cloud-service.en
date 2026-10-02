@@ -240,7 +240,7 @@ or the default Authorization header with a Bearer-prefixed secret value (Dash0).
 
 ```yaml
 kind: "Otel"
-version: "v1"
+version: "1"
 metadata:
   envTypes:
     - "stage"
@@ -258,7 +258,7 @@ data:
 
 ```yaml
 kind: "Otel"
-version: "v1"
+version: "1"
 metadata:
   envTypes:
     - "stage"
@@ -276,7 +276,7 @@ data:
 
 ```yaml
 kind: "Otel"
-version: "v1"
+version: "1"
 metadata:
   envTypes:
     - "stage"
@@ -295,7 +295,7 @@ data:
 
 ```yaml
 kind: "Otel"
-version: "v1"
+version: "1"
 metadata:
   envTypes:
     - "stage"
@@ -313,7 +313,7 @@ data:
 
 ```yaml
 kind: "Otel"
-version: "v1"
+version: "1"
 metadata:
   envTypes:
     - "stage"
@@ -331,7 +331,7 @@ data:
 
 ```yaml
 kind: "Otel"
-version: "v1"
+version: "1"
 metadata:
   envTypes:
     - "stage"
@@ -349,7 +349,7 @@ data:
 
 ```yaml
 kind: "Otel"
-version: "v1"
+version: "1"
 metadata:
   envTypes:
     - "stage"
@@ -367,7 +367,7 @@ data:
 
 ```yaml
 kind: "Otel"
-version: "v1"
+version: "1"
 metadata:
   envTypes:
     - "stage"
