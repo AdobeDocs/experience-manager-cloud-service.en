@@ -21,7 +21,7 @@ The sections below list the scenarios where customers must (or in some cases mus
 
 >[!NOTE]
 >
->The [**AEM** Developer Console](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) (note the **AEM** in the name, which distinguishes it from the **Adobe** Developer Console) provides a utility to generate [JWT tokens](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) used for server-to-server APIs. These credentials are not deprecated and can continue to be used.
+>The [**AEM** Developer Console](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) is different from the **Adobe** Developer Console. For access to AEM server-side APIs, use [OAuth Server-to-Server credentials](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md). AEM Developer Console Service Account (JWT) credentials are deprecated in favor of OAuth Server-to-Server; existing integrations can refer to the [JWT legacy guide](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-jwt-legacy.md). The Adobe Developer Console retirement dates above do not establish a retirement date for AEM Developer Console JWT credentials.
 
 ## Integrating AEM with Other Adobe Solutions {#integrating-aem-with-other-adobe-solutions}
 
