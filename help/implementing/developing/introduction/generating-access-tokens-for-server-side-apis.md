@@ -31,23 +31,19 @@ The server-to-server flow involves these steps:
 1. Configure the technical account's product profile and AEM permissions.
 1. Call the AEM API with the access token as a bearer token.
 
-### Fetch the AEM as a Cloud Service Credentials {#fetch-the-aem-as-a-cloud-service-credentials}
+### Create a Technical Account and Retrieve Its Credentials {#fetch-the-aem-as-a-cloud-service-credentials}
 
-1. Open the AEM Developer Console for the environment that your application accesses.
-1. Go to **Integrations**.
-1. Select **Create new technical account**.
-1. Select **OAuth Server-to-Server (S2S)** as the **Credential type**, then select **Create**.
+1. **Open Integrations.** Open the AEM Developer Console for the environment that your application accesses, then select **Integrations**.
 
-   ![Create a technical account with OAuth Server-to-Server selected](assets/dev-console/oauth-s2s-create-account.png)
+1. **Create the technical account.** Select **Create new technical account**. In the dialog, select **OAuth Server-to-Server (S2S)** as the **Credential type**, then select **Create**.
 
-1. After provisioning completes, find the account's active client secret. Open the action menu for that secret and select **View**.
-1. Copy the credential JSON and store it securely.
+   ![Create new technical account dialog with OAuth Server-to-Server selected](assets/dev-console/s2s-create-acc-step-1-create-acc.png)
 
-   ![OAuth Server-to-Server credential JSON with illustrative client ID and client secret values](assets/dev-console/oauth-s2s-view-credentials.png)
+1. **View the client secret.** After provisioning completes, find the new OAuth Server-to-Server account and its **Active** client secret. Open the action menu on the client secret's row and select **View**.
 
->[!NOTE]
->
->The screenshots use illustrative account identifiers and credentials. Use the values from your own technical account, not the example values.
+   ![Client secret action menu with View highlighted for the new OAuth Server-to-Server account](assets/dev-console/s2s-create-acc-step-2-view-credentials.png)
+
+1. **Store the credentials securely.** Copy the credential JSON from the credentials dialog and save it in a secret manager or another access-controlled location for your application.
 
 The `integration` object in the credential JSON includes the following values:
 
@@ -60,8 +56,6 @@ The `integration` object in the credential JSON includes the following values:
 | `email` | The technical account identity used when assigning product profiles. |
 
 The secret ID displayed in the account's secret list identifies a credential. It is not the secret value and cannot be used as `client_secret` in a token request. Use **View** on the selected secret to retrieve its value.
-
-![Example OAuth Server-to-Server account with active and revoked client secrets](assets/dev-console/oauth-s2s-secret-list.png)
 
 >[!NOTE]
 >
@@ -153,24 +147,35 @@ For an AEM project running on your local machine, an IMS access token is not nee
 
 ## Rotate Client Secrets {#refresh-credentials}
 
-OAuth Server-to-Server credentials do not require annual certificate renewal. Rotate client secrets periodically and whenever a secret is exposed.
-
-1. In **Integrations**, open the action menu for the OAuth Server-to-Server technical account and select **Add secret**.
-
-   ![Technical account action menu showing Add secret](assets/dev-console/oauth-s2s-add-secret.png)
-
-1. Find the new active secret, open its action menu, and select **View**. Store the new secret value securely.
-1. Update every application instance and deployment that uses the account to use the new secret.
-1. Request a new access token using the new secret and verify the required AEM API calls. Reusing a previously issued access token does not verify the new secret.
-1. After all applications use the replacement secret, open the old secret's action menu, select **Revoke**, and confirm.
-1. After revocation takes effect, verify that the old secret cannot issue new access tokens and that the replacement secret works.
-1. To remove the revoked secret from the AEM Developer Console's stored credentials, select **Delete** for that secret and confirm.
+OAuth Server-to-Server credentials do not require annual certificate renewal. Rotate client secrets periodically and whenever a secret is exposed. Add a replacement, switch your applications to it, and only then revoke the old secret.
 
 >[!IMPORTANT]
 >
 >IMS requires at least one active secret. Add and verify a replacement before revoking the last active secret. To stop using the technical account entirely, delete the account instead.
 
-![Client secret action menu with Revoke disabled for the last active secret](assets/dev-console/oauth-s2s-last-active-secret.png)
+1. **Add a replacement secret.** In **Integrations**, open the action menu beside the OAuth Server-to-Server account's name and select **Add secret**. This is the account-level menu, not a client secret's row menu.
+
+   ![OAuth Server-to-Server account action menu containing Add secret](assets/dev-console/s2s-rotate-step-1-add-secret.png)
+
+1. **Switch applications to the replacement.** Find the new **Active** secret, open its row's action menu, and select **View**. Store the new secret value securely and update every application instance and deployment that uses the account.
+
+   Request a new access token with the replacement secret and verify the required AEM API calls before proceeding. Both secrets remain active during the application cutover. Reusing a previously issued access token does not verify the replacement secret.
+
+1. **Select the old secret for revocation.** After all applications use the replacement, open the old secret's row menu and select **Revoke**. Check that you have selected the old secret, not its replacement.
+
+   ![Old client secret's action menu with Revoke highlighted while both secrets are active](assets/dev-console/s2s-rotate-step-2-revoke-old-secret.png)
+
+1. **Confirm revocation.** Review the **Revoke client secret** dialog, then select **Revoke**. Once revocation propagates through IMS, applications cannot use that secret to request new tokens. Existing access tokens may remain valid.
+
+   ![Revoke client secret confirmation warning about IMS propagation and existing access tokens](assets/dev-console/s2s-rotate-step-3-confirmation-box.png)
+
+1. **Verify the result.** The old secret is listed as **Revoked**, while the replacement remains **Active**.
+
+   ![Client secret list showing the original secret as Revoked and its replacement as Active](assets/dev-console/s2s-rotate-step-4-result.png)
+
+   After revocation takes effect, verify that the old secret cannot issue new access tokens and that the replacement secret can. Checking the displayed status alone does not verify IMS propagation.
+
+1. **Remove the revoked secret if no longer needed.** To remove its value and entry from the AEM Developer Console's stored credentials, open the revoked secret's row menu, select **Delete**, and confirm.
 
 ## Credentials Revocation {#credentials-revocation}
 
