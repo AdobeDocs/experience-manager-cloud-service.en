@@ -92,10 +92,10 @@ For a minimal OAuth Server-to-Server implementation, see the [AEM-CS API Client 
 Save the complete S2S credential JSON copied from the AEM Developer Console as `downloaded_integration.json`. From a checkout of the example repository, run:
 
 ```bash
-node oauth-cli.js downloaded_integration.json
+node oauth-s2s-cli.js downloaded_integration.json
 ```
 
-For programmatic usage, the [OAuth helper](https://github.com/adobe/aemcs-api-client-lib/blob/main/oauth.js) accepts the parsed credential response object directly as `requestAccessToken(credentials)`. The outer `ok` and `statusCode` fields and the account/secret metadata do not need to be removed. The helper uses the IMS hostname, client ID, client secret, and scopes inside `integration`.
+For programmatic usage, the [OAuth helper](https://github.com/adobe/aemcs-api-client-lib/blob/main/oauth-s2s.js) accepts the parsed credential response object directly as `requestAccessToken(credentials)`. The outer `ok` and `statusCode` fields and the account/secret metadata do not need to be removed. The helper uses the IMS hostname, client ID, client secret, and scopes inside `integration`.
 
 Keep the credential file private. The CLI prints an access token; do not send its output to shared logs or publish it. The example's README also shows how to use the token in an AEM API request.
 
