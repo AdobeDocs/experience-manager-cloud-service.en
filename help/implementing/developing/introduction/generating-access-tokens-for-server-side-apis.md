@@ -81,8 +81,6 @@ The response includes `access_token`, `token_type`, and `expires_in`. Use `acces
 
 Cache and reuse the access token until it approaches expiration, then request a new token with the same client credentials. This grant does not require a JWT exchange or a refresh token.
 
-For the token request and response contract, see the [IMS OAuth Server-to-Server API reference](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/ims#fetching-access-tokens). The token endpoint contract is shared with Adobe Developer Console credentials; account creation and secret management in this guide use the AEM Developer Console.
-
 >[!NOTE]
 >
 >Use credentials for the AEM environment that you are calling. A valid IMS access token does not grant additional AEM permissions. Configure the technical account's permissions as described below.
