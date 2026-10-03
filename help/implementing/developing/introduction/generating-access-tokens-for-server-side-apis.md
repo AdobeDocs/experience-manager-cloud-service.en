@@ -64,7 +64,7 @@ Do not put a client secret in browser-side code, mobile applications, source con
 
 ### Request an OAuth Access Token {#request-an-oauth-access-token}
 
-Send an HTTPS `POST` request to the `token/v3` path of the `imsEndpoint` in your credentials. For example, an `imsEndpoint` of `https://ims-na1.adobelogin.com/ims` uses `https://ims-na1.adobelogin.com/ims/token/v3`.
+Send an HTTPS `POST` request to `https://<imsEndpoint>/ims/token/v3`. The `imsEndpoint` in your credential JSON is an IMS hostname. For example, `ims-na1.adobelogin.com` uses `https://ims-na1.adobelogin.com/ims/token/v3`. Use the hostname supplied in your credentials, including the stage hostname when using stage credentials.
 
 Use `Content-Type: application/x-www-form-urlencoded` and include these form fields in the request body:
 
@@ -84,6 +84,20 @@ Cache and reuse the access token until it approaches expiration, then request a 
 >[!NOTE]
 >
 >Use credentials for the AEM environment that you are calling. A valid IMS access token does not grant additional AEM permissions. Configure the technical account's permissions as described below.
+
+### Node.js Authentication Example {#nodejs-authentication-example}
+
+For a minimal OAuth Server-to-Server implementation, see the [AEM-CS API Client Library example](https://github.com/adobe/aemcs-api-client-lib/blob/main/README.md). It uses built-in Node.js APIs and requires Node.js 18 or newer, with no additional dependencies.
+
+Save the complete S2S credential JSON copied from the AEM Developer Console as `downloaded_integration.json`. From a checkout of the example repository, run:
+
+```bash
+node oauth-cli.js downloaded_integration.json
+```
+
+For programmatic usage, the [OAuth helper](https://github.com/adobe/aemcs-api-client-lib/blob/main/oauth.js) accepts the parsed credential response object directly as `requestAccessToken(credentials)`. The outer `ok` and `statusCode` fields and the account/secret metadata do not need to be removed. The helper uses the IMS hostname, client ID, client secret, and scopes inside `integration`.
+
+Keep the credential file private. The CLI prints an access token; do not send its output to shared logs or publish it. The example's README also shows how to use the token in an AEM API request.
 
 ### Calling the AEM API {#calling-the-aem-api}
 
