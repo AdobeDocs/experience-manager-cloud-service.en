@@ -50,7 +50,7 @@ You can use the copy to clipboard button to copy the json to your clipboard and 
 
 >[!NOTE]
 >
->Customers can create up to ten technical accounts, including those accounts that have already been deleted.
+>Customers can create up to twenty technical accounts, including those accounts that have already been deleted.
 
 >[!IMPORTANT]
 >

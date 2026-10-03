@@ -38,28 +38,19 @@ The server-to-server flow involves these steps:
 1. **Create the technical account.** Select **Create new technical account**. In the dialog, select **OAuth Server-to-Server (S2S)** as the **Credential type**, then select **Create**.
 
    ![Create new technical account dialog with OAuth Server-to-Server selected](assets/dev-console/s2s-create-acc-step-1-create-acc.png)
+   The secret ID displayed in the account's secret list identifies a credential. It is not the secret value and cannot be used as `client_secret` in a token request. Use **View** on the selected secret to retrieve its value.
 
 1. **View the client secret.** After provisioning completes, find the new OAuth Server-to-Server account and its **Active** client secret. Open the action menu on the client secret's row and select **View**.
 
    ![Client secret action menu with View highlighted for the new OAuth Server-to-Server account](assets/dev-console/s2s-create-acc-step-2-view-credentials.png)
-
 1. **Store the credentials securely.** Copy the credential JSON from the credentials dialog and save it in a secret manager or another access-controlled location for your application.
+   ![Client secret action menu with View highlighted for the new OAuth Server-to-Server account](assets/dev-console/s2s-create-acc-step-3-view-credentials-result.png)
 
-The `integration` object in the credential JSON includes the following values:
 
-| Field | Use |
-| --- | --- |
-| `imsEndpoint` | The IMS endpoint for requesting access tokens. |
-| `technicalAccount.clientId` | The OAuth client ID. |
-| `technicalAccount.clientSecret` | The value of the selected client secret. |
-| `scopes` | The OAuth scopes available to the technical account. |
-| `email` | The technical account identity used when assigning product profiles. |
-
-The secret ID displayed in the account's secret list identifies a credential. It is not the secret value and cannot be used as `client_secret` in a token request. Use **View** on the selected secret to retrieve its value.
 
 >[!NOTE]
 >
->Customers can create up to ten technical accounts, including those accounts that have already been deleted.
+>Customers can create up to twenty technical accounts, including those accounts that have already been deleted.
 
 >[!IMPORTANT]
 >
