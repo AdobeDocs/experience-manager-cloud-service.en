@@ -163,15 +163,14 @@ OAuth Server-to-Server credentials do not require annual certificate renewal. Ro
 1. Update every application instance and deployment that uses the account to use the new secret.
 1. Request a new access token using the new secret and verify the required AEM API calls. Reusing a previously issued access token does not verify the new secret.
 1. After all applications use the replacement secret, open the old secret's action menu, select **Revoke**, and confirm.
-
-   ![Revoke client secret confirmation explaining token propagation and application updates](assets/dev-console/oauth-s2s-revoke-secret.png)
-
 1. After revocation takes effect, verify that the old secret cannot issue new access tokens and that the replacement secret works.
 1. To remove the revoked secret from the AEM Developer Console's stored credentials, select **Delete** for that secret and confirm.
 
 >[!IMPORTANT]
 >
 >IMS requires at least one active secret. Add and verify a replacement before revoking the last active secret. To stop using the technical account entirely, delete the account instead.
+
+![Client secret action menu with Revoke disabled for the last active secret](assets/dev-console/oauth-s2s-last-active-secret.png)
 
 ## Credentials Revocation {#credentials-revocation}
 
