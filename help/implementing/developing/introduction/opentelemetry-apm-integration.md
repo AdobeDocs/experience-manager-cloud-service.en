@@ -73,7 +73,7 @@ Your AEM application can be instrumented with any of the following OpenTelemetry
 | Grafana | [Grafana OpenTelemetry distribution for Java](https://github.com/grafana/grafana-opentelemetry-java) |
 | Splunk | [Splunk Distribution of OpenTelemetry Java](https://github.com/signalfx/splunk-otel-java) |
 
-The default upstream variant works with any APM vendor. The Grafana and Splunk variants add vendor-specific instrumentation and defaults for those platforms. Adobe manages the agent, so the upstream variant is used unless you ask for another: to use the Grafana or Splunk variant, say so when you [request access](#request-access).
+The default upstream variant works with any APM vendor. The Grafana and Splunk variants add vendor-specific instrumentation and defaults for those platforms. Adobe installs the selected agent variant in the AEM container at deployment. During Limited Availability, the upstream variant is used by default; to use the Grafana or Splunk variant, ask for it when you [request access](#request-access). The `config/otel.yaml` file configures where telemetry goes; it has no field to select the agent variant.
 
 >[!NOTE]
 >
