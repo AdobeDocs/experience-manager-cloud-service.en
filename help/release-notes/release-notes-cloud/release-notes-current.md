@@ -163,9 +163,9 @@ Give teams visibility into delivery health by reporting operational activity suc
 
 To participate or learn more, send an email to `dm-beta-feedback@adobe.com`.
 
-#### Dynamic Media: Auto Reflow and Auto Translate {#auto-reflow-and-auto-translate}
+#### Dynamic Media: Auto Translate {#auto-translate}
 
-Eliminate repetitive redesign and manual localization by using AI to automatically adapt a single master template into layouts that fit different formats and aspect ratios (web, social, display, and email) and to instantly translate text across languages, all while preserving the visual integrity of the design, turning one master asset into variants across many device sizes and locales.
+Eliminate repetitive manual localization by using AI to automatically translate text and turn a single master template into variants across multiple locales, while preserving the visual integrity of your designs.
 
 To participate or learn more, send an email to `dm-beta-feedback@adobe.com`.
 
