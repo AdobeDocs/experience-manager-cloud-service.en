@@ -163,7 +163,7 @@ Give teams visibility into delivery health by reporting operational activity suc
 
 To participate or learn more, send an email to `dm-beta-feedback@adobe.com`.
 
-#### Dynamic Media: Auto Translate {#auto-translate}
+#### Dynamic Media Template: Auto Translate {#auto-translate}
 
 Eliminate repetitive manual localization by using AI to automatically translate text and turn a single master template into variants across multiple locales, while preserving the visual integrity of your designs.
 
