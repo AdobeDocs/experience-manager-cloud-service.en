@@ -94,7 +94,9 @@ The 2026.10.0 feature activation will provide the full feature set for this main
 
 ### Known Issues {#known-issues-28702}
 
-To be confirmed before publication.
+None.
+
+<!-- Confirm known issues before publication. -->
 
 ### Deprecated Features and APIs {#deprecated-28702}
 
@@ -102,7 +104,7 @@ Deprecated and removed features and APIs in AEM as a Cloud Service are detailed 
 
 ### Security Fixes {#security-28702}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release includes 17 security fixes.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release includes 17 security fixes, reinforcing our commitment to robust system protection.
 
 ### Embedded Technologies {#embedded-tech-28702}
 
