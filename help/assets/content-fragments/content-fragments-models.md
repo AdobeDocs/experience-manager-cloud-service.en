@@ -188,6 +188,30 @@ A selection of data types is available for defining your model:
   >
   >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
 
+* **Composite**
+
+  * The **Composite** data type can be used to create nested content.
+  
+    >[!NOTE]
+    >
+    >For further information see [create nested content](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#nested-content).
+
+  * The **Composite** data type enables Content Fragments to store hierarchical, structured data
+    * This is achieved by allowing fields to contain nested sub-fields
+    * The sub-fields are structured
+    * The sub-fields are structured according to Content Fragment Models
+    * The sub-field are restricted to the Content Fragment Models that you specify when defining the sub-field
+  * This feature provides a way to model complex data structures within a single fragment, similar to nested objects in JSON or embedded documents in NoSQL databases 
+
+  >[!WARNING]
+  >
+  >The Composite data type can be used: 
+  >
+  >* in the Touch UI (original) Content Fragment Model Editor
+  >* in the new Content Fragment Editor
+  >
+  >The new Content Fragment Model Editor and the Touch UI (original) Content Fragment Editor will block access to the Composite Data Type and any dependent fields.
+
 * **JSON Object**
   * Allows the Content Fragment author to enter JSON syntax into the corresponding elements of a fragment. 
     * To allow AEM to store direct JSON that you have copy/pasted from another service.
@@ -398,6 +422,13 @@ In addition to standard properties you can define:
 >
 >There is also a recurrence protection for Fragment References in GraphQL. If you create a deep query across two Content Fragments that reference each other, it will return null.
 
+### Composite data {#composite-data}
+
+For further information see:
+
+* [Data Types](#data-types) - Composite
+* Nested Content - [Composite Data](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#composite-data)
+
 ## Content Fragment Model - Properties {#content-fragment-model-properties}
 
 You can edit the **Properties** of a Content Fragment Model:
@@ -408,11 +439,10 @@ You can edit the **Properties** of a Content Fragment Model:
   * **Description**
   * **Upload Image**
   * **Default Preview URL Pattern**
-    
+
     >[!NOTE]
     >
     >This is only used by the *new* Content Fragment Editor. See [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) for further information.
-
 
 ## Enabling or Disabling a Content Fragment Model {#enabling-disabling-a-content-fragment-model}
 

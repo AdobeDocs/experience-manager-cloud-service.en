@@ -21,6 +21,15 @@ solution: Experience Manager Sites
 >
 >See the Sites documentation, [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), for full details of the new editor.
 
+>[!WARNING]
+>
+>The Composite data type can be used: 
+>
+>* in the Touch UI (original) Content Fragment Model Editor
+>* in the new Content Fragment Editor
+>
+>The new Content Fragment Model Editor and the Touch UI (original) Content Fragment Editor will block access to the Composite Data Type and any dependent fields.
+
 From the **Variations** tab, authors can perform the following core tasks:
 
 * [Enter the content](#authoring-your-content) for the fragment.
