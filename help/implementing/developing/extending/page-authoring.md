@@ -26,7 +26,7 @@ Overlays are based on node definitions and allow you to overlay the standard fun
 
 When creating an overlay, a 1:1 copy of the original is not required, as the [sling resource merger](/help/implementing/developing/introduction/sling-resource-merger.md) allows for inheritance.
 
-For more information, see the [JS documentation set](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
+For more information, see the [JS documentation set](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/jsdoc/ui-touch/editor-core/index.html).
 
 For more information on overlays, see [Overlays for Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
 
@@ -66,7 +66,7 @@ When authoring pages, the user must often select from resources in a list.
 
 To keep the list to a reasonable size and also relevant to the use case, a filter can be implemented in the form of a custom predicate. For example, if the `pathbrowser` Granite component is used to allow the user to select the path to a particular resource, the paths presented can be filtered in the following way:
 
-* Implement the custom predicate by implementing [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/predicate/package-summary.html) interface.
+* Implement the custom predicate by implementing [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/cloud-service/javadoc/com/day/cq/commons/predicate/package-summary.html) interface.
 * Specify a name for the predicate, and refer that name when using the `pathbrowser`.
 
 For further detail on creating a custom predicate, see [this article](/help/implementing/developing/introduction/query-builder-custom-predicate.md).

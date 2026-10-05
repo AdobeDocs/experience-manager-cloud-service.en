@@ -206,7 +206,7 @@ The following asset types and functionalities are currently not supported:
 
   >[!IMPORTANT]
   >
-  >Starting May 1, 2023, UGC assets in Dynamic Media remain available for use up to 60 days from the date of upload. After 60 days, the assets are removed.
+  >Starting May 1, 2023, UGC assets in Dynamic Media remain available for use for 60 days from the date of upload. After 60 days, the assets are removed.
 
   >[!NOTE]
   >
@@ -268,6 +268,6 @@ Perform the following tests:
 
 1. From outside your corporate network, verify that unpublished assets (that is, unmarked for publishing) are protected from third-party access.
 
-   Access your network from outside (such as from a personal computer or over a 4G/5G connection), then verify that the public version of the site shows all published assets but none of the unpublished content.
+   Access your network from the outside, then verify that the public version of the site shows all published assets but none of the unpublished content.
 
    Confirm that the staging version does not show any asset because you are accessing the Secure Testing service from an unapproved IP address.

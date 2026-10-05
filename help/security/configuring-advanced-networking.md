@@ -100,7 +100,7 @@ This advanced networking feature lets you configure AEM as a Cloud Service to eg
 
 {{sign-in-to-cloud-manager}}
 
-1. On the **My Programs** console, select the program.
+1. On the **My Programs** console, select the program. 
 
 1. From the **Program Overview** page, navigate to the **Environments** tab and select **Network Infrastructures** in the left panel.
 
@@ -419,6 +419,15 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 To validate that traffic is indeed outgoing on the expected dedicated IP address, check logs in the destination service, if available. Otherwise, use a debugging service such as [https://ifconfig.me/ip](https://ifconfig.me/ip), which returns the calling IP address.
 
+
+
+
+
+
+
+
+
+
 ## Virtual Private Network (VPN) {#vpn}
 
 A VPN allows connecting to an on-premise infrastructure or data center from the author, publish, or preview instances. This ability can be useful, for example, to secure access to a database. It also allows connecting to SaaS vendors such as a CRM vendor that supports VPN.
@@ -430,6 +439,10 @@ A VPN infrastructure supports multiple connections, so you can connect to more t
 Each connection uses either static routing or BGP dynamic routing, and both types can coexist within the same infrastructure. With static routing, you define the address ranges to route through the connection. With BGP, those routes are learned dynamically. For more information, see [UI configuration](#configuring-vpn-ui).
 
 To resolve private host names, DNS resolvers must be listed in the gateway address space.
+
+
+
+
 
 ### Configure VPN using UI {#configuring-vpn-ui}
 
@@ -463,14 +476,18 @@ When a route learned through BGP and a static route overlap for the same destina
     | --- | --- |
     | Connection name | Required. A descriptive name of your VPN connection, which you provided in the previous step and can be updated here. |
     | Address | Required. The VPN device IP address. |
-    | Address space | The IP address ranges to route through the VPN. *Required* for static connections. *Not required* when the connection uses BGP, that is, when **BGP ASN** and **BGP Peering Address** are set. Press `Enter` after adding a range to add another; click `X` to remove a range. |
-    | BGP ASN | The Autonomous System Number on your side of the BGP peering. To enable BGP on the connection, provide this value together with BGP Peering Address. |
-    | BGP Peering Address | The IP address used for BGP peering on your side of the connection. |
-    | Adobe APIPA Address | The IP address for the Adobe side of the BGP peering. If you leave this field empty, Adobe assigns an address from the infrastructure-level address space. To retrieve an *auto-assigned* address, contact Adobe Support. |
-    | Shared key | Required. Your VPN preshared key. Select **Show shared key** to reveal the key so you can double-check its value. |
+    | Address space | The IP address ranges to route through the VPN. *Required* for static routing. *Optional* when the connection uses BGP, that is, when you provide both **BGP ASN** and **BGP Peering Address**. If the connection doesn't use BGP, enter at least one CIDR range. Press `Enter` after adding a range to add another; click `X` to remove a range. |
+    | BGP ASN | The Autonomous System Number on your side of the BGP peering. To enable BGP on the connection, provide this value together with **BGP Peering Address**. You must provide both values or neither. |
+    | BGP Peering Address | The IPv4 address used for BGP peering on your side of the connection. Required if you provide **BGP ASN**. |
+    | Adobe APIPA Address | The IP address for the Adobe side of the BGP peering. The address must be in the range 169.254.21.0 to 169.254.22.255. If you leave this field empty, Adobe assigns an address from the infrastructure-level address space. To retrieve an *auto-assigned* address, contact Adobe Support. |
+    | Shared key | Required. Your VPN preshared key. Select **Show shared key** to reveal the key so you can double-check its value. Copy the shared key to a secure location before you save the connection. You can't view it again after you save. If you lose it, you must create a new one. |
     | IP Security policy | Required. Adjust from the default values as required. |
+    
+    ![Add connection dialog box](/help/security/assets/network-infrastructures-vpn-add-connection-dlgbox.png)
 
-     ![Add connection dialog box](/help/security/assets/network-infrastructures-vpn-add-connection-dlgbox.png)
+    >[!NOTE]
+    >
+    >If you have not set the **Adobe Gateway ASN** for the infrastructure, the **Add connection** dialog box displays a message that the ASN is required before you can save a connection with BGP configured. Set the **Adobe Gateway ASN** in the **Add network infrastructure** dialog box.
 
 1. Click **Save**.
 
@@ -481,15 +498,29 @@ When a route learned through BGP and a static route overlap for the same destina
     | Region | Required. The region in which the infrastructure should be created. |
     | Address Space | Required. The address space can only be one /26 CIDR (64 IP addresses) or larger IP range in your own space. This value cannot be changed later. |
     | DNS Information | Required. A list of remote DNS resolvers. Press `Enter` after inputting a DNS server address to add another. Click `X` after an address to remove it. |
-    | Adobe Gateway ASN | Required. The Autonomous System Number of the Adobe-side VPN gateway. This value is required when any connection in the infrastructure uses BGP. The valid ranges are 64512 to 65514, or 65521 to 65534. The UI validates this value and blocks the update if it falls outside these ranges. |
+    | Adobe Gateway ASN | Required. The Autonomous System Number of the Adobe-side VPN gateway. This value is required when any connection in the infrastructure uses BGP. The valid ranges are 64512 to 65534. The UI validates this value and blocks the update if it falls outside these ranges. |
 
 1. Click **Add** to create the infrastructure.
 
+    >[!NOTE]
+    >
+    >Creating a VPN infrastructure can take more than one hour. After creation is complete, you can enable and configure the VPN at the environment level.
+
 A new record appears below the **Network Infrastructures** heading in the side panel. It includes infrastructure type, status, region, and enabled environments.
+
+
+
 
 ### Configure VPN using API {#configuring-vpn-api}
 
 Once per program, the POST `/program/<programId>/networkInfrastructures` endpoint is invoked. It passes in a payload of configuration information. That information includes the value of **vpn** for the `kind` parameter, region, address space, and DNS resolvers. It also includes one or more VPN connections, each with its gateway configuration, shared VPN key, IP Security policy, and, optionally, BGP routing parameters. The endpoint responds with the `network_id` and other information including the status.
+
+To use BGP, include the top-level `adobeAsn` integer field in the payload. It is required when any connection uses BGP, and it must be between 64512 and 65534. For each BGP connection, include `bgpAsn` and `bgpPeeringAddress`. Optionally, include `adobeApipaAddress`. Observe the following rules:
+
+* Provide `bgpAsn` and `bgpPeeringAddress` together.
+* `bgpPeeringAddress` It must be a valid IPv4 address.
+* `adobeApipaAddress` It must be in the range 169.254.21.0 to 169.254.22.255.
+* `gateway.addressSpace` It is optional for connections that use BGP. Without BGP, it must contain at least one CIDR range.
 
 Once called, it typically takes from 45 to 60 minutes for the networking infrastructure to be provisioned. The GET method in the API can be called to return the status, which eventually changes from `creating` to `ready`. Consult the API documentation for all states.
 
@@ -500,6 +531,8 @@ Once called, it typically takes from 45 to 60 minutes for the networking infrast
 ### Traffic routing {#vpn-traffic-routing}
 
 The table below describes traffic routing.
+
+For connections that use BGP, the routes learned through BGP also determine whether traffic goes through the VPN, in addition to the configured address space.
 
 <table>
 <thead>
@@ -736,7 +769,7 @@ Once network infrastructure is created for a program, only limited properties ca
 
 1. From the **Program Overview** page, navigate to the **Environments** tab.
 1. In the left panel, click **Network Infrastructures**.
-1. Click ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the infrastructure that you want to edit, test, or delete.
+1. Click the ellipsis next to the infrastructure that you want to edit, test, or delete.
 
    ![Selecting edit or delete of advanced networking at the program level](assets/advanced-networking-ui-delete-infrastructure.png)
 

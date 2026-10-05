@@ -152,6 +152,7 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2026 {#2026}
+      + [2026.9.0](/help/implementing/cloud-manager/release-notes/2026/2026-9-0.md)
       + [2026.8.0](/help/implementing/cloud-manager/release-notes/2026/2026-8-0.md)
       + [2026.7.0](/help/implementing/cloud-manager/release-notes/2026/2026-7-0.md)      
       + [2026.6.0](/help/implementing/cloud-manager/release-notes/2026/2026-6-0.md)
@@ -272,6 +273,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.09.24 Release Notes](/help/release-notes/universal-editor/2026/2026-09-24.md)
       + [2026.09.17 Release Notes](/help/release-notes/universal-editor/2026/2026-09-17.md)
       + [2026.09.10 Release Notes](/help/release-notes/universal-editor/2026/2026-09-10.md)
       + [2026.09.03 Release Notes](/help/release-notes/universal-editor/2026/2026-09-03.md)
@@ -1171,7 +1173,7 @@ user-guide-title: AEM as a Cloud Service
 + Developer API Reference {#aem-forms-developer-api-reference}
     + [Adaptive Forms API reference](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
     + [AEM Forms Cloud Service Communications API Reference](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
-    + [AEM Forms Cloud Service JavaScript API Reference](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
+    + [AEM Forms Cloud Service JavaScript API Reference](https://experienceleague.adobe.com/en/tools/aem-api-documentation/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
     + [AEM Forms Cloud Service Java API Reference](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/index.html)
 + Troubleshooting {#troubleshooting-aem-forms-cloud-service}
     + [Installation and configuration](/help/forms/troubleshooting-installation-and-configuration.md)

@@ -103,7 +103,7 @@ To customize the columns in the list view:
 
 1. Add your new columns or remove existing ones.
 
-If you want to insert additional data, you need to write a [PageInfoProvider](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) with a `pageInfoProviderType` property.
+If you want to insert additional data, you need to write a [PageInfoProvider](https://experienceleague.adobe.com/en/tools/aem-api-documentation/cloud-service/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) with a `pageInfoProviderType` property.
 
 >[!NOTE]
 >
