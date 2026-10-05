@@ -294,7 +294,7 @@ There are several other situations where a filter expression cannot be evaluated
 
 Nesting Content Fragments is a great way to model custom content structures. You can even have a fragment with a nested fragment, that also has a nested fragment, that has...and so on. 
 
-However, creating a structure with too many levels can increase the processing times for a GraphQL query, as GraphQL has to traverse the entire hierarchy of all nested Content Fragments. 
+However, creating a structure with too many levels can increase the processing times for a GraphQL query, as GraphQL has to traverse the entire hierarchy of all nested content in Content Fragments. 
 
 Deep nesting can also have adverse effects on content governance. In general, it is recommended to limit Content Fragment nesting to below five or six levels.
 
