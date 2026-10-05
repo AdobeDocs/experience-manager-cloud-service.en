@@ -264,15 +264,15 @@ The extension provides the following capabilities:
 
 ### Working with AEM Sites 6.5 {#content-advisor-browser-extension-aem-sites-6.5}
 
-   You can use the Content Advisor browser extension with AEM Sites 6.5 to discover and use assets from your AEM Assets environment while authoring Sites pages. The available assets to use depend on whether you use a Delivery or Author repository.
+You can use the Content Advisor browser extension with AEM Sites 6.5 to discover and use assets from your AEM Assets environment while authoring Sites pages. The available assets to use depend on whether you use a Delivery or Author repository.
    
-   If you are working with AEM Sites 6.5 as your authoring environment, the [Remote (Delivery) using the Asset Reference field](#content-advisor-browser-extension-configure) is automatically selected while configuring the extension. Ensure that the Delivery or Author repositories for remote AEM Assets must be the same as the AEM Sites 6.5 environment.
+If you are working with AEM Sites 6.5 as your authoring environment, the [Remote (Delivery) using the Asset Reference field](#content-advisor-browser-extension-configure) is automatically selected while configuring the extension. Ensure that the Delivery or Author repositories for remote AEM Assets must be the same as the AEM Sites 6.5 environment.
 
-   If you connect to an AEM Assets Author repository, Content Advisor displays the available assets regardless of their approval status. However, use only assets with an Approved status when adding assets to your AEM Sites 6.5 pages.
+If you connect to an AEM Assets Author repository, Content Advisor displays the available assets regardless of their approval status. However, use only assets with an Approved status when adding assets to your AEM Sites 6.5 pages.
 
-   >[!IMPORTANT]
-   > 
-   >If you drag a preset or a Smart Crop Dynamic Media with OpenAPI rendition of an Approved asset, the preset or Smart Crop configuration is not retained. The delivery URL of the Base rendition is used instead.
+>[!IMPORTANT]
+> 
+>If you drag a preset or a Smart Crop Dynamic Media with OpenAPI rendition of an Approved asset, the preset or Smart Crop configuration is not retained. The delivery URL of the Base rendition is used instead.
    
 
 ### Configure Content Advisor {#content-advisor-browser-extension-configure}
