@@ -45,6 +45,8 @@ Before you start you need to configure the Publish (public facing) URL, a one-ti
 
 To initiate content updates you can give a wide range of natural language prompts. You need to specify the public facing (publish) URL, or the author environment URL, of the page you want to update. Some, but not all, of the verbs that are supported; replace, update, remove, change, revised, modify, adjust, delete. 
 
+As well as entering natural language prompts directly, you can also upload a brief file to request changes. Effective briefs often specify goals, audience, topics, target word count, and keywords.
+
 >[!NOTE]
 >
 >An inbuilt **Questionnaire** can help guide you through your interaction with the skill. 
@@ -58,10 +60,6 @@ Sample prompts include:
 * on `<your-publish-URL>` change "Take our Coffee Quiz" button to a more engaging version"
 * on `<your-author-env-URL>` remove the section "Rewards unclaimed is a Gift missed!"
 * on `<your-author-env-URL>` update based on the attached
-
-### File Upload {#file-upload}
-
-As well as entering natural language prompts directly, you can also upload a document to request changes.
 
 ## Further refinement in authoring {#further-refinement-in-authoring}
 
