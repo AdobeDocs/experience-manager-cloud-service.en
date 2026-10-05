@@ -193,6 +193,12 @@ A selection of data types is available for defining your model:
     * The sub-field are restricted to the Content Fragment Models that you specify when defining the sub-field
   * This feature provides a way to model complex data structures within a single fragment, similar to nested objects in JSON or embedded documents in NoSQL databases 
 
+  >[!NOTE]
+  >
+  >Instances of the Composite Data Type cannot be defined as a Single Field. 
+  >
+  >If this is needed, define the instance as a **Multiple Field** with **Min Number of Items** and **Max Number of Items** both set to `1`.
+
   >[!WARNING]
   >
   >The Composite data type can be used: 
@@ -495,7 +501,7 @@ A Composite field has the following properties and characteristics:
   
     >[!NOTE]
     >
-    >And reserve fragment references for content that is genuinely reusable. The two are complementary, not substitutes.
+    >Reserve fragment references for content that is genuinely reusable. The two are complementary, not substitutes.
 
 In addition to standard properties you can define:
 
@@ -522,7 +528,16 @@ In addition to standard properties you can define:
 
 >[!NOTE]
 >
->The new Content Fragment Model Editor will block editing of composite fields.
+>Although the contents of a Composite field are structured according to a Content Fragment Model they do not form a Content Fragment in the true sense due to the absence of certain metadata.
+
+>[!WARNING]
+>
+>The Composite data type can be used: 
+>
+>* in the Touch UI (original) Content Fragment Model Editor
+>* in the new Content Fragment Editor
+>
+>The new Content Fragment Model Editor and the Touch UI (original) Content Fragment Editor will block access to the Composite Data Type and any dependent fields.
 
 <!-- CQDOC-23582 - should not be needed have moved details to Properties section -->
 
@@ -639,7 +654,7 @@ The Composite data type offers several benefits when modeling data:
 
 * Easier management of content structures. 
 
-  * Because composite data types are embedded directly within a content fragment, there is no need to manage separate folders or storage structures for composite content, as is required with referenced fragments. 
+  * Because composite data types are embedded directly within a Content Fragment, there is no need to manage separate folders or storage structures for composite content, as is required with referenced fragments. 
   * This results in flatter, less cluttered content structures that simplify governance and make composite content easier to discover.
 
 * Simplified authoring with native support for repeatable field groups. 
@@ -650,7 +665,7 @@ The Composite data type offers several benefits when modeling data:
 * Improved content management and delivery performance. 
 
   * Simpler content structures with fewer fragment references reduce the overhead of reference resolution during authoring, publishing, and delivery operations. 
-  * They also decrease the size and complexity of JSON payloads, helping improve API efficiency and overall client-side performance. 
+  * Simpler content structures also decrease the size and complexity of JSON payloads, helping improve API efficiency and overall client-side performance. 
 
 <!-- CQDOC-23582 - check usage details before GA -->
 
@@ -683,12 +698,18 @@ The list below consolidates the current limitations of the Composite data type:
   * New (Headless) Content Fragment Model Editor
     * The Composite type is not yet supported. Model authoring uses the original Touch UI Model Editor.
   * Admin UI / search
-    * Composite fragments do not appear in search results. This is not a defect, but is by design to limit content-tree complexity exposed via search.
+    * Composite fields do not appear in search results. This is not a defect, but is by design to limit content-tree complexity exposed via search.
 
 * Nesting and complexity
 
   * No complexity guardrails in the UI
-    * The system can technically accept composite structures that are very expensive to render or process (deep nesting plus large multifield arrays at multiple levels). Future work will add a complexity metric (depth + cumulative multi-field item counts + field counts) and surface it in the model editor.
+    * The system can technically accept composite structures that are very expensive to render or process (deep nesting plus large multi field arrays at multiple levels). 
+
+    <!-- CQDOC-23582 - check need, we don't usually mention future work -->
+
+    <!--
+    Future work will add a complexity metric (depth + cumulative multi-field item counts + field counts) and surface it in the model editor.
+    -->
 
 * Cross-feature support
 
