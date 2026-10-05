@@ -25,22 +25,6 @@ For more details see:
 >
 >The Content Create skill is the part of the Experience Production Agentic Capability.
 
-## Prerequisites {#prerequisites}
-
-To instruct the skill where to apply updates you must supply a page link. You may provide either an author URL or a publish URL. 
-
-Before you start you need to configure the Publish (public facing) URL, a one-time configuration:
-
-* Prerequisites:
-
-  * To make the configuration, the user must have System Admin or Product Admin rights.
-
-* Configuration:
-
-  1. Invoke the Content Create skill by requesting a content update for the URL.
-  1. Coworker will walk you through the configuration, by asking you a number of questions. 
-  1. Once complete the publish URL is configured and can be used.
-
 ## Interact with the skill {#interact-with-the-skill}
 
 There are several main steps involved in your interaction:
@@ -79,6 +63,8 @@ There are several main steps involved in your interaction:
   * a **preview** link 
   * an **edit** link
     * Use the edit link to [open the page in an AEM authoring surface](#further-refinement-in-authoring) for further refinement.
+
+* When you are ready, you can publish your content as usual; for example, from the editor or console
 
 ## Further refinement in authoring {#further-refinement-in-authoring}
 

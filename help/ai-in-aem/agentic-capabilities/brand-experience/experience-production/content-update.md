@@ -25,27 +25,11 @@ For more details see:
 >
 >The Content Update skill is part of the Experience Production Agentic Capability.
 
-## Prerequisites {#prerequisites}
-
-To instruct the skill where to apply updates you must supply a page link. You may provide either an author URL or a publish URL. 
-
-Before you start you need to configure the Publish (public facing) URL, a one-time configuration:
-
-* Prerequisites:
-
-  * To make the configuration, the user must have System Admin or Product Admin rights.
-
-* Configuration:
-
-  1. Invoke the Content Create skill by requesting a content update for the URL.
-  1. Coworker will walk you through the configuration, by asking you a number of questions. 
-  1. Once complete the publish URL is configured and can be used.
-
 ## Interact with the skill {#interact-with-the-skill}
 
 To initiate content updates you can give a wide range of natural language prompts. You need to specify the public facing (publish) URL, or the author environment URL, of the page you want to update. Some, but not all, of the verbs that are supported; replace, update, remove, change, revised, modify, adjust, delete. 
 
-As well as entering natural language prompts directly, you can also upload a brief file to request changes. Effective briefs often specify goals, audience, topics, target word count, and keywords.
+As well as entering natural language prompts directly, you can also upload a brief file to request changes. Effective briefs often specify goals, audience, topics, target word count, and keywords. When you are ready, you can publish your content as usual; for example, from the editor or console.
 
 >[!NOTE]
 >
