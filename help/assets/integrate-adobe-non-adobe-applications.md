@@ -230,12 +230,22 @@ The extension provides the following capabilities:
 * **Add assets to your content**: Drag and drop a recommended asset into a supported editor.
 * **Copy assets**: Copy an asset to the clipboard when the host application does not support the drag and drop action.
 
+>[!IMPORTANT]
+> 
+>You can send an email to `aem-content-advisor-feedback@adobe.com` to provide feedback on Content Advisor Browser Extension feature.
+
+### Pre-requisites {#prerequisites-content-advisor}
+
+* You must sign in with an Adobe ID that has access to the required AEM Assets repository.
+
+* A valid Dynamic Media license to view Dynamic Media renditions for Approved assets.
+
 ### Install and use the extension {#content-advisor-browser-extension-install}
 
 1. Install the [Content Advisor extension from the Chrome Web Store](https://chromewebstore.google.com/detail/content-advisor/hgagfaikdinmneghfgjjocmfidmnadga).
 2. Sign in with your Adobe ID when prompted.
 3. Open a supported web application or web page.
-4. Open Content Advisor by selecting the **Content Advisor** extension button or the floating Content Advisor widget.
+4. Open Content Advisor by selecting the **Content Advisor** extension button or the floating Content Advisor widget. You can also [configure settings for Content Advisor browser extension](#content-advisor-browser-extension-configure) before starting to use the extension.
 5. Select one of the following options:
    * **Suggest from page** to get recommendations based on the page content.
    * **Suggest from region** to get recommendations based on a selected area of the page.
@@ -244,15 +254,26 @@ The extension provides the following capabilities:
 
 6. Drag a recommended asset into the editor, or select to copy the asset if direct drag and drop is not supported.
 
-   If the asset status is `Approved`, you can click the ![Info icon](assets/info-icon.svg) icon on the asset card and select the  **[!UICONTROL Dynamic Media]** tab to view the [available renditions](#dynamic-media-renditions-content-advisor) for an asset. Select the rendition to open its preview and you can drag the asset from the preview to editor. Optionally, you can also click ![Link icon or Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg) to copy the asset link to the clipboard.
+### Working with Dynamic Media renditions {#working-with-dynamic-media-renditions}
+
+   If the asset status is `Approved`, you can click the ![Info icon](assets/info-icon.svg) icon on the asset card and select the  **[!UICONTROL Dynamic Media]** tab to view the [available renditions](#dynamic-media-renditions-content-advisor) for an asset. Select the rendition to open its preview and you can drag the asset from the preview to page editor. Optionally, you can also click the Link icon to copy the asset link to the clipboard.
 
    ![Content Advisor Browser Extension](assets/content-advisor-browser-extension-dm-openapi-renditions.png)
 
-   You can optionally click **[!UICONTROL Add Modifiers]**, specify a modifier in the text box, and press Enter to apply the transformation to all asset renditions in real-time. Similarly, you can add multiple modifiers to renditions and preview those transformations. You can drag the asset from Preview to the editor. The rendition after applying those modifiers is not saved. See the list of supported modifiers for [Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) and [Dynamic Media with OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
+   You can optionally click **[!UICONTROL Add Modifiers]**, specify a modifier in the text box, and press Enter to apply the transformation to all asset renditions in real-time. Similarly, you can add multiple modifiers to renditions and preview those transformations. You can drag the asset from Preview to the editor. The rendition after applying those modifiers is not saved. See the list of supported modifiers for [Dynamic Media with OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat) and [Dynamic Media Scene 7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
+
+### Working with AEM Sites 6.5 {#content-advisor-browser-extension-aem-sites-6.5}
+
+   You can use the Content Advisor browser extension with AEM Sites 6.5 to discover and use assets from your AEM Assets environment while authoring Sites pages. The available assets to use depend on whether you use a Delivery or Author repository.
+   
+   If you are working with AEM Sites 6.5 as your authoring environment, the [Remote (Delivery) using the Asset Reference field](#content-advisor-browser-extension-configure) is automatically selected while configuring the extension. Ensure that the Delivery or Author repositories for remote AEM Assets must be the same as the AEM Sites 6.5 environment.
+
+   If you connect to an AEM Assets Author repository, Content Advisor displays the available assets regardless of their approval status. However, use only assets with an Approved status when adding assets to your AEM Sites 6.5 pages.
 
    >[!IMPORTANT]
-   >
-   >If you are working with AEM Sites 6.5 as your authoring environment and you have selected [Remote (Delivery) using the Asset Reference field](#content-advisor-browser-extension-configure) while configuring the extension, the Delivery or Author repositories for remote AEM Assets must be the same as the Sites environment. In addition, only Approved assets are available to use for the AEM Assets Author repository.   
+   > 
+   >If you drag a preset or a Smart Crop Dynamic Media with OpenAPI rendition of an Approved asset, the preset or Smart Crop configuration is not retained. The delivery URL of the Base rendition is used instead.
+   
 
 ### Configure Content Advisor {#content-advisor-browser-extension-configure}
 
@@ -273,9 +294,10 @@ Select the **Settings** icon in the Content Advisor panel to configure the exten
 
 * The Content Advisor extension is supported in Google Chrome and other browsers based on Chromium, such as Microsoft Edge.
 * The extension does not work on every website. Some websites restrict browser extensions, and the Content Advisor extension button or panel might not be available.
-* The capabilities available in Content Advisor depend on the host application. Drag and drop and adding assets directly to content are supported only when the host application allows these operations. In other applications, you can select and copy the asset instead.
+* The capabilities available in Content Advisor depend on the host application. Drag and drop and adding assets directly to content are supported only when the host application allows these operations. In other applications, you can select the asset to copy it and then paste it into the page editor.
 * Asset recommendations depend on the content available on the page or in the selected region. Pages with limited or inaccessible content might return fewer recommendations.
-* You must sign in with an Adobe ID that has access to the required AEM Assets repository.
+* When you drag a Dynamic Media rendition into PowerPoint, the asset is embedded directly in the presentation as a copy of the asset data (binary) rather than as a reference to the original asset. As a result, the presentation does not retain a link to the original asset or its delivery URL. This behavior may also occur in other applications, depending on how the application handles the asset.
+
 
 
 **See also**
