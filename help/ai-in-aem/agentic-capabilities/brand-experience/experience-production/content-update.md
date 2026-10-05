@@ -41,9 +41,13 @@ Before you start you need to configure the Publish (public facing) URL, a one-ti
   1. Coworker will walk you through the configuration, by asking you a number of questions. 
   1. Once complete the publish URL is configured and can be used.
 
-## Provide the prompt and upload files {#provide-the-prompt-and-upload-files}
+## Interact with the skill {#interact-with-the-skill}
 
 To initiate content updates you can give a wide range of natural language prompts. You need to specify the public facing (publish) URL, or the author environment URL, of the page you want to update. Some, but not all, of the verbs that are supported; replace, update, remove, change, revised, modify, adjust, delete. 
+
+>[!NOTE]
+>
+>An inbuilt **Questionnaire** can help guide you through your interaction with the skill. 
 
 ### Sample Prompts {#sample-prompts}
 

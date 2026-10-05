@@ -41,33 +41,44 @@ Before you start you need to configure the Publish (public facing) URL, a one-ti
   1. Coworker will walk you through the configuration, by asking you a number of questions. 
   1. Once complete the publish URL is configured and can be used.
 
-## Provide the prompt and brief {#provide-the-prompt-and-brief}
+## Interact with the skill {#interact-with-the-skill}
 
-To provide the prompt and brief you need to:
+There are several main steps involved in your interaction:
 
-1. Use natural language to describe what you want done and identifying where the page will be located, using a path or URL within your website. For example, creating a new page based on your brief:
+>[!NOTE]
+>
+>Not all steps are needed, and not necessarily in the order below.
+
+>[!NOTE]
+>
+>An inbuilt **Questionnaire** can help guide you through your interaction with the skill. 
+
+* Provide the prompt
+
+  Use natural language to describe:
   
-   * `create a new page based on the attached at https://frescopa.coffee/sustainability/coffee-bean-types`
+  * what you want done 
+  * and identifying where the page will be located, using a path or URL within your website.
 
-1. Upload the brief relevant to your request. 
+* Upload a brief
 
-1. When you are ready, submit the prompt and the brief.
+  You can upload a file to provide a brief describing what the skill should generate. The skill accepts a wide range of formats for the brief. Effective briefs often specify goals, audience, topics, target word count, and keywords.
 
-## Select a template {#select-a-template}
+* Provide a reference page
 
-The skill will then request that you specify a template. The template provides the skill with the page structure and layout. Generation conforms to that layout. The skill can add and remove sections as needed, based on the brief; for example, to meet a different word count.
+  The skill will request that you specify a reference page to be used as a template. The template provides the skill with the page structure and layout. Generation conforms to that layout. The skill can add and remove sections as needed, based on the brief; for example, to meet a different word count.
 
-## Review the plan {#review-the-plan}
+* Review the plan
 
-Next, the skill presents a plan for the changes it will make, as based on your inputs and its analysis of the brief. You can adjust the plan or proceed with the plan and start generation.
+  Next, the skill presents a plan for the changes it will make, as based on your inputs and its analysis of the brief. You can adjust the plan or proceed with the plan and start generation.
 
-## Proceed with generation {#proceed-with-generation}
+* Proceed with generation
 
-When generation finishes, the skill provides two links: 
+  When generation finishes, the skill provides two links: 
 
-* a **preview** link 
-* an **edit** link
-  * Use the edit link to [open the page in an AEM authoring surface](#further-refinement-in-authoring) for further refinement.
+  * a **preview** link 
+  * an **edit** link
+    * Use the edit link to [open the page in an AEM authoring surface](#further-refinement-in-authoring) for further refinement.
 
 ## Further refinement in authoring {#further-refinement-in-authoring}
 
