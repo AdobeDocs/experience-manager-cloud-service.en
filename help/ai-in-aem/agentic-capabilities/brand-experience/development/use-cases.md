@@ -19,7 +19,7 @@ The AEM Cloud Manager Pipeline Management skill lets you manage your CI/CD pipel
 
 When something goes wrong, the skill goes beyond status checks: it can retrieve step metrics, logs, artifacts, and execution failures so you can diagnose an issue without downloading and searching through raw log files yourself. It also handles day-to-day pipeline configuration — managing pipeline variables, invalidating cached artifacts, and adjusting pipeline settings — so routine maintenance tasks that used to require several clicks through the UI can be done with a single request.
 
-To find out why an execution failed and get a suggested fix, see [AEM Cloud Manager Pipeline Troubleshooting](#aem-cloud-manager-pipeline-troubleshooting).
+To find out why an execution failed, see [AEM Cloud Manager Pipeline Troubleshooting](#aem-cloud-manager-pipeline-troubleshooting).
 
 AI can make mistakes so review suggested actions before applying them, particularly for destructive operations.
 
