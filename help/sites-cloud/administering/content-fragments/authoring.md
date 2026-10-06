@@ -440,8 +440,8 @@ Selecting the **Open Composite** (link) icon in the Composite item opens its fie
 Use:
 
 * The breadcrumb icons in the top toolbar to navigate back to the fragment content.
-* Add / Remove / Reorder controls for multi-value Composites.
-* For multi-model fields, the **Create Composite** icon opens the **New Composite** dialog to let you select which model to instantiate.
+* Remove and Reorder controls for multi-value Composites.
+* For multi fields, you can create a new instance with the **Create Composite** option.
 * A variation selector at the top level. Once a variation is chosen, the entire nested Composite tree reflects that variation. Items can differ in count and content between variations.
 
 ![Content Fragments editor - edit Composite field](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-composite-edit.png)
