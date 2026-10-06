@@ -433,6 +433,12 @@ For example:
 
 When you open a fragment that contains a Composite field you see a panel-style rendering for the Composite field, not an inline form. 
 
+Use:
+
+* Remove and Reorder controls for multi-value Composites.
+* The **Create Composite** option to create a new instance for multi fields. 
+* The variation selector at the top level. Once a variation is chosen, the entire nested Composite tree reflects that variation. Items can differ in count and content between variations.
+
 ![Content Fragments editor - Composite field](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-composite.png)
 
 Selecting the **Open Composite** (link) icon in the Composite item opens its fields in a dedicated editor area within the same browser session. 
@@ -440,9 +446,11 @@ Selecting the **Open Composite** (link) icon in the Composite item opens its fie
 Use:
 
 * The breadcrumb icons in the top toolbar to navigate back to the fragment content.
-* Remove and Reorder controls for multi-value Composites.
-* For multi fields, you can create a new instance with the **Create Composite** option.
-* A variation selector at the top level. Once a variation is chosen, the entire nested Composite tree reflects that variation. Items can differ in count and content between variations.
+* The right panel to view information about the Composite field.
+
+  >[!NOTE]
+  >
+  >If you select other tabs from the right panel you return to the fragment content.
 
 ![Content Fragments editor - edit Composite field](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-composite-edit.png)
 
