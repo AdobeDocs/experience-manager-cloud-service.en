@@ -163,9 +163,9 @@ Give teams visibility into delivery health by reporting operational activity suc
 
 To participate or learn more, send an email to `dm-beta-feedback@adobe.com`.
 
-#### Dynamic Media: Auto Reflow and Auto Translate {#auto-reflow-and-auto-translate}
+#### Dynamic Media Template: Auto Translate {#auto-translate}
 
-Eliminate repetitive redesign and manual localization by using AI to automatically adapt a single master template into layouts that fit different formats and aspect ratios (web, social, display, and email) and to instantly translate text across languages, all while preserving the visual integrity of the design, turning one master asset into variants across many device sizes and locales.
+Eliminate repetitive manual localization by using AI to automatically translate text and turn a single master template into variants across multiple locales, while preserving the visual integrity of your designs.
 
 To participate or learn more, send an email to `dm-beta-feedback@adobe.com`.
 
@@ -299,7 +299,7 @@ Validate file attachments in Adaptive Forms before or on submission using custom
 
 #### Canary Deployments - Validate Features Before Accepting Live Traffic {#canary-deployments}
 
-[Canary deployments] let you validate a new release against production infrastructure before it serves customer traffic. Available **October 1st** for AEM Cloud Service implementations.
+Available for AEM Cloud Service, [Canary deployments](/help/implementing/cloud-manager/canary-deployments.md) let you validate a new release against production infrastructure before it serves customer traffic. 
 
 Deploy the build alongside your current stable release on the publish tier, then route selected requests to it with a request header. All other traffic continues to be served by the stable release, unaffected. The author tier remains on the stable version throughout.
 
@@ -347,7 +347,7 @@ Use this integration to:
 * Build dashboards and alerts for your AEM tiers
 * Correlate AEM behavior with other services during incidents
 
-OpenTelemetry will be in Limited Availability on **October 1st**. To get on the list for access, email [aemcs-otel-access@adobe.com](mailto:aemcs-otel-access@adobe.com), describing your use case and how you intend on ingesting the data. 
+OpenTelemetry will be in Limited Availability on **October 19th**. To get on the list for access, email [aemcs-otel-access@adobe.com](mailto:aemcs-otel-access@adobe.com), describing your use case and how you intend on ingesting the data. 
 
 #### AEM Query Optimization in the Code Assessment Agent Skill (IDE AI Tooling) {#code-assessment-skill}
 

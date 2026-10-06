@@ -22,7 +22,7 @@ role_v2:
 >
 >The monthly newsletter is now discontinued. However, you can still access the newsletter archives below.
 
-The Dynamic Media Newsletter by Experience League was designed to help you get up to speed with Dynamic Media and Dynamic Media Classic so that you could start realizing value right away.
+The Dynamic Media Newsletter by Experience League was designed to help you get up to speed with Dynamic Media and Dynamic Media Classic to start realizing value right away.
 
 In this one-stop shop archived newsletter, you can find valuable knowledge-building resources such as how-to videos and solution overviews. There are also introductions to key features and capabilities like image presets, viewer presets, and video profiles.
 

@@ -68,13 +68,13 @@ See [Additional production program options](#options).
 
    * Click ![Chevron Size 300 icon](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) to the left of a solution name to reveal any optional add-ons. <!-- such as the **Commerce** add-on option under **Sites**. -->
 
-<!--   ![Select add-ons](assets/setup-prod-commerce.png) -->
+     <!--   ![Select add-ons](assets/setup-prod-commerce.png) -->
 
-      >[!NOTE]
-      >
-      >If your program uses Edge Delivery Services for delivery, a publish tier may not be required. With the flexible publish tier feature (Beta), you can configure whether to provision a publish tier on the Solutions & Add-ons tab. See [Flexible Publish Tier (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
+     >[!NOTE]
+     >
+     >If your program uses Edge Delivery Services for delivery, a publish tier may not be required. With the flexible publish tier feature (Beta), you can configure whether to provision a publish tier on the Solutions & Add-ons tab. See [Flexible Publish Tier (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
 
-      ![Select solutions](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-solutions.png)
+     ![Select solutions](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-solutions.png)
 
 1. Click **Continue**.
 
