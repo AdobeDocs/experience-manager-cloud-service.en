@@ -29,7 +29,7 @@ You can add custom extensions to different areas of the [!DNL Content Hub] inter
 >[!IMPORTANT]
 >
 >* Adobe App Builder is required to build and deploy UI extensions for Content Hub.
->* [!DNL Content Hub] UI extensibility is currently available under **Limited Availability**. To enable this capability, contact the Content Hub team and request access to the feature and the related technical documentation.
+>* This feature is available as a Limited Availability feature. To enable this capability, contact the Content Hub team and request access to the feature and the related technical documentation.
 >* The App Builder skills for AI coding assistants support [!DNL Content Hub] UI extensions. You can use them to scaffold, build, test, and deploy extensions for all the extension points listed above.
 
 ## View UI extensions in [!DNL Content Hub] {#view-ui-extensions}
