@@ -23,6 +23,7 @@ You can add custom extensions to different areas of the [!DNL Content Hub] inter
 >* Adobe App Builder is required to build and deploy UI extensions for Content Hub.
 >* [!DNL Content Hub] UI extensibility is currently available under **Limited Availability**. To enable this capability, contact the Content Hub team and request access to the feature and the related technical documentation.
 >* You can provide documentation feedback by expanding **[!UICONTROL Detailed Feedback options]** and selecting **[!UICONTROL Report an issue]**.
+>* The App Builder skills for AI coding assistants support [!DNL Content Hub] UI extensions. You can use them to scaffold, build, test, and deploy extensions for all the extension points listed above.
 
 ## View UI extensions in [!DNL Content Hub] {#view-ui-extensions}
 
@@ -83,3 +84,22 @@ For example, organizations can implement an **Extend Expiry** workflow that enab
 After the request is submitted, Content Hub displays a confirmation message.
 
 ![Confirmation message](assets/configured-message.png)
+
+### Build the extension with App Builder skills {#build-with-app-builder-skills}
+
+[!DNL Content Hub] UI extensions are supported by the App Builder skills. The skills guide your AI coding assistant through creating, testing, and deploying an extension that uses the `aem/assets/contenthub/1` extension point. This single extension point covers the Asset Card, Collection Card, Asset Details, and Bulk Action Bar extension points.
+
+1. Install the App Builder skills from the [Adobe Skills repository](https://github.com/adobe/skills). For the installation options, see the repository README.
+
+2. Describe the extension you want to build. For example: "Build a Content Hub extension that adds an Extend Expiry panel to Asset Details."
+
+3. The skills scaffold the project from the [!DNL Content Hub] sample app by running `aio app init --repo adobe/aem-uix-examples/aem-assets-contenthub-sample`, and then customize it for your use case:
+   * Set the extension ID.
+   * Restrict the extension to specific delivery repositories by populating `allowedRepos`.
+   * Keep only the extension points you need.
+
+4. Run `aio app run` to start the extension locally. Open the following URL in your browser to test it in [!DNL Content Hub], replacing `<delivery-repo>` with your [!DNL Content Hub] delivery host:
+
+   `https://experience.adobe.com/?devMode=true&ext=https://localhost:9080&repoId=<delivery-repo>#/assets/contenthub/`
+
+5. Deploy the extension to the Stage or Production workspace. To make the extension available to your organization, submit it for approval in Adobe Developer Console. An organization administrator then approves it in MyExchange.
