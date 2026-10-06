@@ -50,7 +50,6 @@ The skill investigates failures in the following pipelines and steps:
 
 For failures in other steps, such as the deployment step of a full-stack pipeline, the skill reports the failed step without diagnosing it. In that case, inspect the logs as described in [Access and Download Logs](/help/implementing/cloud-manager/manage-logs.md), or contact Adobe Support.
 
-When the skill identifies a fix with enough confidence, it shows you the exact change for review. Only after you approve it, the skill pushes the change to a new branch. Run a pipeline on that branch to validate the fix before you merge it.
 
 You can also start troubleshooting directly from Cloud Manager. On a failed pipeline execution, click **Troubleshoot with AI** to open Coworker with that execution already referenced.
 
