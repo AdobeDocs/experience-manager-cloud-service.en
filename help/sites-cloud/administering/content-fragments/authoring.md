@@ -429,18 +429,26 @@ For example:
   ![Revert to inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-revert-to-inheritance.png)
 -->
 
-## Edit a Composite item {#edit-a-composite-item}
+## Edit a Composite field {#edit-a-composite-field}
 
-From the [new Content Fragment Editor](/help/sites-cloud/administering/content-fragments/authoring.md) you can open a fragment that contains a composite field and see:
+When you open a fragment that contains a Composite field you see a panel-style rendering for the Composite field, not an inline form. 
 
-* A panel-style rendering for the composite field, not an inline form. Selecting the composite item opens its fields in a dedicated editor area within the same browser session.
-* Add / Remove / Reorder controls for multi-value composites.
-* For multi-model fields, an **Add** dialog lets the author pick which model to instantiate.
-* A variation selector at the top level. Once a variation is chosen, the entire nested composite tree reflects that variation. Items can differ in count and content between variations.
+![Content Fragments editor - Composite field](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-composite.png)
+
+Selecting the **Open Composite** (link) icon in the Composite item opens its fields in a dedicated editor area within the same browser session. 
+
+Use:
+
+* The breadcrumb icons in the top toolbar to navigate back to the fragment content.
+* Add / Remove / Reorder controls for multi-value Composites.
+* For multi-model fields, the **Create Composite** icon opens the **New Composite** dialog to let you select which model to instantiate.
+* A variation selector at the top level. Once a variation is chosen, the entire nested Composite tree reflects that variation. Items can differ in count and content between variations.
+
+![Content Fragments editor - edit Composite field](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-composite-edit.png)
 
 >[!NOTE]
 >
->The original Touch UI Fragment Editor will block editing of composite fields.
+>The original Touch UI Fragment Editor will block editing of Composite fields.
 
 ## View Workflows {#view-workflows}
 
