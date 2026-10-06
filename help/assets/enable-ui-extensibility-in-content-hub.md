@@ -11,6 +11,14 @@ exl-id:
 
 [!DNL Content Hub] supports UI extensibility, enabling organizations to integrate custom business workflows directly into the Content Hub experience. Using Adobe App Builder, developers can add custom UI components that enable users to perform business-specific actions without leaving Content Hub.
 
+For example, organizations can implement an **Extend Expiry** workflow that enables users to request an extension for assets approaching expiration. Users submit the request from the extension panel, while the configured backend processes the request and routes it through the organization's workflow.
+
+![Extend Expiry extension panel](assets/extension-tab.png)
+
+After the request is submitted, Content Hub displays a confirmation message.
+
+![Confirmation message](assets/configured-message.png)
+
 You can add custom extensions to different areas of the [!DNL Content Hub] interface. [!DNL Content Hub] supports the following extension points:
 
 * **Asset Card**
@@ -22,7 +30,6 @@ You can add custom extensions to different areas of the [!DNL Content Hub] inter
 >
 >* Adobe App Builder is required to build and deploy UI extensions for Content Hub.
 >* [!DNL Content Hub] UI extensibility is currently available under **Limited Availability**. To enable this capability, contact the Content Hub team and request access to the feature and the related technical documentation.
->* You can provide documentation feedback by expanding **[!UICONTROL Detailed Feedback options]** and selecting **[!UICONTROL Report an issue]**.
 >* The App Builder skills for AI coding assistants support [!DNL Content Hub] UI extensions. You can use them to scaffold, build, test, and deploy extensions for all the extension points listed above.
 
 ## View UI extensions in [!DNL Content Hub] {#view-ui-extensions}
@@ -31,15 +38,15 @@ Within [!DNL Content Hub], UI extensions can be added to the following extension
 
 ### Asset Card
 
-Open the **[!UICONTROL More]** menu on an asset card and select **[!UICONTROL Asset label]** to open the custom dialog.
+You can add custom icon and custom workflow/dialog in Asset Card. For example, open the [!UICONTROL More] menu on an asset card and select [!UICONTROL Asset label] to open the extension custom dialog.
 
 ![Asset card showing the Asset label option](assets/asset-label.png)
 
-The custom dialog displays the resource type and resource ID for the selected asset.
+The custom dialog displays the resource type and resource ID for the selected resource.
 
 ### Collection Card
 
-Open the **[!UICONTROL More]** menu on a collection card and select **[!UICONTROL Collection label]** to open the UI extension.
+You can add custom icon and custom workflow/dialog in Collection Card. For example, open the [!UICONTROL More] menu on a collection card and select [!UICONTROL Collection label] to open the extension custom dialog.
 
 ![Collection card showing the Collection label option](assets/collection-label.png)
 
@@ -51,11 +58,11 @@ Open an asset and navigate to the Asset Details page. Select the **Asset Details
 
 ### Bulk Action Bar
 
-Select one or more assets to display the **Bulk Action Bar**. Select **[!UICONTROL Custom label]** to open the custom dialog.
+You can add custom icon and custom workflow/dialog in Bulk Action Bar. For example, select one or more assets to display the **Bulk Action Bar**, and select **[!UICONTROL Custom label]** to open the extension custom dialog.
 
 ![Bulk Action Bar showing the Custom label option](assets/selection-bar-custom-label.png)
 
-The custom dialog displays the selected asset or assets and their resource IDs.
+The custom dialog displays the custom logic you configured in the Extension App.
 
 ## Prerequisites for adding the extensibility component {#content-hub-prerequisites}
 
@@ -72,18 +79,6 @@ Fulfil the following requirements before building UI extensions for [!DNL Conten
 >[!IMPORTANT]
 >
 >Detailed technical documentation for [!DNL Content Hub] UI extensibility is currently available through the Content Hub team because the capability is under **Limited Availability**. Contact the Content Hub team to request access to the documentation.
-
-## Extend business workflows in Content Hub {#extend-business-workflows}
-
-UI extensibility enables organizations to bring business workflows directly into Content Hub. Instead of switching between multiple applications, users can complete workflow-specific actions while working with assets.
-
-For example, organizations can implement an **Extend Expiry** workflow that enables users to request an extension for assets approaching expiration. Users submit the request from the extension panel, while the configured backend processes the request and routes it through the organization's workflow.
-
-![Extend Expiry extension panel](assets/extension-tab.png)
-
-After the request is submitted, Content Hub displays a confirmation message.
-
-![Confirmation message](assets/configured-message.png)
 
 ### Build the extension with App Builder skills {#build-with-app-builder-skills}
 
