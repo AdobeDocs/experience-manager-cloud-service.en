@@ -221,7 +221,7 @@ For more information about the integrations, properties, and customizations, ref
 
 ## Use Content Advisor with the browser extension (Beta) {#content-advisor-browser-extension}
 
-The Content Advisor browser extension lets you access Content Advisor while working in supported web applications and web pages. It helps you discover relevant AEM Assets based on the content of a page or a specific region without switching to AEM Assets.
+The Content Advisor browser extension lets you access Content Advisor while working in supported applications. It helps you discover relevant AEM Assets based on the content of a page or a specific region without switching to AEM Assets.
 
 The extension provides the following capabilities:
 
@@ -238,7 +238,7 @@ The extension provides the following capabilities:
 
 * You must sign in with an Adobe ID that has access to the required AEM Assets repository.
 
-* A valid Dynamic Media license to view Dynamic Media renditions for Approved assets.
+* A valid Dynamic Media license to view Dynamic Media renditions.
 
 ### Install and use the extension {#content-advisor-browser-extension-install}
 
@@ -272,7 +272,7 @@ If you connect to an AEM Assets Author repository, Content Advisor displays the 
 
 >[!IMPORTANT]
 > 
->If you drag a preset or a Smart Crop Dynamic Media with OpenAPI rendition of an Approved asset, the preset or Smart Crop configuration is not retained. The delivery URL of the Base rendition is used instead.
+>If you drag a Preset or a Smart Crop Dynamic Media with OpenAPI rendition, the preset or Smart Crop configuration is not retained. The delivery URL of the Base rendition is used instead.
    
 
 ### Configure Content Advisor {#content-advisor-browser-extension-configure}
@@ -288,15 +288,19 @@ Select the **Settings** icon in the Content Advisor panel to configure the exten
 | **Sign out** | Signs you out of Content Advisor. |
 | **Show transfer progress** | Displays the progress of asset transfers when assets are being transferred. |
 | **Theme** | Select **System**, **Light**, or **Dark** to control the appearance of Content Advisor. |
+
+<!--
 | **Asset reference** | Specifies how an asset is referenced when it is used in supported applications. Select **Local (DAM path)** to use the asset's AEM Assets path, or **Remote (delivery)** to use the asset's delivery URL. |
+
+-->
 
 ### Important points to note {#content-advisor-browser-extension-important-points}
 
 * The Content Advisor extension is supported in Google Chrome and other browsers based on Chromium, such as Microsoft Edge.
-* The extension does not work on every website. Some websites restrict browser extensions, and the Content Advisor extension button or panel might not be available.
-* The capabilities available in Content Advisor depend on the host application. Drag and drop and adding assets directly to content are supported only when the host application allows these operations. In other applications, you can select the asset to copy it and then paste it into the page editor.
 * Asset recommendations depend on the content available on the page or in the selected region. Pages with limited or inaccessible content might return fewer recommendations.
-* When you drag a Dynamic Media rendition into PowerPoint, the asset is embedded directly in the presentation as a copy of the asset data (binary) rather than as a reference to the original asset. As a result, the presentation does not retain a link to the original asset or its delivery URL. This behavior may also occur in other applications, depending on how the application handles the asset.
+* The extension does not work with every host application. Some applications restrict browser extensions, and the Content Advisor extension button or panel might not be available.
+* The capabilities available in Content Advisor depend on the host application. Drag and drop and adding assets directly to content are supported only when the host application allows these operations. In other applications, you can select the asset to copy it and then paste it into the page editor.
+* When you drag a Dynamic Media rendition into PowerPoint, the asset is embedded directly in the presentation as a copy of the asset data (binary) rather than as a reference to the original asset. As a result, the presentation does not retain a link to the original asset or its delivery URL. This behavior may also occur in other applications, depending on how the host application handles the asset.
 
 
 
