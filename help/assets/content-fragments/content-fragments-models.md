@@ -36,14 +36,6 @@ To use Content Fragment Models you:
 >
 >* "This model has a custom UI Schema configured. The order of fields displayed in this UI may not match the UI Schema. To view the fields aligned with the UI Schema, you need to switch to the new Content Fragment Editor."
 
-<!-- CQDOC-23582 - remove when GA -->
-
->[!NOTE]
->
->The Composite data type is currently in Limited Availability. 
->
->If you would like to participate, create a [support ticket](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
-
 ## Creating a Content Fragment Model {#creating-a-content-fragment-model}
 
 1. Navigate to **Tools**, **General**, then open **Content Fragment Models**.

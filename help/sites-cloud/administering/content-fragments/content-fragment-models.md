@@ -31,14 +31,6 @@ This page covers how to define your content fragment model, using the dedicated 
 >
 >* "This model has a custom UI Schema configured. The order of fields displayed in this UI may not match the UI Schema. To view the fields aligned with the UI Schema, you need to switch to the new Content Fragment Editor."
 
-<!-- CQDOC-23582 - remove when GA -->
-
->[!NOTE]
->
->The Composite data type is currently in Limited Availability. 
->
->If you would like to participate, create a [support ticket](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
-
 ## Defining your Content Fragment Model {#defining-your-content-fragment-model}
 
 The Content Fragment Model effectively defines the structure of the resulting Content Fragments using a selection of **[Data Types](#data-types)**. Using the model editor you can add instances of the data types, then configure them to create the required fields:
@@ -343,14 +335,6 @@ Content Fragments can form nested content, using any of the following data types
   * Suitable when modular, reusable content is required.
 
 * [Composite](#composite-data) data type:
-
-  <!-- CQDOC-23582 - remove when GA -->
-
-  >[!NOTE]
-  >
-  >The Composite data type is currently in Limited Availability. 
-  >
-  >If you would like to participate, create a [support ticket](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
   * References other fragments, dependent on the models specified.
   * The referenced fragments are fully embedded in, and integral to, the  referencing fragment. They have a true parent-child relationship.

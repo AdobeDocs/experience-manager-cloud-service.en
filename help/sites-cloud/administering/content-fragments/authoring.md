@@ -43,14 +43,6 @@ This editor provides:
 >
 >The editor described in this section is *only* available in the [Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md); so *online* Adobe Experience Manager (AEM) as a Cloud Service, not a local instance.
 
-<!-- CQDOC-23582 - remove when GA -->
-
->[!NOTE]
->
->The Composite data type is currently in Limited Availability. 
->
->If you would like to participate, create a [support ticket](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
-
 ## Content Fragment Editor {#content-fragment-editor}
 
 When you first open the Content Fragment Editor, you see four main areas:
