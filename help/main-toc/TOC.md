@@ -106,6 +106,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2026 {#2026}
+      + [Maintenance Release Notes for 2026.10.0](/help/release-notes/maintenance/2026/2026-10-0.md) 
       + [Maintenance Release Notes for 2026.9.0](/help/release-notes/maintenance/2026/2026-9-0.md)
       + [Maintenance Release Notes for 2026.8.0](/help/release-notes/maintenance/2026/2026-8-0.md)
       + [Maintenance Release Notes for 2026.7.0](/help/release-notes/maintenance/2026/2026-7-0.md)
@@ -152,6 +153,7 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2026 {#2026}
+      + [2026.9.0](/help/implementing/cloud-manager/release-notes/2026/2026-9-0.md)
       + [2026.8.0](/help/implementing/cloud-manager/release-notes/2026/2026-8-0.md)
       + [2026.7.0](/help/implementing/cloud-manager/release-notes/2026/2026-7-0.md)      
       + [2026.6.0](/help/implementing/cloud-manager/release-notes/2026/2026-6-0.md)
