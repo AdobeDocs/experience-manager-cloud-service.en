@@ -42,6 +42,8 @@ AI can make mistakes so review suggested actions before applying them, particula
 
 The AEM Cloud Manager Pipeline Troubleshooting skill helps you find out why a pipeline execution failed, without downloading and searching through raw log files yourself. Reference a failed execution by pipeline name or execution ID, and the skill confirms the failure in Cloud Manager, identifies the failed step, and explains in plain language what went wrong, why, and what to do next. If your request matches more than one pipeline, the skill asks you to choose one before it continues.
 
+Note that this capability is implemented as a specialist agent and so does not visually appear as a listed skill in the Coworker Customizations interface.
+
 The skill investigates failures in the following pipelines and steps:
 
 * The Build & Unit Testing step and the Code Scanning step in full-stack Deployment and Code Quality pipelines.
