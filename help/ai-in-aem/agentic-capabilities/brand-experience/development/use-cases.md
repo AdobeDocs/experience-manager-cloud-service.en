@@ -53,7 +53,7 @@ For failures in other steps, such as the deployment step of a full-stack pipelin
 
 You can also start troubleshooting directly from Cloud Manager. On a failed pipeline execution, click **Troubleshoot with AI** to open Coworker with that execution already referenced.
 
-AI can make mistakes so review the diagnosis and any proposed fix before acting on it, particularly before you merge a pushed fix into your target branch.
+AI can make mistakes so review the diagnosis before acting on it.
 
 | Capability | Sample Prompts |
 | --- | --- |
