@@ -257,9 +257,9 @@ mTLS works alongside the destination's existing authentication. Keep the destina
 Add an `mtls` block alongside the destination's other properties:
 
 * `cert` - required. The client certificate, in PEM format. It can be followed by intermediate CA certificates, with the client certificate first.
-* `key` - required. The private key for the client certificate, in PEM format. RSA and EC keys are supported. An unencrypted key can be in PKCS#1 (`-----BEGIN RSA PRIVATE KEY-----`), SEC1 (`-----BEGIN EC PRIVATE KEY-----`) or PKCS#8 (`-----BEGIN PRIVATE KEY-----`) format. An encrypted key must be in PKCS#8 format (`-----BEGIN ENCRYPTED PRIVATE KEY-----`).
+* `key` - required. The private key for the client certificate, in PEM format. RSA and EC keys are supported. An unencrypted key can be in PKCS#1 (`-----BEGIN RSA PRIVATE KEY-----`), SEC1 (`-----BEGIN EC PRIVATE KEY-----`) or PKCS#8 (`-----BEGIN PRIVATE KEY-----`) format. An encrypted key can be in PKCS#8 format (`-----BEGIN ENCRYPTED PRIVATE KEY-----`) or in the older PEM format, which has `Proc-Type: 4,ENCRYPTED` and `DEK-Info` lines after the `-----BEGIN` line and is encrypted with AES or Triple DES (`DES-EDE3-CBC`).
 * `ca` - optional. The CA certificate, in PEM format, used to verify your destination's server certificate. It can contain more than one certificate, such as a certificate chain. Set it when the server certificate is issued by a private CA.
-* `keyPasswd` - optional. The password for the private key. Set it only if the key is encrypted, and use it with an encrypted PKCS#8 key.
+* `keyPasswd` - optional. The password for the private key. Set it only if the key is encrypted.
 
 The following example forwards AEM and CDN logs to Splunk using mTLS:
 
@@ -282,7 +282,7 @@ The following example forwards AEM and CDN logs to Splunk using mTLS:
 The following rules apply:
 
 * `cert` and `key` must be provided together. An `mtls` block that contains only `ca` or `keyPasswd` is rejected.
-* Encrypted keys in the older format, which has `Proc-Type: 4,ENCRYPTED` and `DEK-Info` lines after the `-----BEGIN` line, are not supported. The deployment fails with an error about the private key. Convert the key to encrypted PKCS#8 with the following command, which asks for the current password and then for the password of the new key:
+* For encrypted keys, PKCS#8 is recommended. To convert a key in the older format, use the following command, which asks for the current password and then for the password of the new key:
 
    ```shell
    openssl pkcs8 -topk8 -v2 aes-256-cbc -in client.key -out client-pkcs8.key
