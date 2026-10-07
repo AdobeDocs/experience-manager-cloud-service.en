@@ -29,15 +29,15 @@ Dynamic Media serves interactive viewing experiences, including zoom, 360° spin
 
 ## What is Dynamic Media?
 
-Dynamic Media in Adobe Experience Manager (AEM) as a Cloud Service is a powerful solution designed to help you manage, deliver, and optimize rich media assets like images and videos across digital platforms. It transforms static media into dynamic, engaging experiences by allowing real-time modifications, such as resizing, cropping, and adjusting quality based on the user's device or screen size. With Dynamic Media, your assets automatically adapt to provide the best visual experience, whether users are on a desktop, mobile, or tablet.
+Dynamic Media in Adobe Experience Manager (AEM) as a Cloud Service is a powerful solution designed to help you manage, deliver, and optimize rich media assets like images and videos across digital platforms. It transforms static media into dynamic, engaging experiences by allowing real-time modifications, such as resizing, cropping, and adjusting quality for the user's device or screen. With Dynamic Media, your assets automatically adapt to provide the best visual experience, whether users are on a desktop, mobile, or tablet.
 
-A major benefit of Dynamic Media is its ability to streamline media management. You don't need to create multiple versions of images or videos—Dynamic Media handles it all by delivering the most appropriate format for each situation. For instance, e-commerce businesses can take advantage of 360-degree product views or zoomable images to create interactive experiences, while content-heavy websites can ensure fast, high-quality video streaming. This results in faster load times and more engaging user experiences, which ultimately leads to higher customer satisfaction and better conversion rates.
+A major benefit of Dynamic Media is its ability to streamline media management. You do not need to create multiple versions of images or videos—Dynamic Media manages the process by delivering the most appropriate format for each situation. For instance, e-commerce businesses can use 360-degree product views or zoomable images to create interactive experiences, while content-heavy websites can ensure fast video streaming. This results in faster load times and more engaging user experiences, which ultimately leads to higher customer satisfaction and better conversion rates.
 
-Dynamic Media integrates seamlessly with your digital asset management (DAM) system in AEM, giving you a single platform to store, organize, and deploy your media. This centralized approach simplifies collaboration across teams and provides real-time insights into asset performance. Whether you are focused on delivering captivating visuals or enhancing media-driven user interactions, Dynamic Media helps optimize your content for any channel, making it an essential tool for businesses aiming to elevate their digital presence.
+Dynamic Media integrates seamlessly with your digital asset management (DAM) system in AEM, giving you a single platform to store, organize, and deploy your media. This centralized approach simplifies collaboration across teams and provides real-time data on asset performance. Whether you are focused on delivering high-quality visuals or enhancing media-driven user interactions, Dynamic Media helps optimize your content for any channel. It is an essential tool for businesses aiming to improve their digital operations.
 
 ## What you can do with Dynamic Media {#what-you-can-do-with-dynamic-media}
 
-Dynamic Media lets you manage your assets before publishing them. How to work with assets in general is covered in detail in [Working with Digital Assets](/help/assets/manage-digital-assets.md). General topics include uploading, downloading, editing, and publishing assets; viewing and editing properties, and searching for assets.
+Dynamic Media lets you manage your assets before publishing them. How to work with assets is covered in [Working with Digital Assets](/help/assets/manage-digital-assets.md). General topics include uploading, downloading, editing, and publishing assets; viewing and editing properties; and searching for assets.
 
 Dynamic Media-only features include the following:
 
@@ -66,10 +66,10 @@ OBSOLETE UNTIL INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 ## Dynamic Media enabled versus Dynamic Media disabled {#dynamic-media-on-versus-dynamic-media-off}
 
-You can tell whether Dynamic Media is enabled (turned on) by the following characteristics:
+The following characteristics indicate whether Dynamic Media is enabled (turned on):
 
 * Dynamic renditions are available when downloading or previewing assets.
-* Image sets, spin sets, mixed media sets are available.
+* Image sets, spin sets, and mixed media sets are available.
 * PTIFF renditions are created.
 
 When you click an image asset, the view of the asset is different with Dynamic Media enabled. Dynamic Media uses the on-demand HTML5 viewers.
@@ -80,7 +80,7 @@ Dynamic renditions such as image and viewer presets (under **[!UICONTROL Dynamic
 
 ![chlimage_1-358](assets/chlimage_1-358.png)
 
-### Dynamic Media image sets, spins sets, mixed media sets {#image-sets-spins-sets-mixed-media-sets}
+### Dynamic Media image sets, spin sets, mixed media sets {#image-sets-spins-sets-mixed-media-sets}
 
 Image sets, spin sets, and mixed media sets are available if Dynamic Media is enabled.
 
@@ -88,16 +88,16 @@ Image sets, spin sets, and mixed media sets are available if Dynamic Media is en
 
 ### Dynamic Media-enabled PTIFF renditions {#ptiff-renditions}
 
-Dynamic Media-enabled assets include `pyramid.tiffs`.
+Dynamic Media-enabled Assets include `pyramid.tiff`.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
 ### Dynamic Media asset views change {#asset-views-change}
 
-With Dynamic Media enabled, you can zoom in and out by clicking the `+` and `-` buttons. You can also select to zoom into certain area. Revert brings you to the original version and you can make the image full screen by clicking the diagonal arrows. Dynamic Media enabled appears like the following:
+With Dynamic Media enabled, you can zoom in and out by clicking the `+` and `-` buttons. You can also select to zoom in on a certain area. Revert brings you to the original version, and you can make the image full screen by clicking the diagonal arrows. Dynamic Media enabled appears like the following:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 
-With Dynamic Media disabled you can zoom in and out and revert to the original size:
+With Dynamic Media disabled, you can zoom in and out and revert to the original size:
 
 ![chlimage_1-362](assets/chlimage_1-362.png)
