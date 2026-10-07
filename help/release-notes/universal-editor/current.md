@@ -25,6 +25,7 @@ These are the release notes for the 8 October 2026 release of the Universal Edit
 * Extensions can customize the properties panel header through a new extension point.
 * Number fields now support custom validation error messages.
 * Text, combo box, and select fields now display configured placeholder text in their components.
+* Select and multiselect menus share consistent sizing behavior that keeps their overlays within the editor area.
 
 ## Other Improvements {#other-improvements}
 
