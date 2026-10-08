@@ -93,6 +93,14 @@ For example, preview with the **Generic Template**:
 
 ![Preview Fragment with Generic HTML Template](/help/sites-cloud/administering/content-fragments/assets/cf-visual-html-template-referenced-fragment.png)
 
+## Edit your Template {#edit-your-template}
+
+You can directly edit your template...
+
+## Publish your Template {#publish-your-template}
+
+To publish your template...
+
 ## Deliver your Visual Content Fragment {#deliver-your-visual-content-fragment}
 
 The Visual Content Fragment can be delivered to a range of targets in HTML format.
