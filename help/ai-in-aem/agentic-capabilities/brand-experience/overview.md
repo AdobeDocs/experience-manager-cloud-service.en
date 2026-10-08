@@ -43,7 +43,7 @@ The [Figma to Visual Content Fragments](/help/ai-in-aem/agentic-capabilities/bra
 
 ### Forms Creation Skill {#forms-creation}
 
-[The Forms Creation skill](help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/forms-use-cases.md) removes the friction from building adaptive forms and personalized correspondence by transforming natural language requirements into fully structured, branded outputs, empowering business users to create scalable, data-driven experiences without dependency on development or IT teams.
+[The Forms Creation skill](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/forms-use-cases.md) removes the friction from building adaptive forms and personalized correspondence by transforming natural language requirements into fully structured, branded outputs, empowering business users to create scalable, data-driven experiences without dependency on development or IT teams.
 
 <!--
 ### Communication Creation Skill {#communication-creation}
