@@ -430,12 +430,6 @@ To help organizations plan testing and validation ahead of the necessary Java 25
 
 AEM Cloud Service continues to support compiling customer code with Java 11, Java 17, and Java 21. However, Adobe recommends building with Java 25 (once available in AEM) to take full advantage of the latest language features and performance improvements.
 
-#### mTLS Authentication for Log Forwarding {#mtls-log-forwarding}
-
-Log Forwarding now supports mutual TLS (mTLS) client certificate authentication for Splunk, Elasticsearch/OpenSearch, and HTTPS destinations, for both AEM logs (including Apache/Dispatcher) and CDN logs. AEM as a Cloud Service presents a client certificate when it connects to your logging destination, so the destination can verify that the logs come from your environment.
-
-mTLS is generally available for all environments. Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md#mtls).
-
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Features {#foundation-early-adopter}
 
 #### Edge Authentication for Edge Delivery Services (Beta Program) {#edge-authentication}
@@ -454,6 +448,12 @@ Today for developers, Coworker supports AI prompts to drive Cloud Manager. We're
 * **Code modernization** (e.g., *Propose a patch to replace deprecated APIs*)
 
 To join the Beta Program, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com) describing your interest.
+
+#### mTLS Authentication for Log Forwarding (Beta Program) {#mtls-log-forwarding-beta}
+
+Log Forwarding now supports mutual TLS (mTLS) client certificate authentication for Splunk, Elasticsearch/OpenSearch, and HTTPS destinations, for both AEM logs (including Apache/Dispatcher) and CDN logs. AEM as a Cloud Service presents a client certificate when it connects to your logging destination, so the destination can verify that the logs come from your environment.
+
+mTLS for Log Forwarding is in beta. To join the Beta Program, email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) with your program ID and environment IDs. Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md#mtls).
 
 ## [!DNL Experience Manager] Guides {#guides}
 
