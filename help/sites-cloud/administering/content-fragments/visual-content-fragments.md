@@ -16,7 +16,7 @@ The rendered output of an AEM Content Fragment that uses the layout and design o
 
 HTML templates contain layout and design information, enabling the visualization of Content Fragments. The connection between a template and a Content Fragment is established using Handlebars syntax to map HTML tags to data types (fields) defined in the Content Fragment Model. This definition allows content authored in the respective fields of the Content Fragment Editor to be displayed in the appropriate locations within the template. 
 
-You, or your development team, can [create and customize your own HTML templates](/help/implementing/developing/extending/content-fragments-visualization-templates.md), then [upload and attach one, or more, to Content Fragment Models](#upload-and-assign-your-template) so that the corresponding fragments can be rendered into experiences, [previewed](#preview-your-fragment-with-a-template) and [delivered as required](#deliver-your-visual-content-fragment).
+You, or your development team, can [create and customize your own HTML templates](/help/implementing/developing/extending/content-fragments-visualization-templates.md), then [upload and attach one, or more, to Content Fragment Models](#upload-and-assign-your-template) so that the corresponding fragments can be rendered into experiences, [previewed and published](#preview-and-publish-your-fragment-with-a-template) and [delivered as required](#deliver-your-visual-content-fragment).
 
 >[!NOTE]
 >
@@ -57,9 +57,9 @@ To upload your new HTML template:
 1. Enter a **Template name** for use in AEM.
 1. Confirm with **Create Template**.
 1. The template will be created in AEM and listed under **HTML Templates**, in properties of Content Fragment Models.
-   Once loaded it can be used for [previewing fragments](#preview-your-fragment-with-a-template). You can also **[Download](#download-your-template)** or **[Delete](#download-your-template)** the template.
+   Once loaded it can be used for [previewing and publishing fragments](#preview-and-publish-your-fragment-with-a-template). You can also **[Download](#download-your-template)** or **[Delete](#download-your-template)** the template.
 
-## Preview your fragment with a Template {#preview-your-fragment-with-a-template}
+## Preview and Publish your fragment with a Template {#preview-and-publish-your-fragment-with-a-template}
 
 To preview your Content Fragment using a template:
 
@@ -87,6 +87,8 @@ In both cases a new modal window will open.
 
 1. If custom templates are available, you can select the template you want to use (including the **Generic Template**).
 
+1. You can publish your template to either the Preview or Publish URL.
+
 1. If the Content Fragment is published you can also view and copy its **Preview URL** and **Publish URL**.
 
 For example, preview with the **Generic Template**:
@@ -105,10 +107,6 @@ You can edit your template from the console:
 1. Select **Next**.
 1. AEM presents a dialog and warns you that you are updating an existing template, and that changes will overwrite the current version.
 1. Confirm your changes with **Update Template**.
-
-## Publish your Template {#publish-your-template}
-
-To publish your template...
 
 ## Deliver your Visual Content Fragment {#deliver-your-visual-content-fragment}
 
