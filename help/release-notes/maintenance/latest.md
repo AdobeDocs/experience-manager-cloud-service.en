@@ -10,90 +10,111 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 27673 {#release-27673}
+## Release 28702 {#release-28702}
 
-Summarized below are the continuous improvements for maintenance release 27673, which was publicly released on August 11, 2026. The previous maintenance release was release 27293.
+Summarized below are the continuous improvements for maintenance release 28702, which was publicly released on October X, 2026. The previous maintenance release was release 28386.
 
-The 2026.8.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
+The 2026.10.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
->[!NOTE]
->
->Release 27550 has been made private. 
 
-### Enhancements {#enhancements-27673}
+### Enhancements {#enhancements-28702}
 
-* AEMARCH-328: Exposed a default 404 message constant in the OpenAPI support layer.
-* ASSETS-52544: Introduced countdown timer support in Dynamic Media templates for Open Time Personalization.
-* ASSETS-52644: Introduced conversion of PSD designs to Dynamic Media templates.
-* ASSETS-60359: Introduced the Tagging API.
-* ASSETS-63722: Added a Folders Copy API.
-* ASSETS-64376: Added PATCH support to the Task API.
-* ASSETS-64760: Added asset download/archive support on the author tier.
-* ASSETS-64763: Added download job status endpoints.
-* ASSETS-67409: Improved bulk re-approval with direct queue injection and skip-event marker.
-* ASSETS-67662: Added event production for Touch UI metadata update, deletion, and sync actions.
-* ASSETS-67664: Refactored search to be reusable across folders, tasks, and collections.
-* ASSETS-68862: Added an endpoint to assign a license to an asset.
-* ASSETS-69203: Added async bulk folder creation to the OpenAPI.
-* ASSETS-69206: Added bulk tag creation with async job support to the OpenAPI.
-* ASSETS-69581: Added Collections Bundle implementation, phase 2.
-* ASSETS-70289: Added SEO support for embed codes.
-* ASSETS-70312: Renamed search API parameter allowUnsafeSearch to allowUnindexedSearch (now optional).
-* ASSETS-70431: Added Collections Bundle implementation, phase 2.
-* ASSETS-71036: Improved AI processing to trigger correctly for a limited set of file types.
-* ASSETS-71442: Updated Folder API command result message format.
-* ASSETS-72401: Added support for metadata-only versioning of assets.
-* ASSETS-74731: Migrated Asset Insights to Analytics 2.0 with IMS OAuth.
-* ASSETS-74799: Updated Asset Metadata Schema API implementation.
-* ASSETS-75096: Improved Asset Metadata API to exclude non-file assets from responses.
-* ASSETS-75278: Added support for early activation in non-GenStudio environments.
-* CQ-4364085: Updated AEM CS Translation Kit.
-* CQ-4364138: Updated AEM CS Translation Kit.
-* SITES-39116: Added ability to expose metadata schema on the GET fragment endpoint via Assets OpenAPI.
-* SITES-47432: Improved performance of the BFF List Folders API query.
-* SITES-49250: Added per-component marker filter support for headless components on author.
+* ASSETS-54428: Added search events for asset searches through author OpenAPI.
+* ASSETS-60359: Added tagging APIs for asset management.
+* ASSETS-62685: Improved asset searches that use tags.
+* ASSETS-64331: Added asynchronous asset copying through the Assets API.
+* ASSETS-64375: Added task search through the Assets API.
+* ASSETS-64384: Added APIs to update collection items and improved handling of collection jobs.
+* ASSETS-64385: Added an API to delete collections.
+* ASSETS-64386: Added collection search through the Assets API.
+* ASSETS-64728: Added asynchronous metadata export through the Assets API.
+* ASSETS-64763: Added endpoints to check asset download job status and retrieve completed downloads.
+* ASSETS-67662: Added asset events for metadata updates, asset deletions, and asset moves.
+* ASSETS-67807: Reduced video reprocessing time by skipping redundant Dynamic Media encodes when the video profile is unchanged.
+* ASSETS-68147: Added viewer preset editing and support in the new video viewer.
+* ASSETS-68244: Added support for relative date ranges in asset search queries.
+* ASSETS-69200: Added image width and height metadata for custom renditions uploaded through the API.
+* ASSETS-69206: Added asynchronous bulk tag creation through OpenAPI.
+* ASSETS-70436: Expanded collection APIs with smart collection and collection metadata support.
+* ASSETS-70449: Added an API to delete named asset renditions.
+* ASSETS-74710: Added metadata export support for nested properties and arrays of objects.
+* ASSETS-75083: Added metadata import support for nested properties and arrays of objects.
+* ASSETS-75722: Added a full-page editor for video chapters and overlays.
+* ASSETS-75926: Added viewer preset publishing with support for custom CSS.
+* ASSETS-76834: Added chapters and overlays to the new video viewer.
+* ASSETS-76836: Included video interactivity metadata in asset delivery responses.
+* ASSETS-76838: Enabled the video viewer to load chapters and overlays from asset metadata.
+* ASSETS-77191: Added support for seconds in Dynamic Media countdown timers.
+* ASSETS-77247: Added a Content Credentials indicator in the Assets Admin UI.
+* ASSETS-77355: Added video viewer preset options for environments using Dynamic Media with OpenAPI.
+* ASSETS-77388: Improved bulk asset approval management, including stopping reapproval operations and cleaning up completed batches.
+* ASSETS-77408: Added collection searches as a source for smart collections.
+* ASSETS-77669: Added support for custom properties in the dam namespace in asset delivery.
+* ASSETS-77856: Improved template font matching using PostScript font names.
+* ASSETS-77995: Added an API to manage metadata-driven permissions for prompts.
 
-### Fixed Issues {#fixed-issues-27673}
+### Fixed Issues {#fixed-issues-28702}
 
-* ASSETS-52795: Fixed asset UUID not being retained when an asset is replaced.
-* ASSETS-62661: Fixed WebP renditions showing generic size labels instead of configured processing profile names.
-* ASSETS-64116: Fixed inability to delete static renditions for PDF/PPTX documents.
-* ASSETS-64682: Fixed assets incorrectly showing "PublishIncomplete" status with shorter polling durations.
-* ASSETS-66372: Fixed inability to update thumbnails on existing Collections.
-* ASSETS-67068: Fixed Bulk Import Admin UI "Dry Run" showing "undefined" statistics.
-* ASSETS-68644: Fixed unbounded recursive folder traversal hanging the Timeline Rail workflow.
-* ASSETS-70137: Fixed Created Date relative filter failing when notNullCheckEnabled is true.
-* ASSETS-70192: Fixed Saved Searches in AEM Assets not applying filters until page refresh.
-* ASSETS-70217: Fixed "Internal Error occurred while saving the form" when adding/editing content.
-* ASSETS-70998: Fixed missing pagination and exact-match group display in the Assets Permissions Picker.
-* ASSETS-73365: Fixed missing "Required" indicator when one dropdown sets multiple mandatory fields.
-* ASSETS-74286: Fixed captions stuck in "Processing" for up to an hour after generation.
-* ASSETS-74870: Fixed duplicate "Change Thumbnail" tabs shown when both DMS7 and Polaris are enabled.
-* ASSETS-74915: Fixed report wizard failures on very slow network connections.
-* ASSETS-75767: Fixed asset processing failures caused by broken event handler registration.
-* SITES-48494: Fixed incorrect minimum length validation on model metadata (regression rollback).
+* ASSETS-24897: Corrected the publication status icon for published assets.
+* ASSETS-31575: Localized invalid JSON path error messages in metadata schemas.
+* ASSETS-32768: Corrected the alignment of the Clear All button in folder metadata rules.
+* ASSETS-33287: Localized processing profile labels.
+* ASSETS-36070: Localized the promoted tag label.
+* ASSETS-39418: Localized text in asset share links.
+* ASSETS-40698: Corrected vertical button text in shared asset downloads.
+* ASSETS-40735: Corrected number formatting in shared asset downloads.
+* ASSETS-43105: Corrected Japanese text orientation in list headers.
+* ASSETS-43307: Localized the Scheduled for Later label in asset column view.
+* ASSETS-46298: Corrected date formatting in asset list view.
+* ASSETS-47155: Fixed the related asset selector for filenames containing spaces.
+* ASSETS-48196: Localized the Locale column labels in asset list view.
+* ASSETS-49527: Fixed interactive media hotspot popups appearing behind images.
+* ASSETS-52795: Preserved asset identifiers when replacing assets.
+* ASSETS-60894: Corrected video profile column header alignment in folder properties.
+* ASSETS-74349: Disabled the Download button when no valid assets or renditions are selected.
+* ASSETS-75539: Fixed Dynamic Media templates failing to update after their source PSD assets are reprocessed.
+* ASSETS-76596: Fixed Adobe Stock imports selecting watermarked previews instead of licensed assets.
+* ASSETS-76711: Fixed metadata dropdown rules when multiple values are selected.
+* ASSETS-76893: Fixed assets remaining in AI processing in folders configured for Dynamic Media publishing.
+* ASSETS-76949: Excluded hidden folders from Folders API results.
+* ASSETS-77205: Fixed rerunning asset reports that contain multiple custom properties.
+* ASSETS-77434: Fixed metadata API updates using legacy property paths or changes between single-valued and multivalued properties.
+* ASSETS-78492: Fixed page editing failures caused by broken smart crop videos.
+* ASSETS-78526: Fixed failures when appending metadata through the bulk metadata editor.
+* ASSETS-78540: Fixed AI processing failures when a prompt's target property is unavailable.
+* ASSETS-78569: Fixed Content Hub searches failing when custom metadata fields are missing.
+* ASSETS-78815: Fixed metadata export headers for reimporting data and added support for exporting object arrays.
+* ASSETS-78925: Fixed downloads of very large assets.
+* ASSETS-79022: Fixed intermittent Smart Tags training failures caused by missing authentication configuration.
+* ASSETS-79238: Fixed missing property names and descriptions in processing profiles.
+* CQ-4336103: Localized the Multi Path Value Property Predicate label in asset search.
+* SITES-45043: Fixed incorrect Content Fragment references in legacy asset search.
+* SITES-50482: Restored PDF asset references from custom download and link list components.
 
-### Known Issues {#known-issues-27673}
+
+### Known Issues {#known-issues-28702}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-27673}
+<!-- Confirm known issues before publication. -->
+
+### Deprecated Features and APIs {#deprecated-28702}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-27673}
+### Security Fixes {#security-28702}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 2 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release includes 17 security fixes, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-27673}
+### Embedded Technologies {#embedded-tech-28702}
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM Oak | 2.4.0 | [Oak 2.4.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/2.4.0/index.html)|
+|AEM Oak | 2.6.0 | [Oak 2.6.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/2.6.0/index.html)|
 |AEM SLING API | 2.27.6 |[Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL| 1.4.28-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
 |Apache HTTP Server| 2.4.67 | [Apache Httpd 2.4.67](https://apache.googlesource.com/httpd/+/refs/tags/2.4.67/CHANGES)|
-|Dispatcher|2.0.274||
-|AEM Core Components| 2.32.4|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
+|Dispatcher|2.0.275||
+|AEM Core Components| 2.32.6|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
 |Node.js|14 (default)|[Supported Node.js versions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions)|
 |Java 21|21.0.11|[JDK 21.0.11](https://www.oracle.com/java/technologies/javase/21-0-11-relnotes.html)|

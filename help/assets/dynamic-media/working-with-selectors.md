@@ -6,6 +6,12 @@ feature: Selectors,Interactive Images,Interactive Videos,Carousel Banners
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Work with Selectors in Dynamic Media {#working-with-selectors}
 

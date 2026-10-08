@@ -278,7 +278,7 @@ Usage can differ depending on whether you are using an AEM Author or Publish env
 
 >[!NOTE]
 >
->See the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). In particular, [Adobe Experience Manager Assets API - Content Fragments](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>See the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). In particular, [Adobe Experience Manager Assets API - Content Fragments](https://experienceleague.adobe.com/en/tools/aem-api-documentation/cloud-service/javadoc/assets-api-content-fragments/index.html).
 >
 >The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
 
@@ -366,7 +366,7 @@ The following status codes can be seen in the relevant circumstances:
 
 See here for detailed API references:
 
-* [Adobe Experience Manager Assets API - Content Fragments](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API - Content Fragments](https://experienceleague.adobe.com/en/tools/aem-api-documentation/cloud-service/javadoc/assets-api-content-fragments/index.html)
 
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 

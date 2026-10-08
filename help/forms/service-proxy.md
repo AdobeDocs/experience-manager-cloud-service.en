@@ -12,9 +12,6 @@ role: Admin, User, Developer
 ---
 # HTML5 forms service proxy{#html-forms-service-proxy}
 
-<span class="preview"> The HTML5 Forms capability is offered as part of Early Access Program. To request access, send an email from your official (work) email ID to aem-forms-ea@adobe.com.
-</span>
-
 HTML5 forms Service Proxy is a configuration to register a proxy for the submission service. To configure Service Proxy, specify the URL of submission service through request parameter *submissionServiceProxy*.
 
 ## Benefits of Service Proxy {#benefits-of-service-proxy-br}

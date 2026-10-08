@@ -12,6 +12,10 @@ index: false
 
 JWT server-to-server authentication in AEM Forms, particularly for server-side integrations with AEM as a Cloud Service, involves a specific process to securely interact with AEM services. JWT server-to-server authentication is supported by AEM Developer Console.
 
+>[!NOTE]
+>
+>This article covers JWT credentials generated through the **AEM** Developer Console (accessed via Cloud Manager). These credentials are used for specific AEM Forms Communications APIs and are separate from the Service Account (JWT) credential type in the **Adobe** Developer Console, which Adobe deprecated in favor of OAuth Server-to-Server credentials. If you're migrating an Adobe Developer Console JWT credential, see [JWT Credentials Deprecation in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md) instead. For newer AEM Forms Communications APIs that use OAuth Server-to-Server authentication through the Adobe Developer Console, see [OAuth Server-to-Server Authentication](/help/forms/oauth-api-authetication.md).
+
 ## Prerequisites
 
 Before you begin, make sure the following prerequisites are met:
