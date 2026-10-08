@@ -705,6 +705,7 @@ user-guide-title: AEM as a Cloud Service
 
   + Content Advisor {#content-advisor}
     + [Content Advisor to access AEM content in Adobe and non-Adobe applications](/help/assets/integrate-adobe-non-adobe-applications.md)
+    + [Content Advisor Browser Extension](/help/assets/content-advisor-browser-extension.md)
     + [Content Advisor properties](/help/assets/content-advisor-properties.md)
     + [Content Advisor customizations](/help/assets/content-advisor-customization.md)
     + [Integration with Dynamic Media](/help/assets/integration-with-dynamic-media.md)
