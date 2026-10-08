@@ -4,7 +4,7 @@ description: Learn about canary deployments in Cloud Manager. Test new code on p
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md"
+badge: type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md"
 product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
     internal-label: Experience Manager
@@ -28,9 +28,7 @@ Dev and stage environments remain the primary places to test code releases; cana
 
 Canary deployments are for internal validation, not for shifting real user traffic from the old release to the new one; real user traffic never routes to canary instances automatically.
 
->[!IMPORTANT]
->
->Canary deployments are currently a beta feature. Behavior can change before general availability. To request access or share feedback, email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com).
+You can email [aemcs-canary-deployments-feedback@adobe.com](mailto:aemcs-canary-deployments-feedback@adobe.com) with questions and feedback.
 
 ## Canary deployment process {#how-canary-deployments-work}
 
