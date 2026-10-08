@@ -83,9 +83,9 @@ Content Hub now allows users to copy an asset's delivery URL directly from the a
 
 In Content Hub, the AEM Governance Agent ensures that only the right people access the right assets at the right time. By applying granular, attribute-based controls and usage rights, it protects sensitive content while enabling secure collaboration. This means reduced compliance risk, stronger brand integrity, and faster workflows, teams can confidently share and reuse assets without worrying about unauthorized access or misuse. This balance of security and flexibility translates into higher operational efficiency and trust across the organization.
 
-![Permission Management Overview](/help/ai-in-aem/agents/governance/assets/permission-management.png)
+![Permission Management Overview](/help/ai-in-aem/agentic-capabilities/brand-governance/assets/permission-management.png)
 
-[!BADGE Dive Deeper into this Feature]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
+[!BADGE Dive Deeper into this Feature]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agentic-capabilities/brand-governance/overview#permission-and-digital-rights-management"}
 
 
 ## October 2025 release features {#october-2025-release-features}
