@@ -55,14 +55,14 @@ Customers with a license with a logging vendor or who host a logging product can
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td>Beta</td>
+      <td>Yes</td>
     </tr>
     <tr>
       <td>HTTPS</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td>Beta</td>
+      <td>Yes</td>
     </tr>
     <tr>
       <td>New Relic</td>
@@ -76,7 +76,7 @@ Customers with a license with a logging vendor or who host a logging product can
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td>Beta</td>
+      <td>Yes</td>
     </tr>
     <tr>
       <td>Sumo Logic</td>
@@ -92,7 +92,7 @@ Customers with a license with a logging vendor or who host a logging product can
 >
 > For upcoming CDN Log Technologies planned for the future, please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to register interest.
 >
-> Log Technologies marked **Beta** in the mTLS column support client certificate authentication (mutual TLS) for AEM, Dispatcher, and CDN logs. mTLS is in beta; to request access, email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com). See [Mutual TLS (mTLS) authentication](#mtls).
+> Log Technologies marked **Yes** in the mTLS column support client certificate authentication (mutual TLS) for AEM, Dispatcher, and CDN logs. See [Mutual TLS (mTLS) authentication](#mtls).
 
 Log forwarding is configured in a self-service manner by declaring a configuration in Git, and can be deployed via Cloud Manager config pipelines to dev, stage, and production environment types. The configuration file can be deployed to Rapid Development Environments (RDEs) using command line tooling.
 
@@ -106,7 +106,7 @@ This article is organized in the following way:
 
 * Setup - common for all logging destinations
 * Transport & Advanced Networking - consideration should be given to network setup before creating logging configuration
-* Mutual TLS (mTLS) authentication - authenticating to Splunk, Elasticsearch/OpenSearch, and HTTPS destinations with a client certificate (beta)
+* Mutual TLS (mTLS) authentication - authenticating to Splunk, Elasticsearch/OpenSearch, and HTTPS destinations with a client certificate
 * Logging destination configurations - each destination has a slightly different format
 * Log Entry Formats - information about the log entry formats
 * Migrating from legacy log forwarding - how to move from log forwarding previously setup by Adobe to the self-serve approach
@@ -243,10 +243,6 @@ For CDN logs, you can allow-list the IP addresses, as described in [Fastly docum
 >For this reason it is not possible to use Log Forwarding with Advanced Networking VPN configurations.
 
 ## Mutual TLS (mTLS) authentication {#mtls}
-
->[!NOTE]
->
->mTLS for Log Forwarding is in beta and must be enabled for each environment, including development and stage environments. Until it is enabled, deploying a configuration that contains an `mtls` block fails with an error. To request access, email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) with your program ID and environment IDs.
 
 Splunk, Elasticsearch/OpenSearch, and HTTPS destinations support mutual TLS (mTLS). With mTLS, AEM as a Cloud Service presents a client certificate when it connects to your logging destination, so the destination can verify that the logs come from your environment. mTLS applies to AEM logs (including Apache/Dispatcher) and to CDN logs.
 
