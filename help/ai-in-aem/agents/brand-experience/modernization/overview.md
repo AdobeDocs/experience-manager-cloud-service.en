@@ -108,10 +108,16 @@ If you are interested in the AOE model for your next migration:
 
 The following use cases require additional implementation effort in addition to the skills of the Experience Modernization Agent.
 
+For protected source websites that are reachable by the agent, you can configure custom headers, HTTP Basic authentication, or bearer authentication in the Experience Modernization Console. Credentials are injected into outbound requests to the configured hostname so the agent can access and scrape the site. See [Protected Site Authentication](/help/ai-in-aem/agents/brand-experience/modernization/console.md#protected-site-authentication) for setup instructions.
+
+>[!IMPORTANT]
+>
+>Protected site authentication is not intended for use with personally identifiable information (PII) or real end-user data. Use source content that does not contain this data.
+
 The scraping skill does not support the following sources.
 
-* Intranet or protected sources such as content behind authentication, VPNs, or firewalls that is not accessible
-  * As an alternative, use [SLICC](https://www.sliccy.com) which can leverage the authentication context from your browser to access protected sources.
+* Intranet or private sources that are not reachable by the agent, such as sites accessible only through a VPN or blocked by a firewall. Configuring authentication does not provide network access to these sources.
+* Protected sources that require an authentication flow other than the supported custom header, HTTP Basic, or bearer authentication.
 * Complex dynamic content such as content requiring sophisticated user interaction to appear in the DOM.
   * Client-side rendered content is supported if the content is accessible via a specific URL.
   * Elements hidden via CSS but present in the DOM like tabs, accordions or carousels are also supported.
@@ -137,4 +143,3 @@ The following requirements are not covered by dedicated automation skills and re
 ## Next Steps {#next-steps}
 
 Get started by migrating a site using the document [Getting Started with the Experience Modernization Agent.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
-
