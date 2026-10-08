@@ -95,7 +95,16 @@ For example, preview with the **Generic Template**:
 
 ## Edit your Template {#edit-your-template}
 
-You can directly edit your template...
+You can edit your template from the console:
+
+1. Navigate to the Content Fragment Models section of the Content Fragment console.
+1. Select your model.
+1. Use the information icon to open the right panel.
+1. From the HTML Templates section of the right panel, use the **Edit** option for your template.
+1. In the dialog provided, make your updates.
+1. Select **Next**.
+1. AEM presents a dialog and warns you that you are updating an existing template, and that changes will overwrite the current version.
+1. Confirm your changes with **Update Template**.
 
 ## Publish your Template {#publish-your-template}
 
