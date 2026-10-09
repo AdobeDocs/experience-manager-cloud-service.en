@@ -4,6 +4,12 @@ description: Learn how to configure AI coding tools with project context, agent 
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Local Development with AI Tools {#local-development-with-ai-tools}
 

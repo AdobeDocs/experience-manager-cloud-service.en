@@ -4,6 +4,14 @@ description: Use functions to customize Content Advisor within your application.
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Content Advisor customizations {#content-advisor-customization}
  

@@ -4,6 +4,14 @@ description: Learn how to customize both the Content Fragment console and editor
 exl-id: a837f09f-9d07-4430-839a-7cf0f200d2df
 feature: Developing, Content Fragments
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Customizing the Content Fragment Console and Editor {#customizing-content-fragment-console-and-editor}
 

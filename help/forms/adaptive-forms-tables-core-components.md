@@ -6,6 +6,14 @@ keywords: table component, adaptive form table, core components table, merge cel
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: f4a8c2e1-9b3d-4a7f-8c6e-1d2f3a4b5c6d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Add a table to an Adaptive Form (Core Components) {#tables-in-adaptive-forms-core-components}
 

@@ -1,6 +1,6 @@
 ---
 title: How can we migrate from AEM 6.5 Forms to AEM Forms as a Cloud Service?
-description: Getting Started with the Migration Journey to AEM as a Cloud Service | Adobe Experience Manager. Migrate from an [!DNL AEM Forms] (On-Premise and AMS environments) to [!DNL AEM Forms] as a Cloud Service environment. 
+description: Getting Started with the Migration Journey to AEM as a Cloud Service | Adobe Experience Manager. Migrate from an [!DNL AEM Forms] (On-Premise and AMS environments) to [!DNL AEM Forms] as a Cloud Service environment.
 Keywords: 6.5 forms to cloud service, 6.5 forms to cs, migrate 6.5 forms to CS, migrate 6.5 forms to cloud service, upgrade 6.5 forms to CS, move 6.5 forms to CS, upgrade AEM 6.5 to CS, AEM Forms 6.5 to Cloud Service, AEM form migration to cloud service, Migration Journey to AEM as a Cloud Service | Adobe Experience Manager.
 contentOwner: khsingh
 feature: Adaptive Forms
@@ -10,6 +10,17 @@ level: Intermediate
 topic: Migration
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Migrate from an [!DNL AEM Forms] (On-Premise and AMS environments) to [!DNL AEM Forms] as a Cloud Service  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
 

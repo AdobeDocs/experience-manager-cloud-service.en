@@ -3,6 +3,9 @@ title: Content Hub Overview
 description: Learn more about Content Hub, its key benefits, how to access it, and how to provide feedback around the options available in Content Hub.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 ---
 # Content Hub Overview {#overview-content-hub}
 

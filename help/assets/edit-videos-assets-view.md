@@ -5,6 +5,12 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
 feature: Best Practices, Video, Interactive Videos
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Edit videos in [!DNL Assets view] {#edit-videos}
 

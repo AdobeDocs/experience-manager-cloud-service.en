@@ -6,6 +6,12 @@ feature: Adaptive Forms, Core Components
 role: Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 0607e11c-84d2-42cb-be9f-acd7c328a342
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Embed an Adaptive Forms theme in an AEM Sites theme 
 

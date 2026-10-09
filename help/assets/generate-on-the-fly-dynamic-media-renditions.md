@@ -5,6 +5,15 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets."
 exl-id: 9b7f5c81-e2ff-444f-97c8-b4ed56f3ef9e
 feature: Generative AI
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ec4263d9-bf7c-44c7-b3f1-3e664861c8f2
+    internal-label: Generative AI
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 
 # Generate on the fly Dynamic Media renditions {#generate-on-the-fly-dynamic-media-renditions}

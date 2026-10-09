@@ -4,6 +4,15 @@ description: Learn about the steps that you must take so you can make sure that 
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 feature: Migration
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: 5be0fc8f-1cff-5c3e-bb92-2903a56a3de6
+    internal-label: Migration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Readiness Phase {#readiness-phase}
 

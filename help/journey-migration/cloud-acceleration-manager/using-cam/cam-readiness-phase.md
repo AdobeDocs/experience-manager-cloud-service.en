@@ -4,6 +4,15 @@ description: This page provides an overview on the Readiness phase in Cloud Acce
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 feature: Migration
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: 5be0fc8f-1cff-5c3e-bb92-2903a56a3de6
+    internal-label: Migration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Readiness Phase in Cloud Acceleration Manager {#readiness-phase-cam}
 

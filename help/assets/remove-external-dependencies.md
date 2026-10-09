@@ -4,6 +4,12 @@ description: Remove external dependencies for existing installations
 feature: Workfront Integrations and Apps
 exl-id: 5b28ce97-2719-47b8-a386-77d4aaddbe81
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Remove external dependencies for existing installations {#remove-external-depedencies}
 

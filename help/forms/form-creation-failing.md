@@ -5,6 +5,12 @@ feature: Adaptive Forms
 role: User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 169ea727-0941-4a1d-bc33-d9fe208b27ab
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Issue while publishing forms
 

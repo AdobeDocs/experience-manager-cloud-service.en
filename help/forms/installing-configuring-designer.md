@@ -1,5 +1,5 @@
 ---
-title: How to download and install Forms Designer to create Document of Record templates?  
+title: How to download and install Forms Designer to create Document of Record templates?
 description: Use Forms Designer to create XDP and PDF Form templates which serve as a template for a Document of Record.
 keywords: Installing Designer, Installing Forms designer, Requirements for installing Forms Designer
 feature: Adaptive Forms, Forms Designer
@@ -8,6 +8,16 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 hide: true
 index: false
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Download and Install Forms Designer {#installing-and-configuring-designer}
 

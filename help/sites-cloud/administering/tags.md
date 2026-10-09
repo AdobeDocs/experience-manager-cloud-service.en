@@ -6,6 +6,12 @@ exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
 solution: Experience Manager Sites
 feature: Workflow
 role: Admin
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Administering Tags {#administering-tags}
 

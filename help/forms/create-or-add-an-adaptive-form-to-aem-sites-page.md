@@ -6,6 +6,14 @@ Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites p
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 role: User, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Add an Adaptive Form to an AEM Sites page or Experience Fragment {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
