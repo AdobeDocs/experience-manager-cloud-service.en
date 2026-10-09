@@ -150,6 +150,25 @@ Smart Collections automatically remain up to date. When newly approved assets sa
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta Features {#assets-beta-program-features}
 
+#### Content Advisor browser extension {#content-advisor-browser-extension}
+
+Use the power of AEM Content Advisor for AEM Assets, in the application of your choice with the browser extension.
+
+**Why you will love it?**
+
+* **Zero setup, zero code.** Install it, sign in, and start working. No integration, no custom connectors, no developer tickets.
+
+* **Smarter suggestions, on your terms.** Recommendations come from the whole page, or narrow them by selecting a region, highlighting text, or choosing an image. The more precisely you point, the sharper the results.
+
+* **Pick exactly what you need.** Choose any asset or any Dynamic Media rendition (the right size, format, or crop) and send it straight to your editor. Insert, drag and drop, or copy URL to the clipboard.
+
+* **Works where you author.** AEM (Cloud Service, Adobe Managed Services, or On-premise), other Adobe CX Enterprise products (where AEM Assets native integration does not exist), and third-party tools such as Google Docs/WordPress/Microsoft Powerpoint, and any other web application.
+
+* **Private by design.** Optional on-device OCR extracts text from images locally. The captured image never leaves your device.
+
+
+To send feedback, participate or learn more, send an email to `aem-content-advisor-feedback@adobe.com`.
+
 
 #### Dynamic Media: Video Engagement Report {#video-engagement-report}
 
@@ -163,9 +182,9 @@ Give teams visibility into delivery health by reporting operational activity suc
 
 To participate or learn more, send an email to `dm-beta-feedback@adobe.com`.
 
-#### Dynamic Media: Auto Reflow and Auto Translate {#auto-reflow-and-auto-translate}
+#### Dynamic Media Template: Auto Translate {#auto-translate}
 
-Eliminate repetitive redesign and manual localization by using AI to automatically adapt a single master template into layouts that fit different formats and aspect ratios (web, social, display, and email) and to instantly translate text across languages, all while preserving the visual integrity of the design, turning one master asset into variants across many device sizes and locales.
+Eliminate repetitive manual localization by using AI to automatically translate text and turn a single master template into variants across multiple locales, while preserving the visual integrity of your designs.
 
 To participate or learn more, send an email to `dm-beta-feedback@adobe.com`.
 
@@ -299,7 +318,7 @@ Validate file attachments in Adaptive Forms before or on submission using custom
 
 #### Canary Deployments - Validate Features Before Accepting Live Traffic {#canary-deployments}
 
-[Canary deployments] let you validate a new release against production infrastructure before it serves customer traffic. Available **October 1st** for AEM Cloud Service implementations.
+Available for AEM Cloud Service, [Canary deployments](/help/implementing/cloud-manager/canary-deployments.md) let you validate a new release against production infrastructure before it serves customer traffic. 
 
 Deploy the build alongside your current stable release on the publish tier, then route selected requests to it with a request header. All other traffic continues to be served by the stable release, unaffected. The author tier remains on the stable version throughout.
 

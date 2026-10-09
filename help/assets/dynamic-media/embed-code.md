@@ -13,7 +13,7 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
 ---
-# Embed the Dynamic Media Video, Image viewer, or Dimensional viewer on a web page {#embedding-the-video-or-image-viewer-on-a-web-page}
+# Embed the Dynamic Media Video, Adobe Image Viewer, or Dimensional viewer on a web page {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Use the **[!UICONTROL Embed Code]** feature when you want to play the video or view an asset embedded on a web page. You copy the embed code to the clipboard so you can paste it in your web pages. Editing of the code is not permitted in the **[!UICONTROL Embed Code]** dialog box.
 
@@ -33,7 +33,7 @@ See [Deliver Optimized Images for a Responsive Site](responsive-site.md).
 >
 >See [Publish Image Presets](managing-image-presets.md#publishing-image-presets).
 
-**To embed the Dynamic Media Video or Image viewer on a web page:**
+**To embed the Dynamic Media Video or Adobe Image Viewer on a web page:**
 
 1. Navigate to the *published* video or image asset whose embed code you want to copy.
 
@@ -45,8 +45,8 @@ See [Deliver Optimized Images for a Responsive Site](responsive-site.md).
 
    See [Publish Image Presets](managing-image-presets.md#publishing-image-presets).
 
-1. In the left rail, select the drop-down list and select **[!UICONTROL Viewers]**.
-1. In the left rail, select a viewer preset name. The viewer preset is applied to the asset.
+1. In the left navigation, select the drop-down list and select **[!UICONTROL Viewers]**.
+1. In the left navigation, select a viewer preset name. The viewer preset is applied to the asset.
 1. Select **[!UICONTROL Embed]**.
 1. In the **[!UICONTROL Embed Code]** dialog box, copy the entire code to the clipboard, and then select **[!UICONTROL Close]**.
 1. Paste the embed code into your web pages.
