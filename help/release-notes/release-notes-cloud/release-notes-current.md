@@ -164,8 +164,6 @@ Use the power of AEM Content Advisor for AEM Assets, in the application of your 
 
 * **Works where you author.** AEM (Cloud Service, Adobe Managed Services, or On-premise), other Adobe CX Enterprise products (where AEM Assets native integration does not exist), and third-party tools such as Google Docs/WordPress/Microsoft Powerpoint, and any other web application.
 
-* **Private by design.** Optional on-device OCR extracts text from images locally. The captured image never leaves your device.
-
 For more information, see [Use AEM Content Advisor with the browser extension](/help/assets/content-advisor-browser-extension.md).
 
 
