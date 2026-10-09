@@ -158,6 +158,31 @@ Administrators can also disable access for specific MCP client applications at t
 
 For all MCP server related requests, feel free to contact Adobe at **`aemcs-mcp-feedback@adobe.com`**
 
+#### Allowing the AEM MCP Server on IP-Restricted Environments {#allowing-aem-mcp-server-on-ip-restricted-environments}
+
+If an environment restricts access by IP address, for example with a Cloud Manager IP allowlist or a traffic filter rule that blocks requests from other IP addresses, AEM MCP Server requests to that environment are blocked by default.
+
+The AEM MCP Server can be identified in CDN traffic filter rules using the `clientService` request property, which has the value `adobe/aemmcp` for AEM MCP Server requests. Do not add AEM MCP Server IP addresses to your IP allowlists. Instead, add the following traffic filter rule to your `cdn.yaml` file and deploy it with a config pipeline:
+
+```yaml
+kind: "CDN"
+version: "1"
+data:
+  trafficFilters:
+    rules:
+      - name: allow-aemmcp
+        when: { reqProperty: clientService, equals: "adobe/aemmcp" }
+        action: bypass
+```
+
+The `bypass` action exempts matching requests from traffic filter block rules and also from the IP restrictions of Cloud Manager IP allowlists. The rule applies to all tiers and paths, so the AEM MCP Server can perform every operation that users are permitted to perform in AEM.
+
+>[!NOTE]
+>
+>The rule does not grant any additional permissions. Every request still runs under the authenticated user's identity, and AEM enforces that user's existing permissions.
+
+For details about the `cdn.yaml` file, the rule syntax, and deployment with a config pipeline, see [Traffic filter rules including WAF rules](/help/security/traffic-filter-rules-including-waf.md).
+
 ### MCP Client Application Configuration {#mcp-client-application-configuration}
 
 Each user performs this step, or an administrator of the MCP client application can perform it where supported. Configuration details vary slightly between applications. MCP clients are evolving rapidly and support for remote MCP servers is being actively developed. You may need to enable Developer Mode to access the functionality for adding remote servers, but the general process is:
