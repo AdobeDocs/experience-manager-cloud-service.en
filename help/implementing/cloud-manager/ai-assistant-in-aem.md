@@ -58,9 +58,8 @@ To get access to AI Assistant in AEM, customers must have the following:
 
 1. Customers must have an additional agreement in place to access most AI-powered and agentic capabilities in Adobe Experience Manager. Contact your Adobe representative for details.
 
-1. To use AI Assistant in AEM, permission to access Product Knowledge through the AI Assistant is mandatory. The system turns this permission ON by default.
+1. Once your organization has this agreement, all users can use AI Assistant for Product Knowledge by default. No additional per-user or per-group permission is required.
 
-    If you want to control who can access Product Knowledge, send an email to [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) from your email address associated with your Adobe ID. Adobe can enable user-level access control. When enabled, your administrator can grant user-level access using [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md).
 
 ## Scope {#scope}
 
@@ -118,25 +117,6 @@ To receive the most accurate responses from AI Assistant in AEM, it is important
 
 
 ## Use AI Assistant in AEM {#ai-use} 
-
-<!--
- UNHIDE AFTER BETA or at GA
-### Enable AI Assistant in AEM access through Admin Console 
-
-To use AI Assistant in AEM, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
-
-![AI Assistant in AEM in the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console.png)
-
-From an employee's perspective, the process is straightforward: identify the product administrator for Adobe Experience Manager in your organization and request to be added to the AI-enabled user group. Once you appear in that group, the Assistant icon shows up automatically the next time you sign in.
-
-Administrators should keep normal Cloud Manager governance in mind. Hold product administrator rights in the Admin Console to create profiles, manage user groups, or edit permissions. If users also need the Assistant's built-in **Create Support Ticket** feature, add the standard **Support Admin** role (standard Admin Console role) to the same individuals or group.
-
-![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
-
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
-
-See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md).
--->
 
 
 ### Start an AI Assistant in AEM conversation

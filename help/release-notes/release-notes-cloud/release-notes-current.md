@@ -411,6 +411,37 @@ See the [deprecation article](/help/release-notes/deprecated-removed-features.md
 
 +++
 
+
+
+
+
+
+
+
+
+
+#### Jackson bundle upgrade affects the GlobalLink connector {#jackson-upgrade-globallink-connector}
+
+AEM 6.5 LTS SP3 upgrades the Jackson bundle. This change affects deployments that use the GlobalLink translation connector.
+ 
+If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier than 3.4.4.7, upgrade the bundle to a compatible version. Version 3.4.4.7 or later works with the upgraded jackson bundle in SP3.
+ 
+>[!NOTE]
+>
+>Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.4.7 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
+
+
+
+
+
+
+
+
+
+
+
+
+
 #### Preparing for Java 25: AEM Cloud Service Runtime Upgrade Timeline
 
 Java 25 is the next long-term support (LTS) release after Java 21, delivering improvements across performance, developer productivity, and security:
