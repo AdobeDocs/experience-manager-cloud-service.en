@@ -1244,7 +1244,6 @@ user-guide-title: AEM as a Cloud Service
       + [Experience Context](/help/ai-in-aem/agents/governance/experience-context.md)
       + [How to Import a Brand Policy](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md)
   + AI Assistant {#ai-assistant}
-    + [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
     + [About AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
   + Generate Variations {#generate-variations}
     + [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md)
