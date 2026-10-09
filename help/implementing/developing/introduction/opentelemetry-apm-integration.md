@@ -4,6 +4,17 @@ description: Adobe is replacing the Application Performance Monitoring integrati
 exl-id: 50053a23-b552-4554-b4b0-21e978aa7f0a
 feature: Operations
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # OpenTelemetry (Beta) {#opentelemetry-apm}
 

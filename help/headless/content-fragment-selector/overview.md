@@ -3,6 +3,16 @@ title: Micro-Frontend Content Fragment Selector for Adobe Experience Manager as 
 description: Use the Micro-Frontend Content Fragment Selector to search, find, and retrieve content fragments from your application.
 role: Admin, User, Developer
 exl-id: 5b18fb2c-26c8-4d9d-ba2e-9e53c09f5022
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Micro-Frontend Content Fragment Selector {#micro-frontend-content-fragment-selector}
 

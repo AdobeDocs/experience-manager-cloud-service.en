@@ -3,6 +3,15 @@ title: Mastering Adaptive Forms Block Field Properties
 description: Craft powerful forms faster using spreadsheets & Adaptive Forms Block Field Properties! This guide lists all the properties supported by EDS Forms Block.
 feature: Edge Delivery Services
 exl-id: e86ccc36-bda0-4e9d-8d65-ae7cb3fa79b7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
 ---
 # Adaptive Forms Block Field Properties
 

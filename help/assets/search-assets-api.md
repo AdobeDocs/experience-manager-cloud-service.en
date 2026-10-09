@@ -4,6 +4,12 @@ description: Learn how to use the Search Assets API.
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 0c52e793-4c33-4230-b4f2-27296dd9e4b3
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Search Assets API {#search-assets-api}
 

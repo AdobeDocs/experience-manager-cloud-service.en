@@ -3,6 +3,12 @@ title: C2PA metadata in Dynamic Media
 description: C2PA metadata, integrated into Dynamic Media, can offer context into the history of an asset, including how it was made and who was involved in creating it. Like a nutrition label for digital content, C2PA metadata can help increase transparency and build trust with audiences.
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # C2PA metadata in Dynamic Media {#C2PA-metadata-dynamic-media}
 

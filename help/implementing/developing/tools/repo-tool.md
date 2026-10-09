@@ -4,6 +4,14 @@ description: The AEM Repo Tool is a simple solution to transfer JCR content betw
 exl-id: fb887ba3-e40b-4ab1-b142-0748c6d9f18e
 feature: Developing
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # AEM Repo Tool {#aem-repo-tool}
 

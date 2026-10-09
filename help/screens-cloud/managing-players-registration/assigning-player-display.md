@@ -4,6 +4,16 @@ description: Learn how to assign a player to a display in Screens as a Cloud Ser
 exl-id: d5f5b087-d17a-427f-9bf2-7451eb4e1df6
 feature: Developing Screens
 role: Admin, Developer, User
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Assigning Player to a Display in Screens as a Cloud Service {#assign-player-displays-screens-cloud}
 

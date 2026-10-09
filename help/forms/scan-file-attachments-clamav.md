@@ -1,9 +1,15 @@
 ---
-title: "Tutorial: Scan file attachments with ClamAV"
+title: 'Tutorial: Scan file attachments with ClamAV'
 description: A complete, step-by-step tutorial for scanning Adaptive Form file uploads with the ClamAV antivirus engine. Written to be followed by someone new to AEM, including all assumptions, prerequisites, and values to substitute.
 keywords: ClamAV AEM Forms, virus scan file upload, antivirus scan form attachment, malware scanning tutorial, block malicious file upload
 feature: Adaptive Forms, Core Components
 role: Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Tutorial: Scan file attachments with an antivirus

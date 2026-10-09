@@ -4,6 +4,9 @@ description: Learn how to integrate the [!DNL AEM Assets] with [!DNL Edge Delive
 tags: AEM Assets, Edge Delivery Services, Dynamic Media, Dynamic Media with OpenAPI capabilities, Universal Editor, Edge Delivery Services with Universal Editor
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 ---
 
 # Integrate [!DNL AEM Assets] while authoring content for [!DNL Edge Delivery Services] {#integrate-aem-assets-with-edge-delivery-services}

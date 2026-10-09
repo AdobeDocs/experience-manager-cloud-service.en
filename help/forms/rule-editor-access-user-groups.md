@@ -6,6 +6,17 @@ role: User
 level: Beginner, Intermediate
 hide: true
 exl-id: 2ef0e685-458b-4117-b02a-55dd3472577e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Grant rule editor access to select user groups {#grant-rule-editor-access-to-select-user-groups}
 

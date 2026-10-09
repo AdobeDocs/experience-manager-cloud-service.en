@@ -2,6 +2,9 @@
 title: Configure Content Hub user interface
 description: Configure Content Hub user interface
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 ---
 # Configure [!DNL Content Hub] user interface {#configure-content-hub-user-interface}
 

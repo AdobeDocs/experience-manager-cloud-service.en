@@ -1,10 +1,21 @@
 ---
 title: Introduction to Headless for AEM
-description: Learn about Headless in Adobe Experience Manager (AEM) with a combination of detailed documentation and headless journeys. Learn how features like Content Fragment Models, Content Fragments, and a GraphQL API are used to power headless experiences. 
+description: Learn about Headless in Adobe Experience Manager (AEM) with a combination of detailed documentation and headless journeys. Learn how features like Content Fragment Models, Content Fragments, and a GraphQL API are used to power headless experiences.
 landing-page-description: Understand how to use and administer Headless in Adobe Experience Manager as a Cloud Service.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 feature: Headless
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Introduction to Adobe Experience Manager as a Headless CMS {#introduction-aem-headless}
