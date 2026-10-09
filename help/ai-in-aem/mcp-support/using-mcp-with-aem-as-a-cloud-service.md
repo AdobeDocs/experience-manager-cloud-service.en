@@ -181,7 +181,7 @@ The `bypass` action exempts matching requests from traffic filter block rules an
 >
 >The rule does not grant any additional permissions. Every request still runs under the authenticated user's identity, and AEM enforces that user's existing permissions.
 
-For details about the `cdn.yaml` file, the rule syntax, and deployment with a config pipeline, see [Traffic filter rules including WAF rules](/help/security/traffic-filter-rules-including-waf.md).
+For general information about the `cdn.yaml` file, traffic filter rules, and deployment with a config pipeline, see [Traffic filter rules including WAF rules](/help/security/traffic-filter-rules-including-waf.md).
 
 ### MCP Client Application Configuration {#mcp-client-application-configuration}
 
