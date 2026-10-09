@@ -219,7 +219,6 @@ For more information about the integrations, properties, and customizations, ref
 
 * [Content Advisor customizations](/help/assets/content-advisor-customization.md)
 
-
 **See also**
 
 * [Translate Assets](/help/assets/translate-assets.md)
