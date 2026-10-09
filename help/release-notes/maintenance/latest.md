@@ -10,14 +10,14 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 28702 {#release-28702}
+## Release 28849 {#release-28849}
 
-Summarized below are the continuous improvements for maintenance release 28702, which was publicly released on October X, 2026. The previous maintenance release was release 28386.
+Summarized below are the continuous improvements for maintenance release 28849, which was publicly released on October X, 2026. The previous maintenance release was release 28386.
 
 The 2026.10.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
 
-### Enhancements {#enhancements-28702}
+### Enhancements {#enhancements-28849}
 
 * ASSETS-54428: Added search events for asset searches through author OpenAPI.
 * ASSETS-60359: Added tagging APIs for asset management.
@@ -53,7 +53,7 @@ The 2026.10.0 feature activation will provide the full feature set for this main
 * ASSETS-77856: Improved template font matching using PostScript font names.
 * ASSETS-77995: Added an API to manage metadata-driven permissions for prompts.
 
-### Fixed Issues {#fixed-issues-28702}
+### Fixed Issues {#fixed-issues-28849}
 
 * ASSETS-24897: Corrected the publication status icon for published assets.
 * ASSETS-31575: Localized invalid JSON path error messages in metadata schemas.
@@ -92,21 +92,21 @@ The 2026.10.0 feature activation will provide the full feature set for this main
 * SITES-50482: Restored PDF asset references from custom download and link list components.
 
 
-### Known Issues {#known-issues-28702}
+### Known Issues {#known-issues-28849}
 
 None.
 
 <!-- Confirm known issues before publication. -->
 
-### Deprecated Features and APIs {#deprecated-28702}
+### Deprecated Features and APIs {#deprecated-28849}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-28702}
+### Security Fixes {#security-28849}
 
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release includes 17 security fixes, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-28702}
+### Embedded Technologies {#embedded-tech-28849}
 
 |Technology|Version|Link|
 |---|---|---|
