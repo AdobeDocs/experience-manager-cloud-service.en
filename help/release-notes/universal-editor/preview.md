@@ -22,13 +22,17 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming Features {#upcoming-features}
 
+<!--
 * The AI agent can now preview content and makes more precise updates, keeping nested content intact when it updates components.
+-->
 
 ## Upcoming Changes {#upcoming-improvements}
 
+<!--
 * URLs inside Unified Shell no longer pick up repeated shell or embedded-URL prefixes.
 * The shell's force-reload flag is no longer passed through to the page's search parameters.
 * Drag and drop no longer allows moving components onto targets that are not containers.
 * Content updates made through WebMCP now fall back to the author DAM path for assets that haven't been activated.
 * Icons in extension-provided renderers now receive their props correctly.
 * Structured log events from Universal Editor Service now include a UTC timestamp.
+-->
