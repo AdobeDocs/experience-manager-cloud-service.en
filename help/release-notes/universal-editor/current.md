@@ -1,13 +1,13 @@
 ---
-title: Universal Editor 2026.10.08 Release Notes
-description: These are the release notes for the 2026.10.08 release of the Universal Editor.
+title: Universal Editor 2026.10.15 Release Notes
+description: These are the release notes for the 2026.10.15 release of the Universal Editor.
 feature: Release Information
 role: Admin
 ---
 
 # Universal Editor 2026.10.08 Release Notes {#release-notes}
 
-These are the release notes for the 8 October 2026 release of the Universal Editor.
+These are the release notes for the 15 October 2026 release of the Universal Editor.
 
 >[!TIP]
 >
