@@ -1123,6 +1123,7 @@ user-guide-title: AEM as a Cloud Service
      + [Unbound Variable](/help/forms/interactive-communication/unbound-variable.md)
    + How To {#howto}
      + [Configure Data Binding](/help/forms/interactive-communication/configure-data-binding.md)
+     + {hide-from-toc} [Mask numeric values](/help/forms/interactive-communication/howto/mask-numeric-identifier.md)
      + [Use the Rule Editor](/help/forms/interactive-communication/use-the-rule-editor.md)
      + [Import and Export the Interactive Communication](/help/forms/interactive-communication/import-and-export-the-interactive-communication.md)
      + [Add Custom Fonts](/help/forms/interactive-communication/add-custom-fonts.md)

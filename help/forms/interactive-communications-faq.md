@@ -33,6 +33,8 @@ Date and Date/Time fields require the underlying value to conform to **ISO 8601*
 **Q: Can I define a custom pattern that is not in the predefined list?**
 Yes. You can enter a custom **XFA picture clause** directly in the Display Pattern field in the Properties panel. Refer to the picture clause symbols for each field type in the respective component reference pages.
 
+For partially or fully masked numeric values, see [Mask numeric values](/help/forms/interactive-communication/howto/mask-numeric-identifier.md).
+
 ## Review and Annotations
 
 **Q: What is the difference between Comments and Annotations in Interactive Communications?**
