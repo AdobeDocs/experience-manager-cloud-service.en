@@ -62,7 +62,6 @@ AI can make mistakes so review the diagnosis before acting on it.
 | Troubleshooting a failed pipeline | "Troubleshoot my failed pipeline"<br><br>"Help me troubleshoot the last pipeline that failed in Main Program" |
 | Troubleshooting a specific execution | "Troubleshoot pipeline execution 1234567"<br><br>"Troubleshoot execution 1234567 of Dev Pipeline in program 12345" |
 | Troubleshooting web tier and config pipelines | "Debug my web tier build failure on pipeline 67890"<br><br>"Why did my config pipeline deployment fail in program 12345?" |
-| Generating and applying a fix | "Generate a fix for my failed pipeline execution 1234567"<br><br>"Apply the fix and push it to a new branch" |
 
 ### AEM Cloud Manager Environment Management
 

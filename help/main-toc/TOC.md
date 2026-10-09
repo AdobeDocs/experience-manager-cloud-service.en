@@ -274,6 +274,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.10.01 Release Notes](/help/release-notes/universal-editor/2026/2026-10-01.md)
       + [2026.09.24 Release Notes](/help/release-notes/universal-editor/2026/2026-09-24.md)
       + [2026.09.17 Release Notes](/help/release-notes/universal-editor/2026/2026-09-17.md)
       + [2026.09.10 Release Notes](/help/release-notes/universal-editor/2026/2026-09-10.md)
@@ -706,6 +707,7 @@ user-guide-title: AEM as a Cloud Service
 
   + Content Advisor {#content-advisor}
     + [Content Advisor to access AEM content in Adobe and non-Adobe applications](/help/assets/integrate-adobe-non-adobe-applications.md)
+    + [Content Advisor Browser Extension](/help/assets/content-advisor-browser-extension.md)
     + [Content Advisor properties](/help/assets/content-advisor-properties.md)
     + [Content Advisor customizations](/help/assets/content-advisor-customization.md)
     + [Integration with Dynamic Media](/help/assets/integration-with-dynamic-media.md)
@@ -1242,7 +1244,6 @@ user-guide-title: AEM as a Cloud Service
       + [Experience Context](/help/ai-in-aem/agents/governance/experience-context.md)
       + [How to Import a Brand Policy](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md)
   + AI Assistant {#ai-assistant}
-    + [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
     + [About AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
   + Generate Variations {#generate-variations}
     + [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md)
