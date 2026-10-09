@@ -152,13 +152,7 @@ By default, restrictions apply at the organizational level. If you need restrict
 >
 >The AEM MCP Server inherits any restrictions configured on the domain-specific MCP servers.
 
-#### Managing MCP Client Access {#managing-mcp-client-access}
-
-Administrators can also disable access for specific MCP client applications at the organization level if their organization's policies require it. If you would like Adobe to enable support for additional MCP client products, send a link to the product website. If you need to allowlist a custom MCP client, reach out as well.
-
-For all MCP server related requests, feel free to contact Adobe at **`aemcs-mcp-feedback@adobe.com`**
-
-#### Allowing the AEM MCP Server on IP-Restricted Environments {#allowing-aem-mcp-server-on-ip-restricted-environments}
+##### Allowing the AEM MCP Server on IP-Restricted Environments {#allowing-aem-mcp-server-on-ip-restricted-environments}
 
 If an environment restricts access by IP address, for example with a Cloud Manager IP allowlist or a traffic filter rule that blocks requests from other IP addresses, AEM MCP Server requests to that environment are blocked by default.
 
@@ -182,6 +176,12 @@ The `bypass` action exempts matching requests from traffic filter block rules an
 >The rule does not grant any additional permissions. Every request still runs under the authenticated user's identity, and AEM enforces that user's existing permissions.
 
 For general information about the `cdn.yaml` file, traffic filter rules, and deployment with a config pipeline, see [Traffic filter rules including WAF rules](/help/security/traffic-filter-rules-including-waf.md).
+
+#### Managing MCP Client Access {#managing-mcp-client-access}
+
+Administrators can also disable access for specific MCP client applications at the organization level if their organization's policies require it. If you would like Adobe to enable support for additional MCP client products, send a link to the product website. If you need to allowlist a custom MCP client, reach out as well.
+
+For all MCP server related requests, feel free to contact Adobe at **`aemcs-mcp-feedback@adobe.com`**
 
 ### MCP Client Application Configuration {#mcp-client-application-configuration}
 
