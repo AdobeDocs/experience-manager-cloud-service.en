@@ -5,6 +5,18 @@ mini-toc-levels: 2
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -163,8 +175,6 @@ Use the power of AEM Content Advisor for AEM Assets, in the application of your 
 * **Pick exactly what you need.** Choose any asset or any Dynamic Media rendition (the right size, format, or crop) and send it straight to your editor. Insert, drag and drop, or copy URL to the clipboard.
 
 * **Works where you author.** AEM (Cloud Service, Adobe Managed Services, or On-premise), other Adobe CX Enterprise products (where AEM Assets native integration does not exist), and third-party tools such as Google Docs/WordPress/Microsoft Powerpoint, and any other web application.
-
-* **Private by design.** Optional on-device OCR extracts text from images locally. The captured image never leaves your device.
 
 For more information, see [Use AEM Content Advisor with the browser extension](/help/assets/content-advisor-browser-extension.md).
 
@@ -431,6 +441,52 @@ See the [deprecation article](/help/release-notes/deprecated-removed-features.md
 * `org.apache.jackrabbit.oak.plugins.memory`
 
 +++
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+#### Jackson bundle upgrade affects the GlobalLink connector {#jackson-upgrade-globallink-connector}
+
+AEM 6.5 LTS SP3 upgrades the Jackson bundle. This change affects deployments that use the GlobalLink translation connector.
+ 
+If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier than 3.4.4.7, upgrade the bundle to a compatible version. Version 3.4.4.7 or later works with the upgraded jackson bundle in SP3.
+ 
+>[!NOTE]
+>
+>Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.4.7 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #### Preparing for Java 25: AEM Cloud Service Runtime Upgrade Timeline
 
