@@ -892,14 +892,42 @@ If you wish to have items that appear above all tabs, they must be defined befor
 
 #### Text {#text}
 
-Text allows for a single line of text input.  It includes additional validation types.
+Text allows for a single line of text input.  
+
+It offers additional configurations.
+
+| Configuration | Value Type | Description | Required |
+|---|---|---|---|
+| `component` | string | Must be `"text"` | Yes |
+| `name` | string | Property where data persists | Yes |
+| `label` | string | Field label displayed to users | Yes |
+| `valueType` | string | Should be `"string"` | No |
+| `valueFormat` | string | Selects the format validator and, for `string-multiline`, the input type; see below | No |
+| `description` | string | Helper text explaining the field | No |
+| `value` | string | Default value | No |
+| `required` | boolean | Whether the field must be completed | No |
+| `readOnly` | boolean | Whether the field is editable | No |
+| `validation` | object | Validation rules (see below) | No |
+
+It includes additional effects for `valueFormat`.
+
+| `valueFormat` | Effect |
+|---|---|
+| *(omitted)* | No format validation |
+| `string` | No format validation |
+| `string-multiline` | No format validation; renders a text area instead of a text input |
+| `email` | Value must be a valid email address |
+| `url` | Value must be a valid URL |
+| `regexp` | Value must match `validation.regExp` |
+
+It includes additional validation types.
 
 |Validation Type|Value Type|Description|Required|
 |---|---|---|---|
 |`minLength`|`number`|Minimum number of characters allowed|No|
 |`maxLength`|`number`|Maximum number of characters allowed|No|
-|`regExp`|`string`|Regular expression which the input text must match|No|
-|`customErrorMsg`|`string`|Message that will display if `minLength`, `maxLength`, and/or `regExp` is/are violated|No|
+|`regExp`|`string`|Regular expression which the input text must match<br>Only applied when `valueFormat` is `"regexp"`|No|
+|`customErrorMsg`|`string`|Message that will display if `minLength`, `maxLength`, and/or `regExp` is/are violated<br>Has no effect on `minLength`, `maxLength`, or the email/url format checks — those always show their built-in message|No|
 
 >[!BEGINTABS]
 
