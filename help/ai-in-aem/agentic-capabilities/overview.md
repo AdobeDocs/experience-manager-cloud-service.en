@@ -25,23 +25,20 @@ role_v2:
     internal-label: Developer
 ---
 
-# Agentic Capabilities {#brand-experience-agentic-capabilities}
-
->[!NOTE]
->
->Coming soon: 
->
->New AEM agentic capabilities through CX Enterprise Coworker, an evolution of AI Assistant built to help you do more, faster.
->
->All eligible customers will get access to Adobe Experience Manager agentic capabilities in Coworker, on a rolling basis.
+# Agentic Capabilities {#agentic-capabilities}
 
 The Agentic Capabilities of Adobe Experience Manager (AEM) as a Cloud Service collaborate with [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) to let you query, analyze, and act on your Experience Platform data using natural language instead of navigating multiple UIs or writing queries by hand.
 
-A selection of agentic capabilities are available in AEM:
+A selection of agentic capabilities and skills are available in AEM:
 
 * Brand Experience
 
-  * [Experience Production](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/use-cases.md)
+  * Experience Production
+
+    * [Content Create](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/content-create.md)
+    * [Content Update](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/content-update.md)
+    * [Figma to Visual Content Fragments Skill](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/figma-to-visual-content-fragments.md)
+
   * [Development](/help/ai-in-aem/agentic-capabilities/brand-experience/development/use-cases.md)
   * [Onboarding](/help/ai-in-aem/agentic-capabilities/brand-experience/onboarding/use-cases.md)
 
@@ -52,14 +49,8 @@ A selection of agentic capabilities are available in AEM:
 
 * [Brand Governance](/help/ai-in-aem/agentic-capabilities/brand-governance/use-cases.md)
 
-## Known Limitations {#known-limitations}
+## Access Coworker from AEM {#access-coworker-from-aem}
 
-The initial release of AEM Agentic Capabilities in CX Enterprise Coworker covers the use cases listed on the pages in this section. 
+To access Coworker from AEM you can use the **Ask Coworker** icon to give you direct access to the [Coworker Chat UI](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/ui-guide). The icon is available from multiple locations in AEM.
 
->[!WARNING]
->
->Some capabilities that are available today in AI Assistant are not yet available in Coworker.
-
-The in-app side panel is not part of this release. Use cases that depend on it are therefore not yet available; including conversational authoring of Attribute-Based Access Control (ABAC) policies and assets review.
-
-These pages are updated as capabilities become available in Coworker.
+![Ask Coworker in AEM t](/help/ai-in-aem/agentic-capabilities/assets/ai-ac-access-coworker.png)

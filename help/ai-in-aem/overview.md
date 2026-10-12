@@ -40,17 +40,19 @@ From agents to skills, for more information see:
 
 * [Agentic Capabilities in AEM](/help/ai-in-aem/agentic-capabilities/overview.md)
 
+<!--
 ## Agentic AI in AEM {#agentic-ai-in-aem}
 
 AEM provides a range of [agents](/help/ai-in-aem/agents/overview.md) to accelerate your content creation and automatically orchestrate changes:
 
 * [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) 
 * [Content Advisor Agent](/help/ai-in-aem/agents/content-advisor/overview.md)
-* [Governance Agent](/help/ai-in-aem/agents/governance/overview.md)
+* [Governance Agent](/help/ai-in-aem/agentic-capabilities/brand-governance/overview.md)
 
 ## AI Assistant {#ai-assistant}
 
 The [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/ai-assistant-in-aem.md) offers a conversational interface designed to streamline finding answers to your AEM-related queries.
+-->
 
 ## Generative AI in AEM {#generative-ai-in-aem}
 

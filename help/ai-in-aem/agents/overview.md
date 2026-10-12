@@ -78,7 +78,7 @@ The agent interprets user intent and performs complex editing tasks automaticall
 
 ## Governance Agent {#governance-agent}
 
-The [Governance Agent](/help/ai-in-aem/agents/governance/overview.md) safeguards brand integrity and compliance across AEM. By enforcing security, regulatory, and brand policies the agent performs the necessary jobs to ensure that every interaction and activation adheres to established standards.
+The [Governance Agent](/help/ai-in-aem/agentic-capabilities/brand-governance/overview.md) safeguards brand integrity and compliance across AEM. By enforcing security, regulatory, and brand policies the agent performs the necessary jobs to ensure that every interaction and activation adheres to established standards.
 
 ## Limitations {#limitations}
 

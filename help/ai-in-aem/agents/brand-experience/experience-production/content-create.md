@@ -106,7 +106,7 @@ Next, the agent presents a plan for the changes it will make, as based on your i
 
 >[!NOTE]
 >
-> If you use the [Governance Agent](/help/ai-in-aem/agents/governance/overview.md), generation can follow your brand guidelines.
+> If you use the [Governance Agent](/help/ai-in-aem/agentic-capabilities/brand-governance/overview.md), generation can follow your brand guidelines.
 
 ![Content Create Job - review the plan](/help/ai-in-aem/agents/brand-experience/experience-production/assets/create-content-example-review-plan.png)
 

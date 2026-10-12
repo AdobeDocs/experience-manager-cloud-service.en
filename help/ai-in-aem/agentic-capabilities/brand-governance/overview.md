@@ -28,7 +28,7 @@ role_v2:
 
 # Governance Agent Overview {#governance-agent}
 
-The **Governance Agent** is a solution designed to safeguard brand integrity and compliance across Adobe Experience Manager. It enforces security, regulatory, and brand policies to ensure every interaction and activation adheres to established standards. The Governance Agent is fully integrated in AI assistant and is designed to operate seamlessly within enterprise environments by leveraging **A2A (Agent-to-Agent)** and **MCP (Model Context Protocol)** tools. These integrations enable the agent to connect with advanced AI orchestrators such as ChatGPT, Claude, and other external AI systems, ensuring flexible and scalable intelligence across platforms.
+The **Governance Agent** is a solution designed to safeguard brand integrity and compliance across Adobe Experience Manager. It enforces security, regulatory, and brand policies to ensure every interaction and activation adheres to established standards. The Governance Agent is fully integrated in AI assistant and is designed to operate seamlessly within enterprise environments by leveraging **A2A (Agent-to-Agent)** and **MCP (Model Context Protocol)** tools. These integrations enable the agentic capability to connect with advanced AI orchestrators such as ChatGPT, Claude, and other external AI systems, ensuring flexible and scalable intelligence across platforms.
 
 Key capabilities include:
 
@@ -47,9 +47,9 @@ By combining these features, the Governance Agent reduces risk and enables fast,
 
 ### Brand Governance {#brand-governance}
 
-The governance agent can validate content against brand guidelines to ensure consistency across all digital experiences. It uses pre-ingested brand rules, such as tone, claims, logo usage, typography, and imagery. It operates in real-time within the chat, editors and batch mode in Experience Hub, making it ideal for AI-generated content, site migrations, and brief-based site creation. 
+The Governance Agent can validate content against brand guidelines to ensure consistency across all digital experiences. It uses pre-ingested brand rules, such as tone, claims, logo usage, typography, and imagery. It operates in real-time within the chat, editors and batch mode in Experience Hub, making it ideal for AI-generated content, site migrations, and brief-based site creation. 
 
-![Brand Governance Overview](/help/ai-in-aem/agents/governance/assets/brand-governance.png)
+![Brand Governance Overview](/help/ai-in-aem/agentic-capabilities/brand-governance/assets/brand-governance.png)
 
 **Prompt Examples:**
 
@@ -60,15 +60,15 @@ The governance agent can validate content against brand guidelines to ensure con
 
 >[!NOTE]
 >
->The governance agent also includes an AI-powered brand policy import capability that uses AI to transform customers' existing brand guideline documents into structured, enforceable policy checks that automatically govern, validate, and guide compliant content creation. For more information, see [How to Import a Brand Policy](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md).
+>The Governance Agent also includes an AI-powered brand policy import capability that uses AI to transform customers' existing brand guideline documents into structured, enforceable policy checks that automatically govern, validate, and guide compliant content creation. For more information, see [How to Import a Brand Policy](/help/ai-in-aem/agentic-capabilities/brand-governance/how-to-import-a-brand-policy.md).
 
 ### Permission and Digital Rights Management {#permission-and-digital-rights-management}
 
 #### Permission Management in Content Hub {#permission-management-in-content-hub}
 
-In Content Hub, the governance agent ensures that only the right people access the right assets at the right time. By applying granular, attribute-based controls and usage rights, it protects sensitive content while enabling secure collaboration. This means reduced compliance risk, stronger brand integrity, and faster workflows, teams can confidently share and reuse assets without worrying about unauthorized access or misuse. This balance of security and flexibility translates into higher operational efficiency and trust across the organization.
+In Content Hub, the Governance Agent ensures that only the right people access the right assets at the right time. By applying granular, attribute-based controls and usage rights, it protects sensitive content while enabling secure collaboration. This means reduced compliance risk, stronger brand integrity, and faster workflows, teams can confidently share and reuse assets without worrying about unauthorized access or misuse. This balance of security and flexibility translates into higher operational efficiency and trust across the organization.
 
-![Permission Management Overview](/help/ai-in-aem/agents/governance/assets/permission-management.png)
+![Permission Management Overview](/help/ai-in-aem/agentic-capabilities/brand-governance/assets/permission-management.png)
 
 **Prompt Examples:**
 
@@ -80,20 +80,20 @@ In Content Hub, the governance agent ensures that only the right people access t
 
 #### Permission Management in AEM {#permission-management-in-aem}
 
-In Adobe Experience Manager, the governance agent helps you understand and troubleshoot repository permissions across your content tree. Ask a question in plain language about who can do what on a given path, and the agent audits the effective access control lists (ACLs) on your author environment in real time to explain the result.
+In Adobe Experience Manager, the Governance Agent helps you understand and troubleshoot repository permissions across your content tree. Ask a question in plain language about who can do what on a given path, and the agentic capability audits the effective access control lists (ACLs) on your author environment in real time to explain the result.
 
-The agent can:
+The agentic capability can:
 
 * **Explain an access decision:** Determine whether a specific user or group is allowed or denied an action on a path, and cite the exact policies behind that outcome, including policies inherited from parent paths and any restrictions that narrow their scope.
 * **Report who holds a privilege:** List the users and groups that effectively have a given privilege, such as `jcr:write` or `jcr:removeNode`, on a path.
 * **Identify the source of a denial:** Show who is denied an action and which specific entries cause it.
 * **Recommend groups for a grant:** Suggest which existing groups are best suited to receive a privilege, so you can apply changes following the principle of least privilege.
 
-The agent is read-only: it diagnoses permissions and recommends changes, but it does not modify access control lists, groups, or content on your behalf.
+The agentic capability is read-only: it diagnoses permissions and recommends changes, but it does not modify access control lists, groups, or content on your behalf.
 
 This capability is available through [CX Coworker](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview).
 
-![The governance agent auditing why a principal has write access on a path in AEM](/help/ai-in-aem/agents/governance/assets/permission-management-aem-audit-access.png)
+![The Governance Agent auditing why a principal has write access on a path in AEM](/help/ai-in-aem/agentic-capabilities/brand-governance/assets/permission-management-aem-audit-access.png)
 
 **Prompt Examples:**
 
@@ -104,19 +104,19 @@ This capability is available through [CX Coworker](https://experienceleague.adob
 * *Show all effective ACL entries on /content/wknd, including inherited policies.*
 * *Recommend groups suitable for granting jcr:removeNode and jcr:removeChildNodes on /content/projects/masters.*
 
-When you ask the agent to recommend groups for a grant, it reviews the principals that already hold the privilege at or above the path and suggests the most suitable candidates:
+When you ask the agentic capability to recommend groups for a grant, it reviews the principals that already hold the privilege at or above the path and suggests the most suitable candidates:
 
-![The governance agent recommending groups for granting delete privileges in AEM](/help/ai-in-aem/agents/governance/assets/permission-management-aem-recommend-groups.png)
+![The Governance Agent recommending groups for granting delete privileges in AEM](/help/ai-in-aem/agentic-capabilities/brand-governance/assets/permission-management-aem-recommend-groups.png)
 
-If the agent cannot reach the target environment, it reports that the connection failed and outlines the likely causes:
+If the agentic capability cannot reach the target environment, it reports that the connection failed and outlines the likely causes:
 
-![The governance agent reporting that the target AEM environment is unreachable](/help/ai-in-aem/agents/governance/assets/permission-management-aem-environment-unreachable.png)
+![The Governance Agent reporting that the target AEM environment is unreachable](/help/ai-in-aem/agentic-capabilities/brand-governance/assets/permission-management-aem-environment-unreachable.png)
 
 #### Assets Digital Rights Management {#assets-digital-rights-management}
 
-Using the agent, you can manage your Assets digital rights across your content ecosystem. It controls permissions and usage rights at a granular level, ensuring that assets are accessed and used only within defined compliance boundaries. This delivers peace of mind, protecting intellectual property, reducing regulatory risk, and maintaining brand integrity. By automating rights enforcement, teams can collaborate securely and confidently, accelerating content distribution without compromising security or compliance.
+Using the agentic capability, you can manage your Assets digital rights across your content ecosystem. It controls permissions and usage rights at a granular level, ensuring that assets are accessed and used only within defined compliance boundaries. This delivers peace of mind, protecting intellectual property, reducing regulatory risk, and maintaining brand integrity. By automating rights enforcement, teams can collaborate securely and confidently, accelerating content distribution without compromising security or compliance.
 
-![DRM Management Overview](/help/ai-in-aem/agents/governance/assets/drm-management.png)
+![DRM Management Overview](/help/ai-in-aem/agentic-capabilities/brand-governance/assets/drm-management.png)
 
 **Prompt Examples:**
 
