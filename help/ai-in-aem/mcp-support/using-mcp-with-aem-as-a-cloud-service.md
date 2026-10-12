@@ -169,7 +169,7 @@ data:
         action: bypass
 ```
 
-The `bypass` action exempts matching requests from traffic filter block rules and also from the IP restrictions of Cloud Manager IP allowlists. The rule applies to all tiers and paths, so the AEM MCP Server can perform every operation that users are permitted to perform in AEM.
+The `bypass` action exempts matching requests from traffic filter block rules and also from the IP restrictions of Cloud Manager IP allowlists. The rule applies to all tiers and paths, so the AEM MCP Server can perform every operation that users are permitted to perform in AEM. The rule only matches requests from the AEM MCP Server, which Adobe identifies with `clientService` `adobe/aemmcp`. All other traffic to the environment remains subject to your Cloud Manager IP allowlists and traffic filter rules.
 
 >[!NOTE]
 >
