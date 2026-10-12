@@ -707,6 +707,7 @@ user-guide-title: AEM as a Cloud Service
 
   + Content Advisor {#content-advisor}
     + [Content Advisor to access AEM content in Adobe and non-Adobe applications](/help/assets/integrate-adobe-non-adobe-applications.md)
+    + [Content Advisor Browser Extension](/help/assets/content-advisor-browser-extension.md)
     + [Content Advisor properties](/help/assets/content-advisor-properties.md)
     + [Content Advisor customizations](/help/assets/content-advisor-customization.md)
     + [Integration with Dynamic Media](/help/assets/integration-with-dynamic-media.md)
@@ -1246,7 +1247,6 @@ user-guide-title: AEM as a Cloud Service
       + [Content Discovery Agent](/help/ai-in-aem/agents/content-advisor/discovery.md)
       + [Content Optimization Agent](/help/ai-in-aem/agents/content-advisor/content-optimization.md)
   + AI Assistant {#ai-assistant}
-    + [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
     + [About AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
   + Generate Variations {#generate-variations}
     + [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md)

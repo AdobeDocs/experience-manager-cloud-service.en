@@ -2,6 +2,9 @@
 title: Bulk Upload of Principals to IMS after using CTT
 description: Overview of Bulk Upload files for groups and users, and how to use them on the Admin Console to create groups and users in IMS.
 exl-id: 43ebd6f1-1492-461a-8d9b-2b55dcde9052
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 ---
 # Bulk Upload of Principals to IMS After Using CTT {#bulk-principal-uploading}
 

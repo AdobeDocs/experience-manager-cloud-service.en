@@ -4,6 +4,24 @@ description: Learn about Generate Variations, accessible from various editors wi
 feature: Generate Variations, AI Tools
 role: Admin, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+  - id: ec4263d9-bf7c-44c7-b3f1-3e664861c8f2
+    internal-label: Generative AI
+subfeature_v2:
+  - id: e56728f4-5c82-49ef-8986-4b5f27301f7a
+    internal-label: Generate Variations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Generate Variations - Integrated in AEM Editors {#generate-variations-integrated-in-aem-editors}
 

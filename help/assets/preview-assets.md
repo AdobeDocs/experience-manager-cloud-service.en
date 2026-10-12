@@ -4,6 +4,14 @@ description: Dynamic Media with OpenAPI capabilities enables you to preview asse
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 6f071ca9-0f84-45fc-a6b3-047cca9d5e65
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 
 # Preview assets before using them in AEM Sites pages {#asset-preview-using-Dynamic-Media-with-OpenAPI-capabilities}

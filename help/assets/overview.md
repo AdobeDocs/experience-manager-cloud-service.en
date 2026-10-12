@@ -3,6 +3,9 @@ title: Introducing Assets as a Cloud Service for Digital Asset Management in AEM
 description: Introducing Assets as a Cloud Service for Digital Asset Management in AEM
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 ---
 # Introducing Assets as a Cloud Service for Digital Asset Management in [!DNL AEM] {#assets-as-cloud-service-digital-asset-management-aem}
 
