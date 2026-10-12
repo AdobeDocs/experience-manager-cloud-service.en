@@ -2,6 +2,9 @@
 title: Managing Principals after Migration
 description: Learn how to set up users and groups in IMS and AEM
 exl-id: 46c4abfb-7e28-4f18-a6d4-f729dd42ea7b
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 ---
 # Managing Principals after Migration {#managing-principals-after-migration}
 
