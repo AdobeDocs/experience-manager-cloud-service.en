@@ -207,10 +207,14 @@ There are multiple locations from where you can trigger actions related to your 
        1. Select the ellipses next to the Source.
        1. Select the action from the drop down menu.
 
+          ![Live Copy Details - source menu](/help/sites-cloud/administering/content-fragments/assets/cf-msm-live-copy-tab-source-menu.png)
+
      * a Live Copy
 
        1. Select the ellipses next to your Live Copy.
        1. Select the required action from the drop down menu.
+
+          ![Live Copy Details - live copy menu](/help/sites-cloud/administering/content-fragments/assets/cf-msm-live-copy-tab-lc-menu.png)
 
      * Continue with any further steps.
 
