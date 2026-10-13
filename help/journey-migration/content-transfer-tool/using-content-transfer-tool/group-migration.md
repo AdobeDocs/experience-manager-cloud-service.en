@@ -2,6 +2,9 @@
 title: Group Migration
 description: Overview of Group Migration in AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 ---
 
 # Group Migration {#group-migration}

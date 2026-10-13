@@ -4,6 +4,12 @@ description: Learn how to upload your brand approved assets to Content Hub
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Upload brand approved assets to [!DNL Content Hub] {#upload-brand-approved-assets-content-hub}
 

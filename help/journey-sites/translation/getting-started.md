@@ -2,11 +2,17 @@
 title: Get started with AEM Sites translation
 description: Get to know how to organize your AEM Sites content and how AEM's translation tools work.
 index: true
-hidefromtoc: no
+hidefromtoc: 'no'
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Get Started with AEM Sites Translation {#getting-started}
 
