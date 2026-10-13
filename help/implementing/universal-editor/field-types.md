@@ -902,12 +902,12 @@ It offers additional configurations.
 | `name` | string | Property where data persists | Yes |
 | `label` | string | Field label displayed to users | Yes |
 | `valueType` | string | Should be `"string"` | No |
-| `valueFormat` | string | Selects the format validator and, for `string-multiline`, the input type; see below | No |
+| `valueFormat` | string | Selects the format validator and, for `string-multiline`, the input type | No |
 | `description` | string | Helper text explaining the field | No |
 | `value` | string | Default value | No |
 | `required` | boolean | Whether the field must be completed | No |
 | `readOnly` | boolean | Whether the field is editable | No |
-| `validation` | object | Validation rules (see below) | No |
+| `validation` | object | Validation rules | No |
 
 It includes additional effects for `valueFormat`.
 
