@@ -20,11 +20,17 @@ Multi Site Manager (MSM), and the Live Copy functionality, enables you to use th
 
 <!-- CQDOC-23473 - feature is currently beta remove Caution for GA -->
 
+<!--
 >[!CAUTION]
 >
 >MSM from the Content Fragment console is currently Beta functionality and only available to specific customers.
+-->
+
+<!--
+>[!NOTE]
 >
->MSM for Content Fragments is also available when using Content Fragments via the **Assets** console. 
+>MSM for Content Fragments is also available when using Content Fragments via the [**Assets** console](/help/assets/content-fragments/content-fragments-msm.md).
+--> 
 
 * With MSM Live Copies you can:
   * Create content once 
@@ -79,6 +85,35 @@ MSM for Content Fragments, combined with functionality within the Content Fragme
 
 ## Create a Live Copy {#create-a-live-copy}
 
+You can create a Live Copy for either a single Content Fragment or an entire folder of fragments.
+
+<!-- CQDOC-23473 - feature is currently beta remove Caution for GA -->
+
+>[!CAUTION]
+>
+>If you want to use MSM to create copies of Content Fragments), then any **Unique** constraints should be removed from any Data Types used in the respective Content Fragment Models.
+
+<!--
+>[!CAUTION]
+>
+>If you want to use MSM to create copies of Content Fragments), then any **Unique** constraints should be removed from any Data Types used in the respective [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md).
+-->
+
+### Create a Live Copy - folder {#create-a-live-copy-folder}
+
+To create a Live Copy of your Content Fragment folder:
+
+1. In the Content Fragment console open the folders panel and navigate to show your folder.
+1. Mouse over your folder entry to show the ellipses (three dots). Select to open the folder actions menu.
+1. From **MSM Actions** select **Create live copy**.
+1. In the dialog that opens specify the destination and continue with **Next**.
+1. Specify the properties. You can specify the title, name and whether the Live Copy should exclude children (nested fragments).
+1. Continue with **Next**.
+1. Select whether you want the Live Copy created immediately (**Now**), or at a **Later** date and time.
+1. Confirm with **Create Live Copy**.
+
+### Create a Live Copy - single fragment {#create-a-live-copy-single-fragment}
+
 <!-- CQDOC-23473 - exclude children or referenced content fragments? -->
 
 To create a Live Copy of your Content Fragment:
@@ -92,55 +127,156 @@ To create a Live Copy of your Content Fragment:
 1. Select whether you want the Live Copy created immediately (**Now**), or at a **Later** date and time.
 1. Confirm with **Create Live Copy**.
 
-   <!-- CQDOC-23473 - feature is currently beta remove Caution for GA -->
-
-   >[!CAUTION]
-   >
-   >If you want to use MSM to create copies of Content Fragments), then any **Unique** constraints should be removed from any Data Types used in the respective Content Fragment Models.
-
-   <!--
-   >[!CAUTION]
-   >
-   >If you want to use MSM to create copies of Content Fragments), then any **Unique** constraints should be removed from any Data Types used in the respective [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md).
-   -->
-
 ## View properties and status {#view-properties-and-status}
 
-To view properties and the status of the source and your Live Copy:
+In the main panel of the console:
 
-1. In the Content Fragment console navigate to the location of your fragment.
-1. Select your fragment.
-1. Select the Information (i) icon in the **Title** column of your fragment. 
-   The right information panel will open. 
-1. Select the tab for **Live Copy Details**.
+* the **Live Copy** column indicates whether a fragment is a **Source** or a **Live Copy**; or not currently involved in MSM at all
+* you can also select the Information (i) icon of your fragment to open the right information panel, from where you can select the **Live Copy Details** tab.
 
-   ![Information on a Live Copy](/help/sites-cloud/administering/content-fragments/assets/cf-msm-information.png)
+![Live Copy information from the Content Fragments console](/help/sites-cloud/administering/content-fragments/assets/cf-msm-information.png)
 
-## Propagate modifications {#propagate-modifications}
+## How To {#how-to}
 
-To propagate modifications between the source and your Live Copy.
+<!--
+See the following documentation for details about the usage of MSM for Content Fragments (also applicable to Assets):
+
+* How to use [MSM for Content Fragments (and Assets)](/help/assets/reuse-assets-using-msm.md) 
+
+* [Create a Live Copy](/help/assets/reuse-assets-using-msm.md)
+
+  >[!CAUTION]
+  >
+  >If you want to use MSM to create copies of Content Fragments), then any **Unique** constraints should be removed from any Data Types used in the respective [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md).
+
+* [View properties and status of source and Live Copy](/help/assets/reuse-assets-using-msm.md#properties)
+* [Propagate modifications from source to Live Copy](/help/assets/reuse-assets-using-msm.md#rollout-sync)
+* Cancel, and reinstate, inheritance for:
+  * fields and variations in the [Content Fragment editor](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
+  * [metadata of related assets](/help/assets/content-fragments/content-fragments-variations.md#canceling-reenabling-inheritance-individual-items)
+* [Suspend and resume the relationship](/help/assets/reuse-assets-using-msm.md#suspend-resume)
+* [Remove the live relationship](/help/assets/reuse-assets-using-msm.md#detach)
+* [Compare MSM for Content Fragments (and Assets) with MSM for Sites](/help/assets/reuse-assets-using-msm.md#comparison)
+
+## Take Action {#take-action}
+-->
+
+There are multiple actions involved in using live copies for Content Fragments. The actions are context sensitive so you will only see the ones appropriate for your current scenario; exact details may vary dependent on the location within the console and whether the action is for a single fragment or an entire folder.
+
+* **Create live copy**
+* **Synchronize**
+* **Roll out**
+* **Suspend**
+* **Suspend Live Copy**
+* **Detach**
+* **Detach from Source**
+* **Reset**
+* **Reset Live Copy**
+
+There are multiple locations from where you can trigger actions related to your fragments and live copies: 
+
+* the top toolbar for a single Content Fragment
+
+  1. In the Content Fragment console navigate to the location of your fragment source.
+  1. Select your fragment.
+  1. Select the required action from the toolbar.
+  1. Continue with any further steps.
+
+* the **Live Copy Details** tab for a single Content Fragment 
+
+  1. In the Content Fragment console navigate to the location of your fragment source.
+  1. Select your fragment.
+  1. Use the Information icon (i) to open the information panel.
+  1. Open the **Live Copy Details** tab.
+  1. Select the ellipses for either:
+
+     * a Source
+
+       1. Select the ellipses next to the Source.
+       1. Select the action from the drop down menu.
+
+     * a Live Copy
+
+       1. Select the ellipses next to your Live Copy.
+       1. Select the required action from the drop down menu.
+
+     * Continue with any further steps.
+
+* the folder actions menu for an entire folder
+
+  1. In the Content Fragment console navigate to your folder.
+  1. Use the ellipses to open the menu for folder actions.
+  1. From **MSM Actions** select the required action.
+  1. Continue with any further steps.
+
+## Propagate your modifications {#propagate-your-modifications}
+
+To propagate modifications between the source and your Live Copy you can:
+
+* [Synchronize](#synchronize): to pull the content updates from your Live Copy to the source
+* [Rollout](#rollout): to push the source updates to your Live Copy
 
 ### Synchronize {#synchronize}
 
-To trigger a Synchronization that pulls the content updates from your Live Copy to the source: 
+There are multiple locations from where you can trigger a Synchronization that pulls the content updates from your Live Copy to the source: 
 
-1. In the Content Fragment console navigate to the location of your fragment source.
-1. Select your fragment.
-1. Select **Synchronize** from the toolbar.
+* the top toolbar for a single Content Fragment
+
+* Live copy details in the **Live Copy Details** tab for a single Content Fragment 
+
+* folder actions for an entire folder
+
+In all locations:
+
+1. Select **Synchronize** from the toolbar or menu.
 1. Confirm **Synchronize** in the dialog.
 
 ### Rollout {#rollout}
 
-To trigger a Rollout that pushes the source updates to your Live Copy:
+There are multiple locations from where you can trigger a Rollout that pushes the source updates to your Live Copy:
 
-1. In the Content Fragment console navigate to the location of your fragment Live Copy.
-1. Select your fragment.
-1. Select **Rollout** from the toolbar. The wizard will open to guide you through the process.
+* the top toolbar for a single Content Fragment
+
+* Source details in the **Live Copy Details** tab for a single Content Fragment 
+
+* folder actions for an entire folder
+
+In all locations:
+
+1. Select **Rollout** from the toolbar or menu. The wizard will open to guide you through the process.
 1. Select the Live Copies to include in the rollout and **Continue**.
 1. Schedule the rollout for immediately (**Now**) or **Later**.
 1. **Continue** as appropriate.
 
 <!-- CQDOC-23473 - feature is beta, is in authoring so remove here when GA -->
+
+## Suspend, Resume, Detach, Reset {#suspend-resume-detach-reset}
+
+You can manage your Live Copy with:
+
+* Suspend and Resume the Live Copy
+
+  Each fragment in a Live Copy is associated with its source via a live relationship. The live relationship configures the synchronization of Live Copy content from the source.
+
+  You can Suspend the Live Copy inheritance for a Live Copy so that you can change page properties and components. When you suspend inheritance, the fragment properties and content are no longer synchronized with the source.
+
+* Detach from Source
+
+  The detach action permanently removes the live relationship between a Live Copy and its Source. All MSM-relevant properties are removed from the Live Copy and the Live Copy fragments become standalone.
+
+* Reset Live Copy
+
+  Reset a Live Copy to remove all inheritance cancellations and return the fragment to the same state as the source.
+
+  Reset affects any changes that you have made to fragment properties and content.
+
+Again there are multiple locations from where you can trigger a Rollout that pushes the source updates to your Live Copy:
+
+* the top toolbar for a single Content Fragment
+
+* Source details in the **Live Copy Details** tab for a single Content Fragment 
+
+* folder actions for an entire folder
 
 ## Cancel, and revert to, inheritance in the editor {#cancel-and-revert-to-inheritance-in-the-editor}
 
@@ -177,6 +313,7 @@ You can cancel (then revert) the inheritance. Depending on the context, this can
 ## Compare MSM for Content Fragments and Sites Pages {#compare-msm-for-content-fragments-and-sites-pages}
 
 <!-- CQDOC-23473 - needs a detailed review -->
+<!-- CQDOC-23473 - do these apply for both consoles? -->
 
 In most scenarios, MSM for Content Fragments matches the behavior of MSM for Sites Pages functionality. Some key differences to note are:
 
