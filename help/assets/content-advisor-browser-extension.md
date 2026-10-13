@@ -4,6 +4,12 @@ description: Learn how to use the power of AEM Content Advisor for AEM Assets, i
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 feature: Collaboration
 role: User
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Use AEM Content Advisor with the browser extension (Beta) {#content-advisor-browser-extension}
 

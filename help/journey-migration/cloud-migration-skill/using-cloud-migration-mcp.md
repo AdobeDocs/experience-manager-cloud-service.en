@@ -3,6 +3,15 @@ title: Using the AEM Cloud Migration MCP
 description: Learn how to add the AEM Cloud Migration MCP server to your AI-enabled IDE and use it to fetch Best Practices Analyzer findings from Cloud Acceleration Manager during a migration session.
 feature: Migration
 role: Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: 5be0fc8f-1cff-5c3e-bb92-2903a56a3de6
+    internal-label: Migration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Using the AEM Cloud Migration MCP {#using-cloud-migration-mcp}
