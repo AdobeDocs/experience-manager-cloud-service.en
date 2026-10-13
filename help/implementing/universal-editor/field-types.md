@@ -892,14 +892,40 @@ If you wish to have items that appear above all tabs, they must be defined befor
 
 #### Text {#text}
 
-Text allows for a single line of text input.  It includes additional validation types.
+Text allows for a single line of text input, or a multi-line text area when
+`valueFormat` is `string-multiline`.  
+
+It offers additional configurations.
+
+| Configuration | Value Type | Description | Required |
+|---|---|---|---|
+| `valueFormat` | string | Selects the format validator and, for `string-multiline`, the input type | No |
+
+It includes additional effects for `valueFormat`.
+
+| `valueFormat` | Effect |
+|---|---|
+| *(omitted)* | No format validation |
+| `string` | No format validation |
+| `string-multiline` | No format validation; renders a text area instead of a text input |
+| `email` | Value must be a valid email address |
+| `url` | Value must be a valid URL |
+| `regexp` | Value must match `validation.regExp` |
+
+It includes additional validation types.
 
 |Validation Type|Value Type|Description|Required|
 |---|---|---|---|
-|`minLength`|`number`|Minimum number of characters allowed|No|
-|`maxLength`|`number`|Maximum number of characters allowed|No|
-|`regExp`|`string`|Regular expression which the input text must match|No|
-|`customErrorMsg`|`string`|Message that will display if `minLength`, `maxLength`, and/or `regExp` is/are violated|No|
+|`minLength`|`number`|Minimum number of characters allowed; skipped on multi-value fields and when the value is empty |No|
+|`maxLength`|`number`|Maximum number of characters allowed; skipped on multi-value fields and when the value is empty |No|
+|`regExp`|`string`|Regular expression which the input text must match<br>Only applied when `valueFormat` is `"regexp"`|No|
+|`customErrorMsg`|`string`| Replaces the built-in message when required, or the `regexp` format check fails. Has no effect on `minLength`, `maxLength`, or the email/url format checks, which always show their built-in message. |No|
+
+Validators run in the following order. The *first failure wins*, later validators are not evaluated:
+
+1. required (`required: true`)
+2. the `valueFormat` validator
+3. length range (when `minLength` or `maxLength` is set)
 
 >[!BEGINTABS]
 
