@@ -5,6 +5,20 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
+subfeature_v2:
+  - id: d9eb3b3e-9447-4ed4-bf4a-96c7b245cb27
+    internal-label: Cloud Manager APIs
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Create production programs {#create-production-program}
@@ -54,13 +68,13 @@ See [Additional production program options](#options).
 
    * Click ![Chevron Size 300 icon](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) to the left of a solution name to reveal any optional add-ons. <!-- such as the **Commerce** add-on option under **Sites**. -->
 
-<!--   ![Select add-ons](assets/setup-prod-commerce.png) -->
+     <!--   ![Select add-ons](assets/setup-prod-commerce.png) -->
 
-      >[!NOTE]
-      >
-      >If your program uses Edge Delivery Services for delivery, a publish tier may not be required. With the flexible publish tier feature (Beta), you can configure whether to provision a publish tier on the Solutions & Add-ons tab. See [Flexible Publish Tier (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
+     >[!NOTE]
+     >
+     >If your program uses Edge Delivery Services for delivery, a publish tier may not be required. With the flexible publish tier feature (Beta), you can configure whether to provision a publish tier on the Solutions & Add-ons tab. See [Flexible Publish Tier (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
 
-      ![Select solutions](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-solutions.png)
+     ![Select solutions](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-solutions.png)
 
 1. Click **Continue**.
 
@@ -212,6 +226,23 @@ In addition to the required entitlements, using the 99.99% SLA for Sites or Form
 1. The main call-to-action card on the overview page guides you through creating an environment, a non-production pipeline, and finally a production pipeline.
 
    ![Program overview](assets/set-up-prod5.png)
+
+## Frequently asked question {#faqs-create-production-program}
+
+### When I create a Program in Cloud Manager, I only see the Set up a sandbox option. What are some causes for why a **Set up for production** option is not there?
+
+   ![Let's create your Program wizard showing the program name field and the Set up a sandbox objective.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-set-up-a-sandbox-option.png)
+
+The usual cause is entitlement. That is, the IMS organization is provisioned only for Sandbox programs and does not have an available AEM Cloud Service production program entitlement. Cloud Manager therefore only presents a **Set up a sandbox** option.
+
+Other things to check:
+
+* You are in the intended IMS organization/tenant; a different organization has the production entitlement.
+* The production program entitlement is already consumed, or the contract/order does not include another production program.
+* Your Cloud Manager role/access needs verification, although the organization's provisioning primarily determines the available program objectives.
+
+Have the account/customer team or Adobe Support verify the organization's production program entitlement and capacity. The stage/production environment configuration is relevant after a production program exists; Cloud Manager expects supported STAGE and PROD environment types for Go-to-Production pipelines.
+
 
 >[!TIP]
 >

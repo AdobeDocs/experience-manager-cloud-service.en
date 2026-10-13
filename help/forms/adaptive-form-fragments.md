@@ -9,6 +9,14 @@ discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
 role: User, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Create and use Adaptive Forms Fragments in an Adaptive Form  {#adaptive-form-fragments}
 
@@ -168,9 +176,9 @@ You can use a schema-based form fragment multiple times in an Adaptive Form to s
 
 ![using multiple fragment in adaptive form](/help/forms/assets/using-multiple-fragment-af.gif)
 
-  >[!NOTE]
-  >
-  > If you use none-based form fragments multiple times in an Adaptive form, data synchronization issue between the fields of the fragments occurs. You can use a [core component based form fragment](/help/forms/adaptive-form-fragments-core-components.md) that is not tied to any form data model (FDM), multiple times in a form without experiencing data synchronization issues. 
+>[!NOTE]
+>
+> If you use none-based form fragments multiple times in an Adaptive form, data synchronization issue between the fields of the fragments occurs. You can use a [core component based form fragment](/help/forms/adaptive-form-fragments-core-components.md) that is not tied to any form data model (FDM), multiple times in a form without experiencing data synchronization issues. 
 
 ## Auto mapping of fragments for data binding {#auto-mapping-of-fragments-for-data-binding}
 

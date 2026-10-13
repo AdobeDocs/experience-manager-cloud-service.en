@@ -4,6 +4,14 @@ description: Learn about fields and the component types that the Universal Edito
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Model Definitions, Fields, and Component Types {#field-types}
@@ -196,7 +204,15 @@ An AEM content component type enables an AEM content picker, which can be used t
 }
 ```
 
->[!TAB Screenshot]
+>[!TAB Screenshot (AEMaaCS)]
+
+![Screenshot of AEM content component type](assets/component-types/aem_content.png)
+
+Mousing over a populated field reveals details.
+
+![Screenshot of AEM content component type](assets/component-types/aem_content_detailed.png)
+
+>[!TAB Screenshot (AEM 6.5 and LTS)]
 
 ![Screenshot of AEM content component type](assets/component-types/aem-content-picker.png)
 
@@ -383,7 +399,7 @@ It also offers an additional validation type.
 
 >[!BEGINTABS]
 
->[!TAB Sample 1]
+>[!TAB Sample]
 
 ```json
 [
@@ -405,7 +421,15 @@ It also offers an additional validation type.
 ]
 ```
 
->[!TAB Screenshot]
+>[!TAB Screenshot (AEMaaCS)]
+
+![Screenshot of Content Fragment picker](assets/component-types/content_fragment.png)
+
+Mousing over a populated field reveals details.
+
+![Screenshot of Content Fragment picker](assets/component-types/content_fragment_detailed.png)
+
+>[!TAB Screenshot (AEM 6.5 and LTS)]
 
 ![Screenshot of Content Fragment picker](assets/component-types/aem-content-fragment.png)
 
@@ -518,7 +542,7 @@ It also offers an additional validation type.
 
 >[!BEGINTABS]
 
->[!TAB Sample 1]
+>[!TAB Sample]
 
 ```json
 [
@@ -540,7 +564,15 @@ It also offers an additional validation type.
 ]
 ```
 
->[!TAB Screenshot]
+>[!TAB Screenshot (AEMaaCS)]
+
+![Screenshot of Experience Fragment picker](assets/component-types/experience_fragment.png)
+
+Mousing over a populated field reveals details.
+
+![Screenshot of Experience Fragment picker](assets/component-types/experience_fragment_detailed.png)
+
+>[!TAB Screenshot (AEM 6.5 and LTS)]
 
 ![Screenshot of Experience Fragment picker](assets/component-types/aem-experience-fragment.png)
 
@@ -736,9 +768,17 @@ A reference component type allows for a reference to another data object from th
 }
 ```
 
->[!TAB Screenshot]
+>[!TAB Screenshot (AEMaaCS)]
 
 ![Screenshot of reference component type](assets/component-types/reference.png)
+
+Mousing over a populated field reveals details.
+
+![Screenshot of reference component type](assets/component-types/reference_detailed.png)
+
+>[!TAB Screenshot (AEM 6.5 and LTS)]
+
+![Screenshot of reference component type](assets/component-types/reference-old.png)
 
 >[!ENDTABS]
 

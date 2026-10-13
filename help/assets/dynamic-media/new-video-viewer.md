@@ -3,6 +3,12 @@ title: New Video Viewer
 description: The New Video Viewer in Dynamic Media provides an enhanced video playback experience with improved performance, accessibility, and configurability.
 role: User
 exl-id: c819c6b3-bb7c-4d0e-b745-62b42f4ecd5f
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # New Video Viewer in Dynamic Media {#new-video-viewer-dynamic-media}
 
