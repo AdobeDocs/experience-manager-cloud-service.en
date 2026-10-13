@@ -16,7 +16,7 @@ role_v2:
 ---
 # Actions Center {#actions-center}
 
-AEM as Cloud Service sends Actions Center email notifications when critical incidents occur that require immediate action, and proactive recommendations for optimizations. Examples include a blocked queue, or an expiring set of credentials; the full set of Actions Center notification types can be viewed in the [table below](#supported-notification-types), which will expand over time.
+AEM as Cloud Service sends Actions Center email notifications when critical incidents occur that require immediate action, and proactive recommendations for optimizations. Examples include a blocked queue, or an expiring set of credentials; the full set of Actions Center notification types can be viewed in the [table below](#supported-notification-types), which will expand over time. 
 
 When an Actions Center email notification is received, it can be clicked to open AEM as a Cloud Service's Actions Center with a pop-up displaying additional context explaining the action for a customer to take.
 
