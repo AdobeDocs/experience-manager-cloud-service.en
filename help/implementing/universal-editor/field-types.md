@@ -899,16 +899,7 @@ It offers additional configurations.
 
 | Configuration | Value Type | Description | Required |
 |---|---|---|---|
-| `component` | string | Must be `"text"` | Yes |
-| `name` | string | Property where data persists | Yes |
-| `label` | string | Field label displayed to users | Yes |
-| `valueType` | string | Should be `"string"` | No |
 | `valueFormat` | string | Selects the format validator and, for `string-multiline`, the input type | No |
-| `description` | string | Helper text explaining the field | No |
-| `value` | string | Default value | No |
-| `required` | boolean | Whether the field must be completed | No |
-| `readOnly` | boolean | Whether the field is editable | No |
-| `validation` | object | Validation rules | No |
 
 It includes additional effects for `valueFormat`.
 
@@ -928,7 +919,7 @@ It includes additional validation types.
 |`minLength`|`number`|Minimum number of characters allowed; skipped on multi-value fields and when the value is empty |No|
 |`maxLength`|`number`|Maximum number of characters allowed; skipped on multi-value fields and when the value is empty |No|
 |`regExp`|`string`|Regular expression which the input text must match<br>Only applied when `valueFormat` is `"regexp"`|No|
-|`customErrorMsg`|`string`|Message that will display if `minLength`, `maxLength`, and/or `regExp` is/are violated<br>Has no effect on `minLength`, `maxLength`, or the email/url format checks — those always show their built-in message|No|
+|`customErrorMsg`|`string`| Replaces the built-in message when required, or the `regexp` format check fails. Has no effect on `minLength`, `maxLength`, or the email/url format checks, which always show their built-in message. |No|
 
 Validators run in the following order. The *first failure wins*, later validators are not evaluated:
 
