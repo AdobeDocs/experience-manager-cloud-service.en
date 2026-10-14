@@ -447,7 +447,7 @@ For example:
 
   ![Revert to inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-revert-to-inheritance.png)
 
-### Live Copy details and actions {#view-live-copy-details-and-actions}
+### Live Copy details and actions {#live-copy-details-and-actions}
 
 From the right hand information panel you can select the **Live Copy** tab to show details of any live copies the fragment is involved in.
 

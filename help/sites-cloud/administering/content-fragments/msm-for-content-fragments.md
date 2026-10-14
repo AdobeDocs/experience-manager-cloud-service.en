@@ -191,6 +191,19 @@ There are multiple actions involved in using live copies for Content Fragments. 
 * **Reset**
 * **Reset Live Copy**
 
+>[!NOTE]
+>
+>Various actions can also be triggered from the new Content Fragment editor.
+
+<!--
+>[!NOTE]
+>
+>Various actions can also be triggered from the new Content Fragment editor:
+>
+>* [Cancel, and revert to, inheritance](/help/sites-cloud/administering/content-fragments/authoring.md#cancel-and-revert-to-inheritance)
+>* [Live Copy details and actions](/help/sites-cloud/administering/content-fragments/authoring.md#live-copy-details-and-actions)
+-->
+
 There are multiple locations from where you can trigger actions related to your fragments and live copies: 
 
 * the top toolbar for a single Content Fragment
@@ -310,14 +323,6 @@ For example:
   ![Revert to inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-revert-to-inheritance.png)
 
 <!-- CQDOC-23473 - feature is currently beta reinstate Note for GA -->
-
-<!--
-## Cancel, and revert to, inheritance {#cancel-and-reinstate-inheritance}
-
-Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of Multi-Site Management.
-
-You can cancel (then revert) the inheritance. Depending on the context, this can be available for a variation, or an individual field, if the fragment is part of a live copy.
--->
 
 <!--
 >[!NOTE]
