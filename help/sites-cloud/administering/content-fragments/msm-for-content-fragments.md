@@ -143,16 +143,16 @@ To create a Live Copy of your Content Fragment:
 
 In the main panel of the console:
 
+<!-- CQDOC-23473 - cross-reference authoring page in note -->
+
 * the **Live Copy** column indicates whether a fragment is a **Source** or a **Live Copy**; or not currently involved in MSM at all
 * you can also select the Information (i) icon of your fragment to open the right information panel, from where you can select the **Live Copy Details** tab.
 
-<!-- CQDOC-23473 - update authoring page too and cross-reference -->
-
-  >[!NOTE]
-  >
-  >A **Live Copy** tab is also available in the right panel of the new Content Fragment editor.
-   
 ![Live Copy information from the Content Fragments console](/help/sites-cloud/administering/content-fragments/assets/cf-msm-information.png)
+
+>[!NOTE]
+>
+>A **Live Copy** tab is also available in the right panel of the new Content Fragment editor.
 
 ## How To {#how-to}
 
