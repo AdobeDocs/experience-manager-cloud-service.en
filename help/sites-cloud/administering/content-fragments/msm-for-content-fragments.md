@@ -240,13 +240,7 @@ To propagate modifications between the source and your Live Copy you can:
 
 ### Synchronize {#synchronize}
 
-There are multiple locations from where you can trigger a Synchronization that pulls the content updates from your Live Copy to the source: 
-
-* the top toolbar for a single Content Fragment
-
-* Live copy details in the **Live Copy Details** tab for a single Content Fragment 
-
-* folder actions for an entire folder
+There are [multiple locations](#how-to) from where you can trigger a Synchronization that pulls the content updates from your Live Copy to the source.
 
 In all locations:
 
@@ -255,13 +249,7 @@ In all locations:
 
 ### Rollout {#rollout}
 
-There are multiple locations from where you can trigger a Rollout that pushes the source updates to your Live Copy:
-
-* the top toolbar for a single Content Fragment
-
-* Source details in the **Live Copy Details** tab for a single Content Fragment 
-
-* folder actions for an entire folder
+There are [multiple locations](#how-to) from where you can trigger a Rollout that pushes the source updates to your Live Copy.
 
 In all locations:
 
@@ -271,16 +259,21 @@ In all locations:
 1. **Continue** as appropriate.
 
 <!-- CQDOC-23473 - feature is beta, is in authoring so remove here when GA -->
+<!-- CQDOC-23473 - more details for resume - or just link to main docs? -->
 
 ## Suspend, Resume, Detach, Reset {#suspend-resume-detach-reset}
 
 You can manage your Live Copy with:
 
-* Suspend and Resume the Live Copy
+* Suspend the Live Copy
 
   Each fragment in a Live Copy is associated with its source via a live relationship. The live relationship configures the synchronization of Live Copy content from the source.
 
   You can Suspend the Live Copy inheritance for a Live Copy so that you can change page properties and components. When you suspend inheritance, the fragment properties and content are no longer synchronized with the source.
+
+* Resume the Live Copy
+
+  After a live copy has been suspended it can be resumed.
 
 * Detach from Source
 
@@ -292,13 +285,7 @@ You can manage your Live Copy with:
 
   Reset affects any changes that you have made to fragment properties and content.
 
-Again there are multiple locations from where you can trigger a Rollout that pushes the source updates to your Live Copy:
-
-* the top toolbar for a single Content Fragment
-
-* Source details in the **Live Copy Details** tab for a single Content Fragment 
-
-* folder actions for an entire folder
+Again there are [multiple locations](#how-to) from where you can trigger a Rollout that pushes the source updates to your Live Copy.
 
 ## Cancel, and revert to, inheritance in the editor {#cancel-and-revert-to-inheritance-in-the-editor}
 
