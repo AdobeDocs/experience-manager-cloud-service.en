@@ -2,11 +2,17 @@
 title: AEM Sites Translation Journey
 description: Start here for a guided journey through translating your AEM Sites content using AEM's powerful translation tools.
 index: true
-hidefromtoc: no
+hidefromtoc: 'no'
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # AEM Sites Translation Journey {#aem-sites-translation-journey}
 

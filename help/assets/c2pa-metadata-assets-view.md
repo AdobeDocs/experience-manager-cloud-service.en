@@ -4,6 +4,12 @@ description: C2PA metadata, integrated into AEM Assets and featured within the A
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 27c25ae0-4477-40c3-85c8-3e0aa725aba7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # C2PA metadata {#C2PA-metadata}
 

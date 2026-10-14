@@ -9,6 +9,12 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 hide: true
 index: false
 exl-id: 726ba8a8-bfa4-44ac-8e74-e86a32505f36
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Changing Page Zero content in Designer {#changing-page-zero-content-in-designer}
 

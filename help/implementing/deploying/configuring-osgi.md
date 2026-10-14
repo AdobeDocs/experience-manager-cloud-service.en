@@ -1,9 +1,15 @@
 ---
 title: Configuring OSGi for Adobe Experience Manager as a Cloud Service
-description: OSGi Configuration With Secret Values and Environment-specific Values 
+description: OSGi Configuration With Secret Values and Environment-specific Values
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 
 # Configuring OSGi for Adobe Experience Manager as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
