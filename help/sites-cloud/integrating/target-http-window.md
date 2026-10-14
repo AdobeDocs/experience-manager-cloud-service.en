@@ -1,6 +1,9 @@
 ---
 title: Adobe AEM Target HTTP Window
-description: Adobe AEM Target HTTP Window 
+description: Adobe AEM Target HTTP Window
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 ---
 
 # Introduction {#introduction}

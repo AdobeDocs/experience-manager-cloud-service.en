@@ -9,6 +9,12 @@ feature: Adaptive Forms
 role: User
 hide: true
 exl-id: f19b7e4f-d4aa-45da-b0dd-7ae8d119da74
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Synchronizing Adaptive Forms with XFA Form Templates{#synchronizing-adaptive-forms-with-xfa-form-templates}
 

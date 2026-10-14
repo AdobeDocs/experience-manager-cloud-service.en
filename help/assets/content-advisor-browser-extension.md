@@ -4,6 +4,12 @@ description: Learn how to use the power of AEM Content Advisor for AEM Assets, i
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 feature: Collaboration
 role: User
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Use AEM Content Advisor with the browser extension (Beta) {#content-advisor-browser-extension}
 
@@ -18,8 +24,6 @@ Use the power of AEM Content Advisor for AEM Assets, in the application of your 
 * **Pick exactly what you need.** Choose any asset or any Dynamic Media rendition (the right size, format, or crop) and send it straight to your editor. Insert, drag and drop, or copy URL to the clipboard.
 
 * **Works where you author.** AEM (Cloud Service, Adobe Managed Services, or On-premise), other Adobe CX Enterprise products (where AEM Assets native integration does not exist), and third-party tools such as Google Docs/WordPress/Microsoft Powerpoint, and any other web application.
-
-* **Private by design.** Optional on-device OCR extracts text from images locally. The captured image never leaves your device.
 
 >[!IMPORTANT]
 > 

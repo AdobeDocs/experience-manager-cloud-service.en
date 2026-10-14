@@ -2,6 +2,9 @@
 title: Configure a Custom Domain for the Delivery Tier
 description: Learn how to configure a custom domain for Delivery tier in Adobe Cloud Manager.
 exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 ---
 
 # Configure a custom domain for the Delivery tier{#configure-custom-domain}
