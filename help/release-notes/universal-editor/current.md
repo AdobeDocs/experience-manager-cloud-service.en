@@ -19,24 +19,15 @@ These are the release notes for the 15 October 2026 release of the Universal Edi
 
 ## New Features {#what-is-new}
 
-<!--
-* Authors can choose custom styles in the in-context rich text editor.
-* Rich text asset selection now supports configured remote asset sources.
-* Asset filters can be configured globally in `filter-definition.json`. 
-* Extensions can customize the properties panel header through a new extension point.
-* Number fields now support custom validation error messages.
-* Text, combo box, and select fields now display configured placeholder text in their components.
-* Select and multiselect menus share consistent sizing behavior that keeps their overlays within the editor area.
--->
+* AI agents can now see the editor's loaded content and update nested component properties more precisely.
+* AI agents can undo and redo editor changes through the new WebMCP tools.
+* Structured service log events now include a UTC datetime, and forwarded events keep their original datetime.
 
 ## Other Improvements {#other-improvements}
 
-<!--
-* Copying content now targets the correct container when multiple containers share the same resource but use different properties.
-* Rich text paragraphs no longer retain unwanted leading non-breaking spaces. 
-* Rich text components were updated to include the paragraph-spacing correction and additional rich text fixes.
-* The component picker sidebar and layout now fill the available height. 
-* Overlay labels no longer wrap over small editable elements.
-* Drag previews for multiple selections stay within the picker's bounds. 
-* Asset reference validation now respects the field's configured filter.
--->
+* URLs inside Unified Shell no longer pick up repeated shell or embedded-URL prefixes.
+* The shell's force-reload flag is no longer passed through to the page's search parameters.
+* Drag and drop no longer allows moving components onto targets that are not containers.
+* AI agents can now set images that are not activated yet by using their author DAM path, and they also tell users the asset must be activated to appear on the published page.
+* Updated the headless canvas components to fix remote URL construction for non-Sense-7 instances and bring in Dynamic Media for delivery instances.
+* Icons in extension-provided renderers now receive their props correctly.
