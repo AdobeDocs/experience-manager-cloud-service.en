@@ -29,6 +29,10 @@ role_v2:
 
 The Development Agentic Capability of Adobe Experience Manager (AEM) as a Cloud Service collaborates with [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) to help traditional AEM Java-stack developers and administrators create, debug, deploy, and optimize code more efficiently.
 
+## Permissions {#permissions}
+
+To use the [AEM Cloud Manager Pipeline Troubleshooting](#aem-cloud-manager-pipeline-troubleshooting) skill, you must have either the **Developer** or the **Program Manager** role in Cloud Manager. See [Role-based permissions](/help/onboarding/cloud-manager-introduction.md#role-based-permissions).
+
 ## Use cases {#use-cases}
 
 A range of use-cases are covered.
@@ -73,7 +77,7 @@ The skill investigates failures in the following pipelines and steps:
 For failures in other steps, such as the deployment step of a full-stack pipeline, the skill reports the failed step without diagnosing it. In that case, inspect the logs as described in [Access and Download Logs](/help/implementing/cloud-manager/manage-logs.md), or contact Adobe Support.
 
 
-You can also start troubleshooting directly from Cloud Manager. On a failed pipeline execution, click **Troubleshoot with AI** to open Coworker with that execution already referenced.
+You can also start troubleshooting without writing a prompt. Click **Troubleshoot with AI** on a failed pipeline execution in Cloud Manager, or in the **Failed Pipelines** widget on the Experience Manager home page, to open Coworker with that execution already referenced. See [Troubleshoot a failed pipeline from Cloud Manager](#troubleshoot-from-cloud-manager) and [Troubleshoot from the Failed Pipelines widget](#troubleshoot-from-experience-home-widget).
 
 AI can make mistakes so review the diagnosis before acting on it.
 
@@ -82,6 +86,58 @@ AI can make mistakes so review the diagnosis before acting on it.
 | Troubleshooting a failed pipeline | "Troubleshoot my failed pipeline"<br><br>"Help me troubleshoot the last pipeline that failed in Main Program" |
 | Troubleshooting a specific execution | "Troubleshoot pipeline execution 1234567"<br><br>"Troubleshoot execution 1234567 of Dev Pipeline in program 12345" |
 | Troubleshooting web tier and config pipelines | "Debug my web tier build failure on pipeline 67890"<br><br>"Why did my config pipeline deployment fail in program 12345?" |
+
+#### Troubleshoot a failed pipeline from Cloud Manager {#troubleshoot-from-cloud-manager}
+
+Starting from the failed pipeline execution is the fastest way to troubleshoot, because Coworker receives the execution as context and you do not have to write a prompt.
+
+1. Sign in to [Adobe Experience Cloud](https://experience.adobe.com), then open **Experience Manager**.
+
+    ![Experience Manager home page, showing the Ask Coworker anything box and Cloud Manager in the left rail](/help/ai-in-aem/agentic-capabilities/brand-experience/development/assets/dev-ac-experience-manager-home.png)
+
+    >[!TIP]
+    >
+    >To troubleshoot without opening Cloud Manager, type a prompt such as *Troubleshoot my failed pipeline* in the **Ask Coworker anything** box on this page.
+
+1. In the left rail, click **Cloud Manager**, then select your program.
+
+1. On the **Program Overview** page, in the **Pipelines** card, click the pipeline that failed.
+
+    ![Program Overview page in Cloud Manager, showing the Environments and Pipelines cards](/help/ai-in-aem/agentic-capabilities/brand-experience/development/assets/dev-ac-program-overview-pipelines.png)
+
+1. On the pipeline execution page, note the **Failed** status next to the pipeline name, and the step that failed.
+
+    ![Pipeline execution page in Cloud Manager, showing a failed Artifact Preparation step](/help/ai-in-aem/agentic-capabilities/brand-experience/development/assets/dev-ac-failed-pipeline-execution.png)
+
+1. Click **Troubleshoot with AI**. The button appears near the upper-right corner of the page and in the **Step errors** box of the failed step.
+
+    ![Troubleshoot with AI buttons in the page header and in the Step errors box of a failed step](/help/ai-in-aem/agentic-capabilities/brand-experience/development/assets/dev-ac-troubleshoot-with-ai-button.png)
+
+    Coworker opens in a panel on the right side of the page, with the failed execution referenced in the prompt. Coworker identifies the failed step, explains the root cause, and suggests a fix that you can apply manually.
+
+    ![Coworker panel next to a failed pipeline execution, showing the root cause analysis](/help/ai-in-aem/agentic-capabilities/brand-experience/development/assets/dev-ac-coworker-troubleshooting-response.png)
+
+1. Review the diagnosis. To ask follow-up questions or request more detail, type in the **Ask Coworker anything** box.
+
+<!-- Alexandru: to check if this is still accurate -->
+
+#### Troubleshoot from the Failed Pipelines widget {#troubleshoot-from-experience-home-widget}
+
+The Experience Manager home page includes a **Failed Pipelines** widget that lists pipeline failures across your programs, so you can start troubleshooting without first opening Cloud Manager. Each row shows the pipeline name, the date and time of the last run, the duration, and the step that failed, along with a **Troubleshoot with AI** button.
+
+>[!NOTE]
+>
+>The **Failed Pipelines** widget appears only when the **Admin & IT** preset is selected. If you do not see the widget, select **Admin & IT** from the **Preset** list in the upper-right corner of the home page.
+
+![Failed Pipelines widget on the Experience Manager home page, showing a failed pipeline](/help/ai-in-aem/agentic-capabilities/brand-experience/development/assets/dev-ac-failed-pipelines-widget.png)
+
+1. Sign in to [Adobe Experience Cloud](https://experience.adobe.com), open **Experience Manager**, then scroll to the **Failed Pipelines** widget.
+
+1. In the row of the pipeline that you want to investigate, click **Troubleshoot with AI**.
+
+    Coworker opens with the failed execution referenced and starts its analysis, identifying the root cause and suggesting a fix.
+
+1. Review the diagnosis. To ask follow-up questions or request more detail, type in the **Ask Coworker anything** box.
 
 ### AEM Cloud Manager Environment Management
 
@@ -125,6 +181,8 @@ AI can make mistakes so review suggested actions before applying them, particula
 The AEM Cloud Manager Release Management skill lets you control when Adobe applies automated maintenance updates to your program, without digging through Cloud Manager settings to find the right screen. You can check your current update schedule, set a daily Quiet Hours window — a recurring time each day when Adobe pauses updates — and schedule a multi-day Update-Free Period around events like a product launch or a holiday freeze, when you do not want any changes landing on your environments.
 
 If your plans change, you can remove an Update-Free Period just as easily as you scheduled it. The skill can also show you Adobe's own global Code-Freeze periods — the windows Adobe has already blocked off for planned maintenance exclusions — so you know upfront which dates are already off-limits before you try to schedule your own.
+
+The skill also helps you avoid scheduling errors. As it guides you through a request, it flags the limits that apply, such as the maximum of three Update-Free Periods within a floating 365-day window, the mandatory one-week interval between periods, and Adobe's planned maintenance exclusion windows. Instead of discovering a constraint after a configuration fails, you reach a valid schedule in the same conversation. This approach protects critical business windows from automatic maintenance updates and reduces back-and-forth and misconfiguration. See [Quiet hours and Update free periods](/help/implementing/deploying/quiet-hours-update-free-periods.md).
 
 AI can make mistakes so review suggested actions before applying them — this is especially true for update-schedule changes, since an incorrectly scheduled or removed Update-Free Period could allow updates to land during a window you meant to protect.
 
