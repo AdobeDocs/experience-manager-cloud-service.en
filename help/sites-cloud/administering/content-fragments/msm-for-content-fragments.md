@@ -192,6 +192,9 @@ There are multiple locations from where you can trigger actions related to your 
   1. In the Content Fragment console navigate to the location of your fragment source.
   1. Select your fragment.
   1. Select the required action from the toolbar.
+
+     ![Content Fragment Console - top toolbar actions MSM](/help/sites-cloud/administering/content-fragments/assets/cf-msm-top-toolbar.png)
+
   1. Continue with any further steps.
 
 * the **Live Copy Details** tab for a single Content Fragment 
@@ -223,6 +226,9 @@ There are multiple locations from where you can trigger actions related to your 
   1. In the Content Fragment console navigate to your folder.
   1. Use the ellipses to open the menu for folder actions.
   1. From **MSM Actions** select the required action.
+
+     ![Content Fragment Console - folder actions MSM](/help/sites-cloud/administering/content-fragments/assets/cf-msm-folder-actions-msm.png)
+
   1. Continue with any further steps.
 
 ## Propagate your modifications {#propagate-your-modifications}
