@@ -55,8 +55,6 @@ Adobe publishes AEM as a Cloud Service skills in the **[adobe/skills](https://gi
 |`migration`|Migrates AEM 6.x, AMS, or on-premise Java code, OSGi configurations, legacy UI dialogs, static templates, and Dispatcher configurations to AEM as a Cloud Service, driven by [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) findings from a CSV export or [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)|
 |`workflow`|This is the single entry point for all AEM as a Cloud Service Workflow skills. It covers workflow model design, custom process step and participant chooser development, launcher configuration, workflow triggering, and production support including debugging stuck/failed workflows, triaging incidents with Cloud Manager logs, thread pool analysis, and Sling Job diagnostics for the Granite Workflow Engine.|
 |`code-assessment`| Detects and fixes AEM best-practice violations, code-quality, and correctness issues in your local project, reporting findings and applying surgical fixes|
-|`extracting-jcr-queries`|Finds every JCR query a codebase issues — XPath, SQL2, or QueryBuilder predicates, including ones assembled programmatically through wrapper/helper/DAO code — before an index audit, migration, or performance investigation|
-|`tuning-oak-query-indexes`|Diagnoses why an Oak query isn't served by an index and proposes the exact property/Lucene index-definition change, covering field coverage, nodetype/path scoping, and empirical verification with `explain`|
 
 ### Install Skills {#install-skills}
 
@@ -159,7 +157,7 @@ The dispatcher skill handles orchestration and advisory guidance. The Dispatcher
 
 The `code-assessment` skill detects, reviews, and fixes code-quality and correctness issues in an AEM as a Cloud Service project entirely within your local workspace. Describe the issue, and the skill routes the request to the appropriate remediation workflow.
 
-Supported checks include modernizing Sling Model dependency injection, updating outdated Maven dependencies, adding missing timeouts to outbound HTTP calls, bounding unbounded queries, Sling schedulers, resource change listeners, the Replication and Assets APIs, and JCR or OSGi event handling, plus scanning and fixing usage of [deprecated and removed AEM APIs](/help/release-notes/deprecated-removed-features.md), with more added over time. Depending on the issue, the skill either applies a mechanical fix directly or guides you through one that needs a judgment call.
+Supported checks include modernizing Sling Model dependency injection, updating outdated Maven dependencies, adding missing timeouts to outbound HTTP calls, bounding unbounded queries, checking whether JCR queries are served by an Oak index, Sling schedulers, resource change listeners, the Replication and Assets APIs, and JCR or OSGi event handling, plus scanning and fixing usage of [deprecated and removed AEM APIs](/help/release-notes/deprecated-removed-features.md), with more added over time. Depending on the issue, the skill either applies a mechanical fix directly or guides you through one that needs a judgment call.
 
 For a broad or first-time review, ask the skill to assess the whole project: it runs every detector, reports all findings, and applies code fixes one pattern at a time.
 
@@ -191,43 +189,52 @@ apply unbounded-query
 
 It never commits or pushes — you review the diff and commit. Large fixes run in resumable batches; reply `apply <pattern>` to continue.
 
-### Use the Extracting-jcr-queries Skill {#use-the-extracting-jcr-queries-skill}
+#### Check Query Index Coverage {#check-query-index-coverage}
 
-The `extracting-jcr-queries` skill builds an inventory of every JCR or AEM QueryBuilder query a codebase issues, including queries assembled at runtime through wrapper, helper, or DAO code that a plain text search would miss. Use it before an Oak index audit, a migration, or a performance investigation — or any time you need to answer "what queries does this app run?"
+The `code-assessment` skill checks whether the JCR queries in your project use an Oak index. A query that no index covers traverses the repository, or filters and sorts its results in memory. Run this check when a query is slow or logs a traversal warning, or after you add or change a query.
 
-To get started, open a new agent chat in your AEM as a Cloud Service project and describe what you want audited:
+You do not need to paste the query. The analyzer finds every place your Java code builds a query:
 
-```
-what queries does this app run?
-```
+- JCR `QueryManager` queries in SQL-2, XPath, or the Query Object Model
+- AEM QueryBuilder predicate groups
+- Sling `ResourceResolver.findResources` and `queryResources` calls
 
-For a more explicit invocation, name the skill directly:
+The skill then reads the surrounding code to rebuild each query. The analyzer does not find queries outside Java code, such as queries in JSP, HTL, or configuration files. To check one of those, name the file in your prompt.
 
-```
-/extracting-jcr-queries audit this bundle for every JCR and QueryBuilder query
-```
+The skill also needs your index definitions. Provide them in one of these forms:
 
-The skill traces every call through the JCR and QueryBuilder APIs back to its original callers, then supplements that with pattern matching over non-Java files (JSP, HTL, config) where there's no API call to anchor on. It returns an inventory of each query's construction site, type, and the fields/nodetype/path it touches — the direct input to the `tuning-oak-query-indexes` skill's index-coverage assessment.
+- The `.content.xml` files of your custom index definitions, for example under `ui.apps/src/main/content/jcr_root/_oak_index/`. See [Deploying Custom Index Definitions](/help/operations/indexing.md#deploying-custom-index-definitions).
+- A JSON export of the index definitions
+- The dump from `/system/console/status-oak-index-defn.json`, if you have access to it on an environment
 
-### Use the Tuning-oak-query-indexes Skill {#use-the-tuning-oak-query-indexes-skill}
+Without index definitions, the skill does not guess what is indexed. It reports the check as deferred: `tuning-oak-query-indexes: deferred — index definition not provided`.
 
-The `tuning-oak-query-indexes` skill checks whether a JCR/Oak query is actually served by an index — not just whether "an index exists" — and proposes the specific index-definition change needed when it isn't. It catches the cases a surface read of the index definition misses: a field missing its required property flag, a query left unrestricted by nodetype so the index is invisible to the query planner, or `includedPaths`/`queryPaths` scoped inconsistently so the index is picked but silently returns fewer results than exist.
-
-If you don't already have the query in hand — for example, auditing a whole app rather than tuning one query someone handed you — the skill first calls the `extracting-jcr-queries` skill to build the query inventory, then assesses each query against its plausible index definitions.
-
-To get started, open a new agent chat in your AEM as a Cloud Service project:
+To check all queries in your project, name the check and the location of your index definitions:
 
 ```
-this query is logging a traversal warning, check its index coverage
+scan my project for Oak query index coverage, using the index definitions in ui.apps/src/main/content/jcr_root/_oak_index
 ```
 
-For a more explicit invocation, name the skill directly:
+To check one query, name its file:
 
 ```
-/tuning-oak-query-indexes check index coverage for this query
+the query in TaskFinder.java logs a traversal warning, is it indexed? Index definitions: oak-index-definitions.json
 ```
 
-Where a live instance is reachable, the skill verifies its findings empirically with `explain` (or the AEM Query Performance tool) rather than reasoning from the index definition alone. Where it isn't, it reports its findings as reasoned-but-unproven and says so explicitly. It never applies an index-definition change without your explicit go-ahead — you review the proposed diff and apply it yourself.
+For each query, the report shows:
+
+- Which conditions, sort orders, and full-text constraints the index covers, and which it misses. This includes node type and path settings that stop Oak from using an otherwise suitable index.
+- Whether a narrower query fixes the problem, for example by adding a node type or path restriction. The skill prefers this over a larger index.
+- Which existing index to change. When more than one index can serve the query, the skill lists the candidates and asks you to choose.
+- The proposed index definition change, with its storage and reindexing cost.
+
+Some queries take property names from OSGi configuration or from the caller. The skill lists these separately, with the input it needs from you, and assesses them after you provide it.
+
+The skill never applies an index change. Review the proposed definition, then deploy it through your Cloud Manager pipeline.
+
+>[!NOTE]
+>
+>The check runs only against your local workspace. It does not connect to a running AEM instance or to the [AEM Quickstart MCP server](#aem-quickstart-mcp-server), so its findings are not verified against AEM. Before and after you deploy a change, confirm the result with the Explain Query tool of the [Query Performance Tool](/help/operations/query-and-indexing-best-practices.md#query-performance-tool).
 
 ## AEM Quickstart MCP Server {#aem-quickstart-mcp-server}
 
