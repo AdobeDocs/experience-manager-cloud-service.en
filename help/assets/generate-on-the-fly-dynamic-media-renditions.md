@@ -4,13 +4,13 @@ description: Generate channel-specific Dynamic Media renditions from the Content
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets."
 exl-id: 9b7f5c81-e2ff-444f-97c8-b4ed56f3ef9e
-feature: Generative AI
+feature: Dynamic Media
 product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
     internal-label: Experience Manager
 feature_v2:
   - id: ec4263d9-bf7c-44c7-b3f1-3e664861c8f2
-    internal-label: Generative AI
+    internal-label: Dynamic Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -24,6 +24,10 @@ Generated renditions are displayed in the **[!UICONTROL Renditions]** tab. You c
 
 ## Generate Dynamic Media renditions {#generate-renditions}
 
+>[!NOTE]
+> 
+>On-the-fly rendition generation does not use Generative AI. Renditions are generated using Dynamic Media.
+
 To generate Dynamic Media renditions:
 
 1. Navigate to **Content Hub** and search for the assets that you want to use.
@@ -33,6 +37,7 @@ To generate Dynamic Media renditions:
 
 1. The Search bar expands and displays suggested prompts for generating channel-specific Dynamic Media renditions.
 1. Select one of the suggested prompts or enter your own prompt using natural language.
+
 1. Click **[!UICONTROL Generate]**.
 
    Content Hub generates the requested renditions on demand and displays them in the **[!UICONTROL Renditions]** tab.
