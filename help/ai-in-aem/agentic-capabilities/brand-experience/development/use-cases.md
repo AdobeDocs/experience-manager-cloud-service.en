@@ -176,7 +176,7 @@ AI can make mistakes so review suggested actions before applying them, particula
 | Showing pipelines for a program | "What pipelines are in program 12345?"<br><br>"List pipelines for Main Program" |
 | Showing environments for a program | "Show me the environments in program 12345"<br><br>"What environments does Main Program have?" |
 
-### AEM Cloud Manager Release Management
+### AEM Cloud Manager Release Management {#aem-cloud-manager-release-management}
 
 The AEM Cloud Manager Release Management skill lets you control when Adobe applies automated maintenance updates to your program, without digging through Cloud Manager settings to find the right screen. You can check your current update schedule, set a daily Quiet Hours window — a recurring time each day when Adobe pauses updates — and schedule a multi-day Update-Free Period around events like a product launch or a holiday freeze, when you do not want any changes landing on your environments.
 
