@@ -29,10 +29,6 @@ role_v2:
 
 The Development Agentic Capability of Adobe Experience Manager (AEM) as a Cloud Service collaborates with [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) to help traditional AEM Java-stack developers and administrators create, debug, deploy, and optimize code more efficiently.
 
-## Permissions {#permissions}
-
-To use the [AEM Cloud Manager Pipeline Troubleshooting](#aem-cloud-manager-pipeline-troubleshooting) skill, you must have either the **Developer** or the **Program Manager** role in Cloud Manager. See [Role-based permissions](/help/onboarding/cloud-manager-introduction.md#role-based-permissions).
-
 ## Use cases {#use-cases}
 
 A range of use-cases are covered.
@@ -86,6 +82,10 @@ AI can make mistakes so review the diagnosis before acting on it.
 | Troubleshooting a failed pipeline | "Troubleshoot my failed pipeline"<br><br>"Help me troubleshoot the last pipeline that failed in Main Program" |
 | Troubleshooting a specific execution | "Troubleshoot pipeline execution 1234567"<br><br>"Troubleshoot execution 1234567 of Dev Pipeline in program 12345" |
 | Troubleshooting web tier and config pipelines | "Debug my web tier build failure on pipeline 67890"<br><br>"Why did my config pipeline deployment fail in program 12345?" |
+
+#### Permissions {#pipeline-troubleshooting-permissions}
+
+To use the AEM Cloud Manager Pipeline Troubleshooting skill, you must have either the **Developer** or the **Program Manager** role in Cloud Manager. See [Role-based permissions](/help/onboarding/cloud-manager-introduction.md#role-based-permissions).
 
 #### Troubleshoot a failed pipeline from Cloud Manager {#troubleshoot-from-cloud-manager}
 
