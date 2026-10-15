@@ -29,11 +29,11 @@ role_v2:
 
 The Development Agentic Capability of Adobe Experience Manager (AEM) as a Cloud Service collaborates with [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) to help traditional AEM Java-stack developers and administrators create, debug, deploy, and optimize code more efficiently.
 
-## Use cases {#use-cases}
+## Use Cases {#use-cases}
 
 A range of use-cases are covered.
 
-### Manage Cloud Manager pipelines
+### Manage Cloud Manager Pipelines {#aem-cloud-manager-pipeline-management}
 
 The AEM Cloud Manager Pipeline Management skill lets you manage your CI/CD pipelines directly through natural language, without switching between Cloud Manager screens to find the information or controls you need. You can list and create pipelines, kick off or cancel executions, and check status and history — all from a single conversation.
 
@@ -73,7 +73,7 @@ The skill investigates failures in the following pipelines and steps:
 For failures in other steps, such as the deployment step of a full-stack pipeline, the skill reports the failed step without diagnosing it. In that case, inspect the logs as described in [Access and Download Logs](/help/implementing/cloud-manager/manage-logs.md), or contact Adobe Support.
 
 
-You can also start troubleshooting without writing a prompt. Click **Troubleshoot with AI** on a failed pipeline execution in Cloud Manager, or in the **Failed Pipelines** widget on the Experience Manager home page, to open Coworker with that execution already referenced. See [Troubleshoot a failed pipeline from Cloud Manager](#troubleshoot-from-cloud-manager) and [Troubleshoot from the Failed Pipelines widget](#troubleshoot-from-experience-home-widget).
+You can also start troubleshooting without writing a prompt. Click **Troubleshoot with AI** on a failed pipeline execution in Cloud Manager, or in the **Failed Pipelines** widget on the Experience Manager home page, to open Coworker with that execution already referenced. See [Troubleshoot a Failed Pipeline from Cloud Manager](#troubleshoot-from-cloud-manager) and [Troubleshoot from the Failed Pipelines Widget](#troubleshoot-from-experience-home-widget).
 
 AI can make mistakes so review the diagnosis before acting on it.
 
@@ -87,7 +87,7 @@ AI can make mistakes so review the diagnosis before acting on it.
 
 To use the AEM Cloud Manager Pipeline Troubleshooting skill, you must have either the **Developer** or the **Program Manager** role in Cloud Manager. See [Role-based permissions](/help/onboarding/cloud-manager-introduction.md#role-based-permissions).
 
-#### Troubleshoot a failed pipeline from Cloud Manager {#troubleshoot-from-cloud-manager}
+#### Troubleshoot a Failed Pipeline from Cloud Manager {#troubleshoot-from-cloud-manager}
 
 Starting from the failed pipeline execution is the fastest way to troubleshoot, because Coworker receives the execution as context and you do not have to write a prompt.
 
@@ -121,7 +121,7 @@ Starting from the failed pipeline execution is the fastest way to troubleshoot, 
 
 <!-- Alexandru: to check if this is still accurate -->
 
-#### Troubleshoot from the Failed Pipelines widget {#troubleshoot-from-experience-home-widget}
+#### Troubleshoot from the Failed Pipelines Widget {#troubleshoot-from-experience-home-widget}
 
 The Experience Manager home page includes a **Failed Pipelines** widget that lists pipeline failures across your programs, so you can start troubleshooting without first opening Cloud Manager. Each row shows the pipeline name, the date and time of the last run, the duration, and the step that failed, along with a **Troubleshoot with AI** button.
 
@@ -139,7 +139,7 @@ The Experience Manager home page includes a **Failed Pipelines** widget that lis
 
 1. Review the diagnosis. To ask follow-up questions or request more detail, type in the **Ask Coworker anything** box.
 
-### AEM Cloud Manager Environment Management
+### AEM Cloud Manager Environment Management {#aem-cloud-manager-environment-management}
 
 The AEM Cloud Manager Environment Management skill lets you manage your Cloud Manager environments through natural language, without navigating through Cloud Manager's UI screens to find the right program, environment, or configuration panel. You can list your environments, pull up details on a specific one, and create, clone, or delete environments as your project needs change.
 
@@ -160,7 +160,7 @@ AI can make mistakes so review suggested actions before applying them, particula
 | Managing region deployments | "Add a new region deployment for program 12345"<br><br>"Show me the region deployments for my production environment" |
 | Restoring from backup | "Restore my production environment from last night's backup"<br><br>"Show me available backups for the stage environment" |
 
-### AEM Cloud Manager Program Management
+### AEM Cloud Manager Program Management {#aem-cloud-manager-program-management}
 
 The AEM Cloud Manager Program Management skill lets you look up and manage your Cloud Manager programs through natural language, instead of navigating Cloud Manager's program listings to find the one you are looking for. You can list all the programs you have access to, pull up details for a specific one, and delete a program when it is no longer needed.
 
