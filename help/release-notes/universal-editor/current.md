@@ -17,7 +17,7 @@ role_v2:
     internal-label: Admin
 ---
 
-# Universal Editor 2026.10.08 Release Notes {#release-notes}
+# Universal Editor 2026.10.15 Release Notes {#release-notes}
 
 These are the release notes for the 15 October 2026 release of the Universal Editor.
 
