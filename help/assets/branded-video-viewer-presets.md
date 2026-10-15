@@ -6,16 +6,15 @@ role: User
 
 # Configure branded video viewer presets {#configure-branded-video-viewer-presets}
 
-Branded video viewer presets let you define and reuse a consistent playback experience for videos in Dynamic Media. A preset is a named collection of appearance and playback settings that you can apply to video assets without configuring the same options individually for each video.
-
-Use branded video viewer presets to customize the player's appearance, control playback behavior, and provide a consistent viewing experience across videos.
+A branded video viewer preset is a reusable set of appearance and playback settings for the unified video viewer in Dynamic Media. Create presets to customize the video player's appearance and playback behavior, and reuse them across videos to provide a consistent viewing experience.
+Presets are shared across assets in a repository. The steps to make a preset available and apply it during playback depend on your Dynamic Media environment: Dynamic Media Scene7 or Dynamic Media with OpenAPI.
 
 ## Create a branded video viewer preset {#create-branded-video-viewer-preset}
 
-Execute the following steps to create a branded video viewer preset:
+To create a branded video viewer preset:
 
 1. In Experience Manager, navigate to **Tools** > **Assets** > **Viewer Presets**.
-2. Click **Create**.
+2. Select **Create**.
 3. Enter a name for the preset.
 4. For the Rich Media Type, select **Branded Videos**.
 
@@ -38,7 +37,7 @@ In the **[!UICONTROL Component Appearance]** panel, configure the following sett
 * **Sizes:** Adjust the control bar scale using the slider or select **[!UICONTROL S]**, **[!UICONTROL M]**, **[!UICONTROL L]**, or **[!UICONTROL XL]**.
 * **Borders:** Choose a shape for the main play button, such as a rectangle, rounded rectangle, oval, or circle. Adjust the button scale using the slider.
 
-Select **[!UICONTROL Show CSS]** to edit the viewer CSS and customize its appearance. Changes are applied to the preview and saved with the preset.
+Select [!UICONTROL Show CSS] to display the CSS editor and customize the viewer's appearance. Review your changes in the preview before saving the preset.
 
 ![CSS Viewer editor](assets/css-viewer.png)
 
@@ -46,7 +45,7 @@ Use the **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]**, and **[!UICONTROL Pho
 
 ## Configure playback behavior {#configure-playback-behavior}
 
-Use the Behavior settings to control how the video plays and how playback controls appear.
+Use the **[!UICONTROL Behavior]** tab to configure the player controls and playback settings.
 
 ![Playback behavior settings for the branded video viewer](assets/branded-video-viewer-behavior.png)
 
@@ -81,23 +80,22 @@ Configure the supported options for how the video is displayed and loaded.
 
 | Option | Description |
 | --- | --- |
-| Letterboxing | Controls whether the video is displayed with letterboxing or stretched to fill the available area. |
-| Initial bitrate | Specifies the initial bitrate used when adaptive streaming starts playback. |
-| Progressive bitrate | Specifies the bitrate used for progressive video playback. |
+| Letterboxing | Configures the letterboxing behavior for the video. |
+| Initial bitrate | Sets the initial bitrate for video playback. |
+| Progressive bitrate | Sets the bitrate for progressive video playback. |
 | Smart Crop | Enables the supported smart-cropped video presentation for the asset. |
 
 Preview the video after changing these settings to verify the resulting playback.
 
 ## Save and make the preset available {#save-and-publish-preset}
 
-After configuring the preset, save your changes.
+After configuring the preset, save your changes. The steps to make the preset available depend on your Dynamic Media environment:
 
-The steps required to make a preset available depend on your Dynamic Media environment:
+Dynamic Media Scene7: Return to the Viewer Presets list and manually publish the preset.
 
-* **Dynamic Media Scene7:** Publish the preset when required so it can be used for delivery.
-* **Dynamic Media with OpenAPI:** Complete the required preset approval workflow before using the preset.
+Dynamic Media with OpenAPI: Complete the required approval workflow before using the preset.
 
-Confirm that the preset is available in the relevant environment before applying it to a video.
+For video delivery through Dynamic Media with OpenAPI, ensure that the video asset is approved before playback.
 
 ## Apply a branded video viewer preset to a video {#apply-preset-to-video}
 
@@ -110,7 +108,7 @@ Execute the following steps to preview a video using an available viewer or pres
 1. Navigate to **Assets** > **Files**, and open the folder containing the video.
 2. Click the video asset to open the asset details page.
 3. In the left panel, click **Viewers**.
-4. Select the appropriate viewer or preset, where available, to preview the video.
+4. Select the available viewer preset to preview the video with the configured appearance and playback settings.
 
    ![Apply the branded video viewer preset from the asset details page](assets/apply-branded-video-viewer-preset.png)
 
@@ -135,17 +133,19 @@ The selected preset controls the playback experience according to its configured
 
 ## Apply a preset using a playback URL {#apply-preset-using-playback-url}
 
-Some Dynamic Media delivery environments support selecting a viewer preset through a playback URL parameter.
+You can apply a branded video viewer preset by passing its name in the playback URL. The parameter depends on your Dynamic Media environment:
 
-Use the parameter supported by your environment and confirm the required syntax with the corresponding delivery documentation before using it in production. Parameter names and supported workflows can differ between Dynamic Media environments.
+* **Dynamic Media Scene7:** Use the `config` parameter to specify the preset name.
+* **Dynamic Media with OpenAPI:** Use the `viewerPreset` parameter to specify the preset name.
 
-Do not assume that a parameter supported by one delivery environment is supported by another.
+For the exact playback URL and embed code, open the video asset's details page and select **[!UICONTROL Viewers]**.
+
+The viewer applies the preset settings during playback. Explicit URL or caller parameters take precedence over the corresponding preset settings.
 
 ## Important considerations {#important-considerations}
 
-* A branded video viewer preset is reusable. You can apply it to multiple videos instead of configuring the same appearance and playback options for each asset.
-* Changes to a preset can affect the playback experience wherever that preset is used. Review the impact before updating a preset used by published content.
-* Available settings and application workflows can differ between Dynamic Media delivery environments.
-* Ensure that the preset is published or approved, as required by your environment, before using it for video delivery.
+* A branded video viewer preset is reusable across videos in the same repository.
+* Changes to a preset can affect the playback experience wherever the preset is used.
+* Publish the preset in Dynamic Media Scene7 or complete the required approval workflow in Dynamic Media with OpenAPI before using it.
+* For Dynamic Media with OpenAPI, ensure that the video asset is approved before playback.
 * Preview the video after applying a preset to verify its appearance, playback behavior, and available controls.
-* Test custom CSS and other advanced settings with the supported viewer to confirm the expected behavior.
