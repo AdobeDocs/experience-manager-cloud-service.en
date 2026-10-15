@@ -34,12 +34,8 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming Features {#upcoming-features}
 
-<!--
-* tbc
--->
+* no relevant changes are promoted for this release
 
 ## Upcoming Changes {#upcoming-improvements}
 
-<!--
-* tbc
--->
+* no relevant changes are promoted for this release
