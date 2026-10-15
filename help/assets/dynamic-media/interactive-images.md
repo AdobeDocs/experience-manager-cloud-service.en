@@ -421,7 +421,7 @@ The process of constructing the Quickview URL is the opposite of the process use
 
 See [Identify hotspot variables](#optional-identifying-hotspot-variables).
 
-Using the previous Quickview URL examples, you can see in the following examples how the Quickview URL is constructed in each case:
+Using the previous Quickview URL examples, you can see in the following examples how the Quickview URL is constructed in each case: 
 
 <table>
  <tbody>
