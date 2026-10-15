@@ -17,11 +17,9 @@ For more details see:
 
 * [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/ui-guide)
 
-<!--
 * Demonstration video
 
 >[!VIDEO](https://video.tv.adobe.com/v/3504014?learn=on)
--->
 
 >[!NOTE]
 >
