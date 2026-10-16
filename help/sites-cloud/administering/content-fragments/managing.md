@@ -204,7 +204,7 @@ Selecting a specific fragment opens a toolbar focused on the actions available f
 * **[Manage Tags](#view-and-manage-tags)**
 * **[Copy](#copy-a-content-fragment)**
 * **[Replace](#find-and-replace)**
-* **[Preview and Publish](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md#preview-and-publish-your-fragment-with-a-template)**
+* **[Preview](#publishing-and-previewing-a-fragment)**
 * **Move**
 * **Rename**
 * **[Check Out and Check In](#check-out-and-check-in)**
