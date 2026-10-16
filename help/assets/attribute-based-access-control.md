@@ -414,15 +414,6 @@ Completing these steps produces a self-explanatory, verifiable spreadsheet that 
 
 In most cases, an ABAC rule does not apply because the asset metadata does not match the rule condition. ABAC in Content Hub is **metadata-driven**, not folder-based or path-based. The location of an asset in the AEM repository has no effect on whether a rule matches. A rule grants access to a user group only when the metadata value on the asset exactly matches the value specified in the rule condition.
 
-To troubleshoot a rule that is not being applied, verify the following:
-
-1. **The metadata value on the asset exactly matches the rule condition.** Compare the property value on the asset with the value in the rule. A difference in spelling, casing, spacing, or format, for example, `EMEA` versus `emea` or `North America` versus `north-america`, prevents the rule from matching. Maintain consistent metadata values across assets for the properties used in rules, such as **brand**, **region**, and **product**.
-1. **The metadata property referenced in the rule is defined in the metadata schema.** Ensure that the property exists in the AEM [metadata schema](/help/assets/metadata-schemas.md) applied to the asset and that the asset has a value for it. For multi-valued properties, see the [array-valued metadata behavior](#supported-rule-constructs).
-1. **The asset is approved with the correct Approval Target.** ABAC rules are evaluated only for assets approved with **[!UICONTROL Approval Target]** set to **[!UICONTROL Content Hub]**. Assets approved with **[!UICONTROL Approval Target]** set to **[!UICONTROL Delivery]** are visible to all Content Hub users, so ABAC rules do not restrict their visibility. For more information, see [Set the Approval Target](/help/assets/approve-assets-content-hub.md#set-approval-target).
-1. **The rule is mapped to the correct user group.** Confirm that the rule references the correct **IMS Group ID** from the Admin Console and that the user belongs to that group.
-
-For more information on defining rules correctly, see [Guidelines](#guidelines-attribute-based-access-control).
-
 **See also**
 
 * [Translate Assets](/help/assets/translate-assets.md)
