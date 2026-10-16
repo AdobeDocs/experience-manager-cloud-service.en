@@ -6,8 +6,7 @@ role: User
 
 # Configure branded video viewer presets {#configure-branded-video-viewer-presets}
 
-A branded video viewer preset is a reusable set of appearance and playback settings for the unified video viewer in Dynamic Media. Create presets to customize the video player's appearance and playback behavior, and reuse them across videos to provide a consistent viewing experience.
-Presets are shared across assets in a repository. The steps to make a preset available and apply it during playback depend on your Dynamic Media environment: Dynamic Media Scene7 or Dynamic Media with OpenAPI.
+A branded video viewer preset is a reusable set of appearance and playback settings for the unified video viewer in Dynamic Media. Create presets to customize the viewing experience and maintain consistency across videos. Presets are shared across assets in a repository.
 
 ## Create a branded video viewer preset {#create-branded-video-viewer-preset}
 
