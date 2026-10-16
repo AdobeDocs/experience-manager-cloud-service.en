@@ -5,6 +5,15 @@ exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 feature: Migration
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: 5be0fc8f-1cff-5c3e-bb92-2903a56a3de6
+    internal-label: Migration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 
 # Using the User Mapping Tool (Legacy) {#using-user-mapping-tool}

@@ -274,6 +274,8 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.10.08 Release Notes](/help/release-notes/universal-editor/2026/2026-10-08.md)
+      + [2026.10.01 Release Notes](/help/release-notes/universal-editor/2026/2026-10-01.md)
       + [2026.09.24 Release Notes](/help/release-notes/universal-editor/2026/2026-09-24.md)
       + [2026.09.17 Release Notes](/help/release-notes/universal-editor/2026/2026-09-17.md)
       + [2026.09.10 Release Notes](/help/release-notes/universal-editor/2026/2026-09-10.md)
@@ -706,6 +708,7 @@ user-guide-title: AEM as a Cloud Service
 
   + Content Advisor {#content-advisor}
     + [Content Advisor to access AEM content in Adobe and non-Adobe applications](/help/assets/integrate-adobe-non-adobe-applications.md)
+    + [Content Advisor Browser Extension](/help/assets/content-advisor-browser-extension.md)
     + [Content Advisor properties](/help/assets/content-advisor-properties.md)
     + [Content Advisor customizations](/help/assets/content-advisor-customization.md)
     + [Integration with Dynamic Media](/help/assets/integration-with-dynamic-media.md)
@@ -1198,7 +1201,11 @@ user-guide-title: AEM as a Cloud Service
   + Agentic Capabilities in AEM {#agentic-capabilities}
     + [Overview](/help/ai-in-aem/agentic-capabilities/overview.md)
     + Brand Experience {#brand-experience}
+      + [Overview](/help/ai-in-aem/agentic-capabilities/brand-experience/overview.md)
       + Experience Production {#experience-production}
+        + [Content Update](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/content-update.md)
+        + [Content Create](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/content-create.md)
+        + [Figma to Visual Content Fragments](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/figma-to-visual-content-fragments.md)
         + [Experience Production use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/use-cases.md)
         + [Forms use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/forms-use-cases.md)
       + Development {#development}
@@ -1211,6 +1218,9 @@ user-guide-title: AEM as a Cloud Service
       + Content Optimization {#content-optimization}
         + [Content Optimization use cases](/help/ai-in-aem/agentic-capabilities/content-advisor/content-optimization/use-cases.md)
     + Brand Governance {#brand-governance}
+      + [Overview](/help/ai-in-aem/agentic-capabilities/brand-governance/overview.md)
+      + [Experience Context](/help/ai-in-aem/agentic-capabilities/brand-governance/experience-context.md)
+      + [How to Import a Brand Policy](/help/ai-in-aem/agentic-capabilities/brand-governance/how-to-import-a-brand-policy.md)
       + [Brand Governance use cases](/help/ai-in-aem/agentic-capabilities/brand-governance/use-cases.md)
   + Agents in AEM {#agents}
     + [Overview](/help/ai-in-aem/agents/overview.md)
@@ -1237,12 +1247,7 @@ user-guide-title: AEM as a Cloud Service
       + [Overview](/help/ai-in-aem/agents/content-advisor/overview.md)
       + [Content Discovery Agent](/help/ai-in-aem/agents/content-advisor/discovery.md)
       + [Content Optimization Agent](/help/ai-in-aem/agents/content-advisor/content-optimization.md)
-    + Brand Governance Agent {#governance}
-      + [Overview](/help/ai-in-aem/agents/governance/overview.md)
-      + [Experience Context](/help/ai-in-aem/agents/governance/experience-context.md)
-      + [How to Import a Brand Policy](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md)
   + AI Assistant {#ai-assistant}
-    + [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
     + [About AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
   + Generate Variations {#generate-variations}
     + [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md)
@@ -1419,10 +1424,6 @@ user-guide-title: AEM as a Cloud Service
     + [Integrate with an Adobe application](/help/headless/content-fragment-selector/integrate-adobe-application.md) 
     + [Integrate with non-Adobe or third party application](/help/headless/content-fragment-selector/integrate-non-adobe-application.md)
     + [Integrate Content Fragment Selector using Vanilla JS](/help/headless/content-fragment-selector/integrate-using-vanilla-js.md)
-  + Content Fragment Creator {#content-fragment-creator}
-    + [Micro-Frontend Content Fragment Creator - Overview](/help/headless/content-fragment-creator/overview.md)
-    + [Content Fragment Creator - Related Properties](/help/headless/content-fragment-creator/properties.md)
-    + [Integrate with a React application](/help/headless/content-fragment-creator/integrate-react-application.md) 
   + [AEM APIs for Structured Content Delivery and Management](/help/headless/apis-headless-and-content-fragments.md)
   + GraphQL API {#graphql-api}
     + [GraphQL API for Content Fragments](/help/headless/graphql-api/content-fragments.md)
