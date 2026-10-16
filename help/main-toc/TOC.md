@@ -843,6 +843,7 @@ user-guide-title: AEM as a Cloud Service
     + [Deploy Content Hub](/help/assets/deploy-content-hub.md)
     + [Upload or Import brand-approved assets to Content Hub](/help/assets/upload-brand-approved-assets.md)
     + [Configure Content Hub user interface](/help/assets/configure-content-hub-ui-options.md)
+    + [Enable UI extensibility in Content Hub](/help/assets/enable-ui-extensibility-in-content-hub.md)
     + [Approve assets for Content Hub](/help/assets/approve-assets-content-hub.md)
     + [Search assets in Content Hub](/help/assets/search-assets-content-hub.md)
     + [Asset properties](/help/assets/asset-properties-content-hub.md)
