@@ -56,7 +56,7 @@ To share one or more assets with private or public users, execute the following 
 
 1. Specify a title and an optional description that defines the set of selected assets. A clear title and description help recipients identify the shared set at a glance.
 
-1. Select **[!UICONTROL Period of expiration]**. This setting determines how long the shared link remains valid before access expires.
+1. Select **[!UICONTROL Period of expiration]**. This setting determines how long the shared link remains valid before access expires. Public links are intended for sharing assets with users who are not onboarded to [!DNL Content Hub]. If users need access to assets for a longer duration, [onboard them to [!DNL Content Hub]](deploy-content-hub.md#onboard-content-hub-users) instead. If you have a valid business use case for public links that remain valid for a longer duration, create an Adobe Support ticket to request an increase to the expiration period.
 
 1. Under **[!UICONTROL Who can access]** drop down, select the access options and click **[!UICONTROL Get Link]** to generate a link to share with the selected users. This action produces the shareable link based on the access level you choose. The two access levels differ as follows:
 
