@@ -87,7 +87,10 @@ In both cases a new modal window will open.
 
 1. If custom templates are available, you can select the template you want to use (including the **Generic Template**).
 
-1. You can publish your template to either the Preview or Publish URL.
+1. You can publish your template to either:
+
+   * the Preview URL with **Publish VCF to preview**
+   * the Publish URL with **Publish VCF to delivery**
 
 1. If the Content Fragment is published you can also view and copy its **Preview URL** and **Publish URL**.
 
@@ -97,10 +100,15 @@ For example, preview with the **Generic Template**:
 
 ## Edit your Template {#edit-your-template}
 
-You can edit your template from the console:
+For Content Fragment Models that have been published you can edit your template from the console:
 
 1. Navigate to the Content Fragment Models section of the Content Fragment console.
 1. Select your model.
+
+   >[!NOTE]
+   >
+   >Your model must be already **Published**.
+
 1. Use the information icon to open the right panel.
 1. From the HTML Templates section of the right panel, use the **Edit** option for your template.
 1. In the dialog provided, make your updates.
