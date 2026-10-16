@@ -101,7 +101,7 @@ You can get started with UI extensibility in [!DNL Content Hub] in either of the
 3. The skills scaffold the project from the [!DNL Content Hub] sample app by running `aio app init --repo adobe/aem-uix-examples/aem-assets-contenthub-sample`, and then customize it for your use case:
    * Set the extension ID.
    * Restrict the extension to specific delivery repositories by populating `allowedRepos`.
-   * Keep only the extension points you need.
+   * Keep only the extension points you need
 
 4. Run `aio app run` to start the extension locally. Open the following URL in your browser to test it in [!DNL Content Hub], replacing `<delivery-repo>` with your [!DNL Content Hub] delivery host:
 
