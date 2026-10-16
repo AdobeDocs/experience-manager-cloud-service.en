@@ -61,7 +61,7 @@ To upload your new HTML template:
 
 ## Preview and Publish your fragment with a Template {#preview-and-publish-your-fragment-with-a-template}
 
-To preview your Content Fragment using a template:
+To preview your visual Content Fragment using a template:
 
 >[!NOTE]
 >
@@ -87,7 +87,7 @@ In both cases a new modal window will open.
 
 1. If custom templates are available, you can select the template you want to use (including the **Generic Template**).
 
-1. You can publish your template to either:
+1. You can publish your visual Content Fragment to either:
 
    * the Preview URL with **Publish VCF to preview**
    * the Publish URL with **Publish VCF to delivery**
