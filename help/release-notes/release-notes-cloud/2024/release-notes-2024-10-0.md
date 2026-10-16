@@ -4,6 +4,18 @@ description: Release Notes for 2024.10.0 release of [!DNL Adobe Experience Manag
 feature: Release Information
 role: Admin
 exl-id: 7a63f04f-10f0-4879-bd06-4182bb288a9b
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # 2024.10.0 Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -96,6 +108,10 @@ Administrators can now control if they need expired assets to be visible on Cont
 ### New feature in AEM Forms {#forms-new-features}
 
 * [Enhance User Experience with Navigation Buttons in Panel Layouts](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button): You can now add navigation buttons to your panel layouts, such as Horizontal Tabs, Vertical Tabs, Accordions, or Wizard. These buttons enhance the user experience by simplifying transitions between panels, focusing on the selected panel.
+
+#### Right-to-left (RTL) language support in Adaptive Forms
+
+Adaptive Forms can now be displayed in a Right-to-Left (RTL) language, such as Arabic, Hebrew, and Urdu. This gives you a more inclusive experience for users who read RTL languages, with proper text flow, alignment, and mobile-responsive layouts. For more information, see [Add a locale for Adaptive Forms based on Core Components](/help/forms/supporting-new-language-localization-core-components.md).
 
 <!--* **Specify Display Styles for Document of Record (DoR) Components**: In an XFA file, you can now specify the display styles for Document of Record components. These styles can later be applied to the corresponding components in Adaptive Forms Editor.-->
 

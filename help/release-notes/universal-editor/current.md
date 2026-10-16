@@ -1,14 +1,25 @@
 ---
-title: Universal Editor 2026.06.25 Release Notes
-description: These are the release notes for the 2026.06.25 release of the Universal Editor.
+title: Universal Editor 2026.10.15 Release Notes
+description: These are the release notes for the 2026.10.15 release of the Universal Editor.
 feature: Release Information
 role: Admin
-exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 
-# Universal Editor 2026.06.25 Release Notes {#release-notes}
+# Universal Editor 2026.10.15 Release Notes {#release-notes}
 
-These are the release notes for the 25 June 2026 release of the Universal Editor.
+These are the release notes for the 15 October 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -18,16 +29,17 @@ These are the release notes for the 25 June 2026 release of the Universal Editor
 >
 >For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-## What's New {#what-is-new}
+## New Features {#what-is-new}
 
-* A new **Open in Site Admin** button has been added to the toolbar to access AEM Sites console.
-  * This brings the functionality of the former **AEM Site Admin Extension** [extension](/help/implementing/universal-editor/extending.md) natively to the Universal Editor.
-  * The button opens the current AEM page in the [Sites console,](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console) or the [Experience Fragments console](/help/sites-cloud/authoring/fragments/experience-fragments.md) for `/content/experience-fragments` paths.
-  * The button is hidden for DAM paths (`/content/dam`) and when no unique AEM page can be determined from the current editables.
-* Single-character keyboard shortcuts now work better with accessibility technologies.
+* AI agents can now see the editor's loaded content and update nested component properties more precisely.
+* AI agents can undo and redo editor changes through the new WebMCP tools.
+* Structured service log events now include a UTC datetime, and forwarded events keep their original datetime.
 
 ## Other Improvements {#other-improvements}
 
-* Numerous buttons now correctly have accessible names.
-* A problem with persisting certain Content Fragments after selecting them with a picker has been fixed.
-
+* URLs inside Unified Shell no longer pick up repeated shell or embedded-URL prefixes.
+* The shell's force-reload flag is no longer passed through to the page's search parameters.
+* Drag and drop no longer allows moving components onto targets that are not containers.
+* AI agents can now set images that are not activated yet by using their author DAM path, and they also tell users the asset must be activated to appear on the published page.
+* Updated the headless canvas components to fix remote URL construction for non-Sense-7 instances and bring in Dynamic Media for delivery instances.
+* Icons in extension-provided renderers now receive their props correctly.

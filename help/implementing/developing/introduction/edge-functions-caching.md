@@ -3,18 +3,24 @@ title: Caching in AEM Edge Functions
 description: Learn how the CDN cache and Edge Function fetch cache interact, how to configure caching behavior, and how to purge cached content across both layers.
 feature: Developing, Edge Delivery Services
 role: Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Caching in AEM Edge Functions {#edge-functions-caching}
 
->[!IMPORTANT]
->
->AEM Edge Functions is a **public beta** feature so you can try it out in a self-serve way without contacting Adobe to enable. Adobe encourages you to email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) to describe your use case so Adobe can assure you it is supported, and provide any guidance. It is especially important to contact Adobe before deploying the feature for production traffic.
->
->By using the AEM Edge Functions Beta, you acknowledge that it is still in development and that you should not rely on the correct functioning of the technology or availability of data. This feature is provided as-is, may change without notice, and is not covered by production.
-
 This page provides detailed technical guidance on how caching works within AEM Edge Functions, including the two-cache architecture, how to control caching behavior in your code, and how to purge cache entries when content changes.
 
-For general background on how AEM as a Cloud Service caching works, see [Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md) and [The CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md). For code examples, refer to the [AEM Edge Functions Boilerplate — Caching](https://github.com/adobe/aem-edge-functions-boilerplate/blob/main/README.md#caching).
+For general background on how AEM as a Cloud Service caching works, see [Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md) and [The CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md). For code examples, refer to the [AEM Edge Functions Boilerplate — Caching](https://github.com/adobe/aem-edge-functions-boilerplate/blob/main/README.md#caching) and the [AEM Edge Functions Examples](https://github.com/adobe/aem-edge-functions-examples) repository.
 
 ## Caching Architecture {#architecture}
 

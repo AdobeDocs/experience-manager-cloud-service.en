@@ -6,6 +6,14 @@ feature: Adobe Stock
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Use [!DNL Adobe Stock] assets in [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}
 
@@ -281,15 +289,15 @@ To configure the [!DNL Adobe Stock] cloud service:
 1. Click **[!UICONTROL Save & Close]**. 
 -->
 
-   Your [!DNL Experience Manager Assets] author instance is now integrated with [!DNL Adobe Stock]. You can create multiple [!DNL Adobe Stock] configurations (for example, locale-based configurations). You can now access, search, and license the [!DNL Adobe Stock] assets from within the [!DNL Experience Manager] user interface. 
+Your [!DNL Experience Manager Assets] author instance is now integrated with [!DNL Adobe Stock]. You can create multiple [!DNL Adobe Stock] configurations (for example, locale-based configurations). You can now access, search, and license the [!DNL Adobe Stock] assets from within the [!DNL Experience Manager] user interface. 
 
-   ![search-stock-assets](assets/aem-stock-searchstocks.png)
+![search-stock-assets](assets/aem-stock-searchstocks.png)
 
-   >[!NOTE]
-   >
-   >At this stage of integration, only the administrators can access the [!DNL Adobe Stock] assets, search Stock assets (using omnisearch), and license the [!DNL Adobe Stock] assets.
-   >
-   >Administrators can further add users or groups to the [!DNL Adobe Stock] cloud service and give permissions to these non-admin users in [!DNL Experience Manager] to access the Stock configuration. 
+>[!NOTE]
+>
+>At this stage of integration, only the administrators can access the [!DNL Adobe Stock] assets, search Stock assets (using omnisearch), and license the [!DNL Adobe Stock] assets.
+>
+>Administrators can further add users or groups to the [!DNL Adobe Stock] cloud service and give permissions to these non-admin users in [!DNL Experience Manager] to access the Stock configuration. 
 
 1. To add users or groups, select the [!DNL Adobe Stock] cloud configuration and click **[!UICONTROL Properties]**. 
 
@@ -516,18 +524,20 @@ Users can see the properties for both, licensed and unlicensed assets.
 
 **See also**
 
-* [Translate Assets](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [Assets supported file formats](file-format-support.md)
-* [Search assets](search-assets.md)
-* [Connected assets](use-assets-across-connected-assets-instances.md)
-* [Asset reports](asset-reports.md)
-* [Metadata schemas](metadata-schemas.md)
-* [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata.md)
-* [Search facets](search-facets.md)
-* [Manage collections](manage-collections.md)
-* [Bulk metadata import](metadata-import-export.md)
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
@@ -535,3 +545,4 @@ Users can see the properties for both, licensed and unlicensed assets.
 >* [Video tutorial on using Adobe Stock assets with Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
 >* [Adobe Stock enterprise plan help](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
 >* [Adobe Stock FAQ](https://helpx.adobe.com/stock/faq.html)
+

@@ -6,6 +6,15 @@ role: Admin
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
 solution: Experience Manager Sites
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Integrating with Adobe Analytics{#integrating-with-adobe-analytics}
 
@@ -71,4 +80,4 @@ Adobe Analytics can be added as an extension in the Launch Property. Rules can b
 
 >[!NOTE]
 >
->Existing (legacy) frameworks still work, but cannot be configured in the Touch UI. It is advisable to rebuild the variable mapping configurations in Launch.
+>The [Adobe Analytics 1.4 API has reached end-of-life](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/). As a result, legacy frameworks that use user credentials no longer work. Migrate to the IMS-based configuration in the Touch UI and Adobe Launch.

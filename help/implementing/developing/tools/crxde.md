@@ -4,6 +4,14 @@ description: CRXDE Lite is part of the AEM quickstart and is available to you to
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
 feature: Developing
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Using CRXDE Lite {#using-crxde-lite}
 
@@ -126,7 +134,7 @@ The **Delete Button** deletes the selected node.
 
 The **Copy Button** copies the selected node.
 
-## Paste Button {#paste-button}
+### Paste Button {#paste-button}
 
 The **Paste Button** pastes the copied node under the selected node.
 
@@ -177,7 +185,7 @@ To create a folder with CRXDE Lite:
 To create a node with CRXDE Lite:
 
 1. Open CRXDE Lite in your browser.
-1. In the [**Exploerer Pane**](#explorer-pane), right-click the node where you want to create the new node, select **Create**, then **Create Node**.
+1. In the [**Explorer Pane**](#explorer-pane), right-click the node where you want to create the new node, select **Create**, then **Create Node**.
 1. Enter the **Name** and select the **Type**.
 1. Click **OK**.
 1. Click the [**Save All Button**](#save-all-button) to save the changes on the server.
@@ -195,7 +203,7 @@ You can now adapt the node to your needs by modifying properties or creating new
 To create a property with CRXDE Lite:
 
 1. Open CRXDE Lite in your browser.
-1. In the [**Exploerer Pane**](#explorer-pane), select the node where you want to add the new property.
+1. In the [**Explorer Pane**](#explorer-pane), select the node where you want to add the new property.
 1. In the [**Properties Tab**](#properties-tab) in the bottom pane, enter the **Name**, the **Type**, and the **Value**.
 1. Click **Add**.
 1. Click the [**Save All Button**](#save-all-button) to save the changes on the server.
@@ -205,7 +213,7 @@ To create a property with CRXDE Lite:
 To create a file with CRXDE Lite:
 
 1. Open CRXDE Lite in your browser.
-1. In the [**Exploerer Pane**](#explorer-pane), right-click the component where you want to create the file, select **Create**, then **Create File**.
+1. In the [**Explorer Pane**](#explorer-pane), right-click the component where you want to create the file, select **Create**, then **Create File**.
 1. Enter the file **Name** including its extension.
 1. Click **OK**.
 1. The new file opens as a tab in the [**Edit Pane**](#edit-pane).

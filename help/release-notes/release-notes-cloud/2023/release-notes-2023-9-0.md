@@ -4,6 +4,18 @@ description: Release Notes for 2023.9.0 release of [!DNL Adobe Experience Manage
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
 feature: Release Information
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 
 # 2023.9.0 Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
@@ -92,6 +104,8 @@ You can now assign metadata form to a specific folder within your deployment. Al
 * **[Error handling with custom error handlers in rule editor](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: You can now invoke a custom function in response to an error returned by an external service and provide a tailored response to end users. For example, you can invoke a custom workflow in the backend for specific error codes or inform the customer that the service is down. 
 
 * **[64-bit Version of AEM Forms Designer](/help/forms/installing-configuring-designer.md)**: The 64-bit version of AEM Forms Designer brings enhanced performance, scalability, and memory management to empower your form creation experience. With the 64-bit architecture, you can tackle even larger and more complex projects with ease, ensuring seamless design workflows and optimized efficiency. Elevate your form design capabilities and embrace the future of AEM Forms Designer with this cutting-edge release.
+
+* **[Usage Rights APIs (Reader Extension)](/help/forms/aem-forms-cloud-service-communications-introduction.md#usage-rights-apis-reader-extension)**: You can now use the Usage Rights (Reader Extension) API to add usage rights to a PDF document. This lets recipients complete, save, and comment on PDF documents and forms directly from Adobe Reader, without needing extra software or plug-ins.
 
 ### Early adopter program {#forms-early-adopter}
 

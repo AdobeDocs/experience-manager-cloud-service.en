@@ -4,6 +4,14 @@ description: An overview of the technical foundations of AEM including how AEM i
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
 feature: Developing
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # AEM Technical Foundations {#aem-technical-foundations}
 
@@ -30,9 +38,9 @@ The underlying content repository and business logic layers are built around Jav
 
 ## Java&trade; Content Repository {#java-content-repository}
 
-The Java&trade; Content Repository (JCR) standard, [JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html), specifies a vendor-independent and implementation-independent way to access content bi-directionally on a granular level within a content repository. The specification lead is held by Adobe Research (Switzerland) AG.
+The Java&trade; Content Repository (JCR) standard, [JSR 283](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html), specifies a vendor-independent and implementation-independent way to access content bi-directionally on a granular level within a content repository. The specification lead is held by Adobe Research (Switzerland) AG.
 
-The [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) package, `javax.jcr.*` is used for the direct access and manipulation of repository content.
+The [JCR API 2.0](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/index.html) package, `javax.jcr.*` is used for the direct access and manipulation of repository content.
 
 AEM is built upon a JCR.
 

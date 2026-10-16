@@ -6,6 +6,16 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 926fd6af-aea1-40be-9d38-8f1ea0900132
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 
 # Create an Interactive Communication Template
@@ -65,6 +75,6 @@ By following the above steps, you can successfully create an Interactive Communi
 
 ## Next Steps
 
-[Create an interactive communication](/help/forms/interactive-communication/create-interactive-communication.md)
-[Create an interactive communication Fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+- [Create an interactive communication](/help/forms/interactive-communication/create-interactive-communication.md)
+- [Create an interactive communication Fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
 

@@ -4,6 +4,15 @@ description: Learn how to use the AEM-managed CDN and how to point your own CDN 
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: 2741637d-a621-529a-b21b-bfe9be07a9c8
+    internal-label: Dispatcher
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 
 # CDN in AEM as a Cloud Service {#cdn}
@@ -63,6 +72,16 @@ You can configure a CDN error page to replace the default, unbranded page. This 
 Setting TTL using the HTTP Cache-Control header is an effective approach to balance content delivery performance and content freshness. However, in scenarios where it is critical to serve updated content immediately, it may be beneficial to purge the CDN cache directly.
 
 Read about [configuring a purge API token](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) and [purging cached CDN content](/help/implementing/dispatcher/cdn-cache-purge.md).
+
+### AEM Edge Functions {#aem-edgefunctions}
+
+Execute JavaScript at the CDN layer, enabling use cases including:
+
+* Personalized content based on data like geolocation, device type, or user attributes
+* Retrieving data from external services via API and stitching that data into the rendered page
+* Making outbound calls to services with a securely stored API secret
+
+Learn more in the [AEM Edge Functions article](/help/implementing/developing/introduction/edge-functions.md).
 
 ### Basic authentication at the CDN {#basic-auth}
 

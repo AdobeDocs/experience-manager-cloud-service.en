@@ -5,8 +5,23 @@ exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
 nudge: please
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Rapid Development Environments {#rapid-development-environments}
+
+>[!NOTE]
+>
+>**New Enhancement: RDE Snapshots**
+>
+> New with the July 2026 release! Take an RDE snapshot to later restore code and content. [Learn more](#snapshots) below.
+>
 
 To deploy changes, current Cloud Development environments require the use of a process that employs extensive code security and quality rules called a CI/CD pipeline. For situations where quick and iterative changes are needed, Adobe has introduced Rapid Development Environments (RDEs for short).
 
@@ -706,17 +721,15 @@ For more information about how to use Cloud Manager to manage your environments,
 
 ## Snapshots {#snapshots}
 
->[!NOTE]
->RDE Snapshots are in public beta and so it can be enabled by updating to the latest aio plugin, without contacting Adobe.
->
->By using the RDE Snapshots Beta, you acknowledge that it is still in development and that you should not rely on the correct functioning of the technology or availability of data. While we have tested this feature extensively, there is a small possibility that your RDE could become unstable. If this occurs, a reset will restore it to a working state.
->We welcome feedback at [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com).
-
 RDEs support taking a snapshot of the current state of code and content, which can be restored at a later time. Snapshots are useful when syncing code that may need to be reverted, or when switching between development of different features. It is also possible to restore only the mutable content from a snapshot as a known starting point for testing.
 
 Note that a snapshot from a specific RDE cannot be restored on another RDE.
 
 Each RDE environment has a maximum of seven snapshots. Snapshots that are marked for deletion but are still within the seven-day retention period continue to count toward that limit until they are fully removed. If you reach the limit and need capacity for a new snapshot right away, use forced deletion as described in [Delete a snapshot](#delete-a-snapshot) instead of a standard delete.
+
+>[!NOTE]
+> RDE Snapshots do not currently support RDEs with [Front-End Code Based on Site Themes and Site Templates](#deploy-front-end-code-based-on-site-themes-and-site-templates)
+>
 
 The supported commands are described below. For a full list of flags and options, use `aio aem rde snapshot --help`, or for help on a specific subcommand, use `aio aem rde snapshot <subcommand> --help`.
 

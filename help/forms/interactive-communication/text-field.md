@@ -6,6 +6,16 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 6bb41cf2-8a9d-499c-979b-b0ee7d092e11
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Text Field component in Interactive Communication Editor 
 
@@ -29,6 +39,10 @@ The Text Field component in the Interactive Communication (IC) editor enables au
 - **Reserve:** Set the alignment of the value, left, right, top, or bottom or specify a custom position using units like millimeters (e.g., 20 mm). 
 
 - **Appearance:** Set the appearance of the value box as None, Solid Box, or Underline based on the desired visual layout. 
+
+>[!NOTE]
+>
+> The text field supports text wrapping. When the entered text exceeds the available width, it automatically wraps to the next line, ensuring that all content remains visible without requiring horizontal scrolling.
 
 2.2 Typography 
 

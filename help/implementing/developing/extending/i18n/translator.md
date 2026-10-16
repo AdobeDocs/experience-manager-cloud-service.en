@@ -5,6 +5,17 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 4b363473-3c5e-4d8e-97d6-b7b96ccf9e58
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Using Translator to Manage Dictionaries{#using-translator-to-manage-dictionaries}
 
@@ -28,17 +39,17 @@ Developers can create i18n dictionaries in AEM to manage localized component str
 
 Developers can create additional dictionaries by adding a root node (`sling:Folder`) for a new dictionary to hold language definitions for component strings.
 
-   ```shell
-   /apps/myProject/i18n [sling:Folder]
-       - de.json [nt:file] [mix:language]
-           + jcr:language = de
-       - fr.json [nt:file] [mix:language]
-           + jcr:language = fr
-   ```
+```shell
+/apps/myProject/i18n [sling:Folder]
+      - de.json [nt:file] [mix:language]
+         + jcr:language = de
+      - fr.json [nt:file] [mix:language]
+         + jcr:language = fr
+```
 
-   >[!NOTE]
-   >
-   >This is the structure from the [Sling i18n module](https://sling.apache.org/site/internationalization-support.html).
+>[!NOTE]
+>
+>This is the structure from the [Sling i18n module](https://sling.apache.org/site/internationalization-support.html).
 
 Once created in an AEM GitHub repository, dictionaries can be deployed via an AEM [CI/CD pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md). 
 

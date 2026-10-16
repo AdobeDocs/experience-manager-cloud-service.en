@@ -6,6 +6,15 @@ badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
 solution: Experience Manager Sites
 role: User
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Methods to Author Content in AEM {#authoring-methods}
 
@@ -52,7 +61,7 @@ If you use Edge Delivery services, you can choose to author your content as conv
 
 With document-based authoring, authors can use the tools they already know and still benefit from the speed and performance of AEM's Edge Delivery Services to publish their content. Document-based authoring requires no use of the AEM console.
 
-To learn more about document-based authoring, see [Authoring and Publishing Content](https://www.aem.live/docs/aem-authoring).
+To learn more about document-based authoring, please see the document [Authoring and Publishing Content.](https://www.aem.live/docs/authoring)
 
 ## AEM Content Fragment Editor {#cf-editor}
 

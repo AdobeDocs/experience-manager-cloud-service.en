@@ -6,6 +6,15 @@ exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 solution: Experience Manager Sites
 feature: Integration
 role: Admin
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Exporting Experience Fragments to Adobe Target{#exporting-experience-fragments-to-adobe-target}
 

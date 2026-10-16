@@ -3,6 +3,12 @@ title: Multi Audio and Multi Captions in Dynamic Media with OpenAPI capabilities
 description: Learn how to add and manage multiple audio tracks and captions for video assets in Dynamic Media with OpenAPI capabilities within Adobe Experience Manager Assets.
 role: User
 badgeSaas: label="AEM Assets" type="Positive"
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 
 # Multi Audio and Multi Captions in Dynamic Media with OpenAPI capabilities Videos {#multi-audio-captions-dynamic-media-with-openapi-capabilities}
@@ -148,3 +154,22 @@ The selected file is downloaded to your local system.
 1. Click **OK**.
 
 Original audio extracted from video cannot be deleted.
+
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

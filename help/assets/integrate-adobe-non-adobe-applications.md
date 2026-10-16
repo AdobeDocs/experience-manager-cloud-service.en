@@ -5,6 +5,12 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Use Content Advisor to access AEM content in Adobe and non-Adobe applications{#content-advisor-aem-assets-adobe-non-Adobe-applications}
 
@@ -58,6 +64,10 @@ Content Advisor provides the following key features:
 Content Advisor uses an advanced search capability that understands the meaning and intent behind a user's query rather than relying on exact keyword matches. It uses Artificial Intelligence (AI) and machine learning to deliver more accurate and context-aware results.
 
 Unlike traditional keyword-based search, which looks for exact terms, AI Search interprets relationships between words, concepts, and user intent. This ensures that users find what they are looking for—even if their query is phrased differently, contains typos, or is in another language.
+
+>[!IMPORTANT]
+>
+>If you require searching for assets using natural language with prompts such as, `find me approved jpeg assets about coffee`, Adobe recommends to use Content Discovery Agent. For more information on how to access the agent, sample prompts, and so on, see [Content Discovery Agent](/help/ai-in-aem/agents/content-advisor/discovery.md#use-cases-prompts).
 
 ![AI Search for assets in Content Advisor](assets/content-advisor-ai-search.png)
 
@@ -199,7 +209,7 @@ The following table illustrates the Content Advisor feature support across Adobe
 | Adobe Workfront Planning                     |  &#10003;                                            | &#10003;                                                         | &minus;                                                      |  &#10003;                                        |
 | [AEM Assets View](/help/assets/assets-view-introduction.md)                     |  &#10003;                                            | &minus;                                                         | &minus;                                                      | &minus;                                        |
 | [AEM Content Hub](/help/assets/product-overview.md)                     |  &#10003;                                            | &#10003;                                                         | &minus;                                                      |  &minus;                                        |
-| [Adobe Journey Optimizer (AJO) for B2C](http://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home)                     |  &#10003;                                            | &#10003;                                                         | &#10003;                                                      |  &#10003;                                        |
+| [Adobe Journey Optimizer (AJO) for B2C](http://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home)                     |  &#10003;                                            | &minus;                                                         | &#10003;                                                      |  &#10003;                                        |
 
 ## Content Advisor feature support across non-Adobe applications {#content-advisor-feature-support-non-adobe-applications}
 
@@ -209,9 +219,27 @@ This allows you to discover, evaluate, and use approved assets from AEM Assets d
 
 For more information about the integrations, properties, and customizations, refer to the following articles:
 
-* [Content Advisor integration examples](https://github.com/adobe/aem-assets-selectors-mfe-examples/tree/consolidate-docs-to-experience-league/examples)
+* [Content Advisor integration examples](https://github.com/adobe/aem-assets-selectors-mfe-examples/tree/main)
 
 * [Content Advisor properties](/help/assets/content-advisor-properties.md)
 
 * [Content Advisor customizations](/help/assets/content-advisor-customization.md)
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 

@@ -5,6 +5,20 @@ feature: Edge Delivery Services
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: f397e059-f1b3-4afa-bd38-8f5fc591bb22
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Troubleshooting 403 Forbidden Errors in Edge Delivery Services Form Submission {#troubleshooting-403-forbidden-edge-delivery}
 
@@ -53,6 +67,12 @@ A 403 Forbidden error in Edge Delivery Services form submission can have multipl
 **Solution:**
 Configure CORS settings in AEM to allow requests from your specific Edge Delivery site domains:
 
+>[!IMPORTANT]
+>
+>This step modifies your dispatcher vhost configuration. On AEM as a Cloud Service, the shipped default.vhost file is immutable and enforced by checksum during Cloud Manager pipeline validation; direct edits will fail to deploy. Create a customer-owned copy under available_vhosts/ first, and repoint the enabled_vhosts/ symlink at it, before applying the CORS settings below.
+>
+>Reference: https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/dispatcher/disp-overview#file-structure
+
 ```apache
 # Developer Localhost
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http://localhost(:\d+)?$)#" CORSTrusted=true
@@ -61,7 +81,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc--adobe\.aem\.live$)#" CORSTrusted=true
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc1--adobe\.aem\.live$)#" CORSTrusted=true
 
-# Legacy Franklin domains (if still in use)
+# Legacy Franklin domains (deprecated - included for backward compatibility only)
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.page$)#" CORSTrusted=true  
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
 ```

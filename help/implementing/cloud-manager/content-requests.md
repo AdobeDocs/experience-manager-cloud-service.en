@@ -5,6 +5,20 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
+subfeature_v2:
+  - id: d9eb3b3e-9447-4ed4-bf4a-96c7b245cb27
+    internal-label: Cloud Manager APIs
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Understand Cloud Service content requests
 
@@ -93,7 +107,7 @@ See also [License dashboard](/help/implementing/cloud-manager/license-dashboard.
 | URL for customers to monitor their Cloud Service program | Excluded | Adobe recommends that you use the URL to monitor the availability or health check externally.<br><br>`/system/probes/health`<br><br>For monitoring Edge Delivery sites, Adobe recommends using `HEAD` requests instead of `GET` requests against any page. The `/system/probes/health` path does not exist in Edge Delivery. |
 | AEM as a Cloud Service Pod Warm-up Service | Excluded | Agent: skyline-service-warmup/1.*|
 | Well-known search engines, social networks, and HTTP libraries (tagged by Fastly) | Excluded | Well-known services visiting the site regularly to refresh their search index or service:<br><br>Examples:<br>&bull; AddSearchBot<br>&bull; AhrefsBot<br>&bull; Applebot<br>&bull; Ask Jeeves Corporate Spider<br>&bull; Bingbot<br>&bull; BingPreview<br>&bull; BLEXBot<br>&bull; BuiltWith<br>&bull; Bytespider<br>&bull; CrawlerKengo<br>&bull; Facebookexternalhit<br>&bull; Google AdsBot<br>&bull; Google AdsBot Mobile<br>&bull; Googlebot<br>&bull; Googlebot Mobile<br>&bull; lmspider<br>&bull; LucidWorks<br>&bull; `MJ12bot`<br>&bull; Pinterest<br>&bull; SemrushBot<br>&bull; SiteImprove<br>&bull; StashBot<br>&bull; StatusCake<br>&bull; YandexBot<br>&bull; ContentKing<br>&bull; Claudebot |
-| Well-known AI/LLM crawlers (tagged by Fastly) | Excluded | Requests from recognized AI/LLM crawlers that are identified as well-known bots (for example, by `User-Agent` or other bot classification signals). These requests are not billable.<br><br>Examples of such excluded bots include: ChatGPT, Gmail Image Proxy, Baidu Spider, Outbrain, Yahoo! Mail Proxy, aiHitBot, Mail.Ru Bot, DomainStatsBot, Rainmeter, MetaInspector, and Yahoo Gemini.<br><br>If an AI agent is not identified as a well-known bot (for example, it uses a generic browser `User-Agent`), its requests may be counted as billable content requests. |
+| Well-known AI/LLM crawlers (tagged by Fastly) | Excluded | Requests from recognized AI/LLM crawlers that are identified as well-known bots (for example, by `User-Agent` or other bot classification signals). These requests are not billable.<br><br>Examples of such excluded bots include: ChatGPT, Gmail Image Proxy, Baidu Spider, Outbrain, Yahoo! Mail Proxy, aiHitBot, Mail.Ru Bot, DomainStatsBot, Rainmeter, MetaInspector, Yahoo Gemini, Perplexity, Gemini Deep Research, and Sogou.<br><br>If an AI agent is not identified as a well-known bot (for example, it uses a generic browser `User-Agent`), its requests may be counted as billable content requests. |
 | Exclude Commerce Integration Framework calls | Excluded | Requests made to AEM that gets forwarded to the Commerce Integration Framework&mdash;the URL starts with `/api/graphql`&mdash;to avoid double counting, they are not billable for Cloud Service.|
 | Client Libraries (/etc.clientlibs/*) — Excluded | Excluded | Requests under /etc.clientlibs/* are platform-level client library assets and runtime configuration files used by AEM. These requests do not deliver customer-authored content or business data and therefore do not count as Content Requests.|
 | Exclude `favicon.ico` | Excluded | Although the returned content should not be HTML or JSON, certain scenarios like SAML authentication flows have been observed to return favicons as HTML. As a result, favicons are explicitly excluded from the count.|

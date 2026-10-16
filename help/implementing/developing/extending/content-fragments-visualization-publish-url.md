@@ -3,6 +3,14 @@ title: Visual Content Fragments - deliver with the Publish URL
 description: Use the Publish URL to deliver Visual Content Fragments.
 feature: Developing, Content Fragments
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Visual Content Fragments - Deliver with the Publish URL {#visual-content-fragments-deliver-with-the-publish-url}
@@ -336,8 +344,4 @@ Additional resources are available:
 
 * [AEM Content Fragments documentation](/help/sites-cloud/administering/content-fragments/overview.md)
 
-<!-- CQDOC-23650 - add link when docs are stable; not experimental -->
-
-<!--
-* [Content Fragment Visualization Templates APIs (experimental)](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/cvt/#)
--->
+* [Content Fragment Visualization Templates APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/cvt/)

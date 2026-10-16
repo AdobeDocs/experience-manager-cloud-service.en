@@ -4,6 +4,15 @@ description: Infrastructure and Service Monitoring in AEM as a Cloud Service
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
 feature: Operations
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Infrastructure and Service Monitoring in AEM as a Cloud Service {#monitoring-in-aem-as-a-cloud-service}
 
@@ -51,8 +60,13 @@ Additional checks are added to environments provisioned for Forms. Check definit
 
 Customers can use the [New Relic Application Performance Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html) suite that provides real-time performance data collected and charted for analysis and troubleshooting. By using the monitoring suite, customers can directly observe various metrics such as: JVM performance metrics, transaction time for Java&trade;, background external calls, and database calls.
 
+>[!NOTE]
+>
+>Adobe is introducing a new, OpenTelemetry-based observability integration for AEM as a Cloud Service, available today through a Beta program. See [OpenTelemetry (Beta)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/opentelemetry-apm-integration.html) for details.
+
 ## Additional Resources {#resources}
 
 * [New Relic Application Performance Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html)
+* [OpenTelemetry (Beta)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/opentelemetry-apm-integration.html)
 * [Logging for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html)
 * [Monitoring Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html)

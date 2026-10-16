@@ -6,6 +6,16 @@ feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 
 # AEM Forms as a Cloud Service Communication APIs {#communications-apis-overview}
@@ -208,8 +218,6 @@ Document utilities with synchronous APIs help you convert documents between PDF 
 
 #### Usage Rights APIs (Reader Extension)
 
-<span class="preview"> The Usage Rights (Reader Extension) capability is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
-  
 The Usage Rights capability enables your organization to easily share interactive PDF documents by extending the functionality of Adobe Reader with additional usage rights. The service works with Adobe Reader 7.0 or later and adds usage rights to a PDF document. This action activates features that are not usually available when a PDF document is opened using Adobe Reader, such as adding comments to a document, filling forms, and saving the document.
 
 When PDF documents have the appropriate usage rights added, recipients can do the following activities from within Adobe Reader:

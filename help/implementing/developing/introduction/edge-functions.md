@@ -4,14 +4,25 @@ description: Learn how to execute JavaScript at the CDN layer with AEM Edge Func
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # AEM Edge Functions {#aem-edge-functions}
 
->[!IMPORTANT]
+>[!NOTE]
 >
->AEM Edge Functions is a **public beta** feature so you can try it out in a self-serve way without contacting Adobe to enable. Adobe encourages you to email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) to describe your use case so Adobe can assure you it is supported, and provide any guidance. It is especially important to contact Adobe before deploying the feature for production traffic.
+>Feel free to email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) to describe your use case if you are unsure whether AEM Edge Functions is a good fit.
 >
->By using the AEM Edge Functions Beta, you acknowledge that it is still in development and that you should not rely on the correct functioning of the technology or availability of data. This feature is provided as-is, may change without notice, and is not covered by production. 
 
 AEM Edge Functions lets you execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences without a round trip to your origin.
 
@@ -25,6 +36,8 @@ Common use cases include:
 AEM Edge Functions is compatible with both Edge Delivery Services and AEM as a Cloud Service Java-stack, for AEM Sites customers.
 
 Follow [this tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview) for a concrete walk-through for both Edge Delivery Services and AEM as a Cloud Service Java-stack variations.
+
+Also see [this repository](https://github.com/adobe/aem-edge-functions-examples) of code examples, including stitching content at the CDN, and properly fetching content from the AEM publish tier origin.
 
 ## Key Benefits {#key-benefits}
 
@@ -236,7 +249,7 @@ Because the CDN and the Edge Function's internal fetch cache operate independent
 
 For the detailed technical guidance on configuring caching behavior, controlling cache lifetimes, using surrogate keys, and purging cached content, see [Caching in AEM Edge Functions](/help/implementing/developing/introduction/edge-functions-caching.md).
 
-## Limitations {#limitations}
+## Considerations {#considerations}
 
 - Each Edge Function invocation runs inside a sandbox with resource limits enforced by the underlying compute platform.
 
@@ -246,10 +259,12 @@ For the detailed technical guidance on configuring caching behavior, controlling
 
 - Important information about edge function execution:
   - An execution is terminated after 120s of wall time
-  - Executions will be terminated at 1s of computation (not wall time)
+  - Executions may be terminated at 1s of computation (not wall time)
   - The average edge function execution time must be under 100ms.
 
-- See limitations related to [Edge Function Config Variables](#function-configuration), [Edge Function Secret Variables](#function-secrets), and [Edge Function KV Stores](#function-kv-store).
+- See considerations related to [Edge Function Config Variables](#function-configuration), [Edge Function Secret Variables](#function-secrets), and [Edge Function KV Stores](#function-kv-store).
+
+- Become familiar with usage limits, which are described in the [AEM Cloud Service Product Description article](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html). For example, you are entitled to up to 5 AEM Edge Function executions per licensed content request.
 
 ### Maximum Outbound Fetch Calls per Invocation {#max-fetch-calls}
 
@@ -412,18 +427,26 @@ data:
       index: "AEMaaCS"
 ```
 
-Use the logger in your function code to write structured log entries:
+Use the logger in your function code to write structured log entries. Splunk's HTTP Event Collector (HEC) requires each entry to be wrapped in a JSON envelope with an `event` field, so send `{ event: <record> }` rather than the bare record:
 
 ```js
 import { Logger } from "fastly:logger";
 
 const logger = new Logger("customerSplunk");
 logger.log(JSON.stringify({
-  method: event.request.method,
-  url: event.request.url
+  event: {
+    method: event.request.method,
+    url: event.request.url
+  },
+  sourcetype: "aem-edge-function" // optional: lets you filter Edge Function logs in Splunk
 }));
 ```
- 
+
+>[!IMPORTANT]
+>
+>On AEM Edge Functions, whatever you pass to `Logger.log()` is sent to the destination verbatim. Splunk's HEC endpoint rejects any payload that is not wrapped in an `event` field (returning an HTTP 400 error), so a bare `JSON.stringify(record)` is silently dropped even though the deployment reports success. This wrapping is specific to Splunk; a generic HTTPS destination accepts any payload shape.
+>
+
 >[!NOTE]
 >
 >CDN logs — which include AEM Edge Function log entries — can be downloaded from Cloud Manager for Java-stack environments, but not for Edge Delivery sites.

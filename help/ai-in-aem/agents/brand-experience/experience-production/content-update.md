@@ -4,6 +4,26 @@ description: Learn what the Brand Experience Agent's content update job is and w
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: e2d1dae8-38de-4357-bb14-ad35acb71aee
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+  - id: f1710108-e0d1-47e5-9952-1888729a03da
+    internal-label: Agentic AI
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Content Update Job {#content-update}
@@ -98,54 +118,6 @@ For more abstract prompts such as:
 * `on <your-publish-env-URL> change “Take our Coffee Quiz” button to a more engaging version`
 
 During generation the agent will utilize the brand guidelines to ensure that the output is on-brand.
-
-## Jira {#jira}
-
-Using the content update job with Jira allows you to create a ticket with instructions that automate your edits.
-
-### Create a Ticket {#create-a-ticket}
-
-Create a Jira ticket (of any type). There are two essential details needed in the **Description** field of your ticket:
-
-1. The public facing URL of the page you need to edit.
-
-1. The changes needed. 
-
-   The job supports the following range of formats to describe your changes:
-
-   * Natural Language in the ticket description
-     * for example "Change the headline from X to Y"
-   * Annotated PDF attached
-     * for example, create a PDF of your page and add annotations detailing what you want changed
-   * Comments in attached PDF
-     * for example, create a PDF of your page and add comments detailing what you want changed
-   * Annotated screenshot attached
-     * for example, take a screenshot of part of your page and add annotations detailing what you want changed
-   * Microsoft Word file attached, containing natural language changes
-
-### Invoke the Job from Your Ticket {#invoke-the-job-from-your-ticket}
-
-To use the job, add a comment to your ticket. In the comment mention the job with the `@` symbol, together with the instructions.
-
-For example:
-
-* `@aemagent@adobe.com process this ticket`
-
-### How the Job Interacts {#how-the-agent-interacts}
-
-After you issue a command to the job, it responds with comments in the Jira. The comments detail the job's progress, and actions taken.
-
-In the case of a `process` command to trigger updates, the responses might follow the sequence:
-
-* The initial comment confirms that the job has started.
-
-* Once the task is completed, the job responds with another comment containing details of the actions taken. 
-  * The content updates made by the job are non-destructive - this means that they are made to a preview instance. 
-  * The comment contains links to the updates, so that you can review and publish as required, or assign the Jira to whoever will be responsible.
-
-* The following image shows an example Jira that triggers the `process`command for the content update job:
-
-  ![Example Jira using the content update job of the Brand Experience Agent](assets/content-update-jira-example.png)
 
 ## Further refinement in authoring {#further-refinement-in-authoring}
 

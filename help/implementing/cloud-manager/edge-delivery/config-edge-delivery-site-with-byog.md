@@ -4,6 +4,20 @@ description: Learn how to link an Edge Delivery site to a private or enterprise 
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 1dbaef34-efa3-4287-b7b1-f60db938146d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
+subfeature_v2:
+  - id: d9eb3b3e-9447-4ed4-bf4a-96c7b245cb27
+    internal-label: Cloud Manager APIs
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Configure an Edge Delivery site to use an external Git repository
 
@@ -36,3 +50,26 @@ To pull code from any private Git repository already onboarded in Cloud Manager,
 1. Pick the branch to sync, and click **Sync**.
 
 Each commit on any branch now triggers an automatic sync. Use **Sync code** again whenever a full manual sync is required.
+
+<!-- 
+REMOVED AS PER CQDOC-23912 ON AUGUST 19, 2026
+## Authenticate git clone requests {#authenticate-git-clone-requests}
+
+You can clone your [!DNL Bring Your Own Git] repository from Cloud Manager using either an IMS token or the byogit secret that Cloud Manager generates when you configure the site. Both credentials authenticate against the clone endpoint, so you can use the secret that helix-admin already stores for [!DNL Edge Delivery Services] code sync.
+
+The clone endpoint accepts the credential in the `Authorization` header. Cloud Manager validates the byogit secret against the value stored for that repository. Requests that include neither a valid IMS token nor a valid byogit secret return a `401` response.
+
+>[!NOTE]
+>
+>Existing IMS-authenticated clone workflows are unaffected. The byogit secret is an additional option, not a replacement.
+
+**To clone the repository with the byogit secret:**
+
+1. Copy the secret that Cloud Manager returns when you configure the site.
+1. Run your clone command, and pass the secret in the `Authorization` header.
+
+   `git -c http.extraHeader="Authorization: <byogit-secret>"` clone `https://cm-repo.adobe.io/api/program/<program-id>/repository/<repository-id>.git`
+
+    Replace `<byogit-secret>` with the secret from Cloud Manager, and replace `<program-id>` and `<repository-id>` with the values from your program.
+-->
+

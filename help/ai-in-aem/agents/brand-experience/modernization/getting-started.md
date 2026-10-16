@@ -4,6 +4,26 @@ description: Learn the first steps to quickly become productive with the Experie
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+  - id: f1710108-e0d1-47e5-9952-1888729a03da
+    internal-label: Agentic AI
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Getting Started with the Experience Modernization Agent {#getting-started}
@@ -27,6 +47,16 @@ Learn the first steps to get started using the Experience Modernization Agent an
 1. Ensure that the [AEM Code Sync GitHub app](https://github.com/apps/aem-code-sync) is installed in the repository.
    * This allows Edge Delivery Services to sync your code.
    * If your repo is based the on the tutorial, this step is already complete.
+
+>[!NOTE]
+>
+>**Using a different Git host?** Edge Delivery Services also supports GitHub Enterprise (self-hosted), Adobe-hosted repositories, GitLab, Bitbucket, and Azure DevOps. Onboard the repository in Adobe Cloud Manager, then configure your Edge Delivery site to use it. See [Bring Your Own Git.](https://www.aem.live/developer/byo-git)
+
+>[!IMPORTANT]
+>
+>The Experience Modernization agent pushes changes and opens pull requests in your repository. The access token you create in Cloud Manager must grant write access to repository code, alongside the permissions listed at [step 8 of Add external repositories.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/external-repositories)
+>
+>**Already onboarded a token without write access?** You do not need to re-onboard the repository. In Cloud Manager, go to **Repositories > Manage Access Tokens**, edit the token, and paste a value that includes write access. Cloud Manager revalidates the associated repositories automatically. See [Manage access tokens.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/manage-access-tokens#edit-access-tokens)
 
 ## Open the Experience Modernization Console {#open-console}
 

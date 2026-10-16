@@ -1,10 +1,24 @@
 ---
-title: Introduction to Sandbox Programs 
+title: Introduction to Sandbox Programs
 description: Learn what sandbox programs are and how they differ from production programs.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
+subfeature_v2:
+  - id: d9eb3b3e-9447-4ed4-bf4a-96c7b245cb27
+    internal-label: Cloud Manager APIs
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Introduction to sandbox programs {#sandbox-programs}
@@ -45,4 +59,4 @@ Because they are not intended for live traffic, sandbox programs have certain li
 | No advanced networking | [Advanced networking features](/help/security/configuring-advanced-networking.md) (for example, self-serve provisioning of VPN, non-standard ports, dedicated egress IP addresses, and so on) are not available in sandbox programs. |
 | No automatic AEM updates | AEM updates are not automatically pushed to sandbox programs, but can be applied manually to the environments in your sandbox program.<br>&bull; A manual update can only be run when the targeted environment has a properly configured pipeline.<br>&bull; A manual update to either a production or staging environment automatically updates the other. The Production+Stage environment set must be on the same AEM release.<br>See [AEM version updates](/help/implementing/deploying/aem-version-updates.md) for more details.<br>See [Updating Environment](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) to learn how to update an environment. |
 | No technical support | Because a sandbox program is typically created to serve the purposes of training, running demos, enablement, or POCs (proof of concepts), technical support is not available for issues experienced in a sandbox program.<br>If you experience issues creating and managing your sandbox programs, these issues are within the scope of technical support. |
-| Hibernation and deletion | Environments in a sandbox program are automatically hibernated after eight hours of inactivity. Sandbox environments are deleted after six continuous months of hibernation.<br>See [Hibernating and De-hibernating Sandbox Environments](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) for more details about how to de-hibernate environments and automatic sandbox deletion. |
+| Hibernation and deletion | Environments in a sandbox program are automatically hibernated after eight hours of inactivity. Sandbox environments are deleted after three continuous months of hibernation.<br>See [Hibernating and De-hibernating Sandbox Environments](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) for more details about how to de-hibernate environments and automatic sandbox deletion. |

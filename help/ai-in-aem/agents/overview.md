@@ -4,6 +4,26 @@ description: Learn about the Agents available in AEM to accelerate your content 
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+  - id: f1710108-e0d1-47e5-9952-1888729a03da
+    internal-label: Agentic AI
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Overview of Agents in AEM {#overview-of-agents-in-aem}
@@ -27,6 +47,16 @@ You have three options to access agents.
 
 As new skills become available under early release, we will provide additional opportunities to participate and share feedback. We encourage you to watch [this page](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) for updates.
 
+<!-- CQDOC-23874 - needs adjustment? -->
+
+### AEM Agentic Capability use cases in Coworker {#aem-use-cases-in-coworker}
+
+From agents to skills, for more information see:
+
+* [Adobe Experience Manager skills in Coworker](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/use-cases/overview)
+
+* [Agentic Capabilities in AEM](/help/ai-in-aem/agentic-capabilities/overview.md)
+
 ## Brand Experience Agent {#brand-experience-agent}
 
 The [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) automates high effort and high-volume tasks through the following agents, each specializing in a specific set of jobs.
@@ -48,7 +78,7 @@ The agent interprets user intent and performs complex editing tasks automaticall
 
 ## Governance Agent {#governance-agent}
 
-The [Governance Agent](/help/ai-in-aem/agents/governance/overview.md) safeguards brand integrity and compliance across AEM. By enforcing security, regulatory, and brand policies the agent performs the necessary jobs to ensure that every interaction and activation adheres to established standards.
+The [Governance Agent](/help/ai-in-aem/agentic-capabilities/brand-governance/overview.md) safeguards brand integrity and compliance across AEM. By enforcing security, regulatory, and brand policies the agent performs the necessary jobs to ensure that every interaction and activation adheres to established standards.
 
 ## Limitations {#limitations}
 

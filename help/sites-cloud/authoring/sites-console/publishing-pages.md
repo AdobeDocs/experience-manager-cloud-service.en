@@ -6,6 +6,15 @@ exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 
 # Publishing Pages from the Sites Console {#publishing-pages}
@@ -167,7 +176,13 @@ To publish or unpublish a page using Manage Publication:
    * **Include only modified pages**
    * **Include only already published pages**
 
-   Activate the required options and confirm with **OK** to add the children pages to the list of pages to be published or unpublished based on the selection options. Click **Cancel** to cancel the selection and return to the wizard.
+   Activate the required options and confirm with **OK** to add the children pages to the list of pages to be published or unpublished based on the selection options. 
+   
+   >[!NOTE]
+   >
+   >Child pages selected with these options are not listed individually in the UI.
+
+   Click **Cancel** to cancel the selection and return to the wizard.
 
    ![Manage Publication including children](/help/sites-cloud/authoring/assets/publishing-include-children.png)
 
@@ -234,7 +249,13 @@ You can use the [Manage Publication](#manage-publication) option on the sites co
    * unselect **Include only already published pages**
    * configure **Include only modified pages** as required
 
-   These options are selected by default, so you must remember to configure them. Confirm the selection with **OK** to add the content to the publication/un-publication.
+   These options are selected by default, so you must remember to configure them. 
+
+   >[!NOTE]
+   >
+   >Child pages selected with these options are not listed individually in the UI.
+
+   Confirm the selection with **OK** to add the content to the publication/un-publication.
 
    ![Including children for tree publication](/help/sites-cloud/authoring/assets/publishing-include-children-tree.png)
 

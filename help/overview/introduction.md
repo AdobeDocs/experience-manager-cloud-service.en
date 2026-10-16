@@ -4,6 +4,18 @@ description: Learn how Experience Manager as a Cloud Service works and what the 
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
 feature: Release Information
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # An Introduction to Adobe Experience Manager as a Cloud Service {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
 
@@ -78,3 +90,18 @@ AEM achieves these goals by adopting the main characteristics of modern cloud se
 >Once you have an overview of AEM as a Cloud Service, you can onboard quickly by reviewing the [Onboarding Journey](/help/journey-onboarding/overview.md).
 >
 >Already onboarded or ready to dive into testing AEM's features? Install the [AEM Reference Demos Add-On](/help/journey-sites/demos-add-on/overview.md) to explore AEM's powerful features using rich examples.
+
+## AEM Supported Languages {#supported-platforms}
+
+Adobe Experieince Manager as a Cloud Service is available in the following languages:
+
+* English
+* French
+* German
+* Japanese
+* Italian
+* Spanish
+* Brazilian Portuguese
+* Simplified Chinese
+* Traditional Chinese
+* Korean

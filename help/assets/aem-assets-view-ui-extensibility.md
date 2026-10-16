@@ -1,10 +1,24 @@
 ---
-title: Enable UI extensibility in [!DNL AEM Assets View] 
+title: Enable UI extensibility in [!DNL AEM Assets View]
 description: Learn about the UI Extensibility capability of [!DNL AEM Assets View]. [!DNL AEM Assets View] UI enables adding custom UI components to meet specific business needs.
 feature: App Builder
 role: User, Developer
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: c5a6b061-0358-43c2-bd48-d72df35b6a8d
+    internal-label: App Builder for AEM
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Enable UI extensibility in [!DNL AEM Assets View] {#AEM-Assets-View-UI-Extensibility}
 
@@ -76,3 +90,23 @@ For more information, including API references and code examples, see [Browse Vi
 ## Open custom dialogs in Assets view {#open-custom-dialogs-assets-view}
 
 Assets view also provides the ability to open custom dialogs with text of your choice. You can also add links to the text. For more information, see [Modal API](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/#modal-api).
+
+
+**See also**
+
+* [Translate Assets](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in Assets view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
