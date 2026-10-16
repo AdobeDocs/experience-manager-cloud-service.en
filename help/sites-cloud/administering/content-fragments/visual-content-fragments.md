@@ -61,7 +61,11 @@ To upload your new HTML template:
 
 ## Preview and Publish your fragment with a Template {#preview-and-publish-your-fragment-with-a-template}
 
-To preview your visual Content Fragment using a template:
+To preview, and publish, your visual Content Fragment using a template:
+
+>[!IMPORTANT]
+>
+>Your Content Fragment must have been published.
 
 >[!NOTE]
 >
@@ -70,7 +74,7 @@ To preview your visual Content Fragment using a template:
 1. In the Content Fragment console navigate to the location of your fragment.
 
 1. Either:
-   * select your fragment in the console
+   * select your (published) fragment in the console
    * open your fragment in the editor
 
 1. Select **Preview** from the top toolbar of:
@@ -92,25 +96,23 @@ In both cases a new modal window will open.
    * the Preview URL with **Publish VCF to preview**
    * the Publish URL with **Publish VCF to delivery**
 
-1. If the Content Fragment is published you can also view and copy its **Preview URL** and **Publish URL**.
+1. You can also view and copy its **Preview URL** and **Publish URL**.
 
-For example, preview with the **Generic Template**:
+For example:
 
-![Preview Fragment with Generic HTML Template](/help/sites-cloud/administering/content-fragments/assets/cf-visual-html-template-referenced-fragment.png)
+![Preview Fragment with HTML Template](/help/sites-cloud/administering/content-fragments/assets/cf-visual-html-template-preview.png)
 
 ## Edit your Template {#edit-your-template}
 
-For Content Fragment Models that have been published you can edit your template from the console:
+For Content Fragment Models you can edit your template from the console:
 
 1. Navigate to the Content Fragment Models section of the Content Fragment console.
 1. Select your model.
-
-   >[!NOTE]
-   >
-   >Your model must be already **Published**.
-
 1. Use the information icon to open the right panel.
-1. From the HTML Templates section of the right panel, use the **Edit** option for your template.
+1. From the HTML Templates section of the right panel, use the **Edit** option for your template:
+
+   ![Edit HTML Template](/help/sites-cloud/administering/content-fragments/assets/cf-visual-html-template-edit.png)
+
 1. In the dialog provided, make your updates.
 1. Select **Next**.
 1. AEM presents a dialog and warns you that you are updating an existing template, and that changes will overwrite the current version.
