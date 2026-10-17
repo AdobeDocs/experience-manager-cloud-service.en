@@ -202,14 +202,21 @@ To configure a custom link for your organization's brand guidelines, see [Custom
 
 ## Is there any plan on migrating existing Brand Portal customers to AEM [!DNL Assets] [!DNL Content Hub]? {#migration-brand-portal}
 
-Yes. Adobe provides **migration support** for existing **Brand Portal** customers moving to **Adobe Experience Manager (AEM) [!DNL Assets] [!DNL Content Hub]**. This migration path is officially supported, and existing Brand Portal customers can initiate it directly through Adobe's support channels.
+Yes. Adobe manages the migration from Brand Portal to AEM [!DNL Assets] [!DNL Content Hub] for existing Brand Portal customers. The migration works as follows:
 
-To begin the migration from Brand Portal to AEM [!DNL Assets] [!DNL Content Hub]:
+1. Adobe copies your **assets and collections** from Brand Portal to [!DNL Content Hub].
+1. During the migration, **both Brand Portal and [!DNL Content Hub] remain available**, so you can continue using Brand Portal while you validate [!DNL Content Hub].
+1. After you complete validation and are ready to transition users to [!DNL Content Hub], publish an announcement on Brand Portal that directs users to the new [!DNL Content Hub] portal.
+1. Provide Adobe with approval to decommission your Brand Portal instance.
+1. Adobe decommissions your Brand Portal instance within **2 business days** of receiving your approval.
 
-1. **Create an Adobe support ticket** requesting migration from Brand Portal to AEM [!DNL Assets] [!DNL Content Hub].
-2. **Work with Adobe support** to plan and execute the transition of your assets and configuration.
+The migration involves **no downtime**:
 
-Creating the support ticket initiates the migration process, allowing Adobe to coordinate the transfer of brand assets and related content into AEM [!DNL Assets] [!DNL Content Hub]. Because [!DNL Content Hub] is designed as the successor experience for distributing approved brand assets, this supported migration path ensures that existing Brand Portal customers can transition without losing access to their managed content.
+* Brand Portal remains active while assets and collections are replicated to [!DNL Content Hub].
+* You can validate your migrated content in [!DNL Content Hub] without interrupting your existing Brand Portal users.
+* Brand Portal is decommissioned only after you confirm that you are ready to complete the cutover.
+
+To discuss the migration, contact the [!DNL Content Hub] team at [aemcontenthub@adobe.com](mailto:aemcontenthub@adobe.com).
 
 ## Why cannot I see the Product Settings/Configuration option in AEM [!DNL Assets] [!DNL Content Hub]? {#ui-configuration-option-missing}
 
