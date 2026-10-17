@@ -192,7 +192,6 @@ There are a few configurations of how users are assigned to [!DNL Content Hub] &
    >
    >The user assigned to Express and [!DNL Assets] product profiles in two Admin Consoles needs to have the **same email address** and use a business **Enterprise or School** account, and not the **Personal** one. This alignment is required because the integration matches the user across both consoles by identity. The ideal configuration is to have both Admin Consoles set up as **Federated ID** with a trust relationship set up between them, so that the user has a seamless single sign-on experience. Some of the Express plans (for example, Express Teams) does not support Federated ID / single sign-on.
 
-
 Beyond the right product entitlements, [!DNL Adobe Express] integration in [!DNL Content Hub] requires that the assigned user has at least **[!UICONTROL Can Edit]** permissions on the [!DNL Assets] author environment powering [!DNL Content Hub], on at least the **[#UICONTROL /content/dam/hydrated-assets/]** folder hierarchy. This folder is where [!DNL Content Hub] users save content that they created using Express, so **[!UICONTROL Can Edit]** access on it is essential for the remix workflow to complete successfully. See [Permissions Management](/help/security/touch-ui-principal-view.md) in the Admin view (Touch UI) or a simplified [permissions management in [!DNL Assets] view](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## Can I setup AEM [!DNL Assets] [!DNL Content Hub] so that my organization's brand guidelines display as a link on the home page? {#content-hub-setup-brand-guidelines}
@@ -257,37 +256,37 @@ Both [!DNL Content Hub] and Brand Portal share a common baseline of distribution
 
 The table below outlines the key differences between AEM [!DNL Assets] [!DNL Content Hub] and Brand Portal:
 
-| Area | Capability | [!DNL Content Hub] | Brand Portal |
-| --- | --- | --- | --- |
-| Configuring distribution experience | Configure metadata for filters, asset details, and add assets page | ✓ | &minus; |
-|  | Configure external links from portal | ✓ | &minus; |
-|  | Configure banner messaging | ✓ | ✓ |
-|  | Configure banner image for branding | ✓ | ✓ |
-|  | Configure primary and secondary colors for UI as per branding requirements | ✓ | &minus; |
-| Sharing assets from the DAM | Sharing original approved assets from DAM | ✓ | ✓ |
-|  | Approved asset changes synced automatically | ✓ | &minus; |
-| Search and filters | Dynamic filters (options show dynamically based on assets displayed) | ✓ | &minus; |
-|  | Search history | ✓ | &minus; |
-| Asset upload | Local drive | ✓ | ✓ |
-|  | Add configurable metadata while uploading assets | ✓ | &minus; |
-| Download and renditions | Download original asset | ✓ | ✓ |
-|  | Share and download static renditions from DAM | ✓ | ✓ |
-|  | Download dynamic renditions (preset & smart crops) | ✓ | ✓ |
-|  | Ability to restrict view and download of expired assets | ✓ | &minus; |
-| Link sharing and Collections | Link share for signed-in users | ✓ | ✓ |
-|  | Public collections | ✓ | ✓ |
-|  | Search within collections | ✓ | &minus; |
-|  | Anonymous link share | ✓ | ✓ |
-|  | Private collections | ✓ | ✓ |
-| Permissions | ACL-based permissions | &minus; | ✓ |
-|  | Attribute-based access control | ✓ | &minus; |
-| Express integration | Edit [!DNL Content Hub] [!DNL Assets] in [!DNL Adobe Express] and save to DAM | ✓ | &minus; |
-| Dashboards and reports | Insights dashboard | ✓ | &minus; |
-| UI Extensibility | Custom extension points on asset details page | Limited availability | &minus; |
-| Innovations coming soon | Favourite collections by user | ✓ | &minus; |
-|  | Pinned collections by Admin | ✓ | &minus; |
-|  | Semantic search | ✓ | &minus; |
-|  | Localised search and metadata display | ✓ | &minus; |
+| Area | Capability |[!DNL Content Hub]|Brand Portal|
+|---|---|----|----|
+| Configuring distribution experience | Configure metadata for filters, asset details, and add assets page |&#10003;|&minus;|
+|  | Configure external links from portal |&#10003;|&minus;|
+|  | Configure banner messaging |&#10003;|&#10003;|
+|  | Configure banner image for branding |&#10003;|&#10003;|
+|  | Configure primary and secondary colors for UI as per branding requirements |&#10003;|&minus;|
+|Sharing assets from the DAM  | Sharing original approved assets from DAM |&#10003;|&#10003;|
+|  | Approved asset changes synced automatically |&#10003;|&minus;|
+| Search and filters | Dynamic filters (options show dynamically based on assets displayed) |&#10003;|&minus;|
+|  | Search history |&#10003;|&minus;|
+| Asset upload | Local drive |&#10003;|&#10003;|
+|  | Add configurable metadata while uploading assets |&#10003;|&minus;|
+| Download and renditions | Download original asset |&#10003;|&#10003;|
+|  | Share and download static renditions from DAM |&#10003;|&#10003;|
+|  | Download dynamic renditions (preset & smart crops)  |&#10003;|&#10003;|
+|  | Ability to restrict view and download of expired assets  |&#10003;|&minus;|
+|  Link sharing and Collections| Link share for signed-in users |&#10003;|&#10003;|
+|  | Public collections |&#10003;|&#10003;|
+|  | Search within collections |&#10003;|&minus;|
+|  | Anonymous link share |&#10003;|&#10003;|
+|  | Private collections |&#10003;|&#10003;|
+|  Permissions| ACL-based permissions |&minus;|&#10003;|
+|  | Attribute-based access control |&#10003;|&minus;|
+|  Express integration| Edit [!DNL Content Hub] [!DNL Assets] in [!DNL Adobe Express] and save to DAM |&#10003;|&minus;|
+|  Dashboards and reports| Insights dashboard |&#10003;|&minus;|
+| UI Extensibility| Custom extension points on asset details page |Limited availability|&minus;|
+|  Innovations coming soon| Favourite collections by user |&#10003;|&minus;|
+|  | Pinned collections by Admin |&#10003;|&minus;|
+|  | Semantic search |&#10003;|&minus;|
+|  | Localised search and metadata display |&#10003;|&minus;|
 
 ## How can I select a repository to view assets only for the selected environment in AEM [!DNL Assets] [!DNL Content Hub]? {#select-repository-multiple-environments}
 
@@ -299,12 +298,11 @@ To view assets only for a selected environment in **Adobe Experience Manager (AE
 
 1. Select the repository from the **[!UICONTROL Repository]** drop-down menu and click **[!UICONTROL OK]** to confirm.
 
-   >[!NOTE]
-   >
-   >If assets from a specific environment, for example, \*\*STAGE\*\* are not appearing in [!DNL Content Hub] while assets from another environment, for example, \*\*PRODUCTION\*\* are, check the \*\*[!UICONTROL Select Repository]\*\* setting in your [!DNL Content Hub] profile. [!DNL Content Hub] connects to one specific delivery repository at a time, and the UI can remain pointed at a different environment's repository, for example, still \*\*PRODUCTION\*\* than the one currently being tested. As a result, the expected assets do not surface even though they exist. Switching the repository selection to the correct environment directly resolves this, and it does so without any change to asset approval or Attribute-Based Access Control (ABAC) configuration.
-
    [!DNL Content Hub] now displays assets for the selected environment, because the interface is pointed at that environment's delivery repository and reads its assets directly.
 
+   >[!NOTE]
+   >
+   >If assets from a specific environment, for example, **STAGE** are not appearing in [!DNL Content Hub] while assets from another environment, for example, **PRODUCTION** are, check the **[!UICONTROL Select Repository]** setting in your [!DNL Content Hub] profile. [!DNL Content Hub] connects to one specific delivery repository at a time, and the UI can remain pointed at a different environment's repository, for example, still **PRODUCTION** than the one currently being tested. As a result, the expected assets do not surface even though they exist. Switching the repository selection to the correct environment directly resolves this, and it does so without any change to asset approval or Attribute-Based Access Control (ABAC) configuration.
 
 ## How can AEM [!DNL Assets] [!DNL Content Hub] display the thumbnail preview for .ZIP file type? {#thumbnail-preview-zip-file}
 
