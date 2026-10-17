@@ -37,7 +37,7 @@ The variations of privileges on [!DNL Content Hub] include:
 
 >[!NOTE]
 >
->You can access and use [!DNL Content Hub] with up to **250 [!DNL Content Hub] Limited users** for **Assets Ultimate** and **50 [!DNL Content Hub] users** for **Assets Prime**. Contact your Adobe representative if you have additional questions.
+>You can access and use [!DNL Content Hub] with up to **250 [!DNL Content Hub] Limited users** for **Assets Ultimate** and **50 [!DNL Content Hub] users** for **Assets Prime**. If you need more [!DNL Content Hub] users than your license includes, contact your Adobe representative to enable additional users.
 
 The following table summarizes the available [!DNL Content Hub] user types, the privileges they have, and the product profiles that are required to get those privileges:
 
@@ -381,6 +381,8 @@ Adobe Experience Manager (AEM) Assets includes [!DNL Content Hub] Limited user e
 - **[Assets Prime](/help/assets/assets-prime.md)** — includes **50 [!DNL Content Hub] Limited users**.
 
 As a result, both Assets Ultimate and Assets as a Cloud Service provide five times the [!DNL Content Hub] Limited user capacity of Assets Prime, giving larger teams greater reach to distribute and consume approved assets through [!DNL Content Hub].
+
+If your organization needs more [!DNL Content Hub] users than your license tier includes, additional users can be enabled. Contact your Adobe representative.
 
 ### How many [!DNL Content Hub] credits are available with my AEM Assets license?
 
