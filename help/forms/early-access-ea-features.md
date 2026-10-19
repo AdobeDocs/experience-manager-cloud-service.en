@@ -206,6 +206,18 @@ Adaptive Forms can now pass every uploaded file attachment to a virus scanner or
 
 Ready to start? [Scan file attachments in Adaptive Forms with a custom validator](/help/forms/scan-file-attachments-custom-validator.md) covers the concepts and the interface reference, and [Tutorial: Scan file attachments with ClamAV](/help/forms/scan-file-attachments-clamav.md) walks through a complete, working example end to end.
 
+### Conversational Form Filling
+
+Conversational Form Filling lets customers complete your existing Adaptive Forms by chatting in an AI assistant, a chatbot on your website, or WhatsApp. Unlike the Conversational Forms component, which adds a chat-style form to an AEM Sites page, Conversational Form Filling is a service that brings your published forms to the channels where your customers already are.
+
+**Key capabilities:**
+
+* **Use the forms you already have**: Your form's rules, validations, and submit action apply during the conversation, so there is nothing to rebuild.
+* **Guided or natural-language answers**: Collect structured answers one group of fields at a time, or let customers answer in their own words and have AI extract the values.
+* **Personal data protection**: Personal details are masked before a customer's message reaches the AI model.
+
+Ready to start? [Conversational Form Filling for Adaptive Forms](/help/forms/conversational-form-filling.md) explains how it works, the supported channels, and the prerequisites. To request access, email your organization ID and program details to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address.
+
 <!--
 
 ### API Integration Tool for Dynamic Form Data
