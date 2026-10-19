@@ -275,10 +275,8 @@ See, [Brand Portal documentation](https://experienceleague.adobe.com/docs/experi
    <li>Step text</li>
 -->
 
-## Limitations of Brand Portal backup {#limitations-of-brand-portal-backup}
-
-* Brand Portal does not provide a backup or recovery capability for deleted collections. Once a collection is deleted, the deletion is permanent, and the collection cannot be restored. However, a new collection with similar assets can be created manually. 
-* In the event that one or more collections are deleted from Brand Portal, the backup retention period of activity logs is limited to three months only. Any requests related to deleted collections must be reported within three months.
+>[!NOTE]
+> Brand Portal does not provide a backup or recovery capability for deleted collections. Once a collection is deleted, the deletion is permanent, and the collection cannot be restored. However, a new collection with similar assets can be created manually.
 
 >[!IMPORTANT]
 >
