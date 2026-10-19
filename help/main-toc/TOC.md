@@ -767,6 +767,7 @@ user-guide-title: AEM as a Cloud Service
     + [Spin Sets](/help/assets/dynamic-media/spin-sets.md)
     + [Video in Dynamic Media](/help/assets/dynamic-media/video.md)
     + [New Video Viewer](/help/assets/dynamic-media/new-video-viewer.md)
+    + [Configure branded video viewer presets](/help/assets/dynamic-media/branded-video-viewer-presets.md)
     + [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md)
     + [Interactive Images](/help/assets/dynamic-media/interactive-images.md)
     + [Interactive Videos](/help/assets/dynamic-media/interactive-videos.md)
@@ -844,6 +845,7 @@ user-guide-title: AEM as a Cloud Service
     + [Upload or Import brand-approved assets to Content Hub](/help/assets/upload-brand-approved-assets.md)
     + [Configure Content Hub user interface](/help/assets/configure-content-hub-ui-options.md)
     + [Approve assets for Content Hub](/help/assets/approve-assets-content-hub.md)
+    + [Enable UI Extensibility in Content Hub](/help/assets/enable-ui-extensibility-in-content-hub.md)
     + [Search assets in Content Hub](/help/assets/search-assets-content-hub.md)
     + [Asset properties](/help/assets/asset-properties-content-hub.md)
     + [Attribute-based access control](/help/assets/attribute-based-access-control.md)
@@ -1203,9 +1205,9 @@ user-guide-title: AEM as a Cloud Service
     + Brand Experience {#brand-experience}
       + [Overview](/help/ai-in-aem/agentic-capabilities/brand-experience/overview.md)
       + Experience Production {#experience-production}
-        + [Content Update Job](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/content-update.md)
-        + [Content Create Job](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/content-create.md)
-        + [Figma to Visual Content Fragments Job](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/figma-to-visual-content-fragments.md)
+        + [Content Update](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/content-update.md)
+        + [Content Create](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/content-create.md)
+        + [Figma to Visual Content Fragments](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/figma-to-visual-content-fragments.md)
         + [Experience Production use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/use-cases.md)
         + [Forms use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/forms-use-cases.md)
       + Development {#development}
