@@ -598,6 +598,7 @@ To enable you to collaborate in-product and in-context, the **Comments** tab in 
 * Format your comments; basic formatting is available
 * Perform a text search through existing comments
 * Edit an existing comment
+* Copy the body text
 * Delete comments
 
 <!-- CQDOC-23473 - new screenshot? -->
