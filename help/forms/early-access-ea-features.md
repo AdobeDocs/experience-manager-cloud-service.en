@@ -208,7 +208,7 @@ Ready to start? [Scan file attachments in Adaptive Forms with a custom validator
 
 ### Agentic Form Filling
 
-Agentic Form Filling lets customers complete your existing Adaptive Forms by chatting in an AI assistant, a chatbot on your website, or WhatsApp. Unlike the Conversational Forms component, which adds a chat-style form to an AEM Sites page, Agentic Form Filling is a service that brings your published forms to the channels where your customers already are.
+Agentic Form Filling lets customers complete published Adaptive Forms through AI assistants, website chatbots, or WhatsApp. Unlike the Conversational Forms component embedded in an AEM Sites page, this service supports form filling across these channels.
 
 **Key capabilities:**
 
