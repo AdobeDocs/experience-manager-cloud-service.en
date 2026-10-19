@@ -1,6 +1,6 @@
 ---
-title: Conversational Form Filling for Adaptive Forms
-description: Learn about Conversational Form Filling, which lets customers complete AEM Adaptive Forms through AI assistants and agents, website chatbots, or WhatsApp.
+title: Agentic Form Filling for Adaptive Forms
+description: Learn about Agentic Form Filling, which lets customers complete AEM Adaptive Forms through AI assistants and agents, website chatbots, or WhatsApp.
 feature: Adaptive Forms
 role: Admin, Developer
 hide: true
@@ -14,23 +14,23 @@ role_v2:
     internal-label: Developer
 ---
 
-# Conversational Form Filling for Adaptive Forms
+# Agentic Form Filling for Adaptive Forms
 
 [!BADGE AEM Forms]{type=Positive tooltip="Applies to AEM Forms"}
 
-<span class="preview"> Conversational Form Filling is under the Early Access Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early access program and request access to the capability. </span>
+<span class="preview"> Agentic Form Filling is under the Early Access Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early access program and request access to the capability. </span>
 
-Conversational Form Filling lets your customers complete an Adaptive Form by chatting, instead of working through a traditional form layout. Customers answer questions in plain language, in an AI assistant, a chatbot on your website, or [!DNL WhatsApp], and an AI-powered form filling agent collects, validates, and submits their data for them.
+Agentic Form Filling lets your customers complete an Adaptive Form by chatting, instead of working through a traditional form layout. Customers answer questions in plain language, in an AI assistant, a chatbot on your website, or [!DNL WhatsApp], and an AI-powered form filling agent collects, validates, and submits their data for them.
 
-Long or complex forms are a common point of abandonment: customers lose track of what is being asked or why, and the submissions you receive are often incomplete. Conversational Form Filling keeps the form you already built as the source of truth. The same rules, validations, and [submit action](/help/forms/configure-submit-actions-core-components.md) apply, so a conversation produces the same complete, validated submission as the form itself.
+Long or complex forms are a common point of abandonment: customers lose track of what is being asked or why, and the submissions you receive are often incomplete. Agentic Form Filling keeps the form you already built as the source of truth. The same rules, validations, and [submit action](/help/forms/configure-submit-actions-core-components.md) apply, so a conversation produces the same complete, validated submission as the form itself.
 
 This article explains how a conversation works, where you can use it, and what to know about supported forms, data handling, and access.
 
 >[!NOTE]
 >
->Conversational Form Filling is different from the Conversational Forms component, which adds a chat-style form to an AEM Sites page. Conversational Form Filling brings your existing Adaptive Forms to AI assistants, chatbots, and messaging channels.
+>Agentic Form Filling is different from the Conversational Forms component, which adds a chat-style form to an AEM Sites page. Agentic Form Filling brings your existing Adaptive Forms to AI assistants, chatbots, and messaging channels.
 
-## How Conversational Form Filling works {#how-it-works}
+## How Agentic Form Filling works {#how-it-works}
 
 A conversation moves through four stages:
 
@@ -39,11 +39,11 @@ A conversation moves through four stages:
 
    In this example, one message fills three fields, and the next question offers its choices as buttons:
 
-   ![A chat in which one customer message fills the name, mobile number, and email fields, followed by a question that offers profession options and a Skip button](/help/forms/assets/conversational-form-filling-collect.png)
+   ![A chat in which one customer message fills the name, mobile number, and email fields, followed by a question that offers profession options and a Skip button](/help/forms/assets/agentic-form-filling-collect.png)
 
 1. **Confirm**: When all fields are collected, the service shows a summary. The customer confirms it, or changes any answer before submitting.
 
-   ![A conversation summary listing the customer's answers, with Confirm and Submit, Edit, and Cancel buttons](/help/forms/assets/conversational-form-filling-summary.png)
+   ![A conversation summary listing the customer's answers, with Confirm and Submit, Edit, and Cancel buttons](/help/forms/assets/agentic-form-filling-summary.png)
 
 1. **Submit**: The service sends the collected data to the form's configured submit action. Submission runs in the background, and the client checks its status to tell the customer when it's complete.
 
@@ -74,7 +74,7 @@ The same conversation service powers every channel, so a form behaves the same w
 
 ### AI assistants (MCP) {#mcp}
 
-Conversational Form Filling provides a [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server for your organization. AI assistants and agents that support MCP connect to it and fill forms on behalf of the customer they're chatting with.
+Agentic Form Filling provides a [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server for your organization. AI assistants and agents that support MCP connect to it and fill forms on behalf of the customer they're chatting with.
 
 Each form you enable appears to the assistant as its own tool for starting a conversation, alongside shared tools for answering questions, editing an answer, and confirming the submission. The assistant chooses the right form from the tool list, and relays questions and answers between the customer and the service.
 
@@ -92,7 +92,7 @@ At any point in the chat, customers can type cancel to stop, restart to start ov
 
 ## Supported forms and limitations {#limitations}
 
-Conversational Form Filling works with:
+Agentic Form Filling works with:
 
 * Adaptive Forms based on Core Components.
 * Adaptive Forms built with [!DNL Edge Delivery Services].
@@ -115,7 +115,7 @@ Keep these limitations in mind:
 
 ## Availability and prerequisites {#prerequisites}
 
-Conversational Form Filling is available through the [!DNL AEM Forms] Early Access Program. To request access, email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official email address with your organization ID and program details.
+Agentic Form Filling is available through the [!DNL AEM Forms] Early Access Program. To request access, email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official email address with your organization ID and program details.
 
 Before you start, make sure you have:
 
