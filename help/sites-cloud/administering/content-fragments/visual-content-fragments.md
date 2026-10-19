@@ -73,7 +73,7 @@ To preview, and publish, your visual Content Fragment using a template:
 
 >[!IMPORTANT]
 >
->Your Content Fragment must have been published.
+>To be able to publish your Content Fragment must have been published.
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ To preview, and publish, your visual Content Fragment using a template:
 1. In the Content Fragment console navigate to the location of your fragment.
 
 1. Either:
-   * select your (published) fragment in the console
+   * select your fragment in the console
    * open your fragment in the editor
 
 1. Select **Preview** from the top toolbar of:
@@ -99,7 +99,7 @@ In both cases a new modal window will open.
 
 1. If custom templates are available, you can select the template you want to use (including the **Generic Template**).
 
-1. You can publish your visual Content Fragment to either:
+1. If your Content Fragment has already been published you can publish your visual Content Fragment to either:
 
    * the Preview URL with **Publish VCF to preview**
    * the Publish URL with **Publish VCF to delivery**
