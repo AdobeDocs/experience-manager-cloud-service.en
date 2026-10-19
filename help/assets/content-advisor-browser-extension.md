@@ -78,6 +78,14 @@ You can now experience the full range of AEM Content Advisor capabilities, even 
 >[!IMPORTANT]
 > 
 >If you drag a Preset or a Smart Crop Dynamic Media with OpenAPI rendition, the preset or Smart Crop configuration is not retained. The delivery URL of the Base rendition is used instead.
+
+## Working with Adobe Acrobat on the web {#content-advisor-browser-extension-acrobat-web}
+
+Use the Content Advisor browser extension with Acrobat on the web to seamlessly bring documents from AEM Assets into your workflows. Select PDFs from AEM Assets to get answers to questions about your content, prepare documents for e-signing, or turn a PDF campaign brief into a presentation using a simple prompt, and so on.
+
+Watch this video for a quick demo of the integration in action.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3504693)
    
 
 ## Configure AEM Content Advisor {#content-advisor-browser-extension-configure}

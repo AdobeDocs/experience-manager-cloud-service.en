@@ -113,5 +113,5 @@ Security Health lists these entries by user and path, and lets you sort the list
 
 Keep the following limitations in mind when you review Security Health findings:
 
-- Scans run only against production environments. Development, stage, RDE, and sandbox environments aren't scanned.
+- Scans run only against development, stage and production environments. RDE, and sandbox environments aren't scanned.
 - Scans cover Java-based third-party libraries only. JavaScript dependencies used in UI code aren't analyzed.
