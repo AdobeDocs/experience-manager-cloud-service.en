@@ -24,10 +24,13 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 28871 {#release-28871}
 
-Summarized below are the continuous improvements for maintenance release 28871, which was publicly released on October X, 2026. The previous maintenance release was release 28386.
+Summarized below are the continuous improvements for maintenance release 28871, which was publicly released on October 10, 2026. The previous maintenance release was release 28386.
 
 The 2026.10.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
+>[!NOTE]
+>
+>Release 28849 has been made private. 
 
 ### Enhancements {#enhancements-28871}
 

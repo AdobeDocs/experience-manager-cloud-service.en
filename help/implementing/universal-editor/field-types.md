@@ -901,7 +901,7 @@ It offers additional configurations.
 |---|---|---|---|
 | `valueFormat` | string | Selects the format validator and, for `string-multiline`, the input type | No |
 
-It includes additional effects for `valueFormat`.
+Text includes additional effects for `valueFormat`.
 
 | `valueFormat` | Effect |
 |---|---|
@@ -912,7 +912,7 @@ It includes additional effects for `valueFormat`.
 | `url` | Value must be a valid URL |
 | `regexp` | Value must match `validation.regExp` |
 
-It includes additional validation types.
+Text includes additional validation types.
 
 |Validation Type|Value Type|Description|Required|
 |---|---|---|---|
