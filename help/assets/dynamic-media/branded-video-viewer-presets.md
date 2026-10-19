@@ -17,7 +17,7 @@ To create a branded video viewer preset:
 3. Enter a name for the preset.
 4. For the Rich Media Type, select **[!UICONTROL Branded Videos]**.
 
-   ![Create a branded video viewer preset](assets/create-branded-video-viewer-preset.png)
+   ![Create a branded video viewer preset](/help/assets/create-branded-video-viewer-preset.png)
 
 5. Configure the appearance and playback settings for the video viewer.
 6. Save the preset.
@@ -28,7 +28,7 @@ The available settings depend on the selected viewer and the Dynamic Media envir
 
 Use the **[!UICONTROL Appearance]** tab to customize the video player's colors, control bar scale, and main play button.
 
-![Appearance settings for the branded video viewer](assets/branded-video-viewer-appearance.png)
+![Appearance settings for the branded video viewer](/help/assets/branded-video-viewer-appearance.png)
 
 In the **[!UICONTROL Component Appearance]** panel, configure the following settings:
 
@@ -46,7 +46,7 @@ Use the **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]**, and **[!UICONTROL Pho
 
 Use the **[!UICONTROL Behavior]** tab to configure the player controls and playback settings.
 
-![Playback behavior settings for the branded video viewer](assets/branded-video-viewer-behavior.png)
+![Playback behavior settings for the branded video viewer](/help/assets/branded-video-viewer-behavior.png)
 
 ### Configure player controls {#configure-player-controls}
 
@@ -108,7 +108,7 @@ Execute the following steps to preview a video using an available viewer or pres
 3. In the left panel, click **[!UICONTROL Viewers]**.
 4. Select the available viewer preset to preview the video with the configured appearance and playback settings.
 
-   ![Apply the branded video viewer preset from the asset details page](assets/apply-branded-video-viewer-preset.png)
+   ![Apply the branded video viewer preset from the asset details page](/help/assets/apply-branded-video-viewer-preset.png)
 
 5. Copy the available delivery URL or embed code if you need to use the video elsewhere.
 
@@ -123,7 +123,7 @@ To use a video with a branded viewer preset on a Sites page:
 3. Configure the component and select the video asset.
 4. Select the appropriate viewer or preset from the available viewer settings.
 
-   ![Select the branded video viewer preset in the Dynamic Media component](assets/select-branded-video-viewer-preset-sites.png)
+   ![Select the branded video viewer preset in the Dynamic Media component](/help/assets/select-branded-video-viewer-preset-sites.png)
 
 5. Save the page and preview the video.
 
