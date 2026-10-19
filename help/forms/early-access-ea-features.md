@@ -212,9 +212,9 @@ Agentic Form Filling lets customers complete your existing Adaptive Forms by cha
 
 **Key capabilities:**
 
-* **Use the forms you already have**: Your form's rules, validations, and submit action apply during the conversation, so there is nothing to rebuild.
+* **Use the forms you already have**: Reuse published Adaptive Forms with supported rules and validations and their configured submit action. See the [known Early Access limitations](/help/forms/agentic-form-filling.md#limitations).
 * **Guided or natural-language answers**: Collect structured answers one group of fields at a time, or let customers answer in their own words and have AI extract the values.
-* **Personal data protection**: Personal details are masked before a customer's message reaches the AI model.
+* **Personal data protection**: Personal details in form answers are masked before the service sends those answers to its AI model for field extraction.
 
 Ready to start? [Agentic Form Filling for Adaptive Forms](/help/forms/agentic-form-filling.md) explains how it works, the supported channels, and the prerequisites. To request access, email your organization ID and program details to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address.
 
