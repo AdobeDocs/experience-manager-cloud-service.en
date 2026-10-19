@@ -4,7 +4,7 @@ description: Learn about the UI extensibility capability of [!DNL Content Hub]. 
 feature: App Builder
 role: User, Developer
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets."
-exl-id:
+exl-id: 7b4d9a21-6c83-4f05-a2e7-91d6c0f38b54
 ---
 
 # Enable UI extensibility in [!DNL Content Hub] {#content-hub-ui-extensibility}
