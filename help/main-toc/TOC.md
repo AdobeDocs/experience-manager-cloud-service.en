@@ -766,6 +766,7 @@ user-guide-title: AEM as a Cloud Service
     + [Spin Sets](/help/assets/dynamic-media/spin-sets.md)
     + [Video in Dynamic Media](/help/assets/dynamic-media/video.md)
     + [New Video Viewer](/help/assets/dynamic-media/new-video-viewer.md)
+    + [Configure branded video viewer presets](/help/assets/dynamic-media/branded-video-viewer-presets.md)
     + [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md)
     + [Interactive Images](/help/assets/dynamic-media/interactive-images.md)
     + [Interactive Videos](/help/assets/dynamic-media/interactive-videos.md)
