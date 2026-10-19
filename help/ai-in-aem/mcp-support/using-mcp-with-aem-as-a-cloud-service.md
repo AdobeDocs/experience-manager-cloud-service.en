@@ -172,6 +172,33 @@ By default, restrictions apply at the organizational level. If you need restrict
 >
 >The AEM MCP Server inherits any restrictions configured on the domain-specific MCP servers.
 
+##### Allowing the AEM MCP Server on IP-Restricted Environments {#allowing-aem-mcp-server-on-ip-restricted-environments}
+
+If an environment restricts access by IP address, for example with a Cloud Manager IP allowlist or a traffic filter rule that blocks requests from other IP addresses, AEM MCP Server requests to that environment are blocked by default.
+
+The AEM MCP Server can be identified in CDN traffic filter rules using the `clientService` request property, which has the value `adobe/aemmcp` for AEM MCP Server requests. Do not add AEM MCP Server IP addresses to your IP allowlists. Instead, add the following traffic filter rule to your `cdn.yaml` file and deploy it with a config pipeline:
+
+```yaml
+kind: "CDN"
+version: "1"
+data:
+  trafficFilters:
+    rules:
+      - name: allow-aemmcp
+        when: { reqProperty: clientService, equals: "adobe/aemmcp" }
+        action: bypass
+```
+
+The `bypass` action exempts matching requests from traffic filter block rules and also from the IP restrictions of Cloud Manager IP allowlists. The rule applies to all tiers and paths, so the AEM MCP Server can perform every operation that users are permitted to perform in AEM. The rule only matches requests from the AEM MCP Server, which Adobe identifies with `clientService` `adobe/aemmcp`. All other traffic to the environment remains subject to your Cloud Manager IP allowlists and traffic filter rules.
+
+The `bypass` action is similar to `allow`, but stronger: it also overrides Cloud Manager IP allowlists. If no Cloud Manager IP restrictions are configured, `bypass` and `allow` behave the same.
+
+>[!NOTE]
+>
+>The rule does not grant any additional permissions. Every request still runs under the authenticated user's identity, and AEM enforces that user's existing permissions.
+
+For general information about the `cdn.yaml` file, traffic filter rules, and deployment with a config pipeline, see [Traffic filter rules including WAF rules](/help/security/traffic-filter-rules-including-waf.md).
+
 #### Managing MCP Client Access {#managing-mcp-client-access}
 
 Administrators can also disable access for specific MCP client applications at the organization level if their organization's policies require it. If you would like Adobe to enable support for additional MCP client products, send a link to the product website. If you need to allowlist a custom MCP client, reach out as well.
