@@ -883,6 +883,7 @@ user-guide-title: AEM as a Cloud Service
     + {hide-from-toc} [Introduction3](/help/forms/home3.md)
     + [Top Adobe Experience Manager Forms innovations](/help/forms/latest-innovations.md)
     + [Early Access (EA) capabilities](/help/forms/early-access-ea-features.md)
+    + {hide-from-toc} [Agentic Form Filling for Adaptive Forms](/help/forms/agentic-form-filling.md)
     + [Notable changes](/help/forms/notable-changes.md)
     + [Architecture](/help/forms/aem-forms-cloud-service-architecture.md)
     + [Frequently asked questions](/help/forms/faq.md)
