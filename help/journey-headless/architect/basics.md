@@ -115,7 +115,7 @@ Two data types provide references to content outside a specific fragment:
 >
 >In the editor the UUID references specify the path to the referenced resource; internally such references are held as universally unique IDs (UUID) that reference the resources.
 
-## Levels of Structure (Nested Fragments) {#levels-of-structure-nested-fragments}
+## Levels of Structure (Nested Content) {#levels-of-structure-nested-content}
 
 For content modeling the **Fragment Reference** data type lets you create multiple levels of structure and relationships.
 

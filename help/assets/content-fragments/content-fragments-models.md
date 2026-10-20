@@ -279,7 +279,7 @@ Many properties are self-explanatory, for certain properties additional details 
 
 * See **[Content Reference](#content-reference)** for more details about that specific data type and its properties.
 
-* See **[Fragment Reference (Nested Fragments)](#fragment-reference-nested-fragments)** for more details about that specific data type and its properties.
+* See **[Fragment Reference](#fragment-reference)** for more details about that specific data type and its properties.
 
 * **Translatable**
   
@@ -325,7 +325,7 @@ Content Fragments can form nested content, using either of the following data ty
     * **Content Reference (UUID)** - UUID based
   * Can be configured for one or multiple references (in the resulting fragment).
 
-* [Fragment Reference](#fragment-reference-nested-fragments) (Nested Fragments)
+* [Fragment Reference](#fragment-reference)
   * References other fragments, dependent on the specific models specified.
   * Provided by the data types:
     * **Fragment Reference** - path based
@@ -367,7 +367,7 @@ In addition to standard properties you can specify:
 
 ![Content Reference](assets/cfm-content-reference.png)
 
-### Fragment Reference (Nested Fragments) {#fragment-reference-nested-fragments}
+### Fragment Reference {#fragment-reference}
 
 The **Fragment Reference** and **Fragment Reference (UUID)** data types can reference one, or more, Content Fragments. This feature is of particular interest when retrieving content for use in your app, as it allows you to retrieve structured data with multiple layers.
 
