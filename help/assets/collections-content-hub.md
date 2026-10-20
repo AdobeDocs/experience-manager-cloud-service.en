@@ -4,6 +4,12 @@ description: Learn how to manage collections in Content Hub
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Manage collections in [!DNL Content Hub] {#manage-collections}
 

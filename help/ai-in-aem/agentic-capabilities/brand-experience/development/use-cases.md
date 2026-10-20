@@ -3,6 +3,26 @@ title: Development Agentic Capabilities Overview
 description: Learn how the Development Agentic Capabilities in AEM help your traditional AEM Java-stack developers and administrators create, debug, deploy, and optimize code more efficiently.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+  - id: f1710108-e0d1-47e5-9952-1888729a03da
+    internal-label: Agentic AI
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Development Agentic Capabilities {#development-agentic-capabilities}
@@ -18,6 +38,8 @@ A range of use-cases are covered.
 The AEM Cloud Manager Pipeline Management skill lets you manage your CI/CD pipelines directly through natural language, without switching between Cloud Manager screens to find the information or controls you need. You can list and create pipelines, kick off or cancel executions, and check status and history — all from a single conversation.
 
 When something goes wrong, the skill goes beyond status checks: it can retrieve step metrics, logs, artifacts, and execution failures so you can diagnose an issue without downloading and searching through raw log files yourself. It also handles day-to-day pipeline configuration — managing pipeline variables, invalidating cached artifacts, and adjusting pipeline settings — so routine maintenance tasks that used to require several clicks through the UI can be done with a single request.
+
+To find out why an execution failed, see [AEM Cloud Manager Pipeline Troubleshooting](#aem-cloud-manager-pipeline-troubleshooting).
 
 AI can make mistakes so review suggested actions before applying them, particularly for destructive operations.
 
@@ -35,6 +57,31 @@ AI can make mistakes so review suggested actions before applying them, particula
 | Managing pipeline variables | "Show me the variables for Dev Pipeline"<br><br>"Update the API_ENDPOINT variable on pipeline 67890" |
 | Invalidating cached artifacts | "Invalidate the cached artifact for Dev Pipeline"<br><br>"Clear the build cache before my next run" |
 | Configuring pipeline settings | "Enable email notifications for Dev Pipeline"<br><br>"Change the trigger branch for pipeline 67890 to release" |
+
+### AEM Cloud Manager Pipeline Troubleshooting {#aem-cloud-manager-pipeline-troubleshooting}
+
+The AEM Cloud Manager Pipeline Troubleshooting skill helps you find out why a pipeline execution failed, without downloading and searching through raw log files yourself. Reference a failed execution by pipeline name or execution ID, and the skill confirms the failure in Cloud Manager, identifies the failed step, and explains in plain language what went wrong, why, and what to do next. If your request matches more than one pipeline, the skill asks you to choose one before it continues.
+
+Note that this capability is implemented as a specialist agent and so does not visually appear as a listed skill in the Coworker Customizations interface.
+
+The skill investigates failures in the following pipelines and steps:
+
+* The Build & Unit Testing step and the Code Scanning step in full-stack Deployment and Code Quality pipelines.
+* Build and code quality failures in [web tier config pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines), such as Dispatcher configuration validation errors.
+* Deployment failures in [config pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline), such as an invalid CDN configuration.
+
+For failures in other steps, such as the deployment step of a full-stack pipeline, the skill reports the failed step without diagnosing it. In that case, inspect the logs as described in [Access and Download Logs](/help/implementing/cloud-manager/manage-logs.md), or contact Adobe Support.
+
+
+You can also start troubleshooting directly from Cloud Manager. On a failed pipeline execution, click **Troubleshoot with AI** to open Coworker with that execution already referenced.
+
+AI can make mistakes so review the diagnosis before acting on it.
+
+| Capability | Sample Prompts |
+| --- | --- |
+| Troubleshooting a failed pipeline | "Troubleshoot my failed pipeline"<br><br>"Help me troubleshoot the last pipeline that failed in Main Program" |
+| Troubleshooting a specific execution | "Troubleshoot pipeline execution 1234567"<br><br>"Troubleshoot execution 1234567 of Dev Pipeline in program 12345" |
+| Troubleshooting web tier and config pipelines | "Debug my web tier build failure on pipeline 67890"<br><br>"Why did my config pipeline deployment fail in program 12345?" |
 
 ### AEM Cloud Manager Environment Management
 

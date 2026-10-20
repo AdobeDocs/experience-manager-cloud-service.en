@@ -8,6 +8,18 @@ solution: Experience Manager Sites
 hide: true
 index: false
 exl-id: 5039cf92-21ff-4d6c-a684-72eab13b519d
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Reuse Content Fragments using MSM {#reuse-content-fragments-using-msm}
 

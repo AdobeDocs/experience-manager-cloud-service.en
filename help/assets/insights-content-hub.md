@@ -4,6 +4,12 @@ description: Learn how to view assets insights in [!DNL Content Hub]
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Assets [!DNL Insights] in [!DNL Content Hub] {#assets-insights}
 
