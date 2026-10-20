@@ -24,7 +24,6 @@ Agentic Form Filling lets your customers complete an Adaptive Form in Adobe Expe
 
 ![Agentic Form Filling collects and validates customer answers through an AI assistant, website chatbot, or WhatsApp to complete and submit an Adaptive Form.](assets/agentic-form-filling-overview.png)
 
-Long or complex forms are a common point of abandonment: customers lose track of what is being asked or why, and the submissions you receive are often incomplete.
 
 Agentic Form Filling uses your published form's supported rules and validations and its configured submit action. See the [known Early Access limitations](#limitations).
 
