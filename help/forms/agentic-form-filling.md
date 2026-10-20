@@ -20,17 +20,15 @@ role_v2:
 
 <span class="preview"> Agentic Form Filling is under the Early Access Program. This Early Access documentation is subject to change. You can write to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your work email address to join the early access program and request access to the capability. </span>
 
-Long or complex forms are a common point of abandonment, users lose track of what is being asked or why, and the submissions received are often incomplete.
-Agentic Form Filling lets customers complete an Adaptive Form in Adobe Experience Manager (AEM) Forms through a conversation with an AI assistant, website chatbot, or WhatsApp.
+Agentic Form Filling lets your customers complete an Adaptive Form in Adobe Experience Manager (AEM) Forms by chatting, instead of working through a traditional form layout. Customers answer questions in plain language, in an AI assistant, a chatbot on your website, or [!DNL WhatsApp], and an AI-powered form filling agent collects, validates, and submits their data for them.
 
 ![Agentic Form Filling collects and validates customer answers through an AI assistant, website chatbot, or WhatsApp to complete and submit an Adaptive Form.](assets/agentic-form-filling-overview.png)
 
+Long or complex forms are a common point of abandonment: customers lose track of what is being asked or why, and the submissions you receive are often incomplete.
 
-Agentic Form Filling reuses your published Adaptive Form's supported rules and validations and its configured submit action. See the [known Early Access limitations](#limitations) for details.
+Agentic Form Filling uses your published form's supported rules and validations and its configured submit action. See the [known Early Access limitations](#limitations).
 
 This article explains how an Agentic Form Filling conversation works, which channels and forms it supports, how the service handles customer data, and how to request Early Access.
-
-
 
 >[!NOTE]
 >
@@ -39,8 +37,6 @@ This article explains how an Agentic Form Filling conversation works, which chan
 ## How Agentic Form Filling works {#how-it-works}
 
 A conversation moves through four stages:
-
-
 
 |  |  |
 | --- | --- |
