@@ -1,11 +1,11 @@
 ---
-title: OpenTelemetry (Limited Availability)
+title: OpenTelemetry for AEM
 description: Adobe is replacing the Application Performance Monitoring integration built into AEM as a Cloud Service with OpenTelemetry, an open, industry-standard approach to observability, now in Limited Availability.
 exl-id: 50053a23-b552-4554-b4b0-21e978aa7f0a
 feature: Operations
 role: Admin, Developer
 ---
-# OpenTelemetry (Limited Availability) {#opentelemetry-apm}
+# OpenTelemetry for AEM {#opentelemetry-apm}
 
 Adobe is replacing the Application Performance Monitoring (APM) integration built into AEM as a Cloud Service with [OpenTelemetry](https://opentelemetry.io/), an open, industry-standard approach to observability supported by every major monitoring platform.
 
