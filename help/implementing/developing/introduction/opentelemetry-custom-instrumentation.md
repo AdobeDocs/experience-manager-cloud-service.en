@@ -21,6 +21,8 @@ When [OpenTelemetry](/help/implementing/developing/introduction/opentelemetry-ap
 
 You can add that knowledge yourself with the OpenTelemetry API. The spans and attributes that your code creates travel with the automatic telemetry: same service name, same processing, same APM provider. You do not configure an endpoint, a credential, or an exporter in your code.
 
+If you are new to OpenTelemetry on AEM as a Cloud Service, start with the tutorial [Observability via OpenTelemetry](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/observability-via-opentelemetry/opentelemetry-in-aem) to learn how it works. Then follow [Configure OpenTelemetry for insights into AEM applications](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/observability-via-opentelemetry/configure-opentelemetry) to enable it for your environment.
+
 The examples on this page instrument the [WKND reference site](https://github.com/adobe/aem-guides-wknd). Each example describes what you want to achieve, the code to add, and the outcome you can expect in your APM provider. The complete instrumented code, including unit tests that assert on the spans, is on the [`tutorial/otel-custom-instrumentation`](https://github.com/adobe/aem-guides-wknd/tree/tutorial/otel-custom-instrumentation) branch of the WKND repository.
 
 >[!NOTE]

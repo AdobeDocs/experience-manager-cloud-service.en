@@ -57,6 +57,8 @@ The following telemetry is in scope:
 
 [Log Forwarding](/help/implementing/developing/introduction/log-forwarding.md) continues to be supported through its existing, separate mechanism, and is unaffected by this integration.
 
+To learn how it works, including how telemetry flows from AEM to your APM platform, what you control, and how to choose a platform, see the tutorial [Observability via OpenTelemetry](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/observability-via-opentelemetry/opentelemetry-in-aem).
+
 >[!WARNING]
 >
 >If you enable logs through this OpenTelemetry integration **and** Log Forwarding at the same time, and both send to the same destination, you receive duplicate log messages there. Enable only one path per destination, or send each to a different destination.
@@ -171,6 +173,8 @@ Information about the Cloud Service runtime and the platform that hosts your app
 <!-- AUTHOR NOTE: confirmed against the shipping build (July 2026) — jvm.memory.used, jvm.gc.duration, jvm.thread.count, jvm.cpu.recent_utilization, http.server.request.duration, and the service.name/deployment.environment format all match real captured telemetry. UPDATED 2026-09-30: the Limited Availability rollout enables Adobe's AEM extension (aemaacs-otel-extension) for every enabled environment, so Sling request / component / HTL / JCR query spans ARE emitted (OSGi and JCR getNode are not). Logs: WARN+ floor is fixed at launch; an adjustable level is in development - update the Logs wording when it ships. This list stays governance-sensitive and worth a final pass regardless. UPDATED 2026-09-30 (JMX): the aem.* JMX metrics (45 metrics from the 44 rules in opentelemetry-init updates/aem-jmx.yaml) reach customers from Granite/aem-k8-base#4013, which adds them to the collector's customer metrics allow-list. Until that chart is fleet-wide the page says the AEM metrics are "being rolled out" and appear automatically (summary, metrics list, verify step; reworded 2026-10-03 from "shortly after launch" after Brian's review); remove those qualifiers once it is. -->
 
 ## Set up the integration {#set-up}
+
+For a guided walkthrough that uses the WKND sample project, from storing your credential in Cloud Manager to verifying telemetry in your observability platform, see the tutorial [Configure OpenTelemetry for insights into AEM applications](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/observability-via-opentelemetry/configure-opentelemetry).
 
 ### Step 1: Request access {#request-access}
 
@@ -472,3 +476,5 @@ Adobe will move from its built-in APM solution to OpenTelemetry as its permanent
 * [Log Forwarding](/help/implementing/developing/introduction/log-forwarding.md)
 * [Configure Advanced Networking](/help/security/configuring-advanced-networking.md)
 * [Environment Variables in Cloud Manager](/help/implementing/cloud-manager/environment-variables.md)
+* [Observability via OpenTelemetry](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/observability-via-opentelemetry/opentelemetry-in-aem) (tutorial)
+* [Configure OpenTelemetry for insights into AEM applications](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/observability-via-opentelemetry/configure-opentelemetry) (tutorial)
