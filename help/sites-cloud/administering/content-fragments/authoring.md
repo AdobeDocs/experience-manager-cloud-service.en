@@ -297,7 +297,7 @@ For example, a scenario where the variation content had been completely rewritte
 
 ### Fragment References {#fragment-references}
 
-[Fragment References](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#fragment-reference-nested-fragments) can be used to:
+[Fragment References](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#fragment-reference) can be used to:
 
 * [create a reference to an existing Content Fragment](#create-reference-existing-content-fragment)
 * [create a Content Fragment, and then reference it](#create-reference-content-fragment)

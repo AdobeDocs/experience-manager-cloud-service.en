@@ -640,7 +640,7 @@ And also:
 }
 ```
 
-You can also sort on a field within a nested fragment, using the format of `nestedFragmentname.fieldname`.
+You can also sort on a field within a referenced fragment, using the format of `referencedFragmentname.fieldname`.
 
 >[!NOTE]
 >
@@ -1324,9 +1324,9 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
   * use `... on` 
     * See [Sample Query for a Content Fragment of a specific Model with a Content Reference](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-content-reference)
 
-* Fallback when querying nested fragments:
+* Fallback when querying referenced fragments:
 
-  * If a given variation does not exist in a nested fragment, then the **Master** variation would be returned.
+  * If a given variation does not exist in a referenced fragment, then the **Master** variation would be returned.
 
 ## Querying the GraphQL endpoint from an External Website {#query-graphql-endpoint-from-external-website}
 

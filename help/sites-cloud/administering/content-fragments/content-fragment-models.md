@@ -207,12 +207,6 @@ A selection of data types is available for defining your model:
     * The sub-field are restricted to the Content Fragment Models that you specify when defining the sub-field
   * This feature provides a way to model complex data structures within a single fragment, similar to nested objects in JSON or embedded documents in NoSQL databases 
 
-  >[!NOTE]
-  >
-  >Instances of the Composite Data Type cannot be defined as a Single Field. 
-  >
-  >If this is needed, define the instance as a **Multiple Field** with **Min Number of Items** and **Max Number of Items** both set to `1`.
-
   >[!WARNING]
   >
   >The Composite data type can be used: 
@@ -296,12 +290,6 @@ Many properties are self-explanatory, for certain properties additional details 
 
   * Ensure the field's property name is added to the translation configuration, context `/content/dam/<sites-configuration>`, if not already present. 
   * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
-
->[!NOTE]
->
->Instances of the Composite Data Type cannot be defined as a Single Field. 
->
->If this is needed, define the instance as a **Multiple Field** with **Min Number of Items** and **Max Number of Items** both set to `1`.
 
 ## Validation {#validation}
 
@@ -521,12 +509,6 @@ In addition to standard properties you can define:
 * **Min/Max Number of items**
 
   For multi-value composites, set min and max bounds for the number of items
-
-  >[!NOTE]
-  >
-  >Instances of the Composite Data Type cannot be defined as a Single Field. 
-  >
-  >If this is needed, define the instance as a **Multiple Field** with **Min Number of Items** and **Max Number of Items** both set to `1`.
 
 * **Type** 
 

@@ -166,7 +166,7 @@ The format can be selected when the full-screen editor is open, allowing you to 
   * **Find/Replace**
   * **Spellchecker**
   * [Annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-* [Insert Content Fragment](#inserting-content-fragment-into-your-fragment); available when your **Multi-line text** field is configured with **Allow Fragment Reference**.
+* [Referenced Content Fragment](#referencing-content-fragment-from-your-fragment); available when your **Multi-line text** field is configured with **Allow Fragment Reference**.
 
 The [actions](#actions) are also accessible from the full-screen editor, so you can perform the same operations whether you work in the inline editor or the expanded full-screen view.
 
@@ -361,11 +361,11 @@ The assets are added to the paragraph sequence of the fragment without any forma
    >* **Plain Text**: the asset is removed and lost from the fragment, because plain text does not support embedded assets.
    >* **Markdown**: the asset is not visible, but is still there when you return to **Rich Text**.
 
-### Inserting a Content Fragment into your Fragment {#inserting-content-fragment-into-your-fragment}
+### Referencing a Content Fragment from your Fragment {#referencing-content-fragment-from-your-fragment}
 
-To streamline content fragment authoring, you can embed another Content Fragment directly within your current fragment.
+To streamline content fragment authoring, you can reference another Content Fragment from within your current fragment.
 
-The nested fragment is inserted as a reference at your current cursor location within the fragment. This ensures the referenced content stays synchronized with its source, so updates made in the original fragment propagate automatically.
+The referenced fragment is inserted as a reference at your current cursor location within the fragment. This ensures the referenced content stays synchronized with its source, so updates made in the original fragment propagate automatically.
 
 >[!NOTE]
 >

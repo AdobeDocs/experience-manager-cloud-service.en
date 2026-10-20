@@ -45,7 +45,7 @@ This page covers (in more detail):
 
 * Handlebars - the necessary basics of the syntax
 * How to access Content Fragment data
-* Working with nested Content Fragments
+* Working with referenced Content Fragments
 * Handling multi-valued fields
 * Creating loops and conditional logic
 * Best practices of template design for Content Fragments
@@ -346,7 +346,7 @@ Remember:
 * `{{name}}` uses double braces (plain text label)
 * `{{{value}}}` uses triple braces (pre-rendered HTML value)
 
-## Nested Content Fragments {#nested-content-fragments}
+## Referenced Content Fragments {#referenced-content-fragments}
 
 When a Content Fragment field references another Content Fragment, you can use dot notation to directly access fields in the referenced fragment.
 
@@ -405,7 +405,7 @@ Pattern: `fields.level1.level2.level3.fieldName` (limited depth; default is 5, c
 
 ### API parameter requirement: hydration {#api-parameter-requirements}
 
-To enable nested Content Fragment access, you must include the `hydration` query parameter in your API call:
+To enable referenced Content Fragment access, you must include the `hydration` query parameter in your API call:
 
 To enable Hydration:
 
@@ -1066,7 +1066,7 @@ Some troubleshooting hints include:
 | Problem | Symptom | Solution |
 |--- |--- |--- |
 | Field shows HTML tags as text | `<p>Hello World</p>` displayed literally | Use triple braces: `{{{fields.description}}}` |
-| Nested Content Fragment fields are empty or show [object Object] | `{{{fields.author.name}}}` is blank | Enable hydration in the API call; verify field name spelling; check that `maxDepth` is deep enough |
+| Referenced Content Fragment fields are empty or show [object Object] | `{{{fields.author.name}}}` is blank | Enable hydration in the API call; verify field name spelling; check that `maxDepth` is deep enough |
 | Multi-valued field shows only the first item | Array with five items renders only one | Use `{{#each fields.tags}}` to iterate all items |
 | Array index access not working | `{{{fields.tags[0]}}}` renders empty | Use dot-bracket syntax: `{{{fields.tags.[0]}}}` |
 | Referenced fragments not appearing | `hasReferencedFragments` is always false | Enable hydration: `?hydration=%7B%22enabled%22%3Atrue%7D;` also check `{{#if referencesError}}` |
@@ -1338,7 +1338,7 @@ How to access fields:
 
 ```handlebars
 {{{fields.fieldName}}}                    <!-- Direct field -->
-{{{fields.author.name}}}                  <!-- Nested Content Fragment field -->
+{{{fields.author.name}}}                  <!-- Referenced Content Fragment field -->
 {{{fields.author.org.address.city}}}      <!-- Multi-level nesting -->
 {{{fields.tags.[0]}}}                     <!-- Array by index -->
 {{#each fields.tags}}...{{/each}}         <!-- Array iteration -->
