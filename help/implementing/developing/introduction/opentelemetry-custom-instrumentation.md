@@ -21,7 +21,7 @@ When [OpenTelemetry](/help/implementing/developing/introduction/opentelemetry-ap
 
 You can add that knowledge yourself with the OpenTelemetry API. The spans and attributes that your code creates travel with the automatic telemetry: same service name, same processing, same APM provider. You do not configure an endpoint, a credential, or an exporter in your code.
 
-The examples on this page instrument the [WKND reference site](https://github.com/adobe/aem-guides-wknd). Each example describes what you want to achieve, the code to add, and the outcome you can expect in your APM provider.
+The examples on this page instrument the [WKND reference site](https://github.com/adobe/aem-guides-wknd). Each example describes what you want to achieve, the code to add, and the outcome you can expect in your APM provider. The complete instrumented code, including unit tests that assert on the spans, is on the [`tutorial/otel-custom-instrumentation`](https://github.com/adobe/aem-guides-wknd/tree/tutorial/otel-custom-instrumentation) branch of the WKND repository.
 
 >[!NOTE]
 >
@@ -442,3 +442,4 @@ Your APM provider receives a log entry such as the following, and can show it wi
 * [Annotations for the OpenTelemetry Java agent](https://opentelemetry.io/docs/zero-code/java/agent/annotations/) (opentelemetry.io)
 * [OpenTelemetry semantic conventions](https://opentelemetry.io/docs/specs/semconv/) (opentelemetry.io)
 * [WKND reference site](https://github.com/adobe/aem-guides-wknd) (GitHub)
+* [WKND custom instrumentation branch](https://github.com/adobe/aem-guides-wknd/tree/tutorial/otel-custom-instrumentation) (GitHub)
