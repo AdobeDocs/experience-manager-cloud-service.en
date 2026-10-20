@@ -119,7 +119,8 @@ Starting from the failed pipeline execution is the fastest way to troubleshoot, 
 
 1. Review the diagnosis. To ask follow-up questions or request more detail, type in the **Ask Coworker anything** box.
 
-<!-- Alexandru: to check if this is still accurate
+<!--
+Alexandru: to check if this is still accurate
 
 #### Troubleshoot from the Failed Pipelines Widget {#troubleshoot-from-experience-home-widget}
 
