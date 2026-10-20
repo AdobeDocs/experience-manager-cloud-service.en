@@ -40,8 +40,19 @@ A conversation moves through four stages:
 
 |  |  |
 | --- | --- |
-| ![Workflow showing Start, Collect, Confirm, and Submit, with repeated questions, answer editing, and submission status checks.](assets/agentic-form-filling-workflow.svg) | 1. **Start**: A client application, such as a chatbot or an AI assistant, starts a conversation for a form. If the customer describes what they want to do instead of naming a form, the service can match the request to the forms you have enabled.<br>2. **Collect**: The service asks for one group of related fields at a time, usually the fields in one panel of the form.<br>Each answer is checked against the form's rules. If an answer isn't valid, the service explains why and asks again, without losing anything already collected.<br>Rules that show or hide fields or compute values run as the conversation progresses, so customers are asked only for fields that apply to them.<br>In this example, one message fills three fields, and the next question offers its choices as buttons:<br>![A chat in which one customer message fills the name, mobile number, and email fields, followed by a question that offers profession options and a Skip button](/help/forms/assets/agentic-form-filling-collect.png)<br>3. **Confirm**: When all fields are collected, the service shows a summary. The customer confirms it, or changes any answer before submitting.<br>![A conversation summary listing the customer's answers, with Confirm and Submit, Edit, and Cancel buttons](/help/forms/assets/agentic-form-filling-summary.png)<br>4. **Submit**: The service sends the collected data to the form's configured submit action. Submission runs in the background, and the client checks its status to tell the customer when it's complete. |
+| ![Workflow showing Start, Collect, Confirm, and Submit, with repeated questions, answer editing, and submission status checks.](assets/agentic-form-filling-workflow.svg) | 1. **Start**: A client application, such as a chatbot or an AI assistant, starts a conversation for a form. If the customer describes what they want to do instead of naming a form, the service can match the request to the forms you have enabled.<br>2. **Collect**: The service asks for one group of related fields at a time, usually the fields in one panel of the form.<br>- Each answer is checked against the form's rules. If an answer isn't valid, the service explains why and asks again, without losing anything already collected.<br>- Rules that show or hide fields or compute values run as the conversation progresses, so customers are asked only for fields that apply to them.<br>3. **Confirm**: When all fields are collected, the service shows a summary. The customer confirms it, or changes any answer before submitting.<br>4. **Submit**: The service sends the collected data to the form's configured submit action. Submission runs in the background, and the client checks its status to tell the customer when it's complete. |
 
+**Collect answers**
+
+One customer message supplies a name, mobile number, and email address. The next question offers profession choices and a Skip button.
+
+![A chat in which one customer message fills the name, mobile number, and email fields, followed by a question that offers profession options and a Skip button](/help/forms/assets/agentic-form-filling-collect.png)
+
+**Review and confirm**
+
+Customers review their answers and can edit or cancel before initiating submission.
+
+![A conversation summary listing the customer's answers, with Confirm and Submit, Edit, and Cancel buttons](/help/forms/assets/agentic-form-filling-summary.png)
 
 ## Key concepts {#key-concepts}
 
