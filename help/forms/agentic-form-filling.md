@@ -18,7 +18,7 @@ role_v2:
 
 [!BADGE AEM Forms]{type=Positive tooltip="Applies to AEM Forms"}
 
-<span class="preview"> Agentic Form Filling is under the Early Access Program. You can write to aem-forms-ea@adobe.com from your work email address to join the early access program and request access to the capability. </span>
+<span class="preview"> Agentic Form Filling is under the Early Access Program. This Early Access documentation is subject to change. You can write to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your work email address to join the early access program and request access to the capability. </span>
 
 ![Agentic Form Filling collects and validates customer answers through an AI assistant, website chatbot, or WhatsApp to complete and submit an Adaptive Form.](assets/agentic-form-filling-overview.png)
 
