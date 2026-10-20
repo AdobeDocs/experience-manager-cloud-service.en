@@ -20,11 +20,17 @@ role_v2:
 
 <span class="preview"> Agentic Form Filling is under the Early Access Program. You can write to aem-forms-ea@adobe.com from your work email address to join the early access program and request access to the capability. </span>
 
-Agentic Form Filling lets your customers complete an Adaptive Form in Adobe Experience Manager (AEM) Forms by chatting, instead of working through a traditional form layout. Customers answer questions in plain language, in an AI assistant, a chatbot on your website, or [!DNL WhatsApp], and an AI-powered form filling agent collects, validates, and submits their data for them.
+![Agentic Form Filling collects and validates customer answers through an AI assistant, website chatbot, or WhatsApp to complete and submit an Adaptive Form.](assets/agentic-form-filling-overview.png)
 
-Long or complex forms are a common point of abandonment: customers lose track of what is being asked or why, and the submissions you receive are often incomplete. Agentic Form Filling uses your published form's supported rules and validations and its configured submit action. See the [known Early Access limitations](#limitations).
+Long or complex forms are a common point of abandonment, users lose track of what is being asked or why, and the submissions received are often incomplete.
 
-This article explains how a conversation works, where you can use it, and what to know about supported forms, data handling, and access.
+Agentic Form Filling lets your customers complete an Adaptive Form by chatting, instead of working through a traditional form layout. Customers answer questions in plain language, in an AI assistant, a chatbot on your website, or [!DNL WhatsApp], and an AI-powered form filling agent collects, validates, and submits their data for them.
+
+Agentic Form Filling uses your existing and already published forms and rules, validations, and submit action configured in your Adaptive Forms. There are some limitations in this Early Access feature, see the [known Early Access limitations](#limitations) for details.
+
+This article explains how an Agentic Form Filling conversation works, which channels and forms it supports, how the service handles customer data, and how to request Early Access.
+
+
 
 >[!NOTE]
 >
@@ -34,14 +40,8 @@ This article explains how a conversation works, where you can use it, and what t
 
 A conversation moves through four stages:
 
-1. **Start**: A client application, such as a chatbot or an AI assistant, starts a conversation for a form. If the customer describes what they want to do instead of naming a form, the service can match the request to the forms you have enabled.
-1. **Collect**: The service asks for one group of related fields at a time, usually the fields in one panel of the form.
-
-   Each answer is checked against the form's rules. If an answer isn't valid, the service explains why and asks again, without losing anything already collected.
-
-   Rules that show or hide fields or compute values run as the conversation progresses, so customers are asked only for fields that apply to them.
-
-   In this example, one message fills three fields, and the next question offers its choices as buttons:
+1. A client application, such as a chatbot or an AI assistant, starts a conversation for a form. If the customer describes what they want to do instead of naming a form, the service can match the request to the forms you have enabled.
+1. The service asks for one group of related fields at a time, usually the fields in one panel of the form. Each answer is checked against the form's rules. If an answer isn't valid, the service explains why and asks again, without losing anything already collected. Rules that show or hide fields or compute values run as the conversation progresses, so customers are asked only for fields that apply to them. In below example, one message fills three fields, and the next question offers its choices as buttons:
 
    ![A chat in which one customer message fills the name, mobile number, and email fields, followed by a question that offers profession options and a Skip button](/help/forms/assets/agentic-form-filling-collect.png)
 
@@ -53,9 +53,9 @@ A conversation moves through four stages:
 
 ## Key concepts {#key-concepts}
 
-**Guided mode and natural-language mode**: Each conversation runs in one of two modes, chosen when it starts.
+Each conversation runs in one of the following modes:
 
-* In *guided mode*, the client asks for each field and sends back the customer's answers as values for specific fields. No AI model processes the customer's answers.
+* In *guided mode*, the chatbot tells the customer exactly what information to enter or select. For example, it asks “What is your email address?” and puts the answer into the email field. It already knows which field the answer belongs to, so it does not need AI to interpret it. No AI model processes the customer's answers.
 * In *natural-language mode*, customers answer in their own words, and can give several answers in one message, such as "I'm Priya Sharma, my email is priya@example.com." An AI model extracts the field values from the message, and anything it couldn't find is asked for again.
 
 **Field groups**: Instead of asking one field at a time, the service asks for related fields together, usually all the fields in one panel of the form. A group holds at most 10 fields; a larger panel is split across several turns.
@@ -71,7 +71,7 @@ A conversation moves through four stages:
 The same conversation service powers every channel, so a form behaves the same way wherever your customers fill it.
 
 | Channel | Typical use | Mode | How customers answer |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | AI assistants (MCP) | Customers who are already chatting with an AI assistant or agent | Natural-language | In their own words; the assistant relays each answer |
 | Custom chatbots and websites (REST API) | Your own chat interface on a website or app | Guided or natural-language | Typed text, or controls that your interface displays |
 | [!DNL WhatsApp] | Customers who prefer messaging | Natural-language | Typed text, buttons, and lists |
