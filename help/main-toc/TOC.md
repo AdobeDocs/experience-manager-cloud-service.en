@@ -1584,7 +1584,7 @@ user-guide-title: AEM as a Cloud Service
     + [Logging](/help/implementing/developing/introduction/logging.md)
     + [Log Forwarding](/help/implementing/developing/introduction/log-forwarding.md)
     + [OpenTelemetry](/help/implementing/developing/introduction/opentelemetry-apm-integration.md)
-      + [Custom Instrumentation with OpenTelemetry](/help/implementing/developing/introduction/opentelemetry-custom-instrumentation.md)
+    + [Custom Instrumentation with OpenTelemetry](/help/implementing/developing/introduction/opentelemetry-custom-instrumentation.md)
     + [Configurations and the Configuration Browser](/help/implementing/developing/introduction/configurations.md)
     + [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md)
     + [API Reference Materials](/help/implementing/developing/reference-materials.md)
