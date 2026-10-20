@@ -6,6 +6,14 @@ feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Use asset microservices and processing profiles {#get-started-using-asset-microservices}
 
@@ -319,6 +327,7 @@ Follow the steps outlined in [apply a workflow model to a folder](#apply-workflo
 
 * Currently, the support is limited to generating renditions. **Generating new assets is not supported**.
 * The file size limit for metadata extraction is **approximately 15 GB**. When uploading very large assets, the metadata extraction operation can fail for files that exceed this threshold.
+* It is recommended to limit the number of renditions applied to an asset to fewer than **40**, as exceeding this limit causes requests to be truncated.
 
 **See also**
 

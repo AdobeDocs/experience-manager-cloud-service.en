@@ -6,6 +6,20 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Authoring Content Fragments {#authoring-content-fragments}
 
@@ -219,22 +233,9 @@ Fields that are defined as either Plain Text or Markdown have a simple text box,
 
 ## Edit Multi line text fields - Rich Text {#edit-multi-line-text-fields-rich-text}
 
-For **[Multi line text](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** fields that are defined as **Rich Text**, various features are available:
+For **[Multi line text](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** fields that are defined as **Rich Text**, a comprehensive range of features is available:
 
-* Edit the content:
-  * Undo/Redo
-  * Paste/Paste as Text
-  * Copy
-  * Select paragraph format
-  * Create/manage table
-  * Format text; bold, italic, underline, color
-  * Set paragraph alignment
-  * Create/manage lists; bulleted, numbered
-  * Indent text; decrease, increase
-  * Clear current formatting
-  * Insert links
-  * Select and insert references to image assets
-  * Add special characters
+* Edit the content; including format the text, select paragraph format, set paragraph alignment, insert links, select and insert references to image assets, add special characters and others
 * [Full-screen editor](#full-screen-editor-rich-text) - toggle between full-screen and in-flow
 * [Statistics](#statistics-rich-text)
 * [Compare and Synchronize](#compare-and-synchronize-rich-text)
@@ -597,6 +598,7 @@ To enable you to collaborate in-product and in-context, the **Comments** tab in 
 * Format your comments; basic formatting is available
 * Perform a text search through existing comments
 * Edit an existing comment
+* Copy the body text
 * Delete comments
 
 <!-- CQDOC-23473 - new screenshot? -->
