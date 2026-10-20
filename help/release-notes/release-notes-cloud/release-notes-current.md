@@ -282,47 +282,39 @@ To participate or learn more, send an email to `aem-assets-express@adobe.com`.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-<!--
+### New features in AEM Forms {#forms-new-features}
 
-#### API Integration Tool for Dynamic Form Data
+#### Forms Manager improvements {#forms-manager-improvements}
 
-Form authors can now use the API Integration Tool to build forms that fetch and fill in data from external REST APIs, based on what the user does in the form. This no-code tool supports use cases like address auto-completion, dynamic dropdown lists, and real-time validation. For more information, see [API Integration Tool for Dynamic Form Data](/help/forms/api-integration-tool-dynamic-form-data.md).
+Manage mixed form collections and move reusable forms between environments with improvements to folder deletion, downloads, and theme management:
 
--->
+* **Delete folders containing different form types:** Delete folders containing both Core Components based Adaptive Forms and Edge Delivery Services forms while preserving shared Edge Delivery Services configurations, so other forms that use those configurations continue to work.
+* **Download forms with their fragments:** Download an Edge Delivery Services form together with its referenced fragments in the same package, reducing the need to collect dependencies separately when transferring forms.
+* **Keep theme references current:** Frontend theme redeployment automatically updates the form's saved theme reference, so Forms Manager continues to show the correct theme rather than reverting to Canvas in the theme picker.
 
 ### Early Access Features in AEM Forms
 
-#### Table component in Adaptive Forms based on Core Components
+The following capabilities are available through the AEM Forms Early Access program. To request access, email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address and include your organization ID, program details, and the capabilities you want to use.
 
-Adaptive Forms based on Core Components can now include a Table component to present complex, structured data in tabular layouts. Government and financial services forms often require tabular layouts for numeric data, line items, and multi-column inputs. The Table component supports:
-- Structured row and column authoring with header and body rows
-- Repeatable rows with add and remove actions at runtime
-- Column sorting with ascending and descending order
-- Disable sorting on individual columns for accessibility compliance
-- Proportional column widths
-- Merge and split table row cells
-- Replace default text box cells with other Adaptive Form components
-- Row-level calculations using the Rule Editor
-- Table rendering in Submission PDF (Document of Record).
- 
-For more information, see [Add a table to an Adaptive Form (Core Components)](/help/forms/adaptive-forms-tables-core-components.md).
+#### Interactive Communication Editor enhancements {#ic-editor-enhancements}
 
-#### Document conversion APIs
+Authors can create reusable document designs, add digital signature fields, and configure accessibility properties in the Interactive Communication (IC) Editor:
 
-Added support for new [document conversion APIs](/help/forms/aem-forms-communication-api-overview.md#document-conversion-apis) that enable applications to convert documents to supported formats and optimize PDFs for printing and processing. The following APIs are available:
-- **HTML to PDF** – Converts HTML documents to PDF while preserving page layout and styling.
-- **PostScript (PS) to PDF** – Converts PostScript documents to PDF.
-- **PDF to Image** – Converts PDF documents into one or more image files.
-- **PDF to PostScript (PS)** – Converts PDF documents to PostScript format.
-- **Flatten PDF Transparency** – Flattens transparent objects in PDF documents to improve compatibility with print and document processing workflows.
+* **Create XDP templates and fragments:** Create XML Data Package (XDP) templates and fragments directly in the editor, configure data bindings, and reuse fragments across document designs. Preview generated Portable Document Format (PDF) output while refining the design. See [Work with XDP files in the IC Editor](/help/forms/interactive-communication/support-xdp-editing.md).
+* **Add a Sign component:** Place a digital signature field in a document and configure which fields are locked after signing, including fields in a named collection. Recipients can sign the generated PDF in Adobe Acrobat, helping teams protect completed document content.
+* **Configure accessibility while authoring:** Set accessibility roles, screen reader text and precedence, and navigation order, then generate tagged PDF output. These controls help authors prepare communications for readers who use assistive technologies.
 
-#### Locale support for Interactive Communication
+#### Custom submit actions in Universal Editor {#custom-submit-actions-universal-editor}
 
-Interactive Communication Editor now allows authors to [configure the locale for an Interactive Communication](/help/forms/interactive-communication/support-localization.md). The selected locale determines language and region-specific formatting, such as dates, numbers, and currencies, enabling localised content for different audiences
+Authors can select and configure custom submit actions for Edge Delivery Services Adaptive Forms in the Universal Editor's Form Properties interface. Supported action-specific configuration fields appear when the action is selected, enabling teams to connect forms to custom submission processes without switching authoring experiences. See [Configure submit actions for forms created in Universal Editor](/help/edge/docs/forms/universal-editor/submit-action.md).
 
-#### Virus scanning and custom validation for file attachments
+#### Theme Editor for Core Components based Adaptive Forms {#theme-editor-core-components}
 
-Validate file attachments in Adaptive Forms before or on submission using custom validation logic, such as integrating a malware or virus scanning service. You can use form rules to trigger validation, or configure validation to run on form submission. Both approaches reject invalid or infected files before persistence, helping protect sensitive data and systems. For details, see [Implement a custom validator](/help/forms/scan-file-attachments-custom-validator.md) and [Tutorial: Antivirus scanning integration](/help/forms/scan-file-attachments-clamav.md).
+Style Core Components based Adaptive Forms visually in the Theme Editor and preview changes as you work. Customize colors, typography, borders, and spacing, then reuse themes across forms to maintain a consistent appearance. See [Customize Adaptive Form themes using the Theme Editor](/help/forms/customizing-themes-using-theme-editor.md).
+
+#### Dynamic Media images in Adaptive Forms {#dynamic-media-images-adaptive-forms}
+
+Authors can select Dynamic Media assets for the Image component in an Adaptive Form. The component resolves the selected asset reference to its Dynamic Media delivery URL, enabling teams to reuse centrally managed images in forms rather than uploading separate copies.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
