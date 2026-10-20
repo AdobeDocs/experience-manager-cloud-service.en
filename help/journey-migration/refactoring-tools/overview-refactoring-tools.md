@@ -2,6 +2,9 @@
 title: Refactoring Tools Overview
 description: Learn how to get started with AEM Refactoring Tools
 exl-id: b8137e01-87e8-4298-b0cc-b376330cb730
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 ---
 <!--
  Alexandru: temporarily commeting this out, since it breaks validation

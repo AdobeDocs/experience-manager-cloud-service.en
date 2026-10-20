@@ -15,8 +15,8 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
 ---
-# Flash Viewers End-of-Life {#flash-viewers-end-of-life-notice}
+# Flash Viewers Support Termination {#flash-viewers-end-of-life-notice}
 
-Effective January 31, 2017, support for the Flash viewer Platform is officially end-of-life.
+Effective January 31, 2017, support for the Flash viewer platform is officially discontinued.
 
-See the [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) for the latest supported viewers.
+See the [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources) for the latest supported viewers.

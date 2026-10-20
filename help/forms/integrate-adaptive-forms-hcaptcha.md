@@ -7,6 +7,14 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: dc7ca723-1008-472a-b6eb-8e9ed6332a16
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Connect your AEM Forms environment with hCaptcha&reg; {#connect-your-forms-environment-with-hcaptcha-service}
 
@@ -55,8 +63,9 @@ To configure hCaptcha&reg; with AEM Forms, you need to obtain the [hCaptcha&reg;
 
         ![Configure the Cloud Service to connect your AEM Forms environment with hCaptcha&reg;](assets/create-hcaptcha-config.png)
 
-  >[!NOTE]
-  > Users need not to modify [Client-side JavaScript validation URL](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) and [Server-side validation URL](https://docs.hcaptcha.com/#verify-the-user-response-server-side) as they are already prefilled for hCaptcha&reg; validation. For some countries, the endpoints may differ, visit [hCaptcha&reg; FAQs](https://docs.hcaptcha.com/faq#does-hcaptcha-support-access-by-users-in-china) for more information.
+>[!NOTE]
+>
+>Users need not to modify [Client-side JavaScript validation URL](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) and [Server-side validation URL](https://docs.hcaptcha.com/#verify-the-user-response-server-side) as they are already prefilled for hCaptcha&reg; validation. For some countries, the endpoints may differ, visit [hCaptcha&reg; FAQs](https://docs.hcaptcha.com/faq#does-hcaptcha-support-access-by-users-in-china) for more information.
 
 Once the hCAPTCHA service is configured, it is available for use in an Adaptive Form.
 

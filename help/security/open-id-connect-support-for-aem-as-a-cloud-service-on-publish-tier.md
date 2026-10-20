@@ -4,6 +4,18 @@ description: Learn how to set up Open ID Connect (OIDC) for AEM as a Cloud Servi
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Open ID Connect Support for AEM as a Cloud Service on Publish Tier {#open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier}
 
@@ -106,6 +118,13 @@ Now, configure the OIDC authentication handler. Multiple OIDC connections can be
    * `defaultConnectionName`: configure with the same name defined for the OIDC connection on the previous step
    * `pkceEnabled`: `true` Proof Key for Code Exchange (PKCE) on Authorization code flow 
    * `idp`: the name of the [OAK External Identity Provider](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html). Note that different OAK IDP cannot share users or groups
+   * `jwkSetHttpSizeLimit`: maximum size, in bytes, of the JWK set document fetched from the IdP's `jwks_uri` when validating the ID token signature. Increase this if the IdP publishes a large key set and token validation fails with `Exceeded configured input limit`. Must be between 1 and 10485760 (10 MB); an unbounded value is not allowed on the authentication path. Defaults to `51200` (50 KB).
+   * `jwkSetHttpConnectTimeout`: connect timeout, in milliseconds, for retrieving the JWK set from the IdP's `jwks_uri`. Must be between 1 and 60000; an unbounded value is not allowed on the authentication path. Defaults to `500`.
+   * `jwkSetHttpReadTimeout`: read timeout, in milliseconds, for retrieving the JWK set from the IdP's `jwks_uri`. Must be between 1 and 60000; an unbounded value is not allowed on the authentication path. Defaults to `500`.
+
+   >[!NOTE]
+   >
+   >The three `jwkSetHttp*` properties are validated on activation: values of `0` or negative are rejected. A misconfigured value causes the handler to fail activation immediately with a descriptive error, instead of activating successfully and failing later on every OIDC callback.
 
 ### Configure SlingUserInfoProcessor {#configure-slinguserinfoprocessor}
 

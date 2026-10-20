@@ -5,6 +5,20 @@ feature: Content Fragments
 role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 solution: Experience Manager Sites
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Properties, Tags and Metadata {#properties-tags-and-metadata}
 
@@ -113,6 +127,6 @@ Then view and edit the metadata for your Content Fragment in:
 
    ![Content Fragments editor - metadata](/help/sites-cloud/administering/content-fragments/assets/cf-metadata-form-editor.png)
 
-  >[!NOTE]
-  >
-  >To use your (older) Assets metadata forms with the Content Fragments console and the new Content Fragment editor you will need to [import your forms](/help/assets/import-metadata-form-from-admin-view-to-assets-view.md) from the Admin View to the [Assets View](/help/assets/assets-view-introduction.md), where you can also [manage your metadata forms](/help/assets/metadata-assets-view.md#metadata-forms). Once imported the two versions are not synchronized.
+   >[!NOTE]
+   >
+   >To use your (older) Assets metadata forms with the Content Fragments console and the new Content Fragment editor you will need to [import your forms](/help/assets/import-metadata-form-from-admin-view-to-assets-view.md) from the Admin View to the [Assets View](/help/assets/assets-view-introduction.md), where you can also [manage your metadata forms](/help/assets/metadata-assets-view.md#metadata-forms). Once imported the two versions are not synchronized.

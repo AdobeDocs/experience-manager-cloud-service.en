@@ -3,6 +3,12 @@ title: Smart Collections in Content Hub
 description: Learn how to create and use Smart Collections in Content Hub to automatically organize assets based on search criteria.
 role: User
 badgeSaas: label="AEM Assets" type="Positive"
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 
 # Smart Collections in Content Hub {#smart-collections-content-hub}
@@ -24,28 +30,33 @@ Create a Smart Collection by saving a search and its associated criteria.
 To create a Smart Collection:
 
 1. Navigate to Assets.
-2. Search for assets using keywords.
- ![Search assets](assets/search-assets.png)
+1. Search for assets using keywords.
 
-3. Refine results using filters from the search panel.
+   ![Search assets](assets/search-assets.png)
 
-4. Select **Save as** and select **Content Hub Smart Collection**.
- ![Apply filters](assets/apply-filters.png)
+1. Refine results using filters from the search panel.
 
-5. In the confirmation dialog, review the information and select **Continue**.
- ![Smart Collection confirmation](assets/new-collection-tab.png)'
+1. Select **Save as** and select **Content Hub Smart Collection**.
 
- >[!NOTE]
- >
- >A Smart Collection does not store individual assets. It stores the search criteria and automatically includes assets that match the defined filters.
+   ![Apply filters](assets/apply-filters.png)
+
+1. In the confirmation dialog, review the information and select **Continue**.
+
+   ![Smart Collection confirmation](assets/new-collection-tab.png)'
+
+   >[!NOTE]
+   >
+   >A Smart Collection does not store individual assets. It stores the search criteria and automatically includes assets that match the defined filters.
 
 1. In the **New Collection** dialog, specify the following details:
+
    * Title for the collection
    * Optional description
    * Collection cover image
    * Collection visibility (Private or Public)
    * Access settings based on selected visibility
-    ![Create Smart Collection](assets/create-sc.png)
+
+   ![Create Smart Collection](assets/create-sc.png)
 
 1. Select **Create smart collection**.
 
