@@ -1,6 +1,6 @@
 ---
 title: Agentic Form Filling for Adaptive Forms
-description: Learn about Agentic Form Filling, which lets customers complete AEM Adaptive Forms through AI assistants and agents, website chatbots, or WhatsApp.
+description: Learn about Agentic Form Filling for AEM Adaptive Forms, including supported channels, form compatibility, data handling, and how to request Early Access.
 feature: Adaptive Forms
 role: Admin, Developer
 hide: true
@@ -20,13 +20,13 @@ role_v2:
 
 <span class="preview"> Agentic Form Filling is under the Early Access Program. This Early Access documentation is subject to change. You can write to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your work email address to join the early access program and request access to the capability. </span>
 
+Long or complex forms are a common point of abandonment, users lose track of what is being asked or why, and the submissions received are often incomplete.
+Agentic Form Filling lets customers complete an Adaptive Form in Adobe Experience Manager (AEM) Forms through a conversation with an AI assistant, website chatbot, or WhatsApp.
+
 ![Agentic Form Filling collects and validates customer answers through an AI assistant, website chatbot, or WhatsApp to complete and submit an Adaptive Form.](assets/agentic-form-filling-overview.png)
 
-Long or complex forms are a common point of abandonment, users lose track of what is being asked or why, and the submissions received are often incomplete.
 
-Agentic Form Filling lets your customers complete an Adaptive Form by chatting, instead of working through a traditional form layout. Customers answer questions in plain language, in an AI assistant, a chatbot on your website, or [!DNL WhatsApp], and an AI-powered form filling agent collects, validates, and submits their data for them.
-
-Agentic Form Filling uses your existing and already published forms and rules, validations, and submit action configured in your Adaptive Forms. There are some limitations in this Early Access feature, see the [known Early Access limitations](#limitations) for details.
+Agentic Form Filling reuses your published Adaptive Form's supported rules and validations and its configured submit action. See the [known Early Access limitations](#limitations) for details.
 
 This article explains how an Agentic Form Filling conversation works, which channels and forms it supports, how the service handles customer data, and how to request Early Access.
 
@@ -40,23 +40,19 @@ This article explains how an Agentic Form Filling conversation works, which chan
 
 A conversation moves through four stages:
 
-1. A client application, such as a chatbot or an AI assistant, starts a conversation for a form. If the customer describes what they want to do instead of naming a form, the service can match the request to the forms you have enabled.
-1. The service asks for one group of related fields at a time, usually the fields in one panel of the form. Each answer is checked against the form's rules. If an answer isn't valid, the service explains why and asks again, without losing anything already collected. Rules that show or hide fields or compute values run as the conversation progresses, so customers are asked only for fields that apply to them. In below example, one message fills three fields, and the next question offers its choices as buttons:
 
-   ![A chat in which one customer message fills the name, mobile number, and email fields, followed by a question that offers profession options and a Skip button](/help/forms/assets/agentic-form-filling-collect.png)
 
-1. **Confirm**: When all fields are collected, the service shows a summary. The customer confirms it, or changes any answer before submitting.
+|  |  |
+| --- | --- |
+| ![Workflow showing Start, Collect, Confirm, and Submit, with repeated questions, answer editing, and submission status checks.](assets/agentic-form-filling-workflow.svg) | 1. **Start**: A client application, such as a chatbot or an AI assistant, starts a conversation for a form. If the customer describes what they want to do instead of naming a form, the service can match the request to the forms you have enabled.<br>2. **Collect**: The service asks for one group of related fields at a time, usually the fields in one panel of the form.<br>Each answer is checked against the form's rules. If an answer isn't valid, the service explains why and asks again, without losing anything already collected.<br>Rules that show or hide fields or compute values run as the conversation progresses, so customers are asked only for fields that apply to them.<br>In this example, one message fills three fields, and the next question offers its choices as buttons:<br>![A chat in which one customer message fills the name, mobile number, and email fields, followed by a question that offers profession options and a Skip button](/help/forms/assets/agentic-form-filling-collect.png)<br>3. **Confirm**: When all fields are collected, the service shows a summary. The customer confirms it, or changes any answer before submitting.<br>![A conversation summary listing the customer's answers, with Confirm and Submit, Edit, and Cancel buttons](/help/forms/assets/agentic-form-filling-summary.png)<br>4. **Submit**: The service sends the collected data to the form's configured submit action. Submission runs in the background, and the client checks its status to tell the customer when it's complete. |
 
-   ![A conversation summary listing the customer's answers, with Confirm and Submit, Edit, and Cancel buttons](/help/forms/assets/agentic-form-filling-summary.png)
-
-1. **Submit**: The service sends the collected data to the form's configured submit action. Submission runs in the background, and the client checks its status to tell the customer when it's complete.
 
 ## Key concepts {#key-concepts}
 
 Each conversation runs in one of the following modes:
 
-* In *guided mode*, the chatbot tells the customer exactly what information to enter or select. For example, it asks “What is your email address?” and puts the answer into the email field. It already knows which field the answer belongs to, so it does not need AI to interpret it. No AI model processes the customer's answers.
-* In *natural-language mode*, customers answer in their own words, and can give several answers in one message, such as "I'm Priya Sharma, my email is priya@example.com." An AI model extracts the field values from the message, and anything it couldn't find is asked for again.
+* In *guided mode*, the chatbot asks for specific information and sends each answer to the service with its form field identified. For example, it asks “What is your email address?” and sends the answer for the email field. The service does not need AI to work out which field the answer belongs to. No AI model processes the customer's answers.
+* In *natural-language mode*, customers answer in their own words and can provide several answers in one message, such as “I'm Priya Sharma, my email is priya@example.com.” An AI model extracts the form-field values from the message. The service asks again for any missing answers.
 
 **Field groups**: Instead of asking one field at a time, the service asks for related fields together, usually all the fields in one panel of the form. A group holds at most 10 fields; a larger panel is split across several turns.
 
@@ -94,7 +90,11 @@ You can start a conversation for a form you've enabled, or directly from the URL
 
 ### WhatsApp {#whatsapp}
 
-Customers can find and fill forms in a [!DNL WhatsApp] chat with your business. They can list the available forms, or search for one by describing what they need, for example "find insurance claim." Questions with a few choices appear as tap-to-answer buttons or lists, consent check boxes appear as agree and decline buttons, and optional fields include a Skip button. Customers answer in their own words, review a summary, and confirm or edit before submitting.
+Customers can find and fill forms in a [!DNL WhatsApp] chat with your business. They can list the available forms, or search for one by describing what they need, for example "find insurance claim."
+
+Questions with a few choices appear as tap-to-answer buttons or lists, consent check boxes appear as agree and decline buttons, and optional fields include a Skip button.
+
+Customers answer in their own words, review a summary, and confirm or edit before submitting.
 
 Customers can type cancel to stop a conversation before submission is initiated, restart to start over, or help to see the available commands. Once submission is initiated, it cannot be canceled.
 
@@ -115,7 +115,7 @@ The following known limitations apply during Early Access:
 
 ## Data handling and privacy {#data-privacy}
 
-The service handles form answers and submissions as follows.
+In natural-language mode, personal data in form answers is masked before AI field extraction. Descriptions used to find a matching form are not masked. The following details explain how the service handles form answers and submissions.
 
 * **Personal data in form answers is masked before AI processing.** In natural-language mode, personal details in the customer's message, such as names, email addresses, phone numbers, card numbers, and national ID numbers, are replaced with placeholders before the text is sent to the AI model. The real values are restored on the server after the field values are extracted. Masking supports English and Spanish; other languages use the English detectors.
 * **No masking, no AI processing.** If masking is unavailable, the service rejects the natural-language turn rather than send unmasked text to the AI model. The customer can try again. Guided mode doesn't send the customer's answers to an AI model.
