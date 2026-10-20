@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="1030" viewBox="0 0 680 1030" role="img" aria-labelledby="title description">
+  <title id="title">Agentic Form Filling workflow</title>
+  <desc id="description">Start a conversation, collect and validate answers, review the summary, submit, and check submission status. Repeat collection as needed and allow edits before submission.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#38516b"/>
+    </marker>
+  </defs>
+  <rect width="680" height="1030" fill="#ffffff"/>
+  <g fill="none" stroke="#38516b" stroke-width="2.5" marker-end="url(#arrow)">
+    <path d="M340 130 V190"/>
+    <path d="M340 290 V350"/>
+    <path d="M340 450 V540"/>
+    <path d="M340 640 V730"/>
+    <path d="M340 830 V890"/>
+    <path d="M140 400 H65 V240 H140"/>
+    <path d="M540 590 H615 V400 H540"/>
+  </g>
+  <g fill="#edf5fc" stroke="#38516b" stroke-width="2">
+    <rect x="140" y="30" width="400" height="100" rx="14"/>
+    <rect x="140" y="190" width="400" height="100" rx="14"/>
+    <rect x="140" y="350" width="400" height="100" rx="14"/>
+    <rect x="140" y="540" width="400" height="100" rx="14"/>
+    <rect x="140" y="730" width="400" height="100" rx="14"/>
+    <rect x="140" y="890" width="400" height="100" rx="14"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#182b3e">
+    <g font-size="23" font-weight="700">
+      <text x="340" y="69">1. Start</text>
+      <text x="340" y="229">2. Collect</text>
+      <text x="340" y="389">Answer and validate</text>
+      <text x="340" y="579">3. Confirm</text>
+      <text x="340" y="769">4. Submit</text>
+      <text x="340" y="929">Check status</text>
+    </g>
+    <g font-size="18">
+      <text x="340" y="103">Customer requests a form</text>
+      <text x="340" y="263">Service asks for related information</text>
+      <text x="340" y="420">Customer answers; service applies rules</text>
+      <text x="340" y="613">Customer reviews the summary</text>
+      <text x="340" y="803">Service runs the form's submit action</text>
+      <text x="340" y="963">Client checks and reports submission status</text>
+    </g>
+    <g font-size="17">
+      <text x="340" y="490">Required information collected</text>
+      <text x="340" y="684">Customer confirms submission</text>
+      <text x="38" y="320" transform="rotate(-90 38 320)">Repeat questions as needed</text>
+      <text x="646" y="495" transform="rotate(90 646 495)">Customer edits an answer</text>
+    </g>
+  </g>
+</svg>
