@@ -160,7 +160,7 @@ For the (selected) Content Fragment:
 {{properties.title}}, {{properties.description}}, {{{fields.field_name}}} 
 ```
 
-### Referenced Content Fragments {#referenced-content-fragments}
+### Referenced Content Fragments - Context Object {#referenced-content-fragments-context-object}
 
 The structure of the context object for any referenced fragments:
 
@@ -346,7 +346,7 @@ Remember:
 * `{{name}}` uses double braces (plain text label)
 * `{{{value}}}` uses triple braces (pre-rendered HTML value)
 
-## Referenced Content Fragments {#referenced-content-fragments}
+## Referenced Content Fragments - Access {#referenced-content-fragments-access}
 
 When a Content Fragment field references another Content Fragment, you can use dot notation to directly access fields in the referenced fragment.
 
