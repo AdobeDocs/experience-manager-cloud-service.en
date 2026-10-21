@@ -214,7 +214,9 @@ A selection of data types is available for defining your model:
   >* in the Touch UI (original) Content Fragment Model Editor
   >* in the new Content Fragment Editor
   >
-  >The new Content Fragment Model Editor and the Touch UI (original) Content Fragment Editor will block access to the Composite Data Type and any dependent fields.
+  >The new Content Fragment Model Editor and the Touch UI (original) Content Fragment Editor will block access to the Composite Data Type and any dependent fields. 
+  >
+  >For Composite fields in the new Content Fragment Model Editor you will see the message: Please register renderer for "composite" type.
 
 * **JSON Object**
   * Allows the Content Fragment author to enter JSON syntax into the corresponding elements of a fragment. 
@@ -444,8 +446,6 @@ In addition to standard properties you can define:
 
   This allows the fragment author to create a fragment based on the appropriate model.
 
-  * **fragmentreferencecomposite** - allows the fragment author to build a composite, by selecting multiple fragments
-
   ![Fragment Reference](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-fragment-reference.png)
 
 >[!NOTE]
@@ -526,54 +526,8 @@ In addition to standard properties you can define:
 >* in the new Content Fragment Editor
 >
 >The new Content Fragment Model Editor and the Touch UI (original) Content Fragment Editor will block access to the Composite Data Type and any dependent fields.
-
-<!-- CQDOC-23582 - should not be needed have moved details to Properties section -->
-
-<!--
-#### Define a Composite field {#define-a-composite-field}
-
-From the Touch UI [(original) Content Fragment Model Editor](/help/assets/content-fragments/content-fragments-models.md) the Composite data type appears in the list of available field types. 
-
-![Fragment Reference](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-fragment-composite.png)
-
-To configure:
-
-* **Render As**
-
-  Specify either:
-
-  * **Multiple Field** supports add/remove/reorder with min/max constraints
-  * **Composite Field** holds at most one item
-
-* **Min/Max Number of items**
-
-  For multi-value composites, set min and max bounds for the number of items
-
-* **Type** 
-
-  Specify one or more Content Fragment Models. Fields from these models will appear as composite items. Multiple models can be selected, the author then chooses which model when adding an item.
-
->[!NOTE]
 >
->The new Content Fragment Model Editor will block editing of composite fields.
--->
-
-<!-- CQDOC-23582 - moved to authoring - check usage before GA -->
-
-<!--
-#### Edit a Composite item {#edit-a-composite-item}
-
-From the [new Content Fragment Editor](/help/sites-cloud/administering/content-fragments/authoring.md) you can open a fragment that contains a composite field and see:
-
-* A panel-style rendering for the composite field, not an inline form. Selecting the composite item opens its fields in a dedicated editor area within the same browser session.
-* Add / Remove / Reorder controls for multi-value composites.
-* For multi-model fields, an **Add** dialog lets the author pick which model to instantiate.
-* A variation selector at the top level. Once a variation is chosen, the entire nested composite tree reflects that variation. Items can differ in count and content between variations.
-
->[!NOTE]
->
->The original Touch UI Fragment Editor will block editing of composite fields.
--->
+>For Composite fields in the new Content Fragment Model Editor you will see the message: Please register renderer for "composite" type.
 
 <!-- CQDOC-23582 - review -->
 
@@ -634,7 +588,7 @@ To use the migration tool for composite conversion:
 
 ### Comparison of Nested Content {#comparison-of-nested-content}
 
-<!-- CQDOC-23582 - check usage details before GA -->
+There are several methods of creating, and maintaining, nested content. 
 
 #### Benefits of Composite {#benefits-of-composite}
 
@@ -655,8 +609,6 @@ The Composite data type offers several benefits when modeling data:
   * Simpler content structures with fewer fragment references reduce the overhead of reference resolution during authoring, publishing, and delivery operations. 
   * Simpler content structures also decrease the size and complexity of JSON payloads, helping improve API efficiency and overall client-side performance. 
 
-<!-- CQDOC-23582 - check usage details before GA -->
-
 #### When to use Composite {#when-to-use-composite}
 
 Use of the Composite data type should be carefully considered, as your use-case can determine which sort of nested content is the best solution for you.
@@ -675,8 +627,6 @@ Use of the Composite data type should be carefully considered, as your use-case 
 
 #### Limitations of Composite{#limitations-of-composite}
 
-<!-- CQDOC-23582 - what will be implemented when - or how/where to keep up-to-date -->
-
 The list below consolidates the current limitations of the Composite data type:
 
 * Authoring surface
@@ -685,6 +635,7 @@ The list below consolidates the current limitations of the Composite data type:
     * Composite fields are not supported. 
   * New (Headless) Content Fragment Model Editor
     * The Composite type is not yet supported. Model authoring uses the original Touch UI Model Editor.
+    For Composite fields you will see the message: Please register renderer for "composite" type..
   * Admin UI / search
     * Composite fields do not appear in search results. This is not a defect, but is by design to limit content-tree complexity exposed via search.
 
@@ -692,12 +643,6 @@ The list below consolidates the current limitations of the Composite data type:
 
   * No complexity guardrails in the UI
     * The system can technically accept composite structures that are very expensive to render or process (deep nesting plus large multi field arrays at multiple levels). 
-
-    <!-- CQDOC-23582 - check need, we don't usually mention future work -->
-
-    <!--
-    Future work will add a complexity metric (depth + cumulative multi-field item counts + field counts) and surface it in the model editor.
-    -->
 
 * Cross-feature support
 
