@@ -112,7 +112,11 @@ You can deliver your Composite items with the following APIs:
   * `GET /adobe/sites/cf/fragments/{uuid\}?partial={fieldPath\}` resolves a single composite subtree, used by the editor to expand a composite on demand. This is the endpoint tracked in Splunk for adoption (references=direct&partial=…).
   * `POST` / `PATCH` / `PUT` accept composite payloads, single and bulk.
   * For models, `GET` and `POST` model operations support defining composite fields with allowed `modelIds`.
-  * Variations: `GET` model and UI schema endpoints support a variation query parameter; the variation `GET` fragment endpoint supports `partial`; `PATCH` on variations: Support `partial` parameter on variation PATCH endpoint.
+  * For Variations:
+  
+    * `GET` model and UI schema endpoints support a variation query parameter
+    * the variation `GET` fragment endpoint supports `partial`
+    * `PATCH` on variations: Support `partial` parameter on variation PATCH endpoint
 
 * From the Delivery APIs
 
@@ -120,8 +124,8 @@ You can deliver your Composite items with the following APIs:
 
   * REST Delivery API. There are two paths:
 
-  * pre-baked at publish time
-  * in-process delivery from AEM
+    * pre-baked at publish time
+    * in-process delivery from AEM
 
   >[!NOTE]
   >
