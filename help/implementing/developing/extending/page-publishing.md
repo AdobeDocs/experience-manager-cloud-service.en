@@ -14,7 +14,11 @@ role_v2:
 ---
 # Customizing Page Publishing {#customizing-page-publishing}
 
-You can publish a page from various locations in Adobe Experience Manager as a Cloud Service (AEM). Whether a new page version is created upon publish is determined by the location from where you trigger the publish event.
+Adobe Experience Manager (AEM) as a Cloud Service provides mechanisms to let you customize the functionality of page publishing of your authoring instance.
+
+## Control version creation upon publish {#control-version-creation-upon-publish}
+
+You can publish a page from various locations in AEM. Whether a new page version is created upon publish is determined by the location from where you trigger the publish event.
 
 To ensure a new version is always created you can use a Cloud Manager Environment variable.
 
@@ -29,7 +33,7 @@ To ensure a new version is always created you can use a Cloud Manager Environmen
 >
 >Disabling the variable will only deactivate creating a new version from the same locations. It will not deactivate creating a new version from all locations.
 
-## Environment variable to control version creation upon publish {#environment-variable-to-control-version-creation-upon-publish}
+### Environment variable to control version creation upon publish {#environment-variable-to-control-version-creation-upon-publish}
 
 To enable creating a new page version when publishing a page from specific locations in AEM create a [Cloud Manager environment variable](/help/implementing/cloud-manager/environment-variables.md):
 
