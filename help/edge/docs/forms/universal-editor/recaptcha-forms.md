@@ -1,6 +1,6 @@
 ---
 title: Add Google reCAPTCHA to Forms in Universal Editor
-description: Guide to implementing Google reCAPTCHA protection in Edge Delivery Services forms to prevent spam and automated attacks
+description: Configure score-based Google reCAPTCHA Enterprise protection in Edge Delivery Services forms to prevent spam and automated attacks.
 feature: Edge Delivery Services
 keywords: reCAPTCHA in forms, Using reCAPTCHA in Universal Editor, Add reCAPTCHA in forms, form security, spam protection
 role: Developer, Admin
@@ -27,12 +27,11 @@ level_v2:
 
 # Add Google reCAPTCHA to Forms in Universal Editor
 
-Google reCAPTCHA helps protect forms by distinguishing between human users and automated bots. This guide explains how to implement both reCAPTCHA Enterprise and Standard versions in Universal Editor.
+Google reCAPTCHA helps protect forms by distinguishing between human users and automated bots. Edge Delivery Services Forms supports only reCAPTCHA Enterprise with score-based site keys. This guide explains how to configure this protection for forms in Universal Editor.
 
 **Objectives:**
 
-- Select the appropriate reCAPTCHA solution
-- Configure reCAPTCHA Enterprise or Standard
+- Configure reCAPTCHA Enterprise with a score-based site key
 - Add reCAPTCHA to your forms
 - Validate and test the implementation
 - Monitor and optimize performance
@@ -49,8 +48,7 @@ Before starting, ensure you have the following:
 ### Technical Requirements
 
 - Active Google account
-- For Enterprise: Google Cloud Platform project with billing enabled
-- For Standard: Google reCAPTCHA account
+- Google Cloud Platform project with billing enabled
 - Verified domain ownership for your forms
 
 ### Knowledge Requirements
@@ -61,56 +59,17 @@ Before starting, ensure you have the following:
 
 ## Why Use reCAPTCHA in Your Forms?
 
-| ![Security](/help/edge/docs/forms/universal-editor/assets/security.svg) | ![Bot Protection](/help/edge/docs/forms/universal-editor/assets/bot-protection.svg) | ![User Experience](/help/edge/docs/forms/universal-editor/assets/user-experience.svg) |
-|:-------------:|:-------------:|:-------------:|
-| **Enhanced Security** | **Bot & Spam Prevention** | **Seamless User Experience** |
-| Protect forms from fraudulent activities and attacks | Prevent automated bots from submitting forms | Invisible reCAPTCHA does not disrupt legitimate users |
+reCAPTCHA Enterprise evaluates user interactions to help protect forms from spam and automated abuse. Google documents the following capabilities:
 
-**Key Concept:** reCAPTCHA uses machine learning to analyze user behavior and assigns a score (0.0 to 1.0) indicating the likelihood of human interaction. Higher scores indicate human users; lower scores suggest bots.
+| Capability | What Google provides |
+|------------|----------------------|
+| Risk-based assessments | A score from 0.0 to 1.0 for each assessed interaction. Higher scores indicate lower risk; lower scores indicate higher risk. See [Interpret assessments for websites](https://docs.cloud.google.com/recaptcha/docs/interpret-assessment-website). |
+| Challenge-free protection | Score-based keys assess interactions without displaying a checkbox or CAPTCHA challenge. See [reCAPTCHA keys](https://docs.cloud.google.com/recaptcha/docs/keys). |
+| Analytics and reporting | Dashboards, global fraud reports, and platform logging. Google's Enterprise tier also offers advanced analytics, customer-specific fraud reports, and attack investigation. See [Google's feature comparison](https://docs.cloud.google.com/recaptcha/docs/compare-tiers). |
+| Domain restrictions | Website keys can be restricted to specified domains and their subdomains. A key can cover multiple domains. See [Create reCAPTCHA keys for websites](https://docs.cloud.google.com/recaptcha/docs/create-key-website). |
+| Additional fraud protections | Google's broader service offers custom policies, advanced risk reason codes, and account and transaction protection features. Availability depends on the tier and feature-specific configuration. See [Google's feature comparison](https://docs.cloud.google.com/recaptcha/docs/compare-tiers). |
 
-**Example:** A tax calculation form handling sensitive data requires protection from automated attacks. reCAPTCHA verifies that submissions are from real users, not bots.
-
-## Choose Your reCAPTCHA Solution
-
-Edge Delivery Services Forms supports two Google reCAPTCHA options. Use the following criteria to select the right solution:
-
-### Quick Decision Guide
-
-**Use reCAPTCHA Enterprise if you have:**
-
-- High-traffic forms (>10,000 requests/month)
-- Strict compliance requirements (GDPR, SOX, HIPAA)
-- Need for advanced analytics and reporting
-- Budget for premium security features
-- Complex multi-domain deployments
-
-**Use reCAPTCHA Standard if you have:**
-
-- Low to moderate traffic (<10,000 requests/month)
-- Basic security needs
-- Limited budget (free tier)
-- Simple single-domain setup
-- Are new to reCAPTCHA
-
-### Detailed Comparison
-
-| **Feature** | **reCAPTCHA Enterprise** | **reCAPTCHA Standard** |
-|-------------|--------------------------|------------------------|
-| **Cost** | Paid (usage-based pricing) | Free |
-| **Request Limit** | Unlimited | 1M requests/month |
-| **Advanced Analytics** | Detailed reporting | Basic stats only |
-| **Custom Rules** | Account-specific rules | Global rules only |
-| **Multi-domain Support** | Advanced management | Basic support |
-| **SLA** | 99.9% uptime guarantee | Best effort |
-| **Support** | Enterprise support | Community support |
-| **Compliance** | Enterprise-grade | Standard compliance |
-
-**Both solutions provide:**
-
-- Score-based detection (0.0 to 1.0 scale)
-- Invisible operation (no user interaction required)
-- Machine learning-powered bot detection
-- Real-time risk assessment
+**Pricing, quotas, and support:** Costs depend on the Google service tier and assessment volume. Usage is subject to [Google's quotas](https://docs.cloud.google.com/recaptcha/quotas), not unlimited. For current pricing, subscription requirements, and support options, see [Google's tier details](https://docs.cloud.google.com/recaptcha/docs/compare-tiers). Google lists customer support across its tiers and dedicated account management for its Enterprise tier.
 
 ## Set Up reCAPTCHA Enterprise
 
@@ -142,11 +101,12 @@ Edge Delivery Services Forms supports two Google reCAPTCHA options. Use the foll
    - Copy and store your API key
 
 4. Create Site Key
-   - Go to Security > reCAPTCHA Enterprise
-   - Click Create Key
-   - Choose Score-based key type
+   - Go to Security > Fraud Defense > Keys
+   - Click Create key and select Web as the application type
    - Add your domain(s)
-   - Set threshold score (recommended: 0.5)
+   - Click Next step (optional) to open the additional settings
+   - Keep Will you use challenges? turned off to create a score-based site key
+   - Click Create key and copy the site key
 
 **Validation Checkpoint:** Ensure you have:
 
@@ -223,96 +183,6 @@ Edge Delivery Services Forms supports two Google reCAPTCHA options. Use the foll
 - All required fields completed
 - Configuration published and visible
 - No error messages
-
-+++
-
-## Set Up reCAPTCHA Standard
-
-+++Step 1: Obtain reCAPTCHA API Keys (See details)
-
->[!IMPORTANT]
->
-> Edge Delivery Services Forms only supports reCAPTCHA v2 (Score-based). Do not use the checkbox version.
-
-**Key Generation:**
-
-1. Access Google reCAPTCHA Console
-
-   - Go to [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin)
-   - Sign in with your Google account
-
-2. Create New Site
-
-   - Click + to add a new site
-   - Label: Enter a descriptive name
-   - reCAPTCHA Type: Select reCAPTCHA v2 > "I'm not a robot" Invisible
-   - Domains: Add your form domain(s)
-   - Accept terms and click Submit
-
-3. Collect Your Keys
-
-   - Site Key: Copy the site key (public key)
-   - Secret Key: Copy the secret key (private key)
-
-**Validation Checkpoint:**
-
-- Site created in reCAPTCHA console
-
-- Site Key obtained
-
-- Secret Key obtained
-
-- Domain(s) added and verified
-
-+++
-
-+++Step 2: Configure AEM Cloud Configuration Container (See details)
-
-Follow the same process as in the Enterprise setup:
-
-1. Enable Cloud Configurations in Configuration Browser
-
-2. Verify container configuration
-
-3. Confirm settings are saved
-
-+++
-
-+++Step 3: Configure reCAPTCHA Standard Service in AEM (See details)
-
-![reCAPTCHA Standard configuration screen](/help/edge/docs/forms/universal-editor/assets/recaptcha.png)
-*Figure: reCAPTCHA Standard configuration interface in AEM*
-
-**Configuration:**
-
-1. Access reCAPTCHA Configuration
-
-   - Go to Tools > Cloud Services > reCAPTCHA
-   - Select your form's configuration container
-   - Click Create
-
-2. Configure Standard Settings
-
-   - Title: Descriptive name (e.g., "Standard reCAPTCHA")
-   - Name: System name (auto-generated or custom)
-   - Version: Select ReCAPTCHA v2
-   - Site Key: Enter your Google reCAPTCHA site key
-   - Secret Key: Enter your Google reCAPTCHA secret key
-
-3. Save and Publish
-
-   - Click Create to save configuration
-   - Click Publish to make it available
-
-**Validation Checkpoint:**
-
-- Configuration created without errors
-
-- Both keys entered correctly
-
-- Configuration published successfully
-
-- Configuration appears in the list
 
 +++
 

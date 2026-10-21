@@ -53,7 +53,7 @@ Dynamic Media does not support the following web browser and operating system co
 * Safari 8 + iOS 8.4
 * Safari 8 + OS X 10.10 Yosemite
 
-## End of support for Secure Socket Layer 2.0 and 3.0 and Transport Layer Security 1.0 and 1.1 {#tls}
+## End of support for Secure Socket Layer 2.0 and 3.0, and Transport Layer Security 1.0 and 1.1 {#tls}
 
 <!--
  CQDOC-19433 (original ticket)
