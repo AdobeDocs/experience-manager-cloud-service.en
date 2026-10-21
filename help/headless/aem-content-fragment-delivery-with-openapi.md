@@ -100,6 +100,35 @@ Support for authenticated requests can be implemented with the [AEM CDN Edge key
 >
 >Authorization based on the repository-specific ACLs is currently not supported.
 
+## Deliver a Composite item {#deliver-a-composite-item}
+
+You can deliver your Composite items with the following APIs:
+
+* From the Management OpenAPI (Content Fragments Management API)
+
+  The composite data type is fully covered across the main Management OpenAPI operations:
+
+  * `GET /adobe/sites/cf/fragments/{uuid\}` returns composite values as nested field structures.
+  * `GET /adobe/sites/cf/fragments/{uuid\}?partial={fieldPath\}` resolves a single composite subtree, used by the editor to expand a composite on demand. This is the endpoint tracked in Splunk for adoption (references=direct&partial=…).
+  * `POST` / `PATCH` / `PUT` accept composite payloads, single and bulk.
+  * For models, `GET` and `POST` model operations support defining composite fields with allowed `modelIds`.
+  * Variations: `GET` model and UI schema endpoints support a variation query parameter; the variation `GET` fragment endpoint supports `partial`; `PATCH` on variations: Support `partial` parameter on variation PATCH endpoint.
+
+* From the Delivery APIs
+
+  * GraphQL (AEM-native delivery). Composite content is returned natively in query responses. You can query a composite field the same way ypu query a nested object. No reference resolution is needed, so depth and round-trips drop accordingly. 
+
+  * REST Delivery API. There are two paths:
+
+  * pre-baked at publish time
+  * in-process delivery from AEM
+
+  >[!NOTE]
+  >
+  >If the model used inside a composite field is not published, the delivery API will skip that composite content (with a warn log on the server). This is similar to the existing behavior for fragments missing a published model. 
+  >
+  >Make sure customer publish pipelines include all models that compositions reference.
+
 <!-- 
 ## Limitations {#limitations}
 -->

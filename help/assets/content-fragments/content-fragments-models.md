@@ -398,9 +398,9 @@ In addition to standard properties you can define:
 
 * **Render As**:
 
-  * **multifield** - the fragment author can create multiple, individual, references
+  * **Multiple Field** - the fragment author can create multiple, individual, references
 
-  * **fragmentreference** - allows the fragment author to select a single reference to a fragment
+  * **Fragment Reference** - allows the fragment author to select a single reference to a fragment
 
 * **Model Type**
   Multiple models can be selected. When authoring the Content Fragment any referenced fragments must have been created using these models.
@@ -411,8 +411,6 @@ In addition to standard properties you can define:
 * **Allow Fragment Creation**
 
   This allows the fragment author to create a fragment based on the appropriate model.
-
-  * **fragmentreferencecomposite** - allows the fragment author to build a composite, by selecting multiple fragments
 
   ![Fragment Reference](assets/cfm-fragment-reference.png)
 
