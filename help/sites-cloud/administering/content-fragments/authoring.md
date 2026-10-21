@@ -233,22 +233,9 @@ Fields that are defined as either Plain Text or Markdown have a simple text box,
 
 ## Edit Multi line text fields - Rich Text {#edit-multi-line-text-fields-rich-text}
 
-For **[Multi line text](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** fields that are defined as **Rich Text**, various features are available:
+For **[Multi line text](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** fields that are defined as **Rich Text**, a comprehensive range of features is available:
 
-* Edit the content:
-  * Undo/Redo
-  * Paste/Paste as Text
-  * Copy
-  * Select paragraph format
-  * Create/manage table
-  * Format text; bold, italic, underline, color
-  * Set paragraph alignment
-  * Create/manage lists; bulleted, numbered
-  * Indent text; decrease, increase
-  * Clear current formatting
-  * Insert links
-  * Select and insert references to image assets
-  * Add special characters
+* Edit the content; including format the text, select paragraph format, set paragraph alignment, insert links, select and insert references to image assets, add special characters and others
 * [Full-screen editor](#full-screen-editor-rich-text) - toggle between full-screen and in-flow
 * [Statistics](#statistics-rich-text)
 * [Compare and Synchronize](#compare-and-synchronize-rich-text)
@@ -624,6 +611,7 @@ To enable you to collaborate in-product and in-context, the **Comments** tab in 
 * Format your comments; basic formatting is available
 * Perform a text search through existing comments
 * Edit an existing comment
+* Copy the body text
 * Delete comments
 
 <!-- CQDOC-23473 - new screenshot? -->
