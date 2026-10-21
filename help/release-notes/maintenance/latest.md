@@ -36,13 +36,13 @@ The 2026.10.0 feature activation will provide the full feature set for this main
 * CQ-4364430: Added TBX file upload and an overall terminology view to the AI Translation self-service UI.
 * CQ-4364830: Improved watchdog efficiency and logging performance for AI Translation.
 * CQ-4365346: Added DITA and DITAMAP translation for assets through AI Translation.
-* FORMS-27488: Added authoring of PDF bookmarks on headings in the Interactive Communications editor, including bookmark titles, colors, and styles.
-* FORMS-27740: Added a Signature Field component to the Interactive Communications editor, with options to lock all fields or include or exclude a named collection of fields after signing.
-* FORMS-27806: Added Dynamic Media asset selection and rendering, including Smart Crop and renditions, to the Image component in Core Components based Adaptive Forms.
-* FORMS-27807: Added services to resolve and serve Dynamic Media asset URLs in the Forms Image component, while keeping the existing handling of other image assets.
-* FORMS-28099: Added support for reading Signature Field settings and named field collections when generating Interactive Communications documents.
-* FORMS-28100: Preserved Signature Field references to named field collections in the Interactive Communications PDF preview.
-* FORMS-28241: Added support for saving Signature Field components in Interactive Communications forms.
+* FORMS-27488: Added support for authoring Portable Document Format (PDF) bookmarks on headings in the Interactive Communications (IC) Editor, including bookmark titles, colors, and styles.
+* FORMS-27740: Added a Signature Field component to the Interactive Communications (IC) Editor, with options to lock all fields or include or exclude a named collection of fields after signing.
+* FORMS-27806: Added Dynamic Media asset selection and rendering support to the Image component in Core Components based Adaptive Forms, including Smart Crop and renditions where applicable.
+* FORMS-27807: Added supporting services for resolving and serving Dynamic Media asset URLs in the Adobe Experience Manager Forms Image component while preserving existing handling of other image assets.
+* FORMS-28099: Added support for reading Signature Field settings and named field collections when generating Interactive Communications (IC) documents.
+* FORMS-28100: Added support for preserving Signature Field references to named field collections in the Interactive Communications (IC) Portable Document Format (PDF) preview.
+* FORMS-28241: Added support for saving Signature Field components in Interactive Communications (IC) forms.
 * SITES-44984, SITES-44985, SITES-45098: Added Live Copy creation and rollout for folders in Multi Site Manager, including Content Fragment folders in the Content Fragments console.
 * SITES-45040: Exposed metrics for requests to the remote content rendering service.
 * SITES-45041: Applied default timeouts to requests to the remote content rendering service.
@@ -59,41 +59,25 @@ The 2026.10.0 feature activation will provide the full feature set for this main
 
 * CQ-4363894: Fixed newly added components that were missed during translation harvesting.
 * CQ-4364614: Fixed the Go to Projects button still showing in References > Language Copies after the related translation project was deleted.
-* FORMS-20721: Fixed a NullPointerException when saving properties of Core Components based Adaptive Forms whose theme SiteConfig or HtmlConfig configuration nodes were missing.
-* FORMS-24748: Fixed the Date Field in the Interactive Communications editor Properties panel accepting text and special characters instead of requiring the yyyy-mm-dd format.
-* FORMS-24749: Fixed the Date/Time Field in the Interactive Communications editor accepting incorrectly formatted dates without a validation error.
-* FORMS-24988: Removed unnecessary "Suspicious quotes" browser-console warnings for Invoke Service rules with double-quoted object keys in request headers or parameters.
-* FORMS-25184: Fixed binding indicators in the Data Sources panel staying grey for Core Components based Adaptive Forms that use a JSON schema.
-* FORMS-26500: Fixed iOS submissions of Foundation Components based Adaptive Forms saving only one of several attachments that share the same filename.
-* FORMS-26668: Fixed incorrect captcha extractor lookups when submitting Adaptive Forms embedded in Sites.
-* FORMS-26813: Fixed the File Attachment component showing a generic unsupported-file-type message instead of the author-configured custom message.
-* FORMS-26817: Fixed Reset clearing the author-configured Image component in Core Components based Adaptive Forms.
-* FORMS-26824: Fixed rule assignments disappearing from the Rule Editor after a form object was dragged across an already populated action target.
-* FORMS-26825: Fixed rules that could not be saved after a form object was clicked without dragging in the Rule Editor.
-* FORMS-26826: Removed the "Failed to load custom functions" message shown when the Rule Editor was opened for Core Components based Adaptive Forms.
-* FORMS-26827: Fixed actions in the Else section being cleared when a condition was added to a When rule.
-* FORMS-26878: Localized the Date Picker validation message for partially entered dates in French Adaptive Forms.
-* FORMS-27549: Fixed Edge Delivery Services form downloads from Forms Manager omitting referenced fragments.
-* FORMS-27655: Fixed component overlays disappearing and forms staying in a loading state after a rule was saved in Foundation Components based Adaptive Forms.
-* FORMS-27768: Fixed text field appearance changes (Underline, Solid Box, None) not updating the value area in the Interactive Communications editor.
-* FORMS-27770: Fixed field content disappearing when the top or bottom margin was increased in the Interactive Communications editor.
-* FORMS-27808: Fixed the Home icon in the Interactive Communications editor side navigation redirecting authors away from the editor.
-* FORMS-27811: Fixed the misaligned image-selection icon and text in the Image component Properties panel of the Interactive Communications editor.
-* FORMS-27878: Fixed unnecessary document service restarts during deployment reconciliation in environments with custom fonts.
-* FORMS-27932: Fixed paragraph-level vertical padding of Interactive Communications Text components missing from the generated PDF preview.
-* FORMS-27938: Fixed bold or italic rich text in the Interactive Communications editor appearing unstyled when a document first loaded.
-* FORMS-28033: Fixed bold formatting on the first characters of a list item making the entire line bold in the Interactive Communications rich text editor.
-* FORMS-28057: Fixed first-level dependency lookups for Edge Delivery Services forms returning transitive fragment dependencies.
-* FORMS-28125: Fixed the Forms Manager theme picker showing Canvas instead of the form's saved theme after a frontend theme was redeployed.
-* FORMS-28128: Fixed the Document of Record preview loading endlessly when an Adaptive Form was opened through Unified Shell.
-* FORMS-28137: Fixed the Dashed border-style icon in the Interactive Communications editor Appearance accordion.
-* FORMS-28169: Fixed documents generated in the asset-upload workflow being saved as attachment_1 without a .pdf extension and with incorrect MIME metadata.
-* FORMS-28223: Fixed misaligned width, height, and position labels in the Interactive Communications editor Position accordion.
-* FORMS-28225: Fixed slow first Form Data Model requests to Dynamics after an upgrade.
-* FORMS-28226: Fixed deleting an Edge Delivery Services Adaptive Form, or a folder containing one, removing shared configuration still used by other forms.
-* FORMS-28236: Fixed MISSING_ASSET_EXTENSION failures when publishing Edge Delivery Services forms or fragments with assets that have no filename extension.
-* FORMS-28333: Included top and bottom margins when a text box uses vertical autofit.
-* FORMS-28433: Fixed horizontal padding missing from the Document of Record PDF preview when a floating-field variable was bound to an Interactive Communications fragment at the start of a line.
+* FORMS-20721: Saving properties for Core Components based Adaptive Forms failed with a `NullPointerException` when the theme's `SiteConfig` or `HtmlConfig` configuration nodes were missing.
+* FORMS-26500: On iOS, submitting Foundation Components based Adaptive Forms with multiple attachments sharing the same filename saved only one attachment on the server.
+* FORMS-26668: Adaptive Forms embedded in Sites used incorrect captcha extractor lookups during submission.
+* FORMS-26813: The File Attachment component in Core Components based Adaptive Forms displayed a generic unsupported-file-type message instead of the author-configured custom message.
+* FORMS-26817: Clicking Reset in Core Components based Adaptive Forms cleared the author-configured Image component and displayed a broken image instead of preserving the static image.
+* FORMS-26826: The Rule Editor displayed "Failed to load custom functions, please check console logs for details." when opened for Core Components based Adaptive Forms, including forms with no custom functions configured.
+* FORMS-26827: Adding a condition to a When rule cleared the actions in its Else section instead of preserving them.
+* FORMS-27549: Downloading an Edge Delivery Services form from Forms Manager produced a package that omitted the form's referenced fragments.
+* FORMS-28057: First-level dependency lookups for Edge Delivery Services forms returned transitive fragment dependencies. This inflated the References panel and dependency dialogs and triggered unnecessary recursive traversal.
+* FORMS-28125: After a frontend theme was redeployed, the Forms Manager theme picker incorrectly displayed Canvas instead of the form's saved theme. Saving the form's properties in this state risked selecting the wrong theme.
+* FORMS-28128: The Document of Record (DoR) preview remained in an endless loading state when an Adaptive Form was opened through Unified Shell, even though the server successfully returned the generated Portable Document Format (PDF) document.
+* FORMS-28137: In the Interactive Communications (IC) Editor's Appearance accordion, the Dashed border-style icon appeared as a box, unlike the line-shaped Solid and Dotted icons.
+* FORMS-28169: After a document-generation step, the asset-upload workflow saved the generated Portable Document Format (PDF) document as `attachment_1` without the expected `.pdf` extension and with `stream/octet-stream` metadata instead of `application/pdf`, preventing correct recognition and rendering in Assets.
+* FORMS-28223: Width, height, and position labels were misaligned in the Interactive Communications (IC) Editor's Position accordion.
+* FORMS-28225: Following an upgrade, the first Form Data Model (FDM) request of the day to Dynamics could take 1 to 2.5 minutes instead of the previously reported 8 to 15 seconds, delaying form validation.
+* FORMS-28226: Deleting an Edge Delivery Services Adaptive Form, or a folder containing one, removed shared configuration and broke other forms that still referenced that configuration.
+* FORMS-28236: Publishing Edge Delivery Services forms or fragments through attached publishing agents failed with `MISSING_ASSET_EXTENSION` for valid assets without filename extensions. Forms Manager reported "One or more agents failed to replicate."
+* FORMS-28333: Top and bottom margins were not included when a text box used vertical autofit.
+* FORMS-28433: Horizontal padding was missing from the Document of Record (DoR) Portable Document Format (PDF) preview when a floating-field variable was bound to an Interactive Communications (IC) fragment at the start of a line. The same padding appeared correctly on the canvas and with Form Data Model (FDM) bindings.
 * SITES-27753, SITES-50163: Fixed values of the Styles dropdown being hidden in the Text component dialog of the Rich Text Editor.
 * SITES-42695: Normalized asset filename extensions to lowercase when previewing assets in Edge Delivery Services with Universal Editor.
 * SITES-42804: Localized multi-line field tooltips in the Content Fragment editor.
