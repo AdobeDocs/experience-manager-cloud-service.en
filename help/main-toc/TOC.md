@@ -566,7 +566,7 @@ user-guide-title: AEM as a Cloud Service
       + [Analyzing Structure](/help/sites-cloud/administering/content-fragments/analysis.md)
       + [Previewing Fragments](/help/sites-cloud/administering/content-fragments/preview.md)
       + [Visual Content Fragments](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md)
-      + {hide-from-toc} [Reuse Content Fragments using MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
+      + [Reuse Content Fragments using MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
       + [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
       + [Assets in the Content Fragments Console](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
       + [Content Fragments with Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)

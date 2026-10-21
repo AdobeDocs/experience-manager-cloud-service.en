@@ -5,8 +5,6 @@ badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-hide: true
-index: false
 exl-id: 5039cf92-21ff-4d6c-a684-72eab13b519d
 product_v2:
   - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
@@ -25,24 +23,9 @@ role_v2:
 
 Multi Site Manager (MSM), and the Live Copy functionality, enables you to use the same content in multiple locations, while synchronizing with the source content.
 
-<!-- CQDOC-23473 - feature is currently beta so page is hidden, see metadata -->
-<!-- CQDOC-23473 - screenshots -->
-<!-- CQDOC-23473 - only mentioned once in ToC, add entries -->
-<!-- CQDOC-23473 - will work on folders -->
-
-<!-- CQDOC-23473 - feature is currently beta remove Caution for GA -->
-
-<!--
->[!CAUTION]
->
->MSM from the Content Fragment console is currently Beta functionality and only available to specific customers.
--->
-
-<!--
 >[!NOTE]
 >
 >MSM for Content Fragments is also available when using Content Fragments via the [**Assets** console](/help/assets/content-fragments/content-fragments-msm.md).
---> 
 
 * With MSM Live Copies you can:
   * Create content once 
@@ -51,25 +34,11 @@ Multi Site Manager (MSM), and the Live Copy functionality, enables you to use th
   * When you change the source content, the source and Live Copies are synchronized.
   * You can make adjustments to only the content of the Live Copies by disconnecting the live relationship for individual sub fragments and/or components.
 
-<!-- CQDOC-23473 - feature is currently beta remove Caution for GA -->
-
-For a detailed overview of MSM concepts see Reusing Content: Multi Site Manager and Live Copy.
-
-<!--
 For a detailed overview of MSM concepts see [Reusing Content: Multi Site Manager and Live Copy](/help/sites-cloud/administering/msm/overview.md).
--->
 
-<!-- CQDOC-23473 - feature is currently beta remove Caution for GA -->
-
->[!NOTE]
->
->Multi Site Manager (MSM) functionality in Adobe Experience Manager enables users to reuse content that is authored once and then reused across multiple web-locations. 
-
-<!--
 >[!NOTE]
 >
 >[Multi Site Manager (MSM)](/help/sites-cloud/administering/msm/overview.md) functionality in Adobe Experience Manager enables users to reuse content that is authored once and then reused across multiple web-locations. 
--->
 
 Using MSM for Content Fragments you can:
 
@@ -79,37 +48,19 @@ Using MSM for Content Fragments you can:
 
 MSM for Content Fragments, combined with functionality within the Content Fragment Editor, allows you to break, and reinstate inheritance at the field level.
 
-<!-- CQDOC-23473 - feature is currently beta remove Caution for GA -->
-
->[!NOTE]
->
->This page covers MSM functionality when using the **Content Fragments** console.
->
->MSM for Content Fragments is also available when using Content Fragments via the **Assets** console. 
-
-<!--
 >[!NOTE]
 >
 >This page covers MSM functionality when using the **Content Fragments** console.
 >
 >MSM for Content Fragments is also available when using [Content Fragments via the **Assets** console](/help/assets/content-fragments/content-fragments-msm.md). 
--->
 
 ## Create a Live Copy {#create-a-live-copy}
 
 You can create a Live Copy for either a single Content Fragment or an entire folder of fragments.
 
-<!-- CQDOC-23473 - feature is currently beta remove Caution for GA -->
-
->[!CAUTION]
->
->If you want to use MSM to create copies of Content Fragments), then any **Unique** constraints should be removed from any Data Types used in the respective Content Fragment Models.
-
-<!--
 >[!CAUTION]
 >
 >If you want to use MSM to create copies of Content Fragments), then any **Unique** constraints should be removed from any Data Types used in the respective [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md).
--->
 
 ### Create a Live Copy - folder {#create-a-live-copy-folder}
 
@@ -126,8 +77,6 @@ To create a Live Copy of your Content Fragment folder:
 
 ### Create a Live Copy - single fragment {#create-a-live-copy-single-fragment}
 
-<!-- CQDOC-23473 - exclude children or referenced content fragments? -->
-
 To create a Live Copy of your Content Fragment:
 
 1. In the Content Fragment console navigate to the location of your fragment.
@@ -143,8 +92,6 @@ To create a Live Copy of your Content Fragment:
 
 In the main panel of the console:
 
-<!-- CQDOC-23473 - cross-reference authoring page in note -->
-
 * the **Live Copy** column indicates whether a fragment is a **Source** or a **Live Copy**; or not currently involved in MSM at all
 * you can also select the Information (i) icon of your fragment to open the right information panel, from where you can select the **Live Copy Details** tab.
 
@@ -156,7 +103,6 @@ In the main panel of the console:
 
 ## How To {#how-to}
 
-<!--
 See the following documentation for details about the usage of MSM for Content Fragments (also applicable to Assets):
 
 * How to use [MSM for Content Fragments (and Assets)](/help/assets/reuse-assets-using-msm.md) 
@@ -177,7 +123,6 @@ See the following documentation for details about the usage of MSM for Content F
 * [Compare MSM for Content Fragments (and Assets) with MSM for Sites](/help/assets/reuse-assets-using-msm.md#comparison)
 
 ## Take Action {#take-action}
--->
 
 There are multiple actions involved in using live copies for Content Fragments. The actions are context sensitive so you will only see the ones appropriate for your current scenario; exact details may vary dependent on the location within the console and whether the action is for a single fragment or an entire folder.
 
@@ -195,14 +140,12 @@ There are multiple actions involved in using live copies for Content Fragments. 
 >
 >Various actions can also be triggered from the new Content Fragment editor.
 
-<!--
 >[!NOTE]
 >
 >Various actions can also be triggered from the new Content Fragment editor:
 >
 >* [Cancel, and revert to, inheritance](/help/sites-cloud/administering/content-fragments/authoring.md#cancel-and-revert-to-inheritance)
 >* [Live Copy details and actions](/help/sites-cloud/administering/content-fragments/authoring.md#live-copy-details-and-actions)
--->
 
 There are multiple locations from where you can trigger actions related to your fragments and live copies: 
 
@@ -277,9 +220,6 @@ In all locations:
 1. Schedule the rollout for immediately (**Now**) or **Later**.
 1. **Continue** as appropriate.
 
-<!-- CQDOC-23473 - feature is beta, is in authoring so remove here when GA -->
-<!-- CQDOC-23473 - more details for resume - or just link to main docs? -->
-
 ## Suspend, Resume, Detach, Reset {#suspend-resume-detach-reset}
 
 You can manage your Live Copy with:
@@ -322,18 +262,11 @@ For example:
 
   ![Revert to inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-revert-to-inheritance.png)
 
-<!-- CQDOC-23473 - feature is currently beta reinstate Note for GA -->
-
-<!--
 >[!NOTE]
 >
 >For more details see [Cancel, and revert to, inheritance in the editor](/help/sites-cloud/administering/content-fragments/authoring.md#cancel-and-revert-to-inheritance).
--->
 
 ## Compare MSM for Content Fragments and Sites Pages {#compare-msm-for-content-fragments-and-sites-pages}
-
-<!-- CQDOC-23473 - needs a detailed review -->
-<!-- CQDOC-23473 - do these apply for both consoles? -->
 
 In most scenarios, MSM for Content Fragments matches the behavior of MSM for Sites Pages functionality. Some key differences to note are:
 
@@ -352,4 +285,3 @@ In most scenarios, MSM for Content Fragments matches the behavior of MSM for Sit
 ## Limitations {#limitations}
 
 * On-modify triggers, and the associated rollout configuration, do not exist for Content Fragments.
-
