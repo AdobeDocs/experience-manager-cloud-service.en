@@ -246,7 +246,7 @@ After creating a template with multiple layers of images, texts, shapes, and cou
 1. Toggle **[!UICONTROL Include Parameter]** to parameterize a property. To know the property behavior after parameterization, see the [Parameters panel option](#parameterisation-options-or-allowed-parameters).
 1. **Optional:** Rename the parameter name. A parameter name has a layer name followed by a suffix. For a selected layer, all its parameterized properties share the same layer name followed by a varying suffix. Rename the layer by following the semantic naming convention so that when you include the parameter in the URL, the parameter name self-explains the layer's content or its purpose.
 1. Click **[!UICONTROL Save]**.
-![instant content creation](/help/assets/assets/parameterize-a-layer.png)
+![instant content creation](/help/assets/assets/parameterise-a-layer.png)
 To switch between the Parameter panel of an image and text layer, select the layer on the canvas and click **[!UICONTROL Parameters]**.
 
 #### Parameters panel option {#parameterisation-options-or-allowed-parameters} 
