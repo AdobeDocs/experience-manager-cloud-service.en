@@ -46,7 +46,7 @@ You can create a version of your resource from:
 
 >[!NOTE]
 >
->For information about customizing your publish actions see also [Customizing Page Publishing](/help/implementing/developing/extending/page-publishing.md).
+>For information about customizing whether your publish action creates a new version see also [Customizing Page Publishing - Control version creation upon publish](/help/implementing/developing/extending/page-publishing.md#control-version-creation-upon-publish).
 
 ### Creating a New Version - Timeline {#creating-a-new-version-timeline}
 
