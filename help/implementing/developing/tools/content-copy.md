@@ -159,6 +159,13 @@ After a content set is created, you can use it to copy content.
      * **Stop on first failure**: Default mode, stops after the first failure encountered.
      * **Continue with remaining packages**: Continues the import process, even after a failure. The packages (and their content) that were not successful can be found in the import logs
 
+   * **Auto-publish** option will mirror the published state on source to destination:
+     ![Copying content](assets/content-copy-auto-publish.png)
+       * The rules we use to determine the state are:
+           * Files which have their latest versions published on destination will be published on source.
+           * Everything else in the filter is unpublished.
+
+
 1. Click **Copy**.
 
 The copy process starts. The status of the copy process is reflected in the console for the selected content set.
