@@ -24,7 +24,7 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 29023 {#release-29023}
 
-Summarized below are the continuous improvements for maintenance release 29023, which was publicly released on October X, 2026. The previous maintenance release was release 28871.
+Summarized below are the continuous improvements for maintenance release 29023, which was publicly released on October 21, 2026. The previous maintenance release was release 28871.
 
 
 The 2026.10.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
@@ -151,15 +151,13 @@ The 2026.10.0 feature activation will provide the full feature set for this main
 
 None.
 
-<!-- Confirm known issues before publication. -->
-
 ### Deprecated Features and APIs {#deprecated-29023}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
 ### Security Fixes {#security-29023}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release includes X security fixes, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release includes 37 security fixes, reinforcing our commitment to robust system protection.
 
 
 ### Embedded Technologies {#embedded-tech-29023}
