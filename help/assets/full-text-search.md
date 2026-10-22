@@ -264,7 +264,7 @@ If more complex configuration is required, it is possible to provide a list of *
 * `DIGIT`	is for numeric or digit characters.
 * `LOWER`	is for lowercase alphabetical characters.
 * `UPPER`	is for uppercase alphabetical characters.
-* `SUBWORD_DELIM`	is for non-alphanumeric delimiter which forces a split.
+* `SUBWORD_DELIM`	is for a non-alphanumeric delimiter that force a split.
 
 For example, to disable splitting on the `_` character, configure `WordDelimiterFilter` to treat this like any other alphabetical character by providing the following in `types.txt`:
 
@@ -294,7 +294,9 @@ Synonyms allow searches to match terms with similar meanings, which can be usefu
 plane, airplane, aircraft
 ship, boat, yacht
 lorry, truck, van
+
 ```
+
 Once configured, the terms on each line should behave interchangeably in search, for example, a search for **ship** would return an asset containing **boat** in the metadata.
 
 >[!NOTE]
