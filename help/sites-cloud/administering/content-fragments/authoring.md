@@ -412,8 +412,13 @@ For example:
 ![Content Fragment Editor - Show References](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-show-references.png)
 
 <!-- CQDOC-23473 - feature is beta, activate when GA -->
+
 <!--
-## Cancel, and revert to, inheritance {#cancel-and-revert-to-inheritance}
+## MSM in the editor {#msm-in-the-editor}
+
+You can [reuse Content Fragments using MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md). Several features in the editor help with this.
+
+### Cancel, and revert to, inheritance {#cancel-and-revert-to-inheritance}
 
 Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of [Multi-Site Management](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md).
 
@@ -428,6 +433,14 @@ For example:
 * Revert to inheritance (if inheritance is already canceled)
 
   ![Revert to inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-revert-to-inheritance.png)
+
+### Live Copy details and actions {#live-copy-details-and-actions}
+
+From the right hand information panel you can select the **Live Copy** tab to show details of any live copies the fragment is involved in.
+
+You can also trigger various actions for either the source or the live copy. See [reuse Content Fragments using MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md) for further details.
+
+![Information panel - Live Copy details](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-live-copy-details.png)
 -->
 
 ## View Workflows {#view-workflows}
