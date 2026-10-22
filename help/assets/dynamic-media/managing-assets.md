@@ -15,7 +15,7 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
 ---
-# Manage Dynamic Media assets {#managing-assets}
+# Manage Dynamic Media Assets {#managing-assets}
 
 {{work-with-dynamic-media}}
 
@@ -25,9 +25,9 @@ When previewing, you can also apply image presets (for images only) or viewer pr
 
 General information on managing assets is found in [Manage Assets with the Touch UI](/help/assets/manage-digital-assets.md).
 
-The following topics describe what you can do to manage Dynamic Media assets:
+The following topics describe what you can do to manage Dynamic Media Assets:
 
 * [Best practices for optimizing the quality of your images](best-practices-for-optimizing-the-quality-of-your-images.md)
-* [Preview Dynamic Media assets](previewing-assets.md)
+* [Preview Dynamic Media Assets](previewing-assets.md)
 * [Publish Dynamic Media Assets](publishing-dynamicmedia-assets.md)
-* [Work with Selectors](working-with-selectors.md)
+* [Manage Selectors](working-with-selectors.md)
