@@ -157,7 +157,7 @@ By default, the `damAssetLucene` index implicitly uses `OakAnalyzer` for analysi
 Apache Lucene and ElasticSearch provides standard analzyer configurations for a number of languages. These contain language specific stopwords and stemmer configurations which works well for descriptive search purposes, although by default lack some of the tokenization capabilities of the **ootb** Oak analyzer.
 For example, the default EnglishAnalzyer can be configured by specifying the following node in the root of the index definition:
 
-```
+```text
 "analyzers": {
       "jcr:primaryType": "nt:unstructured",
         "default": {
@@ -198,7 +198,7 @@ For more details of the internal configuration of these analyzers, see [english 
 
 For greater flexibility, the entire analyzer configuration including both tokenizer and filters can be provided beneath a node **analyzers** in the index definition. A good starting point is to explicitly reproduce the configuration of `OakAnalyzer` in the index definition, by creating the following structure of nodes beneath `/oak:index/damAssetLucene-x-custom-x`.
 
-```
+```text
 "analyzers" : {
   "jcr:primaryType": "nt:unstructured",
   "default": {
@@ -266,7 +266,7 @@ If more complex configuration is required, it is possible to provide a list of *
 
 For example, to disable splitting on the `_` character, configure `WordDelimiterFilter` to treat this like any other alphabetical character by providing the following in `types.txt`:
 
-```
+```text
 - => ALPHA
 ```
 
@@ -288,7 +288,7 @@ This is not part of the default `OakAnalyzer` configuration, but is often config
 
 Synonyms allow searches to match terms with similar meanings, which can be useful for full-text searches. They can be configured using the Synonym filter which is configured with a property `synonyms` referencing the relative path to a text file mapping terms.
 
-```
+```text
 plane, airplane, aircraft
 ship, boat, yacht
 lorry, truck, van
@@ -308,7 +308,7 @@ Once configured, the terms on each line should behave interchangeably in search,
 
 The Stop filter allows the configuration of a set of stop words which are not indexed or used in queries. Typically this includes common words like and, or, the. These words are provided in a text file referenced by the `words` property.
 
-```
+```text
 and
 or
 the
@@ -332,7 +332,7 @@ The Elision filter removes leading contractions or elisions from a stream of tok
 
 An example set of articles for French language is shown below.
 
-```
+```text
 l
 m
 t
@@ -379,7 +379,7 @@ For more information about language specific stemmers, contact [Adobe Customer S
 
 By default the `damAssetLucene` index uses the standard tokenizer, which splits words at whitespace and punctuation characters by removing them. As such, searches without wildcards only match complete word tokens. If partial word matching is required by default (without requiring you to use wildcards in the search strings), the index can be configured to use the n-gram tokenizer as shown below.
 
-```
+```text
 {
   "jcr:primaryType": "nt:unstructured",
   "default": {
@@ -424,7 +424,7 @@ The configurations below demonstrate how the `damAssetLucene` index can be confi
 
 * By simply configuring the `WordDelimiter` filter to split the tokens on changes between the number and letter characters, you can achieve the desired behaviour.
 
-```
+```text
 {
   "jcr:primaryType": "nt:unstructured",
   "default": {
@@ -479,7 +479,7 @@ The configurations below demonstrate how the `damAssetLucene` index can be confi
    * A set of customer specific synonyms.
    * French-language stemmer.
 
-```
+```text
 {
   "jcr:primaryType": "nt:unstructured",
   "default": {
