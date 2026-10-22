@@ -23,6 +23,10 @@ role_v2:
 >
 >Log Forwarding is now configured in self-serve way, different from the legacy method, which required submitting an Adobe Support ticket. See the [Migrating](#legacy-migration) section if your log forwarding was setup by Adobe.
 
+>[!NOTE]
+>
+>AEM as a Cloud Service also supports sending logs over OpenTelemetry (OTLP), as part of [OpenTelemetry (Limited Availability)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/opentelemetry-apm-integration.html). If you enable both at the same destination, you receive duplicate log messages there — see that page for details.
+
 Customers with a license with a logging vendor or who host a logging product can have AEM logs (including Apache/Dispatcher) and CDN logs forwarded to the associated logging destination. AEM as a Cloud Service supports the following logging destinations:
 
 <table>
