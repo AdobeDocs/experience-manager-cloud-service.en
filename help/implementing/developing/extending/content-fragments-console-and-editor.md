@@ -32,3 +32,7 @@ For full information see:
 * the Content Fragment Editor
 
   * [AEM Content Fragments Editor Extension Points](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/)
+
+  * The [Rich Text Editor](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-rich-text) in the Content Fragment Editor has the same functionality as the Rich Text Editor in the Universal Editor. 
+  
+    For more information see [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md).

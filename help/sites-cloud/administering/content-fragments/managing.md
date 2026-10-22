@@ -204,20 +204,15 @@ Selecting a specific fragment opens a toolbar focused on the actions available f
 * **[Manage Tags](#view-and-manage-tags)**
 * **[Copy](#copy-a-content-fragment)**
 * **[Replace](#find-and-replace)**
-* **[Preview](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md#preview-your-fragment-with-a-template)**
+* **[Preview](#publishing-and-previewing-a-fragment)**
 * **Move**
 * **Rename**
 * **[Check Out and Check In](#check-out-and-check-in)**
-* **[Delete](#deleting-a-fragment)** (only available for unpublished fragments)
-
-<!-- CQDOC-23473 - feature is beta, activate when GA -->
-<!--
 * [Reuse Content Fragments using MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md) actions:
   * **[Create Live Copy](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#create-a-live-copy)**
   * **[Synchronize](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#synchronize)**
   * **[Rollout](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#rollout)**
 * **[Delete](#deleting-a-fragment)** (only available for unpublished fragments)
--->
 
 >[!NOTE]
 >
