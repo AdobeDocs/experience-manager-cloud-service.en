@@ -34,8 +34,8 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming Features {#upcoming-features}
 
-* no relevant features promoted for this release
+* 
 
 ## Upcoming Changes {#upcoming-improvements}
 
-* Fixed browser back/forward navigation by setting up the browser history state before the editor renders. 
+* 
