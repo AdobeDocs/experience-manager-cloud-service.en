@@ -31,4 +31,5 @@ These are the release notes for the 22 October 2026 release of the Universal Edi
 
 ## Other Improvements {#other-improvements}
 
+* The browser back/forward navigation was fixed by setting up the browser history state before the editor renders.
 * The WebMCP update content tool now prefers delivery URLs over author DAM paths for approved delivery assets.
