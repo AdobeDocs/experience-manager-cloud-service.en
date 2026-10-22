@@ -29,10 +29,6 @@ These are the release notes for the 22 October 2026 release of the Universal Edi
 >
 >For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-## New Features {#what-is-new}
-
-* 
-
 ## Other Improvements {#other-improvements}
 
-* 
+* The WebMCP update content tool now prefers delivery URLs over author DAM paths for approved delivery assets.
