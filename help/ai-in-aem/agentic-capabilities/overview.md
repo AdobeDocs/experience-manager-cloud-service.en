@@ -51,12 +51,22 @@ A selection of agentic capabilities and skills are available in AEM:
 
 ## Access Coworker from AEM {#access-coworker-from-aem}
 
-To access Coworker from AEM you can use the **Ask Coworker** icon to give you direct access to the [Coworker Chat UI](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/ui-guide). 
+To access Coworker from AEM you can:
 
-The icon is available from multiple locations in AEM.
+* use the **Ask Coworker** icon to give you direct access to the [Coworker Chat UI](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/ui-guide). 
 
-![Ask Coworker in AEM t](/help/ai-in-aem/agentic-capabilities/assets/ai-ac-access-coworker.png)
+  The icon is available from multiple locations in AEM.
 
-Coworker will be available in the right panel:
+  ![Ask Coworker in AEM - icon](/help/ai-in-aem/agentic-capabilities/assets/ai-ac-access-coworker.png)
 
-![Ask Coworker in AEM t](/help/ai-in-aem/agentic-capabilities/assets/ai-ac-access-coworker-right-panel.png)
+  Coworker is opened in the right panel:
+
+  ![Ask Coworker in AEM - right panel](/help/ai-in-aem/agentic-capabilities/assets/ai-ac-access-coworker-right-panel.png)
+
+* from the CX Enterprise Home panel:
+
+  * use the **Coworker** link from the left panel
+
+  * use the Coworker chat from the main (central) panel
+
+* from the **Apps** menu in the top toolbar, select **Coworker**
