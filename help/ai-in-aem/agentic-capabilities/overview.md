@@ -67,6 +67,6 @@ To access Coworker from AEM you can:
 
   * use the **Coworker** link from the left panel
 
-  * use the Coworker chat from the main (central) panel
+  * use the Coworker chat directly from the main (central) panel
 
 * from the **Apps** menu in the top toolbar, select **Coworker**
