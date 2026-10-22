@@ -229,8 +229,13 @@ The above configuration should result in the same behaviour as the implicitly co
 
 The following filters are described in detail below.
 
-* 
-
+* [Word delimiter filter](#word-delimiter-filter)
+* [Lower case filter](#lower-case-filter) 
+* [Ascii folding filter](#ascii-folding-filter)
+* [Synonyms filter](#synonyms-filter)
+* [Stop filter](#stop-filter)
+* [Elision filter](#elision-filter)
+* [Stemming](#stemming)
 
 ##### Word delimiter filter (WordDelimiter) {#word-delimiter-filter} 
 
