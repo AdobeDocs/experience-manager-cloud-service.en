@@ -222,7 +222,9 @@ For greater flexibility, the entire analyzer configuration including both tokeni
       }
     }
   }
+
 ```
+
 The above configuration should result in the same behaviour as the implicitly configured `OakAnalyzer`, providing a baseline for configuring the additional capabilities described below.
 
 #### Filters {#filters}
@@ -256,6 +258,7 @@ The default configuration of `WordDelimiterFilter` in `OakAnalyzer` has been des
 By adjusting the behaviour of this filter, it is possible to change how the metadata properties including asset filenames are split into tokens. This can allow searches for parts of the filename to be matched without requiring the use of wildcards in the search string.
 
 If more complex configuration is required, it is possible to provide a list of **<INDEX_DEF>/analyzers/default/filters/WordDelimiter/types.txt** where you can map characters or Unicode code points to these type constants:
+
 * `ALPHA`	is for alphabetical characters.
 * `ALPHANUM` is for alphanumeric characters that are treated as part of a word.
 * `DIGIT`	is for numeric or digit characters.
