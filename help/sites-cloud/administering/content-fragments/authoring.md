@@ -43,11 +43,7 @@ This editor provides:
 * Ability to view details of ongoing and completed [workflows](#view-workflows) that have been applied to the fragment.
 * Ability to [show, and edit, the properties, metadata and tags](#view-and-edit-properties-metadata-and-tags),
 * A hierarchical view of the Content Fragment, and its references, using the [Structure tree](#structure-tree).
-
-<!-- CQDOC-23473 - feature is beta, activate when GA -->
-<!--
 * Ability to [cancel, and revert to, inheritance](#cancel-and-revert-to-inheritance), when the fragment is part of a [Live Copy](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
---> 
 
 >[!NOTE]
 >
@@ -411,9 +407,6 @@ For example:
 
 ![Content Fragment Editor - Show References](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-show-references.png)
 
-<!-- CQDOC-23473 - feature is beta, activate when GA -->
-
-<!--
 ## MSM in the editor {#msm-in-the-editor}
 
 You can [reuse Content Fragments using MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md). Several features in the editor help with this.
@@ -441,7 +434,6 @@ From the right hand information panel you can select the **Live Copy** tab to sh
 You can also trigger various actions for either the source or the live copy. See [reuse Content Fragments using MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md) for further details.
 
 ![Information panel - Live Copy details](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-live-copy-details.png)
--->
 
 ## View Workflows {#view-workflows}
 
@@ -503,8 +495,6 @@ In the properties tab (right panel) you can also edit:
 * **Description**
 * **Tags**: using the drop-down list, or the selection dialog
 
-  <!-- CQDOC-23473 - new screenshot? -->
-
   ![Content Fragment Editor - Manage Tags](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-edit-tags.png) 
 
 ### Open the Content Fragment Model {#open-content-fragment-model}
@@ -528,8 +518,6 @@ In the **Version history** tab of the editor you can view the history, together 
 
 When you select the **Version history** tab of the right panel, details of the current, and previous, versions are shown. Select a specific version to show the details.
 
-<!-- CQDOC-23473 - new screenshot? -->
-
 ![Content Fragment Editor - Version History Overview](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-overview.png)
 
 ### Create a Version {#create-a-version}
@@ -550,8 +538,6 @@ To compare a previous version to the current:
 
 1. Select **Compare**. 
 
-<!-- CQDOC-23473 - new screenshot? -->
-
 ![Content Fragment Editor - Version History Compare](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-compare.png)
 
 This opens up a view that displays differences between the current version of the content, and the selected previous version of the content fragment. From the **Variations with changes** drop-down, you can select to see differences from the Main content and/or content from a Variation. 
@@ -563,13 +549,9 @@ Differences are indicated by color:
 
 You can also select to **Revert** to the older version, or **Close** the dialog.
 
-<!-- CQDOC-23473 - new screenshot? -->
-
 ![Content Fragment Editor - Version History Compare Versions](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-compare-versions.png)
 
 ### Revert to a Version {#revert-version}
-
-<!-- CQDOC-23473 - new screenshot? -->
 
 You can revert to any version. 
 
@@ -591,8 +573,6 @@ In the **Language properties** tab details of any related language copies are sh
 
 For example:
 
-<!-- CQDOC-23473 - new screenshot? -->
-
 ![Content Fragment Editor - open Language Copy](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-open-language-copies.png)
 
 >[!NOTE]
@@ -613,8 +593,6 @@ To enable you to collaborate in-product and in-context, the **Comments** tab in 
 * Edit an existing comment
 * Copy the body text
 * Delete comments
-
-<!-- CQDOC-23473 - new screenshot? -->
 
 ![Content Fragment Editor - Comments tab](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-comments.png)
 
