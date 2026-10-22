@@ -257,12 +257,12 @@ By adjusting the behaviour of this filter, it is possible to change how the meta
 
 If more complex configuration is required, it is possible to provide a list of **<INDEX_DEF>/analyzers/default/filters/WordDelimiter/types.txt** where you can map characters or Unicode code points to these type constants:
 
-* `ALPHA`	is for alphabetical characters.
-* `ALPHANUM` is for alphanumeric characters that are treated as part of a word.
-* `DIGIT`	is for numeric or digit characters.
-* `LOWER`	is for lowercase alphabetical characters.
-* `UPPER`	is for uppercase alphabetical characters.
-* `SUBWORD_DELIM`	is for non-alphanumeric delimiter which forces a split.
+* **ALPHA**	is for alphabetical characters.
+* **ALPHANUM** is for alphanumeric characters that are treated as part of a word.
+* **DIGIT**	is for numeric or digit characters.
+* **LOWER**	is for lowercase alphabetical characters.
+* **UPPER**	is for uppercase alphabetical characters.
+* **SUBWORD_DELIM**	is for non-alphanumeric delimiter which forces a split.
 
 For example, to disable splitting on the `_` character, configure `WordDelimiterFilter` to treat this like any other alphabetical character by providing the following in `types.txt`:
 
