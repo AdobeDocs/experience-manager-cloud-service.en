@@ -73,7 +73,7 @@ The skill investigates failures in the following pipelines and steps:
 For failures in other steps, such as the deployment step of a full-stack pipeline, the skill reports the failed step without diagnosing it. In that case, inspect the logs as described in [Access and Download Logs](/help/implementing/cloud-manager/manage-logs.md), or contact Adobe Support.
 
 
-You can also start troubleshooting without writing a prompt. Click **Troubleshoot with AI** on a failed pipeline execution in Cloud Manager, or in the **Failed Pipelines** widget on the Experience Manager home page, to open Coworker with that execution already referenced. See [Troubleshoot a Failed Pipeline from Cloud Manager](#troubleshoot-from-cloud-manager).<!-- Alexandru: hiding this for now: and [Troubleshoot from the Failed Pipelines Widget](#troubleshoot-from-experience-home-widget) -->
+You can also start troubleshooting without writing a prompt. Click **Troubleshoot with AI** on a failed pipeline execution in Cloud Manager, or in the **Failed Pipelines** widget on the Experience Manager home page, to open Coworker with that execution already referenced. See [Troubleshoot a Failed Pipeline from Cloud Manager](#troubleshoot-from-cloud-manager) and [Troubleshoot from the Failed Pipelines Widget](#troubleshoot-from-experience-home-widget).
 
 AI can make mistakes so review the diagnosis before acting on it.
 
@@ -119,9 +119,6 @@ Starting from the failed pipeline execution is the fastest way to troubleshoot, 
 
 1. Review the diagnosis. To ask follow-up questions or request more detail, type in the **Ask Coworker anything** box.
 
-<!--
-Alexandru: to check if this is still accurate
-
 #### Troubleshoot from the Failed Pipelines Widget {#troubleshoot-from-experience-home-widget}
 
 The Experience Manager home page includes a **Failed Pipelines** widget that lists pipeline failures across your programs, so you can start troubleshooting without first opening Cloud Manager. Each row shows the pipeline name, the date and time of the last run, the duration, and the step that failed, along with a **Troubleshoot with AI** button.
@@ -130,7 +127,7 @@ The Experience Manager home page includes a **Failed Pipelines** widget that lis
 >
 >The **Failed Pipelines** widget appears only when the **Admin & IT** preset is selected. If you do not see the widget, select **Admin & IT** from the **Preset** list in the upper-right corner of the home page.
 
-![Failed Pipelines widget on the Experience Manager home page, showing a failed pipeline](/help/ai-in-aem/agentic-capabilities/brand-experience/development/assets/dev-ac-failed-pipelines-widget.png)
+![Failed Pipelines widget on the Experience Manager home page, showing a failed pipeline with the Troubleshoot with AI button highlighted](/help/ai-in-aem/agentic-capabilities/brand-experience/development/assets/dev-ac-failed-pipelines-widget.png)
 
 1. Sign in to [Adobe Experience Cloud](https://experience.adobe.com), open **Experience Manager**, then scroll to the **Failed Pipelines** widget.
 
@@ -139,8 +136,6 @@ The Experience Manager home page includes a **Failed Pipelines** widget that lis
     Coworker opens with the failed execution referenced and starts its analysis, identifying the root cause and suggesting a fix.
 
 1. Review the diagnosis. To ask follow-up questions or request more detail, type in the **Ask Coworker anything** box.
-
--->
 
 ### AEM Cloud Manager Environment Management {#aem-cloud-manager-environment-management}
 
