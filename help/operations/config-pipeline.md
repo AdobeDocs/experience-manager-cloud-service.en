@@ -56,6 +56,7 @@ For configurations related to CDN, in addition to the linked article in the tabl
 | [Audit log Purge Maintenance Task](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimize the AEM audit log for increased performance by declaring rules around when logs should be purged | X |  |
 | [Workflow Purge Maintenance Task](/help/operations/maintenance.md) | `MaintenanceTasks` | Minimize the number of workflow instances to help increase the performance of the workflow engine.<br><br>See also [Regular Purging of Workflow Instances](/help/sites-cloud/administering/workflows-administering.md#regular-purging-of-workflow-instances) | X |  |
 | [Log forwarding](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configure the endpoints and credentials for forwarding logs to various destinations, including Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk | X | X |
+| [OpenTelemetry](/help/implementing/developing/introduction/opentelemetry-apm-integration.md) | `Otel` | Send traces, metrics, and logs from your AEM application to the APM provider of your choice by declaring its OTLP/HTTPS endpoint and credential. Currently in Limited Availability: see the linked article for how to request access | X |  |
 | [Registering a Client ID](/help/implementing/developing/open-api-based-apis.md) | `API` | Scope Adobe Developer Console API projects to a specific AEM environment by registering the client ID. Needed for usage of OpenAPI-based APIs that require authentication | X |  |
 
 ## Create and manage config pipelines {#creating-and-managing}
@@ -127,6 +128,7 @@ The file structure resembles the following:
 /config
   cdn.yaml
   logForwarding.yaml
+  otel.yaml
 ```
 
 Use this structure when the same configuration is sufficient for all environments and for all types of configuration (CDN, log forwarding, and so on). In this scenario, the `envTypes` array property would include all environment types.
@@ -154,6 +156,22 @@ data:
       index: "AEMaaCS"
 ```
 
+An OpenTelemetry configuration works the same way: its `authHeaderValue` must reference a secret, written with the `secrets.` prefix as in the following example. For an example for each supported APM provider, see [OpenTelemetry for AEM](/help/implementing/developing/introduction/opentelemetry-apm-integration.md#example-configuration).
+
+```yaml
+kind: "Otel"
+version: "1"
+metadata:
+  envTypes: ["stage", "prod"]
+data:
+  enabled: true
+  type: "generic"
+  endpoint: "https://<your-otlp-endpoint>"
+  authHeaderValue: "${{secrets.OTEL_CUSTOMER_AUTH}}"
+  metrics: true
+  logs: true
+```
+
 ### A separate file per environment type {#file-per-env}
 
 The file structure resembles the following:
@@ -166,6 +184,9 @@ The file structure resembles the following:
   logForwarding-dev.yaml
   logForwarding-stage.yaml
   logForwarding-prod.yaml
+  otel-dev.yaml
+  otel-stage.yaml
+  otel-prod.yaml
 ```
 
 Use this structure when there may be differences in property values. In the files, one would expect the `envTypes` array value to correspond with the suffix. For example,`cdn-dev.yaml` and `logForwarding-dev.yaml` with a value of `["dev"]`, `cdn-stage.yaml` and `logForwarding-stage.yaml` with a value of `["stage"]`, and so on.
@@ -182,12 +203,15 @@ The file structure resembles the following:
 /config/dev1
   cdn.yaml
   logForwarding.yaml
+  otel.yaml
 /config/dev2
   cdn.yaml
   logForwarding.yaml
+  otel.yaml
 /config/prod  
   cdn.yaml
   logForwarding.yaml
+  otel.yaml
 ```
 
 A variation of this approach is to maintain a separate branch per environment.
