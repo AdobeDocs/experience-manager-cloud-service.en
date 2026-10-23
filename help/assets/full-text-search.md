@@ -328,8 +328,8 @@ the
 >The AEM Assets AI Search feature also indirectly provides automatic tolerance of stop words when enabled.
 
 | Configuration property|Behaviour|Default value|
-|---|---|
-| words (required)|Relative path to an `nt:File` node containing a list of terms which should be treated as stop words (one per row). A reindex is required after updating the values in the file.|
+|---|---|---|
+| words (required)|Relative path to an `nt:File` node containing a list of terms which should be treated as stop words (one per row). A reindex is required after updating the values in the file.|N/A|
 
 ##### Elision filter (Elision) {#elision-filter}
 
