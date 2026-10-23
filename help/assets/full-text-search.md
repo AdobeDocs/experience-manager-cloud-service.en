@@ -357,8 +357,8 @@ puisqu
 ```
 
 | Configuration property|Behaviour|Default value|
-|---|---|
-| articles (required)|Relative path to an `nt:File` node containing a list of articles which should be removed (one per row). A reindex is required after updating the values in the file.|
+|---|---|---|
+| articles (required)|Relative path to an `nt:File` node containing a list of articles which should be removed (one per row). A reindex is required after updating the values in the file.|N/A|
 
 #### Stemming {#stemming}
 
