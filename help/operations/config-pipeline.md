@@ -57,6 +57,7 @@ For configurations related to CDN, in addition to the linked article in the tabl
 | [Workflow Purge Maintenance Task](/help/operations/maintenance.md) | `MaintenanceTasks` | Minimize the number of workflow instances to help increase the performance of the workflow engine.<br><br>See also [Regular Purging of Workflow Instances](/help/sites-cloud/administering/workflows-administering.md#regular-purging-of-workflow-instances) | X |  |
 | [Log forwarding](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configure the endpoints and credentials for forwarding logs to various destinations, including Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk | X | X |
 | [Registering a Client ID](/help/implementing/developing/open-api-based-apis.md) | `API` | Scope Adobe Developer Console API projects to a specific AEM environment by registering the client ID. Needed for usage of OpenAPI-based APIs that require authentication | X |  |
+| [AEM Edge Functions](/help/implementing/developing/introduction/edge-functions.md) | `EdgeFunctions` | Declare AEM Edge Functions (JavaScript executed at the CDN edge), along with their named backend origins, secrets, configuration variables, and KV store. Routing of traffic to an edge function is declared separately with Origin Selectors in a `CDN` configuration. | X | X |
 
 ## Create and manage config pipelines {#creating-and-managing}
 
