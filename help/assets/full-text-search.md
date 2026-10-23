@@ -16,7 +16,7 @@ role_v2:
 
 When you perform a search using the **[!UICONTROL Omnisearch]** bar in Admin view or the search box in Assets view, you are performing a full-text search for assets. The filters in the search form can be used to add property restrictions (matching on specific properties such as `approved = true`, `last modified` before a specific date) and searches can contain a full-text restriction, property restrictions, or a combination of both. 
 
-While AEM Assets provides advanced filtering options in the search form, many searches can be performed more conveniently by entering property values directly into the full-text search box. As such, it is helpful to understand the concepts used in full-text search in order to ensure that you see the expected results and have the best experience when searching for assets in AEM Assets. The underlying behaviour and configuration of AEM Assets Search and its application in both the Author Assets view and Admin view have been described here. Content Hub has slightly different characteristics. For more information, see [Search Assets in Content Hub](search-assets-content-hub.md).
+While AEM Assets provides advanced filtering options in the search form, many searches can be performed more conveniently by entering property values directly into the full-text search box. As such, it is helpful to understand the concepts used in full-text search in order to ensure that you see the expected results and have the best experience when searching for assets in Adobe Experience Manager (AEM) Assets. The underlying behaviour and configuration of AEM Assets Search and its application in both the Author Assets view and Admin view have been described here. Content Hub has slightly different characteristics. For more information, see [Search Assets in Content Hub](search-assets-content-hub.md).
 
 The capabilities of full-text search have been recently enhanced by the addition of **AI Search**:
 
@@ -156,7 +156,7 @@ When a search term splits into more than one token, there are a number of ways i
 
 By default, the `damAssetLucene` index implicitly uses `OakAnalyzer` for analysis at both the query and indexing time. This offers a standard set of capabilities based on the combination of the **Standard** tokenizer with **LowerCase** and **WordDelimiter** filters.
 
-#### Configuring Analyzer by class name {#configuring-analyzer-by-class-name}
+##### Configuring Analyzer by class name {#configuring-analyzer-by-class-name}
 
 Apache Lucene and ElasticSearch provides standard analzyer configurations for a number of languages. These contain language specific stopwords and stemmer configurations which works well for descriptive search purposes, although by default lack some of the tokenization capabilities of the **ootb** Oak analyzer.
 For example, the default **EnglishAnalzyer** can be configured by specifying the following node in the root of the index definition:
@@ -198,7 +198,7 @@ The following are some of the Example classes:
 For more details on the internal configuration of these analyzers, see [english analyzer](https://www.elastic.co/docs/reference/text-analysis/analysis-lang-analyzer#english-analyzer). 
 
 
-#### Configuring Analyzer by composition {#configuring-analyzer-by-composition}
+##### Configuring Analyzer by composition {#configuring-analyzer-by-composition}
 
 For greater flexibility, the entire analyzer configuration including both tokenizer and filters can be provided beneath a node **analyzers** in the index definition. A good starting point is to explicitly reproduce the configuration of `OakAnalyzer` in the index definition, by creating the following structure of nodes beneath `/oak:index/damAssetLucene-x-custom-x`.
 
@@ -231,7 +231,7 @@ For greater flexibility, the entire analyzer configuration including both tokeni
 
 The above configuration should result in the same behaviour as the implicitly configured `OakAnalyzer`, providing a baseline for configuring the additional capabilities described below.
 
-#### Filters {#filters}
+##### Filters {#filters}
 
 The following filters are described in detail below.
 
@@ -243,7 +243,7 @@ The following filters are described in detail below.
 * [Elision filter](#elision-filter)
 * [Stemming](#stemming)
 
-##### Word delimiter filter (WordDelimiter) {#word-delimiter-filter} 
+###### Word delimiter filter (WordDelimiter) {#word-delimiter-filter} 
 
 Adjusting the configuration of `WordDelimiterFilter` can be particularly useful when dealing with text such as asset filenames which contain many pieces of information such as the product number, SKU, variant since these can be split into mutliple tokens.
 
@@ -276,11 +276,11 @@ For example, to disable splitting on the `_` character, configure `WordDelimiter
 - => ALPHA
 ```
 
-##### Lower case filter (LowerCase) {#lower-case-filter}
+###### Lower case filter (LowerCase) {#lower-case-filter}
 
 This filter is used to convert tokens to lowercase during search and indexing. This is part of the default `OakAnalyzer` configuration and is used to make full-text searches case-insensitive.
 
-##### Ascii folding filter (ASCIIFolding) {#ascii-folding-filter}
+###### Ascii folding filter (ASCIIFolding) {#ascii-folding-filter}
 
 Ascii folding filter converts alphabetic, numeric, and symbolic Unicode characters which are not in the first 127 ASCII characters or the Basic Latin Unicode block into their ASCII equivalents, if one exists.  It is commonly used to make search agnostic of diacritics such as accents and ligatures such as `Æ`. For example, `à` is replaced by `a`.
 
@@ -290,7 +290,7 @@ This is not part of the default `OakAnalyzer` configuration, but is often config
 |---|---|---|
 | `preserve_original`|Whether to preserve the original token in addition to the folded tokens.|`0` (`false`)|
 
-##### Synonyms filter (Synonym) {#synonyms-filter}
+###### Synonyms filter (Synonym) {#synonyms-filter}
 
 Synonyms allow searches to match terms with similar meanings, which can be useful for full-text searches. They can be configured using the Synonym filter which is configured with a property `synonyms` referencing the relative path to a text file mapping terms.
 
@@ -309,10 +309,10 @@ Once configured, the terms on each line should behave interchangeably in search,
 
 | Configuration property|Behaviour|Default value|
 |---|---|---|
-| synonyms (required)|Relative path to an `nt:File` node containing a comma separated list of terms which should be treated as synonyms on each row. A reindex is required after updating the values in the file.|N/A|
+| synonyms (required)|Relative path to an `nt:File` node containing a comma separated list of terms which are treated as synonyms on each row. A reindex is required after updating the values in the file.|N/A|
 
 
-##### Stop filter (Stop) {#stop-filter}
+###### Stop filter (Stop) {#stop-filter}
 
 The Stop filter allows the configuration of a set of stop words which are not indexed or used in queries. Typically this includes common words like and, or, the. These words are provided in a text file referenced by the `words` property.
 
@@ -329,9 +329,9 @@ the
 
 | Configuration property|Behaviour|Default value|
 |---|---|---|
-| words (required)|Relative path to an `nt:File` node containing a list of terms which should be treated as stop words (one per row). A reindex is required after updating the values in the file.|N/A|
+| words (required)|Relative path to an `nt:File` node containing a list of terms which are treated as stop words (one per row). A reindex is required after updating the values in the file.|N/A|
 
-##### Elision filter (Elision) {#elision-filter}
+###### Elision filter (Elision) {#elision-filter}
 
 The Elision filter removes leading contractions or elisions from a stream of tokens. It is most commonly used in natural language processing for French, Italian, and Irish, where articles and prepositions frequently shorten and attach to the following word using an apostrophe.
 
@@ -360,7 +360,7 @@ puisqu
 |---|---|---|
 | articles (required)|Relative path to an `nt:File` node containing a list of articles which should be removed (one per row). A reindex is required after updating the values in the file.|N/A|
 
-#### Stemming {#stemming}
+##### Stemming {#stemming}
 
 Configuring stemming causes AEM to reduce words to their root forms or word stems in the index and at search time. With stemming enabled, AEM Assets searches can be made more tolerant of morphological variations on words (tenses, plurality) which typically occur through the addition of prefixes and suffixes. There are a number of different approaches to this, most of which are language specific.
 
@@ -399,36 +399,36 @@ By default the `damAssetLucene` index uses the standard tokenizer, which splits 
 ...
 ```
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >Moving to n-gram tokenization significantly changes the behaviour of full-text search in AEM. In particular, partial words are automatically matched without wildcards, which leads to unexpected results for some queries.
 
 
-### Example analyzer configurations for specific full-text search use-cases {#example-analyzer}
+## Example analyzer configurations for specific full-text search use-cases {#example-analyzer}
 
 The configurations below demonstrate how the `damAssetLucene` index can be configured to meet specific use-cases.
 
-#### Support partial filenames search {#support-partial-filenames-search}
+### Supports partial filenames search {#support-partial-filenames-search}
 
-##### Requirements
+#### Requirements
 
 * The asset filenames contain several important pieces of information, including a code representing the product line.
    * For example, an asset name like **RO15500ST.00.1220ST.02 Front.jpeg** relates to the product line code **15500**.
 * This value is not present in any other metadata field.
 * You can perform full-text searches by product line, that is, **15500**, and to see all products for this product line.
 
-##### Default behaviour
+#### Default behaviour
 
 * The standard `damAssetLucene` configuration creates the following tokens from the string **RO15500ST.00.1220ST.02 Front.jpeg**:
-   * ro15500st
-   * 00
-   * 1220st
-   * 02
-   * front
-   * jpeg
-* A full-text search for **15500** does not return this asset (assuming this value was not present in any other metadata fields). The asset is returned by searching with wildcards such as **15500**, but this is inconvenient and leads to spurious results.
+   * **ro15500st**
+   * **00**
+   * **1220st**
+   * **02**
+   * **front**
+   * **jpeg**
+* A full-text search for **15500** does not return this asset (assuming this value was not present in any other metadata fields). The asset is returned by searching with wildcards such as **15500**, but this is inconvenient and it leads to spurious results.
 
-##### Updated analyzer configuration
+#### Updated analyzer configuration
 
 * By simply configuring the `WordDelimiter` filter to split the tokens on changes between the number and letter characters, you can achieve the desired behaviour.
 
@@ -470,17 +470,17 @@ The configurations below demonstrate how the `damAssetLucene` index can be confi
    * **jpeg**
 * With the updated index definition in-place, a full-text search for **15500** returns the asset listed above (based on its filename alone) without requiring you to add wildcards to the search string.
 
-#### Optimized for fulltext searches in French language {#optimized-for-fulltext-searches-in-french-language}
+### Optimized for fulltext searches in French language {#optimized-for-fulltext-searches-in-french-language}
 
-##### Requirement 
+#### Requirement 
 
 * AEM's default index definition is largely language-agnostic.
-* Single language customers can tailor the `damAssetLucene` index configuration to suit their language.
-* In this example, a French-language customer wished to optimise their AEM implementation for fulltext search in French, but found that the out-of-the-box Analyzer configuration `org.apache.lucene.analysis.fr.FrenchAnalyzer` did not meet all their needs.
+* You can tailor the `damAssetLucene` index configuration for a single language.
+* For example, if you want to optimise your AEM implementation for full-text search in French, the out-of-the-box Analyzer configuration `org.apache.lucene.analysis.fr.FrenchAnalyzer` may not meet all your needs.
 
-##### Updated analyzer configuration
+#### Updated analyzer configuration
 
-* The updated index definition adds:
+* The updated index definition adds the following:
    * Elison with French-language articles. 
    * Stop filter with French-language stop words.
    * ASCIIFolding filter to normalise diacritics and ligatures.
