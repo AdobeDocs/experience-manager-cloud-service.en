@@ -32,7 +32,7 @@ Customers with a license with a logging vendor or who host a logging product can
 <table>
   <tbody>
     <tr>
-      <th>Log Technnology</th>
+      <th>Log Technology</th>
       <th>AEM</th>
       <th>Dispatcher</th>
       <th>CDN</th>
@@ -42,7 +42,7 @@ Customers with a license with a logging vendor or who host a logging product can
       <td>Amazon S3</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td style="background-color: #ffb3b3;">Future</td>
+      <td>Yes</td>
       <td>No</td>
     </tr>
     <tr>
@@ -63,7 +63,7 @@ Customers with a license with a logging vendor or who host a logging product can
       <td>Dynatrace</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td style="background-color: #ffb3b3;">Future</td>
+      <td>Yes</td>
       <td>No</td>
     </tr>
     <tr>
@@ -84,7 +84,7 @@ Customers with a license with a logging vendor or who host a logging product can
       <td>New Relic</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td style="background-color: #ffb3b3;">Future</td>
+      <td>Yes</td>
       <td>No</td>
     </tr>
     <tr>
@@ -104,15 +104,15 @@ Customers with a license with a logging vendor or who host a logging product can
   </tbody>
 </table>
 
+For Amazon S3, Dynatrace, and New Relic, CDN log forwarding must be enabled explicitly. See [Enabling CDN logs for Amazon S3, Dynatrace, and New Relic](#cdn-opt-in). CDN log forwarding to these three destinations is also supported for Edge Delivery Services sites.
+
 >[!NOTE]
->
-> For upcoming CDN Log Technologies planned for the future, please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to register interest.
 >
 > Log Technologies marked **Beta** in the mTLS column support client certificate authentication (mutual TLS) for AEM, Dispatcher, and CDN logs. mTLS is in beta; to request access, email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) with your program ID and environment IDs. See [Mutual TLS (mTLS) authentication](#mtls).
 
 Log forwarding is configured in a self-service manner by declaring a configuration in Git, and can be deployed via Cloud Manager config pipelines to dev, stage, and production environment types. The configuration file can be deployed to Rapid Development Environments (RDEs) using command line tooling.
 
-There is an option for the AEM and Apache/Dispatcher logs to be routed through AEM's advanced networking infrastructure, such as dedicated egress IP.
+There is an option for the AEM and Apache/Dispatcher logs to be routed through AEM's advanced networking infrastructure, such as dedicated egress IP. CDN logs are always sent directly from the CDN and do not use advanced networking. See [Transport & Advanced Networking](#transport-advancednetworking).
 
 Note that the network bandwidth associated with logs sent to the logging destination are considered part of your organization's Network I/O usage.
 
@@ -152,6 +152,8 @@ This article is organized in the following way:
 
 Tokens in the configuration (such as `${{SPLUNK_TOKEN}}`) represent secrets, which should not be stored in Git. Instead, declare them as Cloud Manager [Secret Environment Variables](/help/operations/config-pipeline.md#secret-env-vars). Make sure to select **All** as the dropdown value for the Service Applied field, so logs can be forwarded to author, publish, and preview tiers.
 
+For Amazon S3 (`accessKey`, `secretAccessKey`), Dynatrace (`token`), and New Relic (`apiKey`), credentials **must** be secret references such as `${{SECRET_NAME}}`, for both AEM logs and CDN logs. A plain-text value is rejected and the config pipeline fails. The error message names the property but never shows its value. For CDN logs, including any credential you set in a `cdn` block, the whole value must be the secret reference, with nothing before or after it.
+
 It is possible to set different values between CDN logs and AEM logs (including Apache/Dispatcher), by including an additional **cdn** and/or **aem** block after the **default** block, where properties can override those defined in the **default** block; only the enabled property is required. A possible use case could be to use a different Splunk index for CDN logs, as the example below illustrates.
 
    ```yaml
@@ -186,11 +188,53 @@ It is possible to set different values between CDN logs and AEM logs (including 
             enabled: false
    ```
 
+### Enabling CDN logs for Amazon S3, Dynatrace, and New Relic {#cdn-opt-in}
+
+For most logging destinations, an enabled `default` block forwards both CDN logs and AEM logs (including Apache/Dispatcher). Amazon S3 (`awsS3`), Dynatrace (`dynatrace`), and New Relic (`newRelic`) currently work differently: CDN logs are forwarded **only** when the `cdn` block explicitly sets `enabled: true`.
+
+The `cdn` block inherits all other properties from the `default` block, including the credentials, so `enabled: true` is the only property you need to add:
+
+   ```yaml
+   kind: "LogForwarding"
+   version: "1"
+   data:
+     newRelic:
+       default:
+         enabled: true
+         uri: "https://log-api.newrelic.com/log/v1"
+         apiKey: "${{NR_API_KEY}}"
+       cdn:
+         enabled: true
+   ```
+
+| Configuration | AEM logs | CDN logs to Amazon S3, Dynatrace, New Relic | CDN logs to other destinations |
+|---|---|---|---|
+| `default.enabled: true` only | Forwarded | **Not forwarded** (this changes after a notice period, see below) | Forwarded |
+| `default.enabled: true` and `cdn.enabled: true` | Forwarded | Forwarded | Forwarded |
+| `default.enabled: true` and `cdn.enabled: false` | Forwarded | Not forwarded | Not forwarded |
+| `default.enabled: true`, `aem.enabled: false` and `cdn.enabled: true` | Not forwarded | Forwarded | Forwarded |
+
+As with other destinations, properties set in the `cdn` block override the values from `default`. To forward only CDN logs, set `aem.enabled: false`, as in the last row.
+
+To stop forwarding CDN logs, set `cdn.enabled: false` and run the config pipeline. CDN log forwarding to that destination stops when the configuration is deployed. AEM logs are not affected.
+
+>[!NOTE]
+>
+>**Why CDN logs are opt-in for these destinations**
+>
+>Many organizations configured Amazon S3, Dynatrace, or New Relic for AEM logs before CDN log forwarding was available for them. CDN logs contain an entry for every request handled by the CDN, including requests served from the CDN cache, so they are usually much larger than AEM logs. They are also sent from different IP addresses than AEM logs (see [Transport & Advanced Networking](#transport-advancednetworking)). Requiring `cdn.enabled: true` for now means existing configurations keep forwarding only AEM logs, with no unexpected ingestion costs or traffic, and gives you time to decide.
+
+>[!IMPORTANT]
+>
+>**This opt-in is temporary.** After a notice period, Amazon S3, Dynatrace, and New Relic will follow the same rule as other destinations: an enabled `default` block will forward CDN logs as well. To keep forwarding only AEM logs to one of these destinations, set `cdn.enabled: false` for it. You can set it now: it has the same effect before and after the change.
+
+Before you enable CDN logs, estimate the additional volume. Logging vendors that bill by ingested volume, such as Dynatrace and New Relic, charge for CDN logs in the same way as for AEM logs.
+
 ## Transport & Advanced Networking {#transport-advancednetworking}
 
 Some organizations choose to restrict which traffic can be received by the logging destinations, others may require to use ports other than HTTPS (443).  If so [Advanced Networking](/help/security/configuring-advanced-networking.md) will need to be configured before deploying log forwarding configuration.
 
-Use the table below to see what the requirements are for Advanced Networking and Logging configuration based on whether you are using port 443 or not, and whether or not you need your logs to appear from a fixed IP address.
+Use the table below to see what the requirements are for Advanced Networking and Logging configuration based on whether you are using port 443 or not, and whether or not you need your logs to appear from a fixed IP address. The table applies to AEM logs (including Apache/Dispatcher). For CDN logs, see [CDN logs and IP allow lists](#cdn-ip-allowlist).
 
 <table>
   <tbody>
@@ -250,7 +294,17 @@ The example below shows how to configure logging on a standard HTTPS port with A
          advancedNetworking: true
    ```
 
-For CDN logs, you can allow-list the IP addresses, as described in [Fastly documentation - Public IP List](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). If that list of shared IP addresses is too large, consider sending traffic to an https server or (non-Adobe) Azure Blob Store where logic can be written to send the logs out of a known IP to their ultimate destination.
+### CDN logs and IP allow lists {#cdn-ip-allowlist}
+
+CDN logs are sent directly from the CDN (Fastly), not from AEM as a Cloud Service. This applies to every logging destination, including Amazon S3, Dynatrace, and New Relic:
+
+* CDN logs are sent from Fastly's shared IP address ranges, published at [https://api.fastly.com/public-ip-list](https://api.fastly.com/public-ip-list). They are never sent from your Dedicated Egress IP address.
+* The `advancedNetworking` property applies only to AEM logs (including Apache/Dispatcher). It has no effect on CDN logs. If `advancedNetworking` is set and CDN log forwarding is enabled for the same destination, the configuration is deployed with a warning as a reminder.
+* If your logging destination only accepts traffic from specific IP addresses, add **all** of Fastly's published IPv4 and IPv6 ranges to its allow list, in addition to your Dedicated Egress IP address for AEM logs. A destination that only allows your Dedicated Egress IP address receives no CDN logs. For Amazon S3, add the ranges to the `aws:SourceIp` condition of your bucket policy.
+* Fastly's IP address ranges change over time, sometimes within weeks. Review the published list regularly and keep your allow lists up to date. For Amazon S3, CDN log uploads that are rejected are not retried, so those logs are lost. See [Amazon S3 CDN logs](#amazons3-cdn).
+* Amazon S3 buckets that only accept requests through a VPC endpoint (for example, a bucket policy with an `aws:SourceVpce` condition) cannot receive CDN logs.
+
+If the list of shared IP addresses is too large to allow-list, consider sending CDN logs to an https server or (non-Adobe) Azure Blob Store where logic can be written to send the logs out of a known IP to their ultimate destination.
 
 >[!NOTE]
 >
@@ -342,11 +396,11 @@ Configurations for the supported logging destinations are listed below, along wi
 
 ### Amazon S3 {#amazons3}
 
-Log Forwarding to Amazon S3 supports AEM and Dispatcher logs, CDN logs are not yet supported.
+Log Forwarding to Amazon S3 supports AEM logs (including Apache/Dispatcher) and CDN logs. CDN logs must be enabled explicitly with `cdn.enabled: true`, as described in [Enabling CDN logs](#cdn-opt-in).
 
 >[!NOTE]
 >
->Logs written to S3 periodically, every 10 minutes for each log file type.  This may result in an initial delay for logs being written to S3 once the feature is toggled.  [Further information on this behavior](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs).
+>AEM logs (including Apache/Dispatcher) are uploaded to S3 for each log file type when 100 MB of logs has been collected or after 10 minutes, whichever comes first. This may result in an initial delay for logs being written to S3 once the feature is toggled. [Further information on this behavior](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs). CDN logs are written differently; see [Amazon S3 CDN logs](#amazons3-cdn).
 
   ```yaml
   kind: "LogForwarding"
@@ -356,32 +410,99 @@ Log Forwarding to Amazon S3 supports AEM and Dispatcher logs, CDN logs are not y
       default:
         enabled: true
         region: "your-bucket-region"
-        bucket: "your_bucket_name"
+        bucket: "your-bucket-name"
         accessKey: "${{AWS_S3_ACCESS_KEY}}"
         secretAccessKey: "${{AWS_S3_SECRET_ACCESS_KEY}}"
   ```
 
+To forward both AEM logs and CDN logs:
+
+  ```yaml
+  kind: "LogForwarding"
+  version: "1"
+  data:
+    awsS3:
+      default:
+        enabled: true
+        region: "us-east-1"
+        bucket: "your-bucket-name"
+        accessKey: "${{AWS_S3_ACCESS_KEY}}"
+        secretAccessKey: "${{AWS_S3_SECRET_ACCESS_KEY}}"
+      cdn:
+        enabled: true
+  ```
+
+To forward only CDN logs:
+
+  ```yaml
+  kind: "LogForwarding"
+  version: "1"
+  data:
+    awsS3:
+      default:
+        enabled: true
+        region: "us-east-1"
+        bucket: "your-bucket-name"
+        accessKey: "${{AWS_S3_ACCESS_KEY}}"
+        secretAccessKey: "${{AWS_S3_SECRET_ACCESS_KEY}}"
+      aem:
+        enabled: false
+      cdn:
+        enabled: true
+  ```
+
 In order to use the S3 Log Forwarder, you will need to preconfigure an AWS IAM user with appropriate policy for accessing your S3 bucket.  See [AWS IAM User Documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) for how to create IAM user credentials.
 
-The IAM policy should allow the user to use `s3:putObject`.  For example:
+The IAM policy should allow the user to use `s3:PutObject`. To forward CDN logs, also allow `s3:AbortMultipartUpload`. No other permissions are needed: the user doesn't need to read or list the bucket. For example:
 
 ```json
- {
+{
     "Version": "2012-10-17",
     "Statement": [{
         "Effect": "Allow",
         "Action": [
-            "s3:PutObject"
+            "s3:PutObject",
+            "s3:AbortMultipartUpload"
         ],
-        "Resource": "arn:aws:s3:::your_bucket_name/*"
+        "Resource": "arn:aws:s3:::your-bucket-name/*"
     }]
 }
 ```
 
+If the bucket only receives CDN logs, you can limit `Resource` to `arn:aws:s3:::your-bucket-name/aemcdn/*`.
+
 See [AWS Bucket Policy Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) for more information on how to implement.
 
->[!NOTE]
->CDN Log support for AWS S3 is planned for the future. Please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to register interest.
+#### Amazon S3 CDN logs {#amazons3-cdn}
+
+CDN logs are written below the `aemcdn/` folder of your bucket. The filename format is `YYYY-MM-DDThh:mm:ss.000-<uniqueid>.log.gz`. For example:
+
+```text
+aemcdn/
+   2026-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log.gz
+   2026-03-04T10:00:00.000-0pX8ub2yQcAmLs7rT1kd.log.gz
+   2026-03-04T10:05:00.000-h3JkVv9ZqN2wE5sXyR0a.log.gz
+```
+
+* Files are gzip-compressed. Each file contains multiple log entries, one JSON object per line. The entries have the same properties as CDN logs written to Azure Blob Storage. The log entry format is described under [Logging for AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md#cdn-log), and each entry also includes the additional properties mentioned in the [Log Entry Formats](#log-formats) section below.
+* A new set of files is written every 5 minutes. The CDN has many servers, and each server that handled your traffic writes its own file, so expect many files for each 5-minute period, even with little traffic. For example, a low-traffic test environment produced about 50 files every 5 minutes.
+* Log entries usually appear in the bucket 1 to 6 minutes after the request.
+* The time in the filename is not an exact time window, and files overlap. For example, a file named `…T16:00:00.000-….log.gz` can hold entries from 15:55 to 16:04. Use the `timestamp` property of each entry to find when a request happened.
+* Files are not changed after they are written.
+
+Customers are responsible for processing and managing these files, for example with an S3 lifecycle rule on the `aemcdn/` prefix.
+
+Considerations for CDN logs:
+
+* Authentication uses the access key of an IAM user. IAM roles are not supported.
+* The IAM user only needs `s3:PutObject` and `s3:AbortMultipartUpload`. It doesn't need permission to read or list the bucket.
+* Default bucket encryption with Amazon S3 managed keys (SSE-S3) is supported, and CDN log files are then encrypted at rest.
+* Only buckets in standard AWS commercial regions are supported. AWS GovCloud (US) and AWS China regions are not supported. The `region` property must be the region of the bucket.
+* **Rejected uploads are not retried.** If the bucket policy or the IAM user's permissions reject an upload of CDN logs, the log entries in that upload are lost without warning. This is different from AEM logs, where failed uploads are retried. Make sure that changes to your bucket policy or IAM user don't block uploads from the CDN.
+* We recommend an IAM user that is only allowed `s3:PutObject` and `s3:AbortMultipartUpload` on the bucket (or only on the `aemcdn/` prefix, if the bucket receives only CDN logs), and a bucket policy without IP address conditions. If your bucket policy restricts access by IP address or VPC endpoint, see [CDN logs and IP allow lists](#cdn-ip-allowlist).
+* To detect lost CDN logs, consider:
+  * AWS CloudTrail data events or S3 server access logs. They record rejected `PutObject` requests (HTTP status 403) from Fastly's IP addresses.
+  * An alarm that fires when no new objects have arrived under `aemcdn/` for longer than you expect. Files are written every 5 minutes.
 
 ### Azure Blob Storage {#azureblob}
 
@@ -558,7 +679,7 @@ There is also be a property named `Source-Type`, which is set to one of these va
 
 ### New Relic Log API {#newrelic-https}
 
-Log Forwarding to New Relic leverages the New Relic HTTPS API for ingestion.  Currently it only supports logs from AEM and Dispatcher; CDN logs are not yet supported.
+Log Forwarding to New Relic leverages the New Relic HTTPS Log API for ingestion. It supports AEM logs (including Apache/Dispatcher) and CDN logs. CDN logs must be enabled explicitly with `cdn.enabled: true`, as described in [Enabling CDN logs](#cdn-opt-in).
 
   ```yaml
     kind: "LogForwarding"
@@ -571,19 +692,55 @@ Log Forwarding to New Relic leverages the New Relic HTTPS API for ingestion.  Cu
           apiKey: "${{NR_API_KEY}}"
   ```
 
+To forward both AEM logs and CDN logs:
+
+  ```yaml
+    kind: "LogForwarding"
+    version: "1"
+    data:
+      newRelic:
+        default:
+          enabled: true
+          uri: "https://log-api.newrelic.com/log/v1"
+          apiKey: "${{NR_API_KEY}}"
+        cdn:
+          enabled: true
+  ```
+
+To forward only CDN logs:
+
+  ```yaml
+    kind: "LogForwarding"
+    version: "1"
+    data:
+      newRelic:
+        default:
+          enabled: true
+          uri: "https://log-api.newrelic.com/log/v1"
+          apiKey: "${{NR_API_KEY}}"
+        aem:
+          enabled: false
+        cdn:
+          enabled: true
+  ```
+
 >[!NOTE]
 >
 >Log forwarding to New Relic is only available to customer owned New Relic accounts.
->
->CDN Log support for New Relic Log API is planned for the future. Please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to register interest.
->
->New Relic provides region specific endpoints based on where your New Relic account is provisioned.  See [New Relic documentation](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) for further information.
+
+#### Considerations
+
+* New Relic provides region specific endpoints based on where your New Relic account is provisioned. Set `uri` to the Log API endpoint for your account's region, for example `https://log-api.newrelic.com/log/v1` for accounts in the US region. See [New Relic documentation](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) for further information.
+* For `apiKey`, use a New Relic license key (key type **INGEST - LICENSE**) from the account that receives the logs. The same key is used for AEM logs and CDN logs.
+* For AEM logs, the `source` attribute is set to one of `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess`, or `aemhttpderror`. For CDN logs, `source` is set to `aemcdn`, and each record carries all CDN log properties. For example, to query CDN logs: `FROM Log SELECT * WHERE source = 'aemcdn' SINCE 1 hour ago`.
+* In CDN log entries sent to New Relic, `timestamp` is a number: the request start time in milliseconds since the Unix epoch. Other logging destinations receive `timestamp` as an ISO 8601 string.
+* CDN logs can add significant volume to your New Relic ingestion. See [Enabling CDN logs](#cdn-opt-in).
 
 ### Dynatrace Log API {#dynatrace-https}
 
-Log Forwarding to Dynatrace leverages the Dynatrace HTTPS API for ingestion.  Currently it only supports logs from AEM and Dispatcher; CDN logs are not yet supported.
+Log Forwarding to Dynatrace leverages the Dynatrace HTTPS API for ingestion. It supports AEM logs (including Apache/Dispatcher) and CDN logs. CDN logs must be enabled explicitly with `cdn.enabled: true`, as described in [Enabling CDN logs](#cdn-opt-in).
 
-The "Ingest Logs" scope attribute is required for the Token.
+The token requires the **Ingest logs** (`logs.ingest`) scope. The same token is used for AEM logs and CDN logs.
 
   ```yaml
     kind: "LogForwarding"
@@ -596,8 +753,67 @@ The "Ingest Logs" scope attribute is required for the Token.
           token: "${{DYNATRACE_TOKEN}}"
   ```
 
->[!NOTE]
->CDN Log support for Dynatrace Log API is planned for the future. Please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to register interest.
+To forward both AEM logs and CDN logs:
+
+  ```yaml
+    kind: "LogForwarding"
+    version: "1"
+    data:
+      dynatrace:
+        default:
+          enabled: true
+          environmentId: "${{DYNATRACE_ENVID}}"
+          token: "${{DYNATRACE_TOKEN}}"
+        cdn:
+          enabled: true
+  ```
+
+To forward only CDN logs:
+
+  ```yaml
+    kind: "LogForwarding"
+    version: "1"
+    data:
+      dynatrace:
+        default:
+          enabled: true
+          environmentId: "${{DYNATRACE_ENVID}}"
+          token: "${{DYNATRACE_TOKEN}}"
+        aem:
+          enabled: false
+        cdn:
+          enabled: true
+  ```
+
+#### Considerations
+
+* Only Dynatrace SaaS environments are supported. `environmentId` is the ID in your environment URL, `https://<environmentId>.live.dynatrace.com`. Use the ID only, not a URL or a host name: for CDN logs it can't contain dots. Dynatrace Managed and ActiveGate endpoints are not supported.
+* CDN logs are always sent to port 443. If you set `port` for AEM logs, it is ignored for CDN logs.
+* Each log entry includes a `source` property. For AEM logs it is one of `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess`, or `aemhttpderror`. For CDN logs it is `aemcdn`.
+* CDN logs can add significant volume to your Dynatrace ingestion. See [Enabling CDN logs](#cdn-opt-in).
+
+#### Finding CDN logs in Dynatrace {#dynatrace-cdn}
+
+Dynatrace stores each CDN log entry, as JSON text, in the `content` of a log record, and uses the entry's `timestamp` as the record time. The CDN log properties, such as `source`, `url`, and `status`, are not separate log attributes. The same applies to AEM logs forwarded to Dynatrace. As a result:
+
+* Filters in the simple mode of the classic log viewer don't work on these properties. A filter on an attribute that doesn't exist is ignored, so all logs are returned.
+* The log `status` of these records shows `NONE`, because the CDN `status` property is the HTTP status code, not a log level.
+
+Use advanced mode (DQL) instead. To find CDN logs from the last hour:
+
+```text
+fetch logs, from: now() - 1h
+| filter matchesPhrase(content, "aemcdn")
+```
+
+To parse the CDN log properties and show some of them:
+
+```text
+fetch logs, from: now() - 1h
+| parse content, "JSON:cdn"
+| filter cdn[source] == "aemcdn"
+| fields timestamp, cdn[url], cdn[status], cdn[pop], cdn[cache], cdn[aem_tier]
+```
 
 ### Splunk {#splunk}
 
@@ -654,7 +870,7 @@ You will need to copy the last section of the URL (without the preceeding `/`) a
 
 ## Log Entry Formats {#log-formats}
 
-See [Logging for AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md) for the format of each respective log type (CDN logs, and AEM logs including Apache/Dispatcher).
+See [Logging for AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md) for the format of each respective log type (CDN logs, and AEM logs including Apache/Dispatcher). Some logging destinations add or change properties in CDN log entries, for example the format of `timestamp` for New Relic. See [CDN log entries by logging destination](/help/implementing/developing/introduction/logging.md#cdn-log-destinations).
 
 Since logs from multiple programs and environments may be forwarded to the same logging destination, in addition to the output described in the logging article, the following properties will be included in each log entry:
 
