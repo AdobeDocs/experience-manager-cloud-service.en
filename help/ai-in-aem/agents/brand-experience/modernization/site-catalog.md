@@ -224,5 +224,4 @@ The site catalog skill has the following limitations.
 
 * **Public sites only** — The target must be publicly accessible (no authentication, VPN, or firewall).
 * **Dynamic content is not supported** — Content requiring user interaction to appear in the DOM may not be captured.
-* **Large sites** - Sites with more than 1000 URLs have not been extensively tested, and you may encounter issues when cataloging them.
 
