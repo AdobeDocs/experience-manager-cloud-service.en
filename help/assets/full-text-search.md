@@ -14,27 +14,28 @@ role_v2:
 
 # Overview of full-text search {#overview-of-full-text-search}
 
-When you perform a search using the **[!UICONTROL Omnisearch]** bar in Admin view or the search box on Assets view, you are performing a full-text search for assets. The filters in the search form can be used to add property restrictions (matching on specific properties, such as `approved = true`, `last modified` before a specific date) and searches can contain a full-text restriction, property restrictions or a combination of both. 
+When you perform a search using the **[!UICONTROL Omnisearch]** bar in Admin view or the search box in Assets view, you are performing a full-text search for assets. The filters in the search form can be used to add property restrictions (matching on specific properties such as `approved = true`, `last modified` before a specific date) and searches can contain a full-text restriction, property restrictions, or a combination of both. 
 
-While AEM Assets provides advanced filtering options in the search form, many searches can be performed more conveniently by entering property values directly into the full-text search box. As such, it is helpful to understand the concepts used in full-text search in order to ensure that you see the expected results and have the best experience when searching for Assets in AEM Assets. The underlying behaviour and configuration of AEM Assets Search and its application in both Author Assets view and Admin view have been described here. Content Hub has slightly different characteristics. For more information, see [Search Assets in Content Hub](search-assets-content-hub.md).
+While AEM Assets provides advanced filtering options in the search form, many searches can be performed more conveniently by entering property values directly into the full-text search box. As such, it is helpful to understand the concepts used in full-text search in order to ensure that you see the expected results and have the best experience when searching for assets in AEM Assets. The underlying behaviour and configuration of AEM Assets Search and its application in both the Author Assets view and Admin view have been described here. Content Hub has slightly different characteristics. For more information, see [Search Assets in Content Hub](search-assets-content-hub.md).
 
-The capabilities of full-text search has been recently enhanced by the addition of **AI Search**:
+The capabilities of full-text search have been recently enhanced by the addition of **AI Search**:
 
 * When **AI Search** is disabled, full-text searches are executed as lexical searches. This involves breaking down the provided search string into individual words or tokens and matching them against the search index. This keyword-based approach relies on exact or patterned text matches, rather than semantic meaning.
-* When **AI Search** is enabled, AEM executes a hybrid search which augments the lexical search with an additional vector-based semantic search. The semantic search identifies the context and ideas behind words instead of just hunting for exact word matches. This adds additional results to those returned by the lexical search; so enabling **AI Search** never decreases the number of results returned for a particular search.
+* When **AI Search** is enabled, AEM executes a hybrid search which augments the lexical search with an additional vector-based semantic search. The semantic search identifies the context and ideas behind words instead of just hunting for exact word matches. This adds additional results to those returned by the lexical search, so enabling **AI Search** never decreases the number of results returned for a particular search.
 
 Each type of search has its own benefits.
 
-* The **lexical** search provides precise matching, and it useful when searching for Assets matching specific identifiers such as SKUs or filenames. It is also highly configurable.
+* The **lexical** search provides precise matching, and it useful when searching for assets matching specific identifiers such as SKUs or filenames. The **lexical** search is highly configurable.
 * The **semantic** search is useful for handling descriptive searches, which can be matched based on concepts and meaning, rather than exact terms. For example, a search for **pretty flowers** might match an asset containing the descriptive metadata **a beautiful bunch of flowers**.
    * The characteristics mean that semantic searches typically match synonyms and is agnostic of morphological variations of words such as plurals and tenses; things which require specific index configuration to support in **lexical** search.
-   * Semantic matching is also multi-lingual and typically hand introduces a degree of typo tolerance.
+   * Semantic matching is multi-lingual and typically hand introduces a degree of typo tolerance.
 
 You can perform a combination of both kinds of searches.
 
 >[!CAUTION]
 > 
 >Identifier-based searches and AI Search
+>
 >If you are searching with an identifier such as a SKU or filename, you can typically expect precise results. Such searches are better suited to lexical-only execution since the sematic search might see similar SKUs or filenames as matches. When **AI Search** is enabled, if AEM detects that a search is based on an identifier rather than a descriptive string, it reverts to perform only the lexical search, ensuring that you see the expected matches.
 
 
