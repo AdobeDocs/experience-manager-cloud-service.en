@@ -197,13 +197,7 @@ It never commits or pushes — you review the diff and commit. Large fixes run i
 
 ## AEM Quickstart MCP Server {#aem-quickstart-mcp-server}
 
-The Model Context Protocol (MCP) is an open standard that allows AI coding tools to connect to external data sources and services. The AEM Quickstart MCP server is a content package that, once installed in a local AEM SDK instance, exposes runtime data directly to connected AI tools, enabling agents to retrieve logs, diagnose OSGi failures, and inspect request processing without leaving the IDE.
-
-### Install the Content Package {#install-the-content-package}
-
-Download the content package from the [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3) and install `com.adobe.aem:com.adobe.aem.mcp-server-contribs-content` into your local Quickstart using Package Manager at `/crx/packmgr`.
-
-**Compatibility:** Validated with AEM SDK `2026.2.24678.20260226T154829Z-260200` and newer.
+The Model Context Protocol (MCP) is an open standard that allows AI coding tools to connect to external data sources and services. The AEM Quickstart MCP server, which is included in the local [AEM as a Cloud Service SDK](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html), exposes runtime data directly to connected AI tools, enabling agents to retrieve logs, diagnose OSGi failures, and inspect request processing without leaving the IDE.
 
 ### Available Tools {#available-tools}
 

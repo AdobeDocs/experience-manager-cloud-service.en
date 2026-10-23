@@ -37,6 +37,8 @@ Smart Collections automatically remain up to date. When newly approved assets sa
 
 >[!VIDEO](https://video.tv.adobe.com/v/3503809)
 
+[!BADGE Dive Deeper into this Feature]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/smart-collection-content-hub"}
+
 >[!IMPORTANT]
 >
 >This feature is available as a Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
