@@ -219,7 +219,6 @@ For environment-specific analysis, identify the environment and time period (wit
 
 Across these topics, you can ask Coworker to propose changes, explain their potential impact, and provide validation and rollback guidance. After you apply and deploy a change, ask Coworker to reassess the available logs or live URL behavior.
 
-ithin Cloud Manager's seven-day log window.
 
 Currently, the skill does not modify your repository, deploy changes, publish or unpublish content, or clear caches. CDN cache purges, edge traffic-filter rule authoring, and changes to Adobe-managed infrastructure settings are outside its scope.
 
