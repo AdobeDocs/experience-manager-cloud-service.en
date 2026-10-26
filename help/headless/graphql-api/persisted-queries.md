@@ -481,6 +481,10 @@ Persisted queries should always be created on an AEM Author service and then pub
 
 Persisted queries can be built into [AEM Packages](/help/implementing/developing/tools/package-manager.md). AEM Packages can then be downloaded and installed on different environments. AEM Packages can also be replicated from an AEM Author environment to AEM Publish environments.
 
+>[!CAUTION]
+>
+>Take care with your filter settings when [deploying your Content Fragment Models and Persisted Queries in Content Packages](/help/headless/deployment/content-packages.md).
+
 To create a Package:
 
 1. Navigate to **Tools** > **Deployment** > **Packages**.
