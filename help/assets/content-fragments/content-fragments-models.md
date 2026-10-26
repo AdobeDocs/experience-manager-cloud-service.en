@@ -36,6 +36,10 @@ To use Content Fragment Models you:
 >
 >* "This model has a custom UI Schema configured. The order of fields displayed in this UI may not match the UI Schema. To view the fields aligned with the UI Schema, you need to switch to the new Content Fragment Editor."
 
+>[!CAUTION]
+>
+>Take care with your filter settings when [deploying your Content Fragment Models and Persisted Queries in Content Packages](/help/headless/deployment/content-packages.md).
+
 ## Creating a Content Fragment Model {#creating-a-content-fragment-model}
 
 1. Navigate to **Tools**, **General**, then open **Content Fragment Models**.

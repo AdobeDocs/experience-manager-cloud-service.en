@@ -4,7 +4,6 @@ description: Learn about canary deployments in Cloud Manager. Test new code on p
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-badge: type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md"
 product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
     internal-label: Experience Manager

@@ -27,7 +27,6 @@ role_v2:
 In Adobe Experience Manager (AEM) as a Cloud Service, the AEM OpenAPI for Content Fragment Delivery:
 
 * is an OpenAPI that is optimized for live delivery of AEM Content Fragments in JSON format
-* offers a modern CDN integration that allows active content invalidation 
 * focuses on content delivery (performance, scalability, CDN integration, optimized JSON control and output) 
 * includes the ability to hydrate JSON for referenced fragments and assets
 
@@ -67,8 +66,6 @@ Responses are then cached, based on predefined caching headers (cannot be config
   * `stale-while-revalidate`=`3600`
 * Stale content can be served, by error, for up to 1 day 
   * `stale-on-error`=`86400`
-
-Content Fragment Delivery with OpenAPI supports active CDN cache invalidation. This means that whenever content is updated, or published, the corresponding JSON OpenAPI responses are automatically invalidated, via a soft purge request to Fastly. This allows you to see changes reflected in the JSON output, before the actual CDN cache age (`s-maxage`) is reached.
 
 ## Availability {#availability}
 

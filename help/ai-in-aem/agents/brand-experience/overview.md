@@ -88,7 +88,7 @@ The [Figma to Visual Content Fragments](/help/ai-in-aem/agents/brand-experience/
 
 ## Experience Development Agent {#experience-development}
 
-[The Experience Development Agent](/help/ai-in-aem/agents/brand-experience/development/development.md) streamlines technical evolution within AEM by assisting with template updates, component configuration, and troubleshooting, reducing dependency on lengthy development cycles.
+[The Experience Development Agent](/help/ai-in-aem/agentic-capabilities/brand-experience/development/use-cases.md) streamlines technical evolution within AEM by assisting with template updates, component configuration, and troubleshooting, reducing dependency on lengthy development cycles.
 
 ### Pipeline Troubleshooting Job {#pipeline-troubleshooting}
 
