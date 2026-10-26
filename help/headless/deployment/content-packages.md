@@ -22,7 +22,7 @@ role_v2:
 Content Fragment Models and persisted GraphQL queries are content that you can create and update:
 
 * Content Fragment Models: `/conf/<config>/settings/dam/cfm/models)`
-* persisted GraphQL queries: (/conf/<config>/settings/graphql/persistentQueries)`
+* persisted GraphQL queries: `(/conf/<config>/settings/graphql/persistentQueries)`
 
 Many projects keep them in Git and ship them in a content package. The filter mode of such a package determines what happens (including models and queries created on author):
 
