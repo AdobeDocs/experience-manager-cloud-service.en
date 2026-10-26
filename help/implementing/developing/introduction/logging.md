@@ -597,48 +597,37 @@ When CDN logs are forwarded with [Log Forwarding](/help/implementing/developing/
 | Splunk | ISO 8601 string, inside the Splunk `event` | Sent as a Splunk HTTP Event Collector event: `sourcetype` (`aemcdn` by default), `source` set to `fastly`, and `index`, with the CDN log properties inside `event` |
 | Sumo Logic | ISO 8601 string | `sourcetype` set to `aemcdn` |
 
-#### New Relic {#cdn-log-newrelic}
+For Dynatrace specifics, see [Finding CDN logs in Dynatrace](/help/implementing/developing/introduction/log-forwarding.md#dynatrace-cdn). For the Amazon S3 file layout, see [Amazon S3 CDN logs](/help/implementing/developing/introduction/log-forwarding.md#amazons3-cdn).
 
-CDN log entries sent to New Relic carry `timestamp` as a number: the request start time in milliseconds since the Unix epoch. If you move queries or dashboards from another logging destination, update anything that reads `timestamp` as a string.
-
-Each entry carries all CDN log properties. To find CDN logs, query for example `FROM Log SELECT * WHERE source = 'aemcdn' SINCE 1 hour ago`.
-
-Example (some fields omitted):
+Example of a forwarded CDN log entry, as written to Amazon S3 or Azure Blob Storage:
 
 ```json
 {
-"timestamp": 1685092801123,
-"ttfb": 19,
-"cli_ip": "147.160.230.112",
-"cli_country": "CH",
-"rid": "974e67f6",
-"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"timestamp": "2026-10-16T16:05:02+0000",
+"ttfb": 38,
+"ttlb": 39,
+"cli_ip": "192.0.2.10",
+"cli_country": "GB",
+"cli_region": "GB-LND",
+"rid": "4866e0ac-51ce-46e8-840a-cb53158c39e8",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
 "host": "example.com",
-"url": "/content/hello.png",
+"url": "/content/hello.html",
 "method": "GET",
-"res_ctype": "image/png",
-"cache": "PASS",
+"res_ctype": "text/html;charset=utf-8",
+"cache": "MISS",
+"debug": "",
+"res_age": "",
 "status": 200,
-"res_age": "0",
-"pop": "PAR",
+"pop": "LHR",
 "rules": "",
+"alerts": "",
 "aem_program_id": "12314",
 "aem_env_id": "1242",
 "aem_tier": "publish",
-"aem_env_type": "prod",
-"source": "aemcdn"
+"aem_env_type": "prod"
 }
 ```
-
-#### Dynatrace {#cdn-log-dynatrace}
-
-CDN log entries sent to Dynatrace use the same ISO 8601 `timestamp` as most other destinations, and Dynatrace uses it as the record time. They add `"source": "aemcdn"`. AEM logs sent to Dynatrace use the same `source` property with the values `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess`, and `aemhttpderror`, so you can use `source` to separate CDN logs from AEM logs.
-
-Dynatrace stores the whole entry, as JSON text, in the record's `content`. The properties are not separate log attributes, so simple-mode filters in the classic log viewer don't work on them. Parse `content` with DQL instead, as shown in [Finding CDN logs in Dynatrace](/help/implementing/developing/introduction/log-forwarding.md#dynatrace-cdn). The Dynatrace log `status` of these records shows `NONE`, because the CDN `status` property is the HTTP status code, not a log level.
-
-#### Amazon S3 {#cdn-log-amazons3}
-
-CDN log entries written to Amazon S3 are identical to those written to Azure Blob Storage: one JSON object per line, with no additional property. The files are gzip-compressed. See [Amazon S3 CDN logs](/help/implementing/developing/introduction/log-forwarding.md#amazons3-cdn) for the folder and file layout. The time in a file's name is not an exact time window, so use each entry's `timestamp`.
 
 ## How to Access Logs {#how-to-access-logs}
 
