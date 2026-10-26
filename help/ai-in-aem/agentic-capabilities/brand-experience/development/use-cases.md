@@ -3,21 +3,43 @@ title: Development Agentic Capabilities Overview
 description: Learn how the Development Agentic Capabilities in AEM help your traditional AEM Java-stack developers and administrators create, debug, deploy, and optimize code more efficiently.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+  - id: f1710108-e0d1-47e5-9952-1888729a03da
+    internal-label: Agentic AI
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Development Agentic Capabilities {#development-agentic-capabilities}
 
 The Development Agentic Capability of Adobe Experience Manager (AEM) as a Cloud Service collaborates with [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) to help traditional AEM Java-stack developers and administrators create, debug, deploy, and optimize code more efficiently.
 
-## Use cases {#use-cases}
+## Use Cases {#use-cases}
 
 A range of use-cases are covered.
 
-### Manage Cloud Manager pipelines
+### Manage Cloud Manager Pipelines {#aem-cloud-manager-pipeline-management}
 
 The AEM Cloud Manager Pipeline Management skill lets you manage your CI/CD pipelines directly through natural language, without switching between Cloud Manager screens to find the information or controls you need. You can list and create pipelines, kick off or cancel executions, and check status and history — all from a single conversation.
 
 When something goes wrong, the skill goes beyond status checks: it can retrieve step metrics, logs, artifacts, and execution failures so you can diagnose an issue without downloading and searching through raw log files yourself. It also handles day-to-day pipeline configuration — managing pipeline variables, invalidating cached artifacts, and adjusting pipeline settings — so routine maintenance tasks that used to require several clicks through the UI can be done with a single request.
+
+To find out why an execution failed, see [AEM Cloud Manager Pipeline Troubleshooting](#aem-cloud-manager-pipeline-troubleshooting).
 
 AI can make mistakes so review suggested actions before applying them, particularly for destructive operations.
 
@@ -36,7 +58,86 @@ AI can make mistakes so review suggested actions before applying them, particula
 | Invalidating cached artifacts | "Invalidate the cached artifact for Dev Pipeline"<br><br>"Clear the build cache before my next run" |
 | Configuring pipeline settings | "Enable email notifications for Dev Pipeline"<br><br>"Change the trigger branch for pipeline 67890 to release" |
 
-### AEM Cloud Manager Environment Management
+### AEM Cloud Manager Pipeline Troubleshooting {#aem-cloud-manager-pipeline-troubleshooting}
+
+The AEM Cloud Manager Pipeline Troubleshooting skill helps you find out why a pipeline execution failed, without downloading and searching through raw log files yourself. Reference a failed execution by pipeline name or execution ID, and the skill confirms the failure in Cloud Manager, identifies the failed step, and explains in plain language what went wrong, why, and what to do next. If your request matches more than one pipeline, the skill asks you to choose one before it continues.
+
+Note that this capability is implemented as a specialist agent and so does not visually appear as a listed skill in the Coworker Customizations interface.
+
+The skill investigates failures in the following pipelines and steps:
+
+* The Build & Unit Testing step and the Code Scanning step in full-stack Deployment and Code Quality pipelines.
+* Build and code quality failures in [web tier config pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines), such as Dispatcher configuration validation errors.
+* Deployment failures in [config pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline), such as an invalid CDN configuration.
+
+For failures in other steps, such as the deployment step of a full-stack pipeline, the skill reports the failed step without diagnosing it. In that case, inspect the logs as described in [Access and Download Logs](/help/implementing/cloud-manager/manage-logs.md), or contact Adobe Support.
+
+
+You can also start troubleshooting without writing a prompt. Click **Troubleshoot with AI** on a failed pipeline execution in Cloud Manager, or in the **Failed Pipelines** widget on the Experience Manager home page, to open Coworker with that execution already referenced. See [Troubleshoot a Failed Pipeline from Cloud Manager](#troubleshoot-from-cloud-manager) and [Troubleshoot from the Failed Pipelines Widget](#troubleshoot-from-experience-home-widget).
+
+AI can make mistakes so review the diagnosis before acting on it.
+
+| Capability | Sample Prompts |
+| --- | --- |
+| Troubleshooting a failed pipeline | "Troubleshoot my failed pipeline"<br><br>"Help me troubleshoot the last pipeline that failed in Main Program" |
+| Troubleshooting a specific execution | "Troubleshoot pipeline execution 1234567"<br><br>"Troubleshoot execution 1234567 of Dev Pipeline in program 12345" |
+| Troubleshooting web tier and config pipelines | "Debug my web tier build failure on pipeline 67890"<br><br>"Why did my config pipeline deployment fail in program 12345?" |
+
+#### Permissions {#pipeline-troubleshooting-permissions}
+
+To use the AEM Cloud Manager Pipeline Troubleshooting skill, you must have either the **Developer** or the **Program Manager** role in Cloud Manager. See [Role-based permissions](/help/onboarding/cloud-manager-introduction.md#role-based-permissions).
+
+#### Troubleshoot a Failed Pipeline from Cloud Manager {#troubleshoot-from-cloud-manager}
+
+Starting from the failed pipeline execution is the fastest way to troubleshoot, because Coworker receives the execution as context and you do not have to write a prompt.
+
+1. Sign in to [Adobe Experience Cloud](https://experience.adobe.com), then open **Experience Manager**.
+
+    ![Experience Manager home page, showing the Ask Coworker anything box and Cloud Manager in the left rail](/help/ai-in-aem/agentic-capabilities/brand-experience/development/assets/dev-ac-experience-manager-home.png)
+
+    >[!TIP]
+    >
+    >To troubleshoot without opening Cloud Manager, type a prompt such as *Troubleshoot my failed pipeline* in the **Ask Coworker anything** box on this page.
+
+1. In the left rail, click **Cloud Manager**, then select your program.
+
+1. On the **Program Overview** page, in the **Pipelines** card, click the pipeline that failed.
+
+    ![Program Overview page in Cloud Manager, showing the Environments and Pipelines cards](/help/ai-in-aem/agentic-capabilities/brand-experience/development/assets/dev-ac-program-overview-pipelines.png)
+
+1. On the pipeline execution page, note the **Failed** status next to the pipeline name, and the step that failed.
+
+    ![Pipeline execution page in Cloud Manager, showing a failed Artifact Preparation step](/help/ai-in-aem/agentic-capabilities/brand-experience/development/assets/dev-ac-failed-pipeline-execution.png)
+
+1. Click **Troubleshoot with AI**. The button appears near the upper-right corner of the page and in the **Step errors** box of the failed step.
+
+    ![Troubleshoot with AI buttons in the page header and in the Step errors box of a failed step](/help/ai-in-aem/agentic-capabilities/brand-experience/development/assets/dev-ac-troubleshoot-with-ai-button.png)
+
+    Coworker opens in a panel on the right side of the page, with the failed execution referenced in the prompt. Coworker identifies the failed step, explains the root cause, and suggests a fix that you can apply manually.
+
+    ![Coworker panel next to a failed pipeline execution, showing the root cause analysis](/help/ai-in-aem/agentic-capabilities/brand-experience/development/assets/dev-ac-coworker-troubleshooting-response.png)
+
+1. Review the diagnosis. To ask follow-up questions or request more detail, type in the **Ask Coworker anything** box.
+
+#### Troubleshoot from the Failed Pipelines Widget {#troubleshoot-from-experience-home-widget}
+
+The Experience Manager home page includes a **Failed Pipelines** widget that lists pipeline failures across your programs, so you can start troubleshooting without first opening Cloud Manager. Each row shows the pipeline name, the date and time of the last run, the duration, and the step that failed, along with a **Troubleshoot with AI** button.
+
+>[!NOTE]
+>
+>The **Failed Pipelines** widget appears only when the **Admin & IT** preset is selected. If you do not see the widget, select **Admin & IT** from the **Preset** list in the upper-right corner of the home page.
+
+![Failed Pipelines widget on the Experience Manager home page, showing a failed pipeline with the Troubleshoot with AI button highlighted](/help/ai-in-aem/agentic-capabilities/brand-experience/development/assets/dev-ac-failed-pipelines-widget.png)
+
+1. Sign in to [Adobe Experience Cloud](https://experience.adobe.com), open **Experience Manager**, then scroll to the **Failed Pipelines** widget.
+
+1. In the row of the pipeline that you want to investigate, click **Troubleshoot with AI**.
+
+    Coworker opens with the failed execution referenced and starts its analysis, identifying the root cause and suggesting a fix.
+
+1. Review the diagnosis. To ask follow-up questions or request more detail, type in the **Ask Coworker anything** box.
+
+### AEM Cloud Manager Environment Management {#aem-cloud-manager-environment-management}
 
 The AEM Cloud Manager Environment Management skill lets you manage your Cloud Manager environments through natural language, without navigating through Cloud Manager's UI screens to find the right program, environment, or configuration panel. You can list your environments, pull up details on a specific one, and create, clone, or delete environments as your project needs change.
 
@@ -57,7 +158,7 @@ AI can make mistakes so review suggested actions before applying them, particula
 | Managing region deployments | "Add a new region deployment for program 12345"<br><br>"Show me the region deployments for my production environment" |
 | Restoring from backup | "Restore my production environment from last night's backup"<br><br>"Show me available backups for the stage environment" |
 
-### AEM Cloud Manager Program Management
+### AEM Cloud Manager Program Management {#aem-cloud-manager-program-management}
 
 The AEM Cloud Manager Program Management skill lets you look up and manage your Cloud Manager programs through natural language, instead of navigating Cloud Manager's program listings to find the one you are looking for. You can list all the programs you have access to, pull up details for a specific one, and delete a program when it is no longer needed.
 
@@ -73,11 +174,13 @@ AI can make mistakes so review suggested actions before applying them, particula
 | Showing pipelines for a program | "What pipelines are in program 12345?"<br><br>"List pipelines for Main Program" |
 | Showing environments for a program | "Show me the environments in program 12345"<br><br>"What environments does Main Program have?" |
 
-### AEM Cloud Manager Release Management
+### AEM Cloud Manager Release Management {#aem-cloud-manager-release-management}
 
 The AEM Cloud Manager Release Management skill lets you control when Adobe applies automated maintenance updates to your program, without digging through Cloud Manager settings to find the right screen. You can check your current update schedule, set a daily Quiet Hours window — a recurring time each day when Adobe pauses updates — and schedule a multi-day Update-Free Period around events like a product launch or a holiday freeze, when you do not want any changes landing on your environments.
 
 If your plans change, you can remove an Update-Free Period just as easily as you scheduled it. The skill can also show you Adobe's own global Code-Freeze periods — the windows Adobe has already blocked off for planned maintenance exclusions — so you know upfront which dates are already off-limits before you try to schedule your own.
+
+The skill also helps you avoid scheduling errors. As it guides you through a request, it flags the limits that apply, such as the maximum of three Update-Free Periods within a floating 365-day window, the mandatory one-week interval between periods, and Adobe's planned maintenance exclusion windows. Instead of discovering a constraint after a configuration fails, you reach a valid schedule in the same conversation. This approach protects critical business windows from automatic maintenance updates and reduces back-and-forth and misconfiguration. See [Quiet hours and Update free periods](/help/implementing/deploying/quiet-hours-update-free-periods.md).
 
 AI can make mistakes so review suggested actions before applying them — this is especially true for update-schedule changes, since an incorrectly scheduled or removed Update-Free Period could allow updates to land during a window you meant to protect.
 
