@@ -44,6 +44,7 @@ Recommended setups, depending on who owns the models and queries:
 
   * one filter root per model or persisted query the package owns, placed before broader `/conf` entries. 
     Then content created on author is not impacted.
+  * If `conf` entries with a broader scope exist you can ensure those use a non-deleting mode, such as `update_properties`, or simply exclude specific author-owned content.
 
 * Mixed ownership: 
 
