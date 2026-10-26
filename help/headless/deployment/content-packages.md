@@ -1,8 +1,7 @@
 ---
-title: Content Fragments and Content Packages
-description: Learn how to use Content Packages for deploying Content Fragments Models and Persisted Queries
+title: Content Fragments Models, Persisted Queries and Content Packages
+description: Learn how to use Content Packages for deploying Content Fragment Models and Persisted Queries
 feature: Headless, Content Fragments,GraphQL API
-exl-id: 5ba6921f-b06e-463d-b956-d1fb434090c9
 role: Admin, Developer
 product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8

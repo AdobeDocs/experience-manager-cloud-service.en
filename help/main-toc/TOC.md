@@ -1450,7 +1450,7 @@ user-guide-title: AEM as a Cloud Service
     + [Dispatcher - Enable Caching for Persisted Queries](/help/headless/deployment/dispatcher-caching.md)
     + [CORS Config](/help/headless/deployment/cross-origin-resource-sharing.md)
     + [Referrer Filter](/help/headless/deployment/referrer-filter.md)
-    + [Models, Queries and Content Packages](/help/headless/deployment/content-packages.md)
+    + [Content Fragment Models, Persisted Queries and Content Packages](/help/headless/deployment/content-packages.md)
   + Headless Journeys {#journeys}
     + Headless Developer Journey {#developer}
       + [Understand Headless in AEM](/help/journey-headless/developer/overview.md)
