@@ -45,9 +45,13 @@ The server-to-server flow involves these steps:
 
    ![Create new technical account dialog with OAuth Server-to-Server selected](assets/dev-console/s2s-create-acc-step-2-create-dialog.png)
 
-1. **Save the client secret.** The **Save your client secret** dialog shows the credentials, including `technicalAccount.clientSecret`. Select **Download credentials** to save them as `aem-s2s-credentials.json`, or select **Copy to clipboard**. Store the credentials in a secret manager or another access-controlled location for your application. Downloading the credentials file is required before you can continue. Select **I have saved the client secret**, then select **Close**. After the dialog is closed, the secret cannot be shown again.
+1. **Save the client secret.** The **Save your client secret** dialog shows the credentials, including `technicalAccount.clientSecret`. Select **Download credentials** to save them as `aem-s2s-credentials.json`, or select **Copy to clipboard**. Store the credentials in a secret manager or another access-controlled location for your application.
 
-   ![Save your client secret dialog with the client secret value hidden, and the saved-secret confirmation and Download credentials highlighted](assets/dev-console/s2s-create-acc-step-3-save-secret.png)
+   ![Save your client secret dialog with the client secret value hidden and Download credentials and Copy to clipboard highlighted](assets/dev-console/s2s-create-acc-step-3-save-secret.png)
+
+   Select **Close**. In the **Close without further access to your secret** confirmation dialog, select **Close** only after saving the secret securely. After the dialog is closed, the secret cannot be shown again.
+
+   ![Close without further access to your secret confirmation dialog with Close highlighted](assets/dev-console/s2s-create-acc-step-3-close-confirmation.png)
 
 1. **Review the technical account.** The new OAuth Server-to-Server account is listed with its **Active** client secret. The secret ID displayed in the list identifies a secret. It is not the secret value and cannot be used as `client_secret` in a token request.
 
@@ -182,9 +186,9 @@ Creating and revoking secrets requires the secret values that you saved. The AEM
 
    ![Create new Secret dialog with the active client secret field and the Create new Secret button highlighted](assets/dev-console/s2s-rotate-step-2-create-new-secret-dialog.png)
 
-1. **Save the new secret.** The dialog shows the new secret once, with its `clientId`, `secretId`, `clientSecret`, and `scopes`. Download or copy it, store it securely, select **I have saved the client secret**, and close the dialog. After the dialog is closed, the new secret cannot be shown again.
+1. **Save the new secret.** The dialog shows the new secret once, with its `clientId`, `secretId`, `clientSecret`, and `scopes`. Download or copy it, store it securely, and close the dialog. Confirm that you want to close it only after saving the secret securely. After the dialog is closed, the new secret cannot be shown again.
 
-   ![New secret dialog with the client secret value hidden, and the saved-secret confirmation and Download highlighted](assets/dev-console/s2s-rotate-step-3-save-new-secret.png)
+   ![New secret dialog with the client secret value hidden and Download credentials and Copy to clipboard highlighted](assets/dev-console/s2s-rotate-step-3-save-new-secret.png)
 
 1. **Switch applications to the new secret.** Replace the `technicalAccount.clientSecret` value in the credentials that every application instance and deployment uses with the new `clientSecret`. The other credential values do not change.
 
