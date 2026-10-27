@@ -27,7 +27,7 @@ When creating an Image Profile, you can use the **[!UICONTROL Unsharp mask]** op
 
 >[!NOTE]
 >
->The unsharp mask is only applied to downscaled renditions within the PTIFF (pyramid tiff) that are downsampled more than 50%. The unsharp mask does not affect the largest-sized renditions within the ptiff. Whereas smaller-sized renditions, such as thumbnails, are altered (and show the unsharp mask).
+>The unsharp mask is only applied to downscaled renditions within the PTIFF (pyramid tiff) that are downsampled more than 50%. The unsharp mask does not affect the largest-sized renditions within the ptiff. Smaller-sized renditions, such as thumbnails, are altered (and show the unsharp mask).
 
 In **[!UICONTROL Unsharp Mask]**, you have the following filtering options:
 
@@ -68,14 +68,14 @@ See also [Dynamic Media limitations](/help/assets/dynamic-media/limitations.md).
 
 Smart crop coordinates are aspect ratio dependent. For the smart crop settings in an Image Profile, if the aspect ratio is the same for the added dimensions in the Image Profile, then the same aspect ratio is sent to Dynamic Media. Adobe recommends that you use the same crop area. Doing so ensures that there is no impact to different dimensions used in the Image Profile.
 
-Each smart crop generation that you create requires extra processing. For example, adding more than five smart crop aspect ratios may result in a slow asset ingestion rate. It may also cause an increased load on systems. Since smart crop can be applied at the folder level, Adobe advises using it only for folders where it is necessary.
+Each smart crop generation that you create requires extra processing. For example, adding more than five smart crop aspect ratios results in a slow asset ingestion rate. It also causes an increased load on systems. Since smart crop can be applied at the folder level, Adobe advises using it only for folders where it is necessary.
 
 **Guidelines for defining Smart Crop in an Image Profile**
 To keep Smart Crop usage under control, and to optimize for processing time and storage of crops, Adobe recommends the following guidelines and tips:
 
-* Image assets that are going to have a smart crop applied to them must be a minimum of 50 x 50 pixels or larger.
+* Image assets that have a smart crop applied to them must be a minimum of 50 x 50 pixels or larger.
 * Ideally, have 10-15 smart crops per image to optimize for screen ratios and processing time.
-* Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages.
+* Name smart crops by dimension, not usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages.
 * Create page-wise/asset type-wise Image Profiles for specific folders and subfolders instead of a common smart crop profile that is applied to all folders or all assets.
 * An Image Profile that you apply to subfolders overrides an Image Profile that is applied to the folder.
 * An Image Profile that contains duplicate smart crop dimensions is not permitted.
@@ -100,7 +100,7 @@ The maximum supported input file size resolution is 16K.
 
 >[!NOTE]
 >
->16K resolution is a display resolution with approximately 16,000 pixels horizontally. The most commonly discussed 16K resolution is 15360 × 8640, which doubles the pixel count of 8K UHD in each dimension, for a total of four times as many pixels. This resolution has 132.7 megapixels, 16 times as many pixels as 4K resolution and 64 times as many pixels as 1080p resolution.
+>16K resolution is a display resolution with 16,000 pixels horizontally. The most commonly discussed 16K resolution is 15360 × 8640, which doubles the pixel count of 8K UHD in each dimension, for a total of four times as many pixels. This resolution has 132.7 megapixels, 16 times as many pixels as 4K resolution and 64 times as many pixels as 1080p resolution.
 
 | Image format | Case-insensitive file extension | MIME type | Supported input color space | Maximum supported input file size | Supported image format? |
 | --- | --- | --- | --- | --- | --- |
@@ -150,9 +150,9 @@ See also [Best Practices for Organizing your Digital Assets for using Processing
 
 ## Apply a Dynamic Media Image Profile to folders {#applying-an-image-profile-to-folders}
 
-When you assign an Image Profile to a folder, any subfolders automatically inherit the profile from its parent folder. As such, you can assign only one Image Profile to a folder. As such, consider carefully the folder structure of where you upload, store, use, and archive assets.
+When you assign an Image Profile to a folder, any subfolders automatically inherit the profile from their parent folder. As such, you can assign only one Image Profile to a folder. Therefore, plan the folder structure for where you upload, store, use, and archive assets.
 
-If you assigned a different Image Profile to a folder, the new profile overrides the previous profile. The previously existing folder assets remain unchanged. The new profile is applied on the assets that are added to the folder later.
+If you assign a different Image Profile to a folder, the new profile overrides the previous profile. The previously existing folder assets remain unchanged. The new profile is applied to the assets that are added to the folder later.
 
 Folders with an assigned profile display the profile's name in the card.
 
@@ -160,7 +160,7 @@ Folders with an assigned profile display the profile's name in the card.
 
 You can apply Image Profiles to specific folders or globally to all assets.
 
-You can reprocess assets in a folder that already has an existing Image Profile that you later changed. See [Reprocess assets in a folder after you have edited its processing profile](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+You can reprocess assets in a folder that already has an existing Image Profile that you have changed. See [Reprocess assets in a folder after you have edited its processing profile](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 ### Apply Dynamic Media Image Profiles to specific folders {#applying-image-profiles-to-specific-folders}
 
@@ -168,7 +168,7 @@ You can apply an Image Profile to a folder from within the **[!UICONTROL Tools]*
 
 Folders with an assigned profile display the profile's name directly below the folder name.
 
-You can reprocess assets in a folder that already has an existing video profile that you later changed. See [Reprocess assets in a folder after you have edited its processing profile](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+You can reprocess assets in a folder that already has an existing video profile that you have changed. See [Reprocess assets in a folder after you have edited its processing profile](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 #### Apply Dynamic Media Image Profiles to folders from Profiles user interface {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
@@ -226,7 +226,7 @@ After you edit a smart crop and save, the change is propagated everywhere you us
 >[!IMPORTANT]
 >
 >When you manually adjust the smart crop window of an asset, your changes are saved. These edits remain intact even if you reprocess the asset later. However, if you edit the width, height, or both in the **[!UICONTROL Responsive Image Crop]** area of the Image Profile, then that asset is subject to reprocessing.
->See [Reprocess Dynamic Media assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>See [Reprocess Dynamic Media Assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 Rerun smart crop to generate the additional crops again, if necessary.
 
@@ -246,7 +246,7 @@ See also [Edit the smart crop or smart swatch of multiple images](#editing-the-s
 1. Do any of the following:
 
     * Near the upper-right corner of the page, drag the slider bar left or right to increase or decrease the image display, respectively.
-    * On the image, drag a corner handle to adjust the size of the viewable area of the crop or swatch.
+    * To adjust the size of the viewable area of the crop or swatch, drag a corner handle on the image.
     * On the image, drag the box/swatch to a new location. You can only edit image swatches; color swatches are static.
     * Near the upper-right corner of the image, select **[!UICONTROL Revert]** to undo all your edits and restore the original crop or swatch.
     * Use the keyboard arrow keys to crop the frame size, or reposition the image, or both. 
@@ -266,7 +266,7 @@ After you edit a smart crop and save, the change is propagated everywhere you us
 >[!IMPORTANT]
 >
 >When you manually adjust the smart crop window of multiple assets, your changes are saved. These edits remain intact even if you reprocess the assets later. However, if you edit the width, height, or both in the **[!UICONTROL Responsive Image Crop]** area of the Image Profile, then those assets are subject to reprocessing.
->See [Reprocess Dynamic Media assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>See [Reprocess Dynamic Media Assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 Rerun smart crop to generate the additional crops again, if necessary.
 
@@ -285,7 +285,7 @@ Rerun smart crop to generate the additional crops again, if necessary.
 
     * Filter the list of viewable images based on breakpoint names. In the example below, the images are filtered on the breakpoint name "Medium."
 
-      Near the upper-right corner of the page, from the drop-down list, select a breakpoint name to filter on what images you see. (See the image above.)
+      Near the upper-right corner of the page, from the drop-down list, select a breakpoint name to filter which images you see. (See the image above.)
 
        ![edit_smart_crops-dropdownlist](assets/edit_smart_crops-dropdownlist.png)
 
@@ -313,11 +313,11 @@ Rerun smart crop to generate the additional crops again, if necessary.
 
 ## Remove an Image Profile from folders {#removing-an-image-profile-from-folders}
 
-When you remove an Image Profile from a folder, any subfolders automatically inherit the removal of the profile from its parent folder. However, any processing of files that has occurred within the folders remains intact.
+When you remove an Image Profile from a folder, any subfolders automatically inherit the removal of the profile from their parent folder. However, any processing of files that has occurred within the folders remains intact.
 
 You can remove an Image Profile from a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from **[!UICONTROL Properties]**.
 
-### Remove Dynamic Media Image Profiles from folders by way of Profiles user interface {#removing-image-profiles-from-folders-via-profiles-user-interface}
+### Remove Dynamic Media Image Profiles from folders using the Profiles user interface {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
 1. Select the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**.
 1. Select the Image Profile that you want to remove from a folder or multiple folders.
@@ -325,9 +325,9 @@ You can remove an Image Profile from a folder from within the **[!UICONTROL Tool
 
     You can confirm that the Image Profile is no longer applied to a folder because the name no longer appears below the folder name.
 
-### Remove Dynamic Media Image Profiles from folders by way of Properties {#removing-image-profiles-from-folders-via-properties}
+### Remove Dynamic Media Image Profiles from folders using Properties {#removing-image-profiles-from-folders-via-properties}
 
-1. Select the Experience Manager logo and navigate **[!UICONTROL Assets]** and then to the folder that you want to remove an Image Profile from.
+1. Select the Experience Manager logo and navigate to **[!UICONTROL Assets]** and then to the folder that you want to remove an Image Profile from.
 1. On the folder, select the check mark to select it, then select **[!UICONTROL Properties]**.
 1. Select the **[!UICONTROL Image Profiles]** tab.
 1. From the **[!UICONTROL Profile Name]** drop-down list, select **[!UICONTROL None]**, then select **[!UICONTROL Save & Close]**.

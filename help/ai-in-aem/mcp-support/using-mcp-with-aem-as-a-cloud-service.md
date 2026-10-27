@@ -4,6 +4,26 @@ description: Learn how to use the Model Context Protocol with AEM as a Cloud Ser
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+  - id: f1710108-e0d1-47e5-9952-1888729a03da
+    internal-label: Agentic AI
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Using MCP with AEM as a Cloud Service {#using-mcp-with-aem-as-a-cloud-service}
@@ -151,6 +171,33 @@ By default, restrictions apply at the organizational level. If you need restrict
 >[!NOTE]
 >
 >The AEM MCP Server inherits any restrictions configured on the domain-specific MCP servers.
+
+##### Allowing the AEM MCP Server on IP-Restricted Environments {#allowing-aem-mcp-server-on-ip-restricted-environments}
+
+If an environment restricts access by IP address, for example with a Cloud Manager IP allowlist or a traffic filter rule that blocks requests from other IP addresses, AEM MCP Server requests to that environment are blocked by default.
+
+The AEM MCP Server can be identified in CDN traffic filter rules using the `clientService` request property, which has the value `adobe/aemmcp` for AEM MCP Server requests. Do not add AEM MCP Server IP addresses to your IP allowlists. Instead, add the following traffic filter rule to your `cdn.yaml` file and deploy it with a config pipeline:
+
+```yaml
+kind: "CDN"
+version: "1"
+data:
+  trafficFilters:
+    rules:
+      - name: allow-aemmcp
+        when: { reqProperty: clientService, equals: "adobe/aemmcp" }
+        action: bypass
+```
+
+The `bypass` action exempts matching requests from traffic filter block rules and also from the IP restrictions of Cloud Manager IP allowlists. The rule applies to all tiers and paths, so the AEM MCP Server can perform every operation that users are permitted to perform in AEM. The rule only matches requests from the AEM MCP Server, which Adobe identifies with `clientService` `adobe/aemmcp`. All other traffic to the environment remains subject to your Cloud Manager IP allowlists and traffic filter rules.
+
+The `bypass` action is similar to `allow`, but stronger: it also overrides Cloud Manager IP allowlists. If no Cloud Manager IP restrictions are configured, `bypass` and `allow` behave the same.
+
+>[!NOTE]
+>
+>The rule does not grant any additional permissions. Every request still runs under the authenticated user's identity, and AEM enforces that user's existing permissions.
+
+For general information about the `cdn.yaml` file, traffic filter rules, and deployment with a config pipeline, see [Traffic filter rules including WAF rules](/help/security/traffic-filter-rules-including-waf.md).
 
 #### Managing MCP Client Access {#managing-mcp-client-access}
 

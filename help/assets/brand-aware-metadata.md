@@ -1,9 +1,17 @@
 ---
 title: Generate Brand Aware Metadata
 description: Learn how to configure AI-powered prompts to generate metadata values for assets using Brand Aware Metadata in Adobe Experience Manager Assets.
-hidefromtoc: yes
+hidefromtoc: 'yes'
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive"
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 
 # Generate Brand Aware Metadata {#generate-ai-metadata-brand-aware}

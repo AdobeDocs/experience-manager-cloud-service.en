@@ -4,6 +4,17 @@ description: Learn how to use Logging for AEM as a Cloud Service to configure gl
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ffa4a726-ff13-52a1-83a8-2872ed44316b
+    internal-label: Log Files
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Logging for AEM as a Cloud Service {#logging-for-aem-as-a-cloud-service}
 
@@ -522,6 +533,8 @@ Define DISP_LOG_LEVEL debug
 ## CDN Log {#cdn-log}
 
 AEM as a Cloud Service provides access to CDN logs, which are useful for use cases including cache hit ratio optimization. The CDN log format cannot be customized and there is no concept of setting it to different modes such as info, warn, or error.
+
+If forwarding CDN logs to a destination that restricts inbound connections by source IP, see [CDN egress IP addresses](/help/implementing/dispatcher/cdn.md#cdn-egress-ips) for important limitations.
 
  **Example**
 

@@ -3,6 +3,12 @@ title: Generate and translate captions in Dynamic Media with OpenAPI capabilitie
 description: Learn how to generate captions from audio tracks and translate captions for video assets in Dynamic Media with OpenAPI capabilities within Adobe Experience Manager Assets.
 role: User
 badgeSaas: label="AEM Assets" type="Positive"
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 
 # Generate and translate captions in Dynamic Media with OpenAPI capabilities {#generate-translate-captions}

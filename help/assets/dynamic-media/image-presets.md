@@ -15,7 +15,7 @@ role_v2:
 ---
 # Apply Dynamic Media Image Presets {#applying-image-presets}
 
-Image Presets enable assets to dynamically deliver images at different sizes, in different formats, or with other image properties there are generated dynamically. You can choose a preset when you export to reformat images to specifications that your administrator has outlined.
+Image Presets enable assets to deliver images dynamically in different sizes, formats, or with other dynamically generated image properties. You can choose a preset when you export to reformat images to specifications that your administrator has defined.
 
 In addition, you can choose an image preset that is responsive (designated by the **[!UICONTROL RESS]** button after you select it).
 
@@ -23,13 +23,13 @@ In addition, you can choose an image preset that is responsive (designated by th
 
 >[!NOTE]
 >
->Smart imaging works with your existing image presets. It uses intelligence at the last millisecond of delivery to further reduce image file size based on browser or network connection speed. See [Smart Imaging](imaging-faq.md) for more information.
+>Smart imaging works with your existing image presets. It uses automated processing at the time of delivery to reduce image file size based on browser or network connection speed. See [Smart Imaging](imaging-faq.md) for more information.
 
 You can apply an image preset to an image anytime you preview it.
 
 **To apply Dynamic Media Image Presets:**
 
-1. Open the asset and in the left rail, select the drop-down list, then select **[!UICONTROL Renditions]**.
+1. Open the asset, and in the left rail, select the drop-down list, and then select **[!UICONTROL Renditions]**.
 
    >[!NOTE]
    >

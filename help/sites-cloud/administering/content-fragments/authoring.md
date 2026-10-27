@@ -6,6 +6,20 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Authoring Content Fragments {#authoring-content-fragments}
 
@@ -29,11 +43,7 @@ This editor provides:
 * Ability to view details of ongoing and completed [workflows](#view-workflows) that have been applied to the fragment.
 * Ability to [show, and edit, the properties, metadata and tags](#view-and-edit-properties-metadata-and-tags),
 * A hierarchical view of the Content Fragment, and its references, using the [Structure tree](#structure-tree).
-
-<!-- CQDOC-23473 - feature is beta, activate when GA -->
-<!--
 * Ability to [cancel, and revert to, inheritance](#cancel-and-revert-to-inheritance), when the fragment is part of a [Live Copy](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
---> 
 
 >[!NOTE]
 >
@@ -219,22 +229,9 @@ Fields that are defined as either Plain Text or Markdown have a simple text box,
 
 ## Edit Multi line text fields - Rich Text {#edit-multi-line-text-fields-rich-text}
 
-For **[Multi line text](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** fields that are defined as **Rich Text**, various features are available:
+For **[Multi line text](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** fields that are defined as **Rich Text**, a comprehensive range of features is available:
 
-* Edit the content:
-  * Undo/Redo
-  * Paste/Paste as Text
-  * Copy
-  * Select paragraph format
-  * Create/manage table
-  * Format text; bold, italic, underline, color
-  * Set paragraph alignment
-  * Create/manage lists; bulleted, numbered
-  * Indent text; decrease, increase
-  * Clear current formatting
-  * Insert links
-  * Select and insert references to image assets
-  * Add special characters
+* Edit the content; including format the text, select paragraph format, set paragraph alignment, insert links, select and insert references to image assets, add special characters and others
 * [Full-screen editor](#full-screen-editor-rich-text) - toggle between full-screen and in-flow
 * [Statistics](#statistics-rich-text)
 * [Compare and Synchronize](#compare-and-synchronize-rich-text)
@@ -410,9 +407,11 @@ For example:
 
 ![Content Fragment Editor - Show References](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-show-references.png)
 
-<!-- CQDOC-23473 - feature is beta, activate when GA -->
-<!--
-## Cancel, and revert to, inheritance {#cancel-and-revert-to-inheritance}
+## MSM in the editor {#msm-in-the-editor}
+
+You can [reuse Content Fragments using MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md). Several features in the editor help with this.
+
+### Cancel, and revert to, inheritance {#cancel-and-revert-to-inheritance}
 
 Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of [Multi-Site Management](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md).
 
@@ -427,7 +426,14 @@ For example:
 * Revert to inheritance (if inheritance is already canceled)
 
   ![Revert to inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-revert-to-inheritance.png)
--->
+
+### Live Copy details and actions {#live-copy-details-and-actions}
+
+From the right hand information panel you can select the **Live Copy** tab to show details of any live copies the fragment is involved in.
+
+You can also trigger various actions for either the source or the live copy. See [reuse Content Fragments using MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md) for further details.
+
+![Information panel - Live Copy details](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-live-copy-details.png)
 
 ## View Workflows {#view-workflows}
 
@@ -489,8 +495,6 @@ In the properties tab (right panel) you can also edit:
 * **Description**
 * **Tags**: using the drop-down list, or the selection dialog
 
-  <!-- CQDOC-23473 - new screenshot? -->
-
   ![Content Fragment Editor - Manage Tags](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-edit-tags.png) 
 
 ### Open the Content Fragment Model {#open-content-fragment-model}
@@ -514,8 +518,6 @@ In the **Version history** tab of the editor you can view the history, together 
 
 When you select the **Version history** tab of the right panel, details of the current, and previous, versions are shown. Select a specific version to show the details.
 
-<!-- CQDOC-23473 - new screenshot? -->
-
 ![Content Fragment Editor - Version History Overview](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-overview.png)
 
 ### Create a Version {#create-a-version}
@@ -536,8 +538,6 @@ To compare a previous version to the current:
 
 1. Select **Compare**. 
 
-<!-- CQDOC-23473 - new screenshot? -->
-
 ![Content Fragment Editor - Version History Compare](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-compare.png)
 
 This opens up a view that displays differences between the current version of the content, and the selected previous version of the content fragment. From the **Variations with changes** drop-down, you can select to see differences from the Main content and/or content from a Variation. 
@@ -549,13 +549,9 @@ Differences are indicated by color:
 
 You can also select to **Revert** to the older version, or **Close** the dialog.
 
-<!-- CQDOC-23473 - new screenshot? -->
-
 ![Content Fragment Editor - Version History Compare Versions](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-compare-versions.png)
 
 ### Revert to a Version {#revert-version}
-
-<!-- CQDOC-23473 - new screenshot? -->
 
 You can revert to any version. 
 
@@ -577,8 +573,6 @@ In the **Language properties** tab details of any related language copies are sh
 
 For example:
 
-<!-- CQDOC-23473 - new screenshot? -->
-
 ![Content Fragment Editor - open Language Copy](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-open-language-copies.png)
 
 >[!NOTE]
@@ -597,9 +591,8 @@ To enable you to collaborate in-product and in-context, the **Comments** tab in 
 * Format your comments; basic formatting is available
 * Perform a text search through existing comments
 * Edit an existing comment
+* Copy the body text
 * Delete comments
-
-<!-- CQDOC-23473 - new screenshot? -->
 
 ![Content Fragment Editor - Comments tab](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-comments.png)
 

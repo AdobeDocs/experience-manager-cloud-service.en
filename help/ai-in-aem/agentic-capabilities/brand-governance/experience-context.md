@@ -3,11 +3,31 @@ title: Experience Context
 description: Learn how Experience Context gives the AEM Governance Agent the brand rules it needs to generate and validate on-brand content.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+  - id: f1710108-e0d1-47e5-9952-1888729a03da
+    internal-label: Agentic AI
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Experience Context {#experience-context}
 
-Experience Context is the single, authoritative place where your organization records everything an AI needs to create and check content on your behalf. The [Governance Agent](/help/ai-in-aem/agents/governance/overview.md) draws on this shared context to keep every experience on-brand.
+Experience Context is the single, authoritative place where your organization records everything an AI needs to create and check content on your behalf. The [Governance Agent](/help/ai-in-aem/agentic-capabilities/brand-governance/overview.md) draws on this shared context to keep every experience on-brand.
 
 >[!IMPORTANT]
 >
@@ -32,7 +52,7 @@ Capturing everything in Experience Context gives you:
 * **Ongoing validation.** Because rules change over time, Experience Context lets you [audit existing content](#batch-analysis) against the current rules and identify content that no longer complies.
 * **Reusable across tools.** Your context is not locked inside a single application. It is exposed through a standard interface, the Model Context Protocol (MCP), so that any AI system or agent, Adobe's or your own, can query the rules that apply to a task and stay within approved bounds.
 
-Experience Context is the shared input for different AI agents. After you capture it once, any agent that generates, adapts, distributes, or checks your content can use it.
+Experience Context is the shared input for different agentic capabilities. After you capture it once, any agent that generates, adapts, distributes, or checks your content can use it.
 
 ## What Data to Capture {#what-data-to-capture}
 
@@ -81,7 +101,7 @@ Because your context is exposed through a standard interface, the *same* rules d
 You do not have to author every rule from a blank page. There are two main ways to populate Experience Context, and most organizations use both:
 
 * **Add rules manually** for the knowledge you already have written down. Each context category ([Brand Voice](#brand-voice), Claim Guardrails, Market Positioning, and [Design System](#design-system)) has its own guided form.
-* **Import from a document.** Upload an existing style guide, brand guidelines, or policy PDF as source material for your context. For step-by-step instructions, see [How to Import a Brand Policy](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md).
+* **Import from a document.** Upload an existing style guide, brand guidelines, or policy PDF as source material for your context. For step-by-step instructions, see [How to Import a Brand Policy](/help/ai-in-aem/agentic-capabilities/brand-governance/how-to-import-a-brand-policy.md).
 
 ## Work with Experience Context {#work-with-experience-context}
 
@@ -89,7 +109,7 @@ The sections below describe the building blocks of Experience Context: the **bra
 
 >[!NOTE]
 >
->Many entities carry a **Status**, and the agents use only *Active* ones. New entities are created as *Draft* by default, so you must set an entity to *Active* to put it into effect. This applies to brands, context rules, checks, and domains alike; the sections below add only the steps specific to each entity.
+>Many entities carry a **Status**, and the agentic capabilities use only *Active* ones. New entities are created as *Draft* by default, so you must set an entity to *Active* to put it into effect. This applies to brands, context rules, checks, and domains alike; the sections below add only the steps specific to each entity.
 
 ### Brands {#brands}
 
@@ -107,16 +127,16 @@ A brand has a **Name**, an optional **Description**, and a **Status**.
 
 A **brand policy** is a structured representation of your brand rules that an AI can understand and enforce. Instead of rewriting your guidelines in a technical format, you import them in their original form, a policy document (PDF) and/or a page URL, and the Governance Agent reads them and extracts everything it can into your Experience Context.
 
-Importing does more than create checks. Any information the agent finds is added to your context. Depending on what the document contains, that can include [brand voice](#brand-voice) guidance, claim guardrails, market positioning, design-system standards, and the policy checks used to enforce them. A single import can populate your context rules *and* checks at once.
+Importing does more than create checks. Any information the agentic capability finds is added to your context. Depending on what the document contains, that can include [brand voice](#brand-voice) guidance, claim guardrails, market positioning, design-system standards, and the policy checks used to enforce them. A single import can populate your context rules *and* checks at once.
 
-Once in place, this context lets the agents:
+Once in place, this context lets the agentic capabilities:
 
 * analyze existing pages to detect brand inconsistencies,
 * flag deviations from tone, terminology, or mandatory rules,
-* provide guidance to downstream agents, and
+* provide guidance to downstream agentic capabilities, and
 * help keep generated or updated content brand-compliant.
 
-This lets you reuse your existing brand documentation while gaining automated governance. For step-by-step import instructions, see [How to Import a Brand Policy](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md).
+This lets you reuse your existing brand documentation while gaining automated governance. For step-by-step import instructions, see [How to Import a Brand Policy](/help/ai-in-aem/agentic-capabilities/brand-governance/how-to-import-a-brand-policy.md).
 
 ### Context Rules {#context-rules}
 
@@ -143,9 +163,9 @@ For an example of these fields in practice, see [Brand Voice](#brand-voice) belo
 
 **Brand Voice** is one of the three [context rule](#context-rules) categories in Experience Context. It answers the question *how should we sound?*, capturing your organization's tone, terminology, sentence style, and the words you prefer or avoid, the kind of guidance that would otherwise live scattered across a style guide.
 
-Brand Voice rules use the same fields as any other context rule: **Category**, **Name**, **ID**, **Rule**, **Segments**, and **Status**. Rules extracted automatically when you [import a brand policy](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md) appear alongside those you add manually, and only rules with an *Active* **Status** are applied by the agents.
+Brand Voice rules use the same fields as any other context rule: **Category**, **Name**, **ID**, **Rule**, **Segments**, and **Status**. Rules extracted automatically when you [import a brand policy](/help/ai-in-aem/agentic-capabilities/brand-governance/how-to-import-a-brand-policy.md) appear alongside those you add manually, and only rules with an *Active* **Status** are applied by the agentic capabilities.
 
-![A brand's Brand Voice rules](/help/ai-in-aem/agents/governance/assets/brand_voice_rules.png)
+![A brand's Brand Voice rules](/help/ai-in-aem/agentic-capabilities/brand-governance/assets/brand_voice_rules.png)
 
 ### Design System {#design-system}
 
@@ -160,7 +180,7 @@ You can scope both colors and typography with **segments**, so different markets
 
 ### Checks {#checks}
 
-A **check** is an automated rule the Governance Agent applies when it reviews content. Checks are how your policies and context become enforceable. The agent may create checks for you when you import a brand policy, or you can define them directly.
+A **check** is an automated rule the Governance Agent applies when it reviews content. Checks are how your policies and context become enforceable. The agentic capability may create checks for you when you import a brand policy, or you can define them directly.
 
 A check has:
 
@@ -193,17 +213,17 @@ To run a batch analysis:
 
 1. For **Type**, select **List** to paste the URLs you want to analyze directly, one per line.
 
-   ![Starting a batch analysis with a list of URLs](/help/ai-in-aem/agents/governance/assets/start_batch_analysis_list.png){width="70%"}
+   ![Starting a batch analysis with a list of URLs](/help/ai-in-aem/agentic-capabilities/brand-governance/assets/start_batch_analysis_list.png){width="70%"}
 
 1. Alternatively, select **Sitemap Discovery** to have Batch Analysis crawl a sitemap instead of supplying URLs manually. Enter the site or page URL to crawl, set a **Max pages** limit (default 50), and optionally add **Include patterns** or **Exclude patterns** (glob patterns, for example `*/en/*` to include only certain paths, or `*/content/dam/*` to exclude others).
 
-   ![Starting a batch analysis with sitemap discovery](/help/ai-in-aem/agents/governance/assets/start_batch_analysis_sitemap_discovery.png){width="70%"}
+   ![Starting a batch analysis with sitemap discovery](/help/ai-in-aem/agentic-capabilities/brand-governance/assets/start_batch_analysis_sitemap_discovery.png){width="70%"}
 
 1. Click **Start analysis** to queue the job. The **Batch Analysis** list shows every job you run, along with its date, type, scope, status, and number of pages.
 
 1. Once a job completes, review its results under **Evaluation Results**, as shown below:
 
-   ![Overview of batch analysis results](/help/ai-in-aem/agents/governance/assets/batch_analysis_results.png)
+   ![Overview of batch analysis results](/help/ai-in-aem/agentic-capabilities/brand-governance/assets/batch_analysis_results.png)
 
    This view reports:
 
@@ -215,5 +235,5 @@ To run a batch analysis:
 
 ## Related Topics {#related-topics}
 
-* [Governance Agent Overview](/help/ai-in-aem/agents/governance/overview.md)
-* [How to Import a Brand Policy](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md)
+* [Governance Agent Overview](/help/ai-in-aem/agentic-capabilities/brand-governance/overview.md)
+* [How to Import a Brand Policy](/help/ai-in-aem/agentic-capabilities/brand-governance/how-to-import-a-brand-policy.md)

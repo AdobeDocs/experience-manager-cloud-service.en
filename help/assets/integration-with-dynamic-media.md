@@ -3,6 +3,14 @@ title: Integrate Content Advisor with Dynamic Media
 description: Learn how to integrate Content Advisor with Dynamic Media to enable users to browse, preview, and select Dynamic Media renditions for use in their applications and workflows.
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Integration with Dynamic Media {#integrate-dynamic-media}
 

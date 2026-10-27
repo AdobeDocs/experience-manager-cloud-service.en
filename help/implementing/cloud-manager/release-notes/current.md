@@ -87,7 +87,6 @@ For more information, see [Flexible Publish Tier (Beta)](/help/implementing/clou
 To join the beta, email [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com) with your Adobe Organization ID and Program ID.
 
 
-
 ## Bug fixes {#bug-fixes}
 
 * Dynamic Media and Content Hub activation failed for all EDS programs. A placeholder offer used during Edge Delivery Services provisioning disrupted the shared activation batch, causing Dynamic Media with OpenAPI and Content Hub activation to fail across every EDS program. The provisioning flow has been corrected so these activations complete reliably for all EDS programs. (CMGR-80012)
