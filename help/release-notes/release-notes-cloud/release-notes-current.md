@@ -368,7 +368,7 @@ The AEM MCP Server is also used by the [AEM Claude Connector](/help/ai-in-aem/mc
 
 -->
 
-#### OpenTelemetry for Application Performance Monitoring (APM) (Limited Availability) {#otel}
+### OpenTelemetry for Application Performance Monitoring (APM) (Limited Availability) {#otel}
 
 Now in Limited Availability (see note below for access), AEM as a Cloud Service supports [OpenTelemetry](/help/implementing/developing/introduction/opentelemetry-apm-integration.md). OTel is an open, industry-standard way to get traces, metrics, and logs together, sent to the APM provider of your choice. Also see advanced [custom instrumentation](/help/implementing/developing/introduction/opentelemetry-custom-instrumentation.md) documentation and [tutorials](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/observability-via-opentelemetry/opentelemetry-in-aem).
 

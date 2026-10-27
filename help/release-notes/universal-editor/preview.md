@@ -34,8 +34,12 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming Features {#upcoming-features}
 
-* no relevant features promoted for this release
+* Native multi-site management (MSM) support has been added to the editor, with a header menu icon showing inheritance status, link and unlink (shallow and deep) actions, and rollout. It also adds an MSM side panel, an updated icon for deeply broken inheritance, and localization updates.
+* The AEM Workflow extension has been added natively to the editor.
+* The rich text editor component now supports custom keyboard shortcuts.
 
 ## Upcoming Changes {#upcoming-improvements}
 
-* Fixed browser back/forward navigation by setting up the browser history state before the editor renders. 
+* The properties rail now properly keeps focus on a newly selected component when a slow patch response arrives after the selection has changed and undo/redo now restores the component that was actually edited.
+* The plain-text configuration of a field is now respected during inline editing, so the rich-text toolbar and actions stay disabled for plain-text fields even when filters are configured.
+* The tab key is no longer trapped when no component is selected, and a sensible tab order is now used for overlays and the app iframe.
