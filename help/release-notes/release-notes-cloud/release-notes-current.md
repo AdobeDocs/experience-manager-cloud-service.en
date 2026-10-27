@@ -328,28 +328,29 @@ Validate file attachments in Adaptive Forms before or on submission using custom
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation New Features {#foundation-new}
 
-#### Canary Deployments - Validate Features Before Accepting Live Traffic {#canary-deployments}
+#### Dispatcher Insights and Workflow Inspection Agentic Capabilities in CX Enterprise Coworker {#capabilities-cx}
 
-Available for AEM Cloud Service, [Canary deployments](/help/implementing/cloud-manager/canary-deployments.md) let you validate a new release against production infrastructure before it serves customer traffic. 
+Two new developer-related agentic capabilities are now generally available in [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview). Developers and administrators can use them to investigate workflow activity and dispatcher behavior in AEM as a Cloud Service in plain language, without opening the user interface or searching log files by hand.
 
-Deploy the build alongside your current stable release on the publish tier, then route selected requests to it with a request header. All other traffic continues to be served by the stable release, unaffected. The author tier remains on the stable version throughout.
+[**AEM Workflow Inspection**](/help/ai-in-aem/agentic-capabilities/brand-experience/development/use-cases.md#aem-workflow-inspection) lets you check on workflow activity directly from Coworker. Ask which workflows are running or suspended, get a status summary, see what's waiting in your workflow inbox, or find out why a workflow failed. You can look up a specific workflow, browse available workflow models, and ask follow-up questions as you troubleshoot.
 
-During the validation window of 3 hours, you can:
+Example prompts:
 
-* Promote the canary release to serve all live traffic, or
-* Cancel it and keep the current release running.
+- *What workflows are running?*
+- *Are any running or suspended workflows showing recorded errors?*
+- *What's in my workflow inbox?*
 
-#### AEM Agentic Capabilities with CX Coworker {#capabilities-cx}
+[**AEM Dispatcher Insights**](/help/ai-in-aem/agentic-capabilities/brand-experience/development/use-cases.md#aem-dispatcher-insights) helps you understand how your Dispatcher and Apache web tier handle requests. Coworker can analyze cache performance, investigate traffic and delivery issues, and review your security configuration. It covers three areas:
 
-Starting early September, [AEM agentic capabilities](/help/ai-in-aem/agentic-capabilities/overview.md) are generally available in Adobe CX Enterprise Coworker. Coworker is an AI-powered teammate for your marketing and CX teams, they describe what they need in plain language, while AEM agentic capabilities specialize in creating, updating, and readying content and experiences, all under the brand and governance controls you already have in place. Together, teams can unlock core use cases like managing content faster, discovering and readying assets for channels, and brand governance and trust.
+- **Caching and performance:** includes dispatcher cache hit ratio insights, query-parameter caching, cache headers and expiration, stale content and invalidation, slow responses.
+- **Traffic and request handling:** includes traffic patterns and bots, 4xx and 5xx errors, filter and endpoint routing, multi-site and hostname routing, redirects and vanity URLs, and header forwarding.
+- **Security:** includes sensitive-path exposure, security headers, permission-sensitive caching, and an overall review of your Dispatcher configuration.
 
-A quick way to think about it: being seen and recommended by AI increasingly depends on high-quality, consistent content and the context around it. This helps your team produce and manage that content with more speed, quality, and scale, supporting your brand's visibility and affinity as more of your customers discover and decide through AI.
+Example prompts:
 
->[!NOTE]
->
-> * No action is required on your side; access will be enabled automatically.
-> * Once you are enabled, only the Coworker immersive experience will be available for now. The in-product right-rail panel experience will be released soon.
-> * If you have questions, please email [cx-coworker-questions@adobe.com](mailto:cx-coworker-questions@adobe.com).
+- *Summarize Dispatcher cache performance for production today and compare it with yesterday.*
+- *Why is this page still showing old content after publication?*
+- *Investigate the intermittent 502 and 503 responses in production between 10:00 and 11:00 UTC today.*
 
 #### New capabilities in AEM MCP {#aem-mcp}
 
@@ -367,45 +368,13 @@ The AEM MCP Server is also used by the [AEM Claude Connector](/help/ai-in-aem/mc
 
 -->
 
-#### OpenTelemetry for Application Performance Monitoring (APM) (Limited Availability) {#optel}
+#### OpenTelemetry for Application Performance Monitoring (APM) (Limited Availability) {#otel}
 
-In Limited Availability (see note below for access), AEM as a Cloud Service supports [OpenTelemetry](/help/implementing/developing/introduction/opentelemetry-apm-integration.md). OTel is an open, industry-standard way to get traces, metrics, and logs together, sent to the APM provider of your choice.
+Now in Limited Availability (see note below for access), AEM as a Cloud Service supports [OpenTelemetry](/help/implementing/developing/introduction/opentelemetry-apm-integration.md). OTel is an open, industry-standard way to get traces, metrics, and logs together, sent to the APM provider of your choice. Also see advanced [custom instrumentation](/help/implementing/developing/introduction/opentelemetry-custom-instrumentation.md) documentation and [tutorials](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/observability-via-opentelemetry/opentelemetry-in-aem).
 
-Use this integration to:
+To get on the list for access, email [aemcs-otel-access@adobe.com](mailto:aemcs-otel-access@adobe.com), describing where you intend on ingesting the data. 
 
-* Investigate slow or failing requests
-* Track JVM health and resource usage over time
-* Build dashboards and alerts for your AEM tiers
-* Correlate AEM behavior with other services during incidents
-
-OpenTelemetry will be in Limited Availability on **October 19th**. To get on the list for access, email [aemcs-otel-access@adobe.com](mailto:aemcs-otel-access@adobe.com), describing your use case and how you intend on ingesting the data. 
-
-#### AEM Query Optimization in the Code Assessment Agent Skill (IDE AI Tooling) {#code-assessment-skill}
-
-AI coding agents (Claude Code, Cursor, GitHub Copilot, and similar tools) have broad knowledge of AEM's underlying technologies, but don't necessarily know best practices for generating and optimizing code or how to debug common AEM development issues. For this, Adobe provides installable agent skills, which instruct your coding agent. 
-
-Available **October 1st**, one such skill – code assessment – has expanded its capabilities to include query optimization. It checks whether a JCR/Oak query is actually served by an index — and flags index definitions that look correct but are subtly misconfigured in ways that cause missed queries or silently incomplete results.
-
-If interested in AI tooling for developers, consider watching the Adobe Developers Live 2026 session [*AI-Powered development with AEM CS & AEM Edge Functions*](https://www.youtube.com/watch?v=9SWWG3b3oNc).
-
-#### New Capabilities in Cloud Migration Agent Skill {#cloud-migration-skill}
-
-The [AI-Assisted Code Migration](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md) skill migrates AEM 6.5 (or earlier) Java-stack projects to AEM as a Cloud Service in the IDE. The skill now generates a read-only migration runbook that assesses the whole project and lists every applicable pattern before it changes any code.
-
-The skill now includes these patterns:
-
-* Legacy UI: Classic UI, ExtJS, and Coral 2 dialogs convert to Coral 3, and custom ExtJS design widgets migrate to Granite UI.
-* Template modernization: static templates convert to editable templates with AEM Modernize Tools rewrite rules.
-* Guava cache to Caffeine: Guava cache usage switches to Caffeine, the supported Cloud Service cache library.
-* Dispatcher configuration conversion: AMS and on-premise Apache HTTPD and Dispatcher configurations convert to the Cloud Service structure.
-* Unsupported run mode (URC) detection: the skill flags OSGi configuration folders with unsupported run modes and reorders them safely where possible.
-* Vault package dependency detection: the skill flags `filevault-package-maven-plugin` (or `content-package-maven-plugin`) configurations that are missing a `<dependencies>` block, which blocks Cloud Service package deploys.
-
-Existing supported patterns include Sling Scheduler, ResourceChangeListener, Replication API, OSGi EventListener and EventHandler, Assets API, HTL lint fixes, and OSGi configuration conversion.
-
-For more information, see [AI-Assisted Code Migration to AEM as a Cloud Service](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md).
-
-onthl### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
+### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
 #### IMS Authentication Rich Errors {#ims-auth-rich-errors}
 
@@ -413,13 +382,13 @@ To help troubleshoot IMS integrations, `imsauth` has added support for *rich err
 
 Instead of returning only an HTTP status code, these errors provide additional context to help diagnose and resolve issues that can block authentication and access.
 
-#### Java API Deprecations {#java-api-deprecation}
+#### Mandatory migration from Adobe’s built-in APM integration (New Relic) to OpenTelemetry {#otel-migration|
 
-It is critical to remove usage of deprecated APIs before **September 28, 2026**.
+OpenTelemetry is replacing Adobe’s built-in APM integration (New Relic), which will be disabled at the end of **November 2026**. If your organization is using the built-in New Relic APM integration, see the [FAQ](/help/implementing/developing/introduction/opentelemetry-apm-integration.md#faq) for more information.
 
-Since **April 14, 2026**, Cloud Manager pipelines that contain code using APIs targeting 2/26/2026 removal **fail during the Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.* 
+#### Winter 2027 Java API Deprecations {#java-api-deprecation}
 
-Starting **September 28, 2026**, environments still using these deprecated APIs **will not receive critical Adobe release updates** and will not be subject to Adobe's standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
+In **April 2027**, a set of deprecated Java APIs will be removed and it is critical to take action in order to achieve security compliance. Applications that have not removed APIs will not receive new features or bug fixes, and application stability and uptime may be negatively affected, and security risk exposure may increase.
 
 See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
 
@@ -483,13 +452,13 @@ Edge Authentication lets you restrict access to Edge Delivery Services pages to 
 
 If interested, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case and any questions you may have.
 
-#### CX Enterprise Coworker: AEM Developer-Focused Capabilities (Beta Program) {#coworker-ai-troubleshooting-beta}
+
+#### CX Enterprise Coworker: Developer-Focused Capabilities (Beta Program) {#coworker-ai-troubleshooting-beta}
 
 Today for developers, Coworker supports AI prompts to drive Cloud Manager. We're further expanding agentic AI support for developer use cases — troubleshooting, insights, and productivity — in areas including:
 
-* **CDN and dispatcher** (e.g., *Why is my site slow? Why do I see stale content?*)
+* **CDN ** (e.g., *Did my site experience any traffic spikes?*, *What's my cache hit ratio?*)
 * **Replication** (e.g., *Why is my replication queue blocked?*)
-* **Workflows** (e.g., *List any failed workflows*)
 * **Code modernization** (e.g., *Propose a patch to replace deprecated APIs*)
 
 To join the Beta Program, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com) describing your interest.
