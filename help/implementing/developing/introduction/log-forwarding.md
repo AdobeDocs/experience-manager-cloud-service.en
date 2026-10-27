@@ -114,15 +114,13 @@ Log forwarding is configured in a self-service manner by declaring a configurati
 
 There is an option for the AEM and Apache/Dispatcher logs to be routed through AEM's advanced networking infrastructure, such as dedicated egress IP. CDN logs are always sent directly from the CDN and do not use advanced networking. See [Transport & Advanced Networking](#transport-advancednetworking).
 
-Note that the network bandwidth associated with logs sent to the logging destination are considered part of your organization's Network I/O usage.
-
 ## How This Article is Organized {#how-organized}
 
 This article is organized in the following way:
 
 * Setup - common for all logging destinations
 * Transport & Advanced Networking - consideration should be given to network setup before creating logging configuration
-* Mutual TLS (mTLS) authentication - authenticating to Splunk, Elasticsearch/OpenSearch, and HTTPS destinations with a client certificate (beta)
+* Mutual TLS (mTLS) authentication (beta) - authenticating to Splunk, Elasticsearch/OpenSearch, and HTTPS destinations with a client certificate
 * Logging destination configurations - each destination has a slightly different format
 * CDN logs for Amazon S3, Dynatrace, and New Relic (beta) - how to enable CDN logs for these destinations
 * Log Entry Formats - information about the log entry formats
@@ -273,7 +271,7 @@ If the list of shared IP addresses is too large to allow-list, consider sending 
 >
 >For this reason it is not possible to use Log Forwarding with Advanced Networking VPN configurations.
 
-## Mutual TLS (mTLS) authentication {#mtls}
+## Mutual TLS (mTLS) authentication (beta) {#mtls}
 
 >[!NOTE]
 >
