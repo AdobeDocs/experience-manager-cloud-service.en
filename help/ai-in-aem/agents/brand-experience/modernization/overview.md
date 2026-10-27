@@ -116,7 +116,7 @@ For protected source websites that are reachable by the agent, you can configure
 
 The scraping skill does not support the following sources.
 
-* Intranet or private sources that are not reachable by the agent, such as sites accessible only through a VPN or blocked by a firewall. Configuring authentication does not provide network access to these sources.
+* Sites accessible only through a VPN or blocked by a firewall remain unsupported, even when valid source-site credentials are configured.
 * Protected sources that require an authentication flow other than the supported custom header, HTTP Basic, or bearer authentication.
 * Complex dynamic content such as content requiring sophisticated user interaction to appear in the DOM.
   * Client-side rendered content is supported if the content is accessible via a specific URL.
