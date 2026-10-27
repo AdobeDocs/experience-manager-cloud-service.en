@@ -1232,9 +1232,9 @@ user-guide-title: AEM as a Cloud Service
       + [Overview](/help/ai-in-aem/agents/brand-experience/overview.md)
       + Experience Production Agent {#experience-production}
         + [Overview](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)
-        + [Content Update Job](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md)
-        + [Content Create Job](/help/ai-in-aem/agents/brand-experience/experience-production/content-create.md)
-        + [Figma to Visual Content Fragments Job](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md)
+        + [Content Update](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agentic-capabilities/brand-experience/experience-production/content-update)
+        + [Content Create](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agentic-capabilities/brand-experience/experience-production/content-create)
+        + [Figma to Visual Content Fragments](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agentic-capabilities/brand-experience/experience-production/figma-to-visual-content-fragments)
         + [Communication Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)
         + [Form Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
       + Experience Modernization Agent {#modernization}
@@ -1450,6 +1450,7 @@ user-guide-title: AEM as a Cloud Service
     + [Dispatcher - Enable Caching for Persisted Queries](/help/headless/deployment/dispatcher-caching.md)
     + [CORS Config](/help/headless/deployment/cross-origin-resource-sharing.md)
     + [Referrer Filter](/help/headless/deployment/referrer-filter.md)
+    + [Content Fragment Models, Persisted Queries and Content Packages](/help/headless/deployment/content-packages.md)
   + Headless Journeys {#journeys}
     + Headless Developer Journey {#developer}
       + [Understand Headless in AEM](/help/journey-headless/developer/overview.md)

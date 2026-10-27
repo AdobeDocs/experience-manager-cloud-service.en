@@ -534,6 +534,8 @@ Define DISP_LOG_LEVEL debug
 
 AEM as a Cloud Service provides access to CDN logs, which are useful for use cases including cache hit ratio optimization. The CDN log format cannot be customized and there is no concept of setting it to different modes such as info, warn, or error.
 
+If forwarding CDN logs to a destination that restricts inbound connections by source IP, see [CDN egress IP addresses](/help/implementing/dispatcher/cdn.md#cdn-egress-ips) for important limitations.
+
  **Example**
 
  ```
