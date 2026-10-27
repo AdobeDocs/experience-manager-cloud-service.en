@@ -15,9 +15,9 @@ role_v2:
 ---
 # Preview assets{#previewing-assets}
 
-You can use Preview to see how a digital asset that you have uploaded appears when it is viewed by a customer in their own web browser. The default embedded, cross-device viewer that is assigned to the asset is used for the Preview.
+You can use Preview to see how a digital asset that you have uploaded appears when a customer views it in their own web browser. The default embedded, cross-device viewer that is assigned to the asset is used for the Preview.
 
-A viewer is a collection of various settings or "presets." For example, the viewer display size, zoom behavior, color schemes, borders, and fonts, that determine how users view rich-media assets on their computer screens and mobile devices.
+A viewer is a collection of various settings or "presets." For example, viewer settings like size, zoom, color, borders, and fonts determine asset appearance.
 
 Besides using the dedicated Preview feature for video, spin sets, and image sets, you can also preview an asset by using viewer presets that you have created. Or, use image presets to preview renditions of images.
 
@@ -26,16 +26,16 @@ Besides using the dedicated Preview feature for video, spin sets, and image sets
 
 >[!NOTE]
 >
->When you are on a webpage (Sites) in Adobe Experience Manager, you cannot preview assets in **[!UICONTROL Edit]** mode. Instead, go to Preview mode by selecting **[!UICONTROL Preview]** in the upper right-hand corner of the page.
+>When you are on a webpage (Sites) in Adobe Experience Manager, you cannot preview assets in **[!UICONTROL Edit]** mode. Instead, go to Preview mode by selecting **[!UICONTROL Preview]** in the upper right corner of the page.
 
 To enable or disable viewer presets in the user interface, see [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 **To preview assets:**
 
 1. From **[!UICONTROL Experience Manager]**, on the **[!UICONTROL Navigation]** page, select **[!UICONTROL Assets]**, then **[!UICONTROL Files]** to access assets.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, select **[!UICONTROL List View]**.
+1. Near the upper right corner of the page, from the **[!UICONTROL View]** drop-down list, select **[!UICONTROL List View]**.
 1. (Optional) Use the **[!UICONTROL Type]** column to sort the assets by the type you want to preview.
-1. Under the **[!UICONTROL Title]** column, select the title name (not the thumbnail image) of the asset you want to preview.
+1. Under the **[!UICONTROL Title]** column, select the title (not the thumbnail image) of the asset you want to preview.
 1. Depending on the asset type you selected, do any one of the following:
 
     <table>
