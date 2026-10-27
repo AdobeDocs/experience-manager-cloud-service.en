@@ -7,6 +7,10 @@ role: Admin, Developer
 ---
 # Generating Access Tokens for Server-Side APIs {#generating-access-tokens-for-server-side-apis}
 
+>[!NOTE]
+>
+>OAuth Server-to-Server credentials in the AEM Developer Console are available starting November 4, 2026.
+
 >[!IMPORTANT]
 >
 >Use OAuth Server-to-Server credentials for server-side integrations. Service Account (JWT) credentials are deprecated in favor of OAuth Server-to-Server. For existing JWT-based integrations, see [Generating Access Tokens for Server-Side APIs - JWT (Legacy)](generating-access-tokens-for-server-side-apis-jwt-legacy.md).
@@ -21,7 +25,7 @@ Use the AEM as a Cloud Service [Developer Console](development-guidelines.md#crx
 
 ## The Server-to-server Flow {#the-server-to-server-flow}
 
-Users with an IMS organization administrator role, who are also members of the **AEM Users** or **AEM Administrators** product profile on AEM Author, can create a technical account. The client secret is shown only to the user who creates it, at creation time. A user with the AEM as a Cloud Service Environment administrator role can view the account's details, which do not include the client secret.
+Users with an IMS organization administrator role who are also members of the **AEM Users** or **AEM Administrators** product profile on AEM Author can create a technical account. The client secret is shown only to the user who creates it, at creation time. A user with the AEM as a Cloud Service Environment administrator role can view the account's details, which do not include the client secret.
 
 The server-to-server flow involves these steps:
 
@@ -35,7 +39,7 @@ The server-to-server flow involves these steps:
 
 >[!IMPORTANT]
 >
->The AEM Developer Console shows an OAuth Server-to-Server client secret only once, when it is created. The AEM Developer Console does not store the secret value; it keeps only the secret ID and its status. IMS stores the secret as a one-way hash. Save the secret securely when it is shown. If you lose it, create a new secret using another active secret, or create a new technical account.
+>The AEM Developer Console shows an OAuth Server-to-Server client secret only once, when it is created. The AEM Developer Console does not store the secret value. It keeps only the secret ID and its status. IMS stores the secret as a one-way hash. Save the secret securely when it is shown. If you lose it, create a new secret using another active secret, or create a new technical account.
 
 1. **Open Integrations.** Open the AEM Developer Console for the environment that your application accesses, then select **Integrations**. Select **Create new technical account**.
 
@@ -61,10 +65,9 @@ To review a secret's details later, open the client secret's row menu and select
 
 ![Credentials dialog without the client secret value](assets/dev-console/s2s-view-credentials.png)
 
-
 >[!NOTE]
 >
->Customers can create up to twenty technical accounts, including those accounts that have already been deleted.
+>Customers can create up to 20 technical accounts. Deleted accounts count toward this limit.
 
 >[!IMPORTANT]
 >
@@ -91,7 +94,7 @@ Use `Content-Type: application/x-www-form-urlencoded` and include these form fie
 
 URL-encode each form value. Send secrets in the request body, not in the URL or query string.
 
-The response includes `access_token`, `token_type`, and `expires_in`. Use `access_token` to call AEM. The `expires_in` value is the token lifetime in seconds; use that value rather than assuming a fixed expiration time.
+The response includes `access_token`, `token_type`, and `expires_in`. Use `access_token` to call AEM. The `expires_in` value is the token lifetime in seconds. Use that value rather than assuming a fixed expiration time.
 
 Cache and reuse the access token until it approaches expiration, then request a new token with the same client credentials. This grant does not require a JWT exchange or a refresh token.
 
@@ -117,7 +120,7 @@ node oauth-s2s-cli.js downloaded_integration.json
 
 For programmatic usage, the [OAuth helper](https://github.com/adobe/aemcs-api-client-lib/blob/main/oauth-s2s.js) accepts the wrapped object as `requestAccessToken(credentials)`. It uses the IMS hostname, client ID, client secret, and scopes inside `integration`.
 
-Keep the credential file private. The CLI prints an access token; do not send its output to shared logs or publish it. The example's README also shows how to use the token in an AEM API request.
+Keep the credential file private. The CLI prints an access token. Do not send its output to shared logs or publish it. The example's README also shows how to use the token in an AEM API request.
 
 ### Calling the AEM API {#calling-the-aem-api}
 
@@ -198,7 +201,7 @@ Creating and revoking secrets requires the secret values that you saved. The AEM
 
    ![Old client secret's action menu with Revoke highlighted while both secrets are active](assets/dev-console/s2s-rotate-step-4-revoke-menu.png)
 
-1. **Confirm revocation.** In the **Revoke client secret** dialog, check the client secret ID to revoke, enter the value of that secret, and select **Revoke**. If you no longer have the secret value, contact Adobe support. Once revocation propagates through IMS, applications cannot use that secret to request new tokens. Existing access tokens may remain valid.
+1. **Confirm revocation.** In the **Revoke client secret** dialog, check the client secret ID to revoke, enter the value of that secret, and select **Revoke**. If you no longer have the secret value, contact Adobe support. Once revocation propagates through IMS, applications cannot use that secret to request new tokens. Existing access tokens might remain valid.
 
    ![Revoke client secret dialog with the client secret field and the Revoke button highlighted](assets/dev-console/s2s-rotate-step-5-revoke-dialog.png)
 

@@ -24,7 +24,7 @@ The server-to-server flow is described below, along with a simplified flow for d
 
 ## The Server-to-server Flow {#the-server-to-server-flow}
 
-Users with an IMS org administrator role, and who are a member of the AEM Users or AEM Administrators Product Profile on AEM Author, can generate a set of credentials from AEM as a Cloud Service. Each credential is a JSON payload that includes a certificate (the public key), a private key, and a technical account consisting of a `clientId` and `clientSecret`. Those credentials can later be retrieved by a user with the AEM as a Cloud Service Environment administrator role and should be installed on a non-AEM server and treated carefully as a secret key. This JSON format file contains all the data required to integrate with an AEM as a Cloud Service API. The data is used to create a signed JWT token, which is exchanged with the Adobe Identity Management Services (IMS) for an IMS access token. This access token can then be used as a Bearer authentication token to make requests to AEM as a Cloud Service. The certificate in the credentials expires after one year by default, but they can be refreshed when needed, see [Refresh Credentials](#refresh-credentials).
+Users with an IMS org administrator role who are also members of the AEM Users or AEM Administrators Product Profile on AEM Author can generate a set of credentials from AEM as a Cloud Service. Each credential is a JSON payload that includes a certificate (the public key), a private key, and a technical account consisting of a `clientId` and `clientSecret`. Those credentials can later be retrieved by a user with the AEM as a Cloud Service Environment administrator role and should be installed on a non-AEM server and treated carefully as a secret key. This JSON format file contains all the data required to integrate with an AEM as a Cloud Service API. The data is used to create a signed JWT token, which is exchanged with the Adobe Identity Management Services (IMS) for an IMS access token. This access token can then be used as a Bearer authentication token to make requests to AEM as a Cloud Service. The certificate in the credentials expires after one year by default. You can refresh it when needed. See [Refresh Credentials](#refresh-credentials).
 
 The server-to-server flow involves the following steps:
 
@@ -36,21 +36,23 @@ The server-to-server flow involves the following steps:
 
 ### Fetch the AEM as a Cloud Service Credentials {#fetch-the-aem-as-a-cloud-service-credentials}
 
-Users with access to the AEM as a Cloud Service developer console see the integrations tab in the Developer Console for a given environment, and two buttons. A user with the AEM as a Cloud Service Environment administrator role can click the **Generate Service Credentials** button to generate and display the service credentials json. The json contains all the information required for the non-AEM server, including client id, client secret, private key, certificate, and configuration for author and publish tiers of the environment, regardless of the pod selection.
+Users with access to the AEM as a Cloud Service developer console see the integrations tab in the Developer Console for a given environment, and two buttons. A user with the AEM as a Cloud Service Environment administrator role can click the **Generate Service Credentials** button to generate and display the service credentials JSON. The JSON contains all the information required for the non-AEM server, including client ID, client secret, private key, certificate, and configuration for author and publish tiers of the environment, regardless of the pod selection.
 
-![JWT Generation](assets/dev-console/create-ta-account.png)
+![Integrations tab in the Developer Console with the Create new technical account button](assets/dev-console/create-ta-account.png)
 
-After being generated, you can retrieve the credentials by clicking the hamburger menu and Click "View" on the Credential.
-![JWT Generation](assets/dev-console/cert-list-overview.png)
+After the credentials are generated, you can retrieve them by selecting the hamburger menu, then selecting **View** on the credential.
+
+![Technical account list with the credential menu open and the View option](assets/dev-console/cert-list-overview.png)
 
 You will get output like:
-![JWT Generation](assets/dev-console/cert-view.png)
 
-You can use the copy to clipboard button to copy the json to your clipboard and save it in a file. The file should be treated as a secret and stored securely.
+![Service credentials JSON displayed in the View dialog](assets/dev-console/cert-view.png)
+
+You can use the copy to clipboard button to copy the JSON to your clipboard and save it in a file. The file should be treated as a secret and stored securely.
 
 >[!NOTE]
 >
->Customers can create up to twenty technical accounts, including those accounts that have already been deleted.
+>Customers can create up to 20 technical accounts. Deleted accounts count toward this limit.
 
 >[!IMPORTANT]
 >
@@ -66,7 +68,7 @@ Use the credentials to create a JWT token in a call to Adobe's IMS service to re
 
 The AEM CS Service Credentials may be exchanged for an access token using code samples designed for this purpose. Sample code is available from [Adobe's public GitHub repository](https://github.com/adobe/aemcs-api-client-lib), which contains code examples that you can copy and adapt for your own projects. Note that this repository contains sample code for reference and is not maintained as a production-ready library dependency.
 
-```
+```javascript
 /*jshint node:true */
 "use strict";
 
@@ -90,13 +92,13 @@ The same exchange can be performed in any language capable of generating a signe
 The access token defines when it expires, which is typically 24 hours. There is sample code in the git repository to manage an access token and refresh it before it expires.
 
 >[!NOTE]
->If there are multiple credentials, make sure to reference the appropriate json file for the API call to AEM that is later invoked.
+>If there are multiple credentials, make sure to reference the appropriate JSON file for the API call to AEM that is later invoked.
 
 ### Calling the AEM API {#calling-the-aem-api}
 
 Make the appropriate server-to-server API calls to an AEM as a Cloud Service environment, including the access token in the header. So for the "Authorization" header, use the value `"Bearer <access_token>"`. For example, using `curl`:
 
-```curlc
+```bash
 curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e23423423.adobeaemcloud.com/content/dam.json
 ```
 
@@ -108,13 +110,13 @@ First, a new product profile must be created in the Adobe Admin Console.
 1. Press the **Manage** link under the **Products and Services** column on the left.
 1. Select **AEM as a Cloud Service**.
 1. Press the **New Profile** button.
-   
+
    ![New Profile](/help/implementing/developing/introduction/assets/s2s-newproductprofile.png)
 
 1. Name the profile and press **Save**.
 
    ![Save Profile](/help/implementing/developing/introduction/assets/s2s-saveprofile.png)
-   
+
 1. Select the profile that you created from the profile list.
 1. Select **Add User**.
 
@@ -127,7 +129,6 @@ First, a new product profile must be created in the Adobe Admin Console.
 1. Wait 10 minutes for the changes to take effect and make an API call to AEM with an access token generated from the new credential. As a cURL command, it would be represented similar to this example:
 
    `curl -H "Authorization: Bearer <access_token>" https://author-pXXXXX-eXXXXX.adobeaemcloud.net/content/dam.json `
-
 
 After making the API call, the product profile appears as a user group in the AEM as a Cloud Service author instance, with the appropriate technical account as a member of that group.
 
@@ -143,11 +144,10 @@ To check this information, do the following:
 
    ![Members tab](/help/implementing/developing/introduction/assets/s2s-techaccountmembers.png)
 
-
 Alternatively, you can also verify that the technical account appears in the user's list by performing the below steps on the author instance:
 
 1. Go to **Tools** > **Security** > **Users**.
-1. Check that your technical account is the user list and select it.
+1. Check that your technical account is in the user list and select it.
 1. Click the **Groups** tab so you can verify that the user is a part of the group that corresponds to your product profile. This user is also a member of a handful of other groups, including Contributors:
 
    ![Group Membership](/help/implementing/developing/introduction/assets/s2s-groupmembership.png)
@@ -164,10 +164,10 @@ Finally, configure the group with the appropriate permissions necessary so you c
 1. Search for the name of the group corresponding to the product profile in the left-hand pane (in this case Read-only APIs) and select it:
 
    ![Search for Group](/help/implementing/developing/introduction/assets/s2s-searchforgroup.png)
-   
+
 1. Click the Edit button in the following window:
 
-   ![Edit permissions](/help/implementing/developing/introduction/assets/s2s-editpermissions.png) 
+   ![Edit permissions](/help/implementing/developing/introduction/assets/s2s-editpermissions.png)
 
 1. Modify the permissions appropriately and click **Save**
 
@@ -179,7 +179,7 @@ Finally, configure the group with the appropriate permissions necessary so you c
 
 ## Developer Flow {#developer-flow}
 
-Developers likely want to test using a development instance of their non-AEM application (either running on their laptop or hosted) that makes requests to a development AEM as a Cloud Service dev environment. However, because developers do not necessarily have IMS admin role permissions, Adobe cannot assume they can generate the JWT bearer described in the regular server-to-server flow. Therefore, Adobe provides a mechanism for a developer to generate an access token directly that can be used in requests to environments on AEM as a Cloud Service which they have access to. 
+Developers likely want to test using a development instance of their non-AEM application (either running on their laptop or hosted) that makes requests to a development AEM as a Cloud Service dev environment. However, because developers do not necessarily have IMS admin role permissions, Adobe cannot assume they can generate the JWT bearer described in the regular server-to-server flow. Therefore, Adobe provides a mechanism for a developer to generate an access token directly that can be used in requests to environments on AEM as a Cloud Service which they have access to.
 
 See the [Developer Guidelines documentation](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) for information about the required permissions to use the AEM as a Cloud Service developer console.
 
@@ -187,7 +187,7 @@ See the [Developer Guidelines documentation](/help/implementing/developing/intro
 >
 >The local development access token is valid for a maximum of 24 hours after which it must be regenerated using the same method.
 
-Developers may use this token to make calls from their non-AEM test application to an AEM as a Cloud Service environment. Typically, the developer uses this token with the non-AEM application on their own laptop. Also, the AEM as a Cloud is typically a non-production environment.
+Developers may use this token to make calls from their non-AEM test application to an AEM as a Cloud Service environment. Typically, the developer uses this token with the non-AEM application on their own laptop. Also, the AEM as a Cloud Service environment is typically a non-production environment.
 
 The developer flow involves the following steps:
 
@@ -226,7 +226,7 @@ If the private key is compromised, you must create credentials with a new certif
 
    ![Add new private key](/help/implementing/developing/introduction/assets/s2s-addnewprivatekey.png)
 
-1. A new browse tab with the new credentials opens and the user interface is updated to show both private keys with the new one marked as **current**:
+1. A new browser tab with the new credentials opens and the user interface is updated to show both private keys with the new one marked as **current**:
 
    ![Private keys in the UI](/help/implementing/developing/introduction/assets/s2s-twokeys.png)
 
@@ -241,7 +241,7 @@ If the private key is compromised, you must create credentials with a new certif
 
 1. Finally, delete the compromised certificate.
 
-### Note on Revocating Individual Certificates {#note-on-recovacting-individual-certificates}
+### Note on Revoking Individual Certificates {#note-on-revoking-individual-certificates}
 
 For the JWT handshake (used to retrieve a bearer token) all that needs to be satisfied is that:
 
@@ -249,6 +249,6 @@ For the JWT handshake (used to retrieve a bearer token) all that needs to be sat
 1. There are one or more active certificates present under the respective private key in the Developer Console
 1. During the retrieval of the token (JWT handshake), IMS checks that the JWT signature matches with any bound and active (not expired) certificate on record in our system, which you can see in the console.
 
-Adding a new certificate under a PK could make it seem that revoked certificates are still usable. In effect, all certificates under a PK are equivalent. If at one is active, all are considered active.
+Adding a new certificate under a private key could make it seem that revoked certificates are still usable. In effect, all certificates under a private key are equivalent. If at least one is active, all are considered active.
 
 If you consider this to be a security issue, you should create a separate private key, and revoke all certificates on the old private key.
