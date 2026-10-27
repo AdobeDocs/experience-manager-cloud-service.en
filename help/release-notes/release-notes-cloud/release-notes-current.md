@@ -382,7 +382,7 @@ To help troubleshoot IMS integrations, `imsauth` has added support for *rich err
 
 Instead of returning only an HTTP status code, these errors provide additional context to help diagnose and resolve issues that can block authentication and access.
 
-#### Mandatory migration from Adobe’s built-in APM integration (New Relic) to OpenTelemetry {#otel-migration|
+#### Mandatory migration from Adobe’s built-in APM integration (New Relic) to OpenTelemetry {#otel-migration}
 
 OpenTelemetry is replacing Adobe’s built-in APM integration (New Relic), which will be disabled at the end of **November 2026**. If your organization is using the built-in New Relic APM integration, see the [FAQ](/help/implementing/developing/introduction/opentelemetry-apm-integration.md#faq) for more information.
 
