@@ -587,17 +587,17 @@ When CDN logs are forwarded with [Log Forwarding](/help/implementing/developing/
 
 | Logging destination | `timestamp` | Additional properties |
 |---|---|---|
-| Amazon S3 | ISO 8601 string, for example `"2026-03-04T10:00:01+0000"` | None. Entries are identical to Azure Blob Storage. |
+| Amazon S3 (beta) | ISO 8601 string, for example `"2026-03-04T10:00:01+0000"` | None. Entries are identical to Azure Blob Storage. |
 | Azure Blob Storage | ISO 8601 string | None |
 | Datadog | ISO 8601 string | `ddsource` set to `aemcdn`, and the Datadog `service` and `ddtags` |
-| Dynatrace | ISO 8601 string | `source` set to `aemcdn` |
+| Dynatrace (beta) | ISO 8601 string | `source` set to `aemcdn` |
 | Elasticsearch and OpenSearch | ISO 8601 string | None |
 | HTTPS | ISO 8601 string | `sourcetype` set to `aemcdn` |
-| New Relic | **Number:** milliseconds since the Unix epoch, for example `1685092801123` | `source` set to `aemcdn` |
+| New Relic (beta) | **Number:** milliseconds since the Unix epoch, for example `1685092801123` | `source` set to `aemcdn` |
 | Splunk | ISO 8601 string, inside the Splunk `event` | Sent as a Splunk HTTP Event Collector event: `sourcetype` (`aemcdn` by default), `source` set to `fastly`, and `index`, with the CDN log properties inside `event` |
 | Sumo Logic | ISO 8601 string | `sourcetype` set to `aemcdn` |
 
-For Dynatrace specifics, see [Finding CDN logs in Dynatrace](/help/implementing/developing/introduction/log-forwarding.md#dynatrace-cdn). For the Amazon S3 file layout, see [Amazon S3 CDN logs](/help/implementing/developing/introduction/log-forwarding.md#amazons3-cdn).
+For Dynatrace specifics, see [Finding CDN logs in Dynatrace (beta)](/help/implementing/developing/introduction/log-forwarding.md#dynatrace-cdn). For the Amazon S3 file layout, see [Amazon S3 CDN logs (beta)](/help/implementing/developing/introduction/log-forwarding.md#amazons3-cdn).
 
 Example of a forwarded CDN log entry, as written to Amazon S3 or Azure Blob Storage:
 

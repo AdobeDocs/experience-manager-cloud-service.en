@@ -104,7 +104,7 @@ Customers with a license with a logging vendor or who host a logging product can
   </tbody>
 </table>
 
-[1] CDN log forwarding to Amazon S3, Dynatrace, and New Relic is in beta. It must be enabled explicitly until 26 January 2027. See [CDN logs for Amazon S3, Dynatrace, and New Relic](#cdn-opt-in). To give feedback, email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com).
+[1] CDN log forwarding to Amazon S3, Dynatrace, and New Relic is in beta. It must be enabled explicitly until 26 January 2027. See [CDN logs for Amazon S3, Dynatrace, and New Relic (beta)](#cdn-opt-in). To give feedback, email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com).
 
 >[!NOTE]
 >
@@ -124,7 +124,7 @@ This article is organized in the following way:
 * Transport & Advanced Networking - consideration should be given to network setup before creating logging configuration
 * Mutual TLS (mTLS) authentication - authenticating to Splunk, Elasticsearch/OpenSearch, and HTTPS destinations with a client certificate (beta)
 * Logging destination configurations - each destination has a slightly different format
-* CDN logs for Amazon S3, Dynatrace, and New Relic - how to enable CDN logs for these destinations (beta)
+* CDN logs for Amazon S3, Dynatrace, and New Relic (beta) - how to enable CDN logs for these destinations
 * Log Entry Formats - information about the log entry formats
 * Migrating from legacy log forwarding - how to move from log forwarding previously setup by Adobe to the self-serve approach
 
@@ -173,7 +173,7 @@ It is possible to set different values between CDN logs and AEM logs (including 
 
 >[!NOTE]
 >
->For Amazon S3, Dynatrace, and New Relic, CDN logs are forwarded only when the `cdn` block sets `enabled: true`, until 26 January 2027. See [CDN logs for Amazon S3, Dynatrace, and New Relic](#cdn-opt-in).
+>For Amazon S3, Dynatrace, and New Relic, CDN logs are forwarded only when the `cdn` block sets `enabled: true`, until 26 January 2027. See [CDN logs for Amazon S3, Dynatrace, and New Relic (beta)](#cdn-opt-in).
 
    Another scenario is to disable either forwarding of the CDN logs or AEM logs (including Apache/Dispatcher). For example, to only forward the CDN logs, one can configure the following:
 
@@ -357,7 +357,7 @@ Configurations for the supported logging destinations are listed below, along wi
 
 ### Amazon S3 {#amazons3}
 
-For CDN logs, see [CDN logs for Amazon S3, Dynatrace, and New Relic](#cdn-opt-in) and [Amazon S3 CDN logs](#amazons3-cdn).
+CDN logs to Amazon S3 are available in beta. See [CDN logs for Amazon S3, Dynatrace, and New Relic (beta)](#cdn-opt-in) and [Amazon S3 CDN logs](#amazons3-cdn).
 
 >[!NOTE]
 >
@@ -376,7 +376,7 @@ For CDN logs, see [CDN logs for Amazon S3, Dynatrace, and New Relic](#cdn-opt-in
         secretAccessKey: "${{AWS_S3_SECRET_ACCESS_KEY}}"
   ```
 
-To forward both AEM logs and CDN logs:
+To forward both AEM logs and CDN logs (CDN logs in beta):
 
   ```yaml
   kind: "LogForwarding"
@@ -393,7 +393,7 @@ To forward both AEM logs and CDN logs:
         enabled: true
   ```
 
-To forward only CDN logs:
+To forward only CDN logs (in beta):
 
   ```yaml
   kind: "LogForwarding"
@@ -414,7 +414,7 @@ To forward only CDN logs:
 
 In order to use the S3 Log Forwarder, you will need to preconfigure an AWS IAM user with appropriate policy for accessing your S3 bucket.  See [AWS IAM User Documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) for how to create IAM user credentials.
 
-The IAM policy should allow the user to use `s3:PutObject`. To forward CDN logs, also allow `s3:AbortMultipartUpload`. No other permissions are needed: the user doesn't need to read or list the bucket. For example:
+The IAM policy should allow the user to use `s3:PutObject`. To forward CDN logs (in beta), also allow `s3:AbortMultipartUpload`. No other permissions are needed: the user doesn't need to read or list the bucket. For example:
 
 ```json
 {
@@ -434,7 +434,9 @@ If the bucket only receives CDN logs, you can limit `Resource` to `arn:aws:s3:::
 
 See [AWS Bucket Policy Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) for more information on how to implement.
 
-#### Amazon S3 CDN logs {#amazons3-cdn}
+#### Amazon S3 CDN logs (beta) {#amazons3-cdn}
+
+CDN logs to Amazon S3 are in beta and must be enabled explicitly. See [CDN logs for Amazon S3, Dynatrace, and New Relic (beta)](#cdn-opt-in).
 
 CDN logs are written below the `aemcdn/` folder of your bucket. The filename format is `YYYY-MM-DDThh:mm:ss.000-<uniqueid>.log.gz`. For example:
 
@@ -453,7 +455,7 @@ aemcdn/
 
 Customers are responsible for processing and managing these files, for example with an S3 lifecycle rule on the `aemcdn/` prefix.
 
-Considerations for CDN logs:
+Considerations for CDN logs (beta):
 
 * Authentication uses the access key of an IAM user. IAM roles are not supported.
 * The IAM user only needs `s3:PutObject` and `s3:AbortMultipartUpload`. It doesn't need permission to read or list the bucket.
@@ -642,7 +644,7 @@ There is also be a property named `Source-Type`, which is set to one of these va
 
 ### New Relic Log API {#newrelic-https}
 
-Log Forwarding to New Relic leverages the New Relic HTTPS Log API for ingestion. For CDN logs, see [CDN logs for Amazon S3, Dynatrace, and New Relic](#cdn-opt-in).
+Log Forwarding to New Relic leverages the New Relic HTTPS Log API for ingestion. CDN logs to New Relic are available in beta. See [CDN logs for Amazon S3, Dynatrace, and New Relic (beta)](#cdn-opt-in).
 
   ```yaml
     kind: "LogForwarding"
@@ -655,7 +657,7 @@ Log Forwarding to New Relic leverages the New Relic HTTPS Log API for ingestion.
           apiKey: "${{NR_API_KEY}}"
   ```
 
-To forward both AEM logs and CDN logs:
+To forward both AEM logs and CDN logs (CDN logs in beta):
 
   ```yaml
     kind: "LogForwarding"
@@ -670,7 +672,7 @@ To forward both AEM logs and CDN logs:
           enabled: true
   ```
 
-To forward only CDN logs:
+To forward only CDN logs (in beta):
 
   ```yaml
     kind: "LogForwarding"
@@ -695,13 +697,13 @@ To forward only CDN logs:
 
 * New Relic provides region specific endpoints based on where your New Relic account is provisioned. Set `uri` to the Log API endpoint for your account's region, for example `https://log-api.newrelic.com/log/v1` for accounts in the US region. See [New Relic documentation](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) for further information.
 * For `apiKey`, use a New Relic license key (key type **INGEST - LICENSE**) from the account that receives the logs. The same key is used for AEM logs and CDN logs.
-* For AEM logs, the `source` attribute is set to one of `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess`, or `aemhttpderror`. For CDN logs, `source` is set to `aemcdn`, and each record carries all CDN log properties. For example, to query CDN logs: `FROM Log SELECT * WHERE source = 'aemcdn' SINCE 1 hour ago`.
-* In CDN log entries sent to New Relic, `timestamp` is a number: the request start time in milliseconds since the Unix epoch. Other logging destinations receive `timestamp` as an ISO 8601 string.
-* CDN logs can add significant volume to your New Relic ingestion. See [CDN logs for Amazon S3, Dynatrace, and New Relic](#cdn-opt-in).
+* For AEM logs, the `source` attribute is set to one of `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess`, or `aemhttpderror`. For CDN logs (beta), `source` is set to `aemcdn`, and each record carries all CDN log properties. For example, to query CDN logs: `FROM Log SELECT * WHERE source = 'aemcdn' SINCE 1 hour ago`.
+* In CDN log entries (beta) sent to New Relic, `timestamp` is a number: the request start time in milliseconds since the Unix epoch. Other logging destinations receive `timestamp` as an ISO 8601 string.
+* CDN logs (beta) can add significant volume to your New Relic ingestion. See [CDN logs for Amazon S3, Dynatrace, and New Relic (beta)](#cdn-opt-in).
 
 ### Dynatrace Log API {#dynatrace-https}
 
-Log Forwarding to Dynatrace leverages the Dynatrace HTTPS API for ingestion. For CDN logs, see [CDN logs for Amazon S3, Dynatrace, and New Relic](#cdn-opt-in).
+Log Forwarding to Dynatrace leverages the Dynatrace HTTPS API for ingestion. CDN logs to Dynatrace are available in beta. See [CDN logs for Amazon S3, Dynatrace, and New Relic (beta)](#cdn-opt-in).
 
 The token requires the **Ingest logs** (`logs.ingest`) scope. The same token is used for AEM logs and CDN logs.
 
@@ -716,7 +718,7 @@ The token requires the **Ingest logs** (`logs.ingest`) scope. The same token is 
           token: "${{DYNATRACE_TOKEN}}"
   ```
 
-To forward both AEM logs and CDN logs:
+To forward both AEM logs and CDN logs (CDN logs in beta):
 
   ```yaml
     kind: "LogForwarding"
@@ -731,7 +733,7 @@ To forward both AEM logs and CDN logs:
           enabled: true
   ```
 
-To forward only CDN logs:
+To forward only CDN logs (in beta):
 
   ```yaml
     kind: "LogForwarding"
@@ -751,10 +753,10 @@ To forward only CDN logs:
 #### Considerations
 
 * Only Dynatrace SaaS environments are supported. `environmentId` is the ID in your environment URL, `https://<environmentId>.live.dynatrace.com`. Use the ID only, not a URL or a host name: for CDN logs it can't contain dots. Dynatrace Managed and ActiveGate endpoints are not supported.
-* Each log entry includes a `source` property. For AEM logs it is one of `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess`, or `aemhttpderror`. For CDN logs it is `aemcdn`.
-* CDN logs can add significant volume to your Dynatrace ingestion. See [CDN logs for Amazon S3, Dynatrace, and New Relic](#cdn-opt-in).
+* Each log entry includes a `source` property. For AEM logs it is one of `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess`, or `aemhttpderror`. For CDN logs (beta) it is `aemcdn`.
+* CDN logs (beta) can add significant volume to your Dynatrace ingestion. See [CDN logs for Amazon S3, Dynatrace, and New Relic (beta)](#cdn-opt-in).
 
-#### Finding CDN logs in Dynatrace {#dynatrace-cdn}
+#### Finding CDN logs in Dynatrace (beta) {#dynatrace-cdn}
 
 Dynatrace stores each CDN log entry, as JSON text, in the `content` of a log record, and uses the entry's `timestamp` as the record time. The CDN log properties, such as `source`, `url`, and `status`, are not separate log attributes. The same applies to AEM logs forwarded to Dynatrace. As a result:
 
@@ -830,7 +832,7 @@ You will need to copy the last section of the URL (without the preceeding `/`) a
 >
 >See the [Sumo Logic Partitioning Documentation](https://help.sumologic.com/docs/search/optimize-search-partitions/) for more information.
 
-## CDN logs for Amazon S3, Dynatrace, and New Relic {#cdn-opt-in}
+## CDN logs for Amazon S3, Dynatrace, and New Relic (beta) {#cdn-opt-in}
 
 CDN log forwarding to Amazon S3, Dynatrace, and New Relic is in beta and available to all programs; to give feedback, email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com).
 
