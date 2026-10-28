@@ -653,6 +653,7 @@ user-guide-title: AEM as a Cloud Service
     + [Get started using asset microservices](/help/assets/asset-microservices-configure-and-use.md)
     + [Add and upload assets](/help/assets/add-assets.md)
     + [Search assets](/help/assets/search-assets.md)
+    + [Understanding AEM Assets Search](/help/assets/full-text-search.md)
     + [Common asset management tasks](/help/assets/manage-digital-assets.md)
     + [Manage publication](/help/assets/manage-publication.md)
     + [Preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
