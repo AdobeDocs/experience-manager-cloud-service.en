@@ -47,8 +47,7 @@ None.
 * GUIDES-35125: On the **Reviewers** page, when creating or editing a review task, the **Clear Selection**, **Add Reviewers**, **Remove Reviewers**, and **Re-assign Reviewers** buttons are enabled by default, even when no rows are selected.
 * GUIDES-56101: Generating a SCORM output for a large course, typically 300 MB to 600 MB, takes more than 30 minutes and fails without error details in the logs.
 
-For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
-
+This is a selected list of issues fixed in this release. For complete information about the new and enhanced features and issues fixed in this release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
 
 ### Known Issues {#known-issues-X}
 
