@@ -601,7 +601,7 @@ The Composite data type offers several benefits when modeling data:
 
 * Simplified authoring with native support for multi-value composite fields. 
 
-  * Reusable field groups can be edited and duplicated directly within the primary authoring context.
+  * Items in multi-value composites can be created and edited within the same editor session as the parent fragment.
   * For example, addresses can be edited and duplicated directly within a contract, without requiring authors to navigate between the main and referenced content contexts.
 
 * Improved content management and delivery performance. 
@@ -651,7 +651,7 @@ The list below consolidates the current limitations of the Composite data type:
       * Inheritance for an entire composite field can be broken.
       * Breaking inheritance for individual fields within composite items is not supported.
   * Launches
-    * Content Fragments containing composite fields are not supported as Launch sources.
+    * Content Fragments containing composite fields are not supported in Launches, whether selected directly or included through fragment references. Such actions are not accepted and will fail.
   * Core Components and the Sling Model exporter
     * Page rendering via Core Components and the Sling Model exporter (`.model.json`) does not yet support composite. 
   * Visual Content Fragments (Content Fragments with HTML templates)
