@@ -448,7 +448,7 @@ The dropdown only appears when at least one option is configured. The plugin shi
 }
 ```
 
-Each entry has value (the CSS class name written to the HTML) and label (the human-readable text shown in the dropdown).
+Each entry has value (the CSS class name written to the HTML) and label (the human-readable text shown in the dropdown). Only one class is allowed to be defined as the `value` per object in the `options` array.
 
 The target follows the closest-to-caret-wins rule:
 
