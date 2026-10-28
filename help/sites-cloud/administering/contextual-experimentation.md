@@ -57,7 +57,7 @@ Before setting up experiments, keep in mind that you will need to use AEM sites 
 >If you are having trouble setting up experimentation for your project please reach out to `aem-contextual-experimentation@adobe.com`.
 
 >[!NOTE]
->For more details on how to set up and configure the experimentation engine please refer to the documentation section from the following [repository](https://github.com/adobe/aem-experimentation/tree/v2-ui) .
+>For more details on how to set up and configure the experimentation engine please refer to the documentation section from the following [repository](https://github.com/adobe/aem-experimentation) .
 
 ## Experiment variants and general workflow {#experiment-variants-workflow}
 
