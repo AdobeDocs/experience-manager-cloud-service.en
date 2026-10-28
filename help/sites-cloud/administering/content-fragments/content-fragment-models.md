@@ -345,7 +345,7 @@ Content Fragments can form nested content, using any of the following data types
     * The Composite Data Type allows you to define a group of fields as an inline, repeatable structure inside a parent fragment instead of pointing to a separate fragment reference. 
   * The composite fields are edited in the same editor session as the parent fragment.
   * Allows you to include/retrieve structured data.
-  * Suitable for repeatable field groups where modular reuse is not the primary goal. 
+  * Suitable for multi-value composite fields where modular reuse is not the primary goal. 
   * Enables the use of flatter, easier-to-manage content structures, and can also help improve system and API performance.
   
 
@@ -467,7 +467,7 @@ A Composite field has the following properties and characteristics:
   * When defining a Composite field in a Content Fragment Model you must define which models can be used for the composite items. 
   * Multiple models can be selected, the author then chooses the model to use when adding an item.
 
-* In place authoring
+* Authoring
 
   * Composite items are edited together with the parent fragment, with no switching.
 
@@ -487,7 +487,7 @@ A Composite field has the following properties and characteristics:
 
 * Native delivery
 
-  * GraphQL and OpenAI return composite content as a nested object on the parent payload. There is no reference to resolve at delivery time, no separate JCR node to fetch.
+  * GraphQL and OpenAPI return composite content as nested data in the parent payload, without resolving a separate Content Fragment asset.
 
 * Clean reference semantics
 
@@ -599,7 +599,7 @@ The Composite data type offers several benefits when modeling data:
   * Because composite data types are embedded directly within a Content Fragment, there is no need to manage separate folders or storage structures for composite content, as is required with referenced fragments. 
   * This results in flatter, less cluttered content structures that simplify governance and make composite content easier to discover.
 
-* Simplified authoring with native support for repeatable field groups. 
+* Simplified authoring with native support for multi-value composite fields. 
 
   * Reusable field groups can be edited and duplicated directly within the primary authoring context.
   * For example, addresses can be edited and duplicated directly within a contract, without requiring authors to navigate between the main and referenced content contexts.
@@ -647,21 +647,18 @@ The list below consolidates the current limitations of the Composite data type:
 * Cross-feature support
 
   * MSM (Multi Site Manager)
-    * Live Copy creation does not include composite child nodes.
+    * Inheritance can only be broken for top-level fields. 
+      * Inheritance for an entire composite field can be broken.
+      * Breaking inheritance for individual fields within composite items is not supported.
   * Launches
-    * Launches do not include composite child nodes.
-  * Translation
-    * Translatable metadata stays at the element level (this is the intended behavior, not at the composite container level). 
+    * Content Fragments containing composite fields are not supported as Launch sources.
   * Core Components and the Sling Model exporter
     * Page rendering via Core Components and the Sling Model exporter (`.model.json`) does not yet support composite. 
-  * Universal Editor
-    * Limited changes needed to support partial resolution for composite.
   * Visual Content Fragments (Content Fragments with HTML templates)
-    * Need to ensure nested structures are materialized with composite instead of references by default.
+    * Visual Content Fragments (Content Fragments with HTML templates) do not currently support composite fields.
 
 * Delivery surface
 
-  * GraphQL variation support for composite is not implemented. 
   * AEM ingestion needs to be extended for composite. 
 
 * API ergonomics
