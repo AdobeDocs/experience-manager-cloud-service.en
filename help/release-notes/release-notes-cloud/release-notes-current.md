@@ -336,6 +336,12 @@ Validate file attachments in Adaptive Forms before or on submission using custom
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation New Features {#foundation-new}
 
+#### OpenTelemetry for Application Performance Monitoring (APM) (Limited Availability) {#otel}
+
+Now in Limited Availability (see note below for access), AEM as a Cloud Service supports [OpenTelemetry](/help/implementing/developing/introduction/opentelemetry-apm-integration.md). OTel is an open, industry-standard way to get traces, metrics, and logs together, sent to the APM provider of your choice. Also see advanced [custom instrumentation](/help/implementing/developing/introduction/opentelemetry-custom-instrumentation.md) documentation and [tutorials](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/observability-via-opentelemetry/opentelemetry-in-aem).
+
+To get on the list for access, email [aemcs-otel-access@adobe.com](mailto:aemcs-otel-access@adobe.com), describing where you intend on ingesting the data. 
+
 #### Server-to-Server OAuth Credentials in AEM Developer Console (JWT Credentials are deprecated) {#devconsole-oauth}
 
 Service Account (JWT) credentials in the AEM Developer Console are deprecated in favor of OAuth Server-to-Server credentials. 
@@ -366,20 +372,6 @@ Example prompts:
 - *Why is this page still showing old content after publication?*
 - *Investigate the intermittent 502 and 503 responses in production between 10:00 and 11:00 UTC today.*
 
-#### Cloud Migration Capabilities in the AEM MCP Server {#aem-mcp-cloud-migration}
-
-[The AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) allows you to configure a single URL in your chat application or coding agent to access a growing set of capabilities. It is also used by the [AEM Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md#install-adobe-experience-manager-connector) and [AEM ChatGPT Plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md#install-adobe-experience-manager-plugin).
-
-The AEM MCP Server now supports the Cloud Migration capabilities, used by the Cloud Migration skill, which migrates AEM 6.5 (or earlier) Java-stack projects to AEM as a Cloud Service in the IDE.
-
-With this addition, the AEM MCP Server has reached parity wih the domain-specific MCP servers, which are now considered deprecated. Please configure your MCP Clients to reference the unified AEM MCP Server so you don't lose access.
-
-#### OpenTelemetry for Application Performance Monitoring (APM) (Limited Availability) {#otel}
-
-Now in Limited Availability (see note below for access), AEM as a Cloud Service supports [OpenTelemetry](/help/implementing/developing/introduction/opentelemetry-apm-integration.md). OTel is an open, industry-standard way to get traces, metrics, and logs together, sent to the APM provider of your choice. Also see advanced [custom instrumentation](/help/implementing/developing/introduction/opentelemetry-custom-instrumentation.md) documentation and [tutorials](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/observability-via-opentelemetry/opentelemetry-in-aem).
-
-To get on the list for access, email [aemcs-otel-access@adobe.com](mailto:aemcs-otel-access@adobe.com), describing where you intend on ingesting the data. 
-
 #### New Capabilities in Cloud Migration Agent Skill {#cloud-migration-skill}
 
 The [AI-Assisted Code Migration](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md) skill migrates AEM 6.5 (or earlier) Java-stack projects to AEM as a Cloud Service in the IDE.
@@ -395,19 +387,17 @@ Existing supported patterns include Legacy UI (Classic UI, ExtJS, and Coral 2 di
 
 For more information, see [AI-Assisted Code Migration to AEM as a Cloud Service](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md).
 
+#### AEM MCP Server support for Cloud Migration Capabilities {#aem-mcp-cloud-migration}
+
+[The AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) allows you to configure a single URL in your chat application or coding agent to access a growing set of capabilities. It is also used by the [AEM Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md#install-adobe-experience-manager-connector) and [AEM ChatGPT Plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md#install-adobe-experience-manager-plugin).
+
+The AEM MCP Server now supports the Cloud Migration capabilities, used by the Cloud Migration Agent skill described earlier, which migrates AEM 6.5 (or earlier) Java-stack projects to AEM as a Cloud Service in the IDE.
+
+With this addition, the AEM MCP Server has reached parity wih the domain-specific MCP servers, which are now considered deprecated. Please configure your MCP Clients to reference the unified AEM MCP Server so you don't lose access.
+
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
-#### IMS Authentication Rich Errors {#ims-auth-rich-errors}
-
-To help troubleshoot IMS integrations, `imsauth` has added support for *rich errors*.
-
-Instead of returning only an HTTP status code, these errors provide additional context to help diagnose and resolve issues that can block authentication and access.
-
-#### Deprecation of Domain-specific AEM MCP Server {#domain-mcp-deprecation}
-
-The [AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#aem-mcp-server) has reached parity with the [domain-specific MCP servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#mcp-servers-provided-by-aem), which are now deprecated. Please configure your MCP Clients to reference the AEM MCP Server by January 28, 2027 so you don't lose access.
-
-#### Update your allowlists with additional Adobe-managed CDN IP addresses {#cdn-ips}
+#### Update your Allowlists with Additional Adobe-managed CDN IP Addresses {#cdn-ips}
 
 If you restrict inbound connections to your systems by IP address, you may have allowlisted the IP addresses of the Adobe-managed CDN. This is common for destinations that receive CDN data directly, such as log ingestion endpoints.
 
@@ -423,6 +413,16 @@ If you don't allowlist the CDN's IP addresses, no action is required.
 #### Mandatory migration from Adobe’s built-in APM integration (New Relic) to OpenTelemetry {#otel-migration}
 
 OpenTelemetry (OTel) is replacing Adobe’s built-in APM integration (New Relic), which will be disabled at the end of **November 2026**. If your organization is using the built-in New Relic APM integration, see the [FAQ](/help/implementing/developing/introduction/opentelemetry-apm-integration.md#faq) for more information.
+
+#### Deprecation of Domain-specific AEM MCP Server {#domain-mcp-deprecation}
+
+The [AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#aem-mcp-server) has reached parity with the [domain-specific MCP servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#mcp-servers-provided-by-aem), which are now deprecated. Please configure your MCP Clients to reference the AEM MCP Server by January 28, 2027 so you don't lose access.
+
+#### IMS Authentication Rich Errors {#ims-auth-rich-errors}
+
+To help troubleshoot IMS integrations, `imsauth` has added support for *rich errors*.
+
+Instead of returning only an HTTP status code, these errors provide additional context to help diagnose and resolve issues that can block authentication and access.
 
 #### Java 25 for Local Development {#java25-sdk}
 
@@ -477,6 +477,12 @@ While logs can be downloaded from Cloud Manager, many organizations prefer to st
 
 You can now forward CDN logs to **Amazon S3, Dynatrace, and New Relic**. Log forwarding is configured in a self-serve manner and deployed using the Cloud Manager config pipeline. Please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to join the beta program, and learn more in the [Log Forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md).
 
+#### mTLS Authentication for Log Forwarding (Beta Program) {#mtls-log-forwarding-beta}
+
+Log Forwarding now supports mutual TLS (mTLS) client certificate authentication for Splunk, Elasticsearch/OpenSearch, and HTTPS destinations, for both AEM logs (including Apache/Dispatcher) and CDN logs. AEM as a Cloud Service presents a client certificate when it connects to your logging destination, so the destination can verify that the logs come from your environment.
+
+mTLS for Log Forwarding is in beta. To join the Beta Program, email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) with your program ID and environment IDs. Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md#mtls).
+
 #### Edge Authentication for Edge Delivery Services (Beta Program) {#edge-authentication}
 
 Edge Authentication lets you restrict access to Edge Delivery Services pages to only those who have authenticated with your identity provider (IdP). This is achieved by deploying an OpenID Connect (OIDC) configuration YAML file.
@@ -487,17 +493,11 @@ If interested, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-
 
 Today for developers, Coworker supports AI prompts to drive Cloud Manager. We're further expanding agentic AI support for developer use cases — troubleshooting, insights, and productivity — in areas including:
 
-* **CDN ** (e.g., *Did my site experience any traffic spikes?*, *What's my cache hit ratio?*)
+* **CDN** (e.g., *Did my site experience any traffic spikes?*, *What's my cache hit ratio?*)
 * **Replication** (e.g., *Why is my replication queue blocked?*)
 * **Code modernization** (e.g., *Propose a patch to replace deprecated APIs*)
 
 To join the Beta Program, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com) describing your interest.
-
-#### mTLS Authentication for Log Forwarding (Beta Program) {#mtls-log-forwarding-beta}
-
-Log Forwarding now supports mutual TLS (mTLS) client certificate authentication for Splunk, Elasticsearch/OpenSearch, and HTTPS destinations, for both AEM logs (including Apache/Dispatcher) and CDN logs. AEM as a Cloud Service presents a client certificate when it connects to your logging destination, so the destination can verify that the logs come from your environment.
-
-mTLS for Log Forwarding is in beta. To join the Beta Program, email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) with your program ID and environment IDs. Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md#mtls).
 
 ## [!DNL Experience Manager] Guides {#guides}
 
