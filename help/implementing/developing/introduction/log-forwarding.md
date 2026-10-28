@@ -104,7 +104,7 @@ Customers with a license with a logging vendor or who host a logging product can
   </tbody>
 </table>
 
-[1] CDN log forwarding to Amazon S3, Dynatrace, and New Relic is in beta. It must be enabled explicitly until 26 January 2027. See [CDN logs for Amazon S3, Dynatrace, and New Relic (beta)](#cdn-opt-in). To give feedback, email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com).
+[1] CDN log forwarding to Amazon S3, Dynatrace, and New Relic is in beta. To request access, email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) with your program ID. After access is enabled, you also turn on CDN logs for each destination with `cdn.enabled: true`. See [CDN logs for Amazon S3, Dynatrace, and New Relic (beta)](#cdn-opt-in).
 
 >[!NOTE]
 >
@@ -122,7 +122,7 @@ This article is organized in the following way:
 * Transport & Advanced Networking - consideration should be given to network setup before creating logging configuration
 * Mutual TLS (mTLS) authentication (beta) - authenticating to Splunk, Elasticsearch/OpenSearch, and HTTPS destinations with a client certificate
 * Logging destination configurations - each destination has a slightly different format
-* CDN logs for Amazon S3, Dynatrace, and New Relic (beta) - how to enable CDN logs for these destinations
+* CDN logs for Amazon S3, Dynatrace, and New Relic (beta) - how to request access to CDN logs for these destinations and enable them
 * Log Entry Formats - information about the log entry formats
 * Migrating from legacy log forwarding - how to move from log forwarding previously setup by Adobe to the self-serve approach
 
@@ -171,7 +171,7 @@ It is possible to set different values between CDN logs and AEM logs (including 
 
 >[!NOTE]
 >
->For Amazon S3, Dynatrace, and New Relic, CDN logs are forwarded only when the `cdn` block sets `enabled: true`, until 26 January 2027. See [CDN logs for Amazon S3, Dynatrace, and New Relic (beta)](#cdn-opt-in).
+>For Amazon S3, Dynatrace, and New Relic, CDN logs are in beta. They are forwarded only when your program has access to the beta and the `cdn` block sets `enabled: true`. See [CDN logs for Amazon S3, Dynatrace, and New Relic (beta)](#cdn-opt-in).
 
    Another scenario is to disable either forwarding of the CDN logs or AEM logs (including Apache/Dispatcher). For example, to only forward the CDN logs, one can configure the following:
 
@@ -355,7 +355,7 @@ Configurations for the supported logging destinations are listed below, along wi
 
 ### Amazon S3 {#amazons3}
 
-CDN logs to Amazon S3 are available in beta. See [CDN logs for Amazon S3, Dynatrace, and New Relic (beta)](#cdn-opt-in) and [Amazon S3 CDN logs](#amazons3-cdn).
+CDN logs to Amazon S3 are in beta. To request access, email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) with your program ID. See [CDN logs for Amazon S3, Dynatrace, and New Relic (beta)](#cdn-opt-in) for how to enable them, and [Amazon S3 CDN logs](#amazons3-cdn) for the file layout and considerations.
 
 >[!NOTE]
 >
@@ -434,7 +434,7 @@ See [AWS Bucket Policy Documentation](https://docs.aws.amazon.com/AmazonS3/lates
 
 #### Amazon S3 CDN logs (beta) {#amazons3-cdn}
 
-CDN logs to Amazon S3 are in beta and must be enabled explicitly. See [CDN logs for Amazon S3, Dynatrace, and New Relic (beta)](#cdn-opt-in).
+CDN logs to Amazon S3 are in beta. They need access for your program and `cdn.enabled: true`. See [CDN logs for Amazon S3, Dynatrace, and New Relic (beta)](#cdn-opt-in).
 
 CDN logs are written below the `aemcdn/` folder of your bucket. The filename format is `YYYY-MM-DDThh:mm:ss.000-<uniqueid>.log.gz`. For example:
 
@@ -642,7 +642,7 @@ There is also be a property named `Source-Type`, which is set to one of these va
 
 ### New Relic Log API {#newrelic-https}
 
-Log Forwarding to New Relic leverages the New Relic HTTPS Log API for ingestion. CDN logs to New Relic are available in beta. See [CDN logs for Amazon S3, Dynatrace, and New Relic (beta)](#cdn-opt-in).
+Log Forwarding to New Relic leverages the New Relic HTTPS Log API for ingestion. CDN logs to New Relic are in beta. To request access, email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) with your program ID. See [CDN logs for Amazon S3, Dynatrace, and New Relic (beta)](#cdn-opt-in) for how to enable them.
 
   ```yaml
     kind: "LogForwarding"
@@ -701,7 +701,7 @@ To forward only CDN logs (in beta):
 
 ### Dynatrace Log API {#dynatrace-https}
 
-Log Forwarding to Dynatrace leverages the Dynatrace HTTPS API for ingestion. CDN logs to Dynatrace are available in beta. See [CDN logs for Amazon S3, Dynatrace, and New Relic (beta)](#cdn-opt-in).
+Log Forwarding to Dynatrace leverages the Dynatrace HTTPS API for ingestion. CDN logs to Dynatrace are in beta. To request access, email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) with your program ID. See [CDN logs for Amazon S3, Dynatrace, and New Relic (beta)](#cdn-opt-in) for how to enable them.
 
 The token requires the **Ingest logs** (`logs.ingest`) scope. The same token is used for AEM logs and CDN logs.
 
@@ -832,9 +832,17 @@ You will need to copy the last section of the URL (without the preceeding `/`) a
 
 ## CDN logs for Amazon S3, Dynatrace, and New Relic (beta) {#cdn-opt-in}
 
-CDN log forwarding to Amazon S3, Dynatrace, and New Relic is in beta and available to all programs; to give feedback, email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com).
+CDN log forwarding to Amazon S3, Dynatrace, and New Relic is in beta. Forwarding AEM logs (including Apache/Dispatcher) to these destinations is not affected and doesn't need a request.
 
-For most logging destinations, an enabled `default` block forwards both CDN logs and AEM logs (including Apache/Dispatcher). Amazon S3 (`awsS3`), Dynatrace (`dynatrace`), and New Relic (`newRelic`) currently work differently: CDN logs are forwarded **only** when the `cdn` block explicitly sets `enabled: true`.
+To forward CDN logs to one of these destinations, complete both steps:
+
+1. **Request access for your program.** Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) with your program ID and the destinations you want to use. Adobe replies when access is enabled for your program.
+1. **Enable CDN logs for each destination.** After access is enabled, set `enabled: true` in the `cdn` block of the destination in your Log Forwarding configuration, and run the config pipeline. See the example below.
+
+Both steps are needed:
+
+* Access alone doesn't forward any CDN logs. For most logging destinations, an enabled `default` block forwards both AEM logs and CDN logs. For Amazon S3 (`awsS3`), Dynatrace (`dynatrace`), and New Relic (`newRelic`), CDN logs are forwarded **only** when the `cdn` block explicitly sets `enabled: true`.
+* If you set `cdn.enabled: true` before access is enabled for your program, the configuration deploys without errors, but no CDN logs are forwarded to these destinations.
 
 The `cdn` block inherits all other properties from the `default` block, including the credentials, so `enabled: true` is the only property you need to add:
 
@@ -850,6 +858,8 @@ The `cdn` block inherits all other properties from the `default` block, includin
        cdn:
          enabled: true
    ```
+
+For a program with access, the configuration works as follows:
 
 | Configuration | AEM logs | CDN logs to Amazon S3, Dynatrace, New Relic | CDN logs to other destinations |
 |---|---|---|---|
@@ -870,9 +880,11 @@ To stop forwarding CDN logs, set `cdn.enabled: false` and run the config pipelin
 
 >[!IMPORTANT]
 >
->**This opt-in is temporary.** From Tuesday, 26 January 2027, Amazon S3, Dynatrace, and New Relic follow the same rule as other destinations: an enabled `default` block forwards CDN logs as well. To keep forwarding only AEM logs to one of these destinations, set `cdn.enabled: false` for it. You can set it now; it has the same effect before and after that date.
+>**The access request and the opt-in are temporary.** From Tuesday, 26 January 2027, no access request is needed, and Amazon S3, Dynatrace, and New Relic follow the same rule as other destinations: an enabled `default` block forwards CDN logs as well. To keep forwarding only AEM logs to one of these destinations, set `cdn.enabled: false` for it. You can set it now; it has the same effect before and after that date.
 
 Before you enable CDN logs, estimate the additional volume. Logging vendors that bill by ingested volume, such as Dynatrace and New Relic, charge for CDN logs in the same way as for AEM logs.
+
+To give feedback on the beta, email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com).
 
 ## Log Entry Formats {#log-formats}
 
