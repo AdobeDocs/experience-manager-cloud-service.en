@@ -384,13 +384,13 @@ This section lists APIs that have been deprecated and removed. Some APIs referen
 
 This section reflects API removal guidance for various APIs in the tables above.
 
-To identify which deprecated Java APIs your code is using, integrate the [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)  into your Maven project and run it locally. The report lists all detected deprecated API usages and indicates which OSGi bundle is referencing each API. Reference [this tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) to learn how to use the Maven Plugin.
+To identify which deprecated Java APIs your code is using, integrate the [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) into your Maven project and run it locally. The report lists all detected deprecated API usages and indicates which OSGi bundle is referencing each API. Reference [this tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) to learn how to use the Maven Plugin.
 
-While you should remediate all deprecated APIs over time, prioritize any APIs listed in the Deprecated API table with a Target Removal date of February 26, 2026 (or earlier). In the AEM Analyser report, these APIs may appear with an effective removal date of 8/31/2025.
+While you should remediate all deprecated APIs over time, prioritize any APIs listed in the Deprecated API table with a Target Removal date of March 31, 2027 (or earlier).
 
 After updating your code, verify that no deprecated API usage remains in Cloud Manager by checking the results of the code quality step.
 
-If the updates are not made by May 4th, you will no longer receive AEM version updates. To receive Adobe release updates again, the fullstack pipeline must be successfully executed; the update will then be applied within a few days.
+If the updates are not made by March 31st, 2027, you will no longer receive AEM version updates. To receive Adobe release updates again, the fullstack pipeline must be successfully executed; the update will then be applied within a few days.
 
 ### General Guidelines
 
