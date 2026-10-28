@@ -193,7 +193,6 @@ The following are some of the Example classes:
 * `org.apache.lucene.analysis.fr.FrenchAnalyzer`
 * `org.apache.lucene.analysis.de.GermanAnalyzer`
 * `org.apache.lucene.analysis.it.ItalianAnalyzer`
-* `etc`
 
 For more details on the internal configuration of these analyzers, see [english analyzer](https://www.elastic.co/docs/reference/text-analysis/analysis-lang-analyzer#english-analyzer). 
 
