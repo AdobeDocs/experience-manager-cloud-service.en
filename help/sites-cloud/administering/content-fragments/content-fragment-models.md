@@ -533,63 +533,6 @@ In addition to standard properties you can define:
 >
 >For Composite fields in the new Content Fragment Model Editor you will see the message: Please register renderer for "composite" type.
 
-<!-- CQDOC-23582 - review -->
-
-<!--
-#### Deliver a Composite item {#deliver-a-composite-item}
-
-You can deliver your Composite items with the following APIs:
-
-* From the Management OpenAPI (Content Fragments Management API)
-
-  The composite data type is fully covered across the main Management OpenAPI operations:
-
-  * `GET /adobe/sites/cf/fragments/{uuid\}` returns composite values as nested field structures.
-  * `GET /adobe/sites/cf/fragments/{uuid\}?partial={fieldPath\}` resolves a single composite subtree, used by the editor to expand a composite on demand. This is the endpoint tracked in Splunk for adoption (references=direct&partial=…).
-  * `POST` / `PATCH` / `PUT` accept composite payloads, single and bulk.
-  * For models, `GET` and `POST` model operations support defining composite fields with allowed `modelIds`.
-  * Variations: `GET` model and UI schema endpoints support a variation query parameter; the variation `GET` fragment endpoint supports `partial`; `PATCH` on variations: Support `partial` parameter on variation PATCH endpoint.
-
-* From the Delivery APIs
-
-  * GraphQL (AEM-native delivery). Composite content is returned natively in query responses. You can query a composite field the same way ypu query a nested object. No reference resolution is needed, so depth and round-trips drop accordingly. 
-
-  * REST Delivery API. There are two paths:
-
-  * pre-baked at publish time
-  * in-process delivery from AEM
-
-  >[!NOTE]
-  >
-  >If the model used inside a composite field is not published, the delivery API will skip that composite content (with a warn log on the server). This is similar to the existing behavior for fragments missing a published model. 
-  >
-  >Make sure customer publish pipelines include all models that compositions reference.
--->
-
-<!-- CQDOC-23582 - review -->
-
-<!--
-#### Migrate Fragment References to Composite  {#migrate-fragment-references-to-composite}
-
-If you already have a content model based on Fragment references and want to convert to composite you can use the model migration mechanism. 
-
-To use the migration tool for composite conversion:
-
-* Your administrator changes the field's type in the Content Fragment Model:
-
-  * Redefine the **Fragment Reference** field as a **Composite** field.
-  * Ensure that the same models types are still allowed.
-* A background job iterates over every fragment that uses the changed field type.
-  * For each fragment, the content of the referenced fragment is inlined as a composite item, removing the reference link.
-* The operation is transactional. 
-  * While the migration is running, the Java API still serves the old model and old content. 
-  * Only on commit does the system switch to the new model and start exposing the inlined composite content.
-
->[!NOTE]
->
->The same framework also supports simpler type changes (for example, converting a number field to a string), which is the original use case.
--->
-
 ### Comparison of Nested Content {#comparison-of-nested-content}
 
 There are several methods of creating, and maintaining, nested content. 
