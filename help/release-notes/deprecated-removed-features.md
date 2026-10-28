@@ -39,10 +39,10 @@ During the deprecation time window, Adobe will remind customers of the actions t
 >
 >Several [deprecated APIs](#aem-apis) will be removed on **March 31, 2027**. Please review these key dates and impacts:
 >
->* **Starting November, 2027**: Actions Center notification emails are sent as a reminder to remove usage of these APIs, if a pipeline has been recently executed.
->* **December, 2027**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
->* **January, 2027**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.*
->* **March 31, 2027**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and will not be subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further. To once again receive Adobe release updates, a fullstack pipeline must be successfully executed; the update will then be applied within a few days.
+>* **Starting November 2027**: Actions Center notification emails are sent as a reminder to remove usage of these APIs, if a pipeline has been recently executed.
+>* **December 2027**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
+>* **January 2027**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.*
+>* **March 31 2027**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and will not be subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further. To once again receive Adobe release updates, a fullstack pipeline must be successfully executed; the update will then be applied within a few days.
 
 ## Deprecated Functionality {#deprecated-features}
 
@@ -61,12 +61,13 @@ The functionality in the table below have been announced as deprecated, but have
 | [!DNL Assets]       | Upload assets directly to [!DNL Experience Manager]. See [deprecated asset upload APIs](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Use [Direct binary upload](/help/assets/add-assets.md). For technical details, see [direct upload APIs](/help/assets/developer-reference-material-apis.md#upload-binary). |
 | [!DNL Assets]       | [Certain workflow steps](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) in `DAM Asset Update` workflow are not supported, including calling command-line tools like [!DNL ImageMagick]. | [Asset microservices](/help/assets/asset-microservices-overview.md) provide a replacement for many workflows. For custom processing, use [post-processing workflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets]       | FFmpeg transcoding of videos. | For FFmpeg thumbnail generation, use [Asset microservices](/help/assets/asset-microservices-overview.md). For FFmpeg transcoding, use [Dynamic Media](/help/assets/manage-video-assets.md). |
-| [!DNL Foundation]       | Tree replication UI under the replication agents "Distribute" tab (removal after September 30, 2021) | [Manage publication](/help/operations/replication.md#manage-publication) or [Tree Activation Workflow Step](/help/operations/tree-replication-workflows.md#tree-activation) approaches. |
 | [!DNL Foundation]       | The replication agent admin screen's Distribute tab and the Replication API cannot replicate content packages larger than 10MB. | [Manage publication](/help/operations/replication.md#manage-publication) or [Tree Activation Workflow Step](/help/operations/tree-replication-workflows.md#tree-activation) |
-| [!DNL Foundation]       | Integrations using credentials generated from Adobe Developer Console projects are gradually losing support for Service Account (JWT) credentials. As of May 1, 2024, new Service Account (JWT) credentials cannot be created in Adobe Developer Console. Existing Service Account (JWT) credentials remain usable for configured integrations until January 1, 2025, after which they stop working, requiring customers to migrate to OAuth Server-to-Server credentials. [Learn more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console).| [Migrate](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview) to OAuth Server-to-Server credentials. |
 | [!DNL Foundation]       | Publish Content Tree Workflow and the related Publish Content Tree Workflow Step, which was used for replications of hierarchies of content. | Use [Tree Activation Workflow Step](/help/operations/tree-replication-workflows.md#tree-activation), which is more performant. |
 | [!DNL Foundation]       | Using YUI to compress/minify JavaScript client libraries. Adobe does not plan to further update the YUI library.| Adobe recommends customers to switch to Google Closure Compiler (GCC) for their implementation. |
 | [!DNL Foundation]       | Support for com.adobe.granite.oauth.server | Adobe IMS Integration |
+| [!DNL Foundation]       | Adobe’s built-in APM integration (New Relic) | Move to [OpenTelemetry](/help/implementing/developing/introduction/opentelemetry-apm-integration.md) by November 30, 2026 |
+| [!DNL Foundation]       | Domain-specific MCP servers | Remove by January 17, 2026 and use the [AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#aem-mcp-server) |
+| [!DNL Foundation]       | AEM Developer Console JWT credentials |  AEM Developer Console [Server-to-Server OAuth credentials](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md). No removal date declared.|
 
 ## Removed Functionality {#removed-features}
 
@@ -80,11 +81,13 @@ This section lists functionality that has been removed.
 | [!DNL Sites] | Portal Director and Portlet Component | These capabilities were deprecated in [!DNL Experience Manager] 6.4 and have now been removed from [!DNL Experience Manager].| Removed |
 | [!DNL Sites] | Design Importer | This capability has been removed as immutable sections of the [!DNL Experience Manager] repository are not accessible at runtime. | Removed |
 | [!DNL Assets] | [!DNL Assets] sharing with Assets Core Service and Creative Cloud services is not available. | For integration with [!DNL Adobe Creative Cloud], use [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html). | Removed |
+| [!DNL Foundation]       | Tree replication UI under the replication agents "Distribute" tab | [Manage publication](/help/operations/replication.md#manage-publication) or [Tree Activation Workflow Step](/help/operations/tree-replication-workflows.md#tree-activation) approaches. | Removed |
 | [!DNL Foundation]       | Support for Apache Sling datasources (OSGi bundle org.apache.sling.datasource) | N/A | Removed |
 | [!DNL Foundation]       | Support for JST scripting templates (OSGi bundle org.apache.sling.scripting.jst) | N/A | Removed |
 | [!DNL Foundation]       | Support for the Apache Felix Http Whiteboard | OSGi Http Whiteboard | March 2022 |
 | [!DNL Foundation]       | Support for org.apache.sling.serviceusermapping feature to [get the service user id](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | N/A | 8/30/24 |
-| [!DNL Foundation]       | Java 11 runtime is deprecated and has been replaced by Adobe with Java 21 runtime. Note that it is acceptable for code to still be built with Java 11 (Java 17 and 21 are the other options) | Java 21 runtime is applied. To ensure compatibility, it is essential to update library versions as outlined in [Runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) | March 5/29/25 |
+| [!DNL Foundation]       | Adobe Developer Console projects using Service Account (JWT) credentials. | Adobe Developer Console's S2S OAuth Credentials | Removed |
+| [!DNL Foundation]       | Java 11 runtime is deprecated and has been replaced by Adobe with Java 21 runtime. Note that it is acceptable for code to still be built with Java 11 (Java 17 and 21 are the other options) | Java 21 runtime | Removed |
 
 ## Deprecated APIs {#aem-apis}
 
@@ -94,10 +97,10 @@ The APIs in the table below (click to expand to see it) have been announced as d
 >
 >Several [deprecated APIs](#aem-apis) will be removed on **March 31, 2027**. Please review these key dates and impacts:
 >
->* **Starting November, 2027**: Actions Center notification emails are sent as a reminder to remove usage of these APIs.
->* **December, 2027**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
->* **January, 2027**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.*
->* **March 31, 2027**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
+>* **Starting November 2027**: Actions Center notification emails are sent as a reminder to remove usage of these APIs.
+>* **December 2027**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
+>* **January 2027**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.*
+>* **March 31 2027**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
 >
 
 <details>
@@ -111,44 +114,20 @@ The APIs in the table below (click to expand to see it) have been announced as d
   </tr>
 <tbody>
   <tr>
-    <td>org.apache.jackrabbit.oak.plugins.blob<br>org.apache.jackrabbit.oak.plugins.blob.datastore</td>
-    <td>This API is internal use only.</td>
-    <td>9/23/2024</td>
-    <td>3/31/2027</td>
-  </tr>
-  <tr>
     <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
-    <td>Usage of this API is not supported in AEM as a Cloud Service.</td>
-    <td>10/31/2022</td>
-    <td>3/31/2027</td>
-  </tr>
-  <tr>
-    <td>com.day.cq.contentsync.handler.util</td>
-    <td>This API is deprecated. Use Apache Sling's Builders instead.</td>
+    <td></td>
     <td>10/31/2022</td>
     <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.github.jknack.handlebars<br>com.github.jknack.handlebars.cache<br>com.github.jknack.handlebars.context<br>com.github.jknack.handlebars.helper<br>com.github.jknack.handlebars.io</td>
-    <td>This API is deprecated.</td>
+    <td></td>
     <td>07/10/2024</td>
     <td>3/31/2027</td>
   </tr>
   <tr>
-    <td>com.day.cq.mailer.commons</td>
-    <td>This API is deprecated as it depends on commons-lang (which is deprecated since 2021).</td>
-    <td>11/30/2025</td>
-    <td>3/31/2027</td>
-  </tr>
-  <tr>
-    <td>com.adobe.granite.httpcache.api</td>
-    <td>This API is not supported anymore.</td>
-    <td>01/01/2026</td>
-    <td>3/31/2027</td>
-  </tr>
-  <tr>
     <td>org.apache.jackrabbit.webdav.client.methods</td>
-    <td>Usage of this API is not supported in AEM as a Cloud Service.</td>
+    <td></td>
     <td>2/13/2026</td>
     <td>3/31/2027</td>
   </tr>
@@ -166,7 +145,7 @@ The APIs in the table below (click to expand to see it) have been announced as d
   </tr>  
   <tr>
     <td>org.apache.tika<br>org.apache.tika.concurrent<br>org.apache.tika.config<br>org.apache.tika.detect<br>org.apache.tika.embedder<br>org.apache.tika.exception<br>org.apache.tika.extractor<br>org.apache.tika.fork<br>org.apache.tika.io<br>org.apache.tika.language<br>org.apache.tika.language.detect<br>org.apache.tika.language.translate<br>org.apache.tika.metadata<br>org.apache.tika.mime<br>org.apache.tika.parser<br>org.apache.tika.parser.apple<br>org.apache.tika.parser.asm<br>org.apache.tika.parser.audio<br>org.apache.tika.parser.captioning<br>org.apache.tika.parser.captioning.tf<br>org.apache.tika.parser.chm<br>org.apache.tika.parser.chm.accessor<br>org.apache.tika.parser.chm.assertion<br>org.apache.tika.parser.chm.core<br>org.apache.tika.parser.chm.exception<br>org.apache.tika.parser.chm.lzx<br>org.apache.tika.parser.code<br>org.apache.tika.parser.crypto<br>org.apache.tika.parser.ctakes<br>org.apache.tika.parser.dbf<br>org.apache.tika.parser.dif<br>org.apache.tika.parser.digest<br>org.apache.tika.parser.dwg<br>org.apache.tika.parser.envi<br>org.apache.tika.parser.epub<br>org.apache.tika.parser.executable<br>org.apache.tika.parser.external<br>org.apache.tika.parser.feed<br>org.apache.tika.parser.font<br>org.apache.tika.parser.gdal<br>org.apache.tika.parser.geo.topic<br>org.apache.tika.parser.geo.topic.gazetteer<br>org.apache.tika.parser.geoinfo<br>org.apache.tika.parser.grib<br>org.apache.tika.parser.hdf<br>org.apache.tika.parser.html<br>org.apache.tika.parser.image<br>org.apache.tika.parser.image.xmp<br>org.apache.tika.parser.iptc<br>org.apache.tika.parser.isatab<br>org.apache.tika.parser.iwork<br>org.apache.tika.parser.iwork.iwana<br>org.apache.tika.parser.jdbc<br>org.apache.tika.parser.journal<br>org.apache.tika.parser.jpeg<br>org.apache.tika.parser.mail<br>org.apache.tika.parser.mat<br>org.apache.tika.parser.mbox<br>org.apache.tika.parser.microsoft<br>org.apache.tika.parser.microsoft.ooxml<br>org.apache.tika.parser.microsoft.ooxml.xslf<br>org.apache.tika.parser.microsoft.ooxml.xwpf<br>org.apache.tika.parser.microsoft.ooxml.xwpf.ml2006<br>org.apache.tika.parser.microsoft.xml<br>org.apache.tika.parser.mp3<br>org.apache.tika.parser.mp4<br>org.apache.tika.parser.ner<br>org.apache.tika.parser.ner.corenlp<br>org.apache.tika.parser.ner.grobid<br>org.apache.tika.parser.ner.mitie<br>org.apache.tika.parser.ner.nltk<br>org.apache.tika.parser.ner.opennlp<br>org.apache.tika.parser.ner.regex<br>org.apache.tika.parser.netcdf<br>org.apache.tika.parser.ocr<br>org.apache.tika.parser.odf<br>org.apache.tika.parser.opendocument<br>org.apache.tika.parser.pdf<br>org.apache.tika.parser.pkg<br>org.apache.tika.parser.pot<br>org.apache.tika.parser.prt<br>org.apache.tika.parser.recognition<br>org.apache.tika.parser.recognition.tf<br>org.apache.tika.parser.rtf<br>org.apache.tika.parser.sentiment<br>org.apache.tika.parser.strings<br>org.apache.tika.parser.txt<br>org.apache.tika.parser.utils<br>org.apache.tika.parser.video<br>org.apache.tika.parser.wordperfect<br>org.apache.tika.parser.xml<br>org.apache.tika.sax<br>org.apache.tika.sax.xpath<br>org.apache.tika.utils<br>org.apache.tika.parser.microsoft.ooxml.xps</td>
-    <td>This version of Apache Tika is outdated and therefore will be removed from Cloud Service. Switch to a newer version of Apache Tika.</td>
+    <td></td>
     <td>4/30/2026</td>
     <td>3/31/2027</td>
   </tr>
@@ -177,23 +156,29 @@ The APIs in the table below (click to expand to see it) have been announced as d
     <td>3/31/2027</td>
   </tr>
   <tr>
-    <td>com.adobe.cq.smartcontent</td>
-    <td>This API is deprecated and scheduled for removal.</td>
-    <td>6/30/2026</td>
-    <td>3/31/2027</td>
-  </tr>
-  <tr>
     <td>opennlp.tools.chunker<br>opennlp.tools.dictionary<br>opennlp.tools.dictionary.serializer<br>opennlp.tools.ml<br>opennlp.tools.ml.maxent<br>opennlp.tools.ml.maxent.io<br>opennlp.tools.ml.maxent.quasinewton<br>opennlp.tools.ml.model<br>opennlp.tools.ml.perceptron<br>opennlp.tools.namefind<br>opennlp.tools.ngram<br>opennlp.tools.postag<br>opennlp.tools.tokenize<br>opennlp.tools.tokenize.lang<br>opennlp.tools.util<br>opennlp.tools.util.eval<br>opennlp.tools.util.ext<br>opennlp.tools.util.featuregen<br>opennlp.tools.util.model</td>
-    <td>This version of the OpenNLP library is deprecated. Use your own version of OpenNLP.</td>
+    <td></td>
     <td>6/30/2026</td>
     <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.day.cq.commons.predicate</td>
-    <td>This API is deprecated. Please use com.day.cq.commons.predicates instead.</td>
+    <td>Use com.day.cq.commons.predicates instead.</td>
     <td>6/1/2024</td>
     <td>3/31/2027</td>
   </tr>
+ <tr>
+    <td>com.day.cq.contentsync.handler.util</td>
+    <td>This API is deprecated. Use Apache Sling's Builders instead.</td>
+    <td>10/31/2022</td>
+    <td>12/31/2027</td>
+  </tr>
+  <tr>
+    <td>com.adobe.cq.smartcontent</td>
+    <td>This API is deprecated and scheduled for removal.</td>
+    <td>6/30/2026</td>
+    <td>12/31/2027</td>
+  </tr> 
   <tr>
 <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
     <td>Commons Lang 2 is in maintenance mode. Commons Lang 3 should be used instead. <a href="#apache.commons">See removal notes below.</a></td>
