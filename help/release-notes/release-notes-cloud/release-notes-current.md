@@ -336,6 +336,12 @@ Validate file attachments in Adaptive Forms before or on submission using custom
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation New Features {#foundation-new}
 
+#### Server-to-Server OAuth Credentials in AEM Developer Console (JWT Credentials are deprecated) {#devconsole-oauth}
+
+Service Account (JWT) credentials in the AEM Developer Console are deprecated in favor of OAuth Server-to-Server credentials. 
+
+Starting **November 4, 2026**, you can create OAuth Server-to-Server technical accounts in the AEM Developer Console. Your server-side application exchanges its client ID and client secret for an access token, so there is no JWT to sign and no private key or certificate to renew each year. While deprecated, the JWT-style credentials will be supported for the foreseeable. For details, see [Generating Access Tokens for Server-Side APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
+
 #### Dispatcher Insights and Workflow Inspection Agentic Capabilities in CX Enterprise Coworker {#capabilities-cx}
 
 Two new developer-related agentic capabilities are now generally available in [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview). Developers and administrators can use them to investigate workflow activity and dispatcher behavior in AEM as a Cloud Service in plain language, without opening the user interface or searching log files by hand.
