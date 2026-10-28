@@ -76,6 +76,8 @@ Since the **AI Search** performs a hybrid of both the **lexical** and **semantic
 
 ### Typo-tolerance {#typo-tolerance}
 
+The semantic part of the hybrid search is multi-lingual and it introduces a degree of typo **o**.
+
 ## Optimizing lexical search results {#optimizing-lexical-search-results}
 
 On both AEM Author and Publish, the lexical full-text search for assets matches the provided terms against: 
