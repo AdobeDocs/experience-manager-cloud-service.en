@@ -62,7 +62,9 @@ The runbook is the recommended entry point for a whole-project assessment: it gi
 | `eventHandler` | Synchronous OSGi `EventHandler` services adapted for Cloud Service |
 | `assetApi` | Deprecated `AssetManager` and DAM API calls replaced with supported equivalents |
 | `guavaCache` | Guava cache (`com.google.common.cache.*`) usage swapped for the Cloud Service–supported Caffeine cache |
+| `inputStream` | `java.io.InputStream` usage triaged by risk: unclosed streams fixed automatically, memory, filesystem, and binary-streaming issues proposed for your review |
 | `htlLint` | `data-sly-test` redundant constant comparison warnings in HTL templates |
+| `oakIndex` (beta) | Legacy `_oak_index` definitions converted to AEM as a Cloud Service–compatible Oak index definitions using Adobe's Index Converter, renamed to the Cloud Service versioned index naming (`<name>-custom-<n>`), with a datatype compatibility check |
 | OSGi configs | `.cfg.json` conversion, runmode scoping, Cloud Manager secrets/env-var extraction, and unsupported run mode (URC) detection and safe reordering |
 
 **Legacy UI and template modernization patterns**
@@ -80,6 +82,14 @@ The runbook is the recommended entry point for a whole-project assessment: it gi
 | `dispatcherConversion` | AMS or on-premise Apache HTTPD and Dispatcher configurations converted to the AEM as a Cloud Service structure |
 
 See [Dispatcher Conversion](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md#dispatcher-conversion) for the workflow.
+
+**Migration validation (beta)**
+
+| Capability | What it does |
+|---------|--------------|
+| Validate a migration | Builds and deploys migrated code to a local AEM as a Cloud Service SDK, then checks the migration contract and bundle and component state through the AEM Quickstart MCP. It never edits your source code. |
+
+See [Validate a Migration](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md#validate-migration) for the workflow.
 
 The skill delegates all code transformation steps to the companion `code-assessment` skill. Both are distributed together as the `aem-cloud-service` skill package; install the package once to get both.
 
@@ -132,10 +142,28 @@ The skill delegates all code transformation steps to the companion `code-assessm
    Fix guavaCache findings using BPA CSV at ./reports/bpa.csv
    ```
 
+   **InputStream:**
+
+   ```
+   Fix inputStream findings using BPA CSV at ./reports/bpa.csv
+   ```
+
    **Dispatcher conversion:**
 
    ```
    Convert my AMS / on-prem Dispatcher config to AEM as a Cloud Service.
+   ```
+
+   **Oak index conversion (beta):**
+
+   ```
+   Fix oakIndex findings using BPA CSV at ./reports/bpa.csv
+   ```
+
+   **Validate a migration (beta):**
+
+   ```
+   Validate my scheduler migration on the local Cloud SDK.
    ```
 
 >[!NOTE]
