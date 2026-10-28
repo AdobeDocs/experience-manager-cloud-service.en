@@ -32,7 +32,7 @@ After creating your templates you can:
 
 >[!NOTE]
 >
->Use the [Figma to Visual Content Fragments Job](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md) to automate loading an HTML design.
+>Use the [Figma to Visual Content Fragments Skill](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/figma-to-visual-content-fragments.md) to automate loading an HTML design.
 
 ## What you will learn {#what-you-will-learn}
 

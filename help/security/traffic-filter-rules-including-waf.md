@@ -31,6 +31,8 @@ Many of these traffic filter rules are available to all AEM as a Cloud Service S
 
 A subcategory of traffic filter rules requires either an Extended Security (formerly named WAF-DDoS Protection) or Extended Security for Healthcare (formerly named Enhanced Security) license. These powerful rules are known as WAF (Web Application Firewall) traffic filter rules (or *WAF rules*) and have access to the [WAF Flags](#waf-flags-list) described later in this article.
 
+All traffic filter rules, standard and WAF, share a common configuration syntax, described in [Rules Syntax](/help/implementing/dispatcher/cdn-configuring-traffic.md#configuration-syntax) in the *Configuring Traffic at the CDN* article.
+
 Traffic filter rules can be deployed via Cloud Manager config pipelines to dev, stage, and production environment types. The configuration file can be deployed to Rapid Development Environments (RDEs) using command line tooling.
 
 To gain expertise on this feature quickly, [complete a tutorial](#tutorial).
@@ -130,6 +132,8 @@ The following is a high-level recommended end-to-end process for determining the
 ## Traffic filter rules syntax {#rules-syntax}
 
 To match patterns such as IP, user agent, headers, hostname, geo, or URL, you can configure *traffic filter rules*.
+
+The general rule syntax—the `when` condition structure with its getters and predicates, shared by all CDN rule types—is described in [Rules Syntax](/help/implementing/dispatcher/cdn-configuring-traffic.md#configuration-syntax) in the *Configuring Traffic at the CDN* article. This section explains the parts specific to traffic filter rules: their actions, WAF flags, and rate limits.
 
 Customers with an Extended Security or Extended Security for Healthcare license configure *WAF rules* that reference [WAF flags](#waf-flags-list).
 

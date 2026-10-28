@@ -653,6 +653,7 @@ user-guide-title: AEM as a Cloud Service
     + [Get started using asset microservices](/help/assets/asset-microservices-configure-and-use.md)
     + [Add and upload assets](/help/assets/add-assets.md)
     + [Search assets](/help/assets/search-assets.md)
+    + [Understanding AEM Assets search](/help/assets/full-text-search.md)
     + [Common asset management tasks](/help/assets/manage-digital-assets.md)
     + [Manage publication](/help/assets/manage-publication.md)
     + [Preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
@@ -1232,9 +1233,9 @@ user-guide-title: AEM as a Cloud Service
       + [Overview](/help/ai-in-aem/agents/brand-experience/overview.md)
       + Experience Production Agent {#experience-production}
         + [Overview](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)
-        + [Content Update Job](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md)
-        + [Content Create Job](/help/ai-in-aem/agents/brand-experience/experience-production/content-create.md)
-        + [Figma to Visual Content Fragments Job](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md)
+        + [Content Update](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agentic-capabilities/brand-experience/experience-production/content-update)
+        + [Content Create](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agentic-capabilities/brand-experience/experience-production/content-create)
+        + [Figma to Visual Content Fragments](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agentic-capabilities/brand-experience/experience-production/figma-to-visual-content-fragments)
         + [Communication Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)
         + [Form Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
       + Experience Modernization Agent {#modernization}
