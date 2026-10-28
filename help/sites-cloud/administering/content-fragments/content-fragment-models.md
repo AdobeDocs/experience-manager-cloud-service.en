@@ -526,7 +526,7 @@ In addition to standard properties you can define:
 >
 >The Composite data type can be used: 
 >
->* in the Touch UI (original) Content Fragment Model Editor
+>* in the [Touch UI (original) Content Fragment Model Editor](/help/assets/content-fragments/content-fragments-models.md)
 >* in the new Content Fragment Editor
 >
 >The new Content Fragment Model Editor and the Touch UI (original) Content Fragment Editor will block access to the Composite Data Type and any dependent fields.

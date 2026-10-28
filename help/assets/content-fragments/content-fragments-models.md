@@ -426,10 +426,32 @@ In addition to standard properties you can define:
 
 ### Composite data {#composite-data}
 
-For further information see:
+>[!NOTE]
+>For further information see:
+>
+>* [Data Types](#data-types) - Composite
+>* Nested Content - [Composite Data](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#composite-data)
 
-* [Data Types](#data-types) - Composite
-* Nested Content - [Composite Data](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#composite-data)
+In addition to standard properties you can define:
+
+* **Render As**
+
+  Specify either:
+
+  * **Multiple Field** supports add/remove/reorder with min/max constraints
+  * **Composite Field** holds at most one item
+
+* **Min/Max Number of items**
+
+  For multi-value composites, set min and max bounds for the number of items
+
+* **Type** 
+
+  Specify one or more Content Fragment Models. Fields from these models will appear as composite items. Multiple models can be selected, the author then chooses which model when adding an item.
+
+>[!NOTE]
+>
+>Although the contents of a Composite field are structured according to a Content Fragment Model they do not form a Content Fragment in the true sense due to the absence of certain metadata.
 
 ## Content Fragment Model - Properties {#content-fragment-model-properties}
 
