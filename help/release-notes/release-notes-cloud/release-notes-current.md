@@ -5,6 +5,18 @@ mini-toc-levels: 2
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -150,6 +162,25 @@ Smart Collections automatically remain up to date. When newly approved assets sa
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta Features {#assets-beta-program-features}
 
+#### Content Advisor browser extension {#content-advisor-browser-extension}
+
+Use the power of AEM Content Advisor for AEM Assets, in the application of your choice with the browser extension available [here](https://chromewebstore.google.com/detail/aem-content-advisor/hgagfaikdinmneghfgjjocmfidmnadga).
+
+**Why you will love it?**
+
+* **Zero setup, zero code.** Install it, sign in, and start working. No integration, no custom connectors, no developer tickets.
+
+* **Smarter suggestions, on your terms.** Recommendations come from the whole page, or narrow them by selecting a region, highlighting text, or choosing an image. The more precisely you point, the sharper the results.
+
+* **Pick exactly what you need.** Choose any asset or any Dynamic Media rendition (the right size, format, or crop) and send it straight to your editor. Insert, drag and drop, or copy URL to the clipboard.
+
+* **Works where you author.** AEM (Cloud Service, Adobe Managed Services, or On-premise), other Adobe CX Enterprise products (where AEM Assets native integration does not exist), and third-party tools such as Google Docs/WordPress/Microsoft Powerpoint, and any other web application.
+
+For more information, see [Use AEM Content Advisor with the browser extension](/help/assets/content-advisor-browser-extension.md).
+
+
+To send feedback, participate or learn more, send an email to `aem-content-advisor-feedback@adobe.com`.
+
 
 #### Dynamic Media: Video Engagement Report {#video-engagement-report}
 
@@ -163,9 +194,9 @@ Give teams visibility into delivery health by reporting operational activity suc
 
 To participate or learn more, send an email to `dm-beta-feedback@adobe.com`.
 
-#### Dynamic Media: Auto Reflow and Auto Translate {#auto-reflow-and-auto-translate}
+#### Dynamic Media Template: Auto Translate {#auto-translate}
 
-Eliminate repetitive redesign and manual localization by using AI to automatically adapt a single master template into layouts that fit different formats and aspect ratios (web, social, display, and email) and to instantly translate text across languages, all while preserving the visual integrity of the design, turning one master asset into variants across many device sizes and locales.
+Eliminate repetitive manual localization by using AI to automatically translate text and turn a single master template into variants across multiple locales, while preserving the visual integrity of your designs.
 
 To participate or learn more, send an email to `dm-beta-feedback@adobe.com`.
 
@@ -299,7 +330,7 @@ Validate file attachments in Adaptive Forms before or on submission using custom
 
 #### Canary Deployments - Validate Features Before Accepting Live Traffic {#canary-deployments}
 
-[Canary deployments] let you validate a new release against production infrastructure before it serves customer traffic. Available **October 1st** for AEM Cloud Service implementations.
+Available for AEM Cloud Service, [Canary deployments](/help/implementing/cloud-manager/canary-deployments.md) let you validate a new release against production infrastructure before it serves customer traffic. 
 
 Deploy the build alongside your current stable release on the publish tier, then route selected requests to it with a request header. All other traffic continues to be served by the stable release, unaffected. The author tier remains on the stable version throughout.
 
@@ -374,7 +405,7 @@ Existing supported patterns include Sling Scheduler, ResourceChangeListener, Rep
 
 For more information, see [AI-Assisted Code Migration to AEM as a Cloud Service](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md).
 
-onthl### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
+### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
 #### IMS Authentication Rich Errors {#ims-auth-rich-errors}
 
@@ -410,6 +441,52 @@ See the [deprecation article](/help/release-notes/deprecated-removed-features.md
 * `org.apache.jackrabbit.oak.plugins.memory`
 
 +++
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+#### Jackson bundle upgrade affects the GlobalLink connector {#jackson-upgrade-globallink-connector}
+
+AEM 6.5 LTS SP3 upgrades the Jackson bundle. This change affects deployments that use the GlobalLink translation connector.
+ 
+If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier than 3.4.4.7, upgrade the bundle to a compatible version. Version 3.4.4.7 or later works with the upgraded jackson bundle in SP3.
+ 
+>[!NOTE]
+>
+>Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.4.7 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #### Preparing for Java 25: AEM Cloud Service Runtime Upgrade Timeline
 
@@ -448,6 +525,12 @@ Today for developers, Coworker supports AI prompts to drive Cloud Manager. We're
 * **Code modernization** (e.g., *Propose a patch to replace deprecated APIs*)
 
 To join the Beta Program, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com) describing your interest.
+
+#### mTLS Authentication for Log Forwarding (Beta Program) {#mtls-log-forwarding-beta}
+
+Log Forwarding now supports mutual TLS (mTLS) client certificate authentication for Splunk, Elasticsearch/OpenSearch, and HTTPS destinations, for both AEM logs (including Apache/Dispatcher) and CDN logs. AEM as a Cloud Service presents a client certificate when it connects to your logging destination, so the destination can verify that the logs come from your environment.
+
+mTLS for Log Forwarding is in beta. To join the Beta Program, email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) with your program ID and environment IDs. Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md#mtls).
 
 ## [!DNL Experience Manager] Guides {#guides}
 

@@ -3,6 +3,9 @@ title: Integrating with Adobe Target
 description: Integrating with Adobe Target
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 ---
 # Integrating with Adobe Target{#integrating-with-adobe-target}
 

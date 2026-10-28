@@ -2,11 +2,17 @@
 title: Learn about AEM Sites content and how to translate it in AEM
 description: Learn AEM Sites concepts and the theory of AEM translation.
 index: true
-hidefromtoc: no
+hidefromtoc: 'no'
 exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Learn about sites content and how to translate it in AEM {#learn-about}
 

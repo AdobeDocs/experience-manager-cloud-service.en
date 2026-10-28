@@ -4,6 +4,26 @@ description: Learn how the Brand Experience Agent accelerates the modernization 
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: e6cd421a-8791-4fe3-b284-9b3beae996fd
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+  - id: f1710108-e0d1-47e5-9952-1888729a03da
+    internal-label: Agentic AI
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Brand Experience Agent {#brand-experience-agent}
@@ -42,11 +62,11 @@ Migrations can be driven from a live source website, from Figma designs, or a co
 
 ### Content Update Job {#content-update}
 
-[The Content Update job](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) updates existing content — including content fragments, pages, forms and assets — with ease. The agent can perform actions such as updating, removing, replacing, or adding content elements to keep experiences accurate and current. Inputs can be natural language description, and when used with Jira PDFs and screenshots can provide input too.
+[The Content Update job](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/content-update.md) updates existing content — including content fragments, pages, forms and assets — with ease. The agent can perform actions such as updating, removing, replacing, or adding content elements to keep experiences accurate and current. Inputs can be natural language description, and when used with Jira PDFs and screenshots can provide input too.
 
 ### Content Create Job {#content-create}
 
-The [Content Create](/help/ai-in-aem/agents/brand-experience/experience-production/content-create.md) job creates new pages based on a marketing brief, a template and a natural language prompt.
+The [Content Create](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/content-create.md) job creates new pages based on a marketing brief, a template and a natural language prompt.
 
 >[!NOTE]
 >
@@ -56,7 +76,7 @@ The [Content Create](/help/ai-in-aem/agents/brand-experience/experience-producti
 
 ### Figma to Visual Content Fragments Job {#figma-to-visual-content-fragments}
 
-The [Figma to Visual Content Fragments](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md) job imports Figma designs to AEM Content Models, Content Fragments and HTML templates.
+The [Figma to Visual Content Fragments](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/figma-to-visual-content-fragments.md) job imports Figma designs to AEM Content Models, Content Fragments and HTML templates.
 
 ### Forms Creation Job {#forms-creation}
 
@@ -68,7 +88,7 @@ The [Figma to Visual Content Fragments](/help/ai-in-aem/agents/brand-experience/
 
 ## Experience Development Agent {#experience-development}
 
-[The Experience Development Agent](/help/ai-in-aem/agents/brand-experience/development/development.md) streamlines technical evolution within AEM by assisting with template updates, component configuration, and troubleshooting, reducing dependency on lengthy development cycles.
+[The Experience Development Agent](/help/ai-in-aem/agentic-capabilities/brand-experience/development/use-cases.md) streamlines technical evolution within AEM by assisting with template updates, component configuration, and troubleshooting, reducing dependency on lengthy development cycles.
 
 ### Pipeline Troubleshooting Job {#pipeline-troubleshooting}
 

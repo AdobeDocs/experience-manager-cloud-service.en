@@ -6,6 +6,12 @@ feature: Brand Portal, Asset Distribution, Configuration
 role: Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Configure Experience Manager Assets with Brand Portal {#configure-aem-assets-with-brand-portal}
 

@@ -4,11 +4,23 @@ description: These are the release notes for the preview release of the Universa
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 
 # Universal Editor Preview Release Notes {#preview}
 
-These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 8 October 2026.
+These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 22 October 2026.
 
 These **preview** release notes are provided as a convenience so you know what changes to the Universal Editor are upcoming and you can test them by [switching to your preview version.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -22,21 +34,12 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming Features {#upcoming-features}
 
-* Authors can choose custom styles in the in-context rich text editor.
-* Rich text asset selection now supports configured remote asset sources.
-* Asset filters can be configured globally in `filter-definition.json`. 
-* Extensions can customize the properties panel header through a new extension point.
-* Number fields now support custom validation error messages.
-* Text, combo box, and select fields now display configured placeholder text in their components.
-* Select and multiselect menus share consistent sizing behavior that keeps their overlays within the editor area.
+* Native multi-site management (MSM) support has been added to the editor, with a header menu icon showing inheritance status, link and unlink (shallow and deep) actions, and rollout. It also adds an MSM side panel, an updated icon for deeply broken inheritance, and localization updates.
+* The AEM Workflow extension has been added natively to the editor.
+* The rich text editor component now supports custom keyboard shortcuts.
 
 ## Upcoming Changes {#upcoming-improvements}
 
-* Copying content now targets the correct container when multiple containers share the same resource but use different properties.
-* Rich text paragraphs no longer retain unwanted leading non-breaking spaces. 
-* Rich text components were updated to include the paragraph-spacing correction and additional rich text fixes.
-* The component picker sidebar and layout now fill the available height. 
-* Overlay labels no longer wrap over small editable elements.
-* Drag previews for multiple selections stay within the picker's bounds. 
-* Asset reference validation now respects the field's configured filter.
-* With `FT_SITES-52747` enabled, page updates handle replacements between object and primitive values without the previous type-mismatch crash.
+* The properties rail now properly keeps focus on a newly selected component when a slow patch response arrives after the selection has changed and undo/redo now restores the component that was actually edited.
+* The plain-text configuration of a field is now respected during inline editing, so the rich-text toolbar and actions stay disabled for plain-text fields even when filters are configured.
+* The tab key is no longer trapped when no component is selected, and a sensible tab order is now used for overlays and the app iframe.

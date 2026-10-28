@@ -6,6 +6,18 @@ role: Admin
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Reusing Content: Multi Site Manager and Live Copy {#multi-site-manager-and-live-copy}
 
@@ -26,20 +38,12 @@ This page provides an overview of reusing content with MSM. The following pages 
 * [MSM Rollout Conflicts](rollout-conflicts.md)
 * [MSM Best Practices](best-practices.md)
 
-<!-- CQDOC-23473 - feature is beta, activate when GA -->
-
->[!NOTE]
->
->MSM can also be used for Assets, including Content Fragments. See [Reuse Content Fragments using MSM for Assets](/help/assets/reuse-assets-using-msm.md) (only available through the Assets console).
-
-<!--
 >[!NOTE]
 >
 >MSM can also be used for Assets, and Content Fragments. See:
 >
 >* MSM for Content Fragments when using [the **Content Fragments** console](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
 >* MSM for Content Fragments when using [the **Assets** console](/help/assets/reuse-assets-using-msm.md) 
--->
 
 ## Possible Scenarios {#possible-scenarios}
 

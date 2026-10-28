@@ -6,6 +6,20 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Managing Content Fragments {#managing-content-fragments}
 
@@ -190,20 +204,15 @@ Selecting a specific fragment opens a toolbar focused on the actions available f
 * **[Manage Tags](#view-and-manage-tags)**
 * **[Copy](#copy-a-content-fragment)**
 * **[Replace](#find-and-replace)**
-* **[Preview](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md#preview-your-fragment-with-a-template)**
+* **[Preview](#publishing-and-previewing-a-fragment)**
 * **Move**
 * **Rename**
 * **[Check Out and Check In](#check-out-and-check-in)**
-* **[Delete](#deleting-a-fragment)** (only available for unpublished fragments)
-
-<!-- CQDOC-23473 - feature is beta, activate when GA -->
-<!--
 * [Reuse Content Fragments using MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md) actions:
   * **[Create Live Copy](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#create-a-live-copy)**
   * **[Synchronize](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#synchronize)**
   * **[Rollout](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#rollout)**
 * **[Delete](#deleting-a-fragment)** (only available for unpublished fragments)
--->
 
 >[!NOTE]
 >
