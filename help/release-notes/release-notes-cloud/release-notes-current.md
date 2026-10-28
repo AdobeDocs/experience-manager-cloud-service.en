@@ -396,6 +396,19 @@ To help troubleshoot IMS integrations, `imsauth` has added support for *rich err
 
 Instead of returning only an HTTP status code, these errors provide additional context to help diagnose and resolve issues that can block authentication and access.
 
+#### Update your allowlists with additional Adobe-managed CDN IP addresses {#cdn-ips}
+
+If you restrict inbound connections to your systems by IP address, you may have allowlisted the IP addresses of the Adobe-managed CDN. This is common for destinations that receive CDN data directly, such as log ingestion endpoints.
+
+New egress IP addresses are being added on January 11, 2027, at 00:00 UTC. If your allowlist doesn't include them, valid traffic from the CDN, including log data, may be rejected.
+
+**What to do before January 11, 2027:**
+
+1. Update your allowlist to include every IPv4 and IPv6 range in [this public IP list](https://api.fastly.com/public-ip-list). The list already includes the new addresses.
+2. To avoid this in the future, automate the update by monitoring the [public IP list API](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/) for changes, or by subscribing to [this status page](https://fastlystatus.com/) for "IP address announcements."
+
+If you don't allowlist the CDN's IP addresses, no action is required.
+
 #### Mandatory migration from Adobe’s built-in APM integration (New Relic) to OpenTelemetry {#otel-migration}
 
 OpenTelemetry (OTel) is replacing Adobe’s built-in APM integration (New Relic), which will be disabled at the end of **November 2026**. If your organization is using the built-in New Relic APM integration, see the [FAQ](/help/implementing/developing/introduction/opentelemetry-apm-integration.md#faq) for more information.
