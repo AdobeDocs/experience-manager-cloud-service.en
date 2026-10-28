@@ -398,7 +398,7 @@ Instead of returning only an HTTP status code, these errors provide additional c
 
 #### Mandatory migration from Adobe’s built-in APM integration (New Relic) to OpenTelemetry {#otel-migration}
 
-OpenTelemetry is replacing Adobe’s built-in APM integration (New Relic), which will be disabled at the end of **November 2026**. If your organization is using the built-in New Relic APM integration, see the [FAQ](/help/implementing/developing/introduction/opentelemetry-apm-integration.md#faq) for more information.
+OpenTelemetry (OTel) is replacing Adobe’s built-in APM integration (New Relic), which will be disabled at the end of **November 2026**. If your organization is using the built-in New Relic APM integration, see the [FAQ](/help/implementing/developing/introduction/opentelemetry-apm-integration.md#faq) for more information.
 
 #### Winter 2027 Java API Deprecations {#java-api-deprecation}
 
@@ -460,12 +460,17 @@ AEM Cloud Service continues to support compiling customer code with Java 11, Jav
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Features {#foundation-early-adopter}
 
+#### CDN Log Forwarding to Amazon S3, Dynatrace, and New Relic (Beta Program) {#cdn-logforwarding}
+
+While logs can be downloaded from Cloud Manager, many organizations prefer to stream them to a logging destination of their choice. AEM supports forwarding AEM logs (including Apache/Dispatcher) and CDN logs to various destinations. 
+
+You can now forward CDN logs to **Amazon S3, Dynatrace, and New Relic**. Log forwarding is configured in a self-serve manner and deployed using the Cloud Manager config pipeline. Please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to join the beta program, and learn more in the [Log Forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md).
+
 #### Edge Authentication for Edge Delivery Services (Beta Program) {#edge-authentication}
 
 Edge Authentication lets you restrict access to Edge Delivery Services pages to only those who have authenticated with your identity provider (IdP). This is achieved by deploying an OpenID Connect (OIDC) configuration YAML file.
 
 If interested, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case and any questions you may have.
-
 
 #### CX Enterprise Coworker: Developer-Focused Capabilities (Beta Program) {#coworker-ai-troubleshooting-beta}
 
