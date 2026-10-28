@@ -421,20 +421,19 @@ See the [deprecation article](/help/release-notes/deprecated-removed-features.md
 
 +++ Expand to see the Java API deprecations
 
-* `org.apache.sling.commons.auth`
-* `org.apache.felix.webconsole`
-* `org.eclipse.jetty`
-* `com.mongodb`
-* `org.apache.abdera`
-* `org.apache.felix.http.whiteboard`
-* `org.apache.cocoon.xml`
-* `ch.qos.logback`
-* `org.slf4j.spi`
-* `org.slf4j.event`
-* `org.apache.log4j`
-* `com.google.common`
-* `com.drew`
-* `org.apache.jackrabbit.oak.plugins.memory`
+* `com.adobe.granite.httpcache.api`
+* `com.day.cq.contentsync.handler.util`
+* `com.day.cq.mailer.commons`
+* `com.day.cq.xss`
+* `com.github.jknack.handlebars`
+* `org.apache.jackrabbit.oak.plugins.blob`
+* `org.apache.jackrabbit.webdav.client.methods`
+* `org.bson`
+* `org.apache.tika`
+* `org.apache.commons.fileupload`
+* `opennlp.tools`
+* `com.adobe.cq.smartcontent`
+* `com.day.cq.commons.predicate`
 
 +++
 
