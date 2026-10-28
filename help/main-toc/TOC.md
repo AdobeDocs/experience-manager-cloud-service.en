@@ -361,7 +361,6 @@ user-guide-title: AEM as a Cloud Service
   + [OAuth2 Support for the mail Service](/help/security/oauth2-support-for-mail-service.md)
   + [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md)
   + {hide-from-toc} [AEM as a Cloud Service Security Considerations](/help/security/security-considerations.md)
-  + [JWT Credentials Deprecation in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
   + [Open ID Connect Support for AEM as a Cloud Service on Publish Tier](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
   + [Setting Up IMS Integrations for AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
   + [Adobe-Managed API Integrations in Adobe Admin Console](/help/security/adobe-managed-api-integrations-in-adobe-admin-console.md)
