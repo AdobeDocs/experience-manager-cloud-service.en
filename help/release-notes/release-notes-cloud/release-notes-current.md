@@ -366,15 +366,13 @@ Example prompts:
 - *Why is this page still showing old content after publication?*
 - *Investigate the intermittent 502 and 503 responses in production between 10:00 and 11:00 UTC today.*
 
-#### New capabilities in AEM MCP {#aem-mcp}
+#### Cloud Migration Capabilities in the AEM MCP Server {#aem-mcp-cloud-migration}
 
-[AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) allows you to configure a single URL in your chat application or coding agent to access a growing set of capabilities. 
+[The AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) allows you to configure a single URL in your chat application or coding agent to access a growing set of capabilities. It is also used by the [AEM Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md#install-adobe-experience-manager-connector) and [AEM ChatGPT Plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md#install-adobe-experience-manager-plugin).
 
-In addition to Content operations (pages, content fragments, and assets) and Experience Governance checks, AEM MCP now supports Cloud Manager operations to manage programs, environments, and pipelines.
+The AEM MCP Server now supports the Cloud Migration capabilities, used by the Cloud Migration skill, which migrates AEM 6.5 (or earlier) Java-stack projects to AEM as a Cloud Service in the IDE.
 
-Cloud Manager operations were previously only available through the deprecated domain-specific MCPs. Customers using those should switch to the AEM MCP Server.
-
-The AEM MCP Server is also used by the [AEM Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md#install-adobe-experience-manager-connector) and [AEM ChatGPT Plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md#install-adobe-experience-manager-plugin).
+With this addition, the AEM MCP Server has reached parity wih the domain-specific MCP servers, which are now considered deprecated. Please configure your MCP Clients to reference the unified AEM MCP Server so you don't lose access.
 
 #### OpenTelemetry for Application Performance Monitoring (APM) (Limited Availability) {#otel}
 
@@ -405,6 +403,10 @@ To help troubleshoot IMS integrations, `imsauth` has added support for *rich err
 
 Instead of returning only an HTTP status code, these errors provide additional context to help diagnose and resolve issues that can block authentication and access.
 
+#### Deprecation of Domain-specific AEM MCP Server {#domain-mcp-deprecation}
+
+The [AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#aem-mcp-server) has reached parity with the [domain-specific MCP servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#mcp-servers-provided-by-aem), which are now deprecated. Please configure your MCP Clients to reference the AEM MCP Server by January 28, 2027 so you don't lose access.
+
 #### Update your allowlists with additional Adobe-managed CDN IP addresses {#cdn-ips}
 
 If you restrict inbound connections to your systems by IP address, you may have allowlisted the IP addresses of the Adobe-managed CDN. This is common for destinations that receive CDN data directly, such as log ingestion endpoints.
@@ -422,7 +424,7 @@ If you don't allowlist the CDN's IP addresses, no action is required.
 
 OpenTelemetry (OTel) is replacing Adobe’s built-in APM integration (New Relic), which will be disabled at the end of **November 2026**. If your organization is using the built-in New Relic APM integration, see the [FAQ](/help/implementing/developing/introduction/opentelemetry-apm-integration.md#faq) for more information.
 
-#### Winter 2027 Java API Deprecations {#java-api-deprecation}
+#### Winter 2027 Removal of Deprecated Java APIs {#java-api-deprecation}
 
 On **March 31, 2027**, a set of deprecated Java APIs will be removed and it is critical to take action in order to achieve security compliance. Applications that have not removed APIs will not receive new features or bug fixes, and application stability and uptime may be negatively affected, and security risk exposure may increase.
 
@@ -430,35 +432,17 @@ See the [deprecation article](/help/release-notes/deprecated-removed-features.md
 
 +++ Expand to see the Java API deprecations
 
-* `com.adobe.granite.httpcache.api`
-* `com.day.cq.contentsync.handler.util`
-* `com.day.cq.mailer.commons`
+* `com.day.cq.wcm.commons.util`
 * `com.day.cq.xss`
 * `com.github.jknack.handlebars`
-* `org.apache.jackrabbit.oak.plugins.blob`
 * `org.apache.jackrabbit.webdav.client.methods`
 * `org.bson`
 * `org.apache.tika`
 * `org.apache.commons.fileupload`
 * `opennlp.tools`
-* `com.adobe.cq.smartcontent`
 * `com.day.cq.commons.predicate`
 
 +++
-
-<!--
-
-#### Jackson bundle upgrade affects the GlobalLink connector {#jackson-upgrade-globallink-connector}
-
-AEM 6.5 LTS SP3 upgrades the Jackson bundle. This change affects deployments that use the GlobalLink translation connector.
- 
-If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier than 3.4.4.7, upgrade the bundle to a compatible version. Version 3.4.4.7 or later works with the upgraded jackson bundle in SP3.
- 
->[!NOTE]
->
->Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.4.7 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
-
--->
 
 #### Preparing for Java 25: AEM Cloud Service Runtime Upgrade Timeline
 
