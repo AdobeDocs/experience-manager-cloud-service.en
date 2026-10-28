@@ -117,7 +117,7 @@ You can deliver your Composite items with the following APIs:
 
 * From the Delivery APIs
 
-  * GraphQL (AEM-native delivery). Composite content is returned natively in query responses. You can query a composite field the same way ypu query a nested object. No reference resolution is needed, so depth and round-trips drop accordingly. 
+  * GraphQL (AEM-native delivery). Composite content is returned as nested data within the parent fragment's query response, without resolving a separate Content Fragment asset. Response size depends on the selected fields; composites do not inherently reduce query depth or client round-trips.
 
   * REST Delivery API. There are two paths:
 

@@ -469,7 +469,7 @@ A Composite field has the following properties and characteristics:
 
 * Authoring
 
-  * Composite items are edited together with the parent fragment, with no switching.
+  * Composite items are edited within the same editor session as their parent fragment, without opening a separate Content Fragment.
 
 * Step-and-repeat as a multi-field
 
@@ -484,6 +484,10 @@ A Composite field has the following properties and characteristics:
 
   * Top-level variations apply to composite trees: a variation may have a different number of composite items, or different content per item, than the master. 
   * Selection is at the top-level only; nested content reflects the chosen variation.
+
+* Search
+
+  * Text within composite items is searchable. Matching content returns the parent Content Fragment in search results.
 
 * Native delivery
 
@@ -602,7 +606,7 @@ The Composite data type offers several benefits when modeling data:
 * Simplified authoring with native support for multi-value composite fields. 
 
   * Items in multi-value composites can be created and edited within the same editor session as the parent fragment.
-  * For example, addresses can be edited and duplicated directly within a contract, without requiring authors to navigate between the main and referenced content contexts.
+  * For OpenAPI responses containing hydrated referenced fragments, composites can reduce reference and fragment-metadata overhead. Payload size depends on the content structure and reference-inclusion options. Embedded composite content is included independently of reference depth, so shallow responses can be larger than equivalent reference-based responses.
 
 * Improved content management and delivery performance. 
 
@@ -635,9 +639,7 @@ The list below consolidates the current limitations of the Composite data type:
     * Composite fields are not supported. 
   * New (Headless) Content Fragment Model Editor
     * The Composite type is not yet supported. Model authoring uses the original Touch UI Model Editor.
-    For Composite fields you will see the message: Please register renderer for "composite" type..
-  * Admin UI / search
-    * Composite fields do not appear in search results. This is not a defect, but is by design to limit content-tree complexity exposed via search.
+    For Composite fields you will see the message: Please register renderer for "composite" type.
 
 * Nesting and complexity
 
@@ -656,10 +658,6 @@ The list below consolidates the current limitations of the Composite data type:
     * Page rendering via Core Components and the Sling Model exporter (`.model.json`) does not yet support composite. 
   * Visual Content Fragments (Content Fragments with HTML templates)
     * Visual Content Fragments (Content Fragments with HTML templates) do not currently support composite fields.
-
-* Delivery surface
-
-  * AEM ingestion needs to be extended for composite. 
 
 * API ergonomics
 
