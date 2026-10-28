@@ -211,7 +211,7 @@ Convert my AMS / on-prem Dispatcher config to AEM as a Cloud Service.
 | Source | When to use |
 |--------|------------|
 | **BPA CSV file** | You have exported a CSV from your AEM instance or Cloud Acceleration Manager. Provide the file path when starting the session. |
-| **CAM via MCP** | You have the AEM Cloud Migration MCP configured. The agent lists your CAM projects, you confirm which one to use, and findings are fetched directly. See [Using the Cloud Migration MCP](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md). |
+| **CAM via MCP** | You have the AEM MCP Server configured. The agent lists your CAM projects, you confirm which one to use, and findings are fetched directly. See [Using AEM MCP Server Cloud Migration Capabilities](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md). |
 | **Manual file paths** | You want to migrate specific files without a BPA report. Provide the paths directly in your prompt. |
 
 ### MCP Error Handling {#mcp-errors}
@@ -241,4 +241,3 @@ For BPA reports with many findings, the batch-by-batch approach lets you validat
 The agent searches for and edits files only within the open IDE workspace folders. It does not scan parent directories, sibling folders, or other locations on disk.
 
 If a BPA finding references a file path that does not exist in the workspace, the agent stops and tells you which paths are missing. Open the correct project folder or provide the paths explicitly to continue.
-

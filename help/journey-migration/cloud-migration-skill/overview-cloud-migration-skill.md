@@ -26,15 +26,15 @@ The solution consists of two components:
 
 | Component | Role |
 |-----------|------|
-| **Migration Skill** | Orchestrates the migration workflow, it sources Best Practices Analyzer (BPA) findings, identifies affected files in your project, and applies code transformations pattern by pattern. Works with a local BPA CSV export or with the Cloud Migration MCP (recommended). |
-| **Cloud Migration MCP** | Connects your IDE agent to Cloud Acceleration Manager (CAM), enabling it to fetch BPA findings directly without a CSV export. Recommended over a local CSV for the most up-to-date findings. |
+| **Migration Skill** | Orchestrates the migration workflow, it sources Best Practices Analyzer (BPA) findings, identifies affected files in your project, and applies code transformations pattern by pattern. Works with a local BPA CSV export or with the AEM MCP Server (recommended). |
+| **AEM MCP Server** | Connects your IDE agent to Cloud Acceleration Manager (CAM), enabling it to fetch BPA findings directly without a CSV export. Recommended over a local CSV for the most up-to-date findings. |
 
 ## Prerequisites {#prerequisites}
 
 - An AEM project (Maven or Gradle) open in your IDE
 - One of the following BPA finding sources (strongly recommended, not required for manual flows):
   - A **BPA CSV export** from your AEM instance
-  - A **Cloud Acceleration Manager project** with an uploaded BPA report and the Cloud Migration MCP configured
+  - A **Cloud Acceleration Manager project** with an uploaded BPA report and the AEM MCP Server configured
 
 ## The Migration Skill {#migration-skill}
 
@@ -87,7 +87,7 @@ The skill delegates all code transformation steps to the companion `code-assessm
 
 1. Install the `aem-cloud-service` skill package (which includes both the migration and `code-assessment` skills) from the [Adobe Skills repository](https://github.com/adobe/skills). For per-IDE install commands, see [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md#install-skills).
 2. Open your AEM project as the workspace root in your IDE.
-3. Obtain BPA findings: export a CSV from BPA or configure the Cloud Migration MCP (see below).
+3. Obtain BPA findings: export a CSV from BPA or configure the AEM MCP Server (see below).
 4. Start a session with your agent using one of these prompts:
 
    **Assess the whole project first (generates the read-only runbook):**
@@ -143,9 +143,9 @@ The skill delegates all code transformation steps to the companion `code-assessm
 
 For full pattern reference and session management guidance, see [Using the Cloud Migration Skill](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md).
 
-## The Cloud Migration MCP {#cloud-migration-mcp}
+## Cloud Migration MCP capabilities {#cloud-migration-mcp}
 
-The **AEM Cloud Migration MCP** is a [Model Context Protocol](https://modelcontextprotocol.io) server that connects your IDE agent to Cloud Acceleration Manager. When configured, the migration skill can fetch BPA findings directly from your CAM project without requiring a CSV download.
+AEM Cloud Migration capabilities are available through the [AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#aem-mcp-server), a [Model Context Protocol](https://modelcontextprotocol.io) server that connects your IDE agent to Cloud Acceleration Manager. When configured, the migration skill can fetch BPA findings directly from your CAM project without requiring a CSV download.
 
 ### What the MCP Provides {#mcp-tools}
 
@@ -158,11 +158,11 @@ These tools are invoked automatically by the migration skill; you do not call th
 
 ### Getting Started {#getting-started-mcp}
 
-1. In your IDE's MCP configuration, add the Cloud Migration MCP server URL: `https://mcp.adobeaemcloud.com/adobe/mcp/cloud-migration`
+1. In your IDE's MCP configuration, add the AEM MCP Server URL: `https://mcp.adobeaemcloud.com/adobe/mcp/aem`, or use an existing entry with that URL.
 2. When prompted, sign in with your Adobe ID to authenticate against Cloud Acceleration Manager.
 3. The migration skill can now fetch BPA findings directly from your CAM projects.
 
-For detailed setup and troubleshooting, see [Using the Cloud Migration MCP](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md).
+For detailed setup and troubleshooting, see [Using AEM MCP Server Cloud Migration Capabilities](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md).
 
 ## How They Fit Into the Migration Journey {#migration-journey}
 
@@ -174,4 +174,3 @@ The skill and MCP complement the other tools in the **Implementation Phase**:
 - **Content Transfer Tool**: migrates repository content from AEM 6.x to AEMaaCS.
 
 See the [Implementation Phase overview](/help/journey-migration/implementation.md) for the full picture.
-
