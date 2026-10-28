@@ -376,17 +376,26 @@ Cloud Manager operations were previously only available through the deprecated d
 
 The AEM MCP Server is also used by the [AEM Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md#install-adobe-experience-manager-connector) and [AEM ChatGPT Plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md#install-adobe-experience-manager-plugin).
 
-<!--
-
-- Cloud Migration: fetch Best Practices Analyzer (BPA) findings from Cloud Acceleration Manager (CAM) by migration pattern or severity level, enabling AI agents to drive code migration from AEM 6.x to AEM as a Cloud Service. 
-
--->
-
-### OpenTelemetry for Application Performance Monitoring (APM) (Limited Availability) {#otel}
+#### OpenTelemetry for Application Performance Monitoring (APM) (Limited Availability) {#otel}
 
 Now in Limited Availability (see note below for access), AEM as a Cloud Service supports [OpenTelemetry](/help/implementing/developing/introduction/opentelemetry-apm-integration.md). OTel is an open, industry-standard way to get traces, metrics, and logs together, sent to the APM provider of your choice. Also see advanced [custom instrumentation](/help/implementing/developing/introduction/opentelemetry-custom-instrumentation.md) documentation and [tutorials](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/observability-via-opentelemetry/opentelemetry-in-aem).
 
 To get on the list for access, email [aemcs-otel-access@adobe.com](mailto:aemcs-otel-access@adobe.com), describing where you intend on ingesting the data. 
+
+#### New Capabilities in Cloud Migration Agent Skill {#cloud-migration-skill}
+
+The [AI-Assisted Code Migration](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md) skill migrates AEM 6.5 (or earlier) Java-stack projects to AEM as a Cloud Service in the IDE.
+
+The skill now includes these patterns:
+
+* InputStream usage: `java.io.InputStream` findings are triaged by risk. Unclosed streams are fixed automatically, while memory, filesystem, and binary-streaming issues are proposed for your review.
+* Oak index conversion (beta): legacy `_oak_index` definitions convert to Cloud Service-compatible Oak index definitions using Adobe's Index Converter, are renamed to the Cloud Service versioned index naming (`<name>-custom-<n>`), and are checked for datatype compatibility.
+
+The skill also adds migration validation (beta), which builds and deploys migrated code to a local AEM as a Cloud Service SDK and checks the migration contract and bundle and component state. It never edits your source code.
+
+Existing supported patterns include Legacy UI (Classic UI, ExtJS, and Coral 2 dialogs to Coral 3), template modernization, Guava cache to Caffeine, Dispatcher configuration conversion, unsupported run mode (URC) detection, Vault package dependency detection, Sling Scheduler, ResourceChangeListener, Replication API, OSGi EventListener and EventHandler, Assets API, HTL lint fixes, and OSGi configuration conversion.
+
+For more information, see [AI-Assisted Code Migration to AEM as a Cloud Service](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md).
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
