@@ -32,7 +32,7 @@ For sites running on Adobe Experience Manager, developers have the option to add
 The experimentation rail is your primary way to set up experiments. It can be used with your project either in an [Edge Delivery Services](/help/edge/overview.md) context or in the [Universal Editor](/help/implementing/universal-editor/introduction.md). As such, you will need a Github account, a content repository like SharePoint or Google Drive, and you will also need the [AEM Sidekick](https://www.aem.live/docs/sidekick) plug-in. If you want to use Universal editor you will also need access to an [AEM as a Cloud Service environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). See also the [Getting Started – Universal Editor Developer Tutorial page](https://www.aem.live/developer/tutorial).
 
 >[!WARNING]
->The experimentation engine is required in order to use the experimentation capability. Please make sure the engine is installed and updated correctly before implementing the steps below. See the following [installation page](https://github.com/adobe/aem-experimentation/tree/v2?tab=readme-ov-file#installation) for more details.
+>The experimentation engine is required in order to use the experimentation capability. Please make sure the engine is installed and updated correctly before implementing the steps below. See the following [installation page](https://github.com/adobe/aem-experimentation#installation) for more details.
 
 ### Setting up experimentation by using AEM Sidekick in Edge Delivery Services
 
