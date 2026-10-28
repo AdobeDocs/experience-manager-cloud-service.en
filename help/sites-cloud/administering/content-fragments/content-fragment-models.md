@@ -465,11 +465,11 @@ A Composite field has the following properties and characteristics:
 * Specify one or more Content Fragment Models
 
   * When defining a Composite field in a Content Fragment Model you must define which models can be used for the composite items. 
-  * Multiple models can be selected, the author then chooses the model to use when adding an item.
+  * Multiple models can be selected, so that the author can choose which model to use when actually adding an item.
 
 * Authoring
 
-  * Composite items are edited within the same editor session as their parent fragment, without opening a separate Content Fragment.
+  * Composite items are [edited](/help/sites-cloud/administering/content-fragments/authoring.md#edit-a-composite-field) within the same editor session as their parent fragment, without opening a separate Content Fragment.
 
 * Step-and-repeat as a multi-field
 
@@ -606,7 +606,7 @@ The Composite data type offers several benefits when modeling data:
 * Simplified authoring with native support for multi-value composite fields. 
 
   * Items in multi-value composites can be created and edited within the same editor session as the parent fragment.
-  * For OpenAPI responses containing hydrated referenced fragments, composites can reduce reference and fragment-metadata overhead. Payload size depends on the content structure and reference-inclusion options. Embedded composite content is included independently of reference depth, so shallow responses can be larger than equivalent reference-based responses.
+  * Composites can reduce reference and fragment-metadata overhead. 
 
 * Improved content management and delivery performance. 
 
@@ -641,11 +641,6 @@ The list below consolidates the current limitations of the Composite data type:
     * The Composite type is not yet supported. Model authoring uses the original Touch UI Model Editor.
     For Composite fields you will see the message: Please register renderer for "composite" type.
 
-* Nesting and complexity
-
-  * No complexity guardrails in the UI
-    * The system can technically accept composite structures that are very expensive to render or process (deep nesting plus large multi field arrays at multiple levels). 
-
 * Cross-feature support
 
   * MSM (Multi Site Manager)
@@ -658,8 +653,3 @@ The list below consolidates the current limitations of the Composite data type:
     * Page rendering via Core Components and the Sling Model exporter (`.model.json`) does not yet support composite. 
   * Visual Content Fragments (Content Fragments with HTML templates)
     * Visual Content Fragments (Content Fragments with HTML templates) do not currently support composite fields.
-
-* API ergonomics
-
-  * Auto-populate empty fields when adding a composite row. 
-  * Single-value composite has no enforced cardinality of 1. The Java API allows adding additional items to a single-value composite without rejecting; today the validation is missing on the API side.

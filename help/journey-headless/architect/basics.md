@@ -128,35 +128,38 @@ Two data types provide references to content outside a specific fragment:
 
 ## Levels of Structure (Nested Content) {#levels-of-structure-nested-content}
 
-For content modeling the **Fragment Reference** data type lets you create multiple levels of structure and relationships.
+For content modeling:
 
-With this reference you can *connect* various Content Fragment Models to represent interrelationships. This allows the headless application to follow the connections and access the content as necessary.
+* The **Fragment Reference** data type lets you create multiple levels of structure and relationships
+  * With this reference you can *connect* various Content Fragment Models to represent interrelationships. This allows the headless application to follow the connections and access the content as necessary.
 
->[!NOTE]
->
->This should be used with caution and the best practice can be defined as *nest as much as necessary, but as little as possible*.
+  >[!NOTE]
+  >
+  >This should be used with caution and the best practice can be defined as *nest as much as necessary, but as little as possible*.
 
-Fragment References do just that - they allow you to reference another fragment. 
+  Fragment References do just that - they allow you to reference another fragment. 
 
-For example, you might have the following Content Fragment Models defined:
+  For example, you might have the following Content Fragment Models defined:
 
-* City
-* Company
-* Person
-* Awards
+  * City
+  * Company
+  * Person
+  * Awards
 
-Seems pretty straightforward, but a Company has both a CEO and Employees....and these are all people, each defined as a Person.
+  Seems pretty straightforward, but a Company has both a CEO and Employees....and these are all people, each defined as a Person.
 
-And a Person can have an Award (or maybe two).
+  And a Person can have an Award (or maybe two).
 
-* My Company - Company
-  * CEO - Person
-  * Employee(s) - Person
-    * Personal Award(s) - Award
+  * My Company - Company
+    * CEO - Person
+    * Employee(s) - Person
+      * Personal Award(s) - Award
 
-And that's just for starters. Depending on the complexity, an Award could be Company-specific, or a Company could have its main office in a specific City.
+  And that's just for starters. Depending on the complexity, an Award could be Company-specific, or a Company could have its main office in a specific City.
 
-Representing these interrelationships can be achieved with Fragment References, as they are understood by you (the architect), your content author and the headless applications.
+  Representing these interrelationships can be achieved with Fragment References, as they are understood by you (the architect), your content author and the headless applications.
+
+* The **Composite** data type lets you store hierarchical, structured data within a single fragment, similar to nested objects in JSON or embedded documents in NoSQL databases.
 
 ## What's Next {#whats-next}
 

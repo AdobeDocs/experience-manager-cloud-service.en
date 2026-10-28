@@ -161,6 +161,10 @@ From the editor you can:
 
 * [Delete a Variation](#delete-variation)
 
+>[!NOTE]
+>
+>See also [Composite data](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#composite-data).
+
 ### Create a Variation {#create-variation}
 
 To create a Variation of your Content Fragment:

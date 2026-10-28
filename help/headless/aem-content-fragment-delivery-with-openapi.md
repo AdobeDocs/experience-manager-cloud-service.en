@@ -106,7 +106,7 @@ You can deliver your Composite items with the following APIs:
   The composite data type is fully covered across the main Management OpenAPI operations:
 
   * `GET /adobe/sites/cf/fragments/{uuid\}` returns composite values as nested field structures.
-  * `GET /adobe/sites/cf/fragments/{uuid\}?partial={fieldPath\}` resolves a single composite subtree, used by the editor to expand a composite on demand. This is the endpoint tracked in Splunk for adoption (references=direct&partial=…).
+  * `GET /adobe/sites/cf/fragments/{uuid\}?partial={fieldPath\}` resolves a single composite subtree, used by the editor to expand a composite on demand. 
   * `POST` / `PATCH` / `PUT` accept composite payloads, single and bulk.
   * For models, `GET` and `POST` model operations support defining composite fields with allowed `modelIds`.
   * For Variations:
@@ -129,6 +129,8 @@ You can deliver your Composite items with the following APIs:
   >If the model used inside a composite field is not published, the delivery API will skip that composite content (with a warn log on the server). This is similar to the existing behavior for fragments missing a published model. 
   >
   >Make sure customer publish pipelines include all models that compositions reference.
+
+* For OpenAPI responses containing hydrated referenced fragments, composites can reduce reference and fragment-metadata overhead. Payload size depends on the content structure and reference-inclusion options. Embedded composite content is included independently of reference depth, so shallow responses can be larger than equivalent reference-based responses.
 
 <!-- 
 ## Limitations {#limitations}

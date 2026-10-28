@@ -35,12 +35,9 @@ role_v2:
 
 >[!WARNING]
 >
->The Composite data type can be used: 
+>Composite fields cannot be edited in the original Content Fragment Editor. 
 >
->* in the Touch UI (original) Content Fragment Model Editor
->* in the new Content Fragment Editor
->
->The new Content Fragment Model Editor and the Touch UI (original) Content Fragment Editor will block access to the Composite Data Type and any dependent fields.
+>Use the new editor to [edit composite fields](/help/sites-cloud/administering/content-fragments/authoring.md#edit-a-composite-field).
 
 From the **Variations** tab, authors can perform the following core tasks:
 
