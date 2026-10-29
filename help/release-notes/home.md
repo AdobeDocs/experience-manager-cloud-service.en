@@ -21,7 +21,7 @@ role_v2:
 
 | Product | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2026.9.0 |
+| Version | 2026.10.0 |
 | Type | Continuous Updates |
 | Availability date | Continuous Update |
 
