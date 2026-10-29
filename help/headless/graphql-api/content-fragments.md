@@ -273,6 +273,12 @@ GraphQL for AEM supports a list of types. All the supported Content Fragment Mod
 
 {style="table-layout:auto"}
 
+#### Deliver a Composite item {#deliver-a-composite-item}
+
+You can deliver your Composite items with GraphQL (AEM-native delivery). 
+
+Composite content is returned as nested data within the parent fragment's query response, without resolving a separate Content Fragment asset. Response size depends on the selected fields; composites do not inherently reduce query depth or client round-trips.
+
 ### Helper Fields {#helper-fields}
 
 In addition to the data types for user generated fields, GraphQL for AEM also generates several *helper* fields to help identify a Content Fragment, or to provide additional information about a Content Fragment.
