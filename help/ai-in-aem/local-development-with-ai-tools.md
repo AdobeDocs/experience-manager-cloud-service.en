@@ -195,6 +195,8 @@ apply unbounded-query
 
 It never commits or pushes — you review the diff and commit. Large fixes run in resumable batches; reply `apply <pattern>` to continue.
 
+For the report structure, skip reasons, worked examples, and limitations, see [Code Assessment Skill](/help/ai-in-aem/code-assessment-skill.md).
+
 ## AEM Quickstart MCP Server {#aem-quickstart-mcp-server}
 
 The Model Context Protocol (MCP) is an open standard that allows AI coding tools to connect to external data sources and services. The AEM Quickstart MCP server, which is included in the local [AEM as a Cloud Service SDK](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html), exposes runtime data directly to connected AI tools, enabling agents to retrieve logs, diagnose OSGi failures, and inspect request processing without leaving the IDE.

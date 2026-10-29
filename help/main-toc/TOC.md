@@ -1202,6 +1202,7 @@ user-guide-title: AEM as a Cloud Service
       + [Setting Up Microsoft Copilot Studio with AEM MCP](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
       + [Setting Up JetBrains with GitHub Copilot and AEM MCP](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
   + [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md)
+  + [Code Assessment Skill](/help/ai-in-aem/code-assessment-skill.md)
   + Agentic Capabilities in AEM {#agentic-capabilities}
     + [Overview](/help/ai-in-aem/agentic-capabilities/overview.md)
     + Brand Experience {#brand-experience}
