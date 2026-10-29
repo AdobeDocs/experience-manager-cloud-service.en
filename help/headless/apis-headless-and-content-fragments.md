@@ -43,6 +43,23 @@ Adobe Experience Manager (AEM) as a Cloud Service offers multiple APIs for both 
 >
 >[Content Fragment Support in Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) is now [deprecated](/help/release-notes/deprecated-removed-features.md). It has been replaced by [Content Fragment Delivery with OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) together with [Content Fragments and Content Fragment Models Management OpenAPIs](/help/headless/content-fragment-openapis.md).
 
+## Deliver a Composite item {#deliver-a-composite-item}
+
+You can deliver your Composite items with the Delivery APIs
+
+* GraphQL (AEM-native delivery). Composite content is returned as nested data within the parent fragment's query response, without resolving a separate Content Fragment asset. Response size depends on the selected fields; composites do not inherently reduce query depth or client round-trips.
+
+* REST Delivery API. There are two paths:
+
+  * pre-baked at publish time
+  * in-process delivery from AEM
+
+>[!NOTE]
+>
+>If the model used inside a composite field is not published, the delivery API will skip that composite content (with a warn log on the server). This is similar to the existing behavior for fragments missing a published model. 
+>
+>Make sure customer publish pipelines include all models that compositions reference.
+
 ## REST vs GraphQL {#rest-vs-graphql}
 
 The API used is a decision for the developers - AEM supports both. 

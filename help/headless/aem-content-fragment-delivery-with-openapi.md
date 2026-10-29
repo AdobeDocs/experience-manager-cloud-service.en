@@ -101,34 +101,9 @@ Support for authenticated requests can be implemented with the [AEM CDN Edge key
 
 You can deliver your Composite items with the following APIs:
 
-* From the Management OpenAPI (Content Fragments Management API)
+* From the [Management OpenAPI](/help/headless/content-fragment-openapis.md#deliver-a-composite-item) (Content Fragments Management API)
 
-  The composite data type is fully covered across the main Management OpenAPI operations:
-
-  * `GET /adobe/sites/cf/fragments/{uuid\}` returns composite values as nested field structures.
-  * `GET /adobe/sites/cf/fragments/{uuid\}?partial={fieldPath\}` resolves a single composite subtree, used by the editor to expand a composite on demand. 
-  * `POST` / `PATCH` / `PUT` accept composite payloads, single and bulk.
-  * For models, `GET` and `POST` model operations support defining composite fields with allowed `modelIds`.
-  * For Variations:
-  
-    * `GET` model and UI schema endpoints support a variation query parameter
-    * the variation `GET` fragment endpoint supports `partial`
-    * `PATCH` on variations: Support `partial` parameter on variation PATCH endpoint
-
-* From the Delivery APIs
-
-  * GraphQL (AEM-native delivery). Composite content is returned as nested data within the parent fragment's query response, without resolving a separate Content Fragment asset. Response size depends on the selected fields; composites do not inherently reduce query depth or client round-trips.
-
-  * REST Delivery API. There are two paths:
-
-    * pre-baked at publish time
-    * in-process delivery from AEM
-
-  >[!NOTE]
-  >
-  >If the model used inside a composite field is not published, the delivery API will skip that composite content (with a warn log on the server). This is similar to the existing behavior for fragments missing a published model. 
-  >
-  >Make sure customer publish pipelines include all models that compositions reference.
+* From the [Delivery APIs](/help/headless/apis-headless-and-content-fragments.md#deliver-a-composite-item)
 
 * For OpenAPI responses containing hydrated referenced fragments, composites can reduce reference and fragment-metadata overhead. Payload size depends on the content structure and reference-inclusion options. Embedded composite content is included independently of reference depth, so shallow responses can be larger than equivalent reference-based responses.
 
