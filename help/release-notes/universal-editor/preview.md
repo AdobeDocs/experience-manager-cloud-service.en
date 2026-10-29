@@ -20,7 +20,7 @@ role_v2:
 
 # Universal Editor Preview Release Notes {#preview}
 
-These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 22 October 2026.
+These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 5 November 2026.
 
 These **preview** release notes are provided as a convenience so you know what changes to the Universal Editor are upcoming and you can test them by [switching to your preview version.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -34,12 +34,14 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming Features {#upcoming-features}
 
-* Native multi-site management (MSM) support has been added to the editor, with a header menu icon showing inheritance status, link and unlink (shallow and deep) actions, and rollout. It also adds an MSM side panel, an updated icon for deeply broken inheritance, and localization updates.
-* The AEM Workflow extension has been added natively to the editor.
-* The rich text editor component now supports custom keyboard shortcuts.
+* ID-based Content Fragment references were added reducing lookup requests.
+  * Please contact Adobe to enable this feature.
+* Support for composite Content Fragment fields was added.
+* A lightweight WebMCP tool for retrieving the current selection and its loaded content was added.
+  * Please contact Adobe to enable this feature.
+* Variation selection and variation-aware previews were added to the new Content Fragment and Experience Fragment reference pickers.
 
 ## Upcoming Changes {#upcoming-improvements}
 
-* The properties rail now properly keeps focus on a newly selected component when a slow patch response arrives after the selection has changed and undo/redo now restores the component that was actually edited.
-* The plain-text configuration of a field is now respected during inline editing, so the rich-text toolbar and actions stay disabled for plain-text fields even when filters are configured.
-* The tab key is no longer trapped when no component is selected, and a sensible tab order is now used for overlays and the app iframe.
+* Tag fields no longer render a separate picker for each tag. Multiple tags now share one picker, while single-tag fields respect their configuration.
+* Error notifications were updated to support structured service errors while retaining compatibility with older responses.
