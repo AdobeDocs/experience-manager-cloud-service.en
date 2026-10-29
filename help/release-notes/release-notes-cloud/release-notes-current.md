@@ -177,7 +177,7 @@ Attribute-based access control lets admins govern access to Dynamic Media with O
 
 #### Dynamic Media with OpenAPI capabilities: Barcode and QR Code delivery {#barcode-qr-code}
 
-Dynamic Media with OpenAPI capabilities can now generate barcode and QR code images on demand and deliver them through hosted image URLs, which is useful for channels such as campaign emails. Request parameter locking protects selected values, such as the barcode value and type, so a changed value cannnot produce a different barcode with the same lock. 
+Dynamic Media with OpenAPI capabilities can now generate barcode and QR code images on demand and deliver them through hosted image URLs, which is useful for channels such as campaign emails. Request parameter locking protects selected values, such as the barcode value and type, so a changed value can not produce a different barcode with the same lock. 
 
 To request enablement, open an Adobe Customer Support ticket.
 
