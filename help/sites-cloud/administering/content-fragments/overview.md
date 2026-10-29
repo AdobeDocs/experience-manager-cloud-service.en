@@ -188,6 +188,10 @@ Together with the JSON export capabilities of AEM core components, this structur
 >
 >AEM also supports the translation of fragment content. See [Translating Assets](/help/assets/translate-assets.md) for further information.
 
+>[!NOTE]
+>
+>Page rendering via Core Components and the Sling Model exporter (`.model.json`) does not support [Composite fields](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#composite-data). 
+
 ## Content Type {#content-type}
 
 Content fragments are:
