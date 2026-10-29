@@ -25,7 +25,22 @@ The following video demonstrates Content Hub key capabilities:
 
 ## Release Date {#release-date}
 
-The release date of Content Hub feature release (2026.09.0) is September 24, 2026 (same as that of AEM as a Cloud Service release). The next feature release (2026.10.0) is planned for October 29, 2026.
+The release date of Content Hub feature release (2026.10.0) is October 29, 2026 (same as that of AEM as a Cloud Service release). The next feature release (2026.11.0) is planned for November 19, 2026.
+
+## October 2026 release features {#october-2026-release-features}
+
+### Enhanced public link sharing and governance {#enhanced-public-link-sharing}
+
+Content Hub lets you share multiple assets and collections through public links and update existing links by adding or removing assets and collections at any time. Administrators can manage shared links with controls for password protection, expiration, and link revocation to help govern external access. Branded recipient experiences help maintain brand consistency when sharing assets with external stakeholders.
+
+>[!VIDEO](https://delivery-p149891-e1546481.adobeaemcloud.com/adobe/assets/urn:aaid:aem:189cb5b8-f398-48ec-b3d9-acee8d23ea3b/play?isletterboxed=true)
+
+
+[!BADGE Dive Deeper into this Feature]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
+
+>[!IMPORTANT]
+>
+>This feature is available as a Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 ## September 2026 release features {#september-2026-release-features}
 
@@ -39,9 +54,6 @@ Smart Collections automatically remain up to date. When newly approved assets sa
 
 [!BADGE Dive Deeper into this Feature]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/smart-collection-content-hub"}
 
->[!IMPORTANT]
->
->This feature is available as a Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 ## August 2026 release features {#august-2026-release-features}
 
