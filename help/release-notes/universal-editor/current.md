@@ -1,6 +1,6 @@
 ---
-title: Universal Editor 2026.10.22 Release Notes
-description: These are the release notes for the 2026.10.22 release of the Universal Editor.
+title: Universal Editor 2026.10.29 Release Notes
+description: These are the release notes for the 2026.10.29 release of the Universal Editor.
 feature: Release Information
 role: Admin
 product_v2:
@@ -17,9 +17,9 @@ role_v2:
     internal-label: Admin
 ---
 
-# Universal Editor 2026.10.22 Release Notes {#release-notes}
+# Universal Editor 2026.10.29 Release Notes {#release-notes}
 
-These are the release notes for the 22 October 2026 release of the Universal Editor.
+These are the release notes for the 29 October 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -29,7 +29,14 @@ These are the release notes for the 22 October 2026 release of the Universal Edi
 >
 >For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
+## What's New {#what-is-new}
+
+* Native multi-site management (MSM) support has been added to the editor, with a header menu icon showing inheritance status, link and unlink (shallow and deep) actions, and rollout. It also adds an MSM side panel, an updated icon for deeply broken inheritance, and localization updates.
+* The AEM Workflow extension has been added natively to the editor.
+* The rich text editor component now supports custom keyboard shortcuts.
+
 ## Other Improvements {#other-improvements}
 
-* The browser back/forward navigation was fixed by setting up the browser history state before the editor renders.
-* The WebMCP update content tool now prefers delivery URLs over author DAM paths for approved delivery assets.
+* The properties rail now properly keeps focus on a newly selected component when a slow patch response arrives after the selection has changed and undo/redo now restores the component that was actually edited.
+* The plain-text configuration of a field is now respected during inline editing, so the rich-text toolbar and actions stay disabled for plain-text fields even when filters are configured.
+* The tab key is no longer trapped when no component is selected, and a sensible tab order is now used for overlays and the app iframe.
