@@ -33,15 +33,15 @@ This capability is part of [Experience Production](/help/ai-in-aem/agentic-capab
 
 Some of the key benefits of the Forms Agentic Capability include:
 
-* **Faster form authoring**: Generate an Adaptive Form from a plain-language description, an attached brief, a screenshot, or a PDF, or import a PDF or XDP stored in AEM's Digital Assets Management (DAM) repository.
+* **Faster form authoring**: Create an Adaptive Form from a description, brief, screenshot, or PDF. Import PDF and XDP files stored in AEM's Digital Assets Management (DAM) repository.
 
-* **Quick rules and validation authoring**: Create or edit conditional logic, calculations, field dependencies, validation rules, and service calls through natural language instead of manual rule configuration.
+* **Rules and validation**: Describe the conditions, calculations, or validation you need. Coworker creates a rule or updates an existing one.
 
 * **Reduced dependency on form authors/developers**: Business users can create, edit, and configure forms conversationally without needing hands-on design or development support for routine changes.
 
 * **Consistency across brand and compliance rules**: Apply guidelines documents and organizational standards directly to forms, reducing drift between what's built and what's required.
 
-* **Flexible integration setup**: Call services from form rules, create or edit REST API integrations, and configure submission destinations such as cloud storage, CRM/marketing platforms, Adobe Experience Platform, or custom webhooks.
+* **Service calls and integrations**: Call services from form rules and create or update REST API integrations. Choose where submitted data is sent, such as cloud storage or Adobe Experience Platform.
 
 * **Works across form types**: One conversational interface for both Edge Delivery Services and Core Components forms, so you don't need to know which stack a form is built on.
 
@@ -69,7 +69,7 @@ The Forms Agentic Capability provides the following key skills:
 
 * **PDF and XDP import**
 
-  Ask Coworker Chat to convert a PDF or XDP stored in AEM DAM into an Adaptive Form. This is separate from creating a form from a file attached to chat.
+  Convert a PDF or XDP stored in AEM DAM into an Adaptive Form.
 
 * **Form field and layout editing**
 
@@ -77,15 +77,15 @@ The Forms Agentic Capability provides the following key skills:
 
 * **Business logic and validation authoring**
 
-  Describe the rule you need or the behavior you want to change in an existing rule. Use natural language to define show/hide conditions, calculations, validation, and event-driven actions instead of manually configuring the [rule editor for Core Components](/help/forms/rule-editor-core-components.md) or [rules for Edge Delivery Services](/help/edge/docs/forms/rules-forms.md).
+  Describe show/hide conditions, calculations, validation, or event-driven actions in plain language. Add a rule or change an existing one, then review it in the [rule editor for Core Components](/help/forms/rule-editor-core-components.md) or [rules for Edge Delivery Services](/help/edge/docs/forms/rules-forms.md).
 
 * **Call services from form rules**
 
-  Call an existing Form Data Model (FDM) service or REST API integration when a form event occurs. Describe the inputs, which response values should populate fields, and what should happen on success or failure.
+  Call a configured Form Data Model (FDM) service or REST API integration from a form event. Use the response to fill form fields and set actions for a successful or failed call.
 
 * **REST API integrations**
 
-  Ask to create a REST API integration or change its endpoint, HTTP method, headers, or input and output mappings. See the requirements and sample prompts under [Common use cases and sample prompts](#use-cases-prompts).
+  Create an integration from API details or edit an existing integration's endpoint, HTTP method, headers, and input or output mappings. See [Common use cases and sample prompts](#use-cases-prompts) for requirements and examples.
 
 * **Form submission configuration**
 
@@ -143,11 +143,11 @@ When you ask the Forms Agentic Capability to create a new form, it asks for a fe
 
 The agentic capability automatically discovers the templates and themes available on your instance and selects one for you. You don't need to name one. For background on how templates and themes work, see [How to get reference themes and templates for AEM Forms?](/help/forms/reference-themes-templates-data-models.md) for Core Components, or [Customize theme and styles for Edge Delivery Services for AEM Forms](/help/edge/docs/forms/style-theme-forms.md) for Edge Delivery Services.
 
-For a PDF or XDP import, also provide the source asset's `/content/dam/...` path, the new form's name, and its destination folder. Edge Delivery Services imports require the GitHub repository URL for your Forms project. For Core Components imports, the capability uses the templates and themes available on the author instance.
+To import a PDF or XDP, provide its `/content/dam/...` asset path, the new form's name, and its destination folder. Edge Delivery Services imports also need your Forms project's GitHub repository URL. Core Components imports use templates and themes from the author instance.
 
-For changes to an existing form, provide its URL or path and the AEM author URL. Create any fields needed by a rule before asking to add the rule.
+To update an existing form, provide its URL or path and the AEM author URL. Create the fields a rule needs before asking to add it.
 
-For service-call rules, identify the service, the form event that should invoke it, and how its inputs and response values map to form fields. FDM services must already be configured. REST API integrations can be selected from existing integrations or created from API details as described below.
+FDM services must already be configured. For a new REST API integration, have the API details ready.
 
 ## Common use cases and sample prompts {#use-cases-prompts}
 
@@ -167,7 +167,7 @@ Sample prompts:
 
 **PDF and XDP import**
 
-The Forms Agentic Capability can convert a PDF or XDP already stored in AEM DAM into an Adaptive Form. Supply the asset path rather than attaching the file to chat, and specify whether the result should use Core Components or Edge Delivery Services.
+Import a PDF or XDP from AEM DAM by giving its asset path in chat. Choose Core Components or Edge Delivery Services for the new form.
 
 Sample prompts:
 
@@ -201,11 +201,9 @@ Sample prompts:
 
 **Business logic and validation authoring**
 
-The Forms Agentic Capability can create conditional logic, calculations, field dependencies, and validation rules using natural language. You do not need to write code. Describe the behavior you want, then review the generated rules in the form's rule editor.
+Describe the conditions, calculations, or validation you want. Coworker creates the rules for you to review in the form's rule editor.
 
-You can also change an existing rule's condition or actions. Identify the field and the behavior to change. The capability updates that rule while retaining the field's other rules. Refresh the form editor after a rule change to see the saved result.
-
-If a referenced field or value is ambiguous, the capability asks for clarification rather than choosing a match.
+To change an existing rule, name its field and describe the new behavior. Other rules on that field stay unchanged. Coworker asks for clarification if a field or value is ambiguous. Refresh the form editor after an edit to see the saved rule.
 
 Sample prompts:
 
@@ -217,18 +215,13 @@ Sample prompts:
 
 **Call services from form rules**
 
-Use a form rule to call a service when an event occurs. Supported events include button clicks, field-value changes, initialization, and submission success or failure. For example, look up a customer when Customer ID changes and populate the customer's name and address from the response. This is different from configuring where the form sends data on submission.
+Call a service when someone clicks a button or changes a field value. Rules can also call services on initialization or after submission succeeds or fails. Configure the form's submit action separately to choose where completed form data is sent.
 
-You can call either:
+Use an existing FDM service or REST API integration. FDM services can connect to REST, SOAP, OData, or database-backed systems. For a non-REST service, [configure the data source](/help/forms/configure-data-sources.md) and [create the FDM](/help/forms/create-form-data-models.md) before asking Coworker to add the rule. To create a REST API integration, provide the API details described below.
 
-* **An existing FDM service**: Use an operation exposed by a configured FDM, including services backed by REST, SOAP, OData, or a database. For non-REST services, first [configure the data source](/help/forms/configure-data-sources.md) and [create the FDM](/help/forms/create-form-data-models.md). Coworker can use the configured service; it does not create these non-REST connections.
-* **A REST API integration**: Use an existing integration or ask to create one from API details. New integrations created through Coworker support APIs without authentication only. See the REST API integrations use case below for requirements.
+Name the service operation and the event that should call it. For each required input, specify the form field or value to send, including any calculation. Identify the response values that should fill form fields. Say what to do when the call succeeds or fails, including any conditions for those actions. See [Invoke Service in the rule editor](/help/forms/invoke-service-enhancements-rule-editor.md) for details about mappings and handlers.
 
-In your request, describe the triggering event and the service operation. Say where each required input comes from, such as a form field, a fixed value, or a calculation. Identify the response values to map to form fields and the actions to take on success or failure, such as populating fields, clearing outdated values, or showing an error message. You can also describe conditions for those actions. For background on mappings and handlers, see [Invoke Service in the rule editor](/help/forms/invoke-service-enhancements-rule-editor.md).
-
-The capability checks available services and their inputs and outputs. If several operations match or a required input is missing, it asks for clarification. For operations that create, update, or delete data, explicitly identify the operation or confirm it when asked.
-
-You can change an existing service-call rule without recreating it. Identify the field and the behavior to change, such as calling a different service or adding an action when the call fails.
+Coworker asks you to clarify missing required inputs or choose between matching operations. If the operation writes or deletes data, name it explicitly or confirm the proposed operation before Coworker adds the rule.
 
 Sample prompts:
 
@@ -236,19 +229,19 @@ Sample prompts:
 * When Product Code changes, use the configured product REST API integration to look up that code and populate Product Name and Unit Price from the response.
 * When Check Stock is clicked, call the inventory lookup service in our FDM with Product Code as input. Populate Available Quantity from the response.
 * Change the Lookup button's existing rule to use the customer directory service instead, keeping the other actions unchanged.
-* Add an action to the Lookup button's existing service rule to clear Customer Name and show an error message if the call fails.
+* Update the Lookup button's rule to clear Customer Name and show an error message if the service call fails.
 
 **REST API integrations**
 
-The Forms Agentic Capability can create a REST API integration from a cURL command, an OpenAPI or Swagger specification, a sample response, or API details you provide. Include the endpoint URL, HTTP method, and the input and output mappings needed by the rule. If a specification contains several operations, identify the one to use. The capability asks for missing details before creating the integration.
+Create a REST API integration from API documentation, a cURL command, an OpenAPI or Swagger specification, or a sample response. Provide the endpoint URL, HTTP method, and the inputs and outputs the rule needs. If a specification lists several operations, name the one to use. Coworker asks for any missing details.
 
-Integrations created through Coworker run in the browser and support APIs without authentication only. The API must allow cross-origin resource sharing (CORS) from the form's host. Do not paste passwords, tokens, or API keys into chat. For APIs that require authentication, use the [API Integration configuration in the rule editor](/help/forms/api-integration-in-rule-editor.md).
+New integrations created through Coworker run in the browser. The API must work without authentication and allow cross-origin resource sharing (CORS) from the form's host. Keep passwords, tokens, and API keys out of chat. Configure authenticated APIs using the [API Integration configuration in the rule editor](/help/forms/api-integration-in-rule-editor.md).
 
-You can also ask to change an existing integration's URL, HTTP method, content type, array-response setting, or input and output mappings, including query parameters, headers, path parameters, and request-body values. Existing authentication settings are preserved. Authentication, encryption, renaming, and client/server execution settings must be changed in the rule editor, not through this capability.
+You can change an existing integration's URL, HTTP method, content type, or input and output mappings, including query parameters, headers, path parameters, and request-body values. Specify whether the response is an array. Coworker preserves existing authentication settings. Use the rule editor to change authentication, encryption, the integration's name, or whether calls run in the browser or on the server.
 
 >[!IMPORTANT]
 >
->REST API integrations are shared. Editing an integration affects every form whose rules use it. Review the proposed changes before saving. If you remove or rename an input or output, update any rules that reference it.
+>Editing a shared REST API integration changes it for every form that uses it. Review the proposed changes before saving. Update any rules that reference an input or output you remove or rename.
 
 Sample prompts:
 
@@ -344,7 +337,7 @@ Keep these tips in mind when prompting the Forms Agentic Capability:
 
 * Checkbox field creation may occasionally fail to set the checked/unchecked values correctly. As a workaround, manually configure the default checked/unchecked value in the properties panel of the [Checkbox component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox) in the Adaptive Forms editor.
 
-* Deleting a business rule through Coworker is not supported. Delete the rule directly in the [rule editor](/help/forms/rule-editor-core-components.md). When editing existing rules through Coworker, change one field's rule at a time.
+* Coworker cannot delete rules and can edit only one field's rule at a time. To delete a rule, use the [rule editor](/help/forms/rule-editor-core-components.md).
 
 ## FAQ {#faq-forms-agentic-capability}
 
@@ -354,7 +347,7 @@ Yes. It's part of the Experience Production capability, available through Cowork
 
 **Can I import existing documents?**
 
-Yes. You can create a form from an attached brief, image, screenshot, or PDF, or import a PDF or XDP stored in AEM DAM. See [Common use cases and sample prompts](#use-cases-prompts) for examples of both workflows.
+Yes. Attach a brief, image, screenshot, or PDF to chat, or provide the asset path to a PDF or XDP in AEM DAM. See [Common use cases and sample prompts](#use-cases-prompts) for sample prompts.
 
 **Will applying a guidelines document remove fields I already added?**
 
