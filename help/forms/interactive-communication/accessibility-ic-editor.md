@@ -22,14 +22,18 @@ role_v2:
 
 ## Overview
 
-IC Editor (short for [Interactive Communication Editor](/help/forms/interactive-communication/introduction.md)) lets you create accessible interactive communications that comply with accessibility standards such as WCAG 2.2 (web accessibility), PDF/UA (PDF-specific accessibility), and Section 508 (U.S. federal accessibility requirements). Accessibility support in IC Editor covers two areas:
+IC Editor (short for [Interactive Communication Editor](/help/forms/interactive-communication/introduction.md)) lets you configure how assistive technologies, such as screen readers (for example, NVDA or JAWS), interpret a document, so interactive communications comply with accessibility standards such as WCAG 2.2 (web accessibility), PDF/UA (PDF-specific accessibility), and Section 508 (U.S. federal accessibility requirements).
 
-* **Accessibility properties**: define how assistive technologies, such as screen readers (for example, NVDA or JAWS), announce a field. You set a screen reader precedence, and, for some field types, a semantic role.
+At design time, you set accessibility properties and tab order per field directly in IC Editor. It does not read the document aloud or let you preview the screen reader experience inside the editor. The actual screen reader experience happens later, when the generated PDF is opened and read aloud with a screen reader tool such as NVDA or JAWS, outside IC Editor. For the screen reader to announce the document correctly, the generated PDF must include accessibility tags, which you enable separately when you generate the PDF.
+
+Accessibility support in IC Editor covers two areas:
+
+* **Accessibility properties**: define how assistive technologies announce a field. You set a screen reader precedence, and, for some field types, a semantic role.
 * **Tab order** (also called reading order): control the order in which screen readers read fields and the order in which keyboard focus moves between fields when a user presses Tab.
 
 For a broader overview of making forms accessible, including concepts shared with other AEM Forms authoring tools, see [Creating accessible Adaptive Forms](/help/forms/creating-accessible-adaptive-forms.md).
 
-You can set accessibility properties for a field either directly in its property sheet while you author the document, or in a dedicated accessibility view that lets you go through every field on the document, one at a time. The second option is useful when an accessibility reviewer checks a document after authoring is complete.
+Beyond setting properties field-by-field in the property sheet while you author a document, IC Editor's dedicated accessibility view lets you go through every field on the document one at a time, for example when an accessibility reviewer audits a government form or a customer-facing communication for compliance after authoring is complete.
 
 Once you have set the accessibility properties and tab order you want, select **General Accessibility Information (Tags)** in the document's Interactive Communication Settings so that the accessibility tags are included when IC Editor generates the PDF.
 
@@ -44,6 +48,7 @@ You can set accessibility properties for text, images, interactive fields (such 
 | Text elements | Heading Level 1 to 6, Caption, Artifact, or None |
 | Subforms | Table, Header Row, Body Row, Footer Row, List, TOC, or None |
 | Tables | Table (fixed; you can't change it) |
+| Table cells | Heading Level 1 to 6, Caption, Artifact, or None (table cells are text boxes, so they have the same Role options as text elements) |
 | Images and interactive fields | No Role option |
 
 **Screen Reader Precedence**: controls what text a screen reader announces first for a field: its caption, name, tooltip, or helper text.
@@ -54,6 +59,8 @@ You can set accessibility properties for text, images, interactive fields (such 
 | Non-interactive elements (images, plain text) | Name, Helper Text, or None |
 | Tables | Name, Tooltip, or None |
 | Subforms | Not available until Role is set to Table; once set, Name, Tooltip, or None |
+
+If you set Screen Reader Precedence to None, the screen reader doesn't announce the field's caption, name, tooltip, or helper text. It only reads the field's value.
 
 **Tooltip**: a general Tooltip field is available at the top of the property sheet for interactive fields. If you set Screen Reader Precedence to Tooltip, a separate Tooltip text field appears where you can set the text a screen reader announces.
 
