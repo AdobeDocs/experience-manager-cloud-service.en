@@ -52,15 +52,14 @@ Have a look at the May 2026 Release Overview video for a summary of the features
 
 ## Release Overview {#overview}
 
-The 2026.9.0 release of [!DNL Experience Manager] as a [!DNL Cloud Service] delivers new capabilities across Assets, Forms, and Foundation, with a continued emphasis on AI-assisted authoring and discovery, richer Dynamic Media experiences, and developer productivity.
+The 2026.10.0 release of [!DNL Experience Manager] as a [!DNL Cloud Service] highlights new and recently available capabilities across Sites, Assets, Forms, and Foundation, alongside updates to developer tools and platform guidance.
 
 **Highlights of this release**
 
-* **Smarter Assets discovery and organization** — Content Hub adds AI Search for intent-based, multilingual results, Smart Collections that stay up to date automatically, and custom metadata sorting options.
-* **Richer Dynamic Media experiences** — A new, fully customizable video viewer with actionable analytics, AI-generated video captions, multi-caption and multi-audio track support, and attribute-based access control for secure delivery.
-* **AI-assisted authoring and development** — AEM agentic capabilities are now generally available in Adobe CX Enterprise Coworker, the AEM MCP Server adds Cloud Manager operations, and IDE agent skills expand with AEM query optimization and additional code-migration patterns.
-* **Foundation and platform** — Canary deployments to validate a release against production before it serves live traffic, OpenTelemetry-based APM (Limited Availability), and IMS authentication rich errors for easier troubleshooting.
-* **Plan-ahead notices** — Important timelines for Java API deprecations (September 28, 2026) and the upcoming Java 25 runtime upgrade help customers prepare their environments.
+* **More flexible content and media experiences:** Sites prerelease adds a Composite data type for Content Fragments. Assets highlights include multilingual video captions and audio tracks, branded video playback, and a GIF-based countdown timer for Dynamic Media email templates.
+* **AI-assisted governance and troubleshooting:** The AEM Governance Agent can help prioritize vulnerability findings, while new capabilities in CX Enterprise Coworker let developers inspect workflows and investigate Dispatcher behavior using natural-language prompts.
+* **Expanded developer and migration tooling:** The Cloud Migration Agent skill adds migration patterns and beta validation, and the unified AEM MCP Server now supports Cloud Migration capabilities.
+* **Platform changes to prepare for:** The AEM Cloud Service SDK supports Java 25 for local development. Review the notices on CDN egress IP allowlists, the transition from built-in New Relic APM to OpenTelemetry, and deprecated Java APIs.
 
 A range of beta, early adopter, and Limited Availability programs are also available this release. See the sections below for details.
 
@@ -168,12 +167,9 @@ Smart Collections automatically remain up to date. When newly approved assets sa
 
 The native Dynamic Media Template component lets marketers add and personalize AEM Dynamic Media templates directly in the Adobe Journey Optimizer email editor. Marketers can select existing templates or import layered PSD files, edit individual layers such as countdown timers, and configure text, CTAs, positioning, and timing without leaving the email editor. This enables governed, personalized, and dynamic email experiences, including open-time countdowns and personalized product content.
 
-
-
 #### Dynamic Media with OpenAPI capabilities: Secure Delivery with Attribute-based Access Control {#secure-delivery-attribute-based-access-control}
 
 Attribute-based access control lets admins govern access to Dynamic Media with OpenAPI capabilities assets using metadata-driven rules defined for each user group. IMS-based restrictions allow DAM admins and brand managers to restrict delivery of specific assets to designated Adobe IMS users or groups. Users outside the permitted list receive a 404 response, and the asset is not delivered. This provides a secure way to manage asset delivery for campaigns, product launches, and other controlled distribution scenarios.
-
 
 #### Dynamic Media with OpenAPI capabilities: Barcode and QR Code delivery {#barcode-qr-code}
 
@@ -184,7 +180,6 @@ To request enablement, open an Adobe Customer Support ticket.
 #### Content Hub: Enhanced public link sharing and governance {#enhanced-public-link-sharing}
 
 Content Hub lets you [share multiple assets and collections through public links and update existing links by adding or removing assets and collections at any time](/help/assets/share-assets-content-hub.md). Administrators can manage shared links with controls for password protection, expiration, and link revocation to help govern external access. Branded recipient experiences help maintain brand consistency when sharing assets with external stakeholders.
-
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta Features {#assets-beta-program-features}
 
@@ -212,7 +207,6 @@ To send feedback, participate or learn more, send an email to `aem-content-advis
 Video Interactivity lets authors add chapters and text, image, and card overlays to videos in Dynamic Media with OpenAPI capabilities. Authors configure them in the Video Interactivity editor. The configuration is saved on the asset and delivered with the approved video metadata for playback in the new Video Viewer. 
 
 To participate or learn more, send an email to `dm-beta-feedback@adobe.com`.
-
 
 #### Dynamic Media: Video Engagement Report {#video-engagement-report}
 
@@ -311,7 +305,6 @@ Adobe Express integration with Assets helps all users create and edit on-brand c
 
 To participate or learn more, send an email to `aem-assets-express@adobe.com`.
 
-
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 <!--
@@ -359,6 +352,10 @@ Validate file attachments in Adaptive Forms before or on submission using custom
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation New Features {#foundation-new}
+
+#### Vulnerability assessment with AEM Governance Agent {#vulnerability}
+
+The AEM Governance Agent can list known vulnerabilities across one or more AEM instances, including their severity and affected components. You can filter findings by CVE, severity, environment, or component to prioritize remediation. See [AEM Governance Agent use cases](/help/ai-in-aem/agentic-capabilities/brand-governance/use-cases.md).
 
 #### OpenTelemetry for Application Performance Monitoring (APM) (Limited Availability) {#otel}
 
