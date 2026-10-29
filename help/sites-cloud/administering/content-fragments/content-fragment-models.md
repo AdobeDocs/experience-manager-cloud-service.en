@@ -593,6 +593,6 @@ The list below consolidates the current limitations of the Composite data type:
   * Launches
     * Content Fragments containing composite fields are not supported in Launches, whether selected directly or included through fragment references. Such actions are not accepted and will fail.
   * Core Components and the Sling Model exporter
-    * Page rendering via Core Components and the Sling Model exporter (`.model.json`) does not yet support composite. 
+    * Page rendering via Core Components and the Sling Model exporter (`.model.json`) does not yet support composite fields. 
   * Visual Content Fragments (Content Fragments with HTML templates)
     * Visual Content Fragments (Content Fragments with HTML templates) do not currently support composite fields.
