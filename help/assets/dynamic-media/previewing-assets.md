@@ -17,7 +17,7 @@ role_v2:
 
 You can use Preview to see how a digital asset that you have uploaded appears when a customer views it in their own web browser. The default embedded, cross-device viewer that is assigned to the asset is used for the Preview.
 
-A viewer is a collection of various settings or "presets." For example, viewer settings like size, zoom, color, borders, and fonts determine asset appearance.
+A viewer is a collection of various settings or "presets." For example, viewer settings like size, zoom, color, borders, and fonts determine how an asset appears.
 
 Besides using the dedicated Preview feature for video, spin sets, and image sets, you can also preview an asset by using viewer presets that you have created. Or, use image presets to preview renditions of images.
 
