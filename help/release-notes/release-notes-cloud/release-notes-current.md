@@ -292,6 +292,12 @@ Manage mixed form collections and move reusable forms between environments with 
 * **Download forms with their fragments:** Download an Edge Delivery Services form together with its referenced fragments in the same package, reducing the need to collect dependencies separately when transferring forms.
 * **Keep theme references current:** Frontend theme redeployment automatically updates the form's saved theme reference, so Forms Manager continues to show the correct theme rather than reverting to Canvas in the theme picker.
 
+#### Forms authoring in Coworker Chat {#forms-authoring-coworker-chat}
+
+Use Coworker Chat to import Portable Document Format (PDF) or XML Data Package (XDP) files from AEM's Digital Assets Management (DAM) repository into Adaptive Forms. Describe changes in plain language to edit existing rules or add rules that call configured Form Data Model (FDM) services or REST API integrations. Specify the service inputs, response mappings, and what should happen when a call succeeds or fails.
+
+You can also create or edit REST API integrations in chat. New integrations run in the browser and require APIs without authentication that allow cross-origin resource sharing (CORS) from the form's host. Editing a shared integration affects every form that uses it. See [Forms Agentic Capabilities](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/forms-use-cases.md) for examples and requirements.
+
 ### Early Access Features in AEM Forms
 
 The following capabilities are available through the AEM Forms Early Access program. To request access, email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address and include your organization ID, program details, and the capabilities you want to use.
