@@ -1,6 +1,6 @@
 ---
 title: Generating Access Tokens for Server-Side APIs
-description: Learn how to facilitate communication between a third-party server and AEM as a Cloud Service by generating a secure JWT Token
+description: Learn how to authenticate server-side applications to AEM as a Cloud Service using OAuth Server-to-Server credentials and rotate client secrets.
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 feature: Developing
 role: Admin, Developer
@@ -15,245 +15,238 @@ role_v2:
 ---
 # Generating Access Tokens for Server-Side APIs {#generating-access-tokens-for-server-side-apis}
 
-Some architectures rely on making calls to AEM as a Cloud Service from an application hosted on a server outside of AEM infrastructure. For example, a mobile application that calls a server, which then makes API requests to AEM as a Cloud Service.
-
-The server-to-server flow is described below, along with a simplified flow for development. The AEM as a Cloud Service [Developer Console](development-guidelines.md#crxde-lite-and-developer-console) is used to generate tokens needed for the authentication process.
-
-<!--
- Alexandru: hiding this until the tutorials reflect the new UI
-
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html).
--->
-
-## The Server-to-server Flow {#the-server-to-server-flow}
-
-Users with an IMS org administrator role, and who are a member of the AEM Users or AEM Administrators Product Profile on AEM Author, can generate a set of credentials from AEM as a Cloud Service. Each credential is a JSON payload that includes a certificate (the public key), a private key, and a technical account consisting of a `clientId` and `clientSecret`. Those credentials can later be retrieved by a user with the AEM as a Cloud Service Environment administrator role and should be installed on a non-AEM server and treated carefully as a secret key. This JSON format file contains all the data required to integrate with an AEM as a Cloud Service API. The data is used to create a signed JWT token, which is exchanged with the Adobe Identity Management Services (IMS) for an IMS access token. This access token can then be used as a Bearer authentication token to make requests to AEM as a Cloud Service. The certificate in the credentials expires after one year by default, but they can be refreshed when needed, see [Refresh Credentials](#refresh-credentials).
-
-The server-to-server flow involves the following steps:
-
-* Fetch the credentials on AEM as a Cloud Service from the Developer Console
-* Install the credentials for AEM as a Cloud Service on a non-AEM server making calls to AEM
-* Generate a JWT token and exchange that token for an access token using Adobe's IMS APIs
-* Calling the AEM API with the access token as a Bearer Authentication token
-* Set appropriate permissions for the technical account user in the AEM environment
-
-### Fetch the AEM as a Cloud Service Credentials {#fetch-the-aem-as-a-cloud-service-credentials}
-
-Users with access to the AEM as a Cloud Service developer console see the integrations tab in the Developer Console for a given environment, and two buttons. A user with the AEM as a Cloud Service Environment administrator role can click the **Generate Service Credentials** button to generate and display the service credentials json. The json contains all the information required for the non-AEM server, including client id, client secret, private key, certificate, and configuration for author and publish tiers of the environment, regardless of the pod selection.
-
-![JWT Generation](assets/dev-console/create-ta-account.png)
-
-After being generated, you can retrieve the credentials by clicking the hamburger menu and Click "View" on the Credential.
-![JWT Generation](assets/dev-console/cert-list-overview.png)
-
-You will get output like:
-![JWT Generation](assets/dev-console/cert-view.png)
-
-You can use the copy to clipboard button to copy the json to your clipboard and save it in a file. The file should be treated as a secret and stored securely.
-
->[!NOTE]
->
->Customers can create up to ten technical accounts, including those accounts that have already been deleted.
+>OAuth Server-to-Server credentials in the AEM Developer Console are available starting November 4, 2026.
 
 >[!IMPORTANT]
 >
->An IMS org administrator (typically the same user who provisioned the environment by way of the Cloud Manager), who is also a member of the AEM Users or AEM Administrators Product Profile on AEM Author, must first access the Developer Console. Then, click **Create new technical account** for the credentials to be generated and later retrieved by a user with admin permissions to the AEM as a Cloud Service environment. If the IMS org administrator has not created the technical account yet, a message informs them that they need the IMS org Administrator role.
+>Use OAuth Server-to-Server credentials for server-side integrations. Service Account (JWT) credentials are deprecated in favor of OAuth Server-to-Server. For existing JWT-based integrations, see [Generating Access Tokens for Server-Side APIs - JWT (Legacy)](generating-access-tokens-for-server-side-apis-jwt-legacy.md).
+
+Some architectures rely on making calls to Adobe Experience Manager (AEM) as a Cloud Service from an application hosted on a server outside of AEM infrastructure. For example, a mobile application calls a server, which then makes API requests to AEM as a Cloud Service.
+
+Use the AEM as a Cloud Service [Developer Console](development-guidelines.md#crxde-lite-and-developer-console) to create an OAuth Server-to-Server technical account. Your application exchanges its client ID and client secret for an access token using the Adobe Identity Management Services (IMS) `client_credentials` grant. No signed JWT, private key, or certificate is required.
+
+>[!NOTE]
+>
+>The **AEM** Developer Console manages access to your AEM environment. It is different from the **Adobe** Developer Console at `developer.adobe.com/console`. Create and manage the technical account described here in the AEM Developer Console.
+
+## The Server-to-server Flow {#the-server-to-server-flow}
+
+Users with an IMS organization administrator role who are also members of the **AEM Users** or **AEM Administrators** product profile on AEM Author can create a technical account. The client secret is shown only to the user who creates it, at creation time. A user with the AEM as a Cloud Service Environment administrator role can view the account's details, which do not include the client secret.
+
+The server-to-server flow involves these steps:
+
+1. Create an OAuth Server-to-Server technical account and save its credentials, including the client secret shown at creation.
+1. Store the credentials securely on the server that makes requests to AEM.
+1. Request an access token from IMS using the client ID, client secret, and scopes.
+1. Configure the technical account's product profile and AEM permissions.
+1. Call the AEM API with the access token as a bearer token.
+
+### Create a Technical Account and Retrieve Its Credentials {#fetch-the-aem-as-a-cloud-service-credentials}
+
+>[!IMPORTANT]
+>
+>The AEM Developer Console shows an OAuth Server-to-Server client secret only once, when it is created. The AEM Developer Console does not store the secret value. It keeps only the secret ID and its status. IMS stores the secret as a one-way hash. Save the secret securely when it is shown. If you lose it, create a new secret using another active secret, or create a new technical account.
+
+1. **Open Integrations.** Open the AEM Developer Console for the environment that your application accesses, then select **Integrations**. Select **Create new technical account**.
+
+   ![Integrations page with Create new technical account highlighted](assets/dev-console/s2s-create-acc-step-1-integrations.png)
+
+1. **Create the technical account.** In the dialog, select **OAuth Server-to-Server (S2S)** as the **Credential type**, then select **Create**.
+
+   ![Create new technical account dialog with OAuth Server-to-Server selected](assets/dev-console/s2s-create-acc-step-2-create-dialog.png)
+
+1. **Save the client secret.** The **Save your client secret** dialog shows the credentials, including `technicalAccount.clientSecret`. Select **Download credentials** to save them as `aem-s2s-credentials.json`, or select **Copy to clipboard**. Store the credentials in a secret manager or another access-controlled location for your application.
+
+   ![Save your client secret dialog with the client secret value hidden and Download credentials and Copy to clipboard highlighted](assets/dev-console/s2s-create-acc-step-3-save-secret.png)
+
+   Select **Close**. In the **Close without further access to your secret** confirmation dialog, select **Close** only after saving the secret securely. After the dialog is closed, the secret cannot be shown again.
+
+   ![Close without further access to your secret confirmation dialog with Close highlighted](assets/dev-console/s2s-create-acc-step-3-close-confirmation.png)
+
+1. **Review the technical account.** The new OAuth Server-to-Server account is listed with its **Active** client secret. The secret ID displayed in the list identifies a secret. It is not the secret value and cannot be used as `client_secret` in a token request.
+
+   ![New OAuth Server-to-Server account with one Active client secret and its action menu open](assets/dev-console/s2s-create-acc-step-4-result.png)
+
+To review a secret's details later, open the client secret's row menu and select **View**. The credentials dialog shows the IMS endpoint, scopes, client ID, technical account email, secret ID, and revocation status. It does not show the client secret value.
+
+![Credentials dialog without the client secret value](assets/dev-console/s2s-view-credentials.png)
+
+>[!NOTE]
+>
+>Customers can create up to 20 technical accounts. Deleted accounts count toward this limit.
+
+>[!IMPORTANT]
+>
+>An IMS organization administrator who is also a member of the **AEM Users** or **AEM Administrators** product profile on AEM Author must create the technical account. Because the client secret is shown only once, the user who creates the account is responsible for passing the credentials to the application owner through a secure channel.
 
 ### Install the AEM Service Credentials on a Non-AEM Server {#install-the-aem-service-credentials-on-a-non-aem-server}
 
-The application making calls to AEM should be able to access the credentials for AEM as a Cloud Service, treating it as a secret.
+Make the credentials available only to the server-side application that calls AEM. Use a secret manager or another access-controlled storage mechanism.
 
-### Generate a JWT Token and Exchange It for an Access Token {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
+Do not put a client secret in browser-side code, mobile applications, source control, or logs. Treat access tokens as secrets as well.
 
-Use the credentials to create a JWT token in a call to Adobe's IMS service to retrieve an access token, which is valid for 24 hours.
+### Request an OAuth Access Token {#request-an-oauth-access-token}
 
-The AEM CS Service Credentials may be exchanged for an access token using code samples designed for this purpose. Sample code is available from [Adobe's public GitHub repository](https://github.com/adobe/aemcs-api-client-lib), which contains code examples that you can copy and adapt for your own projects. Note that this repository contains sample code for reference and is not maintained as a production-ready library dependency.
+Send an HTTPS `POST` request to `https://<imsEndpoint>/ims/token/v3`. The `imsEndpoint` in your credential JSON is an IMS hostname. For example, `ims-na1.adobelogin.com` uses `https://ims-na1.adobelogin.com/ims/token/v3`. Use the hostname supplied in your credentials, including the stage hostname when using stage credentials.
 
-```
-/*jshint node:true */
-"use strict";
+Use `Content-Type: application/x-www-form-urlencoded` and include these form fields in the request body:
 
-const fs = require('fs');
-// Sample code adapted from Adobe's GitHub repository
-const exchange = require("./your-local-aemcs-client"); // Copy and adapt the code from the GitHub repository
+| Parameter | Value |
+| --- | --- |
+| `grant_type` | `client_credentials` |
+| `client_id` | The `technicalAccount.clientId` from your credentials. |
+| `client_secret` | The `technicalAccount.clientSecret` that you saved when the secret was created. |
+| `scope` | The values in `scopes`, joined with commas. |
 
-const jsonfile = "aemcs-service-credentials.json";
+URL-encode each form value. Send secrets in the request body, not in the URL or query string.
 
-var config = JSON.parse(fs.readFileSync(jsonfile, 'utf8'));
-exchange(config).then(accessToken => {
-    // output the access token in json form including when it will expire.
-    console.log(JSON.stringify(accessToken,null,2));
-}).catch(e => {
-    console.log("Failed to exchange for access token ",e);
-});
-```
+The response includes `access_token`, `token_type`, and `expires_in`. Use `access_token` to call AEM. The `expires_in` value is the token lifetime in seconds. Use that value rather than assuming a fixed expiration time.
 
-The same exchange can be performed in any language capable of generating a signed JWT Token with the correct format and calling the IMS Token Exchange APIs.
-
-The access token defines when it expires, which is typically 24 hours. There is sample code in the git repository to manage an access token and refresh it before it expires.
+Cache and reuse the access token until it approaches expiration, then request a new token with the same client credentials. This grant does not require a JWT exchange or a refresh token.
 
 >[!NOTE]
->If there are multiple credentials, make sure to reference the appropriate json file for the API call to AEM that is later invoked.
+>
+>Use credentials for the AEM environment that you are calling. A valid IMS access token does not grant additional AEM permissions. Configure the technical account's permissions as described below.
+
+### Node.js Authentication Example {#nodejs-authentication-example}
+
+For a minimal OAuth Server-to-Server implementation, see the [AEM-CS API Client Library example](https://github.com/adobe/aemcs-api-client-lib/blob/main/README.md). It uses built-in Node.js APIs and requires Node.js 18 or newer, with no additional dependencies.
+
+The example expects the credentials inside an `integration` object. The `aem-s2s-credentials.json` file downloaded from the AEM Developer Console contains the credentials without this wrapper. Wrap its content before using it with the example, for example with [jq](https://jqlang.org/):
+
+```bash
+jq '{integration: .}' aem-s2s-credentials.json > downloaded_integration.json
+```
+
+Alternatively, edit the file so that its complete content becomes the value of a top-level `integration` field. From a checkout of the example repository, run:
+
+```bash
+node oauth-s2s-cli.js downloaded_integration.json
+```
+
+For programmatic usage, the [OAuth helper](https://github.com/adobe/aemcs-api-client-lib/blob/main/oauth-s2s.js) accepts the wrapped object as `requestAccessToken(credentials)`. It uses the IMS hostname, client ID, client secret, and scopes inside `integration`.
+
+Keep the credential file private. The CLI prints an access token. Do not send its output to shared logs or publish it. The example's README also shows how to use the token in an AEM API request.
 
 ### Calling the AEM API {#calling-the-aem-api}
 
-Make the appropriate server-to-server API calls to an AEM as a Cloud Service environment, including the access token in the header. So for the "Authorization" header, use the value `"Bearer <access_token>"`. For example, using `curl`:
+Include the access token in the `Authorization` header of requests to your AEM as a Cloud Service environment, using the value `Bearer <access_token>`.
 
-```curlc
-curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e23423423.adobeaemcloud.com/content/dam.json
+```bash
+curl --header "Authorization: Bearer ${ACCESS_TOKEN}" \
+  "https://author-p<program-id>-e<environment-id>.adobeaemcloud.com/content/dam.json"
 ```
+
+Use the hostname for the environment and tier that your application accesses. Only call resources that the technical account is authorized to access.
 
 ### Set the Appropriate Permissions for the Technical Account User in AEM {#set-the-appropriate-permissions-for-the-technical-account-user-in-aem}
 
-First, a new product profile must be created in the Adobe Admin Console.
-
-1. Go to the Adobe Admin Console at [https://adminconsole.adobe.com/](https://adminconsole.adobe.com/).
-1. Press the **Manage** link under the **Products and Services** column on the left.
-1. Select **AEM as a Cloud Service**.
-1. Press the **New Profile** button.
-   
-   ![New Profile](/help/implementing/developing/introduction/assets/s2s-newproductprofile.png)
-
-1. Name the profile and press **Save**.
-
-   ![Save Profile](/help/implementing/developing/introduction/assets/s2s-saveprofile.png)
-   
-1. Select the profile that you created from the profile list.
-1. Select **Add User**.
-
-   ![Add User](/help/implementing/developing/introduction/assets/s2s-addusers.png)
-
-1. Add the technical account that you created (in this case `84b2c3a2-d60a-40dc-84cb-e16b786c1673@techacct.adobe.com`), and click **Save**.
-
-   ![Add Tech Account](/help/implementing/developing/introduction/assets/s2s-addtechaccount.png)
-
-1. Wait 10 minutes for the changes to take effect and make an API call to AEM with an access token generated from the new credential. As a cURL command, it would be represented similar to this example:
-
-   `curl -H "Authorization: Bearer <access_token>" https://author-pXXXXX-eXXXXX.adobeaemcloud.net/content/dam.json `
-
-
-After making the API call, the product profile appears as a user group in the AEM as a Cloud Service author instance, with the appropriate technical account as a member of that group.
-
-To check this information, do the following:
-
-1. Log on to the author instance.
-1. Go to **Tools** > **Security**, then click the **Groups** card.
-1. Locate the name of the profile that you created in the list of groups and click it:
-
-   ![Group Profile](/help/implementing/developing/introduction/assets/s2s-groupprofile.png)
-
-1. In the following window, switch over to the **Members** tab and check if the technical account is correctly listed there:
-
-   ![Members tab](/help/implementing/developing/introduction/assets/s2s-techaccountmembers.png)
-
-
-Alternatively, you can also verify that the technical account appears in the user's list by performing the below steps on the author instance:
-
-1. Go to **Tools** > **Security** > **Users**.
-1. Check that your technical account is the user list and select it.
-1. Click the **Groups** tab so you can verify that the user is a part of the group that corresponds to your product profile. This user is also a member of a handful of other groups, including Contributors:
-
-   ![Group Membership](/help/implementing/developing/introduction/assets/s2s-groupmembership.png)
+1. Open the [Adobe Admin Console](https://adminconsole.adobe.com/).
+1. Select **AEM as a Cloud Service** under **Products and Services**.
+1. Create a product profile for the integration, or select an appropriate existing profile.
+1. Select **Add User** and add the technical account using the `email` from its credentials.
+1. Allow time for product-profile changes to propagate. Make an API call to AEM with an access token generated for the technical account. The product profile is synchronized as an AEM group, with the technical account as a member.
+1. On the appropriate AEM author instance, open **Tools** > **Security** > **Groups**. Find the product-profile group and verify that the technical account appears under **Members**. You can also check its group membership under **Tools** > **Security** > **Users**.
+1. Open **Settings** > **Security** > **Permissions**. Select the group corresponding to the product profile and configure the permissions required by your API calls.
+1. Verify the required API calls against each tier that the application accesses. Grant only the permissions needed by the integration.
 
 >[!NOTE]
 >
->Before mid-2023, before it was possible to create multiple credentials, customers were not guided to create a product profile in the Adobe Admin Console. As such, the technical account was not associated with a group other than "Contributors" in the AEM as a Cloud Service instance. For the sake of consistency, it is recommended that for this technical account, you create a product profile in the Adobe Admin Console as described above, and add the existing technical account to that group.
+>When replacing a JWT technical account with an OAuth Server-to-Server account, assign the new account to the required product profiles and verify its AEM permissions. Permissions on the old technical account are not automatically transferred to the new account.
 
-<u>**Set the Appropriate Group Permissions**</u>
-
-Finally, configure the group with the appropriate permissions necessary so you can invoke or lock down your APIs appropriately.
-
-1. Log on to the appropriate author instance, and navigate to **Settings** > **Security** > **Permissions**
-1. Search for the name of the group corresponding to the product profile in the left-hand pane (in this case Read-only APIs) and select it:
-
-   ![Search for Group](/help/implementing/developing/introduction/assets/s2s-searchforgroup.png)
-   
-1. Click the Edit button in the following window:
-
-   ![Edit permissions](/help/implementing/developing/introduction/assets/s2s-editpermissions.png) 
-
-1. Modify the permissions appropriately and click **Save**
-
-   ![Confirm editing of permissions](/help/implementing/developing/introduction/assets/s2s-confirmeditpermissions.png)
-
->[!INFO]
->
->Learn more about the Adobe Identity Management System (IMS) and AEM users and groups. See the [documentation](/help/security/ims-support.md).
+For more information about IMS and AEM users and groups, see [IMS support](/help/security/ims-support.md).
 
 ## Developer Flow {#developer-flow}
 
-Developers likely want to test using a development instance of their non-AEM application (either running on their laptop or hosted) that makes requests to a development AEM as a Cloud Service dev environment. However, because developers do not necessarily have IMS admin role permissions, Adobe cannot assume they can generate the JWT bearer described in the regular server-to-server flow. Therefore, Adobe provides a mechanism for a developer to generate an access token directly that can be used in requests to environments on AEM as a Cloud Service which they have access to. 
+For local testing, developers can generate a development access token directly in the AEM Developer Console without creating an OAuth Server-to-Server technical account. The token can be used to call AEM environments that the developer can access. Use OAuth Server-to-Server credentials, rather than a local development token, for unattended server-side applications.
 
-See the [Developer Guidelines documentation](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) for information about the required permissions to use the AEM as a Cloud Service developer console.
+See the [Developer Guidelines](development-guidelines.md#crxde-lite-and-developer-console) for the permissions required to use the AEM Developer Console.
 
 >[!NOTE]
 >
->The local development access token is valid for a maximum of 24 hours after which it must be regenerated using the same method.
-
-Developers may use this token to make calls from their non-AEM test application to an AEM as a Cloud Service environment. Typically, the developer uses this token with the non-AEM application on their own laptop. Also, the AEM as a Cloud is typically a non-production environment.
-
-The developer flow involves the following steps:
-
-* Generate an access token from the Developer Console
-* Call the AEM application with the access token.
-
-Developers can also make API calls to an AEM project running on their local machine, in which case an access token is not needed.
+>A local development access token is valid for a maximum of 24 hours. After expiration, generate another token using the same method.
 
 ### Generating the Access Token {#generating-the-access-token}
 
-1. Go to the **Local token** under **Integrations**
-1. Click **Get Local Development Token** in the Developer Console so you can generate an access token.
+1. In the AEM Developer Console, go to **Integrations** > **Local token**.
+1. Select **Get Local Development Token**.
 
 ### Call the AEM Application with an Access Token {#call-the-aem-application-with-an-access-token}
 
-Make the appropriate server-to-server API calls from the non-AEM application to an AEM as a Cloud Service environment, including the access token in the header. So for the "Authorization" header, use the value `"Bearer <access_token>"`.
+Use the local development access token as a bearer token in the `Authorization` header, as described in [Calling the AEM API](#calling-the-aem-api).
 
-## Refresh Credentials {#refresh-credentials}
+For an AEM project running on your local machine, an IMS access token is not needed.
 
-By default, the credentials on AEM as a Cloud Service expire after one year. To ensure service continuity, developers have the option of refreshing the credentials, extending their availability for an extra year.
+## Rotate Client Secrets {#refresh-credentials}
 
-To achieve this refresh extension, do the following:
+OAuth Server-to-Server credentials do not require annual certificate renewal. Rotate client secrets periodically and whenever a secret is exposed. Create a new secret, switch your applications to it, and only then revoke the old secret.
 
-* Use the **Add certificate** button under **Integrations** - **Technical Accounts** in the Developer Console, as shown below
+Creating and revoking secrets requires the secret values that you saved. The AEM Developer Console uses an entered secret only to authenticate the request with IMS and does not store it.
 
-  ![Credential Refresh](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
+>[!IMPORTANT]
+>
+>IMS requires at least one active secret. Create and verify a new secret before revoking the last active secret. To stop using the technical account entirely, delete the account instead.
 
-* After pressing the button, a set of credentials that includes a new certificate is generated. Install the new credentials on your off-AEM server and ensure that connectivity is as expected, without removing the old credentials.
-* Make sure that the new credentials are used instead of the old ones when generating the access token.
+1. **Create a new secret.** In **Integrations**, open the action menu beside the OAuth Server-to-Server account's name and select **Create new Secret**. This is the account-level menu, not a client secret's row menu.
+
+   ![OAuth Server-to-Server account action menu with Create new Secret highlighted](assets/dev-console/s2s-rotate-step-1-create-new-secret-menu.png)
+
+1. **Authenticate with an active secret.** In the **Create new Secret** dialog, enter the value of an active client secret for the account, then select **Create new Secret**.
+
+   ![Create new Secret dialog with the active client secret field and the Create new Secret button highlighted](assets/dev-console/s2s-rotate-step-2-create-new-secret-dialog.png)
+
+1. **Save the new secret.** The dialog shows the new secret once, with its `clientId`, `secretId`, `clientSecret`, and `scopes`. Download or copy it, store it securely, and close the dialog. Confirm that you want to close it only after saving the secret securely. After the dialog is closed, the new secret cannot be shown again.
+
+   ![New secret dialog with the client secret value hidden and Download credentials and Copy to clipboard highlighted](assets/dev-console/s2s-rotate-step-3-save-new-secret.png)
+
+1. **Switch applications to the new secret.** Replace the `technicalAccount.clientSecret` value in the credentials that every application instance and deployment uses with the new `clientSecret`. The other credential values do not change.
+
+   Request a new access token with the new secret and verify the required AEM API calls before proceeding. Both secrets remain active during the application cutover. Reusing a previously issued access token does not verify the new secret.
+
+1. **Select the old secret for revocation.** After all applications use the new secret, open the old secret's row menu and select **Revoke**. Check the secret ID to make sure that you have selected the old secret.
+
+   ![Old client secret's action menu with Revoke highlighted while both secrets are active](assets/dev-console/s2s-rotate-step-4-revoke-menu.png)
+
+1. **Confirm revocation.** In the **Revoke client secret** dialog, check the client secret ID to revoke, enter the value of that secret, and select **Revoke**. If you no longer have the secret value, contact Adobe support. Once revocation propagates through IMS, applications cannot use that secret to request new tokens. Existing access tokens might remain valid.
+
+   ![Revoke client secret dialog with the client secret field and the Revoke button highlighted](assets/dev-console/s2s-rotate-step-5-revoke-dialog.png)
+
+1. **Verify the result.** The old secret is listed as **Revoked**, while the new secret remains **Active**.
+
+   ![Client secret list showing the old secret as Revoked and the new secret as Active, with the revoked secret's Delete option highlighted](assets/dev-console/s2s-rotate-step-6-result.png)
+
+   After revocation takes effect, verify that the old secret cannot issue new access tokens and that the new secret can. Checking the displayed status alone does not verify IMS propagation.
+
+1. **Remove the revoked secret if no longer needed.** To remove the revoked secret from the list, open its row menu, select **Delete**, and confirm.
 
 ## Credentials Revocation {#credentials-revocation}
 
-If the private key is compromised, you must create credentials with a new certificate and new private key. After your application uses the new credentials so you can generate access tokens, you can revoke and delete the old certificates by doing the following:
+**Revoke** disables a selected secret for new token requests. It requires the value of the secret being revoked. Revocation can take time to propagate. Do not assume that revoking a secret immediately invalidates access tokens that were already issued.
 
-1. First, add the new key. This key generates credentials with a new private key and a new certificate. The new private key is marked in the user interface as **current** and is, therefore, used for all new credentials for this technical account going forward. The credentials associated with the older private keys are still valid until revoked. To achieve this revocation, select the three dots (**...**) under your current technical account, then select **Add new private key**:
+**Delete** on a revoked secret removes its metadata, such as the secret ID and revocation status, from the AEM Developer Console. It does not perform a separate IMS revocation and is not available for active secrets.
 
-   ![Add new private key](/help/implementing/developing/introduction/assets/s2s-addnewprivatekey.png)
+### Delete a Technical Account {#delete-a-technical-account}
 
-1. A new browse tab with the new credentials opens and the user interface is updated to show both private keys with the new one marked as **current**:
+Deleting a technical account revokes the account and all of its client secrets in IMS immediately. No new access tokens are issued for any credential under the account, and integrations that use it stop working once their current tokens expire. To restore access, you must create a new technical account, update your applications with its credentials, and assign the required permissions in AEM again.
 
-   ![Private keys in the UI](/help/implementing/developing/introduction/assets/s2s-twokeys.png)
+Account deletion cannot be undone. Confirm only after checking which applications depend on the account, and do not use it as an individual-secret rotation step.
 
-1. Install the new credentials on the non-AEM server and ensure connectivity works as expected. See [Server to Server Flow section](#the-server-to-server-flow) for details.
-1. Revoke the old certificate by selecting the three dots (**...**) to the right of the certificate, and selecting **Revoke**:
+1. In **Integrations**, open the action menu beside the technical account's name and select **Delete**.
 
-   ![Revoke certificate](/help/implementing/developing/introduction/assets/s2s-revokecert.png)
+   ![OAuth Server-to-Server account action menu with Delete highlighted](assets/dev-console/s2s-delete-step-1-menu.png)
 
-   Then, confirm the revocation in the following prompt by pressing the **Revoke** button:
+1. Review the **Delete technical account** dialog, then select **Delete**.
 
-   ![Revoke certificate confirmation](/help/implementing/developing/introduction/assets/s2s-revokecertificateconfirmation.png)
+   ![Delete technical account confirmation dialog](assets/dev-console/s2s-delete-step-2-dialog.png)
 
-1. Finally, delete the compromised certificate.
+## Migrate a JWT-Based Integration {#migrate-a-jwt-based-integration}
 
-### Note on Revocating Individual Certificates {#note-on-recovacting-individual-certificates}
+1. Create a new OAuth Server-to-Server technical account in the AEM Developer Console.
+1. Assign the new technical account to the required product profiles and configure its AEM permissions.
+1. Update the server-side application to request tokens using `client_credentials` instead of signing and exchanging a JWT.
+1. Verify new token generation and the required API calls using the new account.
+1. After all application instances use OAuth Server-to-Server, retire the old JWT credentials and delete the old technical account.
 
-For the JWT handshake (used to retrieve a bearer token) all that needs to be satisfied is that:
-
-1. You have the private key
-1. There are one or more active certificates present under the respective private key in the Developer Console
-1. During the retrieval of the token (JWT handshake), IMS checks that the JWT signature matches with any bound and active (not expired) certificate on record in our system, which you can see in the console.
-
-Adding a new certificate under a PK could make it seem that revoked certificates are still usable. In effect, all certificates under a PK are equivalent. If at one is active, all are considered active.
-
-If you consider this to be a security issue, you should create a separate private key, and revoke all certificates on the old private key.
+For certificate and private-key operations on the old account, refer to the [JWT legacy guide](generating-access-tokens-for-server-side-apis-jwt-legacy.md). Do not remove the old account before the replacement integration is verified.
