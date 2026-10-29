@@ -340,13 +340,13 @@ Validate file attachments in Adaptive Forms before or on submission using custom
 
 Now in Limited Availability (see note below for access), AEM as a Cloud Service supports [OpenTelemetry](/help/implementing/developing/introduction/opentelemetry-apm-integration.md). OTel is an open, industry-standard way to get traces, metrics, and logs together, sent to the APM provider of your choice. Also see advanced [custom instrumentation](/help/implementing/developing/introduction/opentelemetry-custom-instrumentation.md) documentation and [tutorials](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/observability-via-opentelemetry/opentelemetry-in-aem).
 
-To get on the list for access, email [aemcs-otel-access@adobe.com](mailto:aemcs-otel-access@adobe.com), describing where you intend on ingesting the data. 
+To get on the list for access, email [aemcs-otel-access@adobe.com](mailto:aemcs-otel-access@adobe.com), describing where you intend to ingest the data.
 
 #### Server-to-Server OAuth Credentials in AEM Developer Console (JWT Credentials are deprecated) {#devconsole-oauth}
 
 Service Account (JWT) credentials in the AEM Developer Console are deprecated in favor of OAuth Server-to-Server credentials. 
 
-Starting **November 4, 2026**, you can create OAuth Server-to-Server technical accounts in the AEM Developer Console. Your server-side application exchanges its client ID and client secret for an access token, so there is no JWT to sign and no private key or certificate to renew each year. While deprecated, the JWT-style credentials will be supported for the foreseeable future. For details, see [Generating Access Tokens for Server-Side APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
+Starting **November 4, 2026**, you can create OAuth Server-to-Server technical accounts in the AEM Developer Console. Your server-side application exchanges its client ID and client secret for an access token, so there is no JWT to sign and no private key or certificate to renew each year. While deprecated, the JWT-style credentials will be supported for the foreseeable future. For details, see [Generating Access Tokens for Server-Side APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md).
 
 #### Dispatcher Insights and Workflow Inspection Agentic Capabilities in CX Enterprise Coworker {#capabilities-cx}
 
@@ -362,7 +362,7 @@ Example prompts:
 
 [**AEM Dispatcher Insights**](/help/ai-in-aem/agentic-capabilities/brand-experience/development/use-cases.md#aem-dispatcher-insights) helps you understand how your Dispatcher and Apache web tier handle requests. Coworker can analyze cache performance, investigate traffic and delivery issues, and review your security configuration. It covers three areas:
 
-- **Caching and performance:** includes dispatcher cache hit ratio insights, query-parameter caching, cache headers and expiration, stale content and invalidation, slow responses.
+- **Caching and performance:** includes Dispatcher cache hit ratio insights, query-parameter caching, cache headers and expiration, stale content and invalidation, and slow responses.
 - **Traffic and request handling:** includes traffic patterns and bots, 4xx and 5xx errors, filter and endpoint routing, multi-site and hostname routing, redirects and vanity URLs, and header forwarding.
 - **Security:** includes sensitive-path exposure, security headers, permission-sensitive caching, and an overall review of your Dispatcher configuration.
 
@@ -393,7 +393,7 @@ For more information, see [AI-Assisted Code Migration to AEM as a Cloud Service]
 
 The AEM MCP Server now supports the Cloud Migration capabilities, used by the Cloud Migration Agent skill described earlier, which migrates AEM 6.5 (or earlier) Java-stack projects to AEM as a Cloud Service in the IDE.
 
-With this addition, the AEM MCP Server has reached parity wih the domain-specific MCP servers, which are now considered deprecated. Please configure your MCP Clients to reference the unified AEM MCP Server so you don't lose access.
+With this addition, the AEM MCP Server has reached parity with the domain-specific MCP servers, which are now considered deprecated. Configure your MCP clients to reference the unified AEM MCP Server so you don't lose access.
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
@@ -416,7 +416,7 @@ OpenTelemetry (OTel) is replacing Adobe’s built-in APM integration (New Relic)
 
 #### Deprecation of Domain-specific AEM MCP Server {#domain-mcp-deprecation}
 
-The [AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#aem-mcp-server) has reached parity with the [domain-specific MCP servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#mcp-servers-provided-by-aem), which are now deprecated. Please configure your MCP Clients to reference the AEM MCP Server by January 28, 2027 so you don't lose access.
+The [AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#aem-mcp-server) has reached parity with the [domain-specific MCP servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#mcp-servers-provided-by-aem), which are now deprecated. Configure your MCP clients to reference the AEM MCP Server by January 28, 2027 so you don't lose access.
 
 #### IMS Authentication Rich Errors {#ims-auth-rich-errors}
 
@@ -426,13 +426,13 @@ Instead of returning only an HTTP status code, these errors provide additional c
 
 #### Java 25 for Local Development {#java25-sdk}
 
-The AEM CS SDK now supports building and running projects with Java 25 for local development and validation. Your AEM license entitles you to download Oracle Java 25 from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=java*+25*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=8).
+The AEM Cloud Service SDK now supports building and running projects with Java 25 for local development and validation. Your AEM license entitles you to download Oracle Java 25 from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=java*+25*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=8).
 
 This is the first step toward Java 25 support in AEM as a Cloud Service. In the November release, Cloud Manager environments will let you opt in to Java 25 for the runtime, the project build, or both, so you can take advantage of performance improvements and modern Java features. Use the SDK now to validate your code and prepare for that release.
 
 #### Winter 2027 Removal of Deprecated Java APIs {#java-api-deprecation}
 
-On **March 31, 2027**, a set of deprecated Java APIs will be removed and it is critical to take action in order to achieve security compliance. Applications that have not removed APIs will not receive new features or bug fixes, and application stability and uptime may be negatively affected, and security risk exposure may increase.
+On **March 31, 2027**, a set of deprecated Java APIs will be removed, and it is critical to take action in order to achieve security compliance. Applications that have not removed APIs will not receive new features or bug fixes, and application stability and uptime may be negatively affected, and security risk exposure may increase.
 
 See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
 
@@ -450,7 +450,7 @@ See the [deprecation article](/help/release-notes/deprecated-removed-features.md
 
 +++
 
-#### Preparing for Java 25: AEM Cloud Service Runtime Upgrade Timeline
+#### Preparing for Java 25: AEM Cloud Service Runtime Upgrade Timeline {#java25-announcement}
 
 Java 25 is the next long-term support (LTS) release after Java 21, delivering improvements across performance, developer productivity, and security:
 
