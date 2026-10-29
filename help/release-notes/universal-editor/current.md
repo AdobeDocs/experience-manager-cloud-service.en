@@ -40,3 +40,4 @@ These are the release notes for the 29 October 2026 release of the Universal Edi
 * The properties rail now properly keeps focus on a newly selected component when a slow patch response arrives after the selection has changed and undo/redo now restores the component that was actually edited.
 * The plain-text configuration of a field is now respected during inline editing, so the rich-text toolbar and actions stay disabled for plain-text fields even when filters are configured.
 * The tab key is no longer trapped when no component is selected, and a sensible tab order is now used for overlays and the app iframe.
+* Reference fields no longer fall back to older pickers on AEM Cloud Service pages with no containers or content from multiple pages.
