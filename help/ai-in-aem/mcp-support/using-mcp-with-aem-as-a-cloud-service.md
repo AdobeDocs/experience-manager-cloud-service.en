@@ -87,7 +87,7 @@ Note that this list of high-level capabilities is different from the raw tool li
 
 >[!IMPORTANT]
 >
-> AEM's domain-specific MCP servers are now deprecated. Pplease switch usage to the [AEM MCP Server](#aem-mcp-server) to maintain access.
+> AEM's domain-specific MCP servers are now deprecated. Switch to the [AEM MCP Server](#aem-mcp-server).
 >
 
 +++ Expand for more information

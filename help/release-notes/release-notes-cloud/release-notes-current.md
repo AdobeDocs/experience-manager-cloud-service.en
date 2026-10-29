@@ -393,7 +393,7 @@ For more information, see [AI-Assisted Code Migration to AEM as a Cloud Service]
 
 The AEM MCP Server now supports the Cloud Migration capabilities, used by the Cloud Migration Agent skill described earlier, which migrates AEM 6.5 (or earlier) Java-stack projects to AEM as a Cloud Service in the IDE.
 
-With this addition, the AEM MCP Server has reached parity with the domain-specific MCP servers, which are now considered deprecated. Configure your MCP clients to reference the unified AEM MCP Server so you don't lose access.
+With this addition, the AEM MCP Server has reached parity with the domain-specific MCP servers, which are now considered deprecated. Configure your MCP clients to use the unified AEM MCP Server going forward.
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
@@ -416,7 +416,7 @@ OpenTelemetry (OTel) is replacing Adobe’s built-in APM integration (New Relic)
 
 #### Deprecation of Domain-specific AEM MCP Server {#domain-mcp-deprecation}
 
-The [AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#aem-mcp-server) has reached parity with the [domain-specific MCP servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#mcp-servers-provided-by-aem), which are now deprecated. Configure your MCP clients to reference the AEM MCP Server by January 28, 2027 so you don't lose access.
+The [AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#aem-mcp-server) has reached parity with the [domain-specific MCP servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#mcp-servers-provided-by-aem), which are now deprecated. Switch your MCP clients to the AEM MCP Server, which provides the same capabilities in a single endpoint.
 
 #### IMS Authentication Rich Errors {#ims-auth-rich-errors}
 

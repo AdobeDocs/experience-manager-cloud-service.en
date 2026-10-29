@@ -66,7 +66,7 @@ The functionality in the table below have been announced as deprecated, but have
 | [!DNL Foundation]       | Using YUI to compress/minify JavaScript client libraries. Adobe does not plan to further update the YUI library.| Adobe recommends customers to switch to Google Closure Compiler (GCC) for their implementation. |
 | [!DNL Foundation]       | Support for com.adobe.granite.oauth.server | Adobe IMS Integration |
 | [!DNL Foundation]       | Adobe’s built-in APM integration (New Relic) | Move to [OpenTelemetry](/help/implementing/developing/introduction/opentelemetry-apm-integration.md) by November 30, 2026 |
-| [!DNL Foundation]       | Domain-specific MCP servers | Remove by January 17, 2026 and use the [AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#aem-mcp-server) |
+| [!DNL Foundation]       | Domain-specific MCP servers | Switch to the [AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#aem-mcp-server) |
 | [!DNL Foundation]       | AEM Developer Console JWT credentials |  AEM Developer Console [Server-to-Server OAuth credentials](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md). No removal date declared.|
 
 ## Removed Functionality {#removed-features}
