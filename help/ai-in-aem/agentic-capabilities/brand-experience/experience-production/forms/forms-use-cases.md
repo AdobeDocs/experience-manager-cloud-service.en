@@ -33,7 +33,7 @@ This capability is part of [Experience Production](/help/ai-in-aem/agentic-capab
 
 Some of the key benefits of the Forms Agentic Capability include:
 
-* **Faster form authoring**: Generate an Adaptive Form from a plain-language description, an attached brief, a screenshot, or a PDF, or import a PDF or XDP stored in AEM DAM.
+* **Faster form authoring**: Generate an Adaptive Form from a plain-language description, an attached brief, a screenshot, or a PDF, or import a PDF or XDP stored in AEM's Digital Assets Management (DAM) repository.
 
 * **Quick rules and validation authoring**: Create or edit conditional logic, calculations, field dependencies, validation rules, and service calls through natural language instead of manual rule configuration.
 
@@ -69,7 +69,7 @@ The Forms Agentic Capability provides the following key skills:
 
 * **PDF and XDP import**
 
-  Convert a PDF or XDP stored in AEM DAM into an Adaptive Form using `aem-forms-adaptiveform-import`. This is separate from creating a form from a file attached to chat.
+  Ask Coworker Chat to convert a PDF or XDP stored in AEM DAM into an Adaptive Form. This is separate from creating a form from a file attached to chat.
 
 * **Form field and layout editing**
 
@@ -77,11 +77,15 @@ The Forms Agentic Capability provides the following key skills:
 
 * **Business logic and validation authoring**
 
-  Create rules using `aem-forms-adaptiveform-rule-create`, or change a stored rule using `aem-forms-adaptiveform-rule-edit`. Use natural language to define show/hide conditions, calculations, validation, and event-driven service calls instead of manually configuring the [rule editor for Core Components](/help/forms/rule-editor-core-components.md) or [rules for Edge Delivery Services](/help/edge/docs/forms/rules-forms.md).
+  Describe the rule you need or the behavior you want to change in an existing rule. Use natural language to define show/hide conditions, calculations, validation, and event-driven actions instead of manually configuring the [rule editor for Core Components](/help/forms/rule-editor-core-components.md) or [rules for Edge Delivery Services](/help/edge/docs/forms/rules-forms.md).
+
+* **Call services from form rules**
+
+  Call an existing Form Data Model (FDM) service or REST API integration when a form event occurs. Describe the inputs, which response values should populate fields, and what should happen on success or failure.
 
 * **REST API integrations**
 
-  Create a REST API integration or change its endpoint, HTTP method, headers, or input and output mappings using `aem-forms-adaptiveform-rule-create`. See the requirements and sample prompts under [Common use cases and sample prompts](#use-cases-prompts).
+  Ask to create a REST API integration or change its endpoint, HTTP method, headers, or input and output mappings. See the requirements and sample prompts under [Common use cases and sample prompts](#use-cases-prompts).
 
 * **Form submission configuration**
 
@@ -141,7 +145,9 @@ The agentic capability automatically discovers the templates and themes availabl
 
 For a PDF or XDP import, also provide the source asset's `/content/dam/...` path, the new form's name, and its destination folder. Edge Delivery Services imports require the GitHub repository URL for your Forms project. For Core Components imports, the capability uses the templates and themes available on the author instance.
 
-For service-call rules, identify the service, the form event that should invoke it, and how its inputs and response values map to form fields. Form Data Model services must already be configured. REST API integrations can be selected from existing integrations or created from API details as described below.
+For changes to an existing form, provide its URL or path and the AEM author URL. Create any fields needed by a rule before asking to add the rule.
+
+For service-call rules, identify the service, the form event that should invoke it, and how its inputs and response values map to form fields. FDM services must already be configured. REST API integrations can be selected from existing integrations or created from API details as described below.
 
 ## Common use cases and sample prompts {#use-cases-prompts}
 
@@ -195,13 +201,11 @@ Sample prompts:
 
 **Business logic and validation authoring**
 
-The Forms Agentic Capability can create conditional logic, calculations, field dependencies, and validation rules using natural language. You do not need to write code or select an authoring mode. The capability generates the rules for you; you can review them in the form's rule editor.
+The Forms Agentic Capability can create conditional logic, calculations, field dependencies, and validation rules using natural language. You do not need to write code. Describe the behavior you want, then review the generated rules in the form's rule editor.
 
-You can also change an existing rule's condition or actions, switch the service it calls, or add success and failure handlers. Identify the field and the behavior to change. The capability updates that rule while retaining the field's other rules. Refresh the form editor after a rule change to see the saved result.
+You can also change an existing rule's condition or actions. Identify the field and the behavior to change. The capability updates that rule while retaining the field's other rules. Refresh the form editor after a rule change to see the saved result.
 
-Rules can invoke a configured Form Data Model service or REST API integration when an event occurs, such as clicking a button. Specify where each service input comes from, which response values should populate fields, and what should happen on success or failure. For background on service mappings and handlers, see [Invoke Service in the rule editor](/help/forms/invoke-service-enhancements-rule-editor.md).
-
-If a referenced field, value, or service is ambiguous, the capability asks for clarification rather than choosing a match. Create the required fields before asking it to add rules.
+If a referenced field or value is ambiguous, the capability asks for clarification rather than choosing a match.
 
 Sample prompts:
 
@@ -210,8 +214,29 @@ Sample prompts:
 * Hide the Shipping Address section when Same as Billing Address is checked.
 * Calculate Total as Quantity multiplied by Unit Price.
 * Change the rule on Company so it is shown when Employee Type is Contractor or Partner.
-* When Lookup is clicked, call `<service>` with Customer ID as input and populate Customer Name from the response.
-* Add a failure handler to the Lookup button's service rule to clear Customer Name.
+
+**Call services from form rules**
+
+Use a form rule to call a service when an event occurs. Supported events include button clicks, field-value changes, initialization, and submission success or failure. For example, look up a customer when Customer ID changes and populate the customer's name and address from the response. This is different from configuring where the form sends data on submission.
+
+You can call either:
+
+* **An existing FDM service**: Use an operation exposed by a configured FDM, including services backed by REST, SOAP, OData, or a database. For non-REST services, first [configure the data source](/help/forms/configure-data-sources.md) and [create the FDM](/help/forms/create-form-data-models.md). Coworker can use the configured service; it does not create these non-REST connections.
+* **A REST API integration**: Use an existing integration or ask to create one from API details. New integrations created through Coworker support APIs without authentication only. See the REST API integrations use case below for requirements.
+
+In your request, describe the triggering event and the service operation. Say where each required input comes from, such as a form field, a fixed value, or a calculation. Identify the response values to map to form fields and the actions to take on success or failure, such as populating fields, clearing outdated values, or showing an error message. You can also describe conditions for those actions. For background on mappings and handlers, see [Invoke Service in the rule editor](/help/forms/invoke-service-enhancements-rule-editor.md).
+
+The capability checks available services and their inputs and outputs. If several operations match or a required input is missing, it asks for clarification. For operations that create, update, or delete data, explicitly identify the operation or confirm it when asked.
+
+You can change an existing service-call rule without recreating it. Identify the field and the behavior to change, such as calling a different service or adding an action when the call fails.
+
+Sample prompts:
+
+* When Lookup is clicked, call the customer lookup service with Customer ID as input. On success, populate Customer Name and Email from the response. On failure, clear those fields and show an error message.
+* When Product Code changes, use the configured product REST API integration to look up that code and populate Product Name and Unit Price from the response.
+* When Check Stock is clicked, call the inventory lookup service in our FDM with Product Code as input. Populate Available Quantity from the response.
+* Change the Lookup button's existing rule to use the customer directory service instead, keeping the other actions unchanged.
+* Add an action to the Lookup button's existing service rule to clear Customer Name and show an error message if the call fails.
 
 **REST API integrations**
 
@@ -219,7 +244,7 @@ The Forms Agentic Capability can create a REST API integration from a cURL comma
 
 Integrations created through Coworker run in the browser and support APIs without authentication only. The API must allow cross-origin resource sharing (CORS) from the form's host. Do not paste passwords, tokens, or API keys into chat. For APIs that require authentication, use the [API Integration configuration in the rule editor](/help/forms/api-integration-in-rule-editor.md).
 
-You can also ask to change an existing integration's URL, HTTP method, headers, or input and output mappings. Authentication, encryption, renaming, and client/server execution settings must be changed in the rule editor, not through this capability.
+You can also ask to change an existing integration's URL, HTTP method, content type, array-response setting, or input and output mappings, including query parameters, headers, path parameters, and request-body values. Existing authentication settings are preserved. Authentication, encryption, renaming, and client/server execution settings must be changed in the rule editor, not through this capability.
 
 >[!IMPORTANT]
 >
