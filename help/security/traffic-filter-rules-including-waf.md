@@ -4,6 +4,18 @@ description: Configuring Traffic Filter Rules including Web Application Firewall
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 
 # Traffic filter rules including WAF rules {#traffic-filter-rules-including-waf-rules}
@@ -18,6 +30,8 @@ Traffic filter rules block or allow requests at the CDN layer, which is useful i
 Many of these traffic filter rules are available to all AEM as a Cloud Service Sites and Forms customers. As *standard traffic filter rules*, they operate on request properties: IP, hostname, path, and user agent. Standard traffic filter rules include rate limit rules to guard against traffic spikes.
 
 A subcategory of traffic filter rules requires either an Extended Security (formerly named WAF-DDoS Protection) or Extended Security for Healthcare (formerly named Enhanced Security) license. These powerful rules are known as WAF (Web Application Firewall) traffic filter rules (or *WAF rules*) and have access to the [WAF Flags](#waf-flags-list) described later in this article.
+
+All traffic filter rules, standard and WAF, share a common configuration syntax, described in [Rules Syntax](/help/implementing/dispatcher/cdn-configuring-traffic.md#configuration-syntax) in the *Configuring Traffic at the CDN* article.
 
 Traffic filter rules can be deployed via Cloud Manager config pipelines to dev, stage, and production environment types. The configuration file can be deployed to Rapid Development Environments (RDEs) using command line tooling.
 
@@ -118,6 +132,8 @@ The following is a high-level recommended end-to-end process for determining the
 ## Traffic filter rules syntax {#rules-syntax}
 
 To match patterns such as IP, user agent, headers, hostname, geo, or URL, you can configure *traffic filter rules*.
+
+The general rule syntax—the `when` condition structure with its getters and predicates, shared by all CDN rule types—is described in [Rules Syntax](/help/implementing/dispatcher/cdn-configuring-traffic.md#configuration-syntax) in the *Configuring Traffic at the CDN* article. This section explains the parts specific to traffic filter rules: their actions, WAF flags, and rate limits.
 
 Customers with an Extended Security or Extended Security for Healthcare license configure *WAF rules* that reference [WAF flags](#waf-flags-list).
 

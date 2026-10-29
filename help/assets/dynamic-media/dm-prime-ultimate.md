@@ -4,6 +4,12 @@ description: Learn more about Dynamic Media Prime and Ultimate, their benefits, 
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Dynamic Media Prime and Ultimate {#dynamic-media-prime-ultimate}
 

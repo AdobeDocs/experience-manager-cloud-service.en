@@ -1,11 +1,20 @@
 ---
 title: Authoring Targeted Content Using Targeting Mode
-description:  Targeting mode and the Target component provide tools for creating content for experiences
+description: Targeting mode and the Target component provide tools for creating content for experiences
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Authoring Targeted Content Using Targeting Mode {#authoring-targeted-content-using-targeting-mode}
 
@@ -624,12 +633,13 @@ If you select Adobe Target as the engine:
 |Context Params|Select Add field to configure additional context parameters (same as what is available in Target framework). Context parameters added to the component apply only to the component and not to other component as would be the case if you added context parameters directly to the framework.|
 |Static Params|Select Add field to configure additional static parameters (same as what is available in Target framework). Static parameters added to the component apply only to the component and not to other component as would be the case if you added static parameters directly to the framework. Static parameters do not come from context (client context of content hub).|
 
-   >[!NOTE]
-   >
-   >When you select a component and make it target-able, AEM also replaces the component and injects an Adobe Target component. (The Adobe Target component is not only used when you add it manually to the page, but also when you target an existing component.)
-   >
-   >You select **Adobe Campaign** as the engine if you are integrating AEM with Adobe Campaign. See Integrating AEM with Adobe Campaign for more information.
-   >
-   >Select **ContextHub** as the engine if you are using ContextHub for targeting. See Configuring ContextHub for more information.
-   <!--You select **Adobe Campaign** as the engine if you are integrating AEM with Adobe Campaign. See [Integrating AEM with Adobe Campaign](/help/sites-administering/campaign.md) for more information.-->
-   <!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub](/help/sites-administering/contexthub-config.md).-->
+>[!NOTE]
+>
+>When you select a component and make it target-able, AEM also replaces the component and injects an Adobe Target component. (The Adobe Target component is not only used when you add it manually to the page, but also when you target an existing component.)
+>
+>You select **Adobe Campaign** as the engine if you are integrating AEM with Adobe Campaign. See Integrating AEM with Adobe Campaign for more information.
+>
+>Select **ContextHub** as the engine if you are using ContextHub for targeting. See Configuring ContextHub for more information.
+
+<!--You select **Adobe Campaign** as the engine if you are integrating AEM with Adobe Campaign. See [Integrating AEM with Adobe Campaign](/help/sites-administering/campaign.md) for more information.-->
+<!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub](/help/sites-administering/contexthub-config.md).-->

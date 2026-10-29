@@ -6,6 +6,20 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Managing Content Fragment Models {#managing-content-fragment-models}
 
@@ -27,6 +41,10 @@ Content Fragment Models in Adobe Experience Manager (AEM) as a Cloud Service def
 >[!NOTE]
 >
 >Content Fragments are stored as **Assets**. Content Fragment Models are primarily managed from the **Content Fragments** console, but can also be managed from the [Assets](/help/assets/content-fragments/content-fragments-managing.md) console and the option [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) that is available from **Tools** - **General**.
+
+>[!CAUTION]
+>
+>Take care with your filter settings when [deploying your Content Fragment Models and Persisted Queries in Content Packages](/help/headless/deployment/content-packages.md).
 
 ## How to work with Content Fragment Models {#how-to-work-with-content-fragment-models}
 

@@ -3,6 +3,12 @@ title: New Video Viewer
 description: The New Video Viewer in Dynamic Media provides an enhanced video playback experience with improved performance, accessibility, and configurability.
 role: User
 exl-id: c819c6b3-bb7c-4d0e-b745-62b42f4ecd5f
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # New Video Viewer in Dynamic Media {#new-video-viewer-dynamic-media}
 
@@ -23,7 +29,7 @@ The New Video Viewer is intended for organizations that require an enhanced and 
 
 > **NOTE**
 >
-> The New Video Viewer is a limited availability feature. You can get it enabled by creating a [support ticket](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+> The New Video Viewer is a limited availability feature. You can get it enabled by creating a [support ticket](https://helpx.adobe.com/business/enterprise.html).
 
 
 ## How the New Video Viewer works {#how-it-works}
@@ -61,8 +67,6 @@ To enable or disable the New Video Viewer, contact Adobe Customer Care.
 
 ## Preview the New Video Viewer {#preview}
 
-Execute the following steps to preview the New Video Viewer from the asset details page:
-
 1. Navigate to **Assets** > **Files**, and open the folder containing the video asset.
 2. Click the video asset to open the asset details page.
 3. In the left panel, click **Viewers**.
@@ -76,8 +80,6 @@ The New Video Viewer is available through the existing **Dynamic Media** compone
 
 ### Add the Dynamic Media component
 
-Execute the following steps to add a video using the Dynamic Media component:
-
 1. Open the page in the **Sites editor**.
 2. Drag the **Dynamic Media** component to the required location on the page.
 3. Select the **Dynamic Media** component on the page.
@@ -87,8 +89,6 @@ Execute the following steps to add a video using the Dynamic Media component:
 ![Drag Dynamic Media component](assets/drag-component.jpeg)
 
 ### Configure the viewer
-
-Execute the following steps to configure the viewer preset:
 
 1. Select the **Dynamic Media** component on the page.
 2. Click **Configure** in the component toolbar.
@@ -106,7 +106,7 @@ The video loads on the page using the New Video Viewer.
 
 > **Note:** The New Video Viewer does not automatically replace existing videos. Users must manually select **Video (new)** in the **Viewer Preset** when using the Dynamic Media component, or update direct URLs to point to the New Video Viewer where needed.
 
-### Migrating videos using direct URLs
+### Migrate videos using direct URLs
 
 If your videos are accessed via direct URLs instead of the Dynamic Media component, you can switch them to the New Video Viewer by updating the URL. For example: `https://s7d1.scene7.com/dmviewers/html5/VideoViewer.html?asset=<video-asset>`
 
@@ -155,13 +155,13 @@ The New Video Viewer emits the following events during playback:
 | fullscreen | Enter fullscreen |
 | un_fullscreen | Exit fullscreen |
 
-## Handling events in the parent window {#handling-events}
+## Event handling in the parent window {#handling-events}
 
 The New Video Viewer sends playback-related messages to the parent page during video interactions.
 
 To handle these events, the parent application must listen for browser message events and validate the message origin before processing the data.
 
-The event payload includes information such as the event type, playback state, current playback time, and additional metadata. These events can be used to support analytics tracking, custom interactions, or integration with external systems.
+The event payload includes the event type, playback state, current playback time, and metadata. These events can be used to support analytics tracking, custom interactions, or integration with external systems.
 
 Adobe recommends validating the message origin to ensure that events are processed only from trusted Dynamic Media domains.
 
@@ -169,12 +169,12 @@ Adobe recommends validating the message origin to ensure that events are process
 
 The Video Engagement Report provides analytics metrics for videos played using the New Video Viewer in Dynamic Media. The report delivers aggregated performance data for the specified month and supports monthly reporting.
 
-Reports are generated upon request. To request a report, create a [support ticket](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) and provide the following details:
+Reports are generated upon request. To request a report, create a [support ticket](https://helpx.adobe.com/business/enterprise.html) and provide the following details:
 
 * Month of report – Specify the month for which the report is required (for example, January 2026).
 * Delivery email address – Email address of the group (recommended) or individual to deliver the report
 
-The report provides per-video engagement metrics, including views, impressions, watch time, completion rate, and engagement score.
+The report provides per-video engagement metrics, such as views, impressions, watch time, completion rate, and engagement score.
 
 ### Report format
 

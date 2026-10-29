@@ -5,10 +5,18 @@ feature: Asset Management
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Enable [!DNL Dynamic Media] Prime and Ultimate {#enable-dynamic-media-prime-and-ultimate}
 
-[!DNL Adobe Experience Manager] as a Cloud Service enables you to access [!DNL Dynamic Media] Prime and Ultimate offerings to streamline your digital workflows and optimize content management. See [Dynamic Media Prime and Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md) to understand their benefits and the key differences between them.
+[!DNL Adobe Experience Manager] as a Cloud Service enables you to access [!DNL Dynamic Media] Prime and Ultimate offerings to streamline your digital workflows and optimize content management. To understand their benefits and the key differences between them, see [Dynamic Media Prime and Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md).
 
 This article provides the end-to-end workflow to enable the [!DNL Dynamic Media] Prime and Ultimate offerings.
 
@@ -34,17 +42,15 @@ If you need to enable [!DNL Dynamic Media Prime], see quick links provided in [E
 
 The first step in the process of enabling [!DNL Dynamic Media] Ultimate is to activate [[!DNL Dynamic Media] with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) for your Cloud Service environment.
 
-#### Prepare yourself to get started {#prerequisites}
+#### Get started {#prerequisites}
 
-Ensure that you fulfil the following requirements before starting the activation process:
+Ensure that you fulfill the following requirements before starting the activation process.
 
 1. [Access to Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. [Your program includes [!DNL Dynamic Media] solutions](#configure-dynamic-media-solutions).
-1. You have [!DNL Dynamic Media] Prime or Ultimate license.
+1. You have a [!DNL Dynamic Media] Prime or Ultimate license.
 
 #### Enable [!DNL Dynamic Media with OpenAPI] capabilities in your Cloud Service environment {#enable-dynamic-media-with-openapi-capabilites-in-your-CS-environment}
-
-Execute these steps to enable [!DNL Dynamic Media with OpenAPI] for your cloud service environment:
 
 1. [Navigate to the Cloud Manager UI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager). 
 
@@ -54,7 +60,7 @@ Execute these steps to enable [!DNL Dynamic Media with OpenAPI] for your cloud s
 
    ![activate dynamic media with OpenAPI capabilities](/help/assets/assets/activate-adv-capabiliites-of-dm-openAPI.png)
 
-1. Click **[!UICONTROL Activate]** on the confirmation dialog to start the [!DNL Dynamic Media with OpenAPI] activation process. After successful activation, the Cloud Manager displays the following status updates:
+1. Click **[!UICONTROL Activate]** on the confirmation dialog to start the [!DNL Dynamic Media with OpenAPI] Activation process. After successful activation, the Cloud Manager displays the following status updates:
     1. **[!UICONTROL Environment stage]**: **[!UICONTROL Running]**
     1. ![DM activated](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media]**: **[!UICONTROL OpenAPI capabilities are activated]**
     
@@ -85,12 +91,12 @@ Alternatively, execute these steps to restart the activation process:
 
 Configure [!UICONTROL Dynamic Media] solutions to use the basic and advanced capabilities of [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) on existing or new environments available in Cloud Manager.
 
-#### Prepare yourself to get started {#prerequisites-to-configure-dynamic-media-solutions}
+#### Prerequisites for getting started {#prerequisites-to-configure-dynamic-media-solutions}
 
 Ensure you have the following to configure [!UICONTROL Dynamic Media] solutions:
 
 1. [Access to Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
-1. You have [!DNL Dynamic Media] Ultimate license.
+1. You have a [!DNL Dynamic Media] Ultimate license.
 
 #### Configure [!DNL Dynamic Media] solutions for asset delivery {#configure-dynamic-media-solutions-for-asset-delivery}
 
@@ -104,11 +110,11 @@ Execute the following steps:
 
    ![set up for production](/help/assets/assets/set-up-for-prod.png)
 
-See [Activate [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi) to start using the capabilities of [!DNL Dynamic Media] with OpenAPI capabilities in your environment.
+To start using the capabilities of [!DNL Dynamic Media] with OpenAPI capabilities in your environment, see [Activate [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi).
 
 ### Access Dynamic Media APIs {#access-dynamic-media-apis}
 
-After [enabling Dynamic Media with OpenAPI](#activate-dynamic-media-with-openapi), a `delivery` instance gets created. Click the delivery instance to view the `AEM Assets DM OpenAPI Users - delivery  - Program xxxx - Environment yyyy` product profile. The product profile already has **AEM Dynamic Media enable API Services** enabled by default.
+After [enabling Dynamic Media with OpenAPI](#activate-dynamic-media-with-openapi), a `delivery` instance gets created. Click the delivery instance to view the `AEM Assets DM OpenAPI Users - delivery  - Program xxxx - Environment yyyy` product profile. The product profile already has **AEM Dynamic Media enabled API Services** enabled by default.
 
    ![Dynamic Media API Services](/help/assets/assets/dynamic-media-api-services.png)
 
@@ -124,19 +130,16 @@ After [enabling Dynamic Media with OpenAPI](#activate-dynamic-media-with-openapi
 
 ### Create and list [!DNL Dynamic Media] companies {#create-and-list-dynamic-media-companies}
 
-Create and list [!DNL Dynamic Media] companies in your AEM cloud service environment to manage configurations within your AEM environment. 
+Create and list [!DNL Dynamic Media] companies in your AEM Cloud Service environment to manage configurations within your AEM environment. 
 
-#### Prepare yourself to get started {#prerequisites-to-create-and-list-dynamic-media-companies}
+#### Prerequisites for getting started {#prerequisites-to-create-and-list-dynamic-media-companies}
 
 To see the existing companies (accounts) or add a new [!DNL Dynamic Media] company (account) in your IMS org, you must have: 
 
-1. [Access to Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
-
-1. You have [!DNL Dynamic Media] Ultimate license.
+* [Access to Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
+* You have [!DNL Dynamic Media] Ultimate license.
 
 #### Create and list [!DNL Dynamic Media] companies in your IMS organization {#create-and-list-dynamic-media-companies-in-your-ims-organisation}
-
-Execute these steps to create and list a new [!DNL Dynamic Media] company (account) that can be configured within your [!DNL AEM] environment:
 
 1. Navigate to the [Cloud Manager license page](https://experience-stage.adobe.com/#/@ssahnichstage/cloud-manager/license).
 
@@ -150,11 +153,11 @@ Execute these steps to create and list a new [!DNL Dynamic Media] company (accou
 
    ![initiated Dynamic Media company creation](/help/assets/assets/dm-company-creation-initiated.png)
 
-1. **Optional:** Click ![info icon](/help/assets/assets/info-icon-solid-black.svg) to see the company's details. The **[!UICONTROL STATUS]** updates to **[!UICONTROL Ready]**, when the company is created. 
+1. **Optional:** Click ![info icon](/help/assets/assets/info-icon-solid-black.svg) to see the company's details. The **[!UICONTROL STATUS]** updates to **[!UICONTROL Ready]** when the company is created. 
 
    ![Dynamic Media company information](/help/assets/assets/dm-company-information.png)
 
-1. As a Dynamic Media Administrator, check your mailbox for a welcome email that includes a list of steps to [configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#architecture-diagram-of-dynamic-media) company in your [!DNL AEM] Cloud Service environment to get started.
+1. As a Dynamic Media administrator, check your mailbox for a welcome email that includes a list of steps to [configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#architecture-diagram-of-dynamic-media) company in your [!DNL AEM] Cloud Service environment to get started.
 
    ![welcome email](/help/assets/assets/welcome-email.png)
 
@@ -169,7 +172,7 @@ If [!DNL Dynamic Media] company creation fails, execute the following steps base
 
    
 
-1. If **[!UICONTROL Status]** is failed, then retry based on the reason of failure.
+1. If **[!UICONTROL Status]** is failed, then retry based on the reason for failure.
 
    ![failed status](/help/assets/assets/company-creation-failure-status.png){width="380" align="center"}
 
@@ -177,9 +180,9 @@ If [!DNL Dynamic Media] company creation fails, execute the following steps base
 
 While AEM as a Cloud Service comes with a default domain, you can customize it as per your needs. Attach a custom domain to the delivery tier using Cloud Manager.
 
-#### Prepare yourself to get started {#prerequisites-to-configure-custom-domain-in-delivery-tier}
+#### Prerequisites for getting started {#prerequisites-to-configure-custom-domain-in-delivery-tier}
 
-Ensure that you fulfil the following requirements before starting the configuration process:
+Ensure that you fulfill the following requirements before starting the configuration process:
 
 1. [Access to Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. [Already activated [!DNL Dynamic Media with OpenAPI] in your environment](#activate-dynamic-media-with-openapi).
@@ -188,13 +191,11 @@ Ensure that you fulfil the following requirements before starting the configurat
 
 #### Configure custom domain in delivery tier using Cloud Manager {#configure-custom-domain-in-delivery-tier-using-cloud-manager}
 
-Execute the following steps in Cloud Manager to configure a custom domain in the delivery tier: 
-
 1. [Add a customer managed SSL certificate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate#add-customer-managed-ssl-cert).
 
 1. [Add a custom domain name](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings).
 
-1. Navigate to the environment details page and [add a CDN configuration](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping). While adding the configuration, select **[!UICONTROL Delivery]** in the **[!UICONTROL Tier]** field in the **[!UICONTROL Configure CDN]** dialog box.
+1. Navigate to the environment details page and [add a CDN configuration](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping). While adding the configuration, select **[!UICONTROL Delivery]** in the **[!UICONTROL Tier]** field of the **[!UICONTROL Configure CDN]** dialog box.
 
    ![Configure CDN](/help/assets/assets/select-delivery-tier-in-configure-cdn-form.png)
 
@@ -206,11 +207,11 @@ Execute the following steps in Cloud Manager to configure a custom domain in the
 
    ![go live readiness option](/help/assets/assets/go-live-readiness-option.png)
 
-1. Execute the **[!UICONTROL Configure CNAME]** steps to map `cdn.adobeaemcloud.com` (CNAME record) in the DNS record of the DNS service provider. This mapping ensures that requests received at the custom domain are redirected to Adobe's CDN. 
+1. Run the **[!UICONTROL Configure CNAME]** steps to map `cdn.adobeaemcloud.com` (CNAME record) in the DNS record of the DNS service provider. This mapping ensures that requests received at the custom domain are redirected to Adobe's CDN. 
 
    ![go live readiness dialogbox](/help/assets/assets/go-live-readiness-dialogbox.png){width="500"}
 
-1. Click **[!UICONTROL Ok]**, the **[!UICONTROL STATUS]** updates to **[!UICONTROL Verified]**. The custom domain is ready to use in the delivery URL. 
+1. Click **[!UICONTROL OK]**, the **[!UICONTROL STATUS]** updates to **[!UICONTROL Verified]**. The custom domain is ready to use in the delivery URL. 
 
 
    ![Configure CDN](/help/assets/assets/cdn-configurations-varified.png)
@@ -303,9 +304,9 @@ Activating Dynamic Media with OpenAPI requires three prerequisites: access to Cl
 
 To activate Dynamic Media with OpenAPI, navigate to the Cloud Manager UI and open the environment details page. In the Environment Information section, locate the Dynamic Media row and click Click to activate. Click Activate on the confirmation dialog to start the activation process. After successful activation, Cloud Manager displays the environment stage as Running and the Dynamic Media status as OpenAPI capabilities are activated.
 
-### What should I do if Dynamic Media with OpenAPI activation fails? {#dynamic-media-openapi-activation-failure}
+### What to do if Dynamic Media with OpenAPI Activation fails? {#dynamic-media-openapi-activation-failure}
 
-If Dynamic Media with OpenAPI activation fails, Cloud Manager displays the environment stage as DM with OpenAPI Failed and the Dynamic Media status as OpenAPI capabilities failed to activate. To retry, click Click to retry on the environment details page. Alternatively, navigate to the page listing all environments, click the more options icon at the end of the environment row, and select Retry DM with OpenAPI Activation to restart the process.
+If Dynamic Media with OpenAPI Activation fails, Cloud Manager displays the environment stage as DM with OpenAPI Failed and the Dynamic Media status as OpenAPI capabilities failed to activate. To retry, click Click to retry on the environment details page. Alternatively, navigate to the page listing all environments, click the more options icon at the end of the environment row, and select Retry DM with OpenAPI Activation to restart the process.
 
 ### What are the prerequisites for configuring Dynamic Media solutions? {#configure-dynamic-media-solutions-prerequisites}
 
@@ -317,7 +318,7 @@ To add the Dynamic Media solution to a program, create a new program or navigate
 
 ### How do I access Dynamic Media APIs after enabling Dynamic Media with OpenAPI? {#dynamic-media-apis-faqs}
 
-After enabling Dynamic Media with OpenAPI, a delivery instance is created in Adobe Admin Console. Click the delivery instance to view the AEM Assets DM OpenAPI Users product profile, which has AEM Dynamic Media enable API Services enabled by default. To access the APIs, create a new project in Adobe Developer Console and use the AEM Dynamic Media API card. Authentication options include Server-to-Server authentication, Web App credentials, or SPA credentials. Before accessing the API, the user must be added to the AEM Assets DM OpenAPI Users delivery product profile for the relevant program and environment.
+After enabling Dynamic Media with OpenAPI, a delivery instance is created in Adobe Admin Console. Click the delivery instance to view the AEM Assets DM OpenAPI Users product profile. This profile has AEM Dynamic Media enabled API Services enabled by default. To access the APIs, create a new project in Adobe Developer Console and use the AEM Dynamic Media API card. Authentication options include Server-to-Server authentication, Web App credentials, or SPA credentials. Before accessing the API, the user must be added to the AEM Assets DM OpenAPI Users delivery product profile for the relevant program and environment.
 
 ### What are the prerequisites for creating a Dynamic Media company? {#create-dynamic-media-company-prerequisites}
 
@@ -325,16 +326,16 @@ Creating a Dynamic Media company requires access to Cloud Manager and a valid Dy
 
 ### How do I create a new Dynamic Media company in my IMS organization? {#create-dynamic-media-company}
 
-To create a new Dynamic Media company, navigate to the Cloud Manager license page and click Add Company. In the Create Dynamic Media Company dialog box, specify a unique company name, select a company region, and add company admin email IDs separated by commas. Click Create to initiate company creation — a new row is added to the Dynamic Media companies section with a status of Setting up. When creation is complete, the status updates to Ready. The Dynamic Media Administrator receives a welcome email with steps to configure the Dynamic Media company in the AEM Cloud Service environment.
+To create a new Dynamic Media company, navigate to the Cloud Manager license page and click Add Company. In the Create Dynamic Media Company dialog box, specify a unique company name, select a company region, and add company admin email IDs separated by commas. Click Create to initiate company creation — a new row is added to the Dynamic Media companies section with a status of Setting up. When creation is complete, the status updates to Ready. The Dynamic Media administrator receives a welcome email with steps to configure the Dynamic Media company in the AEM Cloud Service environment.
 
-### What should I do if Dynamic Media company creation fails? {#dynamic-media-company-creation-failure}
+### What to do if Dynamic Media company creation fails? {#dynamic-media-company-creation-failure}
 
-If Dynamic Media company creation fails, the action to take depends on the status displayed. If the status is Pending, raise the issue with the Adobe customer support team for resolution. If the status is Failed, retry the creation based on the reason of failure shown. Company creation failure is separate from activation failure — both have their own retry mechanisms in Cloud Manager.
+If Dynamic Media company creation fails, the action to take depends on the status displayed. If the status is Pending, raise the issue with the Adobe customer support team for resolution. If the status is Failed, retry the creation based on the reason for failure shown. Company creation failure is separate from activation failure — both have their own retry mechanisms in Cloud Manager.
 
 ### What are the prerequisites for configuring a custom domain in the Dynamic Media delivery tier? {#custom-domain-delivery-tier-prerequisites}
 
-Configuring a custom domain in the Dynamic Media delivery tier requires four prerequisites: access to Cloud Manager, Dynamic Media with OpenAPI already activated and in a ready state in the environment, and an EV or OV type SSL certificate for the domain to be used on the delivery tier. The custom domain configuration is optional for both Dynamic Media Prime and Dynamic Media Ultimate.
+Configuring a custom domain in the Dynamic Media delivery tier requires four prerequisites: access to Cloud Manager, activated Dynamic Media with OpenAPI, and an EV or OV type SSL certificate for the delivery tier. The custom domain configuration is optional for both Dynamic Media Prime and Dynamic Media Ultimate.
 
 ### How do I configure a custom domain for Dynamic Media delivery using Cloud Manager? {#configure-custom-domain-delivery-tier}
 
-To configure a custom domain for Dynamic Media delivery, complete three steps in Cloud Manager: add a customer-managed SSL certificate, add a custom domain name, and add a CDN configuration from the environment details page — selecting Delivery in the Tier field of the Configure CDN dialog box. After adding the CDN configuration, the status updates to Applied. Click more options and select Go live readiness, then follow the Configure CNAME steps to map cdn.adobeaemcloud.com as a CNAME record in the DNS service provider. Once the DNS mapping is confirmed, click OK and the domain status updates to Verified, making the custom domain ready for use in delivery URLs.
+To configure a custom domain for Dynamic Media delivery, complete three steps in Cloud Manager: add a customer-managed SSL certificate, a custom domain name, and a CDN configuration from the environment details page, selecting Delivery. After adding the CDN configuration, the status updates to Applied. Click more options and select Go live readiness, then follow the Configure CNAME steps to map cdn.adobeaemcloud.com as a CNAME record in the DNS service provider. Once the DNS mapping is confirmed, click OK and the domain status updates to Verified, making the custom domain ready for use in delivery URLs.

@@ -4,6 +4,14 @@ description: Understand how you can configure the rich text editor (RTE) in the 
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Configuring the RTE for the Universal Editor {#configure-rte}
@@ -440,7 +448,7 @@ The dropdown only appears when at least one option is configured. The plugin shi
 }
 ```
 
-Each entry has value (the CSS class name written to the HTML) and label (the human-readable text shown in the dropdown).
+Each entry has value (the CSS class name written to the HTML) and label (the human-readable text shown in the dropdown). Only one class is allowed to be defined as the `value` per object in the `options` array.
 
 The target follows the closest-to-caret-wins rule:
 

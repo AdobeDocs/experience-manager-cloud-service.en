@@ -3,6 +3,18 @@ title: Security Health for AEM as a Cloud Service
 description: Learn how to review and resolve security findings reported by Security Health in AEM as a Cloud Service.
 feature: Security
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 
 # Security Health {#security-health}
@@ -101,5 +113,5 @@ Security Health lists these entries by user and path, and lets you sort the list
 
 Keep the following limitations in mind when you review Security Health findings:
 
-- Scans run only against production environments. Development, stage, RDE, and sandbox environments aren't scanned.
+- Scans run only against development, stage and production environments. RDE, and sandbox environments aren't scanned.
 - Scans cover Java-based third-party libraries only. JavaScript dependencies used in UI code aren't analyzed.

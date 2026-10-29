@@ -2,6 +2,9 @@
 title: Managing Principals
 description: Managing Principals for Migration, using Admin Console
 exl-id: a75598d0-8f59-466b-984e-dfe527388c2a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 ---
 # Managing Principals {#managing-principals}
 
