@@ -33,15 +33,15 @@ This capability is part of [Experience Production](/help/ai-in-aem/agentic-capab
 
 Some of the key benefits of the Forms Agentic Capability include:
 
-* **Faster form authoring**: Generate a complete Adaptive Form from a plain-language description, an attached brief, a screenshot, or a PDF, cutting the time from requirement to working form.
+* **Faster form authoring**: Generate an Adaptive Form from a plain-language description, an attached brief, a screenshot, or a PDF, or import a PDF or XDP stored in AEM DAM.
 
-* **Quick rules and validation authoring**: Add conditional logic, field dependencies, and validation rules through natural language instead of manual rule configuration.
+* **Quick rules and validation authoring**: Create or edit conditional logic, calculations, field dependencies, validation rules, and service calls through natural language instead of manual rule configuration.
 
 * **Reduced dependency on form authors/developers**: Business users can create, edit, and configure forms conversationally without needing hands-on design or development support for routine changes.
 
 * **Consistency across brand and compliance rules**: Apply guidelines documents and organizational standards directly to forms, reducing drift between what's built and what's required.
 
-* **Flexible integration setup**: Configure where form data is submitted, such as cloud storage, CRM/marketing platforms, Adobe Experience Platform, or custom webhooks without manual endpoint configuration.
+* **Flexible integration setup**: Call services from form rules, create or edit REST API integrations, and configure submission destinations such as cloud storage, CRM/marketing platforms, Adobe Experience Platform, or custom webhooks.
 
 * **Works across form types**: One conversational interface for both Edge Delivery Services and Core Components forms, so you don't need to know which stack a form is built on.
 
@@ -67,13 +67,21 @@ The Forms Agentic Capability provides the following key skills:
 
   Create a new Adaptive Form from a plain-language description, an attached brief, an attached image or screenshot, or an attached PDF. See [Common use cases and sample prompts](#use-cases-prompts) for the complete list.
 
+* **PDF and XDP import**
+
+  Convert a PDF or XDP stored in AEM DAM into an Adaptive Form using `aem-forms-adaptiveform-import`. This is separate from creating a form from a file attached to chat.
+
 * **Form field and layout editing**
 
   Add, edit, remove, or reorder fields; create a field using an existing custom component; configure field properties such as placeholder text, validation formats, and file-type/size restrictions; change a field's type (for example, converting a text field into a radio group); add knowledge-based fields (for example, country lists or industry codes); adjust column layout; and apply an attached guidelines document to an existing form.
 
 * **Business logic and validation authoring**
 
-  Define show/hide rules, field dependencies, and validation conditions using natural language instead of manually configuring the [rule editor for Core Components](/help/forms/rule-editor-core-components.md) or [rules for Edge Delivery Services](/help/edge/docs/forms/rules-forms.md).
+  Create rules using `aem-forms-adaptiveform-rule-create`, or change a stored rule using `aem-forms-adaptiveform-rule-edit`. Use natural language to define show/hide conditions, calculations, validation, and event-driven service calls instead of manually configuring the [rule editor for Core Components](/help/forms/rule-editor-core-components.md) or [rules for Edge Delivery Services](/help/edge/docs/forms/rules-forms.md).
+
+* **REST API integrations**
+
+  Create a REST API integration or change its endpoint, HTTP method, headers, or input and output mappings using `aem-forms-adaptiveform-rule-create`. See the requirements and sample prompts under [Common use cases and sample prompts](#use-cases-prompts).
 
 * **Form submission configuration**
 
@@ -131,6 +139,10 @@ When you ask the Forms Agentic Capability to create a new form, it asks for a fe
 
 The agentic capability automatically discovers the templates and themes available on your instance and selects one for you. You don't need to name one. For background on how templates and themes work, see [How to get reference themes and templates for AEM Forms?](/help/forms/reference-themes-templates-data-models.md) for Core Components, or [Customize theme and styles for Edge Delivery Services for AEM Forms](/help/edge/docs/forms/style-theme-forms.md) for Edge Delivery Services.
 
+For a PDF or XDP import, also provide the source asset's `/content/dam/...` path, the new form's name, and its destination folder. Edge Delivery Services imports require the GitHub repository URL for your Forms project. For Core Components imports, the capability uses the templates and themes available on the author instance.
+
+For service-call rules, identify the service, the form event that should invoke it, and how its inputs and response values map to form fields. Form Data Model services must already be configured. REST API integrations can be selected from existing integrations or created from API details as described below.
+
 ## Common use cases and sample prompts {#use-cases-prompts}
 
 **Natural language form creation**
@@ -146,6 +158,15 @@ Sample prompts:
 * **Create from an attached brief**: Create a form using the attached brief.
 * **Create from an attached image or screenshot**: Create a form as per the attached image.
 * **Create from an attached PDF**: Create a form from this attached PDF.
+
+**PDF and XDP import**
+
+The Forms Agentic Capability can convert a PDF or XDP already stored in AEM DAM into an Adaptive Form. Supply the asset path rather than attaching the file to chat, and specify whether the result should use Core Components or Edge Delivery Services.
+
+Sample prompts:
+
+* Convert the PDF at `/content/dam/formsanddocuments/application.pdf` into a Core Components Adaptive Form named Application.
+* Import the XDP at `/content/dam/formsanddocuments/application.xdp` into an Adaptive Form.
 
 **Form field and layout editing**
 
@@ -174,13 +195,42 @@ Sample prompts:
 
 **Business logic and validation authoring**
 
-The Forms Agentic Capability can define conditional logic, field dependencies, and validation rules using natural language. If a referenced field or value doesn't exactly match what's on the form (for example, a field that doesn't exist yet, or a value not present in a dropdown's options), it asks a clarifying question, proposing the closest match and confirming where any new field should go, rather than guessing.
+The Forms Agentic Capability can create conditional logic, calculations, field dependencies, and validation rules using natural language. You do not need to write code or select an authoring mode. The capability generates the rules for you; you can review them in the form's rule editor.
+
+You can also change an existing rule's condition or actions, switch the service it calls, or add success and failure handlers. Identify the field and the behavior to change. The capability updates that rule while retaining the field's other rules. Refresh the form editor after a rule change to see the saved result.
+
+Rules can invoke a configured Form Data Model service or REST API integration when an event occurs, such as clicking a button. Specify where each service input comes from, which response values should populate fields, and what should happen on success or failure. For background on service mappings and handlers, see [Invoke Service in the rule editor](/help/forms/invoke-service-enhancements-rule-editor.md).
+
+If a referenced field, value, or service is ambiguous, the capability asks for clarification rather than choosing a match. Create the required fields before asking it to add rules.
 
 Sample prompts:
 
 * Show the Company field only when Employee Type is Contractor.
 * Make the Email field required and validate it as an email address.
 * Hide the Shipping Address section when Same as Billing Address is checked.
+* Calculate Total as Quantity multiplied by Unit Price.
+* Change the rule on Company so it is shown when Employee Type is Contractor or Partner.
+* When Lookup is clicked, call `<service>` with Customer ID as input and populate Customer Name from the response.
+* Add a failure handler to the Lookup button's service rule to clear Customer Name.
+
+**REST API integrations**
+
+The Forms Agentic Capability can create a REST API integration from a cURL command, an OpenAPI or Swagger specification, a sample response, or API details you provide. Include the endpoint URL, HTTP method, and the input and output mappings needed by the rule. If a specification contains several operations, identify the one to use. The capability asks for missing details before creating the integration.
+
+Integrations created through Coworker run in the browser and support APIs without authentication only. The API must allow cross-origin resource sharing (CORS) from the form's host. Do not paste passwords, tokens, or API keys into chat. For APIs that require authentication, use the [API Integration configuration in the rule editor](/help/forms/api-integration-in-rule-editor.md).
+
+You can also ask to change an existing integration's URL, HTTP method, headers, or input and output mappings. Authentication, encryption, renaming, and client/server execution settings must be changed in the rule editor, not through this capability.
+
+>[!IMPORTANT]
+>
+>REST API integrations are shared. Editing an integration affects every form whose rules use it. Review the proposed changes before saving. If you remove or rename an input or output, update any rules that reference it.
+
+Sample prompts:
+
+* Create a REST API integration from the attached OpenAPI specification for the `<operation>` operation.
+* Create an integration using this cURL command and sample JSON response.
+* Add an optional lang query parameter to `<integration name>` with a default value of en.
+* Change the endpoint URL of `<integration name>` to `<API URL>`.
 
 **Form submission configuration**
 
@@ -269,15 +319,17 @@ Keep these tips in mind when prompting the Forms Agentic Capability:
 
 * Checkbox field creation may occasionally fail to set the checked/unchecked values correctly. As a workaround, manually configure the default checked/unchecked value in the properties panel of the [Checkbox component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox) in the Adaptive Forms editor.
 
+* Deleting a business rule through Coworker is not supported. Delete the rule directly in the [rule editor](/help/forms/rule-editor-core-components.md). When editing existing rules through Coworker, change one field's rule at a time.
+
 ## FAQ {#faq-forms-agentic-capability}
 
 **Is the Forms Agentic Capability available now?**
 
 Yes. It's part of the Experience Production capability, available through Coworker Chat.
 
-**Can I create a form from a PDF, image, or screenshot?**
+**Can I import existing documents?**
 
-Yes. See [Natural language form creation](#use-cases-prompts) for sample prompts covering attached briefs, images, screenshots, and PDFs.
+Yes. You can create a form from an attached brief, image, screenshot, or PDF, or import a PDF or XDP stored in AEM DAM. See [Common use cases and sample prompts](#use-cases-prompts) for examples of both workflows.
 
 **Will applying a guidelines document remove fields I already added?**
 
