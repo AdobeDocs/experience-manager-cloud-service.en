@@ -11,6 +11,10 @@ Create a link to selected assets and collections to share them with others easil
 
 >[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
 
+>[!IMPORTANT]
+>
+>This feature is available as a Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment. 
+
 ## Prerequisites {#prerequisites}
 
 [Content Hub users](deploy-content-hub.md#onboard-content-hub-users) can create a link to selected assets and collections and share it with other users. 
