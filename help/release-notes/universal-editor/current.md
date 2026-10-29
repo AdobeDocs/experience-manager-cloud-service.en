@@ -35,6 +35,10 @@ These are the release notes for the 29 October 2026 release of the Universal Edi
 * The AEM Workflow extension has been added natively to the editor.
 * The rich text editor component now supports custom keyboard shortcuts.
 
+>[!TIP]
+>
+>If any extensions appear doubled in the UI such as Site Admin, MSM, Page Properties, or Page Lock, make sure you disable the extension in [Extension Manager.](/help/implementing/universal-editor/extending.md#extensions) These are now native Universal Editor features.
+
 ## Other Improvements {#other-improvements}
 
 * The properties rail now properly keeps focus on a newly selected component when a slow patch response arrives after the selection has changed and undo/redo now restores the component that was actually edited.
