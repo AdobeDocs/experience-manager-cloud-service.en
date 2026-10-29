@@ -41,6 +41,10 @@ These **preview** release notes are provided as a convenience so you know what c
   * Please contact Adobe to enable this feature.
 * Variation selection and variation-aware previews were added to the new Content Fragment and Experience Fragment reference pickers.
 
+>[!TIP]
+>
+>If any extensions appear doubled in the UI such as Site Admin, MSM, Page Properties, or Page Lock, make sure you disable the extension in [Extension Manager.](/help/implementing/universal-editor/extending.md#extensions) These are now native Universal Editor features.
+
 ## Upcoming Changes {#upcoming-improvements}
 
 * Tag fields no longer render a separate picker for each tag. Multiple tags now share one picker, while single-tag fields respect their configuration.
