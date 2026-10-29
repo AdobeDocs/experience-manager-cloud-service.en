@@ -431,6 +431,13 @@ For example:
 
   ![Revert to inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-revert-to-inheritance.png)
 
+>[!CAUTION] 
+>
+> For Composite fields inheritance can only be broken for top-level fields. 
+>
+>* Inheritance for an entire composite field can be broken.
+>* Breaking inheritance for individual fields within composite items is not supported.
+
 ### Live Copy details and actions {#live-copy-details-and-actions}
 
 From the right hand information panel you can select the **Live Copy** tab to show details of any live copies the fragment is involved in.

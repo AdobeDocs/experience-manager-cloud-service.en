@@ -34,6 +34,10 @@ After creating your templates you can:
 >
 >Use the [Figma to Visual Content Fragments Skill](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/figma-to-visual-content-fragments.md) to automate loading an HTML design.
 
+>[!NOTE]
+>
+>Visual Content Fragments (Content Fragments with HTML templates) do not currently support composite fields.
+
 ## What you will learn {#what-you-will-learn}
 
 After providing a (very quick) introduction to: 
