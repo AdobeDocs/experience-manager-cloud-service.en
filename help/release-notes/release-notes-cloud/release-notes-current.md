@@ -357,6 +357,12 @@ Validate file attachments in Adaptive Forms before or on submission using custom
 
 The AEM Governance Agent can list known vulnerabilities across one or more AEM instances, including their severity and affected components. You can filter findings by CVE, severity, environment, or component to prioritize remediation. See [AEM Governance Agent use cases](/help/ai-in-aem/agentic-capabilities/brand-governance/use-cases.md).
 
+#### Java 25 for Local Development {#java25-sdk}
+
+The AEM Cloud Service SDK now supports building and running projects with Java 25 for local development and validation. Your AEM license entitles you to download Oracle Java 25 from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=java*+25*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=8).
+
+This is the first step toward Java 25 support in AEM as a Cloud Service. In the November release, Cloud Manager environments will let you opt in to Java 25 for the runtime, the project build, or both, so you can take advantage of performance improvements and modern Java features. Use the SDK now to validate your code and prepare for that release.
+
 #### OpenTelemetry for Application Performance Monitoring (APM) (Limited Availability) {#otel}
 
 Now in Limited Availability (see note below for access), AEM as a Cloud Service supports [OpenTelemetry](/help/implementing/developing/introduction/opentelemetry-apm-integration.md). OTel is an open, industry-standard way to get traces, metrics, and logs together, sent to the APM provider of your choice. Also see advanced [custom instrumentation](/help/implementing/developing/introduction/opentelemetry-custom-instrumentation.md) documentation and [tutorials](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/observability-via-opentelemetry/opentelemetry-in-aem).
@@ -444,12 +450,6 @@ The [AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-s
 To help troubleshoot IMS integrations, `imsauth` has added support for *rich errors*.
 
 Instead of returning only an HTTP status code, these errors provide additional context to help diagnose and resolve issues that can block authentication and access.
-
-#### Java 25 for Local Development {#java25-sdk}
-
-The AEM Cloud Service SDK now supports building and running projects with Java 25 for local development and validation. Your AEM license entitles you to download Oracle Java 25 from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=java*+25*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=8).
-
-This is the first step toward Java 25 support in AEM as a Cloud Service. In the November release, Cloud Manager environments will let you opt in to Java 25 for the runtime, the project build, or both, so you can take advantage of performance improvements and modern Java features. Use the SDK now to validate your code and prepare for that release.
 
 #### Winter 2027 Removal of Deprecated Java APIs {#java-api-deprecation}
 
