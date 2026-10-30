@@ -97,6 +97,27 @@ Support for authenticated requests can be implemented with the [AEM CDN Edge key
 >
 >Authorization based on the repository-specific ACLs is currently not supported.
 
+## Deliver a Composite item {#deliver-a-composite-item}
+
+You can deliver your Composite items with the following APIs:
+
+* From the [Management OpenAPI](/help/headless/content-fragment-openapis.md#deliver-a-composite-item) (Content Fragments Management API)
+
+* [AEM GraphQL API for use with Content Fragments](/help/headless/graphql-api/content-fragments.md#deliver-a-composite-item)
+
+* the REST Delivery API. There are two paths:
+
+  * pre-baked at publish time
+  * in-process delivery from AEM
+
+* For OpenAPI responses containing hydrated referenced fragments, composites can reduce reference and fragment-metadata overhead. Payload size depends on the content structure and reference-inclusion options. Embedded composite content is included independently of reference depth, so shallow responses can be larger than equivalent reference-based responses.
+
+>[!NOTE]
+>
+>If the model used inside a composite field is not published, the delivery API will skip that composite content (with a warn log on the server). This is similar to the existing behavior for fragments missing a published model. 
+>
+>Make sure customer publish pipelines include all models that compositions reference.
+
 <!-- 
 ## Limitations {#limitations}
 -->

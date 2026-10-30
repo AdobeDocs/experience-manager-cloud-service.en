@@ -1725,6 +1725,7 @@ user-guide-title: AEM as a Cloud Service
     + [Extending Page Authoring](/help/implementing/developing/extending/page-authoring.md)
     + [Extending Consoles](/help/implementing/developing/extending/consoles.md)
     + [Extending Page Properties](/help/implementing/developing/extending/page-properties.md)
+    + [Extending Page Publishing](/help/implementing/developing/extending/page-publishing.md)
     + [Extending the Bulk Editor](/help/implementing/developing/extending/bulk-editor.md)
     + [Extending MSM](/help/implementing/developing/extending/msm.md)
     + Internationalization{#internationalization}

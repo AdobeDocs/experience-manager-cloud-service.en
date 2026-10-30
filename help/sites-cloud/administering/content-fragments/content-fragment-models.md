@@ -162,7 +162,7 @@ A selection of data types is available for defining your model:
   * Allows fragment authors to access and select areas of tags
 
 * **Fragment Reference**
-  * References other Content Fragments; can be used to [create nested content](#using-references-to-form-nested-content)
+  * References other Content Fragments; can be used to [create nested content](#nested-content)
   * The data type can be configured to allow fragment authors to:
     * Edit the referenced fragment directly.
     * Create a new Content Fragment, based on the appropriate model
@@ -181,7 +181,7 @@ A selection of data types is available for defining your model:
   -->
 
 * **Content Reference**
-  * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
+  * References other content, of any type; can be used to [create nested content](#nested-content)
   * If an image is referenced, you can opt to show a thumbnail
   * The field can be configured to allow fragment authors to create new instances of the field 
   * The reference specifies the path to the referenced resource; for example `/content/dam/path/to/resource` 
@@ -196,6 +196,27 @@ A selection of data types is available for defining your model:
   >
   >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
   -->
+
+* **Composite**
+
+  * The **Composite** data type can be used to [create nested content](#nested-content)
+  * The **Composite** data type enables Content Fragments to store hierarchical, structured data
+    * This is achieved by allowing fields to contain nested sub-fields
+    * The sub-fields are structured
+    * The sub-fields are structured according to Content Fragment Models
+    * The sub-field are restricted to the Content Fragment Models that you specify when defining the sub-field
+  * This feature provides a way to model complex data structures within a single fragment, similar to nested objects in JSON or embedded documents in NoSQL databases 
+
+  >[!WARNING]
+  >
+  >The Composite data type can be used: 
+  >
+  >* in the Touch UI (original) Content Fragment Model Editor
+  >* in the new Content Fragment Editor
+  >
+  >The new Content Fragment Model Editor and the Touch UI (original) Content Fragment Editor will block access to the Composite Data Type and any dependent fields. 
+  >
+  >For Composite fields in the new Content Fragment Model Editor you will see the message: Please register renderer for "composite" type.
 
 * **JSON Object**
   * Allows the Content Fragment author to enter JSON syntax into the corresponding elements of a fragment. 
@@ -263,7 +284,7 @@ Many properties are self-explanatory, for certain properties additional details 
 
 * See **[Content Reference](#content-reference)** for more details about that specific data type and its properties.
 
-* See **[Fragment Reference (Nested Fragments)](#fragment-reference-nested-fragments)** for more details about that specific data type and its properties.
+* See **[Fragment Reference](#fragment-reference)** for more details about that specific data type and its properties.
 
 * **Translatable**
 
@@ -295,18 +316,19 @@ Various data types now include the possibility to define validation requirements
 
   These are validated in the [Content Fragment Editor](/help/sites-cloud/administering/content-fragments/authoring.md).
 
-## Using References to form Nested Content {#using-references-to-form-nested-content}
+## Nested Content {#nested-content}
 
-Content Fragments can form nested content, using either of the following data types:
+Content Fragments can form nested content, using any of the following data types:
 
 * [Content Reference](#content-reference)
   * Provides a simple reference to other content; of any type.
   * Provided by the **Content Reference** data type
   * Can be configured for one or multiple references (in the resulting fragment).
 
-* [Fragment Reference](#fragment-reference-nested-fragments) (Nested Fragments)
-  * References other fragments, dependent on the specific models specified.
-  * Provided by the **Fragment Reference** data type
+* [Fragment Reference](#fragment-reference)
+  * References other fragments, dependent on the models specified.
+  * The referenced fragments are distinct and separate from the referencing fragment.
+  * Provided by the **Fragment Reference** data type.
   * Allows you to include/retrieve structured data.
 
     >[!NOTE]
@@ -314,6 +336,18 @@ Content Fragments can form nested content, using either of the following data ty
     >This method is of particular interest when you are using [Headless Content Delivery using Content Fragments with GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
 
   * Can be configured for one or multiple references (in the resulting fragment).
+  * Suitable when modular, reusable content is required.
+
+* [Composite](#composite-data) data type:
+
+  * References other fragments, dependent on the models specified.
+  * The referenced fragments are fully embedded in, and integral to, the  referencing fragment. They have a true parent-child relationship.
+    * The Composite Data Type allows you to define a group of fields as an inline, repeatable structure inside a parent fragment instead of pointing to a separate fragment reference. 
+  * The composite fields are edited in the same editor session as the parent fragment.
+  * Allows you to include/retrieve structured data.
+  * Suitable for multi-value composite fields where modular reuse is not the primary goal. 
+  * Enables the use of flatter, easier-to-manage content structures, and can also help improve system and API performance.
+  
 
 <!--
 >[!NOTE]
@@ -367,7 +401,7 @@ In addition to standard properties you can specify:
 
 ![Content Reference](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-content-reference.png)
 
-### Fragment Reference (Nested Fragments) {#fragment-reference-nested-fragments}
+### Fragment Reference {#fragment-reference}
 
 The **Fragment Reference** data type can reference one, or more, Content Fragments. This feature is of particular interest when retrieving content for use in your app, as it allows you to retrieve structured data with multiple layers.
 
@@ -398,9 +432,9 @@ In addition to standard properties you can define:
 
 * **Render As**:
 
-  * **multifield** - the fragment author can create multiple, individual, references
+  * **Multiple Field** - the fragment author can create multiple, individual, references
 
-  * **fragmentreference** - allows the fragment author to select a single reference to a fragment
+  * **Fragment Reference** - allows the fragment author to select a single reference to a fragment
 
 * **Model Type**
   Multiple models can be selected. When adding references to a Content Fragment, any referenced fragments must have been created using these models.
@@ -412,8 +446,6 @@ In addition to standard properties you can define:
 
   This allows the fragment author to create a fragment based on the appropriate model.
 
-  * **fragmentreferencecomposite** - allows the fragment author to build a composite, by selecting multiple fragments
-
   ![Fragment Reference](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-fragment-reference.png)
 
 >[!NOTE]
@@ -421,3 +453,146 @@ In addition to standard properties you can define:
 >A recurrence protection mechanism is in place. It prohibits the user from selecting the current Content Fragment in the Fragment Reference, and may lead to an empty Fragment Reference picker dialog.
 >
 >There is also recurrence protection for Fragment References in GraphQL. If you create a deep query across two Content Fragments that reference each other, it returns null.
+
+### Composite Data {#composite-data}
+
+The **Composite** data type enables Content Fragments to store hierarchical, structured data by allowing fields to contain nested sub-fields. The *children* (sub-fields) are themselves structured content, defined by user-specified Content Fragment Models and fully embedded in the *parent* fragment.
+
+The Composite data type provides a way to model complex data structures within a single fragment, similar to nested objects in JSON or embedded documents in NoSQL databases.
+
+A Composite field has the following properties and characteristics:
+
+* Specify one or more Content Fragment Models
+
+  * When defining a Composite field in a Content Fragment Model you must define which models can be used for the composite items. 
+  * Multiple models can be selected, so that the author can choose which model to use when actually adding an item.
+
+* Authoring
+
+  * Composite items are [edited](/help/sites-cloud/administering/content-fragments/authoring.md#edit-a-composite-field) within the same editor session as their parent fragment, without opening a separate Content Fragment.
+
+* Step-and-repeat as a multi-field
+
+  * A multi-value composite supports add, remove, and reorder of items.
+
+* Multi-model composite
+
+  * A single composite field can accept items from multiple allowed models. 
+  * The author picks which model to use when adding a new item.
+
+* Variations
+
+  * Top-level variations apply to composite trees: a variation may have a different number of composite items, or different content per item, than the master. 
+  * Selection is at the top-level only; nested content reflects the chosen variation.
+
+* Search
+
+  * Text within composite items is searchable. Matching content returns the parent Content Fragment in search results.
+
+* Native delivery
+
+  * GraphQL and OpenAPI return composite content as nested data in the parent payload, without resolving a separate Content Fragment asset.
+
+* Clean reference semantics
+
+  * You can model content that belongs to its parent and is not reused.
+  
+    >[!NOTE]
+    >
+    >Reserve fragment references for content that is genuinely reusable. The two are complementary, not substitutes.
+
+In addition to standard properties you can define:
+
+* **Render As**
+
+  Specify either:
+
+  * **Multiple Field** supports add/remove/reorder with min/max constraints
+  * **Composite Field** holds at most one item
+
+* **Min/Max Number of items**
+
+  For multi-value composites, set min and max bounds for the number of items
+
+* **Type** 
+
+  Specify one or more Content Fragment Models. Fields from these models will appear as composite items. Multiple models can be selected, the author then chooses which model when adding an item.
+
+>[!NOTE]
+>
+>Although the contents of a Composite field are structured according to a Content Fragment Model they do not form a Content Fragment in the true sense due to the absence of certain metadata.
+
+>[!WARNING]
+>
+>The Composite data type can be used: 
+>
+>* in the [Touch UI (original) Content Fragment Model Editor](/help/assets/content-fragments/content-fragments-models.md)
+>* in the new Content Fragment Editor
+>
+>The new Content Fragment Model Editor and the Touch UI (original) Content Fragment Editor will block access to the Composite Data Type and any dependent fields.
+>
+>For Composite fields in the new Content Fragment Model Editor you will see the message: Please register renderer for "composite" type.
+
+### Comparison of Nested Content {#comparison-of-nested-content}
+
+There are several methods of creating, and maintaining, nested content. 
+
+#### Benefits of Composite {#benefits-of-composite}
+
+The Composite data type offers several benefits when modeling data:
+
+* Easier management of content structures. 
+
+  * Because composite data types are embedded directly within a Content Fragment, there is no need to manage separate folders or storage structures for composite content, as is required with referenced fragments. 
+  * This results in flatter, less cluttered content structures that simplify governance and make composite content easier to discover.
+
+* Simplified authoring with native support for multi-value composite fields. 
+
+  * Items in multi-value composites can be created and edited within the same editor session as the parent fragment.
+  * Composites can reduce reference and fragment-metadata overhead. 
+
+* Improved content management and delivery performance. 
+
+  * Simpler content structures with fewer fragment references reduce the overhead of reference resolution during authoring, publishing, and delivery operations. 
+  * Simpler content structures also decrease the size and complexity of JSON payloads, helping improve API efficiency and overall client-side performance. 
+
+#### When to use Composite {#when-to-use-composite}
+
+Use of the Composite data type should be carefully considered, as your use-case can determine which sort of nested content is the best solution for you.
+
+* Recommended when you:
+
+  * Build *page-like* or *card list-like* content where the children are not reused elsewhere.
+  * Are experiencing reference-graph performance issues, either at delivery or at publication.
+  * Have authors complaining about tab-switching workflows for nested content.
+  * Need multi-field step-and-repeat groups that currently require custom data types or external tooling.
+
+* Be cautious when:
+
+  * Your content is genuinely reusable across fragments. Fragment references remain the right answer for shared content; composite is for inlined content.
+  * You only use the (original) Touch UI Editor. Composite is supported in the new Content Fragment Editor, but the original Touch UI Editor will block editing of composite fields.
+
+#### Limitations of Composite{#limitations-of-composite}
+
+The list below consolidates the current limitations of the Composite data type:
+
+* Authoring surface
+
+  * Touch UI Fragment Editor (original editor)
+    * Composite fields are not supported. 
+  * New (Headless) Content Fragment Model Editor
+    * The Composite type is not yet supported. Model authoring uses the original Touch UI Model Editor.
+    For Composite fields you will see the message: Please register renderer for "composite" type.
+
+* Cross-feature support
+
+  * MSM (Multi Site Manager)
+    * Inheritance can only be broken for top-level fields. 
+      * Inheritance for an entire composite field can be broken.
+      * Breaking inheritance for individual fields within composite items is not supported.
+  * Launches
+    * Content Fragments containing composite fields are not supported in Launches, whether selected directly or included through fragment references. Such actions are not accepted and will fail.
+  * Core Components and the Sling Model exporter
+    * Page rendering via Core Components and the Sling Model exporter (`.model.json`) does not yet support composite fields. 
+  * Visual Content Fragments (Content Fragments with HTML templates)
+    * Visual Content Fragments (Content Fragments with HTML templates) do not currently support composite fields.
