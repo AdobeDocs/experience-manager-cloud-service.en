@@ -64,7 +64,7 @@ Although you can go directly to a particular part of the journey, many concepts 
 |0|AEM Headless Content Author Journey|This document|
 |1|[Authoring for AEM Headless as a Cloud Service - An Introduction](introduction.md)|An introduction to the headless features of Adobe Experience Manager as a Cloud Service, and how to author content for your project.|
 |2|[Authoring Basics for Headless with AEM](basics.md)|Learn about the concepts and mechanics of authoring content for your Headless CMS using Content Fragments.|
-|3|[Learn about using references in Content Fragments](references.md)|Learn about how to use references in Content Fragments. These also allow you to create and manage multiple levels of structure for your Headless CMS using Nested Fragments.|
+|3|[Learn about using references in Content Fragments](references.md)|Learn about how to use references in Content Fragments. These also allow you to create and manage multiple levels of structure for your Headless CMS using Referenced Fragments.|
 |4|[Learn about defining Metadata and Tagging for Content Fragments](metadata-tagging.md)|Learn about defining Metadata and Tagging for Content Fragments.|
 
 ## What's Next {#what-is-next}

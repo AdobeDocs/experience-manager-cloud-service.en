@@ -1,6 +1,6 @@
 ---
 title: Learn about using references in Content Fragments
-description: Learn about using references in Content Fragments, for content, other fragments and other assets (media). Introduce the necessity for, and the mechanics of, nested fragments for Headless CMS Authoring.
+description: Learn about using references in Content Fragments, for content, other fragments and other assets (media). Introduce the necessity for, and the mechanics of, referenced fragments for Headless CMS Authoring.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
@@ -95,7 +95,7 @@ There are two sorts:
 * **Fragment Reference (UUID)**
   * In the editor, the reference specifies the path to the referenced resource; internally the reference is held as a universally unique ID (UUID) that references the resource 
 
-### How to author nested fragments {#author-nested-fragment}
+### How to author referenced fragments {#author-referenced-fragment}
 
 Authoring Fragment References is fairly straightforward (though usually the field will not be labelled as **Fragment Reference**). You can either type in the reference directly, or (more likely) select the folder icon to open a browser that lets you navigate and select the fragment you need. 
 
@@ -106,7 +106,7 @@ The definition of the Content Fragment Model controls:
 * whether you can select to add multiple references
 * the model types of Content Fragments that you can select; the Content Fragment Model defines the fragment models allowed for the reference, so AEM only presents fragments based on those models.
 
-### How to navigate nested fragments {#navigate-nested-fragment}
+### How to navigate referenced fragments {#navigate-referenced-fragment}
 
 Using the **Structure Tree** tab of the Content Fragment Editor you can navigate through the fragments referenced by your fragment, and then through any references they may contain. Selecting a reference opens that fragment for editing.
 
