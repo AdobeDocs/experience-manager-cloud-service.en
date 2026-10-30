@@ -15,11 +15,11 @@ role_v2:
 ---
 # Spin Sets{#spin-sets}
 
-A Spin Set simulates the real-world act of turning an object to examine it. Spin Sets make it possible to view items from any angle, gaining the key visual details from any angle.
+A Spin Set simulates the rotation of an object to examine it. Spin Sets make it possible to view items from any angle, gaining the key visual details from every side.
 
 A Spin Set simulates a 360&deg; viewing experience. Dynamic Media offers single-axis Spin Sets in which viewers can rotate an item. Moreover, users can "free-form" zoom and pan any of the views with a few simple mouse-clicks. In this way, users can examine an item more closely from a particular viewpoint.
 
-Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In addition, if the Spin Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon is on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon displays.
+A banner with the word **[!UICONTROL SPINSET]** designates Spin Sets. In addition, if the Spin Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon, is on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon.
 
 ![chlimage_1-](assets/chlimage_1-380.png)
 
@@ -37,11 +37,9 @@ See also [Dynamic Media limitations](/help/assets/dynamic-media/limitations.md).
 
 ## Quick Start: Spin Sets {#quick-start-spin-sets}
 
-To get you up and running quickly with Spin Sets, follow these steps:
-
 1. Optional. [Create a batch set preset](/help/assets/dynamic-media/batch-set-presets-dm.md) and apply it to a new asset folder.
 
-   A batch set preset can help you automate the creation of your spin set. 
+   A batch set preset can automate the creation of your spin set. 
 
    >[!IMPORTANT]
    >
@@ -49,7 +47,7 @@ To get you up and running quickly with Spin Sets, follow these steps:
 
 1. [Upload your images for multiple views](#uploading-assets-for-spin-sets).
 
-   At minimum, you need 8-12 shots of an item for a one-dimensional Spin Set and 16-24 for a two-dimensional Spin Set. The shots must be taken at regular intervals to give the impression that the item is rotating and being flipped. For example, if a one-dimensional Spin Set includes 12 shots, rotate the item 30° (360/12) for each shot.
+   At minimum, you need 8-12 shots of an item for a one-dimensional Spin Set and 16-24 for a two-dimensional Spin Set. The shots must be taken at regular intervals to represent the item rotating and being flipped. For example, if a one-dimensional Spin Set includes 12 shots, rotate the item 30° (360/12) for each shot.
 
    See [Dynamic Media - Supported raster image formats](/help/assets/file-format-support.md#image-support-dynamic-media) for a list of formats supported by Spin Sets.
 
@@ -67,7 +65,7 @@ To get you up and running quickly with Spin Sets, follow these steps:
 
    See [Add and edit viewer presets](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-   You can view and access sets created by way of batch set presets in three different ways. (Sets created using batch set presets, do *not* appear in the user interface.)
+   You can view and access sets created by way of batch set presets in three different ways. (Sets created using batch set presets do *not* appear in the user interface.)
 
 1. [Preview Spin Sets](/help/assets/dynamic-media/previewing-assets.md).
 
@@ -77,23 +75,23 @@ To get you up and running quickly with Spin Sets, follow these steps:
 
    Publishing a Spin Set activates the URL and Embed string. In addition, you must [publish the viewer preset](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-1. [Link URLs to your Web Application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) or [Embed the Video or Image Viewer](/help/assets/dynamic-media/embed-code.md).
+1. [Link URLs to your Web Application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) or [Embed the Video or Adobe Image Viewer](/help/assets/dynamic-media/embed-code.md).
 
-   Adobe Experience Manager Assets create URL calls for Spin Sets and activates them after you publish the spin sets. You can copy these URLs when you preview assets. Alternatively you can embed them on your web site.
+   Adobe Experience Manager Assets creates URL calls for Spin Sets and activates them after you publish the spin sets. You can copy these URLs when you preview assets. Alternatively you can embed them on your website.
 
    Select the Spin Set, then in the left rail drop-down menu, select **[!UICONTROL Viewers]**.
 
-   See [Link a Spin Set to a web page](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) and [Embed the Video or Image Viewer](/help/assets/dynamic-media/embed-code.md).
+   See [Link a Spin Set to a web page](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) and [Embed the Video or Adobe Image Viewer](/help/assets/dynamic-media/embed-code.md).
 
 If necessary, you can [edit Spin Sets](#editing-spin-sets). In addition, you can view and modify [Spin Set properties](/help/assets/manage-digital-assets.md#editing-properties).
 
 ## Upload assets for Spin Sets {#uploading-assets-for-spin-sets}
 
-At minimum, you need 8-12 shots of an item for a one-dimensional Spin Set. The shots must be taken at regular intervals to give the impression that the item is rotating and being flipped. For example, if a one-dimensional Spin Set includes 12 shots, rotate the item 30° (360/12) for each shot.
+At minimum, you need 8-12 shots of an item for a one-dimensional Spin Set. The shots must be taken at regular intervals to simulate the item rotating and being flipped. For example, if a one-dimensional Spin Set includes 12 shots, rotate the item 30° (360/12) for each shot.
 
 See [Dynamic Media - Supported raster image formats](/help/assets/file-format-support.md#image-support-dynamic-media) for a list of formats supported by Spin Sets.
 
-You can upload images for the Spin Sets as you would [upload any other asset in Experience Manager Assets](/help/assets/manage-digital-assets.md).
+Upload images for the Spin Sets as you [upload any other asset in Experience Manager Assets](/help/assets/manage-digital-assets.md).
 
 ### Guidelines for capturing images for your Spin Set {#guidelines-for-shooting-spin-set-images}
 
@@ -102,8 +100,8 @@ The following are some best practices around spin set images. In general, the mo
 * At minimum, use 8-12 images in a one-dimensional spin set and 16-24 images in a two-dimensional Spin Set. A minimum of 8 images is necessary to be able to turn 360°. One-dimensional Spin Sets are more common as creating two-dimensional Spin Sets is labor-intensive.
 * Use a lossless format; TIFF and PNG are recommended.
 * Mask all images so the item appears on a pure white or other high-contrast background. Optionally, add shadows.
-* Make sure that product details are well lighted and in focus.
-* Take spin images for fashion clothing with a mannequin or model. Often the mannequin is either masked (using a glass mannequin) or a stylized mannequin/dressform is shown in the image. You can create an on-model spin set by defining the number of angles. Mark each angle with tape on the floor so you can guide the model to step and look in the direction of each shot.
+* Make sure that product details are well lit and in focus.
+* Take spin images for fashion clothing with a mannequin or person. Often the mannequin is either masked (using a glass mannequin) or a stylized mannequin/dress form is shown in the image. You can create an on-model spin set by defining the number of angles. Mark each angle with tape on the floor so you can guide the person to step and look in the direction of each shot.
 
 ## Create Spin Sets {#creating-spin-sets}
 
@@ -111,13 +109,13 @@ This section describes how to create Spin Sets.
 
 >[!NOTE]
 >
->You can also create spin sets automatically through [batch set presets](/help/assets/dynamic-media/config-dm.md). **Important:** Batch sets are created by the IPS (Image Production System) as part of asset ingestion.
+>You can also create spin sets automatically through [batch set presets](/help/assets/dynamic-media/config-dm.md). **Important:** The IPS (Image Production System) creates batch sets as part of asset ingestion.
 >
 >See "Creating batch set presets to auto-generate Image Sets and Spin Sets" in [Configure Dynamic Media](/help/assets/dynamic-media/config-dm.md).
 
 >[!NOTE]
 >
->The order in which images appear in a spin set matter. Be sure to order them so that the spin is a smooth 360° view.
+>The image order in a spin set matters. Be sure to order them so that the spin is a smooth 360° view.
 
 When you create a Spin Set, Adobe recommends the following best practice and enforces the following limit:
 
@@ -149,7 +147,7 @@ See also [Dynamic Media limitations](/help/assets/dynamic-media/limitations.md).
 
    Select assets that you want to include in your Spin Set. Selected assets have a checkmark icon over them. When you are finished, near the upper-right corner of the page, select **[!UICONTROL Select]**.
 
-   With the Asset Selector, you can search for assets by typing in a keyword and tapping **[!UICONTROL Return]**. You can also apply filters to refine your search results. You can filter by path, collection, file type, and tag. Select the filter and then select the **[!UICONTROL Filter]** icon on the toolbar. Change the view by tapping the View icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View]**.
+   With the Asset Selector, you can search for assets by typing in a keyword and tapping **[!UICONTROL Return]**. To refine your search results, apply filters. You can filter by path, collection, file type, and tag. Select the filter and then select the **[!UICONTROL Filter]** icon on the toolbar. Change the view by tapping the View icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View]**.
 
    See [Work with Selectors](/help/assets/dynamic-media/working-with-selectors.md).
 
@@ -173,7 +171,7 @@ See also [Dynamic Media limitations](/help/assets/dynamic-media/limitations.md).
 
 ## Viewing Spin Sets {#viewing-spin-sets}
 
-You can create spin sets either in the user interface or automatically using [batch set presets](/help/assets/dynamic-media/config-dm.md). However, sets created using batch set presets, do *not* appear in the user interface. You can access sets created via batch set presets in three different ways. (These methods are available even if you created the spin sets in the user interface).
+You can create spin sets either in the user interface or automatically using [batch set presets](/help/assets/dynamic-media/config-dm.md). However, sets created using batch set presets do *not* appear in the user interface. You can access sets created via batch set presets in three different ways. (These methods are available even if you created the spin sets in the user interface).
 
 >[!NOTE]
 >
@@ -191,7 +189,7 @@ You can create spin sets either in the user interface or automatically using [ba
 
 1. From search, you can Select **[!UICONTROL Filters]**, then expand **[!UICONTROL Dynamic Media]** and select **[!UICONTROL Sets]**.
 
-   The search returns matching sets that were manually created in the UI or automatically created through batch set presets. For automated sets, the search query is conducted using `Starts with` search criteria which is different from Experience Manager search which is based on using `Contains` search criteria. Setting the filter to **[!UICONTROL Sets]** is the only way to search automated sets.
+   The search returns matching sets that were manually created in the UI or automatically created through batch set presets. For automated sets, the search query is conducted using `Starts with` search criteria, which is different from Experience Manager search, which is based on `Contains` search criteria. Setting the filter to **[!UICONTROL Sets]** is the only way to search automated sets.
 
    ![chlimage_1-158](assets/chlimage_1-386.png)
 
