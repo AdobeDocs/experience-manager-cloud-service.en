@@ -96,6 +96,7 @@ AEM provides the following data types for you to model your content:
 * Fragment Reference (UUID)
 * Content Reference
 * Content Reference (UUID)
+* Composite
 * JSON Object
 * Tab Placeholder
 
