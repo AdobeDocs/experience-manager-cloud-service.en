@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2026 {#2026}
+      + [Release Notes for 2026.9.0](/help/release-notes/release-notes-cloud/2026/2026-9-0.md)
       + [Release Notes for 2026.8.0](/help/release-notes/release-notes-cloud/2026/2026-8-0.md)
       + [Release Notes for 2026.7.0](/help/release-notes/release-notes-cloud/2026/2026-7-0.md)
       + [Release Notes for 2026.6.0](/help/release-notes/release-notes-cloud/2026/2026-6-0.md)
@@ -274,6 +275,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.10.22 Release Notes](/help/release-notes/universal-editor/2026/2026-10-22.md)
       + [2026.10.15 Release Notes](/help/release-notes/universal-editor/2026/2026-10-15.md)
       + [2026.10.08 Release Notes](/help/release-notes/universal-editor/2026/2026-10-08.md)
       + [2026.10.01 Release Notes](/help/release-notes/universal-editor/2026/2026-10-01.md)
@@ -458,7 +460,7 @@ user-guide-title: AEM as a Cloud Service
   + AI-Assisted Code Migration {#cloud-migration-skill}
     + [Overview](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md)
     + [Using the Cloud Migration Skill](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md)
-    + [Using the Cloud Migration MCP](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md)
+    + [Using AEM MCP Server Cloud Migration Capabilities](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md)
   + Code Refactoring Tools {#refactoring-tools}
     + [Getting Started with Refactoring Tools](/help/journey-migration/refactoring-tools/getting-started-refactoring-tools.md)
     + [Refactoring Tools Overview](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md)
@@ -1789,4 +1791,3 @@ user-guide-title: AEM as a Cloud Service
     + [A Quick Guide to WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
 + Troubleshooting {#troubleshooting}
   + {hide-from-toc} [Troubleshoot AEM Assets and Forms issues](/help/troubleshooting/home.md)
-

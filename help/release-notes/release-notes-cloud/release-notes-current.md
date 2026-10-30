@@ -34,7 +34,7 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2026.9.0) is September 24, 2026. The next feature release (2026.10.0) is planned for October 29, 2026.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2026.10.0) is October 29, 2026. The next feature release (2026.11.0) is planned for November 19, 2026.
 
 ## Maintenance Release Notes {#maintenance}
 
@@ -52,15 +52,14 @@ Have a look at the May 2026 Release Overview video for a summary of the features
 
 ## Release Overview {#overview}
 
-The 2026.9.0 release of [!DNL Experience Manager] as a [!DNL Cloud Service] delivers new capabilities across Assets, Forms, and Foundation, with a continued emphasis on AI-assisted authoring and discovery, richer Dynamic Media experiences, and developer productivity.
+The 2026.10.0 release of [!DNL Experience Manager] as a [!DNL Cloud Service] highlights new and recently available capabilities across Sites, Assets, Forms, and Foundation, alongside updates to developer tools and platform guidance.
 
 **Highlights of this release**
 
-* **Smarter Assets discovery and organization** — Content Hub adds AI Search for intent-based, multilingual results, Smart Collections that stay up to date automatically, and custom metadata sorting options.
-* **Richer Dynamic Media experiences** — A new, fully customizable video viewer with actionable analytics, AI-generated video captions, multi-caption and multi-audio track support, and attribute-based access control for secure delivery.
-* **AI-assisted authoring and development** — AEM agentic capabilities are now generally available in Adobe CX Enterprise Coworker, the AEM MCP Server adds Cloud Manager operations, and IDE agent skills expand with AEM query optimization and additional code-migration patterns.
-* **Foundation and platform** — Canary deployments to validate a release against production before it serves live traffic, OpenTelemetry-based APM (Limited Availability), and IMS authentication rich errors for easier troubleshooting.
-* **Plan-ahead notices** — Important timelines for Java API deprecations (September 28, 2026) and the upcoming Java 25 runtime upgrade help customers prepare their environments.
+* **More flexible content and media experiences:** Sites prerelease adds a Composite data type for Content Fragments. Assets highlights include multilingual video captions and audio tracks, branded video playback, and a GIF-based countdown timer for Dynamic Media email templates.
+* **AI-assisted governance and troubleshooting:** The AEM Governance Agent can help prioritize vulnerability findings, while new capabilities in CX Enterprise Coworker let developers inspect workflows and investigate Dispatcher behavior using natural-language prompts.
+* **Expanded developer and migration tooling:** The Cloud Migration Agent skill adds migration patterns and beta validation, and the unified AEM MCP Server now supports Cloud Migration capabilities.
+* **Platform changes to prepare for:** The AEM Cloud Service SDK supports Java 25 for local development. Review the notices on CDN egress IP allowlists, the transition from built-in New Relic APM to OpenTelemetry, and deprecated Java APIs.
 
 A range of beta, early adopter, and Limited Availability programs are also available this release. See the sections below for details.
 
@@ -111,15 +110,19 @@ See [Cloud Manager beta programs](/help/implementing/cloud-manager/release-notes
 
 See [AEM Assets beta programs](#assets-beta-program-features).
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### New features in Experience Manager Sites Prerelease {#prerelease-sites}
+
+#### Composite data type for Content Fragments
+
+Content Fragment models can now use the Composite data type to group related fields and repeat them as a list inside a fragment. Composite content is stored in the fragment itself, so GraphQL and the OpenAPIs deliver it in one response without resolving references. See [Composite Data](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#composite-data) for more information.
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 This section highlights new and recently available capabilities for [!DNL Experience Manager Assets]. It includes features that became Generally Available (GA) in the current release, as well as features that are currently in Limited Availability (LA) or Beta. LA and Beta features remain listed in this section until they become generally available.
 
-### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Limited Availability Features {#assets-limited-availability-features}
-
-#### Native Dynamic Media Template component in Adobe Journey Optimizer {#dynamic-media-component-ajo}
-
-The native Dynamic Media Template component lets marketers add and personalize AEM Dynamic Media templates directly in the Adobe Journey Optimizer email editor. Marketers can select existing templates or import layered PSD files, edit individual layers such as countdown timers, and configure text, CTAs, positioning, and timing without leaving the email editor. This enables governed, personalized, and dynamic email experiences, including open-time countdowns and personalized product content.
+### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets General Availability Features {#assets-general-availability-features}
 
 #### Dynamic Media with OpenAPI capabilities: Multi-caption and multi-audio track support for videos {#multi-caption-multi-audio}
 
@@ -129,14 +132,13 @@ Dynamic Media with OpenAPI capabilities now support [multiple captions and multi
 
 AI-generated video captions in Dynamic Media with OpenAPI capabilities [use artificial intelligence to generate captions automatically for video content](/help/assets/generate-translate-captions.md). This feature is designed to improve accessibility and enhance the user experience by providing accurate, real-time captions. The AI analyzes the video's audio track to transcribe speech and create captions, which can be edited for accuracy or customization. These captions help meet accessibility requirements and improve video engagement for audiences who rely on or prefer text-based video support.
 
-#### Dynamic Media with OpenAPI capabilities: Secure Delivery with Attribute-based Access Control {#secure-delivery-attribute-based-access-control}
+#### Dynamic Media: GIF-based countdown timer {#gif-based-countdown-timer}
 
-Attribute-based access control lets admins govern access to Dynamic Media with OpenAPI capabilities assets using metadata-driven rules defined for each user group. IMS-based restrictions allow DAM admins and brand managers to restrict delivery of specific assets to designated Adobe IMS users or groups. Users outside the permitted list receive a 404 response, and the asset is not delivered. This provides a secure way to manage asset delivery for campaigns, product launches, and other controlled distribution scenarios.
+AEM Dynamic Media now brings a [GIF-based countdown timer to email templates, creating urgency at the moment of open and driving click-through on time-sensitive offers](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-templates). Administrators can configure a Days/Hours/Mins/Secs display, a custom suffix, post-expiry fallback text, and a clickable destination URL.
 
+#### Dynamic Media: Branded video viewer and customizable presets {#new-video-viewer-presets}
 
-#### Dynamic Media: New Video Viewer {#new-video-viewer}
-
-The [new video viewer delivers a performant, accessible, and fully customizable playback experience](/help/assets/dynamic-media/new-video-viewer.md). Configurable playback modifiers, including autoplay, loop, and muted, give you complete control over viewer behavior. Custom CSS support ensures a consistent, on-brand experience across all touchpoints. Actionable analytics track views, watch time, completion rate, and engagement score, providing your teams with meaningful insights into video performance.
+Dynamic Media [Branded video viewer delivers a performant, accessible, and fully customizable playback experience](/help/assets/dynamic-media/new-video-viewer.md). Configurable playback modifiers, including autoplay, loop, and muted, give you complete control over viewer behavior. Custom CSS support and reusable [branded video viewer presets](/help/assets/dynamic-media/branded-video-viewer-presets.md) let you customize player colors, controls, button styles, playback speeds, and video presentation settings for a consistent, on-brand experience across desktop, tablet, and phone layouts. Apply presets to videos in asset details, AEM Sites components, or playback URLs. Actionable analytics track views, watch time, completion rate, and engagement score, providing meaningful insights into video performance.
 
 #### Content Hub: AI Search {#ai-search-content-hub}
 
@@ -152,13 +154,32 @@ Content Hub now allows administrators to [enable custom metadata fields as sorti
 
 #### Content Hub: Smart Collections {#smart-collections}
 
-Smart Collections enable you to automatically organize assets based on defined search criteria.
+Smart Collections enable you to [automatically organize assets based on defined search criteria](/help/assets/smart-collection-content-hub.md).
 When you create a Smart Collection, the collection stores the search query and filter criteria instead of storing individual assets. Assets that match the configured criteria are automatically displayed in the collection.
 
 Smart Collections automatically remain up to date. When newly approved assets satisfy the configured search criteria, they are automatically added to the collection.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3503809)
 
+### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Limited Availability Features {#assets-limited-availability-features}
+
+#### Native Dynamic Media Template component in Adobe Journey Optimizer {#dynamic-media-component-ajo}
+
+The native Dynamic Media Template component lets marketers add and personalize AEM Dynamic Media templates directly in the Adobe Journey Optimizer email editor. Marketers can select existing templates or import layered PSD files, edit individual layers such as countdown timers, and configure text, CTAs, positioning, and timing without leaving the email editor. This enables governed, personalized, and dynamic email experiences, including open-time countdowns and personalized product content.
+
+#### Dynamic Media with OpenAPI capabilities: Secure Delivery with Attribute-based Access Control {#secure-delivery-attribute-based-access-control}
+
+Attribute-based access control lets admins govern access to Dynamic Media with OpenAPI capabilities assets using metadata-driven rules defined for each user group. IMS-based restrictions allow DAM admins and brand managers to restrict delivery of specific assets to designated Adobe IMS users or groups. Users outside the permitted list receive a 404 response, and the asset is not delivered. This provides a secure way to manage asset delivery for campaigns, product launches, and other controlled distribution scenarios.
+
+#### Dynamic Media with OpenAPI capabilities: Barcode and QR Code delivery {#barcode-qr-code}
+
+Dynamic Media with OpenAPI capabilities can now generate barcode and QR code images on demand and deliver them through hosted image URLs, which is useful for channels such as campaign emails. Request parameter locking protects selected values, such as the barcode value and type, so a changed value can not produce a different barcode with the same lock. 
+
+To request enablement, open an Adobe Customer Support ticket.
+
+#### Content Hub: Enhanced public link sharing and governance {#enhanced-public-link-sharing}
+
+Content Hub lets you [share multiple assets and collections through public links and update existing links by adding or removing assets and collections at any time](/help/assets/share-assets-content-hub.md). Administrators can manage shared links with controls for password protection, expiration, and link revocation to help govern external access. Branded recipient experiences help maintain brand consistency when sharing assets with external stakeholders.
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta Features {#assets-beta-program-features}
 
@@ -181,6 +202,11 @@ For more information, see [Use AEM Content Advisor with the browser extension](/
 
 To send feedback, participate or learn more, send an email to `aem-content-advisor-feedback@adobe.com`.
 
+#### Dynamic Media with OpenAPI capabilities: Video Interactivity {#video-interactivity}
+
+Video Interactivity lets authors add chapters and text, image, and card overlays to videos in Dynamic Media with OpenAPI capabilities. Authors configure them in the Video Interactivity editor. The configuration is saved on the asset and delivered with the approved video metadata for playback in the new Video Viewer. 
+
+To participate or learn more, send an email to `dm-beta-feedback@adobe.com`.
 
 #### Dynamic Media: Video Engagement Report {#video-engagement-report}
 
@@ -279,7 +305,6 @@ Adobe Express integration with Assets helps all users create and edit on-brand c
 
 To participate or learn more, send an email to `aem-assets-express@adobe.com`.
 
-
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 <!--
@@ -328,84 +353,91 @@ Validate file attachments in Adaptive Forms before or on submission using custom
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation New Features {#foundation-new}
 
-#### Canary Deployments - Validate Features Before Accepting Live Traffic {#canary-deployments}
+#### Vulnerability assessment with AEM Governance Agent {#vulnerability}
 
-Available for AEM Cloud Service, [Canary deployments](/help/implementing/cloud-manager/canary-deployments.md) let you validate a new release against production infrastructure before it serves customer traffic. 
+The AEM Governance Agent can list known vulnerabilities across one or more AEM instances, including their severity and affected components. You can filter findings by CVE, severity, environment, or component to prioritize remediation. See [AEM Governance Agent use cases](/help/ai-in-aem/agentic-capabilities/brand-governance/use-cases.md).
 
-Deploy the build alongside your current stable release on the publish tier, then route selected requests to it with a request header. All other traffic continues to be served by the stable release, unaffected. The author tier remains on the stable version throughout.
+#### OpenTelemetry for Application Performance Monitoring (APM) (Limited Availability) {#otel}
 
-During the validation window of 3 hours, you can:
+Now in Limited Availability (see note below for access), AEM as a Cloud Service supports [OpenTelemetry](/help/implementing/developing/introduction/opentelemetry-apm-integration.md). OTel is an open, industry-standard way to get traces, metrics, and logs together, sent to the APM provider of your choice. Also see advanced [custom instrumentation](/help/implementing/developing/introduction/opentelemetry-custom-instrumentation.md) documentation and [tutorials](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/observability-via-opentelemetry/opentelemetry-in-aem).
 
-* Promote the canary release to serve all live traffic, or
-* Cancel it and keep the current release running.
+To get on the list for access, email [aemcs-otel-access@adobe.com](mailto:aemcs-otel-access@adobe.com), describing where you intend to ingest the data.
 
-#### AEM Agentic Capabilities with CX Coworker {#capabilities-cx}
+#### Server-to-Server OAuth Credentials in AEM Developer Console (JWT Credentials are deprecated) {#devconsole-oauth}
 
-Starting early September, [AEM agentic capabilities](/help/ai-in-aem/agentic-capabilities/overview.md) are generally available in Adobe CX Enterprise Coworker. Coworker is an AI-powered teammate for your marketing and CX teams, they describe what they need in plain language, while AEM agentic capabilities specialize in creating, updating, and readying content and experiences, all under the brand and governance controls you already have in place. Together, teams can unlock core use cases like managing content faster, discovering and readying assets for channels, and brand governance and trust.
+Service Account (JWT) credentials in the AEM Developer Console are deprecated in favor of OAuth Server-to-Server credentials. 
 
-A quick way to think about it: being seen and recommended by AI increasingly depends on high-quality, consistent content and the context around it. This helps your team produce and manage that content with more speed, quality, and scale, supporting your brand's visibility and affinity as more of your customers discover and decide through AI.
+Starting **November 4, 2026**, you can create OAuth Server-to-Server technical accounts in the AEM Developer Console. Your server-side application exchanges its client ID and client secret for an access token, so there is no JWT to sign and no private key or certificate to renew each year. While deprecated, the JWT-style credentials will be supported for the foreseeable future. For details, see [Generating Access Tokens for Server-Side APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md).
 
->[!NOTE]
->
-> * No action is required on your side; access will be enabled automatically.
-> * Once you are enabled, only the Coworker immersive experience will be available for now. The in-product right-rail panel experience will be released soon.
-> * If you have questions, please email [cx-coworker-questions@adobe.com](mailto:cx-coworker-questions@adobe.com).
+#### Dispatcher Insights and Workflow Inspection Agentic Capabilities in CX Enterprise Coworker {#capabilities-cx}
 
-#### New capabilities in AEM MCP {#aem-mcp}
+Two new developer-related agentic capabilities are now generally available in [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview). Developers and administrators can use them to investigate workflow activity and dispatcher behavior in AEM as a Cloud Service in plain language, without opening the user interface or searching log files by hand.
 
-[AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) allows you to configure a single URL in your chat application or coding agent to access a growing set of capabilities. 
+[**AEM Workflow Inspection**](/help/ai-in-aem/agentic-capabilities/brand-experience/development/use-cases.md#aem-workflow-inspection) lets you check on workflow activity directly from Coworker. Ask which workflows are running or suspended, get a status summary, see what's waiting in your workflow inbox, or find out why a workflow failed. You can look up a specific workflow, browse available workflow models, and ask follow-up questions as you troubleshoot.
 
-In addition to Content operations (pages, content fragments, and assets) and Experience Governance checks, AEM MCP now supports Cloud Manager operations to manage programs, environments, and pipelines.
+Example prompts:
 
-Cloud Manager operations were previously only available through the deprecated domain-specific MCPs. Customers using those should switch to the AEM MCP Server.
+- *What workflows are running?*
+- *Are any running or suspended workflows showing recorded errors?*
+- *What's in my workflow inbox?*
 
-The AEM MCP Server is also used by the [AEM Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md#install-adobe-experience-manager-connector) and [AEM ChatGPT Plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md#install-adobe-experience-manager-plugin).
+[**AEM Dispatcher Insights**](/help/ai-in-aem/agentic-capabilities/brand-experience/development/use-cases.md#aem-dispatcher-insights) helps you understand how your Dispatcher and Apache web tier handle requests. Coworker can analyze cache performance, investigate traffic and delivery issues, and review your security configuration. It covers three areas:
 
-<!--
+- **Caching and performance:** includes Dispatcher cache hit ratio insights, query-parameter caching, cache headers and expiration, stale content and invalidation, and slow responses.
+- **Traffic and request handling:** includes traffic patterns and bots, 4xx and 5xx errors, filter and endpoint routing, multi-site and hostname routing, redirects and vanity URLs, and header forwarding.
+- **Security:** includes sensitive-path exposure, security headers, permission-sensitive caching, and an overall review of your Dispatcher configuration.
 
-- Cloud Migration: fetch Best Practices Analyzer (BPA) findings from Cloud Acceleration Manager (CAM) by migration pattern or severity level, enabling AI agents to drive code migration from AEM 6.x to AEM as a Cloud Service. 
+Example prompts:
 
--->
-
-#### OpenTelemetry for Application Performance Monitoring (APM) (Limited Availability) {#optel}
-
-In Limited Availability (see note below for access), AEM as a Cloud Service supports [OpenTelemetry](/help/implementing/developing/introduction/opentelemetry-apm-integration.md). OTel is an open, industry-standard way to get traces, metrics, and logs together, sent to the APM provider of your choice.
-
-Use this integration to:
-
-* Investigate slow or failing requests
-* Track JVM health and resource usage over time
-* Build dashboards and alerts for your AEM tiers
-* Correlate AEM behavior with other services during incidents
-
-OpenTelemetry will be in Limited Availability on **October 19th**. To get on the list for access, email [aemcs-otel-access@adobe.com](mailto:aemcs-otel-access@adobe.com), describing your use case and how you intend on ingesting the data. 
-
-#### AEM Query Optimization in the Code Assessment Agent Skill (IDE AI Tooling) {#code-assessment-skill}
-
-AI coding agents (Claude Code, Cursor, GitHub Copilot, and similar tools) have broad knowledge of AEM's underlying technologies, but don't necessarily know best practices for generating and optimizing code or how to debug common AEM development issues. For this, Adobe provides installable agent skills, which instruct your coding agent. 
-
-Available **October 1st**, one such skill – code assessment – has expanded its capabilities to include query optimization. It checks whether a JCR/Oak query is actually served by an index — and flags index definitions that look correct but are subtly misconfigured in ways that cause missed queries or silently incomplete results.
-
-If interested in AI tooling for developers, consider watching the Adobe Developers Live 2026 session [*AI-Powered development with AEM CS & AEM Edge Functions*](https://www.youtube.com/watch?v=9SWWG3b3oNc).
+- *Summarize Dispatcher cache performance for production today and compare it with yesterday.*
+- *Why is this page still showing old content after publication?*
+- *Investigate the intermittent 502 and 503 responses in production between 10:00 and 11:00 UTC today.*
 
 #### New Capabilities in Cloud Migration Agent Skill {#cloud-migration-skill}
 
-The [AI-Assisted Code Migration](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md) skill migrates AEM 6.5 (or earlier) Java-stack projects to AEM as a Cloud Service in the IDE. The skill now generates a read-only migration runbook that assesses the whole project and lists every applicable pattern before it changes any code.
+The [AI-Assisted Code Migration](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md) skill migrates AEM 6.5 (or earlier) Java-stack projects to AEM as a Cloud Service in the IDE.
 
 The skill now includes these patterns:
 
-* Legacy UI: Classic UI, ExtJS, and Coral 2 dialogs convert to Coral 3, and custom ExtJS design widgets migrate to Granite UI.
-* Template modernization: static templates convert to editable templates with AEM Modernize Tools rewrite rules.
-* Guava cache to Caffeine: Guava cache usage switches to Caffeine, the supported Cloud Service cache library.
-* Dispatcher configuration conversion: AMS and on-premise Apache HTTPD and Dispatcher configurations convert to the Cloud Service structure.
-* Unsupported run mode (URC) detection: the skill flags OSGi configuration folders with unsupported run modes and reorders them safely where possible.
-* Vault package dependency detection: the skill flags `filevault-package-maven-plugin` (or `content-package-maven-plugin`) configurations that are missing a `<dependencies>` block, which blocks Cloud Service package deploys.
+* InputStream usage: `java.io.InputStream` findings are triaged by risk. Unclosed streams are fixed automatically, while memory, filesystem, and binary-streaming issues are proposed for your review.
+* Oak index conversion (beta): legacy `_oak_index` definitions convert to Cloud Service-compatible Oak index definitions using Adobe's Index Converter, are renamed to the Cloud Service versioned index naming (`<name>-custom-<n>`), and are checked for datatype compatibility.
 
-Existing supported patterns include Sling Scheduler, ResourceChangeListener, Replication API, OSGi EventListener and EventHandler, Assets API, HTL lint fixes, and OSGi configuration conversion.
+The skill also adds migration validation (beta), which builds and deploys migrated code to a local AEM as a Cloud Service SDK and checks the migration contract and bundle and component state. It never edits your source code.
+
+Existing supported patterns include Legacy UI (Classic UI, ExtJS, and Coral 2 dialogs to Coral 3), template modernization, Guava cache to Caffeine, Dispatcher configuration conversion, unsupported run mode (URC) detection, Vault package dependency detection, Sling Scheduler, ResourceChangeListener, Replication API, OSGi EventListener and EventHandler, Assets API, HTL lint fixes, and OSGi configuration conversion.
 
 For more information, see [AI-Assisted Code Migration to AEM as a Cloud Service](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md).
 
+#### AEM MCP Server support for Cloud Migration Capabilities {#aem-mcp-cloud-migration}
+
+[The AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) allows you to configure a single URL in your chat application or coding agent to access a growing set of capabilities. It is also used by the [AEM Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md#install-adobe-experience-manager-connector) and [AEM ChatGPT Plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md#install-adobe-experience-manager-plugin).
+
+The AEM MCP Server now supports the Cloud Migration capabilities, used by the Cloud Migration Agent skill described earlier, which migrates AEM 6.5 (or earlier) Java-stack projects to AEM as a Cloud Service in the IDE.
+
+With this addition, the AEM MCP Server has reached parity with the domain-specific MCP servers, which are now considered deprecated. Configure your MCP clients to use the unified AEM MCP Server going forward.
+
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
+
+#### Update your Allowlists with Additional Adobe-managed CDN IP Addresses {#cdn-ips}
+
+If you restrict inbound connections to your systems by IP address, you may have allowlisted the IP addresses of the Adobe-managed CDN. This is common for destinations that receive CDN data directly, such as log ingestion endpoints.
+
+New egress IP addresses are being added on January 11, 2027, at 00:00 UTC. If your allowlist doesn't include them, valid traffic from the CDN, including log data, may be rejected.
+
+**What to do before January 11, 2027:**
+
+1. Update your allowlist to include every IPv4 and IPv6 range in [this public IP list](https://api.fastly.com/public-ip-list). The list already includes the new addresses.
+2. To avoid this in the future, automate the update by monitoring the [public IP list API](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/) for changes, or by subscribing to [this status page](https://fastlystatus.com/) for "IP address announcements."
+
+If you don't allowlist the CDN's IP addresses, no action is required.
+
+#### Mandatory migration from Adobe's built-in APM integration (New Relic) to OpenTelemetry {#otel-migration}
+
+OpenTelemetry (OTel) is replacing Adobe's built-in APM integration (New Relic), which will be disabled at the end of **November 2026**. If your organization is using the built-in New Relic APM integration, see the [FAQ](/help/implementing/developing/introduction/opentelemetry-apm-integration.md#faq) for more information.
+
+#### Deprecation of Domain-specific AEM MCP Server {#domain-mcp-deprecation}
+
+The [AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#aem-mcp-server) has reached parity with the [domain-specific MCP servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#mcp-servers-provided-by-aem), which are now deprecated. Switch your MCP clients to the AEM MCP Server, which provides the same capabilities in a single endpoint.
 
 #### IMS Authentication Rich Errors {#ims-auth-rich-errors}
 
@@ -413,82 +445,33 @@ To help troubleshoot IMS integrations, `imsauth` has added support for *rich err
 
 Instead of returning only an HTTP status code, these errors provide additional context to help diagnose and resolve issues that can block authentication and access.
 
-#### Java API Deprecations {#java-api-deprecation}
+#### Java 25 for Local Development {#java25-sdk}
 
-It is critical to remove usage of deprecated APIs before **September 28, 2026**.
+The AEM Cloud Service SDK now supports building and running projects with Java 25 for local development and validation. Your AEM license entitles you to download Oracle Java 25 from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=java*+25*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=8).
 
-Since **April 14, 2026**, Cloud Manager pipelines that contain code using APIs targeting 2/26/2026 removal **fail during the Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.* 
+This is the first step toward Java 25 support in AEM as a Cloud Service. In the November release, Cloud Manager environments will let you opt in to Java 25 for the runtime, the project build, or both, so you can take advantage of performance improvements and modern Java features. Use the SDK now to validate your code and prepare for that release.
 
-Starting **September 28, 2026**, environments still using these deprecated APIs **will not receive critical Adobe release updates** and will not be subject to Adobe's standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
+#### Winter 2027 Removal of Deprecated Java APIs {#java-api-deprecation}
+
+On **March 31, 2027**, a set of deprecated Java APIs will be removed, and it is critical to take action in order to achieve security compliance. Applications that have not removed APIs will not receive new features or bug fixes, and application stability and uptime may be negatively affected, and security risk exposure may increase.
 
 See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
 
 +++ Expand to see the Java API deprecations
 
-* `org.apache.sling.commons.auth`
-* `org.apache.felix.webconsole`
-* `org.eclipse.jetty`
-* `com.mongodb`
-* `org.apache.abdera`
-* `org.apache.felix.http.whiteboard`
-* `org.apache.cocoon.xml`
-* `ch.qos.logback`
-* `org.slf4j.spi`
-* `org.slf4j.event`
-* `org.apache.log4j`
-* `com.google.common`
-* `com.drew`
-* `org.apache.jackrabbit.oak.plugins.memory`
+* `com.day.cq.wcm.commons.util`
+* `com.day.cq.xss`
+* `com.github.jknack.handlebars`
+* `org.apache.jackrabbit.webdav.client.methods`
+* `org.bson`
+* `org.apache.tika`
+* `org.apache.commons.fileupload`
+* `opennlp.tools`
+* `com.day.cq.commons.predicate`
 
 +++
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-#### Jackson bundle upgrade affects the GlobalLink connector {#jackson-upgrade-globallink-connector}
-
-AEM 6.5 LTS SP3 upgrades the Jackson bundle. This change affects deployments that use the GlobalLink translation connector.
- 
-If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier than 3.4.4.7, upgrade the bundle to a compatible version. Version 3.4.4.7 or later works with the upgraded jackson bundle in SP3.
- 
->[!NOTE]
->
->Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.4.7 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
--->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#### Preparing for Java 25: AEM Cloud Service Runtime Upgrade Timeline
+#### Preparing for Java 25: AEM Cloud Service Runtime Upgrade Timeline {#java25-announcement}
 
 Java 25 is the next long-term support (LTS) release after Java 21, delivering improvements across performance, developer productivity, and security:
 
@@ -500,14 +483,26 @@ To help organizations plan testing and validation ahead of the necessary Java 25
 
 | Timeframe | Milestone |
 |---|---|
-| **Mid-October 2026** | AEM Cloud Service SDK supports Java 25 runtime. The Java 25 JDK is available for download from the Adobe Software Distribution portal. |
-| **November 2026** | Customers are encouraged to optionally enable the Java 25 runtime in their Cloud environments to validate behavior. Early adoption maximizes time to surface and resolve issues. |
-| **February – May 2027** | Adobe will gradually migrate lower environments (RDE, Dev) to the Java 25 runtime. Customers should validate behavior and report unexpected issues, and are encouraged to enable staging and production environments as well. A temporary rollback to Java 21 is available while resolving any problems. |
-| **June 2027** | All environment runtimes (including staging and production) migrate to Java 25. Java 21 runtime is decommissioned. The AEM Cloud Service SDK will no longer support Java 21. |
+| **October 29, 2026** | AEM Cloud Service SDK supports Java 25 runtime. The Java 25 JDK is available for download from the Adobe Software Distribution portal. |
+| **November 20, 2026** | Customers are encouraged to optionally enable the Java 25 runtime in their Cloud environments to validate behavior. Early adoption maximizes time to surface and resolve issues. |
+| **January – April 2027** | Adobe will gradually migrate sandboxes and lower environments (RDE, Dev) to the Java 25 runtime. Customers should validate behavior and report unexpected issues, and are encouraged to enable staging and production environments as well. A temporary rollback to Java 21 is available while resolving any problems. |
+| **May 2027** | All environment runtimes (including staging and production) migrate to Java 25. Java 21 runtime is decommissioned. The AEM Cloud Service SDK will no longer support Java 21. |
 
 AEM Cloud Service continues to support compiling customer code with Java 11, Java 17, and Java 21. However, Adobe recommends building with Java 25 (once available in AEM) to take full advantage of the latest language features and performance improvements.
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Features {#foundation-early-adopter}
+
+#### CDN Log Forwarding to Amazon S3, Dynatrace, and New Relic (Beta Program) {#cdn-logforwarding}
+
+While logs can be downloaded from Cloud Manager, many organizations prefer to stream them to a logging destination of their choice. AEM supports forwarding AEM logs (including Apache/Dispatcher) and CDN logs to various destinations. 
+
+You can now forward CDN logs to **Amazon S3, Dynatrace, and New Relic**. Log forwarding is configured in a self-serve manner and deployed using the Cloud Manager config pipeline. Please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to join the beta program, and learn more in the [Log Forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md).
+
+#### mTLS Authentication for Log Forwarding (Beta Program) {#mtls-log-forwarding-beta}
+
+Log Forwarding now supports mutual TLS (mTLS) client certificate authentication for Splunk, Elasticsearch/OpenSearch, and HTTPS destinations, for both AEM logs (including Apache/Dispatcher) and CDN logs. AEM as a Cloud Service presents a client certificate when it connects to your logging destination, so the destination can verify that the logs come from your environment.
+
+mTLS for Log Forwarding is in beta. To join the Beta Program, email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) with your program ID and environment IDs. Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md#mtls).
 
 #### Edge Authentication for Edge Delivery Services (Beta Program) {#edge-authentication}
 
@@ -515,22 +510,15 @@ Edge Authentication lets you restrict access to Edge Delivery Services pages to 
 
 If interested, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case and any questions you may have.
 
-#### CX Enterprise Coworker: AEM Developer-Focused Capabilities (Beta Program) {#coworker-ai-troubleshooting-beta}
+#### CX Enterprise Coworker: Developer-Focused Capabilities (Beta Program) {#coworker-ai-troubleshooting-beta}
 
 Today for developers, Coworker supports AI prompts to drive Cloud Manager. We're further expanding agentic AI support for developer use cases — troubleshooting, insights, and productivity — in areas including:
 
-* **CDN and dispatcher** (e.g., *Why is my site slow? Why do I see stale content?*)
+* **CDN** (e.g., *Did my site experience any traffic spikes?*, *What's my cache hit ratio?*)
 * **Replication** (e.g., *Why is my replication queue blocked?*)
-* **Workflows** (e.g., *List any failed workflows*)
 * **Code modernization** (e.g., *Propose a patch to replace deprecated APIs*)
 
 To join the Beta Program, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com) describing your interest.
-
-#### mTLS Authentication for Log Forwarding (Beta Program) {#mtls-log-forwarding-beta}
-
-Log Forwarding now supports mutual TLS (mTLS) client certificate authentication for Splunk, Elasticsearch/OpenSearch, and HTTPS destinations, for both AEM logs (including Apache/Dispatcher) and CDN logs. AEM as a Cloud Service presents a client certificate when it connects to your logging destination, so the destination can verify that the logs come from your environment.
-
-mTLS for Log Forwarding is in beta. To join the Beta Program, email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) with your program ID and environment IDs. Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md#mtls).
 
 ## [!DNL Experience Manager] Guides {#guides}
 

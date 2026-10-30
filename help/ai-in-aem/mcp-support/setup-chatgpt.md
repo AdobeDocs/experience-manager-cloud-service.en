@@ -29,7 +29,7 @@ role_v2:
 
 This article covers two separate ways to use OpenAI ChatGPT with AEM:
 
-- Manually configure one or more of AEM's MCP servers in ChatGPT — either the unified [AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#aem-mcp-server) (recommended) or one of the [domain-specific MCP servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#mcp-servers).
+- Manually configure one or more of AEM's MCP servers in ChatGPT — either the unified [AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#aem-mcp-server).
 - Install the Adobe Experience Manager plugin from the ChatGPT plugin marketplace. It currently has feature parity with Content MCP Server and will expose a growing subset of tools available in AEM's MCP servers.
 
 ## Manually configure AEM's MCP servers in ChatGPT {#manually-configure-aems-mcp-servers-in-chatgpt}
