@@ -71,6 +71,10 @@ The content fragments enable:
 
 ## Adding a Content Fragment to Your Page {#adding-a-content-fragment-to-your-page}
 
+>[!NOTE]
+>
+>Page rendering via Core Components and the Sling Model exporter (`.model.json`) does not support [Composite fields](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#composite-data). 
+
 1. Open your page for editing.
 2. Add the **Content Fragment** component; from either the **Components** browser or **Insert New Component**.
 3. You can either:

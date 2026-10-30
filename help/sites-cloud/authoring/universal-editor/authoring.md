@@ -354,23 +354,17 @@ When you are finished editing content, you often want to navigate it to see how 
 
 In preview mode, tapping or clicking on content reacts as it would to a reader of the content. If you want to select the content for editing, toggle out of [preview mode.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
-## Editing Component Inheritance {#inheritance}
-
-Inheritance is the mechanism where content can be linked such that changing one automatically changes the other.
-
-Using the Universal Editor, you can cancel inheritance for content by simply updating the content. The editor automatically disables inheritance for all changes made by authors on that page, ensuring that modified content is retained when updates are synchronized from the blueprint.
-
-If the **AEM Multi-Site-Management (MSM) Extension** is enabled for your program, you have [additional toolbar options](#inheritance-extension) to view and change the inheritance status of an individual component within the Universal Editor.
-
-For more details on how inheritance works using the Universal Editor, see [Content Inheritance in the Universal Editor.](/help/sites-cloud/authoring/universal-editor/inheritance.md)
-
 ## Optional Toolbar Features {#toolbar-options}
 
 Additional features are available as extensions to the Universal Editor to help you further manage your pages and content. [These extensions must be enabled in your program by an administrator](/help/implementing/universal-editor/extending.md) before they are visible to you as a content author in [the Universal Editor toolbar.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
 
 ### Inheritance {#inheritance-extension}
 
-The **AEM Multi-Site-Management (MSM) Extension** displays the current inheritance status of the selected component and allows you to [break or reinstate inheritance.](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+Inheritance is the mechanism where content can be linked such that changing one automatically changes the other.
+
+Using the Universal Editor, you can cancel inheritance for content by simply updating the content. The editor automatically disables inheritance for all changes made by authors on that page, ensuring that modified content is retained when updates are synchronized from the blueprint.
+
+For more details on how inheritance works using the Universal Editor, see [Content Inheritance in the Universal Editor.](/help/sites-cloud/authoring/universal-editor/inheritance.md)
 
 The **Inheritance Installed** icon in the Universal Editor toolbar shows that inheritance is still active for the selected component.
 
@@ -384,15 +378,13 @@ The **Inheritance Broken** icon shows that inheritance has been broken for the s
 
 Tap or click the icon to reinstate inheritance for the selected component. You will need to reload the page to refresh the content in order to show the inherited content.
 
-For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
-
 >[!NOTE]
 >
 >The **Inheritance Installed** and **Inheritance Broken** icons only display when a component has been selected and the page is based on a blueprint.
 
 >[!NOTE]
 >
->The **AEM Multi-Site-Management (MSM) Extension** only works for pages, not Content Fragments.
+>Inheritance only works for pages, not Content Fragments.
 
 ### Accessing Page Properties {#page-properties}
 
@@ -439,7 +431,7 @@ If you are the user who locked the page, you can tap or click the icon to unlock
 
 ### Workflows {#workflows}
 
-The **AEM Workflows Extension** allows you to [start a workflow](/help/sites-cloud/authoring/workflows/overview.md) on the page currently in the editor.
+The **Workflows** icon allows you to [start a workflow](/help/sites-cloud/authoring/workflows/overview.md) on the page currently in the editor.
 
 ![Workflows icon](assets/workflows-icon.png)
 
@@ -452,19 +444,15 @@ Tap or click the **Workflows** icon in the Universal Editor toolbar to open the 
 1. In the **Content to include in workflow** list, use the checkboxes to define which content to include in the workflow.
 1. Tap or click **Start Workflow** to start the workflow or **Close** to abort.
 
-For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+### Local Developer Login {#developer-login}
 
-### Developer Login {#developer-login}
-
-The **AEM Universal Editor Dev Login Extension** is useful for developers who are developing locally, enabling a convenient way to authenticate to a local AEM SDK for testing purposes.
+The **Local Developer Login** icon is useful for developers who are developing locally, enabling a convenient way to authenticate to a local AEM SDK for testing purposes.
 
 ![Developer login icon](assets/developer-login-icon.png)
 
-Tap or click the **Developer Logon** icon in the Universal Editor toolbar to provide your local login credentials to sign into your local AEM SDK.
+Tap or click the **Local Developer Logon** icon in the Universal Editor toolbar to provide your local login credentials to sign into your local AEM SDK.
 
 ![Developer login modal](assets/developer-login.png)
-
-For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Optional Properties Panel Features {#properties-panel-options}
 

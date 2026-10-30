@@ -17,10 +17,6 @@ role_v2:
 
 These features are managed directly from the **Captions & Audio tracks** tab on the video asset properties page.
 
->[!NOTE]
->
->Multi Audio and Multi Caption support in Dynamic Media with OpenAPI capabilities is a limited availability feature. You can enable it by creating a [support ticket](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
-
 All supported Dynamic Media with OpenAPI capabilities video formats support multiple captions and audio tracks.
 
 ## Before you begin {#before-you-begin}
