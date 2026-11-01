@@ -5,6 +5,12 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Use Content Advisor to access AEM content in Adobe and non-Adobe applications{#content-advisor-aem-assets-adobe-non-Adobe-applications}
 
@@ -203,7 +209,7 @@ The following table illustrates the Content Advisor feature support across Adobe
 | Adobe Workfront Planning                     |  &#10003;                                            | &#10003;                                                         | &minus;                                                      |  &#10003;                                        |
 | [AEM Assets View](/help/assets/assets-view-introduction.md)                     |  &#10003;                                            | &minus;                                                         | &minus;                                                      | &minus;                                        |
 | [AEM Content Hub](/help/assets/product-overview.md)                     |  &#10003;                                            | &#10003;                                                         | &minus;                                                      |  &minus;                                        |
-| [Adobe Journey Optimizer (AJO) for B2C](http://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home)                     |  &#10003;                                            | &#10003;                                                         | &#10003;                                                      |  &#10003;                                        |
+| [Adobe Journey Optimizer (AJO) for B2C](http://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home)                     |  &#10003;                                            | &minus;                                                         | &#10003;                                                      |  &#10003;                                        |
 
 ## Content Advisor feature support across non-Adobe applications {#content-advisor-feature-support-non-adobe-applications}
 
@@ -218,7 +224,6 @@ For more information about the integrations, properties, and customizations, ref
 * [Content Advisor properties](/help/assets/content-advisor-properties.md)
 
 * [Content Advisor customizations](/help/assets/content-advisor-customization.md)
-
 
 **See also**
 

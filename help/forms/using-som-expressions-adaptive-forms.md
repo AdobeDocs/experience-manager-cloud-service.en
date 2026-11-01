@@ -5,6 +5,12 @@ feature: Adaptive Forms, Foundation Components
 role: User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 5c30d5ca-12b8-4cc6-aa95-bde562419827
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Using SOM expressions in Adaptive Forms{#using-som-expressions-in-adaptive-forms}
 

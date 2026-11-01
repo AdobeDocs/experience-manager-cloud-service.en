@@ -4,10 +4,18 @@ description: The content copy tool lets users copy mutable content On-demand fro
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # The Content Copy Tool {#content-copy}
 
-The content copy tool enables users to copy mutable content On-demand from their production environments on AEM as a Cloud Service to lower environments for testing purposes.
+The content copy tool lets users copy mutable content On-demand from their production environments on AEM as a Cloud Service to lower environments for testing purposes.
 
 >[!NOTE]
 >The primary content copy flow is from higher environments to lower environments. **Forward Flow** also allows copying from lower non-production environments to higher non-production environments (for example, Development to Stage, or RDE to Stage). See [Limitations](#limitations) for details.
@@ -137,19 +145,26 @@ After a content set is created, you can use it to copy content.
 1. (Optional) If desired, set the following:
 
    * **Include Access Control Lists** - Select if you want to copy the content's access control permissions along with the content.
-   * **Wipe** - Select to delete the existing content at the destination before starting the import, so you can begin with an empty state and avoid conflicts with existing content. If you leave **Wipe** deselected, Cloud Manager imports the new content on top of the existing destination content. A confirmation prompt appears before the wipe begins, and Cloud Manager logs the wipe action and import details for traceability.
+   * **Wipe** - Select to delete the existing content at the destination before starting the import, so you can begin with a new state and avoid conflicts with existing content. If you leave **Wipe** deselected, Cloud Manager imports the new content over the existing destination content. A confirmation prompt appears before the wipe begins, and Cloud Manager logs the wipe action and import details for traceability.
      ![Copying content](assets/content_copy_wipe-destination.png) 
      * When choosing the **Wipe destination before import** option and clicking **Copy** a popup will appear with a warning where you have the options to:
        * **Cancel** (In this case the **Copy Content** flow will not start)
        * **Confirm** (the **Copy Content** flow will start and the content on the destination will be wiped)
           ![Copying content](assets/content-copy-wipe-destination-warning.png)
 
-     *  If you don't choose **Wipe destination before import** then the **Copy Content** flow will work as before.
+     * If you do not choose **Wipe destination before import** then the **Copy Content** flow will work as before.
 
    * **Package Import Failure Policy** Select the policy to use when importing packages:
      ![Copying content](assets/content-copy-import-policy.png)
      * **Stop on first failure**: Default mode, stops after the first failure encountered.
      * **Continue with remaining packages**: Continues the import process, even after a failure. The packages (and their content) that were not successful can be found in the import logs
+
+   * **Publish content after import** check box mirrors the published state on source to destination:
+     ![Copying content](assets/content-copy-auto-publish.png)
+       * The rules used to determine the state are the following:
+           * Files with latest versions published on the destination are published on the source.
+           * Everything else in the filter is unpublished.
+
 
 1. Click **Copy**.
 
