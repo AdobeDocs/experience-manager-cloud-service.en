@@ -2,11 +2,17 @@
 title: Translate Content
 description: Use the translation connector and rules to translate your content.
 index: true
-hidefromtoc: no
+hidefromtoc: 'no'
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Translate Content {#translate-content}
 

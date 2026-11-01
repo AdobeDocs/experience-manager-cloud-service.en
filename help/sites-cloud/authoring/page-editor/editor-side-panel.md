@@ -6,7 +6,17 @@ exl-id: 5f025828-f2ca-4cbb-9cdf-a199e9e90cc7
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
+
 # Page Editor Side Panel {#side-panel}
 
 Learn how to use the side panel in the AEM sites editor to add components and assets to your page.
@@ -22,6 +32,8 @@ When you open the side panel it will slide open from the left side and you can t
 * [The components browser](#components-browser) to add new content to your page
 * [The assets browser](#assets-browser) to add new assets to your page
 * [The content tree](#content-tree) to browse the structure of your page
+
+The side panel remembers your tab selection across pages and refreshes of the page editor.
 
 ## Components Browser {#components-browser}
 
@@ -155,7 +167,7 @@ A page can easily be composed of many of the same type of components, so the con
 
 Component types are shown in the user language, whereas the component description text comes from the page language.
 
-Clicking the chevron next to a component will collapse or expand that level.
+Clicking the chevron next to a component will collapse or expand that level. The side panel remembers the collapsed or expanded state of the tree across pages and refreshes of the page editor. However the top level will always (re)load as expanded.
 
 ![Content Tree chevron expansion](assets/editor-side-panel-content-tree-chevron.png)
 

@@ -4,6 +4,15 @@ description: Learn how to use the AEM-managed CDN and how to point your own CDN 
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: 2741637d-a621-529a-b21b-bfe9be07a9c8
+    internal-label: Dispatcher
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 
 # CDN in AEM as a Cloud Service {#cdn}
@@ -77,6 +86,14 @@ Learn more in the [AEM Edge Functions article](/help/implementing/developing/int
 ### Basic authentication at the CDN {#basic-auth}
 
 For light authentication use cases including business stakeholders reviewing content, protect content by displaying a basic auth dialog requiring a username and password. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md).
+
+### CDN egress IP addresses {#cdn-egress-ips}
+
+The AEM-managed CDN's egress IP addresses may change over time. Monitor the [public IP list](https://api.fastly.com/public-ip-list) for changes; see the [Public IP List documentation](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/) for details.
+
+>[!CAUTION]
+>
+>These IP ranges are shared and are not owned by Adobe. Do not rely on them as a primary security enforcement mechanism.
 
 ## Customer managed CDN points to AEM managed CDN {#point-to-point-cdn}
 
