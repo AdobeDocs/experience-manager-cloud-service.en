@@ -4,6 +4,26 @@ description: Learn how to use the Model Context Protocol with AEM as a Cloud Ser
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+  - id: f1710108-e0d1-47e5-9952-1888729a03da
+    internal-label: Agentic AI
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Using MCP with AEM as a Cloud Service {#using-mcp-with-aem-as-a-cloud-service}
@@ -35,21 +55,17 @@ Key benefits include:
 
 ## AEM MCP Server {#aem-mcp-server}
 
-With the July 2026 AEM release, Adobe offers a unified AEM MCP Server that is recommended instead of the [domain-specific MCP servers](#mcp-servers-provided-by-aem). Configure a single URL in your chat application or coding agent to get access to a growing set of tools, covering most of what the older, domain-specific MCP servers offer.
-
-Note that the AEM MCP Server does not currently include the capabilities of the Cloud Manager and Cloud Migration MCP servers. If you need them, add them separately in your MCP client.
+Adobe offers a unified AEM MCP Server so you can configure a single URL in your chat application or coding agent to get access to a growing set of tools.
 
 The endpoint is `https://mcp.adobeaemcloud.com/adobe/mcp/aem`
 
 
 |Category|Description|On by default|Supports Read-write|Supports Read-only|
 |---|---|---|---|---|
-|**Content**|Content operations including create, read, update, and delete (CRUD) for pages and content fragments, plus asset importing and assets search (minimum required AEM release version is `26309`). There is also support for asset upload, download, move/copy/delete, and publish/unpublish for assets, along with editing metadata, inspecting references, and identifying unused assets.| Yes | Yes (default) | Yes |
+|**Content**|Content operations including create, read, update, and delete (CRUD) for pages and content fragments, plus asset importing and assets search (minimum required AEM release version is `26309`). There is also support for asset upload, download, move/copy/delete, and publish/unpublish for assets, along with editing metadata, inspecting references, and identifying unused assets. If you have Dynamic Media with OpenAPI enabled, you can also generate on-the-fly renditions.| Yes | Yes (default) | Yes |
 |**Experience Governance**|Evaluate content (text, images, pages) against brand governance rules, and list brand configurations and checks.<br/>If you are interested, you must sign up for the [agents trial or have a paid license](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) in order to access the Experience Governance MCP.| Yes, but see note | -- | Yes (default)|
-
-<!-- 
-|**Cloud Manager**|Manage Cloud Manager entities including programs, environments, repositories and pipelines, which can also be triggered.| Yes | Yes (default) | -- |
--->
+|**Cloud Manager**|Manage Cloud Manager entities including programs, environments, repositories and pipelines, which can also be triggered.| Yes | Yes (default) | Yes |
+|**Cloud Migration**| Fetch Best Practices Analyzer (BPA) findings from Cloud Acceleration Manager (CAM) by migration pattern or severity level, enabling AI agents to drive code migration from AEM 6.x to AEM as a Cloud Service. See [Using AEM MCP Server Cloud Migration Capabilities](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md).|Yes| -- | Yes (default) |
 
 Note that the AEM MCP Server is used by the [AEM Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md#install-adobe-experience-manager-connector) and [AEM ChatGPT Plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md#install-adobe-experience-manager-plugin).
 
@@ -69,19 +85,28 @@ Note that this list of high-level capabilities is different from the raw tool li
 
 ## Domain-Specific MCP Servers {#mcp-servers-provided-by-aem}
 
-AEM also exposes domain-specific MCP servers, but it is recommended to use the [AEM MCP Server](#aem-mcp-server) instead. Note that since it does not currently support the Cloud Migration or Cloud Manager MCP servers, you can configure those separately if needed. The endpoints below are relative to `https://mcp.adobeaemcloud.com/adobe/mcp`; for example, configure `https://mcp.adobeaemcloud.com/adobe/mcp/content` for the Content MCP Server.
+>[!IMPORTANT]
+>
+> AEM's domain-specific MCP servers are now deprecated. Switch to the [AEM MCP Server](#aem-mcp-server).
+>
+
++++ Expand for more information
+
+The endpoints below are relative to `https://mcp.adobeaemcloud.com/adobe/mcp`; for example, configure `https://mcp.adobeaemcloud.com/adobe/mcp/content` for the Content MCP Server.
 
 ### MCP Servers {#mcp-servers}
 
 |MCP Server|Endpoint|Description|On by default|
 |---|---|---|---|
-|**Content**|`/content`|Content operations including create, read, update, and delete (CRUD) for pages and content fragments, plus asset importing and assets search (minimum required AEM release version is `26309`). |Yes|
-|**Content (read-only)**|`/content-readonly`|Read-only content operations (get, list/search) for pages and content fragments, plus assets search (minimum required AEM release version is `26309`). With the [AEM Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md) and the [AEM ChatGPT Plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md), there is also support for asset download, inspecting references, and identifying unused assets.|Yes|
-|**Cloud Manager**|`/cloudmanager`|Manage Cloud Manager entities including programs, environments, repositories and pipelines, which can also be triggered.|Yes|
-|**Experience Governance**|`/experience-governance`|Evaluate content (text, images, pages) against brand governance rules, and list brand configurations and checks.<br/>If you are interested, you must sign up for the [agents trial or have a paid license](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) in order to access the Experience Governance MCP.| Yes, but see note|
-|**Cloud Migration**|`/cloud-migration`|Fetch Best Practices Analyzer (BPA) findings from Cloud Acceleration Manager (CAM) by migration pattern or severity level, enabling AI agents to drive code migration from AEM 6.x to AEM as a Cloud Service. See [Using the Cloud Migration MCP](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md).|Yes|
+|**Content**|`/content`|Content operations including create, read, update, and delete (CRUD) for pages and content fragments, plus asset importing and assets search (minimum required AEM release version is `26309`). Use the AEM MCP server instead. |Yes|
+|**Content (read-only)**|`/content-readonly`|Read-only content operations (get, list/search) for pages and content fragments, plus assets search (minimum required AEM release version is `26309`). With the [AEM Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md) and the [AEM ChatGPT Plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md), there is also support for asset download, inspecting references, and identifying unused assets. Use the AEM MCP server instead.|Yes|
+|**Cloud Manager**|`/cloudmanager`|Manage Cloud Manager entities including programs, environments, repositories and pipelines, which can also be triggered. It is recommended to use the AEM MCP server instead.|Yes|
+|**Experience Governance**|`/experience-governance`|Evaluate content (text, images, pages) against brand governance rules, and list brand configurations and checks.<br/>If you are interested, you must sign up for the [agents trial or have a paid license](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) in order to access the Experience Governance MCP. Use the AEM MCP server instead. | Yes, but see note|
+|**Cloud Migration**|`/cloud-migration`|Fetch Best Practices Analyzer (BPA) findings from Cloud Acceleration Manager (CAM) by migration pattern or severity level, enabling AI agents to drive code migration from AEM 6.x to AEM as a Cloud Service. See [Using AEM MCP Server Cloud Migration Capabilities](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md). Use the AEM MCP server instead. |Yes|
 
 Reference the [Content MCP Server Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) and [Cloud Manager MCP Server Video](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) for more information about their capabilities and how to use them.
+
++++ 
 
 ## Supported MCP Applications {#supported-mcp-applications}
 
@@ -90,6 +115,7 @@ The MCP servers are designed to work with a defined set of MCP-compatible applic
 ### Chat Applications (Web & Desktop) {#chat-applications}
 
 * Anthropic Claude
+* Microsoft 365 Copilot
 * OpenAI ChatGPT
 
 ### Developer Tools (IDE Extensions, Desktop Apps, CLIs) {#developer-tools}
@@ -103,12 +129,15 @@ The MCP servers are designed to work with a defined set of MCP-compatible applic
 * Kiro (Desktop App, CLI)
 * OpenAI Codex (Desktop App)
 * OpenAI Codex CLI
+* Snowflake CoCo (Desktop App, CLI) 
 * Windsurf
 
 ### Enterprise Platforms {#enterprise-platforms}
 
 * Amazon Quick
 * Microsoft Copilot Studio
+* Snowflake CoWork
+* Workfront Fusion
 
 ## Setup Overview {#setup-overview}
 
@@ -140,7 +169,6 @@ For granular control over which MCP capabilities are available, email Adobe supp
 You can request the following restrictions:
 
 * **AEM MCP Server** - disable it entirely, disable specific categories, or change the default read-write vs. read-only behavior by category (where supported, per the [AEM MCP Server table](#aem-mcp-server)).
-* **Domain-specific MCP Servers** - disable a [specific server](#mcp-servers).
 
 By default, restrictions apply at the organizational level. If you need restrictions scoped more narrowly, choose one of the following levels and provide the desired behaviors for **every** instance at that level:
 
@@ -150,7 +178,34 @@ By default, restrictions apply at the organizational level. If you need restrict
 
 >[!NOTE]
 >
->The AEM MCP Server inherits any restrictions configured on the domain-specific MCP servers.
+>The AEM MCP Server inherits any restrictions previously configured on the deprecated domain-specific MCP servers.
+
+##### Allowing the AEM MCP Server on IP-Restricted Environments {#allowing-aem-mcp-server-on-ip-restricted-environments}
+
+If an environment restricts access by IP address, for example with a Cloud Manager IP allowlist or a traffic filter rule that blocks requests from other IP addresses, AEM MCP Server requests to that environment are blocked by default.
+
+The AEM MCP Server can be identified in CDN traffic filter rules using the `clientService` request property, which has the value `adobe/aemmcp` for AEM MCP Server requests. Do not add AEM MCP Server IP addresses to your IP allowlists. Instead, add the following traffic filter rule to your `cdn.yaml` file and deploy it with a config pipeline:
+
+```yaml
+kind: "CDN"
+version: "1"
+data:
+  trafficFilters:
+    rules:
+      - name: allow-aemmcp
+        when: { reqProperty: clientService, equals: "adobe/aemmcp" }
+        action: bypass
+```
+
+The `bypass` action exempts matching requests from traffic filter block rules and also from the IP restrictions of Cloud Manager IP allowlists. The rule applies to all tiers and paths, so the AEM MCP Server can perform every operation that users are permitted to perform in AEM. The rule only matches requests from the AEM MCP Server, which Adobe identifies with `clientService` `adobe/aemmcp`. All other traffic to the environment remains subject to your Cloud Manager IP allowlists and traffic filter rules.
+
+The `bypass` action is similar to `allow`, but stronger: it also overrides Cloud Manager IP allowlists. If no Cloud Manager IP restrictions are configured, `bypass` and `allow` behave the same.
+
+>[!NOTE]
+>
+>The rule does not grant any additional permissions. Every request still runs under the authenticated user's identity, and AEM enforces that user's existing permissions.
+
+For general information about the `cdn.yaml` file, traffic filter rules, and deployment with a config pipeline, see [Traffic filter rules including WAF rules](/help/security/traffic-filter-rules-including-waf.md).
 
 #### Managing MCP Client Access {#managing-mcp-client-access}
 
@@ -215,6 +270,12 @@ Some representative scenarios include:
    >[!NOTE]
    >
    >Minimum required AEM release version to access **Assets Search** via MCP endpoint is `26309`.
+
+* Content (image) optimization: Generate web-optimized image URLs with resizing, cropping, Smart Crop, and conversion to WebP, AVIF, PNG, and other formats.
+
+   >[!NOTE]
+   >
+   >You must have Dynamic Media with OpenAPI enabled to generate on-the-fly renditions.
 
 ### Example Workflows {#example-workflows}
 

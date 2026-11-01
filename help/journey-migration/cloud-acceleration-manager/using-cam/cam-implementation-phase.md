@@ -4,6 +4,15 @@ description: This page provides an overview on the implementation phase in Cloud
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
 feature: Migration
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: 5be0fc8f-1cff-5c3e-bb92-2903a56a3de6
+    internal-label: Migration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Implementation Phase in Cloud Acceleration Manager {#implementation-phase-cam}
 
@@ -17,10 +26,11 @@ The Implementation Phase includes:
 
 Click your project card so you can open the project landing page and navigate to the **Implementation** section, as shown in the following figure.
 
-   ![Project landing page - Implementation](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
+![Project landing page - Implementation](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
-   >[!NOTE]
-   >See [Creating and Managing a Project in Cloud Acceleration Manager](getting-started-cam.md#create-project) to learn more.
+>[!NOTE]
+>
+>See [Creating and Managing a Project in Cloud Acceleration Manager](getting-started-cam.md#create-project) to learn more.
 
 
 ## Using Local Development Card {#local-development}
@@ -56,8 +66,9 @@ Follow this section so you can explore the Code Refactoring activity card:
    * Dispatcher
    * Testing
 
-  >[!NOTE]
-  >Review the content in these tabs to understand some additional areas that are not covered by the Best Practices Analyzer.
+   >[!NOTE]
+   >
+   >Review the content in these tabs to understand some additional areas that are not covered by the Best Practices Analyzer.
    
    The **Dispatcher** tab provides information on how to structure the AEM as a Cloud Service Apache and Dispatcher configurations, and how to validate and run it locally before deploying to Cloud environments. It also describes debugging in Cloud environments.
    

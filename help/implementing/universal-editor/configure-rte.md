@@ -4,6 +4,14 @@ description: Understand how you can configure the rich text editor (RTE) in the 
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Configuring the RTE for the Universal Editor {#configure-rte}
@@ -59,7 +67,7 @@ The toolbar configuration controls which editing options are available in the UI
 {
   "toolbar": {
     // Text formatting options
-    "format": ["bold", "italic", "underline", "strike", "text_color"],
+    "format": ["bold", "italic", "underline", "strike", "code_inline", "text_color"],
     // Text alignment options
     "alignment": ["left", "center", "right", "justify"],
     // Text direction options, right-to-left or left-to-right
@@ -71,11 +79,11 @@ The toolbar configuration controls which editing options are available in the UI
     // List options
     "list": ["bullet_list", "ordered_list"],
     // Content insertion
-    "insert": ["link", "unlink", "image", "special_characters"],
+    "insert": ["link", "unlink", "image", "table", "special_characters"],
     // Superscript/subscript
     "sr_script": ["superscript", "subscript"],
     // Editor utilities
-    "editor": ["removeformat", "clean_unsupported_tags", "paste_text", "fullscreen"],
+    "editor": ["removeformat", "clean_unsupported_tags", "paste_text", "fullscreen", "find_and_replace"],
     // Advanced items (e.g. the class picker).
     "advanced": ["classes"],
     // Section ordering (optional)
@@ -440,7 +448,7 @@ The dropdown only appears when at least one option is configured. The plugin shi
 }
 ```
 
-Each entry has value (the CSS class name written to the HTML) and label (the human-readable text shown in the dropdown).
+Each entry has value (the CSS class name written to the HTML) and label (the human-readable text shown in the dropdown). Only one class is allowed to be defined as the `value` per object in the `options` array.
 
 The target follows the closest-to-caret-wins rule:
 
@@ -781,6 +789,16 @@ Format actions allow switching between HTML variants.
 |`strike`|`<del>`|`<s>`|Visual vs. semantic deletion|
 
 Choose semantic tags (`<strong>`, `<em>`, `<del>`) for better accessibility and SEO.
+
+### Inline Code {#inline-code}
+
+The `code_inline` format option marks a span of text as inline code, rendering `<code>` (for example, referencing a `foo()` call inside a sentence). Unlike `bold`/`italic`/`strike` it has no tag-switching option, and it excludes all other marks. Inline code is rendered verbatim, so `bold`/`italic`/`link` can not be applied on top of it. The default keyboard shortcut is `Mod-e`.
+
+This is distinct from the `code_block` block (`<pre><code>`) available in the `blocks` dropdown. `code_inline` is an inline mark within a line, while `code_block` is a standalone, multi-line block. Code blocks hold plain text only (no marks), so an inline `<code>` is never nested inside a `<pre>`.
+
+```html
+Use the <code>foo()</code> helper here.
+```
 
 ### Text Color {#color}
 

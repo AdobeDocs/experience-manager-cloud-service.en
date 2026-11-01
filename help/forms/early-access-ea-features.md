@@ -7,6 +7,16 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # AEM Forms Early Access Program
 
@@ -164,30 +174,6 @@ Ready to start? [Learn more about integrating AEM Forms with Adobe Experience Pl
 
 -->
 
-### AEM Forms HTML5 Forms
-
-AEM Forms HTML5 Forms enables you to render existing XFA (XML Forms Architecture) form templates in HTML5 format, making them accessible on modern browsers and mobile devices where XFA-based PDF is not supported. This capability bridges the gap between traditional PDF forms and modern web experiences.
-
-![HTML5 Forms Preview](/help/forms/assets/mobile_form_on_an_ipad_date_14.png)
-
-**Key capabilities:**
-
-* **HTML5-based rendering of XFA form templates**: Render your existing XFA-based forms in HTML5 format to expand your client platform to mobile devices (Apple iPad, Android tablet, smartphones, and more) that support HTML5 but do not support Adobe Reader with XFA Forms.
-
-* **Mobile-ready forms**: HTML5 Forms bring numerous capabilities that are mobile-ready, helping you expand your current solutions and workflows to tablets or smartphones with HTML5 browsers.
-
-* **Accessibility support**: HTML5 Forms use the ARIA HTML5 accessibility standard and support tabbed navigation, making them compatible with common screen readers like JAWS and VoiceOver.
-
-* **Customization capabilities**: You can customize the appearance of existing widgets, create your own custom widgets, or use custom styles in forms using standard web technologies like CSS and JavaScript.
-
-* **Right-to-left language support**: HTML5 Forms support right-to-left languages such as Hebrew, allowing you to display and fill forms in RTL languages.
-
-* **Attachment support**: Upload, preview, and submit attachments with HTML5 forms for enhanced data collection.
-
-* **Draft saving**: Save an HTML5 form as a draft and resume filling the form at a later stage.
-
-Ready to start? The [Introduction to HTML5 forms](/help/forms/introductionhtml5.md) documentation provides a comprehensive overview and getting started guide for this innovation.
-
 ### AEM Forms Scaffolder CLI for Custom Components
 
 Accelerate your AEM Forms Edge Delivery Services development with the AEM Forms CLI tool. This command-line interface enables you to instantly generate the code and wiring needed to kickstart custom component development—no boilerplate, no hassle.
@@ -219,6 +205,18 @@ Adaptive Forms can now pass every uploaded file attachment to a virus scanner or
 * **Multiple configurations**: Register more than one validator — one per antivirus engine, or several differently configured instances of the same engine — and choose which one (or none) applies per form.
 
 Ready to start? [Scan file attachments in Adaptive Forms with a custom validator](/help/forms/scan-file-attachments-custom-validator.md) covers the concepts and the interface reference, and [Tutorial: Scan file attachments with ClamAV](/help/forms/scan-file-attachments-clamav.md) walks through a complete, working example end to end.
+
+### Agentic Form Filling
+
+Agentic Form Filling lets customers complete published Adaptive Forms through AI assistants, website chatbots, or WhatsApp. Unlike the Conversational Forms component embedded in an AEM Sites page, this service supports form filling across these channels.
+
+**Key capabilities:**
+
+* **Use the forms you already have**: Reuse published Adaptive Forms with supported rules and validations and their configured submit action.
+* **Guided or natural-language answers**: Collect structured answers one group of fields at a time, or let customers answer in their own words and have AI extract the values.
+* **Personal data protection**: Personal details in form answers are masked before the service sends those answers to its AI model for field extraction.
+
+To request access, email your organization ID and program details to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address.
 
 <!--
 

@@ -5,6 +5,12 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Edit images in [!DNL Assets view] {#edit-images-in-assets-view}
 
@@ -43,7 +49,7 @@ Resizing an image to a specific size is a popular use case. Assets View lets you
 1. Click **[!UICONTROL Apply]** to apply your changes.
    ![Image editing with Adobe Express](assets/adobe-express-resize-image.png)
 
-   Your edited image is available for download. You can either save the edited asset as a new version of the same asset or save it as a new asset.
+   You can either save the edited asset as a new version of the same asset or save it as a new asset.
    ![Save image with Adobe Express](assets/adobe-express-resize-save.png)
 
 #### Remove background {#remove-background-using-express}
@@ -54,7 +60,7 @@ You can remove background from an image by following the steps mentioned below:
 1. Click **[!UICONTROL Apply]** to apply your changes.
 ![Save image with Adobe Express](assets/adobe-express-remove-background.png)
 
-   Your edited image is available for download. You can either save the edited asset as a new version of the same asset or save it as a new asset.
+   You can either save the edited asset as a new version of the same asset or save it as a new asset.
 
 #### Crop image {#crop-image-using-express}
 
@@ -64,7 +70,7 @@ Transforming an image into a perfect size is simple using embedded [!DNL Adobe E
 2. Drag the handles on the corners of the image to create your desired crop.
 3. Click **[!UICONTROL Apply]**.
    ![Save image with Adobe Express](assets/adobe-express-crop-image.png)
-   The cropped image is available for download. You can either save the edited asset as a new version of the same asset or save it as a new asset.
+   You can either save the edited asset as a new version of the same asset or save it as a new asset.
 
 #### Convert JPEG to PNG {#convert-image-types-using-express}
 

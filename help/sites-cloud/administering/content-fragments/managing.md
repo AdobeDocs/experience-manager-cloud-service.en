@@ -6,6 +6,20 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Managing Content Fragments {#managing-content-fragments}
 
@@ -190,20 +204,15 @@ Selecting a specific fragment opens a toolbar focused on the actions available f
 * **[Manage Tags](#view-and-manage-tags)**
 * **[Copy](#copy-a-content-fragment)**
 * **[Replace](#find-and-replace)**
-* **[Preview](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md#preview-your-fragment-with-a-template)**
+* **[Preview](#publishing-and-previewing-a-fragment)**
 * **Move**
 * **Rename**
 * **[Check Out and Check In](#check-out-and-check-in)**
-* **[Delete](#deleting-a-fragment)** (only available for unpublished fragments)
-
-<!-- CQDOC-23473 - feature is beta, activate when GA -->
-<!--
 * [Reuse Content Fragments using MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md) actions:
   * **[Create Live Copy](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#create-a-live-copy)**
   * **[Synchronize](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#synchronize)**
   * **[Rollout](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#rollout)**
 * **[Delete](#deleting-a-fragment)** (only available for unpublished fragments)
--->
 
 >[!NOTE]
 >
@@ -236,6 +245,10 @@ The following actions are available:
 * **Delete**
 
   After confirmation you can delete the folder.
+
+* **Publish**
+
+  After confirmation you can publish all [fragments in the folder](#publish-folder) according to your specifications.
 
 ## Creating Content Fragments {#creating-content-fragments}
 
@@ -452,13 +465,19 @@ You can:
 
   * the **[Preview Service](/help/headless/deployment/architecture.md)** - to [preview](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) the content prior to full availability
 
-    >[!CAUTION]
-    >
-    >Publishing Content Fragments to the **Preview Service** is only available from the Content Fragments console; using the **Publish** action.
+You can publish your Content Fragments using the **Publish** option for either:
 
-    >[!NOTE]
-    >
-    >For more details about the Preview environments, see [Manage Environments](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+* For [individually selected fragments](#publish-individually-selected-fragments)
+
+* For all [fragments in a folder](#publish-folder)
+
+>[!CAUTION]
+>
+>Publishing Content Fragments to the **Preview Service** is only available from the Content Fragments console; using the **Publish** action.
+
+>[!NOTE]
+>
+>For more details about the Preview environments, see [Manage Environments](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 >[!CAUTION]
 >
@@ -466,13 +485,19 @@ You can:
 >
 >If you publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
 
+>[!CAUTION]
+>
+>If the Content Fragment Model contains Composite Data Fields, then the Content Fragment Models defining the structure of those Composite fields must also be published.
+>
+>See also [AEM Content Fragment Delivery with OpenAPI - Deliver a Composite Item](/help/headless/aem-content-fragment-delivery-with-openapi.md#deliver-a-composite-item)
+
 >[!TIP]
 >
 >Content Fragments can be [published to Edge Delivery Services.](https://www.aem.live/developer/content-fragment-overlay)
 
-### Publishing {#publishing}
+### Publish individually selected fragments {#publish-individually-selected-fragments}
 
-You can publish your Content Fragments using the **Publish** option from either:
+To publish individually selected fragments use either:
 
 * the toolbar of the [Content Fragments console](#actions-selected-content-fragment)
 
@@ -502,6 +527,22 @@ After publication the fragment status will be updated and visible in the editor 
 >[!NOTE]
 >
 >In addition, when you [publish a page that uses the fragment](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing); the fragment will be listed in the page references.
+
+### Publish Folder {#publish-folder}
+
+To select fragments from a specific folder:
+
+1. Select the **Publish** action for the required folder.
+
+   ![Content Fragments - folder actions](/help/sites-cloud/administering/content-fragments/assets/cf-managing-folder-actions.png)
+
+1. A dialog will open. Here you can specify your criteria:
+
+   ![Content Fragments - Publish criteria](/help/sites-cloud/administering/content-fragments/assets/cf-managing-folder-publish-dialog.png)
+
+1. Select **Publish** to confirm the publish action.
+
+After publication the fragment status will be updated and visible in the editor and console. 
 
 ## Unpublishing a Fragment {#unpublishing-a-fragment}
 
@@ -703,6 +744,8 @@ Full-text search allows you to search the Content Fragment content for a specifi
 Will provide the selected results:
 
 ![Content Fragments console - Search Results](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-full-text-search-results.png)
+
+Text within composite items is searchable. When a match is found, the parent Content Fragment is returned in search results.
 
 ### AI search (Semantic search) {#ai-search}
 

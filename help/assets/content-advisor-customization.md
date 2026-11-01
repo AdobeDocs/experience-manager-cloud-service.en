@@ -4,13 +4,20 @@ description: Use functions to customize Content Advisor within your application.
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Content Advisor customizations {#content-advisor-customization}
  
 Content Advisor allows you to customize various components according to preferences, requirements, or functional needs. You can customize the following components [Micro-Frontend Content Advisor](#overview-asset-selector.md):
 
 * [Customize filter panel](#customize-filter-panel)
-* [Customize information in modal view](#customize-info-in-modal-view)
 * [Enable or disable drag and drop mode](#enable-disable-drag-and-drop)
 * [Selection of Assets](#selection-of-assets)
 * [Customize expired assets](#customize-expired-assets)
@@ -100,20 +107,6 @@ You can add the following code snippet in `assetSelectorProps` object to customi
       "groupKey":"FoodCategoryGroup"
    }
 ]
-```
-
-## Customize information in modal view {#customize-info-in-modal-view}
-
-You can customize the details view of an asset when you click the ![info icon](assets/info-icon.svg) icon. Execute the code below:
-
-```
-// Create an object infoPopoverMap and set the property `infoPopoverMap` with it in assetSelectorProps
-const infoPopoverMap = (map) => {
-// for example, to skip `path` from the info popover view
-let defaultPopoverData = PureJSSelectors.getDefaultInfoPopoverData(map);
-return defaultPopoverData.filter((i) => i.label !== 'Path')
-};
-assetSelectorProps.infoPopoverMap = infoPopoverMap;
 ```
 
 ## Enable or disable drag and drop mode {#enable-disable-drag-and-drop}

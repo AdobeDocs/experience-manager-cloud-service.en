@@ -4,6 +4,15 @@ description: Running the Content Transfer Tool on a Publish Instance
 exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
 feature: Migration
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: 5be0fc8f-1cff-5c3e-bb92-2903a56a3de6
+    internal-label: Migration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Running the Content Transfer Tool on a Publish Instance {#run-content-transfer-tool-publish-instance}
 

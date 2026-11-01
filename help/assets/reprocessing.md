@@ -6,6 +6,16 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 4759fa8c-10c7-4446-a135-3104b9beaee8
 feature: Asset Processing
 role: User, Leader, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Reprocessing digital assets {#reprocessing-digital-assets}
 
@@ -52,6 +62,16 @@ See [use asset microservices and processing profiles](https://experienceleague.a
   ![Advanced Reprocessing Assets Options2](assets/reprocessing-assets-options-advanced-2.png)
 
 After selecting the appropriate options, click **[!UICONTROL Reprocess]**. The success message appears.
+
+>[!IMPORTANT]
+>
+>Both `Full` and `Metadata-only` reprocess operations might replace metadata that has been added to an asset after it was first uploaded if: 
+>
+>* The nearest ancestor metadata profile is applied
+>
+>* XMP extraction is re-run
+>
+>If either of these update properties that had previously been manually entered in the asset metadata, then the manually entered values are overwritten.
 
 ## Scenarios for reprocessing digital assets {#scenarios-reprocessing}
 

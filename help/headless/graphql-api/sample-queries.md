@@ -4,6 +4,17 @@ description: Learn to use GraphQL with AEM so you can serve content headlessly b
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Learning to use GraphQL with AEM - Sample Content and Queries {#learn-graphql-with-aem-sample-content-queries}
 
@@ -411,7 +422,7 @@ query {
 
 ### Sample Query - Full Details of a Company's CEO and Employees {#sample-full-details-company-ceos-employees}
 
-Using the structure of the nested fragments, this query returns the full details of a company's CEO and all its employees.
+Using the structure of the referenced fragments, this query returns the full details of a company's CEO and all its employees.
 
 **Sample Query**
 
@@ -927,9 +938,9 @@ query {
 }
 ```
 
-### Sample Query for Nested Content Fragments - All companies that have at least one employee that has a name of "Smith" {#sample-companies-employee-smith}
+### Sample Query for Referenced Content Fragments - All companies that have at least one employee that has a name of "Smith" {#sample-companies-employee-smith}
 
-This query illustrates filtering for any `person` of `name` "Smith", returning information from across two nested fragments - `company` and `employee`.
+This query illustrates filtering for any `person` of `name` "Smith", returning information from across two referenced fragments - `company` and `employee`.
 
 **Sample Query**
 
@@ -993,9 +1004,9 @@ query {
 }
 ```
 
-### Sample Query for Nested Content Fragments - All companies where all employees have won the "Gamestar" award {#sample-all-companies-employee-gamestar-award}
+### Sample Query for Referenced Content Fragments - All companies where all employees have won the "Gamestar" award {#sample-all-companies-employee-gamestar-award}
 
-This query illustrates filtering across three nested fragments - `company`, `employee`, and `award`.
+This query illustrates filtering across three referenced fragments - `company`, `employee`, and `award`.
 
 **Sample Query**
 
@@ -1087,7 +1098,7 @@ query {
 
 ### Sample Query for Metadata - List the Metadata for Awards titled GB {#sample-metadata-awards-gb}
 
-This query illustrates filtering across three nested fragments - `company`, `employee`, and `award`.
+This query illustrates filtering across three referenced fragments - `company`, `employee`, and `award`.
 
 **Sample Query**
 
@@ -1305,7 +1316,7 @@ This sample query interrogates:
 }
 ```
 
-### Sample Query for a Nested Content Fragment - Single Model Type{#sample-wknd-nested-fragment-single-model}
+### Sample Query for a Referenced Content Fragment - Single Model Type{#sample-wknd-referenced-fragment-single-model}
 
 This query interrogates:
 
@@ -1333,7 +1344,7 @@ This query interrogates:
 }
 ```
 
-### Sample Query for a Nested Content Fragment - Multiple Model Type{#sample-wknd-nested-fragment-multiple-model}
+### Sample Query for a Referenced Content Fragment - Multiple Model Type{#sample-wknd-referenced-fragment-multiple-model}
 
 #### Single referenced model type
 

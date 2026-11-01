@@ -5,6 +5,20 @@ feature: Edge Delivery Services
 hide: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Translate and localize an Edge Delivery Services for AEM Forms
@@ -37,7 +51,7 @@ You can refer to the [spreadsheet](/help/forms/assets/enquirytranslate.xlsx) con
 ![Enquiry Translated Form](/help/forms/assets/translate-form-french.png)
 
 Refer to the URL below, where you can view the form with its French language translation:
-https://main--portal--wkndforms.hlx.live/enquirytranslate
+https://main--portal--wkndforms.aem.live/enquirytranslate
 
 ## Translate forms within SharePoint Site{#translate-form-sharepoint}
 
@@ -57,7 +71,7 @@ Refer to the [spreadsheet](/help/forms/assets/enquirytranslate-sp.xlsx) containi
 ![Enquiry Translated Form](/help/forms/assets/translate-form-french.png)
 
 Refer to the URL below, where you can view the form with its French language translation:
-https://main--wefinance--wkndforms.hlx.live/enquirytranslate 
+https://main--wefinance--wkndforms.aem.live/enquirytranslate 
 
 ## Known issues {#known-issues}
 

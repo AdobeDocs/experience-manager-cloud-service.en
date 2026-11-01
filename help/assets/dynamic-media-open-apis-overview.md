@@ -4,6 +4,12 @@ description: Learn key concepts such as why use Dynamic Media with OpenAPI capab
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Dynamic Media with OpenAPI capabilities {#new-dynaminc-media-apis-overview}
 
@@ -22,6 +28,8 @@ Dynamic Media with OpenAPI capabilities provides the following key benefits:
 * **Real-time updates**: Any changes made to approved assets in DAM, including version updates and metadata modifications, are automatically reflected in the delivery URLs. With a short Time-to-Live (TTL) value of 10 minutes configured for Dynamic Media with OpenAPI capabilities via CDN, updates become visible across all authoring and published interfaces in under 10 minutes. 
 
 * **Brand consistency**: Only [brand-approved assets](/help/assets/approve-assets.md) are exposed to downstream applications. [Brand Managers and Marketers maintain strict control over brand assets](/help/assets/restrict-assets-delivery.md). Only approved and latest version of the asset is available for use, ensuring brand consistency across all channels and applications.
+
+* **Enhanced video experiences**: Dynamic Media with OpenAPI capabilities provides advanced video capabilities that improve accessibility, localization, responsive delivery, and content presentation. These capabilities include support for [multiple audio tracks and captions](/help/assets/multi-audio-multi-caption.md), [automatic caption generation and translation](/help/assets/generate-translate-captions.md), [Video Smart Crops](/help/assets/video-smart-crops.md) that dynamically keep key subjects in focus across different aspect ratios and devices, and [customizable video thumbnails](/help/assets/dynamic-media/custom-thumbnail.md).
 
 * **Web-optimized delivery**: Digital assets are delivered in web-optimized formats to enhance your digital experiences' Core Web Vitals. This includes support for WebP renditions for images, adaptive streaming through HLS or DASH protocols for videos, and original renditions for documents.
 

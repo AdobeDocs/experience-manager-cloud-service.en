@@ -5,6 +5,16 @@ role: Admin, Developer, User
 feature: Adaptive Forms
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Groups and permissions {#aem-forms-on-osgi-groups-and-privileges}
 
@@ -69,16 +79,8 @@ Once you setup [!DNL AEM Forms] as a Cloud Service, the groups listed in the bel
      <li>Create and modify a form data model</li> 
     </ul> </td> 
   </tr>
-  <!--
-   <tr>
-   <td>cm-agent-users</td> 
-   <td>
-    <ul> 
-     <li>Access Correspondence Management letters or interactive communications using Agent UI</li> 
-    </ul> </td> 
-  </tr>
   <tr>
-   <td><p>workflow-editors</p> </td> 
+   <td><p>[!DNL workflow-editors]</p> </td> 
    <td>
     <ul>
     <li>Create an inbox application</li>
@@ -89,11 +91,16 @@ Once you setup [!DNL AEM Forms] as a Cloud Service, the groups listed in the bel
    <td>[!DNL workflow-users]</td> 
    <td>
     <ul> 
-     <li>Use AEM inbox applications<br />
-     <strong>Note: </strong>You must have cm-agent-users and [!DNL workflow-users] group assignments to access Interactive Communications Agent UI in AEM inbox.</li>
+     <li>Use AEM inbox applications</li>
   </ul> </td> 
   </tr>
-  -->
+  <tr>
+   <td>[!DNL forms-associates]</td> 
+   <td>
+    <ul> 
+     <li>Access the Associate UI in Interactive Communications</li>
+  </ul> </td> 
+  </tr>
   <tr>
    <td>[!DNL fd-administrators]</td> 
    <td>

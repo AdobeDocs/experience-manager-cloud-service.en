@@ -4,6 +4,14 @@ description: A content fragment extends a standard asset. Learn how you can cust
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 feature: Developing, Content Fragments
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Customizing and Extending Content Fragments{#customizing-and-extending-content-fragments}
 
@@ -162,7 +170,7 @@ Content fragments can be integrated with:
 
 You can use the server-side API to access your content fragments; see:
 
-[com.adobe.cq.dam.cfm](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
+[com.adobe.cq.dam.cfm](https://experienceleague.adobe.com/en/tools/aem-api-documentation/cloud-service/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
@@ -172,7 +180,7 @@ You can use the server-side API to access your content fragments; see:
 
 The following three interfaces can serve as entry points:
 
-* **Content Fragment** ([ContentFragment](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **Content Fragment** ([ContentFragment](https://experienceleague.adobe.com/en/tools/aem-api-documentation/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
   This interface lets you work with a content fragment in an abstract way.
 
@@ -200,7 +208,7 @@ The following three interfaces can serve as entry points:
 
   Interfaces that represent the prime elements of a fragment are:
 
-  * **Content Element** ([ContentElement](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+  * **Content Element** ([ContentElement](https://experienceleague.adobe.com/en/tools/aem-api-documentation/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
     * Get basic data (name, title, description)
     * Get/Set content
@@ -214,7 +222,7 @@ The following three interfaces can serve as entry points:
 
     * Shortcut for resolving variations (applying some additional, implementation-specific fallback logic if the specified variation is not available for an element)
 
-  * **Content Variation** ([ContentVariation](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+  * **Content Variation** ([ContentVariation](https://experienceleague.adobe.com/en/tools/aem-api-documentation/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
     * Get basic data (name, title, description)
     * Get/Set content
@@ -238,9 +246,9 @@ The following can be adapted:
 
 * `ContentElement` can be adapted to:
 
-  * [`ElementTemplate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - for accessing the element's structural information.
+  * [`ElementTemplate`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/cloud-service/javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - for accessing the element's structural information.
 
-* [`FragmentTemplate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
+* [`FragmentTemplate`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/cloud-service/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
 
 * `Resource` can be adapted to:
 

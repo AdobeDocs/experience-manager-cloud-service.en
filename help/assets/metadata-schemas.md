@@ -6,6 +6,14 @@ feature: Metadata
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Metadata schemas {#metadata-schemas}
 
@@ -78,6 +86,7 @@ You can edit a newly added or existing metadata schema form. The metadata schema
    *Figure: A [!UICONTROL Metadata Schema Form Editor] page with available tabs.*
 
 1. To configure a component, select it and modify its properties in the **[!UICONTROL Settings]** tab.
+
 
 ### Components within the [!UICONTROL Build Form] tab {#components-within-the-build-form-tab}
 
@@ -253,7 +262,7 @@ You can define mandatory fields at a folder level, which is enforced on assets t
 
    >[!CAUTION]
    >
-   >The metadata validation checks are resource intensive and may impact the performance of your system. Schedule the checks accordingly. If the server cannot cope up with the load, try disabling this job
+   >The metadata validation checks are resource intensive and may impact the performance of your system. Schedule the checks accordingly. If the server cannot cope up with the load, try disabling this job.
 
 **See also**
 

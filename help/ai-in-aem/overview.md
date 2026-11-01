@@ -4,23 +4,55 @@ description: Learn about AI in Adobe Experience Manager as a Cloud Service
 feature: Generative AI, AI Assistant, AI Tools, Agentic AI
 role: Admin, Developer, User
 exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ec4263d9-bf7c-44c7-b3f1-3e664861c8f2
+    internal-label: Generative AI
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: bf7fca06-df97-4229-884f-76afcfade5ad
+    internal-label: AI Assistant
+  - id: f1710108-e0d1-47e5-9952-1888729a03da
+    internal-label: Agentic AI
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 
 # AI in AEM as a Cloud Service {#ai-in-aem-as-a-cloud-service}
 
 Artificial Intelligence (AI) is an integral part of Adobe Experience Manager as a Cloud Service, supporting users finding information or generating experiences.
 
-## AI Assistant {#ai-assistant}
+<!-- CQDOC-23874 - needs adjustment? -->
 
-The [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/ai-assistant-in-aem.md) offers a conversational interface designed to streamline finding answers to your AEM-related queries.
+## AEM Agentic Capability use cases in Coworker {#aem-use-cases-in-coworker}
 
+From agents to skills, for more information see:
+
+* [Adobe Experience Manager skills in Coworker](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/use-cases/overview)
+
+* [Agentic Capabilities in AEM](/help/ai-in-aem/agentic-capabilities/overview.md)
+
+<!--
 ## Agentic AI in AEM {#agentic-ai-in-aem}
 
 AEM provides a range of [agents](/help/ai-in-aem/agents/overview.md) to accelerate your content creation and automatically orchestrate changes:
 
 * [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) 
 * [Content Advisor Agent](/help/ai-in-aem/agents/content-advisor/overview.md)
-* [Governance Agent](/help/ai-in-aem/agents/governance/overview.md)
+* [Governance Agent](/help/ai-in-aem/agentic-capabilities/brand-governance/overview.md)
+
+## AI Assistant {#ai-assistant}
+
+The [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/ai-assistant-in-aem.md) offers a conversational interface designed to streamline finding answers to your AEM-related queries.
+-->
 
 ## Generative AI in AEM {#generative-ai-in-aem}
 
