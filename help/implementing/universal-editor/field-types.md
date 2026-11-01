@@ -4,6 +4,14 @@ description: Learn about fields and the component types that the Universal Edito
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Model Definitions, Fields, and Component Types {#field-types}
@@ -196,7 +204,15 @@ An AEM content component type enables an AEM content picker, which can be used t
 }
 ```
 
->[!TAB Screenshot]
+>[!TAB Screenshot (AEMaaCS)]
+
+![Screenshot of AEM content component type](assets/component-types/aem_content.png)
+
+Mousing over a populated field reveals details.
+
+![Screenshot of AEM content component type](assets/component-types/aem_content_detailed.png)
+
+>[!TAB Screenshot (AEM 6.5 and LTS)]
 
 ![Screenshot of AEM content component type](assets/component-types/aem-content-picker.png)
 
@@ -383,7 +399,7 @@ It also offers an additional validation type.
 
 >[!BEGINTABS]
 
->[!TAB Sample 1]
+>[!TAB Sample]
 
 ```json
 [
@@ -405,7 +421,15 @@ It also offers an additional validation type.
 ]
 ```
 
->[!TAB Screenshot]
+>[!TAB Screenshot (AEMaaCS)]
+
+![Screenshot of Content Fragment picker](assets/component-types/content_fragment.png)
+
+Mousing over a populated field reveals details.
+
+![Screenshot of Content Fragment picker](assets/component-types/content_fragment_detailed.png)
+
+>[!TAB Screenshot (AEM 6.5 and LTS)]
 
 ![Screenshot of Content Fragment picker](assets/component-types/aem-content-fragment.png)
 
@@ -518,7 +542,7 @@ It also offers an additional validation type.
 
 >[!BEGINTABS]
 
->[!TAB Sample 1]
+>[!TAB Sample]
 
 ```json
 [
@@ -540,7 +564,15 @@ It also offers an additional validation type.
 ]
 ```
 
->[!TAB Screenshot]
+>[!TAB Screenshot (AEMaaCS)]
+
+![Screenshot of Experience Fragment picker](assets/component-types/experience_fragment.png)
+
+Mousing over a populated field reveals details.
+
+![Screenshot of Experience Fragment picker](assets/component-types/experience_fragment_detailed.png)
+
+>[!TAB Screenshot (AEM 6.5 and LTS)]
 
 ![Screenshot of Experience Fragment picker](assets/component-types/aem-experience-fragment.png)
 
@@ -736,9 +768,17 @@ A reference component type allows for a reference to another data object from th
 }
 ```
 
->[!TAB Screenshot]
+>[!TAB Screenshot (AEMaaCS)]
 
 ![Screenshot of reference component type](assets/component-types/reference.png)
+
+Mousing over a populated field reveals details.
+
+![Screenshot of reference component type](assets/component-types/reference_detailed.png)
+
+>[!TAB Screenshot (AEM 6.5 and LTS)]
+
+![Screenshot of reference component type](assets/component-types/reference-old.png)
 
 >[!ENDTABS]
 
@@ -852,14 +892,40 @@ If you wish to have items that appear above all tabs, they must be defined befor
 
 #### Text {#text}
 
-Text allows for a single line of text input.  It includes additional validation types.
+Text allows for a single line of text input, or a multi-line text area when
+`valueFormat` is `string-multiline`.  
+
+It offers additional configurations.
+
+| Configuration | Value Type | Description | Required |
+|---|---|---|---|
+| `valueFormat` | string | Selects the format validator and, for `string-multiline`, the input type | No |
+
+Text includes additional effects for `valueFormat`.
+
+| `valueFormat` | Effect |
+|---|---|
+| *(omitted)* | No format validation |
+| `string` | No format validation |
+| `string-multiline` | No format validation; renders a text area instead of a text input |
+| `email` | Value must be a valid email address |
+| `url` | Value must be a valid URL |
+| `regexp` | Value must match `validation.regExp` |
+
+Text includes additional validation types.
 
 |Validation Type|Value Type|Description|Required|
 |---|---|---|---|
-|`minLength`|`number`|Minimum number of characters allowed|No|
-|`maxLength`|`number`|Maximum number of characters allowed|No|
-|`regExp`|`string`|Regular expression which the input text must match|No|
-|`customErrorMsg`|`string`|Message that will display if `minLength`, `maxLength`, and/or `regExp` is/are violated|No|
+|`minLength`|`number`|Minimum number of characters allowed; skipped on multi-value fields and when the value is empty |No|
+|`maxLength`|`number`|Maximum number of characters allowed; skipped on multi-value fields and when the value is empty |No|
+|`regExp`|`string`|Regular expression which the input text must match<br>Only applied when `valueFormat` is `"regexp"`|No|
+|`customErrorMsg`|`string`| Replaces the built-in message when required, or the `regexp` format check fails. Has no effect on `minLength`, `maxLength`, or the email/url format checks, which always show their built-in message. |No|
+
+Validators run in the following order. The *first failure wins*, later validators are not evaluated:
+
+1. required (`required: true`)
+2. the `valueFormat` validator
+3. length range (when `minLength` or `maxLength` is set)
 
 >[!BEGINTABS]
 

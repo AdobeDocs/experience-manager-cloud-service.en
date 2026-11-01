@@ -9,6 +9,12 @@ role: User
 hide: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 59ae0eed-d832-4f46-9f99-7bcca9f82306
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # XFA support in XDP-based Adaptive Forms{#xfa-support-in-xdp-based-adaptive-forms}
 

@@ -4,6 +4,12 @@ description: Learn how to configure AI coding tools with project context, agent 
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Local Development with AI Tools {#local-development-with-ai-tools}
 
@@ -52,7 +58,7 @@ Adobe publishes AEM as a Cloud Service skills in the **[adobe/skills](https://gi
 |`ensure-agents-md`|Bootstraps `AGENTS.md` and `CLAUDE.md` tailored to the project's actual module structure|
 |`create-component`|Scaffolds a complete AEM component: component definition, dialog XML, HTL template, Sling Model, unit tests, and clientlibs|
 |`dispatcher`|AI-powered Dispatcher and Apache HTTPD configuration assistant covering config authoring, technical advisory, incident response, performance tuning, and security hardening|
-|`migration`|Migrates AEM 6.x, AMS, or on-premise Java code, OSGi configurations, legacy UI dialogs, and static templates to AEM as a Cloud Service, driven by [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) findings from a CSV export or [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)|
+|`migration`|Migrates AEM 6.x, AMS, or on-premise Java code, OSGi configurations, legacy UI dialogs, static templates, and Dispatcher configurations to AEM as a Cloud Service, driven by [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) findings from a CSV export or [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)|
 |`workflow`|This is the single entry point for all AEM as a Cloud Service Workflow skills. It covers workflow model design, custom process step and participant chooser development, launcher configuration, workflow triggering, and production support including debugging stuck/failed workflows, triaging incidents with Cloud Manager logs, thread pool analysis, and Sling Job diagnostics for the Granite Workflow Engine.|
 |`code-assessment`| Detects and fixes AEM best-practice violations, code-quality, and correctness issues in your local project, reporting findings and applying surgical fixes|
 
@@ -130,9 +136,9 @@ The `migration` skill guides the agent through migrating AEM Java code, OSGi con
 
 To assess a whole project first, prompt *"Review my code for AEMaaCS migration."* The skill generates a read-only `migration-runbook.md` covering every supported pattern, the affected files, and per-pattern finding counts—no code is changed until you start a pattern session.
 
-Supported patterns include Sling Scheduler, ResourceChangeListener, Replication API, OSGi EventListener and EventHandler, Assets API, HTL lint fixes, OSGi config conversion with Cloud Manager secrets and environment variable extraction, legacy UI dialog migration (Classic UI/Coral 2 to Coral 3), custom design widget migration, and static-to-editable template modernization.
+Supported patterns include Sling Scheduler, ResourceChangeListener, Replication API, OSGi EventListener and EventHandler, Assets API, Guava cache to Caffeine swaps, HTL lint fixes, OSGi config conversion with Cloud Manager secrets and environment variable extraction, legacy UI dialog migration (Classic UI/Coral 2 to Coral 3), custom design widget migration, static-to-editable template modernization, and AMS or on-premise Dispatcher configuration conversion.
 
-The skill pairs with the [Cloud Migration MCP](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md) to fetch findings directly from [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md). Without the MCP configured, the skill falls back to a local [BPA](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) CSV export, or you can point it at specific files manually.
+The skill uses the [AEM MCP Server's Cloud Migration capabilities](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md) to fetch findings directly from [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md). Without the AEM MCP Server configured, the skill falls back to a local [BPA](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) CSV export, or you can point it at specific files manually.
 
 For full setup instructions and pattern reference, see [AI-Assisted Code Migration to AEM as a Cloud Service](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md).
 
@@ -191,13 +197,7 @@ It never commits or pushes — you review the diff and commit. Large fixes run i
 
 ## AEM Quickstart MCP Server {#aem-quickstart-mcp-server}
 
-The Model Context Protocol (MCP) is an open standard that allows AI coding tools to connect to external data sources and services. The AEM Quickstart MCP server is a content package that, once installed in a local AEM SDK instance, exposes runtime data directly to connected AI tools, enabling agents to retrieve logs, diagnose OSGi failures, and inspect request processing without leaving the IDE.
-
-### Install the Content Package {#install-the-content-package}
-
-Download the content package from the [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3) and install `com.adobe.aem:com.adobe.aem.mcp-server-contribs-content` into your local Quickstart using Package Manager at `/crx/packmgr`.
-
-**Compatibility:** Validated with AEM SDK `2026.2.24678.20260226T154829Z-260200` and newer.
+The Model Context Protocol (MCP) is an open standard that allows AI coding tools to connect to external data sources and services. The AEM Quickstart MCP server, which is included in the local [AEM as a Cloud Service SDK](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html), exposes runtime data directly to connected AI tools, enabling agents to retrieve logs, diagnose OSGi failures, and inspect request processing without leaving the IDE.
 
 ### Available Tools {#available-tools}
 
@@ -334,4 +334,3 @@ Other IDEs can be configured in a similar manner. The SDK's `docs/DispatcherMCP.
 |`tail_logs`|Tails relevant Dispatcher and HTTPD runtime logs|
 
 The MCP surface intentionally exposes only these seven tools; prompts and resources remain in the skill layer. Full reference documentation is available in `docs/DispatcherMCP.md` inside the extracted Dispatcher SDK.
-

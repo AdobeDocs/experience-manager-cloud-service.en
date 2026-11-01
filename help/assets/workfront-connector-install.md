@@ -5,6 +5,12 @@ role: Admin
 feature: Workfront Integrations and Apps
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Install [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
@@ -45,7 +51,9 @@ Before you install the connector, follow these pre-installation steps:
    >
    >* To find the IP of your program, open a terminal window and run a command, such as:
    >
-   >  `>dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com`
+   >    ```
+   >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
+   >    ```
 
 1. Ensure that the following overlays do not exist in [!DNL Experience Manager] repository. If you have pre-existing overlays on these paths you either need to remove the overlays, or merge the delta of changes between the two:
 
