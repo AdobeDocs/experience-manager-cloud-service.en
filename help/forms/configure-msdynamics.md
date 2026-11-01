@@ -5,6 +5,14 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 29ee324c-cd4c-403b-bb3d-b1eda8e8ad88
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Configure Microsoft&reg; Dynamics 365 for AEM Forms 
@@ -75,7 +83,7 @@ Once you have configured the prerequisites above, you can proceed with integrati
 
 ### 1. Configure cloud service configuration for Microsoft Dynamics
 
- >[!VIDEO](https://video.tv.adobe.com/v/3444370/cloudconfiguration-dataintegration-adobeexperiencemanager-aemforms-microsoftdynamics)
+>[!VIDEO](https://video.tv.adobe.com/v/3444370/cloudconfiguration-dataintegration-adobeexperiencemanager-aemforms-microsoftdynamics)
 
 Perform the following steps to configure the [!DNL Microsoft&reg; Dynamics 365] cloud service configuration:
 

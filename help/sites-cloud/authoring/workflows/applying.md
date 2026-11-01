@@ -6,6 +6,15 @@ exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Applying Workflows to Pages {#applying-workflows-to-pages}
 

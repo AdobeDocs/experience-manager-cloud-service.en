@@ -5,6 +5,17 @@ exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Learn the Content Modeling Basics for Headless with AEM {#content-modeling-headless-basics}
 
@@ -85,6 +96,7 @@ AEM provides the following data types for you to model your content:
 * Fragment Reference (UUID)
 * Content Reference
 * Content Reference (UUID)
+* Composite
 * JSON Object
 * Tab Placeholder
 
@@ -115,37 +127,40 @@ Two data types provide references to content outside a specific fragment:
 >
 >In the editor the UUID references specify the path to the referenced resource; internally such references are held as universally unique IDs (UUID) that reference the resources.
 
-## Levels of Structure (Nested Fragments) {#levels-of-structure-nested-fragments}
+## Levels of Structure (Nested Content) {#levels-of-structure-nested-content}
 
-For content modeling the **Fragment Reference** data type lets you create multiple levels of structure and relationships.
+For content modeling:
 
-With this reference you can *connect* various Content Fragment Models to represent interrelationships. This allows the headless application to follow the connections and access the content as necessary.
+* The **Fragment Reference** data type lets you create multiple levels of structure and relationships
+  * With this reference you can *connect* various Content Fragment Models to represent interrelationships. This allows the headless application to follow the connections and access the content as necessary.
 
->[!NOTE]
->
->This should be used with caution and the best practice can be defined as *nest as much as necessary, but as little as possible*.
+  >[!NOTE]
+  >
+  >This should be used with caution and the best practice can be defined as *nest as much as necessary, but as little as possible*.
 
-Fragment References do just that - they allow you to reference another fragment. 
+  Fragment References do just that - they allow you to reference another fragment. 
 
-For example, you might have the following Content Fragment Models defined:
+  For example, you might have the following Content Fragment Models defined:
 
-* City
-* Company
-* Person
-* Awards
+  * City
+  * Company
+  * Person
+  * Awards
 
-Seems pretty straightforward, but a Company has both a CEO and Employees....and these are all people, each defined as a Person.
+  Seems pretty straightforward, but a Company has both a CEO and Employees....and these are all people, each defined as a Person.
 
-And a Person can have an Award (or maybe two).
+  And a Person can have an Award (or maybe two).
 
-* My Company - Company
-  * CEO - Person
-  * Employee(s) - Person
-    * Personal Award(s) - Award
+  * My Company - Company
+    * CEO - Person
+    * Employee(s) - Person
+      * Personal Award(s) - Award
 
-And that's just for starters. Depending on the complexity, an Award could be Company-specific, or a Company could have its main office in a specific City.
+  And that's just for starters. Depending on the complexity, an Award could be Company-specific, or a Company could have its main office in a specific City.
 
-Representing these interrelationships can be achieved with Fragment References, as they are understood by you (the architect), your content author and the headless applications.
+  Representing these interrelationships can be achieved with Fragment References, as they are understood by you (the architect), your content author and the headless applications.
+
+* The **Composite** data type lets you store hierarchical, structured data within a single fragment, similar to nested objects in JSON or embedded documents in NoSQL databases.
 
 ## What's Next {#whats-next}
 

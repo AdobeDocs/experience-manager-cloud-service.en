@@ -6,6 +6,15 @@ exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Working with Page Versions {#working-with-page-versions}
 
@@ -34,6 +43,10 @@ You can create a version of your resource from:
 
 * The [Timeline rail](#creating-a-new-version-timeline)
 * The [Create](#creating-a-new-version-create-with-a-selected-resource) option (when a resource is selected)
+
+>[!NOTE]
+>
+>For information about customizing whether your publish action creates a new version see also [Customizing Page Publishing - Control version creation upon publish](/help/implementing/developing/extending/page-publishing.md#control-version-creation-upon-publish).
 
 ### Creating a New Version - Timeline {#creating-a-new-version-timeline}
 

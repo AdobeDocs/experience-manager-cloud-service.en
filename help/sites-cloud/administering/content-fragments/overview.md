@@ -6,6 +6,20 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Working with Content Fragments - Concepts and Best Practices {#working-with-content-fragments-concepts-and-best-practices}
 
@@ -173,6 +187,10 @@ Together with the JSON export capabilities of AEM core components, this structur
 >[!NOTE]
 >
 >AEM also supports the translation of fragment content. See [Translating Assets](/help/assets/translate-assets.md) for further information.
+
+>[!NOTE]
+>
+>Page rendering via Core Components and the Sling Model exporter (`.model.json`) does not support [Composite fields](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#composite-data). 
 
 ## Content Type {#content-type}
 
@@ -368,7 +386,7 @@ Use Rich Text fields (the **Multi line text** Data Type) with consideration:
 
 * Fields
 
-  Limit the number of Rich Text fields per model. For performance reasons it is not recommended to have more than ten Rich Text fields in one model. If needed, it is recommended that you use [nested Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#using-references-to-form-nested-content).
+  Limit the number of Rich Text fields per model. For performance reasons it is not recommended to have more than ten Rich Text fields in one model. If needed, it is recommended that you use [nested content in Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#nested-content).
 
 * Content
 

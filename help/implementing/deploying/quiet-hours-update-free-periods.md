@@ -4,6 +4,12 @@ description: Learn how to minimize the operational impact of AEM as a Cloud Serv
 feature: Deploying
 role: Admin
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Quiet hours and Update free periods {#quiet-hours-update-free-periods}
 
