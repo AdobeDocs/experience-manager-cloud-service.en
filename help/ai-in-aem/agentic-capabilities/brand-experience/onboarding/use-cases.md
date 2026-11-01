@@ -3,6 +3,26 @@ title: Onboarding Agentic Capabilities Overview
 description: Learn how the Onboarding Agentic Capabilities in AEM help you configure Adobe Experience Manager Assets using natural language, coordinating the full onboarding lifecycle, from environment provisioning through content structure, metadata, migration, and search.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+  - id: f1710108-e0d1-47e5-9952-1888729a03da
+    internal-label: Agentic AI
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Onboarding Agentic Capabilities {#development-agentic-capabilities}
@@ -23,17 +43,13 @@ Some of the key benefits include:
 
 The AEM Onboarding Agentic Capability provides the following skills:
 
-* **End-to-end onboarding**: Orchestrates the overall AEM onboarding journey and routes requests to the appropriate skills for environment setup, access, content architecture, metadata, migration, and search configuration.
+- **End-to-end onboarding**: Orchestrates the overall AEM onboarding journey and routes requests to the appropriate skills for environment setup, access, content architecture, metadata, migration, and search configuration.
 
-* **Environment and access setup**: Provisions AEM Cloud Service environments and configures user access through Adobe Cloud Manager and Adobe Admin Console, including programs, environments, user groups, and product profiles.
+- **Content architecture**: Designs and creates folder hierarchies under `/content/dam` and controlled tag taxonomies under `/content/cq:tags`, including support for CSV-based definitions and batch operations.
 
-* **Content architecture**: Designs and creates folder hierarchies under `/content/dam` and controlled tag taxonomies under `/content/cq:tags`, including support for CSV-based definitions and batch operations.
+- **Metadata management**: Provides guidance on metadata architecture and creates and assigns custom metadata forms. The metadata advisory capability is read-only and helps define fields, namespaces, asset-type structures, and migration approaches.
 
-* **Metadata management**: Provides guidance on metadata architecture and creates and assigns custom metadata forms. The metadata advisory capability is read-only and helps define fields, namespaces, asset-type structures, and migration approaches.
-
-* **Asset and metadata migration**: Runs and monitors existing bulk asset import jobs and supports bulk metadata imports for existing assets from CSV files.
-
-* **Search configuration**: Makes custom `dam:Asset` properties searchable and configures indexed properties as filters in the AEM Assets search interface.
+- **Asset and metadata migration**: Runs and monitors existing bulk asset import jobs and supports bulk metadata imports for existing assets from CSV files.
 
 These skills provide a unified onboarding experience while allowing users to work at the level of the business task rather than needing to know the underlying AEM configuration or implementation details.
 

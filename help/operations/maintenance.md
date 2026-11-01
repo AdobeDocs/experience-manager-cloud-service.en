@@ -4,6 +4,15 @@ description: Learn about maintenance tasks in AEM as a Cloud Service and how to 
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 
 # Maintenance Tasks in AEM as a Cloud Service {#maintenance-tasks-in-aem-as-a-cloud-service}
@@ -307,7 +316,7 @@ The columns indicating *default* indicate the default values in the future, when
 | maximumAgeDays | 30 | 2557 (7 years + 2 leap days) | Yes | Integer | Any version older than the configured value is removed. If the value is 0, purging is not performed based on the age of the version. |
 | maximumVersions | 5 | 0 (no limit) | Yes | Integer | Any version older than the n-th newest version is removed. If the value is 0, purging is not performed based on the number of versions.|
 | minimumVersions | 1 | 1 | Yes | Integer | The minimum number of versions that are kept regardless of the age. Note that at least 1 version is always kept; its value must be 1 or higher. |
-| retainLabelledVersioned | false | false | Yes | boolean | Determines whether explicitly labelled versions will be excluded from the purge. For better repository optimization, it is recommended to set this value to false. |
+| retainLabelledVersioned | false | false | Yes | boolean | Determines whether explicitly labelled versions will be excluded from the purge. For better repository optimization, it is recommended to set this value to false. Note: For AEM Assets, all versions get an auto-generated label, so setting this to true effectively retains every version and disables purging. This does not affect Sites pages, where unlabelled versions remain unlabelled.|
 
 **Property interactions**
 

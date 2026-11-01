@@ -6,6 +6,14 @@ feature: Metadata
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # XMP metadata {#xmp-metadata}
 
@@ -73,7 +81,7 @@ XMP offers you the ability to add an `xml:lang` property to text properties to s
 
 ## Customizing the XMP metadata blocklist (OSGi) {#customizing-the-XMP-metadata-blocklist}
 
-The **[!UICONTROL com.day.cq.dam.commons.metadata.XmpFilterBlackWhite]** OSGi component that controls which XMP metadata properties are filtered out of the Digital Asset Management (DAM) assets is supported in Adobe Experience Manager (AEM) as a cloud service. Note that the configuration property name has been changed from **[!UICONTROL xmp.filter.blacklist]** (AEM 6.5) to **[!UICONTROL xmp.filter.blocklist]** (AEMaaCS). Using the old property name silently has no effect. Deploy the OSGi configuration as usual and verify the applied values in the developer console after deployment.
+The `com.day.cq.dam.commons.metadata.XmpFilterBlackWhite` OSGi component that controls which XMP metadata properties are filtered out of the Digital Asset Management (DAM) assets is supported in Adobe Experience Manager (AEM) as a cloud service. Note that the configuration property name has been changed from `xmp.filter.blacklist` (AEM 6.5) to `xmp.filter.blocklist` (AEMaaCS). Using the old property name silently has no effect. Deploy the OSGi configuration as usual and verify the applied values in the developer console after deployment.
 
 
 ## XMP writeback to renditions {#xmp-writeback-to-renditions}

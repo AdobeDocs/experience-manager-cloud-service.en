@@ -4,6 +4,14 @@ description: Learn how to extend the functionality of the Multi Site Manager.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
 feature: Developing
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Extending the Multi Site Manager {#extending-the-multi-site-manager}
 
@@ -25,8 +33,8 @@ This document helps you understand how to extend the functionality of the Multi 
 
 Multi Site Management consists of the following packages:
 
-* [com.day.cq.wcm.msm.api](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
-* [com.day.cq.wcm.msm.commons](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
+* [com.day.cq.wcm.msm.api](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
+* [com.day.cq.wcm.msm.commons](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
 
 The main MSM API objects interact as follows (see also the section [Terms Used](/help/sites-cloud/administering/msm/overview.md#terms-used)):
 
@@ -73,8 +81,8 @@ You can create custom synchronization actions to use with your rollout configura
 
 To do so, create two classes:
 
-* An implementation of the [`com.day.cq.wcm.msm.api.LiveAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) interface that performs the action.
-* An OSGi component that implements the [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) interface and creates instances of your `LiveAction` class
+* An implementation of the [`com.day.cq.wcm.msm.api.LiveAction`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) interface that performs the action.
+* An OSGi component that implements the [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) interface and creates instances of your `LiveAction` class
 
 The `LiveActionFactory` creates instances of the `LiveAction` class for a given configuration:
 
@@ -104,7 +112,7 @@ Use the `LiveAction` configuration node in the repository to store information t
 
 For example, a `LiveAction` must store the name of the blueprint author. A property of the configuration node includes the property name of the blueprint page that stores the information. At runtime, the `LiveAction` retrieves the property name from the configuration, then obtains the property value.
 
-The parameter of the [`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) method is a `Resource` object. This `Resource` object represents the `cq:LiveSyncAction` node for this live action in the rollout configuration.
+The parameter of the [`LiveActionFactory.createAction`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) method is a `Resource` object. This `Resource` object represents the `cq:LiveSyncAction` node for this live action in the rollout configuration.
 
 See [Creating a Rollout Configuration](/help/sites-cloud/administering/msm/live-copy-sync-config.md#creating-a-rollout-configuration) for more information.
 
@@ -126,9 +134,9 @@ public LiveAction createAction(Resource resource) throws WCMException {
 
 The following objects are provided as parameters of the `execute` method of the `LiveAction` object:
 
-* A [`Resource`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) object that represents the source of the live copy
+* A [`Resource`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) object that represents the source of the live copy
 * A `Resource` object that represents the target of the live copy.
-* The [`LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) object for the live copy
+* The [`LiveRelationship`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/cloud-service/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) object for the live copy
   * The `autoSave` value indicates whether your `LiveAction` should save changes that are made to the repository
   * The `reset` value indicates the rollout reset mode.
 
@@ -144,7 +152,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 >[!NOTE]
 >
->The `Resource` arguments may be `null` or `Resources` objects that do not adapt to `Node` objects, such as [ `NonExistingResource`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/NonExistingResource.html) objects.
+>The `Resource` arguments may be `null` or `Resources` objects that do not adapt to `Node` objects, such as [ `NonExistingResource`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/cloud-service/javadoc/org/apache/sling/api/resource/NonExistingResource.html) objects.
 
 ## Creating a New Rollout Configuration {#creating-a-new-rollout-configuration}
 

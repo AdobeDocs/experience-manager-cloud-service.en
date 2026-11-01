@@ -1,12 +1,20 @@
 ---
 title: Form Analytics with Adobe Analytics and AEM Forms - Complete Guide
-seo-title: "Form Analytics: Track Performance, Boost Conversions with Adobe Analytics & AEM Forms"
+seo-title: 'Form Analytics: Track Performance, Boost Conversions with Adobe Analytics & AEM Forms'
 description: Complete guide to form analytics with Adobe Analytics and AEM Forms. Track form performance, analyze user behavior, reduce abandonment, and optimize conversions.
 keywords: form analytics, form performance tracking, form abandonment analysis, conversion optimization, user behavior analysis, Adobe Analytics forms, AEM Forms analytics
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Form Analytics with Adobe Analytics and AEM Forms - Complete Guide {#integrate-aem-forms-with-adobe-analytics}
