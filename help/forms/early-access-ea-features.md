@@ -376,6 +376,8 @@ The Document Conversion APIs offer the following features:
 
 * **Flatten PDF transparency:** Flatten transparency in a PDF document to improve compatibility with print and document processing workflows.
 
+<!--
+
 ### Enhancements in Visual Rule Editor 
 
 * [Direct API integration](/help/forms/api-integration-in-rule-editor.md): The Visual Rule Editor in Adaptive Forms now supports direct API integration without requiring a Form Data Model. You can connect to an API endpoint by entering its JSON URL or by importing the configuration using a cURL command. After integration, the API can be invoked using the `Invoke Service` action.
@@ -386,6 +388,8 @@ The Document Conversion APIs offer the following features:
 
 * [Retrieve property values from a JSON array](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array): Invoke an API with a custom function to extract values from a JSON array and bind them directly to form fields.
 
+-->
+
 <!--
 
 ### Versioning support in Forms Manager
@@ -394,9 +398,15 @@ Forms Manager now supports versioning for Adaptive Forms (Core Components and Fo
 
 -->
 
+<!--
+
 ### Improved accessibility for form components
 
 Adaptive Forms Core Components introduce WCAG-compliant semantic markup for checkbox groups, radio button groups, and panels. These components now leverage `<fieldset>` and `<legend>` elements to establish meaningful relationships between group labels and their options for assistive technologies. See [Fieldset and legend support in Adaptive Forms](/help/forms/creating-accessible-adaptive-forms.md#fieldset-legend-accessibility).
+
+-->
+
+<!--
 
 ### Configurable tables for Adaptive Forms
 
@@ -409,6 +419,10 @@ Create [configurable tables in Adaptive Forms based on Core Components](/help/fo
 * Improves form usability and readability by organizing repeated information in a structured layout.
 * Reduces authoring effort by providing a reusable and configurable table component.
 
+-->
+
+<!--
+
 ### Locale support for Interactive Communication
 
 [Configure locale](/help/forms/interactive-communication/support-localization.md) settings directly in the Interactive Communication Editor to create region-specific communications. Authors can select a supported locale to apply language and regional formatting conventions for dates, numbers, currencies, and other locale-sensitive content, helping deliver consistent and localized customer communications.
@@ -420,6 +434,8 @@ Key benefits include:
 * Deliver localized Interactive Communications tailored to regional audiences.
 * Ensure consistent formatting and presentation across generated communications.
 
+-->
+
 ## See also
 
 * [Latest Innovations in AEM Forms](/help/forms/latest-innovations.md)
@@ -427,5 +443,4 @@ Key benefits include:
 * [Capabilities of AEM Forms as a Cloud Services](/help/forms/home.md)
 
 * [Difference between AEM 6.5 Forms (AMS and on-prem) and AEM Forms as a Cloud Services (AEM CS Forms)](/help/forms/notable-changes.md)
-
 
