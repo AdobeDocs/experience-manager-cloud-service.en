@@ -4,6 +4,16 @@ description: Learn about adding a Screens add-on to a new program in Cloud Manag
 exl-id: 36d1e1e9-5272-4138-9e0d-8476edc729f0
 feature: Screens Deployments
 role: Admin, Developer, User
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Adding Screens as an Add-on to a New Program in Cloud Manager {#create-programs-screens-cloud}
 

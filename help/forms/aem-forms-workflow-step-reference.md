@@ -7,6 +7,17 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Use AEM workflows, using assign task steps, convert to PDF/A step, Generate document of recored step, use workflows, Sign document step, Genertae printed output step, Generate non interactive PDF output
 feature: Adaptive Forms, Workflow
 role: Admin, User
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 
 # Use Forms-centric AEM Workflows - Step Reference to automate business processes {#forms-centric-workflow-on-osgi-step-reference}
