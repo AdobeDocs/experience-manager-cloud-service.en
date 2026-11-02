@@ -1,11 +1,20 @@
 ---
 title: Integrating with Adobe Target
-description: Learn how to integrate Adobe Target with AEM as a Cloud Service by using the Touch UI and Adobe Launch.  
+description: Learn how to integrate Adobe Target with AEM as a Cloud Service by using the Touch UI and Adobe Launch.
 feature: Integration
 role: Admin
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
 solution: Experience Manager Sites
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Integrating with Adobe Target{#integrating-with-adobe-target}
 
@@ -44,7 +53,7 @@ The integration of AEM with Adobe Target via the Target Standard API requires th
 >
 >[IMS integrations are now configured with S2S OAuth](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md). 
 >
->Previous configurations were made with [JWT Credentials that are now subject to deprecation in the Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md). 
+>Previous configurations were made with JWT Credentials that are now subject to deprecation in the Adobe Developer Console. 
 
 >[!NOTE]
 >

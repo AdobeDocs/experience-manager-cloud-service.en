@@ -6,6 +6,16 @@ feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 
 # AEM Forms as a Cloud Service Communication APIs {#communications-apis-overview}

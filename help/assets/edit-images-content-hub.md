@@ -3,6 +3,9 @@ title: Edit images in Content Hub using Adobe Express
 description: Edit images in Content Hub using Adobe Express
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 ---
 # Edit images in Content Hub {#edit-images-content-hub}
 
