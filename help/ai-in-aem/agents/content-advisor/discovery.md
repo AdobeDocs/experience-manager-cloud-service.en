@@ -4,6 +4,26 @@ description: Learn how to use the content discovery agent to deliver relevant AE
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+  - id: f1710108-e0d1-47e5-9952-1888729a03da
+    internal-label: Agentic AI
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Content Discovery Agent {#discovery-agent}
@@ -77,26 +97,26 @@ For information on the MCP endpoint to access content discovery agent, contact A
 
 **Metadata-based asset discovery** 
 
-   The Content Discovery agent uses natural language prompts to find assets based on metadata available for assets in AEM. Users can discover assets using the following metadata properties: Tags, Created by Email ID, Modified by Email ID, Published by Email ID, Created Date, Modified Date, Published Date, MIME type, Asset Type, Status, file format, file size, image width, image height, and multiple metadata filters within a single prompt.
+The Content Discovery agent uses natural language prompts to find assets based on metadata available for assets in AEM. Users can discover assets using the following metadata properties: Tags, Created by Email ID, Modified by Email ID, Published by Email ID, Created Date, Modified Date, Published Date, MIME type, Asset Type, Status, file format, file size, image width, image height, and multiple metadata filters within a single prompt.
 
-   The Content Discovery Agent also searches the custom properties available in metadata schemas for Admin view and metadata forms for Assets view. You can modify your prompts accordingly to search values available within those custom asset properties.
+The Content Discovery Agent also searches the custom properties available in metadata schemas for Admin view and metadata forms for Assets view. You can modify your prompts accordingly to search values available within those custom asset properties.
 
-   >[!NOTE]
-   >
-   >To improve discovery performance, index relevant custom metadata properties. Indexed properties enable the agent to retrieve matching content faster when users include those properties in their prompts.
+>[!NOTE]
+>
+>To improve discovery performance, index relevant custom metadata properties. Indexed properties enable the agent to retrieve matching content faster when users include those properties in their prompts.
 
 
-   Sample prompts:
+Sample prompts:
 
-   * **Search based on tags**: Show images tagged `office` in folder `WKND`.
-   * **Search based on file format, asset type, asset status and Published by Email ID**: Show images in `.PNG` format that are `approved` and `published by <user email ID>`.
-   * **Search based on file format, asset type, asset status and Created by Email ID**: Show videos in `.mp4` format that are approved and `created by <user email ID>`.
-   * **Search based on file format, asset type, asset status and  Created Date**: Show images in `.PNG` format that are created after January 1, 2025 and `published by <user email ID>`
-   * **Search based on MIME type, Created Date, and Published by Email ID**: Show `image/jpeg` created after `January 1, 2025` and `published by <user email ID>`.
+* **Search based on tags**: Show images tagged `office` in folder `WKND`.
+* **Search based on file format, asset type, asset status and Published by Email ID**: Show images in `.PNG` format that are `approved` and `published by <user email ID>`.
+* **Search based on file format, asset type, asset status and Created by Email ID**: Show videos in `.mp4` format that are approved and `created by <user email ID>`.
+* **Search based on file format, asset type, asset status and  Created Date**: Show images in `.PNG` format that are created after January 1, 2025 and `published by <user email ID>`
+* **Search based on MIME type, Created Date, and Published by Email ID**: Show `image/jpeg` created after `January 1, 2025` and `published by <user email ID>`.
 
-   * **Search for assets with missing metadata**: Show assets created in the last 90 days with `<Name of metadata property including custom properties>` is blank.
+* **Search for assets with missing metadata**: Show assets created in the last 90 days with `<Name of metadata property including custom properties>` is blank.
 
-   * **Search for assets using file size, image width, and image height**: Show images larger than 5 MB with width greater than 2000 pixels and height greater than 1200 pixels.
+* **Search for assets using file size, image width, and image height**: Show images larger than 5 MB with width greater than 2000 pixels and height greater than 1200 pixels.
 
 **Natural language support for custom metadata**
 

@@ -3,6 +3,26 @@ title: Brand Governance Agentic Capabilities Overview
 description: Learn how the Brand Governance Agentic Capabilities in AEM help you safeguard brand integrity and compliance.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+  - id: f1710108-e0d1-47e5-9952-1888729a03da
+    internal-label: Agentic AI
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Brand Governance Agentic Capabilities {#brand-governance-agentic-capabilites}
@@ -15,9 +35,9 @@ A range of use-cases are covered.
 
 | Use Case | Description | Skill(s) | Application | Sample Prompts |
 | --- | --- | --- | --- | --- |
-| Full brand context lookup | Retrieve the cascade-resolved brand rules and verticals for a brand | enterprise-context | Adobe Experience Manager (AEM)  | "Give me the full brand context for this brand"<br>"What verticals exist for this brand?"<br>"Resolve the owning brand for this asset path" |
-| Create or update brand rules | Add or modify a brand-context rule for a claim-type vertical | enterprise-context | Adobe Experience Manager (AEM) | "Add a new disclaimer rule for the pharma vertical"<br>"Update rule #42 to require a citation" |
-| Guideline & segment lookup | Retrieve detailed brand guidelines, scoped by segment, market, or category | enterprise-context | Adobe Experience Manager (AEM) | "What are the tone-of-voice guidelines for this brand?"<br>"List the claim categories used in the health vertical" |
+| Full brand context lookup | Retrieve the cascade-resolved brand rules and verticals for a brand | experience-context | Adobe Experience Manager (AEM)  | "Give me the full brand context for this brand"<br>"What verticals exist for this brand?"<br>"Resolve the owning brand for this asset path" |
+| Create or update brand rules | Add or modify a brand-context rule for a claim-type vertical | experience-context | Adobe Experience Manager (AEM) | "Add a new disclaimer rule for the pharma vertical"<br>"Update rule #42 to require a citation" |
+| Guideline & segment lookup | Retrieve detailed brand guidelines, scoped by segment, market, or category | experience-context | Adobe Experience Manager (AEM) | "What are the tone-of-voice guidelines for this brand?"<br>"List the claim categories used in the health vertical" |
 | Evaluate content against brand guidelines | Evaluate a published/authored page, text block, or image against configured brand checks | aem-governance | Adobe Experience Manager (AEM) | "Evaluate this landing page against SecurBank guidelines"<br>"Does this tagline pass our tone-of-voice checks?" |
 | Check configuration | List all configured checks (guidelines) for one or every brand | aem-governance | Adobe Experience Manager (AEM) | "List every check configured for SecurBank"<br>"What guidelines apply to this URL?" |
 | Brand inventory discovery | List and identify all configured brands for the organization | aem-governance | Adobe Experience Manager (AEM) | "List all brands configured"<br>"What guidelines apply to this URL `http://frescopa-coffee`" |

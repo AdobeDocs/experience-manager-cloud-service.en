@@ -1,5 +1,5 @@
 ---
-title: "Form builder: Create forms with foundation components"
+title: 'Form builder: Create forms with foundation components'
 description: Learn to use AEM Forms' form builder to create adaptive forms with foundation components. Perfect for form creators maintaining existing forms or working with legacy integrations.
 keywords: form builder, foundation components, create forms, form creator, adaptive forms, build forms, AEM forms, form maker
 feature: Adaptive Forms, Foundation Components
@@ -7,6 +7,17 @@ role: User, Developer
 level: Beginner
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Form builder: Create forms with foundation components {#creating-an-adaptive-form}
 

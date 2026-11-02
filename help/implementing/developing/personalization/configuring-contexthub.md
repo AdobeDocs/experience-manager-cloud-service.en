@@ -4,6 +4,17 @@ description: Learn how to configure Context Hub, a framework for storing, manipu
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
 feature: Developing, Personalization
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Configuring ContextHub {#configuring-contexthub}
 

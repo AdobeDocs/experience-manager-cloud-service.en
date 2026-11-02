@@ -6,6 +6,14 @@ feature: Metadata
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Metadata profiles {#metadata-profiles}
 
@@ -72,6 +80,16 @@ If you assigned a different metadata profile to a folder, the new profile overri
 Folders that have a profile assigned to it are indicated in the user interface by the name of the profile appearing in the card name.
 
 You can reprocess assets in a folder that already has an existing metadata profile that you later changed. <!-- See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
+
+>[!IMPORTANT]
+>
+>Both `Full` and `Metadata-only` reprocess operations might replace metadata that has been added to an asset after it was first uploaded if: 
+>
+>* The nearest ancestor metadata profile is applied
+>
+>* XMP extraction is re-run
+>
+>If either of these update properties that had previously been manually entered in the asset metadata, then the manually entered values are overwritten.
 
 ### Apply metadata profiles to specific folders {#applying-metadata-profiles-to-specific-folders}
 

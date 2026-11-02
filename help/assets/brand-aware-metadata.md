@@ -1,9 +1,17 @@
 ---
 title: Generate Brand Aware Metadata
 description: Learn how to configure AI-powered prompts to generate metadata values for assets using Brand Aware Metadata in Adobe Experience Manager Assets.
-hidefromtoc: yes
+hidefromtoc: 'yes'
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive"
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 
 # Generate Brand Aware Metadata {#generate-ai-metadata-brand-aware}
@@ -108,6 +116,10 @@ To create a property prompt:
    Selecting a metadata form loads the available metadata properties.
 ![Metadata properties](/help/assets/assets/metadata-properties.png)
 
+>[!NOTE]
+>
+>The **[!UICONTROL Metadata form]** list is populated only with metadata forms defined in the **[!UICONTROL Admin view]**. Metadata forms defined in the **[!UICONTROL Assets view]** are not available in this list.
+
 1. From the **Metadata property** list, select the metadata property that you want AI to populate.
 1. In the **Prompt** field, enter instructions for generating the metadata value.
 
@@ -138,9 +150,9 @@ To add referenced properties:
 5. Refine the prompt if required.
  ![Referenced properties](/help/assets/assets/referenced-properties-output.png)
 
-> **NOTE**
+>[!NOTE]
 >
-> Referenced properties provide additional context to the prompt. They do not define the metadata property that AI generates.
+>Referenced properties provide additional context to the prompt. They do not define the metadata property that AI generates.
 
 ## Configure controlled vocabulary (optional) {#configure-controlled-vocabulary}
 
@@ -150,9 +162,9 @@ For example, if a **Coffee Blend** metadata property supports only **House Blend
 
 You can configure controlled vocabulary to return either a single value or multiple values for a metadata property.
 
-> **NOTE**
+>[!NOTE]
 >
-> A metadata property can use either generative output or controlled vocabulary. Combining both options for the same property is currently not supported.
+>A metadata property can use either generative output or controlled vocabulary. Combining both options for the same property is currently not supported.
 
 ### Add controlled vocabulary values {#add-controlled-vocabulary-values}
 
@@ -286,3 +298,18 @@ Keep the following considerations in mind before applying BAM at scale:
 * Brand Guidelines configured in governance are not automatically applied during metadata generation. Include brand context directly in the brand prompt.
 
 * For dropdown and taxonomy-backed fields, use controlled vocabulary to restrict generated values to existing options.
+
+* Quality Report data is updated overnight and includes asset processing completed during the previous day. As a result, newly processed assets may not appear in the report immediately.
+
+## Troubleshooting {#troubleshooting}
+
+### Error when selecting a metadata property
+
+If you experience an error when selecting a value from the **[!UICONTROL Metadata property]** list, the metadata form may contain more than 1,000 nodes.
+
+To resolve the error:
+
+1. Open the OSGi configuration for `org.apache.sling.servlets.get.DefaultGetServlet`.
+1. Set the `json.maximumresults` property to `10000`.
+1. Save the configuration.
+1. Return to the property prompt and select the metadata property again.

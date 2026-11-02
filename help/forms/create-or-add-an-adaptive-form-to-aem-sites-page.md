@@ -6,6 +6,14 @@ Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites p
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 role: User, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Add an Adaptive Form to an AEM Sites page or Experience Fragment {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
@@ -85,6 +93,10 @@ To enable complete functionality of the Adaptive Forms Container component, add 
         <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
         </sly> 
     ```
+
+    >[!NOTE]
+    >
+    >`core.forms.components.runtime.all` includes all the out-of-the-box (OOTB) components. Instead, create a custom client library that includes only the components that are part of the design policy and intended to be included in the form, and add it to the page.
 
 1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` file and add the following code to the file:
 
