@@ -849,101 +849,6 @@ Once applied, expired assets are excluded from browsing, search, and fetch opera
 
 To know more, see how to [browse DAM assets using desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) and [how to use Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
 
-## Permission model for move or publish operations {#permission-model}
-
-Moving an asset or Content Fragment in **Adobe [!DNL Experience Manager] (AEM)** requires **replicate** permission, not merely write access to the source and destination folders. Write access alone is insufficient; the **replicate** permission is mandatory for a move or publish operation to complete.
-
-A user who lacks **replicate** access does not receive an outright failure. Instead, the move enters a **pending approval** workflow state. The operation then waits for an administrator, defined as a user who holds the **replicate** permission, to approve or complete it. This is **expected, by-design behavior**, and not a defect or bug.
-
-AEM intentionally gates replication-triggering actions behind the **replicate** permission. This ensures that only authorized users push content changes to publish environments, protecting content integrity and preventing unauthorized or accidental publication.
-
-|Operation|Minimum permission needed|What happens if missing|
-|--- |--- |--- |
-|Move a folder or asset within the Digital Asset Management (DAM)|Write on the source, destination, and a destination folder explicitly selected in the **[!UICONTROL Select Destination]** dialog box.|The **[!UICONTROL Move]** button stays disabled until a destination folder checkbox is actually checked. This is a common false alarm reported as **Move button not working**.|
-|Move or copy an asset or Content Fragment that triggers the replication|**replicate** permission|The move or copy operation starts a workflow that pauses in a pending state awaiting administrator approval, rather than failing with an error.|
-|View a folder marked private|You must own the folder, or you must be an explicit member (owner or editor or viewer) of that private folder.|Private folder settings override standard ACLs, hence a user or group with `jcr:read` access can still see the folder, but sharing is restricted to owners or members only.|
-|Use **Share Link** on a private folder|Explicit membership (owner or editor or viewer) on the private folder, in addition to `jcr:modifyAccessControl` or edit ACL and link share configuration.|Plain read access is not sufficient, a group with `jcr:read` on a folder that is later marked private loses the ability to generate share links even though they can still browse the folder.|
-
-### Stuck or pending move-replicate workflow {#stuck-pending}
-
-A move or copy workflow that appears **stuck or pending** is almost always caused by a missing **replicate permission** on the target path, not by a system defect. In **Adobe [!DNL Experience Manager] (AEM)**, moving or copying content triggers a replication event, and the platform enforces a **permission gate** that pauses the workflow whenever the initiating user lacks the required access. Resolve it by confirming the permission and completing the approval, as follows:
-
-1. Identify the user who initiated the move or copy, and check whether that user holds the **replicate permission** on the target path.
-2. If the initiating user does not hold this permission, either grant the **replicate permission** when that is the intended long-term access level, or ask an administrator who already holds the **replicate permission** to approve or complete the pending workflow and unblock it.
-3. Do not treat the stuck workflow as a system defect before completing this check. This is the **standard AEM behavior** enforcing the **replicate permission gate**, a deliberate safeguard that ensures only authorized users publish or propagate content. Because the workflow simply pauses at this permission check, the underlying content is neither corrupted nor lost — it remains fully intact and resumes as soon as the permission requirement is satisfied.
-
-### Disabled Move button {#move-button}
-
-**The [!UICONTROL Move] button in the [!DNL Assets] UI stays grayed out until a destination folder checkbox is selected in the [!UICONTROL Select Destination] dialog box.** If the **[!UICONTROL Move]** action appears grayed out or unresponsive, the most common cause is that no destination has been chosen yet.
-
-**How to enable the Move button:**
-
-1. Open the **[!UICONTROL Select Destination]** dialog box.
-2. Select or check the **destination folder checkbox** for the target folder where the asset should go.
-3. Confirm that a specific destination is highlighted or checked — not merely browsed to.
-4. The **[!UICONTROL Move]** button activates once a valid destination folder is confirmed.
-
-**Why the Move button stays disabled:** The **[!UICONTROL Move]** action requires a confirmed target folder before it can run. As a result, the button remains inactive whenever the **[!UICONTROL Select Destination]** dialog is open but no folder checkbox has been selected. This ensures the Move operation always has a valid destination and prevents assets from being moved without a target.
-
-Selecting the **destination folder checkbox** is easy to overlook, since simply navigating into or clicking a folder does not always register it as the confirmed destination. Verify that the checkbox for the folder is actually checked, and the **[!UICONTROL Move]** button becomes active and clickable.
-
-### Private folders versus standard ACLs {#private-folders-versus-standard-ACLs}
-
-Private folders use a **membership-based model** that layers on top of and effectively overrides the standard Access Control List (ACL)–based sharing for the **Share Link** feature specifically. In practice, only the folder's **owner** and **explicitly added members** can generate shared links or otherwise use sharing features on a private folder — even when the underlying group ACL is unchanged.
-
-#### How the override works
-
-Read access through the group ACL still lets group members browse a private folder, so members retain visibility into the folder's contents. Sharing capability, however, is governed separately by the private-folder membership list rather than by the group ACL. This layered model ensures that browsing and sharing are controlled independently: a user can see a private folder because of read-level ACL access, yet remain unable to share it because they are not on the folder's explicit membership list.
-
-#### Troubleshooting restricted sharing
-
-When investigating why a specific group can no longer share the folder, follow these steps:
-
-1. **Check whether the folder was recently converted to private.** Conversion to a private folder is the most common cause of newly restricted sharing.
-2. **Confirm the group ACL is unchanged.** If read access still works but link generation fails, the ACL is not the source of the problem.
-3. **Verify the private-folder membership list.** Confirm whether the affected users are listed as the owner or as explicitly added members.
-
-Because private-folder membership overrides ACL-based sharing, a recent conversion to private directly explains restricted sharing even when the group ACL remains unchanged. As a result, restoring sharing requires adding the relevant users as explicit members of the private folder rather than modifying the group ACL.
-
-### Folder structure and performance guidance {#folder-structure-and-performance-guidance}
-
-**Adobe [!DNL Experience Manager] (AEM) recommends keeping the number of direct children under any single folder to roughly 1,000 for optimal performance and usability.** While AEM does not enforce a hard technical limit on the number of subfolders or assets stored under a single folder, staying near this practical ceiling keeps content operations responsive.
-
-In this context, **direct children** are the combined count of subfolders and assets immediately under a single folder.
-
-**Why the ~1,000 threshold matters:** As the number of direct children grows into the several-thousand range, AEM must enumerate, sort, and index a much larger set of items each time the folder is accessed. Because of this larger workload, folders with several thousand direct children typically exhibit degraded performance across common operations, including:
-
-- **Listing** — browsing or paginating the folder's contents becomes slower.
-- **Moving** — relocating folders or assets takes longer as more items must be processed.
-- **Workflow operations** — automated processes running against the folder's contents complete less efficiently.
-
-**Best practice: subdivide proactively.** If a folder is expected to grow beyond roughly **1,000 direct children**, introduce additional grouping or subfolder levels before performance issues appear rather than after. Establishing a logical hierarchy in advance distributes items across multiple smaller folders, keeping each folder's child count within the responsive range and preventing the listing, moving, and workflow slowdowns associated with oversized folders.
-
-### Known UI behavior {#known-UI-behavior}
-
-**Avoid using slashes (/) in folder titles in the [!DNL Assets] UI.** This is a documented behavior, not a bug in the underlying repository.
-
-A **slash (/) in a folder title** interferes with the **[!UICONTROL Column View]** rendering logic. As a result, the affected folder's subfolders fail to display in **[!UICONTROL Column View]**, even though the subfolders still exist in the repository and remain intact.
-
-#### Cause
-
-The rendering logic in **[!UICONTROL Column View]** treats the slash character as a path separator. Because a slash inside a folder title collides with how the interface parses hierarchy, the view cannot resolve and draw the child folders beneath that title. The children are not lost — they are simply hidden from the **[!UICONTROL Column View]** display.
-
-#### Troubleshooting steps
-
-If **[!UICONTROL Column View]** unexpectedly shows an empty folder that actually has children, work through the following checks before assuming a deeper indexing or permissions problem:
-
-1. **Inspect the folder titles along that path for slashes (/).** A single slash in any title on the path is the most common cause of the empty-view symptom.
-2. **Rename any offending folders** to remove the slash from the title, which allows **[!UICONTROL Column View]** to resolve and render the child folders correctly.
-3. **Only escalate to indexing or permissions investigation** after confirming that no folder titles under that path contain slashes, since those are far less likely explanations for this specific behavior.
-
-### Troubleshooting checklist {#troubleshooting-checklist}
-
-1. **Move or copy workflow stuck in pending**: Check the initiating user's **replicate permission**. Obtain approval from an administrator if the workflow is expected to remain pending, or grant **replicate access** when the initiating user legitimately requires it, because move and copy operations depend on replicate permission to complete.
-2. **Move button disabled**: Confirm a **destination folder** is actually checked or selected in the destination picker. The Move button remains disabled until a valid target is selected, because the operation requires an explicit destination.
-3. **Group can see a folder but cannot share it**: Check whether the folder is marked private. **Private folders** restrict sharing to owners or explicitly added members, regardless of the read **Access Control Lists (ACLs)**. This is because private status overrides read permissions, allowing a group to view a folder without being able to share it.
-4. **Column View shows a folder as empty when it has children**: Check for slashes in the child folder titles, because a slash character in a folder title can break the path resolution that Column View uses to display children.
-5. **Folder operations feel slow at scale**: Count the direct children under the folder. When the child count reaches the thousands, introduce an additional subfolder grouping, because a large number of direct children increases the processing load for folder operations and slows performance.
 
 **See also**
 
@@ -961,4 +866,4 @@ If **[!UICONTROL Column View]** unexpectedly shows an empty folder that actually
 * [Search facets](/help/assets/search-facets.md)
 * [Manage collections](/help/assets/manage-collections.md)
 * [Bulk metadata import](/help/assets/metadata-import-export.md)
-* [Publish [!DNL Assets] to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
