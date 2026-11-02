@@ -321,29 +321,6 @@ The Content Hub enforces access through several layered mechanisms:
 
 Access controls in a digital asset management (DAM) environment exist to balance broad usability with governance. In AEM Assets Content Hub, this balance is achieved by combining organization-based permissions with version governance. As a result, marketers, designers, and other approved users can confidently pull assets knowing they are working with the correct, current, and compliant materials — which strengthens both brand integrity and content security across the organization.
 
-### Why is my approved asset not visible in Content Hub?
-
-**Content Hub displays only assets whose `dam.status` metadata is set to `approved`.** If an asset does not appear in Adobe Experience Manager (AEM) Assets Content Hub, the most common cause is that its **`dam.status`** metadata value has not reached the **Approved** state — visibility is driven entirely by this metadata flag, not by a separate publish action or folder placement.
-
-#### The core requirement
-
-There is **no separate publish action** beyond the standard AEM approval workflow, and Content Hub has **no folder-creation capability**. Assets are organized purely through **metadata filters and collections**, not through a folder hierarchy. Because of this metadata-driven model, an asset becomes discoverable in Content Hub only after its review status is correctly approved in the underlying Digital Asset Management (DAM) repository.
-
-#### Why approved assets may still be hidden
-
-For assets ingested through integrations such as **Workfront**, the integration **does not automatically set the review status to `Approved`**. Ingestion and approval are two distinct stages: the integration brings the asset into AEM DAM, but it does not perform the approval step. As a result, **approval in AEM DAM must still happen manually or through a configured workflow** before the ingested assets appear in Content Hub. Until that approval occurs, the asset remains present in the DAM but excluded from Content Hub display.
-
-#### Requirements checklist for Content Hub visibility
-
-An asset appears in Content Hub only when all of the following are true:
-
-- The asset's **`dam.status`** metadata is set to **`approved`**.
-- Approval has been applied **manually in AEM DAM** or through a **configured approval workflow** — not assumed from ingestion alone.
-- The asset matches the relevant **metadata filters and collections** used to organize Content Hub (there is no folder hierarchy to place assets in).
-- For integration-sourced assets (for example, **Workfront**), a deliberate approval action has been completed after ingestion, because the integration itself does not mark assets as **Approved**.
-
-For more information on why uploaded assets are not displayed automatically in AEM Assets Content Hub, see [Upload brand approved assets to Content Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/upload-brand-approved-assets).
-
 **See also**
 
 * [Translate Assets](/help/assets/translate-assets.md)

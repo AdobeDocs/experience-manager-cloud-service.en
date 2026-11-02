@@ -531,13 +531,9 @@ In addition to standard properties you can define:
 >
 >The new Content Fragment Model Editor and the Touch UI (original) Content Fragment Editor will block access to the Composite Data Type and any dependent fields.
 >
->For Composite fields in the new Content Fragment Model Editor you will see the message: Please register renderer for "composite" type.
+>For Composite fields in the new Content Fragment Model Editor you will see the message: Please register renderer for "composite" type. 
 
-### Comparison of Nested Content {#comparison-of-nested-content}
-
-There are several methods of creating, and maintaining, nested content. 
-
-#### Benefits of Composite {#benefits-of-composite}
+### Benefits of Composite {#benefits-of-composite}
 
 The Composite data type offers several benefits when modeling data:
 
@@ -556,7 +552,7 @@ The Composite data type offers several benefits when modeling data:
   * Simpler content structures with fewer fragment references reduce the overhead of reference resolution during authoring, publishing, and delivery operations. 
   * Simpler content structures also decrease the size and complexity of JSON payloads, helping improve API efficiency and overall client-side performance. 
 
-#### When to use Composite {#when-to-use-composite}
+### When to use Composite {#when-to-use-composite}
 
 Use of the Composite data type should be carefully considered, as your use-case can determine which sort of nested content is the best solution for you.
 
@@ -572,7 +568,7 @@ Use of the Composite data type should be carefully considered, as your use-case 
   * Your content is genuinely reusable across fragments. Fragment references remain the right answer for shared content; composite is for inlined content.
   * You only use the (original) Touch UI Editor. Composite is supported in the new Content Fragment Editor, but the original Touch UI Editor will block editing of composite fields.
 
-#### Limitations of Composite{#limitations-of-composite}
+### Limitations of Composite{#limitations-of-composite}
 
 The list below consolidates the current limitations of the Composite data type:
 
