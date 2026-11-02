@@ -32,23 +32,15 @@ Learn about Adobe Agentic Outcome Engineers (AOEs) and how they can help you suc
 
 ## The Agentic Outcome Engineer (AOE) {#aoe}
 
-AOEs are Adobe engineers who operate the Experience Modernization Agent on your behalf. They work at the intersection of product, engineering, and delivery to:
+AOEs are Adobe engineers who operate the Experience Modernization Agent on your behalf. AOE delivery is an optional engagement model, not a separate tier of agent capabilities. The team works with you to:
 
 * Translate AI-assisted automation into production-ready customer outcomes.
-* Bridge the talent and execution gap in emerging tech adoption.
-* Provide high-bandwidth feedback loops between customers, engineering, and go-to-market teams.
+* Resolve migration and implementation issues within the agreed engagement.
+* Transfer project knowledge to the team that will maintain the site.
 
 ## AOE-Led Delivery {#aoe-led}
 
-According to McKinsey and IDC, migration cost is the top reason enterprises cite for not adopting cloud platforms. Site migrations can be complex with significant variability. Despite available tools, partner costs continue to rise. Because of this, many organizations remain stranded on legacy systems.
-
-AI-assisted AOE delivery offers an opportunity to cross this adoption gap by:
-
-* **Providing a strategic reset:** AOE-led projects offers a faster, lower-risk path forward for stalled implementations or legacy modernization.
-* **Reducing risk:** Adobe shares responsibility for migration outcomes.
-* **Ensuring quality:** AOEs bring expertise in Edge Delivery Services architecture, migration patterns, and best practices.
-* **Applying governance:** Enterprise compliance requirements are addressed throughout the migration.
-* **Transferring knowledge:** You learn Edge Delivery Services development patterns through hands-on collaboration.
+AOEs combine EMA automation with engineering work and customer review. Agree scope, responsibilities, acceptance criteria, and support arrangements with your Adobe account team before work begins. Do not infer a delivery guarantee, price, or entitlement from the availability of the console.
 
 ## Engagement Process {#engagement-process}
 
@@ -56,9 +48,9 @@ AOE engagement is a structured process.
 
 ### 1. Scoping {#scoping}
 
-You contact your Adobe account team with your migration requirements and scope. The AOE team analyzes your source sites and generates effort estimates, typically within one week.
+Contact your Adobe account team with your migration requirements and scope. The AOE team reviews eligibility and proposes an approach, estimate, and schedule.
 
-* **Inputs:** Source URL(s), CMS platform, content volume, design requirements, timeline, authoring preferences
+* **Inputs:** Authorized source URLs, CMS platform, content inventory, design references, timeline, authoring target, integrations, access constraints, and acceptance needs
 * **Outputs:** Eligibility confirmation, effort estimate, migration approach, engagement structure
 
 ### 2. Planning {#planning}
@@ -66,7 +58,8 @@ You contact your Adobe account team with your migration requirements and scope. 
 A kickoff meeting is held, along with a source site analysis, content audit, design alignment, component library review, and authoring tool selection.
 
 * **You** provide all necessary assets and guidelines.
-* **Adobe** creates a detailed migration plan with timeline and roles.
+* **Adobe** proposes the migration plan, timeline, roles, and checkpoints for agreement.
+* **Together**, confirm content/code destinations, release authority, exceptions, and the recovery approach.
 
 ### 3. Execution {#execution}
 
@@ -77,44 +70,46 @@ Checkpoints are implemented to ensure content accuracy, including component mapp
 
 ### 4. Handoff {#handoff}
 
-* **Deliverables:** Production-ready website code, migrated content, documentation, performance and accessibility reports
+* **Deliverables:** Agreed website code, migrated content, documentation, validation reports, and a record of acceptance and remaining exceptions
 * **Activities:** Knowledge transfer, authoring training, developer onboarding
 
 ### 5. Post-Migration {#post-migration}
 
-Once the handoff is complete, enjoy the benefits of your Edge Delivery Services project! If you have any questions, you can contact Adobe Enterprise Support.
+Confirm who owns ongoing content, code, integrations, and operations. Follow the support arrangements agreed for the engagement and your Adobe support entitlement; do not assume ongoing AOE implementation work is included after handoff.
 
 ## AOE Delivery Scope {#scope}
 
-AOE delivery provides a clearly-defined scope that you can rely on. This scope includes both automated skill capabilities and manual AOE work to fill gaps, ensuring complete, production-ready migrations.
+The engagement defines which automated and manual work is included. The sections below describe the areas to agree, not a promise that every project requirement is included.
 
 ### Source Platforms {#source-platforms}
 
-Any CMS platform such as WordPress, Drupal, Sitecore, legacy AEM, SharePoint, or custom solutions can serve as a source. Source content must be publicly accessible over the internet as static HTML. Intranet sites, password-protected content, and VPN-only systems are not accessible.
+Sources can include WordPress, Drupal, Sitecore, legacy AEM, SharePoint, or custom sites where authorized content can be extracted. The standard source scope described for this service is publicly accessible static HTML. Have the AOE team explicitly assess protected, interaction-dependent, or private-network sources rather than assume they are included.
+
+This service-scoping boundary is not a blanket product limitation: some EMA workflows can capture client-rendered content or use supported source authentication. It is also not a limit on the complexity of sites EDS can deliver. Agree source access and extraction for the actual engagement.
 
 ### Included in AOE Scope {#included}
 
 #### Target Platform {#target-platform}
 
 * **Edge Delivery Services:** All migrations target Edge Delivery Services, Adobe's high-performance web delivery platform.
-* **All authoring options:** Both Document Authoring and Universal Editor (visual editing) can be targeted in Edge Delivery Services. AOEs configure the appropriate authoring experience based on your needs.
+* **Authoring target:** Agree document-based persistence, used with Experience Workspace/Document Authoring, or AEM authoring with JCR persistence and the Universal Editor. Confirm the setup and handover for the selected target.
 
 #### Migration Work Performed {#migration-work}
 
-* **Any migration approach:** Lift-and-shift, redesign, or incremental phased migrations
+* **Migration approach:** Agree faithful migration, redesign, or an incremental phased migration.
 * **Static content import:** Automated extraction of static HTML content from source websites and intelligent mapping to EDS content blocks
 * **Design system:** Extraction of brand tokens (colors, typography, spacing) and application to the new site
-* **Practical design fidelity:** Visual fidelity to source or provided designs (Figma, Sketch) that captures brand intent without strict pixel-perfect reproduction
+* **Design references:** Agree the source site, Figma, or other supplied references and what fidelity means for acceptance. Do not assume every design format has a dedicated automated importer.
 * **Responsive design:** Mobile and desktop layouts handled appropriately
 
 #### Resulting System {#resulting-system}
 
-The resulting system is based on Edge Delivery Sites which  consistently achieve near-perfect Google Lighthouse scores (~100/100):
+The resulting site uses EDS. Agree and measure the required performance, accessibility, SEO, functional, and authoring outcomes on representative real pages. Architecture or automated scores alone do not guarantee load times, search ranking, accessibility compliance, or production readiness.
 
-* **Performance:** Sub-second page loads via edge-first architecture
-* **SEO:** Clean HTML structure optimized for search engine ranking
-* **Accessibility:** Built-in compliance with accessibility standards
+Use the [production acceptance checklist](production-migration.md#acceptance). In particular, reconcile the in-scope inventory, test integrations, and verify that authors can edit, save, reopen, and preview content in the selected authoring environment.
 
 ## Limitations {#limitations}
 
-The Experience Modernization Agent and AOE delivery is not a perfect fit for every project. [Please review the limitations of the agent.](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)
+Review the [product boundaries](overview.md#limitations) separately from the engagement scope. Integrations, custom business logic, analytics, commerce, search, source-system inheritance, and regulated requirements need an explicit inclusion/exclusion decision and owner. Automated page import does not recreate them by itself.
+
+Before handoff, record unresolved work, accepted exceptions, code/content destinations, validation results, recovery steps, and support ownership in the [project handover](project-documentation.md#portable-handoff). Code rollback and content/asset recovery are separate operations.

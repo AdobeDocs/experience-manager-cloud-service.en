@@ -47,17 +47,19 @@ The Experience Modernization Console is a hosted, AI-assisted development enviro
 Core capabilities of the console:
 
 * Interactive chat panel with the agent and its skills
-* Live AEM preview for immediate visual feedback on changes
+* Workspace and site previews for visual feedback on changes
 * Content file browser and markdown viewer
-* Content synchronization with [Document Authoring](https://da.live)
+* Content upload to [Document Authoring](https://da.live) or package creation and upload for [AEM authoring](getting-started-aem-authoring.md#upload-content), according to project configuration
 * Code browser and diff viewer for reviewing changes made
 * GitHub integration with ability to create pull requests from changes
 
-Developers retain full control over what ships. All changes made through the console require review and approval before deployment, ensuring governance, brand consistency, and security.
+Review changes before saving to a shared destination. The console can push to a new pull request or directly to the current branch; repository protections determine which changes require approval. Content uploads write to the authoring destination separately from code push. Optional planning is not an enforced approval gate for every operation.
+
+For complete procedures, choose [trial or demo](getting-started.md#first-outcome), [production migration](production-migration.md), [restyling](restyling.md), or [block development](block-development.md).
 
 ## Navigation {#navigation}
 
-After signing into the console at [aemcoder.adobe.io,](https://aemcoder.adobe.io) you arrive on the [home page](#home-page) of the console. Once you have started chatting you will be taking directly to the [chat page](#chat-page) on subsequent visits to Experience Modernization agent.
+After signing into the console at [aemcoder.adobe.io,](https://aemcoder.adobe.io) use the [home page](#home-page) to start work or continue in the [chat page](#chat-page). Confirm the active project and branch before making changes.
 
 ![Home screen of console](assets/console-home.png)
 
@@ -71,7 +73,7 @@ The top menu bar provides:
 
 ## Home Page {#home-page}
 
-The **Home** page is your starting point for using the console. 
+The **Home** page is your starting point for using the console.
 
 * At the top is a [prompt input](#prompt-input) for making requests of the console.
 * Below the prompt panel are suggested prompts for getting started with your project.
@@ -84,7 +86,8 @@ The prompt input provides controls for interacting with the AI.
 
 * **Plan / Execute modes** (light bulb and magic wand icons): Toggle between planning and execution modes, respectively
   * **Plan mode**: The AI analyzes requests and outlines an approach without making changes, which is useful for understanding strategy before committing.
-  * **Execute mode**: The AI carries out the plan and makes actual file changes.
+  * **Execute mode**: The AI performs the request and can make actual file changes.
+  * Planning is optional. Before execution, state the allowed scope and whether upload, push, or publication is authorized.
 * **Attach files** (paperclip icon): Upload and attach files to the prompt for additional context (e.g. reference designs, screenshots, specs)
 * **Prompt queue** (clock icon): Additional prompts can be queued up to be automatically executed once the current prompt has completed.
 
@@ -99,18 +102,28 @@ The chat panel allows you to view and continue your conversation with the Experi
 The chat panel header includes links for navigating to the [Home](#home-page) and [Settings](#settings-page) views and chat actions.
 
 * **Chat actions**
-  * **Clear chat**: This resets the conversation and clears the AI's context window. Use this option when starting a new task unrelated to the previous conversation.
+  * **Clear chat**: This resets the conversation and clears its context. It is not a code or content rollback. Save important decisions in [project context](project-documentation.md#portable-handoff) before clearing.
   * **Download chat**: This downloads the conversation history as a markdown file.
 
 ## Workspace Panel {#workspace-panel}
 
-The workspace panel displays all the content and code for your site. The header at the top of the panel includes a picker to select the specific view you want to focus on. The actions available in the workspace header will change based on the currently selected view.
+The workspace panel displays working content and code for the connected project, not necessarily every remote page on the site. Its view picker determines the available actions.
+
+### Know Which Result You Are Viewing {#preview-states}
+
+| Result | What it establishes | What remains to check |
+|---|---|---|
+| Workspace content preview | The local working content renders with the current workspace code. | Upload, remote authorability, and branch preview. |
+| Static design preview | A design or prototype renders. | Conversion to authorable EDS content, if required. |
+| Remote authoring content | Documents or JCR pages have been saved to the target. | Edit/save/reopen, the matching code version, and preview. |
+| EDS preview | Saved content renders with the code branch in that URL. | Release acceptance and publication. |
+| Published site | The release is visible on the live destination. | Post-release checks and monitoring. |
 
 ### Content Views {#content-view}
 
 The **Content views** contain multiple modes for displaying the selected page content. A collapsible file browser displays all the available page content for your site.
 
-* **Preview** (document with magnifying glass icon) to view the rendered HTML content 
+* **Preview** (document with magnifying glass icon) to view the rendered HTML content
 * **Document view** (document icon) to view the underlying document authoring content structure, respectively
 * **HTML view** (code icon) to view the raw plain html
 * **Markdown view (AEM authoring)** (paragraph icon) to view the underlying markdown content structure
@@ -124,9 +137,9 @@ The following actions are available in the content views:
 * **Responsive mode** to view the rendered HTML content in a desktop, tablet, or mobile view
 * **Inspect mode** (select icon) to add elements of the page to your prompt for additional context
 * **New window** (open in icon) to open the preview URL in a new tab (for a full desktop preview)
-* **Delete** removes the selected page from the workspace. Previewed or published content will not be deleted.
+* **Delete** removes the selected page from the workspace. It does not delete remote previewed or published content.
 * **Errors** button (AEM authoring) opens a modal window to view the errors on the selected page.
-* **Upload content** button opens a modal window to upload files to AEM.
+* **Upload content** opens the destination-specific upload or package dialog. Check destination paths and overwrite implications before proceeding.
 
 ![Upload content](assets/upload-content.png)
 
@@ -154,7 +167,7 @@ The **Code views** provides tools for browsing your project files and managing c
 * **Sync**: Pulls the latest changes from the remote origin
 * **Push**: Opens a modal to push workspace changes to GitHub
 
-When pushing changes, you must have first staged changes to include in the push. When pushing you can choose to create a new PR or push directly to the current branch
+Stage only the files intended for the push. Review the diff, run project checks, and choose a new PR or a current-branch push according to repository policy. Verify the resulting PR or branch commit. Pushing code does not upload content, and discarding local code does not undo remote content writes.
 
 ![Push changes](assets/push-changes.png)
 
@@ -198,4 +211,6 @@ If you make a change to any value in any section, click **Save** to save those c
 * **Support** summarizes information shared with the Adobe support team when you make a support request.
   * **Request support** - Click to initiate a request for support from Adobe without leaving the console.
 * **Danger zone** contains settings that can revert your workspace.
-  * **Reset workspace** - Click to reset the workspace to its initial state. This can not be undone.
+  * **Reset workspace** - Resets the workspace to its initial state. This cannot be undone. Save needed code and content first; reset is not a remote-content recovery tool.
+
+Figma access also depends on the token owner's access to the selected file and the capability being enabled for the project. Store tokens only in credential settings, not prompts or project documentation.

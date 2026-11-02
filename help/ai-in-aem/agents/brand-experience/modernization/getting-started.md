@@ -28,11 +28,41 @@ role_v2:
 
 # Getting Started with the Experience Modernization Agent {#getting-started}
 
-Learn the first steps to get started using the Experience Modernization Agent and the Experience Modernization Console.
+Use your brand's content to try EDS and EMA, or prepare a few customer demo pages. For a full-site release, use the [production migration guide](production-migration.md) after validating representative pages.
 
 >[!NOTE]
 >
 >If you are interested in using the Experience Modernization Console, you can request access through your account manager to ensure a smooth onboarding experience.
+
+## Choose Your First Outcome {#first-outcome}
+
+The console is hosted. You do not need a local development environment to begin.
+
+Before importing, identify the authorized source URLs, the pages to include, and whether to preserve the source design or apply a new design. For a connected project, also confirm the code repository and branch, content destination, and permission to write there.
+
+### Trial Your Brand's Content {#brand-trial}
+
+Use a small, representative set of your own pages so that your first edit is useful beyond a sample tour.
+
+1. If your account has access to **auto mode**, open that entry and provide your site URL or an explicit page list. Review the scope, settings, and limits displayed before starting. Use the supported source-authentication controls if needed, not chat, to provide credentials.
+1. Start the run and review its status and result. Inspect the returned preview, repository, report, and errors where available. A failed or partial run is not proof that all requested pages migrated.
+1. Open the resulting project in the console through the continuation offered by the run, or [connect the resulting EDS site](#connect-repo). If auto mode is unavailable, use the guided [single-page import](#start-prompting) below. Auto mode is not a prerequisite for trying your content.
+1. Ask for one useful change, such as correcting a heading or updating a call to action. Check it on the intended page and at mobile width.
+1. [Save content and code separately](#upload-content), then reopen the remote document and the matching branch preview. Record the project, repository, branch, content location, and preview URL so that you can return.
+
+The trial is complete when the content is editable and the useful change is retained, not merely when a preview link exists. A static design preview does not demonstrate remote authorable content.
+
+Auto-mode access does not imply a universal free entitlement, page allowance, or retention period. Check your account's displayed limits and save work you want to keep. Use the [guided AEM authoring path](getting-started-aem-authoring.md) for JCR-backed delivery; do not assume auto-mode results use that target.
+
+### Create a Customer Demo {#customer-demo}
+
+1. Select authorized customer-owned or brand-owned pages and the audience's demo goal. Include representative content rather than only the easiest page.
+1. Use auto mode where available, or [import the selected pages](#start-prompting). Name the exact page list; a request for one page is not a full-site migration.
+1. Apply the source design, or follow [restyling during migration](restyling.md#during-migration). Complete the navigation, footer, and assets needed for the demo path.
+1. Check text, imagery, links, layout, and mobile behavior. Walk the actual demo sequence. Identify mocked interactions, unavailable integrations, and pages outside scope.
+1. Retain the work as described for a trial. Hand over exact preview links, their source-page mapping, and the known gaps.
+
+A good demo presents complete, branded pages and working demo paths. It does not require full production cutover, but it must not be described as production-ready.
 
 ## Prepare an Edge Delivery GitHub Repository {#prepare-repo}
 
@@ -65,25 +95,25 @@ Learn the first steps to get started using the Experience Modernization Agent an
 
 ## Demo Mode {#demo-mode}
 
-The console launches in demo mode when you first sign in. This mode allows you to explore an existing site where you can try out migrating additional pages. A banner at the bottom the screen indicates that you are in demo mode.
+If the console presents demo mode, you can optionally explore its sample project and try importing additional pages. A banner indicates that you are in demo mode. Sample exploration is not required before trying your own content.
 
 ![Demo mode](assets/demo-mode.png)
 
 ## Connect Your Site {#connect-repo}
 
-When ready to begin working on your own site you can exit demo mode by connecting to your own project. 
+Connect a new or existing EDS project. If you have local workspace changes to keep, save content and push code before replacing the workspace.
 
-1. Click **Switch site** in the demo mode banner.
+1. Click **Switch site** in the demo mode banner, or use the repository connection in [Settings](console.md#settings-page).
 1. This will prompt you to authorize the AEM Code Connector app using your GitHub credentials. Click **Authorize AEM Code Connector**.
 1. Back in the console, specify the Preview URL of the site. The preview URL can be obtained by previewing any document in the site, or by constructing it from branch, site-name and org. The system will retrieve the associated Github Project automatically. Alternatively, you can search through your authorized GitHub projects to find a site.
    ![Connecting to GitHub project](assets/connect-site-and-github.png)
 1. Click **Checkout to workspace** once the site has been verified.
-1. When prompted to **Replace existing workspace**, click **Replace workspace**.
+1. When prompted to **Replace existing workspace**, verify that the current work is saved elsewhere, then click **Replace workspace**.
    ![Replace existing workspace](assets/replace-existing-workspace.png)
 
 Your GitHub project and site is now connected to the console.
 
-If demo mode has been exited but a new project has not been connected, subsequent visits to Experience Modernization agent will force a site to be connected first.
+Confirm the connected repository, branch, and content destination before requesting changes.
 
 ![Site connection](assets/first-sign-on.png)
 
@@ -97,21 +127,24 @@ When you visit [aemcoder](https://aemcoder.adobe.io) the Home Page will appear u
 
 Now that your console can access your code, you are ready to start prompting.
 
-1. To get started you can import the content of a site:
-   * "Migrate the page `https://wknd-trendsetters.site`."
-1. This imports the content of the site.
+1. Start with one authorized source page. Replace the example URL and destination in this prompt:
+   * "Migrate only `https://www.example.com/about` to `/about` in this project. Target document-based content. Preserve its text, images, and links. Reuse existing blocks and default content. Do not upload, push, or publish."
+   * For AEM authoring, specify JCR persistence and follow the [target-specific checks](getting-started-aem-authoring.md#validate-content).
+1. Review the imported page, its destination path, and any reported gaps.
    * The console observes separation of concerns and handles content and presentation separately.
-   * The initial import of a site's content may take several minutes.
+   * Import duration depends on the source and requested scope.
    * The console presents you with ongoing feedback as it begins its work, including an overview of its planned steps.
    ![Content import](assets/content-import.png)
 1. Once the site is imported, the **Workspace** panel shows the pages. Select a page to preview it in the right panel.
   ![Content imported](assets/content-imported.png)
-1. Now that you have content, you can prompt to import the styles from the same source.
-   * "Import the general styles from `https://wknd-trendsetters.site`."
+1. Now that you have content, request faithful source styling, or explicitly choose a [new target design](restyling.md).
+   * "Import the general styles from `https://www.example.com/about`, then style the blocks used on `/about`. Preserve the imported content."
 1. As with the initial content import, the import may take several minutes and the console provides feedback as it processes your request and imports the styles. Once the task is complete, click **Refresh preview** in the right panel to view the styled content.
    ![Styles imported](assets/styles-imported.png)
 
-Now you have both the content and styles imported into the console.
+Review the page at desktop and mobile widths. Compare text, links, images, and document structure with the source. Page import does not finish shared navigation and footer automatically; request those separately when needed.
+
+The result is working content and code in the console. It is not yet evidence that remote content was saved, the code was pushed, or the site was published.
 
 >[!TIP]
 >
@@ -119,13 +152,13 @@ Now you have both the content and styles imported into the console.
 
 ## Upload Content {#upload-content}
 
-To upload your content to [Document Authoring](https://da.live):
+For document-based persistence, upload to [Document Authoring](https://da.live). Code push does not save these documents. Confirm the organization, repository, destination paths, and permission to replace any existing content before uploading.
 
 1. Make sure you are in a **Content** view and then click the **Upload content** button on the top-right.
    * By default you are in **Content** view when entering the console.
    * Your view is indicated by the selected View Picker item in the workspace area of the console.
 1. The **Upload content** dialog opens with the destination org and repo pre-filled from your project settings.
-   * If an `fstab.yaml` is not present in your connected repository, you will need to manually enter your **Organization** and **Repository**..
+   * If an `fstab.yaml` is not present in your connected repository, you will need to manually enter your **Organization** and **Repository**.
    * If you used the boilerplate, an `fstab.yaml` is provided.
 1. Select the files you want to upload and click **Upload**.
    ![Upload content dialog](assets/upload-content.png)
@@ -137,7 +170,7 @@ To access the uploaded content in Document Authoring, optionally click **View in
 
 ![Content in Document Authoring](assets/content-in-document-authoring.png)
 
-Your imported content is now in Document Authoring.
+Open an uploaded document, make an edit, save, and reopen it to check authorability and persistence. Use the project's available authoring experience, including Experience Workspace where configured. Review upload errors before assuming all selected pages were copied.
 
 >[!TIP]
 >
@@ -145,18 +178,18 @@ Your imported content is now in Document Authoring.
 
 ## Push Code Changes {#push-code-changes}
 
-Once you are satisfied with the changes you have made to your code, you can push them to your GitHub repository.
+Review the code diff and run the project's checks before pushing. Use a pull request for work requiring review. Repository protections, not an optional planning conversation, enforce branch rules.
 
 1. Switch to **Changes** view (branch icon in the view picker).
    ![Code view](assets/code-view-git-changes.png)
 1. In the list of files changed, if some files show up as untracked, click their `+` button to stage them.
 1. Click **Push** button on the top-right.
 1. In the **Push changes** dialog, choose to push changes to a new PR (default) or the current branch and click **Confirm** to push.
-   * When in doubt, you can push to the current branch to keep things simple.
+   * Push directly to the current branch only when your project's policy permits it and you intend to change that branch.
 1. Once complete, a notification appears at the bottom of the console.
    ![View PR](assets/view-pr.png)
 
-If you wish to directly access the pushed changes in GitHub, click **View PR** in the notification when the push completes.
+If a pull request was created, click **View PR** in the completion notification. Otherwise, verify the commit on the destination branch.
 
 ![Code in GitHub](assets/code-in-github.png)
 
@@ -173,17 +206,29 @@ To view the changes in the preview environment:
 1. Click the paper plane icon (top right) and select **Preview**.
    ![Publish to preview](assets/publish-to-preview.png)
 
-Congratulations! Your migrated content and styles are now live on the AEM preview environment.
+Verify that the preview contains both the saved content and the intended code version. Preview is separate from publication to the live site.
 
 ![Published preview content](assets/published-preview.png)
 
-If you pushed your code to a branch other than `main`, the preview opened from Document Authoring will not show the styles. Change to the branch by updating the URL of the preview and you can see your styles.
+If your code is on a branch other than the one in the preview URL, change the preview URL to that branch. For JCR-backed content, complete [AEM authoring validation and preview](getting-started-aem-authoring.md#preview-site) instead of the Document Authoring steps above.
+
+## Retain or Hand Over Your Work {#retain-work}
+
+Record source and output URLs, code repository and branch, remote content location, accepted pages, unresolved issues, and the next useful task. See [project handover](project-documentation.md#portable-handoff).
+
+If your workflow offers transfer to another document-based project, confirm the destination and overwrite choice. Transfer pushes code and copies content separately: either operation can fail independently. Verify both before leaving the source project. Do not assume this route transfers document content into JCR or provides atomic rollback.
 
 ## Troubleshooting {#troubleshooting}
 
+If import fails, retain the error and exact source URL. Check source reachability and permissions, correct the extraction or mapping, and retry one affected page before repeating a batch. Do not bypass source access controls.
+
+If a change is missing, check each location separately: the console workspace, uploaded remote content, pushed code branch, and previewed page. Reimport can overwrite local content changes; save or reconcile author edits first.
+
+Before reset, discard, replacement, or overwrite, preserve the affected work. Recover code through your repository workflow and restore content separately through the authoring system's available recovery process. A code revert alone does not undo remote document writes.
+
 ### Allowlist IP Addresses {#allowlist-ip-addresses}
 
-If your site is behind a firewall or access restrictions, you can allowlist the following IP addresses so that the backend services can scrape your site:
+Where approved by your source-site administrator, the following backend addresses can be allowlisted for source extraction. Network access alone does not grant authorization or satisfy login requirements, and does not provide VPN/private-network connectivity:
 
 * `34.228.136.112`
 * `54.90.51.39`

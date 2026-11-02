@@ -28,43 +28,52 @@ role_v2:
 
 # Getting Started with the Experience Modernization Agent for AEM Authoring Projects {#getting-started-aem-authoring}
 
-For AEM authoring projects using the Universal Editor, preparation of the Experience Modernization Agent differs from the standard Edge Delivery flow. This document covers those setup differences. Once the steps below are complete, follow the main [Getting Started with the Experience Modernization Agent](getting-started.md) guide.
+Use this workflow when EDS content must be stored in AEM's JCR repository and edited with the Universal Editor. EDS remains the delivery target; this is not a migration to HTL-based delivery. The source website's technology does not determine your persistence target.
+
+You need console access, repository permissions, and permission to create or update content and assets on the target AEM author instance. Record the AEM host, site identifier, page root, DAM destination, code repository, and working branch before importing. A document-based auto-mode preview is not a substitute for this setup.
 
 ## Create Your Edge Delivery Services Project Repo {#create-repo}
 
-1. Use the [`aem-block-collection-xwalk`](https://github.com/adobe-rnd/aem-block-collection-xwalk) repository as your template (not the standard Edge Delivery Services boilerplate).
-1. Verify that `fstab.yaml` points to your AEM host, git owner, and git repo, and commit any changes to `main` before connecting the GitHub apps.
+For a new project:
+
+1. Use the [`aem-block-collection-xwalk`](https://github.com/adobe-rnd/aem-block-collection-xwalk) repository as your template rather than the document-based boilerplate.
+1. Verify that `fstab.yaml` points to your AEM host, Git owner, and Git repository. Review and commit the configuration to the branch used for setup.
    * See [Configure content source](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md) for instructions.
 1. Follow the [Universal Editor tutorial](https://www.aem.live/developer/ue-tutorial) to set up your repo.
    * Stop when you are asked to create a site in AEM.
-1. Delete `paths.json` and commit this change to `main`.
+1. For this new-project setup, remove the template's `paths.json` and commit the change. Do not remove an existing site's path mappings without reviewing their purpose and replacement.
 1. Add the [AEM Code Connector](https://github.com/apps/aem-code-connector/installations/select_target) app to your repo.
    * This allows the console to inspect your code.
+
+For an existing JCR-backed EDS project, reuse its configuration and content models. Do not recreate the site or replace its repository with the template. Confirm [code synchronization and repository access](getting-started.md#prepare-repo) without repeating the document-based setup.
 
 ## Create a New Site in AEM {#create-site}
 
 1. In the AEM Sites console, select **Create** > **Site from template**.
 1. Select the **AEM Site with Edge Delivery Services Template**.
    * Don't see it listed? [Install the template.](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)
-1. Keep the **name** of the site (not the title) as provided.
+1. For this template setup, keep the **name** of the site (not the title) as provided.
    * The site name is used as the unique identifier.
    * The title can be changed for display.
-1. Click **Create**. 
+1. Click **Create**.
    * You are redirected to the Sites page.
    * Refresh the page if the new site does not appear immediately.
 
+Skip site creation if the target site already exists. Confirm its identifier and destinations instead; do not rename a live site to fit an example.
+
 ## Continue with the Standard Getting Started Steps {#continue}
 
-Once the above steps are complete, you can continue with the standard getting started guide to begin migrating your content.
+Once setup is complete, connect the project and migrate one representative page. These are shared console actions, not a second repository setup.
 
 ![Content import](assets/content-import.png)
 
 Follow these steps from the standard guide.
 
-1. [Prepare an Edge Delivery GitHub Repository](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#prepare-repo)
 1. [Open the Experience Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#open-console)
 1. [Connect Your GitHub Repository](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#connect-repo)
-1. [Start Prompting](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#start-prompting)
+1. [Start Prompting](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#start-prompting), explicitly requesting JCR-backed AEM authoring output.
+
+For example: "Migrate only `https://www.example.com/about` to the agreed page root in this AEM authoring project. Preserve content and links. Reuse the project's block models and validate JCR conversion. Do not upload, push, or publish."
 
 ![Content imported](assets/content-imported-aem-authoring.png)
 
@@ -72,14 +81,17 @@ Once you complete those steps to migrate the content, continue with the followin
 
 ## Validate Content {#validate-content}
 
-Validate the content of the selected page in the preview of the content panel. Any errors will be displayed by clicking the **Errors** button. 
-Continue your chat conversation with the agent to fix the errors. Use the **Add to chat** feature to target fixes to specific elements of the page, parser files, or transformer files.
+Validate the selected page in the content panel. Use **Markdown view**, **JCR XML view**, and **Errors** to check content and conversion. Use **Add to chat** to target fixes to a page, parser, or transformer.
+
+Ask the agent to check that the source block models, component definitions, and generated aggregate configuration agree. Update the source configuration through the project's generation workflow rather than fixing only a generated file. Check field mappings and authoring hints, page paths, image references, and the intended site/DAM destinations.
+
+An HTML preview can look correct while the converted content is not authorable. Resolve conversion errors on a representative page before creating a larger package.
 
 ![Contextual chat](assets/contextual-chat.png)
 
 ## Upload Content {#upload-content}
 
-To upload your content to AEM:
+Package upload writes remote AEM content. Confirm the selected pages, host, site, page root, and asset destination with the target owner. Preserve existing content before replacing it; local validation does not make an overwrite safe.
 
 1. Make sure you are in a **Content** view and click the **Upload content** button on the top-right.
 1. In the **Create content package** dialog, choose the pages to include in the package.
@@ -97,11 +109,25 @@ To upload your content to AEM:
 
    ![Package ready to upload to AEM or download](assets/upload-package-start.png)
 
-1. The dialog shows upload progress as pages and assets are sent to AEM. When the upload finishes, a success message and the upload log are displayed. Click **Close** to dismiss the dialog.
+1. The dialog shows upload progress as pages and assets are sent to AEM. Review the upload log, including individual failures, before closing the dialog.
 
    ![Upload progress and completion in AEM](assets/upload-package-complete.png)
 
-Your imported content is now in AEM. Continue with [Push Code Changes](getting-started.md#push-code-changes) in the main getting started guide.
+For a failed package or image upload, retain the log and selected paths. Correct conversion, credentials, permissions, or destinations as indicated, then retry the affected scope. A package download alone does not import content into AEM. Confirm which pages and assets arrived before retrying to avoid unintended replacements.
+
+Review and [push the matching code and configuration](getting-started.md#push-code-changes) through your project's repository policy. This is separate from package upload.
+
+## Validate Authoring and Preview {#preview-site}
+
+1. In AEM Sites, locate the imported page under the agreed site root.
+1. Open it in the Universal Editor. Verify that expected fields and blocks can be selected and edited, not merely rendered.
+1. Change representative text and an image, save, and reopen the page. Confirm that the content and asset references persist.
+1. Use the project's configured EDS preview workflow. Verify the page against the intended code branch and check responsive layout, links, and images.
+1. For production, complete the [site acceptance checks](production-migration.md#acceptance) and follow your AEM/EDS publication process.
+
+Successful package upload, successful authoring, preview, and publication are distinct checkpoints. If editing fails, revisit model mappings and generated configuration; do not accept a static preview as completion.
+
+Record the uploaded package, paths, code revision, author/preview URLs, remaining errors, and recovery owner in the [handover](project-documentation.md#portable-handoff). Code rollback does not restore JCR pages or DAM assets; recover those separately using the target environment's approved process.
 
 ## Additional Resources {#additional-resources}
 

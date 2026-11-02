@@ -31,29 +31,27 @@ Learn how the Experience Modernization Agent's documentation skill can help you 
 
 ## Accelerating Project Handovers {#project-handovers}
 
-[The Experience Modernization Agent](/help/ai-in-aem/agents/brand-experience/modernization/overview.md) can automatically generate project documentation guides for AEM Edge Delivery Services projects featuring:
+[The Experience Modernization Agent](/help/ai-in-aem/agents/brand-experience/modernization/overview.md) can generate project documentation guides from accessible EDS code and configuration, featuring:
 
-* **Project walkthrough** - Explanation of the project setup, structure, and conventions, generated without manual effort
+* **Project walkthrough** - Explanation of the project setup, structure, and conventions
 * **Module &amp; component organization** - Clear documentation of how blocks, modules, and components are organized and how they relate to each other
-* **Role-based guides** - Targeted documentation for authors, developers, and administrators, so each team member gets exactly what they need
+* **Role-based guides** - Documentation for authors, developers, and administrators
 
-This simplifies project handovers for AEM Edge Delivery Services projects.
+Review generated guidance against the actual authoring target and validated examples. Generation does not establish that the agent accessed every remote page, integration, or deployment setting.
 
 ## Prerequisites {#prerequisites}
 
 Ensure the following before using this skill.
 
 * Your project must be checked out to the workspace in the console.
-* You must have admin permissions for the project for which you're creating documentation.
-* Agent permissions must be allowed in the console.
-  * Select the option **Allow LLM to access admin.hlx.page on my behalf** [in the settings of the console.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view)
-  * If this option is not enabled, the the agent will generate the documentation based on the code base accessible to it.
+* To enrich the guides with Edge Delivery configuration, you need appropriate admin access and must enable **Allow LLM to access admin.hlx.page on my behalf** in [console settings](console.md#settings-page).
+* Without that access, the agent can generate code-based documentation. Ask it to state which configuration and remote content it could not inspect. This permission does not establish JCR repository access.
   
 ## Creating Project Documentation {#creating-documentation}
 
 Once the prerequisites are fulfilled, you simply need to ask the agent to create documentation for your project.
 
-1. In the chat ask `Create documentation for this project`.
+1. In the chat ask `Create documentation for this project`. Specify the intended audience, authoring/persistence target, and known project context.
 1. Provide the organization name of the project if the agent asks for it.
 1. The agent will ask which documentation you would like to create. Normally, you would select **All**.
 
@@ -63,13 +61,34 @@ Once the prerequisites are fulfilled, you simply need to ask the agent to create
 
    ![Documentation created](assets/documentation-created.png)
 
-You can save the PDF directly to provide to your teams or upload it as part of the rest of the DA content.
+Review the guides for correct setup, content locations, commands, authoring steps, and known limitations before sharing. Save the PDFs for your teams; for document-based projects, you can also upload them with the other DA content. This is not a JCR package-import instruction.
 
 ![Admin guide](assets/admin-guide.png)
 
 >[!NOTE]
 >
->If you are not authorized to access the Edge Delivery Services admin API or the option **Allow LLM to access admin.hlx.page on my behalf** [in the settings of the console.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view) is not enabled, the agent will generate the documentation based on the code base accessible to it.
+>If you are not authorized to access the Edge Delivery Services admin API or the option **Allow LLM to access admin.hlx.page on my behalf** in [console settings](console.md#settings-page) is not enabled, the agent generates documentation from accessible code. Label this scope rather than infer missing configuration.
+
+## Retain Context for People and Agents {#portable-handoff}
+
+Alongside the generated guides, maintain a concise Markdown handover in the project's agreed documentation location. This is a recommended practice, not a separate automatic export feature.
+
+Include:
+
+| Field | Useful detail |
+|---|---|
+| Project identity | Repository, branch/revision, source URLs, content destination, authoring tool, and preview/live URLs. |
+| Decisions | Agreed scope, design reference/version, content mappings, project conventions, and what must be preserved. |
+| Validated examples | Source-to-output paths, authorable block examples, model/variant instructions, and edit/save/reopen results. |
+| State | What exists only in the workspace, what was uploaded, what code was pushed, and what was previewed or published. |
+| Quality and gaps | Commands/checks and results, coverage, failed/skipped pages, unfinished integrations, and acceptance owner. |
+| Next step and recovery | Remaining task, permissions/dependencies, code recovery, and separate content/asset recovery process. |
+
+For JCR-backed projects, also retain model/configuration changes, site/DAM destinations, package/import results, and Universal Editor validation. For document-based projects, record the remote document location and any transfer/overwrite decisions.
+
+Ask a new conversation to read the named context file and relevant canonical task guide before continuing. Arbitrary project files are not necessarily loaded automatically. Never include tokens, passwords, or other secrets.
+
+Date the handover and refresh it when the code, models, content, or deployment changes. Generated PDFs and a prior conversation can become stale; neither is proof of current release state.
 
 ## Troubleshooting {#troubleshooting}
 
@@ -80,7 +99,7 @@ The following are common error messages encountered when using the project docum
 * **Cause:** Missing admin permissions or agent permissions not enabled
 * **Solution:**
   1. Verify you have admin access to the project
-  1. Select the option **Allow LLM to access admin.hlx.page on my behalf** [in the settings of the console.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view)
+  1. Enable **Allow LLM to access admin.hlx.page on my behalf** in [console settings](console.md#settings-page), if configuration-enriched documentation is required. Otherwise, continue with an explicitly code-only guide.
 
 ### "Project Not Found" {#not-found}
 
@@ -93,6 +112,8 @@ The following are common error messages encountered when using the project docum
 
 * **Cause:** Unable to access Edge Delivery Services config service API
 * **Solution:**
-  1. Select the option **Allow LLM to access admin.hlx.page on my behalf** [in the settings of the console.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view)
+  1. Select **Allow LLM to access admin.hlx.page on my behalf** in [console settings](console.md#settings-page).
   1. Check your network/VPN connection
   1. Confirm admin access to the project
+
+After correcting access or project selection, regenerate the affected guide and review it. Retain the last accepted copy until the replacement is checked; documentation generation does not repair or roll back the site itself.

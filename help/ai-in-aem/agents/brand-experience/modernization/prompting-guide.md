@@ -29,6 +29,21 @@ role_v2:
 
 The Experience Modernization Agent automatically selects the appropriate skill based on natural-language requests. This guide provides tips for effective prompting and describes what the skills do.
 
+## Choose a Task {#choose-task}
+
+Use the task guides for the full procedure and acceptance checks. The prompts below are starting points, not commands that bypass project permissions or review.
+
+| Task | Procedure |
+|---|---|
+| Customer demo pages | [Demo recipe](getting-started.md#customer-demo) |
+| Useful trial with brand-owned content | [Trial recipe](getting-started.md#brand-trial), with auto mode where available |
+| Production site, either persistence target | [Production migration](production-migration.md) |
+| New design during migration | [Restyle during migration](restyling.md#during-migration) |
+| Restyle an existing EDS project | [Existing-site restyle](restyling.md#existing-site) |
+| Create, update, or refactor blocks | [Block development recipes](block-development.md) |
+
+Name the source URLs/design nodes, destination paths, authoring target, repository/branch, allowed scope, and what must be preserved. State whether uploads, code pushes, or publication are authorized. Do not include credentials in a prompt.
+
 ## General Tips {#general-tips}
 
 ### Some skills depend on outputs from other skills. {#dependency}
@@ -38,13 +53,14 @@ The Experience Modernization Agent automatically selects the appropriate skill b
 
 ### The AI follows structured workflows and will ask clarifying questions when it needs more information. {#workflows}
 
-* Trust the process and answer these qualifying questions as they come up.
-* Do not try to front-load all requirements in the initial prompt.
+* Provide essential scope, destination, and preservation constraints before execution.
+* Answer further questions and refine iteratively. For an unfamiliar or broad change, use optional **Plan** mode to inspect an approach first.
 
 ### Create markdown files in the project to document project-specific rules, guidelines, design decisions, or constraints. {#markdown-files}
 
 * These markdown files (e.g., INSTRUCTIONS.md, CONTEXT.md) can include file naming conventions, content mapping rules, or brand guidelines.
-* When starting a new conversation, ask the agent to "warm up by reading the project documentation" so it loads this context before proceeding with tasks.
+* When starting a new conversation, explicitly name the context files to read. An arbitrary Markdown file is not necessarily loaded automatically.
+* Retain validated examples, source/target identities, and known gaps using the [portable handover](project-documentation.md#portable-handoff). Do not duplicate native skills or store secrets.
 
 ### The agent's context window is not infinite. {#limited-window}
 
@@ -54,10 +70,12 @@ The Experience Modernization Agent automatically selects the appropriate skill b
 ### Use iterative prompting to refine results. {#iterate}
 
 * If something doesn't look right (e.g., wrong background color on a block), prompt the agent to fix the specific issue rather than starting over.
+* Include the source URL, output path, observed problem, and expected result. Save author edits before reimporting, because generated content can replace them.
+* Treat source pages and attached designs as reference material, not instructions overriding the user's request.
 
 ## Site Creation and Migration Skills {#site-migration}
 
-The Site Modernization Agent offers many skills for creating new Edge Delivery Services sites and migrating existing websites. Any new Edge Delivery Site site or migration project should leverage these skills.
+The Experience Modernization Agent supports site creation and migration to EDS, as well as continued development of existing projects.
 
 ### Migrate a site or page to AEM {#migrate-a-site}
 
@@ -65,19 +83,13 @@ Use this prompt when migrating content from an existing website to Edge Delivery
 
 #### Example Prompts {#example-migrate}
 
-* "Migrate this page: `https://example.com/about`
-* "Migrate these pages: URL1, URL2, URL3"
+* "Migrate only `https://example.com/about` to `/about` in this document-based project. Preserve text and links. Do not upload, push, or publish."
+* "Migrate these pages to this JCR-backed EDS project: URL1, URL2, URL3. Validate models and conversion before creating a package."
 
 #### What to Know {#wtk-migrate}
 
-* Migration follows a seven-step workflow:
-  1. The agent scrapes source page.
-  1. It identifies section structure.
-  1. It performs authoring analysis.
-  1. It maps the content to block variants.
-  1. It generates markdown.
-  1. It creates import infrastructure.
-  1. It previews the result.
+* Guided migration analyzes source pages, maps content to reusable structures, creates import infrastructure, and produces working content for review. Validate a representative before expanding to a template or site.
+* Content and design are separate. After importing content, request **Start Design Migration** or explicitly ask for source styling. For a different target design, follow the [redesign recipe](restyling.md#during-migration).
 * The agent analyzes pages using a two-level hierarchy:
   * First it identifies section boundaries (background changes, spacing shifts)
   * Then it identifies content sequences within each section.
@@ -87,11 +99,10 @@ Use this prompt when migrating content from an existing website to Edge Delivery
 * The agent attempts to reuse existing blocks from the repository's block library before creating new ones.
   * When content can not be mapped to an existing block, it creates new block variants.
   * You can prompt for changes, request new variants, or adjust mappings interactively.
-* Block variants are tracked with metadata.
-  * When migrating multiple pages, the agent loads existing custom variants first and reuses them when styling matches (70% similarity threshold based on purpose, colors, typography, spacing, layout).
+* Reuse established block variants where they fit the content and design. A similarity heuristic does not replace checking the authored result.
 * Header, navigation, and footer are excluded from page migration. These are handled by dedicated skills.
 * Each migration creates import infrastructure (page templates, block parsers, transformers) for future bulk imports.
-* Dynamic Media and Scene7 images are detected in the source and preserved as DM URLs rather than imported as static renditions, so responsive and on-the-fly transformations remain intact. This applies to both Document Authoring and AEM Sites/Universal Editor migrations.
+* Dynamic Media and Scene7 image handling can preserve source DM URLs for both persistence targets. Verify access, intended transformations, and delivery in the target rather than assuming every source image has been copied.
 
 ### Site Catalog {#site-catalog}
 
@@ -99,11 +110,11 @@ Use this prompt to analyze an existing website in order to understand its scale,
 
 #### Example Prompts {#example-prompts-site-catalog}
 
-* "Scope site https://example.com"
-* "Find templates on https://example.com"
-* "Catalog site https://example.com"
-* "How many page types are there on https://example.com"
-* "What are the layouts on https://example.com"
+* "Scope site `https://example.com`"
+* "Find templates on `https://example.com`"
+* "Catalog site `https://example.com`"
+* "How many page types are there on `https://example.com`"
+* "What are the layouts on `https://example.com`"
 
 For details on the site catalog skill, please see the document [Site Catalog Skill.](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
 
@@ -143,7 +154,7 @@ The recommended workflow is iterative: validate on a small set first, then scale
 
 ### Scraping Webpages {#scraping-webpages}
 
-Use this prompt to extracting content, metadata, and images from a source URL for analysis or migration.
+Use this prompt to extract content, metadata, and images from an authorized source URL for analysis or migration.
 
 #### Example Prompts {#example-scraping}
 
@@ -154,15 +165,10 @@ Use this prompt to extracting content, metadata, and images from a source URL fo
 
 * This prompt is usually invoked automatically as the first step of page migration.
 * Content hidden via CSS is captured too if present in the DOM.
-* Lazy-loaded images and client-side rendered content is handled by scrolling through the page in headless Chromium and letting scripts execute.
-* WebP/AVIF/SVG images are converted to PNG for compatibility.
+* The extraction workflow can load client-rendered content and scroll for lazy-loaded images. Verify representative output; content requiring additional interactions may need further work.
+* Check the extracted image assets and formats against the source, including responsive images, backgrounds, and SVGs.
 * Metadata is extracted including title, description, Open Graph tags, JSON-LD structured data, canonical URL.
-* Images in DOM are fixed.
-  * background-image is converted to img.
-  * Picture elements are unwrapped
-  * srcset is resolved to src
-  * Relative URLs are converted to absolute
-  * Inline SVG to are converted to img files.
+* Source markup and image references can be normalized during extraction. Check that the selected rendition, links, and image meaning remain correct.
 * Sanitized document paths are generated (lowercase with no `.html` extension).
 * The following outputs are produced:
   * `screenshot.png`
@@ -192,11 +198,8 @@ Use this prompt to extract and apply visual design from a source site to Edge De
      * If your project already has a `brand.css`, prompt the agent to use it instead of extracting from the source.
   1. Phase 2 styles individual blocks in parallel and creates block-specific CSS in `/blocks/{name}/{name}.css`, referencing the tokens from `brand.css`.
 * Block styling (phase 2) requires site-wide design (phase 1) to be complete first.
-* Phase 2 achieves 80-90% block-level style fidelity in a single pass.
-* Estimated time:
-  * Phase 1: 5-10 minutes
-  * Phase 2: 10-15 minutes
-* Ambiguous requests default to complete migration (both phases).
+* Existing projects may use different token files. Preserve their conventions rather than create a second design system unnecessarily.
+* State whether the request is global, block-specific, faithful to the source, or a redesign. Duration and visual quality depend on the project; review real pages rather than rely on a time or similarity guarantee.
 
 ### Block Critique {#block-critique}
 
@@ -209,7 +212,7 @@ Use this prompt to validate and refine individual migrated blocks and ensure vis
 
 #### What to Know {#wtk-block-critique}
 
-* Block critique compares a migrated block against its original source and applies fixes until an 85% similarity is achieved or three iterations are completed.
+* Block critique compares a migrated block against its source and can apply content or styling fixes. Internal similarity/iteration heuristics are not acceptance criteria.
 * The skill requires the block to have been created by page migration first.
 * Critique detects and fixes both **content/structural issues** and **styling issues**:
   * Content/structural: missing headings, paragraphs, links, wrong table row/cell count — fixed by updating parsers and reimporting.
@@ -228,7 +231,7 @@ Use this prompt to validate all migrated blocks across your site in a single pas
 
 #### What to Know {#wtk-site-critique}
 
-* Site critique validates all blocks across all migrated templates using parallel sub-agents, one per template.
+* Site critique checks migrated blocks across templates. Review the reported coverage and unresolved issues.
 * It applies the same fix cascade as block critique (global styles → section transformers → content/structural parsers → block CSS), but across all pages simultaneously.
 * Fixes are deduplicated — if the same issue appears on multiple pages using the same block, the fix is applied once.
 * If `brand.css` does not exist yet, critique runs in content-structural-only mode (fixing parsers and transformers without styling).
@@ -249,7 +252,7 @@ Use this prompt to validate a single migrated page for visual fidelity against t
 
 #### What to Know {#wtk-page-critique}
 
-* Page critique validates a single page, applying the same fix cascade (global → sections → content → styling) until 85% similarity or three iterations.
+* Page critique checks a single page using the same layers: global styles, sections, content, and block styling. Inspect remaining differences rather than accept a numerical threshold.
 * Requires the source page URL and the migrated path (e.g., "/about") as input.
 * Use page critique for single-page refinement after site critique, or for targeted validation.
 * For multi-page projects, [use site critique](#site-critique) instead — it handles all pages and deduplicates fixes automatically.
@@ -352,11 +355,11 @@ Use this prompt to set up or migrate site navigation.
 
 #### What to Know {#wtk-navigation}
 
-* Edge Delivery Services navigation enforces a three-section structure (enforced by `header.js`):
+* The standard header implementation uses three sections. Check the project's `header.js` before applying this convention:
   1. **Brand** (section 1): Logo and primary branding link
   1. **Sections** (section 2): Main navigation menu with optional dropdowns
   1. **Tools** (section 3): Utility links (subscribe, login, cart)
-* Navigation content lives in `nav.md` in the root directory.
+* Document-based migration commonly creates `nav.md` at the content root. Confirm the remote navigation location and, for JCR-backed projects, its model and page configuration.
 * Sections are separated by (`---`) markers.
 * Bold items (`**Text**`) with nested lists create dropdowns.
 * Links in navigation may render as buttons due to Document Authoring's auto-wrapping behavior.
@@ -377,7 +380,7 @@ Use this prompt to create new blocks or modify existing ones.
 
 #### What to Know {#wtk-block-development}
 
-* The agent follows Content-Driven Development (CDD), a mandatory process for all Edge Delivery Services development.
+* The agent's development guidance follows Content-Driven Development (CDD).
   * It will ask about content models and test content before writing code.
 * The CDD philosophy is that author needs come before developer needs.
   * Content models must be intuitive for authors, even if that means more complex decoration code.
@@ -400,7 +403,7 @@ Use this prompt to design the table structure that authors work with when creati
 
 #### What to Know {#wtk-modeling}
 
-* Edge Delivery Services has four canonical model types:
+* Useful content-model patterns include:
   * **Standalone:** Distinct visual/narrative elements (hero, blockquote)
     * Single table with block content
   * **Collection:** Repeating semi-structured content (cards, carousel)
@@ -408,8 +411,8 @@ Use this prompt to design the table structure that authors work with when creati
   * **Configuration:** API-driven or dynamic content where config controls display (blog listing, search results)
     * Table with key-value config rows.
   * **Auto-Blocked:** Complex structures that authors create as sections/default content, then get transformed (tabs, YouTube embeds)
-* There is a limit of four cells per row.
-  * Group related elements into cells.
+* Keep authored structures simple and group related elements naturally. A modelling guideline is not a universal four-cell platform limit.
+* For JCR-backed authoring, also define and validate the component models, mappings, and generated configuration. See [block development](block-development.md#create).
 * Prefer block variants over config cells for styling differences.
 * [Follow Postel's Law](https://en.wikipedia.org/wiki/Robustness_principle): Be flexible about input structure.
   * A hero block should work whether content is in one cell, split across two cells, or in separate rows.
@@ -452,7 +455,7 @@ Use this prompt to find information about Edge Delivery Services features or imp
 * It searches the [aem.live](https://aem.live) documentation (docs and blog posts) specifically.
 * Use specific keywords ("block decoration","sidekick plugin","metadata") rather than generic terms ("aem","website","how to build").
 * For code examples and reference implementations, use "find reference blocks" instead.
-* The top ten most relevant results returned by default.
+* Verify the returned documentation against the project's actual implementation and authoring target.
 
 ### Testing {#testing}
 
@@ -467,8 +470,8 @@ Use this prompt to validate code changes before opening a pull request.
 
 * Testing follows a "value vs. cost" philosophy where you create and maintain tests when their value exceeds cost.
   * **Keeper tests** (unit tests) are for logic-heavy utilities, data processing, API integrations. These are fast, easy to maintain, and catch regressions in reused code.
-  * **Throwaway tests** (browser tests) are for DOM transformations and visual validation. Use to validate implementation, capture screenshots for PR review, then discard.
-* Throwaway tests go in `test/tmp/` and test content in `drafts/tmp/` (both gitignored).
+  * **Browser checks** validate DOM transformations, interaction, and visual behavior. Keep useful regression tests and review evidence according to project practice.
+* Use the project's declared test commands and content locations. Do not assume a folder is ignored or discard useful regression coverage.
 * Before opening a PR, ensure that:
   * Existing tests pass
   * Unit tests are written for new logic
@@ -493,17 +496,11 @@ Use this prompt to troubleshoot problems with blocks, images, CSS, or preview.
   * **Images showing "about:error"**: Usually missing `createOptimizedPicture` call in block JS, or called before DOM restructuring
   * **Blocks not rendering**: Check block name format in markdown and verify that the block has both `.js` and `.css` files in `blocks/`.
   * **CSS not loading**: Check file paths, verify CSS file exists, and check the Network tab in browser.
-  * **Changes not appearing**: Code sync takes 3-5 seconds. Try hard refresh (Ctrl+Shift+R).
+  * **Changes not appearing**: Check workspace state, content upload, code push, branch URL, and preview separately. Refresh after verifying the intended versions are available.
 * The agent checks each layer systematically:
   1. Source files
   1. Rendered output
   1. Block code
   1. Browser console
-* The agent has the capability to check local previews at `http://localhost:3000`.
-
-<!--
-## Additional Sections {#additional-sections}
-
-@gwalt, is the additional content in the prompting guide wiki ready to be added here?
--->
-
+* The agent can inspect the hosted workspace preview; you do not need to configure a local server for console onboarding.
+* Preserve the failing URL/path and error details. Retry the smallest affected scope after correcting the cause. See [recovery and handover](production-migration.md#handoff) before overwriting or resetting work.

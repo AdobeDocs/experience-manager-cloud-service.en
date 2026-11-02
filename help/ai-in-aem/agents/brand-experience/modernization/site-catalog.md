@@ -1,6 +1,6 @@
 ---
 title: Site Catalog Skill
-description: Learn how the Experience Modernization Agent's site catalog skill performs automated analysis of any website to support Edge Delivery Services migration planning.
+description: Analyze your website's pages, templates, and blocks to support Edge Delivery Services migration planning.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 product_v2:
@@ -27,15 +27,15 @@ role_v2:
 
 # Site Catalog Skill {#site-catalog-skill}
 
-Learn how the Experience Modernization Agent's site catalog skill performs automated analysis of any website to support Edge Delivery Services migration planning.
+Analyze an authorized source website to prepare an EDS migration. Use the catalog to select representative pages and review coverage, not as proof that the site has already migrated.
 
 ## Overview {#overview}
 
-The site catalog skill discovers every page on the site, identifies the page templates and block variants in use, captures screenshots of each, and presents the results in the [site planning UI](#planning-ui) of the Experience Modernization Console, where you can review and refine them.
+The site catalog skill discovers URLs, analyzes reachable pages, groups page templates and block variants, and captures screenshots. Review and refine the results in the [site planning UI](#planning-ui). Discovery can miss pages and analysis can fail; reconcile the result with your agreed inventory.
 
-The skill supports the migration of any website to Edge Delivery Services in the following ways:
+The skill supports migration planning in the following ways:
 
-* **Starting a migration project** — Run the skill before any work begins to understand the site's scale including page count, templates, block variants, and locales. It establishes the baseline inventory every downstream decision depends on.
+* **Starting a migration project** — Establish a baseline page/template/block inventory and inspect missing or failed pages before committing to the full migration scope.
 * **Effort estimation and planning** — Get quantified metrics to support proposals, sprint planning, and resourcing.
 * **Catalog review and correction** — Validate the templates and blocks the agent identified in the [site planning UI](#planning-ui) and correct them before migration begins.
 * **Bulk import preparation** — See which pages share the same layout and plan [template-by-template bulk imports](#bulk-import).
@@ -44,6 +44,8 @@ The skill supports the migration of any website to Edge Delivery Services in the
 ## Invoking {#invoking}
 
 [In the Experience Modernization Console,](/help/ai-in-aem/agents/brand-experience/modernization/console.md) ask the agent to scope your site.
+
+Confirm source authorization, reachability, and the intended project first. Cataloging analyzes the source; it does not upload content or publish a target site.
 
 `scope site https://www.example.com`
 
@@ -77,6 +79,8 @@ The status of the run is shown in the chat summary and in the site planning UI.
 |**complete**|All pages were analyzed successfully (or there was a 10% or lower failure rate).|
 |**incomplete**|Over 10% of pages failed, or block detection failed on over 50% of pages. The results are still usable but partial.|
 |**failed**|No pages were successfully analyzed.|
+
+**Complete does not mean full coverage.** Review failed URLs even for a complete run. Keep discovered, successfully analyzed, imported, and accepted page counts separate. Compare the discovered URLs with the site's agreed migration scope; unlinked or undiscovered pages need an explicit decision.
 
 ## Site Planning UI {#planning-ui}
 
@@ -176,7 +180,7 @@ The failed URLs list shows each page that could not be analyzed, along with the 
 
 You can refine the catalog directly from the site planning UI using AI actions. Open the actions menu (**...**) of any template, page, block, or variant and select **AI actions** to see the actions available for it. You can also select multiple items (up to 20) to act on them together.
 
-When you choose an action, the selected items are added to the chat as context along with a request for the action. The agent analyzes the request, proposes the change, and waits for you to confirm before making it. You can also choose **Add to chat** to add the selected items to the chat as context and write your own prompt.
+When you choose an action, the selected items are added to the chat as context along with a request. Review its scope and any proposed changes before confirming execution. You can also choose **Add to chat** and write your own prompt, including preservation constraints and whether remote writes are allowed.
 
 The following actions are available.
 
@@ -191,7 +195,7 @@ The following actions are available.
 
 Some actions are only offered when they apply. For example, **Generate block code** and **Rename block** are only available for blocks whose type has been classified, and **Give this variant its own block** is only available for variants that have a variant class.
 
-Catalog actions only change the catalog and the block library. They never change the content of pages already imported into your project.
+Grouping and naming corrections update catalog metadata and block-library organization; they do not retroactively repair already imported pages. **Generate block code** changes code, while migration actions start content-generation workflows. Review their output separately. Catalog structural refactoring is not the same as [refactoring block code](block-development.md#refactor).
 
 ## Bulk Import Workflow {#bulk-import}
 
@@ -202,6 +206,10 @@ The site catalog skill is part of the recommended approach for migrating a full 
 1. For each template, open its [template details](#template-details) and use **Migrate page to AEM** on one or two representative pages. Refine the import until the output is correct.
 1. Use **Migrate template to AEM** to import the remaining pages that use that template.
 1. Repeat for each template until the full site is migrated.
+
+Before reimporting, preserve or reconcile author edits in affected pages. If analysis fails, inspect the [failed URLs](#failed-urls), correct source access or extraction issues, and retry the affected scope. If mappings are wrong, refine a representative first rather than repeat a large import unchanged.
+
+For production, continue with [inventory reconciliation and acceptance](production-migration.md#acceptance). Generated block code marked **Ready** does not establish that it has passed authoring, functional, or production checks.
 
 ## Catalog Files {#catalog-files}
 
@@ -222,6 +230,8 @@ The folder also contains intermediate files, including per-page analysis and scr
 
 The site catalog skill has the following limitations.
 
-* **Public sites only** — The target must be publicly accessible (no authentication, VPN, or firewall).
-* **Dynamic content is not supported** — Content requiring user interaction to appear in the DOM may not be captured.
+* **Source access** — The catalog workflow must be able to reach and read the authorized source. Do not assume that authentication configured for auto mode also applies to cataloging, or that a browser login provides backend access. Verify a representative protected URL before planning a catalog run.
+* **Interaction-dependent content** — Client-rendered or CSS-hidden content is not inherently excluded, but content requiring additional user interaction to appear may not be captured. Inspect the screenshots and source content.
+* **Coverage** — Discovery and analysis do not guarantee a complete inventory. Record failures, missing URLs, and approved exclusions.
 
+Hand over the analysis date, source scope, report, corrections, unresolved URLs, and validated representatives using the [project handover](project-documentation.md#portable-handoff).

@@ -1,6 +1,6 @@
 ---
 title: Experience Modernization Agent Overview
-description: Learn how the Experience Modernization Agent onboards new websites into Edge Delivery Services with the help of AI.
+description: Use the Experience Modernization Agent to create, migrate, restyle, and develop Edge Delivery Services websites.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
@@ -28,33 +28,54 @@ role_v2:
 
 # Experience Modernization Agent Overview {#experience-modernization-agent}
 
-Learn how the Experience Modernization Agent onboards websites into Edge Delivery Services with the help of AI.
+Use the Experience Modernization Agent (EMA) to create, migrate, restyle, and develop websites on [Edge Delivery Services (EDS)](/help/edge/overview.md).
 
 ## Introduction {#introduction}
 
-[As part of the Brand Experience Agent,](/help/ai-in-aem/agents/brand-experience/overview.md) the Experience Modernization Agent accelerates onboarding to Edge Delivery Services by automating website migrations and foundational site setup.
+[As part of the Brand Experience Agent,](/help/ai-in-aem/agents/brand-experience/overview.md) EMA automates repetitive content import, block mapping, styling, and development work. You work in a hosted console, using natural-language requests and previews. No local Docker or command-line environment is required.
 
-It combines [site creation and migration skills](#creation-migration) for initial website onboarding and [block development capabilities](#block-development) to support site creation and migration workflows. In addition, it offers the [Experience Modernization Console](#console) as a web-based AI-assisted development environment available to you directly. While users can operate the agent directly through that console, developers retain full control over what ships.
+EMA also works on existing EDS projects after migration. You can refine a design, create or update blocks, and refactor code. Your permissions, repository policies, and publication workflow determine what you can change and release.
 
-For complex or high-priority migrations, Adobe offers the [Agentic Outcome Engineer (AOE) delivery model,](#aoe-delivery) an engineering-led service designed to deliver production-ready Edge Delivery sites using the Experience Modernization Agent.
+## Choose Your Task {#choose-task}
+
+| Your goal | Start here | Done when |
+|---|---|---|
+| Demonstrate a few customer pages | [Create a customer demo](getting-started.md#customer-demo) | The selected branded pages and demo paths work, with unfinished behavior identified. |
+| Try EDS and EMA with your brand's content | [Trial your own content](getting-started.md#brand-trial) | You can make a useful edit, retain the work, and return to it. |
+| Migrate a production site | [Production migration](production-migration.md) | The agreed inventory, authoring, integrations, and release checks are accepted. |
+| Apply a new design during migration | [Restyle during migration](restyling.md#during-migration) | Source content is preserved in the approved target design. |
+| Restyle an existing EDS site | [Restyle an existing site](restyling.md#existing-site) | The affected pages adopt the design without unintended content or behavior changes. |
+| Create, update, or refactor blocks | [Block development](block-development.md) | Reusable code and authorable examples pass the agreed checks. |
+
+A successful automated run or attractive preview is not, by itself, a production-ready site. Use the completion checks for your task.
+
+## Understand Your Project {#project-foundations}
+
+Keep these identities separate when you start a task:
+
+* **Source:** The authorized website, content, or design that you provide.
+* **Code:** The EDS repository and working branch that contain styles, scripts, and blocks.
+* **Content destination:** Either document-based persistence, used with Experience Workspace/Document Authoring, or AEM authoring with JCR persistence and the Universal Editor. The source CMS does not determine this choice.
+* **Preview and publication:** Where you verify the result and, separately, where you release approved changes.
+
+EDS supports complex enterprise websites. Search, commerce, personalization, and other integrations can require project-specific implementation and testing; they are not reasons to restrict EDS to simple or static sites.
 
 ## Benefits {#benefits}
 
 The Experience Modernization Agent accelerates the time to value for [Edge Delivery Services](/help/edge/overview.md) adoption and gives you the agility to adapt your brand's web experience.
 
-* **High velocity**: AI automation handles repetitive migration work (content import, block mapping, design system application), compressing migration timelines compared to traditional approaches
-* **Efficiency-Focussed**: Automation reduces repetitive work, allowing teams to focus on higher-value implementation work
-* **Accessible to anyone**: Natural language requests make website changes accessible to less technical users, with live preview to validate changes instantly
-* **Enterprise governance**: Developers maintain full authority over what goes live through review workflows integrated with GitHub
-* **Post-migration flexibility**: Enables teams to extend and refine migrated sites using Edge Delivery Services patterns
+* Import representative pages, refine reusable mappings, then apply them to further pages.
+* Use natural language to request changes and inspect the resulting content and code.
+* Reuse EDS content and block patterns rather than reproduce unnecessary source-system complexity.
+* Continue development in the connected repository and authoring environment.
 
 ## Site Creation and Migration Skills {#creation-migration}
 
 The Experience Modernization Agent offers skills for creating new Edge Delivery Services sites and migrating existing websites. Any new Edge Delivery Services site or migration is encouraged to take advantage of these skills.
 
-* Accelerates website creation and migrations from months to weeks or days, dramatically reducing time-to-value for Edge Delivery Services adoption
-* Supports migrations from a wide range of CMS platforms, legacy AEM, or design systems (like Figma) into production-capable Edge Delivery Services projects
-* Supports best practices for performance, accessibility, and responsive design aligned with Edge Delivery Services guidance
+* Imports content from reachable source pages and maps it to default content and blocks.
+* Separates content migration from faithful design migration or a deliberate redesign.
+* Supports document-based and AEM authoring projects through their respective setup and delivery workflows.
 
 Detailed skills include page migration, bulk import, design extraction, navigation setup, and web scraping.
 
@@ -103,13 +124,13 @@ Get started with the Experience Modernization Console!
 
 ## Project Documentation Skill {#project-documentation}
 
-Recognizing the time-intensive nature of project handovers, [the project documentation skill](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md) can automatically generate comprehensive documentation once authoring and development work is complete.
+[Generate project documentation](project-documentation.md) for authors, developers, and administrators. Review its coverage against the connected code and accessible configuration. Record remaining work and validated examples for the next person or agent.
 
 ## Site Catalog Skill {#site-catalog}
 
-The site catalog skill crawls an existing website, catalogs all page templates and block variants, captures screenshots of every template and block, and generates an interactive HTML report bundle for review. This skill is valuable to: 
+The site catalog skill analyzes discovered pages, groups templates and block variants, and provides screenshots and a report for review. Discovery and analysis can be partial. This skill is valuable to:
 
-* **Anyone starting a migration project** in order to get a complete inventory of page layouts, block variants, locales, and pages-per-template before writing any code, so teams can plan accurately and surface complexity early
+* **Anyone starting a migration project** to establish an inventory of page layouts, block variants, locales, and pages per template, then reconcile it with the agreed site scope
 * **Teams doing bulk imports** to identify which pages share the same layout, manually import and perfect the representative pages first, then bulk-import all remaining pages for that template
 * **Project leads and stakeholders** to understand the scope of the effort
 
@@ -126,35 +147,16 @@ If you are interested in the AOE model for your next migration:
 
 ## Limitations {#limitations}
 
-The following use cases require additional implementation effort in addition to the skills of the Experience Modernization Agent.
+Use only websites and designs that you are authorized to migrate. The selected workflow must be able to reach and read the source.
 
-The scraping skill does not support the following sources.
+* Auto-mode source authentication supports supported same-host HTTPS paths. This does not establish access to VPN-only sources or authentication support in every catalog and guided workflow. Use the credential controls offered by your workflow; do not put secrets in chat.
+* Client-rendered content can be captured when available at the page URL. Content present in the DOM but hidden by CSS can also be extracted. Content requiring additional interactions needs representative checks and may need a different extraction approach.
+* EMA targets EDS, including EDS with JCR-backed authoring. It does not convert a project to HTL-based AEM publishing or an API-only/SPA delivery stack.
+* Faithful design, accessibility, performance, and functional behavior require validation. A visual similarity score is not a production acceptance criterion.
+* Integrations, custom business logic, analytics, experimentation, and source-system features such as inheritance or content fragments need an explicit implementation and migration decision. Do not assume automated page import recreates them.
 
-* Intranet or protected sources such as content behind authentication, VPNs, or firewalls that is not accessible
-  * As an alternative, use [SLICC](https://www.sliccy.com) which can leverage the authentication context from your browser to access protected sources.
-* Complex dynamic content such as content requiring sophisticated user interaction to appear in the DOM.
-  * Client-side rendered content is supported if the content is accessible via a specific URL.
-  * Elements hidden via CSS but present in the DOM like tabs, accordions or carousels are also supported.
-
-The agent does not support the following targets.
-
-* AEM publish environments where sites use HTL-based delivery
-  * The skills target Edge Delivery Services only.
-* Headless delivery patterns such as API-only or SPA-based delivery (e.g., Next.js)
-
-The following requirements are not covered by dedicated automation skills and require manual effort.
-
-* Strict pixel perfection 
-  * Only practical design fidelity is automated
-* Integrations of server or client-side third-party data/services
-* Integrations of commerce or search functionality
-* MarTech data layer or targeting/experimentation
-* Isolation of content/experience fragments
-* Multisite inheritance (MSM)
-* Custom functionality (e.g. calculators, configurators)
-* Custom business logic
+Access to auto mode and optional design capabilities can differ from access to the console. Check the controls and limits shown for your account. [AOE service scope](aoe-delivery.md#scope) is agreed separately from product capabilities.
 
 ## Next Steps {#next-steps}
 
-Get started by migrating a site using the document [Getting Started with the Experience Modernization Agent.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
-
+Choose a task above, then use [Getting Started](getting-started.md) for shared console setup. For an existing EDS project, connect its repository and start with the relevant development or restyling task; a new migration is not required.
