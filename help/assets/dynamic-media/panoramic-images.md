@@ -15,26 +15,26 @@ role_v2:
 ---
 # Panoramic images{#panoramic-images}
 
-This section describes working with the Panoramic Image viewer to render spherical panoramic images for an immersive 360° viewing experience of a room, property, location, or landscape.
+This section describes working with the Panoramic Adobe Image Viewer to render spherical panoramic images for a 360° viewing experience of a room, property, location, or landscape.
 
 See also [Manage viewer presets](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 ![panoramic-image2](assets/panoramic-image2.png)
 
-## Upload assets for use with the Panoramic Image viewer {#uploading-assets-for-use-with-the-panoramic-image-viewer}
+## Upload assets for use with the Panoramic Adobe Image Viewer {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
-For an uploaded asset to qualify as a spherical panorama image that you intend to use with the Panoramic Image viewer, the asset must have either one or both of the following:
+For an uploaded asset to qualify as a spherical panoramic image that you intend to use with the Panoramic Adobe Image Viewer, the asset must have one or both of the following:
 
 * An aspect ratio of 2.
 <!--
   You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
   -->
-* Tagged with the keywords `equirectangular`, or `spherical`and `panorama`, or `spherical` and `panoramic`. See [Use Tags](/help/sites-cloud/authoring/sites-console/tags.md).
+* Tagged with the keywords `equirectangular` or `spherical` and `panorama` or `spherical` and `panoramic`. See [Use Tags](/help/sites-cloud/authoring/sites-console/tags.md).
 
 Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the `Panoramic Media` WCM component.
 
-To upload assets for use with the Panoramic Image viewer, see [Upload assets](/help/assets/manage-digital-assets.md#uploading-assets).
+To upload assets for use with the Panoramic Adobe Image Viewer, see [Upload assets](/help/assets/manage-digital-assets.md#uploading-assets).
 
 <!--
   NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 

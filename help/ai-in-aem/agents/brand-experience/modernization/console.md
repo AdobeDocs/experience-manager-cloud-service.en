@@ -160,6 +160,14 @@ When pushing changes, you must have first staged changes to include in the push.
 
 Additional GitHub project actions can be performed on the [settings page](#settings-page).
 
+### Project Views {#project-view}
+
+The **Project views** help you plan the migration of an existing site.
+
+* **Planning** to review and refine the templates, pages, and blocks identified by the [site catalog skill](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
+
+For details, see [Site Planning UI](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md#planning-ui).
+
 ## Settings Page {#settings-page}
 
 The [**Settings** page](https://aemcoder.adobe.io/settings) allows you to manage basic settings of the console and is broken up into the following sections.

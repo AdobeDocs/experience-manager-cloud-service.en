@@ -208,16 +208,11 @@ Selecting a specific fragment opens a toolbar focused on the actions available f
 * **Move**
 * **Rename**
 * **[Check Out and Check In](#check-out-and-check-in)**
-* **[Delete](#deleting-a-fragment)** (only available for unpublished fragments)
-
-<!-- CQDOC-23473 - feature is beta, activate when GA -->
-<!--
 * [Reuse Content Fragments using MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md) actions:
   * **[Create Live Copy](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#create-a-live-copy)**
   * **[Synchronize](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#synchronize)**
   * **[Rollout](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#rollout)**
 * **[Delete](#deleting-a-fragment)** (only available for unpublished fragments)
--->
 
 >[!NOTE]
 >
@@ -490,6 +485,12 @@ You can publish your Content Fragments using the **Publish** option for either:
 >
 >If you publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
 
+>[!CAUTION]
+>
+>If the Content Fragment Model contains Composite Data Fields, then the Content Fragment Models defining the structure of those Composite fields must also be published.
+>
+>See also [AEM Content Fragment Delivery with OpenAPI - Deliver a Composite Item](/help/headless/aem-content-fragment-delivery-with-openapi.md#deliver-a-composite-item)
+
 >[!TIP]
 >
 >Content Fragments can be [published to Edge Delivery Services.](https://www.aem.live/developer/content-fragment-overlay)
@@ -743,6 +744,8 @@ Full-text search allows you to search the Content Fragment content for a specifi
 Will provide the selected results:
 
 ![Content Fragments console - Search Results](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-full-text-search-results.png)
+
+Text within composite items is searchable. When a match is found, the parent Content Fragment is returned in search results.
 
 ### AI search (Semantic search) {#ai-search}
 

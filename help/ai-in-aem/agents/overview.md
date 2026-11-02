@@ -63,7 +63,7 @@ The [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md
 
 * **[Experience Modernization Agent](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)** - Migrates websites to cloud-ready formats
 * **[Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)** - Reduces time-to-market with content updates, form creation, and communications
-* **[Development Agent](/help/ai-in-aem/agents/brand-experience/development/development.md)** - Provides AI-assisted troubleshooting and build automation
+* **[Development Agent](/help/ai-in-aem/agentic-capabilities/brand-experience/development/use-cases.md)** - Provides AI-assisted troubleshooting and build automation
 
 Through these agents, the Brand Experience Agent absorbs the heavy operational work behind updates and modernization, helping teams deliver changes faster and with greater confidence in today's AI era.
 

@@ -138,7 +138,7 @@ To assess a whole project first, prompt *"Review my code for AEMaaCS migration."
 
 Supported patterns include Sling Scheduler, ResourceChangeListener, Replication API, OSGi EventListener and EventHandler, Assets API, Guava cache to Caffeine swaps, HTL lint fixes, OSGi config conversion with Cloud Manager secrets and environment variable extraction, legacy UI dialog migration (Classic UI/Coral 2 to Coral 3), custom design widget migration, static-to-editable template modernization, and AMS or on-premise Dispatcher configuration conversion.
 
-The skill pairs with the [Cloud Migration MCP](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md) to fetch findings directly from [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md). Without the MCP configured, the skill falls back to a local [BPA](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) CSV export, or you can point it at specific files manually.
+The skill uses the [AEM MCP Server's Cloud Migration capabilities](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md) to fetch findings directly from [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md). Without the AEM MCP Server configured, the skill falls back to a local [BPA](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) CSV export, or you can point it at specific files manually.
 
 For full setup instructions and pattern reference, see [AI-Assisted Code Migration to AEM as a Cloud Service](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md).
 
@@ -334,4 +334,3 @@ Other IDEs can be configured in a similar manner. The SDK's `docs/DispatcherMCP.
 |`tail_logs`|Tails relevant Dispatcher and HTTPD runtime logs|
 
 The MCP surface intentionally exposes only these seven tools; prompts and resources remain in the skill layer. Full reference documentation is available in `docs/DispatcherMCP.md` inside the extracted Dispatcher SDK.
-

@@ -275,6 +275,8 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.10.22 Release Notes](/help/release-notes/universal-editor/2026/2026-10-22.md)
+      + [2026.10.15 Release Notes](/help/release-notes/universal-editor/2026/2026-10-15.md)
       + [2026.10.08 Release Notes](/help/release-notes/universal-editor/2026/2026-10-08.md)
       + [2026.10.01 Release Notes](/help/release-notes/universal-editor/2026/2026-10-01.md)
       + [2026.09.24 Release Notes](/help/release-notes/universal-editor/2026/2026-09-24.md)
@@ -365,7 +367,6 @@ user-guide-title: AEM as a Cloud Service
   + [OAuth2 Support for the mail Service](/help/security/oauth2-support-for-mail-service.md)
   + [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md)
   + {hide-from-toc} [AEM as a Cloud Service Security Considerations](/help/security/security-considerations.md)
-  + [JWT Credentials Deprecation in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
   + [Open ID Connect Support for AEM as a Cloud Service on Publish Tier](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
   + [Setting Up IMS Integrations for AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
   + [Adobe-Managed API Integrations in Adobe Admin Console](/help/security/adobe-managed-api-integrations-in-adobe-admin-console.md)
@@ -459,7 +460,7 @@ user-guide-title: AEM as a Cloud Service
   + AI-Assisted Code Migration {#cloud-migration-skill}
     + [Overview](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md)
     + [Using the Cloud Migration Skill](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md)
-    + [Using the Cloud Migration MCP](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md)
+    + [Using AEM MCP Server Cloud Migration Capabilities](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md)
   + Code Refactoring Tools {#refactoring-tools}
     + [Getting Started with Refactoring Tools](/help/journey-migration/refactoring-tools/getting-started-refactoring-tools.md)
     + [Refactoring Tools Overview](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md)
@@ -568,7 +569,7 @@ user-guide-title: AEM as a Cloud Service
       + [Analyzing Structure](/help/sites-cloud/administering/content-fragments/analysis.md)
       + [Previewing Fragments](/help/sites-cloud/administering/content-fragments/preview.md)
       + [Visual Content Fragments](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md)
-      + {hide-from-toc} [Reuse Content Fragments using MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
+      + [Reuse Content Fragments using MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
       + [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
       + [Assets in the Content Fragments Console](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
       + [Content Fragments with Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
@@ -653,6 +654,7 @@ user-guide-title: AEM as a Cloud Service
     + [Get started using asset microservices](/help/assets/asset-microservices-configure-and-use.md)
     + [Add and upload assets](/help/assets/add-assets.md)
     + [Search assets](/help/assets/search-assets.md)
+    + [Understanding AEM Assets search](/help/assets/full-text-search.md)
     + [Common asset management tasks](/help/assets/manage-digital-assets.md)
     + [Manage publication](/help/assets/manage-publication.md)
     + [Preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
@@ -1232,9 +1234,9 @@ user-guide-title: AEM as a Cloud Service
       + [Overview](/help/ai-in-aem/agents/brand-experience/overview.md)
       + Experience Production Agent {#experience-production}
         + [Overview](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)
-        + [Content Update Job](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md)
-        + [Content Create Job](/help/ai-in-aem/agents/brand-experience/experience-production/content-create.md)
-        + [Figma to Visual Content Fragments Job](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md)
+        + [Content Update](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agentic-capabilities/brand-experience/experience-production/content-update)
+        + [Content Create](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agentic-capabilities/brand-experience/experience-production/content-create)
+        + [Figma to Visual Content Fragments](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agentic-capabilities/brand-experience/experience-production/figma-to-visual-content-fragments)
         + [Communication Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)
         + [Form Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
       + Experience Modernization Agent {#modernization}
@@ -1246,7 +1248,6 @@ user-guide-title: AEM as a Cloud Service
         + [Project Documentation Skill](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md)
         + [Site Catalog Skill](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
         + [AOE Delivery](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
-      + [Development Agent](/help/ai-in-aem/agents/brand-experience/development/development.md)
     + Content Advisor Agent {#content-advisor}
       + [Overview](/help/ai-in-aem/agents/content-advisor/overview.md)
       + [Content Discovery Agent](/help/ai-in-aem/agents/content-advisor/discovery.md)
@@ -1451,6 +1452,7 @@ user-guide-title: AEM as a Cloud Service
     + [Dispatcher - Enable Caching for Persisted Queries](/help/headless/deployment/dispatcher-caching.md)
     + [CORS Config](/help/headless/deployment/cross-origin-resource-sharing.md)
     + [Referrer Filter](/help/headless/deployment/referrer-filter.md)
+    + [Content Fragment Models, Persisted Queries and Content Packages](/help/headless/deployment/content-packages.md)
   + Headless Journeys {#journeys}
     + Headless Developer Journey {#developer}
       + [Understand Headless in AEM](/help/journey-headless/developer/overview.md)
@@ -1584,12 +1586,14 @@ user-guide-title: AEM as a Cloud Service
     + [AEM as a Cloud Service Developer Console](/help/implementing/developing/introduction/aem-developer-console.md)
     + [Logging](/help/implementing/developing/introduction/logging.md)
     + [Log Forwarding](/help/implementing/developing/introduction/log-forwarding.md)
-    + [OpenTelemetry (Beta)](/help/implementing/developing/introduction/opentelemetry-apm-integration.md)
+    + [OpenTelemetry for AEM](/help/implementing/developing/introduction/opentelemetry-apm-integration.md)
+    + [Custom Instrumentation with OpenTelemetry](/help/implementing/developing/introduction/opentelemetry-custom-instrumentation.md)
     + [Configurations and the Configuration Browser](/help/implementing/developing/introduction/configurations.md)
     + [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md)
     + [API Reference Materials](/help/implementing/developing/reference-materials.md)
     + [OpenAPI-Based APIs](/help/implementing/developing/open-api-based-apis.md)
     + [Generating Access Tokens for Server Side APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
+    + [Generating Access Tokens for Server-Side APIs - JWT (Legacy)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-jwt-legacy.md)
     + [Quick Site Creation and Front-End Customization](/help/implementing/developing/introduction/quick-site-creation.md)
     + [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
     + [Customizing Site Templates and Themes](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
@@ -1721,6 +1725,7 @@ user-guide-title: AEM as a Cloud Service
     + [Extending Page Authoring](/help/implementing/developing/extending/page-authoring.md)
     + [Extending Consoles](/help/implementing/developing/extending/consoles.md)
     + [Extending Page Properties](/help/implementing/developing/extending/page-properties.md)
+    + [Extending Page Publishing](/help/implementing/developing/extending/page-publishing.md)
     + [Extending the Bulk Editor](/help/implementing/developing/extending/bulk-editor.md)
     + [Extending MSM](/help/implementing/developing/extending/msm.md)
     + Internationalization{#internationalization}
@@ -1787,4 +1792,3 @@ user-guide-title: AEM as a Cloud Service
     + [A Quick Guide to WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
 + Troubleshooting {#troubleshooting}
   + {hide-from-toc} [Troubleshoot AEM Assets and Forms issues](/help/troubleshooting/home.md)
-
