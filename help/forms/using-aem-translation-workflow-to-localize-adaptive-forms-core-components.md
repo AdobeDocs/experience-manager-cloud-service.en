@@ -5,6 +5,14 @@ feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
 role: User, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Use machine translation or human translation to translate a Core Components based Adaptive Form {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 

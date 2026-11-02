@@ -4,6 +4,15 @@ description: Learn how to configure CDN traffic by declaring rules and filters i
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: 2741637d-a621-529a-b21b-bfe9be07a9c8
+    internal-label: Dispatcher
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 
 # Configuring Traffic at the CDN {#cdn-configuring-cloud}
@@ -453,6 +462,8 @@ Explained in the table below are the available actions.
 ## Origin Selectors {#origin-selectors}
 
 You can leverage the AEM CDN to route traffic to different backends, including non-Adobe applications (perhaps on a per-path or subdomain basis).
+
+If your backend restricts inbound connections by source IP, see [CDN egress IP addresses](/help/implementing/dispatcher/cdn.md#cdn-egress-ips) for important limitations.
 
 The request properties `originalPath` and `originalUrl` are the immutable original path (without query parameters) and full URL (including query parameters), respectively—each taken before any CDN [request transformations](#request-transformations). Use them in `when` conditions when you need to anchor rules on what the client initially sent, rather than values that may have been rewritten earlier in the evaluation sequence. Use `originalPath` for path-only matching; use `originalUrl` when the query string must be part of the condition (for example, routing or filtering on a specific initial request URL).
 

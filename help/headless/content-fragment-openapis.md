@@ -4,6 +4,17 @@ description: Learn about the Content Fragments and Content Fragment Models OpenA
 exl-id: 077eed73-a066-4273-b2f5-da4bf5cd900c
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Content Fragments and Content Fragment Models Management OpenAPIs {#content-fragments-and-content-fragment-models-management-openapis}
 
@@ -28,3 +39,20 @@ For full documentation see [Content Fragment Management API](https://developer.a
 >[!NOTE]
 >
 >See [AEM APIs for Structured Content Delivery and Management](/help/headless/apis-headless-and-content-fragments.md) for an overview of the various APIs available and comparison of some of the concepts involved.
+
+## Deliver a Composite item {#deliver-a-composite-item}
+
+You can deliver your Composite items with the Management OpenAPI (Content Fragments Management API).
+
+The composite data type is fully covered across the main Management OpenAPI operations:
+
+* `GET /adobe/sites/cf/fragments/{uuid\}` returns composite values as nested field structures.
+* `GET /adobe/sites/cf/fragments/{uuid\}?partial={fieldPath\}` resolves a single composite subtree, used by the editor to expand a composite on demand. 
+* `POST` / `PATCH` / `PUT` accept composite payloads, single and bulk.
+* For models, `GET` and `POST` model operations support defining composite fields with allowed `modelIds`.
+* For Variations:
+  
+  * `GET` model and UI schema endpoints support a variation query parameter
+  * the variation `GET` fragment endpoint supports `partial`
+  * `PATCH` on variations: Support `partial` parameter on variation PATCH endpoint
+  

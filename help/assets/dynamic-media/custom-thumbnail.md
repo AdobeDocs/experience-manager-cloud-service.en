@@ -3,6 +3,14 @@ title: Custom Thumbnail Support for videos in Polaris
 description: Custom thumbnail support for video assets in Polaris (Dynamic Media with OpenAPI) has been added. Users can upload or select a custom thumbnail for a video asset in Adobe Experience Manager (AEM); the video player uses that custom thumbnail as the poster image when available, instead of an auto-generated frame.
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets."
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Custom Thumbnail Support for videos {#custom-thumbnail}
 

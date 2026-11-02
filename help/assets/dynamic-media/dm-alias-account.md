@@ -9,6 +9,14 @@ role: User,Admin
 mini-toc-levels: 4
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # About configuring a Dynamic Media company alias account {#about-dm-alias-acct}
 

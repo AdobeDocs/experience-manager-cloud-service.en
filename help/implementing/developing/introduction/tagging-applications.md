@@ -4,6 +4,14 @@ description: Programmatically work with tags or extending tags within a custom A
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
 feature: Developing
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Building Tagging into AEM Applications {#building-tagging-into-aem-applications}
 
