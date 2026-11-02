@@ -22,22 +22,44 @@ role_v2:
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release X {#release-X}
+## Release 29251 {#release-29251}
 
-Summarized below are the continuous improvements for maintenance release X, which was publicly released on November 2, 2026. The previous maintenance release was release 29023.
+Summarized below are the continuous improvements for maintenance release 29251, which was publicly released on November 2, 2026. The previous maintenance release was release 29023.
 
 The 2026.11.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
 
-### Enhancements {#enhancements-X}
+### Enhancements {#enhancements-29251}
 
-None.
+* ASSETS-70512: Added an API endpoint to restore folders from trash.
+* CQ-4365590: Updated AEM and Granite UI translations.
+* GRANITE-53960: Removed the Disable setting from the OAuth authentication handler.
+* GRANITE-68229: Improved client library loading diagnostics.
+* GRANITE-73724: Improved Author stability when cleaning up large backlogs of content distribution packages.
+* GRANITE-75107: Updated Apache Jackrabbit to 2.22.5. See the [Apache Jackrabbit 2.22.5 release notes](https://github.com/apache/jackrabbit/blob/jackrabbit-2.22.5/RELEASE-NOTES.txt).
+* GRANITE-75722: Updated Apache Jackrabbit Oak to 2.8.0. See the [Apache Jackrabbit Oak 2.8.0 release notes](https://github.com/apache/jackrabbit-oak/blob/jackrabbit-oak-2.8.0/RELEASE-NOTES.txt).
+* SKYOPS-163784: Updated Jackrabbit FileVault to 4.3.0. See the [Apache Jackrabbit FileVault 4.3.0 release notes](https://github.com/apache/jackrabbit-filevault/blob/jackrabbit-filevault-4.3.0/RELEASE-NOTES.txt).
 
-### Fixed Issues {#fixed-issues-X}
+### Fixed Issues {#fixed-issues-29251}
 
-None.
+* ASSETS-80111: Fixed metadata import results failing to be saved.
+* CQ-4319676: Fixed truncated Dynamic Media menu labels in localized UI.
+* CQ-4355191: Fixed untranslated month and week labels in the Monitoring chart.
+* CQ-4358707: Fixed untranslated strings in Query Builder Debugger Explain Query tab.
+* CQ-4358709: Fixed missing Query Builder Debugger link on the Explain Query tab.
+* CQ-4361574: Fixed non-localized number format in Operations > Monitoring.
+* CQ-4362716: Fixed italic rendering of CJK characters in Inbox error messages.
+* CQ-4365295: Fixed translation project creation failing for some languages.
+* FORMS-28607: Fixed Adaptive Forms rule compatibility regression for existing forms.
+* GRANITE-48484: Fixed untranslated error when saving a group in Security > Groups.
+* GRANITE-50097: Fixed untranslated error when editing a deleted group.
+* GRANITE-71784: Fixed extra line break in Security > Permissions for CJK languages.
+* GRANITE-73044: Fixed user impersonation handling in the Unified Shell integration.
+* GRANITE-73606: Fixed Save & Close in user editor not returning to search results.
+* SITES-53504: Fixed slow author startup caused by synchronous link checker loading.
+* SKYOPS-162078: Fixed Dispatcher cache invalidation for shortened URLs configured through /etc/map, preventing affected cached pages from remaining stale after publishing.
 
-#### AEM Guides {#guides-X}
+#### AEM Guides {#guides-29251}
 
 * GUIDES-49847: When a table is pasted from Microsoft Word, the header row cells are created, but their content is lost.
 * GUIDES-56812: When the unified shell is enabled, the Adobe Experience Manager Guides header also appears in the Editor and the Map console.
@@ -49,23 +71,23 @@ None.
 
 This is a selected list of issues fixed in this release. For complete information about the new and enhanced features and issues fixed in this release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
 
-### Known Issues {#known-issues-X}
+### Known Issues {#known-issues-29251}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-X}
+### Deprecated Features and APIs {#deprecated-29251}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-X}
+### Security Fixes {#security-29251}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release includes X security fixes, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release includes 18 security fixes, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-X}
+### Embedded Technologies {#embedded-tech-29251}
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM Oak | 2.6.0 | [Oak 2.6.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/2.6.0/index.html)|
+|AEM Oak | 2.8.0 | [Oak 2.8.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/2.8.0/index.html)|
 |AEM SLING API | 2.27.6 |[Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL| 1.4.28-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
 |Apache HTTP Server| 2.4.67 | [Apache Httpd 2.4.67](https://apache.googlesource.com/httpd/+/refs/tags/2.4.67/CHANGES)|
