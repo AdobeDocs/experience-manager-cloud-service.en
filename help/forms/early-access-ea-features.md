@@ -32,6 +32,26 @@ If you're interested in joining our Early Access program for any Early Access in
 
 ## Early Access Innovations 
 
+### Interactive Communication Editor enhancements {#ic-editor-enhancements}
+
+Authors can create reusable document designs, add digital signature fields, and configure accessibility properties in the Interactive Communication (IC) Editor:
+
+* **Add a Sign component:** Place a digital signature field in a document and configure which fields are locked after signing, including fields in a named collection. Recipients can sign the generated Portable Document Format (PDF) document in Adobe Acrobat, helping teams protect completed document content.
+* **Configure accessibility while authoring:** Set accessibility roles, screen reader text and precedence, and navigation order, then generate tagged PDF output. These controls help authors prepare communications for readers who use assistive technologies.
+* **Create XDP templates:** Create and update existing XML Data Package (XDP) templates directly in the Interactive Communication editor, configure data bindings, and reuse fragments across document designs. Preview generated PDF output while refining the design.
+
+### Theme Editor for Core Components based Adaptive Forms {#theme-editor-core-components}
+
+Style Core Components based Adaptive Forms visually in the Theme Editor and preview changes as you work. Customize colors, typography, borders, and spacing, then reuse themes across forms to maintain a consistent appearance.
+
+### Dynamic Media images in Adaptive Forms {#dynamic-media-images-adaptive-forms}
+
+Authors can select Dynamic Media assets for the Image component in an Adaptive Form. The component resolves the selected asset reference to its Dynamic Media delivery URL, enabling teams to reuse centrally managed images in forms rather than uploading separate copies.
+
+### Custom submit actions in Universal Editor {#custom-submit-actions-universal-editor}
+
+Authors can select and configure custom submit actions for Edge Delivery Services Adaptive Forms in the Universal Editor's Form Properties interface. Supported action-specific configuration fields appear when the action is selected, enabling teams to connect forms to custom submission processes without switching authoring experiences.
+
 <!--
 
 ### AEM Forms AI Assistant (Gen AI)

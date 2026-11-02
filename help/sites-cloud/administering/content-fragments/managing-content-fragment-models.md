@@ -349,6 +349,12 @@ To delete a Content Fragment model:
 
 ## Publishing a Content Fragment Model {#publishing-a-content-fragment-model}
 
+>[!CAUTION]
+>
+>If the Content Fragment Model contains Composite Data Fields, then the Content Fragment Models defining the structure of those Composite fields must also be published.
+>
+>See also [AEM Content Fragment Delivery with OpenAPI - Deliver a Composite Item](/help/headless/aem-content-fragment-delivery-with-openapi.md#deliver-a-composite-item)
+
 Content Fragment Models need to be published when/before any dependent Content Fragments are published.
 
 To publish a Content Fragment Model:
