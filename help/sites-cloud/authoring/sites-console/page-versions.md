@@ -44,6 +44,10 @@ You can create a version of your resource from:
 * The [Timeline rail](#creating-a-new-version-timeline)
 * The [Create](#creating-a-new-version-create-with-a-selected-resource) option (when a resource is selected)
 
+>[!NOTE]
+>
+>For information about customizing whether your publish action creates a new version see also [Customizing Page Publishing - Control version creation upon publish](/help/implementing/developing/extending/page-publishing.md#control-version-creation-upon-publish).
+
 ### Creating a New Version - Timeline {#creating-a-new-version-timeline}
 
 1. Navigate to show the page for which you want to create a version.

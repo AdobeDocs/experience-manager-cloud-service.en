@@ -42,7 +42,7 @@ During the deprecation time window, Adobe will remind customers of the actions t
 >* **Starting November 2027**: Actions Center notification emails are sent as a reminder to remove usage of these APIs, if a pipeline has been recently executed.
 >* **December 2027**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
 >* **January 2027**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.*
->* **March 31 2027**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and will not be subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further. To once again receive Adobe release updates, a fullstack pipeline must be successfully executed; the update will then be applied within a few days.
+>* **March 31 2027**: Environments still using deprecated APIs will have the libraries removed from the AEM product injected into their custom project code and will not be subject to Adobe’s standard commitments around performance and availability. Application stability and uptime may be negatively affected, and security risk exposure may increase further. The libraries will need to be removed later in 2027.
 
 ## Deprecated Functionality {#deprecated-features}
 
@@ -100,7 +100,7 @@ The APIs in the table below (click to expand to see it) have been announced as d
 >* **Starting November 2027**: Actions Center notification emails are sent as a reminder to remove usage of these APIs.
 >* **December 2027**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
 >* **January 2027**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.*
->* **March 31 2027**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
+>* **March 31 2027**: Environments still using deprecated APIs will have the libraries removed from the AEM product injected into their custom project code and will not be subject to Adobe’s standard commitments around performance and availability. Application stability and uptime may be negatively affected, and security risk exposure may increase further. The libraries will need to be removed later in 2027.
 >
 
 <details>
@@ -375,7 +375,7 @@ While you should remediate all deprecated APIs over time, prioritize any APIs li
 
 After updating your code, verify that no deprecated API usage remains in Cloud Manager by checking the results of the code quality step.
 
-If the updates are not made by March 31st, 2027, you will no longer receive AEM version updates. To receive Adobe release updates again, the fullstack pipeline must be successfully executed; the update will then be applied within a few days.
+If the updates are not made by March 31st, 2027, environments still using deprecated APIs will have the libraries removed from the AEM product injected into their custom project code and will not be subject to Adobe’s standard commitments around performance and availability. Application stability and uptime may be negatively affected, and security risk exposure may increase further. The libraries will need to be removed later in 2027.
 
 ### General Guidelines
 
