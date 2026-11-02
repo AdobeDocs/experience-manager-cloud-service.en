@@ -126,6 +126,37 @@ When running AEM locally with Java 21, the start scripts (`crx-quickstart/bin/st
 >
 >If an environment has not yet been automatically updated to the Java 21 runtime, you can trigger it by building with Java 17 or 21. You configure this by setting `.cloudmanager/java-version` to `21` or `17`. Contact Adobe at [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) if you have questions.
 
+#### Java 25 runtime early opt-in {#java-25-runtime-opt-in}
+
+Java 25 is available as an optional early opt-in for the AEM as a Cloud Service runtime. Use this option to validate your application's behavior with Java 25 before the planned runtime upgrade.
+
+>[!IMPORTANT]
+>
+>The Java 25 runtime early opt-in requires **AEM release 28386 or later**. Ensure that each environment meets this requirement before enabling the opt-in.
+
+This setting changes only the Java version used to run AEM. It does not change the Java version used by Cloud Manager to build your code. Keep your existing [Maven JDK configuration](#alternate-maven-jdk-version).
+
+To enable the Java 25 runtime:
+
+1. In Cloud Manager, select the environment that you want to enable.
+1. [Add an environment variable](/help/implementing/cloud-manager/environment-variables.md#add-variables) with the following configuration:
+
+   | Field | Value |
+   | --- | --- |
+   | **Name** | `AEM_JAVA_25_OPT_IN` |
+   | **Value** | `true` (lowercase) |
+   | **Step Applied** | **All** |
+   | **Type** | **Normal** (not a secret) |
+
+1. Save the configuration and wait for the environment update to complete.
+1. Validate your application's behavior in the updated environment.
+
+>[!NOTE]
+>
+>The opt-in is environment-specific. **Stage and production environments must be enabled separately**, even if they use the same production pipeline. Enabling Java 25 in stage does not enable it in production. Adobe recommends testing in development and stage before enabling the opt-in in production.
+
+To roll back an environment during the early opt-in, [delete the `AEM_JAVA_25_OPT_IN` environment variable](/help/implementing/cloud-manager/environment-variables.md#delete-env-variable) and save the configuration. When the environment update completes, the environment returns to its previous Java version. Removing the variable affects only the selected environment; to roll back both stage and production, remove it from each environment separately.
+
 #### Build time requirements {#build-time-reqs}
 
 The following adjustments are required to allow building the project with Java 21 and Java 17. They can be updated even before you are running Java 21 and Java 17 because they are compatible with older Java versions.
