@@ -1,6 +1,6 @@
 ---
-title: Share Assets in [!DNL the Content Hub]
-description: Share Assets in [!DNL the Content Hub]
+title: Share Assets and Collections in [!DNL the Content Hub]
+description: Share Assets and Collections in [!DNL the Content Hub]
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
@@ -11,63 +11,41 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
 ---
-# Share assets in [!DNL Content Hub] {#search-assets-as-a-link}
+# Share assets and collections in Content Hub {#search-assets-collections-as-a-link}
 
-[!DNL Content Hub] enables authorized users to share one or more selected assets by generating a shareable **link**. As an authorized [!DNL Content Hub] user, you select the assets you want to distribute, generate a link, and send that link to both **private users** (internal, authenticated collaborators) and **public users** (external recipients).
-
-Sharing via a **link** is one of the most efficient ways to distribute digital assets. This eliminates the need to download and re-upload files, ensuring recipients access the exact assets stored in your [!DNL Content Hub] environment.
-
-## How to share assets as a link
-
-To share selected assets with others, follow these steps:
-
-1. **Sign in** as an authorized [!DNL Content Hub] user with access to your [!DNL Content Hub] environment.
-2. **Select one or more assets** available in your [!DNL Content Hub] environment that you want to share.
-3. **Generate a link** for the selected assets.
-4. **Send the generated link** to other **private or public users** so they can access the shared assets.
-
-## Practical uses of link-based sharing
-
-Sharing assets as a **link** supports common collaboration and distribution needs, including:
-
-- **Distributing assets to external partners or clients** without granting them full access to your [!DNL Content Hub] environment.
-- **Sharing with internal team members** who need quick access to specific approved assets.
-- **Sending a single, self-contained link** rather than transferring large files by email or other means.
-
-Because the shared assets remain hosted within your [!DNL Content Hub] environment, recipients always receive the current, authorized version of each asset through the generated link.
+Create a link to selected assets and collections to share them with others easily. As an authorized [!DNL Content Hub] user, select one or more assets and collections available in your [!DNL Content Hub] environment, generate a link, and send it to other private or public users.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
 
+>[!IMPORTANT]
+>
+>This feature is available as a Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment. 
+
 ## Prerequisites {#prerequisites}
 
-**[!DNL Content Hub] users** — that is, individuals who have been onboarded to [!DNL Content Hub] — can create a shareable **link** to specific **assets** selected from [!DNL the Content Hub] library and distribute it to other users. See [Content Hub users](deploy-content-hub.md#onboard-content-hub-users) for details on onboarding.
+[Content Hub users](deploy-content-hub.md#onboard-content-hub-users) can create a link to selected assets and collections and share it with other users. 
 
-Link-based sharing is the standard mechanism for distributing assets, because it allows recipients to access the selected content directly without needing to locate the assets themselves. This streamlines collaboration and asset distribution across teams and with external stakeholders, ensuring the right people can reach the right assets efficiently.
+## Share Assets and Collections {#share-assets-and-collections}
 
-## Share assets {#share-assets}
+Public link sharing enables you to securely share multiple assets and collections through a single public link. You can update shared content without regenerating links, protect access with passwords and expiration dates, revoke access when needed, un-share publicly shared links anytime, and provide recipients with a branded landing experience. This streamlines external content distribution while improving security, governance, and brand consistency.
 
-To share one or more assets with private or public users, execute the following steps:
+Follow these steps to share assets and collections with private or public users:
 
-1. Navigate to your [!DNL Content Hub] homepage, select one or more assets and click ![share](/help/assets/assets/share.svg) **[!UICONTROL Share]** to display a single selected asset or a list of multiple selected assets in the **[!UICONTROL Share assets]** dialog box. This dialog box aggregates the assets you have chosen so you can review the complete set before sharing.
+1. Navigate to your Content Hub homepage, select one or more assets and collections, and click ![share](/help/assets/assets/share.svg) **[!UICONTROL Share]** > **[!UICONTROL Share with a link]** and select the **[!UICONTROL New link]** option.
+![share in public link](/help/assets/assets/public-link.png)
 
-   You can also select and share assets available in ![collections](/help/assets/assets/Smock_Collection_18_N.svg) **[!UICONTROL Collections]**.
+   You can view an asset or collection available from the **[!UICONTROL List View]**. Click ![unselect](/help/assets/assets/Close.svg) next to an asset to remove it from the ![list](/help/assets/assets/ViewList.svg) **[!UICONTROL List View]**. 
 
-1. View an asset or review the list of assets available in **[!UICONTROL Share assets]** dialog box. Click ![unselect](/help/assets/assets/Close.svg) next to an asset to remove that asset from the list. This step refines the final set of assets included in the share before you generate the link.
+2. Specify a title and an optional description that defines the set of selected assets and collections. 
+3. Select **[!UICONTROL Period of expiration]**. 
+4. Under **[!UICONTROL Who can access]** drop down, select the access option **[!UICONTROL Anyone with the link]** or **[!UICONTROL Authenticated users]** and click **[!UICONTROL Create Link]** to generate the link. 
+5. If you want to create a password to restrict access to private users, select **[!UICONTROL Anyone with the link]** under **[!UICONTROL Who has access]** and toggle the **[!UICONTROL Require password protection]** option. Share the generated password with users to enable access to the link.
+6. Click **[!UICONTROL Create link]** to create the shared link. 
+![new public link dialog box](/help/assets/assets/new-public-link.png)
 
-1. Specify a title and an optional description that defines the set of selected assets. A clear title and description help recipients identify the shared set at a glance.
+   If you want to update the link details such as title, description, password, delete or copy the link, click more options (![List](/help/assets/assets/List.svg)) and select the appropriate option. 
 
-1. Select **[!UICONTROL Period of expiration]**. This setting determines how long the shared link remains valid before access expires.
-
-1. Under **[!UICONTROL Who can access]** drop down, select the access options and click **[!UICONTROL Get Link]** to generate a link to share with the selected users. This action produces the shareable link based on the access level you choose. The two access levels differ as follows:
-
-   - **Private users** must sign in to their [!DNL Content Hub] environment to access the shared assets page.
-   - **Public users** access the shared assets page as guests, without signing in to [!DNL Content Hub].
-
-   <!--1. Select a **[!UICONTROL period of expiration]** and click **[!UICONTROL Get Link]** to generate a link to share with private users. Private users sign in to their [!DNL Content Hub] environment to access the shared assets page.-->
-
-   ![private and public link](/help/assets/assets/shared-link-for-assets.png)
-
-   <!--Enable the **[!UICONTROL Public Link]** toggle, select a **[!UICONTROL period of expiration]** and click **[!UICONTROL Generate Public Link]** to generate a link to share with public users. Public users, as guests, access the shared assets page without signing in to [!DNL Content Hub].-->
+   ![customize](/help/assets/assets/customize.png)
 
    
 
@@ -75,29 +53,32 @@ To share one or more assets with private or public users, execute the following 
    > 
    > [Enable public link sharing from the configuration page](/help/assets/configure-content-hub-ui-options.md#enable-public-link-sharing) so that the **[!UICONTROL Public Link]** toggle appears on the **[!UICONTROL Share assets]** dialog box. Without enabling this configuration, the **[!UICONTROL Public Link]** toggle does not display.
 
-## Share an asset from its preview page {#share-asset-from-preview-page}
+### Add assets in an existing collection {#add-assets-in-an-existing-collection}
 
-You can share an asset directly from its preview page in [!DNL Content Hub], generating either a private or public link without leaving the preview view. Execute the following steps to share the asset while previewing the asset:
+To add additional assets to the shared collection, go to **[!UICONTROL All assets]** in the Content Hub homepage and select the assets you want to add. Click ![share](/help/assets/assets/share.svg) **[!UICONTROL Share]** > **[!UICONTROL Add to link]**. Search for the shared link you created, click the add button and click **[!UICONTROL Save]**. 
+![new public link dialog box](/help/assets/assets/add-assets.png)
+   You can view and download the newly added assets within an existing collection under **[!UICONTROL Shared]**.
 
-1. Navigate to [!DNL the Content Hub] homepage and click the asset thumbnail to preview the asset. This displays the menu options on the right pane of the dialog box.
-1. Select ![share](/help/assets/assets/share.svg) to display the **[!UICONTROL Share]** panel.
 
-   ![share asset while previewing it](/help/assets/assets/share-link-asset-preview.png)
+## Share an asset or collection from its preview page {#share-asset-or-collection-from-preview-page}
 
-1. Complete Steps 3 to 5 in the [Share assets](#share-assets) section to generate and share the asset link—Private or public—directly from this **[!UICONTROL Share]** panel. A Private link restricts access to authorized users, while a public link allows anyone with the URL to view the asset.
+Execute the following steps to share an asset or collection while previewing it:
 
-## Access the shared assets {#access-shared-assets}
+1. Navigate to the [!DNL Content Hub] homepage and click the asset thumbnail to preview the asset or collection and display the menu options on the right pane of the dialog box.
+2. Select ![share](/help/assets/assets/share.svg) to display the **[!UICONTROL Share]** panel.
+![share asset while previewing it](/help/assets/assets/share-link-asset-preview.png)
+3. Follow Steps 3 to 5 in [Share assets](#share-assets) section to generate and share the asset or collection link (Private or public) from this **[!UICONTROL Share]** panel. 
 
-Access the shared assets page through the provided link, then complete any of the following actions:
+## Access the shared assets and collections
 
-* Select one or more assets and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** to choose the **[!UICONTROL Original]**, **[!UICONTROL Static]**, or both renditions from the available download options. This lets you download the full-resolution source file (**[!UICONTROL Original]**), a fixed, optimized version (**[!UICONTROL Static]**), or both at once—depending on whether you need the master asset or a delivery-ready copy.
+Access the shared assets and collections page through the link and do the following:
 
-   ![](/help/assets/assets/download-shared-assets.png)
+* If prompted, enter the password shared by the administrator to access the assets or collection. This provides an additional layer of security and helps prevent unauthorized access.
+* Once password authentication is complete, the shared assets or collection page is displayed. You can browse the shared assets or collection and download them as needed.
+* Click the asset or collection thumbnail to see the asset's or collection's metadata.
+* Select one or more assets or collections and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** to select the  **[!UICONTROL Original]**,  **[!UICONTROL Static]** or both from the available download options.
+![download shared assets](/help/assets/assets/download-shared-assets.png)
 
-* Click the asset thumbnail to view that asset's metadata, which provides identifying details such as file information and asset properties before you download.
-* On the shared assets page ([accessed through a private link](#share-assets)), click an asset thumbnail and select ![download](/help/assets/assets/download-icon.svg) to select and view the available **dynamic renditions** of the asset on the **[!UICONTROL Download]** panel. Because dynamic renditions are generated on demand, previewing them on the panel confirms the correct size and format before selecting and downloading the renditions you need.
-
-   ![](/help/assets/assets/download-renditions-shared-assets-page.png)
 
 ## Frequently asked questions {#faqs-share-assets-content-hub}
 
