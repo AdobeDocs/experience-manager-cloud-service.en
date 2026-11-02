@@ -5,6 +5,20 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
+subfeature_v2:
+  - id: d9eb3b3e-9447-4ed4-bf4a-96c7b245cb27
+    internal-label: Cloud Manager APIs
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Deploy your code {#deploy-your-code} 
@@ -19,6 +33,11 @@ Deploying code seamlessly to Stage and then through to Production is done throug
 1. **Deployment to Production environment** - Once the build is validated on Stage, and approved for promotion to Production, the same build artifact is deployed to the Production environment.
 
 _Only the Full Stack Code pipeline type supports code scanning, functional testing, UI testing, and experience audit._
+
+>[!TIP]
+>
+>As an alternative to a standard rolling deployment, you can use a canary deployment to validate a new build on production infrastructure before you route live traffic to it. See [Use Canary Deployments to Validate Code](/help/implementing/cloud-manager/canary-deployments.md).
+
 
 ## Deployment process {#deployment-process}
 
@@ -83,7 +102,7 @@ The **Stage testing** phase involves the following steps:
 
 ### Production deployment phase {#production-deployment}
 
-The process for deploying to production topologies differs slightly to minimize the impact on users of an [!DNL AEM] site.
+The process for deploying to production topologies differs slightly to reduce the impact on users of an [!DNL AEM] site.
 
 Production deployments follow the same steps as previously described, but in a rolling manner. These steps include the following:
 

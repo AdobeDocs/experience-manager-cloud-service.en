@@ -4,6 +4,18 @@ description: Learn how to execute JavaScript at the CDN layer with AEM Edge Func
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # AEM Edge Functions {#aem-edge-functions}
 
@@ -415,18 +427,26 @@ data:
       index: "AEMaaCS"
 ```
 
-Use the logger in your function code to write structured log entries:
+Use the logger in your function code to write structured log entries. Splunk's HTTP Event Collector (HEC) requires each entry to be wrapped in a JSON envelope with an `event` field, so send `{ event: <record> }` rather than the bare record:
 
 ```js
 import { Logger } from "fastly:logger";
 
 const logger = new Logger("customerSplunk");
 logger.log(JSON.stringify({
-  method: event.request.method,
-  url: event.request.url
+  event: {
+    method: event.request.method,
+    url: event.request.url
+  },
+  sourcetype: "aem-edge-function" // optional: lets you filter Edge Function logs in Splunk
 }));
 ```
- 
+
+>[!IMPORTANT]
+>
+>On AEM Edge Functions, whatever you pass to `Logger.log()` is sent to the destination verbatim. Splunk's HEC endpoint rejects any payload that is not wrapped in an `event` field (returning an HTTP 400 error), so a bare `JSON.stringify(record)` is silently dropped even though the deployment reports success. This wrapping is specific to Splunk; a generic HTTPS destination accepts any payload shape.
+>
+
 >[!NOTE]
 >
 >CDN logs — which include AEM Edge Function log entries — can be downloaded from Cloud Manager for Java-stack environments, but not for Edge Delivery sites.

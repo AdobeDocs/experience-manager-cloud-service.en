@@ -1,11 +1,22 @@
 ---
-title: OpenTelemetry (Beta)
-description: Adobe is replacing the Application Performance Monitoring integration built into AEM as a Cloud Service with OpenTelemetry, an open, industry-standard approach to observability. Learn what's changing and how to get started early through the Beta program.
+title: OpenTelemetry for AEM
+description: Adobe is replacing the Application Performance Monitoring integration built into AEM as a Cloud Service with OpenTelemetry, an open, industry-standard approach to observability, now in Limited Availability.
 exl-id: 50053a23-b552-4554-b4b0-21e978aa7f0a
 feature: Operations
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
-# OpenTelemetry (Beta) {#opentelemetry-apm}
+# OpenTelemetry for AEM {#opentelemetry-apm}
 
 Adobe is replacing the Application Performance Monitoring (APM) integration built into AEM as a Cloud Service with [OpenTelemetry](https://opentelemetry.io/), an open, industry-standard approach to observability supported by every major monitoring platform.
 
@@ -22,7 +33,9 @@ Today, AEM as a Cloud Service includes a built-in APM integration, managed entir
 
 >[!AVAILABILITY]
 >
->This page is an advance notice. The OpenTelemetry integration described below is available today through a **Beta** program; broader availability is planned for later in 2026. To join the Beta program, email [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com), describing your use case. If your organization currently relies on Adobe's built-in APM integration, use this Beta period to evaluate OpenTelemetry, choose your own APM endpoint, and plan your transition ahead of that change. Once enrolled, see [Step 1](#request-access) below to enable it for your environment.
+>This feature is in **Limited Availability**. To use it, request access by emailing [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) - Adobe enables OpenTelemetry for your environments shortly after replying to your request. If your environment currently uses Adobe's built-in APM integration, that integration stops sending data once OpenTelemetry is enabled, since the two cannot run at the same time. 
+>
+>Note that it is **not** available to HIPAA-scoped environments, Rapid Development Environments (RDE), and sandboxes. 
 
 ## Benefits of this change {#benefits}
 
@@ -41,10 +54,12 @@ Common reasons to use this integration include investigating slow or failing req
 The following telemetry is in scope:
 
 * **Traces** — distributed traces of requests handled by your AEM application.
-* **Metrics** — application metrics, such as JVM runtime metrics (memory, garbage collection, threads) and inbound HTTP request rates, latencies, and error rates.
-* **Logs** — your AEM application's logs, sent using OpenTelemetry's logs signal. Logs are optional and can be toggled independently of traces and metrics.
+* **Metrics** — application metrics, such as JVM runtime metrics (memory, garbage collection, threads) and inbound HTTP request rates, latencies, and error rates. AEM metrics for request processing, background jobs, and the content repository are being rolled out to all environments. They start appearing automatically once your environment is updated, with no change to your configuration.
+* **Logs** — your AEM application's logs at `WARN` level and above, sent using OpenTelemetry's logs signal. Logs are optional and can be toggled independently of traces and metrics.
 
 [Log Forwarding](/help/implementing/developing/introduction/log-forwarding.md) continues to be supported through its existing, separate mechanism, and is unaffected by this integration.
+
+To learn how it works, including how telemetry flows from AEM to your APM platform, what you control, and how to choose a platform, see the tutorial [Observability via OpenTelemetry](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/observability-via-opentelemetry/opentelemetry-in-aem).
 
 >[!WARNING]
 >
@@ -65,7 +80,7 @@ The OpenTelemetry agent runs as part of the Cloud Service runtime. Adobe provide
 
 ## Supported OpenTelemetry variants {#supported-variants}
 
-Your AEM application can be instrumented with any of the following OpenTelemetry agent variants (distributions), all based on the version above. Choose the variant that suits your tooling; see each project's documentation for details:
+Your AEM application can be instrumented with any of the following OpenTelemetry agent variants (distributions), all based on the version above. See each project's documentation for details:
 
 | Variant | Documentation |
 |---|---|
@@ -73,7 +88,20 @@ Your AEM application can be instrumented with any of the following OpenTelemetry
 | Grafana | [Grafana OpenTelemetry distribution for Java](https://github.com/grafana/grafana-opentelemetry-java) |
 | Splunk | [Splunk Distribution of OpenTelemetry Java](https://github.com/signalfx/splunk-otel-java) |
 
-The default upstream variant works with any APM vendor. The Grafana and Splunk variants add vendor-specific instrumentation and defaults for those platforms.
+The default upstream variant works with any APM vendor. The Grafana and Splunk variants add vendor-specific instrumentation and defaults for those platforms. Adobe installs the selected agent variant in the AEM container at deployment. During Limited Availability, the upstream variant is used by default; to use the Grafana or Splunk variant, ask for it when you [request access](#request-access). The `config/otel.yaml` file configures where telemetry goes; it has no field to select the agent variant.
+
+>[!NOTE]
+>
+>The `type` value in your `config/otel.yaml` file (for example, `grafana` or `splunk`) identifies your APM provider so that your endpoint and credential are validated correctly. It does not select the agent variant.
+
+<!--
+
+AUTHOR NOTE (2026-09-30): the operator's type field only drives validation/default auth header -
+splunk and grafana validate exactly like generic. The variant is the opentelemetry-init image, set
+Adobe-side per environment (skyline-ops rule otelInitImageTag -> chart image.otelInit). Keep the
+NOTE above so customers don't expect type to change the agent.
+
+-->
 
 ## APM vendors {#apm-vendors}
 
@@ -92,11 +120,22 @@ You can send your telemetry to any Application Performance Monitoring vendor tha
 
 This list is not exhaustive — any backend that exposes an OTLP/HTTPS endpoint can be used.
 
-<!-- AUTHOR NOTE (narrowed July 2026): the three OpenTelemetry variants (upstream/Grafana/Splunk) are confirmed against the shipping configuration — no other variant is currently supported. The APM-vendor list, however, is a product/business decision (which vendor names Adobe wants to publicly name), not something derivable from the implementation — still needs sign-off before publishing. -->
+<!-- AUTHOR NOTE (narrowed July 2026): the three OpenTelemetry variants (upstream/Grafana/Splunk) are confirmed against the shipping configuration — no other variant is currently supported. The APM-vendor list has been signed off by Legal via PLA. -->
 
 ## Supported environments {#supported-environments}
 
 You can enable this integration on your Cloud Manager **production**, **stage**, and **development** environments. Each environment is enabled individually — see [Step 1](#request-access). Rapid Development Environments (RDE) are not supported.
+
+## Existing APM integrations {#existing-apm}
+
+OpenTelemetry cannot run alongside another APM agent on the same environment:
+
+* **Adobe's built-in APM integration (New Relic)** — OpenTelemetry replaces it. Once Adobe enables OpenTelemetry for an environment at your request, New Relic no longer receives data from that environment. You can move back until the end of November 2026 — see [FAQ](#faq).
+* **Dynatrace OneAgent** — if Dynatrace OneAgent is installed on an environment, it takes precedence. The Configuration Pipeline rejects your OpenTelemetry configuration with an error stating that Dynatrace is already active on the environment. To use OpenTelemetry there, contact Adobe Support to remove Dynatrace OneAgent first.
+
+>[!NOTE]
+>
+>You can still send OpenTelemetry data **to** Dynatrace as your APM provider — see [Provider-specific settings](#provider-specific). The precedence rule above applies only to the Dynatrace OneAgent running inside your environment.
 
 ## Network connectivity {#network-connectivity}
 
@@ -111,16 +150,18 @@ Only the traces, metrics, and (if enabled) logs generated by **your AEM applicat
 **Traces** — spans for the requests your application handles, including:
 
 * Inbound HTTP request spans, named by method and route (for example, `GET /content/...`).
-* Servlet and outbound database (JDBC) spans generated while a request is processed.
+* Servlet, outbound HTTP, and outbound database (JDBC) spans generated while a request is processed.
+* AEM framework spans that show where time is spent inside AEM while a request is processed: Sling request processing, component rendering, HTL script rendering, and JCR queries.
 
-High-volume internal scheduler and health-probe activity (for example, Quartz jobs) is filtered out so that traces stay focused on application requests. Fine-grained AEM framework-internal spans — such as Sling resource resolution, OSGi services, or JCR access — are not emitted in this release.
+High-volume internal scheduler and health-probe activity (for example, Quartz jobs) is filtered out so that traces stay focused on application requests.
 
-**Metrics** — JVM runtime and HTTP server metrics, using standard OpenTelemetry metric names, including:
+**Metrics** — JVM runtime and HTTP server metrics, using standard OpenTelemetry metric names, and AEM metrics under the `aem.` prefix (being rolled out; they appear automatically, with no configuration change), including:
 
 * JVM runtime: `jvm.memory.used`, `jvm.gc.duration`, `jvm.thread.count`, and `jvm.cpu.recent_utilization`.
 * HTTP server: `http.server.request.duration` (request rate, latency percentiles, and error rate are derived from this histogram).
+* AEM, being rolled out: request and error counts (`aem.requests.*`), Jetty thread-pool usage (`aem.jetty.threads.*`), Sling jobs, scheduler, and authentication (`aem.sling.*`), repository sessions, queries, observation, indexing, and binary storage (`aem.oak.*`), and asset processing (`aem.dam.*`).
 
-**Logs** — your AEM application's log entries, sent using OpenTelemetry's logs signal, when enabled. Log entries carry the same resource attributes as traces and metrics (`service.name`, `deployment.environment`), so they can be correlated with them.
+**Logs** — your AEM application's log entries at `WARN` level and above, sent using OpenTelemetry's logs signal, when enabled. The ability to adjust this log level is in development. Log entries carry the same resource attributes as traces and metrics (`service.name`, `deployment.environment`), and the trace and span identifiers of the request that produced them, so they can be correlated with traces.
 
 Logs sent this way are independent of [Log Forwarding](/help/implementing/developing/introduction/log-forwarding.md) — see [Overview](#overview) for why enabling both to the same destination causes duplicates.
 
@@ -131,21 +172,29 @@ Logs sent this way are independent of [Log Forwarding](/help/implementing/develo
 
 Information about the Cloud Service runtime and the platform that hosts your application — such as internal hostnames, addresses, container identifiers, and operating-system or process details — is removed before any data leaves your environment.
 
-<!-- AUTHOR NOTE: confirmed against the shipping build (July 2026) — jvm.memory.used, jvm.gc.duration, jvm.thread.count, jvm.cpu.recent_utilization, http.server.request.duration, and the service.name/deployment.environment format all match real captured telemetry. The "framework-internal spans (Sling/OSGi/JCR) not emitted" claim is accurate TODAY (no live customer runs that instrumentation yet) but is time-sensitive — an internal extension adding exactly these spans exists and is being rolled out opt-in; re-check this claim specifically before GA in case broader enablement lands first. This list stays governance-sensitive and worth a final pass regardless. -->
+<!-- AUTHOR NOTE: confirmed against the shipping build (July 2026) — jvm.memory.used, jvm.gc.duration, jvm.thread.count, jvm.cpu.recent_utilization, http.server.request.duration, and the service.name/deployment.environment format all match real captured telemetry. UPDATED 2026-09-30: the Limited Availability rollout enables Adobe's AEM extension (aemaacs-otel-extension) for every enabled environment, so Sling request / component / HTL / JCR query spans ARE emitted (OSGi and JCR getNode are not). Logs: WARN+ floor is fixed at launch; an adjustable level is in development - update the Logs wording when it ships. This list stays governance-sensitive and worth a final pass regardless. UPDATED 2026-09-30 (JMX): the aem.* JMX metrics (45 metrics from the 44 rules in opentelemetry-init updates/aem-jmx.yaml) reach customers from Granite/aem-k8-base#4013, which adds them to the collector's customer metrics allow-list. Until that chart is fleet-wide the page says the AEM metrics are "being rolled out" and appear automatically (summary, metrics list, verify step; reworded 2026-10-03 from "shortly after launch" after Brian's review); remove those qualifiers once it is. -->
 
 ## Set up the integration {#set-up}
 
-### Step 1: Enable the integration {#request-access}
+For a guided walkthrough that uses the WKND sample project, from storing your credential in Cloud Manager to verifying telemetry in your observability platform, see the tutorial [Configure OpenTelemetry for insights into AEM applications](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/observability-via-opentelemetry/configure-opentelemetry).
+
+### Step 1: Request access {#request-access}
+
+Email [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) with your Cloud Manager program ID and the environment IDs you want to enable. If you want to use the Grafana or Splunk agent variant rather than the default, say so in your email (see [Supported OpenTelemetry variants](#supported-variants)).
+
+Adobe enables OpenTelemetry for those environments shortly after replying to your request. If an environment currently uses Adobe's built-in APM integration, that integration stops sending data once OpenTelemetry is enabled — see [Existing APM integrations](#existing-apm).
+
+### Step 2: Add your configuration file {#add-configuration}
 
 Add a `config/otel.yaml` file to your Cloud Manager Config Pipeline repository. At minimum, specify:
 
 * The environment type(s) this configuration applies to (for example, `stage` and `prod`).
 * Your APM provider's type and OTLP/HTTPS endpoint URL (including region, if applicable).
-* The authentication method your provider uses (see [Step 2](#configure-credential)).
+* The authentication method your provider uses (see [Step 3](#configure-credential)).
 
-See [Example configuration](#example-configuration) below for the exact file format, including examples for New Relic, Dynatrace, Datadog, Dash0, and generic or self-hosted endpoints.
+See [Example configuration](#example-configuration) below for the exact file format, including examples for New Relic, Dynatrace, Grafana Cloud, Splunk, Datadog, Dash0, and generic or self-hosted endpoints.
 
-### Step 2: Configure your authentication credential {#configure-credential}
+### Step 3: Configure your authentication credential {#configure-credential}
 
 Provide the credential that your APM provider requires by declaring a [secret environment variable](/help/operations/config-pipeline.md#secret-env-vars) named `OTEL_CUSTOMER_AUTH` in Cloud Manager. Set **Service Applied** to **All** so the credential is available to the author, publish, and preview tiers.
 
@@ -177,8 +226,19 @@ The following table summarizes the endpoint and authentication for some common p
 | Datadog | `https://otlp.<your-datadog-site>` (for example, `https://otlp.datadoghq.com`) | API key, sent in the custom `dd-api-key` header. Direct OTLP **trace** intake is in Preview. |
 | Dynatrace | `https://{your-environment-id}.live.dynatrace.com/api/v2/otlp` | API access token, sent in the `Authorization` header as `Api-Token <token>`. Set `OTEL_CUSTOMER_AUTH` to `Api-Token <token>`. |
 | Dash0 | `https://ingress.<region>.aws.dash0.com:4318` (for example, `https://ingress.eu-west-1.aws.dash0.com:4318`) | Auth token, sent in the `Authorization` header as `Bearer <token>`. Set `OTEL_CUSTOMER_AUTH` to `Bearer <token>`. |
+| Grafana Cloud | `https://otlp-gateway-<zone>.grafana.net/otlp` (for example, `https://otlp-gateway-prod-us-east-0.grafana.net/otlp`) | Grafana Cloud instance ID and access policy token, sent in the `Authorization` header as HTTP Basic. Set `OTEL_CUSTOMER_AUTH` to `Basic <base64(instanceID:token)>`. |
+| Splunk | The OTLP/HTTP endpoint of your Splunk Distribution of the OpenTelemetry Collector, running as a gateway (for example, `https://<your-splunk-otel-collector>:4318`) | The credential your gateway is configured to accept, sent in the `Authorization` header (for example, `Bearer <token>`). |
 
 <!-- AUTHOR NOTE: provider endpoints/auth re-verified against vendor docs (July 2026) — New Relic, Dynatrace, and Datadog (dd-api-key header, direct trace intake still Preview) confirmed unchanged; Dash0's OTLP/HTTP endpoint was found to require the explicit :4318 port (distinct from :4317 for gRPC), added here. Re-verify again before GA in case any vendor's ingest details change in the interim. -->
+
+<!--
+
+AUTHOR NOTE (2026-09-30): Grafana Cloud and Splunk rows added. The Splunk example deliberately uses a
+customer-run Splunk OpenTelemetry Collector gateway: Splunk Observability Cloud's direct OTLP ingest
+paths (for example /v2/trace/otlp) don't match the /v1/<signal> paths the collector appends to the
+endpoint. Don't add a direct ingest.<realm>.signalfx.com example without testing it first.
+
+-->
 
 #### Example configuration {#example-configuration}
 
@@ -197,7 +257,7 @@ or the default Authorization header with a Bearer-prefixed secret value (Dash0).
 
 ```yaml
 kind: "Otel"
-version: "v1"
+version: "1"
 metadata:
   envTypes:
     - "stage"
@@ -215,7 +275,7 @@ data:
 
 ```yaml
 kind: "Otel"
-version: "v1"
+version: "1"
 metadata:
   envTypes:
     - "stage"
@@ -233,7 +293,7 @@ data:
 
 ```yaml
 kind: "Otel"
-version: "v1"
+version: "1"
 metadata:
   envTypes:
     - "stage"
@@ -252,7 +312,7 @@ data:
 
 ```yaml
 kind: "Otel"
-version: "v1"
+version: "1"
 metadata:
   envTypes:
     - "stage"
@@ -266,11 +326,47 @@ data:
   logs: true
 ```
 
+**Grafana Cloud**:
+
+```yaml
+kind: "Otel"
+version: "1"
+metadata:
+  envTypes:
+    - "stage"
+    - "prod"
+data:
+  enabled: true
+  type: "grafana"
+  endpoint: "https://otlp-gateway-<zone>.grafana.net/otlp"   # for example, https://otlp-gateway-prod-us-east-0.grafana.net/otlp
+  authHeaderValue: "${{secrets.OTEL_CUSTOMER_AUTH}}"   # the secret's value must be "Basic <base64(instanceID:token)>"
+  metrics: true
+  logs: true
+```
+
+**Splunk** (through a Splunk Distribution of the OpenTelemetry Collector running as a gateway):
+
+```yaml
+kind: "Otel"
+version: "1"
+metadata:
+  envTypes:
+    - "stage"
+    - "prod"
+data:
+  enabled: true
+  type: "splunk"
+  endpoint: "https://<your-splunk-otel-collector>:4318"
+  authHeaderValue: "${{secrets.OTEL_CUSTOMER_AUTH}}"   # the credential your gateway accepts, for example "Bearer <token>"
+  metrics: true
+  logs: true
+```
+
 **Generic or self-hosted endpoint** (for example, an on-premises OpenTelemetry collector):
 
 ```yaml
 kind: "Otel"
-version: "v1"
+version: "1"
 metadata:
   envTypes:
     - "stage"
@@ -288,7 +384,7 @@ data:
 
 ```yaml
 kind: "Otel"
-version: "v1"
+version: "1"
 metadata:
   envTypes:
     - "stage"
@@ -311,23 +407,27 @@ data:
 >
 >`metrics` and `logs` are each optional and independent of one another — omit either, or set it to `false`, if you only want traces.
 
-### Step 3: Deploy {#deploy}
+### Step 4: Deploy {#deploy}
 
-The integration takes effect on your environment's next **deployment** — that is, the next time a deployment pipeline runs for the environment in Cloud Manager (for example, a full-stack deployment). If your environment has not been deployed since you added your `config/otel.yaml` file and set your credential, run a deployment to activate it.
+Once Adobe has confirmed that OpenTelemetry is enabled for your environment (see [Step 1](#request-access)), run your Config Pipeline to deploy `config/otel.yaml`. The pipeline validates your configuration and checks your endpoint and credential before applying the configuration, so most mistakes are reported directly in the pipeline log.
 
-After deployment, traces, metrics, and (if enabled) logs from your AEM application begin to appear in your APM provider. Use [Step 4](#verify) to confirm.
+After the pipeline completes, traces, metrics, and (if enabled) logs from your AEM application begin to appear in your APM provider. Use [Step 5](#verify) to confirm.
 
-### Step 4: Verify the integration {#verify}
+### Step 5: Verify the integration {#verify}
 
 Because telemetry is sent to your own APM provider, you confirm the integration from your provider's tools; Adobe does not surface this data back to you.
 
-After a deployment completes, allow a few minutes for data to arrive, then check your APM provider for the following:
+After the pipeline completes, allow a few minutes for data to arrive, then check your APM provider for the following:
 
 * **Traces** — new spans for your AEM services. For example, search for the `service.name` of your author or publish tier, or for inbound HTTP request spans.
-* **Metrics** — incoming `jvm.*` and `http.server.*` metrics for your services.
+* **Metrics** — incoming `jvm.*` and `http.server.*` metrics for your services, and `aem.*` metrics once they have been rolled out to your environment.
 * **Logs** (if enabled) — incoming log entries for your AEM services.
 
 If this data appears, the integration is working.
+
+>[!NOTE]
+>
+>To confirm that your endpoint and credential work, the Configuration Pipeline sends a single test span to your APM provider each time it validates your configuration. It appears under the service name `otel-config-operator-validator` and can be safely ignored.
 
 ## Troubleshooting {#troubleshooting}
 
@@ -335,12 +435,15 @@ If telemetry does not appear in your APM provider, check the following:
 
 | Symptom | What to check |
 |---|---|
-| No data after deployment | Confirm the deployment completed successfully and that a deployment has run since the integration was enabled. Allow a few minutes for the first data to arrive, then recheck the endpoint URL and the `OTEL_CUSTOMER_AUTH` value. |
-| Authentication errors or rejected data | Verify that the `OTEL_CUSTOMER_AUTH` value matches your provider's required format (see [Step 2](#configure-credential) and [Provider-specific settings](#provider-specific)). Common mistakes are including or omitting a scheme word (`Basic`, `Bearer`, or `Api-Token`) and using the wrong key — for example, a New Relic User (`NRAK-`) key instead of an ingest License key. |
+| Configuration Pipeline error: `OTel tracing is disabled for this environment` or `Feature 'Otel' not allowed` | OpenTelemetry has not been enabled for this environment yet. Request access as described in [Step 1](#request-access), and run the pipeline again once Adobe confirms it is enabled. |
+| Configuration Pipeline error stating that Dynatrace is already active | Dynatrace OneAgent is installed on the environment and takes precedence. See [Existing APM integrations](#existing-apm). |
+| No data after the pipeline completes | Confirm the Config Pipeline completed successfully since your last change. Allow a few minutes for the first data to arrive, then recheck the endpoint URL and the `OTEL_CUSTOMER_AUTH` value. |
+| Authentication errors or rejected data | Verify that the `OTEL_CUSTOMER_AUTH` value matches your provider's required format (see [Step 3](#configure-credential) and [Provider-specific settings](#provider-specific)). Common mistakes are including or omitting a scheme word (`Basic`, `Bearer`, or `Api-Token`) and using the wrong key — for example, a New Relic User (`NRAK-`) key instead of an ingest License key. |
 | Endpoint unreachable | Confirm the endpoint URL and region are correct and that the endpoint is reachable over HTTPS. If your endpoint is private, or your provider requires traffic from a known IP address, enable [Advanced Networking with dedicated egress](#network-connectivity). |
 | Unsure whether Advanced Networking is needed | You need it only if your APM endpoint is not reachable from the public internet, or your provider requires you to allow-list a stable source IP address. Public SaaS endpoints, such as the provider examples above, do not require it. |
-| No log entries, but traces and metrics appear | Confirm logs is enabled in your configuration (see [What data is sent](#what-data-is-sent)). If your application has not logged anything recently, there may be nothing to send yet. |
+| No log entries, but traces and metrics appear | Confirm logs is enabled in your configuration (see [What data is sent](#what-data-is-sent)). Only entries at `WARN` level and above are sent, so if your application has not logged a warning or error recently, there may be nothing to send yet. |
 | Duplicate log messages at your destination | You likely have both this integration's logs and [Log Forwarding](/help/implementing/developing/introduction/log-forwarding.md) sending to the same destination. See [Overview](#overview) — enable only one path per destination. |
+| An unfamiliar service named `otel-config-operator-validator` | This is the test span that the Configuration Pipeline sends to check your endpoint and credential. It is expected and can be ignored. |
 
 If telemetry still does not appear after these checks, contact [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) with your program and environment details.
 
@@ -350,13 +453,21 @@ If telemetry still does not appear after these checks, contact [aemcs-apm-beta@a
 
 AEM as a Cloud Service customers have asked for additional metrics and operational data, as well as traces, spans, and logs in context. OpenTelemetry is an industry standard that supports all of these capabilities, and outputs them in a widely supported format (OTLP).
 
+**Do I need to request access?**
+
+Yes. During Limited Availability, email [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) with your program and environment IDs. Adobe enables OpenTelemetry for those environments shortly after replying to your request. This is not yet available to HIPAA-scoped environments.
+
 **What happens to New Relic if I enable OpenTelemetry?**
 
-When you run the Configuration Pipeline, data to New Relic will no longer be transmitted from AEM as a Cloud Service.
+Once Adobe enables OpenTelemetry for an environment at your request, data is no longer sent to New Relic from that environment. The two cannot run at the same time.
 
 **If I migrate to OpenTelemetry from New Relic, can I move back?**
 
-Yes. Disable OpenTelemetry via the Configuration Pipeline, then run a Full Stack pipeline to completion. This is possible until the end of November 2026.
+Yes. Email [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) and Adobe disables OpenTelemetry for your environments. Then set `enabled: false` in your `config/otel.yaml` file (or remove the file), run your Config Pipeline, and run a Full Stack pipeline to completion to restore New Relic. This is possible until the end of November 2026.
+
+**Can I use OpenTelemetry if my environment runs Dynatrace OneAgent?**
+
+Not on the same environment — Dynatrace OneAgent takes precedence. You can remove OneAgent and use OpenTelemetry instead, including with Dynatrace as your APM provider. See [Existing APM integrations](#existing-apm).
 
 **What happens after November 2026?**
 
@@ -367,3 +478,5 @@ Adobe will move from its built-in APM solution to OpenTelemetry as its permanent
 * [Log Forwarding](/help/implementing/developing/introduction/log-forwarding.md)
 * [Configure Advanced Networking](/help/security/configuring-advanced-networking.md)
 * [Environment Variables in Cloud Manager](/help/implementing/cloud-manager/environment-variables.md)
+* [Observability via OpenTelemetry](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/observability-via-opentelemetry/opentelemetry-in-aem) (tutorial)
+* [Configure OpenTelemetry for insights into AEM applications](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/observability-via-opentelemetry/configure-opentelemetry) (tutorial)

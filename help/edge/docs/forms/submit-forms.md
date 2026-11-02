@@ -4,6 +4,20 @@ description: Craft powerful forms faster using spreadsheets & Adaptive Forms Blo
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Set up your Google Sheets or Microsoft Excel files to start accepting data
 
@@ -55,9 +69,9 @@ Once the field names are added to the `incoming` sheet, your form becomes ready 
 
 Once sheet is  set up to receive data, you can [preview the form](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) <!--or [use POST requests](#use-admin-apis-to-send-data-to-your-sheet)--> to start sending data to the sheet.
 
- >[!WARNING] 
- >
- >  Never should the "shared-aem" sheets contain any personally identifiable information or sensitive data that you are not comfortable with being publicly accessible.
+>[!WARNING] 
+>
+>  Never should the "shared-aem" sheets contain any personally identifiable information or sensitive data that you are not comfortable with being publicly accessible.
 
 
 ## Use Admin APIs to enable a spreadsheet to accept data
