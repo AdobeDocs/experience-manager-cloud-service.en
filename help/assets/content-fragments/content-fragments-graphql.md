@@ -96,7 +96,7 @@ These [Content Fragment Models](/help/assets/content-fragments/content-fragments
 
 ### Fragment References {#fragment-references}
 
-The **[Fragment Reference](/help/assets/content-fragments/content-fragments-models.md#fragment-reference-nested-fragments)**:
+The **[Fragment Reference](/help/assets/content-fragments/content-fragments-models.md#fragment-reference)**:
 
 * Is of particular interest in conjunction with GraphQL.
 
