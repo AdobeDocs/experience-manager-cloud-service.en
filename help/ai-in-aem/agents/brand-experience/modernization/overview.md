@@ -225,7 +225,7 @@ Skills are the agent's built-in workflows for specific kinds of tasks. You don't
 | AEM authoring models | Creates the block models that the Universal Editor uses, for projects that store content in AEM. | [AEM authoring projects](getting-started-aem-authoring.md) |
 | Console tour | Explains the console's views and actions. Ask "Give me a tour of the console." | [Modernization Console](console.md) |
 
-Optional add-ons extend these capabilities when a project needs them: Figma import, guided redesign, project documentation, forms migration, commerce pages, block library setup, EDS troubleshooting, modern web guidance, and design craft. EMA offers to turn an add-on on when your request needs it, and you can save the choice in the repository so that it applies to the whole team. See [Optional Capabilities](console.md#optional-capabilities).
+Optional add-ons extend these capabilities when a project needs them: Figma import, guided redesign (the Stardust add-on), project documentation, forms migration, commerce pages, block library setup, EDS troubleshooting, modern web guidance, and design craft. EMA offers to turn an add-on on when your request needs it, and you can save the choice in the repository so that it applies to the whole team. See [Optional Capabilities](console.md#optional-capabilities).
 
 ## Figma-Based Migrations and Page Creation {#figma}
 
@@ -350,5 +350,7 @@ Auto mode is in early access and needs its own [access request](getting-started.
 ## Next Steps {#next-steps}
 
 Choose a task above, then use [Getting Started](getting-started.md) for shared console setup. For an existing EDS project, connect its repository and start with the relevant development or restyling task; a new migration is not required.
+
+For short answers to common questions, such as access, Auto mode, transfers, protected source sites, and recovery, see the [Experience Modernization Agent FAQ](faq.md).
 
 To learn what changed in recent versions of the console, see the [Experience Modernization Agent release notes.](/help/release-notes/modernization-agent/current.md)

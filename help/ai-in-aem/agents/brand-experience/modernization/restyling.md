@@ -90,7 +90,7 @@ EMA supports design work from source sites, Figma, and supplied references. Figm
 
 ### Guided Redesign {#guided-redesign}
 
-Guided redesign takes a site, or a set of its pages, to a new design in stages. EMA captures the current design, records the direction you want, builds before-and-after prototypes for review, and then turns the approved design into EDS blocks and content. Use it for a redesign across several pages rather than for restyling one page or block. EMA keeps the working files and progress of a redesign in the repository, so you can continue it in a later conversation.
+Guided redesign takes a site, or a set of its pages, to a new design in stages. It is provided by the Stardust add-on, `stardust@excat-extended`. EMA captures the current design, records the direction you want, builds before-and-after prototypes for review, and then turns the approved design into EDS blocks and content. Use it for a redesign across several pages rather than for restyling one page or block. EMA keeps the working files and progress of a redesign in the repository, so you can continue it in a later conversation.
 
 You don't need to know the stages by name. Describe the result you want, for example "Redesign the home page and the product pages in a lighter, more editorial style", and EMA proposes the steps. You can also ask for one step directly:
 

@@ -34,9 +34,11 @@ This guide covers document-based persistence. Content is stored in the EDS docum
 
 If your content must be stored in AEM's JCR repository and edited with the Universal Editor, follow the [AEM authoring guide](getting-started-aem-authoring.md) for the steps that differ. If AEM or EDS terms are new to you, read [How EDS Pages Work](overview.md#eds-basics) and [Where Content Is Stored and How Authors Edit It](overview.md#content-storage) first. Older articles may call EDS Helix or Franklin, the project names under which its architecture was developed.
 
->[!NOTE]
->
->If you are interested in using the Experience Modernization Console, you can request access through your account manager to ensure a smooth onboarding experience.
+## Access and AI Credit Usage {#access}
+
+To use the Experience Modernization Console, request access through your Adobe account manager. Sign in with an Adobe ID that belongs to your company's Adobe organization; see [Open the Experience Modernization Console](#open-console). Auto mode is in early access and has its own access request; see [Trial Your Brand's Content](#brand-trial).
+
+Being able to sign in to the console does not by itself establish your organization's entitlement. Depending on your organization's agreement, work in EMA can consume AI credits. Consumption varies with the work, such as the number of pages, the steps the agent runs, and how often it iterates on a result. For how Adobe measures AI credit consumption for agentic capabilities, see [AI credit consumption](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/ai-credit-consumption). For your organization's entitlement, usage, and commercial terms, contact your Adobe account team.
 
 ## Choose Your First Outcome {#first-outcome}
 
@@ -57,10 +59,13 @@ Auto mode and the guided workflow differ in how much the agent does before it ha
 
 Auto mode takes much longer than a guided import of the same pages because it checks and refines its own work, so it suits a first result that you collect later. By default, a full-site run migrates a preview of up to 10 pages. After the run, continue in the console to import further pages and refine the result with the guided workflow.
 
+Auto mode migrates a website, starting from its URL or from a list of its page URLs. It doesn't move an existing EDS repository; to work on a site that is already on EDS, [connect it](#connect-repo) instead. Once a run starts, it doesn't ask for your input: you steer it only through the scope and options that you choose before you start. To guide how blocks are identified or styled as you go, use the guided workflow, or refine the result in the console after the run.
+
 1. Open Auto mode and provide your site URL, or choose selected pages and list their URLs. Review the scope, settings, and [limits](#auto-mode-limits) shown before you start.
    * For a protected source site, enter credentials in the authentication fields that Auto mode offers, not in chat.
+   * If Auto mode offers **Include integrations**, select it to carry over supported integration settings from the source site, such as analytics, tag manager, and consent settings. They stay switched off on the new site until you turn them on.
 1. Start the run. A run can take up to 24 hours. You can leave the page; you receive an email when the run finishes. If the email doesn't arrive, check your spam folder.
-1. Review the run's status and result, including the preview, repository, report, and errors where available. A failed or partial run is not proof that all requested pages migrated.
+1. Review the run's status and result, including the preview, repository, report, and errors where available. Check which pages were migrated, and their content, links, images, and styles. Links to pages that the run didn't migrate can still point to the source site. A failed or partial run is not proof that all requested pages migrated.
 1. Open the resulting site with **Open site**. To continue in your own repository, use [**Make it yours**](#make-it-yours), or [connect an EDS site](#connect-repo) you already own.
 1. Ask for one useful change, such as correcting a heading or updating a call to action. Check it on the intended page and at mobile width.
 1. [Upload the content and push the code separately](#upload-content). Then reopen the document in Experience Workspace and the matching branch on the preview site.
@@ -74,7 +79,7 @@ Access to Auto mode does not establish a general entitlement or page allowance. 
 
 Auto mode limits each account by the number of pages per migration, the number of migrations, and how many migrations can run at the same time. The Auto mode page shows the limits that apply to you before you start:
 
-* A full-site migration migrates a preview of up to 10 pages by default, within the page allowance for your account. If your account allows it, you can choose how many pages to migrate. You can migrate the rest of the site later in the console.
+* When you are granted Auto mode access, each migration can include up to 10 pages by default. A full-site run migrates a preview of up to that many pages, not the whole site. You can migrate the rest of the site later in the console.
 * When you select pages, a counter shows how many of the allowed pages you have selected. A run with more pages than your account allows cannot start.
 * If you have used all the migrations your account allows, or already have as many migrations running as allowed, Auto mode tells you so. Wait for a run to finish, or request more.
 * Use **Ask for a higher limit**, or the help button in the header, to ask the support team for more pages or migrations.
@@ -83,14 +88,40 @@ To stop a run, use **Cancel migration**. A cancelled run can't be resumed; you w
 
 #### Make It Yours {#make-it-yours}
 
-An Auto mode run creates its site in an Adobe-managed location. To keep working on it in your own EDS site, select **Make it yours** on the finished run.
+An Auto mode run creates its site in an Adobe-managed location. To keep working on it in your own EDS site, select **Make it yours** on the finished run. This transfers the run's code and content to a site that you own. It doesn't migrate anything again.
+
+Prepare the destination first:
+
+* An EDS site whose code is in a GitHub repository created from an EDS template, such as the [AEM boilerplate](https://github.com/adobe/aem-boilerplate), with the AEM Code Sync and AEM Code Connector apps installed. See [Prepare an Edge Delivery GitHub Repository](#prepare-repo). A repository on another Git host that is connected through Cloud Manager can also be used.
+* A `main` branch in the repository, and the site's content stored in Experience Workspace. A destination whose content is stored elsewhere, such as in AEM, can't receive the transfer.
+* Write access to the repository, and to the site's content in Experience Workspace for the Adobe account that you use in the console.
+* A site other than the run's own site.
+
+To transfer the run:
 
 1. Choose the destination site. If you are not yet connected to GitHub, the console asks you to connect first.
 1. Review the destination repository, preview URL, and the new branch that will receive the code. Choose whether to overwrite existing pages and whether to preview the transferred pages.
 1. Select **Start transfer** and follow its progress. The code is placed on a new branch, and the content is copied to the destination content location. For a document-based destination, the transfer also turns on Experience Workspace for the destination site. If that step fails, the console shows a warning; ask the site's administrator to turn Experience Workspace on.
 1. Select **Open in EMA** to continue in the console, or **Edit Site** to edit the content.
 
-Review and merge the new branch according to your repository policy. Transferring does not publish content, but merging the branch into `main` changes the live site's code immediately. See [How Changes Go Live](overview.md#code-content-lifecycle).
+The transfer copies the following:
+
+| What | How it is transferred |
+|---|---|
+| Code | Pushed to a new branch, created from the destination's `main` branch. On that branch, the run's project replaces the destination's code files. Nothing is merged into `main`. |
+| Pages | Copied as documents to the destination's content in Experience Workspace, with the images and other media that they reference. |
+| Existing pages | Skipped unless you choose to overwrite them. Before it overwrites a page, the transfer saves the page's current state as a version named **Before Transfer**, which you can restore from the page's version history in Experience Workspace. |
+| Preview | If you choose, the transferred pages are previewed on the destination's `*.aem.page` site. They are not published. |
+
+The transfer doesn't copy:
+
+* Spreadsheets, such as redirects, bulk metadata, or placeholders. Recreate the ones that you need in the destination.
+* Access permissions, or site and organization configuration. Set them up in the destination.
+* The run's Git history and GitHub workflow files.
+
+If the transfer stops with an error, nothing is merged into `main`, but code and content are transferred separately, so check both the branch and the pages. If the new branch already exists, choose another branch name. If the destination doesn't store its content in Experience Workspace, nothing is transferred. Choose a document-based site, or [connect your site](#connect-repo) and import the pages there.
+
+Review the new branch's changes, then merge it according to your repository policy. Transferring does not publish content, but merging the branch into `main` changes the live site's code immediately. See [How Changes Go Live](overview.md#code-content-lifecycle).
 
 ### Create a Customer Demo {#customer-demo}
 
@@ -267,7 +298,7 @@ If your code is on a branch other than the one in the preview URL, change the pr
 
 Record source and output URLs, code repository and branch, remote content location, accepted pages, unresolved issues, and the next useful task. See [project handover](project-documentation.md#portable-handoff).
 
-If your workflow offers transfer to another document-based project, confirm the destination and overwrite choice. Transfer pushes code and copies content separately: either operation can fail independently. Verify both before leaving the source project. Do not assume this route transfers document content into JCR or provides atomic rollback.
+If you transfer an Auto mode run with [**Make it yours**](#make-it-yours), confirm the destination and overwrite choice. Transfer pushes code and copies content separately: either operation can fail independently. Verify both before leaving the source project. Transfer doesn't copy document content into JCR or provide atomic rollback.
 
 ## Troubleshooting {#troubleshooting}
 
@@ -276,6 +307,29 @@ If import fails, retain the error and exact source URL. Check source reachabilit
 If a change is missing, check each location separately: the console workspace, uploaded remote content, pushed code branch, and previewed page. Reimport can overwrite local content changes; save or reconcile author edits first.
 
 Before reset, discard, replacement, or overwrite, preserve the affected work. Recover code through your repository workflow and restore content separately through the authoring system's available recovery process. A code revert alone does not undo remote document writes.
+
+### Console Preview Differs from the Site {#preview-differs}
+
+The console's preview panel renders the working copy in the console workspace with the workspace's current code. The EDS preview and live sites render the saved content with the code of the branch in their URL. Differences usually have one of these causes:
+
+* **Content not uploaded:** Pages changed in the console are not yet in Experience Workspace. Upload them with **Sync** > **Push** > **Content**.
+* **Content edited elsewhere:** Pages changed in Experience Workspace are not yet in the console workspace. **Refresh** in the preview panel only reloads the rendering; to replace the console's copies with the saved documents, use **Sync** > **Pull** > **Content**. This overwrites local edits to those pages.
+* **Different code:** The code is not pushed, or the preview URL uses another branch. Push the code, and open the preview URL of the branch that has it.
+* **Different width:** The console preview fills the panel by default. Compare at the same width, using the [**Viewport** menu](console.md#content-view).
+
+### Content Writes Fail {#write-errors}
+
+Code and content use different accounts. Code is pushed with your GitHub connection, or your Cloud Manager connection for other Git hosts. Content is written to Experience Workspace with the Adobe account that you signed in with. A code push can therefore succeed while a content upload fails, or the other way round.
+
+If an upload, pull, or transfer says that your Document Authoring session may have expired, sign in again and retry. The console shows the same message when the session is valid but your Adobe account doesn't have write access to the site's content. If it persists, ask the site's administrator to confirm that your account, with the email address and organization that you use in the console, can write to the site in Experience Workspace. Access to AEM in Adobe Admin Console doesn't by itself grant write access to a site's content. If the console says that you are rate limited, wait a minute and retry.
+
+### Workspace Setup Takes Time or Fails {#workspace-setup}
+
+When you first open the console, or after a reset, it prepares your console workspace. This can take up to 10 minutes. If all workspaces are in use, the console tells you so and starts setting yours up as soon as one is available; you don't need to retry. If setup fails, the console offers to retry. If it keeps failing, use the **Request support** link on the setup screen. If the console says that your account can't use it, contact your Adobe account team.
+
+### Project Seems Missing {#missing-workspace}
+
+Your console workspace belongs to the Adobe account and organization that you sign in with. If the console opens without your project, sign out, then sign in with the same account and organization that you used before. Don't reset the workspace while you investigate, because a reset permanently deletes its chat history and files. If the project is still missing, [request support](console.md#request-support) with the project name and preview URL. Code that you pushed and content that you uploaded stay in your Git repository and in Experience Workspace.
 
 ### Source Sites with Bot Protection {#bot-protection}
 

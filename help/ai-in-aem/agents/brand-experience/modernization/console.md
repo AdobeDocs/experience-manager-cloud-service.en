@@ -32,7 +32,7 @@ The Experience Modernization Console is the web interface for the Experience Mod
 
 >[!NOTE]
 >
->If you are interested in using the Experience Modernization Console, you can request access to ensure a smooth onboarding experience.
+>To use the Experience Modernization Console, request access through your Adobe account manager. See [Access and AI Credit Usage](getting-started.md#access).
 
 ## Overview {#overview}
 
@@ -74,7 +74,7 @@ The top menu bar provides:
 * A **Request support** button where you can send details of any issues that were encountered. See [Request support](#request-support).
 * An **Account** button on the right for switching to dark mode and signing out of the console
 
-The console also shows notices at the top of the page, such as service status and [**What's new**](#whats-new) for the latest release. Chat, Home, and Settings adapt to phone and tablet screens.
+The console also shows notices at the top of the page, such as service status and [**What's new**](#whats-new) for the latest release. Chat, Home, and Settings adapt to phone and tablet screens. On a phone, the chat page shows only the chat. On a tablet, it shows one panel at a time; switch between the chat and the workspace in the header. On wider screens, both panels show side by side.
 
 ## Home Page {#home-page}
 
@@ -90,7 +90,7 @@ The **Home** page is your starting point for using the console.
 The prompt input provides controls for interacting with the AI.
 
 * **Plan / Execute modes** (light bulb and magic wand icons): Toggle between planning and execution modes, respectively.
-  * **Plan mode**: The agent analyzes your request and proposes an approach without changing files. Use it for multi-page, shared-code, or otherwise risky changes, so that you can review and adjust the approach before anything changes. You can execute the plan later or start a new one.
+  * **Plan mode**: The agent analyzes your request and proposes an approach without changing files. It ends with a plan that includes a checklist of steps. Use it for multi-page, shared-code, or otherwise risky changes, so that you can review and adjust the approach before anything changes. Select **Execute plan** to switch to Execute mode and carry out the plan, or start a new one. Plan mode is available at any time, including before you plan or catalog a site. Only you switch modes; the agent can't switch them itself.
   * **Execute mode**: The agent performs the request and can make actual file changes.
   * Planning is optional and is not an enforced approval gate. Before execution, state the allowed scope and whether upload, push, or publication is authorized.
 * **Attach files** (paperclip icon): Upload and attach files to the prompt for additional context, such as reference designs, screenshots, or specifications. You can also attach Word, PowerPoint, and Excel files; the agent receives their text and embedded images.
@@ -112,17 +112,20 @@ The chat panel header includes links for navigating to the [Home](#home-page) an
   * **Clear chat**: This starts a new conversation without the earlier history. It is not a code or content rollback. Before clearing, ask EMA to record important decisions in the [project instruction files](project-instructions.md) that it reads in every conversation.
   * **Download chat**: This downloads the conversation history as a markdown file.
 
+The conversation is saved with your console workspace. When you reload the page or return later, the chat history reloads. Prompts that you recall with the arrow keys last only as long as the browser tab.
+
 ### Optional Capabilities {#optional-capabilities}
 
 Core skills, such as site planning, page migration, bulk import, and header, navigation, and footer migration, are always available. Other capabilities are optional add-ons. Each add-on is off by default and is turned on per project, which keeps the agent lighter and faster for projects that don't need it.
 
 * When your request needs an add-on, EMA offers to turn it on and asks for your confirmation first. The add-on is available from your next message.
-* You can also ask for an add-on directly, for example "Enable the forms migration capability", or describe your task and accept EMA's offer. To turn an add-on off, ask the agent in the chat.
+* You can also ask for an add-on directly, for example "Enable the forms migration capability", or describe your task and accept EMA's offer.
+* To see which add-ons are on, ask EMA, for example "Which add-ons are enabled for this project?" To turn one off, ask EMA in the same way. The Settings page has no add-on controls yet.
 
 | Add-on | ID | What it is for |
 |---|---|---|
 | Figma import | `excat-figma@excat-extended` | Migrating blocks and creating pages from Figma designs. See [Figma block migration](prompting-guide.md#figma-block-migration). |
-| Guided redesign | `stardust@excat-extended` | Redesigning several pages of a site to a new design direction, step by step, and checking the result. See [Guided Redesign](restyling.md#guided-redesign). |
+| Guided redesign (Stardust) | `stardust@excat-extended` | Redesigning several pages of a site to a new design direction, step by step, and checking the result. See [Guided Redesign](restyling.md#guided-redesign). |
 | Design craft | `impeccable@excat-extended` | Applying frontend design-quality guidance, such as typography, spacing, and visual hierarchy, to design work. Turned on automatically with guided redesign, and usable on its own. |
 | Project documentation | `project-management@excat-extended` | Generating project and handover documentation as PDF guides. See [Project documentation](project-documentation.md). |
 | Forms migration | `forms-excat@excat-extended` | Migrating AEM Forms-based forms to EDS forms. |
@@ -176,7 +179,7 @@ The **Content views** show the selected page in different forms, so that you can
 
 The following actions are available in the content views:
 
-* **Refresh** icon to update the preview panel rendering.
+* **Refresh** icon to reload the preview panel's rendering of the console workspace copy. It doesn't fetch content from Experience Workspace; to replace the console's copies with the saved documents, use **Sync** > **Pull** > **Content**.
 * **Viewport** menu to view the rendered page at **Responsive** width (the default, which fills the panel) or at a fixed **Desktop**, **Tablet**, or **Mobile** size
 * **Inspect mode** (select icon) to add elements of the page to your prompt for additional context
 * **New window** (open in icon) to open the preview URL in a new tab (for a full desktop preview)
@@ -281,7 +284,7 @@ If you make a change to any value in any section, click **Save** to save those c
 * **Support** summarizes information shared with the Adobe support team when you make a support request.
   * **Request support** - Click to initiate a [support request](#request-support) without leaving the console.
 * **Danger zone** contains settings that can revert your console workspace.
-  * **Reset workspace** - Resets the console workspace to its initial state. This cannot be undone. Save needed code and content first; reset is not a remote-content recovery tool.
+  * **Reset workspace** - Permanently deletes the console workspace's chat history, files, and session state, and disconnects GitHub. To confirm, you type `delete everything`. This cannot be undone. Code that you pushed and content that you uploaded stay in their remote locations, but unpushed and unuploaded work is lost. Save needed code and content first; reset is not a remote-content recovery tool.
 
 Figma access also depends on the token owner's access to the selected file and the capability being enabled for the project. Store tokens only in credential settings, not prompts or project documentation.
 
@@ -325,12 +328,12 @@ To remove access, click **Remove site** for the entry and then click **Save**. R
 
 Use **Request support** in the menu bar or on the Settings page to contact the Adobe support team.
 
-1. Optionally choose a **Topic**.
-1. Describe what went wrong, in up to 2,000 characters. Don't include passwords or tokens.
+1. Optionally choose a **Topic**, such as layout or design, missing content, or an agent that seems stuck.
+1. Describe what went wrong, in up to 2,000 characters. Don't include passwords or tokens. To help support reproduce the problem, name the affected page, what you expected, what happened instead, and when.
 1. Optionally select recent prompts from the conversation to attach, so that support can see what you asked.
 1. Send the request.
 
-The request shares your name, email address, session ID, project name, and preview URL with the support team.
+The request shares your name, email address, session ID, project name, and preview URL with the support team. Before your console workspace is set up, it shares only your name, email address, and organization.
 
 ## What's New and Release Notes {#whats-new}
 
