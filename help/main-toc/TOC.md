@@ -1127,6 +1127,7 @@ user-guide-title: AEM as a Cloud Service
      + [Table](/help/forms/interactive-communication//table.md)
      + [Line](/help/forms/interactive-communication/line.md)
      + [Barcode](/help/forms/interactive-communication/barcode.md)
+     + [Signature Field](/help/forms/interactive-communication/signature-field.md)
      + [Unbound Variable](/help/forms/interactive-communication/unbound-variable.md)
    + How To {#howto}
      + [Configure Data Binding](/help/forms/interactive-communication/configure-data-binding.md)
