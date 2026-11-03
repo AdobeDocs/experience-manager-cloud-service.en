@@ -27,7 +27,7 @@ role_v2:
 ---
 # Prompting Guide for Experience Modernization Agent {#prompting-guide}
 
-The Experience Modernization Agent automatically selects the appropriate skill based on natural-language requests. This guide provides tips for effective prompting and describes what the skills do.
+The Experience Modernization Agent (EMA) uses skills: built-in workflows for specific kinds of tasks, such as migrating a page or styling a block. The agent selects the appropriate skill from your natural-language request, so you don't need to name it. This guide provides tips for effective prompting and describes what the skills do. For the EDS terms used here, such as blocks, default content, and sections, see [How EDS Pages Work](overview.md#eds-basics).
 
 ## Choose a Task {#choose-task}
 
@@ -42,7 +42,7 @@ Use the task guides for the full procedure and acceptance checks. The prompts be
 | Restyle an existing EDS project | [Existing-site restyle](restyling.md#existing-site) |
 | Create, update, or refactor blocks | [Block development recipes](block-development.md) |
 
-Name the source URLs/design nodes, destination paths, authoring target, repository/branch, allowed scope, and what must be preserved. State whether uploads, code pushes, or publication are authorized. Do not include credentials in a prompt.
+Name the source URLs/design nodes, destination paths, [authoring target](overview.md#content-storage), repository/branch, allowed scope, and what must be preserved. State whether uploads, code pushes, or publication are authorized. Do not include credentials in a prompt.
 
 ## General Tips {#general-tips}
 
@@ -77,9 +77,9 @@ Name the source URLs/design nodes, destination paths, authoring target, reposito
 
 The Experience Modernization Agent supports site creation and migration to EDS, as well as continued development of existing projects.
 
-### Migrate a site or page to AEM {#migrate-a-site}
+### Migrate a Site or Page to AEM {#migrate-a-site}
 
-Use this prompt when migrating content from an existing website to Edge Delivery Services.
+Use this prompt when migrating content from an existing website to Edge Delivery Services (EDS), AEM's website delivery service.
 
 #### Example Prompts {#example-migrate}
 
@@ -93,8 +93,8 @@ Use this prompt when migrating content from an existing website to Edge Delivery
 * The agent analyzes pages using a two-level hierarchy:
   * First it identifies section boundaries (background changes, spacing shifts)
   * Then it identifies content sequences within each section.
-* Authoring analysis follows [David's Model.](https://www.aem.live/docs/davidsmodel)
-  * for each content sequence, it first checks "Can an author create this by normal typing?"
+* Authoring analysis follows [David's Model,](https://www.aem.live/docs/davidsmodel) the aem.live guidance for structuring content so that authors can create it easily.
+  * For each content sequence, it first checks "Can an author create this by normal typing?"
   * Default content (headings, paragraphs, lists, inline images) is preferred over blocks.
 * The agent attempts to reuse existing blocks from the repository's block library before creating new ones.
   * When content can not be mapped to an existing block, it creates new block variants.
@@ -102,7 +102,7 @@ Use this prompt when migrating content from an existing website to Edge Delivery
 * Reuse established block variants where they fit the content and design. A similarity heuristic does not replace checking the authored result.
 * Header, navigation, and footer are excluded from page migration. These are handled by dedicated skills.
 * Each migration creates import infrastructure (page templates, block parsers, transformers) for future bulk imports.
-* Dynamic Media and Scene7 image handling can preserve source DM URLs for both persistence targets. Verify access, intended transformations, and delivery in the target rather than assuming every source image has been copied.
+* Image handling can preserve source Dynamic Media URLs, including older Scene7 URLs, for both persistence targets. Scene7 is the earlier name of Dynamic Media. Verify access, intended transformations, and delivery in the target rather than assuming every source image has been copied.
 
 ### Site Catalog {#site-catalog}
 
@@ -317,7 +317,7 @@ In this workflow, you first create the target block collection from Figma. The s
 * **Visual validation** is done against the Figma-derived block collection and design system.
 * New block variants should be created only when existing Figma-derived blocks cannot represent the source content.
 
-#### Recommended workflow {#figma-redesign-workflow}
+#### Recommended Workflow {#figma-redesign-workflow}
 
 1. Identify the Figma components needed for the redesigned site.
 1. Migrate those components into Edge Delivery Services blocks or variants.
@@ -336,7 +336,7 @@ Use this prompt when the page does not already exist on a source website and a F
 
 * "Migrate this Figma page to Edge Delivery Services: `https://figma.com/design/{fileKey}?node-id={nodeId}`"
 
-#### What to know {#wtk-figma-new-page}
+#### What to Know {#wtk-figma-new-page}
 
 * This prompt works best with a **specific Figma frame or page**, not an entire file.
 * The frame should be organized into **clear page sections**.
@@ -380,13 +380,13 @@ Use this prompt to create new blocks or modify existing ones.
 
 #### What to Know {#wtk-block-development}
 
-* The agent's development guidance follows Content-Driven Development (CDD).
+* The agent's development guidance follows Content-Driven Development (CDD): define the content and how authors create it first, then write the code.
   * It will ask about content models and test content before writing code.
 * The CDD philosophy is that author needs come before developer needs.
   * Content models must be intuitive for authors, even if that means more complex decoration code.
 * Creating test content first provides:
   * Immediate testing capability
-  * PR validation links for PSI checks
+  * PR validation links for PageSpeed Insights (PSI) checks
   * Living documentation for authors
   * Discovery of edge cases that code-first approaches miss
 * The agent will search for similar blocks in the [Block Collection](https://www.aem.live/developer/block-collection) and [Block Party](https://www.aem.live/developer/block-party/) before implementing, to find patterns and reusable code.
@@ -433,7 +433,7 @@ Use this prompt to look for existing implementations to use as starting points.
 * The [Block Collection](https://www.aem.live/developer/block-collection) is Adobe-maintained and vetted for best practices, excellent content modeling, high performance, and accessibility.
   * It is limited to commonly-needed blocks. Start here.
 * The [Block Party](https://www.aem.live/developer/block-party/) is community-driven and offers a broader variety including experimental approaches.
-  * It also includes sidekick plugins, build tools (webpack, vite, sass), and integrations.
+  * It also includes plugins for the AEM Sidekick, the browser extension used to preview and publish EDS pages, as well as build tools (webpack, vite, sass) and integrations.
   * Use when the Block Collection doesn't have what you need.
 * Think about alternative names when searching
   * FAQ = accordion

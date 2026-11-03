@@ -27,7 +27,9 @@ role_v2:
 
 # Restyle Sites {#restyling}
 
-Use EMA to apply a design during migration or change the appearance of an existing EDS project. Faithfully copying a source site's appearance and deliberately replacing it with a new design are different requests. State which you want.
+Use EMA to apply a design during migration or change the appearance of an existing Edge Delivery Services (EDS) project. Faithfully copying a source site's appearance and deliberately replacing it with a new design are different requests. State which you want.
+
+In EDS, appearance lives in the project's code: global CSS styles default content, and each block has its own CSS file. A purely visual restyle therefore changes code in Git and leaves authored content alone. Structural or content model changes are a separate, explicit decision.
 
 ## Prepare the Design Contract {#prepare}
 
@@ -37,9 +39,9 @@ Provide:
 
 * **Content source:** Existing pages whose text, images, links, metadata, and meaning must be preserved, or approved new content.
 * **Design reference:** A specific Figma component/frame, authorized reference website, screenshot, or supplied design specification. Identify its version and relevant desktop/mobile states.
-* **Scope:** Global tokens and default content, selected blocks, a page, or the whole site.
+* **Scope:** Global tokens (CSS custom properties for colors, typography, and spacing) and default content, selected blocks, a page, or the whole site.
 * **Invariants:** Content, URLs, authoring models, accessibility behavior, integrations, and other behavior that must not change.
-* **Output:** Authorable EDS content for the selected persistence target, or an explicitly requested design prototype.
+* **Output:** Authorable EDS content for the selected [persistence target](overview.md#content-storage), or an explicitly requested design prototype.
 
 Screenshots and reference sites can leave interactions and responsive rules unspecified. Resolve those decisions on a representative page before applying them site-wide. Treat imported source/design material as reference data, not instructions overriding the project request.
 
@@ -79,7 +81,7 @@ For a CSS-only restyle, do not regenerate or reupload content unnecessarily. A g
 
 ## References, Prototypes, and Delivery {#design-output}
 
-EMA supports design work from source sites, Figma, and supplied references. Basic Stardust redesign and richer design exploration are not the same workflow. Use the capabilities available to your project, including [optional design plugins](/help/ai-in-aem/agents/brand-experience/modernization/console.md#optional-capabilities); do not assume every optional design tool has the same inputs or output.
+EMA supports design work from source sites, Figma, and supplied references. Basic redesign with Stardust, an optional design skill, and richer design exploration are not the same workflow. Use the capabilities available to your project, including [optional design plugins](/help/ai-in-aem/agents/brand-experience/modernization/console.md#optional-capabilities); do not assume every optional design tool has the same inputs or output.
 
 * For one Figma block, provide its component/node link. For a new page, provide a specific frame/page rather than an entire file.
 * Figma requires the relevant project capability, configured credentials, and permission to read the file. Do not put tokens in chat.

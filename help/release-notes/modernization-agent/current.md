@@ -45,6 +45,6 @@ These are the release notes for the 2 November 2026 release of the Experience Mo
 * Agent guidance uses plain language instead of internal migration terms.
 * Long task lists scroll within the chat, and you can expand or collapse the pending tasks.
 * Preview now uses the site configuration to find the correct code repository.
-* The agent recognizes requests to restore or preview a Document Authoring page, and explains when writing to remote content is not allowed.
+* The agent recognizes requests to restore or preview a page in Experience Workspace (formerly Document Authoring), and explains when writing to remote content is not allowed.
 * Conversations with many screenshots no longer fail. Older screenshots are shortened automatically.
 * **Upload to AEM** for AEM authoring projects fails less often.

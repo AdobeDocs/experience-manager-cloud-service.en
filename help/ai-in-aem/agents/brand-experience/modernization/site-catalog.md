@@ -31,7 +31,7 @@ Analyze an authorized source website to prepare an EDS migration. Use the catalo
 
 ## Overview {#overview}
 
-The site catalog skill discovers URLs, analyzes reachable pages, groups page templates and block variants, and captures screenshots. Review and refine the results in the [site planning UI](#planning-ui). Discovery can miss pages and analysis can fail; reconcile the result with your agreed inventory.
+The site catalog skill discovers URLs, analyzes reachable pages, groups page templates and block variants, and captures screenshots. A template is a group of pages that share the same layout of blocks. A block variant is a version of a block with its own look or layout, marked by an extra CSS class such as `.with-button`. Review and refine the results in the [site planning UI](#planning-ui). Discovery can miss pages and analysis can fail; reconcile the result with your agreed inventory.
 
 The skill supports migration planning in the following ways:
 
@@ -228,6 +228,8 @@ The following actions are available.
 |Variant instances|**Split into a new variant**, **Move to another variant**|
 
 Some actions are only offered when they apply. For example, **Generate block code** and **Rename block** are only available for blocks whose type has been classified, and **Give this variant its own block** is only available for variants that have a variant class.
+
+In action labels such as **Migrate page to AEM** and **Migrate template to AEM**, *AEM* refers to the EDS project connected to the console. The imported content stays in the console workspace until it is uploaded to the project's authoring destination.
 
 Grouping and naming corrections update catalog metadata and block-library organization; they do not retroactively repair already imported pages. **Generate block code** changes code, while migration actions start content-generation workflows. Review their output separately. Catalog structural refactoring is not the same as [refactoring block code](block-development.md#refactor).
 

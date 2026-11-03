@@ -31,7 +31,7 @@ Learn how the Experience Modernization Agent's documentation skill can help you 
 
 ## Accelerating Project Handovers {#project-handovers}
 
-[The Experience Modernization Agent](/help/ai-in-aem/agents/brand-experience/modernization/overview.md) can generate project documentation guides from accessible EDS code and configuration, featuring:
+[The Experience Modernization Agent](/help/ai-in-aem/agents/brand-experience/modernization/overview.md) (EMA) can generate project documentation guides from accessible Edge Delivery Services (EDS) code and configuration, featuring:
 
 * **Project walkthrough** - Explanation of the project setup, structure, and conventions
 * **Module &amp; component organization** - Clear documentation of how blocks, modules, and components are organized and how they relate to each other
@@ -44,12 +44,12 @@ Review generated guidance against the actual authoring target and validated exam
 Ensure the following before using this skill.
 
 * Your project must be checked out to the workspace in the console.
-* To enrich the guides with Edge Delivery configuration, you need appropriate admin access and must enable **Allow LLM to access admin.hlx.page on my behalf** in [console settings](console.md#settings-page).
+* To enrich the guides with EDS configuration, you need appropriate admin access and must enable **Allow LLM to access admin.hlx.page on my behalf** in [console settings](console.md#settings-page). `admin.hlx.page` is the EDS admin API, which holds site configuration; `hlx` comes from Project Helix, an earlier name of EDS.
 * Without that access, the agent can generate code-based documentation. Ask it to state which configuration and remote content it could not inspect. This permission does not establish JCR repository access.
   
 ## Creating Project Documentation {#creating-documentation}
 
-Once the prerequisites are fulfilled, you simply need to ask the agent to create documentation for your project.
+Once the prerequisites are fulfilled, ask the agent to create documentation for your project.
 
 1. In the chat ask `Create documentation for this project`. Specify the intended audience, authoring/persistence target, and known project context.
 1. Provide the organization name of the project if the agent asks for it.
@@ -61,7 +61,7 @@ Once the prerequisites are fulfilled, you simply need to ask the agent to create
 
    ![Documentation created](assets/documentation-created.png)
 
-Review the guides for correct setup, content locations, commands, authoring steps, and known limitations before sharing. Save the PDFs for your teams; for document-based projects, you can also upload them with the other DA content. This is not a JCR package-import instruction.
+Review the guides for correct setup, content locations, commands, authoring steps, and known limitations before sharing. Save the PDFs for your teams; for document-based projects, you can also upload them with the other content in Experience Workspace (Document Authoring, DA). This is not a JCR package-import instruction.
 
 ![Admin guide](assets/admin-guide.png)
 
@@ -77,7 +77,7 @@ Include:
 
 | Field | Useful detail |
 |---|---|
-| Project identity | Repository, branch/revision, source URLs, content destination, authoring tool, and preview/live URLs. |
+| Project identity | Repository, branch/revision, source URLs, [content destination](overview.md#content-storage), authoring tool (Experience Workspace or the Universal Editor), and preview/live URLs. |
 | Decisions | Agreed scope, design reference/version, content mappings, project conventions, and what must be preserved. |
 | Validated examples | Source-to-output paths, authorable block examples, model/variant instructions, and edit/save/reopen results. |
 | State | What exists only in the workspace, what was uploaded, what code was pushed, and what was previewed or published. |

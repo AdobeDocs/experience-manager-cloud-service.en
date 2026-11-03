@@ -32,7 +32,7 @@ Learn about Adobe Agentic Outcome Engineers (AOEs) and how they can help you suc
 
 ## The Agentic Outcome Engineer (AOE) {#aoe}
 
-AOEs are Adobe engineers who operate the Experience Modernization Agent on your behalf. AOE delivery is an optional engagement model, not a separate tier of agent capabilities. The team works with you to:
+AOEs are Adobe engineers who operate the Experience Modernization Agent (EMA) on your behalf. AOE delivery is an optional engagement model, not a separate tier of agent capabilities. The team works with you to:
 
 * Translate AI-assisted automation into production-ready customer outcomes.
 * Resolve migration and implementation issues within the agreed engagement.
@@ -91,13 +91,13 @@ This service-scoping boundary is not a blanket product limitation: some EMA work
 
 #### Target Platform {#target-platform}
 
-* **Edge Delivery Services:** All migrations target Edge Delivery Services, Adobe's high-performance web delivery platform.
-* **Authoring target:** Agree document-based persistence, used with Experience Workspace/Document Authoring, or AEM authoring with JCR persistence and the Universal Editor. Confirm the setup and handover for the selected target.
+* **Edge Delivery Services:** All migrations target Edge Delivery Services (EDS), Adobe's high-performance web delivery platform.
+* **Authoring target:** Agree document-based persistence, edited visually in Experience Workspace, or AEM authoring with JCR persistence and the Universal Editor. Adobe recommends document-based persistence with Experience Workspace for new implementations. See [Where Content Is Stored and How Authors Edit It](overview.md#content-storage). Confirm the setup and handover for the selected target.
 
 #### Migration Work Performed {#migration-work}
 
 * **Migration approach:** Agree faithful migration, redesign, or an incremental phased migration.
-* **Static content import:** Automated extraction of static HTML content from source websites and intelligent mapping to EDS content blocks
+* **Static content import:** Automated extraction of static HTML content from source websites and automated mapping to EDS default content and blocks
 * **Design system:** Extraction of brand tokens (colors, typography, spacing) and application to the new site
 * **Design references:** Agree the source site, Figma, or other supplied references and what fidelity means for acceptance. Do not assume every design format has a dedicated automated importer.
 * **Responsive design:** Mobile and desktop layouts handled appropriately

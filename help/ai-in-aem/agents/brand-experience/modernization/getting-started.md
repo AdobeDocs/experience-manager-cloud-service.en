@@ -28,7 +28,9 @@ role_v2:
 
 # Getting Started with the Experience Modernization Agent {#getting-started}
 
-Use your brand's content to try EDS and EMA, or prepare a few customer demo pages. For a full-site release, use the [production migration guide](production-migration.md) after validating representative pages.
+Use your brand's content to try Edge Delivery Services (EDS) and the Experience Modernization Agent (EMA), or prepare a few customer demo pages. For a full-site release, use the [production migration guide](production-migration.md) after validating representative pages.
+
+This guide covers document-based persistence: content is stored in the EDS document-based repository and authors edit it visually in Experience Workspace, the visual authoring UI for EDS. Adobe recommends this setup for new implementations. If your content must be stored in AEM's JCR repository and edited with the Universal Editor, follow the [AEM authoring guide](getting-started-aem-authoring.md) for the steps that differ. If AEM or EDS terms are new to you, read [How EDS Pages Work](overview.md#eds-basics) and [Where Content Is Stored and How Authors Edit It](overview.md#content-storage) first.
 
 >[!NOTE]
 >
@@ -38,13 +40,13 @@ Use your brand's content to try EDS and EMA, or prepare a few customer demo page
 
 The console is hosted. You do not need a local development environment to begin.
 
-Before importing, identify the authorized source URLs, the pages to include, and whether to preserve the source design or apply a new design. For a connected project, also confirm the code repository and branch, content destination, and permission to write there.
+Before importing, identify the authorized source URLs, the pages to include, and whether to preserve the source design or apply a new design. For a connected project, also confirm the code repository and branch, [content destination](overview.md#content-storage), and permission to write there.
 
 ### Trial Your Brand's Content {#brand-trial}
 
 Use a small, representative set of your own pages so that your first edit is useful beyond a sample tour.
 
-1. If your account has access to **auto mode**, open that entry and provide your site URL, or choose selected pages and list their URLs. Review the scope, settings, and [limits](#auto-mode-limits) displayed before starting. Use the authentication fields offered by auto mode, not chat, to provide credentials for a protected source site.
+1. If your account has access to **auto mode**, open that entry and provide your site URL, or choose selected pages and list their URLs. Auto mode runs a migration without step-by-step prompting. Review the scope, settings, and [limits](#auto-mode-limits) displayed before starting. Use the authentication fields offered by auto mode, not chat, to provide credentials for a protected source site.
 1. Start the run. A run can take several hours; you receive an email when it finishes, and you can leave the page in the meantime. Review its status and result, including the preview, repository, report, and errors where available. A failed or partial run is not proof that all requested pages migrated.
 1. Open the resulting site with **Open site**. To continue in your own repository, use [**Make it yours**](#make-it-yours), or [connect an EDS site](#connect-repo) you already own. If auto mode is unavailable, use the guided [single-page import](#start-prompting) below. Auto mode is not a prerequisite for trying your content.
 1. Ask for one useful change, such as correcting a heading or updating a call to action. Check it on the intended page and at mobile width.
@@ -71,7 +73,7 @@ An auto-mode run creates its site in an Adobe-managed location. To keep working 
 
 1. Choose the destination site. If you are not yet connected to GitHub, the console asks you to connect first.
 1. Review the destination repository, preview URL, and the new branch that will receive the code. Choose whether to overwrite existing pages and whether to preview the transferred pages.
-1. Select **Start transfer** and follow its progress. The code is placed on a new branch, and the content is copied to the destination content location.
+1. Select **Start transfer** and follow its progress. The code is placed on a new branch, and the content is copied to the destination content location. For a document-based destination, the transfer also turns on Experience Workspace for the destination site. If that step fails, the console shows a warning; ask the site's administrator to turn Experience Workspace on.
 1. Select **Open in EMA** to continue in the console, or **Edit Site** to edit the content.
 
 Review and merge the new branch according to your repository policy. Transferring does not publish the site.
@@ -88,25 +90,27 @@ A good demo presents complete, branded pages and working demo paths. It does not
 
 ## Prepare an Edge Delivery GitHub Repository {#prepare-repo}
 
+An EDS project keeps its code (blocks, styles, and scripts) in a Git repository and its content in a separate content source. This section prepares the code repository.
+
 >[!NOTE]
 >
->Using an AEM Sites and Universal Editor project? Follow [Getting Started for AEM Sites/Universal Editor](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md) setup steps.
+>Using AEM authoring with JCR persistence and the Universal Editor? Follow the [AEM authoring setup steps](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md) instead.
 
 1. Select an [Edge Delivery Services](/help/edge/overview.md) repository for use with the Experience Modernization Console.
-   * This can be an existing Edge Delivery Services project or you can create a new one following the [developer tutorial](https://www.aem.live/developer/tutorial) using the [boilerplate repository.](https://github.com/adobe/aem-boilerplate)
-1. Ensure that the [AEM Code Connector](https://github.com/apps/aem-code-connector) is installed in the repository.
+   * This can be an existing EDS project, or you can create a new one by following the [developer tutorial](https://www.aem.live/developer/tutorial), which uses the [boilerplate repository.](https://github.com/adobe/aem-boilerplate)
+1. Ensure that the [AEM Code Connector](https://github.com/apps/aem-code-connector) GitHub app is installed in the repository.
    * This allows the console to inspect your code.
 1. Ensure that the [AEM Code Sync GitHub app](https://github.com/apps/aem-code-sync) is installed in the repository.
-   * This allows Edge Delivery Services to sync your code.
-   * If your repo is based the on the tutorial, this step is already complete.
+   * This allows EDS to sync your code.
+   * If your repository is based on the tutorial, this step is already complete.
 
 >[!NOTE]
 >
->**Using a different Git host?** Edge Delivery Services also supports GitHub Enterprise (self-hosted), Adobe-hosted repositories, GitLab, Bitbucket, and Azure DevOps. Onboard the repository in Adobe Cloud Manager, then configure your Edge Delivery site to use it. See [Bring Your Own Git.](https://www.aem.live/developer/byo-git)
+>**Using a different Git host?** EDS also supports GitHub Enterprise (self-hosted), Adobe-hosted repositories, GitLab, Bitbucket, and Azure DevOps. Onboard the repository in Adobe Cloud Manager, the AEM as a Cloud Service tool for managing programs, environments, and code repositories. Then configure your EDS site to use it. See [Bring Your Own Git.](https://www.aem.live/developer/byo-git)
 
 >[!IMPORTANT]
 >
->The Experience Modernization agent pushes changes and opens pull requests in your repository. The access token you create in Cloud Manager must grant write access to repository code, alongside the permissions listed at [step 8 of Add external repositories.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/external-repositories)
+>EMA pushes changes and opens pull requests in your repository. The access token you create in Cloud Manager must grant write access to repository code, alongside the permissions listed at [step 8 of Add external repositories.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/external-repositories)
 >
 >**Already onboarded a token without write access?** You do not need to re-onboard the repository. In Cloud Manager, go to **Repositories > Manage Access Tokens**, edit the token, and paste a value that includes write access. Cloud Manager revalidates the associated repositories automatically. See [Manage access tokens.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/manage-access-tokens#edit-access-tokens)
 
@@ -120,7 +124,7 @@ Your workspace pauses after a period of inactivity to save resources. When you r
 
 ## Demo Mode {#demo-mode}
 
-If the console opens in demo mode, you can optionally explore its sample project and try importing additional pages. A **Demo site** button in the header indicates that you are in demo mode. Work in the demo site isn't saved, and the demo site can't push code to GitHub or content to Document Authoring. Sample exploration is not required before trying your own content.
+If the console opens in demo mode, you can optionally explore its sample project and try importing additional pages. A **Demo site** button in the header indicates that you are in demo mode. Work in the demo site isn't saved, and the demo site can't push code to GitHub or content to Document Authoring (Experience Workspace). Sample exploration is not required before trying your own content.
 
 ![Demo mode](assets/demo-mode.png)
 
@@ -129,9 +133,9 @@ If the console opens in demo mode, you can optionally explore its sample project
 Connect a new or existing EDS project. If you have local workspace changes to keep, save content and push code before replacing the workspace.
 
 1. Click **Demo site** in the header and then **Switch site**, or use **Switch site** in [Settings](console.md#settings-page).
-1. This will prompt you to authorize the AEM Code Connector app using your GitHub credentials. Click **Authorize AEM Code Connector**.
+1. This prompts you to authorize the AEM Code Connector app using your GitHub credentials. Click **Authorize AEM Code Connector**.
    * For GitHub Enterprise, or when OAuth sign-in isn't available, click **Sign in with a token** instead. Enter the **GitHub Host** and a **Personal Access Token**. A fine-grained token limited to the repositories you need is recommended.
-1. Back in the console, specify the Preview URL of the site. The preview URL can be obtained by previewing any document in the site, or by constructing it from branch, site-name and org. The system will retrieve the associated Github Project automatically. Alternatively, you can search through your authorized GitHub projects to find a site.
+1. Back in the console, specify the preview URL of the site. Preview URLs use the `*.aem.page` domain and follow the pattern `https://{branch}--{site}--{organization}.aem.page`. You can copy one by previewing any page of the site, or construct it from the branch, site name, and organization. The console finds the associated GitHub project automatically. Alternatively, you can search through your authorized GitHub projects to find a site.
    ![Connecting to GitHub project](assets/connect-site-and-github.png)
 1. Click **Checkout to workspace** once the site has been verified.
 1. When prompted to **Replace existing workspace**, verify that the current work is saved elsewhere, then click **Replace workspace**.
@@ -157,7 +161,7 @@ Now that your console can access your code, you are ready to start prompting.
    * "Migrate only `https://www.example.com/about` to `/about` in this project. Target document-based content. Preserve its text, images, and links. Reuse existing blocks and default content. Do not upload, push, or publish."
    * For AEM authoring, specify JCR persistence and follow the [target-specific checks](getting-started-aem-authoring.md#validate-content).
 1. Review the imported page, its destination path, and any reported gaps.
-   * The console observes separation of concerns and handles content and presentation separately.
+   * The agent handles content and presentation separately: it imports the content first, and you request styling as a later step.
    * Import duration depends on the source and requested scope.
    * The console presents you with ongoing feedback as it begins its work, including an overview of its planned steps.
    ![Content import](assets/content-import.png)
@@ -178,13 +182,13 @@ The result is working content and code in the console. It is not yet evidence th
 
 ## Upload Content {#upload-content}
 
-For document-based persistence, upload to [Document Authoring](https://da.live). Code push does not save these documents. Confirm the organization, repository, destination paths, and permission to replace any existing content before uploading.
+For document-based persistence, upload the pages to the document-based repository at [`da.live`](https://da.live), where authors edit them in Experience Workspace. Console labels and some screens still call it Document Authoring. Code push does not save these documents, because EDS stores content separately from code. Confirm the organization, repository, destination paths, and permission to replace any existing content before uploading.
 
 1. Make sure you are in a **Content** view and then click the **Upload content** button on the top-right. Alternatively, use **Sync** > **Push** > **Content** in the workspace header to upload all pending pages.
    * By default you are in **Content** view when entering the console.
    * Your view is indicated by the selected View Picker item in the workspace area of the console.
 1. The **Upload content** dialog opens with the destination org and repo pre-filled from your project settings.
-   * If an `fstab.yaml` is not present in your connected repository, you will need to manually enter your **Organization** and **Repository**.
+   * If your connected repository has no `fstab.yaml`, the file that points EDS to the site's content source, you need to enter your **Organization** and **Repository** manually.
    * If you used the boilerplate, an `fstab.yaml` is provided.
 1. Select the files you want to upload and click **Upload**.
    ![Upload content dialog](assets/upload-content.png)
@@ -192,19 +196,19 @@ For document-based persistence, upload to [Document Authoring](https://da.live).
 1. Once complete, the dialog shows how many files were uploaded. You can then preview, or preview and publish, the uploaded pages. This runs as a tracked job that continues if you close the dialog; retry any pages that fail.
    ![View in AEM](assets/view-in-aem.png)
 
-To access the uploaded content in Document Authoring, optionally click **View in AEM** in the notification when the upload completes, or navigate to `https://da.live/#/{organization}/{repository}`.
+To find the uploaded content, optionally click **View in AEM** in the notification when the upload completes, or navigate to `https://da.live/#/{organization}/{repository}`.
 
 ![Content in Document Authoring](assets/content-in-document-authoring.png)
 
-Open an uploaded document, make an edit, save, and reopen it to check authorability and persistence. Use the project's available authoring experience, including Experience Workspace where configured. Review upload errors before assuming all selected pages were copied.
+Open an uploaded document, make an edit, save, and reopen it to check authorability and persistence. Where Experience Workspace is turned on for the site, edit the page visually there; in the console, **Edit in Experience Workspace** opens the selected page in its editor. Experience Workspace is off by default and is turned on per site or organization. Review upload errors before assuming all selected pages were copied.
 
 >[!TIP]
 >
->If you are working on an AEM Sites and Universal Editor project, uploading content to AEM works slightly differently. Refer to [Getting Started with the Experience Modernization Agent for AEM Sites/Universal Editor Projects](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md#upload-content) for specific upload instructions.
+>If you are working on an AEM authoring project, with JCR persistence and the Universal Editor, uploading content to AEM works differently. Refer to [Getting Started with the Experience Modernization Agent for AEM Authoring Projects](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md#upload-content) for specific upload instructions.
 
 ## Push Code Changes {#push-code-changes}
 
-Review the code diff and run the project's checks before pushing. Use a pull request for work requiring review. Repository protections, not an optional planning conversation, enforce branch rules.
+Review the code diff and run the project's checks before pushing. Use a pull request for work requiring review. Branch rules are enforced by your repository's protections; the optional plan mode does not enforce them.
 
 1. Optionally, switch to **Changes** view (branch icon in the view picker) to review the diff.
    ![Code view](assets/code-view-git-changes.png)
@@ -223,12 +227,12 @@ Your code is now in GitHub.
 
 ## Preview Site {#preview-site}
 
-To view the changes in the preview environment:
+Preview renders your saved content with your code on the preview site, `*.aem.page`. Publishing, a separate step, releases it to the live site on `*.aem.live`. To view the changes in the preview environment:
 
-1. Go back to Document Authoring.
+1. Go back to Experience Workspace at `da.live`.
    * It may still be open in a browser tab you opened after clicking **View in AEM** after uploading the content.
    * Or navigate to `https://da.live/#/{organization}/{repository}`
-1. Open one of the pages that you previously uploaded to AEM.
+1. Open one of the pages that you previously uploaded.
 1. Click the paper plane icon (top right) and select **Preview**.
    ![Publish to preview](assets/publish-to-preview.png)
 
@@ -236,7 +240,7 @@ Verify that the preview contains both the saved content and the intended code ve
 
 ![Published preview content](assets/published-preview.png)
 
-If your code is on a branch other than the one in the preview URL, change the preview URL to that branch. For JCR-backed content, complete [AEM authoring validation and preview](getting-started-aem-authoring.md#preview-site) instead of the Document Authoring steps above.
+If your code is on a branch other than the one in the preview URL, change the preview URL to that branch. For JCR-backed content, complete [AEM authoring validation and preview](getting-started-aem-authoring.md#preview-site) instead of the Experience Workspace steps above.
 
 ## Retain or Hand Over Your Work {#retain-work}
 
@@ -275,9 +279,9 @@ Where approved by your source-site administrator, the following backend addresse
 
 ## Additional Resources {#additional-resources}
 
-The following documents may be useful as you continue to explore the Experience Modernization agent and its console.
+The following documents may be useful as you continue to explore the Experience Modernization Agent and its console.
 
-* [Experience Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md) - Details on the console, it's views, options, and capabilities
+* [Experience Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md) - Details on the console, its views, options, and capabilities
 * [Prompting Guide for Experience Modernization Agent](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md) - Ideas on how to prompt the agent and what its skills can do
 * [Edge Delivery Services developer tutorial](https://www.aem.live/developer/tutorial) - Useful if you are new to AEM and Edge Delivery Services projects
-* [Document Authoring](https://da.live) - Useful if you are new to Document Authoring for content management
+* [Experience Workspace](https://www.aem.live/docs/ew/about) - The visual authoring UI for document-based EDS content, formerly called Document Authoring

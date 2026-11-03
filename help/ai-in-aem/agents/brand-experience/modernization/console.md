@@ -28,7 +28,7 @@ role_v2:
 
 # Experience Modernization Console {#console-reference}
 
-Reference guide for the Experience Modernization Console interface and capabilities
+The Experience Modernization Console is the web interface for the Experience Modernization Agent (EMA). This reference describes its views, controls, and settings.
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ Reference guide for the Experience Modernization Console interface and capabilit
 
 ## Overview {#overview}
 
-The Experience Modernization Console is a hosted, AI-assisted development environment for Edge Delivery Services, exposed as a web interface at [`aemcoder.adobe.io`.](https://aemcoder.adobe.io) After connecting to their GitHub project, you can immediately start prompting changes in natural language without any further setup or local environment configuration.
+The Experience Modernization Console is a hosted, AI-assisted development environment for Edge Delivery Services (EDS), at [`aemcoder.adobe.io`.](https://aemcoder.adobe.io) The page header shows the title **Adobe Experience Manager**. After you connect your GitHub project, you can start prompting changes in natural language without any further setup or local environment configuration.
 
 >[!TIP]
 >
@@ -49,7 +49,7 @@ Core capabilities of the console:
 * Interactive chat panel with the agent and its skills
 * Workspace and site previews for visual feedback on changes
 * Content file browser and markdown viewer
-* Content upload to [Document Authoring](https://da.live) or package creation and upload for [AEM authoring](getting-started-aem-authoring.md#upload-content), according to project configuration
+* Content upload to the document-based repository that authors edit in [Experience Workspace](https://www.aem.live/docs/ew/about), or package creation and upload for [AEM authoring](getting-started-aem-authoring.md#upload-content), according to project configuration. Experience Workspace was formerly called Document Authoring, and the console still uses that name in some labels. See [Where Content Is Stored and How Authors Edit It](overview.md#content-storage).
 * Code browser and diff viewer for reviewing changes made
 * GitHub integration with ability to create pull requests from changes
 
@@ -137,9 +137,9 @@ The workspace panel displays working content and code for the connected project,
 The **Content views** contain multiple modes for displaying the selected page content. A collapsible file browser displays all the available page content for your site.
 
 * **Preview** (document with magnifying glass icon) to view the rendered HTML content
-* **Document view** (document icon) to view the underlying document authoring content structure, respectively
-* **HTML view** (code icon) to view the raw plain html
-* **Markdown view (AEM authoring)** (paragraph icon) to view the underlying markdown content structure
+* **Document view** (document icon) to view the underlying document-based content structure
+* **HTML view** (code icon) to view the raw HTML
+* **Markdown view (AEM authoring)** (paragraph icon) to view the underlying Markdown content structure
 * **JCR XML view (AEM authoring)** (data icon) to view the resulting JCR XML content structure
 
 ![Content view](assets/content-imported.png)
@@ -150,7 +150,7 @@ The following actions are available in the content views:
 * **Viewport** menu to view the rendered page at **Responsive** width (the default, which fills the panel) or at a fixed **Desktop**, **Tablet**, or **Mobile** size
 * **Inspect mode** (select icon) to add elements of the page to your prompt for additional context
 * **New window** (open in icon) to open the preview URL in a new tab (for a full desktop preview)
-* **Edit in Experience Workspace** (Document Authoring projects) opens the selected page in the Experience Workspace editor in a new tab, previewed with the workspace's current branch. If the page has local changes that are not yet in Document Authoring, the console first offers **Upload & Edit**, so that you don't edit an older version. AEM authoring projects use the Universal Editor instead.
+* **Edit in Experience Workspace** (document-based projects) opens the selected page in the Experience Workspace visual editor, the `da.live` canvas, in a new tab, previewed with the workspace's current branch. If the page has local changes that are not yet in Document Authoring, the console first offers **Upload & Edit**, so that you don't edit an older version. AEM authoring projects use the Universal Editor instead.
 * **Delete** removes the selected page from the workspace. It does not delete remote previewed or published content.
 * **Errors** button (AEM authoring) opens a modal window to view the errors on the selected page.
 * **Upload content** opens the destination-specific upload or package dialog. Check destination paths and overwrite implications before proceeding.
@@ -224,11 +224,11 @@ If you make a change to any value in any section, click **Save** to save those c
   * **Connect / Reconnect**: Initiates GitHub authentication
   * **Switch site**: Replaces the workspace with a different site and repository. Any uncommitted work will be lost.
   * **Logout**: Disconnects from GitHub and revokes the agent's access to your GitHub credentials
-  * **Library URL** - This URL points to a library.json file that defines available blocks, their variations, and example content.
+  * **Library URL** - This URL points to a `library.json` file that defines the blocks available to authors, their variations, and example content.
   * **Site base URL** - The origin URL of the website being migrated
 * **Agent permissions** - Control what the agent may access on your behalf. Each permission is off until you turn it on and save it. The agent uses a permission without receiving the credential itself. See [Security and Data Handling.](overview.md#security)
-  * **Allow LLM to use my Adobe credentials for admin.hlx.page, Document Authoring, and repositories hosted outside GitHub** - When enabled, the agent can read site configuration and metadata, read Document Authoring content, and push to and pull from repositories hosted outside GitHub, using your Adobe credentials. This does not approve publishing: the agent is instructed to keep content edits in the workspace and to upload, preview, or publish only when you ask. Treat this as a safeguard, not a guarantee.
-  * **Custom IMS Token (optional)** - Provide a token to use instead of your session token. Prefer a service account token over a personal token where possible.
+  * **Allow LLM to use my Adobe credentials for admin.hlx.page, Document Authoring, and repositories hosted outside GitHub** - When enabled, the agent can read site configuration and metadata, read Document Authoring content, and push to and pull from repositories hosted outside GitHub, using your Adobe credentials. `admin.hlx.page` is the EDS admin API; `hlx` comes from Project Helix, an earlier name of EDS. This does not approve publishing: the agent is instructed to keep content edits in the workspace and to upload, preview, or publish only when you ask. Treat this as a safeguard, not a guarantee.
+  * **Custom IMS Token (optional)** - Provide a token to use instead of your session token. IMS is Adobe's identity service, which issues the token for your Adobe ID session. Prefer a service account token over a personal token where possible.
   * **Allow LLM to use my git credentials** - Where available, lets the agent push to and pull from your GitHub repositories on your behalf. This grants elevated access; use a scoped token if offered.
 * **Credentials** allows you to specify a personal access token for Figma so the [console can access design blocks for your project.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
   * The token requires the following read-only scopes:

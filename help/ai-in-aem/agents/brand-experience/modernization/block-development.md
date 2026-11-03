@@ -27,15 +27,15 @@ role_v2:
 
 # Create, Update, and Refactor Blocks {#block-development}
 
-Use EMA for ongoing EDS development as well as migration. Begin with the author need and real content, then choose the smallest implementation that supports them.
+Use EMA for ongoing Edge Delivery Services (EDS) development as well as migration. Begin with the author need and real content, then choose the smallest implementation that supports them.
 
-Connect the intended repository and branch, confirm modification permissions, and identify whether authors use document-based or JCR-backed content. Preserve a baseline before changing shared code or content models.
+Connect the intended repository and branch, confirm modification permissions, and identify whether authors use [document-based or JCR-backed content](overview.md#content-storage). Preserve a baseline before changing shared code or content models.
 
 ## Compose Before Creating a Block {#composition}
 
-HTML elements are the basic building units, or atoms: headings, paragraphs, links, lists, and images. Authors should use default content for these where possible. Global styles and CSS custom properties, or design tokens, define shared typography, colors, spacing, and link/button presentation.
+HTML elements are the basic building units, or atoms: headings, paragraphs, links, lists, and images. Authors should use default content, the content outside blocks, for these where possible. Global styles and CSS custom properties, or design tokens, define shared typography, colors, spacing, and link/button presentation.
 
-A block adds a reusable content structure or behavior where default content is insufficient. Keep it lightweight and focused; a visual difference alone does not always need a new block.
+A block adds a reusable content structure or behavior where default content is insufficient. In the HTML that EDS serves, a block is a `div` with the block name as its class. The project's `blocks/<name>/<name>.js` and `blocks/<name>/<name>.css` decorate it in the browser. Keep a block lightweight and focused; a visual difference alone does not always need a new block.
 
 Check the project's conventions before generating code:
 
@@ -72,7 +72,7 @@ Provide the author task, example content, desired behavior/design, target persis
 1. Define a content model that authors can understand. Use headings, links, images, and grouped content naturally rather than exposing CSS or implementation details as fields.
 1. Create representative content first. Include long text, missing optional values, multiple items, and meaningful images/links.
 1. Implement only the needed HTML decoration, CSS, and JavaScript. Reuse project tokens and shared utilities.
-1. For JCR-backed projects, update the source models/component configuration and regenerate aggregates through the project workflow. Check conversion and authoring hints. A document table alone does not establish a working Universal Editor model.
+1. For JCR-backed projects, update the source models/component configuration and regenerate aggregates through the project workflow. A block's model defines the fields authors edit in the Universal Editor. Check conversion and authoring hints. A document table alone does not establish a working Universal Editor model.
 1. [Validate](#validation), then document an authorable example and allowed variants.
 
 For example:
@@ -85,7 +85,7 @@ The output is reusable code, a working target-specific model where needed, and e
 
 * **Block documentation:** When migration creates a block, it generates the block from the content model found on your pages and adds a README for developers and an authoring guide for authors. Review both and keep them current when you change the block.
 * **Sample content:** EMA generates sample content for blocks so that you can preview them with realistic content. In the [site catalog](site-catalog.md#blocks-table), use **View sample** to open a block's sample page.
-* **Block library:** To let authors insert your custom blocks, ask EMA to generate a block library for them, including sample content and the library configuration, for Document Authoring or AEM authoring. Check the result in the authoring experience. The library location is set by **Library URL** in [Settings](console.md#settings-page).
+* **Block library:** To let authors insert your custom blocks, ask EMA to generate a block library for them, including sample content and the library configuration, for Experience Workspace (Document Authoring) or AEM authoring. Check the result in the authoring experience. The library location is set by **Library URL** in [Settings](console.md#settings-page), which points to a `library.json` file that lists the available blocks, their variations, and example content.
 
 ## Update an Existing Block {#update}
 

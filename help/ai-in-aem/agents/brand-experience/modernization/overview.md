@@ -30,9 +30,13 @@ role_v2:
 
 Use the Experience Modernization Agent (EMA) to create, migrate, restyle, and develop websites on [Edge Delivery Services (EDS)](/help/edge/overview.md).
 
+EDS is the AEM service that delivers websites. It serves authored content as plain semantic HTML, and the project's own CSS and JavaScript style and decorate it in the browser. If you already build with HTML, CSS, and JavaScript, most of an EDS project will look familiar. The AEM-specific parts are explained in [Understand Your Project](#project-foundations).
+
 ## Introduction {#introduction}
 
-[As part of the Brand Experience Agent,](/help/ai-in-aem/agents/brand-experience/overview.md) EMA automates repetitive content import, block mapping, styling, and development work. You work in a hosted console, using natural-language requests and previews. No local Docker or command-line environment is required.
+EMA is part of the [Brand Experience Agent.](/help/ai-in-aem/agents/brand-experience/overview.md) It automates repetitive work: importing content, mapping it to blocks, styling, and development. You work in a hosted console, using natural-language requests and previews. You don't need Docker or a local command-line environment.
+
+EMA exists to help you move your web properties onto the current AEM website stack: EDS, with content that authors edit visually in Experience Workspace. That is where you get the full value of the platform: fast pages, lean HTML, CSS, and JavaScript code, reusable blocks, and a site that you can keep changing with the agent's help after launch. EMA also supports EDS with AEM authoring when your project needs it. See [Where Content Is Stored and How Authors Edit It](#content-storage).
 
 EMA also works on existing EDS projects after migration. You can refine a design, create or update blocks, and refactor code. Your permissions, repository policies, and publication workflow determine what you can change and release.
 
@@ -51,18 +55,78 @@ A successful automated run or attractive preview is not, by itself, a production
 
 ## Understand Your Project {#project-foundations}
 
-Keep these identities separate when you start a task:
+An EMA task touches several separate parts of a project. Keep them apart when you start:
 
 * **Source:** The authorized website, content, or design that you provide.
-* **Code:** The EDS repository and working branch that contain styles, scripts, and blocks.
-* **Content destination:** Either document-based persistence, used with Experience Workspace/Document Authoring, or AEM authoring with JCR persistence and the Universal Editor. The source CMS does not determine this choice.
+* **Code:** The EDS Git repository and working branch that contain styles, scripts, and blocks.
+* **Content destination:** Where the migrated content is stored and which editor authors use. Adobe recommends document-based persistence with Experience Workspace for new implementations; AEM authoring with JCR persistence and the Universal Editor is the alternative. See [Where Content Is Stored and How Authors Edit It](#content-storage). The source CMS does not determine this choice.
 * **Preview and publication:** Where you verify the result and, separately, where you release approved changes.
 
 EDS supports complex enterprise websites. Search, commerce, personalization, and other integrations can require project-specific implementation and testing; they are not reasons to restrict EDS to simple or static sites.
 
+### How EDS Pages Work {#eds-basics}
+
+EDS stores code and content in different places. Blocks, styles, and scripts live in a Git repository. Content lives in a separate content source that authors edit. Authors can change pages without a code release, and developers can change code without touching content. It also means that pushing code never saves content, and uploading content never changes code.
+
+When EDS renders a page, it turns the authored content into plain semantic HTML:
+
+* **Default content** is everything outside blocks: headings, paragraphs, lists, images, and links.
+* A **block** is a reusable component, such as a hero or a set of cards. In the HTML, it is a `div` with the block name as its class. The project's `blocks/<name>/<name>.js` and `blocks/<name>/<name>.css` decorate it in the browser.
+* **Sections** split a page into groups of default content and blocks, for example to give part of a page a different background.
+
+Most projects start from the [AEM boilerplate](https://github.com/adobe/aem-boilerplate), which is written in plain JavaScript and CSS. You check changes on the preview site, served on `*.aem.page`. Publishing releases them to the live site on `*.aem.live`.
+
+### Names You May See {#names}
+
+Adobe has renamed several of these products. The table maps the names that appear in these docs, the console, and URLs.
+
+| Name | What it refers to |
+|---|---|
+| Brand Experience Agent | The family of AEM agents that EMA belongs to. |
+| Experience Modernization Agent (EMA) | The agent described in these docs. |
+| Experience Modernization Console | The web interface where you use EMA, at `aemcoder.adobe.io`. |
+| Edge Delivery Services (EDS) | AEM's website delivery service. It was earlier called Project Helix and then Franklin, which is why some hostnames, such as `admin.hlx.page`, contain `hlx`. |
+| Experience Workspace | The visual authoring UI for document-based EDS content, at `da.live`. It was formerly called Document Authoring (DA), and some console labels still use that name. |
+| Universal Editor | Adobe's visual editor for content stored in AEM. EDS projects with AEM authoring use it. |
+| AEM authoring, JCR persistence | EDS with content stored in AEM's Java Content Repository (JCR) on an AEM as a Cloud Service author instance. |
+| IMS | Adobe's identity service, which handles sign-in with your Adobe ID. |
+
+## Where Content Is Stored and How Authors Edit It {#content-storage}
+
+EMA asks where the migrated content should be stored. This is a question about persistence: which repository holds the content. Which editor authors use is a separate question. With either option, authors get a visual editor and EDS delivers the pages.
+
+| | Document-based persistence | AEM authoring with JCR persistence |
+|---|---|---|
+| Where content is stored | The EDS document-based content repository | AEM's JCR, on the AEM as a Cloud Service author stack |
+| Visual editor | Experience Workspace | Universal Editor |
+| Page delivery | EDS | EDS |
+| Recommendation | Recommended for new implementations | Fully supported; choose it when a requirement depends on content staying in the AEM repository |
+
+### Document-Based Persistence with Experience Workspace {#document-based}
+
+With document-based persistence, content is stored as documents in the EDS document-based content repository. "Document-based" describes storage only, not the authoring experience. Authors edit pages visually in [Experience Workspace,](https://www.aem.live/docs/ew/about) the visual authoring UI for EDS. Experience Workspace also offers an AI assistant, collaboration, and AEM Assets integration. It is off by default and is turned on per site or organization. Google Docs and SharePoint remain supported EDS content sources.
+
+>[!NOTE]
+>
+>Experience Workspace is the new name of Document Authoring (DA). The change is an upgrade, not a content migration: existing DA content stays where it is, and the editor still runs at `da.live`. Some console labels and screens still say **Document Authoring** or **DA**. In these docs, they refer to the same document-based repository and its editor.
+
+### AEM Authoring with JCR Persistence {#jcr-persistence}
+
+With AEM authoring, content is stored in AEM's Java Content Repository (JCR), on the AEM as a Cloud Service author stack. This is EDS running on top of the JCR stack. Authors edit pages with the [Universal Editor,](/help/implementing/universal-editor/introduction.md) Adobe's visual editor for content in AEM, and EDS still delivers the pages. The pages are not rendered by HTL and Java as in traditional AEM publishing. Template repositories for this setup, such as `aem-block-collection-xwalk`, use `xwalk` (crosswalk) in their names.
+
+>[!NOTE]
+>
+>In these docs, *AEM authoring* names this persistence option. The *AEM author instance* is the AEM as a Cloud Service environment where that content is stored and edited.
+
+### Adobe's Recommendation {#recommendation}
+
+Document-based authoring used to mean editing in Microsoft Word, Google Docs, or a document-style editor. That limited visual page editing, so teams that needed it often chose AEM authoring. Experience Workspace now gives document-based content a visual editor, so there is little reason left for a brand to avoid it.
+
+For any new EDS implementation, Adobe strongly recommends document-based persistence with Experience Workspace over AEM authoring with the Universal Editor. This includes large websites with thousands of pages. AEM authoring with JCR persistence remains fully supported. Choose it when a specific requirement depends on content staying in the AEM repository. For headless content, delivered through APIs rather than as EDS web pages, the Universal Editor remains the recommended editor.
+
 ## Benefits {#benefits}
 
-The Experience Modernization Agent accelerates the time to value for [Edge Delivery Services](/help/edge/overview.md) adoption and gives you the agility to adapt your brand's web experience.
+EMA shortens the work of adopting [Edge Delivery Services](/help/edge/overview.md) and of changing your site afterward.
 
 * Import representative pages, refine reusable mappings, then apply them to further pages.
 * Use natural language to request changes and inspect the resulting content and code.
@@ -71,9 +135,9 @@ The Experience Modernization Agent accelerates the time to value for [Edge Deliv
 
 ## Site Creation and Migration Skills {#creation-migration}
 
-The Experience Modernization Agent offers skills for creating new Edge Delivery Services sites and migrating existing websites. Any new Edge Delivery Services site or migration is encouraged to take advantage of these skills.
+Skills are the agent's built-in workflows for specific kinds of tasks. Use the creation and migration skills for any new EDS site or migration.
 
-* Imports content from reachable source pages and maps it to default content and blocks.
+* Imports content from reachable source pages and maps it to [default content and blocks.](#eds-basics)
 * Separates content migration from faithful design migration or a deliberate redesign.
 * Supports document-based and AEM authoring projects through their respective setup and delivery workflows.
 
@@ -81,11 +145,11 @@ Detailed skills include page migration, bulk import, design extraction, navigati
 
 ## Figma-Based Migrations and Page Creation {#figma}
 
-In addition to live-site migrations, the Experience Modernization Agent can use Figma as a design source. To use these capabilities, set up your Figma details in [the Experience Modernization Console.](/help/ai-in-aem/agents/brand-experience/modernization/console.md)
+In addition to live-site migrations, EMA can use Figma as a design source. To use these capabilities, set up your Figma details in [the Experience Modernization Console.](/help/ai-in-aem/agents/brand-experience/modernization/console.md)
 
 ### Redesign Migration Using Figma-Derived Blocks {#figma-redesign}
 
-When you are migrating an existing website into a redesigned experience, the agent [first establishes the redesigned block collection from Figma components,](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-redesign-migration) and then runs site migration against the live source website and maps source content into those Figma-derived blocks.
+When you migrate an existing website into a redesigned experience, the agent [first creates the redesigned block collection from Figma components.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-redesign-migration) It then runs site migration against the live source website and maps source content into those Figma-derived blocks.
 
 * **Figma** is the target design and block-library source.
 * **The live website** remains the source of content.
@@ -93,35 +157,35 @@ When you are migrating an existing website into a redesigned experience, the age
 
 ### Create a New Page from Figma {#figma-new-page}
 
-When a page does not already exist on a source website, the agent [generates a new Edge Delivery Services page directly from a Figma frame or page,](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-new-page-from-figma) mapping Figma sections to existing blocks, default content, or new variants. Text and assets come from Figma.
+When a page does not exist on a source website, the agent [generates a new EDS page directly from a Figma frame or page.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-new-page-from-figma) It maps Figma sections to existing blocks, default content, or new variants. Text and assets come from Figma.
 
 For details on these workflows, individual Figma block migration, and prompting tips, see the [Prompting Guide for the Experience Modernization Agent.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md)
 
 ## Block Development Capabilities {#block-development}
 
-The Experience Modernization Agent takes advantage of general Edge Delivery Services development capabilities that serve various development tasks, providing continuous value beyond initial site creation or migration.
+EMA uses general EDS development capabilities, so it remains useful after the initial site creation or migration.
 
-* Follows Content-Driven Development (CDD) methodology for author-friendly content models
-* Leverages the [Block Collection](https://www.aem.live/developer/block-collection) and [Block Party](https://www.aem.live/developer/block-party/) to find reference implementations and best practices
-* Supports testing and debugging workflows for validating changes before deployment
+* Follows Content-Driven Development (CDD): it starts from real content and the author's needs, then writes code, which keeps content models author-friendly.
+* Uses the Adobe-maintained [Block Collection](https://www.aem.live/developer/block-collection) and the community-driven [Block Party](https://www.aem.live/developer/block-party/) to find reference implementations and best practices.
+* Supports testing and debugging workflows for validating changes before deployment.
 
 Detailed capabilities include block development, content modeling, reference block discovery, testing, and debugging.
 
 ## Experience Modernization Console {#console}
 
-The Experience Modernization Agent provides a web-based AI-assisted development environment for Edge Delivery Services, exposed as a web interface at [`aemcoder.adobe.io`.](https://aemcoder.adobe.io)
+The Experience Modernization Console is EMA's web-based, AI-assisted development environment for EDS, at [`aemcoder.adobe.io`.](https://aemcoder.adobe.io)
 
-* The console requires no local setup for users to start prompting changes immediately in natural language.
-* Rapidly perform day-to-day experience development tasks while previewing them via live AEM preview, and sync content to AEM.
+* The console requires no local setup, so you can start prompting changes in natural language right away.
+* You perform day-to-day development tasks, check them in a live AEM preview, and save content to your authoring destination.
 * The console supports enterprise governance through standard GitHub review workflows.
 * The AI agent works without receiving the credentials that you configure. See [Security and Data Handling.](#security)
 
-The self-service Experience Modernization Console is generally available. Interested users can request access to ensure a smooth onboarding experience.
+The self-service Experience Modernization Console is generally available. You can request access to ensure a smooth onboarding experience.
 
-Get started with the Experience Modernization Console!
+To get started with the console:
 
-* If you are modernizing your site by targeting Document Authoring, [get started here.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
-* If you are modernizing your site by targeting AEM authoring, [get started here.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
+* For document-based persistence with Experience Workspace, recommended for new implementations, [use the getting started guide.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
+* For AEM authoring with JCR persistence and the Universal Editor, [use the AEM authoring guide.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
 
 ## Project Documentation Skill {#project-documentation}
 
@@ -129,22 +193,22 @@ Get started with the Experience Modernization Console!
 
 ## Site Catalog Skill {#site-catalog}
 
-The site catalog skill analyzes discovered pages, groups templates and block variants, and provides screenshots and a report for review. Discovery and analysis can be partial. This skill is valuable to:
+The site catalog skill analyzes discovered pages, groups them into templates (pages that share a layout) and block variants, and provides screenshots and a report for review. Discovery and analysis can be partial. The skill helps:
 
 * **Anyone starting a migration project** to establish an inventory of page layouts, block variants, locales, and pages per template, then reconcile it with the agreed site scope
 * **Teams doing bulk imports** to identify which pages share the same layout, manually import and perfect the representative pages first, then bulk-import all remaining pages for that template
 * **Project leads and stakeholders** to understand the scope of the effort
 
-Please see the document [Site Catalog Skill](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md) for more information.
+For details, see [Site Catalog Skill.](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
 
 ## Agentic Outcome Engineer (AOE) Delivery {#aoe-delivery}
 
-For complex migrations or accelerated outcomes, Adobe offers the Agentic Outcome Engineer (AOE) delivery. This is an optional service where Adobe engineers operate the Experience Modernization Agent on your behalf, combining AI automation with expert guidance to deliver production-ready results at scale. For details on AOE delivery, please see the document [AOE Delivery of the Experience Modernization Agent.](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
+For complex migrations or accelerated outcomes, Adobe offers Agentic Outcome Engineer (AOE) delivery. In this optional service, Adobe engineers operate EMA on your behalf and combine its automation with engineering work and expert guidance to deliver production-ready results. For details, see [AOE Delivery of the Experience Modernization Agent.](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
 
 If you are interested in the AOE model for your next migration:
 
-* Please contact your Adobe representative or account team to initiate scoping and scheduling.
-* Adobe will confirm eligibility, estimate the engagement, and propose an engagement plan.
+* Contact your Adobe representative or account team to start scoping and scheduling.
+* Adobe confirms eligibility, estimates the engagement, and proposes an engagement plan.
 
 ## Security and Data Handling {#security}
 
@@ -193,7 +257,7 @@ Use only websites and designs that you are authorized to migrate. The selected w
 
 * In the console, **Protected site authentication** in [Settings](console.md#settings-page), where available, lets the agent reach password-protected source sites using basic, bearer, or custom-header credentials. Auto mode offers its own authentication fields. Neither establishes access to VPN-only sources. Use the credential controls offered by your workflow; do not put secrets in chat.
 * Client-rendered content can be captured when available at the page URL. Content present in the DOM but hidden by CSS can also be extracted. Content requiring additional interactions needs representative checks and may need a different extraction approach.
-* EMA targets EDS, including EDS with JCR-backed authoring. It does not convert a project to HTL-based AEM publishing or an API-only/SPA delivery stack.
+* EMA targets EDS, including EDS with [JCR-backed AEM authoring.](#jcr-persistence) It does not convert a project to HTL-based AEM publishing or an API-only/SPA delivery stack.
 * Faithful design, accessibility, performance, and functional behavior require validation. A visual similarity score is not a production acceptance criterion.
 * Integrations, custom business logic, analytics, experimentation, and source-system features such as inheritance or content fragments need an explicit implementation and migration decision. Do not assume automated page import recreates them.
 

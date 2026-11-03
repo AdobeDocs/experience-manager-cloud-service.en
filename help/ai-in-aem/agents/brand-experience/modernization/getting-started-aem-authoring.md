@@ -28,16 +28,20 @@ role_v2:
 
 # Getting Started with the Experience Modernization Agent for AEM Authoring Projects {#getting-started-aem-authoring}
 
-Use this workflow when EDS content must be stored in AEM's JCR repository and edited with the Universal Editor. EDS remains the delivery target; this is not a migration to HTL-based delivery. The source website's technology does not determine your persistence target.
+>[!NOTE]
+>
+>This path is Edge Delivery Services (EDS) on top of the JCR stack: content is stored in AEM's Java Content Repository (JCR) on your AEM as a Cloud Service author instance, authors edit it with the Universal Editor, and EDS delivers the pages. For new implementations, Adobe recommends document-based persistence with Experience Workspace instead. See [Where Content Is Stored and How Authors Edit It](overview.md#content-storage).
 
-You need console access, repository permissions, and permission to create or update content and assets on the target AEM author instance. Record the AEM host, site identifier, page root, DAM destination, code repository, and working branch before importing. A document-based auto-mode preview is not a substitute for this setup.
+Use this workflow when EDS content must be stored in AEM's JCR repository and edited with the [Universal Editor,](/help/implementing/universal-editor/introduction.md) Adobe's visual editor for content in AEM. EDS remains the delivery target; this is not a migration to HTL-based delivery. The source website's technology does not determine your persistence target.
+
+You need console access, repository permissions, and permission to create or update content and assets on the target AEM author instance. Record the AEM host, site identifier, page root, DAM destination (the AEM Assets folder for images and files), code repository, and working branch before importing. A document-based auto-mode preview is not a substitute for this setup.
 
 ## Create Your Edge Delivery Services Project Repo {#create-repo}
 
 For a new project:
 
-1. Use the [`aem-block-collection-xwalk`](https://github.com/adobe-rnd/aem-block-collection-xwalk) repository as your template rather than the document-based boilerplate.
-1. Verify that `fstab.yaml` points to your AEM host, Git owner, and Git repository. Review and commit the configuration to the branch used for setup.
+1. Use the [`aem-block-collection-xwalk`](https://github.com/adobe-rnd/aem-block-collection-xwalk) repository as your template rather than the document-based boilerplate. Templates for AEM authoring have `xwalk` (crosswalk) in their names.
+1. Verify that `fstab.yaml`, the file that points EDS to the site's content source, refers to your AEM host, Git owner, and Git repository. Review and commit the configuration to the branch used for setup.
    * See [Configure content source](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md) for instructions.
 1. Follow the [Universal Editor tutorial](https://www.aem.live/developer/ue-tutorial) to set up your repo.
    * Stop when you are asked to create a site in AEM.
@@ -70,7 +74,7 @@ Once setup is complete, connect the project and migrate one representative page.
 Follow these steps from the standard guide.
 
 1. [Open the Experience Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#open-console)
-1. [Connect Your GitHub Repository](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#connect-repo)
+1. [Connect Your Site](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#connect-repo)
 1. [Start Prompting](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#start-prompting), explicitly requesting JCR-backed AEM authoring output.
 
 For example: "Migrate only `https://www.example.com/about` to the agreed page root in this AEM authoring project. Preserve content and links. Reuse the project's block models and validate JCR conversion. Do not upload, push, or publish."
@@ -81,9 +85,9 @@ Once you complete those steps to migrate the content, continue with the followin
 
 ## Validate Content {#validate-content}
 
-Validate the selected page in the content panel. Use **Markdown view**, **JCR XML view**, and **Errors** to check content and conversion. Use **Add to chat** to target fixes to a page, parser, or transformer.
+Validate the selected page in the content panel. Use **Markdown view**, **JCR XML view**, and **Errors** to check content and conversion. Use **Add to chat** to target fixes to a page, parser, or transformer. Parsers and transformers are the import scripts that EMA generates: a parser converts one block's source HTML, and a transformer cleans up the whole page.
 
-Ask the agent to check that the source block models, component definitions, and generated aggregate configuration agree. Update the source configuration through the project's generation workflow rather than fixing only a generated file. Check field mappings and authoring hints, page paths, image references, and the intended site/DAM destinations.
+In AEM authoring projects, each block also has a model: configuration that defines the fields authors edit for that block in the Universal Editor. Ask the agent to check that the source block models, component definitions, and generated aggregate configuration agree. Update the source configuration through the project's generation workflow rather than fixing only a generated file. Check field mappings and authoring hints, page paths, image references, and the intended site/DAM destinations.
 
 An HTML preview can look correct while the converted content is not authorable. Resolve conversion errors on a representative page before creating a larger package.
 
@@ -124,7 +128,7 @@ Review and [push the matching code and configuration](getting-started.md#push-co
 1. In AEM Sites, locate the imported page under the agreed site root.
 1. Open it in the Universal Editor. Verify that expected fields and blocks can be selected and edited, not merely rendered.
 1. Change representative text and an image, save, and reopen the page. Confirm that the content and asset references persist.
-1. Use the project's configured EDS preview workflow. Verify the page against the intended code branch and check responsive layout, links, and images.
+1. Use the project's configured EDS preview workflow (preview pages are served on `*.aem.page`). Verify the page against the intended code branch and check responsive layout, links, and images.
 1. For production, complete the [site acceptance checks](production-migration.md#acceptance) and follow your AEM/EDS publication process.
 
 Successful package upload, successful authoring, preview, and publication are distinct checkpoints. If editing fails, revisit model mappings and generated configuration; do not accept a static preview as completion.
