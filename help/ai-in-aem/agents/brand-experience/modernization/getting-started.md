@@ -44,15 +44,37 @@ Before importing, identify the authorized source URLs, the pages to include, and
 
 Use a small, representative set of your own pages so that your first edit is useful beyond a sample tour.
 
-1. If your account has access to **auto mode**, open that entry and provide your site URL or an explicit page list. Review the scope, settings, and limits displayed before starting. Use the supported source-authentication controls if needed, not chat, to provide credentials.
-1. Start the run and review its status and result. Inspect the returned preview, repository, report, and errors where available. A failed or partial run is not proof that all requested pages migrated.
-1. Open the resulting project in the console through the continuation offered by the run, or [connect the resulting EDS site](#connect-repo). If auto mode is unavailable, use the guided [single-page import](#start-prompting) below. Auto mode is not a prerequisite for trying your content.
+1. If your account has access to **auto mode**, open that entry and provide your site URL, or choose selected pages and list their URLs. Review the scope, settings, and [limits](#auto-mode-limits) displayed before starting. Use the authentication fields offered by auto mode, not chat, to provide credentials for a protected source site.
+1. Start the run. A run can take several hours; you receive an email when it finishes, and you can leave the page in the meantime. Review its status and result, including the preview, repository, report, and errors where available. A failed or partial run is not proof that all requested pages migrated.
+1. Open the resulting site with **Open site**. To continue in your own repository, use [**Make it yours**](#make-it-yours), or [connect an EDS site](#connect-repo) you already own. If auto mode is unavailable, use the guided [single-page import](#start-prompting) below. Auto mode is not a prerequisite for trying your content.
 1. Ask for one useful change, such as correcting a heading or updating a call to action. Check it on the intended page and at mobile width.
 1. [Save content and code separately](#upload-content), then reopen the remote document and the matching branch preview. Record the project, repository, branch, content location, and preview URL so that you can return.
 
 The trial is complete when the content is editable and the useful change is retained, not merely when a preview link exists. A static design preview does not demonstrate remote authorable content.
 
 Auto-mode access does not imply a universal free entitlement, page allowance, or retention period. Check your account's displayed limits and save work you want to keep. Use the [guided AEM authoring path](getting-started-aem-authoring.md) for JCR-backed delivery; do not assume auto-mode results use that target.
+
+#### Auto-Mode Limits {#auto-mode-limits}
+
+Auto mode limits each account by the number of pages per migration, the number of migrations, and how many migrations can run at the same time. The auto-mode page shows the limits that apply to you before you start:
+
+* A full-site migration uses the page allowance for your account. Where your account permits it, you can set how many pages the migration includes.
+* When you select pages, a counter shows how many of the allowed pages you have selected. A run with more pages than your account allows cannot start.
+* If you have used all the migrations your account allows, or already have as many migrations running as allowed, auto mode tells you so. Wait for a run to finish, or request more.
+* Use **Ask for a higher limit**, or the help button in the header, to ask the support team for more pages or migrations.
+
+To stop a run, use **Cancel migration**. A cancelled run can't be resumed; you would start a new migration.
+
+#### Make It Yours {#make-it-yours}
+
+An auto-mode run creates its site in an Adobe-managed location. To keep working on it in your own EDS site, select **Make it yours** on the finished run.
+
+1. Choose the destination site. If you are not yet connected to GitHub, the console asks you to connect first.
+1. Review the destination repository, preview URL, and the new branch that will receive the code. Choose whether to overwrite existing pages and whether to preview the transferred pages.
+1. Select **Start transfer** and follow its progress. The code is placed on a new branch, and the content is copied to the destination content location.
+1. Select **Open in EMA** to continue in the console, or **Edit Site** to edit the content.
+
+Review and merge the new branch according to your repository policy. Transferring does not publish the site.
 
 ### Create a Customer Demo {#customer-demo}
 
@@ -92,10 +114,13 @@ A good demo presents complete, branded pages and working demo paths. It does not
 
 1. Navigate to [`aemcoder.adobe.io`.](https://aemcoder.adobe.io)
 1. Log in with your Adobe ID.
+   * Use an account that belongs to your company's Adobe organization. A personal Adobe ID that isn't part of an organization can't be used; the console explains this and lets you **Use a different account**. If you don't have a company account, ask your Adobe account team to add you to the organization.
+
+Your workspace pauses after a period of inactivity to save resources. When you return, the console shows **Your workspace is paused**; click **Wake up** and wait a few minutes while the workspace is restored.
 
 ## Demo Mode {#demo-mode}
 
-If the console presents demo mode, you can optionally explore its sample project and try importing additional pages. A banner indicates that you are in demo mode. Sample exploration is not required before trying your own content.
+If the console opens in demo mode, you can optionally explore its sample project and try importing additional pages. A **Demo site** button in the header indicates that you are in demo mode. Work in the demo site isn't saved, and the demo site can't push code to GitHub or content to Document Authoring. Sample exploration is not required before trying your own content.
 
 ![Demo mode](assets/demo-mode.png)
 
@@ -103,7 +128,7 @@ If the console presents demo mode, you can optionally explore its sample project
 
 Connect a new or existing EDS project. If you have local workspace changes to keep, save content and push code before replacing the workspace.
 
-1. Click **Switch site** in the demo mode banner, or use the repository connection in [Settings](console.md#settings-page).
+1. Click **Demo site** in the header and then **Switch site**, or use **Switch site** in [Settings](console.md#settings-page).
 1. This will prompt you to authorize the AEM Code Connector app using your GitHub credentials. Click **Authorize AEM Code Connector**.
 1. Back in the console, specify the Preview URL of the site. The preview URL can be obtained by previewing any document in the site, or by constructing it from branch, site-name and org. The system will retrieve the associated Github Project automatically. Alternatively, you can search through your authorized GitHub projects to find a site.
    ![Connecting to GitHub project](assets/connect-site-and-github.png)
@@ -154,7 +179,7 @@ The result is working content and code in the console. It is not yet evidence th
 
 For document-based persistence, upload to [Document Authoring](https://da.live). Code push does not save these documents. Confirm the organization, repository, destination paths, and permission to replace any existing content before uploading.
 
-1. Make sure you are in a **Content** view and then click the **Upload content** button on the top-right.
+1. Make sure you are in a **Content** view and then click the **Upload content** button on the top-right. Alternatively, use **Sync** > **Push** > **Content** in the workspace header to upload all pending pages.
    * By default you are in **Content** view when entering the console.
    * Your view is indicated by the selected View Picker item in the workspace area of the console.
 1. The **Upload content** dialog opens with the destination org and repo pre-filled from your project settings.
@@ -163,7 +188,7 @@ For document-based persistence, upload to [Document Authoring](https://da.live).
 1. Select the files you want to upload and click **Upload**.
    ![Upload content dialog](assets/upload-content.png)
 1. The console indicates upload process by disabling the **Upload** button.
-1. Once complete, a notification appears at the bottom of the console.
+1. Once complete, the dialog shows how many files were uploaded. You can then preview, or preview and publish, the uploaded pages. This runs as a tracked job that continues if you close the dialog; retry any pages that fail.
    ![View in AEM](assets/view-in-aem.png)
 
 To access the uploaded content in Document Authoring, optionally click **View in AEM** in the notification when the upload completes, or navigate to `https://da.live/#/{organization}/{repository}`.
@@ -180,11 +205,11 @@ Open an uploaded document, make an edit, save, and reopen it to check authorabil
 
 Review the code diff and run the project's checks before pushing. Use a pull request for work requiring review. Repository protections, not an optional planning conversation, enforce branch rules.
 
-1. Switch to **Changes** view (branch icon in the view picker).
+1. Optionally, switch to **Changes** view (branch icon in the view picker) to review the diff.
    ![Code view](assets/code-view-git-changes.png)
-1. In the list of files changed, if some files show up as untracked, click their `+` button to stage them.
-1. Click **Push** button on the top-right.
-1. In the **Push changes** dialog, choose to push changes to a new PR (default) or the current branch and click **Confirm** to push.
+1. Open **Sync** in the workspace header and select **Push** > **Code**.
+1. In the **Stage changes** dialog, stage the files you want to push and click **Continue**.
+1. In the **Push changes** dialog, enter a commit message. Choose to create a new PR (default) or push to the current branch and click **Confirm** to push.
    * Push directly to the current branch only when your project's policy permits it and you intend to change that branch.
 1. Once complete, a notification appears at the bottom of the console.
    ![View PR](assets/view-pr.png)

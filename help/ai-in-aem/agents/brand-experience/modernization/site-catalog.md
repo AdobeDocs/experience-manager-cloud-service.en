@@ -43,13 +43,18 @@ The skill supports migration planning in the following ways:
 
 ## Invoking {#invoking}
 
-[In the Experience Modernization Console,](/help/ai-in-aem/agents/brand-experience/modernization/console.md) ask the agent to scope your site.
-
 Confirm source authorization, reachability, and the intended project first. Cataloging analyzes the source; it does not upload content or publish a target site.
 
-`scope site https://www.example.com`
+[In the Experience Modernization Console,](/help/ai-in-aem/agents/brand-experience/modernization/console.md) start planning in either of the following ways.
 
-This also turns on the [site planning UI](#planning-ui) for your project.
+* Open the [site planning UI](#accessing-planning-ui). If the project has no plan yet, it shows **Plan your migration**. Enter the site's address and select **Plan my migration**. Start with the home page; the agent finds the other pages.
+* Ask the agent in the chat:
+
+  `scope site https://www.example.com`
+
+While planning runs, the site planning UI shows **Planning your migration** with the current step, the number of pages found and read, and the elapsed time. You can begin reviewing results before the run completes.
+
+To stop a run, use the stop control in the chat. The site planning UI then shows **Planning stopped before it finished**, and you can pick up where it left off or start over. The chat thread shows what happened before it stopped.
 
 The skill's workflow has four phases that run in sequence:
 
@@ -94,15 +99,15 @@ You can open the site planning UI in any of the following ways.
 
 * In the workspace panel header, open the view picker and select **Planning** under **Project**.
 * Navigate directly to [`https://aemcoder.adobe.io/chat/project/plan`](https://aemcoder.adobe.io/chat/project/plan).
-* When a site catalog run completes, select **View report** in the **Site scope complete** notification.
+* When a run completes, select **View plan** in the **Your migration plan is ready** notification.
 
 ![Selecting the Planning view from the view picker](assets/site-planning-view-picker.png)
 
 >[!NOTE]
 >
->If you have not yet cataloged a site in the current project, the site planning UI displays **No scope report yet**. [Invoke the site catalog skill](#invoking) to analyze a site, then review the results here.
+>If you have not yet cataloged a site in the current project, the site planning UI asks for the site's address so that you can [start planning](#invoking).
 
-The site planning UI updates as pages are analyzed, so you can begin reviewing results before the run completes.
+The site planning UI updates as pages are analyzed and imported, so you can begin reviewing results before the run completes.
 
 ### Overview Dashboard {#dashboard}
 
@@ -143,6 +148,13 @@ The **Code** column shows whether code has been generated for the block.
 |**Invalid name**|The block or variant name can't be used as a block folder or CSS class name. [Rename the block or variant](#planning-actions) to fix it.|
 |**Unclassified**|The block type has not been identified, so no code will be generated for it. Use **Classify block type** to fix it.|
 
+The **Confidence** column shows how sure the agent is that a block variant was grouped and classified correctly.
+
+* **High** or **Low** is set by cataloging. Select the information icon next to the level to read the reason. Review **Low** variants first.
+* **User** means that a person confirmed or changed the variant, for example through a [guided review](#review-catalog) or a [refining action](#planning-actions).
+
+After code has been generated with sample content, use **View sample** in a block's actions menu to open the block's sample page in the preview.
+
 The same blocks table is also shown in template and page details, scoped to that template or page.
 
 ### Template Details {#template-details}
@@ -150,6 +162,16 @@ The same blocks table is also shown in template and page details, scoped to that
 Selecting a template opens its details, which list every page that uses the template with the page path, title, and number of blocks. Select a page path to open its [page details](#page-details). Use the **Pages** / **Blocks** toggle to switch to the blocks used by that template.
 
 ![Template details in the site planning UI](assets/site-planning-template-details.png)
+
+Once pages of a template are being migrated, the template shows how many pages were imported and how many failed, and each page shows its import status. The status updates while the import runs.
+
+|Status|Meaning|
+|---|---|
+|**Imported**|The page was imported. Select the label to open the imported page in the preview.|
+|**Import failed**|The import failed. The reason is shown under the status.|
+|**Not imported**|The page is part of the migration but has not been imported yet.|
+
+A dash means the page's template is not part of the current migration.
 
 ### Page Details {#page-details}
 
@@ -175,6 +197,18 @@ At least one instance must remain in the original variant. To move every instanc
 ### Failed URLs {#failed-urls}
 
 The failed URLs list shows each page that could not be analyzed, along with the reason it failed and when. Non-page files such as images and documents that were skipped are counted separately and are not listed.
+
+### Review the Catalog {#review-catalog}
+
+When planning finishes, the agent offers to **Review scoping results**. Use it as your starting point for checking the catalog, especially for large sites.
+
+1. Choose **Review each step** to answer the agent's questions, or **Autopilot** to let it decide.
+1. The agent first fixes issues that have only one sensible answer and tells you what it changed. For example, it moves outliers to the variant where they fit, turns lone links and buttons into page text, combines look-alike variants, and fixes invalid names.
+1. It then asks you about the remaining items one at a time, starting with clear mistakes. Each question shows the screenshots and the agent's suggestion, and you answer with one click. Ask why if you want its reasoning.
+1. Select **Finish for me** on any step to let the agent complete the rest of the review without more questions.
+1. The review ends with a short report of what changed and what to check in the plan. Items the agent is still unsure about are left unchanged and flagged. Select **Review remaining items** to continue with them, or **Start site migration** when the catalog is ready.
+
+The review changes the catalog only. It does not import pages or generate code.
 
 ### Refining the Catalog {#planning-actions}
 
@@ -202,9 +236,10 @@ Grouping and naming corrections update catalog metadata and block-library organi
 The site catalog skill is part of the recommended approach for migrating a full site.
 
 1. Run the site catalog skill to get the full template catalog and block catalog.
-1. Open the [site planning UI](#planning-ui) to review the templates and blocks the agent identified and correct any that were identified incorrectly.
+1. Open the [site planning UI](#planning-ui) to review the templates and blocks the agent identified and correct any that were identified incorrectly. The [guided review](#review-catalog) is the quickest way to start.
+1. Generate code for the blocks you need. You can select several blocks and generate code for only those.
 1. For each template, open its [template details](#template-details) and use **Migrate page to AEM** on one or two representative pages. Refine the import until the output is correct.
-1. Use **Migrate template to AEM** to import the remaining pages that use that template.
+1. Use **Migrate template to AEM** to import the remaining pages that use that template. Follow each page's [import status](#template-details) and retry failed pages after correcting the cause.
 1. Repeat for each template until the full site is migrated.
 
 Before reimporting, preserve or reconcile author edits in affected pages. If analysis fails, inspect the [failed URLs](#failed-urls), correct source access or extraction issues, and retry the affected scope. If mappings are wrong, refine a representative first rather than repeat a large import unchanged.

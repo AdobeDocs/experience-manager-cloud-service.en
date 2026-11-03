@@ -351,6 +351,8 @@ user-guide-title: AEM as a Cloud Service
       + [2024.08.13 Release Notes](/help/release-notes/universal-editor/2024/2024-08-13.md)
       + [2024.07.28 Release Notes](/help/release-notes/universal-editor/2024/2024-07-28.md)
       + [2024.06.28 Release Notes](/help/release-notes/universal-editor/2024/2024-06-28.md)
+  + Release Notes for Experience Modernization Agent {#modernization-agent}
+    + [Current Release Notes for Experience Modernization Agent](/help/release-notes/modernization-agent/current.md)
   + [What is New?](/help/release-notes/what-is-new.md)
   + [Notable Changes in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
   + [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md)

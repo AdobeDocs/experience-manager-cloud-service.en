@@ -115,6 +115,8 @@ Package upload writes remote AEM content. Confirm the selected pages, host, site
 
 For a failed package or image upload, retain the log and selected paths. Correct conversion, credentials, permissions, or destinations as indicated, then retry the affected scope. A package download alone does not import content into AEM. Confirm which pages and assets arrived before retrying to avoid unintended replacements.
 
+If the AEM as a Cloud Service environment is hibernated, the upload dialog and Settings say so and link to the Developer Console. De-hibernate the environment there, then retry the upload. See [De-hibernate a sandbox program from the Developer Console.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md#de-hibernation-introduction)
+
 Review and [push the matching code and configuration](getting-started.md#push-code-changes) through your project's repository policy. This is separate from package upload.
 
 ## Validate Authoring and Preview {#preview-site}

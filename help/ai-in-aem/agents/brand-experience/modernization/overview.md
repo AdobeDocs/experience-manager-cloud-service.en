@@ -149,7 +149,7 @@ If you are interested in the AOE model for your next migration:
 
 Use only websites and designs that you are authorized to migrate. The selected workflow must be able to reach and read the source.
 
-* Auto-mode source authentication supports supported same-host HTTPS paths. This does not establish access to VPN-only sources or authentication support in every catalog and guided workflow. Use the credential controls offered by your workflow; do not put secrets in chat.
+* In the console, **Protected site authentication** in [Settings](console.md#settings-page), where available, lets the agent reach password-protected source sites using basic, bearer, or custom-header credentials. Auto mode offers its own authentication fields. Neither establishes access to VPN-only sources. Use the credential controls offered by your workflow; do not put secrets in chat.
 * Client-rendered content can be captured when available at the page URL. Content present in the DOM but hidden by CSS can also be extracted. Content requiring additional interactions needs representative checks and may need a different extraction approach.
 * EMA targets EDS, including EDS with JCR-backed authoring. It does not convert a project to HTL-based AEM publishing or an API-only/SPA delivery stack.
 * Faithful design, accessibility, performance, and functional behavior require validation. A visual similarity score is not a production acceptance criterion.
@@ -160,3 +160,5 @@ Access to auto mode and optional design capabilities can differ from access to t
 ## Next Steps {#next-steps}
 
 Choose a task above, then use [Getting Started](getting-started.md) for shared console setup. For an existing EDS project, connect its repository and start with the relevant development or restyling task; a new migration is not required.
+
+To learn what changed in recent versions of the console, see the [Experience Modernization Agent release notes.](/help/release-notes/modernization-agent/current.md)

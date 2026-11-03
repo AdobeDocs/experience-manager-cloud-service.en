@@ -81,6 +81,12 @@ For example:
 
 The output is reusable code, a working target-specific model where needed, and editable examples—not just a screenshot or generated files.
 
+### What EMA Provides With a Block {#block-deliverables}
+
+* **Block documentation:** When migration creates a block, it generates the block from the content model found on your pages and adds a README for developers and an authoring guide for authors. Review both and keep them current when you change the block.
+* **Sample content:** EMA generates sample content for blocks so that you can preview them with realistic content. In the [site catalog](site-catalog.md#blocks-table), use **View sample** to open a block's sample page.
+* **Block library:** To let authors insert your custom blocks, ask EMA to generate a block library for them, including sample content and the library configuration, for Document Authoring or AEM authoring. Check the result in the authoring experience. The library location is set by **Library URL** in [Settings](console.md#settings-page).
+
 ## Update an Existing Block {#update}
 
 Provide the block name, current examples/variants, requested change, and compatibility requirements.
