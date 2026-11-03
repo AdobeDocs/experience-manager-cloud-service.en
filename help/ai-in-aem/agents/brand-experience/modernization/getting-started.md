@@ -30,7 +30,9 @@ role_v2:
 
 Use your brand's content to try Edge Delivery Services (EDS) and the Experience Modernization Agent (EMA), or prepare a few customer demo pages. For a full-site release, use the [production migration guide](production-migration.md) after validating representative pages.
 
-This guide covers document-based persistence: content is stored in the EDS document-based repository and authors edit it visually in Experience Workspace, the visual authoring UI for EDS. Adobe strongly recommends this setup for new implementations. If your content must be stored in AEM's JCR repository and edited with the Universal Editor, follow the [AEM authoring guide](getting-started-aem-authoring.md) for the steps that differ. If AEM or EDS terms are new to you, read [How EDS Pages Work](overview.md#eds-basics) and [Where Content Is Stored and How Authors Edit It](overview.md#content-storage) first. Older articles may call EDS Helix or Franklin, the project names under which its architecture was developed.
+This guide covers document-based persistence. Content is stored in the EDS document-based repository, and authors edit it visually in Experience Workspace, the visual authoring UI for EDS. Adobe strongly recommends this setup for new implementations.
+
+If your content must be stored in AEM's JCR repository and edited with the Universal Editor, follow the [AEM authoring guide](getting-started-aem-authoring.md) for the steps that differ. If AEM or EDS terms are new to you, read [How EDS Pages Work](overview.md#eds-basics) and [Where Content Is Stored and How Authors Edit It](overview.md#content-storage) first. Older articles may call EDS Helix or Franklin, the project names under which its architecture was developed.
 
 >[!NOTE]
 >
@@ -46,30 +48,35 @@ Before importing, identify the authorized source URLs, the pages to include, and
 
 Use a small, representative set of your own pages so that your first edit is useful beyond a sample tour.
 
-1. If your account has access to **auto mode**, open that entry and provide your site URL, or choose selected pages and list their URLs. Auto mode runs a migration without step-by-step prompting. Review the scope, settings, and [limits](#auto-mode-limits) displayed before starting. Use the authentication fields offered by auto mode, not chat, to provide credentials for a protected source site.
-1. Start the run. A run can take several hours; you receive an email when it finishes, and you can leave the page in the meantime. Review its status and result, including the preview, repository, report, and errors where available. A failed or partial run is not proof that all requested pages migrated.
-1. Open the resulting site with **Open site**. To continue in your own repository, use [**Make it yours**](#make-it-yours), or [connect an EDS site](#connect-repo) you already own. If auto mode is unavailable, use the guided [single-page import](#start-prompting) below. Auto mode is not a prerequisite for trying your content.
+The steps below start with Auto mode, which migrates a site, or a list of pages you select, without step-by-step prompting. Auto mode is in early access. If you don't have access yet, the Auto mode page at [`aemcoder.adobe.io/auto`](https://aemcoder.adobe.io/auto) shows a form to request it. Auto mode is not a prerequisite for trying your content: without it, import a few pages with the guided [single-page import](#start-prompting) and continue from step 5.
+
+1. Open Auto mode and provide your site URL, or choose selected pages and list their URLs. Review the scope, settings, and [limits](#auto-mode-limits) shown before you start.
+   * For a protected source site, enter credentials in the authentication fields that Auto mode offers, not in chat.
+1. Start the run. A run can take several hours. You can leave the page; you receive an email when the run finishes.
+1. Review the run's status and result, including the preview, repository, report, and errors where available. A failed or partial run is not proof that all requested pages migrated.
+1. Open the resulting site with **Open site**. To continue in your own repository, use [**Make it yours**](#make-it-yours), or [connect an EDS site](#connect-repo) you already own.
 1. Ask for one useful change, such as correcting a heading or updating a call to action. Check it on the intended page and at mobile width.
-1. [Upload the content and push the code separately](#upload-content), then reopen the document in Experience Workspace and the matching branch on the preview site. Record the project, repository, branch, content location, and preview URL so that you can return.
+1. [Upload the content and push the code separately](#upload-content). Then reopen the document in Experience Workspace and the matching branch on the preview site.
+1. Record the project, repository, branch, content location, and preview URL so that you can return.
 
 The trial is complete when the content is editable and the useful change is retained, not merely when a preview link exists. A static design preview does not demonstrate remote authorable content.
 
-Auto-mode access does not imply a universal free entitlement, page allowance, or retention period. Check your account's displayed limits and save work you want to keep. Use the [guided AEM authoring path](getting-started-aem-authoring.md) for JCR-backed delivery; do not assume auto-mode results use that target.
+Access to Auto mode does not establish a general entitlement, page allowance, or retention period. Check the limits shown for your account and save work you want to keep. Auto mode produces document-based content. For JCR-backed delivery, use the [guided AEM authoring path](getting-started-aem-authoring.md).
 
-#### Auto-Mode Limits {#auto-mode-limits}
+#### Auto Mode Limits {#auto-mode-limits}
 
-Auto mode limits each account by the number of pages per migration, the number of migrations, and how many migrations can run at the same time. The auto-mode page shows the limits that apply to you before you start:
+Auto mode limits each account by the number of pages per migration, the number of migrations, and how many migrations can run at the same time. The Auto mode page shows the limits that apply to you before you start:
 
-* A full-site migration uses the page allowance for your account. Where your account permits it, you can set how many pages the migration includes.
+* A full-site migration uses the page allowance for your account. If your account allows it, you can choose how many pages to migrate.
 * When you select pages, a counter shows how many of the allowed pages you have selected. A run with more pages than your account allows cannot start.
-* If you have used all the migrations your account allows, or already have as many migrations running as allowed, auto mode tells you so. Wait for a run to finish, or request more.
+* If you have used all the migrations your account allows, or already have as many migrations running as allowed, Auto mode tells you so. Wait for a run to finish, or request more.
 * Use **Ask for a higher limit**, or the help button in the header, to ask the support team for more pages or migrations.
 
 To stop a run, use **Cancel migration**. A cancelled run can't be resumed; you would start a new migration.
 
 #### Make It Yours {#make-it-yours}
 
-An auto-mode run creates its site in an Adobe-managed location. To keep working on it in your own EDS site, select **Make it yours** on the finished run.
+An Auto mode run creates its site in an Adobe-managed location. To keep working on it in your own EDS site, select **Make it yours** on the finished run.
 
 1. Choose the destination site. If you are not yet connected to GitHub, the console asks you to connect first.
 1. Review the destination repository, preview URL, and the new branch that will receive the code. Choose whether to overwrite existing pages and whether to preview the transferred pages.
@@ -81,7 +88,7 @@ Review and merge the new branch according to your repository policy. Transferrin
 ### Create a Customer Demo {#customer-demo}
 
 1. Select authorized customer-owned or brand-owned pages and the audience's demo goal. Include representative content rather than only the easiest page.
-1. Use auto mode where available, or [import the selected pages](#start-prompting). Name the exact page list; a request for one page is not a full-site migration.
+1. Use Auto mode if your account has access, or [import the selected pages](#start-prompting). Name the exact page list; a request for one page is not a full-site migration.
 1. Apply the source design, or follow [restyling during migration](restyling.md#during-migration). Complete the navigation, footer, and assets needed for the demo path.
 1. Check text, imagery, links, layout, and mobile behavior. Walk the actual demo sequence. Identify mocked interactions, unavailable integrations, and pages outside scope.
 1. Retain the work as described for a trial. Hand over exact preview links, their source-page mapping, and the known gaps.
@@ -263,9 +270,11 @@ If a change is missing, check each location separately: the console workspace, u
 
 Before reset, discard, replacement, or overwrite, preserve the affected work. Recover code through your repository workflow and restore content separately through the authoring system's available recovery process. A code revert alone does not undo remote document writes.
 
+If a project created with Auto mode becomes slow or restarts in the console after a large migration, check its repository for a `stardust/current/` working folder. Delete it, commit it, or add it to `.gitignore`.
+
 ### Source Sites with Bot Protection {#bot-protection}
 
-Bot protection in a content delivery network (CDN) or web application firewall (WAF) can block or challenge automated access to a source site. This can affect URL discovery, the site catalog, page capture, and import in any workflow, not only auto mode. Typical signs are access-denied errors such as HTTP 403, 429, or 503, URLs missing after discovery, failed pages, or a challenge or verification page captured instead of the page content.
+Bot protection in a content delivery network (CDN) or web application firewall (WAF) can block or challenge automated access to a source site. This can affect URL discovery, the site catalog, page capture, and import in any workflow, not only Auto mode. Typical signs are access-denied errors such as HTTP 403, 429, or 503, URLs missing after discovery, failed pages, or a challenge or verification page captured instead of the page content.
 
 Migrate only sites that you own or are authorized to migrate. Arrange access with the site's administrator rather than working around the protection:
 

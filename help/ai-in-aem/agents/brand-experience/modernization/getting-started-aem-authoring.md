@@ -34,7 +34,7 @@ role_v2:
 
 Use this workflow when a requirement depends on content staying in the AEM repository. The [Universal Editor](/help/implementing/universal-editor/introduction.md) is Adobe's visual editor for content in AEM. This is not a migration to HTL-based delivery, and the source website's technology does not determine your persistence target.
 
-You need console access, repository permissions, and permission to create or update content and assets on the target AEM author instance. Record the AEM host, site identifier, page root, DAM destination (the AEM Assets folder for images and files), code repository, and working branch before importing. A document-based auto-mode preview is not a substitute for this setup.
+You need console access, repository permissions, and permission to create or update content and assets on the target AEM author instance. Record the AEM host, site identifier, page root, DAM destination (the AEM Assets folder for images and files), code repository, and working branch before importing. A document-based Auto mode preview is not a substitute for this setup.
 
 ## Create Your Edge Delivery Services Project Repo {#create-repo}
 

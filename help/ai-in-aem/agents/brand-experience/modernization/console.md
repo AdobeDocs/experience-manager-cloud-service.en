@@ -28,7 +28,7 @@ role_v2:
 
 # Experience Modernization Console {#console-reference}
 
-The Experience Modernization Console is the web interface for the Experience Modernization Agent (EMA). This reference describes its views, controls, and settings. The console works on a hosted copy of your project, which these docs call the console workspace. It is unrelated to Experience Workspace, the authoring UI; see [Names You May See](overview.md#names).
+The Experience Modernization Console is the web interface for the Experience Modernization Agent (EMA): the browser UI where you work with EMA. This reference describes its views, controls, and settings. The console works on a hosted copy of your project, which these docs call the console workspace. It is unrelated to Experience Workspace, the authoring UI; see [Names You May See](overview.md#names).
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ The Experience Modernization Console is the web interface for the Experience Mod
 
 ## Overview {#overview}
 
-The Experience Modernization Console is a hosted, AI-assisted development environment for Edge Delivery Services (EDS), at [`aemcoder.adobe.io`.](https://aemcoder.adobe.io) The page header shows the title **Adobe Experience Manager**. After you connect your GitHub project, you can start prompting changes in natural language without any further setup or local environment configuration.
+The Experience Modernization Console is a hosted, AI-assisted development environment for Edge Delivery Services (EDS), at [`aemcoder.adobe.io`.](https://aemcoder.adobe.io) The page header shows the title **Adobe Experience Manager**. After you connect your GitHub project, you can start prompting changes in natural language without any further setup or local environment configuration. If you are new to the console, ask the agent in the chat for a tour of the console.
 
 >[!TIP]
 >
@@ -46,12 +46,14 @@ The Experience Modernization Console is a hosted, AI-assisted development enviro
 
 Core capabilities of the console:
 
-* Interactive chat panel with the agent and its skills
-* Previews of the console workspace and of the EDS preview site, for visual feedback on changes
-* Content file browser and markdown viewer
+* Interactive chat panel, where you describe tasks to the agent and its skills in natural language
+* Previews of the console workspace and of the EDS preview site, so that you can check changes visually before and after you upload them
+* Content file browser and [content views](#content-view) that show a page as a rendered preview, a document, Markdown, JCR XML, or HTML, so that you can check its content structure and conversion as well as its appearance
 * Content upload to the document-based repository that authors edit in [Experience Workspace](https://www.aem.live/docs/ew/about), or package creation and upload for [AEM authoring](getting-started-aem-authoring.md#upload-content), according to project configuration. Experience Workspace was formerly called Document Authoring, and the console still uses that name in some labels. See [Where Content Is Stored and How Authors Edit It](overview.md#content-storage).
-* Code browser and diff viewer for reviewing changes made
-* GitHub integration with ability to create pull requests from changes
+* Code browser and diff viewer, so that you can review exactly what changed before you push
+* GitHub integration with the ability to create pull requests from changes, so that agent changes go through your usual code review
+* [Site planning](#project-view), to inventory a source site and group its pages into templates before you migrate
+* [Optional capabilities](#optional-capabilities) that you turn on per project when a task needs them
 
 Review changes before saving to a shared destination. The console can push to a new pull request or directly to the current branch; repository protections determine which changes require approval. Content uploads write to the authoring destination separately from code push. Optional planning is not an enforced approval gate for every operation.
 
@@ -68,7 +70,7 @@ After signing into the console at [aemcoder.adobe.io,](https://aemcoder.adobe.io
 The top menu bar provides:
 
 * An **Adobe Experience Manager** title on the left that links to the Home Page when clicked
-* A **Demo site** button when you are working in the [demo site](getting-started.md#demo-mode). It explains that work there isn't saved and that the demo can't push code to GitHub or content to Document Authoring. Use **Switch site** to connect your own site.
+* A **Demo site** button when you are working in the [demo site](getting-started.md#demo-mode). It explains that work there isn't saved and that the demo can't push code to GitHub or content to Experience Workspace. Use **Switch site** to connect your own site.
 * A **Request support** button where you can send details of any issues that were encountered. See [Request support](#request-support).
 * An **Account** button on the right for switching to dark mode and signing out of the console
 
@@ -87,12 +89,12 @@ The **Home** page is your starting point for using the console.
 
 The prompt input provides controls for interacting with the AI.
 
-* **Plan / Execute modes** (light bulb and magic wand icons): Toggle between planning and execution modes, respectively
-  * **Plan mode**: The AI analyzes requests and outlines an approach without making changes, which is useful for understanding strategy before committing.
-  * **Execute mode**: The AI performs the request and can make actual file changes.
-  * Planning is optional. Before execution, state the allowed scope and whether upload, push, or publication is authorized.
+* **Plan / Execute modes** (light bulb and magic wand icons): Toggle between planning and execution modes, respectively.
+  * **Plan mode**: The agent analyzes your request and proposes an approach without changing files. Use it for multi-page, shared-code, or otherwise risky changes, so that you can review and adjust the approach before anything changes. You can execute the plan later or start a new one.
+  * **Execute mode**: The agent performs the request and can make actual file changes.
+  * Planning is optional and is not an enforced approval gate. Before execution, state the allowed scope and whether upload, push, or publication is authorized.
 * **Attach files** (paperclip icon): Upload and attach files to the prompt for additional context, such as reference designs, screenshots, or specifications. You can also attach Word, PowerPoint, and Excel files; the agent receives their text and embedded images.
-* **Prompt queue** (clock icon): Additional prompts can be queued up to be automatically executed once the current prompt has completed.
+* **Prompt queue** (clock icon): Additional prompts can be queued up to be automatically executed once the current prompt has completed, so that you can line up follow-up tasks without waiting.
 * **Previous prompts**: In an empty prompt input, use the up and down arrow keys to recall earlier prompts. A draft you have started is not overwritten.
 * **Prompt hints**: Where enabled, the console points out when a prompt is missing details, such as the page or the result you expect, and can suggest a clearer prompt. You decide whether to use the hint. Prompts suggested by the console are not flagged unless you reword them. Configure hints under **Prompt coach** in [Settings](#settings-page).
 
@@ -112,11 +114,24 @@ The chat panel header includes links for navigating to the [Home](#home-page) an
 
 ### Optional Capabilities {#optional-capabilities}
 
-Core skills are always available. Some extended capabilities, such as design skills like Stardust, are optional plugins that are enabled per project, which keeps the agent lighter and faster.
+Core skills, such as page migration, design migration, site planning, and block development, are always available. Other capabilities are optional add-ons. Each add-on is off by default and is turned on per project, which keeps the agent lighter and faster for projects that don't need it.
 
-* When an optional plugin is relevant to your request, the agent suggests it and waits for your confirmation before enabling it. The plugin is available from your next message.
-* You can also ask the agent in the chat to enable or disable a named optional plugin.
-* The choice is saved in the console workspace, in the `.agents/settings.json` file.
+* When your request needs an add-on, EMA offers to turn it on and asks for your confirmation first. The add-on is available from your next message.
+* You can also ask for an add-on directly, for example "Enable the forms migration capability", or describe your task and accept EMA's offer. To turn an add-on off, ask the agent in the chat.
+* The choice is saved with the project in the console workspace.
+
+| Add-on | What it is for |
+|---|---|
+| Figma import | Migrating blocks and creating pages from Figma designs. See [Figma block migration](prompting-guide.md#figma-block-migration). |
+| Stardust guided redesign | Redesigning several pages of a site to a new design direction, step by step. See [Restyle sites](restyling.md#design-output). |
+| Project documentation | Generating project and handover documentation as PDF guides. See [Project documentation](project-documentation.md). |
+| Forms migration | Migrating AEM Forms-based forms to EDS forms. |
+| Commerce pages | Detecting product detail and product listing pages and migrating them into commerce page templates. |
+| Block library setup | Setting up the library that authors use to find and insert your blocks. See [Block deliverables](block-development.md#block-deliverables). |
+| EDS troubleshooting | Diagnosing EDS problems on demand, such as blocks that don't render or changes that don't appear. See [Debugging](prompting-guide.md#debugging). |
+| Modern web guidance | Applying current web-platform best practices, for example for fonts, loading performance, accessibility, and layout, when the agent writes CSS and JavaScript. |
+
+Which add-ons are offered can depend on your account and project.
 
 ## Workspace Panel {#workspace-panel}
 
@@ -134,13 +149,13 @@ The workspace panel displays working content and code for the connected project,
 
 ### Content Views {#content-view}
 
-The **Content views** contain multiple modes for displaying the selected page content. A collapsible file browser displays all the available page content for your site.
+The **Content views** show the selected page in different forms, so that you can check each aspect of the result. A collapsible file browser displays all the available page content for your site.
 
-* **Preview** (document with magnifying glass icon) to render the selected page from the console workspace
-* **Document view** (document icon) to view the underlying document-based content structure
-* **HTML view** (code icon) to view the raw HTML
-* **Markdown view (AEM authoring)** (paragraph icon) to view the underlying Markdown content structure
-* **JCR XML view (AEM authoring)** (data icon) to view the resulting JCR XML content structure
+* **Preview** (document with magnifying glass icon) renders the selected page from the console workspace. Use it to check the page as visitors see it.
+* **Document view** (document icon) shows the underlying document-based content structure. Use it to check how content is organized into sections, blocks, and default content.
+* **HTML view** (code icon) shows the raw HTML. Use it to debug rendering and block decoration.
+* **Markdown view (AEM authoring)** (paragraph icon) shows the underlying Markdown content structure. Use it to check the content before conversion.
+* **JCR XML view (AEM authoring)** (data icon) shows the resulting JCR XML content structure. Use it to check what will be imported into the AEM author instance.
 
 ![Content view](assets/content-imported.png)
 
@@ -208,7 +223,7 @@ Additional GitHub project actions can be performed on the [settings page](#setti
 
 The **Project views** help you plan the migration of an existing site.
 
-* **Planning** to review and refine the templates, pages, and blocks identified by the [site catalog skill](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
+* **Planning** to review and refine the templates, pages, and blocks identified by the [site catalog skill](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md), so that you can migrate one representative page per template and validate it before you import the rest
 
 For details, see [Site Planning UI](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md#planning-ui).
 

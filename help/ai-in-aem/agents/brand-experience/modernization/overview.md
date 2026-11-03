@@ -28,19 +28,30 @@ role_v2:
 
 # Experience Modernization Agent Overview {#experience-modernization-agent}
 
-Use the Experience Modernization Agent (EMA) to create, migrate, restyle, and develop websites on [Edge Delivery Services (EDS)](/help/edge/overview.md).
+The Experience Modernization Agent (EMA) is Adobe's AI development agent for [Edge Delivery Services (EDS)](/help/edge/overview.md). It gives you a ready-to-use EDS development environment in the browser, with nothing to install, and an agent that migrates, builds, and evolves EDS sites. Your Git repository remains the system of record for the site's code.
 
-EDS is the AEM service that delivers websites. It serves authored content as plain semantic HTML, and the project's own CSS and JavaScript style and decorate it in the browser. If you already build with HTML, CSS, and JavaScript, most of an EDS project will look familiar. The AEM-specific parts are explained in [Understand Your Project](#project-foundations). Adobe has renamed several of these products over time. If you meet older names such as Helix, Franklin, or Crosswalk, see [Names You May See](#names).
+EDS is the AEM service that delivers websites, and it is part of AEM Sites. It serves authored content as plain semantic HTML, and the project's own CSS and JavaScript style and decorate it in the browser. If you already build with HTML, CSS, and JavaScript, most of an EDS project will look familiar. The AEM-specific parts are explained in [Understand Your Project](#project-foundations). Adobe has renamed several of these products over time. If you meet older names such as Helix, Franklin, or Crosswalk, see [Names You May See](#names).
 
 ## Introduction {#introduction}
 
-EMA is part of the [Brand Experience Agent.](/help/ai-in-aem/agents/brand-experience/overview.md) It automates repetitive work: importing content, mapping it to blocks, styling, and development. You work in a hosted console, using natural-language requests and previews. You don't need Docker or a local command-line environment.
+EMA is part of the [Brand Experience Agent.](/help/ai-in-aem/agents/brand-experience/overview.md) It automates the repetitive parts of building an EDS site: importing content, mapping it to blocks, extracting the design, and writing block code. You work in the hosted Experience Modernization Console, using natural-language requests and previews. You don't need Docker or a local command-line environment.
 
-EMA exists to help you move your web properties onto the current AEM website stack: EDS, with content that authors edit visually in Experience Workspace. That is where you get the full value of the platform: fast pages, lean HTML, CSS, and JavaScript code, reusable blocks, and a site that you can keep changing with the agent's help after launch. EMA also supports EDS with AEM authoring when your project needs it. See [Where Content Is Stored and How Authors Edit It](#content-storage).
+Use EMA to move web properties from other CMSes, older AEM implementations built from Java and HTL components, or static sites onto EDS, the current AEM website stack. Consolidating there gives you:
 
-EMA also works on existing EDS projects after migration. You can refine a design, create or update blocks, and refactor code. Your permissions, repository policies, and publication workflow determine what you can change and release.
+* **Lean, standard code:** Pages are semantic HTML, styled and decorated by your own CSS and JavaScript and served from the edge. EDS sites can reach a Lighthouse score of 100.
+* **Room to grow:** EDS runs large multi-market and multi-language sites. Its largest sites have more than 100,000 pages.
+* **Visual authoring:** Authors edit pages visually in Experience Workspace, or in the Universal Editor when content stays in AEM. See [Where Content Is Stored and How Authors Edit It](#content-storage).
+* **Pages that AI systems can read:** AI crawlers and answer engines often read the raw HTML without running JavaScript. Because EDS serves lean semantic HTML, the migrated content is readable to them, so migration and AI readiness happen in the same step. This does not guarantee search rankings.
+
+EMA rebuilds your pages on an EDS block system that follows EDS architecture. It decomposes each page into sections and content, maps the content to default content and reusable blocks, and extracts the design system into global styles and block CSS. It then imports further pages in bulk with the same mappings. EMA does not clone the source markup, which would carry over the old site's technical debt. Expect a close first pass that you refine by prompting and validate before you scale.
+
+After go-live, the same environment keeps working on the site. You can restyle it to a new brand, including from Figma designs, add blocks, update or refactor existing blocks, create pages from the established blocks, debug problems, and generate project and handover documentation. You can also connect an existing EDS project and start there, without a migration.
+
+You stay in control of every change. Code goes to your Git repository and content goes to the authoring destination you chose. Until you push or upload them, or turn on [agent permissions](console.md#settings-page) that let the agent do so, changes stay in the console workspace, where you review and preview them and can discard what you don't want. Your permissions, repository policies, and publication workflow determine what you can change and release.
 
 ## Choose Your Task {#choose-task}
+
+Each row links to a task guide with the steps and the checks that tell you when you are done. If you already run an EDS site, start with restyling or block development; a migration is not required.
 
 | Your goal | Start here | Done when |
 |---|---|---|
@@ -59,7 +70,7 @@ An EMA task touches several separate parts of a project. Keep them apart when yo
 
 * **Source:** The authorized website, content, or design that you provide.
 * **Code:** The EDS Git repository and working branch that contain styles, scripts, and blocks.
-* **Content destination:** Where the migrated content is stored and which editor authors use. Adobe strongly recommends document-based persistence with Experience Workspace for new implementations; AEM authoring with JCR persistence and the Universal Editor is the alternative. See [Where Content Is Stored and How Authors Edit It](#content-storage). The source CMS does not determine this choice.
+* **Content destination:** Where the migrated content is stored and which editor authors use. Adobe strongly recommends document-based persistence with Experience Workspace for new implementations. The alternative is AEM authoring with JCR persistence and the Universal Editor. The source CMS does not determine this choice. See [Where Content Is Stored and How Authors Edit It](#content-storage).
 * **Preview and publication:** The EDS preview site, where you check saved content with your code, and the live site, where approved changes are released. See [How Changes Go Live](#code-content-lifecycle).
 
 EDS supports complex enterprise websites. Search, commerce, personalization, and other integrations can require project-specific implementation and testing; they are not reasons to restrict EDS to simple or static sites.
@@ -120,7 +131,7 @@ EMA asks where the migrated content should be stored. This is a question about p
 
 ### Document-Based Persistence with Experience Workspace {#document-based}
 
-With document-based persistence, content is stored as documents in the EDS document-based content repository. "Document-based" describes storage only, not the authoring experience. Authors edit pages visually in [Experience Workspace,](https://www.aem.live/docs/ew/about) the visual authoring UI for EDS. Experience Workspace also offers an AI assistant, collaboration, and AEM Assets integration. It is off by default and is turned on per site or organization.
+With document-based persistence, content is stored as documents in the EDS document-based content repository. "Document-based" describes storage only, not the authoring experience. Authors edit pages visually in [Experience Workspace,](https://www.aem.live/docs/ew/about) the visual authoring UI for EDS. Experience Workspace also offers an AI assistant, collaboration, and AEM Assets integration. It is off by default and is turned on per site or organization in the project's configuration. When you transfer an Auto mode site to a document-based destination with [**Make it yours**](getting-started.md#make-it-yours), the transfer turns it on for that site.
 
 "Document-based authoring" has meant different things over time, so check when a page or article was written:
 
@@ -167,7 +178,7 @@ Skills are the agent's built-in workflows for specific kinds of tasks. Use the c
 * Separates content migration from faithful design migration or a deliberate redesign.
 * Supports document-based and AEM authoring projects through their respective setup and delivery workflows.
 
-Detailed skills include page migration, bulk import, design extraction, navigation setup, and web scraping.
+Detailed skills include page migration, bulk import, design extraction, header, navigation, and footer migration, and web scraping.
 
 ## Figma-Based Migrations and Page Creation {#figma}
 
@@ -280,14 +291,14 @@ For processing locations, data retention, and compliance information, contact yo
 
 Use only websites and designs that you are authorized to migrate. The selected workflow must be able to reach and read the source. If the site uses bot protection, arrange access with its administrator. See [source sites with bot protection](getting-started.md#bot-protection).
 
-* Pages that require sign-in or a secret header can be migrated when the source accepts a custom request header, HTTP Basic authentication, or bearer authentication. Configure the credentials in the console's [Protected Site Authentication](console.md#protected-site-authentication) settings, or in the authentication fields of auto mode. Do not put secrets in chat. This is not intended for personally identifiable information (PII) or real end-user data.
+* Pages that require sign-in or a secret header can be migrated when the source accepts a custom request header, HTTP Basic authentication, or bearer authentication. Configure the credentials in the console's [Protected Site Authentication](console.md#protected-site-authentication) settings, or in the authentication fields of Auto mode. Do not put secrets in chat. This is not intended for personally identifiable information (PII) or real end-user data.
 * Sources reachable only through a VPN or blocked by a firewall remain unsupported, even with valid credentials. So do sources that require another sign-in flow, such as an interactive single sign-on (SSO) form. Ask the site administrator for an internet-reachable staging or origin host that accepts a supported method.
 * Client-rendered content can be captured when available at the page URL. Content present in the DOM but hidden by CSS can also be extracted. Content requiring additional interactions needs representative checks and may need a different extraction approach.
 * EMA targets EDS, including EDS with [JCR-backed AEM authoring.](#jcr-persistence) It does not convert a project to HTL-based AEM publishing or an API-only/SPA delivery stack.
 * Faithful design, accessibility, performance, and functional behavior require validation. A visual similarity score is not a production acceptance criterion.
 * Integrations, custom business logic, analytics, experimentation, and source-system features such as inheritance or content fragments need an explicit implementation and migration decision. Do not assume automated page import recreates them.
 
-Access to auto mode and optional design capabilities can differ from access to the console. Check the controls and limits shown for your account. [AOE service scope](aoe-delivery.md#scope) is agreed separately from product capabilities.
+Access to Auto mode and to [optional capabilities](console.md#optional-capabilities) can differ from access to the console. Check the controls and limits shown for your account. [AOE service scope](aoe-delivery.md#scope) is agreed separately from product capabilities.
 
 ## Next Steps {#next-steps}
 

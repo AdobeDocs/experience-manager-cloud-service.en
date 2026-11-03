@@ -27,7 +27,7 @@ role_v2:
 
 # Restyle Sites {#restyling}
 
-Use EMA to apply a design during migration or change the appearance of an existing Edge Delivery Services (EDS) project. Faithfully copying a source site's appearance and deliberately replacing it with a new design are different requests. State which you want.
+Use the Experience Modernization Agent (EMA) to apply a design during migration or change the appearance of an existing Edge Delivery Services (EDS) project. Faithfully copying a source site's appearance and deliberately replacing it with a new design are different requests. State which you want.
 
 In EDS, appearance lives in the project's code: global CSS sets the look of default content, and each block has its own CSS file. A purely visual restyle therefore changes code in Git and leaves authored content alone. Structural or content model changes are a separate, explicit decision.
 
@@ -81,7 +81,9 @@ For a CSS-only restyle, do not regenerate or reupload content unnecessarily. A g
 
 ## References, Prototypes, and Delivery {#design-output}
 
-EMA supports design work from source sites, Figma, and supplied references. Basic redesign with Stardust, a design skill enabled per project, is a different workflow from richer design exploration. Use the capabilities available to your project, including [optional design plugins](/help/ai-in-aem/agents/brand-experience/modernization/console.md#optional-capabilities); do not assume every optional design tool has the same inputs or output.
+EMA supports design work from source sites, Figma, and supplied references. Figma import and Stardust guided redesign are [optional capabilities](/help/ai-in-aem/agents/brand-experience/modernization/console.md#optional-capabilities) that EMA offers to turn on for your project when a request needs them.
+
+Stardust guided redesign takes several pages to a new design step by step. It extracts the current design, captures the direction you want, builds a prototype for review, and then migrates the pages to the new design. Use it when you want to move a site to a new look in stages rather than restyle one page or block. Optional design tools have different inputs and outputs; do not assume that they work the same way.
 
 * For one Figma block, provide its component/node link. For a new page, provide a specific frame/page rather than an entire file.
 * Figma requires the relevant project capability, configured credentials, and permission to read the file. Do not put tokens in chat.

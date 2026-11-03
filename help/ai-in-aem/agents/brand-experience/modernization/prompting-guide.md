@@ -27,7 +27,9 @@ role_v2:
 ---
 # Prompting Guide for Experience Modernization Agent {#prompting-guide}
 
-The Experience Modernization Agent (EMA) uses skills: built-in workflows for specific kinds of tasks, such as migrating a page or styling a block. The agent selects the appropriate skill from your natural-language request, so you don't need to name it. This guide provides tips for effective prompting and describes what the skills do. For the EDS terms used here, such as blocks, default content, and sections, see [How EDS Pages Work](overview.md#eds-basics).
+The Experience Modernization Agent (EMA) uses skills: built-in workflows for specific kinds of tasks, such as migrating a page or styling a block. The agent selects the appropriate skill from your natural-language request, so you don't need to name it. Some skills belong to [optional capabilities](console.md#optional-capabilities), which EMA offers to turn on for your project when a request needs them.
+
+This guide provides tips for effective prompting and describes what the skills do. For the EDS terms used here, such as blocks, default content, and sections, see [How EDS Pages Work](overview.md#eds-basics).
 
 ## Choose a Task {#choose-task}
 
@@ -36,7 +38,7 @@ Use the task guides for the full procedure and acceptance checks. The prompts be
 | Task | Procedure |
 |---|---|
 | Customer demo pages | [Demo recipe](getting-started.md#customer-demo) |
-| Useful trial with brand-owned content | [Trial recipe](getting-started.md#brand-trial), with auto mode where available |
+| Useful trial with brand-owned content | [Trial recipe](getting-started.md#brand-trial), with Auto mode if your account has access |
 | Production site, either persistence target | [Production migration](production-migration.md) |
 | New design during migration | [Restyle during migration](restyling.md#during-migration) |
 | Restyle an existing EDS project | [Existing-site restyle](restyling.md#existing-site) |
@@ -261,7 +263,7 @@ Use this prompt to validate a single migrated page for visual fidelity against t
 
 Use this prompt to migrate a block from Figma design to Edge Delivery Services.
 
-Note that you must set up your Figma details in [the Experience Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md) to use this prompt.
+Note that you must set up your Figma details in [the Experience Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md) to use this prompt. Figma import is an [optional capability](/help/ai-in-aem/agents/brand-experience/modernization/console.md#optional-capabilities). If it is not on for your project, EMA offers to turn it on.
 
 #### Example Prompts {#example-figma}
 
@@ -346,11 +348,12 @@ Use this prompt when the page does not already exist on a source website and a F
 
 ### Navigation Setup {#navigation-setup}
 
-Use this prompt to set up or migrate site navigation.
+Use this prompt to set up or migrate the site header, navigation, and footer. EMA migrates them, including footer images, with dedicated skills, separately from page import, so that every page shares one header and one footer.
 
 #### Example Prompts {#example-navigation}
 
 * "Set up navigation from `https://example.com`"
+* "Migrate the footer from `https://example.com`"
 * "Fix the navigation menu"
 
 #### What to Know {#wtk-navigation}
@@ -482,7 +485,7 @@ Use this prompt to validate code changes before opening a pull request.
 
 ### Debugging {#debugging}
 
-Use this prompt to troubleshoot problems with blocks, images, CSS, or preview.
+Use this prompt to troubleshoot problems with blocks, images, CSS, or preview. For deeper EDS diagnostics, EMA can turn on the EDS troubleshooting [optional capability](console.md#optional-capabilities) for your project.
 
 #### Example Prompts {#example-debugging}
 

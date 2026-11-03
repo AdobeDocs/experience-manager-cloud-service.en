@@ -34,7 +34,7 @@ This page lists the user-facing changes in each release of the Experience Modern
 ### What's New {#release-2026-11-02-what-is-new}
 
 * **Guided review of your migration plan:** When planning finishes, the agent offers to **Review scoping results**. It first fixes clear issues itself, such as moving outliers, merging look-alike block variants, and correcting names, and tells you what it changed. It then walks you through the remaining decisions one at a time. Choose **Autopilot** at the start, or **Finish for me** on any step, to let it complete the review alone. Items it is still unsure about are left unchanged and flagged in its report. See [Review the catalog.](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md#review-catalog)
-* **Page limits for auto-mode migrations:** Before you start an auto-mode migration, the page shows how many pages each migration can include for your account. Where your account permits it, you can choose how many pages a full-site migration includes. See [Auto-mode limits.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#auto-mode-limits)
+* **Page limits for Auto mode migrations:** Before you start an Auto mode migration, the page shows how many pages each migration can include for your account. If your account allows it, you can choose how many pages a full-site migration includes. See [Auto mode limits.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#auto-mode-limits)
 
 ### Other Improvements {#release-2026-11-02-other-improvements}
 
@@ -72,21 +72,21 @@ This page lists the user-facing changes in each release of the Experience Modern
 ### What's New {#release-2026-10-23-what-is-new}
 
 * **Improved site catalog:** Cataloging breaks pages into the blocks that an author actually edits, groups pages with the same layout into one template, and checks the results after scoping. Block mapping uses visual analysis, which produces fewer variants, cleaner templates, and cleaner screenshots. Your manual splits and moves are kept when you run it again. See [Site catalog.](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
-* **Pull content from Document Authoring:** The **Sync** menu has a **Pull** section. **Pull** > **Content** downloads your Document Authoring pages over the workspace copies and keeps pages that exist only in the workspace. **Pull** > **Code** replaces the **Pull** button of the code view. See [Sync menu.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#sync-menu)
+* **Pull content from Experience Workspace:** The **Sync** menu has a **Pull** section. **Pull** > **Content** downloads your Experience Workspace (formerly Document Authoring) pages over the workspace copies and keeps pages that exist only in the workspace. **Pull** > **Code** replaces the **Pull** button of the code view. See [Sync menu.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#sync-menu)
 
 ### Other Improvements {#release-2026-10-23-other-improvements}
 
-* Pushing content shows a progress bar, and push and pull tell you when your Document Authoring session has expired.
-* Local images in header and footer pages now upload to Document Authoring correctly, and the upload tells you which images need fixing.
+* Pushing content shows a progress bar, and push and pull tell you when your Experience Workspace session has expired.
+* Local images in header and footer pages now upload to Experience Workspace correctly, and the upload tells you which images need fixing.
 * Uploads and Settings explain when your AEM environment is hibernated and link to the Developer Console.
 * Long tasks, such as generating code for many blocks, no longer fail to send, and very large workspaces no longer freeze.
-* When the agent uploads a page directly to Document Authoring, the preview shows the same version.
+* When the agent uploads a page directly to Experience Workspace, the preview shows the same version.
 
 ## 2026.10.21 Release {#release-2026-10-21}
 
 ### What's New {#release-2026-10-21-what-is-new}
 
-* **Support for the latest Edge Delivery Services content backend:** You can upload, download, preview, and publish content on sites that use the latest content backend, and transfer auto-mode projects to them with **Make it yours**. See [Make it yours.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#make-it-yours)
+* **Support for the latest Edge Delivery Services content backend:** You can upload, download, preview, and publish content on sites that use the latest content backend, and transfer Auto mode projects to them with **Make it yours**. See [Make it yours.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#make-it-yours)
 * **Block confidence:** The **Blocks** view of planning has a sortable **Confidence** column that shows which blocks need your review, and marks the blocks that you have confirmed. See [Blocks table.](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md#blocks-table)
 
 ### Other Improvements {#release-2026-10-21-other-improvements}
@@ -94,7 +94,7 @@ This page lists the user-facing changes in each release of the Experience Modern
 * Blocks with hundreds of instances open faster and load more instances as you scroll.
 * While the agent works, the chat shows an animated indicator with an elapsed time.
 * Work in progress resumes automatically after a service restart, and stopped tasks stay stopped.
-* Content edits stay in your workspace until you upload them or explicitly ask the agent to update Document Authoring.
+* Content edits stay in your workspace until you upload them or explicitly ask the agent to update Experience Workspace.
 * Saving agent permissions, site authentication, or credentials in [Settings](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-page) shows **Applying...** until the change takes effect. Signing out of GitHub fully revokes the agent's access.
 
 ## 2026.10.16 Release {#release-2026-10-16}
@@ -115,8 +115,8 @@ This page lists the user-facing changes in each release of the Experience Modern
 ### What's New {#release-2026-10-08-what-is-new}
 
 * **Block variant instances:** Planning shows the instances of each block variant. See [Variant instances.](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md#variant-instances)
-* **Transfers overwrite existing pages by default:** When you transfer an auto-mode site, existing pages are overwritten by default. You can change this before you start the transfer. See [Make it yours.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#make-it-yours)
-* **Feedback on auto-mode runs:** Give feedback on an auto-mode run directly in the console.
+* **Transfers overwrite existing pages by default:** When you transfer an Auto mode site, existing pages are overwritten by default. You can change this before you start the transfer. See [Make it yours.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#make-it-yours)
+* **Feedback on Auto mode runs:** Give feedback on an Auto mode run directly in the console.
 
 ### Other Improvements {#release-2026-10-08-other-improvements}
 
@@ -264,7 +264,7 @@ This page lists the user-facing changes in each release of the Experience Modern
 
 ### What's New {#release-2026-08-13-what-is-new}
 
-* **Custom block library from chat:** Ask the agent to generate a block library for your custom blocks, including sample content and library configuration, for Document Authoring or AEM authoring. See [Block deliverables.](/help/ai-in-aem/agents/brand-experience/modernization/block-development.md#block-deliverables)
+* **Custom block library from chat:** Ask the agent to generate a block library for your custom blocks, including sample content and library configuration, for Experience Workspace (formerly Document Authoring) or AEM authoring. See [Block deliverables.](/help/ai-in-aem/agents/brand-experience/modernization/block-development.md#block-deliverables)
 
 ### Other Improvements {#release-2026-08-13-other-improvements}
 
@@ -285,7 +285,7 @@ This page lists the user-facing changes in each release of the Experience Modern
 
 * The site transfer page explains how to create an Edge Delivery Services site if you don't have one yet.
 * Questions from the agent include an **Other** option, so you can answer in your own words.
-* Sites that share a repository load their own Document Authoring content.
+* Sites that share a repository load their own Experience Workspace content.
 * Previews are more reliable under load.
 
 ## 2026.07.29 Release {#release-2026-07-29}
@@ -293,7 +293,7 @@ This page lists the user-facing changes in each release of the Experience Modern
 ### What's New {#release-2026-07-29-what-is-new}
 
 * **Modern web best practices:** The agent applies Google's Modern Web Guidance when it writes or edits CSS and client-side JavaScript.
-* **Media copied during transfer:** Transferring content to Document Authoring also copies the images and media that the pages reference. See [Make it yours.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#make-it-yours)
+* **Media copied during transfer:** Transferring content to Experience Workspace also copies the images and media that the pages reference. See [Make it yours.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#make-it-yours)
 
 ### Other Improvements {#release-2026-07-29-other-improvements}
 
@@ -308,7 +308,7 @@ This page lists the user-facing changes in each release of the Experience Modern
 ### What's New {#release-2026-07-20-what-is-new}
 
 * **One Sync button:** Push code and upload content from one global **Sync** button. See [Sync menu.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#sync-menu)
-* **Background Document Authoring uploads:** Uploads run in the background with live progress, so the console stays responsive.
+* **Background Experience Workspace uploads:** Uploads run in the background with live progress, so the console stays responsive.
 * **Faster inspect mode:** Turn the inspect mode of the preview on and off without reloading the preview. See [Content views.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#content-view)
 
 ### Other Improvements {#release-2026-07-20-other-improvements}
@@ -328,7 +328,7 @@ This page lists the user-facing changes in each release of the Experience Modern
 
 ### Other Improvements {#release-2026-07-14-other-improvements}
 
-* The Document Authoring preview and publish dialog keeps its status when you switch content views.
+* The Experience Workspace preview and publish dialog keeps its status when you switch content views.
 * Downloaded chat history includes timestamps and session information.
 
 ## 2026.07.09 Release {#release-2026-07-09}
@@ -336,13 +336,13 @@ This page lists the user-facing changes in each release of the Experience Modern
 ### What's New {#release-2026-07-09-what-is-new}
 
 * **Responsive preview:** The preview defaults to a **Responsive** viewport that fills the panel and reflows as you resize it. **Desktop**, **Tablet**, and **Mobile** remain available. See [Content views.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#content-view)
-* **Agent uploads to Document Authoring (opt-in):** The option in Settings that lets the agent use your Adobe credentials also covers Document Authoring, so the agent can upload pages without you pasting a token into the chat. See [Settings.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-page)
+* **Agent uploads to Experience Workspace (opt-in):** The option in Settings that lets the agent use your Adobe credentials also covers Experience Workspace, so the agent can upload pages without you pasting a token into the chat. See [Settings.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-page)
 * **Edit in Experience Workspace:** An **Edit** button opens the current page in Experience Workspace in a new tab. See [Content views.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#content-view)
 * **Next-step suggestions:** The chat suggests next steps below the latest answer of the agent.
 
 ### Other Improvements {#release-2026-07-09-other-improvements}
 
-* Images render on pages synced from Document Authoring.
+* Images render on pages synced from Experience Workspace.
 * [**Request support**](/help/ai-in-aem/agents/brand-experience/modernization/console.md#request-support) works even when your workspace is unavailable.
 * The conversation context is preserved if the agent restarts during a conversation.
 
@@ -363,13 +363,13 @@ This page lists the user-facing changes in each release of the Experience Modern
 ### What's New {#release-2026-06-23-what-is-new}
 
 * **Next-step prompt suggestions:** After a few chat turns, the agent suggests follow-up prompts. Skills also suggest next steps at transitions, such as starting design migration after content import.
-* **Branch-aware Document Authoring links:** Preview and publish links use your active branch instead of always `main`.
+* **Branch-aware Experience Workspace links:** Preview and publish links use your active branch instead of always `main`.
 * **Figma migration for AEM authoring:** Figma block migration supports AEM authoring projects and generates the required block definitions. See [Figma block migration.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
 
 ### Other Improvements {#release-2026-06-23-other-improvements}
 
 * Content views update automatically after the agent changes files, and imported pages appear in the page list without reloading the browser.
-* Document Authoring preview and publish no longer report false failures.
+* Experience Workspace preview and publish no longer report false failures.
 
 ## 2026.06.15 Release {#release-2026-06-15}
 
@@ -408,7 +408,7 @@ This page lists the user-facing changes in each release of the Experience Modern
 ### What's New {#release-2026-05-12-what-is-new}
 
 * **Work kept across branches:** Your conversation and working content are saved when you switch branches, and restored when you return to the same repository.
-* **Download existing content:** Download content from Document Authoring and AEM authoring sources to work on it in the console.
+* **Download existing content:** Download content from Experience Workspace and AEM authoring sources to work on it in the console.
 * **Improved design migration:** Design migration sets up global brand styles and reuses CSS variables across global and block styles. See [Restyling.](/help/ai-in-aem/agents/brand-experience/modernization/restyling.md)
 
 ### Other Improvements {#release-2026-05-12-other-improvements}

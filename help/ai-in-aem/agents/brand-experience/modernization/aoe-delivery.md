@@ -40,7 +40,9 @@ AOEs are Adobe engineers who operate the Experience Modernization Agent (EMA) on
 
 ## AOE-Led Delivery {#aoe-led}
 
-AOEs combine EMA automation with engineering work and customer review. Agree scope, responsibilities, acceptance criteria, and support arrangements with your Adobe account team before work begins. Do not infer a delivery guarantee, price, or entitlement from the availability of the console.
+AOEs combine EMA automation with engineering work and customer review.
+
+Agree scope, responsibilities, acceptance criteria, and support arrangements with your Adobe account team before work begins. Do not infer a delivery guarantee, price, or entitlement from the availability of the console.
 
 ## Engagement Process {#engagement-process}
 

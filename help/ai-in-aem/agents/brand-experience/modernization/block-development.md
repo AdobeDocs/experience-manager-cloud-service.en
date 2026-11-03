@@ -27,7 +27,9 @@ role_v2:
 
 # Create, Update, and Refactor Blocks {#block-development}
 
-Use EMA for ongoing Edge Delivery Services (EDS) development as well as migration. Begin with the author need and real content, then choose the smallest implementation that supports them.
+Use the Experience Modernization Agent (EMA) for ongoing Edge Delivery Services (EDS) development as well as migration. Begin with the author need and real content, then choose the smallest implementation that supports them.
+
+EMA follows Content-Driven Development (CDD) for this work. It starts from real content and from how authors will create it, and writes code after that. This keeps content models easy for authors to use and avoids blocks that only developers can fill in.
 
 Connect the intended repository and branch, confirm modification permissions, and identify whether authors use [document-based or JCR-backed content](overview.md#content-storage). Preserve a baseline before changing shared code or content models.
 
@@ -85,7 +87,7 @@ The output is reusable code, a working target-specific model where needed, and e
 
 * **Block documentation:** When migration creates a block, it generates the block from the content model found on your pages and adds a README for developers and an authoring guide for authors. Review both and keep them current when you change the block.
 * **Sample content:** EMA generates sample content for blocks so that you can preview them with realistic content. In the [site catalog](site-catalog.md#blocks-table), use **View sample** to open a block's sample page.
-* **Block library:** To let authors insert your custom blocks, ask EMA to generate a block library for them, including sample content and the library configuration, for Experience Workspace (Document Authoring) or AEM authoring. Check the result in the authoring experience. The library location is set by **Library URL** in [Settings](console.md#settings-page), which points to a `library.json` file that lists the available blocks, their variations, and example content.
+* **Block library:** The block library lets authors find your custom blocks and insert them into pages, with sample content that shows how each block is meant to be used. To set it up, ask EMA to generate a block library, including sample content and the library configuration, for Experience Workspace (formerly Document Authoring) or AEM authoring. Block library setup is an [optional capability](console.md#optional-capabilities) that EMA offers to turn on for your project. Check the result in the authoring experience. The library location is set by **Library URL** in [Settings](console.md#settings-page), which points to a `library.json` file that lists the available blocks, their variations, and example content.
 
 ## Update an Existing Block {#update}
 

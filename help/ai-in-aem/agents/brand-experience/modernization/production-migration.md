@@ -47,7 +47,11 @@ Record:
 | URL policy | Destination paths, redirects, canonical URLs, language relationships, and links to retain. |
 | Recovery | Code baseline, content backup/recovery process, and authority to overwrite or publish. |
 
-The source CMS does not dictate destination persistence. Both targets deliver through EDS. For a new implementation, Adobe strongly recommends document-based persistence with Experience Workspace, including for large sites with thousands of pages. AEM authoring with JCR persistence remains fully supported when a specific requirement depends on content staying in the AEM repository. Complex enterprise requirements can be implemented on EDS, but page import does not automatically reproduce every source integration or CMS feature.
+The source CMS does not dictate destination persistence. Both targets deliver through EDS.
+
+For a new implementation, Adobe strongly recommends document-based persistence with Experience Workspace, including for large sites with thousands of pages. AEM authoring with JCR persistence remains fully supported when a specific requirement depends on content staying in the AEM repository.
+
+Complex enterprise requirements can be implemented on EDS, but page import does not automatically reproduce every source integration or CMS feature.
 
 ## Prepare and Catalog {#prepare}
 
@@ -68,7 +72,7 @@ Start with one template and a small set of pages. For example:
 1. Review content mapping. Prefer headings, paragraphs, lists, and images as default content, outside any block; use blocks for content that needs a reusable model or behavior.
 1. Compare imported text, links, images, metadata, and section order against the source. Fix the reusable parser, transformer, or mapping when a pattern is wrong. These are the import scripts EMA generates: a parser converts one block's source HTML, and a transformer cleans up the whole page.
 1. Apply source styling or follow the [redesign workflow](restyling.md#during-migration). Check global styles before refining individual blocks.
-1. Complete shared navigation and footer separately from page import.
+1. Complete the shared header, navigation, and footer separately from page import. EMA migrates them, including footer images, with dedicated skills, so that every page shares one header and one footer.
 1. Upload a representative to the chosen authoring destination and verify edit, save, reopen, and preview:
    * [Document-based upload and preview](getting-started.md#upload-content).
    * [JCR conversion, package upload, and Universal Editor validation](getting-started-aem-authoring.md#validate-content).

@@ -44,6 +44,7 @@ Review generated guidance against the actual authoring target and validated exam
 Ensure the following before using this skill.
 
 * Your project must be checked out to your console workspace.
+* Project documentation is an [optional capability](console.md#optional-capabilities). If it is not on for your project, EMA offers to turn it on when you ask for documentation and asks you to confirm.
 * To enrich the guides with EDS configuration, you need appropriate admin access and must enable **Allow LLM to use my Adobe credentials for admin.hlx.page, Document Authoring, and repositories hosted outside GitHub** in [console settings](console.md#settings-page). `admin.hlx.page` is the EDS admin API, which holds site configuration; `hlx` comes from Helix, the project name under which the EDS architecture was developed.
 * Without that access, the agent can generate code-based documentation. Ask it to state which configuration and remote content it could not inspect. This permission does not establish JCR repository access.
   
@@ -61,7 +62,9 @@ Once the prerequisites are fulfilled, ask the agent to create documentation for 
 
    ![Documentation created](assets/documentation-created.png)
 
-Review the guides for correct setup, content locations, commands, authoring steps, and known limitations before sharing. Save the PDFs for your teams; for document-based projects, you can also upload them with the other content in Experience Workspace (Document Authoring, DA). This is not a JCR package-import instruction.
+Review the guides for correct setup, content locations, commands, authoring steps, and known limitations before sharing.
+
+Save the PDFs for your teams. For document-based projects, you can also upload them with the other content in Experience Workspace (formerly Document Authoring). This is not a JCR package-import instruction.
 
 ![Admin guide](assets/admin-guide.png)
 
