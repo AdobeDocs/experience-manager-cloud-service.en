@@ -114,6 +114,7 @@ The Experience Modernization Agent provides a web-based AI-assisted development 
 * The console requires no local setup for users to start prompting changes immediately in natural language.
 * Rapidly perform day-to-day experience development tasks while previewing them via live AEM preview, and sync content to AEM.
 * The console supports enterprise governance through standard GitHub review workflows.
+* The AI agent works without receiving the credentials that you configure. See [Security and Data Handling.](#security)
 
 The self-service Experience Modernization Console is generally available. Interested users can request access to ensure a smooth onboarding experience.
 
@@ -144,6 +145,47 @@ If you are interested in the AOE model for your next migration:
 
 * Please contact your Adobe representative or account team to initiate scoping and scheduling.
 * Adobe will confirm eligibility, estimate the engagement, and propose an engagement plan.
+
+## Security and Data Handling {#security}
+
+EMA lets the AI agent work on your site without giving it the credentials that you configure, and you decide when changes reach your repositories and AEM.
+
+### Access and Isolation {#security-access}
+
+* You sign in to the console with your Adobe ID. Every request is authenticated with Adobe Identity Management Services (IMS).
+* Each user works in a separate backend environment with its own workspace storage. Your workspace is not shared with other users.
+* AEM and your Git provider continue to enforce their own permissions for any code or content that EMA writes.
+
+### Credentials {#security-credentials}
+
+* The AI agent does not receive the credentials that you configure in the console. Tokens for GitHub, Cloud Manager Git repositories, Document Authoring, Figma, and protected source sites are held outside the agent's environment. A separate component adds each credential only to requests for the service it belongs to. The same applies to the credential used to call the AI model.
+* [Agent permissions](console.md#settings-page) are off until you turn them on. Turning one on lets the agent act with that access, for example to push to your repository, without seeing the credential. Use scoped, least-privilege tokens.
+* Store credentials only in the console's settings. Do not put secrets in prompts, chat, source content, repository files, or project documentation. The agent reads these, and they can be sent to the AI model.
+
+### What the AI Model Processes {#security-model-data}
+
+To perform your request, EMA can send the following to the large language model (LLM):
+
+* Your prompts and instructions.
+* Source page URLs, markup, and content, or exported CMS content.
+* Repository code and configuration, such as blocks, styles, and site configuration.
+* Design and brand references, such as Figma designs and screenshots.
+* Generated content and code under review.
+
+Adobe does not use customer data to train or fine-tune LLMs.
+
+### Control over Changes {#security-control}
+
+* The agent works in your workspace. You review its changes and the preview in the console.
+* Without agent permissions, code reaches your Git repository and content reaches AEM only when you use the console's synchronization actions. Optional plan mode lets you approve a plan before the agent starts.
+* Treat source pages and design files as untrusted input. They can contain text that attempts to steer the agent. Review the changes before you push, preview, or publish them. Branch protection and pull request reviews in your repository still apply.
+
+### Encryption and Storage {#security-storage}
+
+* Data is encrypted in transit using TLS 1.2 or later, and at rest using AES 256-bit encryption.
+* Code that you push is stored in your Git repository, and content that you sync is stored in your AEM content repository. Their own retention and version history policies apply.
+
+For processing locations, data retention, and compliance information, contact your Adobe account team or see the [Adobe Trust Center.](https://www.adobe.com/trust.html)
 
 ## Limitations {#limitations}
 

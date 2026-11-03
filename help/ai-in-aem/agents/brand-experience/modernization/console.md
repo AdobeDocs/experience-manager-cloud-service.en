@@ -226,7 +226,7 @@ If you make a change to any value in any section, click **Save** to save those c
   * **Logout**: Disconnects from GitHub and revokes the agent's access to your GitHub credentials
   * **Library URL** - This URL points to a library.json file that defines available blocks, their variations, and example content.
   * **Site base URL** - The origin URL of the website being migrated
-* **Agent permissions** - Control what the agent may access on your behalf. Each permission is off until you turn it on and save it.
+* **Agent permissions** - Control what the agent may access on your behalf. Each permission is off until you turn it on and save it. The agent uses a permission without receiving the credential itself. See [Security and Data Handling.](overview.md#security)
   * **Allow LLM to use my Adobe credentials for admin.hlx.page, Document Authoring, and repositories hosted outside GitHub** - When enabled, the agent can read site configuration and metadata, read Document Authoring content, and push to and pull from repositories hosted outside GitHub, using your Adobe credentials. This does not approve publishing: the agent is instructed to keep content edits in the workspace and to upload, preview, or publish only when you ask. Treat this as a safeguard, not a guarantee.
   * **Custom IMS Token (optional)** - Provide a token to use instead of your session token. Prefer a service account token over a personal token where possible.
   * **Allow LLM to use my git credentials** - Where available, lets the agent push to and pull from your GitHub repositories on your behalf. This grants elevated access; use a scoped token if offered.
