@@ -143,12 +143,12 @@ An EDS project keeps its code (blocks, styles, and scripts) in a Git repository 
 
 1. Select an [Edge Delivery Services](/help/edge/overview.md) repository for use with the Experience Modernization Console.
    * This can be an existing EDS project, or you can create a new one from the [boilerplate repository](https://github.com/adobe/aem-boilerplate) by following the first section of the [developer tutorial](https://www.aem.live/developer/tutorial), **Get started with the boilerplate repository template**. It creates the repository, installs the AEM Code Sync app, and sets up the site with example content that you can edit in Experience Workspace. You don't need the tutorial's local development steps, because EMA provides the development environment.
-1. Ensure that the [AEM Code Connector](https://github.com/apps/aem-code-connector) GitHub app is installed in the repository.
-   * This lets the console push changes and open pull requests in your repository. Until it is installed, the console can't push code or open pull requests.
-   * If the app is installed for selected repositories only, include this one. If your organization requires approval for GitHub apps, an organization owner must approve it.
 1. Ensure that the [AEM Code Sync GitHub app](https://github.com/apps/aem-code-sync) is installed in the repository.
    * This lets EDS fetch your code so that it can serve your site.
    * If your repository is based on the tutorial, this step is already complete.
+1. Ensure that the [AEM Code Connector](https://github.com/apps/aem-code-connector) GitHub app is installed in the repository.
+   * This lets the console push changes and open pull requests in your repository. Until it is installed, the console can't push code or open pull requests.
+   * If the app is installed for selected repositories only, include this one. If your organization requires approval for GitHub apps, an organization owner must approve it.
 
 The two apps have similar names but different jobs: one lets EDS serve your site's code, the other lets the console change it.
 
