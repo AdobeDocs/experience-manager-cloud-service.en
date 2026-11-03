@@ -1,6 +1,6 @@
 ---
 title: Getting Started with the Experience Modernization Agent
-description: Learn the first steps to quickly become productive with the Experience Modernization Agent using the Experience Modernization Console.
+description: Start with Auto mode or from an Edge Delivery Services repository, connect your site to the Experience Modernization Console, and make, save, and publish your first changes.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
@@ -28,7 +28,16 @@ role_v2:
 
 # Getting Started with the Experience Modernization Agent {#getting-started}
 
-Use your brand's content to try Edge Delivery Services (EDS) and the Experience Modernization Agent (EMA), or prepare a few customer demo pages. For a full-site release, use the [production migration guide](production-migration.md) after validating representative pages.
+The Experience Modernization Agent (EMA) builds and changes Edge Delivery Services (EDS) sites with you. You describe what you want in the Experience Modernization Console, and the agent imports pages, styles them, and writes the code. This guide takes you from access to a first page that you can edit, preview, and publish.
+
+In EDS, a site's code (blocks, styles, and scripts) lives in a Git repository, and its content lives in a separate content source that authors edit. EDS combines the two into fast pages. To learn more, see the [EDS overview](/help/edge/overview.md).
+
+There are two ways to start:
+
+* **Auto mode, then Make it yours.** Give Auto mode your website's URL. It migrates a few pages, including their design, on its own and emails you when it's done. Then transfer the result to an EDS site that you own, and continue in the console.
+* **From an EDS repository.** Create a new site from the AEM boilerplate, or bring the EDS site you already have. Connect it in the console, then ask EMA to import pages or to change the site.
+
+For a full-site release, use the [production migration guide](production-migration.md) after validating representative pages.
 
 This guide covers document-based persistence. Content is stored in the EDS document-based repository, and authors edit it visually in Experience Workspace, the visual authoring UI for EDS. Adobe strongly recommends this setup for new implementations.
 
@@ -36,21 +45,27 @@ If your content must be stored in AEM's JCR repository and edited with the Unive
 
 ## Access and AI Credit Usage {#access}
 
-To use the Experience Modernization Console, request access through your Adobe account manager. Sign in with an Adobe ID that belongs to your company's Adobe organization; see [Open the Experience Modernization Console](#open-console). Auto mode is in early access and has its own access request; see [Trial Your Brand's Content](#brand-trial).
+To use the Experience Modernization Console, request access through your Adobe account manager. Sign in with an Adobe ID that belongs to your company's Adobe organization; see [Open the Experience Modernization Console](#open-console). Auto mode is in early access and has its own access request; see [Start with Auto Mode](#brand-trial).
 
 Being able to sign in to the console does not by itself establish your organization's entitlement. Depending on your organization's agreement, work in EMA can consume AI credits. Consumption varies with the work, such as the number of pages, the steps the agent runs, and how often it iterates on a result. For how Adobe measures AI credit consumption for agentic capabilities, see [AI credit consumption](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/ai-credit-consumption). For your organization's entitlement, usage, and commercial terms, contact your Adobe account team.
 
-## Choose Your First Outcome {#first-outcome}
+## Choose How to Start {#first-outcome}
 
-The console is hosted. You do not need a local development environment to begin.
+The console is hosted. You do not need a local development environment for any of these paths.
 
-Before importing, identify the authorized source URLs, the pages to include, and whether to preserve the source design or apply a new design. For a connected project, also confirm the code repository and branch, [content destination](overview.md#content-storage), and permission to write there.
+| Start with | Choose it when | What you do |
+|---|---|---|
+| [Auto mode, then Make it yours](#brand-trial) | You want to see a few of your own pages on EDS with little effort, and your account has Auto mode access. | Give Auto mode your site's URL and wait for its email. Review the result, then transfer it to your own EDS site with **Make it yours**. |
+| [A new site from the boilerplate](#prepare-repo) | You are starting a new EDS site, or you don't have Auto mode access. | Create a repository from the AEM boilerplate and install two GitHub apps. Connect the site in the console and ask EMA to import pages or build what you need. |
+| [Your existing EDS site](#existing-site) | Your site already runs on EDS. | Install the AEM Code Connector app and connect the site. Ask EMA to explain, change, or extend it. |
 
-### Trial Your Brand's Content {#brand-trial}
+All three paths end in the same place: your site connected in the console. From there, you [prompt the agent](#start-prompting), then [save, preview, and publish](#save-work) the result.
 
-Use a small, representative set of your own pages so that your first edit is useful beyond a sample tour.
+Before importing, identify the authorized source URLs, the pages to include, and whether to preserve the source design or apply a new design. Use a small, representative set of your own pages so that your first changes are useful beyond a sample tour. For a connected project, also confirm the code repository and branch, [content destination](overview.md#content-storage), and permission to write there.
 
-The steps below start with Auto mode, which migrates a site, or a list of pages you select, without step-by-step prompting. Auto mode is in early access. If you don't have access yet, the Auto mode page at [`aemcoder.adobe.io/auto`](https://aemcoder.adobe.io/auto) shows a form to request it. Auto mode is not a prerequisite for trying your content: without it, import a few pages with the guided [single-page import](#start-prompting) and continue from step 5.
+## Start with Auto Mode {#brand-trial}
+
+Auto mode migrates a website, or a list of pages you select, without step-by-step prompting. Auto mode is in early access. If you don't have access yet, the Auto mode page at [`aemcoder.adobe.io/auto`](https://aemcoder.adobe.io/auto) shows a form to request it. Auto mode is not a prerequisite for trying your content: without it, [start from an EDS repository](#repo-start) and [import pages step by step](#guided-import).
 
 Auto mode and the guided workflow differ in how much the agent does before it hands back to you:
 
@@ -59,23 +74,18 @@ Auto mode and the guided workflow differ in how much the agent does before it ha
 
 Auto mode takes much longer than a guided import of the same pages because it checks and refines its own work, so it suits a first result that you collect later. By default, a full-site run migrates a preview of up to 10 pages. After the run, continue in the console to import further pages and refine the result with the guided workflow.
 
-Auto mode migrates a website, starting from its URL or from a list of its page URLs. It doesn't move an existing EDS repository; to work on a site that is already on EDS, [connect it](#connect-repo) instead. Once a run starts, it doesn't ask for your input: you steer it only through the scope and options that you choose before you start. To guide how blocks are identified or styled as you go, use the guided workflow, or refine the result in the console after the run.
+Auto mode migrates a website, starting from its URL or from a list of its page URLs. It doesn't move an existing EDS repository; to work on a site that is already on EDS, [bring your existing site](#existing-site) instead. Once a run starts, it doesn't ask for your input: you steer it only through the scope and options that you choose before you start. To guide how blocks are identified or styled as you go, use the guided workflow, or refine the result in the console after the run.
 
 1. Open Auto mode and provide your site URL, or choose selected pages and list their URLs. Review the scope, settings, and [limits](#auto-mode-limits) shown before you start.
    * For a protected source site, enter credentials in the authentication fields that Auto mode offers, not in chat.
    * If Auto mode offers **Include integrations**, select it to carry over supported integration settings from the source site, such as analytics, tag manager, and consent settings. They stay switched off on the new site until you turn them on.
 1. Start the run. A run can take up to 24 hours. You can leave the page; you receive an email when the run finishes. If the email doesn't arrive, check your spam folder.
 1. Review the run's status and result, including the preview, repository, report, and errors where available. Check which pages were migrated, and their content, links, images, and styles. Links to pages that the run didn't migrate can still point to the source site. A failed or partial run is not proof that all requested pages migrated.
-1. Open the resulting site with **Open site**. To continue in your own repository, use [**Make it yours**](#make-it-yours), or [connect an EDS site](#connect-repo) you already own.
-1. Ask for one useful change, such as correcting a heading or updating a call to action. Check it on the intended page and at mobile width.
-1. [Upload the content and push the code separately](#upload-content). Then reopen the document in Experience Workspace and the matching branch on the preview site.
-1. Record the project, repository, branch, content location, and preview URL so that you can return.
+1. Open the resulting site with **Open site**. To keep working on it, transfer it to your own EDS site with [**Make it yours**](#make-it-yours).
 
-The trial is complete when the content is editable and the useful change is retained, not merely when a preview link exists. A static design preview does not demonstrate remote authorable content.
+The run's site stays in an Adobe-managed location until you transfer it. Access to Auto mode does not establish a general entitlement or page allowance. Check the limits shown for your account. Auto mode produces document-based content. For JCR-backed delivery, use the [guided AEM authoring path](getting-started-aem-authoring.md).
 
-Access to Auto mode does not establish a general entitlement or page allowance. Check the limits shown for your account, and use **Make it yours** to keep the work in your own site. Auto mode produces document-based content. For JCR-backed delivery, use the [guided AEM authoring path](getting-started-aem-authoring.md).
-
-#### Auto Mode Limits {#auto-mode-limits}
+### Auto Mode Limits {#auto-mode-limits}
 
 Auto mode limits each account by the number of pages per migration, the number of migrations, and how many migrations can run at the same time. The Auto mode page shows the limits that apply to you before you start:
 
@@ -86,13 +96,13 @@ Auto mode limits each account by the number of pages per migration, the number o
 
 To stop a run, use **Cancel migration**. A cancelled run can't be resumed; you would start a new migration.
 
-#### Make It Yours {#make-it-yours}
+### Make It Yours {#make-it-yours}
 
 An Auto mode run creates its site in an Adobe-managed location. To keep working on it in your own EDS site, select **Make it yours** on the finished run. This transfers the run's code and content to a site that you own. It doesn't migrate anything again.
 
 Prepare the destination first:
 
-* An EDS site whose code is in a GitHub repository created from an EDS template, such as the [AEM boilerplate](https://github.com/adobe/aem-boilerplate), with the AEM Code Sync and AEM Code Connector apps installed. See [Prepare an Edge Delivery GitHub Repository](#prepare-repo). A repository on another Git host that is connected through Cloud Manager can also be used.
+* An EDS site whose code is in a GitHub repository created from an EDS template, with the AEM Code Sync and AEM Code Connector apps installed. The quickest way is to [create a new site from the boilerplate](#prepare-repo). A repository on [another Git host](#other-git) that is connected through Cloud Manager can also be used.
 * A `main` branch in the repository, and the site's content stored in Experience Workspace. A destination whose content is stored elsewhere, such as in AEM, can't receive the transfer.
 * Write access to the repository, and to the site's content in Experience Workspace for the Adobe account that you use in the console.
 * A site other than the run's own site.
@@ -102,7 +112,7 @@ To transfer the run:
 1. Choose the destination site. If you are not yet connected to GitHub, the console asks you to connect first.
 1. Review the destination repository, preview URL, and the new branch that will receive the code. Choose whether to overwrite existing pages and whether to preview the transferred pages.
 1. Select **Start transfer** and follow its progress. The code is placed on a new branch, and the content is copied to the destination content location. For a document-based destination, the transfer also turns on Experience Workspace for the destination site. If that step fails, the console shows a warning; ask the site's administrator to turn Experience Workspace on.
-1. Select **Open in EMA** to continue in the console, or **Edit Site** to edit the content.
+1. Select **Open in EMA** to continue on the destination site in the console, or **Edit Site** to edit the content. If the console doesn't open on the destination site, [connect it](#connect-repo).
 
 The transfer copies the following:
 
@@ -123,38 +133,51 @@ If the transfer stops with an error, nothing is merged into `main`, but code and
 
 Review the new branch's changes, then merge it according to your repository policy. Transferring does not publish content, but merging the branch into `main` changes the live site's code immediately. See [How Changes Go Live](overview.md#code-content-lifecycle).
 
-### Create a Customer Demo {#customer-demo}
+In the console, continue with [prompts to start with](#first-prompts), then [save, preview, and publish](#save-work) your changes.
 
-1. Select authorized customer-owned or brand-owned pages and the audience's demo goal. Include representative content rather than only the easiest page.
-1. Use Auto mode if your account has access, or [import the selected pages](#start-prompting). Name the exact page list; a request for one page is not a full-site migration.
-1. Apply the source design, or follow [restyling during migration](restyling.md#during-migration). Complete the navigation, footer, and assets needed for the demo path.
-1. Check text, imagery, links, layout, and mobile behavior. Walk the actual demo sequence. Identify mocked interactions, unavailable integrations, and pages outside scope.
-1. Retain the work as described for a trial. Hand over exact preview links, their source-page mapping, and the known gaps.
+## Start from an EDS Repository {#repo-start}
 
-A good demo presents complete, branded pages and working demo paths. It does not require full production cutover, but it must not be described as production-ready.
+An EDS site keeps its code in a Git repository and its content in a separate content source that authors edit. To work with EMA, a GitHub repository needs two GitHub apps:
 
-## Prepare an Edge Delivery GitHub Repository {#prepare-repo}
-
-An EDS project keeps its code (blocks, styles, and scripts) in a Git repository and its content in a separate content source. This section prepares the code repository.
-
->[!NOTE]
->
->Using AEM authoring with JCR persistence and the Universal Editor? Follow the [AEM authoring setup steps](getting-started-aem-authoring.md) instead.
-
-1. Select an [Edge Delivery Services](/help/edge/overview.md) repository for use with the Experience Modernization Console.
-   * This can be an existing EDS project, or you can create a new one from the [boilerplate repository](https://github.com/adobe/aem-boilerplate) by following the first section of the [developer tutorial](https://www.aem.live/developer/tutorial), **Get started with the boilerplate repository template**. It creates the repository, installs the AEM Code Sync app, and sets up the site with example content that you can edit in Experience Workspace. You don't need the tutorial's local development steps, because EMA provides the development environment.
-1. Ensure that the [AEM Code Sync GitHub app](https://github.com/apps/aem-code-sync) is installed in the repository.
-   * This lets EDS fetch your code so that it can serve your site.
-   * If your repository is based on the tutorial, this step is already complete.
-1. Ensure that the [AEM Code Connector](https://github.com/apps/aem-code-connector) GitHub app is installed in the repository.
-   * This lets the console push changes and open pull requests in your repository. Until it is installed, the console can't push code or open pull requests.
-   * If the app is installed for selected repositories only, include this one. If your organization requires approval for GitHub apps, an organization owner must approve it.
+* [AEM Code Sync](https://github.com/apps/aem-code-sync) lets EDS read your code so that it can serve your site. Every EDS site on GitHub has it.
+* [AEM Code Connector](https://github.com/apps/aem-code-connector) lets the console push changes and open pull requests in your repository. Until it is installed, the console can't push code or open pull requests.
 
 The two apps have similar names but different jobs: one lets EDS serve your site's code, the other lets the console change it.
 
 >[!NOTE]
 >
->**Using a different Git host?** EDS also supports GitHub Enterprise (self-hosted), Adobe-hosted repositories, GitLab, Bitbucket, and Azure DevOps. Onboard the repository in Adobe Cloud Manager, the AEM as a Cloud Service tool for managing programs, environments, and code repositories. Then configure your EDS site to use it. See [Bring Your Own Git.](https://www.aem.live/developer/byo-git)
+>Using AEM authoring with JCR persistence and the Universal Editor? Follow the [AEM authoring setup steps](getting-started-aem-authoring.md) instead.
+
+### Create a New Site from the Boilerplate {#prepare-repo}
+
+Use this path for a new EDS site, including one that you fill with pages imported from an existing website.
+
+1. Create the site from the [AEM boilerplate](https://github.com/adobe/aem-boilerplate) by following the first section of the [developer tutorial](https://www.aem.live/developer/tutorial), **Get started with the boilerplate repository template**:
+   * Select **Use this template** to create your repository on GitHub.
+   * Install the AEM Code Sync app for this repository only.
+   * Optionally change the site's administrators and content source, then select **Finish setup**.
+
+   Your site now runs at `https://main--{repository}--{owner}.aem.page/`, with example content that you can edit in Experience Workspace at [`da.live`](https://da.live). You don't need the tutorial's local development steps, because EMA provides the development environment.
+1. Install the [AEM Code Connector](https://github.com/apps/aem-code-connector) app in the repository.
+   * If the app is installed for selected repositories only, include this one. If your organization requires approval for GitHub apps, an organization owner must approve it.
+1. [Open the console](#open-console) and [connect the site](#connect-repo).
+
+### Bring Your Existing EDS Site {#existing-site}
+
+If your site already runs on EDS, you don't need to recreate it or migrate it again. Connect it, and EMA works on its code and content as they are.
+
+1. On GitHub, check that the AEM Code Sync app is installed in the repository. If EDS already serves the site from this repository, it is.
+1. Install the [AEM Code Connector](https://github.com/apps/aem-code-connector) app in the repository, as for a new site.
+1. [Open the console](#open-console) and [connect the site](#connect-repo). You need write access to the repository.
+1. Before you change anything, ask EMA to explain the project. See [Prompts to Start With](#first-prompts).
+
+Projects created from the current boilerplate include `AGENTS.md`, where you keep the project's instructions for the agent, and a one-line `CLAUDE.md` that makes the agent load `AGENTS.md` in every conversation. Older projects may not have them; ask EMA to add them from the current boilerplate. See [Project Instructions](project-instructions.md#agents-md). If your site's content is stored in AEM and edited with the Universal Editor, follow the [AEM authoring guide](getting-started-aem-authoring.md).
+
+To restyle your site or build blocks, see [Restyle an Existing EDS Site](restyling.md#existing-site) and [Block Development](block-development.md). A migration is not required.
+
+### Use Another Git Host {#other-git}
+
+EDS also supports GitHub Enterprise (self-hosted), Adobe-hosted repositories, GitLab, Bitbucket, and Azure DevOps. Onboard the repository in Adobe Cloud Manager, the AEM as a Cloud Service tool for managing programs, environments, and code repositories. Then configure your EDS site to use it. See [Bring Your Own Git.](https://www.aem.live/developer/byo-git)
 
 >[!IMPORTANT]
 >
@@ -170,7 +193,7 @@ The two apps have similar names but different jobs: one lets EDS serve your site
 
 The console keeps a hosted working copy of your project, called the console workspace in these docs. The agent imports content and changes code there until you upload or push. It is unrelated to Experience Workspace, the authoring UI. The console workspace pauses after a period of inactivity to save resources. When you return, the console shows **Your workspace is paused**; click **Wake up** and wait a few minutes while it is restored.
 
-## Demo Mode {#demo-mode}
+### Demo Mode {#demo-mode}
 
 If the console opens in demo mode, you can optionally explore its sample project and try importing additional pages. A **Demo site** button in the header indicates that you are in demo mode. Work in the demo site isn't saved, and the demo site can't push code to GitHub or upload content to Experience Workspace (Document Authoring). Sample exploration is not required before trying your own content.
 
@@ -178,7 +201,7 @@ If the console opens in demo mode, you can optionally explore its sample project
 
 ## Connect Your Site {#connect-repo}
 
-Connect a new or existing EDS project. If your console workspace has changes you want to keep, upload the content and push the code before you replace it.
+Connect the EDS site that you created from the boilerplate, transferred with **Make it yours**, or already had. If your console workspace has changes you want to keep, upload the content and push the code before you replace it.
 
 1. Click **Demo site** in the header and then **Switch site**, or use **Switch site** in [Settings](console.md#settings-page).
 1. This prompts you to authorize the AEM Code Connector app using your GitHub credentials. Click **Authorize AEM Code Connector**.
@@ -197,13 +220,49 @@ Confirm the connected repository, branch, and content destination before request
 
 ## Console Home {#console-home}
 
-When you visit [aemcoder](https://aemcoder.adobe.io) the Home Page will appear until a chat conversation has been started. The home page allows you to get started chatting by either typing your first prompt or by selecting one of the suggested prompts.
+The console opens on its **Home** page until you start a conversation. Type a request in the prompt box, or select one of the suggested prompts, which are grouped by task, such as migrating, developing, and debugging. Most suggested prompts start in [Plan mode](console.md#prompt-input): the agent proposes a plan without changing any files, and you select **Execute plan** when you agree with it. **Start chatting** opens the chat page, and **Settings** opens your [project settings](console.md#settings-page).
 
 ![Console home](assets/console-home.png)
 
 ## Start Prompting {#start-prompting}
 
-Now that your console can access your code, you are ready to start prompting.
+Once your site is connected, describe what you want in plain language. Say what result you expect and on which page, rather than how to write the code. EMA knows EDS, so you can also ask it how a part of your site works or what an EDS term means. To learn how EDS builds a page from sections, blocks, and default content, see [Markup, Sections, Blocks, and Auto Blocking](https://www.aem.live/developer/markup-sections-blocks).
+
+### Prompts to Start With {#first-prompts}
+
+Replace the example URLs and paths with your own.
+
+**After Make it yours:**
+
+* "Compare `/about` with `https://www.example.com/about` and fix the differences in layout and images."
+* "Migrate `https://www.example.com/contact` to `/contact`. Reuse the existing blocks."
+
+**A new site from the boilerplate:**
+
+* "Migrate only `https://www.example.com/about` to `/about`." For the full guided workflow, see [Import a Page Step by Step](#guided-import).
+* "Explain the sections and blocks on the home page, and which files style each one."
+* "Create a new page `/offers` from this Figma frame: `{Figma link}`." See [Create a New Page from Figma](prompting-guide.md#figma-new-page-from-figma).
+
+**Your existing EDS site:**
+
+* "Give me a tour of this project: list its blocks, what each one does, and which pages use them."
+* "Add a variant of the cards block with a dark background, and show it on `/products`."
+* "Check whether this project has the `AGENTS.md` and `CLAUDE.md` files of the current AEM boilerplate, and add them if they're missing."
+
+### Make a Visual Change with Inspect Mode {#inspect-mode}
+
+To change something that you can see on a page, point at it rather than describe where it is.
+
+1. Open the page in the console's preview panel.
+1. Turn on **Inspect mode** with the select icon in the preview panel.
+1. Select the element that you want to change, such as a heading, an image, or a button. The element is added to your prompt.
+1. Describe the change, for example "Make this button use the primary button style", and send the prompt.
+
+The agent receives the selected element's HTML and its position on the page, and limits its changes to that element. Check the result at desktop and mobile widths. See [Content Views](console.md#content-view).
+
+### Import a Page Step by Step {#guided-import}
+
+In the guided workflow, EMA stops after each step so that you can check it: first the page's content, then its design.
 
 1. Start with one authorized source page. Replace the example URL and destination in this prompt:
    * "Migrate only `https://www.example.com/about` to `/about` in this project. Target document-based content. Preserve its text, images, and links. Reuse existing blocks and default content. Do not upload, push, or publish."
@@ -222,18 +281,33 @@ Now that your console can access your code, you are ready to start prompting.
 
 Review the page at desktop and mobile widths. Compare text, links, images, and document structure with the source. Page import does not finish shared navigation and footer automatically; request those separately when needed.
 
-The result is working content and code in the console. It is not yet evidence that remote content was saved, the code was pushed, or the site was published. Each of the next steps moves work to a different place:
+The result is working content and code in the console. Next, [save, preview, and publish](#save-work) it.
+
+### Prompting Tips {#prompting-tips}
+
+* Ask for one change at a time, and check it before you ask for the next one.
+* For larger or riskier changes, such as several pages or shared styles, use Plan mode and review the plan before the agent changes anything.
+* Attach a screenshot or a design when it explains the result better than words.
+* Say what the agent must not do, such as "Do not upload, push, or publish."
+* If a long task stops before it finishes, ask the agent to continue.
+* Record decisions that should apply in every conversation in the project's instructions. See [Project Instructions](project-instructions.md).
+
+>[!TIP]
+>
+>[Check out the prompting guide](prompting-guide.md) for prompts for each task and for what the agent's skills can do.
+
+## Save, Preview, and Publish {#save-work}
+
+The agent's work stays in the console workspace until you save it elsewhere. Each of the next steps moves work to a different place:
 
 * **Upload** copies content from the console workspace to its authoring destination: Experience Workspace for document-based projects, or the AEM author instance for AEM authoring. In the **Sync** menu, this is **Push** > **Content**.
 * **Push** commits code to your Git repository, on the current branch or as a pull request.
 * **Preview** copies saved content to the EDS preview site, `*.aem.page`.
 * **Publish** makes previewed content live on `*.aem.live`.
 
->[!TIP]
->
->[Check out the prompting guide](prompting-guide.md) for more ideas on how to prompt the agent and what its skills can do.
+Upload and push separately. EDS stores content apart from code, so pushing code doesn't save your pages, and uploading doesn't save your code. Your first result is complete when you can reopen the page in Experience Workspace, edit it, and see the requested change on the preview site, not merely when a preview link exists. A design preview in the console alone doesn't show that the content is saved and editable.
 
-## Upload Content {#upload-content}
+### Upload Content {#upload-content}
 
 For document-based persistence, upload the pages to the document-based repository at [`da.live`](https://da.live), where authors edit them in Experience Workspace. Console labels and some screens still call it Document Authoring. Code push does not save these documents, because EDS stores content separately from code. Confirm the organization, repository, destination paths, and permission to replace any existing content before uploading.
 
@@ -259,7 +333,7 @@ Open an uploaded document, make an edit, save, and reopen it to check authorabil
 >
 >If you are working on an AEM authoring project, with JCR persistence and the Universal Editor, uploading content to the AEM author instance works differently. Refer to [Getting Started with the Experience Modernization Agent for AEM Authoring Projects](getting-started-aem-authoring.md#upload-content) for specific upload instructions.
 
-## Push Code Changes {#push-code-changes}
+### Push Code Changes {#push-code-changes}
 
 Review the code diff and run the project's checks before pushing. Use a pull request for work requiring review. Branch rules are enforced by your repository's protections; the console and the optional plan mode do not enforce them. See [Control over Changes](overview.md#security-control).
 
@@ -281,7 +355,7 @@ If the branch has changed in the repository since your last pull, the console tr
 
 Your code is now in GitHub. It shows on that branch's preview and live URLs straight away.
 
-## Preview Site {#preview-site}
+### Preview Site {#preview-site}
 
 EDS preview copies your saved content to the preview site, `*.aem.page`, where it renders with the code of the branch in the URL. This is different from the console's preview panel, which shows only the working copy in the console workspace. Publishing, a separate step, makes the content live on `*.aem.live`. To preview the uploaded pages:
 
@@ -298,11 +372,30 @@ Verify that the preview contains both the saved content and the intended code ve
 
 If your code is on a branch other than the one in the preview URL, change the preview URL to that branch. For JCR-backed content, complete [AEM authoring validation and preview](getting-started-aem-authoring.md#preview-site) instead of the Experience Workspace steps above.
 
+### Publish {#publish}
+
+When the preview looks right, publish the page to make it live on `*.aem.live`:
+
+* In Experience Workspace, open the page, click the paper plane icon, and select **Publish**.
+* Or, after an upload in the console, choose to preview and publish the uploaded pages.
+
+Publishing makes the page public. Who can publish is set by the site's publish role; follow your team's review process. Code doesn't need this step: it goes live as soon as it reaches `main`. See [Control over Changes](overview.md#security-control).
+
 ## Retain or Hand Over Your Work {#retain-work}
 
-Record source and output URLs, code repository and branch, remote content location, accepted pages, unresolved issues, and the next useful task. See [project handover](project-documentation.md#portable-handoff).
+Record source and output URLs, code repository and branch, remote content location, accepted pages, unresolved issues, and the next useful task, so that you or a colleague can return to it. See [project handover](project-documentation.md#portable-handoff).
 
 If you transfer an Auto mode run with [**Make it yours**](#make-it-yours), confirm the destination and overwrite choice. Transfer pushes code and copies content separately: either operation can fail independently. Verify both before leaving the source project. Transfer doesn't copy document content into JCR or provide atomic rollback.
+
+## Create a Customer Demo {#customer-demo}
+
+1. Select authorized customer-owned or brand-owned pages and the audience's demo goal. Include representative content rather than only the easiest page.
+1. Use [Auto mode](#brand-trial) if your account has access, or [import the selected pages](#guided-import). Name the exact page list; a request for one page is not a full-site migration.
+1. Apply the source design, or follow [restyling during migration](restyling.md#during-migration). Complete the navigation, footer, and assets needed for the demo path.
+1. Check text, imagery, links, layout, and mobile behavior. Walk the actual demo sequence. Identify mocked interactions, unavailable integrations, and pages outside scope.
+1. [Retain the work](#retain-work). Hand over exact preview links, their source-page mapping, and the known gaps.
+
+A good demo presents complete, branded pages and working demo paths. It does not require full production cutover, but it must not be described as production-ready.
 
 ## Troubleshooting {#troubleshooting}
 

@@ -101,7 +101,7 @@ This page lists the user-facing changes in each release of the Experience Modern
 
 ### What's New {#release-2026-10-16-what-is-new}
 
-* **Auto mode for sites that require sign-in:** Auto mode can migrate sites that require sign-in, using a user name and password, a bearer token, or a custom header. The credentials are sent only to that site and are not stored. See [Trial your brand's content.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#brand-trial)
+* **Auto mode for sites that require sign-in:** Auto mode can migrate sites that require sign-in, using a user name and password, a bearer token, or a custom header. The credentials are sent only to that site and are not stored. See [Start with Auto mode.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#brand-trial)
 
 ### Other Improvements {#release-2026-10-16-other-improvements}
 

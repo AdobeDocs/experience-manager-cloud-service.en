@@ -38,7 +38,7 @@ Use the task guides for the full procedure and acceptance checks. The prompts be
 | Task | Procedure |
 |---|---|
 | Customer demo pages | [Demo recipe](getting-started.md#customer-demo) |
-| Useful trial with brand-owned content | [Trial recipe](getting-started.md#brand-trial), with Auto mode if your account has access |
+| Useful trial with brand-owned content | [Start with Auto mode](getting-started.md#brand-trial) if your account has access, or [start from an EDS repository](getting-started.md#repo-start) |
 | Production site, either persistence target | [Production migration](production-migration.md) |
 | New design during migration | [Restyle during migration](restyling.md#during-migration) |
 | Restyle an existing EDS project | [Existing-site restyle](restyling.md#existing-site) |

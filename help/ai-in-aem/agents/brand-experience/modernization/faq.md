@@ -52,7 +52,7 @@ Depending on your organization's agreement, work in EMA can consume AI credits. 
 
 ### What does Auto mode do? {#auto-mode-what}
 
-Auto mode migrates pages of a website on its own, including their design. It imports the content, migrates the design, critiques the result against the source, and keeps refining it, without stopping for your review. It emails you when the run finishes. In the guided workflow, EMA instead stops after each step so that you can check it. See [Trial Your Brand's Content](getting-started.md#brand-trial).
+Auto mode migrates pages of a website on its own, including their design. It imports the content, migrates the design, critiques the result against the source, and keeps refining it, without stopping for your review. It emails you when the run finishes. In the guided workflow, EMA instead stops after each step so that you can check it. See [Start with Auto Mode](getting-started.md#brand-trial).
 
 ### Does Auto mode move my existing repository? {#auto-mode-repository}
 
@@ -80,7 +80,7 @@ It transfers the code and content of a finished Auto mode run to an EDS site tha
 
 ### Do I need to create a repository before I use Make it yours? {#make-it-yours-repository}
 
-Yes. The destination must be an EDS site whose code is in a repository created from an EDS template, such as the [AEM boilerplate](https://github.com/adobe/aem-boilerplate), on GitHub with the AEM Code Sync and AEM Code Connector apps installed, or on another Git host connected through Cloud Manager. The repository needs a `main` branch, and the site's content must be stored in Experience Workspace. See [Make It Yours](getting-started.md#make-it-yours) and [Prepare an Edge Delivery GitHub Repository](getting-started.md#prepare-repo).
+Yes. The destination must be an EDS site whose code is in a repository created from an EDS template, such as the [AEM boilerplate](https://github.com/adobe/aem-boilerplate), on GitHub with the AEM Code Sync and AEM Code Connector apps installed, or on another Git host connected through Cloud Manager. The repository needs a `main` branch, and the site's content must be stored in Experience Workspace. See [Make It Yours](getting-started.md#make-it-yours) and [Create a New Site from the Boilerplate](getting-started.md#prepare-repo).
 
 ### Does the transfer copy redirects, metadata, permissions, or site configuration? {#transfer-scope}
 
@@ -156,11 +156,11 @@ Yes, in the guided workflow. EMA converts the pages to JCR content and uploads t
 
 ### Which Git hosts can EMA push to? {#git-hosts}
 
-GitHub, and other Git hosts that are connected through Cloud Manager, such as GitHub Enterprise, GitLab, Bitbucket, or Azure DevOps. For Cloud Manager repositories, the access token needs write access to the repository code, and the console pushes a branch without opening a pull request. See [Prepare an Edge Delivery GitHub Repository](getting-started.md#prepare-repo).
+GitHub, and other Git hosts that are connected through Cloud Manager, such as GitHub Enterprise, GitLab, Bitbucket, or Azure DevOps. For Cloud Manager repositories, the access token needs write access to the repository code, and the console pushes a branch without opening a pull request. See [Use Another Git Host](getting-started.md#other-git).
 
 ### Do I need AEM Code Sync, AEM Code Connector, or a token? {#git-apps}
 
-AEM Code Sync lets EDS read your code to serve the site; every EDS project on GitHub needs it. AEM Code Connector lets the console connect to your GitHub repository, push code, and open pull requests. A personal access token is another way to sign in, for GitHub Enterprise or when OAuth sign-in isn't available. See [Prepare an Edge Delivery GitHub Repository](getting-started.md#prepare-repo) and [Connect Your Site](getting-started.md#connect-repo).
+AEM Code Sync lets EDS read your code to serve the site; every EDS project on GitHub needs it. AEM Code Connector lets the console connect to your GitHub repository, push code, and open pull requests. A personal access token is another way to sign in, for GitHub Enterprise or when OAuth sign-in isn't available. See [Start from an EDS Repository](getting-started.md#repo-start) and [Connect Your Site](getting-started.md#connect-repo).
 
 ### Why can't I see my GitHub organization or repository? {#git-org-missing}
 

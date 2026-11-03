@@ -59,18 +59,19 @@ Before anyone can judge a migration to EDS, a developer usually has to do a lot 
 * **A standard EDS project that you own.** The result is plain EDS code in your Git repository that follows the conventions of the AEM boilerplate and the [Block Collection](https://www.aem.live/developer/block-collection). Developers can continue in EMA, in their own editor, or with other AI tools. Nothing ties the site to EMA.
 * **Help after go-live.** The same agent restyles the site for a new brand, adds and refactors blocks, creates pages from existing blocks, debugs problems, and documents the project. You can start EMA on an existing EDS site without a migration.
 * **Project knowledge that lasts.** EMA follows the conventions that you keep in `AGENTS.md` and related files in the repository, so every conversation starts with what your team has agreed. See [What EMA Remembers](#memory).
-* **Unattended runs.** Auto mode, in early access, migrates a set of pages, including their design, without step-by-step prompting and emails you when it finishes. See [Trial Your Brand's Content](getting-started.md#brand-trial).
+* **Unattended runs.** Auto mode, in early access, migrates a set of pages, including their design, without step-by-step prompting and emails you when it finishes. See [Start with Auto Mode](getting-started.md#brand-trial).
 
 EMA doesn't replace your judgment. You decide the scope, the target design, and the content model, and you validate the result before it goes live.
 
 ## Choose Your Task {#choose-task}
 
-Each row links to a task guide with the steps and the checks that tell you when you are done. If you already run an EDS site, start with restyling or block development; a migration is not required.
+Each row links to a task guide with the steps and the checks that tell you when you are done. If you already run an EDS site, [connect it](getting-started.md#existing-site), then start with restyling or block development; a migration is not required.
 
 | Your goal | Start here | Done when |
 |---|---|---|
 | Demonstrate a few customer pages | [Create a customer demo](getting-started.md#customer-demo) | The selected branded pages and demo paths work, with unfinished behavior identified. |
-| Try EDS and EMA with your brand's content | [Trial your own content](getting-started.md#brand-trial) | You can make a useful edit, retain the work, and return to it. |
+| Try EDS and EMA with your brand's content | [Start with Auto mode](getting-started.md#brand-trial), or [start from an EDS repository](getting-started.md#repo-start) | You can make a useful edit, retain the work, and return to it. |
+| Start a new EDS site, or bring an existing one | [Start from an EDS repository](getting-started.md#repo-start) | Your site is connected in the console, and a change you asked for is saved and previewed. |
 | Migrate a production site | [Production migration](production-migration.md) | The agreed inventory, authoring, integrations, and release checks are accepted. |
 | Apply a new design during migration | [Restyle during migration](restyling.md#during-migration) | Source content is preserved in the approved target design. |
 | Restyle an existing EDS site | [Restyle an existing site](restyling.md#existing-site) | The affected pages adopt the design without unintended content or behavior changes. |

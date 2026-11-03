@@ -49,7 +49,7 @@ For a new project:
 1. Add the [AEM Code Connector](https://github.com/apps/aem-code-connector/installations/select_target) app to your repo.
    * This lets the console push changes and open pull requests in your repository. It is different from the AEM Code Sync app, which lets EDS fetch your code.
 
-For an existing JCR-backed EDS project, reuse its configuration and content models. Do not recreate the site or replace its repository with the template. Confirm [code synchronization and repository access](getting-started.md#prepare-repo) without repeating the document-based setup.
+For an existing JCR-backed EDS project, reuse its configuration and content models. Do not recreate the site or replace its repository with the template. Confirm [code synchronization and repository access](getting-started.md#repo-start) without repeating the document-based setup.
 
 ## Create a New Site in AEM {#create-site}
 

@@ -55,7 +55,7 @@ Complex enterprise requirements can be implemented on EDS, but page import does 
 
 ## Prepare and Catalog {#prepare}
 
-1. Follow [shared console setup](getting-started.md#prepare-repo), or [AEM authoring setup](getting-started-aem-authoring.md#create-repo) for a JCR-backed project. Reuse an existing project's configuration rather than recreate it.
+1. Follow [shared console setup](getting-started.md#repo-start), or [AEM authoring setup](getting-started-aem-authoring.md#create-repo) for a JCR-backed project. Reuse an existing project's configuration rather than recreate it.
 1. Ask EMA to catalog the authorized site: `Scope site https://www.example.com`. The [site catalog skill](site-catalog.md) discovers pages and groups them into templates (pages that share a layout) and block variants.
 1. Review the [site planning UI](site-catalog.md#planning-ui). Correct template and block groupings and investigate failed URLs.
 1. Reconcile discovered URLs against your agreed inventory. Include pages missing from discovery and make explicit decisions about failed, skipped, duplicate, or excluded URLs.
