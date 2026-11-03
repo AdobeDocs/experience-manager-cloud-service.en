@@ -34,7 +34,7 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2026.10.0) is October 29, 2026. The next feature release (2026.11.0) is planned for November 19, 2026.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2026.11.0) is November 19, 2026. The next feature release (2026.12.0) is planned for December 10, 2026.
 
 ## Maintenance Release Notes {#maintenance}
 
@@ -52,16 +52,8 @@ Have a look at the May 2026 Release Overview video for a summary of the features
 
 ## Release Overview {#overview}
 
-The 2026.10.0 release of [!DNL Experience Manager] as a [!DNL Cloud Service] highlights new and recently available capabilities across Sites, Assets, Forms, and Foundation, alongside updates to developer tools and platform guidance.
+The 2026.11.0 release of [!DNL Experience Manager] as a [!DNL Cloud Service] highlights new and recently available capabilities across Sites, Assets, Forms, and Foundation, alongside updates to developer tools and platform guidance.
 
-**Highlights of this release**
-
-* **More flexible content and media experiences:** Sites prerelease adds a Composite data type for Content Fragments. Assets highlights include multilingual video captions and audio tracks, branded video playback, and a GIF-based countdown timer for Dynamic Media email templates.
-* **AI-assisted governance and troubleshooting:** The AEM Governance Agent can help prioritize vulnerability findings, while new capabilities in CX Enterprise Coworker let developers inspect workflows and investigate Dispatcher behavior using natural-language prompts.
-* **Expanded developer and migration tooling:** The Cloud Migration Agent skill adds migration patterns and beta validation, and the unified AEM MCP Server now supports Cloud Migration capabilities.
-* **Platform changes to prepare for:** The AEM Cloud Service SDK supports Java 25 for local development. Review the notices on CDN egress IP allowlists, the transition from built-in New Relic APM to OpenTelemetry, and deprecated Java APIs.
-
-A range of beta, early adopter, and Limited Availability programs are also available this release. See the sections below for details.
 
 ## AEM Beta Programs {#aem-beta-programs}
 
