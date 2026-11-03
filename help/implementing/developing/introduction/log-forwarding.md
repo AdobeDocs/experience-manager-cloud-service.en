@@ -487,7 +487,7 @@ A SAS token should be used for authentication. It should be created from the Sha
 * Allowed services: Blob must be selected.
 * Allowed resources: Object and container must be selected.
 * Allowed permissions: Read, Write, Add, List, Create must be selected.
-* A valid Start and Expiry date/time.
+* A valid Start and Expiry date/time. The Expiry must be at least three months in the future at the time you deploy the configuration.
 
 Here is a screenshot of a sample SAS token configuration:
 
