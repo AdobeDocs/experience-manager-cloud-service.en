@@ -252,7 +252,7 @@ This page lists the user-facing changes in each release of the Experience Modern
 
 ### What's New {#release-2026-08-20-what-is-new}
 
-* **Protected site authentication:** In Settings, add basic, bearer, or custom-header credentials so that the agent can reach password-protected source sites. The credentials are never exposed to the AI model. See [Settings.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-page)
+* **Protected site authentication:** In Settings, add basic, bearer, or custom-header credentials so that the agent can reach password-protected source sites. The credentials are never exposed to the AI model. See [Protected Site Authentication.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#protected-site-authentication)
 * **Transfer to an existing site:** Site transfer can target an existing Edge Delivery Services site instead of always creating a new one.
 
 ### Other Improvements {#release-2026-08-20-other-improvements}

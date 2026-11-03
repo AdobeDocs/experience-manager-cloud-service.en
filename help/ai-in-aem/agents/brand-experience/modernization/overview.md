@@ -270,9 +270,8 @@ Adobe does not use customer data to train or fine-tune LLMs.
 * Without agent permissions, code reaches your Git repository and content reaches AEM only when you use the console's synchronization actions. Optional plan mode lets you approve a plan before the agent starts.
 * Treat source pages and design files as untrusted input. They can contain text that attempts to steer the agent. Review the changes before you push, preview, or publish them. Branch protection and pull request reviews in your repository still apply.
 
-### Encryption and Storage {#security-storage}
+### Where Your Work Is Stored {#security-storage}
 
-* Data is encrypted in transit using TLS 1.2 or later, and at rest using AES 256-bit encryption.
 * Code that you push is stored in your Git repository, and content that you sync is stored in your AEM content repository. Their own retention and version history policies apply.
 
 For processing locations, data retention, and compliance information, contact your Adobe account team or see the [Adobe Trust Center.](https://www.adobe.com/trust.html)
@@ -281,7 +280,8 @@ For processing locations, data retention, and compliance information, contact yo
 
 Use only websites and designs that you are authorized to migrate. The selected workflow must be able to reach and read the source. If the site uses bot protection, arrange access with its administrator. See [source sites with bot protection](getting-started.md#bot-protection).
 
-* In the console, **Protected site authentication** in [Settings](console.md#settings-page), where available, lets the agent reach password-protected source sites using basic, bearer, or custom-header credentials. Auto mode offers its own authentication fields. Neither establishes access to VPN-only sources. Use the credential controls offered by your workflow; do not put secrets in chat.
+* Pages that require sign-in or a secret header can be migrated when the source accepts a custom request header, HTTP Basic authentication, or bearer authentication. Configure the credentials in the console's [Protected Site Authentication](console.md#protected-site-authentication) settings, or in the authentication fields of auto mode. Do not put secrets in chat. This is not intended for personally identifiable information (PII) or real end-user data.
+* Sources reachable only through a VPN or blocked by a firewall remain unsupported, even with valid credentials. So do sources that require another sign-in flow, such as an interactive single sign-on (SSO) form. Ask the site administrator for an internet-reachable staging or origin host that accepts a supported method.
 * Client-rendered content can be captured when available at the page URL. Content present in the DOM but hidden by CSS can also be extracted. Content requiring additional interactions needs representative checks and may need a different extraction approach.
 * EMA targets EDS, including EDS with [JCR-backed AEM authoring.](#jcr-persistence) It does not convert a project to HTL-based AEM publishing or an API-only/SPA delivery stack.
 * Faithful design, accessibility, performance, and functional behavior require validation. A visual similarity score is not a production acceptance criterion.

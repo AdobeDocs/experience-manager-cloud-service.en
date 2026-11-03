@@ -240,7 +240,7 @@ If you make a change to any value in any section, click **Save** to save those c
     * `file_dev_resources:read`
     * `projects:read`
   * [See the Figma documentation](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens) for more information about setting up personal access tokens.
-* **Protected site authentication** - Where available, configure credentials for password-protected source sites that the agent needs to reach. Add one entry per host, using basic, bearer, or custom-header authentication. The credentials are added to the agent's requests to that host and are never shared with the AI model. A saved change can take up to about two minutes to take effect. Use scoped, least-privilege credentials.
+* **Protected site authentication** - Configure a custom request header, HTTP Basic authentication, or bearer authentication so that the agent can read source pages that require sign-in or a secret header. See [Protected Site Authentication](#protected-site-authentication) for setup instructions.
 * **Prompt coach** - Where available, controls the [prompt hints](#prompt-input) shown when a prompt is missing details, such as the page or the result you expect.
   * **Show prompt hints** turns the hints on or off.
   * Further options can check prompts on your device, which downloads a model to your browser. Turning such an option off removes the downloaded model.
@@ -250,6 +250,42 @@ If you make a change to any value in any section, click **Save** to save those c
   * **Reset workspace** - Resets the console workspace to its initial state. This cannot be undone. Save needed code and content first; reset is not a remote-content recovery tool.
 
 Figma access also depends on the token owner's access to the selected file and the capability being enabled for the project. Store tokens only in credential settings, not prompts or project documentation.
+
+### Protected Site Authentication {#protected-site-authentication}
+
+Many sites show some pages only to signed-in visitors, keep a staging copy behind a password, or have a CDN that only lets through requests carrying a secret header. Use **Protected site authentication** to let the agent read such a source site when it accepts a custom request header, HTTP Basic authentication, or bearer authentication. You can then migrate those pages the same way as public pages.
+
+The source site must be reachable from the agent's hosted environment on the internet and configured to accept the authentication method you provide. This feature does not provide access through a VPN, does not bypass a firewall, and does not complete interactive sign-in flows such as single sign-on (SSO) forms or multi-factor authentication. If your source is only reachable on a private network, ask its administrator for an internet-reachable staging or origin host that accepts one of the supported methods.
+
+>[!IMPORTANT]
+>
+>This functionality is not intended for use with personally identifiable information (PII) or real end-user data. Use source content and test accounts that do not contain this data.
+
+To configure access:
+
+1. Open **Settings** in the Experience Modernization Console and find **Protected site authentication**.
+1. Click **Add site**.
+1. Enter the **Site hostname**, such as `staging.example.com`. Enter only the hostname, without `https://` or a URL path.
+1. Select an **Authentication type** and enter the corresponding values.
+
+   | Authentication type | Values to enter |
+   | --- | --- |
+   | Custom header | **Header name** and **Header value**, as required by your source website. For example, the header name might be `X-API-Key`. |
+   | Basic (username & password) | **Username** and **Password** for HTTP Basic authentication. |
+   | Bearer authentication | The bearer token accepted by your source website. |
+
+1. Click **Save** in the **Protected site authentication** section. The section shows **Applying...** until the change takes effect, which can take up to about two minutes.
+1. Ask the agent to scrape or migrate the source website using its URL as usual.
+
+![Protected site authentication settings with example custom header and HTTP Basic authentication entries](assets/protected-site-authentication.png)
+
+Once saved, credentials are added to outbound requests to the matching hostname only and are not shared with the AI model. Enter credentials only in these settings, not in chat prompts. Content retrieved from the source website is used by the agent for the requested task.
+
+Use scoped, least-privilege credentials, preferably a dedicated account with read-only access to the source content. Each hostname can be configured only once. Configure additional hostnames separately if the source website loads protected content from other hosts, such as an asset domain.
+
+Verify one representative protected page before you start a catalog or batch run, and check that captures show the page content rather than a sign-in page.
+
+To remove access, click **Remove site** for the entry and then click **Save**. Remove the entry when the migration is complete.
 
 ### Request Support {#request-support}
 

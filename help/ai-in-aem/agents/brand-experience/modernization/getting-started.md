@@ -257,7 +257,7 @@ If your workflow offers transfer to another document-based project, confirm the 
 
 ## Troubleshooting {#troubleshooting}
 
-If import fails, retain the error and exact source URL. Check source reachability and permissions, correct the extraction or mapping, and retry one affected page before repeating a batch. Do not bypass source access controls. If the source site blocks automated access, see [Source Sites with Bot Protection](#bot-protection).
+If import fails, retain the error and exact source URL. Check source reachability and permissions, correct the extraction or mapping, and retry one affected page before repeating a batch. Do not bypass source access controls. If pages require sign-in, or a capture shows a sign-in page instead of the content, set up [protected site authentication](console.md#protected-site-authentication). If the source site blocks automated access, see [Source Sites with Bot Protection](#bot-protection).
 
 If a change is missing, check each location separately: the console workspace, uploaded remote content, pushed code branch, and previewed page. Reimport can overwrite local content changes; save or reconcile author edits first.
 
@@ -270,7 +270,7 @@ Bot protection in a content delivery network (CDN) or web application firewall (
 Migrate only sites that you own or are authorized to migrate. Arrange access with the site's administrator rather than working around the protection:
 
 1. Ask the administrator to allow access for the migration period, for example by allowlisting the [backend addresses](#allowlist-ip-addresses) in the CDN or WAF.
-1. If the protection accepts a credential instead, such as a secret request header, enter it in the authentication controls offered by your workflow, such as **Protected site authentication** in [Settings](console.md#settings-page). Use a scoped credential and remove it when the migration is complete.
+1. If the protection accepts a credential instead, such as a secret request header, enter it in the authentication controls offered by your workflow, such as [Protected site authentication](console.md#protected-site-authentication) in the console settings. Use a scoped credential and remove it when the migration is complete.
 1. If the administrator provides an accessible staging or origin host with the same content, use it as the source and record which host the content came from.
 1. If only discovery is blocked, provide the list of page URLs to migrate instead.
 
