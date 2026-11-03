@@ -40,6 +40,7 @@ These are the release notes for the 2 November 2026 release of the Experience Mo
 * The chat input has been updated and keeps its existing features.
 * A **Demo site** button in the header now explains, before you start working, that work in the demo site isn't saved. See [Demo mode.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#demo-mode)
 * Planning progress now shows the current step.
+* Site discovery is more reliable.
 * Prompt hints no longer flag suggested prompts that you send unchanged or only extend. Rewording a suggestion triggers the usual checks.
 * Agent guidance uses plain language instead of internal migration terms.
 * Long task lists scroll within the chat, and you can expand or collapse the pending tasks.

@@ -110,6 +110,14 @@ The chat panel header includes links for navigating to the [Home](#home-page) an
   * **Clear chat**: This resets the conversation and clears its context. It is not a code or content rollback. Save important decisions in [project context](project-documentation.md#portable-handoff) before clearing.
   * **Download chat**: This downloads the conversation history as a markdown file.
 
+### Optional Capabilities {#optional-capabilities}
+
+Core skills are always available. Some extended capabilities, such as design skills like Stardust, are optional plugins that are enabled per project, which keeps the agent lighter and faster.
+
+* When an optional plugin is relevant to your request, the agent suggests it and waits for your confirmation before enabling it. The plugin is available from your next message.
+* You can also ask the agent in the chat to enable or disable a named optional plugin.
+* The choice is saved in the project workspace, in the `.agents/settings.json` file.
+
 ## Workspace Panel {#workspace-panel}
 
 The workspace panel displays working content and code for the connected project, not necessarily every remote page on the site. Its view picker determines the available actions.

@@ -79,7 +79,7 @@ For a CSS-only restyle, do not regenerate or reupload content unnecessarily. A g
 
 ## References, Prototypes, and Delivery {#design-output}
 
-EMA supports design work from source sites, Figma, and supplied references. Basic Stardust redesign and richer design exploration are not the same workflow. Use the capabilities available to your project; do not assume every optional design tool has the same inputs or output.
+EMA supports design work from source sites, Figma, and supplied references. Basic Stardust redesign and richer design exploration are not the same workflow. Use the capabilities available to your project, including [optional design plugins](/help/ai-in-aem/agents/brand-experience/modernization/console.md#optional-capabilities); do not assume every optional design tool has the same inputs or output.
 
 * For one Figma block, provide its component/node link. For a new page, provide a specific frame/page rather than an entire file.
 * Figma requires the relevant project capability, configured credentials, and permission to read the file. Do not put tokens in chat.

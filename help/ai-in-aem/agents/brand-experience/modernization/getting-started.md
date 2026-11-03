@@ -130,6 +130,7 @@ Connect a new or existing EDS project. If you have local workspace changes to ke
 
 1. Click **Demo site** in the header and then **Switch site**, or use **Switch site** in [Settings](console.md#settings-page).
 1. This will prompt you to authorize the AEM Code Connector app using your GitHub credentials. Click **Authorize AEM Code Connector**.
+   * For GitHub Enterprise, or when OAuth sign-in isn't available, click **Sign in with a token** instead. Enter the **GitHub Host** and a **Personal Access Token**. A fine-grained token limited to the repositories you need is recommended.
 1. Back in the console, specify the Preview URL of the site. The preview URL can be obtained by previewing any document in the site, or by constructing it from branch, site-name and org. The system will retrieve the associated Github Project automatically. Alternatively, you can search through your authorized GitHub projects to find a site.
    ![Connecting to GitHub project](assets/connect-site-and-github.png)
 1. Click **Checkout to workspace** once the site has been verified.
