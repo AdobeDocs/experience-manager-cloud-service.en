@@ -43,7 +43,7 @@ Use EMA to move web properties from other CMSes, older AEM implementations built
 * **Visual authoring:** Authors edit pages visually in Experience Workspace, or in the Universal Editor when content stays in AEM. See [Where Content Is Stored and How Authors Edit It](#content-storage).
 * **Pages that AI systems can read:** AI crawlers and answer engines often read the raw HTML without running JavaScript. Because EDS serves lean semantic HTML, the migrated content is readable to them, so migration and AI readiness happen in the same step. This does not guarantee search rankings.
 
-EMA rebuilds your pages on an EDS block system that follows EDS architecture. It decomposes each page into sections and content, maps the content to default content and reusable blocks, and extracts the design system into global styles and block CSS. It then imports further pages in bulk with the same mappings. EMA does not clone the source markup, which would carry over the old site's technical debt. Expect a close first pass that you refine by prompting and validate before you scale.
+EMA rebuilds your pages on an EDS block system that follows EDS architecture. It decomposes each page into sections and content, maps the content to default content and reusable blocks, and extracts the design system into global styles and block CSS. It then imports further pages in bulk with the same mappings, using generated import scripts rather than having the AI model interpret every page. See [How EMA Migrates at Scale](#migration-at-scale). EMA does not clone the source markup, which would carry over the old site's technical debt. Expect a close first pass that you refine by prompting and validate before you scale.
 
 After go-live, the same environment keeps working on the site. You can restyle it to a new brand, including from Figma designs, add blocks, update or refactor existing blocks, create pages from the established blocks, debug problems, and generate project and handover documentation. You can also connect an existing EDS project and start there, without a migration.
 
@@ -160,6 +160,34 @@ For any new EDS implementation, Adobe strongly recommends document-based persist
 Document-based authoring used to mean editing in Microsoft Word, Google Docs, or a document-style editor. That limited visual page editing, so teams that needed it often chose AEM authoring. Experience Workspace now gives document-based content a visual editor, so there is little reason left for a brand to avoid it.
 
 AEM authoring with JCR persistence remains fully supported. Choose it when a specific requirement depends on content staying in the AEM repository. For headless content, delivered through APIs rather than as EDS web pages, the Universal Editor remains the recommended editor.
+
+## How EMA Migrates at Scale {#migration-at-scale}
+
+EMA does not send every page through the AI model. Interpreting each page separately would not scale to thousands of pages, and the model could treat similar pages slightly differently each time. Instead, the AI works out the mapping on one representative page per template, and EMA turns that mapping into code that runs on the template's other pages:
+
+1. **Group pages into templates.** The [site catalog](site-catalog.md) groups the source site's pages into templates, which are pages that share a layout. If you migrate pages without a catalog, each page that you name starts a template of its own.
+1. **Migrate a representative page.** For each template, EMA analyzes one representative page, maps its content to default content and blocks, and creates the blocks that it needs or reuses existing ones.
+1. **Generate an import script.** EMA writes an import script for the template. Its parsers extract each block's content from the source HTML, and its transformers clean up the page as a whole. They are JavaScript files in the project's `tools/importer/` folder, so they are versioned in Git with the rest of your code.
+1. **Refine the pattern, not the page.** When you ask for a correction, EMA changes the block, parser, or transformer that produced the result instead of editing one page's output. The correction then applies to every page of the template, and later templates reuse the blocks that already exist.
+1. **Import the remaining pages in bulk.** The bulk import runs the import script on the template's other pages without the AI model interpreting each one. EMA then compares the imported pages with their source pages, fixes the parsers or transformers behind pages that differ too much, and imports those pages again.
+
+Corrections accumulate in the blocks and import scripts, so each one also improves the pages that you import next. Validate a few pages of each template before you import all of them. See the [bulk import workflow](site-catalog.md#bulk-import).
+
+You can also change the structure that EMA builds on. In the [site planning UI](site-catalog.md#planning-actions), or by asking EMA, you can move pages to another template, create a template from a subset of pages, make one block a variant of another, or give a variant its own block. These changes update the catalog, and EMA follows them the next time it generates blocks or imports pages. They don't change pages that you already imported. To consolidate the design itself, for example from a new style guide or Figma designs, see [Restyle Sites](restyling.md). To consolidate block code, see [Refactor Without Changing the Outcome](block-development.md#refactor).
+
+>[!NOTE]
+>
+>A template in EMA is a group of source pages with the same layout, which EMA uses to plan and import them. It is not the same as the `template` metadata of an EDS page, which adds a class to the page's `body` element so that the project's code can style or decorate those pages differently.
+
+## What EMA Remembers {#memory}
+
+EMA has no memory of its own that carries over between conversations. What it knows about your project comes from three places:
+
+* **Its built-in skills,** the workflows that Adobe provides and updates with each release.
+* **The current conversation.** The console keeps your project's conversation for a limited time so that you can continue it later. When a conversation gets long, the agent summarizes earlier messages to make room, and details can be lost. **Clear chat** starts a new conversation without the earlier history.
+* **The files in the console workspace:** the checked-out Git repository with your code, the working copy of imported content, and temporary files from the migration.
+
+To make EMA remember a decision or convention, write it in a file in your Git repository. EMA loads the repository's `AGENTS.md` file at the start of every conversation, and it reads other project files when `AGENTS.md` or your request points to them. See [Project Instructions and Memory](project-instructions.md).
 
 ## Benefits {#benefits}
 

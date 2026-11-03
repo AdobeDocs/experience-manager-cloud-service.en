@@ -60,14 +60,14 @@ Name the source URLs/design nodes, destination paths, [authoring target](overvie
 
 ### Create markdown files in the project to document project-specific rules, guidelines, design decisions, or constraints. {#markdown-files}
 
-* These markdown files (e.g., INSTRUCTIONS.md, CONTEXT.md) can include file naming conventions, content mapping rules, or brand guidelines.
-* When starting a new conversation, explicitly name the context files to read. An arbitrary Markdown file is not necessarily loaded automatically.
-* Retain validated examples, source/target identities, and known gaps using the [portable handover](project-documentation.md#portable-handoff). Do not duplicate native skills or store secrets.
+* Keep these files in the Git repository. EMA loads the project's `AGENTS.md` file at the start of every conversation. Use it for a short project summary, the rules that apply to most tasks, and an index of the other files with when to read each one.
+* Put details such as block content conventions, section styles, design rules, and decisions in separate, focused files that `AGENTS.md` references. EMA reads them when a task needs them, so you don't need to name them in every prompt.
+* Ask EMA to update the files when you agree on a convention, and push them with the code. Do not duplicate built-in skills or store secrets. See [Project Instructions and Memory](project-instructions.md).
 
 ### The agent's context window is not infinite. {#limited-window}
 
-* Over long conversations, earlier instructions may be compacted or forgotten.
-* If the agent seems to have lost context, either remind it of the key points or clear the chat and start fresh with a warm-up prompt to read project documentation.
+* Over long conversations, earlier messages are summarized to make room, and details can be lost.
+* If the agent seems to have lost context, remind it of the key points. Or ask it to record the agreed decisions in the project files, clear the chat, and continue in a new conversation. A new conversation starts with the project's `AGENTS.md` loaded, and the agent finds the other files through it.
 
 ### Use iterative prompting to refine results. {#iterate}
 

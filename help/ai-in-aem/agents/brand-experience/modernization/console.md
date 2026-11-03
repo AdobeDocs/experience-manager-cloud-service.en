@@ -109,7 +109,7 @@ The chat panel allows you to view and continue your conversation with EMA. The c
 The chat panel header includes links for navigating to the [Home](#home-page) and [Settings](#settings-page) views and chat actions.
 
 * **Chat actions**
-  * **Clear chat**: This resets the conversation and clears its context. It is not a code or content rollback. Save important decisions in [project context](project-documentation.md#portable-handoff) before clearing.
+  * **Clear chat**: This starts a new conversation without the earlier history. It is not a code or content rollback. Before clearing, ask EMA to record important decisions in the [project instruction files](project-instructions.md) that it reads in every conversation.
   * **Download chat**: This downloads the conversation history as a markdown file.
 
 ### Optional Capabilities {#optional-capabilities}
