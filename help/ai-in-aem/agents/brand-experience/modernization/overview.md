@@ -34,7 +34,7 @@ EDS is the AEM service that delivers websites, and it is part of AEM Sites. It s
 
 ## Introduction {#introduction}
 
-EMA is part of the [Brand Experience Agent.](/help/ai-in-aem/agents/brand-experience/overview.md) It automates the repetitive parts of building an EDS site: importing content, mapping it to blocks, extracting the design, and writing block code. You work in the hosted Experience Modernization Console, using natural-language requests and previews. You don't need Docker or a local command-line environment.
+EMA is part of the [Brand Experience Agent.](/help/ai-in-aem/agents/brand-experience/overview.md) It automates the repetitive parts of building an EDS site: importing content, mapping it to blocks, extracting the design, and writing block code. You work in the hosted Experience Modernization Console, using natural-language requests and previews. You don't need Docker or a local command-line environment. With Auto mode, in early access, EMA can also migrate a first set of pages on its own and email you when it's done.
 
 Use EMA to move web properties from other CMSes, older AEM implementations built from Java and HTL components, or static sites onto EDS, the current AEM website stack. Consolidating there gives you:
 
@@ -48,6 +48,20 @@ EMA rebuilds your pages on an EDS block system that follows EDS architecture. It
 After go-live, the same environment keeps working on the site. You can restyle it to a new brand, including from Figma designs, add blocks, update or refactor existing blocks, create pages from the established blocks, debug problems, and generate project and handover documentation. You can also connect an existing EDS project and start there, without a migration.
 
 You stay in control of every change. Code goes to your Git repository and content goes to the authoring destination you chose. Until you push or upload them, or turn on [agent permissions](console.md#settings-page) that let the agent do so, changes stay in the console workspace, where you review and preview them and can discard what you don't want. Your permissions, repository policies, and publication workflow determine what you can change and release.
+
+## Why Use EMA {#benefits}
+
+Before anyone can judge a migration to EDS, a developer usually has to do a lot of repetitive work. They list the source pages and work out which ones share a layout. They decide how each part of a page becomes EDS content, then write the blocks and their styles and extract the colors and fonts. Finally, they write import scripts, import the pages, and compare them with the originals. EMA does this work with you, in one environment:
+
+* **A first result on your own pages.** Give EMA a source page and it rebuilds it as an EDS page, with blocks, styles, and editable content, that you can check in the console's preview. You judge the approach on your own content rather than on a sample site, without setting up a local environment first.
+* **A plan that you can see.** The [site catalog](site-catalog.md) inventories the source site and groups its pages into templates and blocks, with screenshots. Use it to scope and size the project and to decide what to migrate first.
+* **Fixes that scale.** EMA turns each correction into a change to a reusable block or import script, so a fix on one page applies to every page of that template. See [How EMA Migrates at Scale](#migration-at-scale).
+* **A standard EDS project that you own.** The result is plain EDS code in your Git repository that follows the conventions of the AEM boilerplate and the [Block Collection](https://www.aem.live/developer/block-collection). Developers can continue in EMA, in their own editor, or with other AI tools. Nothing ties the site to EMA.
+* **Help after go-live.** The same agent restyles the site for a new brand, adds and refactors blocks, creates pages from existing blocks, debugs problems, and documents the project. You can start EMA on an existing EDS site without a migration.
+* **Project knowledge that lasts.** EMA follows the conventions that you keep in `AGENTS.md` and related files in the repository, so every conversation starts with what your team has agreed. See [What EMA Remembers](#memory).
+* **Unattended runs.** Auto mode, in early access, migrates a set of pages, including their design, without step-by-step prompting and emails you when it finishes. See [Trial Your Brand's Content](getting-started.md#brand-trial).
+
+EMA doesn't replace your judgment. You decide the scope, the target design, and the content model, and you validate the result before it goes live.
 
 ## Choose Your Task {#choose-task}
 
@@ -166,7 +180,7 @@ AEM authoring with JCR persistence remains fully supported. Choose it when a spe
 EMA does not send every page through the AI model. Interpreting each page separately would not scale to thousands of pages, and the model could treat similar pages slightly differently each time. Instead, the AI works out the mapping on one representative page per template, and EMA turns that mapping into code that runs on the template's other pages:
 
 1. **Group pages into templates.** The [site catalog](site-catalog.md) groups the source site's pages into templates, which are pages that share a layout. If you migrate pages without a catalog, each page that you name starts a template of its own.
-1. **Migrate a representative page.** For each template, EMA analyzes one representative page, maps its content to default content and blocks, and creates the blocks that it needs or reuses existing ones.
+1. **Migrate a representative page.** For each template, EMA first migrates one representative page: a real page of the source site that shows the template's typical layout and, ideally, most of its blocks and variations. The site catalog proposes one for each template. If another page of the template shows more of its blocks, choose that page instead; blocks that the representative page lacks are only added later, when an imported page needs them. The AI model analyzes the representative page, maps its content to default content and blocks, and creates the blocks that it needs or reuses existing ones. This page is the worked example from which EMA builds the rest of the template.
 1. **Generate an import script.** EMA writes an import script for the template. Its parsers extract each block's content from the source HTML, and its transformers clean up the page as a whole. They are JavaScript files in the project's `tools/importer/` folder, so they are versioned in Git with the rest of your code.
 1. **Refine the pattern, not the page.** When you ask for a correction, EMA changes the block, parser, or transformer that produced the result instead of editing one page's output. The correction then applies to every page of the template, and later templates reuse the blocks that already exist.
 1. **Import the remaining pages in bulk.** The bulk import runs the import script on the template's other pages without the AI model interpreting each one. EMA then compares the imported pages with their source pages, fixes the parsers or transformers behind pages that differ too much, and imports those pages again.
@@ -179,34 +193,39 @@ You can also change the structure that EMA builds on. In the [site planning UI](
 >
 >A template in EMA is a group of source pages with the same layout, which EMA uses to plan and import them. It is not the same as the `template` metadata of an EDS page, which adds a class to the page's `body` element so that the project's code can style or decorate those pages differently.
 
+You can align the two. When the pages of an EMA template should look or behave differently from other pages on the new site, ask EMA to write matching `template` metadata into those pages and to style them in the project's code. For example:
+
+> For the article template, set the page metadata `template` to `article` in the import script, and give article pages a narrower main column.
+
+Because the import script sets the metadata, every article page that you import later gets it too.
+
 ## What EMA Remembers {#memory}
 
 EMA has no memory of its own that carries over between conversations. What it knows about your project comes from three places:
 
 * **Its built-in skills,** the workflows that Adobe provides and updates with each release.
-* **The current conversation.** The console keeps your project's conversation for a limited time so that you can continue it later. When a conversation gets long, the agent summarizes earlier messages to make room, and details can be lost. **Clear chat** starts a new conversation without the earlier history.
+* **The current conversation.** The console keeps your project's conversation so that you can continue it later. When a conversation gets long, the agent summarizes earlier messages to make room, and details can be lost. **Clear chat** starts a new conversation without the earlier history.
 * **The files in the console workspace:** the checked-out Git repository with your code, the working copy of imported content, and temporary files from the migration.
 
-To make EMA remember a decision or convention, write it in a file in your Git repository. EMA loads the repository's `AGENTS.md` file at the start of every conversation, and it reads other project files when `AGENTS.md` or your request points to them. See [Project Instructions and Memory](project-instructions.md).
+To make EMA remember a decision or convention, write it in a file in your Git repository. EMA currently uses Claude models, which load a file named `CLAUDE.md` from the repository root at the start of every conversation. In projects created from the AEM boilerplate, `CLAUDE.md` contains one line, `see @AGENTS.md`, which loads `AGENTS.md` as well. Your project instructions belong in `AGENTS.md`, and EMA reads other project files when `AGENTS.md` or your request points to them. The model is an implementation detail that can change, so don't write instructions that depend on it. See [Project Instructions and Memory](project-instructions.md).
 
-## Benefits {#benefits}
+## Migration and Site Creation Capabilities {#creation-migration}
 
-EMA shortens the work of adopting [Edge Delivery Services](/help/edge/overview.md) and of changing your site afterward.
+Skills are the agent's built-in workflows for specific kinds of tasks. You don't need to name them: describe the task, and EMA chooses the skill. The following capabilities are always available:
 
-* Import representative pages, refine reusable mappings, then apply them to further pages.
-* Use natural language to request changes and inspect the resulting content and code.
-* Reuse EDS content and block patterns rather than reproduce unnecessary source-system complexity.
-* Continue development in the connected repository and authoring environment.
+| Capability | What EMA does | Learn more |
+|---|---|---|
+| Site catalog and planning | Discovers the source site's pages, groups them into templates, and identifies their blocks and variants, with screenshots and a report. You review and adjust the result in the site planning UI. | [Site Catalog Skill](site-catalog.md) |
+| Page migration | Imports a source page, maps its content to [default content and blocks](#eds-basics), and creates new blocks or reuses existing ones. | [Migrate a site or page](prompting-guide.md#migrate-a-site) |
+| Design migration | Extracts the design system, such as colors, fonts, and spacing, into CSS custom properties and global styles, and styles each block to match the source. | [Design migration](prompting-guide.md#design-migration) |
+| Header, navigation, and footer | Rebuilds the parts that every page shares as EDS blocks and content. | [Navigation setup](prompting-guide.md#navigation-setup) |
+| Import scripts and bulk import | Writes an import script for each template and runs it on the template's other pages. It then compares the imported pages with their source pages and fixes the script for pages that differ. | [Bulk import](prompting-guide.md#bulk-import) |
+| Visual critique | Compares a migrated block, page, or the whole site with the source and fixes content, structure, and styling differences. | [Block critique](prompting-guide.md#block-critique) |
+| Protected source pages | Reads source pages that need a custom request header, HTTP Basic authentication, or bearer authentication. | [Protected Site Authentication](console.md#protected-site-authentication) |
+| AEM authoring models | Creates the block models that the Universal Editor uses, for projects that store content in AEM. | [AEM authoring projects](getting-started-aem-authoring.md) |
+| Console tour | Explains the console's views and actions. Ask "Give me a tour of the console." | [Modernization Console](console.md) |
 
-## Site Creation and Migration Skills {#creation-migration}
-
-Skills are the agent's built-in workflows for specific kinds of tasks. Use the creation and migration skills for any new EDS site or migration.
-
-* Imports content from reachable source pages and maps it to [default content and blocks.](#eds-basics)
-* Separates content migration from faithful design migration or a deliberate redesign.
-* Supports document-based and AEM authoring projects through their respective setup and delivery workflows.
-
-Detailed skills include page migration, bulk import, design extraction, header, navigation, and footer migration, and web scraping.
+Optional add-ons extend these capabilities when a project needs them: Figma import, Stardust guided redesign, project documentation, forms migration, commerce pages, block library setup, EDS troubleshooting, modern web guidance, and design craft. EMA offers to turn an add-on on when your request needs it, and you can save the choice in the repository so that it applies to the whole team. See [Optional Capabilities](console.md#optional-capabilities).
 
 ## Figma-Based Migrations and Page Creation {#figma}
 
@@ -293,7 +312,7 @@ EMA lets the AI agent work on your site without giving it the credentials that y
 
 ### What the AI Model Processes {#security-model-data}
 
-To perform your request, EMA can send the following to the large language model (LLM):
+To perform your request, EMA can send the following to the large language model (LLM) that it uses, currently a Claude model:
 
 * Your prompts and instructions.
 * Source page URLs, markup, and content, or exported CMS content.
@@ -301,7 +320,7 @@ To perform your request, EMA can send the following to the large language model 
 * Design and brand references, such as Figma designs and screenshots.
 * Generated content and code under review.
 
-Adobe does not use customer data to train or fine-tune LLMs.
+Adobe does not use your conversations or other customer data to train or fine-tune AI models.
 
 ### Control over Changes {#security-control}
 
@@ -326,7 +345,7 @@ Use only websites and designs that you are authorized to migrate. The selected w
 * Faithful design, accessibility, performance, and functional behavior require validation. A visual similarity score is not a production acceptance criterion.
 * Integrations, custom business logic, analytics, experimentation, and source-system features such as inheritance or content fragments need an explicit implementation and migration decision. Do not assume automated page import recreates them.
 
-Access to Auto mode and to [optional capabilities](console.md#optional-capabilities) can differ from access to the console. Check the controls and limits shown for your account. [AOE service scope](aoe-delivery.md#scope) is agreed separately from product capabilities.
+Auto mode is in early access and needs its own [access request](getting-started.md#brand-trial). Which [optional capabilities](console.md#optional-capabilities) are offered can depend on your account and project. Check the controls and limits shown for your account. [AOE service scope](aoe-delivery.md#scope) is agreed separately from product capabilities.
 
 ## Next Steps {#next-steps}
 

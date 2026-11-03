@@ -60,7 +60,7 @@ Name the source URLs/design nodes, destination paths, [authoring target](overvie
 
 ### Create markdown files in the project to document project-specific rules, guidelines, design decisions, or constraints. {#markdown-files}
 
-* Keep these files in the Git repository. EMA loads the project's `AGENTS.md` file at the start of every conversation. Use it for a short project summary, the rules that apply to most tasks, and an index of the other files with when to read each one.
+* Keep these files in the Git repository. EMA loads the project's `AGENTS.md` file at the start of every conversation, through the one-line `CLAUDE.md` file that the AEM boilerplate includes. Use `AGENTS.md` for a short project summary, the rules that apply to most tasks, and an index of the other files with when to read each one.
 * Put details such as block content conventions, section styles, design rules, and decisions in separate, focused files that `AGENTS.md` references. EMA reads them when a task needs them, so you don't need to name them in every prompt.
 * Ask EMA to update the files when you agree on a convention, and push them with the code. Do not duplicate built-in skills or store secrets. See [Project Instructions and Memory](project-instructions.md).
 

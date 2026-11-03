@@ -36,16 +36,24 @@ Everything up to [Start a New Conversation](#new-conversation) applies to every 
 | Source | What it contains | How long it lasts |
 |---|---|---|
 | Built-in skills | EMA's workflows for migration, design, block development, documentation, and other tasks. | Provided by Adobe and updated with each release. |
-| Current conversation | Your requests, the agent's answers, and what it read and changed. | The console keeps your project's conversation for a limited time so that you can continue it. When a conversation gets long, earlier messages are summarized and details can be lost. **Clear chat** starts a new conversation without the earlier history. |
+| Current conversation | Your requests, the agent's answers, and what it read and changed. | The console keeps your project's conversation so that you can continue it. When a conversation gets long, earlier messages are summarized and details can be lost. **Clear chat** starts a new conversation without the earlier history. |
 | Files in the console workspace | The checked-out Git repository, the working copy of imported content, and temporary migration files. | The workspace is a working copy. Code that you push stays in your Git repository, and content that you upload stays in your content destination. |
 
 EMA does not keep a separate memory of your preferences or of earlier conversations. Anything that it should know in every conversation must be in a file that it reads. Because the files are in your Git repository, they also help the other developers on the project and any other AI tools that they use with it.
 
 ## Use AGENTS.md as the Entry Point {#agents-md}
 
-`AGENTS.md` is a Markdown file at the root of the repository. It follows an [open format](https://agents.md/) that many AI coding agents read. EMA loads it at the start of every conversation and keeps it in its context while it works.
+`AGENTS.md` is a Markdown file at the root of the repository. It follows an [open format](https://agents.md/) that many AI coding agents read.
 
-Projects created from the current [AEM boilerplate](https://github.com/adobe/aem-boilerplate), for document-based content or for AEM authoring, include an `AGENTS.md` file with general EDS coding rules. They also include a one-line file that tells EMA to load `AGENTS.md`. Keep both files. If your project was created before the boilerplate included them, ask EMA to add them from the current boilerplate. To check what EMA loaded, start a new conversation and ask which project instructions it has.
+EMA currently uses Claude models, which load a file named `CLAUDE.md` from the repository root at the start of every conversation. The best practice, which the [AEM boilerplate](https://github.com/adobe/aem-boilerplate) follows, is a `CLAUDE.md` file with this single line:
+
+```text
+see @AGENTS.md
+```
+
+The `@` reference makes the agent load `AGENTS.md` together with `CLAUDE.md` and keep it in its context while it works. Write your project instructions in `AGENTS.md` and leave `CLAUDE.md` as this one line. Your instructions then stay in the open format that other AI tools also read, and the setup keeps working if the model that EMA uses changes. That model is an implementation detail, so don't write instructions that depend on it.
+
+Projects created from the current AEM boilerplate, for document-based content or for AEM authoring, include both files, and their `AGENTS.md` contains general EDS coding rules. Keep both files. If your project was created before the boilerplate included them, ask EMA to add them from the current boilerplate. To check what EMA loaded, start a new conversation and ask which project instructions it has.
 
 Add a short section for your project to `AGENTS.md`:
 
@@ -96,7 +104,7 @@ Follow these guidelines:
 * **Point to the code.** The code is the reference for how something is implemented. Describe the intent and the conventions, and name the file that implements them rather than copying code.
 * **No secrets.** These files are part of your repository. Never put passwords, tokens, or other credentials in them.
 
-EDS serves files that are committed to the repository unless they are excluded in the `.hlxignore` file. The AEM boilerplate's `.hlxignore` excludes Markdown files. If you add instruction files in another format, such as JSON or plain text, add them to `.hlxignore` as well.
+EDS serves files that are committed to the repository unless they are excluded in the `.hlxignore` file. The AEM boilerplate's `.hlxignore` excludes Markdown files and files whose names start with a dot. Write instruction files in Markdown so that they stay excluded; files in other formats, such as JSON or plain text, could otherwise be requested from the site's URLs. The console doesn't show `.hlxignore`, so if you need to change it, edit it in GitHub or in a local clone.
 
 ## Document Content Conventions {#content-conventions}
 
@@ -165,7 +173,7 @@ A skill is a set of instructions for one kind of task, often step by step. It wo
 
 To add a custom skill:
 
-1. Create a folder for the skill in a visible folder at the root of the repository, such as `skills/gallery-images/`, with a `SKILL.md` file in it.
+1. Create a folder for the skill in a visible folder at the root of the repository, such as `skills/gallery-images/`, with a `SKILL.md` file in it. Keep the skill's files in Markdown so that EDS doesn't serve them.
 1. Start the file with a one-line description of when to use the skill. Then add the steps, the checks that show the task succeeded, and a short example.
 1. List the skill in `AGENTS.md`, or in a `skills/README.md` index that `AGENTS.md` references, with the situation that calls for it. EMA reads the skill when a task matches that description.
 1. Test the skill in a new conversation with a task that should use it, then push it with the code.
@@ -174,8 +182,16 @@ A good way to write a skill is to ask EMA for it right after it has completed th
 
 > Write a skill in `skills/gallery-images/SKILL.md` that captures how you just extracted the gallery images, including the checks you used. Add it to the skills index in `AGENTS.md`.
 
->[!NOTE]
->
->The console's file views hide folders whose names start with a dot, apart from a few that EMA manages. You can't review or push files in those folders from the console, so keep custom skills in a visible folder such as `skills/`.
-
 Custom skills don't replace or change EMA's built-in skills. When a new release handles a task natively, remove the custom skill that covered it.
+
+### Why a skills Folder and Not .claude/skills {#skills-location}
+
+Claude-based agents, which EMA currently uses, also discover skills on their own in a `.claude/skills/` folder. A skill there loads natively: the agent sees only the skill's short description until a task matches it, can be asked for it by name, and can apply settings from the skill's header, such as which tools it may use. In EMA, this folder has a practical problem. The console hides root folders whose names start with a dot, and it can't stage or push files in them. You couldn't review such a skill in the console, and a skill that EMA wrote there would stay in your workspace unless the agent pushes it with its own [Git permission](console.md#settings-page).
+
+A `skills/` folder that `AGENTS.md` references works through the index instead. The agent reads the index line, decides that the skill applies, and opens its file. For most project skills, this works just as well. The trade-offs are small:
+
+* The index lines are part of `AGENTS.md`, so keep each to one line.
+* The agent chooses a skill from your index description, so describe clearly when to use it.
+* Settings in a native skill's header, such as which tools it may use, don't apply.
+
+If your team maintains the repository outside the console, for example with other Claude-based tools in a local editor, it can commit skills to `.claude/skills/<skill-name>/SKILL.md` instead. EMA's agent can then also load them from the checked-out repository, but you can't see or change them in the console.

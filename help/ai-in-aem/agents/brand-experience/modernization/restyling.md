@@ -81,14 +81,37 @@ For a CSS-only restyle, do not regenerate or reupload content unnecessarily. A g
 
 ## References, Prototypes, and Delivery {#design-output}
 
-EMA supports design work from source sites, Figma, and supplied references. Figma import and Stardust guided redesign are [optional capabilities](/help/ai-in-aem/agents/brand-experience/modernization/console.md#optional-capabilities) that EMA offers to turn on for your project when a request needs them.
-
-Stardust guided redesign takes several pages to a new design step by step. It extracts the current design, captures the direction you want, builds a prototype for review, and then migrates the pages to the new design. Use it when you want to move a site to a new look in stages rather than restyle one page or block. Optional design tools have different inputs and outputs; do not assume that they work the same way.
+EMA supports design work from source sites, Figma, and supplied references. Figma import and Stardust guided redesign are [optional capabilities](/help/ai-in-aem/agents/brand-experience/modernization/console.md#optional-capabilities) that EMA offers to turn on for your project when a request needs them. They have different inputs and outputs; do not assume that they work the same way.
 
 * For one Figma block, provide its component/node link. For a new page, provide a specific frame/page rather than an entire file.
 * Figma requires the relevant project capability, configured credentials, and permission to read the file. Do not put tokens in chat.
 * A static HTML design preview can be useful for choosing a direction, but it does not establish editable EDS documents or JCR pages.
 * If authorable delivery is required, explicitly request EDS content, suitable block models, and the correct persistence target. Complete [document-based](getting-started.md#upload-content) or [AEM authoring](getting-started-aem-authoring.md#validate-content) validation.
+
+### Stardust Guided Redesign {#stardust}
+
+Stardust guided redesign takes a site, or a set of its pages, to a new design in stages. It captures the current design, records the direction you want, builds before-and-after prototypes for review, and then turns the approved design into EDS blocks and content. Use it for a redesign across several pages rather than for restyling one page or block. It keeps its working files and its progress in a `stardust/` folder of the repository, so you can continue a redesign in a later conversation.
+
+You don't need to know the stages by name. Describe the result you want, for example "Redesign the home page and the product pages in a lighter, more editorial style", and EMA proposes the steps. You can also ask for one step directly:
+
+| Ask EMA to | What you get |
+|---|---|
+| Extract the current design | A capture of the site's design system, brand, color palette, typography, tone of voice, and page inventory. |
+| Define the redesign direction | A short product and design brief that records the direction you choose. Later steps follow it. |
+| Prototype pages in the new design | Before-and-after HTML prototypes of selected pages for review. These are static previews, not editable EDS content. |
+| Apply the design to all pages | The new design applied to every page of the inventory as static HTML, ready to deploy. |
+| Deploy the prototypes to EDS | EDS blocks and content built from the approved prototypes. |
+| Roll out the redesign | All pages deployed to EDS in the new design, or first only one page of each page type. |
+| Compare a page with its prototype | A visual and structural comparison that lists where the EDS page differs from the approved prototype. |
+| Run a quality check | A review of routing, design fidelity, accessibility, performance, SEO, and links, without changes to the site. |
+| Audit a site | A design, SEO, and AI-visibility audit, including Core Web Vitals. |
+| Propose redesign options | Three alternative redesigns of a page, to explore a direction quickly. |
+| Rebuild the same design on EDS | The site moved to EDS with its current design. |
+| Apply another site's design | The site's content placed onto the design of another website that you provide. |
+| Add dynamic features | Search, forms, and other features that depend on APIs or user interaction. |
+| Write a migration spec | A specification to agree before migrating, including redirects, handling of missing pages, and which blocks to reuse. |
+
+Stardust guided redesign also turns on the design craft add-on, which applies frontend design-quality guidance to each page. Review every stage before you continue, and validate the EDS result as described below.
 
 ## Validate and Recover {#validate}
 

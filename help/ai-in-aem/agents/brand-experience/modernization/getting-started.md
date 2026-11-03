@@ -50,9 +50,16 @@ Use a small, representative set of your own pages so that your first edit is use
 
 The steps below start with Auto mode, which migrates a site, or a list of pages you select, without step-by-step prompting. Auto mode is in early access. If you don't have access yet, the Auto mode page at [`aemcoder.adobe.io/auto`](https://aemcoder.adobe.io/auto) shows a form to request it. Auto mode is not a prerequisite for trying your content: without it, import a few pages with the guided [single-page import](#start-prompting) and continue from step 5.
 
+Auto mode and the guided workflow differ in how much the agent does before it hands back to you:
+
+* **Guided workflow:** EMA stops after it imports a page's content so that you can review it. You then ask it to migrate the design, to critique the result against the source page, and to make further improvements, checking each step.
+* **Auto mode:** EMA works through all these steps on its own. It imports the content, migrates the design, critiques the result, and keeps refining it until its critique finds the pages close to the source, without stopping for your review.
+
+Auto mode takes much longer than a guided import of the same pages because it checks and refines its own work, so it suits a first result that you collect later. By default, a full-site run migrates a preview of up to 10 pages. After the run, continue in the console to import further pages and refine the result with the guided workflow.
+
 1. Open Auto mode and provide your site URL, or choose selected pages and list their URLs. Review the scope, settings, and [limits](#auto-mode-limits) shown before you start.
    * For a protected source site, enter credentials in the authentication fields that Auto mode offers, not in chat.
-1. Start the run. A run can take several hours. You can leave the page; you receive an email when the run finishes.
+1. Start the run. A run can take up to 24 hours. You can leave the page; you receive an email when the run finishes. If the email doesn't arrive, check your spam folder.
 1. Review the run's status and result, including the preview, repository, report, and errors where available. A failed or partial run is not proof that all requested pages migrated.
 1. Open the resulting site with **Open site**. To continue in your own repository, use [**Make it yours**](#make-it-yours), or [connect an EDS site](#connect-repo) you already own.
 1. Ask for one useful change, such as correcting a heading or updating a call to action. Check it on the intended page and at mobile width.
@@ -61,13 +68,13 @@ The steps below start with Auto mode, which migrates a site, or a list of pages 
 
 The trial is complete when the content is editable and the useful change is retained, not merely when a preview link exists. A static design preview does not demonstrate remote authorable content.
 
-Access to Auto mode does not establish a general entitlement, page allowance, or retention period. Check the limits shown for your account and save work you want to keep. Auto mode produces document-based content. For JCR-backed delivery, use the [guided AEM authoring path](getting-started-aem-authoring.md).
+Access to Auto mode does not establish a general entitlement or page allowance. Check the limits shown for your account, and use **Make it yours** to keep the work in your own site. Auto mode produces document-based content. For JCR-backed delivery, use the [guided AEM authoring path](getting-started-aem-authoring.md).
 
 #### Auto Mode Limits {#auto-mode-limits}
 
 Auto mode limits each account by the number of pages per migration, the number of migrations, and how many migrations can run at the same time. The Auto mode page shows the limits that apply to you before you start:
 
-* A full-site migration uses the page allowance for your account. If your account allows it, you can choose how many pages to migrate.
+* A full-site migration migrates a preview of up to 10 pages by default, within the page allowance for your account. If your account allows it, you can choose how many pages to migrate. You can migrate the rest of the site later in the console.
 * When you select pages, a counter shows how many of the allowed pages you have selected. A run with more pages than your account allows cannot start.
 * If you have used all the migrations your account allows, or already have as many migrations running as allowed, Auto mode tells you so. Wait for a run to finish, or request more.
 * Use **Ask for a higher limit**, or the help button in the header, to ask the support team for more pages or migrations.

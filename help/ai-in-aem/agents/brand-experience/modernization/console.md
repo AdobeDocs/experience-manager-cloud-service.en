@@ -118,20 +118,35 @@ Core skills, such as site planning, page migration, bulk import, and header, nav
 
 * When your request needs an add-on, EMA offers to turn it on and asks for your confirmation first. The add-on is available from your next message.
 * You can also ask for an add-on directly, for example "Enable the forms migration capability", or describe your task and accept EMA's offer. To turn an add-on off, ask the agent in the chat.
-* The choice is saved with the project in the console workspace.
 
-| Add-on | What it is for |
-|---|---|
-| Figma import | Migrating blocks and creating pages from Figma designs. See [Figma block migration](prompting-guide.md#figma-block-migration). |
-| Stardust guided redesign | Redesigning several pages of a site to a new design direction, step by step. See [Restyle sites](restyling.md#design-output). |
-| Project documentation | Generating project and handover documentation as PDF guides. See [Project documentation](project-documentation.md). |
-| Forms migration | Migrating AEM Forms-based forms to EDS forms. |
-| Commerce pages | Detecting product detail and product listing pages and migrating them into commerce page templates. |
-| Block library setup | Setting up the library that authors use to find and insert your blocks. See [Block deliverables](block-development.md#block-deliverables). |
-| EDS troubleshooting | Diagnosing EDS problems on demand, such as blocks that don't render or changes that don't appear. See [Debugging](prompting-guide.md#debugging). |
-| Modern web guidance | Applying current web-platform best practices, for example for fonts, loading performance, accessibility, and layout, when the agent writes CSS and JavaScript. |
+| Add-on | ID | What it is for |
+|---|---|---|
+| Figma import | `excat-figma@excat-extended` | Migrating blocks and creating pages from Figma designs. See [Figma block migration](prompting-guide.md#figma-block-migration). |
+| Stardust guided redesign | `stardust@excat-extended` | Redesigning several pages of a site to a new design direction, step by step, and checking the result. See [Stardust Guided Redesign](restyling.md#stardust). |
+| Design craft | `impeccable@excat-extended` | Applying frontend design-quality guidance, such as typography, spacing, and visual hierarchy, to design work. Turned on automatically with Stardust guided redesign, and usable on its own. |
+| Project documentation | `project-management@excat-extended` | Generating project and handover documentation as PDF guides. See [Project documentation](project-documentation.md). |
+| Forms migration | `forms-excat@excat-extended` | Migrating AEM Forms-based forms to EDS forms. |
+| Commerce pages | `excat-commerce@excat-extended` | Detecting product detail and product listing pages and migrating them into commerce page templates. |
+| Block library setup | `excat-block-library@excat-extended` | Setting up the library that authors use to find and insert your blocks. See [Block deliverables](block-development.md#block-deliverables). |
+| EDS troubleshooting | `excat-support@excat-extended` | Diagnosing EDS problems on demand, such as blocks that don't render or changes that don't appear. See [Debugging](prompting-guide.md#debugging). |
+| Modern web guidance | `modern-web-guidance@excat-extended` | Applying current web-platform best practices, for example for fonts, loading performance, accessibility, and layout, when the agent writes CSS and JavaScript. |
 
 Which add-ons are offered can depend on your account and project.
+
+#### Turn On Add-ons for the Whole Project {#persist-add-ons}
+
+EMA saves the add-ons that you turn on in the `.agents/settings.json` file at the root of your repository. The file lists each add-on by its ID:
+
+```json
+{
+  "enabledPlugins": {
+    "excat-figma@excat-extended": true,
+    "stardust@excat-extended": true
+  }
+}
+```
+
+Push this file with your code. Every workspace that checks out the repository, including your team members' workspaces and new conversations, then starts with the same add-ons, without asking for them again. You can also ask EMA to change the file, or edit it in your Git repository and pull the change into the console. To turn an add-on off, set its value to `false` or remove its line. A change takes effect from your next message.
 
 ## Workspace Panel {#workspace-panel}
 
@@ -195,6 +210,10 @@ The **Code views** provides tools for browsing your project files and managing c
 
 * **Files** to browse the code files in the current workspace
 * **Changes** to view the diffs of files changes created by your work on the project
+
+>[!NOTE]
+>
+>The file views don't show files and folders at the root of the repository whose names start with a dot, such as `.github/`, `.claude/`, or `.hlxignore`. The exceptions are `.gitignore`, `.agents/`, and folders that EMA manages. You can't stage or push changes to hidden items from the console. To change them, edit them in GitHub or in a local clone, then pull the code into the console.
 
 ![Code view](assets/code-view.png)
 

@@ -89,7 +89,7 @@ Include:
 
 For JCR-backed projects, also retain model/configuration changes, site/DAM destinations, package/import results, and Universal Editor validation. For document-based projects, record the remote document location and any transfer/overwrite decisions.
 
-Reference the handover from the project's `AGENTS.md` file. EMA loads `AGENTS.md` at the start of every conversation and reads the files that it points to when a task needs them. See [Project Instructions and Memory](project-instructions.md). Never include tokens, passwords, or other secrets.
+Reference the handover from the project's `AGENTS.md` file. EMA loads `AGENTS.md` at the start of every conversation, through the project's `CLAUDE.md` file, and reads the files that it points to when a task needs them. See [Project Instructions and Memory](project-instructions.md#agents-md). Never include tokens, passwords, or other secrets.
 
 Date the handover and refresh it when the code, models, content, or deployment changes. Generated PDFs and a prior conversation can become stale; neither is proof of current release state.
 
