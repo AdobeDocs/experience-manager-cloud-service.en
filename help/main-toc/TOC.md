@@ -1127,6 +1127,7 @@ user-guide-title: AEM as a Cloud Service
      + [Table](/help/forms/interactive-communication//table.md)
      + [Line](/help/forms/interactive-communication/line.md)
      + [Barcode](/help/forms/interactive-communication/barcode.md)
+     + [Signature Field](/help/forms/interactive-communication/signature-field.md)
      + [Unbound Variable](/help/forms/interactive-communication/unbound-variable.md)
    + How To {#howto}
      + [Configure Data Binding](/help/forms/interactive-communication/configure-data-binding.md)
@@ -1138,6 +1139,7 @@ user-guide-title: AEM as a Cloud Service
      + [Implement Dynamic Page Numbering](/help/forms/interactive-communication/implement-dynamic-page-numbering.md)
      + [Handle Content Overflow](/help/forms/interactive-communication/handle-content-overflow.md)
      + [Support XDP Editing](/help/forms/interactive-communication/support-xdp-editing.md)
+     + [Configure Accessibility in Interactive Communication Editor](/help/forms/interactive-communication/accessibility-ic-editor.md)
      + {hide-from-toc} [Copy and Paste Interactive Communication](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
      + [Start Workflow in Interactive Communication](/help/forms/interactive-communication/start-workflow-in-interactive-communication-editor.md)
      + [Configure Locale in Interactive Communication Editor](/help/forms/interactive-communication/support-localization.md)
