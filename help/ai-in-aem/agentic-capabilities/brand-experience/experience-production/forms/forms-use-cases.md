@@ -33,15 +33,15 @@ This capability is part of [Experience Production](/help/ai-in-aem/agentic-capab
 
 Some of the key benefits of the Forms Agentic Capability include:
 
-* **Faster form authoring**: Create an Adaptive Form from a description, brief, screenshot, or PDF. Import PDF and XDP files stored in AEM's Digital Assets Management (DAM) repository.
+* **Faster form authoring**: Create an Adaptive Form from a natural-language prompt, brief, screenshot, or PDF. Import PDF and XDP files stored in AEM's Digital Assets Management (DAM) repository.
 
-* **Rules and validation**: Describe the conditions, calculations, or validation you need. Coworker creates a rule or updates an existing one.
+* **Business rules and validation**: Describe the conditions, calculations, or validation you need. Coworker creates or updates business rules that control the dynamic behavior of Adaptive Forms.
 
 * **Reduced dependency on form authors/developers**: Business users can create, edit, and configure forms conversationally without needing hands-on design or development support for routine changes.
 
 * **Consistency across brand and compliance rules**: Apply guidelines documents and organizational standards directly to forms, reducing drift between what's built and what's required.
 
-* **Service calls and integrations**: Call services from form rules and create or update REST API integrations. Choose where submitted data is sent, such as cloud storage or Adobe Experience Platform.
+* **Service calls and integrations**: Call services from form rules and create or update REST API integrations. Choose where submitted data is sent, such as cloud storage, email, or supported backend systems like Adobe Experience Platform and Marketo.
 
 * **Works across form types**: One conversational interface for both Edge Delivery Services and Core Components forms, so you don't need to know which stack a form is built on.
 
@@ -77,7 +77,7 @@ The Forms Agentic Capability provides the following key skills:
 
 * **Business logic and validation authoring**
 
-  Describe show/hide conditions, calculations, validation, or event-driven actions in plain language. Add a rule or change an existing one, then review it in the [rule editor for Core Components](/help/forms/rule-editor-core-components.md) or [rules for Edge Delivery Services](/help/edge/docs/forms/rules-forms.md).
+  Describe show/hide conditions, calculations, validation, or event-driven actions in plain language. Add a business rule or change an existing one to control the dynamic behavior of an Adaptive Form, then review it in the [rule editor for Core Components](/help/forms/rule-editor-core-components.md) or [rules for Edge Delivery Services](/help/edge/docs/forms/rules-forms.md). The skills can use existing custom functions created by developers, but do not create custom functions.
 
 * **Call services from form rules**
 
