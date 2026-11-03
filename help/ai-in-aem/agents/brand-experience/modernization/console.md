@@ -122,8 +122,8 @@ Core skills, such as site planning, page migration, bulk import, and header, nav
 | Add-on | ID | What it is for |
 |---|---|---|
 | Figma import | `excat-figma@excat-extended` | Migrating blocks and creating pages from Figma designs. See [Figma block migration](prompting-guide.md#figma-block-migration). |
-| Stardust guided redesign | `stardust@excat-extended` | Redesigning several pages of a site to a new design direction, step by step, and checking the result. See [Stardust Guided Redesign](restyling.md#stardust). |
-| Design craft | `impeccable@excat-extended` | Applying frontend design-quality guidance, such as typography, spacing, and visual hierarchy, to design work. Turned on automatically with Stardust guided redesign, and usable on its own. |
+| Guided redesign | `stardust@excat-extended` | Redesigning several pages of a site to a new design direction, step by step, and checking the result. See [Guided Redesign](restyling.md#guided-redesign). |
+| Design craft | `impeccable@excat-extended` | Applying frontend design-quality guidance, such as typography, spacing, and visual hierarchy, to design work. Turned on automatically with guided redesign, and usable on its own. |
 | Project documentation | `project-management@excat-extended` | Generating project and handover documentation as PDF guides. See [Project documentation](project-documentation.md). |
 | Forms migration | `forms-excat@excat-extended` | Migrating AEM Forms-based forms to EDS forms. |
 | Commerce pages | `excat-commerce@excat-extended` | Detecting product detail and product listing pages and migrating them into commerce page templates. |
@@ -141,7 +141,7 @@ EMA saves the add-ons that you turn on in the `.agents/settings.json` file at th
 {
   "enabledPlugins": {
     "excat-figma@excat-extended": true,
-    "stardust@excat-extended": true
+    "forms-excat@excat-extended": true
   }
 }
 ```

@@ -191,7 +191,7 @@ This page lists the user-facing changes in each release of the Experience Modern
 * **Rename block variants:** Block variants keep a stable identity when the catalog is regenerated, so a renamed variant keeps its name and type. See [Planning actions.](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md#planning-actions)
 * **Act on several items at once:** Select multiple templates or pages and apply an AI action to all of them at once. See [Planning actions.](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md#planning-actions)
 * **Create a page from a Figma design:** A suggested prompt on the **Home** page starts building a page from a Figma design. See [Create a new page from Figma.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-new-page-from-figma)
-* **Optional design skills:** The Stardust design skill is available as an optional plugin, so projects that don't need it stay lighter. See [Optional capabilities.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#optional-capabilities)
+* **Optional design skills:** Guided redesign is available as an optional add-on, so projects that don't need it stay lighter. See [Optional capabilities.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#optional-capabilities)
 
 ### Other Improvements {#release-2026-09-17-other-improvements}
 

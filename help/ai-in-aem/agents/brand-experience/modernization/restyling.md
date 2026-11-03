@@ -81,16 +81,16 @@ For a CSS-only restyle, do not regenerate or reupload content unnecessarily. A g
 
 ## References, Prototypes, and Delivery {#design-output}
 
-EMA supports design work from source sites, Figma, and supplied references. Figma import and Stardust guided redesign are [optional capabilities](/help/ai-in-aem/agents/brand-experience/modernization/console.md#optional-capabilities) that EMA offers to turn on for your project when a request needs them. They have different inputs and outputs; do not assume that they work the same way.
+EMA supports design work from source sites, Figma, and supplied references. Figma import and guided redesign are [optional capabilities](/help/ai-in-aem/agents/brand-experience/modernization/console.md#optional-capabilities) that EMA offers to turn on for your project when a request needs them. They have different inputs and outputs; do not assume that they work the same way.
 
 * For one Figma block, provide its component/node link. For a new page, provide a specific frame/page rather than an entire file.
 * Figma requires the relevant project capability, configured credentials, and permission to read the file. Do not put tokens in chat.
 * A static HTML design preview can be useful for choosing a direction, but it does not establish editable EDS documents or JCR pages.
 * If authorable delivery is required, explicitly request EDS content, suitable block models, and the correct persistence target. Complete [document-based](getting-started.md#upload-content) or [AEM authoring](getting-started-aem-authoring.md#validate-content) validation.
 
-### Stardust Guided Redesign {#stardust}
+### Guided Redesign {#guided-redesign}
 
-Stardust guided redesign takes a site, or a set of its pages, to a new design in stages. It captures the current design, records the direction you want, builds before-and-after prototypes for review, and then turns the approved design into EDS blocks and content. Use it for a redesign across several pages rather than for restyling one page or block. It keeps its working files and its progress in a `stardust/` folder of the repository, so you can continue a redesign in a later conversation.
+Guided redesign takes a site, or a set of its pages, to a new design in stages. EMA captures the current design, records the direction you want, builds before-and-after prototypes for review, and then turns the approved design into EDS blocks and content. Use it for a redesign across several pages rather than for restyling one page or block. EMA keeps the working files and progress of a redesign in the repository, so you can continue it in a later conversation.
 
 You don't need to know the stages by name. Describe the result you want, for example "Redesign the home page and the product pages in a lighter, more editorial style", and EMA proposes the steps. You can also ask for one step directly:
 
@@ -111,7 +111,7 @@ You don't need to know the stages by name. Describe the result you want, for exa
 | Add dynamic features | Search, forms, and other features that depend on APIs or user interaction. |
 | Write a migration spec | A specification to agree before migrating, including redirects, handling of missing pages, and which blocks to reuse. |
 
-Stardust guided redesign also turns on the design craft add-on, which applies frontend design-quality guidance to each page. Review every stage before you continue, and validate the EDS result as described below.
+Turning on guided redesign also turns on the design craft add-on, which applies frontend design-quality guidance to each page. Review every stage before you continue, and validate the EDS result as described below.
 
 ## Validate and Recover {#validate}
 
