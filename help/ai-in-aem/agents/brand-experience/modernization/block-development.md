@@ -52,14 +52,14 @@ These are project conventions, not universal EMA authoring controls. Do not inve
 
 ### Example: A Flexible Teaser Without Atomic Blocks {#composition-example}
 
-Component-based AEM projects often provide separate heading, image, text, and button components so that authors can combine them. In EDS, authors write the same elements directly as default content, either in a section or in a block cell:
+Component-based AEM projects often provide a teaser component, or separate heading, image, text, and button components, so that authors can combine them. The home page of the [WKND sample site for AEM](https://wknd.site/us/en.html), for example, promotes each trip with a Core Components teaser. In EDS, authors write the same elements directly as default content, either in a section or in a block cell:
 
 ```text
 [Image]
-## Book a consultation
-Find a certified provider near you.
-**[Find a provider](/find)**
-_[Learn more](/learn)_
+## Downhill Skiing Wyoming
+A skier's paradise far from crowds and close to nature.
+**[View trip](/adventures/downhill-skiing-wyoming)**
+_[All adventures](/adventures)_
 ```
 
 In the current [AEM boilerplate](https://github.com/adobe/aem-boilerplate), a link that is alone in its paragraph becomes a button when it is formatted: bold for a primary button, italic for a secondary button, and bold plus italic for an accent button. A plain link, or a link inside a sentence, remains a link. Global styles give these buttons the same appearance in default content and inside blocks.
