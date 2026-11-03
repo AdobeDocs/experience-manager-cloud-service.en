@@ -100,6 +100,10 @@ When EDS renders a page, it turns the authored content into plain semantic HTML:
 * A **block** is a reusable component, such as a hero or a set of cards. In the HTML, it is a `div` with the block name as its class. The project's `blocks/<name>/<name>.js` and `blocks/<name>/<name>.css` decorate it in the browser.
 * **Sections** split a page into groups of default content and blocks, for example to give part of a page a different background.
 
+Content and styling are separate concerns. The content is a plain document of headings, text, images, and links, grouped into sections and blocks; with AEM authoring, the same structure is stored in the JCR. The project's CSS and JavaScript decide how that content looks and behaves, and the JavaScript adds in the browser any extra markup that a layout needs. The same content can therefore take a new design without being restructured. EMA can change both, but a design change usually needs only CSS and JavaScript, and a content change usually needs no code.
+
+Keep the content structure semantic and simple, because authors work with it every day. Use default content wherever it works, and add a block only where the page needs a structure or behavior that default content can't provide. Avoid blocks inside blocks, and keep the number of blocks and variants small. [David's Model](https://www.aem.live/docs/davidsmodel) explains these and other content-modeling rules for EDS, and EMA applies them when it maps imported content to default content and blocks.
+
 Most projects start from the [AEM boilerplate](https://github.com/adobe/aem-boilerplate), which is written in plain JavaScript and CSS.
 
 #### How Changes Go Live {#code-content-lifecycle}

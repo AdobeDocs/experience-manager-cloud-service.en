@@ -69,7 +69,7 @@ Start with one template and a small set of pages. For example:
 
 > Migrate only these authorized product pages: [URLs]. Target [document-based or JCR persistence] at [destination paths]. Preserve approved text, links, metadata, and image meaning. Reuse the project's blocks and content conventions. Report missing content and unsupported interactions. Do not upload, push, or publish.
 
-1. Review content mapping. Prefer headings, paragraphs, lists, and images as default content, outside any block; use blocks for content that needs a reusable model or behavior.
+1. Review content mapping. Prefer headings, paragraphs, lists, and images as default content, outside any block; use blocks for content that needs a reusable model or behavior. Authors will edit every migrated page in this structure, so settle it on the representatives. See [David's Model](https://www.aem.live/docs/davidsmodel).
 1. Compare imported text, links, images, metadata, and section order against the source. Fix the reusable parser, transformer, or mapping when a pattern is wrong. These are the import scripts EMA generates: a parser converts one block's source HTML, and a transformer cleans up the whole page.
 1. Apply source styling or follow the [redesign workflow](restyling.md#during-migration). Check global styles before refining individual blocks.
 1. Complete the shared header, navigation, and footer separately from page import. EMA migrates them, including footer images, with dedicated skills, so that every page shares one header and one footer.

@@ -39,6 +39,8 @@ HTML elements are the basic building units, or atoms: headings, paragraphs, link
 
 A block adds a reusable content structure or behavior where default content is insufficient. In the HTML that EDS serves, a block is a `div` with the block name as its class. The project's `blocks/<name>/<name>.js` and `blocks/<name>/<name>.css` decorate it in the browser. Keep a block lightweight and focused; a visual difference alone does not always need a new block.
 
+[David's Model](https://www.aem.live/docs/davidsmodel) collects the aem.live rules for content that authors can create easily: prefer default content, avoid blocks inside blocks, keep the number of blocks and variants small, and let buttons take their style from the block or section that they are in. When a block does the same job as one in the [Block Collection](https://www.aem.live/developer/block-collection), reuse that block's content model.
+
 Check the project's conventions before generating code:
 
 | Need | Decision to check |

@@ -108,7 +108,7 @@ EDS serves files that are committed to the repository unless they are excluded i
 
 ## Document Content Conventions {#content-conventions}
 
-Authors work best with lean content structures: a heading, some text, an image, and a link, without extra fields. To keep the content that simple, the implementation relies on conventions, such as which content is optional or how the position of an element changes its role. Authors, developers, and EMA can only follow those conventions if they are written down.
+Authors work best with lean content structures: a heading, some text, an image, and a link, without extra fields. To keep the content that simple, the implementation relies on conventions, such as which content is optional or how the position of an element changes its role. Authors, developers, and EMA can only follow those conventions if they are written down. [David's Model](https://www.aem.live/docs/davidsmodel) describes the general rules for such structures; reference it from your content conventions and write down only your project's own decisions.
 
 Conventions that are worth documenting include:
 

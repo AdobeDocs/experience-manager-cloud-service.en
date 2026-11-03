@@ -249,15 +249,16 @@ Importing pages from an existing website is the most common way to start. In the
    ![Content import](assets/content-import.png)
 1. Once the page is imported, the **Workspace** panel shows it. Select the page to render it in the console's preview panel on the right. This preview shows the working copy in the console workspace, not the EDS preview site.
    ![Content imported](assets/content-imported.png)
+1. Check the page's structure as well as its text. The **Document view** of the preview panel shows how the content is split into sections, blocks, and default content; see [Content Views](console.md#content-view). Headings, text, images, and links should be default content, with blocks only where the page needs a layout or behavior that default content can't provide. Authors will edit this structure, so ask EMA to simplify it now, before more pages reuse it. See [How EDS Pages Work](overview.md#eds-basics).
 1. Upload the content, so that it is saved and authors can edit it. Until you upload it, the imported page exists only in the console workspace, and pushing code doesn't save it.
    * For document-based content, see [Upload Content](#upload-content). You can then open the page and edit it.
    * For AEM authoring, see [Upload Content](getting-started-aem-authoring.md#upload-content) in the AEM authoring guide.
-1. Now that you have content, request faithful source styling, or explicitly choose a [new target design](restyling.md).
+1. Now that you have content, request faithful source styling, or explicitly choose a [new target design](restyling.md). Styling changes only the project's CSS and JavaScript; the content that you uploaded stays as it is.
    * "Import the general styles from `https://www.example.com/about`, then style the blocks used on `/about`. Preserve the imported content."
 1. As with the initial content import, the import may take several minutes and the console provides feedback as it processes your request and imports the styles. Once the task is complete, click **Refresh preview** in the right panel to view the styled content.
    ![Styles imported](assets/styles-imported.png)
 1. Review the styled page at desktop and mobile widths. Compare its text, links, images, and structure with the source page, and ask EMA to fix what differs.
-1. Push the code, so that the new blocks and styles are saved in your repository and show on the site's preview. See [Push Code Changes](#push-code-changes). If the styling step also changed the page's content, upload the page again.
+1. Push the code, so that the new blocks and styles are saved in your repository and show on the site's preview. See [Push Code Changes](#push-code-changes).
 
 Page import does not finish shared navigation and footer automatically; request those separately when needed. Next, [preview and publish](#save-work) the page. For more pages, repeat these steps and ask EMA to reuse the blocks that it has created. Once your first pages look right, ask EMA to document its blocks and styles for later conversations; see [Prompting Tips](#prompting-tips).
 
@@ -299,6 +300,7 @@ Replace the example URLs and paths with your own.
 * Ask for one change at a time, and check it before you ask for the next one.
 * Attach a screenshot or a design when it explains the result better than words.
 * Say what the agent must not do, such as "Do not upload, push, or publish."
+* To change how pages look, ask for a styling change. CSS and JavaScript can restyle the existing content, so a new look doesn't require restructuring or reimporting pages.
 * For a change that spans several pages or shared styles, you can switch to [Plan mode](console.md#prompt-input) to review the steps before anything changes.
 * If a long task stops before it finishes, ask the agent to continue.
 
