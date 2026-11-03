@@ -104,7 +104,7 @@ Adobe has renamed several of these products. The table maps the names that appea
 | AEM Code Connector | The GitHub app that lets the console push changes and open pull requests in your repository. |
 | Experience Workspace | The visual authoring UI for document-based EDS content, at `da.live`. It was formerly called Document Authoring (DA), and some console labels still use that name. See [Document-Based Persistence](#document-based). |
 | Universal Editor | Adobe's visual editor for content stored in AEM. EDS projects with AEM authoring use it. |
-| AEM authoring, JCR persistence | EDS with content stored in AEM's Java Content Repository (JCR) on an AEM as a Cloud Service author instance and edited in the Universal Editor. Previously called Crosswalk, hence `xwalk` in template repository names. |
+| AEM authoring, JCR persistence | EDS with content stored in AEM's Java Content Repository (JCR) on an AEM as a Cloud Service author instance and edited in the Universal Editor. Previously called Crosswalk. |
 | IMS | Adobe's identity service, which handles sign-in with your Adobe ID. |
 
 ## Where Content Is Stored and How Authors Edit It {#content-storage}
@@ -202,7 +202,7 @@ Detailed capabilities include block development, content modeling, reference blo
 The Experience Modernization Console is EMA's web-based, AI-assisted development environment for EDS, at [`aemcoder.adobe.io`.](https://aemcoder.adobe.io)
 
 * The console requires no local setup, so you can start prompting changes in natural language right away.
-* You perform day-to-day development tasks, check the result in the console's preview and then on the EDS preview site, and upload content to your authoring destination.
+* You perform day-to-day development tasks, check the result in the console's preview, upload content to your authoring destination, and check it again on the EDS preview site.
 * The console supports enterprise governance through standard GitHub review workflows.
 * The AI agent works without receiving the credentials that you configure. See [Security and Data Handling.](#security)
 
