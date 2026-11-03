@@ -33,7 +33,7 @@ For a few demonstration pages or an initial evaluation, use the smaller [demo an
 
 ## Agree Scope and Destinations {#scope}
 
-You need authorization to read the source, modify the target repository, and write content and assets to the destination. Agree who accepts the result and who authorizes release.
+You need authorization to read the source, modify the target repository, and write content and assets to the destination. Agree who accepts the result and who authorizes release. If the source uses bot protection, arrange access with its administrator before cataloging. See [source sites with bot protection](getting-started.md#bot-protection).
 
 Record:
 

@@ -265,7 +265,7 @@ The folder also contains intermediate files, including per-page analysis and scr
 
 The site catalog skill has the following limitations.
 
-* **Source access** — The catalog workflow must be able to reach and read the authorized source. Do not assume that authentication configured for auto mode also applies to cataloging, or that a browser login provides backend access. Verify a representative protected URL before planning a catalog run.
+* **Source access** — The catalog workflow must be able to reach and read the authorized source. Do not assume that authentication configured for auto mode also applies to cataloging, or that a browser login provides backend access. Verify a representative protected URL before planning a catalog run. If bot protection blocks discovery or analysis, see [source sites with bot protection](getting-started.md#bot-protection).
 * **Interaction-dependent content** — Client-rendered or CSS-hidden content is not inherently excluded, but content requiring additional user interaction to appear may not be captured. Inspect the screenshots and source content.
 * **Coverage** — Discovery and analysis do not guarantee a complete inventory. Record failures, missing URLs, and approved exclusions.
 

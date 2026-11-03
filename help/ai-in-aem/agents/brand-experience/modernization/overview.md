@@ -147,7 +147,7 @@ If you are interested in the AOE model for your next migration:
 
 ## Limitations {#limitations}
 
-Use only websites and designs that you are authorized to migrate. The selected workflow must be able to reach and read the source.
+Use only websites and designs that you are authorized to migrate. The selected workflow must be able to reach and read the source. If the site uses bot protection, arrange access with its administrator. See [source sites with bot protection](getting-started.md#bot-protection).
 
 * In the console, **Protected site authentication** in [Settings](console.md#settings-page), where available, lets the agent reach password-protected source sites using basic, bearer, or custom-header credentials. Auto mode offers its own authentication fields. Neither establishes access to VPN-only sources. Use the credential controls offered by your workflow; do not put secrets in chat.
 * Client-rendered content can be captured when available at the page URL. Content present in the DOM but hidden by CSS can also be extracted. Content requiring additional interactions needs representative checks and may need a different extraction approach.

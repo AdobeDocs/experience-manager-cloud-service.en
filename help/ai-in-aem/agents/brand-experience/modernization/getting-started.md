@@ -246,11 +246,24 @@ If your workflow offers transfer to another document-based project, confirm the 
 
 ## Troubleshooting {#troubleshooting}
 
-If import fails, retain the error and exact source URL. Check source reachability and permissions, correct the extraction or mapping, and retry one affected page before repeating a batch. Do not bypass source access controls.
+If import fails, retain the error and exact source URL. Check source reachability and permissions, correct the extraction or mapping, and retry one affected page before repeating a batch. Do not bypass source access controls. If the source site blocks automated access, see [Source Sites with Bot Protection](#bot-protection).
 
 If a change is missing, check each location separately: the console workspace, uploaded remote content, pushed code branch, and previewed page. Reimport can overwrite local content changes; save or reconcile author edits first.
 
 Before reset, discard, replacement, or overwrite, preserve the affected work. Recover code through your repository workflow and restore content separately through the authoring system's available recovery process. A code revert alone does not undo remote document writes.
+
+### Source Sites with Bot Protection {#bot-protection}
+
+Bot protection in a content delivery network (CDN) or web application firewall (WAF) can block or challenge automated access to a source site. This can affect URL discovery, the site catalog, page capture, and import in any workflow, not only auto mode. Typical signs are access-denied errors such as HTTP 403, 429, or 503, URLs missing after discovery, failed pages, or a challenge or verification page captured instead of the page content.
+
+Migrate only sites that you own or are authorized to migrate. Arrange access with the site's administrator rather than working around the protection:
+
+1. Ask the administrator to allow access for the migration period, for example by allowlisting the [backend addresses](#allowlist-ip-addresses) in the CDN or WAF.
+1. If the protection accepts a credential instead, such as a secret request header, enter it in the authentication controls offered by your workflow, such as **Protected site authentication** in [Settings](console.md#settings-page). Use a scoped credential and remove it when the migration is complete.
+1. If the administrator provides an accessible staging or origin host with the same content, use it as the source and record which host the content came from.
+1. If only discovery is blocked, provide the list of page URLs to migrate instead.
+
+Verify one representative page before you start a catalog or batch run. After access changes, retry the failed pages, and check captures for challenge or access-denied pages before you accept the content.
 
 ### Allowlist IP Addresses {#allowlist-ip-addresses}
 
