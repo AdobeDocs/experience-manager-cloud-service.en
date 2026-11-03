@@ -392,7 +392,7 @@ Use this prompt to create new blocks or modify existing ones.
   * PR validation links for PageSpeed Insights (PSI) checks
   * Living documentation for authors
   * Discovery of edge cases that code-first approaches miss
-* The agent will search for similar blocks in the [Block Collection](https://www.aem.live/developer/block-collection) and [Block Party](https://www.aem.live/developer/block-party/) before implementing, to find patterns and reusable code.
+* The agent will check your project's existing blocks, then search for similar blocks in the [Block Collection](https://www.aem.live/developer/block-collection) and [Block Party](https://www.aem.live/developer/block-party/) before implementing, to find patterns and reusable code. To point it to your own block library, or to give it a reference page or screenshot, see [Prompt for a Block](block-development.md#block-prompts).
 * Skip CDD only for trivial CSS-only tweaks (but still identify test content for validation).
 
 ### Content Modeling {#content-modeling}
@@ -412,7 +412,7 @@ Use this prompt to design the table structure that authors work with when creati
   * **Collection:** Repeating semi-structured content (cards, carousel)
     * Table with repeating row pattern
   * **Configuration:** API-driven or dynamic content where config controls display (blog listing, search results)
-    * Table with key-value config rows.
+    * Table with key-value config rows. See [Build a Dynamic Block](block-development.md#dynamic-blocks).
   * **Auto-Blocked:** Complex structures that authors create as sections/default content, then get transformed (tabs, YouTube embeds)
 * Keep authored structures simple and group related elements naturally. A modelling guideline is not a universal four-cell platform limit.
 * For JCR-backed authoring, also define and validate the component models, mappings, and generated configuration. See [block development](block-development.md#create).

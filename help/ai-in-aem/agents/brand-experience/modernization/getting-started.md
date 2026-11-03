@@ -145,6 +145,7 @@ An EDS project keeps its code (blocks, styles, and scripts) in a Git repository 
    * This can be an existing EDS project, or you can create a new one by following the [developer tutorial](https://www.aem.live/developer/tutorial), which uses the [boilerplate repository.](https://github.com/adobe/aem-boilerplate)
 1. Ensure that the [AEM Code Connector](https://github.com/apps/aem-code-connector) GitHub app is installed in the repository.
    * This lets the console push changes and open pull requests in your repository. Until it is installed, the console can't push code or open pull requests.
+   * If the app is installed for selected repositories only, include this one. If your organization requires approval for GitHub apps, an organization owner must approve it.
 1. Ensure that the [AEM Code Sync GitHub app](https://github.com/apps/aem-code-sync) is installed in the repository.
    * This lets EDS fetch your code so that it can serve your site.
    * If your repository is based on the tutorial, this step is already complete.
@@ -157,7 +158,7 @@ The two apps have similar names but different jobs: one lets EDS serve your site
 
 >[!IMPORTANT]
 >
->EMA pushes changes and opens pull requests in your repository. The access token you create in Cloud Manager must grant write access to repository code, alongside the permissions listed at [step 8 of Add external repositories.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/external-repositories)
+>EMA pushes changes to your repository. For repositories connected through Cloud Manager, it pushes a branch but doesn't open a pull request; open one in your Git host if you need a review. The access token you create in Cloud Manager must grant write access to repository code, alongside the permissions listed at [step 8 of Add external repositories.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/external-repositories)
 >
 >**Already onboarded a token without write access?** You do not need to re-onboard the repository. In Cloud Manager, go to **Repositories > Manage Access Tokens**, edit the token, and paste a value that includes write access. Cloud Manager revalidates the associated repositories automatically. See [Manage access tokens.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/manage-access-tokens#edit-access-tokens)
 
@@ -181,7 +182,7 @@ Connect a new or existing EDS project. If your console workspace has changes you
 
 1. Click **Demo site** in the header and then **Switch site**, or use **Switch site** in [Settings](console.md#settings-page).
 1. This prompts you to authorize the AEM Code Connector app using your GitHub credentials. Click **Authorize AEM Code Connector**.
-   * For GitHub Enterprise, or when OAuth sign-in isn't available, click **Sign in with a token** instead. Enter the **GitHub Host** and a **Personal Access Token**. A fine-grained token limited to the repositories you need is recommended.
+   * For GitHub Enterprise, or when OAuth sign-in isn't available, open **More ways to connect** and click **Sign in with a token** instead. Enter the **GitHub Host** and a **Personal Access Token**. A fine-grained token limited to the repositories you need is recommended. The token must be able to read your user account and push to the repository; with a token, the console lists only repositories that you can push to.
 1. Back in the console, specify the preview URL of the site. Preview URLs follow the pattern `https://{branch}--{site}--{organization}.aem.page`, where `{site}` is the GitHub repository name and `{organization}` is the GitHub organization or user that owns it. You can copy one by previewing any page of the site, or construct it from those names. Older projects and documentation may show the earlier `hlx.page` domain. The console finds the associated GitHub repository automatically. Alternatively, you can search through your authorized GitHub projects to find a site.
    ![Connecting to GitHub project](assets/connect-site-and-github.png)
 1. Click **Checkout to workspace** once the site has been verified. This copies the project into your console workspace.
@@ -190,7 +191,7 @@ Connect a new or existing EDS project. If your console workspace has changes you
 
 Your site and its GitHub repository are now connected to the console.
 
-Confirm the connected repository, branch, and content destination before requesting changes.
+Confirm the connected repository, branch, and content destination before requesting changes. You need write access to the repository to connect it. If your organization or repository isn't listed, or the console can't verify the preview URL, see [Git Connection Problems](#git-connection).
 
 ![Site connection](assets/first-sign-on.png)
 
@@ -260,18 +261,21 @@ Open an uploaded document, make an edit, save, and reopen it to check authorabil
 
 ## Push Code Changes {#push-code-changes}
 
-Review the code diff and run the project's checks before pushing. Use a pull request for work requiring review. Branch rules are enforced by your repository's protections; the optional plan mode does not enforce them.
+Review the code diff and run the project's checks before pushing. Use a pull request for work requiring review. Branch rules are enforced by your repository's protections; the console and the optional plan mode do not enforce them. See [Control over Changes](overview.md#security-control).
 
 1. Optionally, switch to **Changes** view (branch icon in the view picker) to review the diff.
    ![Code view](assets/code-view-git-changes.png)
 1. Open **Sync** in the workspace header and select **Push** > **Code**.
 1. In the **Stage changes** dialog, stage the files you want to push and click **Continue**.
 1. In the **Push changes** dialog, enter a commit message. Choose to create a new PR (default) or push to the current branch and click **Confirm** to push.
-   * Push directly to the current branch only when your project's policy permits it and you intend to change that branch. A push to `main` changes the live site's code immediately.
+   * **Create new PR** pushes a new branch, named `aem-` followed by the date and time, and opens a pull request into the current branch.
+   * **Push to current branch** adds the commit to the current branch, and updates its pull request if it has one. Use it only when your project's policy permits it and you intend to change that branch. A push to `main` changes the live site's code immediately.
 1. Once complete, a notification appears at the bottom of the console.
    ![View PR](assets/view-pr.png)
 
-If a pull request was created, click **View PR** in the completion notification. Otherwise, verify the commit on the destination branch.
+If a pull request was created, click **View PR** in the completion notification. Otherwise, verify the commit on the destination branch. For repositories connected through Cloud Manager, the console pushes the branch without opening a pull request.
+
+If the branch has changed in the repository since your last pull, the console tries to apply your commit on top of the remote changes and push again. If that fails, it shows **Push failed: Remote has conflicting changes** and switches the dialog to **Create new PR**, so that you can push to a new branch and resolve the conflict in the pull request. If the branch is protected against direct pushes, push with **Create new PR**.
 
 ![Code in GitHub](assets/code-in-github.png)
 
@@ -323,6 +327,22 @@ Code and content use different accounts. Code is pushed with your GitHub connect
 
 If an upload, pull, or transfer says that your Document Authoring session may have expired, sign in again and retry. The console shows the same message when the session is valid but your Adobe account doesn't have write access to the site's content. If it persists, ask the site's administrator to confirm that your account, with the email address and organization that you use in the console, can write to the site in Experience Workspace. Access to AEM in Adobe Admin Console doesn't by itself grant write access to a site's content. If the console says that you are rate limited, wait a minute and retry.
 
+### Git Connection Problems {#git-connection}
+
+The console connects to GitHub through the AEM Code Connector app, or with a personal access token. EDS reads your code through a different app, AEM Code Sync.
+
+|Problem|What to do|
+|---|---|
+|Your organization or repository isn't listed.|Install the [AEM Code Connector](https://github.com/apps/aem-code-connector) app on the organization or account. If the app is installed for selected repositories only, add this one. If your organization requires approval for GitHub apps, ask an organization owner to approve it. With a token, the console lists only repositories that you can push to.|
+|**You don't have write access to** the repository.|Connecting needs push access. Ask a repository administrator for write access, or connect another repository.|
+|The console can't verify the preview URL.|Check that the URL follows the pattern `https://{branch}--{site}--{organization}.aem.page` and that the [AEM Code Sync](https://github.com/apps/aem-code-sync) app is installed in the repository.|
+|**Pushing is disabled until the AEM Code Connector app is installed**, or **AEM Code Connector required**.|The console can read the repository but can't write to it. Install the AEM Code Connector app on the repository. AEM Code Sync alone isn't enough: it lets EDS read your code, not the console change it.|
+|**Invalid or expired token**, or the token lacks user read access.|Create a new token. Use a classic token, or a fine-grained token that can read your user account and write to the repository's contents.|
+|**Allow LLM to use my git credentials** isn't in Settings.|The setting isn't available to you yet. The agent can still change code in the console workspace; push it yourself with **Sync** > **Push** > **Code**.|
+|**Push denied: you need the Deployment Manager role in Cloud Manager**.|For a repository connected through Cloud Manager, ask your administrator for the Deployment Manager role in Cloud Manager.|
+
+For conflicting changes and protected branches, see [Push Code Changes](#push-code-changes).
+
 ### Workspace Setup Takes Time or Fails {#workspace-setup}
 
 When you first open the console, or after a reset, it prepares your console workspace. This can take up to 10 minutes. If all workspaces are in use, the console tells you so and starts setting yours up as soon as one is available; you don't need to retry. If setup fails, the console offers to retry. If it keeps failing, use the **Request support** link on the setup screen. If the console says that your account can't use it, contact your Adobe account team.
@@ -330,6 +350,24 @@ When you first open the console, or after a reset, it prepares your console work
 ### Project Seems Missing {#missing-workspace}
 
 Your console workspace belongs to the Adobe account and organization that you sign in with. If the console opens without your project, sign out, then sign in with the same account and organization that you used before. Don't reset the workspace while you investigate, because a reset permanently deletes its chat history and files. If the project is still missing, [request support](console.md#request-support) with the project name and preview URL. Code that you pushed and content that you uploaded stay in your Git repository and in Experience Workspace.
+
+### Failed to Send Message {#send-failed}
+
+**Failed to send message. Please try again.** means that the console couldn't deliver your prompt to the agent. The message doesn't give the cause, which can be your network connection, an expired sign-in, or a temporary service problem.
+
+1. Check your network connection and send the prompt again. The console doesn't retry automatically.
+1. If it fails again, copy your prompt, reload the page, and sign in if asked. Your chat history is kept.
+1. If it still fails after a few minutes, use **Request support** in [Settings](console.md#request-support), with the time of the failure and your project name.
+
+If the console instead says that it's at capacity, see [Workspace Setup Takes Time or Fails](#workspace-setup).
+
+### Remove Pages {#remove-pages}
+
+The agent can't delete files in the project's content folder, so that migrated content isn't removed by mistake. If you ask it to delete pages, the deletion is blocked.
+
+To remove pages from the console workspace, select a page in a [content view](console.md#content-view) and use **Delete**. This deletes one page at a time; you can't delete a folder, and you can't undo it. If pages were imported to the wrong path, import them again to the correct path, check them, and then delete the copies at the wrong path.
+
+**Delete** removes only the console workspace copy. If you already uploaded, previewed, or published a page, also delete it in Experience Workspace or on the AEM author instance, and unpublish or delete it from the preview and live sites with the [AEM Sidekick](https://www.aem.live/docs/sidekick#unpublishing-and-deleting-content).
 
 ### Source Sites with Bot Protection {#bot-protection}
 

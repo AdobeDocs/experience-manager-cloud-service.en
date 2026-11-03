@@ -324,9 +324,18 @@ Adobe does not use your conversations or other customer data to train or fine-tu
 
 ### Control over Changes {#security-control}
 
-* The agent works in your workspace. You review its changes and the preview in the console.
-* Without agent permissions, code reaches your Git repository and content reaches AEM only when you use the console's synchronization actions. Optional plan mode lets you approve a plan before the agent starts.
-* Treat source pages and design files as untrusted input. They can contain text that attempts to steer the agent. Review the changes before you push, preview, or publish them. Branch protection and pull request reviews in your repository still apply.
+The agent works in your console workspace, where you review its changes and the preview. Work reaches your site in separate steps, and each step has its own control:
+
+| Step | Who can do it | What controls it |
+|---|---|---|
+| Push code to your Git repository | You, with **Sync** > **Push** > **Code**. The agent, only if you turn on **Allow LLM to use my git credentials** for GitHub, or the Adobe credentials permission for repositories connected through Cloud Manager. | Your repository's permissions and branch protection. The console doesn't check branch rules itself. |
+| Upload content | You, with **Upload content** or **Sync** > **Push** > **Content**. For Experience Workspace, also the agent, but only with the Adobe credentials permission and when your message asks for it. | Write access to the site's content in Experience Workspace, or on the AEM author instance. |
+| Preview and publish | You, from the upload results dialog, Experience Workspace, or the AEM Sidekick. The agent, only with the Adobe credentials permission and when your message asks for it. | The site's author and publish roles in EDS, where [authentication for authors](https://www.aem.live/docs/authentication-setup-authoring) is set up. |
+
+* EMA's own checks are safeguards, not approval gates. Optional plan mode lets you approve a plan before the agent starts. EMA also blocks the agent's uploads, previews, and publication when your current message doesn't ask for them, but it can't detect every way of making such a request. Neither check stops a person with access from pushing or publishing.
+* With a Git permission, the agent can push to any branch that your credentials can write to, including `main`. A push to `main` changes the live site's code.
+* To require review, enforce it where the change lands. Protect `main` with [branch protection](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches) that requires a reviewed pull request, push with **Create new PR**, and limit who can publish with the site's [publish role](https://www.aem.live/docs/authentication-setup-authoring). Turn on agent permissions only when a task needs them.
+* Treat source pages and design files as untrusted input. They can contain text that attempts to steer the agent. Review the changes before you push, preview, or publish them.
 
 ### Where Your Work Is Stored {#security-storage}
 
@@ -345,7 +354,7 @@ Use only websites and designs that you are authorized to migrate. The selected w
 * Faithful design, accessibility, performance, and functional behavior require validation. A visual similarity score is not a production acceptance criterion.
 * Integrations, custom business logic, analytics, experimentation, and source-system features such as inheritance or content fragments need an explicit implementation and migration decision. Do not assume automated page import recreates them.
 
-Auto mode is in early access and needs its own [access request](getting-started.md#brand-trial). Which [optional capabilities](console.md#optional-capabilities) are offered can depend on your account and project. Check the controls and limits shown for your account. [AOE service scope](aoe-delivery.md#scope) is agreed separately from product capabilities.
+Auto mode is in early access and needs its own [access request](getting-started.md#brand-trial). The [optional capabilities](console.md#optional-capabilities) on offer can change between releases. Check the controls and limits shown for your account. [AOE service scope](aoe-delivery.md#scope) is agreed separately from product capabilities.
 
 ## Next Steps {#next-steps}
 

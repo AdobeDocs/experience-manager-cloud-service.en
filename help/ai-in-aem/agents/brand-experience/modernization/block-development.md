@@ -66,6 +66,41 @@ In the current [AEM boilerplate](https://github.com/adobe/aem-boilerplate), a li
 
 Authors can add, remove, or reorder the heading, text, image, and links without new components. A teaser or hero block is needed only for layout or behavior that default content cannot provide, such as placing the image beside the text. Projects can change these conventions, so ask EMA to check the project's scripts and styles before relying on them.
 
+## Prompt for a Block {#block-prompts}
+
+You can start with a short prompt, such as "Create a testimonials block". EMA follows content-driven development: it works out the content and content model with you before it writes code. Add context where it helps EMA match something specific:
+
+| To show EMA | Provide |
+|---|---|
+| A design on an existing site | The page URL, and the section to match. |
+| A design that isn't online | A screenshot or image (JPEG, PNG, GIF, or WebP), with **Attach files** in the [prompt input](console.md#prompt-input). For Figma designs, see [Figma block migration](prompting-guide.md#figma-block-migration). |
+| An element in the console preview | Select it with **Inspect mode** in the [content views](console.md#content-view). EMA receives the element's HTML and its position on the page, and limits its changes to that element. |
+| How authors fill in the block | Example content, the parts that are optional or repeat, and the variants you need. |
+
+A reference page or screenshot shows the target appearance. It doesn't define what authors edit, so say that too.
+
+### Reuse Existing Blocks {#reuse-blocks}
+
+Before EMA creates a block, it looks for one to reuse or adapt: in your project's `blocks` folder, and in the [Block Collection](https://www.aem.live/developer/block-collection) and [Block Party](https://www.aem.live/developer/block-party/) for reference code. During migration, it also checks the [block library](#block-deliverables) that **Library URL** in [Settings](console.md#settings-page) points to.
+
+* If your organization keeps a block library for authors, set **Library URL** to its `library.json` file.
+* To reuse blocks from another repository, add them to this project's `blocks` folder first, for example by pushing them to your branch and then pulling the code into the console.
+* Record your naming, variant, and content conventions in the [project instruction files](project-instructions.md#content-conventions), so that new blocks follow them.
+
+### Build Blocks One at a Time {#iterate-blocks}
+
+When you need several blocks, don't ask for all of them in one prompt. Build one or two representative blocks first, and check their content model, styling, and authoring. Then continue with the others, so that the decisions you made, such as names, variants, and spacing, carry over. In a migration, generate and validate the blocks of one representative template before the rest; see [Bulk Import Workflow](site-catalog.md#bulk-import).
+
+### Set Block Behavior Before a Migration {#block-instructions}
+
+Migration generates blocks from the content that it finds on the source pages. To steer how a block is built before EMA generates it:
+
+* Describe it in the migration prompt, for example which source sections become one block with variants, which parts authors edit, or that a list must load its items [dynamically](#dynamic-blocks).
+* Write lasting conventions in the [project instruction files](project-instructions.md#content-conventions) before you start.
+* In the [site planning UI](site-catalog.md#planning-actions), correct block types and variants before you generate code. To describe how a block should behave, select it, choose **Add to chat**, and write your request.
+
+Auto mode doesn't take instructions during a run. Refine its blocks in the console afterwards.
+
 ## Create a Block {#create}
 
 Provide the author task, example content, desired behavior/design, target persistence, and destination test page.
@@ -88,6 +123,20 @@ The output is reusable code, a working target-specific model where needed, and e
 * **Block documentation:** When migration creates a block, it generates the block from the content model found on your pages and adds a README for developers and an authoring guide for authors. Review both and keep them current when you change the block. To make later conversations follow the block's conventions, such as optional content, variants, and the sections it works in, reference them from the project's instruction files. See [Document Content Conventions](project-instructions.md#content-conventions).
 * **Sample content:** EMA generates sample content for blocks so that you can preview them with realistic content. In the [site catalog](site-catalog.md#blocks-table), use **View sample** to open a block's sample page.
 * **Block library:** The block library lets authors find your custom blocks and insert them into pages, with sample content that shows how each block is meant to be used. To set it up, ask EMA to generate a block library, including sample content and the library configuration, for Experience Workspace (formerly Document Authoring) or AEM authoring. Block library setup is an [optional capability](console.md#optional-capabilities) that EMA offers to turn on for your project. Check the result in the authoring experience. The library location is set by **Library URL** in [Settings](console.md#settings-page), which points to a `library.json` file that lists the available blocks, their variations, and example content.
+
+## Build a Dynamic Block {#dynamic-blocks}
+
+A dynamic block loads or computes its content in the browser, rather than showing only what authors write. Examples are a list of the latest articles, search results, or a filtered list. Ask EMA to create one after migration like any other block, or to change a migrated block to work this way. Describe:
+
+* **The data source**, such as the site's [query index](https://www.aem.live/developer/indexing), a spreadsheet delivered as JSON, or an API.
+* **What authors control**, such as the number of items, the folder to list, or the sort order. EMA models these settings as a configuration block: a two-column table of keys and values. Use it only for settings that change what the block loads or shows, and use variants for differences in style.
+* **What each item shows**, and what the block shows when there are no results or the data can't load.
+
+For example:
+
+> Create an article-list block that shows the six newest articles from the site's query index, with image, title, and date. Authors set the number of articles and the folder to list in a key-value table. Show a short message when there are no articles. Test it on /news. Do not upload, push, or publish.
+
+The query index includes only published pages, and only the properties that its configuration extracts, so check both before you test. [Validate](#validation) the empty and error states as well as the normal result.
 
 ## Update an Existing Block {#update}
 

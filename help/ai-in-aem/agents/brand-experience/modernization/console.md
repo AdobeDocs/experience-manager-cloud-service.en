@@ -93,7 +93,7 @@ The prompt input provides controls for interacting with the AI.
   * **Plan mode**: The agent analyzes your request and proposes an approach without changing files. It ends with a plan that includes a checklist of steps. Use it for multi-page, shared-code, or otherwise risky changes, so that you can review and adjust the approach before anything changes. Select **Execute plan** to switch to Execute mode and carry out the plan, or start a new one. Plan mode is available at any time, including before you plan or catalog a site. Only you switch modes; the agent can't switch them itself.
   * **Execute mode**: The agent performs the request and can make actual file changes.
   * Planning is optional and is not an enforced approval gate. Before execution, state the allowed scope and whether upload, push, or publication is authorized.
-* **Attach files** (paperclip icon): Upload and attach files to the prompt for additional context, such as reference designs, screenshots, or specifications. You can also attach Word, PowerPoint, and Excel files; the agent receives their text and embedded images.
+* **Attach files** (paperclip icon): Upload and attach files to the prompt for additional context, such as reference designs, screenshots, or specifications. The agent sees attached images in JPEG, PNG, GIF, or WebP format. You can also attach Word, PowerPoint, and Excel files; the agent receives their text and embedded images.
 * **Prompt queue** (clock icon): Additional prompts can be queued up to be automatically executed once the current prompt has completed, so that you can line up follow-up tasks without waiting.
 * **Previous prompts**: In an empty prompt input, use the up and down arrow keys to recall earlier prompts. A draft you have started is not overwritten.
 * **Prompt hints**: Where enabled, the console points out when a prompt is missing details, such as the page or the result you expect, and can suggest a clearer prompt. You decide whether to use the hint. Prompts suggested by the console are not flagged unless you reword them. Configure hints under **Prompt coach** in [Settings](#settings-page).
@@ -134,7 +134,7 @@ Core skills, such as site planning, page migration, bulk import, and header, nav
 | EDS troubleshooting | `excat-support@excat-extended` | Diagnosing EDS problems on demand, such as blocks that don't render or changes that don't appear. See [Debugging](prompting-guide.md#debugging). |
 | Modern web guidance | `modern-web-guidance@excat-extended` | Applying current web-platform best practices, for example for fonts, loading performance, accessibility, and layout, when the agent writes CSS and JavaScript. |
 
-Which add-ons are offered can depend on your account and project.
+The add-ons on offer can change between releases. If EMA says that it can't do something, ask whether an add-on covers it.
 
 #### Turn On Add-ons for the Whole Project {#persist-add-ons}
 
@@ -181,10 +181,10 @@ The following actions are available in the content views:
 
 * **Refresh** icon to reload the preview panel's rendering of the console workspace copy. It doesn't fetch content from Experience Workspace; to replace the console's copies with the saved documents, use **Sync** > **Pull** > **Content**.
 * **Viewport** menu to view the rendered page at **Responsive** width (the default, which fills the panel) or at a fixed **Desktop**, **Tablet**, or **Mobile** size
-* **Inspect mode** (select icon) to add elements of the page to your prompt for additional context
+* **Inspect mode** (select icon) to add elements of the page to your prompt for additional context. The agent receives the selected element's HTML and its position on the page, and limits its changes to that element.
 * **New window** (open in icon) to open the preview URL in a new tab (for a full desktop preview)
 * **Edit in Experience Workspace** (document-based projects) opens the selected page in the Experience Workspace visual editor, the `da.live` canvas, in a new tab, previewed with the console workspace's current branch. If the page has local changes that are not yet uploaded to Experience Workspace, the console first offers **Upload & Edit**, so that you don't edit an older version. AEM authoring projects use the Universal Editor instead.
-* **Delete** removes the selected page from the console workspace. It does not delete remote previewed or published content.
+* **Delete** removes the selected page from the console workspace, one page at a time. It can't be undone, and it does not delete uploaded, previewed, or published content. See [Remove Pages](getting-started.md#remove-pages).
 * **Errors** button (AEM authoring) opens a modal window to view the errors on the selected page.
 * **Upload content** opens the destination-specific upload or package dialog. Check destination paths and overwrite implications before proceeding.
 
@@ -233,7 +233,7 @@ The **Code views** provides tools for browsing your project files and managing c
 * **Refresh** (refresh icon) to refresh the list of changes
 * **Switch branch**: Switches branches within the same repository
 
-To push code, use **Sync** > **Push** > **Code** in the [Sync menu](#sync-menu). The **Stage changes** dialog lets you choose the files, and the **Push changes** dialog asks for a commit message and whether to create a new pull request or push to the current branch. To pull the latest code, use **Sync** > **Pull** > **Code**. Code actions are unavailable in the demo site, when GitHub is not connected, or until the AEM Code Connector is installed; the console tells you which applies. Pushed code shows on that branch's preview and live URLs straight away, and merging into `main` changes the live site's code immediately. See [How Changes Go Live](overview.md#code-content-lifecycle).
+To push code, use **Sync** > **Push** > **Code** in the [Sync menu](#sync-menu). The **Stage changes** dialog lets you choose the files, and the **Push changes** dialog asks for a commit message and whether to create a new pull request or push to the current branch; see [Push Code Changes](getting-started.md#push-code-changes) for what each option does. To pull the latest code, use **Sync** > **Pull** > **Code**. Code actions are unavailable in the demo site, when GitHub is not connected, or until the AEM Code Connector is installed; the console tells you which applies. Pushed code shows on that branch's preview and live URLs straight away, and merging into `main` changes the live site's code immediately. See [How Changes Go Live](overview.md#code-content-lifecycle).
 
 Stage only the files intended for the push. Review the diff, run project checks, and choose a new PR or a current-branch push according to repository policy. Verify the resulting PR or branch commit. Pushing code does not upload content, and discarding local code does not undo remote content writes.
 
@@ -264,9 +264,9 @@ If you make a change to any value in any section, click **Save** to save those c
   * **Library URL** - This URL points to a `library.json` file that defines the blocks available to authors, their variations, and example content.
   * **Site base URL** - The origin URL of the website being migrated
 * **Agent permissions** - Control what the agent may access on your behalf. Each permission is off until you turn it on and save it. The agent uses a permission without receiving the credential itself. See [Security and Data Handling.](overview.md#security)
-  * **Allow LLM to use my Adobe credentials for admin.hlx.page, Document Authoring, and repositories hosted outside GitHub** - In the **Adobe IMS permissions (admin.hlx.page & Document Authoring)** section. When enabled, the agent can read site configuration and metadata, read Experience Workspace (Document Authoring) content, and push to and pull from repositories hosted outside GitHub, using your Adobe credentials. `admin.hlx.page` is the EDS admin API; `hlx` comes from Helix, the project name under which the EDS architecture was developed. This does not approve publishing: the agent is instructed to keep content edits in the console workspace and to upload, preview, or publish only when you ask. Treat this as a safeguard, not a guarantee.
+  * **Allow LLM to use my Adobe credentials for admin.hlx.page, Document Authoring, and repositories hosted outside GitHub** - In the **Adobe IMS permissions (admin.hlx.page & Document Authoring)** section. When enabled, the agent can read site configuration and metadata, read Experience Workspace (Document Authoring) content, and push to and pull from repositories hosted outside GitHub, using your Adobe credentials. `admin.hlx.page` is the EDS admin API; `hlx` comes from Helix, the project name under which the EDS architecture was developed. This does not approve publishing: EMA blocks the agent's uploads, previews, and publication when your current message doesn't ask for them. Treat this as a safeguard, not a guarantee.
   * **Custom IMS Token (optional)** - Provide a token to use instead of your session token. IMS is Adobe's identity service, which issues the token for your Adobe ID session. Prefer a service account token over a personal token where possible.
-  * **Allow LLM to use my git credentials** - Where available, lets the agent push to and pull from your GitHub repositories on your behalf. This grants elevated access; use a scoped token if offered.
+  * **Allow LLM to use my git credentials** - Where available, lets the agent push to and pull from your GitHub repositories on your behalf. If you don't see this setting, it isn't available to you yet; push the agent's changes yourself with **Sync** > **Push** > **Code**. When it's on, the agent can push to any repository and branch that your GitHub credentials can write to, including `main`. Your repository's branch protection still applies. This grants elevated access; use a scoped token if offered.
 * **Credentials** allows you to specify a personal access token for Figma so the [console can access design blocks for your project.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
   * The token requires the following read-only scopes:
     * `file_content:read`

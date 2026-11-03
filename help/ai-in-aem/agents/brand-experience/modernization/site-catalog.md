@@ -109,6 +109,10 @@ You can open the site planning UI in any of the following ways.
 >
 >If you have not yet cataloged a site in the current project, the site planning UI asks for the site's address so that you can [start planning](#invoking).
 
+**Planning** is always in the view picker; you don't need to turn it on.
+
+The site planning UI shows one migration plan per console workspace, from the files in the [`catalog/` folder](#catalog-files). You can't keep several plans side by side and switch between them, for example one plan per country site. To plan several sites, plan and migrate them one after the other, and download each plan's report bundle if you want to keep a record of it.
+
 The site planning UI updates as pages are analyzed and imported, so you can begin reviewing results before the run completes.
 
 ### Overview Dashboard {#dashboard}

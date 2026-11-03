@@ -1,6 +1,6 @@
 ---
 title: Experience Modernization Agent FAQ
-description: Answers to common questions about access, Auto mode, transfers, source sites, destinations, previews, recovery, and data in the Experience Modernization Agent.
+description: Answers to common questions about access, Auto mode, planning, blocks, source sites, Git connections, approvals, previews, recovery, and data in the Experience Modernization Agent.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: c9cfe838-9ea3-417c-aa26-01411ad5d612
@@ -92,6 +92,14 @@ No. The transfer copies code, pages, and the media that pages reference. It does
 
 Switch the prompt input to Plan mode, with the light bulb icon, and describe your task. The agent proposes an approach and a checklist without changing files. Select **Execute plan** to carry it out. Plan mode is available at any time; you don't need to catalog a site first. See [Prompt Input](console.md#prompt-input).
 
+### Why don't I see the Planning view? {#planning-view}
+
+**Planning** is always in the view picker of the workspace panel, under **Project**; you don't need to turn it on. Before you catalog a site, it asks for the site's address. See [Accessing the Site Planning UI](site-catalog.md#accessing-planning-ui).
+
+### Can I switch between several migration plans? {#several-plans}
+
+No. The site planning UI shows one plan per console workspace, so you can't switch between plans, for example one per country site. Plan and migrate the sites one after the other. See [Accessing the Site Planning UI](site-catalog.md#accessing-planning-ui).
+
 ### Can I choose which pages to migrate? {#choose-pages}
 
 Yes. In the console, name the pages to import, or choose templates and pages in the [site catalog](site-catalog.md). In Auto mode, provide a list of page URLs instead of a site URL.
@@ -103,6 +111,28 @@ Yes. EMA groups pages into templates, migrates one representative page for each 
 ### How should we plan a large migration? {#plan-large-migration}
 
 Start with the [site catalog](site-catalog.md) to see the templates and how many pages each one has. Validate the representative pages before you import the rest. The console workspace holds one connected site at a time, and [switching site](getting-started.md#connect-repo) replaces it, so plan the order of sites in a program with several sites and push and upload each site's work before you switch. For your organization's AI credit entitlement, contact your Adobe account team. For assisted delivery, see [AOE Delivery](aoe-delivery.md).
+
+## Blocks {#blocks}
+
+### How should I ask EMA to build a block? {#block-prompt}
+
+Start with a short prompt that names the block and what authors put in it. EMA works out the content and the content model with you before it writes code. To match a design, give the page URL and the section, attach a screenshot, or select the element in the console preview with **Inspect mode**. See [Prompt for a Block](block-development.md#block-prompts).
+
+### Can EMA reuse our existing blocks or block library? {#reuse-blocks}
+
+Yes. EMA first looks for a block to reuse or adapt in your project. During migration, it also checks the block library that **Library URL** in Settings points to. To reuse blocks from another repository, add them to this project first. See [Reuse Existing Blocks](block-development.md#reuse-blocks).
+
+### Should I ask for many blocks in one prompt? {#many-blocks}
+
+No. Build one or two representative blocks first, and check their content model, styling, and authoring. Then continue with the others, so that the decisions carry over. You can line up the next blocks in the prompt queue. See [Build Blocks One at a Time](block-development.md#iterate-blocks).
+
+### Can EMA build a dynamic block after migration? {#dynamic-block}
+
+Yes. Ask for it like any other block, and describe the data source, what authors control, and what each item shows. EMA models the author settings as a key-value table. See [Build a Dynamic Block](block-development.md#dynamic-blocks).
+
+### Can I define how a block behaves before the migration? {#block-behavior}
+
+Yes. Describe it in the migration prompt, write lasting conventions in the project instruction files, or correct block types and variants in the site planning UI before you generate code. Auto mode doesn't take instructions during a run. See [Set Block Behavior Before a Migration](block-development.md#block-instructions).
 
 ## Source Sites {#source-sites}
 
@@ -118,7 +148,7 @@ Yes, when the source accepts a custom request header, HTTP Basic authentication,
 
 No. The source must be reachable from EMA's hosted environment on the internet. EMA can't connect through a VPN, pass a firewall, or complete interactive sign-in such as single sign-on (SSO) or multi-factor authentication. Ask the administrator for an internet-reachable staging or origin host that accepts a supported method.
 
-## Destinations and Sync {#destinations}
+## Destinations, Git, and Sync {#destinations}
 
 ### Can EMA write content to AEM authoring with the Universal Editor? {#aem-authoring}
 
@@ -126,7 +156,23 @@ Yes, in the guided workflow. EMA converts the pages to JCR content and uploads t
 
 ### Which Git hosts can EMA push to? {#git-hosts}
 
-GitHub, and other Git hosts that are connected through Cloud Manager, such as GitHub Enterprise, GitLab, Bitbucket, or Azure DevOps. For Cloud Manager repositories, the access token needs write access to the repository code. See [Prepare an Edge Delivery GitHub Repository](getting-started.md#prepare-repo).
+GitHub, and other Git hosts that are connected through Cloud Manager, such as GitHub Enterprise, GitLab, Bitbucket, or Azure DevOps. For Cloud Manager repositories, the access token needs write access to the repository code, and the console pushes a branch without opening a pull request. See [Prepare an Edge Delivery GitHub Repository](getting-started.md#prepare-repo).
+
+### Do I need AEM Code Sync, AEM Code Connector, or a token? {#git-apps}
+
+AEM Code Sync lets EDS read your code to serve the site; every EDS project on GitHub needs it. AEM Code Connector lets the console connect to your GitHub repository, push code, and open pull requests. A personal access token is another way to sign in, for GitHub Enterprise or when OAuth sign-in isn't available. See [Prepare an Edge Delivery GitHub Repository](getting-started.md#prepare-repo) and [Connect Your Site](getting-started.md#connect-repo).
+
+### Why can't I see my GitHub organization or repository? {#git-org-missing}
+
+The AEM Code Connector app is usually missing from the organization or the repository, or the organization hasn't approved it yet. With a token, the console lists only repositories that you can push to. See [Git Connection Problems](getting-started.md#git-connection).
+
+### Can EMA push to main or publish without my approval? {#approval}
+
+Only if you give the agent access. Without agent permissions, code and content leave the console workspace only when you push, upload, or publish them. With **Allow LLM to use my git credentials**, the agent can push to any branch that your credentials can write to, including `main`. With the Adobe credentials permission, EMA blocks the agent's uploads, previews, and publication unless your current message asks for them. These are safeguards, not approval gates. To require approval, protect `main` with branch protection and limit who has the site's publish role. See [Control over Changes](overview.md#security-control).
+
+### Why is Allow LLM to use my git credentials missing from Settings? {#git-credentials-missing}
+
+The setting isn't available to you yet. The agent can still change code in the console workspace, and you push it with **Sync** > **Push** > **Code**. See [Settings Page](console.md#settings-page).
 
 ### Why does the console say that my Document Authoring session may have expired? {#session-expired}
 
@@ -176,6 +222,14 @@ In Experience Workspace, restore an earlier version of the document from its ver
 
 The console workspace's chat history, files, and session state, and the GitHub connection. Pushed code and uploaded content are not affected. See [Settings Page](console.md#settings-page).
 
+### Why won't EMA delete pages when I ask in chat? {#delete-pages}
+
+The agent can't delete files in the project's content folder, so that migrated content isn't removed by mistake. Delete local pages one at a time with **Delete** in a content view. Uploaded, previewed, or published pages must also be removed from Experience Workspace and the preview and live sites. See [Remove Pages](getting-started.md#remove-pages).
+
+### What does Failed to send message mean? {#send-failed}
+
+The console couldn't deliver your prompt to the agent, and the message doesn't give the cause: it can be your network connection, an expired sign-in, or a temporary service problem. Send the prompt again, then reload the page if it still fails. If it persists, request support. See [Failed to Send Message](getting-started.md#send-failed).
+
 ## Data and Security {#data-security}
 
 ### Which AI model does EMA use? {#model}
@@ -203,6 +257,10 @@ EMA is the agent for building and changing EDS sites: migrating them, creating a
 ### How does EMA relate to Experience Workspace? {#experience-workspace}
 
 Experience Workspace is where authors edit the document-based content that EMA uploads. From the console, **Edit in Experience Workspace** opens a page there. You work with EMA itself in the Experience Modernization Console, at [`aemcoder.adobe.io`](https://aemcoder.adobe.io). See [Content Views](console.md#content-view).
+
+### Why can't EMA use a capability that I've heard about? {#capability-availability}
+
+Some capabilities are optional add-ons, which are off until they're turned on for the project. When your request needs one, EMA offers to turn it on. You can also ask EMA which add-ons are on, or ask for one by name. Auto mode needs its own access request. The capabilities on offer can change between releases. See [Optional Capabilities](console.md#optional-capabilities).
 
 ### How do I get help? {#help}
 
