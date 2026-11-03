@@ -3,6 +3,26 @@ title: Create, Update, and Refactor Blocks with the Experience Modernization Age
 description: Develop lightweight Edge Delivery Services blocks from author needs and real content, and preserve compatibility when updating or refactoring them.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+  - id: f1710108-e0d1-47e5-9952-1888729a03da
+    internal-label: Agentic AI
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Create, Update, and Refactor Blocks {#block-development}
@@ -21,12 +41,28 @@ Check the project's conventions before generating code:
 
 | Need | Decision to check |
 |---|---|
-| Call to action (CTA) | How an authored link becomes a button, which variants exist, and how the label and destination remain editable. |
+| Call to action (CTA) | How an authored link becomes a button (see the [example](#composition-example)), which variants exist, and how the label and destination remain editable. |
 | Button group | Whether adjacent links/default content already support the grouping, or a reusable model is needed for order, wrapping, and variants. |
 | Footnote | How markers, target IDs, return links, and reading order are authored and preserved. |
 | Repeated content | Whether an existing cards/list block or variant represents it without extra author fields. |
 
 These are project conventions, not universal EMA authoring controls. Do not invent a button-group or footnote UI. Check the actual content model and rendered result.
+
+### Example: A Flexible Teaser Without Atomic Blocks {#composition-example}
+
+Component-based AEM projects often provide separate heading, image, text, and button components so that authors can combine them. In EDS, authors write the same elements directly as default content, either in a section or in a block cell:
+
+```text
+[Image]
+## Book a consultation
+Find a certified provider near you.
+**[Find a provider](/find)**
+_[Learn more](/learn)_
+```
+
+In the current [AEM boilerplate](https://github.com/adobe/aem-boilerplate), a link that is alone in its paragraph becomes a button when it is formatted: bold for a primary button, italic for a secondary button, and bold plus italic for an accent button. A plain link, or a link inside a sentence, remains a link. Global styles give these buttons the same appearance in default content and inside blocks.
+
+Authors can add, remove, or reorder the heading, text, image, and links without new components. A teaser or hero block is needed only for layout or behavior that default content cannot provide, such as placing the image beside the text. Projects can change these conventions, so ask EMA to check the project's scripts and styles before relying on them.
 
 ## Create a Block {#create}
 

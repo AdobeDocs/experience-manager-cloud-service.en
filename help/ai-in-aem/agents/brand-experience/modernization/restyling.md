@@ -3,6 +3,26 @@ title: Restyle Sites with the Experience Modernization Agent
 description: Apply a new design during migration or restyle an existing Edge Delivery Services project while preserving content and authorability.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+  - id: f1710108-e0d1-47e5-9952-1888729a03da
+    internal-label: Agentic AI
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Restyle Sites {#restyling}
@@ -29,7 +49,7 @@ Use this path when content comes from an existing website but the target design 
 
 1. Complete [project and migration scoping](production-migration.md#scope), including document-based or JCR persistence.
 1. Define the target design system: typography, colors, spacing, default HTML content, and reusable blocks. Reuse existing project conventions where suitable.
-1. For Figma, [configure access](console.md#settings-page), then establish the needed blocks or variants from specific component nodes. See [Figma block prompts](prompting-guide.md#figma-block-migration).
+1. For Figma, [configure access](console.md#settings-page), then establish the needed blocks or variants from specific component nodes. See the [Figma redesign workflow](prompting-guide.md#figma-redesign-migration) and [Figma block prompts](prompting-guide.md#figma-block-migration).
 1. Migrate representative source pages into that block collection. Keep the live site as the content source and Figma or the approved reference as the design source.
 1. Compare content with the source website and appearance with the target design. Do not critique the redesigned page against the old site's appearance.
 1. Validate authorability and responsive behavior on the chosen target. Correct content mappings or models when necessary, then [expand in batches](production-migration.md#batches).

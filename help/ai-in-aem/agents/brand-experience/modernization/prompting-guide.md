@@ -362,8 +362,8 @@ Use this prompt to set up or migrate site navigation.
 * Document-based migration commonly creates `nav.md` at the content root. Confirm the remote navigation location and, for JCR-backed projects, its model and page configuration.
 * Sections are separated by (`---`) markers.
 * Bold items (`**Text**`) with nested lists create dropdowns.
-* Links in navigation may render as buttons due to Document Authoring's auto-wrapping behavior.
-  * The header block includes code to strip button classes from nav links.
+* Navigation links can render as buttons when the project's button decoration applies to them. In the current boilerplate, this happens to a bold or italic link that is alone in its paragraph.
+  * Check the project's `header.js`. The standard header removes button styling from the brand link.
 
 ## Block Development Capabilities {#block-development-capabilities}
 
