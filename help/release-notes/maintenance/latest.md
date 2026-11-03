@@ -28,7 +28,6 @@ Summarized below are the continuous improvements for maintenance release 29251, 
 
 The 2026.11.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-
 ### Enhancements {#enhancements-29251}
 
 * ASSETS-70512: Added an API endpoint to restore folders from trash.
