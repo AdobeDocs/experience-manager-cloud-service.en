@@ -114,7 +114,7 @@ The chat panel header includes links for navigating to the [Home](#home-page) an
 
 ### Optional Capabilities {#optional-capabilities}
 
-Core skills, such as page migration, design migration, site planning, and block development, are always available. Other capabilities are optional add-ons. Each add-on is off by default and is turned on per project, which keeps the agent lighter and faster for projects that don't need it.
+Core skills, such as site planning, page migration, bulk import, and header, navigation, and footer migration, are always available. Other capabilities are optional add-ons. Each add-on is off by default and is turned on per project, which keeps the agent lighter and faster for projects that don't need it.
 
 * When your request needs an add-on, EMA offers to turn it on and asks for your confirmation first. The add-on is available from your next message.
 * You can also ask for an add-on directly, for example "Enable the forms migration capability", or describe your task and accept EMA's offer. To turn an add-on off, ask the agent in the chat.

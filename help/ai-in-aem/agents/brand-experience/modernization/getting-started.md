@@ -270,8 +270,6 @@ If a change is missing, check each location separately: the console workspace, u
 
 Before reset, discard, replacement, or overwrite, preserve the affected work. Recover code through your repository workflow and restore content separately through the authoring system's available recovery process. A code revert alone does not undo remote document writes.
 
-If a project created with Auto mode becomes slow or restarts in the console after a large migration, check its repository for a `stardust/current/` working folder. Delete it, commit it, or add it to `.gitignore`.
-
 ### Source Sites with Bot Protection {#bot-protection}
 
 Bot protection in a content delivery network (CDN) or web application firewall (WAF) can block or challenge automated access to a source site. This can affect URL discovery, the site catalog, page capture, and import in any workflow, not only Auto mode. Typical signs are access-denied errors such as HTTP 403, 429, or 503, URLs missing after discovery, failed pages, or a challenge or verification page captured instead of the page content.
