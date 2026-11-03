@@ -27,11 +27,6 @@ The viewer is available as an additional option and requires explicit selection 
 
 The New Video Viewer is intended for organizations that require an enhanced and extensible video experience without disrupting existing implementations.
 
-> **NOTE**
->
-> The New Video Viewer is a limited availability feature. You can get it enabled by creating a [support ticket](https://helpx.adobe.com/business/enterprise.html).
-
-
 ## How the New Video Viewer works {#how-it-works}
 
 The New Video Viewer works as follows:

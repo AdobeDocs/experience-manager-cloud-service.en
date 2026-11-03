@@ -52,15 +52,14 @@ Have a look at the May 2026 Release Overview video for a summary of the features
 
 ## Release Overview {#overview}
 
-The 2026.9.0 release of [!DNL Experience Manager] as a [!DNL Cloud Service] delivers new capabilities across Assets, Forms, and Foundation, with a continued emphasis on AI-assisted authoring and discovery, richer Dynamic Media experiences, and developer productivity.
+The 2026.10.0 release of [!DNL Experience Manager] as a [!DNL Cloud Service] highlights new and recently available capabilities across Sites, Assets, Forms, and Foundation, alongside updates to developer tools and platform guidance.
 
 **Highlights of this release**
 
-* **Smarter Assets discovery and organization** — Content Hub adds AI Search for intent-based, multilingual results, Smart Collections that stay up to date automatically, and custom metadata sorting options.
-* **Richer Dynamic Media experiences** — A new, fully customizable video viewer with actionable analytics, AI-generated video captions, multi-caption and multi-audio track support, and attribute-based access control for secure delivery.
-* **AI-assisted authoring and development** — AEM agentic capabilities are now generally available in Adobe CX Enterprise Coworker, the AEM MCP Server adds Cloud Manager operations, and IDE agent skills expand with AEM query optimization and additional code-migration patterns.
-* **Foundation and platform** — Canary deployments to validate a release against production before it serves live traffic, OpenTelemetry-based APM (Limited Availability), and IMS authentication rich errors for easier troubleshooting.
-* **Plan-ahead notices** — Important timelines for Java API deprecations (September 28, 2026) and the upcoming Java 25 runtime upgrade help customers prepare their environments.
+* **More flexible content and media experiences:** Sites prerelease adds a Composite data type for Content Fragments. Assets highlights include multilingual video captions and audio tracks, branded video playback, and a GIF-based countdown timer for Dynamic Media email templates.
+* **AI-assisted governance and troubleshooting:** The AEM Governance Agent can help prioritize vulnerability findings, while new capabilities in CX Enterprise Coworker let developers inspect workflows and investigate Dispatcher behavior using natural-language prompts.
+* **Expanded developer and migration tooling:** The Cloud Migration Agent skill adds migration patterns and beta validation, and the unified AEM MCP Server now supports Cloud Migration capabilities.
+* **Platform changes to prepare for:** The AEM Cloud Service SDK supports Java 25 for local development. Review the notices on CDN egress IP allowlists, the transition from built-in New Relic APM to OpenTelemetry, and deprecated Java APIs.
 
 A range of beta, early adopter, and Limited Availability programs are also available this release. See the sections below for details.
 
@@ -168,12 +167,9 @@ Smart Collections automatically remain up to date. When newly approved assets sa
 
 The native Dynamic Media Template component lets marketers add and personalize AEM Dynamic Media templates directly in the Adobe Journey Optimizer email editor. Marketers can select existing templates or import layered PSD files, edit individual layers such as countdown timers, and configure text, CTAs, positioning, and timing without leaving the email editor. This enables governed, personalized, and dynamic email experiences, including open-time countdowns and personalized product content.
 
-
-
 #### Dynamic Media with OpenAPI capabilities: Secure Delivery with Attribute-based Access Control {#secure-delivery-attribute-based-access-control}
 
 Attribute-based access control lets admins govern access to Dynamic Media with OpenAPI capabilities assets using metadata-driven rules defined for each user group. IMS-based restrictions allow DAM admins and brand managers to restrict delivery of specific assets to designated Adobe IMS users or groups. Users outside the permitted list receive a 404 response, and the asset is not delivered. This provides a secure way to manage asset delivery for campaigns, product launches, and other controlled distribution scenarios.
-
 
 #### Dynamic Media with OpenAPI capabilities: Barcode and QR Code delivery {#barcode-qr-code}
 
@@ -184,7 +180,6 @@ To request enablement, open an Adobe Customer Support ticket.
 #### Content Hub: Enhanced public link sharing and governance {#enhanced-public-link-sharing}
 
 Content Hub lets you [share multiple assets and collections through public links and update existing links by adding or removing assets and collections at any time](/help/assets/share-assets-content-hub.md). Administrators can manage shared links with controls for password protection, expiration, and link revocation to help govern external access. Branded recipient experiences help maintain brand consistency when sharing assets with external stakeholders.
-
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta Features {#assets-beta-program-features}
 
@@ -212,7 +207,6 @@ To send feedback, participate or learn more, send an email to `aem-content-advis
 Video Interactivity lets authors add chapters and text, image, and card overlays to videos in Dynamic Media with OpenAPI capabilities. Authors configure them in the Video Interactivity editor. The configuration is saved on the asset and delivered with the approved video metadata for playback in the new Video Viewer. 
 
 To participate or learn more, send an email to `dm-beta-feedback@adobe.com`.
-
 
 #### Dynamic Media: Video Engagement Report {#video-engagement-report}
 
@@ -311,54 +305,79 @@ Adobe Express integration with Assets helps all users create and edit on-brand c
 
 To participate or learn more, send an email to `aem-assets-express@adobe.com`.
 
-
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-<!--
+### New features in AEM Forms {#forms-new-features}
 
-#### API Integration Tool for Dynamic Form Data
+#### Adaptive Form authoring in CX Coworker {#adaptive-form-authoring-improvements}
 
-Form authors can now use the API Integration Tool to build forms that fetch and fill in data from external REST APIs, based on what the user does in the form. This no-code tool supports use cases like address auto-completion, dynamic dropdown lists, and real-time validation. For more information, see [API Integration Tool for Dynamic Form Data](/help/forms/api-integration-tool-dynamic-form-data.md).
+Authors can reuse existing designs, connect services, and refine form logic through chat in Adobe CX Enterprise Coworker. These capabilities bring Adaptive Form authoring actions into Coworker:
 
--->
+* **Import PDF or XDP into an Adaptive Form:** Ask Coworker to import Portable Document Format (PDF) or XML Data Package (XDP) documents from AEM Assets to use existing designs as a starting point for an Adaptive Form.
+* **Call services from form rules:** Create rules in CX Coworker using natural language to invoke external services, receive data, and take action based on the response. For example, a form can call an external service to generate and send a one-time password (OTP), then call a service to validate the OTP entered by the user.
+* **Create and edit REST API integrations:** Create rules in CX Coworker using natural language to connect to a Representational State Transfer (REST) application programming interface (API) and take action based on the response. For example, when a user enters a product code, a form can call a product catalog API to retrieve the product name and price, then populate the corresponding form fields.
+* **Edit existing rules:** Describe changes in natural language to Coworker to refine existing form rules as requirements change.
+* **Code mode for rule authoring:** Author form rules in code mode when you need to work directly with rule code.
+* **Authoring latency optimizations:** Latency optimizations support a more responsive form authoring experience.
 
-### Early Access Features in AEM Forms
+Example prompts in CX Coworker (replace the example asset path and field names with your own):
 
-#### Table component in Adaptive Forms based on Core Components
+| Capability | Example prompt |
+| --- | --- |
+| Import a PDF | "Convert the PDF at `/content/dam/formsanddocuments/application.pdf` into a Core Components Adaptive Form named Application." |
+| Call a service from a rule | "When Product Code changes, use the configured product REST API integration to look up that code and populate Product Name and Unit Price from the response." |
+| Create a REST API integration | "Create an integration using this cURL command and sample JSON response." |
+| Edit an existing rule | "Change the rule on Company so it is shown when Employee Type is Contractor or Partner." |
 
-Adaptive Forms based on Core Components can now include a Table component to present complex, structured data in tabular layouts. Government and financial services forms often require tabular layouts for numeric data, line items, and multi-column inputs. The Table component supports:
-- Structured row and column authoring with header and body rows
-- Repeatable rows with add and remove actions at runtime
-- Column sorting with ascending and descending order
-- Disable sorting on individual columns for accessibility compliance
-- Proportional column widths
-- Merge and split table row cells
-- Replace default text box cells with other Adaptive Form components
-- Row-level calculations using the Rule Editor
-- Table rendering in Submission PDF (Document of Record).
- 
-For more information, see [Add a table to an Adaptive Form (Core Components)](/help/forms/adaptive-forms-tables-core-components.md).
+#### CAPTCHA v3 support {#captcha-v3-support}
 
-#### Document conversion APIs
+Use Completely Automated Public Turing test to tell Computers and Humans Apart (CAPTCHA) v3 support to help protect forms from automated submissions.
 
-Added support for new [document conversion APIs](/help/forms/aem-forms-communication-api-overview.md#document-conversion-apis) that enable applications to convert documents to supported formats and optimize PDFs for printing and processing. The following APIs are available:
-- **HTML to PDF** – Converts HTML documents to PDF while preserving page layout and styling.
-- **PostScript (PS) to PDF** – Converts PostScript documents to PDF.
-- **PDF to Image** – Converts PDF documents into one or more image files.
-- **PDF to PostScript (PS)** – Converts PDF documents to PostScript format.
-- **Flatten PDF Transparency** – Flattens transparent objects in PDF documents to improve compatibility with print and document processing workflows.
+#### Forms Manager improvements {#forms-manager-improvements}
 
-#### Locale support for Interactive Communication
+Manage mixed form collections and move reusable forms between environments with improvements to folder deletion, downloads, and theme management:
 
-Interactive Communication Editor now allows authors to [configure the locale for an Interactive Communication](/help/forms/interactive-communication/support-localization.md). The selected locale determines language and region-specific formatting, such as dates, numbers, and currencies, enabling localised content for different audiences
+* **Delete folders containing different form types:** Delete folders containing both Core Components based Adaptive Forms and Edge Delivery Services forms while preserving shared Edge Delivery Services configurations, so other forms that use those configurations continue to work.
+* **Download forms with their fragments:** Download an Edge Delivery Services form together with its referenced fragments in the same package, reducing the need to collect dependencies separately when transferring forms.
+* **Keep theme references current:** Frontend theme redeployment automatically updates the form's saved theme reference, so Forms Manager continues to show the correct theme rather than reverting to Canvas in the theme picker.
 
-#### Virus scanning and custom validation for file attachments
+### Early Adopter Features in AEM Forms
 
-Validate file attachments in Adaptive Forms before or on submission using custom validation logic, such as integrating a malware or virus scanning service. You can use form rules to trigger validation, or configure validation to run on form submission. Both approaches reject invalid or infected files before persistence, helping protect sensitive data and systems. For details, see [Implement a custom validator](/help/forms/scan-file-attachments-custom-validator.md) and [Tutorial: Antivirus scanning integration](/help/forms/scan-file-attachments-clamav.md).
+The following capabilities are available through the AEM Forms Early Adopter program. To request access, email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address and include your organization ID, program details, and the capabilities you want to use.
+
+#### Interactive Communication Editor enhancements {#ic-editor-enhancements}
+
+Authors can create reusable document designs, add digital signature fields, and configure accessibility properties in the Interactive Communication (IC) Editor:
+
+* **Add a Sign component:** Place a digital signature field in a document and configure which fields are locked after signing, including fields in a named collection. Recipients can sign the generated PDF in Adobe Acrobat, helping teams protect completed document content.
+* **Configure accessibility while authoring:** Set accessibility roles, screen reader text and precedence, and navigation order, then generate tagged PDF output. These controls help authors prepare communications for readers who use assistive technologies.
+* **Create XDP templates:** Create and update existing XDP templates  directly in the Interactive Communication editor, configure data bindings, and reuse fragments across document designs. Preview generated PDF output while refining the design.
+
+#### Theme Editor for Core Components based Adaptive Forms {#theme-editor-core-components}
+
+Style Core Components based Adaptive Forms visually in the Theme Editor and preview changes as you work. Customize colors, typography, borders, and spacing, then reuse themes across forms to maintain a consistent appearance.
+
+#### Dynamic Media images in Adaptive Forms {#dynamic-media-images-adaptive-forms}
+
+Authors can select Dynamic Media assets for the Image component in an Adaptive Form. The component resolves the selected asset reference to its Dynamic Media delivery URL, enabling teams to reuse centrally managed images in forms rather than uploading separate copies.
+
+#### Custom submit actions in Universal Editor {#custom-submit-actions-universal-editor}
+
+Authors can select and configure custom submit actions for Edge Delivery Services Adaptive Forms in the Universal Editor's Form Properties interface. Supported action-specific configuration fields appear when the action is selected, enabling teams to connect forms to custom submission processes without switching authoring experiences.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation New Features {#foundation-new}
+
+#### Vulnerability assessment with AEM Governance Agent {#vulnerability}
+
+The AEM Governance Agent can list known vulnerabilities across one or more AEM instances, including their severity and affected components. You can filter findings by CVE, severity, environment, or component to prioritize remediation. See [AEM Governance Agent use cases](/help/ai-in-aem/agentic-capabilities/brand-governance/use-cases.md).
+
+#### Java 25 for Local Development {#java25-sdk}
+
+The AEM Cloud Service SDK now supports building and running projects with Java 25 for local development and validation. Your AEM license entitles you to download Oracle Java 25 from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=java*+25*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=8).
+
+This is the first step toward Java 25 support in AEM as a Cloud Service. In the November release, Cloud Manager environments will let you opt in to Java 25 for the runtime, the project build, or both, so you can take advantage of performance improvements and modern Java features. Use the SDK now to validate your code and prepare for that release.
 
 #### OpenTelemetry for Application Performance Monitoring (APM) (Limited Availability) {#otel}
 
@@ -447,12 +466,6 @@ The [AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-s
 To help troubleshoot IMS integrations, `imsauth` has added support for *rich errors*.
 
 Instead of returning only an HTTP status code, these errors provide additional context to help diagnose and resolve issues that can block authentication and access.
-
-#### Java 25 for Local Development {#java25-sdk}
-
-The AEM Cloud Service SDK now supports building and running projects with Java 25 for local development and validation. Your AEM license entitles you to download Oracle Java 25 from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=java*+25*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=8).
-
-This is the first step toward Java 25 support in AEM as a Cloud Service. In the November release, Cloud Manager environments will let you opt in to Java 25 for the runtime, the project build, or both, so you can take advantage of performance improvements and modern Java features. Use the SDK now to validate your code and prepare for that release.
 
 #### Winter 2027 Removal of Deprecated Java APIs {#java-api-deprecation}
 
