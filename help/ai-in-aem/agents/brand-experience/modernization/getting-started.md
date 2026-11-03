@@ -363,7 +363,7 @@ If the console instead says that it's at capacity, see [Workspace Setup Takes Ti
 
 ### Remove Pages {#remove-pages}
 
-The agent can't delete files in the project's content folder, so that migrated content isn't removed by mistake. If you ask it to delete pages, the deletion is blocked.
+EMA blocks the agent's delete commands in the project's content folder, so that migrated content isn't removed by mistake. Asking the agent to delete pages therefore doesn't work; remove them yourself.
 
 To remove pages from the console workspace, select a page in a [content view](console.md#content-view) and use **Delete**. This deletes one page at a time; you can't delete a folder, and you can't undo it. If pages were imported to the wrong path, import them again to the correct path, check them, and then delete the copies at the wrong path.
 

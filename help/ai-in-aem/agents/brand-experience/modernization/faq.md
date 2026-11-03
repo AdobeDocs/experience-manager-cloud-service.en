@@ -224,7 +224,7 @@ The console workspace's chat history, files, and session state, and the GitHub c
 
 ### Why won't EMA delete pages when I ask in chat? {#delete-pages}
 
-The agent can't delete files in the project's content folder, so that migrated content isn't removed by mistake. Delete local pages one at a time with **Delete** in a content view. Uploaded, previewed, or published pages must also be removed from Experience Workspace and the preview and live sites. See [Remove Pages](getting-started.md#remove-pages).
+EMA blocks the agent's delete commands in the project's content folder, so that migrated content isn't removed by mistake. Delete local pages yourself, one at a time, with **Delete** in a content view. Uploaded, previewed, or published pages must also be removed from Experience Workspace and the preview and live sites. See [Remove Pages](getting-started.md#remove-pages).
 
 ### What does Failed to send message mean? {#send-failed}
 
