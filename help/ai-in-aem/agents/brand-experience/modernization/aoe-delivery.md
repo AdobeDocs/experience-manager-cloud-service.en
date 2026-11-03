@@ -92,7 +92,7 @@ This service-scoping boundary is not a blanket product limitation: some EMA work
 #### Target Platform {#target-platform}
 
 * **Edge Delivery Services:** All migrations target Edge Delivery Services (EDS), Adobe's high-performance web delivery platform.
-* **Authoring target:** Agree document-based persistence, edited visually in Experience Workspace, or AEM authoring with JCR persistence and the Universal Editor. Adobe recommends document-based persistence with Experience Workspace for new implementations. See [Where Content Is Stored and How Authors Edit It](overview.md#content-storage). Confirm the setup and handover for the selected target.
+* **Authoring target:** Agree document-based persistence, edited visually in Experience Workspace, or AEM authoring with JCR persistence and the Universal Editor. Adobe strongly recommends document-based persistence with Experience Workspace for new implementations. See [Where Content Is Stored and How Authors Edit It](overview.md#content-storage). Confirm the setup and handover for the selected target.
 
 #### Migration Work Performed {#migration-work}
 

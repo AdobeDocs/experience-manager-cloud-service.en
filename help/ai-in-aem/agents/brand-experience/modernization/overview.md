@@ -59,7 +59,7 @@ An EMA task touches several separate parts of a project. Keep them apart when yo
 
 * **Source:** The authorized website, content, or design that you provide.
 * **Code:** The EDS Git repository and working branch that contain styles, scripts, and blocks.
-* **Content destination:** Where the migrated content is stored and which editor authors use. Adobe recommends document-based persistence with Experience Workspace for new implementations; AEM authoring with JCR persistence and the Universal Editor is the alternative. See [Where Content Is Stored and How Authors Edit It](#content-storage). The source CMS does not determine this choice.
+* **Content destination:** Where the migrated content is stored and which editor authors use. Adobe strongly recommends document-based persistence with Experience Workspace for new implementations; AEM authoring with JCR persistence and the Universal Editor is the alternative. See [Where Content Is Stored and How Authors Edit It](#content-storage). The source CMS does not determine this choice.
 * **Preview and publication:** Where you verify the result and, separately, where you release approved changes.
 
 EDS supports complex enterprise websites. Search, commerce, personalization, and other integrations can require project-specific implementation and testing; they are not reasons to restrict EDS to simple or static sites.
@@ -100,7 +100,7 @@ EMA asks where the migrated content should be stored. This is a question about p
 | Where content is stored | The EDS document-based content repository | AEM's JCR, on the AEM as a Cloud Service author stack |
 | Visual editor | Experience Workspace | Universal Editor |
 | Page delivery | EDS | EDS |
-| Recommendation | Recommended for new implementations | Fully supported; choose it when a requirement depends on content staying in the AEM repository |
+| Recommendation | Strongly recommended for new implementations, including large sites | Fully supported; choose it when a requirement depends on content staying in the AEM repository |
 
 ### Document-Based Persistence with Experience Workspace {#document-based}
 
@@ -120,9 +120,11 @@ With AEM authoring, content is stored in AEM's Java Content Repository (JCR), on
 
 ### Adobe's Recommendation {#recommendation}
 
+For any new EDS implementation, Adobe strongly recommends document-based persistence with Experience Workspace over AEM authoring with the Universal Editor. This includes large websites with thousands of pages.
+
 Document-based authoring used to mean editing in Microsoft Word, Google Docs, or a document-style editor. That limited visual page editing, so teams that needed it often chose AEM authoring. Experience Workspace now gives document-based content a visual editor, so there is little reason left for a brand to avoid it.
 
-For any new EDS implementation, Adobe strongly recommends document-based persistence with Experience Workspace over AEM authoring with the Universal Editor. This includes large websites with thousands of pages. AEM authoring with JCR persistence remains fully supported. Choose it when a specific requirement depends on content staying in the AEM repository. For headless content, delivered through APIs rather than as EDS web pages, the Universal Editor remains the recommended editor.
+AEM authoring with JCR persistence remains fully supported. Choose it when a specific requirement depends on content staying in the AEM repository. For headless content, delivered through APIs rather than as EDS web pages, the Universal Editor remains the recommended editor.
 
 ## Benefits {#benefits}
 

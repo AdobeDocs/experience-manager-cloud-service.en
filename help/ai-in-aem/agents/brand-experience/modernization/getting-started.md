@@ -30,7 +30,7 @@ role_v2:
 
 Use your brand's content to try Edge Delivery Services (EDS) and the Experience Modernization Agent (EMA), or prepare a few customer demo pages. For a full-site release, use the [production migration guide](production-migration.md) after validating representative pages.
 
-This guide covers document-based persistence: content is stored in the EDS document-based repository and authors edit it visually in Experience Workspace, the visual authoring UI for EDS. Adobe recommends this setup for new implementations. If your content must be stored in AEM's JCR repository and edited with the Universal Editor, follow the [AEM authoring guide](getting-started-aem-authoring.md) for the steps that differ. If AEM or EDS terms are new to you, read [How EDS Pages Work](overview.md#eds-basics) and [Where Content Is Stored and How Authors Edit It](overview.md#content-storage) first.
+This guide covers document-based persistence: content is stored in the EDS document-based repository and authors edit it visually in Experience Workspace, the visual authoring UI for EDS. Adobe strongly recommends this setup for new implementations. If your content must be stored in AEM's JCR repository and edited with the Universal Editor, follow the [AEM authoring guide](getting-started-aem-authoring.md) for the steps that differ. If AEM or EDS terms are new to you, read [How EDS Pages Work](overview.md#eds-basics) and [Where Content Is Stored and How Authors Edit It](overview.md#content-storage) first.
 
 >[!NOTE]
 >
@@ -161,7 +161,7 @@ Now that your console can access your code, you are ready to start prompting.
    * "Migrate only `https://www.example.com/about` to `/about` in this project. Target document-based content. Preserve its text, images, and links. Reuse existing blocks and default content. Do not upload, push, or publish."
    * For AEM authoring, specify JCR persistence and follow the [target-specific checks](getting-started-aem-authoring.md#validate-content).
 1. Review the imported page, its destination path, and any reported gaps.
-   * The agent handles content and presentation separately: it imports the content first, and you request styling as a later step.
+   * In this guided flow, the agent imports content first; you request styling in a later step.
    * Import duration depends on the source and requested scope.
    * The console presents you with ongoing feedback as it begins its work, including an overview of its planned steps.
    ![Content import](assets/content-import.png)

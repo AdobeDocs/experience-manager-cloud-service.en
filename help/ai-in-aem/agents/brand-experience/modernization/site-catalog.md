@@ -31,7 +31,7 @@ Analyze an authorized source website to prepare an EDS migration. Use the catalo
 
 ## Overview {#overview}
 
-The site catalog skill discovers URLs, analyzes reachable pages, groups page templates and block variants, and captures screenshots. A template is a group of pages that share the same layout of blocks. A block variant is a version of a block with its own look or layout, marked by an extra CSS class such as `.with-button`. Review and refine the results in the [site planning UI](#planning-ui). Discovery can miss pages and analysis can fail; reconcile the result with your agreed inventory.
+The site catalog skill discovers URLs, analyzes reachable pages, groups page templates and block variants, and captures screenshots. A template is a group of pages that share the same layout of blocks. A block variant is a version of a block with its own content structure or look. Review and refine the results in the [site planning UI](#planning-ui). Discovery can miss pages and analysis can fail; reconcile the result with your agreed inventory.
 
 The skill supports migration planning in the following ways:
 

@@ -30,9 +30,9 @@ role_v2:
 
 >[!NOTE]
 >
->This path is Edge Delivery Services (EDS) on top of the JCR stack: content is stored in AEM's Java Content Repository (JCR) on your AEM as a Cloud Service author instance, authors edit it with the Universal Editor, and EDS delivers the pages. For new implementations, Adobe recommends document-based persistence with Experience Workspace instead. See [Where Content Is Stored and How Authors Edit It](overview.md#content-storage).
+>This path is Edge Delivery Services (EDS) on top of the JCR stack: content is stored in AEM's Java Content Repository (JCR) on your AEM as a Cloud Service author instance, authors edit it with the Universal Editor, and EDS delivers the pages. For new implementations, Adobe strongly recommends document-based persistence with Experience Workspace instead, including for large sites. See [Where Content Is Stored and How Authors Edit It](overview.md#content-storage).
 
-Use this workflow when EDS content must be stored in AEM's JCR repository and edited with the [Universal Editor,](/help/implementing/universal-editor/introduction.md) Adobe's visual editor for content in AEM. EDS remains the delivery target; this is not a migration to HTL-based delivery. The source website's technology does not determine your persistence target.
+Use this workflow when a requirement depends on content staying in the AEM repository. The [Universal Editor](/help/implementing/universal-editor/introduction.md) is Adobe's visual editor for content in AEM. This is not a migration to HTL-based delivery, and the source website's technology does not determine your persistence target.
 
 You need console access, repository permissions, and permission to create or update content and assets on the target AEM author instance. Record the AEM host, site identifier, page root, DAM destination (the AEM Assets folder for images and files), code repository, and working branch before importing. A document-based auto-mode preview is not a substitute for this setup.
 

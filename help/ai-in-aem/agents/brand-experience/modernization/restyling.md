@@ -29,7 +29,7 @@ role_v2:
 
 Use EMA to apply a design during migration or change the appearance of an existing Edge Delivery Services (EDS) project. Faithfully copying a source site's appearance and deliberately replacing it with a new design are different requests. State which you want.
 
-In EDS, appearance lives in the project's code: global CSS styles default content, and each block has its own CSS file. A purely visual restyle therefore changes code in Git and leaves authored content alone. Structural or content model changes are a separate, explicit decision.
+In EDS, appearance lives in the project's code: global CSS sets the look of default content, and each block has its own CSS file. A purely visual restyle therefore changes code in Git and leaves authored content alone. Structural or content model changes are a separate, explicit decision.
 
 ## Prepare the Design Contract {#prepare}
 
@@ -81,7 +81,7 @@ For a CSS-only restyle, do not regenerate or reupload content unnecessarily. A g
 
 ## References, Prototypes, and Delivery {#design-output}
 
-EMA supports design work from source sites, Figma, and supplied references. Basic redesign with Stardust, an optional design skill, and richer design exploration are not the same workflow. Use the capabilities available to your project, including [optional design plugins](/help/ai-in-aem/agents/brand-experience/modernization/console.md#optional-capabilities); do not assume every optional design tool has the same inputs or output.
+EMA supports design work from source sites, Figma, and supplied references. Basic redesign with Stardust, a design skill enabled per project, is a different workflow from richer design exploration. Use the capabilities available to your project, including [optional design plugins](/help/ai-in-aem/agents/brand-experience/modernization/console.md#optional-capabilities); do not assume every optional design tool has the same inputs or output.
 
 * For one Figma block, provide its component/node link. For a new page, provide a specific frame/page rather than an entire file.
 * Figma requires the relevant project capability, configured credentials, and permission to read the file. Do not put tokens in chat.
