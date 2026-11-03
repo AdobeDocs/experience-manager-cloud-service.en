@@ -73,9 +73,9 @@ Once setup is complete, connect the project and migrate one representative page.
 
 Follow these steps from the standard guide.
 
-1. [Open the Experience Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#open-console)
-1. [Connect Your Site](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#connect-repo)
-1. [Start Prompting](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md#start-prompting), explicitly requesting JCR-backed AEM authoring output.
+1. [Open the Experience Modernization Console](getting-started.md#open-console)
+1. [Connect Your Site](getting-started.md#connect-repo)
+1. [Start Prompting](getting-started.md#start-prompting), explicitly requesting JCR-backed AEM authoring output.
 
 For example: "Migrate only `https://www.example.com/about` to the agreed page root in this AEM authoring project. Preserve content and links. Reuse the project's block models and validate JCR conversion. Do not upload, push, or publish."
 
@@ -119,7 +119,7 @@ Package upload writes content to the AEM author instance. Confirm the selected p
 
 For a failed package or image upload, retain the log and selected paths. Correct conversion, credentials, permissions, or destinations as indicated, then retry the affected scope. A package download alone does not import content into the AEM author instance. Confirm which pages and assets arrived before retrying to avoid unintended replacements.
 
-If **Create package** reports **Missing site configuration**, the console doesn't know the project's AEM site path, `/content/{site-name}`, and DAM folder, `/content/dam/{folder-name}`. It finds them by looking up the site on the AEM author instance that the project's content source, in `fstab.yaml`, points to. Check that the site exists on that author instance and that the Adobe account you signed in with can access it, then reload the console. If the message persists, [request support](console.md#request-support). If it reports **Missing site base URL**, enter the origin URL of the source site, such as `https://www.example.com`, as **Site base url** in [Settings](console.md#settings-page).
+If **Create package** reports **Missing site configuration**, the console doesn't know the project's AEM site path, `/content/{site-name}`, and DAM folder, `/content/dam/{folder-name}`. It finds them by looking up the site on the AEM author instance that the project's content source points to, as set in `fstab.yaml` or in the site's configuration. Check that the site exists on that author instance and that the Adobe account you signed in with can access it, then reload the console. If the message persists, [request support](console.md#request-support). If it reports **Missing site base URL**, enter the origin URL of the source site, such as `https://www.example.com`, as **Site base url** in [Settings](console.md#settings-page).
 
 If the AEM as a Cloud Service environment is hibernated, the upload dialog and Settings say so and link to the Developer Console. De-hibernate the environment there, then retry the upload. See [De-hibernate a sandbox program from the Developer Console.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md#de-hibernation-introduction)
 

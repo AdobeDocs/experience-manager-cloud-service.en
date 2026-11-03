@@ -31,7 +31,7 @@ Learn how the Experience Modernization Agent's documentation skill can help you 
 
 ## Accelerating Project Handovers {#project-handovers}
 
-[The Experience Modernization Agent](/help/ai-in-aem/agents/brand-experience/modernization/overview.md) (EMA) can generate project documentation guides from accessible Edge Delivery Services (EDS) code and configuration, featuring:
+[The Experience Modernization Agent](overview.md) (EMA) can generate project documentation guides from accessible Edge Delivery Services (EDS) code and configuration, featuring:
 
 * **Project walkthrough** - Explanation of the project setup, structure, and conventions
 * **Module &amp; component organization** - Clear documentation of how blocks, modules, and components are organized and how they relate to each other

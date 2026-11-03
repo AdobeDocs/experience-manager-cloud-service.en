@@ -139,10 +139,10 @@ An EDS project keeps its code (blocks, styles, and scripts) in a Git repository 
 
 >[!NOTE]
 >
->Using AEM authoring with JCR persistence and the Universal Editor? Follow the [AEM authoring setup steps](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md) instead.
+>Using AEM authoring with JCR persistence and the Universal Editor? Follow the [AEM authoring setup steps](getting-started-aem-authoring.md) instead.
 
 1. Select an [Edge Delivery Services](/help/edge/overview.md) repository for use with the Experience Modernization Console.
-   * This can be an existing EDS project, or you can create a new one by following the [developer tutorial](https://www.aem.live/developer/tutorial), which uses the [boilerplate repository.](https://github.com/adobe/aem-boilerplate)
+   * This can be an existing EDS project, or you can create a new one from the [boilerplate repository](https://github.com/adobe/aem-boilerplate) by following the first section of the [developer tutorial](https://www.aem.live/developer/tutorial), **Get started with the boilerplate repository template**. It creates the repository, installs the AEM Code Sync app, and sets up the site with example content that you can edit in Experience Workspace. You don't need the tutorial's local development steps, because EMA provides the development environment.
 1. Ensure that the [AEM Code Connector](https://github.com/apps/aem-code-connector) GitHub app is installed in the repository.
    * This lets the console push changes and open pull requests in your repository. Until it is installed, the console can't push code or open pull requests.
    * If the app is installed for selected repositories only, include this one. If your organization requires approval for GitHub apps, an organization owner must approve it.
@@ -231,7 +231,7 @@ The result is working content and code in the console. It is not yet evidence th
 
 >[!TIP]
 >
->[Check out the prompting guide](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md) for more ideas on how to prompt the agent and what its skills can do.
+>[Check out the prompting guide](prompting-guide.md) for more ideas on how to prompt the agent and what its skills can do.
 
 ## Upload Content {#upload-content}
 
@@ -240,9 +240,9 @@ For document-based persistence, upload the pages to the document-based repositor
 1. Make sure you are in a **Content** view and then click the **Upload content** button on the top-right. Alternatively, use **Sync** > **Push** > **Content** in the workspace header to upload all pending pages.
    * By default you are in **Content** view when entering the console.
    * Your view is indicated by the selected View Picker item in the workspace area of the console.
-1. The **Upload content** dialog opens with the destination org and repo pre-filled from your project settings.
-   * If your connected repository has no `fstab.yaml`, the file that points EDS to the site's content source, you need to enter your **Organization** and **Repository** manually.
-   * If you used the boilerplate, an `fstab.yaml` is provided.
+1. The **Upload content** dialog opens with the destination **Organization** and **Site** pre-filled from your site's configuration: the repository's `fstab.yaml` file, which points EDS to the site's content source, or, if the repository has none, the site's configuration in EDS.
+   * Sites created from the current boilerplate have no `fstab.yaml`; their content source is set when the site is set up.
+   * If the console can't determine the destination, the fields are empty. Enter the **Organization** and **Site** of your content in Experience Workspace yourself.
 1. Select the files you want to upload and click **Upload**.
    ![Upload content dialog](assets/upload-content.png)
 1. The console indicates upload process by disabling the **Upload** button.
@@ -257,7 +257,7 @@ Open an uploaded document, make an edit, save, and reopen it to check authorabil
 
 >[!TIP]
 >
->If you are working on an AEM authoring project, with JCR persistence and the Universal Editor, uploading content to the AEM author instance works differently. Refer to [Getting Started with the Experience Modernization Agent for AEM Authoring Projects](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md#upload-content) for specific upload instructions.
+>If you are working on an AEM authoring project, with JCR persistence and the Universal Editor, uploading content to the AEM author instance works differently. Refer to [Getting Started with the Experience Modernization Agent for AEM Authoring Projects](getting-started-aem-authoring.md#upload-content) for specific upload instructions.
 
 ## Push Code Changes {#push-code-changes}
 
@@ -394,7 +394,7 @@ Where approved by your source-site administrator, the following backend addresse
 
 The following documents may be useful as you continue to explore the Experience Modernization Agent and its console.
 
-* [Experience Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md) - Details on the console, its views, options, and capabilities
-* [Prompting Guide for Experience Modernization Agent](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md) - Ideas on how to prompt the agent and what its skills can do
+* [Experience Modernization Console](console.md) - Details on the console, its views, options, and capabilities
+* [Prompting Guide for Experience Modernization Agent](prompting-guide.md) - Ideas on how to prompt the agent and what its skills can do
 * [Edge Delivery Services developer tutorial](https://www.aem.live/developer/tutorial) - Useful if you are new to AEM and Edge Delivery Services projects
 * [Experience Workspace](https://www.aem.live/docs/ew/about) - The visual authoring UI for document-based EDS content, formerly called Document Authoring

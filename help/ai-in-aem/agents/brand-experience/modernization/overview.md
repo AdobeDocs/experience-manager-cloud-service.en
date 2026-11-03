@@ -229,11 +229,11 @@ Optional add-ons extend these capabilities when a project needs them: Figma impo
 
 ## Figma-Based Migrations and Page Creation {#figma}
 
-In addition to live-site migrations, EMA can use Figma as a design source. To use these capabilities, set up your Figma details in [the Experience Modernization Console.](/help/ai-in-aem/agents/brand-experience/modernization/console.md)
+In addition to live-site migrations, EMA can use Figma as a design source. To use these capabilities, set up your Figma details in [the Experience Modernization Console.](console.md)
 
 ### Redesign Migration Using Figma-Derived Blocks {#figma-redesign}
 
-When you migrate an existing website into a redesigned experience, the agent [first creates the redesigned block collection from Figma components.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-redesign-migration) It then runs site migration against the live source website and maps source content into those Figma-derived blocks.
+When you migrate an existing website into a redesigned experience, the agent [first creates the redesigned block collection from Figma components.](prompting-guide.md#figma-redesign-migration) It then runs site migration against the live source website and maps source content into those Figma-derived blocks.
 
 * **Figma** is the target design and block-library source.
 * **The live website** remains the source of content.
@@ -241,9 +241,9 @@ When you migrate an existing website into a redesigned experience, the agent [fi
 
 ### Create a New Page from Figma {#figma-new-page}
 
-When a page does not exist on a source website, the agent [generates a new EDS page directly from a Figma frame or page.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-new-page-from-figma) It maps Figma sections to existing blocks, default content, or new variants. Text and assets come from Figma.
+When a page does not exist on a source website, the agent [generates a new EDS page directly from a Figma frame or page.](prompting-guide.md#figma-new-page-from-figma) It maps Figma sections to existing blocks, default content, or new variants. Text and assets come from Figma.
 
-For details on these workflows, individual Figma block migration, and prompting tips, see the [Prompting Guide for the Experience Modernization Agent.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md)
+For details on these workflows, individual Figma block migration, and prompting tips, see the [Prompting Guide for the Experience Modernization Agent.](prompting-guide.md)
 
 ## Block Development Capabilities {#block-development}
 
@@ -268,8 +268,8 @@ The self-service Experience Modernization Console is generally available. You ca
 
 To get started with the console:
 
-* For document-based persistence with Experience Workspace, recommended for new implementations, [use the getting started guide.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
-* For AEM authoring with JCR persistence and the Universal Editor, [use the AEM authoring guide.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
+* For document-based persistence with Experience Workspace, recommended for new implementations, [use the getting started guide.](getting-started.md)
+* For AEM authoring with JCR persistence and the Universal Editor, [use the AEM authoring guide.](getting-started-aem-authoring.md)
 
 ## Project Documentation Skill {#project-documentation}
 
@@ -283,11 +283,11 @@ The site catalog skill analyzes discovered pages, groups them into templates (pa
 * **Teams doing bulk imports** to identify which pages share the same layout, manually import and perfect the representative pages first, then bulk-import all remaining pages for that template
 * **Project leads and stakeholders** to understand the scope of the effort
 
-For details, see [Site Catalog Skill.](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
+For details, see [Site Catalog Skill.](site-catalog.md)
 
 ## Agentic Outcome Engineer (AOE) Delivery {#aoe-delivery}
 
-For complex migrations or accelerated outcomes, Adobe offers Agentic Outcome Engineer (AOE) delivery. In this optional service, Adobe engineers operate EMA on your behalf and combine its automation with engineering work and expert guidance to deliver production-ready results. For details, see [AOE Delivery of the Experience Modernization Agent.](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
+For complex migrations or accelerated outcomes, Adobe offers Agentic Outcome Engineer (AOE) delivery. In this optional service, Adobe engineers operate EMA on your behalf and combine its automation with engineering work and expert guidance to deliver production-ready results. For details, see [AOE Delivery of the Experience Modernization Agent.](aoe-delivery.md)
 
 If you are interested in the AOE model for your next migration:
 

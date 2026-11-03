@@ -81,7 +81,7 @@ For a CSS-only restyle, do not regenerate or reupload content unnecessarily. A g
 
 ## References, Prototypes, and Delivery {#design-output}
 
-EMA supports design work from source sites, Figma, and supplied references. Figma import and guided redesign are [optional capabilities](/help/ai-in-aem/agents/brand-experience/modernization/console.md#optional-capabilities) that EMA offers to turn on for your project when a request needs them. They have different inputs and outputs; do not assume that they work the same way.
+EMA supports design work from source sites, Figma, and supplied references. Figma import and guided redesign are [optional capabilities](console.md#optional-capabilities) that EMA offers to turn on for your project when a request needs them. They have different inputs and outputs; do not assume that they work the same way.
 
 * For one Figma block, provide its component/node link. For a new page, provide a specific frame/page rather than an entire file.
 * Figma requires the relevant project capability, configured credentials, and permission to read the file. Do not put tokens in chat.

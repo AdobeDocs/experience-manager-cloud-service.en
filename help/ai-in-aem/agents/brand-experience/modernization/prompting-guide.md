@@ -118,7 +118,7 @@ Use this prompt to analyze an existing website in order to understand its scale,
 * "How many page types are there on `https://example.com`"
 * "What are the layouts on `https://example.com`"
 
-For details on the site catalog skill, please see the document [Site Catalog Skill.](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
+For details on the site catalog skill, please see the document [Site Catalog Skill.](site-catalog.md)
 
 ### Bulk Import {#bulk-import}
 
@@ -263,7 +263,7 @@ Use this prompt to validate a single migrated page for visual fidelity against t
 
 Use this prompt to migrate a block from Figma design to Edge Delivery Services.
 
-Note that you must set up your Figma details in [the Experience Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md) to use this prompt. Figma import is an [optional capability](/help/ai-in-aem/agents/brand-experience/modernization/console.md#optional-capabilities). If it is not on for your project, EMA offers to turn it on.
+Note that you must set up your Figma details in [the Experience Modernization Console](console.md) to use this prompt. Figma import is an [optional capability](console.md#optional-capabilities). If it is not on for your project, EMA offers to turn it on.
 
 #### Example Prompts {#example-figma}
 

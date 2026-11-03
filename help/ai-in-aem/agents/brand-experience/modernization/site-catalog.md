@@ -47,7 +47,7 @@ The skill supports migration planning in the following ways:
 
 Confirm source authorization, reachability, and the intended project first. Cataloging analyzes the source; it does not upload content or publish a target site.
 
-[In the Experience Modernization Console,](/help/ai-in-aem/agents/brand-experience/modernization/console.md) start planning in either of the following ways.
+[In the Experience Modernization Console,](console.md) start planning in either of the following ways.
 
 * Open the [site planning UI](#accessing-planning-ui). If the project has no plan yet, it shows **Plan your migration**. Enter the site's address and select **Plan my migration**. Start with the home page; the agent finds the other pages.
 * Ask the agent in the chat:
@@ -91,7 +91,7 @@ The status of the run is shown in the chat summary and in the site planning UI.
 
 ## Site Planning UI {#planning-ui}
 
-The site planning UI is a view in the [workspace panel](/help/ai-in-aem/agents/brand-experience/modernization/console.md#workspace-panel) of the Experience Modernization Console where you can review the results of the site catalog skill and correct them before you begin migrating. It shows the templates, pages, and blocks the agent identified, along with screenshots, so you can confirm that they were identified correctly.
+The site planning UI is a view in the [workspace panel](console.md#workspace-panel) of the Experience Modernization Console where you can review the results of the site catalog skill and correct them before you begin migrating. It shows the templates, pages, and blocks the agent identified, along with screenshots, so you can confirm that they were identified correctly.
 
 Because the accuracy of the catalog directly affects project sizing and every downstream migration step, it is recommended that you review the catalog in the site planning UI before importing pages.
 

@@ -40,7 +40,7 @@ The Experience Modernization Console is a hosted, AI-assisted development enviro
 
 >[!TIP]
 >
->If you are interested in getting started right away with the console, check out the document [Getting Started with the Experience Modernization Agent.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
+>If you are interested in getting started right away with the console, check out the document [Getting Started with the Experience Modernization Agent.](getting-started.md)
 
 ## Capabilities {#capabilities}
 
@@ -245,9 +245,9 @@ Additional GitHub project actions can be performed on the [settings page](#setti
 
 The **Project views** help you plan the migration of an existing site.
 
-* **Planning** to review and refine the templates, pages, and blocks identified by the [site catalog skill](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md), so that you can migrate one representative page per template and validate it before you import the rest
+* **Planning** to review and refine the templates, pages, and blocks identified by the [site catalog skill](site-catalog.md), so that you can migrate one representative page per template and validate it before you import the rest
 
-For details, see [Site Planning UI](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md#planning-ui).
+For details, see [Site Planning UI](site-catalog.md#planning-ui).
 
 ## Settings Page {#settings-page}
 
@@ -267,7 +267,7 @@ If you make a change to any value in any section, click **Save** to save those c
   * **Allow LLM to use my Adobe credentials for admin.hlx.page, Document Authoring, and repositories hosted outside GitHub** - In the **Adobe IMS permissions (admin.hlx.page & Document Authoring)** section. When enabled, the agent can read site configuration and metadata, read Experience Workspace (Document Authoring) content, and push to and pull from repositories hosted outside GitHub, using your Adobe credentials. `admin.hlx.page` is the EDS admin API; `hlx` comes from Helix, the project name under which the EDS architecture was developed. This does not approve publishing: EMA blocks the agent's uploads, previews, and publication when your current message doesn't ask for them. Treat this as a safeguard, not a guarantee.
   * **Custom IMS Token (optional)** - Provide a token to use instead of your session token. IMS is Adobe's identity service, which issues the token for your Adobe ID session. Prefer a service account token over a personal token where possible.
   * **Allow LLM to use my git credentials** - Where available, lets the agent push to and pull from your GitHub repositories on your behalf. If you don't see this setting, it isn't available to you yet; push the agent's changes yourself with **Sync** > **Push** > **Code**. When it's on, the agent can push to any repository and branch that your GitHub credentials can write to, including `main`. Your repository's branch protection still applies. This grants elevated access; use a scoped token if offered.
-* **Credentials** allows you to specify a personal access token for Figma so the [console can access design blocks for your project.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
+* **Credentials** allows you to specify a personal access token for Figma so the [console can access design blocks for your project.](prompting-guide.md#figma-block-migration)
   * The token requires the following read-only scopes:
     * `file_content:read`
     * `file_metadata:read`
