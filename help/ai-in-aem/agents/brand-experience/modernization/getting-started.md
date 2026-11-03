@@ -80,7 +80,7 @@ Auto mode migrates a website, starting from its URL or from a list of its page U
    * For a protected source site, enter credentials in the authentication fields that Auto mode offers, not in chat.
    * If Auto mode offers **Include integrations**, select it to carry over supported integration settings from the source site, such as analytics, tag manager, and consent settings. They stay switched off on the new site until you turn them on.
 1. Start the run. A run can take up to 24 hours. You can leave the page; you receive an email when the run finishes. If the email doesn't arrive, check your spam folder.
-1. Review the run's status and result, including the preview, repository, report, and errors where available. Check which pages were migrated, and their content, links, images, and styles. Links to pages that the run didn't migrate can still point to the source site. A failed or partial run is not proof that all requested pages migrated.
+1. Review the run's status and result, including the preview, repository, report, and errors where available. Check which pages were migrated, and their content, links, images, and styles. Links to pages that the run didn't migrate can still point to the source site.
 1. Open the resulting site with **Open site**. To keep working on it, transfer it to your own EDS site with [**Make it yours**](#make-it-yours).
 
 The run's site stays in an Adobe-managed location until you transfer it. Access to Auto mode does not establish a general entitlement or page allowance. Check the limits shown for your account. Auto mode produces document-based content. For JCR-backed delivery, use the [guided AEM authoring path](getting-started-aem-authoring.md).
@@ -328,7 +328,7 @@ The agent's work stays in the console workspace until you save it elsewhere. Eac
 * **Preview** copies saved content to the EDS preview site, `*.aem.page`.
 * **Publish** makes previewed content live on `*.aem.live`.
 
-Upload and push separately. EDS stores content apart from code, so pushing code doesn't save your pages, and uploading doesn't save your code. Your first result is complete when you can reopen the page in Experience Workspace, edit it, and see the requested change on the preview site, not merely when a preview link exists. A design preview in the console alone doesn't show that the content is saved and editable.
+Upload and push separately. EDS stores content apart from code, so pushing code doesn't save your pages, and uploading doesn't save your code. Your first result is complete when you can reopen the page in Experience Workspace, edit it, and see the requested change on the preview site, not merely when a preview link exists. The console preview shows the copy in your workspace; authors edit the uploaded copy.
 
 ### Upload Content {#upload-content}
 

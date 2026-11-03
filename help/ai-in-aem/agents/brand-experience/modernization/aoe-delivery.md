@@ -81,13 +81,13 @@ Confirm who owns ongoing content, code, integrations, and operations. Follow the
 
 ## AOE Delivery Scope {#scope}
 
-The engagement defines which automated and manual work is included. The sections below describe the areas to agree, not a promise that every project requirement is included.
+The engagement defines which automated and manual work is included. The sections below describe the areas to agree.
 
 ### Source Platforms {#source-platforms}
 
 Sources can include WordPress, Drupal, Sitecore, legacy AEM, SharePoint, or custom sites where authorized content can be extracted. The standard source scope described for this service is publicly accessible static HTML. Have the AOE team explicitly assess protected, interaction-dependent, or private-network sources rather than assume they are included.
 
-This service-scoping boundary is not a blanket product limitation: some EMA workflows can capture client-rendered content or use supported source authentication. It is also not a limit on the complexity of sites EDS can deliver. Agree source access and extraction for the actual engagement.
+This is the scope of the service, not a limit of the product or of EDS. EMA itself reads pages as a browser renders them, including content that scripts insert, and reads pages behind supported sign-in methods. See [Limitations](overview.md#limitations). Agree source access and extraction for the actual engagement.
 
 ### Included in AOE Scope {#included}
 
@@ -99,19 +99,19 @@ This service-scoping boundary is not a blanket product limitation: some EMA work
 #### Migration Work Performed {#migration-work}
 
 * **Migration approach:** Agree faithful migration, redesign, or an incremental phased migration.
-* **Static content import:** Automated extraction of static HTML content from source websites and automated mapping to EDS [default content and blocks](overview.md#eds-basics)
+* **Content import:** Automated extraction of page content from source websites and automated mapping to EDS [default content and blocks](overview.md#eds-basics)
 * **Design system:** Extraction of brand tokens (colors, typography, spacing) and application to the new site
-* **Design references:** Agree the source site, Figma, or other supplied references and what fidelity means for acceptance. Do not assume every design format has a dedicated automated importer.
-* **Responsive design:** Mobile and desktop layouts handled appropriately
+* **Design references:** EMA imports designs from the source site and from Figma, and works from attached screenshots and documents otherwise. Agree which references apply and what fidelity means for acceptance.
+* **Responsive design:** Layouts for mobile and desktop widths in the project's CSS
 
 #### Resulting System {#resulting-system}
 
-The resulting site uses EDS. Agree and measure the required performance, accessibility, SEO, functional, and authoring outcomes on representative real pages. Architecture or automated scores alone do not guarantee load times, search ranking, accessibility compliance, or production readiness.
+The resulting site uses EDS. A new project from the AEM boilerplate scores 100 in Lighthouse; what a project adds, such as third-party scripts, large images, or heavy block code, can lower that score. Accessibility and search results depend on the content and code. Agree and measure the required performance, accessibility, SEO, functional, and authoring outcomes on representative real pages.
 
 Use the [production acceptance checklist](production-migration.md#acceptance). In particular, reconcile the in-scope inventory, test integrations, and verify that authors can edit, save, reopen, and preview content in the selected authoring environment.
 
 ## Limitations {#limitations}
 
-Review the [product boundaries](overview.md#limitations) separately from the engagement scope. Integrations, custom business logic, analytics, commerce, search, source-system inheritance, and regulated requirements need an explicit inclusion/exclusion decision and owner. Automated page import does not recreate them by itself.
+Review the [product boundaries](overview.md#limitations) separately from the engagement scope. Integrations, custom business logic, analytics, commerce, search, source-system inheritance, and regulated requirements need an explicit inclusion/exclusion decision and owner. They run on the source's servers or in its scripts, which page import doesn't carry over.
 
 Before handoff, record unresolved work, accepted exceptions, code/content destinations, validation results, recovery steps, and support ownership in the [project handover](project-documentation.md#portable-handoff). Code rollback and content/asset recovery are separate operations.

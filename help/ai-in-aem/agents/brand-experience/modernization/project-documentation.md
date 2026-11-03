@@ -37,7 +37,7 @@ Learn how the Experience Modernization Agent's documentation skill can help you 
 * **Module &amp; component organization** - Clear documentation of how blocks, modules, and components are organized and how they relate to each other
 * **Role-based guides** - Documentation for authors, developers, and administrators
 
-Review generated guidance against the actual authoring target and validated examples. Generation does not establish that the agent accessed every remote page, integration, or deployment setting.
+The guides describe what the agent can read: the code in the workspace and, with permission to use your Adobe credentials, the site configuration from the EDS admin API. Systems it can't read, such as integration or CDN configuration, aren't covered. Review the guides against the actual authoring target and validated examples.
 
 ## Prerequisites {#prerequisites}
 
@@ -46,7 +46,7 @@ Ensure the following before using this skill.
 * Your project must be checked out to your console workspace.
 * Project documentation is an [optional capability](console.md#optional-capabilities). If it is not on for your project, EMA offers to turn it on when you ask for documentation and asks you to confirm.
 * To enrich the guides with EDS configuration, you need appropriate admin access and must enable **Allow LLM to use my Adobe credentials for admin.hlx.page, Document Authoring, and repositories hosted outside GitHub** in [console settings](console.md#settings-page). `admin.hlx.page` is the EDS admin API, which holds site configuration; `hlx` comes from Helix, the project name under which the EDS architecture was developed.
-* Without that access, the agent can generate code-based documentation. Ask it to state which configuration and remote content it could not inspect. This permission does not establish JCR repository access.
+* Without that access, the agent can generate code-based documentation. Ask it to state which configuration and remote content it could not inspect. The permission covers the EDS admin API and Experience Workspace, not the JCR of an AEM author instance.
   
 ## Creating Project Documentation {#creating-documentation}
 

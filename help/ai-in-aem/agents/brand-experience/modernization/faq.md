@@ -136,6 +136,10 @@ Yes. Describe it in the migration prompt, write lasting conventions in the proje
 
 ## Source Sites {#source-sites}
 
+### Does it matter which CMS or framework the source site uses? {#source-technology}
+
+No. EMA loads each source page in a browser and works from what it renders: the content and design that visitors see. Features that run on the source's servers, such as personalization rules, search, or form processing, aren't in the rendered page, so decide how each works on EDS. See [Limitations](overview.md#limitations).
+
 ### What if the source site uses bot protection? {#bot-protection}
 
 Ask the site's administrator to allow access for the migration, for example by allowlisting EMA's backend addresses or by giving you a credential such as a secret header. Don't work around the protection. See [Source Sites with Bot Protection](getting-started.md#bot-protection).
@@ -253,6 +257,10 @@ For processing locations, data retention, and compliance information, contact yo
 ### Is EMA for developers or for authors? {#audience}
 
 EMA is the agent for building and changing EDS sites: migrating them, creating and updating blocks, restyling, creating pages from designs, and the code and content structure behind them. Developers and the people who run a migration use it most. Authors edit content day to day in Experience Workspace, or in the Universal Editor for AEM authoring. See [Overview](overview.md).
+
+### Can EDS run complex sites, or only simple ones? {#complex-sites}
+
+Complex enterprise sites. An EDS page is standard HTML, CSS, and JavaScript, so a block can call any API from the browser, such as search, commerce, or personalization, or run a complete application. Spreadsheets publish as JSON and a query index lists the site's pages, so blocks can also build listings and filters from your own content. Each integration is project work that you specify, and EMA can write the code for it. See [Understand Your Project](overview.md#project-foundations).
 
 ### How does EMA relate to Experience Workspace? {#experience-workspace}
 

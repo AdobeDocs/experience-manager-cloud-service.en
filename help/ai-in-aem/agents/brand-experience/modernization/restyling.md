@@ -68,7 +68,7 @@ A new migration is not required.
 
 1. Connect the existing project and intended branch. Ask EMA to read the project's design conventions, blocks, and authoring models.
 1. Identify baseline pages covering the affected templates and variants. Record their current appearance and important interactions.
-1. State the bounded change and preservation rules. For example:
+1. State the scope of the change and what must stay. For example:
 
    > Restyle this existing project using [approved reference]. Change global colors and typography and the cards presentation on [paths]. Preserve content, URLs, models, analytics, keyboard behavior, and integrations. Reuse our tokens and blocks. Show the proposed scope first; do not reimport content or upload, push, or publish.
 
@@ -77,7 +77,7 @@ A new migration is not required.
 1. If the design requires structural or model changes, make that a separate, explicit decision. Provide a compatibility/content-migration plan rather than silently rewriting author content.
 1. Review the code diff and project checks, then push and deliver through the [existing project's workflow](getting-started.md#push-code-changes). Style changes are code: they reach the live site as soon as the branch is merged into `main`, so check the affected pages on the branch's preview URL first. See [How Changes Go Live](overview.md#code-content-lifecycle).
 
-For a CSS-only restyle, do not regenerate or reupload content unnecessarily. A global token change can affect pages outside the original example; include those in regression checks.
+A restyle changes CSS and JavaScript only, so content doesn't need to be regenerated or uploaded again. A global token change can affect pages outside the original example; include those in regression checks.
 
 ## References, Prototypes, and Delivery {#design-output}
 
@@ -85,7 +85,7 @@ EMA supports design work from source sites, Figma, and supplied references. Figm
 
 * For one Figma block, provide its component/node link. For a new page, provide a specific frame/page rather than an entire file.
 * Figma requires the relevant project capability, configured credentials, and permission to read the file. Do not put tokens in chat.
-* A static HTML design preview can be useful for choosing a direction, but it does not establish editable EDS documents or JCR pages.
+* A static HTML design preview shows the new design on copies of your pages, which helps you choose a direction. Authors can't edit those copies; they aren't the site's documents or JCR pages.
 * If authorable delivery is required, explicitly request EDS content, suitable block models, and the correct persistence target. Complete [document-based](getting-started.md#upload-content) or [AEM authoring](getting-started-aem-authoring.md#validate-content) validation.
 
 ### Guided Redesign {#guided-redesign}

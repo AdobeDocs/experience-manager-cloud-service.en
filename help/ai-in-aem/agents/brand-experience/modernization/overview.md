@@ -36,12 +36,12 @@ EDS is the AEM service that delivers websites, and it is part of AEM Sites. It s
 
 EMA is part of the [Brand Experience Agent.](/help/ai-in-aem/agents/brand-experience/overview.md) It automates the repetitive parts of building an EDS site: importing content, mapping it to blocks, extracting the design, and writing block code. You work in the hosted Experience Modernization Console, using natural-language requests and previews. You don't need Docker or a local command-line environment. With Auto mode, in early access, EMA can also migrate a first set of pages on its own and email you when it's done.
 
-Use EMA to move web properties from other CMSes, older AEM implementations built from Java and HTL components, or static sites onto EDS, the current AEM website stack. Consolidating there gives you:
+Use EMA to move web properties from other CMSes, older AEM implementations built from Java and HTL components, or static sites onto EDS, the current AEM website stack. EMA reads each source page as a browser renders it, so the system behind the source doesn't matter: it works from the content and design that visitors see. Consolidating on EDS gives you:
 
-* **Lean, standard code:** Pages are semantic HTML, styled and decorated by your own CSS and JavaScript and served from the edge. EDS sites can reach a Lighthouse score of 100.
+* **Fast pages from lean code:** EDS serves the content as finished semantic HTML from a CDN, and your own CSS and JavaScript style it, with no framework to download first. A page loads in three phases: what the first section needs, then the rest of the project's code, and third-party tags last. That is why a new project from the AEM boilerplate scores 100 in Lighthouse. See [Keeping It 100](https://www.aem.live/developer/keeping-it-100).
 * **Room to grow:** EDS runs large multi-market and multi-language sites. Its largest sites have more than 100,000 pages.
 * **Visual authoring:** Authors edit pages visually in Experience Workspace, or in the Universal Editor when content stays in AEM. See [Where Content Is Stored and How Authors Edit It](#content-storage).
-* **Pages that AI systems can read:** AI crawlers and answer engines often read the raw HTML without running JavaScript. Because EDS serves lean semantic HTML, the migrated content is readable to them, so migration and AI readiness happen in the same step. This does not guarantee search rankings.
+* **Pages that AI systems can read:** AI crawlers and answer engines often read the raw HTML without running JavaScript. Because EDS serves the content in the HTML itself, the migrated content is readable to them, so migration and AI readiness happen in the same step.
 
 EMA rebuilds your pages on an EDS block system that follows EDS architecture. It decomposes each page into sections and content, maps the content to default content and reusable blocks, and extracts the design system into global styles and block CSS. It then imports further pages in bulk with the same mappings, using generated import scripts rather than having the AI model interpret every page. See [How EMA Migrates at Scale](#migration-at-scale). EMA does not clone the source markup, which would carry over the old site's technical debt. Expect a close first pass that you refine by prompting and validate before you scale.
 
@@ -77,7 +77,7 @@ Each row links to a task guide with the steps and the checks that tell you when 
 | Restyle an existing EDS site | [Restyle an existing site](restyling.md#existing-site) | The affected pages adopt the design without unintended content or behavior changes. |
 | Create, update, or refactor blocks | [Block development](block-development.md) | Reusable code and authorable examples pass the agreed checks. |
 
-A successful automated run or attractive preview is not, by itself, a production-ready site. Use the completion checks for your task.
+An automated run or a preview shows how the pages look. The completion checks of your task establish the rest: that authors can edit the pages, that integrations work, and that the site is ready to release.
 
 ## Understand Your Project {#project-foundations}
 
@@ -88,7 +88,7 @@ An EMA task touches several separate parts of a project. Keep them apart when yo
 * **Content destination:** Where the migrated content is stored and which editor authors use. Adobe strongly recommends document-based persistence with Experience Workspace for new implementations. The alternative is AEM authoring with JCR persistence and the Universal Editor. The source CMS does not determine this choice. See [Where Content Is Stored and How Authors Edit It](#content-storage).
 * **Preview and publication:** The EDS preview site, where you check saved content with your code, and the live site, where approved changes are released. See [How Changes Go Live](#code-content-lifecycle).
 
-EDS supports complex enterprise websites. Search, commerce, personalization, and other integrations can require project-specific implementation and testing; they are not reasons to restrict EDS to simple or static sites.
+EDS runs complex enterprise websites. Its pages are standard HTML, CSS, and JavaScript, so a block can call any API from the browser, such as search, commerce, or personalization, as on any other website. Spreadsheets publish as JSON and a query index lists the site's pages, so blocks can also build listings and filters from your own content. Business logic stays in the services that own it. Each integration is project work that you specify and test, and EMA can write its block code once you have decided how it should work. See [Build a Dynamic Block](block-development.md#dynamic-blocks).
 
 ### How EDS Pages Work {#eds-basics}
 
@@ -252,13 +252,13 @@ For details on these workflows, individual Figma block migration, and prompting 
 
 ## Block Development Capabilities {#block-development}
 
-EMA uses general EDS development capabilities, so it remains useful after the initial site creation or migration.
+With or without a migration, EMA works on the project the way a developer does: it reads and changes the files in the repository, runs the project's linting and tests, and checks the result in the preview. An EDS project is plain HTML, CSS, and JavaScript, so this covers everything the site does, from a CSS tweak to a block that calls an API or runs a complete application.
 
-* Follows Content-Driven Development (CDD): it starts from real content and the author's needs, then writes code, which keeps content models author-friendly.
-* Uses the Adobe-maintained [Block Collection](https://www.aem.live/developer/block-collection) and the community-driven [Block Party](https://www.aem.live/developer/block-party/) to find reference implementations and best practices.
-* Supports testing and debugging workflows for validating changes before deployment.
+* It follows Content-Driven Development (CDD): it starts from real content and from how authors will create it, then writes the code, which keeps content models easy for authors.
+* Before it writes a new block, it looks for one to reuse in your project, in the Adobe-maintained [Block Collection](https://www.aem.live/developer/block-collection), and in the community-driven [Block Party](https://www.aem.live/developer/block-party/).
+* It tests and debugs its changes in the console preview before you push them.
 
-Detailed capabilities include block development, content modeling, reference block discovery, testing, and debugging.
+For the procedures, see [Create, Update, and Refactor Blocks](block-development.md). For example prompts, see the [prompting guide](prompting-guide.md#block-development-capabilities).
 
 ## Experience Modernization Console {#console}
 
@@ -282,7 +282,7 @@ To get started with the console:
 
 ## Site Catalog Skill {#site-catalog}
 
-The site catalog skill analyzes discovered pages, groups them into templates (pages that share a layout) and block variants, and provides screenshots and a report for review. Discovery and analysis can be partial. The skill helps:
+The site catalog skill analyzes discovered pages, groups them into templates (pages that share a layout) and block variants, and provides screenshots and a report for review. It discovers the pages that the sitemap lists or that links lead to, so check the result against your own inventory. The skill helps:
 
 * **Anyone starting a migration project** to establish an inventory of page layouts, block variants, locales, and pages per template, then reconcile it with the agreed site scope
 * **Teams doing bulk imports** to identify which pages share the same layout, manually import and perfect the representative pages first, then bulk-import all remaining pages for that template
@@ -354,10 +354,10 @@ Use only websites and designs that you are authorized to migrate. The selected w
 
 * Pages that require sign-in or a secret header can be migrated when the source accepts a custom request header, HTTP Basic authentication, or bearer authentication. Configure the credentials in the console's [Protected Site Authentication](console.md#protected-site-authentication) settings, or in the authentication fields of Auto mode. Do not put secrets in chat. This is not intended for personally identifiable information (PII) or real end-user data.
 * Sources reachable only through a VPN or blocked by a firewall remain unsupported, even with valid credentials. So do sources that require another sign-in flow, such as an interactive single sign-on (SSO) form. Ask the site administrator for an internet-reachable staging or origin host that accepts a supported method.
-* Client-rendered content can be captured when available at the page URL. Content present in the DOM but hidden by CSS can also be extracted. Content requiring additional interactions needs representative checks and may need a different extraction approach.
+* EMA loads each source page in a browser and reads it once it has rendered. That includes content that scripts insert and content that the page contains but CSS hides, such as a closed accordion panel. Content that appears only after a visitor clicks or types isn't in the page at that moment, so it isn't captured. Check such pages in the screenshots, and add the missing content after import or ask EMA for a way to capture it.
 * EMA targets EDS, including EDS with [JCR-backed AEM authoring.](#jcr-persistence) It does not convert a project to HTL-based AEM publishing or an API-only/SPA delivery stack.
-* Faithful design, accessibility, performance, and functional behavior require validation. A visual similarity score is not a production acceptance criterion.
-* Integrations, custom business logic, analytics, experimentation, and source-system features such as inheritance or content fragments need an explicit implementation and migration decision. Do not assume automated page import recreates them.
+* Page import copies what the source page shows: its content and its design. It can't see how the source's servers produced that page. Content inheritance, reuse through content fragments, personalization rules, search, form processing, and other business logic run there, so import copies their output on that page, not the logic. EMA also rebuilds the markup rather than copying it, so the source's scripts, such as analytics and experimentation tags, don't come along. Auto mode's **Include integrations** option carries over supported analytics, tag manager, and consent settings. Decide how each of the others works on EDS; EMA can then build the blocks and code for it.
+* EMA's visual critique compares how the result looks with the source. Looking the same doesn't show that authors can edit the page, that interactions work, or that it is accessible and fast on real devices, so check those as part of [acceptance](production-migration.md#acceptance).
 
 Auto mode is in early access and needs its own [access request](getting-started.md#brand-trial). The [optional capabilities](console.md#optional-capabilities) on offer can change between releases. Check the controls and limits shown for your account. [AOE service scope](aoe-delivery.md#scope) is agreed separately from product capabilities.
 

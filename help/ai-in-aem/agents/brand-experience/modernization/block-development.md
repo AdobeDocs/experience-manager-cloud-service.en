@@ -37,7 +37,7 @@ Connect the intended repository and branch, confirm modification permissions, an
 
 HTML elements are the basic building units, or atoms: headings, paragraphs, links, lists, and images. Authors should use default content, the content outside blocks, for these where possible. Global styles and CSS custom properties, or design tokens, define shared typography, colors, spacing, and link/button presentation.
 
-A block adds a reusable content structure or behavior where default content is insufficient. In the HTML that EDS serves, a block is a `div` with the block name as its class. The project's `blocks/<name>/<name>.js` and `blocks/<name>/<name>.css` decorate it in the browser. Keep a block lightweight and focused; a visual difference alone doesn't need a new block, because a variant or a section style can carry it.
+A block lets authors mark which content forms one component, such as a set of cards or a carousel, where the code couldn't tell it apart from the surrounding default content. In the HTML that EDS serves, a block is a `div` with the block name as its class. The project's `blocks/<name>/<name>.js` and `blocks/<name>/<name>.css` decorate it in the browser. Where the code can recognize a pattern in default content, it can build the block itself, which aem.live calls [auto-blocking](https://www.aem.live/developer/markup-sections-blocks): the AEM boilerplate, for example, turns a link to a `/widgets/` page into a widget block. Keep a block lightweight and focused. A visual difference alone doesn't need a new block: CSS and JavaScript can style default content, and a variant or a section style can carry the difference.
 
 [David's Model](https://www.aem.live/docs/davidsmodel) collects the aem.live rules for content that authors can create easily: prefer default content, avoid blocks inside blocks, keep the number of blocks and variants small, and let buttons take their style from the block or section that they are in. When a block does the same job as one in the [Block Collection](https://www.aem.live/developer/block-collection), reuse that block's content model.
 
@@ -50,7 +50,7 @@ Check the project's conventions before generating code:
 | Footnote | How markers, target IDs, return links, and reading order are authored and preserved. |
 | Repeated content | Whether an existing cards/list block or variant represents it without extra author fields. |
 
-These are project conventions, not universal EMA authoring controls. Do not invent a button-group or footnote UI. Check the actual content model and rendered result.
+EDS has no built-in button-group or footnote control. Each is a convention that the project's code applies to authored content, so check how your project implements it and test the rendered result.
 
 ### Example: A Flexible Teaser Without Atomic Blocks {#composition-example}
 
@@ -111,7 +111,7 @@ Provide the author task, example content, desired behavior/design, target persis
 1. Define a content model that authors can understand. Use headings, links, images, and grouped content naturally rather than exposing CSS or implementation details as fields.
 1. Create representative content first. Include long text, missing optional values, multiple items, and meaningful images/links.
 1. Implement only the needed HTML decoration, CSS, and JavaScript. Reuse project tokens and shared utilities.
-1. For JCR-backed projects, update the source models/component configuration and regenerate aggregates through the project workflow. A block's model defines the fields authors edit in the Universal Editor. Check conversion and authoring hints. A document table alone does not establish a working Universal Editor model.
+1. For JCR-backed projects, update the source models/component configuration and regenerate aggregates through the project workflow. A block's model defines the fields authors edit in the Universal Editor; the editor reads the model, not a table in a document, so the block is editable there only once its model defines those fields. Check conversion and authoring hints.
 1. [Validate](#validation), then document an authorable example and allowed variants.
 
 For example:
@@ -146,7 +146,7 @@ Provide the block name, current examples/variants, requested change, and compati
 
 1. Identify pages using the block, shared styles/utilities, and existing tests.
 1. State what must remain unchanged, including existing content structures and interactions.
-1. Make the bounded change. For presentation-only changes, avoid changing models or regenerating content.
+1. Make the change. A presentation change is CSS or JavaScript only, so it doesn't touch content models or require reimporting content.
 1. Test the changed behavior and the unaffected variants on representative content.
 1. If an incompatible model change is necessary, agree how existing content will be migrated and who accepts the authoring impact before applying it.
 
@@ -170,7 +170,7 @@ For example:
 
 > Refactor duplicated card-decoration logic in [blocks/files]. Preserve authored models, output semantics, appearance, link behavior, keyboard access, and analytics hooks. Use [paths] as regression examples. Report compatibility risks and test results. Do not migrate content or push changes.
 
-This is a development request, not a dedicated refactoring button or guaranteed automatic conversion.
+There is no separate refactoring command: you ask in chat, and EMA changes the code as a developer would, within the invariants you set.
 
 ## Validate and Deliver {#validation}
 

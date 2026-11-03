@@ -87,9 +87,9 @@ Once you complete those steps to migrate the content, continue with the followin
 
 Validate the selected page in the content panel. Use **Markdown view**, **JCR XML view**, and **Errors** to check content and conversion. Use **Add to chat** to target fixes to a page, parser, or transformer. Parsers and transformers are the import scripts that EMA generates: a parser converts one block's source HTML, and a transformer cleans up the whole page.
 
-In AEM authoring projects, each block also has a model: configuration that defines the fields authors edit for that block in the Universal Editor. Ask the agent to check that the source block models, component definitions, and generated aggregate configuration agree. Update the source configuration through the project's generation workflow rather than fixing only a generated file. Check field mappings and authoring hints, page paths, image references, and the intended site/DAM destinations.
+In AEM authoring projects, each block also has a model: configuration that defines the fields authors edit for that block in the Universal Editor. The Universal Editor edits only the fields that a block's model defines, so a page can render correctly in the HTML preview while blocks that don't match their models can't be edited. Ask the agent to check that the source block models, component definitions, and generated aggregate configuration agree. Update the source configuration through the project's generation workflow rather than fixing only a generated file. Check field mappings and authoring hints, page paths, image references, and the intended site/DAM destinations.
 
-An HTML preview can look correct while the converted content is not authorable. Resolve conversion errors on a representative page before creating a larger package.
+Resolve conversion errors on a representative page before creating a larger package.
 
 ![Contextual chat](assets/contextual-chat.png)
 

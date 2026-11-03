@@ -33,7 +33,7 @@ Use the site catalog skill of the Experience Modernization Agent (EMA) to analyz
 
 Use the site catalog to see which pages a site has and how they group into templates before you migrate. With that grouping, you can migrate and validate one representative page per template before you import the rest, and estimate the size of the project.
 
-The site catalog skill discovers URLs, analyzes reachable pages, groups page templates and block variants, and captures screenshots. A template is a group of pages that share the same layout of blocks. A block variant is a version of a block with its own content structure or look. Review and refine the results in the [site planning UI](#planning-ui). Discovery can miss pages and analysis can fail; reconcile the result with your agreed inventory.
+The site catalog skill discovers URLs, analyzes reachable pages, groups page templates and block variants, and captures screenshots. A template is a group of pages that share the same layout of blocks. A block variant is a version of a block with its own content structure or look. Review and refine the results in the [site planning UI](#planning-ui). Discovery finds the pages that the sitemap lists or that links lead to, and analysis can fail on individual pages, so reconcile the result with your agreed inventory.
 
 The skill supports migration planning in the following ways:
 
@@ -252,7 +252,7 @@ The site catalog skill is part of the recommended approach for migrating a full 
 
 Before reimporting, preserve or reconcile author edits in affected pages. If analysis fails, inspect the [failed URLs](#failed-urls), correct source access or extraction issues, and retry the affected scope. If mappings are wrong, refine a representative first rather than repeat a large import unchanged.
 
-For production, continue with [inventory reconciliation and acceptance](production-migration.md#acceptance). Generated block code marked **Ready** does not establish that it has passed authoring, functional, or production checks.
+For production, continue with [inventory reconciliation and acceptance](production-migration.md#acceptance). **Ready** means that a block's code was generated; authoring, functional, and production checks happen in acceptance.
 
 ## Catalog Files {#catalog-files}
 
@@ -273,8 +273,8 @@ The folder also contains intermediate files, including per-page analysis and scr
 
 The site catalog skill has the following limitations.
 
-* **Source access** — The catalog workflow must be able to reach and read the authorized source. For pages that require sign-in or a secret header, configure [protected site authentication](console.md#protected-site-authentication). Do not assume that authentication configured for Auto mode also applies to cataloging, or that a browser login provides backend access. Verify a representative protected URL before planning a catalog run. If bot protection blocks discovery or analysis, see [source sites with bot protection](getting-started.md#bot-protection).
-* **Interaction-dependent content** — Client-rendered or CSS-hidden content is not inherently excluded, but content requiring additional user interaction to appear may not be captured. Inspect the screenshots and source content.
-* **Coverage** — Discovery and analysis do not guarantee a complete inventory. Record failures, missing URLs, and approved exclusions.
+* **Source access** — The catalog workflow must be able to reach and read the authorized source. For pages that require sign-in or a secret header, configure [protected site authentication](console.md#protected-site-authentication). Do not assume that authentication configured for Auto mode also applies to cataloging. EMA reads the source from its hosted environment, so being signed in to the source in your own browser doesn't give it access. Verify a representative protected URL before planning a catalog run. If bot protection blocks discovery or analysis, see [source sites with bot protection](getting-started.md#bot-protection).
+* **Interaction-dependent content** — The catalog loads each page in a browser and reads it once it has rendered, including content that scripts insert and content that CSS hides. Content that appears only after a visitor clicks or types isn't in the page at that moment, so it isn't captured. Inspect the screenshots and source content.
+* **Coverage** — Discovery uses the sitemap or follows links from the start page, so pages that neither lists nor links to, such as campaign landing pages, aren't found. Compare the result with your own URL list, and record failures, missing URLs, and approved exclusions.
 
 Hand over the analysis date, source scope, report, corrections, unresolved URLs, and validated representatives using the [project handover](project-documentation.md#portable-handoff).

@@ -101,7 +101,7 @@ Use this prompt when migrating content from an existing website to Edge Delivery
 * The agent attempts to reuse existing blocks from the repository's block library before creating new ones.
   * When content can not be mapped to an existing block, it creates new block variants.
   * You can prompt for changes, request new variants, or adjust mappings interactively.
-* Reuse established block variants where they fit the content and design. A similarity heuristic does not replace checking the authored result.
+* Reuse established block variants where they fit the content and design. A variant that looks right can still structure content differently from what authors expect, so check the authored result.
 * Header, navigation, and footer are excluded from page migration. These are handled by dedicated skills.
 * Each migration creates import infrastructure (page templates, block parsers, transformers) for future bulk imports.
 * Image handling can preserve source Dynamic Media URLs, including older Scene7 URLs, for both persistence targets. Scene7 is the earlier name of Dynamic Media. Verify access, intended transformations, and delivery in the target rather than assuming every source image has been copied.
@@ -140,7 +140,7 @@ Use this prompt to import many pages of the same template after completing an [i
 * Transformers operate on the entire DOM before and after parsing. Parsers operate at the individual block level.
 * All parsers are validated before bulk import can proceed.
 * One template corresponds to one bulk import configuration.
-  * Mixing templates in a single run is not supported.
+  * The import script is written for one template's structure, so each run covers pages of one template.
 
 #### Typical Workflow {#typical-workflow}
 
@@ -167,7 +167,7 @@ Use this prompt to extract content, metadata, and images from an authorized sour
 
 * This prompt is usually invoked automatically as the first step of page migration.
 * Content hidden via CSS is captured too if present in the DOM.
-* The extraction workflow can load client-rendered content and scroll for lazy-loaded images. Verify representative output; content requiring additional interactions may need further work.
+* The extraction workflow loads the page in a browser, so it captures content that scripts insert, and it scrolls the page so that lazy-loaded images load. Content that appears only after a click or typing isn't in the page at that moment. Check the screenshot and add what's missing.
 * Check the extracted image assets and formats against the source, including responsive images, backgrounds, and SVGs.
 * Metadata is extracted including title, description, Open Graph tags, JSON-LD structured data, canonical URL.
 * Source markup and image references can be normalized during extraction. Check that the selected rendition, links, and image meaning remain correct.
@@ -200,8 +200,8 @@ Use this prompt to extract and apply visual design from a source site to Edge De
      * If your project already has a `brand.css`, prompt the agent to use it instead of extracting from the source.
   1. Phase 2 styles individual blocks in parallel and creates block-specific CSS in `/blocks/{name}/{name}.css`, referencing the tokens from `brand.css`.
 * Block styling (phase 2) requires site-wide design (phase 1) to be complete first.
-* Existing projects may use different token files. Preserve their conventions rather than create a second design system unnecessarily.
-* State whether the request is global, block-specific, faithful to the source, or a redesign. Duration and visual quality depend on the project; review real pages rather than rely on a time or similarity guarantee.
+* Existing projects may use different token files. Ask the agent to use them rather than create a second set of tokens.
+* State whether the request is global, block-specific, faithful to the source, or a redesign. Check the result on real pages at desktop and mobile widths. The design is CSS applied to the imported content, so a fix in `brand.css` or a block's CSS applies to every page that uses it.
 
 ### Block Critique {#block-critique}
 
@@ -214,7 +214,7 @@ Use this prompt to validate and refine individual migrated blocks and ensure vis
 
 #### What to Know {#wtk-block-critique}
 
-* Block critique compares a migrated block against its source and can apply content or styling fixes. Internal similarity/iteration heuristics are not acceptance criteria.
+* Block critique compares a migrated block with its source and can apply content or styling fixes. It compares how they look, so it doesn't show that authors can edit the block or that its interactions work. Check those separately.
 * The skill requires the block to have been created by page migration first.
 * Critique detects and fixes both **content/structural issues** and **styling issues**:
   * Content/structural: missing headings, paragraphs, links, wrong table row/cell count — fixed by updating parsers and reimporting.
@@ -344,7 +344,7 @@ Use this prompt when the page does not already exist on a source website and a F
 * The frame should be organized into **clear page sections**.
 * Sections are mapped to existing blocks, default content, or new variants.
 * Text and assets come from Figma.
-* Dynamic features such as search, calculators, personalization, or store locators may require **separate block development** beyond what the Figma migration produces.
+* A Figma frame shows how a feature looks, not where its data comes from or how it behaves. For search, calculators, personalization, or store locators, the Figma migration creates the layout. Then ask EMA to build the behavior as a [dynamic block](block-development.md#dynamic-blocks), and give it the API or data source.
 
 ### Navigation Setup {#navigation-setup}
 
@@ -414,7 +414,7 @@ Use this prompt to design the table structure that authors work with when creati
   * **Configuration:** API-driven or dynamic content where config controls display (blog listing, search results)
     * Table with key-value config rows. See [Build a Dynamic Block](block-development.md#dynamic-blocks).
   * **Auto-Blocked:** Complex structures that authors create as sections/default content, then get transformed (tabs, YouTube embeds)
-* Keep authored structures simple and group related elements naturally. A modelling guideline is not a universal four-cell platform limit.
+* Keep authored tables to a few cells and group related elements naturally, so they are easy to author. This guideline is for authors; block code can read any table structure.
 * For JCR-backed authoring, also define and validate the component models, mappings, and generated configuration. See [block development](block-development.md#create).
 * Prefer block variants over config cells for styling differences.
 * [Follow Postel's Law](https://en.wikipedia.org/wiki/Robustness_principle): Be flexible about input structure.
