@@ -37,7 +37,7 @@ Connect the intended repository and branch, confirm modification permissions, an
 
 HTML elements are the basic building units, or atoms: headings, paragraphs, links, lists, and images. Authors should use default content, the content outside blocks, for these where possible. Global styles and CSS custom properties, or design tokens, define shared typography, colors, spacing, and link/button presentation.
 
-A block adds a reusable content structure or behavior where default content is insufficient. In the HTML that EDS serves, a block is a `div` with the block name as its class. The project's `blocks/<name>/<name>.js` and `blocks/<name>/<name>.css` decorate it in the browser. Keep a block lightweight and focused; a visual difference alone does not always need a new block.
+A block adds a reusable content structure or behavior where default content is insufficient. In the HTML that EDS serves, a block is a `div` with the block name as its class. The project's `blocks/<name>/<name>.js` and `blocks/<name>/<name>.css` decorate it in the browser. Keep a block lightweight and focused; a visual difference alone doesn't need a new block, because a variant or a section style can carry it.
 
 [David's Model](https://www.aem.live/docs/davidsmodel) collects the aem.live rules for content that authors can create easily: prefer default content, avoid blocks inside blocks, keep the number of blocks and variants small, and let buttons take their style from the block or section that they are in. When a block does the same job as one in the [Block Collection](https://www.aem.live/developer/block-collection), reuse that block's content model.
 
@@ -66,7 +66,7 @@ _[All adventures](/adventures)_
 
 In the current [AEM boilerplate](https://github.com/adobe/aem-boilerplate), a link that is alone in its paragraph becomes a button when it is formatted: bold for a primary button, italic for a secondary button, and bold plus italic for an accent button. A plain link, or a link inside a sentence, remains a link. Global styles give these buttons the same appearance in default content and inside blocks.
 
-Authors can add, remove, or reorder the heading, text, image, and links without new components. A teaser or hero block is needed only for layout or behavior that default content cannot provide, such as placing the image beside the text. Projects can change these conventions, so ask EMA to check the project's scripts and styles before relying on them.
+Authors can add, remove, or reorder the heading, text, image, and links without new components. A teaser or hero block is needed only where authors must mark which elements belong together; CSS and JavaScript can place the image beside the text in default content as well. Projects can change these conventions, so ask EMA to check the project's scripts and styles before relying on them.
 
 ## Prompt for a Block {#block-prompts}
 

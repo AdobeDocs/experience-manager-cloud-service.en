@@ -29,7 +29,7 @@ role_v2:
 
 Use the Experience Modernization Agent (EMA) to apply a design during migration or change the appearance of an existing Edge Delivery Services (EDS) project. Faithfully copying a source site's appearance and deliberately replacing it with a new design are different requests. State which you want.
 
-In EDS, appearance lives in the project's code: global CSS sets the look of default content, and each block has its own CSS and JavaScript. Together they can give the same semantic content a new design without restructuring it; see [How EDS Pages Work](overview.md#eds-basics). A purely visual restyle therefore changes code in Git and leaves authored content alone. Structural or content model changes are a separate, explicit decision.
+In EDS, appearance lives in the project's code: global CSS sets the look of default content, and each block has its own CSS and JavaScript. Together they can give the same semantic content any design without restructuring it, because the JavaScript can rebuild the markup in the browser; see [How EDS Pages Work](overview.md#eds-basics). A purely visual restyle therefore changes code in Git and leaves authored content alone. Structural or content model changes are a separate, explicit decision.
 
 ## Prepare the Design Contract {#prepare}
 
