@@ -169,7 +169,7 @@ If your site already runs on EDS, you don't need to recreate it or migrate it ag
 1. On GitHub, check that the AEM Code Sync app is installed in the repository. If EDS already serves the site from this repository, it is.
 1. Install the [AEM Code Connector](https://github.com/apps/aem-code-connector) app in the repository, as for a new site.
 1. [Open the console](#open-console) and [connect the site](#connect-repo). You need write access to the repository.
-1. Before you change anything, ask EMA to explain the project. See [Prompts to Start With](#first-prompts).
+1. Before you change anything, ask EMA to explain the project. Then make a first visual change with [Inspect mode](#inspect-mode). See [Prompts to Start With](#first-prompts).
 
 Projects created from the current boilerplate include `AGENTS.md`, where you keep the project's instructions for the agent, and a one-line `CLAUDE.md` that makes the agent load `AGENTS.md` in every conversation. Older projects may not have them; ask EMA to add them from the current boilerplate. See [Project Instructions](project-instructions.md#agents-md). If your site's content is stored in AEM and edited with the Universal Editor, follow the [AEM authoring guide](getting-started-aem-authoring.md).
 
@@ -220,7 +220,7 @@ Confirm the connected repository, branch, and content destination before request
 
 ## Console Home {#console-home}
 
-The console opens on its **Home** page until you start a conversation. Type a request in the prompt box, or select one of the suggested prompts, which are grouped by task, such as migrating, developing, and debugging. Most suggested prompts start in [Plan mode](console.md#prompt-input): the agent proposes a plan without changing any files, and you select **Execute plan** when you agree with it. **Start chatting** opens the chat page, and **Settings** opens your [project settings](console.md#settings-page).
+The console opens on its **Home** page until you start a conversation. Type a request in the prompt box, or select one of the suggested prompts, which are grouped by task, such as migrating, developing, and debugging. A request that you type runs in Execute mode: the agent carries it out. Most suggested prompts run in [Plan mode](console.md#prompt-input) instead: the agent first proposes the steps without changing any files, and you select **Execute plan** to carry them out. **Start chatting** opens the chat page, and **Settings** opens your [project settings](console.md#settings-page).
 
 ![Console home](assets/console-home.png)
 
@@ -228,42 +228,17 @@ The console opens on its **Home** page until you start a conversation. Type a re
 
 Once your site is connected, describe what you want in plain language. Say what result you expect and on which page, rather than how to write the code. EMA knows EDS, so you can also ask it how a part of your site works or what an EDS term means. To learn how EDS builds a page from sections, blocks, and default content, see [Markup, Sections, Blocks, and Auto Blocking](https://www.aem.live/developer/markup-sections-blocks).
 
-### Prompts to Start With {#first-prompts}
+Where to start depends on your site:
 
-Replace the example URLs and paths with your own.
-
-**After Make it yours:**
-
-* "Compare `/about` with `https://www.example.com/about` and fix the differences in layout and images."
-* "Migrate `https://www.example.com/contact` to `/contact`. Reuse the existing blocks."
-
-**A new site from the boilerplate:**
-
-* "Migrate only `https://www.example.com/about` to `/about`." For the full guided workflow, see [Import a Page Step by Step](#guided-import).
-* "Explain the sections and blocks on the home page, and which files style each one."
-* "Create a new page `/offers` from this Figma frame: `{Figma link}`." See [Create a New Page from Figma](prompting-guide.md#figma-new-page-from-figma).
-
-**Your existing EDS site:**
-
-* "Give me a tour of this project: list its blocks, what each one does, and which pages use them."
-* "Add a variant of the cards block with a dark background, and show it on `/products`."
-* "Check whether this project has the `AGENTS.md` and `CLAUDE.md` files of the current AEM boilerplate, and add them if they're missing."
-
-### Make a Visual Change with Inspect Mode {#inspect-mode}
-
-To change something that you can see on a page, point at it rather than describe where it is.
-
-1. Open the page in the console's preview panel.
-1. Turn on **Inspect mode** with the select icon in the preview panel.
-1. Select the element that you want to change, such as a heading, an image, or a button. The element is added to your prompt.
-1. Describe the change, for example "Make this button use the primary button style", and send the prompt.
-
-The agent receives the selected element's HTML and its position on the page, and limits its changes to that element. Check the result at desktop and mobile widths. See [Content Views](console.md#content-view).
+* **A new site from the boilerplate:** [import a page step by step](#guided-import), optionally after scoping the source site.
+* **After Make it yours:** import further pages in the same way, or compare and fix the pages that the run migrated. See [Prompts to Start With](#first-prompts).
+* **Your existing EDS site:** ask EMA to explain the project, then [make a visual change with Inspect mode](#inspect-mode).
 
 ### Import a Page Step by Step {#guided-import}
 
-In the guided workflow, EMA stops after each step so that you can check it: first the page's content, then its design.
+Importing pages from an existing website is the most common way to start. In the guided workflow, EMA stops after each step so that you can check it: first the page's content, then its design. Save each result as soon as you have checked it: upload the content after the content step, and push the code after the design step.
 
+1. Optionally, scope the source site first. Ask "scope site `https://www.example.com`". EMA finds the site's pages and groups the pages that share a layout into templates. Review the result in the **Planning** view; you can start before scoping finishes. Then choose your first page from a template that covers many pages, because the blocks that it creates can be reused on all of them. Scoping also prepares importing the rest of the site template by template. See [Site Catalog](site-catalog.md).
 1. Start with one authorized source page. Replace the example URL and destination in this prompt:
    * "Migrate only `https://www.example.com/about` to `/about` in this project. Target document-based content. Preserve its text, images, and links. Reuse existing blocks and default content. Do not upload, push, or publish."
    * For AEM authoring, specify JCR persistence and follow the [target-specific checks](getting-started-aem-authoring.md#validate-content).
@@ -272,25 +247,71 @@ In the guided workflow, EMA stops after each step so that you can check it: firs
    * Import duration depends on the source and requested scope.
    * The console presents you with ongoing feedback as it begins its work, including an overview of its planned steps.
    ![Content import](assets/content-import.png)
-1. Once the site is imported, the **Workspace** panel shows the pages. Select a page to render it in the console's preview panel on the right. This preview shows the working copy in the console workspace, not the EDS preview site.
-  ![Content imported](assets/content-imported.png)
+1. Once the page is imported, the **Workspace** panel shows it. Select the page to render it in the console's preview panel on the right. This preview shows the working copy in the console workspace, not the EDS preview site.
+   ![Content imported](assets/content-imported.png)
+1. Upload the content, so that it is saved and authors can edit it. Until you upload it, the imported page exists only in the console workspace, and pushing code doesn't save it.
+   * For document-based content, see [Upload Content](#upload-content). You can then open the page and edit it.
+   * For AEM authoring, see [Upload Content](getting-started-aem-authoring.md#upload-content) in the AEM authoring guide.
 1. Now that you have content, request faithful source styling, or explicitly choose a [new target design](restyling.md).
    * "Import the general styles from `https://www.example.com/about`, then style the blocks used on `/about`. Preserve the imported content."
 1. As with the initial content import, the import may take several minutes and the console provides feedback as it processes your request and imports the styles. Once the task is complete, click **Refresh preview** in the right panel to view the styled content.
    ![Styles imported](assets/styles-imported.png)
+1. Review the styled page at desktop and mobile widths. Compare its text, links, images, and structure with the source page, and ask EMA to fix what differs.
+1. Push the code, so that the new blocks and styles are saved in your repository and show on the site's preview. See [Push Code Changes](#push-code-changes). If the styling step also changed the page's content, upload the page again.
 
-Review the page at desktop and mobile widths. Compare text, links, images, and document structure with the source. Page import does not finish shared navigation and footer automatically; request those separately when needed.
+Page import does not finish shared navigation and footer automatically; request those separately when needed. Next, [preview and publish](#save-work) the page. For more pages, repeat these steps and ask EMA to reuse the blocks that it has created. Once your first pages look right, ask EMA to document its blocks and styles for later conversations; see [Prompting Tips](#prompting-tips).
 
-The result is working content and code in the console. Next, [save, preview, and publish](#save-work) it.
+### Make a Visual Change with Inspect Mode {#inspect-mode}
+
+On a site that already has pages, such as your existing EDS site or a site that you transferred with **Make it yours**, a visual change is the quickest way to see a result. Point at what you want to change rather than describe where it is.
+
+1. Open the page in the console's preview panel.
+1. Turn on **Inspect mode** with the select icon in the preview panel.
+1. Select the element that you want to change, such as a heading, an image, or a button. The element is added to your prompt.
+1. Describe the change, for example "Make this button use the primary button style", and send the prompt.
+
+The agent receives the selected element's HTML and its position on the page, and limits its changes to that element. Check the result at desktop and mobile widths, then [push the code](#push-code-changes) to keep it. See [Content Views](console.md#content-view).
+
+### Prompts to Start With {#first-prompts}
+
+Replace the example URLs and paths with your own.
+
+**A new site from the boilerplate:**
+
+* "scope site `https://www.example.com`", then [import a page step by step](#guided-import).
+* "Explain the sections and blocks on the home page, and which files style each one."
+* "Create a new page `/offers` from this Figma frame: `{Figma link}`." See [Create a New Page from Figma](prompting-guide.md#figma-new-page-from-figma).
+
+**After Make it yours:**
+
+* "Compare `/about` with `https://www.example.com/about` and fix the differences in layout and images."
+* "Migrate `https://www.example.com/contact` to `/contact`. Reuse the existing blocks."
+
+**Your existing EDS site:**
+
+* "Give me a tour of this project: list its blocks, what each one does, and which pages use them."
+* Select an element with [Inspect mode](#inspect-mode) and describe how it should change.
+* "Add a variant of the cards block with a dark background, and show it on `/products`."
+* "Check whether this project has the `AGENTS.md` and `CLAUDE.md` files of the current AEM boilerplate, and add them if they're missing."
 
 ### Prompting Tips {#prompting-tips}
 
 * Ask for one change at a time, and check it before you ask for the next one.
-* For larger or riskier changes, such as several pages or shared styles, use Plan mode and review the plan before the agent changes anything.
 * Attach a screenshot or a design when it explains the result better than words.
 * Say what the agent must not do, such as "Do not upload, push, or publish."
+* For a change that spans several pages or shared styles, you can switch to [Plan mode](console.md#prompt-input) to review the steps before anything changes.
 * If a long task stops before it finishes, ask the agent to continue.
-* Record decisions that should apply in every conversation in the project's instructions. See [Project Instructions](project-instructions.md).
+
+EMA knows only what is in the current conversation and in your project's files. To make it follow your project's conventions in every conversation, write them in Markdown files in your repository. EMA loads `AGENTS.md` in every conversation and opens the other files that it lists when a task needs them. See [Use AGENTS.md as the Entry Point](project-instructions.md#agents-md). Typical topics:
+
+* **Implementation conventions and design system:** how blocks are built and named, design tokens, typography, spacing, and brand rules. See [Organize Further Instruction Files](project-instructions.md#organize).
+* **Content guidelines:** how authors fill each block, which section styles exist, and what the pages of each template contain. See [Document Content Conventions](project-instructions.md#content-conventions).
+
+You don't need to write these files yourself. Once your first blocks exist, ask EMA to document what it created and to keep the files current:
+
+* "Document the blocks, section styles, and design tokens that you created in short files under `project/`, and list them in `AGENTS.md` with when to read each one. Update these files whenever you change a block, style, or template."
+
+See [Let EMA Maintain the Files](project-instructions.md#maintain).
 
 >[!TIP]
 >
