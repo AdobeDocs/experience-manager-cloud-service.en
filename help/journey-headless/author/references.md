@@ -112,6 +112,13 @@ Using the **Structure Tree** tab of the Content Fragment Editor you can navigate
 
 ![Content Fragment Structure Tree](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)
 
+
+## Composite {#composite}
+
+The **Composite** data type enables Content Fragments to store hierarchical, structured data by allowing fields to contain nested sub-fields. The children (sub-fields) are themselves structured content, defined by user-specified Content Fragment Models and fully embedded in the parent fragment.
+
+The Composite data type provides a way to model complex data structures within a single fragment, similar to nested objects in JSON or embedded documents in NoSQL databases.
+
 ## Ad Hoc References {#adhoc-references}
 
 Improvised references can be added as a simple link within a block of text:
