@@ -30,7 +30,7 @@ role_v2:
 
 >[!NOTE]
 >
->This path is Edge Delivery Services (EDS) on top of the JCR stack: content is stored in AEM's Java Content Repository (JCR) on your AEM as a Cloud Service author instance, authors edit it with the Universal Editor, and EDS delivers the pages. For new implementations, Adobe strongly recommends document-based persistence with Experience Workspace instead, including for large sites. See [Where Content Is Stored and How Authors Edit It](overview.md#content-storage).
+>This path is Edge Delivery Services (EDS) on top of the JCR stack: content is stored in AEM's Java Content Repository (JCR) on your AEM as a Cloud Service author instance, authors edit it with the Universal Editor, and EDS delivers the pages. This setup was previously called Crosswalk. For new implementations, Adobe strongly recommends document-based persistence with Experience Workspace instead, including for large sites. See [Where Content Is Stored and How Authors Edit It](overview.md#content-storage).
 
 Use this workflow when a requirement depends on content staying in the AEM repository. The [Universal Editor](/help/implementing/universal-editor/introduction.md) is Adobe's visual editor for content in AEM. This is not a migration to HTL-based delivery, and the source website's technology does not determine your persistence target.
 
@@ -40,14 +40,14 @@ You need console access, repository permissions, and permission to create or upd
 
 For a new project:
 
-1. Use the [`aem-block-collection-xwalk`](https://github.com/adobe-rnd/aem-block-collection-xwalk) repository as your template rather than the document-based boilerplate. Templates for AEM authoring have `xwalk` (crosswalk) in their names.
+1. Use the [`aem-block-collection-xwalk`](https://github.com/adobe-rnd/aem-block-collection-xwalk) repository as your template rather than the document-based boilerplate. Templates for AEM authoring have `xwalk`, short for Crosswalk, in their names.
 1. Verify that `fstab.yaml`, the file that points EDS to the site's content source, refers to your AEM host, Git owner, and Git repository. Review and commit the configuration to the branch used for setup.
    * See [Configure content source](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md) for instructions.
 1. Follow the [Universal Editor tutorial](https://www.aem.live/developer/ue-tutorial) to set up your repo.
    * Stop when you are asked to create a site in AEM.
 1. For this new-project setup, remove the template's `paths.json` and commit the change. Do not remove an existing site's path mappings without reviewing their purpose and replacement.
 1. Add the [AEM Code Connector](https://github.com/apps/aem-code-connector/installations/select_target) app to your repo.
-   * This allows the console to inspect your code.
+   * This lets the console push changes and open pull requests in your repository. It is different from the AEM Code Sync app, which lets EDS fetch your code.
 
 For an existing JCR-backed EDS project, reuse its configuration and content models. Do not recreate the site or replace its repository with the template. Confirm [code synchronization and repository access](getting-started.md#prepare-repo) without repeating the document-based setup.
 
@@ -95,7 +95,7 @@ An HTML preview can look correct while the converted content is not authorable. 
 
 ## Upload Content {#upload-content}
 
-Package upload writes remote AEM content. Confirm the selected pages, host, site, page root, and asset destination with the target owner. Preserve existing content before replacing it; local validation does not make an overwrite safe.
+Package upload writes content to the AEM author instance. Confirm the selected pages, host, site, page root, and asset destination with the target owner. Preserve existing content before replacing it; local validation does not make an overwrite safe.
 
 1. Make sure you are in a **Content** view and click the **Upload content** button on the top-right.
 1. In the **Create content package** dialog, choose the pages to include in the package.
@@ -113,15 +113,15 @@ Package upload writes remote AEM content. Confirm the selected pages, host, site
 
    ![Package ready to upload to AEM or download](assets/upload-package-start.png)
 
-1. The dialog shows upload progress as pages and assets are sent to AEM. Review the upload log, including individual failures, before closing the dialog.
+1. The dialog shows upload progress as pages and assets are sent to the AEM author instance. Review the upload log, including individual failures, before closing the dialog.
 
    ![Upload progress and completion in AEM](assets/upload-package-complete.png)
 
-For a failed package or image upload, retain the log and selected paths. Correct conversion, credentials, permissions, or destinations as indicated, then retry the affected scope. A package download alone does not import content into AEM. Confirm which pages and assets arrived before retrying to avoid unintended replacements.
+For a failed package or image upload, retain the log and selected paths. Correct conversion, credentials, permissions, or destinations as indicated, then retry the affected scope. A package download alone does not import content into the AEM author instance. Confirm which pages and assets arrived before retrying to avoid unintended replacements.
 
 If the AEM as a Cloud Service environment is hibernated, the upload dialog and Settings say so and link to the Developer Console. De-hibernate the environment there, then retry the upload. See [De-hibernate a sandbox program from the Developer Console.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md#de-hibernation-introduction)
 
-Review and [push the matching code and configuration](getting-started.md#push-code-changes) through your project's repository policy. This is separate from package upload.
+Review and [push the matching code and configuration](getting-started.md#push-code-changes) through your project's repository policy. This is separate from package upload. Merging the code into `main` changes the live site's code immediately; see [How Changes Go Live](overview.md#code-content-lifecycle).
 
 ## Validate Authoring and Preview {#preview-site}
 

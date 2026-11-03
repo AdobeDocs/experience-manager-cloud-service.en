@@ -134,7 +134,7 @@ Check:
 
 If a check fails, retain the failing example and fix the smallest affected layer. Distinguish stale preview/code-branch problems from model or implementation failures. Re-run the failing check and relevant regressions.
 
-Review the diff, stage only intended files, and [push through the repository policy](getting-started.md#push-code-changes). Upload test or production content only when authorized; a code push does not save it.
+Review the diff, stage only intended files, and [push through the repository policy](getting-started.md#push-code-changes). Upload test or production content only when authorized; a code push does not save it. Once merged into `main`, the block code applies to every page on the live site that uses the block; see [How Changes Go Live](overview.md#code-content-lifecycle).
 
 For recovery, revert code through Git and restore changed remote content separately. Keep compatible old examples until any required content migration is accepted.
 

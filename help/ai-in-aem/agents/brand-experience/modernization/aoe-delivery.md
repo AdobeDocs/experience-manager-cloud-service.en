@@ -97,7 +97,7 @@ This service-scoping boundary is not a blanket product limitation: some EMA work
 #### Migration Work Performed {#migration-work}
 
 * **Migration approach:** Agree faithful migration, redesign, or an incremental phased migration.
-* **Static content import:** Automated extraction of static HTML content from source websites and automated mapping to EDS default content and blocks
+* **Static content import:** Automated extraction of static HTML content from source websites and automated mapping to EDS [default content and blocks](overview.md#eds-basics)
 * **Design system:** Extraction of brand tokens (colors, typography, spacing) and application to the new site
 * **Design references:** Agree the source site, Figma, or other supplied references and what fidelity means for acceptance. Do not assume every design format has a dedicated automated importer.
 * **Responsive design:** Mobile and desktop layouts handled appropriately

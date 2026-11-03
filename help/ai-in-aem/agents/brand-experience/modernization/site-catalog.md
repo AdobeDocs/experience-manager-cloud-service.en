@@ -27,7 +27,7 @@ role_v2:
 
 # Site Catalog Skill {#site-catalog-skill}
 
-Analyze an authorized source website to prepare an EDS migration. Use the catalog to select representative pages and review coverage, not as proof that the site has already migrated.
+Analyze an authorized source website to prepare a migration to Edge Delivery Services (EDS). Use the catalog to select representative pages and review coverage, not as proof that the site has already migrated.
 
 ## Overview {#overview}
 
@@ -229,7 +229,7 @@ The following actions are available.
 
 Some actions are only offered when they apply. For example, **Generate block code** and **Rename block** are only available for blocks whose type has been classified, and **Give this variant its own block** is only available for variants that have a variant class.
 
-In action labels such as **Migrate page to AEM** and **Migrate template to AEM**, *AEM* refers to the EDS project connected to the console. The imported content stays in the console workspace until it is uploaded to the project's authoring destination.
+In action labels such as **Migrate page to AEM** and **Migrate template to AEM**, *AEM* refers to the EDS project connected to the console. The imported content stays in the console workspace until it is uploaded to the project's authoring destination: Experience Workspace for document-based projects, or the AEM author instance for AEM authoring.
 
 Grouping and naming corrections update catalog metadata and block-library organization; they do not retroactively repair already imported pages. **Generate block code** changes code, while migration actions start content-generation workflows. Review their output separately. Catalog structural refactoring is not the same as [refactoring block code](block-development.md#refactor).
 

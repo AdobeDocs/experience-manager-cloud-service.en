@@ -77,7 +77,7 @@ Name the source URLs/design nodes, destination paths, [authoring target](overvie
 
 The Experience Modernization Agent supports site creation and migration to EDS, as well as continued development of existing projects.
 
-### Migrate a Site or Page to AEM {#migrate-a-site}
+### Migrate a Site or Page to Edge Delivery Services {#migrate-a-site}
 
 Use this prompt when migrating content from an existing website to Edge Delivery Services (EDS), AEM's website delivery service.
 
@@ -280,7 +280,7 @@ Note that you must set up your Figma details in [the Experience Modernization Co
   1. **Block-specific style creation** — The agent creates additional CSS custom properties specific to the block being migrated.
   1. **Mapping to existing blocks** — The agent identifies the closest matching block in your project's block library and creates a custom variant.
   1. **CSS generation** — The agent writes styles that reference the extracted CSS custom properties, ensuring design consistency.
-  1. **Asset download** — The agent saves images and icons from Figma to the hosted environment's workspace.
+  1. **Asset download** — The agent saves images and icons from Figma to the console workspace.
   1. **Edge Delivery Services content generation** — The agent creates the markdown file following Edge Delivery Services block structure
   1. **Output validation** — The agent previews the result and performs visual comparison against the original Figma design.
 * The skill first reads metadata (step 1) to understand structure, and then extracts detailed design context (steps 2-5).
@@ -496,11 +496,11 @@ Use this prompt to troubleshoot problems with blocks, images, CSS, or preview.
   * **Images showing "about:error"**: Usually missing `createOptimizedPicture` call in block JS, or called before DOM restructuring
   * **Blocks not rendering**: Check block name format in markdown and verify that the block has both `.js` and `.css` files in `blocks/`.
   * **CSS not loading**: Check file paths, verify CSS file exists, and check the Network tab in browser.
-  * **Changes not appearing**: Check workspace state, content upload, code push, branch URL, and preview separately. Refresh after verifying the intended versions are available.
+  * **Changes not appearing**: Check each step separately: the change exists in the console workspace, the content was uploaded, the code was pushed, the preview URL names the right branch, and the content was previewed to `*.aem.page`. Refresh after verifying the intended versions are available.
 * The agent checks each layer systematically:
   1. Source files
   1. Rendered output
   1. Block code
   1. Browser console
-* The agent can inspect the hosted workspace preview; you do not need to configure a local server for console onboarding.
+* The agent can inspect the console's preview of the workspace; you do not need to configure a local server for console onboarding.
 * Preserve the failing URL/path and error details. Retry the smallest affected scope after correcting the cause. See [recovery and handover](production-migration.md#handoff) before overwriting or resetting work.

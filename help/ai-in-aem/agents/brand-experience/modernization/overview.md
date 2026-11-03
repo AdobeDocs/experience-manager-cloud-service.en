@@ -30,7 +30,7 @@ role_v2:
 
 Use the Experience Modernization Agent (EMA) to create, migrate, restyle, and develop websites on [Edge Delivery Services (EDS)](/help/edge/overview.md).
 
-EDS is the AEM service that delivers websites. It serves authored content as plain semantic HTML, and the project's own CSS and JavaScript style and decorate it in the browser. If you already build with HTML, CSS, and JavaScript, most of an EDS project will look familiar. The AEM-specific parts are explained in [Understand Your Project](#project-foundations).
+EDS is the AEM service that delivers websites. It serves authored content as plain semantic HTML, and the project's own CSS and JavaScript style and decorate it in the browser. If you already build with HTML, CSS, and JavaScript, most of an EDS project will look familiar. The AEM-specific parts are explained in [Understand Your Project](#project-foundations). Adobe has renamed several of these products over time. If you meet older names such as Helix, Franklin, or Crosswalk, see [Names You May See](#names).
 
 ## Introduction {#introduction}
 
@@ -60,7 +60,7 @@ An EMA task touches several separate parts of a project. Keep them apart when yo
 * **Source:** The authorized website, content, or design that you provide.
 * **Code:** The EDS Git repository and working branch that contain styles, scripts, and blocks.
 * **Content destination:** Where the migrated content is stored and which editor authors use. Adobe strongly recommends document-based persistence with Experience Workspace for new implementations; AEM authoring with JCR persistence and the Universal Editor is the alternative. See [Where Content Is Stored and How Authors Edit It](#content-storage). The source CMS does not determine this choice.
-* **Preview and publication:** Where you verify the result and, separately, where you release approved changes.
+* **Preview and publication:** The EDS preview site, where you check saved content with your code, and the live site, where approved changes are released. See [How Changes Go Live](#code-content-lifecycle).
 
 EDS supports complex enterprise websites. Search, commerce, personalization, and other integrations can require project-specific implementation and testing; they are not reasons to restrict EDS to simple or static sites.
 
@@ -74,7 +74,18 @@ When EDS renders a page, it turns the authored content into plain semantic HTML:
 * A **block** is a reusable component, such as a hero or a set of cards. In the HTML, it is a `div` with the block name as its class. The project's `blocks/<name>/<name>.js` and `blocks/<name>/<name>.css` decorate it in the browser.
 * **Sections** split a page into groups of default content and blocks, for example to give part of a page a different background.
 
-Most projects start from the [AEM boilerplate](https://github.com/adobe/aem-boilerplate), which is written in plain JavaScript and CSS. You check changes on the preview site, served on `*.aem.page`. Publishing releases them to the live site on `*.aem.live`.
+Most projects start from the [AEM boilerplate](https://github.com/adobe/aem-boilerplate), which is written in plain JavaScript and CSS.
+
+#### How Changes Go Live {#code-content-lifecycle}
+
+Code and content reach the live site in different ways:
+
+* **Code:** EDS fetches your code from GitHub through the [AEM Code Sync](https://github.com/apps/aem-code-sync) app, or from another Git host through Cloud Manager ([Bring Your Own Git](https://www.aem.live/developer/byo-git)). Each branch gets its own URLs, and a change pushed to a branch shows on that branch's preview and live URLs at the same time. Code has no separate publish step: merging into `main` updates the code of the production site immediately.
+* **Content:** Authors first preview a page, which copies the saved content to the preview site on `*.aem.page`. They then publish it, which makes it live on `*.aem.live`. Authors do both from the authoring UI or from the [AEM Sidekick](https://www.aem.live/docs/sidekick) browser extension.
+
+Preview URLs follow the pattern `https://{branch}--{repo}--{owner}.aem.page`, and live URLs the same pattern on `aem.live`. `{owner}` is the GitHub organization or user that owns the repository, and `{repo}` is the repository name.
+
+Pushing code doesn't publish content, but merging into `main` changes the live site's code straight away. Check a branch on its own URLs before you merge it.
 
 ### Names You May See {#names}
 
@@ -85,10 +96,15 @@ Adobe has renamed several of these products. The table maps the names that appea
 | Brand Experience Agent | The family of AEM agents that EMA belongs to. |
 | Experience Modernization Agent (EMA) | The agent described in these docs. |
 | Experience Modernization Console | The web interface where you use EMA, at `aemcoder.adobe.io`. |
-| Edge Delivery Services (EDS) | AEM's website delivery service. It was earlier called Project Helix and then Franklin, which is why some hostnames, such as `admin.hlx.page`, contain `hlx`. |
-| Experience Workspace | The visual authoring UI for document-based EDS content, at `da.live`. It was formerly called Document Authoring (DA), and some console labels still use that name. |
+| Console workspace | Your project's hosted working copy in the console, where the agent imports content and changes code before you upload or push them. Labels such as **Checkout to workspace** and **Your workspace is paused** refer to it. It is unrelated to Experience Workspace. |
+| Edge Delivery Services (EDS) | AEM's website delivery service. The architecture was originally developed as Project Helix, later code-named Franklin, and older articles use those names. The `hlx` in hostnames such as `admin.hlx.page`, the EDS admin API, comes from Helix. |
+| `*.aem.page`, `*.aem.live` | A site's EDS preview and live URLs. Older projects and documentation may show the earlier domains, `hlx.page` and `hlx.live`. |
+| AEM Sidekick | The browser extension that authors use to preview and publish EDS pages. |
+| AEM Code Sync | The GitHub app that lets EDS fetch your code to serve it. |
+| AEM Code Connector | The GitHub app that lets the console push changes and open pull requests in your repository. |
+| Experience Workspace | The visual authoring UI for document-based EDS content, at `da.live`. It was formerly called Document Authoring (DA), and some console labels still use that name. See [Document-Based Persistence](#document-based). |
 | Universal Editor | Adobe's visual editor for content stored in AEM. EDS projects with AEM authoring use it. |
-| AEM authoring, JCR persistence | EDS with content stored in AEM's Java Content Repository (JCR) on an AEM as a Cloud Service author instance. |
+| AEM authoring, JCR persistence | EDS with content stored in AEM's Java Content Repository (JCR) on an AEM as a Cloud Service author instance and edited in the Universal Editor. Previously called Crosswalk, hence `xwalk` in template repository names. |
 | IMS | Adobe's identity service, which handles sign-in with your Adobe ID. |
 
 ## Where Content Is Stored and How Authors Edit It {#content-storage}
@@ -104,15 +120,23 @@ EMA asks where the migrated content should be stored. This is a question about p
 
 ### Document-Based Persistence with Experience Workspace {#document-based}
 
-With document-based persistence, content is stored as documents in the EDS document-based content repository. "Document-based" describes storage only, not the authoring experience. Authors edit pages visually in [Experience Workspace,](https://www.aem.live/docs/ew/about) the visual authoring UI for EDS. Experience Workspace also offers an AI assistant, collaboration, and AEM Assets integration. It is off by default and is turned on per site or organization. Google Docs and SharePoint remain supported EDS content sources.
+With document-based persistence, content is stored as documents in the EDS document-based content repository. "Document-based" describes storage only, not the authoring experience. Authors edit pages visually in [Experience Workspace,](https://www.aem.live/docs/ew/about) the visual authoring UI for EDS. Experience Workspace also offers an AI assistant, collaboration, and AEM Assets integration. It is off by default and is turned on per site or organization.
+
+"Document-based authoring" has meant different things over time, so check when a page or article was written:
+
+* When Adobe introduced EDS in 2023, it meant writing pages in Google Docs or Microsoft Word, stored on Google Drive or SharePoint. These remain supported EDS content sources.
+* Document Authoring (DA) is Adobe's own document editor and content repository, at `da.live`.
+* Experience Workspace is DA's new name. It adds a visual canvas editor, and the content stays in the same repository.
+
+EMA uploads and transfers document-based content to Experience Workspace at `da.live`.
 
 >[!NOTE]
 >
->Experience Workspace is the new name of Document Authoring (DA). The change is an upgrade, not a content migration: existing DA content stays where it is, and the editor still runs at `da.live`. Some console labels and screens still say **Document Authoring** or **DA**. In these docs, they refer to the same document-based repository and its editor.
+>The rename from Document Authoring to Experience Workspace is an upgrade, not a content migration: existing DA content stays where it is. Some console labels and screens still say **Document Authoring** or **DA**. In these docs, they refer to Experience Workspace and its repository.
 
 ### AEM Authoring with JCR Persistence {#jcr-persistence}
 
-With AEM authoring, content is stored in AEM's Java Content Repository (JCR), on the AEM as a Cloud Service author stack. This is EDS running on top of the JCR stack. Authors edit pages with the [Universal Editor,](/help/implementing/universal-editor/introduction.md) Adobe's visual editor for content in AEM, and EDS still delivers the pages. The pages are not rendered by HTL and Java as in traditional AEM publishing. Template repositories for this setup, such as `aem-block-collection-xwalk`, use `xwalk` (crosswalk) in their names.
+With AEM authoring, content is stored in AEM's Java Content Repository (JCR), on the AEM as a Cloud Service author stack. This is EDS running on top of the JCR stack, a setup previously called Crosswalk. Authors edit pages with the [Universal Editor,](/help/implementing/universal-editor/introduction.md) Adobe's visual editor for content in AEM, and EDS still delivers the pages. The pages are not rendered by HTL and Java as in traditional AEM publishing. Template repositories for this setup, such as `aem-block-collection-xwalk`, still carry `xwalk` in their names.
 
 >[!NOTE]
 >
@@ -178,7 +202,7 @@ Detailed capabilities include block development, content modeling, reference blo
 The Experience Modernization Console is EMA's web-based, AI-assisted development environment for EDS, at [`aemcoder.adobe.io`.](https://aemcoder.adobe.io)
 
 * The console requires no local setup, so you can start prompting changes in natural language right away.
-* You perform day-to-day development tasks, check them in a live AEM preview, and save content to your authoring destination.
+* You perform day-to-day development tasks, check the result in the console's preview and then on the EDS preview site, and upload content to your authoring destination.
 * The console supports enterprise governance through standard GitHub review workflows.
 * The AI agent works without receiving the credentials that you configure. See [Security and Data Handling.](#security)
 

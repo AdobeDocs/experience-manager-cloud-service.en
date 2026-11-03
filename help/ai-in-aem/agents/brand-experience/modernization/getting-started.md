@@ -30,7 +30,7 @@ role_v2:
 
 Use your brand's content to try Edge Delivery Services (EDS) and the Experience Modernization Agent (EMA), or prepare a few customer demo pages. For a full-site release, use the [production migration guide](production-migration.md) after validating representative pages.
 
-This guide covers document-based persistence: content is stored in the EDS document-based repository and authors edit it visually in Experience Workspace, the visual authoring UI for EDS. Adobe strongly recommends this setup for new implementations. If your content must be stored in AEM's JCR repository and edited with the Universal Editor, follow the [AEM authoring guide](getting-started-aem-authoring.md) for the steps that differ. If AEM or EDS terms are new to you, read [How EDS Pages Work](overview.md#eds-basics) and [Where Content Is Stored and How Authors Edit It](overview.md#content-storage) first.
+This guide covers document-based persistence: content is stored in the EDS document-based repository and authors edit it visually in Experience Workspace, the visual authoring UI for EDS. Adobe strongly recommends this setup for new implementations. If your content must be stored in AEM's JCR repository and edited with the Universal Editor, follow the [AEM authoring guide](getting-started-aem-authoring.md) for the steps that differ. If AEM or EDS terms are new to you, read [How EDS Pages Work](overview.md#eds-basics) and [Where Content Is Stored and How Authors Edit It](overview.md#content-storage) first. Older articles may call EDS Helix or Franklin, the project names under which its architecture was developed.
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Use a small, representative set of your own pages so that your first edit is use
 1. Start the run. A run can take several hours; you receive an email when it finishes, and you can leave the page in the meantime. Review its status and result, including the preview, repository, report, and errors where available. A failed or partial run is not proof that all requested pages migrated.
 1. Open the resulting site with **Open site**. To continue in your own repository, use [**Make it yours**](#make-it-yours), or [connect an EDS site](#connect-repo) you already own. If auto mode is unavailable, use the guided [single-page import](#start-prompting) below. Auto mode is not a prerequisite for trying your content.
 1. Ask for one useful change, such as correcting a heading or updating a call to action. Check it on the intended page and at mobile width.
-1. [Save content and code separately](#upload-content), then reopen the remote document and the matching branch preview. Record the project, repository, branch, content location, and preview URL so that you can return.
+1. [Upload the content and push the code separately](#upload-content), then reopen the document in Experience Workspace and the matching branch on the preview site. Record the project, repository, branch, content location, and preview URL so that you can return.
 
 The trial is complete when the content is editable and the useful change is retained, not merely when a preview link exists. A static design preview does not demonstrate remote authorable content.
 
@@ -76,7 +76,7 @@ An auto-mode run creates its site in an Adobe-managed location. To keep working 
 1. Select **Start transfer** and follow its progress. The code is placed on a new branch, and the content is copied to the destination content location. For a document-based destination, the transfer also turns on Experience Workspace for the destination site. If that step fails, the console shows a warning; ask the site's administrator to turn Experience Workspace on.
 1. Select **Open in EMA** to continue in the console, or **Edit Site** to edit the content.
 
-Review and merge the new branch according to your repository policy. Transferring does not publish the site.
+Review and merge the new branch according to your repository policy. Transferring does not publish content, but merging the branch into `main` changes the live site's code immediately. See [How Changes Go Live](overview.md#code-content-lifecycle).
 
 ### Create a Customer Demo {#customer-demo}
 
@@ -99,10 +99,12 @@ An EDS project keeps its code (blocks, styles, and scripts) in a Git repository 
 1. Select an [Edge Delivery Services](/help/edge/overview.md) repository for use with the Experience Modernization Console.
    * This can be an existing EDS project, or you can create a new one by following the [developer tutorial](https://www.aem.live/developer/tutorial), which uses the [boilerplate repository.](https://github.com/adobe/aem-boilerplate)
 1. Ensure that the [AEM Code Connector](https://github.com/apps/aem-code-connector) GitHub app is installed in the repository.
-   * This allows the console to inspect your code.
+   * This lets the console push changes and open pull requests in your repository. Until it is installed, the console can't push code or open pull requests.
 1. Ensure that the [AEM Code Sync GitHub app](https://github.com/apps/aem-code-sync) is installed in the repository.
-   * This allows EDS to sync your code.
+   * This lets EDS fetch your code so that it can serve your site.
    * If your repository is based on the tutorial, this step is already complete.
+
+The two apps have similar names but different jobs: one lets EDS serve your site's code, the other lets the console change it.
 
 >[!NOTE]
 >
@@ -120,28 +122,28 @@ An EDS project keeps its code (blocks, styles, and scripts) in a Git repository 
 1. Log in with your Adobe ID.
    * Use an account that belongs to your company's Adobe organization. A personal Adobe ID that isn't part of an organization can't be used; the console explains this and lets you **Use a different account**. If you don't have a company account, ask your Adobe account team to add you to the organization.
 
-Your workspace pauses after a period of inactivity to save resources. When you return, the console shows **Your workspace is paused**; click **Wake up** and wait a few minutes while the workspace is restored.
+The console keeps a hosted working copy of your project, called the console workspace in these docs. The agent imports content and changes code there until you upload or push. It is unrelated to Experience Workspace, the authoring UI. The console workspace pauses after a period of inactivity to save resources. When you return, the console shows **Your workspace is paused**; click **Wake up** and wait a few minutes while it is restored.
 
 ## Demo Mode {#demo-mode}
 
-If the console opens in demo mode, you can optionally explore its sample project and try importing additional pages. A **Demo site** button in the header indicates that you are in demo mode. Work in the demo site isn't saved, and the demo site can't push code to GitHub or content to Document Authoring (Experience Workspace). Sample exploration is not required before trying your own content.
+If the console opens in demo mode, you can optionally explore its sample project and try importing additional pages. A **Demo site** button in the header indicates that you are in demo mode. Work in the demo site isn't saved, and the demo site can't push code to GitHub or upload content to Experience Workspace (Document Authoring). Sample exploration is not required before trying your own content.
 
 ![Demo mode](assets/demo-mode.png)
 
 ## Connect Your Site {#connect-repo}
 
-Connect a new or existing EDS project. If you have local workspace changes to keep, save content and push code before replacing the workspace.
+Connect a new or existing EDS project. If your console workspace has changes you want to keep, upload the content and push the code before you replace it.
 
 1. Click **Demo site** in the header and then **Switch site**, or use **Switch site** in [Settings](console.md#settings-page).
 1. This prompts you to authorize the AEM Code Connector app using your GitHub credentials. Click **Authorize AEM Code Connector**.
    * For GitHub Enterprise, or when OAuth sign-in isn't available, click **Sign in with a token** instead. Enter the **GitHub Host** and a **Personal Access Token**. A fine-grained token limited to the repositories you need is recommended.
-1. Back in the console, specify the preview URL of the site. Preview URLs use the `*.aem.page` domain and follow the pattern `https://{branch}--{site}--{organization}.aem.page`. You can copy one by previewing any page of the site, or construct it from the branch, site name, and organization. The console finds the associated GitHub project automatically. Alternatively, you can search through your authorized GitHub projects to find a site.
+1. Back in the console, specify the preview URL of the site. Preview URLs follow the pattern `https://{branch}--{site}--{organization}.aem.page`, where `{site}` is the GitHub repository name and `{organization}` is the GitHub organization or user that owns it. You can copy one by previewing any page of the site, or construct it from those names. Older projects and documentation may show the earlier `hlx.page` domain. The console finds the associated GitHub repository automatically. Alternatively, you can search through your authorized GitHub projects to find a site.
    ![Connecting to GitHub project](assets/connect-site-and-github.png)
-1. Click **Checkout to workspace** once the site has been verified.
+1. Click **Checkout to workspace** once the site has been verified. This copies the project into your console workspace.
 1. When prompted to **Replace existing workspace**, verify that the current work is saved elsewhere, then click **Replace workspace**.
    ![Replace existing workspace](assets/replace-existing-workspace.png)
 
-Your GitHub project and site is now connected to the console.
+Your site and its GitHub repository are now connected to the console.
 
 Confirm the connected repository, branch, and content destination before requesting changes.
 
@@ -165,7 +167,7 @@ Now that your console can access your code, you are ready to start prompting.
    * Import duration depends on the source and requested scope.
    * The console presents you with ongoing feedback as it begins its work, including an overview of its planned steps.
    ![Content import](assets/content-import.png)
-1. Once the site is imported, the **Workspace** panel shows the pages. Select a page to preview it in the right panel.
+1. Once the site is imported, the **Workspace** panel shows the pages. Select a page to render it in the console's preview panel on the right. This preview shows the working copy in the console workspace, not the EDS preview site.
   ![Content imported](assets/content-imported.png)
 1. Now that you have content, request faithful source styling, or explicitly choose a [new target design](restyling.md).
    * "Import the general styles from `https://www.example.com/about`, then style the blocks used on `/about`. Preserve the imported content."
@@ -174,7 +176,12 @@ Now that your console can access your code, you are ready to start prompting.
 
 Review the page at desktop and mobile widths. Compare text, links, images, and document structure with the source. Page import does not finish shared navigation and footer automatically; request those separately when needed.
 
-The result is working content and code in the console. It is not yet evidence that remote content was saved, the code was pushed, or the site was published.
+The result is working content and code in the console. It is not yet evidence that remote content was saved, the code was pushed, or the site was published. Each of the next steps moves work to a different place:
+
+* **Upload** copies content from the console workspace to its authoring destination: Experience Workspace for document-based projects, or the AEM author instance for AEM authoring. In the **Sync** menu, this is **Push** > **Content**.
+* **Push** commits code to your Git repository, on the current branch or as a pull request.
+* **Preview** copies saved content to the EDS preview site, `*.aem.page`.
+* **Publish** makes previewed content live on `*.aem.live`.
 
 >[!TIP]
 >
@@ -196,7 +203,7 @@ For document-based persistence, upload the pages to the document-based repositor
 1. Once complete, the dialog shows how many files were uploaded. You can then preview, or preview and publish, the uploaded pages. This runs as a tracked job that continues if you close the dialog; retry any pages that fail.
    ![View in AEM](assets/view-in-aem.png)
 
-To find the uploaded content, optionally click **View in AEM** in the notification when the upload completes, or navigate to `https://da.live/#/{organization}/{repository}`.
+To find the uploaded content, optionally click **View in AEM** in the notification when the upload completes, which opens it at `da.live`, or navigate to `https://da.live/#/{organization}/{repository}`.
 
 ![Content in Document Authoring](assets/content-in-document-authoring.png)
 
@@ -204,7 +211,7 @@ Open an uploaded document, make an edit, save, and reopen it to check authorabil
 
 >[!TIP]
 >
->If you are working on an AEM authoring project, with JCR persistence and the Universal Editor, uploading content to AEM works differently. Refer to [Getting Started with the Experience Modernization Agent for AEM Authoring Projects](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md#upload-content) for specific upload instructions.
+>If you are working on an AEM authoring project, with JCR persistence and the Universal Editor, uploading content to the AEM author instance works differently. Refer to [Getting Started with the Experience Modernization Agent for AEM Authoring Projects](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md#upload-content) for specific upload instructions.
 
 ## Push Code Changes {#push-code-changes}
 
@@ -215,7 +222,7 @@ Review the code diff and run the project's checks before pushing. Use a pull req
 1. Open **Sync** in the workspace header and select **Push** > **Code**.
 1. In the **Stage changes** dialog, stage the files you want to push and click **Continue**.
 1. In the **Push changes** dialog, enter a commit message. Choose to create a new PR (default) or push to the current branch and click **Confirm** to push.
-   * Push directly to the current branch only when your project's policy permits it and you intend to change that branch.
+   * Push directly to the current branch only when your project's policy permits it and you intend to change that branch. A push to `main` changes the live site's code immediately.
 1. Once complete, a notification appears at the bottom of the console.
    ![View PR](assets/view-pr.png)
 
@@ -223,11 +230,11 @@ If a pull request was created, click **View PR** in the completion notification.
 
 ![Code in GitHub](assets/code-in-github.png)
 
-Your code is now in GitHub.
+Your code is now in GitHub. It shows on that branch's preview and live URLs straight away.
 
 ## Preview Site {#preview-site}
 
-Preview renders your saved content with your code on the preview site, `*.aem.page`. Publishing, a separate step, releases it to the live site on `*.aem.live`. To view the changes in the preview environment:
+EDS preview copies your saved content to the preview site, `*.aem.page`, where it renders with the code of the branch in the URL. This is different from the console's preview panel, which shows only the working copy in the console workspace. Publishing, a separate step, makes the content live on `*.aem.live`. To preview the uploaded pages:
 
 1. Go back to Experience Workspace at `da.live`.
    * It may still be open in a browser tab you opened after clicking **View in AEM** after uploading the content.
@@ -236,7 +243,7 @@ Preview renders your saved content with your code on the preview site, `*.aem.pa
 1. Click the paper plane icon (top right) and select **Preview**.
    ![Publish to preview](assets/publish-to-preview.png)
 
-Verify that the preview contains both the saved content and the intended code version. Preview is separate from publication to the live site.
+Verify that the preview contains both the saved content and the intended code version.
 
 ![Published preview content](assets/published-preview.png)
 

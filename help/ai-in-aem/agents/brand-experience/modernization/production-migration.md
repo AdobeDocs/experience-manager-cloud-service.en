@@ -69,7 +69,7 @@ Start with one template and a small set of pages. For example:
 1. Compare imported text, links, images, metadata, and section order against the source. Fix the reusable parser, transformer, or mapping when a pattern is wrong. These are the import scripts EMA generates: a parser converts one block's source HTML, and a transformer cleans up the whole page.
 1. Apply source styling or follow the [redesign workflow](restyling.md#during-migration). Check global styles before refining individual blocks.
 1. Complete shared navigation and footer separately from page import.
-1. Save a representative to the chosen authoring destination and verify edit, save, reopen, and preview:
+1. Upload a representative to the chosen authoring destination and verify edit, save, reopen, and preview:
    * [Document-based upload and preview](getting-started.md#upload-content).
    * [JCR conversion, package upload, and Universal Editor validation](getting-started-aem-authoring.md#validate-content).
 1. Record the accepted source-to-output mapping, models, design decisions, and known exceptions before expanding the batch.
@@ -118,7 +118,7 @@ An importer status, generated package, visual similarity score, or Lighthouse sc
 
 ## Release, Recover, and Hand Over {#handoff}
 
-1. Review and push the accepted code through the repository's policy.
+1. Review and push the accepted code through the repository's policy. Merging into `main` updates the live site's code immediately; there is no separate code publish step. Plan the merge with the content release. See [How Changes Go Live](overview.md#code-content-lifecycle).
 1. Upload only the accepted content and assets to the confirmed destination. Review per-page and per-asset errors.
 1. Verify the saved content with the intended code revision in EDS preview, on `*.aem.page`.
 1. Obtain the site's release approval and follow the configured publication and domain cutover process. Publishing makes pages available on `*.aem.live`; the cutover is what serves them on your own domain.

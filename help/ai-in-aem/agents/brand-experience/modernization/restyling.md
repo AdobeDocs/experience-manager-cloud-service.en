@@ -75,7 +75,7 @@ A new migration is not required.
 1. Update shared tokens and global styles first where the change is global. Apply block-specific styling only where needed.
 1. Preview all affected representatives, not only the page used to derive the design. Include mobile widths, long headings, missing optional content, and different variants.
 1. If the design requires structural or model changes, make that a separate, explicit decision. Provide a compatibility/content-migration plan rather than silently rewriting author content.
-1. Review the code diff and project checks, then save and deliver through the [existing project's workflow](getting-started.md#push-code-changes).
+1. Review the code diff and project checks, then push and deliver through the [existing project's workflow](getting-started.md#push-code-changes). A restyle is a code change: it reaches the live site as soon as the branch is merged into `main`, so check the affected pages on the branch's preview URL first. See [How Changes Go Live](overview.md#code-content-lifecycle).
 
 For a CSS-only restyle, do not regenerate or reupload content unnecessarily. A global token change can affect pages outside the original example; include those in regression checks.
 

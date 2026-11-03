@@ -43,8 +43,8 @@ Review generated guidance against the actual authoring target and validated exam
 
 Ensure the following before using this skill.
 
-* Your project must be checked out to the workspace in the console.
-* To enrich the guides with EDS configuration, you need appropriate admin access and must enable **Allow LLM to access admin.hlx.page on my behalf** in [console settings](console.md#settings-page). `admin.hlx.page` is the EDS admin API, which holds site configuration; `hlx` comes from Project Helix, an earlier name of EDS.
+* Your project must be checked out to your console workspace.
+* To enrich the guides with EDS configuration, you need appropriate admin access and must enable **Allow LLM to use my Adobe credentials for admin.hlx.page, Document Authoring, and repositories hosted outside GitHub** in [console settings](console.md#settings-page). `admin.hlx.page` is the EDS admin API, which holds site configuration; `hlx` comes from Helix, the project name under which the EDS architecture was developed.
 * Without that access, the agent can generate code-based documentation. Ask it to state which configuration and remote content it could not inspect. This permission does not establish JCR repository access.
   
 ## Creating Project Documentation {#creating-documentation}
@@ -57,7 +57,7 @@ Once the prerequisites are fulfilled, ask the agent to create documentation for 
 
    ![Create documentation](assets/select-documentation.png)
 
-1. Once created, the guides are placed in your workspace. Select one to view a description and click the link to download the full PDF.
+1. Once created, the guides are placed in your console workspace. Select one to view a description and click the link to download the full PDF.
 
    ![Documentation created](assets/documentation-created.png)
 
@@ -67,7 +67,7 @@ Review the guides for correct setup, content locations, commands, authoring step
 
 >[!NOTE]
 >
->If you are not authorized to access the Edge Delivery Services admin API or the option **Allow LLM to access admin.hlx.page on my behalf** in [console settings](console.md#settings-page) is not enabled, the agent generates documentation from accessible code. Label this scope rather than infer missing configuration.
+>If you are not authorized to access the Edge Delivery Services admin API or the option **Allow LLM to use my Adobe credentials for admin.hlx.page, Document Authoring, and repositories hosted outside GitHub** in [console settings](console.md#settings-page) is not enabled, the agent generates documentation from accessible code. Label this scope rather than infer missing configuration.
 
 ## Retain Context for People and Agents {#portable-handoff}
 
@@ -80,7 +80,7 @@ Include:
 | Project identity | Repository, branch/revision, source URLs, [content destination](overview.md#content-storage), authoring tool (Experience Workspace or the Universal Editor), and preview/live URLs. |
 | Decisions | Agreed scope, design reference/version, content mappings, project conventions, and what must be preserved. |
 | Validated examples | Source-to-output paths, authorable block examples, model/variant instructions, and edit/save/reopen results. |
-| State | What exists only in the workspace, what was uploaded, what code was pushed, and what was previewed or published. |
+| State | What exists only in the console workspace, what was uploaded, what code was pushed, and what was previewed or published. |
 | Quality and gaps | Commands/checks and results, coverage, failed/skipped pages, unfinished integrations, and acceptance owner. |
 | Next step and recovery | Remaining task, permissions/dependencies, code recovery, and separate content/asset recovery process. |
 
@@ -99,20 +99,20 @@ The following are common error messages encountered when using the project docum
 * **Cause:** Missing admin permissions or agent permissions not enabled
 * **Solution:**
   1. Verify you have admin access to the project
-  1. Enable **Allow LLM to access admin.hlx.page on my behalf** in [console settings](console.md#settings-page), if configuration-enriched documentation is required. Otherwise, continue with an explicitly code-only guide.
+  1. Enable **Allow LLM to use my Adobe credentials for admin.hlx.page, Document Authoring, and repositories hosted outside GitHub** in [console settings](console.md#settings-page), if configuration-enriched documentation is required. Otherwise, continue with an explicitly code-only guide.
 
 ### "Project Not Found" {#not-found}
 
-* **Cause:** Repository not checked out in workspace
+* **Cause:** Repository not checked out in the console workspace
 * **Solution:**
   1. Check out the project repository
-  1. Ensure you're in the correct workspace
+  1. Ensure you're in the correct console workspace
 
 ### "Config API Error" {#api-error}
 
 * **Cause:** Unable to access Edge Delivery Services config service API
 * **Solution:**
-  1. Select **Allow LLM to access admin.hlx.page on my behalf** in [console settings](console.md#settings-page).
+  1. Select **Allow LLM to use my Adobe credentials for admin.hlx.page, Document Authoring, and repositories hosted outside GitHub** in [console settings](console.md#settings-page).
   1. Check your network/VPN connection
   1. Confirm admin access to the project
 
