@@ -8,7 +8,7 @@ exl-id:
 
 # Deliver barcode images using Dynamic Media with OpenAPI {#deliver-barcode-images}
 
-Dynamic Media with OpenAPI lets you request barcode and QR code images through a delivery URL. You can use these URLs to deliver barcode images for different use cases, such as coupons in email campaigns.
+Dynamic Media with OpenAPI lets you request barcode and QR code images through a delivery URL. For example, a campaign can use a barcode delivery URL to include a personalized coupon barcode in an email.
 
 The barcode request uses a blank canvas as its source and returns the generated image in the requested format. Request parameter locking helps ensure that the barcode value and its associated barcode type cannot be changed without a valid lock.
 
@@ -42,16 +42,6 @@ Replace the placeholders with the values for your request.
 | `token` | The lock token associated with the barcode request. |
 | `width` | The requested image width. |
 | `height` | The requested image height. |
-
-For example, the following request asks for a PNG barcode image:
-
-```http
-GET https://<tenant-delivery-host>/adobe/assets/urn:aaid:aem:canvas/as/coupon-barcode.png?barcode=DEMO123%2Ccode128&token=<URL-encoded-lock-token>&width=400&height=500
-```
-
-The barcode value in this example is `DEMO123`, and the barcode type is `code128`. The comma between the value and type is URL-encoded as `%2C`.
-
-![Example of a barcode delivery request URL](assets/barcode-delivery-request.png)
 
 ## Configure barcode request parameters {#configure-request-parameters}
 
@@ -111,10 +101,6 @@ For example:
 
 To request a barcode for a different value, obtain a lock associated with that value.
 
-![Example of a successfully generated barcode image](assets/barcode-delivery-success.png)
-
-![Example of an error when the barcode value does not match the lock](assets/barcode-request-lock-error.png)
-
 ## Troubleshoot barcode requests {#troubleshoot}
 
 If a barcode request fails, review the request parameters and lock token.
@@ -145,6 +131,6 @@ If you receive an error response, review the request parameters and lock token b
 
 For more information about Dynamic Media with OpenAPI and asset delivery, see:
 
-* [Dynamic Media with OpenAPI capabilities](/help/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview.md)
-* [Integrate AEM Assets with downstream applications](/help/assets/dynamicmedia/dynamic-media-open-apis/integrate-dynamic-media-open-apis.md)
-* [Delivery APIs](/help/assets/dynamicmedia/dynamic-media-open-apis/deliver-assets-apis.md)
+* [Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)
+* [Integrate AEM Assets with downstream applications](/help/assets/integrate-dynamic-media-open-apis.md)
+* [Delivery APIs](/help/assets/deliver-assets-apis.md)
