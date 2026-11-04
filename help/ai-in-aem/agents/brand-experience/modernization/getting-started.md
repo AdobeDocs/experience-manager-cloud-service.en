@@ -365,18 +365,35 @@ Review the code diff and run the project's checks before pushing. Use a pull req
 1. Open **Sync** in the workspace header and select **Push** > **Code**.
 1. In the **Stage changes** dialog, stage the files you want to push and click **Continue**.
 1. In the **Push changes** dialog, enter a commit message. Choose to create a new PR (default) or push to the current branch and click **Confirm** to push.
-   * **Create new PR** pushes a new branch, named `aem-` followed by the date and time, and opens a pull request into the current branch.
+   * **Create new PR** pushes a new branch, named `aem-` followed by the date and time, and opens a pull request into the current branch. The pull request lists preview URLs of your pages on the new branch, so that reviewers can check the result. Your console workspace stays on the new branch; to continue on the original branch, switch back to it with **Switch branch** in the [Changes view](console.md#changes-actions).
    * **Push to current branch** adds the commit to the current branch, and updates its pull request if it has one. Use it only when your project's policy permits it and you intend to change that branch. A push to `main` changes the live site's code immediately.
 1. Once complete, a notification appears at the bottom of the console.
    ![View PR](assets/view-pr.png)
 
-If a pull request was created, click **View PR** in the completion notification. Otherwise, verify the commit on the destination branch. For repositories connected through Cloud Manager, the console pushes the branch without opening a pull request.
-
-If the branch has changed in the repository since your last pull, the console tries to apply your commit on top of the remote changes and push again. If that fails, it shows **Push failed: Remote has conflicting changes** and switches the dialog to **Create new PR**, so that you can push to a new branch and resolve the conflict in the pull request. If the branch is protected against direct pushes, push with **Create new PR**.
+If a pull request was created, click **View PR** in the completion notification. Otherwise, verify the commit on the destination branch. For repositories connected through Cloud Manager, the console pushes the branch without opening a pull request; open it with your Git provider's tools. If the branch is protected against direct pushes, push with **Create new PR**.
 
 ![Code in GitHub](assets/code-in-github.png)
 
 Your code is now in GitHub. It shows on that branch's preview and live URLs straight away.
+
+#### If Someone Else Changed the Branch {#push-conflicts}
+
+A branch is a sequence of changes, called commits, in your Git repository. Your console workspace holds a copy of the branch as it was when you last pulled it. If someone else has pushed to the branch since, the repository has commits that your workspace doesn't.
+
+When you select **Push to current branch**, the console handles most of these cases for you:
+
+1. It fetches the other commits, adds your commit after them, and pushes again. If you and the other person changed different files or different lines, the push succeeds and you don't need to do anything.
+1. If you both changed the same lines, Git can't decide which version to keep. This is a conflict. The console shows **Push failed: Remote has conflicting changes that cannot be merged automatically**, keeps your changes in the workspace, and switches the dialog to **Create new PR**.
+1. Select **Confirm**. The console pushes your changes to a new branch and opens a pull request into the branch that you were working on.
+1. Select **View PR** in the notification. GitHub shows that the pull request has conflicts that must be resolved.
+1. Resolve the conflicts in the pull request:
+   * If only a few lines conflict, select **Resolve conflicts** in GitHub, keep the right version of each conflicting part, and commit the result. See [Resolving a merge conflict on GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github).
+   * If the conflicts are large or span many files, ask a developer to resolve them in a local copy of the repository.
+1. Once the pull request is reviewed, merge it.
+
+The console doesn't merge branches or resolve conflicts itself. **Sync** > **Pull** > **Code** works the same way: if your commits conflict with the remote changes, the console cancels the pull, leaves your work as it was, and suggests pushing your work to a new branch or asking the agent to help resolve the conflict.
+
+To avoid conflicts, pull before you start a task, push small changes often, and agree with your team who changes which files. See [Collaborating on an EMA Project](overview.md#collaboration).
 
 ### Preview Site {#preview-site}
 
@@ -436,6 +453,7 @@ The console's preview panel renders the working copy in the console workspace wi
 * **Content edited elsewhere:** Pages changed in Experience Workspace are not yet in the console workspace. **Refresh** in the preview panel only reloads the rendering; to replace the console's copies with the saved documents, use **Sync** > **Pull** > **Content**. This overwrites local edits to those pages.
 * **Different code:** The code is not pushed, or the preview URL uses another branch. Push the code, and open the preview URL of the branch that has it.
 * **Different width:** The console preview fills the panel by default. Compare at the same width, using the [**Viewport** menu](console.md#content-view).
+* **Markup that EDS removes:** The console preview shows the page's HTML as it is. When EDS previews an uploaded page, it keeps only sections, blocks, and default content, and removes inline styles, `span` elements, and data attributes. Ask EMA to move such styling into the project's CSS. See [How the Preview Works](console.md#how-preview-works).
 
 ### Content Writes Fail {#write-errors}
 
@@ -483,7 +501,7 @@ EMA blocks the agent's delete commands in the project's content folder, so that 
 
 To remove pages from the console workspace, select a page in a [content view](console.md#content-view) and use **Delete**. This deletes one page at a time; you can't delete a folder, and you can't undo it. If pages were imported to the wrong path, import them again to the correct path, check them, and then delete the copies at the wrong path.
 
-**Delete** removes only the console workspace copy. If you already uploaded, previewed, or published a page, also delete it in Experience Workspace or on the AEM author instance, and unpublish or delete it from the preview and live sites with the [AEM Sidekick](https://www.aem.live/docs/sidekick#unpublishing-and-deleting-content).
+**Delete** removes only the console workspace copy. If the page exists in Experience Workspace, or has been previewed or published, it appears again in the content view with a cloud icon, and opening it downloads the saved version. To replace one page with its saved version, delete the local copy and open the page again. To remove an uploaded, previewed, or published page for good, also delete it in Experience Workspace or on the AEM author instance, and unpublish or delete it from the preview and live sites with the [AEM Sidekick](https://www.aem.live/docs/sidekick#unpublishing-and-deleting-content).
 
 ### Source Sites with Bot Protection {#bot-protection}
 

@@ -194,11 +194,11 @@ In an AEM authoring project, the console couldn't find the project's AEM site pa
 
 ### Why doesn't the console preview match the live page? {#preview-mismatch}
 
-The console preview renders the console workspace's copy of the content with the workspace's code. The EDS preview and live sites render the saved content with the code of the branch in their URL. Content that is not uploaded or not pulled, unpushed code, another branch, or a different viewport width can explain the difference. See [Console Preview Differs from the Site](getting-started.md#preview-differs).
+The console preview renders the console workspace's copy of the content with the workspace's code. The EDS preview and live sites render the saved content with the code of the branch in their URL. Content that is not uploaded or not pulled, unpushed code, another branch, or a different viewport width can explain the difference. EDS also removes markup that the console preview keeps, such as inline styles, `span` elements, and data attributes. See [Console Preview Differs from the Site](getting-started.md#preview-differs) and [How the Preview Works](console.md#how-preview-works).
 
 ### Does Refresh update the preview from Experience Workspace? {#refresh-preview}
 
-No. **Refresh** only reloads the rendering of the console workspace copy. To replace the console's copies with the saved documents, use **Sync** > **Pull** > **Content**, which overwrites local edits to those pages. See [Sync Menu](console.md#sync-menu).
+No. **Refresh** only reloads the rendering of the console workspace copy. To replace the console's copies with the saved documents, use **Sync** > **Pull** > **Content**, which overwrites local edits to those pages. To replace a single page, delete its local copy and open the page again from the cloud icon. See [Sync Menu](console.md#sync-menu) and [Content Views](console.md#content-view).
 
 ### Can I use the console on a phone or tablet? {#mobile}
 
@@ -254,9 +254,13 @@ For processing locations, data retention, and compliance information, contact yo
 
 ## Product Fit and Help {#product-fit}
 
-### Is EMA for developers or for authors? {#audience}
+### Do I need to be a developer to use EMA? {#audience}
 
-EMA is the agent for building and changing EDS sites: migrating them, creating and updating blocks, restyling, creating pages from designs, and the code and content structure behind them. Developers and the people who run a migration use it most. Authors edit content day to day in Experience Workspace, or in the Universal Editor for AEM authoring. See [Overview](overview.md).
+No. You describe what you want in plain language and check the result in the preview. Designers, content specialists, and marketers can migrate pages, refine styling, and shape blocks, while developers review every code change before it reaches production. Authors edit content day to day in Experience Workspace, or in the Universal Editor for AEM authoring. See [Who Can Use EMA](overview.md#who-can-use-ema).
+
+### Can several people work on the same EMA project? {#collaboration}
+
+Yes. Each person works in their own console workspace and shares code through pull requests in Git. The console doesn't coordinate their work, so agree who changes which blocks, templates, and pages. Content uploads have no merge: the last upload of a page replaces the previous one. See [Collaborating on an EMA Project](overview.md#collaboration).
 
 ### Can EDS run complex sites, or only simple ones? {#complex-sites}
 

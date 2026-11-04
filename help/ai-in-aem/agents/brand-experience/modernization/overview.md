@@ -34,7 +34,7 @@ EDS is the AEM service that delivers websites, and it is part of AEM Sites. It s
 
 ## Introduction {#introduction}
 
-EMA is part of the [Brand Experience Agent.](/help/ai-in-aem/agents/brand-experience/overview.md) It automates the repetitive parts of building an EDS site: importing content, mapping it to blocks, extracting the design, and writing block code. You work in the hosted Experience Modernization Console, using natural-language requests and previews. You don't need Docker or a local command-line environment. With Auto mode, in early access, EMA can also migrate a first set of pages on its own and email you when it's done.
+EMA is part of the [Brand Experience Agent.](/help/ai-in-aem/agents/brand-experience/overview.md) It automates the repetitive parts of building an EDS site: importing content, mapping it to blocks, extracting the design, and writing block code. You work in the hosted Experience Modernization Console, using natural-language requests and previews. You don't need Docker or a local command-line environment. You don't need to be a developer either: designers, content specialists, and marketers can work on the site too. See [Who Can Use EMA](#who-can-use-ema). With Auto mode, in early access, EMA can also migrate a first set of pages on its own and email you when it's done.
 
 Use EMA to move web properties from other CMSes, older AEM implementations built from Java and HTL components, or static sites onto EDS, the current AEM website stack. EMA reads each source page as a browser renders it, so the system behind the source doesn't matter: it works from the content and design that visitors see. Consolidating on EDS gives you:
 
@@ -47,7 +47,7 @@ EMA rebuilds your pages on an EDS block system that follows EDS architecture. It
 
 After go-live, the same environment keeps working on the site. You can restyle it to a new brand, including from Figma designs, add blocks, update or refactor existing blocks, create pages from the established blocks, debug problems, and generate project and handover documentation. You can also connect an existing EDS project and start there, without a migration.
 
-You stay in control of every change. Code goes to your Git repository and content goes to the authoring destination you chose. Until you push or upload them, or turn on [agent permissions](console.md#settings-page) that let the agent do so, changes stay in the console workspace, where you review and preview them and can discard what you don't want. Your permissions, repository policies, and publication workflow determine what you can change and release.
+You stay in control of every change. EMA works in your own console workspace, where you review and preview its changes and discard what you don't want. Nothing reaches your project until you push code to your Git repository or upload content to the authoring destination that you chose, or turn on [agent permissions](console.md#settings-page) that let the agent do so. Your permissions, repository policies, and publication workflow determine what you can change and release. See [Work Safely in an Independent Workspace](#independent-workspace).
 
 ## Why Use EMA {#benefits}
 
@@ -62,6 +62,78 @@ Before anyone can judge a migration to EDS, a developer usually has to do a lot 
 * **Unattended runs.** Auto mode, in early access, migrates a set of pages, including their design, without step-by-step prompting and emails you when it finishes. See [Start with Auto Mode](getting-started.md#brand-trial).
 
 EMA doesn't replace your judgment. You decide the scope, the target design, and the content model, and you validate the result before it goes live.
+
+## Who Can Use EMA {#who-can-use-ema}
+
+EMA works from requests in plain language: you describe what you want, check the result in the preview, and EMA writes the code and content. What you need is expertise in the part of the site that you work on, and enough technical literacy to judge the result and follow these guides.
+
+The person who knows an aspect of the site best is often the best person to direct EMA on it:
+
+| Expertise | What you can do with EMA |
+|---|---|
+| Business and marketing | Migrate a few of your own pages, judge EDS on your content, and ask for corrections. Auto mode migrates pages without step-by-step prompting. |
+| Visual and UX design | Refine layouts, typography, colors, spacing, and responsive behavior against the brand's style guide. A designer who knows the brand rules often directs visual changes more precisely than a developer. |
+| Content and authoring | Decide how pages break down into sections, default content, and blocks, and check that authors find the result easy to edit. See [How EDS Pages Work](#eds-basics). |
+| Development | Build blocks with complex behavior, integrate APIs and services, debug, refactor, and review every code change before it reaches production. |
+| Architecture and project leadership | Scope the migration, choose the content destination and integrations, divide the work, and decide when the site is ready to release. |
+
+Many people combine several of these. EMA doesn't limit requests by role. Your permissions in Git and in the content destination decide what you can change outside your workspace.
+
+### Broader Contribution, Same Production Control {#production-control}
+
+EMA widens who can contribute to a site, not who approves what goes live. Developers stay in control of every line of code that reaches production.
+
+That control sits in your Git provider, not in EMA, so it holds however a change is made. EMA writes standard EDS code and pushes it to your repository, where the repository's rules apply. When people other than developers work on the code:
+
+1. Protect `main` with [branch protection](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches) that requires a pull request approved by a developer, and don't let other contributors bypass it.
+1. Contributors push their work with **Create new PR**, which puts it on a new branch with a pull request. For repositories connected through Cloud Manager, the console pushes the branch, and you open the pull request with your Git provider's tools.
+1. A developer reviews the pull request, checks the result on the preview URLs that it lists, and merges it.
+
+If a contributor turns on **Allow LLM to use my git credentials**, the agent pushes with that contributor's access, so the same protection applies to it. Publishing content is controlled separately, by the site's publish role. See [Control over Changes](#security-control).
+
+## Collaborating on an EMA Project {#collaboration}
+
+Several people can work on the same project with EMA, each in their own [console workspace](#independent-workspace). They share code through Git and content through the content destination. The console has no features yet for coordinating them: it doesn't show who is working on what, and it doesn't merge two people's changes to the same page. Agree who works on what, and keep talking to each other.
+
+Scope matters more with an agent than without one. A single request can change many files, so when two people change the same blocks or styles at the same time, someone has to resolve conflicts across many files by hand.
+
+### Start with One Person, Then Divide the Work {#divide-work}
+
+The first steps of a project lay the foundation that everything else builds on: the global styles, the first blocks, and the import scripts of the first templates. Let one person set them up. Before you divide the work, check that the blocks fit representative content and are easy for authors to use. [David's Model](https://www.aem.live/docs/davidsmodel) explains what makes a good EDS content model.
+
+Once the team agrees on the blocks, divide the work so that people change different files:
+
+* **By block:** One person refines the cards block while another builds a carousel.
+* **By template:** Each person refines the import script of a different template. See [How EMA Migrates at Scale](#migration-at-scale).
+* **By expertise:** A designer refines the styling of existing blocks while a developer builds an integration.
+
+Don't give two people the same block, the global styles, or the same import script at the same time unless they agree how to coordinate.
+
+### Share Code in Small Steps {#share-code}
+
+1. Agree on a shared branch, such as `main` or a development branch. Each person switches their workspace to it with **Switch branch** in the [Code view](console.md#changes-actions).
+1. Keep each request to EMA focused on one block, template, or task. Push the result as soon as it works, with **Create new PR**: EMA pushes your changes to a new branch, opens a pull request into the shared branch, and leaves your workspace on the new branch.
+1. Review and merge pull requests often. Small changes conflict less and are quicker to review, and a pull request that stays open for days collects conflicts.
+1. Before you start a new task, switch back to the shared branch with **Switch branch** and pull it with **Sync** > **Pull** > **Code**, so that you build on everyone's merged work.
+
+Pulling code requires a workspace without uncommitted files, so push or discard your changes first. If someone changed the same lines as you, the console cancels the pull and leaves your work as it was. See [If Someone Else Changed the Branch](getting-started.md#push-conflicts).
+
+### Coordinate Content Changes {#share-content}
+
+Content has no merge. Your workspace holds copies of the pages, and an upload replaces the page in the content destination with your copy. If two people change the same page, the last upload wins, and the other person's changes are lost. Give each page, or set of pages, to one person at a time.
+
+To get pages that others uploaded into your workspace:
+
+* Open a page that shows a cloud icon in the [content view](console.md#content-view). EMA downloads it into your workspace.
+* In document-based projects, select **Sync** > **Pull** > **Content** to download every page from Experience Workspace. It replaces your local copies, including edits that you haven't uploaded, so upload the edits that you want to keep first.
+
+### Change Content Structure in the Import Scripts {#import-scripts}
+
+During a migration, the content comes from the source site, and the import scripts decide its structure. When you change how content is structured, such as which content becomes a block or how a page splits into sections, ask EMA to change the import script too, not only the imported pages. The import script is code, so the change is reviewed and merged like any other, and the next import applies it to every page of the template. This is also what lets the migration scale to many pages.
+
+An edit to a single page doesn't carry over. EMA tells you that such an edit is local, and importing the template again overwrites it.
+
+Once authors start editing the migrated pages in the content destination, their pages become the source of truth. Importing or uploading those pages again from a workspace overwrites the authors' work, so agree with the authors first.
 
 ## Choose Your Task {#choose-task}
 
@@ -84,6 +156,7 @@ An automated run or a preview shows how the pages look. The completion checks of
 An EMA task touches several separate parts of a project. Keep them apart when you start:
 
 * **Source:** The authorized website, content, or design that you provide.
+* **Console workspace:** Your own working copy of the project's code and content, where EMA makes its changes before you push or upload them. See [Work Safely in an Independent Workspace](#independent-workspace).
 * **Code:** The EDS Git repository and working branch that contain styles, scripts, and blocks.
 * **Content destination:** Where the migrated content is stored and which editor authors use. Adobe strongly recommends document-based persistence with Experience Workspace for new implementations. The alternative is AEM authoring with JCR persistence and the Universal Editor. The source CMS does not determine this choice. See [Where Content Is Stored and How Authors Edit It](#content-storage).
 * **Preview and publication:** The EDS preview site, where you check saved content with your code, and the live site, where approved changes are released. See [How Changes Go Live](#code-content-lifecycle).
@@ -106,7 +179,20 @@ Keep the content structure semantic and simple, because authors work with it eve
 
 Most projects start from the [AEM boilerplate](https://github.com/adobe/aem-boilerplate), which is written in plain JavaScript and CSS.
 
-#### How Changes Go Live {#code-content-lifecycle}
+### Work Safely in an Independent Workspace {#independent-workspace}
+
+EMA doesn't change your Git repository or your content destination directly. It works in a console workspace: your own working copy of the project, hosted by Adobe and not shared with other users. The workspace holds a checkout of one branch of your Git repository, and copies of the content pages that you imported, opened, or pulled.
+
+Everything that EMA does happens there first. You can ask for a sweeping redesign, check it in the console preview, and discard what you don't want, while your repository, the authors' pages, and the live site stay unchanged. Work leaves the workspace only when you send it, in two separate operations:
+
+* **Push code** sends the changed files that you select to your Git repository, as a commit on the current branch or as a new pull request.
+* **Upload content** sends the pages that you select to Experience Workspace or the AEM author instance, where they replace the saved versions of those pages.
+
+[Agent permissions](console.md#settings-page) let the agent do the same for you. See [Control over Changes](#security-control).
+
+The independence works in both directions: changes that others push or upload don't reach your workspace until you pull them. See [Sync Menu](console.md#sync-menu) and [Collaborating on an EMA Project](#collaboration).
+
+### How Changes Go Live {#code-content-lifecycle}
 
 Code and content reach the live site in different ways:
 

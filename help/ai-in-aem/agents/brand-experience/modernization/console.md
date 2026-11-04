@@ -165,11 +165,29 @@ The workspace panel displays working content and code for the connected project,
 | EDS preview site (`*.aem.page`) | Saved content renders with the code branch in that URL. | Release acceptance and publication. |
 | Published site (`*.aem.live`) | The release is visible on the live destination. | Post-release checks and monitoring. |
 
+### How the Preview Works {#how-preview-works}
+
+The console preview isn't an AEM environment. It runs the [AEM CLI](https://www.aem.live/developer/cli-reference) (`aem up`) in your workspace: the same local development server that EDS developers run on their own computers. It serves your workspace's code with the content pages in your workspace. Anything else that a page requests, such as a fragment or a spreadsheet that isn't in your workspace, comes from the EDS preview site of the workspace's current branch, `https://{branch}--{site}--{organization}.aem.page`.
+
+The result can differ from the EDS preview site after you upload, because EDS processes content that the console preview shows as it is. When EDS previews a page, it ingests the content and keeps only the structure of [sections, blocks, and default content](https://www.aem.live/developer/markup-sections-blocks). Extra elements such as `span` tags, data attributes, and inline styles are removed. See [Bring Your Own Markup](https://www.aem.live/developer/byom). The console preview reproduces a few of these steps, such as wrapping a standalone image or link in a paragraph and adding heading IDs, so it comes close, but it doesn't remove anything.
+
+Watch for these differences:
+
+* **Markup that EDS removes:** Inline styles, `span` elements, data attributes, and other markup outside the EDS structure show in the console preview but disappear on `aem.page`. Keep pages to semantic content, and put styling in the project's CSS. The project's JavaScript can still restructure the page in the browser, which works the same in both places.
+* **Content from the preview site:** Fragments, spreadsheets, and other files that aren't in your workspace show the version last previewed on the branch's preview site.
+* **Images:** An image can show in the console preview and still be broken on `aem.page` if it didn't upload correctly. Upload the page again.
+* **AEM authoring projects:** The upload converts each page into JCR content that must fit the project's component models. The preview shows the page before that conversion. Check the converted structure in the **JCR XML view** before you upload, and the page in the Universal Editor after.
+
+To check a page as EDS delivers it, upload it, preview it, and open it on the branch's `aem.page` URL. See [Console Preview Differs from the Site](getting-started.md#preview-differs).
+
 ### Content Views {#content-view}
 
-The **Content views** show the selected page in different forms, so that you can check each aspect of the result. A collapsible file browser displays all the available page content for your site.
+The **Content views** show the selected page in different forms, so that you can check each aspect of the result. A collapsible file browser lists the pages of your site:
 
-* **Preview** (document with magnifying glass icon) renders the selected page from the console workspace. Use it to check the page as visitors see it.
+* Pages in your workspace show as files.
+* Pages that exist only in the content destination show a cloud icon. In document-based projects, these are the pages in Experience Workspace. In other projects, including AEM authoring projects, they are the pages that have been previewed or published on EDS. Opening a cloud page downloads it into your workspace.
+
+* **Preview** (document with magnifying glass icon) renders the selected page from your workspace's current code and content. Use it to check the page as visitors see it. It doesn't update the authoring environment or your Git repository. See [How the Preview Works](#how-preview-works).
 * **Document view** (document icon) shows the underlying document-based content structure. Use it to check how content is organized into sections, blocks, and default content.
 * **HTML view** (code icon) shows the raw HTML. Use it to debug rendering and block decoration.
 * **Markdown view (AEM authoring)** (paragraph icon) shows the underlying Markdown content structure. Use it to check the content before conversion.
@@ -179,12 +197,12 @@ The **Content views** show the selected page in different forms, so that you can
 
 The following actions are available in the content views:
 
-* **Refresh** icon to reload the preview panel's rendering of the console workspace copy. It doesn't fetch content from Experience Workspace; to replace the console's copies with the saved documents, use **Sync** > **Pull** > **Content**.
+* **Refresh** icon to reload the preview panel's rendering of the console workspace copy. It doesn't fetch content from Experience Workspace. To replace the console's copies with the saved documents, use **Sync** > **Pull** > **Content**. To replace a single page, delete its local copy and open the page again.
 * **Viewport** menu to view the rendered page at **Responsive** width (the default, which fills the panel) or at a fixed **Desktop**, **Tablet**, or **Mobile** size
 * **Inspect mode** (select icon) to add elements of the page to your prompt for additional context. The agent receives the selected element's HTML and its position on the page, and limits its changes to that element.
 * **New window** (open in icon) to open the preview URL in a new tab (for a full desktop preview)
 * **Edit in Experience Workspace** (document-based projects) opens the selected page in the Experience Workspace visual editor, the `da.live` canvas, in a new tab, previewed with the console workspace's current branch. If the page has local changes that are not yet uploaded to Experience Workspace, the console first offers **Upload & Edit**, so that you don't edit an older version. AEM authoring projects use the Universal Editor instead.
-* **Delete** removes the selected page from the console workspace, one page at a time. It can't be undone, and it does not delete uploaded, previewed, or published content. See [Remove Pages](getting-started.md#remove-pages).
+* **Delete** removes the selected page from the console workspace, one page at a time. It can't be undone, and it does not delete uploaded, previewed, or published content. If the page exists in the content destination, it appears again with the cloud icon, and opening it downloads the saved version. You can't delete a cloud page. See [Remove Pages](getting-started.md#remove-pages).
 * **Errors** button (AEM authoring) opens a modal window to view the errors on the selected page.
 * **Upload content** opens the destination-specific upload or package dialog. Check destination paths and overwrite implications before proceeding.
 
@@ -196,14 +214,16 @@ Content changes made by the agent stay in the console workspace until you upload
 
 ### Sync Menu {#sync-menu}
 
+Sync connects your [independent console workspace](overview.md#independent-workspace) to your project's Git repository and content destination. Pushing code and pushing content are separate operations, and you choose which changed files or pages to send. Changes that you leave in the console workspace don't affect the project.
+
 The **Sync** button in the workspace header shows a badge with the number of pending changes. Open it to move content and code between the console workspace and their remote locations: Experience Workspace or the AEM author instance for content, and your Git repository for code.
 
 |Section|Item|What it does|
 |---|---|---|
-|**Push**|**Content**|Uploads pending pages to Experience Workspace (Document Authoring) or the AEM author instance. It does not commit anything to Git. Shows how many pages are pending, or **Up to date**, and a progress bar while pushing.|
+|**Push**|**Content**|Opens the upload dialog, the same as **Upload content**, where you select the pages to upload to Experience Workspace (Document Authoring) or the AEM author instance. Each upload replaces the saved version of the page, including changes that others made to it. It does not commit anything to Git. Shows how many pages are pending, or **Up to date**, and a progress bar while pushing.|
 |**Push**|**Code**|Opens **Stage changes** and then **Push changes** for the changed files; see [Changes actions](#changes-actions). Requires the [AEM Code Connector](https://github.com/apps/aem-code-connector) GitHub app; the menu offers **Install AEM Code Connector** if it is missing.|
-|**Pull**|**Content**|Downloads your Experience Workspace (Document Authoring) pages over the console workspace copies, including local edits. Pages that exist only in the console workspace are kept. This cannot be undone.|
-|**Pull**|**Code**|Pulls the latest code from GitHub. Unavailable while the console workspace has uncommitted files; push or discard them first.|
+|**Pull**|**Content**|Document-based projects only. Downloads your Experience Workspace (Document Authoring) pages over the console workspace copies, including local edits. Pages that exist only in the console workspace are kept. This cannot be undone.|
+|**Pull**|**Code**|Pulls the latest commits of the workspace's current branch from your Git repository. Unavailable while the console workspace has uncommitted files; push or discard them first. If your changes conflict with the remote changes, the console cancels the pull and leaves your work as it was; see [If Someone Else Changed the Branch](getting-started.md#push-conflicts). To pull another branch, switch to it first with **Switch branch**.|
 
 Sync is disabled in the demo site. Push and pull tell you when your Experience Workspace (Document Authoring) session has expired.
 
