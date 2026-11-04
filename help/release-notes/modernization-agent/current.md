@@ -72,7 +72,7 @@ This page lists the user-facing changes in each release of the Experience Modern
 ### What's New {#release-2026-10-23-what-is-new}
 
 * **Improved site catalog:** Cataloging breaks pages into the blocks that an author actually edits, groups pages with the same layout into one template, and checks the results after scoping. Block mapping uses visual analysis, which produces fewer variants, cleaner templates, and cleaner screenshots. Your manual splits and moves are kept when you run it again. See [Site catalog.](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
-* **Pull content from Experience Workspace:** The **Sync** menu has a **Pull** section. **Pull** > **Content** downloads your Experience Workspace (which replaces Document Authoring) pages over the workspace copies and keeps pages that exist only in the workspace. **Pull** > **Code** replaces the **Pull** button of the code view. See [Sync menu.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#sync-menu)
+* **Pull content from Experience Workspace:** The **Sync** menu has a **Pull** section. **Pull** > **Content** downloads your pages from Experience Workspace (which replaces Document Authoring) over the workspace copies and keeps pages that exist only in the workspace. **Pull** > **Code** replaces the **Pull** button of the code view. See [Sync menu.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#sync-menu)
 
 ### Other Improvements {#release-2026-10-23-other-improvements}
 
