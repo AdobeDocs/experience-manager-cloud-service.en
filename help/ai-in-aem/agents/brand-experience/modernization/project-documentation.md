@@ -1,6 +1,6 @@
 ---
 title: Project Documentation Skill
-description: Learn how the Experience Modernization Agent's documentation skill can help you accelerate project handovers.
+description: Learn how the Experience Modernization Agent documents your project to speed up handovers.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 111cc47d-085f-4cf4-81bc-332e6a31bbeb
@@ -27,7 +27,7 @@ role_v2:
 ---
 # Project Documentation Skill {#project-documentation}
 
-Learn how the Experience Modernization Agent's documentation skill can help you accelerate project handovers.
+Learn how the Experience Modernization Agent documents your project to speed up handovers.
 
 ## Accelerating Project Handovers {#project-handovers}
 
@@ -58,7 +58,7 @@ Once the prerequisites are fulfilled, ask the agent to create documentation for 
 
    ![Create documentation](assets/select-documentation.png)
 
-1. Once created, the guides are placed in your console workspace. Select one to view a description and select the link to download the full PDF.
+1. Once created, the guides are placed in your console workspace. Select one to view its description, then select its link to download the full PDF.
 
    ![Documentation created](assets/documentation-created.png)
 

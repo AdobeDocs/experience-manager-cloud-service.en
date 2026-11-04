@@ -32,7 +32,7 @@ These are answers to questions that users of the Experience Modernization Agent 
 
 ## Access and Usage {#access-usage}
 
-### How do I get access? {#get-access}
+### How do I get access to the console? {#get-access}
 
 Request access to the Experience Modernization Console through your Adobe account manager. Auto mode, which is in early access, has its own access request at [`aemcoder.adobe.io/auto`](https://aemcoder.adobe.io/auto). See [Access and AI Credit Usage](getting-started.md#access).
 
@@ -40,7 +40,7 @@ Request access to the Experience Modernization Console through your Adobe accoun
 
 You need an Adobe ID that belongs to your company's Adobe organization. A personal Adobe ID that isn't part of an organization can't use the console. If you don't have a company account, ask your Adobe account team to add you to the organization. See [Open the Experience Modernization Console](getting-started.md#open-console).
 
-### If I can sign in to the console, is my organization licensed? {#entitlement}
+### If I can sign in to the console, is my organization licensed to use the agent? {#entitlement}
 
 Not necessarily. Being able to sign in does not by itself establish your organization's entitlement. Contact your Adobe account team for your entitlement and commercial terms.
 

@@ -30,7 +30,7 @@ role_v2:
 
 The Experience Modernization Agent is Adobe's AI development agent for [Edge Delivery Services](/help/edge/overview.md). It gives you a ready-to-use development environment for these sites in the browser, with nothing to install, and an agent that migrates, builds, and evolves them. Your Git repository remains the system of record for the site's code.
 
-Edge Delivery Services is the Adobe Experience Manager service that delivers websites, and it is part of Experience Manager Sites. It serves authored content as plain semantic HTML, and the project's own CSS and JavaScript style and decorate it in the browser. If you already build with HTML, CSS, and JavaScript, most of the project will look familiar. The parts specific to Experience Manager are explained in [Understand Your Project](#project-foundations). Adobe has renamed several of these products over time. If you meet older names such as Helix, Franklin, or Crosswalk, or short forms of these names, see [Names You May See](#names).
+Edge Delivery Services is the part of Adobe Experience Manager Sites that delivers websites. It serves authored content as plain semantic HTML, and the project's own CSS and JavaScript style and decorate it in the browser. If you already build with HTML, CSS, and JavaScript, most of the project will look familiar. The parts specific to Experience Manager are explained in [Understand Your Project](#project-foundations). Adobe has renamed several of these products over time. If you meet older names such as Helix, Franklin, or Crosswalk, or short forms of these names, see [Names You May See](#names).
 
 ## Introduction {#introduction}
 

@@ -283,7 +283,7 @@ Note that you must set up your Figma details in [the Experience Modernization Co
   1. **Mapping to existing blocks** — The agent identifies the closest matching block in your project's block library and creates a custom variant.
   1. **CSS generation** — The agent writes styles that reference the extracted CSS custom properties, ensuring design consistency.
   1. **Asset download** — The agent saves images and icons from Figma to the console workspace.
-  1. **Edge Delivery Services content generation** — The agent creates the markdown file following Edge Delivery Services block structure
+  1. **Content generation** — The agent creates the Markdown file in the block structure of Edge Delivery Services.
   1. **Output validation** — The agent previews the result and performs visual comparison against the original Figma design.
 * The skill first reads metadata (step 1) to understand structure, and then extracts detailed design context (steps 2-5).
   * This phased approach prevents issues with large or complex Figma files.

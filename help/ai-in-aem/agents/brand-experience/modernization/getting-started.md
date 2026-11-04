@@ -403,7 +403,7 @@ Previewing copies your saved content to the preview site, `*.aem.page`, where it
    * It may still be open in a browser tab you opened after selecting **View in AEM** after uploading the content.
    * Or navigate to `https://da.live/#/{organization}/{repository}`
 1. Open one of the pages that you previously uploaded.
-1. Select the paper plane icon (top right) and select **Preview**.
+1. Select the paper plane icon (top right), then **Preview**.
    ![Publish to preview](assets/publish-to-preview.png)
 
 Verify that the preview contains both the saved content and the intended code version.
@@ -416,7 +416,7 @@ If your code is on a branch other than the one in the preview URL, change the pr
 
 When the preview looks right, publish the page to make it live on `*.aem.live`:
 
-* In Experience Workspace, open the page, select the paper plane icon, and then select **Publish**.
+* In Experience Workspace, open the page, select the paper plane icon, then **Publish**.
 * Or, after an upload in the console, choose to preview and publish the uploaded pages.
 
 Publishing makes the page public. Who can publish is set by the site's publish role; follow your team's review process. Code doesn't need this step: it goes live as soon as it reaches `main`. See [Control over Changes](overview.md#security-control).
