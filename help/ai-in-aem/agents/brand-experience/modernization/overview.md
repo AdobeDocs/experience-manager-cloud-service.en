@@ -101,50 +101,6 @@ That control sits in your Git provider, not in the console, so it holds however 
 
 If a contributor turns on **Allow LLM to use my git credentials**, the agent pushes with that contributor's access, so the same protection applies to it. Publishing content is controlled separately, by the site's publish role. See [Control over Changes](evaluate.md#security-control).
 
-## Collaborating on a Project {#collaboration}
-
-Several people can work on the same project with the agent, each in their own [console workspace](#independent-workspace). They share code through Git and content through the content destination. The console has no features yet for coordinating them: it doesn't show who is working on what, and it doesn't merge two people's changes to the same page. Agree who works on what, and keep talking to each other.
-
-Scope matters more with an agent than without one. A single request can change many files, so when two people change the same blocks or styles at the same time, someone has to resolve conflicts across many files by hand.
-
-### Start with One Person, Then Divide the Work {#divide-work}
-
-The first steps of a project lay the foundation that everything else builds on: the global styles, the first blocks, and the import scripts of the first templates. Let one person set them up. Before you divide the work, check that the blocks fit representative content and are easy for authors to use. [David's Model](https://www.aem.live/docs/davidsmodel) explains what makes a good content model for Edge Delivery Services.
-
-Once the team agrees on the blocks, divide the work so that people change different files:
-
-* **By block:** One person refines the cards block while another builds a carousel.
-* **By template:** Each person refines the import script of a different template. See [How the Agent Migrates at Scale](#migration-at-scale).
-* **By expertise:** A designer refines the styling of existing blocks while a developer builds an integration.
-
-Don't give two people the same block, the global styles, or the same import script at the same time unless they agree how to coordinate.
-
-### Share Code in Small Steps {#share-code}
-
-1. Agree on a shared branch, such as `main` or a development branch. Each person switches their workspace to it with **Switch branch** in the [Code view](console.md#changes-actions).
-1. Keep each request to the agent focused on one block, template, or task. Push the result as soon as it works, with **Create new PR**: the console pushes your changes to a new branch, opens a pull request into the shared branch, and leaves your workspace on the new branch.
-1. Review and merge pull requests often. Small changes conflict less and are quicker to review, and a pull request that stays open for days collects conflicts.
-1. Before you start a new task, switch back to the shared branch with **Switch branch** and pull it with **Sync** > **Pull** > **Code**, so that you build on everyone's merged work.
-
-Pulling code requires a workspace without uncommitted files, so push or discard your changes first. If someone changed the same lines as you, the console cancels the pull and leaves your work as it was. See [If Someone Else Changed the Branch](getting-started.md#push-conflicts).
-
-### Coordinate Content Changes {#share-content}
-
-Content has no merge. Your workspace holds copies of the pages, and an upload replaces the page in the content destination with your copy. If two people change the same page, the last upload wins, and the other person's changes are lost. Give each page, or set of pages, to one person at a time.
-
-To get pages that others uploaded into your workspace:
-
-* Open a page that shows a cloud icon in the [content view](console.md#content-view). The console downloads it into your workspace.
-* In document-based projects, select **Sync** > **Pull** > **Content** to download every page from Experience Workspace. It replaces your local copies, including edits that you haven't uploaded, so upload the edits that you want to keep first.
-
-### Change Content Structure in the Import Scripts {#import-scripts}
-
-During a migration, the content comes from the source site, and the import scripts decide its structure. When you change how content is structured, such as which content becomes a block or how a page splits into sections, ask the agent to change the import script too, not only the imported pages. The import script is code, so the change is reviewed and merged like any other, and the next import applies it to every page of the template. This is also what lets the migration scale to many pages.
-
-An edit to a single page doesn't carry over. The agent tells you that such an edit is local, and importing the template again overwrites it.
-
-Once authors start editing the migrated pages in the content destination, their pages become the source of truth. Importing or uploading those pages again from a workspace overwrites the authors' work, so agree with the authors first.
-
 ## Choose Your Task {#choose-task}
 
 Each row links to a task guide with the steps and the checks that tell you when you are done. If your site already runs on Edge Delivery Services, [connect it](getting-started.md#existing-site), then start with restyling or block development; a migration is not required.
@@ -312,6 +268,52 @@ The agent has no memory of its own that carries over between conversations. What
 
 To make the agent remember a decision or convention, write it in a file in your Git repository. It currently uses Claude models, which load a file named `CLAUDE.md` from the repository root at the start of every conversation. In projects created from the AEM boilerplate, `CLAUDE.md` contains one line, `see @AGENTS.md`, which loads `AGENTS.md` as well. Your project instructions belong in `AGENTS.md`, and the agent reads other project files when `AGENTS.md` or your request points to them. The model is an implementation detail that can change, so don't write instructions that depend on it. See [Project Instructions and Memory](project-instructions.md).
 
+## Collaborating on a Project {#collaboration}
+
+Several people can work on the same project with the agent, each in their own [console workspace](#independent-workspace). They share code through Git and content through the content destination. The console has no features yet for coordinating them: it doesn't show who is working on what, and it doesn't merge two people's changes to the same page. Agree who works on what, and keep talking to each other.
+
+Scope matters more with an agent than without one. A single request can change many files, so when two people change the same blocks or styles at the same time, someone has to resolve conflicts across many files by hand.
+
+### Start with One Person, Then Divide the Work {#divide-work}
+
+The first steps of a project lay the foundation that everything else builds on: the global styles, the first blocks, and the import scripts of the first templates. Let one person set them up. Before you divide the work, check that the blocks fit representative content and are easy for authors to use. [David's Model](https://www.aem.live/docs/davidsmodel) explains what makes a good content model for Edge Delivery Services.
+
+Once the team agrees on the blocks, divide the work so that people change different files:
+
+* **By block:** One person refines the cards block while another builds a carousel.
+* **By template:** Each person refines the import script of a different template. See [How the Agent Migrates at Scale](#migration-at-scale).
+* **By expertise:** A designer refines the styling of existing blocks while a developer builds an integration.
+
+Don't give two people the same block, the global styles, or the same import script at the same time unless they agree how to coordinate.
+
+### Share Code in Small Steps {#share-code}
+
+1. Agree on a shared branch, such as `main` or a development branch. Each person switches their workspace to it with **Switch branch** in the [Code view](console.md#changes-actions).
+1. Keep each request to the agent focused on one block, template, or task. Push the result as soon as it works, with **Create new PR**: the console pushes your changes to a new branch, opens a pull request into the shared branch, and leaves your workspace on the new branch.
+1. Review and merge pull requests often. Small changes conflict less and are quicker to review, and a pull request that stays open for days collects conflicts.
+1. Before you start a new task, switch back to the shared branch with **Switch branch** and pull it with **Sync** > **Pull** > **Code**, so that you build on everyone's merged work.
+
+Pulling code requires a workspace without uncommitted files, so push or discard your changes first. If someone changed the same lines as you, the console cancels the pull and leaves your work as it was. See [If Someone Else Changed the Branch](getting-started.md#push-conflicts).
+
+Small, frequent pushes also give the team a readable history of what the agent changed and why. To get one commit per request, see [Leave a Record of Each Request](project-instructions.md#trace).
+
+### Coordinate Content Changes {#share-content}
+
+Content has no merge. Your workspace holds copies of the pages, and an upload replaces the page in the content destination with your copy. If two people change the same page, the last upload wins, and the other person's changes are lost. Give each page, or set of pages, to one person at a time.
+
+To get pages that others uploaded into your workspace:
+
+* Open a page that shows a cloud icon in the [content view](console.md#content-view). The console downloads it into your workspace.
+* In document-based projects, select **Sync** > **Pull** > **Content** to download every page from Experience Workspace. It replaces your local copies, including edits that you haven't uploaded, so upload the edits that you want to keep first.
+
+### Change Content Structure in the Import Scripts {#import-scripts}
+
+During a migration, the content comes from the source site, and the import scripts decide its structure. When you change how content is structured, such as which content becomes a block or how a page splits into sections, ask the agent to change the import script too, not only the imported pages. The import script is code, so the change is reviewed and merged like any other, and the next import applies it to every page of the template. This is also what lets the migration scale to many pages.
+
+An edit to a single page doesn't carry over. The agent tells you that such an edit is local, and importing the template again overwrites it.
+
+Once authors start editing the migrated pages in the content destination, their pages become the source of truth. Importing or uploading those pages again from a workspace overwrites the authors' work, so agree with the authors first.
+
 ## Migration and Site Creation Capabilities {#creation-migration}
 
 Skills are the agent's built-in workflows for specific kinds of tasks. You don't need to name them: describe the task, and the agent chooses the skill. The following capabilities are always available:
@@ -332,7 +334,7 @@ Optional add-ons extend these capabilities when a project needs them: Figma impo
 
 ## Figma-Based Migrations and Page Creation {#figma}
 
-In addition to live-site migrations, the agent can use Figma as a design source. It turns the design's colors, typography, spacing, and variables into the site's CSS custom properties, and its components into blocks or variants. Each person who uses Figma stores their own Figma personal access token in the console's [settings](console.md#settings-page). For what to approve, such as access, Figma seats, and the data sent to the AI model, see [Figma and Design Systems](evaluate.md#figma). Designers can start with [Make Visual Changes](visual-changes.md#figma).
+In addition to live-site migrations, the agent can use Figma as a design source. Through the Figma import add-on, it reads the design and turns its colors, typography, spacing, and variables into the site's CSS custom properties, and its components into blocks or variants. Each person who uses Figma stores their own Figma personal access token in the console's [settings](console.md#settings-page). For what to approve, such as access, Figma seats, and the data sent to the AI model, see [Figma and Design Systems](evaluate.md#figma). Designers can start with [Make Visual Changes](visual-changes.md#figma).
 
 ### Redesign Migration Using Figma-Derived Blocks {#figma-redesign}
 
@@ -403,7 +405,7 @@ The agent works without receiving the credentials that you configure, each user 
 
 ## Limitations {#limitations}
 
-Use only websites and designs that you are authorized to migrate. The selected workflow must be able to reach and read the source. If the site uses bot protection, arrange access with its administrator. See [source sites with bot protection](getting-started.md#bot-protection).
+Use only websites and designs that you are authorized to migrate. The selected workflow must be able to reach and read the source. If the site uses bot protection, arrange access with its administrator. See [source sites with bot protection](troubleshooting.md#bot-protection).
 
 * Pages that require sign-in or a secret header can be migrated when the source accepts a custom request header, HTTP Basic authentication, or bearer authentication. Configure the credentials in the console's [Protected Site Authentication](console.md#protected-site-authentication) settings, or in the authentication fields of Auto mode. Do not put secrets in chat. This is not intended for personally identifiable information (PII) or real end-user data.
 * Sources reachable only through a VPN or blocked by a firewall remain unsupported, even with valid credentials. So do sources that require another sign-in flow, such as an interactive single sign-on (SSO) form. Ask the site administrator for an internet-reachable staging or origin host that accepts a supported method.

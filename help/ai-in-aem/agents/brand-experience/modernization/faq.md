@@ -146,7 +146,7 @@ No. The agent loads each source page in a browser and works from what it renders
 
 ### What if the source site uses bot protection? {#bot-protection}
 
-Ask the site's administrator to allow access for the migration, for example by allowlisting the agent's backend addresses or by giving you a credential such as a secret header. Don't work around the protection. See [Source Sites with Bot Protection](getting-started.md#bot-protection).
+Ask the site's administrator to allow access for the migration, for example by allowlisting the agent's backend addresses or by giving you a credential such as a secret header. Don't work around the protection. See [Source Sites with Bot Protection](troubleshooting.md#bot-protection).
 
 ### Can the agent migrate pages that require sign-in? {#protected-pages}
 
@@ -172,11 +172,11 @@ AEM Code Sync lets Edge Delivery Services read your code to serve the site; ever
 
 ### Why can't I see my GitHub organization or repository? {#git-org-missing}
 
-The AEM Code Connector app is usually missing from the organization or the repository, or the organization hasn't approved it yet. With a token, the console lists only repositories that you can push to. See [Git Connection Problems](getting-started.md#git-connection).
+The AEM Code Connector app is usually missing from the organization or the repository, or the organization hasn't approved it yet. With a token, the console lists only repositories that you can push to. See [Git Connection Problems](troubleshooting.md#git-connection).
 
 ### Can the agent push to main or publish without my approval? {#approval}
 
-Only if you give the agent access. Without agent permissions, code and content leave the console workspace only when you push, upload, or publish them. With **Allow LLM to use my git credentials**, the agent can push to any branch that your credentials can write to, including `main`. With the Adobe credentials permission, the console stops the agent from uploading, previewing, or publishing unless your current message asks for it. These are safeguards, not approval gates. To require approval, protect `main` with branch protection and limit who has the site's publish role. See [Control over Changes](evaluate.md#security-control).
+Only if you give the agent access. Without agent permissions, code and content leave the console workspace only when you push, upload, or publish them. With **Allow LLM to use my git credentials**, the agent can push to any branch that your credentials can write to, including `main`. With the Adobe credentials permission, the console stops the agent from uploading, previewing, or publishing unless your current message asks for it or you agree when the agent asks. These are safeguards, not approval gates. To require approval, protect `main` with branch protection and limit who has the site's publish role. See [Control over Changes](evaluate.md#security-control).
 
 ### Why is Allow LLM to use my git credentials missing from Settings? {#git-credentials-missing}
 
@@ -184,11 +184,11 @@ The setting isn't available to you yet. The agent can still change code in the c
 
 ### Why does the console say that my Document Authoring session may have expired? {#session-expired}
 
-The console shows this message both when your session has expired and when your Adobe account doesn't have write access to the site's content. Sign in again and retry. If it persists, ask the site's administrator to give the account that you use in the console write access in Experience Workspace. See [Content Writes Fail](getting-started.md#write-errors).
+The console shows this message both when your session has expired and when your Adobe account doesn't have write access to the site's content. Sign in again and retry. If it persists, ask the site's administrator to give the account that you use in the console write access in Experience Workspace. See [Content Writes Fail](troubleshooting.md#write-errors).
 
 ### Why does a code push work while a content upload fails? {#different-accounts}
 
-They use different accounts. Code is pushed with your GitHub or Cloud Manager connection, and content is written with the Adobe account that you signed in with. Check that each account has access to its destination. See [Content Writes Fail](getting-started.md#write-errors).
+They use different accounts. Code is pushed with your GitHub or Cloud Manager connection, and content is written with the Adobe account that you signed in with. Check that each account has access to its destination. See [Content Writes Fail](troubleshooting.md#write-errors).
 
 ### Why does Create package say Missing site configuration? {#missing-site-configuration}
 
@@ -198,7 +198,7 @@ In an Experience Manager authoring project, the console couldn't find the projec
 
 ### Why doesn't the console preview match the live page? {#preview-mismatch}
 
-The console preview renders the console workspace's copy of the content with the workspace's code. The preview and live sites render the saved content with the code of the branch in their URL. Content that is not uploaded or not pulled, unpushed code, another branch, or a different viewport width can explain the difference. Edge Delivery Services also removes markup that the console preview keeps, such as inline styles, `span` elements, and data attributes. See [Console Preview Differs from the Site](getting-started.md#preview-differs) and [How the Preview Works](console.md#how-preview-works).
+The console preview renders the console workspace's copy of the content with the workspace's code. The preview and live sites render the saved content with the code of the branch in their URL. Content that is not uploaded or not pulled, unpushed code, another branch, or a different viewport width can explain the difference. Edge Delivery Services also removes markup that the console preview keeps, such as inline styles, `span` elements, and data attributes. See [Console Preview Differs from the Site](troubleshooting.md#preview-differs) and [How the Preview Works](console.md#how-preview-works).
 
 ### Does Refresh update the preview from Experience Workspace? {#refresh-preview}
 
@@ -212,11 +212,11 @@ Yes. On a phone, the chat page shows only the chat, so that you can follow a lon
 
 ### Why does the console take a while to open my workspace? {#environment-setup}
 
-When you first open the console, or after a reset, it sets up your console workspace, which can take up to 10 minutes. If all workspaces are in use, setup starts automatically as soon as one is available. See [Workspace Setup Takes Time or Fails](getting-started.md#workspace-setup).
+When you first open the console, or after a reset, it sets up your console workspace, which can take up to 10 minutes. If all workspaces are in use, setup starts automatically as soon as one is available. See [Workspace Setup Takes Time or Fails](troubleshooting.md#workspace-setup).
 
 ### What if my project seems to be missing? {#missing-project}
 
-Sign in with the same Adobe account and organization that you used before. Don't reset the workspace while you investigate, because a reset permanently deletes it. If the project is still missing, request support. See [Project Seems Missing](getting-started.md#missing-workspace).
+Sign in with the same Adobe account and organization that you used before. Don't reset the workspace while you investigate, because a reset permanently deletes it. If the project is still missing, request support. See [Project Seems Missing](troubleshooting.md#missing-workspace).
 
 ### What happens to my work if I reload the page or leave? {#reload}
 
@@ -232,11 +232,11 @@ The console workspace's chat history, files, and session state, and the GitHub c
 
 ### Why won't the agent delete pages when I ask in chat? {#delete-pages}
 
-A safeguard in the console stops the agent from deleting files in the project's content folder, so that migrated content isn't removed by mistake. Delete local pages yourself, one at a time, with **Delete** in a content view. Uploaded, previewed, or published pages must also be removed from Experience Workspace and the preview and live sites. See [Remove Pages](getting-started.md#remove-pages).
+A safeguard in the console stops the agent from deleting files in the project's content folder, so that migrated content isn't removed by mistake. Delete local pages yourself, one at a time, with **Delete** in a content view. Uploaded, previewed, or published pages must also be removed from Experience Workspace and the preview and live sites. See [Remove Pages](troubleshooting.md#remove-pages).
 
 ### What does Failed to send message mean? {#send-failed}
 
-The console couldn't deliver your prompt to the agent, and the message doesn't give the cause: it can be your network connection, an expired sign-in, or a temporary service problem. Send the prompt again, then reload the page if it still fails. If it persists, request support. See [Failed to Send Message](getting-started.md#send-failed).
+The console couldn't deliver your prompt to the agent, and the message doesn't give the cause: it can be your network connection, an expired sign-in, or a temporary service problem. Send the prompt again, then reload the page if it still fails. If it persists, request support. See [Failed to Send Message](troubleshooting.md#send-failed).
 
 ## Data and Security {#data-security}
 
@@ -251,6 +251,10 @@ Adobe does not use your conversations or other customer data to train or fine-tu
 ### What data reaches the AI model, and which systems does the agent connect to? {#data-flows}
 
 The Experience Modernization Agent sends your prompts, source page content, repository code, design references, and the generated content and code to the AI model. It connects to your Git repository, Experience Workspace or your author instance, the source site, and Figma when you use it. The AI agent doesn't receive the credentials that you configure. See [Security and Data Handling](evaluate.md#security).
+
+### Is there an audit log of what the agent did? {#audit-trail}
+
+Not in the console. Your Git history records every code change, including changes to the import scripts that define how content is imported. Experience Workspace and the author instance record content changes in their version history. To get one commit and one content upload per request, instruct the agent in `AGENTS.md` to commit and push to a working branch after each request, and to offer to upload the changed pages. See [Trace What the Agent Did](evaluate.md#audit-trail).
 
 ### Where can I find retention and compliance information? {#retention-compliance}
 

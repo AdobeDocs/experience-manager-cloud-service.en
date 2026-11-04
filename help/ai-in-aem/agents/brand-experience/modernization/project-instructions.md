@@ -154,6 +154,22 @@ You don't need to write these files by hand. Ask the agent to create and update 
 
 * **Push them with the code** so that your team and future conversations get the same instructions.
 
+## Leave a Record of Each Request {#trace}
+
+The console keeps no audit log of the agent's actions. Your Git history and the version history of your content are the record. See [Trace What the Agent Did](evaluate.md#audit-trail). To make that record easy to follow, add a standing rule to `AGENTS.md` so that each request leaves its own commit and content upload:
+
+```markdown
+## After Each Request
+
+- Commit your changes with a message that summarizes my request.
+- Push the commit to the `develop` branch. Never push to `main`.
+- If pages changed, list them and ask whether to upload them to Experience Workspace.
+```
+
+* **Pushing** needs **Allow LLM to use my git credentials**, or the Adobe credentials permission for repositories connected through Cloud Manager. See [Settings Page](console.md#settings-page). If the permission isn't available to you, push yourself with **Sync** > **Push** > **Code** after each request.
+* **Uploading** needs the Adobe credentials permission. The console lets the agent upload content only when your message asks for it or you agree when it asks, so the rule has the agent ask, and your answer approves the upload. For content on the author instance, upload the pages yourself.
+* **The working branch** keeps the agent's pushes away from the live site's code. A developer reviews the changes and merges them into `main` with a pull request, as described in [Broader Contribution, Same Production Control](overview.md#production-control).
+
 ## Start a New Conversation {#new-conversation}
 
 Because the agent loads `AGENTS.md` automatically, a new conversation starts with your project instructions, and it finds the other files through the index. Start a new conversation with **Clear chat** when a conversation has become long or has drifted from the task. Before you clear it, ask the agent to save what matters:

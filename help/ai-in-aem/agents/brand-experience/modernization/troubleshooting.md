@@ -1,0 +1,124 @@
+---
+title: Troubleshoot the Experience Modernization Agent
+description: Find and fix common problems with the Experience Modernization Agent, including imports and source access, missing changes, previews, content writes, Git connections, the console workspace, sending messages, and removing pages.
+feature: Edge Delivery Services, Agentic AI
+role: User, Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+  - id: f1710108-e0d1-47e5-9952-1888729a03da
+    internal-label: Agentic AI
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+---
+
+# Troubleshoot the Experience Modernization Agent {#troubleshooting}
+
+Find the symptom, then follow its section. Most problems come from access to the source site, from the accounts that write code and content to your Adobe Experience Manager Edge Delivery Services site, or from a difference between your console workspace and what is saved in Git and in your content source.
+
+|Symptom|Section|
+|---|---|
+|An import fails, or a captured page shows an error or a sign-in page.|[Import Fails](#import-fails)|
+|URLs are missing after discovery, or the source site returns HTTP 403, 429, or 503.|[Source Sites with Bot Protection](#bot-protection)|
+|A change that you made doesn't show up.|[A Change Is Missing](#missing-change)|
+|The console preview doesn't match the preview site.|[Console Preview Differs from the Site](#preview-differs)|
+|An upload, pull, or transfer fails.|[Content Writes Fail](#write-errors)|
+|The console doesn't list your repository, or can't push to it.|[Git Connection Problems](#git-connection)|
+|The console keeps preparing your workspace.|[Workspace Setup Takes Time or Fails](#workspace-setup)|
+|Your project is gone after you sign in.|[Project Seems Missing](#missing-workspace)|
+|**Failed to send message. Please try again.**|[Failed to Send Message](#send-failed)|
+|You need to remove imported pages.|[Remove Pages](#remove-pages)|
+
+Before you reset, discard, replace, or overwrite anything, preserve the affected work. Recover code through your repository workflow and restore content separately through the authoring system's available recovery process. A code revert alone does not undo remote document writes.
+
+## Import Fails {#import-fails}
+
+If import fails, retain the error and exact source URL. Check source reachability and permissions, correct the extraction or mapping, and retry one affected page before repeating a batch. Do not bypass source access controls. If pages require sign-in, or a capture shows a sign-in page instead of the content, set up [protected site authentication](console.md#protected-site-authentication). If the source site blocks automated access, see [Source Sites with Bot Protection](#bot-protection).
+
+## Source Sites with Bot Protection {#bot-protection}
+
+Bot protection in a content delivery network (CDN) or web application firewall (WAF) can block or challenge automated access to a source site. This can affect URL discovery, the site catalog, page capture, and import in any workflow, not only Auto mode. Typical signs are access-denied errors such as HTTP 403, 429, or 503, URLs missing after discovery, failed pages, or a challenge or verification page captured instead of the page content.
+
+Migrate only sites that you own or are authorized to migrate. Arrange access with the site's administrator rather than working around the protection:
+
+1. Ask the administrator to allow access for the migration period, for example by allowlisting the [backend addresses](getting-started.md#allowlist-ip-addresses) in the CDN or WAF.
+1. If the protection accepts a credential instead, such as a secret request header, enter it in the authentication controls offered by your workflow, such as [Protected site authentication](console.md#protected-site-authentication) in the console settings. Use a scoped credential and remove it when the migration is complete.
+1. If the administrator provides an accessible staging or origin host with the same content, use it as the source and record which host the content came from.
+1. If only discovery is blocked, provide the list of page URLs to migrate instead.
+
+Verify one representative page before you start a catalog or batch run. After access changes, retry the failed pages, and check captures for challenge or access-denied pages before you accept the content.
+
+## A Change Is Missing {#missing-change}
+
+If a change is missing, check each location separately: the console workspace, uploaded remote content, pushed code branch, and previewed page. Reimport can overwrite local content changes; save or reconcile author edits first. To compare the console preview with the preview site, see [Console Preview Differs from the Site](#preview-differs).
+
+## Console Preview Differs from the Site {#preview-differs}
+
+The console's preview panel renders the working copy in the console workspace with the workspace's current code. The preview and live sites render the saved content with the code of the branch in their URL. Differences usually have one of these causes:
+
+* **Content not uploaded:** Pages changed in the console are not yet in Experience Workspace. Upload them with **Sync** > **Push** > **Content**.
+* **Content edited elsewhere:** Pages changed in Experience Workspace are not yet in the console workspace. **Refresh** in the preview panel only reloads the rendering; to replace the console's copies with the saved documents, use **Sync** > **Pull** > **Content**. This overwrites local edits to those pages.
+* **Different code:** The code is not pushed, or the preview URL uses another branch. Push the code, and open the preview URL of the branch that has it.
+* **Different width:** The console preview fills the panel by default. Compare at the same width, using the [**Viewport** menu](console.md#content-view).
+* **Markup that the preview site removes:** The console preview shows the page's HTML as it is. When Edge Delivery Services previews an uploaded page, it keeps only sections, blocks, and default content, and removes inline styles, `span` elements, and data attributes. Ask the agent to move such styling into the project's CSS. See [How the Preview Works](console.md#how-preview-works).
+
+## Content Writes Fail {#write-errors}
+
+Code and content use different accounts. Code is pushed with your GitHub connection, or your Cloud Manager connection for other Git hosts. Content is written to Experience Workspace with the Adobe account that you signed in with. A code push can therefore succeed while a content upload fails, or the other way round.
+
+If an upload, pull, or transfer says that your Document Authoring session may have expired, sign in again and retry. The console shows the same message when the session is valid but your Adobe account doesn't have write access to the site's content. If it persists, ask the site's administrator to confirm that your account, with the email address and organization that you use in the console, can write to the site in Experience Workspace. Access to Experience Manager in Adobe Admin Console doesn't by itself grant write access to a site's content. If the console says that you are rate limited, wait a minute and retry.
+
+## Git Connection Problems {#git-connection}
+
+The console connects to GitHub through the AEM Code Connector app, or with a personal access token. Edge Delivery Services reads your code through a different app, AEM Code Sync.
+
+|Problem|What to do|
+|---|---|
+|Your organization or repository isn't listed.|Install the [AEM Code Connector](https://github.com/apps/aem-code-connector) app on the organization or account. If the app is installed for selected repositories only, add this one. If your organization requires approval for GitHub apps, ask an organization owner to approve it. With a token, the console lists only repositories that you can push to.|
+|**You don't have write access to** the repository.|Connecting needs push access. Ask a repository administrator for write access, or connect another repository.|
+|The console can't verify the preview URL.|Check that the URL follows the pattern `https://{branch}--{site}--{organization}.aem.page` and that the [AEM Code Sync](https://github.com/apps/aem-code-sync) app is installed in the repository.|
+|**Pushing is disabled until the AEM Code Connector app is installed**, or **AEM Code Connector required**.|The console can read the repository but can't write to it. Install the AEM Code Connector app on the repository. AEM Code Sync alone isn't enough: it lets Edge Delivery Services read your code, not the console change it.|
+|**Invalid or expired token**, or the token lacks user read access.|Create a new token. Use a classic token, or a fine-grained token that can read your user account and write to the repository's contents.|
+|**Allow LLM to use my git credentials** isn't in Settings.|The setting isn't available to you yet. The agent can still change code in the console workspace; push it yourself with **Sync** > **Push** > **Code**.|
+|**Push denied: you need the Deployment Manager role in Cloud Manager**.|For a repository connected through Cloud Manager, ask your administrator for the Deployment Manager role in Cloud Manager.|
+
+For conflicting changes and protected branches, see [Push Code Changes](getting-started.md#push-code-changes).
+
+## Workspace Setup Takes Time or Fails {#workspace-setup}
+
+When you first open the console, or after a reset, it prepares your console workspace. This can take up to 10 minutes. If all workspaces are in use, the console tells you so and starts setting yours up as soon as one is available; you don't need to retry. If setup fails, the console offers to retry. If it keeps failing, use the **Request support** link on the setup screen. If the console says that your account can't use it, contact your Adobe account team.
+
+## Project Seems Missing {#missing-workspace}
+
+Your console workspace belongs to the Adobe account and organization that you sign in with. If the console opens without your project, sign out, then sign in with the same account and organization that you used before. Don't reset the workspace while you investigate, because a reset permanently deletes its chat history and files. If the project is still missing, [request support](console.md#request-support) with the project name and preview URL. Code that you pushed and content that you uploaded stay in your Git repository and in Experience Workspace.
+
+## Failed to Send Message {#send-failed}
+
+**Failed to send message. Please try again.** means that the console couldn't deliver your prompt to the agent. The message doesn't give the cause, which can be your network connection, an expired sign-in, or a temporary service problem.
+
+1. Check your network connection and send the prompt again. The console doesn't retry automatically.
+1. If it fails again, copy your prompt, reload the page, and sign in if asked. Your chat history is kept.
+1. If it still fails after a few minutes, use **Request support** in [Settings](console.md#request-support), with the time of the failure and your project name.
+
+If the console instead says that it's at capacity, see [Workspace Setup Takes Time or Fails](#workspace-setup).
+
+## Remove Pages {#remove-pages}
+
+A safeguard in the console stops the agent from deleting files in the project's content folder, so that migrated content isn't removed by mistake. Asking the agent to delete pages therefore doesn't work; remove them yourself.
+
+To remove pages from the console workspace, select a page in a [content view](console.md#content-view) and use **Delete**. This deletes one page at a time; you can't delete a folder, and you can't undo it. If pages were imported to the wrong path, import them again to the correct path, check them, and then delete the copies at the wrong path.
+
+**Delete** removes only the console workspace copy. If the page exists in Experience Workspace, or has been previewed or published, it appears again in the content view with a cloud icon, and opening it downloads the saved version. To replace one page with its saved version, delete the local copy and open the page again. To remove an uploaded, previewed, or published page for good, also delete it in Experience Workspace or on the author instance, and unpublish or delete it from the preview and live sites with the [AEM Sidekick](https://www.aem.live/docs/sidekick#unpublishing-and-deleting-content).

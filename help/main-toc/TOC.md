@@ -1257,6 +1257,7 @@ user-guide-title: AEM as a Cloud Service
         + [Project Documentation Skill](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md)
         + [Site Catalog Skill](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
         + [AOE Delivery](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
+        + [Troubleshooting](/help/ai-in-aem/agents/brand-experience/modernization/troubleshooting.md)
         + [FAQ](/help/ai-in-aem/agents/brand-experience/modernization/faq.md)
     + Content Advisor Agent {#content-advisor}
       + [Overview](/help/ai-in-aem/agents/content-advisor/overview.md)

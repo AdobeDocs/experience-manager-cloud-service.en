@@ -105,10 +105,10 @@ The agent works in your console workspace, where you review its changes and the 
 | Step | Who can do it | What controls it |
 |---|---|---|
 | Push code to your Git repository | You, with **Sync** > **Push** > **Code**. The agent, only if you turn on **Allow LLM to use my git credentials** for GitHub, or the Adobe credentials permission for repositories connected through Cloud Manager. | Your repository's permissions and branch protection. The console doesn't check branch rules itself. |
-| Upload content | You, with **Upload content** or **Sync** > **Push** > **Content**. For Experience Workspace, also the agent, but only with the Adobe credentials permission and when your message asks for it. | Write access to the site's content in Experience Workspace, or on the author instance. |
+| Upload content | You, with **Upload content** or **Sync** > **Push** > **Content**. For Experience Workspace, also the agent, but only with the Adobe credentials permission and when your message asks for it or you agree when the agent asks. | Write access to the site's content in Experience Workspace, or on the author instance. |
 | Preview and publish | You, from the upload results dialog, Experience Workspace, or the AEM Sidekick. The agent, only with the Adobe credentials permission and when your message asks for it. | The site's author and publish roles on Edge Delivery Services, where [authentication for authors](https://www.aem.live/docs/authentication-setup-authoring) is set up. |
 
-* The console's own checks are safeguards, not approval gates. Optional plan mode lets you approve a plan before the agent starts. The console also stops the agent from uploading, previewing, or publishing when your current message doesn't ask for it, but it can't detect every way of making such a request. Neither check stops a person with access from pushing or publishing.
+* The console's own checks are safeguards, not approval gates. Optional plan mode lets you approve a plan before the agent starts. The console also stops the agent from uploading, previewing, or publishing unless your current message asks for it or you agree when the agent asks, but it can't detect every way of making such a request. Neither check stops a person with access from pushing or publishing.
 * With a Git permission, the agent can push to any branch that your credentials can write to, including `main`. A push to `main` changes the live site's code.
 * To require review, enforce it where the change lands. Protect `main` with [branch protection](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches) that requires a reviewed pull request, push with **Create new PR**, and limit who can publish with the site's [publish role](https://www.aem.live/docs/authentication-setup-authoring). Turn on agent permissions only when a task needs them.
 * Treat source pages and design files as untrusted input. They can contain text that attempts to steer the agent. Review the changes before you push, preview, or publish them.
@@ -131,6 +131,20 @@ Every change reaches your site through systems that already have review controls
 1. **Acceptance:** Agree the acceptance criteria before the migration starts, covering coverage, authoring, function, accessibility, performance, and search. A page that looks like its source isn't accepted until authors can edit it and it works. See [Accept the Result](production-migration.md#acceptance).
 
 Optional plan mode lets a user approve the agent's plan before it changes files. It helps each person work carefully, but your organization's approval happens in the controls above.
+
+### Trace What the Agent Did {#audit-trail}
+
+The console keeps no separate audit log of the agent's actions. The record is kept where the work lands:
+
+* **Code is the primary record.** Blocks, styles, and import scripts are all code, and the import scripts define how the content of every imported page is structured. Your Git history records each change to them.
+* **Content changes are recorded with the content.** Experience Workspace keeps a version history of each document, and the author instance keeps its own page versions.
+
+The record is easiest to follow when each request to the agent ends in its own commit and, where pages changed, its own content upload. Ask for this in the project's `AGENTS.md`. See [Leave a Record of Each Request](project-instructions.md#trace).
+
+* **Commit and push after each request.** With the matching [agent permission](console.md#settings-page) turned on, the agent pushes on its own. Have it push to a working branch rather than to `main`, so that its changes still reach production through a reviewed pull request.
+* **Offer the content upload.** The agent uploads content only when your message asks for it or you agree when it asks. Have it list the changed pages at the end of each request and ask whether to upload them, so that one answer approves the upload. For content on the author instance, people upload the pages themselves.
+
+Each request then leaves one commit and one upload: a step-by-step record of what the agent changed, which reviewers read in tools that they already use. Work that is never pushed or uploaded leaves no record outside the console workspace.
 
 ## Team and Phases {#team-model}
 
@@ -157,15 +171,15 @@ Before the migration, decide where content is stored and which editor authors us
 
 ## Figma and Design Systems {#figma}
 
-Figma can be the source of a new design. The agent reads a Figma file the way a developer reads a design handoff, and turns it into code:
+Figma can be the source of a new design. The agent reads a Figma file the way a developer reads a design handoff, and turns it into code. It reaches Figma through the Figma import add-on, which gives it a Model Context Protocol (MCP) server that reads files through Figma's API:
 
-* **Variables and styles become design tokens.** The agent reads the colors, typography, spacing, and variables of the selected design, and writes them as CSS custom properties in the project's global styles. These properties are the site's design tokens. They live in the code, not in a separate token export, so designers and developers review them like any other change.
+* **Variables and styles become design tokens.** Through the MCP server, the agent reads the variables and styles of the selected design, such as colors, typography, and spacing, and uses them to reproduce the design accurately. It writes them as CSS custom properties in the project's global styles. These properties are the site's design tokens. They live in the code, not in a separate token export, so designers and developers review them like any other change.
 * **Components become blocks or variants.** From a Figma link, the agent builds one block or component at a time, and maps it to an existing block where one fits, often as a variant. See [Figma Block Migration](prompting-guide.md#figma-block-migration).
 * **Figma and a live site work together.** In a [redesign migration](overview.md#figma-redesign), the Figma components define the blocks and the live site provides the content. To [create a page](overview.md#figma-new-page) that the source site lacks, a Figma frame provides both the design and the content.
 
 What to approve:
 
-* **Access:** Each person who uses Figma with the agent creates a Figma personal access token with read-only scopes and stores it in the console's [settings](console.md#settings-page). There is no organization-wide Figma connection. A personal access token can't be limited to specific files: it reads every file that its owner can open. The agent never receives the token itself.
+* **Access:** Each person who uses Figma with the agent creates a Figma personal access token with read-only scopes and stores it in the console's [settings](console.md#settings-page). This access token is a Figma credential, unrelated to the design tokens above: Figma issues and governs it, including its scopes and the limits below. There is no organization-wide Figma connection. A personal access token can't be limited to specific files: it reads every file that its owner can open. The token is added to the MCP server's requests to Figma, and the agent never receives it.
 * **Seats and rate limits:** Figma limits how often a token can read files, based on the token owner's seat and the plan that owns the file. With a View or Collab seat, a token can read files through Figma's API only a few times a month, so people who use Figma with the agent need a Dev or Full seat. See Figma's [rate limits](https://developers.figma.com/docs/rest-api/rate-limits/).
 * **Data:** For the selected frame or component, the agent sends its structure, a screenshot, its variables, and its text to the AI model. See [What the AI Model Processes](#security-model-data).
 * **Who does the work:** Designers can direct it themselves. See [Make Visual Changes](visual-changes.md#figma).

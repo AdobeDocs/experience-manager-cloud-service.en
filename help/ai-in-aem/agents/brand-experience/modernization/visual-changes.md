@@ -83,7 +83,7 @@ The agent doesn't remember brand rules between conversations. Once a rule is set
 
 ## Work from a Figma Design {#figma}
 
-The agent can read a design from Figma. It turns the design's colors, typography, spacing, and variables into the site's design tokens, and its components into blocks or block variants.
+The agent can read a design from Figma through the Figma import add-on. It turns the design's colors, typography, spacing, and variables into the site's design tokens, and its components into blocks or block variants.
 
 1. In Figma, [create a personal access token](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens) with the read-only scopes listed in the console's [**Credentials** settings](console.md#settings-page).
 1. In the console, open **Settings**, enter the token under **Credentials**, and select **Save**. A new token can take a couple of minutes to take effect.
@@ -93,7 +93,7 @@ The agent can read a design from Figma. It turns the design's colors, typography
 Things to know:
 
 * **One component or frame at a time.** The agent builds one block from a component, or one page from a frame. Check each result before you send the next link. See [Figma Block Migration](prompting-guide.md#figma-block-migration) and [Create a New Page from Figma](prompting-guide.md#figma-new-page-from-figma).
-* **Your token, your files.** The token reads every Figma file that you can open, and nothing else. Each person stores their own token; the agent never receives it.
+* **Your token, your files.** The personal access token reads every Figma file that you can open, and nothing else. Figma issues it and sets its limits. Each person stores their own token; the agent never receives it. It has nothing to do with design tokens, the colors and spacing that the agent reads from the design.
 * **Your Figma seat.** Figma limits how often a token can read files. With a View or Collab seat, a token can read files only a few times a month, so you need a Dev or Full seat. If the console reports a Figma API error with status 429, the token has reached Figma's limit. See Figma's [rate limits](https://developers.figma.com/docs/rest-api/rate-limits/).
 * **The add-on.** Figma import is an [optional capability](console.md#optional-capabilities). If it isn't on for your project, the agent offers to turn it on.
 * **Design tokens.** Compare the new tokens with the existing ones. Where a Figma value only differs slightly from an existing token, decide which one to keep rather than keep both.
@@ -116,7 +116,7 @@ When a change should apply to some pages only, ask for one of these instead:
 * Check other pages that use the same block, style, or template, not only the page that you worked on.
 * Check how the design handles real content: long headings, short ones, missing images, and lists with many items.
 * Check that text stays readable against its background. You can ask the agent: "Check the color contrast of text in the teaser block against WCAG AA."
-* After you push, open the preview URLs listed in the pull request and check the pages there. See [Console Preview Differs from the Site](getting-started.md#preview-differs).
+* After you push, open the preview URLs listed in the pull request and check the pages there. See [Console Preview Differs from the Site](troubleshooting.md#preview-differs).
 
 ## Hand Over for Review {#hand-over}
 
