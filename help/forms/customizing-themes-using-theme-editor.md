@@ -16,9 +16,9 @@ role_v2:
 # Customizing Form Themes {#customizing-form-themes}
 
 | Version | Article link |
-| -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html)                  |
-| AEM as a Cloud Service     | This article        |
+| --- | --- |
+| AEM 6.5 | [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
+| AEM as a Cloud Service | This article |
 
 The Theme Editor in Adobe Experience Manager (AEM) Forms is a visual interface that lets you create and customize themes for your Adaptive Forms without writing code manually. A theme defines the look and feel of form components and panels, including background colors, font styles, borders, dimensions, and spacing. When you apply a theme, the specified styles reflect on the corresponding components, and you can reuse the same theme across multiple Adaptive Forms.
 
@@ -86,6 +86,17 @@ You can export a theme as a package (ZIP file) to reuse in another AEM Forms env
 
 You can upload this ZIP later using [Upload a theme](#upload-a-theme) in the same or another environment.
 
+### Manage theme properties {#manage-theme-properties}
+
+Use the theme properties to update its title and description without changing its styles.
+
+1. In the **Themes** directory, select the theme.
+1. Click **[!UICONTROL Properties]**.
+1. On the **[!UICONTROL Basic]** tab, edit the **[!UICONTROL Title]** or **[!UICONTROL Description]**.
+1. Click **[!UICONTROL Save & Close]**.
+
+Reopen **[!UICONTROL Properties]** to review the saved values. The **[!UICONTROL Basic]** tab also displays metadata such as **[!UICONTROL Type]**, **[!UICONTROL Created]**, **[!UICONTROL Last Modification Date]**, and **[!UICONTROL Author Name]**. Saving the properties updates the last modification date.
+
 ## Understand the Theme Editor interface {#understand-the-theme-editor}
 
 When you open a theme in the Theme Editor, you see two main areas:
@@ -129,13 +140,23 @@ Toggle these on or off as you adjust styles for each state. For more on styling 
 ### Style a Component
 
 You can select a component to style in two ways:
-* **From the Canvas**: Click directly on a component in the form (for example, a text field, button, or drop-down). The selected element is highlighted with a border, and a component label (for example, "Text Input Widget") appears above it. The styling options for that component appear in the sidebar.
+* **From the Canvas**: Click directly on a component in the form, such as a text input. A floating component toolbar appears. Click **[!UICONTROL Text Input Widget]** in that toolbar to open its styling properties in the sidebar. Selecting an element on the canvas does not necessarily open its properties immediately.
 
    ![Edit theme from canvas](/help/forms/assets/custom-theme-field-level.png)
 
-* **From the Selectors panel**: Use the tree structure in the left sidebar to drill down into specific components. For example, expand **[!UICONTROL Field]** > **[!UICONTROL Widget]** > **[!UICONTROL Text Input]** to target the textbox widget specifically.
+* **From the Selectors panel**: Use the tree structure in the left sidebar to drill down into specific components. For example, expand **[!UICONTROL Field]** > **[!UICONTROL Widget]** > **[!UICONTROL Text Input]** and use its edit control to open the text input widget properties.
 
    ![Edit Theme from the Selector panel](/help/forms/assets/custom-theme-selector.png)
+
+#### Select related components and search selectors {#select-related-components-and-search-selectors}
+
+The floating component toolbar lets you change the scope of the styles you edit:
+
+* **[!UICONTROL Text Input Widget]** opens the properties for text input widgets.
+* **[!UICONTROL Field Widget]** opens the properties for the generic field widget.
+* The parent selection action moves the selection from the inner input to **[!UICONTROL Field]**. Click **[!UICONTROL Field]** in the toolbar to open its properties. Use this scope to style the field wrapper rather than the input interior.
+
+To find a selector in the sidebar, enter its title in the search field with the placeholder **[!UICONTROL Enter title to find form object(s)]**. For example, search for `Text Input`. The tree expands matching paths and highlights the results; it does not replace the tree with a list containing only matches.
 
 #### Apply styles to a component {#apply-styles-to-a-component}
 
@@ -150,58 +171,111 @@ Once a component is selected, the sidebar displays the available styling propert
 To apply a style:
 
 1. Select the component from the canvas or the Selectors panel.
-1. Set the desired visual properties in the sidebar. For example, choose a **[!UICONTROL Background Color]** and adjust the **[!UICONTROL Font Color]**.
+1. In **[!UICONTROL State]**, select **[!UICONTROL Default]**.
+1. Set the desired visual properties in the sidebar. For example, for a business contact form, select **[!UICONTROL Text Input Widget]** and set **[!UICONTROL Font Color]** to `#1E293B` for dark slate text.
 1. Click the checkmark icon **[!UICONTROL OK]** to confirm the property change.
 
-   ![Applying style](/help/forms/assets/custom-theme-applying-style.png)
+Use **[!UICONTROL View CSS]** in the sidebar to inspect the CSS for the selected component. For example, the saved text input font color generates:
 
-<!--
+```css
+.cmp-adaptiveform-textinput__widget {
+  color: #1E293B;
+}
+```
+
 #### Style by component state {#style-by-state}
 
-Components can have different visual states (for example, default, focus, hover, disabled, error, success). You can style each state separately so the form looks correct during user interaction and validation.
+Use the **[!UICONTROL State]** dropdown to edit styles for a particular component state. The available choices depend on the selected component. For **[!UICONTROL Text Input Widget]**, **[!UICONTROL Field Widget]**, and **[!UICONTROL Field]**, the menu includes **[!UICONTROL Default]**, **[!UICONTROL Focus]**, **[!UICONTROL Hover]**, **[!UICONTROL Disabled]**, and **[!UICONTROL Mandatory]**.
 
-1. Select the component from the canvas or the Selectors panel.
-1. In the sidebar, use the **[!UICONTROL State]** dropdown to choose the state you want to style (for example, **[!UICONTROL Default]**, **[!UICONTROL Focus]**, **[!UICONTROL Hover]**, **[!UICONTROL Disabled]**, **[!UICONTROL Error]**, or **[!UICONTROL Success]**).
-1. Set the styling properties (Background, Border, Text, and so on) for that state.
+For example, save a blue focus border separately from the default text color. First, configure the default border width and style as described in [Component-level styling](#component-level-styling).
+
+1. Open the **[!UICONTROL Text Input Widget]** properties.
+1. In **[!UICONTROL State]**, select **[!UICONTROL Focus]**.
+1. Under **[!UICONTROL Border]**, set the border color to `#1D4ED8`.
 1. Click **[!UICONTROL OK]** to confirm.
+1. Switch to **[!UICONTROL Preview]** in the Theme Editor toolbar.
+1. Click inside a text input, such as **Full name**, to give it focus. Its border changes to `#1D4ED8`. Click outside the input to compare its default appearance.
 
-   ![State dropdown in sidebar for styling Default, Focus, Error, Success, and other states](/help/forms/assets/custom-theme-state-dropdown.png)
+   ![Theme Editor Preview with a blue focus border on Full name and a slate default border on Company](/help/forms/assets/theme-editor-text-input-preview-focus.png)
 
-The styles you define apply only when the component is in the selected state. For example, if you set a red border and red background for the **[!UICONTROL Error]** state, the field shows that styling when validation fails. If your environment supports it, use **Simulate Error** or **Simulate Success** at the bottom of the sidebar to preview how the component looks in those states without submitting the form.
--->
+This checks the focus appearance in the Theme Editor preview form; it does not assign the theme to an Adaptive Form.
+
+The focus border color is stored separately from properties saved for **[!UICONTROL Default]**. The generated CSS uses the `:focus` pseudo-class:
+
+```css
+.cmp-adaptiveform-textinput__widget:focus {
+  border-color: #1D4ED8;
+}
+```
 
 ### Form-level styling {#form-level-styling}
 
-Form-level styling applies a style broadly to all components of the same type. For example, if you select **[!UICONTROL Field]** in the **Selectors** panel and set a background color to blue, every field in the form (text boxes, numeric boxes, date pickers, and drop-downs) inherits that blue background.
+Use a generic selector to style shared elements across field types. For example, **[!UICONTROL Field]** targets the field wrapper, not the inner text input.
 
-**Example:** To set a uniform background color on all fields in the form:
+**Example:** Add a light background to the field wrappers in a business contact form:
 
-1. In the **Selectors** panel, select **[!UICONTROL Field]**.
-1. In the sidebar, set the **[!UICONTROL Background Color]** to blue.
+1. In the **Selectors** panel, open the **[!UICONTROL Field]** properties.
+1. In **[!UICONTROL State]**, select **[!UICONTROL Default]**.
+1. Set **[!UICONTROL Background Color]** to `#F8FAFC`.
 1. Click **[!UICONTROL OK]**.
 
-   ![Form Level Styling](/help/forms/assets/custom-theme-form-level-styling.png)
-
-All field components in the form now display a blue background.
+The light background applies to the wrappers around fields such as **Full name** and **Company**. It does not set the background color of the input interior.
 
 ### Component-level styling {#component-level-styling}
 
-Component-level styling targets a specific component type, overriding any broader form-level style. For example, if you want only the Textbox widget to have a different background color while all other fields remain blue, you target the textbox widget specifically.
+Component-level styling targets a specific component type. Selecting **[!UICONTROL Text Input]** styles text input widgets such as **Full name** and **Company**, not just the individual field you clicked in the preview.
 
-**Example:** To set a green background and purple font on only the textbox widget:
+**Example:** Give text inputs a light background, a consistent border, and readable text:
 
-1. In the Selectors panel, expand **[!UICONTROL Field]** > **[!UICONTROL Widget]** > **[!UICONTROL Text Input]**.
-1. Set the **[!UICONTROL Font Color]** to purple.
-   ![Field level Styling](/help/forms/assets/custom-theme-field-level-styling1.png)
-1. Set the **[!UICONTROL Background Color]** to green.
-   ![Field level Styling](/help/forms/assets/custom-theme-field-level-styling2.png)
+1. In the **Selectors** panel, expand **[!UICONTROL Field]** > **[!UICONTROL Widget]** > **[!UICONTROL Text Input]** and open its properties.
+1. In **[!UICONTROL State]**, select **[!UICONTROL Default]**.
+1. Set **[!UICONTROL Font Color]** to `#1E293B`.
+1. Under **[!UICONTROL Background]**, set **[!UICONTROL Background Color]** to `#F8FAFC`.
+
+   ![Text Input Widget Default properties with background color set to #F8FAFC](/help/forms/assets/theme-editor-text-input-default-background.png)
+
+1. Under **[!UICONTROL Border]**, set a width of `1px`, a solid style, a color of `#64748B`, and a radius of `0.25rem`.
+
+   ![Text Input Widget Default border properties with a 1px solid #64748B border and 0.25rem radius](/help/forms/assets/theme-editor-text-input-default-border.png)
+
 1. Click **[!UICONTROL OK]**.
 
-The Textbox widget now displays a green background with purple text, while all other fields remain blue from the form-level style.
+These settings style the inner text input widgets, including their background. The field wrappers are styled separately, as described in [Form-level styling](#form-level-styling).
+
+Switch to **[!UICONTROL Preview]** to inspect the saved text input appearance without the styling sidebar or selection overlays.
+
+![Theme Editor Preview showing Full name and Company text inputs with dark slate text, light backgrounds, and slate borders](/help/forms/assets/theme-editor-text-input-preview-default.png)
 
 >[!NOTE]
 >
-> **Component-level styling always takes priority over form-level styling.** When a style is defined at both levels, the more specific component-level selector overrides the broader form-level selector. This follows standard [CSS specificity rules](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity). For example, if you set a blue background on all Fields (form-level) and a green background on the textbox widget (component-level), the textbox displays a green background.
+> A field wrapper and its input widget are different elements. Styling one does not necessarily override the other. When multiple CSS rules target the same element and property, the CSS cascade and [specificity rules](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) determine the result.
+
+### Mask and restore styles {#mask-and-restore-styles}
+
+Mask a property to stop applying its theme value without deleting the saved value. For example, you can temporarily mask the text input font color and restore it later.
+
+The resulting color depends on the other applicable styles; masking does not set a particular replacement color.
+
+1. In **[!UICONTROL Edit]** mode, open the **[!UICONTROL Text Input Widget]** properties and select **[!UICONTROL Default]**.
+1. Expand **[!UICONTROL Text]** and click the eye icon beside **[!UICONTROL Font Color]**.
+1. Click **[!UICONTROL OK]** to save the masked property.
+1. Switch to **[!UICONTROL Preview]** to check that the masked theme color no longer applies.
+1. Return to **[!UICONTROL Edit]** and reopen the same property.
+1. Click the eye icon again to restore the saved font color.
+1. Click **[!UICONTROL OK]** to save the restored property.
+1. Switch to **[!UICONTROL Preview]** to check the restored appearance.
+
+For example, masking a saved font color of `#1E293B` preserves that value. Restoring the property applies `#1E293B` again without requiring you to enter it again.
+
+### Save and discard changes {#save-and-discard-changes}
+
+Changes appear in the canvas while you edit. Use the checkmark **[!UICONTROL OK]** to save the property changes. Use **[!UICONTROL Cancel]** (the x icon at the top of the properties) to discard unsaved changes and retain the previously saved values.
+
+If **[!UICONTROL Cancel or Save your changes to proceed]** appears when you change the selected component or switch to **[!UICONTROL Preview]**, save or discard the current property edits before proceeding.
+
+For example, if the saved font color is `#1E293B`, changing it to `#0F766E` and clicking **[!UICONTROL Cancel]** leaves the saved color as `#1E293B`.
+
+Correct invalid property values before saving. For example, entering `banana` as a font size displays a warning and **[!UICONTROL Resolve validation error to proceed]**. Confirming with the checkmark does not save that invalid value or replace the previously saved font size. Enter a valid CSS size, such as `1rem`, or cancel the change.
 
 ## Styling for different screen sizes {#styling-for-different-screen-sizes}
 
@@ -228,28 +302,9 @@ For a complete CSS property reference, see the [MDN Web Docs CSS reference](http
 
 ### Add CSS pseudo-elements {#add-css-pseudo-elements}
 
-The **[!UICONTROL Advanced]** section also supports CSS pseudo-elements such as `::before` and `::after`. These let you inject content or decorative styling around a component without modifying the form structure. For example, to add a visual indicator before a textbox component:
+The **[!UICONTROL Advanced]** section includes styling fields for CSS pseudo-elements such as `::before` and `::after`. Use these to decorate content already generated by the component's CSS. For example, `color: #64748B;` can color existing pseudo-element text, but a color declaration alone does not generate content or create a visible indicator.
 
-1. Select the component (for example, `CMP Textbox`).
-1. Expand the **[!UICONTROL Advanced]** section.
-1. In the `::before` pseudo-element fields, add CSS properties such as:
-
-   ```css
-   color: #B10DC9;
-   ```
-
-   ![Before CSS](/help/forms/assets/custom-theme-before-css.png)
-
-1. In the `::after` pseudo-element fields, add CSS properties such as:
-
-   ```css
-   color: #006400;
-   ```
-
-    ![After CSS](/help/forms/assets/custom-theme-after-css.png)
-
-
-These pseudo-elements follow standard CSS behavior. For a full reference, see [MDN CSS Pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements).
+The `::before` and `::after` pseudo-elements normally require a `content` declaration to generate content. They also depend on the target element: do not assume that they can display directly on an `<input>` element. For a full reference, see [MDN CSS Pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements).
 
 ## Best practices {#best-practices}
 
