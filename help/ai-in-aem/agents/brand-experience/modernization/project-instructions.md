@@ -156,7 +156,7 @@ You don't need to write these files by hand. Ask the agent to create and update 
 
 ## Leave a Record of Each Request {#trace}
 
-The console keeps no audit log of the agent's actions. Your Git history and the version history of your content are the record. See [Trace What the Agent Did](evaluate.md#audit-trail). To make that record easy to follow, add a standing rule to `AGENTS.md` so that each request leaves its own commit and content upload:
+The console keeps no audit log of the agent's actions. What the agent produces reaches your site through your Git repository or Adobe Experience Manager, so your Git history and the version history of your content are the record. See [Trace What the Agent Did](evaluate.md#audit-trail). To make that record easy to follow, add a standing rule to `AGENTS.md` so that each request leaves its own commit and content upload:
 
 ```markdown
 ## After Each Request
@@ -175,6 +175,8 @@ The console keeps no audit log of the agent's actions. Your Git history and the 
 Because the agent loads `AGENTS.md` automatically, a new conversation starts with your project instructions, and it finds the other files through the index. Start a new conversation with **Clear chat** when a conversation has become long or has drifted from the task. Before you clear it, ask the agent to save what matters:
 
 > Before I clear the chat, record the decisions and conventions that we agreed in this conversation in the project files, and list what you changed.
+
+Clearing removes the earlier messages and can't be undone. To keep the conversation, select **Download chat** first.
 
 For a full handover to another person or team, see [Retain Context for People and Agents](project-documentation.md#portable-handoff).
 

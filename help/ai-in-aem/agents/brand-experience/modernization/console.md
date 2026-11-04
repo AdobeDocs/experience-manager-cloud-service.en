@@ -109,8 +109,8 @@ The chat panel allows you to view and continue your conversation with the agent.
 The chat panel header includes links for navigating to the [Home](#home-page) and [Settings](#settings-page) views and chat actions.
 
 * **Chat actions**
-  * **Clear chat**: This starts a new conversation without the earlier history. It is not a code or content rollback. Before clearing, ask the agent to record important decisions in the [project instruction files](project-instructions.md) that it reads in every conversation.
-  * **Download chat**: This downloads the conversation history as a markdown file.
+  * **Clear chat**: This removes all messages and starts a new conversation. It can't be undone, and it is not a code or content rollback. Before clearing, ask the agent to record important decisions in the [project instruction files](project-instructions.md) that it reads in every conversation, and download the chat if you want to keep it.
+  * **Download chat**: This downloads the conversation history as a Markdown file, which you can keep as a record of what was asked. See [Trace What the Agent Did](evaluate.md#audit-trail).
 
 The conversation is saved with your console workspace. When you reload the page or return later, the chat history reloads. Prompts that you recall with the arrow keys last only as long as the browser tab.
 

@@ -254,7 +254,7 @@ The Experience Modernization Agent sends your prompts, source page content, repo
 
 ### Is there an audit log of what the agent did? {#audit-trail}
 
-Not in the console. Your Git history records every code change, including changes to the import scripts that define how content is imported. Experience Workspace and the author instance record content changes in their version history. To get one commit and one content upload per request, instruct the agent in `AGENTS.md` to commit and push to a working branch after each request, and to offer to upload the changed pages. See [Trace What the Agent Did](evaluate.md#audit-trail).
+Not as a separate log in the console, but the agent's work is recorded. What it produces reaches your site only through Git or Experience Manager. Your Git history records every code change, including changes to the import scripts that define how content is imported. Experience Workspace and the author instance record content changes in their version history. To keep the conversation itself, select **Download chat** before you clear the chat; **Clear chat** can't be undone. To get one commit and one content upload per request, instruct the agent in `AGENTS.md` to commit and push to a working branch after each request, and to offer to upload the changed pages. See [Trace What the Agent Did](evaluate.md#audit-trail).
 
 ### Where can I find retention and compliance information? {#retention-compliance}
 

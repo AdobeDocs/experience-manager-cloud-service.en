@@ -134,17 +134,18 @@ Optional plan mode lets a user approve the agent's plan before it changes files.
 
 ### Trace What the Agent Did {#audit-trail}
 
-The console keeps no separate audit log of the agent's actions. The record is kept where the work lands:
+The console keeps no separate audit log, but the agent's work doesn't go unrecorded. What the agent produces reaches your site only through your Git repository or through Experience Manager, and both keep a history:
 
 * **Code is the primary record.** Blocks, styles, and import scripts are all code, and the import scripts define how the content of every imported page is structured. Your Git history records each change to them.
 * **Content changes are recorded with the content.** Experience Workspace keeps a version history of each document, and the author instance keeps its own page versions.
+* **The conversation shows what was asked.** **Download chat** saves the conversation as a Markdown file. Download it before you select **Clear chat**, which removes the messages and can't be undone. See [Chat Panel](console.md#chat-panel).
 
 The record is easiest to follow when each request to the agent ends in its own commit and, where pages changed, its own content upload. Ask for this in the project's `AGENTS.md`. See [Leave a Record of Each Request](project-instructions.md#trace).
 
 * **Commit and push after each request.** With the matching [agent permission](console.md#settings-page) turned on, the agent pushes on its own. Have it push to a working branch rather than to `main`, so that its changes still reach production through a reviewed pull request.
 * **Offer the content upload.** The agent uploads content only when your message asks for it or you agree when it asks. Have it list the changed pages at the end of each request and ask whether to upload them, so that one answer approves the upload. For content on the author instance, people upload the pages themselves.
 
-Each request then leaves one commit and one upload: a step-by-step record of what the agent changed, which reviewers read in tools that they already use. Work that is never pushed or uploaded leaves no record outside the console workspace.
+Each request then leaves one commit and one upload: a step-by-step record of what the agent changed, which reviewers read in tools that they already use. Work that is never pushed or uploaded stays in the console workspace and doesn't reach your site.
 
 ## Team and Phases {#team-model}
 
