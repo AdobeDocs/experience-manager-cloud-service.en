@@ -27,7 +27,7 @@ role_v2:
 
 # Site Catalog Skill {#site-catalog-skill}
 
-Use the site catalog skill of the Experience Modernization Agent (EMA) to analyze an authorized source website and prepare a migration to Edge Delivery Services (EDS). Use the catalog to select representative pages and review coverage, not as proof that the site has already migrated.
+Use the site catalog skill of the Experience Modernization Agent to analyze an authorized source website and prepare a migration to Edge Delivery Services. Use the catalog to select representative pages and review coverage, not as proof that the site has already migrated.
 
 ## Overview {#overview}
 
@@ -210,7 +210,7 @@ When planning finishes, the agent offers to **Review scoping results**. Use it a
 
 1. Choose **Review each step** to answer the agent's questions, or **Autopilot** to let it decide.
 1. The agent first fixes issues that have only one sensible answer and tells you what it changed. For example, it moves outliers to the variant where they fit, turns lone links and buttons into page text, combines look-alike variants, and fixes invalid names.
-1. It then asks you about the remaining items one at a time, starting with clear mistakes. Each question shows the screenshots and the agent's suggestion, and you answer with one click. Ask why if you want its reasoning.
+1. It then asks you about the remaining items one at a time, starting with clear mistakes. Each question shows the screenshots and the agent's suggestion, and you answer in one step. Ask why if you want its reasoning.
 1. Select **Finish for me** on any step to let the agent complete the rest of the review without more questions.
 1. The review ends with a short report of what changed and what to check in the plan. Items the agent is still unsure about are left unchanged and flagged. Select **Review remaining items** to continue with them, or **Start site migration** when the catalog is ready.
 
@@ -235,7 +235,7 @@ The following actions are available.
 
 Some actions are only offered when they apply. For example, **Generate block code** and **Rename block** are only available for blocks whose type has been classified, and **Give this variant its own block** is only available for variants that have a variant class.
 
-In action labels such as **Migrate page to AEM** and **Migrate template to AEM**, *AEM* refers to the EDS project connected to the console. The imported content stays in the console workspace until it is uploaded to the project's authoring destination: Experience Workspace for document-based projects, or the AEM author instance for AEM authoring.
+In action labels such as **Migrate page to AEM** and **Migrate template to AEM**, *AEM* refers to the project connected to the console. The imported content stays in the console workspace until it is uploaded to the project's authoring destination: Experience Workspace for document-based projects, or the author instance for Experience Manager authoring.
 
 Grouping and naming corrections update catalog metadata and block-library organization; they do not retroactively repair already imported pages. **Generate block code** changes code, while migration actions start content-generation workflows. Review their output separately. Catalog structural refactoring is not the same as [refactoring block code](block-development.md#refactor).
 
@@ -273,7 +273,7 @@ The folder also contains intermediate files, including per-page analysis and scr
 
 The site catalog skill has the following limitations.
 
-* **Source access** — The catalog workflow must be able to reach and read the authorized source. For pages that require sign-in or a secret header, configure [protected site authentication](console.md#protected-site-authentication). Do not assume that authentication configured for Auto mode also applies to cataloging. EMA reads the source from its hosted environment, so being signed in to the source in your own browser doesn't give it access. Verify a representative protected URL before planning a catalog run. If bot protection blocks discovery or analysis, see [source sites with bot protection](getting-started.md#bot-protection).
+* **Source access** — The catalog workflow must be able to reach and read the authorized source. For pages that require sign-in or a secret header, configure [protected site authentication](console.md#protected-site-authentication). Do not assume that authentication configured for Auto mode also applies to cataloging. The agent reads the source from its hosted environment, so being signed in to the source in your own browser doesn't give it access. Verify a representative protected URL before planning a catalog run. If bot protection blocks discovery or analysis, see [source sites with bot protection](getting-started.md#bot-protection).
 * **Interaction-dependent content** — The catalog loads each page in a browser and reads it once it has rendered, including content that scripts insert and content that CSS hides. Content that appears only after a visitor clicks or types isn't in the page at that moment, so it isn't captured. Inspect the screenshots and source content.
 * **Coverage** — Discovery uses the sitemap or follows links from the start page, so pages that neither lists nor links to, such as campaign landing pages, aren't found. Compare the result with your own URL list, and record failures, missing URLs, and approved exclusions.
 

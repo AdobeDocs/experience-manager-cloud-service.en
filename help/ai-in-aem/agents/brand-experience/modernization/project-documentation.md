@@ -31,22 +31,22 @@ Learn how the Experience Modernization Agent's documentation skill can help you 
 
 ## Accelerating Project Handovers {#project-handovers}
 
-[The Experience Modernization Agent](overview.md) (EMA) can generate project documentation guides from accessible Edge Delivery Services (EDS) code and configuration, featuring:
+[The Experience Modernization Agent](overview.md) can generate project documentation guides from accessible Edge Delivery Services code and configuration, featuring:
 
 * **Project walkthrough** - Explanation of the project setup, structure, and conventions
 * **Module &amp; component organization** - Clear documentation of how blocks, modules, and components are organized and how they relate to each other
 * **Role-based guides** - Documentation for authors, developers, and administrators
 
-The guides describe what the agent can read: the code in the workspace and, with permission to use your Adobe credentials, the site configuration from the EDS admin API. Systems it can't read, such as integration or CDN configuration, aren't covered. Review the guides against the actual authoring target and validated examples.
+The guides describe what the agent can read: the code in the workspace and, with permission to use your Adobe credentials, the site configuration from the admin API. Systems it can't read, such as integration or CDN configuration, aren't covered. Review the guides against the actual authoring target and validated examples.
 
 ## Prerequisites {#prerequisites}
 
 Ensure the following before using this skill.
 
 * Your project must be checked out to your console workspace.
-* Project documentation is an [optional capability](console.md#optional-capabilities). If it is not on for your project, EMA offers to turn it on when you ask for documentation and asks you to confirm.
-* To enrich the guides with EDS configuration, you need appropriate admin access and must enable **Allow LLM to use my Adobe credentials for admin.hlx.page, Document Authoring, and repositories hosted outside GitHub** in [console settings](console.md#settings-page). `admin.hlx.page` is the EDS admin API, which holds site configuration; `hlx` comes from Helix, the project name under which the EDS architecture was developed.
-* Without that access, the agent can generate code-based documentation. Ask it to state which configuration and remote content it could not inspect. The permission covers the EDS admin API and Experience Workspace, not the JCR of an AEM author instance.
+* Project documentation is an [optional capability](console.md#optional-capabilities). If it is not on for your project, the agent offers to turn it on when you ask for documentation and asks you to confirm.
+* To enrich the guides with site configuration, you need appropriate admin access and must enable **Allow LLM to use my Adobe credentials for admin.hlx.page, Document Authoring, and repositories hosted outside GitHub** in [console settings](console.md#settings-page). `admin.hlx.page` is the admin API of Edge Delivery Services, which holds site configuration; `hlx` comes from Helix, the project name under which its architecture was developed.
+* Without that access, the agent can generate code-based documentation. Ask it to state which configuration and remote content it could not inspect. The permission covers the admin API and Experience Workspace, not the JCR of an Adobe Experience Manager author instance.
   
 ## Creating Project Documentation {#creating-documentation}
 
@@ -58,7 +58,7 @@ Once the prerequisites are fulfilled, ask the agent to create documentation for 
 
    ![Create documentation](assets/select-documentation.png)
 
-1. Once created, the guides are placed in your console workspace. Select one to view a description and click the link to download the full PDF.
+1. Once created, the guides are placed in your console workspace. Select one to view a description and select the link to download the full PDF.
 
    ![Documentation created](assets/documentation-created.png)
 
@@ -89,7 +89,7 @@ Include:
 
 For JCR-backed projects, also retain model/configuration changes, site/DAM destinations, package/import results, and Universal Editor validation. For document-based projects, record the remote document location and any transfer/overwrite decisions.
 
-Reference the handover from the project's `AGENTS.md` file. EMA loads `AGENTS.md` at the start of every conversation, through the project's `CLAUDE.md` file, and reads the files that it points to when a task needs them. See [Project Instructions and Memory](project-instructions.md#agents-md). Never include tokens, passwords, or other secrets.
+Reference the handover from the project's `AGENTS.md` file. The agent loads `AGENTS.md` at the start of every conversation, through the project's `CLAUDE.md` file, and reads the files that it points to when a task needs them. See [Project Instructions and Memory](project-instructions.md#agents-md). Never include tokens, passwords, or other secrets.
 
 Date the handover and refresh it when the code, models, content, or deployment changes. Generated PDFs and a prior conversation can become stale; neither is proof of current release state.
 
@@ -115,7 +115,7 @@ The following are common error messages encountered when using the project docum
 
 * **Cause:** Unable to access Edge Delivery Services config service API
 * **Solution:**
-  1. Select **Allow LLM to use my Adobe credentials for admin.hlx.page, Document Authoring, and repositories hosted outside GitHub** in [console settings](console.md#settings-page).
+  1. Turn on **Allow LLM to use my Adobe credentials for admin.hlx.page, Document Authoring, and repositories hosted outside GitHub** in [console settings](console.md#settings-page).
   1. Check your network/VPN connection
   1. Confirm admin access to the project
 

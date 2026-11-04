@@ -1,6 +1,6 @@
 ---
-title: Getting Started with the Experience Modernization Agent for AEM Authoring Projects
-description: Learn the specific setup steps required for AEM authoring projects when getting started with the Experience Modernization Agent using the Experience Modernization Console.
+title: Getting Started with the Experience Modernization Agent for Experience Manager Authoring Projects
+description: Learn the specific setup steps required for Experience Manager authoring projects when getting started with the Experience Modernization Agent using the Experience Modernization Console.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 94a5e40b-af4a-42ed-922b-b1ec9bb82e24
@@ -26,40 +26,40 @@ role_v2:
     internal-label: Developer
 ---
 
-# Getting Started with the Experience Modernization Agent for AEM Authoring Projects {#getting-started-aem-authoring}
+# Getting Started with the Experience Modernization Agent for Experience Manager Authoring Projects {#getting-started-aem-authoring}
 
 >[!NOTE]
 >
->This path is Edge Delivery Services (EDS) on top of the JCR stack: content is stored in AEM's Java Content Repository (JCR) on your AEM as a Cloud Service author instance, authors edit it with the Universal Editor, and EDS delivers the pages. This setup was previously called Crosswalk. For new implementations, Adobe strongly recommends document-based persistence with Experience Workspace instead, including for large sites. See [Where Content Is Stored and How Authors Edit It](overview.md#content-storage).
+>This path is Edge Delivery Services on top of the JCR stack: content is stored in the Java Content Repository (JCR) of your Adobe Experience Manager as a Cloud Service author instance, authors edit it with the Universal Editor, and the platform delivers the pages. This setup was previously called Crosswalk. For new implementations, Adobe strongly recommends document-based persistence with Experience Workspace instead, including for large sites. See [Where Content Is Stored and How Authors Edit It](overview.md#content-storage).
 
-Use this workflow when a requirement depends on content staying in the AEM repository. The [Universal Editor](/help/implementing/universal-editor/introduction.md) is Adobe's visual editor for content in AEM. This is not a migration to HTL-based delivery, and the source website's technology does not determine your persistence target.
+Use this workflow when a requirement depends on content staying in the JCR. The [Universal Editor](/help/implementing/universal-editor/introduction.md) is Adobe's visual editor for content in Experience Manager. This is not a migration to HTL-based delivery, and the source website's technology does not determine your persistence target.
 
-You need console access, repository permissions, and permission to create or update content and assets on the target AEM author instance. Record the AEM host, site identifier, page root, DAM destination (the AEM Assets folder for images and files), code repository, and working branch before importing. A document-based Auto mode preview is not a substitute for this setup.
+You need console access, repository permissions, and permission to create or update content and assets on the target author instance. Record the author instance's host, site identifier, page root, DAM destination (the Experience Manager Assets folder for images and files), code repository, and working branch before importing. A document-based Auto mode preview is not a substitute for this setup.
 
 ## Create Your Edge Delivery Services Project Repo {#create-repo}
 
 For a new project:
 
-1. Use the [`aem-block-collection-xwalk`](https://github.com/adobe-rnd/aem-block-collection-xwalk) repository as your template rather than the document-based boilerplate. Templates for AEM authoring have `xwalk`, short for Crosswalk, in their names.
-1. Verify that `fstab.yaml`, the file that points EDS to the site's content source, refers to your AEM host, Git owner, and Git repository. Review and commit the configuration to the branch used for setup.
+1. Use the [`aem-block-collection-xwalk`](https://github.com/adobe-rnd/aem-block-collection-xwalk) repository as your template rather than the document-based boilerplate. Templates for Experience Manager authoring have `xwalk`, short for Crosswalk, in their names.
+1. Verify that `fstab.yaml`, the file that points Edge Delivery Services to the site's content source, refers to your author instance's host, Git owner, and Git repository. Review and commit the configuration to the branch used for setup.
    * See [Configure content source](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md) for instructions.
 1. Follow the [Universal Editor tutorial](https://www.aem.live/developer/ue-tutorial) to set up your repo.
-   * Stop when you are asked to create a site in AEM.
+   * Stop when you are asked to create a site in Experience Manager.
 1. For this new-project setup, remove the template's `paths.json` and commit the change. Do not remove an existing site's path mappings without reviewing their purpose and replacement.
 1. Add the [AEM Code Connector](https://github.com/apps/aem-code-connector/installations/select_target) app to your repo.
-   * This lets the console push changes and open pull requests in your repository. It is different from the AEM Code Sync app, which lets EDS fetch your code.
+   * This lets the console push changes and open pull requests in your repository. It is different from the AEM Code Sync app, which lets Edge Delivery Services fetch your code.
 
-For an existing JCR-backed EDS project, reuse its configuration and content models. Do not recreate the site or replace its repository with the template. Confirm [code synchronization and repository access](getting-started.md#repo-start) without repeating the document-based setup.
+For an existing project that stores its content in the JCR, reuse its configuration and content models. Do not recreate the site or replace its repository with the template. Confirm [code synchronization and repository access](getting-started.md#repo-start) without repeating the document-based setup.
 
-## Create a New Site in AEM {#create-site}
+## Create a New Site in Experience Manager {#create-site}
 
-1. In the AEM Sites console, select **Create** > **Site from template**.
+1. In the Sites console, select **Create** > **Site from template**.
 1. Select the **AEM Site with Edge Delivery Services Template**.
    * Don't see it listed? [Install the template.](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)
 1. For this template setup, keep the **name** of the site (not the title) as provided.
    * The site name is used as the unique identifier.
    * The title can be changed for display.
-1. Click **Create**.
+1. Select **Create**.
    * You are redirected to the Sites page.
    * Refresh the page if the new site does not appear immediately.
 
@@ -75,9 +75,9 @@ Follow these steps from the standard guide.
 
 1. [Open the Experience Modernization Console](getting-started.md#open-console)
 1. [Connect Your Site](getting-started.md#connect-repo)
-1. [Start Prompting](getting-started.md#start-prompting), explicitly requesting JCR-backed AEM authoring output.
+1. [Start Prompting](getting-started.md#start-prompting), explicitly requesting JCR-backed output for Experience Manager authoring.
 
-For example: "Migrate only `https://www.example.com/about` to the agreed page root in this AEM authoring project. Preserve content and links. Reuse the project's block models and validate JCR conversion. Do not upload, push, or publish."
+For example: "Migrate only `https://www.example.com/about` to the agreed page root in this Experience Manager authoring project. Preserve content and links. Reuse the project's block models and validate JCR conversion. Do not upload, push, or publish."
 
 ![Content imported](assets/content-imported-aem-authoring.png)
 
@@ -85,9 +85,9 @@ Once you complete those steps to migrate the content, continue with the followin
 
 ## Validate Content {#validate-content}
 
-Validate the selected page in the content panel. Use **Markdown view**, **JCR XML view**, and **Errors** to check content and conversion. Use **Add to chat** to target fixes to a page, parser, or transformer. Parsers and transformers are the import scripts that EMA generates: a parser converts one block's source HTML, and a transformer cleans up the whole page.
+Validate the selected page in the content panel. Use **Markdown view**, **JCR XML view**, and **Errors** to check content and conversion. Use **Add to chat** to target fixes to a page, parser, or transformer. Parsers and transformers are the import scripts that the agent generates: a parser converts one block's source HTML, and a transformer cleans up the whole page.
 
-In AEM authoring projects, each block also has a model: configuration that defines the fields authors edit for that block in the Universal Editor. The Universal Editor edits only the fields that a block's model defines, so a page can render correctly in the HTML preview while blocks that don't match their models can't be edited. Ask the agent to check that the source block models, component definitions, and generated aggregate configuration agree. Update the source configuration through the project's generation workflow rather than fixing only a generated file. Check field mappings and authoring hints, page paths, image references, and the intended site/DAM destinations.
+In Experience Manager authoring projects, each block also has a model: configuration that defines the fields authors edit for that block in the Universal Editor. The Universal Editor edits only the fields that a block's model defines, so a page can render correctly in the HTML preview while blocks that don't match their models can't be edited. Ask the agent to check that the source block models, component definitions, and generated aggregate configuration agree. Update the source configuration through the project's generation workflow rather than fixing only a generated file. Check field mappings and authoring hints, page paths, image references, and the intended site/DAM destinations.
 
 Resolve conversion errors on a representative page before creating a larger package.
 
@@ -95,13 +95,13 @@ Resolve conversion errors on a representative page before creating a larger pack
 
 ## Upload Content {#upload-content}
 
-Package upload writes content to the AEM author instance. Confirm the selected pages, host, site, page root, and asset destination with the target owner. Preserve existing content before replacing it; local validation does not make an overwrite safe.
+Package upload writes content to the author instance. Confirm the selected pages, host, site, page root, and asset destination with the target owner. Preserve existing content before replacing it; local validation does not make an overwrite safe.
 
-1. Make sure you are in a **Content** view and click the **Upload content** button on the top-right.
+1. Make sure you are in a **Content** view and select the **Upload content** button on the top-right.
 1. In the **Create content package** dialog, choose the pages to include in the package.
    * Optionally enter a **Package name** (defaults to the site name if left empty).
    * Use **Select all**, **Clear selection**, **Expand all**, or **Collapse all** to manage the list.
-1. Click **Create package**.
+1. Select **Create package**.
 
    ![Create content package – choose pages and create](assets/content-package.png)
 
@@ -109,29 +109,29 @@ Package upload writes content to the AEM author instance. Confirm the selected p
    1. You can **Download package** to save it locally, or proceed to upload.
    1. Under **Upload to AEM**, confirm the **AEM site** and **AEM host** (pre-filled from your project settings).
       * Optionally leave **Upload images** checked to include images.
-   1. Click **Upload to AEM**.
+   1. Select **Upload to AEM**.
 
-   ![Package ready to upload to AEM or download](assets/upload-package-start.png)
+   ![Package ready to upload or download](assets/upload-package-start.png)
 
-1. The dialog shows upload progress as pages and assets are sent to the AEM author instance. Review the upload log, including individual failures, before closing the dialog.
+1. The dialog shows upload progress as pages and assets are sent to the author instance. Review the upload log, including individual failures, before closing the dialog.
 
-   ![Upload progress and completion in AEM](assets/upload-package-complete.png)
+   ![Upload progress and completion](assets/upload-package-complete.png)
 
-For a failed package or image upload, retain the log and selected paths. Correct conversion, credentials, permissions, or destinations as indicated, then retry the affected scope. A package download alone does not import content into the AEM author instance. Confirm which pages and assets arrived before retrying to avoid unintended replacements.
+For a failed package or image upload, retain the log and selected paths. Correct conversion, credentials, permissions, or destinations as indicated, then retry the affected scope. A package download alone does not import content into the author instance. Confirm which pages and assets arrived before retrying to avoid unintended replacements.
 
-If **Create package** reports **Missing site configuration**, the console doesn't know the project's AEM site path, `/content/{site-name}`, and DAM folder, `/content/dam/{folder-name}`. It finds them by looking up the site on the AEM author instance that the project's content source points to, as set in `fstab.yaml` or in the site's configuration. Check that the site exists on that author instance and that the Adobe account you signed in with can access it, then reload the console. If the message persists, [request support](console.md#request-support). If it reports **Missing site base URL**, enter the origin URL of the source site, such as `https://www.example.com`, as **Site base url** in [Settings](console.md#settings-page).
+If **Create package** reports **Missing site configuration**, the console doesn't know the project's site path, `/content/{site-name}`, and DAM folder, `/content/dam/{folder-name}`. It finds them by looking up the site on the author instance that the project's content source points to, as set in `fstab.yaml` or in the site's configuration. Check that the site exists on that author instance and that the Adobe account you signed in with can access it, then reload the console. If the message persists, [request support](console.md#request-support). If it reports **Missing site base URL**, enter the origin URL of the source site, such as `https://www.example.com`, as **Site base url** in [Settings](console.md#settings-page).
 
-If the AEM as a Cloud Service environment is hibernated, the upload dialog and Settings say so and link to the Developer Console. De-hibernate the environment there, then retry the upload. See [De-hibernate a sandbox program from the Developer Console.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md#de-hibernation-introduction)
+If the Experience Manager as a Cloud Service environment is hibernated, the upload dialog and Settings say so and link to the Developer Console. De-hibernate the environment there, then retry the upload. See [De-hibernate a sandbox program from the Developer Console.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md#de-hibernation-introduction)
 
 Review and [push the matching code and configuration](getting-started.md#push-code-changes) through your project's repository policy. This is separate from package upload. Merging the code into `main` changes the live site's code immediately; see [How Changes Go Live](overview.md#code-content-lifecycle).
 
 ## Validate Authoring and Preview {#preview-site}
 
-1. In AEM Sites, locate the imported page under the agreed site root.
+1. In the Sites console, locate the imported page under the agreed site root.
 1. Open it in the Universal Editor. Verify that expected fields and blocks can be selected and edited, not merely rendered.
 1. Change representative text and an image, save, and reopen the page. Confirm that the content and asset references persist.
-1. Use the project's configured EDS preview workflow (preview pages are served on `*.aem.page`). Verify the page against the intended code branch and check responsive layout, links, and images.
-1. For production, complete the [site acceptance checks](production-migration.md#acceptance) and follow your AEM/EDS publication process.
+1. Use the project's configured preview workflow (preview pages are served on `*.aem.page`). Verify the page against the intended code branch and check responsive layout, links, and images.
+1. For production, complete the [site acceptance checks](production-migration.md#acceptance) and follow your project's publication process.
 
 Successful package upload, successful authoring, preview, and publication are distinct checkpoints. If editing fails, revisit model mappings and generated configuration; do not accept a static preview as completion.
 
@@ -141,5 +141,5 @@ Record the uploaded package, paths, code revision, author/preview URLs, remainin
 
 * [Getting Started with the Experience Modernization Agent](getting-started.md) - Full workflow including console, prompting, upload, and preview
 * [Experience Modernization Console](console.md) - Console reference
-* [Universal Editor tutorial](https://www.aem.live/developer/ue-tutorial) - Set up an AEM authoring and Universal Editor project
-* [`aem-block-collection-xwalk`](https://github.com/adobe-rnd/aem-block-collection-xwalk) - Template repository for AEM authoring and Universal Editor projects
+* [Universal Editor tutorial](https://www.aem.live/developer/ue-tutorial) - Set up a project with Experience Manager authoring and the Universal Editor
+* [`aem-block-collection-xwalk`](https://github.com/adobe-rnd/aem-block-collection-xwalk) - Template repository for these projects

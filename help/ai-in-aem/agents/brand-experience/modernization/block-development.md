@@ -27,9 +27,9 @@ role_v2:
 
 # Create, Update, and Refactor Blocks {#block-development}
 
-Use the Experience Modernization Agent (EMA) for ongoing Edge Delivery Services (EDS) development as well as migration. Begin with the author need and real content, then choose the smallest implementation that supports them.
+Use the Experience Modernization Agent for ongoing Edge Delivery Services development as well as migration. Begin with the author need and real content, then choose the smallest implementation that supports them.
 
-EMA follows Content-Driven Development (CDD) for this work. It starts from real content and from how authors will create it, and writes code after that. This keeps content models easy for authors to use and avoids blocks that only developers can fill in.
+The agent follows Content-Driven Development (CDD) for this work. It starts from real content and from how authors will create it, and writes code after that. This keeps content models easy for authors to use and avoids blocks that only developers can fill in.
 
 Connect the intended repository and branch, confirm modification permissions, and identify whether authors use [document-based or JCR-backed content](overview.md#content-storage). Preserve a baseline before changing shared code or content models.
 
@@ -37,7 +37,7 @@ Connect the intended repository and branch, confirm modification permissions, an
 
 HTML elements are the basic building units, or atoms: headings, paragraphs, links, lists, and images. Authors should use default content, the content outside blocks, for these where possible. Global styles and CSS custom properties, or design tokens, define shared typography, colors, spacing, and link/button presentation.
 
-A block lets authors mark which content forms one component, such as a set of cards or a carousel, where the code couldn't tell it apart from the surrounding default content. In the HTML that EDS serves, a block is a `div` with the block name as its class. The project's `blocks/<name>/<name>.js` and `blocks/<name>/<name>.css` decorate it in the browser. Where the code can recognize a pattern in default content, it can build the block itself, which aem.live calls [auto-blocking](https://www.aem.live/developer/markup-sections-blocks): the AEM boilerplate, for example, turns a link to a `/widgets/` page into a widget block. Keep a block lightweight and focused. A visual difference alone doesn't need a new block: CSS and JavaScript can style default content, and a variant or a section style can carry the difference.
+A block lets authors mark which content forms one component, such as a set of cards or a carousel, where the code couldn't tell it apart from the surrounding default content. In the HTML that your site serves, a block is a `div` with the block name as its class. The project's `blocks/<name>/<name>.js` and `blocks/<name>/<name>.css` decorate it in the browser. Where the code can recognize a pattern in default content, it can build the block itself, which aem.live calls [auto-blocking](https://www.aem.live/developer/markup-sections-blocks): the AEM boilerplate, for example, turns a link to a `/widgets/` page into a widget block. Keep a block lightweight and focused. A visual difference alone doesn't need a new block: CSS and JavaScript can style default content, and a variant or a section style can carry the difference.
 
 [David's Model](https://www.aem.live/docs/davidsmodel) collects the aem.live rules for content that authors can create easily: prefer default content, avoid blocks inside blocks, keep the number of blocks and variants small, and let buttons take their style from the block or section that they are in. When a block does the same job as one in the [Block Collection](https://www.aem.live/developer/block-collection), reuse that block's content model.
 
@@ -50,11 +50,11 @@ Check the project's conventions before generating code:
 | Footnote | How markers, target IDs, return links, and reading order are authored and preserved. |
 | Repeated content | Whether an existing cards/list block or variant represents it without extra author fields. |
 
-EDS has no built-in button-group or footnote control. Each is a convention that the project's code applies to authored content, so check how your project implements it and test the rendered result.
+Edge Delivery Services has no built-in button-group or footnote control. Each is a convention that the project's code applies to authored content, so check how your project implements it and test the rendered result.
 
 ### Example: A Flexible Teaser Without Atomic Blocks {#composition-example}
 
-Component-based AEM projects often provide a teaser component, or separate heading, image, text, and button components, so that authors can combine them. The home page of the [WKND sample site for AEM](https://wknd.site/us/en.html), for example, promotes each trip with a Core Components teaser. In EDS, authors write the same elements directly as default content, either in a section or in a block cell:
+Component-based Adobe Experience Manager projects often provide a teaser component, or separate heading, image, text, and button components, so that authors can combine them. The home page of the [WKND sample site](https://wknd.site/us/en.html), for example, promotes each trip with a Core Components teaser. With Edge Delivery Services, authors write the same elements directly as default content, either in a section or in a block cell:
 
 ```text
 [Image]
@@ -66,24 +66,24 @@ _[All adventures](/adventures)_
 
 In the current [AEM boilerplate](https://github.com/adobe/aem-boilerplate), a link that is alone in its paragraph becomes a button when it is formatted: bold for a primary button, italic for a secondary button, and bold plus italic for an accent button. A plain link, or a link inside a sentence, remains a link. Global styles give these buttons the same appearance in default content and inside blocks.
 
-Authors can add, remove, or reorder the heading, text, image, and links without new components. A teaser or hero block is needed only where authors must mark which elements belong together; CSS and JavaScript can place the image beside the text in default content as well. Projects can change these conventions, so ask EMA to check the project's scripts and styles before relying on them.
+Authors can add, remove, or reorder the heading, text, image, and links without new components. A teaser or hero block is needed only where authors must mark which elements belong together; CSS and JavaScript can place the image beside the text in default content as well. Projects can change these conventions, so ask the agent to check the project's scripts and styles before relying on them.
 
 ## Prompt for a Block {#block-prompts}
 
-You can start with a short prompt, such as "Create a testimonials block". EMA follows content-driven development: it works out the content and content model with you before it writes code. Add context where it helps EMA match something specific:
+You can start with a short prompt, such as "Create a testimonials block". The agent follows content-driven development: it works out the content and content model with you before it writes code. Add context where it helps the agent match something specific:
 
-| To show EMA | Provide |
+| To show the agent | Provide |
 |---|---|
 | A design on an existing site | The page URL, and the section to match. |
 | A design that isn't online | A screenshot or image (JPEG, PNG, GIF, or WebP), with **Attach files** in the [prompt input](console.md#prompt-input). For Figma designs, see [Figma block migration](prompting-guide.md#figma-block-migration). |
-| An element in the console preview | Select it with **Inspect mode** in the [content views](console.md#content-view). EMA receives the element's HTML and its position on the page, and limits its changes to that element. |
+| An element in the console preview | Select it with **Inspect mode** in the [content views](console.md#content-view). The agent receives the element's HTML and its position on the page, and limits its changes to that element. |
 | How authors fill in the block | Example content, the parts that are optional or repeat, and the variants you need. |
 
 A reference page or screenshot shows the target appearance. It doesn't define what authors edit, so say that too.
 
 ### Reuse Existing Blocks {#reuse-blocks}
 
-Before EMA creates a block, it looks for one to reuse or adapt: in your project's `blocks` folder, and in the [Block Collection](https://www.aem.live/developer/block-collection) and [Block Party](https://www.aem.live/developer/block-party/) for reference code. During migration, it also checks the [block library](#block-deliverables) that **Library URL** in [Settings](console.md#settings-page) points to.
+Before the agent creates a block, it looks for one to reuse or adapt: in your project's `blocks` folder, and in the [Block Collection](https://www.aem.live/developer/block-collection) and [Block Party](https://www.aem.live/developer/block-party/) for reference code. During migration, it also checks the [block library](#block-deliverables) that **Library URL** in [Settings](console.md#settings-page) points to.
 
 * If your organization keeps a block library for authors, set **Library URL** to its `library.json` file.
 * To reuse blocks from another repository, add them to this project's `blocks` folder first, for example by pushing them to your branch and then pulling the code into the console.
@@ -95,7 +95,7 @@ When you need several blocks, don't ask for all of them in one prompt. Build one
 
 ### Set Block Behavior Before a Migration {#block-instructions}
 
-Migration generates blocks from the content that it finds on the source pages. To steer how a block is built before EMA generates it:
+Migration generates blocks from the content that it finds on the source pages. To steer how a block is built before the agent generates it:
 
 * Describe it in the migration prompt, for example which source sections become one block with variants, which parts authors edit, or that a list must load its items [dynamically](#dynamic-blocks).
 * Write lasting conventions in the [project instruction files](project-instructions.md#content-conventions) before you start.
@@ -107,7 +107,7 @@ Auto mode doesn't take instructions during a run. Refine its blocks in the conso
 
 Provide the author task, example content, desired behavior/design, target persistence, and destination test page.
 
-1. Ask EMA to inspect existing blocks and suitable [reference implementations](prompting-guide.md#reference-blocks). Prefer reuse or a variant over a duplicate.
+1. Ask the agent to inspect existing blocks and suitable [reference implementations](prompting-guide.md#reference-blocks). Prefer reuse or a variant over a duplicate.
 1. Define a content model that authors can understand. Use headings, links, images, and grouped content naturally rather than exposing CSS or implementation details as fields.
 1. Create representative content first. Include long text, missing optional values, multiple items, and meaningful images/links.
 1. Implement only the needed HTML decoration, CSS, and JavaScript. Reuse project tokens and shared utilities.
@@ -120,18 +120,18 @@ For example:
 
 The output is reusable code, a working target-specific model where needed, and editable examples—not just a screenshot or generated files.
 
-### What EMA Provides With a Block {#block-deliverables}
+### What the Agent Provides With a Block {#block-deliverables}
 
 * **Block documentation:** When migration creates a block, it generates the block from the content model found on your pages and adds a README for developers and an authoring guide for authors. Review both and keep them current when you change the block. To make later conversations follow the block's conventions, such as optional content, variants, and the sections it works in, reference them from the project's instruction files. See [Document Content Conventions](project-instructions.md#content-conventions).
-* **Sample content:** EMA generates sample content for blocks so that you can preview them with realistic content. In the [site catalog](site-catalog.md#blocks-table), use **View sample** to open a block's sample page.
-* **Block library:** The block library lets authors find your custom blocks and insert them into pages, with sample content that shows how each block is meant to be used. To set it up, ask EMA to generate a block library, including sample content and the library configuration, for Experience Workspace (formerly Document Authoring) or AEM authoring. Block library setup is an [optional capability](console.md#optional-capabilities) that EMA offers to turn on for your project. Check the result in the authoring experience. The library location is set by **Library URL** in [Settings](console.md#settings-page), which points to a `library.json` file that lists the available blocks, their variations, and example content.
+* **Sample content:** The agent generates sample content for blocks so that you can preview them with realistic content. In the [site catalog](site-catalog.md#blocks-table), use **View sample** to open a block's sample page.
+* **Block library:** The block library lets authors find your custom blocks and insert them into pages, with sample content that shows how each block is meant to be used. To set it up, ask the agent to generate a block library, including sample content and the library configuration, for Experience Workspace (formerly Document Authoring) or Experience Manager authoring. Block library setup is an [optional capability](console.md#optional-capabilities) that it offers to turn on for your project. Check the result in the authoring experience. The library location is set by **Library URL** in [Settings](console.md#settings-page), which points to a `library.json` file that lists the available blocks, their variations, and example content.
 
 ## Build a Dynamic Block {#dynamic-blocks}
 
-A dynamic block loads or computes its content in the browser, rather than showing only what authors write. Examples are a list of the latest articles, search results, or a filtered list. Ask EMA to create one after migration like any other block, or to change a migrated block to work this way. Describe:
+A dynamic block loads or computes its content in the browser, rather than showing only what authors write. Examples are a list of the latest articles, search results, or a filtered list. Ask the agent to create one after migration like any other block, or to change a migrated block to work this way. Describe:
 
 * **The data source**, such as the site's [query index](https://www.aem.live/developer/indexing), a spreadsheet delivered as JSON, or an API.
-* **What authors control**, such as the number of items, the folder to list, or the sort order. EMA models these settings as a configuration block: a two-column table of keys and values. Use it only for settings that change what the block loads or shows, and use variants for differences in style.
+* **What authors control**, such as the number of items, the folder to list, or the sort order. The agent models these settings as a configuration block: a two-column table of keys and values. Use it only for settings that change what the block loads or shows, and use variants for differences in style.
 * **What each item shows**, and what the block shows when there are no results or the data can't load.
 
 For example:
@@ -170,11 +170,11 @@ For example:
 
 > Refactor duplicated card-decoration logic in [blocks/files]. Preserve authored models, output semantics, appearance, link behavior, keyboard access, and analytics hooks. Use [paths] as regression examples. Report compatibility risks and test results. Do not migrate content or push changes.
 
-There is no separate refactoring command: you ask in chat, and EMA changes the code as a developer would, within the invariants you set.
+There is no separate refactoring command: you ask in chat, and the agent changes the code as a developer would, within the invariants you set.
 
 ## Validate and Deliver {#validation}
 
-Use the project's declared lint and test commands, plus browser checks on real content. Ask EMA to report the commands and results, not simply that it tested.
+Use the project's declared lint and test commands, plus browser checks on real content. Ask the agent to report the commands and results, not simply that it tested.
 
 Check:
 

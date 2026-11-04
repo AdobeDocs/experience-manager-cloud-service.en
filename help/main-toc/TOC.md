@@ -1245,7 +1245,7 @@ user-guide-title: AEM as a Cloud Service
       + Experience Modernization Agent {#modernization}
         + [Overview](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)
         + [Getting Started](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
-        + [Getting Started with AEM authoring projects](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
+        + [Getting Started with Experience Manager Authoring Projects](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
         + [Migrate a Production Site](/help/ai-in-aem/agents/brand-experience/modernization/production-migration.md)
         + [Restyle Sites](/help/ai-in-aem/agents/brand-experience/modernization/restyling.md)
         + [Create, Update, and Refactor Blocks](/help/ai-in-aem/agents/brand-experience/modernization/block-development.md)

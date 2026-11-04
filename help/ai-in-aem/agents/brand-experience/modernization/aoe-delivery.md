@@ -32,7 +32,7 @@ Learn about Adobe Agentic Outcome Engineers (AOEs) and how they can help you suc
 
 ## The Agentic Outcome Engineer (AOE) {#aoe}
 
-AOEs are Adobe engineers who operate the Experience Modernization Agent (EMA) on your behalf. AOE delivery is an optional engagement model, not a separate tier of agent capabilities. The team works with you to:
+AOEs are Adobe engineers who operate the Experience Modernization Agent on your behalf. AOE delivery is an optional engagement model, not a separate tier of agent capabilities. The team works with you to:
 
 * Translate AI-assisted automation into production-ready customer outcomes.
 * Resolve migration and implementation issues within the agreed engagement.
@@ -40,7 +40,7 @@ AOEs are Adobe engineers who operate the Experience Modernization Agent (EMA) on
 
 ## AOE-Led Delivery {#aoe-led}
 
-AOEs combine EMA automation with engineering work and customer review.
+AOEs combine the agent's automation with engineering work and customer review.
 
 Agree scope, responsibilities, acceptance criteria, and support arrangements with your Adobe account team before work begins. Do not infer a delivery guarantee, price, or entitlement from the availability of the console.
 
@@ -85,28 +85,28 @@ The engagement defines which automated and manual work is included. The sections
 
 ### Source Platforms {#source-platforms}
 
-Sources can include WordPress, Drupal, Sitecore, legacy AEM, SharePoint, or custom sites where authorized content can be extracted. The standard source scope described for this service is publicly accessible static HTML. Have the AOE team explicitly assess protected, interaction-dependent, or private-network sources rather than assume they are included.
+Sources can include WordPress, Drupal, Sitecore, existing Adobe Experience Manager sites, SharePoint, or custom sites where authorized content can be extracted. The standard source scope described for this service is publicly accessible static HTML. Have the AOE team explicitly assess protected, interaction-dependent, or private-network sources rather than assume they are included.
 
-This is the scope of the service, not a limit of the product or of EDS. EMA itself reads pages as a browser renders them, including content that scripts insert, and reads pages behind supported sign-in methods. See [Limitations](overview.md#limitations). Agree source access and extraction for the actual engagement.
+This is the scope of the service, not a limit of the product or of Edge Delivery Services. The agent itself reads pages as a browser renders them, including content that scripts insert, and reads pages behind supported sign-in methods. See [Limitations](overview.md#limitations). Agree source access and extraction for the actual engagement.
 
 ### Included in AOE Scope {#included}
 
 #### Target Platform {#target-platform}
 
-* **Edge Delivery Services:** All migrations target Edge Delivery Services (EDS), Adobe's high-performance web delivery platform.
-* **Authoring target:** Agree document-based persistence, edited visually in Experience Workspace, or AEM authoring with JCR persistence and the Universal Editor. Adobe strongly recommends document-based persistence with Experience Workspace for new implementations. See [Where Content Is Stored and How Authors Edit It](overview.md#content-storage). Confirm the setup and handover for the selected target.
+* **Edge Delivery Services:** All migrations target Adobe's high-performance web delivery platform.
+* **Authoring target:** Agree document-based persistence, edited visually in Experience Workspace, or Experience Manager authoring with JCR persistence and the Universal Editor. Adobe strongly recommends document-based persistence with Experience Workspace for new implementations. See [Where Content Is Stored and How Authors Edit It](overview.md#content-storage). Confirm the setup and handover for the selected target.
 
 #### Migration Work Performed {#migration-work}
 
 * **Migration approach:** Agree faithful migration, redesign, or an incremental phased migration.
-* **Content import:** Automated extraction of page content from source websites and automated mapping to EDS [default content and blocks](overview.md#eds-basics)
+* **Content import:** Automated extraction of page content from source websites and automated mapping to [default content and blocks](overview.md#eds-basics)
 * **Design system:** Extraction of brand tokens (colors, typography, spacing) and application to the new site
-* **Design references:** EMA imports designs from the source site and from Figma, and works from attached screenshots and documents otherwise. Agree which references apply and what fidelity means for acceptance.
+* **Design references:** The agent imports designs from the source site and from Figma, and works from attached screenshots and documents otherwise. Agree which references apply and what fidelity means for acceptance.
 * **Responsive design:** Layouts for mobile and desktop widths in the project's CSS
 
 #### Resulting System {#resulting-system}
 
-The resulting site uses EDS. A new project from the AEM boilerplate scores 100 in Lighthouse; what a project adds, such as third-party scripts, large images, or heavy block code, can lower that score. Accessibility and search results depend on the content and code. Agree and measure the required performance, accessibility, SEO, functional, and authoring outcomes on representative real pages.
+The resulting site runs on Edge Delivery Services. A new project from the AEM boilerplate scores 100 in Lighthouse; what a project adds, such as third-party scripts, large images, or heavy block code, can lower that score. Accessibility and search results depend on the content and code. Agree and measure the required performance, accessibility, SEO, functional, and authoring outcomes on representative real pages.
 
 Use the [production acceptance checklist](production-migration.md#acceptance). In particular, reconcile the in-scope inventory, test integrations, and verify that authors can edit, save, reopen, and preview content in the selected authoring environment.
 

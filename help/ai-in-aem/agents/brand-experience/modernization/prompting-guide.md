@@ -27,9 +27,9 @@ role_v2:
 ---
 # Prompting Guide for Experience Modernization Agent {#prompting-guide}
 
-The Experience Modernization Agent (EMA) uses skills: built-in workflows for specific kinds of tasks, such as migrating a page or styling a block. The agent selects the appropriate skill from your natural-language request, so you don't need to name it. Some skills belong to [optional capabilities](console.md#optional-capabilities), which EMA offers to turn on for your project when a request needs them.
+The Experience Modernization Agent uses skills: built-in workflows for specific kinds of tasks, such as migrating a page or styling a block. The agent selects the appropriate skill from your natural-language request, so you don't need to name it. Some skills belong to [optional capabilities](console.md#optional-capabilities), which it offers to turn on for your project when a request needs them.
 
-This guide provides tips for effective prompting and describes what the skills do. For the EDS terms used here, such as blocks, default content, and sections, see [How EDS Pages Work](overview.md#eds-basics).
+This guide provides tips for effective prompting and describes what the skills do. For the terms used here, such as blocks, default content, and sections, see [How Edge Delivery Services Works](overview.md#eds-basics).
 
 ## Choose a Task {#choose-task}
 
@@ -38,10 +38,10 @@ Use the task guides for the full procedure and acceptance checks. The prompts be
 | Task | Procedure |
 |---|---|
 | Customer demo pages | [Demo recipe](getting-started.md#customer-demo) |
-| Useful trial with brand-owned content | [Start with Auto mode](getting-started.md#brand-trial) if your account has access, or [start from an EDS repository](getting-started.md#repo-start) |
+| Useful trial with brand-owned content | [Start with Auto mode](getting-started.md#brand-trial) if your account has access, or [start from a repository](getting-started.md#repo-start) |
 | Production site, either persistence target | [Production migration](production-migration.md) |
 | New design during migration | [Restyle during migration](restyling.md#during-migration) |
-| Restyle an existing EDS project | [Existing-site restyle](restyling.md#existing-site) |
+| Restyle an existing project | [Existing-site restyle](restyling.md#existing-site) |
 | Create, update, or refactor blocks | [Block development recipes](block-development.md) |
 
 Name the source URLs/design nodes, destination paths, [authoring target](overview.md#content-storage), repository/branch, allowed scope, and what must be preserved. State whether uploads, code pushes, or publication are authorized. Do not include credentials in a prompt.
@@ -60,9 +60,9 @@ Name the source URLs/design nodes, destination paths, [authoring target](overvie
 
 ### Create markdown files in the project to document project-specific rules, guidelines, design decisions, or constraints. {#markdown-files}
 
-* Keep these files in the Git repository. EMA loads the project's `AGENTS.md` file at the start of every conversation, through the one-line `CLAUDE.md` file that the AEM boilerplate includes. Use `AGENTS.md` for a short project summary, the rules that apply to most tasks, and an index of the other files with when to read each one.
-* Put details such as block content conventions, section styles, design rules, and decisions in separate, focused files that `AGENTS.md` references. EMA reads them when a task needs them, so you don't need to name them in every prompt.
-* Ask EMA to update the files when you agree on a convention, and push them with the code. Do not duplicate built-in skills or store secrets. See [Project Instructions and Memory](project-instructions.md).
+* Keep these files in the Git repository. The agent loads the project's `AGENTS.md` file at the start of every conversation, through the one-line `CLAUDE.md` file that the AEM boilerplate includes. Use `AGENTS.md` for a short project summary, the rules that apply to most tasks, and an index of the other files with when to read each one.
+* Put details such as block content conventions, section styles, design rules, and decisions in separate, focused files that `AGENTS.md` references. The agent reads them when a task needs them, so you don't need to name them in every prompt.
+* Ask the agent to update the files when you agree on a convention, and push them with the code. Do not duplicate built-in skills or store secrets. See [Project Instructions and Memory](project-instructions.md).
 
 ### The agent's context window is not infinite. {#limited-window}
 
@@ -77,16 +77,16 @@ Name the source URLs/design nodes, destination paths, [authoring target](overvie
 
 ## Site Creation and Migration Skills {#site-migration}
 
-The Experience Modernization Agent supports site creation and migration to EDS, as well as continued development of existing projects.
+The Experience Modernization Agent supports site creation and migration to Edge Delivery Services, as well as continued development of existing projects.
 
 ### Migrate a Site or Page to Edge Delivery Services {#migrate-a-site}
 
-Use this prompt when migrating content from an existing website to Edge Delivery Services (EDS), AEM's website delivery service.
+Use this prompt when migrating content from an existing website.
 
 #### Example Prompts {#example-migrate}
 
 * "Migrate only `https://example.com/about` to `/about` in this document-based project. Preserve text and links. Do not upload, push, or publish."
-* "Migrate these pages to this JCR-backed EDS project: URL1, URL2, URL3. Validate models and conversion before creating a package."
+* "Migrate these pages to this JCR-backed project: URL1, URL2, URL3. Validate models and conversion before creating a package."
 
 #### What to Know {#wtk-migrate}
 
@@ -118,7 +118,7 @@ Use this prompt to analyze an existing website in order to understand its scale,
 * "How many page types are there on `https://example.com`"
 * "What are the layouts on `https://example.com`"
 
-For details on the site catalog skill, please see the document [Site Catalog Skill.](site-catalog.md)
+For details on the site catalog skill, see [Site Catalog Skill](site-catalog.md).
 
 ### Bulk Import {#bulk-import}
 
@@ -263,7 +263,7 @@ Use this prompt to validate a single migrated page for visual fidelity against t
 
 Use this prompt to migrate a block from Figma design to Edge Delivery Services.
 
-Note that you must set up your Figma details in [the Experience Modernization Console](console.md) to use this prompt. Figma import is an [optional capability](console.md#optional-capabilities). If it is not on for your project, EMA offers to turn it on.
+Note that you must set up your Figma details in [the Experience Modernization Console](console.md) to use this prompt. Figma import is an [optional capability](console.md#optional-capabilities). If it is not on for your project, the agent offers to turn it on.
 
 #### Example Prompts {#example-figma}
 
@@ -344,11 +344,11 @@ Use this prompt when the page does not already exist on a source website and a F
 * The frame should be organized into **clear page sections**.
 * Sections are mapped to existing blocks, default content, or new variants.
 * Text and assets come from Figma.
-* A Figma frame shows how a feature looks, not where its data comes from or how it behaves. For search, calculators, personalization, or store locators, the Figma migration creates the layout. Then ask EMA to build the behavior as a [dynamic block](block-development.md#dynamic-blocks), and give it the API or data source.
+* A Figma frame shows how a feature looks, not where its data comes from or how it behaves. For search, calculators, personalization, or store locators, the Figma migration creates the layout. Then ask the agent to build the behavior as a [dynamic block](block-development.md#dynamic-blocks), and give it the API or data source.
 
 ### Navigation Setup {#navigation-setup}
 
-Use this prompt to set up or migrate the site header, navigation, and footer. EMA migrates them, including footer images, with dedicated skills, separately from page import, so that every page shares one header and one footer.
+Use this prompt to set up or migrate the site header, navigation, and footer. The agent migrates them, including footer images, with dedicated skills, separately from page import, so that every page shares one header and one footer.
 
 #### Example Prompts {#example-navigation}
 
@@ -436,7 +436,7 @@ Use this prompt to look for existing implementations to use as starting points.
 * The [Block Collection](https://www.aem.live/developer/block-collection) is Adobe-maintained and vetted for best practices, excellent content modeling, high performance, and accessibility.
   * It is limited to commonly-needed blocks. Start here.
 * The [Block Party](https://www.aem.live/developer/block-party/) is community-driven and offers a broader variety including experimental approaches.
-  * It also includes plugins for the AEM Sidekick, the browser extension used to preview and publish EDS pages, as well as build tools (webpack, vite, sass) and integrations.
+  * It also includes plugins for the AEM Sidekick, the browser extension used to preview and publish pages, as well as build tools (webpack, vite, sass) and integrations.
   * Use when the Block Collection doesn't have what you need.
 * Think about alternative names when searching
   * FAQ = accordion
@@ -485,7 +485,7 @@ Use this prompt to validate code changes before opening a pull request.
 
 ### Debugging {#debugging}
 
-Use this prompt to troubleshoot problems with blocks, images, CSS, or preview. For deeper EDS diagnostics, EMA can turn on the EDS troubleshooting [optional capability](console.md#optional-capabilities) for your project.
+Use this prompt to troubleshoot problems with blocks, images, CSS, or preview. For deeper diagnostics, the agent can turn on the Edge Delivery Services troubleshooting [optional capability](console.md#optional-capabilities) for your project.
 
 #### Example Prompts {#example-debugging}
 

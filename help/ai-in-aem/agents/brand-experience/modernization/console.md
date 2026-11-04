@@ -28,7 +28,7 @@ role_v2:
 
 # Experience Modernization Console {#console-reference}
 
-The Experience Modernization Console is the web interface for the Experience Modernization Agent (EMA): the browser UI where you work with EMA. This reference describes its views, controls, and settings. The console works on a hosted copy of your project, which these docs call the console workspace. It is unrelated to Experience Workspace, the authoring UI; see [Names You May See](overview.md#names).
+The Experience Modernization Console is the web interface for the Experience Modernization Agent: the browser UI where you work with the agent. This reference describes its views, controls, and settings. The console works on a hosted copy of your project, which these docs call the console workspace. It is unrelated to Experience Workspace, the authoring UI; see [Names You May See](overview.md#names).
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ The Experience Modernization Console is the web interface for the Experience Mod
 
 ## Overview {#overview}
 
-The Experience Modernization Console is a hosted, AI-assisted development environment for Edge Delivery Services (EDS), at [`aemcoder.adobe.io`.](https://aemcoder.adobe.io) The page header shows the title **Adobe Experience Manager**. After you connect your GitHub project, you can start prompting changes in natural language without any further setup or local environment configuration. If you are new to the console, ask the agent in the chat for a tour of the console.
+The Experience Modernization Console is a hosted, AI-assisted development environment for Edge Delivery Services, at [`aemcoder.adobe.io`.](https://aemcoder.adobe.io) The page header shows the title **Adobe Experience Manager**. After you connect your GitHub project, you can start prompting changes in natural language without any further setup or local environment configuration. If you are new to the console, ask the agent in the chat for a tour of the console.
 
 >[!TIP]
 >
@@ -47,15 +47,15 @@ The Experience Modernization Console is a hosted, AI-assisted development enviro
 Core capabilities of the console:
 
 * Interactive chat panel, where you describe tasks to the agent and its skills in natural language
-* Previews of the console workspace and of the EDS preview site, so that you can check changes visually before and after you upload them
+* Previews of the console workspace and of the preview site, so that you can check changes visually before and after you upload them
 * Content file browser and [content views](#content-view) that show a page as a rendered preview, a document, Markdown, JCR XML, or HTML, so that you can check its content structure and conversion as well as its appearance
-* Content upload to the document-based repository that authors edit in [Experience Workspace](https://www.aem.live/docs/ew/about), or package creation and upload for [AEM authoring](getting-started-aem-authoring.md#upload-content), according to project configuration. Experience Workspace was formerly called Document Authoring, and the console still uses that name in some labels. See [Where Content Is Stored and How Authors Edit It](overview.md#content-storage).
+* Content upload to the document-based repository that authors edit in [Experience Workspace](https://www.aem.live/docs/ew/about), or package creation and upload for [Experience Manager authoring](getting-started-aem-authoring.md#upload-content), according to project configuration. Experience Workspace was formerly called Document Authoring, and the console still uses that name in some labels. See [Where Content Is Stored and How Authors Edit It](overview.md#content-storage).
 * Code browser and diff viewer, so that you can review exactly what changed before you push
 * GitHub integration with the ability to create pull requests from changes, so that agent changes go through your usual code review
 * [Site planning](#project-view), to inventory a source site and group its pages into templates before you migrate
 * [Optional capabilities](#optional-capabilities) that you turn on per project when a task needs them
 
-Review changes before saving to a shared destination. A code push is a Git commit to your repository; a content upload writes to Experience Workspace or AEM authoring. They are separate operations. The console pushes to a new pull request or directly to the current branch, so your repository's branch protection decides which changes need review. Plan mode changes how the agent works in the conversation, not what the repository or the site accepts. See [Control over Changes](overview.md#security-control).
+Review changes before saving to a shared destination. A code push is a Git commit to your repository; a content upload writes to Experience Workspace or the author instance. They are separate operations. The console pushes to a new pull request or directly to the current branch, so your repository's branch protection decides which changes need review. Plan mode changes how the agent works in the conversation, not what the repository or the site accepts. See [Control over Changes](overview.md#security-control).
 
 For complete procedures, choose [a way to start](getting-started.md#first-outcome), [production migration](production-migration.md), [restyling](restyling.md), or [block development](block-development.md).
 
@@ -69,7 +69,7 @@ After signing into the console at [aemcoder.adobe.io,](https://aemcoder.adobe.io
 
 The top menu bar provides:
 
-* An **Adobe Experience Manager** title on the left that links to the Home Page when clicked
+* An **Adobe Experience Manager** title on the left that links to the Home Page when selected
 * A **Demo site** button when you are working in the [demo site](getting-started.md#demo-mode). It explains that work there isn't saved and that the demo can't push code to GitHub or content to Experience Workspace. Use **Switch site** to connect your own site.
 * A **Request support** button where you can send details of any issues that were encountered. See [Request support](#request-support).
 * An **Account** button on the right for switching to dark mode and signing out of the console
@@ -100,16 +100,16 @@ The prompt input provides controls for interacting with the AI.
 
 ## Chat Page {#chat-page}
 
-The [**Chat** page](https://aemcoder.adobe.io/chat) is the main interface for interacting with EMA. This page is split into a resizable [chat panel](#chat-panel) and [workspace panel.](#workspace-panel)
+The [**Chat** page](https://aemcoder.adobe.io/chat) is the main interface for interacting with the agent. This page is split into a resizable [chat panel](#chat-panel) and [workspace panel.](#workspace-panel)
 
 ## Chat Panel {#chat-panel}
 
-The chat panel allows you to view and continue your conversation with EMA. The chat panel includes the chat message history and a [prompt input](#prompt-input) for making additional requests of the console.
+The chat panel allows you to view and continue your conversation with the agent. The chat panel includes the chat message history and a [prompt input](#prompt-input) for making additional requests of the console.
 
 The chat panel header includes links for navigating to the [Home](#home-page) and [Settings](#settings-page) views and chat actions.
 
 * **Chat actions**
-  * **Clear chat**: This starts a new conversation without the earlier history. It is not a code or content rollback. Before clearing, ask EMA to record important decisions in the [project instruction files](project-instructions.md) that it reads in every conversation.
+  * **Clear chat**: This starts a new conversation without the earlier history. It is not a code or content rollback. Before clearing, ask the agent to record important decisions in the [project instruction files](project-instructions.md) that it reads in every conversation.
   * **Download chat**: This downloads the conversation history as a markdown file.
 
 The conversation is saved with your console workspace. When you reload the page or return later, the chat history reloads. Prompts that you recall with the arrow keys last only as long as the browser tab.
@@ -118,9 +118,9 @@ The conversation is saved with your console workspace. When you reload the page 
 
 Core skills, such as site planning, page migration, bulk import, and header, navigation, and footer migration, are always available. Other capabilities are optional add-ons. Each add-on is off by default and is turned on per project, which keeps the agent lighter and faster for projects that don't need it.
 
-* When your request needs an add-on, EMA offers to turn it on and asks for your confirmation first. The add-on is available from your next message.
-* You can also ask for an add-on directly, for example "Enable the forms migration capability", or describe your task and accept EMA's offer.
-* To see which add-ons are on, ask EMA, for example "Which add-ons are enabled for this project?" To turn one off, ask EMA in the same way. The Settings page has no add-on controls yet.
+* When your request needs an add-on, the agent offers to turn it on and asks for your confirmation first. The add-on is available from your next message.
+* You can also ask for an add-on directly, for example "Enable the forms migration capability", or describe your task and accept the agent's offer.
+* To see which add-ons are on, ask the agent, for example "Which add-ons are enabled for this project?" To turn one off, ask in the same way. The Settings page has no add-on controls yet.
 
 | Add-on | ID | What it is for |
 |---|---|---|
@@ -128,17 +128,17 @@ Core skills, such as site planning, page migration, bulk import, and header, nav
 | Guided redesign (Stardust) | `stardust@excat-extended` | Redesigning several pages of a site to a new design direction, step by step, and checking the result. See [Guided Redesign](restyling.md#guided-redesign). |
 | Design craft | `impeccable@excat-extended` | Applying frontend design-quality guidance, such as typography, spacing, and visual hierarchy, to design work. Turned on automatically with guided redesign, and usable on its own. |
 | Project documentation | `project-management@excat-extended` | Generating project and handover documentation as PDF guides. See [Project documentation](project-documentation.md). |
-| Forms migration | `forms-excat@excat-extended` | Migrating AEM Forms-based forms to EDS forms. |
+| Forms migration | `forms-excat@excat-extended` | Migrating forms built with Experience Manager Forms to Edge Delivery Services forms. |
 | Commerce pages | `excat-commerce@excat-extended` | Detecting product detail and product listing pages and migrating them into commerce page templates. |
 | Block library setup | `excat-block-library@excat-extended` | Setting up the library that authors use to find and insert your blocks. See [Block deliverables](block-development.md#block-deliverables). |
-| EDS troubleshooting | `excat-support@excat-extended` | Diagnosing EDS problems on demand, such as blocks that don't render or changes that don't appear. See [Debugging](prompting-guide.md#debugging). |
+| Edge Delivery Services troubleshooting | `excat-support@excat-extended` | Diagnosing site problems on demand, such as blocks that don't render or changes that don't appear. See [Debugging](prompting-guide.md#debugging). |
 | Modern web guidance | `modern-web-guidance@excat-extended` | Applying current web-platform best practices, for example for fonts, loading performance, accessibility, and layout, when the agent writes CSS and JavaScript. |
 
-The add-ons on offer can change between releases. If EMA says that it can't do something, ask whether an add-on covers it.
+The add-ons on offer can change between releases. If the agent says that it can't do something, ask whether an add-on covers it.
 
 #### Turn On Add-ons for the Whole Project {#persist-add-ons}
 
-EMA saves the add-ons that you turn on in the `.agents/settings.json` file at the root of your repository. The file lists each add-on by its ID:
+The agent saves the add-ons that you turn on in the `.agents/settings.json` file at the root of your repository. The file lists each add-on by its ID:
 
 ```json
 {
@@ -149,7 +149,7 @@ EMA saves the add-ons that you turn on in the `.agents/settings.json` file at th
 }
 ```
 
-Push this file with your code. Every workspace that checks out the repository, including your team members' workspaces and new conversations, then starts with the same add-ons, without asking for them again. You can also ask EMA to change the file, or edit it in your Git repository and pull the change into the console. To turn an add-on off, set its value to `false` or remove its line. A change takes effect from your next message.
+Push this file with your code. Every workspace that checks out the repository, including your team members' workspaces and new conversations, then starts with the same add-ons, without asking for them again. You can also ask the agent to change the file, or edit it in your Git repository and pull the change into the console. To turn an add-on off, set its value to `false` or remove its line. A change takes effect from your next message.
 
 ## Workspace Panel {#workspace-panel}
 
@@ -159,39 +159,39 @@ The workspace panel displays working content and code for the connected project,
 
 | Result | What it establishes | What remains to check |
 |---|---|---|
-| Console preview of workspace content | The working content renders with the current code in the console workspace. | Upload, remote authorability, and EDS preview. |
-| Static design preview | A design or prototype renders. | Conversion to authorable EDS content, if required. |
-| Remote authoring content | Documents in Experience Workspace or JCR pages on the AEM author instance have been saved. | Edit/save/reopen, the matching code version, and preview. |
-| EDS preview site (`*.aem.page`) | Saved content renders with the code branch in that URL. | Release acceptance and publication. |
+| Console preview of workspace content | The working content renders with the current code in the console workspace. | Upload, remote authorability, and the preview site. |
+| Static design preview | A design or prototype renders. | Conversion to authorable content, if required. |
+| Remote authoring content | Documents in Experience Workspace or JCR pages on the author instance have been saved. | Edit/save/reopen, the matching code version, and preview. |
+| Preview site (`*.aem.page`) | Saved content renders with the code branch in that URL. | Release acceptance and publication. |
 | Published site (`*.aem.live`) | The release is visible on the live destination. | Post-release checks and monitoring. |
 
 ### How the Preview Works {#how-preview-works}
 
-The console preview isn't an AEM environment. It runs the [AEM CLI](https://www.aem.live/developer/cli-reference) (`aem up`) in your workspace: the same local development server that EDS developers run on their own computers. It serves your workspace's code with the content pages in your workspace. Anything else that a page requests, such as a fragment or a spreadsheet that isn't in your workspace, comes from the EDS preview site of the workspace's current branch, `https://{branch}--{site}--{organization}.aem.page`.
+The console preview isn't an Experience Manager environment. It runs the [AEM CLI](https://www.aem.live/developer/cli-reference) (`aem up`) in your workspace: the same local development server that developers run on their own computers. It serves your workspace's code with the content pages in your workspace. Anything else that a page requests, such as a fragment or a spreadsheet that isn't in your workspace, comes from the preview site of the workspace's current branch, `https://{branch}--{site}--{organization}.aem.page`.
 
-The result can differ from the EDS preview site after you upload, because EDS processes content that the console preview shows as it is. When EDS previews a page, it ingests the content and keeps only the structure of [sections, blocks, and default content](https://www.aem.live/developer/markup-sections-blocks). Extra elements such as `span` tags, data attributes, and inline styles are removed. See [Bring Your Own Markup](https://www.aem.live/developer/byom). The console preview reproduces a few of these steps, such as wrapping a standalone image or link in a paragraph and adding heading IDs, so it comes close, but it doesn't remove anything.
+The result can differ from the preview site after you upload, because Edge Delivery Services processes content that the console preview shows as it is. When it previews a page, it ingests the content and keeps only the structure of [sections, blocks, and default content](https://www.aem.live/developer/markup-sections-blocks). Extra elements such as `span` tags, data attributes, and inline styles are removed. See [Bring Your Own Markup](https://www.aem.live/developer/byom). The console preview reproduces a few of these steps, such as wrapping a standalone image or link in a paragraph and adding heading IDs, so it comes close, but it doesn't remove anything.
 
 Watch for these differences:
 
-* **Markup that EDS removes:** Inline styles, `span` elements, data attributes, and other markup outside the EDS structure show in the console preview but disappear on `aem.page`. Keep pages to semantic content, and put styling in the project's CSS. The project's JavaScript can still restructure the page in the browser, which works the same in both places.
+* **Markup that Edge Delivery Services removes:** Inline styles, `span` elements, data attributes, and other markup outside that structure show in the console preview but disappear on `aem.page`. Keep pages to semantic content, and put styling in the project's CSS. The project's JavaScript can still restructure the page in the browser, which works the same in both places.
 * **Content from the preview site:** Fragments, spreadsheets, and other files that aren't in your workspace show the version last previewed on the branch's preview site.
 * **Images:** An image can show in the console preview and still be broken on `aem.page` if it didn't upload correctly. Upload the page again.
-* **AEM authoring projects:** The upload converts each page into JCR content that must fit the project's component models. The preview shows the page before that conversion. Check the converted structure in the **JCR XML view** before you upload, and the page in the Universal Editor after.
+* **Experience Manager authoring projects:** The upload converts each page into JCR content that must fit the project's component models. The preview shows the page before that conversion. Check the converted structure in the **JCR XML view** before you upload, and the page in the Universal Editor after.
 
-To check a page as EDS delivers it, upload it, preview it, and open it on the branch's `aem.page` URL. See [Console Preview Differs from the Site](getting-started.md#preview-differs).
+To check the delivered page, upload it, preview it, and open it on the branch's `aem.page` URL. See [Console Preview Differs from the Site](getting-started.md#preview-differs).
 
 ### Content Views {#content-view}
 
 The **Content views** show the selected page in different forms, so that you can check each aspect of the result. A collapsible file browser lists the pages of your site:
 
 * Pages in your workspace show as files.
-* Pages that exist only in the content destination show a cloud icon. In document-based projects, these are the pages in Experience Workspace. In other projects, including AEM authoring projects, they are the pages that have been previewed or published on EDS. Opening a cloud page downloads it into your workspace.
+* Pages that exist only in the content destination show a cloud icon. In document-based projects, these are the pages in Experience Workspace. In other projects, including Experience Manager authoring projects, they are the pages that have been previewed or published. Opening a cloud page downloads it into your workspace.
 
 * **Preview** (document with magnifying glass icon) renders the selected page from your workspace's current code and content. Use it to check the page as visitors see it. It doesn't update the authoring environment or your Git repository. See [How the Preview Works](#how-preview-works).
 * **Document view** (document icon) shows the underlying document-based content structure. Use it to check how content is organized into sections, blocks, and default content.
 * **HTML view** (code icon) shows the raw HTML. Use it to debug rendering and block decoration.
-* **Markdown view (AEM authoring)** (paragraph icon) shows the underlying Markdown content structure. Use it to check the content before conversion.
-* **JCR XML view (AEM authoring)** (data icon) shows the resulting JCR XML content structure. Use it to check what will be imported into the AEM author instance.
+* **Markdown view** (paragraph icon, Experience Manager authoring) shows the underlying Markdown content structure. Use it to check the content before conversion.
+* **JCR XML view** (data icon, Experience Manager authoring) shows the resulting JCR XML content structure. Use it to check what will be imported into the author instance.
 
 ![Content view](assets/content-imported.png)
 
@@ -201,14 +201,14 @@ The following actions are available in the content views:
 * **Viewport** menu to view the rendered page at **Responsive** width (the default, which fills the panel) or at a fixed **Desktop**, **Tablet**, or **Mobile** size
 * **Inspect mode** (select icon) to add elements of the page to your prompt for additional context. The agent receives the selected element's HTML and its position on the page, and limits its changes to that element.
 * **New window** (open in icon) to open the preview URL in a new tab (for a full desktop preview)
-* **Edit in Experience Workspace** (document-based projects) opens the selected page in the Experience Workspace visual editor, the `da.live` canvas, in a new tab, previewed with the console workspace's current branch. If the page has local changes that are not yet uploaded to Experience Workspace, the console first offers **Upload & Edit**, so that you don't edit an older version. AEM authoring projects use the Universal Editor instead.
+* **Edit in Experience Workspace** (document-based projects) opens the selected page in the Experience Workspace visual editor, the `da.live` canvas, in a new tab, previewed with the console workspace's current branch. If the page has local changes that are not yet uploaded to Experience Workspace, the console first offers **Upload & Edit**, so that you don't edit an older version. Experience Manager authoring projects use the Universal Editor instead.
 * **Delete** removes the selected page from the console workspace, one page at a time. It can't be undone, and it does not delete uploaded, previewed, or published content. If the page exists in the content destination, it appears again with the cloud icon, and opening it downloads the saved version. You can't delete a cloud page. See [Remove Pages](getting-started.md#remove-pages).
-* **Errors** button (AEM authoring) opens a modal window to view the errors on the selected page.
+* **Errors** button (Experience Manager authoring) opens a modal window to view the errors on the selected page.
 * **Upload content** opens the destination-specific upload or package dialog. Check destination paths and overwrite implications before proceeding.
 
 ![Upload content](assets/upload-content.png)
 
-After an upload to Experience Workspace (Document Authoring), the results dialog shows which files were uploaded and lets you preview, or preview and publish, the uploaded pages on the EDS preview and live sites. This runs as a tracked job: it continues if you leave the dialog, and **View Details** in the notification reopens its results. Retry failed pages from the results. If no page previews successfully, nothing is published.
+After an upload to Experience Workspace (Document Authoring), the results dialog shows which files were uploaded and lets you preview, or preview and publish, the uploaded pages on the preview and live sites. This runs as a tracked job: it continues if you leave the dialog, and **View Details** in the notification reopens its results. Retry failed pages from the results. If no page previews successfully, nothing is published.
 
 Content changes made by the agent stay in the console workspace until you upload them or explicitly ask the agent to update Experience Workspace. Turning on [agent permissions](#settings-page) does not approve uploads or publication.
 
@@ -216,11 +216,11 @@ Content changes made by the agent stay in the console workspace until you upload
 
 Sync connects your [independent console workspace](overview.md#independent-workspace) to your project's Git repository and content destination. Pushing code and pushing content are separate operations, and you choose which changed files or pages to send. Changes that you leave in the console workspace don't affect the project.
 
-The **Sync** button in the workspace header shows a badge with the number of pending changes. Open it to move content and code between the console workspace and their remote locations: Experience Workspace or the AEM author instance for content, and your Git repository for code.
+The **Sync** button in the workspace header shows a badge with the number of pending changes. Open it to move content and code between the console workspace and their remote locations: Experience Workspace or the author instance for content, and your Git repository for code.
 
 |Section|Item|What it does|
 |---|---|---|
-|**Push**|**Content**|Opens the upload dialog, the same as **Upload content**, where you select the pages to upload to Experience Workspace (Document Authoring) or the AEM author instance. Each upload replaces the saved version of the page, including changes that others made to it. It does not commit anything to Git. Shows how many pages are pending, or **Up to date**, and a progress bar while pushing.|
+|**Push**|**Content**|Opens the upload dialog, the same as **Upload content**, where you select the pages to upload to Experience Workspace (Document Authoring) or the author instance. Each upload replaces the saved version of the page, including changes that others made to it. It does not commit anything to Git. Shows how many pages are pending, or **Up to date**, and a progress bar while pushing.|
 |**Push**|**Code**|Opens **Stage changes** and then **Push changes** for the changed files; see [Changes actions](#changes-actions). Requires the [AEM Code Connector](https://github.com/apps/aem-code-connector) GitHub app; the menu offers **Install AEM Code Connector** if it is missing.|
 |**Pull**|**Content**|Document-based projects only. Downloads your Experience Workspace (Document Authoring) pages over the console workspace copies, including local edits. Pages that exist only in the console workspace are kept. This cannot be undone.|
 |**Pull**|**Code**|Pulls the latest commits of the workspace's current branch from your Git repository. Unavailable while the console workspace has uncommitted files; push or discard them first. If your changes conflict with the remote changes, the console cancels the pull and leaves your work as it was; see [If Someone Else Changed the Branch](getting-started.md#push-conflicts). To pull another branch, switch to it first with **Switch branch**.|
@@ -236,7 +236,7 @@ The **Code views** provides tools for browsing your project files and managing c
 
 >[!NOTE]
 >
->The file views don't show files and folders at the root of the repository whose names start with a dot, such as `.github/`, `.claude/`, or `.hlxignore`. The exceptions are `.gitignore`, `.agents/`, and folders that EMA manages. You can't stage or push changes to hidden items from the console. To change them, edit them in GitHub or in a local clone, then pull the code into the console.
+>The file views don't show files and folders at the root of the repository whose names start with a dot, such as `.github/`, `.claude/`, or `.hlxignore`. The exceptions are `.gitignore`, `.agents/`, and folders that the agent manages. You can't stage or push changes to hidden items from the console. To change them, edit them in GitHub or in a local clone, then pull the code into the console.
 
 ![Code view](assets/code-view.png)
 
@@ -275,7 +275,7 @@ The [**Settings** page](https://aemcoder.adobe.io/settings) allows you to manage
 
 ![Settings view](assets/settings-view.png)
 
-If you make a change to any value in any section, click **Save** to save those changes to the individual section. For agent permissions, site authentication, and credentials, the button shows **Applying...** until the change takes effect. Click the back icon to return to your previous view.
+If you make a change to any value in any section, select **Save** to save those changes to the individual section. For agent permissions, site authentication, and credentials, the button shows **Applying...** until the change takes effect. Select the back icon to return to your previous view.
 
 * **Project** allows you to view and edit project settings such as managing your GitHub connection and customizing the library URL.
   * **Connect / Reconnect**: Initiates GitHub authentication
@@ -284,7 +284,7 @@ If you make a change to any value in any section, click **Save** to save those c
   * **Library URL** - This URL points to a `library.json` file that defines the blocks available to authors, their variations, and example content.
   * **Site base URL** - The origin URL of the website being migrated
 * **Agent permissions** - Control what the agent may access on your behalf. Each permission is off until you turn it on and save it. The agent uses a permission without receiving the credential itself. See [Security and Data Handling.](overview.md#security)
-  * **Allow LLM to use my Adobe credentials for admin.hlx.page, Document Authoring, and repositories hosted outside GitHub** - In the **Adobe IMS permissions (admin.hlx.page & Document Authoring)** section. When enabled, the agent can read site configuration and metadata, read Experience Workspace (Document Authoring) content, and push to and pull from repositories hosted outside GitHub, using your Adobe credentials. `admin.hlx.page` is the EDS admin API; `hlx` comes from Helix, the project name under which the EDS architecture was developed. This does not approve publishing: EMA blocks the agent's uploads, previews, and publication when your current message doesn't ask for them. The check reads your message, so it can't catch every phrasing; limit who can publish with the site's publish role.
+  * **Allow LLM to use my Adobe credentials for admin.hlx.page, Document Authoring, and repositories hosted outside GitHub** - In the **Adobe IMS permissions (admin.hlx.page & Document Authoring)** section. When enabled, the agent can read site configuration and metadata, read Experience Workspace (Document Authoring) content, and push to and pull from repositories hosted outside GitHub, using your Adobe credentials. `admin.hlx.page` is the admin API of Edge Delivery Services; `hlx` comes from Helix, the project name under which its architecture was developed. This does not approve publishing: the console stops the agent from uploading, previewing, or publishing when your current message doesn't ask for it. The check reads your message, so it can't catch every phrasing; limit who can publish with the site's publish role.
   * **Custom IMS Token (optional)** - Provide a token to use instead of your session token. IMS is Adobe's identity service, which issues the token for your Adobe ID session. Prefer a service account token over a personal token where possible.
   * **Allow LLM to use my git credentials** - Where available, lets the agent push to and pull from your GitHub repositories on your behalf. If you don't see this setting, it isn't available to you yet; push the agent's changes yourself with **Sync** > **Push** > **Code**. When it's on, the agent can push to any repository and branch that your GitHub credentials can write to, including `main`. Your repository's branch protection still applies. This grants elevated access; use a scoped token if offered.
 * **Credentials** allows you to specify a personal access token for Figma so the [console can access design blocks for your project.](prompting-guide.md#figma-block-migration)
@@ -302,7 +302,7 @@ If you make a change to any value in any section, click **Save** to save those c
   * **Show prompt hints** turns the hints on or off.
   * Further options can check prompts on your device, which downloads a model to your browser. Turning such an option off removes the downloaded model.
 * **Support** summarizes information shared with the Adobe support team when you make a support request.
-  * **Request support** - Click to initiate a [support request](#request-support) without leaving the console.
+  * **Request support** - Select it to open a [support request](#request-support) without leaving the console.
 * **Danger zone** contains settings that can revert your console workspace.
   * **Reset workspace** - Permanently deletes the console workspace's chat history, files, and session state, and disconnects GitHub. To confirm, you type `delete everything`. This cannot be undone. Code that you pushed and content that you uploaded stay in their remote locations, but unpushed and unuploaded work is lost. Save needed code and content first; reset is not a remote-content recovery tool.
 
@@ -321,7 +321,7 @@ The source site must be reachable from the agent's hosted environment on the int
 To configure access:
 
 1. Open **Settings** in the Experience Modernization Console and find **Protected site authentication**.
-1. Click **Add site**.
+1. Select **Add site**.
 1. Enter the **Site hostname**, such as `staging.example.com`. Enter only the hostname, without `https://` or a URL path.
 1. Select an **Authentication type** and enter the corresponding values.
 
@@ -331,7 +331,7 @@ To configure access:
    | Basic (username & password) | **Username** and **Password** for HTTP Basic authentication. |
    | Bearer authentication | The bearer token accepted by your source website. |
 
-1. Click **Save** in the **Protected site authentication** section. The section shows **Applying...** until the change takes effect, which can take up to about two minutes.
+1. Select **Save** in the **Protected site authentication** section. The section shows **Applying...** until the change takes effect, which can take up to about two minutes.
 1. Ask the agent to scrape or migrate the source website using its URL as usual.
 
 ![Protected site authentication settings with example custom header and HTTP Basic authentication entries](assets/protected-site-authentication.png)
@@ -342,7 +342,7 @@ Use scoped, least-privilege credentials, preferably a dedicated account with rea
 
 Verify one representative protected page before you start a catalog or batch run, and check that captures show the page content rather than a sign-in page.
 
-To remove access, click **Remove site** for the entry and then click **Save**. Remove the entry when the migration is complete.
+To remove access, select **Remove site** for the entry and then select **Save**. Remove the entry when the migration is complete.
 
 ### Request Support {#request-support}
 

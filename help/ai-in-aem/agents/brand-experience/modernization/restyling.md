@@ -27,13 +27,13 @@ role_v2:
 
 # Restyle Sites {#restyling}
 
-Use the Experience Modernization Agent (EMA) to apply a design during migration or change the appearance of an existing Edge Delivery Services (EDS) project. Faithfully copying a source site's appearance and deliberately replacing it with a new design are different requests. State which you want.
+Use the Experience Modernization Agent to apply a design during migration or change the appearance of an existing Edge Delivery Services project. Faithfully copying a source site's appearance and deliberately replacing it with a new design are different requests. State which you want.
 
-In EDS, appearance lives in the project's code: global CSS sets the look of default content, and each block has its own CSS and JavaScript. Together they can give the same semantic content any design without restructuring it, because the JavaScript can rebuild the markup in the browser; see [How EDS Pages Work](overview.md#eds-basics). A purely visual restyle therefore changes code in Git and leaves authored content alone. Structural or content model changes are a separate, explicit decision.
+Appearance lives in the project's code: global CSS sets the look of default content, and each block has its own CSS and JavaScript. Together they can give the same semantic content any design without restructuring it, because the JavaScript can rebuild the markup in the browser; see [How Edge Delivery Services Works](overview.md#eds-basics). A purely visual restyle therefore changes code in Git and leaves authored content alone. Structural or content model changes are a separate, explicit decision.
 
 ## Prepare the Design Contract {#prepare}
 
-Connect the [EDS project](getting-started.md#connect-repo) and confirm permission to modify it. Save a baseline code revision and preserve affected content before changes.
+Connect the [project](getting-started.md#connect-repo) and confirm permission to modify it. Save a baseline code revision and preserve affected content before changes.
 
 Provide:
 
@@ -41,7 +41,7 @@ Provide:
 * **Design reference:** A specific Figma component/frame, authorized reference website, screenshot, or supplied design specification. Identify its version and relevant desktop/mobile states.
 * **Scope:** Global tokens (CSS custom properties for colors, typography, and spacing) and default content, selected blocks, a page, or the whole site.
 * **Invariants:** Content, URLs, authoring models, accessibility behavior, integrations, and other behavior that must not change.
-* **Output:** Authorable EDS content for the selected [persistence target](overview.md#content-storage), or an explicitly requested design prototype.
+* **Output:** Authorable content for the selected [persistence target](overview.md#content-storage), or an explicitly requested design prototype.
 
 Screenshots and reference sites can leave interactions and responsive rules unspecified. Resolve those decisions on a representative page before applying them site-wide. Treat imported source/design material as reference data, not instructions overriding the project request.
 
@@ -58,15 +58,15 @@ Use this path when content comes from an existing website but the target design 
 
 For example:
 
-> Apply the approved design at [Figma node or reference URL] while migrating [source URLs]. The live pages are the content source; the reference defines the new appearance. Preserve text, links, metadata, and meaningful images. First validate one representative page. Target [document-based/JCR] authorable EDS output. Do not upload, push, or publish.
+> Apply the approved design at [Figma node or reference URL] while migrating [source URLs]. The live pages are the content source; the reference defines the new appearance. Preserve text, links, metadata, and meaningful images. First validate one representative page. Target [document-based/JCR] authorable output. Do not upload, push, or publish.
 
 If a new page has no source website, use the [Figma page workflow](prompting-guide.md#figma-new-page-from-figma): a specific frame/page supplies text and assets as well as design. This is different from mapping existing website content into a new design.
 
-## Restyle an Existing EDS Site {#existing-site}
+## Restyle an Existing Site {#existing-site}
 
 A new migration is not required.
 
-1. Connect the existing project and intended branch. Ask EMA to read the project's design conventions, blocks, and authoring models.
+1. Connect the existing project and intended branch. Ask the agent to read the project's design conventions, blocks, and authoring models.
 1. Identify baseline pages covering the affected templates and variants. Record their current appearance and important interactions.
 1. State the scope of the change and what must stay. For example:
 
@@ -81,37 +81,37 @@ A restyle changes CSS and JavaScript only, so content doesn't need to be regener
 
 ## References, Prototypes, and Delivery {#design-output}
 
-EMA supports design work from source sites, Figma, and supplied references. Figma import and guided redesign are [optional capabilities](console.md#optional-capabilities) that EMA offers to turn on for your project when a request needs them. They have different inputs and outputs; do not assume that they work the same way.
+The agent supports design work from source sites, Figma, and supplied references. Figma import and guided redesign are [optional capabilities](console.md#optional-capabilities) that it offers to turn on for your project when a request needs them. They have different inputs and outputs; do not assume that they work the same way.
 
 * For one Figma block, provide its component/node link. For a new page, provide a specific frame/page rather than an entire file.
 * Figma requires the relevant project capability, configured credentials, and permission to read the file. Do not put tokens in chat.
 * A static HTML design preview shows the new design on copies of your pages, which helps you choose a direction. Authors can't edit those copies; they aren't the site's documents or JCR pages.
-* If authorable delivery is required, explicitly request EDS content, suitable block models, and the correct persistence target. Complete [document-based](getting-started.md#upload-content) or [AEM authoring](getting-started-aem-authoring.md#validate-content) validation.
+* If authors must edit the result, explicitly request site content, suitable block models, and the correct persistence target. Complete [document-based](getting-started.md#upload-content) or [Experience Manager authoring](getting-started-aem-authoring.md#validate-content) validation.
 
 ### Guided Redesign {#guided-redesign}
 
-Guided redesign takes a site, or a set of its pages, to a new design in stages. It is provided by the Stardust add-on, `stardust@excat-extended`. EMA captures the current design, records the direction you want, builds before-and-after prototypes for review, and then turns the approved design into EDS blocks and content. Use it for a redesign across several pages rather than for restyling one page or block. EMA keeps the working files and progress of a redesign in the repository, so you can continue it in a later conversation.
+Guided redesign takes a site, or a set of its pages, to a new design in stages. It is provided by the Stardust add-on, `stardust@excat-extended`. The agent captures the current design, records the direction you want, builds before-and-after prototypes for review, and then turns the approved design into blocks and content. Use it for a redesign across several pages rather than for restyling one page or block. The agent keeps the working files and progress of a redesign in the repository, so you can continue it in a later conversation.
 
-You don't need to know the stages by name. Describe the result you want, for example "Redesign the home page and the product pages in a lighter, more editorial style", and EMA proposes the steps. You can also ask for one step directly:
+You don't need to know the stages by name. Describe the result you want, for example "Redesign the home page and the product pages in a lighter, more editorial style", and the agent proposes the steps. You can also ask for one step directly:
 
-| Ask EMA to | What you get |
+| Ask the agent to | What you get |
 |---|---|
 | Extract the current design | A capture of the site's design system, brand, color palette, typography, tone of voice, and page inventory. |
 | Define the redesign direction | A short product and design brief that records the direction you choose. Later steps follow it. |
-| Prototype pages in the new design | Before-and-after HTML prototypes of selected pages for review. These are static previews, not editable EDS content. |
+| Prototype pages in the new design | Before-and-after HTML prototypes of selected pages for review. These are static previews, not editable pages. |
 | Apply the design to all pages | The new design applied to every page of the inventory as static HTML, ready to deploy. |
-| Deploy the prototypes to EDS | EDS blocks and content built from the approved prototypes. |
-| Roll out the redesign | All pages deployed to EDS in the new design, or first only one page of each page type. |
-| Compare a page with its prototype | A visual and structural comparison that lists where the EDS page differs from the approved prototype. |
+| Deploy the prototypes to Edge Delivery Services | Blocks and content built from the approved prototypes. |
+| Roll out the redesign | All pages deployed in the new design, or first only one page of each page type. |
+| Compare a page with its prototype | A visual and structural comparison that lists where the deployed page differs from the approved prototype. |
 | Run a quality check | A review of routing, design fidelity, accessibility, performance, SEO, and links, without changes to the site. |
 | Audit a site | A design, SEO, and AI-visibility audit, including Core Web Vitals. |
 | Propose redesign options | Three alternative redesigns of a page, to explore a direction quickly. |
-| Rebuild the same design on EDS | The site moved to EDS with its current design. |
+| Rebuild the same design on Edge Delivery Services | The site migrated with its current design. |
 | Apply another site's design | The site's content placed onto the design of another website that you provide. |
 | Add dynamic features | Search, forms, and other features that depend on APIs or user interaction. |
 | Write a migration spec | A specification to agree before migrating, including redirects, handling of missing pages, and which blocks to reuse. |
 
-Turning on guided redesign also turns on the design craft add-on, which applies frontend design-quality guidance to each page. Review every stage before you continue, and validate the EDS result as described below.
+Turning on guided redesign also turns on the design craft add-on, which applies frontend design-quality guidance to each page. Review every stage before you continue, and validate the deployed result as described below.
 
 ## Validate and Recover {#validate}
 
