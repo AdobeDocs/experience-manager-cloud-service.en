@@ -47,7 +47,7 @@ This page lists the user-facing changes in each release of the Experience Modern
 * Agent guidance uses plain language instead of internal migration terms.
 * Long task lists scroll within the chat, and you can expand or collapse the pending tasks.
 * Preview now uses the site configuration to find the correct code repository.
-* The agent recognizes requests to restore or preview a page in Experience Workspace (formerly Document Authoring), and explains when writing to remote content is not allowed.
+* The agent recognizes requests to restore or preview a page in Experience Workspace (which replaces Document Authoring), and explains when writing to remote content is not allowed.
 * Conversations with many screenshots no longer fail. Older screenshots are shortened automatically.
 * **Upload to AEM** for AEM authoring projects fails less often.
 
@@ -72,7 +72,7 @@ This page lists the user-facing changes in each release of the Experience Modern
 ### What's New {#release-2026-10-23-what-is-new}
 
 * **Improved site catalog:** Cataloging breaks pages into the blocks that an author actually edits, groups pages with the same layout into one template, and checks the results after scoping. Block mapping uses visual analysis, which produces fewer variants, cleaner templates, and cleaner screenshots. Your manual splits and moves are kept when you run it again. See [Site catalog.](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
-* **Pull content from Experience Workspace:** The **Sync** menu has a **Pull** section. **Pull** > **Content** downloads your Experience Workspace (formerly Document Authoring) pages over the workspace copies and keeps pages that exist only in the workspace. **Pull** > **Code** replaces the **Pull** button of the code view. See [Sync menu.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#sync-menu)
+* **Pull content from Experience Workspace:** The **Sync** menu has a **Pull** section. **Pull** > **Content** downloads your Experience Workspace (which replaces Document Authoring) pages over the workspace copies and keeps pages that exist only in the workspace. **Pull** > **Code** replaces the **Pull** button of the code view. See [Sync menu.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#sync-menu)
 
 ### Other Improvements {#release-2026-10-23-other-improvements}
 
@@ -264,7 +264,7 @@ This page lists the user-facing changes in each release of the Experience Modern
 
 ### What's New {#release-2026-08-13-what-is-new}
 
-* **Custom block library from chat:** Ask the agent to generate a block library for your custom blocks, including sample content and library configuration, for Experience Workspace (formerly Document Authoring) or AEM authoring. See [Block deliverables.](/help/ai-in-aem/agents/brand-experience/modernization/block-development.md#block-deliverables)
+* **Custom block library from chat:** Ask the agent to generate a block library for your custom blocks, including sample content and library configuration, for Experience Workspace (which replaces Document Authoring) or AEM authoring. See [Block deliverables.](/help/ai-in-aem/agents/brand-experience/modernization/block-development.md#block-deliverables)
 
 ### Other Improvements {#release-2026-08-13-other-improvements}
 

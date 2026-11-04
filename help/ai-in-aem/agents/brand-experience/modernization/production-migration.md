@@ -69,6 +69,16 @@ For a new implementation, Adobe strongly recommends document-based persistence w
 
 Page import copies each page's content and design. Integrations and CMS features run on the source's servers, such as search, form processing, personalization rules, and content inheritance, so import copies only their output on each page. List them under **Behavior** and decide how each works on the new site. See [Limitations](overview.md#limitations).
 
+### Relaunch a Site That Runs on Experience Manager {#relaunch-aem-site}
+
+When your team has decided to relaunch a site that runs on Experience Manager Sites today, the workflow is the same as for any other source. These points are specific to that case:
+
+* **Your other sites:** The agent reads the source site's pages and doesn't change the source. It writes only to the new site's Git repository and to the content destination that you choose, so your organization's other Experience Manager sites keep running as they are, and so does the source site until you switch its domain at [release](#handoff). With Experience Manager authoring, the upload writes the pages under the project's site path, `/content/{site-name}`, and the images under its Experience Manager Assets folder on the author instance, and replaces any page that already exists there. Agree both with the author instance's administrator. See [Upload Content](getting-started-aem-authoring.md#upload-content).
+* **How the agent reads the source:** As for any other source, the agent reads each page as a browser renders it, not the source's components, templates, or repository. Components, experience fragments, and content inheritance therefore don't carry over as such: their output appears on each page. Decide which shared content to keep once on the new site. See [Limitations](overview.md#limitations) and [What Remains Project Work](evaluate.md#project-work).
+* **Where content goes:** The source doesn't decide the destination. For a new implementation, Adobe strongly recommends document-based persistence with Experience Workspace. Experience Manager authoring with JCR persistence and the Universal Editor remains fully supported when a requirement depends on content staying in the JCR. It needs an Experience Manager as a Cloud Service author instance: if your current author instance runs elsewhere, it can't be the destination. See [Where Content Is Stored and How Authors Edit It](overview.md#content-storage).
+* **Images and repositories:** The images that a page uses are uploaded with the page, and images that the source serves from Dynamic Media stay there. See [Images and Documents](#assets). If your code is in a repository connected through Cloud Manager, the console works with it too. See [Use Another Git Host](getting-started.md#other-git).
+* **Decisions for your team:** Languages, inheritance between markets, and approval workflows are your team's decisions. Import gives you the pages at their source paths, not these structures. Record them with the other scope decisions before you catalog.
+
 ## Prepare and Catalog {#prepare}
 
 1. Follow [shared console setup](getting-started.md#repo-start), or [Experience Manager authoring setup](getting-started-aem-authoring.md#create-repo) for a JCR-backed project. Reuse an existing project's configuration rather than recreate it.
@@ -95,6 +105,17 @@ Start with one template and a small set of pages. For example:
 1. Record the accepted source-to-output mapping, models, design decisions, and known exceptions before expanding the batch.
 
 A matching screenshot is insufficient if authors cannot maintain the result. For JCR-backed projects, check models, generated component configuration, conversion errors, and asset destinations before scaling.
+
+### Estimate Before You Commit {#estimate}
+
+The catalog and the first representatives give you an estimate based on the work that the site needs, not on its page count:
+
+1. Catalog the site. The catalog lists the templates, block variants, and locales, and the URLs that failed. See [Prepare and Catalog](#prepare).
+1. Validate representatives of the main templates. Record what each one needed: new blocks, corrections to import scripts, styling, and changes to the content structure.
+1. Size the remaining templates from what the representatives needed. Later templates reuse the blocks that already exist, so count the blocks that each one adds. A page with a layout of its own counts as a template of its own.
+1. Add the items that import doesn't cover: the behavior that you recorded under **Behavior** in the [scope](#scope), and the [project work](evaluate.md#project-work) that your team decides and builds.
+
+Corrections land in reusable blocks and import scripts, so after the representatives you can see the work for each template: the blocks and scripts that it needed and the corrections that it took. Check the estimate against the first batch's [reconciliation record](#batches).
 
 ## Import in Batches {#batches}
 

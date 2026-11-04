@@ -144,6 +144,10 @@ Yes. Describe it in the migration prompt, write lasting conventions in the proje
 
 No. The agent loads each source page in a browser and works from what it renders: the content and design that visitors see. Features that run on the source's servers, such as personalization rules, search, or form processing, aren't in the rendered page, so decide how each works on the new site. See [Limitations](overview.md#limitations).
 
+### Can I relaunch a site that runs on Adobe Experience Manager today? {#relaunch-aem-site}
+
+Yes. The agent reads its pages as a browser renders them, like any other source, and doesn't change the source site or your other Experience Manager sites. Components, experience fragments, and content inheritance don't carry over as such: their output appears on each page. For the destination, Adobe strongly recommends document-based persistence with Experience Workspace for a new implementation; Experience Manager authoring with JCR persistence needs an Experience Manager as a Cloud Service author instance. See [Relaunch a Site That Runs on Experience Manager](production-migration.md#relaunch-aem-site).
+
 ### What if the source site uses bot protection? {#bot-protection}
 
 Ask the site's administrator to allow access for the migration, for example by allowlisting the agent's backend addresses or by giving you a credential such as a secret header. Don't work around the protection. See [Source Sites with Bot Protection](troubleshooting.md#bot-protection).
@@ -276,7 +280,7 @@ Complex enterprise sites. Each page is standard HTML, CSS, and JavaScript, so a 
 
 ### How does the agent relate to Experience Workspace? {#experience-workspace}
 
-Experience Workspace is where authors edit the document-based content that the agent uploads. From the console, **Edit in Experience Workspace** opens a page there. You work with the agent itself in the Experience Modernization Console, at [`aemcoder.adobe.io`](https://aemcoder.adobe.io). See [Content Views](console.md#content-view).
+Experience Workspace is where authors edit the document-based content that the agent uploads. From the console, **Edit in Experience Workspace** opens a page there. You work with the agent itself in the Experience Modernization Console, at [`aemcoder.adobe.io`](https://aemcoder.adobe.io): there it builds and changes the site's code, and imports and uploads its content. Experience Workspace has its own [assistant](https://www.aem.live/docs/ew/authoring/assistant), a chat panel in the editor for working on the content that you're editing. See [Content Views](console.md#content-view).
 
 ### Why can't the agent use a capability that I've heard about? {#capability-availability}
 

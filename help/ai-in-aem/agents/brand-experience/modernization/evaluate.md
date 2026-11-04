@@ -161,9 +161,9 @@ For who does what in each phase of a migration, see [Phases and Roles](productio
 ## How the Migration Scales {#scale}
 
 * **The platform:** Edge Delivery Services runs large multi-market and multi-language sites. Its largest sites have more than 100,000 pages.
-* **The agent:** The AI model works out the mapping on one representative page of each template, and the bulk import then runs the template's import script on its other pages without the model interpreting each one. A site of 5,000 pages that share 12 layouts is mostly the work of 12 templates. A page with a layout of its own counts as a template of its own. See [How the Agent Migrates at Scale](overview.md#migration-at-scale).
+* **The agent:** The AI model works out the mapping on one representative page of each template, and the bulk import then runs the template's import script on its other pages without the model interpreting each one. A site of 5,000 pages that share 12 layouts is mostly the work of 12 templates. A page with a layout of its own counts as a template of its own. See [How the Agent Migrates at Scale](overview.md#migration-at-scale). To size the work from the first templates, see [Estimate Before You Commit](production-migration.md#estimate).
 * **The team:** Each person works in their own console workspace, and the console doesn't coordinate them yet. Divide the work so that people change different files and pages. See [Collaborating on a Project](overview.md#collaboration).
-* **Several sites:** A console workspace holds one connected site at a time. In a program with several sites, plan their order, and push and upload each site's work before you switch.
+* **Several sites:** A console workspace holds one connected site at a time. In a program with several sites, plan their order, and push and upload each site's work before you switch. To relaunch sites that run on Experience Manager today, see [Relaunch a Site That Runs on Experience Manager](production-migration.md#relaunch-aem-site).
 * **Assisted delivery:** For complex migrations, Adobe engineers can operate the agent for you. See [AOE Delivery](aoe-delivery.md).
 
 ## Where Content Is Stored {#content-destination}
@@ -191,7 +191,7 @@ Signing in to the console doesn't establish your organization's entitlement. Dep
 
 ## What Remains Project Work {#project-work}
 
-The agent is a development agent: what can be built on Edge Delivery Services can be built with it. A migration copies what the source pages show, though, not the systems behind them. These needs require a decision from your team before the agent can build them:
+The agent is a development agent: what can be built on Edge Delivery Services can be built with it. A migration copies what the source pages show, though, not the systems behind them. The agent rebuilds the site: its pages, blocks, styles, and the code that calls your services. Approval and publishing workflows, the back-end systems behind integrations, and how your teams work on the new site remain your organization's work. These needs require a decision from your team before the agent can build them:
 
 | Need | What import gives you | What to decide, then build with the agent |
 |---|---|---|

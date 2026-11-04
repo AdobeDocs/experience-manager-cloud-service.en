@@ -64,7 +64,7 @@ Once the prerequisites are fulfilled, ask the agent to create documentation for 
 
 Review the guides for correct setup, content locations, commands, authoring steps, and known limitations before sharing.
 
-Save the PDFs for your teams. For document-based projects, you can also upload them with the other content in Experience Workspace (formerly Document Authoring). This is not a JCR package-import instruction.
+Save the PDFs for your teams. For document-based projects, you can also upload them with the other content in Experience Workspace (which replaces Document Authoring). This is not a JCR package-import instruction.
 
 ![Admin guide](assets/admin-guide.png)
 

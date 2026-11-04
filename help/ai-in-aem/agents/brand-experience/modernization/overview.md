@@ -36,14 +36,14 @@ Edge Delivery Services is the part of Adobe Experience Manager Sites that delive
 
 The Experience Modernization Agent is part of the [Brand Experience Agent.](/help/ai-in-aem/agents/brand-experience/overview.md) It automates the repetitive parts of building a site: importing content, mapping it to blocks, extracting the design, and writing block code. You work in the hosted Experience Modernization Console, using natural-language requests and previews. You don't need Docker or a local command-line environment. You don't need to be a developer either: designers, content specialists, and marketers can work on the site too. See [Who Can Use the Agent](#who-can-use-ema). With Auto mode, in early access, the agent can also migrate a first set of pages on its own and email you when it's done.
 
-Use the agent to move web properties onto Edge Delivery Services, the current Experience Manager website stack, from other CMSes, from older implementations built from Java and HTL components, or from static sites. The agent reads each source page as a browser renders it, so the system behind the source doesn't matter: it works from the content and design that visitors see. Consolidating on the platform gives you:
+Use the agent to move web properties onto Edge Delivery Services from other CMSes, from Experience Manager sites built with Java and HTL components, or from static sites. The agent reads each source page as a browser renders it, so the system behind the source doesn't matter: it works from the content and design that visitors see. Edge Delivery Services gives the new site:
 
 * **Fast pages from lean code:** Edge Delivery Services serves the content as finished semantic HTML from a CDN, and your own CSS and JavaScript style it, with no framework to download first. A page loads in three phases: what the first section needs, then the rest of the project's code, and third-party tags last. That is why a new project from the AEM boilerplate scores 100 in Lighthouse. See [Keeping It 100](https://www.aem.live/developer/keeping-it-100).
 * **Room to grow:** The platform runs large multi-market and multi-language sites. Its largest sites have more than 100,000 pages.
 * **Visual authoring:** Authors edit pages visually in Experience Workspace, or in the Universal Editor when content is stored in Experience Manager. See [Where Content Is Stored and How Authors Edit It](#content-storage).
-* **Pages that AI systems can read:** AI crawlers and answer engines often read the raw HTML without running JavaScript. Because the platform serves the content in the HTML itself, the migrated content is readable to them, so migration and AI readiness happen in the same step.
+* **Pages that AI systems can read:** AI crawlers and answer engines often read the raw HTML without running JavaScript. Because the platform serves the content in the HTML itself, they can read the migrated pages once the pages are published.
 
-The agent rebuilds your pages on a block system that follows the architecture of Edge Delivery Services. It decomposes each page into sections and content, maps the content to default content and reusable blocks, and extracts the design system into global styles and block CSS. It then imports further pages in bulk with the same mappings, using generated import scripts rather than having the AI model interpret every page. See [How the Agent Migrates at Scale](#migration-at-scale). It does not clone the source markup, which would carry over the old site's technical debt. Expect a close first pass that you refine by prompting and validate before you scale.
+The agent rebuilds your pages on a block system that follows the architecture of Edge Delivery Services. It decomposes each page into sections and content, maps the content to default content and reusable blocks, and extracts the design system into global styles and block CSS. It then imports further pages in bulk with the same mappings, using generated import scripts rather than having the AI model interpret every page. See [How the Agent Migrates at Scale](#migration-at-scale). It does not clone the source markup, which would carry over any technical debt in it. Expect a close first pass that you refine by prompting and validate before you scale.
 
 After go-live, the same environment keeps working on the site. You can restyle it to a new brand, including from Figma designs, add blocks, update or refactor existing blocks, create pages from the established blocks, debug problems, and generate project and handover documentation. You can also connect an existing Edge Delivery Services project and start there, without a migration.
 
@@ -111,6 +111,7 @@ Each row links to a task guide with the steps and the checks that tell you when 
 | Try Edge Delivery Services and the agent with your brand's content | [Start with Auto mode](getting-started.md#brand-trial), or [start from a repository](getting-started.md#repo-start) | You can make a useful edit, retain the work, and return to it. |
 | Start a new site, or connect one that runs on Edge Delivery Services | [Start from a repository](getting-started.md#repo-start) | Your site is connected in the console, and a change you asked for is saved and previewed. |
 | Migrate a production site | [Production migration](production-migration.md) | The agreed inventory, authoring, integrations, and release checks are accepted. |
+| Relaunch a site that runs on Experience Manager today | [Relaunch an Experience Manager site](production-migration.md#relaunch-aem-site) | The relaunch decisions are recorded, and the production migration's checks are accepted. |
 | Apply a new design during migration | [Restyle during migration](restyling.md#during-migration) | Source content is preserved in the approved target design. |
 | Restyle an existing site | [Restyle an existing site](restyling.md#existing-site) | The affected pages adopt the design without unintended content or behavior changes. |
 | Change how parts of a site look, as a designer whose work a developer reviews | [Make visual changes](visual-changes.md) | The change works at every screen size, and a developer has the pull request. |
@@ -186,7 +187,7 @@ Adobe has renamed several of these products, and they are often abbreviated. The
 | AEM Sidekick | The browser extension that authors use to preview and publish pages. |
 | AEM Code Sync | The GitHub app that lets Edge Delivery Services fetch your code to serve it. |
 | AEM Code Connector | The GitHub app that lets the console push changes and open pull requests in your repository. |
-| Experience Workspace | The visual authoring UI for document-based content, at `da.live`. It was formerly called Document Authoring (DA), and some console labels still use that name. See [Document-Based Persistence](#document-based). |
+| Experience Workspace | The visual authoring UI for document-based content, at `da.live`. It replaces Document Authoring (DA), and some console labels still use that name. See [Document-Based Persistence](#document-based). |
 | Universal Editor | Adobe's visual editor for content stored in Experience Manager. Projects with Experience Manager authoring use it. |
 | Experience Manager authoring, JCR persistence | Edge Delivery Services with content stored in the Java Content Repository (JCR) of an Experience Manager as a Cloud Service author instance and edited in the Universal Editor. Also called AEM authoring, and previously Crosswalk. |
 | IMS | Adobe's identity service, which handles sign-in with your Adobe ID. |
@@ -209,18 +210,18 @@ With document-based persistence, content is stored as documents in the document-
 "Document-based authoring" has meant different things over time, so check when a page or article was written:
 
 * When Adobe introduced Edge Delivery Services in 2023, it meant writing pages in Google Docs or Microsoft Word, stored on Google Drive or SharePoint. These remain supported content sources.
-* Document Authoring (DA) is Adobe's own document editor and content repository, at `da.live`.
-* Experience Workspace is DA's new name. It adds a visual canvas editor, and the content stays in the same repository.
+* Document Authoring (DA) is Adobe's document editor for the document-based content repository.
+* Experience Workspace replaces Document Authoring and adds a visual editor. A site that uses Document Authoring can turn Experience Workspace on, and its existing content works there without a migration.
 
-Uploads and transfers of document-based content go to Experience Workspace at `da.live`.
+Uploads and transfers of document-based content go to the document-based content repository, where authors edit it in Experience Workspace.
 
 >[!NOTE]
 >
->The rename from Document Authoring to Experience Workspace is an upgrade, not a content migration: existing DA content stays where it is. Some console labels and screens still say **Document Authoring** or **DA**. In these docs, they refer to Experience Workspace and its repository.
+>Some console labels and screens still say **Document Authoring** or **DA**. In these docs, they refer to Experience Workspace and the document-based content repository.
 
 ### Experience Manager Authoring with JCR Persistence {#jcr-persistence}
 
-With this option, content is stored in the Java Content Repository (JCR) of an Experience Manager as a Cloud Service author instance. This is Edge Delivery Services running on top of the JCR stack, a setup previously called Crosswalk. Authors edit pages with the [Universal Editor,](/help/implementing/universal-editor/introduction.md) Adobe's visual editor for content on the author instance, and the platform still delivers the pages. The pages are not rendered by HTL and Java as in traditional Experience Manager publishing. Template repositories for this setup, such as `aem-block-collection-xwalk`, still carry `xwalk` in their names.
+With this option, content is stored in the Java Content Repository (JCR) of an Experience Manager as a Cloud Service author instance. This is Edge Delivery Services running on top of the JCR stack, a setup previously called Crosswalk. Authors edit pages with the [Universal Editor,](/help/implementing/universal-editor/introduction.md) Adobe's visual editor for content on the author instance, and the platform still delivers the pages. The pages are not rendered by HTL and Java, as they are on Experience Manager sites built with components. Template repositories for this setup, such as `aem-block-collection-xwalk`, still carry `xwalk` in their names.
 
 >[!NOTE]
 >

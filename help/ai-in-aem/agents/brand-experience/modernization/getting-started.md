@@ -157,7 +157,7 @@ Use this path for a new site, including one that you fill with pages imported fr
    * Install the AEM Code Sync app for this repository only.
    * Optionally change the site's administrators and content source, then select **Finish setup**.
 
-   Your site now runs at `https://main--{repository}--{owner}.aem.page/`, with example content that you can edit in Experience Workspace at [`da.live`](https://da.live). You don't need the tutorial's local development steps, because the console provides the development environment.
+   Your site now runs at `https://main--{repository}--{owner}.aem.page/`, with example content that you can edit in Experience Workspace. You don't need the tutorial's local development steps, because the console provides the development environment.
 1. Install the [AEM Code Connector](https://github.com/apps/aem-code-connector) app in the repository.
    * If the app is installed for selected repositories only, include this one. If your organization requires approval for GitHub apps, an organization owner must approve it.
 1. [Open the console](#open-console) and [connect the site](#connect-repo).
@@ -332,7 +332,7 @@ Upload and push separately. Edge Delivery Services stores content apart from cod
 
 ### Upload Content {#upload-content}
 
-For document-based persistence, upload the pages to the document-based repository at [`da.live`](https://da.live), where authors edit them in Experience Workspace. Console labels and some screens still call it Document Authoring. Code push does not save these documents, because content is stored separately from code. Confirm the organization, repository, destination paths, and permission to replace any existing content before uploading.
+For document-based persistence, upload the pages to the document-based content repository, where authors edit them in Experience Workspace. Console labels and some screens still say Document Authoring. Code push does not save these documents, because content is stored separately from code. Confirm the organization, repository, destination paths, and permission to replace any existing content before uploading.
 
 1. Make sure you are in a **Content** view and then select the **Upload content** button on the top-right. Alternatively, use **Sync** > **Push** > **Content** in the workspace header to upload all pending pages.
    * By default you are in **Content** view when entering the console.
@@ -346,7 +346,7 @@ For document-based persistence, upload the pages to the document-based repositor
 1. Once complete, the dialog shows how many files were uploaded. You can then preview, or preview and publish, the uploaded pages. This runs as a tracked job that continues if you close the dialog; retry any pages that fail.
    ![View in AEM](assets/view-in-aem.png)
 
-To find the uploaded content, optionally select **View in AEM** in the notification when the upload completes, which opens it at `da.live`, or navigate to `https://da.live/#/{organization}/{repository}`.
+To find the uploaded content, optionally select **View in AEM** in the notification when the upload completes, which opens the site's content in Experience Workspace, or navigate to `https://da.live/#/{organization}/{repository}`.
 
 ![Content in Document Authoring](assets/content-in-document-authoring.png)
 
@@ -399,7 +399,7 @@ To avoid conflicts, pull before you start a task, push small changes often, and 
 
 Previewing copies your saved content to the preview site, `*.aem.page`, where it renders with the code of the branch in the URL. This is different from the console's preview panel, which shows only the working copy in the console workspace. Publishing, a separate step, makes the content live on `*.aem.live`. To preview the uploaded pages:
 
-1. Go back to Experience Workspace at `da.live`.
+1. Go back to Experience Workspace.
    * It may still be open in a browser tab you opened after selecting **View in AEM** after uploading the content.
    * Or navigate to `https://da.live/#/{organization}/{repository}`
 1. Open one of the pages that you previously uploaded.
@@ -426,6 +426,15 @@ Publishing makes the page public. Who can publish is set by the site's publish r
 Record source and output URLs, code repository and branch, remote content location, accepted pages, unresolved issues, and the next useful task, so that you or a colleague can return to it. See [project handover](project-documentation.md#portable-handoff).
 
 If you transfer an Auto mode run with [**Make it yours**](#make-it-yours), confirm the destination and overwrite choice. Transfer pushes code and copies content separately: either operation can fail independently. Verify both before leaving the source project. Transfer doesn't copy document content into JCR or provide atomic rollback.
+
+A transferred site isn't live yet. Agree who owns each remaining step:
+
+* Review the transfer branch and merge it into `main`. See [Make It Yours](#make-it-yours).
+* Set up who can edit, preview, and publish the content. See [Permissions and security](https://www.aem.live/docs/ew/administering/permissions).
+* Recreate the spreadsheets that the transfer doesn't copy, such as redirects, bulk metadata, and placeholders.
+* Check the site's Experience Workspace configuration, such as its block library. See [Configs](https://www.aem.live/docs/ew/administering/configs).
+* [Publish](#publish) the accepted pages.
+* Switch your domain to the site. See [Release, Recover, and Hand Over](production-migration.md#handoff).
 
 ## Create a Customer Demo {#customer-demo}
 
@@ -459,4 +468,4 @@ The following documents may be useful as you continue to explore the Experience 
 * [Prompting Guide for Experience Modernization Agent](prompting-guide.md) - Ideas on how to prompt the agent and what its skills can do
 * [Troubleshoot the Experience Modernization Agent](troubleshooting.md) - Fixes for common problems
 * [Edge Delivery Services developer tutorial](https://www.aem.live/developer/tutorial) - Useful if you are new to building these sites
-* [Experience Workspace](https://www.aem.live/docs/ew/about) - The visual authoring UI for document-based content, formerly called Document Authoring
+* [Experience Workspace](https://www.aem.live/docs/ew/about) - The visual authoring UI for document-based content, which replaces Document Authoring
