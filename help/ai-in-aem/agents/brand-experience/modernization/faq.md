@@ -30,6 +30,10 @@ role_v2:
 
 These are answers to questions that users of the Experience Modernization Agent often ask. Each answer is short and links to the guide that explains the topic in full.
 
+>[!TIP]
+>
+>Looking for a starting point for your role? Decision-makers can start with [Evaluate and Approve](evaluate.md), migration leads with [Getting Started](getting-started.md) and [Migrate a Production Site](production-migration.md), and designers with [Make Visual Changes](visual-changes.md). See [Start Here by Role](overview.md#start-by-role).
+
 ## Access and Usage {#access-usage}
 
 ### How do I get access to the console? {#get-access}
@@ -46,7 +50,7 @@ Not necessarily. Being able to sign in does not by itself establish your organiz
 
 ### Does the agent consume AI credits? {#ai-credits}
 
-Depending on your organization's agreement, work in the console can consume AI credits. Consumption varies with the number of pages, the steps the agent runs, and how often it iterates on a result. See [Access and AI Credit Usage](getting-started.md#access) and Adobe's [AI credit consumption](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/ai-credit-consumption) guide. For your organization's usage, contact your Adobe account team.
+Depending on your organization's agreement, migrating pages consumes AI credits. They are counted once for each page that is uploaded to your content destination. Prompts, iterations on a page, and uploading the same page again don't add to them. See [Access and AI Credit Usage](getting-started.md#access) and Adobe's [AI credit consumption](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/ai-credit-consumption) guide. For your organization's usage, contact your Adobe account team.
 
 ## Auto Mode {#auto-mode}
 
@@ -172,7 +176,7 @@ The AEM Code Connector app is usually missing from the organization or the repos
 
 ### Can the agent push to main or publish without my approval? {#approval}
 
-Only if you give the agent access. Without agent permissions, code and content leave the console workspace only when you push, upload, or publish them. With **Allow LLM to use my git credentials**, the agent can push to any branch that your credentials can write to, including `main`. With the Adobe credentials permission, the console stops the agent from uploading, previewing, or publishing unless your current message asks for it. These are safeguards, not approval gates. To require approval, protect `main` with branch protection and limit who has the site's publish role. See [Control over Changes](overview.md#security-control).
+Only if you give the agent access. Without agent permissions, code and content leave the console workspace only when you push, upload, or publish them. With **Allow LLM to use my git credentials**, the agent can push to any branch that your credentials can write to, including `main`. With the Adobe credentials permission, the console stops the agent from uploading, previewing, or publishing unless your current message asks for it. These are safeguards, not approval gates. To require approval, protect `main` with branch protection and limit who has the site's publish role. See [Control over Changes](evaluate.md#security-control).
 
 ### Why is Allow LLM to use my git credentials missing from Settings? {#git-credentials-missing}
 
@@ -238,15 +242,15 @@ The console couldn't deliver your prompt to the agent, and the message doesn't g
 
 ### Which AI model does the agent use? {#model}
 
-The agent currently uses Claude models. The model is an implementation detail that can change. See [What the AI Model Processes](overview.md#security-model-data).
+The agent currently uses Claude models. The model is an implementation detail that can change. See [What the AI Model Processes](evaluate.md#security-model-data).
 
 ### Does the agent learn from my data? {#training}
 
-Adobe does not use your conversations or other customer data to train or fine-tune AI models. Within your project, the agent has no memory of its own between conversations; to make it remember a decision, write it in a file in your repository. See [What the AI Model Processes](overview.md#security-model-data) and [What the Agent Remembers](overview.md#memory).
+Adobe does not use your conversations or other customer data to train or fine-tune AI models. Within your project, the agent has no memory of its own between conversations; to make it remember a decision, write it in a file in your repository. See [What the AI Model Processes](evaluate.md#security-model-data) and [What the Agent Remembers](overview.md#memory).
 
 ### What data reaches the AI model, and which systems does the agent connect to? {#data-flows}
 
-The Experience Modernization Agent sends your prompts, source page content, repository code, design references, and the generated content and code to the AI model. It connects to your Git repository, Experience Workspace or your author instance, the source site, and Figma when you use it. The AI agent doesn't receive the credentials that you configure. See [Security and Data Handling](overview.md#security).
+The Experience Modernization Agent sends your prompts, source page content, repository code, design references, and the generated content and code to the AI model. It connects to your Git repository, Experience Workspace or your author instance, the source site, and Figma when you use it. The AI agent doesn't receive the credentials that you configure. See [Security and Data Handling](evaluate.md#security).
 
 ### Where can I find retention and compliance information? {#retention-compliance}
 

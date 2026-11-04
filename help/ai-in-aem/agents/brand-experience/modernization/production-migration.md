@@ -31,6 +31,22 @@ Use this workflow to move an agreed site inventory to Edge Delivery Services, th
 
 For a few demonstration pages or an initial evaluation, use the smaller [demo and trial workflows](getting-started.md#first-outcome). Their completion criteria are different from production acceptance.
 
+## Phases and Roles {#phases}
+
+A migration runs in phases. The agent does most of the repetitive work in each one, and your team makes the decisions and accepts the result. Let one person, such as the migration lead, run the first phases; others join once the blocks and import scripts are settled. See [Start with One Person, Then Divide the Work](overview.md#divide-work).
+
+| Phase | Who leads | What the agent does | What your team does | Done when | Guide |
+|---|---|---|---|---|---|
+| Scope | Migration lead, with the architect | Explains the source site and the platform when asked. | Agrees the inventory, content destination, design, integrations, URL policy, and owners. | The decisions are recorded. | [Agree Scope and Destinations](#scope) |
+| Catalog | Migration lead | Discovers pages and groups them into templates and block variants. | Corrects groupings, reconciles them with the inventory, and picks representatives. | Every in-scope URL has a template or an approved exclusion. | [Prepare and Catalog](#prepare) |
+| Representatives | Migration lead, with designers and authors | Imports, styles, and builds blocks, the header, and the footer. | Reviews the content structure, the design, and how easily authors can edit it. | One page per template works in the authoring environment. | [Validate Representatives](#representatives) |
+| Batches | Migration lead, then the team | Imports template by template and reports errors. | Checks samples, fixes mappings, and keeps the reconciliation record. | Every in-scope URL is imported or has an approved exception. | [Import in Batches](#batches) |
+| Completion | Developers, designers, and integration owners | Builds integrations, forms, and the remaining blocks and styles. | Configures external systems and decides redirects and search metadata. | The agreed requirements work. | [Complete the Site](#complete-site) |
+| Acceptance | Site owner, with testers and authors | Runs checks that you ask for, such as page critiques and performance tests. | Tests against the acceptance criteria. | Every area of the criteria is accepted. | [Accept the Result](#acceptance) |
+| Release | Release owner | Writes the project handover documentation. | Merges the code, publishes the content, switches the domain, and monitors the site. | The site is live, and its owners have taken it over. | [Release, Recover, and Hand Over](#handoff) |
+
+Visual contributors can work on styling from the representatives phase onward. See [Make Visual Changes](visual-changes.md).
+
 ## Agree Scope and Destinations {#scope}
 
 You need authorization to read the source, modify the target repository, and write content and assets to the destination. Agree who accepts the result and who authorizes release. If some pages require sign-in, set up [protected site authentication](console.md#protected-site-authentication) with a dedicated read-only account. If the source uses bot protection, arrange access with its administrator before cataloging. See [source sites with bot protection](getting-started.md#bot-protection).
@@ -102,7 +118,31 @@ Automated import is one part of delivery. Implement and verify the agreed requir
 * Forms, search, commerce, account features, analytics, consent, and other integrations.
 * Author guidance, operational ownership, access, and deployment configuration.
 
-The agent implements the code side of these, for example blocks that call your search or commerce API, forms, and the code that loads analytics and consent. It can't configure systems outside your repository and content, such as the search service, the CDN, or the analytics account, and it doesn't decide your requirements. Give it the API documentation and the agreed behavior, and name an owner for each external system who accepts the result.
+The agent implements the code side of these, for example blocks that call your search or commerce API, forms, and the code that loads analytics and consent. It can't configure systems outside your repository and content, such as the search service, the CDN, or the analytics account, and it doesn't decide your requirements. Give it the API documentation and the agreed behavior, and name an owner for each external system who accepts the result. See [Connect Services and Applications](block-development.md#integrations).
+
+### Images and Documents {#assets}
+
+How images reach the new site depends on the content destination:
+
+* **Experience Workspace:** While you work in the console, an imported page can still reference images on the source site. When you upload the page, the console uploads its images with it, including images that it downloads from the source, into a folder named after the page with a leading dot. It then points the page to the uploaded copies. If an image is missing, in an unsupported format, or ambiguous, the console reports it and doesn't upload the page. After the upload, it checks that every image arrived. See [Upload Content](getting-started.md#upload-content).
+* **Experience Manager authoring:** Select **Upload images** when you upload the content package, and choose a folder under `/content/dam/`. The default is `/content/dam/site`. See [Upload Content](getting-started-aem-authoring.md#upload-content).
+* **Adobe Dynamic Media:** Images that the source serves from Dynamic Media stay there. The imported page references them, and the project's code renders them.
+
+Edge Delivery Services stores each image once and serves it in sizes and formats that fit each screen. Check large files, videos, and SVG images against the [limits for file types and sizes](https://www.aem.live/docs/limits).
+
+Check the links to documents, such as PDFs, on representative pages. Each link must point to a copy on the new site, not to the source site that you will retire.
+
+### URLs, Redirects, and Search Metadata {#urls-seo}
+
+The agent takes each page's path from its source URL. It lowercases the path, removes `.html`, turns a trailing `/` into `index`, and replaces other characters, such as spaces and underscores, with hyphens. `/About_Us.html` becomes `/about-us`. Every URL that changes this way, or that you change on purpose, needs a redirect.
+
+The agent doesn't create redirects, sitemaps, or language alternates by itself. Ask it for them as a task, and review the result:
+
+* **Redirects:** A `redirects` spreadsheet with **Source** and **Destination** columns, one row per URL, without wildcards. Ask the agent to list the source URLs whose path changed, as rows for the sheet. See [Redirects](https://www.aem.live/docs/redirects).
+* **Page metadata:** Import keeps each page's title, description, and social image in its metadata block. To set metadata for many pages at once, use a `metadata` spreadsheet. See [Bulk Metadata](https://www.aem.live/docs/bulk-metadata).
+* **Sitemap and languages:** A `helix-sitemap.yaml` file in the repository, which can include the language alternates (hreflang) of each page. See [Sitemaps](https://www.aem.live/developer/sitemap).
+* **Search engines:** The preview and live sites, `*.aem.page` and `*.aem.live`, are hidden from search engines; your production domain isn't. Check `robots.txt` before the cutover. See [robots.txt](https://www.aem.live/docs/robots).
+* **Query index:** Lists of pages, such as article listings and site search, read from a query index that includes only published pages. See [Indexing](https://www.aem.live/developer/indexing).
 
 ## Accept the Result {#acceptance}
 
@@ -125,8 +165,8 @@ Each automated signal checks one thing: an importer status that the script ran, 
 1. Review and push the accepted code through the repository's policy. Merging into `main` updates the live site's code immediately; there is no separate code publish step. Plan the merge with the content release. See [How Changes Go Live](overview.md#code-content-lifecycle).
 1. Upload only the accepted content and assets to the confirmed destination. Review per-page and per-asset errors.
 1. Verify the saved content with the intended code revision on the preview site, `*.aem.page`.
-1. Obtain the site's release approval and follow the configured publication and domain cutover process. Publishing makes pages available on `*.aem.live`; the cutover is what serves them on your own domain.
-1. Check the live URLs, redirects, key journeys, and monitoring after release.
+1. Obtain the site's release approval and follow the configured publication and domain cutover process. Publishing makes pages available on `*.aem.live`; the cutover is what serves them on your own domain, through the Adobe-managed CDN or [your own CDN](https://www.aem.live/docs/byo-cdn-setup). Work through the [go-live checklist](https://www.aem.live/docs/go-live-checklist) before the cutover.
+1. Check the live URLs, redirects, key journeys, and monitoring after release. [Operational Telemetry](https://www.aem.live/docs/operational-telemetry) shows how real visitors experience the site's performance.
 1. Provide the [project handover](project-documentation.md#portable-handoff), inventory, author examples, acceptance results, exceptions, and recovery contacts.
 
 For failures, retain the exact URL/path, operation, and error log. Retry the smallest affected scope after correcting the cause. Do not restart a successful full batch solely because one page failed.

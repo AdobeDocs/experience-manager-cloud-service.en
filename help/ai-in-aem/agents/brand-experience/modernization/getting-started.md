@@ -47,7 +47,7 @@ If your content must be stored in the JCR of an Adobe Experience Manager author 
 
 To use the Experience Modernization Console, request access through your Adobe account manager. Sign in with an Adobe ID that belongs to your company's Adobe organization; see [Open the Experience Modernization Console](#open-console). Auto mode is in early access and has its own access request; see [Start with Auto Mode](#brand-trial).
 
-Being able to sign in to the console does not by itself establish your organization's entitlement. Depending on your organization's agreement, work with the agent can consume AI credits. Consumption varies with the work, such as the number of pages, the steps the agent runs, and how often it iterates on a result. For how Adobe measures AI credit consumption for agentic capabilities, see [AI credit consumption](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/ai-credit-consumption). For your organization's entitlement, usage, and commercial terms, contact your Adobe account team.
+Being able to sign in to the console does not by itself establish your organization's entitlement. Depending on your organization's agreement, migrating pages consumes AI credits. Adobe counts them once for each page that is uploaded to your content destination, Experience Workspace or the author instance. Prompts, iterations on a page, and uploading the same page again don't add to them. For how Adobe measures AI credit consumption for agentic capabilities, see [AI credit consumption](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/ai-credit-consumption). For your organization's entitlement, usage, and commercial terms, contact your Adobe account team.
 
 ## Choose How to Start {#first-outcome}
 
@@ -299,7 +299,7 @@ Replace the example URLs and paths with your own.
 
 * Ask for one change at a time, and check it before you ask for the next one.
 * Attach a screenshot or a design when it explains the result better than words.
-* Say what the agent must not do, such as "Do not upload, push, or publish."
+* Say what the agent must not do. The example prompts in these guides end with "Do not upload, push, or publish." This keeps the agent's work in your console workspace, so that you check it and then upload or push it yourself. Leave it out when you want the agent to do these steps for you and have turned on the [agent permissions](console.md#settings-page) that they need.
 * To change how pages look, ask for a styling change. CSS and JavaScript can give the existing content any design, so a new look never requires restructuring or reimporting pages.
 * For a change that spans several pages or shared styles, you can switch to [Plan mode](console.md#prompt-input) to review the steps before anything changes.
 * If a long task stops before it finishes, ask the agent to continue.
@@ -358,7 +358,7 @@ Open an uploaded document, make an edit, save, and reopen it to check authorabil
 
 ### Push Code Changes {#push-code-changes}
 
-Review the code diff and run the project's checks before pushing. Use a pull request for work requiring review. Branch rules are enforced by your repository's protections; the console and the optional plan mode do not enforce them. See [Control over Changes](overview.md#security-control).
+Review the code diff and run the project's checks before pushing. Use a pull request for work requiring review. Branch rules are enforced by your repository's protections; the console and the optional plan mode do not enforce them. See [Control over Changes](evaluate.md#security-control).
 
 1. Optionally, switch to **Changes** view (branch icon in the view picker) to review the diff.
    ![Code view](assets/code-view-git-changes.png)
@@ -419,7 +419,7 @@ When the preview looks right, publish the page to make it live on `*.aem.live`:
 * In Experience Workspace, open the page, select the paper plane icon, then **Publish**.
 * Or, after an upload in the console, choose to preview and publish the uploaded pages.
 
-Publishing makes the page public. Who can publish is set by the site's publish role; follow your team's review process. Code doesn't need this step: it goes live as soon as it reaches `main`. See [Control over Changes](overview.md#security-control).
+Publishing makes the page public. Who can publish is set by the site's publish role; follow your team's review process. Code doesn't need this step: it goes live as soon as it reaches `main`. See [Control over Changes](evaluate.md#security-control).
 
 ## Retain or Hand Over Your Work {#retain-work}
 

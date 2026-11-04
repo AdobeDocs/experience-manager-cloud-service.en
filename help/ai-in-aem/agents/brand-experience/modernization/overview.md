@@ -49,6 +49,16 @@ After go-live, the same environment keeps working on the site. You can restyle i
 
 You stay in control of every change. The agent works in your own console workspace, where you review and preview its changes and discard what you don't want. Nothing reaches your project until you push code to your Git repository or upload content to the authoring destination that you chose, or turn on [agent permissions](console.md#settings-page) that let the agent do so. Your permissions, repository policies, and publication workflow determine what you can change and release. See [Work Safely in an Independent Workspace](#independent-workspace).
 
+## Start Here by Role {#start-by-role}
+
+People in different roles need different parts of these docs. Start with the guide for your role, and follow its links when you need more detail.
+
+| Your role | Start here | Then read |
+|---|---|---|
+| **Decision-maker:** You approve the architecture, security, and processes of the project, and may not use the agent yourself. | [Evaluate and Approve the Experience Modernization Agent](evaluate.md) | [Broader Contribution, Same Production Control](#production-control), [Where Content Is Stored](#content-storage), [How the Agent Migrates at Scale](#migration-at-scale), [Figma and Design Systems](evaluate.md#figma), [Limitations](#limitations) |
+| **Migration lead:** You set up the project and run the migration, and you may be new to Edge Delivery Services. | [Understand Your Project](#project-foundations), then [Getting Started](getting-started.md) | [Migrate a Production Site](production-migration.md) and its [phases](production-migration.md#phases), [Site Catalog](site-catalog.md), [Create, Update, and Refactor Blocks](block-development.md), [Project Instructions and Memory](project-instructions.md) |
+| **Visual contributor:** You change how the site looks, and a developer reviews your work. | [Make Visual Changes](visual-changes.md) | [Inspect mode](getting-started.md#inspect-mode), [Restyle Sites](restyling.md), [Figma prompts](prompting-guide.md#figma-block-migration) |
+
 ## Why Use the Agent {#benefits}
 
 Before anyone can judge a migration to Edge Delivery Services, a developer usually has to do a lot of repetitive work. They list the source pages and work out which ones share a layout. They decide how each part of a page maps to blocks and default content, then write the blocks and their styles and extract the colors and fonts. Finally, they write import scripts, import the pages, and compare them with the originals. The agent does this work with you, in one environment:
@@ -89,7 +99,7 @@ That control sits in your Git provider, not in the console, so it holds however 
 1. Contributors push their work with **Create new PR**, which puts it on a new branch with a pull request. For repositories connected through Cloud Manager, the console pushes the branch, and you open the pull request with your Git provider's tools.
 1. A developer reviews the pull request, checks the result on the preview URLs that it lists, and merges it.
 
-If a contributor turns on **Allow LLM to use my git credentials**, the agent pushes with that contributor's access, so the same protection applies to it. Publishing content is controlled separately, by the site's publish role. See [Control over Changes](#security-control).
+If a contributor turns on **Allow LLM to use my git credentials**, the agent pushes with that contributor's access, so the same protection applies to it. Publishing content is controlled separately, by the site's publish role. See [Control over Changes](evaluate.md#security-control).
 
 ## Collaborating on a Project {#collaboration}
 
@@ -147,9 +157,10 @@ Each row links to a task guide with the steps and the checks that tell you when 
 | Migrate a production site | [Production migration](production-migration.md) | The agreed inventory, authoring, integrations, and release checks are accepted. |
 | Apply a new design during migration | [Restyle during migration](restyling.md#during-migration) | Source content is preserved in the approved target design. |
 | Restyle an existing site | [Restyle an existing site](restyling.md#existing-site) | The affected pages adopt the design without unintended content or behavior changes. |
+| Change how parts of a site look, as a designer whose work a developer reviews | [Make visual changes](visual-changes.md) | The change works at every screen size, and a developer has the pull request. |
 | Create, update, or refactor blocks | [Block development](block-development.md) | Reusable code and authorable examples pass the agreed checks. |
 
-An automated run or a preview shows how the pages look. The completion checks of your task establish the rest: that authors can edit the pages, that integrations work, and that the site is ready to release.
+An automated run or a preview shows how the pages look. The completion checks of your task establish the rest: that authors can edit the pages, that integrations work, and that the site is ready to release. To find the guides for your role, see [Start Here by Role](#start-by-role).
 
 ## Understand Your Project {#project-foundations}
 
@@ -188,7 +199,7 @@ Everything that the agent does happens there first. You can ask for a sweeping r
 * **Push code** sends the changed files that you select to your Git repository, as a commit on the current branch or as a new pull request.
 * **Upload content** sends the pages that you select to Experience Workspace or the author instance, where they replace the saved versions of those pages.
 
-[Agent permissions](console.md#settings-page) let the agent do the same for you. See [Control over Changes](#security-control).
+[Agent permissions](console.md#settings-page) let the agent do the same for you. See [Control over Changes](evaluate.md#security-control).
 
 The independence works in both directions: changes that others push or upload don't reach your workspace until you pull them. See [Sync Menu](console.md#sync-menu) and [Collaborating on a Project](#collaboration).
 
@@ -321,7 +332,7 @@ Optional add-ons extend these capabilities when a project needs them: Figma impo
 
 ## Figma-Based Migrations and Page Creation {#figma}
 
-In addition to live-site migrations, the agent can use Figma as a design source. To use these capabilities, set up your Figma details in [the Experience Modernization Console.](console.md)
+In addition to live-site migrations, the agent can use Figma as a design source. It turns the design's colors, typography, spacing, and variables into the site's CSS custom properties, and its components into blocks or variants. Each person who uses Figma stores their own Figma personal access token in the console's [settings](console.md#settings-page). For what to approve, such as access, Figma seats, and the data sent to the AI model, see [Figma and Design Systems](evaluate.md#figma). Designers can start with [Make Visual Changes](visual-changes.md#figma).
 
 ### Redesign Migration Using Figma-Derived Blocks {#figma-redesign}
 
@@ -354,7 +365,7 @@ The Experience Modernization Console is the agent's web-based, AI-assisted devel
 * The console requires no local setup, so you can start prompting changes in natural language right away.
 * You perform day-to-day development tasks, check the result in the console's preview, upload content to your authoring destination, and check it again on the preview site.
 * The console supports enterprise governance through standard GitHub review workflows.
-* The AI agent works without receiving the credentials that you configure. See [Security and Data Handling.](#security)
+* The AI agent works without receiving the credentials that you configure. See [Security and Data Handling.](evaluate.md#security)
 
 The self-service Experience Modernization Console is generally available. You can request access to ensure a smooth onboarding experience.
 
@@ -388,52 +399,7 @@ If you are interested in the AOE model for your next migration:
 
 ## Security and Data Handling {#security}
 
-The console lets the agent work on your site without giving it the credentials that you configure, and you decide when changes reach your Git repository and your content destination.
-
-### Access and Isolation {#security-access}
-
-* You sign in to the console with your Adobe ID. Every request is authenticated with Adobe Identity Management Services (IMS).
-* Each user works in a separate backend environment with its own workspace storage. Your workspace is not shared with other users.
-* Experience Manager and your Git provider continue to enforce their own permissions for any code or content that the agent writes.
-
-### Credentials {#security-credentials}
-
-* The AI agent does not receive the credentials that you configure in the console. Tokens for GitHub, Cloud Manager Git repositories, Document Authoring, Figma, and protected source sites are held outside the agent's environment. A separate component adds each credential only to requests for the service it belongs to. The same applies to the credential used to call the AI model.
-* [Agent permissions](console.md#settings-page) are off until you turn them on. Turning one on lets the agent act with that access, for example to push to your repository, without seeing the credential. Use scoped, least-privilege tokens.
-* Store credentials only in the console's settings. Do not put secrets in prompts, chat, source content, repository files, or project documentation. The agent reads these, and they can be sent to the AI model.
-
-### What the AI Model Processes {#security-model-data}
-
-To perform your request, the agent can send the following to the large language model (LLM) that it uses, currently a Claude model:
-
-* Your prompts and instructions.
-* Source page URLs, markup, and content, or exported CMS content.
-* Repository code and configuration, such as blocks, styles, and site configuration.
-* Design and brand references, such as Figma designs and screenshots.
-* Generated content and code under review.
-
-Adobe does not use your conversations or other customer data to train or fine-tune AI models.
-
-### Control over Changes {#security-control}
-
-The agent works in your console workspace, where you review its changes and the preview. Work reaches your site in separate steps, and each step has its own control:
-
-| Step | Who can do it | What controls it |
-|---|---|---|
-| Push code to your Git repository | You, with **Sync** > **Push** > **Code**. The agent, only if you turn on **Allow LLM to use my git credentials** for GitHub, or the Adobe credentials permission for repositories connected through Cloud Manager. | Your repository's permissions and branch protection. The console doesn't check branch rules itself. |
-| Upload content | You, with **Upload content** or **Sync** > **Push** > **Content**. For Experience Workspace, also the agent, but only with the Adobe credentials permission and when your message asks for it. | Write access to the site's content in Experience Workspace, or on the author instance. |
-| Preview and publish | You, from the upload results dialog, Experience Workspace, or the AEM Sidekick. The agent, only with the Adobe credentials permission and when your message asks for it. | The site's author and publish roles on Edge Delivery Services, where [authentication for authors](https://www.aem.live/docs/authentication-setup-authoring) is set up. |
-
-* The console's own checks are safeguards, not approval gates. Optional plan mode lets you approve a plan before the agent starts. The console also stops the agent from uploading, previewing, or publishing when your current message doesn't ask for it, but it can't detect every way of making such a request. Neither check stops a person with access from pushing or publishing.
-* With a Git permission, the agent can push to any branch that your credentials can write to, including `main`. A push to `main` changes the live site's code.
-* To require review, enforce it where the change lands. Protect `main` with [branch protection](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches) that requires a reviewed pull request, push with **Create new PR**, and limit who can publish with the site's [publish role](https://www.aem.live/docs/authentication-setup-authoring). Turn on agent permissions only when a task needs them.
-* Treat source pages and design files as untrusted input. They can contain text that attempts to steer the agent. Review the changes before you push, preview, or publish them.
-
-### Where Your Work Is Stored {#security-storage}
-
-* Code that you push is stored in your Git repository, and content that you sync is stored in Experience Workspace or on your author instance. Their own retention and version history policies apply.
-
-For processing locations, data retention, and compliance information, contact your Adobe account team or see the [Adobe Trust Center.](https://www.adobe.com/trust.html)
+The agent works without receiving the credentials that you configure, each user works in a separate environment, and you decide when changes reach your Git repository and your content destination. For access and isolation, credentials, what the AI model processes, the control over each step, and where work is stored, see [Security and Data Handling](evaluate.md#security).
 
 ## Limitations {#limitations}
 
@@ -443,14 +409,14 @@ Use only websites and designs that you are authorized to migrate. The selected w
 * Sources reachable only through a VPN or blocked by a firewall remain unsupported, even with valid credentials. So do sources that require another sign-in flow, such as an interactive single sign-on (SSO) form. Ask the site administrator for an internet-reachable staging or origin host that accepts a supported method.
 * The agent loads each source page in a browser and reads it once it has rendered. That includes content that scripts insert and content that the page contains but CSS hides, such as a closed accordion panel. Content that appears only after a visitor clicks or types isn't in the page at that moment, so it isn't captured. Check such pages in the screenshots, and add the missing content after import or ask for a way to capture it.
 * The agent targets Edge Delivery Services, including sites that use [Experience Manager authoring with the JCR.](#jcr-persistence) It does not convert a project to HTL-based publishing or an API-only/SPA delivery stack.
-* Page import copies what the source page shows: its content and its design. It can't see how the source's servers produced that page. Content inheritance, reuse through content fragments, personalization rules, search, form processing, and other business logic run there, so import copies their output on that page, not the logic. The agent also rebuilds the markup rather than copying it, so the source's scripts, such as analytics and experimentation tags, don't come along. Auto mode's **Include integrations** option carries over supported analytics, tag manager, and consent settings. Decide how each of the others works on the new site; the agent can then build the blocks and code for it.
+* Page import copies what the source page shows: its content and its design. It can't see how the source's servers produced that page. Content inheritance, reuse through content fragments, personalization rules, search, form processing, and other business logic run there, so import copies their output on that page, not the logic. The agent also rebuilds the markup rather than copying it, so the source's scripts, such as analytics and experimentation tags, don't come along. Auto mode's **Include integrations** option carries over supported analytics, tag manager, and consent settings. Decide how each of the others works on the new site; the agent can then build the blocks and code for it. See [What Remains Project Work](evaluate.md#project-work).
 * The agent's visual critique compares how the result looks with the source. Looking the same doesn't show that authors can edit the page, that interactions work, or that it is accessible and fast on real devices, so check those as part of [acceptance](production-migration.md#acceptance).
 
 Auto mode is in early access and needs its own [access request](getting-started.md#brand-trial). The [optional capabilities](console.md#optional-capabilities) on offer can change between releases. Check the controls and limits shown for your account. [AOE service scope](aoe-delivery.md#scope) is agreed separately from product capabilities.
 
 ## Next Steps {#next-steps}
 
-Choose a task above, then use [Getting Started](getting-started.md) for shared console setup. For an existing Edge Delivery Services project, connect its repository and start with the relevant development or restyling task; a new migration is not required.
+Choose a task above, then use [Getting Started](getting-started.md) for shared console setup. For an existing Edge Delivery Services project, connect its repository and start with the relevant development or restyling task; a new migration is not required. If you are deciding whether your team should use the agent, read [Evaluate and Approve the Experience Modernization Agent](evaluate.md).
 
 For short answers to common questions, such as access, Auto mode, transfers, protected source sites, and recovery, see the [Experience Modernization Agent FAQ](faq.md).
 

@@ -31,7 +31,9 @@ Use the Experience Modernization Agent to apply a design during migration or cha
 
 Appearance lives in the project's code: global CSS sets the look of default content, and each block has its own CSS and JavaScript. Together they can give the same semantic content any design without restructuring it, because the JavaScript can rebuild the markup in the browser; see [How Edge Delivery Services Works](overview.md#eds-basics). A purely visual restyle therefore changes code in Git and leaves authored content alone. Structural or content model changes are a separate, explicit decision.
 
-## Prepare the Design Contract {#prepare}
+This guide is for the person who leads a restyle. If you are a designer making individual visual changes that a developer reviews, start with [Make Visual Changes](visual-changes.md).
+
+## Agree What Changes and What Stays {#prepare}
 
 Connect the [project](getting-started.md#connect-repo) and confirm permission to modify it. Save a baseline code revision and preserve affected content before changes.
 
@@ -58,7 +60,7 @@ Use this path when content comes from an existing website but the target design 
 
 For example:
 
-> Apply the approved design at [Figma node or reference URL] while migrating [source URLs]. The live pages are the content source; the reference defines the new appearance. Preserve text, links, metadata, and meaningful images. First validate one representative page. Target [document-based/JCR] authorable output. Do not upload, push, or publish.
+> Apply the approved design at [Figma node or reference URL] while migrating [source URLs]. The live pages are the content source; the reference defines the new appearance. Preserve text, links, metadata, and meaningful images. First validate one representative page. Target [document-based or JCR persistence] with authorable output. Do not upload, push, or publish.
 
 If a new page has no source website, use the [Figma page workflow](prompting-guide.md#figma-new-page-from-figma): a specific frame/page supplies text and assets as well as design. This is different from mapping existing website content into a new design.
 

@@ -1244,10 +1244,12 @@ user-guide-title: AEM as a Cloud Service
         + [Form Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
       + Experience Modernization Agent {#modernization}
         + [Overview](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)
+        + [Evaluate and Approve](/help/ai-in-aem/agents/brand-experience/modernization/evaluate.md)
         + [Getting Started](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
         + [Getting Started with Experience Manager Authoring Projects](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
         + [Migrate a Production Site](/help/ai-in-aem/agents/brand-experience/modernization/production-migration.md)
         + [Restyle Sites](/help/ai-in-aem/agents/brand-experience/modernization/restyling.md)
+        + [Make Visual Changes](/help/ai-in-aem/agents/brand-experience/modernization/visual-changes.md)
         + [Create, Update, and Refactor Blocks](/help/ai-in-aem/agents/brand-experience/modernization/block-development.md)
         + [Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md)
         + [Prompting Guide](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md)

@@ -42,6 +42,7 @@ Use the task guides for the full procedure and acceptance checks. The prompts be
 | Production site, either persistence target | [Production migration](production-migration.md) |
 | New design during migration | [Restyle during migration](restyling.md#during-migration) |
 | Restyle an existing project | [Existing-site restyle](restyling.md#existing-site) |
+| Visual changes by a designer, reviewed by a developer | [Make Visual Changes](visual-changes.md) |
 | Create, update, or refactor blocks | [Block development recipes](block-development.md) |
 
 Name the source URLs/design nodes, destination paths, [authoring target](overview.md#content-storage), repository/branch, allowed scope, and what must be preserved. State whether uploads, code pushes, or publication are authorized. Do not include credentials in a prompt.
@@ -60,9 +61,7 @@ Name the source URLs/design nodes, destination paths, [authoring target](overvie
 
 ### Create markdown files in the project to document project-specific rules, guidelines, design decisions, or constraints. {#markdown-files}
 
-* Keep these files in the Git repository. The agent loads the project's `AGENTS.md` file at the start of every conversation, through the one-line `CLAUDE.md` file that the AEM boilerplate includes. Use `AGENTS.md` for a short project summary, the rules that apply to most tasks, and an index of the other files with when to read each one.
-* Put details such as block content conventions, section styles, design rules, and decisions in separate, focused files that `AGENTS.md` references. The agent reads them when a task needs them, so you don't need to name them in every prompt.
-* Ask the agent to update the files when you agree on a convention, and push them with the code. Do not duplicate built-in skills or store secrets. See [Project Instructions and Memory](project-instructions.md).
+* The agent loads the project's `AGENTS.md` file in every conversation and reads the files that it lists when a task needs them. Ask the agent to write agreed conventions there, and push them with the code. See [Project Instructions and Memory](project-instructions.md).
 
 ### The agent's context window is not infinite. {#limited-window}
 
