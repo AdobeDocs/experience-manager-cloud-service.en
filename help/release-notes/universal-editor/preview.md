@@ -34,4 +34,4 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming Changes {#upcoming-improvements}
 
-Rich Text Editor toolbar tooltips now display the keyboard shortcuts for their actions.
+* Rich Text Editor toolbar tooltips now display the keyboard shortcuts for their actions.
