@@ -305,7 +305,7 @@ If you make a change to any value in any section, select **Save** to save those 
 * **Support** summarizes the information that a support request shares with the team that builds the agent.
   * **Request support** - Select it to open a [support request](#request-support) without leaving the console.
 * **Danger zone** contains settings that can revert your console workspace.
-  * **Reset workspace** - Ends the session, disconnects GitHub, and permanently deletes the open project's chat history, the transcripts of its agent sessions, and its code, including changes that you haven't committed or pushed. This can't be undone. The content files that the console keeps for each site, and the work of other sites that you opened, stay in your console workspace. Code that you pushed and content that you uploaded stay in their remote locations; a reset doesn't restore remote content.
+  * **Reset workspace** - Ends the session, disconnects GitHub, and permanently deletes the open project's chat history, the transcripts of its agent sessions, and its code, including changes that you haven't committed or pushed. This can't be undone. Code that you pushed and content that you uploaded stay in their remote locations; a reset doesn't restore remote content.
 
 Figma access also depends on the token owner's access to the selected file and the capability being enabled for the project. Store tokens only in credential settings, not prompts or project documentation.
 
