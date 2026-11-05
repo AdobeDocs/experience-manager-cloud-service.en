@@ -259,7 +259,7 @@ The sidebar comprises the following browsers:
    <td>Telephone</td>
    <td><p>Adds a field to capture telephone number. The Telephone component allows authors to configure one of following phone number types. Each type is associated with a default regular expression for validation.</p>
     <ul>
-     <li>Type International is validated by <code>^[+][0-9]{0,14}$</code>.</li>
+     <li>Type International is validated by <code>^&#91;+&#93;&#91;0-9&#93;{0,14}$</code>.</li>
      <li>Type USPhoneNumber is validated by <code>{'+1 ('999') '999-9999}</code>.</li>
      <li>Type UKPhoneNumber is validated by <code>text{'+'99 999 999 9999}</code>.</li>
      <li>Type Custom does not provide a default validation pattern. It takes the value of the last selected phone number type. You can also specify your own custom validation pattern.</li>
