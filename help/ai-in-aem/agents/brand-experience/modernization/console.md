@@ -71,7 +71,7 @@ The top menu bar provides:
 
 * An **Adobe Experience Manager** title on the left that links to the Home Page when selected
 * A **Demo site** button when you are working in the [demo site](getting-started.md#demo-mode). It explains that work there isn't saved and that the demo can't push code to GitHub or content to Experience Workspace. Use **Switch site** to connect your own site.
-* A **Request support** button where you can send details of any issues that were encountered. See [Request support](#request-support).
+* A **Request support** button that sends a problem or question to the team that builds the agent. On the Auto mode pages, the button is **Get help**. See [Request Support](#request-support).
 * An **Account** button on the right for switching to dark mode and signing out of the console
 
 The console also shows notices at the top of the page, such as service status and [**What's new**](#whats-new) for the latest release. Chat, Home, and Settings adapt to phone and tablet screens. On a phone, the chat page shows only the chat. On a tablet, it shows one panel at a time; switch between the chat and the workspace in the header. On wider screens, both panels show side by side.
@@ -301,7 +301,7 @@ If you make a change to any value in any section, select **Save** to save those 
 * **Prompt coach** - Where available, controls the [prompt hints](#prompt-input) shown when a prompt is missing details, such as the page or the result you expect.
   * **Show prompt hints** turns the hints on or off.
   * Further options can check prompts on your device, which downloads a model to your browser. Turning such an option off removes the downloaded model.
-* **Support** summarizes information shared with the Adobe support team when you make a support request.
+* **Support** summarizes the information that a support request shares with the team that builds the agent.
   * **Request support** - Select it to open a [support request](#request-support) without leaving the console.
 * **Danger zone** contains settings that can revert your console workspace.
   * **Reset workspace** - Permanently deletes the console workspace's chat history, files, and session state, and disconnects GitHub. To confirm, you type `delete everything`. This cannot be undone. Code that you pushed and content that you uploaded stay in their remote locations, but unpushed and unuploaded work is lost. Save needed code and content first; reset is not a remote-content recovery tool.
@@ -346,14 +346,19 @@ To remove access, select **Remove site** for the entry, then **Save**. Remove th
 
 ### Request Support {#request-support}
 
-Use **Request support** in the menu bar or on the Settings page to contact the Adobe support team.
+When something doesn't work as you expect, or you have a question that these pages don't answer, tell the team that builds the agent. Your request goes straight to that team, which looks into it and follows up by email. For a meeting with subject-matter experts or the product team, ask your Adobe customer success manager or account team. See [The Team Behind the Agent](evaluate.md#adobe-team).
 
-1. Optionally choose a **Topic**, such as layout or design, missing content, or an agent that seems stuck.
-1. Describe what went wrong, in up to 2,000 characters. Don't include passwords or tokens. To help support reproduce the problem, name the affected page, what you expected, what happened instead, and when.
-1. Optionally select recent prompts from the conversation to attach, so that support can see what you asked.
-1. Send the request.
+1. Select **Request support** in the menu bar or on the Settings page. On small screens, the button shows only its icon.
+1. Optionally choose a **Topic**: **Layout / design**, **Missing content**, **Agent stuck**, or **Something else**.
+1. In **What went wrong?**, describe the problem in up to 2,000 characters. Name the affected page, what you expected, what happened instead, and when. Don't include passwords or tokens.
+1. Optionally select recent prompts to attach, so that the team can see what you asked. None is attached unless you select it.
+1. Select **Send**.
 
-The request shares your name, email address, session ID, project name, and preview URL with the support team. Before your console workspace is set up, it shares only your name, email address, and organization.
+The request shares your name, email address, Adobe user and organization IDs, session ID, project name, and preview URL, and the Git host if you use GitHub Enterprise. The session ID lets the team find your session's conversation and logs. Before your console workspace is set up, a request shares only your name, email address, and organization. You can send one request a minute.
+
+When the conversation suggests that you're stuck or frustrated, the prompt coach may offer help under **Need a hand?** Select **Contact support** to open the same request, or **No thanks** to carry on.
+
+On the Auto mode pages, the button is **Get help**. Use it to ask for more pages or more concurrent migrations, or to ask anything about Auto mode. Describe what you need in **How can we help?** and select **Send**. This request shares only your name and email address, and the team replies by email.
 
 ## What's New and Release Notes {#whats-new}
 

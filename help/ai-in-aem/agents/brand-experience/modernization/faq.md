@@ -288,7 +288,9 @@ Some capabilities are optional add-ons, which are off until they're turned on fo
 
 ### How do I get help? {#help}
 
-Use **Request support** in the console. Name the affected page, what you expected, what happened instead, and when. See [Request Support](console.md#request-support).
+Use **Request support** in the console, or **Get help** on the Auto mode pages. Your request goes to the team that builds the agent, which follows up by email. Name the affected page, what you expected, what happened instead, and when. See [Request Support](console.md#request-support).
+
+To talk to subject-matter experts or the product team, for example about your architecture or a need that the agent doesn't meet yet, ask your Adobe customer success manager or account team for a meeting. See [The Team Behind the Agent](evaluate.md#adobe-team).
 
 ### Where are the release notes? {#release-notes}
 

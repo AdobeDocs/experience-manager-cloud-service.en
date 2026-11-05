@@ -44,6 +44,8 @@ Find the symptom, then follow its section. Most problems come from access to the
 
 Before you reset, discard, replace, or overwrite anything, preserve the affected work. Recover code through your repository workflow and restore content separately through the authoring system's available recovery process. A code revert alone does not undo remote document writes.
 
+If this page doesn't solve the problem, use **Request support** in the console, or **Get help** on the Auto mode pages. Your request reaches the team that builds the agent. Name the affected page, what you expected, what happened instead, and when. See [Request Support](console.md#request-support).
+
 ## Import Fails {#import-fails}
 
 If import fails, retain the error and exact source URL. Check source reachability and permissions, correct the extraction or mapping, and retry one affected page before repeating a batch. Do not bypass source access controls. If pages require sign-in, or a capture shows a sign-in page instead of the content, set up [protected site authentication](console.md#protected-site-authentication). If the source site blocks automated access, see [Source Sites with Bot Protection](#bot-protection).

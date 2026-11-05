@@ -1,6 +1,6 @@
 ---
 title: Evaluate and Approve the Experience Modernization Agent
-description: What a technical decision-maker needs to approve the Experience Modernization Agent for Edge Delivery Services projects, including team impact, systems and data, security, review, scale, Figma, and remaining project work.
+description: What a technical decision-maker needs to approve the Experience Modernization Agent for Edge Delivery Services projects, including team impact, the Adobe team behind the agent, systems and data, security, review, scale, Figma, and remaining project work.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 product_v2:
@@ -27,7 +27,7 @@ role_v2:
 
 # Evaluate and Approve the Experience Modernization Agent {#evaluate}
 
-This page is for the person who approves how a team builds on, or migrates to, Adobe Experience Manager Edge Delivery Services with the Experience Modernization Agent: an architect, technical lead, or platform owner who may never use the agent personally. It explains what changes for your team, which systems and data the agent touches, how changes are reviewed, how the work scales, and what remains project work.
+This page is for the person who approves how a team builds on, or migrates to, Adobe Experience Manager Edge Delivery Services with the Experience Modernization Agent: an architect, technical lead, or platform owner who may never use the agent personally. It explains what changes for your team, how Adobe's team works with yours, which systems and data the agent touches, how changes are reviewed, how the work scales, and what remains project work.
 
 For what Edge Delivery Services is and how a project fits together, see [Understand Your Project](overview.md#project-foundations). A result on your own pages tells you more than any description, so ask a team member to [start with Auto mode](getting-started.md#brand-trial) or to [import a page step by step](getting-started.md#guided-import) while you read.
 
@@ -54,6 +54,22 @@ Without the agent, a migration to Edge Delivery Services starts with weeks of de
 | Integrations | Writes the blocks and code that call your APIs and services. Optional add-ons migrate forms and commerce pages. | Decides how each integration works, provides API access and documentation, and accepts the result. See [Connect Services and Applications](block-development.md#integrations). |
 | Review and release | Prepares code changes as pull requests that list preview URLs. | Developers review and merge, authors preview and publish, and the project lead runs acceptance and cutover. |
 | After go-live | Restyles the site, adds and refactors blocks, debugs, and documents the project. | Owns the site, its code, its content, and its operations. |
+
+## The Team Behind the Agent {#adobe-team}
+
+How people find information on the web is changing. More of them ask an AI assistant instead of browsing, and the assistant answers from what it reads on the brand's own site. At the same time, an agent can change a site's content, design, and code together, so a change that once needed a project can now take hours. Edge Delivery Services and the Experience Modernization Agent are built for both shifts, and they keep changing as the shifts continue. The [release notes](/help/release-notes/modernization-agent/current.md) list each change.
+
+When you choose the agent, you also choose the team that builds it and the direction that it takes. That team's mission is to help you move to Edge Delivery Services, get the most out of Experience Manager, and use agentic development tools to build sites that stay relevant as AI changes how people find them. The same team works on how agentic tools can make each web experience better for the people who use it, so its work with you doesn't end at the migration.
+
+When changes are cheap, the hard part is deciding what to change, keeping it governed, and giving the agent the right brand, design, and business context. That knowledge sits with your teams and systems. Adobe's team helps you connect it to the platform:
+
+* **A first result on your own pages.** [Auto mode](getting-started.md#brand-trial) migrates a first set of your pages, so that you judge the approach on your own content. For complex migrations, Adobe engineers can operate the agent with your team. See [AOE Delivery](aoe-delivery.md).
+* **Current as the product changes.** The console's **What's new** notice lists the highlights of each release. To apply a change to your own site, review your architecture, or discuss a need that the agent doesn't meet yet, ask your Adobe customer success manager or account team for a meeting with subject-matter experts and the product team.
+* **Your experience shapes the product.** The product team exchanges expertise with customers and partners, and works with some of them on new capabilities. What you report feeds into what the team fixes and builds next.
+
+The quickest way to reach the team is from the console itself. When something doesn't work as you expect, use **Request support**, or **Get help** on the Auto mode pages. Your message goes straight to the team that builds the agent, which looks into it and follows up by email. See [Request Support](console.md#request-support) and, for what a request shares, [Support Requests](#security-support).
+
+Adobe's team works the same way with implementation partners. With Adobe and your partner working together, the site keeps improving after the migration instead of ending with it.
 
 ## Systems and Data Flow {#systems}
 
@@ -119,6 +135,16 @@ The agent works in your console workspace, where you review its changes and the 
 * Work that you haven't pushed or uploaded exists only in your console workspace. **Reset workspace** in the [settings](console.md#settings-page) deletes it permanently.
 
 For processing locations, data retention, and compliance information, contact your Adobe account team or see the [Adobe Trust Center.](https://www.adobe.com/trust.html)
+
+### Support Requests {#security-support}
+
+A support request goes to the Adobe team that builds the agent. With the topic and description that the sender writes, it shares:
+
+* The sender's name, email address, and Adobe user and organization IDs.
+* The session ID, project name, and preview URL, and the Git host for GitHub Enterprise.
+* Any recent prompts that the sender chooses to attach. None is attached by default.
+
+The session ID lets the team find that session's conversation and logs to diagnose the problem. On the Auto mode pages, **Get help** shares only the sender's name and email address with their message. Ask users not to include passwords, tokens, or personal data in the description. See [Request Support](console.md#request-support).
 
 ## Review and Governance {#governance}
 
@@ -209,4 +235,5 @@ For source access, interactive content, and other boundaries of the import, see 
 
 * See a result on your own content: [Start with Auto mode](getting-started.md#brand-trial).
 * Plan a migration: [Migrate a Production Site](production-migration.md).
+* Talk to the people who build the agent: ask your Adobe customer success manager or account team for a meeting with subject-matter experts and the product team. See [The Team Behind the Agent](#adobe-team).
 * Read short answers to common questions: [Experience Modernization Agent FAQ](faq.md).

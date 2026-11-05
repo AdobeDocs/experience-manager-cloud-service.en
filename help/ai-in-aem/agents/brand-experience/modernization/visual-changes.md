@@ -70,6 +70,8 @@ Some requests go beyond the look of the site. Adding a field that authors fill i
 
 To undo a change, ask the agent to revert it. To drop all unpushed changes to a file, open the **Changes** view and select **Discard** next to the file. See [Changes Actions](console.md#changes-actions).
 
+If the agent still doesn't get a change right after a few attempts, ask your developer, or select **Request support** in the menu bar and describe what you asked for and what you see. Your request reaches the team that builds the agent. When a conversation isn't going well, the console may also offer help under **Need a hand?** See [Request Support](console.md#request-support).
+
 ## Show What You Mean {#references}
 
 A picture is often more precise than a description. Use **Attach files** (paperclip icon) in the prompt to attach:

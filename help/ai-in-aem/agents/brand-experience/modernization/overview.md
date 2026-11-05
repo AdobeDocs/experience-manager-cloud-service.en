@@ -55,9 +55,11 @@ People in different roles need different parts of these docs. Start with the gui
 
 | Your role | Start here | Then read |
 |---|---|---|
-| **Decision-maker:** You approve the architecture, security, and processes of the project, and may not use the agent yourself. | [Evaluate and Approve the Experience Modernization Agent](evaluate.md) | [Broader Contribution, Same Production Control](#production-control), [Where Content Is Stored](#content-storage), [How the Agent Migrates at Scale](#migration-at-scale), [Figma and Design Systems](evaluate.md#figma), [Limitations](#limitations) |
+| **Decision-maker:** You approve the architecture, security, and processes of the project, and may not use the agent yourself. | [Evaluate and Approve the Experience Modernization Agent](evaluate.md) | [The Team Behind the Agent](evaluate.md#adobe-team), [Broader Contribution, Same Production Control](#production-control), [Where Content Is Stored](#content-storage), [How the Agent Migrates at Scale](#migration-at-scale), [Figma and Design Systems](evaluate.md#figma), [Limitations](#limitations) |
 | **Migration lead:** You set up the project and run the migration, and you may be new to Edge Delivery Services. | [Understand Your Project](#project-foundations), then [Getting Started](getting-started.md) | [Migrate a Production Site](production-migration.md) and its [phases](production-migration.md#phases), [Site Catalog](site-catalog.md), [Create, Update, and Refactor Blocks](block-development.md), [Project Instructions and Memory](project-instructions.md) |
 | **Visual contributor:** You change how the site looks, and a developer reviews your work. | [Make Visual Changes](visual-changes.md) | [Inspect mode](getting-started.md#inspect-mode), [Restyle Sites](restyling.md), [Figma prompts](prompting-guide.md#figma-block-migration) |
+
+Whatever your role, when something doesn't work as you expect, use **Request support** in the console, or **Get help** on the Auto mode pages. It reaches the team that builds the agent. See [Request Support](console.md#request-support).
 
 ## Why Use the Agent {#benefits}
 
@@ -70,6 +72,7 @@ Before anyone can judge a migration to Edge Delivery Services, a developer usual
 * **Help after go-live.** The same agent restyles the site for a new brand, adds and refactors blocks, creates pages from existing blocks, debugs problems, and documents the project. You can also start on an existing Edge Delivery Services site without a migration.
 * **Project knowledge that lasts.** The agent follows the conventions that you keep in `AGENTS.md` and related files in the repository, so every conversation starts with what your team has agreed. See [What the Agent Remembers](#memory).
 * **Unattended runs.** Auto mode, in early access, migrates a set of pages, including their design, without step-by-step prompting and emails you when it finishes. See [Start with Auto Mode](getting-started.md#brand-trial).
+* **A team behind the product.** The team that builds the agent reads the support requests sent from the console and follows up. Through your Adobe customer success manager, you can also meet subject-matter experts and the product team. See [The Team Behind the Agent](evaluate.md#adobe-team).
 
 The agent doesn't replace your judgment. You decide the scope, the target design, and the content model, and you validate the result before it goes live.
 

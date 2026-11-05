@@ -92,7 +92,7 @@ Auto mode limits each account by the number of pages per migration, the number o
 * When you are granted Auto mode access, each migration can include up to 10 pages by default. A full-site run migrates a preview of up to that many pages, not the whole site. You can migrate the rest of the site later in the console.
 * When you select pages, a counter shows how many of the allowed pages you have selected. A run with more pages than your account allows cannot start.
 * If you have used all the migrations your account allows, or already have as many migrations running as allowed, Auto mode tells you so. Wait for a run to finish, or request more.
-* Use **Ask for a higher limit**, or the help button in the header, to ask the support team for more pages or migrations.
+* Use **Ask for a higher limit**, or **Get help** in the header, to ask the team that builds the agent for more pages or migrations. The team replies by email.
 
 To stop a run, use **Cancel migration**. A cancelled run can't be resumed; you would start a new migration.
 
@@ -448,7 +448,7 @@ A good demo presents complete, branded pages and working demo paths. It does not
 
 ## Troubleshooting {#troubleshooting}
 
-For problems with imports, source sites that block automated access, missing changes, previews, content uploads, Git connections, the console workspace, sending messages, or removing pages, see [Troubleshoot the Experience Modernization Agent](troubleshooting.md).
+For problems with imports, source sites that block automated access, missing changes, previews, content uploads, Git connections, the console workspace, sending messages, or removing pages, see [Troubleshoot the Experience Modernization Agent](troubleshooting.md). If that doesn't solve the problem, use **Request support** in the console, or **Get help** on the Auto mode pages, to reach the team that builds the agent. See [Request Support](console.md#request-support).
 
 ### Allowlist IP Addresses {#allowlist-ip-addresses}
 
