@@ -47,10 +47,6 @@ The agent rebuilds your pages on a block system that follows the architecture of
 
 You stay in control of every change. The agent works in your own console workspace, where you review and preview its changes and discard what you don't want. Nothing reaches your project until you push code to your Git repository or upload content to the authoring destination that you chose, or turn on [agent permissions](console.md#settings-page) that let the agent do so. Your permissions, repository policies, and publication workflow determine what you can change and release. See [Work Safely in an Independent Workspace](#independent-workspace).
 
->[!CAUTION]
->
->Never type, paste, or attach passwords, API keys, access tokens, or other secrets in the chat. Everything in the chat reaches the AI model, and the agent can copy it into your project's files. Enter the credentials that the agent needs in the console's **Settings**. See [Keep Secrets Out of the Chat](prompting-guide.md#secrets).
-
 ## Why Use the Agent {#benefits}
 
 Before anyone can judge a migration to Edge Delivery Services, a developer has a lot of repetitive work to do. They list the source pages and work out which ones share a layout. They decide how each part of a page maps to blocks and default content, then write the blocks and their styles and extract the colors and fonts. Finally, they write import scripts, import the pages, and compare them with the originals. The agent does this work with you, in one environment:
@@ -408,6 +404,10 @@ If you are interested in the AOE model for your next migration:
 ## Security and Data Handling {#security}
 
 The agent works without receiving the credentials that you configure, each user works in a separate environment, and you decide when changes reach your Git repository and your content destination. For access and isolation, credentials, what the AI model processes, the control over each step, and where work is stored, see [Security and Data Handling](evaluate.md#security).
+
+>[!CAUTION]
+>
+>That protection covers only credentials entered in the console's **Settings**. Never type, paste, or attach passwords, API keys, access tokens, or other secrets in the chat. Everything in the chat reaches the AI model, and the agent can copy it into your project's files. Make sure that everyone on the team knows this before they start prompting. See [Keep Secrets Out of the Chat](prompting-guide.md#secrets).
 
 ## Limitations {#limitations}
 
