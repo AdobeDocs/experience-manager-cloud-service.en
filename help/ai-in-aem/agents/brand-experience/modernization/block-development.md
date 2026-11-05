@@ -148,14 +148,24 @@ The agent writes the code that connects your site to other systems. Edge Deliver
 * **APIs:** A block or widget calls an API from the browser. The API must accept requests from your site's domains, including the preview and live sites. If other sites must read your site's resources, configure [custom headers](https://www.aem.live/docs/custom-headers) for the paths that they need, never for all origins.
 * **Secrets:** Everything in the repository is delivered to the browser, so it can't hold API keys or tokens. When an API needs a secret, call it through a server-side service that keeps the secret, such as Adobe App Builder or API Mesh, and let the block call that service.
 * **Commerce:** The commerce pages add-on imports product, listing, and content pages for Adobe Commerce. The product data loads from the Adobe Commerce catalog when a visitor opens the page. For the storefront itself, start from the [commerce storefront boilerplate](https://experienceleague.adobe.com/en/tools/commerce-storefront/boilerplate/) and its drop-in components.
-* **Forms:** The forms add-on turns the source's forms with two or more fields into form definitions for the form block. Where submissions go is a separate choice; see [Form Submissions](#form-submissions).
+* **Forms:** The forms add-on turns the source's forms with two or more fields into form definitions for the form block of Adobe Experience Manager Forms. Where submissions go is a separate choice; see [Form Submissions](#form-submissions).
 * **Analytics, tag management, and consent:** Load these scripts after the page has rendered, so that they don't slow it down. See [Keeping Your Lighthouse Score 100](https://www.aem.live/developer/keeping-it-100). With Auto mode's **Include integrations**, the agent adds the supported settings, switched off until you turn them on.
 
 Add-ons are [optional capabilities](console.md#optional-capabilities) that the agent offers to turn on when a task needs one. Which systems connect, who owns them, and who accepts the result are project decisions. See [What Remains Project Work](evaluate.md#project-work).
 
 ### Form Submissions {#form-submissions}
 
-Edge Delivery Services delivers a form, but it doesn't store submissions or run what follows them. On the source site, a server handled each submission, and page import can't see that server. The forms add-on migrates each form's fields into the form block; the submissions still need a destination. Connecting one is the same work on any Edge Delivery Services site, migrated or not, and because the agent is a general-purpose coding agent, you can ask for it at any time.
+Edge Delivery Services delivers a form, but it doesn't store submissions or run what follows them. On the source site, a server handled each submission, and page import can't see that server. Connecting a destination is the same work on any Edge Delivery Services site, migrated or not, and because the agent is a general-purpose coding agent, you can ask for it at any time.
+
+#### What the Forms Add-on Does {#forms-add-on}
+
+The forms add-on prepares forms for [Edge Delivery Services for Adobe Experience Manager Forms](https://www.aem.live/developer/forms). For each source form with two or more fields, it records the fields in a form definition, one row per field with its name, label, type, options, and validation, and places a form block on the page that links to the definition. If the project has no form block yet, the add-on adds the form block of Experience Manager Forms. Form blocks keep the name `form`; the agent doesn't create variants of them. By default, this block sends submissions to the [Forms Submission Service](/help/forms/forms-submission-service.md) of Experience Manager Forms. The add-on itself needs no license, but the form block and the Forms Submission Service are part of Edge Delivery Services for Experience Manager Forms, which requires an Experience Manager Forms license.
+
+The field inventory is useful whatever receives the submissions. Without Experience Manager Forms, ask the agent to build a form block that reads the same definitions and submits to your platform, or to embed the form that your platform hosts.
+
+The add-on reads each form from the HTML that the source server sends. A form that a script adds in the browser, such as a form embedded from a marketing platform, isn't in that HTML, so the add-on doesn't import it. Ask the agent to rebuild that form, or to embed it again from your platform.
+
+#### Choose a Destination {#form-destination}
 
 Lead forms belong where your teams already handle leads, in a marketing automation platform or customer relationship management (CRM) system, for example:
 
@@ -165,7 +175,7 @@ Lead forms belong where your teams already handle leads, in a marketing automati
 * HubSpot
 * Oracle Eloqua
 
-When submissions must reach several systems, send them to an integration platform, such as Adobe Workfront Fusion or Microsoft Power Automate, or to your own API. If your organization uses Adobe Experience Manager Forms, its Forms Submission Service and submit actions can store submissions in a spreadsheet, send them by email, or forward them to other systems. See [Configure Submit Actions](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md).
+When submissions must reach several systems, send them to an integration platform, such as Adobe Workfront Fusion or Microsoft Power Automate, or to your own API. With Experience Manager Forms, the Forms Submission Service stores submissions in a spreadsheet or sends them by email, and submit actions that run on Experience Manager forward them to other systems, such as Marketo Engage, Workfront Fusion, Power Automate, or a REST endpoint. See [Configure Submit Actions](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md).
 
 Many of these platforms accept a submission from the browser at a form endpoint that needs no secret. If the platform's API needs a key, send the submission through a server-side service that keeps it, as described under **Secrets** above.
 

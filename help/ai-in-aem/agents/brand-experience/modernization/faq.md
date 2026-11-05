@@ -136,7 +136,7 @@ Yes. Ask for it like any other block, and describe the data source, what authors
 
 ### Where do form submissions go after migration? {#form-submissions}
 
-Wherever you choose. The forms add-on migrates each form's fields, but what happened after a visitor submitted the form ran on the source's servers, and Edge Delivery Services doesn't store submissions. Choose the receiving system, such as your marketing automation platform or customer relationship management (CRM) system, and tell the agent the destination, the field mapping, the consent text, and the confirmation. The agent builds the form's side, and your platform's administrator configures the receiving side. See [Form Submissions](block-development.md#form-submissions).
+Wherever you choose. What happened after a visitor submitted a form ran on the source's servers, and Edge Delivery Services doesn't store submissions. The forms add-on migrates each form's fields to the form block of Adobe Experience Manager Forms. By default, that block sends submissions to the Forms Submission Service, and using it requires an Experience Manager Forms license. To send submissions to another system, such as your marketing automation platform or customer relationship management (CRM) system, tell the agent the destination, the field mapping, the consent text, and the confirmation. The agent builds the form's side, and your platform's administrator configures the receiving side. See [Form Submissions](block-development.md#form-submissions).
 
 ### Can I define how a block behaves before the migration? {#block-behavior}
 
