@@ -45,9 +45,9 @@ If your content must be stored in the JCR of an Adobe Experience Manager author 
 
 ## Access and AI Credit Usage {#access}
 
-To use the Experience Modernization Console, request access through your Adobe account manager. Sign in with an Adobe ID that belongs to your company's Adobe organization; see [Open the Experience Modernization Console](#open-console). Auto mode opens at [`aemcoder.adobe.io/auto`](https://aemcoder.adobe.io/auto); if your account doesn't have it yet, that page lets you sign up. See [Start with Auto Mode](#brand-trial).
+To use the Experience Modernization Console, request access through your Adobe account manager. Sign in with an Adobe ID that belongs to your company's Adobe organization; see [Open the Experience Modernization Console](#open-console). Auto mode opens at [`aemcoder.adobe.io/auto`](https://aemcoder.adobe.io/auto) and needs no request through your account team: if your account doesn't have it yet, select **Sign up** on that page, and you receive an email when your access is available. See [Start with Auto Mode](#brand-trial).
 
-Being able to sign in to the console does not by itself establish your organization's entitlement. Depending on your organization's agreement, migrating pages consumes AI credits. Adobe counts them once for each page that is uploaded to your content destination, Experience Workspace or the author instance. Prompts, iterations on a page, and uploading the same page again don't add to them. For how Adobe measures AI credit consumption for agentic capabilities, see [AI credit consumption](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/ai-credit-consumption). For your organization's entitlement, usage, and commercial terms, contact your Adobe account team.
+Being able to sign in to the console does not by itself establish your organization's entitlement. Depending on your organization's agreement, migrating pages consumes AI credits. Adobe counts them for each page that is uploaded to your content destination, Experience Workspace or the author instance, not for prompts or for iterations in the console. Each upload counts, including an upload of a page that you uploaded before, so check a page in the console's preview and upload it once it's ready. A restyle changes code, not content, so it never needs a new upload. Auto mode runs don't consume AI credits. **Make it yours** counts the pages that it copies to Experience Workspace, and pages that the agent uploads for you count the same as pages that you upload. For how Adobe measures AI credit consumption for agentic capabilities, see [AI credit consumption](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/ai-credit-consumption). For your organization's entitlement, usage, and commercial terms, contact your Adobe account team.
 
 ## Choose How to Start {#first-outcome}
 
@@ -55,8 +55,8 @@ The console is hosted. You do not need a local development environment for any o
 
 | Start with | Choose it when | What you do |
 |---|---|---|
-| [Auto mode, then Make it yours](#brand-trial) | You want to see a few of your own pages on Edge Delivery Services with little effort, and your account has Auto mode access. | Give Auto mode your site's URL and wait for its email. Review the result, then transfer it to your own site with **Make it yours**. |
-| [A new site from the boilerplate](#prepare-repo) | You are starting a new site, or you don't have Auto mode access. | Create a repository from the AEM boilerplate, or from the commerce boilerplate for a storefront, and install two GitHub apps. Connect the site in the console and ask the agent to import pages or build what you need. |
+| [Auto mode, then Make it yours](#brand-trial) | You want to see a few of your own pages on Edge Delivery Services with little effort. | Sign up for Auto mode if you haven't yet. Give it your site's URL and wait for its email. Review the result, then transfer it to your own site with **Make it yours**. |
+| [A new site from the boilerplate](#prepare-repo) | You are starting a new site, or you want to guide the import step by step. | Create a repository from the AEM boilerplate, or from the commerce boilerplate for a storefront, and install two GitHub apps. Connect the site in the console and ask the agent to import pages or build what you need. |
 | [Your existing site](#existing-site) | Your site already runs on Edge Delivery Services. | Install the AEM Code Connector app and connect the site. Ask the agent to explain, change, or extend it. |
 
 All three paths end in the same place: your site connected in the console. From there, you [prompt the agent](#start-prompting), then [save, preview, and publish](#save-work) the result.
@@ -65,7 +65,7 @@ Before importing, identify the authorized source URLs, the pages to include, and
 
 ## Start with Auto Mode {#brand-trial}
 
-Auto mode migrates a website, or a list of pages you select, without step-by-step prompting. Open it at [`aemcoder.adobe.io/auto`](https://aemcoder.adobe.io/auto). If your account doesn't have Auto mode yet, that page lets you **Sign up**. Auto mode is not a prerequisite for trying your content: without it, [start from a repository](#repo-start) and [import pages step by step](#guided-import).
+Auto mode migrates a website, or a list of pages you select, without step-by-step prompting. Open it at [`aemcoder.adobe.io/auto`](https://aemcoder.adobe.io/auto). If your account doesn't have Auto mode yet, select **Sign up** on that page; you receive an email when your access is available. Auto mode is not a prerequisite for trying your content: without it, [start from a repository](#repo-start) and [import pages step by step](#guided-import).
 
 Auto mode and the guided workflow differ in how much the agent does before it hands back to you:
 

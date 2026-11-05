@@ -38,7 +38,7 @@ These are answers to questions that users of the Experience Modernization Agent 
 
 ### How do I get access to the console? {#get-access}
 
-Request access to the Experience Modernization Console through your Adobe account manager. Auto mode opens at [`aemcoder.adobe.io/auto`](https://aemcoder.adobe.io/auto); if your account doesn't have it yet, that page lets you sign up. See [Access and AI Credit Usage](getting-started.md#access).
+Request access to the Experience Modernization Console through your Adobe account manager. Auto mode opens at [`aemcoder.adobe.io/auto`](https://aemcoder.adobe.io/auto) and needs no request through your account team: if your account doesn't have it yet, select **Sign up** on that page, and you receive an email when your access is available. See [Access and AI Credit Usage](getting-started.md#access).
 
 ### I belong to several Adobe organizations. Which workspace do I get? {#organizations}
 
@@ -54,7 +54,7 @@ Not necessarily. Being able to sign in does not by itself establish your organiz
 
 ### Does the agent consume AI credits? {#ai-credits}
 
-Depending on your organization's agreement, migrating pages consumes AI credits. They are counted once for each page that is uploaded to your content destination. Prompts, iterations on a page, and uploading the same page again don't add to them. See [Access and AI Credit Usage](getting-started.md#access) and Adobe's [AI credit consumption](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/ai-credit-consumption) guide. For your organization's usage, contact your Adobe account team.
+Depending on your organization's agreement, migrating pages consumes AI credits. They are counted for each page that is uploaded to your content destination, not for prompts. Each upload counts, including an upload of the same page again, so upload a page once it's ready. Auto mode runs don't consume them, and **Make it yours** counts the pages that it copies to Experience Workspace. See [Access and AI Credit Usage](getting-started.md#access) and Adobe's [AI credit consumption](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/ai-credit-consumption) guide. For your organization's usage, contact your Adobe account team.
 
 ## Auto Mode {#auto-mode}
 
@@ -244,7 +244,7 @@ In Experience Workspace, restore an earlier version of the document from its ver
 
 ### What does Reset workspace delete? {#reset}
 
-The console workspace's chat history, files, and session state, and the GitHub connection. Pushed code and uploaded content are not affected. See [Settings Page](console.md#settings-page).
+The chat history, the transcripts of the agent's sessions, the open project's working files, and the GitHub connection. Pushed code and uploaded content are not affected. See [Settings Page](console.md#settings-page).
 
 ### Why won't the agent delete pages when I ask in chat? {#delete-pages}
 
@@ -287,6 +287,10 @@ Not as a separate log in the console, but the agent's work is recorded. What it 
 ### Where can I find retention and compliance information? {#retention-compliance}
 
 For processing locations, data retention, and compliance information, contact your Adobe account team or see the [Adobe Trust Center.](https://www.adobe.com/trust.html)
+
+### Can I give the agent health data? {#hipaa}
+
+No. Never give the agent real end-user data, such as patient records or your users' credentials, and don't migrate pages that display such data. The agent is a developer tool for migrating and building sites, and your site's visitors never reach it. For which Experience Manager services can process protected health information (PHI) under HIPAA, see [HIPAA readiness for Adobe Experience Manager as a Cloud Service](/help/compliance/hipaa/hipaa-readiness.md) and [Health Data and HIPAA](evaluate.md#security-hipaa).
 
 ## Product Fit and Help {#product-fit}
 

@@ -82,7 +82,7 @@ When a task needs a key, don't paste it to get the task done. If the agent itsel
 
 ### If You Shared a Secret {#secret-shared}
 
-1. Revoke or replace the secret at the service that issued it, right away. Clearing the chat doesn't take back what was already sent.
+1. Revoke or replace the secret at the service that issued it, right away. Clearing the chat doesn't take back what was already sent, and the transcripts of the agent's sessions keep it until you reset the workspace.
 1. Check the **Changes** view for files that contain the secret, and discard those changes before you push.
 1. If a file with the secret was already pushed, replacing the secret is the fix. A later commit removes it from the files, but not from the repository's history.
 1. Tell your security team, as your organization's policy requires.

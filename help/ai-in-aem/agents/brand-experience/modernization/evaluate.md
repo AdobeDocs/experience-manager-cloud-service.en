@@ -142,9 +142,13 @@ If a document-based upload uses a configured fallback account because your sign-
 ### Where Your Work Is Stored {#security-storage}
 
 * Code that you push is stored in your Git repository, and content that you upload is stored in Experience Workspace or on your author instance. Their own retention and version history policies apply.
-* Work that you haven't pushed or uploaded exists only in your console workspace. **Reset workspace** in the [settings](console.md#settings-page) deletes it permanently.
+* Work that you haven't pushed or uploaded exists only in your console workspace, along with the chat history and the transcripts of the agent's sessions. **Clear chat** removes the messages from the chat panel but keeps the transcripts. **Reset workspace** in the [settings](console.md#settings-page) permanently deletes the chat history, the transcripts, and the open project's working files.
 
 For processing locations, data retention, and compliance information, contact your Adobe account team or see the [Adobe Trust Center.](https://www.adobe.com/trust.html)
+
+### Health Data and HIPAA {#security-hipaa}
+
+The Experience Modernization Agent is a developer tool for migrating and building sites. Your site's visitors never reach it: Edge Delivery Services serves the published site, and visitors' requests don't pass through the console or the agent. Never give the agent real end-user data, such as patient records or your users' credentials, and don't migrate pages that display such data. Whatever you give the agent can reach the AI model; see [What the AI Model Processes](#security-model-data). For which Experience Manager services can process protected health information (PHI) under the Health Insurance Portability and Accountability Act (HIPAA), see [HIPAA readiness for Adobe Experience Manager as a Cloud Service](/help/compliance/hipaa/hipaa-readiness.md).
 
 ### Support Requests {#security-support}
 
@@ -223,7 +227,7 @@ What to approve:
 
 ## Costs and Entitlement {#costs}
 
-Signing in to the console doesn't establish your organization's entitlement. Depending on your agreement, migrating pages consumes AI credits. They are counted once for each page that is uploaded to your content destination, not per prompt, so iterating on a page and uploading it again don't add to them. See [Access and AI Credit Usage](getting-started.md#access), and contact your Adobe account team for your entitlement, usage, and commercial terms.
+Signing in to the console doesn't establish your organization's entitlement. Depending on your agreement, migrating pages consumes AI credits. They are counted for each page that is uploaded to your content destination, not per prompt, and Auto mode runs don't consume them. Each upload counts, including an upload of the same page again, so teams check a page in the console and upload it once it's ready. A restyle changes code, not content, and needs no new upload. See [Access and AI Credit Usage](getting-started.md#access), and contact your Adobe account team for your entitlement, usage, and commercial terms.
 
 ## What Remains Project Work {#project-work}
 

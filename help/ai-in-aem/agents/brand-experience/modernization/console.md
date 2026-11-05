@@ -109,7 +109,7 @@ The chat panel allows you to view and continue your conversation with the agent.
 The chat panel header includes links for navigating to the [Home](#home-page) and [Settings](#settings-page) views and chat actions.
 
 * **Chat actions**
-  * **Clear chat**: This removes all messages and starts a new conversation. It can't be undone, and it is not a code or content rollback. Before clearing, ask the agent to record important decisions in the [project instruction files](project-instructions.md) that it reads in every conversation, and download the chat if you want to keep it.
+  * **Clear chat**: This removes all messages and starts a new conversation. It can't be undone, and it is not a code or content rollback. The transcripts of the agent's sessions stay in your console workspace until you select **Reset workspace**. Before clearing, ask the agent to record important decisions in the [project instruction files](project-instructions.md) that it reads in every conversation, and download the chat if you want to keep it.
   * **Download chat**: This downloads the conversation history as a Markdown file, which you can keep as a record of what was asked. See [Trace What the Agent Did](evaluate.md#audit-trail).
 
 The conversation is saved with your console workspace. When you reload the page or return later, the chat history reloads. Prompts that you recall with the arrow keys last only as long as the browser tab.
@@ -305,7 +305,7 @@ If you make a change to any value in any section, select **Save** to save those 
 * **Support** summarizes the information that a support request shares with the team that builds the agent.
   * **Request support** - Select it to open a [support request](#request-support) without leaving the console.
 * **Danger zone** contains settings that can revert your console workspace.
-  * **Reset workspace** - Permanently deletes the console workspace's chat history, files, and session state, and disconnects GitHub. To confirm, you type `delete everything`. This cannot be undone. Code that you pushed and content that you uploaded stay in their remote locations, but unpushed and unuploaded work is lost. Save needed code and content first; reset is not a remote-content recovery tool.
+  * **Reset workspace** - Permanently deletes the chat history, the transcripts of the agent's sessions, and the open project's working files, ends the session, and disconnects GitHub. To confirm, you type `delete everything`. This cannot be undone. Code that you pushed and content that you uploaded stay in their remote locations, but unpushed and unuploaded work is lost. Save needed code and content first; reset is not a remote-content recovery tool.
 
 Figma access also depends on the token owner's access to the selected file and the capability being enabled for the project. Store tokens only in credential settings, not prompts or project documentation.
 
