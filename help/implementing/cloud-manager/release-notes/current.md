@@ -89,11 +89,15 @@ To join the beta, email [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-bet
 
 ## Bug fixes {#bug-fixes}
 
-* Dynamic Media and Content Hub activation failed for all EDS programs. A placeholder offer used during Edge Delivery Services provisioning disrupted the shared activation batch, causing Dynamic Media with OpenAPI and Content Hub activation to fail across every EDS program. The provisioning flow has been corrected so these activations complete reliably for all EDS programs. (CMGR-80012)
-
-* Custom domain deletions remained pending indefinitely. In some situations, deleting a CDN domain configuration caused the deletion process to stop, blocking further domain changes. The domain-configuration deletions now finish as expected. (CMGR-79997)
-
-* Universal Editor (EDS) site provisioning failed intermittently. Universal Editor site provisioning failed intermittently when a GitHub deployment step exceeded a three-minute timeout. The provisioning flow has been made more resilient so these sites provision reliably. (CMGR-75897)
+* Deleting an environment left outdated CDN configuration and persistent alerts. Deleting an environment did not update the associated Fastly CDN configuration, which left outdated configuration behind and triggered continuous monitoring alerts. The deletion flow now updates the CDN configuration correctly. (CMGR-79320)
+* Code quality scan fails on large projects. The code quality (SonarQube) scan generates multi-gigabyte debug logs and is terminated when scanning certain bundled libraries, causing the build to fail. The scan has been corrected so it completes normally on affected projects. (CMGR-80025)
+* Environments remain in an Updating state. An environment remains in an Updating state with pipelines blocked, even after the underlying operation has finished. The environment lifecycle has been corrected so affected environments return to a usable state without manual intervention. (CMGR-78361)
+* Smart Build restores modules with an incorrect version. After a Smart Build cache restore, some restored modules keep an older project version (and in some cases ui.content was not installed), producing an inconsistent build. Module restoration now preserves the correct version so Smart Build output matches a full build. (CMGR-80941)
+* Sites usage CSV export showed month labels shifted by one month. On the License > Sites Usage Details page, the CSV export shows month labels shifted one month earlier for users in time zones behind UTC. The export now shows the correct month labels regardless of the user's time zone. (CMGR-80903)
+* Clearer error attribution for configuration pipelines. Configuration pipeline failures are now attributed more accurately. Configuration pipeline failures are now attributed more accurately, including invalid customer YAML, infrastructure timeouts, and missing configuration files. (CMGR-80486, CMGR-73381, CMGR-81046)
+* Clearer error messages for SSL certificate operations. Creating, updating, or deleting an SSL certificate returns a generic error with no detail when something goes wrong. These operations now return specific, actionable error messages. (CMGR-72997)
+* Reusing an access token name no longer overwrites the existing token. Reusing an existing access token name within a program overwrites the shared token and creates duplicate access secrets. Cloud Manager now handles token name reuse correctly, preventing accidental overwrites and duplicates. (CMGR-81236)
+* Clone Environment now works with Service Principals. The Clone Environment flow has been fixed so it works correctly for environments that use Service Principal authentication. (CMGR-80934)
 
 <!-- There are no significant bug fixes in the July 2026 Cloud Manager release. -->
 
