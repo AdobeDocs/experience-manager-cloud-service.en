@@ -32,10 +32,6 @@ These **preview** release notes are provided as a convenience so you know what c
 >
 >The content of the actual release as well as the release date are subject to change.
 
-## Upcoming Features {#upcoming-features}
-
-
-
 ## Upcoming Changes {#upcoming-improvements}
 
-
+Rich Text Editor toolbar tooltips now display the keyboard shortcuts for their actions.
