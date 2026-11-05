@@ -30,11 +30,11 @@ role_v2:
 
 >[!NOTE]
 >
->This path is Edge Delivery Services on top of the JCR stack: content is stored in the Java Content Repository (JCR) of your Adobe Experience Manager as a Cloud Service author instance, authors edit it with the Universal Editor, and the platform delivers the pages. This setup was previously called Crosswalk. For new implementations, Adobe strongly recommends document-based persistence with Experience Workspace instead, including for large sites. See [Where Content Is Stored and How Authors Edit It](overview.md#content-storage).
+>In this setup, content is stored in the Java Content Repository (JCR) of your Adobe Experience Manager as a Cloud Service author instance, authors edit it with the Universal Editor, and Edge Delivery Services delivers the pages. This setup was previously called Crosswalk. For the storage that Adobe recommends for new implementations, see [Where Content Is Stored and How Authors Edit It](overview.md#content-storage).
 
-Use this workflow when a requirement depends on content staying in the JCR. The [Universal Editor](/help/implementing/universal-editor/introduction.md) is Adobe's visual editor for content in Experience Manager. This is not a migration to HTL-based delivery, and the source website's technology does not determine your persistence target.
+Use this workflow when a requirement depends on content staying in the JCR. The [Universal Editor](/help/implementing/universal-editor/introduction.md) is Adobe's visual editor for content in Experience Manager. This is not a migration to HTL-based delivery, and the source website's technology doesn't determine where your content is stored.
 
-You need console access, repository permissions, and permission to create or update content and assets on the target author instance. Record the author instance's host, site identifier, page root, DAM destination (the Experience Manager Assets folder for images and files), code repository, and working branch before importing. A document-based Auto mode preview is not a substitute for this setup.
+You need console access, repository permissions, and permission to create or update content and assets on the target author instance. Record the author instance's host, site identifier, page root, DAM destination (the Experience Manager Assets folder for images and files), code repository, and working branch before importing. Auto mode produces document-based content, so it doesn't apply to this setup.
 
 ## Create Your Edge Delivery Services Project Repo {#create-repo}
 
@@ -46,8 +46,7 @@ For a new project:
 1. Follow the [Universal Editor tutorial](https://www.aem.live/developer/ue-tutorial) to set up your repo.
    * Stop when you are asked to create a site in Experience Manager.
 1. For this new-project setup, remove the template's `paths.json` and commit the change. Do not remove an existing site's path mappings without reviewing their purpose and replacement.
-1. Add the [AEM Code Connector](https://github.com/apps/aem-code-connector/installations/select_target) app to your repo.
-   * This lets the console push changes and open pull requests in your repository. It is different from the AEM Code Sync app, which lets Edge Delivery Services fetch your code.
+1. Add the [AEM Code Connector](https://github.com/apps/aem-code-connector/installations/select_target) app to your repo, so that the console can push changes. For how it differs from AEM Code Sync, see [Start from a Repository](getting-started.md#repo-start).
 
 For an existing project that stores its content in the JCR, reuse its configuration and content models. Do not recreate the site or replace its repository with the template. Confirm [code synchronization and repository access](getting-started.md#repo-start) without repeating the document-based setup.
 
@@ -65,31 +64,26 @@ For an existing project that stores its content in the JCR, reuse its configurat
 
 Skip site creation if the target site already exists. Confirm its identifier and destinations instead; do not rename a live site to fit an example.
 
-## Continue with the Standard Getting Started Steps {#continue}
+## Connect the Site and Import a Page {#continue}
 
-Once setup is complete, connect the project and migrate one representative page. These are shared console actions, not a second repository setup.
+The console steps are the same as in the [main guide](getting-started.md). Only the import request and the checks differ.
 
-![Content import](assets/content-import.png)
+1. [Open the console](getting-started.md#open-console) and [connect your site](getting-started.md#connect-repo).
+1. Ask the agent to import one page, and say that the content is stored in the JCR. Replace the example URL:
+   * "Migrate only `https://www.example.com/about` to the agreed page root in this Experience Manager authoring project. Preserve content and links. Reuse the project's block models and validate JCR conversion. Do not upload, push, or publish."
 
-Follow these steps from the standard guide.
+   ![Content imported](assets/content-imported-aem-authoring.png)
 
-1. [Open the Experience Modernization Console](getting-started.md#open-console)
-1. [Connect Your Site](getting-started.md#connect-repo)
-1. [Start Prompting](getting-started.md#start-prompting), explicitly requesting JCR-backed output for Experience Manager authoring.
-
-For example: "Migrate only `https://www.example.com/about` to the agreed page root in this Experience Manager authoring project. Preserve content and links. Reuse the project's block models and validate JCR conversion. Do not upload, push, or publish."
-
-![Content imported](assets/content-imported-aem-authoring.png)
-
-Once you complete those steps to migrate the content, continue with the following steps.
+1. [Validate the content](#validate-content), [upload it](#upload-content) as a content package, and [check that authors can edit and preview it](#preview-site).
+1. [Request styling and push the code](getting-started.md#guided-import) as in the main guide. Styling changes only CSS and JavaScript, so the uploaded content stays as it is.
 
 ## Validate Content {#validate-content}
 
-Validate the selected page in the content panel. Use **Markdown view**, **JCR XML view**, and **Errors** to check content and conversion. Use **Add to chat** to target fixes to a page, parser, or transformer. Parsers and transformers are the import scripts that the agent generates: a parser converts one block's source HTML, and a transformer cleans up the whole page.
+Validate the selected page in the content panel. Use **Markdown view**, **JCR XML view**, and **Errors** to check content and conversion. Use **Add to chat** to aim a fix at a page or at one of the import scripts that the agent generates: a parser converts one block's source HTML, and a transformer cleans up the whole page.
 
 In Experience Manager authoring projects, each block also has a model: configuration that defines the fields authors edit for that block in the Universal Editor. The Universal Editor edits only the fields that a block's model defines, so a page can render correctly in the HTML preview while blocks that don't match their models can't be edited. Ask the agent to check that the source block models, component definitions, and generated aggregate configuration agree. Update the source configuration through the project's generation workflow rather than fixing only a generated file. Check field mappings and authoring hints, page paths, image references, and the intended site/DAM destinations.
 
-Resolve conversion errors on a representative page before creating a larger package.
+Resolve conversion errors on one sample page before creating a larger package.
 
 ![Contextual chat](assets/contextual-chat.png)
 
@@ -97,7 +91,7 @@ Resolve conversion errors on a representative page before creating a larger pack
 
 Package upload writes content to the author instance. Confirm the selected pages, host, site, page root, and asset destination with the target owner. Preserve existing content before replacing it; local validation does not make an overwrite safe.
 
-The upload uses your Adobe sign-in, and the author instance enforces your account's permissions to write the selected pages and assets. Signing in to the console doesn't grant additional access. See [Content Push Permissions](evaluate.md#content-push-permissions).
+The upload uses your Adobe sign-in, so the author instance applies your own permissions to the pages and assets. See [Content Push Permissions](evaluate.md#content-push-permissions).
 
 1. Make sure you are in a **Content** view and select the **Upload content** button on the top-right.
 1. In the **Create content package** dialog, choose the pages to include in the package.
@@ -125,13 +119,13 @@ If **Create package** reports **Missing site configuration**, the console doesn'
 
 If the Experience Manager as a Cloud Service environment is hibernated, the upload dialog and Settings say so and link to the Developer Console. De-hibernate the environment there, then retry the upload. See [De-hibernate a sandbox program from the Developer Console.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md#de-hibernation-introduction)
 
-Review and [push the matching code and configuration](getting-started.md#push-code-changes) through your project's repository policy. This is separate from package upload. Merging the code into `main` changes the live site's code immediately; see [How Changes Go Live](overview.md#code-content-lifecycle).
+Review and [push the matching code and configuration](getting-started.md#push-code-changes) through your project's repository policy. This is separate from the package upload; see [How Changes Go Live](overview.md#code-content-lifecycle).
 
 ## Validate Authoring and Preview {#preview-site}
 
 1. In the Sites console, locate the imported page under the agreed site root.
 1. Open it in the Universal Editor. Verify that expected fields and blocks can be selected and edited, not merely rendered.
-1. Change representative text and an image, save, and reopen the page. Confirm that the content and asset references persist.
+1. Change some text and an image, save, and reopen the page. Confirm that the content and asset references persist.
 1. Use the project's configured preview workflow (preview pages are served on `*.aem.page`). Verify the page against the intended code branch and check responsive layout, links, and images.
 1. For production, complete the [site acceptance checks](production-migration.md#acceptance) and follow your project's publication process.
 

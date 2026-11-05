@@ -56,12 +56,22 @@ Bot protection in a content delivery network (CDN) or web application firewall (
 
 Migrate only sites that you own or are authorized to migrate. Arrange access with the site's administrator rather than working around the protection:
 
-1. Ask the administrator to allow access for the migration period, for example by allowlisting the [backend addresses](getting-started.md#allowlist-ip-addresses) in the CDN or WAF.
+1. Ask the administrator to allow access for the migration period, for example by allowlisting the [backend addresses](#allowlist-ip-addresses) in the CDN or WAF.
 1. If the protection accepts a credential instead, such as a secret request header, enter it in the authentication controls offered by your workflow, such as [Protected site authentication](console.md#protected-site-authentication) in the console settings. Use a scoped credential and remove it when the migration is complete.
 1. If the administrator provides an accessible staging or origin host with the same content, use it as the source and record which host the content came from.
 1. If only discovery is blocked, provide the list of page URLs to migrate instead.
 
 Verify one representative page before you start a catalog or batch run, including its images and other assets. After access changes, retry the failed pages, and check captures for challenge or access-denied pages before you accept the content.
+
+### Allowlist IP Addresses {#allowlist-ip-addresses}
+
+With your source-site administrator's approval, allowlist these backend addresses for source extraction:
+
+* `34.228.136.112`
+* `54.90.51.39`
+* `3.224.194.242`
+
+Allowlisting gives network access only. It doesn't sign in to protected pages, and it doesn't connect to a VPN or private network.
 
 ## A Change Is Missing {#missing-change}
 
