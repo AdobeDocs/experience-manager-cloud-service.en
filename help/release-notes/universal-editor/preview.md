@@ -35,3 +35,4 @@ These **preview** release notes are provided as a convenience so you know what c
 ## Upcoming Changes {#upcoming-improvements}
 
 * Rich Text Editor toolbar tooltips now display the keyboard shortcuts for their actions.
+* The device emulator's custom responsive width was fixed so a typed value takes effect when committed instead of reverting to the previous width. The width field also now resets properly and is read-only when switching back to the desktop preset.
