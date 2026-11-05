@@ -147,7 +147,7 @@ The agent writes the code that connects your site to other systems. Edge Deliver
 * **Applications:** A form, a search page, a store locator, or an account area has little authored content. Build it as a [widget](https://www.aem.live/docs/widgets): a self-contained application in the repository's `/widgets/` folder, which authors place on a page by inserting its link. An existing application, such as one built with React, can be adapted the same way.
 * **APIs:** A block or widget calls an API from the browser. The API must accept requests from your site's domains, including the preview and live sites. If other sites must read your site's resources, configure [custom headers](https://www.aem.live/docs/custom-headers) for the paths that they need, never for all origins.
 * **Secrets:** Everything in the repository is delivered to the browser, so it can't hold API keys or tokens. When an API needs a secret, call it through a server-side service that keeps the secret, such as Adobe App Builder or API Mesh, and let the block call that service.
-* **Commerce:** The commerce pages add-on imports product, listing, and content pages for Adobe Commerce. The product data loads from the Adobe Commerce catalog when a visitor opens the page. For the storefront itself, start from the [commerce storefront boilerplate](https://experienceleague.adobe.com/en/tools/commerce-storefront/boilerplate/) and its drop-in components.
+* **Commerce:** The commerce pages add-on is built for storefronts on Adobe Commerce. It imports product detail and product listing pages as pages whose product data loads from the catalog when a visitor opens them. See [Commerce Pages](#commerce-pages).
 * **Forms:** The forms add-on turns the source's forms with two or more fields into form definitions for the form block of Adobe Experience Manager Forms, and is built for organizations that license it. Where submissions go is a separate choice; see [Form Submissions](#form-submissions).
 * **Analytics, tag management, and consent:** Load these scripts after the page has rendered, so that they don't slow it down. See [Keeping Your Lighthouse Score 100](https://www.aem.live/developer/keeping-it-100). With Auto mode's **Include integrations**, the agent adds the supported settings, switched off until you turn them on.
 
@@ -204,6 +204,16 @@ The agent updates the form definition and the form block's code. It can also wri
 * Consent records, and where personal data is kept and for how long.
 
 Submit a test entry from the preview site. Check that it arrived with every field, started the expected workflow, and was marked as a test. Repeat the check on the production domain after the switch.
+
+### Commerce Pages {#commerce-pages}
+
+The commerce pages add-on is built for storefronts that run on Adobe Commerce. It recognizes product detail pages and product listing pages on the source site, whichever platform runs it, from signals such as product structured data, URL patterns, and page elements like a quantity field, a product grid, or filters. It rebuilds each one as a page that holds only the product's SKU, or the category's path, in a commerce block, and the surrounding content, such as banners and promotions, in standard blocks. The product data isn't imported: the commerce block loads it from the catalog each time a visitor opens the page. The agent migrates other pages with the standard workflow.
+
+The add-on doesn't write the commerce blocks. It uses the product and listing blocks that the project already has, and otherwise expects the `product-details` and `product-list-page` blocks of the [commerce storefront boilerplate](https://experienceleague.adobe.com/en/tools/commerce-storefront/boilerplate/). Start the project from that boilerplate, and connect the storefront to your catalog, so that the imported pages show products when you check them. The add-on itself needs no license, but the storefront's drop-in components require an Adobe Commerce as a Cloud Service or Adobe Commerce Optimizer license. Adobe Commerce Optimizer can also supply the catalog when another commerce platform handles the cart, checkout, and orders. See [Backend options](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/backends/).
+
+For another commerce platform without Adobe Commerce Optimizer, the add-on doesn't apply. The agent has no skills for other commerce platforms, so give it the platform's current documentation and ask it to read it first. It can then build product and listing blocks that load their data from the platform's API. See [Work Beyond Edge Delivery Services](prompting-guide.md#beyond-eds).
+
+The add-on works with [document-based persistence](overview.md#document-based). For projects with [JCR persistence](overview.md#jcr-persistence), the agent uses the standard migration, which imports what each product page shows at that moment. Decide with your team how those pages connect to the catalog.
 
 ## Update an Existing Block {#update}
 

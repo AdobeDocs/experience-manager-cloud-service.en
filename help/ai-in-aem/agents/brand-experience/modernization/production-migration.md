@@ -139,7 +139,7 @@ Automated import is one part of delivery. Implement and verify the agreed requir
 * Forms, search, commerce, account features, analytics, consent, and other integrations.
 * Author guidance, operational ownership, access, and deployment configuration.
 
-The agent implements the code side of these, for example blocks that call your search or commerce API, forms, and the code that loads analytics and consent. It can't configure systems outside your repository and content, such as the search service, the CDN, or the analytics account, and it doesn't decide your requirements. Give it the API documentation and the agreed behavior, and name an owner for each external system who accepts the result. See [Connect Services and Applications](block-development.md#integrations), and for forms, [Form Submissions](block-development.md#form-submissions).
+The agent implements the code side of these, for example blocks that call your search or commerce API, forms, and the code that loads analytics and consent. It can't configure systems outside your repository and content, such as the search service, the CDN, or the analytics account, and it doesn't decide your requirements. Give it the API documentation and the agreed behavior, and name an owner for each external system who accepts the result. See [Connect Services and Applications](block-development.md#integrations), for forms, [Form Submissions](block-development.md#form-submissions), and for product pages, [Commerce Pages](block-development.md#commerce-pages).
 
 ### Images and Documents {#assets}
 
