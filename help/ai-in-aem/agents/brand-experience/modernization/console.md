@@ -354,7 +354,7 @@ When something doesn't work as you expect, or you have a question that these pag
 1. Optionally select recent prompts to attach, so that the team can see what you asked. None is attached unless you select it.
 1. Select **Send**.
 
-The request shares your name, email address, Adobe user and organization IDs, session ID, project name, and preview URL, and the Git host if you use GitHub Enterprise. The session ID lets the team find your session's conversation and logs. Before your console workspace is set up, a request shares only your name, email address, and organization. You can send one request a minute.
+The request shares your name, email address, Adobe user and organization IDs, session ID, project name, and preview URL, and the Git host if you use GitHub Enterprise. That gives the team everything it needs to find your session's conversation and logs. Before your console workspace is set up, a request shares only your name, email address, and organization. You can send one request a minute.
 
 When the conversation suggests that you're stuck or frustrated, the prompt coach may offer help under **Need a hand?** Select **Contact support** to open the same request, or **No thanks** to carry on.
 

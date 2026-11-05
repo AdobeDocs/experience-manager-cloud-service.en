@@ -144,7 +144,7 @@ A support request goes to the Adobe team that builds the agent. With the topic a
 * The session ID, project name, and preview URL, and the Git host for GitHub Enterprise.
 * Any recent prompts that the sender chooses to attach. None is attached by default.
 
-The session ID lets the team find that session's conversation and logs to diagnose the problem. On the Auto mode pages, **Get help** shares only the sender's name and email address with their message. Ask users not to include passwords, tokens, or personal data in the description. See [Request Support](console.md#request-support).
+Together, these details give the team everything it needs to find the session's conversation and logs and diagnose the problem. On the Auto mode pages, **Get help** shares only the sender's name and email address with their message. Ask users not to include passwords, tokens, or personal data in the description. See [Request Support](console.md#request-support).
 
 ## Review and Governance {#governance}
 
