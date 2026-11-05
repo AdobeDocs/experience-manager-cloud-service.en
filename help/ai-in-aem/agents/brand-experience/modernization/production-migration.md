@@ -27,7 +27,7 @@ role_v2:
 
 # Migrate a Production Site {#production-migration}
 
-Use this workflow to move an agreed site inventory to Edge Delivery Services, the Adobe Experience Manager service that delivers websites. Start with representative pages, establish reusable content and design mappings, and expand only after those pages work in the chosen authoring environment. If terms such as blocks, default content, or preview are new to you, see [How Edge Delivery Services Works](overview.md#eds-basics).
+Use this workflow to move an agreed site inventory to Edge Delivery Services, the Adobe Experience Manager service that delivers websites. Start with representative pages, establish reusable content and design mappings, and expand only after those pages work in the chosen authoring environment. If terms such as blocks, default content, or preview are new to you, see [Understand Your Project](overview.md#project-foundations) and [Shape the Content Structure](#content-structure).
 
 For a few demonstration pages or an initial evaluation, use the smaller [demo and trial workflows](getting-started.md#first-outcome). Their completion criteria are different from production acceptance.
 
@@ -95,7 +95,7 @@ Start with one template and a small set of pages. For example:
 
 > Migrate only these authorized product pages: [URLs]. Target [document-based or JCR persistence] at [destination paths]. Preserve approved text, links, metadata, and image meaning. Reuse the project's blocks and content conventions. Report missing content and unsupported interactions. Do not upload, push, or publish.
 
-1. Review content mapping. Headings, paragraphs, lists, and images stay default content, outside any block. Use a block only where authors need to mark which content forms a component, such as a set of cards, because the code can't infer it. A different look alone doesn't need a block: CSS and JavaScript can style default content and sections however the design requires. Authors will edit every migrated page in this structure, so settle it on the representatives. See [David's Model](https://www.aem.live/docs/davidsmodel).
+1. Review the content structure: the sections, default content, blocks, variants, and section styles that the agent chose. Authors will edit every migrated page in this structure, so settle it on the representatives. See [Shape the Content Structure](#content-structure).
 1. Compare imported text, links, images, metadata, and section order against the source. Fix the reusable parser, transformer, or mapping when a pattern is wrong. These are the import scripts that the agent generates: a parser converts one block's source HTML, and a transformer cleans up the whole page.
 1. Apply source styling or follow the [redesign workflow](restyling.md#during-migration). Check global styles before refining individual blocks.
 1. Complete the shared header, navigation, and footer separately from page import. The agent migrates them, including footer images, with dedicated skills, so that every page shares one header and one footer.
@@ -105,6 +105,28 @@ Start with one template and a small set of pages. For example:
 1. Record the accepted source-to-output mapping, models, design decisions, and known exceptions before expanding the batch.
 
 A matching screenshot is insufficient if authors cannot maintain the result. For JCR-backed projects, check models, generated component configuration, conversion errors, and asset destinations before scaling.
+
+### Shape the Content Structure {#content-structure}
+
+Authors edit every migrated page in the structure that the agent chooses on import, and the bulk import repeats that structure on every page of a template. Edge Delivery Services pages are made of sections that contain default content and blocks; see [Markup, Sections, Blocks, and Auto Blocking](https://www.aem.live/developer/markup-sections-blocks). The agent follows [David's Model](https://www.aem.live/docs/davidsmodel) and keeps the structure as plain as the design allows, because every block and variant is one more thing for authors to learn.
+
+| Structure | What the agent does on import | How to steer it |
+|---|---|---|
+| **Section** | Splits the page where its background or layout changes. Empty space between parts of a page is spacing, not a section. | Ask it to merge sections that authors see as one part of the page, or to split one that does two jobs. |
+| **Default content** | Keeps everything that an author could type in a document as default content: headings, paragraphs, lists, links, and inline images. CSS lays it out however the design needs. | Where it created a block for content of this kind, ask it to use default content and style it with CSS. |
+| **Block** | Uses a block for repeated items, interactive components, and fixed side-by-side layouts. Similar items that flow and wrap become cards; columns hold a fixed set of different content side by side. A photo background belongs to its block, such as a hero. It reuses a block of the project before it creates one. | Name the block that a pattern should use, or ask it to reuse an existing one. See [Compose Before Creating a Block](block-development.md#composition). |
+| **Block variant** | Creates a variant, such as `cards-compact`, for a small difference in look that authors choose. Content with different fields or a different job gets a block of its own. Optional content and a different number of items don't make a variant. | Ask it to merge variants that differ only slightly, or to turn a variant whose fields differ into a block of its own. |
+| **Section style** | Gives a section a style in its section metadata when its background differs from the page's, its alignment isn't the default, or its default content sits beside a block. It names the style after the look, such as `dark`, `light-grey`, or `centered`. Text and buttons in the section take their color from the style, so a color alone never creates a block or a variant. | Agree on the list of section styles and their names, so that authors choose from the same few on every page. |
+
+To steer the structure:
+
+1. Before you migrate, review the catalog in the planning view and correct block names and groupings there. See [Refining the Catalog](site-catalog.md#planning-actions).
+1. Record the blocks, variants, and section styles of the project in `AGENTS.md`, so that the agent reuses them on later pages and in later sessions. See [Document Content Conventions](project-instructions.md#content-conventions).
+1. Check each representative in the **Document view** of the preview panel, which shows its sections, blocks, and default content. See [Content Views](console.md#content-view).
+1. Correct a wrong pattern in the import script so that the bulk import repeats the correction on every page. See [How the Agent Migrates at Scale](overview.md#import-scripts).
+1. Ask an author to edit a representative page. If they hesitate over which block, variant, or style to use, there are too many choices.
+
+Keep the choices that authors make few. The design system should make the decisions that authors shouldn't have to: when a block needs more than a handful of variants or options, ask whether some of them belong in the design.
 
 ### Estimate Before You Commit {#estimate}
 

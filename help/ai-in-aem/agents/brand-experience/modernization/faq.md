@@ -292,7 +292,7 @@ For processing locations, data retention, and compliance information, contact yo
 
 ### Do I need to be a developer to use the agent? {#audience}
 
-No. You describe what you want in plain language and check the result in the preview. Designers, content specialists, and marketers can migrate pages, refine styling, and shape blocks, while developers review every code change before it reaches production. Authors edit content day to day in Experience Workspace, or in the Universal Editor for Experience Manager authoring. See [Who Can Use the Agent](overview.md#who-can-use-ema).
+Not for a first result. Auto mode migrates pages of your website without step-by-step prompting, and you check them in the preview. To work on the site itself, you also describe changes in plain language, but you need some knowledge of HTML and the basics of Git and GitHub: your changes go to a branch, and developers review them as pull requests before they reach production. Tech-savvy designers, content specialists, and marketers refine styling and shape blocks this way. Authors edit content day to day in Experience Workspace, or in the Universal Editor for Experience Manager authoring, without Git. See [Who Can Use the Agent](overview.md#who-can-use-ema).
 
 ### Can several people work on the same project? {#collaboration}
 

@@ -29,7 +29,7 @@ role_v2:
 
 Use the Experience Modernization Agent to apply a design during migration or change the appearance of an existing Edge Delivery Services project. Faithfully copying a source site's appearance and deliberately replacing it with a new design are different requests. State which you want.
 
-Appearance lives in the project's code: global CSS sets the look of default content, and each block has its own CSS and JavaScript. Together they can give the same semantic content any design without restructuring it, because the JavaScript can rebuild the markup in the browser; see [How Edge Delivery Services Works](overview.md#eds-basics). A purely visual restyle therefore changes code in Git and leaves authored content alone. Structural or content model changes are a separate, explicit decision.
+Appearance lives in the project's code: global CSS sets the look of default content, and each block has its own CSS and JavaScript. Together they can give the same semantic content any design without restructuring it, because the JavaScript can rebuild the markup in the browser; see [Understand Your Project](overview.md#project-foundations). A purely visual restyle therefore changes code in Git and leaves authored content alone. Structural or content model changes are a separate, explicit decision.
 
 This guide is for the person who leads a restyle. If you are a designer making individual visual changes that a developer reviews, start with [Make Visual Changes](visual-changes.md).
 

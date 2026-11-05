@@ -99,7 +99,7 @@ This is the scope of the service, not a limit of the product or of Edge Delivery
 #### Migration Work Performed {#migration-work}
 
 * **Migration approach:** Agree faithful migration, redesign, or an incremental phased migration.
-* **Content import:** Automated extraction of page content from source websites and automated mapping to [default content and blocks](overview.md#eds-basics)
+* **Content import:** Automated extraction of page content from source websites and automated mapping to [default content and blocks](production-migration.md#content-structure)
 * **Design system:** Extraction of brand tokens (colors, typography, spacing) and application to the new site
 * **Design references:** The agent imports designs from the source site and from Figma, and works from attached screenshots and documents otherwise. Agree which references apply and what fidelity means for acceptance.
 * **Responsive design:** Layouts for mobile and desktop widths in the project's CSS

@@ -127,7 +127,7 @@ Conventions that are worth documenting include:
 
 * **Content variations of a block.** For a teaser, for example: whether the image and the call to action are optional, how authors choose a larger or smaller title, and whether a short paragraph before the title becomes an eyebrow, a small label above the title.
 * **Block variants.** Which variants exist and when to use each one.
-* **Section styles.** Which [section](overview.md#eds-basics) styles exist, such as a dark background or a narrow column, what they do, and which blocks work inside them. Some sections may expect a specific block to achieve a particular effect.
+* **Section styles.** Which [section](production-migration.md#content-structure) styles exist, such as a dark background or a narrow column, what they do, and which blocks work inside them. Some sections may expect a specific block to achieve a particular effect.
 * **Page templates.** Content conventions that pages of a template must follow, for example an article page that starts with a hero and ends with related links.
 * **Coding, design, and content rules.** Naming, design tokens, brand rules, URL and asset conventions, and anything else that a new team member would need to know.
 

@@ -35,13 +35,13 @@ In Edge Delivery Services, a site's code (blocks, styles, and scripts) lives in 
 There are two ways to start:
 
 * **Auto mode, then Make it yours.** Give Auto mode your website's URL. It migrates a few pages, including their design, on its own and emails you when it's done. Then transfer the result to a site that you own, and continue in the console.
-* **From a repository.** Create a new site from the AEM boilerplate, or bring the Edge Delivery Services site you already have. Connect it in the console, then ask the agent to import pages or to change the site.
+* **From a repository.** Create a new site from the AEM boilerplate, or from the commerce boilerplate for a commerce storefront, or bring the Edge Delivery Services site you already have. Connect it in the console, then ask the agent to import pages or to change the site.
 
 For a full-site release, use the [production migration guide](production-migration.md) after validating representative pages.
 
 This guide covers document-based persistence. Content is stored in the document-based content repository, and authors edit it visually in Experience Workspace, the visual authoring UI for Edge Delivery Services. Adobe strongly recommends this setup for new implementations.
 
-If your content must be stored in the JCR of an Adobe Experience Manager author instance and edited with the Universal Editor, see the [guide for that setup](getting-started-aem-authoring.md) for the steps that differ. If these terms are new to you, read [How Edge Delivery Services Works](overview.md#eds-basics) and [Where Content Is Stored and How Authors Edit It](overview.md#content-storage) first. Older articles may call the platform Helix or Franklin, the project names under which its architecture was developed.
+If your content must be stored in the JCR of an Adobe Experience Manager author instance and edited with the Universal Editor, see the [guide for that setup](getting-started-aem-authoring.md) for the steps that differ. If these terms are new to you, read [Understand Your Project](overview.md#project-foundations) and [Where Content Is Stored and How Authors Edit It](overview.md#content-storage) first. Older articles may call the platform Helix or Franklin, the project names under which its architecture was developed.
 
 ## Access and AI Credit Usage {#access}
 
@@ -56,7 +56,7 @@ The console is hosted. You do not need a local development environment for any o
 | Start with | Choose it when | What you do |
 |---|---|---|
 | [Auto mode, then Make it yours](#brand-trial) | You want to see a few of your own pages on Edge Delivery Services with little effort, and your account has Auto mode access. | Give Auto mode your site's URL and wait for its email. Review the result, then transfer it to your own site with **Make it yours**. |
-| [A new site from the boilerplate](#prepare-repo) | You are starting a new site, or you don't have Auto mode access. | Create a repository from the AEM boilerplate and install two GitHub apps. Connect the site in the console and ask the agent to import pages or build what you need. |
+| [A new site from the boilerplate](#prepare-repo) | You are starting a new site, or you don't have Auto mode access. | Create a repository from the AEM boilerplate, or from the commerce boilerplate for a storefront, and install two GitHub apps. Connect the site in the console and ask the agent to import pages or build what you need. |
 | [Your existing site](#existing-site) | Your site already runs on Edge Delivery Services. | Install the AEM Code Connector app and connect the site. Ask the agent to explain, change, or extend it. |
 
 All three paths end in the same place: your site connected in the console. From there, you [prompt the agent](#start-prompting), then [save, preview, and publish](#save-work) the result.
@@ -158,6 +158,8 @@ Use this path for a new site, including one that you fill with pages imported fr
    * Optionally change the site's administrators and content source, then select **Finish setup**.
 
    Your site now runs at `https://main--{repository}--{owner}.aem.page/`, with example content that you can edit in Experience Workspace. You don't need the tutorial's local development steps, because the console provides the development environment.
+
+   For a commerce storefront, create the site from the [commerce boilerplate](https://experienceleague.adobe.com/en/tools/commerce-storefront/boilerplate/) and follow its setup instead. It contains the commerce blocks and drop-in components, which are hard to add later to a site that started from the AEM boilerplate. See [Commerce Pages](block-development.md#commerce-pages).
 1. Install the [AEM Code Connector](https://github.com/apps/aem-code-connector) app in the repository.
    * If the app is installed for selected repositories only, include this one. If your organization requires approval for GitHub apps, an organization owner must approve it.
 1. [Open the console](#open-console) and [connect the site](#connect-repo).
@@ -253,7 +255,7 @@ Importing pages from an existing website is the most common way to start. In the
    ![Content import](assets/content-import.png)
 1. Once the page is imported, the **Workspace** panel shows it. Select the page to render it in the console's preview panel on the right. This preview shows the working copy in the console workspace, not the preview site on `aem.page`.
    ![Content imported](assets/content-imported.png)
-1. Check the page's structure as well as its text. The **Document view** of the preview panel shows how the content is split into sections, blocks, and default content; see [Content Views](console.md#content-view). Headings, text, images, and links should be default content. A block is needed only where authors must mark which content forms a component, such as a set of cards; CSS and JavaScript can lay out default content however the design needs. Authors will edit this structure, so ask the agent to simplify it now, before more pages reuse it. See [How Edge Delivery Services Works](overview.md#eds-basics).
+1. Check the page's structure as well as its text. The **Document view** of the preview panel shows how the content is split into sections, blocks, and default content; see [Content Views](console.md#content-view). Headings, text, images, and links should be default content. A block is needed only where authors must mark which content forms a component, such as a set of cards; CSS and JavaScript can lay out default content however the design needs. Authors will edit this structure, so ask the agent to simplify it now, before more pages reuse it. See [Shape the Content Structure](production-migration.md#content-structure).
 1. Upload the content, so that it is saved and authors can edit it. Until you upload it, the imported page exists only in the console workspace, and pushing code doesn't save it.
    * For document-based content, see [Upload Content](#upload-content). You can then open the page and edit it.
    * For Experience Manager authoring, see [Upload Content](getting-started-aem-authoring.md#upload-content) in the guide for that setup.
@@ -261,7 +263,7 @@ Importing pages from an existing website is the most common way to start. In the
    * "Import the general styles from `https://www.example.com/about`, then style the blocks used on `/about`. Preserve the imported content."
 1. As with the initial content import, the import may take several minutes and the console provides feedback as it processes your request and imports the styles. Once the task is complete, select **Refresh preview** in the right panel to view the styled content.
    ![Styles imported](assets/styles-imported.png)
-1. Review the styled page at desktop and mobile widths. Compare its text, links, images, and structure with the source page, and ask the agent to fix what differs.
+1. Review the styled page at desktop and mobile widths. Compare its text, links, images, and structure with the source page, and ask the agent to fix what differs. Describe the visual differences that remain too; complex designs can take several rounds. See [How Close the Design Gets](prompting-guide.md#design-fidelity).
 1. Push the code, so that the new blocks and styles are saved in your repository and show on the site's preview. See [Push Code Changes](#push-code-changes).
 
 Page import does not finish shared navigation and footer automatically; request those separately when needed. Next, [preview and publish](#save-work) the page. For more pages, repeat these steps and ask the agent to reuse the blocks that it has created. Once your first pages look right, ask it to document its blocks and styles for later conversations; see [Prompting Tips](#prompting-tips).

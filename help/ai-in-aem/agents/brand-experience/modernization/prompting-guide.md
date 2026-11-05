@@ -29,7 +29,7 @@ role_v2:
 
 The Experience Modernization Agent uses skills: built-in workflows for specific kinds of tasks, such as migrating a page or styling a block. The agent selects the appropriate skill from your natural-language request, so you don't need to name it. Some skills belong to [optional capabilities](console.md#optional-capabilities), which it offers to turn on for your project when a request needs them.
 
-This guide provides tips for effective prompting and describes what the skills do. For the terms used here, such as blocks, default content, and sections, see [How Edge Delivery Services Works](overview.md#eds-basics).
+This guide provides tips for effective prompting and describes what the skills do. For the terms used here, such as blocks, default content, and sections, see [Shape the Content Structure](production-migration.md#content-structure).
 
 ## Choose a Task {#choose-task}
 
@@ -288,6 +288,18 @@ Use this prompt to extract and apply visual design from a source site to Edge De
 * Block styling (phase 2) requires site-wide design (phase 1) to be complete first.
 * Existing projects may use different token files. Ask the agent to use them rather than create a second set of tokens.
 * State whether the request is global, block-specific, faithful to the source, or a redesign. Check the result on real pages at desktop and mobile widths. The design is CSS applied to the imported content, so a fix in `brand.css` or a block's CSS applies to every page that uses it.
+
+#### How Close the Design Gets {#design-fidelity}
+
+The agent recreates the source design: it extracts the design tokens, styles each block, then compares each block with the source and fixes the differences that it finds. See [Block Critique](#block-critique) and [Site Critique](#site-critique). The result comes close to the original on the first pass, and you correct what remains by prompting.
+
+An identical copy can't be guaranteed. Fonts, image compression, and browser rendering can differ slightly from the source, and "identical" means different things to different projects: one team measures spacing to the pixel, another checks that the brand reads the same. The source also has its own flaws, such as spacing that differs between two pages of the same template, and recreating them rarely helps the new site.
+
+Aim for the intended design:
+
+1. Describe each remaining difference with the page, the screen width, and what should change, and check the result in the preview. A complex design can take several rounds.
+1. Fix a difference that recurs in the global styles or the block's CSS, so that the fix applies to every page.
+1. Before you scale, agree with the people who accept the site on what counts as close enough, and check it on the representative pages.
 
 ### Block Critique {#block-critique}
 

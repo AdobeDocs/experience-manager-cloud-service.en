@@ -150,7 +150,7 @@ Your change reaches the live site when the developer merges it. If you also chan
 | Pull request | A request to merge your branch into another branch, which a developer reviews before merging. |
 | Preview | The console's rendering of your workspace. After you push, each branch also has its own preview URL. |
 
-For more terms, see [How Edge Delivery Services Works](overview.md#eds-basics).
+For more terms, see [Understand Your Project](overview.md#project-foundations) and [Shape the Content Structure](production-migration.md#content-structure).
 
 ## Example Prompts {#example-prompts}
 
