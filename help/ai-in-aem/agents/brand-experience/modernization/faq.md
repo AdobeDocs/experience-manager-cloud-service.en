@@ -232,7 +232,7 @@ When you first open the console, or after a reset, it sets up your console works
 
 ### What if my project seems to be missing? {#missing-project}
 
-Sign in with the same Adobe account and organization that you used before. Each organization has its own workspace, so if you belong to several, check that you chose the right organization's profile. Don't reset the workspace while you investigate, because a reset permanently deletes it. If the project is still missing, request support. See [Project Seems Missing](troubleshooting.md#missing-workspace).
+Sign in with the same Adobe account and organization that you used before. Each organization has its own workspace, so if you belong to several, check that you chose the right organization's profile. Don't reset the workspace while you investigate, because a reset permanently deletes the open project's chat history and the code changes that you haven't pushed. If the project is still missing, request support. See [Project Seems Missing](troubleshooting.md#missing-workspace).
 
 ### What happens to my work if I reload the page or leave? {#reload}
 
@@ -244,7 +244,7 @@ In Experience Workspace, restore an earlier version of the document from its ver
 
 ### What does Reset workspace delete? {#reset}
 
-The chat history, the transcripts of the agent's sessions, the open project's working files, and the GitHub connection. Pushed code and uploaded content are not affected. See [Settings Page](console.md#settings-page).
+The open project's chat history, the transcripts of its agent sessions, its code, and the GitHub connection. Pushed code and uploaded content are not affected. See [Settings Page](console.md#settings-page).
 
 ### Why won't the agent delete pages when I ask in chat? {#delete-pages}
 

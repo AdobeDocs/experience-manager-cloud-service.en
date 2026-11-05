@@ -279,7 +279,7 @@ If you make a change to any value in any section, select **Save** to save those 
 
 * **Project** allows you to view and edit project settings such as managing your GitHub connection and customizing the library URL.
   * **Connect / Reconnect**: Initiates GitHub authentication
-  * **Switch site**: Replaces the console workspace with a different site and repository. Any uncommitted work will be lost.
+  * **Switch site**: Opens a different site and repository in the console workspace. The current site's files and chat are kept for when you switch back.
   * **Logout**: Disconnects from GitHub and revokes the agent's access to your GitHub credentials
   * **Library URL** - This URL points to a `library.json` file that defines the blocks available to authors, their variations, and example content.
   * **Site base URL** - The origin URL of the website being migrated
@@ -305,7 +305,7 @@ If you make a change to any value in any section, select **Save** to save those 
 * **Support** summarizes the information that a support request shares with the team that builds the agent.
   * **Request support** - Select it to open a [support request](#request-support) without leaving the console.
 * **Danger zone** contains settings that can revert your console workspace.
-  * **Reset workspace** - Permanently deletes the chat history, the transcripts of the agent's sessions, and the open project's working files, ends the session, and disconnects GitHub. To confirm, you type `delete everything`. This cannot be undone. Code that you pushed and content that you uploaded stay in their remote locations, but unpushed and unuploaded work is lost. Save needed code and content first; reset is not a remote-content recovery tool.
+  * **Reset workspace** - Ends the session, disconnects GitHub, and permanently deletes the open project's chat history, the transcripts of its agent sessions, and its code, including changes that you haven't committed or pushed. This can't be undone. The content files that the console keeps for each site, and the work of other sites that you opened, stay in your console workspace. Code that you pushed and content that you uploaded stay in their remote locations; a reset doesn't restore remote content.
 
 Figma access also depends on the token owner's access to the selected file and the capability being enabled for the project. Store tokens only in credential settings, not prompts or project documentation.
 

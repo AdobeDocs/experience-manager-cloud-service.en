@@ -105,7 +105,7 @@ When you first open the console, or after a reset, it prepares your console work
 
 ## Project Seems Missing {#missing-workspace}
 
-Your console workspace belongs to the Adobe account and organization that you sign in with, and each organization has its own workspace. If you belong to several organizations, the project may be in another one. If the console opens without your project, sign out, then sign in with the same account and choose the profile of the organization that you used before. Don't reset the workspace while you investigate, because a reset permanently deletes its chat history and files. If the project is still missing, [request support](console.md#request-support) with the project name and preview URL. Code that you pushed and content that you uploaded stay in your Git repository and in Experience Workspace.
+Your console workspace belongs to the Adobe account and organization that you sign in with, and each organization has its own workspace. If you belong to several organizations, the project may be in another one. If the console opens without your project, sign out, then sign in with the same account and choose the profile of the organization that you used before. Don't reset the workspace while you investigate, because a reset permanently deletes the open project's chat history and the code changes that you haven't pushed. If the project is still missing, [request support](console.md#request-support) with the project name and preview URL. Code that you pushed and content that you uploaded stay in your Git repository and in Experience Workspace.
 
 ## Failed to Send Message {#send-failed}
 

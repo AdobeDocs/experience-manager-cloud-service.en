@@ -142,7 +142,7 @@ If a document-based upload uses a configured fallback account because your sign-
 ### Where Your Work Is Stored {#security-storage}
 
 * Code that you push is stored in your Git repository, and content that you upload is stored in Experience Workspace or on your author instance. Their own retention and version history policies apply.
-* Work that you haven't pushed or uploaded exists only in your console workspace, along with the chat history and the transcripts of the agent's sessions. **Clear chat** removes the messages from the chat panel but keeps the transcripts. **Reset workspace** in the [settings](console.md#settings-page) permanently deletes the chat history, the transcripts, and the open project's working files.
+* Work that you haven't pushed or uploaded exists only in your console workspace, along with the chat history and the transcripts of the agent's sessions. **Clear chat** removes the messages from the chat panel but keeps the transcripts. **Reset workspace** in the [settings](console.md#settings-page) permanently deletes the open project's chat history, transcripts, and code.
 
 For processing locations, data retention, and compliance information, contact your Adobe account team or see the [Adobe Trust Center.](https://www.adobe.com/trust.html)
 
