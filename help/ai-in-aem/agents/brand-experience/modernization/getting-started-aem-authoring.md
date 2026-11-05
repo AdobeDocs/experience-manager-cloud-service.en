@@ -97,6 +97,8 @@ Resolve conversion errors on a representative page before creating a larger pack
 
 Package upload writes content to the author instance. Confirm the selected pages, host, site, page root, and asset destination with the target owner. Preserve existing content before replacing it; local validation does not make an overwrite safe.
 
+The upload uses your Adobe sign-in, and the author instance enforces your account's permissions to write the selected pages and assets. Signing in to the console doesn't grant additional access. See [Content Push Permissions](evaluate.md#content-push-permissions).
+
 1. Make sure you are in a **Content** view and select the **Upload content** button on the top-right.
 1. In the **Create content package** dialog, choose the pages to include in the package.
    * Optionally enter a **Package name** (defaults to the site name if left empty).

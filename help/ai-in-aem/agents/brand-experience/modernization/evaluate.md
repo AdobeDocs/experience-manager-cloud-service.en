@@ -131,6 +131,14 @@ The agent works in your console workspace, where you review its changes and the 
 * To require review, enforce it where the change lands. Protect `main` with [branch protection](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches) that requires a reviewed pull request, push with **Create new PR**, and limit who can publish with the site's [publish role](https://www.aem.live/docs/authentication-setup-authoring). Turn on agent permissions only when a task needs them.
 * Treat source pages and design files as untrusted input. They can contain text that attempts to steer the agent. Review the changes before you push, preview, or publish them.
 
+#### Content Push Permissions {#content-push-permissions}
+
+When you upload content using your Adobe sign-in, the destination enforces your account's permissions. For document-based content edited in Experience Workspace, you need write access to the destination content. For Experience Manager authoring, you need permission to write pages and assets at the selected paths on the author instance. Signing in to the console doesn't grant those rights.
+
+When you turn on the agent's Adobe credentials permission, its content pushes to the document-based content repository use your account's access. Asking the agent to upload doesn't bypass the destination's permissions. For Experience Manager authoring, upload the content yourself through the console; direct agent uploads aren't supported.
+
+If a document-based upload uses a configured fallback account because your sign-in is unavailable or authentication fails, the destination enforces that account's permissions instead. The same applies when you explicitly configure a service account for the agent. Confirm which account is used before relying on your personal permissions to limit changes.
+
 ### Where Your Work Is Stored {#security-storage}
 
 * Code that you push is stored in your Git repository, and content that you upload is stored in Experience Workspace or on your author instance. Their own retention and version history policies apply.

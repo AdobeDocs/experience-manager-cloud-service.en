@@ -339,6 +339,8 @@ Upload and push separately. Edge Delivery Services stores content apart from cod
 
 For document-based persistence, upload the pages to the document-based content repository, where authors edit them in Experience Workspace. Console labels and some screens still say Document Authoring. Code push does not save these documents, because content is stored separately from code. Confirm the organization, repository, destination paths, and permission to replace any existing content before uploading.
 
+Uploads use your signed-in account's content permissions unless a configured fallback account is used. Turning on agent access doesn't grant additional write permissions. See [Content Push Permissions](evaluate.md#content-push-permissions).
+
 1. Make sure you are in a **Content** view and then select the **Upload content** button on the top-right. Alternatively, use **Sync** > **Push** > **Content** in the workspace header to upload all pending pages.
    * By default you are in **Content** view when entering the console.
    * Your view is indicated by the selected View Picker item in the workspace area of the console.
@@ -380,6 +382,10 @@ If a pull request was created, select **View PR** in the completion notification
 ![Code in GitHub](assets/code-in-github.png)
 
 Your code is now in GitHub. It shows on that branch's preview and live URLs straight away.
+
+#### Commit Identity {#commit-identity}
+
+The console uses the Git commit identity configured in your console workspace: `user.name` and `user.email`. If either setting is missing, it uses a default value for that setting. Connecting your Git account authorizes the push but doesn't automatically set the commit identity. Git settings on your own computer don't automatically apply to the console workspace.
 
 #### If Someone Else Changed the Branch {#push-conflicts}
 
