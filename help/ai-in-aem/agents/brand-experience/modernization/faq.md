@@ -248,6 +248,10 @@ The console couldn't deliver your prompt to the agent, and the message doesn't g
 
 ## Data and Security {#data-security}
 
+### Can I give the agent a password or API key in the chat? {#secrets-in-chat}
+
+No. Never type, paste, or attach passwords, API keys, tokens, or other secrets in the chat. Everything there reaches the AI model, and the agent can copy it into project files that you push to Git, from where the site delivers them to every visitor's browser. Enter the credentials that the agent needs in the console's [**Settings**](console.md#settings-page). An API key that the live site needs belongs in a server-side service, not in the repository. If you've shared a secret, revoke or replace it right away. See [Keep Secrets Out of the Chat](prompting-guide.md#secrets).
+
 ### Which AI model does the agent use? {#model}
 
 The agent currently uses Claude models. The model is an implementation detail that can change. See [What the AI Model Processes](evaluate.md#security-model-data).
@@ -281,6 +285,10 @@ Yes. Each person works in their own console workspace and shares code through pu
 ### Can Edge Delivery Services run complex sites, or only simple ones? {#complex-sites}
 
 Complex enterprise sites. Each page is standard HTML, CSS, and JavaScript, so a block can call any API from the browser, such as search, commerce, or personalization, or run a complete application. Spreadsheets publish as JSON and a query index lists the site's pages, so blocks can also build listings and filters from your own content. Each integration is project work that you specify, and the agent can write the code for it. See [Understand Your Project](overview.md#project-foundations).
+
+### Is the agent limited to Edge Delivery Services? {#beyond-eds}
+
+No. Its skills and instructions focus on Edge Delivery Services, but it is a general-purpose coding agent. It can connect your site to other systems, adapt an existing application, and write the code of a server-side service that your team deploys. It has no skills for those other systems, so give it their documentation and ask it to read it first. Then ask how the integration should work in Edge Delivery Services; the agent proposes an approach, and you work it out together. See [Work Beyond Edge Delivery Services](prompting-guide.md#beyond-eds).
 
 ### How does the agent relate to Experience Workspace? {#experience-workspace}
 

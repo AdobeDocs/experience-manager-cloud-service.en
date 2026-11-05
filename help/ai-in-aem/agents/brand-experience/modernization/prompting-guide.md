@@ -45,7 +45,80 @@ Use the task guides for the full procedure and acceptance checks. The prompts be
 | Visual changes by a designer, reviewed by a developer | [Make Visual Changes](visual-changes.md) |
 | Create, update, or refactor blocks | [Block development recipes](block-development.md) |
 
-Name the source URLs/design nodes, destination paths, [authoring target](overview.md#content-storage), repository/branch, allowed scope, and what must be preserved. State whether uploads, code pushes, or publication are authorized. Do not include credentials in a prompt.
+Name the source URLs/design nodes, destination paths, [authoring target](overview.md#content-storage), repository/branch, allowed scope, and what must be preserved. State whether uploads, code pushes, or publication are authorized.
+
+## Keep Secrets Out of the Chat {#secrets}
+
+>[!CAUTION]
+>
+>Never type, paste, or attach passwords, API keys, access tokens, or other secrets in the chat. Enter the credentials that the agent needs in the console's [**Settings**](console.md#settings-page). If you have already shared a secret, revoke or replace it now.
+
+The chat is not a safe place for a secret. Everything that you type or attach is sent to the AI model and kept in the conversation. The agent treats it like any other text: it can copy a value into a file of your project, such as a script or a configuration file. Once that file is pushed, the value stays in the repository's history, and everything in the repository is delivered to the browsers of your site's visitors. Credentials that you enter in **Settings** take a different path: the console adds each one only to requests for the service that it belongs to, and the agent never receives it. See [Credentials](evaluate.md#security-credentials).
+
+Keep these out of the chat, out of attachments, and out of project files:
+
+* Passwords, including those of test accounts and of your own Adobe ID or Git account
+* API keys, access tokens, and personal access tokens
+* Private keys and certificates
+* Connection strings, session cookies, and links that grant access on their own, such as signed URLs
+* The contents of `.env` files and other configuration that holds secrets
+* Personal data of real customers or employees; use made-up sample data instead
+* Anything else that your organization's policy keeps out of AI tools
+
+Before you attach a screenshot, a log, an exported file, or an error message, check it for these and mask them.
+
+### Where Credentials Go Instead {#credential-settings}
+
+| What the agent needs | Where to enter the credential |
+|---|---|
+| Access to your Git repository | The connection flow: **Authorize AEM Code Connector**, or **Sign in with a token**. See [Connect Your Site](getting-started.md#connect-repo). |
+| Permission to push, pull, or read content for you | **Settings** > **Agent permissions**. These use your Adobe or Git sign-in, so you don't type a credential. |
+| Your Figma designs | **Settings** > **Credentials**, for your Figma personal access token. See [Work from a Figma Design](visual-changes.md#figma). |
+| A source site that requires sign-in | **Settings** > **Protected site authentication**, or the authentication fields of Auto mode. See [Protected Site Authentication](console.md#protected-site-authentication). |
+| An API key that your live site uses | Not the console. A server-side service keeps the key, such as Adobe App Builder or API Mesh, which your team deploys and the site calls. See [Connect Services and Applications](block-development.md#integrations). |
+
+Some tasks seem to need a secret that has no place in **Settings**, such as calling an API that requires a key. Don't paste it to get the task done. Ask the agent to write the code so that the server-side service supplies the key, and test against a sandbox endpoint that needs none, or ask a developer.
+
+### If You Shared a Secret {#secret-shared}
+
+1. Revoke or replace the secret at the service that issued it, right away. Clearing the chat doesn't take back what was already sent.
+1. Check the **Changes** view for files that contain the secret, and discard those changes before you push.
+1. If a file with the secret was already pushed, replacing the secret is the fix. A later commit removes it from the files, but not from the repository's history.
+1. Tell your security team, as your organization's policy requires.
+
+The agent is instructed not to use a secret that you paste in the chat, and to tell you to replace it. Don't rely on that: by the time it answers, the secret has already reached the AI model.
+
+## Give the Agent Context {#context}
+
+The agent knows Edge Delivery Services and reads your project's code. It doesn't know your business, your brand rules, or the other systems that your site works with until you tell it, and each request with the right context saves a round of corrections. Share what the task needs:
+
+* **The goal and how to check it:** what you want, for whom, and what the finished result looks like.
+* **Requirements and constraints:** specifications, brand and accessibility rules, and what must not change.
+* **Examples:** a page that already looks right, a screenshot, a Figma link, or a sample API response.
+* **Documentation:** a link to public documentation, which the agent reads on the web, or the documents themselves when they need sign-in. **Attach files** accepts images, text files, and Word, PowerPoint, and Excel files of up to 10 MB each. It doesn't accept PDF files, so copy the relevant text from those.
+* **Decisions already made:** keep agreed conventions in `AGENTS.md` and the files that it lists, so that you don't repeat them in every request. See [Project Instructions and Memory](project-instructions.md).
+
+Share what the task needs rather than everything you have, and follow your organization's policy on what may go into AI tools.
+
+Ask questions, too. The agent can explain Edge Delivery Services concepts, your project's code, and the trade-offs between approaches. When you're not sure how to do something, ask how it is done in Edge Delivery Services before you ask the agent to do it, or switch to **Plan** mode to review its approach. Ask it to list its questions and assumptions: answering them is quicker than correcting the result.
+
+## Work Beyond Edge Delivery Services {#beyond-eds}
+
+The agent's skills and instructions focus on Edge Delivery Services: migrating pages, building and styling blocks, and following the project's conventions. The agent itself is a general-purpose coding agent, so it isn't limited to them. It can connect your site to a marketing automation platform, a search service, or a commerce backend, adapt an application that your team built with React, or write the code of a server-side service that your team deploys.
+
+For other systems, the agent has no skills, only general knowledge, which can be out of date. The system's own documentation makes the work reliable, so work through it together:
+
+1. **Have it read the documentation first.** Give the agent the link to the system's developer documentation, or attach it. Before it writes any code, ask it to explain how the integration would work, what must run on a server, and which secrets are involved. Correct its understanding at this stage.
+1. **Ask for the Edge Delivery Services way.** Ask whether the integration belongs in a block, a [widget](https://www.aem.live/docs/widgets), or the project's scripts, and how it keeps the pages fast. The agent proposes an approach and asks what it needs to know.
+1. **Give it what the system needs:** endpoints, field names, example requests and responses, and a sandbox or test account. Secrets stay out of the chat.
+1. **Build in small steps.** Test each step in the preview against a non-production endpoint.
+1. **Record the result.** Ask the agent to write the chosen approach and the documentation link in the project's instruction files, so that the next conversation starts from it.
+
+For example:
+
+> Read the developer documentation of [platform] at [URL], especially [topic]. Explain how our site could [goal] following Edge Delivery Services practice: what runs in the browser, what needs a server, and which secrets are involved. List your questions. Don't change any files yet.
+
+Setting up the other system, deploying a server-side service, and storing its secrets stay with your team and that system's administrators. For the integration patterns, see [Connect Services and Applications](block-development.md#integrations).
 
 ## General Tips {#general-tips}
 

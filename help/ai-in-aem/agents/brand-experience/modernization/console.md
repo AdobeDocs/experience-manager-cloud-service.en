@@ -93,7 +93,7 @@ The prompt input provides controls for interacting with the AI.
   * **Plan mode**: The agent analyzes your request and proposes an approach without changing files. It ends with a plan that includes a checklist of steps. Use it for multi-page, shared-code, or otherwise risky changes, so that you can review and adjust the approach before anything changes. Select **Execute plan** to switch to Execute mode and carry out the plan, or start a new one. Plan mode is available at any time, including before you plan or catalog a site. Only you switch modes; the agent can't switch them itself.
   * **Execute mode**: The agent performs the request and can make actual file changes.
   * Planning is optional and is not an enforced approval gate. Before execution, state the allowed scope and whether upload, push, or publication is authorized.
-* **Attach files** (paperclip icon): Upload and attach files to the prompt for additional context, such as reference designs, screenshots, or specifications. The agent sees attached images in JPEG, PNG, GIF, or WebP format. You can also attach Word, PowerPoint, and Excel files; the agent receives their text and embedded images.
+* **Attach files** (paperclip icon): Upload and attach files to the prompt for additional context, such as reference designs, screenshots, or specifications. The agent sees attached images in JPEG, PNG, GIF, or WebP format. You can also attach text files, and Word, PowerPoint, and Excel files; the agent receives their text and embedded images. Each file can be up to 10 MB; PDF files aren't accepted. Check attachments for passwords, tokens, and personal data first. See [Keep Secrets Out of the Chat](prompting-guide.md#secrets).
 * **Prompt queue** (clock icon): Additional prompts can be queued up to be automatically executed once the current prompt has completed, so that you can line up follow-up tasks without waiting.
 * **Previous prompts**: In an empty prompt input, use the up and down arrow keys to recall earlier prompts. A draft you have started is not overwritten.
 * **Prompt hints**: Where enabled, the console points out when a prompt is missing details, such as the page or the result you expect, and can suggest a clearer prompt. You decide whether to use the hint. Prompts suggested by the console are not flagged unless you reword them. Configure hints under **Prompt coach** in [Settings](#settings-page).
@@ -271,7 +271,7 @@ For details, see [Site Planning UI](site-catalog.md#planning-ui).
 
 ## Settings Page {#settings-page}
 
-The [**Settings** page](https://aemcoder.adobe.io/settings) allows you to manage basic settings of the console and is broken up into the following sections.
+The [**Settings** page](https://aemcoder.adobe.io/settings) allows you to manage basic settings of the console and is broken up into the following sections. Enter credentials here, never in the chat. See [Keep Secrets Out of the Chat](prompting-guide.md#secrets).
 
 ![Settings view](assets/settings-view.png)
 

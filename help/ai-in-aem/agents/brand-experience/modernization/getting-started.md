@@ -228,6 +228,10 @@ The console opens on its **Home** page until you start a conversation. Type a re
 
 Once your site is connected, describe what you want in plain language. Say what result you expect and on which page, rather than how to write the code. The agent knows Edge Delivery Services, so you can also ask it how a part of your site works or what a platform term means. To learn how a page is built from sections, blocks, and default content, see [Markup, Sections, Blocks, and Auto Blocking](https://www.aem.live/developer/markup-sections-blocks).
 
+>[!CAUTION]
+>
+>Never type, paste, or attach passwords, API keys, tokens, or other secrets in the chat. Everything in the chat reaches the AI model, and the agent can copy it into your project's files. Enter credentials in the console's **Settings**. See [Keep Secrets Out of the Chat](prompting-guide.md#secrets).
+
 Where to start depends on your site:
 
 * **A new site from the boilerplate:** [import a page step by step](#guided-import), optionally after scoping the source site.
@@ -299,6 +303,7 @@ Replace the example URLs and paths with your own.
 
 * Ask for one change at a time, and check it before you ask for the next one.
 * Attach a screenshot or a design when it explains the result better than words.
+* Give the agent the context that it can't know: requirements, brand rules, and links to the documentation of other systems involved. Ask it questions when you're unsure how something is done in Edge Delivery Services. See [Give the Agent Context](prompting-guide.md#context).
 * Say what the agent must not do. The example prompts in these guides end with "Do not upload, push, or publish." This keeps the agent's work in your console workspace, so that you check it and then upload or push it yourself. Leave it out when you want the agent to do these steps for you and have turned on the [agent permissions](console.md#settings-page) that they need.
 * To change how pages look, ask for a styling change. CSS and JavaScript can give the existing content any design, so a new look never requires restructuring or reimporting pages.
 * For a change that spans several pages or shared styles, you can switch to [Plan mode](console.md#prompt-input) to review the steps before anything changes.

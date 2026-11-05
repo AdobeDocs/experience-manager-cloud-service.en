@@ -101,6 +101,7 @@ The console lets the agent work on your site without giving it the credentials t
 * Credentials belong to the user who configures them, not to the project. Each team member connects their own Git account and stores their own Figma token.
 * [Agent permissions](console.md#settings-page) are off until you turn them on. Turning one on lets the agent act with that access, for example to push to your repository, without seeing the credential. Use scoped, least-privilege tokens.
 * Store credentials only in the console's settings. Do not put secrets in prompts, chat, source content, repository files, or project documentation. The agent reads these, and they can be sent to the AI model.
+* Make this part of onboarding. People who are new to coding agents may paste a password or key into the chat to get a task done. Ask everyone who uses the console to read [Keep Secrets Out of the Chat](prompting-guide.md#secrets) first, and tell them what your organization's policy allows them to share with AI tools. The agent is instructed not to use a secret pasted in the chat and to ask for it to be replaced. That doesn't undo the exposure: the secret has already reached the AI model, and it must be revoked or replaced.
 
 ### What the AI Model Processes {#security-model-data}
 

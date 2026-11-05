@@ -28,13 +28,13 @@ role_v2:
 
 # Experience Modernization Agent Overview {#experience-modernization-agent}
 
-The Experience Modernization Agent is Adobe's AI development agent for [Edge Delivery Services](/help/edge/overview.md). It gives you a ready-to-use development environment for these sites in the browser, with nothing to install, and an agent that migrates, builds, and evolves them. Your Git repository remains the system of record for the site's code.
+The Experience Modernization Agent is Adobe's AI development agent for [Edge Delivery Services](/help/edge/overview.md). It gives you a ready-to-use development environment for these sites in the browser, with nothing to install, and an agent that migrates, builds, and evolves them. Your Git repository remains the system of record for the site's code. To go straight to the guide for your role or task, see [Start Here by Role](#start-by-role).
 
 Edge Delivery Services is the part of Adobe Experience Manager Sites that delivers websites. It serves authored content as plain semantic HTML, and the project's own CSS and JavaScript style and decorate it in the browser. If you already build with HTML, CSS, and JavaScript, most of the project will look familiar. The parts specific to Experience Manager are explained in [Understand Your Project](#project-foundations). Adobe has renamed several of these products over time. If you meet older names such as Helix, Franklin, or Crosswalk, or short forms of these names, see [Names You May See](#names).
 
 ## Introduction {#introduction}
 
-The Experience Modernization Agent is part of the [Brand Experience Agent.](/help/ai-in-aem/agents/brand-experience/overview.md) It automates the repetitive parts of building a site: importing content, mapping it to blocks, extracting the design, and writing block code. You work in the hosted Experience Modernization Console, using natural-language requests and previews. You don't need Docker or a local command-line environment. You don't need to be a developer either: designers, content specialists, and marketers can work on the site too. See [Who Can Use the Agent](#who-can-use-ema). With Auto mode, in early access, the agent can also migrate a first set of pages on its own and email you when it's done.
+The Experience Modernization Agent is part of the [Brand Experience Agent.](/help/ai-in-aem/agents/brand-experience/overview.md) It automates the repetitive parts of building a site: importing content, mapping it to blocks, extracting the design, and writing block code. You work in the hosted Experience Modernization Console, using natural-language requests and previews. You don't need Docker or a local command-line environment. You don't need to be a developer either: designers, content specialists, and marketers can work on the site too. See [Who Can Use the Agent](#who-can-use-ema).
 
 Use the agent to move web properties onto Edge Delivery Services from other CMSes, from Experience Manager sites built with Java and HTL components, or from static sites. The agent reads each source page as a browser renders it, so the system behind the source doesn't matter: it works from the content and design that visitors see. Edge Delivery Services gives the new site:
 
@@ -45,9 +45,26 @@ Use the agent to move web properties onto Edge Delivery Services from other CMSe
 
 The agent rebuilds your pages on a block system that follows the architecture of Edge Delivery Services. It decomposes each page into sections and content, maps the content to default content and reusable blocks, and extracts the design system into global styles and block CSS. It then imports further pages in bulk with the same mappings, using generated import scripts rather than having the AI model interpret every page. See [How the Agent Migrates at Scale](#migration-at-scale). It does not clone the source markup, which would carry over any technical debt in it. Expect a close first pass that you refine by prompting and validate before you scale.
 
-After go-live, the same environment keeps working on the site. You can restyle it to a new brand, including from Figma designs, add blocks, update or refactor existing blocks, create pages from the established blocks, debug problems, and generate project and handover documentation. You can also connect an existing Edge Delivery Services project and start there, without a migration.
-
 You stay in control of every change. The agent works in your own console workspace, where you review and preview its changes and discard what you don't want. Nothing reaches your project until you push code to your Git repository or upload content to the authoring destination that you chose, or turn on [agent permissions](console.md#settings-page) that let the agent do so. Your permissions, repository policies, and publication workflow determine what you can change and release. See [Work Safely in an Independent Workspace](#independent-workspace).
+
+>[!CAUTION]
+>
+>Never type, paste, or attach passwords, API keys, access tokens, or other secrets in the chat. Everything in the chat reaches the AI model, and the agent can copy it into your project's files. Enter the credentials that the agent needs in the console's **Settings**. See [Keep Secrets Out of the Chat](prompting-guide.md#secrets).
+
+## Why Use the Agent {#benefits}
+
+Before anyone can judge a migration to Edge Delivery Services, a developer has a lot of repetitive work to do. They list the source pages and work out which ones share a layout. They decide how each part of a page maps to blocks and default content, then write the blocks and their styles and extract the colors and fonts. Finally, they write import scripts, import the pages, and compare them with the originals. The agent does this work with you, in one environment:
+
+* **A first result on your own pages.** Give the agent a source page and it rebuilds it on Edge Delivery Services, with blocks, styles, and editable content, that you can check in the console's preview. You judge the approach on your own content rather than on a sample site, without setting up a local environment first.
+* **A plan that you can see.** The [site catalog](site-catalog.md) inventories the source site and groups its pages into templates and blocks, with screenshots. Use it to scope and size the project and to decide what to migrate first.
+* **Fixes that scale.** The agent turns each correction into a change to a reusable block or import script, so a fix on one page applies to every page of that template. See [How the Agent Migrates at Scale](#migration-at-scale).
+* **A standard project that you own.** The result is plain Edge Delivery Services code in your Git repository that follows the conventions of the AEM boilerplate and the [Block Collection](https://www.aem.live/developer/block-collection). Developers can continue in the console, in their own editor, or with other AI tools. Nothing ties the site to the Experience Modernization Agent.
+* **Help after go-live.** The same agent restyles the site for a new brand, including from Figma designs, adds and refactors blocks, creates pages from existing blocks, debugs problems, and documents the project. You can also start on an existing Edge Delivery Services site without a migration.
+* **Project knowledge that lasts.** The agent follows the conventions that you keep in `AGENTS.md` and related files in the repository, so every conversation starts with what your team has agreed. See [What the Agent Remembers](#memory).
+* **Unattended runs.** Auto mode, in early access, migrates a set of pages, including their design, without step-by-step prompting and emails you when it finishes. See [Start with Auto Mode](getting-started.md#brand-trial).
+* **A team behind the product.** The team that builds the agent reads the support requests sent from the console and follows up. Through your Adobe customer success manager, you can also meet subject-matter experts and the product team. See [The Team Behind the Agent](evaluate.md#adobe-team).
+
+The agent doesn't replace your judgment. You decide the scope, the target design, and the content model, and you validate the result before it goes live.
 
 ## Start Here by Role {#start-by-role}
 
@@ -78,21 +95,6 @@ Each row links to a task guide with the steps and the checks that tell you when 
 An automated run or a preview shows how the pages look. The completion checks of your task establish the rest: that authors can edit the pages, that integrations work, and that the site is ready to release.
 
 Whatever your role or task, when something doesn't work as you expect, use **Request support** in the console, or **Get help** on the Auto mode pages. It reaches the team that builds the agent. See [Request Support](console.md#request-support).
-
-## Why Use the Agent {#benefits}
-
-Before anyone can judge a migration to Edge Delivery Services, a developer usually has to do a lot of repetitive work. They list the source pages and work out which ones share a layout. They decide how each part of a page maps to blocks and default content, then write the blocks and their styles and extract the colors and fonts. Finally, they write import scripts, import the pages, and compare them with the originals. The agent does this work with you, in one environment:
-
-* **A first result on your own pages.** Give the agent a source page and it rebuilds it on Edge Delivery Services, with blocks, styles, and editable content, that you can check in the console's preview. You judge the approach on your own content rather than on a sample site, without setting up a local environment first.
-* **A plan that you can see.** The [site catalog](site-catalog.md) inventories the source site and groups its pages into templates and blocks, with screenshots. Use it to scope and size the project and to decide what to migrate first.
-* **Fixes that scale.** The agent turns each correction into a change to a reusable block or import script, so a fix on one page applies to every page of that template. See [How the Agent Migrates at Scale](#migration-at-scale).
-* **A standard project that you own.** The result is plain Edge Delivery Services code in your Git repository that follows the conventions of the AEM boilerplate and the [Block Collection](https://www.aem.live/developer/block-collection). Developers can continue in the console, in their own editor, or with other AI tools. Nothing ties the site to the Experience Modernization Agent.
-* **Help after go-live.** The same agent restyles the site for a new brand, adds and refactors blocks, creates pages from existing blocks, debugs problems, and documents the project. You can also start on an existing Edge Delivery Services site without a migration.
-* **Project knowledge that lasts.** The agent follows the conventions that you keep in `AGENTS.md` and related files in the repository, so every conversation starts with what your team has agreed. See [What the Agent Remembers](#memory).
-* **Unattended runs.** Auto mode, in early access, migrates a set of pages, including their design, without step-by-step prompting and emails you when it finishes. See [Start with Auto Mode](getting-started.md#brand-trial).
-* **A team behind the product.** The team that builds the agent reads the support requests sent from the console and follows up. Through your Adobe customer success manager, you can also meet subject-matter experts and the product team. See [The Team Behind the Agent](evaluate.md#adobe-team).
-
-The agent doesn't replace your judgment. You decide the scope, the target design, and the content model, and you validate the result before it goes live.
 
 ## Who Can Use the Agent {#who-can-use-ema}
 
@@ -132,7 +134,7 @@ Each task touches several separate parts of a project. Keep them apart when you 
 * **Content destination:** Where the migrated content is stored and which editor authors use. Adobe strongly recommends document-based persistence with Experience Workspace for new implementations. The alternative is Experience Manager authoring with JCR persistence and the Universal Editor. The source CMS does not determine this choice. See [Where Content Is Stored and How Authors Edit It](#content-storage).
 * **Preview and publication:** The preview site, where you check saved content with your code, and the live site, where approved changes are released. See [How Changes Go Live](#code-content-lifecycle).
 
-Edge Delivery Services runs complex enterprise websites. Its pages are standard HTML, CSS, and JavaScript, so a block can call any API from the browser, such as search, commerce, or personalization, as on any other website. Spreadsheets publish as JSON and a query index lists the site's pages, so blocks can also build listings and filters from your own content. Business logic stays in the services that own it. Each integration is project work that you specify and test, and the agent can write its block code once you have decided how it should work. See [Build a Dynamic Block](block-development.md#dynamic-blocks).
+Edge Delivery Services runs complex enterprise websites. Its pages are standard HTML, CSS, and JavaScript, so a block can call any API from the browser, such as search, commerce, or personalization, as on any other website. Spreadsheets publish as JSON and a query index lists the site's pages, so blocks can also build listings and filters from your own content. Business logic stays in the services that own it. Each integration is project work that you specify and test, and the agent can write its block code once you have decided how it should work. See [Build a Dynamic Block](block-development.md#dynamic-blocks). The agent's skills focus on Edge Delivery Services, but it isn't limited to them: point it to another system's documentation, and work out the integration with it. See [Work Beyond Edge Delivery Services](prompting-guide.md#beyond-eds).
 
 ### How Edge Delivery Services Works {#eds-basics}
 

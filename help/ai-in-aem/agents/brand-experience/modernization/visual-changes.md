@@ -39,6 +39,10 @@ Ask the person who leads the project for the following:
 
 Your work stays in your own console workspace until you push it. Nothing that you try in the preview reaches the live site by itself.
 
+>[!CAUTION]
+>
+>Never type or paste passwords, access tokens, or other secrets in the chat, and check screenshots and files for them before you attach them. Everything in the chat reaches the AI model, and the agent can copy it into the site's files. Your Figma token goes only in **Settings** > **Credentials**. See [Keep Secrets Out of the Chat](prompting-guide.md#secrets).
+
 ## What You Can Change {#what-you-can-change}
 
 On an Edge Delivery Services site, authors write the content and the code decides how it looks. A visual change therefore changes the site's code, mostly its CSS, and leaves the content that authors entered as it is. You don't need to import or upload pages again.
