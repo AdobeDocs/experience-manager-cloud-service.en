@@ -204,7 +204,7 @@ Use this prompt to analyze an existing website in order to understand its scale,
 * "How many page types are there on `https://example.com`"
 * "What are the layouts on `https://example.com`"
 
-For details on the site catalog skill, see [Site Catalog Skill](site-catalog.md).
+For details, see [Plan a Migration with the Site Catalog](site-catalog.md).
 
 ### Bulk Import {#bulk-import}
 

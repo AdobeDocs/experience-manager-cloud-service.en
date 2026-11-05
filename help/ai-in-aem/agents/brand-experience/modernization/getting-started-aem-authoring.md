@@ -79,7 +79,7 @@ The console steps are the same as in the [main guide](getting-started.md). Only 
 
 ## Validate Content {#validate-content}
 
-Validate the selected page in the content panel. Use **Markdown view**, **JCR XML view**, and **Errors** to check content and conversion. Use **Add to chat** to aim a fix at a page or at one of the import scripts that the agent generates: a parser converts one block's source HTML, and a transformer cleans up the whole page.
+Validate the selected page in the content panel. Use **Markdown view**, **JCR XML view**, and **Errors** to check content and conversion. Use **Add to chat** to aim a fix at a page or at one of the [import scripts](production-migration.md#migration-at-scale) that the agent generates.
 
 In Experience Manager authoring projects, each block also has a model: configuration that defines the fields authors edit for that block in the Universal Editor. The Universal Editor edits only the fields that a block's model defines, so a page can render correctly in the HTML preview while blocks that don't match their models can't be edited. Ask the agent to check that the source block models, component definitions, and generated aggregate configuration agree. Update the source configuration through the project's generation workflow rather than fixing only a generated file. Check field mappings and authoring hints, page paths, image references, and the intended site/DAM destinations.
 
@@ -127,7 +127,7 @@ Review and [push the matching code and configuration](getting-started.md#push-co
 1. Open it in the Universal Editor. Verify that expected fields and blocks can be selected and edited, not merely rendered.
 1. Change some text and an image, save, and reopen the page. Confirm that the content and asset references persist.
 1. Use the project's configured preview workflow (preview pages are served on `*.aem.page`). Verify the page against the intended code branch and check responsive layout, links, and images.
-1. For production, complete the [site acceptance checks](production-migration.md#acceptance) and follow your project's publication process.
+1. For production, complete the [checks before release](production-migration.md#acceptance) and follow your project's publication process.
 
 Successful package upload, successful authoring, preview, and publication are distinct checkpoints. If editing fails, revisit model mappings and generated configuration; do not accept a static preview as completion.
 

@@ -102,11 +102,11 @@ Switch the prompt input to Plan mode, with the light bulb icon, and describe you
 
 ### Why don't I see the Planning view? {#planning-view}
 
-**Planning** is always in the view picker of the workspace panel, under **Project**; you don't need to turn it on. It shows the site catalog, the inventory of templates, pages, and blocks that you review before migrating. Before you catalog a site, it asks for the site's address. See [Accessing the Site Planning UI](site-catalog.md#accessing-planning-ui).
+**Planning** is always in the view picker of the workspace panel, under **Project**; you don't need to turn it on. It shows the site catalog, the inventory of templates, pages, and blocks that you review before migrating. Before you catalog a site, it asks for the site's address. See [Open the Planning View](site-catalog.md#accessing-planning-ui).
 
 ### Can I switch between several migration plans? {#several-plans}
 
-No. The site planning UI shows one plan per console workspace, so you can't switch between plans, for example one per country site. Plan and migrate the sites one after the other. See [Accessing the Site Planning UI](site-catalog.md#accessing-planning-ui).
+No. The **Planning** view shows one plan per console workspace, so you can't switch between plans, for example one per country site. Plan and migrate the sites one after the other. See [Open the Planning View](site-catalog.md#accessing-planning-ui).
 
 ### Can I choose which pages to migrate? {#choose-pages}
 
@@ -148,7 +148,7 @@ It's built for Adobe Commerce. It recognizes product pages whichever platform ru
 
 ### Can I define how a block behaves before the migration? {#block-behavior}
 
-Yes. Describe it in the migration prompt, write lasting conventions in the project instruction files, or correct block types and variants in the site planning UI before you generate code. Auto mode doesn't take instructions during a run. See [Set Block Behavior Before a Migration](block-development.md#block-instructions).
+Yes. Describe it in the migration prompt, write lasting conventions in the project instruction files, or correct block types and variants in the **Planning** view before you generate code. Auto mode doesn't take instructions during a run. See [Set Block Behavior Before a Migration](block-development.md#block-instructions).
 
 ## Source Sites {#source-sites}
 

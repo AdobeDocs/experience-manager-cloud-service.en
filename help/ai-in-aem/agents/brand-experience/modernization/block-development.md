@@ -99,7 +99,7 @@ Migration generates blocks from the content that it finds on the source pages. T
 
 * Describe it in the migration prompt, for example which source sections become one block with variants, which parts authors edit, or that a list must load its items [dynamically](#dynamic-blocks).
 * Write lasting conventions in the [project instruction files](project-instructions.md#content-conventions) before you start.
-* In the [site planning UI](site-catalog.md#planning-actions), correct block types and variants before you generate code. To describe how a block should behave, select it, choose **Add to chat**, and write your request.
+* In the [Planning view](site-catalog.md#planning-actions), correct block types and variants before you generate code. To describe how a block should behave, select it, choose **Add to chat**, and write your request.
 
 Auto mode doesn't take instructions during a run. Refine its blocks in the console afterwards.
 

@@ -186,7 +186,7 @@ You don't need to name a capability: describe the task, and the agent chooses th
 
 | Capability | What the agent does | Learn more |
 |---|---|---|
-| Site catalog and planning | Discovers the source site's pages and groups them into templates and block variants, with screenshots and a report that you refine in the planning view. | [Site Catalog](site-catalog.md) |
+| Site catalog and planning | Discovers the source site's pages and groups them into templates and block variants, with screenshots and a report that you refine in the **Planning** view. | [Plan a Migration with the Site Catalog](site-catalog.md) |
 | Page and design migration | Imports source pages into default content and blocks, extracts the design into design tokens and global styles, and rebuilds the header, navigation, and footer that every page shares. | [Migrate a Production Site](production-migration.md) |
 | Bulk import | Writes an import script for each template, runs it on the template's other pages, and fixes the script for pages that differ from their source. | [How the Agent Migrates at Scale](production-migration.md#migration-at-scale) |
 | Visual critique | Compares a block, a page, or the whole site with the source and fixes differences in content, structure, and styling. | [Prompting guide](prompting-guide.md#block-critique) |
@@ -216,7 +216,7 @@ Use only websites and designs that you are authorized to migrate. The selected w
 * The agent loads each source page in a browser and reads it once it has rendered. That includes content that scripts insert and content that the page contains but CSS hides, such as a closed accordion panel. Content that appears only after a visitor clicks or types isn't in the page at that moment, so it isn't captured. Check such pages in the screenshots, and add the missing content after import or ask for a way to capture it.
 * The agent targets Edge Delivery Services, including sites that use [Experience Manager authoring](#jcr-persistence). It does not convert a project to HTL-based publishing or an API-only/SPA delivery stack.
 * Page import copies what the source page shows: its content and its design. It can't see how the source's servers produced that page. Content inheritance, reuse through content fragments, personalization rules, search, form processing, and other business logic run there, so import copies their output on that page, not the logic. The agent also rebuilds the markup rather than copying it, so the source's scripts, such as analytics and experimentation tags, don't come along. Auto mode's **Include integrations** option carries over supported analytics, tag manager, and consent settings. Decide how each of the others works on the new site; the agent can then build the blocks and code for it. See [What Remains Project Work](evaluate.md#project-work), and for forms, [Form Submissions](block-development.md#form-submissions).
-* The agent's visual critique compares how the result looks with the source. Looking the same doesn't show that authors can edit the page, that interactions work, or that it is accessible and fast on real devices, so check those as part of [acceptance](production-migration.md#acceptance).
+* The agent's visual critique compares how the result looks with the source. Looking the same doesn't show that authors can edit the page, that interactions work, or that it is accessible and fast on real devices, so check those before you [sign off](production-migration.md#acceptance).
 
 ## Next Steps {#next-steps}
 

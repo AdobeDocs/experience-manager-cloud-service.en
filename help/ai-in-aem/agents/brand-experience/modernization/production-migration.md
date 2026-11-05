@@ -1,6 +1,6 @@
 ---
 title: Migrate a Production Site with the Experience Modernization Agent
-description: Migrate and validate an Edge Delivery Services site with document-based or Experience Manager authoring persistence.
+description: Migrate a production site to Edge Delivery Services, from catalog and sample pages to sign-off and release, with content stored document-based or in Experience Manager authoring.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 product_v2:
@@ -27,25 +27,25 @@ role_v2:
 
 # Migrate a Production Site {#production-migration}
 
-Use this workflow to move an agreed site inventory to Edge Delivery Services, the Adobe Experience Manager service that delivers websites. Start with representative pages, establish reusable content and design mappings, and expand only after those pages work in the chosen authoring environment. If terms such as blocks, default content, or preview are new to you, see [Understand Your Project](overview.md#project-foundations) and [Shape the Content Structure](#content-structure).
+Use this workflow to move an agreed list of pages to Edge Delivery Services, the Adobe Experience Manager service that delivers websites. Start with a sample page for each template, settle how its content and design map to the new site, and import more pages only once the samples work in the editor that your authors will use. If terms such as blocks, default content, or preview are new to you, see [Understand Your Project](overview.md#project-foundations) and [Shape the Content Structure](#content-structure).
 
-For a few demonstration pages or an initial evaluation, use the smaller [demo and trial workflows](getting-started.md#first-outcome). Their completion criteria are different from production acceptance.
+For a few demonstration pages or a first evaluation, use the smaller [demo and trial workflows](getting-started.md#first-outcome). They don't need the checks that a production site needs before release.
 
 ## Phases and Roles {#phases}
 
-A migration runs in phases. The agent does most of the repetitive work in each one, and your team makes the decisions and accepts the result. Let one person, such as the migration lead, run the first phases; others join once the blocks and import scripts are settled. See [Work as a Team](#collaboration).
+A migration runs in phases. The agent does most of the repetitive work in each one, and your team makes the decisions and signs off the result. Let one person, such as the migration lead, run the first phases; others join once the blocks and import scripts are settled. See [Work as a Team](#collaboration).
 
 | Phase | Who leads | What the agent does | What your team does | Done when | Guide |
 |---|---|---|---|---|---|
-| Scope | Migration lead, with the architect | Explains the source site and the platform when asked. | Agrees the inventory, content destination, design, integrations, URL policy, and owners. | The decisions are recorded. | [Agree Scope and Destinations](#scope) |
-| Catalog | Migration lead | Discovers pages and groups them into templates and block variants. | Corrects groupings, reconciles them with the inventory, and picks representatives. | Every in-scope URL has a template or an approved exclusion. | [Prepare and Catalog](#prepare) |
-| Representatives | Migration lead, with designers and authors | Imports, styles, and builds blocks, the header, and the footer. | Reviews the content structure, the design, and how easily authors can edit it. | One page per template works in the authoring environment. | [Validate Representatives](#representatives) |
-| Batches | Migration lead, then the team | Imports template by template and reports errors. | Checks samples, fixes mappings, and keeps the reconciliation record. | Every in-scope URL is imported or has an approved exception. | [Import in Batches](#batches) |
+| Scope | Migration lead, with the architect | Explains the source site and the platform when asked. | Agrees the page list, content destination, design, integrations, URL policy, and owners. | The decisions are recorded. | [Agree Scope and Destinations](#scope) |
+| Catalog | Migration lead | Discovers pages and groups them into templates and block variants. | Corrects groupings, compares them with the agreed page list, and picks a sample page for each template. | Every in-scope URL has a template or an approved exclusion. | [Prepare and Catalog](#prepare) |
+| Sample pages | Migration lead, with designers and authors | Imports, styles, and builds blocks, the header, and the footer. | Reviews the content structure, the design, and how easily authors can edit it. | One page per template works in the authors' editor. | [Validate Sample Pages](#representatives) |
+| Batches | Migration lead, then the team | Imports template by template and reports errors. | Checks pages from each batch, fixes import scripts, and keeps a record per URL. | Every in-scope URL is imported or has an approved exception. | [Import in Batches](#batches) |
 | Completion | Developers, designers, and integration owners | Builds integrations, forms, and the remaining blocks and styles. | Configures external systems and decides redirects and search metadata. | The agreed requirements work. | [Complete the Site](#complete-site) |
-| Acceptance | Site owner, with testers and authors | Runs checks that you ask for, such as page critiques and performance tests. | Tests against the acceptance criteria. | Every area of the criteria is accepted. | [Accept the Result](#acceptance) |
+| Sign-off | Site owner, with testers and authors | Runs checks that you ask for, such as page critiques and performance tests. | Tests against the agreed criteria. | Every area of the criteria is signed off. | [Check and Sign Off](#acceptance) |
 | Release | Release owner | Writes the project handover documentation. | Merges the code, publishes the content, switches the domain, and monitors the site. | The site is live, and its owners have taken it over. | [Release, Recover, and Hand Over](#handoff) |
 
-Visual contributors can work on styling from the representatives phase onward. See [Make Visual Changes](visual-changes.md).
+Visual contributors can work on styling from the sample-pages phase onward. See [Make Visual Changes](visual-changes.md).
 
 ## How the Agent Migrates at Scale {#migration-at-scale}
 
@@ -53,29 +53,23 @@ The agent doesn't send every page through the AI model. Interpreting each page s
 
 1. **Group pages into templates.** The [site catalog](site-catalog.md) groups the source site's pages into templates, which are pages that share a layout. If you migrate pages without a catalog, each page that you name starts a template of its own.
 1. **Migrate a sample page.** For each template, the agent first migrates one real page that shows the template's typical layout and, ideally, most of its blocks and variants. The site catalog proposes one for each template. If another page of the template shows more of its blocks, choose that page instead: blocks that the sample page lacks are only added later, when an imported page needs them. The AI model maps the sample page's content to default content and blocks, and creates the blocks that it needs or reuses existing ones.
-1. **Generate an import script.** The agent writes an import script for the template: one part extracts each block's content from the source HTML, and another cleans up the page as a whole. The scripts are JavaScript files in the project's `tools/importer/` folder, versioned in Git with the rest of your code.
+1. **Generate an import script.** The agent writes an import script for the template: one part, the parser, extracts each block's content from the source HTML, and another, the transformer, cleans up the page as a whole. The scripts are JavaScript files in the project's `tools/importer/` folder, versioned in Git with the rest of your code.
 1. **Refine the pattern, not the page.** When you ask for a correction, the agent changes the block or the import script that produced the result instead of editing one page's output. The correction then applies to every page of the template, and later templates reuse the blocks that already exist.
 1. **Import the remaining pages in bulk.** The bulk import runs the import script on the template's other pages without the AI model interpreting each one. The agent then compares the imported pages with their source pages, fixes the import script for pages that differ too much, and imports those pages again.
 
-Corrections accumulate in the blocks and import scripts, so each one also improves the pages that you import next. Validate a few pages of each template before you import all of them. See [Import in Batches](#batches).
+Validate a few pages of each template before you import all of them. See [Import in Batches](#batches).
 
-The same applies when you change how content is structured, such as which content becomes a block or how a page splits into sections: ask the agent to change the import script, not only the imported pages. The script is code, so the change is reviewed and merged like any other, and the next import applies it to every page of the template. An edit to a single page doesn't carry over. The agent tells you that such an edit is local, and importing the template again overwrites it.
+The same applies to changes in content structure, such as which content becomes a block or where a page splits into sections: change the import script. It is code, reviewed and merged like the rest, and the next import applies it to every page of the template. An edit to one imported page stays local, and importing the template again overwrites it.
 
-To change the templates and blocks themselves, such as moving pages to another template or making one block a variant of another, use the [planning view](site-catalog.md#planning-actions) or ask in chat. The agent follows these changes the next time it generates blocks or imports pages, and pages that you already imported don't change. To consolidate the design, see [Restyle Sites](restyling.md). To consolidate block code, see [Refactor Without Changing the Outcome](block-development.md#refactor).
+To change the templates and blocks themselves, such as moving pages to another template or making one block a variant of another, use the [Planning view](site-catalog.md#planning-actions) or ask in chat. The agent follows these changes the next time it generates blocks or imports pages, and pages that you already imported don't change. To consolidate the design, see [Restyle Sites](restyling.md). To consolidate block code, see [Refactor Without Changing the Outcome](block-development.md#refactor).
 
 >[!NOTE]
 >
->A template in the console is a group of source pages with the same layout, which the agent uses to plan and import them. It isn't the `template` page metadata, which adds a class to the page's `body` element so that the project's code can style or decorate those pages differently.
-
-You can align the two. When the pages of one console template should look or behave differently on the new site, ask the agent to write matching `template` metadata into those pages and to style them in the project's code. For example:
-
-> For the article template, set the page metadata `template` to `article` in the import script, and give article pages a narrower main column.
-
-Because the import script sets the metadata, every article page that you import later gets it too.
+>A template in the console is a group of source pages with the same layout, which the agent uses to plan and import them. It isn't the `template` page metadata, which adds a class to the page's `body` element so that the project's code can style those pages differently. To align the two, ask the agent to set the metadata in the import script, so that every page of the template gets it on import, for example: "For the article template, set the page metadata `template` to `article` in the import script, and give article pages a narrower main column."
 
 ## Agree Scope and Destinations {#scope}
 
-You need authorization to read the source, modify the target repository, and write content and assets to the destination. Agree who accepts the result and who authorizes release. If some pages require sign-in, set up [protected site authentication](console.md#protected-site-authentication) with a dedicated read-only account. If the source uses bot protection, arrange access with its administrator before cataloging. See [source sites with bot protection](troubleshooting.md#bot-protection).
+You need authorization to read the source, modify the target repository, and write content and assets to the destination. Agree who signs off the result and who authorizes release. If some pages require sign-in, set up [protected site authentication](console.md#protected-site-authentication) with a dedicated read-only account. If the source blocks automated visitors, arrange access with its administrator before cataloging. See [Source Sites with Bot Protection](troubleshooting.md#bot-protection).
 
 Record:
 
@@ -83,15 +77,11 @@ Record:
 |---|---|
 | Source inventory | Domains, page URLs, locales, documents, assets, and excluded or retired content. |
 | Code | Repository, working branch, review policy, and release owner. |
-| Content destination | Document-based persistence, edited visually in Experience Workspace, or Experience Manager authoring with JCR persistence and the Universal Editor. See [Where Content Is Stored and How Authors Edit It](overview.md#content-storage). |
+| Content destination | Document-based, edited in Experience Workspace, or Experience Manager authoring, edited in the Universal Editor. The source system doesn't decide this; both deliver through Edge Delivery Services. See [Where Content Is Stored and How Authors Edit It](overview.md#content-storage). |
 | Design | Preserve the source appearance or [apply a new design](restyling.md#during-migration). Name the approved reference and version. |
 | Behavior | Navigation, forms, search, commerce, consent, analytics, personalization, and other integrations that must work. Identify their owners. |
 | URL policy | Destination paths, redirects, canonical URLs, language relationships, and links to retain. |
-| Recovery | Code baseline, content backup/recovery process, and authority to overwrite or publish. |
-
-The source CMS does not dictate destination persistence. Both targets deliver through Edge Delivery Services.
-
-For a new implementation, Adobe strongly recommends document-based persistence with Experience Workspace, including for large sites with thousands of pages. Experience Manager authoring with JCR persistence remains fully supported when a specific requirement depends on content staying in Experience Manager.
+| Recovery | Code baseline, content backup and recovery process, and authority to overwrite or publish. |
 
 Page import copies each page's content and design. Integrations and CMS features run on the source's servers, such as search, form processing, personalization rules, and content inheritance, so import copies only their output on each page. List them under **Behavior** and decide how each works on the new site. See [Limitations](overview.md#limitations).
 
@@ -101,38 +91,38 @@ A console workspace works on one site at a time. In a program with several sites
 
 When your team has decided to relaunch a site that runs on Experience Manager Sites today, the workflow is the same as for any other source. These points are specific to that case:
 
-* **Your other sites:** The agent reads the source site's pages and doesn't change the source. It writes only to the new site's Git repository and to the content destination that you choose, so your organization's other Experience Manager sites keep running as they are, and so does the source site until you switch its domain at [release](#handoff). With Experience Manager authoring, the upload writes the pages under the project's site path, `/content/{site-name}`, and the images under its Experience Manager Assets folder on the author instance, and replaces any page that already exists there. Agree both with the author instance's administrator. See [Upload Content](getting-started-aem-authoring.md#upload-content).
-* **How the agent reads the source:** As for any other source, the agent reads each page as a browser renders it, not the source's components, templates, or repository. Components, experience fragments, and content inheritance therefore don't carry over as such: their output appears on each page. Decide which shared content to keep once on the new site. See [Limitations](overview.md#limitations) and [What Remains Project Work](evaluate.md#project-work).
-* **Where content goes:** The source doesn't decide the destination. For a new implementation, Adobe strongly recommends document-based persistence with Experience Workspace. Experience Manager authoring with JCR persistence and the Universal Editor remains fully supported when a requirement depends on content staying in the JCR. It needs an Experience Manager as a Cloud Service author instance: if your current author instance runs elsewhere, it can't be the destination. See [Where Content Is Stored and How Authors Edit It](overview.md#content-storage).
-* **Images and repositories:** The images that a page uses are uploaded with the page, and images that the source serves from Dynamic Media stay there. See [Images and Documents](#assets). If your code is in a repository connected through Cloud Manager, the console works with it too. See [Use Another Git Host](getting-started.md#other-git).
+* **Your other sites:** The agent reads the source site's pages and doesn't change the source. It writes only to the new site's Git repository and to the content destination that you choose, so your organization's other Experience Manager sites keep running as they are, and so does the source site until you switch its domain at [release](#handoff). With Experience Manager authoring, the upload writes pages under `/content/{site-name}` and images under the site's Assets folder, and replaces any page already at that path, so agree both with the author instance's administrator. See [Upload Content](getting-started-aem-authoring.md#upload-content).
+* **How the agent reads the source:** The agent reads each page as a browser renders it, not the source's components, templates, or repository. Components, experience fragments, and content inheritance therefore don't carry over as such: their output appears on each page. Decide which shared content to keep once on the new site. See [What Remains Project Work](evaluate.md#project-work).
+* **Where content goes:** The destination is your choice, as for any source; see [Where Content Is Stored and How Authors Edit It](overview.md#content-storage). Experience Manager authoring needs an Experience Manager as a Cloud Service author instance, so an author instance that runs elsewhere can't be the destination.
+* **Repositories:** If your code is in a repository connected through Cloud Manager, the console works with it too. See [Use Another Git Host](getting-started.md#other-git).
 * **Decisions for your team:** Languages, inheritance between markets, and approval workflows are your team's decisions. Import gives you the pages at their source paths, not these structures. Record them with the other scope decisions before you catalog.
 
 ## Prepare and Catalog {#prepare}
 
-1. Follow [shared console setup](getting-started.md#repo-start), or [Experience Manager authoring setup](getting-started-aem-authoring.md#create-repo) for a JCR-backed project. Reuse an existing project's configuration rather than recreate it.
-1. Ask the agent to catalog the authorized site: `Scope site https://www.example.com`. The [site catalog skill](site-catalog.md) discovers pages and groups them into templates (pages that share a layout) and block variants.
-1. Review the [site planning UI](site-catalog.md#planning-ui). Correct template and block groupings and investigate failed URLs.
-1. Reconcile discovered URLs against your agreed inventory. Include pages missing from discovery and make explicit decisions about failed, skipped, duplicate, or excluded URLs.
-1. Select representatives for each template and important variant, including long content, unusual images, locales, and interaction-heavy pages.
+1. Follow [shared console setup](getting-started.md#repo-start), or [Experience Manager authoring setup](getting-started-aem-authoring.md#create-repo) if the content goes to Experience Manager authoring. Reuse an existing project's configuration rather than recreate it.
+1. Ask the agent to catalog the authorized site: `Scope site https://www.example.com`. The [site catalog](site-catalog.md) discovers pages and groups them into templates (pages that share a layout) and block variants.
+1. Review the catalog in the [Planning view](site-catalog.md#planning-ui). Correct template and block groupings and investigate failed URLs.
+1. Compare the discovered URLs with your agreed page list. Add pages that discovery missed, and decide explicitly about failed, skipped, duplicate, or excluded URLs.
+1. Pick a sample page for each template and important variant. Cover long content, unusual images, locales, and pages with a lot of interaction.
 
-Cataloging analyzes the source; it does not migrate or accept every page. A **complete** catalog run can still contain failures.
+Cataloging reads the source and imports nothing. A run with the status **complete** can still have failed pages; see [Results and Status](site-catalog.md#output).
 
-## Validate Representatives {#representatives}
+## Validate Sample Pages {#representatives}
 
-Start with one template and a small set of pages. For example:
+Start with one template and a few of its pages. For example:
 
-> Migrate only these authorized product pages: [URLs]. Target [document-based or JCR persistence] at [destination paths]. Preserve approved text, links, metadata, and image meaning. Reuse the project's blocks and content conventions. Report missing content and unsupported interactions. Do not upload, push, or publish.
+> Migrate only these product pages: [URLs]. Store the content [document-based or in Experience Manager authoring] at [destination paths]. Keep the approved text, links, metadata, and image meaning. Reuse the project's blocks and content conventions. Report missing content and interactions that the import doesn't reproduce. Do not upload, push, or publish.
 
-1. Review the content structure: the sections, default content, blocks, variants, and section styles that the agent chose. Authors will edit every migrated page in this structure, so settle it on the representatives. See [Shape the Content Structure](#content-structure).
-1. Compare imported text, links, images, metadata, and section order against the source. Fix the reusable parser, transformer, or mapping when a pattern is wrong. These are the import scripts that the agent generates: a parser converts one block's source HTML, and a transformer cleans up the whole page.
+1. Review the content structure: the sections, default content, blocks, variants, and section styles that the agent chose. Authors will edit every migrated page in this structure, so settle it on the sample pages. See [Shape the Content Structure](#content-structure).
+1. Compare imported text, links, images, metadata, and section order with the source. When a pattern is wrong, fix the import script, not the page. See [How the Agent Migrates at Scale](#migration-at-scale).
 1. Apply source styling or follow the [redesign workflow](restyling.md#during-migration). Check global styles before refining individual blocks.
-1. Complete the shared header, navigation, and footer separately from page import. The agent migrates them, including footer images, with dedicated skills, so that every page shares one header and one footer.
-1. Upload a representative to the chosen authoring destination and verify edit, save, reopen, and preview:
+1. Complete the shared header, navigation, and footer separately from page import. The agent migrates them, including footer images, once for the whole site, so that every page shares one header and one footer.
+1. Upload a sample page to the content destination, then edit, save, reopen, and preview it:
    * [Document-based upload and preview](getting-started.md#upload-content).
-   * [JCR conversion, package upload, and Universal Editor validation](getting-started-aem-authoring.md#validate-content).
-1. Record the accepted source-to-output mapping, models, design decisions, and known exceptions before expanding the batch.
+   * [Conversion, package upload, and checks in the Universal Editor](getting-started-aem-authoring.md#validate-content) for Experience Manager authoring.
+1. Record the agreed mapping from source to output, the block models, design decisions, and known exceptions before you import more pages.
 
-A matching screenshot is insufficient if authors cannot maintain the result. For JCR-backed projects, check models, generated component configuration, conversion errors, and asset destinations before scaling.
+A page that looks right still fails if authors can't edit it. For Experience Manager authoring, also check block models, generated component configuration, conversion errors, and where images are stored before you import more.
 
 ### Shape the Content Structure {#content-structure}
 
@@ -148,24 +138,24 @@ Authors edit every migrated page in the structure that the agent chooses on impo
 
 To steer the structure:
 
-1. Before you migrate, review the catalog in the planning view and correct block names and groupings there. See [Refining the Catalog](site-catalog.md#planning-actions).
+1. Before you migrate, review the catalog in the **Planning** view and correct block names and groupings there. See [Refining the Catalog](site-catalog.md#planning-actions).
 1. Record the blocks, variants, and section styles of the project in `AGENTS.md`, so that the agent reuses them on later pages and in later sessions. See [Document Content Conventions](project-instructions.md#content-conventions).
-1. Check each representative in the **Document view** of the preview panel, which shows its sections, blocks, and default content. See [Content Views](console.md#content-view).
+1. Check each sample page in the **Document view** of the preview panel, which shows its sections, blocks, and default content. See [Content Views](console.md#content-view).
 1. Correct a wrong pattern in the import script so that the bulk import repeats the correction on every page. See [How the Agent Migrates at Scale](#migration-at-scale).
-1. Ask an author to edit a representative page. If they hesitate over which block, variant, or style to use, there are too many choices.
+1. Ask an author to edit a sample page. If they hesitate over which block, variant, or style to use, there are too many choices.
 
 Keep the choices that authors make few. The design system should make the decisions that authors shouldn't have to: when a block needs more than a handful of variants or options, ask whether some of them belong in the design.
 
 ### Estimate Before You Commit {#estimate}
 
-The catalog and the first representatives give you an estimate based on the work that the site needs, not on its page count:
+The catalog and the first sample pages give you an estimate based on the work that the site needs, not on its page count:
 
 1. Catalog the site. The catalog lists the templates, block variants, and locales, and the URLs that failed. See [Prepare and Catalog](#prepare).
-1. Validate representatives of the main templates. Record what each one needed: new blocks, corrections to import scripts, styling, and changes to the content structure.
-1. Size the remaining templates from what the representatives needed. Later templates reuse the blocks that already exist, so count the blocks that each one adds. A page with a layout of its own counts as a template of its own.
+1. Validate sample pages of the main templates. Record what each one needed: new blocks, corrections to import scripts, styling, and changes to the content structure.
+1. Size the remaining templates from what the sample pages needed. Later templates reuse the blocks that already exist, so count the blocks that each one adds. A page with a layout of its own counts as a template of its own.
 1. Add the items that import doesn't cover: the behavior that you recorded under **Behavior** in the [scope](#scope), and the [project work](evaluate.md#project-work) that your team decides and builds.
 
-Corrections land in reusable blocks and import scripts, so after the representatives you can see the work for each template: the blocks and scripts that it needed and the corrections that it took. Check the estimate against the first batch's [reconciliation record](#batches).
+Check the estimate against the first batch's [record per URL](#batches).
 
 ## Work as a Team {#collaboration}
 
@@ -192,7 +182,7 @@ Don't give two people the same block, the global styles, or the same import scri
 1. Review and merge pull requests often. Small changes conflict less and are quicker to review, and a pull request that stays open for days collects conflicts.
 1. Before you start a new task, switch back to the shared branch with **Switch branch** and pull it with **Sync** > **Pull** > **Code**, so that you build on everyone's merged work.
 
-Pulling code requires a workspace without uncommitted files, so push or discard your changes first. If someone changed the same lines as you, the console cancels the pull and leaves your work as it was. See [If Someone Else Changed the Branch](getting-started.md#push-conflicts).
+If a pull is unavailable or reports a conflict, see [If Someone Else Changed the Branch](getting-started.md#push-conflicts).
 
 Small, frequent pushes also give the team a readable history of what the agent changed and why. To get one commit per request, see [Leave a Record of Each Request](project-instructions.md#trace).
 
@@ -207,13 +197,13 @@ To get pages that others uploaded into your workspace:
 
 ## Import in Batches {#batches}
 
-Use the [catalog bulk-import workflow](site-catalog.md#bulk-import) and [bulk-import prompts](prompting-guide.md#bulk-import) after validating representatives.
+Use the [catalog bulk-import workflow](site-catalog.md#bulk-import) and [bulk-import prompts](prompting-guide.md#bulk-import) after you validate the sample pages.
 
-1. Import a small batch using the established template mapping.
-1. Check both ordinary pages and edge cases. If a mapping is wrong, correct it and rerun the affected pages before expanding.
-1. Keep a reconciliation record for each source URL: destination, imported state, errors, acceptance, and any approved exclusion.
-1. Continue template by template. Track discovered, analyzed, imported, failed, skipped, and accepted pages separately.
-1. Recheck earlier representatives when changing shared styles, parsers, transformers, models, or block code.
+1. Import a small batch with the template's import script.
+1. Check ordinary pages and edge cases. If the import script is wrong, correct it and import the affected pages again before you continue.
+1. Keep a record for each source URL: destination, import state, errors, sign-off, and any approved exclusion.
+1. Continue template by template. Count discovered, analyzed, imported, failed, skipped, and signed-off pages separately.
+1. Recheck earlier sample pages when you change shared styles, import scripts, block models, or block code.
 
 Once authors start editing the migrated pages in the content destination, their pages become the source of truth. Importing or uploading those pages again overwrites the authors' work, and a corrected import script doesn't merge it, so agree with the authors first.
 
@@ -227,7 +217,7 @@ Automated import is one part of delivery. Implement and verify the agreed requir
 * Forms, search, commerce, account features, analytics, consent, and other integrations.
 * Author guidance, operational ownership, access, and deployment configuration.
 
-The agent implements the code side of these, for example blocks that call your search or commerce API, forms, and the code that loads analytics and consent. It can't configure systems outside your repository and content, such as the search service, the CDN, or the analytics account, and it doesn't decide your requirements. Give it the API documentation and the agreed behavior, and name an owner for each external system who accepts the result. See [Connect Services and Applications](block-development.md#integrations), for forms, [Form Submissions](block-development.md#form-submissions), and for product pages, [Commerce Pages](block-development.md#commerce-pages).
+The agent implements the code side of these, for example blocks that call your search or commerce API, forms, and the code that loads analytics and consent. It can't configure systems outside your repository and content, such as the search service, the CDN, or the analytics account, and it doesn't decide your requirements. Give it the API documentation and the agreed behavior, and name an owner for each external system who signs off the result. See [Connect Services and Applications](block-development.md#integrations), for forms, [Form Submissions](block-development.md#form-submissions), and for product pages, [Commerce Pages](block-development.md#commerce-pages).
 
 ### Images and Documents {#assets}
 
@@ -239,7 +229,7 @@ How images reach the new site depends on the content destination:
 
 Edge Delivery Services stores each image once and serves it in sizes and formats that fit each screen. Check large files, videos, and SVG images against the [limits for file types and sizes](https://www.aem.live/docs/limits).
 
-Check the links to documents, such as PDFs, on representative pages. Each link must point to a copy on the new site, not to the source site that you will retire.
+Check the links to documents, such as PDFs, on the sample pages. Each link must point to a copy on the new site, not to the source site that you will retire.
 
 ### URLs, Redirects, and Search Metadata {#urls-seo}
 
@@ -253,31 +243,31 @@ The agent doesn't create redirects, sitemaps, or language alternates by itself. 
 * **Search engines:** The preview and live sites, `*.aem.page` and `*.aem.live`, are hidden from search engines; your production domain isn't. Check `robots.txt` before the cutover. See [robots.txt](https://www.aem.live/docs/robots).
 * **Query index:** Lists of pages, such as article listings and site search, read from a query index that includes only published pages. See [Indexing](https://www.aem.live/developer/indexing).
 
-## Accept the Result {#acceptance}
+## Check and Sign Off {#acceptance}
 
-Agree acceptance criteria with the site owner. Test against the actual target, not only the console preview.
+Agree with the site owner what must work before release, and test it on the preview and live sites.
 
-| Area | Observable acceptance |
+| Area | Signed off when |
 |---|---|
-| Coverage | Every in-scope URL has an accepted destination or an approved exception. Failed and skipped pages are resolved or recorded. |
+| Coverage | Every in-scope URL has a destination or an approved exception. Failed and skipped pages are resolved or recorded. |
 | Content | Text, links, assets, metadata, and locale content are complete and correct. |
-| Authoring | Authors can edit representative fields and blocks, save, reopen, and preview the result in the chosen authoring environment. |
+| Authoring | Authors can edit typical fields and blocks, save, reopen, and preview the result in their editor. |
 | Design | Approved desktop and mobile layouts work on real content, including long text and block variants. |
 | Function | Navigation, keyboard interaction, forms, integrations, and agreed user journeys work. |
-| Quality | Accessibility, performance, and relevant SEO and security checks meet the project's agreed requirements. Automated accessibility tools find only the issues that a rule can detect, so also test representative pages with a keyboard and a screen reader. Test performance with [PageSpeed Insights](https://pagespeed.web.dev/); on GitHub, Edge Delivery Services runs the same check on each pull request for the test URLs in its description. |
+| Quality | Accessibility, performance, and relevant SEO and security checks meet the project's agreed requirements. Automated accessibility tools find only the issues that a rule can detect, so also test sample pages with a keyboard and a screen reader. Test performance with [PageSpeed Insights](https://pagespeed.web.dev/); on GitHub, Edge Delivery Services runs the same check on each pull request for the test URLs in its description. |
 | Operations | Repository review, content publication, recovery, monitoring, and support ownership are documented and tested as needed. |
 
 Each automated signal checks one thing: an importer status that the script ran, a generated package that content was converted, a visual similarity score that a page looks like its source, and a Lighthouse score how one page loads in a lab test. Production readiness needs every area in the table.
 
 ## Release, Recover, and Hand Over {#handoff}
 
-1. Review and push the accepted code through the repository's policy. Merging into `main` updates the live site's code immediately; there is no separate code publish step. Plan the merge with the content release. See [How Changes Go Live](overview.md#code-content-lifecycle).
-1. Upload only the accepted content and assets to the confirmed destination. Review per-page and per-asset errors.
+1. Push the signed-off code and have it reviewed as the repository's policy requires. Merging into `main` updates the live site's code immediately, so plan the merge with the content release. See [How Changes Go Live](overview.md#code-content-lifecycle).
+1. Upload only the signed-off content and images to the confirmed destination. Review the errors for each page and image.
 1. Verify the saved content with the intended code revision on the preview site, `*.aem.page`.
 1. Obtain the site's release approval and follow the configured publication and domain cutover process. Publishing makes pages available on `*.aem.live`; the cutover is what serves them on your own domain, through the Adobe-managed CDN or [your own CDN](https://www.aem.live/docs/byo-cdn-setup). Work through the [go-live checklist](https://www.aem.live/docs/go-live-checklist) before the cutover.
 1. Check the live URLs, redirects, key journeys, and monitoring after release. [Operational Telemetry](https://www.aem.live/docs/operational-telemetry) shows how real visitors experience the site's performance.
-1. Provide the [project handover](project-documentation.md#portable-handoff), inventory, author examples, acceptance results, exceptions, and recovery contacts.
+1. Provide the [project handover](project-documentation.md#portable-handoff), the record per URL, author examples, sign-off results, exceptions, and recovery contacts.
 
-For failures, retain the exact URL/path, operation, and error log. Retry the smallest affected scope after correcting the cause. Do not restart a successful full batch solely because one page failed.
+When something fails, keep the exact URL or path, the operation, and the error log. Retry the smallest affected scope after you correct the cause. Don't restart a successful batch because one page failed.
 
-Code push, document copy, JCR package import, and publication are separate operations on separate systems. A partial failure can leave only some changes applied, and no single rollback undoes all of them. Recover code through Git, and content and assets through the authoring system's version history or approved process.
+Pushing code, uploading documents, importing a content package into Experience Manager, and publishing are separate operations on separate systems. A partial failure can leave only some changes applied, and no single rollback undoes all of them. Recover code through Git, and content and images through the version history of the content destination or your agreed process.

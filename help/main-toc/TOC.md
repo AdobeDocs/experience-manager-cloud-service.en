@@ -1255,7 +1255,7 @@ user-guide-title: AEM as a Cloud Service
         + [Prompting Guide](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md)
         + [Project Instructions and Memory](/help/ai-in-aem/agents/brand-experience/modernization/project-instructions.md)
         + [Project Documentation Skill](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md)
-        + [Site Catalog Skill](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
+        + [Site Catalog](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
         + [AOE Delivery](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
         + [Troubleshooting](/help/ai-in-aem/agents/brand-experience/modernization/troubleshooting.md)
         + [FAQ](/help/ai-in-aem/agents/brand-experience/modernization/faq.md)

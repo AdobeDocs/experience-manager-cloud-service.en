@@ -265,9 +265,9 @@ Additional GitHub project actions can be performed on the [settings page](#setti
 
 The **Project views** help you plan the migration of an existing site.
 
-* **Planning** to review and refine the templates, pages, and blocks identified by the [site catalog skill](site-catalog.md), so that you can migrate one representative page per template and validate it before you import the rest
+* **Planning** to review and refine the templates, pages, and blocks identified by the [site catalog](site-catalog.md), so that you can migrate and check one sample page per template before you import the rest
 
-For details, see [Site Planning UI](site-catalog.md#planning-ui).
+For details, see [The Planning View](site-catalog.md#planning-ui).
 
 ## Settings Page {#settings-page}
 
