@@ -148,10 +148,52 @@ The agent writes the code that connects your site to other systems. Edge Deliver
 * **APIs:** A block or widget calls an API from the browser. The API must accept requests from your site's domains, including the preview and live sites. If other sites must read your site's resources, configure [custom headers](https://www.aem.live/docs/custom-headers) for the paths that they need, never for all origins.
 * **Secrets:** Everything in the repository is delivered to the browser, so it can't hold API keys or tokens. When an API needs a secret, call it through a server-side service that keeps the secret, such as Adobe App Builder or API Mesh, and let the block call that service.
 * **Commerce:** The commerce pages add-on imports product, listing, and content pages for Adobe Commerce. The product data loads from the Adobe Commerce catalog when a visitor opens the page. For the storefront itself, start from the [commerce storefront boilerplate](https://experienceleague.adobe.com/en/tools/commerce-storefront/boilerplate/) and its drop-in components.
-* **Forms:** The forms add-on turns the source's forms with two or more fields into form definitions for the form block. It doesn't connect where submissions go; decide that, and ask the agent to build it.
+* **Forms:** The forms add-on turns the source's forms with two or more fields into form definitions for the form block. Where submissions go is a separate choice; see [Form Submissions](#form-submissions).
 * **Analytics, tag management, and consent:** Load these scripts after the page has rendered, so that they don't slow it down. See [Keeping Your Lighthouse Score 100](https://www.aem.live/developer/keeping-it-100). With Auto mode's **Include integrations**, the agent adds the supported settings, switched off until you turn them on.
 
 Add-ons are [optional capabilities](console.md#optional-capabilities) that the agent offers to turn on when a task needs one. Which systems connect, who owns them, and who accepts the result are project decisions. See [What Remains Project Work](evaluate.md#project-work).
+
+### Form Submissions {#form-submissions}
+
+Edge Delivery Services delivers a form, but it doesn't store submissions or run what follows them. On the source site, a server handled each submission, and page import can't see that server. The forms add-on migrates each form's fields into the form block; the submissions still need a destination. Connecting one is the same work on any Edge Delivery Services site, migrated or not, and because the agent is a general-purpose coding agent, you can ask for it at any time.
+
+Lead forms belong where your teams already handle leads, in a marketing automation platform or customer relationship management (CRM) system, for example:
+
+* Adobe Marketo Engage
+* Salesforce, through Sales Cloud or Marketing Cloud Account Engagement
+* Microsoft Dynamics 365
+* HubSpot
+* Oracle Eloqua
+
+When submissions must reach several systems, send them to an integration platform, such as Adobe Workfront Fusion or Microsoft Power Automate, or to your own API. If your organization uses Adobe Experience Manager Forms, its Forms Submission Service and submit actions can store submissions in a spreadsheet, send them by email, or forward them to other systems. See [Configure Submit Actions](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md).
+
+Many of these platforms accept a submission from the browser at a form endpoint that needs no secret. If the platform's API needs a key, send the submission through a server-side service that keeps it, as described under **Secrets** above.
+
+Tell the agent:
+
+* **Destination:** the platform and the form, list, or campaign that receives the data, with its endpoint and documentation, or the URL of your server-side service.
+* **Field mapping:** which form field goes to which platform field, which fields are required, and their formats.
+* **Hidden values:** values that visitors don't enter, such as the lead source, the campaign, the page URL, and the UTM parameters of the visit.
+* **Consent:** the opt-in checkboxes, their approved wording, and the link to your privacy policy.
+* **Spam protection:** the method that your platform supports, such as a CAPTCHA or a hidden honeypot field.
+* **After submitting:** the confirmation message or thank-you page, and what visitors see if the submission fails.
+* **Testing:** a test form or sandbox, and how test entries are marked.
+
+For example:
+
+> Connect the form on /contact to [platform] form [form ID] at [endpoint or service URL]. Map first name, last name, email, company, and country to the platform fields [field names]; email and company are required. Add hidden fields for the lead source "Website", the page URL, and the UTM parameters of the visit. Show this consent checkbox, unchecked: [approved text]. After a successful submission, show [confirmation message]; if it fails, keep the visitor's entries and show an error with a retry. Test against [sandbox]. Do not upload, push, or publish.
+
+The agent updates the form definition and the form block's code. It can also write the code of a server-side service, which your team deploys with the secret. In the receiving platform, its administrator configures:
+
+* The form or endpoint, with the fields it expects and their validation.
+* The domains allowed to submit: your preview and live sites and your production domain.
+* Spam filtering on the server. Checks in the browser help visitors fill in the form; they don't protect the platform.
+* How a new submission is matched to existing contacts, so that one person doesn't become two leads.
+* Lead source and campaign attribution, scoring, and routing to the right sales team.
+* Confirmation emails, internal notifications, and follow-up programs.
+* Consent records, and where personal data is kept and for how long.
+
+Submit a test entry from the preview site. Check that it arrived with every field, started the expected workflow, and was marked as a test. Repeat the check on the production domain after the switch.
 
 ## Update an Existing Block {#update}
 

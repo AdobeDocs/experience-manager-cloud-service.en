@@ -134,6 +134,10 @@ No. Build one or two representative blocks first, and check their content model,
 
 Yes. Ask for it like any other block, and describe the data source, what authors control, and what each item shows. The agent models the author settings as a key-value table. See [Build a Dynamic Block](block-development.md#dynamic-blocks).
 
+### Where do form submissions go after migration? {#form-submissions}
+
+Wherever you choose. The forms add-on migrates each form's fields, but what happened after a visitor submitted the form ran on the source's servers, and Edge Delivery Services doesn't store submissions. Choose the receiving system, such as your marketing automation platform or customer relationship management (CRM) system, and tell the agent the destination, the field mapping, the consent text, and the confirmation. The agent builds the form's side, and your platform's administrator configures the receiving side. See [Form Submissions](block-development.md#form-submissions).
+
 ### Can I define how a block behaves before the migration? {#block-behavior}
 
 Yes. Describe it in the migration prompt, write lasting conventions in the project instruction files, or correct block types and variants in the site planning UI before you generate code. Auto mode doesn't take instructions during a run. See [Set Block Behavior Before a Migration](block-development.md#block-instructions).

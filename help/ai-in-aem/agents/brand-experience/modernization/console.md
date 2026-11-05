@@ -128,7 +128,7 @@ Core skills, such as site planning, page migration, bulk import, and header, nav
 | Guided redesign (Stardust) | `stardust@excat-extended` | Redesigning several pages of a site to a new design direction, step by step, and checking the result. See [Guided Redesign](restyling.md#guided-redesign). |
 | Design craft | `impeccable@excat-extended` | Applying frontend design-quality guidance, such as typography, spacing, and visual hierarchy, to design work. Turned on automatically with guided redesign, and usable on its own. |
 | Project documentation | `project-management@excat-extended` | Generating project and handover documentation as PDF guides. See [Project documentation](project-documentation.md). |
-| Forms migration | `forms-excat@excat-extended` | Migrating forms built with Adobe Experience Manager Forms to Edge Delivery Services forms. |
+| Forms migration | `forms-excat@excat-extended` | Migrating the source's forms with two or more fields to the form block. Where submissions go is set up separately. See [Form Submissions](block-development.md#form-submissions). |
 | Commerce pages | `excat-commerce@excat-extended` | Detecting product detail and product listing pages and migrating them into commerce page templates. |
 | Block library setup | `excat-block-library@excat-extended` | Setting up the library that authors use to find and insert your blocks. See [Block deliverables](block-development.md#block-deliverables). |
 | Edge Delivery Services troubleshooting | `excat-support@excat-extended` | Diagnosing site problems on demand, such as blocks that don't render or changes that don't appear. See [Debugging](prompting-guide.md#debugging). |
