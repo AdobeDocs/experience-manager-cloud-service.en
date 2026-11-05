@@ -51,15 +51,33 @@ You stay in control of every change. The agent works in your own console workspa
 
 ## Start Here by Role {#start-by-role}
 
-People in different roles need different parts of these docs. Start with the guide for your role, and follow its links when you need more detail.
+People in different roles need different parts of these docs. Start with the guide for your role, or, if you already know what you want to do, with the guide for [your task](#choose-task).
 
 | Your role | Start here | Then read |
 |---|---|---|
 | **Decision-maker:** You approve the architecture, security, and processes of the project, and may not use the agent yourself. | [Evaluate and Approve the Experience Modernization Agent](evaluate.md) | [The Team Behind the Agent](evaluate.md#adobe-team), [Broader Contribution, Same Production Control](#production-control), [Where Content Is Stored](#content-storage), [How the Agent Migrates at Scale](#migration-at-scale), [Figma and Design Systems](evaluate.md#figma), [Limitations](#limitations) |
-| **Migration lead:** You set up the project and run the migration, and you may be new to Edge Delivery Services. | [Understand Your Project](#project-foundations), then [Getting Started](getting-started.md) | [Migrate a Production Site](production-migration.md) and its [phases](production-migration.md#phases), [Site Catalog](site-catalog.md), [Create, Update, and Refactor Blocks](block-development.md), [Project Instructions and Memory](project-instructions.md) |
-| **Visual contributor:** You change how the site looks, and a developer reviews your work. | [Make Visual Changes](visual-changes.md) | [Inspect mode](getting-started.md#inspect-mode), [Restyle Sites](restyling.md), [Figma prompts](prompting-guide.md#figma-block-migration) |
+| **Migration lead:** You set up the project and run the migration, as a developer or technical lead who may be new to Edge Delivery Services. | [Understand Your Project](#project-foundations), then [Getting Started](getting-started.md) | [Migrate a Production Site](production-migration.md) and its [phases](production-migration.md#phases), [Site Catalog](site-catalog.md), [Create, Update, and Refactor Blocks](block-development.md), [Project Instructions and Memory](project-instructions.md) |
+| **Visual contributor:** You change how the site looks, as a designer, marketer, or content specialist, and a developer reviews your work. | [Make Visual Changes](visual-changes.md) | [Inspect mode](getting-started.md#inspect-mode), [Restyle Sites](restyling.md), [Figma prompts](prompting-guide.md#figma-block-migration) |
 
-Whatever your role, when something doesn't work as you expect, use **Request support** in the console, or **Get help** on the Auto mode pages. It reaches the team that builds the agent. See [Request Support](console.md#request-support).
+## Choose Your Task {#choose-task}
+
+Each row links to a task guide with the steps and the checks that tell you when you are done. If your site already runs on Edge Delivery Services, [connect it](getting-started.md#existing-site), then start with restyling or block development; a migration is not required.
+
+| Your goal | Start here | Done when |
+|---|---|---|
+| Demonstrate a few customer pages | [Create a customer demo](getting-started.md#customer-demo) | The selected branded pages and demo paths work, with unfinished behavior identified. |
+| Try Edge Delivery Services and the agent with your brand's content | [Start with Auto mode](getting-started.md#brand-trial), or [start from a repository](getting-started.md#repo-start) | You can make a useful edit, retain the work, and return to it. |
+| Start a new site, or connect one that runs on Edge Delivery Services | [Start from a repository](getting-started.md#repo-start) | Your site is connected in the console, and a change you asked for is saved and previewed. |
+| Migrate a production site | [Production migration](production-migration.md) | The agreed inventory, authoring, integrations, and release checks are accepted. |
+| Relaunch a site that runs on Experience Manager today | [Relaunch an Experience Manager site](production-migration.md#relaunch-aem-site) | The relaunch decisions are recorded, and the production migration's checks are accepted. |
+| Apply a new design during migration | [Restyle during migration](restyling.md#during-migration) | Source content is preserved in the approved target design. |
+| Restyle an existing site | [Restyle an existing site](restyling.md#existing-site) | The affected pages adopt the design without unintended content or behavior changes. |
+| Change how parts of a site look, as a designer whose work a developer reviews | [Make visual changes](visual-changes.md) | The change works at every screen size, and a developer has the pull request. |
+| Create, update, or refactor blocks | [Block development](block-development.md) | Reusable code and authorable examples pass the agreed checks. |
+
+An automated run or a preview shows how the pages look. The completion checks of your task establish the rest: that authors can edit the pages, that integrations work, and that the site is ready to release.
+
+Whatever your role or task, when something doesn't work as you expect, use **Request support** in the console, or **Get help** on the Auto mode pages. It reaches the team that builds the agent. See [Request Support](console.md#request-support).
 
 ## Why Use the Agent {#benefits}
 
@@ -90,7 +108,7 @@ The person who knows an aspect of the site best is often the best person to dire
 | Development | Build blocks with complex behavior, integrate APIs and services, debug, refactor, and review every code change before it reaches production. |
 | Architecture and project leadership | Scope the migration, choose the content destination and integrations, divide the work, and decide when the site is ready to release. |
 
-Many people combine several of these. The agent doesn't limit requests by role. Your permissions in Git and in the content destination decide what you can change outside your workspace.
+Many people combine several of these. The agent doesn't limit requests by role. Your permissions in Git and in the content destination decide what you can change outside your workspace. To find the guide for your part of the project, see [Start Here by Role](#start-by-role).
 
 ### Broader Contribution, Same Production Control {#production-control}
 
@@ -103,24 +121,6 @@ That control sits in your Git provider, not in the console, so it holds however 
 1. A developer reviews the pull request, checks the result on the preview URLs that it lists, and merges it.
 
 If a contributor turns on **Allow LLM to use my git credentials**, the agent pushes with that contributor's access, so the same protection applies to it. Publishing content is controlled separately, by the site's publish role. See [Control over Changes](evaluate.md#security-control).
-
-## Choose Your Task {#choose-task}
-
-Each row links to a task guide with the steps and the checks that tell you when you are done. If your site already runs on Edge Delivery Services, [connect it](getting-started.md#existing-site), then start with restyling or block development; a migration is not required.
-
-| Your goal | Start here | Done when |
-|---|---|---|
-| Demonstrate a few customer pages | [Create a customer demo](getting-started.md#customer-demo) | The selected branded pages and demo paths work, with unfinished behavior identified. |
-| Try Edge Delivery Services and the agent with your brand's content | [Start with Auto mode](getting-started.md#brand-trial), or [start from a repository](getting-started.md#repo-start) | You can make a useful edit, retain the work, and return to it. |
-| Start a new site, or connect one that runs on Edge Delivery Services | [Start from a repository](getting-started.md#repo-start) | Your site is connected in the console, and a change you asked for is saved and previewed. |
-| Migrate a production site | [Production migration](production-migration.md) | The agreed inventory, authoring, integrations, and release checks are accepted. |
-| Relaunch a site that runs on Experience Manager today | [Relaunch an Experience Manager site](production-migration.md#relaunch-aem-site) | The relaunch decisions are recorded, and the production migration's checks are accepted. |
-| Apply a new design during migration | [Restyle during migration](restyling.md#during-migration) | Source content is preserved in the approved target design. |
-| Restyle an existing site | [Restyle an existing site](restyling.md#existing-site) | The affected pages adopt the design without unintended content or behavior changes. |
-| Change how parts of a site look, as a designer whose work a developer reviews | [Make visual changes](visual-changes.md) | The change works at every screen size, and a developer has the pull request. |
-| Create, update, or refactor blocks | [Block development](block-development.md) | Reusable code and authorable examples pass the agreed checks. |
-
-An automated run or a preview shows how the pages look. The completion checks of your task establish the rest: that authors can edit the pages, that integrations work, and that the site is ready to release. To find the guides for your role, see [Start Here by Role](#start-by-role).
 
 ## Understand Your Project {#project-foundations}
 
