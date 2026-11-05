@@ -193,7 +193,7 @@ A project with the agent starts with one person and then widens:
 
 * One developer or technical lead sets up the project and lays the foundation: the global styles, the first blocks, and the import scripts of the first templates.
 * Content and authoring specialists check that the content model is easy to edit before the team imports at scale.
-* Once the blocks are agreed, the team divides the work by block, template, or expertise. Designers refine the styling, and developers build the integrations. See [Start with One Person, Then Divide the Work](overview.md#divide-work).
+* Once the blocks are agreed, the team divides the work by block, template, or expertise. Designers refine the styling, and developers build the integrations. See [Start with One Person, Then Divide the Work](production-migration.md#divide-work).
 * Developers review every code change. The project lead runs acceptance and release.
 
 For who does what in each phase of a migration, see [Phases and Roles](production-migration.md#phases). For what each kind of expertise contributes, see [Who Can Use the Agent](overview.md#who-can-use-ema).
@@ -201,8 +201,8 @@ For who does what in each phase of a migration, see [Phases and Roles](productio
 ## How the Migration Scales {#scale}
 
 * **The platform:** Edge Delivery Services runs large multi-market and multi-language sites. Its largest sites have more than 100,000 pages.
-* **The agent:** The AI model works out the mapping on one representative page of each template, and the bulk import then runs the template's import script on its other pages without the model interpreting each one. A site of 5,000 pages that share 12 layouts is mostly the work of 12 templates. A page with a layout of its own counts as a template of its own. See [How the Agent Migrates at Scale](overview.md#migration-at-scale). To size the work from the first templates, see [Estimate Before You Commit](production-migration.md#estimate).
-* **The team:** Each person works in their own console workspace, and the console doesn't coordinate them yet. Divide the work so that people change different files and pages. See [Collaborating on a Project](overview.md#collaboration).
+* **The agent:** The AI model works out the mapping on one representative page of each template, and the bulk import then runs the template's import script on its other pages without the model interpreting each one. A site of 5,000 pages that share 12 layouts is mostly the work of 12 templates. A page with a layout of its own counts as a template of its own. See [How the Agent Migrates at Scale](production-migration.md#migration-at-scale). To size the work from the first templates, see [Estimate Before You Commit](production-migration.md#estimate).
+* **The team:** Each person works in their own console workspace, and the console doesn't coordinate them yet. Divide the work so that people change different files and pages. See [Work as a Team](production-migration.md#collaboration).
 * **Several sites:** A console workspace holds one connected site at a time. In a program with several sites, plan their order, and push and upload each site's work before you switch. To relaunch sites that run on Experience Manager today, see [Relaunch a Site That Runs on Experience Manager](production-migration.md#relaunch-aem-site).
 * **Assisted delivery:** For complex migrations, Adobe engineers can operate the agent for you. See [AOE Delivery](aoe-delivery.md).
 
@@ -216,7 +216,7 @@ Figma can be the source of a new design. The agent reads a Figma file the way a 
 
 * **Variables and styles become design tokens.** Through the MCP server, the agent reads the variables and styles of the selected design, such as colors, typography, and spacing, and uses them to reproduce the design accurately. It writes them as CSS custom properties in the project's global styles. These properties are the site's design tokens. They live in the code, not in a separate token export, so designers and developers review them like any other change.
 * **Components become blocks or variants.** From a Figma link, the agent builds one block or component at a time, and maps it to an existing block where one fits, often as a variant. See [Figma Block Migration](prompting-guide.md#figma-block-migration).
-* **Figma and a live site work together.** In a [redesign migration](overview.md#figma-redesign), the Figma components define the blocks and the live site provides the content. To [create a page](overview.md#figma-new-page) that the source site lacks, a Figma frame provides both the design and the content.
+* **Figma and a live site work together.** In a [redesign migration](restyling.md#during-migration), the Figma components define the blocks and the live site provides the content. To [create a page](prompting-guide.md#figma-new-page-from-figma) that the source site lacks, a Figma frame provides both the design and the content.
 
 What to approve:
 

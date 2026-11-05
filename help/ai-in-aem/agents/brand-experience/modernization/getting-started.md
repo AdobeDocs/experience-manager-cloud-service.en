@@ -406,7 +406,7 @@ When you select **Push to current branch**, the console handles most of these ca
 
 The console doesn't merge branches or resolve conflicts itself. **Sync** > **Pull** > **Code** works the same way: if your commits conflict with the remote changes, the console cancels the pull, leaves your work as it was, and suggests pushing your work to a new branch or asking the agent to help resolve the conflict.
 
-To avoid conflicts, pull before you start a task, push small changes often, and agree with your team who changes which files. See [Collaborating on a Project](overview.md#collaboration).
+To avoid conflicts, pull before you start a task, push small changes often, and agree with your team who changes which files. See [Work as a Team](production-migration.md#collaboration).
 
 ### Preview Site {#preview-site}
 

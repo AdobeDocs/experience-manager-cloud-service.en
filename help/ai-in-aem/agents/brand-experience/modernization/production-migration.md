@@ -33,7 +33,7 @@ For a few demonstration pages or an initial evaluation, use the smaller [demo an
 
 ## Phases and Roles {#phases}
 
-A migration runs in phases. The agent does most of the repetitive work in each one, and your team makes the decisions and accepts the result. Let one person, such as the migration lead, run the first phases; others join once the blocks and import scripts are settled. See [Start with One Person, Then Divide the Work](overview.md#divide-work).
+A migration runs in phases. The agent does most of the repetitive work in each one, and your team makes the decisions and accepts the result. Let one person, such as the migration lead, run the first phases; others join once the blocks and import scripts are settled. See [Work as a Team](#collaboration).
 
 | Phase | Who leads | What the agent does | What your team does | Done when | Guide |
 |---|---|---|---|---|---|
@@ -46,6 +46,32 @@ A migration runs in phases. The agent does most of the repetitive work in each o
 | Release | Release owner | Writes the project handover documentation. | Merges the code, publishes the content, switches the domain, and monitors the site. | The site is live, and its owners have taken it over. | [Release, Recover, and Hand Over](#handoff) |
 
 Visual contributors can work on styling from the representatives phase onward. See [Make Visual Changes](visual-changes.md).
+
+## How the Agent Migrates at Scale {#migration-at-scale}
+
+The agent doesn't send every page through the AI model. Interpreting each page separately wouldn't scale to thousands of pages, and the model could treat similar pages slightly differently each time. Instead, the AI model works out the mapping on one sample page per template, and the agent turns that mapping into code that runs on the template's other pages:
+
+1. **Group pages into templates.** The [site catalog](site-catalog.md) groups the source site's pages into templates, which are pages that share a layout. If you migrate pages without a catalog, each page that you name starts a template of its own.
+1. **Migrate a sample page.** For each template, the agent first migrates one real page that shows the template's typical layout and, ideally, most of its blocks and variants. The site catalog proposes one for each template. If another page of the template shows more of its blocks, choose that page instead: blocks that the sample page lacks are only added later, when an imported page needs them. The AI model maps the sample page's content to default content and blocks, and creates the blocks that it needs or reuses existing ones.
+1. **Generate an import script.** The agent writes an import script for the template: one part extracts each block's content from the source HTML, and another cleans up the page as a whole. The scripts are JavaScript files in the project's `tools/importer/` folder, versioned in Git with the rest of your code.
+1. **Refine the pattern, not the page.** When you ask for a correction, the agent changes the block or the import script that produced the result instead of editing one page's output. The correction then applies to every page of the template, and later templates reuse the blocks that already exist.
+1. **Import the remaining pages in bulk.** The bulk import runs the import script on the template's other pages without the AI model interpreting each one. The agent then compares the imported pages with their source pages, fixes the import script for pages that differ too much, and imports those pages again.
+
+Corrections accumulate in the blocks and import scripts, so each one also improves the pages that you import next. Validate a few pages of each template before you import all of them. See [Import in Batches](#batches).
+
+The same applies when you change how content is structured, such as which content becomes a block or how a page splits into sections: ask the agent to change the import script, not only the imported pages. The script is code, so the change is reviewed and merged like any other, and the next import applies it to every page of the template. An edit to a single page doesn't carry over. The agent tells you that such an edit is local, and importing the template again overwrites it.
+
+To change the templates and blocks themselves, such as moving pages to another template or making one block a variant of another, use the [planning view](site-catalog.md#planning-actions) or ask in chat. The agent follows these changes the next time it generates blocks or imports pages, and pages that you already imported don't change. To consolidate the design, see [Restyle Sites](restyling.md). To consolidate block code, see [Refactor Without Changing the Outcome](block-development.md#refactor).
+
+>[!NOTE]
+>
+>A template in the console is a group of source pages with the same layout, which the agent uses to plan and import them. It isn't the `template` page metadata, which adds a class to the page's `body` element so that the project's code can style or decorate those pages differently.
+
+You can align the two. When the pages of one console template should look or behave differently on the new site, ask the agent to write matching `template` metadata into those pages and to style them in the project's code. For example:
+
+> For the article template, set the page metadata `template` to `article` in the import script, and give article pages a narrower main column.
+
+Because the import script sets the metadata, every article page that you import later gets it too.
 
 ## Agree Scope and Destinations {#scope}
 
@@ -123,7 +149,7 @@ To steer the structure:
 1. Before you migrate, review the catalog in the planning view and correct block names and groupings there. See [Refining the Catalog](site-catalog.md#planning-actions).
 1. Record the blocks, variants, and section styles of the project in `AGENTS.md`, so that the agent reuses them on later pages and in later sessions. See [Document Content Conventions](project-instructions.md#content-conventions).
 1. Check each representative in the **Document view** of the preview panel, which shows its sections, blocks, and default content. See [Content Views](console.md#content-view).
-1. Correct a wrong pattern in the import script so that the bulk import repeats the correction on every page. See [How the Agent Migrates at Scale](overview.md#import-scripts).
+1. Correct a wrong pattern in the import script so that the bulk import repeats the correction on every page. See [How the Agent Migrates at Scale](#migration-at-scale).
 1. Ask an author to edit a representative page. If they hesitate over which block, variant, or style to use, there are too many choices.
 
 Keep the choices that authors make few. The design system should make the decisions that authors shouldn't have to: when a block needs more than a handful of variants or options, ask whether some of them belong in the design.
@@ -139,6 +165,44 @@ The catalog and the first representatives give you an estimate based on the work
 
 Corrections land in reusable blocks and import scripts, so after the representatives you can see the work for each template: the blocks and scripts that it needed and the corrections that it took. Check the estimate against the first batch's [reconciliation record](#batches).
 
+## Work as a Team {#collaboration}
+
+Several people can work on the same project with the agent, each in their own [console workspace](overview.md#independent-workspace). They share code through Git and content through the content destination. The console doesn't show who is working on what, and it doesn't merge two people's changes to the same page, so agree who works on what and keep talking to each other.
+
+Scope matters more with an agent than without one. A single request can change many files, so when two people change the same blocks or styles at the same time, someone has to resolve conflicts across many files by hand.
+
+### Start with One Person, Then Divide the Work {#divide-work}
+
+The first steps lay the foundation that everything else builds on: the global styles, the first blocks, and the import scripts of the first templates. Let one person set them up. Before you divide the work, check that the blocks fit real content and are easy for authors to use. See [Shape the Content Structure](#content-structure).
+
+Once the team agrees on the blocks, divide the work so that people change different files:
+
+* **By block:** One person refines the cards block while another builds a carousel.
+* **By template:** Each person refines the import script of a different template. See [How the Agent Migrates at Scale](#migration-at-scale).
+* **By expertise:** A designer refines the styling of existing blocks while a developer builds an integration.
+
+Don't give two people the same block, the global styles, or the same import script at the same time unless they agree how to coordinate.
+
+### Share Code in Small Steps {#share-code}
+
+1. Agree on a shared branch, such as `main` or a development branch. Each person switches their workspace to it with **Switch branch** in the [Code view](console.md#changes-actions).
+1. Keep each request to the agent focused on one block, template, or task. Push the result as soon as it works, with **Create new PR**: the console pushes your changes to a new branch, opens a pull request into the shared branch, and leaves your workspace on the new branch.
+1. Review and merge pull requests often. Small changes conflict less and are quicker to review, and a pull request that stays open for days collects conflicts.
+1. Before you start a new task, switch back to the shared branch with **Switch branch** and pull it with **Sync** > **Pull** > **Code**, so that you build on everyone's merged work.
+
+Pulling code requires a workspace without uncommitted files, so push or discard your changes first. If someone changed the same lines as you, the console cancels the pull and leaves your work as it was. See [If Someone Else Changed the Branch](getting-started.md#push-conflicts).
+
+Small, frequent pushes also give the team a readable history of what the agent changed and why. To get one commit per request, see [Leave a Record of Each Request](project-instructions.md#trace).
+
+### Coordinate Content Changes {#share-content}
+
+Content has no merge. Your workspace holds copies of the pages, and an upload replaces the page in the content destination with your copy. If two people change the same page, the last upload wins, and the other person's changes are lost. Give each page, or set of pages, to one person at a time.
+
+To get pages that others uploaded into your workspace:
+
+* Open a page that shows a cloud icon in the [content view](console.md#content-view). The console downloads it into your workspace.
+* In document-based projects, select **Sync** > **Pull** > **Content** to download every page from Experience Workspace. It replaces your local copies, including edits that you haven't uploaded, so upload the edits that you want to keep first.
+
 ## Import in Batches {#batches}
 
 Use the [catalog bulk-import workflow](site-catalog.md#bulk-import) and [bulk-import prompts](prompting-guide.md#bulk-import) after validating representatives.
@@ -149,7 +213,7 @@ Use the [catalog bulk-import workflow](site-catalog.md#bulk-import) and [bulk-im
 1. Continue template by template. Track discovered, analyzed, imported, failed, skipped, and accepted pages separately.
 1. Recheck earlier representatives when changing shared styles, parsers, transformers, models, or block code.
 
-Before reimporting, compare the affected output with author edits already made in the target. Preserve or merge those edits; a corrected importer does not automatically reconcile them.
+Once authors start editing the migrated pages in the content destination, their pages become the source of truth. Importing or uploading those pages again overwrites the authors' work, and a corrected import script doesn't merge it, so agree with the authors first.
 
 ## Complete the Site {#complete-site}
 

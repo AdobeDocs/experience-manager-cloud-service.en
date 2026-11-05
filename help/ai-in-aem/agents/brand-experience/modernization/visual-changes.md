@@ -33,7 +33,7 @@ Ask the person who leads the project for the following:
 
 * **Access to the console.** You sign in with your Adobe ID. See [Open the Experience Modernization Console](getting-started.md#open-console).
 * **The site to work on.** You connect the site's Git repository to your console workspace, and you need write access to the repository to do so. See [Connect Your Site](getting-started.md#connect-repo).
-* **Your part of the work.** Agree which blocks, pages, or styles are yours, so that no one else changes the same files at the same time. See [Start with One Person, Then Divide the Work](overview.md#divide-work).
+* **Your part of the work.** Agree which blocks, pages, or styles are yours, so that no one else changes the same files at the same time. See [Start with One Person, Then Divide the Work](production-migration.md#divide-work).
 * **How to hand over.** Most teams protect the main branch so that a developer reviews every change. Ask whether you push with **Create new PR**. See [Hand Over for Review](#hand-over).
 * **For Figma designs, a Figma seat that can read files.** See [Work from a Figma Design](#figma).
 
@@ -134,7 +134,7 @@ When a change should apply to some pages only, ask for one of these instead:
 
 The pull request lists preview URLs of your pages on a new branch, so that the developer can see the result. Your console workspace stays on that branch. To make the changes that the reviewer asks for, keep working there and push with **Push to current branch**; the pull request updates. To start an unrelated change, return to the original branch with **Switch branch** in the [Changes view](console.md#changes-actions). For repositories connected through Cloud Manager, the console pushes the branch without opening a pull request; ask the developer to open it.
 
-Your change reaches the live site when the developer merges it. If you also changed text or images on a page, that is a content change: it reaches the site only when the page is uploaded and published. Agree with the authors who does that. See [Coordinate Content Changes](overview.md#share-content).
+Your change reaches the live site when the developer merges it. If you also changed text or images on a page, that is a content change: it reaches the site only when the page is uploaded and published. Agree with the authors who does that. See [Coordinate Content Changes](production-migration.md#share-content).
 
 ## Words Used in This Guide {#glossary}
 

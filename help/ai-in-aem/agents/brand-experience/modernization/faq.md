@@ -114,7 +114,7 @@ Yes. In the console, name the pages to import, or choose templates and pages in 
 
 ### Can the agent migrate hundreds or thousands of pages? {#scale}
 
-Yes. The agent groups pages into templates, migrates one representative page for each template with the AI model, and then imports the template's other pages with generated import scripts. Corrections go into the blocks and scripts, so they apply to every page of the template. See [How the Agent Migrates at Scale](overview.md#migration-at-scale).
+Yes. The agent groups pages into templates, migrates one representative page for each template with the AI model, and then imports the template's other pages with generated import scripts. Corrections go into the blocks and scripts, so they apply to every page of the template. See [How the Agent Migrates at Scale](production-migration.md#migration-at-scale).
 
 ### How should we plan a large migration? {#plan-large-migration}
 
@@ -274,7 +274,7 @@ The agent currently uses Claude models. The model is an implementation detail th
 
 ### Does the agent learn from my data? {#training}
 
-Adobe does not use your conversations or other customer data to train or fine-tune AI models. Within your project, the agent has no memory of its own between conversations; to make it remember a decision, write it in a file in your repository. See [What the AI Model Processes](evaluate.md#security-model-data) and [What the Agent Remembers](overview.md#memory).
+Adobe does not use your conversations or other customer data to train or fine-tune AI models. Within your project, the agent has no memory of its own between conversations; to make it remember a decision, write it in a file in your repository. See [What the AI Model Processes](evaluate.md#security-model-data) and [What the Agent Remembers](project-instructions.md#memory).
 
 ### What data reaches the AI model, and which systems does the agent connect to? {#data-flows}
 
@@ -300,7 +300,7 @@ Not for a first result. Auto mode migrates pages of your website without step-by
 
 ### Can several people work on the same project? {#collaboration}
 
-Yes. Each person works in their own console workspace and shares code through pull requests in Git. The console doesn't coordinate their work, so agree who changes which blocks, templates, and pages. Content uploads have no merge: the last upload of a page replaces the previous one. See [Collaborating on a Project](overview.md#collaboration).
+Yes. Each person works in their own console workspace and shares code through pull requests in Git. The console doesn't coordinate their work, so agree who changes which blocks, templates, and pages. Content uploads have no merge: the last upload of a page replaces the previous one. See [Work as a Team](production-migration.md#collaboration).
 
 ### Can Edge Delivery Services run complex sites, or only simple ones? {#complex-sites}
 
