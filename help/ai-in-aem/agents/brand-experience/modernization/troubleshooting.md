@@ -61,7 +61,7 @@ Migrate only sites that you own or are authorized to migrate. Arrange access wit
 1. If the administrator provides an accessible staging or origin host with the same content, use it as the source and record which host the content came from.
 1. If only discovery is blocked, provide the list of page URLs to migrate instead.
 
-Verify one representative page before you start a catalog or batch run. After access changes, retry the failed pages, and check captures for challenge or access-denied pages before you accept the content.
+Verify one representative page before you start a catalog or batch run, including its images and other assets. After access changes, retry the failed pages, and check captures for challenge or access-denied pages before you accept the content.
 
 ## A Change Is Missing {#missing-change}
 
@@ -101,11 +101,11 @@ For conflicting changes and protected branches, see [Push Code Changes](getting-
 
 ## Workspace Setup Takes Time or Fails {#workspace-setup}
 
-When you first open the console, or after a reset, it prepares your console workspace. This can take up to 10 minutes. If all workspaces are in use, the console tells you so and starts setting yours up as soon as one is available; you don't need to retry. If setup fails, the console offers to retry. If it keeps failing, use the **Request support** link on the setup screen. If the console says that your account can't use it, contact your Adobe account team.
+When you first open the console, or after a reset, it prepares your console workspace. This can take up to 10 minutes. If all workspaces are in use, the console tells you so and starts setting yours up as soon as one is available; you don't need to retry. If you need it sooner, select **Request support**. After a period of inactivity, the console pauses your workspace and shows **Your workspace is paused** when you return; select **Wake up** and wait a few minutes. If setup fails, the console offers to retry. If it keeps failing, use the **Request support** link on the setup screen. If the console says that your account can't use it, contact your Adobe account team.
 
 ## Project Seems Missing {#missing-workspace}
 
-Your console workspace belongs to the Adobe account and organization that you sign in with. If the console opens without your project, sign out, then sign in with the same account and organization that you used before. Don't reset the workspace while you investigate, because a reset permanently deletes its chat history and files. If the project is still missing, [request support](console.md#request-support) with the project name and preview URL. Code that you pushed and content that you uploaded stay in your Git repository and in Experience Workspace.
+Your console workspace belongs to the Adobe account and organization that you sign in with, and each organization has its own workspace. If you belong to several organizations, the project may be in another one. If the console opens without your project, sign out, then sign in with the same account and choose the profile of the organization that you used before. Don't reset the workspace while you investigate, because a reset permanently deletes its chat history and files. If the project is still missing, [request support](console.md#request-support) with the project name and preview URL. Code that you pushed and content that you uploaded stay in your Git repository and in Experience Workspace.
 
 ## Failed to Send Message {#send-failed}
 

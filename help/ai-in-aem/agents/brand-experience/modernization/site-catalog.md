@@ -56,11 +56,13 @@ Confirm source authorization, reachability, and the intended project first. Cata
 
 While planning runs, the site planning UI shows **Planning your migration** with the current step, the number of pages found and read, and the elapsed time. You can begin reviewing results before the run completes.
 
+The agent analyzes every page that it discovers. When it finds more than 1,000 pages, it tells you roughly how long the analysis will take, and continues. For a very large site, plan before you catalog: ask the agent to propose how to divide the migration, then catalog the sections that you choose, or ask it to analyze only certain sections of the site.
+
 To stop a run, use the stop control in the chat. The site planning UI then shows **Planning stopped before it finished**, and you can pick up where it left off or start over. The chat thread shows what happened before it stopped.
 
 The skill's workflow has four phases that run in sequence:
 
-1. **Analyzing** — Each page is loaded, screenshotted, and divided into blocks based on its author-editable content.
+1. **Analyzing** — Each page is loaded, screenshotted, and divided into blocks based on its author-editable content. Screenshots leave out cookie banners and other large dialogs that cover the page. The analysis leaves out the site's header and footer, which an Edge Delivery Services site builds from separate navigation and footer content rather than from each page.
 1. **Block cataloging** — Similar blocks across pages are grouped into block variants, and each variant is mapped to a block from the block library and named.
 1. **Templating** — Pages that share the same layout of blocks are grouped into template candidates.
 1. **Naming** — Template candidates are reviewed, merged where they are structurally the same, and given meaningful names.
@@ -74,6 +76,8 @@ Most projects only need the prompt above. If you need to rerun a phase, for exam
 `repeat block cataloging`
 
 Rerunning a phase also reruns every phase after it, while earlier phases are kept. Changes you make in the [site planning UI](#planning-ui), such as splitting or moving block instances, are kept when the catalog is regenerated.
+
+If the site planning UI shows **Block catalog is out of date**, the catalog was created in an earlier format that the current version of the skill can't read. To regenerate it, run planning again from the chat with `scope site` and the site's address. If planning stopped before it finished, **Start over** in the site planning UI also starts a new run for the same site.
 
 ## Output {#output}
 
@@ -91,7 +95,7 @@ The status of the run is shown in the chat summary and in the site planning UI.
 
 ## Site Planning UI {#planning-ui}
 
-The site planning UI is a view in the [workspace panel](console.md#workspace-panel) of the Experience Modernization Console where you can review the results of the site catalog skill and correct them before you begin migrating. It shows the templates, pages, and blocks the agent identified, along with screenshots, so you can confirm that they were identified correctly.
+The site planning UI is a view in the [workspace panel](console.md#workspace-panel) of the Experience Modernization Console where you can review the results of the site catalog skill and correct them before you begin migrating. It shows the templates, pages, and blocks the agent identified, along with screenshots, so you can confirm that they were identified correctly. In the console, it is the **Planning** view. It is unrelated to the chat's **Plan** mode, in which the agent proposes its approach to one request before it changes any files.
 
 Because the accuracy of the catalog directly affects project sizing and every downstream migration step, it is recommended that you review the catalog in the site planning UI before importing pages.
 
@@ -215,6 +219,8 @@ When planning finishes, the agent offers to **Review scoping results**. Use it a
 1. The review ends with a short report of what changed and what to check in the plan. Items the agent is still unsure about are left unchanged and flagged. Select **Review remaining items** to continue with them, or **Start site migration** when the catalog is ready.
 
 The review changes the catalog only. It does not import pages or generate code.
+
+**Start site migration** migrates one template at a time. The agent asks which template to start with, then uses the catalog's pages and blocks for it. Validate that template's pages before you continue with the next one. The catalog is a strong first pass, so expect to correct some pages during that validation.
 
 ### Refining the Catalog {#planning-actions}
 

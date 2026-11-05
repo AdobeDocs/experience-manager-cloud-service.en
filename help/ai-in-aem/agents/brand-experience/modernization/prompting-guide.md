@@ -72,12 +72,13 @@ Before you attach a screenshot, a log, an exported file, or an error message, ch
 | What the agent needs | Where to enter the credential |
 |---|---|
 | Access to your Git repository | The connection flow: **Authorize AEM Code Connector**, or **Sign in with a token**. See [Connect Your Site](getting-started.md#connect-repo). |
-| Permission to push, pull, or read content for you | **Settings** > **Agent permissions**. These use your Adobe or Git sign-in, so you don't type a credential. |
+| Permission to push, pull, or read content for you | **Settings** > **Agent permissions**. By default, these use your Adobe or Git sign-in, so you don't type a credential. To give the agent narrower access, enter its own token there: a fine-grained personal access token for Git, or a service account token for Adobe. See [Settings Page](console.md#settings-page). |
 | Your Figma designs | **Settings** > **Credentials**, for your Figma personal access token. See [Work from a Figma Design](visual-changes.md#figma). |
 | A source site that requires sign-in | **Settings** > **Protected site authentication**, or the authentication fields of Auto mode. See [Protected Site Authentication](console.md#protected-site-authentication). |
+| An API or other service that the agent calls while it works, such as a test API or a notification service | **Settings** > **Protected site authentication**, with an entry for the service's hostname. See [Credentials for Other Services](console.md#other-services). |
 | An API key that your live site uses | Not the console. A server-side service keeps the key, such as Adobe App Builder or API Mesh, which your team deploys and the site calls. See [Connect Services and Applications](block-development.md#integrations). |
 
-Some tasks seem to need a secret that has no place in **Settings**, such as calling an API that requires a key. Don't paste it to get the task done. Ask the agent to write the code so that the server-side service supplies the key, and test against a sandbox endpoint that needs none, or ask a developer.
+When a task needs a key, don't paste it to get the task done. If the agent itself calls the service, for example to read sample data or try a request while it builds an integration, add the key in **Protected site authentication** and tell the agent that a credential is set up for that hostname. If your published site needs the key, ask the agent to write the code so that a server-side service supplies it, and test against a sandbox endpoint.
 
 ### If You Shared a Secret {#secret-shared}
 
@@ -104,13 +105,15 @@ Ask questions, too. The agent can explain Edge Delivery Services concepts, your 
 
 ## Work Beyond Edge Delivery Services {#beyond-eds}
 
-The agent's skills and instructions focus on Edge Delivery Services: migrating pages, building and styling blocks, and following the project's conventions. The agent itself is a general-purpose coding agent, so it isn't limited to them. It can connect your site to a marketing automation platform, a search service, or a commerce backend, adapt an application that your team built with React, or write the code of a server-side service that your team deploys.
+The agent's skills and instructions focus on Edge Delivery Services: migrating pages, building and styling blocks, and following the project's conventions. The agent itself is a general-purpose coding agent, so it isn't limited to them. It can connect your site to a commerce platform, a marketing automation platform, a search or maps service, or your own APIs, adapt an application that your team built with React, or write the code of a server-side service that your team deploys. What works well for integrations with other coding agents, such as Claude Code, works here too: documentation first, a plan before code, small tested steps, and decisions written down.
+
+To find out what a source site integrates with, ask the agent to list the third-party services that a representative page loads, such as analytics, tag management, consent, maps, video, chat, search, and forms. Then decide with your team how each one works on the new site.
 
 For other systems, the agent has no skills, only general knowledge, which can be out of date. The system's own documentation makes the work reliable, so work through it together:
 
 1. **Have it read the documentation first.** Give the agent the link to the system's developer documentation, or attach it. Before it writes any code, ask it to explain how the integration would work, what must run on a server, and which secrets are involved. Correct its understanding at this stage.
 1. **Ask for the Edge Delivery Services way.** Ask whether the integration belongs in a block, a [widget](https://www.aem.live/docs/widgets), or the project's scripts, and how it keeps the pages fast. The agent proposes an approach and asks what it needs to know.
-1. **Give it what the system needs:** endpoints, field names, example requests and responses, and a sandbox or test account. Secrets stay out of the chat.
+1. **Give it what the system needs:** endpoints, field names, example requests and responses, and a sandbox or test account. If the agent must call the system while it works, add the key in [**Settings**](console.md#other-services); secrets stay out of the chat.
 1. **Build in small steps.** Test each step in the preview against a non-production endpoint.
 1. **Record the result.** Ask the agent to write the chosen approach and the documentation link in the project's instruction files, so that the next conversation starts from it.
 
@@ -119,6 +122,17 @@ For example:
 > Read the developer documentation of [platform] at [URL], especially [topic]. Explain how our site could [goal] following Edge Delivery Services practice: what runs in the browser, what needs a server, and which secrets are involved. List your questions. Don't change any files yet.
 
 Setting up the other system, deploying a server-side service, and storing its secrets stay with your team and that system's administrators. For the integration patterns, see [Connect Services and Applications](block-development.md#integrations).
+
+### Example: Updates in Slack (Advanced) {#slack-updates}
+
+A credential in **Settings**, a project skill, and a line in `AGENTS.md` can connect the agent to the tools your team already uses. One developer on the team that builds the agent set it up to post a summary in Slack each time it finished a turn, with what it had changed, and to read his replies there as further instructions. He could follow and steer a long task without keeping the console open.
+
+1. Create a Slack app whose bot token has only the scopes for posting and reading messages. Add the bot to one private channel, or use a direct message with you.
+1. In **Settings** > **Protected site authentication**, add an entry for the hostname `slack.com` with bearer authentication and the bot token. See [Credentials for Other Services](console.md#other-services).
+1. Ask the agent to write a [project skill](project-instructions.md#custom-skills) that explains how to post and read messages with the Slack Web API, and to push it.
+1. In `AGENTS.md`, tell the agent that a credential for `slack.com` is set up, which channel to use, and when to post, for example at the end of each turn.
+
+The agent treats what it reads in the channel as instructions, the same as chat. Keep the channel private, with only you and the bot in it, so that only you can instruct the agent. The summaries that it posts leave the console for Slack, so follow your organization's policy on what may go there. Remove the entry in **Settings** when you no longer use it. The same pattern works for other tools with an HTTP API that accepts a fixed header.
 
 ## General Tips {#general-tips}
 

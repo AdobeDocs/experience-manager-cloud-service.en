@@ -45,7 +45,7 @@ If your content must be stored in the JCR of an Adobe Experience Manager author 
 
 ## Access and AI Credit Usage {#access}
 
-To use the Experience Modernization Console, request access through your Adobe account manager. Sign in with an Adobe ID that belongs to your company's Adobe organization; see [Open the Experience Modernization Console](#open-console). Auto mode is in early access and has its own access request; see [Start with Auto Mode](#brand-trial).
+To use the Experience Modernization Console, request access through your Adobe account manager. Sign in with an Adobe ID that belongs to your company's Adobe organization; see [Open the Experience Modernization Console](#open-console). Auto mode opens at [`aemcoder.adobe.io/auto`](https://aemcoder.adobe.io/auto); if your account doesn't have it yet, that page lets you sign up. See [Start with Auto Mode](#brand-trial).
 
 Being able to sign in to the console does not by itself establish your organization's entitlement. Depending on your organization's agreement, migrating pages consumes AI credits. Adobe counts them once for each page that is uploaded to your content destination, Experience Workspace or the author instance. Prompts, iterations on a page, and uploading the same page again don't add to them. For how Adobe measures AI credit consumption for agentic capabilities, see [AI credit consumption](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/ai-credit-consumption). For your organization's entitlement, usage, and commercial terms, contact your Adobe account team.
 
@@ -65,7 +65,7 @@ Before importing, identify the authorized source URLs, the pages to include, and
 
 ## Start with Auto Mode {#brand-trial}
 
-Auto mode migrates a website, or a list of pages you select, without step-by-step prompting. Auto mode is in early access. If you don't have access yet, the Auto mode page at [`aemcoder.adobe.io/auto`](https://aemcoder.adobe.io/auto) shows a form to request it. Auto mode is not a prerequisite for trying your content: without it, [start from a repository](#repo-start) and [import pages step by step](#guided-import).
+Auto mode migrates a website, or a list of pages you select, without step-by-step prompting. Open it at [`aemcoder.adobe.io/auto`](https://aemcoder.adobe.io/auto). If your account doesn't have Auto mode yet, that page lets you **Sign up**. Auto mode is not a prerequisite for trying your content: without it, [start from a repository](#repo-start) and [import pages step by step](#guided-import).
 
 Auto mode and the guided workflow differ in how much the agent does before it hands back to you:
 
@@ -89,7 +89,7 @@ The run's site stays in an Adobe-managed location until you transfer it. Access 
 
 Auto mode limits each account by the number of pages per migration, the number of migrations, and how many migrations can run at the same time. The Auto mode page shows the limits that apply to you before you start:
 
-* When you are granted Auto mode access, each migration can include up to 10 pages by default. A full-site run migrates a preview of up to that many pages, not the whole site. You can migrate the rest of the site later in the console.
+* By default, each migration can include up to 10 pages. A full-site run migrates a preview of up to that many pages, not the whole site. You can migrate the rest of the site later in the console.
 * When you select pages, a counter shows how many of the allowed pages you have selected. A run with more pages than your account allows cannot start.
 * If you have used all the migrations your account allows, or already have as many migrations running as allowed, Auto mode tells you so. Wait for a run to finish, or request more.
 * Use **Ask for a higher limit**, or **Get help** in the header, to ask the team that builds the agent for more pages or migrations. The team replies by email.
@@ -191,7 +191,7 @@ Edge Delivery Services also supports GitHub Enterprise (self-hosted), Adobe-host
 1. Log in with your Adobe ID.
    * Use an account that belongs to your company's Adobe organization. A personal Adobe ID that isn't part of an organization can't be used; the console explains this and lets you **Use a different account**. If you don't have a company account, ask your Adobe account team to add you to the organization.
 
-The console keeps a hosted working copy of your project, called the console workspace in these docs. The agent imports content and changes code there until you upload or push. It is unrelated to Experience Workspace, the authoring UI. The console workspace pauses after a period of inactivity to save resources. When you return, the console shows **Your workspace is paused**; select **Wake up** and wait a few minutes while it is restored.
+The console keeps a hosted working copy of your project, called the console workspace in these docs. The agent imports content and changes code there until you upload or push. It is unrelated to Experience Workspace, the authoring UI. The console sets up your workspace the first time you sign in, which can take up to 10 minutes. You get a separate workspace in each Adobe organization that you sign in with. If you belong to several organizations, sign out and sign in with the other organization's profile to switch; projects and chats from one organization don't appear in the other. The console workspace pauses after a period of inactivity to save resources. When you return, the console shows **Your workspace is paused**; select **Wake up** and wait a few minutes while it is restored.
 
 ### Demo Mode {#demo-mode}
 

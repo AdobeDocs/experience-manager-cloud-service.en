@@ -63,6 +63,19 @@ Add a short section for your project to `AGENTS.md`:
 
 Keep `AGENTS.md` short. The agent carries all of it in every conversation, so every line takes up room that it could use for the task. Long, general text also makes it harder for the agent to tell which rules matter.
 
+### Change How the Agent Answers {#reply-style}
+
+How the agent writes its answers is a convention like any other, so you can set it in `AGENTS.md`. For example, if you don't want it to end each answer by suggesting next steps, or you want shorter answers, say so:
+
+```markdown
+## How to answer
+- Keep answers short: what you changed, where, and anything that needs my decision.
+- Don't suggest next steps unless I ask for them.
+- Answer in German. Keep code, file names, and commit messages in English.
+```
+
+These instructions shape the text of the agent's answers. The suggestions that the console shows under **Next steps** are generated separately, so they still appear, and you can ignore them.
+
 ## Organize Further Instruction Files {#organize}
 
 Put details in separate files, grouped in a folder when there are several of them. For example:
@@ -191,25 +204,34 @@ A skill is a set of instructions for one kind of task, often step by step. It wo
 
 To add a custom skill:
 
-1. Create a folder for the skill in a visible folder at the root of the repository, such as `skills/gallery-images/`, with a `SKILL.md` file in it. Keep the skill's files in Markdown so that your site doesn't serve them.
-1. Start the file with a one-line description of when to use the skill. Then add the steps, the checks that show the task succeeded, and a short example.
-1. List the skill in `AGENTS.md`, or in a `skills/README.md` index that `AGENTS.md` references, with the situation that calls for it. The agent reads the skill when a task matches that description.
-1. Test the skill in a new conversation with a task that should use it, then push it with the code.
+1. Ask the agent to create the skill in its own folder under `.claude/skills/`, such as `.claude/skills/gallery-images/SKILL.md`. The file starts with a short header that gives the skill a `name` and a `description` of when to use it. The steps, the checks that show the task succeeded, and a short example follow.
+1. Push the skill. The console's file views hide folders whose names start with a dot and can't stage them, so ask the agent to commit and push the skill, with **Allow LLM to use my git credentials** turned on in [**Settings**](console.md#settings-page). Without that permission, add the file in GitHub or in a local clone, then pull the code into the console.
+1. Test the skill in a new conversation. Ask for it by name, such as "Use the gallery-images skill to import this page". To check that the agent found it, ask it to read the skill and tell you its name and description. A list of the agent's skills covers its built-in skills, so it doesn't show whether yours loaded.
+
+The header of `SKILL.md` looks like this:
+
+```markdown
+---
+name: gallery-images
+description: Extract the images of the source site's photo galleries, which a script loads. Use when importing pages that contain a gallery.
+---
+```
+
+You don't need to list the skill in `AGENTS.md`. The agent sees the description of every skill in the folder and reads a skill when a task matches it, so describe precisely when to use it.
 
 A good way to write a skill is to ask the agent for it right after it has completed the task correctly:
 
-> Write a skill in `skills/gallery-images/SKILL.md` that captures how you just extracted the gallery images, including the checks you used. Add it to the skills index in `AGENTS.md`.
+> Write a skill in `.claude/skills/gallery-images/SKILL.md` that captures how you just extracted the gallery images, including the checks you used. Then commit and push it.
 
 Custom skills don't replace or change the agent's built-in skills. When a new release handles a task natively, remove the custom skill that covered it.
 
-### Why a skills Folder and Not .claude/skills {#skills-location}
+### Why .claude/skills {#skills-location}
 
-Claude-based agents, like the one that the console currently runs, also discover skills on their own in a `.claude/skills/` folder. A skill there loads natively: the agent sees only the skill's short description until a task matches it, can be asked for it by name, and can apply settings from the skill's header, such as which tools it may use. In the console, this folder has a practical problem. The console hides root folders whose names start with a dot, and it can't stage or push files in them. You couldn't review such a skill in the console, and a skill that the agent wrote there would stay in your workspace unless it pushed the skill itself with its [Git permission](console.md#settings-page).
+Claude-based agents, like the one that the console currently runs, discover skills on their own in a `.claude/skills/` folder at the root of the repository. A skill there loads natively: the agent sees only the skill's short description until a task matches it, can be asked for it by name, and applies settings from the skill's header, such as which tools it may use. This works more reliably than a visible folder such as `skills/` that `AGENTS.md` indexes, where the agent has to read the index and decide to open the file.
 
-A `skills/` folder that `AGENTS.md` references works through the index instead. The agent reads the index line, decides that the skill applies, and opens its file. For most project skills, this works just as well. The trade-offs are small:
+The folder's name starts with a dot, which has two effects:
 
-* The index lines are part of `AGENTS.md`, so keep each to one line.
-* The agent chooses a skill from your index description, so describe clearly when to use it.
-* Settings in a native skill's header, such as which tools it may use, don't apply.
+* Your site doesn't serve it. The AEM boilerplate's `.hlxignore` file excludes files and folders whose names start with a dot.
+* The console's [file views](console.md#code-view) don't show it. To review a skill, ask the agent to show it, or open it in GitHub.
 
-If your team maintains the repository outside the console, for example with other Claude-based tools in a local editor, it can commit skills to `.claude/skills/<skill-name>/SKILL.md` instead. The agent can then also load them from the checked-out repository, but you can't see or change them in the console.
+If your project already has skills in a visible folder that `AGENTS.md` indexes, they keep working. To have them load natively, ask the agent to move them to `.claude/skills/`, add the header, and remove the index lines.

@@ -236,7 +236,7 @@ The **Code views** provides tools for browsing your project files and managing c
 
 >[!NOTE]
 >
->The file views don't show files and folders at the root of the repository whose names start with a dot, such as `.github/`, `.claude/`, or `.hlxignore`. The exceptions are `.gitignore`, `.agents/`, and folders that the agent manages. You can't stage or push changes to hidden items from the console. To change them, edit them in GitHub or in a local clone, then pull the code into the console.
+>The file views don't show files and folders at the root of the repository whose names start with a dot, such as `.github/`, `.claude/`, or `.hlxignore`. The exceptions are `.gitignore`, `.agents/`, and folders that the agent manages. You can't stage or push changes to hidden items from the console. The agent can push them when **Allow LLM to use my git credentials** is on in [**Settings**](#settings-page); ask it to commit and push the change. Otherwise, edit them in GitHub or in a local clone, then pull the code into the console. Pulling includes hidden items. This matters for [project skills](project-instructions.md#custom-skills), which belong in `.claude/skills/`.
 
 ![Code view](assets/code-view.png)
 
@@ -285,8 +285,9 @@ If you make a change to any value in any section, select **Save** to save those 
   * **Site base URL** - The origin URL of the website being migrated
 * **Agent permissions** - Control what the agent may access on your behalf. Each permission is off until you turn it on and save it. The agent uses a permission without receiving the credential itself. See [Security and Data Handling.](evaluate.md#security)
   * **Allow LLM to use my Adobe credentials for admin.hlx.page, Document Authoring, and repositories hosted outside GitHub** - In the **Adobe IMS permissions (admin.hlx.page & Document Authoring)** section. When enabled, the agent can read site configuration and metadata, read Experience Workspace (Document Authoring) content, and push to and pull from repositories hosted outside GitHub, using your Adobe credentials. `admin.hlx.page` is the admin API of Edge Delivery Services; `hlx` comes from Helix, the project name under which its architecture was developed. This does not approve publishing: the console stops the agent from uploading, previewing, or publishing unless your current message asks for it or you agree when the agent asks. The check reads your words, so it can't catch every phrasing; limit who can publish with the site's publish role.
-  * **Custom IMS Token (optional)** - Provide a token to use instead of your session token. IMS is Adobe's identity service, which issues the token for your Adobe ID session. Prefer a service account token over a personal token where possible.
-  * **Allow LLM to use my git credentials** - Where available, lets the agent push to and pull from your GitHub repositories on your behalf. If you don't see this setting, it isn't available to you yet; push the agent's changes yourself with **Sync** > **Push** > **Code**. When it's on, the agent can push to any repository and branch that your GitHub credentials can write to, including `main`. Your repository's branch protection still applies. This grants elevated access; use a scoped token if offered.
+  * **Custom IMS Token (optional)** - Provide a token for the agent to use instead of your session token. IMS is Adobe's identity service, which issues the token for your Adobe ID session. Prefer the token of a service account, also called a technical account, over a personal token where possible, so that the agent's access doesn't depend on your own account. Leave the field empty to use your session token; the section shows which token is in use.
+  * **Allow LLM to use my git credentials** - Where available, lets the agent push to and pull from your GitHub repositories on your behalf. If you don't see this setting, it isn't available to you yet; push the agent's changes yourself with **Sync** > **Push** > **Code**. When it's on, the agent can push to any repository and branch that your GitHub credentials can write to, including `main`. Your repository's branch protection still applies. This grants elevated access, so give the agent its own token.
+  * **Custom Git Token (optional, recommended)** - A personal access token for the agent to use instead of the workspace's Git credential. Create a fine-grained token scoped to only the repositories that the agent needs. Leave the field empty to use the workspace's existing credential.
 * **Credentials** allows you to specify a personal access token for Figma so the [agent can read your Figma designs.](prompting-guide.md#figma-block-migration) The Figma import add-on reads them through a Model Context Protocol (MCP) server, and the token is added to its requests to Figma without the agent receiving it. Figma issues and governs the token. It is unrelated to the design tokens, such as colors and spacing, that the agent reads from your designs.
   * The token requires the following read-only scopes:
     * `file_content:read`
@@ -297,7 +298,7 @@ If you make a change to any value in any section, select **Save** to save those 
     * `file_dev_resources:read`
     * `projects:read`
   * [See the Figma documentation](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens) for more information about setting up personal access tokens.
-* **Protected site authentication** - Configure a custom request header, HTTP Basic authentication, or bearer authentication so that the agent can read source pages that require sign-in or a secret header. See [Protected Site Authentication](#protected-site-authentication) for setup instructions.
+* **Protected site authentication** - Configure a custom request header, HTTP Basic authentication, or bearer authentication so that the agent can read source pages that require sign-in or a secret header, or call another service that needs a key, such as an API. See [Protected Site Authentication](#protected-site-authentication) for setup instructions, and [Credentials for Other Services](#other-services).
 * **Prompt coach** - Where available, controls the [prompt hints](#prompt-input) shown when a prompt is missing details, such as the page or the result you expect.
   * **Show prompt hints** turns the hints on or off.
   * Further options can check prompts on your device, which downloads a model to your browser. Turning such an option off removes the downloaded model.
@@ -343,6 +344,18 @@ Use scoped, least-privilege credentials, preferably a dedicated account with rea
 Verify one representative protected page before you start a catalog or batch run, and check that captures show the page content rather than a sign-in page.
 
 To remove access, select **Remove site** for the entry, then **Save**. Remove the entry when the migration is complete.
+
+#### Credentials for Other Services {#other-services}
+
+The same settings work for any service that the agent calls while it works, not only for source sites. Add an entry for the service's hostname, such as `api.example.com`, with the header or token that the service expects. You can add as many entries as you need, one for each hostname. The console adds the credential to every request that the agent makes to that hostname, including requests from the scripts and commands it runs. The AI model doesn't receive the credential, but the agent sees the service's responses.
+
+* Tell the agent that a credential is set up for the hostname and what the service is. The agent isn't informed about the entries in **Settings**, so it doesn't know about them otherwise.
+* The hostname must match exactly. Add `www.example.com` and `api.example.com` as separate entries. IP addresses and `localhost` can't be used.
+* The console adds a fixed header to each request. Services that expect a token in the URL, or a request signed for each call, need another approach.
+* Hosts that the console already authenticates, such as GitHub and Figma, keep using the console's own credentials.
+* Use a token with only the access that the task needs, and remove the entry when you no longer need it.
+
+These credentials serve the agent's work in the console. Your published site can't use them: a key that the live site needs belongs in a server-side service. See [Connect Services and Applications](block-development.md#integrations). For an example that connects the agent to a chat tool, see [Example: Updates in Slack](prompting-guide.md#slack-updates).
 
 ### Request Support {#request-support}
 

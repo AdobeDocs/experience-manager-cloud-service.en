@@ -38,7 +38,11 @@ These are answers to questions that users of the Experience Modernization Agent 
 
 ### How do I get access to the console? {#get-access}
 
-Request access to the Experience Modernization Console through your Adobe account manager. Auto mode, which is in early access, has its own access request at [`aemcoder.adobe.io/auto`](https://aemcoder.adobe.io/auto). See [Access and AI Credit Usage](getting-started.md#access).
+Request access to the Experience Modernization Console through your Adobe account manager. Auto mode opens at [`aemcoder.adobe.io/auto`](https://aemcoder.adobe.io/auto); if your account doesn't have it yet, that page lets you sign up. See [Access and AI Credit Usage](getting-started.md#access).
+
+### I belong to several Adobe organizations. Which workspace do I get? {#organizations}
+
+A separate one in each organization that you sign in with. Projects and chats in one organization don't appear in another. To switch, sign out, then sign in and choose the other organization's profile. See [Open the Experience Modernization Console](getting-started.md#open-console).
 
 ### Can I use a new or personal Adobe ID? {#adobe-id}
 
@@ -68,7 +72,7 @@ Not during a run. Once a run starts, it doesn't ask for your input; you choose i
 
 ### How many pages does Auto mode migrate? {#auto-mode-pages}
 
-When you are granted Auto mode access, each migration can include up to 10 pages by default. A full-site run migrates a preview of up to that many pages, not the whole site. Use **Ask for a higher limit** to request more, and import further pages later in the console. See [Auto Mode Limits](getting-started.md#auto-mode-limits).
+By default, each migration can include up to 10 pages. A full-site run migrates a preview of up to that many pages, not the whole site. Use **Ask for a higher limit** to request more, and import further pages later in the console. See [Auto Mode Limits](getting-started.md#auto-mode-limits).
 
 ### How long does an Auto mode run take? {#auto-mode-duration}
 
@@ -94,11 +98,11 @@ No. The transfer copies code, pages, and the media that pages reference. It does
 
 ### How do I use Plan mode? {#plan-mode}
 
-Switch the prompt input to Plan mode, with the light bulb icon, and describe your task. The agent proposes an approach and a checklist without changing files. Select **Execute plan** to carry it out. Plan mode is available at any time; you don't need to catalog a site first. See [Prompt Input](console.md#prompt-input).
+Switch the prompt input to Plan mode, with the light bulb icon, and describe your task. The agent proposes an approach and a checklist without changing files. Select **Execute plan** to carry it out. Plan mode is available at any time; you don't need to catalog a site first. It is unrelated to the **Planning** view, which shows the [site catalog](site-catalog.md). See [Prompt Input](console.md#prompt-input).
 
 ### Why don't I see the Planning view? {#planning-view}
 
-**Planning** is always in the view picker of the workspace panel, under **Project**; you don't need to turn it on. Before you catalog a site, it asks for the site's address. See [Accessing the Site Planning UI](site-catalog.md#accessing-planning-ui).
+**Planning** is always in the view picker of the workspace panel, under **Project**; you don't need to turn it on. It shows the site catalog, the inventory of templates, pages, and blocks that you review before migrating. Before you catalog a site, it asks for the site's address. See [Accessing the Site Planning UI](site-catalog.md#accessing-planning-ui).
 
 ### Can I switch between several migration plans? {#several-plans}
 
@@ -114,7 +118,7 @@ Yes. The agent groups pages into templates, migrates one representative page for
 
 ### How should we plan a large migration? {#plan-large-migration}
 
-Start with the [site catalog](site-catalog.md) to see the templates and how many pages each one has. Validate the representative pages before you import the rest. The console workspace holds one connected site at a time, and [switching site](getting-started.md#connect-repo) replaces it, so plan the order of sites in a program with several sites and push and upload each site's work before you switch. For your organization's AI credit entitlement, contact your Adobe account team. For assisted delivery, see [AOE Delivery](aoe-delivery.md).
+Start with the [site catalog](site-catalog.md) to see the templates and how many pages each one has. Validate the representative pages before you import the rest. For a very large site, such as one with tens of thousands of pages, first ask the agent to propose how to divide the migration, then catalog the sections that you choose rather than the whole site. See [Invoking](site-catalog.md#invoking). The console workspace holds one connected site at a time, and [switching site](getting-started.md#connect-repo) replaces it, so plan the order of sites in a program with several sites and push and upload each site's work before you switch. For your organization's AI credit entitlement, contact your Adobe account team. For assisted delivery, see [AOE Delivery](aoe-delivery.md).
 
 ## Blocks {#blocks}
 
@@ -228,7 +232,7 @@ When you first open the console, or after a reset, it sets up your console works
 
 ### What if my project seems to be missing? {#missing-project}
 
-Sign in with the same Adobe account and organization that you used before. Don't reset the workspace while you investigate, because a reset permanently deletes it. If the project is still missing, request support. See [Project Seems Missing](troubleshooting.md#missing-workspace).
+Sign in with the same Adobe account and organization that you used before. Each organization has its own workspace, so if you belong to several, check that you chose the right organization's profile. Don't reset the workspace while you investigate, because a reset permanently deletes it. If the project is still missing, request support. See [Project Seems Missing](troubleshooting.md#missing-workspace).
 
 ### What happens to my work if I reload the page or leave? {#reload}
 
@@ -256,6 +260,14 @@ The console couldn't deliver your prompt to the agent, and the message doesn't g
 
 No. Never type, paste, or attach passwords, API keys, tokens, or other secrets in the chat. Everything there reaches the AI model, and the agent can copy it into project files that you push to Git, from where the site delivers them to every visitor's browser. Enter the credentials that the agent needs in the console's [**Settings**](console.md#settings-page). An API key that the live site needs belongs in a server-side service, not in the repository. If you've shared a secret, revoke or replace it right away. See [Keep Secrets Out of the Chat](prompting-guide.md#secrets).
 
+### How can the agent call an API that needs a key while it works? {#api-credentials}
+
+Add the key in **Settings** > **Protected site authentication**, as an entry for the API's hostname, and tell the agent that a credential is set up for it. The console adds the key to the agent's requests to that hostname, and the AI model doesn't receive it. This works for any service that accepts a fixed header, such as a test API or a chat tool. See [Credentials for Other Services](console.md#other-services).
+
+### Can the agent use its own token instead of my account? {#agent-tokens}
+
+Yes. Under **Settings** > **Agent permissions**, enter a token in **Custom IMS Token**, preferably that of an Adobe service account, and, where the Git permission is available, a fine-grained personal access token scoped to the repositories that the agent needs in **Custom Git Token**. Left empty, the permissions use your own sign-in. See [Settings Page](console.md#settings-page).
+
 ### Which AI model does the agent use? {#model}
 
 The agent currently uses Claude models. The model is an implementation detail that can change. See [What the AI Model Processes](evaluate.md#security-model-data).
@@ -266,7 +278,7 @@ Adobe does not use your conversations or other customer data to train or fine-tu
 
 ### What data reaches the AI model, and which systems does the agent connect to? {#data-flows}
 
-The Experience Modernization Agent sends your prompts, source page content, repository code, design references, and the generated content and code to the AI model. It connects to your Git repository, Experience Workspace or your author instance, the source site, and Figma when you use it. The AI agent doesn't receive the credentials that you configure. See [Security and Data Handling](evaluate.md#security).
+The Experience Modernization Agent sends your prompts, source page content, repository code, design references, and the generated content and code to the AI model. It connects to your Git repository, Experience Workspace or your author instance, the source site, Figma when you use it, and other services that you set up credentials for. The AI agent doesn't receive the credentials that you configure. See [Security and Data Handling](evaluate.md#security).
 
 ### Is there an audit log of what the agent did? {#audit-trail}
 
@@ -294,13 +306,25 @@ Complex enterprise sites. Each page is standard HTML, CSS, and JavaScript, so a 
 
 No. Its skills and instructions focus on Edge Delivery Services, but it is a general-purpose coding agent. It can connect your site to other systems, adapt an existing application, and write the code of a server-side service that your team deploys. It has no skills for those other systems, so give it their documentation and ask it to read it first. Then ask how the integration should work in Edge Delivery Services; the agent proposes an approach, and you work it out together. See [Work Beyond Edge Delivery Services](prompting-guide.md#beyond-eds).
 
+### Can the agent build integrations with other systems? {#integrations}
+
+Yes, and this is often overlooked. The agent writes the blocks and code that connect your site to commerce platforms, marketing technology, maps, video, search, and your own APIs, as any coding agent does. Give it the system's documentation and access to a test endpoint, and decide with your team how each integration should behave. Page import doesn't copy the source's scripts, apart from the supported analytics, tag manager, and consent settings that Auto mode's **Include integrations** carries over, switched off until you turn them on. Plan each integration as part of the project. See [Connect Services and Applications](block-development.md#integrations).
+
+### Can we teach the agent our own procedures? {#custom-skills}
+
+Yes. Write your conventions in `AGENTS.md`. For a recurring task that needs precise steps, add a project skill in `.claude/skills/<skill-name>/SKILL.md`; the agent reads it when a task matches its description. The console can't stage folders whose names start with a dot, so ask the agent to push the skill, with its Git permission turned on. See [Advanced: Custom Skills](project-instructions.md#custom-skills).
+
+### Can I change how the agent answers? {#reply-style}
+
+Yes. Write how you want answers in `AGENTS.md`, for example shorter answers, another language, or no suggested next steps. See [Change How the Agent Answers](project-instructions.md#reply-style).
+
 ### How does the agent relate to Experience Workspace? {#experience-workspace}
 
 Experience Workspace is where authors edit the document-based content that the agent uploads. From the console, **Edit in Experience Workspace** opens a page there. You work with the agent itself in the Experience Modernization Console, at [`aemcoder.adobe.io`](https://aemcoder.adobe.io): there it builds and changes the site's code, and imports and uploads its content. Experience Workspace has its own [assistant](https://www.aem.live/docs/ew/authoring/assistant), a chat panel in the editor for working on the content that you're editing. See [Content Views](console.md#content-view).
 
 ### Why can't the agent use a capability that I've heard about? {#capability-availability}
 
-Some capabilities are optional add-ons, which are off until they're turned on for the project. When your request needs one, the agent offers to turn it on. You can also ask it which add-ons are on, or ask for one by name. Auto mode needs its own access request. The capabilities on offer can change between releases. See [Optional Capabilities](console.md#optional-capabilities).
+Some capabilities are optional add-ons, which are off until they're turned on for the project. When your request needs one, the agent offers to turn it on. You can also ask it which add-ons are on, or ask for one by name. The capabilities on offer can change between releases. See [Optional Capabilities](console.md#optional-capabilities).
 
 ### How do I get help? {#help}
 

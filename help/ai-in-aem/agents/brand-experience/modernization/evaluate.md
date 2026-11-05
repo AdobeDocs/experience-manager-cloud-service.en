@@ -51,7 +51,7 @@ Without the agent, a migration to Edge Delivery Services starts with weeks of de
 | Content import | Writes an import script for each template, imports the pages in bulk, and compares them with their source pages. | Validates representative pages, reviews the import scripts as code, and accepts the imported pages. |
 | Images and documents | Uploads the images that a page uses together with the page. Leaves Dynamic Media images on Dynamic Media. | Checks alt text, image quality, and linked documents such as PDFs. See [Images and Documents](production-migration.md#assets). |
 | URLs and search metadata | Carries over page titles, descriptions, and social images. Derives each page's path from its source URL. | Decides the URL policy, and has the redirects, sitemaps, and language alternates built and checked. See [URLs, Redirects, and Search Metadata](production-migration.md#urls-seo). |
-| Integrations | Writes the blocks and code that call your APIs and services. Optional add-ons migrate forms and commerce pages. | Decides how each integration works, provides API access and documentation, and accepts the result. See [Connect Services and Applications](block-development.md#integrations). |
+| Integrations | Writes the blocks and code that call your APIs and services, for any system with a documented API, as a general-purpose coding agent does. Optional add-ons migrate forms and commerce pages. | Decides how each integration works, provides API access and documentation, and accepts the result. See [Connect Services and Applications](block-development.md#integrations). |
 | Review and release | Prepares code changes as pull requests that list preview URLs. | Developers review and merge, authors preview and publish, and the project lead runs acceptance and cutover. |
 | After go-live | Restyles the site, adds and refactors blocks, debugs, and documents the project. | Owns the site, its code, its content, and its operations. |
 
@@ -92,14 +92,15 @@ The console lets the agent work on your site without giving it the credentials t
 ### Access and Isolation {#security-access}
 
 * You sign in to the console with your Adobe ID. Every request is authenticated with Adobe Identity Management Services (IMS). Your Adobe account team manages your organization's access.
-* Each user works in a separate backend environment with its own workspace storage. Your workspace is not shared with other users.
+* Each user works in a separate backend environment with its own workspace storage, one in each Adobe organization that they sign in with. The console creates the environment when the user first signs in and pauses it when it's idle. Your workspace is not shared with other users.
 * The console has no project roles. Anyone with access can ask the agent for any change in their own workspace. Experience Manager and your Git provider continue to enforce their own permissions for any code or content that leaves the workspace.
 
 ### Credentials {#security-credentials}
 
 * The AI agent does not receive the credentials that you configure in the console. Tokens for GitHub, Cloud Manager Git repositories, Experience Workspace, Figma, and protected source sites are held outside the agent's environment. A separate component adds each credential only to requests for the service it belongs to. The same applies to the credential used to call the AI model.
 * Credentials belong to the user who configures them, not to the project. Each team member connects their own Git account and stores their own Figma token.
-* [Agent permissions](console.md#settings-page) are off until you turn them on. Turning one on lets the agent act with that access, for example to push to your repository, without seeing the credential. Use scoped, least-privilege tokens.
+* [Agent permissions](console.md#settings-page) are off until you turn them on. Turning one on lets the agent act with that access, for example to push to your repository, without seeing the credential. By default, a permission uses the user's own sign-in. To narrow what the agent can reach, enter a token for it instead: a fine-grained personal access token scoped to the repositories it needs, or the token of an Adobe service account.
+* Other services that the agent calls while it works, such as a test API, get their credential the same way, from an entry in **Protected site authentication** for the service's hostname. See [Credentials for Other Services](console.md#other-services).
 * Store credentials only in the console's settings. Do not put secrets in prompts, chat, source content, repository files, or project documentation. The agent reads these, and they can be sent to the AI model.
 * Make this part of onboarding. People who are new to coding agents may paste a password or key into the chat to get a task done. Ask everyone who uses the console to read [Keep Secrets Out of the Chat](prompting-guide.md#secrets) first, and tell them what your organization's policy allows them to share with AI tools. The agent is instructed not to use a secret pasted in the chat and to ask for it to be replaced. That doesn't undo the exposure: the secret has already reached the AI model, and it must be revoked or replaced.
 
