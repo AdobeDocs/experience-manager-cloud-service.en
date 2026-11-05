@@ -95,6 +95,8 @@ For a new implementation, Adobe strongly recommends document-based persistence w
 
 Page import copies each page's content and design. Integrations and CMS features run on the source's servers, such as search, form processing, personalization rules, and content inheritance, so import copies only their output on each page. List them under **Behavior** and decide how each works on the new site. See [Limitations](overview.md#limitations).
 
+A console workspace works on one site at a time. In a program with several sites, agree their order, and push and upload each site's work before you open the next one with **Switch site**.
+
 ### Relaunch a Site That Runs on Experience Manager {#relaunch-aem-site}
 
 When your team has decided to relaunch a site that runs on Experience Manager Sites today, the workflow is the same as for any other source. These points are specific to that case:
