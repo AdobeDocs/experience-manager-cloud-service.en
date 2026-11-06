@@ -1,6 +1,6 @@
 ---
 title: Mask Numeric Values
-description: Learn how to mask numeric values in the Interactive Communication Editor with predefined or custom display patterns and verify the masked canvas output.
+description: Learn how to mask numeric values in the AEM Forms Interactive Communication Editor using predefined or custom display patterns and check the canvas output.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User
@@ -8,13 +8,25 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms."
 hide: true
 ---
 
-# Mask numeric values {#mask-numeric-values}
+# Mask numeric values in AEM Forms {#mask-numeric-values}
 
-Use numeric display patterns to mask values in the Interactive Communication Editor in Adobe Experience Manager (AEM) Forms. You can leave selected trailing digits visible or use a custom pattern to mask all significant digits. Display masking changes the presentation, not the underlying value.
+Numeric display masking in the Interactive Communication Editor in Adobe Experience Manager (AEM) Forms replaces selected digits with asterisks (`*`) on the design canvas. It changes the displayed presentation, not the underlying numeric value. Apply a display pattern to a Numeric Field to keep selected trailing digits visible or mask all significant digits.
 
-For example, use masked presentation for credit card details instead of displaying the complete number on the canvas.
+This is useful for communications that contain numeric identifiers, such as credit card numbers, account numbers, or numeric policy references. For example, a customer with multiple cards can recognize the relevant card from its last four digits without seeing the full card number. An account statement can use the same approach to identify the account associated with a balance or transaction.
 
-## Prerequisites
+The following examples use the synthetic value `1234567812345678`:
+
+| Example | Displayed value | What it shows |
+|---------|-----------------|---------------|
+| Credit card reference with grouped masking | `**** **** **** 5678` | The last four digits remain visible, with spaces separating the groups. |
+| Numeric account reference with custom partial masking | `************5678` | The first 12 digits are replaced with asterisks, and the last four remain visible. |
+| Numeric identifier with full masking | `****************` | All 16 digits are replaced with asterisks. |
+
+You configure masking through the Numeric Field's display type. The predefined masking option provides a grouped format with trailing digits visible. A custom pattern lets you specify which digit positions to mask or display. Check the canvas result against your intended output, especially when your data contains values of different lengths.
+
+Display masking is not encryption and does not protect stored or transmitted data. This article shows how to apply the predefined option, create custom partial and full masks, and verify the results using synthetic values.
+
+## 1. Prerequisites {#prerequisites}
 
 Before you begin, make sure you have:
 
@@ -24,11 +36,11 @@ Before you begin, make sure you have:
 
 Use synthetic test data rather than real credit card details.
 
-## Apply the masking pattern
+## 2. Apply numeric masking {#apply-the-masking-pattern}
 
 Choose the predefined pattern for its default masked presentation, or use a custom pattern to control which digit positions remain visible.
 
-### Select the predefined pattern
+### 2.1 Select the predefined pattern {#select-the-predefined-pattern}
 
 Use the predefined option to apply a masking pattern without entering a picture clause.
 
@@ -37,17 +49,27 @@ Use the predefined option to apply a masking pattern without entering a picture 
 1. In **[!UICONTROL Display type]**, select **[!UICONTROL \*\*\*\* 1234]**.
 1. Check the masked value on the canvas.
 
-### Enter a custom pattern
+![Numeric Field with the predefined masking option selected and a grouped canvas result showing the last four digits.](/help/forms/interactive-communication/assets/masking-preset-annotated.png)
 
-Use a custom numeric picture clause to leave selected trailing digits visible or mask all significant digits.
+| Label | Description |
+|-------|-------------|
+| **a** | **[!UICONTROL Value]:** The numeric value to format, shown as `1234567812345678`. |
+| **b** | **[!UICONTROL Display type]:** The predefined masking option, `**** 1234`. |
+| **c** | **Canvas result:** The masked value, `**** **** **** 5678`, with the last four digits visible. |
+
+### 2.2 Enter a custom pattern {#enter-a-custom-pattern}
+
+Use a custom numeric display pattern (picture clause) to leave selected trailing digits visible or mask all significant digits.
 
 1. Select the Numeric Field on the design canvas.
 1. Open **[!UICONTROL Properties]**.
 1. In **[!UICONTROL Display type]**, select **[!UICONTROL Custom]**.
-1. In **[!UICONTROL Pattern]**, enter a numeric picture clause from the examples below.
+1. In **[!UICONTROL Pattern]**, enter a numeric picture clause from the examples below. Enter only the expression, without surrounding backticks or quotation marks.
 1. Check the masked value on the canvas.
 
-For the synthetic value `1234567812345678`, these patterns produce the following results:
+For a 16-digit value, use `num{mmmmmmmmmmmm9999}` to show only the last four digits. For example, `1234567812345678` displays as `************5678`.
+
+The following table compares custom patterns for the same synthetic value:
 
 | Pattern | Result |
 |---------|--------|
@@ -55,15 +77,39 @@ For the synthetic value `1234567812345678`, these patterns produce the following
 | `num{mmmmmmmmmmmmmmm9}` | `***************8` |
 | `num{mmmmmmmmmmmmmmmm}` | `****************` |
 
-## Verify the masked value
+**Custom partial masking**
 
-Compare the canvas value with the expected result for your custom pattern. For the predefined pattern `num{mmmm mmmm mmmm mmmm zzz9}`, the synthetic value `12345678901234567890` displays as `**** **** **** **** 7890`.
+![Custom Numeric Field pattern masking the first 12 digits and leaving 5678 visible on the canvas.](/help/forms/interactive-communication/assets/masking-partial-annotated.png)
+
+| Label | Description |
+|-------|-------------|
+| **a** | **[!UICONTROL Value]:** The numeric value to format. |
+| **b** | **[!UICONTROL Display type]:** Select **[!UICONTROL Custom]** to enter your own masking pattern. |
+| **c** | **[!UICONTROL Pattern]:** Enter `num{mmmmmmmmmmmm9999}` to mask the first 12 digits and display the last four. |
+| **d** | **Canvas result:** The partially masked value, `************5678`. |
+
+**Custom full masking**
+
+![Custom Numeric Field pattern displaying all 16 digits as asterisks on the canvas.](/help/forms/interactive-communication/assets/masking-full-annotated.png)
+
+| Label | Description |
+|-------|-------------|
+| **a** | **[!UICONTROL Value]:** The numeric value to format. |
+| **b** | **[!UICONTROL Display type]:** Select **[!UICONTROL Custom]** to enter your own masking pattern. |
+| **c** | **[!UICONTROL Pattern]:** Enter `num{mmmmmmmmmmmmmmmm}` to mask all 16 digits. |
+| **d** | **Canvas result:** The fully masked value, `****************`. |
+
+## 3. Verify the masked value {#verify-the-masked-value}
+
+Compare the canvas value with the expected result for your custom pattern. For the predefined pattern `num{mmmm mmmm mmmm mmmm zzz9}`, the synthetic value `1234567812345678` displays as `**** **** **** 5678`.
 
 Check representative values from your data, including the shortest and longest values, before using the pattern.
 
-## Pattern considerations
+## 4. Numeric masking symbols and limits {#pattern-considerations}
 
-The symbols in a numeric picture clause determine which digit positions are masked or displayed.
+The symbols in a numeric picture clause determine which digit positions are masked or displayed. In `num{mmmmmmmmmmmm9999}`, the 12 `m` positions mask the first 12 digits of a 16-digit value, and the four `9` positions keep the last four digits visible.
+
+The `z` symbol appears in the predefined pattern, `num{mmmm mmmm mmmm mmmm zzz9}`, but is not needed in the custom examples.
 
 | Symbol | Meaning |
 |--------|---------|
@@ -74,7 +120,7 @@ The symbols in a numeric picture clause determine which digit positions are mask
 Keep these considerations in mind when choosing a pattern:
 
 * Include enough digit positions for the longest value. Values exceeding the pattern's capacity display unchanged in the canvas.
-* Leading zeros can be suppressed; an all-zero value displays as `0`.
+* Leading zeros can be suppressed. The result for an all-zero value depends on required digit positions and literal separators. For example, `num{mmmmmmmmmmmmmmmm}` displays `0`, while `num{mmmmmmmmmmmm9999}` displays `0000`.
 * Spaces and hyphens in a pattern remain in the displayed result.
 * If the preset is unavailable for the [selected locale](/help/forms/interactive-communication/support-localization.md), enter its picture clause using **[!UICONTROL Custom]**.
 * These examples mask integer values, not decimal digits.
@@ -83,7 +129,27 @@ Keep these considerations in mind when choosing a pattern:
 >
 > Do not rely on display masking to protect stored or transmitted payment information.
 
-## Related tasks
+## 5. Numeric masking FAQs {#numeric-masking-faqs}
+
+These answers clarify custom pattern entry and common masking checks.
+
+### 5.1 Where do custom patterns go? {#where-do-custom-patterns-go}
+
+Enter the complete numeric picture clause in the **[!UICONTROL Pattern]** field after selecting **[!UICONTROL Custom]** in **[!UICONTROL Display type]**. See [Enter a custom pattern](#enter-a-custom-pattern) for instructions and examples.
+
+### 5.2 Why is the value unmasked? {#why-is-the-value-unmasked}
+
+Check that the pattern contains only the intended expression, without copied backticks or quotation marks. Enter the complete expression, for example `num{mmmmmmmmmmmm9999}`. Values exceeding the pattern's digit capacity display unchanged. Check the input length against the available digit positions. See [Numeric masking symbols and limits](#pattern-considerations).
+
+### 5.3 How do I mask every digit? {#how-do-i-mask-every-digit}
+
+Use a custom pattern with an `m` position for each integer digit you want to mask. Match the pattern to the expected input length and check the canvas result. See the full-masking example in [Enter a custom pattern](#enter-a-custom-pattern).
+
+### 5.4 Does masking change the stored value? {#does-masking-change-the-stored-value}
+
+No. Numeric display masking changes the displayed presentation, not the underlying numeric value. It is not encryption and does not protect stored or transmitted data.
+
+## 6. Related tasks {#related-tasks}
 
 For related field configuration tasks, see:
 
