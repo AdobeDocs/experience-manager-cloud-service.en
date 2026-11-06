@@ -42,6 +42,8 @@ Modern content is created by agents, LLMs, automated pipelines, and authors in A
 
 Experience Workspace is a lightweight, documented-oriented authoring surface featuring powerful features such as translation, multi-site management, and snapshots and is recommended for all new projects.
 
+To learn more about Experience Workspace, please see the document [About Experience Workspace.](https://www.aem.live/docs/ew/about)
+
 ## WYSIWYG Authoring using the Universal Editor {#universal-editor}
 
 The Universal Editor is a modern UI that allows you to author AEM content in a content-agnostic way and is the first choice for AEM projects leveraging Edge Delivery Services.
