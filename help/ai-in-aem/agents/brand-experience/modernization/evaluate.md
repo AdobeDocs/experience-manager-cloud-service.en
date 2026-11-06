@@ -175,7 +175,7 @@ Figma can be the source of a new design. With the Figma import add-on, the agent
 
 What to approve:
 
-* **Access:** Each person who uses Figma with the agent creates a Figma personal access token with read-only scopes and stores it in the console's [settings](console.md#settings-page). Figma issues and governs this access token, which has nothing to do with design tokens. There is no organization-wide Figma connection, and a personal access token can't be limited to specific files: it reads every file that its owner can open. The token is added to the MCP server's requests to Figma, and the agent never receives it.
+* **Access:** Each person who uses Figma with the agent creates a Figma personal access token with read-only scopes and stores it in the console's [settings](console.md#settings-page). Figma issues and governs this access token, which has nothing to do with design tokens. There is no organization-wide Figma connection, and a personal access token can't be limited to specific files: it reads every file that its owner can open.
 * **Seats and rate limits:** Figma limits how often a token can read files, based on the token owner's seat and the plan that owns the file. With a View or Collab seat, a token can read files through Figma's API only a few times a month, so people who use Figma with the agent need a Dev or Full seat. See Figma's [rate limits](https://developers.figma.com/docs/rest-api/rate-limits/).
 * **Data:** For the selected frame or component, the agent sends its structure, a screenshot, its variables, and its text to the AI model. See [What the AI Model Processes](#security-model-data).
 

@@ -27,7 +27,7 @@ role_v2:
 
 # Plan a Migration with the Site Catalog {#site-catalog-skill}
 
-The site catalog of the Experience Modernization Agent lists the pages of a site that you're authorized to migrate, and groups them before anything is imported. Pages that share a layout of blocks form a template. Similar blocks across pages form a block variant: a version of a block with its own content structure or look. With this grouping, you migrate and check one sample page per template, then import the rest of the template in bulk. The templates, blocks, and locales that the catalog finds also give you an [estimate of the project](production-migration.md#estimate), and its report can be shared with stakeholders who don't use the console.
+The site catalog of the Experience Modernization Agent lists the pages of a site that you're authorized to migrate, and groups them before anything is imported. Pages that share a layout of blocks form a template. Similar blocks across pages form a block variant: a version of a block that differs in content structure or look. On import, a variant whose fields differ becomes a [block of its own](production-migration.md#content-structure). With this grouping, you migrate and check one sample page per template, then import the rest of the template in bulk. The templates, blocks, and locales that the catalog finds also give you an [estimate of the project](production-migration.md#estimate), and its report can be shared with stakeholders who don't use the console.
 
 The catalog reads the source site and imports nothing. For the whole migration workflow, see [Migrate a Production Site](production-migration.md).
 

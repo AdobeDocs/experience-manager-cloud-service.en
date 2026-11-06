@@ -37,7 +37,7 @@ This guide gives example prompts for each task, with what the agent does and wha
 >
 >Never type, paste, or attach passwords, API keys, access tokens, or other secrets in the chat. Enter the credentials that the agent needs in the console's [**Settings**](console.md#settings-page). If you have already shared a secret, revoke or replace it now.
 
-The chat is not a safe place for a secret. Everything that you type or attach is sent to the AI model and kept in the conversation. The agent treats it like any other text: it can copy a value into a file of your project, such as a script or a configuration file. Once that file is pushed, the value stays in the repository's history, and everything in the repository is delivered to the browsers of your site's visitors. Credentials that you enter in **Settings** take a different path: the console adds each one only to requests for the service that it belongs to, and the agent never receives it. See [Credentials](evaluate.md#security-credentials).
+The chat is not a safe place for a secret. Everything that you type or attach is sent to the AI model and kept in the conversation. The agent treats it like any other text: it can copy a value into a file of your project, such as a script or a configuration file. Once that file is pushed, the value stays in the repository's history, and everything in the repository is delivered to the browsers of your site's visitors. Credentials that you enter in **Settings** never reach the agent. See [Credentials](evaluate.md#security-credentials).
 
 Keep these out of the chat, out of attachments, and out of project files:
 
@@ -113,7 +113,9 @@ For other systems, the agent has no skills, only general knowledge, which can be
 
 For example:
 
-> Read the developer documentation of [platform] at [URL], especially [topic]. Explain how our site could [goal] following Edge Delivery Services practice: what runs in the browser, what needs a server, and which secrets are involved. List your questions. Don't change any files yet.
+> Read the developer documentation of our store locator service at `https://developer.example.com/store-locator`, especially its search API. Explain how our site could show the nearest stores on `/stores` following Edge Delivery Services practice: what runs in the browser, what needs a server, and which secrets are involved. List your questions. Don't change any files yet.
+
+Replace the example service, URL, and path with your own.
 
 Setting up the other system, deploying a server-side service, and storing its secrets stay with your team and that system's administrators. For the integration patterns, see [Connect Services and Applications](block-development.md#integrations).
 

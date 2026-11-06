@@ -115,7 +115,9 @@ Provide the author task, example content, the behavior and design you want, [whe
 
 For example:
 
-> Create a testimonials block for [authoring target]. Start from these real content examples: [paths]. Check existing blocks first. Authors need to edit quote, attribution, and optional image without layout configuration. Use our tokens. Include long text and no-image examples. Do not upload, push, or publish.
+> Create a testimonials block for our document-based pages. Start from these real content examples: `/about` and `/customers`. Check existing blocks first. Authors need to edit quote, attribution, and optional image without layout configuration. Use our tokens. Include long text and no-image examples. Do not upload, push, or publish.
+
+Replace the example paths with your own.
 
 The result is reusable code, a model where authors need one, and example content that authors can edit.
 
@@ -195,7 +197,9 @@ Tell the agent:
 
 For example:
 
-> First read [platform]'s documentation on form submissions at [URL]. Then connect the form on /contact to [platform] form [form ID] at [endpoint or service URL]. Map first name, last name, email, company, and country to the platform fields [field names]; email and company are required. Add hidden fields for the lead source "Website", the page URL, and the UTM parameters of the visit. Show this consent checkbox, unchecked: [approved text]. After a successful submission, show [confirmation message]; if it fails, keep the visitor's entries and show an error with a retry. Test against [sandbox]. Do not upload, push, or publish.
+> First read our CRM's documentation on form submissions at `https://developer.example.com/forms`. Then connect the form on `/contact` to the CRM form `contact-us` at `https://forms.example.com/submit/contact-us`. Map first name, last name, email, company, and country to the CRM fields `FirstName`, `LastName`, `Email`, `Company`, and `Country`; email and company are required. Add hidden fields for the lead source "Website", the page URL, and the UTM parameters of the visit. Show this consent checkbox, unchecked: "I agree to receive product news by email." After a successful submission, show "Thank you, we'll be in touch."; if it fails, keep the visitor's entries and show an error with a retry. Test against the CRM's sandbox at `https://sandbox.example.com`. Do not upload, push, or publish.
+
+Replace the example URLs, names, and wording with your own.
 
 The agent updates the form definition and the form block's code. It can also write the code of a server-side service, which your team deploys with the secret. In the receiving platform, its administrator configures:
 
@@ -231,7 +235,9 @@ Provide the block name, current examples/variants, requested change, and compati
 
 For example:
 
-> Update `cards` so the approved secondary-link variant works on [test paths]. Preserve existing default and image variants and their authored content. Check keyboard interaction and mobile wrapping. Do not rewrite other pages or upload content.
+> Update `cards` so the approved secondary-link variant works on `/products` and `/blog`. Preserve existing default and image variants and their authored content. Check keyboard interaction and mobile wrapping. Do not rewrite other pages or upload content.
+
+Replace the example paths with your own.
 
 Hand over the changed behavior, affected variants, author instructions, and any required content changes.
 
@@ -247,7 +253,9 @@ Refactoring improves implementation while preserving agreed behavior. It is not 
 
 For example:
 
-> Refactor duplicated card-decoration logic in [blocks/files]. Preserve authored models, output semantics, appearance, link behavior, keyboard access, and analytics hooks. Use [paths] as regression examples. Report compatibility risks and test results. Do not migrate content or push changes.
+> Refactor duplicated card-decoration logic in `blocks/cards/cards.js` and `blocks/teaser/teaser.js`. Preserve authored models, output semantics, appearance, link behavior, keyboard access, and analytics hooks. Use `/products` and `/blog` as regression examples. Report compatibility risks and test results. Do not migrate content or push changes.
+
+Replace the example paths with your own.
 
 There is no separate refactoring command: you ask in chat, and the agent changes the code as a developer would, within the limits you set.
 

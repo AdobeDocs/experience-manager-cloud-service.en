@@ -60,7 +60,9 @@ Use this path when content comes from an existing website but the target design 
 
 For example:
 
-> Apply the approved design at [Figma node or reference URL] while migrating [source URLs]. The live pages are the content source; the reference defines the new appearance. Preserve text, links, metadata, and meaningful images. Check one sample page first. Create content that authors can edit in [Experience Workspace or Experience Manager authoring]. Do not upload, push, or publish.
+> Apply the approved design at `https://www.figma.com/design/AbC123/Brand-Refresh?node-id=12-345` while migrating `https://www.example.com/products/tents`. The live pages are the content source; the reference defines the new appearance. Preserve text, links, metadata, and meaningful images. Check one sample page first. Create content that authors can edit in Experience Workspace. Do not upload, push, or publish.
+
+Replace the example URLs with your own, and for Experience Manager authoring, say that the content is stored in the JCR.
 
 If a new page has no source website, see [Create a New Page from Figma](prompting-guide.md#figma-new-page-from-figma): a specific frame supplies the text and assets as well as the design. This is different from mapping existing website content into a new design.
 
@@ -72,7 +74,9 @@ A new migration is not required.
 1. Identify baseline pages covering the affected templates and variants. Record their current appearance and important interactions.
 1. State the scope of the change and what must stay. For example:
 
-   > Restyle this existing project using [approved reference]. Change global colors and typography and the cards presentation on [paths]. Preserve content, URLs, models, analytics, keyboard behavior, and integrations. Reuse our tokens and blocks. Show the proposed scope first; do not reimport content or upload, push, or publish.
+   > Restyle this existing project using the approved design at `https://www.figma.com/design/AbC123/Brand-Refresh`. Change global colors and typography and the cards presentation on `/` and `/products`. Preserve content, URLs, models, analytics, keyboard behavior, and integrations. Reuse our tokens and blocks. Show the proposed scope first; do not reimport content or upload, push, or publish.
+
+   Replace the example URL and paths with your own.
 
 1. Update shared tokens and global styles first where the change is global. Apply block-specific styling only where needed.
 1. Preview all affected sample pages, not only the page used to derive the design. Include mobile widths, long headings, missing optional content, and different variants. A global token change can affect pages outside the original example, so include those too.

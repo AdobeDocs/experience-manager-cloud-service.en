@@ -75,7 +75,7 @@ The console steps are the same as in the [main guide](getting-started.md). Only 
    ![Content imported](assets/content-imported-aem-authoring.png)
 
 1. [Validate the content](#validate-content), [upload it](#upload-content) as a content package, and [check that authors can edit and preview it](#preview-site).
-1. [Request styling and push the code](getting-started.md#guided-import) as in the main guide.
+1. Request styling, as in the styling steps of [Import a Page Step by Step](getting-started.md#guided-import), and [push the code](getting-started.md#push-code-changes).
 
 ## Validate Content {#validate-content}
 
@@ -127,7 +127,7 @@ Review and [push the matching code and configuration](getting-started.md#push-co
 1. Open it in the Universal Editor. Verify that expected fields and blocks can be selected and edited, not merely rendered.
 1. Change some text and an image, save, and reopen the page. Confirm that the content and asset references persist.
 1. Use the project's configured preview workflow (preview pages are served on `*.aem.page`). Verify the page against the intended code branch and check responsive layout, links, and images.
-1. For production, complete the [checks before release](production-migration.md#acceptance) and follow your project's publication process.
+1. For production, complete the [checks before release](production-migration.md#acceptance), then publish the pages from the Universal Editor or the Sites console. See [Publishing Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md).
 
 Successful package upload, successful authoring, preview, and publication are distinct checkpoints. If editing fails, revisit model mappings and generated configuration; do not accept a static preview as completion.
 

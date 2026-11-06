@@ -23,9 +23,7 @@ role_v2:
 
 # Make Visual Changes with the Experience Modernization Agent {#visual-changes}
 
-This guide is for designers and others who change how a site looks: colors, fonts, spacing, and the layout of its blocks. You describe a change to the Experience Modernization Agent in the Experience Modernization Console, check it in the preview, and send it to a developer for review. You don't need to write code or know how the project is built.
-
-If a term is new to you, see [Words Used in This Guide](#glossary).
+This guide is for designers and others who change how a site looks: colors, fonts, spacing, and the layout of its blocks. You describe a change to the Experience Modernization Agent in the Experience Modernization Console, check it in the preview, and send it to a developer for review. The agent writes the code, so you don't need to write CSS or JavaScript. Your changes reach the site through its Git repository, though, so you need the basics: you push your work to a branch and hand it over in a pull request. If these terms are new to you, see [Words Used in This Guide](#glossary).
 
 ## Before You Start {#before-you-start}
 
@@ -99,7 +97,7 @@ The agent can read a design from Figma through the Figma import add-on. It turns
 Things to know:
 
 * **One component or frame at a time.** The agent builds one block from a component, or one page from a frame. Check each result before you send the next link. See [Create a Block from Figma](prompting-guide.md#figma-block-migration) and [Create a New Page from Figma](prompting-guide.md#figma-new-page-from-figma).
-* **Your token, your files.** The personal access token reads every Figma file that you can open, and nothing else. Figma issues it and sets its limits. Each person stores their own token; the agent never receives it. It has nothing to do with design tokens, the colors and spacing that the agent reads from the design.
+* **Your token, your files.** The personal access token reads every Figma file that you can open, and nothing else. Figma issues it and sets its limits. Each person stores their own token. It has nothing to do with design tokens, the colors and spacing that the agent reads from the design.
 * **Your Figma seat.** You need a Dev or Full Figma seat; see [Figma and Design Systems](evaluate.md#figma). If the console reports a Figma API error with status 429, the token has reached Figma's [rate limit](https://developers.figma.com/docs/rest-api/rate-limits/).
 * **The add-on.** Figma import is an [optional capability](console.md#optional-capabilities). If it isn't on for your project, the agent offers to turn it on.
 * **Design tokens.** Compare the new tokens with the existing ones. Where a Figma value only differs slightly from an existing token, decide which one to keep rather than keep both.

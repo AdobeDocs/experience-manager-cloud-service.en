@@ -111,7 +111,9 @@ Cataloging reads the source and imports nothing. A run with the status **complet
 
 Start with one template and a few of its pages. For example:
 
-> Migrate only these product pages: [URLs]. Store the content [document-based or in Experience Manager authoring] at [destination paths]. Keep the approved text, links, metadata, and image meaning. Reuse the project's blocks and content conventions. Report missing content and interactions that the import doesn't reproduce. Do not upload, push, or publish.
+> Migrate only these product pages: `https://www.example.com/products/tents`, `https://www.example.com/products/backpacks`, and `https://www.example.com/products/boots`. Store the content as document-based content under `/products`. Keep the approved text, links, metadata, and image meaning. Reuse the project's blocks and content conventions. Report missing content and interactions that the import doesn't reproduce. Do not upload, push, or publish.
+
+Replace the example URLs and paths with your own, and for Experience Manager authoring, say that the content is stored in the JCR.
 
 1. Review the content structure: the sections, default content, blocks, variants, and section styles that the agent chose. Authors will edit every migrated page in this structure, so settle it on the sample pages. See [Shape the Content Structure](#content-structure).
 1. Compare imported text, links, images, metadata, and section order with the source. When a pattern is wrong, fix the import script, not the page. See [How the Agent Migrates at Scale](#migration-at-scale).

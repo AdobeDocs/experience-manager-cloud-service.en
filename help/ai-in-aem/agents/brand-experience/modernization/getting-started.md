@@ -34,7 +34,7 @@ In Edge Delivery Services, a site's code (blocks, styles, and scripts) lives in 
 
 In this guide, content is stored in the document-based content repository, where authors edit it in Experience Workspace, the visual authoring UI for Edge Delivery Services. If your content must stay in the JCR of an Adobe Experience Manager author instance, follow the [guide for Experience Manager authoring](getting-started-aem-authoring.md) for the steps that differ. To choose between the two, see [Where Content Is Stored and How Authors Edit It](overview.md#content-storage).
 
-You need access to the Experience Modernization Console through your Adobe account team, and migrating pages can consume AI credits. See [Access and AI Credit Usage](#access).
+You need access to the Experience Modernization Console, and migrating pages can consume AI credits. See [Access and AI Credit Usage](#access).
 
 ## Choose How to Start {#first-outcome}
 
@@ -79,8 +79,8 @@ An Auto mode run creates its site in an Adobe-managed location. To keep working 
 Prepare the destination first:
 
 * A site whose code is in a GitHub repository created from an Edge Delivery Services template, with the AEM Code Sync and AEM Code Connector apps installed. The quickest way is to [create a new site from the boilerplate](#prepare-repo). A repository on [another Git host](#other-git) that is connected through Cloud Manager can also be used.
-* A `main` branch in the repository, and the site's content stored in Experience Workspace. Nothing is transferred to a destination whose content is stored elsewhere, such as on an author instance.
-* Write access to the repository, and to the site's content in Experience Workspace for the Adobe account that you use in the console.
+* A `main` branch in the repository, and the site's content stored in the document-based content repository. Nothing is transferred to a destination whose content is stored elsewhere, such as on an author instance.
+* Write access to the repository and to the site's content, for the Adobe account that you use in the console.
 * A site other than the run's own site.
 
 To transfer the run:
@@ -179,7 +179,7 @@ If the console opens in demo mode, a **Demo site** button shows in the header. Y
 
 ## Connect Your Site {#connect-repo}
 
-Connect the site that you created from the boilerplate, transferred with **Make it yours**, or already had. If your console workspace has changes you want to keep, upload the content and push the code before you replace it.
+Connect the site that you created from the boilerplate, transferred with **Make it yours**, or already had.
 
 1. Select **Demo site** in the header and then **Switch site**, or use **Switch site** in [Settings](console.md#settings-page).
 1. This prompts you to authorize the AEM Code Connector app using your GitHub credentials. Select **Authorize AEM Code Connector**.
