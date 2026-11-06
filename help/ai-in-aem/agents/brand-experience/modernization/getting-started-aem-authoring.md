@@ -75,7 +75,7 @@ The console steps are the same as in the [main guide](getting-started.md). Only 
    ![Content imported](assets/content-imported-aem-authoring.png)
 
 1. [Validate the content](#validate-content), [upload it](#upload-content) as a content package, and [check that authors can edit and preview it](#preview-site).
-1. [Request styling and push the code](getting-started.md#guided-import) as in the main guide. Styling changes only CSS and JavaScript, so the uploaded content stays as it is.
+1. [Request styling and push the code](getting-started.md#guided-import) as in the main guide.
 
 ## Validate Content {#validate-content}
 

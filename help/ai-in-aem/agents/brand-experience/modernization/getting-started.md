@@ -52,7 +52,7 @@ Before you import, choose a few pages of a site that you are authorized to migra
 
 Auto mode migrates a website, or a list of its pages, without step-by-step prompting. In the [guided workflow](#guided-import), the agent stops after each step for your review. In Auto mode, it imports the content, migrates the design, critiques the result against the source, and keeps refining it until its critique finds the pages close to the source.
 
-Because it checks and refines its own work, Auto mode takes much longer than a guided import of the same pages, so it suits a first result that you collect later. Once a run starts, it doesn't ask for your input: you steer it only through the scope and options that you choose before you start. Auto mode starts from a website's URL, not from a repository; for a site that already runs on Edge Delivery Services, [bring your existing site](#existing-site). It produces document-based content; for content stored in the JCR, use the [guide for Experience Manager authoring](getting-started-aem-authoring.md).
+Because it checks and refines its own work, Auto mode takes much longer than a guided import of the same pages, so it suits a first result that you collect later. Once a run starts, it doesn't ask for your input: you steer it only through the scope and options that you choose before you start. Auto mode starts from a website's URL, not from a repository; if your site is already on Edge Delivery Services, [connect it](#existing-site) instead. It produces document-based content; for content stored in the JCR, use the [guide for Experience Manager authoring](getting-started-aem-authoring.md).
 
 1. Open [Auto mode](https://aemcoder.adobe.io/auto). If your account doesn't have it yet, select **Sign up**; you receive an email when your access is available.
 1. Provide your site URL, or choose selected pages and list their URLs. Review the scope, settings, and [limits](#auto-mode-limits) shown before you start.
@@ -247,7 +247,6 @@ Replace the example URLs and paths with your own.
 
 **A new site from the boilerplate:**
 
-* "scope site `https://www.example.com`", then [import a page step by step](#guided-import).
 * "Explain the sections and blocks on the home page, and which files style each one."
 * "Create a new page `/offers` from this Figma frame: `{Figma link}`." See [Create a New Page from Figma](prompting-guide.md#figma-new-page-from-figma).
 
@@ -259,7 +258,6 @@ Replace the example URLs and paths with your own.
 **Your existing site:**
 
 * "Give me a tour of this project: list its blocks, what each one does, and which pages use them."
-* Select an element with [Inspect mode](#inspect-mode) and describe how it should change.
 * "Add a variant of the cards block with a dark background, and show it on `/products`."
 * "Check whether this project has the `AGENTS.md` and `CLAUDE.md` files of the current AEM boilerplate, and add them if they're missing."
 
@@ -277,8 +275,7 @@ The agent's work stays in the console workspace until you save it elsewhere. Eac
 
 * **Upload** copies content from the console workspace to its authoring destination: Experience Workspace for document-based projects, or the author instance for Experience Manager authoring. In the **Sync** menu, this is **Push** > **Content**.
 * **Push** commits code to your Git repository, on the current branch or as a pull request.
-* **Preview** copies saved content to the preview site, `*.aem.page`.
-* **Publish** makes previewed content live on `*.aem.live`.
+* **Preview** and **Publish** put saved content on the preview site, `*.aem.page`, and then on the live site, `*.aem.live`.
 
 Upload and push separately. Edge Delivery Services stores content apart from code, so pushing code doesn't save your pages, and uploading doesn't save your code. Your first result is complete when you can reopen the page in Experience Workspace, edit it, and see the requested change on the preview site, not merely when a preview link exists.
 
@@ -313,7 +310,7 @@ Review the code diff and run the project's checks before pushing. Use a pull req
 1. Once complete, a notification appears at the bottom of the console.
    ![View PR](assets/view-pr.png)
 
-If a pull request was created, select **View PR** in the completion notification. Otherwise, verify the commit on the destination branch. For repositories connected through Cloud Manager, open the pull request in your Git host. If the branch is protected against direct pushes, push with **Create new PR**.
+If a pull request was created, select **View PR** in the completion notification. Otherwise, such as for a [repository connected through Cloud Manager](#other-git), verify the commit on the destination branch. If the branch is protected against direct pushes, push with **Create new PR**.
 
 ![Code in GitHub](assets/code-in-github.png)
 
@@ -338,7 +335,7 @@ The console doesn't merge branches or resolve conflicts itself. **Sync** > **Pul
 
 ### Preview Site {#preview-site}
 
-Previewing copies your saved content to the preview site, `*.aem.page`, where it renders with the code of the branch in the URL. This is different from the console's preview panel, which shows only the working copy in the console workspace. Publishing, a separate step, makes the content live on `*.aem.live`. To preview the uploaded pages:
+The console's preview panel shows only the working copy in the console workspace. To check the uploaded pages on the preview site with your code:
 
 1. Go back to Experience Workspace, or go to `https://da.live/#/{organization}/{repository}`.
 1. Open one of the pages that you previously uploaded.
@@ -372,7 +369,7 @@ A demo shows a few complete, branded pages of a site that you are authorized to 
 
 ## Access and AI Credit Usage {#access}
 
-Request access to the Experience Modernization Console through your Adobe account manager, and sign in with an Adobe ID that belongs to your company's Adobe organization. Auto mode needs no request: if your account doesn't have it yet, select **Sign up** at [`aemcoder.adobe.io/auto`](https://aemcoder.adobe.io/auto), and you receive an email when your access is available.
+Request access to the Experience Modernization Console through your Adobe account manager, and sign in with an Adobe ID that belongs to your company's Adobe organization. Auto mode needs no request through your account manager; sign up on its page, as in [Start with Auto Mode](#brand-trial).
 
 Signing in doesn't establish your organization's entitlement. Depending on your organization's agreement, migrating pages consumes AI credits:
 

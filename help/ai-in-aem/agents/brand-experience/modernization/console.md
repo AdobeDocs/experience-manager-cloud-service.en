@@ -255,7 +255,7 @@ If you make a change to any value in any section, select **Save** to save those 
 * **Agent permissions** - Control what the agent may access on your behalf. Each permission is off until you turn it on and save it. The agent uses a permission without receiving the credential itself. See [Security and Data Handling.](evaluate.md#security)
   * **Allow LLM to use my Adobe credentials for admin.hlx.page, Document Authoring, and repositories hosted outside GitHub** - In the **Adobe IMS permissions (admin.hlx.page & Document Authoring)** section. When enabled, the agent can read site configuration and metadata, read Experience Workspace content, and push to and pull from repositories hosted outside GitHub, using your Adobe credentials. `admin.hlx.page` is the admin API of Edge Delivery Services; `hlx` comes from Helix, the project name under which its architecture was developed. This doesn't approve publishing: the console stops the agent from uploading, previewing, or publishing unless you ask for it. See [Control over Changes](evaluate.md#security-control).
   * **Custom IMS Token (optional)** - Provide a token for the agent to use instead of your session token. IMS is Adobe's identity service, which issues the token for your Adobe ID session. Prefer the token of a service account, also called a technical account, over a personal token where possible, so that the agent's access doesn't depend on your own account. Leave the field empty to use your session token; the section shows which token is in use.
-  * **Allow LLM to use my git credentials** - Where available, lets the agent push to and pull from your GitHub repositories on your behalf. If you don't see this setting, it isn't available to you yet; push the agent's changes yourself with **Sync** > **Push** > **Code**. When it's on, the agent can push to any repository and branch that your GitHub credentials can write to, including `main`. Your repository's branch protection still applies. This grants elevated access, so give the agent its own token.
+  * **Allow LLM to use my git credentials** - Where available, lets the agent push to and pull from your GitHub repositories on your behalf. If you don't see this setting, it isn't available to you yet; push the agent's changes yourself with **Sync** > **Push** > **Code**. When it's on, the agent can push to any repository and branch that your GitHub credentials can write to, including `main`. [Branch protection](evaluate.md#security-control) in your repository still applies. This grants elevated access, so give the agent its own token.
   * **Custom Git Token (optional, recommended)** - A personal access token for the agent to use instead of the workspace's Git credential. Create a fine-grained token scoped to only the repositories that the agent needs. Leave the field empty to use the workspace's existing credential.
 * **Credentials** allows you to specify a personal access token for Figma so the [agent can read your Figma designs.](prompting-guide.md#figma-block-migration) The Figma import add-on reads them through a Model Context Protocol (MCP) server, and the token is added to its requests to Figma without the agent receiving it. Figma issues and governs the token, so the agent can read only the files that the token's owner can open. It is unrelated to the design tokens, such as colors and spacing, that the agent reads from your designs.
   * The token requires the following read-only scopes:
@@ -280,7 +280,7 @@ If you make a change to any value in any section, select **Save** to save those 
 
 Many sites show some pages only to signed-in visitors, keep a staging copy behind a password, or have a CDN that only lets through requests carrying a secret header. Use **Protected site authentication** to let the agent read such a source site when it accepts a custom request header, HTTP Basic authentication, or bearer authentication. You can then migrate those pages the same way as public pages.
 
-The source site must be reachable from the agent's hosted environment on the internet and configured to accept the authentication method you provide. This feature does not provide access through a VPN, does not bypass a firewall, and does not complete interactive sign-in flows such as single sign-on (SSO) forms or multi-factor authentication. If your source is only reachable on a private network, ask its administrator for an internet-reachable staging or origin host that accepts one of the supported methods.
+The source site must be reachable from the agent's hosted environment on the internet and configured to accept the authentication method you provide. This feature doesn't connect through a VPN, and it doesn't complete interactive sign-in flows such as single sign-on (SSO) forms or multi-factor authentication. A firewall lets the agent through when its administrator [allowlists the agent's addresses](troubleshooting.md#allowlist-ip-addresses). If your source is only reachable on a private network, ask its administrator for an internet-reachable staging or origin host that accepts one of the supported methods.
 
 >[!IMPORTANT]
 >
@@ -326,7 +326,7 @@ These credentials serve the agent's work in the console. Your published site can
 
 ## Request Support {#request-support}
 
-When something doesn't work as you expect, or you have a question that these pages don't answer, tell the team that builds the agent. Your request goes straight to that team, which looks into it and follows up by email. For a meeting with subject-matter experts or the product team, ask your Adobe customer success manager or account team. See [The Team Behind the Agent](evaluate.md#adobe-team).
+When something doesn't work as you expect, or you have a question that these pages don't answer, tell the team that builds the agent. Your request goes straight to that team, which looks into it and follows up by email. To meet subject-matter experts or the product team, see [The Team Behind the Agent](evaluate.md#adobe-team).
 
 1. Select **Request support** in the menu bar or on the Settings page. On small screens, the button shows only its icon.
 1. Optionally choose a **Topic**: **Layout / design**, **Missing content**, **Agent stuck**, or **Something else**.
@@ -334,11 +334,11 @@ When something doesn't work as you expect, or you have a question that these pag
 1. Optionally select recent prompts to attach, so that the team can see what you asked. None is attached unless you select it.
 1. Select **Send**.
 
-The request shares your name, email address, Adobe user and organization IDs, session ID, project name, and preview URL, and the Git host if you use GitHub Enterprise. That gives the team everything it needs to find your session's conversation and logs. Before your console workspace is set up, a request shares only your name, email address, and organization. You can send one request a minute.
+The request shares your contact details and the session details that the team needs to find your session's conversation and logs; see [Support Requests](evaluate.md#security-support) for the full list. You can send one request a minute.
 
 When the conversation suggests that you're stuck or frustrated, the prompt coach may offer help under **Need a hand?** Select **Contact support** to open the same request, or **No thanks** to carry on.
 
-On the Auto mode pages, the button is **Get help**. Use it to ask for more pages or more concurrent migrations, or to ask anything about Auto mode. Describe what you need in **How can we help?** and select **Send**. This request shares only your name and email address, and the team replies by email.
+On the Auto mode pages, the button is **Get help**. Use it to ask for more pages or more concurrent migrations, or to ask anything about Auto mode. Describe what you need in **How can we help?** and select **Send**. The team replies by email.
 
 ## What's New and Release Notes {#whats-new}
 

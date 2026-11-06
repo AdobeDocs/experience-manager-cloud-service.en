@@ -170,7 +170,7 @@ Yes, when the source accepts one of the authentication methods that the console 
 
 ### Can the agent reach a site behind a VPN, a firewall, or single sign-on? {#private-sources}
 
-No. The agent reaches a source only over the internet, from its hosted environment, and it can't complete an interactive sign-in such as single sign-on (SSO) or multi-factor authentication. Ask the site's administrator for a staging or origin host that the agent can reach; see [Protected Site Authentication](console.md#protected-site-authentication).
+Not through a VPN or an interactive sign-in. The agent reaches a source only over the internet, from its hosted environment, and it can't complete an interactive sign-in such as single sign-on (SSO) or multi-factor authentication. A firewall lets it through when the site's administrator [allowlists the agent's addresses](troubleshooting.md#allowlist-ip-addresses). Otherwise, ask the administrator for a staging or origin host that the agent can reach; see [Protected Site Authentication](console.md#protected-site-authentication).
 
 ## Destinations and Git {#destinations}
 

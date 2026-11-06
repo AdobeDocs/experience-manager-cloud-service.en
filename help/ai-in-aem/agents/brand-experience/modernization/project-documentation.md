@@ -82,6 +82,8 @@ Date the file and update it when the code, models, content, or deployment change
 
 ## Troubleshooting {#troubleshooting}
 
+When generation fails, fix the cause below, then generate the affected guide again and check it.
+
 ### "Access Denied", "Unauthorized", or "Config API Error" {#unauthorized}
 
 The agent can't read the site configuration through the admin API. Check that you have admin access to the site and that the credentials setting in the [prerequisites](#prerequisites) is on. If you don't need the configuration, ask for code-only guides instead.
@@ -89,5 +91,3 @@ The agent can't read the site configuration through the admin API. Check that yo
 ### "Project Not Found" {#not-found}
 
 The project's repository isn't checked out in your console workspace. Connect it as described in [Connect Your Site](getting-started.md#connect-repo).
-
-After you fix access or the project, generate the affected guide again and check it.

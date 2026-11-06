@@ -243,7 +243,7 @@ The block must come from a page migration. The agent fixes it as in the [site cr
 
 ### Create a Block from Figma {#figma-block-migration}
 
-Use these prompts to build one block from a Figma component. For the access token, the Figma seat that you need, and working one component at a time, see [Work from a Figma Design](visual-changes.md#figma).
+Use these prompts to build one block from a Figma component. [Work from a Figma Design](visual-changes.md#figma) covers the access token, the seat you need, and why to work one component at a time.
 
 * "Create a block from this Figma component: `{Figma link}`. Reuse our design tokens."
 * "Migrate the `pricing-card` component from the Figma file `{fileKey}`."

@@ -50,10 +50,10 @@ Before anyone can judge a migration to Edge Delivery Services, a developer has a
 * **A plan that you can see.** The [site catalog](site-catalog.md) inventories the source site and groups its pages into templates and blocks, with screenshots. Use it to scope and size the project and to decide what to migrate first.
 * **Fixes that scale.** The agent turns each correction into a change to a reusable block or import script, so a fix on one page applies to every page of that template. See [How the Agent Migrates at Scale](production-migration.md#migration-at-scale).
 * **A standard project that you own.** The result is plain Edge Delivery Services code in your Git repository that follows the conventions of the AEM boilerplate and the [Block Collection](https://www.aem.live/developer/block-collection). Developers can continue in the console, in their own editor, or with other AI tools. Nothing ties the site to the Experience Modernization Agent.
-* **Help after go-live.** The same agent restyles the site for a new brand, including from Figma designs, adds and refactors blocks, creates pages from existing blocks, debugs problems, and documents the project.
+* **Help after go-live.** The migration isn't the end of the agent's work. Your team keeps using it once the site is live: to apply a new brand design from Figma, build new pages from existing blocks, or track down a bug. See [Restyle Sites](restyling.md) and [Create, Update, and Refactor Blocks](block-development.md).
 * **Project knowledge that lasts.** The agent follows the conventions that you keep in `AGENTS.md` and related files in the repository, so every conversation starts with what your team has agreed. See [Project Instructions and Memory](project-instructions.md).
 * **Integrations with your other systems.** The agent doesn't only migrate pages. It writes the blocks and code that connect the site to the services it relies on, such as a commerce platform, marketing tools, a maps or video service, or your own APIs. It works on them as any coding agent does. See [Integrations](block-development.md#integrations).
-* **A team behind the product.** The team that builds the agent reads the support requests sent from the console and follows up. Through your Adobe customer success manager, you can also meet subject-matter experts and the product team. See [The Team Behind the Agent](evaluate.md#adobe-team).
+* **A team behind the product.** Support requests from the console go straight to the people who build the agent, and they follow up. See [The Team Behind the Agent](evaluate.md#adobe-team).
 
 The agent doesn't replace your judgment. You decide the scope, the target design, and the content model, and you validate the result before it goes live.
 
@@ -104,7 +104,7 @@ That control sits in your Git provider, not in the console, so it holds however 
 
 Code and content are stored and released separately, so pushing code never saves content, and uploading content never changes code. Pages are made of sections, default content, and blocks, and the content carries no styling, so the agent can give it a new design by changing only the code. For how the platform works, see the [Edge Delivery Services overview](/help/edge/overview.md) and [Markup, Sections, Blocks, and Auto Blocking](https://www.aem.live/developer/markup-sections-blocks). For how the agent structures imported content, and how you steer it, see [Shape the Content Structure](production-migration.md#content-structure).
 
-New sites start from the [AEM boilerplate](https://github.com/adobe/aem-boilerplate). For a commerce storefront, start from the [commerce boilerplate](https://experienceleague.adobe.com/en/tools/commerce-storefront/boilerplate/) instead: it already contains the commerce blocks and drop-in components, which are hard to add later to a project that started from the AEM boilerplate.
+New sites start from the [AEM boilerplate](https://github.com/adobe/aem-boilerplate). For a commerce storefront, start from the [commerce boilerplate](https://experienceleague.adobe.com/en/tools/commerce-storefront/boilerplate/) instead, because its commerce blocks are hard to add to a project later; see [Start from a Repository](getting-started.md#prepare-repo).
 
 Edge Delivery Services runs complex enterprise websites. Its pages are standard HTML, CSS, and JavaScript, so a block can call any API from the browser, such as search, commerce, or personalization, as on any other website. Spreadsheets publish as JSON and a query index lists the site's pages, so blocks can also build listings and filters from your own content. Business logic stays in the services that own it. Each integration is project work that you specify and test, and the agent can write its block code once you have decided how it should work. See [Build a Dynamic Block](block-development.md#dynamic-blocks). The agent's skills focus on Edge Delivery Services, but it isn't limited to them: point it to another system's documentation, and work out the integration with it. See [Work Beyond Edge Delivery Services](prompting-guide.md#beyond-eds).
 
@@ -136,18 +136,15 @@ Adobe has renamed several of these products, and they are often abbreviated. The
 
 | Name | What it refers to |
 |---|---|
-| Adobe Experience Manager (AEM) | Adobe's content management system. Edge Delivery Services is part of Experience Manager Sites. |
+| Adobe Experience Manager (AEM) | Adobe's content management system. |
 | Brand Experience Agent | The family of Experience Manager agents that the Experience Modernization Agent belongs to. |
 | Experience Modernization Agent (EMA) | The agent described in these docs. |
 | Experience Modernization Console | The web interface where you use the agent, at [`aemcoder.adobe.io`](https://aemcoder.adobe.io). |
-| Console workspace | Your project's hosted working copy in the console, where the agent imports content and changes code before you upload or push them. Labels such as **Checkout to workspace** and **Your workspace is paused** refer to it. It is unrelated to Experience Workspace. |
+| Console workspace | The working copy described in [Work Safely in an Independent Workspace](#independent-workspace). Console labels such as **Checkout to workspace** and **Your workspace is paused** refer to it. It is unrelated to Experience Workspace. |
 | Edge Delivery Services (EDS) | Experience Manager's website delivery service. The architecture was originally developed as Project Helix, later code-named Franklin, and older articles use those names. The `hlx` in hostnames such as `admin.hlx.page`, the admin API, comes from Helix. |
 | `*.aem.page`, `*.aem.live` | A site's preview and live URLs. Older projects and documentation may show the earlier domains, `hlx.page` and `hlx.live`. |
 | AEM Sidekick | The browser extension that authors use to preview and publish pages. |
-| AEM Code Sync | The GitHub app that lets Edge Delivery Services fetch your code to serve it. |
-| AEM Code Connector | The GitHub app that lets the console push changes and open pull requests in your repository. |
 | Experience Workspace | The visual authoring UI for document-based content, at `da.live`. It replaces Document Authoring (DA), and some console labels and screens still use that name. See [Document-Based Storage](#document-based). |
-| Universal Editor | Adobe's visual editor for content stored in Experience Manager. Projects with Experience Manager authoring use it. |
 | Experience Manager authoring | Edge Delivery Services with content stored in the Java Content Repository (JCR) of an Experience Manager as a Cloud Service author instance and edited in the Universal Editor. Also called AEM authoring, and previously Crosswalk. |
 | IMS | Adobe's identity service, which handles sign-in with your Adobe ID. |
 
@@ -160,7 +157,6 @@ The agent asks where the migrated content should be stored. Which repository hol
 | Where content is stored | The document-based content repository | The JCR of your author instance |
 | Visual editor | Experience Workspace | Universal Editor |
 | Page delivery | Edge Delivery Services | Edge Delivery Services |
-| Choose it | For any new implementation, including large sites | When a specific requirement depends on content staying in the JCR |
 
 ### Document-Based Storage with Experience Workspace {#document-based}
 
@@ -211,8 +207,7 @@ The agent works without receiving the credentials that you configure, each user 
 
 Use only websites and designs that you are authorized to migrate. The selected workflow must be able to reach and read the source. If the site uses bot protection, arrange access with its administrator. See [source sites with bot protection](troubleshooting.md#bot-protection).
 
-* Pages that require sign-in or a secret header can be migrated when the source accepts a custom request header, HTTP Basic authentication, or bearer authentication. Configure the credentials in the console's [Protected Site Authentication](console.md#protected-site-authentication) settings, or in the authentication fields of Auto mode. This is not intended for personally identifiable information (PII) or real end-user data.
-* Sources reachable only through a VPN or blocked by a firewall remain unsupported, even with valid credentials. So do sources that require another sign-in flow, such as an interactive single sign-on (SSO) form. Ask the site administrator for an internet-reachable staging or origin host that accepts a supported method.
+* The agent reads each source over the internet from its hosted environment. Pages that require sign-in or a secret header can be migrated when the source accepts one of the methods in [Protected Site Authentication](console.md#protected-site-authentication). That section also says what to ask the site's administrator for when a source can't be reached this way.
 * The agent loads each source page in a browser and reads it once it has rendered. That includes content that scripts insert and content that the page contains but CSS hides, such as a closed accordion panel. Content that appears only after a visitor clicks or types isn't in the page at that moment, so it isn't captured. Check such pages in the screenshots, and add the missing content after import or ask for a way to capture it.
 * The agent targets Edge Delivery Services, including sites that use [Experience Manager authoring](#jcr-persistence). It does not convert a project to HTL-based publishing or an API-only/SPA delivery stack.
 * Page import copies what the source page shows: its content and its design. It can't see how the source's servers produced that page. Content inheritance, reuse through content fragments, personalization rules, search, form processing, and other business logic run there, so import copies their output on that page, not the logic. The agent also rebuilds the markup rather than copying it, so the source's scripts, such as analytics and experimentation tags, don't come along. Auto mode's **Include integrations** option carries over supported analytics, tag manager, and consent settings. Decide how each of the others works on the new site; the agent can then build the blocks and code for it. See [What Remains Project Work](evaluate.md#project-work), and for forms, [Form Submissions](block-development.md#form-submissions).
@@ -220,6 +215,6 @@ Use only websites and designs that you are authorized to migrate. The selected w
 
 ## Next Steps {#next-steps}
 
-To begin, pick a guide in [Choose Where to Start](#start-by-role). For short answers to common questions, such as access, Auto mode, transfers, protected source sites, and recovery, see the [Experience Modernization Agent FAQ](faq.md). When something doesn't work as you expect, see [Troubleshooting](troubleshooting.md), or use **Request support** in the console, or **Get help** on the Auto mode pages, to reach the team that builds the agent. See [Request Support](console.md#request-support).
+To begin, pick a guide in [Choose Where to Start](#start-by-role). For short answers to common questions, such as access, Auto mode, transfers, protected source sites, and recovery, see the [Experience Modernization Agent FAQ](faq.md). When something doesn't work as you expect, see [Troubleshooting](troubleshooting.md) or [Request Support](console.md#request-support).
 
 To learn what changed in recent versions of the console, see the [Experience Modernization Agent release notes](/help/release-notes/modernization-agent/current.md).

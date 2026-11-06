@@ -83,7 +83,7 @@ The agent works in a hosted environment and reaches your systems only through co
 | Content destination | Stores the pages and images: Experience Workspace, or the author instance with Experience Manager authoring. Decide which before the migration; see [Where Content Is Stored and How Authors Edit It](overview.md#content-storage). | A person uploads content, or the agent does when that person has turned on the permission and asks for it. | Write access to the content, and the site's publish role. |
 | Source site | The content and design to migrate. | The agent loads pages in a browser as a visitor would, with credentials for protected pages where configured. | The site's owner, who authorizes the migration and controls access to the site. |
 | Figma (optional) | The target design, or the design of new pages. | Each user stores their own Figma personal access token in the console. | Figma's file permissions and the token owner's access. See [Figma and Design Systems](#figma). |
-| Edge Delivery Services | Serves the preview and live sites. | Fetches code from the repository and content from the content destination. | The site's configuration, and its author and publish roles. |
+| Edge Delivery Services | Delivers the site: the preview site on `aem.page` and the live site on `aem.live`. | Fetches code from the repository and content from the content destination. | The site's configuration, and its author and publish roles. |
 
 ## Security and Data Handling {#security}
 
@@ -122,8 +122,8 @@ The agent works in your console workspace, where you review its changes and the 
 | Step | Who can do it | What controls it |
 |---|---|---|
 | Push code to your Git repository | You, with **Sync** > **Push** > **Code**. The agent, only if you turn on **Allow LLM to use my git credentials** for GitHub, or the Adobe credentials permission for repositories connected through Cloud Manager. | Your repository's permissions and branch protection. The console doesn't check branch rules itself. |
-| Upload content | You, with **Upload content** or **Sync** > **Push** > **Content**. For Experience Workspace, also the agent, but only with the Adobe credentials permission and when your message asks for it or you agree when the agent asks. | Write access to the site's content in Experience Workspace, or on the author instance. |
-| Preview and publish | You, from the upload results dialog, Experience Workspace, or the AEM Sidekick. The agent, only with the Adobe credentials permission and when your message asks for it. | The site's author and publish roles on Edge Delivery Services, where [authentication for authors](https://www.aem.live/docs/authentication-setup-authoring) is set up. |
+| Upload content | You, with **Upload content** or **Sync** > **Push** > **Content**. For Experience Workspace, also the agent, with the Adobe credentials permission and at your request. | Write access to the site's content in Experience Workspace, or on the author instance. |
+| Preview and publish | You, from the upload results dialog, Experience Workspace, or the AEM Sidekick. The agent, with the Adobe credentials permission and at your request. | The site's author and publish roles on Edge Delivery Services, where [authentication for authors](https://www.aem.live/docs/authentication-setup-authoring) is set up. |
 
 * The console's own checks are safeguards, not approval gates. Optional plan mode lets you approve a plan before the agent starts. The console also stops the agent from uploading, previewing, or publishing unless your current message asks for it or you agree when the agent asks, but it can't detect every way of making such a request. Neither check stops a person with access from pushing or publishing.
 * With a Git permission, the agent can push to any branch that your credentials can write to, including `main`. A push to `main` changes the live site's code.
@@ -167,7 +167,7 @@ A support request goes to the Adobe team that builds the agent. With the topic a
 * The session ID, project name, and preview URL, and the Git host for GitHub Enterprise.
 * Any recent prompts that the sender chooses to attach. None is attached by default.
 
-These details let the team find the session's conversation and logs. On the Auto mode pages, **Get help** shares only the sender's name and email address with their message. Ask users not to include passwords, tokens, or personal data in the description. See [Request Support](console.md#request-support).
+These details let the team find the session's conversation and logs. Before the sender's console workspace is set up, a request shares only the name, email address, and organization. On the Auto mode pages, **Get help** shares only the sender's name and email address with their message. Ask users not to include passwords, tokens, or personal data in the description. See [Request Support](console.md#request-support).
 
 ## Figma and Design Systems {#figma}
 
@@ -188,8 +188,8 @@ The agent is a development agent: what can be built on Edge Delivery Services ca
 | Shared content, such as a banner or disclaimer on many pages | A copy on each page | Which content to keep once and include as a fragment, and the block that includes it. |
 | Several languages or markets | Pages at their source paths, with their locale folders | The URL structure, the language alternates in the sitemap, and how translation and inheritance between markets work for your authors. See [Translation and Localization](https://www.aem.live/docs/translation-and-localization). |
 | Personalization, search, and account features | Each page's output at the time of import | The service that provides the logic, and the blocks that call it. |
-| Forms | The form's fields, with the forms add-on | The system that receives submissions, such as your marketing automation platform or customer relationship management (CRM) system, and the workflows that follow. The add-on is built for organizations that license Adobe Experience Manager Forms, and its form block requires that license. See [Form Submissions](block-development.md#form-submissions). |
-| Commerce | Product detail and listing pages, with the commerce pages add-on for storefronts on Adobe Commerce. The product data loads from the catalog, not from the imported page. | The storefront setup and its Adobe Commerce license, or, for another commerce platform, the blocks that call its API. See [Commerce Pages](block-development.md#commerce-pages). |
+| Forms | The form's fields, with the forms add-on for organizations that license Experience Manager Forms | The system that receives submissions, such as your marketing automation platform or customer relationship management (CRM) system, and the workflows that follow. See [Form Submissions](block-development.md#form-submissions). |
+| Commerce | Product detail and listing pages that load their product data from the catalog, with the commerce pages add-on for storefronts on Adobe Commerce | The storefront setup and its Adobe Commerce license, or, for another commerce platform, the blocks that call its API. See [Commerce Pages](block-development.md#commerce-pages). |
 | Analytics, tag management, and consent | With Auto mode's **Include integrations**, the supported settings, switched off until you turn them on | Which tags load, and when, so that the pages stay fast. |
 | Redirects, sitemaps, and canonical URLs | Page titles, descriptions, and social images | The URL policy and its configuration. See [URLs, Redirects, and Search Metadata](production-migration.md#urls-seo). |
 

@@ -77,7 +77,7 @@ Record:
 |---|---|
 | Source inventory | Domains, page URLs, locales, documents, assets, and excluded or retired content. |
 | Code | Repository, working branch, review policy, and release owner. |
-| Content destination | Document-based, edited in Experience Workspace, or Experience Manager authoring, edited in the Universal Editor. The source system doesn't decide this; both deliver through Edge Delivery Services. See [Where Content Is Stored and How Authors Edit It](overview.md#content-storage). |
+| Content destination | Which of the [two storage options](overview.md#content-storage) the project uses. |
 | Design | Preserve the source appearance or [apply a new design](restyling.md#during-migration). Name the approved reference and version. |
 | Behavior | Navigation, forms, search, commerce, consent, analytics, personalization, and other integrations that must work. Identify their owners. |
 | URL policy | Destination paths, redirects, canonical URLs, language relationships, and links to retain. |
@@ -89,7 +89,7 @@ A console workspace works on one site at a time. In a program with several sites
 
 ### Relaunch a Site That Runs on Experience Manager {#relaunch-aem-site}
 
-When your team has decided to relaunch a site that runs on Experience Manager Sites today, the workflow is the same as for any other source. These points are specific to that case:
+Once your team has decided on the relaunch, the workflow is the same as for any other source. These points are specific to an Experience Manager source:
 
 * **Your other sites:** The agent reads the source site's pages and doesn't change the source. It writes only to the new site's Git repository and to the content destination that you choose, so your organization's other Experience Manager sites keep running as they are, and so does the source site until you switch its domain at [release](#handoff). With Experience Manager authoring, the upload writes pages under `/content/{site-name}` and images under the site's Assets folder, and replaces any page already at that path, so agree both with the author instance's administrator. See [Upload Content](getting-started-aem-authoring.md#upload-content).
 * **How the agent reads the source:** The agent reads each page as a browser renders it, not the source's components, templates, or repository. Components, experience fragments, and content inheritance therefore don't carry over as such: their output appears on each page. Decide which shared content to keep once on the new site. See [What Remains Project Work](evaluate.md#project-work).

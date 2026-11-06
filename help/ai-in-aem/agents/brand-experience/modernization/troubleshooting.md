@@ -71,7 +71,7 @@ With your source-site administrator's approval, allowlist these backend addresse
 * `54.90.51.39`
 * `3.224.194.242`
 
-Allowlisting gives network access only. It doesn't sign in to protected pages, and it doesn't connect to a VPN or private network.
+Allowlisting gives network access only: the source must still be reachable over the internet, and protected pages still need [Protected Site Authentication](console.md#protected-site-authentication).
 
 ## A Change Is Missing {#missing-change}
 

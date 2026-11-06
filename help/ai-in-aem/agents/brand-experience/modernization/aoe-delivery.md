@@ -38,11 +38,9 @@ The AOE team works with you to:
 * Resolve migration and implementation issues within the agreed engagement.
 * Transfer project knowledge to the team that will maintain the site.
 
-## AOE-Led Delivery {#aoe-led}
+## Engagement Process {#engagement-process}
 
 Agree scope, responsibilities, how the result is signed off, and support with your Adobe account team before work begins. Access to the console doesn't include an AOE engagement, a delivery guarantee, or a price.
-
-## Engagement Process {#engagement-process}
 
 ### 1. Scoping {#scoping}
 
@@ -77,7 +75,7 @@ Confirm who owns ongoing content, code, integrations, and operations. Follow the
 
 ## AOE Delivery Scope {#scope}
 
-The engagement defines which automated and manual work is included. The sections below describe the areas to agree.
+The engagement defines which automated and manual work is included in each of these areas.
 
 ### Source Platforms {#source-platforms}
 
@@ -85,14 +83,12 @@ Sources can include WordPress, Drupal, Sitecore, existing Adobe Experience Manag
 
 This is the scope of the service, not a limit of the product or of Edge Delivery Services. The agent itself reads pages as a browser renders them, including content that scripts insert, and reads pages behind supported sign-in methods. See [Limitations](overview.md#limitations). Agree source access and extraction for the actual engagement.
 
-### Included in AOE Scope {#included}
-
-#### Target Platform {#target-platform}
+### Target Platform {#target-platform}
 
 * **Platform:** Every migration goes to Edge Delivery Services.
 * **Where content is stored:** Agree [where content is stored and how authors edit it](overview.md#content-storage), and confirm the setup and handover for the option you choose.
 
-#### Migration Work Performed {#migration-work}
+### Migration Work Performed {#migration-work}
 
 * **Migration approach:** Agree faithful migration, redesign, or an incremental phased migration.
 * **Content import:** Automated extraction of page content from source websites and automated mapping to [default content and blocks](production-migration.md#content-structure)
@@ -100,7 +96,7 @@ This is the scope of the service, not a limit of the product or of Edge Delivery
 * **Design references:** The agent imports designs from the source site and from Figma, and works from attached screenshots and documents otherwise. Agree which references apply and how close to them the result must be.
 * **Responsive design:** Layouts for mobile and desktop widths in the project's CSS
 
-#### Resulting System {#resulting-system}
+### Resulting System {#resulting-system}
 
 The resulting site runs on Edge Delivery Services. A new project from the AEM boilerplate scores 100 in Lighthouse; what a project adds, such as third-party scripts, large images, or heavy block code, can lower that score. Accessibility and search results depend on the content and code. Agree and measure the required performance, accessibility, SEO, functional, and authoring outcomes on real pages of each template.
 
