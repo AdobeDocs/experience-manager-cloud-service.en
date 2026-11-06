@@ -322,6 +322,16 @@ Alternatively you can [select **Create new fragment** to open the **Create** dia
 
 [Content References](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference) are used to reference other AEM content types, such as images, pages, and Experience Fragments.
 
+Depending on the definition you can add a single, or multiple (a predefined number) references:
+
+![Content Fragment Editor - Add asset options](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-content-references.png)
+
+* add an additional entry with the **Add asset or content path** action
+
+* once the maximum number of references for a field is reached, the option to **Add asset or content path** is disabled
+
+* if the number of items in the **multifield** is below the maximum allowed, the action menu **Add multiple references** button is enabled; otherwise it is disabled
+
 #### Reference Images {#reference-images}
 
 In **Content Reference** fields you can:
@@ -339,26 +349,22 @@ In **Content Reference** fields you can:
 
 ##### Reference Local Assets {#reference-local-assets}
 
-<!-- CQDOC-24267 - check screenshot -->
-
 To reference a local asset, you can either:
 
 * drag and drop the new asset file directly (for example, from your file system) into the **Content Reference** field
-* use the **Add asset or content path** action, then select either **Browse Assets** or **Upload** to open the appropriate selector for you to use:
-
-  ![Content Fragment Editor - Add asset options](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-add-asset-options.png)
+* use the **Add asset or content path** action, then select either **Browse Assets** or **Upload** to open the appropriate selector for you to use
 
 ##### Reference Remote Assets {#reference-remote-assets}
 
-To reference remote assets: 
+To reference remote assets:
+
+1. Select **Browse content** icon. 
 
 1. Specify the remote **Repository** when browsing for assets:
 
-   ![Content Fragment Editor - Select Asset from remote](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-remote-asset-01.png)
+   ![Content Fragment Editor - Select Asset from remote](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-content-reference-remote-select.png)
 
-2. After selection the location can be seen in the asset information: 
-  
-   ![Content Fragment Editor - Asset from remote repository](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-remote-asset-02.png)
+2. After selection the location can be seen in the asset information.
 
 ###### Remote Assets - Limitations {#remote-assets-limitations}
 
