@@ -97,10 +97,10 @@ That control sits in your Git provider, not in the console, so it holds however 
 
 ## Understand Your Project {#project-foundations}
 
-![The agent reads content and design from the source website, and optionally a Figma design, into your console workspace. Code is pushed from there to the Git repository and content is uploaded to the content destination. Edge Delivery Services serves both on the preview and live sites.](assets/project-architecture.png)
+![The source website and optional Figma design are read by the agent into the Workspace. Content moves up from the Workspace through the authoring environment to the preview and live sites; code moves right from the Workspace through your branch to the main branch. Purple bands show content, and blue columns show Git code; where they cross, each URL pairs a branch's code with previewed or published content. Adobe Experience Manager frames authoring and delivery, and the Git repository frames both branches. The main branch's live URL is marked as the production site.](assets/code-content-lifecycle-architecture.png)
 
 * **Source:** The authorized website, content, or design that you provide. The agent reads it and never changes it.
-* **Console workspace:** Your own working copy of the project's code and content, where the agent makes its changes before you push or upload them. See [Work Safely in an Independent Workspace](#independent-workspace).
+* **Workspace:** Your own working copy of the project's code and content, where the agent makes its changes before you push or upload them. See [Work Safely in an Independent Workspace](#independent-workspace).
 * **Code:** The site's Git repository and working branch that contain styles, scripts, and blocks.
 * **Content destination:** Where the migrated content is stored and which editor authors use: document-based storage with Experience Workspace, or Experience Manager authoring with the Universal Editor. The source CMS doesn't decide it. See [Where Content Is Stored and How Authors Edit It](#content-storage).
 * **Preview and publication:** The preview site, where you check saved content with your code, and the live site, where approved changes are released. See [How Changes Go Live](#code-content-lifecycle).
@@ -126,7 +126,7 @@ The independence works in both directions: changes that others push or upload do
 
 ### How Changes Go Live {#code-content-lifecycle}
 
-![Code, in blue, moves down from the Experience Modernization Console: pushing puts it on your branch, where you check changes before they go live, and merging after review puts it on main, the production code. Content, in purple, moves across: uploading saves the page in the authoring environment, which is Experience Workspace or the Universal Editor; previewing puts it on the preview site, and publishing puts it on the live site. Edge Delivery Services serves both sites. Each branch's code is a row across the whole diagram, and the authoring environment, the preview site, and the live site are columns down all rows. Where a branch's row crosses the preview or live column, a URL shows that code with the previewed or published content. The live URL of main is the production site.](assets/code-content-lifecycle.png)
+For the sequence, see the [diagram in Understand Your Project](#project-foundations).
 
 Code and content reach the live site in different ways:
 
