@@ -69,17 +69,20 @@ Edge Delivery Services uses GitHub so you can manage and deploy code directly fr
 
 ## Authoring {#authoring}
 
-Edge Delivery Services offers a number of authoring methods to meet your project's needs.
+Edge Delivery Services offers two methods of authoring depending on the state of your project.
 
-### Agentic-assisted editing {#agentic-assisted-editing}
+* [Experience Workspace](#experience-workspace) is the default for new projects.
+* [Universal Editor](#universal-editor) can be leveraged for existing AEM implementations.
 
-Modern content is created by agents, LLMs, automated pipelines, and authors in AEM. [Experience Workspace](https://www.aem.live/docs/ew/about) is the central place where teams review, collaborate, approve, and deploy content with confidence by combining human creativity and AI capabilities.
+### Experience Workspace {#experience-workspace}
+
+Modern content is created by agents, LLMs, automated pipelines, and authors in AEM. More than just authoring, [Experience Workspace](https://www.aem.live/docs/ew/about) is the central place where teams review, collaborate, approve, and deploy content with confidence by combining human creativity and AI capabilities.
 
 ![Experience Workspace](assets/experience-workspace.png)
 
-Experience Workspace is a lightweight, documented-oriented authoring surface featuring powerful features such as translation, multi-site management, and snapshots and is recommended for all new projects.
+Experience Workspace is the modern default face to AEM. It offers powerful features such as translation, multi-site management, and snapshots and is recommended for all new projects.
 
-### In-context editing {#in-context-editing}
+### Universal Editor {#universal-editor}
 
 [The Universal Editor](/help/implementing/universal-editor/introduction.md) is a what-you-see-is-what-you-get (WYSIWYG), customizable, one-stop place to edit content live and in-context with a visual preview.
 
@@ -90,21 +93,9 @@ Experience Workspace is a lightweight, documented-oriented authoring surface fea
 
 ![AEM authoring with the Universal Editor](assets/wysiwyg-authoring.png)
 
-### Document-based editing {#document-based-editing}
-
-Document-based authoring manages content as documents either in [SharePoint](https://www.aem.live/docs/setup-customer-sharepoint) or [Google Drive.](https://www.aem.live/developer/setup-google-drive) Microsoft Word is a popular choice as many enterprises have SharePoint in place where the initial content gets created. No need to learn a new tool and publishing content directly from SharePoint and Word removes the hassle of copy & paste content into AEM. Customers without SharePoint can also use Google Drive as an alternative.
-
 ### Which authoring method is right for me? {#which-authoring-method}
 
-Adobe believes in meeting authors where they are. And since authoring needs vary, Edge Delivery Services offers several authoring options. In general:
-
-* All new projects are recommended to start with **Experience Workspace**.
-* Existing dispatcher-based AEM projects that wish to take advantage of Edge Delivery Services can adapt the **Universal Editor**.
-* Teams that are strongly tied to SharePoint or Google Drive documentation management can use **document-based authoring**.
-
-Adobe always recommends consulting your authors to determine which solution is you best fit. [Be sure to review the authoring guide](https://www.aem.live/docs/authoring-guide) for questions to help determine which is the best fit for your needs.
-
-Please reach out to your Adobe representative for further guidance.
+Experience Workspace is the new default for managing your content. If you are not certain which option is right for you, [be sure to review the authoring guide](https://www.aem.live/docs/authoring-guide) to help determine which is the best fit for your needs.
 
 ## Operational Telemetry {#telemetry}
 
