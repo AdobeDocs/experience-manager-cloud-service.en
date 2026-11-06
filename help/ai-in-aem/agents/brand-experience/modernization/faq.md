@@ -234,9 +234,9 @@ Not as a separate log, but the agent's work is recorded. Everything that it prod
 
 From your Adobe account team and the [Adobe Trust Center](https://www.adobe.com/trust.html). For what the console itself keeps, see [Where Your Work Is Stored](evaluate.md#security-storage).
 
-### Can I give the agent health data? {#hipaa}
+### Can I migrate a healthcare website? {#hipaa}
 
-No. The agent is a developer tool that your site's visitors never reach, so the only health data that it sees is what you give it: keep real patient and user data out of it, including the pages that you migrate. See [Health Data and HIPAA](evaluate.md#security-hipaa), which also links the Experience Manager services that can process protected health information (PHI).
+Yes, with site content and fictitious data, not real patient information. That rule applies to public, staging, and signed-in pages. Your chosen authoring and delivery services have their own HIPAA requirements; see [Health Data and HIPAA](evaluate.md#security-hipaa).
 
 ## Product Fit and Help {#product-fit}
 
