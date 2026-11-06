@@ -28,7 +28,7 @@ role_v2:
 
 # Experience Modernization Agent Overview {#experience-modernization-agent}
 
-The Experience Modernization Agent is Adobe's AI development agent for [Edge Delivery Services](/help/edge/overview.md). It gives you a browser-based ready-to-use development environment, with nothing to install, and an agent that migrates, builds, and evolves your sites, including their integrations with your other systems. To go straight to the guide for your role or task, see [Choose Where to Start](#start-by-role).
+The Experience Modernization Agent is Adobe's AI development agent for [Edge Delivery Services](/help/edge/overview.md). It gives you a ready-to-use development environment in your browser, with nothing to install. The agent can migrate, build, and evolve your sites, including their integrations with your other systems. To go straight to the guide for your role or task, see [Choose Where to Start](#start-by-role).
 
 If you know some HTML, most of Edge Delivery Services will look familiar. It serves authored content as plain semantic HTML, and your project's CSS and JavaScript style and decorate it in the browser. Your Git repository remains the system of record for that code. The platform is part of Adobe Experience Manager Sites. For the concepts specific to Experience Manager, see [Understand Your Project](#project-foundations). Adobe has renamed several of these products over time. If you meet older names such as Helix, Franklin, or Crosswalk, or short forms of these names, see [Names You May See](#names).
 
