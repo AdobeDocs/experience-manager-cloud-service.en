@@ -195,7 +195,7 @@ apply unbounded-query
 
 It never commits or pushes — you review the diff and commit. Large fixes run in resumable batches; reply `apply <pattern>` to continue.
 
-For the report structure, skip reasons, worked examples, and limitations, see [Code Assessment Skill](/help/ai-in-aem/code-assessment-skill.md).
+See [Code Assessment Skill](/help/ai-in-aem/code-assessment-skill.md) for more information about how the skill works, a few examples, and other details. [Code Assessment Skill](/help/ai-in-aem/code-assessment-skill.md).
 
 ## AEM Quickstart MCP Server {#aem-quickstart-mcp-server}
 
