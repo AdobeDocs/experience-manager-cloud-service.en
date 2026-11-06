@@ -1,6 +1,6 @@
 ---
 title: AOE Delivery of the Experience Modernization Agent
-description: Learn about Adobe Agentic Outcome Engineers (AOEs) and how they can help you succeed with the Experience Modernization Agent.
+description: Have Adobe engineers migrate your site with the Experience Modernization Agent, and learn what to agree before an engagement starts.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 75f73bb8-4d97-4c8f-b364-374a2a026b19
@@ -28,31 +28,27 @@ role_v2:
 
 # AOE Delivery of the Experience Modernization Agent {#aoe-delivery}
 
-Learn about Adobe Agentic Outcome Engineers (AOEs) and how they can help you succeed with the Experience Modernization Agent.
+Adobe's Agentic Outcome Engineers (AOEs) can migrate your site for you with the Experience Modernization Agent. AOE delivery is an optional engagement, not a separate tier of the agent: the same agent, operated by Adobe engineers who add engineering work and review to its automation.
 
 ## The Agentic Outcome Engineer (AOE) {#aoe}
 
-AOEs are Adobe engineers who operate the Experience Modernization Agent on your behalf. AOE delivery is an optional engagement model, not a separate tier of agent capabilities. The team works with you to:
+The AOE team works with you to:
 
-* Translate AI-assisted automation into production-ready customer outcomes.
+* Take the agent's output to a site that is ready for production.
 * Resolve migration and implementation issues within the agreed engagement.
 * Transfer project knowledge to the team that will maintain the site.
 
 ## AOE-Led Delivery {#aoe-led}
 
-AOEs combine the agent's automation with engineering work and customer review.
-
-Agree scope, responsibilities, acceptance criteria, and support arrangements with your Adobe account team before work begins. Do not infer a delivery guarantee, price, or entitlement from the availability of the console.
+Agree scope, responsibilities, how the result is signed off, and support with your Adobe account team before work begins. Access to the console doesn't include an AOE engagement, a delivery guarantee, or a price.
 
 ## Engagement Process {#engagement-process}
-
-AOE engagement is a structured process.
 
 ### 1. Scoping {#scoping}
 
 Contact your Adobe account team with your migration requirements and scope. The AOE team reviews eligibility and proposes an approach, estimate, and schedule.
 
-* **Inputs:** Authorized source URLs, CMS platform, content inventory, design references, timeline, authoring target, integrations, access constraints, and acceptance needs
+* **Inputs:** Authorized source URLs, CMS platform, content inventory, design references, timeline, where content will be stored, integrations, access constraints, and how you'll sign off the result
 * **Outputs:** Eligibility confirmation, effort estimate, migration approach, engagement structure
 
 ### 2. Planning {#planning}
@@ -61,18 +57,18 @@ A kickoff meeting is held, along with a source site analysis, content audit, des
 
 * **You** provide all necessary assets and guidelines.
 * **Adobe** proposes the migration plan, timeline, roles, and checkpoints for agreement.
-* **Together**, confirm content/code destinations, release authority, exceptions, and the recovery approach.
+* **Together**, confirm where code and content go, who approves releases, exceptions, and how to recover from a mistake.
 
 ### 3. Execution {#execution}
 
 * **AOE activities:** Operate the Experience Modernization Console, review AI outputs, apply brand guidelines, refine as needed
-* **Your activities:** Review deliverables, validate content and designs, test authoring
+* **Your activities:** Review deliverables, check content and designs, test authoring
 
-Checkpoints are implemented to ensure content accuracy, including component mapping, design review, authoring workflow, and pre-launch validation.
+Checkpoints for component mapping, design review, the authoring workflow, and pre-launch checks keep the content accurate.
 
 ### 4. Handoff {#handoff}
 
-* **Deliverables:** Agreed website code, migrated content, documentation, validation reports, and a record of acceptance and remaining exceptions
+* **Deliverables:** Agreed website code, migrated content, documentation, check reports, and a record of what was signed off and what remains open
 * **Activities:** Knowledge transfer, authoring training, developer onboarding
 
 ### 5. Post-Migration {#post-migration}
@@ -93,25 +89,25 @@ This is the scope of the service, not a limit of the product or of Edge Delivery
 
 #### Target Platform {#target-platform}
 
-* **Edge Delivery Services:** All migrations target Adobe's high-performance web delivery platform.
-* **Authoring target:** Agree document-based persistence, edited visually in Experience Workspace, or Experience Manager authoring with JCR persistence and the Universal Editor. Adobe strongly recommends document-based persistence with Experience Workspace for new implementations. See [Where Content Is Stored and How Authors Edit It](overview.md#content-storage). Confirm the setup and handover for the selected target.
+* **Platform:** Every migration goes to Edge Delivery Services.
+* **Where content is stored:** Agree [where content is stored and how authors edit it](overview.md#content-storage), and confirm the setup and handover for the option you choose.
 
 #### Migration Work Performed {#migration-work}
 
 * **Migration approach:** Agree faithful migration, redesign, or an incremental phased migration.
 * **Content import:** Automated extraction of page content from source websites and automated mapping to [default content and blocks](production-migration.md#content-structure)
 * **Design system:** Extraction of brand tokens (colors, typography, spacing) and application to the new site
-* **Design references:** The agent imports designs from the source site and from Figma, and works from attached screenshots and documents otherwise. Agree which references apply and what fidelity means for acceptance.
+* **Design references:** The agent imports designs from the source site and from Figma, and works from attached screenshots and documents otherwise. Agree which references apply and how close to them the result must be.
 * **Responsive design:** Layouts for mobile and desktop widths in the project's CSS
 
 #### Resulting System {#resulting-system}
 
-The resulting site runs on Edge Delivery Services. A new project from the AEM boilerplate scores 100 in Lighthouse; what a project adds, such as third-party scripts, large images, or heavy block code, can lower that score. Accessibility and search results depend on the content and code. Agree and measure the required performance, accessibility, SEO, functional, and authoring outcomes on representative real pages.
+The resulting site runs on Edge Delivery Services. A new project from the AEM boilerplate scores 100 in Lighthouse; what a project adds, such as third-party scripts, large images, or heavy block code, can lower that score. Accessibility and search results depend on the content and code. Agree and measure the required performance, accessibility, SEO, functional, and authoring outcomes on real pages of each template.
 
-Use the [production acceptance checklist](production-migration.md#acceptance). In particular, reconcile the in-scope inventory, test integrations, and verify that authors can edit, save, reopen, and preview content in the selected authoring environment.
+Use the checklist in [Check and Sign Off](production-migration.md#acceptance). In particular, reconcile the in-scope inventory, test integrations, and verify that authors can edit, save, reopen, and preview content in their editor.
 
 ## Limitations {#limitations}
 
-Review the [product boundaries](overview.md#limitations) separately from the engagement scope. Integrations, custom business logic, analytics, commerce, search, source-system inheritance, and regulated requirements need an explicit inclusion/exclusion decision and owner. They run on the source's servers or in its scripts, which page import doesn't carry over.
+Review the [product boundaries](overview.md#limitations) separately from the engagement scope. Integrations, custom business logic, analytics, commerce, search, source-system inheritance, and regulated requirements each need a decision on whether they're included, and an owner. They run on the source's servers or in its scripts, which page import doesn't carry over.
 
-Before handoff, record unresolved work, accepted exceptions, code/content destinations, validation results, recovery steps, and support ownership in the [project handover](project-documentation.md#portable-handoff). Code rollback and content/asset recovery are separate operations.
+Before handoff, record unresolved work, accepted exceptions, where code and content went, check results, recovery steps, and support ownership in the [project handover](project-documentation.md#portable-handoff).

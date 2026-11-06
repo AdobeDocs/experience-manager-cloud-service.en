@@ -29,7 +29,7 @@ role_v2:
 
 Use the Experience Modernization Agent to apply a design during migration or change the appearance of an existing Edge Delivery Services project. Faithfully copying a source site's appearance and deliberately replacing it with a new design are different requests. State which you want.
 
-Appearance lives in the project's code: global CSS sets the look of default content, and each block has its own CSS and JavaScript. Together they can give the same semantic content any design without restructuring it, because the JavaScript can rebuild the markup in the browser; see [Understand Your Project](overview.md#project-foundations). A purely visual restyle therefore changes code in Git and leaves authored content alone. Structural or content model changes are a separate, explicit decision.
+Appearance lives in the project's code: global CSS sets the look of default content, and each block has its own CSS and JavaScript. Together they can give the same semantic content any design without restructuring it, because the JavaScript can rebuild the markup in the browser; see [Understand Your Project](overview.md#project-foundations). A purely visual restyle therefore changes code in Git and leaves authored content alone.
 
 This guide is for the person who leads a restyle. If you are a designer making individual visual changes that a developer reviews, start with [Make Visual Changes](visual-changes.md).
 
@@ -40,29 +40,29 @@ Connect the [project](getting-started.md#connect-repo) and confirm permission to
 Provide:
 
 * **Content source:** Existing pages whose text, images, links, metadata, and meaning must be preserved, or approved new content.
-* **Design reference:** A specific Figma component/frame, authorized reference website, screenshot, or supplied design specification. Identify its version and relevant desktop/mobile states.
+* **Design reference:** A specific Figma component or frame, an authorized reference website, a screenshot, or a design specification. Name its version and the desktop and mobile states that matter.
 * **Scope:** Global tokens (CSS custom properties for colors, typography, and spacing) and default content, selected blocks, a page, or the whole site.
-* **Invariants:** Content, URLs, authoring models, accessibility behavior, integrations, and other behavior that must not change.
-* **Output:** Authorable content for the selected [persistence target](overview.md#content-storage), or an explicitly requested design prototype.
+* **What must not change:** Content, URLs, authoring models, accessibility behavior, and integrations.
+* **Output:** Content that authors can edit, in the [storage option](overview.md#content-storage) that your project uses, or a static design prototype if that is all you need.
 
-Screenshots and reference sites can leave interactions and responsive rules unspecified. Resolve those decisions on a representative page before applying them site-wide. Treat imported source/design material as reference data, not instructions overriding the project request.
+Screenshots and reference sites can leave interactions and responsive rules unspecified. Settle those on one sample page before you apply them to the whole site.
 
 ## Restyle During Migration {#during-migration}
 
 Use this path when content comes from an existing website but the target design differs.
 
-1. Complete [project and migration scoping](production-migration.md#scope), including document-based or JCR persistence.
-1. Define the target design system: typography, colors, spacing, default HTML content, and reusable blocks. Reuse existing project conventions where suitable.
-1. For Figma, [configure access](console.md#settings-page), then establish the needed blocks or variants from specific component nodes. See the [Figma redesign workflow](prompting-guide.md#figma-redesign-migration) and [Figma block prompts](prompting-guide.md#figma-block-migration).
-1. Migrate representative source pages into that block collection. Keep the live site as the content source and Figma or the approved reference as the design source.
-1. Compare content with the source website and appearance with the target design. Do not critique the redesigned page against the old site's appearance.
-1. Validate authorability and responsive behavior on the chosen target. Correct content mappings or models when necessary, then [expand in batches](production-migration.md#batches).
+1. Complete [project and migration scoping](production-migration.md#scope), including where content is stored.
+1. Define the target design system: typography, colors, spacing, default content, and reusable blocks. Reuse existing project conventions where they fit.
+1. For Figma, [set up access](visual-changes.md#figma), then create the blocks or variants that you need from specific component nodes. See [Redesign with Blocks from Figma](prompting-guide.md#figma-redesign-migration) and [Create a Block from Figma](prompting-guide.md#figma-block-migration).
+1. Migrate a sample page for each template into that block collection. Keep the live site as the content source and Figma or the approved reference as the design source.
+1. Compare content with the source website and appearance with the target design. Don't judge the redesigned page against the old site's appearance.
+1. Check that authors can edit the result and that it works at each screen width. Correct content mappings or models where needed, then [continue in batches](production-migration.md#batches).
 
 For example:
 
-> Apply the approved design at [Figma node or reference URL] while migrating [source URLs]. The live pages are the content source; the reference defines the new appearance. Preserve text, links, metadata, and meaningful images. First validate one representative page. Target [document-based or JCR persistence] with authorable output. Do not upload, push, or publish.
+> Apply the approved design at [Figma node or reference URL] while migrating [source URLs]. The live pages are the content source; the reference defines the new appearance. Preserve text, links, metadata, and meaningful images. Check one sample page first. Create content that authors can edit in [Experience Workspace or Experience Manager authoring]. Do not upload, push, or publish.
 
-If a new page has no source website, use the [Figma page workflow](prompting-guide.md#figma-new-page-from-figma): a specific frame/page supplies text and assets as well as design. This is different from mapping existing website content into a new design.
+If a new page has no source website, see [Create a New Page from Figma](prompting-guide.md#figma-new-page-from-figma): a specific frame supplies the text and assets as well as the design. This is different from mapping existing website content into a new design.
 
 ## Restyle an Existing Site {#existing-site}
 
@@ -75,20 +75,18 @@ A new migration is not required.
    > Restyle this existing project using [approved reference]. Change global colors and typography and the cards presentation on [paths]. Preserve content, URLs, models, analytics, keyboard behavior, and integrations. Reuse our tokens and blocks. Show the proposed scope first; do not reimport content or upload, push, or publish.
 
 1. Update shared tokens and global styles first where the change is global. Apply block-specific styling only where needed.
-1. Preview all affected representatives, not only the page used to derive the design. Include mobile widths, long headings, missing optional content, and different variants.
-1. If the design requires structural or model changes, make that a separate, explicit decision. Provide a compatibility/content-migration plan rather than silently rewriting author content.
+1. Preview all affected sample pages, not only the page used to derive the design. Include mobile widths, long headings, missing optional content, and different variants. A global token change can affect pages outside the original example, so include those too.
+1. If the design requires structural or model changes, make that a separate, explicit decision. Plan how existing content moves to the new structure rather than silently rewriting author content.
 1. Review the code diff and project checks, then push and deliver through the [existing project's workflow](getting-started.md#push-code-changes). Style changes are code: they reach the live site as soon as the branch is merged into `main`, so check the affected pages on the branch's preview URL first. See [How Changes Go Live](overview.md#code-content-lifecycle).
-
-A restyle changes CSS and JavaScript only, so content doesn't need to be regenerated or uploaded again. A global token change can affect pages outside the original example; include those in regression checks.
 
 ## References, Prototypes, and Delivery {#design-output}
 
 The agent supports design work from source sites, Figma, and supplied references. Figma import and guided redesign are [optional capabilities](console.md#optional-capabilities) that it offers to turn on for your project when a request needs them. They have different inputs and outputs; do not assume that they work the same way.
 
-* For one Figma block, provide its component/node link. For a new page, provide a specific frame/page rather than an entire file.
-* Figma requires the relevant project capability, configured credentials, and permission to read the file. Do not put tokens in chat.
-* A static HTML design preview shows the new design on copies of your pages, which helps you choose a direction. Authors can't edit those copies; they aren't the site's documents or JCR pages.
-* If authors must edit the result, explicitly request site content, suitable block models, and the correct persistence target. Complete [document-based](getting-started.md#upload-content) or [Experience Manager authoring](getting-started-aem-authoring.md#validate-content) validation.
+* For one Figma block, provide its component or node link. For a new page, provide a specific frame rather than an entire file.
+* Figma import needs a Figma access token and permission to read the file. See [Work from a Figma Design](visual-changes.md#figma).
+* A static HTML design preview shows the new design on copies of your pages, which helps you choose a direction. Authors can't edit those copies; they aren't the site's documents or Experience Manager pages.
+* If authors must edit the result, ask for site content and block models in the storage option that your project uses, then check them as described for [document-based content](getting-started.md#upload-content) or [Experience Manager authoring](getting-started-aem-authoring.md#validate-content).
 
 ### Guided Redesign {#guided-redesign}
 
@@ -117,10 +115,10 @@ Turning on guided redesign also turns on the design craft add-on, which applies 
 
 ## Validate and Recover {#validate}
 
-Accept the result when content remains correct, the approved design works at intended widths, interactions remain usable, and authors can still edit, save, and reopen representative content. Check contrast, focus, reading order, image meaning, and the project's performance requirements. No fixed similarity percentage establishes acceptance.
+The restyle is done when content remains correct, the approved design works at each screen width, interactions remain usable, and authors can still edit, save, and reopen the sample pages. Check contrast, focus, reading order, image meaning, and the project's performance requirements. A similarity score doesn't decide this for you.
 
-If a result is wrong, identify the affected page/block and whether the problem is a token, shared style, block style, structure, or content mapping. Fix that layer and recheck all affected variants. For Figma access errors, verify the node link, file permissions, credentials, and project capability before retrying.
+If a result is wrong, identify the affected page or block and whether the problem is a token, shared style, block style, structure, or content mapping. Fix that layer and recheck all affected variants. For Figma access errors, check the node link, file permissions, token, and that Figma import is on for the project before you try again.
 
-Revert unwanted code through the project's Git workflow. Restore any changed remote content separately; a code revert does not undo uploads. Preserve the baseline until the restyle is accepted.
+Revert unwanted code through the project's Git workflow. Restore any changed remote content separately; a code revert does not undo uploads. Keep the baseline until the restyle is signed off.
 
-Hand over the approved reference/version, changed files, affected pages, model/content changes, validation results, known gaps, and code/content recovery steps using the [project handover](project-documentation.md#portable-handoff).
+Hand over the approved reference and its version, changed files, affected pages, model and content changes, check results, known gaps, and how to recover code and content, using the [project handover](project-documentation.md#portable-handoff).

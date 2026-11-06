@@ -224,7 +224,7 @@ Importing pages from an existing website is the most common way to start. In the
    ![Content import](assets/content-import.png)
 1. Once the page is imported, the **Workspace** panel shows it. Select the page to render it in the console's preview panel on the right. This preview shows the working copy in the console workspace, not the preview site on `aem.page`.
    ![Content imported](assets/content-imported.png)
-1. Check the page's structure as well as its text. The **Document view** of the preview panel shows how the content is split into sections, blocks, and default content; see [Content Views](console.md#content-view). Headings, text, images, and links should be default content. A block is needed only where authors must mark which content forms a component, such as a set of cards; CSS and JavaScript can lay out default content however the design needs. Authors will edit this structure, so ask the agent to simplify it now, before more pages reuse it. See [Shape the Content Structure](production-migration.md#content-structure).
+1. Check the page's structure as well as its text. The **Document view** of the preview panel shows how the content is split into sections, blocks, and default content; see [Content Views](console.md#content-view). Most of a page should be default content: headings, text, images, and links. A block belongs only where authors must mark which content forms a component, such as a set of cards; CSS and JavaScript can lay out default content however the design needs. Authors will edit this structure, so ask the agent to simplify it now, before more pages reuse it. See [Shape the Content Structure](production-migration.md#content-structure).
 1. Upload the content, so that it is saved and authors can edit it. Until you upload it, the imported page exists only in the console workspace, and pushing code doesn't save it.
    * For document-based content, see [Upload Content](#upload-content). You can then open the page and edit it.
    * For Experience Manager authoring, see [Upload Content](getting-started-aem-authoring.md#upload-content) in the guide for that setup.
@@ -239,14 +239,7 @@ The page import doesn't build the shared navigation and footer; ask for them sep
 
 ### Make a Visual Change with Inspect Mode {#inspect-mode}
 
-On a site that already has pages, such as your existing site or a site that you transferred with **Make it yours**, a visual change is the quickest way to see a result. Point at what you want to change rather than describe where it is.
-
-1. Open the page in the console's preview panel.
-1. Turn on **Inspect mode** with the select icon in the preview panel.
-1. Select the element that you want to change, such as a heading, an image, or a button. The element is added to your prompt.
-1. Describe the change, for example "Make this button use the primary button style", and send the prompt.
-
-The agent receives the selected element's HTML and its position on the page, and limits its changes to that element. Check the result at desktop and mobile widths, then [push the code](#push-code-changes) to keep it. See [Content Views](console.md#content-view).
+On a site that already has pages, such as your existing site or a site that you transferred with **Make it yours**, a visual change is the quickest way to see a result. Point at what you want to change rather than describe where it is: turn on **Inspect mode** in the preview panel, select the element, and describe the change, for example "Make this button use the primary button style". [Make Your First Change](visual-changes.md#first-change) gives the steps, including how to check each screen width and undo a change. Then [push the code](#push-code-changes) to keep it.
 
 ### Prompts to Start With {#first-prompts}
 

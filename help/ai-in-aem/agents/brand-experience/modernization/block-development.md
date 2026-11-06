@@ -31,7 +31,7 @@ Use the Experience Modernization Agent for ongoing Edge Delivery Services develo
 
 The agent follows Content-Driven Development (CDD) for this work. It starts from real content and from how authors will create it, and writes code after that. This keeps content models easy for authors to use and avoids blocks that only developers can fill in.
 
-Connect the intended repository and branch, confirm modification permissions, and identify whether authors use [document-based or JCR-backed content](overview.md#content-storage). Preserve a baseline before changing shared code or content models.
+Connect the intended repository and branch, confirm modification permissions, and identify [where the content is stored](overview.md#content-storage). Preserve a baseline before changing shared code or content models.
 
 ## Compose Before Creating a Block {#composition}
 
@@ -70,22 +70,21 @@ Authors can add, remove, or reorder the heading, text, image, and links without 
 
 ## Prompt for a Block {#block-prompts}
 
-You can start with a short prompt, such as "Create a testimonials block". The agent follows content-driven development: it works out the content and content model with you before it writes code. Add context where it helps the agent match something specific:
+You can start with a short prompt, such as "Create a testimonials block". Add context where it helps the agent match something specific:
 
 | To show the agent | Provide |
 |---|---|
 | A design on an existing site | The page URL, and the section to match. |
 | A design that isn't online | A screenshot or image (JPEG, PNG, GIF, or WebP), with **Attach files** in the [prompt input](console.md#prompt-input). For Figma designs, see [Create a Block from Figma](prompting-guide.md#figma-block-migration). |
-| An element in the console preview | Select it with **Inspect mode** in the [content views](console.md#content-view). The agent receives the element's HTML and its position on the page, and limits its changes to that element. |
+| An element in the console preview | Select it with **Inspect mode** in the [content views](console.md#content-view), so that the agent limits its changes to that element. See [Make Your First Change](visual-changes.md#first-change). |
 | How authors fill in the block | Example content, the parts that are optional or repeat, and the variants you need. |
 
 A reference page or screenshot shows the target appearance. It doesn't define what authors edit, so say that too.
 
 ### Reuse Existing Blocks {#reuse-blocks}
 
-Before the agent creates a block, it looks for one to reuse or adapt: in your project's `blocks` folder, and in the [Block Collection](https://www.aem.live/developer/block-collection) and [Block Party](https://www.aem.live/developer/block-party/) for reference code. During migration, it also checks the [block library](#block-deliverables) that **Library URL** in [Settings](console.md#settings-page) points to.
+Before the agent creates a block, it looks for one to reuse or adapt: in your project's `blocks` folder, and in the [Block Collection](https://www.aem.live/developer/block-collection) and [Block Party](https://www.aem.live/developer/block-party/) for reference code. During migration, it also checks your [block library](#block-deliverables), if you have one.
 
-* If your organization keeps a block library for authors, set **Library URL** to its `library.json` file.
 * To reuse blocks from another repository, add them to this project's `blocks` folder first, for example by pushing them to your branch and then pulling the code into the console.
 * Record your naming, variant, and content conventions in the [project instruction files](project-instructions.md#content-conventions), so that new blocks follow them.
 
@@ -105,26 +104,26 @@ Auto mode doesn't take instructions during a run. Refine its blocks in the conso
 
 ## Create a Block {#create}
 
-Provide the author task, example content, desired behavior/design, target persistence, and destination test page.
+Provide the author task, example content, the behavior and design you want, [where the content is stored](overview.md#content-storage), and a test page.
 
 1. Ask the agent to inspect existing blocks and suitable [reference implementations](prompting-guide.md#reference-blocks). Prefer reuse or a variant over a duplicate.
 1. Define a content model that authors can understand. Use headings, links, images, and grouped content naturally rather than exposing CSS or implementation details as fields.
 1. Create representative content first. Include long text, missing optional values, multiple items, and meaningful images/links.
 1. Implement only the needed HTML decoration, CSS, and JavaScript. Reuse project tokens and shared utilities.
-1. For JCR-backed projects, update the source models/component configuration and regenerate aggregates through the project workflow. A block's model defines the fields authors edit in the Universal Editor; the editor reads the model, not a table in a document, so the block is editable there only once its model defines those fields. Check conversion and authoring hints.
+1. For Experience Manager authoring, update the source models/component configuration and regenerate aggregates through the project workflow. A block's model defines the fields authors edit in the Universal Editor; the editor reads the model, not a table in a document, so the block is editable there only once its model defines those fields. Check conversion and authoring hints.
 1. [Validate](#validation), then document an authorable example and allowed variants.
 
 For example:
 
 > Create a testimonials block for [authoring target]. Start from these real content examples: [paths]. Check existing blocks first. Authors need to edit quote, attribution, and optional image without layout configuration. Use our tokens. Include long text and no-image examples. Do not upload, push, or publish.
 
-The output is reusable code, a working target-specific model where needed, and editable examples—not just a screenshot or generated files.
+The result is reusable code, a model where authors need one, and example content that authors can edit.
 
 ### What the Agent Provides With a Block {#block-deliverables}
 
-* **Block documentation:** When migration creates a block, it generates the block from the content model found on your pages and adds a README for developers and an authoring guide for authors. Review both and keep them current when you change the block. To make later conversations follow the block's conventions, such as optional content, variants, and the sections it works in, reference them from the project's instruction files. See [Document Content Conventions](project-instructions.md#content-conventions).
+* **Block documentation:** When migration creates a block, it generates the block from the content model found on your pages and adds a README for developers and an authoring guide for authors. Review both, keep them current when you change the block, and [reference them from the project's instruction files](project-instructions.md#content-conventions) so that later conversations follow the block's conventions.
 * **Sample content:** The agent generates sample content for blocks so that you can preview them with realistic content. In the [site catalog](site-catalog.md#blocks-table), use **View sample** to open a block's sample page.
-* **Block library:** The block library lets authors find your custom blocks and insert them into pages, with sample content that shows how each block is meant to be used. To set it up, ask the agent to generate a block library, including sample content and the library configuration, for Experience Workspace (which replaces Document Authoring) or Experience Manager authoring. Block library setup is an [optional capability](console.md#optional-capabilities) that it offers to turn on for your project. Check the result in the authoring experience. The library location is set by **Library URL** in [Settings](console.md#settings-page), which points to a `library.json` file that lists the available blocks, their variations, and example content.
+* **Block library:** The block library lets authors find your custom blocks and insert them into pages, with sample content that shows how each block is meant to be used. To set it up, ask the agent to generate a block library, including sample content and the library configuration, for Experience Workspace (which replaces Document Authoring) or Experience Manager authoring. Block library setup is an [optional capability](console.md#optional-capabilities) that it offers to turn on for your project. Check the result in the authoring experience. Set **Library URL** in [Settings](console.md#settings-page) to the library's `library.json` file, which lists the available blocks, their variations, and example content.
 
 ## Build a Dynamic Block {#dynamic-blocks}
 
@@ -142,16 +141,16 @@ The query index includes only published pages, and only the properties that its 
 
 ## Connect Services and Applications {#integrations}
 
-The agent writes the code that connects your site to other systems. It works on an integration as any coding agent does: it reads the service's documentation, writes the code, and tests it in the preview. It isn't limited to the systems that its add-ons cover. Commerce platforms, marketing technology, maps, video, search, and your own APIs work the same way, and the practices that help with integrations in other coding agents help here too. For the step-by-step approach, see [Work Beyond Edge Delivery Services](prompting-guide.md#beyond-eds).
+The agent writes the code that connects your site to other systems, including systems that its add-ons don't cover. [Work Beyond Edge Delivery Services](prompting-guide.md#beyond-eds) explains how to work through an integration with it. This section covers where that code runs.
 
-Edge Delivery Services pages run this code in the visitor's browser, so each connection is part of a block, a widget, or the project's scripts. Give the agent the API documentation, example responses, and the agreed behavior, and test against a non-production endpoint first. If the agent must call an API that needs a key while it works, add the key in [**Settings**](console.md#other-services), not in the chat.
+Edge Delivery Services pages run this code in the visitor's browser, so each connection is part of a block, a widget, or the project's scripts. If the agent must call an API that needs a key while it works, add the key in [**Settings**](console.md#other-services), not in the chat.
 
 * **Applications:** A form, a search page, a store locator, or an account area has little authored content. Build it as a [widget](https://www.aem.live/docs/widgets): a self-contained application in the repository's `/widgets/` folder, which authors place on a page by inserting its link. An existing application, such as one built with React, can be adapted the same way.
 * **APIs:** A block or widget calls an API from the browser. The API must accept requests from your site's domains, including the preview and live sites. If other sites must read your site's resources, configure [custom headers](https://www.aem.live/docs/custom-headers) for the paths that they need, never for all origins.
 * **Secrets:** Everything in the repository is delivered to the browser, so it can't hold API keys or tokens. When an API needs a secret, call it through a server-side service that keeps the secret, such as Adobe App Builder or API Mesh, and let the block call that service.
 * **Maps, video, and other embedded services:** Some services issue keys meant for the browser, such as many maps services, and you restrict each key to your site's domains, including the preview and live sites. That restriction protects the key, since every visitor can read it. Load the service when the visitor reaches it, not with the rest of the page, so that it doesn't slow the page down.
-* **Commerce:** The commerce pages add-on is built for storefronts on Adobe Commerce. It imports product detail and product listing pages as pages whose product data loads from the catalog when a visitor opens them. See [Commerce Pages](#commerce-pages). For another commerce platform, the agent builds the blocks that read products from that platform's API, like any other integration.
-* **Forms:** The forms add-on turns the source's forms with two or more fields into form definitions for the form block of Adobe Experience Manager Forms, and is built for organizations that license it. Where submissions go is a separate choice; see [Form Submissions](#form-submissions).
+* **Commerce:** [Commerce Pages](#commerce-pages) covers the add-on for Adobe Commerce storefronts and the route for other commerce platforms.
+* **Forms:** [Form Submissions](#form-submissions) covers the add-on for Adobe Experience Manager Forms and how to connect a form to any destination.
 * **Analytics, tag management, and consent:** Load these scripts after the page has rendered, so that they don't slow it down. See [Keeping Your Lighthouse Score 100](https://www.aem.live/developer/keeping-it-100). With Auto mode's **Include integrations**, the agent adds the supported settings, switched off until you turn them on.
 
 Add-ons are [optional capabilities](console.md#optional-capabilities) that the agent offers to turn on when a task needs one. Which systems connect, who owns them, and who accepts the result are project decisions. See [What Remains Project Work](evaluate.md#project-work).
@@ -166,7 +165,7 @@ The forms add-on is built for organizations that license Adobe Experience Manage
 
 If the project has no form block yet, the add-on adds the form block of Experience Manager Forms. That block sends every submission to the [Forms Submission Service](/help/forms/forms-submission-service.md), which identifies the form by the path of its definition and stores the data in the spreadsheet linked in the definition's submit row. The add-on doesn't link a spreadsheet, and it doesn't keep the address that the source form submitted to, so connect a destination before the form goes live. See [Choose a Destination](#form-destination). The add-on itself needs no license, but the form block and the Forms Submission Service require an Experience Manager Forms license.
 
-Without Experience Manager Forms, the add-on's field inventory is the part that still helps: it captures each form's fields, labels, types, options, and validation. The agent has no skills for other form platforms. It knows them only in general, and their APIs change, so give it the platform's current documentation and ask it to read it first. It can then build a form block that reads the same definitions and submits to your platform, or embed the form that your platform hosts. See [Work Beyond Edge Delivery Services](prompting-guide.md#beyond-eds).
+Without Experience Manager Forms, the add-on's field inventory is the part that still helps: it captures each form's fields, labels, types, options, and validation. The agent has no skills for other form platforms, so have it read your platform's documentation first, as described in [Work Beyond Edge Delivery Services](prompting-guide.md#beyond-eds). It can then build a form block that reads the same definitions and submits to your platform, or embed the form that your platform hosts.
 
 The add-on reads each form from the HTML that the source server sends. A form that a script adds in the browser, such as a form embedded from a marketing platform, isn't in that HTML, so the add-on doesn't import it. Ask the agent to rebuild that form, or to embed it again from your platform.
 
@@ -216,9 +215,9 @@ The commerce pages add-on is built for storefronts that run on Adobe Commerce. I
 
 The add-on doesn't write the commerce blocks. It uses the product and listing blocks that the project already has, and otherwise expects the `product-details` and `product-list-page` blocks of the [commerce storefront boilerplate](https://experienceleague.adobe.com/en/tools/commerce-storefront/boilerplate/). Start the project from that boilerplate, and connect the storefront to your catalog, so that the imported pages show products when you check them. The add-on itself needs no license, but the storefront's drop-in components require an Adobe Commerce as a Cloud Service or Adobe Commerce Optimizer license. Adobe Commerce Optimizer can also supply the catalog when another commerce platform handles the cart, checkout, and orders. See [Backend options](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/backends/).
 
-For another commerce platform without Adobe Commerce Optimizer, the add-on doesn't apply. The agent has no skills for other commerce platforms, so give it the platform's current documentation and ask it to read it first. It can then build product and listing blocks that load their data from the platform's API. See [Work Beyond Edge Delivery Services](prompting-guide.md#beyond-eds).
+For another commerce platform without Adobe Commerce Optimizer, the add-on doesn't apply. The agent builds product and listing blocks that load their data from the platform's API, working from the platform's documentation as described in [Work Beyond Edge Delivery Services](prompting-guide.md#beyond-eds).
 
-The add-on works with [document-based persistence](overview.md#document-based). For projects with [JCR persistence](overview.md#jcr-persistence), the agent uses the standard migration, which imports what each product page shows at that moment. Decide with your team how those pages connect to the catalog.
+The add-on works with [document-based content](overview.md#document-based). For projects that use [Experience Manager authoring](overview.md#jcr-persistence), the agent uses the standard migration, which imports what each product page shows at that moment. Decide with your team how those pages connect to the catalog.
 
 ## Update an Existing Block {#update}
 
@@ -241,7 +240,7 @@ Hand over the changed behavior, affected variants, author instructions, and any 
 Refactoring improves implementation while preserving agreed behavior. It is not the same as regrouping a catalog, redesigning a block, or migrating its content model.
 
 1. Name the code to improve and the reason, such as duplicated decoration logic.
-1. Record invariants: content model, appearance, responsive behavior, accessibility, public selectors/API contracts, and integrations to preserve.
+1. Record what must not change: content model, appearance, responsive behavior, accessibility, the selectors and APIs that other code relies on, and integrations.
 1. Establish baseline examples and existing tests. Check uses of shared code and styles before consolidating them.
 1. Ask for the smallest refactor that meets the goal. Keep any necessary behavior/model change explicit and separate.
 1. Compare before and after across affected pages and variants, run the project checks, and inspect the diff.
@@ -250,7 +249,7 @@ For example:
 
 > Refactor duplicated card-decoration logic in [blocks/files]. Preserve authored models, output semantics, appearance, link behavior, keyboard access, and analytics hooks. Use [paths] as regression examples. Report compatibility risks and test results. Do not migrate content or push changes.
 
-There is no separate refactoring command: you ask in chat, and the agent changes the code as a developer would, within the invariants you set.
+There is no separate refactoring command: you ask in chat, and the agent changes the code as a developer would, within the limits you set.
 
 ## Validate and Deliver {#validation}
 
@@ -262,7 +261,7 @@ Check:
 * Desktop/mobile layout, long content, and image behavior.
 * Keyboard access, focus, semantics, labels, and reading order.
 * Existing interactions and integrations.
-* Author edit/save/reopen and preview on the selected persistence target when models or content change.
+* When models or content change, that authors can edit, save, and reopen the content in their editor, and that it previews correctly.
 * Relevant performance checks and no new browser errors.
 
 If a check fails, retain the failing example and fix the smallest affected layer. Distinguish stale preview/code-branch problems from model or implementation failures. Re-run the failing check and relevant regressions.

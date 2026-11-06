@@ -169,7 +169,7 @@ You don't need to write these files by hand. Ask the agent to create and update 
 
 ## Leave a Record of Each Request {#trace}
 
-The console keeps no audit log of the agent's actions. What the agent produces reaches your site through your Git repository or Adobe Experience Manager, so your Git history and the version history of your content are the record. See [Trace What the Agent Did](evaluate.md#audit-trail). To make that record easy to follow, add a standing rule to `AGENTS.md` so that each request leaves its own commit and content upload:
+Your Git history and the version history of your content are the record of what the agent did; see [Trace What the Agent Did](evaluate.md#audit-trail). To make that record easy to follow, add a standing rule to `AGENTS.md` so that each request leaves its own commit and content upload:
 
 ```markdown
 ## After Each Request
@@ -205,7 +205,7 @@ A skill is a set of instructions for one kind of task, often step by step. It wo
 To add a custom skill:
 
 1. Ask the agent to create the skill in its own folder under `.claude/skills/`, such as `.claude/skills/gallery-images/SKILL.md`. The file starts with a short header that gives the skill a `name` and a `description` of when to use it. The steps, the checks that show the task succeeded, and a short example follow.
-1. Push the skill. The console's file views hide folders whose names start with a dot and can't stage them, so ask the agent to commit and push the skill, with **Allow LLM to use my git credentials** turned on in [**Settings**](console.md#settings-page). Without that permission, add the file in GitHub or in a local clone, then pull the code into the console.
+1. Ask the agent to commit and push the skill. The console's file views can't stage folders whose names start with a dot; [Code Views](console.md#code-view) explains the permission that the agent needs to push them, and what to do without it.
 1. Test the skill in a new conversation. Ask for it by name, such as "Use the gallery-images skill to import this page". To check that the agent found it, ask it to read the skill and tell you its name and description. A list of the agent's skills covers its built-in skills, so it doesn't show whether yours loaded.
 
 The header of `SKILL.md` looks like this:
@@ -231,7 +231,7 @@ Claude-based agents, like the one that the console currently runs, discover skil
 
 The folder's name starts with a dot, which has two effects:
 
-* Your site doesn't serve it. The AEM boilerplate's `.hlxignore` file excludes files and folders whose names start with a dot.
+* Your site doesn't serve it, because the `.hlxignore` rules described [above](#organize) exclude it.
 * The console's [file views](console.md#code-view) don't show it. To review a skill, ask the agent to show it, or open it in GitHub.
 
 If your project already has skills in a visible folder that `AGENTS.md` indexes, they keep working. To have them load natively, ask the agent to move them to `.claude/skills/`, add the header, and remove the index lines.

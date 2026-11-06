@@ -67,7 +67,7 @@ Some requests go beyond the look of the site. Adding a field that authors fill i
 1. Open a page in the console's preview panel.
 1. In the **Viewport** menu, choose the width that you want to check: **Desktop**, **Tablet**, or **Mobile**.
 1. Turn on **Inspect mode** with the select icon in the preview panel.
-1. Select the element that you want to change, such as a heading, an image, or a button. The element is added to your prompt.
+1. Select the element that you want to change, such as a heading, an image, or a button. The element is added to your prompt: the agent receives its HTML and its position on the page, and limits its changes to that element.
 1. Describe the change and how far it should reach, then send the prompt. For example: "Make this button use our primary style, here and on every page."
 1. When the agent finishes, select **Refresh preview** if the preview hasn't updated. Check the result at each **Viewport** size.
 1. If something isn't right, say what you see, such as "On mobile, the text touches the image." Ask for one change at a time, and check it before you ask for the next one.
@@ -126,13 +126,10 @@ When a change should apply to some pages only, ask for one of these instead:
 
 ## Hand Over for Review {#hand-over}
 
-1. Optionally, open the **Changes** view to see which files changed.
-1. Open **Sync** in the workspace header and select **Push** > **Code**.
-1. In the **Stage changes** dialog, stage the files that belong to your change, and select **Continue**.
-1. In the **Push changes** dialog, describe the change in a plain sentence, such as "Rounded corners and shadow for cards." Choose **Create new PR** and select **Confirm**.
+1. Push your code with **Create new PR**, as described in [Push Code Changes](getting-started.md#push-code-changes). Stage only the files that belong to your change, and describe it in a plain sentence, such as "Rounded corners and shadow for cards."
 1. Select **View PR** in the notification, and send the pull request's link to the developer who reviews it.
 
-The pull request lists preview URLs of your pages on a new branch, so that the developer can see the result. Your console workspace stays on that branch. To make the changes that the reviewer asks for, keep working there and push with **Push to current branch**; the pull request updates. To start an unrelated change, return to the original branch with **Switch branch** in the [Changes view](console.md#changes-actions). For repositories connected through Cloud Manager, the console pushes the branch without opening a pull request; ask the developer to open it.
+To make the changes that the reviewer asks for, keep working on the same branch and push with **Push to current branch**; the pull request updates.
 
 Your change reaches the live site when the developer merges it. If you also changed text or images on a page, that is a content change: it reaches the site only when the page is uploaded and published. Agree with the authors who does that. See [Coordinate Content Changes](production-migration.md#share-content).
 
@@ -150,7 +147,7 @@ Your change reaches the live site when the developer merges it. If you also chan
 | Pull request | A request to merge your branch into another branch, which a developer reviews before merging. |
 | Preview | The console's rendering of your workspace. After you push, each branch also has its own preview URL. |
 
-For more terms, see [Understand Your Project](overview.md#project-foundations) and [Shape the Content Structure](production-migration.md#content-structure).
+Sections, blocks, and default content are explained in more depth under [Shape the Content Structure](production-migration.md#content-structure).
 
 ## Example Prompts {#example-prompts}
 
