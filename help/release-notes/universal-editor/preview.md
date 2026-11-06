@@ -32,16 +32,7 @@ These **preview** release notes are provided as a convenience so you know what c
 >
 >The content of the actual release as well as the release date are subject to change.
 
-## Upcoming Features {#upcoming-features}
-
-* ID-based Content Fragment references were added reducing lookup requests.
-  * Please contact Adobe to enable this feature.
-* Support for composite Content Fragment fields was added.
-* A lightweight WebMCP tool for retrieving the current selection and its loaded content was added.
-  * Please contact Adobe to enable this feature.
-* Variation selection and variation-aware previews were added to the new Content Fragment and Experience Fragment reference pickers.
-
 ## Upcoming Changes {#upcoming-improvements}
 
-* Tag fields no longer render a separate picker for each tag. Multiple tags now share one picker, while single-tag fields respect their configuration.
-* Error notifications were updated to support structured service errors while retaining compatibility with older responses.
+* Rich Text Editor toolbar tooltips now display the keyboard shortcuts for their actions.
+* The device emulator's custom responsive width was fixed so a typed value takes effect when committed instead of reverting to the previous width. The width field also now resets properly and is read-only when switching back to the desktop preset.
