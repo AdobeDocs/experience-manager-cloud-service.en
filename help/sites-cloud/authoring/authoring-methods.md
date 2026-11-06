@@ -36,11 +36,11 @@ Check with your system administrator or project manager if you are uncertain whi
 
 ## Experience Workspace {#experience-workspace}
 
-Modern content is created by agents, LLMs, automated pipelines, and authors in AEM. Experience Workspace is the central place where teams review, collaborate, approve, and deploy content with confidence by combining human creativity and AI capabilities.
+Modern content is created by agents, LLMs, automated pipelines, and authors in AEM. Experience Workspace is the new default face of AEM. It is a central place where teams review, collaborate, approve, and deploy content with confidence by combining human creativity and AI capabilities.
 
 ![Experience Workspace](assets/experience-workspace.png)
 
-Experience Workspace is a lightweight, documented-oriented authoring surface featuring powerful features such as translation, multi-site management, and snapshots and is recommended for all new projects.
+Experience Workspace is a lightweight, documented-oriented authoring surface with powerful features such as translation, multi-site management, and snapshots and is the default for all new projects.
 
 To learn more about Experience Workspace, please see the document [About Experience Workspace.](https://www.aem.live/docs/ew/about)
 

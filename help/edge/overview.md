@@ -80,7 +80,7 @@ Modern content is created by agents, LLMs, automated pipelines, and authors in A
 
 ![Experience Workspace](assets/experience-workspace.png)
 
-Experience Workspace is the modern default face to AEM. It offers powerful features such as translation, multi-site management, and snapshots and is recommended for all new projects.
+Experience Workspace is the modern default face to AEM. It offers powerful features such as translation, multi-site management, and snapshots and is the default for all new projects.
 
 ### Universal Editor {#universal-editor}
 
