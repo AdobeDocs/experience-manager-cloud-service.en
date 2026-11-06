@@ -123,12 +123,14 @@ The independence works in both directions: changes that others push or upload do
 
 ### How Changes Go Live {#code-content-lifecycle}
 
+![Code moves down from the console workspace: pushing puts it on your branch, and merging after review puts it on main, the production code. Content moves across: uploading saves the page in Experience Workspace or on the author instance, previewing puts it on the preview site, and publishing puts it on the live site. Each branch has a preview URL and a live URL that show its code with the previewed or published content. The live URL of main is the production site.](assets/code-content-lifecycle.png)
+
 Code and content reach the live site in different ways:
 
 * **Code:** Edge Delivery Services fetches your code from GitHub through the [AEM Code Sync](https://github.com/apps/aem-code-sync) app, or from another Git host through Cloud Manager ([Bring Your Own Git](https://www.aem.live/developer/byo-git)). Each branch gets its own URLs, and a change pushed to a branch shows on that branch's preview and live URLs at the same time. Code has no separate publish step: merging into `main` updates the code of the production site immediately, so check a branch on its own URLs before you merge it.
 * **Content:** Authors first preview a page, which copies the saved content to the preview site on `*.aem.page`. They then publish it, which makes it live on `*.aem.live`. Authors do both from the authoring UI or from the [AEM Sidekick](https://www.aem.live/docs/sidekick) browser extension.
 
-Preview URLs follow the pattern `https://{branch}--{repo}--{owner}.aem.page`, and live URLs the same pattern on `aem.live`. `{owner}` is the GitHub organization or user that owns the repository, and `{repo}` is the repository name.
+Preview URLs follow the pattern `https://{branch}--{repo}--{owner}.aem.page` and show previewed content. Live URLs follow the same pattern on `aem.live` and show published content. `{owner}` is the GitHub organization or user that owns the repository, and `{repo}` is the repository name. Content isn't branched: every branch shows the same pages, each with its own code. The live URL of `main` is the production site, which your own domain serves after the cutover.
 
 ### Names You May See {#names}
 
