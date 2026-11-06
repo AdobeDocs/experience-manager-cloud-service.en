@@ -75,7 +75,7 @@ You can start with a short prompt, such as "Create a testimonials block". The ag
 | To show the agent | Provide |
 |---|---|
 | A design on an existing site | The page URL, and the section to match. |
-| A design that isn't online | A screenshot or image (JPEG, PNG, GIF, or WebP), with **Attach files** in the [prompt input](console.md#prompt-input). For Figma designs, see [Figma block migration](prompting-guide.md#figma-block-migration). |
+| A design that isn't online | A screenshot or image (JPEG, PNG, GIF, or WebP), with **Attach files** in the [prompt input](console.md#prompt-input). For Figma designs, see [Create a Block from Figma](prompting-guide.md#figma-block-migration). |
 | An element in the console preview | Select it with **Inspect mode** in the [content views](console.md#content-view). The agent receives the element's HTML and its position on the page, and limits its changes to that element. |
 | How authors fill in the block | Example content, the parts that are optional or repeat, and the variants you need. |
 

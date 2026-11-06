@@ -124,14 +124,14 @@ Core skills, such as site planning, page migration, bulk import, and header, nav
 
 | Add-on | ID | What it is for |
 |---|---|---|
-| Figma import | `excat-figma@excat-extended` | Migrating blocks and creating pages from Figma designs. See [Figma block migration](prompting-guide.md#figma-block-migration). |
+| Figma import | `excat-figma@excat-extended` | Migrating blocks and creating pages from Figma designs. See [Create a Block from Figma](prompting-guide.md#figma-block-migration). |
 | Guided redesign (Stardust) | `stardust@excat-extended` | Redesigning several pages of a site to a new design direction, step by step, and checking the result. See [Guided Redesign](restyling.md#guided-redesign). |
 | Design craft | `impeccable@excat-extended` | Applying frontend design-quality guidance, such as typography, spacing, and visual hierarchy, to design work. Turned on automatically with guided redesign, and usable on its own. |
 | Project documentation | `project-management@excat-extended` | Generating project and handover documentation as PDF guides. See [Project documentation](project-documentation.md). |
 | Forms migration | `forms-excat@excat-extended` | Migrating the source's forms with two or more fields to the form block of Edge Delivery Services for Adobe Experience Manager Forms. Built for organizations that license Experience Manager Forms: the add-on needs no license, but the form block does. Its field inventory also helps with other form platforms. See [What the Forms Add-on Does](block-development.md#forms-add-on). |
 | Commerce pages | `excat-commerce@excat-extended` | Detecting product detail and product listing pages and migrating them to pages whose commerce blocks load the product data from the catalog. Built for storefronts on Adobe Commerce, with document-based persistence. See [Commerce Pages](block-development.md#commerce-pages). |
 | Block library setup | `excat-block-library@excat-extended` | Setting up the library that authors use to find and insert your blocks. See [Block deliverables](block-development.md#block-deliverables). |
-| Edge Delivery Services troubleshooting | `excat-support@excat-extended` | Diagnosing site problems on demand, such as blocks that don't render or changes that don't appear. See [Debugging](prompting-guide.md#debugging). |
+| Edge Delivery Services troubleshooting | `excat-support@excat-extended` | Diagnosing site problems on demand, such as blocks that don't render or changes that don't appear. See [Debug a Problem](prompting-guide.md#debugging). |
 | Modern web guidance | `modern-web-guidance@excat-extended` | Applying current web-platform best practices, for example for fonts, loading performance, accessibility, and layout, when the agent writes CSS and JavaScript. |
 
 The add-ons on offer can change between releases. If the agent says that it can't do something, ask whether an add-on covers it.

@@ -225,7 +225,7 @@ How images reach the new site depends on the content destination:
 
 * **Experience Workspace:** While you work in the console, an imported page can still reference images on the source site. When you upload the page, the console uploads its images with it, including images that it downloads from the source, into a folder named after the page with a leading dot. It then points the page to the uploaded copies. If an image is missing, in an unsupported format, or ambiguous, the console reports it and doesn't upload the page. After the upload, it checks that every image arrived. See [Upload Content](getting-started.md#upload-content).
 * **Experience Manager authoring:** Select **Upload images** when you upload the content package, and choose a folder under `/content/dam/`. The default is `/content/dam/site`. See [Upload Content](getting-started-aem-authoring.md#upload-content).
-* **Adobe Dynamic Media:** Images that the source serves from Dynamic Media stay there. The imported page references them, and the project's code renders them.
+* **Adobe Dynamic Media:** Images that the source serves from Dynamic Media, including Scene7 URLs, stay there. Scene7 is the earlier name of Dynamic Media. The imported page references them, and the project's code renders them.
 
 Edge Delivery Services stores each image once and serves it in sizes and formats that fit each screen. Check large files, videos, and SVG images against the [limits for file types and sizes](https://www.aem.live/docs/limits).
 

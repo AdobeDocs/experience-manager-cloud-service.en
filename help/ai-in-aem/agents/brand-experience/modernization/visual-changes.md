@@ -98,7 +98,7 @@ The agent can read a design from Figma through the Figma import add-on. It turns
 
 Things to know:
 
-* **One component or frame at a time.** The agent builds one block from a component, or one page from a frame. Check each result before you send the next link. See [Figma Block Migration](prompting-guide.md#figma-block-migration) and [Create a New Page from Figma](prompting-guide.md#figma-new-page-from-figma).
+* **One component or frame at a time.** The agent builds one block from a component, or one page from a frame. Check each result before you send the next link. See [Create a Block from Figma](prompting-guide.md#figma-block-migration) and [Create a New Page from Figma](prompting-guide.md#figma-new-page-from-figma).
 * **Your token, your files.** The personal access token reads every Figma file that you can open, and nothing else. Figma issues it and sets its limits. Each person stores their own token; the agent never receives it. It has nothing to do with design tokens, the colors and spacing that the agent reads from the design.
 * **Your Figma seat.** Figma limits how often a token can read files. With a View or Collab seat, a token can read files only a few times a month, so you need a Dev or Full seat. If the console reports a Figma API error with status 429, the token has reached Figma's limit. See Figma's [rate limits](https://developers.figma.com/docs/rest-api/rate-limits/).
 * **The add-on.** Figma import is an [optional capability](console.md#optional-capabilities). If it isn't on for your project, the agent offers to turn it on.
