@@ -117,6 +117,12 @@ Adobe is committed to empowering you with the best community engagement and supp
 * Participate in the [Experience League Community](https://adobe.ly/3Q6kTKl) to ask questions, share feedback, initiate discussions, seek assistance from Adobe experts and AEM Advisors/Champs, and connect with like-minded individuals in real-time.
 * Join the [Discord channel](https://discord.gg/aem-live), a more casual platform for real-time interactions and quick idea exchanges.
 
+### Access Your Product Collaboration Channel {#collaboration-channel}
+
+Adobe creates a dedicated Microsoft Teams or Slack channel for each Edge Delivery Services customer. In this channel, your business users, developers, and authors can ask Adobe experts about authoring and development, coordinate your launch or migration, and get help with best practices.
+
+To request a channel for your company, or to join your company's existing channel, contact your Adobe account team or Adobe Support. For more information, see the aem.live documentation on using [Teams](https://www.aem.live/docs/teams) and [Slack](https://www.aem.live/docs/slack) for collaboration.
+
 ### Logging a Support Ticket {#support-ticket}
 
 {{support-ticket}}
