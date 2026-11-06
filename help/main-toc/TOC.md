@@ -1256,7 +1256,7 @@ user-guide-title: AEM as a Cloud Service
         + [Project Instructions and Memory](/help/ai-in-aem/agents/brand-experience/modernization/project-instructions.md)
         + [Generate Project Documentation](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md)
         + [Site Catalog](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
-        + [AOE Delivery](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
+        + [Delivery by Agentic Outcome Engineers](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
         + [Troubleshooting](/help/ai-in-aem/agents/brand-experience/modernization/troubleshooting.md)
         + [FAQ](/help/ai-in-aem/agents/brand-experience/modernization/faq.md)
     + Content Advisor Agent {#content-advisor}

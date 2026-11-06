@@ -1,5 +1,5 @@
 ---
-title: AOE Delivery of the Experience Modernization Agent
+title: Delivery by Agentic Outcome Engineers
 description: Have Adobe engineers migrate your site with the Experience Modernization Agent, and learn what to agree before an engagement starts.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
@@ -26,7 +26,7 @@ role_v2:
     internal-label: Developer
 ---
 
-# AOE Delivery of the Experience Modernization Agent {#aoe-delivery}
+# Delivery by Agentic Outcome Engineers {#aoe-delivery}
 
 Adobe's Agentic Outcome Engineers (AOEs) can migrate your site for you with the Experience Modernization Agent. AOE delivery is an optional engagement, not a separate tier of the agent: the same agent, operated by Adobe engineers who add engineering work and review to its automation.
 
@@ -73,7 +73,7 @@ Checkpoints for component mapping, design review, the authoring workflow, and pr
 
 Confirm who owns ongoing content, code, integrations, and operations. Follow the support arrangements agreed for the engagement and your Adobe support entitlement; do not assume ongoing AOE implementation work is included after handoff.
 
-## AOE Delivery Scope {#scope}
+## Delivery Scope {#scope}
 
 The engagement defines which automated and manual work is included in each of these areas.
 
