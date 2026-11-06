@@ -140,7 +140,7 @@ This cache:
 
 * is scoped to a single GraphQL request and discarded when the request completes.
 * avoids re-processing the same fragment when it appears multiple times; for example, via references.
-* can consume significant heap when queries resolve deeply nested fragments with many fields.
+* can consume significant heap when queries resolve deeply referenced fragments with many fields.
 
 If you experience high memory usage on the publish environment, or out-of-memory issues under concurrent GraphQL load (especially with complex nested reference queries) you may need to configure the maximum cache size. 
 
@@ -196,7 +196,7 @@ Also a GraphQL standard, sorting enables clients to receive JSON content in sort
 
 Sorting can only be efficient if all sort criteria are related to top-level fragments.
 
-  If the sorting order includes one, or more, fields that are located on a nested fragment, then all fragments sharing the top-level model must be loaded into memory. This causes a negative performance impact.
+  If the sorting order includes one, or more, fields that are located on a referenced fragment, then all fragments sharing the top-level model must be loaded into memory. This causes a negative performance impact.
 
 >[!NOTE]
 >
@@ -216,9 +216,9 @@ The main goal of all optimization recommendations is to reduce the initial resul
 
 Currently, filtering at the JCR level only works for top-level fragments.
 
-If a filter addresses the fields of a nested fragment, AEM has to fall back to loading (into memory) all fragments that share the underlying model. 
+If a filter addresses the fields of a referenced fragment, AEM has to fall back to loading (into memory) all fragments that share the underlying model. 
 
-You can still optimize such GraphQL queries by combining filter expressions on fields of top-level fragments and those on fields of nested fragments with the [AND operator](#logical-operations-in-filter-expressions).
+You can still optimize such GraphQL queries by combining filter expressions on fields of top-level fragments and those on fields of referenced fragments with the [AND operator](#logical-operations-in-filter-expressions).
 
 ### Use the content structure {#use-content-structure}
 
@@ -255,7 +255,7 @@ This can be done by applying a filter on the `_path` field of the top-level frag
 
 You can also use paging to reduce the initial result set; especially if your requests do not use any filtering and sorting.
 
-If you filter or sort on nested fragments, paginated queries can still be slow, as AEM may still need to load larger amounts of fragments into memory. Therefore, if you combine filtering and paging, consider the rules for filtering (as mentioned above).
+If you filter or sort on referenced fragments, paginated queries can still be slow, as AEM may still need to load larger amounts of fragments into memory. Therefore, if you combine filtering and paging, consider the rules for filtering (as mentioned above).
 
 For paging, sorting is equally important, as paginated results are always sorted - either in an explicit or an implicit way.
 
@@ -263,13 +263,13 @@ If you are primarily interested in only retrieving the first few pages, there is
 
 ### Logical operations in filter expressions {#logical-operations-in-filter-expressions}
 
-If you are filtering on nested fragments, you can still apply JCR filtering by providing an accompanying filter on a top-level field that is combined using the `AND` operator.
+If you are filtering on referenced fragments, you can still apply JCR filtering by providing an accompanying filter on a top-level field that is combined using the `AND` operator.
 
-A typical use-case would be to restrict the scope of the query using a filter on the `_path` field of the top-level fragment, and then filter on additional fields that might be on the top-level, or on a nested fragment.
+A typical use-case would be to restrict the scope of the query using a filter on the `_path` field of the top-level fragment, and then filter on additional fields that might be on the top-level, or on a referenced fragment.
 
 In this case, the different filter expressions would be combined with `AND`. Therefore, the filter on `_path` can effectively limit the initial result set. All other filters on top-level fields can help with reducing the initial result set as well - as long as they are combined with `AND`.
 
-Filter expressions combined with `OR` cannot be optimized if nested fragments are involved. `OR` expressions can only be optimized if *no* nested fragments are involved.
+Filter expressions combined with `OR` cannot be optimized if referenced fragments are involved. `OR` expressions can only be optimized if *no* referenced fragments are involved.
 
 ### Avoid filtering on multiline textfields {#avoid-filtering-multiline-textfields}
 
@@ -303,9 +303,9 @@ There are several other situations where a filter expression cannot be evaluated
 
 ### Minimize Content Fragment Nesting {#minimize-content-fragment-nesting}
 
-Nesting Content Fragments is a great way to model custom content structures. You can even have a fragment with a nested fragment, that also has a nested fragment, that has...and so on. 
+Nesting Content Fragments is a great way to model custom content structures. You can even have a fragment with a referenced fragment, that also has a referenced fragment, that has...and so on. 
 
-However, creating a structure with too many levels can increase the processing times for a GraphQL query, as GraphQL has to traverse the entire hierarchy of all nested Content Fragments. 
+However, creating a structure with too many levels can increase the processing times for a GraphQL query, as GraphQL has to traverse the entire hierarchy of all nested content in Content Fragments. 
 
 Deep nesting can also have adverse effects on content governance. In general, it is recommended to limit Content Fragment nesting to below five or six levels.
 

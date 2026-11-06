@@ -31,23 +31,23 @@ This integration means that you can track usage of Dynamic Media Viewers on your
 
 To learn more about Adobe extensions or third-party extensions, see [Adobe extensions](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/overview) in the Experience Platform Tags User Guide.
 
-**This topic is intended for the following:** Site administrators, Developers on the Adobe Experience Manager program, and people in Operations.
+**This topic is intended for the following:** Site administrators, Developers on the Adobe Experience Manager program, and operations staff.
 
 ### Limitations of the integration {#limitations-of-the-integration}
 
 * Experience Platform Tags integration for Dynamic Media viewers does not work in the Experience Manager author node. You cannot see any tracking from a WCM page until it is published.
-* Experience Platform Tags integration for Dynamic Media viewers is not supported for "pop-up" operation mode, where the viewer URL is obtained using the "URL" button on the Asset Details page.
-* Experience Platform Tags integration cannot be used simultaneously with legacy viewers Analytics integration (by way of the `config2=` parameter).
-* Support for video tracking is limited to core playback tracking only, as described in [Tracking Overview](https://experienceleague.adobe.com/en/docs/media-analytics/using/tracking/track-core-overview#player-events). In particular, QoS, Ads, Chapter/Segments, or Errors tracking are not supported.
+* Experience Platform Tags integration for Dynamic Media viewers is not supported for "pop-up" operation mode where the viewer URL is obtained using the "URL" button on the Asset Details page.
+* Experience Platform Tags integration cannot be used simultaneously with the legacy viewers Analytics integration (by way of the `config2=` parameter).
+* Support for video tracking is limited to core playback tracking only, as described in [Tracking Overview](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/overview#player-events). In particular, QoS, Ads, Chapters/Segments, or Errors tracking are not supported.
 * Storage Duration configuration for Data Elements is not supported for Data Elements using the *Dynamic Media Viewers* extension. Storage Duration must be set to **[!UICONTROL None]**.
 
 ### Use cases for the integration {#use-cases-for-the-integration}
 
-The primary use case for the integration with Experience Platform Tags is customers who use both Experience Manager Assets and Experience Manager Sites. In such scenarios, you can set up a standard integration between your Experience Manager author node and Experience Platform Tags, then associate your Sites instance with the Experience Platform Tags property. After that, any Dynamic Media WCM component added to a Sites page will track data and events from viewers.
+The primary use case for the integration with Experience Platform Tags is customers who use both Experience Manager Assets and Experience Manager Sites. In such scenarios, you can set up a standard integration between your Experience Manager author node and Experience Platform Tags, then associate your Sites instance with the Experience Platform Tags property. After that, any Dynamic Media WCM component added to a Sites page tracks data and events from viewers.
 
 See [Track Dynamic Media viewers in Experience Manager Sites](#tracking-dynamic-media-viewers-in-aem-sites).
 
-A secondary use case that the integration supports are those customers who use Experience Manager Assets only, or Dynamic Media Classic. In such cases, you obtain the embed code for your viewer and add it to the website page. Then, get the Experience Platform Tags library production URL from Experience Platform Tags and manually add it to the web page code.
+A secondary use case that the integration supports is for those customers who use Experience Manager Assets only, or Dynamic Media Classic. In such cases, you obtain the embed code for your viewer and add it to the website page. Then, get the Experience Platform Tags library production URL from Experience Platform Tags and manually add it to the web page code.
 
 See [Track Dynamic Media viewers using embedded code](#tracking-dynamic-media-viewers-using-embed-code).
 
@@ -65,11 +65,11 @@ In Experience Platform Tags, the concepts of *Data Elements* and *Rules* work to
 
 A Data Element in Experience Platform Tags is a named property whose value is either statically defined, or dynamically calculated based on the state of a web page or Dynamic Media Viewers data.
 
-Options that are available for a Data Element definition depend on the list of Extensions that are installed in the Experience Platform Tags Property. The "Core" extension is preinstalled and is available out of the box in any configuration. This "Core" extension allows to define a Data Element which value comes from cookie, JavaScript code, query string, and many other sources.
+Options that are available for a Data Element definition depend on the list of Extensions that are installed in the Experience Platform Tags Property. The "Core" extension is preinstalled and is available by default in any configuration. This "Core" extension lets you define a Data Element whose value comes from cookie, JavaScript code, query string, and many other sources.
 
-For Adobe Analytics tracking several other extensions must be installed, as described in [Installation and setup of extensions](#installing-and-setup-of-extensions). Dynamic Media Viewers extension adds an ability to define a Data Element which value is an argument of the Dynamic Viewer event. For example, it is possible to reference the viewer type, or asset name reported by the viewer on load, the zoom level reported when the end-user zooms and much more.
+For Adobe Analytics tracking, several other extensions must be installed, as described in [Installation and setup of extensions](#install-and-setup-of-extensions). The Dynamic Media Viewers extension adds an ability to define a Data Element whose value is an argument of the Dynamic Viewer event. For example, it is possible to reference the viewer type, or asset name reported by the viewer on load, the zoom level reported when the end-user zooms and much more.
 
-Dynamic Media Viewer extension automatically keeps the values of its Data Elements up to date.
+The Dynamic Media Viewer extension automatically keeps the values of its Data Elements up to date.
 
 After you have defined it, a Data Element can be used in other places of Experience Platform Tags UI, using Data Element picker widget. The **Set Variables Action** of the Adobe Analytics extension in a rule references Data Elements defined for Dynamic Media Viewers tracking (see below).
 
@@ -83,9 +83,9 @@ A Rule in Experience Platform Tags is an agnostic configuration that defines thr
 * *Conditions* (if) tell Experience Platform Tags what other restrictions to allow or disallow when triggering a Rule.
 * *Actions* (then) tell Experience Platform Tags what to do when a Rule is triggered.
 
-Options that are available in the Events, Conditions, and Actions section depend on the extensions that are installed in the Experience Platform Tags Property. The *Core* extension is preinstalled and is available out-of-the-box in any configuration. The extension provides several options for Events such as basic browser-level actions that include focus change, key presses, and form submissions. It also includes options for Conditions, such as cookie value, browser type, and more. For Actions, only the Custom Code option is available.
+Options that are available in the Events, Conditions, and Actions section depend on the extensions that are installed in the Experience Platform Tags Property. The *Core* extension is preinstalled and is available by default in any configuration. The extension provides several options for Events such as basic browser-level actions that include focus change, key presses, and form submissions. It also includes options for Conditions, such as cookie value, browser type, and more. For Actions, only the Custom Code option is available.
 
-For Adobe Analytics tracking, several other extensions must be installed, as described in [Installation and setup of extensions](#installing-and-setup-of-extensions). Specifically:
+For Adobe Analytics tracking, several other extensions must be installed, as described in [Installation and setup of extensions](#install-and-setup-of-extensions). Specifically:
 
 * Dynamic Media Viewers extension extends the list of supported Events to events that are specific to Dynamic Media viewers such as viewer load, asset swap, zoom in, and video play.
 * Adobe Analytics extension extends the list of supported Actions with two actions that are required for sending data to tracking servers: *Set Variables* and *Send Beacon*.
@@ -97,7 +97,7 @@ To track Dynamic Media viewers, it is possible to use any type of the following:
 
 In the Actions section, it is required that you have a *Set Variables* action. This action tells Adobe Analytics how to populate tracking variables with data. At the same time, the *Set Variables* action does not send anything to the tracking server.
 
-The **Send Beacon** action must follow the **Set Variables** action. The *Send Beacon* action actually sends data to the analytics tracking server. Both actions, *Set Variables* and *Send Beacon*, come from the Adobe Analytics extension.
+The **Send Beacon** action must follow the **Set Variables** action. The *Send Beacon* action sends data to the analytics tracking server. Both actions, *Set Variables* and *Send Beacon*, come from the Adobe Analytics extension.
 
 See the [Rules](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/rules) in the Experience Platform Tags User Guide.
 
@@ -131,9 +131,9 @@ The following sample configuration within Experience Platform Tags demonstrates 
 
 When an CX Enterprise account is subscribed to use Adobe Analytics for Audio and Video, it is enough to enable video tracking in the *Dynamic Media Viewers* extension settings. Video metrics become available in Adobe Analytics. Video tracking depends on the presence of Adobe Media Analytics for Audio and Video extension.
 
-See [Installation and setup of extensions](#installing-and-setup-of-extensions).
+See [Installation and setup of extensions](#install-and-setup-of-extensions).
 
-Currently, the support for video tracking is limited to "core playback" tracking only, as described in [Tracking Overview](https://experienceleague.adobe.com/en/docs/media-analytics/using/tracking/track-core-overview#player-events). In particular, QoS, Ads, Chapter/Segments, or Errors tracking are not supported.
+Currently, the support for video tracking is limited to "core playback" tracking only, as described in [Tracking Overview](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/overview#player-events). In particular, QoS, Ads, Chapters/Segments, or Errors tracking are not supported.
 
 ## Use the Dynamic Media Viewers extension {#using-the-dynamic-media-viewers-extension}
 
@@ -157,21 +157,21 @@ Following proper configuration, you can add Experience Platform Tags support to 
 
 See [Add the Experience Platform Tags Embed Code](https://experienceleague.adobe.com/en/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code) to learn more about how to use the Experience Platform Tags library embed code.
 
-To learn more about how to use the embedded code feature of Experience Manager Dynamic Media, see [Embedding the Video or Image Viewer on a web page](/help/assets/dynamic-media/embed-code.md).
+To learn more about how to use the embedded code feature of Experience Manager Dynamic Media, see [Embedding the Video or Adobe Image Viewer on a web page](/help/assets/dynamic-media/embed-code.md).
 
 **Track Dynamic Media viewers using embedded code:**
 
 1. Have a web page ready for embedding a Dynamic Media viewer.
 1. Obtain the embed code for the Experience Platform Tags library by first logging in to Experience Platform Tags (see [Configure Experience Platform Tags](#configuring-adobe-launch-for-the-integration)).
 1. Select **[!UICONTROL Property]**, then click the **[!UICONTROL Environments]** tab.
-1. Pick up the Environment level that is relevant to the environment of the web page. Then, in the **[!UICONTROL Install]** column, click the box icon.
-1. **[!UICONTROL In the Web Install Instructions]** dialog box, copy the complete Experience Platform Tags library embed code, along with the surrounding `<script/>` tags.
+1. Select the Environment level that is relevant to the environment of the web page. Then, in the **[!UICONTROL Install]** column, click the box icon.
+1. In the **[!UICONTROL In the Web Install Instructions]** dialog box, copy the complete Experience Platform Tags library embed code, along with the surrounding `<script/>` tags.
 
 ## Reference guide for the Dynamic Media Viewers extension {#reference-guide-for-the-dynamic-media-viewers-extension}
 
 ### About the Dynamic Media Viewers configuration {#about-the-dynamic-media-viewers-configuration}
 
-The Dynamic Media Viewer extension automatically integrates with the Experience Platform Tags library if the following conditions below are true:
+The Dynamic Media Viewer extension automatically integrates with the Experience Platform Tags library if the following conditions are true:
 
 * Experience Platform Tags library global object ( `_satellite`) is present on the page.
 * The Dynamic Media Viewers extension function `_dmviewers_v001()` is defined on `_satellite`.
@@ -196,22 +196,22 @@ The only Data Element type that the Dynamic Media Viewers extension provides is 
 
 When selected, the Data Element editor renders a form with two fields:
 
-* **[!UICONTROL DM viewers event data type]** - a drop-down list displays all viewer events with arguments supported by the Dynamic Media Viewers extension, along with a special **[!UICONTROL COMMON]** item. A **[!UICONTROL COMMON]** item represents a list of event parameters that are common to all type of events sent by the viewers.
+* **[!UICONTROL DM viewers event data type]** - a drop-down list displays all viewer events with arguments supported by the Dynamic Media Viewers extension, along with a special **[!UICONTROL COMMON]** item. A **[!UICONTROL COMMON]** item represents a list of event parameters that are common to all types of events sent by the viewers.
 * **[!UICONTROL Tracking parameter]** - an argument of the selected Dynamic Media viewer event.
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-See the [Dynamic Media Viewers reference guide](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers) for the list of supported events by each viewer type; go to the specific viewer section, then select the Support for Adobe Analytics tracking subsection. Currently, the Dynamic Media Viewers reference guide does not document event arguments.
+See the [Dynamic Media Viewers reference guide](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers) for the list of supported events by each viewer type; go to the specific viewer section, then select the Support for Adobe Analytics tracking subsection. Currently, the Dynamic Media Viewers reference guide does not document the event arguments.
 
-Let's now consider the life cycle of the Dynamic Media Viewers *Data Element*. The value of such a Data Element is populated after the corresponding Dynamic Media viewer event happens on the page. For example, suppose the Data Element points to the **[!UICONTROL LOAD]** event and its "asset" argument. The value of such a Data Element receives valid data after the viewer runs the LOAD event for the first time. If the Data Element points to the **[!UICONTROL ZOOM]** event and its "scale" argument, the value of such Data Element remains empty until the viewer sends a **[!UICONTROL ZOOM]** event for the first time.
+Now consider the life cycle of the Dynamic Media Viewers *Data Element*. The value of such a Data Element is populated after the corresponding Dynamic Media viewer event happens on the page. For example, suppose the Data Element points to the **[!UICONTROL LOAD]** event and its "asset" argument. The value of such a Data Element receives valid data after the viewer runs the LOAD event for the first time. If the Data Element points to the **[!UICONTROL ZOOM]** event and its "scale" argument, the value of such a Data Element remains empty until the viewer sends a **[!UICONTROL ZOOM]** event for the first time.
 
-Similarly, the values of Data Elements get automatically updated when the viewer sends a corresponding event on the page. The value update happens even if the particular event is not specified in the Rule configuration. For example, suppose the Data Element **[!UICONTROL ZoomScale]** is defined for "scale" parameter of the ZOOM event. However, the **[!UICONTROL LOAD]** event is the only trigger in the Rule configuration. The value of **[!UICONTROL ZoomScale]** is still updated every time a user runs zoom inside the viewer.
+Similarly, the values of Data Elements get automatically updated when the viewer sends a corresponding event on the page. The value update happens even if a particular event is not specified in the Rule configuration. For example, suppose the Data Element **[!UICONTROL ZoomScale]** is defined for "scale" parameter of the ZOOM event. However, the **[!UICONTROL LOAD]** event is the only trigger in the Rule configuration. The value of **[!UICONTROL ZoomScale]** is still updated every time a user performs zoom inside the viewer.
 
-Any Dynamic Media viewer has a unique identifier on the web page. The Data Element tracks the value itself, and the viewer that has populated the value. For example, suppose that there are several viewers on the same page, and an **[!UICONTROL AssetName]** Data Element that points to the **[!UICONTROL LOAD]** event and its "asset" argument. The **[!UICONTROL AssetName]** Data Element maintains a collection of asset names that are associated with each viewer loaded on the page.
+Any Dynamic Media viewer has a unique identifier on the web page. The Data Element tracks the value itself, and the viewer that has populated the value. For example, suppose that there are several viewers on the same page, and an **[!UICONTROL AssetName]** Data Element that points to the **[!UICONTROL LOAD]** event and its "asset" argument exists. The **[!UICONTROL AssetName]** Data Element maintains a collection of asset names that are associated with each viewer loaded on the page.
 
-The exact value returned by the Data Element depends on the context. If a Rule triggered by a Dynamic Media viewer event requests the Data Element, the value is returned for the viewer that initiated the Rule. If a Rule triggered by an event from another Experience Platform Tags extension requests the Data Element, it follows the corresponding event's context. At that point, the value of the Data Element comes from the viewer that was last to update this Data Element.
+The exact value returned by the Data Element depends on the context. If a Rule triggered by a Dynamic Media viewer event requests the Data Element, the value is returned for the viewer that initiated the Rule. If a Rule triggered by an event from another Experience Platform Tags extension requests the Data Element, it follows the corresponding event's context. At that point, the value of the Data Element comes from the viewer that was the last to update this Data Element.
 
-**Consider the following sample setup:**
+**Review the following sample setup:**
 
 * A web page that has two Dynamic Media zoom viewers: *viewer1* and *viewer2*.
 
@@ -231,17 +231,17 @@ Now, assume the user loads the web page with the two viewers. In *viewer1*, they
 The user's activity results in the following two tracking calls being made to Adobe Analytics:
 
 * The first call occurs because the **[!UICONTROL TrackPan]** Rule is triggered when the user pans in *viewer1*. That call sends **50%** as the value of the **[!UICONTROL ZoomScale]** Data Element because it recognizes that *viewer1* triggered the Rule and retrieves the corresponding scale value;
-* The second call occurs because the **[!UICONTROL TrackKey]** Rule is triggered when the user pressed a key on the keyboard. That call sends 25% as the value of the **[!UICONTROL ZoomScale]** Data Element because the viewer did not trigger the Rule. As such, the Data Element returns the most up-to-date value.
+* The second call occurs because the **[!UICONTROL TrackKey]** Rule is triggered when the user presses a key on the keyboard. That call sends 25% as the value of the **[!UICONTROL ZoomScale]** Data Element because the viewer did not trigger the Rule. As such, the Data Element returns the most up-to-date value.
 
-The sample set up above also affects the life span of the Data Element value. The value of the Data Element managed by the Dynamic Media Viewer is stored in Experience Platform Tags library code even after the viewer itself is disposed on the web page. This functionality means that if a Rule triggered by a non-Dynamic Media Viewer extension references the Data Element, it returns the last known value. Even if the viewer is no longer present on the web page.
+The sample setup above also affects the life span of the Data Element value. The value of the Data Element managed by the Dynamic Media Viewer is stored in Experience Platform Tags library code even after the viewer itself is disposed on the web page. This functionality means that if a Rule triggered by a non-Dynamic Media Viewer extension references the Data Element, it returns the last known value. Even if the viewer is no longer present on the web page.
 
-In any case, values of Data Elements driven by Dynamic Media Viewers are not stored on the local storage or on the server; instead, they are kept only on the client-side Experience Platform Tags library. Values of such Data Element disappear when the web page reloads.
+Values of Data Elements driven by Dynamic Media Viewers are not stored on local storage or the server; instead, they are stored only on the client-side Experience Platform Tags library. Values of such Data Elements disappear when the web page reloads.
 
-Generally, the Data Element editor supports [storage duration selection](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/data-elements#create-a-data-element). However, Data Elements that use the Dynamic Media Viewers extension only supports the storage duration option of **[!UICONTROL None]**. Setting any other value is possible in the user interface, but the Data Element behavior is not defined in this case. The extension manages the value of the Data Element on its own: the Data Element that maintains the value of the viewer event argument during the entire viewer life cycle.
+The Data Element editor supports [storage duration selection](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/data-elements#create-a-data-element). However, Data Elements that use the Dynamic Media Viewers extension only support the storage duration option of **[!UICONTROL None]**. Setting any other value is possible in the user interface, but the Data Element behavior is not defined in this case. The extension manages the value of the Data Element on its own: the Data Element maintains the value of the viewer event argument during the entire viewer life cycle.
 
 ### About Rules in the Dynamic Media Viewers extension {#about-rules-in-the-dynamic-media-viewers-extension}
 
-In the Rule editor, the extension adds new configuration options for the Events editor. Also, the editor provides an option to reference event parameters manually in the Action editor as a short-hand option instead of using preconfigured Data Elements.
+In the Rule editor, the extension adds new configuration options for the Events editor. Also, the editor provides an option to reference event parameters manually in the Action editor as a shorthand option instead of using preconfigured Data Elements.
 
 #### About the Events editor {#about-the-events-editor}
 
@@ -258,17 +258,17 @@ The Dynamic Media Viewers extension lets you use event parameters of Dynamic Med
 The simplest method to do that is to complete the following two-step process:
 
 * First, define one or more Data Elements, where each Data Element represents a parameter of a Dynamic Media Viewer event.
-* Finally, in the Set Variables editor of the Adobe Analytics extension click ![Data icon, data element picker](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Data Element** picker to open the Select Data Element dialog box, then click a Data Element from it.
+* Finally, in the Set Variables editor of the Adobe Analytics extension, click **Data Element** picker to open the Select Data Element dialog box, then click a Data Element from it.
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
-It is possible, however, to use an alternative approach and bypass Data Element creation. You can directly reference an argument from a Dynamic Media Viewer event. Enter the fully qualified name of the event argument in the **[!UICONTROL value]** input field of the Analytics variable assignment. Be sure percent (%) signs are surrounded. For example,
+It is possible, however, to use an alternative approach and bypass Data Element creation. You can directly reference an argument from a Dynamic Media Viewer event. Enter the fully qualified name of the event argument in the **[!UICONTROL value]** input field of the Analytics variable assignment. Be sure percent (%) signs are included. For example,
 
 `%event.detail.dm.LOAD.asset%`
 
 ![image2019-7-12_19-2-35](assets/image2019-7-12_19-2-35.png)
 
-There is an important difference between using Data Elements and direct event argument reference. For Data Element, it does not matter which event triggers the Set Variables action. The event that triggers the Rule can be unrelated to Dynamic Viewer (like selecting the web page from the Core extension). But, when using a direct argument reference it is important to ensure that the event that triggers the rule corresponds to the event argument that it references.
+There is an important difference between using Data Elements and direct event argument reference. For Data Element, it does not matter which event triggers the Set Variables action. The event that triggers the Rule can be unrelated to the Dynamic Viewer (like selecting the web page from the Core extension). But, when using a direct argument reference, ensure that the event that triggers the rule corresponds to the event argument that it references.
 
 For example, if the **[!UICONTROL LOAD]** event from the Dynamic Media Viewer extension triggers the Rule, referencing `%event.detail.dm.LOAD.asset%` returns the correct asset name.
 
@@ -413,7 +413,7 @@ Adobe recommends that you thoroughly review all documentation before this sectio
 
 This section explains the configuration steps that are necessary to integrate Dynamic Media viewers with Adobe Analytics and Adobe Analytics for Audio and Video. While use of the Dynamic Media Viewers extension for other purposes in Experience Platform Tags is possible, such scenarios are not covered in this documentation.
 
-You are going to use the following Adobe products to configure your integration:
+You use the following Adobe products to configure your integration:
 
 * Adobe Analytics - used to configure tracking variables and reports.
 * Experience Platform Tags - used to define a Property, one or more Rules, and one or more Data Elements to enable viewer tracking.
@@ -437,7 +437,7 @@ See also [Analytics Implementation Guide](https://experienceleague.adobe.com/en/
 
 **To configure Adobe Analytics for the integration:**
 
-1. Start by accessing Adobe Analytics from the CX Enterprise [home page](https://experience.adobe.com/#/home). On the menu bar, click ![Apps icon, solutions](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) **Solutions** near the upper-right corner of the page, then selecting **[!UICONTROL Analytics]**.
+1. Start by accessing Adobe Analytics from the CX Enterprise [home page](https://experience.adobe.com/#/home). On the menu bar, click **Solutions** near the upper-right corner of the page, then select **[!UICONTROL Analytics]**.
 
    ![2019-07-22_18-08-47](assets/2019-07-22_18-08-47.png)
 
@@ -469,9 +469,9 @@ See also [Analytics Implementation Guide](https://experienceleague.adobe.com/en/
 
    For the purposes of this documentation, only a Custom Traffic (props) variable is used because they become available in an Analytics Report within a few minutes after an action occurs on a web page.
 
-   To enable a new Custom Traffic variable, in Adobe Analytics, on the toolbar, go to **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
+   To enable a new Custom Traffic variable, go to **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** in Adobe Analytics.
 
-1. On the **[!UICONTROL Report Suite Manager]** page, select the correct report.
+1. On the **[!UICONTROL Report Suite Manager]** page, select the correct report suite.
 1. On the toolbar, click **[!UICONTROL Edit Settings]** > **[!UICONTROL Traffic]** > **[!UICONTROL Traffic Variables]**.
 1. Pick an unused variable, give it a descriptive name (**[!UICONTROL Viewer asset (prop 30)]**), and then change the combo box to "Enabled" in the Enabled column.
 
@@ -483,9 +483,9 @@ See also [Analytics Implementation Guide](https://experienceleague.adobe.com/en/
 
 ### Set up a report {#setting-up-a-report}
 
-Generally, specific project needs drive how you set up a report in Adobe Analytics. As such, a detailed report setup is beyond the scope for this integration.
+Specific project needs drive how you set up a report in Adobe Analytics. As such, a detailed report setup is beyond the scope of this integration.
 
-   It is, however, enough to know that the Custom Traffic reports become automatically available in Adobe Analytics after you set up Custom Traffic variables in **[Setup Adobe Analytics variables](#setting-up-adobe-analytics-variables)**.
+   It is, however, enough to know that the Custom Traffic reports become automatically available in Adobe Analytics after you set up Custom Traffic variables in **[Set up Adobe Analytics variables](#setting-up-adobe-analytics-variables)**.
 
    For example, the report for **[!UICONTROL Viewer asset (prop 30)]** variable is available from the Reports menu under **[!UICONTROL Custom Traffic]** > **[!UICONTROL Custom Traffic 21-30]** > **[!UICONTROL Viewer asset (prop 30)]**.
 
@@ -498,17 +498,17 @@ Generally, specific project needs drive how you set up a report in Adobe Analyti
 After you configure Experience Platform Tags, the following items are set up for the integration:
 
 * The creation of a new Property to keep all your configurations together.
-* The installation and setup of extensions. The client-side code of all extensions installed in the Property is compiled together into a library. This library is used by the web page later.
+* The installation and setup of extensions. The client-side code of all extensions installed in the Property is compiled together into a library. The web page uses this library later.
 * Configuration of Data Elements and Rules. This configuration defines what data to acquire from the Dynamic Media viewers, when to trigger the tracking logic, and where to send the viewer's data in Adobe Analytics.
 * Publishing of the library.
 
 **To configure Experience Platform Tags for the integration:**
 
-1. Start by accessing Experience Platform Tags from the CX Enterprise [home page](https://experience.adobe.com/#/home). On the menu bar, click ![Apps icon, solutions](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) **Solutions** near the upper-right corner of the page, then click **[!UICONTROL Tags]**.
+1. Start by accessing Experience Platform Tags from the CX Enterprise [home page](https://experience.adobe.com/#/home). On the menu bar, click **Solutions** near the upper-right corner of the page, then click **[!UICONTROL Tags]**.
 
    ![image2019-7-8_15-38-44](assets/image2019-7-8_15-38-44.png)
 
-### Create a property in Experience Platform Tags {#creating-a-property-in-adobe-launch}
+### Create a property in Experience Platform Tags {#create-a-property-in-experience-platform-tags}
 
 A property in Experience Platform Tags is a named configuration that keeps all your settings together. A library of the configuration settings is generated and published to different environment levels (development, staging, and production).
 
@@ -527,7 +527,7 @@ See also [Configure a select property](https://experienceleague.adobe.com/en/doc
 
    Select the created property, then proceed to *Installation and setup of extensions*.
 
-### Install and set up of extensions {#installing-and-setup-of-extensions}
+### Install and set up of extensions {#install-and-setup-of-extensions}
 
 All available extensions in Experience Platform Tags are listed under the **[!UICONTROL Extensions]** > **[!UICONTROL Catalog]**.
 
@@ -575,7 +575,7 @@ Select **[!UICONTROL enable Adobe Analytics for Video]** to enable (turn on) Vid
 
 As of this writing, the *Dynamic Media Viewers* extension is only available if the Experience Platform Tags Property is created for development.
 
-See [Create a property in Experience Platform Tags](#creating-a-property-in-adobe-launch).
+See [Create a property in Experience Platform Tags](#create-a-property-in-experience-platform-tags).
 
 After the extensions are installed and setup, at minimum, the following five extensions (four if you are not tracking video) are listed in the Extensions &gt; Installed area.
 
@@ -593,9 +593,9 @@ See [Configure the Dynamic Media Viewers extension](#configuring-the-dynamic-med
 
 ### Publish a library {#publishing-a-library}
 
-To change in the Experience Platform Tags configuration (including Property, Extensions, Rules, and Data Elements set up), you must *publish* such changes. Publishing in Experience Platform Tags is performed from the Publishing tab under the Property configuration.
+To change the Experience Platform Tags configuration, you must *publish* such changes. Publishing in Experience Platform Tags is performed from the Publishing tab under the Property configuration.
 
-Experience Platform Tags can potentially have multiple Development environments, one Staging environment, and one Production environment. By default the Experience Platform Tags Cloud Configuration in Experience Manager points the Experience Manager author node to the Stage environment of Platform Tags. The Experience Manager publish node points to the Production environment of Experience Platform Tags. This arrangement means that with the default Experience Manager settings, it is necessary to publish the Experience Platform Tags library to the Staging environment. Doing so lets you use it in author mode in Experience Manager. You can then publish it into the Production environment so that it can be used in Experience Manager publish.
+Experience Platform Tags can potentially have multiple Development environments, one Staging environment, and one Production environment. By default the Experience Platform Tags Cloud Configuration in Experience Manager points the Experience Manager author node to the Stage environment of Platform Tags. The Experience Manager publish node points to the Production environment of Experience Platform Tags. This arrangement means that with the default Experience Manager settings, it is necessary to publish the Experience Platform Tags library to the Staging environment. Doing so lets you use it in Experience Manager author mode. You can then publish it into the Production environment so that it can be used in Experience Manager publish.
 
 See [Environments](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments) for more information about Experience Platform Tags environments.
 
@@ -622,7 +622,7 @@ Publishing a library involves the following two steps:
 
 1. Near the upper-right corner of the page, click **[!UICONTROL Save & Build for Development]**.
 
-   In a few minutes, the library is created and ready to use.
+   The library is created and ready to use within a few minutes.
 
    ![image2019-7-15_15-3-34](assets/image2019-7-15_15-3-34.png)
 
@@ -633,7 +633,7 @@ Publishing a library involves the following two steps:
    >
    >From the library publishing screen, click **[!UICONTROL Add All Changed Resources]**, then click **[!UICONTROL Save & Build for Development]**.
 
-#### Move up a library through environment levels {#moving-a-library-up-through-environment-levels}
+#### Move a library up through environment levels {#moving-a-library-up-through-environment-levels}
 
 1. After a new library is added, it is found in the Development environment. To move it to the Staging environment level (which corresponds to the Submitted column), from the library's drop-down menu, click **[!UICONTROL Submit for Approval]**.
 
@@ -645,7 +645,7 @@ Publishing a library involves the following two steps:
 
    ![image2019-7-15_15-54-37](assets/image2019-7-15_15-54-37.png)
 
-1. To move the library from the Staging environment to the Production environment (which is the Published column), follow a similar process.
+1. To transition the library from the Staging environment to the Production environment (which is the Published column), follow a similar process.
 
    First, from the drop-down menu, click **[!UICONTROL Approve for Publishing]**.
 
@@ -674,7 +674,7 @@ The Experience Manager configuration consists of the following two major steps:
 
 ### Configure Experience Manager IMS {#configuring-aem-ims}
 
-1. In Experience Manager author, click ![Hammer icon, tools](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) **Tools**, then go to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
+1. In Experience Manager author, click **Tools**, then go to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 
@@ -684,7 +684,7 @@ The Experience Manager configuration consists of the following two major steps:
 
    The following Info message is displayed:
 
-   *To retrieve a valid access token, the new certificate's public key must be added to the technical account on Adobe Developer!*
+   *To retrieve a valid access token, the new certificate's public key must be added to the technical account on Adobe Developer.*
 
    To dismiss the Info dialog box, click **[!UICONTROL OK]**.
 
@@ -791,7 +791,7 @@ The Experience Manager configuration consists of the following two major steps:
 
 ## Configure Experience Platform Tags Cloud for the integration {#configuring-adobe-launch-cloud-for-the-integration}
 
-1. In Experience Manager author mode, near the upper-left corner, click ![Hammer icon, tools](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) **Tools**, then go to **[!UICONTROL Cloud Services]** > **[!UICONTROL Experience Platform Tags Configurations]**.
+1. In Experience Manager author mode, near the upper-left corner, click **Tools**, then go to **[!UICONTROL Cloud Services]** > **[!UICONTROL Experience Platform Tags Configurations]**.
 
    ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)
 
@@ -812,7 +812,7 @@ The Experience Manager configuration consists of the following two major steps:
 
     * **[!UICONTROL Property]** - From the Property drop-down list, select your Experience Platform Tags property that you created previously. The list populates automatically.
 
-   After completing all the fields, your **[!UICONTROL General]** page will look similar to the following:
+   After completing all the fields, your **[!UICONTROL General]** page looks similar to the following:
 
    ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
 
@@ -830,7 +830,7 @@ The Experience Manager configuration consists of the following two major steps:
    >
    >For example: `//assets.adobetm.com/launch-xxxx`.
 
-   Your **[!UICONTROL Staging]** page likely appears similar to the following. The **[!UICONTROL Archive]** and **[!UICONTROL Load Library Asynchronously]** options are ***not*** set:
+   Your **[!UICONTROL Staging]** page appears similar to the following. The **[!UICONTROL Archive]** and **[!UICONTROL Load Library Asynchronously]** options are ***not*** set:
 
    ![image2019-7-15_15-21-8](assets/image2019-7-15_15-21-8.png)
 
@@ -838,7 +838,7 @@ The Experience Manager configuration consists of the following two major steps:
 1. On the **[!UICONTROL Production]** page (3/3 pages) of the **[!UICONTROL Create Experience Platform Tags Configuration]** window, if needed, fix the auto-populated production URI similar to how it was done on the previous **[!UICONTROL Staging]** page.
 1. Near the upper-right corner, click **[!UICONTROL Create]**.
 
-   Your new Experience Platform Tags Cloud Configuration is now created and listed next to your web site.
+   Your new Experience Platform Tags Cloud Configuration is now created and listed next to your website.
 
 1. Select your new Experience Platform Tags Cloud Configuration (a check mark appears to the left of the configuration title when it is selected). On the toolbar, click **[!UICONTROL Publish]**.
 
@@ -846,7 +846,7 @@ The Experience Manager configuration consists of the following two major steps:
 
 Currently, Experience Manager author does not support the integration of Dynamic Media Viewers with Experience Platform Tags.
 
-It is, however, supported in the Experience Manager publish node. Using the default settings of Experience Platform Tags Cloud Configuration, Experience Manager publish uses the production environment of Experience Platform Tags. As such, it is necessary to push Experience Platform Tags library updates from Development up to the Production environment each time during the test.
+It is, however, supported in the Experience Manager publish node. Using the default settings of Experience Platform Tags Cloud Configuration, Experience Manager publish uses the production environment of Experience Platform Tags. As such, it is necessary to push Experience Platform Tags library updates from Development to the Production environment each time during the test.
 
 It is possible to work around this limitation. Specify the Development or Staging URL of the Experience Platform Tags library in the Experience Platform Tags Cloud Configuration for Experience Manager publish above. Doing so makes the Experience Manager publish node use the Development or Staging version of the Experience Platform Tags library.
 

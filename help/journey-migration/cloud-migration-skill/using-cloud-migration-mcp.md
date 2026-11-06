@@ -1,6 +1,6 @@
 ---
-title: Using the AEM Cloud Migration MCP
-description: Learn how to add the AEM Cloud Migration MCP server to your AI-enabled IDE and use it to fetch Best Practices Analyzer findings from Cloud Acceleration Manager during a migration session.
+title: Using AEM MCP Server Cloud Migration Capabilities
+description: Learn how to configure the AEM MCP Server in your AI-enabled IDE and use its Cloud Migration capabilities to fetch Best Practices Analyzer findings from Cloud Acceleration Manager during a migration session.
 feature: Migration
 role: Developer
 product_v2:
@@ -14,21 +14,24 @@ role_v2:
     internal-label: Developer
 ---
 
-# Using the AEM Cloud Migration MCP {#using-cloud-migration-mcp}
+# Using AEM MCP Server Cloud Migration Capabilities {#using-cloud-migration-mcp}
 
-The **AEM Cloud Migration MCP** is a hosted [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server that connects your IDE agent to **Cloud Acceleration Manager (CAM)**. Once configured, the [AEM Cloud Migration Skill](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md) can fetch Best Practices Analyzer findings directly from your CAM project without requiring a CSV export.
+AEM Cloud Migration capabilities are available through the [**AEM MCP Server**](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#aem-mcp-server), a hosted [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server that connects your IDE agent to **Cloud Acceleration Manager (CAM)**. Once configured, the [AEM Cloud Migration Skill](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md) can fetch Best Practices Analyzer findings directly from your CAM project without requiring a CSV export.
 
 ## MCP Server URL {#server-url}
 
 ```
-https://mcp.adobeaemcloud.com/adobe/mcp/cloud-migration
+https://mcp.adobeaemcloud.com/adobe/mcp/aem
 ```
 
 Add this URL to your IDE's MCP configuration to connect.
 
+>[!IMPORTANT]
+>The domain-specific Cloud Migration MCP server endpoint (`https://mcp.adobeaemcloud.com/adobe/mcp/cloud-migration`) is deprecated. Update existing configurations to use the AEM MCP Server URL above.
+
 ## What It Provides {#what-it-provides}
 
-The MCP server exposes two tools that the migration skill invokes automatically during a session:
+The AEM MCP Server's Cloud Migration category is enabled by default and provides read-only access through two tools that the migration skill invokes automatically during a session:
 
 | Tool | Description |
 |------|-------------|
@@ -43,12 +46,12 @@ The MCP server exposes two tools that the migration skill invokes automatically 
 
 ## Setup {#setup}
 
-1. In your IDE's MCP configuration, add a new MCP server entry with the URL `https://mcp.adobeaemcloud.com/adobe/mcp/cloud-migration`.
+1. In your IDE's MCP configuration, add an AEM MCP Server entry with the URL `https://mcp.adobeaemcloud.com/adobe/mcp/aem`, or use an existing entry with that URL.
 2. Save or activate the configuration so your IDE connects to the server.
 3. When prompted, sign in with your **Adobe ID** to complete authentication.
 4. Once authenticated, your IDE discovers the available migration tools and the migration skill can use them in sessions.
 
-For IDE-specific configuration steps, refer to the guides under [Setting Up MCP with AEM](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
+For IDE-specific configuration steps, refer to the guides under [Setting Up MCP with AEM](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#setup-overview).
 
 >[!NOTE]
 >You must sign in with the Adobe ID that has access to your CAM projects. If you see an authorization error, verify that your account has the appropriate permissions in Cloud Acceleration Manager.
@@ -97,4 +100,3 @@ Use this to decide which patterns to prioritize in your sessions.
 ## What's Next {#whats-next}
 
 With the MCP configured, see [Using the Cloud Migration Skill](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md) for a full reference on migration patterns and session management.
-

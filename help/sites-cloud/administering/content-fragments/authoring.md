@@ -161,6 +161,10 @@ From the editor you can:
 
 * [Delete a Variation](#delete-variation)
 
+>[!NOTE]
+>
+>See also [Composite data](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#composite-data).
+
 ### Create a Variation {#create-variation}
 
 To create a Variation of your Content Fragment:
@@ -293,7 +297,7 @@ For example, a scenario where the variation content had been completely rewritte
 
 ### Fragment References {#fragment-references}
 
-[Fragment References](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#fragment-reference-nested-fragments) can be used to:
+[Fragment References](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#fragment-reference) can be used to:
 
 * [create a reference to an existing Content Fragment](#create-reference-existing-content-fragment)
 * [create a Content Fragment, and then reference it](#create-reference-content-fragment)
@@ -427,6 +431,13 @@ For example:
 
   ![Revert to inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-revert-to-inheritance.png)
 
+>[!CAUTION] 
+>
+> For Composite fields inheritance can only be broken for top-level fields. 
+>
+>* Inheritance for an entire composite field can be broken.
+>* Breaking inheritance for individual fields within composite items is not supported.
+
 ### Live Copy details and actions {#live-copy-details-and-actions}
 
 From the right hand information panel you can select the **Live Copy** tab to show details of any live copies the fragment is involved in.
@@ -434,6 +445,35 @@ From the right hand information panel you can select the **Live Copy** tab to sh
 You can also trigger various actions for either the source or the live copy. See [reuse Content Fragments using MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md) for further details.
 
 ![Information panel - Live Copy details](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-live-copy-details.png)
+
+## Edit a Composite field {#edit-a-composite-field}
+  
+When you open a fragment that contains a Composite field you see a panel-style rendering for the Composite field, not an inline form. 
+
+Use:
+
+* Remove and Reorder controls for multi-value Composites.
+* The **Create Composite** option to create a new instance for multi fields. 
+* The variation selector at the top level. Once a variation is chosen, the entire nested Composite tree reflects that variation. Items can differ in count and content between variations.
+
+![Content Fragments editor - Composite field](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-composite.png)
+
+Selecting the **Open Composite** (link) icon in the Composite item opens its fields in a dedicated editor area within the same browser session. 
+
+Use:
+
+* The breadcrumb icons in the top toolbar to navigate back to the fragment content.
+* The right panel to view information about the Composite field.
+
+  >[!NOTE]
+  >
+  >If you select other tabs from the right panel you return to the fragment content.
+
+![Content Fragments editor - edit Composite field](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-composite-edit.png)
+
+>[!NOTE]
+>
+>The original Touch UI Fragment Editor will block editing of Composite fields.
 
 ## View Workflows {#view-workflows}
 

@@ -79,6 +79,17 @@ To send a request to the canary release, include the following header:
 X-Aem-Canary: true
 ```
 
+## Use canary deployments with a customer-managed CDN {#customer-managed-cdn}
+
+If you put your own CDN in front of the AEM Cloud Service CDN, the canary header must reach AEM, and canary traffic must not be served from or stored in your CDN's cache. Configure your CDN as follows:
+
+* **Forward the header.** Pass the `X-Aem-Canary: true` request header through to the AEM publish origin unchanged. AEM selects the canary instances only when this header is present on the request.
+* **Bypass the cache for canary requests.** For any request that carries `X-Aem-Canary: true`, configure your CDN to skip both cache lookup and cache storage (a pass). This has two effects:
+  * Testers receive responses from the canary release, not cached stable content.
+  * Canary responses never populate the cache that serves regular visitors.
+
+The configuration steps depend on your CDN provider. Adobe does not provide guidance on configuring customer-managed CDNs, so work with your CDN team or provider.
+
 ## Validate and promote or cancel {#validate-and-promote-or-cancel}
 
 When the canary instances are ready, a validation window opens so that you can test the new version. Cloud Manager shows the [!UICONTROL Promote to production] and [!UICONTROL Cancel deployment] options in the **Deploy to Production** section. 

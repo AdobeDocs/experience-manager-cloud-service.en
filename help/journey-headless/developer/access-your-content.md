@@ -220,7 +220,7 @@ query {
 }
 ```
 
-You can also build up more complex queries. For example, query for all companies that have at least one employee with the name of "Smith". This query illustrates filtering for any person of name "Smith", returning information from across the nested fragments:
+You can also build up more complex queries. For example, query for all companies that have at least one employee with the name of "Smith". This query illustrates filtering for any person of name "Smith", returning information from across the referenced fragments:
 
 ```xml
 query {
