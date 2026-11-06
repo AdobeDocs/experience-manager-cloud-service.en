@@ -37,8 +37,11 @@ The Experience Modernization Agent is part of the [Brand Experience Agent](/help
 * **Fast pages:** A new project from the AEM boilerplate scores 100 in Lighthouse. See [Keeping It 100](https://www.aem.live/developer/keeping-it-100).
 * **Room to grow:** The platform runs multi-market, multi-language sites, the largest with more than 100,000 pages.
 * **Visual authoring:** Authors edit pages in Experience Workspace, or in the Universal Editor. See [Where Content Is Stored and How Authors Edit It](#content-storage).
+* **Content that crawlers can read:** The main content of each page is in the HTML that the platform serves, so search engines and AI assistants read it without running the page's scripts.
 
 The agent rebuilds your pages on a block system that follows the architecture of Edge Delivery Services. It decomposes each page into sections and maps their content to [default content and reusable blocks](production-migration.md#content-structure). It extracts the design system into CSS design tokens for colors, fonts, and spacing, then writes the global styles and block CSS that use them. It does not clone the source markup, which would carry over any technical debt in it. Expect a close first pass that you refine by prompting and validate before you scale. See [How Close the Design Gets](prompting-guide.md#design-fidelity).
+
+![Your site today, with its design, content, dynamic features, and tags and analytics, plus the agent equals your site on Edge Delivery Services. The agent reads each page as a browser renders it, groups the pages into templates and blocks, imports the content into default content and blocks, rebuilds the design as design tokens and CSS, and compares the result with the source. On the new site, the design becomes design tokens, global styles, and block CSS, and the content becomes default content and blocks that authors edit. For dynamic features, the output on each page is imported, and you decide how each one works on the new site. Scripts such as tags aren't copied; Auto mode can carry over supported settings.](assets/what-the-agent-does.png)
 
 You stay in control of every change. The agent works in your own console workspace, and nothing reaches your project until you push code or upload content, or let the agent do so. See [Work Safely in an Independent Workspace](#independent-workspace).
 
@@ -63,7 +66,7 @@ Each guide gives the steps and checks for one goal, and builds on [Understand Yo
 
 | Your goal | Start here |
 |---|---|
-| Decide whether your organization should use the agent, as the person who approves the architecture, security, and processes of the project | [Evaluate and Approve the Experience Modernization Agent](evaluate.md) |
+| Decide whether and how your organization should use the agent, as the person who approves the architecture, security, and processes of the project | [Evaluate and Approve the Experience Modernization Agent](evaluate.md) |
 | See the agent migrate your brand's own pages | [Start with Auto mode](getting-started.md#brand-trial) |
 | Start a new site, or connect one that runs on Edge Delivery Services | [Start from a repository](getting-started.md#repo-start) |
 | Store content on an Experience Manager author instance and edit it in the Universal Editor | [Getting started with Experience Manager authoring](getting-started-aem-authoring.md) |

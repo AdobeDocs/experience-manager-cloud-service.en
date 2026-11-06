@@ -28,7 +28,7 @@ role_v2:
 
 # Delivery by Agentic Outcome Engineers {#aoe-delivery}
 
-Adobe's Agentic Outcome Engineers (AOEs) can migrate your site for you with the Experience Modernization Agent. AOE delivery is an optional engagement, not a separate tier of the agent: the same agent, operated by Adobe engineers who add engineering work and review to its automation.
+Adobe's Agentic Outcome Engineers (AOEs) can migrate your site with your team, using the Experience Modernization Agent. AOE delivery is an optional engagement, not a separate tier of the agent: the same agent, operated by Adobe engineers who add engineering work and review to its automation. You agree the scope, the outcome, and the timeline with Adobe before work begins, and share accountability for the result. At the hand-over, your team takes over the site and continues with the agent on its own.
 
 ## The Agentic Outcome Engineer (AOE) {#aoe}
 

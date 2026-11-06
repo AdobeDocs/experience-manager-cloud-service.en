@@ -165,7 +165,7 @@ Edge Delivery Services also supports GitHub Enterprise (self-hosted), Adobe-host
 
 ## Open the Experience Modernization Console {#open-console}
 
-1. Navigate to [`aemcoder.adobe.io`.](https://aemcoder.adobe.io)
+1. Navigate to [`aemcoder.adobe.io`](https://aemcoder.adobe.io). The short address [`aem.new`](https://aem.new) opens the same console.
 1. Log in with your Adobe ID.
    * Use an account that belongs to your company's Adobe organization. A personal Adobe ID that isn't part of an organization can't be used; the console explains this and lets you **Use a different account**. If you don't have a company account, ask your Adobe account team to add you to the organization.
 

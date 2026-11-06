@@ -27,7 +27,7 @@ role_v2:
 
 # Evaluate and Approve the Experience Modernization Agent {#evaluate}
 
-This page is for the person who approves the Experience Modernization Agent for a team that builds or migrates Adobe Experience Manager sites on Edge Delivery Services: an architect, technical lead, or platform owner who may never use the agent personally. It explains what changes for your team, how Adobe's team works with yours, which systems and data the agent touches, how changes are controlled and traced, and what remains project work.
+This page is for the person who approves the Experience Modernization Agent for a team that builds or migrates Adobe Experience Manager sites on Edge Delivery Services: an architect, technical lead, or platform owner who may never use the agent personally. It explains what changes for your team, the three ways to run a migration, how Adobe's team works with yours, which systems and data the agent touches, how changes are controlled and traced, and what remains project work.
 
 For what Edge Delivery Services is and how a project fits together, see [Understand Your Project](overview.md#project-foundations). A result on your own pages tells you more than any description, so ask a team member to [start with Auto mode](getting-started.md#brand-trial) or to [import a page step by step](getting-started.md#guided-import) while you read.
 
@@ -57,13 +57,23 @@ Without the agent, a migration to Edge Delivery Services starts with weeks of de
 
 For who leads each phase of a migration, see [Phases and Roles](production-migration.md#phases). Several people can work on one project, each in their own console workspace; see [Work as a Team](production-migration.md#collaboration).
 
+## Choose How the Migration Runs {#approaches}
+
+The same agent can run a migration in three ways. They differ in who drives the agent and who answers for the result. All three produce a standard Edge Delivery Services project, with code in a Git repository and content that authors edit, so you can move from one to the next: transfer an Auto mode result to your own site and continue in the console, or continue with the agent yourself after an engagement with Agentic Outcome Engineers.
+
+| Approach | Choose it when | What your team does |
+|---|---|---|
+| [Auto mode](getting-started.md#brand-trial) | You want a first result on a few of your own pages with little effort, for example to judge the approach or to show it to stakeholders. | Gives Auto mode the site's URL or a list of pages, and reviews the result when its email arrives. Auto mode applies default choices and doesn't ask for input during the run. To take the result to production, a developer transfers it to a site that you own with [**Make it yours**](getting-started.md#make-it-yours). |
+| [The console, driven by your developers](getting-started.md#repo-start) | Your developers want to set the implementation choices themselves: block design, content model, and integrations. | Prompts the agent step by step, checks each page in the preview, and reviews the agent's code changes before merging them. See [Migrate a Production Site](production-migration.md), and for what enforces review, [Control over Changes](#security-control). |
+| [Agentic Outcome Engineers](aoe-delivery.md) | You want Adobe engineers to operate the agent with your team, against a scope, outcome, and timeline agreed up front. | Agrees the engagement with your Adobe account team, reviews deliverables at the agreed checkpoints, and takes over the site at the hand-over. |
+
 ## The Team Behind the Agent {#adobe-team}
 
 When you choose the agent, you also choose the team that builds it and the direction that it takes. How people find information on the web is changing: more of them ask an AI assistant, which answers from what it reads on the brand's own site. And an agent can change a site's content, design, and code together, so a change that once needed a project can take hours. The team's mission is to help you move to Edge Delivery Services, get the most out of Experience Manager, and use agentic development tools to build sites that stay relevant as these shifts continue. Its work with you doesn't end at the migration, and the agent keeps changing; the [release notes](/help/release-notes/modernization-agent/current.md) list each change.
 
 When changes are cheap, the hard part is deciding what to change, keeping it governed, and giving the agent the right brand, design, and business context. That knowledge sits with your teams and systems. Adobe's team helps you connect it to the platform:
 
-* **A first result on your own pages.** [Auto mode](getting-started.md#brand-trial) migrates a first set of your pages, so that you judge the approach on your own content. For complex migrations, Adobe engineers can operate the agent with your team. See [AOE Delivery](aoe-delivery.md).
+* **Engineers who can run the migration with you.** For a complex migration, Adobe's Agentic Outcome Engineers can operate the agent with your team and hand the site over to it. See [Choose How the Migration Runs](#approaches).
 * **Current as the product changes.** The console's **What's new** notice lists the highlights of each release. To apply a change to your own site, review your architecture, or discuss a need that the agent doesn't meet yet, ask your Adobe customer success manager or account team for a meeting with subject-matter experts and the product team.
 * **Your experience shapes the product.** The product team exchanges expertise with customers and partners, and works with some of them on new capabilities. What you report feeds into what the team fixes and builds next.
 
