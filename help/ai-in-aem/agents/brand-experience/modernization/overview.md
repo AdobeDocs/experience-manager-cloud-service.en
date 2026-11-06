@@ -103,15 +103,24 @@ That control sits in your Git provider, not in the console, so it holds however 
 
 * **Source:** The source website you're authorized to migrate supplies its content and design as visitors see them. Add an optional Figma design when you want a new target for the whole site or part of it. The agent reads these sources; it doesn't change them.
 * **Experience Modernization:** The console contains the agent and its Workspace, a working copy of the project's code and content. The agent migrates and evolves pages, designs, and integrations there. Review changes before you push code or upload content. See [Work Safely in an Independent Workspace](#independent-workspace).
-* **Git repository:** Stores the site's styles, scripts, and blocks. Your branch holds code to review; `main` holds production code. Push changes from the Workspace to your branch, then merge them into `main` after review.
+* **Git repository:** Stores the site's styles, scripts, and blocks. Your branch holds code to review; `main` holds production code.
 * **Authoring environment:** Choose where content is stored and which editor authors use: document-based storage with Experience Workspace, or Experience Manager authoring with the Universal Editor. The source CMS doesn't decide it. See [Where Content Is Stored and How Authors Edit It](#content-storage).
-* **Preview and live sites:** Edge Delivery Services serves content from the authoring environment with code from the branch shown by each URL. The preview site shows content to review; the live site shows production content. Authors preview saved content and publish it to the live site. See [How Changes Go Live](#code-content-lifecycle).
+* **Preview and live sites:** Edge Delivery Services serves content from the authoring environment with code from the branch shown by each URL. The preview site shows content to review; the live site shows production content. See [How Changes Go Live](#code-content-lifecycle).
 
-The diagram shows separate paths for code and content. Pushing code never saves content, and uploading content never changes code. Content is shared across branches; each URL combines it with the code for one branch. Pages are made of sections, default content, and blocks, and the content carries no styling, so the agent can give it a new design by changing only the code. For how the platform works, see the [Edge Delivery Services overview](/help/edge/overview.md) and [Markup, Sections, Blocks, and Auto Blocking](https://www.aem.live/developer/markup-sections-blocks). For how the agent structures imported content, and how you steer it, see [Shape the Content Structure](production-migration.md#content-structure).
+Pages are made of sections, default content, and blocks, and the content carries no styling, so the agent can give it a new design by changing only the code. For how the platform works, see the [Edge Delivery Services overview](/help/edge/overview.md) and [Markup, Sections, Blocks, and Auto Blocking](https://www.aem.live/developer/markup-sections-blocks). For how the agent structures imported content, and how you steer it, see [Shape the Content Structure](production-migration.md#content-structure).
 
 New sites start from the [AEM boilerplate](https://github.com/adobe/aem-boilerplate). For a commerce storefront, start from the [commerce boilerplate](https://experienceleague.adobe.com/en/tools/commerce-storefront/boilerplate/) instead, because its commerce blocks are hard to add to a project later; see [Start from a Repository](getting-started.md#prepare-repo).
 
 Edge Delivery Services runs complex enterprise websites. Its pages are standard HTML, CSS, and JavaScript, so a block can call any API from the browser, such as search, commerce, or personalization, as on any other website. Spreadsheets publish as JSON and a query index lists the site's pages, so blocks can also build listings and filters from your own content. Business logic stays in the services that own it. Each integration is project work that you specify and test, and the agent can write its block code once you have decided how it should work. See [Build a Dynamic Block](block-development.md#dynamic-blocks). The agent's skills focus on Edge Delivery Services, but it isn't limited to them: point it to another system's documentation, and work out the integration with it. See [Work Beyond Edge Delivery Services](prompting-guide.md#beyond-eds).
+
+### How Changes Go Live {#code-content-lifecycle}
+
+In the diagram, blue columns show code branches and purple rows show content states. Pushing code never saves content, and uploading content never changes code.
+
+* **Code:** Edge Delivery Services fetches your code from GitHub through the [AEM Code Sync](https://github.com/apps/aem-code-sync) app, or from another Git host through Cloud Manager ([Bring Your Own Git](https://www.aem.live/developer/byo-git)). Each branch gets its own URLs, and a change pushed to a branch shows on that branch's preview and live URLs at the same time. Code has no separate publish step: after review, merging into `main` updates the code of the production site immediately, so check a branch on its own URLs before you merge it.
+* **Content:** Authors first preview a page, which copies the saved content to the preview site on `*.aem.page`. They then publish it, which makes it live on `*.aem.live`. Authors do both from the authoring UI or from the [AEM Sidekick](https://www.aem.live/docs/sidekick) browser extension.
+
+Preview URLs follow the pattern `https://{branch}--{repo}--{owner}.aem.page` and show previewed content. Live URLs follow the same pattern on `aem.live` and show published content. `{owner}` is the GitHub organization or user that owns the repository, and `{repo}` is the repository name. Content isn't branched: every branch shows the same pages, each with its own code. The live URL of `main` is the production site, which your own domain serves after the cutover.
 
 ### Work Safely in an Independent Workspace {#independent-workspace}
 
@@ -125,17 +134,6 @@ Everything that the agent does happens there first. You can ask for a sweeping r
 [Agent permissions](console.md#settings-page) let the agent do the same for you. See [Control over Changes](evaluate.md#security-control).
 
 The independence works in both directions: changes that others push or upload don't reach your workspace until you pull them. See [Sync Menu](console.md#sync-menu) and [Work as a Team](production-migration.md#collaboration).
-
-### How Changes Go Live {#code-content-lifecycle}
-
-For the sequence, see the [diagram in Understand Your Project](#project-foundations).
-
-Code and content reach the live site in different ways:
-
-* **Code:** Edge Delivery Services fetches your code from GitHub through the [AEM Code Sync](https://github.com/apps/aem-code-sync) app, or from another Git host through Cloud Manager ([Bring Your Own Git](https://www.aem.live/developer/byo-git)). Each branch gets its own URLs, and a change pushed to a branch shows on that branch's preview and live URLs at the same time. Code has no separate publish step: merging into `main` updates the code of the production site immediately, so check a branch on its own URLs before you merge it.
-* **Content:** Authors first preview a page, which copies the saved content to the preview site on `*.aem.page`. They then publish it, which makes it live on `*.aem.live`. Authors do both from the authoring UI or from the [AEM Sidekick](https://www.aem.live/docs/sidekick) browser extension.
-
-Preview URLs follow the pattern `https://{branch}--{repo}--{owner}.aem.page` and show previewed content. Live URLs follow the same pattern on `aem.live` and show published content. `{owner}` is the GitHub organization or user that owns the repository, and `{repo}` is the repository name. Content isn't branched: every branch shows the same pages, each with its own code. The live URL of `main` is the production site, which your own domain serves after the cutover.
 
 ### Names You May See {#names}
 
