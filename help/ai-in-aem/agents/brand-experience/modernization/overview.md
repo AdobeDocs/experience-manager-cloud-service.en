@@ -126,7 +126,7 @@ The independence works in both directions: changes that others push or upload do
 
 ### How Changes Go Live {#code-content-lifecycle}
 
-![Code, in blue, moves down from the console workspace: pushing puts it on your branch, and merging after review puts it on main, the production code. Content, in purple, moves across: uploading saves the page in the authoring environment, which is Experience Workspace or the author instance; previewing puts it on the preview site, and publishing puts it on the live site. Each branch's code is a row across the whole diagram, and the authoring environment, the preview site, and the live site are columns down all rows. Where a branch's row crosses the preview or live column, a URL shows that code with the previewed or published content. The live URL of main is the production site.](assets/code-content-lifecycle.png)
+![Code, in blue, moves down from the console workspace: pushing puts it on your branch, where you check changes before they go live, and merging after review puts it on main, the production code. Content, in purple, moves across: uploading saves the page in the authoring environment, which is Experience Workspace or the author instance; previewing puts it on the preview site, and publishing puts it on the live site. Each branch's code is a row across the whole diagram, and the authoring environment, the preview site, and the live site are columns down all rows. Where a branch's row crosses the preview or live column, a URL shows that code with the previewed or published content. The live URL of main is the production site.](assets/code-content-lifecycle.png)
 
 Code and content reach the live site in different ways:
 
