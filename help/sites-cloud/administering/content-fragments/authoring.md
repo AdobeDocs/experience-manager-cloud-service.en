@@ -352,19 +352,30 @@ In **Content Reference** fields you can:
 To reference a local asset, you can either:
 
 * drag and drop the new asset file directly (for example, from your file system) into the **Content Reference** field
-* use the **Add asset or content path** action, then select either **Browse Assets** or **Upload** to open the appropriate selector for you to use
+* use the **Add asset or content path** action, then either:
+
+  * Enter a content path directly.
+  * Select **Browse content** to open the appropriate picker, from where you can select the assets you need, or **Upload** a new Asset.
+    The picker is dependent on the **Accept only specified content types** definition in the model and can be the [Content Advisor](/help/assets/search-assets.md#asset-picker), the Fragment Selector, or the Content Picker.
+
+
+  ![Content Fragment Editor - browse local content](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-content-reference-browse-local.png)
 
 ##### Reference Remote Assets {#reference-remote-assets}
 
 To reference remote assets:
 
-1. Select **Browse content** icon. 
+1. Select the **Browse content** icon. 
+
+   ![Content Fragment Editor - browse](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-content-reference-browse.png)
 
 1. Specify the remote **Repository** when browsing for assets:
 
    ![Content Fragment Editor - Select Asset from remote](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-content-reference-remote-select.png)
 
-2. After selection the location can be seen in the asset information.
+1. After selection the **Repository** location can be seen in the asset information:
+
+   ![Content Fragment Editor - Select Asset from remote](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-content-reference-remote-details.png)
 
 ###### Remote Assets - Limitations {#remote-assets-limitations}
 
