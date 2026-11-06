@@ -24,14 +24,23 @@ Learn the different ways you can author content in AEM, how they differ, and whe
 
 AEM as a Cloud Service offers several different editors to edit different types of content and support different authoring use cases.
 
+* [Experience Workspace](#experience-workspace) - Built for the agentic age, Experience Workspace is an intelligent authoring surface where humans and AI agents collaborate to build, edit, and optimize digital experiences.
 * [WYSIWYG Authoring using the Universal Editor](#universal-editor) - The Universal Editor is a modern UI allowing you to author AEM content in a content-agnostic way and is available for AEM projects leveraging Edge Delivery Services.
 * [WYSIWYG Authoring using the Page Editor](#page-editor) - The Page Editor is the classic editor for authoring content in AEM, tried and trusted for thousands upon thousands of websites.
-* [Document-Based Authoring ](#document-based) - If you use Edge Delivery services, you can choose to author your content as conventional documents such as Microsoft Word or Google Docs entirely outside of AEM consoles.
+* [Document-Based Authoring](#document-based) - If you use Edge Delivery services, you can choose to author your content as conventional documents such as Microsoft Word or Google Docs entirely outside of AEM consoles.
 * [AEM Content Fragment Editor](#cf-editor) - This is the editor of choice for creating headless content.
 
 Because of the integrated and scalable nature of AEM, these methods can be use exclusively or in combination with each other depending on the needs of your project.
 
 Check with your system administrator or project manager if you are uncertain which authoring options are available to you or if you would like to explore new options for authoring your content.
+
+## Experience Workspace {#experience-workspace}
+
+Modern content is created by agents, LLMs, automated pipelines, and authors in AEM. Experience Workspace is the central place where teams review, collaborate, approve, and deploy content with confidence by combining human creativity and AI capabilities.
+
+![Experience Workspace](assets/experience-workspace.png)
+
+Experience Workspace is a lightweight, documented-oriented authoring surface featuring powerful features such as translation, multi-site management, and snapshots and is recommended for all new projects.
 
 ## WYSIWYG Authoring using the Universal Editor {#universal-editor}
 
