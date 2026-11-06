@@ -155,13 +155,13 @@ To restyle your site or build blocks, see [Restyle an Existing Site](restyling.m
 
 ### Use Another Git Host {#other-git}
 
-Edge Delivery Services also supports GitHub Enterprise (self-hosted), Adobe-hosted repositories, GitLab, Bitbucket, and Azure DevOps. Onboard the repository in Adobe Cloud Manager, the Experience Manager as a Cloud Service tool for managing programs, environments, and code repositories. Then configure your site to use it. See [Bring Your Own Git.](https://www.aem.live/developer/byo-git)
+Edge Delivery Services also supports GitHub Enterprise (self-hosted), Adobe-hosted repositories, GitLab, Bitbucket, and Azure DevOps. Onboard the repository in Adobe Cloud Manager, the Experience Manager as a Cloud Service tool for managing programs, environments, and code repositories. Then configure your site to use it. See [Bring Your Own Git](https://www.aem.live/developer/byo-git).
 
 >[!IMPORTANT]
 >
->The console pushes changes to your repository. For repositories connected through Cloud Manager, it pushes a branch but doesn't open a pull request; open one in your Git host if you need a review. The access token you create in Cloud Manager must grant write access to repository code, alongside the permissions listed at [step 8 of Add external repositories.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/external-repositories)
+>The console pushes changes to your repository. For repositories connected through Cloud Manager, it pushes a branch but doesn't open a pull request; open one in your Git host if you need a review. The access token you create in Cloud Manager must grant write access to repository code, alongside the permissions listed at [step 8 of Add external repositories](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/external-repositories).
 >
->If you already onboarded a token without write access, edit it in Cloud Manager under **Repositories > Manage Access Tokens** and paste a value that includes write access; you don't need to onboard the repository again. See [Manage access tokens.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/manage-access-tokens#edit-access-tokens)
+>If you already onboarded a token without write access, edit it in Cloud Manager under **Repositories > Manage Access Tokens** and paste a value that includes write access; you don't need to onboard the repository again. See [Manage access tokens](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/manage-access-tokens#edit-access-tokens).
 
 ## Open the Experience Modernization Console {#open-console}
 

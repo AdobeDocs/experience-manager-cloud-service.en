@@ -111,7 +111,7 @@ Provide the author task, example content, the behavior and design you want, [whe
 1. Create representative content first. Include long text, missing optional values, multiple items, and meaningful images/links.
 1. Implement only the needed HTML decoration, CSS, and JavaScript. Reuse project tokens and shared utilities.
 1. For Experience Manager authoring, update the source models/component configuration and regenerate aggregates through the project workflow. A block's model defines the fields authors edit in the Universal Editor; the editor reads the model, not a table in a document, so the block is editable there only once its model defines those fields. Check conversion and authoring hints.
-1. [Validate](#validation), then document an authorable example and allowed variants.
+1. [Validate](#validation), then document an example that authors can edit and the allowed variants.
 
 For example:
 

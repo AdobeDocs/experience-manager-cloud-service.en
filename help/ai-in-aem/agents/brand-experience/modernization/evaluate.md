@@ -153,7 +153,7 @@ The record is easiest to follow when each request to the agent ends in its own c
 * Code that you push is stored in your Git repository, and content that you upload is stored in Experience Workspace or on your author instance. Their own retention and version history policies apply.
 * Work that you haven't pushed or uploaded exists only in your console workspace, along with the chat history and the transcripts of the agent's sessions. **Clear chat** removes the messages from the chat panel but keeps the transcripts. To delete the open project's work in the console workspace, including the transcripts, use [**Reset workspace**](console.md#settings-page).
 
-For processing locations, data retention, and compliance information, contact your Adobe account team or see the [Adobe Trust Center.](https://www.adobe.com/trust.html)
+For processing locations, data retention, and compliance information, contact your Adobe account team or see the [Adobe Trust Center](https://www.adobe.com/trust.html).
 
 ### Health Data and HIPAA {#security-hipaa}
 

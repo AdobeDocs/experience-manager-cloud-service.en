@@ -69,7 +69,7 @@ The prompt input provides controls for interacting with the AI.
 
 ## Chat Page {#chat-page}
 
-The [**Chat** page](https://aemcoder.adobe.io/chat) is the main interface for interacting with the agent. This page is split into a resizable [chat panel](#chat-panel) and [workspace panel.](#workspace-panel)
+The [**Chat** page](https://aemcoder.adobe.io/chat) is the main interface for interacting with the agent. This page is split into a resizable [chat panel](#chat-panel) and [workspace panel](#workspace-panel).
 
 ## Chat Panel {#chat-panel}
 
@@ -252,12 +252,12 @@ If you make a change to any value in any section, select **Save** to save those 
   * **Logout**: Disconnects from GitHub and revokes the agent's access to your GitHub credentials
   * **Library URL** - This URL points to a `library.json` file that defines the blocks available to authors, their variations, and example content.
   * **Site base URL** - The origin URL of the website being migrated
-* **Agent permissions** - Control what the agent may access on your behalf. Each permission is off until you turn it on and save it. The agent uses a permission without receiving the credential itself. See [Security and Data Handling.](evaluate.md#security)
+* **Agent permissions** - Control what the agent may access on your behalf. Each permission is off until you turn it on and save it. The agent uses a permission without receiving the credential itself. See [Security and Data Handling](evaluate.md#security).
   * **Allow LLM to use my Adobe credentials for admin.hlx.page, Document Authoring, and repositories hosted outside GitHub** - In the **Adobe IMS permissions (admin.hlx.page & Document Authoring)** section. When enabled, the agent can read site configuration and metadata, read Experience Workspace content, and push to and pull from repositories hosted outside GitHub, using your Adobe credentials. `admin.hlx.page` is the admin API of Edge Delivery Services; `hlx` comes from Helix, the project name under which its architecture was developed. This doesn't approve publishing: the console stops the agent from uploading, previewing, or publishing unless you ask for it. See [Control over Changes](evaluate.md#security-control).
   * **Custom IMS Token (optional)** - Provide a token for the agent to use instead of your session token. IMS is Adobe's identity service, which issues the token for your Adobe ID session. Prefer the token of a service account, also called a technical account, over a personal token where possible, so that the agent's access doesn't depend on your own account. Leave the field empty to use your session token; the section shows which token is in use.
   * **Allow LLM to use my git credentials** - Where available, lets the agent push to and pull from your GitHub repositories on your behalf. If you don't see this setting, it isn't available to you yet; push the agent's changes yourself with **Sync** > **Push** > **Code**. When it's on, the agent can push to any repository and branch that your GitHub credentials can write to, including `main`. [Branch protection](evaluate.md#security-control) in your repository still applies. This grants elevated access, so give the agent its own token.
   * **Custom Git Token (optional, recommended)** - A personal access token for the agent to use instead of the workspace's Git credential. Create a fine-grained token scoped to only the repositories that the agent needs. Leave the field empty to use the workspace's existing credential.
-* **Credentials** allows you to specify a personal access token for Figma so the [agent can read your Figma designs.](prompting-guide.md#figma-block-migration) The Figma import add-on reads them through a Model Context Protocol (MCP) server, and the token is added to its requests to Figma without the agent receiving it. Figma issues and governs the token, so the agent can read only the files that the token's owner can open. It is unrelated to the design tokens, such as colors and spacing, that the agent reads from your designs.
+* **Credentials** allows you to specify a personal access token for Figma so the [agent can read your Figma designs](visual-changes.md#figma). The Figma import add-on reads them through a Model Context Protocol (MCP) server, and the token is added to its requests to Figma without the agent receiving it. Figma issues and governs the token, so the agent can read only the files that the token's owner can open. It is unrelated to the design tokens, such as colors and spacing, that the agent reads from your designs.
   * The token requires the following read-only scopes:
     * `file_content:read`
     * `file_metadata:read`
@@ -344,4 +344,4 @@ On the Auto mode pages, the button is **Get help**. Use it to ask for more pages
 
 When a new version of the console is released, a **What's new** notice at the top of the page lists its highlights. Expand it to see the list, or dismiss it. It reappears for the next release.
 
-For details of each release, see the [Experience Modernization Agent release notes.](/help/release-notes/modernization-agent/current.md)
+For details of each release, see the [Experience Modernization Agent release notes](/help/release-notes/modernization-agent/current.md).

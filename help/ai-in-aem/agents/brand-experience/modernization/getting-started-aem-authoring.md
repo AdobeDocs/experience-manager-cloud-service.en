@@ -54,7 +54,7 @@ For an existing project that stores its content in the JCR, reuse its configurat
 
 1. In the Sites console, select **Create** > **Site from template**.
 1. Select the **AEM Site with Edge Delivery Services Template**.
-   * Don't see it listed? [Install the template.](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)
+   * Don't see it listed? [Install the template](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
 1. For this template setup, keep the **name** of the site (not the title) as provided.
    * The site name is used as the unique identifier.
    * The title can be changed for display.
@@ -117,7 +117,7 @@ For a failed package or image upload, retain the log and selected paths. Correct
 
 If **Create package** reports **Missing site configuration**, the console doesn't know the project's site path, `/content/{site-name}`, and DAM folder, `/content/dam/{folder-name}`. It finds them by looking up the site on the author instance that the project's content source points to, as set in `fstab.yaml` or in the site's configuration. Check that the site exists on that author instance and that the Adobe account you signed in with can access it, then reload the console. If the message persists, [request support](console.md#request-support). If it reports **Missing site base URL**, enter the origin URL of the source site, such as `https://www.example.com`, as **Site base url** in [Settings](console.md#settings-page).
 
-If the Experience Manager as a Cloud Service environment is hibernated, the upload dialog and Settings say so and link to the Developer Console. De-hibernate the environment there, then retry the upload. See [De-hibernate a sandbox program from the Developer Console.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md#de-hibernation-introduction)
+If the Experience Manager as a Cloud Service environment is hibernated, the upload dialog and Settings say so and link to the Developer Console. De-hibernate the environment there, then retry the upload. See [De-hibernate a sandbox program from the Developer Console](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md#de-hibernation-introduction).
 
 Review and [push the matching code and configuration](getting-started.md#push-code-changes) through your project's repository policy. This is separate from the package upload; see [How Changes Go Live](overview.md#code-content-lifecycle).
 
