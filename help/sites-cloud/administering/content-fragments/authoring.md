@@ -339,10 +339,12 @@ In **Content Reference** fields you can:
 
 ##### Reference Local Assets {#reference-local-assets}
 
+<!-- CQDOC-24267 - check screenshot -->
+
 To reference a local asset, you can either:
 
 * drag and drop the new asset file directly (for example, from your file system) into the **Content Reference** field
-* use the **Add asset** action, then select either **Browse Assets** or **Upload** to open the appropriate selector for you to use:
+* use the **Add asset or content path** action, then select either **Browse Assets** or **Upload** to open the appropriate selector for you to use:
 
   ![Content Fragment Editor - Add asset options](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-add-asset-options.png)
 
