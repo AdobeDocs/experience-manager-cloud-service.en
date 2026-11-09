@@ -22,7 +22,7 @@ Cloud Manager builds and tests your code using a specialized build environment.
 
 * The build environment is Linux-based, derived from Ubuntu 22.04.
 * Apache Maven 3.9.4 is installed.
-  * Adobe recommends users [update their Maven repositories to use HTTPS instead of HTTP](#https-maven).
+  * Use [HTTPS for Maven repositories](#https-maven).
 * The Java versions installed are Oracle JDK 11.0.22, Oracle JDK 17.0.10, Oracle JDK 21.0.4, and Oracle JDK 25.0.2.
 * **IMPORTANT:** By default, the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk1.8.0_401`, which contains Oracle JDK 8u401. Override this default for AEM Cloud Service projects by [setting the Maven JDK version](#alternate-maven-jdk-version).
 * There are some additional necessary system packages installed.
@@ -45,11 +45,7 @@ Cloud Manager builds and tests your code using a specialized build environment.
 
 ## HTTPS Maven repositories {#https-maven}
 
-Cloud Manager [release 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) began a rolling update to the build environment (completing with release 2023.12.0), which included an update to Maven 3.8.8. A significant change introduced in Maven 3.8.1 was a security enhancement aimed at mitigating potential vulnerabilities. Specifically, Maven now disables all insecure `http://*` mirrors by default, as outlined in the [Maven release notes](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291).
-
-Some users encounter issues during the build step when downloading artifacts from Maven repositories that use insecure HTTP connections.
-
-To ensure a smooth experience with the updated version, Adobe recommends that users update their Maven repositories to use HTTPS instead of HTTP. This adjustment aligns with the industry's shift towards secure communication protocols and helps maintain a secure and reliable build process.
+Use HTTPS URLs for Maven repositories and mirrors. Maven [blocks external HTTP repositories by default](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291), which can cause dependency or plugin downloads to fail. If your build references an HTTP repository, update the repository or mirror configuration to use its HTTPS endpoint.
 
 ## Java support {#using-java-support}
 
