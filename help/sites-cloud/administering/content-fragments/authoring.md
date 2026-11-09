@@ -322,6 +322,40 @@ Alternatively you can [select **Create new fragment** to open the **Create** dia
 
 [Content References](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference) are used to reference other AEM content types, such as images, pages, and Experience Fragments.
 
+In **Content Reference** fields you can:
+
+* reference assets (such as [images](#reference-images), videos and others) that:
+
+  * already exist in your local repository
+  * reside in a remote repository
+
+* reference [AEM Pages and Experience Fragments](#reference-pages-and-experience-fragments)
+* reference either [local](#reference-local-assets) or [remote](#reference-remote-assets) repositories
+* Select **Browse content** to open the [Content Advisor](/help/assets/search-assets.md#asset-picker) to:
+
+  * select the required content,
+
+  * **Search with keywords**, 
+
+  * **Upload** assets directly to the field; this avoids the need to use the **Assets** console to upload
+
+  * Select the repository to use, either local or remote
+
+  * Specify **Accept only specified content types**, to select the appropriate picker for **Assets**, **Content Fragments**, **Content Reference**. 
+
+>[!NOTE]
+>
+>To directly upload an image to the **Content Reference** field, it **must**:
+>
+>* have a **Root Path** defined (in the [Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)). This specifies where the image will be stored.
+>* include **Image** in the list of accepted content types
+
+>[!NOTE]
+>
+>The content you select must be validated against the [field definition of the model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference) of the current fragment. If the content selected does not validate, then an error message will be shown for the current field.
+
+#### Add a Content Reference {#add-a-content-reference}
+
 Depending on the definition you can add a single, or multiple (a predefined number) references:
 
 ![Content Fragment Editor - Add asset options](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-content-references.png)
@@ -332,36 +366,27 @@ Depending on the definition you can add a single, or multiple (a predefined numb
 
 * if the number of items in the **multifield** is below the maximum allowed, the action menu **Add multiple references** button is enabled; otherwise it is disabled
 
-#### Reference Images {#reference-images}
+#### Reference Local Assets {#reference-local-assets}
 
-In **Content Reference** fields you can:
-
-* reference assets that already exist in your local repository
-* reference assets that reside in a remote repository
-* upload assets directly to the field; this avoids the need to use the **Assets** console to upload
-
-  >[!NOTE]
-  >
-  >To directly upload an image to the **Content Reference** field, it **must**:
-  >
-  >* have a **Root Path** defined (in the [Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)). This specifies where the image will be stored.
-  >* include **Image** in the list of accepted content types
-
-##### Reference Local Assets {#reference-local-assets}
-
-To reference a local asset, you can either:
+To reference a local asset, you can:
 
 * drag and drop the new asset file directly (for example, from your file system) into the **Content Reference** field
-* use the **Add asset or content path** action, then either:
+* use the **Add asset or content path** action, from where you can:
 
-  * Enter a content path directly.
-  * Select **Browse content** to open the appropriate picker, from where you can select the assets you need, or **Upload** a new Asset.
-    The picker is dependent on the **Accept only specified content types** definition in the model and can be the [Content Advisor](/help/assets/search-assets.md#asset-picker), the Fragment Selector, or the Content Picker.
+  * Enter a content path directly
+* Select **Browse content**:
 
+  ![Content Fragment Editor - browse](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-content-reference-browse.png)
+
+  To open the [Content Advisor](/help/assets/search-assets.md#asset-picker), from where you can:
+
+  * select the assets you need, 
+  * **Search with keywords**, 
+  * or **Upload** a new Asset.
 
   ![Content Fragment Editor - browse local content](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-content-reference-browse-local.png)
 
-##### Reference Remote Assets {#reference-remote-assets}
+#### Reference Remote Assets {#reference-remote-assets}
 
 To reference remote assets:
 
@@ -369,11 +394,16 @@ To reference remote assets:
 
    ![Content Fragment Editor - browse](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-content-reference-browse.png)
 
-1. Specify the remote **Repository** when browsing for assets:
+1. This will open the [Content Advisor](/help/assets/search-assets.md#asset-picker), from where you can specify the remote **Repository** when browsing for assets:
 
    ![Content Fragment Editor - Select Asset from remote](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-content-reference-remote-select.png)
 
-1. After selection the **Repository** location can be seen in the asset information:
+1. You can then:
+
+   * select the assets you need, 
+   * **Search with keywords**. 
+
+1. After selecting the content, the **Repository** location can be seen in the information provided in the Content Reference field itself:
 
    ![Content Fragment Editor - Select Asset from remote](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-content-reference-remote-details.png)
 
@@ -399,7 +429,24 @@ There are some limitations when referencing remote assets:
 >
 >See also [AEM GraphQL API for use with Content Fragments - Dynamic Media for OpenAPI asset support (Remote Assets)](/help/headless/graphql-api/content-fragments.md#dynamic-media-for-openapi-asset-support)
 
-#### Reference Pages {#reference-pages}
+#### Reference Images {#reference-images}
+
+In **Content Reference** fields you can:
+
+* reference image assets that already exist in your local repository
+
+* reference image assets that reside in a remote repository
+
+* upload image assets directly to the field; this avoids the need to use the Assets console to upload
+
+>[!NOTE]
+>
+>To directly upload an image to the **Content Reference** field, it must:
+>
+>* have a **Root Path** defined (in the [Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)). This specifies where the image will be stored.
+> * include **Image** in the list of accepted content types
+
+#### Reference Pages and Experience Fragments {#reference-pages-and-experience-fragments}
 
 To add references to AEM pages, Experience Fragments, or other such content types:
 
