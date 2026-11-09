@@ -37,7 +37,7 @@ The variations of privileges on [!DNL Content Hub] include:
 
 >[!NOTE]
 >
->You can access and use [!DNL Content Hub] with up to **250 [!DNL Content Hub] Limited users** for **Assets Ultimate** and **50 [!DNL Content Hub] users** for **Assets Prime**. Contact your Adobe representative if you have additional questions.
+>You can access and use [!DNL Content Hub] with up to **250 [!DNL Content Hub] Limited users** for **Assets Ultimate** and **50 [!DNL Content Hub] users** for **Assets Prime**. If you need more [!DNL Content Hub] users than your license includes, contact your Adobe representative to enable additional users.
 
 The following table summarizes the available [!DNL Content Hub] user types, the privileges they have, and the product profiles that are required to get those privileges:
 
@@ -119,7 +119,7 @@ The following [!DNL Content Hub] credits are available to you based on your Adob
 
 * **Existing Assets as a Cloud Service customers**: **1 [!DNL Content Hub] credit**
 
-You utilize one [!DNL Content Hub] credit to enable [!DNL Content Hub] on each environment—Production, Development, or Stage. Because each environment consumes a separate credit, the number of environments you can activate is determined directly by your available credit count. Enabling [!DNL Content Hub] on lower environments such as Development and Stage allows teams to test, validate, and preview asset workflows before activating it on Production.
+You utilize one [!DNL Content Hub] credit to enable [!DNL Content Hub] on each environment—Production, Development, or Stage. Because each environment consumes a separate credit, the number of environments you can activate is determined directly by your available credit count. You must enable [!DNL Content Hub] on the Production environment. You cannot enable [!DNL Content Hub] only on Development or Stage environments.
 
 #### Steps to enable [!DNL Content Hub] for lower environments
 
@@ -382,6 +382,8 @@ Adobe Experience Manager (AEM) Assets includes [!DNL Content Hub] Limited user e
 
 As a result, both Assets Ultimate and Assets as a Cloud Service provide five times the [!DNL Content Hub] Limited user capacity of Assets Prime, giving larger teams greater reach to distribute and consume approved assets through [!DNL Content Hub].
 
+If your organization needs more [!DNL Content Hub] users than your license tier includes, additional users can be enabled. Contact your Adobe representative.
+
 ### How many [!DNL Content Hub] credits are available with my AEM Assets license?
 
 The number of [!DNL Content Hub] credits available depends directly on your Adobe Experience Manager (AEM) Assets license tier. Credit allocation is determined as follows:
@@ -412,13 +414,14 @@ To plan credit usage accurately, count every environment where [!DNL Content Hub
 
 ### Can I enable [!DNL Content Hub] on lower environments?
 
-Yes. **You can enable Adobe Experience Manager (AEM) Assets [!DNL Content Hub] on lower environments**, including Development and Stage, provided you have available [!DNL Content Hub] credits. Each lower environment you enable **consumes one [!DNL Content Hub] credit**, because each enablement draws from your finite pool of available credits.
+Yes. **You can enable Adobe Experience Manager (AEM) Assets [!DNL Content Hub] on lower environments**, including Development and Stage, provided [!DNL Content Hub] is enabled on the Production environment and you have available [!DNL Content Hub] credits. Each lower environment you enable **consumes one [!DNL Content Hub] credit**, because each enablement draws from your finite pool of available credits.
 
 Lower environments are the non-production tiers—such as **Development** and **Stage**—used to build, test, and validate configurations before changes are promoted to production. Enabling [!DNL Content Hub] on these tiers lets teams trial and verify functionality outside of the live environment.
 
 **Key points:**
 
 - [!DNL Content Hub] is not limited to production; it can be enabled on **Development** and **Stage** environments as well.
+- You must enable [!DNL Content Hub] on the **Production** environment. You cannot enable [!DNL Content Hub] only on Development or Stage environments.
 - Enabling [!DNL Content Hub] on each lower environment requires **available [!DNL Content Hub] credits**.
 - **Each enabled lower environment consumes one credit**, so credit availability determines how many lower environments you can activate.
 

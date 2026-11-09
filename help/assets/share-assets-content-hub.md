@@ -37,7 +37,7 @@ Follow these steps to share assets and collections with private or public users:
    You can view an asset or collection available from the **[!UICONTROL List View]**. Click ![unselect](/help/assets/assets/Close.svg) next to an asset to remove it from the ![list](/help/assets/assets/ViewList.svg) **[!UICONTROL List View]**. 
 
 2. Specify a title and an optional description that defines the set of selected assets and collections. 
-3. Select **[!UICONTROL Period of expiration]**. 
+3. Select **[!UICONTROL Period of expiration]**. This setting determines how long the shared link remains valid before access expires. Public links are intended for sharing assets with users who are not onboarded to [!DNL Content Hub]. If users need access to assets for a longer duration, onboard them to [!DNL Content Hub] instead. If you have a valid business use case for public links that remain valid for a longer duration, create an Adobe Support ticket to request an increase to the expiration period.
 4. Under **[!UICONTROL Who can access]** drop down, select the access option **[!UICONTROL Anyone with the link]** or **[!UICONTROL Authenticated users]** and click **[!UICONTROL Create Link]** to generate the link. 
 5. If you want to create a password to restrict access to private users, select **[!UICONTROL Anyone with the link]** under **[!UICONTROL Who has access]** and toggle the **[!UICONTROL Require password protection]** option. Share the generated password with users to enable access to the link.
 6. Click **[!UICONTROL Create link]** to create the shared link. 
