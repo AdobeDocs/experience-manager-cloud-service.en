@@ -66,11 +66,9 @@ To learn more about the AEM page editor, please see the document [The AEM Page E
 
 ## Document-Based Authoring  {#document-based}
 
-If you use Edge Delivery services, you can choose to author your content as conventional documents such as Microsoft Word or Google Docs entirely outside of the [AEM **Sites** console](/help/sites-cloud/authoring/sites-console/introduction.md).
+If you manage your content in SharePoint or Google Drive, you can directly connect to it and continue to author your content there and then publish them using Edge Delivery Services.
 
 ![Editing document-based content](assets/authoring-methods-document.jpg)
-
-With document-based authoring, authors can use the tools they already know and still benefit from the speed and performance of AEM's Edge Delivery Services to publish their content. Document-based authoring requires no use of the AEM console.
 
 To learn more about document-based authoring, please see the document [Authoring and Publishing Content.](https://www.aem.live/docs/authoring)
 
