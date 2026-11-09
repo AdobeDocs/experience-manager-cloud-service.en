@@ -407,7 +407,7 @@ To reference remote assets:
 
    ![Content Fragment Editor - Select Asset from remote](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-content-reference-remote-details.png)
 
-###### Remote Assets - Limitations {#remote-assets-limitations}
+##### Remote Assets - Limitations {#remote-assets-limitations}
 
 There are some limitations when referencing remote assets:
 
