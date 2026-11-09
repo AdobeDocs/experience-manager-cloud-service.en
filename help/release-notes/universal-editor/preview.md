@@ -20,7 +20,7 @@ role_v2:
 
 # Universal Editor Preview Release Notes {#preview}
 
-These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 22 October 2026.
+These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 5 November 2026.
 
 These **preview** release notes are provided as a convenience so you know what changes to the Universal Editor are upcoming and you can test them by [switching to your preview version.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -32,10 +32,7 @@ These **preview** release notes are provided as a convenience so you know what c
 >
 >The content of the actual release as well as the release date are subject to change.
 
-## Upcoming Features {#upcoming-features}
-
-* no relevant features promoted for this release
-
 ## Upcoming Changes {#upcoming-improvements}
 
-* Fixed browser back/forward navigation by setting up the browser history state before the editor renders. 
+* Rich Text Editor toolbar tooltips now display the keyboard shortcuts for their actions.
+* The device emulator's custom responsive width was fixed so a typed value takes effect when committed instead of reverting to the previous width. The width field also now resets properly and is read-only when switching back to the desktop preset.

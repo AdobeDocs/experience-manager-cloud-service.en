@@ -1,6 +1,6 @@
 ---
-title: Universal Editor 2026.10.15 Release Notes
-description: These are the release notes for the 2026.10.15 release of the Universal Editor.
+title: Universal Editor 2026.11.05 Release Notes
+description: These are the release notes for the 2026.11.05 release of the Universal Editor.
 feature: Release Information
 role: Admin
 product_v2:
@@ -17,9 +17,9 @@ role_v2:
     internal-label: Admin
 ---
 
-# Universal Editor 2026.10.15 Release Notes {#release-notes}
+# Universal Editor 2026.11.05 Release Notes {#release-notes}
 
-These are the release notes for the 15 October 2026 release of the Universal Editor.
+These are the release notes for the 5 November 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -29,17 +29,16 @@ These are the release notes for the 15 October 2026 release of the Universal Edi
 >
 >For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-## New Features {#what-is-new}
+## What's New {#what-is-new}
 
-* AI agents can now see the editor's loaded content and update nested component properties more precisely.
-* AI agents can undo and redo editor changes through the new WebMCP tools.
-* Structured service log events now include a UTC datetime, and forwarded events keep their original datetime.
+* ID-based Content Fragment references were added reducing lookup requests.
+  * Please contact Adobe to enable this feature.
+* Support for composite Content Fragment fields was added.
+* A lightweight WebMCP tool for retrieving the current selection and its loaded content was added.
+  * Please contact Adobe to enable this feature.
+* Variation selection and variation-aware previews were added to the new Content Fragment and Experience Fragment reference pickers.
 
 ## Other Improvements {#other-improvements}
 
-* URLs inside Unified Shell no longer pick up repeated shell or embedded-URL prefixes.
-* The shell's force-reload flag is no longer passed through to the page's search parameters.
-* Drag and drop no longer allows moving components onto targets that are not containers.
-* AI agents can now set images that are not activated yet by using their author DAM path, and they also tell users the asset must be activated to appear on the published page.
-* Updated the headless canvas components to fix remote URL construction for non-Sense-7 instances and bring in Dynamic Media for delivery instances.
-* Icons in extension-provided renderers now receive their props correctly.
+* Tag fields no longer render a separate picker for each tag. Multiple tags now share one picker, while single-tag fields respect their configuration.
+* Error notifications were updated to support structured service errors while retaining compatibility with older responses.

@@ -24,7 +24,6 @@ For information on how to get it enabled for your deployment, see [Assets as a C
 
 Using the Assets Sourcing Portal provides the following benefits:
 
-- Allow external contributors to upload assets without requiring an AEM Assets license.
 - Simplify asset intake through a dedicated upload experience.
 - Reduce manual processing by automatically applying metadata and ingestion policies.
 - Improve governance by controlling where uploaded assets are stored and what metadata contributors provide.

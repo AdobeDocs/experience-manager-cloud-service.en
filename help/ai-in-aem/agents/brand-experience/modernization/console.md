@@ -160,6 +160,14 @@ When pushing changes, you must have first staged changes to include in the push.
 
 Additional GitHub project actions can be performed on the [settings page](#settings-page).
 
+### Project Views {#project-view}
+
+The **Project views** help you plan the migration of an existing site.
+
+* **Planning** to review and refine the templates, pages, and blocks identified by the [site catalog skill](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
+
+For details, see [Site Planning UI](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md#planning-ui).
+
 ## Settings Page {#settings-page}
 
 The [**Settings** page](https://aemcoder.adobe.io/settings) allows you to manage basic settings of the console and is broken up into the following sections.
@@ -187,7 +195,40 @@ If you make a change to any value in any section, click **Save** to save those c
     * `file_dev_resources:read`
     * `projects:read`
   * [See the Figma documentation](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens) for more information about setting up personal access tokens.
+* **Protected site authentication** allows you to configure custom headers, HTTP Basic authentication, or bearer authentication so the agent can access and scrape protected source websites. See [Protected Site Authentication](#protected-site-authentication) for setup instructions.
 * **Support** summarizes information shared with the Adobe support team when you make a support request.
   * **Request support** - Click to initiate a request for support from Adobe without leaving the console.
 * **Danger zone** contains settings that can revert your workspace.
   * **Reset workspace** - Click to reset the workspace to its initial state. This can not be undone.
+
+### Protected Site Authentication {#protected-site-authentication}
+
+Use **Protected site authentication** to let the Experience Modernization Agent access a source website that requires a custom request header, HTTP Basic authentication, or bearer authentication. The source website must be reachable from the agent's hosted environment and configured to accept the authentication method you provide. This feature does not provide access through a VPN or bypass a firewall.
+
+>[!IMPORTANT]
+>
+>This functionality is not intended for use with personally identifiable information (PII) or real end-user data. Use source content that does not contain this data.
+
+To configure access:
+
+1. Open **Settings** in the Experience Modernization Console and find **Protected site authentication**.
+1. Click **Add site**.
+1. Enter the **Site hostname**, such as `staging.example.com`. Enter only the hostname, without `https://` or a URL path.
+1. Select an **Authentication type** and enter the corresponding values.
+
+   | Authentication type | Values to enter |
+   | --- | --- |
+   | Custom header | **Header name** and **Header value**, as required by your source website. For example, the header name might be `X-API-Key`. |
+   | Basic (username & password) | **Username** and **Password** for HTTP Basic authentication. |
+   | Bearer authentication | The bearer token accepted by your source website. |
+
+1. Click **Save** in the **Protected site authentication** section.
+1. Ask the agent to scrape or migrate the source website using its URL as usual.
+
+![Protected site authentication settings with example custom header and HTTP Basic authentication entries](assets/protected-site-authentication.png)
+
+Once saved, credentials are injected into outbound requests to the matching hostname and are not shared with the AI model. Enter credentials only in these settings, not in chat prompts. Content retrieved from the source website is used by the agent for the requested task.
+
+Use scoped, least-privilege credentials, preferably with read-only access to the source content. Each hostname can be configured only once. Configure additional hostnames separately if the source website requires access to protected content on other hosts.
+
+To remove access, click **Remove site** for the entry and then click **Save**.

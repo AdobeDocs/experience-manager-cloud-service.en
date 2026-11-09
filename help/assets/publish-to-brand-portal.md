@@ -275,6 +275,13 @@ See, [Brand Portal documentation](https://experienceleague.adobe.com/docs/experi
    <li>Step text</li>
 -->
 
+>[!NOTE]
+> Brand Portal does not provide a backup or recovery capability for deleted collections. Once a collection is deleted, the deletion is permanent, and the collection cannot be restored. However, a new collection with similar assets can be created manually.
+
+>[!IMPORTANT]
+>
+> Brand Portal is in maintenance mode. All new product innovations are available on [Content Hub](/help/assets/product-overview.md).
+
 **See also**
 
 * [Translate Assets](/help/assets/translate-assets.md)

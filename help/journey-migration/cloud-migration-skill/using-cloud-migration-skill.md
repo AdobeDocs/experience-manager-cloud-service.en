@@ -100,6 +100,30 @@ BPA reports this pattern at **bundle** granularity (subtype `custom.guava.cache`
 >[!NOTE]
 >`guavaCache` relies on BPA as the source of truth. When no BPA or CAM source is available, the agent falls back to scanning your Java files for `import com.google.common.cache` imports as unconfirmed candidates.
 
+### InputStream Usage {#input-stream}
+
+Targets Java code that BPA flags for `java.io.InputStream` usage (subtype `java.io.inputstream`). On AEM as a Cloud Service, streaming large binaries through the JVM can exhaust container memory, so binaries should be uploaded and delivered directly through the cloud blob store and CDN (see [Development Guidelines](/help/implementing/developing/introduction/development-guidelines.md) and [direct binary upload](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access)).
+
+**BPA pattern id:** `inputStream`
+
+The agent groups findings by risk and handles each group differently:
+
+| Finding | Agent action |
+|---------|--------------|
+| Stream or JCR `Binary` not closed | Fixed automatically with try-with-resources |
+| Whole stream read into memory | Bounded read or streaming, when a safe limit is clear; otherwise asks you |
+| Local filesystem, binaries streamed through the JVM, or Java deserialization | Proposes a fix and waits for your decision |
+| Benign usage | No change |
+
+Start a session with:
+
+```
+Fix inputStream findings using BPA CSV at ./reports/bpa.csv
+```
+
+>[!NOTE]
+>`inputStream` relies on BPA as the source of truth. When no BPA or CAM source is available, the agent falls back to scanning your Java files. Findings in code that is not in your workspace, such as product or third-party bundles, are reported for information only.
+
 ### HTL Lint (data-sly-test) {#htl-lint}
 
 Targets HTL templates under `ui.apps` that produce `data-sly-test: redundant constant value comparison` lint warnings. The agent discovers affected templates by scanning the content package directly; this pattern does not require a BPA CSV or CAM connection.
@@ -206,12 +230,75 @@ Convert my AMS / on-prem Dispatcher config to AEM as a Cloud Service.
 >[!NOTE]
 >Run this against a clean working tree so the converted output is easy to review and roll back. The degree of automation depends on the detected mode—`standard` (AMS) configurations are near-automated, while `flexible` and `v1` layouts need more review.
 
+### Oak Index Migration {#oak-index}
+
+>[!NOTE]
+>Oak index migration is in beta. Review the converted index definitions carefully before deploying them to production.
+
+Converts legacy Oak index definitions under `ui.apps/.../_oak_index/` to AEM as a Cloud Service–compatible definitions. This capability wraps Adobe's maintained [Index Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) tool rather than re-implementing its conversion rules. It covers custom Lucene indexes and out-of-the-box indexes that were modified in place.
+
+**BPA pattern id:** `oakIndex` (subtypes `index.rule.violation` and `standard.index.modification`)
+
+The agent runs the converter, shows you a diff with a datatype compatibility check, applies the changes only after you confirm, and then builds `ui.apps` and runs the AEM analyser.
+
+AEM as a Cloud Service requires custom indexes to carry a `-custom-<n>` version suffix, where `<n>` increases each time the definition changes (see [Index Names](/help/operations/indexing.md#index-names)). The agent picks the next free `<n>`, so a repeat migration does not overwrite an existing index:
+
+* **Modified out-of-the-box index:** `<indexName>-<version>-custom-<n>` (for example, `damAssetLucene-8-custom-1`)
+* **New custom index:** `<originalName>-custom-<n>`
+* **Already compliant index:** left unchanged
+
+The pattern currently produces the classic `_oak_index` format. [Simplified Index Management](/help/operations/indexing.md) as a target format is planned but not yet supported.
+
+Start a session with:
+
+```
+Fix oakIndex findings using BPA CSV at ./reports/bpa.csv
+```
+
+>[!NOTE]
+>`oakIndex` relies on BPA as the source of truth. Indexes outside `_oak_index` and `nt:base` Lucene indexes are out of scope, and the agent does not update queries that depend on renamed indexes. See also [Content Search and Indexing](/help/operations/indexing.md).
+
+### Validate a Migration {#validate-migration}
+
+>[!NOTE]
+>Migration validation is in beta. Treat a pass as a strong signal, not a guarantee, and review the validation report before you raise a pull request or deploy to a Cloud Service environment.
+
+After a pattern is migrated, the agent can verify the result on your local AEM as a Cloud Service SDK. Validation is read-only for your code: the agent never edits your source to obtain a pass. If a check fails, the fix goes back to the migration pattern that owns the code.
+
+Validation supports these patterns:
+
+| Pattern | What is checked | Needs a local SDK |
+|---------|-----------------|-------------------|
+| `scheduler`, `assetApi`, `eventListener`, `eventHandler`, `resourceChangeListener`, `replication` | The built OSGi service contract, and bundle and component state after deployment | Yes |
+| `lui`, `cdw` | The migrated dialogs in the built package | No |
+| Template modernization | Component mapping, SDK health, and a side-by-side page comparison with your AEM 6.5 instance | Yes |
+
+Other patterns, such as Dispatcher conversion and OSGi configs, are not covered by validation.
+
+For the patterns that need it, start the Cloud SDK (by default on `http://localhost:4602`) and add its [AEM Quickstart MCP server](/help/ai-in-aem/local-development-with-ai-tools.md#aem-quickstart-mcp-server) to your IDE. The agent then:
+
+1. **Checks setup** - Confirms the required tools, instances, and MCP server are available, and asks you to start anything that is missing.
+2. **Prepares** - Builds the project and deploys the changed bundles through your project's Maven install profile.
+3. **Diagnoses** - Reads bundle and component state from the AEM Quickstart MCP. Offline patterns (`lui`, `cdw`) skip this step.
+4. **Verifies** - Writes a validation report to `.validate-migration/` in your project.
+
+If your project is linked to a Cloud Acceleration Manager project (for example, through the migration runbook), the agent also records the validation outcome in CAM through the AEM MCP Server's Cloud Migration capabilities.
+
+Start a session with:
+
+```
+Validate my scheduler migration on the local Cloud SDK.
+```
+
+>[!NOTE]
+>Validation proves the migration contract and deployment health, not your business logic. The build skips unit tests, so run your own tests separately. Before deployment, the agent checks your configuration for side effects, such as connections to production systems, because installing a bundle can start schedulers or listeners.
+
 ## BPA Source Options {#bpa-source}
 
 | Source | When to use |
 |--------|------------|
 | **BPA CSV file** | You have exported a CSV from your AEM instance or Cloud Acceleration Manager. Provide the file path when starting the session. |
-| **CAM via MCP** | You have the AEM Cloud Migration MCP configured. The agent lists your CAM projects, you confirm which one to use, and findings are fetched directly. See [Using the Cloud Migration MCP](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md). |
+| **CAM via MCP** | You have the AEM MCP Server configured. The agent lists your CAM projects, you confirm which one to use, and findings are fetched directly. See [Using AEM MCP Server Cloud Migration Capabilities](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md). |
 | **Manual file paths** | You want to migrate specific files without a BPA report. Provide the paths directly in your prompt. |
 
 ### MCP Error Handling {#mcp-errors}
@@ -241,4 +328,3 @@ For BPA reports with many findings, the batch-by-batch approach lets you validat
 The agent searches for and edits files only within the open IDE workspace folders. It does not scan parent directories, sibling folders, or other locations on disk.
 
 If a BPA finding references a file path that does not exist in the workspace, the agent stops and tells you which paths are missing. Open the correct project folder or provide the paths explicitly to continue.
-

@@ -149,6 +149,10 @@ Let us now change the **[!UICONTROL Destination]** in the above use case to **[!
 
 To schedule the publish workflow of assets to a later date or time:
 
+>[!CAUTION]
+>
+>The actual publication time may be delayed. As the publication sequence consists of multiple steps, the processing time varies depending on the content and system conditions.
+
 1. From the [!UICONTROL Experience Manager Assets] console, navigate to the parent folder and select all the assets or folders that you want to schedule for publishing. 
 1. Click **[!UICONTROL Manage Publication]** option from the toolbar.
 1. Click **[!UICONTROL Publish]** from **[!UICONTROL Action]**, and then select the **[!UICONTROL Destination]** where you want to publish the content.

@@ -87,6 +87,14 @@ Learn more in the [AEM Edge Functions article](/help/implementing/developing/int
 
 For light authentication use cases including business stakeholders reviewing content, protect content by displaying a basic auth dialog requiring a username and password. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md).
 
+### CDN egress IP addresses {#cdn-egress-ips}
+
+The AEM-managed CDN's egress IP addresses may change over time. Monitor the [public IP list](https://api.fastly.com/public-ip-list) for changes; see the [Public IP List documentation](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/) for details.
+
+>[!CAUTION]
+>
+>These IP ranges are shared and are not owned by Adobe. Do not rely on them as a primary security enforcement mechanism.
+
 ## Customer managed CDN points to AEM managed CDN {#point-to-point-cdn}
 
 >[!CONTEXTUALHELP]

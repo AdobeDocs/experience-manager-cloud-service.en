@@ -307,15 +307,7 @@ To view assets only for a selected environment in **Adobe Experience Manager (AE
 
    [!DNL Content Hub] now displays assets for the selected environment, because the interface is pointed at that environment's delivery repository and reads its assets directly.
 
-   >[!NOTE]
-   >
-   >If assets from a specific environment, for example, **STAGE** are not appearing in [!DNL Content Hub] while assets from another environment, for example, **PRODUCTION** are, check the **[!UICONTROL Select Repository]** setting in your [!DNL Content Hub] profile. [!DNL Content Hub] connects to one specific delivery repository at a time, and the UI can remain pointed at a different environment's repository, for example, still **PRODUCTION** than the one currently being tested. As a result, the expected assets do not surface even though they exist. Switching the repository selection to the correct environment directly resolves this, and it does so without any change to asset approval or Attribute-Based Access Control (ABAC) configuration.
-
-## How can AEM [!DNL Assets] [!DNL Content Hub] display the thumbnail preview for .ZIP file type? {#thumbnail-preview-zip-file}
-
-Adobe Experience Manager (AEM) [!DNL Assets] [!DNL Content Hub] displays a thumbnail preview for file types such as .ZIP when a correctly named rendition is added to the asset. Add a rendition named **`cq5dam.<label>.<width>.<height>.<ext>`** to the root of the path where the .ZIP is available in Adobe Experience Manager (AEM) as a Cloud Service authoring environment. For example, **`cq5dam.preview.500.500.png`**.
-
-### How [!DNL Content Hub] selects the rendition
+## How can AEM Assets Content Hub display the thumbnail preview for .ZIP file type? {#thumbnail-preview-zip-file}
 
 [!DNL Content Hub] picks the rendition with the **greatest width** among all `cq5dam.*` renditions. This ensures the highest-resolution image is used as the preview. A custom rendition displays as a thumbnail preview only if its encoded width exceeds the existing auto-generated renditions.
 
@@ -386,4 +378,4 @@ The presence of this identifier is **not** evidence of a workflow bug. The `dam:
 * [Search facets](/help/assets/search-facets.md)
 * [Manage collections](/help/assets/manage-collections.md)
 * [Bulk metadata import](/help/assets/metadata-import-export.md)
-* [Publish [!DNL Assets] to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

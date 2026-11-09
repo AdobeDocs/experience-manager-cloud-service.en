@@ -42,6 +42,10 @@ Content Fragment Models in Adobe Experience Manager (AEM) as a Cloud Service def
 >
 >Content Fragments are stored as **Assets**. Content Fragment Models are primarily managed from the **Content Fragments** console, but can also be managed from the [Assets](/help/assets/content-fragments/content-fragments-managing.md) console and the option [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) that is available from **Tools** - **General**.
 
+>[!CAUTION]
+>
+>Take care with your filter settings when [deploying your Content Fragment Models and Persisted Queries in Content Packages](/help/headless/deployment/content-packages.md).
+
 ## How to work with Content Fragment Models {#how-to-work-with-content-fragment-models}
 
 As a very quick overview, to work with Content Fragment Models you:
@@ -283,7 +287,7 @@ A model can also be disabled so that:
 * The model is no longer available as a basis for creating *new* Content Fragments.
 * However:
   * The GraphQL schema keeps being generated and is still queryable (to avoid impacting JSON API).
-  * Any Content Fragments based of the model can still be queried and returned from the GraphQL endpoint.
+  * Any Content Fragments based on the model can still be queried and returned from the GraphQL endpoint.
 * The model cannot be referenced anymore, but existing references are kept untouched, and can still be queried and returned from the GraphQL endpoint.
 
 To disable a Model that is flagged as **Enabled**, you use the **Disable** option from:
@@ -344,6 +348,12 @@ To delete a Content Fragment model:
    >If the model is referenced, a warning is given so that you can take appropriate action.
 
 ## Publishing a Content Fragment Model {#publishing-a-content-fragment-model}
+
+>[!CAUTION]
+>
+>If the Content Fragment Model contains Composite Data Fields, then the Content Fragment Models defining the structure of those Composite fields must also be published.
+>
+>See also [AEM Content Fragment Delivery with OpenAPI - Deliver a Composite Item](/help/headless/aem-content-fragment-delivery-with-openapi.md#deliver-a-composite-item)
 
 Content Fragment Models need to be published when/before any dependent Content Fragments are published.
 
@@ -437,6 +447,6 @@ You can manage **Locked** models from either the console, or the model editor:
 
     >[!NOTE]
     >
-    >There may still a warning at the top, but that is when the model is already in use by existing Content Fragments. 
+    >There may still be a warning at the top, but that is when the model is already in use by existing Content Fragments. 
 
   * **Cancel** returns you to the console.

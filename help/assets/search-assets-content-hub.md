@@ -136,10 +136,6 @@ To enable AI Search, your environment must meet the minimum requirement:
 
 * Minimum required AEM release version is **`25520`**.
 
->[!IMPORTANT]
->
->This feature is available as Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
-
 AI Search is available for [!DNL Content Hub] environments that use the latest search stack. Adobe is rolling out the latest search stack to [!DNL Content Hub] customers in phases.
 
 ![AI Search in [!DNL Content Hub]](/help/assets/assets/ai-search-content-hub.png)
@@ -331,10 +327,6 @@ By default, [!DNL Content Hub] includes the following sorting options on [!DNL t
 * **Name** — orders assets alphabetically by name
 
 * **Relevance** — orders assets by their match to the active search query
-
->[!IMPORTANT]
->
->This feature is available as a **Limited Availability** feature, meaning access is granted on a phased, opt-in basis rather than being enabled for all deployments by default. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable this sorting feature for your deployment.
 
 Sorting works in [!DNL Content Hub] environments that use the latest search stack. Adobe is rolling out the latest search stack to [!DNL Content Hub] customers in phases, so availability depends on where your deployment falls in that rollout.
 
