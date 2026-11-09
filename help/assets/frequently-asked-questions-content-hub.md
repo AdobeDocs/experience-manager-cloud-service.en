@@ -331,37 +331,6 @@ If you do not add a custom rendition, [!DNL Content Hub] determines the thumbnai
 
 * **If the .ZIP contains one or more images**, [!DNL Content Hub] picks one of them as the thumbnail. When there are multiple images, it selects the first one in **alphanumeric filename order**.
 
-* **If the .ZIP contains only non-image files** (for example, only a PDF, or only a video, with no eligible image inside), no thumbnail is generated. [!DNL Content Hub] does not extract a preview frame from a video and does not render a preview from a PDF inside the .ZIP file.
-
-To guarantee a specific preview, add a custom `cq5dam.<label>.<width>.<height>.<ext>` rendition rather than relying on automatic selection, because automatic selection depends entirely on eligible image files being present inside the .ZIP.
-
-## What Happens When I Approve an Asset for [!DNL Content Hub] versus Delivery? {#approve-an-asset}
-
-Approving an asset with **Delivery** as the Approval Target is required to make the asset reachable through **public link-sharing**, while approving with **[!DNL Content Hub]** as the target only makes the asset visible inside the [!DNL Content Hub] portal. Approval is not a single binary state: the **Approval Target** selected at approval time determines exactly what the approval enables.
-
-### [!DNL Content Hub] Target Versus Delivery Target
-
-* **[!DNL Content Hub] target** — Makes the asset visible inside the [!DNL Content Hub] portal itself, but does **not** make it accessible through a public share link.
-* **Delivery target** — Makes the asset visible inside the [!DNL Content Hub] portal and reachable through **public link-sharing**. Because the Delivery target includes [!DNL Content Hub], you do not need to approve an asset separately for [!DNL Content Hub] and Delivery.
-
-This distinction exists because [!DNL Content Hub] portal visibility and public Delivery are governed by separate approval scopes. Selecting the wrong target therefore restricts where and how the asset can ultimately be accessed.
-
-### Troubleshooting Broken Public Share Links
-
-A **There is no content to display** message or a **404 Error** on a shared public link occurs because the underlying asset was approved with **[!DNL Content Hub]** as the target rather than **Delivery**. To resolve a broken share link, follow these steps:
-
-1. Open the asset and check its **Approval Target**.
-2. If the target is set to **[!DNL Content Hub]**, correct it to **Delivery**.
-3. Re-test the public share link before investigating any other cause.
-
-Correcting the **Approval Target** to **Delivery** should be the first troubleshooting action, as it is the most frequent cause of inaccessible public links.
-
-### The `dam:roles` Metadata Field
-
-When an asset is approved with **[!DNL Content Hub]** as the target, Adobe Experience Manager (AEM) auto-populates the `dam:roles` metadata field with a system-managed Identity Management System (IMS) group identifier. This is an expected, system-managed security mechanism used to restrict access to authenticated users only.
-
-The presence of this identifier is **not** evidence of a workflow bug. The `dam:roles` value should not be manually edited or removed, and it does **not** conflict with the Attribute-Based Access Control (ABAC) rules. If a metadata schema exposes this field, mark it read-only or hidden so authors do not inadvertently change it. Control access visibility through ABAC and metadata configuration rather than by editing `dam:roles` directly, because manual edits to a system-managed field can disrupt the intended authenticated-access restrictions.
-
 **See also**
 
 * [Translate [!DNL Assets]](/help/assets/translate-assets.md)
