@@ -345,18 +345,11 @@ In **Content Reference** fields you can:
 
 >[!NOTE]
 >
->To directly upload an image to the **Content Reference** field, it **must**:
->
->* have a **Root Path** defined (in the [Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)). This specifies where the image will be stored.
->* include **Image** in the list of accepted content types
-
->[!NOTE]
->
 >The content you select must be validated against the [field definition of the model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference) of the current fragment. If the content selected does not validate, then an error message will be shown for the current field.
 
 #### Add a Content Reference {#add-a-content-reference}
 
-Depending on the definition you can add a single, or multiple (a predefined number) references:
+Depending on the field definition in the Content Fragment Model you can add a single, or multiple (a predefined number) references:
 
 ![Content Fragment Editor - Add asset options](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-content-references.png)
 
