@@ -87,7 +87,7 @@ Experience Workspace is the modern default face to AEM and is the default for al
 * Based on decoupled architecture
 * Supports advanced use cases such as [of1.live](https://of1.live)
 
-Being AEM it offers powerful features for content authors such as translation, multi-site management, and snapshots.
+As authors expect from AEM, it also offers powerful features for content authors such as translation, multi-site management, and snapshots.
 
 ### Universal Editor {#universal-editor}
 
