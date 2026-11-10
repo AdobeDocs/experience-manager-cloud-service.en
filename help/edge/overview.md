@@ -69,7 +69,27 @@ Edge Delivery Services uses GitHub so you can manage and deploy code directly fr
 
 ## Authoring {#authoring}
 
-### In-context editing {#in-context-editing}
+Edge Delivery Services offers two methods of authoring depending on the state of your project.
+
+* [Experience Workspace](#experience-workspace) is the default for new projects.
+* [Universal Editor](#universal-editor) can be leveraged for existing AEM implementations.
+
+### Experience Workspace {#experience-workspace}
+
+Modern content is created by agents, LLMs, automated pipelines, and authors in AEM. More than just authoring, [Experience Workspace](https://www.aem.live/docs/ew/about) is the central place where teams review, collaborate, approve, and deploy content with confidence by combining human creativity and AI capabilities.
+
+![Experience Workspace](assets/experience-workspace.png)
+
+Experience Workspace is the modern default face to AEM and is the default for all new projects.
+
+* Works with the [Experience Modernization Agent](/help/ai-in-aem/agents/brand-experience/overview.md)
+* Is GEO-optimized with semantic HTML
+* Based on decoupled architecture
+* Supports advanced use cases such as [of1.live](https://of1.live)
+
+Being AEM it offers powerful features for content authors such as translation, multi-site management, and snapshots.
+
+### Universal Editor {#universal-editor}
 
 [The Universal Editor](/help/implementing/universal-editor/introduction.md) is a what-you-see-is-what-you-get (WYSIWYG), customizable, one-stop place to edit content live and in-context with a visual preview.
 
@@ -80,9 +100,9 @@ Edge Delivery Services uses GitHub so you can manage and deploy code directly fr
 
 ![AEM authoring with the Universal Editor](assets/wysiwyg-authoring.png)
 
-### Document-based editing {#document-based-editing}
+### Which authoring method is right for me? {#which-authoring-method}
 
-[Another approach is document-based authoring](https://www.aem.live/docs/authoring) where content gets managed as documents. Microsoft Word is a popular choice as many enterprises have SharePoint in place where the initial content gets created. No need to learn a new tool and publishing content directly from SharePoint and Word removes the hassle of copy & paste content into AEM. Customers without SharePoint can also use Google Drive as an alternative.
+Experience Workspace is the new default for managing your content. If you are not certain which option is right for you, [be sure to review the authoring guide](https://www.aem.live/docs/authoring-guide) to help determine which is the best fit for your needs.
 
 ## Operational Telemetry {#telemetry}
 
