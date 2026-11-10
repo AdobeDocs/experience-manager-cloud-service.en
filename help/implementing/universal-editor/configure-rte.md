@@ -100,7 +100,7 @@ The actions configuration allows you to customize the behavior and appearance of
 
 Most actions support the following common options:
 
-* `shortcut?`: string - Overrides the default keyboard shortcut for the action (if any)
+* `shortcut?`: string - Overrides the default keyboard shortcut or defines the [keyboard shortcut](#keyboard-shortcuts) for the action
 * `label?`: string - Overrides the label used for the action in UI
 * `hideInline?`: boolean - When `true`, hides this action from the in-context (inline) RTE editor toolbar
 
@@ -792,7 +792,7 @@ Choose semantic tags (`<strong>`, `<em>`, `<del>`) for better accessibility and 
 
 ### Inline Code {#inline-code}
 
-The `code_inline` format option marks a span of text as inline code, rendering `<code>` (for example, referencing a `foo()` call inside a sentence). Unlike `bold`/`italic`/`strike` it has no tag-switching option, and it excludes all other marks. Inline code is rendered verbatim, so `bold`/`italic`/`link` can not be applied on top of it. The default keyboard shortcut is `Mod-e`.
+The `code_inline` format option marks a span of text as inline code, rendering `<code>` (for example, referencing a `foo()` call inside a sentence). Unlike `bold`/`italic`/`strike` it has no tag-switching option, and it excludes all other marks. Inline code is rendered verbatim, so `bold`/`italic`/`link` can not be applied on top of it. The default keyboard shortcut is `Mod-E`.
 
 This is distinct from the `code_block` block (`<pre><code>`) available in the `blocks` dropdown. `code_inline` is an inline mark within a line, while `code_block` is a standalone, multi-line block. Code blocks hold plain text only (no marks), so an inline `<code>` is never nested inside a `<pre>`.
 
