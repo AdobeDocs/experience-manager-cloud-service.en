@@ -816,10 +816,65 @@ The plugin also parses legacy `<font color="...">` elements for backward compati
 
 ### Keyboard Shortcuts {#keyboard-shortcuts}
 
+There are three types of keyboard shortcuts:
+
+* Default shortcuts for actions which can be overridden
+* Default shortcuts for actions which can not be overridden
+* Actions with no default shortcut but can be configured
+
 Shortcuts use the format `Mod-Key`(s) where:
 
-* `Mod` = `Cmd` on Mac, `Ctrl` on Windows/Linux
-* Examples: `Mod-B`, `Mod-Shift-8`, `Mod-Alt-1`
+* `Mod` = `Cmd` on Mac, `Ctrl` on Windows/Linux.
+  * Examples: `Mod-B`, `Mod-Shift-8`, `Mod-Alt-1`
+* Empty strings can clear a default shortcut: `"shortcut": ""`.
+* If more than one action claims the same shortcut, the first wins and the subsequent are ignored with a console warning.
+* `removeformat`, `clean_unsupported_tags`, and `fullscreen` are not in the `actions` schema and are not configurable.
+* `Mod+Enter` can not be rebound.
+* Dialog-opening actions (`link`, `image`, `table`, `special_characters`, `find_and_replace`) only respond when their overlays can open.
+
+#### Defaults which can be overridden {#defaults-overridden}
+
+|Option Key|Default|
+|---|---|
+|`bold`|`Mod+B`|
+|`italic`|`Mod+I`|
+|`underline`|`Mod+U`|
+|`strike`|`Mod+Shift+X`|
+|`code_inline`|`Mod+E`|
+|`bullet_list`|`Mod+Shift+7`|
+|`ordered_list`|`Mod+Shift+8`|
+|`paste_text`|`Mod+Shift+V`|
+|`Enter`|`Mod+Enter`|
+
+#### Defaults which can not be overridden {#defaults-not-overwritten}
+
+|Option Key|Default|Context|
+|---|---|---|
+|Undo|`Mod+Z`|History|
+|Redo|`Mod+Shift+Z` or `Mod+Y`|History|
+|Hard line break (`<br>`)|`Shift+Enter`|Plugin|
+|New/split list item|`Enter`|Inside a list|
+|Nest list item|`Tab`|Inside a list|
+|Unnest list item|`Shift+Tab`|Inside a list|
+|Next table cell (and add row from last cell)|`Tab`|Inside a table|
+|Previous table cell|`Shift+Tab`|Inside a table|
+|Move between toolbar items|Arrow keys|Focus on toolbar|
+|Return focus to editor|`Tab`|Focus on toolbar|
+|Close fullscreen modal|`Esc`|In a modal (unless a dialog is open)|
+
+#### No default but can be configured {#no-default}
+
+|Group|Options|
+|---|---|
+|Format|`text_color`|
+|Blocks|`paragraph`, `h1`, `h2`, `h3`, `h4`, `h5`, `h6`, `code_block`, `blockquote`|
+|Alignment|`left`, `center`, `right`, `justify`|
+|Indentation|`indent`, `outdent`|
+|Direction|`rtl`, `ltr`|
+|Script|`superscript`, `subscript`|
+|Insert|`link`, `unlink`, `image`, `table`, `special_characters`|
+|Advanced|`classes`|
+|Editor|`find_and_replace`|
 
 ## Unsupported HTML {#unsupported-html}
 
