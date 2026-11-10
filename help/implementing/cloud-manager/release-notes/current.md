@@ -32,6 +32,14 @@ The next planned release is Thursday, November 5, 2026.
 
 ## New features - Cloud Manager {#cloud-manager-whats-new}
 
+* **Java 23 opt-in**
+
+  To support performance improvements and modern Java features, AEM Cloud Service environments are adding support for running with Java 25. As part of the initial rollout, Cloud Manager added opt-in options for building and deploying AEM projects
+
+  * For pipeline build steps, set `.cloudmanager/java-version` to 25  in the repository branch used by your pipeline. Building with Java 25 also enables Java 25 for the target AEM runtime for the deployed environments.
+  * To try the Java 25 runtime without changing your build JDK, set the Cloud Manager environment variable `AEM_JAVA_25_OPT_IN` to `true`. Runtime opt-in requires being upgraded to the latest AEM release.
+  * Validate your application in development and stage before enabling it in production; configure the variable separately for each environment. 
+
 <!--
 * **GitHub Apps for EDS sites**  
     Cloud Manager now exposes an option for managing GitHub App connections on provisioned Edge Delivery Services (EDS) sites. This option allows teams and automation tools to configure GitHub App integrations programmatically, rather than through manual setup for each site. (CMGR-78197) new doc needed
