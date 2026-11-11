@@ -57,7 +57,7 @@ The build JDK runs Maven; the compiler target determines the Java release target
 
 To set the Maven execution JDK, create a file named `.cloudmanager/java-version` in the Git repository branch used by the pipeline. The file must contain only the major version number: `25`, `21`, `17`, or `11`. Cloud Manager uses the corresponding Oracle JDK. Although Cloud Manager also accepts `8`, this version is no longer supported for AEM Cloud Service projects. Other values are ignored.
 
-The file selects the JDK that runs Maven, not the compiler target. Building with JDK 25 also opts the target environment into the Java 25 runtime, regardless of the compiler target. Review [Java 25 support](#java-25-support) before selecting `25`.
+The file selects the JDK that runs Maven, not the compiler target. The default AEM runtime is currently Java 21. Building with JDK 25 also opts the target environment into the Java 25 runtime, regardless of the compiler target. Review [Java 25 support](#java-25-support) before selecting `25`.
 
 #### Prerequisites for migrating to a newer Java version {#prereq-for-building}
 
