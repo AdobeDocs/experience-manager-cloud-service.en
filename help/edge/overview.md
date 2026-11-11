@@ -20,16 +20,13 @@ role_v2:
     internal-label: Developer
 ---
 
-# Edge Delivery Services Overview {#edge-delivery-services}
+# Edge Delivery Services overview {#edge-delivery-services}
 
 >[!TIP]
 >
 >**Want to get hands-on right away?**
 >
->If you want to get hands-on with Edge Delivery Services right away, you have two options.
->
->* [Start authoring right away with a pre‑built tutorial environment - fully configured and ready to go.](https://www.aem.live/developer/ue-trial)
->* Dig in to more of the details and set up your own environment in less than 30 minutes by [checking out the tutorial on aem.live.](https://www.aem.live/developer/ue-tutorial)
+>If you want to get hands-on with Edge Delivery Services right away, set up your own project in about ten minutes by [checking out the tutorial on aem.live.](https://www.aem.live/developer/tutorial)
 
 ## What is Edge Delivery Services? {#what-is-edge}
 
