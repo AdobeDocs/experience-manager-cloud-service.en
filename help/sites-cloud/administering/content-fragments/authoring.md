@@ -547,7 +547,7 @@ For example:
 
 ## Version History {#version-history}
 
-Each Content Fragment has a history as new versions are created over time. New versions are created for various reasons; including:
+Each Content Fragment has a history as new versions are created over time. New versions are created:
 
 * when you publish your fragment
 * when you manually create a new version
