@@ -80,6 +80,14 @@ To create the language root you create a page and use an ISO language code as th
 * `<language-code>` - The supported language code is a two-letter code as defined by ISO-639-1, for example, `en`.
 * `<language-code>_<country-code>` or `<language-code>-<country-code>` - The supported country code is a lower-case or upper-case two-letter code as defined by ISO 3166, for example, `en_US`, `en_us`, `en_GB`, `en-gb`.
 
+>[!NOTE]
+>
+>When AEM runs on Java 17 or Java 21, the default Java locale mapping uses `he` for Hebrew, `yi` for Yiddish, and `id` for Indonesian instead of the legacy codes `iw`, `ji`, and `in`. Existing i18n dictionaries that use the legacy codes might not be found.
+>
+>Use the current codes for language roots and i18n dictionaries: replace `iw` with `he`, `ji` with `yi`, and `in` with `id`.
+>
+>If you need to retain the legacy codes as a compatibility workaround, add the environment variable `JAVA_LEGACY_ISO_CODES` in Cloud Manager and set its value to `true`. See [Add an environment variable](/help/implementing/cloud-manager/environment-variables.md#add-variables).
+
 You can use either format, according to the structure that you have chosen for your global site. For example, the root page of the French language copy of the WKND site has `fr` as the **Name** property. The **Name** property is used as the name of the page node in the repository, and therefore determines the path of the page (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
 1. Navigate to sites.

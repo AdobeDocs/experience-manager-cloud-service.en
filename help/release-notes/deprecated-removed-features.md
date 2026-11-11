@@ -39,8 +39,8 @@ During the deprecation time window, Adobe will remind customers of the actions t
 >
 >Several [deprecated APIs](#aem-apis) will be removed on **March 31, 2027**. Please review these key dates and impacts:
 >
->* **Starting November 2027**: Actions Center notification emails are sent as a reminder to remove usage of these APIs, if a pipeline has been recently executed.
->* **December 2027**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
+>* **Starting November 2026**: Actions Center notification emails are sent as a reminder to remove usage of these APIs, if a pipeline has been recently executed.
+>* **December 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
 >* **January 2027**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.*
 >* **March 31 2027**: Environments still using deprecated APIs will have the libraries removed from the AEM product injected into their custom project code and will not be subject to Adobe’s standard commitments around performance and availability. Application stability and uptime may be negatively affected, and security risk exposure may increase further. The libraries will need to be removed later in 2027.
 
@@ -68,6 +68,7 @@ The functionality in the table below have been announced as deprecated, but have
 | [!DNL Foundation]       | Adobe’s built-in APM integration (New Relic) | Move to [OpenTelemetry](/help/implementing/developing/introduction/opentelemetry-apm-integration.md) by November 30, 2026 |
 | [!DNL Foundation]       | Domain-specific MCP servers | Switch to the [AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#aem-mcp-server) |
 | [!DNL Foundation]       | AEM Developer Console JWT credentials |  AEM Developer Console [Server-to-Server OAuth credentials](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md). No removal date declared.|
+|Foundation|Foundation Components|Most Foundation Components (`/libs/foundation/components`) were deprecated with AEM 6.5. [Use block-based development](https://www.aem.live/developer/block-collection) for new Edge Delivery Services based sites or [use the Core Components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction) leveraging the [AEM Modernize Tools](https://github.com/adobe/aem-modernize-tools) for existing AEM publisher-based projects. [See the AEM 6.5 documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/siteandpage/default-components-foundation) and the `cq:deprecated`/`cq:deprecatedReason` properties in the JCR for more details about individual component deprecation.|
 
 ## Removed Functionality {#removed-features}
 
