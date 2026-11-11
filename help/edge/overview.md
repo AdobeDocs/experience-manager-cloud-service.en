@@ -41,7 +41,7 @@ It is not a replacement for a content delivery network (CDN), but it integrates 
 
 ### Increases discoverability and traffic {#increase-traffic}
 
-Edge Delivery websites are search engines optimized (SEO) and generative engine optimized (GEO) for LLMs. This ensures high visibility and discoverability on all existing and upcoming sources for organic traffic. The **performance-first end-to-end architecture** ensures a delightful customer experience which will positively impact engagement.
+Edge Delivery websites are search engines optimized (SEO) and generative engine optimized (GEO) for large language models (LLMs). This ensures high visibility and discoverability on all existing and upcoming sources for organic traffic. The **performance-first end-to-end architecture** ensures a delightful customer experience which will positively impact engagement.
 
 ### Developer efficiency {#developer-efficientcy}
 
@@ -59,7 +59,7 @@ Content from various solutions can directly integrate with Edge Delivery, **incl
 
 Whether headless or headful, you can deliver the right content in the right format and add the right decoration to make it an experience that stands out in any channel.
 
-## How does it work {#how-does-it-work}
+## How does it work? {#how-does-it-work}
 
 Edge Delivery Services is a composable set of services that allows for a high degree of flexibility in how you author content on your website. It replaces AEM Publish / Dispatcher and the traditional way of building experiences with AEM Core Components with a multi-cloud SaaS solution and pure front-end development approach.
 
@@ -87,7 +87,7 @@ Experience Workspace is the modern default face to AEM and is the default for al
 * Based on decoupled architecture
 * Supports advanced use cases such as [of1.live](https://of1.live)
 
-As authors expect from AEM, it also offers powerful features for content authors such as translation, multi-site management, and snapshots.
+As authors expect from AEM, it also offers powerful features such as translation, multi-site management, and snapshots.
 
 ### Universal Editor {#universal-editor}
 
@@ -100,7 +100,7 @@ As authors expect from AEM, it also offers powerful features for content authors
 
 ![AEM authoring with the Universal Editor](assets/wysiwyg-authoring.png)
 
-### Which authoring method is right for me? {#which-authoring-method}
+### Which authoring method is right for you? {#which-authoring-method}
 
 Experience Workspace is the new default for managing your content. If you are not certain which option is right for you, [be sure to review the authoring guide](https://www.aem.live/docs/authoring-guide) to help determine which is the best fit for your needs.
 
@@ -110,39 +110,38 @@ Adobe Experience Manager uses [Operational Telemetry](https://www.aem.live/docs/
 
 ## Start exploring {#start-exploring}
 
-Get started using AEM authoring with the Universal Editor and Edge Delivery Services:
+Get started using AEM authoring with Experience Workspace and Edge Delivery Services:
 
-* Edge Delivery Services documentation [Edge Delivery Services](https://www.aem.live)
-* For an overview of AEM authoring with the Universal Editor, see the document [Authoring with AEM for Edge Delivery Services](https://www.aem.live/docs/aem-authoring) in the aem.live documentation.
-* For a developer overview, see the document [Getting Started - Universal Editor Developer Tutorial](https://www.aem.live/developer/ue-tutorial) in the aem.live documentation.
+* [See the developer tutorial](https://www.aem.live/developer/tutorial) to get a new project started with Experience Workspace.
+* If you are working on an existing AEM project, see the [Getting Started - Universal Editor Developer Tutorial.](https://www.aem.live/developer/ue-tutorial)
 
-## Edge Delivery Services and Other Adobe Experience Cloud Products {#edge-other-products}
+## Edge Delivery Services and other Adobe Experience Cloud products {#edge-other-products}
 
 Edge Delivery Services are part of Adobe Experience Manager. As such, Edge Delivery Services and AEM Sites can co-exist on the same domain, which is a common use case for larger websites. Additionally, your AEM Sites pages can seamlessly consume content from Edge Delivery Services, and the reverse is also true.
 
 You can also use Edge Delivery Services with [Adobe Target](https://www.aem.live/developer/target-integration) and [Launch.](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
 
-## Getting Help from Adobe {#getting-help}
+## Getting help from Adobe {#getting-help}
 
 Adobe provides three layers to help you with Edge Delivery Services:
 
 * Engage with [community resources](#community-resources) for general inquiries.
 * Access your [product collaboration channel](#collaboration-channel) for specific questions.
-* [Log a support ticket](#support-ticket) to solve major and critical issues **within the contractual support SLA**.
+* [Log a support ticket](#support-ticket) to solve major and critical issues **within the contractual support service level agreement (SLA)**.
 
-### Access Community Resources {#community-resources}
+### Access community resources {#community-resources}
 
 Adobe is committed to empowering you with the best community engagement and support for Edge Delivery Services, AEM authoring with the Universal Editor, and document-based authoring.
 
 * Participate in the [Experience League Community](https://adobe.ly/3Q6kTKl) to ask questions, share feedback, initiate discussions, seek assistance from Adobe experts and AEM Advisors/Champs, and connect with like-minded individuals in real-time.
 * Join the [Discord channel](https://discord.gg/aem-live), a more casual platform for real-time interactions and quick idea exchanges.
 
-### Access Your Product Collaboration Channel {#collaboration-channel}
+### Access your product collaboration channel {#collaboration-channel}
 
 Adobe creates a dedicated Microsoft Teams or Slack channel for each Edge Delivery Services customer. In this channel, your business users, developers, and authors can ask Adobe experts about authoring and development, coordinate your launch or migration, and get help with best practices.
 
 To request a channel for your company, or to join your company's existing channel, contact your Adobe account team or Adobe Support. For more information, see the aem.live documentation on using [Teams](https://www.aem.live/docs/teams) and [Slack](https://www.aem.live/docs/slack) for collaboration.
 
-### Logging a Support Ticket {#support-ticket}
+### Log a support ticket {#support-ticket}
 
 {{support-ticket}}
