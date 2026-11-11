@@ -27,7 +27,7 @@ Use the skill to:
 
 * Find usage of [deprecated and removed AEM APIs](/help/release-notes/deprecated-removed-features.md) before a Cloud Manager pipeline fails on them.
 * Detect anti-patterns, such as outbound HTTP calls without timeouts and unbounded queries, that can lead to resource exhaustion and outages.
-* Apply surgical fixes one pattern at a time, on a dedicated Git branch, with every change verified by a compile before you review it.
+* Apply surgical fixes one pattern at a time, on a dedicated Git branch, or in place if the project is not a Git repository, with every change verified by a compile before you review it.
 <!-- Owner review: NOT FOUND AS WRITTEN (no marker comment from Alexandru). "on a dedicated Git branch" is unconditional, but the skill also edits in place when the project is not a Git repository (runbook.md "Git vs in-place"; git-workflow.md). Suggest: "...on a dedicated Git branch, or in place if the project is not a Git repository, with every change verified by a compile before you review it." -->
 
 Describe the issue, and the skill routes the request to the appropriate remediation workflow.
@@ -60,17 +60,17 @@ Each check is a pattern with its own identifier, which you can use in your promp
 
 |Pattern|What it detects and fixes|Severity|Fix type|
 |---|---|---|---|
-|`remove-deprecated-api`|Usage of Java APIs that are [deprecated or removed](/help/release-notes/deprecated-removed-features.md) in AEM as a Cloud Service, such as Google Guava (`com.google.common.*`), along with deprecated Maven dependencies and unmodifiable OSGi configurations. After an API reaches its removal date, its usage fails the Cloud Manager pipeline. The skill replaces each usage with its documented successor.|High|Guided|
+|`remove-deprecated-api`|Usage of Java APIs that are [deprecated or removed](/help/release-notes/deprecated-removed-features.md) in AEM as a Cloud Service, such as Google Guava (`com.google.common.*`), along with deprecated Maven dependencies and unmodifiable OSGi configurations. After an API reaches its removal date, its usage fails the Cloud Manager pipeline. The skill replaces each usage with its documented successor where one is available and safe, and reports the rest as manual action.|High|Guided|
 |`inject-in-sling-model`|`@Inject` fields in Sling Model (`@Model`) classes. The skill migrates them to injector-specific annotations.|High|Mechanical|
 |`outbound-call-timeouts`|Outbound HTTP clients built without connect, read, or connection-pool timeouts, in Apache HttpClient, OkHttp, and the JDK HTTP client. A slow downstream service can otherwise hold a request thread indefinitely. The skill adds bounded timeouts, reusing timeout configuration that already exists in the file.|High|Mechanical|
 |`unbounded-query`|Explicitly unbounded queries, such as the `p.limit=-1` Query Builder predicate or `setLimit(-1)`. Unbounded queries are a common cause of out-of-memory outages. The skill caps the result set where that is provably safe, and otherwise asks for a pagination decision.|High|Guided|
 |`tuning-oak-query-indexes`|JCR and Oak queries that are not served by an index, and index definitions that are subtly misconfigured. The skill proposes the property or Lucene index-definition change. It needs the index definition and defers the finding if you do not supply it.|High|Guided|
-|`scheduler`|Usage of the Sling Commons `Scheduler` API and Sling `Job` implementations. The skill migrates them to scheduler configuration through OSGi properties or to Sling Jobs, which are compatible with AEM as a Cloud Service.|High|Guided|
+|`scheduler`|Usage of the Sling Commons `Scheduler` API and Sling Commons Scheduler `Job` implementations. The skill migrates them to scheduler configuration through OSGi properties or to Sling Jobs, which are compatible with AEM as a Cloud Service.|High|Guided|
 |`resource-change-listener`|JCR `EventListener` implementations and OSGi `EventHandler` implementations for resource topics. The skill migrates them to a lightweight `ResourceChangeListener` that hands processing to a `JobConsumer`. Listeners that already follow this pattern are reported as compliant.|High|Guided|
 |`event-migration`|OSGi `EventHandler` implementations that run business logic inline for other topics, such as replication or workflow events. The skill splits them into a lightweight `EventHandler` and a `JobConsumer`, with leader-only execution where needed.|High|Guided|
-|`replication`|Usage of the CQ `Replicator` API and Sling replication agents. The skill migrates it to the Sling Content Distribution API.|High|Guided|
+|`replication`|Usage of the CQ `Replicator` API and Sling replication agents. The skill migrates it to the Sling Distribution API.|High|Guided|
 |`asset-manager`|DAM `AssetManager` methods for creating, uploading, and deleting assets that are not available in AEM as a Cloud Service. The skill migrates uploads to direct binary access and deletions to supported APIs.|High|Guided|
-|`outdated-dependencies`|Versioned Maven dependencies, including `aem-sdk-api`. The skill updates them to target versions that you supply. It does not look up the latest versions online.|Medium|Mechanical|
+|`outdated-dependencies`|Versioned Maven dependencies from a default allowlist, such as `aem-sdk-api` and Mockito. The skill updates them to target versions that you supply. It does not look up the latest versions online.|Medium|Mechanical|
 
 <!-- Alexandru: from the public source and not in the preso videos, to confirm if accurate. Applies to: the full rows for inject-in-sling-model, tuning-oak-query-indexes, scheduler, event-migration, replication, and asset-manager; the Severity and Fix type columns; deprecated Maven dependencies and unmodifiable OSGi configurations (remove-deprecated-api); OkHttp (outbound-call-timeouts); the p.limit=-1 predicate (unbounded-query); the EventListener and EventHandler migration description (resource-change-listener); no online version lookup (outdated-dependencies). -->
 <!-- Owner review: MOSTLY CONFIRMED, 3 wording fixes. Severity/fix type match references/patterns.md; Maven deps + unmodifiable OSGi configs (remove-deprecated-api/recipe.md Category C), OkHttp, p.limit=-1 are correct. FIX (a) replication: the target is the "Sling Distribution API" (Distributor + SimpleDistributionRequest, replication/SKILL.md:11), not "Sling Content Distribution API". FIX (b) scheduler: the detector matches `implements org.apache.sling.commons.scheduler.Job` and the Scheduler API (scheduler/SKILL.md:54-60); "Sling `Job` implementations" is ambiguous - say "Sling Commons Scheduler `Job` implementations". FIX (c) outdated-dependencies: by default only com.adobe.aem:aem-sdk-api and org.mockito:* are checked unless --all is passed (outdated-dependencies/SKILL.md:49-55); say "versioned Maven dependencies from a default allowlist, such as aem-sdk-api and Mockito". -->
@@ -90,7 +90,7 @@ Make sure the following are in place:
 * A local JDK, Java 11 or later, is available. The analyzer runs on it, and detection stops if no JDK is found.
   <!-- Alexandru: from the public source and not in the preso videos, to confirm if accurate. -->
   <!-- Owner review: CONFIRMED. Source: runbook.md Step 4 (JDK 11+, stops with a clear message), SKILL.md "Critical rules". No change needed. -->
-* Your AEM as a Cloud Service project is a Maven project that builds locally. The skill compiles the project before and after it makes changes. If the baseline build fails, the skill can still apply fixes, but it marks them as unverified.
+* Your AEM as a Cloud Service project is a Maven project that builds locally. The skill compiles the project before and after it makes changes. If the baseline build fails, the skill can still apply fixes, but it marks them as unverified. The skill asks you to confirm before applying.
   <!-- Alexandru: from the public source and not in the preso videos, to confirm if accurate. Applies to: applying fixes after a failed baseline and marking them as unverified. -->
   <!-- Owner review: MINOR WORDING GAP. Substance is right: runbook.md Step 5 requires an explicit "yes" acknowledging the edits will be UNVERIFIED for ANY failed baseline (apply is not blocked). The doc omits that confirmation step. Suggest adding: "The skill asks you to confirm before applying." Note for skill owners: runbook.md Step 9 only defines the terminal status `applied-unverified` for baseline_reason `toolchain-jdk-lombok` and `missing-private-repo`, so the skill spec is ambiguous for `other`; keep the doc general until that is resolved. -->
 * For the `remove-deprecated-api` pattern only, your machine can reach Maven Central. The skill also uses Experience League as an optional fallback source for that pattern. All other patterns run entirely in your local workspace, with no network calls. If you are offline, the skill skips `remove-deprecated-api` and tells you why.
@@ -132,10 +132,10 @@ To assess specific files, name them in the prompt. The skill then analyzes only 
 During a whole-project review, the skill typically:
 
 1. Classifies the request and selects the detectors to run. A broad prompt runs all detectors in report-only mode.
-1. Runs a deprecated-API preflight against the latest AEM SDK using the [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin), and compiles the project to establish a baseline. Long-running steps can run in the background while the agent reads your source code, OSGi configurations, and content packages.
+1. Runs a deprecated-API preflight against the latest AEM SDK using the [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin), and compiles the project to establish a baseline. Depending on your AI coding agent, long-running steps can run in the background while the agent reads your source code, OSGi configurations, and content packages.
    <!-- Owner review: NOT FOUND IN SKILL (no marker comment from Alexandru). The skill source does not state that long-running steps run in the background (runbook.md Steps 4-5 just run java -version and mvn compile). Likely agent/IDE behavior, not a skill guarantee - suggest removing the sentence "Long-running steps can run in the background while the agent reads your source code, OSGi configurations, and content packages." unless the demo videos show it. -->
 1. Runs the analyzer and reads the remediation recipe for each pattern that it found.
-1. Confirms the facts that determine each planned action, for example whether a flagged method has any callers.
+1. Confirms the facts that determine each planned action, as defined by the pattern's recipe.
    <!-- Owner review: NOT FOUND IN SKILL (no marker comment from Alexandru). runbook.md Step 3/6 only validates analyzer findings against the live file and applies each pattern's Resolution contract; generic caller analysis is not a skill step. Only individual recipes ask this (e.g. unbounded-query/recipe.md checks cross-method consumption; remove-deprecated-api removes unused code). Suggest rewording to "Confirms the facts that determine each planned action, as defined by the pattern's recipe." -->
 1. Writes a run log to `.autofix/last-run.json` in the project and returns the report inline. The `.autofix` folder contains its own `.gitignore` file, so the run log is not committed with your code.
    <!-- Alexandru: from the public source and not in the preso videos, to confirm if accurate. Applies to: the .autofix folder's own .gitignore file. -->
@@ -147,10 +147,10 @@ The report uses the same sections in every run, so you can compare runs across s
 
 |Section|Content|
 |---|---|
-|**Run metadata**|The patterns audited, the invocation mode (`discover` for a project scan or `with_findings` for named files), the intent (`report` or `apply`), and the edit mode (`git` or `in_place`).|
+|**Run metadata**|The patterns audited, the invocation mode (`discover` for a project scan, `with_findings` for named files, or `with_findings_preresolved` when another tool supplies complete findings), the intent (`report` or `apply`), and the edit mode (`git` or `in_place`).|
 |**Preflight**|The Git status and current branch, and any warnings.|
 |**Compile (baseline)**|The result of compiling the project before any change. If the baseline fails, the report states the likely cause, such as a JDK mismatch or an unreachable private Maven repository, and warns that applied fixes cannot be verified.|
-|**Discover warnings**|Files the analyzer could not parse. An empty list means that every file was analyzed.|
+|**Discover warnings**|Warnings raised during the scan, for example files the analyzer could not parse, findings outside the workspace, ambiguous `pom.xml` matches, or detector errors. An empty list means that the scan raised no warnings.|
 |**Candidates**|One table per pattern, ordered by severity. For each finding, the table shows the file and line, the code that was found, the planned action, and the target or reasoning for the fix.|
 |**Summary counts**|The number of findings to apply and to skip, and the number of deferred items. Applied and skipped findings always add up to the total number of findings.|
 |**Deferred**|Patterns that have no recipe yet, or that were not selected for the current session.|
@@ -170,7 +170,7 @@ Every finding has exactly one planned action: it is either applied or skipped. T
 |`needs-user-target`|The skill needs you to supply a target version. For `aem-sdk-api`, align the version with the AEM SDK used by your Cloud Manager environment rather than assuming the latest version.|
 |`already-compliant`|The code was flagged for review and verified as compliant. This is a pass, not a defect.|
 |`manual-only: <reason>`|The fix requires a design decision, for example a Guava usage whose JDK replacement would change behavior.|
-|`unlocatable`|The skill could not find the exact code to change, for example because the file changed after the scan.|
+|`stale-finding`, or another pattern-specific reason such as `literal-not-found`|The skill could not find the exact code to change, for example because the file changed after the scan.|
 
 <!-- Alexandru: from the public source and not in the preso videos, to confirm if accurate. Applies to: the manual-only: <reason> format and the unlocatable row. -->
 <!-- Owner review: PARTLY CONFIRMED, wording fix. `manual-only: <reason>` is real (remove-deprecated-api/recipe.md 4e). `unlocatable` is only a report-level category (runbook.md Step 7 count invariant, git-workflow.md commit-message trailer), not an exact reason string; exact reasons are pattern-specific (`literal-not-found`, `property-missing`, `ambiguous-locator`, `inject-ambiguous-field`, `discovery-no-match`, `stale-finding`, `deprecated-import-not-found`, ...). Suggest rewording the row, e.g. "`stale-finding` / pattern-specific not-found reasons: the skill could not find the exact code to change, for example because the file changed after the scan". Also: the skill is inconsistent on `needs-user-target` (outdated-dependencies/SKILL.md:20) vs `needs-target` (runbook.md Step 7); the doc follows the pattern skill. Flagged to skill owners. -->
@@ -200,7 +200,7 @@ When you apply a pattern, the skill:
    <!-- Alexandru: from the public source and not in the preso videos, to confirm if accurate. Applies to: the short hash being the first seven characters of the current commit, and in-place editing outside Git. -->
    <!-- Owner review: CONFIRMED. Source: git-workflow.md "Branch naming" (autofix/<pattern-slug>/<YYYY-MM-DD>-<short-hash>, 7 chars of HEAD SHA; in_place = no branch). Note the date is UTC. No change needed. -->
 1. Makes surgical edits to the affected files only, without reformatting or making unrelated changes. Mechanical fixes apply directly. Guided fixes walk you through each decision.
-1. Verifies the change by compiling the project again. Some patterns also run the existing tests or re-run the detector. If the compile fails after a baseline that passed, the skill rolls back its edits. In a Git repository, it restores the files and deletes the branch. If the baseline already failed, the skill keeps the edits but marks them as unverified, so build them in a working environment or CI before you merge.
+1. Verifies the change by compiling the project again. Some patterns also run the existing tests or re-run the detector. If the compile fails after a baseline that passed, the skill rolls back its edits. In a Git repository, it restores the files and deletes the branch. If the baseline already failed, the skill asks you to confirm before it applies the fix. It then keeps the edits but marks them as unverified, so build them in a working environment or CI before you merge.
    <!-- Alexandru: from the public source and not in the preso videos, to confirm if accurate. Applies to: automatic rollback, and keeping edits marked as unverified when the baseline already failed. -->
    <!-- Owner review: NEEDS QUALIFIER (minor). Rollback on a failed verify compile is correct (git-workflow.md "Rollback"). The "keeps edits, marked unverified when the baseline already failed" part matches runbook.md Step 9 for `toolchain-jdk-lombok` / `missing-private-repo`; for other baseline failures the skill spec is ambiguous (Step 5 says unverified, Step 9 does not define the terminal status). Suggest adding that the skill asks for confirmation before applying on a failed baseline; keep the wording general. -->
 1. Updates the run log and returns a summary of what changed, why it chose that approach, the verification results, and any action it left for you.
@@ -245,7 +245,7 @@ Enter the following prompt:
 apply outbound-call-timeouts
 ```
 
-The recipe's rule is to reuse a `RequestConfig` already present in a file rather than introduce a second one. Instead of hard-coding the recipe's generic default values, the skill extracts the existing configuration into a helper method and uses it for both calls. This keeps both calls honoring the timeouts configured for the environment:
+The recipe's rule is to reuse a `RequestConfig` already present in a file rather than introduce a second one. In this example, the skill reuses the existing configuration instead of hard-coding the recipe's generic default values, here by extracting it into a helper method that both calls use. This keeps both calls honoring the timeouts configured for the environment:
 <!-- Owner review: EXAMPLE OVERCLAIM. outbound-call-timeouts/recipe.md only requires reusing an existing RequestConfig/builder; extracting a shared helper method is one possible outcome, not guaranteed. Suggest: "In this example, the skill reuses the existing configuration, here by extracting it into a helper method." -->
 
 ```java
@@ -283,7 +283,7 @@ HttpRequest request = HttpRequest.newBuilder(URI.create(feedUrl))
         .build();
 ```
 
-The skill then compiles the project. In this run, it also ran the existing unit tests and re-ran the detector, which returned no remaining findings for the pattern.
+The skill then compiles the project. In this run, it also ran the existing unit tests and re-ran the detector, which returned no remaining findings for the pattern. Only the compile is guaranteed for every pattern.
 <!-- Owner review: EXAMPLE OVERCLAIM. Only the verification compile is mandatory (runbook.md Step 9). Running existing tests and re-running the detector are not guaranteed steps. The doc already says "In this run", but the Apply Fixes step 5 phrasing "Some patterns also run..." is the safe wording; consider the same hedge here or confirm with the demo run. -->
 
 >[!NOTE]
@@ -302,7 +302,7 @@ apply remove-deprecated-api
 
 When the analyzer's hint for a deprecated API does not name a successor, the skill consults the [API Removal Guidance](/help/release-notes/deprecated-removed-features.md#api-removal-guidance) on Experience League once per session. For Guava, the guidance is to replace usage with JDK collections or Apache Commons Collections4.
 
-Before choosing a replacement, the skill checks which successors are resolvable on the module's classpath and how the module declares its dependencies. In this project, Apache Commons Collections4 is available only transitively through the AEM SDK, so the skill uses JDK-only replacements and adds no new dependency:
+Before choosing a replacement, the skill checks which successors are resolvable on the module's classpath and how the module declares its dependencies. If a successor is not on the classpath, the skill adds a Maven dependency only with your consent, or reports the usage as a manual action. In this project, Apache Commons Collections4 is available only transitively through the AEM SDK, so the skill uses JDK-only replacements and adds no new dependency:
 <!-- Owner review: CLARIFY. The classpath check is real (remove-deprecated-api/recipe.md successor-on-classpath verification), but if a successor is not on the classpath the skill adds a Maven dependency only with user consent, or records `successor-not-on-classpath` / manual action. JDK-only is this example's outcome, not a general rule. Same for the table intro (line ~59) "replaces each usage with its documented successor": some usages become manual-only (recipe.md 4e). Suggest "replaces each usage with its documented successor where one is available and safe, and reports the rest as manual action". -->
 
 |Deprecated usage|Replacement|
