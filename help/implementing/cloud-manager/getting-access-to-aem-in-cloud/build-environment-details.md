@@ -47,127 +47,66 @@ Cloud Manager builds and tests your code using a specialized build environment.
 
 Use HTTPS URLs for Maven repositories and mirrors. Maven [blocks external HTTP repositories by default](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291), which can cause dependency or plugin downloads to fail. If your build references an HTTP repository, update the repository or mirror configuration to use its HTTPS endpoint.
 
-## Java support {#using-java-support}
+### Use a specific Java version {#using-java-support}
 
-### Java 25 support {#java-25-support}
+The Cloud Manager build process uses the Oracle 8 JDK to build projects by default, but AEM Cloud Service customers should set the Maven execution JDK version to 25, 21, 17, or 11.
 
-Java 25 is the next long-term support (LTS) release after Java 21, delivering improvements across performance, developer productivity, and security:
+The build JDK runs Maven; the compiler target determines the Java release targeted by your code; the AEM runtime runs the deployed application. These are distinct settings. The sections below cover build configuration and upgrade prerequisites. For Java 25-specific requirements and opt-in options, see [Java 25 support](#java-25-support).
 
-* **Performance** — Reduced memory footprint, more efficient garbage collection, and faster JVM warm-up benefit cloud-native deployments.
-* **Developer productivity** — Cleaner object initialization, more expressive pattern matching, and simplified concurrent task management reduce boilerplate and improve code clarity.
-* **Security** — A modernized cryptographic key derivation API simplifies common security workflows.
-
-Use the AEM Cloud Service SDK to validate your application locally, then [opt in to the Java 25 runtime](#java-25-runtime-opt-in) in your Cloud environments ahead of the automatic upgrade.
-
-#### Runtime upgrade timeline {#java-25-runtime-upgrade-timeline}
-
-Adobe is providing the following target dates to help you plan testing and validation ahead of the Java 25 runtime upgrade. Any changes to this timeline will be communicated through the [AEM as a Cloud Service release notes](/help/release-notes/release-notes-cloud/release-notes-current.md#java25-announcement).
-
-| Timeframe | Milestone |
-| --- | --- |
-| **October 29, 2026** | AEM Cloud Service SDK supports Java 25 runtime. The Java 25 JDK is available for download from the Adobe Software Distribution portal. |
-| **November 20, 2026** | Customers are encouraged to optionally enable the Java 25 runtime in their Cloud environments to validate behavior. Early adoption maximizes time to surface and resolve issues. |
-| **January – April 2027** | Adobe will gradually migrate sandboxes and lower environments (RDE, Dev) to the Java 25 runtime. Customers should validate behavior and report unexpected issues, and are encouraged to enable staging and production environments as well. A temporary rollback to Java 21 is available while resolving any problems. |
-| **May 2027** | All environment runtimes (including staging and production) migrate to Java 25. Java 21 runtime is decommissioned. The AEM Cloud Service SDK will no longer support Java 21. |
-
-#### Java 25 runtime opt-in {#java-25-runtime-opt-in}
-
->[!IMPORTANT]
->
->The Java 25 runtime opt-in requires **AEM release 28386 or later**. Ensure that each environment meets this requirement and review the [runtime requirements](#runtime-requirements) before enabling the opt-in.
-
-Choose one of the following options to enable the Java 25 runtime:
-
-* **Environment variable:** Preferred for quick tests or when changing the build-time JVM is not an option. This enables the Java 25 runtime without changing your build JDK.
-* **Build-time Java version:** Use this option when you want to use Java 25 language features. Building with Java 25 also opts the target environment into the Java 25 runtime.
-
-##### Enable Java 25 with an environment variable {#java-25-runtime-env-var}
-
-1. In Cloud Manager, select the environment that you want to enable.
-1. [Add an environment variable](/help/implementing/cloud-manager/environment-variables.md#add-variables) with the following configuration:
-
-   | Field | Value |
-   | --- | --- |
-   | **Name** | `AEM_JAVA_25_OPT_IN` |
-   | **Value** | `true` (lowercase) |
-   | **Step Applied** | **All** |
-   | **Type** | **Normal** (not a secret) |
-
-1. Save the configuration and wait for the environment update to complete.
-1. Validate your application's behavior in the updated environment.
-
->[!NOTE]
->
->With this option, set the variable in each environment that you want to enable. **Stage and production environments must be enabled separately**, even if they use the same production pipeline.
-
-##### Enable Java 25 through the build JDK {#java-25-runtime-build-jdk}
-
-You do not need to set `AEM_JAVA_25_OPT_IN` for this option.
-
-1. Review the [build requirements](#build-time-reqs) and [build and runtime compatibility](#java-build-runtime-compatibility).
-1. Set `.cloudmanager/java-version` to `25` in the repository branch used by your Cloud Manager pipeline. See [Set the Maven JDK version](#alternate-maven-jdk-version).
-1. Configure your development pipeline to use this branch, then run it to build and deploy your application.
-1. Follow the [validation procedure](#validate-your-application) before applying the same change to stage and production.
-
-##### Roll back the environment-variable opt-in {#java-25-runtime-rollback}
-
-This procedure applies only to an environment opted in through the environment variable. Deleting the variable does not undo an opt-in caused by building with Java 25.
-
-Before rolling back, ensure that the deployed application and its dependencies are compatible with the previous Java version. See [Build and runtime compatibility](#java-build-runtime-compatibility).
-
-To roll back during the opt-in period, [delete `AEM_JAVA_25_OPT_IN`](/help/implementing/cloud-manager/environment-variables.md#delete-env-variable) and save the configuration. When the environment update completes, the environment returns to its previous Java version. Repeat this procedure for each environment that you want to roll back.
-
-### Set the Maven JDK version {#alternate-maven-jdk-version}
-
-Adobe recommends Java 25 for building AEM Cloud Service projects. Java 21, 17, and 11 are also supported.
+#### Set the Maven JDK version {#alternate-maven-jdk-version}
 
 To set the Maven execution JDK, create a file named `.cloudmanager/java-version` in the Git repository branch used by the pipeline. The file must contain only the major version number: `25`, `21`, `17`, or `11`. Cloud Manager uses the corresponding Oracle JDK. Although Cloud Manager also accepts `8`, this version is no longer supported for AEM Cloud Service projects. Other values are ignored.
 
-Building with JDK 25 also opts the target environment into the Java 25 runtime. For a runtime-only test, use the [environment-variable option](#java-25-runtime-env-var) instead.
+The file selects the JDK that runs Maven, not the compiler target. Building with JDK 25 also opts the target environment into the Java 25 runtime, regardless of the compiler target. Review [Java 25 support](#java-25-support) before selecting `25`.
 
-#### Build and runtime compatibility {#java-build-runtime-compatibility}
+#### Prerequisites for migrating to a newer Java version {#prereq-for-building}
 
-The `.cloudmanager/java-version` file selects the JDK that runs Maven. It does not set the Java release targeted by the compiler.
+To build with Java 21 or Java 17, Cloud Manager now uses SonarQube 9.9, which is compatible with these Java versions. This change was introduced in Cloud Manager release 2025.1.0. No customer action is required to upgrade SonarQube. For more details and to understand the change, see the [Release Notes for Cloud Manager 2025.1.0](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md).
 
-If your application must remain compatible with Java 21, configure the Maven Compiler Plugin to target Java 21, for example by setting `maven.compiler.release` to `21`. Your dependencies must also support Java 21. Building with JDK 25 still opts the target environment into the Java 25 runtime, even when the compiler targets Java 21.
+For a build JDK change, review the [build time requirements](#build-time-reqs) for your target version. For a runtime-only change, review the requirements for the target runtime; changing the build JDK is not required. When migrating your application to a new Java build version or runtime version, thoroughly test in dev and stage environments before deploying to production.
 
-To use Java 25 language features and APIs, configure the compiler to target Java 25. The resulting code cannot run on Java 21. Before reverting to Java 21, redeploy an application version and dependencies that are compatible with Java 21.
+Adobe recommends the following deployment strategy:
 
-### Prepare your application {#prereq-for-building}
+1. Download an [AEM Cloud Service SDK](https://experience.adobe.com/#/downloads) version that supports your intended Java runtime. Run the SDK with that runtime, deploy your application to it, and validate its functionality. Check the logs for class-loading or bytecode-weaving errors.
+1. For a build JDK change, configure the [Maven JDK](#alternate-maven-jdk-version) in a branch in your Cloud Manager repository, configure a DEV pipeline to use this branch, and run the pipeline. For a runtime-only change, apply the runtime configuration and wait for the environment update; rebuilding the application is not required. Run your validation tests.
+1. If the results are satisfactory in development, apply the same change to stage and validate it before proceeding to production.
 
-Before changing your build or runtime Java version, review the [build requirements](#build-time-reqs) and [runtime requirements](#runtime-requirements), then validate your application as described below.
+#### Runtime requirements {#runtime-requirements}
 
-#### Validate your application {#validate-your-application}
+The following requirements apply to the **Java 21 runtime**. For Java 25, use the separate [Java 25 runtime requirements](#java-25-runtime-requirements).
 
-1. Download the latest [AEM Cloud Service SDK](https://experience.adobe.com/#/downloads), run it with your intended runtime Java version, and deploy your application. Validate its functionality and check the logs for class-loading or bytecode-weaving errors.
-1. Apply your chosen Java settings in development. For Java 25, follow your selected [opt-in option](#java-25-runtime-opt-in). For other build JDK changes, configure the [Maven JDK](#alternate-maven-jdk-version) in the branch used by your development pipeline.
-1. For a build JDK change, ensure that the development pipeline passes code-quality checks and tests. For a runtime-only change, wait for the environment update to complete; rebuilding the application is not required. Validate the application's functionality in the updated environment.
-1. After successful validation in development, apply the same change to stage and validate the application there.
-1. After successful validation in stage, apply the validated change to production.
+* **Minimum version of ASM:**
+Update the usage of the Java package `org.objectweb.asm`, often bundled in `org.ow2.asm.*` artifacts, to version 9.5 or higher to ensure support for newer JVM runtimes.
 
-### Build requirements {#build-time-reqs}
+* **Minimum version of Groovy:**
+Update the usage of the Java packages `org.apache.groovy` or `org.codehaus.groovy` to version 4.0.22 or higher to ensure support for newer JVM runtimes.
 
-#### Java 25 builds {#java-25-build-requirements}
+  This bundle can be indirectly included by adding third party dependencies such as the AEM Groovy Console.
 
-Java 25 build requirements are additive to the [Java 17 and Java 21 requirements](#java-17-21-build-requirements) below. In addition to those requirements, use [JaCoCo 0.8.14 or later](https://www.jacoco.org/jacoco/trunk/doc/changes.html) and update build plugins that inspect or transform bytecode to releases that support Java 25. Validate the complete Cloud Manager pipeline, not just local compilation.
+* **Minimum version of Aries SPIFly:**
+Update the usage of the Java package `org.apache.aries.spifly.dynamic.bundle` to version 1.3.6 or newer to ensure support for newer JVM runtimes.
 
-#### Java 17 and Java 21 builds {#java-17-21-build-requirements}
+#### Build time requirements {#build-time-reqs}
 
-The following minimum plugin versions are the baseline for Java 17 and Java 21 builds and also apply to Java 25 builds. Java 25 can require newer plugin versions, so meeting these minimums alone does not guarantee Java 25 compatibility.
+The following adjustments are required to allow building the project with Java 21 and Java 17. They can be updated even before you are running Java 21 and Java 17 because they are compatible with older Java versions.
 
-| Plugin | Minimum version |
-| --- | --- |
-| `bnd-maven-plugin` | 6.4.0 |
-| `aemanalyser-maven-plugin` | 1.6.16 |
-| `maven-bundle-plugin` | 5.1.5 |
+For Java 25 builds, also follow the [Java 25 build requirements](#java-25-build-requirements). The minimum versions below alone do not guarantee Java 25 compatibility. Update only the plugins that your project uses.
 
-If the project must also build with Java 11, keep `bnd-maven-plugin` below version 7 and `maven-bundle-plugin` below version 6. Those newer plugin versions require a build JDK later than Java 11.
+* **Minimum version of `bnd-maven-plugin`:**
+Update the usage of `bnd-maven-plugin` to version 6.4.0 to ensure support for newer JVM runtimes.
 
-Cloud Manager uses SonarQube 9.9 for builds with Java 17 or Java 21. No customer action is required to upgrade SonarQube. For details about that upgrade, see the [Release Notes for Cloud Manager 2025.1.0](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md).
+  Versions 7 or higher are not compatible with Java 11 or lower so an upgrade to that version is not recommended.
 
-#### Projects using `maven-scr-plugin` {#maven-scr-plugin}
+* **Minimum version of `aemanalyser-maven-plugin`:**
+Update the usage of `aemanalyser-maven-plugin` to version 1.6.16 or higher to ensure support for newer JVM runtimes.
 
-If your project uses `maven-scr-plugin`, override its ASM dependency to support newer Java versions. The following example uses [ASM 9.8](https://asm.ow2.io/versions.html), which supports Java 25.
+* **Minimum version of `maven-bundle-plugin`:**
+Update the usage of `maven-bundle-plugin` to version 5.1.5 or higher to ensure support for newer JVM runtimes.
+
+  Versions 6 or higher are not compatible with Java 11 or lower so an upgrade to that version is not recommended.
+
+* **Update dependencies in `maven-scr-plugin`:**
+The `maven-scr-plugin` is not directly compatible with Java 21 or Java 17. However, descriptor files can be generated by updating the ASM dependency version in the plugin configuration, as shown in the following example:
 
 ```XML
 <project>
@@ -192,7 +131,7 @@ If your project uses `maven-scr-plugin`, override its ASM dependency to support 
           <dependency>
             <groupId>org.ow2.asm</groupId>
             <artifactId>asm-analysis</artifactId>
-            <version>9.8</version>
+            <version>9.7.1</version>
             <scope>compile</scope>
           </dependency>
         </dependencies>
@@ -205,19 +144,65 @@ If your project uses `maven-scr-plugin`, override its ASM dependency to support 
 </project>
 ```
 
-### Java 25 runtime requirements {#runtime-requirements}
+#### Java 25 support {#java-25-support}
 
-Review libraries bundled with your application that inspect, generate, or transform bytecode. Older versions can fail on the Java 25 runtime even if your own code targets an earlier Java release. Check both direct and transitive dependencies, including libraries embedded in third-party bundles such as the AEM Groovy Console.
+Adobe recommends Java 25 for building AEM Cloud Service projects. You can also validate an existing application on the Java 25 runtime without changing its build JDK. Follow the [deployment strategy](#prereq-for-building) above for either option.
 
-If your application includes the following libraries, update them to versions with Java 25 bytecode support before opting in:
+##### Runtime upgrade timeline {#java-25-runtime-upgrade-timeline}
 
-| Library | Version with Java 25 bytecode support |
+Adobe is providing the following target dates to help you plan testing and validation ahead of the Java 25 runtime upgrade. Any changes to this timeline will be communicated through the [AEM as a Cloud Service release notes](/help/release-notes/release-notes-cloud/release-notes-current.md#java25-announcement).
+
+| Timeframe | Milestone |
 | --- | --- |
-| ASM (`org.objectweb.asm`, typically supplied by `org.ow2.asm.*` artifacts) | [9.8 or later](https://asm.ow2.io/versions.html) |
-| Groovy (`org.apache.groovy` artifacts) | [4.0.27 or later in the 4.0 release line](https://groovy-lang.org/changelogs/changelog-4.0.27.html) |
-| Aries SPI Fly (`org.apache.aries.spifly.dynamic.bundle`) | [1.3.8 or later](https://aries.apache.org/documentation/modules/spi-fly.html) |
+| **October 29, 2026** | AEM Cloud Service SDK supports Java 25 runtime. The Java 25 JDK is available for download from the Adobe Software Distribution portal. |
+| **November 20, 2026** | Customers are encouraged to optionally enable the Java 25 runtime in their Cloud environments to validate behavior. Early adoption maximizes time to surface and resolve issues. |
+| **January – April 2027** | Adobe will gradually migrate sandboxes and lower environments (RDE, Dev) to the Java 25 runtime. Customers should validate behavior and report unexpected issues, and are encouraged to enable staging and production environments as well. A temporary rollback to Java 21 is available while resolving any problems. |
+| **May 2027** | All environment runtimes (including staging and production) migrate to Java 25. Java 21 runtime is decommissioned. The AEM Cloud Service SDK will no longer support Java 21. |
 
-Keep related ASM artifacts at the same version and honor the dependency versions required by libraries such as SPI Fly. These versions address bytecode support; follow the [validation procedure](#validate-your-application) to check the complete application and third-party bundles.
+##### Java 25 runtime requirements {#java-25-runtime-requirements}
+
+>[!IMPORTANT]
+>
+>Both opt-in options require **AEM release 28386 or later** in each environment.
+
+If your application bundles the following libraries, directly or through third-party dependencies such as the AEM Groovy Console, update them to versions with Java 25 bytecode support before opting in:
+
+* **ASM** (`org.objectweb.asm`, typically supplied by `org.ow2.asm.*` artifacts): [9.8 or later](https://asm.ow2.io/versions.html).
+* **Groovy** (`org.apache.groovy` artifacts): [4.0.27 or later in the 4.0 release line](https://groovy-lang.org/changelogs/changelog-4.0.27.html).
+* **Aries SPI Fly** (`org.apache.aries.spifly.dynamic.bundle`): [1.3.8 or later](https://aries.apache.org/documentation/modules/spi-fly.html).
+
+Older bytecode-processing libraries can fail on Java 25 even if your code targets an earlier Java release. Keep related ASM artifacts at the same version and honor the dependency versions required by libraries such as SPI Fly. Validate the complete application, including third-party bundles.
+
+##### Java 25 build requirements {#java-25-build-requirements}
+
+These requirements apply only when building with JDK 25, not to a runtime-only opt-in. In addition to the [build time requirements](#build-time-reqs), use [JaCoCo 0.8.14 or later](https://www.jacoco.org/jacoco/trunk/doc/changes.html) and bytecode-processing build plugins that support Java 25. If using `maven-scr-plugin`, set its `asm-analysis` dependency to [9.8 or later](https://asm.ow2.io/versions.html) in the example above. Validate the complete Cloud Manager pipeline, not just local compilation.
+
+Set `.cloudmanager/java-version` to `25` to build with JDK 25 and opt the target environment into the Java 25 runtime. The [runtime requirements](#java-25-runtime-requirements) also apply; `AEM_JAVA_25_OPT_IN` is not needed. To use Java 25 language features and APIs, configure the compiler to target Java 25. To retain Java 21 compatibility, set `maven.compiler.release` to `21` and use dependencies compatible with Java 21. This lower compiler target does not prevent the Java 25 runtime opt-in.
+
+##### Java 25 runtime opt-in {#java-25-runtime-opt-in}
+
+To enable only the Java 25 runtime, review the [runtime requirements](#java-25-runtime-requirements), then use the environment variable below. Keep your existing build JDK and compiler settings; the Java 25 build requirements do not apply to this option.
+
+1. In Cloud Manager, select the environment that you want to enable.
+1. [Add an environment variable](/help/implementing/cloud-manager/environment-variables.md#add-variables) with the following configuration:
+
+   | Field | Value |
+   | --- | --- |
+   | **Name** | `AEM_JAVA_25_OPT_IN` |
+   | **Value** | `true` (lowercase) |
+   | **Step Applied** | **All** |
+   | **Type** | **Normal** (not a secret) |
+
+1. Save the configuration and wait for the environment update to complete.
+1. Validate your application's behavior in the updated environment. Rebuilding the application is not required for this runtime-only change.
+
+>[!NOTE]
+>
+>With this option, set the variable in each environment that you want to enable. **Stage and production environments must be enabled separately**, even if they use the same production pipeline. Validate in development and stage before enabling production.
+
+Before rolling back, ensure that the deployed application and its dependencies support the previous Java version; if necessary, redeploy a compatible version. Deleting the variable does not undo an opt-in caused by building with JDK 25, even if the compiler targets Java 21.
+
+To roll back during the opt-in period, [delete `AEM_JAVA_25_OPT_IN`](/help/implementing/cloud-manager/environment-variables.md#delete-env-variable) and save the configuration. When the environment update completes, the environment returns to its previous Java version. Repeat this procedure for each environment that you want to roll back.
 
 ## Environment variables - standard {#environment-variables}
 
