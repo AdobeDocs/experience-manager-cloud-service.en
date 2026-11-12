@@ -1,6 +1,6 @@
 ---
-title: Universal Editor 2026.11.05 Release Notes
-description: These are the release notes for the 2026.11.05 release of the Universal Editor.
+title: Universal Editor 2026.11.12 Release Notes
+description: These are the release notes for the 2026.11.12 release of the Universal Editor.
 feature: Release Information
 role: Admin
 product_v2:
@@ -17,9 +17,9 @@ role_v2:
     internal-label: Admin
 ---
 
-# Universal Editor 2026.11.05 Release Notes {#release-notes}
+# Universal Editor 2026.11.12 Release Notes {#release-notes}
 
-These are the release notes for the 5 November 2026 release of the Universal Editor.
+These are the release notes for the 12 November 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -31,14 +31,10 @@ These are the release notes for the 5 November 2026 release of the Universal Edi
 
 ## What's New {#what-is-new}
 
-* ID-based Content Fragment references were added reducing lookup requests.
-  * Please contact Adobe to enable this feature.
-* Support for composite Content Fragment fields was added.
-* A lightweight WebMCP tool for retrieving the current selection and its loaded content was added.
-  * Please contact Adobe to enable this feature.
-* Variation selection and variation-aware previews were added to the new Content Fragment and Experience Fragment reference pickers.
+* Rich text editor toolbar tooltips now display the [keyboard shortcuts](/help/implementing/universal-editor/configure-rte.md#keyboard-shortcuts) for their actions.
 
 ## Other Improvements {#other-improvements}
 
-* Tag fields no longer render a separate picker for each tag. Multiple tags now share one picker, while single-tag fields respect their configuration.
-* Error notifications were updated to support structured service errors while retaining compatibility with older responses.
+* [The properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) now gives its renderers the selected field’s resource, so the asset picker can load Content Advisor data.
+* [When using responsive mode,](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator) typing a custom width now applies the new value on commit instead of re-applying the previous width.
+  * Switching back to the desktop preset now clears the custom width, and the width field is read-only on desktop.
