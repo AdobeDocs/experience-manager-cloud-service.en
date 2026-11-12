@@ -29,7 +29,7 @@ role_v2:
 
 Use the Experience Modernization Agent to apply a design during migration or change the appearance of an existing Edge Delivery Services project. Faithfully copying a source site's appearance and deliberately replacing it with a new design are different requests. State which you want.
 
-Appearance lives in the project's code: global CSS sets the look of default content, and each block has its own CSS and JavaScript. Together they can give the same semantic content any design without restructuring it, because the JavaScript can rebuild the markup in the browser; see [Understand Your Project](overview.md#project-foundations). A purely visual restyle therefore changes code in Git and leaves authored content alone.
+Appearance lives in the project's code: global CSS sets the look of default content, and each block has its own CSS and JavaScript. Together they can give the same semantic content any design without restructuring it, because the JavaScript can rebuild the markup in the browser; see [How Your Site Is Built and Updated](overview.md#project-foundations). A purely visual restyle therefore changes code in Git and leaves authored content alone.
 
 This guide is for the person who leads a restyle. If you are a designer making individual visual changes that a developer reviews, start with [Make Visual Changes](visual-changes.md).
 
@@ -46,6 +46,40 @@ Provide:
 * **Output:** Content that authors can edit, in the [storage option](overview.md#content-storage) that your project uses, or a static design prototype if that is all you need.
 
 Screenshots and reference sites can leave interactions and responsive rules unspecified. Settle those on one sample page before you apply them to the whole site.
+
+## References, Prototypes, and Delivery {#design-output}
+
+The agent supports design work from source sites, Figma, and supplied references. Figma import and guided redesign are [optional capabilities](console.md#optional-capabilities) that it offers to turn on for your project when a request needs them. They have different inputs and outputs; do not assume that they work the same way.
+
+* For one Figma block, provide its component or node link. For a new page, provide a specific frame rather than an entire file.
+* Figma import needs a Figma access token and permission to read the file. See [Work from a Figma Design](visual-changes.md#figma).
+* A static HTML design preview shows the new design on copies of your pages, which helps you choose a direction. Authors can't edit those copies; they aren't the site's documents or Experience Manager pages.
+* If authors must edit the result, ask for site content and block models in the storage option that your project uses, then check them as described for [document-based content](getting-started.md#upload-content) or [Experience Manager authoring](getting-started-aem-authoring.md#validate-content).
+
+### Guided Redesign {#guided-redesign}
+
+Guided redesign takes a site, or a set of its pages, to a new design in stages. It is provided by the Stardust add-on, `stardust@excat-extended`. The agent captures the current design, records the direction you want, builds before-and-after prototypes for review, and then turns the approved design into blocks and content. Use it for a redesign across several pages rather than for restyling one page or block. The agent keeps the working files and progress of a redesign in the repository, so you can continue it in a later conversation.
+
+You don't need to know the stages by name. Describe the result you want, for example "Redesign the home page and the product pages in a lighter, more editorial style", and the agent proposes the steps. You can also ask for one step directly:
+
+| Ask the agent to | What you get |
+|---|---|
+| Extract the current design | A capture of the site's design system, brand, color palette, typography, tone of voice, and page inventory. |
+| Define the redesign direction | A short product and design brief that records the direction you choose. Later steps follow it. |
+| Prototype pages in the new design | Before-and-after HTML prototypes of selected pages for review. These are static previews, not editable pages. |
+| Apply the design to all pages | The new design applied to every page of the inventory as static HTML, ready to deploy. |
+| Deploy the prototypes to Edge Delivery Services | Blocks and content built from the approved prototypes. |
+| Roll out the redesign | All pages deployed in the new design, or first only one page of each page type. |
+| Compare a page with its prototype | A visual and structural comparison that lists where the deployed page differs from the approved prototype. |
+| Run a quality check | A review of routing, design fidelity, accessibility, performance, SEO, and links, without changes to the site. |
+| Audit a site | A design, SEO, and AI-visibility audit, including Core Web Vitals. |
+| Propose redesign options | Three alternative redesigns of a page, to explore a direction quickly. |
+| Rebuild the same design on Edge Delivery Services | The site migrated with its current design. |
+| Apply another site's design | The site's content placed onto the design of another website that you provide. |
+| Add dynamic features | Search, forms, and other features that depend on APIs or user interaction. |
+| Write a migration spec | A specification to agree before migrating, including redirects, handling of missing pages, and which blocks to reuse. |
+
+Turning on guided redesign also turns on the design craft add-on, which applies frontend design-quality guidance to each page. Review every stage before you continue, and validate the deployed result as described below.
 
 ## Restyle During Migration {#during-migration}
 
@@ -82,40 +116,6 @@ A new migration is not required.
 1. Preview all affected sample pages, not only the page used to derive the design. Include mobile widths, long headings, missing optional content, and different variants. A global token change can affect pages outside the original example, so include those too.
 1. If the design requires structural or model changes, make that a separate, explicit decision. Plan how existing content moves to the new structure rather than silently rewriting author content.
 1. Review the code diff and project checks, then push and deliver through the [existing project's workflow](getting-started.md#push-code-changes). Style changes are code: they reach the live site as soon as the branch is merged into `main`, so check the affected pages on the branch's preview URL first. See [How Changes Go Live](overview.md#code-content-lifecycle).
-
-## References, Prototypes, and Delivery {#design-output}
-
-The agent supports design work from source sites, Figma, and supplied references. Figma import and guided redesign are [optional capabilities](console.md#optional-capabilities) that it offers to turn on for your project when a request needs them. They have different inputs and outputs; do not assume that they work the same way.
-
-* For one Figma block, provide its component or node link. For a new page, provide a specific frame rather than an entire file.
-* Figma import needs a Figma access token and permission to read the file. See [Work from a Figma Design](visual-changes.md#figma).
-* A static HTML design preview shows the new design on copies of your pages, which helps you choose a direction. Authors can't edit those copies; they aren't the site's documents or Experience Manager pages.
-* If authors must edit the result, ask for site content and block models in the storage option that your project uses, then check them as described for [document-based content](getting-started.md#upload-content) or [Experience Manager authoring](getting-started-aem-authoring.md#validate-content).
-
-### Guided Redesign {#guided-redesign}
-
-Guided redesign takes a site, or a set of its pages, to a new design in stages. It is provided by the Stardust add-on, `stardust@excat-extended`. The agent captures the current design, records the direction you want, builds before-and-after prototypes for review, and then turns the approved design into blocks and content. Use it for a redesign across several pages rather than for restyling one page or block. The agent keeps the working files and progress of a redesign in the repository, so you can continue it in a later conversation.
-
-You don't need to know the stages by name. Describe the result you want, for example "Redesign the home page and the product pages in a lighter, more editorial style", and the agent proposes the steps. You can also ask for one step directly:
-
-| Ask the agent to | What you get |
-|---|---|
-| Extract the current design | A capture of the site's design system, brand, color palette, typography, tone of voice, and page inventory. |
-| Define the redesign direction | A short product and design brief that records the direction you choose. Later steps follow it. |
-| Prototype pages in the new design | Before-and-after HTML prototypes of selected pages for review. These are static previews, not editable pages. |
-| Apply the design to all pages | The new design applied to every page of the inventory as static HTML, ready to deploy. |
-| Deploy the prototypes to Edge Delivery Services | Blocks and content built from the approved prototypes. |
-| Roll out the redesign | All pages deployed in the new design, or first only one page of each page type. |
-| Compare a page with its prototype | A visual and structural comparison that lists where the deployed page differs from the approved prototype. |
-| Run a quality check | A review of routing, design fidelity, accessibility, performance, SEO, and links, without changes to the site. |
-| Audit a site | A design, SEO, and AI-visibility audit, including Core Web Vitals. |
-| Propose redesign options | Three alternative redesigns of a page, to explore a direction quickly. |
-| Rebuild the same design on Edge Delivery Services | The site migrated with its current design. |
-| Apply another site's design | The site's content placed onto the design of another website that you provide. |
-| Add dynamic features | Search, forms, and other features that depend on APIs or user interaction. |
-| Write a migration spec | A specification to agree before migrating, including redirects, handling of missing pages, and which blocks to reuse. |
-
-Turning on guided redesign also turns on the design craft add-on, which applies frontend design-quality guidance to each page. Review every stage before you continue, and validate the deployed result as described below.
 
 ## Validate and Recover {#validate}
 

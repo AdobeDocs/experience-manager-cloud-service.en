@@ -60,19 +60,15 @@ Variants, section styles, and templates take effect only where authors apply the
 
 Some requests go beyond the look of the site. Adding a field that authors fill in, changing how a block's content is structured, or adding behavior such as a carousel changes the block's content model or its logic. Describe what you need, and leave these decisions to the developer. See [Create, Update, and Refactor Blocks](block-development.md).
 
-## Make Your First Change {#first-change}
+## Limit a Change to Some Pages {#impact}
 
-1. Open a page in the console's preview panel.
-1. In the **Viewport** menu, choose the width that you want to check: **Desktop**, **Tablet**, or **Mobile**.
-1. Turn on **Inspect mode** with the select icon in the preview panel.
-1. Select the element that you want to change, such as a heading, an image, or a button. The element is added to your prompt: the agent receives its HTML and its position on the page, and limits its changes to that element.
-1. Describe the change and how far it should reach, then send the prompt. For example: "Make this button use our primary style, here and on every page."
-1. When the agent finishes, select **Refresh preview** if the preview hasn't updated. Check the result at each **Viewport** size.
-1. If something isn't right, say what you see, such as "On mobile, the text touches the image." Ask for one change at a time, and check it before you ask for the next one.
+A change to a block or to the global styles changes every page that uses them. Before you ask for one, ask the agent where the block or style is used, for example "Which pages in my workspace use the cards block?"
 
-To undo a change, ask the agent to revert it. To drop all unpushed changes to a file, open the **Changes** view and select **Discard** next to the file. See [Changes Actions](console.md#changes-actions).
+When a change should apply to some pages only, ask for one of these instead:
 
-If the agent still doesn't get a change right after a few attempts, ask your developer, or select **Request support** in the menu bar and describe what you asked for and what you see. Your request reaches the team that builds the agent. When a conversation isn't going well, the console may also offer help under **Need a hand?** See [Request Support](console.md#request-support).
+* A **block variant**, when only some instances of a block should look different.
+* A **section style**, when a part of a page, such as a highlighted area, needs its own look.
+* A **page template**, when a type of page, such as all product pages, needs its own look.
 
 ## Show What You Mean {#references}
 
@@ -104,15 +100,29 @@ Things to know:
 
 For what your organization approves before people use Figma with the agent, see [Figma and Design Systems](evaluate.md#figma).
 
-## Limit a Change to Some Pages {#impact}
+## Make Your First Change {#first-change}
 
-A change to a block or to the global styles changes every page that uses them. Before you ask for one, ask the agent where the block or style is used, for example "Which pages in my workspace use the cards block?"
+1. Open a page in the console's preview panel.
+1. In the **Viewport** menu, choose the width that you want to check: **Desktop**, **Tablet**, or **Mobile**.
+1. Turn on **Inspect mode** with the select icon in the preview panel.
+1. Select the element that you want to change, such as a heading, an image, or a button. The element is added to your prompt: the agent receives its HTML and its position on the page, and limits its changes to that element.
+1. Describe the change and how far it should reach, then send the prompt. For example: "Make this button use our primary style, here and on every page."
+1. When the agent finishes, select **Refresh preview** if the preview hasn't updated. Check the result at each **Viewport** size.
+1. If something isn't right, say what you see, such as "On mobile, the text touches the image." Ask for one change at a time, and check it before you ask for the next one.
 
-When a change should apply to some pages only, ask for one of these instead:
+To undo a change, ask the agent to revert it. To drop all unpushed changes to a file, open the **Changes** view and select **Discard** next to the file. See [Changes Actions](console.md#changes-actions).
 
-* A **block variant**, when only some instances of a block should look different.
-* A **section style**, when a part of a page, such as a highlighted area, needs its own look.
-* A **page template**, when a type of page, such as all product pages, needs its own look.
+If the agent still doesn't get a change right after a few attempts, ask your developer, or select **Request support** in the menu bar and describe what you asked for and what you see. Your request reaches the team that builds the agent. When a conversation isn't going well, the console may also offer help under **Need a hand?** See [Request Support](console.md#request-support).
+
+### Example Prompts {#example-prompts}
+
+* "Make all headings use the heading font from the attached style guide."
+* "Give the cards in the cards block equal height, with their buttons aligned at the bottom."
+* "Add a `dark` variant of the teaser block with white text on our dark brand color, and apply it to the second teaser on `/adventures`."
+* "Add a `highlight` section style with a light background and more space above and below, and use it for the newsletter section on the home page."
+* "On mobile, stack the columns and put the image above the text."
+* "Which pages in my workspace use the hero block? Show me how each one looks after this change."
+* "Write the button styles that we agreed on into the project's instruction files."
 
 ## Check Before You Hand Over {#check}
 
@@ -146,13 +156,3 @@ Your change reaches the live site when the developer merges it. If you also chan
 | Preview | The console's rendering of your workspace. After you push, each branch also has its own preview URL. |
 
 Sections, blocks, and default content are explained in more depth under [Shape the Content Structure](production-migration.md#content-structure).
-
-## Example Prompts {#example-prompts}
-
-* "Make all headings use the heading font from the attached style guide."
-* "Give the cards in the cards block equal height, with their buttons aligned at the bottom."
-* "Add a `dark` variant of the teaser block with white text on our dark brand color, and apply it to the second teaser on `/adventures`."
-* "Add a `highlight` section style with a light background and more space above and below, and use it for the newsletter section on the home page."
-* "On mobile, stack the columns and put the image above the text."
-* "Which pages in my workspace use the hero block? Show me how each one looks after this change."
-* "Write the button styles that we agreed on into the project's instruction files."

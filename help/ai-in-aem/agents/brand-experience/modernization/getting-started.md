@@ -34,17 +34,13 @@ In Edge Delivery Services, a site's code (blocks, styles, and scripts) lives in 
 
 In this guide, content is stored in the document-based content repository, where authors edit it in Experience Workspace, the visual authoring UI for Edge Delivery Services. If your content must stay in the JCR of an Adobe Experience Manager author instance, follow the [guide for Experience Manager authoring](getting-started-aem-authoring.md) for the steps that differ. To choose between the two, see [Where Content Is Stored and How Authors Edit It](overview.md#content-storage).
 
-You need access to the Experience Modernization Console, and migrating pages can consume AI credits. See [Access and AI Credit Usage](#access).
+Auto mode has its own sign-up. For console access and the terms that apply when you continue with your own site, see [Access and AI Credit Usage](#access).
 
-## Choose How to Start {#first-outcome}
+## Start with Your Own Pages {#first-outcome}
 
-| Start with | Choose it when | What you do |
-|---|---|---|
-| [Auto mode, then Make it yours](#brand-trial) | You want to see a few of your own pages on Edge Delivery Services with little effort. | Give Auto mode your site's URL and wait for its email. Review the result, then transfer it to your own site with **Make it yours**. |
-| [A new site from the boilerplate](#prepare-repo) | You are starting a new site, or you want to guide the import step by step. | Create a repository from the AEM boilerplate, or from the commerce boilerplate for a storefront, and install two GitHub apps. Connect the site in the console and ask the agent to import pages or build what you need. |
-| [Your existing site](#existing-site) | Your site already runs on Edge Delivery Services. | Install the AEM Code Connector app and connect the site. Ask the agent to explain, change, or extend it. |
+Start with Auto mode below to migrate a few pages, review the result, and take it over with **Make it yours**. If you already have a project or want to guide the import from the beginning, [start from a repository](#repo-start) instead: create one from the boilerplate, or connect your existing site.
 
-All three paths end in the same place: your site connected in the console. From there, you [prompt the agent](#start-prompting), then [save, preview, and publish](#save-work) the result. The console is hosted, so none of these paths needs a local development environment.
+Both routes lead to your site connected in the console. From there, you [prompt the agent](#start-prompting), then [save, preview, and publish](#save-work) the result. The console is hosted, so neither route needs a local development environment.
 
 Before you import, choose a few pages of a site that you are authorized to migrate, including one of each common layout, and decide whether to keep the source design or apply a new one.
 
@@ -371,7 +367,9 @@ A demo shows a few complete, branded pages of a site that you are authorized to 
 
 Request access to the Experience Modernization Console through your Adobe account manager, and sign in with an Adobe ID that belongs to your company's Adobe organization. Auto mode needs no request through your account manager; sign up on its page, as in [Start with Auto Mode](#brand-trial).
 
-Signing in doesn't establish your organization's entitlement. Depending on your organization's agreement, migrating pages consumes AI credits:
+Plan your migration as part of your move to Edge Delivery Services. Your Adobe account team can review the scope and commercial arrangements for your project, including large-site and partner-led migrations. Your organization's agreement determines the applicable AI credit allowance and migration terms; signing in alone doesn't establish your entitlement.
+
+Under the current credit model, migrating pages can consume AI credits:
 
 * Credits are counted for each page that is uploaded to your content destination, Experience Workspace or the author instance, not for prompts or for iterations in the console.
 * Each upload counts, including an upload of a page that you uploaded before. Check a page in the console's preview, and upload it once it's ready.
@@ -379,7 +377,7 @@ Signing in doesn't establish your organization's entitlement. Depending on your 
 * Auto mode runs don't consume AI credits. **Make it yours** counts the pages that it copies to Experience Workspace.
 * Pages that the agent uploads for you count the same as pages that you upload.
 
-For how Adobe measures AI credit consumption for agentic capabilities, see [AI credit consumption](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/ai-credit-consumption). For your organization's entitlement, usage, and commercial terms, contact your Adobe account team.
+For an introduction to AI credits across Adobe's agentic capabilities, see [AI credit consumption](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/ai-credit-consumption). Examples or rates for other capabilities don't establish the terms for your migration. Ask your Adobe account team to review your organization's usage and confirm which usage reports are available to you.
 
 ## Troubleshooting {#troubleshooting}
 

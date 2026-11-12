@@ -28,7 +28,7 @@ role_v2:
 
 # Experience Modernization Console {#console-reference}
 
-The Experience Modernization Console, at [`aemcoder.adobe.io`](https://aemcoder.adobe.io), is the web interface for the Experience Modernization Agent: a hosted development environment for Edge Delivery Services, where you describe changes in the chat and check, save, and publish the results. It needs no local setup. The console works on a hosted copy of your project, which these docs call the console workspace. It is unrelated to Experience Workspace, the authoring UI; see [Names You May See](overview.md#names). Experience Workspace replaces Document Authoring, and some console labels still use that name.
+The Experience Modernization Console, at [`aemcoder.adobe.io`](https://aemcoder.adobe.io), is the web interface for the Experience Modernization Agent: a hosted development environment for Edge Delivery Services, where you describe changes in the chat and check, save, and publish the results. It needs no local setup. The console works on a hosted copy of your project, which these docs call the console workspace. It is unrelated to Experience Workspace, the visual authoring UI for document-based content; see [Where Content Is Stored and How Authors Edit It](overview.md#content-storage). Experience Workspace replaces Document Authoring, and some console labels still use that name.
 
 This page describes the console's views, controls, and settings. For access, see [Access and AI Credit Usage](getting-started.md#access). For complete procedures, choose [a way to start](getting-started.md#first-outcome), [production migration](production-migration.md), [restyling](restyling.md), or [block development](block-development.md). If you're new to the console, ask the agent in the chat for a tour.
 
@@ -85,25 +85,11 @@ The conversation is saved with your console workspace. When you reload the page 
 
 ### Optional Capabilities {#optional-capabilities}
 
-Core skills, such as site planning, page migration, bulk import, and header, navigation, and footer migration, are always available. Other capabilities are optional add-ons. Each add-on is off by default and is turned on per project, which keeps the agent lighter and faster for projects that don't need it.
+The [capability reference](capabilities.md) lists the built-in workflows and optional add-ons. Each add-on is off by default and is turned on per project, which keeps the agent lighter and faster for projects that don't need it.
 
 * When your request needs an add-on, the agent offers to turn it on and asks for your confirmation first. The add-on is available from your next message.
 * You can also ask for an add-on directly, for example "Enable the forms migration capability", or describe your task and accept the agent's offer.
 * To see which add-ons are on, ask the agent, for example "Which add-ons are enabled for this project?" To turn one off, ask in the same way. The Settings page has no add-on controls yet.
-
-| Add-on | ID | What it is for |
-|---|---|---|
-| Figma import | `excat-figma@excat-extended` | Migrating blocks and creating pages from Figma designs. See [Create a Block from Figma](prompting-guide.md#figma-block-migration). |
-| Guided redesign (Stardust) | `stardust@excat-extended` | Redesigning several pages of a site to a new design direction, step by step, and checking the result. See [Guided Redesign](restyling.md#guided-redesign). |
-| Design craft | `impeccable@excat-extended` | Applying frontend design-quality guidance, such as typography, spacing, and visual hierarchy, to design work. Turned on automatically with guided redesign, and usable on its own. |
-| Project documentation | `project-management@excat-extended` | Generating project and handover documentation as PDF guides. See [Project documentation](project-documentation.md). |
-| Forms migration | `forms-excat@excat-extended` | Migrating the source's forms to the form block of Edge Delivery Services for Adobe Experience Manager Forms, for organizations that license Experience Manager Forms. See [What the Forms Add-on Does](block-development.md#forms-add-on). |
-| Commerce pages | `excat-commerce@excat-extended` | Detecting product detail and product listing pages and migrating them to pages whose commerce blocks load the product data from the catalog. Built for storefronts on Adobe Commerce, in document-based projects. See [Commerce Pages](block-development.md#commerce-pages). |
-| Block library setup | `excat-block-library@excat-extended` | Setting up the library that authors use to find and insert your blocks. See [Block deliverables](block-development.md#block-deliverables). |
-| Edge Delivery Services troubleshooting | `excat-support@excat-extended` | Diagnosing site problems on demand, such as blocks that don't render or changes that don't appear. See [Debug a Problem](prompting-guide.md#debugging). |
-| Modern web guidance | `modern-web-guidance@excat-extended` | Applying current web-platform best practices, for example for fonts, loading performance, accessibility, and layout, when the agent writes CSS and JavaScript. |
-
-The add-ons on offer can change between releases. If the agent says that it can't do something, ask whether an add-on covers it.
 
 #### Turn On Add-ons for the Whole Project {#persist-add-ons}
 

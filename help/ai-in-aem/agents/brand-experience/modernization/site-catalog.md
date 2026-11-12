@@ -53,16 +53,6 @@ Planning runs in four phases:
 1. **Templating:** The agent groups pages that share the same layout of blocks into template candidates.
 1. **Naming:** The agent merges template candidates that are structurally the same and gives each template a meaningful name.
 
-### Rerun a Phase {#additional-prompts}
-
-To rerun a phase, for example after the source site has changed, ask the agent to repeat it by name:
-
-`repeat block cataloging`
-
-The agent also reruns every later phase and keeps the earlier ones. Changes that you made in the **Planning** view, such as splitting or moving block instances, are kept.
-
-If the **Planning** view shows **Block catalog is out of date**, the catalog was created in an earlier format that the current version can't read. Run planning again from the chat with `scope site` and the site's address. If planning stopped before it finished, **Start over** in the **Planning** view also starts a new run for the same site.
-
 ## Results and Status {#output}
 
 When the run completes, the agent posts a summary in the chat: the number of pages, templates, and block variants, a breakdown by locale, and the status of the run. The **Planning** view shows the same status.
@@ -210,6 +200,16 @@ Some actions show only where they apply. For example, **Generate block code** an
 In **Migrate page to AEM** and **Migrate template to AEM**, *AEM* refers to the project connected to the console. The imported content stays in the console workspace until you upload it: to Experience Workspace for document-based projects, or to the author instance for Experience Manager authoring.
 
 Grouping and naming corrections change the catalog, not the pages that you already imported. **Generate block code** changes code, and the migration actions import content, so review their output separately. A structural refactor in the catalog isn't a refactor of block code; for that, see [Refactor Without Changing the Outcome](block-development.md#refactor).
+
+### Rerun a Phase {#additional-prompts}
+
+To rerun a phase, for example after the source site has changed, ask the agent to repeat it by name:
+
+`repeat block cataloging`
+
+The agent also reruns every later phase and keeps the earlier ones. Changes that you made in the **Planning** view, such as splitting or moving block instances, are kept.
+
+If the **Planning** view shows **Block catalog is out of date**, the catalog was created in an earlier format that the current version can't read. Run planning again from the chat with `scope site` and the site's address. If planning stopped before it finished, **Start over** in the **Planning** view also starts a new run for the same site.
 
 ## Bulk Import Workflow {#bulk-import}
 

@@ -1252,6 +1252,7 @@ user-guide-title: AEM as a Cloud Service
         + [Make Visual Changes](/help/ai-in-aem/agents/brand-experience/modernization/visual-changes.md)
         + [Create, Update, and Refactor Blocks](/help/ai-in-aem/agents/brand-experience/modernization/block-development.md)
         + [Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md)
+        + [Capabilities and Add-ons](/help/ai-in-aem/agents/brand-experience/modernization/capabilities.md)
         + [Prompting Guide](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md)
         + [Project Instructions and Memory](/help/ai-in-aem/agents/brand-experience/modernization/project-instructions.md)
         + [Generate Project Documentation](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md)

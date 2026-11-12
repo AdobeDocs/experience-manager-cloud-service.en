@@ -63,19 +63,6 @@ Add a short section for your project to `AGENTS.md`:
 
 Keep `AGENTS.md` short. The agent carries all of it in every conversation, so every line takes up room that it could use for the task. Long, general text also makes it harder for the agent to tell which rules matter.
 
-### Change How the Agent Answers {#reply-style}
-
-How the agent writes its answers is a convention like any other, so you can set it in `AGENTS.md`. For example, if you don't want it to end each answer by suggesting next steps, or you want shorter answers, say so:
-
-```markdown
-## How to answer
-- Keep answers short: what you changed, where, and anything that needs my decision.
-- Don't suggest next steps unless I ask for them.
-- Answer in German. Keep code, file names, and commit messages in English.
-```
-
-These instructions shape the text of the agent's answers. The suggestions that the console shows under **Next steps** are generated separately, so they still appear, and you can ignore them.
-
 ## Organize Further Instruction Files {#organize}
 
 Put details in separate files, grouped in a folder when there are several of them. For example:
@@ -152,20 +139,18 @@ Works in sections: default, `dark`, and `narrow`.
 
 When migration creates a block, the agent also writes a README for developers and an authoring guide for authors. See [What the Agent Provides With a Block](block-development.md#block-deliverables). Reference those files from your index rather than repeating them.
 
-## Let the Agent Maintain the Files {#maintain}
+### Change How the Agent Answers {#reply-style}
 
-You don't need to write these files by hand. Ask the agent to create and update them, then review them as you would review code.
+How the agent writes its answers is a convention like any other, so you can set it in `AGENTS.md`. For example, if you don't want it to end each answer by suggesting next steps, or you want shorter answers, say so:
 
-* **Create the first version** once the first templates and blocks exist:
+```markdown
+## How to answer
+- Keep answers short: what you changed, where, and anything that needs my decision.
+- Don't suggest next steps unless I ask for them.
+- Answer in German. Keep code, file names, and commit messages in English.
+```
 
-  > Document this project's blocks, variants, section styles, page templates, and design tokens from the code and the imported content. Put each topic in its own short file under `project/`, and add an index with when to read each file to `AGENTS.md`.
-
-* **Keep them current.** Add a standing rule to `AGENTS.md`, such as the last line of the example above, so that the agent updates the files whenever it creates or changes a block, section style, or template.
-* **Check them.** The agent can record a convention that it assumed rather than one that you agreed. Correct anything that is wrong, and ask from time to time:
-
-  > Check the files under `project/` against the current code and content. Fix statements that are out of date, and split any file that has grown too long.
-
-* **Push them with the code** so that your team and future conversations get the same instructions.
+These instructions shape the text of the agent's answers. The suggestions that the console shows under **Next steps** are generated separately, so they still appear, and you can ignore them.
 
 ## Leave a Record of Each Request {#trace}
 
@@ -182,6 +167,21 @@ Your Git history and the version history of your content are the record of what 
 * **Pushing** needs **Allow LLM to use my git credentials**, or the Adobe credentials permission for repositories connected through Cloud Manager. See [Settings Page](console.md#settings-page). If the permission isn't available to you, push yourself with **Sync** > **Push** > **Code** after each request.
 * **Uploading** needs the Adobe credentials permission. The console lets the agent upload content only when your message asks for it or you agree when it asks, so the rule has the agent ask, and your answer approves the upload. For content on the author instance, upload the pages yourself.
 * **The working branch** keeps the agent's pushes away from the live site's code. A developer reviews the changes and merges them into `main` with a pull request, as described in [Broader Contribution, Same Production Control](overview.md#production-control).
+
+## Let the Agent Maintain the Files {#maintain}
+
+You don't need to write these files by hand. Ask the agent to create and update them, then review them as you would review code.
+
+* **Create the first version** once the first templates and blocks exist:
+
+  > Document this project's blocks, variants, section styles, page templates, and design tokens from the code and the imported content. Put each topic in its own short file under `project/`, and add an index with when to read each file to `AGENTS.md`.
+
+* **Keep them current.** Add a standing rule to `AGENTS.md`, such as the last line of the example above, so that the agent updates the files whenever it creates or changes a block, section style, or template.
+* **Check them.** The agent can record a convention that it assumed rather than one that you agreed. Correct anything that is wrong, and ask from time to time:
+
+  > Check the files under `project/` against the current code and content. Fix statements that are out of date, and split any file that has grown too long.
+
+* **Push them with the code** so that your team and future conversations get the same instructions.
 
 ## Start a New Conversation {#new-conversation}
 

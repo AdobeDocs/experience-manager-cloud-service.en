@@ -28,7 +28,45 @@ role_v2:
 
 # Experience Modernization Agent FAQ {#faq}
 
-Short answers to questions that users of the Experience Modernization Agent often ask, each with a link to the guide that covers it. For error messages and things that don't work as expected, see [Troubleshooting](troubleshooting.md). For the guides that fit your role, see [Start Here by Role](overview.md#start-by-role).
+Short answers to questions that users of the Experience Modernization Agent often ask, from product fit and access through migration and continued development. Each answer links to the guide that covers it. For error messages and things that don't work as expected, see [Troubleshooting](troubleshooting.md).
+
+## Product Fit {#product-fit}
+
+### Do I need to be a developer to use the agent? {#audience}
+
+Not for a first result: Auto mode migrates your pages without step-by-step prompting. To change the site, you describe what you want in plain language, but you need some HTML and the basics of Git and GitHub, because changes reach production through pull requests. Authors edit content without Git. See [Who Can Use the Agent](overview.md#who-can-use-ema).
+
+### Can several people work on the same project? {#collaboration}
+
+Yes, each in their own console workspace, sharing code through pull requests. The console doesn't coordinate them, and the last upload of a page replaces earlier ones, so agree who works on what. See [Work as a Team](production-migration.md#collaboration).
+
+### Can Edge Delivery Services run complex sites, or only simple ones? {#complex-sites}
+
+Complex enterprise sites. Pages are standard HTML, CSS, and JavaScript, so a block can call any API or run a complete application, and spreadsheets and the query index give blocks your own data. See [How Your Site Is Built and Updated](overview.md#project-foundations).
+
+### Is the agent limited to Edge Delivery Services? {#beyond-eds}
+
+No. Its skills focus on Edge Delivery Services, but it is a general-purpose coding agent: it can also adapt an existing application or write a server-side service for your team to deploy. For a system that it has no skills for, start by giving it that system's documentation. See [Work Beyond Edge Delivery Services](prompting-guide.md#beyond-eds).
+
+### Can the agent build integrations with other systems? {#integrations}
+
+Yes: the blocks and code that connect your site to commerce platforms, marketing technology, search, or your own APIs. Page import doesn't carry the source's scripts over, so plan each integration as project work. See [Connect Services and Applications](block-development.md#integrations).
+
+### Can we teach the agent our own procedures? {#custom-skills}
+
+Yes. Write your conventions in `AGENTS.md`. For a recurring task that needs precise steps, add a project skill in `.claude/skills/<skill-name>/SKILL.md`; the agent reads it when a task matches its description. Its folder's name starts with a dot, which changes how you push it. See [Advanced: Custom Skills](project-instructions.md#custom-skills).
+
+### Can I change how the agent answers? {#reply-style}
+
+Yes. Write how you want answers in `AGENTS.md`, for example shorter answers, another language, or no suggested next steps. See [Change How the Agent Answers](project-instructions.md#reply-style).
+
+### How does the agent relate to Experience Workspace? {#experience-workspace}
+
+Experience Workspace is where authors edit the document-based content that the agent uploads; **Edit in Experience Workspace** in the console opens a page there. The agent itself works in the console, on the site's code and on importing content. Experience Workspace has its own [assistant](https://www.aem.live/docs/ew/authoring/assistant) for the content open in the editor. See [Content Views](console.md#content-view).
+
+### Why can't the agent use a capability that I've heard about? {#capability-availability}
+
+Some capabilities are optional add-ons, which are off until they're turned on for the project. When your request needs one, the agent offers to turn it on. You can also ask it which add-ons are on, or ask for one by name. See [Optional Capabilities](console.md#optional-capabilities).
 
 ## Access and Usage {#access-usage}
 
@@ -52,9 +90,35 @@ Not necessarily. Your Adobe account team confirms your organization's entitlemen
 
 Depending on your organization's agreement, yes: for pages uploaded to your content destination, not for prompts. Auto mode runs don't consume them. See [Access and AI Credit Usage](getting-started.md#access) for what counts, and ask your Adobe account team about your organization's usage.
 
+### Where can I see my AI credit usage? {#credit-usage-reporting}
+
+Contact your Adobe account team. An organization-wide total doesn't identify how much was used by the Experience Modernization Agent. See [Access and AI Credit Usage](getting-started.md#access).
+
 ### Can I use the console on a phone or tablet? {#mobile}
 
 Yes. The console adapts its layout to smaller screens, so that you can follow a long task on a phone. See [Menu Bar](console.md#menu-bar).
+
+## Source Sites {#source-sites}
+
+### Does it matter which CMS or framework the source site uses? {#source-technology}
+
+No. The agent works from the rendered page, not from the source's code or CMS. Features that run on the source's servers, such as personalization rules, search, or form processing, aren't in the rendered page, so decide how each works on the new site. See [Limitations](overview.md#limitations).
+
+### Can I relaunch a site that runs on Adobe Experience Manager today? {#relaunch-aem-site}
+
+Yes. The agent treats it like any other source, and leaves the source site and your other Experience Manager sites unchanged. Components, experience fragments, and inherited content arrive as their output on each page. See [Relaunch a Site That Runs on Experience Manager](production-migration.md#relaunch-aem-site).
+
+### What if the source site uses bot protection? {#bot-protection}
+
+Arrange access with the site's administrator, and don't work around the protection. See [Source Sites with Bot Protection](troubleshooting.md#bot-protection) for the options.
+
+### Can the agent migrate pages that require sign-in? {#protected-pages}
+
+Yes, when the source accepts one of the authentication methods that the console supports. Store a read-only credential in the console's settings, or in Auto mode's authentication fields, never in the chat. See [Protected Site Authentication](console.md#protected-site-authentication) for the methods.
+
+### Can the agent reach a site behind a VPN, a firewall, or single sign-on? {#private-sources}
+
+Not through a VPN or an interactive sign-in. The agent reaches a source only over the internet, from its hosted environment, and it can't complete an interactive sign-in such as single sign-on (SSO) or multi-factor authentication. A firewall lets it through when the site's administrator [allowlists the agent's addresses](troubleshooting.md#allowlist-ip-addresses). Otherwise, ask the administrator for a staging or origin host that the agent can reach; see [Protected Site Authentication](console.md#protected-site-authentication).
 
 ## Auto Mode {#auto-mode}
 
@@ -93,6 +157,24 @@ Yes. The destination is an Edge Delivery Services site of your own, whose conten
 ### Does the transfer copy redirects, metadata, permissions, or site configuration? {#transfer-scope}
 
 No. Only code, pages, and the media that the pages reference are transferred. Set up spreadsheets such as redirects, bulk metadata, and placeholders, as well as permissions and configuration, in the destination. See [Make It Yours](getting-started.md#make-it-yours).
+
+## Destinations and Git {#destinations}
+
+### Can the agent write content to Experience Manager authoring with the Universal Editor? {#aem-authoring}
+
+Yes, in the guided workflow. The agent converts the pages to JCR content and uploads them to your Adobe Experience Manager as a Cloud Service author instance as a content package. See [Getting Started for Experience Manager Authoring Projects](getting-started-aem-authoring.md). Auto mode and Make it yours produce document-based content for Experience Workspace only.
+
+### Which Git hosts can the console push to? {#git-hosts}
+
+GitHub, and any Git host that Cloud Manager connects, such as GitHub Enterprise, GitLab, Bitbucket, or Azure DevOps. See [Use Another Git Host](getting-started.md#other-git).
+
+### Do I need AEM Code Sync, AEM Code Connector, or a token? {#git-apps}
+
+AEM Code Sync on every GitHub project, so that your site can read its code, and AEM Code Connector for the console to push. A personal access token replaces the connector's sign-in for GitHub Enterprise, or when OAuth sign-in isn't available. See [Start from a Repository](getting-started.md#repo-start).
+
+### Can the agent push to main or publish without my approval? {#approval}
+
+Only if you turn on its permissions in **Settings** > **Agent permissions**: with Git access, it can push even to `main`. Without them, code and content leave the console workspace only when you push, upload, or publish them yourself. To require approval, protect `main` and limit who has the site's publish role, because the console's own checks are safeguards, not approval gates. See [Control over Changes](evaluate.md#security-control).
 
 ## Planning and Scale {#planning-scale}
 
@@ -150,46 +232,6 @@ Wherever you choose. Edge Delivery Services doesn't store submissions, and the s
 
 It's built for Adobe Commerce. It recognizes product pages on any source site, but the pages that it creates need Adobe Commerce as a Cloud Service or Adobe Commerce Optimizer, which can supply the catalog when another platform handles checkout. Without either, the agent can build product and listing blocks that call your platform's API. See [Commerce Pages](block-development.md#commerce-pages).
 
-## Source Sites {#source-sites}
-
-### Does it matter which CMS or framework the source site uses? {#source-technology}
-
-No. The agent works from the rendered page, not from the source's code or CMS. Features that run on the source's servers, such as personalization rules, search, or form processing, aren't in the rendered page, so decide how each works on the new site. See [Limitations](overview.md#limitations).
-
-### Can I relaunch a site that runs on Adobe Experience Manager today? {#relaunch-aem-site}
-
-Yes. The agent treats it like any other source, and leaves the source site and your other Experience Manager sites unchanged. Components, experience fragments, and inherited content arrive as their output on each page. See [Relaunch a Site That Runs on Experience Manager](production-migration.md#relaunch-aem-site).
-
-### What if the source site uses bot protection? {#bot-protection}
-
-Arrange access with the site's administrator, and don't work around the protection. See [Source Sites with Bot Protection](troubleshooting.md#bot-protection) for the options.
-
-### Can the agent migrate pages that require sign-in? {#protected-pages}
-
-Yes, when the source accepts one of the authentication methods that the console supports. Store a read-only credential in the console's settings, or in Auto mode's authentication fields, never in the chat. See [Protected Site Authentication](console.md#protected-site-authentication) for the methods.
-
-### Can the agent reach a site behind a VPN, a firewall, or single sign-on? {#private-sources}
-
-Not through a VPN or an interactive sign-in. The agent reaches a source only over the internet, from its hosted environment, and it can't complete an interactive sign-in such as single sign-on (SSO) or multi-factor authentication. A firewall lets it through when the site's administrator [allowlists the agent's addresses](troubleshooting.md#allowlist-ip-addresses). Otherwise, ask the administrator for a staging or origin host that the agent can reach; see [Protected Site Authentication](console.md#protected-site-authentication).
-
-## Destinations and Git {#destinations}
-
-### Can the agent write content to Experience Manager authoring with the Universal Editor? {#aem-authoring}
-
-Yes, in the guided workflow. The agent converts the pages to JCR content and uploads them to your Adobe Experience Manager as a Cloud Service author instance as a content package. See [Getting Started for Experience Manager Authoring Projects](getting-started-aem-authoring.md). Auto mode and Make it yours produce document-based content for Experience Workspace only.
-
-### Which Git hosts can the console push to? {#git-hosts}
-
-GitHub, and any Git host that Cloud Manager connects, such as GitHub Enterprise, GitLab, Bitbucket, or Azure DevOps. See [Use Another Git Host](getting-started.md#other-git).
-
-### Do I need AEM Code Sync, AEM Code Connector, or a token? {#git-apps}
-
-AEM Code Sync on every GitHub project, so that your site can read its code, and AEM Code Connector for the console to push. A personal access token replaces the connector's sign-in for GitHub Enterprise, or when OAuth sign-in isn't available. See [Start from a Repository](getting-started.md#repo-start).
-
-### Can the agent push to main or publish without my approval? {#approval}
-
-Only if you turn on its permissions in **Settings** > **Agent permissions**: with Git access, it can push even to `main`. Without them, code and content leave the console workspace only when you push, upload, or publish them yourself. To require approval, protect `main` and limit who has the site's publish role, because the console's own checks are safeguards, not approval gates. See [Control over Changes](evaluate.md#security-control).
-
 ## Recovery {#recovery}
 
 ### What happens to my work if I reload the page or leave? {#reload}
@@ -238,43 +280,7 @@ From your Adobe account team and the [Adobe Trust Center](https://www.adobe.com/
 
 Yes, with site content and fictitious data, not real patient information. That rule applies to public, staging, and signed-in pages. Your chosen authoring and delivery services have their own HIPAA requirements; see [Health Data and HIPAA](evaluate.md#security-hipaa).
 
-## Product Fit and Help {#product-fit}
-
-### Do I need to be a developer to use the agent? {#audience}
-
-Not for a first result: Auto mode migrates your pages without step-by-step prompting. To change the site, you describe what you want in plain language, but you need some HTML and the basics of Git and GitHub, because changes reach production through pull requests. Authors edit content without Git. See [Who Can Use the Agent](overview.md#who-can-use-ema).
-
-### Can several people work on the same project? {#collaboration}
-
-Yes, each in their own console workspace, sharing code through pull requests. The console doesn't coordinate them, and the last upload of a page replaces earlier ones, so agree who works on what. See [Work as a Team](production-migration.md#collaboration).
-
-### Can Edge Delivery Services run complex sites, or only simple ones? {#complex-sites}
-
-Complex enterprise sites. Pages are standard HTML, CSS, and JavaScript, so a block can call any API or run a complete application, and spreadsheets and the query index give blocks your own data. See [Understand Your Project](overview.md#project-foundations).
-
-### Is the agent limited to Edge Delivery Services? {#beyond-eds}
-
-No. Its skills focus on Edge Delivery Services, but it is a general-purpose coding agent: it can also adapt an existing application or write a server-side service for your team to deploy. For a system that it has no skills for, start by giving it that system's documentation. See [Work Beyond Edge Delivery Services](prompting-guide.md#beyond-eds).
-
-### Can the agent build integrations with other systems? {#integrations}
-
-Yes: the blocks and code that connect your site to commerce platforms, marketing technology, search, or your own APIs. Page import doesn't carry the source's scripts over, so plan each integration as project work. See [Connect Services and Applications](block-development.md#integrations).
-
-### Can we teach the agent our own procedures? {#custom-skills}
-
-Yes. Write your conventions in `AGENTS.md`. For a recurring task that needs precise steps, add a project skill in `.claude/skills/<skill-name>/SKILL.md`; the agent reads it when a task matches its description. Its folder's name starts with a dot, which changes how you push it. See [Advanced: Custom Skills](project-instructions.md#custom-skills).
-
-### Can I change how the agent answers? {#reply-style}
-
-Yes. Write how you want answers in `AGENTS.md`, for example shorter answers, another language, or no suggested next steps. See [Change How the Agent Answers](project-instructions.md#reply-style).
-
-### How does the agent relate to Experience Workspace? {#experience-workspace}
-
-Experience Workspace is where authors edit the document-based content that the agent uploads; **Edit in Experience Workspace** in the console opens a page there. The agent itself works in the console, on the site's code and on importing content. Experience Workspace has its own [assistant](https://www.aem.live/docs/ew/authoring/assistant) for the content open in the editor. See [Content Views](console.md#content-view).
-
-### Why can't the agent use a capability that I've heard about? {#capability-availability}
-
-Some capabilities are optional add-ons, which are off until they're turned on for the project. When your request needs one, the agent offers to turn it on. You can also ask it which add-ons are on, or ask for one by name. See [Optional Capabilities](console.md#optional-capabilities).
+## Help and Updates {#help-and-updates}
 
 ### How do I get help? {#help}
 

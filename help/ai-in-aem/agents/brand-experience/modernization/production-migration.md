@@ -27,49 +27,13 @@ role_v2:
 
 # Migrate a Production Site {#production-migration}
 
-Use this workflow to move an agreed list of pages to Edge Delivery Services, the Adobe Experience Manager service that delivers websites. Start with a sample page for each template, settle how its content and design map to the new site, and import more pages only once the samples work in the editor that your authors will use. If terms such as blocks, default content, or preview are new to you, see [Understand Your Project](overview.md#project-foundations) and [Shape the Content Structure](#content-structure).
+Use this workflow to move an agreed list of pages to Edge Delivery Services, the Adobe Experience Manager service that delivers websites. Start with a sample page for each template, settle how its content and design map to the new site, and import more pages only once the samples work in the editor that your authors will use. If terms such as blocks, default content, or preview are new to you, see [How Your Site Is Built and Updated](overview.md#project-foundations) and [Shape the Content Structure](#content-structure).
 
 For a few demonstration pages or a first evaluation, use the smaller [demo and trial workflows](getting-started.md#first-outcome). They don't need the checks that a production site needs before release.
 
-## Phases and Roles {#phases}
-
-A migration runs in phases. The agent does most of the repetitive work in each one, and your team makes the decisions and signs off the result. Let one person, such as the migration lead, run the first phases; others join once the blocks and import scripts are settled. See [Work as a Team](#collaboration).
-
-| Phase | Who leads | What the agent does | What your team does | Done when | Guide |
-|---|---|---|---|---|---|
-| Scope | Migration lead, with the architect | Explains the source site and the platform when asked. | Agrees the page list, content destination, design, integrations, URL policy, and owners. | The decisions are recorded. | [Agree Scope and Destinations](#scope) |
-| Catalog | Migration lead | Discovers pages and groups them into templates and block variants. | Corrects groupings, compares them with the agreed page list, and picks a sample page for each template. | Every in-scope URL has a template or an approved exclusion. | [Prepare and Catalog](#prepare) |
-| Sample pages | Migration lead, with designers and authors | Imports, styles, and builds blocks, the header, and the footer. | Reviews the content structure, the design, and how easily authors can edit it. | One page per template works in the authors' editor. | [Validate Sample Pages](#representatives) |
-| Batches | Migration lead, then the team | Imports template by template and reports errors. | Checks pages from each batch, fixes import scripts, and keeps a record per URL. | Every in-scope URL is imported or has an approved exception. | [Import in Batches](#batches) |
-| Completion | Developers, designers, and integration owners | Builds integrations, forms, and the remaining blocks and styles. | Configures external systems and decides redirects and search metadata. | The agreed requirements work. | [Complete the Site](#complete-site) |
-| Sign-off | Site owner, with testers and authors | Runs checks that you ask for, such as page critiques and performance tests. | Tests against the agreed criteria. | Every area of the criteria is signed off. | [Check and Sign Off](#acceptance) |
-| Release | Release owner | Writes the project handover documentation. | Merges the code, publishes the content, switches the domain, and monitors the site. | The site is live, and its owners have taken it over. | [Release, Recover, and Hand Over](#handoff) |
-
-Visual contributors can work on styling from the sample-pages phase onward. See [Make Visual Changes](visual-changes.md).
-
-## How the Agent Migrates at Scale {#migration-at-scale}
-
-The agent doesn't send every page through the AI model. Interpreting each page separately wouldn't scale to thousands of pages, and the model could treat similar pages slightly differently each time. Instead, the AI model works out the mapping on one sample page per template, and the agent turns that mapping into code that runs on the template's other pages:
-
-1. **Group pages into templates.** The [site catalog](site-catalog.md) groups the source site's pages into templates, which are pages that share a layout. If you migrate pages without a catalog, each page that you name starts a template of its own.
-1. **Migrate a sample page.** For each template, the agent first migrates one real page that shows the template's typical layout and, ideally, most of its blocks and variants. The site catalog proposes one for each template. If another page of the template shows more of its blocks, choose that page instead: blocks that the sample page lacks are only added later, when an imported page needs them. The AI model maps the sample page's content to default content and blocks, and creates the blocks that it needs or reuses existing ones.
-1. **Generate an import script.** The agent writes an import script for the template: one part, the parser, extracts each block's content from the source HTML, and another, the transformer, cleans up the page as a whole. The scripts are JavaScript files in the project's `tools/importer/` folder, versioned in Git with the rest of your code.
-1. **Refine the pattern, not the page.** When you ask for a correction, the agent changes the block or the import script that produced the result instead of editing one page's output. The correction then applies to every page of the template, and later templates reuse the blocks that already exist.
-1. **Import the remaining pages in bulk.** The bulk import runs the import script on the template's other pages without the AI model interpreting each one. The agent then compares the imported pages with their source pages, fixes the import script for pages that differ too much, and imports those pages again.
-
-Validate a few pages of each template before you import all of them. See [Import in Batches](#batches).
-
-The same applies to changes in content structure, such as which content becomes a block or where a page splits into sections: change the import script. It is code, reviewed and merged like the rest, and the next import applies it to every page of the template. An edit to one imported page stays local, and importing the template again overwrites it.
-
-To change the templates and blocks themselves, such as moving pages to another template or making one block a variant of another, use the [Planning view](site-catalog.md#planning-actions) or ask in chat. The agent follows these changes the next time it generates blocks or imports pages, and pages that you already imported don't change. To consolidate the design, see [Restyle Sites](restyling.md). To consolidate block code, see [Refactor Without Changing the Outcome](block-development.md#refactor).
-
->[!NOTE]
->
->A template in the console is a group of source pages with the same layout, which the agent uses to plan and import them. It isn't the `template` page metadata, which adds a class to the page's `body` element so that the project's code can style those pages differently. To align the two, ask the agent to set the metadata in the import script, so that every page of the template gets it on import, for example: "For the article template, set the page metadata `template` to `article` in the import script, and give article pages a narrower main column."
-
 ## Agree Scope and Destinations {#scope}
 
-You need authorization to read the source, modify the target repository, and write content and assets to the destination. Agree who signs off the result and who authorizes release. If some pages require sign-in, set up [protected site authentication](console.md#protected-site-authentication) with a dedicated read-only account. If the source blocks automated visitors, arrange access with its administrator before cataloging. See [Source Sites with Bot Protection](troubleshooting.md#bot-protection).
+The migration lead and architect agree the scope and destinations. You need authorization to read the source, modify the target repository, and write content and assets to the destination. Agree who signs off the result and who authorizes release. If some pages require sign-in, set up [protected site authentication](console.md#protected-site-authentication) with a dedicated read-only account. If the source blocks automated visitors, arrange access with its administrator before cataloging. See [Source Sites with Bot Protection](troubleshooting.md#bot-protection).
 
 Record:
 
@@ -105,11 +69,31 @@ Once your team has decided on the relaunch, the workflow is the same as for any 
 1. Compare the discovered URLs with your agreed page list. Add pages that discovery missed, and decide explicitly about failed, skipped, duplicate, or excluded URLs.
 1. Pick a sample page for each template and important variant. Cover long content, unusual images, locales, and pages with a lot of interaction.
 
-Cataloging reads the source and imports nothing. A run with the status **complete** can still have failed pages; see [Results and Status](site-catalog.md#output).
+Cataloging reads the source and imports nothing. A run with the status **complete** can still have failed pages; see [Results and Status](site-catalog.md#output). Before moving on, give every in-scope URL a template or an approved exclusion.
+
+## How the Agent Migrates at Scale {#migration-at-scale}
+
+The agent doesn't send every page through the AI model. Interpreting each page separately wouldn't scale to thousands of pages, and the model could treat similar pages slightly differently each time. Instead, the AI model works out the mapping on one sample page per template, and the agent turns that mapping into code that runs on the template's other pages:
+
+1. **Group pages into templates.** The [site catalog](site-catalog.md) groups the source site's pages into templates, which are pages that share a layout. If you migrate pages without a catalog, each page that you name starts a template of its own.
+1. **Migrate a sample page.** For each template, the agent first migrates one real page that shows the template's typical layout and, ideally, most of its blocks and variants. The site catalog proposes one for each template. If another page of the template shows more of its blocks, choose that page instead: blocks that the sample page lacks are only added later, when an imported page needs them. The AI model maps the sample page's content to default content and blocks, and creates the blocks that it needs or reuses existing ones.
+1. **Generate an import script.** The agent writes an import script for the template: one part, the parser, extracts each block's content from the source HTML, and another, the transformer, cleans up the page as a whole. The scripts are JavaScript files in the project's `tools/importer/` folder, versioned in Git with the rest of your code.
+1. **Refine the pattern, not the page.** When you ask for a correction, the agent changes the block or the import script that produced the result instead of editing one page's output. The correction then applies to every page of the template, and later templates reuse the blocks that already exist.
+1. **Import the remaining pages in bulk.** The bulk import runs the import script on the template's other pages without the AI model interpreting each one. The agent then compares the imported pages with their source pages, fixes the import script for pages that differ too much, and imports those pages again.
+
+Validate a few pages of each template before you import all of them. See [Import in Batches](#batches).
+
+The same applies to changes in content structure, such as which content becomes a block or where a page splits into sections: change the import script. It is code, reviewed and merged like the rest, and the next import applies it to every page of the template. An edit to one imported page stays local, and importing the template again overwrites it.
+
+To change the templates and blocks themselves, such as moving pages to another template or making one block a variant of another, use the [Planning view](site-catalog.md#planning-actions) or ask in chat. The agent follows these changes the next time it generates blocks or imports pages, and pages that you already imported don't change. To consolidate the design, see [Restyle Sites](restyling.md). To consolidate block code, see [Refactor Without Changing the Outcome](block-development.md#refactor).
+
+>[!NOTE]
+>
+>A template in the console is a group of source pages with the same layout, which the agent uses to plan and import them. It isn't the `template` page metadata, which adds a class to the page's `body` element so that the project's code can style those pages differently. To align the two, ask the agent to set the metadata in the import script, so that every page of the template gets it on import, for example: "For the article template, set the page metadata `template` to `article` in the import script, and give article pages a narrower main column."
 
 ## Validate Sample Pages {#representatives}
 
-Start with one template and a few of its pages. For example:
+The migration lead, designers, and authors settle the first template together. Start with a few of its pages. For example:
 
 > Migrate only these product pages: `https://www.example.com/products/tents`, `https://www.example.com/products/backpacks`, and `https://www.example.com/products/boots`. Store the content as document-based content under `/products`. Keep the approved text, links, metadata, and image meaning. Reuse the project's blocks and content conventions. Report missing content and interactions that the import doesn't reproduce. Do not upload, push, or publish.
 
@@ -164,6 +148,12 @@ Check the estimate against the first batch's [record per URL](#batches).
 Several people can work on the same project with the agent, each in their own [console workspace](overview.md#independent-workspace). They share code through Git and content through the content destination. The console doesn't show who is working on what, and it doesn't merge two people's changes to the same page, so agree who works on what and keep talking to each other.
 
 Scope matters more with an agent than without one. A single request can change many files, so when two people change the same blocks or styles at the same time, someone has to resolve conflicts across many files by hand.
+
+### Lead the Migration {#phases}
+
+A migration runs in phases. The agent does most of the repetitive work in each one, and your team makes the decisions and signs off the result. Let one person, such as the migration lead, run the first phases; others join once the blocks and import scripts are settled. See [Work as a Team](#collaboration).
+
+Visual contributors can work on styling from the sample-pages phase onward. See [Make Visual Changes](visual-changes.md).
 
 ### Start with One Person, Then Divide the Work {#divide-work}
 
@@ -227,9 +217,9 @@ How images reach the new site depends on the content destination:
 
 * **Experience Workspace:** While you work in the console, an imported page can still reference images on the source site. When you upload the page, the console uploads its images with it, including images that it downloads from the source, into a folder named after the page with a leading dot. It then points the page to the uploaded copies. If an image is missing, in an unsupported format, or ambiguous, the console reports it and doesn't upload the page. After the upload, it checks that every image arrived. See [Upload Content](getting-started.md#upload-content).
 * **Experience Manager authoring:** Select **Upload images** when you upload the content package, and choose a folder under `/content/dam/`. The default is `/content/dam/site`. See [Upload Content](getting-started-aem-authoring.md#upload-content).
-* **Adobe Dynamic Media:** Images that the source serves from Dynamic Media, including Scene7 URLs, stay there. Scene7 is the earlier name of Dynamic Media. The imported page references them, and the project's code renders them.
+* **Adobe Dynamic Media:** Images that the source serves from Dynamic Media, including Scene7 and Dynamic Media with OpenAPI URLs, stay there. The imported page references them, and the project's code renders them.
 
-Edge Delivery Services stores each image once and serves it in sizes and formats that fit each screen. Check large files, videos, and SVG images against the [limits for file types and sizes](https://www.aem.live/docs/limits).
+Edge Delivery Services serves images in sizes and formats that fit each screen. Check large files, videos, and SVG images against the [limits for file types and sizes](https://www.aem.live/docs/limits).
 
 Check the links to documents, such as PDFs, on the sample pages. Each link must point to a copy on the new site, not to the source site that you will retire.
 
@@ -247,7 +237,7 @@ The agent doesn't create redirects, sitemaps, or language alternates by itself. 
 
 ## Check and Sign Off {#acceptance}
 
-Agree with the site owner what must work before release, and test it on the preview and live sites.
+Agree with the site owner what must work before release, and test it on the preview and live sites. The site owner signs off the result with testers and authors.
 
 | Area | Signed off when |
 |---|---|
@@ -262,6 +252,8 @@ Agree with the site owner what must work before release, and test it on the prev
 Each automated signal checks one thing: an importer status that the script ran, a generated package that content was converted, a visual similarity score that a page looks like its source, and a Lighthouse score how one page loads in a lab test. Production readiness needs every area in the table.
 
 ## Release, Recover, and Hand Over {#handoff}
+
+The release owner coordinates the code merge, content publication, and domain cutover, then confirms that the site's ongoing owners have taken it over.
 
 1. Push the signed-off code and have it reviewed as the repository's policy requires. Merging into `main` updates the live site's code immediately, so plan the merge with the content release. See [How Changes Go Live](overview.md#code-content-lifecycle).
 1. Upload only the signed-off content and images to the confirmed destination. Review the errors for each page and image.

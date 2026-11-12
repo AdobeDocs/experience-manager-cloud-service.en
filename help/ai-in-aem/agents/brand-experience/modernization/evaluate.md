@@ -29,7 +29,7 @@ role_v2:
 
 This page is for the person who approves the Experience Modernization Agent for a team that builds or migrates Adobe Experience Manager sites on Edge Delivery Services: an architect, technical lead, or platform owner who may never use the agent personally. It explains what changes for your team, the three ways to run a migration, how Adobe's team works with yours, which systems and data the agent touches, how changes are controlled and traced, and what remains project work.
 
-For what Edge Delivery Services is and how a project fits together, see [Understand Your Project](overview.md#project-foundations). A result on your own pages tells you more than any description, so ask a team member to [start with Auto mode](getting-started.md#brand-trial) or to [import a page step by step](getting-started.md#guided-import) while you read.
+For what Edge Delivery Services is and how a project fits together, see [How Your Site Is Built and Updated](overview.md#project-foundations). A result on your own pages tells you more than any description, so ask a team member to [start with Auto mode](getting-started.md#brand-trial) or to [import a page step by step](getting-started.md#guided-import) while you read.
 
 ## What Changes for Your Team {#team-impact}
 
@@ -55,7 +55,33 @@ Without the agent, a migration to Edge Delivery Services starts with weeks of de
 | Review and release | Prepares code changes as pull requests that list preview URLs. | Developers review and merge, and authors preview and publish. The project lead agrees the criteria for signing off the result before the migration starts, then signs it off and runs cutover. See [Check and Sign Off](production-migration.md#acceptance). |
 | After go-live | Restyles the site, adds and refactors blocks, debugs, and documents the project. | Owns the site, its code, its content, and its operations. |
 
-For who leads each phase of a migration, see [Phases and Roles](production-migration.md#phases). Several people can work on one project, each in their own console workspace; see [Work as a Team](production-migration.md#collaboration).
+For how the migration lead coordinates contributors, see [Lead the Migration](production-migration.md#phases). Several people can work on one project, each in their own console workspace; see [Work as a Team](production-migration.md#collaboration).
+
+## What Remains Project Work {#project-work}
+
+The agent is a development agent: what can be built on Edge Delivery Services can be built with it. A migration copies what the source pages show, though, not the systems behind them. The agent rebuilds the site: its pages, blocks, styles, and the code that calls your services. Approval and publishing workflows, the back-end systems behind integrations, and how your teams work on the new site remain your organization's work. These needs require a decision from your team before the agent can build them:
+
+| Need | What import gives you | What to decide, then build with the agent |
+|---|---|---|
+| Shared content, such as a banner or disclaimer on many pages | A copy on each page | Which content to keep once and include as a fragment, and the block that includes it. |
+| Several languages or markets | Pages at their source paths, with their locale folders | The URL structure, the language alternates in the sitemap, and how translation and inheritance between markets work for your authors. See [Translation and Localization](https://www.aem.live/docs/translation-and-localization). |
+| Personalization, search, and account features | Each page's output at the time of import | The service that provides the logic, and the blocks that call it. |
+| Forms | The form's fields, with the forms add-on for organizations that license Experience Manager Forms | The system that receives submissions, such as your marketing automation platform or customer relationship management (CRM) system, and the workflows that follow. See [Form Submissions](block-development.md#form-submissions). |
+| Commerce | Product detail and listing pages that load their product data from the catalog, with the commerce pages add-on for storefronts on Adobe Commerce | The storefront setup and its Adobe Commerce license, or, for another commerce platform, the blocks that call its API. See [Commerce Pages](block-development.md#commerce-pages). |
+| Analytics, tag management, and consent | With Auto mode's **Include integrations**, the supported settings, switched off until you turn them on | Which tags load, and when, so that the pages stay fast. |
+| Redirects, sitemaps, and canonical URLs | Page titles, descriptions, and social images | The URL policy and its configuration. See [URLs, Redirects, and Search Metadata](production-migration.md#urls-seo). |
+
+For source access, interactive content, and other boundaries of the import, see [Limitations](overview.md#limitations).
+
+## Figma and Design Systems {#figma}
+
+Figma can be the source of a new design. With the Figma import add-on, the agent reads the selected component or frame through Figma's API, using a Model Context Protocol (MCP) server, the way a developer reads a design handoff. It writes the design's variables and styles, such as colors, typography, and spacing, as CSS custom properties in the project's global styles. These properties are the site's design tokens. They live in the code, not in a separate token export, so designers and developers review them like any other change. For how designers work from Figma with the agent, see [Work from a Figma Design](visual-changes.md#figma).
+
+What to approve:
+
+* **Access:** Each person who uses Figma with the agent creates a Figma personal access token with read-only scopes and stores it in the console's [settings](console.md#settings-page). Figma issues and governs this access token, which has nothing to do with design tokens. There is no organization-wide Figma connection, and a personal access token can't be limited to specific files: it reads every file that its owner can open.
+* **Seats and rate limits:** Figma limits how often a token can read files, based on the token owner's seat and the plan that owns the file. With a View or Collab seat, a token can read files through Figma's API only a few times a month, so people who use Figma with the agent need a Dev or Full seat. See Figma's [rate limits](https://developers.figma.com/docs/rest-api/rate-limits/).
+* **Data:** For the selected frame or component, the agent sends its structure, a screenshot, its variables, and its text to the AI model. See [What the AI Model Processes](#security-model-data).
 
 ## Choose How the Migration Runs {#approaches}
 
@@ -183,35 +209,6 @@ A support request goes to the Adobe team that builds the agent. With the topic a
 
 These details let the team find the session's conversation and logs. Before the sender's console workspace is set up, a request shares only the name, email address, and organization. On the Auto mode pages, **Get help** shares only the sender's name and email address with their message. Ask users not to include passwords, tokens, or personal data in the description. See [Request Support](console.md#request-support).
 
-## Figma and Design Systems {#figma}
-
-Figma can be the source of a new design. With the Figma import add-on, the agent reads the selected component or frame through Figma's API, using a Model Context Protocol (MCP) server, the way a developer reads a design handoff. It writes the design's variables and styles, such as colors, typography, and spacing, as CSS custom properties in the project's global styles. These properties are the site's design tokens. They live in the code, not in a separate token export, so designers and developers review them like any other change. For how designers work from Figma with the agent, see [Work from a Figma Design](visual-changes.md#figma).
-
-What to approve:
-
-* **Access:** Each person who uses Figma with the agent creates a Figma personal access token with read-only scopes and stores it in the console's [settings](console.md#settings-page). Figma issues and governs this access token, which has nothing to do with design tokens. There is no organization-wide Figma connection, and a personal access token can't be limited to specific files: it reads every file that its owner can open.
-* **Seats and rate limits:** Figma limits how often a token can read files, based on the token owner's seat and the plan that owns the file. With a View or Collab seat, a token can read files through Figma's API only a few times a month, so people who use Figma with the agent need a Dev or Full seat. See Figma's [rate limits](https://developers.figma.com/docs/rest-api/rate-limits/).
-* **Data:** For the selected frame or component, the agent sends its structure, a screenshot, its variables, and its text to the AI model. See [What the AI Model Processes](#security-model-data).
-
-## What Remains Project Work {#project-work}
-
-The agent is a development agent: what can be built on Edge Delivery Services can be built with it. A migration copies what the source pages show, though, not the systems behind them. The agent rebuilds the site: its pages, blocks, styles, and the code that calls your services. Approval and publishing workflows, the back-end systems behind integrations, and how your teams work on the new site remain your organization's work. These needs require a decision from your team before the agent can build them:
-
-| Need | What import gives you | What to decide, then build with the agent |
-|---|---|---|
-| Shared content, such as a banner or disclaimer on many pages | A copy on each page | Which content to keep once and include as a fragment, and the block that includes it. |
-| Several languages or markets | Pages at their source paths, with their locale folders | The URL structure, the language alternates in the sitemap, and how translation and inheritance between markets work for your authors. See [Translation and Localization](https://www.aem.live/docs/translation-and-localization). |
-| Personalization, search, and account features | Each page's output at the time of import | The service that provides the logic, and the blocks that call it. |
-| Forms | The form's fields, with the forms add-on for organizations that license Experience Manager Forms | The system that receives submissions, such as your marketing automation platform or customer relationship management (CRM) system, and the workflows that follow. See [Form Submissions](block-development.md#form-submissions). |
-| Commerce | Product detail and listing pages that load their product data from the catalog, with the commerce pages add-on for storefronts on Adobe Commerce | The storefront setup and its Adobe Commerce license, or, for another commerce platform, the blocks that call its API. See [Commerce Pages](block-development.md#commerce-pages). |
-| Analytics, tag management, and consent | With Auto mode's **Include integrations**, the supported settings, switched off until you turn them on | Which tags load, and when, so that the pages stay fast. |
-| Redirects, sitemaps, and canonical URLs | Page titles, descriptions, and social images | The URL policy and its configuration. See [URLs, Redirects, and Search Metadata](production-migration.md#urls-seo). |
-
-For source access, interactive content, and other boundaries of the import, see [Limitations](overview.md#limitations).
-
 ## Next Steps {#next-steps}
 
-* See a result on your own content: [Start with Auto mode](getting-started.md#brand-trial).
-* Plan a migration: [Migrate a Production Site](production-migration.md).
-* Talk to the people who build the agent: see [The Team Behind the Agent](#adobe-team).
-* Read short answers to common questions: [Experience Modernization Agent FAQ](faq.md).
+Once your team has agreed the scope, approach, and controls, follow [Migrate a Production Site](production-migration.md). Use [Auto mode](getting-started.md#brand-trial) for a first check on your own pages before committing to that work.

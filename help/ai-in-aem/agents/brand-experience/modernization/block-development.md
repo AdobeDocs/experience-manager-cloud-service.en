@@ -127,6 +127,42 @@ The result is reusable code, a model where authors need one, and example content
 * **Sample content:** The agent generates sample content for blocks so that you can preview them with realistic content. In the [site catalog](site-catalog.md#blocks-table), use **View sample** to open a block's sample page.
 * **Block library:** The block library lets authors find your custom blocks and insert them into pages, with sample content that shows how each block is meant to be used. To set it up, ask the agent to generate a block library, including sample content and the library configuration, for Experience Workspace (which replaces Document Authoring) or Experience Manager authoring. Block library setup is an [optional capability](console.md#optional-capabilities) that it offers to turn on for your project. Check the result in the authoring experience. Set **Library URL** in [Settings](console.md#settings-page) to the library's `library.json` file, which lists the available blocks, their variations, and example content.
 
+## Update an Existing Block {#update}
+
+Provide the block name, current examples/variants, requested change, and compatibility requirements.
+
+1. Identify pages using the block, shared styles/utilities, and existing tests.
+1. State what must remain unchanged, including existing content structures and interactions.
+1. Make the change. A presentation change is CSS or JavaScript only, so it doesn't touch content models or require reimporting content.
+1. Test the changed behavior and the unaffected variants on representative content.
+1. If an incompatible model change is necessary, agree how existing content will be migrated and who accepts the authoring impact before applying it.
+
+For example:
+
+> Update `cards` so the approved secondary-link variant works on `/products` and `/blog`. Preserve existing default and image variants and their authored content. Check keyboard interaction and mobile wrapping. Do not rewrite other pages or upload content.
+
+Replace the example paths with your own.
+
+Hand over the changed behavior, affected variants, author instructions, and any required content changes.
+
+## Refactor Without Changing the Outcome {#refactor}
+
+Refactoring improves implementation while preserving agreed behavior. It is not the same as regrouping a catalog, redesigning a block, or migrating its content model.
+
+1. Name the code to improve and the reason, such as duplicated decoration logic.
+1. Record what must not change: content model, appearance, responsive behavior, accessibility, the selectors and APIs that other code relies on, and integrations.
+1. Establish baseline examples and existing tests. Check uses of shared code and styles before consolidating them.
+1. Ask for the smallest refactor that meets the goal. Keep any necessary behavior/model change explicit and separate.
+1. Compare before and after across affected pages and variants, run the project checks, and inspect the diff.
+
+For example:
+
+> Refactor duplicated card-decoration logic in `blocks/cards/cards.js` and `blocks/teaser/teaser.js`. Preserve authored models, output semantics, appearance, link behavior, keyboard access, and analytics hooks. Use `/products` and `/blog` as regression examples. Report compatibility risks and test results. Do not migrate content or push changes.
+
+Replace the example paths with your own.
+
+There is no separate refactoring command: you ask in chat, and the agent changes the code as a developer would, within the limits you set.
+
 ## Build a Dynamic Block {#dynamic-blocks}
 
 A dynamic block loads or computes its content in the browser, rather than showing only what authors write. Examples are a list of the latest articles, search results, or a filtered list. Ask the agent to create one after migration like any other block, or to change a migrated block to work this way. Describe:
@@ -169,7 +205,7 @@ If the project has no form block yet, the add-on adds the form block of Experien
 
 Without Experience Manager Forms, the add-on's field inventory is the part that still helps: it captures each form's fields, labels, types, options, and validation. The agent has no skills for other form platforms, so have it read your platform's documentation first, as described in [Work Beyond Edge Delivery Services](prompting-guide.md#beyond-eds). It can then build a form block that reads the same definitions and submits to your platform, or embed the form that your platform hosts.
 
-The add-on reads each form from the HTML that the source server sends. A form that a script adds in the browser, such as a form embedded from a marketing platform, isn't in that HTML, so the add-on doesn't import it. Ask the agent to rebuild that form, or to embed it again from your platform.
+The add-on reads each form from the HTML that the source server sends, including forms from third-party providers when their fields are present in that HTML. A form that a script adds in the browser, such as a form embedded from a marketing platform, isn't in that HTML, so the add-on doesn't import it. Ask the agent to rebuild that form, or to embed it again from your platform.
 
 #### Choose a Destination {#form-destination}
 
@@ -215,49 +251,13 @@ Submit a test entry from the preview site. Check that it arrived with every fiel
 
 ### Commerce Pages {#commerce-pages}
 
-The commerce pages add-on is built for storefronts that run on Adobe Commerce. It recognizes product detail pages and product listing pages on the source site, whichever platform runs it, from signals such as product structured data, URL patterns, and page elements like a quantity field, a product grid, or filters. It rebuilds each one as a page that holds only the product's SKU, or the category's path, in a commerce block, and the surrounding content, such as banners and promotions, in standard blocks. The product data isn't imported: the commerce block loads it from the catalog each time a visitor opens the page. The agent migrates other pages with the standard workflow.
+The commerce pages add-on extends the Experience Modernization Agent's page-import workflow for Adobe Commerce storefronts. It recognizes product detail pages and product listing pages on the source site, whichever platform runs it, from signals such as product structured data, URL patterns, and page elements like a quantity field, a product grid, or filters. It rebuilds each one as a page that holds only the product's SKU, or the category's path, in a commerce block, and the surrounding content, such as banners and promotions, in standard blocks. The product data isn't imported: the commerce block loads it from the catalog each time a visitor opens the page. The agent migrates other pages with the standard workflow.
 
 The add-on doesn't write the commerce blocks. It uses the product and listing blocks that the project already has, and otherwise expects the `product-details` and `product-list-page` blocks of the [commerce storefront boilerplate](https://experienceleague.adobe.com/en/tools/commerce-storefront/boilerplate/). Start the project from that boilerplate, and connect the storefront to your catalog, so that the imported pages show products when you check them. The add-on itself needs no license, but the storefront's drop-in components require an Adobe Commerce as a Cloud Service or Adobe Commerce Optimizer license. Adobe Commerce Optimizer can also supply the catalog when another commerce platform handles the cart, checkout, and orders. See [Backend options](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/backends/).
 
 For another commerce platform without Adobe Commerce Optimizer, the add-on doesn't apply. The agent builds product and listing blocks that load their data from the platform's API, working from the platform's documentation as described in [Work Beyond Edge Delivery Services](prompting-guide.md#beyond-eds).
 
 The add-on works with [document-based content](overview.md#document-based). For projects that use [Experience Manager authoring](overview.md#jcr-persistence), the agent uses the standard migration, which imports what each product page shows at that moment. Decide with your team how those pages connect to the catalog.
-
-## Update an Existing Block {#update}
-
-Provide the block name, current examples/variants, requested change, and compatibility requirements.
-
-1. Identify pages using the block, shared styles/utilities, and existing tests.
-1. State what must remain unchanged, including existing content structures and interactions.
-1. Make the change. A presentation change is CSS or JavaScript only, so it doesn't touch content models or require reimporting content.
-1. Test the changed behavior and the unaffected variants on representative content.
-1. If an incompatible model change is necessary, agree how existing content will be migrated and who accepts the authoring impact before applying it.
-
-For example:
-
-> Update `cards` so the approved secondary-link variant works on `/products` and `/blog`. Preserve existing default and image variants and their authored content. Check keyboard interaction and mobile wrapping. Do not rewrite other pages or upload content.
-
-Replace the example paths with your own.
-
-Hand over the changed behavior, affected variants, author instructions, and any required content changes.
-
-## Refactor Without Changing the Outcome {#refactor}
-
-Refactoring improves implementation while preserving agreed behavior. It is not the same as regrouping a catalog, redesigning a block, or migrating its content model.
-
-1. Name the code to improve and the reason, such as duplicated decoration logic.
-1. Record what must not change: content model, appearance, responsive behavior, accessibility, the selectors and APIs that other code relies on, and integrations.
-1. Establish baseline examples and existing tests. Check uses of shared code and styles before consolidating them.
-1. Ask for the smallest refactor that meets the goal. Keep any necessary behavior/model change explicit and separate.
-1. Compare before and after across affected pages and variants, run the project checks, and inspect the diff.
-
-For example:
-
-> Refactor duplicated card-decoration logic in `blocks/cards/cards.js` and `blocks/teaser/teaser.js`. Preserve authored models, output semantics, appearance, link behavior, keyboard access, and analytics hooks. Use `/products` and `/blog` as regression examples. Report compatibility risks and test results. Do not migrate content or push changes.
-
-Replace the example paths with your own.
-
-There is no separate refactoring command: you ask in chat, and the agent changes the code as a developer would, within the limits you set.
 
 ## Validate and Deliver {#validation}
 
