@@ -447,7 +447,7 @@ In **Content Reference** fields you can:
 
 To add references to AEM pages, Experience Fragments, or other such content types:
 
-1. Select **Add content path**.
+1. Select **Add entry**.
 
 1. Add the required path in the input field.
 
