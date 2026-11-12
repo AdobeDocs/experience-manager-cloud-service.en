@@ -434,8 +434,6 @@ For human translation workflows, completing a translation indicates to the vendo
 
 Archive a translation job after it is complete and you no longer need to see job status details.
 
-<!-- CQDOC-23361 review draft: Confirm repository retention and lack of restore with engineering; observations in the ticket were tested using the Microsoft Translation Connector. -->
-
 >[!NOTE]
 >
 >AEM as a Cloud Service does not provide a restore action for archived translation jobs.
