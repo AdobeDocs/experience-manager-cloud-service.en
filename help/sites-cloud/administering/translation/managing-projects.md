@@ -434,10 +434,16 @@ For human translation workflows, completing a translation indicates to the vendo
 
 Archive a translation job after it is complete and you no longer need to see job status details.
 
+<!-- CQDOC-23361 review draft: Confirm repository retention and lack of restore with engineering; observations in the ticket were tested using the Microsoft Translation Connector. -->
+
+>[!NOTE]
+>
+>AEM as a Cloud Service does not provide a restore action for archived translation jobs.
+
 1. In the projects console, open the translation project.
 1. On the translation job tile, select the commands menu, then select **Archive**.
 
-When you archive the job, the translation job tile is removed from the project.
+When you archive the job, the translation job tile is removed from the project, but the job and its items are not deleted from the repository. They remain stored in the repository with **Archived** status.
 
 ## Reviewing and Using Translated Content {#reviewing-and-promoting-updated-content}
 
