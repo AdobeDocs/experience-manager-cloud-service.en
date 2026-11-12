@@ -331,7 +331,12 @@ In **Content Reference** fields you can:
 
 * reference [AEM Pages and Experience Fragments](#reference-pages-and-experience-fragments)
 * reference either [local](#reference-local-assets) or [remote](#reference-remote-assets) repositories
-* Select **Browse content** to open the [Content Advisor](/help/assets/search-assets.md#asset-picker) to:
+* Use:
+
+  * **Select existing**, 
+  * or **Add entry** followed by **Browse content**, 
+  
+  to open the [Content Advisor](/help/assets/search-assets.md#asset-picker) to:
 
   * select the required content,
 
@@ -353,25 +358,24 @@ Depending on the field definition in the Content Fragment Model you can add a si
 
 ![Content Fragment Editor - Add asset options](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-content-references.png)
 
-* add an additional entry with the **Add asset or content path** action
+* add additional entries with both the **Add entry** and **Select existing** actions
 
-* once the maximum number of references for a field is reached, the option to **Add asset or content path** is disabled
+  * **Select existing** opens the Content Advisor directly
+  * **Add entry** allows you to directly enter a path to the content, or to open the Content Advisor via **Browse content**
 
-* if the number of items in the **multifield** is below the maximum allowed, the action menu **Add multiple references** button is enabled; otherwise it is disabled
+* once the maximum number of references for a field is reached, the options are disabled
 
 #### Reference Local Assets {#reference-local-assets}
 
 To reference a local asset, you can:
 
 * drag and drop the new asset file directly (for example, from your file system) into the **Content Reference** field
-* use the **Add asset or content path** action, from where you can:
-
-  * Enter a content path directly
-* Select **Browse content**:
+* use the **Add entry** to specify your content path directly
+* Open the Content Advisor from either **Select existing**, or **Add entry** followed by **Browse content**:
 
   ![Content Fragment Editor - browse](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-content-reference-browse.png)
 
-  To open the [Content Advisor](/help/assets/search-assets.md#asset-picker), from where you can:
+* From the [Content Advisor](/help/assets/search-assets.md#asset-picker), you can:
 
   * select the assets you need, 
   * **Search with keywords**, 
@@ -383,11 +387,11 @@ To reference a local asset, you can:
 
 To reference remote assets:
 
-1. Select the **Browse content** icon. 
+1. Open the Content Advisor from either **Select existing**, or **Add entry** followed by **Browse content**:
 
    ![Content Fragment Editor - browse](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-content-reference-browse.png)
 
-1. This will open the [Content Advisor](/help/assets/search-assets.md#asset-picker), from where you can specify the remote **Repository** when browsing for assets:
+1. From the [Content Advisor](/help/assets/search-assets.md#asset-picker) you can specify the remote **Repository** when browsing for assets:
 
    ![Content Fragment Editor - Select Asset from remote](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-content-reference-remote-select.png)
 
