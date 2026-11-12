@@ -423,11 +423,15 @@ It also offers an additional validation type.
 
 >[!TAB Screenshot (AEMaaCS)]
 
-![Screenshot of Content Fragment picker](assets/component-types/content_fragment.png)
+![Screenshot of Content Fragment picker](assets/component-types/cf_1.png)
+
+If `variationName` is set, you can choose a variation after selecting the Content Fragment.
+
+![Screenshot of Content Fragment picker](assets/component-types/cf_2.png)
 
 Mousing over a populated field reveals details.
 
-![Screenshot of Content Fragment picker](assets/component-types/content_fragment_detailed.png)
+![Screenshot of Content Fragment picker](assets/component-types/cf_3.png)
 
 >[!TAB Screenshot (AEM 6.5 and LTS)]
 
@@ -566,11 +570,15 @@ It also offers an additional validation type.
 
 >[!TAB Screenshot (AEMaaCS)]
 
-![Screenshot of Experience Fragment picker](assets/component-types/experience_fragment.png)
+![Screenshot of Experience Fragment picker](assets/component-types/xf_1.png)
+
+If `variationName` is set, you can choose a variation after selecting the Experience Fragment.
+
+![Screenshot of Experience Fragment picker](assets/component-types/xf_2.png)
 
 Mousing over a populated field reveals details.
 
-![Screenshot of Experience Fragment picker](assets/component-types/experience_fragment_detailed.png)
+![Screenshot of Experience Fragment picker](assets/component-types/xf_3.png)
 
 >[!TAB Screenshot (AEM 6.5 and LTS)]
 
