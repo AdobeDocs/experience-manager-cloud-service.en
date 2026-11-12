@@ -331,6 +331,21 @@ When a project is created using the references rail of a page, these properties 
 
 ![Translation project properties](../assets/translation-project-properties.png)
 
+Use **Repeat Translation** when the content in a translation project needs translation on a recurring schedule. For example, a team that regularly updates product information can use a recurring project instead of manually starting each translation cycle.
+
+Leave **Repeat Translation** set to **None** for a one-time translation or when your team must decide when to submit each update. If each submission requires a manual review of its content or scope, use the [manual workflow for starting translation jobs](#starting-translation-jobs) instead of automatic recurring execution.
+
+To configure recurring translation:
+
+1. In the projects console, open the translation project.
+1. Select the ellipsis at the bottom of the translation summary tile, and then select the **Advanced** tab.
+1. In **Repeat Translation**, select the frequency required by your workflow.
+1. Select **Save &amp; Close**.
+
+Repeat Translation controls recurring job creation and execution. It is different from [Update Translation Memory](#updating-translation-memory), which sends edits to translated text back to the translation provider without creating translation jobs. For the separate setting that controls update-only submissions, see **Disable Update-Only Translation** in [Sites Configuration Properties](integration-framework.md#sites-configuration-properties).
+
+<!-- CQDOC-23613 review draft: Engineering must confirm supported repeat frequencies, when the first and subsequent runs occur, which source content each run selects, handling of unchanged content and unfinished jobs, and the effect of changing the frequency to None on scheduled and active jobs. Confirm the interaction with Disable Update-Only Translation before documenting scheduled content-selection behavior. -->
+
 ### Monitoring the Status of a Translation Job {#monitoring-the-status-of-a-translation-job}
 
 The translation job tile of a translation project provides the status of a translation job, and the number of pages and assets in the job.
