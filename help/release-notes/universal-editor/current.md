@@ -31,10 +31,10 @@ These are the release notes for the 12 November 2026 release of the Universal Ed
 
 ## What's New {#what-is-new}
 
-* Rich Text Editor toolbar tooltips now display the keyboard shortcuts for their actions.
+* Rich text editor toolbar tooltips now display the [keyboard shortcuts](/help/implementing/universal-editor/configure-rte.md#keyboard-shortcuts) for their actions.
 
 ## Other Improvements {#other-improvements}
 
-* The properties rail now gives its renderers the selected field’s resource, so the asset picker can load Content Advisor data.
-* In the emulator, typing a custom width now applies the new value on commit instead of re-applying the previous width.
+* [The properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) now gives its renderers the selected field’s resource, so the asset picker can load Content Advisor data.
+* [When using responsive mode,](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator) typing a custom width now applies the new value on commit instead of re-applying the previous width.
   * Switching back to the desktop preset now clears the custom width, and the width field is read-only on desktop.
