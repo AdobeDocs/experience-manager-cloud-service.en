@@ -1108,6 +1108,8 @@ user-guide-title: AEM as a Cloud Service
      + [Create Interactive Communication](/help/forms/interactive-communication/create-interactive-communication.md)
      + [Create Interactive Communication Template](/help/forms/interactive-communication/create-interactive-communication-template.md)
      + [Create Interactive Communication Fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+     + [Create an XDP Template](/help/forms/interactive-communication/create-xdp-template.md)
+     + [Create an XDP Fragment](/help/forms/interactive-communication/create-xdp-fragment.md)
      + {hide-from-toc} [Introduction to Interactive Communication](/help/forms/introduction-to-interactive-communication.md)
      + {hide-from-toc} [Create your First Interactive Communication](/help/forms/create-your-first-communication.md)
    + Review and Collaborate {#review-collaborate}
