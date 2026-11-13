@@ -7,6 +7,16 @@ feature: Asset Management, Metadata
 role: User, Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Manage metadata of your digital assets {#managing-metadata-for-digital-assets}
 
@@ -143,20 +153,6 @@ Descriptive metadata is metadata concerned with the application domain, for exam
 
 The cost of manually creating descriptive metadata information is high. So, standards are established to ease the exchange of metadata across software systems and organizations. [!DNL Experience Manager Assets] supports all relevant standards for metadata management.
 -->
-
-### [!DNL Assets] View versus Sites or Admin View metadata differences {#metadata-differences}
-
-**Adobe [!DNL Experience Manager] (AEM) [!DNL Assets] view and the classic Sites or Admin view maintain separate metadata form definitions and do not share client-library-based UI customizations.** This separation is the core distinction to understand: the two experiences are governed by independent configurations, so a customization created in one view does not carry over to the other by default.
-
-The [!DNL Assets] view refers to the Experience Cloud or React-based user interface, while the Admin view refers to the classic Sites or Admin experience. Because each view stores and renders its own metadata form definitions, changes made in one context do not propagate automatically to the other.
-
-**Key behaviors to expect:**
-
-- A **custom metadata schema extension** or `clientlib` built for the Admin view does **not** automatically appear or function in the [!DNL Assets] view. This is a direct consequence of the two views maintaining separate form definitions rather than a shared configuration.
-- UI customizations based on client libraries remain scoped to the view in which they were created and are not synchronized across views.
-- To bring an Admin-view-defined schema into the [!DNL Assets] view, use the **`Import`** capability for metadata forms rather than expecting automatic synchronization.
-
-Because there is no automatic synchronization between the two views, the `Import` capability is the supported mechanism for reusing an Admin-view schema in the [!DNL Assets] view. For details about the `Import` capability, see [Import metadata forms](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/import-metadata-form-from-admin-view-to-assets-view).
 
 ## Metadata and Last Modification {#last-modification}
 

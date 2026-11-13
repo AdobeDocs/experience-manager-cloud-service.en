@@ -36,6 +36,10 @@ To use Content Fragment Models you:
 >
 >* "This model has a custom UI Schema configured. The order of fields displayed in this UI may not match the UI Schema. To view the fields aligned with the UI Schema, you need to switch to the new Content Fragment Editor."
 
+>[!CAUTION]
+>
+>Take care with your filter settings when [deploying your Content Fragment Models and Persisted Queries in Content Packages](/help/headless/deployment/content-packages.md).
+
 ## Creating a Content Fragment Model {#creating-a-content-fragment-model}
 
 1. Navigate to **Tools**, **General**, then open **Content Fragment Models**.
@@ -151,7 +155,7 @@ A selection of data types is available for defining your model:
   * Allows fragment authors to access and select areas of tags
 
 * **Fragment Reference**
-  * References other Content Fragments; can be used to [create nested content](#using-references-to-form-nested-content)
+  * References other Content Fragments; can be used to [create nested content](#nested-content)
   * The data type can be configured to allow fragment authors to:
     * Edit the referenced fragment directly.
     * Create a new Content Fragment, based on the appropriate model
@@ -159,7 +163,7 @@ A selection of data types is available for defining your model:
   * The reference specifies the path to the referenced resource; for example `/content/dam/path/to/resource`
 
 * **Fragment Reference (UUID)**
-  * References other Content Fragments; can be used to [create nested content](#using-references-to-form-nested-content)
+  * References other Content Fragments; can be used to [create nested content](#nested-content)
   * The data type can be configured to allow fragment authors to:
     * Edit the referenced fragment directly.
     * Create a new Content Fragment, based on the appropriate model
@@ -172,13 +176,13 @@ A selection of data types is available for defining your model:
   >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
 
 * **Content Reference**
-  * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
+  * References other content, of any type; can be used to [create nested content](#nested-content)
   * If an image is referenced, you can opt to show a thumbnail
   * The field can be configured to allow fragment authors to create new instances of the field 
   * The reference specifies the path to the referenced resource; for example `/content/dam/path/to/resource`  
 
 * **Content Reference (UUID)**
-  * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
+  * References other content, of any type; can be used to [create nested content](#nested-content)
   * If an image is referenced, you can opt to show a thumbnail
   * The field can be configured to allow fragment authors to create new instances of the field 
   * In the editor, the reference specifies the path to the referenced resource; internally the reference is held as a universally unique ID (UUID) that references the resource
@@ -187,6 +191,30 @@ A selection of data types is available for defining your model:
   >[!NOTE]
   >
   >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
+
+* **Composite**
+
+  * The **Composite** data type can be used to create nested content.
+  
+    >[!NOTE]
+    >
+    >For further information see [create nested content](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#nested-content).
+
+  * The **Composite** data type enables Content Fragments to store hierarchical, structured data
+    * This is achieved by allowing fields to contain nested sub-fields
+    * The sub-fields are structured
+    * The sub-fields are structured according to Content Fragment Models
+    * The sub-field are restricted to the Content Fragment Models that you specify when defining the sub-field
+  * This feature provides a way to model complex data structures within a single fragment, similar to nested objects in JSON or embedded documents in NoSQL databases 
+
+  >[!WARNING]
+  >
+  >The Composite data type can be used: 
+  >
+  >* in the Touch UI (original) Content Fragment Model Editor
+  >* in the new Content Fragment Editor
+  >
+  >The new Content Fragment Model Editor and the Touch UI (original) Content Fragment Editor will block access to the Composite Data Type and any dependent fields.
 
 * **JSON Object**
   * Allows the Content Fragment author to enter JSON syntax into the corresponding elements of a fragment. 
@@ -255,7 +283,7 @@ Many properties are self-explanatory, for certain properties additional details 
 
 * See **[Content Reference](#content-reference)** for more details about that specific data type and its properties.
 
-* See **[Fragment Reference (Nested Fragments)](#fragment-reference-nested-fragments)** for more details about that specific data type and its properties.
+* See **[Fragment Reference](#fragment-reference)** for more details about that specific data type and its properties.
 
 * **Translatable**
   
@@ -290,7 +318,7 @@ Various data types now include the possibility to define validation requirements
   * The max value is validated in the [original Content Fragment Editor](/help/assets/content-fragments/content-fragments-variations.md).
   * Both are validated in the [Content Fragment Editor](/help/sites-cloud/administering/content-fragments/authoring.md).
 
-## Using References to form Nested Content {#using-references-to-form-nested-content}
+## Nested Content {#nested-content}
 
 Content Fragments can form nested content, using either of the following data types:
 
@@ -301,7 +329,7 @@ Content Fragments can form nested content, using either of the following data ty
     * **Content Reference (UUID)** - UUID based
   * Can be configured for one or multiple references (in the resulting fragment).
 
-* [Fragment Reference](#fragment-reference-nested-fragments) (Nested Fragments)
+* [Fragment Reference](#fragment-reference)
   * References other fragments, dependent on the specific models specified.
   * Provided by the data types:
     * **Fragment Reference** - path based
@@ -343,7 +371,7 @@ In addition to standard properties you can specify:
 
 ![Content Reference](assets/cfm-content-reference.png)
 
-### Fragment Reference (Nested Fragments) {#fragment-reference-nested-fragments}
+### Fragment Reference {#fragment-reference}
 
 The **Fragment Reference** and **Fragment Reference (UUID)** data types can reference one, or more, Content Fragments. This feature is of particular interest when retrieving content for use in your app, as it allows you to retrieve structured data with multiple layers.
 
@@ -374,9 +402,9 @@ In addition to standard properties you can define:
 
 * **Render As**:
 
-  * **multifield** - the fragment author can create multiple, individual, references
+  * **Multiple Field** - the fragment author can create multiple, individual, references
 
-  * **fragmentreference** - allows the fragment author to select a single reference to a fragment
+  * **Fragment Reference** - allows the fragment author to select a single reference to a fragment
 
 * **Model Type**
   Multiple models can be selected. When authoring the Content Fragment any referenced fragments must have been created using these models.
@@ -388,8 +416,6 @@ In addition to standard properties you can define:
 
   This allows the fragment author to create a fragment based on the appropriate model.
 
-  * **fragmentreferencecomposite** - allows the fragment author to build a composite, by selecting multiple fragments
-
   ![Fragment Reference](assets/cfm-fragment-reference.png)
 
 >[!NOTE]
@@ -397,6 +423,35 @@ In addition to standard properties you can define:
 >A recurrence protection mechanism is in place. It prohibits the user from selecting the current Content Fragment in the Fragment Reference. This may lead to an empty Fragment Reference picker dialog.
 >
 >There is also a recurrence protection for Fragment References in GraphQL. If you create a deep query across two Content Fragments that reference each other, it will return null.
+
+### Composite data {#composite-data}
+
+>[!NOTE]
+>For further information see:
+>
+>* [Data Types](#data-types) - Composite
+>* Nested Content - [Composite Data](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#composite-data)
+
+In addition to standard properties you can define:
+
+* **Render As**
+
+  Specify either:
+
+  * **Multiple Field** supports add/remove/reorder with min/max constraints
+  * **Composite Field** holds at most one item
+
+* **Min/Max Number of items**
+
+  For multi-value composites, set min and max bounds for the number of items
+
+* **Type** 
+
+  Specify one or more Content Fragment Models. Fields from these models will appear as composite items. Multiple models can be selected, the author then chooses which model when adding an item.
+
+>[!NOTE]
+>
+>Although the contents of a Composite field are structured according to a Content Fragment Model they do not form a Content Fragment in the true sense due to the absence of certain metadata.
 
 ## Content Fragment Model - Properties {#content-fragment-model-properties}
 
@@ -408,11 +463,10 @@ You can edit the **Properties** of a Content Fragment Model:
   * **Description**
   * **Upload Image**
   * **Default Preview URL Pattern**
-    
+
     >[!NOTE]
     >
     >This is only used by the *new* Content Fragment Editor. See [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) for further information.
-
 
 ## Enabling or Disabling a Content Fragment Model {#enabling-disabling-a-content-fragment-model}
 

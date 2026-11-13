@@ -3,6 +3,9 @@ title: Enhance content discovery with AI-generated metadata
 description: Learn how to enhance content discovery with AI-generated metadata
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 51d8500e-8a19-40b3-a222-4c7e27eeb667
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 ---
 # Enhance content discovery with AI-generated metadata {#ai-smart-tags}
 

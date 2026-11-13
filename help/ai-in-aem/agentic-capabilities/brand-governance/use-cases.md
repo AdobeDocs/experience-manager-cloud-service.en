@@ -3,6 +3,26 @@ title: Brand Governance Agentic Capabilities Overview
 description: Learn how the Brand Governance Agentic Capabilities in AEM help you safeguard brand integrity and compliance.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+  - id: f1710108-e0d1-47e5-9952-1888729a03da
+    internal-label: Agentic AI
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Brand Governance Agentic Capabilities {#brand-governance-agentic-capabilites}
@@ -23,6 +43,3 @@ A range of use-cases are covered.
 | Brand inventory discovery | List and identify all configured brands for the organization | aem-governance | Adobe Experience Manager (AEM) | "List all brands configured"<br>"What guidelines apply to this URL `http://frescopa-coffee`" |
 | Audit AEM permissions | Explore configured permission policies, ACLs, and inheritance rules for group, or service account at a given path | aem-governance | Adobe Experience Manager (AEM) | "Audit Amit's access under `/content/folder`"<br>"What can this service account do at this path?"<br>"Show the access policies applied to this content path `/content/`" |
 | Debug AEM permissions | Debug / understand permission policies, ACLs, and inheritance rules. | aem-governance | Adobe Experience Manager (AEM) | "Why can principal admin write `/content/folder/us` on `https://author/` ?"<br>"Why can't sample-author write in `/content/dam` on `https://author`" |
-| View ABAC rules | Retrieve and review existing Attribute-based Access Control (ABAC) rules configured for Content Hub. | aem-governance | Adobe Experience Manager (AEM) | "Show all existing Content Hub ABAC rules." |
-| Create or update ABAC rules | Create new ABAC rules or modify existing rules to control asset access based on user groups and asset metadata. | aem-governance | Adobe Experience Manager (AEM) | "Create a rule that gives the 'Marketing' group access to all assets."<br><br>"Update the rule to give the 'Marketing' group access to all images only." |
-| Delete ABAC rules | Delete existing ABAC rules that are no longer required. | aem-governance | Adobe Experience Manager (AEM) | "Delete all the rules which gives access to external-agency." |

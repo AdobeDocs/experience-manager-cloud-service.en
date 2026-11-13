@@ -5,6 +5,14 @@ feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Add digital assets to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
 
@@ -449,133 +457,6 @@ For folders that have a processing profile assigned, the profile name appears on
 ## Upload or ingest assets using APIs {#upload-using-apis}
 
 The [asset upload](developer-reference-material-apis.md#asset-upload) section of the developer reference provides the complete technical details of the upload APIs and protocol, along with links to an open-source Software Development Kit (SDK) and sample clients. These Application Programming Interfaces (APIs) let developers programmatically upload or ingest assets, enabling automated and repeatable workflows rather than manual uploads. The open-source SDK and sample clients accelerate integration by providing ready-to-use reference implementations that demonstrate how the upload protocol works in practice.
-
-## Asset upload security and best practices {#asset-upload-security-and-best-practices}
-
-Asset upload security governs how files submitted by users or systems are validated, scanned, stored, and served, protecting an application from malicious content, data corruption, and abuse of storage or bandwidth. Securing the upload pipeline is widely regarded as essential, because unrestricted or poorly validated uploads are among the most common vectors for injecting malware, executing unauthorized code, and exhausting server resources.
-
-### Core Upload Security Controls {#core-upload-security-controls}
-
-Effective asset upload security relies on layered controls applied at every stage of the upload lifecycle. Key controls include:
-
-- **File type validation** — Verify each upload against an explicit allowlist of permitted formats rather than a blocklist, because allowlists are far harder to bypass and prevent disguised executable content from slipping through.
-- **File size limits** — Enforce maximum size thresholds to prevent denial-of-service conditions caused by oversized uploads that could exhaust disk space or memory.
-- **Content inspection** — Inspect the actual file signature (magic bytes) instead of trusting the file extension or client-supplied MIME (Multipurpose Internet Mail Extensions) type, since attackers routinely spoof extensions to disguise harmful files.
-- **Malware scanning** — Run uploaded assets through antivirus or malware scanning before making them available, ensuring infected files are quarantined rather than distributed to other users.
-- **Filename sanitization** — Strip or normalize special characters, path separators, and control sequences from filenames to prevent path traversal and directory-escape attacks.
-
-### Recommended Best Practices {#recommended-best-practices}
-
-Apply these best practices in sequence to harden the upload workflow:
-
-1. **Validate on the server** — Treat all client-side validation as advisory only, and enforce every check server-side, because client-side controls can be bypassed by a malicious actor.
-2. **Store assets outside the web root** — Keep uploaded files in a location that cannot be directly executed by the web server, which prevents an attacker from running an uploaded script as code.
-3. **Rename uploaded files** — Assign server-generated, non-predictable identifiers to stored files to avoid overwriting existing assets and to prevent enumeration of stored content.
-4. **Restrict permissions** — Grant uploaded files the minimum required read and write permissions, and never mark them as executable, ensuring a compromised file cannot be run.
-5. **Authenticate and authorize uploads** — Confirm that the requesting user has permission to upload, which limits exposure to anonymous abuse and unauthorized submissions.
-6. **Rate-limit and throttle** — Apply upload rate limits per user or per session to reduce the risk of automated abuse and resource exhaustion.
-
-### Handling and Storage After Upload {#handling-and-storage-after-upload}
-
-Security responsibilities continue after a file is accepted. To protect assets during storage and delivery:
-
-- **Serve assets over encrypted connections** — Deliver uploaded content over HTTPS (Hypertext Transfer Protocol Secure) so files cannot be intercepted or tampered with in transit.
-- **Isolate user-generated content** — Serve untrusted uploads from a separate domain or a dedicated **Content Delivery Network (CDN)**, because isolating this content limits the impact of cross-site scripting and cookie-theft attacks.
-- **Set correct response headers** — Return accurate `Content-Type` headers and force downloads where appropriate, so browsers do not misinterpret and execute a stored file.
-- **Log and audit uploads** — Record upload metadata and access events, which supports incident investigation and helps detect abuse patterns early.
-
-Following these controls and best practices establishes a defense-in-depth approach to asset uploads, reducing the risk that a single missed check leads to a full compromise.
-
-### Direct Binary Upload with presigned URLs {#direct-binary-upload}
-
-[!DNL Adobe Experience Manager] (AEM) as a [!DNL Cloud Service] uploads assets through a **Direct Binary Upload** flow, a three-step sequence: (1) a client requests a **presigned URL**, (2) the binary is uploaded directly to storage using that URL, and (3) the asset is finalized with an authenticated API call. This design offloads the large binary transfer directly to storage while keeping asset registration under authenticated control.
-
-#### URL lifetime and reuse {#url-lifetime-and-reuse}
-
-* Presigned URLs are short-lived, remaining valid for approximately one hour. However, the exact **Time to Live (TTL)** is not a published or guaranteed Service Level Agreement (SLA). Treat the duration as an implementation detail that can change, and do not hard-code the value into integrations.
-* A presigned URL must be used immediately as part of a single upload session. It is not designed to be stored and reused later, and it is not intended to be reusable across multiple uploads. Each upload session obtains its own URL.
-
-#### Security of presigned URLs {#security-of-presigned-urls}
-
-* Leaking a presigned URL alone is not sufficient to create an asset, because asset creation and finalization depend on a separate authenticated API call that uses valid credentials and an **`uploadToken`**. If an actor obtains only the presigned URL, that actor cannot complete asset registration without valid authentication and the associated upload token.
-* This authentication requirement limits the practical impact of a leaked URL: the required credentials and **`uploadToken`** act as a second control, so exposure of the URL by itself does not permit an unauthorized asset to be registered.
-* Treat presigned URLs as sensitive values in your own integrations. Avoid logging them, always use **HTTPS**, and do not persist them beyond the upload session.
-
-### Authentication for programmatic uploads {#authentication-for-programmatic-uploads}
-
-Only **Service credentials (JWT)** support programmatic asset uploads to [!DNL Adobe Experience Manager] (AEM). Two authentication mechanisms exist for AEM API access, and they are **not interchangeable** for asset upload operations. Choosing the wrong credential type is the most common cause of failed upload integrations.
-
-| Credential type | Where it is generated | Whether it is supported for Asset Upload API |
-|---|---|---|
-|OAuth Server-to-Server (S2S) credentials|Adobe Developer Console| This is **not supported** for asset upload API calls. Because the Asset Upload API rejects this credential type outright, using them results in persistent **403 Forbidden** errors even with a correctly assigned product profile (for example, [!DNL Assets] Collaborator Users). |
-|Service credentials (JWT) | AEM Developer Console | This **is supported** for server-to-server asset upload API calls. |
-
->[!NOTE]
->
->The older asset HTTP API for directly updating an asset's binary is deprecated. New integrations use the **Direct Binary Upload** flow instead, which is the current, supported method for programmatically transferring asset binaries into AEM.
-
-The technical account used for API uploads must have explicit repository-level **Access Control Lists (ACLs)** granted at the path level. Two ACL permissions are required:
-
-- **`jcr:read`** on **`/content/dam`** — grants read access to the digital asset management (DAM) content root.
-- **`rep:write`** (or **`jcr:all`**) on the specific target subfolder — grants write access to the destination path where assets are uploaded.
-
-These path-level ACLs are required **in addition to** the correct credential type and the correct administrator console product profile or group membership.
-
-A technical account can be correctly licensed and grouped and still receive **403 Forbidden** errors. This occurs because product-profile or group assignment and repository ACLs are independent controls, and **both are mandatory**. As a result, if the path-level ACLs have not been granted, the account will be denied access even when its credential type and product profile are configured correctly.
-
-### Malware detection and quarantine {#malware-detection-and-quarantine}
-
-**Malware detection** in **[!DNL Adobe Experience Manager] (AEM)** scans every uploaded file and moves any infected file into a dedicated **Quarantine** area, isolating suspect assets from the rest of the repository. When **malware detection** is enabled, the system scans each upload as it arrives and, upon detecting an infection, quarantines the file automatically. This isolates the threat from active workflows and prevents infected assets from being published, downloaded, or distributed to other users.
-
-Access to quarantined assets is governed by **standard [!DNL Adobe Experience Manager] (AEM) permissions**, applied through a dedicated **Quarantine Administrators** group. Because quarantine visibility is not tied to a single fixed role, access can be extended flexibly:
-
-- **Quarantine Administrators** group members hold access to quarantined assets by default.
-- **Additional custom groups** can be granted access to the quarantine area when operational or security requirements call for broader oversight.
-- **Multiple groups** may therefore hold quarantine visibility simultaneously, rather than the capability being restricted to one role.
-
-This permission model ensures that only authorized users can inspect, release, or remove quarantined content, maintaining a controlled review process for potentially harmful files.
-
-For more information on malware detection and quarantine, see [Malware Detection](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/malware-detection).
-
-### File type handling and upload restrictions {#file-type-handling-and-upload-restrictions}
-
-* [!DNL Adobe Experience Manager] (AEM) does not impose default file-type restrictions on uploads. It is possible to upload files with **executable extensions** (for example, *.exe* or *.exe.pdf*) as asset renditions.
-* This is expected behavior, not a vulnerability. AEM does not render or execute uploaded **active content or scripts**, either in the browser or on the server. Because uploaded files are stored and served only as inert asset renditions rather than executed as code, uploading an executable file does not by itself create a **remote-code-execution (RCE)** risk under AEM's default security model. Organizations with stricter compliance requirements should apply their own upload validation or **allow-listing** if needed, since AEM does not enforce this natively and leaves such controls to the deploying organization.
-* Supported file formats and MIME (Multipurpose Internet Mail Extensions) types for asset processing are documented separately. Unsupported types are not fully processed, meaning such unsupported files may not generate the expected renditions.
-
-### Upload reliability best practices {#upload-reliability-best-practices}
-
-#### Optimize assets before upload {#optimize-assets-before-upload}
-
-* For large or specialized asset types such as **video**, **PDF**, and **GIF**, follow the recommended file size limits, encoding settings, and preferred formats. Adhering to these specifications prevents platform performance impact during upload, processing, and preview generation, because oversized or non-standard files place the heaviest load on transcoding and thumbnail-generation steps.
-
-#### Use supported upload paths for business-critical files {#use-supported-upload-paths}
-
-* **Use the supported upload APIs or UI flows** for business-critical files rather than ad hoc folder-level bulk uploads. Supported paths apply consistent validation, encoding, and error handling, which makes them the more reliable choice for files that cannot tolerate corruption or loss.
-* Folder-level drag-and-drop uploads occasionally cause **file corruption**, per reported cases. As a result, they are not recommended for critical assets.
-
-#### If a folder-level upload fails or corrupts a file {#folder-level-upload-fails}
-
-Capture evidence immediately, because the underlying cause is frequently environment-specific or file-specific and becomes difficult to diagnose after the fact once that evidence is lost.
-
-1. **Record the exact error message or observed behavior** as soon as it occurs.
-2. **Take screenshots** of the failure state and any error dialogs.
-3. **Save an HTTP Archive (HAR) file** or **network logs** from the browser session, since these capture the request/response details needed to trace the fault.
-4. **Preserve the affected file** so it can be re-tested against the supported upload path.
-
-Capturing this evidence immediately gives support and engineering teams the environment- and file-specific detail required to reproduce and resolve the issue, whereas attempting to diagnose corruption after the fact—without logs or the original error—is often impractical.
-
-## Troubleshooting checklist for upload failures {#troubleshooting-checklist-for-upload-failures}
-
-1. **403 Forbidden on API (Application Programming Interface) upload**: Confirm the credential type first. OAuth S2S (Server-to-Server) credentials from the Adobe Developer Console are **not supported** for the asset upload API. Use the **Service Credentials (JSON Web Token, or JWT)** issued from the [!DNL Adobe Experience Manager] (AEM) Developer console instead. The two credential types are provisioned through different consoles and grant different scopes, which is why substituting one for the other produces a **403 Forbidden** even when the account otherwise appears valid.
-
-2. **403 Forbidden despite correct credentials and group membership**: Confirm the technical account holds explicit **`jcr:read`** on `/content/dam` and **`rep:write/jcr:all`** on the specific target folder. Group or profile membership does not substitute for folder-level Access Control Lists (ACLs), because AEM authorizes asset writes at the repository node level rather than by role alone. As a result, an account can belong to the correct group yet still be denied until the node-level ACLs are set on the exact destination folder.
-
-3. **Upload succeeds but asset fails to appear or binary looks corrupted**: Rule out folder-level bulk upload as the ingestion method. Retry through the standard upload API or the user interface (UI), and capture logs if the issue recurs. Bulk ingestion paths handle binaries differently from the standard API, so isolating the ingestion method is the fastest way to determine whether the corruption originates from the upload path itself.
-
-4. **Security review flags unrestricted file upload**: Clarify that AEM does not execute uploaded active content server-side or in-browser by default. Because that content is never executed, unrestricted file upload is expected platform behavior rather than a defect — the primary risk of stored active content is neutralized when the content cannot run. This holds unless your organization requires additional upload-time validation, in which case that validation should be added as a policy control on top of the default behavior.
-
-5. **Concerned about presigned URL exposure**: A presigned URL is a time-limited, pre-authorized link used to transfer the binary directly to storage. Confirm that the URL was used within its short validity window and that asset finalization still required a separate authenticated call carrying a valid **`uploadToken`**. This two-step design limits the exposure scope of a leaked presigned URL (Uniform Resource Locator), because possession of the URL alone cannot finalize an asset without a valid, separately authenticated `uploadToken`. Consequently, a URL that leaks after its validity window has closed carries no practical write capability.
 
 ## Tips, best practices, and limitations {#tips-limitations}
 

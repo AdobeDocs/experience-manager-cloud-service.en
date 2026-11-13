@@ -25,6 +25,10 @@ role_v2:
 
 Learn about the New Relic One application performance monitoring (APM) service for AEM as a Cloud Service and how you can access it.
 
+>[!IMPORTANT]
+>
+>Adobe is replacing this integration with [OpenTelemetry (Limited Availability)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/opentelemetry-apm-integration.html). If you are a New Relic One customer, plan your transition — see that page for details, including how to bring your own APM endpoint.
+
 ## About New Relic One {#introduction}
 
 Adobe places emphasis on the monitoring, availability, and performance of your application. AEM as a Cloud Service includes access to New Relic One monitoring, giving teams comprehensive visibility into system and environment performance metrics as part of the standard product offering.

@@ -4,6 +4,14 @@ description: Understand how you can configure the rich text editor (RTE) in the 
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Configuring the RTE for the Universal Editor {#configure-rte}
@@ -92,7 +100,7 @@ The actions configuration allows you to customize the behavior and appearance of
 
 Most actions support the following common options:
 
-* `shortcut?`: string - Overrides the default keyboard shortcut for the action (if any)
+* `shortcut?`: string - Overrides the default keyboard shortcut or defines the [keyboard shortcut](#keyboard-shortcuts) for the action
 * `label?`: string - Overrides the label used for the action in UI
 * `hideInline?`: boolean - When `true`, hides this action from the in-context (inline) RTE editor toolbar
 
@@ -440,7 +448,7 @@ The dropdown only appears when at least one option is configured. The plugin shi
 }
 ```
 
-Each entry has value (the CSS class name written to the HTML) and label (the human-readable text shown in the dropdown).
+Each entry has value (the CSS class name written to the HTML) and label (the human-readable text shown in the dropdown). Only one class is allowed to be defined as the `value` per object in the `options` array.
 
 The target follows the closest-to-caret-wins rule:
 
@@ -784,7 +792,7 @@ Choose semantic tags (`<strong>`, `<em>`, `<del>`) for better accessibility and 
 
 ### Inline Code {#inline-code}
 
-The `code_inline` format option marks a span of text as inline code, rendering `<code>` (for example, referencing a `foo()` call inside a sentence). Unlike `bold`/`italic`/`strike` it has no tag-switching option, and it excludes all other marks. Inline code is rendered verbatim, so `bold`/`italic`/`link` can not be applied on top of it. The default keyboard shortcut is `Mod-e`.
+The `code_inline` format option marks a span of text as inline code, rendering `<code>` (for example, referencing a `foo()` call inside a sentence). Unlike `bold`/`italic`/`strike` it has no tag-switching option, and it excludes all other marks. Inline code is rendered verbatim, so `bold`/`italic`/`link` can not be applied on top of it. The default keyboard shortcut is `Mod-E`.
 
 This is distinct from the `code_block` block (`<pre><code>`) available in the `blocks` dropdown. `code_inline` is an inline mark within a line, while `code_block` is a standalone, multi-line block. Code blocks hold plain text only (no marks), so an inline `<code>` is never nested inside a `<pre>`.
 
@@ -808,10 +816,65 @@ The plugin also parses legacy `<font color="...">` elements for backward compati
 
 ### Keyboard Shortcuts {#keyboard-shortcuts}
 
+There are three types of keyboard shortcuts:
+
+* Default shortcuts for actions which can be overridden
+* Default shortcuts for actions which can not be overridden
+* Actions with no default shortcut but can be configured
+
 Shortcuts use the format `Mod-Key`(s) where:
 
-* `Mod` = `Cmd` on Mac, `Ctrl` on Windows/Linux
-* Examples: `Mod-B`, `Mod-Shift-8`, `Mod-Alt-1`
+* `Mod` = `Cmd` on Mac, `Ctrl` on Windows/Linux.
+  * Examples: `Mod-B`, `Mod-Shift-8`, `Mod-Alt-1`
+* Empty strings can clear a default shortcut: `"shortcut": ""`.
+* If more than one action claims the same shortcut, the first wins and the subsequent are ignored with a console warning.
+* `removeformat`, `clean_unsupported_tags`, and `fullscreen` are not in the `actions` schema and are not configurable.
+* `Mod+Enter` can not be rebound.
+* Dialog-opening actions (`link`, `image`, `table`, `special_characters`, `find_and_replace`) only respond when their overlays can open.
+
+#### Defaults which can be overridden {#defaults-overridden}
+
+|Option Key|Default|
+|---|---|
+|`bold`|`Mod+B`|
+|`italic`|`Mod+I`|
+|`underline`|`Mod+U`|
+|`strike`|`Mod+Shift+X`|
+|`code_inline`|`Mod+E`|
+|`bullet_list`|`Mod+Shift+7`|
+|`ordered_list`|`Mod+Shift+8`|
+|`paste_text`|`Mod+Shift+V`|
+|`Enter`|`Mod+Enter`|
+
+#### Defaults which can not be overridden {#defaults-not-overwritten}
+
+|Option Key|Default|Context|
+|---|---|---|
+|Undo|`Mod+Z`|History|
+|Redo|`Mod+Shift+Z` or `Mod+Y`|History|
+|Hard line break (`<br>`)|`Shift+Enter`|Plugin|
+|New/split list item|`Enter`|Inside a list|
+|Nest list item|`Tab`|Inside a list|
+|Unnest list item|`Shift+Tab`|Inside a list|
+|Next table cell (and add row from last cell)|`Tab`|Inside a table|
+|Previous table cell|`Shift+Tab`|Inside a table|
+|Move between toolbar items|Arrow keys|Focus on toolbar|
+|Return focus to editor|`Tab`|Focus on toolbar|
+|Close fullscreen modal|`Esc`|In a modal (unless a dialog is open)|
+
+#### No default but can be configured {#no-default}
+
+|Group|Options|
+|---|---|
+|Format|`text_color`|
+|Blocks|`paragraph`, `h1`, `h2`, `h3`, `h4`, `h5`, `h6`, `code_block`, `blockquote`|
+|Alignment|`left`, `center`, `right`, `justify`|
+|Indentation|`indent`, `outdent`|
+|Direction|`rtl`, `ltr`|
+|Script|`superscript`, `subscript`|
+|Insert|`link`, `unlink`, `image`, `table`, `special_characters`|
+|Advanced|`classes`|
+|Editor|`find_and_replace`|
 
 ## Unsupported HTML {#unsupported-html}
 

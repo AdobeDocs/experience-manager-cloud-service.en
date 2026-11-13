@@ -3,6 +3,12 @@ title: Multi Audio and Multi Captions in Dynamic Media with OpenAPI capabilities
 description: Learn how to add and manage multiple audio tracks and captions for video assets in Dynamic Media with OpenAPI capabilities within Adobe Experience Manager Assets.
 role: User
 badgeSaas: label="AEM Assets" type="Positive"
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 
 # Multi Audio and Multi Captions in Dynamic Media with OpenAPI capabilities Videos {#multi-audio-captions-dynamic-media-with-openapi-capabilities}
@@ -10,10 +16,6 @@ badgeSaas: label="AEM Assets" type="Positive"
 [!DNL Adobe Experience Manager Assets] Dynamic Media with OpenAPI capabilities enables you to add multiple audio tracks and caption files to video assets. This capability improves accessibility, supports localized playback experiences, and enhances video delivery for global audiences.
 
 These features are managed directly from the **Captions & Audio tracks** tab on the video asset properties page.
-
->[!NOTE]
->
->Multi Audio and Multi Caption support in Dynamic Media with OpenAPI capabilities is a limited availability feature. You can enable it by creating a [support ticket](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 All supported Dynamic Media with OpenAPI capabilities video formats support multiple captions and audio tracks.
 

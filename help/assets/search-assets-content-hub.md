@@ -4,6 +4,12 @@ description: Learn how to search assets in [!DNL Content Hub]
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Search Assets in [!DNL Content Hub] {#search-assets}
 
@@ -129,10 +135,6 @@ AI Search delivers the following key benefits:
 To enable AI Search, your environment must meet the minimum requirement:
 
 * Minimum required AEM release version is **`25520`**.
-
->[!IMPORTANT]
->
->This feature is available as Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 AI Search is available for [!DNL Content Hub] environments that use the latest search stack. Adobe is rolling out the latest search stack to [!DNL Content Hub] customers in phases.
 
@@ -325,10 +327,6 @@ By default, [!DNL Content Hub] includes the following sorting options on [!DNL t
 * **Name** — orders assets alphabetically by name
 
 * **Relevance** — orders assets by their match to the active search query
-
->[!IMPORTANT]
->
->This feature is available as a **Limited Availability** feature, meaning access is granted on a phased, opt-in basis rather than being enabled for all deployments by default. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable this sorting feature for your deployment.
 
 Sorting works in [!DNL Content Hub] environments that use the latest search stack. Adobe is rolling out the latest search stack to [!DNL Content Hub] customers in phases, so availability depends on where your deployment falls in that rollout.
 

@@ -21,15 +21,15 @@ role_v2:
     internal-label: Developer
 ---
 
-# About add a domain mapping {#add-domain-mapping}
+# About adding a domain mapping {#add-domain-mapping}
 
 To link a domain with an SSL certificate on the Adobe-managed CDN within your program, you must add a CDN (Content Delivery Network) configuration.
 
-For Adobe managed CDNs, when using a DV SSL certificate, only sites with ACME validation are permitted.
+For Adobe-managed CDNs, when using a DV SSL certificate, only sites with ACME validation are permitted.
 
 >[!IMPORTANT]
 >
->Have you [added a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) and [added an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md), respectively? If not, you must complete these two tasks before you can add a CDN configuration.
+>Have you [added a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) and [added an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)? If not, you must complete these two tasks before you can add a CDN configuration.
 
 See also [Adobe Managed CDN](https://www.aem.live/docs/byo-cdn-adobe-managed).
 
@@ -46,12 +46,12 @@ See also [Adobe Managed CDN](https://www.aem.live/docs/byo-cdn-adobe-managed).
 
 1. In the **Map Domain to CDN** dialog box, select one of the following CDN types:
 
-   * **Adobe Managed CDN (Recommended)** - An Adobe managed CDN is used for this configuration. It includes automated setup and management, and built-in security features.
+   * **Adobe managed CDN (Recommended)** - An Adobe-managed CDN is used for this configuration. It includes automated setup and management, and integrated security features.
    * **Other CDN provider** - A self-managed CDN provider network is used for this configuration.
 
 1. Based on the selected CDN type in the previous step, do the following:
 
-   * **Adobe Managed CDN**
+   * **Adobe-managed CDN**
 
       ![Map Domain to CDN dialog box with Adobe managed CDN radio button selected](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-adobe-managed.png)
 
@@ -62,9 +62,12 @@ See also [Adobe Managed CDN](https://www.aem.live/docs/byo-cdn-adobe-managed).
          | Sites | Select an Edge Delivery site. |
          | Environment | Select a specific Cloud Service environment that you want to target within your AEM setup.<br>In the **Tier** drop-down list, select one of the following:<br>&bull; Select **Publish** to target a live, production environment where content is delivered to end users.<br>&bull; Select **Preview** for staging or non-production environments where you test changes before they go live. |
 
-      1. In the **Domain** drop-down list, select the domain name that you want to use.<br>No verified domains available in the drop-down list? See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+      1. In the **Domain** drop-down list, select the domain name that you want to use.
+         No verified domains available in the drop-down list? See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
-      1. In the **SSL certificate** drop-down list, select a certificate that you want to use.<br>No SSL certificates available in the drop-down list? See [Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
+      1. In the **SSL certificate** drop-down list, select a certificate that you want to use.
+      
+         No SSL certificates available in the drop-down list? See [Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 
       1. Click **Save**.
 
@@ -74,7 +77,7 @@ See also [Adobe Managed CDN](https://www.aem.live/docs/byo-cdn-adobe-managed).
 
       Use the listed configuration steps to apply the required settings in your CDN and confirm the mapping. See also [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
-      1. Click **I've Configured My CDN**.
+      1. In the lower-right corner of the dialog box, click **I've Configured My CDN**.
 
    <!-- OLD IMAGE/UI (/help/implementing/cloud-manager/assets/configure-cdn-dialog.png)-->
 
@@ -84,9 +87,9 @@ See also [Adobe Managed CDN](https://www.aem.live/docs/byo-cdn-adobe-managed).
 
 ## Test the domain mapping {#test-domain-mapping}
 
-You can verify that a new domain mapping is live on the Adobe-managed CDN without waiting for public DNS propagation. 
+You can verify that a new domain mapping is active on the Adobe-managed CDN without waiting for public DNS propagation. 
 
-Run a **curl** command that overrides DNS resolution and points straight to the CDN edge:
+Run a **curl** command that overrides DNS resolution and directs traffic to the CDN edge:
 
 ```bash
 curl -svo /dev/null https://www.example.com \

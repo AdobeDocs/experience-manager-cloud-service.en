@@ -4,6 +4,12 @@ description: Learn how to configure AI coding tools with project context, agent 
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Local Development with AI Tools {#local-development-with-ai-tools}
 
@@ -132,7 +138,7 @@ To assess a whole project first, prompt *"Review my code for AEMaaCS migration."
 
 Supported patterns include Sling Scheduler, ResourceChangeListener, Replication API, OSGi EventListener and EventHandler, Assets API, Guava cache to Caffeine swaps, HTL lint fixes, OSGi config conversion with Cloud Manager secrets and environment variable extraction, legacy UI dialog migration (Classic UI/Coral 2 to Coral 3), custom design widget migration, static-to-editable template modernization, and AMS or on-premise Dispatcher configuration conversion.
 
-The skill pairs with the [Cloud Migration MCP](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md) to fetch findings directly from [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md). Without the MCP configured, the skill falls back to a local [BPA](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) CSV export, or you can point it at specific files manually.
+The skill uses the [AEM MCP Server's Cloud Migration capabilities](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md) to fetch findings directly from [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md). Without the AEM MCP Server configured, the skill falls back to a local [BPA](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) CSV export, or you can point it at specific files manually.
 
 For full setup instructions and pattern reference, see [AI-Assisted Code Migration to AEM as a Cloud Service](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md).
 
@@ -191,13 +197,7 @@ It never commits or pushes — you review the diff and commit. Large fixes run i
 
 ## AEM Quickstart MCP Server {#aem-quickstart-mcp-server}
 
-The Model Context Protocol (MCP) is an open standard that allows AI coding tools to connect to external data sources and services. The AEM Quickstart MCP server is a content package that, once installed in a local AEM SDK instance, exposes runtime data directly to connected AI tools, enabling agents to retrieve logs, diagnose OSGi failures, and inspect request processing without leaving the IDE.
-
-### Install the Content Package {#install-the-content-package}
-
-Download the content package from the [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3) and install `com.adobe.aem:com.adobe.aem.mcp-server-contribs-content` into your local Quickstart using Package Manager at `/crx/packmgr`.
-
-**Compatibility:** Validated with AEM SDK `2026.2.24678.20260226T154829Z-260200` and newer.
+The Model Context Protocol (MCP) is an open standard that allows AI coding tools to connect to external data sources and services. The AEM Quickstart MCP server, which is included in the local [AEM as a Cloud Service SDK](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html), exposes runtime data directly to connected AI tools, enabling agents to retrieve logs, diagnose OSGi failures, and inspect request processing without leaving the IDE.
 
 ### Available Tools {#available-tools}
 
@@ -334,4 +334,3 @@ Other IDEs can be configured in a similar manner. The SDK's `docs/DispatcherMCP.
 |`tail_logs`|Tails relevant Dispatcher and HTTPD runtime logs|
 
 The MCP surface intentionally exposes only these seven tools; prompts and resources remain in the skill layer. Full reference documentation is available in `docs/DispatcherMCP.md` inside the extracted Dispatcher SDK.
-

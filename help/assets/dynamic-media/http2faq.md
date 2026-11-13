@@ -64,7 +64,7 @@ To use HTTP/2, you must meet the following requirements:
      Go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Look for the field labeled **[!UICONTROL Published Server Name]**.
 
      * Verify that you use secure HTTPS for rich media requests.
-     * Verify you are using the CDN through Adobe and not one managed with a direct relationship.
+     * Verify you are using the CDN through Adobe and not one managed independently.
      * Verify you are using a dedicated domain. That is, `images.company.com` or `mycompany.scene7.com`, not a generic Dynamic Media domain such as `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
      To find your domains, Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started), then sign in to your account.
@@ -81,13 +81,13 @@ Customer Support processes requests in the order that they are received.
 
 >[!NOTE]
 >
->There is a delay because the transition to HTTP/2 involves removing cached data. Therefore, only a limited number of customer transitions can be handled at a time.
+>There is a delay because the transition to HTTP/2 involves clearing cached data. Therefore, only a limited number of customer transitions can be processed at a time.
 
 ## What are the risks with moving to HTTP/2? {#what-are-the-risks-with-moving-to-http}
 
-The transition to HTTP/2 removes your cached data at the CDN because it involves moving to a new CDN configuration.
+The transition to HTTP/2 clears your cached data at the CDN because it involves moving to a new CDN configuration.
 
-The non-cached content is sent directly to Adobe's origin servers until the cache is refreshed. Therefore, Adobe plans to process a limited number of customer transitions at a time. This method ensures that acceptable performance is maintained when retrieving requests from the origin.
+The non-cached content is sent directly to Adobe's origin servers until the cache is refreshed. Therefore, Adobe plans to process a limited number of customer transitions at a time. This method ensures that acceptable performance is maintained when retrieving data from the origin.
 
 ## How can you verify whether a URL or website is activated with HTTP/2? {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 

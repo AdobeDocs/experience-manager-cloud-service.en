@@ -15,7 +15,7 @@ role_v2:
 ---
 # Manage Image Presets{#managing-image-presets}
 
-**Image Presets** are predefined, reusable collections of sizing and formatting commands that enable **Adobe Experience Manager (AEM) Assets** to deliver images dynamically. Each Image Preset controls image delivery at different sizes, in different formats, and with dynamically generated image properties such as color space, compression quality, and resolution. This means a single master asset can be delivered in many optimized variations without maintaining separate source files.
+**Image Presets** are predefined, reusable collections of sizing and formatting commands that enable **Adobe Experience Manager (AEM) Assets** to deliver images dynamically. Each Image Preset controls image delivery sizes, formats, and dynamically generated image properties such as color space, compression quality, and resolution. This means a single master asset can be delivered in many optimized variations without maintaining separate source files.
 
 ## What an Image Preset Contains
 
@@ -36,15 +36,15 @@ You can also create **responsive** Image Presets. When you apply a responsive Im
 
 Image Presets support multiple color spaces. In addition to **RGB** or **Gray**, you can configure Image Presets to use **CMYK (Cyan, Magenta, Yellow, Key/Black)** in the color space, which supports print-oriented and color-managed delivery workflows.
 
-This section describes how to create, modify, and generally manage Image Presets. You can apply an Image Preset to an image anytime you preview it. See [Apply Image Presets](/help/assets/dynamic-media/image-presets.md).
+This section describes how to create, modify, and manage Image Presets. You can apply an Image Preset to an image anytime you preview it. See [Apply Image Presets](/help/assets/dynamic-media/image-presets.md).
 
 >[!NOTE]
 >
->Smart imaging works with your existing Image Presets and uses intelligence at the last millisecond of delivery to reduce image file size further based on browser or network connection speed. See [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) for more information.
+>Smart imaging works with your existing Image Presets and uses intelligence at the time of delivery to reduce image file size further based on browser or network connection speed. See [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) for more information.
 
 ## Learn about Image Presets {#understanding-image-presets}
 
-An **Image Preset** is a predefined, reusable collection of sizing and formatting commands saved under a name, functioning much like a macro. Each preset stores the exact dimensions, format, and compression settings needed to deliver an image, allowing **Experience Manager** to generate correctly optimized versions of a source image on demand rather than requiring separate files for every size and device.
+An **Image Preset** is a predefined, reusable collection of sizing and formatting commands saved under a name. Each preset stores the dimensions, format, and compression settings needed to deliver an image, allowing **Experience Manager** to generate optimized versions on demand instead of requiring separate files for every device.
 
 ### How Image Presets Work
 
@@ -59,11 +59,11 @@ When a request is made for an image at the `Enlarge` or `Thumbnail` size, **Expe
 
 ### Maintaining Image Quality at Any Size
 
-Reducing an image in size during dynamic delivery causes it to lose sharpness and detail. To counter this, **each Image Preset includes formatting controls that optimize an image when it is delivered at a particular size.** This ensures that the delivered output remains sharp and clear, because the preset applies the appropriate sharpening and formatting for the target dimensions rather than simply scaling the source. These controls keep your images crisp and legible when they reach your website or application.
+Reducing an image in size during dynamic delivery causes it to lose sharpness and detail. To counter this, **each Image Preset includes formatting controls that optimize an image when it is delivered at a particular size.** This ensures the delivered output remains sharp and clear, as the preset applies the appropriate sharpening and formatting for the target dimensions rather than scaling the source. These controls keep your images crisp and legible when they reach your website or application.
 
 ### Creating an Image Preset
 
-Administrators can create Image Presets. An administrator can build a preset from scratch or duplicate an existing preset and save it under a new name, reusing established settings as a starting point.
+Administrators can create Image Presets. An administrator can build a preset from new or duplicate an existing preset and save it under a new name, reusing established settings as a starting point.
 
 ## Manage Image Presets {#managing-image-presets-1}
 
@@ -82,17 +82,17 @@ From this Image Presets area, you create, edit, and organize the presets that co
 >
 >Any Image Presets that you create are also available as **dynamic renditions** when you preview or deliver assets. This means a preset defined once can be reused directly during preview and delivery, without redefining rendition settings each time.
 >
->You do *not* need to publish Image Presets manually, because Image Presets are **automatically published**. As a result, a newly created preset becomes available for delivery without a separate publish action.
+>You do *not* need to publish Image Presets manually because Image Presets are **automatically published**. As a result, a newly created preset becomes available for delivery without a separate publish action.
 >
 >See [Publish Image Presets](#publishing-image-presets).
 
 >[!NOTE] 
 >
->The system shows various renditions when you select **[!UICONTROL Renditions]** in an asset's Detail View. You can increase or decrease the number of Image Presets that display, allowing you to tailor the Detail View to show only the renditions you need. See [Increase the number of image presets that are displayed](#increasing-or-decreasing-the-number-of-image-presets-that-display).
+>The system shows various renditions when you select **[!UICONTROL Renditions]** in an asset's Detail View. You can increase or decrease the number of Image Presets that display. This lets you tailor the Detail View to show only the renditions you need. See [Increase the number of image presets that are displayed](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
 ## How Image Presets relate to renditions {#how-image-presets-relate-to-renditions}
 
-**Image presets** define how Dynamic Media delivers images at request time, controlling the visual output that end users receive. Each preset specifies a set of display parameters, including:
+**Image presets** define how Dynamic Media delivers images at request time. They control the visual output that end users receive. Each preset specifies a set of display parameters, including:
 
 - **Sizing** — the target width, height, or resolution of the delivered image
 - **Formatting** — the output file format used for delivery
@@ -103,16 +103,16 @@ A **rendition** is a processed version of an asset, generated when that asset is
 
 Image presets do not generate renditions themselves. This distinction is important: a preset is a set of delivery instructions, not a source of image data. Instead, presets rely on renditions that Dynamic Media creates when assets are processed. As a result, the preset applies its sizing, formatting, and compression rules on top of an existing rendition to produce the delivered image.
 
-Because renditions are created during asset processing rather than by the preset, the presence of a suitable rendition is a prerequisite for a preset to deliver the intended output. In practice, this means asset processing establishes the available image data first, and the image preset then determines how that data is presented at delivery.
+Because asset processing creates renditions rather than the preset, the presence of a suitable rendition is a prerequisite for a preset to deliver the intended output. In practice, this means asset processing establishes the available image data first, and the image preset then determines how that data is presented at delivery.
 
 ### Rendition generation in AEM as a Cloud Service{#rendition-generation-in-aemaacs}
 
-In Adobe Experience Manager (AEM) as a Cloud Service, AEM generates renditions using [**Asset Microservices**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#), a cloud-native, scalable processing capability. The Digital Asset Management (DAM) Update Asset workflow is not available for customization in Cloud Service, because rendition processing is handled by the managed microservices layer rather than by an editable workflow model.
+In Adobe Experience Manager (AEM) as a Cloud Service, AEM generates renditions using [**Asset Microservices**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#), a cloud-native, scalable processing capability. The Digital Asset Management (DAM) Update Asset workflow is not available for customization in Cloud Service, because the managed microservices layer handles rendition processing rather than an editable workflow model.
 
 Important considerations include the following:
 
 * Renditions are generated at **upload time**, meaning processing occurs automatically as each asset enters the system.
-* Changes to a **Processing Profile** apply only to newly uploaded assets. As a result, existing assets must be reprocessed if new renditions are required, because a profile change does not retroactively regenerate renditions for content that already exists in the repository.
+* Changes to a **Processing Profile** apply to new assets only. As a result, existing assets must be reprocessed if new renditions are required, because a profile change does not retroactively regenerate renditions for content that already exists in the repository.
 * Workflow model customization is not supported in AEM as a Cloud Service for rendition generation; rendition control is instead achieved entirely through Processing Profiles.
 
 **Image Presets** reference available renditions at delivery time to serve dynamic, on-demand image variations. For this reason, ensure that the required renditions exist before configuring or using Image Presets, since an Image Preset cannot deliver a rendition that has not already been generated.
@@ -123,7 +123,7 @@ Important considerations include the following:
 2. Configure the required rendition definitions, specifying the formats, dimensions, and output settings each rendition must produce.
 3. Apply the Processing Profile to the appropriate folder so that all assets in that location inherit the defined rendition settings.
 
-When assets are uploaded to a folder that has a Processing Profile applied, **Asset Microservices automatically generate the defined renditions**. This automation ensures consistent rendition output across the folder without manual intervention, and it means that organizing assets into folders with the correct Processing Profiles is the primary mechanism for controlling rendition generation in AEM as a Cloud Service.
+When assets are uploaded to a folder that has a Processing Profile applied, **Asset Microservices automatically generate the defined renditions**. This automation ensures consistent rendition output across the folder. Organizing assets into folders with the correct Processing Profiles is the primary mechanism for controlling rendition generation in AEM as a Cloud Service.
 
 <!--
 ### Adobe Illustrator (AI), PostScript&reg; (EPS), and PDF file formats {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
@@ -241,7 +241,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 
 ## Increase or decrease the number of image presets that are displayed {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
-Image presets you create are available as **dynamic renditions** when you preview assets. A dynamic rendition is an on-the-fly variation of an asset—generated from your preset settings such as size, format, or compression—rather than a separately stored file. Experience Manager displays these dynamic renditions when you view an asset from **[!UICONTROL Detail View > Renditions]**. You can increase or decrease the limit of renditions that are displayed, which is useful when you maintain a large library of presets and want more of them visible at once, or when you prefer a shorter, more focused list.
+Image presets you create are available as **dynamic renditions** when you preview assets. A dynamic rendition is an immediate variation of an asset—generated from your preset settings such as size, format, or compression—rather than a separately stored file. Experience Manager displays these dynamic renditions when you view an asset from **[!UICONTROL Detail View > Renditions]**. You can increase or decrease the limit of displayed renditions to tailor the list to your needs.
 
 By default, Experience Manager displays up to **15 image presets**. Adjusting the **[!UICONTROL limit]** property raises or lowers this maximum so the rendition list matches the number of presets your workflow requires.
 
@@ -252,7 +252,7 @@ By default, Experience Manager displays up to **15 image presets**. Adjusting th
 
    ![increase_decreasethenumberofimagepresetsthatdisplay](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
 
-1. In the **[!UICONTROL limit]** property, change the **[!UICONTROL Value]**, which is set to **15 by default**, to the desired number.
+1. In the **[!UICONTROL limit]** property, change the **[!UICONTROL Value]** (default is **15**) to the desired number.
 1. Navigate to the image preset datasource at `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist/datasource`
 
    ![chlimage_1-495](assets/chlimage_1-495.png)
@@ -262,13 +262,13 @@ By default, Experience Manager displays up to **15 image presets**. Adjusting th
 
 ## Create Image Presets {#creating-image-presets}
 
-An **Image Preset** is a saved, reusable group of image settings that you apply to **apply consistent settings across images when you preview or publish**. Creating **Image Presets** ensures that every asset processed through the preset shares the same dimensions, format, and rendering options, which streamlines large-scale image delivery and reduces manual configuration.
+An **Image Preset** is a saved, reusable group of image settings that you apply to **ensure consistent settings across images when you preview or publish**. Creating **Image Presets** ensures that every asset processed through the preset shares the same dimensions, format, and rendering options, which streamlines large-scale image delivery and reduces manual configuration.
 
 >[!NOTE]
 >
 >If using Internet Explorer 9 (IE9), a newly created preset does not appear in the preset list immediately after saving. To resolve this issue, disable the cache for IE9.
 
-If you intend to support the ingestion of **Adobe Illustrator (AI), PDF, and PostScript (EPS)** files so that you can generate dynamic renditions of these file formats, review the following information before you create Image Presets.
+Review the following information before creating Image Presets if you intend to support the ingestion of **Adobe Illustrator (AI), PDF, and PostScript (EPS)** files.
 
 See [Adobe Illustrator (AI), PostScript&reg; (EPS), and PDF file formats](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
 
@@ -287,7 +287,7 @@ See [InDesign (INDD) file format](#indesign-indd-file-format).
    >
    >To make this Image Preset responsive, erase the values in the **[!UICONTROL width]** and **[!UICONTROL height]** fields and leave them blank. Blank dimension fields allow the rendition to scale to the requesting context rather than being fixed to a single size.
 
-1. In the **[!UICONTROL Edit Image Preset]** window, enter values into the **[!UICONTROL Basic]** and **[!UICONTROL Advanced]** tabs as appropriate, including a name. The options are outlined in [Image Preset Options](#image-preset-options). Presets appear in the left pane and can be applied on-the-fly to other assets.
+1. In the **[!UICONTROL Edit Image Preset]** window, enter values into the **[!UICONTROL Basic]** and **[!UICONTROL Advanced]** tabs as appropriate, including a name. The options are outlined in [Image Preset Options](#image-preset-options). Presets appear in the left pane and can be applied immediately to other assets.
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
@@ -313,7 +313,7 @@ Leaving the **height and width fields blank** signals to Experience Manager that
 
 When you create or edit Image Presets, you have the options described in this section. In addition, Adobe recommends these "best practice" option choices to start:
 
-* **[!UICONTROL Format]** (**[!UICONTROL Basic]** tab) - Select **[!UICONTROL JPEG]** (Joint Photographic Experts Group) or another format that meets your requirements. All web browsers support the JPEG image format, making it the most universally compatible choice for web delivery, and it offers a good balance between small file sizes and image quality. However, JPEG images use a **lossy compression scheme**, meaning some image data is discarded to reduce file size. If the compression setting is too low, this discarding process introduces unwanted visual artifacts such as blocking or banding. For this reason, Adobe recommends setting the compression quality to **75**, a value that delivers an optimal balance between visual fidelity and small file size.
+* **[!UICONTROL Format]** (**[!UICONTROL Basic]** tab) — Select **[!UICONTROL JPEG]** (Joint Photographic Experts Group) or another format that meets your requirements. All web browsers support the JPEG image format, making it the most universally compatible choice for web delivery, and it offers a good balance between small file sizes and image quality. However, JPEG images use a **lossy compression scheme**, meaning some image data is discarded to reduce file size. If the compression setting is too low, this discarding process introduces unwanted visual artifacts such as blocking or banding. For this reason, Adobe recommends setting the compression quality to **75**, a value that delivers an optimal balance between visual fidelity and small file size.
 
 * **[!UICONTROL Enable Simple Sharpening]** - Do not select **[!UICONTROL Enable Simple Sharpening]**. This sharpening filter offers less precise control than Unsharp Masking settings, so leaving it disabled preserves finer, more configurable sharpening options.
 
@@ -330,11 +330,11 @@ When you create or edit Image Presets, you have the options described in this se
 
 ### Advanced tab options {#advanced-tab-options}
 
-The **Advanced tab** groups the additional configuration controls that are separated from the standard, everyday settings. These options give experienced users fine-grained control over behavior that most people never need to change, which is why they are placed in a dedicated tab rather than the main settings view. Keeping advanced controls in their own tab reduces clutter for typical users while still exposing powerful configuration for those who require it.
+The **Advanced tab** groups the additional configuration controls that are separated from the standard, everyday settings. These options give experienced users fine-grained control over behavior that is rarely changed, which is why they are placed in a dedicated tab rather than the main settings view. Keeping advanced controls in their own tab simplifies the interface for typical users while still exposing powerful configuration for those who require it.
 
 #### When to Use the Advanced Tab
 
-Advanced options are intended for scenarios that fall outside default behavior. You should generally use the Advanced tab when:
+Advanced options are intended for scenarios that fall outside default behavior. Use the Advanced tab when:
 
 - The default settings do not meet a specific technical or workflow requirement.
 - You need to override standard behavior for troubleshooting or diagnostics.
@@ -351,12 +351,12 @@ While the exact controls vary by application, the Advanced tab typically consoli
 - **Compatibility settings** — toggles that adapt behavior for older systems, alternate formats, or specific environments.
 - **Logging and diagnostics** — controls that enable detailed logs or debug output to help identify issues.
 - **Security and access controls** — settings that manage permissions, encryption, or authentication behavior.
-- **Custom and experimental features** — optional capabilities that are not enabled by default.
+- **Custom and experimental features** — optional capabilities that the system does not enable by default.
 - **Reset and restore controls** — options to return advanced settings to their default state.
 
 #### Why Advanced Options Are Separated
 
-Advanced settings are isolated from the main interface because they carry a higher potential to change core behavior. This separation ensures that everyday users encounter a simpler experience, while power users retain full access to detailed configuration. As a result, the Advanced tab serves as a controlled space where deeper adjustments can be made deliberately rather than accidentally.
+Advanced settings are separated from the main interface because they have a higher potential to change core behavior. This separation ensures that standard users encounter a simpler experience, while power users retain full access to detailed configuration. As a result, the Advanced tab serves as a controlled space where adjustments can be made intentionally rather than accidentally.
 
 For most users, the default configuration is sufficient and the Advanced tab does not need to be modified. When customization is necessary, however, these options provide the flexibility to tailor the application precisely to a given workflow, environment, or requirement.
 
@@ -366,7 +366,7 @@ For most users, the default configuration is sufficient and the Advanced tab doe
 
 #### How Sharpening Works
 
-Sharpening operates by amplifying the local contrast at edges rather than across an entire image uniformly. When a boundary is detected between a lighter and darker area, the process brightens the lighter side and darkens the darker side of that transition. Because the human visual system interprets high edge contrast as sharpness, this selective adjustment makes an image read as more focused and detailed.
+Sharpening operates by amplifying the local contrast at edges rather than across an entire image uniformly. When a boundary is detected between a lighter and darker area, the process brightens the lighter side and darkens the darker side of that transition. Because the human visual system interprets high edge contrast as sharpness, this selective adjustment makes an image appear more focused and detailed.
 
 The core steps common to most sharpening methods include:
 
@@ -387,7 +387,7 @@ Sharpening is applied across photography, digital imaging, printing, and display
 - **Capture sharpening** compensates for the slight softening introduced by camera sensors and lenses.
 - **Output sharpening** prepares an image for its final medium, since printing and downscaling can reduce apparent detail.
 
-Applied carefully, sharpening restores the sense of crispness expected in professional images. Applied excessively, however, it produces visible artifacts such as bright or dark **halos** along edges and amplified noise, so restraint and appropriate settings are essential to a natural result.
+Applied carefully, sharpening restores the sense of crispness expected in professional images. Applied excessively, it produces visible artifacts like **halos** and noise, so use restraint.
 
 <table>
  <tbody>
@@ -474,7 +474,7 @@ Applied carefully, sharpening restores the sense of crispness expected in profes
 
 ## Define Image Preset options with image modifiers {#defining-image-preset-options-with-image-modifiers}
 
-Image modifiers extend the options available in the Basic and Advanced tabs, giving you additional control when defining Image Presets. Image Rendering relies on the Dynamic Media Image Rendering API and is defined in detail in the [HTTP Protocol Reference](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api). Each modifier is an image-serving command—identified by the **`op_` prefix** for operator commands—that transforms how the rendered image appears.
+Image modifiers extend the options available in the Basic and Advanced tabs, giving you additional control when defining Image Presets. Image Rendering relies on the Dynamic Media Image Rendering API and is detailed in the [HTTP Protocol Reference](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api). Each modifier is an image-serving command—identified by the **`op_` prefix** for operator commands—that transforms how the rendered image appears.
 
 The following are some basic examples of what you can do with image modifiers.
 
@@ -482,7 +482,7 @@ The following are some basic examples of what you can do with image modifiers.
 >
 >Some image modifiers [cannot be used in Experience Manager](#advanced-tab-options).
 
-* [**op_invert**](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) - Inverts each color component for a negative image effect. Setting the value to **1** enables inversion, producing a photographic negative.
+* [**op_invert**](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) — Inverts each color component for a negative image effect. Setting the value to **1** enables inversion, producing a photographic negative.
 
   ```xml {.line-numbers}
   &op_invert=1
@@ -490,7 +490,7 @@ The following are some basic examples of what you can do with image modifiers.
 
   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [**op_blur**](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur) - Applies a blur filter to the image. A higher value produces a stronger softening effect; the example below applies a blur strength of **7**.
+* [**op_blur**](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur) — Applies a blur filter to the image. A higher value produces a stronger softening effect; the example below applies a blur strength of **7**.
 
   ```xml {.line-numbers}
   &op_blur=7
@@ -506,7 +506,7 @@ The following are some basic examples of what you can do with image modifiers.
 
   ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [**op_brightness**](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness) - Decreases or increases the brightness of the image. The supplied value adjusts luminance, so raising it lightens the image and lowering it darkens it. The example applies a brightness value of **58**.
+* [**op_brightness**](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness) — Decreases or increases the brightness of the image. The supplied value adjusts luminance, so raising it lightens the image and lowering it darkens it. The example applies a brightness value of **58**.
 
   ```xml {.line-numbers}
   &op_brightness=58
@@ -514,7 +514,7 @@ The following are some basic examples of what you can do with image modifiers.
 
   ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [**opac**](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac) - Adjusts image opacity, allowing you to decrease the foreground opacity so the image becomes more transparent. The example sets an opacity value of **29**.
+* [**opac**](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac) — Adjusts image opacity, allowing you to decrease the foreground opacity so the image becomes more transparent. The example sets an opacity value of **29**.
 
   ```xml {.line-numbers}
   opac=29
@@ -537,7 +537,7 @@ To edit an existing image preset, follow these steps:
 
 ## Publish image presets {#publishing-image-presets}
 
-**Image presets** are **automatically published** for you. An **image preset** is a reusable configuration that defines how an image is processed and delivered — including settings such as sizing, cropping, format, and quality — so the same treatment can be applied consistently across many assets.
+**Image presets** are **automatically published** for you. An **image preset** is a reusable configuration that defines how an image is processed and delivered, allowing the same treatment across many assets.
 
 Because publishing happens automatically, no separate manual publish step is required. As a result, every image preset you create or update becomes available for use without additional action on your part. This ensures your presets remain in sync and immediately usable, reducing the risk of unpublished or outdated configurations.
 
@@ -559,4 +559,4 @@ Deleting an image preset permanently removes it from Dynamic Media so that it is
 
 1. In Experience Manager, select the Experience Manager logo to access the global navigation console, and then select the **Tools** icon.
 1. Navigate to **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
-1. Select the preset you want to remove, and then select **[!UICONTROL Delete]**. Dynamic Media displays a confirmation prompt to verify that you want to delete the selected preset. This confirmation step exists to prevent accidental removal. Select **[!UICONTROL Delete]** to permanently remove the preset, or select **[!UICONTROL Cancel]** to return to **[!UICONTROL Image Presets]** without making changes.
+1. Select the preset you want to remove, and then select **[!UICONTROL Delete]**. Dynamic Media displays a confirmation prompt to verify that you want to delete the selected preset. This confirmation step exists to prevent accidental removal. Select **[!UICONTROL Delete]** to remove the preset permanently, or select **[!UICONTROL Cancel]** to return to **[!UICONTROL Image Presets]** without making changes.

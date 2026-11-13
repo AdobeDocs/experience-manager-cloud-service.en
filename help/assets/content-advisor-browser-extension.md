@@ -4,6 +4,12 @@ description: Learn how to use the power of AEM Content Advisor for AEM Assets, i
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 feature: Collaboration
 role: User
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Use AEM Content Advisor with the browser extension (Beta) {#content-advisor-browser-extension}
 
@@ -17,7 +23,7 @@ Use the power of AEM Content Advisor for AEM Assets, in the application of your 
 
 * **Pick exactly what you need.** Choose any asset or any Dynamic Media rendition (the right size, format, or crop) and send it straight to your editor. Insert, drag and drop, or copy URL to the clipboard.
 
-* **Works where you author.** AEM (Cloud Service, Adobe Managed Services, or On-premise), other Adobe CX Enterprise products (where AEM Assets native integration does not exist), and third-party tools such as Google Docs/WordPress/Microsoft Powerpoint, and any other web application.
+* **Works where you author.** AEM (Cloud Service, Adobe Managed Services, or On-premise), other Adobe CX Enterprise products (including those that have a native AEM Content Advisor integration, except Adobe Express), and third-party tools such as Google Docs/WordPress/Microsoft Powerpoint, and any other web application.
 
 >[!IMPORTANT]
 > 
@@ -31,7 +37,7 @@ Use the power of AEM Content Advisor for AEM Assets, in the application of your 
 
 ## Install and use the extension {#content-advisor-browser-extension-install}
 
-1. Install the [AEM Content Advisor extension from the Chrome Web Store](https://chromewebstore.google.com/detail/content-advisor/hgagfaikdinmneghfgjjocmfidmnadga).
+1. Install the [AEM Content Advisor extension from the Chrome Web Store](https://chromewebstore.google.com/detail/content-advisor/hgagfaikdinmneghfgjjocmfidmnadga). Use version 1.1.3 or later to access the extension in Adobe applications that have a native AEM Content Advisor integration.
 2. Sign in with your Adobe ID when prompted.
 3. Open a supported web application.
 4. Open AEM Content Advisor by selecting the **AEM Content Advisor** extension button or the floating AEM Content Advisor widget. You can also [configure settings for AEM Content Advisor browser extension](#content-advisor-browser-extension-configure) before starting to use the extension.
@@ -72,6 +78,14 @@ You can now experience the full range of AEM Content Advisor capabilities, even 
 >[!IMPORTANT]
 > 
 >If you drag a Preset or a Smart Crop Dynamic Media with OpenAPI rendition, the preset or Smart Crop configuration is not retained. The delivery URL of the Base rendition is used instead.
+
+## Working with Adobe Acrobat on the web {#content-advisor-browser-extension-acrobat-web}
+
+Use the Content Advisor browser extension with Acrobat on the web to seamlessly bring documents from AEM Assets into your workflows. Select PDFs from AEM Assets to get answers to questions about your content, prepare documents for e-signing, or turn a PDF campaign brief into a presentation using a simple prompt, and so on.
+
+Watch this video for a quick demo of the integration in action.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3504693)
    
 
 ## Configure AEM Content Advisor {#content-advisor-browser-extension-configure}
@@ -97,7 +111,8 @@ Select the **Settings** icon in the AEM Content Advisor panel to configure the e
 
 * The AEM Content Advisor extension is supported in Google Chrome and other browsers based on Chromium, such as Microsoft Edge.
 * Asset recommendations depend on the content available on the page or in the selected region. Pages with limited or inaccessible content might return fewer recommendations.
-* The browser extension does not work in applications that already have a [native AEM Content Advisor integration](/help/assets/integrate-adobe-non-adobe-applications.md#content-advisor-feature-support-adobe-applications), or in applications that block extensions. To request AEM Content Advisor in such web applications, email `aem-content-advisor-feedback@adobe.com`.
+* Starting with version 1.1.3, the browser extension also works in Adobe applications that have a [native AEM Content Advisor integration](/help/assets/integrate-adobe-non-adobe-applications.md#content-advisor-feature-support-adobe-applications), except Adobe Express. In these applications, you can use either the browser extension or the native integration. To check your installed version, go to `chrome://extensions` (Click **Details** to view) in your browser.
+* The browser extension does not work in Adobe Express or in applications that block extensions. To request AEM Content Advisor in such web applications, email `aem-content-advisor-feedback@adobe.com`.
 * The capabilities available in AEM Content Advisor depend on the host application. Drag and drop and adding assets directly to content are supported only when the host application allows these operations. In other applications, you can select the asset to copy it and then paste it into the editor.
 
 **See also**

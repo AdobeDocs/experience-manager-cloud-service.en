@@ -7,6 +7,16 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # AEM Forms Early Access Program
 
@@ -21,6 +31,26 @@ The AEM Forms Early Access Program program offers a unique opportunity to you to
 If you're interested in joining our Early Access program for any Early Access innovation, simply send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  to request access. You can request access to all or any specific innovation.  
 
 ## Early Access Innovations 
+
+### Interactive Communication Editor enhancements {#ic-editor-enhancements}
+
+Authors can create reusable document designs, add digital signature fields, and configure accessibility properties in the Interactive Communication (IC) Editor:
+
+* **Add a Sign component:** Place a digital signature field in a document and configure which fields are locked after signing, including fields in a named collection. Recipients can sign the generated Portable Document Format (PDF) document in Adobe Acrobat, helping teams protect completed document content.
+* **Configure accessibility while authoring:** Set accessibility roles, screen reader text and precedence, and navigation order, then generate tagged PDF output. These controls help authors prepare communications for readers who use assistive technologies.
+* **Create XDP templates:** Create and update existing XML Data Package (XDP) templates directly in the Interactive Communication editor, configure data bindings, and reuse fragments across document designs. Preview generated PDF output while refining the design.
+
+### Theme Editor for Core Components based Adaptive Forms {#theme-editor-core-components}
+
+Style Core Components based Adaptive Forms visually in the Theme Editor and preview changes as you work. Customize colors, typography, borders, and spacing, then reuse themes across forms to maintain a consistent appearance.
+
+### Dynamic Media images in Adaptive Forms {#dynamic-media-images-adaptive-forms}
+
+Authors can select Dynamic Media assets for the Image component in an Adaptive Form. The component resolves the selected asset reference to its Dynamic Media delivery URL, enabling teams to reuse centrally managed images in forms rather than uploading separate copies.
+
+### Custom submit actions in Universal Editor {#custom-submit-actions-universal-editor}
+
+Authors can select and configure custom submit actions for Edge Delivery Services Adaptive Forms in the Universal Editor's Form Properties interface. Supported action-specific configuration fields appear when the action is selected, enabling teams to connect forms to custom submission processes without switching authoring experiences.
 
 <!--
 
@@ -195,6 +225,18 @@ Adaptive Forms can now pass every uploaded file attachment to a virus scanner or
 * **Multiple configurations**: Register more than one validator — one per antivirus engine, or several differently configured instances of the same engine — and choose which one (or none) applies per form.
 
 Ready to start? [Scan file attachments in Adaptive Forms with a custom validator](/help/forms/scan-file-attachments-custom-validator.md) covers the concepts and the interface reference, and [Tutorial: Scan file attachments with ClamAV](/help/forms/scan-file-attachments-clamav.md) walks through a complete, working example end to end.
+
+### Agentic Form Filling
+
+Agentic Form Filling lets customers complete published Adaptive Forms through AI assistants, website chatbots, or WhatsApp. Unlike the Conversational Forms component embedded in an AEM Sites page, this service supports form filling across these channels.
+
+**Key capabilities:**
+
+* **Use the forms you already have**: Reuse published Adaptive Forms with supported rules and validations and their configured submit action.
+* **Guided or natural-language answers**: Collect structured answers one group of fields at a time, or let customers answer in their own words and have AI extract the values.
+* **Personal data protection**: Personal details in form answers are masked before the service sends those answers to its AI model for field extraction.
+
+To request access, email your organization ID and program details to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address.
 
 <!--
 

@@ -71,9 +71,18 @@ jobs:
       # acceptable because the public mirror is a disposable, one-way copy.
       - name: Strip >100MB blobs with git-filter-repo
         if: steps.bigcheck.outputs.oversized == 'true'
+        env:
+          ARTIFACTORY_USER: ${{ secrets.ARTIFACTORY_USER }}
+          ARTIFACTORY_TOKEN: ${{ secrets.ARTIFACTORY_TOKEN }}
         run: |
           set -euo pipefail
-          python3 -m pip install --user git-filter-repo
+          if [ -z "$ARTIFACTORY_USER" ] || [ -z "$ARTIFACTORY_TOKEN" ]; then
+            echo "::error::Configure ARTIFACTORY_USER and ARTIFACTORY_TOKEN as GitHub Actions secrets for this repository."
+            exit 1
+          fi
+          PIP_NO_INPUT=1 python3 -m pip install --user \
+            --index-url "https://${ARTIFACTORY_USER}:${ARTIFACTORY_TOKEN}@artifactory-uw2.adobeitc.com/artifactory/api/pypi/pypi-remote/simple" \
+            git-filter-repo
           export PATH="$(python3 -m site --user-base)/bin:$PATH"
           git filter-repo --strip-blobs-bigger-than 100M --force
           if git rev-list --objects --all \

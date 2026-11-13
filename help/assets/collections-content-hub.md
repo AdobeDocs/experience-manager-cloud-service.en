@@ -4,6 +4,12 @@ description: Learn how to manage collections in Content Hub
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Manage collections in [!DNL Content Hub] {#manage-collections}
 
@@ -379,137 +385,6 @@ To add assets to an existing collection in **Adobe Experience Manager (AEM) Asse
 The search bar locates any existing collection by name, so you can add assets to the intended collection without scrolling through the full list. Because collections act as curated groupings of approved assets, adding assets to the right collection ensures the content remains discoverable and available for reuse across your organization.
 
 ### Can collections be filtered and searched in AEM Assets [!DNL Content Hub]?
-
-Yes. **[!DNL Collections] in Adobe Experience Manager (AEM) Assets [!DNL Content Hub] support both filtering and searching**, allowing users to quickly locate the right collection by **name**, **access permissions**, or **creator**. This makes it easier to manage large libraries of digital assets where many collections may exist across teams.
-
-[!DNL Content Hub] organizes collection filtering around three primary criteria:
-
-- **Name** — search directly by the collection title to jump to a specific set of assets.
-- **Access permissions** — filter by how a collection can be used and by whom.
-- **Creator** — narrow results to collections created by a particular user.
-
-The available filter options include:
-
-- **All [!DNL Collections]** — displays every collection visible to the user, with no filtering applied.
-- **Only me** — shows collections restricted to the current user, useful for private or personal groupings.
-- **Anyone can view** — surfaces collections shared with view-only access, so others can browse but not modify the assets.
-- **Anyone can edit** — lists collections open for collaborative editing, enabling shared teams to add or update assets.
-- **Created by anyone** — includes collections created by any user across the organization.
-- **Created by me** — limits results to collections the current user has personally created, making it simple to return to your own work.
-
-By combining these filters with search, teams can efficiently find, review, and manage collections in AEM Assets [!DNL Content Hub] based on ownership, visibility, and collaboration needs.
-
-### How do I download assets from a collection in AEM Assets [!DNL Content Hub]?
-
-You can download assets from a collection in **Adobe Experience Manager (AEM) Assets [!DNL Content Hub]** in two ways: download the **entire collection at once**, or download **individually selected assets** from within a collection. [!DNL Collections] group related assets together for easier discovery and distribution, so both methods let you retrieve approved, brand-ready content directly from the hub.
-
-#### Method 1: Download an entire collection
-
-1. Navigate to the **[!DNL Collections]** tab.
-2. Locate the collection card for the assets you want.
-3. Click the **download icon** on the collection card to download **all assets** in that collection at once.
-
-Use this method when you need every asset in the collection, since it retrieves the complete set in a single action.
-
-#### Method 2: Download selected assets from a collection
-
-1. Open the collection.
-2. Select the individual assets you want.
-3. Click **Download** to download only the selected assets separately.
-
-Choose this method when you need only specific files rather than the full collection, giving you precise control over which assets you retrieve.
-
-### How can assets be shared from a collection in AEM Assets [!DNL Content Hub]?
-
-Assets are shared from a collection in **Adobe Experience Manager (AEM) Assets [!DNL Content Hub]** by enabling **public link sharing**. Public link sharing generates a distributable URL that grants recipients access to the selected asset without requiring them to be internal AEM users.
-
-**Steps to share an asset:**
-
-1. Enable **public link sharing** for the asset you want to distribute.
-2. Select the **share icon** on the asset card.
-3. Copy the generated **share link**.
-4. Send the copied link to the intended recipients.
-
-Because the share link is publicly accessible, anyone who receives it can open the shared asset, making this method well suited for distributing approved content to external stakeholders or partners.
-
-**Important limitation:** **Private collections cannot be shared.** Private collections are restricted by design, so their access controls prevent public link generation. To share assets that currently sit in a private collection, the assets must first reside in a shareable, non-private context before public link sharing can be enabled.
-
-### Who can remove assets from a collection in AEM Assets [!DNL Content Hub]?
-
-Three types of users can remove assets from a collection in **Adobe Experience Manager (AEM) Assets [!DNL Content Hub]**: the collection owner, an administrator, or a non-admin user granted edit rights. Any of these authorized users can remove a single asset or multiple assets at once from a collection.
-
-#### Who Can Remove Assets
-
-- **Collection owner** — the user who owns the collection has full control over its contents, including asset removal.
-- **Administrator** — administrators can remove assets from any collection as part of their broader management permissions.
-- **Non-admin user with edit rights** — a standard user who has been granted edit rights on the collection can also remove assets.
-
-This permission structure ensures that only users with an established ownership, administrative, or edit-level relationship to the collection can modify its contents, protecting collections from unintended changes by users with view-only access.
-
-#### How to Remove Assets from a Collection
-
-1. Open the collection in AEM Assets [!DNL Content Hub].
-2. The authorized user selects the single asset or multiple assets to be removed.
-3. Click **Remove from collection**.
-4. Confirm the removal when prompted.
-
-The confirmation step exists to prevent accidental removal, requiring the user to deliberately validate the action before the selected assets are taken out of the collection. Removing assets from a collection affects only the collection's membership and does not delete the underlying assets from AEM Assets [!DNL Content Hub].
-
-### Who is allowed to delete a collection from AEM Assets [!DNL Content Hub] and how is it done?
-
-**Only administrators and the creator of a collection can delete it in Adobe Experience Manager (AEM) Assets [!DNL Content Hub].** This role-based restriction ensures that collections cannot be removed by users who neither own the collection nor hold administrative privileges, protecting shared assets from accidental or unauthorized deletion.
-
-#### Who Can Delete a Collection
-
-- **Administrators** — users with administrative privileges in AEM Assets [!DNL Content Hub].
-- **The creator of the collection** — the user who originally created the collection.
-
-Any user outside these two roles cannot delete a given collection. Because deletion is limited to owners and administrators, accountability for removing shared collections stays with the people responsible for managing them.
-
-#### How to Delete a Collection
-
-To delete a collection in AEM Assets [!DNL Content Hub], follow these steps:
-
-1. **Navigate to the [!DNL Collections] tab** in AEM Assets [!DNL Content Hub].
-2. **Select the collection** you want to delete.
-3. **Click the delete icon** to remove it.
-
-Once these steps are completed, **the collection is removed from AEM Assets [!DNL Content Hub]**. Because removal is performed directly on the collection, administrators and creators should confirm the correct collection is selected before deleting, as the action clears the collection from the [!DNL Content Hub].
-
-### What all options can an administrator configure for collections in AEM Assets [!DNL Content Hub]?
-
-Administrators configure collection access and editing permissions in **Adobe Experience Manager (AEM) Assets [!DNL Content Hub]** by enabling or disabling two toggles that govern how collections can be viewed and edited. These settings determine which collection types non-admin users are permitted to create.
-
-Two administrator-controlled toggles govern collection visibility and editing rights:
-
-* Enable the **View Only [!DNL Collections]** toggle to allow collections that are accessible to everyone but editable only by the creator and administrator. Unlike fully open collections, this option preserves broad visibility while restricting changes, ensuring content remains consistent and protected from unintended edits by other users.
-
-* Enable the **Public [!DNL Collections]** toggle to allow collections that are both accessible and editable by everyone. In contrast to view-only collections, public collections grant full read and write access across all users, supporting open collaboration on shared assets.
-
-If both the **View Only [!DNL Collections]** and **Public [!DNL Collections]** toggles are disabled, then by default, non-admin users can create only **private collections**. Because private collections are visible and editable only to their creator and the administrator, this default enforces the most restrictive access model, keeping collections confined to their owner unless an administrator explicitly opens up broader sharing.
-
-In summary, these administrator settings enable three distinct collection types:
-
-* **View Only [!DNL Collections]** — accessible to everyone, editable only by the creator and administrator.
-* **Public [!DNL Collections]** — both accessible and editable by everyone.
-* **Private [!DNL Collections]** — the default when both toggles are disabled, accessible and editable only by the creator and administrator.
-
-### Why I cannot see newly added or removed collection or assets in [!DNL Content Hub]?
-
-Newly created collections, or assets added to or removed from a collection, may not appear immediately in [!DNL Content Hub] because collections are subject to **backend propagation** and **index-refresh latency**. This is **expected system behavior**, not a failure of the add or remove action itself.
-
-#### Cause
-
-When you create a collection, or add and remove assets from one, the change is written to the backend before it is reflected in the search index that powers the interface. **Index-refresh latency** is the short delay between when an operation is committed and when the refreshed index makes that change visible in the user interface (UI). As a result, the UI may not immediately reflect the change even though the operation completed successfully. Distributed content systems commonly rely on this kind of asynchronous propagation, so a brief lag between the action and its visible result is normal.
-
-#### Resolution
-
-The add or remove action typically succeeds even when the outcome is not visible right away. If a change does not appear right away, apply these steps:
-
-* Refresh the browser or retry in a new session before assuming the operation failed. This forces the interface to request an updated view of the collection.
-* Re-verify after a short wait rather than repeating the same add or remove action multiple times. Repeating the action prematurely creates confusing duplicate-looking states, because each attempt can register against the backend before the index catches up.
-
-Waiting briefly and re-checking is the reliable approach, as the change will surface once backend propagation and the index refresh complete.
 
 **See also**
 

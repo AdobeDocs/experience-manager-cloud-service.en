@@ -17,9 +17,9 @@ role_v2:
 ---
 # Troubleshoot Dynamic Media {#troubleshooting-dynamic-media-scene-mode}
 
-This topic provides troubleshooting guidance for **Dynamic Media**, covering common issues, their likely causes, and general approaches to resolving them. Dynamic Media is a capability used to create, manage, and deliver rich media assets—such as images, video, and interactive experiences—at scale, adapting content to different devices, screen sizes, and viewing conditions. Because it spans asset processing, delivery, and rendering across many environments, troubleshooting typically requires isolating whether an issue originates during asset ingestion, activation, or delivery.
+This topic provides troubleshooting guidance for **Dynamic Media**, covers common issues, their causes, and general approaches to resolving them. Dynamic Media creates, manages, and delivers rich media assets at scale, adapting content to different devices, screen sizes, and viewing conditions. Because it spans asset processing, delivery, and rendering across many environments, troubleshooting typically requires isolating whether an issue originates during asset ingestion, activation, or delivery.
 
-## Common Dynamic Media Issue Categories
+## Common Dynamic Media issue categories
 
 Most Dynamic Media problems fall into a small number of recognizable categories. Identifying the category first narrows the investigation and speeds up resolution:
 
@@ -29,17 +29,17 @@ Most Dynamic Media problems fall into a small number of recognizable categories.
 - **Viewer and embed problems** — interactive viewers, video players, or embedded experiences that do not initialize or behave as expected.
 - **Configuration and connectivity issues** — incorrect service settings, credentials, or network conditions that interrupt communication between the authoring environment and the delivery service.
 
-## General Troubleshooting Approach
+## General troubleshooting approach
 
-A structured approach resolves most Dynamic Media issues more reliably than trial and error. Work through the following steps in order:
+A structured approach resolves most Dynamic Media issues more reliably than informal testing. Work through the following steps in order:
 
 1. **Confirm the asset processed correctly.** Verify that the source asset uploaded fully and generated the expected renditions, because delivery and rendering failures often trace back to incomplete processing.
-2. **Verify activation status.** Ensure the asset is published or activated to the delivery service, since assets that appear correct in authoring may still be unavailable to end users if activation did not complete.
+2. **Verify activation status.** Publish or activate the asset to the delivery service, since assets that appear correct in authoring remain unavailable to end users if activation did not complete.
 3. **Check delivery URLs and rendering parameters.** Confirm that delivery URLs are correct and that any sizing, format, or quality parameters match the intended output.
-4. **Isolate the environment.** Determine whether the issue occurs in authoring, on the delivery service, or in the client browser, as this pinpoints where the failure is introduced.
+4. **Isolate the environment.** Determine whether the issue occurs in authoring, the delivery service, or the client browser to pinpoint where the failure is introduced.
 5. **Review configuration and connectivity.** Validate service settings, credentials, and network connectivity between the authoring environment and the Dynamic Media delivery service.
 
-## Where Issues Typically Occur
+## Where issues typically occur
 
 Understanding the typical points of failure helps target the investigation:
 
@@ -57,15 +57,15 @@ A **new Dynamic Media (DM) configuration** connects Adobe Experience Manager Ass
 
 Setting up a new Dynamic Media configuration establishes the link between your AEM Assets environment and the Dynamic Media service, so that assets uploaded into AEM are synchronized, processed, and made available for optimized delivery. A correctly completed configuration is required before Dynamic Media features—such as Smart Imaging, dynamic renditions, and viewer embeds—function as expected.
 
-Configuration issues typically surface when assets do not synchronize, renditions fail to generate, or delivery URLs do not resolve. Because these problems generally stem from incomplete or misapplied configuration settings, verifying the configuration is the recommended first step in diagnosing them.
+Configuration issues typically surface when assets do not synchronize, renditions fail to generate, or delivery URLs do not resolve. Because these problems stem from incomplete or misapplied configuration settings, verifying the configuration is the recommended first step in diagnosing them.
 
 For step-by-step guidance on diagnosing and resolving these issues, see [Troubleshoot a new Dynamic Media configuration](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config).
 
-## General (All Assets) {#general-all-assets}
+## General (all assets) {#general-all-assets}
 
 The following best practices apply across all asset types. Applying these guidelines consistently improves organization, discoverability, and long-term maintainability, regardless of the specific kind of asset you are working with.
 
-### Naming and Organization
+### Name and organization
 
 Consistent naming and structure form the foundation of manageable assets. Key practices include:
 
@@ -73,18 +73,18 @@ Consistent naming and structure form the foundation of manageable assets. Key pr
 - **Adopt a consistent naming convention.** Applying the same casing, separators, and prefixes across all assets reduces confusion and makes automated processing and sorting more reliable.
 - **Group related assets together.** Organizing assets into logical folders or categories keeps large collections navigable and helps team members locate what they need quickly.
 
-### Reuse and Efficiency
+### Reuse and efficiency
 
 Reusing existing assets is more efficient than recreating them and helps maintain visual and functional consistency. Recommended approaches include:
 
 - **Check for existing assets before creating new ones.** This avoids duplication, saves time, and prevents the accumulation of redundant files.
 - **Favor shared or reusable assets** where the same element appears in multiple places. Centralizing a single source means updates propagate everywhere the asset is used, rather than requiring changes in many locations.
 
-### Maintenance and Quality
+### Maintenance and quality
 
 Well-maintained assets stay usable over time and reduce technical debt. Practical steps include:
 
-- **Remove unused assets periodically.** Clearing out assets that are no longer referenced keeps the collection lean and easier to manage.
+- **Remove unused assets periodically.** Removing assets that are no longer referenced keeps the collection lean and easier to manage.
 - **Keep assets optimized.** Using appropriately sized and formatted assets improves performance and reduces unnecessary overhead.
 - **Document important details.** Recording an asset's purpose, source, or any usage notes helps current and future team members understand how and where each asset should be used.
 
@@ -107,9 +107,9 @@ The following asset properties are reviewed in CRXDE Lite to confirm the success
 
 #### Why these properties matter
 
-Each property serves as a distinct checkpoint in the asset delivery pipeline, so reviewing all four together provides a complete picture of an asset's synchronization state. The **`dam:scene7ID`** and **`dam:scene7File`** properties confirm that the link and file reference exist, **`dam:scene7FileStatus`** confirms the upload itself, and **`dam:lastSyncStatus`** confirms that dependent artifacts—such as spin sets, image sets, image presets, viewer presets, and image map updates—synchronized correctly. When an asset fails to deliver as expected in Dynamic Media, inspecting these properties in CRXDE Lite is the direct way to isolate which stage of the process—linking, upload, or set synchronization—did not complete.
+Each property serves as a distinct checkpoint in the asset delivery pipeline, so reviewing all four together provides a comprehensive overview of an asset's synchronization state. The **`dam:scene7ID`** and **`dam:scene7File`** properties confirm that the link and file reference exist, **`dam:scene7FileStatus`** confirms the upload itself, and **`dam:lastSyncStatus`** confirms that dependent artifacts synchronized correctly. When an asset fails to deliver as expected in Dynamic Media, inspecting these properties in CRXDE Lite is the direct way to isolate which stage of the process—linking, upload, or set synchronization—did not complete.
 
-### Synchronization logging {#synchronization-logging}
+### Increase synchronization logging in DEBUG {#synchronization-logging}
 
 Synchronization errors and issues are recorded in the **`error.log`** file, located in the Experience Manager server directory **`/crx-quickstart/logs/`**. This log is the primary reference point for diagnosing problems with asset synchronization.
 
@@ -122,9 +122,9 @@ The default logging level provides sufficient detail to determine the root cause
 3. Set the log level to **`DEBUG`**.
 4. Reproduce the synchronization issue, then review the additional detail written to **`error.log`** in **`/crx-quickstart/logs/`**.
 
-Increasing the log level in this way gathers more information about the synchronization workflow, making it easier to isolate the underlying cause when the default logging does not provide enough detail.
+Increasing the log level in this way gathers more information about the synchronization workflow. This makes it easier to isolate the underlying cause when the default logging does not provide enough detail.
 
-### Version Control {#version-control}
+### Version control {#version-control}
 
 When replacing an existing Dynamic Media asset that shares the **same name and location**, Adobe Experience Manager offers two distinct handling options: **keep both assets** or **replace the existing asset**. Version control determines which of these behaviors applies at upload.
 
@@ -132,21 +132,21 @@ When replacing an existing Dynamic Media asset that shares the **same name and l
 
 * **Creating a version:** Creating a version is **not supported** in Dynamic Media. As a result, the new upload does not append to a version history. Instead, **the new asset replaces the existing asset in delivery**, meaning the previously published file is superseded and the updated content is served in its place. Because no prior version is retained for delivery, replacement is effectively permanent for the delivered asset.
 
-## Images and Sets {#images-and-sets}
+## Images and sets {#images-and-sets}
 
-Resolve common problems with images and sets using the troubleshooting guidance below. Image and set errors typically stem from unsupported formats, incomplete uploads, incorrect naming, cache conflicts, or configuration mismatches. Identifying the category of the issue first is the most reliable path to a quick fix, because most image and set failures fall into a small number of recurring patterns.
+Resolve common problems with images and sets using the troubleshooting guidance below. Image and set errors typically stem from unsupported formats, incomplete uploads, incorrect naming, cache conflicts, or configuration mismatches. Identifying the category of the issue first is the most reliable path to a resolution, because most image and set failures fall into a small number of recurring patterns.
 
-### Common Image and Set Issues
+### Common image and set issues
 
 The most frequently encountered problems with images and sets include:
 
 - **Images not displaying** — a broken, blank, or missing image often indicates an invalid file path, an unsupported file format, or a failed upload.
 - **Incorrect or outdated images** — when an old version appears after an update, the cause is usually cached content that has not been refreshed.
 - **Sets not loading fully** — a partial or incomplete set typically results from missing member items, a broken reference, or an interrupted synchronization.
-- **Formatting or resolution problems** — distorted, stretched, or low-quality images generally point to size, aspect ratio, or resolution settings that do not match the requirements.
-- **Permission or access errors** — an image or set that fails to load may be restricted by access permissions or an expired link.
+- **Formatting or resolution problems** — distorted, stretched, or low-quality images point to size, aspect ratio, or resolution settings that do not match the requirements.
+- **Permission or access errors** — Access permissions or an expired link restrict an image or set that fails to load.
 
-### Step-by-Step Troubleshooting
+### Step-by-step troubleshooting
 
 Work through the following steps in order, because each step rules out a common cause before moving to a more involved solution:
 
@@ -157,12 +157,12 @@ Work through the following steps in order, because each step rules out a common 
 5. **Review permissions and access settings.** Confirm that the image or set is accessible and that any shared link has not expired.
 6. **Test in an alternate environment.** Load the image or set in a different browser, device, or session to determine whether the issue is local rather than systemic.
 
-### Preventing Image and Set Errors
+### Prevent image and set errors
 
 To reduce recurring problems, apply these preventive practices:
 
 - Use consistent, supported file formats and naming conventions across all images and sets.
-- Confirm each upload finishes completely before proceeding, which prevents partial or corrupted files.
+- Confirm each upload finishes before proceeding, which prevents partial or corrupted files.
 - Keep image references and set members synchronized so that no member item is missing or orphaned.
 - Refresh cached content after making updates to ensure the current version is always served.
 
@@ -217,39 +217,39 @@ To reduce recurring problems, apply these preventive practices:
  </tbody>
 </table>
 
-If the problem persists after completing these troubleshooting steps, escalate the issue to support with details of the specific image or set affected, the steps already attempted, and any error messages observed. Providing this information helps identify the root cause more efficiently.
+To escalate the issue, provide support with details of the specific image or set affected, the steps already attempted, and any error messages observed. Providing this information helps identify the root cause more efficiently.
 
 ## Video {#video}
 
 Video playback problems are among the most common technical issues, and most are resolved with a few standard troubleshooting steps. If video is not loading, appears frozen, plays without sound, or displays a black screen, use the guidance below to identify and resolve the problem.
 
-### Common Causes of Video Problems
+### Common causes of video problems
 
 Most video issues stem from a small set of predictable causes. Understanding the cause helps you apply the correct fix:
 
 - **Insufficient or unstable network connection** — Streaming video requires consistent bandwidth. A weak or fluctuating connection causes buffering, stalling, or automatic downgrades in quality.
-- **Outdated browser or application** — Older software may not support current video formats or playback standards, resulting in errors or blank screens.
+- **Outdated browser or application** — Older software fails to support current video formats or playback standards, resulting in errors or blank screens.
 - **Corrupted cache or cookies** — Stored temporary data can conflict with new video content and prevent it from loading correctly.
 - **Browser extensions or ad blockers** — Certain extensions interfere with video players by blocking scripts required for playback.
-- **Outdated graphics drivers or hardware acceleration conflicts** — These are frequent sources of black screens, choppy playback, or crashes.
+- **Outdated graphics drivers or hardware acceleration conflicts** — These issues are frequent sources of black screens, choppy playback, or crashes.
 - **Audio or codec incompatibility** — Missing or unsupported codecs can cause video to play without sound or fail to render entirely.
 
-### Step-by-Step Video Troubleshooting
+### Step-by-step video troubleshooting
 
-Follow these steps in order. Each step addresses the most likely cause first, so the problem is often resolved before reaching the later steps:
+Follow these steps in order. Each step addresses the most likely cause first, so the problem resolves before you reach the later steps:
 
 1. **Check your internet connection.** Confirm that other websites and services load normally. A slow or dropping connection is the leading cause of buffering and playback failure. If possible, switch to a wired connection or move closer to your wireless router.
 2. **Refresh the page and restart playback.** Reloading clears a temporary loading error and re-establishes the connection to the video source.
 3. **Update your browser or application.** Running the latest version ensures compatibility with current video formats and playback features.
 4. **Clear the cache and cookies.** Removing stored temporary data eliminates conflicts that prevent video from loading. Restart the browser afterward.
-5. **Disable extensions and ad blockers.** Turn these off temporarily to determine whether one of them is blocking the video player. If the video works, re-enable extensions one at a time to identify the source.
+5. **Disable extensions and ad blockers.** To determine whether one of them is blocking the video player, turn these off temporarily. If the video works, re-enable extensions one at a time to identify the source.
 6. **Lower the video quality.** If the video plays but stalls repeatedly, selecting a lower resolution reduces the required bandwidth and produces smoother playback.
 7. **Update graphics drivers or toggle hardware acceleration.** Outdated drivers cause visual glitches and black screens. If problems persist, disabling hardware acceleration in your browser settings often resolves rendering issues.
 8. **Try a different browser or device.** If the video plays elsewhere, the problem is specific to the original browser or device rather than the video source itself.
 
-### When to Seek Further Support
+### When to seek further support
 
-If video problems continue after completing every step above, the issue may originate with the video source or a deeper system configuration. In this case, note the following details before contacting support, because they speed up diagnosis:
+If video problems continue after completing every step above, the issue originates with the video source or a deeper system configuration. In this case, note the following details before contacting support, because they speed up diagnosis:
 
 - The exact error message or a description of what appears on screen
 - The browser or application name and version
@@ -323,18 +323,18 @@ Providing this information allows support to reproduce the issue and identify wh
 
 Viewers can experience playback, loading, display, and compatibility issues that prevent content from rendering correctly. The troubleshooting guidance below addresses the most common viewer problems and provides a step-by-step path to resolving them.
 
-### Common Viewer Issues
+### Common viewer issues
 
-Viewer problems generally fall into a few recognizable categories:
+Viewer problems fall into a few recognizable categories:
 
 - **Content fails to load** — the viewer opens but displays a blank screen, a spinner, or an error message instead of the expected content.
 - **Playback or rendering errors** — the content loads partially, freezes, or displays incorrectly.
 - **Compatibility issues** — the viewer does not function as expected in a particular browser, device, or operating system.
 - **Performance problems** — slow loading, lag, or unresponsiveness during use.
 
-Most viewer issues stem from a small set of underlying causes, including outdated software, browser cache conflicts, blocked scripts, unstable network connections, or unsupported file formats. Identifying which category applies is the first step toward a fast resolution.
+Most viewer issues stem from outdated software, browser cache conflicts, blocked scripts, unstable network connections, or unsupported file formats. Identifying which category applies is the first step toward a fast resolution.
 
-### Troubleshooting Steps
+### Troubleshooting steps
 
 Follow these steps in order, as the earlier steps resolve the most frequent problems:
 
@@ -345,7 +345,7 @@ Follow these steps in order, as the earlier steps resolve the most frequent prob
 5. **Check the network connection.** An unstable or restricted connection prevents the viewer from retrieving content, so confirming a stable connection resolves many loading failures.
 6. **Disable conflicting extensions or blockers.** Ad blockers, script blockers, and privacy extensions can interfere with viewer functionality; temporarily disabling them helps confirm whether they are the cause.
 
-If the issue persists after completing these steps, the problem may originate with the content source or the viewer configuration rather than the local environment, and further diagnostic support may be required.
+If the issue persists after completing these steps, the problem originates with the content source or the viewer configuration rather than the local environment, and requires further diagnostic support.
 
 ### Issue: Viewer presets are not published {#viewers-not-published}
 
@@ -353,10 +353,8 @@ If the issue persists after completing these steps, the problem may originate wi
 
 **How to debug: Verify viewer preset activation status**
 
-Follow these steps to identify why viewer presets are not published:
-
 1. Proceed to the sample manager diagnostic page: `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`.
-1. Observe the computed values reported by the diagnostic page. When the system operates correctly, the diagnostic page reports the following: `_DMSAMPLE status: 0 unsyced assets - activation not necessary _OOTB status: 0 unsyced assets - 0 unactivated assets`. Here, the **DMSAMPLE** status refers to Dynamic Media sample assets, and the **OOTB** status refers to the out-of-the-box viewer assets. A count of **0 unsynced assets** and **0 unactivated assets** confirms that everything is synced and activated as expected.
+1. Observe the computed values reported by the diagnostic page. When the system operates correctly, the diagnostic page reports the following: `_DMSAMPLE status: 0 unsyced assets - activation not necessary _OOTB status: 0 unsyced assets - 0 unactivated assets`. Here, the **DMSAMPLE** status refers to Dynamic Media sample assets, and the **OOTB** status refers to the default viewer assets. A count of **0 unsynced assets** and **0 unactivated assets** confirms that everything is synced and activated as expected.
 
    >[!NOTE]
    >
@@ -383,11 +381,11 @@ In CRXDE Lite (the developer console for the Adobe Experience Manager repository
 1. Check for the presence of `dam:scene7*` properties. If the asset synced and published successfully, the **`dam:scene7FileStatus`** property is set to **PublishComplete**, confirming the asset synced and published successfully. If these `dam:scene7*` properties are absent, the asset never completed the sync-and-publish workflow, which is the underlying cause of the 404.
 1. Attempt to request the artwork directly from Dynamic Media by concatenating the values of the following properties and string literals. A successful direct request confirms the artwork exists on the Dynamic Media server; a 404 confirms it was never published:
 
-   * `dam:scene7Domain`
-   * `"is/content"`
-   * `dam:scene7Folder` 
-   * `<asset-name>` 
-    Example: `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+       * `dam:scene7Domain`
+       * `"is/content"`
+       * `dam:scene7Folder` 
+       * `<asset-name>` 
+      Example: `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
 
 **Solution: restarting the copy and sync process**
 
@@ -395,12 +393,12 @@ If the direct request fails or the `dam:scene7*` properties are missing, the sam
 
 1. Navigate to CRXDE Lite. 
 1. Delete `<sync-folder>/_CSS/_OOTB`. This removes the stale, unsynced artwork folder so it can be regenerated cleanly.
-1. Navigate to the CRX Package Manager (the repository package installation tool): `https://localhost:4502/crx/packmgr/`.
+1. Navigate to the Adobe CRX Package Manager (the repository package installation tool): `https://localhost:4502/crx/packmgr/`.
 1. Search for the viewer package in the list; it starts with `cq-dam-scene7-viewers-content`.
-1. Select **Reinstall**. Reinstalling this package restores the out-of-the-box viewer preset content.
+1. Select **Reinstall**. Reinstalling this package restores the standard viewer preset content.
 1. Under Cloud Services, navigate to the Dynamic Media Configuration page, then open the configuration dialog box for your Dynamic Media - S7 configuration.
 1. Make no changes, then select **Save**.
-   This save action triggers the configuration logic again, because re-saving the Dynamic Media - S7 configuration forces Experience Manager to recreate and re-sync the sample assets, viewer preset CSS, and artwork, resolving the 404 error.
+   This save action triggers the configuration logic again, because re-saving the Dynamic Media S7 configuration forces Experience Manager to recreate and re-sync the sample assets, viewer preset CSS, and artwork, resolving the 404 error.
 
 ### Issue: Error #2046 When Opening the Bandwidth & Storage Tab {#error-2046-bandwidth-storage}
 
@@ -408,13 +406,13 @@ If the direct request fails or the `dam:scene7*` properties are missing, the sam
 
 ![Error #2046 displayed in the Bandwidth & Storage tab in Dynamic Media Classic](assets/2046-error.png)
 
-**Error #2046** appears when users open the **Bandwidth & Storage** tab in the **Dynamic Media Classic (Scene7)** desktop application, an Adobe asset-management tool used to host, manage, and deliver rich media. The error is caused by an **expired digital signing certificate** contained in a cached **RSL (Runtime Shared Library)** used by the **Adobe AIR (Adobe Integrated Runtime)** framework.
+**Error #2046** appears when users open the **Bandwidth & Storage** tab in the **Dynamic Media Classic (Scene7)** desktop application, an Adobe asset-management tool used to host, manage, and deliver rich media. An **expired digital signing certificate** contained in a cached **RSL (Runtime Shared Library)** used by the **Adobe&reg; AIR&reg; (Adobe Integrated Runtime)** framework causes the error.
 
-The failure is triggered during **local certificate re-validation**: when the application loads the cached RSL, it attempts to verify the signing certificate, and because that cached certificate has expired, the validation fails and Error #2046 is thrown. Because the problem lies in the locally stored library rather than the application itself, the fix is to remove the outdated cached files so that a current, validly signed RSL can be retrieved.
+The failure occurs during **local certificate re-validation**. When the application loads the cached RSL, it attempts to verify the signing certificate. Because that cached certificate has expired, the validation fails and Error #2046 occurs. Because the problem lies in the locally stored library rather than the application itself, the fix is to remove the outdated cached files so that a current, validly signed RSL can be retrieved.
 
 **Solution: Clear the Local Adobe AIR Cache**
 
-Clear the local cache to force **Adobe AIR** to download the updated **RSL (Runtime Shared Library)**. Deleting the stale cached files removes the expired certificate, and on the next launch Adobe AIR downloads a freshly signed RSL that passes local certificate re-validation, resolving the error.
+To force **Adobe&reg; AIR&reg;** to download the updated **RSL (Runtime Shared Library)**, clear the local cache. Deleting the stale cached files removes the expired certificate, and on the next launch Adobe&reg; AIR&reg; downloads a freshly signed RSL that passes local certificate re-validation, resolving the error.
 
 **macOS**
 
@@ -428,7 +426,7 @@ Clear the local cache to force **Adobe AIR** to download the updated **RSL (Runt
    `%APPDATA%\Adobe\Flash Player\AssetCache\<folder>\`
 2. Delete all files inside the folder.
 
-**Restart the application after clearing the cache.** On restart, open the **Bandwidth & Storage** tab again to confirm that Error #2046 no longer appears, which indicates the updated RSL was successfully downloaded and validated.
+**Restart the application after clearing the cache.** To confirm that Error #2046 no longer appears, open the **Bandwidth & Storage** tab again on restart. This indicates the updated RSL was successfully downloaded and validated.
 
 ### Issue: Image Preview is not loading in Viewer presets authoring {#image-preview-not-loading}
 

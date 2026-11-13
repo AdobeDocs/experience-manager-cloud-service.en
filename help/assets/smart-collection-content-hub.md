@@ -3,6 +3,12 @@ title: Smart Collections in Content Hub
 description: Learn how to create and use Smart Collections in Content Hub to automatically organize assets based on search criteria.
 role: User
 badgeSaas: label="AEM Assets" type="Positive"
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 
 # Smart Collections in Content Hub {#smart-collections-content-hub}
@@ -12,10 +18,6 @@ Smart Collections enable you to automatically organize assets based on defined s
 When you create a Smart Collection, the collection stores the search query and filter criteria instead of storing individual assets. Assets that match the configured criteria are automatically displayed in the collection.
 
 Smart Collections automatically remain up to date. When newly approved assets satisfy the configured search criteria, they are automatically added to the collection.
-
->[!IMPORTANT]
->
->This feature is available as a Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/support.html) to enable it for your deployment.
 
 ## Create a Smart Collection {#create-smart-collection}
 

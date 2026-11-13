@@ -218,7 +218,7 @@ To log a support ticket, you must first register your Edge Delivery site in Clou
 1. In the description, provide the following details in addition to the problem description:
 
     * URL of the live website. For example: `www.mydomain.com`.
-    * URL of the origin website (`.hlx` URL).
+    * URL of the origin website (`.aem.page` or `aem.live` URL).
 
 ## Sign in to Cloud Manager {#sign-in-to-cloud-manager}
 

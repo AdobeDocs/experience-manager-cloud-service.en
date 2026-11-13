@@ -3,6 +3,9 @@ title: Content Hub frequently asked questions (FAQs)
 description: Get responses to some of the most frequently asked questions (FAQs) for Content Hub.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 ---
 # [!DNL Content Hub] frequently asked questions {#content-hub-frequently-asked-questions}
 
@@ -199,14 +202,21 @@ To configure a custom link for your organization's brand guidelines, see [Custom
 
 ## Is there any plan on migrating existing Brand Portal customers to AEM [!DNL Assets] [!DNL Content Hub]? {#migration-brand-portal}
 
-Yes. Adobe provides **migration support** for existing **Brand Portal** customers moving to **Adobe Experience Manager (AEM) [!DNL Assets] [!DNL Content Hub]**. This migration path is officially supported, and existing Brand Portal customers can initiate it directly through Adobe's support channels.
+Yes. Adobe manages the migration from Brand Portal to AEM [!DNL Assets] [!DNL Content Hub] for existing Brand Portal customers. The migration works as follows:
 
-To begin the migration from Brand Portal to AEM [!DNL Assets] [!DNL Content Hub]:
+1. Adobe copies your **assets and collections** from Brand Portal to [!DNL Content Hub].
+1. During the migration, **both Brand Portal and [!DNL Content Hub] remain available**, so you can continue using Brand Portal while you validate [!DNL Content Hub].
+1. After you complete validation and are ready to transition users to [!DNL Content Hub], publish an announcement on Brand Portal that directs users to the new [!DNL Content Hub] portal.
+1. Provide Adobe with approval to decommission your Brand Portal instance.
+1. Adobe decommissions your Brand Portal instance within **2 business days** of receiving your approval.
 
-1. **Create an Adobe support ticket** requesting migration from Brand Portal to AEM [!DNL Assets] [!DNL Content Hub].
-2. **Work with Adobe support** to plan and execute the transition of your assets and configuration.
+The migration involves **no downtime**:
 
-Creating the support ticket initiates the migration process, allowing Adobe to coordinate the transfer of brand assets and related content into AEM [!DNL Assets] [!DNL Content Hub]. Because [!DNL Content Hub] is designed as the successor experience for distributing approved brand assets, this supported migration path ensures that existing Brand Portal customers can transition without losing access to their managed content.
+* Brand Portal remains active while assets and collections are replicated to [!DNL Content Hub].
+* You can validate your migrated content in [!DNL Content Hub] without interrupting your existing Brand Portal users.
+* Brand Portal is decommissioned only after you confirm that you are ready to complete the cutover.
+
+To discuss the migration, contact the [!DNL Content Hub] team at [aemcontenthub@adobe.com](mailto:aemcontenthub@adobe.com).
 
 ## Why cannot I see the Product Settings/Configuration option in AEM [!DNL Assets] [!DNL Content Hub]? {#ui-configuration-option-missing}
 
@@ -297,15 +307,7 @@ To view assets only for a selected environment in **Adobe Experience Manager (AE
 
    [!DNL Content Hub] now displays assets for the selected environment, because the interface is pointed at that environment's delivery repository and reads its assets directly.
 
-   >[!NOTE]
-   >
-   >If assets from a specific environment, for example, **STAGE** are not appearing in [!DNL Content Hub] while assets from another environment, for example, **PRODUCTION** are, check the **[!UICONTROL Select Repository]** setting in your [!DNL Content Hub] profile. [!DNL Content Hub] connects to one specific delivery repository at a time, and the UI can remain pointed at a different environment's repository, for example, still **PRODUCTION** than the one currently being tested. As a result, the expected assets do not surface even though they exist. Switching the repository selection to the correct environment directly resolves this, and it does so without any change to asset approval or Attribute-Based Access Control (ABAC) configuration.
-
-## How can AEM [!DNL Assets] [!DNL Content Hub] display the thumbnail preview for .ZIP file type? {#thumbnail-preview-zip-file}
-
-Adobe Experience Manager (AEM) [!DNL Assets] [!DNL Content Hub] displays a thumbnail preview for file types such as .ZIP when a correctly named rendition is added to the asset. Add a rendition named **`cq5dam.<label>.<width>.<height>.<ext>`** to the root of the path where the .ZIP is available in Adobe Experience Manager (AEM) as a Cloud Service authoring environment. For example, **`cq5dam.preview.500.500.png`**.
-
-### How [!DNL Content Hub] selects the rendition
+## How can AEM Assets Content Hub display the thumbnail preview for .ZIP file type? {#thumbnail-preview-zip-file}
 
 [!DNL Content Hub] picks the rendition with the **greatest width** among all `cq5dam.*` renditions. This ensures the highest-resolution image is used as the preview. A custom rendition displays as a thumbnail preview only if its encoded width exceeds the existing auto-generated renditions.
 
@@ -329,37 +331,6 @@ If you do not add a custom rendition, [!DNL Content Hub] determines the thumbnai
 
 * **If the .ZIP contains one or more images**, [!DNL Content Hub] picks one of them as the thumbnail. When there are multiple images, it selects the first one in **alphanumeric filename order**.
 
-* **If the .ZIP contains only non-image files** (for example, only a PDF, or only a video, with no eligible image inside), no thumbnail is generated. [!DNL Content Hub] does not extract a preview frame from a video and does not render a preview from a PDF inside the .ZIP file.
-
-To guarantee a specific preview, add a custom `cq5dam.<label>.<width>.<height>.<ext>` rendition rather than relying on automatic selection, because automatic selection depends entirely on eligible image files being present inside the .ZIP.
-
-## What Happens When I Approve an Asset for [!DNL Content Hub] versus Delivery? {#approve-an-asset}
-
-Approving an asset with **Delivery** as the Approval Target is required to make the asset reachable through **public link-sharing**, while approving with **[!DNL Content Hub]** as the target only makes the asset visible inside the [!DNL Content Hub] portal. Approval is not a single binary state: the **Approval Target** selected at approval time determines exactly what the approval enables.
-
-### [!DNL Content Hub] Target Versus Delivery Target
-
-* **[!DNL Content Hub] target** — Makes the asset visible inside the [!DNL Content Hub] portal itself, but does **not** make it accessible through a public share link.
-* **Delivery target** — Required for the asset to be reachable through **public link-sharing**.
-
-This distinction exists because [!DNL Content Hub] portal visibility and public Delivery are governed by separate approval scopes. Selecting the wrong target therefore restricts where and how the asset can ultimately be accessed.
-
-### Troubleshooting Broken Public Share Links
-
-A **There is no content to display** message or a **404 Error** on a shared public link occurs because the underlying asset was approved with **[!DNL Content Hub]** as the target rather than **Delivery**. To resolve a broken share link, follow these steps:
-
-1. Open the asset and check its **Approval Target**.
-2. If the target is set to **[!DNL Content Hub]**, correct it to **Delivery**.
-3. Re-test the public share link before investigating any other cause.
-
-Correcting the **Approval Target** to **Delivery** should be the first troubleshooting action, as it is the most frequent cause of inaccessible public links.
-
-### The `dam:roles` Metadata Field
-
-When an asset is approved with **[!DNL Content Hub]** as the target, Adobe Experience Manager (AEM) auto-populates the `dam:roles` metadata field with a system-managed Identity Management System (IMS) group identifier. This is an expected, system-managed security mechanism used to restrict access to authenticated users only.
-
-The presence of this identifier is **not** evidence of a workflow bug. The `dam:roles` value should not be manually edited or removed, and it does **not** conflict with the Attribute-Based Access Control (ABAC) rules. If a metadata schema exposes this field, mark it read-only or hidden so authors do not inadvertently change it. Control access visibility through ABAC and metadata configuration rather than by editing `dam:roles` directly, because manual edits to a system-managed field can disrupt the intended authenticated-access restrictions.
-
 **See also**
 
 * [Translate [!DNL Assets]](/help/assets/translate-assets.md)
@@ -376,4 +347,4 @@ The presence of this identifier is **not** evidence of a workflow bug. The `dam:
 * [Search facets](/help/assets/search-facets.md)
 * [Manage collections](/help/assets/manage-collections.md)
 * [Bulk metadata import](/help/assets/metadata-import-export.md)
-* [Publish [!DNL Assets] to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

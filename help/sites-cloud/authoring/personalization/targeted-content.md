@@ -1,11 +1,20 @@
 ---
 title: Authoring Targeted Content Using Targeting Mode
-description:  Targeting mode and the Target component provide tools for creating content for experiences
+description: Targeting mode and the Target component provide tools for creating content for experiences
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Authoring Targeted Content Using Targeting Mode {#authoring-targeted-content-using-targeting-mode}
 

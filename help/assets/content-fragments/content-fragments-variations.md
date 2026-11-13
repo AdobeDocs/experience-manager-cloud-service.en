@@ -1,11 +1,23 @@
 ---
 title: Variations - Authoring Fragment Content (Assets - Content Fragments)
 description: Understand how Content Fragment variations allow you to author content for the fragment, then create variations of that content according to purpose, therefore increasing the flexibility.
-badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)." 
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Variations - Authoring Fragment Content{#variations-authoring-fragment-content}
 
@@ -20,6 +32,12 @@ solution: Experience Manager Sites
 >This section covers the original editor. This is [opened via the new editor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor).
 >
 >See the Sites documentation, [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), for full details of the new editor.
+
+>[!WARNING]
+>
+>Composite fields cannot be edited in the original Content Fragment Editor. 
+>
+>Use the new editor to [edit composite fields](/help/sites-cloud/administering/content-fragments/authoring.md#edit-a-composite-field).
 
 From the **Variations** tab, authors can perform the following core tasks:
 
@@ -145,7 +163,7 @@ The format can be selected when the full-screen editor is open, allowing you to 
   * **Find/Replace**
   * **Spellchecker**
   * [Annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-* [Insert Content Fragment](#inserting-content-fragment-into-your-fragment); available when your **Multi-line text** field is configured with **Allow Fragment Reference**.
+* [Referenced Content Fragment](#referencing-content-fragment-from-your-fragment); available when your **Multi-line text** field is configured with **Allow Fragment Reference**.
 
 The [actions](#actions) are also accessible from the full-screen editor, so you can perform the same operations whether you work in the inline editor or the expanded full-screen view.
 
@@ -340,11 +358,11 @@ The assets are added to the paragraph sequence of the fragment without any forma
    >* **Plain Text**: the asset is removed and lost from the fragment, because plain text does not support embedded assets.
    >* **Markdown**: the asset is not visible, but is still there when you return to **Rich Text**.
 
-### Inserting a Content Fragment into your Fragment {#inserting-content-fragment-into-your-fragment}
+### Referencing a Content Fragment from your Fragment {#referencing-content-fragment-from-your-fragment}
 
-To streamline content fragment authoring, you can embed another Content Fragment directly within your current fragment.
+To streamline content fragment authoring, you can reference another Content Fragment from within your current fragment.
 
-The nested fragment is inserted as a reference at your current cursor location within the fragment. This ensures the referenced content stays synchronized with its source, so updates made in the original fragment propagate automatically.
+The referenced fragment is inserted as a reference at your current cursor location within the fragment. This ensures the referenced content stays synchronized with its source, so updates made in the original fragment propagate automatically.
 
 >[!NOTE]
 >

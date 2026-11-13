@@ -5,6 +5,14 @@ feature: Content Fragments, Assets HTTP API
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Content Fragments Support in the AEM Assets HTTP API {#content-fragments-support-in-aem-assets-http-api}
 
