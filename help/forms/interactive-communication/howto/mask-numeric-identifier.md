@@ -5,7 +5,6 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms."
-hide: true
 ---
 
 # Mask numeric values in AEM Forms {#mask-numeric-values}
