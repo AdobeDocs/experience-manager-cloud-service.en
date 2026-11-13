@@ -6,11 +6,11 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets."
 exl-id:
 ---
 
-# Deliver barcode images using Dynamic Media with OpenAPI {#deliver-barcode-images}
+# Deliver barcode or QR code images using Dynamic Media with OpenAPI{#deliver-barcode-images}
 
-Dynamic Media with OpenAPI lets you request barcode and QR code images through a delivery URL. For example, a campaign can use a barcode delivery URL to include a personalized coupon barcode in an email.
+Dynamic Media with OpenAPI lets you request barcode or QR code images through a delivery URL. For example, a campaign can use a barcode delivery URL to include a personalized coupon barcode in an email.
 
-The barcode request uses a blank canvas as its source and returns the generated image in the requested format. Request parameter locking helps ensure that the barcode value and its associated barcode type cannot be changed without a valid lock.
+The barcode request uses a blank canvas as its source and returns the generated image in the requested format. Request parameter locking helps protect query parameters from unauthorized changes.
 
 This feature is available as a Limited Availability (LA) feature. Contact [Adobe Customer Support](https://helpx.adobe.com/contact.html) to request access.
 
@@ -38,7 +38,7 @@ Replace the placeholders with the values for your request.
 | `tenant-delivery-host` | The delivery host for your environment. |
 | `seoName` | An SEO-friendly name for the requested image. This name is cosmetic and does not determine the barcode content. |
 | `format` | The output image format. Supported formats are `png` and `svg`. |
-| `barcode` | The barcode value and barcode type, separated by a comma. For example, `DEMO123,code128`. |
+| `barcode` | The barcode value, optionally followed by a comma and the barcode type. For example, `DEMO123,code128`. If you omit the type, the default is `code128`. |
 | `token` | The lock token associated with the barcode request. |
 | `width` | The requested image width. |
 | `height` | The requested image height. |
@@ -49,20 +49,32 @@ Use the request parameters to specify the barcode content, output format, and im
 
 ### Barcode value and type {#barcode-value-and-type}
 
-The `barcode` parameter contains two values:
+The `barcode` parameter accepts the barcode value and an optional barcode type.
 
-* The content to encode in the barcode.
-* The barcode type.
+Use the following syntax:
 
-Separate the values with a comma.
+\`\`\`text
+codevalue[,type]
+\`\`\`
+
+* `codevalue` specifies the content to encode in the barcode.
+* `type` specifies the barcode type and is optional. If you omit it, the default type is `code128`.
+
+Separate the barcode value and type with a comma when specifying the type.
 
 For example:
 
-```http
+\`\`\`http
 barcode=DEMO123%2Ccode128
-```
+\`\`\`
 
-The supported barcode types include:
+To use the default barcode type, specify only the barcode value:
+
+\`\`\`http
+barcode=DEMO123
+\`\`\`
+
+The supported barcode types are:
 
 * `code128`
 * `qr`
@@ -87,19 +99,41 @@ Use the `width` and `height` parameters to specify the requested image dimension
 * The default height is 100 pixels for Code 128 barcodes and 300 pixels for QR codes.
 * The `width` and `height` parameters apply to PNG output. They are ignored for SVG output.
 
+>[!NOTE]
+>
+>If the requested dimensions are too small to accommodate the barcode grid, the request can return a `400 Bad Request` response.
+
 ## Understand request parameter locking {#understand-request-locking}
 
-Request parameter locking helps protect the barcode request from unauthorized changes.
+Request parameter locking protects the query parameters specified in the locked-field list inside the `token` parameter.
 
-A lock is associated with the barcode value and its barcode type. The values in the request must match the values associated with the lock.
+The lock token uses the following structure:
 
-For example:
+\`\`\`text
+lock:<signature>[:<field-list>[:<keyId>]]
+\`\`\`
 
-* When the barcode value and type match the lock, the request can return the barcode image.
-* If you change the barcode value but reuse the original lock, the request fails because the lock is not valid for the modified value.
-* If you change the lock token, the request also fails when the token is invalid.
+The `lock` prefix and signature are mandatory. The field list and `keyId` are optional.
 
-To request a barcode for a different value, obtain a lock associated with that value.
+* `signature`: The signature used to validate the locked request parameters.
+* `field-list`: The query parameters to protect. If this field is omitted or empty, the configured default field list is used. If no default field list is configured, all query parameters except `token` are validated in request order.
+* `keyId`: Identifies the key associated with the lock.
+
+To protect the barcode request, include `barcode` in the field list.
+
+Examples of barcode-locking tokens:
+
+\`\`\`text
+token=lock:<signature>:barcode
+\`\`\`
+
+\`\`\`text
+token=lock:<signature>:barcode:<keyId>
+\`\`\`
+
+When `barcode` is included in the locked-field list, the lock protects its complete value, including the barcode type when specified.
+
+Changing a locked query parameter while reusing the same token causes validation to fail. To request a different barcode value, use a lock that is valid for the new request parameters.
 
 ## Troubleshoot barcode requests {#troubleshoot}
 
@@ -107,15 +141,15 @@ If a barcode request fails, review the request parameters and lock token.
 
 | Issue | What to check |
 | --- | --- |
-| The barcode parameter is missing or invalid. | Verify that the barcode value and barcode type are included and separated by a comma. |
+| The barcode parameter is missing or invalid. | Verify that the barcode value is provided. If you specify a barcode type, separate it from the value with a comma. The type is optional and defaults to `code128`. |
 | The lock is invalid or revoked. | Verify that the request uses a valid lock token. |
-| The barcode value does not match the lock. | Use the barcode value and type associated with the lock. Obtain a new lock if you need to request a different barcode value. |
-| The barcode type is unsupported. | Verify that the requested type is supported. |
-| The image dimensions are invalid. | Verify that the requested width and height are within the supported range. |
+| A locked parameter does not match the lock. | Verify that the query parameter values match those protected by the lock. Obtain a new lock if you need to change a locked value. |
+| The barcode type is unsupported. | If you specify a barcode type, verify that it is either `code128` or `qr`. |
+| The image dimensions are invalid. | Verify that the requested width and height are within the supported range and are large enough to accommodate the barcode grid. |
 
 ## Check the response {#check-response}
 
-A successful request returns the generated barcode image.
+A successful request returns the generated barcode or QR code image.
 
 The API can return the following response statuses:
 
