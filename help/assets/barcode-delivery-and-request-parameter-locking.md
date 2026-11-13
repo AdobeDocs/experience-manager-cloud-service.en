@@ -27,6 +27,7 @@ To request a barcode or QR code image, send a GET request to the barcode deliver
 ```http
 GET https://<tenant-delivery-host>/adobe/assets/urn:aaid:aem:canvas/as/coupon-barcode.png?barcode=DEMO123%2Ccode128&token=<URL-encoded-lock-token>&width=400&height=500
 ```
+
 >[!NOTE]
 >
 >URL-encode reserved characters in the `barcode` and `token` parameter values when including them in the request URL. URL transport encoding does not define the input used to generate or validate the lock signature.
