@@ -54,7 +54,7 @@ Through these agents, the Brand Experience Agent absorbs the heavy operational w
 
 Experience Modernization removes the friction from large-scale site migrations by automatically modernizing existing experiences, helping teams transition faster while maintaining continuity, quality, and trust.
 
-Migrations can be driven from a live source website, from Figma designs, or a combination of both. The agent supports [redesign migrations that map source content into Figma-derived blocks](/help/ai-in-aem/agents/brand-experience/modernization/overview.md#figma-redesign) and [generating new pages directly from Figma frames.](/help/ai-in-aem/agents/brand-experience/modernization/overview.md#figma-new-page)
+Migrations can be driven from a live source website, from Figma designs, or a combination of both. The agent supports [redesign migrations that map source content into Figma-derived blocks](/help/ai-in-aem/agents/brand-experience/modernization/restyling.md#during-migration) and [generating new pages directly from Figma frames.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-new-page-from-figma)
 
 ## Experience Production Agent {#experience-production}
 
@@ -62,11 +62,11 @@ Migrations can be driven from a live source website, from Figma designs, or a co
 
 ### Content Update Job {#content-update}
 
-[The Content Update job](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) updates existing content — including content fragments, pages, forms and assets — with ease. The agent can perform actions such as updating, removing, replacing, or adding content elements to keep experiences accurate and current. Inputs can be natural language description, and when used with Jira PDFs and screenshots can provide input too.
+[The Content Update job](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/content-update.md) updates existing content — including content fragments, pages, forms and assets — with ease. The agent can perform actions such as updating, removing, replacing, or adding content elements to keep experiences accurate and current. Inputs can be natural language description, and when used with Jira PDFs and screenshots can provide input too.
 
 ### Content Create Job {#content-create}
 
-The [Content Create](/help/ai-in-aem/agents/brand-experience/experience-production/content-create.md) job creates new pages based on a marketing brief, a template and a natural language prompt.
+The [Content Create](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/content-create.md) job creates new pages based on a marketing brief, a template and a natural language prompt.
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ The [Content Create](/help/ai-in-aem/agents/brand-experience/experience-producti
 
 ### Figma to Visual Content Fragments Job {#figma-to-visual-content-fragments}
 
-The [Figma to Visual Content Fragments](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md) job imports Figma designs to AEM Content Models, Content Fragments and HTML templates.
+The [Figma to Visual Content Fragments](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/figma-to-visual-content-fragments.md) job imports Figma designs to AEM Content Models, Content Fragments and HTML templates.
 
 ### Forms Creation Job {#forms-creation}
 

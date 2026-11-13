@@ -48,11 +48,11 @@ The agent provides the following jobs:
 
 ### Content Update Job {#content-update}
 
-The [Content Update](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) job updates existing content — including content fragments, pages, forms and assets — with ease. The agent can perform actions such as updating, removing, replacing, and adding content elements to keep experiences accurate and current. Inputs can be natural language description, and when used with Jira, PDFs and screenshots can provide input too.
+The [Content Update](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/content-update.md) job updates existing content — including content fragments, pages, forms and assets — with ease. The agent can perform actions such as updating, removing, replacing, and adding content elements to keep experiences accurate and current. Inputs can be natural language description, and when used with Jira, PDFs and screenshots can provide input too.
 
 ### Content Create Job {#content-create}
 
-The [Content Create](/help/ai-in-aem/agents/brand-experience/experience-production/content-create.md) job creates new pages based on a marketing brief, a template and a natural language prompt.
+The [Content Create](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/content-create.md) job creates new pages based on a marketing brief, a template and a natural language prompt.
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ The [Content Create](/help/ai-in-aem/agents/brand-experience/experience-producti
 
 ### Figma to Visual Content Fragments Job {#figma-to-visual-content-fragments}
 
-The [Figma to Visual Content Fragments](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md) job imports Figma designs to AEM Content Models, Content Fragments and HTML templates.
+The [Figma to Visual Content Fragments](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/figma-to-visual-content-fragments.md) job imports Figma designs to AEM Content Models, Content Fragments and HTML templates.
 
 ### Form Creation Job {#form-creation}
 

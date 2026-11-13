@@ -83,7 +83,7 @@ To create a Live Copy of your Content Fragment:
 1. Select your fragment.
 1. Select **Create Live Copy** from the top toolbar.
 1. In the dialog that opens specify the destination and continue with **Next**.
-1. Specify the properties. You can specify the title, name and whether the Live Copy should exclude children (nested fragments).
+1. Specify the properties. You can specify the title, name and whether the Live Copy should exclude children (nested content).
 1. Continue with **Next**.
 1. Select whether you want the Live Copy created immediately (**Now**), or at a **Later** date and time.
 1. Confirm with **Create Live Copy**.
@@ -262,6 +262,13 @@ For example:
 
   ![Revert to inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-revert-to-inheritance.png)
 
+>[!CAUTION] 
+>
+> For Composite fields inheritance can only be broken for top-level fields. 
+>
+>* Inheritance for an entire composite field can be broken.
+>* Breaking inheritance for individual fields within composite items is not supported.
+
 >[!NOTE]
 >
 >For more details see [Cancel, and revert to, inheritance in the editor](/help/sites-cloud/administering/content-fragments/authoring.md#cancel-and-revert-to-inheritance).
@@ -285,3 +292,7 @@ In most scenarios, MSM for Content Fragments matches the behavior of MSM for Sit
 ## Limitations {#limitations}
 
 * On-modify triggers, and the associated rollout configuration, do not exist for Content Fragments.
+* Composite fields
+  * Inheritance can only be broken for top-level fields. 
+    * Inheritance for an entire composite field can be broken.
+    * Breaking inheritance for individual fields within composite items is not supported.
