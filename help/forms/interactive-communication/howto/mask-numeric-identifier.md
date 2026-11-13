@@ -67,13 +67,13 @@ Use a custom numeric display pattern (picture clause) to leave selected trailing
 1. In **[!UICONTROL Pattern]**, enter a numeric picture clause from the examples below. Enter only the expression, without surrounding backticks or quotation marks.
 1. Check the masked value on the canvas.
 
-For a 16-digit value, use `num{mmmmmmmmmmmm9999}` to show only the last four digits. For example, `1234567812345678` displays as `************5678`.
+For a 16-digit value, use `num{mmmmmmmmmmmmzzzz}` to show only the last four digits. For example, `1234567812345678` displays as `************5678`.
 
 The following table compares custom patterns for the same synthetic value:
 
 | Pattern | Result |
 |---------|--------|
-| `num{mmmmmmmmmmmm9999}` | `************5678` |
+| `num{mmmmmmmmmmmmzzzz}` | `************5678` |
 | `num{mmmmmmmmmmmmmmm9}` | `***************8` |
 | `num{mmmmmmmmmmmmmmmm}` | `****************` |
 
@@ -81,11 +81,13 @@ The following table compares custom patterns for the same synthetic value:
 
 ![Custom Numeric Field pattern masking the first 12 digits and leaving 5678 visible on the canvas.](/help/forms/interactive-communication/assets/masking-partial-annotated.png)
 
+The **[!UICONTROL Pattern]** field is horizontally scrolled in this screenshot. The complete expression is `num{mmmmmmmmmmmmzzzz}`.
+
 | Label | Description |
 |-------|-------------|
 | **a** | **[!UICONTROL Value]:** The numeric value to format. |
 | **b** | **[!UICONTROL Display type]:** Select **[!UICONTROL Custom]** to enter your own masking pattern. |
-| **c** | **[!UICONTROL Pattern]:** Enter `num{mmmmmmmmmmmm9999}` to mask the first 12 digits and display the last four. |
+| **c** | **[!UICONTROL Pattern]:** Enter `num{mmmmmmmmmmmmzzzz}` to mask the first 12 digits and display the last four. |
 | **d** | **Canvas result:** The partially masked value, `************5678`. |
 
 **Custom full masking**
@@ -107,9 +109,9 @@ Check representative values from your data, including the shortest and longest v
 
 ## 4. Numeric masking symbols and limits {#pattern-considerations}
 
-The symbols in a numeric picture clause determine which digit positions are masked or displayed. In `num{mmmmmmmmmmmm9999}`, the 12 `m` positions mask the first 12 digits of a 16-digit value, and the four `9` positions keep the last four digits visible.
+The symbols in a numeric picture clause determine which digit positions are masked or displayed. In `num{mmmmmmmmmmmmzzzz}`, the 12 `m` positions mask the first 12 digits of a 16-digit value, and the four `z` positions display the last four digits once a significant digit has been reached.
 
-The `z` symbol appears in the predefined pattern, `num{mmmm mmmm mmmm mmmm zzz9}`, but is not needed in the custom examples.
+The `z` positions are optional and suppress leading zeros until a significant or required digit is reached. Use `9` when a digit position must always be displayed, as in the last-digit example `num{mmmmmmmmmmmmmmm9}`. The predefined pattern, `num{mmmm mmmm mmmm mmmm zzz9}`, uses both symbols.
 
 | Symbol | Meaning |
 |--------|---------|
@@ -120,7 +122,7 @@ The `z` symbol appears in the predefined pattern, `num{mmmm mmmm mmmm mmmm zzz9}
 Keep these considerations in mind when choosing a pattern:
 
 * Include enough digit positions for the longest value. Values exceeding the pattern's capacity display unchanged in the canvas.
-* Leading zeros can be suppressed. The result for an all-zero value depends on required digit positions and literal separators. For example, `num{mmmmmmmmmmmmmmmm}` displays `0`, while `num{mmmmmmmmmmmm9999}` displays `0000`.
+* Leading zeros can be suppressed. The result for an all-zero value depends on required digit positions and literal separators. For example, `num{mmmmmmmmmmmmzzzz}` displays `0`, while a pattern with four required digit positions, `num{mmmmmmmmmmmm9999}`, displays `0000`.
 * Spaces and hyphens in a pattern remain in the displayed result.
 * If the preset is unavailable for the [selected locale](/help/forms/interactive-communication/support-localization.md), enter its picture clause using **[!UICONTROL Custom]**.
 * These examples mask integer values, not decimal digits.
@@ -139,7 +141,7 @@ Enter the complete numeric picture clause in the **[!UICONTROL Pattern]** field 
 
 ### 5.2 Why is the value unmasked? {#why-is-the-value-unmasked}
 
-Check that the pattern contains only the intended expression, without copied backticks or quotation marks. Enter the complete expression, for example `num{mmmmmmmmmmmm9999}`. Values exceeding the pattern's digit capacity display unchanged. Check the input length against the available digit positions. See [Numeric masking symbols and limits](#pattern-considerations).
+Check that the pattern contains only the intended expression, without copied backticks or quotation marks. Enter the complete expression, for example `num{mmmmmmmmmmmmzzzz}`. Values exceeding the pattern's digit capacity display unchanged. Check the input length against the available digit positions. See [Numeric masking symbols and limits](#pattern-considerations).
 
 ### 5.3 How do I mask every digit? {#how-do-i-mask-every-digit}
 
