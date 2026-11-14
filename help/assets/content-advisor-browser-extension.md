@@ -118,9 +118,9 @@ Select the menu icon next to the floating AEM Content Advisor widget to view the
 
 | Option | Description |
 | --- | --- |
-| **Hide for now** | Hides the floating widget temporarily. |
+| **Hide for now** | Hides the floating widget temporarily. The widget appears again when you reload the page. |
 | **Disable for this site** | Disables AEM Content Advisor on the current website and adds the website to the **Websites where Content Advisor is disabled** list. |
-| **Never display** | Stops displaying the floating widget. |
+| **Never display** | Stops displaying the floating widget and clears the **Show floating widget** option. To display the widget again, select **Show floating widget** on the **AEM Content Advisor preferences** page, or select the **Settings** icon in the AEM Content Advisor panel and select **Show floating widget**. |
 | **Preferences** | Opens the **AEM Content Advisor preferences** page. |
 
 To disable AEM Content Advisor on a website:
