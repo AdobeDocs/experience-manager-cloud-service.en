@@ -15,7 +15,7 @@ role_v2:
 ---
 # Interactive images{#interactive-images}
 
-You can easily make static images rich, engaging experiences for customers by dragging and dropping "shoppable" hotspots onto an image. Shoppable hotspots combine additional information about a product or service with a direct, point-of-sale "Add to cart" or "Buy" capability. Customers can select these hotspots that link directly to the product or service, add it to a shopping cart, or be linked to a web page. Direct experiences such as these increase customer engagement and conversions on your web site.
+You can easily make static images rich, engaging experiences for customers by dragging and dropping "shoppable" hotspots onto an image. Shoppable hotspots combine additional information about a product or service with a direct, point-of-sale "Add to cart" or "Buy" capability. Customers can select these hotspots that link directly to the product or service, add it to a shopping cart, or link to a web page. Direct experiences such as these increase customer engagement and conversions on your web site.
 
 The following is a shoppable banner with a Quickview pop-up window. A user activates the Quickview by tapping the circle or "hotspot" on the model.
 
@@ -42,8 +42,8 @@ Interactive Images steps:
 1. **(Optional) Identify hotspot variables**. If you use Adobe Experience Manager Assets and Dynamic Media standalone, identify dynamic variables used in your existing Quickview implementation. Doing so ensures that you can enter hotspot data when creating the interactive image. See [(Optional) Identifying hotspot variables](#optional-identifying-hotspot-variables).
 However, if you use Experience Manager Sites, or Experience Manager eCommerce, or both, then this step is not necessary.
 
-1. **(Optional) Create an Interactive Image viewer preset**. Customize the graphic image that is used to represent hotspots. Creating your own Interactive Image viewer preset is not required if you intend to use the default Interactive Image viewer preset named `Shoppable_Banner` instead.
-See [(Optional) Creating an Interactive Image viewer preset](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset).
+1. **(Optional) Create an Interactive Image Viewer preset**. Customize the graphic image that is used to represent hotspots. Creating your own Interactive Adobe Image Viewer preset is not required if you intend to use the default Interactive Image viewer preset named `Shoppable_Banner` instead.
+See [(Optional) Create an Interactive Image viewer preset](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset).
 
 1. **Upload an image banner**. Upload image banners that you want to make interactive.
    See [Uploading an image banner](#uploading-an-image-banner).
@@ -54,7 +54,7 @@ See [(Optional) Creating an Interactive Image viewer preset](/help/assets/dynami
    See [Publishing Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) for details on how to publish interactive image assets.
 
 1. **Add an interactive image to your website or to your website in Experience Manager**. If you use Sites, or eCommerce, or both, you can add interactive images directly to a web page in Experience Manager. Drag the Interactive Media component onto the page. See [Adding Dynamic Media Assets to Pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
-   If you use Experience ManagerAssets and Dynamic Media standalone, copy the embed code to your website. Then, integrate it with your existing Quickview. See [Integrating an interactive image with your website](#integrating-an-interactive-image-with-your-website).
+   If you use Experience Manager Assets and Dynamic Media standalone, copy the embed code to your website. Then, integrate it with your existing Quickview. See [Integrating an interactive image with your website](#integrating-an-interactive-image-with-your-website).
    If you use a third-party WCM (Web Content Manager), integrate the new interactive video with the existing Quickview used on your website. See [Integrating an interactive image with an existing Quickview](#integrating-an-interactive-image-with-an-existing-quickview).
 
 ## (Optional) Identify hotspot variables {#optional-identifying-hotspot-variables}
@@ -72,11 +72,11 @@ Start by identifying dynamic variables in your existing Quickview implementation
 
 When you add hotspots to a banner image in Experience Manager Assets, assign a SKU (Stock Keeping Unit). The SKU is a unique identifier for each distinct product or service that you offer. And, add any extra optional variables to each hotspot. Such hotspot variables are used later to match hotspots with Quickview content.
 
-It is important to determine the number and type of variables to associate with hotspot data. Each hotspot added to a banner image must carry enough information to identify unambiguously the product in the existing backend system.
+It is important to determine the number and type of variables to associate with hotspot data. Each hotspot added to a banner image must carry enough information to identify the product unambiguously in the existing backend system.
 
 There are different ways to identify a set of variables to use for hotspot data.
 
-It is often sufficient to consult with IT specialists responsible for the existing Quickview implementation. These individuals know what the minimum set of data required to identify Quickview in the system is. However, it is possible to analyze the existing behavior of the front-end code.
+It is often sufficient to contact the IT team responsible for the existing Quickview implementation. These team members know the minimum set of data required to identify Quickview in the system. However, it is possible to analyze the existing behavior of the front-end code.
 
 Most Quickview implementations use the following paradigm:
 
@@ -158,7 +158,7 @@ The demo web page has several product thumbnails, each having a Quickview button
 
 Looking at the server calls, you can see that product-specific information is only present in the request path. You also notice that the query string is not used at all and there are two distinct types of data pieces involved:
 
-* The first type is Masculine or Feminine. You can call this "product category."
+* The first type is one category or another. You can call this "product category."
 * The second type is product name, such as CamoPullover, which is the product SKU.
 
 Given this information, the entire Quickview URL has the following pattern:
@@ -223,7 +223,7 @@ See [Experience Fragments](/help/sites-cloud/authoring/fragments/content-fragmen
 
 >[!NOTE]
 >
->The social media sharing tools in Interactive Image are not supported when you embed the viewer in an Experience Fragment. Instead, use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed it in Experience Fragments.
+>The social media sharing tools in Interactive Image are not supported when you embed the viewer in an Experience Fragment. Instead, use or create viewer presets that do not have social media sharing tools. Such viewer presets let you successfully embed them in Experience Fragments.
 
 Undo and Redo options, near the upper-right corner of the page, are supported during your current creation/editing session.
 
@@ -235,7 +235,7 @@ See [(Optional) Preview interactive images](#optional-previewing-interactive-ima
 >
 >When you add hotspots to an image in an Interactive Image or a Carousel Banner, the hotspot information is stored in the same metadata location. This location is relative to the image's location, regardless of whether it is an Interactive Image or a Carousel Banner. This functionality means that you can easily reuse the same image &ndash; along with its defined hotspot data &ndash; in either viewer.
 >
->Be aware, however, that Carousel Banners support image maps on images that can also contain hotspots, whereas an Interactive Image does not. Keep this thought in mind if you intend to create an Interactive Image or Carousel Banner that uses the same image. You can create Interactive Images and Carousel Banners using separate copies of the same image, instead.
+>Be aware, however, that Carousel Banners support image maps on images that can also contain hotspots, whereas an Interactive Image does not. Consider this if you intend to create an Interactive Image or Carousel Banner that uses the same image. You can create Interactive Images and Carousel Banners using separate copies of the same image, instead.
 >
 >See also [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md).
 
@@ -272,7 +272,7 @@ See [(Optional) Preview interactive images](#optional-previewing-interactive-ima
 
             * See [Identifying hotspot variables](#optional-identifying-hotspot-variables); you must define these variables.
             * Then, manually enter the SKU value. In the SKU Value text field, type the product's SKU. The entered SKU value automatically populates the variable portion of the Quickview template. It ensures that the system knows to associate the tapped hotspot with a particular SKU's Quickview.
-            * (Optional) If there are other variables within the Quickview that are used to identify further a product, select **[!UICONTROL Add Generic Variable]**. In the text field, specify an extra variable. For example, `category=Menswear` is an added variable.
+            * (Optional) If there are other variables within the Quickview that are used to identify further a product, select **[!UICONTROL Add Generic Variable]**. In the text field, specify an extra variable. For example, `category=Clothing` is an added variable.
 
     * Select **[!UICONTROL Hyperlink]**.
 
@@ -343,7 +343,7 @@ If you are a standalone Experience Manager Assets customer, you can manually add
 
 **Example**
 
-Using the [demo website as an example](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html), notice that the picture of the three individuals is a static `IMG` tag:
+Using the [demo website as an example](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html), notice that the picture of the three people is a static `IMG` tag:
 
 ```xml {.line-numbers}
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
@@ -369,7 +369,7 @@ You are now ready to integrate the interactive image with an existing Quickview 
 >
 >This task only applies if you are a standalone Experience Manager Assets customer.
 
-The last step in this process is integrating the interactive image with an existing Quickview implementation on your website. There is no solution to the integration that works for all cases. Every Quickview implementation is unique and a specific approach is needed. Therefore, involving the assistance of a front-end IT professional is helpful.
+The last step in this process is integrating the interactive image with an existing Quickview implementation on your website. There is no solution to the integration that works for all cases. Every Quickview implementation is unique and a specific approach is needed. Therefore, consulting a front-end IT professional is helpful.
 
 The existing Quickview implementation normally represents a chain of inter-related actions that happen on the web page in the following order:
 
@@ -381,7 +381,7 @@ The existing Quickview implementation normally represents a chain of inter-relat
 1. Optionally, the front-end code converts the loaded Quickview data into an HTML representation.
 1. The front-end code displays a modal dialog box or panel and renders the HTML content on the screen for the user.
 
-These calls do not necessarily represent independent public API calls that the web page logic calls from an arbitrary step. Instead, it is a chained call where every next step is hidden in the last phase (callback) of the previous step.
+These calls do not necessarily represent independent public API calls that the web page logic calls from an arbitrary step. Instead, it is a chained call where every next step is contained in the last phase (callback) of the previous step.
 
 When the shoppable interactive image is replacing step 1, and partially step 2, a user taps a hotspot inside the shoppable image. The viewer handles such user interaction. The viewer returns an event to the web page that contains all the hotspot data previously added to Experience Manager Assets.
 
@@ -452,7 +452,7 @@ Using the previous Quickview URL examples, you can see in the following examples
  </tbody>
 </table>
 
-The last step to trigger the Quickview URL and activate the Quickview panel requires the assistance of a front-end IT professional from your work. They know best how to trigger accurately the Quickview implementation from the proper step. They have a ready-to-use Quickview URL.
+The last step to trigger the Quickview URL and activate the Quickview panel requires the assistance of a front-end IT professional. They know how to trigger the Quickview implementation accurately from the proper step. They have a ready-to-use Quickview URL.
 
 You can see how these steps are applied to the demo website to integrate fully a shoppable interactive image with the Quickview code. Earlier, the structure of the Quickview URL was identified as the following:
 
@@ -500,4 +500,4 @@ The [final demo website with the fully integrated interactive image](https://exp
 
 ## Create custom pop-ups using Quickview {#using-quickviews-to-create-custom-pop-ups}
 
-See [Create custom pop-up Windows&reg; using Quickview](/help/assets/dynamic-media/custom-pop-ups.md).
+See [Create custom pop-up windows using Quickview](/help/assets/dynamic-media/custom-pop-ups.md).

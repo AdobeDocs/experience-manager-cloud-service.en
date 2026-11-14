@@ -119,6 +119,10 @@ To publish or unpublish a page using Manage Publication:
 
      Publishing later starts a workflow to publish the selected page or pages at the specified time. Conversely, unpublishing later starts a workflow to unpublish the selected page or pages at a specific time.
 
+     >[!CAUTION]
+     >
+     >The actual publication time may be delayed. As the publication sequence consists of multiple steps, the processing time varies depending on the content and system conditions.
+
      >[!TIP]
      >
      >If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) to terminate the corresponding workflow.

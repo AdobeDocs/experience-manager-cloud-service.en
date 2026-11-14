@@ -15,9 +15,9 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
 ---
-# Invalidate the CDN cache by way of Dynamic Media {#invalidating-cdn-cache-for-dm-assets-in-aem-cs}
+# Invalidate the CDN cache using Dynamic Media {#invalidating-cdn-cache-for-dm-assets-in-aem-cs}
 
-Dynamic Media assets are cached by the CDN (Content Delivery Network) for fast delivery to your customers. However, when you make updates to those assets, you want those changes to take effect immediately on your website. Purging or invalidating the CDN cache lets you quickly update assets that are delivered by Dynamic Media. You no longer have to wait for the cache to expire using a TTL (Time To Live) value (default is ten hours). Instead, you can send a request from within the Dynamic Media user interface to have the cache expire within minutes.
+The CDN (Content Delivery Network) caches Dynamic Media assets for fast delivery to your customers. However, when you make updates to those assets, you want those changes to take effect immediately on your website. Purging or invalidating the CDN cache lets you quickly update assets that Dynamic Media delivers. You no longer have to wait for the cache to expire using a TTL (Time To Live) value (default is ten hours). To have the cache expire within minutes, you can send a request from within the Dynamic Media user interface.
 
 >[!NOTE]
 >
@@ -34,9 +34,9 @@ For example, invalidating `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAM
 * `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image?$PLP$`
 * and so on.
 
-This invalidation, however, is not the case for generic domains that do not support Smart Imaging, such as `s7d1.scene7.com`. Such domains still need the full URL to have invalidation work successfully.
+This invalidation is, however, not the case for generic domains that do not support Smart Imaging, such as `s7d1.scene7.com`. Such domains still need the full URL to have invalidation work successfully.
 
-**To invalidate the CDN cache by way of Dynamic Media:**
+**To invalidate the CDN cache using Dynamic Media:**
 
 *Part 1 of 2: Creating a CDN Invalidation template*
 
@@ -82,19 +82,19 @@ This invalidation, however, is not the case for generic domains that do not supp
    | **[!UICONTROL Add URL]** | Manually add or paste full URL paths to Dynamic Media assets whose CDN cache you want to invalidate. Use this option if you did not create a CDN Invalidation Template in ***Part 1 of 2: Creating a CDN Invalidation template***, and have only a few assets to invalidate.<br>**Important:** Each URL that you add must be on its own line.<br>You can invalidate up to 1000 URLs at a give time. If the number of URLs in the **[!UICONTROL Add URL]** text field is greater than 1000, you are unable to select **[!UICONTROL Next]**. In such cases, you must select **[!UICONTROL X]** to the right of a selected asset or a manually added URL to delete it from the invalidation list.<br>Specify URLs for image smart crops either in the CDN Invalidation template, or in this **[!UICONTROL Add URL]** text field.|
 
 1. Near the upper-right corner of the page, select **[!UICONTROL Next]**.
-1. On the **[!UICONTROL CDN Invalidation]** - **[!UICONTROL Confirm]** page, in the **[!UICONTROL URLs]** list box, you see a list of one or more URLs generated from the CDN Invalidation Template you created earlier and the assets you just added.
+1. On the **[!UICONTROL CDN Invalidation]** - **[!UICONTROL Confirm]** page, in the **[!UICONTROL URLs]** list box, you see one or more URLs generated from the CDN Invalidation Template you created and the assets you added.
 
     For example, using the CDN Invalidation Template example that was shown in the steps earlier, suppose you added a single asset named `spinset`. When you go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL CDN Invalidation]**, it results in the following five generated URLs in the **[!UICONTROL CDN Invalidation - Confirm]** user interface:
 
     ![CDN Invalidation - Confirm](/help/assets/assets-dm/cdn-invalidation-confirm-2.png)
 
-    If necessary, select **X** to the right of a URL to delete it from invalidation process.
+    If necessary, click **X** to the right of a URL to delete it from the invalidation process.
 
 1. Near the upper-right corner of the page, select **[!UICONTROL Submit]** to begin the CDN invalidation process.
 
 ## Troubleshoot CDN Invalidation errors
 
-In all cases, either the entire batch is processed for invalidation, or the entire batch is failed.
+In all cases, either the entire batch is processed for invalidation, or the entire batch fails.
 
 | Error | Explanation |
 | --- | --- |

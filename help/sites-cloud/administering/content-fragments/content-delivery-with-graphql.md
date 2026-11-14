@@ -96,7 +96,7 @@ These [Content Fragment Models](/help/sites-cloud/administering/content-fragment
 
 ### Fragment References {#fragment-references}
 
-The **[Fragment Reference](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#fragment-reference-nested-fragments)**:
+The **[Fragment Reference](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#fragment-reference)**:
 
 * Is of particular interest in conjunction with GraphQL.
 

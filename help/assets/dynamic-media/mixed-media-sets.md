@@ -17,7 +17,7 @@ role_v2:
 
 Mixed Media Sets let you provide a blend of images, Image Sets, Spin Sets, and videos in one presentation.
 
-Mixed Media Sets are designated by a banner with the word **[!UICONTROL MixedMediaSet]**. In addition, if the Mixed Media Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon is on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon displays.
+A banner with the word **[!UICONTROL MixedMediaSet]** designates Mixed Media Sets. In addition, if the Mixed Media Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon, displays.
 
 ![chlimage_1-137](assets/chlimage_1-348.png)
 
@@ -27,11 +27,11 @@ Mixed Media Sets are designated by a banner with the word **[!UICONTROL MixedMed
 
 ## Quick Start: Mixed Media Sets {#quick-start-mixed-media-sets}
 
-To get you up and running quickly with Mixed Media Sets, follow these steps:
+To configure Mixed Media Sets, do the following:
 
 1. [Upload your assets](#uploading-assets).
 
-   Start by uploading the images and videos for your Mixed Media Sets. If necessary, create your [Image Sets](/help/assets/dynamic-media/image-sets.md) and [Spin Sets](/help/assets/dynamic-media/spin-sets.md). Because users can zoom on images in the Mixed Media Set Viewer, be sure you account for zooming when you choose images. Make sure that the images are least 2000 pixels in the largest size.
+   Start by uploading the images and videos for your Mixed Media Sets. If necessary, create your [Image Sets](/help/assets/dynamic-media/image-sets.md) and [Spin Sets](/help/assets/dynamic-media/spin-sets.md). Because users can zoom on images in the Mixed Media Set Viewer, be sure you account for zooming when you choose images. Make sure that the images are at least 2000 pixels in the largest size.
 
    See [Dynamic Media - Supported raster image formats](/help/assets/file-format-support.md#image-support-dynamic-media) for a list of formats supported by Mixed Media Sets.
 
@@ -59,7 +59,7 @@ To get you up and running quickly with Mixed Media Sets, follow these steps:
 
 1. [Link URLs to your Web Application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) or [Embed the Video or Image Viewer](/help/assets/dynamic-media/embed-code.md).
 
-   Adobe Experience Manager Assets creates URL calls for Mixed Media Sets and activates them after you publish the mixed media sets. You can copy these URLs when you preview assets. Alternatively you can embed them on your web site.
+   Adobe Experience Manager Assets creates URL calls for Mixed Media Sets and activates them after you publish the mixed media sets. You can copy these URLs when you preview assets. Alternatively, you can embed them on your website.
 
    Select the Mixed Media Set, then in the left rail drop-down menu, select **[!UICONTROL Viewers]**.
 
@@ -73,7 +73,7 @@ If necessary, you can edit [Mixed Media Sets](#editing-mixed-media-sets). In add
 
 ## Upload assets {#uploading-assets}
 
-Start by uploading the images and videos for your Mixed Media Sets. Remember that users can zoom on images in the Mixed Media Set Viewer. As such, choose images with this zoom ability in mind. Make sure that the images are least 2000 pixels in the largest size.
+Start by uploading the images and videos for your Mixed Media Sets. Remember that users can zoom on images in the Mixed Media Set Viewer. As such, choose images that support this zoom ability. Make sure that the images are at least 2000 pixels in the largest size.
 
 In addition, if you want to add spin sets or image sets to the mixed media set, create them as well.
 
@@ -87,7 +87,7 @@ When you add assets to your set, they are automatically added in alphanumeric or
 
 **To create Mixed Media Sets:**
 
-1. In Assets, navigate to where you want to create a mixed media set, and select **[!UICONTROL Create]**, and select **[!UICONTROL Mixed Media Set]**. You can also create the set from inside a folder that contains your assets. The Mixed Media Set Editor displays.
+1. In Assets, navigate to where you want to create a mixed media set, select **[!UICONTROL Create]**, and select **[!UICONTROL Mixed Media Set]**. You can also create the set from inside a folder that contains your assets. The Mixed Media Set Editor displays.
 
    ![chlimage_1-138](assets/chlimage_1-349.png)
 
@@ -101,7 +101,7 @@ When you add assets to your set, they are automatically added in alphanumeric or
 
 1. To select assets that you want to include in your Mixed Media Set, select the Asset Selector. Select them and select **[!UICONTROL Select]**.
 
-   With the Asset Selector, you can search for assets by typing in a keyword and selecting **[!UICONTROL Return]**. You can also apply filters to refine your search results. You can filter by path, collection, file type, and tag. Select the filter and then select the **[!UICONTROL Filter]** icon from the toolbar. Change the view by selecting the **[!UICONTROL View]** icon and selecting **[!UICONTROL List View]**, **[!UICONTROL Column View]**, or **[!UICONTROL Card View]**.
+   With the Asset Selector, you can search for assets by typing in a keyword and selecting **[!UICONTROL Return]**. To refine your search results, apply filters. You can filter by path, collection, file type, and tag. Select the filter and then select the **[!UICONTROL Filter]** icon from the toolbar. Change the view by selecting the **[!UICONTROL View]** icon and selecting **[!UICONTROL List View]**, **[!UICONTROL Column View]**, or **[!UICONTROL Card View]**.
 
    See [Working with Selectors](/help/assets/dynamic-media/working-with-selectors.md).
 
@@ -111,7 +111,7 @@ When you add assets to your set, they are automatically added in alphanumeric or
 
    ![chlimage_1-141](assets/chlimage_1-352.png)
 
-   If you want to add thumbnails, select the **+** **[!UICONTROL thumbnail]** icon next to the image and navigate to the thumbnail you want. When done selecting all the thumbnail images select **[!UICONTROL Save]**.
+   If you want to add thumbnails, select the **+** **[!UICONTROL thumbnail]** icon next to the image and navigate to the thumbnail you want. When done selecting all the thumbnail images, select **[!UICONTROL Save]**.
 
    >[!NOTE]
    >
@@ -119,11 +119,11 @@ When you add assets to your set, they are automatically added in alphanumeric or
 
 1. To delete an asset, select the corresponding check box and select **[!UICONTROL Delete Asset]**.
 1. To apply a preset, select **[!UICONTROL Preset]** in the upper right corner and select a preset to apply to the assets.
-1. Select **[!UICONTROL Save]**. Your created Mixed Media Set appears in the folder you created it in.
+1. Select **[!UICONTROL Save]**. Your created Mixed Media Set appears in the folder where you created it.
 
 ## Edit Mixed Media Sets {#editing-mixed-media-sets}
 
-You can perform various editing tasks to assets in Mixed Media Sets directly in the user interface [as you would any asset in Assets](/help/assets/manage-digital-assets.md). You can also perform the following actions in Mixed Media Sets:
+Perform various editing tasks on assets in Mixed Media Sets directly in the user interface [as you do for any asset in Assets](/help/assets/manage-digital-assets.md). You can also perform the following actions in Mixed Media Sets:
 
 * Add assets to the Mixed Media Set.
 * Reorder assets in the Mixed Media Set.
@@ -142,10 +142,10 @@ You can perform various editing tasks to assets in Mixed Media Sets directly in 
 
 1. In the Mixed Media Set Editor, do any of the following:
 
-    * To reorder assets - In the left panel, select **[!UICONTROL Assets]** (picture icon), drag an asset to a new location.
+    * To reorder assets - In the left panel, select **[!UICONTROL Assets]** (picture icon); drag an asset to a new location.
     * To add assets - On the toolbar, select **[!UICONTROL Add Asset]**. Navigate to the assets. For each asset that you want to add, hover over the asset's image (not the asset's name), then select the checkmark icon. In the upper-right corner, select **[!UICONTROL Select]**.
 
-    * To delete an asset - In the left panel, select **[!UICONTROL Assets]** (picture icon), then select the asset. On the toolbar bar, select **[!UICONTROL Delete Asset]**.
+    * To delete an asset - In the left panel, select **[!UICONTROL Assets]** (picture icon), then select the asset. On the toolbar, select **[!UICONTROL Delete Asset]**.
 
     * To sort assets by their name in ascending or descending order, in the left panel, select **[!UICONTROL Assets]** (picture icon). To the right of the **[!UICONTROL Assets]** heading, select the up or down caret icons.
 
@@ -173,4 +173,4 @@ See [Publish assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.m
 
 >[!NOTE]
 >
->If the mixed media set does not fully end up in the delivery service the first time you publish it, publish the mixed media set a second time.
+>If the mixed media set is not fully delivered to the service the first time you publish it, publish the mixed media set a second time.
