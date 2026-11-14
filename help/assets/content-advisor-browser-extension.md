@@ -90,12 +90,15 @@ Watch this video for a quick demo of the integration in action.
 
 ## Configure AEM Content Advisor {#content-advisor-browser-extension-configure}
 
-Select the **Settings** icon in the AEM Content Advisor panel to configure the extension.
+To configure the extension, select the **Settings** icon in the AEM Content Advisor panel. You can also select the menu icon next to the floating AEM Content Advisor widget and select **Preferences** to open the **AEM Content Advisor preferences** page.
 
 | Setting | Description |
 | --- | --- |
 | **Show floating widget** | Displays the floating AEM Content Advisor widget on supported pages. You can use the widget to open the AEM Content Advisor panel and access suggestion options. |
 | **Show inline toolbar** | Displays the **Find related content** option when you select text on a supported page. Use this option to get asset recommendations based on the selected text. |
+| **Websites where Content Advisor is disabled** | Lists the websites where you have disabled AEM Content Advisor. Remove a website from the list to enable AEM Content Advisor on it again. See [Disable AEM Content Advisor on specific websites](#content-advisor-browser-extension-exclusion-rules). |
+| **Scroll the page while selecting a region** | Lets the page scroll while you select a region with **Suggest from region**. |
+| **Language** | Sets the display language of AEM Content Advisor. The default is **Browser default**. |
 | **Reload panel** | Reloads the AEM Content Advisor panel. |
 | **Reset layout** | Restores the AEM Content Advisor panel and floating widget to their default layout and positions. |
 | **Sign out** | Signs you out of AEM Content Advisor. |
@@ -106,6 +109,34 @@ Select the **Settings** icon in the AEM Content Advisor panel to configure the e
 | **Asset reference** | Specifies how an asset is referenced when it is used in supported applications. Select **Local (DAM path)** to use the asset's AEM Assets path, or **Remote (delivery)** to use the asset's delivery URL. |
 
 -->
+
+### Disable AEM Content Advisor on specific websites {#content-advisor-browser-extension-exclusion-rules}
+
+You can disable AEM Content Advisor on websites where you do not need asset suggestions, so that the floating widget no longer appears on those websites. AEM Content Advisor continues to work on all other supported websites.
+
+Select the menu icon next to the floating AEM Content Advisor widget to view the following options:
+
+| Option | Description |
+| --- | --- |
+| **Hide for now** | Hides the floating widget temporarily. |
+| **Disable for this site** | Disables AEM Content Advisor on the current website and adds the website to the **Websites where Content Advisor is disabled** list. |
+| **Never display** | Stops displaying the floating widget. |
+| **Preferences** | Opens the **AEM Content Advisor preferences** page. |
+
+To disable AEM Content Advisor on a website:
+
+1. Open the website in your browser.
+1. Select the menu icon next to the floating AEM Content Advisor widget.
+1. Select **Disable for this site**.
+
+   The floating widget no longer appears on the website.
+
+To enable AEM Content Advisor on a website again:
+
+1. Select the menu icon next to the floating AEM Content Advisor widget and select **Preferences**.
+1. In **Websites where Content Advisor is disabled**, select the **X** icon next to the website.
+
+   The floating widget appears on the website again.
 
 ## Important points to note {#content-advisor-browser-extension-important-points}
 
