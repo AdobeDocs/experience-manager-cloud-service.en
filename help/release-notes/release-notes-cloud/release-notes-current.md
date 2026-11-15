@@ -373,11 +373,15 @@ Starting January, lower environments will be upgraded to Java 25 runtime to give
 
 While Java 25 runtime will be required by May 2027, building with Java 25 will remain optional.
 
-#### Edge Authentication for Edge Delivery Services {#edge-authentication}
+#### CDN-level OpenID Connect (OIDC) Authentication for Edge Delivery Services {#cdn-level-authentication}
 
-Edge Authentication lets you restrict access to Edge Delivery Services pages to only those who have authenticated with your identity provider (IdP). This is achieved by deploying an OpenID Connect (OIDC) configuration YAML file.
+CDN-level OIDC authentication lets you require sign-in with your identity provider (IdP) before the Adobe-managed CDN serves selected Edge Delivery Services pages. Authentication is enforced at the CDN, so unauthenticated requests are redirected to the IdP and never reach your content. Restricting access by user group is not supported.
 
-If interested, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case and any questions you may have.
+You configure it in `config/cdn.yaml` through the Edge Delivery configuration pipeline in Cloud Manager: define an OIDC authenticator, then add a rule that applies it to the domains and paths you want to protect. Everything else on the site stays public. Any standards-compliant OIDC IdP is supported, such as Microsoft Entra ID or Okta.
+
+Learn more in the [CDN OIDC authentication reference](https://www.aem.live/developer/byo-cdn-adobe-managed-cdn-config#cdn-oidc-authentication) and the step-by-step [tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/edge-delivery-services/authentication/cdn-oidc-authentication).
+
+AEM as a Cloud Service implementations that serve content from the Publish tier should use the separate [OIDC on Publish Tier](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier) feature, which supports user groups. 
 
 #### OpenTelemetry for Application Performance Monitoring (APM) (Limited Availability) {#otel}
 
