@@ -2,6 +2,7 @@
 title: "Metadata best practices: before and after migrating to AEM Assets"
 description: Plan, build, and govern metadata in AEM Assets with action-oriented best practices for before and after migration, including Brand Aware Metadata.
 hidefromtoc: 'yes'
+hide: true
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive"
 feature: Metadata, Best Practices
@@ -32,17 +33,17 @@ Each best practice lists the exact actions to perform. Where [!DNL Brand Aware M
 |---|---|---|
 | 1 | [Agree on why you need metadata, and who it serves](#define-strategy) | Before you migrate to AEM Assets|
 | 2 | [How will your users search? Build your fields from that](#design-fields-from-search) | Before you migrate to AEM Assets|
-| 3 | [Decide what users edit, only see, or never see](#classify-and-group-fields) | Before you migrate to AEM Assets | 
-| 4 | [Map every legacy property before you move it](#map-legacy-properties) | Before you migrate to AEM Assets | 
-| 5 | [Replace free text with controlled vocabularies](#define-controlled-vocabularies) | Before you migrate to AEM Assets | 
-| 6 | [Who owns your metadata? Set up governance](#set-up-governance) | Before you migrate to AEM Assets | 
-| 7 | [Build your tag taxonomy](#build-tag-taxonomy) | After you migrate to AEM Assets| 
-| 8 | [Build and apply a custom metadata schema](#build-metadata-schema) | After you migrate to AEM Assets | 
-| 9 | [Apply metadata at ingestion](#apply-metadata-at-ingestion) | After you migrate to AEM Assets | 
-| 10 | [Generate metadata with AI](#generate-metadata-with-ai) | After you migrate to AEM Assets | 
-| 11 | [Update metadata in bulk](#update-metadata-in-bulk) | After you migrate to AEM Assets | 
-| 12 | [Improve searchability](#improve-searchability) | After you migrate to AEM Assets | 
-| 13 | [Validate, share, and review metadata](#validate-share-review) | After you migrate to AEM Assets |
+| 3 | [Decide what users edit, only see, or never see](#classify-and-group-fields) | Before you migrate to AEM Assets|
+| 4 | [Map every legacy property before you move it](#map-legacy-properties) | Before you migrate to AEM Assets|
+| 5 | [Replace free text with controlled vocabularies](#define-controlled-vocabularies) | Before you migrate to AEM Assets|
+| 6 | [Who owns your metadata? Set up governance](#set-up-governance) | Before you migrate to AEM Assets|
+| 7 | [Build your tag taxonomy](#build-tag-taxonomy) | After you migrate to AEM Assets|
+| 8 | [Build and apply a custom metadata schema](#build-metadata-schema) | After you migrate to AEM Assets|
+| 9 | [Apply metadata at ingestion](#apply-metadata-at-ingestion) | After you migrate to AEM Assets|
+| 10 | [Generate metadata with AI](#generate-metadata-with-ai) | After you migrate to AEM Assets|
+| 11 | [Update metadata in bulk](#update-metadata-in-bulk) | After you migrate to AEM Assets|
+| 12 | [Improve searchability](#improve-searchability) | After you migrate to AEM Assets|
+| 13 | [Validate, share, and review metadata](#validate-share-review) | After you migrate to AEM Assets|
 
 ## Metadata fundamentals {#metadata-fundamentals}
 

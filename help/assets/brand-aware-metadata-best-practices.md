@@ -2,6 +2,7 @@
 title: Brand Aware Metadata Best Practices
 description: Learn Brand Aware Metadata best practices in AEM Assets through a WKND example, from tags and schema fields to brand prompts, vocabularies, and QA.
 hidefromtoc: 'yes'
+hide: true
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive"
 product_v2:
