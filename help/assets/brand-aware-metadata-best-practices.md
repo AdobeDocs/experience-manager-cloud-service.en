@@ -234,7 +234,7 @@ When you apply metadata schema to a folder, the fields included in the metadata 
 
 For details, see [Apply folder-specific metadata](/help/assets/metadata-schemas.md#applying-folder-specific-metadata).
 
-The processing profile determines which BAM prompts run for the assets in a folder. You can associate multiple property prompts to a processing profile and similarly associate a processing profile with a brand prompt as well. When the brand prompt and the property prompt have the same processsing profile assigned to them, the metadata for a field is automatically generated based on the property prompt as well as the brand prompt. 
+The processing profile determines which BAM prompts run for the assets in a folder. You can associate multiple property prompts to a processing profile and similarly associate a processing profile with a brand prompt as well. When the brand prompt and the property prompt have the same processing profile assigned to them, the metadata for a field is automatically generated based on the property prompt as well as the brand prompt. 
 
 ### Create and apply a processing profile {#create-processing-profile}
 

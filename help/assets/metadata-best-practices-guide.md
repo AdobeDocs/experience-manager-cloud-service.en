@@ -28,21 +28,21 @@ Each best practice lists the exact actions to perform. Where [!DNL Brand Aware M
 
 ## Best practices at a glance {#best-practices-at-a-glance}
 
-| # | Best practice | Phase | With Brand Aware Metadata |
-|---|---|---|---|
-| 1 | [Agree on why you need metadata, and who it serves](#define-strategy) | Before | Not applicable |
-| 2 | [How will your users search? Build your fields from that](#design-fields-from-search) | Before | [Review the baseline metadata](/help/assets/brand-aware-metadata-best-practices.md#review-baseline) |
-| 3 | [Decide what users edit, only see, or never see](#classify-and-group-fields) | Before | [Add the brand fields to a metadata schema](/help/assets/brand-aware-metadata-best-practices.md#add-fields-to-metadata-schema) |
-| 4 | [Map every legacy property before you move it](#map-legacy-properties) | Before | [Add context with referenced properties](/help/assets/brand-aware-metadata-best-practices.md#add-referenced-properties) |
-| 5 | [Replace free text with controlled vocabularies](#define-controlled-vocabularies) | Before | [Constrain a field with controlled vocabulary](/help/assets/brand-aware-metadata-best-practices.md#constrain-with-controlled-vocabulary) |
-| 6 | [Who owns your metadata? Set up governance](#set-up-governance) | Before | [Validate on a sample, then scale](/help/assets/brand-aware-metadata-best-practices.md#validate-and-scale) |
-| 7 | [Build your tag taxonomy](#build-tag-taxonomy) | After | [Create the activity tag hierarchy](/help/assets/brand-aware-metadata-best-practices.md#create-tag-hierarchy) |
-| 8 | [Build and apply a custom metadata schema](#build-metadata-schema) | After | [Add the brand fields to a metadata schema](/help/assets/brand-aware-metadata-best-practices.md#add-fields-to-metadata-schema) |
-| 9 | [Apply metadata at ingestion](#apply-metadata-at-ingestion) | After | [Apply the schema and a processing profile](/help/assets/brand-aware-metadata-best-practices.md#apply-schema-and-profile) |
-| 10 | [Generate metadata with AI](#generate-metadata-with-ai) | After | [Steps 5 to 10](/help/assets/brand-aware-metadata-best-practices.md#create-property-prompt) |
-| 11 | [Update metadata in bulk](#update-metadata-in-bulk) | After | [Additional best practices](/help/assets/brand-aware-metadata-best-practices.md#additional-best-practices) |
-| 12 | [Improve searchability](#improve-searchability) | After | Not applicable |
-| 13 | [Validate, share, and review metadata](#validate-share-review) | After | [Validate on a sample, then scale](/help/assets/brand-aware-metadata-best-practices.md#validate-and-scale) |
+| # | Best practice | Phase |
+|---|---|---|
+| 1 | [Agree on why you need metadata, and who it serves](#define-strategy) | Before you migrate to AEM Assets|
+| 2 | [How will your users search? Build your fields from that](#design-fields-from-search) | Before you migrate to AEM Assets|
+| 3 | [Decide what users edit, only see, or never see](#classify-and-group-fields) | Before you migrate to AEM Assets | 
+| 4 | [Map every legacy property before you move it](#map-legacy-properties) | Before you migrate to AEM Assets | 
+| 5 | [Replace free text with controlled vocabularies](#define-controlled-vocabularies) | Before you migrate to AEM Assets | 
+| 6 | [Who owns your metadata? Set up governance](#set-up-governance) | Before you migrate to AEM Assets | 
+| 7 | [Build your tag taxonomy](#build-tag-taxonomy) | After you migrate to AEM Assets| 
+| 8 | [Build and apply a custom metadata schema](#build-metadata-schema) | After you migrate to AEM Assets | 
+| 9 | [Apply metadata at ingestion](#apply-metadata-at-ingestion) | After you migrate to AEM Assets | 
+| 10 | [Generate metadata with AI](#generate-metadata-with-ai) | After you migrate to AEM Assets | 
+| 11 | [Update metadata in bulk](#update-metadata-in-bulk) | After you migrate to AEM Assets | 
+| 12 | [Improve searchability](#improve-searchability) | After you migrate to AEM Assets | 
+| 13 | [Validate, share, and review metadata](#validate-share-review) | After you migrate to AEM Assets |
 
 ## Metadata fundamentals {#metadata-fundamentals}
 
@@ -52,7 +52,7 @@ Metadata records the defining attributes of each asset, such as its name, type, 
 * **Improves searchability and accessibility**, because descriptive tags and standardized fields let users retrieve the exact asset they need and avoid duplicate work.
 * **Supports version control**, because modified dates and status fields make it clear which version of an asset is current.
 
-Apply metadata at the point of ingestion rather than after the fact. Metadata applied at upload keeps the library accurate and reduces the effort required to maintain it over time.
+Apply metadata at the point of ingestion rather than after you have your assets available within AEM Assets. Metadata applied at upload keeps the library accurate and reduces the effort required to maintain it over time.
 
 Metadata falls into three categories. Use them later to [group your fields](#classify-and-group-fields).
 
@@ -75,6 +75,10 @@ Settle these six decisions before you move any assets. Each one is easy to imple
 * **Map the content journey:** from brief to expiry, note which metadata is created at each stage, by whom, and in which system.
 * **Bring stakeholders in early:** get top-down sponsorship from creative, marketing, legal, localization, and IT, and keep them updated on objectives, progress, milestones, and challenges.
 
+>[!TIP]
+>
+>**Brand Aware Metadata:** While you plan properties for your metadata schema, evaluate if those properties can be automatically generated using Brand Aware Metadata. Start with one property and a short, plain-language prompt. Do not try to populate several fields from one prompt. For more information, see [Create a property prompt and test it in Prompt Playground](brand-aware-metadata-best-practices.md#create-property-prompt).
+
 ### 2. How will your users search? Build your fields from that {#design-fields-from-search}
 
 * **Work backward from filters:** a request such as "approved spring campaign images for EMEA" gives you the *Status*, *Campaign*, and *Region* fields.
@@ -84,7 +88,7 @@ Settle these six decisions before you move any assets. Each one is easy to imple
 
 >[!TIP]
 >
->**With Brand Aware Metadata:** Compare generic tags with what your users actually search for. See [Review the baseline metadata](/help/assets/brand-aware-metadata-best-practices.md#review-baseline).
+>**Brand Aware Metadata:** After evaluating what fields you can automatically generate using Brand-aware metadata, tie those property fields to brand prompts. Brand prompt provides higher-level context, such as voice, global rules, naming conventions, or campaign details. The properties that you generate have the higher-level context during generation ensuring more accuracy and hence enhanced search. For more information, see [Add global context with a brand prompt](brand-aware-metadata-best-practices.md#add-brand-prompt).
 
 ### 3. Decide what users edit, only see, or never see {#classify-and-group-fields}
 
@@ -93,9 +97,6 @@ Settle these six decisions before you move any assets. Each one is easy to imple
 * **Hidden:** only systems need the value. Store it on the asset, but leave it off the form.
 * **Group into future tabs:** sort fields into informational, technical, and administrative groups, such as *Brand*, *Technical*, and *Rights*, as described in [Metadata fundamentals](#metadata-fundamentals).
 
->[!TIP]
->
->**With Brand Aware Metadata:** Make fields that BAM populates read-only, because BAM overwrites them each time it processes an asset. See [Add the brand fields to a metadata schema](/help/assets/brand-aware-metadata-best-practices.md#add-fields-to-metadata-schema).
 
 ### 4. Map every legacy property before you move it {#map-legacy-properties}
 
@@ -106,7 +107,7 @@ Settle these six decisions before you move any assets. Each one is easy to imple
 
 >[!TIP]
 >
->**With Brand Aware Metadata:** Migrated properties, such as a shoot brief, can give BAM context that the image alone lacks. See [Add context with referenced properties](/help/assets/brand-aware-metadata-best-practices.md#add-referenced-properties).
+>**Brand Aware Metadata:** Various migrated properties, such as a shoot brief used in the BAM tutorial, can give BAM context that the image alone lacks and can be of good value while automatically generating properties. See [Add context with referenced properties](/help/assets/brand-aware-metadata-best-practices.md#add-referenced-properties).
 
 ### 5. Replace free text with controlled vocabularies {#define-controlled-vocabularies}
 
@@ -117,7 +118,7 @@ Settle these six decisions before you move any assets. Each one is easy to imple
 
 >[!TIP]
 >
->**With Brand Aware Metadata:** Your value definitions become BAM's controlled vocabulary definitions. See [Constrain a field with controlled vocabulary](/help/assets/brand-aware-metadata-best-practices.md#constrain-with-controlled-vocabulary).
+>**Brand Aware Metadata:** Your value definitions become BAM's controlled vocabulary definitions. See [Constrain a field with controlled vocabulary](/help/assets/brand-aware-metadata-best-practices.md#constrain-with-controlled-vocabulary). When you generate values for the fields with controlled vocabularies using BAM, it automatically tries to ensure that one of the defined values gets assigned to the field.
 
 ### 6. Who owns your metadata? Set up governance {#set-up-governance}
 
@@ -128,7 +129,7 @@ Settle these six decisions before you move any assets. Each one is easy to imple
 
 >[!TIP]
 >
->**With Brand Aware Metadata:** Decide who approves AI usage, who maintains prompts, and how generated values are spot-checked. See [Validate on a sample, then scale](/help/assets/brand-aware-metadata-best-practices.md#validate-and-scale).
+>**Brand Aware Metadata:** Decide who approves AI usage, who maintains prompts, and how generated values are spot-checked. See [Validate on a sample, then scale](/help/assets/brand-aware-metadata-best-practices.md#validate-and-scale).
 
 ## After you migrate: build and manage metadata in AEM Assets {#after-you-migrate}
 
@@ -149,9 +150,6 @@ For detailed steps, see [Creating new tags](/help/sites-cloud/administering/tags
 
 >[!VIDEO](https://video.tv.adobe.com/v/3508353)
 
->[!TIP]
->
->**With Brand Aware Metadata:** Follow a complete example that builds a three-level activity taxonomy for BAM to use. See [Create the activity tag hierarchy](/help/assets/brand-aware-metadata-best-practices.md#create-tag-hierarchy).
 
 ### 8. Build and apply a custom metadata schema {#build-metadata-schema}
 
@@ -184,10 +182,6 @@ For all components and settings, see [Metadata schemas](/help/assets/metadata-sc
 
 >[!VIDEO](https://video.tv.adobe.com/v/3508354)
 
->[!TIP]
->
->**With Brand Aware Metadata:** BAM generates values only for properties defined in a metadata schema. Follow a complete example that adds text, tags, and dropdown fields for BAM, including a read-only context field. See [Add the brand fields to a metadata schema](/help/assets/brand-aware-metadata-best-practices.md#add-fields-to-metadata-schema).
-
 ### 9. Apply metadata at ingestion {#apply-metadata-at-ingestion}
 
 Metadata applied automatically at upload is complete and consistent from day one, and it removes repetitive manual entry. Use metadata profiles for default values and processing profiles for computed metadata.
@@ -211,9 +205,6 @@ Metadata applied automatically at upload is complete and consistent from day one
 
 1. **Test with a few uploads.** Upload sample assets to the folder and confirm that the default and generated values appear on the [!UICONTROL Properties] page.
 
->[!TIP]
->
->**With Brand Aware Metadata:** BAM runs through the processing profile applied to a folder, so assets uploaded to the folder receive brand-specific metadata automatically. See [Apply the schema and a processing profile](/help/assets/brand-aware-metadata-best-practices.md#apply-schema-and-profile).
 
 ### 10. Generate metadata with AI {#generate-metadata-with-ai}
 
@@ -228,7 +219,7 @@ AI removes most manual tagging. Smart Tags describe what is visible in an asset.
 
 >[!TIP]
 >
->**With Brand Aware Metadata:** Follow the complete journey from the first property prompt to folder-derived values:
+>**Brand Aware Metadata:** Follow the complete journey from the first property prompt to folder-derived values:
 >
 >* [Create a property prompt and test it in Prompt Playground](/help/assets/brand-aware-metadata-best-practices.md#create-property-prompt)
 >* [Refine the prompt with Prompt Enhancer](/help/assets/brand-aware-metadata-best-practices.md#refine-prompt-with-enhancer)
@@ -265,9 +256,6 @@ Bulk updates record shared values uniformly across a set of assets and eliminate
 
 1. **Check accuracy and completeness after each bulk update.** For example, verify that author names and keywords on a set of PDF documents are correct and complete.
 
->[!TIP]
->
->**With Brand Aware Metadata:** BAM can also derive rule-based values, such as a region from a folder path or a product code from a file name, and can append to multi-value fields. Compare the credit cost of BAM with bulk edit or CSV import for deterministic values. See [Additional best practices](/help/assets/brand-aware-metadata-best-practices.md#additional-best-practices).
 
 ### 12. Improve searchability {#improve-searchability}
 
@@ -312,7 +300,7 @@ Metadata quality degrades without ongoing attention, as new content types, campa
 
 >[!TIP]
 >
->**With Brand Aware Metadata:** Before you scale AI generation, validate on a small sample, review the quality report, and get sign-off. When you add tags or dropdown values later, update the controlled vocabulary in each related prompt, because new values are not added to existing prompts automatically. See [Validate on a sample, then scale](/help/assets/brand-aware-metadata-best-practices.md#validate-and-scale) and [Constrain a field with controlled vocabulary](/help/assets/brand-aware-metadata-best-practices.md#constrain-with-controlled-vocabulary).
+>**Brand Aware Metadata:** Before you scale AI generation, validate on a small sample, review the quality report, and get sign-off. When you add tags or dropdown values later, update the controlled vocabulary in each related prompt, because new values are not added to existing prompts automatically. See [Validate on a sample, then scale](/help/assets/brand-aware-metadata-best-practices.md#validate-and-scale) and [Constrain a field with controlled vocabulary](/help/assets/brand-aware-metadata-best-practices.md#constrain-with-controlled-vocabulary).
 
 ## Related articles {#related-articles}
 
