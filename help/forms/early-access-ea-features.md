@@ -238,8 +238,6 @@ Agentic Form Filling lets customers complete published Adaptive Forms through AI
 
 To request access, email your organization ID and program details to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address.
 
-<!--
-
 ### API Integration Tool for Dynamic Form Data
 
 The API Integration Tool enables form authors to create dynamic, intelligent forms that automatically fetch and populate data from external REST APIs based on user interactions. This no-code integration capability transforms static forms into responsive data collection interfaces.
@@ -255,7 +253,7 @@ Key capabilities include:
 
 This tool is particularly useful for scenarios like address auto-completion, dynamic dropdown population, real-time validation against external databases, and creating context-aware form experiences that adapt based on user input.
 
--->
+Ready to start? See [Integrating API in Rule Editor](/help/forms/api-integration-in-rule-editor.md) for configuration instructions.
 
 ## Additional Early Access Innovations
 
@@ -346,6 +344,8 @@ Overall, [Doc Assurance APIs](https://developer.adobe.com/experience-manager-for
 -->
 
 
+<!--
+
 ### Forms Service APIs
 
 Forms service generates interactive PDF forms for data capture. It can also be used to import/export data to/from an existing interactive PDF form and validate submitted data. Here's a breakdown of its functionalities: 
@@ -355,6 +355,10 @@ Forms service generates interactive PDF forms for data capture. It can also be u
 * **Data Extraction and Import**: Import data into an existing PDF form as well as extract data from a filled PDF form. Both XDP and XML data formats are supported, and importing to non-XFA PDF forms (also known as AcroForms) additionally supports FDF and XFDF data.
 
 * **Data Validation**: : Validate submitted data, in XDP or XML format, against a template created using AEM Forms Designer.
+
+-->
+
+<!--
 
 ### Doc Generation API
 
@@ -369,6 +373,10 @@ Storing PDFs in Azure Blob Storage allows for centralized management of document
 * **Improved Security**: By leveraging Azure's built-in security features, such as encryption at rest and role-based access control (RBAC), sensitive documents remain protected during storage.
 
 * **Customizable Storage Paths**: The ability to define custom directory paths ensures generated PDFs are stored in organized and application-specific locations, improving file management.
+
+-->
+
+<!--
 
 ### Document Conversion APIs
 
@@ -395,6 +403,8 @@ The Document Conversion APIs offer the following features:
 * **Convert PDF to PostScript:** Convert a PDF document to a PostScript (PS) document.
 
 * **Flatten PDF transparency:** Flatten transparency in a PDF document to improve compatibility with print and document processing workflows.
+
+-->
 
 <!--
 
@@ -463,4 +473,3 @@ Key benefits include:
 * [Capabilities of AEM Forms as a Cloud Services](/help/forms/home.md)
 
 * [Difference between AEM 6.5 Forms (AMS and on-prem) and AEM Forms as a Cloud Services (AEM CS Forms)](/help/forms/notable-changes.md)
-
