@@ -68,6 +68,7 @@ The functionality in the table below have been announced as deprecated, but have
 | [!DNL Foundation]       | Adobe’s built-in APM integration (New Relic) | Move to [OpenTelemetry](/help/implementing/developing/introduction/opentelemetry-apm-integration.md) by November 30, 2026 |
 | [!DNL Foundation]       | Domain-specific MCP servers | Switch to the [AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#aem-mcp-server) |
 | [!DNL Foundation]       | AEM Developer Console JWT credentials |  AEM Developer Console [Server-to-Server OAuth credentials](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md). No removal date declared.|
+|Foundation|Foundation Components|Most Foundation Components (`/libs/foundation/components`) were deprecated with AEM 6.5. [Use block-based development](https://www.aem.live/developer/block-collection) for new Edge Delivery Services based sites or [use the Core Components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction) leveraging the [AEM Modernize Tools](https://github.com/adobe/aem-modernize-tools) for existing AEM publisher-based projects. [See the AEM 6.5 documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/siteandpage/default-components-foundation) and the `cq:deprecated`/`cq:deprecatedReason` properties in the JCR for more details about individual component deprecation.|
 
 ## Removed Functionality {#removed-features}
 
