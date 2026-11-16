@@ -1,8 +1,7 @@
 ---
-title: AEM Assets Activation report (Beta)
-description: Definitions for AEM Assets Activation report (Beta) metrics, covering activations (downloads, shares) and distributions (Dynamic Media, Sites)."
+title: Assets Insights
+description: Learn about the unified Assets Insights dashboard and its metrics for asset management, Content Hub sharing, and delivery through Dynamic Media and AEM Sites.
 role: Admin
-hide: true
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
@@ -12,17 +11,37 @@ role_v2:
     internal-label: Admin
 ---
 
-# AEM Asset Insights (Beta): Metrics explained {#aem-asset-insights-beta-metrics-explained}
+# Assets Insights {#aem-asset-insights-beta-metrics-explained}
 
+Assets Insights provides a unified dashboard for asset activity and delivery in Adobe Experience Manager (AEM) Assets as a Cloud Service.
 
-## What is Asset Insights? {#what-is-asset-insights}
+## What is Assets Insights? {#what-is-asset-insights}
 
-Asset Insights shows how your team uses assets and where those assets reach customers — from upload and approval to the moment an asset appears as a product image, shared link, or hero banner. It connects what happens inside your team to the reach your content earns outside it.
+Assets Insights shows how your team uses assets and where those assets reach customers, from upload and approval to delivery in live experiences. Use it to connect internal asset activity with the reach of your content.
 
-**Metrics are grouped around two questions:**
+The dashboard brings together metrics for Author, Content Hub, and Dynamic Media. This article explains the dashboard tabs, the Activation Overview metrics, and the data-availability considerations.
 
-- How is your team working with assets? — finding and sharing, approving to publish, and acting on AI guidance.
-- Where are those assets reaching customers? — where assets show up in live experiences, delivered through Dynamic Media and AEM Sites.
+>[!IMPORTANT]
+>
+>The Assets Insights tab in Assets View is being deprecated. The metrics previously available there, including download reports, are now accessible in the new Insights dashboard. Breakdowns of assets by asset type and asset count by size will be available in the dashboard in a future update.
+
+## Insights dashboard tabs {#insights-dashboard-tabs}
+
+The **[!UICONTROL Insights]** menu provides four tabs. Use **[!UICONTROL Activation Overview]** for a cross-channel summary, and the other tabs to focus on specific areas of the asset lifecycle.
+
+| Tab | Focus | When to use it |
+| --- | --- | --- |
+| **[!UICONTROL Activation Overview]** | Team activity and customer reach across channels. | Review downloads, shares, approvals, publishing, AI recommendations acted on, and asset delivery together. The quick-reference table below explains these metrics. |
+| **[!UICONTROL Manage & Govern]** | Author activity in the central asset repository. | Review activity related to uploading, organizing, editing metadata, versioning, and publishing assets. See [Manage digital assets](/help/assets/manage-digital-assets.md). |
+| **[!UICONTROL Discover & Share]** | Content Hub activity. | Understand how teams find, access, and share approved brand assets through the self-service portal. See [Content Hub overview](/help/assets/product-overview.md). |
+| **[!UICONTROL Transform & Deliver]** | Dynamic Media activity. | Review how rich media is prepared and delivered for web, mobile, and social channels, with assets adapted to different formats and experiences. See [Work with Dynamic Media](/help/assets/dynamic-media/dynamic-media.md). |
+
+**Activation Overview: Quick reference**
+
+Activation Overview metrics are grouped around two questions:
+
+- How is your team working with assets? This includes finding and sharing, approving to publish, and acting on AI guidance.
+- Where are those assets reaching customers? This includes delivery through Dynamic Media and AEM Sites.
 
 <a id="quick-reference"></a>
 
@@ -36,7 +55,7 @@ Asset Insights shows how your team uses assets and where those assets reach cust
   </thead>
   <tbody>
     <tr>
-      <td rowspan="7"><strong>Team activity</strong></td>
+      <td rowspan="8"><strong>Team activity</strong></td>
       <td><strong>Downloads (Author)</strong></td>
       <td>Assets downloaded directly from core AEM Assets</td>
     </tr>
@@ -61,6 +80,10 @@ Asset Insights shows how your team uses assets and where those assets reach cust
       <td>Assets published into Dynamic Media</td>
     </tr>
     <tr>
+      <td><strong>Activate to Sites</strong></td>
+      <td>Assets published into AEM Sites</td>
+    </tr>
+    <tr>
       <td><strong>Content Advisor</strong></td>
       <td>AI recommendations acted on</td>
     </tr>
@@ -78,8 +101,8 @@ Asset Insights shows how your team uses assets and where those assets reach cust
       <td>Distinct asset variations delivered</td>
     </tr>
     <tr>
-      <td><strong>AEM Sites Distribution</td>
-      <td>Assets published to live AEM Sites pages</td>
+      <td><strong>AEM Sites Distribution</strong></td>
+      <td>Asset deliveries to live AEM Sites pages</td>
     </tr>
   </tbody>
 </table>
@@ -90,66 +113,46 @@ Asset Insights shows how your team uses assets and where those assets reach cust
 
 ## How is your team working with assets? {#how-is-your-team-working-with-assets}
 
+These metrics describe how teams find, share, approve, and publish assets, and act on AI recommendations.
 
 ### Finding & sharing {#finding--sharing}
 
-- **Downloads (Author)** — Times assets are downloaded directly from the core AEM Assets environment.
-- **Shares (Author)** — Shareable links created in Assets View, giving external or unauthenticated users access without a login.
-- **Downloads (Content Hub)** — Times assets are downloaded through Content Hub, the self-service space where broader teams grab approved, brand-ready assets.
-- **Shares (Content Hub)** — Shareable links created in Content Hub, giving other users access to selected assets or collections.
+Download and share metrics distinguish activity in Author from activity in Content Hub:
 
->[!NOTE]
->
->Author metrics include activity generated through both the **Author UI** and the **Admin UI**.
+- **Downloads (Author)**: Times assets are downloaded directly from the core AEM Assets environment.
+- **Shares (Author)**: Shareable links created in Assets View, giving external or unauthenticated users access without a login.
+- **Downloads (Content Hub)**: Times assets are downloaded through Content Hub, the self-service space where broader teams access approved, brand-ready assets.
+- **Shares (Content Hub)**: Shareable links created in Content Hub, giving other users access to selected assets or collections.
 
-Splitting downloads and shares by source shows whether activity comes from your core creative operations (Assets View) or from the wider organization using approved assets (Content Hub) — two different signals about how content spreads.
+### Approving to publish {#approving-to-publish}
 
-## Approving to publish {#approving-to-publish}
+These metrics track approval and publishing to different destinations:
 
-- **Approve to Content Hub** — Approving an asset from AEM Assets so it becomes available to end users in Content Hub. Only approved assets appear there.
-- **Activate to Dynamic Media** — Publishing an asset into Dynamic Media so it can be processed into renditions and delivered in real time.
-
-Both are publishing steps to different destinations. Approving to Content Hub makes an asset browsable and downloadable by people; activating to Dynamic Media puts it into the pipeline that serves live customer experiences.
+- **Approve to Content Hub**: Approving an asset from AEM Assets so it becomes available to end users in Content Hub. Only approved assets appear there.
+- **Activate to Dynamic Media**: Publishing an asset into Dynamic Media so it can be processed into renditions and delivered in real time.
+- **Activate to Sites**: Publishing an asset into AEM Sites so it can be delivered in real time.
 
 ### Getting AI guidance {#getting-ai-guidance}
 
-- **Content Advisor** — The number of AI-generated recommendations your team acted on.
-
-A low number is not a problem — it just means there is room to lean on these suggestions more as you go. It's a signal of opportunity, not a warning.
+**Content Advisor** counts the AI-generated recommendations your team acted on.
 
 ## Where are those assets reaching customers? {#where-are-those-assets-reaching-customers}
 
-- **Dynamic Media Delivery Requests** — Total times any asset was requested and delivered across all channels through Dynamic Media. Your overall delivery volume.
-- **Dynamic Media Unique Assets Served** — Distinct assets delivered at least once in the period, counted once each regardless of requests or renditions.
-- **Dynamic Media Unique Transformations** — Distinct variations of your assets delivered in the period, showing how content adapts across devices, screens, and use cases.
-- **AEM Sites Distribution** — Assets published from AEM Assets to live AEM Sites pages, reaching customers on your website.
+These metrics describe asset delivery through Dynamic Media and AEM Sites:
 
-These three answer different questions about the same activity. Delivery Requests is raw volume; Unique Assets Served is breadth (how much of your library is in use); Unique Transformations is adaptability. A high request count with few unique assets means a small set is doing heavy lifting.
+- **Dynamic Media Delivery Requests**: Total times any asset was requested and delivered across all channels through Dynamic Media. This measures overall delivery volume.
+- **Dynamic Media Unique Assets Served**: Distinct assets delivered at least once in the period, counted once each regardless of requests or renditions.
+- **Dynamic Media Unique Transformations**: Distinct variations of your assets delivered in the period, showing how content adapts across devices, screens, and use cases.
+- **AEM Sites Distribution**: Asset deliveries to live AEM Sites pages, reaching customers on your website.
+
+The three Dynamic Media metrics measure volume, breadth of asset use, and variations delivered, respectively. A high request count with few unique assets means a small set of assets accounts for much of the delivery volume.
 
 ## Important points to note {#important-points-to-note}
 
-The following will need to be taken into account if:
+Consider the following when interpreting the dashboard:
 
-1. **Content Hub metrics are displayed as `-`**, then one of the following applies:
-   - Content Hub metrics are not applicable because Content Hub is not enabled for the customer.
-   - No Content Hub activity was observed during the selected period.
-
-2. **Dynamic Media metrics are displayed as `-`**, then one of the following applies:
-   - Dynamic Media metrics are not applicable because the customer does not have a Dynamic Media entitlement.
-   - No Dynamic Media activity was observed during the selected period.
-
-3. **All metrics in your dashboard are displayed as `-`:**
-   - This is an AEM Sites-only customer. Metric is not applicable.
-
-4. **Note: Link share on Author:**
-   - Folder-level asset counts are available and included from August 20, 2026.
-
-5. **Note: Dynamic Media:**
-   - If there is any customer on the list and we do not have full time period data.
-
-### Asset Insights is still evolving {#asset-insights-is-still-evolving}
-
-These metrics will keep growing alongside your use of AEM Assets. We would love your feedback as you put them to work.
-
-**Questions or feedback?** Email [GRP-AEM-DAM-METRICS-BETA@ADOBE.COM](mailto:GRP-AEM-DAM-METRICS-BETA@ADOBE.COM) to reach Adobe Product and Engineering.
-
+- **Content Hub metrics displayed as `-`**: Content Hub is not enabled for your organization, or no Content Hub activity was observed during the selected period.
+- **Dynamic Media metrics displayed as `-`**: Your organization does not have a Dynamic Media entitlement, or no Dynamic Media activity was observed during the selected period.
+- **All dashboard metrics displayed as `-`**: For an AEM Sites-only customer, these metrics are not applicable.
+- **Link shares on Author**: Folder-level asset counts are available and included from August 20, 2026.
+- **Content Hub downloads**: Download data is available only from November 19, 2025.
