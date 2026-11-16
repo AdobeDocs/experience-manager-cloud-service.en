@@ -42,6 +42,7 @@ You can:
 * [Use locale-specific custom XDP templates for Submission PDF](#locale-specific-custom-xdp-templates-for-document-of-record)
 * [Generate an Acroform-based (Acrobat Form PDF) Submission PDF](#generate-an-Acroform-based-document-of-record)
 * [Auto generate a Submission PDF](#auto-generate-a-document-of-record)
+* [Exclude file attachments from the Submission PDF](#exclude-file-attachments)
 * [Configure Submission PDF for forms embedded in AEM Sites pages](#configure-document-of-record-for-forms-embedded-in-aem-sites)
 
 ## Before you start {#components-to-automatically-generate-a-document-of-record}
@@ -126,6 +127,23 @@ Perform the following steps to configure an Adaptive Form to automatically gener
 1. In the Document of Record Template Configuration section of the Form Model tab, select **Generate Document of Record**.
 1. Click **[!UICONTROL Done]**
 
+## Exclude file attachments from the Submission PDF {#exclude-file-attachments}
+
+You can exclude files uploaded to an Adaptive Form from its Submission PDF. This option applies to Adaptive Forms based on Core Components and can help reduce the size of the PDF.
+
+>[!NOTE]
+>
+> This capability is available through the Early Access program. To request access, email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address.
+
+1. Open the Adaptive Form for editing.
+1. Select the **[!UICONTROL Adaptive Form Container]** and select its configure icon to open the container properties.
+1. Open the **[!UICONTROL Document of Record]** tab.
+1. Select **[!UICONTROL Generate Document of Record]** or **[!UICONTROL Associate form template as the Document of Record template]**.
+1. Select **[!UICONTROL Exclude file attachments from Document of Record]**.
+1. Select **[!UICONTROL Done]** and save the form.
+
+This setting excludes uploaded files from the Submission PDF. Delivery of the submitted files separately depends on the configured submit action.
+
 ## Bind Adaptive Form components with template fields {#bind-adaptive-form-components-with-template-fields}
 
  Bind Adaptive Form fields with template fields to display captured form data in corresponding Submission PDF field. To bind Adaptive Form components with corresponding Submission PDF template fields:
@@ -173,7 +191,7 @@ You can configure and generate a Submission PDF (Document of Record) for Adaptiv
     * **Generate Document of Record** — Automatically generate a Submission PDF.
     * **Associate form template as the Document of Record template** — Use a custom XDP or AcroForm template. Browse and select the template from your AEM Forms instance.
 
-1. (Optional) Select **Exclude file attachments from Document of Record** to omit uploaded attachments from the Submission PDF.
+1. (Optional) Select **Exclude file attachments from Document of Record** to omit uploaded attachments from the Submission PDF. This option is available through [Early Access](#exclude-file-attachments).
 1. Click **[!UICONTROL Done]**.
 
 ### Customize Document of Record properties
@@ -322,7 +340,7 @@ The following table describes Adaptive Form components and corresponding XFA com
    <td>File Attachment</td>
    <td> </td>
    <td>false</td>
-   <td>Not available in Submission PDF template. Only available in Submission PDF through attachments.</td>
+   <td>Not available in the Submission PDF template. Uploaded files are included as PDF attachments unless the form is configured to exclude them.</td>
   </tr>
  </tbody>
 </table>
@@ -509,4 +527,3 @@ Setting of the Document of Record component are available under its properties. 
 **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.
 
 -->
-
