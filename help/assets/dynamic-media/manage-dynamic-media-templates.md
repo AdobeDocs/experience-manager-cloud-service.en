@@ -5,6 +5,12 @@ hide: true
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 
 # Manage [!DNL Dynamic Media] templates{#dynamic-media-templates}
@@ -20,7 +26,7 @@ Some of the key features include:
 * **Layer Parameterization:** Define dynamic key-value pairs for layers to enable real-time updates.
 * **[!DNL Dynamic Media] URL Support:** Use [!DNL Dynamic Media] URLs for templates, integrating personalized values from Adobe and non-Adobe applications.
 * **Layer Visibility Control:** Dynamically hide or show layers as needed.
-* **Smart Text Resizing:** Automatically adjust text size to fit designated areas.
+* **Smart Text Resizing:** To fit text in designated areas, automatically adjust text size.
 * **Countdown Timer Layer:** Add countdown timers to templates and configure their end time, display units (Days, Hours, Mins), suffix, fallback text, and CTA.
 
 Some of the key benefits of [!DNL Dynamic Media] templates include:
@@ -42,20 +48,18 @@ Learn to create a [!DNL Dynamic Media] template step by step in this video.
 
 ## Before you begin{#prerequisites-for-dynamic-media-wysiwyg-template}
 
-Fulfil the following requirements to create a [!DNL Dynamic Media] template and generate its delivery URL:
+Fulfill the following requirements to create a [!DNL Dynamic Media] template and generate its delivery URL.
 
 1. Access to [!DNL Dynamic Media].
-1. On the [!DNL Assets View] homepage, you have a folder in **[!UICONTROL Dynamic Media Assets]** to save your template. [Create a folder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** to replicate that folder in **[!UICONTROL Dynamic Media Assets]**.
+1. To save your template, use a folder in **[!UICONTROL Dynamic Media Assets]** on the [!DNL Assets View] homepage. To replicate a folder in **[!UICONTROL Dynamic Media Assets]**, [create a folder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**.
 1. [Sync the images available in your [!DNL AEM Assets] instance with [!DNL Dynamic Media] to use them for creating the template](/help/assets/dynamic-media/config-dm.md).
 1. Publish the images to use in creating the template to generate the delivery URL of the template after creating it. The delivery URL can be used in downstream applications.
-1. To use a font other than the default [!UICONTROL Adobe Sans F2] font in the template's text layer, [upload and publish the font file to AEM and Dynamic Media simultaneously](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Also, ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them. See [Fonts](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) for more information.<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
-1. verify the following in the Touch UI:
-   * On the **[!UICONTROL Edit [!DNL Dynamic Media] Configuration page]**, **[!UICONTROL [!DNL Dynamic Media] sync mode]** that is set to **[!UICONTROL Disabled by default]**, is not applied to all AEM folders (**[!UICONTROL Sync all content]** is unchecked). See [configuring Dynamic Media Cloud Service](/help/assets/dynamic-media/config-dm.md) for more information.
-   * **[!UICONTROL [!DNL Dynamic Media] sync mode]** is set to **[!UICONTROL Enable for subfolders]** for the destination folder or subfolder where you will save the template after creation. See [configuring [!DNL Dynamic Media] Cloud Service](/help/assets/dynamic-media/config-dm.md) for more information.
+1. To use a font other than the default [!UICONTROL Adobe Sans F2] font in the template's text layer, [upload and publish the font file to AEM and Dynamic Media simultaneously](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). [The supported font file formats are AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Also, ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them. See [Fonts](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) for more information.<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
+1. Verify the following in the Touch UI:
+   * On the [!UICONTROL Edit Dynamic Media Configuration page], [!UICONTROL Dynamic Media sync mode] that is set to [!UICONTROL Disabled by default], is not applied to all AEM folders ([!UICONTROL Sync all content] is unchecked). See [configuring Dynamic Media Cloud Service](/help/assets/dynamic-media/config-dm.md) for more information.
+   * The [!UICONTROL Dynamic Media sync mode] is set to [!UICONTROL Enable for subfolders] for the destination folder or subfolder where you save the template after creation. See [configuring [!DNL Dynamic Media] Cloud Service](/help/assets/dynamic-media/config-dm.md) for more information.
  
 ## Create [!DNL Dynamic Media] template{#how-to-create-dynamic-media-template}
-
-Execute the following steps to create a [!DNL Dynamic Media] template:
 
 <!--
 1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder. 
@@ -69,11 +73,9 @@ Execute the following steps to create a [!DNL Dynamic Media] template:
 1. [Add shapes to the canvas](#add-shapes-to-the-canvas)
 1. [Add countdown timer to the canvas](#add-countdown-timer-to-the-canvas)
 1. [Edit or delete a layer](#edit-or-delete-a-layer)
-1. [Parameterise layers](#parameterise-a-layer)
+1. [Parameterize layers](#parameterize-a-layer)
 
 ### Create a blank canvas{#create-a-canvas}
-
-Execute these steps to create a blank canvas: 
 
 1. Navigate to [!DNL Assets View], select **[!UICONTROL Dynamic Media Assets]** available in the left panel and navigate to your folder to save your template in that folder.
 
@@ -97,33 +99,31 @@ Execute these steps to create a blank canvas:
 **Menu options on the right pane:** Use these options to add the necessary images and text layers to the canvas.
 
 * ![DM Templates](/help/assets/assets/add-image.svg): Click to add images to the canvas.
-* ![customizable templates](/help/assets/assets/add-text.svg): Click to add texts to the canvas.
+* ![customizable templates](/help/assets/assets/add-text.svg): Click to add text to the canvas.
 * ![customizable templates](/help/assets/assets/show-layers-list.svg): Click to see the list of all layers (image, text, shape, and countdown timer) on the canvas. Every layer added to the canvas is represented as a separate layer.
 * ![add countdown timer](/help/assets/assets/Smock_Clock_18_N.svg): Click to add a countdown timer layer to the canvas.
 
 **Menu options on the left pane:** Use these options for the following common editor actions.
 
 * ![DM Templates](/help/assets/assets/layer-selector.svg): Select ![DM Templates](/help/assets/assets/layer-selector.svg) and click a layer on the canvas to select it.
-* ![templates that support customization](/help/assets/assets/bring-forward.svg): Click ![templates that support customization](/help/assets/assets/bring-forward.svg) or use keyboard shortcut, **Ctrl** + **`]`** (Windows) or **Cmd** + **`]`** (Mac) to bring a selected layer forward. 
+* ![templates that support customization](/help/assets/assets/bring-forward.svg): To bring a selected layer forward, click ![templates that support customization](/help/assets/assets/bring-forward.svg) or use keyboard shortcut, **Ctrl** + **`]`** (Windows) or **Cmd** + **`]`** (Mac). 
 * ![how to create a template that can be customized easily](/help/assets/assets/send-backward.svg): Click ![how to create a template that can be customized easily](/help/assets/assets/send-backward.svg) or use keyboard shortcut, **Ctrl** + **`[`** (Windows) or **Cmd** + **`[`** (Mac) to send a selected layer backward.
 * ![create a template that can be customized instantly](/help/assets/assets/undo.svg): Click ![create a template that can be customized instantly](/help/assets/assets/undo.svg) or use keyboard shortcut, **Ctrl** + **Z** (Windows) or **Cmd** + **Z** (Mac) to undo the last action.
-* ![template to create banners rapidly](/help/assets/assets/redo.svg): Click ![template to create banners rapidly](/help/assets/assets/redo.svg) or use keyboard shortcut, **Ctrl** + **Y** (Windows) or **Cmd** + **Y** (Mac) to redo the last action.
-* ![template to create flyers rapidly](/help/assets/assets/zoom-in.svg): Click ![template to create flyers rapidly](/help/assets/assets/zoom-in.svg) or use keyboard shortcut, **Ctrl** + **+** (Windows) or **Cmd** + **+** (Mac) to zoom in the canvas.
+* ![template to create banners rapidly](/help/assets/assets/redo.svg): To redo the last action, click ![template to create banners rapidly](/help/assets/assets/redo.svg) or use keyboard shortcut, **Ctrl** + **Y** (Windows) or **Cmd** + **Y** (Mac).
+* ![template to create flyers rapidly](/help/assets/assets/zoom-in.svg): To zoom in the canvas, click ![template to create flyers rapidly](/help/assets/assets/zoom-in.svg) or use keyboard shortcut, **Ctrl** + **+** (Windows) or **Cmd** + **+** (Mac).
 * ![template to create banners rapidly](/help/assets/assets/Zoom-out.svg): Click ![template to create banners rapidly](/help/assets/assets/Zoom-out.svg) or use keyboard shortcut, **Ctrl** + **-** (Windows) or **Cmd** + **-** (Mac) to zoom out the canvas.
 * Press **backspace** or **delete** to delete the selected layer if no text or property is being edited.
 
 Click ![template to create flyers rapidly](/help/assets/assets/show-layers-list.svg) and select more options (![](/help/assets/assets/three-dots.svg)) on the Canvas layer to edit the canvas dimensions anytime while creating the template.
 ![](/help/assets/assets/edit-canvas1.png)
 
-   >[!NOTE]
-   >
-   > Templates allow a maximum of 20 layers, including the Canvas.
+>[!NOTE]
+>
+> Templates allow a maximum of 20 layers, including the Canvas.
 
 ### Add images to the canvas{#add-images-to-the-canvas}
 
-Execute these steps to add images to the canvas:
-
-1. Click ![create a banner in no time](/help/assets/assets/add-image.svg) to open the [Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) panel. The panel displays the images in your AEM Assets instance that are synced to [!DNL Dynamic Media]. 
+1. Click ![create a banner in no time](/help/assets/assets/add-image.svg) to open the Asset Selector panel. The panel displays the images in your AEM Assets instance that are synced to [!DNL Dynamic Media]. 
 1. Browse the panel or use keywords in the search bar to find a specific image.
 1. Drag and drop an image on the canvas to use it. See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) for resizing or repositioning a layer on the canvas.
 ![create a banner within seconds](/help/assets/assets/add-image-to-canvas.png)
@@ -132,11 +132,9 @@ Execute these steps to add images to the canvas:
 
 ### Add text layers to the canvas{#add-text-to-the-canvas}
 
-Execute these steps to add text layers to the canvas:
-
 1. Click ![creating new banners quickly](/help/assets/assets/add-text.svg) to add a text layer to the canvas and open the Properties panel. 
 1. Select the layer and click the text to update it. 
-1. Select **[!UICONTROL Smart Text Resize]** in the Properties panel to  automatically adjust the text length and font size to optimally fit in the designated area. 
+1. Select **[!UICONTROL Smart Text Resize]** in the Properties panel to adjust the text length and font size automatically to fit optimally in the designated area. 
 ![best customizable banners](/help/assets/assets/add-text-layer.png)
 
 See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) to reposition, resize, rotate or delete the layer. Format your text to the required font, size, color, style, alignment (in the layer) by changing their values in the respective fields under the **[!UICONTROL Text]** section of the panel. The **[!UICONTROL Font Family]** field displays [!UICONTROL Adobe Sans F2] default font, the reprocessed existing fonts and the newly uploaded and published fonts. See point 5 in the [Before you begin](#prerequisites-for-dynamic-media-wysiwyg-template) section above for more information.
@@ -144,8 +142,6 @@ See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) t
 [Format specific parts of text](#apply-formatting-to-substring) and [parameterize them to control them independently](#substring-parameterisation).
 
 #### Format selective text{#apply-formatting-to-substring}
-
-Execute the following steps to format specific parts of a string:
 
 1. Select one or more characters in the string to format.
 1. Format the selection using the [properties panel](#properties-panel). The following formatting options are applicable to substrings and their parts:
@@ -155,24 +151,20 @@ Execute the following steps to format specific parts of a string:
 
 >[!NOTE]
 >
->If a multi-line text layer contains substrings with different font sizes and a custom line spacing is applied, the preview or delivery output may not exactly match the Canvas View. In some cases, the generated output may display reduced spacing between lines.
+>If a multi-line text layer contains substrings with different font sizes and a custom line spacing is applied, the preview or delivery output does not exactly match the Canvas View. In some cases, the generated output displays reduced spacing between lines.
 
-Each formatted string part displays as a substring in the substring selector, available within the parameters panel. [Add parameters to these formatted parts to format them dynamically using the template's delivery URL](#substring-parameterisation).
+Each formatted string part displays as a substring in the substring selector, available within the parameters panel. [To format these parts dynamically using the template's delivery URL, add parameters to them](#substring-parameterisation).
 
 ### Add shapes to the canvas {#add-shapes-to-the-canvas}
-
-Execute these steps to add shapes to the canvas:
 
 1. Click ![creating shapes](/help/assets/assets/Shapes.svg), select a shape (rectangle or circle) to add it to the canvas. Use the shape's [[!UICONTROL Properties Panel]](#reposition-resize-delete-a-layer) to reposition, resize, rotate or delete the layer. 
 1. Scroll to the **[!UICONTROL Style]** section of the panel, define a hex code in the **[!UICONTROL Shape Color]** field or use the color picker to fill color in the selected shape. 
 1. Enable the **[!UICONTROL Uniform Radius]** toggle and use the **[!UICONTROL Corner Radius]** slider to adjust the roundness of all four corners of the rectangle uniformly. Disable the toggle to customize the corner roundness by assigning specific radius values to each corner.
 ![adjust corner roundness of shapes](/help/assets/assets/enable-uniform-radius-shape.png)
-1. [Add the **[!UICONTROL Hide]** parameter to the selected layer](#parameterise-a-layer) to show or hide the layer in the template in real time using the template URL. 
+1. To show or hide the layer in the template using the template URL, [add the **[!UICONTROL Hide]** parameter to the selected layer](#parameterize-a-layer). 
 1. Select the layer to [add a [!UICONTROL CTA] link](#add-CTA-in-dynamic-media-templates) to it, allowing users to click the shape as a hyperlink in the live template.
 
 ### Add countdown timer to the canvas {#add-countdown-timer-to-the-canvas}
-
-Execute these steps to add a countdown timer layer to the canvas:
 
 1. Click ![add countdown timer](/help/assets/assets/Smock_Clock_18_N.svg) to add a countdown timer layer to the canvas. The countdown timer layer is added, and the **[!UICONTROL Properties]** panel opens automatically.
 
@@ -180,23 +172,21 @@ Execute these steps to add a countdown timer layer to the canvas:
 
 3. Use the **[!UICONTROL Position]** section to reposition, resize, rotate, or hide the countdown timer layer.
 
-4. Use the **[!UICONTROL Text]** section to configure the appearance of the countdown timer text, such as font family, font size, text color, alignment, opacity, and rotation.
+4. Use the **[!UICONTROL Text]** section to configure the countdown timer text appearance.
 
-5. Scroll to the **[!UICONTROL Timer]** section and configure the countdown timer settings, such as specifying the end time, enabling or disabling time units, defining suffix text, and specifying fallback text.
+5. Scroll to the **[!UICONTROL Timer]** section and configure the countdown timer settings.
 
 6. Use the **[!UICONTROL CTA]** section to specify a destination URL and make the countdown timer layer clickable.
 
  ![countdown timer layer properties](/help/assets/assets/countdown-timer.png)
 
-See the [**[!UICONTROL Properties Panel]**] to reposition, resize, rotate, delete, or parameterise the countdown timer layer.
+See the [**[!UICONTROL Properties Panel]**] to reposition, resize, rotate, delete, or parameterize the countdown timer layer.
 
 >[!NOTE]
 >
->The Countdown Timer layer is currently available only in Beta environments. This feature may not be available in all environments.
+>The Countdown Timer layer is currently available only in Beta environments. This feature is unavailable in some environments.
 
 ### Edit or delete a layer {#edit-or-delete-a-layer}
-
-Execute these steps to edit or delete a canvas layer:
 
 1. Click ![templates with support to dynamic updates](/help/assets/assets/show-layers-list.svg) and select the layer either on the canvas or from the Layers list.
 1. Click **[!UICONTROL more options]** (![templates with support to real-time updates](/help/assets/assets/three-dots.svg)) to edit or delete the layer. 
@@ -206,7 +196,7 @@ Execute these steps to edit or delete a canvas layer:
 
 ### Properties panel {#properties-panel}
 
-[!UICONTROL Properties] panel includes sections to [reposition](#reposition-resize-delete-a-layer), [resize](#reposition-resize-delete-a-layer) and [rotate](#reposition-resize-delete-a-layer) a layer. It also provides color fill options for [shape layers](#add-shapes-to-the-canvas), [text formatting options](#text-formatting-options-on-properties-panel) for [text layers](#add-text-to-the-canvas), countdown timer configuration options for [countdown timer layers](#add-countdown-timer-to-the-canvas), and an option to [add a [!UICONTROL CTA] link](#add-CTA-in-dynamic-media-templates) to any selected layer.
+The [!UICONTROL Properties] panel includes sections to [reposition](#reposition-resize-delete-a-layer), [resize](#reposition-resize-delete-a-layer) and [rotate](#reposition-resize-delete-a-layer) a layer. It also provides color fill options for [shape layers](#add-shapes-to-the-canvas), [text formatting options](#text-formatting-options-on-properties-panel) for [text layers](#add-text-to-the-canvas), countdown timer configuration options for [countdown timer layers](#add-countdown-timer-to-the-canvas), and an option to [add a [!UICONTROL CTA] link](#add-CTA-in-dynamic-media-templates) to any selected layer.
 
 To navigate to a layer's properties panel, click ![rapid content creation](/help/assets/assets/show-layers-list.svg) and select the layer from the list to display its [!UICONTROL Properties] panel. 
 
@@ -216,7 +206,7 @@ From the [!UICONTROL Properties] panel of a layer, select another layer on the c
  
 #### Reposition, resize, rotate or delete a layer{#reposition-resize-delete-a-layer}
 
-See these common layer editing actions to edit an image, text, shape, or countdown timer layer:
+To edit an image, text, shape, or countdown timer layer, see these common layer editing actions:
 
 * **Reposition the layer:** Drag the layer to move it anywhere on the canvas. This action updates the X and Y values in the properties panel. X and Y are the coordinates of the layer's center on the canvas plane.
 * **Resize the layer:** Select the layer and drag its edge handles to resize it. This action updates the W (width) and H (height) values in the properties panel.
@@ -225,8 +215,8 @@ See these common layer editing actions to edit an image, text, shape, or countdo
 
 #### Text formatting options{#text-formatting-options-on-properties-panel}
 
-Format your text to the required font, size, color, style, alignment (within the layer) by changing their values in the respective fields under the **[!UICONTROL Text]** section on the panel.
-Ensure to include **[!UICONTROL Smart Text Resize]**. [!UICONTROL Smart Text Resize] works on [Copyfitting](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting) algorithm to optimally fill text in the text area and prevents text overflow and minimizes extra space at the bottom of the text.
+Format your text to the required font, size, color, style, alignment (within the layer) by changing its values in the respective fields under the **[!UICONTROL Text]** section on the panel.
+Include **[!UICONTROL Smart Text Resize]**. [!UICONTROL Smart Text Resize] works on the [Copyfitting](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting) algorithm to fill text in the text area optimally, prevent text overflow, and minimize extra space at the bottom of the text.
 
 ![content creation in no time](/help/assets/assets/smart-text-resize.png)
 
@@ -238,30 +228,30 @@ Use the following options:
 
 * **Days, Hours, Mins** – Enable or disable specific time units to control which values appear in the countdown timer. When enabled, the selected units display in the countdown timer.
 
-* **Suffix** – Specify additional text displayed after each enabled time unit. For example, you can use suffix values such as "d", "h", or "m", or separators such as ":" to customize the display format.
+* **Suffix** – Specify additional text displayed after each enabled time unit. For example, you can use suffix values such as "d," "h," or "m," or separators such as ":" to customize the display format.
 
 * **End Time (Epoch)** – Specifies the exact expiration date and time of the countdown timer. The countdown updates dynamically and displays the remaining time until the specified end time.
 
-* **Fallback Text** – Specifies the text displayed after the countdown timer reaches its expiration time. For example, you can display a message such as "Time's up!" or "Offer expired".
+* **Fallback Text** – Specifies the text displayed after the countdown timer reaches its expiration time. For example, you can display a message such as "Time's up!" or "Offer expired."
 
 To make the countdown timer layer clickable, use the **[!UICONTROL CTA]** section and specify a destination URL.
 
-### Parameterise layers {#parameterise-a-layer}
+### Parameterize layers {#parameterize-a-layer}
 
-After creating a template with multiple layers of images, texts, shapes, and countdown timers, parameterise the selected layers. When a layer or its property is parameterised, it gets a key-value pair (also called as parameter). This parameter can be included in the template URL to update the layer's position, size or content in real time resulting in template customisation in no time.
+After creating a template with multiple layers of images, texts, shapes, and countdown timers, parameterize the selected layers. When a layer or its property is parameterized, it gets a key-value pair (also called a parameter). This parameter can be included in the template URL to update the layer position, size, or content in real time for template customization.
 
-To parameterise a layer:
+**To parameterize layers:**
 
-1. click ![instant content creation](/help/assets/assets/show-layers-list.svg), select a layer and click **[!UICONTROL Parameters]**. The **[!UICONTROL Parameters]** panel displays.
-1. Toggle **[!UICONTROL Include Parameter]** to parameterise a property. See the [Parameters panel option](#parameterisation-options-or-allowed-parameters) to know the property's behavior after parameterisation.
-1. **Optional:** Rename the parameter name. A parameter name has a layer name followed by a suffix. For a selected layer all its parameterized properties share the same layer name followed by a varying suffix. Rename the layer name by following the semantic naming convention so that when you include the parameter in the URL, the parameter name self explains about the layer's content or its purpose.
+1. Click ![instant content creation](/help/assets/assets/show-layers-list.svg), select a layer and click **[!UICONTROL Parameters]**. The **[!UICONTROL Parameters]** panel displays.
+1. Toggle **[!UICONTROL Include Parameter]** to parameterize a property. To know the property behavior after parameterization, see the [Parameters panel option](#parameterisation-options-or-allowed-parameters).
+1. **Optional:** Rename the parameter name. A parameter name has a layer name followed by a suffix. For a selected layer, all its parameterized properties share the same layer name followed by a varying suffix. Rename the layer by following the semantic naming convention so that when you include the parameter in the URL, the parameter name self-explains the layer's content or its purpose.
 1. Click **[!UICONTROL Save]**.
 ![instant content creation](/help/assets/assets/parameterise-a-layer.png)
 To switch between the Parameter panel of an image and text layer, select the layer on the canvas and click **[!UICONTROL Parameters]**.
 
 #### Parameters panel option {#parameterisation-options-or-allowed-parameters} 
 
-The parameterised properties can be included as URL parameters in the template URL to edit the template in real time using the URL. 
+The parameterized properties can be included as URL parameters in the template URL to edit the template in real time using the URL. 
 
 ##### Layer parameters{#layer-parameters}
 
@@ -275,7 +265,7 @@ The following are layer parameters that apply to both image and text layers.
 
 ##### Image parameter{#image-parameter}
 
-Include **[!UICONTROL Source]** parameter to replace the layer's image with a new image by changing the image path in the parameter's value in the URL.
+To replace the layer's image, include the **[!UICONTROL Source]** parameter and change the image path in the URL.
 ![image source parameter](/help/assets/assets/image-parameter.png)
 
 ##### Text formatting parameters{#text-formatting-parameters}
@@ -289,10 +279,10 @@ Include the following parameters to edit the text, its font, color and size from
 
 ##### Countdown Timer parameters {#countdown-timer-parameters}
 
-For countdown timer layers, the following parameters can be included to dynamically update the timer via URL:
+For countdown timer layers, the following parameters can be included to update the timer dynamically through a URL:
 
 * **[!UICONTROL End Time]**: Include to set the countdown's end time. Use a Unix epoch timestamp or predefined date-time format as the parameter value.  
-* **[!UICONTROL Fallback Text]**: Include to display text after the countdown ends (e.g., "Time's up!").  
+* **[!UICONTROL Fallback Text]**: Include to display text after the countdown ends (that is, "Time's up!").  
 * **Optional timer parameters**:  
   * `countdown_show_days`, `countdown_show_hours`, `countdown_show_mins` - Set 1/0 to show or hide specific time units.  
   * `countdown_cta` – Optional CTA link to redirect after countdown completion.
@@ -303,23 +293,26 @@ These parameters allow real-time updates to the countdown timer directly from th
 ##### Parameterize substrings{#substring-parameterisation}
 
 In the **[!UICONTROL Parameters]** panel, scroll to the **[!UICONTROL Substring Parameters]** section. This section includes a **substring selector** that displays the complete string (selected text layer) with consistent formatting or its formatted parts as separate substrings. Select a substring to [parameterize its text, font family, font size, and color](#text-formatting-parameters).
-Use the substring selector to [split substrings](#split-substring) to parameterize its individual parts or [merge substrings](#merge-substring) to apply uniform parameters.
+Use the substring selector to [split substrings](#split-substring) to parameterize their individual parts or [merge substrings](#merge-substring) to apply uniform parameters.
 
-###### Split substring{#split-substring}
+###### Split a substring{#split-substring}
 
-To parameterize a specific part of a substring, pull out the part to make it a separate substring for individual selection and parameterization. Execute the following steps to split a substring into separate substrings:
+To parameterize a specific part of a substring, make it a separate substring for individual selection and parameterization by pulling it out. 
+
+**To split a substring:**
 
 1. In the substring selector, select the characters within a substring  to separate it.
 1. Click ![split substring](/help/assets/assets/unmerge.svg) to pull out the selection and make it a separate substring within the **substring selector**. 
 ![split substring](/help/assets/assets/split-a-substring.png)
 You can select the required substring to [parameterize its text, font family, font size, and color](#text-formatting-parameters).
 
-###### Merge substring{#merge-substring}
+###### Merge a substring{#merge-substring}
 
 Merging substrings removes their existing individual parameters and enables you to apply consistent parameters across the newly formed substring.
-Execute the following steps to merge two adjacent substrings to apply uniform parameters to the resulting substring:
 
-1. In the substring selector, select characters across two adjacent substrings with same formatting.
+**To merge a substring:**
+
+1. In the substring selector, select characters across two adjacent substrings with the same formatting.
 1. Click ![merge substring](/help/assets/assets/merge.svg) to merge the substrings.
 
    ![merge identical substrings](/help/assets/assets/merge-two-substrings.png)
@@ -332,22 +325,20 @@ Execute the following steps to merge two adjacent substrings to apply uniform pa
 
 ### Group layers to control their visibility simultaneously{#group-layers}
 
-Another way to keep your templates flexible, is by using a single parameter name to control multiple layers. This strategy is helpful for the visibility (hide or show layers) parameter, to update the design or graphics from a single template.
+Another way to keep your templates flexible is by using a single parameter name to control multiple layers. This strategy is helpful for the visibility (hide or show layers) parameter, to update the design or graphics from a single template.
 
-Follow these steps to assign the same name to the [!UICONTROL Hide] parameters (![fast content creation](/help/assets/assets/Visibility-icon.svg)) of multiple layers, allowing you to hide or show them simultaneously.
+**To group layers to control their visibility simultaneously:**
 
-1. Navigate to the [**[!UICONTROL Properties Panel]**](#parameterise-a-layer) of a layer.
-1. Toggle the **[!UICONTROL Hide]** Parameter if not parameterised earlier.
+1. Navigate to the [**[!UICONTROL Properties Panel]**](#parameterize-a-layer) of a layer.
+1. Toggle the **[!UICONTROL Hide]** Parameter if not parameterized earlier.
 1. **Optional:** Rename the **[!UICONTROL Hide]** Parameter.
 1. Copy the **[!UICONTROL Hide]** Parameter name. 
-1. Go to the Parameter panel of other layers by selecting them from the canvas and toggle their **[!UICONTROL Hide]** Parameter if not parameterised.
+1. Go to the Parameter panel of other layers by selecting them from the canvas and toggle their **[!UICONTROL Hide]** Parameter if not parameterized.
 1. Replace their **[!UICONTROL Hide parameter]** name with the copied name.
 1. Click **[!UICONTROL Save]** to group the layers. 
 1. Execute step 3 and then 4 in the [**[!UICONTROL Preview and Publish]**](#preview-and-publish-template-and-copy-template-deliver-url) section to see your changes. 
 
 ## Preview and publish the Dynamic Media template to copy the delivery URL{#preview-and-publish-dynamic-media-template-and-copy-template-deliver-url}
-
-Execute these steps to preview and publish the template and copy the delivery URL:
 
 1. On the canvas page, click **[!UICONTROL Preview]**. You can also navigate to **[!UICONTROL Assets View]** **>** **[!UICONTROL Dynamic Media Assets]** **>** find and select your template **>** click **[!UICONTROL Edit Template]** **>** click **[!UICONTROL Preview]**. The preview page displays the template, its parameters (parameterized layers and properties), publish status, and the **[!UICONTROL Publish]** option.
 1. Select parameters from the **[!UICONTROL Template Parameters]** panel to edit their values and instantly update the content, size, position, or text formatting of the corresponding template layer in the preview. For example: 
@@ -357,7 +348,7 @@ Execute these steps to preview and publish the template and copy the delivery UR
 
    The template updates immediately, displaying the edited text and replacing the previous image with the new one. Additionally, the image parameter value reflects the new image path. Similarly, you can resize a layer by adjusting its values, and the changes are applied to the template in real time. 
 1. Select the **[!UICONTROL Hide]** parameter for [grouped layers](#group-layers) from the list to show or hide them together in the template. 
-1. **Optional:** Change the **[!UICONTROL Hide]** parameter value between 0 and 1 and click **[!UICONTROL Refresh]** to see the changes. Layers with the same **[!UICONTROL Hide]** parameter hides or displays together. Similarly, you can control the layers' visibility from the URL.
+1. **Optional:** Change the **[!UICONTROL Hide]** parameter value between 0 and 1 and click **[!UICONTROL Refresh]** to see the changes. Layers with the same **[!UICONTROL Hide]** parameter hide or display together. Similarly, you can control the layers' visibility from the URL.
 
    ![creating content on the fly](/help/assets/assets/dm-templates-publish-status.png)
    You can also toggle **[!UICONTROL Include all parameters]** to edit all of the displayed parameter values and see the updates in the template preview.
@@ -370,28 +361,24 @@ The selected parameters on the **[!UICONTROL Preview]** page become the URL para
 
 Ensure the images in the template are already published to AEM and Dynamic Media to generate the delivery URL of the template.
 
-Execute the following steps to copy the delivery URL of the template:
+**To copy the delivery URL:**
 
-1. Click **[!UICONTROL Copy URL]**. The **[!UICONTROL Copy URL]** dialog box displays. Select and copy the displayed URL. The first parameter in the URL starts after a question mark **([!UICONTROL ?])** and a key-value pair starts with **[!UICONTROL $]** and ends with **[!UICONTROL &]**. The key and value are separated by an equals sign **([!UICONTROL =])**, with the key on the left and the value on the right. 
+1. Click **[!UICONTROL Copy URL]**. The **[!UICONTROL Copy URL]** dialog box displays. Select and copy the displayed URL. The URL's first parameter follows a question mark **([!UICONTROL ?])**, and a key-value pair starts with **[!UICONTROL $]** and ends with **[!UICONTROL &]**. An equals sign **([!UICONTROL =])** separates the key and value, with the key on the left and the value on the right. 
 1. Paste this URL in your browser tab and see your live template. Customize the template in real time by updating the required parameter's value (Key's value) in the URL directly as demonstrated in [step 2](#preview-and-publish-template-and-copy-template-deliver-url) of **Preview and Publish** section.  
 1. Use this URL for rapid merchandising of your products or services. You can share this URL with your customers or integrate it into your website or any downstream third-party application to display the banner and make real-time updates to it to reflect the ongoing offers.
 
 ## Make real-time updates to the Dynamic Media template from the URL{#update-the-template-from-the-url}
 
-Editing parameters directly in the URL can be tedious. To simplify: 
-
 1. Copy the URL and paste it into a notepad. 
 1. Use Cmd+F (Mac) or Ctrl+F (Windows) to find and edit the parameter values. Such as:
    * Find and replace image paths for image layers.
-   * Find the layer's [parameterized](#parameterise-a-layer) coordinates, width and height, to adjust their values. 
+   * To adjust their values, find the layer's [parameterized](#parameterize-a-layer) coordinates, width, and height. 
    * Edit text, font, color, size, or alignment for text layers. 
    * Change visibility values between 0 and 1. 
 
 Paste this updated URL in your browser to view the changes. 
 
 ## Edit the Dynamic Media template{#edit-the-template}
-
-Edit the template by following these steps:
 
 1. On the [!DNL Assets view], click **[!UICONTROL Dynamic Media Assets]**.
 2. Navigate to the template location.
@@ -402,7 +389,7 @@ Edit the template by following these steps:
 
 Turn any image, text or shape layer of your [!DNL Dynamic Media] template into a hyperlink by adding a CTA link to it that directs users to a target page. 
 
-Execute these steps to add a CTA link to a layer:
+**To add a CTA link to your Dynamic Media template layer:**
 
 1. Navigate to your template location, select the template and click ![edit](/help/assets/assets/edit-pen-icon.svg) **[!UICONTROL Edit Template]**. The template displays on the canvas.
 1. Select the template layer and [navigate to its properties panel](#edit-or-delete-a-layer) to add a CTA link to it.
@@ -432,16 +419,16 @@ Execute these steps to add a CTA link to a layer:
 
 1. Click the CTA element on the template to navigate to the destination page.
 
-Watch this step by step video to learn how to add a CTA link to a template layer.
+To learn how to add a CTA link to a template layer, watch this step by step video.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457616)
 
 ## Important points to note {#important-points-to-note}
 
 * After creating a template with parameterized image layers for dynamic updates, ensure that the images intended for future updates share the same dimensions as the parameterized images. This ensures the images fit perfectly within the layers without overflowing or leaving empty spaces. Currently, the template does not support automatic dimension adjustments to fit images into the layers.
-* There is no substring support in a text layer. The user cannot apply different font properties on substring of a text layer.
+* There is no substring support for text layers. The user cannot apply different font properties to a substring of a text layer.
 * Support of multiple [!DNL Dynamic Media] companies is not currently available with [!DNL Dynamic Media] Templates.
-* In case of copy or move, Destination Selector shows all the folders (including non-[!DNL Dynamic Media] synced folders). Also, currently, it does not display the [!DNL Dynamic Media] Template assets (both of these are limitations of the destination selector).
+* If you copy or move, Destination Selector shows all the folders (including non-[!DNL Dynamic Media] synced folders). Also, currently, it does not display the [!DNL Dynamic Media] Template Assets (both of these issues are limitations of the destination selector).
 * Any update operation on a folder (for example, Publish or Delete) from Assets section impacts the [!DNL Dynamic Media] Templates available within that folder. 
 * Trash does not work for [!DNL Dynamic Media] Templates. If an asset is moved to trash and then restored, the asset is restored in AEM but not on [!DNL Dynamic Media]. The same is valid for [!DNL Dynamic Media] Templates.
 

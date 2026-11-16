@@ -4,6 +4,18 @@ description: Use the Network Connectivity Test in Cloud Manager to validate Adva
 feature: Security
 role: Admin
 exl-id: dee0d1bc-46dc-43db-afeb-059ba2532f81
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Network Connectivity Test {#network-connectivity-test}
 

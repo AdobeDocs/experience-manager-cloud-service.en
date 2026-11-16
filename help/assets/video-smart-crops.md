@@ -3,6 +3,14 @@ title: Apply Video Smart Crops to approved videos
 description: Dynamic Media with OpenAPI capabilities enables you to generate Video Smart Cropped outputs for video assets in Adobe Experience Manager (AEM).
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets."
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Apply Video Smart Crops to approved videos {#apply-video-smart-crops-dmwoapi}
 

@@ -6,6 +6,18 @@ role: Admin
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
 solution: Experience Manager Sites
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Preparing Content for Translation {#preparing-content-for-translation}
 
@@ -67,6 +79,14 @@ To create the language root you create a page and use an ISO language code as th
 
 * `<language-code>` - The supported language code is a two-letter code as defined by ISO-639-1, for example, `en`.
 * `<language-code>_<country-code>` or `<language-code>-<country-code>` - The supported country code is a lower-case or upper-case two-letter code as defined by ISO 3166, for example, `en_US`, `en_us`, `en_GB`, `en-gb`.
+
+>[!NOTE]
+>
+>When AEM runs on Java 17 or Java 21, the default Java locale mapping uses `he` for Hebrew, `yi` for Yiddish, and `id` for Indonesian instead of the legacy codes `iw`, `ji`, and `in`. Existing i18n dictionaries that use the legacy codes might not be found.
+>
+>Use the current codes for language roots and i18n dictionaries: replace `iw` with `he`, `ji` with `yi`, and `in` with `id`.
+>
+>If you need to retain the legacy codes as a compatibility workaround, add the environment variable `JAVA_LEGACY_ISO_CODES` in Cloud Manager and set its value to `true`. See [Add an environment variable](/help/implementing/cloud-manager/environment-variables.md#add-variables).
 
 You can use either format, according to the structure that you have chosen for your global site. For example, the root page of the French language copy of the WKND site has `fr` as the **Name** property. The **Name** property is used as the name of the page node in the repository, and therefore determines the path of the page (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 

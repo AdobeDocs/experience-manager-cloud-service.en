@@ -4,6 +4,18 @@ description: Learn how the AEM Forms Value Realization Dashboard, or Forms Usage
 feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Understand the AEM Forms Value Realization Dashboard
 

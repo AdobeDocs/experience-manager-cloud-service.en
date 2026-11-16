@@ -8,6 +8,20 @@ feature: Accessibility
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: e0d8c871-755b-4042-bb9e-9b9a2648e9fe
+    internal-label: Accessibility
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Accessibility in Dynamic Media {#accessibility-in-dm}
 

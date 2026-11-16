@@ -7,6 +7,16 @@ role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Embed adaptive form based on core components to an external web page {#embed-adaptive-form-in-external-web-page}
 
@@ -174,8 +184,8 @@ When embedding an adaptive form in a web page, consider the following best pract
 
 * Ensure that the styling rules defined in the web page CSS do not conflict with the form object CSS. To avoid the conflicts, you can reuse the web page CSS in the adaptive form theme using AEM client library. For information about using client library in adaptive form themes, see [Themes in AEM Forms](/help/forms/using-themes-in-core-components.md).
 * Make the form container in the web page use the entire window width. It ensures that the CSS rules configured for mobile devices work without any changes. If the form container does not take the entire window width, you must write custom CSS to make the form adapt to different mobile devices.
-* Use `[getData](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)` API to get the XML or JSON representation of form data in client.
-* Use `[unloadAdaptiveForm](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)` API to unload the adaptive form from HTML DOM.
+* Use `[getData](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/GuideBridge.html)` API to get the XML or JSON representation of form data in client.
+* Use `[unloadAdaptiveForm](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/GuideBridge.html)` API to unload the adaptive form from HTML DOM.
 * Set up the access-control-origin header when sending a response from an AEM server.
 
 ## Enable AEM Forms to serve adaptive forms to a cross-domain site {#cross-site}

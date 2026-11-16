@@ -4,6 +4,15 @@ description: Copy-ready YAML patterns for the Adobe-managed CDN and customer-man
 feature: Dispatcher
 role: Admin
 exl-id: e8e0c816-847a-4e2c-8136-43a583c5780c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: 2741637d-a621-529a-b21b-bfe9be07a9c8
+    internal-label: Dispatcher
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # CDN Configuration Snippets for Common Scenarios {#cdn-configuration-snippets}
 

@@ -9,6 +9,12 @@ feature: 3D Assets
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Work with 3D assets in Dynamic Media {#working-with-three-d-assets-dm}
 

@@ -4,6 +4,12 @@ description: Learn how to configure the network policies to secure the access to
 exl-id: f5be90a4-266a-4d23-8e8b-94156f0264d5
 feature: Configuring
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Securing the Author Tier {#securing-the-author-tier}
 

@@ -1,489 +1,380 @@
 ---
 title: Prompting Guide for Experience Modernization Agent
-description: This guide provides tips for effective prompting of the Experience Modernization Agent and describes what its skills do.
+description: This guide gives example prompts for the tasks of the Experience Modernization Agent and explains what the agent does for each.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 4771606b-a327-48b3-b142-44e03e4dc41d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+  - id: f1710108-e0d1-47e5-9952-1888729a03da
+    internal-label: Agentic AI
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Prompting Guide for Experience Modernization Agent {#prompting-guide}
 
-The Experience Modernization Agent automatically selects the appropriate skill based on natural-language requests. This guide provides tips for effective prompting and describes what the skills do.
+The Experience Modernization Agent works from requests in natural language. For each kind of task, such as migrating a page or styling a block, it follows a built-in workflow, called a skill. It chooses the skill from your request, so you don't need to name it. Some skills belong to [optional capabilities](console.md#optional-capabilities), which the agent offers to turn on for your project when a request needs them.
 
-## General Tips {#general-tips}
+This guide gives example prompts in the order you use them: plan, migrate, check, scale, and keep developing. Follow [Migrate a Production Site](production-migration.md) for the full migration procedure. Sections, default content, blocks, and variants are explained in [Shape the Content Structure](production-migration.md#content-structure). Replace the example URLs and paths in the prompts with your own.
 
-### Some skills depend on outputs from other skills. {#dependency}
+## Give the Agent Context {#context}
 
-* Because bulk import needs the import infrastructure that page migration creates, migrate at least one page before running bulk import.
-* Since block CSS references the global design tokens, complete the site-wide design before styling individual blocks.
+The agent knows Edge Delivery Services and reads your project's code. It doesn't know your business, your brand rules, or the other systems that your site works with until you tell it, and each request with the right context saves a round of corrections. Share what the task needs:
 
-### The AI follows structured workflows and will ask clarifying questions when it needs more information. {#workflows}
+* **The goal and how to check it:** what you want, for whom, and what the finished result looks like.
+* **Scope and destination:** the source pages or designs, the destination paths, [where the content is stored](overview.md#content-storage), the repository and branch, what must not change, and whether the agent may upload, push, or publish.
+* **Requirements:** specifications, and brand and accessibility rules.
+* **Examples:** a page that already looks right, a screenshot, a Figma link, or a sample API response.
+* **Documentation:** a link to public documentation, which the agent reads on the web, or the documents themselves when they need sign-in. **Attach files** doesn't accept PDF files, so copy the relevant text from those. See [Prompt Input](console.md#prompt-input).
+* **Decisions already made:** keep agreed conventions in `AGENTS.md` and the files that it lists, so that you don't repeat them in every request. See [Project Instructions and Memory](project-instructions.md).
 
-* Trust the process and answer these qualifying questions as they come up.
-* Do not try to front-load all requirements in the initial prompt.
+Share what the task needs rather than everything you have, and follow your organization's policy on what may go into AI tools.
 
-### Create markdown files in the project to document project-specific rules, guidelines, design decisions, or constraints. {#markdown-files}
+Ask questions, too: about Edge Delivery Services concepts, your project's code, and the trade-offs between approaches. When you're not sure how to do something, ask how it is done in Edge Delivery Services before you ask the agent to do it, or switch to **Plan** mode to review its approach. Ask the agent to list its questions and assumptions: answering them is quicker than correcting the result.
 
-* These markdown files (e.g., INSTRUCTIONS.md, CONTEXT.md) can include file naming conventions, content mapping rules, or brand guidelines.
-* When starting a new conversation, ask the agent to "warm up by reading the project documentation" so it loads this context before proceeding with tasks.
+## Keep Secrets Out of the Chat {#secrets}
 
-### The agent's context window is not infinite. {#limited-window}
+>[!CAUTION]
+>
+>Never type, paste, or attach passwords, API keys, access tokens, or other secrets in the chat. Enter the credentials that the agent needs in the console's [**Settings**](console.md#settings-page). If you have already shared a secret, revoke or replace it now.
 
-* Over long conversations, earlier instructions may be compacted or forgotten.
-* If the agent seems to have lost context, either remind it of the key points or clear the chat and start fresh with a warm-up prompt to read project documentation.
+The chat is not a safe place for a secret. Everything that you type or attach is sent to the AI model and kept in the conversation. The agent treats it like any other text: it can copy a value into a file of your project, such as a script or a configuration file. Once that file is pushed, the value stays in the repository's history, and everything in the repository is delivered to the browsers of your site's visitors. Credentials that you enter in **Settings** never reach the agent. See [Credentials](evaluate.md#security-credentials).
 
-### Use iterative prompting to refine results. {#iterate}
+Keep these out of the chat, out of attachments, and out of project files:
 
-* If something doesn't look right (e.g., wrong background color on a block), prompt the agent to fix the specific issue rather than starting over.
+* Passwords, including those of test accounts and of your own Adobe ID or Git account
+* API keys, access tokens, and personal access tokens
+* Private keys and certificates
+* Connection strings, session cookies, and links that grant access on their own, such as signed URLs
+* The contents of `.env` files and other configuration that holds secrets
+* Personal data of real customers or employees; use made-up sample data instead
+* Anything else that your organization's policy keeps out of AI tools
 
-## Site Creation and Migration Skills {#site-migration}
+Before you attach a screenshot, a log, an exported file, or an error message, check it for these and mask them.
 
-The Site Modernization Agent offers many skills for creating new Edge Delivery Services sites and migrating existing websites. Any new Edge Delivery Site site or migration project should leverage these skills.
+### Where Credentials Go Instead {#credential-settings}
 
-### Migrate a site or page to AEM {#migrate-a-site}
+| What the agent needs | Where to enter the credential |
+|---|---|
+| Access to your Git repository | The connection flow: **Authorize AEM Code Connector**, or **Sign in with a token**. See [Connect Your Site](getting-started.md#connect-repo). |
+| Permission to push, pull, or read content for you | **Settings** > **Agent permissions**. By default, these use your Adobe or Git sign-in, so you don't type a credential. To give the agent narrower access, enter its own token there: a fine-grained personal access token for Git, or a service account token for Adobe. See [Settings Page](console.md#settings-page). |
+| Your Figma designs | **Settings** > **Credentials**, for your Figma personal access token. See [Work from a Figma Design](visual-changes.md#figma). |
+| A source site that requires sign-in | **Settings** > **Protected site authentication**, or the authentication fields of Auto mode. See [Protected Site Authentication](console.md#protected-site-authentication). |
+| An API or other service that the agent calls while it works, such as a test API or a notification service | **Settings** > **Protected site authentication**, with an entry for the service's hostname. See [Credentials for Other Services](console.md#other-services). |
+| An API key that your live site uses | Not the console. A server-side service keeps the key, such as Adobe App Builder or API Mesh, which your team deploys and the site calls. See [Connect Services and Applications](block-development.md#integrations). |
 
-Use this prompt when migrating content from an existing website to Edge Delivery Services.
+When a task needs a key, don't paste it to get the task done. Enter it where the table says, and give the agent a sandbox or test endpoint rather than a production one.
 
-#### Example Prompts {#example-migrate}
+### If You Shared a Secret {#secret-shared}
 
-* "Migrate this page: `https://example.com/about`
-* "Migrate these pages: URL1, URL2, URL3"
+1. Revoke or replace the secret at the service that issued it, right away. Clearing the chat doesn't take back what was already sent, and the transcripts of the agent's sessions keep it until you reset the workspace.
+1. Check the **Changes** view for files that contain the secret, and discard those changes before you push.
+1. If a file with the secret was already pushed, replacing the secret is the fix. A later commit removes it from the files, but not from the repository's history.
+1. Tell your security team, as your organization's policy requires.
 
-#### What to Know {#wtk-migrate}
+The agent is instructed not to use a secret that you paste in the chat, and to tell you to replace it. Don't rely on that: by the time it answers, the secret has already reached the AI model.
 
-* Migration follows a seven-step workflow:
-  1. The agent scrapes source page.
-  1. It identifies section structure.
-  1. It performs authoring analysis.
-  1. It maps the content to block variants.
-  1. It generates markdown.
-  1. It creates import infrastructure.
-  1. It previews the result.
-* The agent analyzes pages using a two-level hierarchy:
-  * First it identifies section boundaries (background changes, spacing shifts)
-  * Then it identifies content sequences within each section.
-* Authoring analysis follows [David's Model.](https://www.aem.live/docs/davidsmodel)
-  * for each content sequence, it first checks "Can an author create this by normal typing?"
-  * Default content (headings, paragraphs, lists, inline images) is preferred over blocks.
-* The agent attempts to reuse existing blocks from the repository's block library before creating new ones.
-  * When content can not be mapped to an existing block, it creates new block variants.
-  * You can prompt for changes, request new variants, or adjust mappings interactively.
-* Block variants are tracked with metadata.
-  * When migrating multiple pages, the agent loads existing custom variants first and reuses them when styling matches (70% similarity threshold based on purpose, colors, typography, spacing, layout).
-* Header, navigation, and footer are excluded from page migration. These are handled by dedicated skills.
-* Each migration creates import infrastructure (page templates, block parsers, transformers) for future bulk imports.
-* Dynamic Media and Scene7 images are detected in the source and preserved as DM URLs rather than imported as static renditions, so responsive and on-the-fly transformations remain intact. This applies to both Document Authoring and AEM Sites/Universal Editor migrations.
+## Refine the Result {#general-tips}
 
-### Site Catalog {#site-catalog}
+When something isn't right, such as the wrong background color on a block, ask the agent to fix that issue rather than start over. Name the source URL, the output path, what you see, and what you expect. For more tips, see [Prompting Tips](getting-started.md#prompting-tips).
 
-Use this prompt to analyze an existing website in order to understand its scale, templates, and block variants before starting a migration. The results can be used for [bulk imports.](#bulk-import)
+* On migrated pages, ask for the fix in the block or in the template's import script, so that it reaches every page of the template. See [How the Agent Migrates at Scale](production-migration.md#migration-at-scale).
+* Before you import pages again to apply a fix, check whether authors have edited them: a new import replaces their edits. See [Import in Batches](production-migration.md#batches).
+* Treat source pages and attached designs as material to work from, not as instructions that override your request.
+* In a long conversation, the agent can lose track of earlier decisions. Remind it of the key points, or have it record them in the project files and start a new conversation. See [Start a New Conversation](project-instructions.md#new-conversation).
 
-#### Example Prompts {#example-prompts-site-catalog}
+## Site Creation and Migration Prompts {#site-migration}
 
-* "Scope site https://example.com"
-* "Find templates on https://example.com"
-* "Catalog site https://example.com"
-* "How many page types are there on https://example.com"
-* "What are the layouts on https://example.com"
+A migration follows this order: [catalog the site](#site-catalog), [migrate a sample page](#migrate-a-site) of each template, [migrate the design](#design-migration), [check the result with a critique](#site-critique), then [import the template's other pages](#bulk-import). The header, navigation, and footer are [set up once](#navigation-setup) for the whole site. For the full procedure, see [Migrate a Production Site](production-migration.md).
 
-For details on the site catalog skill, please see the document [Site Catalog Skill.](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
+### Plan with the Site Catalog {#site-catalog}
 
-### Bulk Import {#bulk-import}
+Use these prompts to see a site's scale, templates, and blocks before you migrate it. To start a catalog, see [Plan a Migration with the Site Catalog](site-catalog.md).
 
-Use this prompt to import many pages of the same template after completing an [initial single-page migration.](#migrate-a-site)
+* "Find templates on `https://www.example.com`"
+* "How many page types are there on `https://www.example.com`?"
 
-#### Example Prompts {#example-prompts-bulk-import}
+### Capture a Source Page {#scraping-webpages}
 
-* "Run the bulk import on these pages: URL1, URL2, URL3."
-* "Run bulk import on all product pages."
-* "Bulk import these blog pages: URL1, URL2."
+Page migration starts by capturing the source page. Ask for it on its own to analyze a page before you migrate it.
 
-#### What to Know {#wtk-bulk-import}
+* "Capture `https://www.example.com/products` for analysis."
+* "Extract the content and metadata from `https://www.example.com/product` at mobile and desktop widths."
 
-* Bulk import depends on import infrastructure created during a prior single-page migration.
-  * This includes page templates (section structure), transformers (site-wide DOM cleanup), and parsers (block-specific HTML to table conversion).
-* You must migrate at least one representative page per template before bulk import can run.
-* Bulk import reuses the structure and mappings established during single-page migration.
-  * It does not infer templates from scratch.
-* Transformers operate on the entire DOM before and after parsing. Parsers operate at the individual block level.
-* All parsers are validated before bulk import can proceed.
-* One template corresponds to one bulk import configuration.
-  * Mixing templates in a single run is not supported.
+Things to know:
 
-#### Typical Workflow {#typical-workflow}
+* The agent loads the page in a browser and scrolls it, so that lazy-loaded images load. For what it captures, including content that scripts insert or CSS hides, and what it can't, see [Limitations](overview.md#limitations).
+* It extracts the page's title, description, Open Graph tags, JSON-LD structured data, and canonical URL.
+* It saves a screenshot and copies of the images, and it normalizes links and image references. Check the images against the source, including responsive images, backgrounds, and SVG images, and check that each link still points where it should.
+* Ask for a specific screen width, such as mobile or desktop. Each additional width takes longer.
 
-The recommended workflow is iterative: validate on a small set first, then scale up.
+### Migrate Pages {#migrate-a-site}
 
-1. **Run a single-page migration first.** - Migrate one representative page for the template you plan to bulk import.
-   * This creates the required import infrastructure.
-1. **Run the bulk import on a small set of pages.** - Ask the agent to run the bulk import and provide a short list of URLs that follow the same template.
-1. **Review and refine the results.** - Inspect the imported pages.
-   * If anything looks incorrect, ask the agent to adjust parsers, transformers, or import logic.
-1. **Scale up.** - When results look correct, provide the full list of URLs.
-   * The agent will reuse the same import logic and run bulk import at scale.
+Use these prompts to import pages from an existing website. To import a first page step by step, see [Import a Page Step by Step](getting-started.md#guided-import), or, for content stored in Experience Manager authoring, [Connect the Site and Import a Page](getting-started-aem-authoring.md#continue).
 
-### Scraping Webpages {#scraping-webpages}
+* "Migrate these pages: `https://www.example.com/products/hiking`, `https://www.example.com/products/climbing`. Reuse the existing blocks. Do not upload, push, or publish."
 
-Use this prompt to extracting content, metadata, and images from a source URL for analysis or migration.
+Things to know:
 
-#### Example Prompts {#example-scraping}
+* The agent decides each page's sections, default content, blocks, and variants, and reuses the project's blocks before it creates new ones. Check this structure on the first pages: authors edit it, and the bulk import repeats it. See [Shape the Content Structure](production-migration.md#content-structure).
+* Content and design are separate steps. After the content import, the agent suggests **Start Design Migration**: select it, or ask for the source styling. For a new design, see [Restyle During Migration](restyling.md#during-migration).
+* The page import leaves out the header, navigation, and footer. See [Set Up the Header, Navigation, and Footer](#navigation-setup).
+* Each migration writes an import script for the page's template, which the [bulk import](#bulk-import) runs on the template's other pages.
+* For where images go, including images served from Dynamic Media, see [Images and Documents](production-migration.md#assets).
 
-* "Scrape this page for analysis: `https://example.com`"
-* "Extract content from `https://example.com/product`"
+### Migrate the Design {#design-migration}
 
-#### What to Know {#wtk-scraping}
+Use these prompts to recreate the source site's design on the imported content.
 
-* This prompt is usually invoked automatically as the first step of page migration.
-* Content hidden via CSS is captured too if present in the DOM.
-* Lazy-loaded images and client-side rendered content is handled by scrolling through the page in headless Chromium and letting scripts execute.
-* WebP/AVIF/SVG images are converted to PNG for compatibility.
-* Metadata is extracted including title, description, Open Graph tags, JSON-LD structured data, canonical URL.
-* Images in DOM are fixed.
-  * background-image is converted to img.
-  * Picture elements are unwrapped
-  * srcset is resolved to src
-  * Relative URLs are converted to absolute
-  * Inline SVG to are converted to img files.
-* Sanitized document paths are generated (lowercase with no `.html` extension).
-* The following outputs are produced:
-  * `screenshot.png`
-  * `cleaned.html` (no scripts/styles)
-  * `metadata.json`
-  * `images/` folder with local copies
-* Users can ask about screenshot dimensions and request specific device sizes (mobile, desktop) for content extraction.
-* Extracting content at multiple breakpoints increases processing time.
-
-### Design Migration {#design-migration}
-
-Use this prompt to extract and apply visual design from a source site to Edge Delivery Services.
-
-#### Example Prompts {#example-design}
-
-* "Migrate the design from `https://example.com`"
-* "Extract design tokens"
+* "Migrate the design from `https://www.example.com`"
+* "Extract the design tokens"
 * "Style the hero block"
 * "Style all the blocks"
 
-#### What to Know {#wtk-design}
+Things to know:
 
-* Design migration has two phases:
-  1. Phase 1 (site-wide) generates `styles/brand.css` and `styles/styles.css`:
-     * `brand.css` contains design tokens as CSS custom properties (fonts, colors, spacing, heading sizes).
-     * `styles.css` imports `brand.css` and applies the tokens to default content (headings, paragraphs, buttons, links, section backgrounds).
-     * If your project already has a `brand.css`, prompt the agent to use it instead of extracting from the source.
-  1. Phase 2 styles individual blocks in parallel and creates block-specific CSS in `/blocks/{name}/{name}.css`, referencing the tokens from `brand.css`.
-* Block styling (phase 2) requires site-wide design (phase 1) to be complete first.
-* Phase 2 achieves 80-90% block-level style fidelity in a single pass.
-* Estimated time:
-  * Phase 1: 5-10 minutes
-  * Phase 2: 10-15 minutes
-* Ambiguous requests default to complete migration (both phases).
+* The agent styles the whole site first. It writes the design tokens, such as fonts, colors, spacing, and heading sizes, as CSS custom properties to `styles/brand.css`. `styles/styles.css` imports that file and styles the default content: headings, paragraphs, buttons, links, and section backgrounds.
+* Then it styles the blocks in parallel, each in `blocks/{name}/{name}.css`, from the tokens. Block styling therefore needs the site-wide styles first.
+* If the project already has a `brand.css` or other token files, ask the agent to use them rather than extract a second set from the source.
+* Say whether the request is global or for one block, and whether it should stay faithful to the source or follow a [new design](restyling.md). Check the result on real pages at desktop and mobile widths.
 
-### Block Critique {#block-critique}
+### How Close the Design Gets {#design-fidelity}
 
-Use this prompt to validate and refine individual migrated blocks and ensure visual accuracy against the original website.
+The agent recreates the source design: it extracts the design tokens, styles each block, then compares each block with the source and fixes the differences that it finds. See [Critique the Site](#site-critique). The result comes close to the original on the first pass, and you correct what remains by prompting.
 
-#### Example Prompts {#example-block-critique}
+An identical copy can't be guaranteed. Fonts, image compression, and browser rendering can differ slightly from the source, and "identical" means different things to different projects: one team measures spacing to the pixel, another checks that the brand reads the same. The source also has its own flaws, such as spacing that differs between two pages of the same template, and recreating them rarely helps the new site.
 
-* "Critique hero block"
-* "Validate block custom-cards"
+Aim for the intended design:
 
-#### What to Know {#wtk-block-critique}
+1. Describe each remaining difference with the page, the screen width, and what should change, and check the result in the preview. A complex design can take several rounds.
+1. Fix a difference that recurs in the global styles or the block's CSS, so that the fix applies to every page.
+1. Before you scale, agree with the people who sign off the site on what counts as close enough, and check it on the sample pages.
 
-* Block critique compares a migrated block against its original source and applies fixes until an 85% similarity is achieved or three iterations are completed.
-* The skill requires the block to have been created by page migration first.
-* Critique detects and fixes both **content/structural issues** and **styling issues**:
-  * Content/structural: missing headings, paragraphs, links, wrong table row/cell count — fixed by updating parsers and reimporting.
-  * Styling: CSS differences in colors, spacing, typography, layout — fixed by updating block CSS.
-* The fix cascade runs in order: global styles → section transformers → content/structural parsers → block CSS. Each layer is reimported and re-assessed before moving to the next.
-* Use the block critique after [design migration](#design-migration) is complete.
+### Create a Block from Figma {#figma-block-migration}
 
-### Site Critique {#site-critique}
+Use these prompts to build one block from a Figma component. [Work from a Figma Design](visual-changes.md#figma) covers the access token, the seat you need, and why to work one component at a time.
 
-Use this prompt to validate all migrated blocks across your site in a single pass, ideal for multi-page migrations.
+* "Create a block from this Figma component: `{Figma link}`. Reuse our design tokens."
+* "Migrate the `pricing-card` component from the Figma file `{fileKey}`."
 
-#### Example Prompts {#example-site-critique}
+Things to know:
+
+* In Figma, select the component and copy its link, so that the link includes the `node-id` that identifies it: `https://www.figma.com/design/{fileKey}?node-id={nodeId}`. Or give the file key and the component's name.
+* The agent reads the component's structure first, which keeps large Figma files manageable, and then its design details. It adds the colors, typography, and spacing as design tokens to `styles/styles.css`, with tokens specific to the block, before it writes any CSS. It maps the component to the closest block in your project and creates a variant, writes the variant's CSS from the tokens, saves the images and icons in the console workspace, and creates sample content. It then previews the block and compares it with the Figma design.
+
+### Redesign with Blocks from Figma {#figma-redesign-migration}
+
+Use these prompts when a site gets a new design during migration: Figma supplies the design and the blocks, and the live site supplies the content. For the procedure and what to compare, see [Restyle During Migration](restyling.md#during-migration).
+
+1. "Create the block collection from these Figma components: `{Figma link}`"
+1. "Migrate these pages and map their content to the blocks created from Figma: `https://www.example.com/adventures`, `https://www.example.com/magazine`"
+
+Ask for a new variant only where the blocks from Figma can't represent the source content.
+
+### Create a New Page from Figma {#figma-new-page-from-figma}
+
+Use this prompt when a page doesn't exist on a source site and a Figma frame or page should become a new page.
+
+* "Migrate this Figma page to a new page at `/events`: `{Figma link}`"
+
+Things to know:
+
+* Select one frame or page, not an entire file, and organize it into clear page sections.
+* The agent maps each section to an existing block, default content, or a new variant. Text and images come from Figma.
+* A Figma frame shows how a feature looks, not where its data comes from or how it behaves. For search, calculators, personalization, or store locators, the Figma migration creates the layout. Then ask the agent to build the behavior as a [dynamic block](block-development.md#dynamic-blocks), and give it the API or data source.
+
+### Set Up the Header, Navigation, and Footer {#navigation-setup}
+
+Use these prompts for the header, navigation, and footer, including footer images. The page import leaves them out, because every page shares one header and one footer.
+
+* "Set up the navigation from `https://www.example.com`"
+* "Migrate the footer from `https://www.example.com`"
+* "Fix the navigation menu"
+
+Things to know, for projects that use the header and footer of the [AEM boilerplate](https://github.com/adobe/aem-boilerplate):
+
+* The header loads the `nav` page from the content root, and the footer loads the `footer` page, unless a page's `nav` or `footer` metadata names another page. In document-based projects, the agent writes the navigation as `nav.md` in the console workspace.
+* The navigation page has three sections, separated by `---`: the brand, with the logo and the link to the home page; the main menu; and tools, such as links to sign in or subscribe.
+* A menu item that contains a nested list becomes a dropdown.
+* A bold or italic link alone in its paragraph becomes a button, as on other pages, except the brand link: the header removes its button styling. See [Example: A Flexible Teaser Without Atomic Blocks](block-development.md#composition-example).
+* If the project changed `header.js` or `footer.js`, ask the agent to check them first.
+* For Experience Manager authoring, confirm where the navigation page is stored and which model it uses.
+
+### Critique the Site {#site-critique}
+
+Use these prompts after design migration to compare every migrated template with the source and fix the differences in one pass.
 
 * "Critique site"
 * "Validate all blocks across the migrated site"
 
-#### What to Know {#wtk-site-critique}
+Things to know:
 
-* Site critique validates all blocks across all migrated templates using parallel sub-agents, one per template.
-* It applies the same fix cascade as block critique (global styles → section transformers → content/structural parsers → block CSS), but across all pages simultaneously.
-* Fixes are deduplicated — if the same issue appears on multiple pages using the same block, the fix is applied once.
-* If `brand.css` does not exist yet, critique runs in content-structural-only mode (fixing parsers and transformers without styling).
-* Site critique is the recommended approach after design migration for multi-page projects.
-* The following workflow is recommended:
-  1. Migrate pages (single or bulk).
-  1. Run design migration.
-  1. Run `critique site` to validate and auto-fix remaining gaps across all templates.
+* Structural differences, such as a missing heading or link, or a wrong number of rows, are fixed in the import script, and the pages are imported again. Styling differences, such as colors, spacing, and typography, are fixed in the CSS.
+* The agent works layer by layer: global styles, then sections, then block content, then block CSS. It checks the result again after each layer.
+* When the same issue appears on several pages that use the same block, the agent fixes the block once for all of them.
+* Without `brand.css`, the agent fixes only the structure.
+* The critique compares how the pages look. Check separately that authors can edit them, that interactions work, and that they are accessible; see [Limitations](overview.md#limitations). Review the coverage and the unresolved issues that the critique reports.
 
-### Page Critique {#page-critique}
+### Critique a Page {#page-critique}
 
-Use this prompt to validate a single migrated page for visual fidelity against the original website.
-
-#### Example Prompts {#example-page-critique}
+Use these prompts to check one migrated page, for example after a site critique.
 
 * "Critique the about page"
-* "Validate the migrated page against `https://example.com/about`"
+* "Validate the migrated page `/about` against `https://www.example.com/about`"
 
-#### What to Know {#wtk-page-critique}
+The agent needs the source URL and the migrated path, and it works through the same layers as the [site critique](#site-critique). Check the remaining differences in the preview.
 
-* Page critique validates a single page, applying the same fix cascade (global → sections → content → styling) until 85% similarity or three iterations.
-* Requires the source page URL and the migrated path (e.g., "/about") as input.
-* Use page critique for single-page refinement after site critique, or for targeted validation.
-* For multi-page projects, [use site critique](#site-critique) instead — it handles all pages and deduplicates fixes automatically.
+### Critique a Block {#block-critique}
 
-### Figma Block Migration {#figma-block-migration}
+Use these prompts to check one block after design migration.
 
-Use this prompt to migrate a block from Figma design to Edge Delivery Services.
+* "Critique the hero block"
+* "Validate the custom-cards block"
 
-Note that you must set up your Figma details in [the Experience Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md) to use this prompt.
+The block must come from a page migration. The agent fixes it as in the [site critique](#site-critique).
 
-#### Example Prompts {#example-figma}
+### Import Pages in Bulk {#bulk-import}
 
-* "Migrate the block `https://figma.com/design/{fileKey}?node-id={nodeId}` to Edge Delivery Services"
-* "Migrate `{blockName}` from `https://figma.com/file/{fileKey}` to Edge Delivery Services"
+Use these prompts to import the other pages of a template once its sample page is migrated and checked.
 
-#### What to Know {#wtk-figma}
+* "Run the bulk import on these pages: `https://www.example.com/blog/first-post`, `https://www.example.com/blog/second-post`."
+* "Bulk import all product pages."
 
-* This skill migrates one block at a time, not entire pages or full Figma files.
-* For best results:
-  * Select the specific block you want to migrate in Figma and copy its link (with `node-id`) or name.
-  * Provide the `node-id` parameter in the URL to target the exact block.
-* When you run this skill, the following steps are performed automatically in the hosted environment:
-  1. **Block structure discovery** — The agent reads the Figma node to understand layers and components.
-  1. **Global style extraction** — The agent pulls colors, typography, and spacing into `styles/styles.css` as CSS custom properties (design tokens).
-  1. **Block-specific style creation** — The agent creates additional CSS custom properties specific to the block being migrated.
-  1. **Mapping to existing blocks** — The agent identifies the closest matching block in your project's block library and creates a custom variant.
-  1. **CSS generation** — The agent writes styles that reference the extracted CSS custom properties, ensuring design consistency.
-  1. **Asset download** — The agent saves images and icons from Figma to the hosted environment's workspace.
-  1. **Edge Delivery Services content generation** — The agent creates the markdown file following Edge Delivery Services block structure
-  1. **Output validation** — The agent previews the result and performs visual comparison against the original Figma design.
-* The skill first reads metadata (step 1) to understand structure, and then extracts detailed design context (steps 2-5).
-  * This phased approach prevents issues with large or complex Figma files.
-* This skill takes a styles-first approach.
-  * All styles are extracted as CSS custom properties (design tokens) before any CSS is written.
-  * This ensures the migrated block stays consistent with your design system.
-* The prompt requires the Figma URL (with `fileKey` and optional `node-id`) or a Figma file key directly as input.
+Things to know:
 
-### Redesign Migration Using Figma-Derived Blocks {#figma-redesign-migration}
+* The bulk import runs the import script that the agent wrote when it migrated the template's sample page, so migrate that page first. See [How the Agent Migrates at Scale](production-migration.md#migration-at-scale).
+* Each run covers the pages of one template, because the import script is written for that template's structure.
+* Import a few pages first, check them, and correct the import script before you import the full list. See [Import in Batches](production-migration.md#batches) and [Bulk Import Workflow](site-catalog.md#bulk-import).
 
-Use this prompt when an existing website is being migrated into a redesigned experience.
+## Block Development Prompts {#block-development-capabilities}
 
-In this workflow, you first create the target block collection from Figma. The site migration then runs against the live source website and maps source content into the blocks that were created from Figma.
+These prompts create and change blocks, during a migration or in any project. For the procedures and checks, see [Create, Update, and Refactor Blocks](block-development.md).
 
-* **Figma** is the target design and block-library source.
-* **The live website** remains the source of content.
+### Design a Content Model {#content-modeling}
 
-#### Example Prompts {#example-figma-redesign}
-
-1. Create the block collection from Figma:
-
-   * "Create the Edge Delivery Services block collection from these Figma components: `https://figma.com/design/{fileKey}?node-id={nodeId}`"
-
-1. Migrate source content into those blocks:
-
-   * "Migrate these pages and map the content to the Figma-derived block collection: URL1, URL2, URL3"
-
-#### What to Know {#wtk-figma-redesign}
-
-* Figma is used first to establish the redesigned block set.
-* Site migration then maps real website content into that block set.
-* **Content validation** is done against the source website.
-* **Visual validation** is done against the Figma-derived block collection and design system.
-* New block variants should be created only when existing Figma-derived blocks cannot represent the source content.
-
-#### Recommended workflow {#figma-redesign-workflow}
-
-1. Identify the Figma components needed for the redesigned site.
-1. Migrate those components into Edge Delivery Services blocks or variants.
-1. Review the generated block collection and design tokens.
-1. Run site migration on representative source pages.
-1. Map source content into the Figma-derived blocks.
-1. Validate content against the source website.
-1. Validate visual output against the target Figma design.
-1. Refine blocks or mappings, then scale to more pages.
-
-### Create a New Page from Figma {#figma-new-page-from-figma}
-
-Use this prompt when the page does not already exist on a source website and a Figma page or frame should drive creation of a new Edge Delivery Services page.
-
-#### Example Prompts {#example-figma-new-page}
-
-* "Migrate this Figma page to Edge Delivery Services: `https://figma.com/design/{fileKey}?node-id={nodeId}`"
-
-#### What to know {#wtk-figma-new-page}
-
-* This prompt works best with a **specific Figma frame or page**, not an entire file.
-* The frame should be organized into **clear page sections**.
-* Sections are mapped to existing blocks, default content, or new variants.
-* Text and assets come from Figma.
-* Dynamic features such as search, calculators, personalization, or store locators may require **separate block development** beyond what the Figma migration produces.
-
-### Navigation Setup {#navigation-setup}
-
-Use this prompt to set up or migrate site navigation.
-
-#### Example Prompts {#example-navigation}
-
-* "Set up navigation from `https://example.com`"
-* "Fix the navigation menu"
-
-#### What to Know {#wtk-navigation}
-
-* Edge Delivery Services navigation enforces a three-section structure (enforced by `header.js`):
-  1. **Brand** (section 1): Logo and primary branding link
-  1. **Sections** (section 2): Main navigation menu with optional dropdowns
-  1. **Tools** (section 3): Utility links (subscribe, login, cart)
-* Navigation content lives in `nav.md` in the root directory.
-* Sections are separated by (`---`) markers.
-* Bold items (`**Text**`) with nested lists create dropdowns.
-* Links in navigation may render as buttons due to Document Authoring's auto-wrapping behavior.
-  * The header block includes code to strip button classes from nav links.
-
-## Block Development Capabilities {#block-development-capabilities}
-
-These prompts are used for creating and evolving blocks, providing continuous value beyond initial site creation or migration.
-
-### Block Development {#block-development}
-
-Use this prompt to create new blocks or modify existing ones.
-
-#### Example Prompts {#example-block-development}
-
-* "Create a testimonials block"
-* "Add a video background variant to the hero block"
-
-#### What to Know {#wtk-block-development}
-
-* The agent follows Content-Driven Development (CDD), a mandatory process for all Edge Delivery Services development.
-  * It will ask about content models and test content before writing code.
-* The CDD philosophy is that author needs come before developer needs.
-  * Content models must be intuitive for authors, even if that means more complex decoration code.
-* Creating test content first provides:
-  * Immediate testing capability
-  * PR validation links for PSI checks
-  * Living documentation for authors
-  * Discovery of edge cases that code-first approaches miss
-* The agent will search for similar blocks in the [Block Collection](https://www.aem.live/developer/block-collection) and [Block Party](https://www.aem.live/developer/block-party/) before implementing, to find patterns and reusable code.
-* Skip CDD only for trivial CSS-only tweaks (but still identify test content for validation).
-
-### Content Modeling {#content-modeling}
-
-Use this prompt to design the table structure that authors work with when creating block content.
-
-#### Example Prompts {#example-modeling}
+Use these prompts to design the table that authors fill in for a block. Content-driven development runs this step when it creates a block; ask for it on its own to compare options.
 
 * "Design a content model for a testimonials block"
 * "What's the best content model for this carousel?"
 
-#### What to Know {#wtk-modeling}
+Things to know:
 
-* Edge Delivery Services has four canonical model types:
-  * **Standalone:** Distinct visual/narrative elements (hero, blockquote)
-    * Single table with block content
-  * **Collection:** Repeating semi-structured content (cards, carousel)
-    * Table with repeating row pattern
-  * **Configuration:** API-driven or dynamic content where config controls display (blog listing, search results)
-    * Table with key-value config rows.
-  * **Auto-Blocked:** Complex structures that authors create as sections/default content, then get transformed (tabs, YouTube embeds)
-* There is a limit of four cells per row.
-  * Group related elements into cells.
-* Prefer block variants over config cells for styling differences.
-* [Follow Postel's Law](https://en.wikipedia.org/wiki/Robustness_principle): Be flexible about input structure.
-  * A hero block should work whether content is in one cell, split across two cells, or in separate rows.
-* This skill is usually invoked automatically by Content-Driven Development during block creation.
+* Four patterns cover most blocks:
+  * **Standalone:** one distinct element, such as a hero or a quote, in a single table.
+  * **Collection:** repeating items, such as cards or carousel slides, with one row per item.
+  * **Configuration:** a block whose content comes from an API or data source, such as a blog listing or search results, with key-value rows that control what it shows. See [Build a Dynamic Block](block-development.md#dynamic-blocks).
+  * **Auto-blocked:** content that authors write as sections or default content and that the code turns into a block, such as tabs or YouTube embeds.
+* Keep each table to a few cells and group related elements naturally, so that authors can fill it in. This is for authors: block code can read any table structure.
+* Prefer block variants over configuration cells for differences in style.
+* Accept flexible input, following [Postel's law](https://en.wikipedia.org/wiki/Robustness_principle): a hero block should work whether its content is in one cell, in two cells, or in separate rows.
+* For Experience Manager authoring, the block also needs a model for the Universal Editor. See [Create a Block](block-development.md#create).
 
-### Finding Reference Blocks {#reference-blocks}
+### Find Reference Blocks {#reference-blocks}
 
-Use this prompt to look for existing implementations to use as starting points.
-
-#### Example Prompts {#example-reference}
+Use these prompts to find existing implementations to start from.
 
 * "Find blocks similar to a pricing table"
 * "What blocks are available for testimonials?"
 * "Search Block Party for a tabs implementation"
 
-#### What to Know {#wtk-reference}
+Things to know:
 
-* The [Block Collection](https://www.aem.live/developer/block-collection) is Adobe-maintained and vetted for best practices, excellent content modeling, high performance, and accessibility.
-  * It is limited to commonly-needed blocks. Start here.
-* The [Block Party](https://www.aem.live/developer/block-party/) is community-driven and offers a broader variety including experimental approaches.
-  * It also includes sidekick plugins, build tools (webpack, vite, sass), and integrations.
-  * Use when the Block Collection doesn't have what you need.
-* Think about alternative names when searching
-  * FAQ = accordion
-  * Gallery = carousel/slideshow
-  * Navigation = menu/header
-* The Block Party only returns approved/curated entries.
+* Start with the [Block Collection](https://www.aem.live/developer/block-collection). Adobe maintains it and checks each block for content modeling, performance, and accessibility. It covers commonly needed blocks.
+* When it doesn't have what you need, search the [Block Party](https://www.aem.live/developer/block-party/). The community maintains it, with a broader range that includes experimental approaches, plugins for AEM Sidekick, build tools, and integrations. It returns only approved entries. AEM Sidekick is the browser extension that previews and publishes pages.
+* Search with other names too: accordion for FAQ, carousel or slideshow for gallery, menu or header for navigation.
 
-### Searching Documentation {#searching-documentation}
+### Develop a Block {#block-development}
 
-Use this prompt to find information about Edge Delivery Services features or implementation guidance.
+Use these prompts to create a block or change an existing one.
 
-#### Example Prompts {#example-documentation}
+* "Create a testimonials block"
+* "Add a video background variant to the hero block"
 
-* "How do I implement lazy loading in Edge Delivery Services?"
+Things to know:
+
+* The agent creates test content along with the content model; see [Prompt for a Block](block-development.md#block-prompts). The test content lets you check the block, gives the pull request a page to test with PageSpeed Insights, and shows authors how to use the block.
+* For a change to CSS only, the agent skips the content model but still uses test content to check the result.
+* Before it creates a block, it looks for one to reuse. See [Reuse Existing Blocks](block-development.md#reuse-blocks).
+
+### Search the Documentation {#searching-documentation}
+
+Use these prompts to find guidance on Edge Delivery Services features and implementation.
+
+* "How do I lazy-load images in Edge Delivery Services?"
 * "Search the docs for section metadata"
 
-#### What to Know {#wtk-documentation}
+The agent searches the documentation and blog posts on [aem.live](https://www.aem.live). Use specific keywords, such as "block decoration", "sidekick plugin", or "metadata", rather than general ones, such as "website" or "how to build". For code to start from, ask for [reference blocks](#reference-blocks) instead. Check what it finds against your project's code and where its content is stored.
 
-* It searches the [aem.live](https://aem.live) documentation (docs and blog posts) specifically.
-* Use specific keywords ("block decoration","sidekick plugin","metadata") rather than generic terms ("aem","website","how to build").
-* For code examples and reference implementations, use "find reference blocks" instead.
-* The top ten most relevant results returned by default.
+### Test Changes {#testing}
 
-### Testing {#testing}
-
-Use this prompt to validate code changes before opening a pull request.
-
-#### Example Prompts {#example-testing}
+Use these prompts to test a change before you open a pull request.
 
 * "Test the new cards block"
-* "Run the tests before I open a PR"
+* "Run the tests before I open a pull request"
 
-#### What to Know {#wtk-testing}
+The agent writes a test when its value exceeds the cost of maintaining it. It keeps unit tests for logic-heavy code, such as utilities, data processing, and API integrations, because they are fast and catch regressions in reused code. Browser checks cover how a block changes the page, its interactions, and its appearance. For what to check before a pull request, see [Validate and Deliver](block-development.md#validation).
 
-* Testing follows a "value vs. cost" philosophy where you create and maintain tests when their value exceeds cost.
-  * **Keeper tests** (unit tests) are for logic-heavy utilities, data processing, API integrations. These are fast, easy to maintain, and catch regressions in reused code.
-  * **Throwaway tests** (browser tests) are for DOM transformations and visual validation. Use to validate implementation, capture screenshots for PR review, then discard.
-* Throwaway tests go in `test/tmp/` and test content in `drafts/tmp/` (both gitignored).
-* Before opening a PR, ensure that:
-  * Existing tests pass
-  * Unit tests are written for new logic
-  * Browser validation is complete
-  * All variants are tested
-  * Responsive behavior is verified
-  * Linting passes
+### Debug a Problem {#debugging}
 
-### Debugging {#debugging}
-
-Use this prompt to troubleshoot problems with blocks, images, CSS, or preview.
-
-#### Example Prompts {#example-debugging}
+Use these prompts when a block, an image, a style, or the preview doesn't work as expected. For deeper checks, the agent can turn on the Edge Delivery Services troubleshooting [optional capability](console.md#optional-capabilities).
 
 * "Debug why images show as about:error"
-* "Fix the hero block not rendering"
-* "Why aren't my changes showing in preview?"
+* "Fix the hero block, which doesn't render"
+* "Why aren't my changes showing in the preview?"
 
-#### What to Know {#wtk-debugging}
+Things to know:
 
-* Common issues have known patterns:
-  * **Images showing "about:error"**: Usually missing `createOptimizedPicture` call in block JS, or called before DOM restructuring
-  * **Blocks not rendering**: Check block name format in markdown and verify that the block has both `.js` and `.css` files in `blocks/`.
-  * **CSS not loading**: Check file paths, verify CSS file exists, and check the Network tab in browser.
-  * **Changes not appearing**: Code sync takes 3-5 seconds. Try hard refresh (Ctrl+Shift+R).
-* The agent checks each layer systematically:
-  1. Source files
-  1. Rendered output
-  1. Block code
-  1. Browser console
-* The agent has the capability to check local previews at `http://localhost:3000`.
+* The agent checks the source files, the rendered page, the block code, and the browser console, in that order. It uses the console's preview, so you don't need to run a local server.
+* Common causes:
+  * **Images show `about:error`:** the block's JavaScript doesn't call `createOptimizedPicture`, or calls it before it restructures the block's markup.
+  * **A block doesn't render:** the block name in the content doesn't match its folder in `blocks/`, or the folder lacks the `.js` or `.css` file.
+  * **CSS doesn't load:** a file path is wrong. Check the Network tab of the browser's developer tools.
+  * **A change doesn't appear:** see [A Change Is Missing](troubleshooting.md#missing-change) and [Console Preview Differs from the Site](troubleshooting.md#preview-differs).
+* Keep the failing URL and the error details, and retry the smallest affected scope after you fix the cause. Before you overwrite or reset work, see [Release, Recover, and Hand Over](production-migration.md#handoff).
 
-<!--
-## Additional Sections {#additional-sections}
+## Work Beyond Edge Delivery Services {#beyond-eds}
 
-@gwalt, is the additional content in the prompting guide wiki ready to be added here?
--->
+The agent's skills and instructions focus on Edge Delivery Services: migrating pages, building and styling blocks, and following the project's conventions. The agent itself is a general-purpose coding agent, so it isn't limited to them. It can connect your site to a commerce platform, a marketing automation platform, a search or maps service, or your own APIs, adapt an application that your team built with React, or write the code of a server-side service that your team deploys. What works well for integrations with other coding agents works here too: documentation first, a plan before code, small tested steps, and decisions written down.
 
+To find out what a source site integrates with, ask the agent to list the third-party services that a sample page loads, such as analytics, tag management, consent, maps, video, chat, search, and forms. Then decide with your team how each one works on the new site.
+
+For other systems, the agent has no skills, only general knowledge, which can be out of date. The system's own documentation makes the work reliable, so work through it together:
+
+1. **Have it read the documentation first.** Give the agent the link to the system's developer documentation, or attach it. Before it writes any code, ask it to explain how the integration would work, what must run on a server, and which secrets are involved. Correct its understanding at this stage.
+1. **Ask for the Edge Delivery Services way.** Ask whether the integration belongs in a block, a [widget](https://www.aem.live/docs/widgets), or the project's scripts, and how it keeps the pages fast. The agent proposes an approach and asks what it needs to know.
+1. **Give it what the system needs:** endpoints, field names, example requests and responses, and a sandbox or test account. For a key that the agent needs while it works, see [Where Credentials Go Instead](#credential-settings).
+1. **Build in small steps.** Test each step in the preview against a non-production endpoint.
+1. **Record the result.** Ask the agent to write the chosen approach and the documentation link in the project's instruction files, so that the next conversation starts from it.
+
+For example:
+
+> Read the developer documentation of our store locator service at `https://developer.example.com/store-locator`, especially its search API. Explain how our site could show the nearest stores on `/stores` following Edge Delivery Services practice: what runs in the browser, what needs a server, and which secrets are involved. List your questions. Don't change any files yet.
+
+Replace the example service, URL, and path with your own.
+
+Setting up the other system, deploying a server-side service, and storing its secrets stay with your team and that system's administrators. For the integration patterns, see [Connect Services and Applications](block-development.md#integrations).
+
+### Example: Updates in Slack (Advanced) {#slack-updates}
+
+A credential in **Settings**, a project skill, and a line in `AGENTS.md` can connect the agent to the tools your team already uses. One developer on the team that builds the agent set it up to post a summary in Slack each time it finished a turn, with what it had changed, and to read his replies there as further instructions. He could follow and steer a long task without keeping the console open.
+
+1. Create a Slack app whose bot token has only the scopes for posting and reading messages. Add the bot to one private channel, or use a direct message with you.
+1. In **Settings** > **Protected site authentication**, add an entry for the hostname `slack.com` with bearer authentication and the bot token. See [Credentials for Other Services](console.md#other-services).
+1. Ask the agent to write a [project skill](project-instructions.md#custom-skills) that explains how to post and read messages with the Slack Web API, and to push it.
+1. In `AGENTS.md`, tell the agent that a credential for `slack.com` is set up, which channel to use, and when to post, for example at the end of each turn.
+
+The agent treats what it reads in the channel as instructions, the same as chat. Keep the channel private, with only you and the bot in it, so that only you can instruct the agent. The summaries that it posts leave the console for Slack, so follow your organization's policy on what may go there. Remove the entry in **Settings** when you no longer use it. The same pattern works for other tools with an HTTP API that accepts a fixed header.

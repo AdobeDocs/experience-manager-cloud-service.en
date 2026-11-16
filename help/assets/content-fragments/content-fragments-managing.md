@@ -6,6 +6,20 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Managing Content Fragments {#managing-content-fragments}
 
@@ -48,6 +62,10 @@ The [Content Fragment Editor](#opening-the-fragment-editor) provides various [mo
 >To use the [original editor](/help/assets/content-fragments/content-fragments-variations.md), first open the new editor and then deactivate the **New Editor** switch. 
 >
 >Both editors have a toggle switch in the top toolbar to provide quick access to the other editor.
+
+>[!CAUTION]
+>
+>Take care with your filter settings when [deploying your Content Fragment Models and Persisted Queries in Content Packages](/help/headless/deployment/content-packages.md).
 
 ## Creating Content Fragments {#creating-content-fragments}
 

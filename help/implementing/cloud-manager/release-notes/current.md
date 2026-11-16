@@ -1,42 +1,49 @@
 ---
-title: Release Notes for Cloud Manager 2026.9.0
-description: Learn about the release of Cloud Manager 2026.8.0 in Adobe Experience Manager as a Cloud Service.
+title: Release Notes for Cloud Manager 2026.11.0
+description: Learn about the release of Cloud Manager 2026.11.0 in Adobe Experience Manager as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
-# Release notes for Cloud Manager 2026.9.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release notes for Cloud Manager 2026.11.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Learn about the release of Cloud Manager 2026.9.0 in AEM (Adobe Experience Manager) as a Cloud Service.
+Learn about the release of Cloud Manager 2026.11.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
 See also the [current release notes for Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Release dates {#release-date}
 
-The release date for Cloud Manager 2026.9.0 in AEM as a Cloud Service is Thursday, September 3, 2026. 
+The release date for Cloud Manager 2026.11.0 in AEM as a Cloud Service is Thursday, November 5, 2026. 
 
-The next planned release is Thursday, October 1, 2026.
+The next planned release is Thursday, December 3, 2026.
 
 
 ## New features - Cloud Manager {#cloud-manager-whats-new}
+
+* **Java 25 opt-in**
+
+  To support performance improvements and modern Java features, AEM Cloud Service environments are adding support for running with Java 25. As part of the initial rollout, Cloud Manager added opt-in options for building and deploying AEM projects
+
+  * For pipeline build steps, set `.cloudmanager/java-version` to 25  in the repository branch used by your pipeline. Building with Java 25 also enables Java 25 for the target AEM runtime for the deployed environments.
+  * To try the Java 25 runtime without changing your build JDK, set the Cloud Manager environment variable `AEM_JAVA_25_OPT_IN` to `true`. Runtime opt-in requires being upgraded to the latest AEM release.
+  * Validate your application in development and stage before enabling it in production; configure the variable separately for each environment. 
 
 <!--
 * **GitHub Apps for EDS sites**  
     Cloud Manager now exposes an option for managing GitHub App connections on provisioned Edge Delivery Services (EDS) sites. This option allows teams and automation tools to configure GitHub App integrations programmatically, rather than through manual setup for each site. (CMGR-78197) new doc needed
 -->
-
-* **Git submodule authentication for external repositories** 
-    If your external Git repository (Bring Your Own Git) uses Git submodules, Cloud Manager now automatically authenticates submodule fetches from other repositories in the same organization during pipeline builds. Previously, submodule repositories not individually registered in Cloud Manager failed authentication, so those fetches failed. Credentials are handled server-side and are never exposed to the build environment. No configuration is required, and existing pipelines continue to run without changes. (CMGR-76737) <!-- new doc already added for this release -->
-
-    For more information, see [Git Submodule Support for Adobe Repositories](/help/implementing/cloud-manager/managing-code/git-submodules.md#external-repositories).
-
-* **Content sync API returns an Execution-Id for tracking**  
-    Content sync actions triggered through the Cloud Manager API now return an Execution-Id header in the response. Customers can use this identifier to track and correlate the status of a specific content sync operation, making it easier to monitor sync activity from external tooling. (CMGR-78234) <!-- no new doc needed -->
-
-* **GitLab External Git (BYOG) now syncs new branches automatically**
-    Customers using GitLab with External Git (BYOG) no longer need to trigger a manual Sync Code action for new branches. New branches are now synced automatically, removing the need for this manual step. (CMGR-77786) <!-- no new doc needed -->
-    
-
 
 ## Beta programs {#private-beta-program}
 
@@ -44,7 +51,7 @@ To obtain access to upcoming features before their general release, you can part
 
 >[!IMPORTANT]
 >
->Beta releases contain defects and are provided without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support the beta releases. Customers use beta releases at their own risk; do not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Any use of the beta releases is entirely at the customer's own risk.
+>Beta releases contain defects and are provided without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support the beta releases. Customers use beta releases at their own risk; do not rely on beta release functionality, performance, or accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Any use of the beta releases is entirely at the customer's own risk.
 
 See also [AEM Beta programs](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
 
@@ -71,28 +78,17 @@ For more information, see [Flexible Publish Tier (Beta)](/help/implementing/clou
 To join the beta, email [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com) with your Adobe Organization ID and Program ID.
 
 
-
 ## Bug fixes {#bug-fixes}
 
-* Regenerating a repository access password now invalidates the old password. Previously, regenerating the Git repository access password did not immediately invalidate the previous password, leaving the old credential usable. Regenerating the password now invalidates the old one immediately, ensuring the previous credential can no longer be used. (CMGR-41820)
-
-
-* EDS site management endpoints returning errors after platform upgrade. Following a platform upgrade, several Edge Delivery Services site management endpoints, such as listing site administrators and connected GitHub Apps, began returning errors. These endpoints have been fixed and now return their results correctly. (CMGR-79247)
-
-
-* EDS sites fail to serve traffic due to an incorrect stored origin. In some cases a Cloud Manager-connected EDS site returned an unknown-domain error at the CDN because the stored origin incorrectly included a validation challenge path. The stored origin is now recorded correctly, allowing the site to serve traffic as expected. (CMGR-78479)
-
-
-* Large Git updates cause errors on EDS sites. For Edge Delivery Services sites using External Git (also known as Bring Your Own Git), a push with many changed files is synced only in part. This causes the live site to fail. This occurred because the incoming push notification truncated its list of changed files. Cloud Manager now falls back to a full branch sync when a push reports a large number of changed files, ensuring every changed file is applied and the site stays consistent. (CMGR-79250)
-
-
-* Environment deletion fails permanently in rare cases. Environment deletion fails permanently when a regional deployment has no associated Kubernetes namespace, leaving the environment in a state that cannot be cleaned up. Deletion now handles this case correctly and completes successfully. (CMGR-79263)
-
-
-* BYOG repositories using certain certificate authorities incorrectly reported as failing. Bring Your Own Git validation incorrectly reports a connection failure for repositories hosted behind certificates issued by the HARICA certificate authority, misreporting a trust issue as a server error. The certificate authority is now trusted, and these repositories validate successfully. (CMGR-78711)
-
-
-* Permission checks hardened to enforce resource ownership. Resolved an issue in how permission checks were evaluated so that access to a program is always validated against the organization that owns it. This strengthens isolation between organizations for permission-gated operations. (CMGR-79156)
+* Deleting an environment left outdated CDN configuration and persistent alerts. Deleting an environment did not update the associated Fastly CDN configuration, which left outdated configuration behind and triggered continuous monitoring alerts. The deletion flow now updates the CDN configuration correctly. (CMGR-79320)
+* Code quality scan fails on large projects. The code quality (SonarQube) scan generates multi-gigabyte debug logs and is terminated when scanning certain bundled libraries, causing the build to fail. The scan has been corrected so it completes normally on affected projects. (CMGR-80025)
+* Environments remain in an Updating state. An environment remains in an Updating state with pipelines blocked, even after the underlying operation has finished. The environment lifecycle has been corrected so affected environments return to a usable state without manual intervention. (CMGR-78361)
+* Smart Build restores modules with an incorrect version. After a Smart Build cache restore, some restored modules keep an older project version (and in some cases ui.content was not installed), producing an inconsistent build. Module restoration now preserves the correct version so Smart Build output matches a full build. (CMGR-80941)
+* Sites usage CSV export showed month labels shifted by one month. On the License > Sites Usage Details page, the CSV export shows month labels shifted one month earlier for users in time zones behind UTC. The export now shows the correct month labels regardless of the user's time zone. (CMGR-80903)
+* Clearer error attribution for configuration pipelines. Configuration pipeline failures are now attributed more accurately. Configuration pipeline failures are now attributed more accurately, including invalid customer YAML, infrastructure timeouts, and missing configuration files. (CMGR-80486, CMGR-73381, CMGR-81046)
+* Clearer error messages for SSL certificate operations. Creating, updating, or deleting an SSL certificate returns a generic error with no detail when something goes wrong. These operations now return specific, actionable error messages. (CMGR-72997)
+* Reusing an access token name no longer overwrites the existing token. Reusing an existing access token name within a program overwrites the shared token and creates duplicate access secrets. Cloud Manager now handles token name reuse correctly, preventing accidental overwrites and duplicates. (CMGR-81236)
+* Clone Environment now works with Service Principals. The Clone Environment flow has been fixed so it works correctly for environments that use Service Principal authentication. (CMGR-80934)
 
 <!-- There are no significant bug fixes in the July 2026 Cloud Manager release. -->
 

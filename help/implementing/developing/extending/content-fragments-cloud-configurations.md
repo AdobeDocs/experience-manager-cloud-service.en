@@ -5,18 +5,26 @@ feature: Content Fragments
 role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 solution: Experience Manager Sites
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Content Fragments - Cloud Configurations {#content-fragments-setup}
 
 With a Content Fragment Cloud Configuration you can customize various aspects of the [new Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md). 
 
 After [creating](#create-a-content-fragment-cloud-configuration) and [defining](#define-the-content-fragment-cloud-configuration) the configuration you also [assign the Cloud Configuration to your individual Assets folders](#apply-the-configuration-to-your-folder), so that it is applied to all the Content Fragments in that folder.
-
->[!IMPORTANT]
->
->The Content Reference Asset Selector is currently in Limited Availability.
->
->If you want to participate you can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to request enablement for your deployment.
 
 >[!NOTE]
 >
@@ -133,12 +141,6 @@ Use this option to configure the Rich Text Editor (RTE):
 >If a Cloud Configuration (with options selected) is already applied, and a new option is added to that Cloud Configuration, then the new option must be explicitly selected to be visible and available in the RTE toolbar of the editor.
 
 ### Configure the Content Reference Asset Selector{#configure-the-content-reference-asset-selector}
-
->[!IMPORTANT]
->
->The Content Reference Asset Selector is currently in Limited Availability.
->
->If you want to participate you can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to request enablement for your deployment.
 
 Use this option to configure the Asset Selector for **Content Reference** fields:
 

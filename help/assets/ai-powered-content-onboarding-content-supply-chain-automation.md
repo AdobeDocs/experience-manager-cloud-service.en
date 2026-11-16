@@ -4,6 +4,12 @@ description: Learn how the Content Supply Chain Agent helps blueprint your conte
 role: Admin
 hide: true
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 
 # AI-powered content onboarding and content supply chain automation {#ai-powered-content-onboarding-content-supply-chain-automation}

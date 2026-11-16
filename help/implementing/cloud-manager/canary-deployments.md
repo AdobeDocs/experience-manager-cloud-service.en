@@ -4,8 +4,20 @@ description: Learn about canary deployments in Cloud Manager. Test new code on p
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md"
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
+subfeature_v2:
+  - id: d9eb3b3e-9447-4ed4-bf4a-96c7b245cb27
+    internal-label: Cloud Manager APIs
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Use canary deployments to validate code {#canary-deployments}
 
@@ -15,9 +27,7 @@ Dev and stage environments remain the primary places to test code releases; cana
 
 Canary deployments are for internal validation, not for shifting real user traffic from the old release to the new one; real user traffic never routes to canary instances automatically.
 
->[!IMPORTANT]
->
->Canary deployments are currently a beta feature. Behavior can change before general availability. To request access or share feedback, email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com).
+You can email [aemcs-canary-deployments-feedback@adobe.com](mailto:aemcs-canary-deployments-feedback@adobe.com) with questions and feedback.
 
 ## Canary deployment process {#how-canary-deployments-work}
 
@@ -68,6 +78,17 @@ To send a request to the canary release, include the following header:
 ```
 X-Aem-Canary: true
 ```
+
+## Use canary deployments with a customer-managed CDN {#customer-managed-cdn}
+
+If you put your own CDN in front of the AEM Cloud Service CDN, the canary header must reach AEM, and canary traffic must not be served from or stored in your CDN's cache. Configure your CDN as follows:
+
+* **Forward the header.** Pass the `X-Aem-Canary: true` request header through to the AEM publish origin unchanged. AEM selects the canary instances only when this header is present on the request.
+* **Bypass the cache for canary requests.** For any request that carries `X-Aem-Canary: true`, configure your CDN to skip both cache lookup and cache storage (a pass). This has two effects:
+  * Testers receive responses from the canary release, not cached stable content.
+  * Canary responses never populate the cache that serves regular visitors.
+
+The configuration steps depend on your CDN provider. Adobe does not provide guidance on configuring customer-managed CDNs, so work with your CDN team or provider.
 
 ## Validate and promote or cancel {#validate-and-promote-or-cancel}
 

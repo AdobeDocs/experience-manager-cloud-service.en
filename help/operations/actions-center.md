@@ -4,10 +4,19 @@ description: Leverage the Actions Center to conveniently act on incidents and ot
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Actions Center {#actions-center}
 
-AEM as Cloud Service sends Actions Center email notifications when critical incidents occur that require immediate action, and proactive recommendations for optimizations. Examples include a blocked queue, or an expiring set of credentials; the full set of Actions Center notification types can be viewed in the [table below](#supported-notification-types), which will expand over time.
+AEM as Cloud Service sends Actions Center email notifications when critical incidents occur that require immediate action, and proactive recommendations for optimizations. Examples include a blocked queue, or an expiring set of credentials; the full set of Actions Center notification types can be viewed in the [table below](#supported-notification-types), which will expand over time. 
 
 When an Actions Center email notification is received, it can be clicked to open AEM as a Cloud Service's Actions Center with a pop-up displaying additional context explaining the action for a customer to take.
 
@@ -75,6 +84,7 @@ The following table lists the notification types currently supported in Actions 
 |Pages contain a large number of nodes        | Proactive               | Reduce total number of nodes within a page. Refer to [Page Complexity documentation](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx)               |
 |Large number of running workflow instances           | Proactive             | Terminate running workflows that are no longer needed. Learn how to [configure a purge job](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance)              |
 | Expiring S2S certificate        | Proactive               | Learn how to refresh a credential in the [Generating Access Tokens for Server Side APIs documentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)                                                                                                                                                                                         |
+| Expiring log forwarding certificate | Proactive               | Before the mTLS client certificate of a log forwarding destination expires, update the Cloud Manager secrets that hold the certificate (and the key, if it changed), then re-run the config pipeline. See the Certificate rotation and expiry section of the [Log Forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md). |
 | High Connection Count           | Proactive               | Learn about connection pooling in [Connection Pooling alongside Advanced Networking documentation](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking)                                                |
 | Deprecated Service User Mapping | Proactive               | Learn how to use the newer Sling Service User Mapping format, as indicated in [Best Practices for Sling Service User Mapping and Service User Definition](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition)                                                                               |
 | High Connection Count           | Proactive               | Learn about connection pooling in the [Advanced Networking documentation](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking)                                                                                                                                                                                                                                             |

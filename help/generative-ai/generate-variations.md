@@ -4,6 +4,22 @@ description: Learn about Generate Variations, accessible from AEM as a Cloud Ser
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations, AI Tools
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+  - id: ec4263d9-bf7c-44c7-b3f1-3e664861c8f2
+    internal-label: Generative AI
+subfeature_v2:
+  - id: e56728f4-5c82-49ef-8986-4b5f27301f7a
+    internal-label: Generate Variations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Generate Variations {#generate-variations}

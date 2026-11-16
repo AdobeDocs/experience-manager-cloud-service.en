@@ -12,6 +12,12 @@ thumbnail: 340130.jpg
 exl-id: ee6f3423-175d-4a13-a587-63c285b6075f
 role: Admin
 index: false
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 
 # Product Recommendations

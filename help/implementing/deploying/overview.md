@@ -4,6 +4,12 @@ description: Learn about the fundamentals and best practices of deploying to AEM
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Deploying to AEM as a Cloud Service {#deploying-to-aem-as-a-cloud-service}
 

@@ -4,6 +4,16 @@ description: Frequently asked questions about Interactive Communications in AEM 
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 4cc1bff3-edfb-4826-b914-2a2231b703f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Frequently asked questions — Interactive Communications
 
@@ -32,6 +42,8 @@ Date and Date/Time fields require the underlying value to conform to **ISO 8601*
 
 **Q: Can I define a custom pattern that is not in the predefined list?**
 Yes. You can enter a custom **XFA picture clause** directly in the Display Pattern field in the Properties panel. Refer to the picture clause symbols for each field type in the respective component reference pages.
+
+For partially or fully masked numeric values, see [Mask numeric values](/help/forms/interactive-communication/howto/mask-numeric-identifier.md).
 
 ## Review and Annotations
 

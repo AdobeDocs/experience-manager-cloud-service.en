@@ -4,7 +4,13 @@ description: Use Adaptive Forms expressions to add automatic validation, calcula
 feature: Adaptive Forms, Foundation Components
 role: User
 hide: true
-hidefromtoc: yes
+hidefromtoc: 'yes'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Create form using universal editor
 

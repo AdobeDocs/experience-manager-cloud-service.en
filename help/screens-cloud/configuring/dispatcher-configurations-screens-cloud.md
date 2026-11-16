@@ -4,6 +4,16 @@ description: This page describes Dispatcher Configurations in Screens as a Cloud
 exl-id: cc04b480-9310-4975-a7c2-20682c567fa4
 feature: Administering Screens
 role: Admin, Developer, User
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Dispatcher Configurations in Screens as a Cloud Service {#dispatcher-configurations-screens-cloud}
 

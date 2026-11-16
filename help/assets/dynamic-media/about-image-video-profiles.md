@@ -6,6 +6,14 @@ feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # About Dynamic Media Image Profiles and Video Profiles{#about-dm-image-video-profiles}
 

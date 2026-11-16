@@ -4,6 +4,12 @@ description: Learn how to restrict the assets delivery with OpenAPI capabilities
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Restrict delivery of assets with Dynamic Media with OpenAPI capabilities {#restrict-access-to-assets}
 

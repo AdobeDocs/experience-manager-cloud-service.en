@@ -4,6 +4,14 @@ description: AEM as a Cloud Service uses the principle of overlays to allow you 
 exl-id: 24bdb1a9-6d77-43c7-a75e-28e6e0fd7608
 feature: Developing
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Overlays in AEM as a Cloud Service {#overlays-in-aem}
 
@@ -13,7 +21,7 @@ Overlay is a term that can be used in many contexts. In this context, extending 
 
 In a standard instance, the predefined functionality is held under `/libs` and it is recommended practice to define your overlay (customizations) under the `/apps` branch (using a [search path](#search-paths) to resolve the resources). 
 
-* The touch-enabled user interface uses [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)-related overlays:
+* The touch-enabled user interface uses [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)-related overlays:
 
     * Method
 
@@ -30,7 +38,7 @@ In a standard instance, the predefined functionality is held under `/libs` and i
 
 >[!CAUTION]
 >
->The [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) and the related methods can only be used with [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html). This rule means that creating an overlay with a skeleton structure is only appropriate for the standard, touch-enabled user interface.
+>The [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) and the related methods can only be used with [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html). This rule means that creating an overlay with a skeleton structure is only appropriate for the standard, touch-enabled user interface.
 
 Overlays are the recommended method for many changes. For example, configuring your consoles, or creating your selection category to the asset browser in the side panel (used when authoring pages). They are required as:
 

@@ -6,6 +6,12 @@ feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Dynamic Media Video Profiles{#video-profiles}
 

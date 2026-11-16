@@ -8,6 +8,14 @@ feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 role: User, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # E-sign a form using scribble signatures{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
@@ -40,13 +48,13 @@ You can select the **Configure** ![configure icon](assets/configure.png) icon to
 * When the aspect ratio of the Scribble Signature canvas is more than 1, the geolocation information is added to the right-side of the Scribble Signature canvas. 
  
 
- ![scribble signature-bottom](assets/scribble-signature-aspectratio.PNG)
+![scribble signature-bottom](assets/scribble-signature-aspectratio.PNG)
 
 
 
- >[!NOTE]
- >
- >Signatures are always saved in a PNG format.
+>[!NOTE]
+>
+>Signatures are always saved in a PNG format.
    
 ## Configure an Adaptive Form to use Scribble Signature {#configure-an-adaptive-form-to-use-scribble-signature}
 

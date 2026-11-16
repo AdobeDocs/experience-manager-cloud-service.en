@@ -4,6 +4,18 @@ description: Release Notes for 2025.2.0 release of [!DNL Adobe Experience Manage
 feature: Release Information
 role: Admin
 exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # 2025.2.0 Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -103,7 +115,7 @@ Adaptive Forms allows you to use [HTML email templates](/help/forms/html-email-t
 
 #### Enhanced Cloud Storage Support: Direct PDF Upload to Azure Blob Storage
 
-AEM Forms Document Generation APIs now allows you to [directly upload generated PDF documents](/help/forms/early-access-ea-features.md#doc-generation-api) to Azure Blob Storage. This enhancement streamlines storage and retrieval, improving efficiency and integration with cloud workflows.
+AEM Forms Document Generation APIs now allows you to [directly upload generated PDF documents](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-generation) to Azure Blob Storage. This enhancement streamlines storage and retrieval, improving efficiency and integration with cloud workflows.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 

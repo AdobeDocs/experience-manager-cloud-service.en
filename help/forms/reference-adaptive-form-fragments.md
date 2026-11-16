@@ -10,6 +10,12 @@ role: User
 hide: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Reference Adaptive Form Fragments {#reference-adaptive-form-fragments}
 

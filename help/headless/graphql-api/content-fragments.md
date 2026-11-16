@@ -4,6 +4,17 @@ description: Learn how to use Content Fragments in Adobe Experience Manager (AEM
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # AEM GraphQL API for use with Content Fragments {#graphql-api-for-use-with-content-fragments}
@@ -261,6 +272,12 @@ GraphQL for AEM supports a list of types. All the supported Content Fragment Mod
 | Fragment Reference (UUID) | *A model type* <br><br>Single field: `Model` - Model type, referenced directly <br><br>Multifield, with one referenced type: `[Model]` - Array of type `Model`, referenced directly from array <br><br>Multifield, with multiple referenced types: `[AllFragmentModels]` - Array of all model types, referenced from array with union type | Used to reference one, or more, Content Fragments of certain Model Types, defined when the model was created |
 
 {style="table-layout:auto"}
+
+#### Deliver a Composite item {#deliver-a-composite-item}
+
+You can deliver your Composite items with GraphQL (AEM-native delivery). 
+
+Composite content is returned as nested data within the parent fragment's query response, without resolving a separate Content Fragment asset. Response size depends on the selected fields; composites do not inherently reduce query depth or client round-trips.
 
 ### Helper Fields {#helper-fields}
 
@@ -629,7 +646,7 @@ And also:
 }
 ```
 
-You can also sort on a field within a nested fragment, using the format of `nestedFragmentname.fieldname`.
+You can also sort on a field within a referenced fragment, using the format of `referencedFragmentname.fieldname`.
 
 >[!NOTE]
 >
@@ -1313,9 +1330,9 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
   * use `... on` 
     * See [Sample Query for a Content Fragment of a specific Model with a Content Reference](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-content-reference)
 
-* Fallback when querying nested fragments:
+* Fallback when querying referenced fragments:
 
-  * If a given variation does not exist in a nested fragment, then the **Master** variation would be returned.
+  * If a given variation does not exist in a referenced fragment, then the **Master** variation would be returned.
 
 ## Querying the GraphQL endpoint from an External Website {#query-graphql-endpoint-from-external-website}
 

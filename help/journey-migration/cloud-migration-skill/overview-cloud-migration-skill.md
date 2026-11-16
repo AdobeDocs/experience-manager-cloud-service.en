@@ -3,6 +3,15 @@ title: AI-Assisted Code Migration to AEM as a Cloud Service
 description: Overview of the AEM Cloud Migration Skill and MCP, an AI agent solution that reads BPA findings and migrates AEM 6.x code to AEM as a Cloud Service, pattern by pattern.
 feature: Migration
 role: Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: 5be0fc8f-1cff-5c3e-bb92-2903a56a3de6
+    internal-label: Migration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # AI-Assisted Code Migration to AEM as a Cloud Service {#cloud-migration-skill-overview}
@@ -17,15 +26,15 @@ The solution consists of two components:
 
 | Component | Role |
 |-----------|------|
-| **Migration Skill** | Orchestrates the migration workflow, it sources Best Practices Analyzer (BPA) findings, identifies affected files in your project, and applies code transformations pattern by pattern. Works with a local BPA CSV export or with the Cloud Migration MCP (recommended). |
-| **Cloud Migration MCP** | Connects your IDE agent to Cloud Acceleration Manager (CAM), enabling it to fetch BPA findings directly without a CSV export. Recommended over a local CSV for the most up-to-date findings. |
+| **Migration Skill** | Orchestrates the migration workflow, it sources Best Practices Analyzer (BPA) findings, identifies affected files in your project, and applies code transformations pattern by pattern. Works with a local BPA CSV export or with the AEM MCP Server (recommended). |
+| **AEM MCP Server** | Connects your IDE agent to Cloud Acceleration Manager (CAM), enabling it to fetch BPA findings directly without a CSV export. Recommended over a local CSV for the most up-to-date findings. |
 
 ## Prerequisites {#prerequisites}
 
 - An AEM project (Maven or Gradle) open in your IDE
 - One of the following BPA finding sources (strongly recommended, not required for manual flows):
   - A **BPA CSV export** from your AEM instance
-  - A **Cloud Acceleration Manager project** with an uploaded BPA report and the Cloud Migration MCP configured
+  - A **Cloud Acceleration Manager project** with an uploaded BPA report and the AEM MCP Server configured
 
 ## The Migration Skill {#migration-skill}
 
@@ -53,7 +62,9 @@ The runbook is the recommended entry point for a whole-project assessment: it gi
 | `eventHandler` | Synchronous OSGi `EventHandler` services adapted for Cloud Service |
 | `assetApi` | Deprecated `AssetManager` and DAM API calls replaced with supported equivalents |
 | `guavaCache` | Guava cache (`com.google.common.cache.*`) usage swapped for the Cloud Service–supported Caffeine cache |
+| `inputStream` | `java.io.InputStream` usage triaged by risk: unclosed streams fixed automatically, memory, filesystem, and binary-streaming issues proposed for your review |
 | `htlLint` | `data-sly-test` redundant constant comparison warnings in HTL templates |
+| `oakIndex` (beta) | Legacy `_oak_index` definitions converted to AEM as a Cloud Service–compatible Oak index definitions using Adobe's Index Converter, renamed to the Cloud Service versioned index naming (`<name>-custom-<n>`), with a datatype compatibility check |
 | OSGi configs | `.cfg.json` conversion, runmode scoping, Cloud Manager secrets/env-var extraction, and unsupported run mode (URC) detection and safe reordering |
 
 **Legacy UI and template modernization patterns**
@@ -72,13 +83,21 @@ The runbook is the recommended entry point for a whole-project assessment: it gi
 
 See [Dispatcher Conversion](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md#dispatcher-conversion) for the workflow.
 
+**Migration validation (beta)**
+
+| Capability | What it does |
+|---------|--------------|
+| Validate a migration | Builds and deploys migrated code to a local AEM as a Cloud Service SDK, then checks the migration contract and bundle and component state through the AEM Quickstart MCP. It never edits your source code. |
+
+See [Validate a Migration](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md#validate-migration) for the workflow.
+
 The skill delegates all code transformation steps to the companion `code-assessment` skill. Both are distributed together as the `aem-cloud-service` skill package; install the package once to get both.
 
 ### Getting Started {#getting-started-skill}
 
 1. Install the `aem-cloud-service` skill package (which includes both the migration and `code-assessment` skills) from the [Adobe Skills repository](https://github.com/adobe/skills). For per-IDE install commands, see [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md#install-skills).
 2. Open your AEM project as the workspace root in your IDE.
-3. Obtain BPA findings: export a CSV from BPA or configure the Cloud Migration MCP (see below).
+3. Obtain BPA findings: export a CSV from BPA or configure the AEM MCP Server (see below).
 4. Start a session with your agent using one of these prompts:
 
    **Assess the whole project first (generates the read-only runbook):**
@@ -123,10 +142,28 @@ The skill delegates all code transformation steps to the companion `code-assessm
    Fix guavaCache findings using BPA CSV at ./reports/bpa.csv
    ```
 
+   **InputStream:**
+
+   ```
+   Fix inputStream findings using BPA CSV at ./reports/bpa.csv
+   ```
+
    **Dispatcher conversion:**
 
    ```
    Convert my AMS / on-prem Dispatcher config to AEM as a Cloud Service.
+   ```
+
+   **Oak index conversion (beta):**
+
+   ```
+   Fix oakIndex findings using BPA CSV at ./reports/bpa.csv
+   ```
+
+   **Validate a migration (beta):**
+
+   ```
+   Validate my scheduler migration on the local Cloud SDK.
    ```
 
 >[!NOTE]
@@ -134,9 +171,9 @@ The skill delegates all code transformation steps to the companion `code-assessm
 
 For full pattern reference and session management guidance, see [Using the Cloud Migration Skill](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md).
 
-## The Cloud Migration MCP {#cloud-migration-mcp}
+## Cloud Migration MCP capabilities {#cloud-migration-mcp}
 
-The **AEM Cloud Migration MCP** is a [Model Context Protocol](https://modelcontextprotocol.io) server that connects your IDE agent to Cloud Acceleration Manager. When configured, the migration skill can fetch BPA findings directly from your CAM project without requiring a CSV download.
+AEM Cloud Migration capabilities are available through the [AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#aem-mcp-server), a [Model Context Protocol](https://modelcontextprotocol.io) server that connects your IDE agent to Cloud Acceleration Manager. When configured, the migration skill can fetch BPA findings directly from your CAM project without requiring a CSV download.
 
 ### What the MCP Provides {#mcp-tools}
 
@@ -149,11 +186,11 @@ These tools are invoked automatically by the migration skill; you do not call th
 
 ### Getting Started {#getting-started-mcp}
 
-1. In your IDE's MCP configuration, add the Cloud Migration MCP server URL: `https://mcp.adobeaemcloud.com/adobe/mcp/cloud-migration`
+1. In your IDE's MCP configuration, add the AEM MCP Server URL: `https://mcp.adobeaemcloud.com/adobe/mcp/aem`, or use an existing entry with that URL.
 2. When prompted, sign in with your Adobe ID to authenticate against Cloud Acceleration Manager.
 3. The migration skill can now fetch BPA findings directly from your CAM projects.
 
-For detailed setup and troubleshooting, see [Using the Cloud Migration MCP](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md).
+For detailed setup and troubleshooting, see [Using AEM MCP Server Cloud Migration Capabilities](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md).
 
 ## How They Fit Into the Migration Journey {#migration-journey}
 
@@ -165,4 +202,3 @@ The skill and MCP complement the other tools in the **Implementation Phase**:
 - **Content Transfer Tool**: migrates repository content from AEM 6.x to AEMaaCS.
 
 See the [Implementation Phase overview](/help/journey-migration/implementation.md) for the full picture.
-

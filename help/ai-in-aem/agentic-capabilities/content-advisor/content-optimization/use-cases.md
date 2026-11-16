@@ -3,6 +3,26 @@ title: Content Optimization Agentic Capabilities Overview
 description: Learn how the Content Optimization Agentic Capabilities in AEM collaborates with Coworker Chat to help you refine and adapt assets by applying natural language instructions to create channel-ready variations.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+  - id: f1710108-e0d1-47e5-9952-1888729a03da
+    internal-label: Agentic AI
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Content Optimization Agentic Capabilities {#content-optimization-agentic-capabilites}
@@ -18,6 +38,12 @@ Some of the key benefits of the Content Optimization Agentic Capability include:
 * **Creative enhancement at scale**: Applies visual adjustments and enhancements, such as background changes or graphic overlays, to support high-volume creative workflows without slowing teams down.
 
 * **[Seamless collaboration with the Content Discovery agentic capability](/help/ai-in-aem/agentic-capabilities/content-advisor/discovery/use-cases.md)**: Builds upon the assets identified by the Content Discovery agentic capability, enabling end-to-end asset retrieval and optimization through natural conversation.
+
+    >[!VIDEO](https://delivery-p49105-e258067.adobeaemcloud.com/adobe/assets/urn:aaid:aem:97c98c24-838c-4ad8-a362-b593cc48edf7/play?playbacktype=hls&isletterboxed=true)
+
+    >[!NOTE]
+    >
+    >To participate or learn more on the Coworker capabilities, send an email to `dm-beta-feedback@adobe.com`.
 
 >[!IMPORTANT]
 >

@@ -7,6 +7,16 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # AEM Forms Early Access Program
 
@@ -21,6 +31,26 @@ The AEM Forms Early Access Program program offers a unique opportunity to you to
 If you're interested in joining our Early Access program for any Early Access innovation, simply send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  to request access. You can request access to all or any specific innovation.  
 
 ## Early Access Innovations 
+
+### Interactive Communication Editor enhancements {#ic-editor-enhancements}
+
+Authors can create reusable document designs, add digital signature fields, and configure accessibility properties in the Interactive Communication (IC) Editor:
+
+* **Add a Sign component:** Place a digital signature field in a document and configure which fields are locked after signing, including fields in a named collection. Recipients can sign the generated Portable Document Format (PDF) document in Adobe Acrobat, helping teams protect completed document content.
+* **Configure accessibility while authoring:** Set accessibility roles, screen reader text and precedence, and navigation order, then generate tagged PDF output. These controls help authors prepare communications for readers who use assistive technologies.
+* **Create XDP templates:** Create and update existing XML Data Package (XDP) templates directly in the Interactive Communication editor, configure data bindings, and reuse fragments across document designs. Preview generated PDF output while refining the design.
+
+### Theme Editor for Core Components based Adaptive Forms {#theme-editor-core-components}
+
+Style Core Components based Adaptive Forms visually in the Theme Editor and preview changes as you work. Customize colors, typography, borders, and spacing, then reuse themes across forms to maintain a consistent appearance.
+
+### Dynamic Media images in Adaptive Forms {#dynamic-media-images-adaptive-forms}
+
+Authors can select Dynamic Media assets for the Image component in an Adaptive Form. The component resolves the selected asset reference to its Dynamic Media delivery URL, enabling teams to reuse centrally managed images in forms rather than uploading separate copies.
+
+### Custom submit actions in Universal Editor {#custom-submit-actions-universal-editor}
+
+Authors can select and configure custom submit actions for Edge Delivery Services Adaptive Forms in the Universal Editor's Form Properties interface. Supported action-specific configuration fields appear when the action is selected, enabling teams to connect forms to custom submission processes without switching authoring experiences.
 
 <!--
 
@@ -56,23 +86,6 @@ Ready to start? The [submit an Adaptive Form to Adobe Workfront Fusion](/help/fo
 <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/>
 
 -->
-
-### Conversational Forms
-
-The Conversational Forms innovation lets you interact with forms like a friendly chatbot on any AEM Sites page. 
-
-You can simply drag and drop the Conversational Forms component onto your AEM Sites page and get started. There's no coding required, so anyone can create engaging and user-friendly Conversational Forms experiences quickly.
-
-![Coversation Forms, Chatbot Style Form Filling, Adaptive Forms](/help/forms/assets/conversational-forms.png)
-
-Here's what more Conversational Forms bring:
-
-* **Easy form discovery**: Find the exact form that you need through a clear, conversational interface, on any AEM Sites page. 
-* **Chat-style completion**: Answer questions one at a time, just like chatting with a virtual assistant. It's fast, intuitive, and feels like a conversation.
-* **Preview before you submit**: Double-check everything before hitting submit. Preview your completed form to ensure accuracy and avoid any last-minute mistakes.
-
-
-Conversational Forms are more than just a new look – they're a game-changer for user experience.  Boost engagement, reduce form abandonment, and make interacting with your website a more enjoyable experience for everyone.
 
 <!--
 
@@ -196,7 +209,17 @@ Adaptive Forms can now pass every uploaded file attachment to a virus scanner or
 
 Ready to start? [Scan file attachments in Adaptive Forms with a custom validator](/help/forms/scan-file-attachments-custom-validator.md) covers the concepts and the interface reference, and [Tutorial: Scan file attachments with ClamAV](/help/forms/scan-file-attachments-clamav.md) walks through a complete, working example end to end.
 
-<!--
+### Agentic Form Filling
+
+Agentic Form Filling lets customers complete published Adaptive Forms through AI assistants, website chatbots, or WhatsApp. Unlike the Conversational Forms component embedded in an AEM Sites page, this service supports form filling across these channels.
+
+**Key capabilities:**
+
+* **Use the forms you already have**: Reuse published Adaptive Forms with supported rules and validations and their configured submit action.
+* **Guided or natural-language answers**: Collect structured answers one group of fields at a time, or let customers answer in their own words and have AI extract the values.
+* **Personal data protection**: Personal details in form answers are masked before the service sends those answers to its AI model for field extraction.
+
+To request access, email your organization ID and program details to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address.
 
 ### API Integration Tool for Dynamic Form Data
 
@@ -213,7 +236,7 @@ Key capabilities include:
 
 This tool is particularly useful for scenarios like address auto-completion, dynamic dropdown population, real-time validation against external databases, and creating context-aware form experiences that adapt based on user input.
 
--->
+Ready to start? See [Integrating API in Rule Editor](/help/forms/api-integration-in-rule-editor.md) for configuration instructions.
 
 ## Additional Early Access Innovations
 
@@ -304,6 +327,8 @@ Overall, [Doc Assurance APIs](https://developer.adobe.com/experience-manager-for
 -->
 
 
+<!--
+
 ### Forms Service APIs
 
 Forms service generates interactive PDF forms for data capture. It can also be used to import/export data to/from an existing interactive PDF form and validate submitted data. Here's a breakdown of its functionalities: 
@@ -313,6 +338,10 @@ Forms service generates interactive PDF forms for data capture. It can also be u
 * **Data Extraction and Import**: Import data into an existing PDF form as well as extract data from a filled PDF form. Both XDP and XML data formats are supported, and importing to non-XFA PDF forms (also known as AcroForms) additionally supports FDF and XFDF data.
 
 * **Data Validation**: : Validate submitted data, in XDP or XML format, against a template created using AEM Forms Designer.
+
+-->
+
+<!--
 
 ### Doc Generation API
 
@@ -327,6 +356,10 @@ Storing PDFs in Azure Blob Storage allows for centralized management of document
 * **Improved Security**: By leveraging Azure's built-in security features, such as encryption at rest and role-based access control (RBAC), sensitive documents remain protected during storage.
 
 * **Customizable Storage Paths**: The ability to define custom directory paths ensures generated PDFs are stored in organized and application-specific locations, improving file management.
+
+-->
+
+<!--
 
 ### Document Conversion APIs
 
@@ -354,6 +387,10 @@ The Document Conversion APIs offer the following features:
 
 * **Flatten PDF transparency:** Flatten transparency in a PDF document to improve compatibility with print and document processing workflows.
 
+-->
+
+<!--
+
 ### Enhancements in Visual Rule Editor 
 
 * [Direct API integration](/help/forms/api-integration-in-rule-editor.md): The Visual Rule Editor in Adaptive Forms now supports direct API integration without requiring a Form Data Model. You can connect to an API endpoint by entering its JSON URL or by importing the configuration using a cURL command. After integration, the API can be invoked using the `Invoke Service` action.
@@ -364,6 +401,8 @@ The Document Conversion APIs offer the following features:
 
 * [Retrieve property values from a JSON array](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array): Invoke an API with a custom function to extract values from a JSON array and bind them directly to form fields.
 
+-->
+
 <!--
 
 ### Versioning support in Forms Manager
@@ -372,9 +411,15 @@ Forms Manager now supports versioning for Adaptive Forms (Core Components and Fo
 
 -->
 
+<!--
+
 ### Improved accessibility for form components
 
 Adaptive Forms Core Components introduce WCAG-compliant semantic markup for checkbox groups, radio button groups, and panels. These components now leverage `<fieldset>` and `<legend>` elements to establish meaningful relationships between group labels and their options for assistive technologies. See [Fieldset and legend support in Adaptive Forms](/help/forms/creating-accessible-adaptive-forms.md#fieldset-legend-accessibility).
+
+-->
+
+<!--
 
 ### Configurable tables for Adaptive Forms
 
@@ -387,6 +432,10 @@ Create [configurable tables in Adaptive Forms based on Core Components](/help/fo
 * Improves form usability and readability by organizing repeated information in a structured layout.
 * Reduces authoring effort by providing a reusable and configurable table component.
 
+-->
+
+<!--
+
 ### Locale support for Interactive Communication
 
 [Configure locale](/help/forms/interactive-communication/support-localization.md) settings directly in the Interactive Communication Editor to create region-specific communications. Authors can select a supported locale to apply language and regional formatting conventions for dates, numbers, currencies, and other locale-sensitive content, helping deliver consistent and localized customer communications.
@@ -398,6 +447,8 @@ Key benefits include:
 * Deliver localized Interactive Communications tailored to regional audiences.
 * Ensure consistent formatting and presentation across generated communications.
 
+-->
+
 ## See also
 
 * [Latest Innovations in AEM Forms](/help/forms/latest-innovations.md)
@@ -405,5 +456,3 @@ Key benefits include:
 * [Capabilities of AEM Forms as a Cloud Services](/help/forms/home.md)
 
 * [Difference between AEM 6.5 Forms (AMS and on-prem) and AEM Forms as a Cloud Services (AEM CS Forms)](/help/forms/notable-changes.md)
-
-

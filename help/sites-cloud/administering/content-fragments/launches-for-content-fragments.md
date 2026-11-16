@@ -6,6 +6,20 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Launches for Content Fragments {#launches-for-content-fragments}
 
@@ -20,6 +34,10 @@ A *Launch* is created to allow you to make changes in preparation for future pub
 >For full details see [Launches for Pages](/help/sites-cloud/authoring/launches/overview.md).
 
 You create a *Launch*, then edit and update your Content Fragments in your *Launch*. If changes are made to the *Source* fragments during this phase, you can copy the *Source* (including changes) to the *Launch* with the **[Rebase](#rebase-a-launch-from-source)** operation. When ready, *Promote* duplicates the launch content back to the source. You can then activate your source fragments, either manually or automatically (dependent on fields set when creating and editing the launch). You can also specify whether referenced fragments are to be included in this process.
+
+>[!CAUTION]
+>
+>Content Fragments containing composite fields are not supported in Launches, whether selected directly or included through fragment references. Such actions are not accepted and will fail.
 
 For example, the seasonal product fragments of your online store are updated quarterly so that the featured products align with the current season. To prepare for the next quarterly update, you can create a launch of the appropriate fragments. Throughout the quarter, the following changes are accumulated in the launch copy:
 
@@ -87,6 +105,10 @@ While the right panel enables you to:
 * View, and take further action on, **[Jobs](#jobs-history)** that have been run (**Compare Launch to Source**)
 
 ## Create a Launch {#create-a-launch}
+
+>[!CAUTION]
+>
+>Content Fragments containing composite fields are not supported in Launches, whether selected directly or included through fragment references. Such actions are not accepted and will fail.
 
 To create your launch:
 

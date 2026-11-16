@@ -4,6 +4,12 @@ description: Learn how to use the Search Assets API.
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 0c52e793-4c33-4230-b4f2-27296dd9e4b3
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Search Assets API {#search-assets-api}
 
@@ -18,6 +24,9 @@ You can define properties within the Search Assets API request to enable the fol
 * **Full-text search**: Use the `match` query to define the text to search.  You can also use operators within the `match` query to filter the results.
 
 * **Apply filters**: Use the `term` query to filters the results further by defining a `key` and one or multiple values. `key` identifies the field whose value must be matched and `value` represents what to match against. Similarly, you can use the `range` query to define a range for a field using the Greater-than (gt), Greater-than or equal-to (gte), Less-than (lt), and Less-than or equal-to (lte) properties. 
+
+   >[!NOTE]
+   >When searching for assets through an interface other than Content Hub, configure the metadata fields available for filtering and searching in the Content Hub interface. When configuring a filter, map it to the appropriate metadata property to ensure it targets the correct asset attribute. For more information, see [Configure Content Hub user interface](configure-content-hub-ui-options.md).
 
 * **Sort results**: Use the `OrderBy` property to sort search results based on one or multiple fields. You can sort the results in an ascending or descending order.
 
