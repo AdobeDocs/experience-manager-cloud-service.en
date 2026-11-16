@@ -287,7 +287,7 @@ A model can also be disabled so that:
 * The model is no longer available as a basis for creating *new* Content Fragments.
 * However:
   * The GraphQL schema keeps being generated and is still queryable (to avoid impacting JSON API).
-  * Any Content Fragments based of the model can still be queried and returned from the GraphQL endpoint.
+  * Any Content Fragments based on the model can still be queried and returned from the GraphQL endpoint.
 * The model cannot be referenced anymore, but existing references are kept untouched, and can still be queried and returned from the GraphQL endpoint.
 
 To disable a Model that is flagged as **Enabled**, you use the **Disable** option from:
@@ -447,6 +447,6 @@ You can manage **Locked** models from either the console, or the model editor:
 
     >[!NOTE]
     >
-    >There may still a warning at the top, but that is when the model is already in use by existing Content Fragments. 
+    >There may still be a warning at the top, but that is when the model is already in use by existing Content Fragments. 
 
   * **Cancel** returns you to the console.

@@ -33,7 +33,7 @@ Today, AEM as a Cloud Service includes a built-in APM integration, managed entir
 
 >[!AVAILABILITY]
 >
->This feature is in **Limited Availability**. To use it, request access by emailing [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) - Adobe enables OpenTelemetry for your environments shortly after replying to your request. If your environment currently uses Adobe's built-in APM integration, that integration stops sending data once OpenTelemetry is enabled, since the two cannot run at the same time. 
+>This feature is in **Limited Availability**. To use it, request access by emailing [aemcs-otel-access@adobe.com](mailto:aemcs-otel-access@adobe.com) - Adobe enables OpenTelemetry for your environments shortly after replying to your request. If your environment currently uses Adobe's built-in APM integration, that integration stops sending data once OpenTelemetry is enabled, since the two cannot run at the same time. 
 >
 >Note that it is **not** available to HIPAA-scoped environments, Rapid Development Environments (RDE), and sandboxes. 
 
@@ -180,7 +180,7 @@ For a guided walkthrough that uses the WKND sample project, from storing your cr
 
 ### Step 1: Request access {#request-access}
 
-Email [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) with your Cloud Manager program ID and the environment IDs you want to enable. If you want to use the Grafana or Splunk agent variant rather than the default, say so in your email (see [Supported OpenTelemetry variants](#supported-variants)).
+Email [aemcs-otel-access@adobe.com](mailto:aemcs-otel-access@adobe.com) with your Cloud Manager program ID and the environment IDs you want to enable. If you want to use the Grafana or Splunk agent variant rather than the default, say so in your email (see [Supported OpenTelemetry variants](#supported-variants)).
 
 Adobe enables OpenTelemetry for those environments shortly after replying to your request. If an environment currently uses Adobe's built-in APM integration, that integration stops sending data once OpenTelemetry is enabled — see [Existing APM integrations](#existing-apm).
 
@@ -445,7 +445,7 @@ If telemetry does not appear in your APM provider, check the following:
 | Duplicate log messages at your destination | You likely have both this integration's logs and [Log Forwarding](/help/implementing/developing/introduction/log-forwarding.md) sending to the same destination. See [Overview](#overview) — enable only one path per destination. |
 | An unfamiliar service named `otel-config-operator-validator` | This is the test span that the Configuration Pipeline sends to check your endpoint and credential. It is expected and can be ignored. |
 
-If telemetry still does not appear after these checks, contact [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) with your program and environment details.
+If telemetry still does not appear after these checks, contact [aemcs-otel-access@adobe.com](mailto:aemcs-otel-access@adobe.com) with your program and environment details.
 
 ## FAQ {#faq}
 
@@ -455,7 +455,7 @@ AEM as a Cloud Service customers have asked for additional metrics and operation
 
 **Do I need to request access?**
 
-Yes. During Limited Availability, email [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) with your program and environment IDs. Adobe enables OpenTelemetry for those environments shortly after replying to your request. This is not yet available to HIPAA-scoped environments.
+Yes. During Limited Availability, email [aemcs-otel-access@adobe.com](mailto:aemcs-otel-access@adobe.com) with your program and environment IDs. Adobe enables OpenTelemetry for those environments shortly after replying to your request. This is not yet available to HIPAA-scoped environments.
 
 **What happens to New Relic if I enable OpenTelemetry?**
 
@@ -463,7 +463,7 @@ Once Adobe enables OpenTelemetry for an environment at your request, data is no 
 
 **If I migrate to OpenTelemetry from New Relic, can I move back?**
 
-Yes. Email [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) and Adobe disables OpenTelemetry for your environments. Then set `enabled: false` in your `config/otel.yaml` file (or remove the file), run your Config Pipeline, and run a Full Stack pipeline to completion to restore New Relic. This is possible until the end of November 2026.
+Yes. Email [aemcs-otel-access@adobe.com](mailto:aemcs-otel-access@adobe.com) and Adobe disables OpenTelemetry for your environments. Then set `enabled: false` in your `config/otel.yaml` file (or remove the file), run your Config Pipeline, and run a Full Stack pipeline to completion to restore New Relic. This is possible until the end of November 2026.
 
 **Can I use OpenTelemetry if my environment runs Dynatrace OneAgent?**
 
