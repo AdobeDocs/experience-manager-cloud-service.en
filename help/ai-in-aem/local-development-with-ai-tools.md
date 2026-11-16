@@ -189,53 +189,6 @@ apply unbounded-query
 
 It never commits or pushes — you review the diff and commit. Large fixes run in resumable batches; reply `apply <pattern>` to continue.
 
-#### Check Query Index Coverage {#check-query-index-coverage}
-
-The `code-assessment` skill checks whether the JCR queries in your project use an Oak index. A query that no index covers traverses the repository, or filters and sorts its results in memory. Run this check when a query is slow or logs a traversal warning, or after you add or change a query.
-
-You do not need to paste the query. The analyzer finds every place your Java code builds a query:
-
-- JCR `QueryManager` queries in SQL-2, XPath, or the Query Object Model
-- AEM QueryBuilder predicate groups
-- Sling `ResourceResolver.findResources` and `queryResources` calls
-
-The skill then reads the surrounding code to rebuild each query. The analyzer does not find queries outside Java code, such as queries in JSP, HTL, or configuration files. To check one of those, name the file in your prompt.
-
-The skill also needs your index definitions. Provide them in one of these forms:
-
-- The `.content.xml` files of your custom index definitions, for example under `ui.apps/src/main/content/jcr_root/_oak_index/`. See [Deploying Custom Index Definitions](/help/operations/indexing.md#deploying-custom-index-definitions).
-- A JSON export of the index definitions
-- The dump from `/system/console/status-oak-index-defn.json`, if you have access to it on an environment
-
-Without index definitions, the skill does not guess what is indexed. It reports the check as deferred: `tuning-oak-query-indexes: deferred — index definition not provided`.
-
-To check all queries in your project, name the check and the location of your index definitions:
-
-```
-scan my project for Oak query index coverage, using the index definitions in ui.apps/src/main/content/jcr_root/_oak_index
-```
-
-To check one query, name its file:
-
-```
-the query in TaskFinder.java logs a traversal warning, is it indexed? Index definitions: oak-index-definitions.json
-```
-
-For each query, the report shows:
-
-- Which conditions, sort orders, and full-text constraints the index covers, and which it misses. This includes node type and path settings that stop Oak from using an otherwise suitable index.
-- Whether a narrower query fixes the problem, for example by adding a node type or path restriction. The skill prefers this over a larger index.
-- Which existing index to change. When more than one index can serve the query, the skill lists the candidates and asks you to choose.
-- The proposed index definition change, with its storage and reindexing cost.
-
-Some queries take property names from OSGi configuration or from the caller. The skill lists these separately, with the input it needs from you, and assesses them after you provide it.
-
-The skill never applies an index change. Review the proposed definition, then deploy it through your Cloud Manager pipeline.
-
->[!NOTE]
->
->The check runs only against your local workspace. It does not connect to a running AEM instance or to the [AEM Quickstart MCP server](#aem-quickstart-mcp-server), so its findings are not verified against AEM. Before and after you deploy a change, confirm the result with the Explain Query tool of the [Query Performance Tool](/help/operations/query-and-indexing-best-practices.md#query-performance-tool).
-
 ## AEM Quickstart MCP Server {#aem-quickstart-mcp-server}
 
 The Model Context Protocol (MCP) is an open standard that allows AI coding tools to connect to external data sources and services. The AEM Quickstart MCP server is a content package that, once installed in a local AEM SDK instance, exposes runtime data directly to connected AI tools, enabling agents to retrieve logs, diagnose OSGi failures, and inspect request processing without leaving the IDE.
