@@ -115,7 +115,7 @@ Adaptive Forms allows you to use [HTML email templates](/help/forms/html-email-t
 
 #### Enhanced Cloud Storage Support: Direct PDF Upload to Azure Blob Storage
 
-AEM Forms Document Generation APIs now allows you to [directly upload generated PDF documents](/help/forms/early-access-ea-features.md#doc-generation-api) to Azure Blob Storage. This enhancement streamlines storage and retrieval, improving efficiency and integration with cloud workflows.
+AEM Forms Document Generation APIs now allows you to [directly upload generated PDF documents](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-generation) to Azure Blob Storage. This enhancement streamlines storage and retrieval, improving efficiency and integration with cloud workflows.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
