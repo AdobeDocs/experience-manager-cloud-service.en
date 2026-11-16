@@ -273,6 +273,12 @@ GraphQL for AEM supports a list of types. All the supported Content Fragment Mod
 
 {style="table-layout:auto"}
 
+#### Deliver a Composite item {#deliver-a-composite-item}
+
+You can deliver your Composite items with GraphQL (AEM-native delivery). 
+
+Composite content is returned as nested data within the parent fragment's query response, without resolving a separate Content Fragment asset. Response size depends on the selected fields; composites do not inherently reduce query depth or client round-trips.
+
 ### Helper Fields {#helper-fields}
 
 In addition to the data types for user generated fields, GraphQL for AEM also generates several *helper* fields to help identify a Content Fragment, or to provide additional information about a Content Fragment.
@@ -640,7 +646,7 @@ And also:
 }
 ```
 
-You can also sort on a field within a nested fragment, using the format of `nestedFragmentname.fieldname`.
+You can also sort on a field within a referenced fragment, using the format of `referencedFragmentname.fieldname`.
 
 >[!NOTE]
 >
@@ -1324,9 +1330,9 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
   * use `... on` 
     * See [Sample Query for a Content Fragment of a specific Model with a Content Reference](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-content-reference)
 
-* Fallback when querying nested fragments:
+* Fallback when querying referenced fragments:
 
-  * If a given variation does not exist in a nested fragment, then the **Master** variation would be returned.
+  * If a given variation does not exist in a referenced fragment, then the **Master** variation would be returned.
 
 ## Querying the GraphQL endpoint from an External Website {#query-graphql-endpoint-from-external-website}
 

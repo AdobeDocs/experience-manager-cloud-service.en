@@ -11,13 +11,13 @@ The Brand Experience Agentic Capability accelerates the modernization and evolut
 
 ## Agentic Capabilities {#agentic-capabilities}
 
-The Brand Experience Agentic Capability delivers its outcomes through the following agents, each specializing in a specific set of skills:
+The Brand Experience Agentic Capability delivers its outcomes through the following agentic capabilities, each specializing in a specific set of skills:
 
 * [Experience Production Agentic Capability](#experience-production) - Reduces time-to-market with content updates, content creation, Figma to Visual Content Fragment imports, form creation, and communications
 * [Development Agentic Capability](#development) - Provides AI-assisted troubleshooting and build automation
 * [Onboarding Agentic Capability](#onboarding) - helps you configure Adobe Experience Manager Assets using natural language
 
-Through these agents, the Brand Experience Agentic Capability absorbs the heavy operational work behind updates and modernization, helping teams deliver changes faster and with greater confidence in today's AI era.
+Through these agentic capabilities, the Brand Experience Agentic Capability absorbs the heavy operational work behind updates and modernization, helping teams deliver changes faster and with greater confidence in today's AI era.
 
 >[!IMPORTANT]
 >
@@ -63,7 +63,7 @@ The pipeline troubleshooting skill removes the friction from technical changes a
 
 [The Onboarding Agentic Capability](/help/ai-in-aem/agentic-capabilities/brand-experience/onboarding/use-cases.md) helps you configure Adobe Experience Manager Assets using natural language, coordinating the full onboarding lifecycle, from environment provisioning through content structure, metadata, migration, and search.
 
-## Use with Other Agentic Capabilities {#other-agents}
+## Use with Other Agentic Capabilities {#other-agentic-capabilities}
 
 The Brand Experience Agentic Capability is able to work with other Agentic Capabilities and their skills, examples include:
 

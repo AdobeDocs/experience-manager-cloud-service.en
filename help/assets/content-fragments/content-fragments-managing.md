@@ -63,6 +63,10 @@ The [Content Fragment Editor](#opening-the-fragment-editor) provides various [mo
 >
 >Both editors have a toggle switch in the top toolbar to provide quick access to the other editor.
 
+>[!CAUTION]
+>
+>Take care with your filter settings when [deploying your Content Fragment Models and Persisted Queries in Content Packages](/help/headless/deployment/content-packages.md).
+
 ## Creating Content Fragments {#creating-content-fragments}
 
 ### Creating a Content Model {#creating-a-content-model}

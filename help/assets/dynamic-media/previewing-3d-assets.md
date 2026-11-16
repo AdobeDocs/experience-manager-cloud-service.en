@@ -22,7 +22,7 @@ role_v2:
 
 Experience Manager Assets supports the ingestion, management, preview, and delivery of 3D assets. 
 
-You can preview 3D assets with the automatically generated thumbnail renditions or the interactive 3D viewer. The interactive 3D viewer is available from the asset details page in Experience Manager. The viewer includes, among other things, a collection of interactive camera controls that let you rotate, zoom, and pan around the 3D scene.
+You can preview 3D assets with the automatically generated thumbnail renditions or the interactive 3D viewer. The interactive 3D viewer is available from the asset details page in Experience Manager. The viewer includes a collection of interactive camera controls that let you rotate, zoom, and pan around the 3D scene.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
@@ -52,7 +52,7 @@ Experience Manager supports Interactive 3D preview for the following file format
 
 >[!NOTE]
 >
->If materials do not render in preview of a gLTF model, make sure they are named properly and in a `textures` folder in the same root folder as the model, similar to the following:
+>If materials do not render in preview of a gLTF model, ensure they are named properly and in a `textures` folder in the same root folder as the model, similar to the following:
 
     Asset (folder)
         model.gltf
@@ -63,7 +63,7 @@ Experience Manager supports Interactive 3D preview for the following file format
 
 ## Performance considerations when you preview 3D assets in Experience Manager{#performance-3d-previewing-assets}
 
-The time it takes to open a 3D asset in the asset details view page depends on several factors such things as bandwidth, image complexity, and latencies to the server.
+The time it takes to open a 3D asset on the asset details view page depends on several factors such as bandwidth, image complexity, and latencies to the server.
 
 In addition, the capabilities of the client computer &ndash; such as a workstation, notebook, or mobile touch device &ndash; are also important to consider when you manipulate the camera interactively. A reasonably powerful system with good graphics capabilities can make the interactive 3D viewing experience smoother and more favorable.
 
@@ -84,7 +84,7 @@ In addition, the capabilities of the client computer &ndash; such as a workstati
 1. Select the card of the 3D asset.
 
     ![Interactive 3D preview](/help/assets/dynamic-media/assets/3d-preview.png)
-    _Interactive preview of a 3D asset in the asset details view page._ 
+    _Interactive preview of a 3D asset on the asset details view page._ 
 1. On the asset details view page for the 3D asset, do any of the following:
 
     | View | Description | Mouse action | Touch screen action |

@@ -42,8 +42,82 @@ Based on your requirement you can configure reCAPTCHA service to enable:
 
 ### Configure reCAPTCHA Enterprise  {#steps-to-implement-reCAPTCHA-enterprise-in-forms-core-components}
 
-1. Create or select a [Google Cloud project](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin) and enable [reCAPTCHA Enterprise API](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#enable-the-recaptcha-enterprise-api). 
-1. Obtain the [Project ID](https://support.google.com/googleapi/answer/7014113?hl=en#:~:text=To%20locate%20your%20project%20ID,a%20member%20of%20are%20displayed) and create an [API key](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key) and a [site key for websites](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key).
+1. **Create or select a Google Cloud project and enable the reCAPTCHA Enterprise API.**
+
+    1. Sign in to the [Google Cloud Console](https://console.cloud.google.com/).
+    1. From the project selector at the top of the page, select an existing project or create a new project.
+    1. Go to **APIs & Services > Library**.
+    1. Search for **reCAPTCHA Enterprise API** and select it.
+    1. Select **Enable** if the API is not already enabled.
+
+    >[!NOTE]
+    >
+    >Ensure that you have permission to manage API keys and create reCAPTCHA Enterprise keys in the selected project. To create reCAPTCHA keys, you need the **reCAPTCHA Enterprise Admin** IAM role or equivalent permissions.
+
+1. **Obtain the Project ID and create the API key and site key.**
+
+    **Obtain the Project ID**
+
+    1. With your project selected in the Google Cloud Console, open the project dashboard.
+    1. Locate and copy the **Project ID**. Use the project ID, not the project name or project number, when configuring AEM Forms.
+
+        ![Google Cloud project details showing the Project ID label and copy icon, with project identifiers blurred](assets/recaptcha-enterprise-project-id.png){width="630"}
+
+    **Create an API key**
+
+    1. Go to **APIs & Services > Credentials**.
+    1. Select **Create credentials > API key**.
+    1. Enter a descriptive name for the API key, if prompted.
+    1. Open **Select API restrictions**.
+
+        ![API restrictions menu showing reCAPTCHA Enterprise API and application restriction options](assets/recaptcha-enterprise-api-key-restrictions.png){width="480"}
+
+    1. Select **reCAPTCHA Enterprise API** and select **OK**.
+    1. Select **Create**. Copy the generated API key and store it securely.
+
+    >[!IMPORTANT]
+    >
+    >AEM sends assessment requests from the server, not from the form filler's browser. Do not apply a **Websites (HTTP referrers)** application restriction to this API key. If you apply an **IP addresses** restriction, it must allow the outbound IP addresses used by your AEM environment. Confirm those addresses with your environment administrator before adding the restriction. Keep the API restriction limited to **reCAPTCHA Enterprise API**.
+    >
+    >Do not expose the API key in publicly accessible source code, documentation screenshots, or client-side scripts.
+
+    **Create a reCAPTCHA Enterprise site key**
+
+    1. In the Google Cloud Console, go to **Security > Fraud Defense**.
+    1. Select the **Keys** tab.
+
+        ![Fraud Defense Keys tab with the Create key action](assets/recaptcha-enterprise-keys-tab.png){width="760"}
+
+    1. Select **Create key**.
+    1. In **Display name**, enter a descriptive name for the key.
+    1. Under **Application type**, select **Web**.
+
+        ![Website-key display name, Web application type, and domain verification controls](assets/recaptcha-enterprise-required-settings.png){width="560"}
+
+    1. In **Domain list**, select **Add a domain** and enter the domain where your Adaptive Form is hosted. Do not include the protocol (`https://`) or URL path. Add any additional domains where you use the form.
+    1. Keep **Disable domain verification** turned off to restrict the key to the configured domains.
+    1. Select **Next step (optional)** to open the additional settings.
+
+        ![Challenge, test-key, and WAF controls in the additional site-key settings](assets/recaptcha-enterprise-additional-settings.png){width="560"}
+
+    1. Configure the challenge setting to match the key type you want to use in AEM Forms:
+
+        * **Score-based site key:** Keep **Will you use challenges?** turned off. This key evaluates interactions without displaying a CAPTCHA checkbox or challenge.
+        * **Checkbox site key:** Turn on **Will you use challenges?** and configure the key as a checkbox key with the appropriate challenge security settings.
+
+    1. For non-production testing, optionally enable **Are you creating this key for testing purposes only?** and select a fixed test score between 0 and 1. Do not use a test key for production forms.
+
+        ![Test-key setting enabled with a fixed score slider ranging from 0 to 1](assets/recaptcha-enterprise-test-score.png){width="560"}
+
+    1. Select **Create key**.
+    1. Open the newly created key and copy the **Site Key**.
+
+    You now have the three values required for the AEM cloud service configuration:
+
+    * **Project ID:** Identifies your Google Cloud project.
+    * **API Key:** Associates assessment requests to the reCAPTCHA Enterprise API with your Google Cloud project.
+    * **Site Key:** Identifies the reCAPTCHA configuration associated with your website.
+
 1. Create configuration container for cloud services.
 
     1. Go to **[!UICONTROL Tools > General > Configuration Browser]**.
@@ -57,8 +131,21 @@ Based on your requirement you can configure reCAPTCHA service to enable:
     1. On your Experience Manager author instance, go to ![tools-1](assets/tools-1.png) &gt; **[!UICONTROL Cloud Services]**.
     1. Select **[!UICONTROL reCAPTCHA]**. The Configurations page opens. Select the configuration container that you created and select **[!UICONTROL Create]**.
     1. Select version as [!DNL reCAPTCHA Enterprise] and specify Name, Project ID, Site Key, and API key (Obtained in Step 2) for reCAPTCHA Enterprise service.
-    1. Select key type, the key type should be same as the site key that you configured in the [Google Cloud project](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin), for example, **Checkbox site key** or **Score-based site key**.
-    1. Specify a [threshold score in the range 0 to 1](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores). Scores greater than or equal to the threshold scores identify human interaction, otherwise considered bot interaction.
+    1. Select the **[!UICONTROL Key Type]** that matches the site key created in Google Cloud:
+
+        * **[!UICONTROL Score-based site key]:** Select this option if you created the key with **Will you use challenges?** disabled.
+        * **[!UICONTROL Checkbox site key]:** Select this option if you enabled **Will you use challenges?** and configured a checkbox key.
+
+        >[!IMPORTANT]
+        >
+        >The key type selected in AEM Forms must match the key type configured in Google Cloud. Selecting a different key type can cause reCAPTCHA validation to fail.
+
+    1. Specify a **[!UICONTROL Threshold Score]** between 0 and 1. A score closer to 1 indicates a lower likelihood of bot activity; a score closer to 0 indicates a higher likelihood of bot activity. For a valid reCAPTCHA token, the interaction must have a score greater than or equal to the configured threshold to pass the score check. For example, a threshold of `0.5` accepts scores of `0.5` or higher.
+
+        >[!NOTE]
+        >
+        >The threshold score configured in AEM Forms is different from the fixed score configured for a Google Cloud test key. A test key returns the configured test score; AEM compares the returned score with its threshold.
+
     1. Select **[!UICONTROL Create]** to create the cloud service configuration.
 
 <!--
@@ -76,7 +163,7 @@ Once the reCAPTCHA Enterprise service is enabled, it is available for use in ada
 
 1. Obtain [reCAPTCHA API key pair](https://www.google.com/recaptcha/admin) from Google. It includes a **site key** and a **secret key**.
 
-    ![Create Google reCAPTCHA configuration of Google's website to obtain reCAPTCHA Keys](/help/forms/assets/google-captcha.gif)
+    ![Create Google reCAPTCHA configuration of Google's website to obtain reCAPTCHA Keys](assets/google-captcha.gif)
 1. Create Configuration Container on your AEM Forms as a Cloud Service environment. A Configuration Container holds Cloud Configurations used to connect AEM to external services. To create and configure a Configuration Container to connect your AEM Forms environment with reCAPTCHA service by Google:   
     1. Open your AEM Forms as a Cloud Service instance. 
     1. Go to **[!UICONTROL Tools > General > Configuration Browser]**. In the Configuration Browser, you can: 
@@ -96,7 +183,7 @@ Once the reCAPTCHA Enterprise service is enabled, it is available for use in ada
     1. Select a Configuration Container, created or updated in previous section. Select **[!UICONTROL Create]**.
     1. Specify **[!UICONTROL Title]**, **[!UICONTROL Name]**, **[!UICONTROL Site Key]**, and **[!UICONTROL Secret Key]** for reCAPTCHA service (Obtained in Step 1). Select **[!UICONTROL Create]**.
 
-    ![Configure the Cloud Service to connect your AEM Forms environment with reCAPTCHA service by Google](/help/forms/assets/captcha-configuration.gif)
+    ![Configure the Cloud Service to connect your AEM Forms environment with reCAPTCHA service by Google](assets/captcha-configuration.gif)
     
    Once the reCAPTCHA service is configured, it is available for use in an Adaptive Form. For more information, see [using Google reCAPTCHA in an Adaptive Form](#using-reCAPTCHA).
 
@@ -113,7 +200,7 @@ To use reCAPTCHA in Adaptive Forms:
 
     If you do not have such a Configuration Container, see section [Connect your AEM Forms environment with reCAPTCHA service by Google](#connect-your-forms-environment-with-recaptcha-service-by-google) to learn how to create such a Configuration Container.
 
-    ![Select Configuration Container](/help/forms/assets/captcha-properties.png)
+    ![Select Configuration Container](assets/captcha-properties.png)
 
 1. Select an Adaptive Forms and select **[!UICONTROL Edit]**. The Adaptive Form opens in Adaptive Forms Editor. 
 1. From the component browser, drag-drop the **[!UICONTROL Adaptive Form reCAPTCHA]** component onto the Adaptive Form. 
@@ -144,7 +231,7 @@ To use reCAPTCHA in Adaptive Forms:
 
     The reCAPTCHA service is enabled on the adaptive form. You can preview the form and see the CAPTCHA working. The **protected by reCAPTCHA** badge, displayed below, is displayed on the protected forms.
 
-    ![Google protected by reCAPTCHA badge](/help/forms/assets/google-recaptcha-v2.png)
+    ![Google protected by reCAPTCHA badge](assets/google-recaptcha-v2.png)
 
 1. Select **[!UICONTROL Done]**. 
 
