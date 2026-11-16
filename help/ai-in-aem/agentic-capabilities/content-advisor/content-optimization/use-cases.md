@@ -39,6 +39,12 @@ Some of the key benefits of the Content Optimization Agentic Capability include:
 
 * **[Seamless collaboration with the Content Discovery agentic capability](/help/ai-in-aem/agentic-capabilities/content-advisor/discovery/use-cases.md)**: Builds upon the assets identified by the Content Discovery agentic capability, enabling end-to-end asset retrieval and optimization through natural conversation.
 
+    >[!VIDEO](https://delivery-p49105-e258067.adobeaemcloud.com/adobe/assets/urn:aaid:aem:97c98c24-838c-4ad8-a362-b593cc48edf7/play?playbacktype=hls&isletterboxed=true)
+
+    >[!NOTE]
+    >
+    >To participate or learn more on the Coworker capabilities, send an email to `dm-beta-feedback@adobe.com`.
+
 >[!IMPORTANT]
 >
 >AI-generated responses may be inaccurate or misleading. Be sure you double-check suggested fixes and responses. 
