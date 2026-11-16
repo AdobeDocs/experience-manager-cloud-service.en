@@ -161,6 +161,10 @@ The dispatcher skill handles orchestration and advisory guidance. The Dispatcher
 
 ### Use the Code-assessment Skill {#use-the-code-assessment-skill}
 
+>[!TIP]
+>
+>For the complete guide to this skill, including all supported checks, how to read the report, how fixes are applied and verified, worked examples, and limitations, see [Code Assessment Skill](/help/ai-in-aem/code-assessment-skill.md).
+
 The `code-assessment` skill detects, reviews, and fixes code-quality and correctness issues in an AEM as a Cloud Service project entirely within your local workspace. Describe the issue, and the skill routes the request to the appropriate remediation workflow.
 
 Supported checks include modernizing Sling Model dependency injection, updating outdated Maven dependencies, adding missing timeouts to outbound HTTP calls, bounding unbounded queries, Sling schedulers, resource change listeners, the Replication and Assets APIs, and JCR or OSGi event handling, plus scanning and fixing usage of [deprecated and removed AEM APIs](/help/release-notes/deprecated-removed-features.md), with more added over time. Depending on the issue, the skill either applies a mechanical fix directly or guides you through one that needs a judgment call.
@@ -194,8 +198,6 @@ apply unbounded-query
 ```
 
 It never commits or pushes — you review the diff and commit. Large fixes run in resumable batches; reply `apply <pattern>` to continue.
-
-See [Code Assessment Skill](/help/ai-in-aem/code-assessment-skill.md) for more information about how the skill works, a few examples, and other details. [Code Assessment Skill](/help/ai-in-aem/code-assessment-skill.md).
 
 ## AEM Quickstart MCP Server {#aem-quickstart-mcp-server}
 
