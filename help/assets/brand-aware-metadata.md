@@ -36,7 +36,7 @@ Ensure the following:
 Before creating prompts, open **[!UICONTROL Brand-Aware Metadata]**.
 
 1. In [!DNL Adobe Experience Manager Assets], switch to **[!UICONTROL Admin view]**, then navigate to **[!UICONTROL Assets]**.
-2. Select **[!UICONTROL Brand-Aware Metadata]**.
+2. Select **[!UICONTROL Brand-Aware Metadata]**
  ![Navigate to Prompt Editor](/help/assets/assets/prompt-editor.png)
 
 The Brand-Aware Metadata Manager displays the available property prompts, brand prompts, quality reports, and GenAI metrics.
