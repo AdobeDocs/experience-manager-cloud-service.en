@@ -5,6 +5,14 @@ solution: Experience Manager Sites
 feature: Security
 role: Developer, Admin
 exl-id: 1ed23f88-ec82-479f-ba24-a152367bcf27
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Migrating to External Identity and Dynamic Group Membership {#migrating-to-external-identity}
 

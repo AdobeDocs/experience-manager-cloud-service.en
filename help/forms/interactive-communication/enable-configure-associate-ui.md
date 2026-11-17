@@ -5,12 +5,19 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 5f8371f9-b4a6-4cae-a9d3-cfd744b66702
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Enable and configure Associate UI for Interactive Communications
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 This article describes how to enable the Associate UI for an Interactive Communication (IC) and optionally configure an AEM workflow for submissions. Authors perform these steps in **Interactive Communication Settings**.
 
@@ -87,3 +94,4 @@ After enabling Associate View and optionally configuring workflow:
 - [Associate UI in Interactive Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [Integrate Associate UI in Your Application](/help/forms/interactive-communication/invoke-associate-ui.md)
 - [Submission workflow for Associate UI — IC Generate PDF Output](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md) — how submission and workflow work, plus an example workflow that generates PDF from IC submissions.
+

@@ -1,9 +1,8 @@
 ---
 title: Intelligent import and conversion
 description: Learn how to transform existing documents, PDFs, and images into interactive digital forms using Forms Experience Builder's intelligent import and conversion capabilities.
-hide: yes
+hide: true
 index: false
-hidefromtoc: yes
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 7268c4be-1e4a-4d31-aa76-9076d7ee83ce

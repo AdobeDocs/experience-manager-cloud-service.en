@@ -4,10 +4,19 @@ description: Adobe Experience Manager optimizes performance by asynchronously co
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
 feature: Operations
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Asynchronous Operations {#asynchronous-operations}
 
-To reduce negative impact on performance, Adobe Experience Manger processes certain long-running and resource-intensive operations asynchronously as background operations. Asynchronous processing involves enqueuing multiple jobs and running them in a serial manner subject to the availability of system resources.
+To reduce negative impact on performance, Adobe Experience Manager processes certain long-running and resource-intensive operations asynchronously as background operations. Asynchronous processing involves enqueuing multiple jobs and running them in a serial manner subject to the availability of system resources.
 
 These operations include:
 
@@ -45,7 +54,7 @@ To view the status of the asynchronous operations in detail, navigate to the **[
 
    * **[!UICONTROL Fail]** or **[!UICONTROL Error]**: The operation could not be processed
 
-   * **[!UICONTROL Scheduled]**: The operation is scheduled for processing a later time
+   * **[!UICONTROL Scheduled]**: The operation is scheduled for processing at a later time
 
 1. To stop an active operation, select it from the list and click **[!UICONTROL Stop]** from the toolbar.
 
@@ -102,7 +111,7 @@ If the number of assets or folders to be deleted exceeds the threshold number, t
 
    ![Asset delete threshold](assets/async-delete-threshold.png)
 
-1. Check the option **Enable email notification** to receive email notifications for this job status. for example, success, failed.
+1. Check the option **Enable email notification** to receive email notifications for this job status.
 1. Save the changes.
 
 ### Configure Asynchronous Asset Move Operations {#configuring-asynchronous-move-operations}

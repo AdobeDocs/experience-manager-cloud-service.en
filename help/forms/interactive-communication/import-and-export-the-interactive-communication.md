@@ -6,12 +6,19 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 7e328932-070d-4eb3-8176-500ef31581be
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Import and Export Interactive Communication
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 Import and export feature in Interactive Communication (IC) enables users to seamlessly migrate, reuse, and manage communications across environments. It allows you to export an Interactive Communication (IC) along with its associated fragments and data models from one environment and import it into another, ensuring consistency and reducing duplication of effort during deployment.
 
@@ -55,3 +62,4 @@ Create an Interactive Communication (IC) in one environment and reuse it in anot
 
 This allows easy reuse of fragments across different environments, ensuring design consistency and reducing duplication of effort.
 +++
+

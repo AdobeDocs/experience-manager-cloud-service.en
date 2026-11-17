@@ -4,6 +4,18 @@ description: Release Notes for 2021.7.0 release of [!DNL Adobe Experience Manage
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
 feature: Release Information
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -31,7 +43,7 @@ Have a look at the [July 2021 Release Overview](https://video.tv.adobe.com/v/335
 ### What's New {#what-is-new-foundation}
 
 * More flexible Dispatcher configuration: Projects can be more easily organized. For example, you can now include multiple rewrite rule files that reflect your site structure. [Learn about](/help/implementing/dispatcher/disp-overview.md#validation-debug) this flexible mode, including how to structure your Dispatcher configuration so you can take advantage of it.
-* The tree replication UI under the replication agent's "Distribute" tab should be considered deprecated and was removed after September 30, 2021. [Learn about](/help/operations/replication.md#tree-activation) alternative replication strategies.
+* The tree replication UI under the replication agent's "Distribute" tab should be considered deprecated and was removed after September 30, 2021. [Learn about](/help/operations/tree-replication-workflows.md#tree-activation) alternative replication strategies.
 * Bundle `org.apache.sling.datasource-1.0.4.jar` for Sling datasource support has been removed, as it has outdated functionality and is not in use by customers.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}

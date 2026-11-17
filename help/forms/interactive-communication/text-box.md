@@ -6,12 +6,19 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 6bed824c-b959-4882-a5aa-dbb7fbf2f8a0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Text Box Component in Interactive Communication Editor 
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 ## 1. Introduction 
 
@@ -21,7 +28,41 @@ The Text Box supports **data binding**, enabling authors to combine static and d
 
 ![Find IC Doc](/help/forms/interactive-communication/assets/textbox.png)
 
-## 2. Properties 
+## 2. Display Pattern
+
+You can assign a **display pattern** to a Text Box field from the **Properties** panel. Display patterns control how field values are presented to end users in the canvas preview and in generated output — for example, masking a text entry as a phone number: **(555) 123-4567**.
+
+The configured pattern is immediately reflected in the canvas preview and is preserved across save and reload cycles. For advanced use cases, you can define a **custom XFA picture clause** to achieve any desired output format.
+
+### Configure a display pattern
+
+1. Select the Text Box component on the design canvas.
+2. Open the **Properties** panel.
+3. In the **Display Pattern** section, choose a predefined pattern or enter a custom picture clause.
+4. Preview the formatted value on the canvas.
+
+### Custom pattern example (Text)
+
+| Pattern | Example output | Description |
+|---------|----------------|-------------|
+| `text{(999) 999-9999}` | (555) 123-4567 | Phone number mask |
+
+**Picture clause symbols (Text):**
+
+| Symbol | Meaning |
+|--------|---------|
+| 9 | Matches a digit |
+| A | Matches a letter |
+| O | Matches alphanumeric |
+| X | Matches any character |
+
+### Best practices
+
+- Choose a pattern that matches how end users expect to read the value (phone, ID, postal code).
+- Validate sample data in canvas preview before publishing.
+- Use custom picture clauses only when predefined patterns do not meet your formatting needs.
+
+## 3. Properties
 
 The text box component provides a wide set of properties to help configure its look, feel, and behavior. 
 
@@ -75,7 +116,7 @@ Define spacing around the text box:
 
  
 
-## 3. Usage 
+## 4. Usage 
 
 The Text Box is used for: 
 
@@ -89,7 +130,7 @@ The Text Box is used for:
 
 Authors can drag the Text Box from the component Library into the Design View, or master view and configure its behavior using the Properties Panel. 
 
-## 4. Best Practices 
+## 5. Best Practices 
 
 - Always associate Text Boxes with meaningful field labels to improve accessibility. 
 
@@ -100,3 +141,13 @@ Authors can drag the Text Box from the component Library into the Design View, o
 - Avoid excessive font styles that could hinder readability. 
 
 By configuring the Text Box properties thoughtfully, authors can create interactive, responsive, and user-friendly communication experiences within AEM's Interactive Communication Editor.
+
+## See also
+
+- [Numeric Field Component](/help/forms/interactive-communication/numeric-field.md)
+- [Date Field Component](/help/forms/interactive-communication/date-field.md)
+- [Date/Time Field Component](/help/forms/interactive-communication/date-time-field.md)
+- [Unbound Variable Component](/help/forms/interactive-communication/unbound-variable.md)
+- [Configure Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/configure-data-binding.md)
+- [Use the Rule Editor in Interactive Communication Editor](/help/forms/interactive-communication/use-the-rule-editor.md)
+

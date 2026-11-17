@@ -5,12 +5,19 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 9d8a33e4-e206-48e6-9daf-b15feb9c67a3
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Submission workflow for Associate UI
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 This article explains how submission and workflow work when you enable a workflow for the Associate UI. It then walks through how to configure a submission workflow. The walkthrough uses generating a PDF from the Interactive Communication (IC) payload as an example; you can adapt the steps for other workflow types.
 
@@ -87,3 +94,4 @@ When **Externalize workflow data storage** is enabled, configure the externalise
 - [Enable and configure Associate UI for Interactive Communications](/help/forms/interactive-communication/enable-configure-associate-ui.md)
 - [Integrate Associate UI in Your Application](/help/forms/interactive-communication/invoke-associate-ui.md)
 - [Externalize workflow data](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html)
+

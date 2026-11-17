@@ -6,12 +6,19 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: d2af7706-2b2a-4a40-a4a4-375b5f2b08fb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Rectangle Component in Interactive Communication Editor 
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 ## 1. Introduction 
 
@@ -103,3 +110,10 @@ Rectangles can be combined with other layout elements like subforms or container
 - Hide rectangles if they are only needed for design purposes during editing but not required in the final output. 
 
 The Rectangle component is a non-interactive yet powerful tool in the IC Editor. When styled and positioned effectively, it enhances layout precision, visual flow, and user experience without adding complexity to data binding or interactivity.
+
+## See also
+
+- [Line Component](/help/forms/interactive-communication/line.md)
+- [Image Component](/help/forms/interactive-communication/image.md)
+- [Handle Content Overflow in Interactive Communication Editor](/help/forms/interactive-communication/handle-content-overflow.md)
+

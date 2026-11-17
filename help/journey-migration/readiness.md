@@ -4,6 +4,15 @@ description: Learn about the steps that you must take so you can make sure that 
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 feature: Migration
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: 5be0fc8f-1cff-5c3e-bb92-2903a56a3de6
+    internal-label: Migration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Readiness Phase {#readiness-phase}
 
@@ -204,7 +213,7 @@ Once you have estimated the level of effort that is required to move to Cloud Se
 
 If you have not established Key Performance Indicators (KPIs) previously, it is recommended to establish KPIs for your AEM implementation to help your team focus on what matters the most.
 
-See [Developing KPIs](https://experienceleague.adobe.com/welcome/aem/part6.html) so you can learn how to choose the right KPIs for your business objectives.
+See [Assessing KPIs](/help/overview/assessing-kpis.md) so you can learn how to choose the right KPIs for your business objectives.
 
 ## What's Next {#what-is-next}
 

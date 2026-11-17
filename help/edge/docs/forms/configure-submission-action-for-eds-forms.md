@@ -4,6 +4,20 @@ description: Learn how to configure submit actions in AEM Forms using Edge Deliv
 feature: Edge Delivery Services
 role: Admin, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Configure Submit Actions for AEM Forms
 
@@ -151,6 +165,17 @@ For detailed OSGi Referrer Filter configuration, refer to the [Referrer Filter](
 #### 3. CORS (Cross-Origin Resource Sharing) Issues
 
 Configure CORS settings in AEM to allow requests from your specific Edge Delivery site domains:
+
+>[!IMPORTANT]
+>
+>The CORS settings below go in your dispatcher vhost file. On AEM as a Cloud Service, the shipped `default.vhost` file is read-only and checksum-validated during the Cloud Manager pipeline, so direct edits to it fail to deploy.
+>
+>Before applying the CORS settings, make the vhost file editable:
+>
+>1. Copy `default.vhost` to a new, customer-owned file under `available_vhosts/`.
+>1. Point the `enabled_vhosts/` symlink to that new file.
+>
+>For more information on this file structure, see [Dispatcher overview](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/dispatcher/disp-overview#file-structure).
 
 **Developer Localhost**
 

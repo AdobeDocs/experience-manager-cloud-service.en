@@ -6,12 +6,19 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 7ac93d8c-5454-4789-a7cd-438571a9ff28
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Date/Time Field Component in Interactive Communication Editor 
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 ## 1. Introduction 
 
@@ -21,7 +28,39 @@ The field supports various formatting options (e.g., DD/MM/YYYY, 24-hour or 12-h
 
 ![Find IC Docu](/help/forms/interactive-communication/assets/datetime.png)
 
-## 2. Properties 
+## 2. Display Pattern
+
+You can assign a **display pattern** to a Date/Time field from the **Properties** panel — for example: **04/01/2007 2:30 PM**.
+
+The configured pattern is immediately reflected in the canvas preview and is preserved across save and reload cycles. For advanced use cases, you can define a **custom XFA picture clause** to achieve any desired output format.
+
+### Configure a display pattern
+
+1. Select the Date/Time Field component on the design canvas.
+2. Open the **Properties** panel.
+3. In the **Display Pattern** section, choose a predefined pattern or enter a custom picture clause.
+4. Preview the formatted value on the canvas.
+
+### Custom pattern example (Date/Time)
+
+| Pattern | Example output | Description |
+|---------|----------------|-------------|
+| `date{MM/DD/YYYY} time{HH:MM}` | 04/01/2007 14:30 | Combined date and time |
+
+**Common time tokens:**
+
+| Token | Meaning |
+|-------|---------|
+| HH | 24-hour hour |
+| h | 12-hour hour |
+| MM | Minutes |
+| A | AM / PM |
+
+>[!NOTE]
+>
+> Underlying Date/Time values must conform to **ISO 8601** in **YYYY-MM-DDTHH:MM** format (for example, `2007-04-01T14:30`). Values that do not follow this format are displayed as-is, without pattern formatting applied.
+
+## 3. Properties 
 
 The Date/Time Field component includes several configurable properties: 
 
@@ -103,7 +142,7 @@ Links the field to a data source to store or retrieve values.
 
 - **No Data Binding:** Field is not connected to any backend data (used for visual only or calculated values). 
 
-## 3. Usage 
+## 4. Usage
 
 The Date/Time Field is ideal in scenarios where consistent temporal data is required. Common use cases include: 
 
@@ -117,7 +156,7 @@ The Date/Time Field is ideal in scenarios where consistent temporal data is requ
 
 Authors can combine the field with layout containers, validations, or conditional rules to control format, required fields, and context-sensitive visibility. 
 
-## 4. Best Practices 
+## 5. Best Practices
 
 - Use clear captions such as "Select a date" or "Appointment Time" to guide users. 
 
@@ -132,3 +171,13 @@ Authors can combine the field with layout containers, validations, or conditiona
 - Bind the field to a valid schema path to ensure proper data capture and processing. 
 
 The Date/Time Field component in the Interactive Communication editor is a powerful and user-friendly component that streamlines time-based input. With the right configuration of styling, data handling, and layout controls, it enables clean, reliable, and intuitive form experiences for both users and backend systems.
+
+## See also
+
+- [Text Box Component](/help/forms/interactive-communication/text-box.md)
+- [Numeric Field Component](/help/forms/interactive-communication/numeric-field.md)
+- [Date Field Component](/help/forms/interactive-communication/date-field.md)
+- [Unbound Variable Component](/help/forms/interactive-communication/unbound-variable.md)
+- [Configure Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/configure-data-binding.md)
+- [Use the Rule Editor in Interactive Communication Editor](/help/forms/interactive-communication/use-the-rule-editor.md)
+

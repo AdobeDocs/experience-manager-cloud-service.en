@@ -1,9 +1,21 @@
 ---
 title: Adobe Experience Manager as a Cloud Service Release Notes for 2020.5.0
-description: "[!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2020.5.0."
+description: '[!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2020.5.0.'
 exl-id: 8570d2c3-6d55-4914-94b2-f5d162e0c285
 feature: Release Information
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Release Notes for AEM as a Cloud Service 2020.5.0 {#release-notes}
 

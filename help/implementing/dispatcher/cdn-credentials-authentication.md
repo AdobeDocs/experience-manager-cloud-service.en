@@ -4,6 +4,15 @@ description: Learn how to configure CDN credentials and authentication by declar
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: 2741637d-a621-529a-b21b-bfe9be07a9c8
+    internal-label: Dispatcher
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 
 # Configuring CDN Credentials and Authentication {#cdn-credentials-authentication}
@@ -118,7 +127,7 @@ Additional properties include:
 <!--   * OnFailure - defines the action, either `log` or `block`, when a request doesn't match either `edgeKey1` or `edgeKey2`. For `log`, request processing will continue, while `block` will serve a 403 error. The `log` value is useful when testing a new token on a live site since you can first confirm that the CDN is correctly accepting the new token before changing to `block` mode; it also reduces the chance of lost connectivity between the customer CDN and the Adobe CDN, as a result of an incorrect configuration. -->
 * Rules: Lets you declare which of the authenticators should be used, and whether it's for the publish and/or preview tier.  It includes:
    * name - a descriptive string.
-   * when - a condition that determines when the rule should be evaluated, according to the syntax in the [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md) article. Typically, it will include a comparison of the current tier (for example., publish) so all live traffic is validated as routing through the customer CDN.
+   * when - a condition that determines when the rule should be evaluated, according to the syntax in [Condition Structure](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure). Typically, it will include a comparison of the current tier (for example., publish) so all live traffic is validated as routing through the customer CDN.
    * action - must specify "authenticate", with the intended authenticator referenced.
 
 >[!NOTE]
@@ -219,7 +228,7 @@ Additional properties include:
   * purgeKey2 - used for rotation of secrets, which is described in the [rotating secrets](#rotating-secrets) section below. At least one of `purgeKey1` and `purgeKey2` must be declared.
 * Rules: Lets you declare which of the authenticators should be used, and whether it's for the publish and/or preview tier.  It includes:
   * name - a descriptive string
-  * when - a condition that determines when the rule should be evaluated, according to the syntax in the [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md) article. Typically, it will include a comparison of the current tier (for example., publish).
+  * when - a condition that determines when the rule should be evaluated, according to the syntax in [Condition Structure](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure). Typically, it will include a comparison of the current tier (for example., publish).
   * action - must specify "authenticate", with the intended authenticator referenced.
 
 >[!NOTE]
@@ -275,7 +284,7 @@ In addition, the syntax includes:
     * password - its value must reference a [Cloud Manager secret-type environment variable](/help/operations/config-pipeline.md#secret-env-vars), with **All** selected as the service field.
 * Rules: Lets you declare which of the authenticators should be used, and which resources should be protected. Each rule includes:
   * name - a descriptive string
-  * when - a condition that determines when the rule should be evaluated, according to the syntax in the [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md) article. Typically, it will include a comparison of the publish tier or specific paths. 
+  * when - a condition that determines when the rule should be evaluated, according to the syntax in [Condition Structure](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure). Typically, it will include a comparison of the publish tier or specific paths. 
   * action - must specify "authenticate", with the intended authenticator referenced, which is basic-auth for this scenario
 
 >[!NOTE]

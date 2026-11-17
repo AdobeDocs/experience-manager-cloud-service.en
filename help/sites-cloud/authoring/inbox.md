@@ -6,20 +6,29 @@ exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Your Inbox {#your-inbox}
 
-You can receive notifications from various areas of AEM, including workflows and projects. For example, you might receive notifications about:
+You can receive notifications from various areas of AEM, including workflows and projects. For example, you receive notifications about:
 
 * Tasks:
-  * These can also be created at various points within the AEM UI, for example, under **Projects**.
-  * These can be the product of a workflow **Create Task** or **Create Project Task** step.
+  * These tasks can also be created at various points within the AEM UI, for example, under **Projects**.
+  * A workflow **Create Task** or **Create Project Task** step can create these tasks.
 * Workflows:
   * Work items that represent actions that you need to perform on page content
-    * These are the product of workflow **Participant** steps.
+    * Workflow **Participant** steps create these work items.
   * Failure items, to allow administrators to retry the failed step
 
-You receive these notifications in your own Inbox where you can view and act on them.
+You receive these notifications in your Inbox where you can view and process them.
 
 >[!NOTE]
 >
@@ -31,13 +40,13 @@ You receive these notifications in your own Inbox where you can view and act on 
 
 ## Inbox in the Header {#inbox-in-the-header}
 
-From any of the consoles the current number of items in your inbox is shown in the header. The indicator can also be opened to provide either quick access to the pages requiring action(s) or access to the inbox:
+The header shows the current number of items in your inbox from any console. The indicator can also be opened to provide either direct access to the pages requiring actions or access to the inbox:
 
 ![Inbox overview in header](/help/sites-cloud/authoring/assets/inbox-header.png)
 
 >[!NOTE]
 >
->Certain actions will also be shown in the [card view of the appropriate resource](/help/sites-cloud/authoring/basic-handling.md#card-view).
+>Certain actions also appear in the [card view of the appropriate resource](/help/sites-cloud/authoring/basic-handling.md#card-view).
 
 ## Opening the Inbox {#opening-the-inbox}
 
@@ -46,7 +55,7 @@ To open the AEM notification inbox:
 1. Select the indicator in the toolbar.
 
 1. Select **View all**. The **AEM Inbox** opens. The inbox shows items from workflows, projects and tasks.
-1. The default view is [List View](#inbox-list-view), but you can also switch to [Calendar View](#inbox-calendar-view). This is done with the view selector (toolbar, top right).
+1. The default view is [List View](#inbox-list-view), but you can also switch to [Calendar View](#inbox-calendar-view). This selection is done with the view selector (toolbar, top right).
 
    For both views you can also define [View Settings](#inbox-view-settings). The options available are dependent on the current view.
 
@@ -72,7 +81,7 @@ You can:
 
 * Select a specific view: **Timeline**, **Column**, **List**
 * Specify the tasks to display according to **Schedule**: **All**, **Planned**, **In Progress**, **Due Soon**, **Past Due**
-* Drill down for more detailed information on an item
+* View more detailed information on an item
 * Select a date range to focus the view:
 
 ![Inbox calendar view date range](/help/sites-cloud/authoring/assets/inbox-calendar-range.png)
@@ -108,7 +117,7 @@ For both views (List and Calendar) you can define settings:
 
 >[!NOTE]
 >
->Although it is possible to select more than one item, actions can only be taken on one item at a time.
+>Although it is possible to select more than one item, actions can only be performed on one item at a time.
 
 1. To take an action on an item, select the thumbnail for the appropriate item. Icons for the actions that are applicable to that item are shown in the toolbar:
 
@@ -144,7 +153,7 @@ For both views (List and Calendar) you can define settings:
 
    ![Delegate inbox task](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
 
-   Depending on whether a dialog, wizard, documentation page has been opened you can:
+   Depending on whether a dialog box, wizard, or documentation page has been opened, you can:
 
     * Confirm the appropriate action, for example, re-assign.
     * Cancel the action

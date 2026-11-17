@@ -6,6 +6,23 @@ role: Admin, Developer
 level: Intermediate
 keywords: publish forms, Edge Delivery Services, form configuration, CORS, referrer filter
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Publish Adaptive Forms with Edge Delivery Services
 
@@ -144,21 +161,27 @@ export const submitBaseUrl = 'https://publish-staging-p120-e12.adobeaemcloud.com
 
 **Implementation**: Add CORS configuration to your AEM dispatcher or Apache configuration
 
+>[!IMPORTANT]
+>
+>This step modifies your dispatcher vhost configuration. On AEM as a Cloud Service, the shipped default.vhost file is immutable and enforced by checksum during Cloud Manager pipeline validation; direct edits will fail to deploy. Create a customer-owned copy under available_vhosts/ first, and repoint the enabled_vhosts/ symlink at it, before applying the CORS settings below.
+>
+>Reference: https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/dispatcher/disp-overview#file-structure
+
 ```apache
 # Local Development Environment
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http://localhost(:\d+)?$)#" CORSTrusted=true
 
 # Edge Delivery Services - Preview/Stage Environment  
-SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.page$)#" CORSTrusted=true
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.aem\.page$)#" CORSTrusted=true
 
 # Edge Delivery Services - Production Environment
-SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.aem\.live$)#" CORSTrusted=true
 ```
 
 **Validation Checkpoint:**
 
 - CORS rules applied to dispatcher configuration
-- All required domains (localhost, hlx.page, hlx.live) are included
+- All required domains (localhost, aem.page, aem.live) are included
 - Configuration deployed to target environment
 
 **Reference Documentation:**
@@ -183,8 +206,8 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
   "allow.empty": false,
   "allow.hosts": [],
   "allow.hosts.regexp": [
-    "https://.*\\.hlx\\.page:443",
-    "https://.*\\.hlx\\.live:443"
+    "https://.*\\.aem\\.page:443",
+    "https://.*\\.aem\\.live:443"
   ],
   "filter.methods": [
     "POST",

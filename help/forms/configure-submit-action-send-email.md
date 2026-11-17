@@ -6,8 +6,22 @@ feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery S
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
 role: User, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
-# Configure the Send Email submit action for an Adaptive Form
+# Configure the Send Email submit action for an Adaptive Form  
 
 The **[!UICONTROL Send Email]** Submit Action enables you to send an email to one or more recipients upon successful submission of the form. This Submit Action enables you to create an email that can include form data in a predefined format. For instance, consider the following template where customer name, shipping address, state name, and ZIP code are retrieved from the submitted form data:
 
@@ -54,7 +68,7 @@ To configure a Send Email Submit Action for Foundation Component:
 
     >[!NOTE]
     >
-    > You can also enable **[!UICONTROL Use HTML Template]** to send emails using a custom HTML layout instead of the default template. When this option is enabled, specify the HTML file in the **External Template Path** field. This feature is available through the Early Access program. To request access, send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).  
+    > You can also enable **[!UICONTROL Use HTML Template]** to send emails using a custom HTML layout instead of the default template. When this option is enabled, specify the HTML file in the **External Template Path** field.
 
 1. [Optional] The **[!UICONTROL Send Email]** Submit Action provides the option to include attachments and a [Document of Record (DoR)](generate-document-of-record-core-components.md) with the email. 
 1. Click **[!UICONTROL Done]**.
@@ -79,7 +93,7 @@ To configure the Send Email Submit Action for Core Component:
 
     >[!NOTE]
     >
-    > You can also enable **[!UICONTROL Use HTML Template]** to send emails using a custom HTML layout instead of the default template. When this option is enabled, specify the HTML file in the **External Template Path** field. This feature is available through the Early Access program. To request access, send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).  
+    > You can also enable **[!UICONTROL Use HTML Template]** to send emails using a custom HTML layout instead of the default template. When this option is enabled, specify the HTML file in the **External Template Path** field.
 
 1. [Optional] The **[!UICONTROL Send Email]** Submit Action provides the option to include attachments and a [Document of Record (DoR)](generate-document-of-record-core-components.md) with the email. 
 1. Click **[!UICONTROL Done]**.

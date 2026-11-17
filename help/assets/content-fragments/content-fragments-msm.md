@@ -6,6 +6,18 @@ exl-id: f050b2d1-856c-4cdb-ac74-bc78016f144a
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Reuse Content Fragments using MSM {#reuse-content-fragments-using-msm}
 
@@ -32,21 +44,11 @@ Using MSM for Content Fragments you can:
 
 MSM for Content Fragments, combined with functionality within the Content Fragment Editor, allows you to break, and reinstate inheritance at the field level.
 
-<!-- CQDOC-23473 - feature is beta, activate when GA -->
-
->[!CAUTION]
->
->MSM for Content Fragments is only available when using Content Fragments via the **Assets** console. 
->
->MSM functionality is *not* available when using the **Content Fragments** console.
-
-<!--
 >[!NOTE]
 >
 >This page covers MSM functionality when using the **Assets** console.
 >
 >MSM for Content Fragments is also available when using [the **Content Fragments** console](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md).
--->
 
 ## How To {#how-to}
 

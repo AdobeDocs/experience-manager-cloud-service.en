@@ -4,6 +4,20 @@ description: Create Custom Components for an EDS Form
 feature: Edge Delivery Services
 role: Admin, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Creating Custom Form Component in Adaptive Form Block
@@ -107,9 +121,9 @@ The Custom Component JavaScript API defines how to control the behavior, appeara
 
 The **decorate** function is the entry point for your custom component. It initializes the component, links it with its JSON definition, and allows you to manipulate its HTML structure and behavior.
 
-  >[!NOTE]
-  >
-  > The custom component's JavaScript file must export a default function as decorate:
+>[!NOTE]
+>
+> The custom component's JavaScript file must export a default function as decorate:
 
 #### Function Signature:
 
@@ -252,7 +266,7 @@ export default function decorate(element, fieldJson, container, formId) {
 
   element.querySelectorAll('.radio-wrapper').forEach((radioWrapper) => {
     const image = createOptimizedPicture(
-      'https://main--afb--jalagari.hlx.live/lab/images/card.png',
+      'https://main--afb--jalagari.aem.live/lab/images/card.png',
       'card-image'
     );
     radioWrapper.appendChild(image);
@@ -315,7 +329,7 @@ function createCard(element, enums) {
     }
 
     const image = createOptimizedPicture(
-      enums[index]?.image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png',
+      enums[index]?.image || 'https://main--afb--jalagari.aem.page/lab/images/card.png',
       'card-image'
     );
 
@@ -376,7 +390,7 @@ function createCard(element, enums) {
     radioWrapper.querySelector('input').dataset.index = index;
 
     const image = createOptimizedPicture(
-      enums[index]?.image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png',
+      enums[index]?.image || 'https://main--afb--jalagari.aem.page/lab/images/card.png',
       'card-image'
     );
 

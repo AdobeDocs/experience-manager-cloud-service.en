@@ -4,10 +4,22 @@ description:
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-hide: yes
-hidefromtoc: yes
-
-
+hide: true
+hidefromtoc: 'yes'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
+subfeature_v2:
+  - id: d9eb3b3e-9447-4ed4-bf4a-96c7b245cb27
+    internal-label: Cloud Manager APIs
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # Integrate Edge Delivery Services with Adobe Managed CDN in Cloud Manager {#integrate-adbe-cdn-with-edservices-in-cm}
@@ -34,9 +46,9 @@ Use Cases:
 EDS with CDN integration is beneficial for various scenarios, including e-commerce storefronts and websites requiring high performance and scalability.
 -->
 
-## Edge Delivery Services deployment options in Adobe Managed CDN in Cloud Manager {#deployment-options}
+## Edge Delivery Services deployment options for Adobe Managed CDN in Cloud Manager {#deployment-options}
 
-This topic explains the two ways you can deploy Edge Delivery Services on Adobe Managed CDN in Cloud Manager and, just as importantly, helps you decide which option is best for your use case.
+This topic explains the two ways you can deploy Edge Delivery Services on Adobe Managed CDN in Cloud Manager and helps you decide which option is best for your use case.
 
 Edge Delivery Services can be set up using one of the following two options. Each has different capabilities.
 

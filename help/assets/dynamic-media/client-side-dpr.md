@@ -6,14 +6,22 @@ feature: Device Pixel Ratio,Smart Imaging
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 556710c7-133c-487a-8cd9-009a5912e94c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # About Smart Imaging with client-side Device Pixel Ratio (DPR) {#client-side-dpr}
 
-The current Smart Imaging solution uses user agent strings to determine the type of device (desktop, tablet, mobile, and so on) that is being used.
+The current Smart Imaging solution uses user agent strings to determine the type of device (desktop, tablet, mobile, and so on) being used.
 
 Device detection capabilities&mdash;DPR based on user agent strings&mdash;are inaccurate often, especially for Apple devices. Also, anytime a new device is launched, it must be validated. 
 
-Client-side DPR gives you 100% accurate values and works for any device, whether it is Apple or any other new device that was launched.
+Client-side DPR provides 100% accurate values and works for any device, whether it is Apple or any other new device that has been released.
 
 <!-- See also [About network bandwidth optimization](/help/assets/dynamic-media/imaging-faq.md#network-bandwidth-optimization). -->
 
@@ -40,7 +48,7 @@ Client-side DPR gives you 100% accurate values and works for any device, whether
         aem_dm_dpr_5x.jpg 5x">
     ```
 
-    It is mandatory that you include this DPR image tag code _before_ all static images in your HTML page.
+    It is required that you include this DPR image tag code *before* all static images in your HTML page.
 
 **Client-side rendered apps**
 
@@ -51,14 +59,14 @@ Client-side DPR gives you 100% accurate values and works for any device, whether
     <script type="text/javascript" src="dprImageInjection.js"></script>
     ```
 
-    You can combine both DPR scripts into one to avoid multiple network requests.
+    To avoid multiple network requests, you can combine both DPR scripts into one.
 
     Adobe recommends that you load these scripts _before_ any other scripts in the HTML page.
-    Adobe also recommends that you Bootstrap your app under diff HTML tag rather than a body element. The reason is because `dprImageInjection.js` dynamically injects the image tag at the top of the body section in the HTML page.
+    Adobe also recommends that you initialize your app using a different HTML tag instead of the body element. The reason is that `dprImageInjection.js` dynamically injects the image tag at the top of the body section in the HTML page.
 
 ## JavaScript files download {#client-side-dpr-script}
 
-The following JavaScript files in the download are provided to you as an example reference only. If you intend to use these files in HTML pages, be sure you edit each file's code to fit your own requirements.
+The following JavaScript files in the download are provided to you as an example reference only. If you intend to use these files in HTML pages, ensure you edit each file's code to meet your own requirements.
 
 * `dprImageInjection.js`
 * `srvinit.js`

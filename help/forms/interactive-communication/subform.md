@@ -6,12 +6,19 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 60809974-1a39-4e69-9aa5-df9936a26362
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Subform Component in Interactive Communication Editor 
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 ## 1. Introduction 
 
@@ -101,3 +108,10 @@ Subforms can also be used as containers for drag-and-drop design alignment in bo
 - Apply conditional visibility rules to optimize user experience in complex forms. 
 
 The **Subform** component in the Interactive Communication editor provides a powerful way to structure and control complex form layouts. Whether organizing input fields, managing dynamic content, or enabling modular design, subforms enhance both usability and maintainability across document templates.
+
+## See also
+
+- [Handle Content Overflow in Interactive Communication Editor](/help/forms/interactive-communication/handle-content-overflow.md)
+- [Configure Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/configure-data-binding.md)
+- [Use the Rule Editor in Interactive Communication Editor](/help/forms/interactive-communication/use-the-rule-editor.md)
+

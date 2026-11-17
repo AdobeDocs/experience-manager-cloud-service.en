@@ -4,6 +4,22 @@ description: Learn about AEM Content Fragment Delivery with OpenAPI
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 
 # AEM Content Fragment Delivery with OpenAPI {#aem-content-fragment-delivery-with-openapi}
@@ -11,7 +27,6 @@ exl-id: b298db37-1033-4849-bc12-7db29fb77777
 In Adobe Experience Manager (AEM) as a Cloud Service, the AEM OpenAPI for Content Fragment Delivery:
 
 * is an OpenAPI that is optimized for live delivery of AEM Content Fragments in JSON format
-* offers a modern CDN integration that allows active content invalidation 
 * focuses on content delivery (performance, scalability, CDN integration, optimized JSON control and output) 
 * includes the ability to hydrate JSON for referenced fragments and assets
 
@@ -52,8 +67,6 @@ Responses are then cached, based on predefined caching headers (cannot be config
 * Stale content can be served, by error, for up to 1 day 
   * `stale-on-error`=`86400`
 
-Content Fragment Delivery with OpenAPI supports active CDN cache invalidation. This means that whenever content is updated, or published, the corresponding JSON OpenAPI responses are automatically invalidated, via a soft purge request to Fastly. This allows you to see changes reflected in the JSON output, before the actual CDN cache age (`s-maxage`) is reached.
-
 ## Availability {#availability}
 
 The Content Fragment Delivery with OpenAPI is available on Preview and Publish tiers. The OpenAPI delivers Content Fragments in JSON format, for both preview and live delivery.
@@ -83,6 +96,27 @@ Support for authenticated requests can be implemented with the [AEM CDN Edge key
 >[!NOTE]
 >
 >Authorization based on the repository-specific ACLs is currently not supported.
+
+## Deliver a Composite item {#deliver-a-composite-item}
+
+You can deliver your Composite items with the following APIs:
+
+* From the [Management OpenAPI](/help/headless/content-fragment-openapis.md#deliver-a-composite-item) (Content Fragments Management API)
+
+* [AEM GraphQL API for use with Content Fragments](/help/headless/graphql-api/content-fragments.md#deliver-a-composite-item)
+
+* the REST Delivery API. There are two paths:
+
+  * pre-baked at publish time
+  * in-process delivery from AEM
+
+* For OpenAPI responses containing hydrated referenced fragments, composites can reduce reference and fragment-metadata overhead. Payload size depends on the content structure and reference-inclusion options. Embedded composite content is included independently of reference depth, so shallow responses can be larger than equivalent reference-based responses.
+
+>[!NOTE]
+>
+>If the model used inside a composite field is not published, the delivery API will skip that composite content (with a warn log on the server). This is similar to the existing behavior for fragments missing a published model. 
+>
+>Make sure customer publish pipelines include all models that compositions reference.
 
 <!-- 
 ## Limitations {#limitations}

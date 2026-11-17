@@ -4,6 +4,20 @@ description: Learn how Specialized Testing Environments in Cloud Manager provide
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
+subfeature_v2:
+  - id: d9eb3b3e-9447-4ed4-bf4a-96c7b245cb27
+    internal-label: Cloud Manager APIs
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Add a Specialized Testing Environment{#add-special-test-enviro}
 
@@ -13,12 +27,12 @@ exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
 
 >[!NOTE]
 >
->Specialized Test Environments are now available for purchase. Contact your Adobe representative to place an order.
+>Specialized Test Environments are now available for purchase. To place an order, contact your Adobe representative.
 
 
 The Specialized Testing Environment is a new type of Cloud Manager environment that you can create. It is designed to support advanced use cases such as User Acceptance Testing (UAT) and performance validation. Unlike traditional Development, Rapid Development, or Staging environments, Specialized Testing environments operate outside of the production deployment pipeline. As such, they offer you greater flexibility while maintaining strict isolation to prevent interference with production workflows. 
 
-A Specialized Testing Environment is built to mirror the size, scalability, and configurations of a typical Staging environment. This approach ensures that tests performed in the Specialized Testing Environment can yield realistic insights into how code and content perform in production-like conditions. The environment also supports direct content copying from Production or Stage. It also maintains parity with Development environments in terms of deployment workflows, access controls, and network configurations.
+A Specialized Testing Environment is built to mirror the size, scalability, and configurations of a typical Staging environment. This approach ensures that tests performed in the Specialized Testing Environment can provide accurate insights into how code and content perform in production-like conditions. The environment also supports direct content copying from Production or Stage. It also maintains consistency with Development environments in terms of deployment workflows, access controls, and network configurations.
 
 ## Key features and configurations of a Specialized Testing Environment {#key-features}
 
@@ -51,7 +65,7 @@ To add or edit an environment, a user must be a member of the **Business Owner**
 1. Do one of the following: 
 
    * On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, on the **Environments** card, click **Add Environment**.
-      If the **Add Environment** option is dimmed (disabled), it may be due to a lack of permissions or dependent on the licensed resources. 
+      If the **Add Environment** option is dimmed (disabled), it is due to a lack of permissions or is dependent on licensed resources. 
 
       ![Environments card](assets/no-environments.png)
 

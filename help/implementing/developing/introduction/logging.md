@@ -4,6 +4,17 @@ description: Learn how to use Logging for AEM as a Cloud Service to configure gl
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ffa4a726-ff13-52a1-83a8-2872ed44316b
+    internal-label: Log Files
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Logging for AEM as a Cloud Service {#logging-for-aem-as-a-cloud-service}
 
@@ -523,6 +534,8 @@ Define DISP_LOG_LEVEL debug
 
 AEM as a Cloud Service provides access to CDN logs, which are useful for use cases including cache hit ratio optimization. The CDN log format cannot be customized and there is no concept of setting it to different modes such as info, warn, or error.
 
+If forwarding CDN logs to a destination that restricts inbound connections by source IP, see [CDN egress IP addresses](/help/implementing/dispatcher/cdn.md#cdn-egress-ips) for important limitations.
+
  **Example**
 
  ```
@@ -568,6 +581,9 @@ AEM as a Cloud Service provides access to CDN logs, which are useful for use cas
  | *rules*  | The names of any matching [traffic filter rules](/help/security/traffic-filter-rules-including-waf.md) and WAF flags, also indicating if the match resulted in a block. Empty if no rules matched.  |
 
  The CDN logs can be extended with your own properties using [request/response transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#logproperty).
+
+ For the format of CDN log entries sent to a logging destination, see [CDN log entries by logging destination](#cdn-log-destinations).
+
 
 ## How to Access Logs {#how-to-access-logs}
 
@@ -628,14 +644,66 @@ Depending on the traffic and the amount of log statement written by Debug, this 
 
 While logs can be downloaded from Cloud Manager, some organizations find it benficial to forward those logs to a preferred logging destination. AEM supports streaming logs to the following destinations:
 
+* Amazon S3
 * Azure Blob Storage
 * Datadog
-* HTTPD
+* Dynatrace
 * Elasticsearch (and OpenSearch)
+* HTTPS
+* New Relic
 * Splunk
+* Sumo Logic
 
 Refer to the [Log Forwarding article](/help/implementing/developing/introduction/log-forwarding.md) for details on how to configure this feature.
 
 >[!NOTE]
 >
 >Log forwarding for sandbox program environments is not supported.
+
+### CDN log entries by logging destination {#cdn-log-destinations}
+
+When CDN logs are forwarded with [Log Forwarding](/help/implementing/developing/introduction/log-forwarding.md), each entry contains the fields described in [CDN Log](#cdn-log), plus the `aem_env_id`, `aem_env_type`, `aem_program_id`, and `aem_tier` properties described under [Log Entry Formats](/help/implementing/developing/introduction/log-forwarding.md#log-formats). Depending on the logging destination, the following properties also differ:
+
+| Logging destination | `timestamp` | Additional properties |
+|---|---|---|
+| Amazon S3 (beta) | ISO 8601 string, for example `"2026-03-04T10:00:01+0000"` | None. Entries are identical to Azure Blob Storage. |
+| Azure Blob Storage | ISO 8601 string | None |
+| Datadog | ISO 8601 string | `ddsource` set to `aemcdn`, and the Datadog `service` and `ddtags` |
+| Dynatrace (beta) | ISO 8601 string | `source` set to `aemcdn` |
+| Elasticsearch and OpenSearch | ISO 8601 string | None |
+| HTTPS | ISO 8601 string | `sourcetype` set to `aemcdn` |
+| New Relic (beta) | **Number:** milliseconds since the Unix epoch, for example `1685092801123` | `source` set to `aemcdn` |
+| Splunk | ISO 8601 string, inside the Splunk `event` | Sent as a Splunk HTTP Event Collector event: `sourcetype` (`aemcdn` by default), `source` set to `fastly`, and `index`, with the CDN log properties inside `event` |
+| Sumo Logic | ISO 8601 string | `sourcetype` set to `aemcdn` |
+
+For Dynatrace specifics, see [Finding CDN logs in Dynatrace (beta)](/help/implementing/developing/introduction/log-forwarding.md#dynatrace-cdn). For the Amazon S3 file layout, see [Amazon S3 CDN logs (beta)](/help/implementing/developing/introduction/log-forwarding.md#amazons3-cdn).
+
+Example of a forwarded CDN log entry, as written to Amazon S3 or Azure Blob Storage:
+
+```json
+{
+"timestamp": "2026-10-16T16:05:02+0000",
+"ttfb": 38,
+"ttlb": 39,
+"cli_ip": "192.0.2.10",
+"cli_country": "GB",
+"cli_region": "GB-LND",
+"rid": "4866e0ac-51ce-46e8-840a-cb53158c39e8",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+"host": "example.com",
+"url": "/content/hello.html",
+"method": "GET",
+"res_ctype": "text/html;charset=utf-8",
+"cache": "MISS",
+"debug": "",
+"res_age": "",
+"status": 200,
+"pop": "LHR",
+"rules": "",
+"alerts": "",
+"aem_program_id": "12314",
+"aem_env_id": "1242",
+"aem_tier": "publish",
+"aem_env_type": "prod"
+}
+```

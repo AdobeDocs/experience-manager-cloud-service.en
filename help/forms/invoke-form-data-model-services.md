@@ -6,9 +6,14 @@ topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 feature: Adaptive Forms, Form Data Model
 role: User
-hide: yes
-hidefromtoc: yes
+hide: true
 exl-id: 56e5cabd-a509-4ef9-9fea-3cc610f8dee1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # API to invoke Form Data Model (FDM) service from Adaptive Forms {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 

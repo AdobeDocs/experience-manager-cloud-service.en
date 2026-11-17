@@ -5,6 +5,20 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
+subfeature_v2:
+  - id: d9eb3b3e-9447-4ed4-bf4a-96c7b245cb27
+    internal-label: Cloud Manager APIs
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # CDN Performance dashboard {#cdn-performance}
 
@@ -20,13 +34,13 @@ Every Cloud Manager program has a CDN performance dashboard. This dashboard pres
 
 The CDN dashboard is available on the overview page of every program.
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+{{sign-in-to-cloud-manager}}
 
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, click the program whose CDN dashboard you want to view.
 
    ![My programs page](assets/my-programs.png)
 
-1. On the **Program Overview** page of your program, scroll down below the **Environments** and **Pipelines** cards to see the **Performance** card.
+1. To see the **Performance** card, scroll down below the **Environments** and **Pipelines** cards on the **Program Overview** page of your program.
 
    ![Performance](assets/cdn-performance-overview.png)
 
@@ -46,11 +60,11 @@ For suggestions on how to improve your CDN performance, select the **Recommendat
 
 ![CDN recommendations](assets/cdn-performance-recommendations.png)
 
-Click the chevron next to any recommendation in the list to view details about what steps to take to improve and the cause of the issue.
+Click the chevron next to any recommendation in the list to view details about the required improvement steps and the cause of the issue.
 
 ## Cache hit definition {#cache-hit}
 
-The cache hit ratio is a measurement of how many content requests a cache can fill successfully, compared to how many requests it receives. The higher a cache-hit ratio, the better performing a CDN is.
+The cache hit ratio is a measurement of how many content requests a cache can fill successfully, compared to how many requests it receives. A higher cache hit ratio indicates better CDN performance.
 
 >[!TIP]
 >
@@ -62,11 +76,12 @@ Cache Hit Ratio = Cache Hits / (Hits + Misses + Passes + Other)
 
 * **Hit** - Data is requested from the cache, and it is found.
 * **Miss** - Data is requested from the cache, and it is not found.
-* **Pass** - Data is requested from the cache, and it is set not to cache this data in any case.
+* **Pass** - Data is requested from the cache, and it is set not to cache this data.
 * **Other** - All data requests from the cache that do not match any other case.
 
-Cache metrics are updated every 24 hours.
+Cache metrics are refreshed every 24 hours.
 
 >[!TIP]
 >
 >For more details on how Cloud Manager and the CDN interact with the Dispatcher, see [Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md).
+

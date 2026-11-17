@@ -4,14 +4,23 @@ description: Learn how to integrate the AEM Forms Associate UI with your applica
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms."
 exl-id: f946ccea-86d0-4086-8208-9583b8206244
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Integrate Associate UI in Your Application
 
-<span> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.</span>
 
-This article explains how to integrate the Associate UI with your application, enabling customer-facing professionals such as field associates and service agents to generate personalized Interactive Communications in real-time on Publish instances. 
+This article explains how to integrate the Associate UI with your application, enabling customer-facing professionals such as field associates and service representatives to generate personalized Interactive Communications in real-time on Publish instances. 
 
 ## Prerequisites
 
@@ -517,5 +526,4 @@ When implementing the Associate UI integration, follow these best practices:
 - [Associate UI in Interactive Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [Enable and configure Associate UI for Interactive Communications](/help/forms/interactive-communication/enable-configure-associate-ui.md)
 - [Submission workflow for Associate UI — IC Generate PDF Output](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
-- [Interactive Communications on Cloud](/help/forms/early-access-ea-features.md#interactive-communications-on-cloud)
-- [Early Access Features](/help/forms/early-access-ea-features.md)
+

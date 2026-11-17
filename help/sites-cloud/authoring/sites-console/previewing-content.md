@@ -6,6 +6,15 @@ exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 
 # Previewing Content {#previewing-content}
@@ -49,7 +58,7 @@ https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.htm
 
 See [Managing Environments](/help/implementing/cloud-manager/manage-environments.md) for more information on how retrieve the URLs for your environments.
 
-Content may also be published to preview by using a [publish content tree workflow](/help/operations/replication.md#publish-content-tree-workflow) with the `agentId` parameter set to `preview` or by using the [replication API](/help/operations/replication.md#replication-api) with an `AgentFilter` configured for preview.
+Content may also be published to preview by using a [publish content tree workflow](/help/operations/tree-replication-workflows.md#publish-content-tree-workflow) with the `agentId` parameter set to `preview` or by using the [replication API](/help/operations/replication.md#replication-api) with an `AgentFilter` configured for preview.
 
 ## Unpublishing Content from Preview {#unpublishing-content-from-preview}
 

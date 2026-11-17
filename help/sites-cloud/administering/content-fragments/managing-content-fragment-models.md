@@ -6,6 +6,20 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Managing Content Fragment Models {#managing-content-fragment-models}
 
@@ -28,6 +42,10 @@ Content Fragment Models in Adobe Experience Manager (AEM) as a Cloud Service def
 >
 >Content Fragments are stored as **Assets**. Content Fragment Models are primarily managed from the **Content Fragments** console, but can also be managed from the [Assets](/help/assets/content-fragments/content-fragments-managing.md) console and the option [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) that is available from **Tools** - **General**.
 
+>[!CAUTION]
+>
+>Take care with your filter settings when [deploying your Content Fragment Models and Persisted Queries in Content Packages](/help/headless/deployment/content-packages.md).
+
 ## How to work with Content Fragment Models {#how-to-work-with-content-fragment-models}
 
 As a very quick overview, to work with Content Fragment Models you:
@@ -47,7 +65,7 @@ You can use the far left panel of the [Content Fragments console](/help/sites-cl
 
 This will open the view for Content Fragment Models:
 
-![Content Fragments console - Managing Content Fragment Models](assets/cf-managing-content-fragment-models.png)
+![Content Fragments console - Managing Content Fragment Models](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models.png)
 
 Here you can see that there are three main areas:
 
@@ -124,7 +142,7 @@ The main/right panel (table view) of the console provides a range of information
 
 When you select a specific model, the properties of that model are shown (as defined when [creating the model](#creating-a-content-fragment-model)). If the model is not **Locked**, then some items can be updated. You can also use the information icon (next to the model **Title**) to open and close this information panel.
 
-![Content Fragments console - Information for a selected Content Fragment Model](assets/cf-managing-content-fragment-models-selected.png)
+![Content Fragments console - Information for a selected Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-selected.png)
 
 * **[Path](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)**
 * **[Status](#enabling-a-content-fragment-model)**
@@ -175,11 +193,11 @@ Selecting a single model also shows the [model properties](#properties) in the r
 
 As with other consoles you can configure the columns that are visible, and available for action:
 
-![Content Fragments console - column configuration](assets/cf-managing-console-column-icon.png)
+![Content Fragments console - column configuration](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-column-icon.png)
 
 This will present a list of columns that you can hide or show:
 
-![Content Fragments console - column configuration](assets/cf-managing-content-fragment-models-column-selection.png)
+![Content Fragments console - column configuration](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-column-selection.png)
 
 ## Filter Content Fragment Models {#filter-content-fragment-models}
 
@@ -196,7 +214,7 @@ The Filter panel offers:
 
  Once selected, the **Filtering by** options are shown (at the top of the main panel). They can be deselected from there. For example:
 
-![Content Fragments console - Filtering Content Fragment Models](assets/cf-managing-content-fragment-models-filter.png)
+![Content Fragments console - Filtering Content Fragment Models](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-filter.png)
 
 ### Fast Filtering {#fast-filtering}
 
@@ -243,7 +261,7 @@ For example, select **Enabled** in the **Status** column. Once selected, this wi
     >
     >See [Content Fragment Model - Properties](#model-properties) for full details.
 
-   ![Title and description](assets/cf-managing-content-fragment-models-create.png)
+   ![Title and description](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-create.png)
 
 1. Use **Create** to save the empty model, or **Create and open**.
 
@@ -269,7 +287,7 @@ A model can also be disabled so that:
 * The model is no longer available as a basis for creating *new* Content Fragments.
 * However:
   * The GraphQL schema keeps being generated and is still queryable (to avoid impacting JSON API).
-  * Any Content Fragments based of the model can still be queried and returned from the GraphQL endpoint.
+  * Any Content Fragments based on the model can still be queried and returned from the GraphQL endpoint.
 * The model cannot be referenced anymore, but existing references are kept untouched, and can still be queried and returned from the GraphQL endpoint.
 
 To disable a Model that is flagged as **Enabled**, you use the **Disable** option from:
@@ -302,7 +320,7 @@ To configure the **Policies** for **Allowed Content Fragment Models**:
 
      Multiple models can be allowed.
 
-   ![Content Fragment Model Policy](assets/cf-cfmodels-policy-assets-folder.png)
+   ![Content Fragment Model Policy](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-policy-assets-folder.png)
 
 1. **Save** any changes.
 
@@ -330,6 +348,12 @@ To delete a Content Fragment model:
    >If the model is referenced, a warning is given so that you can take appropriate action.
 
 ## Publishing a Content Fragment Model {#publishing-a-content-fragment-model}
+
+>[!CAUTION]
+>
+>If the Content Fragment Model contains Composite Data Fields, then the Content Fragment Models defining the structure of those Composite fields must also be published.
+>
+>See also [AEM Content Fragment Delivery with OpenAPI - Deliver a Composite Item](/help/headless/aem-content-fragment-delivery-with-openapi.md#deliver-a-composite-item)
 
 Content Fragment Models need to be published when/before any dependent Content Fragments are published.
 
@@ -419,10 +443,10 @@ You can manage **Locked** models from either the console, or the model editor:
 
   * If you select **Edit**, you can edit and save your updates: 
   
-    ![Edit - locked Content Fragment Model](assets/cf-cfmodels-editor-locked-edit.png)
+    ![Edit - locked Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-editor-locked-edit.png)
 
     >[!NOTE]
     >
-    >There may still a warning at the top, but that is when the model is already in use by existing Content Fragments. 
+    >There may still be a warning at the top, but that is when the model is already in use by existing Content Fragments. 
 
   * **Cancel** returns you to the console.

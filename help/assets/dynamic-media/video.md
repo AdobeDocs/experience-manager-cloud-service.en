@@ -6,6 +6,12 @@ feature: Video Profiles,Best Practices
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Video {#video}
 
@@ -514,7 +520,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
  -->
 
-## About multiple caption and audio track support for videos in Dynamic Media{#about-msma}
+## About multiple caption and audio track support for videos in Dynamic Media
 
 With multiple caption and audio track capability in Dynamic Media, you can easily add multiple audio tracks. You can also add multiple caption files using either your own `.vtt` (Video Text Track) files or AI-generated caption files. AI-generated captions in Dynamic Media are designed to enhance video accessibility and engagement by automatically generating accurate and synchronized subtitles. This technology uses advanced AI algorithms to transcribe spoken content into text, which is then displayed as captions on the video. Some key features of this technology include the following:
 
@@ -539,7 +545,7 @@ Some of the use cases to consider for adding multiple captions and audio tracks 
 
 All [video formats supported in Dynamic Media](/help/assets/file-format-support.md) and all Dynamic Media video viewers - except the Dynamic Media *Video_360* viewer - are supported for use with multiple captions and audio tracks.
 
-### Add multiple captions and audio tracks to your video {#add-msma}
+### Add multiple captions and audio tracks to your video
 
 Before you add multiple caption and audio tracks to your video, be sure you already have the following in-place:
 
@@ -931,7 +937,7 @@ See [Serving static (non-image) contents](https://experienceleague.adobe.com/en/
 
    There are many websites that offer both free and premium tools and services that you can use to author WebVTT caption files outside Dynamic Media.
 
-  Follow the onscreen instructions from a site to author and save your WebVTT file. When you have finished, copy the caption file contents and paste it into a plain text editor and save it with a VTT filename extension.
+   Follow the onscreen instructions from a site to author and save your WebVTT file. When you have finished, copy the caption file contents and paste it into a plain text editor and save it with a VTT filename extension.
 
    >[!NOTE]
    >
@@ -1561,7 +1567,7 @@ Enabling any of the above three capabilities, enables all of them. So, if you on
 
 
 <!-- 
-## About multiple caption and audio track support for videos in Dynamic Media{#about-msma}
+## About multiple caption and audio track support for videos in Dynamic Media
 
 With multiple caption and audio track capability in Dynamic Media, you can easily add multiple captions and audio tracks to a primary video. This capability means that your videos are accessible to a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the captions and audio tracks from a single tab in the user interface.
 
@@ -1580,7 +1586,7 @@ All [video formats supported in Dynamic Media](/help/assets/file-format-support.
 
 Multi-caption and multi-audio track capability is available for your Dynamic Media account by way of a feature toggle that must be enabled (turned on) by Adobe Customer Support.
 
-### Add multiple captions and audio tracks to your video {#add-msma}
+### Add multiple captions and audio tracks to your video
 
 Before you add multiple caption and audio tracks to your video, be sure you already have the following in-place:
 

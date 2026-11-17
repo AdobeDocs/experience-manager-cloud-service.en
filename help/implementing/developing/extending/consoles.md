@@ -4,6 +4,14 @@ description: Learn about the different options that AEM provides to customize th
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
 feature: Developing
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Customizing Consoles {#customizing-consoles}
 
@@ -103,7 +111,7 @@ To customize the columns in the list view:
 
 1. Add your new columns or remove existing ones.
 
-If you want to insert additional data, you need to write a [PageInfoProvider](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) with a `pageInfoProviderType` property.
+If you want to insert additional data, you need to write a [PageInfoProvider](https://experienceleague.adobe.com/en/tools/aem-api-documentation/cloud-service/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) with a `pageInfoProviderType` property.
 
 >[!NOTE]
 >

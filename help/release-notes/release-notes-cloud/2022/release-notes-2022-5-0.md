@@ -4,6 +4,18 @@ description: Release Notes for 2022.5.0 release of [!DNL Adobe Experience Manage
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
 feature: Release Information
 role: Admin
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # 2022.5.0 Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -75,9 +87,9 @@ Experience Manager Assets uses Adobe AI capabilities to now [distinguish between
 
 ### What is New {#what-is-new-foundation}
 
-*  The "Add tree" option under the replication agent admin screen's **Distribute tab**, which was previously announced as deprecated, was removed June 20, 2022 or soon thereafter. Packages with a tree hierarchy of content should instead be replicated using [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/replication.md#publish-content-tree-workflow).
+*  The "Add tree" option under the replication agent admin screen's **Distribute tab**, which was previously announced as deprecated, was removed June 20, 2022 or soon thereafter. Packages with a tree hierarchy of content should instead be replicated using [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/tree-replication-workflows.md#publish-content-tree-workflow).
 
-*  Using the replication agent admin screen or replication API for distributing content packages larger than 10 MB (nodes with properties, not including binaries) is deprecated and enforced on September 12, 2022 or soon thereafter. Instead, [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/replication.md#publish-content-tree-workflow) must be used to replicate these large content packages. In July, a warning message will appear in the replication agent admin screen's **Distribute tab** if attempting to replicate these large content packages and also in the AEM error log whenever the replication API is used to replicate these large content packages. In September, warnings were replaced by errors. Adjust your processes accordingly.
+*  Using the replication agent admin screen or replication API for distributing content packages larger than 10 MB (nodes with properties, not including binaries) is deprecated and enforced on September 12, 2022 or soon thereafter. Instead, [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/tree-replication-workflows.md#publish-content-tree-workflow) must be used to replicate these large content packages. In July, a warning message will appear in the replication agent admin screen's **Distribute tab** if attempting to replicate these large content packages and also in the AEM error log whenever the replication API is used to replicate these large content packages. In September, warnings were replaced by errors. Adjust your processes accordingly.
 
 ### New features available in [!DNL Experience Manager] prerelease channel {#prerelease-features-foundation}
 

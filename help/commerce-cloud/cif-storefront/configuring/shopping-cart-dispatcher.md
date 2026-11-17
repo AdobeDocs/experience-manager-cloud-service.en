@@ -5,6 +5,12 @@ feature: Commerce Integration Framework
 role: Admin
 exl-id: 2ce424a7-6bf4-4482-b5cb-5a7998a294e9
 index: false
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 
 # Shopping Cart and Dispatcher Setup

@@ -3,19 +3,39 @@ title: About Experience Hub
 description: Learn about the Adobe Experience Hub page.
 landing-page-description: Learn about Experience Hub, a centralized starting point for accessing all AEM capabilities.
 solution: Experience Manager
-feature: Authoring, AI Assistant, Central Interface Components, Getting Started, Onboarding, Programs, Workflows 
+feature: Authoring, AI Assistant, Central Interface Components, Getting Started, Onboarding, Programs, Workflows
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Developer, User
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: bf7fca06-df97-4229-884f-76afcfade5ad
+    internal-label: AI Assistant
+  - id: f551224f-631f-46f8-b8fc-67744f995ba0
+    internal-label: Onboarding
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # About Experience Hub {#aem-experience-hub}
 
-Experience Hub introduces a centralized starting point for managing content, assets, and sites within Adobe Experience Manager. Designed to deliver a personalized experience, Experience Hub lets you navigate the AEM ecosystem seamlessly according to your roles and goals. Acting as a guide, it provides key insights and recommended actions to help you achieve your objectives efficiently. With a clear, persona-driven layout, Experience Hub ensures quick access to essential tools, supporting a streamlined and effective experience across all AEM features.
+Experience Hub introduces a centralized starting point for managing content, assets, and sites within Adobe Experience Manager. Designed to deliver a personalized experience, Experience Hub lets you navigate the AEM ecosystem seamlessly according to your roles and goals. It provides key insights and recommended actions to help you achieve your objectives efficiently. With a clear, persona-driven layout, Experience Hub ensures quick access to essential tools, supporting a streamlined and effective experience across all AEM features.
 
 See also [AEM Experience Hub](https://developer.adobe.com/uix/docs/services/aem-experience-hub/).
 
-Watch a quick tour of the reimagined AEM Experience Hub workspace (2 minutes, 40 seconds).  
+View an overview of the AEM Experience Hub workspace (2 minutes, 40 seconds).  
 
 >[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
 
@@ -23,7 +43,7 @@ Watch a quick tour of the reimagined AEM Experience Hub workspace (2 minutes, 40
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community.
 -->
 
-## Experience Hub up close {#aem-experience-hub-about}
+## Experience Hub overview {#aem-experience-hub-about}
 
 1. To get started, click [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home) to open its home page.
 
@@ -42,14 +62,14 @@ The Adobe Experience Manager page has been refreshed with enhanced navigation an
 * Cloud Manager
 * Cloud Acceleration Manager
 * Software Distribution
-* Extension Manager
+* Adobe Extension Manager
 * Brand Portal
 
 >[!IMPORTANT]
 >
 >The widgets, tools, and artifacts shown depend on the user persona, entitlements, and AEM deployment type (AEM as a Cloud Service or Managed Services 6.5/6.5 LTS).
 
-These solutions are now moved to the main navigation under **Tools** or **Services**. New navigation elements give quick access to AEM features tied to your enabled solutions. Jump to Assets, Sites, Forms, Content Fragments, Launches, and more.
+These solutions have now moved to the main navigation under **Tools** or **Services**. New navigation elements give quick access to AEM features tied to your enabled solutions. Jump to Assets, Sites, Forms, Content Fragments, Launches, and more.
 
 ![Experience Hub environments](/help/implementing/cloud-manager/assets/experience-hub-author-environments.png)
 
@@ -61,13 +81,13 @@ Serving as the central hub for Adobe Experience Manager, the Experience Hub page
 
 ![Experience Hub customized](/help/implementing/cloud-manager/assets/experience-hub-custom.png)
 
-Widgets can also be resized and repositioned on the page to suit your needs and preferences better.
+Widgets can also be resized and repositioned on the page to accommodate your needs and preferences.
 
 ![Experience Hub widgets](/help/implementing/cloud-manager/assets/experience-hub-widgets.png)
 
-The **Authoring Environments** section lists all AEM environments that you can access and include shortcuts to their solutions and pages. You can pin specific environments to keep them at the top of the list.
+The **Authoring Environments** section lists all AEM environments that you can access and includes shortcuts to their solutions and pages. To keep specific environments at the top of the list, pin them.
 
-The **Recents** section, seen in the image below, lists pages you recently visited in AEM. Depending on your tenant's licensing, the widget may include items such as Program, Pipeline Execution, Assets, Page Editor, and Form Editor.
+The **Recents** section, seen in the image below, lists pages you recently visited in AEM. Depending on your tenant's licensing, the widget includes items such as Program, Pipeline Execution, and various editors.
 
 **Quick shortcuts** near the upper-left corner of the page provide a configurable list of shortcuts to help you start daily tasks. The list is customizable, and each action targets the selected AEM environment.
 
@@ -81,6 +101,12 @@ If no production AEM Cloud Service or Managed Services environments exist, the s
 
 ## Frequently Asked Questions (FAQ) {#faq}
 
++++**How do I configure Customer Managed Keys from Experience Hub?**
+
+  If CMK is enabled for your program, Experience Hub provides a direct link to the CMK configuration page. Select **Configure CMK** from your program card or from Quick shortcuts. For full configuration steps, see [Customer Managed Keys Setup for AEM as a Cloud Service](/help/security/customer-managed-keys.md).
+  
++++
+
 +++**What is the main purpose of Adobe Experience Hub within Adobe Experience Manager?**
 
   Adobe Experience Hub serves as a centralized starting point for managing content, assets, and sites within Adobe Experience Manager, delivering a personalized experience based on user roles and goals.
@@ -89,7 +115,7 @@ If no production AEM Cloud Service or Managed Services environments exist, the s
 
 +++**How does Experience Hub adapt to different user roles?**
 
-  Experience Hub shows role-based views and quick actions for authors, asset librarians, administrators, and IT. Each role gets fast access to the tools and capabilities that it needs.
+  Experience Hub shows role-based views and quick actions for authors, asset librarians, administrators, and IT personnel. Each role gets fast access to the tools and capabilities that it needs.
 
 +++
 
@@ -107,7 +133,7 @@ If no production AEM Cloud Service or Managed Services environments exist, the s
 
 +++**What types of actions can be performed quickly using Experience Hub?**
 
-  Experience Hub offers one-click shortcuts for important tasks such as creating content, uploading assets, or managing team access, tailored to the user's role.
+  Experience Hub offers one-click shortcuts for common tasks, tailored to the user's role.
 
 +++
 
@@ -143,4 +169,4 @@ If no production AEM Cloud Service or Managed Services environments exist, the s
 
 ## AI Assistant in AEM
 
-For customers who have [completed pre-requisite criteria](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), the AI Assistant in AEM is available to users of their organization. See [AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+For customers who have [completed prerequisite criteria](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), the AI Assistant in AEM is available to users of their organization. See [AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).

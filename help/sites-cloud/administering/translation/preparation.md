@@ -6,6 +6,18 @@ role: Admin
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
 solution: Experience Manager Sites
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Preparing Content for Translation {#preparing-content-for-translation}
 
@@ -48,7 +60,8 @@ The [WKND tutorial site](/help/implementing/developing/introduction/develop-wknd
 
 The language copy for which you originally author site content is the language master. The language master is the source that is translated into other languages.
 
-Each language branch of a site is called a language copy. The root page of a language copy, known as the language root, identifies the language of the content in the language copy. For example, `/content/wknd/fr` is the language root for the French language copy. Language copies must use a [correctly configured language root](preparation.md#creating-a-language-root) so that the correct language is targeted when translations of a source site are performed.
+Each language branch of a site is called a language copy. The root page of a language copy is called the language root, and it identifies the language of the content in that branch. For example, `/content/wknd/language-masters/fr` is the language root of the French language copy of the WKND site. The language copy that you originally author your content in is called the language master. It is the source that is translated into the other language copies.
+Each language copy must use a [correctly configured language root](preparation.md#creating-a-language-root) so that the correct language is targeted when a source site is translated.
 
 Use the following steps to prepare your site for translation:
 
@@ -66,6 +79,14 @@ To create the language root you create a page and use an ISO language code as th
 
 * `<language-code>` - The supported language code is a two-letter code as defined by ISO-639-1, for example, `en`.
 * `<language-code>_<country-code>` or `<language-code>-<country-code>` - The supported country code is a lower-case or upper-case two-letter code as defined by ISO 3166, for example, `en_US`, `en_us`, `en_GB`, `en-gb`.
+
+>[!NOTE]
+>
+>When AEM runs on Java 17 or Java 21, the default Java locale mapping uses `he` for Hebrew, `yi` for Yiddish, and `id` for Indonesian instead of the legacy codes `iw`, `ji`, and `in`. Existing i18n dictionaries that use the legacy codes might not be found.
+>
+>Use the current codes for language roots and i18n dictionaries: replace `iw` with `he`, `ji` with `yi`, and `in` with `id`.
+>
+>If you need to retain the legacy codes as a compatibility workaround, add the environment variable `JAVA_LEGACY_ISO_CODES` in Cloud Manager and set its value to `true`. See [Add an environment variable](/help/implementing/cloud-manager/environment-variables.md#add-variables).
 
 You can use either format, according to the structure that you have chosen for your global site. For example, the root page of the French language copy of the WKND site has `fr` as the **Name** property. The **Name** property is used as the name of the page node in the repository, and therefore determines the path of the page (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
@@ -130,13 +151,13 @@ Language roots can also be grouped under nodes, for example, by region, while st
 
 >[!NOTE]
 >
->Only one level is allowed. For example, the following will not allow the `es` page to resolve to a language copy:
+>Only one level is allowed. For example, the following does not allow the `es` page to resolve to a language copy:
 >
 >* `/content/wknd/language-masters/en`
 >* `/content/wknd/language-masters/americas/central-america/es`
 >
-> This `es` language copy will not be detected as it is 2 levels (`americas/central-america`) away from the `en` node.
+> This `es` language copy is not detected as it is 2 levels (`americas/central-america`) away from the `en` node.
 
 >[!TIP]
 >
->In such a setup, language roots can have any page name, rather than just the ISO-code of the language. AEM will always check the path and name first, but if the page name does not identify a language, AEM will check the `cq:language` property of the page for the language identification.
+>In such a setup, language roots can have any page name, rather than just the ISO-code of the language. AEM always checks the path and name first, but if the page name does not identify a language, AEM checks the `cq:language` property of the page for the language identification.

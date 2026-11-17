@@ -4,6 +4,12 @@ description: Learn how to minimize the operational impact of AEM as a Cloud Serv
 feature: Deploying
 role: Admin
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Quiet hours and Update free periods {#quiet-hours-update-free-periods}
 
@@ -20,6 +26,10 @@ You can configure these time frames by using two scheduling options:
 The update free periods and quiet hours features are configured on a "per program" basis. Keep in mind that only users with the "user role" of **Business Owner** and **Deployment Manager** can view and use these features.  
 
 Additionally, for information on scheduled AEM as a Cloud Service automatic maintenance periods, please refer to the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) page.
+
+## Manage with the AEM AI Assistant manage-ai-assistant (Limited Availability) {#manage-ai-assistant}
+
+In addition to the Cloud Manager interface, you can manage quiet hours and update free periods through the AEM AI Assistant. The assistant can list your current quiet hours and update free periods, create a new update free period or quiet hours interval, and edit or remove existing ones, all from a natural language request. Because the assistant guides you through the available options and the rules that apply as you go, it helps you avoid invalid configurations before they happen. It surfaces the relevant limits in the conversation, including the maximum of three update free periods within a floating 365-day window, the mandatory one-week interval between periods, the 8-hour limit on quiet hours, and the restriction on scheduling during planned maintenance exclusion periods. As with the manual configuration, these actions apply per program and are available only to users with the Business Owner or Deployment Manager role.
 
 ## Quiet hours {#quiet-hours}
 

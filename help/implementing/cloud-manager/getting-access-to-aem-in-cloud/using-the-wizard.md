@@ -5,12 +5,26 @@ exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
+subfeature_v2:
+  - id: d9eb3b3e-9447-4ed4-bf4a-96c7b245cb27
+    internal-label: Cloud Manager APIs
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
-# Project Creation Wizard {#project-creation-wizard}
+# Project creation wizard {#project-creation-wizard}
 
-After you create your production program, Cloud Manger offers a wizard to create a minimal AEM project based on the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) to get your started quickly.
+After you create your production program, Cloud Manager offers a wizard to create a minimal AEM project based on the [AEM Project Archetype](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview) to help you begin.
 
-Follow these steps to create an AEM application project in Cloud Manager using the wizard.
+To create an AEM application project in Cloud Manager using the wizard, follow these steps.
 
 1. Create a production program by following the steps in the document [Creating Production Programs](creating-production-programs.md)
 
@@ -22,14 +36,14 @@ Follow these steps to create an AEM application project in Cloud Manager using t
 
    ![Create a branch and project](assets/create-wizard2.png)
 
-1. Optionally, click the divider to reveal the additional parameters of your project. The default values are provided by the AEM Project Archetype and generally do not need to be changed.
+1. Optionally, click the divider to reveal the additional parameters of your project. The AEM Project Archetype provides the default values, which do not need to be changed.
 
    ![Additional project parameters](assets/create-wizard5.png)
 
 1. Click **Create** to start the project creation process.
 
 
-A **Project Creation in Progress** card now replaces the **Create Branch &amp; Project** call-to-action card as the top of the **Program Overview** screen.
+A **Project Creation in Progress** card now replaces the **Create Branch &amp; Project** call-to-action card at the top of the **Program Overview** screen.
 
 ![Project creation in progress](assets/create-wizard3.png)
 

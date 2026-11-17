@@ -5,6 +5,17 @@ exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # AEM Headless Content Author Journey {#aem-headless-author-journey}
 
@@ -53,7 +64,7 @@ Although you can go directly to a particular part of the journey, many concepts 
 |0|AEM Headless Content Author Journey|This document|
 |1|[Authoring for AEM Headless as a Cloud Service - An Introduction](introduction.md)|An introduction to the headless features of Adobe Experience Manager as a Cloud Service, and how to author content for your project.|
 |2|[Authoring Basics for Headless with AEM](basics.md)|Learn about the concepts and mechanics of authoring content for your Headless CMS using Content Fragments.|
-|3|[Learn about using references in Content Fragments](references.md)|Learn about how to use references in Content Fragments. These also allow you to create and manage multiple levels of structure for your Headless CMS using Nested Fragments.|
+|3|[Learn about using references in Content Fragments](references.md)|Learn about how to use references in Content Fragments. These also allow you to create and manage multiple levels of structure for your Headless CMS using Referenced Fragments.|
 |4|[Learn about defining Metadata and Tagging for Content Fragments](metadata-tagging.md)|Learn about defining Metadata and Tagging for Content Fragments.|
 
 ## What's Next {#what-is-next}

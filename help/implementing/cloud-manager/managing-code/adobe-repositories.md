@@ -4,18 +4,32 @@ description: Learn how to add an Adobe-managed repository in Cloud Manager.
 exl-id: 6c32c4ae-f48d-4440-bfc2-cdc1a3d59599
 feature: Cloud Manager, Developing
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
+subfeature_v2:
+  - id: d9eb3b3e-9447-4ed4-bf4a-96c7b245cb27
+    internal-label: Cloud Manager APIs
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Add an Adobe repository in Cloud Manager {#adobe-repositories}
 
 Learn how to add an Adobe-managed repository in Cloud Manager.
 
-The **Repositories** page makes it easy to add additional Adobe-managed repositories to a selected program.
+The **Repositories** page lets you add additional Adobe-managed repositories to a selected program.
 
 **To add an Adobe repository in Cloud Manager:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and the program to which you want to add an Adobe-managed repository.
 
-1. From the **Program Overview** page, in the side menu, click ![Folder icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **Repositories** tab.
+1. From the **Program Overview** page, in the side menu, click the ![Folder icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **Repositories** tab.
 
 1. On the **Repositories** page, near the upper-right, click **Add Repository**.
 
@@ -26,7 +40,7 @@ The **Repositories** page makes it easy to add additional Adobe-managed reposito
 1. In the respective text fields, enter the following:
 
    * **Repository name** - An expressive name for your new repository.
-   * **Repository URL preview** - You do not need to enter a URL path or edit the existing path because the repository infrastructure is already in place and fully integrated and managed by Adobe.
+   * **Repository URL preview** - You do not need to enter a URL path or edit the existing path because the repository infrastructure is already configured, integrated, and managed by Adobe.
    * **Description (optional)** - A detailed description of the repository.
 
    ![Add Repository dialog box](assets/add-adobe-repository.png)

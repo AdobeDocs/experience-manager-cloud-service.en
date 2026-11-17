@@ -6,10 +6,15 @@ topic-tags: publish
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
 feature: Adaptive Forms
 role: User
-hide: yes
-hidefromtoc: yes
+hide: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 9496e4f5-ed74-4b40-b8f9-17153170af66
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Publishing and unpublishing forms and documents{#publishing-and-unpublishing-forms-and-documents}
 

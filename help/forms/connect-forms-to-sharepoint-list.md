@@ -1,11 +1,25 @@
 ---
 title: How to send data to a SharePoint List storage on submission of an Adaptive Form?
-Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list when you submit the form.
+description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list when you submit the form.
 keywords: How to connect SharePoint list for an adpative form?, Submit to SharePoint, Create a SharePoint List Configuration, Use the Submit to SharePoint submit action in an Adaptive Form, Connect an Adaptive Form to Microsoft&reg; SharePoint List.
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: f88183b7-5ea5-436c-ac46-96b53f0281ea
+    internal-label: Edge Delivery Services
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Connect an Adaptive Form to Microsoft&reg; SharePoint List {#connect-af-sharepoint-list}
 
@@ -85,6 +99,10 @@ You can use the created SharePoint List configuration in an Adaptive Form, to sa
 1. [Configure the Form Data Model (FDM) to retrieve and send data](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
 1. [Configure Submit action using a Form Data Model (FDM)](/help/forms/using-form-data-model.md)
+
+>[!NOTE]
+>
+> The maximum attachment size for Foundation Forms submitted via Microsoft&reg; SharePoint List is **14 MB**.
 
 When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint List Storage. 
 

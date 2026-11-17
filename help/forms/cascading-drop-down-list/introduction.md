@@ -3,8 +3,14 @@ title: Cascading Drop Down List
 description: Use Adaptive Forms expressions to add automatic validation, calculation, and turn visibility of a section on or off.
 feature: Adaptive Forms, Foundation Components
 role: User
-hide: yes
-hidefromtoc: yes
+hide: true
+hidefromtoc: 'yes'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Use case description
 

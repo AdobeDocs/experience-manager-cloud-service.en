@@ -2,6 +2,9 @@
 title: Getting Started with Refactoring Tools
 description: Learn how to get started with Refactoring Tools in AEM as a Cloud Service
 exl-id: 84394bdd-2b92-4f5d-b08a-7dc2c681baa4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 ---
 # Getting Started with Refactoring Tools {#getting-started-refactoring-tools}
 

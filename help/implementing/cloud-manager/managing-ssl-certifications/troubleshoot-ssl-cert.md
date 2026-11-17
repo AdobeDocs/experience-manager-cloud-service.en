@@ -5,6 +5,20 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 8fb8f708-51a5-46d0-8317-6ce118a70fab
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
+subfeature_v2:
+  - id: d9eb3b3e-9447-4ed4-bf4a-96c7b245cb27
+    internal-label: Cloud Manager APIs
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Troubleshoot SSL certificate problems {#certificate-problems}
 
@@ -20,7 +34,7 @@ This error occurs because the customer used an encrypted private key and provide
 
 +++**Private key needs to be PKCS 8 format**
 
-## Private key needs to be PKCS 8 format {#pkcs-8}
+## Private key needs to be PKCS-8 format {#pkcs-8}
 
 This error occurs because the customer used an encrypted private key and provided the key in DER format.
 
@@ -66,7 +80,7 @@ When adding a certificate, if you receive an error similar to the following:
 The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.
 ```
 
-You likely included the client certificate in the certificate chain. Make sure that the chain does not include the client certificate and try again.
+It is possible that you have included the client certificate in the certificate chain. Make sure that the chain does not include the client certificate and try again.
 
 +++
 
@@ -82,7 +96,7 @@ Certificate policy must conform with EV or OV, and not DV policy.
 
 Embedded OID values normally identify certificate policies. Outputting a certificate to text and searching for the OID reveals the certificate's policy.
 
-You can output your certificate detail as text using the following example as a guide.
+You can output your certificate details as text using the following example as a guide.
 
 ```text
 openssl x509 -in 9178c0f58cb8fccc.pem -text
@@ -136,12 +150,12 @@ Cloud Manager expects the SSL certificate to be valid for at least 90 days from 
 
 ## Wrong SAN certificate is applied to my domain {#wrong-san-cert}
 
-Let's say that you want to link `dev.yoursite.com` and `stage.yoursite.com` to your non-production environment and `prod.yoursite.com` to your production environment.
+For example, you want to link `dev.yoursite.com` and `stage.yoursite.com` to your non-production environment and `prod.yoursite.com` to your production environment.
 
 To configure the CDN for these domains, you need a certificate installed for each, so you install one certificate that covers `*.yoursite.com` for your non-production domains and another that also covers `*.yoursite.com` for your production domains.
 
-This configuration is valid. However, when you update one of the certificates, both certificates still cover the same SAN entry. As a result, the CDN installs the most recent certificate on all applicable domains, which may seem unexpected.
+This configuration is valid. However, when you update one of the certificates, both certificates still cover the same SAN entry. As a result, the CDN installs the most recent certificate on all applicable domains, which seems unexpected.
 
-Although this scenario may be unexpected, it is not an error and is the standard behavior of the underlying CDN. If you have two or more SAN certificates that cover the same SAN domain entry, the CDN installs the most recently updated certificate for that domain. This situation happens even when another certificate already covers the same domain entry.
+Although this scenario is unexpected, it is not an error and is the standard behavior of the underlying CDN. If you have two or more SAN certificates that cover the same SAN domain entry, the CDN installs the most recently updated certificate for that domain. This situation happens even when another certificate already covers the same domain entry.
 
 +++

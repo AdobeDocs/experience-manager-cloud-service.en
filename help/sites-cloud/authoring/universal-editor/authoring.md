@@ -6,6 +6,15 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 
 # Authoring Content with the Universal Editor {#authoring}
@@ -104,6 +113,7 @@ The rich text editor (RTE) of the Universal Editor allows the author to apply st
 * **Italic**
 * **Underline**
 * **Strikethrough**
+* **Inline code**
 * **Text Color**
   * Opens a color palette where you can select a color or specify a hex value
   * Only available in the modal editor, not in-context
@@ -136,6 +146,13 @@ The rich text editor (RTE) of the Universal Editor allows the author to apply st
   * Insert a special character into your text.
 * **Remove All Formatting**
   * Remove all formatting options from the selected text.
+* **Find and replace** to find occurrences of specified text in the RTE and optionally replace with different text
+  * **Find** field: String to search for
+  * **Replace** field: String to replace the **Find** string with
+  * **Match case**: Make search of **Find** string case-sensitive (default is case-insensitive)
+  * **Find** button: Find the next occurrence of the **Find** string
+  * **Replace** button: Replace the next occurrence of the **Find** string
+  * **Replace all**: Replace all occurrences of the **Find** string with the **Replace** string
 
 Depending on your back end, the options available by default may vary. The RTE can be configured to hide options or show additional options depending on authors' needs. Please see the document [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md) for more information.
 
@@ -337,23 +354,17 @@ When you are finished editing content, you often want to navigate it to see how 
 
 In preview mode, tapping or clicking on content reacts as it would to a reader of the content. If you want to select the content for editing, toggle out of [preview mode.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
-## Editing Component Inheritance {#inheritance}
-
-Inheritance is the mechanism where content can be linked such that changing one automatically changes the other.
-
-Using the Universal Editor, you can cancel inheritance for content by simply updating the content. The editor automatically disables inheritance for all changes made by authors on that page, ensuring that modified content is retained when updates are synchronized from the blueprint.
-
-If the **AEM Multi-Site-Management (MSM) Extension** is enabled for your program, you have [additional toolbar options](#inheritance-extension) to view and change the inheritance status of an individual component within the Universal Editor.
-
-For more details on how inheritance works using the Universal Editor, see [Content Inheritance in the Universal Editor.](/help/sites-cloud/authoring/universal-editor/inheritance.md)
-
 ## Optional Toolbar Features {#toolbar-options}
 
 Additional features are available as extensions to the Universal Editor to help you further manage your pages and content. [These extensions must be enabled in your program by an administrator](/help/implementing/universal-editor/extending.md) before they are visible to you as a content author in [the Universal Editor toolbar.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
 
 ### Inheritance {#inheritance-extension}
 
-The **AEM Multi-Site-Management (MSM) Extension** displays the current inheritance status of the selected component and allows you to [break or reinstate inheritance.](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+Inheritance is the mechanism where content can be linked such that changing one automatically changes the other.
+
+Using the Universal Editor, you can cancel inheritance for content by simply updating the content. The editor automatically disables inheritance for all changes made by authors on that page, ensuring that modified content is retained when updates are synchronized from the blueprint.
+
+For more details on how inheritance works using the Universal Editor, see [Content Inheritance in the Universal Editor.](/help/sites-cloud/authoring/universal-editor/inheritance.md)
 
 The **Inheritance Installed** icon in the Universal Editor toolbar shows that inheritance is still active for the selected component.
 
@@ -367,43 +378,40 @@ The **Inheritance Broken** icon shows that inheritance has been broken for the s
 
 Tap or click the icon to reinstate inheritance for the selected component. You will need to reload the page to refresh the content in order to show the inherited content.
 
-For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
-
 >[!NOTE]
 >
 >The **Inheritance Installed** and **Inheritance Broken** icons only display when a component has been selected and the page is based on a blueprint.
 
 >[!NOTE]
 >
->The **AEM Multi-Site-Management (MSM) Extension** only works for pages, not Content Fragments.
+>Inheritance only works for pages, not Content Fragments.
 
 ### Accessing Page Properties {#page-properties}
 
-The **AEM Page Properties Extension** allows quick access to the [Page Properties window](/help/sites-cloud/authoring/sites-console/page-properties.md) for the page currently being edited.
+The **Page Properties** button allows quick access to the [AEM Page Properties window](/help/sites-cloud/authoring/sites-console/page-properties.md) for the page currently being edited.
 
 ![Page properties icon](assets/page-properties-icon.png)
 
 Tap or click the **Page Properties** icon in the Universal Editor toolbar to open the page properties for the page in a new browser tab.
 
-For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
-
 >[!NOTE]
 >
->The **AEM Page Properties Extension** only works for pages, not Content Fragments.
+>* The **AEM Page Properties** button only works for pages, not Content Fragments.
+>* The button is shown only when the remote page has a [connection with protocol](/help/implementing/universal-editor/component-definition.md#plugins) `aem` or `xwalk` and a unique page path can be resolved from the current editable.
 
-### Access Sites Console {#sites-console}
+### Open in Site Admin {#sites-console}
 
-The **AEM Site Admin Extension** allows quick access to the page being edited within the [Sites Console of AEM,](/help/sites-cloud/authoring/sites-console/introduction.md) allowing you to navigate the site tree or perform page-level actions in the console.
+The **Open in Site Admin** button allows quick access to the [Sites Console of AEM](/help/sites-cloud/authoring/sites-console/introduction.md) (or the [Experience Fragments console](/help/sites-cloud/authoring/fragments/experience-fragments.md) for `/content/experience-fragments` paths) to show you where the page you are currently editing exists in your content structure. This allows you to navigate the site tree or perform page-level actions in the console.
 
 ![Open in site admin icon](assets/open-in-site-admin-icon.png)
 
 Tap or click the icon to open the Sites Console in a new browser tab, navigated to the page currently in the editor.
 
-For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+The button is hidden for DAM paths (`/content/dam`) and when no unique AEM page can be determined from the current editables.
 
 ### Locking and Unlocking Pages {#locking-pages}
 
-The **AEM Page Lock Extension** displays the current lock status of the page in the editor and allows you to [lock or unlock the page.](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)
+The **Unlocked** and **Locked by** icons display the current lock status of the page in the editor and allows you to [lock or unlock the page.](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)
 
 The **Unlocked** icon in the Universal Editor toolbar shows that the page currently in the editor is not locked.
 
@@ -411,21 +419,19 @@ The **Unlocked** icon in the Universal Editor toolbar shows that the page curren
 
 Tap or click the icon to lock the page.
 
-The **Locked** icon in the Universal Editor toolbar shows that the page currently in the editor is locked. Hover your mouse over the icon for a tooltip indicating the user who locked the page.
+The **Locked by** icon in the Universal Editor toolbar shows that the page currently in the editor is locked. Hover your mouse over the icon for a tooltip indicating the user who locked the page.
 
 ![Locked icon](assets/locked-icon.png)
 
-Tap or click the icon to unlock the page if you are the user who locked it.
-
-For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+If you are the user who locked the page, you can tap or click the icon to unlock it.
 
 >[!NOTE]
 >
->The **AEM Page Lock Extension** only works for pages, not Content Fragments.
+>The **AEM Page Lock** feature only works for pages, not Content Fragments.
 
 ### Workflows {#workflows}
 
-The **AEM Workflows Extension** allows you to [start a workflow](/help/sites-cloud/authoring/workflows/overview.md) on the page currently in the editor.
+The **Workflows** icon allows you to [start a workflow](/help/sites-cloud/authoring/workflows/overview.md) on the page currently in the editor.
 
 ![Workflows icon](assets/workflows-icon.png)
 
@@ -438,19 +444,15 @@ Tap or click the **Workflows** icon in the Universal Editor toolbar to open the 
 1. In the **Content to include in workflow** list, use the checkboxes to define which content to include in the workflow.
 1. Tap or click **Start Workflow** to start the workflow or **Close** to abort.
 
-For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+### Local Developer Login {#developer-login}
 
-### Developer Login {#developer-login}
-
-The **AEM Universal Editor Dev Login Extension** is useful for developers who are developing locally, enabling a convenient way to authenticate to a local AEM SDK for testing purposes.
+The **Local Developer Login** icon is useful for developers who are developing locally, enabling a convenient way to authenticate to a local AEM SDK for testing purposes.
 
 ![Developer login icon](assets/developer-login-icon.png)
 
-Tap or click the **Developer Logon** icon in the Universal Editor toolbar to provide your local login credentials to sign into your local AEM SDK.
+Tap or click the **Local Developer Logon** icon in the Universal Editor toolbar to provide your local login credentials to sign into your local AEM SDK.
 
 ![Developer login modal](assets/developer-login.png)
-
-For information on how to enable this extension, [please see the Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Optional Properties Panel Features {#properties-panel-options}
 
@@ -479,3 +481,4 @@ To learn more about the technical details of the Universal Editor, please see th
 * [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.
 * [Attributes and Types](/help/implementing/universal-editor/attributes-types.md) - Learn about the data attributes and types that the Universal Editor requires.
 * [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md) - Learn how the Universal Editor authenticates.
+

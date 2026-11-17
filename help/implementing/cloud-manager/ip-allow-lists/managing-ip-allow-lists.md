@@ -5,6 +5,20 @@ exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
+subfeature_v2:
+  - id: d9eb3b3e-9447-4ed4-bf4a-96c7b245cb27
+    internal-label: Cloud Manager APIs
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Manage IP Allow Lists {#manage-ip-allow-lists}
 
@@ -63,7 +77,7 @@ A user in the **Business Owner** or **Deployment Manager** role can follow these
 
 ## Pre-existing CDN configurations {#pre-existing-cdn}
 
-If you have a pre-existing CDN (Content Delivery Network) configuration for your IP Allow Lists, there is an informative message on the **IP Allow List** page. The message encourages you to add these configurations by way of the user interface so they are visible and configurable in Cloud Manager.
+If you have a pre-existing CDN (Content Delivery Network) configuration for your IP Allow Lists, there is an informative message on the **IP Allow List** page. The message encourages you to add these configurations through the user interface so they are visible and configurable in Cloud Manager.
 
 The message disappears once all pre-existing environment configurations are migrated using the UI. It may take 1-2 business days for the message to disappear.
 

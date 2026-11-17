@@ -7,6 +7,19 @@ level: Beginner, Intermediate
 keywords: invoke service enhancements in VRE, populating drop-down options using invoke service, Set repeatable panel using output of invoke service, Set panel using output of invoke service, Use output parameter of invoke service to validate other field.
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Integrating External APIs with Visual Rule Editor in Core Component Forms
 
@@ -272,7 +285,6 @@ When the **Submit** button is clicked, the `redirect-api` API service is invoked
 
 ## Retrieve Property Values from a JSON array
 
-<span class="preview"> This is a early-adopter feature. If you are interested, send a quick email from your work address to mailto:aem-forms-ea@adobe.com to request access to the feature</a>. </span>
 
 Adaptive Forms supports invoking a service, processing JSON responses, and populating form fields dynamically. This section describes how to extract property values from a JSON array and bind them to form fields.
 

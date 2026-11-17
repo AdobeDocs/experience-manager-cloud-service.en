@@ -6,13 +6,20 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: d1c62f32-372b-475a-9258-67c2276e79f3
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 
 # Create an Interactive Communication Fragment
 
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
 An Interactive Communication Fragment allows users to create reusable, modular content blocks such as headers, footers, or standard disclaimers that can be used across multiple communication documents. These fragments help maintain consistency, reduce repetitive work, and accelerate the design process when building personalized, data-integrated communications.
 
@@ -47,3 +54,4 @@ By creating Interactive Communication Fragments, you ensure design consistency, 
 
 [Create an interactive communication](/help/forms/interactive-communication/create-interactive-communication.md)
 [Create an interactive communication Template](/help/forms/interactive-communication/create-interactive-communication-template.md)
+

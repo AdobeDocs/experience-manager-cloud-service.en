@@ -9,6 +9,14 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Use reCAPTCHA in Adaptive Forms {#using-reCAPTCHA-in-adaptive-forms}
 
@@ -226,9 +234,9 @@ Select the **[!UICONTROL Currency Value]** field in the form and create the foll
 
 ![Show or hide rules](assets/rules-show-hide-captcha.png)
 
-   >[!NOTE]
-   >
-   > When you select a reCAPTCHA v2 configuration and the size is set to [!UICONTROL Invisible], the show/hide option remains disabled.
+>[!NOTE]
+>
+> When you select a reCAPTCHA v2 configuration and the size is set to [!UICONTROL Invisible], the show/hide option remains disabled.
 
 ### Validate CAPTCHA {#validate-captcha}
 

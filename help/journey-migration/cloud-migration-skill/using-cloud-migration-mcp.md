@@ -1,0 +1,102 @@
+---
+title: Using AEM MCP Server Cloud Migration Capabilities
+description: Learn how to configure the AEM MCP Server in your AI-enabled IDE and use its Cloud Migration capabilities to fetch Best Practices Analyzer findings from Cloud Acceleration Manager during a migration session.
+feature: Migration
+role: Developer
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: 5be0fc8f-1cff-5c3e-bb92-2903a56a3de6
+    internal-label: Migration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+---
+
+# Using AEM MCP Server Cloud Migration Capabilities {#using-cloud-migration-mcp}
+
+AEM Cloud Migration capabilities are available through the [**AEM MCP Server**](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#aem-mcp-server), a hosted [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server that connects your IDE agent to **Cloud Acceleration Manager (CAM)**. Once configured, the [AEM Cloud Migration Skill](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md) can fetch Best Practices Analyzer findings directly from your CAM project without requiring a CSV export.
+
+## MCP Server URL {#server-url}
+
+```
+https://mcp.adobeaemcloud.com/adobe/mcp/aem
+```
+
+Add this URL to your IDE's MCP configuration to connect.
+
+>[!IMPORTANT]
+>The domain-specific Cloud Migration MCP server endpoint (`https://mcp.adobeaemcloud.com/adobe/mcp/cloud-migration`) is deprecated. Update existing configurations to use the AEM MCP Server URL above.
+
+## What It Provides {#what-it-provides}
+
+The AEM MCP Server's Cloud Migration category is enabled by default and provides read-only access through two tools that the migration skill invokes automatically during a session:
+
+| Tool | Description |
+|------|-------------|
+| `fetch-cam-bpa-findings-by-pattern` | Returns BPA findings for a specific migration pattern (`scheduler`, `assetApi`, `eventListener`, `resourceChangeListener`, `eventHandler`, `guavaCache`, `lui`, `cdw`, or `all`) from the latest BPA report in a CAM project. |
+| `fetch-cam-bpa-findings-by-importance` | Returns all BPA findings at a given severity (`CRITICAL`, `MAJOR`, `ADVISORY`, `INFO`) from the latest BPA report, sorted by descending count. Useful for prioritizing which patterns to address first. |
+
+## Prerequisites {#prerequisites}
+
+* A **Cloud Acceleration Manager** project with an uploaded BPA report. See [CAM Readiness Phase](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md).
+* An **Adobe ID** with access to that CAM project.
+* An AI-enabled IDE that supports remote MCP servers.
+
+## Setup {#setup}
+
+1. In your IDE's MCP configuration, add an AEM MCP Server entry with the URL `https://mcp.adobeaemcloud.com/adobe/mcp/aem`, or use an existing entry with that URL.
+2. Save or activate the configuration so your IDE connects to the server.
+3. When prompted, sign in with your **Adobe ID** to complete authentication.
+4. Once authenticated, your IDE discovers the available migration tools and the migration skill can use them in sessions.
+
+For IDE-specific configuration steps, refer to the guides under [Setting Up MCP with AEM](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#setup-overview).
+
+>[!NOTE]
+>You must sign in with the Adobe ID that has access to your CAM projects. If you see an authorization error, verify that your account has the appropriate permissions in Cloud Acceleration Manager.
+
+## Using the MCP in a Migration Session {#using-in-session}
+
+With the MCP server connected, start a migration session in your IDE with a prompt such as:
+
+```
+Fetch scheduler findings for project <name>/<id>.
+```
+
+The agent:
+
+1. Fetches the BPA findings for that project
+2. Proceeds with the batch-by-batch migration workflow
+
+>[!IMPORTANT]
+>Always confirm the project from the list before the agent proceeds. Findings are not fetched until you have explicitly selected a project.
+
+### Prioritizing by severity {#by-severity}
+
+To see a count-sorted summary of your BPA report findings before starting pattern migration:
+
+```
+Show me CRITICAL findings from CAM for project <name>/<id>.
+```
+
+Use this to decide which patterns to prioritize in your sessions.
+
+## Troubleshooting {#troubleshooting}
+
+**IDE cannot connect to the MCP server**
+
+* Verify the URL is entered exactly as shown above, with no trailing slash
+* Restart your IDE after saving the MCP configuration
+
+**Authentication fails**
+
+* Ensure you are signing in with the Adobe ID that has access to your CAM projects
+
+**No BPA report found**
+
+* Verify that a BPA report has been uploaded to the selected CAM project. See [Using Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md).
+
+## What's Next {#whats-next}
+
+With the MCP configured, see [Using the Cloud Migration Skill](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md) for a full reference on migration patterns and session management.
