@@ -1,6 +1,6 @@
 ---
-title: Release Notes for Cloud Manager 2026.10.0
-description: Learn about the release of Cloud Manager 2026.10.0 in Adobe Experience Manager as a Cloud Service.
+title: Release Notes for Cloud Manager 2026.11.0
+description: Learn about the release of Cloud Manager 2026.11.0 in Adobe Experience Manager as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
@@ -17,22 +17,22 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
 ---
-# Release notes for Cloud Manager 2026.10.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release notes for Cloud Manager 2026.11.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Learn about the release of Cloud Manager 2026.9.0 in AEM (Adobe Experience Manager) as a Cloud Service.
+Learn about the release of Cloud Manager 2026.11.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
 See also the [current release notes for Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Release dates {#release-date}
 
-The release date for Cloud Manager 2026.10.0 in AEM as a Cloud Service is Thursday, October 1, 2026. 
+The release date for Cloud Manager 2026.11.0 in AEM as a Cloud Service is Thursday, November 5, 2026. 
 
-The next planned release is Thursday, November 5, 2026.
+The next planned release is Thursday, December 3, 2026.
 
 
 ## New features - Cloud Manager {#cloud-manager-whats-new}
 
-* **Java 23 opt-in**
+* **Java 25 opt-in**
 
   To support performance improvements and modern Java features, AEM Cloud Service environments are adding support for running with Java 25. As part of the initial rollout, Cloud Manager added opt-in options for building and deploying AEM projects
 
@@ -44,23 +44,6 @@ The next planned release is Thursday, November 5, 2026.
 * **GitHub Apps for EDS sites**  
     Cloud Manager now exposes an option for managing GitHub App connections on provisioned Edge Delivery Services (EDS) sites. This option allows teams and automation tools to configure GitHub App integrations programmatically, rather than through manual setup for each site. (CMGR-78197) new doc needed
 -->
-
-* **Canary deployment support**
-
-    Cloud Manager now supports canary (hybrid) releases at the deployment step. When configuring a production pipeline, teams can roll out code to a subset of production nodes, then promote the release or roll back from the Cloud Manager UI. 
-
-    If no action is taken within the configured validation window, Cloud Manager automatically promotes the deployment. This reduces deployment risk for mission-critical applications by allowing teams to validate real traffic behavior before performing a full rollout, and enables faster detection and resolution of issues without impacting all users.
-
-    For more information, see [Use Canary Deployments to Validate Code](/help/implementing/cloud-manager/canary-deployments.md) (CMGR-71220, CMGR-74599)
-
-* **VPN Network Infrastructure — BGP routing and multiple connections**
-
-    The Advanced Networking VPN network infrastructure API now supports BGP (Border Gateway Protocol) dynamic routing alongside static routing, and the previous limit of one VPN connection per infrastructure has been removed. Teams can now configure multiple connections and, with BGP enabled, have routes learned dynamically rather than maintaining static prefixes. Static and BGP connections can coexist in the same infrastructure, providing enterprise networking teams with increased flexibility.
-
-    New API fields support the capability (bgpAsn, bgpPeeringAddress, adobeApipaAddress, and a top-level adobeAsn required whenever a connection uses BGP); see the Cloud Manager API reference for details. (SKYOPS-140538)
-
-    For more information, see [Virtual Private Network (VPN)](/help/security/configuring-advanced-networking.md#vpn)
-    
 
 ## Beta programs {#private-beta-program}
 
