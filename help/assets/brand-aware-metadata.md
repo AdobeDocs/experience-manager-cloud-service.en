@@ -102,7 +102,7 @@ To create a property prompt:
 
 >[!NOTE]
 >
->The **[!UICONTROL Metadata form]** list is populated only with metadata forms defined in the **[!UICONTROL Admin view]**. Metadata forms defined in the **[!UICONTROL Assets view]** are not available in this list.
+>The **[!UICONTROL Metadata schema]** list is populated only with metadata schema defined in the **[!UICONTROL Admin view]**. Metadata schema defined in the **[!UICONTROL Assets view]** are not available in this list.
 
 1. From the **Metadata property** list, select the metadata property that you want AI to populate.
 1. In the **Prompt** field, enter instructions for generating the metadata value.
