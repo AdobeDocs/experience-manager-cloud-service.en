@@ -277,6 +277,7 @@ user-guide-title: AEM as a Cloud Service
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
       + [2026.10.29 Release Notes](/help/release-notes/universal-editor/2026/2026-10-29.md)
+      + [2026.11.05 Release Notes](/help/release-notes/universal-editor/2026/2026-11-05.md)
       + [2026.10.22 Release Notes](/help/release-notes/universal-editor/2026/2026-10-22.md)
       + [2026.10.15 Release Notes](/help/release-notes/universal-editor/2026/2026-10-15.md)
       + [2026.10.08 Release Notes](/help/release-notes/universal-editor/2026/2026-10-08.md)
@@ -353,6 +354,7 @@ user-guide-title: AEM as a Cloud Service
       + [2024.08.13 Release Notes](/help/release-notes/universal-editor/2024/2024-08-13.md)
       + [2024.07.28 Release Notes](/help/release-notes/universal-editor/2024/2024-07-28.md)
       + [2024.06.28 Release Notes](/help/release-notes/universal-editor/2024/2024-06-28.md)
+  + [Release Notes for Experience Modernization Agent](/help/release-notes/modernization-agent/current.md)
   + [What is New?](/help/release-notes/what-is-new.md)
   + [Notable Changes in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
   + [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md)
@@ -864,6 +866,8 @@ user-guide-title: AEM as a Cloud Service
     + [Smart Collections in Content Hub](/help/assets/smart-collection-content-hub.md)
     + [Frequently asked questions for Content Hub](/help/assets/frequently-asked-questions-content-hub.md)  
   + Best practices{#best-practices}
+    + {hide-from-toc} [Brand Aware Metadata best practices: a WKND tutorial](/help/assets/brand-aware-metadata-best-practices.md)
+    + {hide-from-toc} [Metadata best practices: before and after migrating to AEM Assets](/help/assets/metadata-best-practices-guide.md)
     + [Search best practices](/help/assets/search-best-practices.md)
     + [Metadata management and best practices](/help/assets/metadata-best-practices.md)
   + Integration with Figma {#integration-figma}
@@ -1135,6 +1139,7 @@ user-guide-title: AEM as a Cloud Service
      + [Unbound Variable](/help/forms/interactive-communication/unbound-variable.md)
    + How To {#howto}
      + [Configure Data Binding](/help/forms/interactive-communication/configure-data-binding.md)
+     + [Mask numeric values](/help/forms/interactive-communication/howto/mask-numeric-identifier.md)
      + [Use the Rule Editor](/help/forms/interactive-communication/use-the-rule-editor.md)
      + [Import and Export the Interactive Communication](/help/forms/interactive-communication/import-and-export-the-interactive-communication.md)
      + [Add Custom Fonts](/help/forms/interactive-communication/add-custom-fonts.md)
@@ -1209,7 +1214,9 @@ user-guide-title: AEM as a Cloud Service
     + Enterprise Platforms {#enterprise-platforms}
       + [Setting Up Microsoft Copilot Studio with AEM MCP](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
       + [Setting Up JetBrains with GitHub Copilot and AEM MCP](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
-  + [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md)
+  + Local Development with AI {#local-development-with-ai}
+    + [AI Tooling for Local Development](/help/ai-in-aem/local-development-with-ai-tools.md)
+    + [Code Assessment Skill](/help/ai-in-aem/code-assessment-skill.md)
   + Agentic Capabilities in AEM {#agentic-capabilities}
     + [Overview](/help/ai-in-aem/agentic-capabilities/overview.md)
     + Brand Experience {#brand-experience}
@@ -1247,13 +1254,22 @@ user-guide-title: AEM as a Cloud Service
         + [Form Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
       + Experience Modernization Agent {#modernization}
         + [Overview](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)
+        + [Evaluate and Approve](/help/ai-in-aem/agents/brand-experience/modernization/evaluate.md)
         + [Getting Started](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
-        + [Getting Started with AEM authoring projects](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
+        + [Getting Started with Experience Manager Authoring Projects](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
+        + [Migrate a Production Site](/help/ai-in-aem/agents/brand-experience/modernization/production-migration.md)
+        + [Restyle Sites](/help/ai-in-aem/agents/brand-experience/modernization/restyling.md)
+        + [Make Visual Changes](/help/ai-in-aem/agents/brand-experience/modernization/visual-changes.md)
+        + [Create, Update, and Refactor Blocks](/help/ai-in-aem/agents/brand-experience/modernization/block-development.md)
         + [Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md)
+        + [Capabilities and Add-ons](/help/ai-in-aem/agents/brand-experience/modernization/capabilities.md)
         + [Prompting Guide](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md)
-        + [Project Documentation Skill](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md)
-        + [Site Catalog Skill](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
-        + [AOE Delivery](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
+        + [Project Instructions and Memory](/help/ai-in-aem/agents/brand-experience/modernization/project-instructions.md)
+        + [Generate Project Documentation](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md)
+        + [Site Catalog](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
+        + [Delivery by Agentic Outcome Engineers](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
+        + [Troubleshooting](/help/ai-in-aem/agents/brand-experience/modernization/troubleshooting.md)
+        + [FAQ](/help/ai-in-aem/agents/brand-experience/modernization/faq.md)
     + Content Advisor Agent {#content-advisor}
       + [Overview](/help/ai-in-aem/agents/content-advisor/overview.md)
       + [Content Discovery Agent](/help/ai-in-aem/agents/content-advisor/discovery.md)
