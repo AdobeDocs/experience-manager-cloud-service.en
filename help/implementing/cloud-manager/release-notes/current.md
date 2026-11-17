@@ -45,23 +45,6 @@ The next planned release is Thursday, December 3, 2026.
     Cloud Manager now exposes an option for managing GitHub App connections on provisioned Edge Delivery Services (EDS) sites. This option allows teams and automation tools to configure GitHub App integrations programmatically, rather than through manual setup for each site. (CMGR-78197) new doc needed
 -->
 
-* **Canary deployment support**
-
-    Cloud Manager now supports canary (hybrid) releases at the deployment step. When configuring a production pipeline, teams can roll out code to a subset of production nodes, then promote the release or roll back from the Cloud Manager UI. 
-
-    If no action is taken within the configured validation window, Cloud Manager automatically promotes the deployment. This reduces deployment risk for mission-critical applications by allowing teams to validate real traffic behavior before performing a full rollout, and enables faster detection and resolution of issues without impacting all users.
-
-    For more information, see [Use Canary Deployments to Validate Code](/help/implementing/cloud-manager/canary-deployments.md) (CMGR-71220, CMGR-74599)
-
-* **VPN Network Infrastructure — BGP routing and multiple connections**
-
-    The Advanced Networking VPN network infrastructure API now supports BGP (Border Gateway Protocol) dynamic routing alongside static routing, and the previous limit of one VPN connection per infrastructure has been removed. Teams can now configure multiple connections and, with BGP enabled, have routes learned dynamically rather than maintaining static prefixes. Static and BGP connections can coexist in the same infrastructure, providing enterprise networking teams with increased flexibility.
-
-    New API fields support the capability (bgpAsn, bgpPeeringAddress, adobeApipaAddress, and a top-level adobeAsn required whenever a connection uses BGP); see the Cloud Manager API reference for details. (SKYOPS-140538)
-
-    For more information, see [Virtual Private Network (VPN)](/help/security/configuring-advanced-networking.md#vpn)
-    
-
 ## Beta programs {#private-beta-program}
 
 To obtain access to upcoming features before their general release, you can participate in Cloud Manager's beta programs.
