@@ -104,6 +104,14 @@ See [AEM Assets beta programs](#assets-beta-program-features).
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
+### Adobe LLM Apps {#llm-apps}
+
+Adobe LLM Apps, a new capability in Experience Manager Sites, lets brands bring their own experience into LLM conversations and turn LLMs into a measurable marketing channel. Authors enter their brand’s domain, and within about 15 minutes LLM Apps suggests an app generated from the existing website, with no custom build or new backend required. Each app is made of actions, which carry out tasks such as checking stock or building a cart, and widgets, which show the results as interactive, visual experiences inside the chat, with real product images, pricing, and availability. Brands build once and publish to ChatGPT and Claude, with Gemini to follow, and manage the app with the same content, workflows, and governance as the rest of their AEM Sites experiences. App events flow to Adobe Analytics and Customer Journey Analytics, so brands can see the intent behind consumer prompts and track the journey from first prompt to conversion, whether it happens in the chat or on the brand’s own site.
+
+>[!IMPORTANT]
+>
+>LLM Apps is available to all AEM Sites Cloud Service customers to develop and manage their own apps. Once metering begins, each app invocation will count toward the customer’s AEM Sites Content Requests. Adobe will announce the metering rate and start date before metering takes effect.
+
 ### New features in Experience Manager Sites Prerelease {#prerelease-sites}
 
 #### Composite data type for Content Fragments

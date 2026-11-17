@@ -99,11 +99,6 @@ The table below lists all the [AEM Forms Communications APIs](https://developer.
 | /adobe/document/convert/pdftops | Converts a PDF document to a PostScript (PS) document. | Synchronous | [OAuth](/help/forms/oauth-api-authetication.md) |
 | /adobe/document/transform/flattentransparency | Flattens transparency in a PDF document to improve compatibility with print and document processing workflows. | Synchronous | [OAuth](/help/forms/oauth-api-authetication.md) |
 
->[!NOTE]
->
-> <span class="preview">The HTML to PDF, PostScript to PDF, PDF to Image, PDF to PostScript, and Flatten Transparency APIs are under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email address to join the Early Adopter Program and request access to these capabilities.</span>
-
-
 #### Document Extraction APIs
 
 | API Endpoint | Description   |  Execution Model     | Authentication Method         |
