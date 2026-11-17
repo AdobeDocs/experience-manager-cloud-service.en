@@ -1,6 +1,6 @@
 ---
-title: Generate Brand Aware Metadata
-description: Learn how to configure AI-powered prompts to generate metadata values for assets using Brand Aware Metadata in Adobe Experience Manager Assets.
+title: Generate Brand-Aware Metadata
+description: Learn how to configure AI-powered prompts to generate metadata values for assets using Brand-Aware Metadata in Adobe Experience Manager Assets.
 hidefromtoc: 'yes'
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive"
@@ -14,19 +14,13 @@ role_v2:
     internal-label: User
 ---
 
-# Generate Brand Aware Metadata {#generate-ai-metadata-brand-aware}
+# Generate Brand-Aware Metadata {#generate-ai-metadata-brand-aware}
 
-[!DNL Adobe Experience Manager Assets] Brand Aware Metadata (BAM) is an AI-powered capability that automatically generates custom metadata values for assets when they are uploaded or reprocessed. It reduces the need for manual metadata entry, helping you manage metadata consistently and make assets easier to find and use.
+[!DNL Adobe Experience Manager Assets] Brand-Aware Metadata (BAM) is an AI-powered capability that automatically generates custom metadata values for assets when they are uploaded or reprocessed. It reduces the need for manual metadata entry, helping you manage metadata consistently and make assets easier to find and use.
 
 BAM uses a layered prompting approach to define how AI generates values for specific metadata properties. You can use brand prompts to provide reusable brand and campaign context and property prompts to define instructions for individual metadata properties. You can also provide additional context through referenced properties and restrict generated values to predefined options using controlled vocabulary. BAM also provides a Prompt Playground to preview generated metadata and a Prompt Enhancer to improve prompt instructions.
 
-You can use Brand Aware Metadata to generate values for metadata properties such as alt text, product attributes, asset classification, region, and language. Generated metadata is applied to assets through processing profiles.
-
->[!IMPORTANT]
->
->Adobe is actively expanding BAM's capabilities through direct co-innovation with customers. Where a specific use case is not yet supported, Adobe works with participating customers to understand their needs and may deliver expanded capabilities as the beta progresses. Customers in this program gain early access to new features as they ship and are encouraged to share feedback that directly shapes the roadmap.
->
->To participate or learn more, send an email to AEM-ASSETS-BRANDAWAREMETADATA@adobe.com.
+You can use Brand-Aware Metadata to generate values for metadata properties such as alt text, product attributes, asset classification, region, and language. Generated metadata is applied to assets through processing profiles.
 
 ## Before you begin {#before-you-begin}
 
@@ -34,28 +28,19 @@ Ensure the following:
 
 * Access to [!DNL Adobe Experience Manager Assets as a Cloud Service].
 * Administrator permissions to access AEM Assets.
-* Brand Aware Metadata enabled for your environment.
+* Brand-Aware Metadata enabled for your environment.
 * Required permissions to access Prompt Editor and configure metadata.
 
-## Get access to Brand Aware Metadata {#get-access-to-brand-aware-metadata}
+## Configure Brand-Aware Metadata {#configure-brand-aware-metadata}
 
-[!DNL Brand Aware Metadata] is currently available in beta.
-
-To request access:
-
-1. Send an email to `aem-assets-brandawaremetadata@adobe.com`.
-1. Join an introductory call to discuss your use case and the environments to enable.
-
-## Configure Brand Aware Metadata {#configure-brand-aware-metadata}
-
-Before creating prompts, open the **[!UICONTROL Prompt Editor]**.
+Before creating prompts, open **[!UICONTROL Brand-Aware Metadata]**.
 
 1. In [!DNL Adobe Experience Manager Assets], switch to **[!UICONTROL Admin view]**, then navigate to **[!UICONTROL Assets]**.
-2. Select **[!UICONTROL Prompt Editor]**.
+2. Select **[!UICONTROL Brand-Aware Metadata]**.
  ![Navigate to Prompt Editor](/help/assets/assets/prompt-editor.png)
 
-The AI Metadata Prompts Manager displays the available property prompts, brand prompts, quality reports, and GenAI metrics.
-![AI Metadata Prompts Manager](/help/assets/assets/ai-metadata-prompts-manager.png) 
+The Brand-Aware Metadata Manager displays the available property prompts, brand prompts, quality reports, and GenAI metrics.
+![Brand-Aware Metadata Manager](/help/assets/assets/ai-metadata-prompts-manager.png)
 
 If you need to access Prompt Editor using Assets view, navigate to the following URL:
 
@@ -91,12 +76,12 @@ To create a brand prompt:
 
 1. In the **Prompt name** field, enter a name for the brand prompt.
 1. In the **Prompt** field, enter natural language instructions that describe your brand context and always-on rules.
-1. In the **Group** field, select an existing group or create a new group.
 1. Click **[!UICONTROL Save]**.
 
 You can create multiple brand prompts and organize them into groups. Brand prompts can then be associated with different processing profiles based on your requirements.
 
 ### Create a property prompt {#create-property-prompt}
+
 
 A property prompt defines instructions for generating values for a specific metadata property.
 
@@ -104,21 +89,20 @@ For example, you can create a property prompt to generate alt text for assets.
 
 To create a property prompt:
 
-1. In **[!UICONTROL Prompt Editor]**, click **[!UICONTROL Create prompt]**.
+1. In **[!UICONTROL Brand-Aware Metadata]**, click **[!UICONTROL Create prompt]**.
 ![Create property Prompts](/help/assets/assets/create-property-prompt.png)
 
 1. In the **Prompt name** field, enter a name for the prompt.
 1. Optional: In the **Description** field, enter a description for the prompt.
 1. Optional: In the **Referenced properties** field, specify metadata properties that can be used as input when generating values.
-1. Optional: In the **Group** field, select an existing group or create a new group.
-1. From the **Metadata form** list, select a metadata form.
+1. From the **Metadata Schema** list, select a metadata schema.
 
-   Selecting a metadata form loads the available metadata properties.
+   Selecting a metadata schema loads the available metadata properties.
 ![Metadata properties](/help/assets/assets/metadata-properties.png)
 
 >[!NOTE]
 >
->The **[!UICONTROL Metadata form]** list is populated only with metadata forms defined in the **[!UICONTROL Admin view]**. Metadata forms defined in the **[!UICONTROL Assets view]** are not available in this list.
+>The **[!UICONTROL Metadata schema]** list is populated only with metadata schema defined in the **[!UICONTROL Admin view]**. Metadata schema defined in the **[!UICONTROL Assets view]** are not available in this list.
 
 1. From the **Metadata property** list, select the metadata property that you want AI to populate.
 1. In the **Prompt** field, enter instructions for generating the metadata value.
@@ -143,53 +127,44 @@ For example, if an asset contains an existing product name, you can reference th
 To add referenced properties:
 
 1. In the property prompt editor, open the **[!UICONTROL Referenced properties]** field.
-2. Add the metadata property or asset information that you want to provide as additional context.
-3. In the **[!UICONTROL Prompt]** field, specify how AI should use the referenced information.
+1. Add the metadata property or asset information that you want to provide as additional context.
+1. In the **[!UICONTROL Prompt]** field, specify how AI should use the referenced information.
 ![Referenced properties](/help/assets/assets/referenced-properties1.png)
-4. Use **[!UICONTROL Prompt Playground]** to preview the generated output.
-5. Refine the prompt if required.
+1. Use **[!UICONTROL Prompt Playground]** to preview the generated output.
+1. Refine the prompt if required.
  ![Referenced properties](/help/assets/assets/referenced-properties-output.png)
 
 >[!NOTE]
 >
 >Referenced properties provide additional context to the prompt. They do not define the metadata property that AI generates.
 
-## Configure controlled vocabulary (optional) {#configure-controlled-vocabulary}
+## Configure controlled vocabulary (optional)
 
 Controlled vocabulary restricts AI-generated metadata values to a predefined set of approved options. Use controlled vocabulary when a metadata property must use values from an established list, such as product categories, regions, asset classifications, or other brand-specific terminology.
 
-For example, if a **Coffee Blend** metadata property supports only **House Blend**, **Espresso**, and **Morning Muse**, you can configure these values as controlled vocabulary. For each value, provide a description that explains when the value should be selected. BAM uses these descriptions to determine the appropriate value for an asset.
+For example, if a **Coffee Blend** metadata property supports only **House Blend**, **Espresso**, and **Morning Muse**, you can configure these values as controlled vocabulary. For each value, provide a definition that explains when the value should be selected. BAM uses these definitions to determine the appropriate value for an asset.
 
 You can configure controlled vocabulary to return either a single value or multiple values for a metadata property.
 
->[!NOTE]
->
->A metadata property can use either generative output or controlled vocabulary. Combining both options for the same property is currently not supported.
-
-### Add controlled vocabulary values {#add-controlled-vocabulary-values}
+### Add controlled vocabulary values
 
 To configure controlled vocabulary for a metadata property:
 
-1. In the property prompt editor, select the metadata property for which you want to configure controlled vocabulary.
-2. Enable **[!UICONTROL Controlled vocabulary]**.
-3. Select whether the property should return a **single value** or **multiple values**.
+1. In the property prompt, select the metadata property that uses controlled vocabulary in the metadata form.
+1. The editor automatically displays the controlled vocabulary builder for the selected property. For a tag field, the builder displays a tag selector instead of a free-text output.
+1. Select whether the property should return a **single value** or **multiple values**.
 
    ![Controlled vocabulary](/help/assets/assets/controlled-vocabulary.png)
 
-4. Add the approved values that AI can return.
-5. For each value, provide a description that explains when the value should be selected.
-6. Add additional values as required.
+1. Add the approved values. For a tag field, select the required tags using the tag selector.
+1. Optionally, provide a definition for each value to explain when it should be selected.
+1. In the **[!UICONTROL Additional text to append]** field, enter instructions for selecting the appropriate value.
+1. In **[!UICONTROL Prompt Playground]**, test the prompt using sample assets.
+1. Review the generated values and click **[!UICONTROL Save]**.
 
-    ![Addition vocabulary](/help/assets/assets/addition-vocabulary.png)
+For example, you can configure **House Blend**, **Espresso**, and **Morning Muse** as approved values for a Coffee Blend property. Define each value to explain when the AI should select it.
 
-7. Review the configured values and their descriptions.
-8. Save the property prompt.
-
-For example, you can configure **House Blend**, **Espresso**, and **Morning Muse** as approved values for a Coffee Blend property. Define each value with a description that explains when AI should select it.
-
-The value descriptions provide additional context that helps AI select the appropriate predefined value.
-
-After configuring the controlled vocabulary, use **[!UICONTROL Prompt Playground]** to test how AI selects values for sample assets.
+The value definitions provide additional context to help AI select the appropriate predefined value.                           
 
 ## Enhance prompts using Prompt Enhancer (optional) {#prompt-enhancer}
 
@@ -236,11 +211,11 @@ To associate a prompt with a processing profile:
 1. Click **[!UICONTROL Add to Processing Profile]** from the action bar.
 1. Select the processing profile where you want to use the prompt.
 1. Save the configuration.
-![Processing profile with Brand Aware Metadata prompts](/help/assets/assets/add-processing-file.png)
+![Processing profile with Brand-Aware Metadata prompts](/help/assets/assets/add-processing-file.png)
 
 Once associated with a processing profile, the prompt can be executed when processing existing assets or automatically when new assets are uploaded to configured folders.
 
-Brand Aware Metadata supports the following processing workflows:
+Brand-Aware Metadata supports the following processing workflows:
 
 * Reprocess existing assets to populate metadata.
 * Automatically process newly uploaded assets.
@@ -249,7 +224,7 @@ Brand Aware Metadata supports the following processing workflows:
 
 Reprocess a folder to populate metadata for assets that already exist in your DAM.
 
-To apply Brand Aware Metadata to existing assets:
+To apply Brand-Aware Metadata to existing assets:
 
 1. Navigate to the folder that contains the assets.
 1. Select the folder.
@@ -264,12 +239,12 @@ To apply Brand Aware Metadata to existing assets:
 
 ### Process new assets automatically {#process-new-assets}
 
-Configure a folder to automatically process newly uploaded assets using a Brand Aware Metadata processing profile.
+Configure a folder to automatically process newly uploaded assets using a Brand-Aware Metadata processing profile.
 
 To automatically process new assets:
 
 1. Open the folder configuration.
-1. Associate the required Brand Aware Metadata processing profile.
+1. Associate the required Brand-Aware Metadata processing profile.
 1. Save the configuration.
 1. Upload new assets to the configured folder.
 1. Verify that metadata is generated after processing completes.
@@ -285,7 +260,9 @@ After processing completes:
 
 ## Limitations {#limitations}
 
-[!DNL Brand Aware Metadata] is currently available in beta.
+>[!NOTE]
+>
+>GenAI Metrics and Quality Report has significantly reduced functionality for HIPAA customers.
 
 Keep the following considerations in mind before applying BAM at scale:
 
