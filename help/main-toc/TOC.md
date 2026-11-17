@@ -866,10 +866,9 @@ user-guide-title: AEM as a Cloud Service
     + [Smart Collections in Content Hub](/help/assets/smart-collection-content-hub.md)
     + [Frequently asked questions for Content Hub](/help/assets/frequently-asked-questions-content-hub.md)  
   + Best practices{#best-practices}
-    + {hide-from-toc} [Brand Aware Metadata best practices: a WKND tutorial](/help/assets/brand-aware-metadata-best-practices.md)
-    + {hide-from-toc} [Metadata best practices: before and after migrating to AEM Assets](/help/assets/metadata-best-practices-guide.md)
+    + [Brand Aware Metadata best practices: a WKND tutorial](/help/assets/brand-aware-metadata-best-practices.md)
+    + [Metadata best practices: Plan, build, and govern](/help/assets/metadata-best-practices.md)
     + [Search best practices](/help/assets/search-best-practices.md)
-    + [Metadata management and best practices](/help/assets/metadata-best-practices.md)
   + Integration with Figma {#integration-figma}
     + [Native integration with Figma](/help/assets/integrate-aem-assets-with-figma.md)
   + Integration with Adobe Workfront {#integrations}
