@@ -322,6 +322,10 @@ Admin View in Adobe Experience Manager Assets provides CSV metadata import and e
 
 Yes. Full or metadata-only reprocessing in Adobe Experience Manager Assets can overwrite manually edited properties when a metadata profile is reapplied or embedded XMP metadata is extracted again and updates the same properties. Review curated values such as Title, Description, and Alt Text before reprocessing. Assets View provides Advanced options to select the processing work required. Avoid unnecessary metadata extraction, and review selected processing profiles and post-processing workflows for additional metadata updates.
 
+### Why is custom metadata unavailable for filtering? {#custom-metadata-unavailable-for-filtering}
+
+To enable filtering on a custom metadata field, the custom field needs to be added to the Searchable Property Index.
+
 ## Related articles {#related-articles}
 
 * [Manage metadata of your digital assets](/help/assets/manage-metadata.md)
