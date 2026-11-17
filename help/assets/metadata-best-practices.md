@@ -1,5 +1,5 @@
 ---
-title: Metadata best practices: Plan, build, and govern
+title: "Metadata best practices: Plan, build, and govern"
 description: Plan, build, and govern metadata in AEM Assets with action-oriented best practices, whether you are starting from scratch or bringing assets from another system including Brand-Aware Metadata.
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
