@@ -383,11 +383,9 @@ While Java 25 runtime will be required by May 2027, building with Java 25 will r
 
 #### CDN-level OpenID Connect (OIDC) Authentication for Edge Delivery Services {#cdn-level-authentication}
 
-CDN-level OIDC authentication lets you require sign-in with your identity provider (IdP) before the Adobe-managed CDN serves selected Edge Delivery Services pages. Authentication is enforced at the CDN, so unauthenticated requests are redirected to the IdP and never reach your content. Restricting access by user group is not supported.
+Generally Available in **early December** for Edge Delivery Services using the Adobe-managed CDN, CDN-level OIDC authentication lets you require sign-in with your identity provider (IdP) before selected pages are served. Authentication is enforced at the CDN, so unauthenticated requests are redirected to the IdP and never reach your content. Restricting access by user group is not supported.
 
-You configure it in `config/cdn.yaml` through the Edge Delivery configuration pipeline in Cloud Manager: define an OIDC authenticator, then add a rule that applies it to the domains and paths you want to protect. Everything else on the site stays public. Any standards-compliant OIDC IdP is supported, such as Microsoft Entra ID or Okta.
-
-Learn more in the [CDN OIDC authentication reference](https://www.aem.live/developer/byo-cdn-adobe-managed-cdn-config#cdn-oidc-authentication) and the step-by-step [tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/edge-delivery-services/authentication/cdn-oidc-authentication).
+Learn more in the [CDN OIDC authentication documentation](https://www.aem.live/developer/byo-cdn-adobe-managed-cdn-config#cdn-oidc-authentication) and the thorough step-by-step [tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/edge-delivery-services/authentication/cdn-oidc-authentication).
 
 AEM as a Cloud Service implementations that serve content from the Publish tier should use the separate [OIDC on Publish Tier](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier) feature, which supports user groups. 
 
