@@ -33,7 +33,7 @@ There are two editors available for Content Fragments. The editor described in t
 This editor provides:
 
 * [Auto-saving](#saving-autosaving), to prevent accidental loss of edits.
-* [In-line uploading of assets as content references](#reference-images), without having to upload them to the Asset DAM first.
+* [Use of the Content Advisor to upload assets as content references](#reference-images), without having to upload them to the Asset DAM first.
 * [Generate Variations](#generate-variations-ai) to use the Generative AI to accelerate content creation based on prompts.
 * [Preview](#preview-content-fragment) of the rendered experience delivered by the Content Fragment.
 * Ability to [Publish](#publish-content-fragment) and [Unpublish](#unpublish-content-fragment) from the editor.
