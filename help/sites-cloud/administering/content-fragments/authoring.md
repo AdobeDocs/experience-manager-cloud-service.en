@@ -374,11 +374,11 @@ To reference a local asset, you can:
 
   ![Content Fragment Editor - browse](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-content-reference-browse.png)
 
-* From the [Content Advisor](/help/assets/search-assets.md#asset-picker), you can:
+  From the [Content Advisor](/help/assets/search-assets.md#asset-picker), you can:
 
-  * select the assets you need, 
-  * **Search with keywords**, 
-  * or **Upload** a new (local) asset; you can either browse or drag and drop the new asset file directly
+  * select the assets you need
+  * **Search with keywords**
+  * **Upload** a new (local) asset; you can either browse or drag and drop the new asset file directly
 
   ![Content Fragment Editor - browse local content](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-content-reference-browse-local.png)
 
