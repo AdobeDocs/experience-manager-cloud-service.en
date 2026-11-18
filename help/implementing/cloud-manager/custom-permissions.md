@@ -195,7 +195,7 @@ For details on predefined roles, see [AEM as a Cloud Service Team and Product Pr
 
 Default product profiles and Cloud Manager roles continue to function as previously.
 
-### Can I edit predefined permission profiles?
+### Can I edit predefined permission profiles? 
 
 No. Default profiles are non-editable. You cannot add or remove permissions from the default permission profile. You can only add or remove users from predefined profiles.
 
