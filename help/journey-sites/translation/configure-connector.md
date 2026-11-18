@@ -49,6 +49,8 @@ The following sections describe these steps in more detail.
 
 The first step is to choose which translation service you want to use. There are many choices for human and machine translation services available to AEM. Most providers offer a translator package to be installed. See the [Additional Resources](#additional-resources) section for a selection of options available.
 
+To use a large language model as your translation service, see [Configuring AI Translation Integration](/help/sites-cloud/administering/translation/ai-translation-integration.md).
+
 >[!NOTE]
 >
 >The translation specialist is generally responsible for choosing which translation service to use, but the administrator typically is responsible for installing the required translation connector package.

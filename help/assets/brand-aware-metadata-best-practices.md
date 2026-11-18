@@ -1,8 +1,6 @@
 ---
-title: Brand Aware Metadata Best Practices
-description: Learn Brand Aware Metadata best practices in AEM Assets through a WKND example, from tags and schema fields to brand prompts, vocabularies, and QA.
-hidefromtoc: 'yes'
-hide: true
+title: Brand-Aware Metadata Best Practices
+description: Learn Brand-Aware Metadata best practices in AEM Assets through a WKND example, from tags and schema fields to brand prompts, and controlled vocabularies.
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive"
 product_v2:
@@ -15,11 +13,11 @@ role_v2:
     internal-label: User
 ---
 
-# Brand Aware Metadata best practices: a WKND tutorial {#brand-aware-metadata-best-practices}
+# Brand-Aware Metadata best practices: a WKND tutorial {#brand-aware-metadata-best-practices}
 
 Complete, accurate metadata is what makes assets findable, reusable, and accessible. Producing it takes real effort. For every asset, someone has to understand the content, know the business context, and fill in descriptions, classifications, and other fields in a way that follows your brand's rules and taxonomy. Generic AI capabilities describe what is visible in an asset, but they cannot know your brand voice, your campaigns, your approved vocabulary, or details that exist only in other systems.
 
-[!DNL Brand Aware Metadata] (BAM) in [!DNL Adobe Experience Manager Assets] generates values for your own metadata properties, such as free-text descriptions, alt text, tag-based classifications, and dropdown selections, using brand context, approved values, and existing metadata. The quality of the generated metadata, however, depends directly on how you set it up.
+[!DNL Brand-Aware Metadata] (BAM) in [!DNL Adobe Experience Manager Assets] generates values for your own metadata properties, such as free-text descriptions, alt text, tag-based classifications, and dropdown selections, using brand context, approved values, and existing metadata. The quality of the generated metadata, however, depends directly on how you set it up.
 
 This article applies Adobe's recommended best practices to a complete, end-to-end example for **WKND**, a fictitious adventure-travel brand. You prepare the metadata model, write and refine prompts, add brand and business context, and validate the results before you scale. By the end, four brand-specific properties are generated automatically for every asset in a campaign folder.
 
@@ -36,11 +34,11 @@ Along the way, you use five BAM capabilities: **[!UICONTROL Prompt Playground]**
 
 >[!NOTE]
 >
->This article builds on [Generate Brand Aware Metadata](/help/assets/brand-aware-metadata.md), which describes each BAM capability in detail. [!DNL Brand Aware Metadata] is currently available in beta.
+>This article builds on [Generate Brand-Aware Metadata](/help/assets/brand-aware-metadata.md), which describes each BAM capability in detail.
 
 ## Best practices at a glance {#best-practices-at-a-glance}
 
-The following table lists Adobe's recommended best practices for Brand Aware Metadata, in the order in which you first apply them in this tutorial.
+The following table lists Adobe's recommended best practices for Brand-Aware Metadata, in the order in which you first apply them in this tutorial.
 
 | Best practice | Where you apply it |
 |---|---|
@@ -76,7 +74,7 @@ This tutorial uses two sample assets, both stored in `/content/dam/wknd/campaign
 
 Ensure the following:
 
-* Access to [!DNL Adobe Experience Manager Assets as a Cloud Service] with [!DNL Brand Aware Metadata] enabled. To request access, see [Get access to Brand Aware Metadata](/help/assets/brand-aware-metadata.md#get-access-to-brand-aware-metadata).
+* Access to [!DNL Adobe Experience Manager Assets as a Cloud Service] with [!DNL Brand-Aware Metadata] enabled.
 * Administrator permissions, or the permissions required to create tags, [edit metadata schemas](/help/assets/metadata-schemas.md#Permissions-required-to-edit-metadata-schemas), create processing profiles, and access **[!UICONTROL Prompt Editor]**.
 * The folder `/content/dam/wknd/campaigns/winter-backcountry-2027` with a few sample assets.
 
@@ -257,7 +255,6 @@ Start with one property and a short, plain-language prompt. Do not try to popula
 1. Click **[!UICONTROL Create property prompt]**.
 1. Configure the following fields:
    * **[!UICONTROL Prompt name]**: `WKND alt text`
-   * **[!UICONTROL Group]**: create a group named `WKND`, so that all WKND prompts stay together.
    * **[!UICONTROL Metadata form]**: `WKND`
    * **[!UICONTROL Metadata property]**: `Iptc4xmpCore:AltTextAccessibility`. [The dropdown menu just displays the properties that you configured while defining the properties for WKND schema](#create-wknd-schema).
 1. In the **[!UICONTROL Prompt]** field, enter:
@@ -320,7 +317,7 @@ A first draft is rarely your best prompt. [!UICONTROL Prompt Enhancer] rewrites 
 A brand prompt holds context that applies to all property prompts in a processing profile, so you write it once. Use a brand prompt for any higher-level context, such as voice, global rules, naming conventions, or campaign details.
 
 1. Navigate to **[!UICONTROL Assets]** > **[!UICONTROL Brand-Aware Metadata]** > **[!UICONTROL Brand Prompts]** and click **[!UICONTROL Create brand prompt]**.
-1. In **[!UICONTROL Prompt name]**, specify `WKND Winter Backcountry 2027`, and in **[!UICONTROL Group]**, select `WKND`.
+1. In **[!UICONTROL Prompt name]**, specify `WKND Winter Backcountry 2027`.
 1. In the **[!UICONTROL Prompt]** field, enter:
 
    ```
@@ -363,14 +360,11 @@ Start with as little definition as possible. Then run the prompt to learn how mu
 
 1. Click **[!UICONTROL Create prompt]** and configure the following fields:
    * **[!UICONTROL Prompt name]**: `WKND Activity Type`
-   * **[!UICONTROL Group]**: `WKND`
    * **[!UICONTROL Metadata form]**: `WKND`
    * **[!UICONTROL Metadata property]**: `wknd:activity`
 
    Because `Activity type` is a tag field, the editor displays the controlled vocabulary builder with a tag selector instead of a free-text output.
-1. Select whether the property returns a **single value** or **multiple values**. For this example, select a single value.
-
-   As a best practice, select Multiple values only in case of tags. Multiple values is not a recommended option for a dropdown field. 
+1. Select whether the property returns a **single value** or **multiple values**. For this example, select a single value.    
 
 1. Add the approved values. The tag selector shows only the tags under the root path that you configured in [Step 3](#add-activity-type-field). Select the leaf tags under `Snow Sports`, `Climbing`, `Water Sports`, `Cycling`, and `Camp & Trek`. Select the option to return **Bottom-level tags only**, so that BAM does not return a category tag such as `Snow Sports`. You can also click **Add all** to add all tags created under **Activity**.
 1. Leave the value definitions empty for now. In the **Additional text to append** field, specify:
@@ -396,8 +390,8 @@ Asset B returns **Snowboarding**. It is close but not what WKND wants. The image
 
 >[!IMPORTANT]
 >
->* If you add new tags or dropdown options later, add them to the prompt's controlled vocabulary as well. Existing prompts do not pick up new values automatically.
->* A metadata property can use either generative output or controlled vocabulary, not both.
+>If you add new tags or dropdown options later, add them to the prompt's controlled vocabulary as well. Existing prompts do not pick up new values automatically.
+
 
 ## Step 9: Add context with referenced properties {#add-referenced-properties}
 
@@ -436,7 +430,6 @@ BAM runs after all other metadata extraction is complete. By the time BAM runs, 
 
 1. Click **[!UICONTROL Create prompt]** and configure the following fields:
    * **[!UICONTROL Prompt name]**: `WKND Region`
-   * **[!UICONTROL Group]**: `WKND`
    * **[!UICONTROL Metadata form]**: `WKND`
    * **[!UICONTROL Metadata property]**: `wknd:region`
    * **[!UICONTROL Referenced properties]**: `wknd:shootBrief`
@@ -471,7 +464,6 @@ The campaign is not in the image or in the file name. It comes from the brand pr
 
 1. Click **[!UICONTROL Create prompt]** and configure the following fields:
    * **[!UICONTROL Prompt name]**: `WKND Campaign`
-   * **[!UICONTROL Group]**: `WKND`
    * **[!UICONTROL Metadata form]**: `Wknd`
    * **[!UICONTROL Metadata property]**: `wknd:campaign`
 1. Select a single value, and add the four campaigns from the dropdown.
@@ -500,7 +492,7 @@ Generating metadata at scale is only as trustworthy as your review process. Do n
 1. **Start with a small, representative sample.** Select about 20 existing assets in the folder, then click **[!UICONTROL Reprocess Assets]**. For details, see [Apply BAM to existing assets](/help/assets/brand-aware-metadata.md#apply-bam-to-existing-assets).
 1. Upload one new asset to the folder, and verify that it is processed automatically with the same profile.
 1. Open a processed asset, click **[!UICONTROL Properties]**, and review the values on the `WKND` tab.
-1. In **[!UICONTROL Prompt Editor]**, open the quality report. Filter by date range and by lower confidence, so that you spot-check the assets the model was least sure about instead of reviewing every asset.
+1. In **[!UICONTROL Brand-Aware Metadata Manager]**, open the quality report. Filter by date range and by lower confidence, so that you spot-check the assets the model was least sure about instead of reviewing every asset.
 1. Refine the prompts if required, and repeat the sample run.
 1. Get organizational sign-off. Treat approval of AI usage as a planned step, because it is frequently the real gate on going live. Start with the fields you are most confident in, and expand from there.
 1. Reprocess the rest of the folder.
@@ -540,6 +532,7 @@ In summary:
 ## Related articles {#related-articles}
 
 * [Generate Brand Aware Metadata](/help/assets/brand-aware-metadata.md)
+* [Brand Aware Metadata Tutorials](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/metadata/brand-aware-metadata)
 * [Metadata schemas](/help/assets/metadata-schemas.md)
 * [Administering tags](/help/sites-cloud/administering/tags.md)
 * [Use asset microservices and processing profiles](/help/assets/asset-microservices-configure-and-use.md)
