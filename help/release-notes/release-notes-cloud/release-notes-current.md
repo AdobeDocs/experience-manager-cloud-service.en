@@ -375,11 +375,11 @@ The AEM Governance Agent can list known vulnerabilities across one or more AEM i
 
 #### Java 25 {#java25-sdk}
 
-AEM Cloud Service now supports Java 25, both for build and runtime so you can take advantage of performance improvements and modern Java features. Use the AEM Cloud Service SDK to validate your code for Java 25, which your AEM license entitles you to download from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=java*+25*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=8).
+AEM Cloud Service now supports Java 25, both for build and runtime so you can take advantage of performance improvements and modern Java features. Use the AEM Cloud Service SDK to validate your code for Java 25. Your AEM license entitles you to download Oracle Java 25 from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=java*+25*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=8).
 
-Starting January, lower environments will be upgraded to Java 25 runtime to give you an opportunity to validate that your applications work as expected, before staging and production are upgraded in May. We recommend doing this proactively by configuring an opt-in Cloud Manager [environment variable](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#java-25-runtime-opt-in) and reporting any issues while there is still time to temporarily revert back to Java 21 runtime.
+Starting in January, lower environments will be upgraded to the Java 25 runtime so you can validate that your applications work as expected. Staging and production environments will be upgraded in May 2027. Adobe recommends validating proactively and as early as possible by configuring the opt-in Cloud Manager [environment variable](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#java-25-runtime-opt-in). Report any issues early, while you can still temporarily revert to the Java 21 runtime.
 
-While Java 25 **runtime** will be required by May 2027, **building** with Java 25 will remain optional. Learn more about [Java 25 support](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#java-25-support).
+The Java 25 **runtime** will be required by May 2027, but **building** with Java 25 remains optional. Learn more about [Java 25 support](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#java-25-support).
 
 #### CDN-level OpenID Connect (OIDC) Authentication for Edge Delivery Services {#cdn-level-authentication}
 
