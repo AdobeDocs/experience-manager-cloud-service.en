@@ -42,7 +42,7 @@ Authors can create reusable document designs, add digital signature fields, and 
 
 ### Exclude attachments from the Submission PDF {#exclude-attachments-submission-pdf}
 
-Authors can exclude uploaded file attachments from the Submission PDF (Document of Record) for Adaptive Forms based on Core Components. This option can reduce the size of the PDF when files are delivered separately through the configured submit action.
+Authors can exclude uploaded file attachments from the Submission PDF (Document of Record) for Adaptive Forms based on Core Components. This option can reduce the size of the PDF when files are delivered separately through the configured submit action. When attachments are excluded, their size and number do not affect PDF generation time.
 
 To request access, email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address. For instructions, see [Exclude file attachments from the Submission PDF](/help/forms/generate-document-of-record-core-components.md#exclude-file-attachments).
 

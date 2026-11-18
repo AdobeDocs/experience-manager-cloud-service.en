@@ -129,7 +129,7 @@ Perform the following steps to configure an Adaptive Form to automatically gener
 
 ## Exclude file attachments from the Submission PDF {#exclude-file-attachments}
 
-You can exclude files uploaded to an Adaptive Form from its Submission PDF. This option applies to Adaptive Forms based on Core Components and can help reduce the size of the PDF.
+You can exclude files uploaded to an Adaptive Form from its Submission PDF. This option applies to Adaptive Forms based on Core Components and can help reduce the size of the PDF. When attachments are excluded, their size and number do not affect PDF generation time.
 
 >[!NOTE]
 >
@@ -141,6 +141,8 @@ You can exclude files uploaded to an Adaptive Form from its Submission PDF. This
 1. Select **[!UICONTROL Generate Document of Record]** or **[!UICONTROL Associate form template as the Document of Record template]**.
 1. Select **[!UICONTROL Exclude file attachments from Document of Record]**.
 1. Select **[!UICONTROL Done]** and save the form.
+
+![Document of Record settings with Generate Document of Record selected and Exclude file attachments from Document of Record enabled.](assets/exclude-file-attachments-from-submission-pdf.png)
 
 This setting excludes uploaded files from the Submission PDF. Delivery of the submitted files separately depends on the configured submit action.
 
@@ -449,10 +451,10 @@ To localize the branding information that you enter in the Document of Record ta
 
     1. **Form Field Properties**: 
 
-       * **For Check Box and Radio Button components, show only the selected values**: Setting the property displays only selected values of check box and radio button in [!UICONTROL Document of Record].
-       * **Separator for multiple value(s)**: You can choose any separator such as comma or line break to display multiple values.
-       * **Options Alignment**: You can select the desired alignment (Horizontal, Vertical, Same as adaptive Form) to set the alignment for the fields such as check box or radio button to be displayed on [!UICONTROL Document of Record]. By default, the vertical alignment is set for the fields in [!UICONTROL Document of Record]. Setting the properties from the [!UICONTROL Form Field Properties] of DoR overwrites the properties set in the [!UICONTROL Item Alignment] for the fields on an Adaptive Form. In case, you select [!UICONTROL Same as Aaptive form] option, the alignment as configured in an Adaptive Form author instance is used for [!UICONTROL Document of Record] fields.  
-       * **Number of options for horizontal alignment**:You can set the number of options to be displayed on the Submission PDF for the horizontal alignment. 
+        * **For Check Box and Radio Button components, show only the selected values**: Setting the property displays only selected values of check box and radio button in [!UICONTROL Document of Record].
+        * **Separator for multiple value(s)**: You can choose any separator such as comma or line break to display multiple values.
+        * **Options Alignment**: You can select the desired alignment (Horizontal, Vertical, Same as adaptive Form) to set the alignment for the fields such as check box or radio button to be displayed on [!UICONTROL Document of Record]. By default, the vertical alignment is set for the fields in [!UICONTROL Document of Record]. Setting the properties from the [!UICONTROL Form Field Properties] of DoR overwrites the properties set in the [!UICONTROL Item Alignment] for the fields on an Adaptive Form. In case, you select [!UICONTROL Same as Aaptive form] option, the alignment as configured in an Adaptive Form author instance is used for [!UICONTROL Document of Record] fields.  
+        * **Number of options for horizontal alignment**:You can set the number of options to be displayed on the Submission PDF for the horizontal alignment. 
 
        **Display labels for multi-select dropdown**
 
@@ -462,12 +464,12 @@ To localize the branding information that you enter in the Document of Record ta
 
     1. **Master Page Properties**:
 
-       * **Logo Image**: You can either choose to use the logo image from the Adaptive Form, choose one from DAM, or upload one from your computer.
-       * **Form Title**: Title of the DoR.
-       * **Header Text**: Text that appears at the header section of the Submission PDF.
-       * **Disclaimer Label**: Label of disclaimer.
-       * **Disclaimer**: Text which specifies the scope of rights and obligations on the Submission PDF.
-       * **Disclaimer Text**: Text of disclaimer.
+        * **Logo Image**: You can either choose to use the logo image from the Adaptive Form, choose one from DAM, or upload one from your computer.
+        * **Form Title**: Title of the DoR.
+        * **Header Text**: Text that appears at the header section of the Submission PDF.
+        * **Disclaimer Label**: Label of disclaimer.
+        * **Disclaimer**: Text which specifies the scope of rights and obligations on the Submission PDF.
+        * **Disclaimer Text**: Text of disclaimer.
 
 1. To save the branding changes, select **[!UICONTROL Done]**.
 
