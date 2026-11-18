@@ -463,7 +463,7 @@ To help organizations plan testing and validation ahead of the necessary Java 25
 
 AEM Cloud Service continues to support compiling customer code with Java 11, Java 17, and Java 21. However, Adobe recommends building with Java 25 (once available in AEM) to take full advantage of the latest language features and performance improvements.
 
-### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Feaatures {#foundation-early-adopter}
+### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Features {#foundation-early-adopter}
 
 #### CDN Log Forwarding to Amazon S3, Dynatrace, and New Relic (Beta Program) {#cdn-logforwarding}
 
@@ -476,6 +476,12 @@ You can now forward CDN logs to **Amazon S3, Dynatrace, and New Relic**. Log for
 Log Forwarding now supports mutual TLS (mTLS) client certificate authentication for Splunk, Elasticsearch/OpenSearch, and HTTPS destinations, for both AEM logs (including Apache/Dispatcher) and CDN logs. AEM as a Cloud Service presents a client certificate when it connects to your logging destination, so the destination can verify that the logs come from your environment.
 
 mTLS for Log Forwarding is in beta. To join the Beta Program, email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) with your program ID and environment IDs. Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md#mtls).
+
+#### CAPTCHAs and Bot Category WAF Flags at the Origin (Beta Program) {#captcha-beta}
+
+Customers licensing Extended Security can configure traffic filter rules with CAPTCHA challenges – at the origin – to block unwanted bots. In addition, you can log or block requests at the origin that match specific types of bots using a new set of WAF Flags.
+
+To participate in the beta, email [aemcs-waf-adopter@adobe.com](mailto:aemcs-waf-adopter@adobe.com).
 
 #### CX Enterprise Coworker: Developer-Focused Capabilities (Beta Program) {#coworker-ai-troubleshooting-beta}
 
