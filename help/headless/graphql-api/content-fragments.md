@@ -1237,7 +1237,7 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 * Logical AND also exists, but is (often) implicit
 
 * You can query on field names that correspond to the fields within the Content Fragment Model
-  * See [Sample Query - Full Details of a Company's CEO and Employees](/help/headless/graphql-api/sample-queries.md#sample-full-details-company-ceos-employees)
+  * See [Sample Query - Full Details of a Company's CEO and Employees (Fragment Reference)](/help/headless/graphql-api/sample-queries.md#sample-full-details-company-ceos-employees-fragment-reference)
 
 * In addition to the fields from your model, there are some system-generated fields (preceded by underscore):
 
