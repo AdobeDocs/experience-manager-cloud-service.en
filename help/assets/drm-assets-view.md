@@ -23,11 +23,11 @@ An asset can have multiple licenses. Before downloading a licensed asset, you ne
 
 ## Upload a license {#upload-and-review-license}
 
-You can create a reusable license from a usage-rights document. AI extracts the information from the document, but you need to review the information before saving it.
+You can create a license from a usage-rights document. AI extracts the information from the document, but you need to review the information before saving it.
 
 * In **[!UICONTROL Licenses]**, click **[!UICONTROL Upload license]**. This is shown in the figure below.
    ![Licenses](assets/licenses.png)
-* The **[!UICONTROL Assign License]** tab appears. Upload the source usage-rights document and click **[!UICONTROL Next]**.
+* The **[!UICONTROL Assign License]** window appears. Upload the source usage-rights document and click **[!UICONTROL Next]**.
    ![Uploading](assets/uploading.png)
 * Enter a name for the license.
 * Review the extracted usage-rights information including the usage dates, regions, channels, and restrictions.
@@ -68,7 +68,7 @@ Alternatively, you can open the asset details page and assign a license by click
 An asset can have more than one license. To unassign license from an asset, follow the below steps:
 
 * Open the asset details page. 
-* If multiple licenses are assigned to an asset, click the **[!UICONTROL License]** drop-down to review each license and its restrictions.
+* If multiple licenses are assigned to an asset, click the **[!UICONTROL License]** drop-down and review each license and its restrictions.
 * To remove a license, click **[!UICONTROL Unassign license]** > **[!UICONTROL Unassign]**.  
 
 ![Unassign license](assets/unassign.png)
