@@ -379,7 +379,7 @@ AEM Cloud Service now supports Java 25, both for build and runtime so you can ta
 
 Starting in January, lower environments will be upgraded to the Java 25 runtime so you can validate that your applications work as expected. Staging and production environments will be upgraded in May 2027. Adobe recommends validating proactively and as early as possible by configuring the opt-in Cloud Manager [environment variable](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#java-25-runtime-opt-in). Report any issues early, while you can still temporarily revert to the Java 21 runtime.
 
-The Java 25 **runtime** will be required by May 2027, but **building** with Java 25 remains optional. Learn more about [Java 25 support](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#java-25-support).
+The Java 25 **runtime** will be applied to all environments by May 2027, but **building** with Java 25 remains optional. Learn more about [Java 25 support](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#java-25-support).
 
 #### CDN-level OpenID Connect (OIDC) Authentication for Edge Delivery Services {#cdn-level-authentication}
 
@@ -403,16 +403,16 @@ If you restrict inbound connections to your systems by IP address, you may have 
 
 New egress IP addresses are being added on January 11, 2027, at 00:00 UTC. If your allowlist doesn't include them, valid traffic from the CDN, including log data, may be rejected.
 
-#### Mandatory migration from Adobe's built-in APM integration (New Relic) to OpenTelemetry {#otel-migration}
-
-OpenTelemetry (OTel) is replacing Adobe's built-in APM integration (New Relic), which will be disabled at the end of **November 2026**. If your organization is using the built-in New Relic APM integration, see the [FAQ](/help/implementing/developing/introduction/opentelemetry-apm-integration.md#faq) for more information.
-
 **What to do before January 11, 2027:**
 
 1. Update your allowlist to include every IPv4 and IPv6 range in [this public IP list](https://api.fastly.com/public-ip-list). The list already includes the new addresses.
 2. To avoid this in the future, automate the update by monitoring the [public IP list API](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/) for changes, or by subscribing to [this status page](https://fastlystatus.com/) for "IP address announcements."
 
 If you don't allowlist the CDN's IP addresses, no action is required.
+
+#### Mandatory migration from Adobe's built-in APM integration (New Relic) to OpenTelemetry {#otel-migration}
+
+OpenTelemetry (OTel) is replacing Adobe's built-in APM integration (New Relic), which will be disabled at the end of **November 2026**. If your organization is using the built-in New Relic APM integration, see the [FAQ](/help/implementing/developing/introduction/opentelemetry-apm-integration.md#faq) or [tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/observability-via-opentelemetry/opentelemetry-in-aem) for more information.
 
 #### Deprecation of Domain-specific AEM MCP Server {#domain-mcp-deprecation}
 
