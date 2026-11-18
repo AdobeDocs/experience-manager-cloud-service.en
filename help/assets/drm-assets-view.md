@@ -21,10 +21,6 @@ The Digital Rights Management (DRM) Service in Adobe Experience Manager Assets v
 
 An asset can have multiple licenses. Before downloading a licensed asset, you need to review the restrictions and accept the applicable license terms.
 
-## Prerequisites {#prerequisites}
-
-Before you begin, confirm you have the source usage rights document available so that you can check the extracted information which gets populated in the metadata fields.
-
 ## Upload a license {#upload-and-review-license}
 
 You can create a reusable license from a usage-rights document. AI extracts the information from the document, but you need to review the information before saving it.
@@ -38,7 +34,6 @@ You can create a reusable license from a usage-rights document. AI extracts the 
 * Click **[!UICONTROL Apply and Save]**.
 
 The newly created license is now displayed in the license list.
-![Newly created license](assets/newlicense.png)
 
 >[!NOTE]
 > 
@@ -46,24 +41,22 @@ The newly created license is now displayed in the license list.
 
 ## View license {#view-license}
 
-You can view the saved license records under **[!UICONTROL Licenses]**. Use it to find a license, review its usage rights, and view the assets associated with it.
+You can view the saved license under **[!UICONTROL Licenses]**. Use it to find a license, review its usage rights, and view the assets associated with it.
 
-To view a particular license, click **[!UICONTROL View]**. The **[!UICONTROL Property list]** tab appears. You can review and update the license details, including the expiration date. 
+To view a particular license, click **[!UICONTROL View]**. In the **[!UICONTROL Property list]** window, you can review and update the license details, including the expiration date from the **[!UICONTROL Extracted properties]** tab and view the list of assets using that particular license from the **[!UICONTROL Assets using this license]** tab. 
 
 ![Review license](assets/review.png)
-
-To view the list of assets using that particular license, click **[!UICONTROL Assets using this license]**.
 
 ## Assign licenses to assets {#assign-licenses}
 
 You can assign an existing license to an asset, or upload a new license document while assigning.
 
-* Select the asset and click the ![More icon](assets/do-not-localize/more-icon.svg). Click **[!UICONTROL Assign License]**.
+* Select the asset and click ![More icon](assets/do-not-localize/more-icon.svg). Click **[!UICONTROL Assign License]**.
 
 ![Assign license](assets/assign.png)
 
-Alternatively, you can open an asset by double clicking and assign a license by clicking **[!UICONTROL Assign license]**.
-* The **[!UICONTROL Assign license]** tab appears. Choose an existing license from the list. Alternatively, you can upload a new license document to create a new license.
+Alternatively, you can open the asset details page and assign a license by clicking **[!UICONTROL Assign license]**.
+* The **[!UICONTROL Assign license]** window appears. Choose an existing license from the list. Alternatively, you can upload a new license document to create a new license.
 ![Upload license](assets/upload.png)
 
 * Select **[!UICONTROL Next]** and review the metadata information.
@@ -74,13 +67,13 @@ Alternatively, you can open an asset by double clicking and assign a license by 
 
 An asset can have more than one license. To unassign license from an asset, follow the below steps:
 
-* Double-click the asset to open it. 
-* If multiple licenses are assigned to an asset, click the drop-down to review each license and its restrictions.
+* Open the asset details page. 
+* If multiple licenses are assigned to an asset, click the **[!UICONTROL License]** drop-down to review each license and its restrictions.
 * To remove a license, click **[!UICONTROL Unassign license]** > **[!UICONTROL Unassign]**.  
 
 ![Unassign license](assets/unassign.png)
 
-Alternatively, you can unassign a license by selecting the asset. Click the ![More icon](assets/do-not-localize/more-icon.svg). Click **[!UICONTROL Unassign License]**.
+Alternatively, you can unassign a license by selecting the asset. Click ![More icon](assets/do-not-localize/more-icon.svg) > **[!UICONTROL Unassign License]**.
 
 
 ## Download assets with license {#download-licensed-assets}
@@ -89,16 +82,15 @@ You can download an asset that has license. Downloading an asset requires you to
 
 * Select the licensed asset and click ![Download](assets/do-not-localize/download-icon.png) to start the download. 
 
-Alternatively you can open the asset by double clicking and click **[!UICONTROL Download]**.
+Alternatively you can open the asset details page and click **[!UICONTROL Download]**.
 
 ![Download licensed asset](assets/download.png)
 
-* Review the usage-rights information and restrictions.
+* Review the license details information and restrictions.
 * Select the **[!UICONTROL I have read and accept all the terms and conditions]** check box and click **[!UICONTROL Proceed]**.
 
 ![Downloading licensed asset](assets/accept.png)
-* Click **[!UICONTROL Ok]** from the **[!UICONTROL Downloading Asset]** tab.
-![Download tab](assets/downloading.png)
+* Click **[!UICONTROL Ok]** to procced with the download.
 
 **See also**
 
