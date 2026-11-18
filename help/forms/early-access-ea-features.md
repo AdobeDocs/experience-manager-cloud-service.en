@@ -40,6 +40,12 @@ Authors can create reusable document designs, add digital signature fields, and 
 * **Configure accessibility while authoring:** Set accessibility roles, screen reader text and precedence, and navigation order, then generate tagged PDF output. These controls help authors prepare communications for readers who use assistive technologies.
 * **Create XDP templates:** Create and update existing XML Data Package (XDP) templates directly in the Interactive Communication editor, configure data bindings, and reuse fragments across document designs. Preview generated PDF output while refining the design.
 
+### Exclude attachments from the Submission PDF {#exclude-attachments-submission-pdf}
+
+Authors can exclude uploaded file attachments from the Submission PDF (Document of Record) for Adaptive Forms based on Core Components. This option can reduce the size of the PDF when files are delivered separately through the configured submit action. When attachments are excluded, their size and number do not affect PDF generation time.
+
+To request access, email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address. For instructions, see [Exclude file attachments from the Submission PDF](/help/forms/generate-document-of-record-core-components.md#exclude-file-attachments).
+
 ### Theme Editor for Core Components based Adaptive Forms {#theme-editor-core-components}
 
 Style Core Components based Adaptive Forms visually in the Theme Editor and preview changes as you work. Customize colors, typography, borders, and spacing, then reuse themes across forms to maintain a consistent appearance.
