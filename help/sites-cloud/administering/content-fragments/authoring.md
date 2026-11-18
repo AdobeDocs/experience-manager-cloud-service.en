@@ -369,7 +369,6 @@ Depending on the field definition in the Content Fragment Model you can add a si
 
 To reference a local asset, you can:
 
-* drag and drop the new asset file directly (for example, from your file system) into the **Content Reference** field
 * use the **Add entry** to specify your content path directly
 * Open the Content Advisor from either **Select existing**, or **Add entry** followed by **Browse content**:
 
@@ -379,7 +378,7 @@ To reference a local asset, you can:
 
   * select the assets you need, 
   * **Search with keywords**, 
-  * or **Upload** a new Asset.
+  * or **Upload** a new (local) asset; you can either browse or drag and drop the new asset file directly
 
   ![Content Fragment Editor - browse local content](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-content-reference-browse-local.png)
 
@@ -434,7 +433,7 @@ In **Content Reference** fields you can:
 
 * reference image assets that reside in a remote repository
 
-* upload image assets directly to the field; this avoids the need to use the Assets console to upload
+* use the Content Advisor to upload a new (local) asset, this avoids the need to use the Assets console to upload; you can either browse or drag and drop the new asset file directly
 
 >[!NOTE]
 >
