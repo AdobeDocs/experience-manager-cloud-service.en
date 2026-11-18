@@ -27,7 +27,7 @@ role_v2:
 
 # Experience Production Agentic Capabilities {#experience-production-agentic-capabilites}
 
-The Experience Production Agentic Capability of Adobe Experience Manager (AEM) as a Cloud Service collaborates with [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) to help you accelerate your content creation and automatically orchestrate changes. 
+The Experience Production Agentic Capability of Adobe Experience Manager (AEM) as a Cloud Service collaborates with [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) ![CoWorker Chat icon](forms/assets/spectrum-ai-mark.svg){width="20"} to help you accelerate your content creation and automatically orchestrate changes.
 
 A range of use-cases are covered.
 
@@ -61,6 +61,23 @@ For a fuller picture of the Forms capability, including benefits, skills, person
 | Add business logic | Create conditional logic, show/hide rules, field dependencies, and define validation rules | `aem-forms-adaptiveform-edit` | Adobe Experience Manager (AEM) | "Show the Company field only when Employee Type is Contractor"<br><br>"Make the Email field required and validate it as an email address"<br><br>"Hide the Shipping Address section when Same as Billing Address is checked"<br><br>"Show the &lt;field&gt; field only when &lt;other field&gt; is &lt;value&gt;" |
 | Configure form submit action | Set up how a form submits — cloud storage (Azure Blob, OneDrive, SharePoint doc library, SharePoint list), CRM/marketing platforms (Marketo), Adobe Experience Platform, generic web protocols (REST via FDM, OData, SOAP, REST endpoint/webhook), email, or a custom submit action bundle. Supported on both Cloud Service and Edge Delivery Services. The connector must already be configured in AEM before the skill can select and set it. | `aem-forms-adaptiveform-edit` | Adobe Experience Manager (AEM) | "Configure the form to send data to a REST endpoint"<br><br>"Submit to Azure Blob"<br><br>"Submit to SharePoint doc library"<br><br>"Submit to Adobe Experience Platform"<br><br>"Send email on submit"<br><br>"Use my custom submit action"<br><br>"Submit to REST endpoint &lt;url&gt;" |
 | Embed form onto a site's page | Place an existing or newly created form onto a designated AEM Sites page (supported on Edge Delivery Services pages only) | `aem-forms-adaptiveform-embed` | Adobe Experience Manager (AEM) | "Embed this form on the homepage of our site"<br><br>"Embed this form on &lt;page path&gt;" |
+
+## Use cases - Interactive Communications {#use-cases-interactive-communications}
+
+Interactive Communication (IC) workflows focus on print documents such as account statements, renewal notices, and service records. For prerequisites, author personas, example screenshots, and limitations, see [Interactive Communications agentic capabilities](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/interactive-communication-use-cases.md).
+
+| Use Case | Description | Skill(s) | Application | Sample Prompts |
+| --- | --- | --- | --- | --- |
+| Create a separate communication | Create a new IC from a description, brief, or enabled template. Explicitly request a separate asset to avoid changing an open communication. | `aem-forms-interactivecommunication-create` | Adobe Experience Manager (AEM) Forms | Create a separate new Interactive Communication named service-record with the title Service Record. |
+| Build from an image or PDF | Reconstruct supported source content in the open IC, or explicitly create a separate communication. Review extracted text, layout, and pagination. | `aem-forms-interactivecommunication-create`<br><br>`aem-forms-interactivecommunication-edit` | Adobe Experience Manager (AEM) Forms | Use the attached image to add only the missing Service details section to the open IC. Preserve all existing content and formatting. |
+| Inspect the current communication | Read the open document's structure, fields, bindings, and available lock information before planning changes. | `aem-forms-interactivecommunication-edit` | Adobe Experience Manager (AEM) Forms | What sections and fields are in this communication? |
+| Add or edit document content | Add supported components or change existing wording and labels, respecting editor protections. | `aem-forms-interactivecommunication-edit` | Adobe Experience Manager (AEM) Forms | Rename the Equipment name field to Machine name. |
+| Create or update a table | Specify columns, header formatting, and the exact number of blank body rows. | `aem-forms-interactivecommunication-edit` | Adobe Experience Manager (AEM) Forms | Add a Maintenance log below Equipment details with columns Date, Task, Technician, Outcome, and Notes. Use a bold header and exactly six blank body rows. Do not add sample records. |
+| Change layout or appearance | Apply supported typography, color, spacing, and placement changes to named targets. | `aem-forms-interactivecommunication-edit` | Adobe Experience Manager (AEM) Forms | Make the Service introduction heading 12 pt, bold, and dark blue (#003366). Change nothing else. |
+| Bind fields to existing data | Bind supported nonrepeating scalar fields using actual paths in the attached data model. This workflow does not attach or replace the model. | `aem-forms-interactivecommunication-edit` | Adobe Experience Manager (AEM) Forms | Bind the Technician field in Service details to /serviceRecord/technician in the attached data model. Keep its value blank. |
+| Develop content through guided discovery | Discuss section contents, resolve missing choices, and review the complete proposed scope before approving editor changes. | `aem-forms-interactivecommunication-edit` | Adobe Experience Manager (AEM) Forms | Help me plan a service follow-up communication. Suggest useful sections, but do not build anything until I approve the complete draft. |
+
+Live-editor changes remain unsaved until you select **[!UICONTROL Save]** in the IC Editor. These IC skills do not publish communications or apply Adaptive Forms rules and submission settings.
 
 
 <!--
