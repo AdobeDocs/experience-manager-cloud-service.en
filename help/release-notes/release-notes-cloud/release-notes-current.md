@@ -152,10 +152,6 @@ AEM Assets now supports [Brand Aware Metadata, an AI-powered capability that aut
 
 Updated the Adobe Experience Manager (AEM) Assets Connector for Figma to use the [embedded Content Advisor experience](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integration-figma/integrate-aem-assets-with-figma). The updated connector brings the latest Content Advisor capabilities into Figma, including enhanced asset browsing, breadcrumb-based folder navigation, importing assets to Figma canvases, and exporting assets to the AEM Assets repository.
 
-#### Website exclusion controls in Content Advisor browser extension {#website-exclusion-controls}
-
-The AEM Content Advisor browser extension now lets users [disable the floating Content Advisor widget on specific websites](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-advisor/content-advisor-browser-extension#content-advisor-browser-extension-exclusion-rules) where asset recommendations are not needed. This provides greater control over the extension's visibility, helping users tailor their browsing experience to their workflows while retaining Content Advisor functionality across other supported websites.
-
 #### Adobe Express integration {#assets-express-integration}
 
 Adobe Express integration with Assets helps all users create and edit on-brand content and increase content reuse. In this release, we have introduced support for:
@@ -245,6 +241,10 @@ For more information, see [Use AEM Content Advisor with the browser extension](/
 
 
 To send feedback, participate or learn more, send an email to `aem-content-advisor-feedback@adobe.com`.
+
+#### Website exclusion controls in Content Advisor browser extension {#website-exclusion-controls}
+
+The AEM Content Advisor browser extension now lets users [disable the floating Content Advisor widget on specific websites](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-advisor/content-advisor-browser-extension#content-advisor-browser-extension-exclusion-rules) where asset recommendations are not needed. This provides greater control over the extension's visibility, helping users tailor their browsing experience to their workflows while retaining Content Advisor functionality across other supported websites.
 
 #### Dynamic Media with OpenAPI capabilities: Video Interactivity {#video-interactivity}
 
