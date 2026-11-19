@@ -57,10 +57,10 @@ You can assign an existing license to an asset, or upload a new license document
 
    Alternatively, you can select the asset and click **[!UICONTROL Details]** to open the asset details page. To assign a license, click **[!UICONTROL Assign license]**.
 1. Choose an existing license from the list. Alternatively, you can upload a new license document to create a new license.
-![Upload license](assets/upload.png)
+   ![Upload license](assets/upload.png)
 
 1. Select **[!UICONTROL Next]** and review the metadata information.
-![Assigning license](assets/assigning.png)
+   ![Assigning license](assets/assigning.png)
 1. Click **[!UICONTROL Assign]**.
  
 ## Remove licenses {#remove-licenses}
@@ -71,9 +71,9 @@ An asset can have more than one license. To unassign license from an asset, exec
 1. If multiple licenses are assigned to an asset, select the asset from which you want to remove the license from the **[!UICONTROL License]** drop-down. Review the license and its restrictions.
 1. Click **[!UICONTROL Unassign license]**. Click **[!UICONTROL Unassign]** to confirm the license removal.  
 
-![Unassign license](assets/unassign.png)
+   ![Unassign license](assets/unassign.png)
 
-Alternatively, you can unassign a license by selecting the asset. Click more options ![More icon](assets/do-not-localize/more-icon.svg) and then click **[!UICONTROL Unassign License]**.
+   Alternatively, you can unassign a license by selecting the asset. Click more options ![More icon](assets/do-not-localize/more-icon.svg) and then click **[!UICONTROL Unassign License]**.
 
 
 ## Download assets with license {#download-licensed-assets}
@@ -82,14 +82,14 @@ If an asset has a license associated with it, downloading the asset requires you
 
 1. Select the licensed asset and click ![Download](assets/do-not-localize/download-icon.png) to start the download. 
 
-Alternatively you can select the asset and click **[!UICONTROL Details]** to open the asset details page. Click **[!UICONTROL Download]**.
+   Alternatively you can select the asset and click **[!UICONTROL Details]** to open the asset details page. Click **[!UICONTROL Download]**.
 
-![Download licensed asset](assets/download.png)
+   ![Download licensed asset](assets/download.png)
 
 1. Review the license details information and restrictions.
 1. Select the **[!UICONTROL I have read and accept all the terms and conditions]** check box and click **[!UICONTROL Proceed]**.
 
-![Downloading licensed asset](assets/accept.png)
+   ![Downloading licensed asset](assets/accept.png)
 1. Click **[!UICONTROL Ok]** to procced with the download.
 
 **See also**
