@@ -234,8 +234,8 @@ All three default to disabled (opt-in), matching the rest of the RTE config surf
 
 #### Properties Dialog Options {#properties-dialog-options}
 
-|---|---|---|
 |Option|Default|Effect|
+|---|---|---|
 |`showTableProperties`|`false`|Show the **Table Properties** item in the **Table** dropdown|
 |`showRowProperties`|`false`|Show the **Row Properties** item in the **Row** submenu|
 |`showCellProperties`|`false`|Show the **Cell Properties** item in the **Cell** submenu|
