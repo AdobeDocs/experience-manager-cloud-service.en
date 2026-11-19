@@ -430,18 +430,18 @@ The dropdown only appears when at least one option is configured. The plugin shi
 
 ```json
 {
-  toolbar: {
-    advanced: ["classes"],
-    sections: ["blocks", "format", "advanced"],
+  "toolbar": {
+    "advanced": ["classes"],
+    "sections": ["blocks", "format", "advanced"],
   },
-  actions: {
-    classes: {
-      label: "Add Custom Class",
-      options: [
-        { value: "rte-hero", label: "Hero title" },
-        { value: "rte-lede", label: "Lede paragraph" },
-        { value: "rte-callout", label: "Callout block" },
-        { value: "rte-pill", label: "Pill (inline)" },
+  "actions": {
+    "classes": {
+      "label": "Add Custom Class",
+      "options": [
+        { "value": "rte-hero", "label": "Hero title" },
+        { "value": "rte-lede", "label": "Lede paragraph" },
+        { "value": "rte-callout", "label": "Callout block" },
+        { "value": "rte-pill", "label": "Pill (inline)" },
       ],
     },
   },
@@ -449,6 +449,8 @@ The dropdown only appears when at least one option is configured. The plugin shi
 ```
 
 Each entry has value (the CSS class name written to the HTML) and label (the human-readable text shown in the dropdown). Only one class is allowed to be defined as the `value` per object in the `options` array.
+
+#### Behavior {#css-behavior}
 
 The target follows the closest-to-caret-wins rule:
 
@@ -459,10 +461,61 @@ The target follows the closest-to-caret-wins rule:
 
 Existing classes that aren't part of the configured options list are preserved untouched. Only the managed classes are swapped in/out. Consumer-set classes coexist safely with the plugin.
 
-Dropdown reflection:
+#### Dropdown Reflection {#dropdown-reflection}
 
 * With only the cursor placed, the dropdown reflects the closest managed class: the span at the caret if there is one, otherwise the block under the cursor.
 * With a selection, the dropdown reflects the managed class on the span wrapping the selection. Only when the entire selection shares the same class. Mixed selections show nothing selected.
+
+#### In-Editor Markers {#in-editor-markers}
+
+Enable with `showMarkers: true` on the classes action. Markers are off by default. The flag only affects the visual affordance (the picker, the classes it writes, and the serialized HTML are identical either way).
+
+```json
+{
+  "actions": {
+    "classes": {
+      "showMarkers": "true", // enable the in-editor markers (off by default)
+      "options": [
+        { "value": "rte-hero", "label": "Hero title" }
+      ],
+    },
+  },
+}
+```
+
+Content carrying a managed class is outlined in the editor body, with a small chip inside the outline carrying the option's label. Markers are ProseMirror decorations derived from the `class` already on the content, so they work on content authored before this feature existed, and they never reach the document or the serialized HTML (`getHTML()` output is unaffected).
+
+##### No CSS required {#no-css}
+
+Everything is inline styles plus one generated element, so any host gets the full affordance with nothing to import, mirror, or keep in sync. The plugin also tags what it marks, purely as override hooks:
+
+|Hook|Applied to|
+|---|---|
+|`.rte-class-marker`|Every marked range, and the inline label's wrapper (part of the box)|
+|`.rte-class-marker-chip`|The label element|
+|`data-rte-class`|The managed class name|
+
+These names are exported as `CLASS_MARKER` from `@aem-sites/commons-rte`. Overriding the built-in look from a stylesheet needs `!important`, since the plugin sets inline styles.
+
+##### One marker for everything {#one-marker}
+
+A classed block and a classed span get the same dashed box and the same leading label (there is nothing to tell apart). Stacking a classed span inside a classed block simply nests the two boxes. The affordance does not try to disambiguate that. When both carry the same class and resolve to the same position, the label is emitted once rather than twice.
+
+The label sits inside the box, at its head. A block gets that for free (the box is the element), but an inline run can not, because ProseMirror will not nest a widget inside an inline decoration. So the box is assembled as follows: the label's wrapper draws the left, top, and bottom edges (with the label inside it) and the run draws top, bottom, and the closing right edge. The wrapper is a plain inline box that inherits the surrounding font, so its edges wrap the same content-area height as the run's and the seam is invisible.
+
+An inline run is decorated per text node, with the closing edge only on the last fragment. An inline image or hard break inside a run does not split it. The box's edges continue over it (one box, one label), while the class itself stays on the text only. ProseMirror renders an inline decoration once per text node regardless, so a run split by another mark (e.g. `<span class="hero"><strong>bo</strong>ld</span>`) would otherwise draw a closed rectangle per fragment and read as several separate marks.
+
+##### Copy &amp; paste {#copy-paste}
+
+ProseMirror's own copy is clean and decorations never reach its clipboard serialization. A browser-native copy (a selection that crosses the editor boundary, or host code reading the live DOM) does carry the rendered marker markup. The plugin therefore sanitizes pasted HTML (`transformPastedHTML`), stripping label elements, marker classes, `data-rte-class`, and the marker's style declarations so none of it can persist into the document.
+
+##### Accessibility {#accessibility}
+
+The label is a real element with `aria-hidden="true"`, not a CSS pseudo-element. Generated content is exposed to assistive technology, so a pseudo-element would read the label out in the middle of the author's prose with no way to suppress it. Screen-reader users get the active class from the toolbar picker, which reports it as the selected value. The label is also non-editable, non-selectable and ignores pointer events, so it stays out of the way of the caret and the clipboard.
+
+##### Contrast {#contrast}
+
+Marker colors derive from `currentColor`, so they follow the host's text color in light and dark themes with nothing to configure. The dashed line is 3.4:1 light / 5.5:1 dark against the editor background, clearing the 3:1 that WCAG 1.4.11 asks of a non-text indicator, and the label is real text well above the 4.5:1 for small text. Because the mix is relative to `currentColor` rather than absolute, a host whose body text is itself low-contrast gets a low-contrast marker; that case wants a host-side override (inline styles require `!important`) or leaving the markers off.
 
 ### Variables {#variables}
 
@@ -530,7 +583,7 @@ For example, with the caret (or a selection) inside `<p>Watch the intro now</p>`
 
 A block variable is never inserted mid-sentence, so it can not replace a selection without deleting the author's text. Use `inline` for variables that should sit inside a sentence. A block variable falls back to inline placement when the selection is not text or a paragraph is not allowed at that position.
 
-#### Behavior {#behavior}
+#### Behavior {#variable-behavior}
 
 * Formatting: The inserted variable is always bare text. It does not inherit bold, links, or other marks around the caret.
 * Selected variable (`showMarkers` on): The dropdown shows it as active. Picking another variable replaces it in place and the first option, "Remove Variable", deletes it (together with its paragraph when a block variable was alone in it). If the replacement is a block variable and the selected one sits inside a sentence, the selected variable is removed and the new one is added as its own paragraph below.
