@@ -17,7 +17,7 @@ role_v2:
 
 [!DNL Adobe Experience Manager Assets] Brand-Aware Metadata (BAM) is an AI-powered capability that automatically generates custom metadata values for assets when they are uploaded or reprocessed. It reduces the need for manual metadata entry, helping you manage metadata consistently and make assets easier to find and use.
 
-BAM uses a layered prompting approach to define how AI generates values for specific metadata properties. You can use brand prompts to provide reusable brand and campaign context and property prompts to define instructions for individual metadata properties. You can also provide additional context through referenced properties and restrict generated values to predefined options using controlled vocabulary. BAM also provides a Prompt Playground to preview generated metadata and a Prompt Enhancer to improve prompt instructions.
+BAM uses a layered prompting approach to define how AI generates values for specific metadata properties. You can use brand prompts to provide reusable brand and campaign context and property prompts to define instructions for individual metadata properties. You can also provide additional context through referenced properties and restrict generated values to predefined options using controlled vocabulary. BAM also provides a Prompt Playground to preview generated metadata and a Prompt Enhancer to improve prompt instructions
 
 You can use Brand-Aware Metadata to generate values for metadata properties such as alt text, product attributes, asset classification, region, and language. Generated metadata is applied to assets through processing profiles.
 

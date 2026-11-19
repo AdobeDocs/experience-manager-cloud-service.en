@@ -107,6 +107,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2026 {#2026}
+      + [Maintenance Release Notes for 2026.11.0](/help/release-notes/maintenance/2026/2026-11-0.md) 
       + [Maintenance Release Notes for 2026.10.0](/help/release-notes/maintenance/2026/2026-10-0.md) 
       + [Maintenance Release Notes for 2026.9.0](/help/release-notes/maintenance/2026/2026-9-0.md)
       + [Maintenance Release Notes for 2026.8.0](/help/release-notes/maintenance/2026/2026-8-0.md)
@@ -687,12 +688,11 @@ user-guide-title: AEM as a Cloud Service
     + [Color tags for images](/help/assets/color-tag-images.md)
     + [Manage PDF documents](/help/assets/manage-pdf-documents.md)
     + [Micro-Frontend Destination Selector](/help/assets/destination-selector.md)
-    + {hide-from-toc} [AEM Assets Activation Report (Beta)](/help/assets/aem-assets-activation-report.md)
   + Configure, administer, and extend [!DNL Assets] {#admin}
     + [Detect duplicate assets](/help/assets/detect-duplicate-assets.md)
     + [Developer docs and APIs references](/help/assets/developer-reference-material-apis.md)
     + [Folder metadata schema](/help/assets/folder-metadata-schema.md)
-    + [Generate Brand Aware Metadata](/help/assets/brand-aware-metadata.md)
+    + [Generate Brand Aware metadata](/help/assets/brand-aware-metadata.md)
     + [Work with image and video profiles](/help/assets/dynamic-media/about-image-video-profiles.md)
     + [Translate assets](/help/assets/translate-assets.md)
     + [Search facets](/help/assets/search-facets.md)
@@ -818,6 +818,8 @@ user-guide-title: AEM as a Cloud Service
     + [Introduction](/help/assets/assets-view-introduction.md)
     + [Getting started](/help/assets/get-started-assets-view.md)
     + [My Workspace](/help/assets/my-workspace-assets-view.md)
+    + [Digital Rights Management](/help/assets/drm-assets-view.md)
+    + [View Insights dashboard](/help/assets/aem-assets-activation-report.md)
     + [Supported file types and use cases](/help/assets/supported-file-formats-assets-view.md)
     + [View assets](/help/assets/navigate-assets-view.md)
     + [Upload and add assets](/help/assets/add-delete-assets-view.md)
@@ -1226,6 +1228,7 @@ user-guide-title: AEM as a Cloud Service
         + [Figma to Visual Content Fragments](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/figma-to-visual-content-fragments.md)
         + [Experience Production use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/use-cases.md)
         + [Forms use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/forms-use-cases.md)
+        + [Interactive Communications use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/interactive-communication-use-cases.md)
       + Development {#development}
         + [Development use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/development/use-cases.md)
       + Onboarding {#onboarding}

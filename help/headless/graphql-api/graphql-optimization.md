@@ -196,7 +196,7 @@ Also a GraphQL standard, sorting enables clients to receive JSON content in sort
 
 Sorting can only be efficient if all sort criteria are related to top-level fragments.
 
-  If the sorting order includes one, or more, fields that are located on a referenced fragment, then all fragments sharing the top-level model must be loaded into memory. This causes a negative performance impact.
+If the sorting order includes one, or more, fields that are located on a referenced fragment, then all fragments sharing the top-level model must be loaded into memory. This causes a negative performance impact.
 
 >[!NOTE]
 >
@@ -271,6 +271,10 @@ In this case, the different filter expressions would be combined with `AND`. The
 
 Filter expressions combined with `OR` cannot be optimized if referenced fragments are involved. `OR` expressions can only be optimized if *no* referenced fragments are involved.
 
+>[!NOTE]
+>
+>If your fragment references another fragment, and that contains composite data then the query is not optimized, so will be slow(er).
+
 ### Avoid filtering on multiline textfields {#avoid-filtering-multiline-textfields}
 
 The fields of a multiline textfield (html, markdown, plaintext, json) cannot be filtered through a JCR query, as the content of these fields have to be calculated on the fly.
@@ -301,11 +305,15 @@ There are several other situations where a filter expression cannot be evaluated
 
 * Filter expressions on a `Calendar`, `Date` or `Time` value that use the `NOT_AT` operator.
 
-### Minimize Content Fragment Nesting {#minimize-content-fragment-nesting}
+### Sorting: Exclusions {#sorting-exclusions}
 
-Nesting Content Fragments is a great way to model custom content structures. You can even have a fragment with a referenced fragment, that also has a referenced fragment, that has...and so on. 
+JCR sorting is not supported on Composite fields, so should be avoided to prevent a performance hit. Sorting by other mechanisms is possible.
 
-However, creating a structure with too many levels can increase the processing times for a GraphQL query, as GraphQL has to traverse the entire hierarchy of all nested content in Content Fragments. 
+### Minimize Content Nesting {#minimize-content-nesting}
+
+Nesting content in Content Fragments is a great way to model custom content structures. You can even have a fragment with either a referenced fragment or composite data, that also has a referenced fragment (or composite data), that has...and so on. 
+
+However, creating a structure with too many levels can increase the processing times for a GraphQL query, as GraphQL has to traverse the entire hierarchy of all nested content. 
 
 Deep nesting can also have adverse effects on content governance. In general, it is recommended to limit Content Fragment nesting to below five or six levels.
 

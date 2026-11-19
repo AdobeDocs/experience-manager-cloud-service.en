@@ -389,8 +389,8 @@ The following capabilities are available through the AEM Forms Early Adopter pro
 
 Authors can create reusable document designs, add digital signature fields, and configure accessibility properties in the Interactive Communication (IC) Editor:
 
-* **Add a Sign component:** Place a digital signature field in a document and configure which fields are locked after signing, including fields in a named collection. Recipients can sign the generated PDF in Adobe Acrobat, helping teams protect completed document content.
-* **Configure accessibility while authoring:** Set accessibility roles, screen reader text and precedence, and navigation order, then generate tagged PDF output. These controls help authors prepare communications for readers who use assistive technologies.
+* **Add a Sign component:** Place a digital signature field in a document and configure which fields are locked after signing, including fields in a named collection. Recipients can sign the generated PDF in Adobe Acrobat, helping teams protect completed document content. See [Signature Field component](/help/forms/interactive-communication/signature-field.md).
+* **Configure accessibility while authoring:** Set accessibility roles, screen reader text and precedence, and navigation order, then generate tagged PDF output. These controls help authors prepare communications for readers who use assistive technologies. See [Configure accessibility in Interactive Communication Editor](/help/forms/interactive-communication/accessibility-ic-editor.md).
 * **Create XDP templates:** Create and update existing XDP templates  directly in the Interactive Communication editor, configure data bindings, and reuse fragments across document designs. Preview generated PDF output while refining the design.
 
 #### Theme Editor for Core Components based Adaptive Forms {#theme-editor-core-components}
