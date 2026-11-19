@@ -19,11 +19,11 @@ role_v2:
 
 The Digital Rights Management (DRM) Service in Adobe Experience Manager Assets view uses artificial intelligence to extract usage-rights information from license documents and fill the metadata fields in assets. You can review the extracted information, save it as a reusable license record, and assign that license to one or more assets. License records are managed separately from assets. You can build a library of licenses before uploading assets, or assign existing licenses to assets. When you update a license, such as changing its expiration date, the change applies to all the assets associated with that license.
 
-An asset can have multiple licenses. Before downloading a licensed asset, you need to review the restrictions and accept the applicable license terms.
+An asset can have multiple licenses assigned to it. Before downloading a licensed asset, you need to review the restrictions and accept the applicable license terms.
 
 ## Upload a license {#upload-and-review-license}
 
-You can create a license from a usage-rights document. AI extracts the information from the document, but you need to review the information before saving it.
+You can create a usage-rights record document from a license or usage-rights document. AI extracts the information from the document, but you need to review the information before saving it.
 
 * In **[!UICONTROL Licenses]**, click **[!UICONTROL Upload license]**. This is shown in the figure below.
    ![Licenses](assets/licenses.png)
