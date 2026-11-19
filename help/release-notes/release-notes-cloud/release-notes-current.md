@@ -124,13 +124,15 @@ This section highlights new and recently available capabilities for [!DNL Experi
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets General Availability Features {#assets-general-availability-features}
 
-#### AI-powered Digital Rights Management {#ai-powered-digital-rights-management}
+#### AI-powered Digital Rights Management (DRM) service {#ai-powered-digital-rights-management}
 
-Adobe Experience Manager Assets introduces an [AI-powered Digital Rights Management (DRM) service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/drm-assets-view) that automatically extracts usage-rights information from license documents and populates asset metadata. Maintain a centralized, reusable library of license records and associate licenses with multiple assets. Updates to license details automatically apply to all associated assets, simplifying rights management and reducing manual effort. This capability helps organizations maintain consistent usage-rights information, improve governance, and ensure compliance with licensing terms and restrictions.
+AI automatically [processes license documents, extracts usage rights and stores them as metadata](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/drm-assets-view). This drives significant efficiencies and remove manual effort involved.
+
+Additionally, confidence scores for every extraction allows for human in the loop workflows. This enables customers to maintain a centralized, reusable library of license records and associate licenses with multiple assets. Updates to license details automatically apply to all associated assets, simplifying rights management and reducing manual effort. This capability helps organizations maintain consistent usage-rights information, improve governance, and ensure compliance with licensing terms and restrictions.
 
 #### Unified Insights dashboard for AEM Assets {#unified-insights-dashboard}
 
-Adobe Experience Manager Assets introduces a [unified Insights dashboard](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/aem-assets-activation-report) that provides visibility into asset usage, team activity, and content performance across AEM Assets, Content Hub, Dynamic Media, Content Advisor, and AEM Sites. The dashboard brings together metrics across four areas: Activation Overview, Manage & Govern, Discovery & Share, and Transform & Deliver. Track asset uploads, downloads, sharing activity, approvals, and publishing, along with asset delivery requests, usage trends, and performance. Detailed insights into top-performing assets, user activity, link sharing, and delivery errors help administrators understand content adoption, optimize asset usage, and make informed decisions.
+Adobe Experience Manager Assets introduces a [unified Insights dashboard](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/aem-assets-activation-report) that provides visibility into asset usage, team activity, and content performance across Author, Content Hub, Dynamic Media, and Content Advisor. The dashboard is organized in four distinct sections: Activation Overview, Manage & Govern (Author), Discovery & Share (Content Hub), and Transform & Deliver (Dynamic Media). Customers can now track asset downloads, sharing activity, approvals, and publishing, along with asset delivery requests, usage trends, and performance. Detailed insights into top-performing assets, user activity, link sharing, and delivery errors help administrators understand content adoption, optimize asset usage, and make informed decisions to drive value of assets managed in their DAM to their organization.
 
 
 #### Brand Aware Metadata (BAM) {#brand-aware-metadata}
@@ -140,6 +142,10 @@ AEM Assets now supports [Brand Aware Metadata, an AI-powered capability that aut
 #### Content Advisor integration in Figma {#content-advisor-figma-integration}
 
 Updated the Adobe Experience Manager (AEM) Assets Connector for Figma to use the [embedded Content Advisor experience](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integration-figma/integrate-aem-assets-with-figma). The updated connector brings the latest Content Advisor capabilities into Figma, including enhanced asset browsing, breadcrumb-based folder navigation, importing assets to Figma canvases, and exporting assets to the AEM Assets repository.
+
+#### Website exclusion controls in Content Advisor browser extension {#website-exclusion-controls}
+
+The AEM Content Advisor browser extension now lets users [disable the floating Content Advisor widget on specific websites](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-advisor/content-advisor-browser-extension#content-advisor-browser-extension-exclusion-rules) where asset recommendations are not needed. This provides greater control over the extension's visibility, helping users tailor their browsing experience to their workflows while retaining Content Advisor functionality across other supported websites.
 
 #### Frame.io integration {#frame-io-integration}
 
