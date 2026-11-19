@@ -124,13 +124,13 @@ This section highlights new and recently available capabilities for [!DNL Experi
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets General Availability Features {#assets-general-availability-features}
 
-#### Frame.io integration
+#### Frame.io integration #{frame-io-integration}
 
 Users in [Frame.io](https://frame.io/) can export assets or folders from [!DNL Frame.io] directly to [!DNL Experience Manager Assets]. The integration improves users' efficiency and shortens the time from approved assets in [!DNL Frame.io] to content ready to be activated from AEM Assets. The prerequisite is Frame.io V4 managed in Adobe Admin Console. For more details, see [this article](https://help.frame.io/en/articles/15647440-export-frame-io-assets-to-adobe-experience-manager-assets). 
 
-#### Content Automation by Firefly Services
+#### Content Automation by Firefly Services {#content-automation-by-ffs}
 
-[Content Automation by Firefly Services](/help/assets/cc-api-integration.md) offers AEM Assets customers access to automated content transformation and creation based on selected operations from the Firefly Services APIs, specifically from the [Photoshop API V2](https://developer.adobe.com/firefly-services/docs/photoshop/). These operations include background removal (cutout), image masks, Photoshop smart object replacement, Photoshop actions, Lightroom presets, auto-tone and auto-straighten for images.
+[Content Automation by Firefly Services](/help/assets/cc-api-integration.md) offers AEM Assets customers access to automated content transformation and creation based on selected operations from the Adobe Firefly Services APIs, specifically from the [Photoshop API V2](https://developer.adobe.com/firefly-services/docs/photoshop/). These operations include background removal (cutout), image masks, Photoshop smart object replacement, Photoshop actions, Lightroom presets, auto-tone and auto-straighten for images.
 
 This release updates all the supported API operations to be executed against the latest Photoshop API V2, which includes auto-tone, auto-straighten, and applying Lightroom presets which were formerly leveraging the now-deprecated Lightroom API. The name of the add-on to [!DNL Assets] in [!DNL Cloud Manager] is updated to [!DNL Content Automation by Firefly Services], from the previous [!DNL Content Automation]; customers who deployed the previous [!DNL Content Automation] add-on retain access to these capabilities. 
 
@@ -192,6 +192,14 @@ To request enablement, open an Adobe Customer Support ticket.
 Content Hub lets you [share multiple assets and collections through public links and update existing links by adding or removing assets and collections at any time](/help/assets/share-assets-content-hub.md). Administrators can manage shared links with controls for password protection, expiration, and link revocation to help govern external access. Branded recipient experiences help maintain brand consistency when sharing assets with external stakeholders.
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta Features {#assets-beta-program-features}
+
+#### Content Automation agentic skills: Background removal {#agentic-content-automation-bg-removal}
+
+Get access to content automation skills interactively, using natural language prompts in [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview), powered by [Adobe Firefly Services APIs](https://developer.adobe.com/firefly-services/docs/guides/). This gives users additional ways to adapt and create content based on approved assets in AEM and increases users' efficiency and productivity. 
+
+The first content operation available as an agentic skill is background removal (a.k.a., cutout). Customers interested in accessing the beta would have to have CX Coworker enabled and have access to the Firefly Services [Photoshop API](https://developer.adobe.com/firefly-services/docs/photoshop/), e.g., via Assets [Content Automation](/help/assets/cc-api-integration.md) add-on. 
+
+To participate or learn more, send an email to `aem-agent-content-optimization-feedback@adobe.com`.
 
 #### Content Advisor browser extension {#content-advisor-browser-extension}
 
