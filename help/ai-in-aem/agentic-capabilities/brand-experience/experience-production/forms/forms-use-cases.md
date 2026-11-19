@@ -27,7 +27,7 @@ role_v2:
 
 # Forms Agentic Capabilities {#forms-agentic-capabilites}
 
-The Forms Agentic Capability of Adobe Experience Manager (AEM) as a Cloud Service is an AI-powered capability that collaborates with [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) to create forms for data collection through natural, conversational prompts. You describe the [Adaptive Form](/help/forms/introduction-forms-authoring.md) or change you need, and the AI builds or updates it directly in your Experience Manager environment, then returns a link so you can review or continue customizing it. It helps you author, edit, and configure Adaptive Forms without needing hands-on support from a forms author or developer for routine changes, while keeping forms consistent with brand and compliance requirements.
+The Forms Agentic Capability of Adobe Experience Manager (AEM) as a Cloud Service is an AI-powered capability that collaborates with [Coworker Chat](https://experienceleague.adobe.com/en/docs/coworker/content/chat/overview) to create forms for data collection through natural, conversational prompts. You describe the [Adaptive Form](/help/forms/introduction-forms-authoring.md) or change you need, and the AI builds or updates it directly in your Experience Manager environment, then returns a link so you can review or continue customizing it. It helps you author, edit, and configure Adaptive Forms without needing hands-on support from a forms author or developer for routine changes, while keeping forms consistent with brand and compliance requirements.
 
 This capability is part of [Experience Production](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/use-cases.md), which also covers Sites and Content Fragment use cases. For print communications such as account statements, renewal notices, and service records, see [Interactive Communications agentic capabilities](interactive-communication-use-cases.md). These capabilities use Coworker to create and edit documents rather than data-collection Adaptive Forms.
 
@@ -49,7 +49,7 @@ The rest of this article covers what you'll need before you start, the available
 
 >[!IMPORTANT]
 >
->See also [Adobe Experience Cloud Generative AI User Guidelines.](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
+>See also [Adobe Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html).
 
 ## Prerequisites {#prerequisites-forms-agentic-capability}
 
@@ -119,7 +119,7 @@ IT and Forms administrators can configure and maintain submission integrations, 
 
 ## How to access {#access}
 
-You can access the Forms Agentic Capability via the [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) ![CoWorker Chat icon](assets/spectrum-ai-mark.svg){width="20"}.
+You can access the Forms Agentic Capability via the [Coworker Chat](https://experienceleague.adobe.com/en/docs/coworker/content/chat/overview) ![CoWorker Chat icon](assets/spectrum-ai-mark.svg){width="20"}.
 
 ## Before you start {#before-you-start-forms}
 
@@ -295,6 +295,6 @@ With the skills, sample prompts, and limitations above, you have what you need t
 
 ## Interactive Communication use cases {#interactive-communication-use-cases}
 
-For print communications such as account statements, renewal notices, and service records, see [Interactive Communications agentic capabilities](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/interactive-communication-use-cases.md). These workflows use Coworker to create communications from a brief or enabled template, reconstruct content from an image or PDF, edit document content and tables, and bind supported fields to an attached data model.
+For print communications such as account statements, renewal notices, and service records, see [Interactive Communications agentic capabilities](interactive-communication-use-cases.md). These workflows use Coworker to create communications from a brief or enabled template, reconstruct content from an image or PDF, edit document content and tables, and bind supported fields to an attached data model.
 
 Interactive Communications produce customer-facing documents rather than the data-collection Adaptive Forms described above. Their authoring skills, editor protections, and limitations are different; Adaptive Forms rule-authoring and submission instructions do not apply to ICs. The IC article includes sample prompts and an example screenshot for each use-case group.

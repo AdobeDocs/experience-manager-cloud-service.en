@@ -27,7 +27,7 @@ role_v2:
 
 # Experience Production Agentic Capabilities {#experience-production-agentic-capabilites}
 
-The Experience Production Agentic Capability of Adobe Experience Manager (AEM) as a Cloud Service collaborates with [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) ![CoWorker Chat icon](forms/assets/spectrum-ai-mark.svg){width="20"} to help you accelerate your content creation and automatically orchestrate changes.
+The Experience Production Agentic Capability of Adobe Experience Manager (AEM) as a Cloud Service collaborates with [Coworker Chat](https://experienceleague.adobe.com/en/docs/coworker/content/chat/overview) ![CoWorker Chat icon](forms/assets/spectrum-ai-mark.svg){width="20"} to help you accelerate your content creation and automatically orchestrate changes.
 
 A range of use-cases are covered.
 

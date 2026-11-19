@@ -3,31 +3,30 @@ title: Interactive Communications Agentic Capabilities
 description: Learn about AI-assisted Interactive Communications (IC) in AEM Forms, with Coworker sample prompts for document creation, editing, tables, and data binding.
 feature: Interactive Communication, Agentic AI
 role: User, Developer
-hide: true
 ---
 
 # Interactive Communications agentic capabilities {#ic-agentic-capabilities}
 
 Interactive Communications agentic capabilities in Adobe Experience Manager (AEM) Forms let you create and edit [Interactive Communications (IC)](/help/forms/interactive-communication/introduction.md) through natural-language requests in Adobe CX Enterprise Coworker. Instead of configuring each component manually, you describe the content or change you need, review any proposed content choices, and inspect the resulting communication.
 
-Use these capabilities for documents such as account statements, renewal notices, and service records. For example, you can add a maintenance log to an existing service record and bind its fields to an attached data model. This article focuses on the print, or Document of Record, channel, rather than the data-collection forms covered in [Forms agentic capabilities](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/forms-use-cases.md).
+Use these capabilities for documents such as account statements, renewal notices, and service records. For example, you can add a maintenance log to an existing service record and bind its fields to an attached data model. This article focuses on the print, or Document of Record, channel, rather than the data-collection forms covered in [Forms agentic capabilities](forms-use-cases.md).
 
 Create a new communication or open an existing one to update its content. The sections below explain how to start each task, with sample prompts and limitations.
 
 >[!IMPORTANT]
 >
->Review the [Adobe Experience Cloud Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before using these capabilities.
+>Review the [Adobe Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html) before using these capabilities.
 
 ## Prerequisites {#prerequisites-ic}
 
-The source workflows require:
+To use these capabilities, you need:
 
 * An AEM Forms as a Cloud Service environment with Interactive Communication authoring and permission to create or edit the intended assets. See [Getting started with the IC Editor](/help/forms/interactive-communication/getting-started.md).
-* Coworker access with the Interactive Communication capabilities enabled for your environment. The exact entitlement and rollout requirements still need confirmation for this draft.
+* Coworker access with the Interactive Communication capabilities enabled for your environment.
 * The intended communication open in a connected IC Editor session for live editing.
 * A form data model containing the required fields for data-binding requests. See [Configure data binding](/help/forms/interactive-communication/configure-data-binding.md).
 
-For general environment setup, see [Onboard to AEM Forms as a Cloud Service](/help/forms/setup-forms-cloud-service.md). Completing Forms onboarding alone does not establish that the agentic capabilities are enabled.
+For general environment setup, see [Onboard to AEM Forms as a Cloud Service](/help/forms/setup-forms-cloud-service.md).
 
 ## Skills {#skills-ic}
 
@@ -58,7 +57,7 @@ Choose how to begin based on your task:
 
 | Your task | Starting context |
 | --- | --- |
-| Create a communication | Open [Coworker](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) and describe the new IC you want to create. Name the enabled template to use, if applicable. |
+| Create a communication | Open [Coworker](https://experienceleague.adobe.com/en/docs/coworker/content/chat/overview) and describe the new IC you want to create. Name the enabled template to use, if applicable. |
 | Edit a communication | Open the intended IC in the IC Editor, select **[!UICONTROL CoWorker Chat]** ![Coworker Chat icon](assets/spectrum-ai-mark.svg){width="20"} in the application header, and describe the changes you want to make. |
 
 When you start a conversation from the IC Editor, requests apply to the open communication, not to a separate new asset.
@@ -79,7 +78,7 @@ If a brief leaves material choices open, review the complete proposed content be
 
 ## Common use cases and sample prompts {#use-cases-prompts-ic}
 
-The following prompts illustrate source-supported workflows. Each use-case section includes a staging example; not every sample prompt has been tested.
+Use these sample prompts as starting points and replace section and field names with those in your communication. Each use-case section includes an example screenshot.
 
 **Create a separate communication**
 
@@ -100,7 +99,7 @@ If a named template is unavailable, Coworker offers available alternatives rathe
 
 Provide an image or PDF when requesting a new communication. To update an existing IC from a source, open it in the IC Editor and use Coworker Chat to describe the content to reconstruct. The requested source content is compared with the document before changes are proposed. A request to add content does not authorize clearing or rebuilding the entire communication.
 
-To start from a template, ask Coworker to create a new IC from an enabled template and open the result in the IC Editor. Then attach the image or PDF to your conversation and request changes to editable document content, not to the source template.
+To start from a template, ask Coworker to create a new IC from an enabled template and open the result in the IC Editor. Select **[!UICONTROL CoWorker Chat]**, attach the image or PDF, and request changes to editable document content, not to the source template.
 
 Sample prompts:
 
@@ -220,13 +219,11 @@ The expected result depends on the workflow:
 
 After a live edit, inspect the affected sections and select **[!UICONTROL Save]** in the IC Editor to persist accepted changes. For print-output review, follow [Generate PDF preview](/help/forms/interactive-communication/generate-pdf-preview.md) and check wrapping, table content, page breaks, and data values.
 
-The synthetic Service Record was saved and reopened with its field-label change, content additions, dark-blue heading, six-row table, and single-field binding intact. A no-data PDF preview was checked separately. Data-merged output and the remaining sample prompts still require live verification.
-
 ## Prompting best practices {#prompting-best-practices-ic}
 
 Use these practices to make requests precise:
 
-* **Identify the communication to change.** For edits, open the intended IC before starting the conversation. State what to preserve, especially when attaching an image or PDF.
+* **Identify the communication to change.** For edits, open the intended IC before starting the conversation.
 * **Keep each request focused.** Add a section first, then request a separate formatting or binding change when needed.
 * **Use exact labels and positions.** Say "Add Inspection date below Work order code" rather than "add another date near the top."
 * **State preservation requirements.** Specify whether existing wording, formatting, bindings, and unrelated sections must remain unchanged.
@@ -237,7 +234,7 @@ Use these practices to make requests precise:
 
 ## Limitations {#limitations-ic}
 
-The implementation sources describe the following boundaries. Confirm them against the deployed version before publication.
+These capabilities have the following limitations:
 
 * **Live edits are not saved or published automatically.** Coworker changes the open editor state. Save accepted changes yourself; publishing is outside these authoring skills.
 * **Locks and ownership still apply.** Coworker does not unlock components or change a source template to bypass a blocked document edit. Editing an already-open template is a separate workflow with its own permissions.
