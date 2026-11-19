@@ -106,11 +106,11 @@ See [AEM Assets beta programs](#assets-beta-program-features).
 
 ### Adobe LLM Apps {#llm-apps}
 
-Adobe LLM Apps, a new capability in Experience Manager Sites, lets brands bring their own experience into LLM conversations and turn LLMs into a measurable marketing channel. Authors enter their brand’s domain, and within about 15 minutes LLM Apps suggests an app generated from the existing website, with no custom build or new backend required. Each app is made of actions, which carry out tasks such as checking stock or building a cart, and widgets, which show the results as interactive, visual experiences inside the chat, with real product images, pricing, and availability. Brands build once and publish to ChatGPT and Claude, with Gemini to follow, and manage the app with the same content, workflows, and governance as the rest of their AEM Sites experiences. App events flow to Adobe Analytics and Customer Journey Analytics, so brands can see the intent behind consumer prompts and track the journey from first prompt to conversion, whether it happens in the chat or on the brand’s own site.
+Adobe LLM Apps, a new capability in Experience Manager Sites, lets brands bring their own experience into LLM conversations and turn LLMs into a measurable marketing channel. Authors enter their brand's domain, and within about 15 minutes LLM Apps suggests an app generated from the existing website, with no custom build or new backend required. Each app is made of actions, which carry out tasks such as checking stock or building a cart, and widgets, which show the results as interactive, visual experiences inside the chat, with real product images, pricing, and availability. Brands build once and publish to ChatGPT and Claude, with Gemini to follow, and manage the app with the same content, workflows, and governance as the rest of their AEM Sites experiences. App events flow to Adobe Analytics and Customer Journey Analytics, so brands can see the intent behind consumer prompts and track the journey from first prompt to conversion, whether it happens in the chat or on the brand's own site.
 
 >[!IMPORTANT]
 >
->LLM Apps is available to all AEM Sites Cloud Service customers to develop and manage their own apps. Once metering begins, each app invocation will count toward the customer’s AEM Sites Content Requests. Adobe will announce the metering rate and start date before metering takes effect.
+>LLM Apps is available to all AEM Sites Cloud Service customers to develop and manage their own apps. Once metering begins, each app invocation will count toward the customer's AEM Sites Content Requests. Adobe will announce the metering rate and start date before metering takes effect.
 
 ### New features in Experience Manager Sites Prerelease {#prerelease-sites}
 
@@ -124,6 +124,23 @@ This section highlights new and recently available capabilities for [!DNL Experi
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets General Availability Features {#assets-general-availability-features}
 
+#### AI-powered Digital Rights Management {#ai-powered-digital-rights-management}
+
+Adobe Experience Manager Assets introduces an [AI-powered Digital Rights Management (DRM) service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/drm-assets-view) that automatically extracts usage-rights information from license documents and populates asset metadata. Maintain a centralized, reusable library of license records and associate licenses with multiple assets. Updates to license details automatically apply to all associated assets, simplifying rights management and reducing manual effort. This capability helps organizations maintain consistent usage-rights information, improve governance, and ensure compliance with licensing terms and restrictions.
+
+#### Unified Insights dashboard for AEM Assets {#unified-insights-dashboard}
+
+Adobe Experience Manager Assets introduces a [unified Insights dashboard](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/aem-assets-activation-report) that provides visibility into asset usage, team activity, and content performance across AEM Assets, Content Hub, Dynamic Media, Content Advisor, and AEM Sites. The dashboard brings together metrics across four areas: Activation Overview, Manage & Govern, Discovery & Share, and Transform & Deliver. Track asset uploads, downloads, sharing activity, approvals, and publishing, along with asset delivery requests, usage trends, and performance. Detailed insights into top-performing assets, user activity, link sharing, and delivery errors help administrators understand content adoption, optimize asset usage, and make informed decisions.
+
+
+#### Brand Aware Metadata (BAM) {#brand-aware-metadata}
+
+AEM Assets now supports [Brand Aware Metadata, an AI-powered capability that automatically generates custom metadata for assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/best-practices/brand-aware-metadata-best-practices) when uploaded or re-processed. This reduces the need for manual entry by orders of magnitude, helping teams find assets and deliver new experiences much faster. Customers maintain a library of prompts that define how AI should populate any given metadata field, tailored to their own brand vocabulary and taxonomy. This prompt library includes a playground to preview results and a prompt optimizer that automatically drafts suggested improvements.
+
+#### Content Advisor integration in Figma {#content-advisor-figma-integration}
+
+Updated the Adobe Experience Manager (AEM) Assets Connector for Figma to use the [embedded Content Advisor experience](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integration-figma/integrate-aem-assets-with-figma). The updated connector brings the latest Content Advisor capabilities into Figma, including enhanced asset browsing, breadcrumb-based folder navigation, importing assets to Figma canvases, and exporting assets to the AEM Assets repository.
+
 #### Frame.io integration {#frame-io-integration}
 
 Users in [Frame.io](https://frame.io/) can export assets or folders from [!DNL Frame.io] directly to [!DNL Experience Manager Assets]. The integration improves users' efficiency and shortens the time from approved assets in [!DNL Frame.io] to content ready to be activated from AEM Assets. The prerequisite is Frame.io V4 managed in Adobe Admin Console. For more details, see [this article](https://help.frame.io/en/articles/15647440-export-frame-io-assets-to-adobe-experience-manager-assets). 
@@ -132,44 +149,28 @@ Users in [Frame.io](https://frame.io/) can export assets or folders from [!DNL F
 
 [Content Automation by Firefly Services](/help/assets/cc-api-integration.md) offers AEM Assets customers access to automated content transformation and creation based on selected operations from the Adobe Firefly Services APIs, specifically from the [Photoshop API V2](https://developer.adobe.com/firefly-services/docs/photoshop/). These operations include background removal (cutout), image masks, Photoshop smart object replacement, Photoshop actions, Lightroom presets, auto-tone and auto-straighten for images.
 
-This release updates all the supported API operations to be executed against the latest Photoshop API V2, which includes auto-tone, auto-straighten, and applying Lightroom presets which were formerly leveraging the now-deprecated Lightroom API. The name of the add-on to [!DNL Assets] in [!DNL Cloud Manager] is updated to [!DNL Content Automation by Firefly Services], from the previous [!DNL Content Automation]; customers who deployed the previous [!DNL Content Automation] add-on retain access to these capabilities. 
+This release updates all the supported API operations to be executed against the latest Photoshop API V2, which includes auto-tone, auto-straighten, and applying Lightroom presets which were formerly leveraging the now-deprecated Lightroom API. The name of the add-on to [!DNL Assets] in [!DNL Cloud Manager] is updated to [!DNL Content Automation by Firefly Services], from the previous [!DNL Content Automation]; customers who deployed the previous [!DNL Content Automation] add-on retain access to these capabilities.
 
-#### Dynamic Media with OpenAPI capabilities: Multi-caption and multi-audio track support for videos {#multi-caption-multi-audio}
+#### New features in Content Hub {#new-features-content-hub}
 
-Dynamic Media with OpenAPI capabilities now support [multiple captions and multiple audio tracks for video assets](/help/assets/multi-audio-multi-caption.md). It enables organizations to deliver localized and accessible video experiences to global audiences by associating multiple language-specific caption and audio tracks with a single primary video. Authors can efficiently manage these tracks from a unified interface, simplifying multilingual content delivery and supporting regional accessibility requirements.
+##### Enhanced public link sharing and governance {#enhanced-public-link-sharing}
 
-#### Dynamic Media with OpenAPI capabilities: AI-generated video captions {#ai-generated-video-captions} 
+Content Hub lets you [share multiple assets and collections through public links and update existing links by adding or removing assets and collections at any time](/help/assets/share-assets-content-hub.md). Administrators can manage shared links with controls for password protection, expiration, and link revocation to help govern external access. Branded recipient experiences help maintain brand consistency when sharing assets with external stakeholders.
 
-AI-generated video captions in Dynamic Media with OpenAPI capabilities [use artificial intelligence to generate captions automatically for video content](/help/assets/generate-translate-captions.md). This feature is designed to improve accessibility and enhance the user experience by providing accurate, real-time captions. The AI analyzes the video's audio track to transcribe speech and create captions, which can be edited for accuracy or customization. These captions help meet accessibility requirements and improve video engagement for audiences who rely on or prefer text-based video support.
+##### Introducing an Enhanced Asset Browsing Experience {#enhanced-asset-browsing-experience}
 
-#### Dynamic Media: GIF-based countdown timer {#gif-based-countdown-timer}
+Browse and manage assets in Content Hub with more ease and flexibility. The modernized browsing experience introduces new capabilities to help you find, review, and organize assets more efficiently.
 
-AEM Dynamic Media now brings a [GIF-based countdown timer to email templates, creating urgency at the moment of open and driving click-through on time-sensitive offers](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-templates). Administrators can configure a Days/Hours/Mins/Secs display, a custom suffix, post-expiry fallback text, and a clickable destination URL.
+What's New:
 
-#### Dynamic Media: Branded video viewer and customizable presets {#new-video-viewer-presets}
+* **Select All Assets**: Quickly select all assets in the current view to perform bulk actions with ease.
 
-Dynamic Media [Branded video viewer delivers a performant, accessible, and fully customizable playback experience](/help/assets/dynamic-media/new-video-viewer.md). Configurable playback modifiers, including autoplay, loop, and muted, give you complete control over viewer behavior. Custom CSS support and reusable [branded video viewer presets](/help/assets/dynamic-media/branded-video-viewer-presets.md) let you customize player colors, controls, button styles, playback speeds, and video presentation settings for a consistent, on-brand experience across desktop, tablet, and phone layouts. Apply presets to videos in asset details, AEM Sites components, or playback URLs. Actionable analytics track views, watch time, completion rate, and engagement score, providing meaningful insights into video performance.
+* **Customizable Card Size**: Adjust the size of asset cards to suit your browsing preferences, whether you want to see more assets at once or focus on larger previews.
 
-#### Content Hub: AI Search {#ai-search-content-hub}
+* **List View**: Switch between card and list views when browsing search results, giving you greater flexibility in how you explore assets.
 
-AEM Assets Content Hub now includes [AI Search, an advanced search capability that understands the meaning and intent behind user queries instead of relying only on exact keyword matches](/help/assets/search-assets-content-hub.md#ai-search-aem-assets-content-hub). AI Search delivers more accurate and context relevant results by recognizing relationships between words, concepts, and user intent. It supports multilingual queries, handles misspellings and typos, understands synonyms, and surfaces relevant assets even when users do not use exact metadata terms. 
+These enhancements make asset discovery and management more intuitive, efficient, and tailored to the way you work.
 
-For example, a search for `Woman drinking coffee` can also return assets tagged with related terms such as `Lady`, `Girl`, `Latte`, or `Cappuccino`. 
-
-Administrators can enable or disable AI Search in Content Hub using the Configurations menu by selecting either AI Search or traditional keyword search.
-
-#### Content Hub: Custom Sorting options {#custom-sorting-options-content-hub}
-
-Content Hub now allows administrators to [enable custom metadata fields as sorting options on the Content Hub home page](/help/assets/search-assets-content-hub.md#configure-sorting-aem-assets-content-hub). In addition to the default sorting options, Size, Modified, Name, and Relevance, administrators can configure business-specific metadata fields such as Channel, Region, SKU, or Campaign to help users organize search results more effectively.
-
-#### Content Hub: Smart Collections {#smart-collections}
-
-Smart Collections enable you to [automatically organize assets based on defined search criteria](/help/assets/smart-collection-content-hub.md).
-When you create a Smart Collection, the collection stores the search query and filter criteria instead of storing individual assets. Assets that match the configured criteria are automatically displayed in the collection.
-
-Smart Collections automatically remain up to date. When newly approved assets satisfy the configured search criteria, they are automatically added to the collection.
-
->[!VIDEO](https://video.tv.adobe.com/v/3503809)
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Limited Availability Features {#assets-limited-availability-features}
 
@@ -187,17 +188,13 @@ Dynamic Media with OpenAPI capabilities can now generate barcode and QR code ima
 
 To request enablement, open an Adobe Customer Support ticket.
 
-#### Content Hub: Enhanced public link sharing and governance {#enhanced-public-link-sharing}
-
-Content Hub lets you [share multiple assets and collections through public links and update existing links by adding or removing assets and collections at any time](/help/assets/share-assets-content-hub.md). Administrators can manage shared links with controls for password protection, expiration, and link revocation to help govern external access. Branded recipient experiences help maintain brand consistency when sharing assets with external stakeholders.
-
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta Features {#assets-beta-program-features}
 
 #### Content Automation agentic skills: Background removal {#agentic-content-automation-bg-removal}
 
 Get access to content automation skills interactively, using natural language prompts in [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview), powered by [Adobe Firefly Services APIs](https://developer.adobe.com/firefly-services/docs/guides/). This gives users additional ways to adapt and create content based on approved assets in AEM and increases users' efficiency and productivity. 
 
-The first content operation available as an agentic skill is background removal (a.k.a., cutout). Customers interested in accessing the beta would have to have CX Coworker enabled and have access to the Firefly Services [Photoshop API](https://developer.adobe.com/firefly-services/docs/photoshop/), e.g., via Assets [Content Automation](/help/assets/cc-api-integration.md) add-on. 
+The first content operation available as an agentic skill is background removal (in other words, cutout). Customers interested in accessing the beta would have to have CX Coworker enabled and have access to the Firefly Services [Photoshop API](https://developer.adobe.com/firefly-services/docs/photoshop/), for example, via Assets [Content Automation](/help/assets/cc-api-integration.md) add-on. 
 
 To participate or learn more, send an email to `aem-agent-content-optimization-feedback@adobe.com`.
 
@@ -267,13 +264,6 @@ Customers can leverage existing stable extension points by following Adobe's dev
 Additionally, Adobe has developed a **GenAI-powered extension generation tool** currently available in an internal early adoption phase. This tool can significantly accelerate extension development time. Customers participating in this beta program will receive access to the tool and are encouraged to share feedback to help shape its evolution.
 To participate or learn more, send an email to `ASSETSVIEWUIEXTENSIBILITY@adobe.com`.
 
-#### Brand Aware Metadata (BAM) {#brand-aware-metadata-beta}
-
-AEM Assets now supports Brand Aware Metadata, an AI-powered capability that automatically generates custom metadata for assets when uploaded or re-processed. This reduces the need for manual entry by orders of magnitude, helping teams find assets and deliver new experiences much faster. Customers maintain a library of prompts that define how AI should populate any given metadata field, tailored to their own brand vocabulary and taxonomy. This prompt library includes a playground to preview results and a prompt optimizer that automatically drafts suggested improvements.
-
-Adobe is actively expanding BAM's capabilities through direct co-innovation with customers. Where a specific use case is not yet supported, Adobe works with participating customers to understand their needs and may deliver expanded capabilities as the beta progresses. Customers in this program gain early access to new features as they ship and are encouraged to share feedback that directly shapes the roadmap.
-
-To participate or learn more, send an email to `AEM-ASSETS-BRANDAWAREMETADATA@adobe.com`.
 
 <!--
 
