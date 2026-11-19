@@ -30,11 +30,22 @@ The 2026.12.0 feature activation will provide the full feature set for this main
 
 ### Enhancements {#enhancements-29643}
 
-None.
+* ASSETS-68902: Added tag ingestion and deletion using tag IDs.
+* ASSETS-73640: Added a Chapters tab to asset details for the new video viewer.
+* ASSETS-78871: Added video thumbnail creation at a specified time.
+* ASSETS-81789: Added last-modified timestamps when BAM metadata is written back.
+* SITES-51330: Added FAQ structured data generation with page and rollout controls.
+* SITES-52301: Content API: page IDs and relationships for Experience Fragments.
+* SKYOPS-166026: Improved XML processing compatibility with Java 21 defaults.
 
 ### Fixed Issues {#fixed-issues-29643}
 
-None.
+* ASSETS-3355: Fixed Dynamic Media upload failures caused by HTTP connection errors.
+* ASSETS-79244: Fixed link sharing failures for large asset folders.
+* ASSETS-80111: Fixed failures saving metadata import results.
+* ASSETS-82391: Fixed unhandled errors during asset rendition retrieval.
+* GRANITE-72106: Fixed thread dump collection hanging on Java 25.
+* SITES-53503: Fixed inability to tag content fragments using Manage Tags.
 
 ### Known Issues {#known-issues-29643}
 
