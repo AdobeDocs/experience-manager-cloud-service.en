@@ -36,6 +36,8 @@ Cloud Manager has a set of predefined roles that govern access to various Cloud 
 
 Use custom permissions to create product profiles that restrict access to programs, pipelines, and environments.
 
+The Admin Console also contains a system product profile named **Integrations - Cloud Service**, with the display name `CM_CS_DEFAULT`. Cloud Manager uses this profile for its own service integrations, such as when it creates environments. It is not one of the Cloud Manager user roles.
+
 >[!TIP]
 >For details on predefined roles, see [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md).
 
@@ -189,6 +191,8 @@ Permission items refer to the scope where permissions are applied. Typically, it
 * Deployment Manager
 * Developer
 
+The Admin Console also contains the **Integrations - Cloud Service** system profile (display name `CM_CS_DEFAULT`), which Cloud Manager requires. See [Introduction](#introduction).
+
 For details on predefined roles, see [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ### What happens to predefined permission profiles with the introduction of custom profiles?
@@ -197,11 +201,19 @@ Default product profiles and Cloud Manager roles continue to function as previou
 
 ### Can I edit predefined permission profiles? 
 
+No. You cannot add permissions to or remove permissions from a predefined profile. You can only add users to or remove users from it. Do not change the name or display name of a predefined profile, because Cloud Manager relies on them.
+
+<!--
 No. Default profiles are non-editable. You cannot add or remove permissions from the default permission profile. You can only add or remove users from predefined profiles.
+-->
 
 ### Do I delete predefined permission profiles since custom profiles are now available?
 
-Do not remove predefined permission profiles from the Admin Console. 
+No. Do not delete the predefined product profiles from the Admin Console, including **Integrations - Cloud Service**. Cloud Manager requires them. For example, if the **Integrations - Cloud Service** profile is missing, or its display name is not exactly `CM_CS_DEFAULT`, environment creation fails.
+
+<!--
+Do not remove predefined permission profiles from the Admin Console.
+--> 
 
 ### Can I add users to multiple permission profiles?
 
