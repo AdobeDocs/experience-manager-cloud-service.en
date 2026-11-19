@@ -209,7 +209,7 @@ No. Default profiles are non-editable. You cannot add or remove permissions from
 
 ### Do I delete predefined permission profiles since custom profiles are now available?
 
-No. Do not delete the predefined product profiles from the Admin Console, including **Integrations - Cloud Service**. Cloud Manager requires them. For example, if the **Integrations - Cloud Service** profile is missing, or its display name is not exactly `CM_CS_DEFAULT`, environment creation fails.
+No. Do not delete the predefined product profiles from the Admin Console, including **Integrations - Cloud Service**. Cloud Manager requires them. For example, if the **Integrations - Cloud Service** profile is missing, or its display name is not exactly `CM_CS_DEFAULT`, environment creation fails. If a predefined profile was deleted, contact Adobe Support to restore it.
 
 <!--
 Do not remove predefined permission profiles from the Admin Console.
