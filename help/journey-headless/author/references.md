@@ -1,6 +1,6 @@
 ---
-title: Learn about using references in Content Fragments
-description: Learn about using references in Content Fragments, for content, other fragments and other assets (media). Introduce the necessity for, and the mechanics of, referenced fragments for Headless CMS Authoring.
+title: Learn about using nested content in Content Fragments
+description: Learn about using nested content in Content Fragments, for content, other fragments and other assets (media). Introduce the necessity for, and the mechanics of, nested content for Headless CMS Authoring.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
@@ -17,7 +17,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
 ---
-# Learn about using references in Content Fragments {#author-headless-references}
+# Learn about using nested content in Content Fragments {#author-headless-nested-content}
 
 ## The Story so Far {#story-so-far}
 
@@ -25,25 +25,34 @@ At the beginning of the [AEM Headless Content Author Journey](overview.md) the [
 
 You have learned the basics of Headless CMS Authoring, with an introduction to authoring with AEMaaCS and in particular, authoring Content Fragments.
 
-This article builds on these so you understand how to use references to author your own content for your AEM headless project.
+This article builds on these so you understand how to use nested content to author your own content for your AEM headless project.
 
 ## Objective {#objective}
 
 * **Audience**: Advanced
-* **Objective**: Introduce the use of references for Headless CMS Authoring. What sorts of references are available, and what are their purposes:
+* **Objective**: Introduce the use of nested content for Headless CMS Authoring. What sorts of nested content are available, and what are their purposes:
 
   * Content References
   * Asset/Media References
   * Fragment References
+  * Composite data
   * Improvised references from within a text block
 
-## What are references {#what-are-references}
+## What is Nested Content {#what-is-nested-content}
 
-References are simply a mechanism for connecting your resources, be it other content, assets (as in images), or other fragments. Although very similar, there are some differences.
+Nested content allows you to build a structure for your content. This is done with:
 
-Some references have dedicated data-types (for example, Content References and Fragment References), whereas others are simply added as a reference within a text block (asset references and improvised references).
+* References
 
-![Content Fragments - References](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
+  References are simply a mechanism for connecting your resources, be it other content, assets (as in images), or other fragments. Although very similar, there are some differences.
+
+  Some references have dedicated data-types (for example, Content References and Fragment References), whereas others are simply added as a reference within a text block (asset references and improvised references).
+
+  ![Content Fragments - References](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
+
+* Composite data
+
+  The Composite data type enables Content Fragments to store hierarchical, structured data within themselves. 
 
 ## Content References {#content-references}
 
@@ -113,7 +122,7 @@ Using the **Structure Tree** tab of the Content Fragment Editor you can navigate
 ![Content Fragment Structure Tree](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)
 
 
-## Composite {#composite}
+## Composite data {#composite-data}
 
 The **Composite** data type enables Content Fragments to store hierarchical, structured data by allowing fields to contain nested sub-fields. The children (sub-fields) are themselves structured content, defined by user-specified Content Fragment Models and fully embedded in the parent fragment.
 

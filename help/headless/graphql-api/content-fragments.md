@@ -270,14 +270,9 @@ GraphQL for AEM supports a list of types. All the supported Content Fragment Mod
 | Content Reference (UUID) | `String`, `[String]` | Used to display the path, represented by a UUID towards another asset in AEM |
 | Fragment Reference | *A model type* <br><br>Single field: `Model` - Model type, referenced directly <br><br>Multifield, with one referenced type: `[Model]` - Array of type `Model`, referenced directly from array <br><br>Multifield, with multiple referenced types: `[AllFragmentModels]` - Array of all model types, referenced from array with union type | Used to reference one, or more, Content Fragments of certain Model Types, defined when the model was created |
 | Fragment Reference (UUID) | *A model type* <br><br>Single field: `Model` - Model type, referenced directly <br><br>Multifield, with one referenced type: `[Model]` - Array of type `Model`, referenced directly from array <br><br>Multifield, with multiple referenced types: `[AllFragmentModels]` - Array of all model types, referenced from array with union type | Used to reference one, or more, Content Fragments of certain Model Types, defined when the model was created |
+| Composite | A list of structures based on defined Content Fragment Models.<br><br>Can be Single field or Multifield. | Composite content is returned as nested data within the parent fragment's query response, without resolving a separate Content Fragment asset. |
 
 {style="table-layout:auto"}
-
-#### Deliver a Composite item {#deliver-a-composite-item}
-
-You can deliver your Composite items with GraphQL (AEM-native delivery). 
-
-Composite content is returned as nested data within the parent fragment's query response, without resolving a separate Content Fragment asset. Response size depends on the selected fields; composites do not inherently reduce query depth or client round-trips.
 
 ### Helper Fields {#helper-fields}
 
@@ -1237,7 +1232,7 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 * Logical AND also exists, but is (often) implicit
 
 * You can query on field names that correspond to the fields within the Content Fragment Model
-  * See [Sample Query - Full Details of a Company's CEO and Employees](/help/headless/graphql-api/sample-queries.md#sample-full-details-company-ceos-employees)
+  * See [Sample Query - Full Details of a Company's CEO and Employees (Fragment Reference)](/help/headless/graphql-api/sample-queries.md#sample-full-details-company-ceos-employees-fragment-reference)
 
 * In addition to the fields from your model, there are some system-generated fields (preceded by underscore):
 
