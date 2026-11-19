@@ -30,7 +30,7 @@ To open the Insights dashboard:
 
 1. Navigate to your AEM Assets environment in Assets View.
 1. In the left rail, select **[!UICONTROL Insights]**.
-3. Select a tab to view its metrics. Some tabs include additional tabs, for example, **[!UICONTROL Downloads]** and **[!UICONTROL Link sharing]** for **[!UICONTROL Discovery & Share]** tab.
+1. Select a tab to view its metrics. Some tabs include additional tabs, for example, **[!UICONTROL Downloads]** and **[!UICONTROL Link sharing]** for **[!UICONTROL Discovery & Share]** tab.
 1. (Optional) Use the time frame drop-down list to change the reporting period. The default is **[!UICONTROL Last 30 days]**.
 
 ## Activation Overview: Quick reference {#quick-reference}
