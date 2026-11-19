@@ -379,10 +379,6 @@ Style Core Components based Adaptive Forms visually in the Theme Editor and prev
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation New Features {#foundation-new}
 
-#### Vulnerability assessment with AEM Governance Agent {#vulnerability}
-
-The AEM Governance Agent can list known vulnerabilities across one or more AEM instances, including their severity and affected components. You can filter findings by CVE, severity, environment, or component to prioritize remediation. See [AEM Governance Agent use cases](/help/ai-in-aem/agentic-capabilities/brand-governance/use-cases.md).
-
 #### Java 25 {#java25-sdk}
 
 AEM Cloud Service now supports Java 25, both for build and runtime so you can take advantage of performance improvements and modern Java features. Use the AEM Cloud Service SDK to validate your code for Java 25. Your AEM license entitles you to download Oracle Java 25 from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=java*+25*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=8).
