@@ -55,7 +55,7 @@ You can assign an existing license to an asset, or upload a new license document
 
    ![Assign license](assets/assign.png)
 
-Alternatively, you can select the asset and click **[!UICONTROL Details]** to open the asset details page. To assign a license, click **[!UICONTROL Assign license]**.
+   Alternatively, you can select the asset and click **[!UICONTROL Details]** to open the asset details page. To assign a license, click **[!UICONTROL Assign license]**.
 1. Choose an existing license from the list. Alternatively, you can upload a new license document to create a new license.
 ![Upload license](assets/upload.png)
 
