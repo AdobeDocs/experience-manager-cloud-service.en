@@ -24,6 +24,8 @@ The Insights dashboard displays four tabs:
 3. **Discovery & Share — Content Hub:** Help teams find, access, and share approved brand assets through a self-service portal. See [Content Hub Overview](/help/assets/product-overview.md) for more information on Content Hub.
 4. **Transform & Deliver — Dynamic Media:** Prepare and deliver rich media for channels such as web, mobile, and social, with assets adapted to different formats and experiences. See [Work with Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) for more information on Dynamic Media.
 
+![Activation Overview tab of the Insights dashboard in AEM Assets](assets/insights-dashboard.png)
+
 ## Access Insights {#access-insights}
 
 To open the Insights dashboard:
