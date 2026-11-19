@@ -351,6 +351,10 @@ Manage mixed form collections and move reusable forms between environments with 
 * **Download forms with their fragments:** Download an Edge Delivery Services form together with its referenced fragments in the same package, reducing the need to collect dependencies separately when transferring forms.
 * **Keep theme references current:** Frontend theme redeployment automatically updates the form's saved theme reference, so Forms Manager continues to show the correct theme rather than reverting to Canvas in the theme picker.
 
+#### Exclude file attachments from the Submission PDF {#exclude-attachments-submission-pdf}
+
+Authors can exclude uploaded file attachments from the Submission PDF (Document of Record) for Adaptive Forms based on Core Components. This option can reduce the size of the PDF when files are delivered separately through the configured submit action. When attachments are excluded, their size and number do not affect PDF generation time. For details, see [Exclude file attachments from the Submission PDF](/help/forms/generate-document-of-record-core-components.md#exclude-file-attachments).
+
 ### Early Adopter Features in AEM Forms
 
 The following capabilities are available through the AEM Forms Early Adopter program. To request access, email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address and include your organization ID, program details, and the capabilities you want to use.
