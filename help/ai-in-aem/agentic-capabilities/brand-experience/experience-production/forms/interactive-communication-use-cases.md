@@ -1,6 +1,6 @@
 ---
-title: Interactive Communications Agentic Capabilities
-description: Learn about AI-assisted Interactive Communications (IC) in AEM Forms, with Coworker sample prompts for document creation, editing, tables, and data binding.
+title: "Interactive Communications: AI Authoring Use Cases"
+description: Learn how to create and edit Interactive Communications (IC) in AEM Forms with Coworker. Explore sample prompts for templates, PDFs, tables, and data binding.
 feature: Interactive Communication, Agentic AI
 role: User, Developer
 ---
@@ -47,7 +47,9 @@ Members of the `forms-users` group create letters and statements from supplied c
 
 ![Template icon](assets/spectrum-template.svg){width="20"} **Template authors**
 
-Members of the `forms-users` and `template-authors` groups define reusable headers, footers, layouts, and default styling that establish a communication's look and feel. Review data-model bindings and content and layout locks when preparing a template for reuse. Use Coworker to make supported changes to a template already open in the editor. Editing a template is a separate task from editing a document that uses that template; document requests do not authorize changes to the source template.
+Members of the `forms-users` and `template-authors` groups define reusable headers, footers, layouts, and default styling that establish a communication's look and feel. Review data-model bindings and content and layout locks when preparing a template for reuse. Use Coworker to make supported changes to a template already open in the editor.
+
+Editing a template is a separate task from editing a document that uses that template; document requests do not authorize changes to the source template.
 
 Business users, forms developers, marketing operations teams, customer support teams, and compliance and legal reviewers can use these capabilities when their work involves customer communications. For example, supply approved wording for a renewal notice or request a targeted change to a service record. Review generated content before use; these capabilities do not establish legal or regulatory compliance.
 
@@ -80,7 +82,7 @@ If a brief leaves material choices open, review the complete proposed content be
 
 Use these sample prompts as starting points and replace section and field names with those in your communication. Each use-case section includes an example screenshot.
 
-**Create a separate communication**
+### Create an Interactive Communication {#create-communication-ic}
 
 Ask Coworker to create an empty IC, use an enabled template, or build from a brief. You do not need to open an existing IC to create one from a template. A brief can specify the exact content or start a discussion about what the communication should contain. Resolve any questions about the proposed content before approving creation.
 
@@ -93,9 +95,9 @@ Sample prompts:
 
 If a named template is unavailable, Coworker offers available alternatives rather than silently substituting one. For background on template authoring, see [Create an Interactive Communication template](/help/forms/interactive-communication/create-interactive-communication-template.md).
 
-![Coworker confirms creation of a Service Record communication and provides an Open in editor link.](assets/coworker-ic-creation.png)
+![Coworker confirms a new Service Record IC and offers Open in editor.](assets/coworker-ic-creation.png)
 
-**Build from an image or PDF**
+### Build an IC from an image or PDF {#build-from-source-ic}
 
 Provide an image or PDF when requesting a new communication. To update an existing IC from a source, open it in the IC Editor and use Coworker Chat to describe the content to reconstruct. The requested source content is compared with the document before changes are proposed. A request to add content does not authorize clearing or rebuilding the entire communication.
 
@@ -111,9 +113,9 @@ Sample prompts:
 
 Image and PDF workflows depend on usable source extraction. Review reconstructed text, component types, tables, and pagination; these examples do not promise an exact visual replica.
 
-![Coworker reconstructs a Service details section from an attached image, adding blank Technician and Inspection date fields below the existing table.](assets/coworker-ic-source-reconstruction.png)
+![Service details reconstructed from an image, with blank Technician and Inspection date fields.](assets/coworker-ic-source-reconstruction.png)
 
-**Inspect the current communication**
+### Inspect the current communication {#inspect-communication-ic}
 
 Ask about the open document before planning an edit. Coworker can inspect its structure, fields, bindings, and available lock information. A successful read does not by itself establish permission to edit every component.
 
@@ -123,9 +125,9 @@ Sample prompts:
 * Which parts of this document are locked?
 * Which equipment detail fields already have data bindings?
 
-![Coworker lists the open Service Record's headings, fields, and five-column table with six blank body rows without changing the document.](assets/coworker-ic-inspection.png)
+![Coworker lists sections, fields, and a five-column table with six blank rows in the open IC.](assets/coworker-ic-inspection.png)
 
-**Add or edit document content**
+### Add or edit document content {#edit-content-ic}
 
 Add headings, fixed text, entry fields, choices, and grouped sections, or update existing labels and content. Specify the intended position and which existing content must remain unchanged. Bulk operations in these examples target multiple components within the open IC, not multiple communication assets.
 
@@ -141,9 +143,9 @@ Sample prompts:
 
 Deletion and changes to template-owned content remain subject to editor protections. If any target in a bulk request is blocked or its permissions are unclear, Coworker reports the restriction rather than silently changing only the eligible fields. See [Limitations](#limitations-ic) before requesting changes to locked or referenced content.
 
-![The IC Editor shows a new Service introduction heading and fixed text above Equipment details beside Coworker's change summary.](assets/coworker-ic-content-editing.png)
+![Service introduction heading and text added above Equipment details in the IC Editor.](assets/coworker-ic-content-editing.png)
 
-**Create or update a table**
+### Create or update a table {#edit-table-ic}
 
 Describe the column order, header, number of body rows, and whether cells should display supplied content or accept input. State explicitly when rows should remain blank.
 
@@ -153,15 +155,17 @@ Sample prompts:
 * Add one blank body row at the end of Maintenance log.
 * Remove the Notes column from Maintenance log.
 
-![The IC Editor displays a Maintenance log with five columns and six blank body rows beside Coworker's change summary.](assets/coworker-ic-table-authoring.png)
+![Maintenance log table with five columns and six blank body rows in the IC Editor.](assets/coworker-ic-table-authoring.png)
 
 For manual table authoring, see the [Table component](/help/forms/interactive-communication/table.md).
 
-**Change layout or appearance**
+### Change layout or appearance {#change-layout-ic}
 
 Request supported changes to typography, color, spacing, and component placement. Name the target and the properties to change rather than asking for an undefined brand refresh.
 
-When you insert a section above existing sections in a positioned layout, Coworker shifts the sections below it to make room. The shifts cascade through subsequent sections, and Coworker creates a page if needed. If you append a section when the last page has no space, Coworker creates the next page and places the section there. These are Coworker authoring actions, not a change to the editor's manual text-overflow settings.
+When you insert a section above existing sections in a positioned layout, Coworker shifts the sections below it to make room. The shifts cascade through subsequent sections, and Coworker creates a page if needed.
+
+If you append a section when the last page has no space, Coworker creates the next page and places the section there. These are Coworker authoring actions, not a change to the editor's manual text-overflow settings.
 
 Sample prompts:
 
@@ -173,11 +177,13 @@ Sample prompts:
 
 Layout and content locks can restrict these changes. Review the rendered result, especially when text length or placement affects page flow.
 
-![The selected Service introduction heading is dark blue, and Coworker confirms its 12 pt bold formatting.](assets/coworker-ic-appearance.png)
+![Service introduction heading styled dark blue, bold, and 12 pt in the IC Editor.](assets/coworker-ic-appearance.png)
 
-**Bind fields to existing data**
+### Bind fields to existing data {#bind-data-ic}
 
-Use fields from the actual data model attached to the open IC. Ask Coworker to build content from supported scalar fields and simple groups in that model, or bind existing components. These changes apply to the open communication. A data model describes the available data structure; it does not supply permission to invent customer values or transaction records.
+Coworker can add content to the open IC from supported scalar fields and simple groups in its attached data model, or bind existing components to those fields. This workflow does not attach or replace the model or generate repeating tables from arrays.
+
+A data model describes the available data structure; it does not supply permission to invent customer values or transaction records.
 
 Sample prompts:
 
@@ -191,9 +197,9 @@ Coworker needs an unambiguous match to a supported model field. Repeating groups
 
 The example below uses a synthetic model with the string property `/serviceRecord/technician`, not a live customer data source.
 
-![Coworker confirms that the selected Technician field is bound to the attached model's serviceRecord.technician property and remains blank.](assets/coworker-ic-data-binding.png)
+![Coworker confirms the Technician field binding to serviceRecord.technician in the attached data model.](assets/coworker-ic-data-binding.png)
 
-**Develop content through guided discovery**
+### Develop content through guided discovery {#guided-discovery-ic}
 
 Start with a business goal when you have not decided the content. Coworker can suggest section contents, ask about unresolved choices, and present a complete recap for approval before editing.
 
@@ -203,7 +209,7 @@ Sample prompts:
 * Keep the agreed Maintenance summary section, but replace the proposed preference choices with a single blank Notes field. Show the revised whole plan before making changes.
 * Pause this draft. Keep our agreed content, but do not add anything to the editor yet.
 
-![Coworker asks which service follow-up sections to include, with selectable options and a Next button, before changing the open communication.](assets/coworker-ic-guided-discovery.png)
+![Coworker presents section choices for approval before editing a service follow-up communication.](assets/coworker-ic-guided-discovery.png)
 
 ## Results {#results-ic}
 
@@ -249,13 +255,13 @@ These capabilities have the following limitations:
 
 These questions clarify the workflow boundaries illustrated by the sample prompts.
 
-**Will a PDF create a new IC?**
+**Can Coworker create an IC from a PDF?**
 
-Yes, when you ask Coworker to create a new communication from the attached PDF. If you start from an open IC, use the PDF to describe content to add or change in that communication instead.
+Yes. Ask Coworker to create a new communication from the attached PDF. Requests started from the IC Editor update the open communication instead of creating a separate asset. Review reconstructed text, layout, and pagination.
 
 **Does Coworker save my edits?**
 
-No. Live-editor changes remain unsaved until you save them in the IC Editor.
+No. Coworker changes remain unsaved until you select **[!UICONTROL Save]** in the IC Editor.
 
 **Can Coworker edit locked content?**
 
@@ -268,3 +274,5 @@ No, not as executable IC rules through the current editor authoring tools. Rule 
 **Must I decide everything first?**
 
 No. You can begin with a business goal and review recommendations. Material content choices must be resolved and the complete proposed scope approved before Coworker builds an underspecified request.
+
+To begin, choose the starting context in [How to access](#access-ic).
