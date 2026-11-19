@@ -17,9 +17,9 @@ role_v2:
 ---
 # Digital Rights Management in AEM Assets {#digital-rights-management-in-assets}
 
-The Digital Rights Management (DRM) Service in Adobe Experience Manager Assets view uses artificial intelligence to extract usage-rights information from license documents and fill the metadata fields in assets. You can review the extracted information, save it as a reusable license record, and assign that license to one or more assets. License records are managed separately from assets. You can build a library of licenses before uploading assets, or assign existing licenses to assets. When you update a license, such as changing its expiration date, the change applies to all the assets associated with that license.
+AI automatically processes license documents, extracts usage rights and stores them as metadata. This drives significant efficiencies and remove manual effort involved.
 
-An asset can have multiple licenses assigned to it. Before downloading a licensed asset, you need to review the restrictions and accept the applicable license terms.
+Additionally, confidence scores for every extraction allows for human in the loop workflows. This enables customers to maintain a centralized, reusable library of license records and associate licenses with multiple assets. Updates to license details automatically apply to all associated assets, simplifying rights management and reducing manual effort. This capability helps organizations maintain consistent usage-rights information, improve governance, and ensure compliance with licensing terms and restrictions.
 
 ## Upload a license {#upload-and-review-license}
 

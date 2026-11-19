@@ -80,22 +80,22 @@ Together, these insights help you:
 * **See how content moves beyond the DAM.** Download and link share trends show when and how assets are distributed, which supports governance and helps you spot unusual activity.
 * **Identify your most engaged users.** Top 10 users by downloads and by link shares show who relies on the DAM most, so you can target training, support, and permissions.
 
-| Section | Metric |
-| --- | --- |
-| **Overview** | Upload |
-|  | Asset count by asset Type |
-|  | Asset Count by Size |
-|  | Top Searches |
-| **Downloads** | Total assets downloads |
-|  | Assets downloaded YTD |
-|  | Assets downloads over time |
-|  | Top performing: Most downloaded assets |
-|  | Top 10 users by downloads |
-| **Shares** | Total assets in link shares |
-|  | Total assets in link shares YTD |
-|  | Link shares over time |
-|  | Top performing assets (most shared) |
-|  | Top 10 users by link shares |
+| Section | Metric | What it counts |
+| --- | --- | --- |
+| **Overview** | **Upload** | Number of assets uploaded over the selected period. |
+|  | **Asset Count by AssetType** | Total number of assets, broken down by asset type, with the count and percentage for each type. |
+|  | **Asset Count by Size** | Total number of assets, broken down by file size range, with the count and percentage for each range. |
+|  | **Top Searches** | Most frequently searched terms in the last 30 days. |
+| **Downloads** | **Total assets downloads** | Total asset downloads for the selected timeframe. |
+|  | **Year to Date** | Total asset downloads from the start of the calendar year through yesterday. |
+|  | **Asset downloads over time** | Asset downloads across the selected timeframe. |
+|  | **Top performing assets** | Most-downloaded assets in the selected timeframe. |
+|  | **Top 10 users by downloads** | Users with the most asset downloads in the selected timeframe. |
+| **Shares** | **Total assets in link shares** | Total link shares for the selected timeframe. |
+|  | **Year to Date** | Total link shares from the start of the calendar year through yesterday. |
+|  | **Link shares over time** | Link shares across the selected timeframe. |
+|  | **Top performing assets** | Most-shared assets in the selected timeframe. |
+|  | **Top 10 users by link shares** | Users with the most link shares in the selected timeframe. |
 
 ## Discovery & Share: Quick reference {#discover-and-share-quick-reference}
 
