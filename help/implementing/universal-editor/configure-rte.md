@@ -464,6 +464,95 @@ Dropdown reflection:
 * With only the cursor placed, the dropdown reflects the closest managed class: the span at the caret if there is one, otherwise the block under the cursor.
 * With a selection, the dropdown reflects the managed class on the span wrapping the selection. Only when the entire selection shares the same class. Mixed selections show nothing selected.
 
+### Variables {#variables}
+
+The `variables` action adds a dropdown that inserts an approved token (for example `{{video}}`) into the content. It is listed as an item in the `advanced section`. The plugin only inserts the configured string as plain text. The consumer app owns the meaning of each token and is responsible for interpreting it wherever the rich text editor content is rendered (preview, publish).
+
+The dropdown only appears when at least one valid option is configured. The plugin ships with no defaults and only values from the configured list can be inserted.
+
+```json
+{
+  "toolbar": {
+    "advanced": ["variables"],
+    "sections": ["blocks", "format", "advanced"],
+  },
+  "actions": {
+    "variables": {
+      "label": "Insert Variable",
+      "showMarkers": true, // opt in to the in-editor markers (off by default)
+      "options": [
+        { "value": "{{video}}", "label": "Video" },
+        { "value": "{{audio}}", "label": "Audio" },
+        { "value": "{{image-16x9}}", "label": "Image 16:9", "display": "inline" },
+      ],
+    },
+  },
+}
+```
+
+#### Action Options {#action-options}
+
+* `label` — Accessible label and placeholder of the dropdown (defaults to `Insert Variable`)
+* `showMarkers` — Shows each variable as a locked pill in the editor (off by default, see below)
+* `options` — The approved variables where each entry has:
+  * `value` — The exact string written to the HTML
+  * `label` — The human-readable text shown in the dropdown and on the in-editor pill
+  * `display` (optional) — `block` (default) or `inline`, see below
+
+#### Choosing Values {#choosing-values}
+
+The plugin matches values exactly as written, so care must be taken when setting them up.
+
+* Use distinctive delimiters, such as `{{video}}`, `[[video]]` or `!VIDEO!`.
+  * Do not use plain words (`video`, `audio`).
+  * An inline variable would match inside ordinary text such as `videos`, which is bad practice.
+* Do not leave empty and use no leading or trailing whitespace.
+  * `variableEntrySchema` (exported) rejects such values for consumers that validate their config with it, and the plugin itself ignores those entries without any warning.
+  * A value with edge whitespace can lose it after save and reload when it sits at the start or end of a paragraph, so it would no longer match.
+* Do not use repeated spaces, tabs, or newlines inside a value.
+  * On reload the editor collapses them to a single space, so the saved text would no longer equal the configured value.
+  * Single spaces are fine (e.g. `{{ video }}`).
+* Keep values unique.
+  * Matching is case-sensitive, so `{{Video}}` and `{{video}}` are different variables.
+  * When one value contains another (`{{video}}` and `{{video-hd}}`), the longest match wins.
+
+#### Block and Inline Placement (`display`) {#placement}
+
+|`display`|Where the variable goes|Selected text|
+|---|---|---|
+|`block` (default)|In its own paragraph, right after the paragraph that holds the caret (or the end of the selection). An empty paragraph is filled instead.|Not replaced, the selection is left as is|
+|`inline`|At the caret, inside the current paragraph|	Replaced by the variable|
+
+For example, with the caret (or a selection) inside `<p>Watch the intro now</p>`:
+
+* Block `{{video}}` produces `<p>Watch the intro now</p><p>{{video}}</p>`. 
+* Inline `{{image-16x9}}` with `intro` selected produces `<p>Watch the {{image-16x9}} now</p>`.
+
+A block variable is never inserted mid-sentence, so it can not replace a selection without deleting the author's text. Use `inline` for variables that should sit inside a sentence. A block variable falls back to inline placement when the selection is not text or a paragraph is not allowed at that position.
+
+#### Behavior {#behavior}
+
+* Formatting: The inserted variable is always bare text. It does not inherit bold, links, or other marks around the caret.
+* Selected variable (`showMarkers` on): The dropdown shows it as active. Picking another variable replaces it in place and the first option, "Remove Variable", deletes it (together with its paragraph when a block variable was alone in it). If the replacement is a block variable and the selected one sits inside a sentence, the selected variable is removed and the new one is added as its own paragraph below.
+* Next to a block variable (`showMarkers` on): A variable picked from the dropdown or text typed with the caret directly before or after a block variable starts a new paragraph above or below it, so the block variable stays alone in its paragraph.
+
+The saved HTML contains the variable as ordinary text, for example `<p>Watch {{video}} now</p>`. Characters that HTML escapes (`&`, `<`, `>`) are serialized as entities, so choose a syntax the consuming renderer decodes accordingly.
+
+#### Locked Variables (`showMarkers`) {#locked-variables}
+
+Enable with `showMarkers: true` on the variables action. It is off by default, and the saved HTML is identical either way (the variable is always plain text). Leave it off where the host application renders the content itself (for example in-context editing), so the variable stays plain text the author can replace.
+
+When on, every occurrence of a configured value is shown as a solid accent-coloured pill carrying the option's label, and becomes a locked unit:
+
+* It can not be edited from the inside: typing, pasting or deleting part of it is rejected.
+* It is removed as a whole with Backspace or Delete next to it, by selecting it and deleting, or with "Remove Variable" in the dropdown.
+* The arrow keys step over it and a selection that touches part of it expands to cover all of it.
+* Clicking the pill selects the whole variable and the selected pill is highlighted.
+
+A block variable is only recognized (pill and lock) when it is the only content of its paragraph. If typed or pasted by hand inside a sentence (`<p>see {{video}} here</p>`) or next to other text, it remains plain text (no pill, not locked, and the dropdown does not treat it as selected). Inline variables are recognized anywhere, including when typed by hand or present in content authored earlier.
+
+The pills never reach the saved HTML, and the styling is inline (no stylesheet to ship). It is deliberately different from the dashed class markers.
+
 ### Block Types {#block-types}
 
 The `blocks` toolbar section renders a dropdown that switches the current block between the configured block types. Supported values are `paragraph`, `h1`–`h6`, `code_block`, and `blockquote`.
