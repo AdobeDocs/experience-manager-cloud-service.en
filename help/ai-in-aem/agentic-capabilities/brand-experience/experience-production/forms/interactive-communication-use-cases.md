@@ -12,7 +12,7 @@ Interactive Communications agentic capabilities in Adobe Experience Manager (AEM
 
 Use these capabilities for documents such as account statements, renewal notices, and service records. For example, you can add a maintenance log to an existing service record and bind its fields to an attached data model. This article focuses on the print, or Document of Record, channel, rather than the data-collection forms covered in [Forms agentic capabilities](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/forms-use-cases.md).
 
-Creation produces a communication. Live-editor authoring changes the communication already open in the editor. The sections below explain the two workflows, sample prompts, and their limitations.
+Creation in standalone Coworker produces a communication. Authoring through Coworker in the IC Editor's right panel changes the communication already open in the editor. The sections below explain the two workflows, sample prompts, and their limitations.
 
 >[!IMPORTANT]
 >
@@ -40,15 +40,15 @@ Both skills can ask about missing content choices before making changes. For exa
 
 ## Personas {#personas-ic}
 
-The two author personas below describe how you can use these capabilities, not required roles or handoffs. With the appropriate permissions, the same person can perform both kinds of authoring.
+The two author personas below correspond to different authoring permissions and user-group memberships. They do not require a handoff between different people: the same person can perform both kinds of authoring when assigned to the required groups. For group setup, see [Configure users](/help/forms/setup-forms-cloud-service.md#config-users).
 
 ![Communication author icon](assets/spectrum-user.svg){width="20"} **Communication authors (IC Author)**
 
-Create letters and statements from supplied content, add document sections, and revise wording or field labels without configuring every component individually.
+Members of the `forms-users` group create letters and statements from supplied content, add document sections, and revise wording or field labels without configuring every component individually.
 
 ![Template icon](assets/spectrum-template.svg){width="20"} **Template authors**
 
-Define reusable headers, footers, layouts, and default styling that establish a communication's look and feel. Review data-model bindings and content and layout locks when preparing a template for reuse. Use Coworker to make supported changes to a template already open in the editor. Editing a template is a separate task from editing a document that uses that template; document requests do not authorize changes to the source template.
+Members of the `forms-users` and `template-authors` groups define reusable headers, footers, layouts, and default styling that establish a communication's look and feel. Review data-model bindings and content and layout locks when preparing a template for reuse. Use Coworker to make supported changes to a template already open in the editor. Editing a template is a separate task from editing a document that uses that template; document requests do not authorize changes to the source template.
 
 Business users, forms developers, marketing operations teams, customer support teams, and compliance and legal reviewers can use these capabilities when their work involves customer communications. For example, supply approved wording for a renewal notice or request a targeted change to a service record. Review generated content before use; these capabilities do not establish legal or regulatory compliance.
 
@@ -58,18 +58,18 @@ The implementation provides two entry points:
 
 | Your task | Starting context |
 | --- | --- |
-| Create a separate communication | Start a conversation in [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) ![CoWorker Chat icon](assets/spectrum-ai-mark.svg){width="20"} and explicitly request a separate new IC. |
+| Create a separate communication | Start a conversation in standalone [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview) ![CoWorker Chat icon](assets/spectrum-ai-mark.svg){width="20"} and request a new IC, including the enabled template to use if applicable. |
 | Edit the current communication | Open the intended IC in the IC Editor and select **[!UICONTROL CoWorker Chat]** ![CoWorker Chat icon](assets/spectrum-ai-mark.svg){width="20"} in the application header to open Coworker in the right panel. |
 
-The editor's separate **[!UICONTROL AI Assistant]** control opens Forms Experience Builder, not the Coworker panel shown in this article. Availability and access requirements still need confirmation before publication.
+Use standalone Coworker for new-asset creation and the editor's Coworker right panel for updates to the open IC. A creation request in the right panel is not a way to create a separate asset.
 
 ## Before you start {#before-you-start-ic}
 
 Be clear about which communication should change:
 
-* **For a separate new IC**, provide its name, title, target environment, and destination folder. Name the template if you want to use one, or ask which enabled templates are available.
+* **For a separate new IC**, use standalone Coworker and provide its name, title, target environment, and destination folder. Name the template if you want to use one, or ask which enabled templates are available.
 * **For the open IC**, name the section or field to change and describe the desired result. Coworker uses the current editor context rather than asking you to identify the document by a repository ID.
-* **For source-based work**, attach the image or PDF and state what should be added, changed, or preserved. If the IC Editor is connected, a generic request such as "Create an IC from this PDF" targets the open communication. Say "Create a separate new IC" when you do not want the open document changed.
+* **For source-based work**, attach the image or PDF and state what should be added, changed, or preserved. Use standalone Coworker to create a new IC from the source. In the editor's right panel, request changes to the open IC instead of asking for a separate new asset.
 
 To attach a source, select the **[!UICONTROL Add]** icon ![Add icon](assets/spectrum-add.svg){width="20"} in Coworker and choose **[!UICONTROL Attach file]**.
 
@@ -83,7 +83,7 @@ The following prompts illustrate source-supported workflows. Each use-case secti
 
 **Create a separate communication**
 
-Create an empty IC, use an enabled template, or build from a brief. A brief can specify the exact content or start a discussion about what the communication should contain. Coworker asks about unresolved business choices before creating content.
+In standalone Coworker, create an empty IC, use an enabled template, or build from a brief. You can create a new IC directly from an enabled named template without first opening an IC in the editor. A brief can specify the exact content or start a discussion about what the communication should contain. Coworker asks about unresolved business choices before creating content.
 
 Sample prompts:
 
@@ -98,13 +98,13 @@ If a named template is unavailable, Coworker offers available alternatives rathe
 
 **Build from an image or PDF**
 
-Use a supplied source to reconstruct supported content in the open IC or explicitly create a separate asset. For an open IC, Coworker compares the requested source content with the document before proposing changes. Generic "create" or "build" wording does not authorize clearing or rebuilding the entire open communication.
+Use a supplied source in standalone Coworker to create a separate asset, or use the editor's Coworker right panel to reconstruct supported content in the open IC. For an open IC, Coworker compares the requested source content with the document before proposing changes. Generic "create" or "build" wording does not authorize clearing or rebuilding the entire open communication.
 
-To start from a template, first create a separate IC from an enabled template and open it in the IC Editor. Then attach the image or PDF and request changes to editable document content, not to the source template.
+To start from a template, ask standalone Coworker to create a new IC from an enabled template and open the result in the IC Editor. To then use an image or PDF, attach it in the editor's Coworker right panel and request changes to editable document content, not to the source template.
 
 Sample prompts:
 
-* **Create separately:** Create a separate new IC from the attached PDF. Do not change the communication I have open.
+* **Create separately, in standalone Coworker:** Create a separate new IC from the attached PDF.
 * **Add missing content:** Use the attached image to add only the missing Service details section to the open IC. Preserve all existing content and formatting.
 * **Limit the scope:** Update only the service introduction to match the attached PDF. Leave the equipment details and the rest of the communication unchanged.
 * **Use a template with an image:** In this IC created from the Service Record template, add only the missing Service details section from the attached image. Preserve the existing content, template headers and footers, and content and layout locks.
@@ -162,11 +162,15 @@ For manual table authoring, see the [Table component](/help/forms/interactive-co
 
 Request supported changes to typography, color, spacing, and component placement. Name the target and the properties to change rather than asking for an undefined brand refresh.
 
+When you insert a section above existing sections in a positioned layout, Coworker shifts the sections below it to make room. The shifts cascade through subsequent sections, and Coworker creates a page if needed. If you append a section when the last page has no space, Coworker creates the next page and places the section there. These are Coworker authoring actions, not a change to the editor's manual text-overflow settings.
+
 Sample prompts:
 
 * Make the Service introduction heading 12 pt, bold, and dark blue (#003366). Change nothing else.
 * Put the Technician and Work order code fields side by side in Maintenance summary.
 * Change only the background fill of Maintenance summary to light gray (#F0F0F0).
+* **Insert above existing sections:** In the positioned layout, add a Maintenance summary section above Equipment details with a blank Technician field. Shift the sections below it to make room, creating a page if needed. Preserve their content and order.
+* **Append on a new page if needed:** Add a Follow-up notes section with one blank Notes field at the end of the open IC. If the last page has no space, create the next page and place the section there.
 
 Layout and content locks can restrict these changes. Review the rendered result, especially when text length or placement affects page flow.
 
@@ -174,7 +178,7 @@ Layout and content locks can restrict these changes. Review the rendered result,
 
 **Bind fields to existing data**
 
-Use fields from the actual data model attached to the open IC. Coworker can bind existing components or add supported scalar fields and simple groups from that model. A data model describes the available data structure; it does not supply permission to invent customer values or transaction records.
+Use fields from the actual data model attached to the open IC. In the editor's right panel, Coworker can build communication content from supported scalar fields and simple groups in that model, or bind existing components. This authors content in the open IC; it does not create a separate asset. A data model describes the available data structure; it does not supply permission to invent customer values or transaction records.
 
 Sample prompts:
 
@@ -182,6 +186,7 @@ Sample prompts:
 * Bind the Technician field in Service details to /serviceRecord/technician in the attached data model. Keep its value blank.
 * Bind the Customer name field to the Customer name property in the attached data model.
 * Add the Customer name and Renewal date fields from the attached data model in a Customer details section. Bind each field to its corresponding model property.
+* **Build from the attached model:** In the open IC, create a Service details section using the supported nonrepeating fields in the attached serviceRecord model. Bind each field to its corresponding model property, leave values blank, and preserve existing content. Show me the proposed field list before making changes.
 
 Coworker needs an unambiguous match to a supported model field. Repeating groups, arrays, and unsupported data types are not covered by this model-driven authoring workflow. See [Configure data binding](/help/forms/interactive-communication/configure-data-binding.md) for the manual workflow.
 
@@ -207,7 +212,7 @@ The expected result depends on the workflow:
 
 | Request | Expected result |
 | --- | --- |
-| Create a separate IC | A creation confirmation and an editor link for the new communication. |
+| Create a separate IC in standalone Coworker | A creation confirmation and an editor link for the new communication. |
 | Edit the open IC | Changes on the live editor canvas and a summary of what changed. You still need to save. |
 | Discuss an underspecified brief | Questions, recommendations, and a proposed scope for approval. Discussion alone does not change the document. |
 | Request a blocked or unsupported change | An explanation of the restriction, not a successful-edit confirmation. |
@@ -221,7 +226,7 @@ The synthetic Service Record was saved and reopened with its field-label change,
 
 Use these practices to make requests precise:
 
-* **Name the destination.** Distinguish the open IC from a separate new asset, especially when attaching an image or PDF.
+* **Choose the right starting context.** Use standalone Coworker for a separate new asset and the editor's Coworker right panel for changes to the open IC, especially when attaching an image or PDF.
 * **Keep each request focused.** Add a section first, then request a separate formatting or binding change when needed.
 * **Use exact labels and positions.** Say "Add Inspection date below Work order code" rather than "add another date near the top."
 * **State preservation requirements.** Specify whether existing wording, formatting, bindings, and unrelated sections must remain unchanged.
@@ -249,7 +254,7 @@ These questions clarify the workflow boundaries illustrated by the sample prompt
 
 **Will a PDF create a new IC?**
 
-Not necessarily. With a usable IC open in the connected editor, a generic source-based create request targets that communication. Explicitly request a separate new IC to keep the open document unchanged.
+To create a new IC from a PDF, submit the request in standalone Coworker. The editor's Coworker right panel is for updating the open IC, not creating a separate asset. In that panel, specify which content to add or change from the PDF.
 
 **Does Coworker save my edits?**
 
