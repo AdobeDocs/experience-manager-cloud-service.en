@@ -22,33 +22,33 @@ role_v2:
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release X {#release-X}
+## Release 29643 {#release-29643}
 
-Summarized below are the continuous improvements for maintenance release X, which was publicly released on November 17, 2026. The previous maintenance release was release 29251.
+Summarized below are the continuous improvements for maintenance release 29643, which was publicly released on November 19, 2026. The previous maintenance release was release 29251.
 
-The 2026.11.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
+The 2026.12.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-X}
-
-None.
-
-### Fixed Issues {#fixed-issues-X}
+### Enhancements {#enhancements-29643}
 
 None.
 
-### Known Issues {#known-issues-X}
+### Fixed Issues {#fixed-issues-29643}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-X}
+### Known Issues {#known-issues-29643}
+
+None.
+
+### Deprecated Features and APIs {#deprecated-29643}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-X}
+### Security Fixes {#security-29643}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release includes X security fixes, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release includes 1 security fix, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-X}
+### Embedded Technologies {#embedded-tech-29643}
 
 |Technology|Version|Link|
 |---|---|---|
