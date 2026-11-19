@@ -63,7 +63,7 @@ Content fragments contain structured content:
     * A combination of many fields of varying data types, including text, number, boolean, and date and time, among others.
     * Can be used either for preparing more structured content for page authoring, or for headless delivery to your application.
   * Nested
-    * The reference data types available allow you to nest your content.
+    * Nested content can be achieved with references and composite data.
     * Tends to be used for headless delivery to your application.
 
 Content Fragments can also be delivered in:
