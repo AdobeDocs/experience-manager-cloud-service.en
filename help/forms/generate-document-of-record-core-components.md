@@ -131,10 +131,6 @@ Perform the following steps to configure an Adaptive Form to automatically gener
 
 You can exclude files uploaded to an Adaptive Form from its Submission PDF. This option applies to Adaptive Forms based on Core Components and can help reduce the size of the PDF. When attachments are excluded, their size and number do not affect PDF generation time.
 
->[!NOTE]
->
-> This capability is available through the Early Access program. To request access, email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address.
-
 1. Open the Adaptive Form for editing.
 1. Select the **[!UICONTROL Adaptive Form Container]** and select its configure icon to open the container properties.
 1. Open the **[!UICONTROL Document of Record]** tab.
@@ -193,7 +189,7 @@ You can configure and generate a Submission PDF (Document of Record) for Adaptiv
     * **Generate Document of Record** — Automatically generate a Submission PDF.
     * **Associate form template as the Document of Record template** — Use a custom XDP or AcroForm template. Browse and select the template from your AEM Forms instance.
 
-1. (Optional) Select **Exclude file attachments from Document of Record** to omit uploaded attachments from the Submission PDF. This option is available through [Early Access](#exclude-file-attachments).
+1. (Optional) Select **Exclude file attachments from Document of Record** to omit uploaded attachments from the Submission PDF. For details, see [Exclude file attachments from the Submission PDF](#exclude-file-attachments).
 1. Click **[!UICONTROL Done]**.
 
 ### Customize Document of Record properties
