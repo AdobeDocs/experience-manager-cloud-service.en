@@ -68,6 +68,8 @@ The following submit actions are supported by [Adaptive Forms authored in the Un
 - [Submit to Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
 - [Submit to Spreadsheet](/help/forms/forms-submission-service.md)
 
+If the available out-of-the-box submit actions do not meet your requirements, you can also [create your own custom submit action](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md).
+
 <!--
 You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
 

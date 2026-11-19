@@ -130,7 +130,7 @@ Edge Delivery Services can be added in several different ways depending on how y
 >* Your organization must have an unused Edge Delivery Services license before it can be applied to a Production program.
 >* Once the Edge Delivery Services license is applied to or removed from a program, the change takes effect immediately without the need to run a pipeline.
 
-
+<!--
 ## About the Edge Delivery to-do list in Cloud Manager {#ed-todo-list}
 
 The **Edge Delivery to-do list** in Cloud Manager is an onboarding task checklist. It is meant to guide you through onboarding and managing your Edge Delivery site until you [complete the go-live process](/help/journey-onboarding/go-live-checklist.md).
@@ -148,6 +148,33 @@ The **Edge Delivery to-do list** in Cloud Manager is an onboarding task checklis
 | 7 | Configure the CDN of your Edge Delivery site | See [Add a Domain Mapping](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md). |
 | 8 | Setup push validation | See [Setup push validation for an Edge Delivery site](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 9 | Go-Live | See [Go-Live checklist](https://www.aem.live/docs/go-live-checklist). |
+-->
+
+
+## About the Edge Delivery to-do list in Cloud Manager {#ed-todo-list}
+
+The **[!UICONTROL Edge Delivery to-do list]** in Cloud Manager is an onboarding checklist. Use the to-do list to onboard and manage your Edge Delivery site until you [complete the go-live process](/help/journey-onboarding/go-live-checklist.md).
+
+1. To open the to-do list, select your program in Cloud Manager. 
+1. On the **[!UICONTROL Program Overview]** page, click the **[!UICONTROL Edge Delivery]** tab.
+
+    ![Edge Delivery to-do list on the Edge Delivery tab of the Program Overview page in Cloud Manager](/help/implementing/cloud-manager/assets/cm-eds-todo-list2.png)
+
+    | Step | Task | Description |
+    | --- | --- | --- |
+    | 1 | [!UICONTROL Complete prerequisites] | Set up a GitHub repository, link your content source, and connect AEM Sidekick. For step-by-step guidance, click **[!UICONTROL View Getting Started tutorial]** to open the [Getting Started tutorial](https://www.aem.live/developer/tutorial).<br>When you finish, click **[!UICONTROL Mark as complete]**.<br>To have Cloud Manager set up these prerequisites for you instead, click **[!UICONTROL Create site now]** at the bottom of the to-do list. See [Create an Edge Delivery site in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md). |
+    | 2 | [!UICONTROL Ready to get started with your project?] | Work with Adobe experts in a dedicated Microsoft Teams channel to kick off your project, collaborate on authoring and development, coordinate your launch or migration, and learn best practices. To request a new channel or join the existing channel for your company, contact your Adobe account team or [Adobe Support](https://experienceleague.adobe.com/?support-tab=home#support).<br>After you join the channel, click **[!UICONTROL Mark as complete]**. To continue without a channel, click **[!UICONTROL Skip for now]**. |
+    | 3 | [!UICONTROL Add Edge Delivery site] | See [Add an Edge Delivery site](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md). |
+    | 4 | [!UICONTROL Add domain] | See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
+    | 5 | [!UICONTROL Add SSL certificate] | See [Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
+    | 6 | [!UICONTROL Configure the CDN of your Edge Delivery site] | See [Add a domain mapping](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md). |
+
+The following tasks are not part of the to-do list, but you might need them before your site goes live:
+
+* [Configure an Edge Delivery site to use an external Git repository](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md)
+* [Set up push invalidation for an Edge Delivery site](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
+* [Review the Edge Delivery Services go-live checklist](https://www.aem.live/docs/go-live-checklist)
+
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 

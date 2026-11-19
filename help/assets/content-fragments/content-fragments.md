@@ -344,11 +344,11 @@ Create as many content models as needed, but no more.
 
 Too many models complicate governance and can slow down GraphQL queries. A small set of models, maximum of low tens, is usually sufficient. If you approach the high tens or more, reconsider your modeling strategy.
 
-### Nesting Models and Fragments (very important) {#nesting-models-and-fragments}
+### Nesting Content (very important) {#nesting-content}
 
-Avoid deep or excessive nesting of content fragments using Content Fragment References, which allow fragments to reference other fragments, sometimes across multiple levels. 
+Avoid deep or excessive nesting of content fragments using either Content Fragment References or Composite data, both of which allow fragments to reference structures, sometimes across multiple levels. 
 
-Heavy use of Content Fragment references can significantly impact system performance, UI responsiveness, and GraphQL query execution. Aim to keep nesting to no more than ten levels.
+Heavy use of Content Fragment references and Composite data can significantly impact system performance, UI responsiveness, and GraphQL query execution. Aim to keep nesting to no more than ten levels.
 
 ### Number of Data Fields and Types per Model {#number-of-data-fields-and-types-per-model}
 
