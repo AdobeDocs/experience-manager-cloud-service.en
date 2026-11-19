@@ -347,6 +347,16 @@ Example prompts in CX Coworker (replace the example asset path and field names w
 | Create a REST API integration | "Create an integration using this cURL command and sample JSON response." |
 | Edit an existing rule | "Change the rule on Company so it is shown when Employee Type is Contractor or Partner." |
 
+#### Interactive Communications authoring in CX Coworker {#ic-authoring-coworker}
+
+Create and refine customer communications such as account statements, renewal notices, and service records through natural-language requests in Adobe CX Enterprise Coworker. Communication authors and template authors can describe the changes they need instead of configuring each document component manually.
+
+* **Create communications:** Start from a brief, an enabled template, an image, or a PDF.
+* **Edit document content:** Add sections and tables, rename or remove fields, and update layout and appearance in the open communication.
+* **Connect existing data:** Bind supported nonrepeating fields to an attached data model.
+
+These capabilities are generally available. Review changes in the Interactive Communications Editor and save them before generating output.
+
 #### CAPTCHA v3 support {#captcha-v3-support}
 
 Use Completely Automated Public Turing test to tell Computers and Humans Apart (CAPTCHA) v3 support to help protect forms from automated submissions.
