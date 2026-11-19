@@ -592,3 +592,7 @@ The list below consolidates the current limitations of the Composite data type:
     * Page rendering via Core Components and the Sling Model exporter (`.model.json`) does not yet support composite fields. 
   * Visual Content Fragments (Content Fragments with HTML templates)
     * Visual Content Fragments (Content Fragments with HTML templates) do not currently support composite fields.
+
+* Other considerations
+
+  * If you have a Content Fragment holding a Fragment Reference to a second fragment, which in turn has Composite data, then you may experience performance issues when using GraphQL as such queries are not optimized.

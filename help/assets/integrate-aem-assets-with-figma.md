@@ -51,7 +51,7 @@ Alternatively, access the [[!DNL Adobe Experience Manager (AEM) Assets Connector
 1. Drag and drop the asset to the canvas or select the asset and click **[!UICONTROL Select]** to bring the asset on the canvas.
 
 1. Click ![three dots](/help/assets/assets/three-dots.svg) in the folder path to display all parent and child folders in the current hierarchy. Select a folder to navigate to that location. 
-![three dots](/help/assets/assets/figma-v2-plugin.png)
+![AEM Assets Figma Connector](/help/assets/assets/aem-assets-figma-connector-general.png)
 
 1. [Optional] Click **[!UICONTROL Check for updates]**. The assets used in the current Figma document are compared to the assets that exist in AEM. Any updates are listed in a separate window. Click **[!UICONTROL Update]** to get the updated asset from AEM into your Figma document. 
 
@@ -67,7 +67,7 @@ Once your Figma design is ready, you can [export the asset to the AEM Assets rep
 1. In the dialog box, select either **[!UICONTROL Selected Item]** or **[!UICONTROL Page]**, specify a file or page name, define an export configuration and click **[!UICONTROL Upload]** to upload the selected asset or the entire design to the destination folder. 
 
    The export configuration comprises the file format, scale, and quality. For example, if you select JPG as the file format, you can also define the image scale and quality. Similarly, if you select PNG as the file format, you can also define the image scale.
-   ![upload figma design](/help/assets/assets/upload-figma-design.png)
+  ![Upload assets using AEM Assets Figma Connector](/help/assets/assets/aem-assets-figma-connector-upload.png)
 
 
 ## Frequently Asked Questions {#frequently-asked-questions-aem-assets-figma-integration}
@@ -110,8 +110,7 @@ Figma designs can be grouped on the canvas before exporting to the AEM Assets re
 
 ### How do I navigate folders in the AEM Assets repository from within Figma? {#navigate-aem-folders-figma}
 
-Folder navigation within the AEM Assets repository is available directly inside the Adobe Experience Manager AEM Assets Connector panel in Figma. Click the three-dot icon in the folder path to display all parent and child folders in the current hierarchy. Select any folder from the list to navigate to that location. When exporting a design to a different destination folder, click More Options in the folder path to select an alternative folder within the AEM Assets repository.
-
+Folder navigation within the AEM Assets repository is available directly inside the Adobe Experience Manager AEM Assets Connector panel in Figma. Folder names are listed, or the ![S2_Icon_FolderBreadcrumb_20_N.svg](/help/assets/assets/S2-Icon-FolderBreadcrumb-20-N.svg) folder icon can be clicked to display all parent folders in the current hierarchy. Select any folder from the list to navigate to that location. When exporting a design to a different destination folder, click More Options in the folder path to select an alternative folder within the AEM Assets repository.
 
 **See also**
 

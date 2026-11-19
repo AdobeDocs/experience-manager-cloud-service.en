@@ -91,7 +91,7 @@ To set approval target:
 
 1. If you select **Approved** in step 2, select an approval target. The possible values are **Delivery** and **Content Hub**.
 
-   * **Delivery** is the default option selected in the drop-down menu, and it publishes the asset to both [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) and [Content Hub](/help/assets/product-overview.md) when both destinations are enabled for Experience Manager Assets. This ensures the widest possible distribution of the approved asset across both delivery channels.
+   * **Delivery** is the default option selected in the drop-down menu, and it publishes the asset to both [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) and [Content Hub](/help/assets/product-overview.md) when both destinations are enabled for Experience Manager Assets. This ensures the widest possible distribution of the approved asset across both delivery channels. Because **Delivery** includes Content Hub, you do not need to approve an asset separately for Content Hub and Delivery. To make an asset available in both, select **Delivery**.
 
    * Selecting **Content Hub** publishes the asset exclusively to Content Hub, so the asset is not delivered through Dynamic Media with OpenAPI. Content Hub appears as an option only when it is enabled for Experience Manager Assets.
 

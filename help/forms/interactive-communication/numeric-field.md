@@ -51,6 +51,9 @@ The configured pattern is immediately reflected in the canvas preview and is pre
 |--------|---------|
 | 9 | Required digit |
 | z | Suppresses leading zeros |
+| m | Masks significant integer digits with `*`; suppresses leading zeros |
+
+To configure partially or fully masked numeric values, see [Mask numeric values](/help/forms/interactive-communication/howto/mask-numeric-identifier.md).
 
 ### Best practices
 
