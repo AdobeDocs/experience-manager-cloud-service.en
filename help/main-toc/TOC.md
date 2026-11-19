@@ -708,6 +708,7 @@ user-guide-title: AEM as a Cloud Service
     + [Configure asset upload restrictions](/help/assets/configure-asset-upload-restrictions.md)
     + [AI-powered content onboarding and content supply chain automation](/help/assets/ai-powered-content-onboarding-content-supply-chain-automation.md)
     + [Asset Sourcing portal for AEM Assets](/help/assets/asset-sourcing-portal-for-aem-assets.md)
+    + [Digital Rights Management in Assets view](/help/assets/drm-assets-view.md)
   + Share and distribute assets {#brand-portal}
     + [Configure [!DNL Assets] with [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
     + [Publish assets to [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
