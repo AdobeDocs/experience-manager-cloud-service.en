@@ -52,8 +52,17 @@ Have a look at the May 2026 Release Overview video for a summary of the features
 
 ## Release Overview {#overview}
 
-The 2026.11.0 release of [!DNL Experience Manager] as a [!DNL Cloud Service] highlights new and recently available capabilities across Sites, Assets, Forms, and Foundation, alongside updates to developer tools and platform guidance.
+The 2026.11.0 release of [!DNL Experience Manager] as a [!DNL Cloud Service] brings new capabilities across Sites, Assets, Forms, and Foundation, with a focus on conversational experiences, asset governance, and developer readiness.
 
+**Highlights of this release**
+
+* **Sites experiences in LLM conversations:** Adobe LLM Apps lets brands create interactive experiences from their existing websites and publish them to ChatGPT and Claude.
+* **Smarter asset governance and insight:** AI-powered Digital Rights Management extracts usage rights from license documents, while the unified Assets Insights dashboard brings asset usage and performance data together.
+* **Faster communication authoring:** Forms authors can create and refine Interactive Communications through natural-language requests in CX Enterprise Coworker, and create reusable XDP templates and fragments in the Interactive Communication Editor.
+* **Java 25 support:** AEM Cloud Service now supports Java 25 for builds and runtime. Teams can use the SDK and opt-in runtime configuration to validate applications ahead of the planned environment upgrades.
+* **Platform changes to prepare for:** Review the notices on new Adobe-managed CDN egress IP addresses, the transition from built-in New Relic APM to OpenTelemetry, and the removal of deprecated Java APIs.
+
+Beta, Limited Availability, and prerelease capabilities are identified in the sections below.
 
 ## AEM Beta Programs {#aem-beta-programs}
 
