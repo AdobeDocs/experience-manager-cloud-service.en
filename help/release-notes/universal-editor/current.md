@@ -32,7 +32,7 @@ These are the release notes for the 19 November 2026 release of the Universal Ed
 ## What's New {#what-is-new}
 
 * Native WebMCP support was added so the editor’s tools (including new undo and redo tools) are registered through `document.modelContext` when the browser provides it, alongside the existing integration.
-* A variables dropdown is now available in the rich text editor for inserting variables into rich text fields for Content Fragments.
+* A variables dropdown is now available in the rich text editor for [inserting variables into rich text fields](/help/implementing/universal-editor/configure-rte.md#variables) for Content Fragments.
 
 ## Other Improvements {#other-improvements}
 
