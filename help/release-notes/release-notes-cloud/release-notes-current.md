@@ -355,17 +355,27 @@ Manage mixed form collections and move reusable forms between environments with 
 
 Authors can exclude uploaded file attachments from the Submission PDF (Document of Record) for Adaptive Forms based on Core Components. This option can reduce the size of the PDF when files are delivered separately through the configured submit action. When attachments are excluded, their size and number do not affect PDF generation time. For details, see [Exclude file attachments from the Submission PDF](/help/forms/generate-document-of-record-core-components.md#exclude-file-attachments).
 
+#### XDP templates and fragments in the Interactive Communication Editor {#xdp-templates-fragments-ic-editor}
+
+Authors can now create XML Data Package (XDP) templates and fragments in Forms Manager and edit them directly in the Interactive Communication (IC) Editor, without first authoring them in Designer. Teams can build shared layouts and reusable content in one place:
+
+* **Create reusable base layouts:** Create XDP templates with headers, footers, master pages, and bound fields that multiple Interactive Communications can share.
+* **Reuse common content:** Create XDP fragments for content such as signature blocks or standard disclosures, and reference them across templates instead of recreating the content.
+* **Bind data during creation:** Optionally bind a template or fragment to a Form Data Model or an XML Schema Definition (XSD) file, or add the data connection later in the editor.
+* **Preview PDF output:** Preview generated PDF output with no data, local XML data, or Form Data Model sample data.
+
+For details, see [Create an XDP template](/help/forms/interactive-communication/create-xdp-template.md) and [Create an XDP fragment](/help/forms/interactive-communication/create-xdp-fragment.md).
+
 ### Early Adopter Features in AEM Forms
 
 The following capabilities are available through the AEM Forms Early Adopter program. To request access, email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address and include your organization ID, program details, and the capabilities you want to use.
 
 #### Interactive Communication Editor enhancements {#ic-editor-enhancements}
 
-Authors can create reusable document designs, add digital signature fields, and configure accessibility properties in the Interactive Communication (IC) Editor:
+Authors can add digital signature fields and configure accessibility properties in the Interactive Communication (IC) Editor:
 
 * **Add a Sign component:** Place a digital signature field in a document and configure which fields are locked after signing, including fields in a named collection. Recipients can sign the generated PDF in Adobe Acrobat, helping teams protect completed document content.
 * **Configure accessibility while authoring:** Set accessibility roles, screen reader text and precedence, and navigation order, then generate tagged PDF output. These controls help authors prepare communications for readers who use assistive technologies.
-* **Create XDP templates:** Create and update existing XDP templates  directly in the Interactive Communication editor, configure data bindings, and reuse fragments across document designs. Preview generated PDF output while refining the design.
 
 #### Theme Editor for Core Components based Adaptive Forms {#theme-editor-core-components}
 
