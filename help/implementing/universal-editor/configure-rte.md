@@ -574,7 +574,7 @@ The plugin matches values exactly as written, so care must be taken when setting
 |`display`|Where the variable goes|Selected text|
 |---|---|---|
 |`block` (default)|In its own paragraph, right after the paragraph that holds the caret (or the end of the selection). An empty paragraph is filled instead.|Not replaced, the selection is left as is|
-|`inline`|At the caret, inside the current paragraph|	Replaced by the variable|
+|`inline`|At the caret, inside the current paragraph|Replaced by the variable|
 
 For example, with the caret (or a selection) inside `<p>Watch the intro now</p>`:
 
