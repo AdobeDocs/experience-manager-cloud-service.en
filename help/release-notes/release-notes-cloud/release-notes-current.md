@@ -329,17 +329,19 @@ To participate or learn more, send an email to `aem-assets-express@adobe.com`.
 
 #### Interactive Communications authoring in CX Coworker {#ic-authoring-coworker}
 
-Create and refine customer communications such as account statements, renewal notices, and service records through natural-language requests in Adobe CX Enterprise Coworker. Communication authors and template authors can describe the changes they need instead of configuring each document component manually.
+Create and refine customer communications such as account statements, renewal notices, and service records through **natural-language requests** in Adobe CX Enterprise Coworker. Communication authors and template authors can describe the changes they need instead of configuring each document component manually.
 
 * **Create communications:** Start from a brief, an enabled template, an image, or a PDF.
 * **Edit document content:** Add sections and tables, rename or remove fields, and update layout and appearance in the open communication.
 * **Connect existing data:** Bind supported nonrepeating fields to an attached data model.
 
-These capabilities are generally available. Review changes in the Interactive Communications Editor and save them before generating output.
+For details, see [Interactive Communications agentic capabilities](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/interactive-communication-use-cases.md).
+
+![Interactive Communication Editor showing a service introduction added to a communication through a natural-language request in the Coworker chat panel](../../ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/assets/coworker-ic-content-editing.png)
 
 #### Exclude file attachments from the Submission PDF {#exclude-attachments-submission-pdf}
 
-Authors can exclude uploaded file attachments from the Submission PDF (Document of Record) for Adaptive Forms based on Core Components. This option can reduce the size of the PDF when files are delivered separately through the configured submit action. When attachments are excluded, their size and number do not affect PDF generation time. For details, see [Exclude file attachments from the Submission PDF](/help/forms/generate-document-of-record-core-components.md#exclude-file-attachments).
+Authors can exclude uploaded file attachments from the Submission PDF (Document of Record) for Adaptive Forms based on Core Components. This option can reduce the size of the Submission PDF when files are delivered separately through the configured submit action. For details, see [Exclude file attachments from the Submission PDF](/help/forms/generate-document-of-record-core-components.md#exclude-file-attachments).
 
 #### XDP templates and fragments in the Interactive Communication Editor {#xdp-templates-fragments-ic-editor}
 
@@ -358,7 +360,9 @@ The following capabilities are available through the AEM Forms Early Adopter pro
 
 #### Theme Editor for Core Components based Adaptive Forms {#theme-editor-core-components}
 
-Style Core Components based Adaptive Forms visually in the Theme Editor and preview changes as you work. Customize colors, typography, borders, and spacing, then reuse themes across forms to maintain a consistent appearance.
+Style Core Components based Adaptive Forms visually in the Theme Editor and preview changes as you work. Customize colors, typography, borders, and spacing, then reuse themes across forms to maintain a consistent appearance. For details, see [Customizing Adaptive Form themes using the Theme Editor](/help/forms/customizing-themes-using-theme-editor.md).
+
+![Theme Editor showing the background color selector with RGB sliders, color swatches, and the styled Adaptive Form preview](../../forms/assets/custom-theme-form-level-styling.png)
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
