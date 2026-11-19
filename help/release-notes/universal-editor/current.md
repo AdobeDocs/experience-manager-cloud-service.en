@@ -1,6 +1,6 @@
 ---
-title: Universal Editor 2026.11.12 Release Notes
-description: These are the release notes for the 2026.11.12 release of the Universal Editor.
+title: Universal Editor 2026.11.19 Release Notes
+description: These are the release notes for the 2026.11.19 release of the Universal Editor.
 feature: Release Information
 role: Admin
 product_v2:
@@ -17,9 +17,9 @@ role_v2:
     internal-label: Admin
 ---
 
-# Universal Editor 2026.11.12 Release Notes {#release-notes}
+# Universal Editor 2026.11.19 Release Notes {#release-notes}
 
-These are the release notes for the 12 November 2026 release of the Universal Editor.
+These are the release notes for the 19 November 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -31,10 +31,10 @@ These are the release notes for the 12 November 2026 release of the Universal Ed
 
 ## What's New {#what-is-new}
 
-* Rich text editor toolbar tooltips now display the [keyboard shortcuts](/help/implementing/universal-editor/configure-rte.md#keyboard-shortcuts) for their actions.
+* Native WebMCP support was added so the editor’s tools (including new undo and redo tools) are registered through `document.modelContext` when the browser provides it, alongside the existing integration.
+* A variables dropdown is now available in the rich text editor for inserting variables into rich text fields for Content Fragments.
 
 ## Other Improvements {#other-improvements}
 
-* [The properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) now gives its renderers the selected field’s resource, so the asset picker can load Content Advisor data.
-* [When using responsive mode,](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator) typing a custom width now applies the new value on commit instead of re-applying the previous width.
-  * Switching back to the desktop preset now clears the custom width, and the width field is read-only on desktop.
+* The editor now clears a selection whose component no longer exists after navigating to a new page and keeps selections whose components appear in a later repaint.
+* Native AEM header buttons now stay available on pages that contain nested Experience Fragments or Content Fragments.
