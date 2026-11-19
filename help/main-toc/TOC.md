@@ -642,6 +642,7 @@ user-guide-title: AEM as a Cloud Service
   + [Overview and what's new](/help/assets/overview.md)
   + [Notable Changes to [!DNL Assets] as a [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
   + [[!DNL Assets] architecture](/help/assets/architecture.md)
+  + [Digital Rights Management](/help/assets/drm-assets-view.md)
   + [Supported file formats](/help/assets/file-format-support.md)
   + [Overview of asset microservices](/help/assets/asset-microservices-overview.md)
   + [Accessibility in [!DNL Assets]](/help/assets/accessibility.md)
@@ -708,7 +709,6 @@ user-guide-title: AEM as a Cloud Service
     + [Configure asset upload restrictions](/help/assets/configure-asset-upload-restrictions.md)
     + [AI-powered content onboarding and content supply chain automation](/help/assets/ai-powered-content-onboarding-content-supply-chain-automation.md)
     + [Asset Sourcing portal for AEM Assets](/help/assets/asset-sourcing-portal-for-aem-assets.md)
-    + [Digital Rights Management in Assets view](/help/assets/drm-assets-view.md)
   + Share and distribute assets {#brand-portal}
     + [Configure [!DNL Assets] with [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
     + [Publish assets to [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)

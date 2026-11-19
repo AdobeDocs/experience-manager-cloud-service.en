@@ -1,5 +1,5 @@
 ---
-title: Digital Rights Management in Assets view 
+title: Digital Rights Management in AEM Assets 
 description: Learn how to manage licenses with the Digital Rights Management service in Assets view.
 contentOwner: AG
 feature: Asset Management,DRM
@@ -29,7 +29,7 @@ You can create a license from a usage-rights document. AI extracts the informati
    ![Licenses](assets/licenses.png)
 1. Upload the license document and click **[!UICONTROL Next]**.
    ![Uploading](assets/uploading.png)
-1. Enter a name for the license document.
+1. Specify a name for the license document.
 1. Review the extracted license information including the expiration dates, regions, channels, and restrictions.
 1. Click **[!UICONTROL Apply and Save]**.
 
@@ -41,7 +41,7 @@ The newly created license is now displayed in the license list.
 
 ## View license {#view-license}
 
-You can view the saved license under **[!UICONTROL Licenses]**. Use it to find a license, review its usage rights, and view the assets associated with it.
+You can view the list of existing licenses under **[!UICONTROL Licenses]**. Use the **[!UICONTROL Filter license]** search bar to find a license and view the assets associated with it.
 
 To view a particular license, click **[!UICONTROL View]**. In the **[!UICONTROL Property list]** window, you can review and update the license details, including the expiration date from the **[!UICONTROL Extracted properties]** tab. You can view the list of assets using that particular license from the **[!UICONTROL Assets using this license]** tab. 
 
@@ -51,7 +51,7 @@ To view a particular license, click **[!UICONTROL View]**. In the **[!UICONTROL 
 
 You can assign an existing license to an asset, or upload a new license document while assigning.
 
-1. Select the asset and click more options ![More icon](assets/do-not-localize/more-icon.svg). Click **[!UICONTROL Assign License]**.
+1. Select the asset and click More Options (![More icon](assets/do-not-localize/more-icon.svg)). Click **[!UICONTROL Assign License]**.
 
    ![Assign license](assets/assign.png)
 
@@ -73,7 +73,7 @@ An asset can have more than one license. To unassign license from an asset, exec
 
    ![Unassign license](assets/unassign.png)
 
-   Alternatively, you can unassign a license by selecting the asset. Click more options ![More icon](assets/do-not-localize/more-icon.svg) and then click **[!UICONTROL Unassign License]**.
+   Alternatively, you can unassign a license by selecting the asset. Click More Options (![More icon](assets/do-not-localize/more-icon.svg)) and then click **[!UICONTROL Unassign License]**.
 
 
 ## Download assets with license {#download-licensed-assets}
@@ -86,7 +86,7 @@ If an asset has a license associated with it, downloading the asset requires you
 
    ![Download licensed asset](assets/download.png)
 
-1. Review the license details information and restrictions.
+1. Review the license details and restrictions.
 1. Select the **[!UICONTROL I have read and accept all the terms and conditions]** check box and click **[!UICONTROL Proceed]**.
 
    ![Downloading licensed asset](assets/accept.png)
