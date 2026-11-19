@@ -25,6 +25,9 @@ You can define properties within the Search Assets API request to enable the fol
 
 * **Apply filters**: Use the `term` query to filters the results further by defining a `key` and one or multiple values. `key` identifies the field whose value must be matched and `value` represents what to match against. Similarly, you can use the `range` query to define a range for a field using the Greater-than (gt), Greater-than or equal-to (gte), Less-than (lt), and Less-than or equal-to (lte) properties. 
 
+   >[!NOTE]
+   >When searching for assets, you need to configure the metadata fields available for filtering and searching in Content Hub. When configuring a filter, map it to the appropriate metadata property to ensure it targets the correct asset attribute. For more information, see [Configure Content Hub user interface](configure-content-hub-ui-options.md). If you do not have access to Content Hub, submit an [Adobe Support ticket](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html). 
+
 * **Sort results**: Use the `OrderBy` property to sort search results based on one or multiple fields. You can sort the results in an ascending or descending order.
 
 * **Pagination**: Use the `limit` and `cursor` properties to define pagination properties within a Search API request. `limit` property defines the maximum items to retrieve in an API response. `cursor` property facilitates to retrieve starting point for the next set of assets defined in the `limit` property. For example, if you define `50` as the limit in the API request, you can use the `cursor` property to start and retrieve the next 50 items using the next API request.

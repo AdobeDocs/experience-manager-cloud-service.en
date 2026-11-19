@@ -285,7 +285,6 @@ When the **Submit** button is clicked, the `redirect-api` API service is invoked
 
 ## Retrieve Property Values from a JSON array
 
-<span class="preview"> This is a early-adopter feature. If you are interested, send a quick email from your work address to mailto:aem-forms-ea@adobe.com to request access to the feature</a>. </span>
 
 Adaptive Forms supports invoking a service, processing JSON responses, and populating form fields dynamically. This section describes how to extract property values from a JSON array and bind them to form fields.
 

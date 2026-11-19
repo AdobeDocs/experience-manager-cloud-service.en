@@ -39,6 +39,12 @@ Some of the key benefits of the Content Discovery Agentic Capability include:
 
 * **Consistent Content Utilization**: Ensures reuse of approved assets and fragments, maintaining brand consistency across channels.
 
+   >[!VIDEO](https://delivery-p49105-e258067.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8ba8f12d-aa17-4126-b0c7-10dcbcf4f98d/play?playbacktype=hls&isletterboxed=true)
+
+   >[!NOTE]
+   >
+   >To participate or learn more on the Coworker capabilities, send an email to `dm-beta-feedback@adobe.com`.
+
 >[!IMPORTANT]
 >
 >AI-generated responses may be inaccurate or misleading. Be sure you double-check suggested fixes and responses. 

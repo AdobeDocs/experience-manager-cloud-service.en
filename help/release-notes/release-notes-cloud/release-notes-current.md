@@ -341,6 +341,46 @@ Manage mixed form collections and move reusable forms between environments with 
 * **Download forms with their fragments:** Download an Edge Delivery Services form together with its referenced fragments in the same package, reducing the need to collect dependencies separately when transferring forms.
 * **Keep theme references current:** Frontend theme redeployment automatically updates the form's saved theme reference, so Forms Manager continues to show the correct theme rather than reverting to Canvas in the theme picker.
 
+#### Table component for Core Components based Adaptive Forms {#table-core-components}
+
+The [Table component](/help/forms/adaptive-forms-tables-core-components.md) is now generally available for Adaptive Forms based on Core Components. Authors can configure rows and columns, merge and split cells, enable column sorting, and let users add or remove rows at runtime. Tables also support calculations and rendering in the Submission PDF (Document of Record).
+
+#### Visual Rule Editor enhancements {#visual-rule-editor-enhancements}
+
+The following capabilities are now generally available in the Visual Rule Editor for Core Components based Adaptive Forms:
+
+* **Navigate To with event payload support:** Use `EVENT_PAYLOAD` in the Invoke Service handlers to configure navigation based on event responses. See [Use Event Payload in Navigate To Action](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
+* **Functions and mathematical expressions in input parameters:** Pass dynamically computed values directly as input parameters. See [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
+* **Retrieve values from a JSON array:** Use a custom function to extract values from an API response and bind them to form fields. See [Retrieve Property Values from a JSON array](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array).
+
+Direct API integration without a Form Data Model remains available through the Early Adopter program. See [Integrating API in Rule Editor](/help/forms/api-integration-in-rule-editor.md).
+
+#### Accessibility improvements for Adaptive Forms Core Components {#adaptive-forms-accessibility}
+
+Checkbox groups, radio button groups, and panels now use `<fieldset>` and `<legend>` elements to associate group labels with their controls. These generally available improvements help screen readers interpret grouped form controls. See [Creating accessible Adaptive Forms](/help/forms/creating-accessible-adaptive-forms.md).
+
+#### Locale support in Interactive Communication Editor {#ic-locale-support}
+
+[Locale configuration](/help/forms/interactive-communication/support-localization.md) is now generally available in Interactive Communication Editor. Authors can select a locale to apply language and regional formatting conventions for dates, numbers, currencies, and other locale-sensitive content.
+
+#### Forms Service APIs {#forms-service-apis}
+
+Forms Service APIs are now generally available for rendering interactive PDF forms from XDP templates, importing and exporting form data, and validating submitted data. See the [AEM Forms API reference](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/).
+
+#### Document Conversion APIs {#document-conversion-apis}
+
+The following [Document Conversion APIs](/help/forms/aem-forms-communication-api-overview.md#document-conversion-apis) are now generally available:
+
+* **HTML to PDF:** Convert HTML documents to PDF while preserving layout and styling.
+* **PostScript to PDF:** Convert PostScript documents to PDF.
+* **PDF to Image:** Convert PDF documents into one or more image files.
+* **PDF to PostScript:** Convert PDF documents to PostScript format.
+* **Flatten Transparency:** Flatten transparent objects in PDF documents for printing and downstream processing.
+
+#### Direct upload of generated PDFs to Azure Blob Storage {#direct-pdf-upload-azure-blob-storage}
+
+Direct upload of generated PDFs to Azure Blob Storage through the Document Generation API is now generally available. Applications can upload PDFs as part of document generation without a separate file-transfer step. See [Document Generation](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-generation).
+
 ### Early Adopter Features in AEM Forms
 
 The following capabilities are available through the AEM Forms Early Adopter program. To request access, email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address and include your organization ID, program details, and the capabilities you want to use.
@@ -519,6 +559,12 @@ You can now forward CDN logs to **Amazon S3, Dynatrace, and New Relic**. Log for
 Log Forwarding now supports mutual TLS (mTLS) client certificate authentication for Splunk, Elasticsearch/OpenSearch, and HTTPS destinations, for both AEM logs (including Apache/Dispatcher) and CDN logs. AEM as a Cloud Service presents a client certificate when it connects to your logging destination, so the destination can verify that the logs come from your environment.
 
 mTLS for Log Forwarding is in beta. To join the Beta Program, email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) with your program ID and environment IDs. Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md#mtls).
+
+#### CAPTCHAs and Bot Category WAF Flags at the Origin (Beta Program) {#captcha-beta}
+
+Customers licensing Extended Security can configure traffic filter rules with CAPTCHA challenges – at the origin – to block unwanted bots. In addition, you can log or block requests at the origin that match specific types of bots using a new set of WAF Flags.
+
+To participate in the beta, email [aemcs-waf-adopter@adobe.com](mailto:aemcs-waf-adopter@adobe.com).
 
 #### Edge Authentication for Edge Delivery Services (Beta Program) {#edge-authentication}
 
