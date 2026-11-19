@@ -103,7 +103,7 @@ You can deliver your Composite items with the following APIs:
 
 * From the [Management OpenAPI](/help/headless/content-fragment-openapis.md#deliver-a-composite-item) (Content Fragments Management API)
 
-* [AEM GraphQL API for use with Content Fragments](/help/headless/graphql-api/content-fragments.md#deliver-a-composite-item)
+* [AEM GraphQL API for use with Content Fragments](/help/headless/graphql-api/content-fragments.md#data-types)
 
 * the REST Delivery API. There are two paths:
 
