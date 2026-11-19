@@ -688,12 +688,11 @@ user-guide-title: AEM as a Cloud Service
     + [Color tags for images](/help/assets/color-tag-images.md)
     + [Manage PDF documents](/help/assets/manage-pdf-documents.md)
     + [Micro-Frontend Destination Selector](/help/assets/destination-selector.md)
-    + {hide-from-toc} [AEM Assets Activation Report (Beta)](/help/assets/aem-assets-activation-report.md)
   + Configure, administer, and extend [!DNL Assets] {#admin}
     + [Detect duplicate assets](/help/assets/detect-duplicate-assets.md)
     + [Developer docs and APIs references](/help/assets/developer-reference-material-apis.md)
     + [Folder metadata schema](/help/assets/folder-metadata-schema.md)
-    + {hide-from-toc} [Generate Brand Aware Metadata](/help/assets/brand-aware-metadata.md)
+    + [Generate Brand Aware metadata](/help/assets/brand-aware-metadata.md)
     + [Work with image and video profiles](/help/assets/dynamic-media/about-image-video-profiles.md)
     + [Translate assets](/help/assets/translate-assets.md)
     + [Search facets](/help/assets/search-facets.md)
@@ -819,6 +818,7 @@ user-guide-title: AEM as a Cloud Service
     + [Introduction](/help/assets/assets-view-introduction.md)
     + [Getting started](/help/assets/get-started-assets-view.md)
     + [My Workspace](/help/assets/my-workspace-assets-view.md)
+    + [View Insights dashboard](/help/assets/aem-assets-activation-report.md)
     + [Supported file types and use cases](/help/assets/supported-file-formats-assets-view.md)
     + [View assets](/help/assets/navigate-assets-view.md)
     + [Upload and add assets](/help/assets/add-delete-assets-view.md)
@@ -867,8 +867,9 @@ user-guide-title: AEM as a Cloud Service
     + [Smart Collections in Content Hub](/help/assets/smart-collection-content-hub.md)
     + [Frequently asked questions for Content Hub](/help/assets/frequently-asked-questions-content-hub.md)  
   + Best practices{#best-practices}
+    + [Brand Aware Metadata best practices: a WKND tutorial](/help/assets/brand-aware-metadata-best-practices.md)
+    + [Metadata best practices: Plan, build, and govern](/help/assets/metadata-best-practices.md)
     + [Search best practices](/help/assets/search-best-practices.md)
-    + [Metadata management and best practices](/help/assets/metadata-best-practices.md)
   + Integration with Figma {#integration-figma}
     + [Native integration with Figma](/help/assets/integrate-aem-assets-with-figma.md)
   + Integration with Adobe Workfront {#integrations}
@@ -1213,7 +1214,9 @@ user-guide-title: AEM as a Cloud Service
     + Enterprise Platforms {#enterprise-platforms}
       + [Setting Up Microsoft Copilot Studio with AEM MCP](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
       + [Setting Up JetBrains with GitHub Copilot and AEM MCP](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
-  + [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md)
+  + Local Development with AI {#local-development-with-ai}
+    + [AI Tooling for Local Development](/help/ai-in-aem/local-development-with-ai-tools.md)
+    + [Code Assessment Skill](/help/ai-in-aem/code-assessment-skill.md)
   + Agentic Capabilities in AEM {#agentic-capabilities}
     + [Overview](/help/ai-in-aem/agentic-capabilities/overview.md)
     + Brand Experience {#brand-experience}

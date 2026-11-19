@@ -94,8 +94,6 @@ The below table displays the difference between the AFP and PDF formats:
 
 The document generation API returns the generated PDF document or AFP document. You can also optionally upload the generated PDFs to Azure Blob Storage.
 
-<span class="preview"> Uploading the generated PDFs using document generation API to Azure Blob Storage capability is under [Early Adopter Program](/help/forms/early-access-ea-features.md). You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
-
 >[!NOTE]
 >
 > Document Generation APIs include batch and synchronous output generation endpoints.These APIs support server-to-server authentication using JWT or OAuth, depending on the endpoint. To know more about Document Generation APIs, [click here](/help/forms/aem-forms-communication-api-overview.md#document-generation-apis).

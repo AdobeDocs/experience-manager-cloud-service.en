@@ -68,7 +68,7 @@ Configuration of an external repository in Cloud Manager consists of the followi
 
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program to which you want to link an external repository.
 
-1. In the side menu, under **Program**, click ![Folder outline icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **Repositories**.
+1. In the side menu, under **Program**, click **Repositories**.
 
    ![The Repositories page](/help/implementing/cloud-manager/managing-code/assets/repositories-tab.png)
 
@@ -118,7 +118,7 @@ See also [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/m
 | Access token option | Description |
 | --- | --- |
 | **Use existing Access Token** | If you have already provided a repository access token for your organization and have access to multiple repositories, you can select an existing token. Use the **Token Name** drop-down list to choose the token you want to apply to the repository. Otherwise, add a new access token. |
-| **Add new Access Token** |<ul><li>In the **Token Name** text field, type a name for the access token you are creating.<li>Create a personal access token by following the instruction in the [GitLab documentation](https://docs.gitlab.com/user/profile/personal_access_tokens/).<li>Required permissions for the GitLab Personal Access Token (PAT)<br>These scopes allow Cloud Manager to access repository data and user information as needed for validation and webhook integration.<br>When you generate the PAT in GitLab, make sure it includes the following token scopes:<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
+| **Add new Access Token** |<ul><li>In the **Token Name** text field, type a name for the access token you are creating.<li>Create a personal access token by following the instruction in the [GitLab documentation](https://docs.gitlab.com/user/profile/personal_access_tokens/). If the repository is part of a group: the user who creates the token must have a role in that group that can read code (any role except Guest).<li>Required permissions for the GitLab Personal Access Token (PAT)<br>These scopes allow Cloud Manager to access repository data and user information as needed for validation and webhook integration.<br>When you generate the PAT in GitLab, make sure it includes the following token scopes:<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
 
 After validation, the external repository is ready to use and link to a pipeline.
 
@@ -195,13 +195,13 @@ For all other external repositories that are onboarded with an access token &nda
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program to which you want to configure a webhook for an external Git repository.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program for which you want to configure a webhook for an external Git repository.
 
-1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to display the left side menu.
+1. In the upper-left corner of the page, click the Show menu icon to display the left side menu.
 
-1. In the left side menu, Under the **Program** heading, click ![Folder outline icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **Repositories**.
+1. In the left side menu, under the **Program** heading, click **Repositories**.
 
-1. On the **Repositories** page, using the **Type** column to assist you in your selection, locate the repository you want, then click ![Ellipsis - More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to it.
+1. On the **Repositories** page, using the **Type** column to assist with your selection, locate the repository you want, then click the menu icon next to it.
 
    ![Config Webhook option on drop-down menu for a selected repository](/help/implementing/cloud-manager/managing-code/assets/repository-config-webhook.png)
 
@@ -211,18 +211,18 @@ For all other external repositories that are onboarded with an access token &nda
 
 1. In the **Config Webhook** dialog box, do the following:
 
-    1. Next to the **Webhook URL** field, click ![Copy icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
+    1. Next to the **Webhook URL** field, click the copy icon.
     Paste the URL in a plain text file. The copied URL is required for your Git vendor's Webhook settings.
-    1. Next to the **Webhook Secret** token/key field, click **Generate**, then click ![Copy icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
+    1. Next to the **Webhook Secret** token/key field, click **Generate**, then click the copy icon.
     Paste the secret in a plain text file. The copied secret is required for your Git vendor's Webhook settings.
 1. Click **Close**. 
 1. Navigate to your Git vendor solution (GitHub Enterprise Server, GitLab, Bitbucket, or Azure DevOps).
 
-    All the details on the webhook configuration and the events that are required for each vendor are available in [Add an external repository](#add-ext-repo). Under step 8, see the tabbed table.
+    All details on the webhook configuration and the events that are required for each vendor are available in [Add an external repository](#add-ext-repo). See the table in step 8.
 
 1. Locate the solution's **Webhook** Settings section.
 1. Paste the Webhook URL that you copied earlier into the URL text field.
-    1. Replace the `api_key` query parameter in the Webhook URL with your own real API key.
+    1. Replace the `api_key` query parameter in the Webhook URL with your own API key.
 
         To generate an API key, you must create an integration project in Adobe Developer Console. See [Creating an API Integration Project](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration) for full details.
     
@@ -288,7 +288,7 @@ When the check is created, it appears as shown in the following screenshot. The 
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
-GitLab interactions rely only on comments. When validation begins, a comment is added. When validation is complete (whether successful or failed), the initial comment is removed and replaced with a new comment containing validation results or error details.
+GitLab interactions rely solely on comments. When validation begins, a comment is added. When validation is complete (whether successful or failed), the initial comment is removed and replaced with a new comment containing validation results or error details.
 
 When code quality validation is running:
 
@@ -335,7 +335,7 @@ If validation fails, detailed error information is provided in the status check 
 
 ![Azure DevOps validation of pull requests with webhooks-3](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-3.png)
 
-For pull request comments and feedback, Cloud Manager adds comments directly to the pull request in Azure DevOps with validation details and any necessary actions required.
+For pull request comments and feedback, Cloud Manager adds comments directly to the pull request in Azure DevOps with validation details and any necessary actions.
 
 ![Azure DevOps validation of pull requests with webhooks-4](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)
 
