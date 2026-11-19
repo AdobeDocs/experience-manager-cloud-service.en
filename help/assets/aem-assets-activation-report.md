@@ -1,6 +1,6 @@
 ---
-title: Assets Insights
-description: Learn about the unified Assets Insights dashboard and its metrics for asset management, Content Hub sharing, and delivery through Dynamic Media and AEM Sites.
+title: Insights dashboard in AEM Assets
+description: Learn about the unified Insights dashboard and its metrics for asset management, Content Hub sharing, and delivery through Dynamic Media and AEM Sites.
 role: Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 product_v2:
@@ -11,11 +11,11 @@ role_v2:
     internal-label: Admin
 ---
 
-# Assets Insights {#aem-asset-insights-beta-metrics-explained}
+# Insights dashboard in AEM Assets {#insights-dashboard-in-aem-assets}
 
 ## Overview {#overview}
 
-Assets Insights is a unified dashboard in Adobe Experience Manager (AEM) Assets that shows how your team uses assets and where those assets reach customers — from upload and approval to the moment an asset appears as a product image, shared link, or hero banner. It connects what happens inside your team to the reach your content earns outside it, bringing together metrics from AEM Assets, Content Hub, Dynamic Media, AEM Sites, and Content Advisor in one place.
+Insights is a unified dashboard in Adobe Experience Manager (AEM) Assets that shows how your team uses assets and where those assets reach customers — from upload and approval to the moment an asset appears as a product image, shared link, or hero banner. It connects what happens inside your team to the reach your content earns outside it, bringing together metrics from AEM Assets, Content Hub, Dynamic Media, AEM Sites, and Content Advisor in one place.
 
 The Insights dashboard displays four tabs:
 
