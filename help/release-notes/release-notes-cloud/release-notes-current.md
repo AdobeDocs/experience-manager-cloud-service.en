@@ -124,7 +124,7 @@ This section highlights new and recently available capabilities for [!DNL Experi
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets General Availability Features {#assets-general-availability-features}
 
-#### Frame.io integration #{frame-io-integration}
+#### Frame.io integration {#frame-io-integration}
 
 Users in [Frame.io](https://frame.io/) can export assets or folders from [!DNL Frame.io] directly to [!DNL Experience Manager Assets]. The integration improves users' efficiency and shortens the time from approved assets in [!DNL Frame.io] to content ready to be activated from AEM Assets. The prerequisite is Frame.io V4 managed in Adobe Admin Console. For more details, see [this article](https://help.frame.io/en/articles/15647440-export-frame-io-assets-to-adobe-experience-manager-assets). 
 

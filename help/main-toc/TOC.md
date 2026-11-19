@@ -108,6 +108,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2026 {#2026}
+      + [Maintenance Release Notes for 2026.11.0](/help/release-notes/maintenance/2026/2026-11-0.md) 
       + [Maintenance Release Notes for 2026.10.0](/help/release-notes/maintenance/2026/2026-10-0.md) 
       + [Maintenance Release Notes for 2026.9.0](/help/release-notes/maintenance/2026/2026-9-0.md)
       + [Maintenance Release Notes for 2026.8.0](/help/release-notes/maintenance/2026/2026-8-0.md)
@@ -818,6 +819,7 @@ user-guide-title: AEM as a Cloud Service
     + [Introduction](/help/assets/assets-view-introduction.md)
     + [Getting started](/help/assets/get-started-assets-view.md)
     + [My Workspace](/help/assets/my-workspace-assets-view.md)
+    + [Digital Rights Management](/help/assets/drm-assets-view.md)
     + [View Insights dashboard](/help/assets/aem-assets-activation-report.md)
     + [Supported file types and use cases](/help/assets/supported-file-formats-assets-view.md)
     + [View assets](/help/assets/navigate-assets-view.md)
@@ -1227,6 +1229,7 @@ user-guide-title: AEM as a Cloud Service
         + [Figma to Visual Content Fragments](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/figma-to-visual-content-fragments.md)
         + [Experience Production use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/use-cases.md)
         + [Forms use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/forms-use-cases.md)
+        + [Interactive Communications use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/interactive-communication-use-cases.md)
       + Development {#development}
         + [Development use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/development/use-cases.md)
       + Onboarding {#onboarding}
