@@ -466,7 +466,7 @@ Dropdown reflection:
 
 ### Variables {#variables}
 
-The `variables` action adds a dropdown that inserts an approved token (for example `{{video}}`) into the content. It is listed as an item in the `advanced section`. The plugin only inserts the configured string as plain text. The consumer app owns the meaning of each token and is responsible for interpreting it wherever the rich text editor content is rendered (preview, publish).
+In the Content Fragment Editor and Universal Editor (when editing Content Fragments), the `variables` action adds a dropdown that inserts an approved token (for example `{{video}}`) into the content. It is listed as an item in the `advanced section`. The plugin only inserts the configured string as plain text. The consumer app owns the meaning of each token and is responsible for interpreting it wherever the rich text editor content is rendered (preview, publish).
 
 The dropdown only appears when at least one valid option is configured. The plugin ships with no defaults and only values from the configured list can be inserted.
 
