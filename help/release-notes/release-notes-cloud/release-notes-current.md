@@ -147,6 +147,20 @@ Updated the Adobe Experience Manager (AEM) Assets Connector for Figma to use the
 
 The AEM Content Advisor browser extension now lets users [disable the floating Content Advisor widget on specific websites](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-advisor/content-advisor-browser-extension#content-advisor-browser-extension-exclusion-rules) where asset recommendations are not needed. This provides greater control over the extension's visibility, helping users tailor their browsing experience to their workflows while retaining Content Advisor functionality across other supported websites.
 
+#### Adobe Express integration {#assets-express-integration}
+
+Adobe Express integration with Assets helps all users create and edit on-brand content and increase content reuse. In this release, we have introduced support for:
+
+**Asset view UI - "Open in Express"** to import an asset into a new Express document in the embedded Express editor:
+
+* **Support opening read-only assets** for creating variants to be saved into a different location, where the user has access. This helps protect hero assets from unwanted modification (e.g., Photoshop assets from the global studio), while allowing users to open them safely, modify a copy in Express, and then save to a location in AEM, where they have write access. The capability works for "Open in Express" and for the Express Quick Actions. 
+
+* **Users with free membership for Express can now access the integration**. Organizations with access to the [Creative Cloud for enterprise - free membership](https://helpx.adobe.com/business/enterprise/products-entitlements/special-programs-plans/cce-free-overview.html) can now assign AEM users to the free membership for Express included in these special plans, and these users will have access to Express integration with AEM. Please note that the free membership for Express supports a subset of the features of the full, premium Express entitlement. 
+
+**Assets plugin in Adobe Express** to import an asset into the current Express document:
+
+* **.ai** Added support for Adobe Illustrator assets
+
 #### Frame.io integration {#frame-io-integration}
 
 Users in [Frame.io](https://frame.io/) can export assets or folders from [!DNL Frame.io] directly to [!DNL Experience Manager Assets]. The integration improves users' efficiency and shortens the time from approved assets in [!DNL Frame.io] to content ready to be activated from AEM Assets. The prerequisite is Frame.io V4 managed in Adobe Admin Console. For more details, see [this article](https://help.frame.io/en/articles/15647440-export-frame-io-assets-to-adobe-experience-manager-assets). 
@@ -305,13 +319,10 @@ To participate or learn more, send an email to `AEM-Assets-Sourcing-Portal@adobe
 
 Adobe Express integration with Assets helps all users create and edit on-brand content and increase content reuse. We have worked on supporting a growing list of asset / file types to be supported by the integration, and some of them are available early to customers  interested in using them:
 
-**Asset view UI - "Open in Express"** to import an asset into a new Express document in the embedded Express editor:
-
-* **.mp4** video assets
-
 **Assets plugin in Adobe Express** to import an asset into the current Express document:
 
-* **.ai** Adobe Illustrator assets
+* **video assets** increased file size support to up to 4.5 GB (new in 2026.11 beta)
+* **.m4a** audio assets (new in 2026.11 beta)
 * **.indd** Adobe InDesign assets
 * **.mov** video assets
 * **.mp3** audio assets
