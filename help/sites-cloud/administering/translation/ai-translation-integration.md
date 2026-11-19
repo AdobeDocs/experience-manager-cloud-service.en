@@ -35,18 +35,23 @@ You configure both the LLM connection and optional style guides in **Translation
 
 ## Configuring Translation Cloud Services {#configure-translation-cloud-services}
 
-Set up AI translation in the same area where you manage other translation cloud configurations.
+Set up AI translation in the same area where you manage other translation cloud configurations. An AI translation configuration is not provided by default. You must create one before configuring the LLM connection.
 
 1. In the [global navigation menu](/help/sites-cloud/authoring/basic-handling.md#global-navigation), select **Tools** > **Cloud Services** > **Translation Cloud Services**.
-1. Open or create the configuration where you want to enable AI translation (including `/conf/global` if the capability should apply broadly).
-
-![Translation Cloud Services console showing where translation configurations are managed.](assets/ai-translation-integration/aem_ai-translation_translation-cloud-services.png)
+1. Navigate to the folder where you want to create the AI translation configuration (for example, `/conf/global`).
+1. Select **Create** to open the **Create Configuration** dialog.
+1. Select **Agentic Translation** as the configuration type.
+1. Enter a **Title** and a **Name** for the configuration. The name must not contain spaces.
+1. Select **Create**.
 
 ## Configuring the LLM Connection {#configure-the-llm-connection}
 
 The **Agentic Translation Configuration** experience includes an **LLM Config** section where you connect your provider.
 
-1. Open the AI translation configuration for your Translation Cloud Services entry.
+1. Select the AI translation configuration you created in Translation Cloud Services, then select **Edit**.
+
+   ![Translation Cloud Services console showing an existing AI translation configuration selected for editing.](assets/ai-translation-integration/aem_ai-translation_translation-cloud-services.png)
+
 1. Select **[!UICONTROL LLM Config]**.
 1. Choose your provider (for example, **Azure OpenAI**).
 1. Enter the required credentials and endpoint details for your subscription (**API Key**, **API Version**, **Base Path**, **Deployment Name**, and any other fields your provider requires).

@@ -40,6 +40,12 @@ Authors can create reusable document designs, add digital signature fields, and 
 * **Configure accessibility while authoring:** Set accessibility roles, screen reader text and precedence, and navigation order, then generate tagged PDF output. These controls help authors prepare communications for readers who use assistive technologies.
 * **Create XDP templates:** Create and update existing XML Data Package (XDP) templates directly in the Interactive Communication editor, configure data bindings, and reuse fragments across document designs. Preview generated PDF output while refining the design.
 
+### Exclude attachments from the Submission PDF {#exclude-attachments-submission-pdf}
+
+Authors can exclude uploaded file attachments from the Submission PDF (Document of Record) for Adaptive Forms based on Core Components. This option can reduce the size of the PDF when files are delivered separately through the configured submit action. When attachments are excluded, their size and number do not affect PDF generation time.
+
+To request access, email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address. For instructions, see [Exclude file attachments from the Submission PDF](/help/forms/generate-document-of-record-core-components.md#exclude-file-attachments).
+
 ### Theme Editor for Core Components based Adaptive Forms {#theme-editor-core-components}
 
 Style Core Components based Adaptive Forms visually in the Theme Editor and preview changes as you work. Customize colors, typography, borders, and spacing, then reuse themes across forms to maintain a consistent appearance.
@@ -221,8 +227,6 @@ Agentic Form Filling lets customers complete published Adaptive Forms through AI
 
 To request access, email your organization ID and program details to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address.
 
-<!--
-
 ### API Integration Tool for Dynamic Form Data
 
 The API Integration Tool enables form authors to create dynamic, intelligent forms that automatically fetch and populate data from external REST APIs based on user interactions. This no-code integration capability transforms static forms into responsive data collection interfaces.
@@ -238,7 +242,7 @@ Key capabilities include:
 
 This tool is particularly useful for scenarios like address auto-completion, dynamic dropdown population, real-time validation against external databases, and creating context-aware form experiences that adapt based on user input.
 
--->
+Ready to start? See [Integrating API in Rule Editor](/help/forms/api-integration-in-rule-editor.md) for configuration instructions.
 
 ## Additional Early Access Innovations
 
@@ -329,6 +333,8 @@ Overall, [Doc Assurance APIs](https://developer.adobe.com/experience-manager-for
 -->
 
 
+<!--
+
 ### Forms Service APIs
 
 Forms service generates interactive PDF forms for data capture. It can also be used to import/export data to/from an existing interactive PDF form and validate submitted data. Here's a breakdown of its functionalities: 
@@ -338,6 +344,10 @@ Forms service generates interactive PDF forms for data capture. It can also be u
 * **Data Extraction and Import**: Import data into an existing PDF form as well as extract data from a filled PDF form. Both XDP and XML data formats are supported, and importing to non-XFA PDF forms (also known as AcroForms) additionally supports FDF and XFDF data.
 
 * **Data Validation**: : Validate submitted data, in XDP or XML format, against a template created using AEM Forms Designer.
+
+-->
+
+<!--
 
 ### Doc Generation API
 
@@ -352,6 +362,10 @@ Storing PDFs in Azure Blob Storage allows for centralized management of document
 * **Improved Security**: By leveraging Azure's built-in security features, such as encryption at rest and role-based access control (RBAC), sensitive documents remain protected during storage.
 
 * **Customizable Storage Paths**: The ability to define custom directory paths ensures generated PDFs are stored in organized and application-specific locations, improving file management.
+
+-->
+
+<!--
 
 ### Document Conversion APIs
 
@@ -379,6 +393,10 @@ The Document Conversion APIs offer the following features:
 
 * **Flatten PDF transparency:** Flatten transparency in a PDF document to improve compatibility with print and document processing workflows.
 
+-->
+
+<!--
+
 ### Enhancements in Visual Rule Editor 
 
 * [Direct API integration](/help/forms/api-integration-in-rule-editor.md): The Visual Rule Editor in Adaptive Forms now supports direct API integration without requiring a Form Data Model. You can connect to an API endpoint by entering its JSON URL or by importing the configuration using a cURL command. After integration, the API can be invoked using the `Invoke Service` action.
@@ -389,6 +407,8 @@ The Document Conversion APIs offer the following features:
 
 * [Retrieve property values from a JSON array](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array): Invoke an API with a custom function to extract values from a JSON array and bind them directly to form fields.
 
+-->
+
 <!--
 
 ### Versioning support in Forms Manager
@@ -397,9 +417,15 @@ Forms Manager now supports versioning for Adaptive Forms (Core Components and Fo
 
 -->
 
+<!--
+
 ### Improved accessibility for form components
 
 Adaptive Forms Core Components introduce WCAG-compliant semantic markup for checkbox groups, radio button groups, and panels. These components now leverage `<fieldset>` and `<legend>` elements to establish meaningful relationships between group labels and their options for assistive technologies. See [Fieldset and legend support in Adaptive Forms](/help/forms/creating-accessible-adaptive-forms.md#fieldset-legend-accessibility).
+
+-->
+
+<!--
 
 ### Configurable tables for Adaptive Forms
 
@@ -412,6 +438,10 @@ Create [configurable tables in Adaptive Forms based on Core Components](/help/fo
 * Improves form usability and readability by organizing repeated information in a structured layout.
 * Reduces authoring effort by providing a reusable and configurable table component.
 
+-->
+
+<!--
+
 ### Locale support for Interactive Communication
 
 [Configure locale](/help/forms/interactive-communication/support-localization.md) settings directly in the Interactive Communication Editor to create region-specific communications. Authors can select a supported locale to apply language and regional formatting conventions for dates, numbers, currencies, and other locale-sensitive content, helping deliver consistent and localized customer communications.
@@ -423,6 +453,8 @@ Key benefits include:
 * Deliver localized Interactive Communications tailored to regional audiences.
 * Ensure consistent formatting and presentation across generated communications.
 
+-->
+
 ## See also
 
 * [Latest Innovations in AEM Forms](/help/forms/latest-innovations.md)
@@ -430,5 +462,3 @@ Key benefits include:
 * [Capabilities of AEM Forms as a Cloud Services](/help/forms/home.md)
 
 * [Difference between AEM 6.5 Forms (AMS and on-prem) and AEM Forms as a Cloud Services (AEM CS Forms)](/help/forms/notable-changes.md)
-
-
