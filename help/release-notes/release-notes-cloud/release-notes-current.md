@@ -354,6 +354,8 @@ Authors can now create XML Data Package (XDP) templates and fragments in Forms M
 
 For details, see [Create an XDP template](/help/forms/interactive-communication/create-xdp-template.md) and [Create an XDP fragment](/help/forms/interactive-communication/create-xdp-fragment.md).
 
+<!--
+
 ### Early Adopter Features in AEM Forms
 
 The following capabilities are available through the AEM Forms Early Adopter program. To request access, email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address and include your organization ID, program details, and the capabilities you want to use.
@@ -363,6 +365,8 @@ The following capabilities are available through the AEM Forms Early Adopter pro
 Style Core Components based Adaptive Forms visually in the Theme Editor and preview changes as you work. Customize colors, typography, borders, and spacing, then reuse themes across forms to maintain a consistent appearance. For details, see [Customizing Adaptive Form themes using the Theme Editor](/help/forms/customizing-themes-using-theme-editor.md).
 
 ![Theme Editor showing the background color selector with RGB sliders, color swatches, and the styled Adaptive Form preview](../../forms/assets/custom-theme-form-level-styling.png)
+
+-->
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
