@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2026 {#2026}
+      + [Release Notes for 2026.10.0](/help/release-notes/release-notes-cloud/2026/2026-10-0.md)
       + [Release Notes for 2026.9.0](/help/release-notes/release-notes-cloud/2026/2026-9-0.md)
       + [Release Notes for 2026.8.0](/help/release-notes/release-notes-cloud/2026/2026-8-0.md)
       + [Release Notes for 2026.7.0](/help/release-notes/release-notes-cloud/2026/2026-7-0.md)
@@ -107,6 +108,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2026 {#2026}
+      + [Maintenance Release Notes for 2026.11.0](/help/release-notes/maintenance/2026/2026-11-0.md) 
       + [Maintenance Release Notes for 2026.10.0](/help/release-notes/maintenance/2026/2026-10-0.md) 
       + [Maintenance Release Notes for 2026.9.0](/help/release-notes/maintenance/2026/2026-9-0.md)
       + [Maintenance Release Notes for 2026.8.0](/help/release-notes/maintenance/2026/2026-8-0.md)
@@ -276,8 +278,9 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
-      + [2026.10.29 Release Notes](/help/release-notes/universal-editor/2026/2026-10-29.md)
+      + [2026.11.12 Release Notes](/help/release-notes/universal-editor/2026/2026-11-12.md)
       + [2026.11.05 Release Notes](/help/release-notes/universal-editor/2026/2026-11-05.md)
+      + [2026.10.29 Release Notes](/help/release-notes/universal-editor/2026/2026-10-29.md)
       + [2026.10.22 Release Notes](/help/release-notes/universal-editor/2026/2026-10-22.md)
       + [2026.10.15 Release Notes](/help/release-notes/universal-editor/2026/2026-10-15.md)
       + [2026.10.08 Release Notes](/help/release-notes/universal-editor/2026/2026-10-08.md)
@@ -687,12 +690,11 @@ user-guide-title: AEM as a Cloud Service
     + [Color tags for images](/help/assets/color-tag-images.md)
     + [Manage PDF documents](/help/assets/manage-pdf-documents.md)
     + [Micro-Frontend Destination Selector](/help/assets/destination-selector.md)
-    + {hide-from-toc} [AEM Assets Activation Report (Beta)](/help/assets/aem-assets-activation-report.md)
   + Configure, administer, and extend [!DNL Assets] {#admin}
     + [Detect duplicate assets](/help/assets/detect-duplicate-assets.md)
     + [Developer docs and APIs references](/help/assets/developer-reference-material-apis.md)
     + [Folder metadata schema](/help/assets/folder-metadata-schema.md)
-    + {hide-from-toc} [Generate Brand Aware Metadata](/help/assets/brand-aware-metadata.md)
+    + [Generate Brand Aware metadata](/help/assets/brand-aware-metadata.md)
     + [Work with image and video profiles](/help/assets/dynamic-media/about-image-video-profiles.md)
     + [Translate assets](/help/assets/translate-assets.md)
     + [Search facets](/help/assets/search-facets.md)
@@ -818,6 +820,8 @@ user-guide-title: AEM as a Cloud Service
     + [Introduction](/help/assets/assets-view-introduction.md)
     + [Getting started](/help/assets/get-started-assets-view.md)
     + [My Workspace](/help/assets/my-workspace-assets-view.md)
+    + [Digital Rights Management](/help/assets/drm-assets-view.md)
+    + [View Insights dashboard](/help/assets/aem-assets-activation-report.md)
     + [Supported file types and use cases](/help/assets/supported-file-formats-assets-view.md)
     + [View assets](/help/assets/navigate-assets-view.md)
     + [Upload and add assets](/help/assets/add-delete-assets-view.md)
@@ -866,10 +870,9 @@ user-guide-title: AEM as a Cloud Service
     + [Smart Collections in Content Hub](/help/assets/smart-collection-content-hub.md)
     + [Frequently asked questions for Content Hub](/help/assets/frequently-asked-questions-content-hub.md)  
   + Best practices{#best-practices}
-    + {hide-from-toc} [Brand Aware Metadata best practices: a WKND tutorial](/help/assets/brand-aware-metadata-best-practices.md)
-    + {hide-from-toc} [Metadata best practices: before and after migrating to AEM Assets](/help/assets/metadata-best-practices-guide.md)
+    + [Brand Aware Metadata best practices: a WKND tutorial](/help/assets/brand-aware-metadata-best-practices.md)
+    + [Metadata best practices: Plan, build, and govern](/help/assets/metadata-best-practices.md)
     + [Search best practices](/help/assets/search-best-practices.md)
-    + [Metadata management and best practices](/help/assets/metadata-best-practices.md)
   + Integration with Figma {#integration-figma}
     + [Native integration with Figma](/help/assets/integrate-aem-assets-with-figma.md)
   + Integration with Adobe Workfront {#integrations}
@@ -970,7 +973,7 @@ user-guide-title: AEM as a Cloud Service
         + [Set layout of an Adaptive Form based on Core Components](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
         + [Create an Adaptive Form fragment](/help/forms/adaptive-form-fragments-core-components.md)
         + [Create themes for an Adaptive Form - Core Components](/help/forms/using-themes-in-core-components.md)
-        + [Customizing Adaptive Form themes using the Theme Editor](/help/forms/customizing-themes-using-theme-editor.md)
+        + {hide-from-toc} [Customizing Adaptive Form themes using the Theme Editor](/help/forms/customizing-themes-using-theme-editor.md)
         + [Embed an Adaptive Forms theme in an AEM Sites theme](/help/forms/embed-adaptive-forms-theme-in-site-theme.md)
         + [Create an Adaptive Form template based on Core Components](/help/forms/template-editor-core-components.md)
         + [Create an Adaptive Form (Core Components) based on XFA Form templates](/help/forms/create-adaptive-form-using-xfa-templates.md)
@@ -1214,7 +1217,9 @@ user-guide-title: AEM as a Cloud Service
     + Enterprise Platforms {#enterprise-platforms}
       + [Setting Up Microsoft Copilot Studio with AEM MCP](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
       + [Setting Up JetBrains with GitHub Copilot and AEM MCP](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
-  + [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md)
+  + Local Development with AI {#local-development-with-ai}
+    + [AI Tooling for Local Development](/help/ai-in-aem/local-development-with-ai-tools.md)
+    + [Code Assessment Skill](/help/ai-in-aem/code-assessment-skill.md)
   + Agentic Capabilities in AEM {#agentic-capabilities}
     + [Overview](/help/ai-in-aem/agentic-capabilities/overview.md)
     + Brand Experience {#brand-experience}
@@ -1225,6 +1230,7 @@ user-guide-title: AEM as a Cloud Service
         + [Figma to Visual Content Fragments](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/figma-to-visual-content-fragments.md)
         + [Experience Production use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/use-cases.md)
         + [Forms use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/forms-use-cases.md)
+        + [Interactive Communications use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/interactive-communication-use-cases.md)
       + Development {#development}
         + [Development use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/development/use-cases.md)
       + Onboarding {#onboarding}

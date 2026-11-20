@@ -1,0 +1,111 @@
+---
+title: Digital Rights Management in AEM Assets 
+description: Learn how to manage licenses with the Digital Rights Management service in Assets view.
+contentOwner: AG
+feature: Asset Management,DRM
+role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
+exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+---
+# Digital Rights Management in AEM Assets {#digital-rights-management-in-assets}
+
+AI automatically processes license documents, extracts usage rights and stores them as metadata. This drives significant efficiencies and remove manual effort involved.
+
+Additionally, confidence scores for every extraction allows for human in the loop workflows. This enables customers to maintain a centralized, reusable library of license records and associate licenses with multiple assets. Updates to license details automatically apply to all associated assets, simplifying rights management and reducing manual effort. This capability helps organizations maintain consistent usage-rights information, improve governance, and ensure compliance with licensing terms and restrictions.
+
+## Upload a license {#upload-and-review-license}
+
+You can create a license from a usage-rights document. AI extracts the information from the document, but you need to review the information before saving it.
+
+1. In **[!UICONTROL Licenses]**, click **[!UICONTROL Upload license]**.
+   ![Licenses](assets/licenses.png)
+1. Upload the license document and click **[!UICONTROL Next]**.
+   ![Uploading](assets/uploading.png)
+1. Specify a name for the license document.
+1. Review the extracted license information including the expiration dates, regions, channels, and restrictions.
+1. Click **[!UICONTROL Apply and Save]**.
+
+The newly created license is now displayed in the license list.
+
+>[!NOTE]
+> 
+>Creating a license is different from assigning it to assets. For example, you can create a license with its allowed regions, channels, and expiration date. You can then assign the same license to each asset rather than creating for every asset.
+
+## View license {#view-license}
+
+You can view the list of existing licenses under **[!UICONTROL Licenses]**. Use the **[!UICONTROL Filter license]** search bar to find a license and view the assets associated with it.
+
+To view a particular license, click **[!UICONTROL View]**. In the **[!UICONTROL Property list]** window, you can review and update the license details, including the expiration date from the **[!UICONTROL Extracted properties]** tab. You can view the list of assets using that particular license from the **[!UICONTROL Assets using this license]** tab. 
+
+![Review license](assets/review.png)
+
+## Assign licenses to assets {#assign-licenses}
+
+You can assign an existing license to an asset, or upload a new license document while assigning.
+
+1. Select the asset and click More Options (![More icon](assets/do-not-localize/more-icon.svg)). Click **[!UICONTROL Assign License]**.
+
+   ![Assign license](assets/assign.png)
+
+   Alternatively, you can select the asset and click **[!UICONTROL Details]** to open the asset details page. To assign a license, click **[!UICONTROL Assign license]**.
+1. Choose an existing license from the list. Alternatively, you can upload a new license document to create a new license.
+   ![Upload license](assets/upload.png)
+
+1. Select **[!UICONTROL Next]** and review the metadata information.
+   ![Assigning license](assets/assigning.png)
+1. Click **[!UICONTROL Assign]**.
+ 
+## Remove licenses {#remove-licenses}
+
+An asset can have more than one license. To unassign license from an asset, execute the below steps:
+
+1. Open the asset details page. 
+1. If multiple licenses are assigned to an asset, select the asset from which you want to remove the license from the **[!UICONTROL License]** drop-down. Review the license and its restrictions.
+1. Click **[!UICONTROL Unassign license]**. Click **[!UICONTROL Unassign]** to confirm the license removal.  
+
+   ![Unassign license](assets/unassign.png)
+
+   Alternatively, you can unassign a license by selecting the asset. Click More Options (![More icon](assets/do-not-localize/more-icon.svg)) and then click **[!UICONTROL Unassign License]**.
+
+
+## Download assets with license {#download-licensed-assets}
+
+If an asset has a license associated with it, downloading the asset requires you to review and accept the applicable license terms.
+
+1. Select the licensed asset and click ![Download](assets/do-not-localize/download-icon.png) to start the download. 
+
+   Alternatively you can select the asset and click **[!UICONTROL Details]** to open the asset details page. Click **[!UICONTROL Download]**.
+
+   ![Download licensed asset](assets/download.png)
+
+1. Review the license details and restrictions.
+1. Select the **[!UICONTROL I have read and accept all the terms and conditions]** check box and click **[!UICONTROL Proceed]**.
+
+   ![Downloading licensed asset](assets/accept.png)
+1. Click **[!UICONTROL Ok]** to procced with the download.
+
+**See also**
+
+* [Translate [!DNL Assets]](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [Assets supported file formats](/help/assets/file-format-support.md)
+* [Search assets](/help/assets/search-assets.md)
+* [Connected assets](/help/assets/use-assets-across-connected-assets-instances.md)
+* [Asset reports](/help/assets/asset-reports.md)
+* [Metadata schemas](/help/assets/metadata-schemas.md)
+* [Download assets](/help/assets/download-assets-from-aem.md)
+* [Manage metadata](/help/assets/manage-metadata.md)
+* [Manage Dynamic Media templates](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [Manage reports in [!DNL Assets] view](/help/assets/manage-reports-assets-view.md)
+* [Search facets](/help/assets/search-facets.md)
+* [Manage collections](/help/assets/manage-collections.md)
+* [Bulk metadata import](/help/assets/metadata-import-export.md)
+* [Publish [!DNL Assets] to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
