@@ -24,7 +24,6 @@ The Insights dashboard displays four tabs:
 3. **Discovery & Share — Content Hub:** Help teams find, access, and share approved brand assets through a self-service portal. See [Content Hub Overview](/help/assets/product-overview.md) for more information on Content Hub.
 4. **Transform & Deliver — Dynamic Media:** Prepare and deliver rich media for channels such as web, mobile, and social, with assets adapted to different formats and experiences. See [Work with Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) for more information on Dynamic Media.
 
-![Activation Overview tab of the Insights dashboard in AEM Assets](assets/insights-dashboard.png)
 
 ## Access Insights {#access-insights}
 
@@ -54,6 +53,8 @@ These team activity metrics cover downloads and sharing, approving to publish, a
 |  | **Activate to Sites** | Publishing an asset into AEM Sites so it can be delivered in real time. |
 | **Getting AI guidance** | **Content Advisor** | The number of AI-generated recommendations your team acted on. |
 
+![Activation Overview tab of the Insights dashboard in AEM Assets](assets/activation-overview-asset-insights.png)
+
 >[!NOTE]
 >
 >Author metrics include activity generated through both the Assets View and Admin View.
@@ -80,6 +81,8 @@ Together, these insights help you:
 * **See how content moves beyond the DAM.** Download and link share trends show when and how assets are distributed, which supports governance and helps you spot unusual activity.
 * **Identify your most engaged users.** Top 10 users by downloads and by link shares show who relies on the DAM most, so you can target training, support, and permissions.
 
+![Activation Overview tab of the Insights dashboard in AEM Assets](assets/manage-govern-asset-insights.png)
+
 | Section | Metric | What it counts |
 | --- | --- | --- |
 | **Overview** | **Upload** | Number of assets uploaded over the selected period. |
@@ -103,6 +106,8 @@ In this section, you will find insights for Content Hub. The section includes tw
 
 * **Downloads**: What's being downloaded from Content Hub, by whom, and how download activity is trending over time.
 * **Link sharing**: What's being shared from Content Hub, by whom, and how sharing activity is trending over time.
+
+![Activation Overview tab of the Insights dashboard in AEM Assets](assets/discovery-share-asset-insights.png)
 
 | Section | Metric | What it counts |
 | --- | --- | --- |
@@ -130,6 +135,8 @@ Together, these insights help you:
 * **Measure the value of optimization.** Bandwidth saved and the distribution of delivered image and video formats show how Dynamic Media optimization reduces delivery size compared with the original renditions.
 * **See how your assets perform.** Requests by asset type, delivery by channel, traffic by browser, and top referral domains show where and how customers access your assets, including your top performing and low performing assets.
 * **Find and fix delivery issues.** Error rate, errors by response class, top error URLs, and error reasons help you identify failing requests and prioritize fixes.
+
+![Activation Overview tab of the Insights dashboard in AEM Assets](assets/transform-deliver-asset-insights.png)
 
 | Section | Metric | What it counts |
 | --- | --- | --- |
