@@ -99,10 +99,12 @@ The following table describes a list of the possible Product Profiles below an e
         <td>
             <ul>
                 <li>Intended for controlled access to AEM Sites author features on this environment. Users in this Product Profile will be members of the AEM Sites content author AEM group, that is automatically created in AEM. The AEM group permissions should be configured in AEM with the desired access level.</li>
-                <li>If the default service remains selected, users in this product profile will also be members of the "AEM Sites Content Managers - Service" AEM group.<!--
-                        <li>users in this product profile will have access to AEM Sites Content Management API.</li>
-                        <li>an Adobe Developer Console API OAuth S2S project containing AEM Sites Content Management API can optionally be scoped to this environment.</li>
-                        --></li>
+                <li>If the default service remains selected, users in this product profile will also be members of the "AEM Sites Content Managers - Service" AEM group.
+                    <!--
+                    <li>users in this product profile will have access to AEM Sites Content Management API.</li>
+                    <li>an Adobe Developer Console API OAuth S2S project containing AEM Sites Content Management API can optionally be scoped to this environment.</li>
+                    -->
+                </li>
             </ul>
         </td>
     </tr>
