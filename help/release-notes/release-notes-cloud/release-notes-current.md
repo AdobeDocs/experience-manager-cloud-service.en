@@ -133,12 +133,6 @@ This section highlights new and recently available capabilities for [!DNL Experi
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets General Availability Features {#assets-general-availability-features}
 
-#### AI-powered Digital Rights Management (DRM) service {#ai-powered-digital-rights-management}
-
-AI automatically [processes license documents, extracts usage rights and stores them as metadata](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/drm-assets-view). This drives significant efficiencies and remove manual effort involved.
-
-Additionally, confidence scores for every extraction allows for human in the loop workflows. This enables customers to maintain a centralized, reusable library of license records and associate licenses with multiple assets. Updates to license details automatically apply to all associated assets, simplifying rights management and reducing manual effort. This capability helps organizations maintain consistent usage-rights information, improve governance, and ensure compliance with licensing terms and restrictions.
-
 #### Unified Insights dashboard for AEM Assets {#unified-insights-dashboard}
 
 Adobe Experience Manager Assets introduces a [unified Insights dashboard](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/aem-assets-activation-report) that provides visibility into asset usage, team activity, and content performance across Author, Content Hub, Dynamic Media, and Content Advisor. The dashboard is organized in four distinct sections: Activation Overview, Manage & Govern (Author), Discovery & Share (Content Hub), and Transform & Deliver (Dynamic Media). Customers can now track asset downloads, sharing activity, approvals, and publishing, along with asset delivery requests, usage trends, and performance. Detailed insights into top-performing assets, user activity, link sharing, and delivery errors help administrators understand content adoption, optimize asset usage, and make informed decisions to drive value of assets managed in their DAM to their organization.
@@ -198,6 +192,16 @@ These enhancements make asset discovery and management more intuitive, efficient
 
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Limited Availability Features {#assets-limited-availability-features}
+
+#### AI-powered Digital Rights Management (DRM) service {#ai-powered-digital-rights-management}
+
+AI automatically [processes license documents, extracts usage rights and stores them as metadata](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/drm-assets-view). This drives significant efficiencies and remove manual effort involved.
+
+Additionally, confidence scores for every extraction allows for human in the loop workflows. This enables customers to maintain a centralized, reusable library of license records and associate licenses with multiple assets. Updates to license details automatically apply to all associated assets, simplifying rights management and reducing manual effort. This capability helps organizations maintain consistent usage-rights information, improve governance, and ensure compliance with licensing terms and restrictions.
+
+>[!IMPORTANT]
+>
+>DRM service is available as a Limited Availability feature for selected customers in North America. During this phase, Adobe is validating the experience with participating customers. There will be a phased rollout with broader General Availability planned for January 2027. Availability and timing may be updated as the rollout progresses.
 
 #### Native Dynamic Media Template component in Adobe Journey Optimizer {#dynamic-media-component-ajo}
 

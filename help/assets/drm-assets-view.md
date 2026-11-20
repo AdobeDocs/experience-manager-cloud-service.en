@@ -21,6 +21,10 @@ AI automatically processes license documents, extracts usage rights and stores t
 
 Additionally, confidence scores for every extraction allows for human in the loop workflows. This enables customers to maintain a centralized, reusable library of license records and associate licenses with multiple assets. Updates to license details automatically apply to all associated assets, simplifying rights management and reducing manual effort. This capability helps organizations maintain consistent usage-rights information, improve governance, and ensure compliance with licensing terms and restrictions.
 
+>[!IMPORTANT]
+>
+>DRM service is available as a Limited Availability feature for selected customers in North America. During this phase, Adobe is validating the experience with participating customers. There will be a phased rollout with broader General Availability planned for January 2027. Availability and timing may be updated as the rollout progresses.
+
 ## Upload a license {#upload-and-review-license}
 
 You can create a license from a usage-rights document. AI extracts the information from the document, but you need to review the information before saving it.
