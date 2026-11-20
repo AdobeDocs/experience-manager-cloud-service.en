@@ -28,33 +28,50 @@ role_v2:
 
 # Getting Started with the Experience Modernization Agent for Experience Manager Authoring Projects {#getting-started-aem-authoring}
 
+Use this guide to get started when a requirement depends on content staying in the JCR. The [Universal Editor](/help/implementing/universal-editor/introduction.md) is Adobe's visual editor for content in Experience Manager. This is not a migration to HTL-based delivery, and the source website's technology doesn't determine where your content is stored.
+
+Auto mode produces document-based content, so it doesn't apply to this setup.
+
 >[!NOTE]
 >
->In this setup, content is stored in the Java Content Repository (JCR) of your Adobe Experience Manager as a Cloud Service author instance, authors edit it with the Universal Editor, and Edge Delivery Services delivers the pages. This setup was previously called Crosswalk. For the storage that Adobe recommends for new implementations, see [Where Content Is Stored and How Authors Edit It](overview.md#content-storage).
+>In this setup, content is stored in the Java Content Repository (JCR) of your Adobe Experience Manager as a Cloud Service author instance, authors edit it with the Universal Editor, and Edge Delivery Services delivers the pages. For the storage that Adobe recommends for new implementations, see [Where Content Is Stored and How Authors Edit It.](overview.md#content-storage)
 
-Use this workflow when a requirement depends on content staying in the JCR. The [Universal Editor](/help/implementing/universal-editor/introduction.md) is Adobe's visual editor for content in Experience Manager. This is not a migration to HTL-based delivery, and the source website's technology doesn't determine where your content is stored.
+## Prerequisites {#prerequisites}
 
-You need console access, repository permissions, and permission to create or update content and assets on the target author instance. Record the author instance's host, site identifier, page root, DAM destination (the Experience Manager Assets folder for images and files), code repository, and working branch before importing. Auto mode produces document-based content, so it doesn't apply to this setup.
+You will need the following access:
+
+* Console access
+* Repository permissions
+* Permission to create or update content and assets on the target author instance
+
+You will need the following information:
+
+* The author instance's host
+* Site identifier
+* Page root
+* DAM destination (the Experience Manager Assets folder for images and files)
+* Code repository and working branch
 
 ## Create Your Edge Delivery Services Project Repo {#create-repo}
 
 For a new project:
 
-1. Use the [`aem-block-collection-xwalk`](https://github.com/adobe-rnd/aem-block-collection-xwalk) repository as your template rather than the document-based boilerplate. Templates for Experience Manager authoring have `xwalk`, short for Crosswalk, in their names.
+1. Use the [`aem-block-collection-xwalk`](https://github.com/adobe-rnd/aem-block-collection-xwalk) repository as your template rather than the document-based boilerplate. Templates for Experience Manager authoring have `xwalk` in their names.
 1. Verify that `fstab.yaml`, the file that points Edge Delivery Services to the site's content source, refers to your author instance's host, Git owner, and Git repository. Review and commit the configuration to the branch used for setup.
    * See [Configure content source](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md) for instructions.
 1. Follow the [Universal Editor tutorial](https://www.aem.live/developer/ue-tutorial) to set up your repo.
    * Stop when you are asked to create a site in Experience Manager.
-1. For this new-project setup, remove the template's `paths.json` and commit the change. Do not remove an existing site's path mappings without reviewing their purpose and replacement.
-1. Add the [AEM Code Connector](https://github.com/apps/aem-code-connector/installations/select_target) app to your repo, so that the console can push changes. For how it differs from AEM Code Sync, see [Start from a Repository](getting-started.md#repo-start).
+1. For this new project setup, remove the template's `paths.json` and commit the change. 
+   * Do not remove an existing site's path mappings without reviewing their purpose and replacement.
+1. Add the [AEM Code Connector](https://github.com/apps/aem-code-connector/installations/select_target) app to your repo, so that the console can push changes. For how it differs from AEM Code Sync, see [Start from a Repository.](getting-started.md#repo-start)
 
 For an existing project that stores its content in the JCR, reuse its configuration and content models. Do not recreate the site or replace its repository with the template. Confirm [code synchronization and repository access](getting-started.md#repo-start) without repeating the document-based setup.
 
 ## Create a New Site in Experience Manager {#create-site}
 
-1. In the Sites console, select **Create** > **Site from template**.
+1. [In the Sites console,](/help/sites-cloud/authoring/sites-console/introduction.md) select **Create** > **Site from template**.
 1. Select the **AEM Site with Edge Delivery Services Template**.
-   * Don't see it listed? [Install the template](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
+   * Don't see it listed? [Install the template.](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)
 1. For this template setup, keep the **name** of the site (not the title) as provided.
    * The site name is used as the unique identifier.
    * The title can be changed for display.
@@ -62,26 +79,26 @@ For an existing project that stores its content in the JCR, reuse its configurat
    * You are redirected to the Sites page.
    * Refresh the page if the new site does not appear immediately.
 
-Skip site creation if the target site already exists. Confirm its identifier and destinations instead; do not rename a live site to fit an example.
+Skip site creation if the target site already exists. Confirm its identifier and destinations instead. Do not rename a live site to fit an example.
 
 ## Connect the Site and Import a Page {#continue}
 
-The console steps are the same as in the [main guide](getting-started.md). Only the import request and the checks differ.
+The console steps are the same as in the [main guide.](getting-started.md) Only the import request and the checks differ.
 
-1. [Open the console](getting-started.md#open-console) and [connect your site](getting-started.md#connect-repo).
+1. [Open the console](getting-started.md#open-console) and [connect your site.](getting-started.md#connect-repo)
 1. Ask the agent to import one page, and say that the content is stored in the JCR. Replace the example URL:
    * "Migrate only `https://www.example.com/about` to the agreed page root in this Experience Manager authoring project. Preserve content and links. Reuse the project's block models and validate JCR conversion. Do not upload, push, or publish."
 
    ![Content imported](assets/content-imported-aem-authoring.png)
 
-1. [Validate the content](#validate-content), [upload it](#upload-content) as a content package, and [check that authors can edit and preview it](#preview-site).
-1. Request styling, as in the styling steps of [Import a Page Step by Step](getting-started.md#guided-import), and [push the code](getting-started.md#push-code-changes).
+1. [Validate the content,](#validate-content) [upload it](#upload-content) as a content package, and [check that authors can edit and preview it.](#preview-site)
+1. Request styling, as in the styling steps of [Import a Page Step by Step,](getting-started.md#guided-import) and [push the code.](getting-started.md#push-code-changes)
 
 ## Validate Content {#validate-content}
 
 Validate the selected page in the content panel. Use **Markdown view**, **JCR XML view**, and **Errors** to check content and conversion. Use **Add to chat** to aim a fix at a page or at one of the [import scripts](production-migration.md#migration-at-scale) that the agent generates.
 
-In Experience Manager authoring projects, each block also has a model: configuration that defines the fields authors edit for that block in the Universal Editor. The Universal Editor edits only the fields that a block's model defines, so a page can render correctly in the HTML preview while blocks that don't match their models can't be edited. Ask the agent to check that the source block models, component definitions, and generated aggregate configuration agree. Update the source configuration through the project's generation workflow rather than fixing only a generated file. Check field mappings and authoring hints, page paths, image references, and the intended site/DAM destinations.
+In Experience Manager authoring projects, each block also has a model: a configuration that defines the fields authors edit for that block in the Universal Editor. The Universal Editor edits only the fields that a block's model defines, so a page can render correctly in the HTML preview while blocks that don't match their models can't be edited. Ask the agent to check that the source block models, component definitions, and generated aggregate configuration agree. Update the source configuration through the project's generation workflow rather than fixing only a generated file. Check field mappings and authoring hints, page paths, image references, and the intended site/DAM destinations.
 
 Resolve conversion errors on one sample page before creating a larger package.
 
@@ -89,9 +106,9 @@ Resolve conversion errors on one sample page before creating a larger package.
 
 ## Upload Content {#upload-content}
 
-Package upload writes content to the author instance. Confirm the selected pages, host, site, page root, and asset destination with the target owner. Preserve existing content before replacing it; local validation does not make an overwrite safe.
+Package upload writes content to the author instance. Confirm the selected pages, host, site, page root, and asset destination with the target owner. Preserve existing content before replacing it. Local validation does not make an overwrite safe.
 
-The upload uses your Adobe sign-in, so the author instance applies your own permissions to the pages and assets. See [Content Push Permissions](evaluate.md#content-push-permissions).
+The upload uses your Adobe sign-in, so the author instance applies your own permissions to the pages and assets. See [Content Push Permissions.](evaluate.md#content-push-permissions)
 
 1. Make sure you are in a **Content** view and select the **Upload content** button on the top-right.
 1. In the **Create content package** dialog, choose the pages to include in the package.
@@ -115,11 +132,11 @@ The upload uses your Adobe sign-in, so the author instance applies your own perm
 
 For a failed package or image upload, retain the log and selected paths. Correct conversion, credentials, permissions, or destinations as indicated, then retry the affected scope. A package download alone does not import content into the author instance. Confirm which pages and assets arrived before retrying to avoid unintended replacements.
 
-If **Create package** reports **Missing site configuration**, the console doesn't know the project's site path, `/content/{site-name}`, and DAM folder, `/content/dam/{folder-name}`. It finds them by looking up the site on the author instance that the project's content source points to, as set in `fstab.yaml` or in the site's configuration. Check that the site exists on that author instance and that the Adobe account you signed in with can access it, then reload the console. If the message persists, [request support](console.md#request-support). If it reports **Missing site base URL**, enter the origin URL of the source site, such as `https://www.example.com`, as **Site base url** in [Settings](console.md#settings-page).
+If **Create package** reports **Missing site configuration**, the console doesn't know the project's site path, `/content/{site-name}`, and DAM folder, `/content/dam/{folder-name}`. It finds them by looking up the site on the author instance that the project's content source points to, as set in `fstab.yaml` or in the site's configuration. Check that the site exists on that author instance and that the Adobe account you signed in with can access it, then reload the console. If the message persists, [request support.](console.md#request-support) If it reports **Missing site base URL**, enter the origin URL of the source site, such as `https://www.example.com`, as **Site base url** in [Settings.](console.md#settings-page)
 
-If the Experience Manager as a Cloud Service environment is hibernated, the upload dialog and Settings say so and link to the Developer Console. De-hibernate the environment there, then retry the upload. See [De-hibernate a sandbox program from the Developer Console](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md#de-hibernation-introduction).
+If the Experience Manager as a Cloud Service environment is hibernated, the upload dialog and Settings makes this clear and link to the Developer Console. De-hibernate the environment in the Developer Console and then retry the upload. See [De-hibernate a sandbox program from the Developer Console.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md#de-hibernation-introduction)
 
-Review and [push the matching code and configuration](getting-started.md#push-code-changes) through your project's repository policy. This is separate from the package upload; see [How Changes Go Live](overview.md#code-content-lifecycle).
+Review and [push the matching code and configuration](getting-started.md#push-code-changes) through your project's repository policy. This is separate from the package upload; see [How Changes Go Live.](overview.md#code-content-lifecycle)
 
 ## Validate Authoring and Preview {#preview-site}
 
@@ -127,11 +144,11 @@ Review and [push the matching code and configuration](getting-started.md#push-co
 1. Open it in the Universal Editor. Verify that expected fields and blocks can be selected and edited, not merely rendered.
 1. Change some text and an image, save, and reopen the page. Confirm that the content and asset references persist.
 1. Use the project's configured preview workflow (preview pages are served on `*.aem.page`). Verify the page against the intended code branch and check responsive layout, links, and images.
-1. For production, complete the [checks before release](production-migration.md#acceptance), then publish the pages from the Universal Editor or the Sites console. See [Publishing Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md).
+1. For production, complete the [checks before release,](production-migration.md#acceptance) then publish the pages from the Universal Editor or the Sites console. See [Publishing Content with the Universal Editor.](/help/sites-cloud/authoring/universal-editor/publishing.md)
 
-Successful package upload, successful authoring, preview, and publication are distinct checkpoints. If editing fails, revisit model mappings and generated configuration; do not accept a static preview as completion.
+Successful package upload, authoring, preview, and publication are distinct checkpoints. If editing fails, revisit model mappings and generated configuration. Do not accept a static preview as completion.
 
-Record the uploaded package, paths, code revision, author/preview URLs, remaining errors, and recovery owner in the [handover](project-documentation.md#portable-handoff). Code rollback does not restore JCR pages or DAM assets; recover those separately using the target environment's approved process.
+Record the uploaded package, paths, code revision, author/preview URLs, remaining errors, and recovery owner in the [handover.](project-documentation.md#portable-handoff) Code rollback does not restore JCR pages or DAM assets. Recover those separately using the target environment's approved process.
 
 ## Additional Resources {#additional-resources}
 
