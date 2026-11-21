@@ -815,6 +815,7 @@ user-guide-title: AEM as a Cloud Service
       + [Multi audio and Multi captions](/help/assets/multi-audio-multi-caption.md)
       + [Generate and translate captions](/help/assets/generate-translate-captions.md)
       + [C2PA metadata](/help/assets/c2pa-metadata.md)
+      + [Deliver barcode or QR code images](/help/assets/barcode-delivery-and-request-parameter-locking.md)
       + [Frequently asked questions](/help/assets/dynamic-media-open-apis-faqs.md)
   + Working with Assets view {#assets-view}
     + [Introduction](/help/assets/assets-view-introduction.md)
