@@ -20,7 +20,7 @@ role_v2:
 
 # Universal Editor Preview Release Notes {#preview}
 
-These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 5 November 2026.
+These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 26 November 2026.
 
 These **preview** release notes are provided as a convenience so you know what changes to the Universal Editor are upcoming and you can test them by [switching to your preview version.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -34,14 +34,10 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming Features {#upcoming-features}
 
-* ID-based Content Fragment references were added reducing lookup requests.
-  * Please contact Adobe to enable this feature.
-* Support for composite Content Fragment fields was added.
-* A lightweight WebMCP tool for retrieving the current selection and its loaded content was added.
-  * Please contact Adobe to enable this feature.
-* Variation selection and variation-aware previews were added to the new Content Fragment and Experience Fragment reference pickers.
-
-## Upcoming Changes {#upcoming-improvements}
-
-* Tag fields no longer render a separate picker for each tag. Multiple tags now share one picker, while single-tag fields respect their configuration.
-* Error notifications were updated to support structured service errors while retaining compatibility with older responses.
+* Authors can open a referenced page or Experience Fragment in its own editor using the reference field’s **Open** button.
+  * Experience Fragments open the selected variation otherwise the main variation is opened if no variation is selected.
+* Remote asset URLs with query parameters are now kept intact in AEM as a Cloud Service and AEM 6.5 output.
+* Certain common service errors now report a clear cause instead of a 500.
+  * Replacing an object field with a text value no longer fails.
+  * Invalid connection URIs and URNs now return 400.
+  * AEM login pages and unreachable backends give descriptive errors.

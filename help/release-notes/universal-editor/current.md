@@ -1,6 +1,6 @@
 ---
-title: Universal Editor 2026.10.29 Release Notes
-description: These are the release notes for the 2026.10.29 release of the Universal Editor.
+title: Universal Editor 2026.11.19 Release Notes
+description: These are the release notes for the 2026.11.19 release of the Universal Editor.
 feature: Release Information
 role: Admin
 product_v2:
@@ -17,9 +17,9 @@ role_v2:
     internal-label: Admin
 ---
 
-# Universal Editor 2026.10.29 Release Notes {#release-notes}
+# Universal Editor 2026.11.19 Release Notes {#release-notes}
 
-These are the release notes for the 29 October 2026 release of the Universal Editor.
+These are the release notes for the 19 November 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -31,17 +31,10 @@ These are the release notes for the 29 October 2026 release of the Universal Edi
 
 ## What's New {#what-is-new}
 
-* Native multi-site management (MSM) support has been added to the editor, with a header menu icon showing inheritance status, link and unlink (shallow and deep) actions, and rollout. It also adds an MSM side panel, an updated icon for deeply broken inheritance, and localization updates.
-* The AEM Workflow extension has been added natively to the editor.
-* The rich text editor component now supports custom keyboard shortcuts.
-
->[!TIP]
->
->If any extensions appear doubled in the UI such as Site Admin, MSM, Page Properties, or Page Lock, make sure you disable the extension in [Extension Manager.](/help/implementing/universal-editor/extending.md#extensions) These are now native Universal Editor features.
+* Native WebMCP support was added so the editor’s tools (including new undo and redo tools) are registered through `document.modelContext` when the browser provides it, alongside the existing integration.
+* A variables dropdown is now available in the rich text editor for [inserting variables into rich text fields](/help/implementing/universal-editor/configure-rte.md#variables) for Content Fragments.
 
 ## Other Improvements {#other-improvements}
 
-* The properties rail now properly keeps focus on a newly selected component when a slow patch response arrives after the selection has changed and undo/redo now restores the component that was actually edited.
-* The plain-text configuration of a field is now respected during inline editing, so the rich-text toolbar and actions stay disabled for plain-text fields even when filters are configured.
-* The tab key is no longer trapped when no component is selected, and a sensible tab order is now used for overlays and the app iframe.
-* Reference fields no longer fall back to older pickers on AEM Cloud Service pages with no containers or content from multiple pages.
+* The editor now clears a selection whose component no longer exists after navigating to a new page and keeps selections whose components appear in a later repaint.
+* Native AEM header buttons now stay available on pages that contain nested Experience Fragments or Content Fragments.

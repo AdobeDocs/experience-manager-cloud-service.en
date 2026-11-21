@@ -100,7 +100,7 @@ The actions configuration allows you to customize the behavior and appearance of
 
 Most actions support the following common options:
 
-* `shortcut?`: string - Overrides the default keyboard shortcut for the action (if any)
+* `shortcut?`: string - Overrides the default keyboard shortcut or defines the [keyboard shortcut](#keyboard-shortcuts) for the action
 * `label?`: string - Overrides the label used for the action in UI
 * `hideInline?`: boolean - When `true`, hides this action from the in-context (inline) RTE editor toolbar
 
@@ -234,8 +234,8 @@ All three default to disabled (opt-in), matching the rest of the RTE config surf
 
 #### Properties Dialog Options {#properties-dialog-options}
 
-|---|---|---|
 |Option|Default|Effect|
+|---|---|---|
 |`showTableProperties`|`false`|Show the **Table Properties** item in the **Table** dropdown|
 |`showRowProperties`|`false`|Show the **Row Properties** item in the **Row** submenu|
 |`showCellProperties`|`false`|Show the **Cell Properties** item in the **Cell** submenu|
@@ -430,18 +430,18 @@ The dropdown only appears when at least one option is configured. The plugin shi
 
 ```json
 {
-  toolbar: {
-    advanced: ["classes"],
-    sections: ["blocks", "format", "advanced"],
+  "toolbar": {
+    "advanced": ["classes"],
+    "sections": ["blocks", "format", "advanced"],
   },
-  actions: {
-    classes: {
-      label: "Add Custom Class",
-      options: [
-        { value: "rte-hero", label: "Hero title" },
-        { value: "rte-lede", label: "Lede paragraph" },
-        { value: "rte-callout", label: "Callout block" },
-        { value: "rte-pill", label: "Pill (inline)" },
+  "actions": {
+    "classes": {
+      "label": "Add Custom Class",
+      "options": [
+        { "value": "rte-hero", "label": "Hero title" },
+        { "value": "rte-lede", "label": "Lede paragraph" },
+        { "value": "rte-callout", "label": "Callout block" },
+        { "value": "rte-pill", "label": "Pill (inline)" },
       ],
     },
   },
@@ -449,6 +449,8 @@ The dropdown only appears when at least one option is configured. The plugin shi
 ```
 
 Each entry has value (the CSS class name written to the HTML) and label (the human-readable text shown in the dropdown). Only one class is allowed to be defined as the `value` per object in the `options` array.
+
+#### Behavior {#css-behavior}
 
 The target follows the closest-to-caret-wins rule:
 
@@ -459,10 +461,150 @@ The target follows the closest-to-caret-wins rule:
 
 Existing classes that aren't part of the configured options list are preserved untouched. Only the managed classes are swapped in/out. Consumer-set classes coexist safely with the plugin.
 
-Dropdown reflection:
+#### Dropdown Reflection {#dropdown-reflection}
 
 * With only the cursor placed, the dropdown reflects the closest managed class: the span at the caret if there is one, otherwise the block under the cursor.
 * With a selection, the dropdown reflects the managed class on the span wrapping the selection. Only when the entire selection shares the same class. Mixed selections show nothing selected.
+
+#### In-Editor Markers {#in-editor-markers}
+
+Enable with `showMarkers: true` on the classes action. Markers are off by default. The flag only affects the visual affordance (the picker, the classes it writes, and the serialized HTML are identical either way).
+
+```json
+{
+  "actions": {
+    "classes": {
+      "showMarkers": "true", // enable the in-editor markers (off by default)
+      "options": [
+        { "value": "rte-hero", "label": "Hero title" }
+      ],
+    },
+  },
+}
+```
+
+Content carrying a managed class is outlined in the editor body, with a small chip inside the outline carrying the option's label. Markers are ProseMirror decorations derived from the `class` already on the content, so they work on content authored before this feature existed, and they never reach the document or the serialized HTML (`getHTML()` output is unaffected).
+
+##### No CSS required {#no-css}
+
+Everything is inline styles plus one generated element, so any host gets the full affordance with nothing to import, mirror, or keep in sync. The plugin also tags what it marks, purely as override hooks:
+
+|Hook|Applied to|
+|---|---|
+|`.rte-class-marker`|Every marked range, and the inline label's wrapper (part of the box)|
+|`.rte-class-marker-chip`|The label element|
+|`data-rte-class`|The managed class name|
+
+These names are exported as `CLASS_MARKER` from `@aem-sites/commons-rte`. Overriding the built-in look from a stylesheet needs `!important`, since the plugin sets inline styles.
+
+##### One marker for everything {#one-marker}
+
+A classed block and a classed span get the same dashed box and the same leading label (there is nothing to tell apart). Stacking a classed span inside a classed block simply nests the two boxes. The affordance does not try to disambiguate that. When both carry the same class and resolve to the same position, the label is emitted once rather than twice.
+
+The label sits inside the box, at its head. A block gets that for free (the box is the element), but an inline run can not, because ProseMirror will not nest a widget inside an inline decoration. So the box is assembled as follows: the label's wrapper draws the left, top, and bottom edges (with the label inside it) and the run draws top, bottom, and the closing right edge. The wrapper is a plain inline box that inherits the surrounding font, so its edges wrap the same content-area height as the run's and the seam is invisible.
+
+An inline run is decorated per text node, with the closing edge only on the last fragment. An inline image or hard break inside a run does not split it. The box's edges continue over it (one box, one label), while the class itself stays on the text only. ProseMirror renders an inline decoration once per text node regardless, so a run split by another mark (e.g. `<span class="hero"><strong>bo</strong>ld</span>`) would otherwise draw a closed rectangle per fragment and read as several separate marks.
+
+##### Copy &amp; paste {#copy-paste}
+
+ProseMirror's own copy is clean and decorations never reach its clipboard serialization. A browser-native copy (a selection that crosses the editor boundary, or host code reading the live DOM) does carry the rendered marker markup. The plugin therefore sanitizes pasted HTML (`transformPastedHTML`), stripping label elements, marker classes, `data-rte-class`, and the marker's style declarations so none of it can persist into the document.
+
+##### Accessibility {#accessibility}
+
+The label is a real element with `aria-hidden="true"`, not a CSS pseudo-element. Generated content is exposed to assistive technology, so a pseudo-element would read the label out in the middle of the author's prose with no way to suppress it. Screen-reader users get the active class from the toolbar picker, which reports it as the selected value. The label is also non-editable, non-selectable and ignores pointer events, so it stays out of the way of the caret and the clipboard.
+
+##### Contrast {#contrast}
+
+Marker colors derive from `currentColor`, so they follow the host's text color in light and dark themes with nothing to configure. The dashed line is 3.4:1 light / 5.5:1 dark against the editor background, clearing the 3:1 that WCAG 1.4.11 asks of a non-text indicator, and the label is real text well above the 4.5:1 for small text. Because the mix is relative to `currentColor` rather than absolute, a host whose body text is itself low-contrast gets a low-contrast marker; that case wants a host-side override (inline styles require `!important`) or leaving the markers off.
+
+### Variables {#variables}
+
+In the Content Fragment Editor and Universal Editor (when editing Content Fragments), the `variables` action adds a dropdown that inserts an approved token (for example `{{video}}`) into the content. It is listed as an item in the `advanced section`. The plugin only inserts the configured string as plain text. The consumer app owns the meaning of each token and is responsible for interpreting it wherever the rich text editor content is rendered (preview, publish).
+
+The dropdown only appears when at least one valid option is configured. The plugin ships with no defaults and only values from the configured list can be inserted.
+
+```json
+{
+  "toolbar": {
+    "advanced": ["variables"],
+    "sections": ["blocks", "format", "advanced"],
+  },
+  "actions": {
+    "variables": {
+      "label": "Insert Variable",
+      "showMarkers": true, // opt in to the in-editor markers (off by default)
+      "options": [
+        { "value": "{{video}}", "label": "Video" },
+        { "value": "{{audio}}", "label": "Audio" },
+        { "value": "{{image-16x9}}", "label": "Image 16:9", "display": "inline" },
+      ],
+    },
+  },
+}
+```
+
+#### Action Options {#action-options}
+
+* `label` — Accessible label and placeholder of the dropdown (defaults to `Insert Variable`)
+* `showMarkers` — Shows each variable as a locked pill in the editor (off by default, see below)
+* `options` — The approved variables where each entry has:
+  * `value` — The exact string written to the HTML
+  * `label` — The human-readable text shown in the dropdown and on the in-editor pill
+  * `display` (optional) — `block` (default) or `inline`, see below
+
+#### Choosing Values {#choosing-values}
+
+The plugin matches values exactly as written, so care must be taken when setting them up.
+
+* Use distinctive delimiters, such as `{{video}}`, `[[video]]` or `!VIDEO!`.
+  * Do not use plain words (`video`, `audio`).
+  * An inline variable would match inside ordinary text such as `videos`, which is bad practice.
+* Do not leave empty and use no leading or trailing whitespace.
+  * `variableEntrySchema` (exported) rejects such values for consumers that validate their config with it, and the plugin itself ignores those entries without any warning.
+  * A value with edge whitespace can lose it after save and reload when it sits at the start or end of a paragraph, so it would no longer match.
+* Do not use repeated spaces, tabs, or newlines inside a value.
+  * On reload the editor collapses them to a single space, so the saved text would no longer equal the configured value.
+  * Single spaces are fine (e.g. `{{ video }}`).
+* Keep values unique.
+  * Matching is case-sensitive, so `{{Video}}` and `{{video}}` are different variables.
+  * When one value contains another (`{{video}}` and `{{video-hd}}`), the longest match wins.
+
+#### Block and Inline Placement (`display`) {#placement}
+
+|`display`|Where the variable goes|Selected text|
+|---|---|---|
+|`block` (default)|In its own paragraph, right after the paragraph that holds the caret (or the end of the selection). An empty paragraph is filled instead.|Not replaced, the selection is left as is|
+|`inline`|At the caret, inside the current paragraph|Replaced by the variable|
+
+For example, with the caret (or a selection) inside `<p>Watch the intro now</p>`:
+
+* Block `{{video}}` produces `<p>Watch the intro now</p><p>{{video}}</p>`. 
+* Inline `{{image-16x9}}` with `intro` selected produces `<p>Watch the {{image-16x9}} now</p>`.
+
+A block variable is never inserted mid-sentence, so it can not replace a selection without deleting the author's text. Use `inline` for variables that should sit inside a sentence. A block variable falls back to inline placement when the selection is not text or a paragraph is not allowed at that position.
+
+#### Behavior {#variable-behavior}
+
+* Formatting: The inserted variable is always bare text. It does not inherit bold, links, or other marks around the caret.
+* Selected variable (`showMarkers` on): The dropdown shows it as active. Picking another variable replaces it in place and the first option, "Remove Variable", deletes it (together with its paragraph when a block variable was alone in it). If the replacement is a block variable and the selected one sits inside a sentence, the selected variable is removed and the new one is added as its own paragraph below.
+* Next to a block variable (`showMarkers` on): A variable picked from the dropdown or text typed with the caret directly before or after a block variable starts a new paragraph above or below it, so the block variable stays alone in its paragraph.
+
+The saved HTML contains the variable as ordinary text, for example `<p>Watch {{video}} now</p>`. Characters that HTML escapes (`&`, `<`, `>`) are serialized as entities, so choose a syntax the consuming renderer decodes accordingly.
+
+#### Locked Variables (`showMarkers`) {#locked-variables}
+
+Enable with `showMarkers: true` on the variables action. It is off by default, and the saved HTML is identical either way (the variable is always plain text). Leave it off where the host application renders the content itself (for example in-context editing), so the variable stays plain text the author can replace.
+
+When on, every occurrence of a configured value is shown as a solid accent-coloured pill carrying the option's label, and becomes a locked unit:
+
+* It can not be edited from the inside: typing, pasting or deleting part of it is rejected.
+* It is removed as a whole with Backspace or Delete next to it, by selecting it and deleting, or with "Remove Variable" in the dropdown.
+* The arrow keys step over it and a selection that touches part of it expands to cover all of it.
+* Clicking the pill selects the whole variable and the selected pill is highlighted.
+
+A block variable is only recognized (pill and lock) when it is the only content of its paragraph. If typed or pasted by hand inside a sentence (`<p>see {{video}} here</p>`) or next to other text, it remains plain text (no pill, not locked, and the dropdown does not treat it as selected). Inline variables are recognized anywhere, including when typed by hand or present in content authored earlier.
+
+The pills never reach the saved HTML, and the styling is inline (no stylesheet to ship). It is deliberately different from the dashed class markers.
 
 ### Block Types {#block-types}
 
@@ -792,7 +934,7 @@ Choose semantic tags (`<strong>`, `<em>`, `<del>`) for better accessibility and 
 
 ### Inline Code {#inline-code}
 
-The `code_inline` format option marks a span of text as inline code, rendering `<code>` (for example, referencing a `foo()` call inside a sentence). Unlike `bold`/`italic`/`strike` it has no tag-switching option, and it excludes all other marks. Inline code is rendered verbatim, so `bold`/`italic`/`link` can not be applied on top of it. The default keyboard shortcut is `Mod-e`.
+The `code_inline` format option marks a span of text as inline code, rendering `<code>` (for example, referencing a `foo()` call inside a sentence). Unlike `bold`/`italic`/`strike` it has no tag-switching option, and it excludes all other marks. Inline code is rendered verbatim, so `bold`/`italic`/`link` can not be applied on top of it. The default keyboard shortcut is `Mod-E`.
 
 This is distinct from the `code_block` block (`<pre><code>`) available in the `blocks` dropdown. `code_inline` is an inline mark within a line, while `code_block` is a standalone, multi-line block. Code blocks hold plain text only (no marks), so an inline `<code>` is never nested inside a `<pre>`.
 
@@ -816,10 +958,65 @@ The plugin also parses legacy `<font color="...">` elements for backward compati
 
 ### Keyboard Shortcuts {#keyboard-shortcuts}
 
+There are three types of keyboard shortcuts:
+
+* Default shortcuts for actions which can be overridden
+* Default shortcuts for actions which can not be overridden
+* Actions with no default shortcut but can be configured
+
 Shortcuts use the format `Mod-Key`(s) where:
 
-* `Mod` = `Cmd` on Mac, `Ctrl` on Windows/Linux
-* Examples: `Mod-B`, `Mod-Shift-8`, `Mod-Alt-1`
+* `Mod` = `Cmd` on Mac, `Ctrl` on Windows/Linux.
+  * Examples: `Mod-B`, `Mod-Shift-8`, `Mod-Alt-1`
+* Empty strings can clear a default shortcut: `"shortcut": ""`.
+* If more than one action claims the same shortcut, the first wins and the subsequent are ignored with a console warning.
+* `removeformat`, `clean_unsupported_tags`, and `fullscreen` are not in the `actions` schema and are not configurable.
+* `Mod+Enter` can not be rebound.
+* Dialog-opening actions (`link`, `image`, `table`, `special_characters`, `find_and_replace`) only respond when their overlays can open.
+
+#### Defaults which can be overridden {#defaults-overridden}
+
+|Option Key|Default|
+|---|---|
+|`bold`|`Mod+B`|
+|`italic`|`Mod+I`|
+|`underline`|`Mod+U`|
+|`strike`|`Mod+Shift+X`|
+|`code_inline`|`Mod+E`|
+|`bullet_list`|`Mod+Shift+7`|
+|`ordered_list`|`Mod+Shift+8`|
+|`paste_text`|`Mod+Shift+V`|
+|`Enter`|`Mod+Enter`|
+
+#### Defaults which can not be overridden {#defaults-not-overwritten}
+
+|Option Key|Default|Context|
+|---|---|---|
+|Undo|`Mod+Z`|History|
+|Redo|`Mod+Shift+Z` or `Mod+Y`|History|
+|Hard line break (`<br>`)|`Shift+Enter`|Plugin|
+|New/split list item|`Enter`|Inside a list|
+|Nest list item|`Tab`|Inside a list|
+|Unnest list item|`Shift+Tab`|Inside a list|
+|Next table cell (and add row from last cell)|`Tab`|Inside a table|
+|Previous table cell|`Shift+Tab`|Inside a table|
+|Move between toolbar items|Arrow keys|Focus on toolbar|
+|Return focus to editor|`Tab`|Focus on toolbar|
+|Close fullscreen modal|`Esc`|In a modal (unless a dialog is open)|
+
+#### No default but can be configured {#no-default}
+
+|Group|Options|
+|---|---|
+|Format|`text_color`|
+|Blocks|`paragraph`, `h1`, `h2`, `h3`, `h4`, `h5`, `h6`, `code_block`, `blockquote`|
+|Alignment|`left`, `center`, `right`, `justify`|
+|Indentation|`indent`, `outdent`|
+|Direction|`rtl`, `ltr`|
+|Script|`superscript`, `subscript`|
+|Insert|`link`, `unlink`, `image`, `table`, `special_characters`|
+|Advanced|`classes`|
+|Editor|`find_and_replace`|
 
 ## Unsupported HTML {#unsupported-html}
 

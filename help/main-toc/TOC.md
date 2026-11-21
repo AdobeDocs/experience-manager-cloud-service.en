@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2026 {#2026}
+      + [Release Notes for 2026.10.0](/help/release-notes/release-notes-cloud/2026/2026-10-0.md)
       + [Release Notes for 2026.9.0](/help/release-notes/release-notes-cloud/2026/2026-9-0.md)
       + [Release Notes for 2026.8.0](/help/release-notes/release-notes-cloud/2026/2026-8-0.md)
       + [Release Notes for 2026.7.0](/help/release-notes/release-notes-cloud/2026/2026-7-0.md)
@@ -107,6 +108,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2026 {#2026}
+      + [Maintenance Release Notes for 2026.11.0](/help/release-notes/maintenance/2026/2026-11-0.md) 
       + [Maintenance Release Notes for 2026.10.0](/help/release-notes/maintenance/2026/2026-10-0.md) 
       + [Maintenance Release Notes for 2026.9.0](/help/release-notes/maintenance/2026/2026-9-0.md)
       + [Maintenance Release Notes for 2026.8.0](/help/release-notes/maintenance/2026/2026-8-0.md)
@@ -154,6 +156,7 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2026 {#2026}
+      + [2026.10.0](/help/implementing/cloud-manager/release-notes/2026/2026-10-0.md)
       + [2026.9.0](/help/implementing/cloud-manager/release-notes/2026/2026-9-0.md)
       + [2026.8.0](/help/implementing/cloud-manager/release-notes/2026/2026-8-0.md)
       + [2026.7.0](/help/implementing/cloud-manager/release-notes/2026/2026-7-0.md)      
@@ -275,6 +278,9 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.11.12 Release Notes](/help/release-notes/universal-editor/2026/2026-11-12.md)
+      + [2026.11.05 Release Notes](/help/release-notes/universal-editor/2026/2026-11-05.md)
+      + [2026.10.29 Release Notes](/help/release-notes/universal-editor/2026/2026-10-29.md)
       + [2026.10.22 Release Notes](/help/release-notes/universal-editor/2026/2026-10-22.md)
       + [2026.10.15 Release Notes](/help/release-notes/universal-editor/2026/2026-10-15.md)
       + [2026.10.08 Release Notes](/help/release-notes/universal-editor/2026/2026-10-08.md)
@@ -351,6 +357,7 @@ user-guide-title: AEM as a Cloud Service
       + [2024.08.13 Release Notes](/help/release-notes/universal-editor/2024/2024-08-13.md)
       + [2024.07.28 Release Notes](/help/release-notes/universal-editor/2024/2024-07-28.md)
       + [2024.06.28 Release Notes](/help/release-notes/universal-editor/2024/2024-06-28.md)
+  + [Release Notes for Experience Modernization Agent](/help/release-notes/modernization-agent/current.md)
   + [What is New?](/help/release-notes/what-is-new.md)
   + [Notable Changes in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
   + [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md)
@@ -683,12 +690,11 @@ user-guide-title: AEM as a Cloud Service
     + [Color tags for images](/help/assets/color-tag-images.md)
     + [Manage PDF documents](/help/assets/manage-pdf-documents.md)
     + [Micro-Frontend Destination Selector](/help/assets/destination-selector.md)
-    + {hide-from-toc} [AEM Assets Activation Report (Beta)](/help/assets/aem-assets-activation-report.md)
   + Configure, administer, and extend [!DNL Assets] {#admin}
     + [Detect duplicate assets](/help/assets/detect-duplicate-assets.md)
     + [Developer docs and APIs references](/help/assets/developer-reference-material-apis.md)
     + [Folder metadata schema](/help/assets/folder-metadata-schema.md)
-    + {hide-from-toc} [Generate Brand Aware Metadata](/help/assets/brand-aware-metadata.md)
+    + [Generate Brand Aware metadata](/help/assets/brand-aware-metadata.md)
     + [Work with image and video profiles](/help/assets/dynamic-media/about-image-video-profiles.md)
     + [Translate assets](/help/assets/translate-assets.md)
     + [Search facets](/help/assets/search-facets.md)
@@ -814,6 +820,8 @@ user-guide-title: AEM as a Cloud Service
     + [Introduction](/help/assets/assets-view-introduction.md)
     + [Getting started](/help/assets/get-started-assets-view.md)
     + [My Workspace](/help/assets/my-workspace-assets-view.md)
+    + [Digital Rights Management](/help/assets/drm-assets-view.md)
+    + [View Insights dashboard](/help/assets/aem-assets-activation-report.md)
     + [Supported file types and use cases](/help/assets/supported-file-formats-assets-view.md)
     + [View assets](/help/assets/navigate-assets-view.md)
     + [Upload and add assets](/help/assets/add-delete-assets-view.md)
@@ -862,8 +870,9 @@ user-guide-title: AEM as a Cloud Service
     + [Smart Collections in Content Hub](/help/assets/smart-collection-content-hub.md)
     + [Frequently asked questions for Content Hub](/help/assets/frequently-asked-questions-content-hub.md)  
   + Best practices{#best-practices}
+    + [Brand Aware Metadata best practices: a WKND tutorial](/help/assets/brand-aware-metadata-best-practices.md)
+    + [Metadata best practices: Plan, build, and govern](/help/assets/metadata-best-practices.md)
     + [Search best practices](/help/assets/search-best-practices.md)
-    + [Metadata management and best practices](/help/assets/metadata-best-practices.md)
   + Integration with Figma {#integration-figma}
     + [Native integration with Figma](/help/assets/integrate-aem-assets-with-figma.md)
   + Integration with Adobe Workfront {#integrations}
@@ -964,7 +973,7 @@ user-guide-title: AEM as a Cloud Service
         + [Set layout of an Adaptive Form based on Core Components](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
         + [Create an Adaptive Form fragment](/help/forms/adaptive-form-fragments-core-components.md)
         + [Create themes for an Adaptive Form - Core Components](/help/forms/using-themes-in-core-components.md)
-        + [Customizing Adaptive Form themes using the Theme Editor](/help/forms/customizing-themes-using-theme-editor.md)
+        + {hide-from-toc} [Customizing Adaptive Form themes using the Theme Editor](/help/forms/customizing-themes-using-theme-editor.md)
         + [Embed an Adaptive Forms theme in an AEM Sites theme](/help/forms/embed-adaptive-forms-theme-in-site-theme.md)
         + [Create an Adaptive Form template based on Core Components](/help/forms/template-editor-core-components.md)
         + [Create an Adaptive Form (Core Components) based on XFA Form templates](/help/forms/create-adaptive-form-using-xfa-templates.md)
@@ -1106,6 +1115,8 @@ user-guide-title: AEM as a Cloud Service
      + [Create Interactive Communication](/help/forms/interactive-communication/create-interactive-communication.md)
      + [Create Interactive Communication Template](/help/forms/interactive-communication/create-interactive-communication-template.md)
      + [Create Interactive Communication Fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+     + [Create an XDP Template](/help/forms/interactive-communication/create-xdp-template.md)
+     + [Create an XDP Fragment](/help/forms/interactive-communication/create-xdp-fragment.md)
      + {hide-from-toc} [Introduction to Interactive Communication](/help/forms/introduction-to-interactive-communication.md)
      + {hide-from-toc} [Create your First Interactive Communication](/help/forms/create-your-first-communication.md)
    + Review and Collaborate {#review-collaborate}
@@ -1127,9 +1138,11 @@ user-guide-title: AEM as a Cloud Service
      + [Table](/help/forms/interactive-communication//table.md)
      + [Line](/help/forms/interactive-communication/line.md)
      + [Barcode](/help/forms/interactive-communication/barcode.md)
+     + [Signature Field](/help/forms/interactive-communication/signature-field.md)
      + [Unbound Variable](/help/forms/interactive-communication/unbound-variable.md)
    + How To {#howto}
      + [Configure Data Binding](/help/forms/interactive-communication/configure-data-binding.md)
+     + [Mask numeric values](/help/forms/interactive-communication/howto/mask-numeric-identifier.md)
      + [Use the Rule Editor](/help/forms/interactive-communication/use-the-rule-editor.md)
      + [Import and Export the Interactive Communication](/help/forms/interactive-communication/import-and-export-the-interactive-communication.md)
      + [Add Custom Fonts](/help/forms/interactive-communication/add-custom-fonts.md)
@@ -1138,6 +1151,7 @@ user-guide-title: AEM as a Cloud Service
      + [Implement Dynamic Page Numbering](/help/forms/interactive-communication/implement-dynamic-page-numbering.md)
      + [Handle Content Overflow](/help/forms/interactive-communication/handle-content-overflow.md)
      + [Support XDP Editing](/help/forms/interactive-communication/support-xdp-editing.md)
+     + [Configure Accessibility in Interactive Communication Editor](/help/forms/interactive-communication/accessibility-ic-editor.md)
      + {hide-from-toc} [Copy and Paste Interactive Communication](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
      + [Start Workflow in Interactive Communication](/help/forms/interactive-communication/start-workflow-in-interactive-communication-editor.md)
      + [Configure Locale in Interactive Communication Editor](/help/forms/interactive-communication/support-localization.md)
@@ -1203,7 +1217,9 @@ user-guide-title: AEM as a Cloud Service
     + Enterprise Platforms {#enterprise-platforms}
       + [Setting Up Microsoft Copilot Studio with AEM MCP](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
       + [Setting Up JetBrains with GitHub Copilot and AEM MCP](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
-  + [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md)
+  + Local Development with AI {#local-development-with-ai}
+    + [AI Tooling for Local Development](/help/ai-in-aem/local-development-with-ai-tools.md)
+    + [Code Assessment Skill](/help/ai-in-aem/code-assessment-skill.md)
   + Agentic Capabilities in AEM {#agentic-capabilities}
     + [Overview](/help/ai-in-aem/agentic-capabilities/overview.md)
     + Brand Experience {#brand-experience}
@@ -1214,6 +1230,7 @@ user-guide-title: AEM as a Cloud Service
         + [Figma to Visual Content Fragments](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/figma-to-visual-content-fragments.md)
         + [Experience Production use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/use-cases.md)
         + [Forms use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/forms-use-cases.md)
+        + [Interactive Communications use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/interactive-communication-use-cases.md)
       + Development {#development}
         + [Development use cases](/help/ai-in-aem/agentic-capabilities/brand-experience/development/use-cases.md)
       + Onboarding {#onboarding}
@@ -1241,13 +1258,22 @@ user-guide-title: AEM as a Cloud Service
         + [Form Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
       + Experience Modernization Agent {#modernization}
         + [Overview](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)
+        + [Evaluate and Approve](/help/ai-in-aem/agents/brand-experience/modernization/evaluate.md)
         + [Getting Started](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
-        + [Getting Started with AEM authoring projects](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
+        + [Getting Started with Experience Manager Authoring Projects](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
+        + [Migrate a Production Site](/help/ai-in-aem/agents/brand-experience/modernization/production-migration.md)
+        + [Restyle Sites](/help/ai-in-aem/agents/brand-experience/modernization/restyling.md)
+        + [Make Visual Changes](/help/ai-in-aem/agents/brand-experience/modernization/visual-changes.md)
+        + [Create, Update, and Refactor Blocks](/help/ai-in-aem/agents/brand-experience/modernization/block-development.md)
         + [Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md)
+        + [Capabilities and Add-ons](/help/ai-in-aem/agents/brand-experience/modernization/capabilities.md)
         + [Prompting Guide](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md)
-        + [Project Documentation Skill](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md)
-        + [Site Catalog Skill](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
-        + [AOE Delivery](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
+        + [Project Instructions and Memory](/help/ai-in-aem/agents/brand-experience/modernization/project-instructions.md)
+        + [Generate Project Documentation](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md)
+        + [Site Catalog](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
+        + [Delivery by Agentic Outcome Engineers](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
+        + [Troubleshooting](/help/ai-in-aem/agents/brand-experience/modernization/troubleshooting.md)
+        + [FAQ](/help/ai-in-aem/agents/brand-experience/modernization/faq.md)
     + Content Advisor Agent {#content-advisor}
       + [Overview](/help/ai-in-aem/agents/content-advisor/overview.md)
       + [Content Discovery Agent](/help/ai-in-aem/agents/content-advisor/discovery.md)
