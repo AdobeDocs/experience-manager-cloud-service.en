@@ -89,6 +89,12 @@ For light authentication use cases including business stakeholders reviewing con
 
 ### CDN egress IP addresses {#cdn-egress-ips}
 
+Traffic that the AEM-managed CDN itself sends to destinations outside of AEM comes from the CDN's egress IP addresses, not from your AEM environment or its [dedicated egress IP address](/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address). You may need to allowlist these IP addresses on systems that restrict inbound connections by source IP and receive traffic from the CDN, for example:
+
+* Destinations receiving [CDN log forwarding](/help/implementing/developing/introduction/log-forwarding.md#cdn-ip-allowlist) that you host or control, such as a self-hosted Splunk HTTP Event Collector, Elasticsearch or OpenSearch cluster, or HTTPS endpoint, an Amazon S3 bucket whose policy uses an `aws:SourceIp` condition, or an Azure Storage account with firewall IP rules.
+* Any external service that your [AEM Edge Functions](/help/implementing/developing/introduction/edge-functions.md) call, for example APIs, authentication providers, or data services.
+* Any non-AEM backend reached through [origin selectors](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors).
+
 The AEM-managed CDN's egress IP addresses may change over time. Monitor the [public IP list](https://api.fastly.com/public-ip-list) for changes; see the [Public IP List documentation](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/) for details.
 
 >[!CAUTION]
