@@ -30,6 +30,10 @@ You, or your development team, can [create and customize your own HTML templates
 >
 >A **Generic Template** is always available within AEM as a default and is associated with every model. This template enables key/value pairs in structured content to be displayed in a clean, table-style format to support content Quality Assurance (QA) use cases. 
 
+>[!NOTE]
+>
+>Visual Content Fragments (Content Fragments with HTML templates) do not currently support composite fields.
+
 ## Create a Template {#create-a-template}
 
 HTML templates developed using Handlebars allow you to preview and deliver Visual Content Fragments in HTML format. The Handlebars.js syntax defines placeholders for content that is authored in Content Fragment fields.

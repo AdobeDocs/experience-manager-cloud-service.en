@@ -410,6 +410,10 @@ To prepare the **Attribute-Based Access Control (ABAC)** spreadsheet for **AEM A
 
 Completing these steps produces a self-explanatory, verifiable spreadsheet that streamlines the handoff to Adobe Support and reduces the risk of configuration errors during implementation.
 
+### Why is my ABAC rule not being applied to an asset in AEM Assets Content Hub? {#abac-rule-not-applied}
+
+In most cases, an ABAC rule does not apply because the asset metadata does not match the rule condition. ABAC in Content Hub is **metadata-driven**, not folder-based or path-based. The location of an asset in the AEM repository has no effect on whether a rule matches. A rule grants access to a user group only when the metadata value on the asset exactly matches the value specified in the rule condition.
+
 **See also**
 
 * [Translate Assets](/help/assets/translate-assets.md)

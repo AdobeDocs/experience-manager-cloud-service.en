@@ -25,7 +25,43 @@ The following video demonstrates Content Hub key capabilities:
 
 ## Release Date {#release-date}
 
-The release date of Content Hub feature release (2026.09.0) is September 24, 2026 (same as that of AEM as a Cloud Service release). The next feature release (2026.10.0) is planned for October 29, 2026.
+The release date of Content Hub feature release (2026.11.0) is November 19, 2026 (same as that of AEM as a Cloud Service release). The next feature release (2026.12.0) is planned for December 10, 2026.
+
+## November 2026 release features {#november-2026-release-features}
+
+### Download & Link Sharing Insights {#download-and-link-sharing-insights}
+
+* **Download Insights**: Track total downloads, unique downloaders, download trends over time, top-performing assets ranked by downloads, and detailed logs displaying the asset download details .
+
+* **Link Sharing Insights**: Monitor total links created and viewed, broken down by public and private links, with trends showing link creation and views over time.
+
+   >[!VIDEO](https://delivery-p149891-e1546481.adobeaemcloud.com/adobe/assets/urn:aaid:aem:d0eb8765-12a2-4094-8b8f-6fecd2cde9c7/play?isletterboxed=true)
+
+### Introducing an Enhanced Asset Browsing Experience {#enhanced-browsing-experience}
+
+Browse and manage assets in Content Hub with more ease and flexibility. The modernized browsing experience introduces new capabilities to help you find, review, and organize assets more efficiently.
+
+What's New:
+
+* **Select All Assets**: Quickly select all assets in the current view to perform bulk actions with ease.
+
+* **Customizable Card Size**: Adjust the size of asset cards to suit your browsing preferences, whether you want to see more assets at once or focus on larger previews.
+
+* **List View**: Switch between card and list views when browsing search results, giving you greater flexibility in how you explore assets.
+
+These enhancements make asset discovery and management more intuitive, efficient, and tailored to the way you work.
+
+## October 2026 release features {#october-2026-release-features}
+
+### Enhanced public link sharing and governance {#enhanced-public-link-sharing}
+
+Content Hub lets you share multiple assets and collections through public links and update existing links by adding or removing assets and collections at any time. Administrators can manage shared links with controls for password protection, expiration, and link revocation to help govern external access. Branded recipient experiences help maintain brand consistency when sharing assets with external stakeholders.
+
+>[!VIDEO](https://delivery-p149891-e1546481.adobeaemcloud.com/adobe/assets/urn:aaid:aem:189cb5b8-f398-48ec-b3d9-acee8d23ea3b/play?isletterboxed=true)
+
+
+[!BADGE Dive Deeper into this Feature]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
+
 
 ## September 2026 release features {#september-2026-release-features}
 
@@ -39,9 +75,6 @@ Smart Collections automatically remain up to date. When newly approved assets sa
 
 [!BADGE Dive Deeper into this Feature]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/smart-collection-content-hub"}
 
->[!IMPORTANT]
->
->This feature is available as a Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 ## August 2026 release features {#august-2026-release-features}
 

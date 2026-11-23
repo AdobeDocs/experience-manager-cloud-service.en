@@ -125,7 +125,10 @@ Content Fragments can be used as a basis for GraphQL for AEM schemas and queries
 
 * They enable you to design, create, curate and publish page-independent content that can be delivered headlessly.
 * They are based on a Content Fragment Model, which pre-defines the structure for the resulting fragment using a selection of data types.
-* Additional layers of structure can be achieved with the Fragment Reference data type, available when defining a model.
+* Nested content (additional layers of structure) can be achieved with the:
+
+  * Fragment Reference data type, available when defining a model
+  * Composite data type, also available when defining a model
 
 ### Content Fragment Models {#content-fragments-models}
 
@@ -144,6 +147,17 @@ These Content Fragment Models:
 * Lets you create, and then retrieve, structured data.
 
   * When defined as a **multifeed**, multiple sub-fragments can be referenced (retrieved) by the prime fragment.
+
+### Composite data {#composite-data}
+
+The **Composite** data type enables Content Fragments to store hierarchical, structured data
+
+* This is achieved by allowing fields to contain nested sub-fields
+* The sub-fields are structured
+* The sub-fields are structured according to Content Fragment Models
+* The sub-field are restricted to the Content Fragment Models that you specify when defining the sub-field
+
+This feature provides a way to model complex data structures within a single fragment, similar to nested objects in JSON or embedded documents in NoSQL databases.
 
 ## Actually Using the AEM GraphQL API {#actually-using-aem-graphiql}
 
@@ -220,7 +234,7 @@ query {
 }
 ```
 
-You can also build up more complex queries. For example, query for all companies that have at least one employee with the name of "Smith". This query illustrates filtering for any person of name "Smith", returning information from across the nested fragments:
+You can also build up more complex queries. For example, query for all companies that have at least one employee with the name of "Smith". This query illustrates filtering for any person of name "Smith", returning information from across the referenced fragments:
 
 ```xml
 query {

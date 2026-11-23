@@ -72,7 +72,7 @@ The AEM GraphQL API implementation is based on the [GraphQL Java libraries](http
 
 * They enable you to design, create, curate and publish page-independent content.
 * The [Content Fragment Models](#content-fragments-models) provide the required structure by means of defined data types.
-* The [Fragment Reference](#fragment-references), available when defining a model, can be used to define additional layers of structure.
+* Certain data types can be used in your model to introduce additional levels of structure with [Nested content](#nested-content).
 
 ![Content Fragments for use with GraphQL](/help/sites-cloud/administering/content-fragments/assets/cf-contentdelivery-cf-use-with-graphql.png "Content Fragments for use with GraphQL")
 
@@ -92,21 +92,31 @@ These [Content Fragment Models](/help/sites-cloud/administering/content-fragment
 
 * Provide the data types and fields required for GraphQL. They ensure that your application only requests what is possible, and receives what is expected.
 
-* The data type **[Fragment References](#fragment-references)** can be used in your model to reference another Content Fragment, and so introduce additional levels of structure.
+* Certain data types can be used in your model to introduce additional levels of structure with [Nested content](#nested-content).
 
-### Fragment References {#fragment-references}
+### Nested Content {#nested-content}
 
-The **[Fragment Reference](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#fragment-reference-nested-fragments)**:
+Nested content introduces additional levels of structure through the use of certain data types in your Content Fragment Model. 
 
-* Is of particular interest in conjunction with GraphQL.
+Nested content is of particular interest in conjunction with GraphQL. Data types that can realize nested content are:
 
-* Is a specific data type that can be used when defining a Content Fragment Model.
+* **[Fragment Reference](/help/assets/content-fragments/content-fragments-models.md#fragment-reference)**:
 
-* References another fragment, dependent on a specific Content Fragment Model.
+  * References another fragment, dependent on a specific Content Fragment Model.
 
-* Allows you to retrieve structured data.
+  * Lets you retrieve structured data.
 
-  * When defined as a **multifeed**, multiple sub-fragments can be referenced (retrieved) by the prime fragment.
+    * When defined as a **multifeed**, multiple sub-fragments can be referenced (retrieved) by the prime fragment.
+
+* **[Composite](/help/assets/content-fragments/content-fragments-models.md#composite-data)** 
+
+  * The Composite data type enables Content Fragments to store hierarchical, structured data by allowing fields to contain nested sub-fields. 
+  
+    * The sub-fields (children) are themselves structured content, defined by user-specified Content Fragment Models and fully embedded in the parent fragment.
+
+* **[Content Reference](/help/assets/content-fragments/content-fragments-models.md#content-reference)**
+
+  * Provides a simple reference to other content; of any type.
 
 ## Analyzing Content Fragment Structure {#analyzing-content-fragments-structure}
 

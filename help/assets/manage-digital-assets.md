@@ -31,24 +31,24 @@ role_v2:
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en)                  |
 | AEM as a Cloud Service     | This article         |
 
-This article describes how to manage and edit assets in **Adobe [!DNL Experience Manager] (AEM) [!DNL Assets]**. Managing assets in AEM [!DNL Assets] covers the full lifecycle of digital content, including uploading, organizing, editing, versioning, and publishing assets from a centralized digital asset management (DAM) repository. To manage [!DNL Content Fragments], see [Content Fragments](content-fragments/content-fragments.md) assets.
+This article describes how to manage and edit assets in **Adobe [!DNL Experience Manager] (AEM) [!DNL Assets]**. Managing assets in AEM [!DNL Assets] covers the digital content lifecycle, including uploading, organizing, editing, versioning, and publishing. To manage [!DNL Content Fragments], see [Content Fragments](content-fragments/content-fragments.md) Assets.
 
 ## Overview of asset management in AEM [!DNL Assets]
 
-**Adobe [!DNL Experience Manager] (AEM) [!DNL Assets]** functions as a centralized digital asset management (DAM) system, storing and organizing digital content so that teams can locate, reuse, and deliver assets consistently across channels. In this context, an **asset** is any digital file managed within the repository, such as images, videos, documents, audio files, and other media. **[!DNL Content Fragments]** are a distinct asset type used to author channel-neutral, structured content that can be reused across multiple experiences, and they are managed separately as described in the linked [!DNL Content Fragments] article.
+**Adobe [!DNL Experience Manager] (AEM) [!DNL Assets]** functions as a centralized digital asset management (DAM) system, storing and organizing digital content so that teams can locate, reuse, and deliver assets consistently across channels. An **asset** is any digital file in the repository. **[!DNL Content Fragments]** are a distinct asset type for authoring channel-neutral, structured content, managed as described in the linked [!DNL Content Fragments] article.
 
-Centralizing assets in a single managed repository reduces duplication, enforces consistent metadata, and streamlines collaboration between content creators, marketers, and reviewers. As widely acknowledged in digital asset management practice, this centralized approach improves discoverability and helps maintain brand consistency because every team works from a single, governed source of truth.
+Centralizing assets in a single managed repository reduces duplication, enforces consistent metadata, and streamlines collaboration between content creators, marketers, and reviewers. In digital asset management practice, this centralized approach improves discoverability and helps maintain brand consistency because every team works from a single, governed repository.
 
 ## Common asset management tasks
 
 Managing and editing assets in AEM [!DNL Assets] includes the following core activities:
 
-- **Uploading and importing assets** into the DAM repository from local files or connected sources.
-- **Organizing assets** into folders and collections for structured navigation and reuse.
-- **Editing metadata** to improve searchability, governance, and downstream delivery.
-- **Editing and processing assets**, such as applying edits, renditions, and transformations.
-- **Versioning assets** to track changes over time and revert to earlier states when needed.
-- **Publishing and delivering assets** to the channels and experiences where they are consumed.
+- Upload and import assets into the DAM repository from local files or connected sources.
+- Organize assets into folders and collections for structured navigation and reuse.
+- Edit metadata to improve searchability, governance, and downstream delivery.
+- Edit and process assets, such as applying edits, renditions, and transformations.
+- Version assets to track changes over time and revert to earlier states when needed.
+- Publish and deliver assets to the channels and experiences where they are consumed.
 
 ## Practical applications and benefits
 
@@ -56,7 +56,7 @@ Effective asset management directly supports faster content production and consi
 
 ## Create folders {#creating-folders}
 
-Folders in Adobe [!DNL Experience Manager] (AEM) [!DNL Assets] let you group and organize a collection of related assets — for example, all `Nature` images — into a single container. Folders help you categorize, structure, and quickly locate your assets, which improves navigation and workflow efficiency as your asset library grows. [!DNL Experience Manager Assets] does not require you to organize assets in folders to function correctly, so folder organization remains an optional convenience rather than a mandatory step.
+Folders in Adobe [!DNL Experience Manager] (AEM) [!DNL Assets] let you group and organize a collection of related assets — for example, all `Nature` images — into a single container. Folders help you categorize and locate assets, improving navigation as your library grows. [!DNL Experience Manager Assets] does not require folders, making them an optional convenience.
 
 <!--![chlimage_1-236](assets/chlimage_1-236.png)-->
 
@@ -70,10 +70,10 @@ Folders in Adobe [!DNL Experience Manager] (AEM) [!DNL Assets] let you group and
 
 >[!NOTE]
 >
->* Sharing an [!DNL Assets] folder of the type `sling:OrderedFolder` is not supported when sharing to Experience Cloud. If you want to share a folder, do not select [!UICONTROL Ordered] when creating a folder.
->* [!DNL Experience Manager] does not allow using `subassets` word as the name of a folder. The word **`subassets`** is a keyword reserved for nodes that contain subassets for compound assets.
+>- Sharing an [!DNL Assets] folder of the type `sling:OrderedFolder` is not supported when sharing to Experience Cloud. If you want to share a folder, do not select [!UICONTROL Ordered] when creating a folder.
+>- Experience Manager does not allow using the `subassets` word as the name of a folder. The word **`subassets`** is a keyword reserved for nodes that contain subassets for compound assets.
 
-### Steps to create a folder
+### Create a folder
 
 1. Navigate to the place in your digital assets folder where you want to create a folder. In the menu, click **[!UICONTROL Create]**. Select **[!UICONTROL New Folder]**.
 1. In the **[!UICONTROL Title]** field, provide a folder name. By default, Digital Asset Management (DAM) uses the title that you provided as the folder name. Once the folder is created, you can override the default and specify another folder name.
@@ -101,7 +101,7 @@ Uploading centralizes your media in a single, governed repository rather than le
 - **Discoverability:** Uploaded assets are indexed, making them searchable by name, metadata, and tags.
 - **Delivery-ready processing:** When you upload an asset, [!DNL Experience Manager] generates the appropriate renditions so the file is ready for use across different channels and screen sizes.
 
-Because uploaded assets become the source of truth for your media, keeping them well-organized from the moment of upload directly improves downstream authoring, search, and delivery.
+Because uploaded assets become the primary reference for your media, keeping them well-organized from the moment of upload directly improves downstream authoring, search, and delivery.
 
 ## Extract ZIP archives {#extract-zip-archives}
 
@@ -157,7 +157,7 @@ Select **[!UICONTROL Reset]** to reset the view to the original size.
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
-1. In the [!UICONTROL Properties] page, edit the metadata properties under various tabs. For example, under the **[!UICONTROL Basic]** tab, edit metadata fields such as the title, description, and other descriptive attributes.
+1. In the [!UICONTROL Properties] page, edit the metadata properties under various tabs. For example, under the **[!UICONTROL Basic]** tab, edit metadata fields like title and description.
 
    >[!NOTE]
    >
@@ -167,18 +167,18 @@ Select **[!UICONTROL Reset]** to reset the view to the original size.
 
    ![Date Picker](assets/date-picker.png)
 
-1. To deactivate the asset after a particular duration, choose the deactivation date/time from the date picker beside the **[!UICONTROL Off Time]** field. The deactivation date should be later than the activation date for an asset. As a result, after the [!UICONTROL Off Time] is reached, the asset and its renditions are no longer available either through the [!DNL Assets] web interface or through the HTTP API, because the deactivation automatically withdraws them from delivery.
+1. To deactivate the asset after a particular duration, choose the deactivation date/time from the date picker beside the **[!UICONTROL Off Time]** field. The deactivation date is after the activation date for an asset. As a result, after the [!UICONTROL Off Time] is reached, the asset and its renditions are no longer available either through the [!DNL Assets] web interface or through the HTTP API, because the deactivation automatically withdraws them from delivery.
 
 1. In the **[!UICONTROL Tags]** field, select one or more tags to categorize and improve the discoverability of the asset. To add a custom tag, type the name of the tag in the box and select the `Enter` key. The new tag is saved in [!DNL Experience Manager].
 
-   YouTube requires Tags to publish and have a link to YouTube (if a suitable link can be found).
+   YouTube requires tags to publish and to have a link to YouTube (if a suitable link can be found).
 
    >[!NOTE]
    >
    >To create tags, you must have write permission at `/content/cq:tags/default` path in the CRX repository.
 
 1. Select **[!UICONTROL Save & Close]**.
-1. Navigate to the [!DNL Assets] user interface. The edited metadata properties—including title, description, and tags—are displayed on the asset card, confirming that the changes were saved successfully. These properties appear on the asset card in Card view and under relevant columns in the List view.
+1. Navigate to the [!DNL Assets] user interface. The edited metadata properties—title, description, and tags—appear on the asset card, confirming successful save. These properties appear on the asset card in Card view and under relevant columns in the List view.
 
 <!--
  TBD: Uncomment after verification for Dec release.
@@ -199,11 +199,11 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 ## Copy assets {#copying-assets}
 
-Copying an asset or a folder in [!DNL Experience Manager] duplicates the **entire asset or folder, along with its complete content structure**, at the target location. The copied asset or folder becomes a full duplicate, while the original **asset at the source location remains unaltered** — making the copy operation a non-destructive action that safely preserves the source.
+Copying an asset or folder in [!DNL Experience Manager] duplicates the **entire asset or folder and its content structure** at the target location. The copied asset or folder becomes a full duplicate, while the original **asset at the source location remains unaltered** — making the copy operation a non-destructive action that safely preserves the source.
 
 A few attributes that are unique to each individual copy of an asset are **not carried forward**. Examples include:
 
-* **Asset ID, creation date and time, and versions and version history.** These properties are indicated by **`jcr:uuid`** (the unique asset identifier), **`jcr:created`** (the original creation timestamp), and **`cq:name`**.
+* **Asset ID, creation date and time, and versions and version history.** **`jcr:uuid`** (the unique asset identifier), **`jcr:created`** (the original creation timestamp), and **`cq:name`** indicate these properties.
 
 * **Creation time and referenced paths**, which are unique for each asset and for each of its renditions.
 
@@ -307,7 +307,7 @@ Renditions are the alternate versions of an asset—such as different sizes or f
 
    You can configure the dimensions for the rendition you want displayed on the details page of an image or video asset. As a result, [!DNL Assets] automatically selects and displays the rendition whose dimensions exactly match or most closely match the values you specify.
 
-   You cannot create renditions with the following prefixes, as these are internal to Adobe:
+   You cannot create renditions with the following prefixes, as these prefixes are internal to Adobe:
 
    * **cq5**
 
@@ -315,13 +315,13 @@ Renditions are the alternate versions of an asset—such as different sizes or f
 
    * **cq5dam**
 
-   To configure rendition dimensions of an image at the asset detail level, overlay the `renditionpicker` node (`/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) and configure the value of the width property. Configure the property **[!UICONTROL size (Long) in KB]** in place of width to customize the rendition on the asset detail page based on image size. For size-based customization, the property `preferOriginal` assigns preference to the original if the size of the matched rendition is greater than the original.
+   To configure rendition dimensions of an image at the asset detail level, overlay the `renditionpicker` node (`/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) and configure the value of the width property. To customize the rendition on the asset detail page based on image size, configure the **[!UICONTROL size (Long) in KB]** property instead of width. For size-based customization, the property `preferOriginal` assigns preference to the original if the size of the matched rendition is greater than the original.
 
    Similarly, you can customize the Annotation page image by overlaying `/libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
    <!--![chlimage_1-222](assets/chlimage_1-222.png)-->
 
-   To configure rendition dimensions for a video asset, navigate to the `videopicker` node in the **CRX (Content Repository Extreme)** repository at the location `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, overlay the node, and then edit the appropriate property.
+   To configure rendition dimensions for a video asset, navigate to the `videopicker` node in the **Adobe CRX (Content Repository Extreme)** repository at the location `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, overlay the node, and then edit the appropriate property.
 
    >[!NOTE]
    >
@@ -333,6 +333,12 @@ To resolve or remove incoming references from other pages, update the relevant r
 
 Also, disable the force delete button using an overlay. This prevents users from deleting referenced assets, and as a result, it protects your content from broken links and ensures reference integrity is maintained before any deletion occurs.
 
+>[!IMPORTANT]
+>
+>When Dynamic Media is enabled, deleting an asset in Experience Manager also permanently deletes it from Dynamic Media. The asset is not moved to the Dynamic Media Trash folder, so you cannot restore it from Dynamic Media.
+
+**To delete assets:**
+
 1. Navigate to the location of the assets you want to delete.
 
 1. Select the asset, and click **[!UICONTROL Delete]** ![delete_icon](assets/do-not-localize/delete-icon.png) from the toolbar.
@@ -343,7 +349,7 @@ Also, disable the force delete button using an overlay. This prevents users from
     * **[!UICONTROL Delete]** to confirm the action:
 
         * If the asset has no references, the asset is deleted immediately.
-        * If the asset has references, an error message informs you that **[!UICONTROL One or more assets are referenced]**. This message indicates that other pages still depend on the asset, and deleting it would break those references. You can then select **[!UICONTROL Force Delete]** to override the check and delete the asset regardless of its references, or **[!UICONTROL Cancel]** to stop and update the references first.
+        * If the asset has references, an error message informs you that **[!UICONTROL One or more assets are referenced]**. This message indicates that other pages depend on the asset, and deleting it breaks those references. You can then select **[!UICONTROL Force Delete]** to override the check and delete the asset regardless of its references, or **[!UICONTROL Cancel]** to stop and update the references first.
 
    >[!NOTE]
    >
@@ -355,7 +361,7 @@ Also, disable the force delete button using an overlay. This prevents users from
 
 ## Asynchronous Background Jobs {#asynchronous-background-jobs}
 
-To improve performance and reliability when processing large numbers of assets, Adobe [!DNL Experience Manager] (AEM) uses asynchronous background jobs for certain asset management operations. Instead of completing these operations immediately, AEM processes them in the background and allows users to continue working while progress is tracked separately. This approach keeps the user interface responsive and prevents long-running operations from blocking other work.
+To improve performance and reliability when processing large numbers of assets, Adobe [!DNL Experience Manager] (AEM) uses asynchronous background jobs for certain asset management operations. Instead of completing these operations immediately, AEM processes them in the background and allows users to continue working while progress is tracked separately. This approach keeps the user interface responsive and prevents long-running operations from delaying other tasks.
 
 ### When Jobs Run Asynchronously
 
@@ -367,7 +373,7 @@ To improve performance and reliability when processing large numbers of assets, 
 
 As the operation runs, AEM processes assets in **batches** and periodically saves progress. Batch processing with periodic checkpoints ensures that progress is preserved and the operation can recover reliably rather than restarting from the beginning. The AEM user interface displays progress updates so that users can monitor the status of the operation in real time.
 
-For **move and delete operations**, AEM restricts access to the affected folders while the job runs. This restriction exists to prevent conflicting actions, because concurrent edits during a batch operation could corrupt the job state or produce inconsistent results.
+For **move and delete operations**, AEM restricts access to the affected folders while the job runs. This restriction prevents conflicting actions, because concurrent edits during a batch operation corrupt the job state or produce inconsistent results.
 
 ![Date Picker](assets/move-progress-folder-indicator.png)
 
@@ -385,9 +391,9 @@ Users are notified automatically when the operation finishes, so no manual polli
 
 ## Download assets {#download-assets}
 
-Downloading assets in Adobe [!DNL Experience Manager] (AEM) lets you retrieve digital files — such as images, documents, videos, and other rich media — from the centralized asset repository to your local machine or another destination. For complete step-by-step instructions, see [download assets from [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
+Downloading assets in Adobe [!DNL Experience Manager] (AEM) retrieves digital files—such as images, documents, and videos—from the repository to your local machine. For complete step-by-step instructions, see [download assets from [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
-The ability to download assets is a core function of digital asset management, ensuring that approved, up-to-date files can be reused across creative, marketing, and publishing workflows. Because [!DNL Experience Manager] serves as a single source of truth for an organization's media, downloading directly from the repository helps teams work with the correct, latest versions rather than outdated or duplicated copies.
+The ability to download assets is a core function of digital asset management, ensuring that approved, up-to-date files can be reused across creative, marketing, and publishing workflows. Because [!DNL Experience Manager] serves as a single primary reference for an organization's media, downloading directly from the repository helps teams work with the correct, latest versions rather than outdated or duplicated copies.
 
 **Common reasons to download assets from [!DNL Experience Manager] include:**
 
@@ -413,14 +419,14 @@ For the full workflow, including selection options and available formats, refer 
 
 1. When publishing, if an asset references other assets, the wizard lists those references. The wizard displays only the references that are either unpublished or modified since the last publish. Choose the references that you want to publish.
 
-1. When unpublishing, if an asset references other assets, choose the references that you want to unpublish. Click **[!UICONTROL Unpublish]**. In the confirmation dialog, click **[!UICONTROL Cancel]** to stop the action or click **[!UICONTROL Unpublish]** to confirm that the assets are to be unpublished at the specified date.
+1. When unpublishing, if an asset references other assets, choose the references that you want to unpublish. Click **[!UICONTROL Unpublish]**. In the confirmation dialog, click **[!UICONTROL Cancel]** to stop the action. Click **[!UICONTROL Unpublish]** to confirm that the assets are to be unpublished at the specified date.
 
 ### Limitations and Tips for Publishing and Unpublishing [!DNL Assets]
 
 Understand the following limitations and tips related to publishing or unpublishing assets or folders:
 
 * The **[!UICONTROL Manage Publication]** option is available only to user accounts that have **replication permissions**. Accounts without these permissions cannot access the publish or unpublish workflow.
-* While unpublishing a complex asset, unpublish **the asset only**. Avoid unpublishing the references, because those references may still be referenced by other published assets. Unpublishing shared references can break the other published assets that depend on them.
+* While unpublishing a complex asset, unpublish **the asset only**. Avoid unpublishing the references, because other published assets reference them. Unpublishing shared references can break the other published assets that depend on them.
 * **Empty folders are never published.**
 * If you publish an asset that is still being processed, only the **original content** is published, and the renditions are missing, because the renditions have not yet been generated. To include renditions, either wait for processing to complete and then publish, or re-publish the asset once processing completes.
 
@@ -475,7 +481,7 @@ The method used to reveal the quick action icons depends on the input type of yo
 * **Touch devices:** Touch and hold the asset. For example, on an iPad, the user can select-and-hold an asset so that the quick actions display.
 * **Non-touch devices:** Hover the pointer over the asset. For example, on a desktop device, hovering the pointer over the asset thumbnail displays the quick action bar.
 
-In short, **touch devices** rely on a press-and-hold gesture, while **non-touch devices** rely on a pointer hover — both revealing the same set of quick action icons for the targeted asset.
+Touch devices rely on a press-and-hold gesture, while **non-touch devices** rely on a pointer hover — both revealing the same set of quick action icons for the targeted asset.
 
 <!--
  Hiding this topic via cqdoc-18707
@@ -590,7 +596,7 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
    
 
-1. After adding the annotation, click **[!UICONTROL Add]** to save it. A notification for the annotation is sent to Aaron so that the intended reviewer is alerted to the new feedback.
+1. After adding the annotation, click **[!UICONTROL Add]** to save it. A notification for the annotation is sent to the reviewer so that they are alerted to the new feedback.
 
    
 
@@ -599,7 +605,7 @@ Video annotations are only supported on browsers with HTML5-compatible video for
    >You can add multiple annotations before you save them.
 
 1. Select **[!UICONTROL Close]** to exit from the Annotation mode.
-1. To view the notification, log in to [!DNL Assets] with Aaron MacDonald's credentials and click the **[!UICONTROL Notifications]** icon to view the notification.
+1. To view the notification, log in to [!DNL Assets] with the reviewer's credentials and click the **[!UICONTROL Notifications]** icon to view the notification.
 
    >[!NOTE]
    >
@@ -653,7 +659,7 @@ Follow these steps:
 
    
 
-   Select **[!UICONTROL Delete]** to permanently remove a particular comment and its associated annotation from the asset.
+   Select **[!UICONTROL Delete]** to remove a particular comment and its associated annotation from the asset permanently.
 
 ### Print annotations {#printing-annotations}
 
@@ -693,7 +699,7 @@ To print the annotations and review status, select the **[!UICONTROL Print]** ic
 
    
 
-1. From the Print dialog, choose the position where you want the annotations and review status to be displayed on the PDF. For example, to print the annotations and status at the top-right of the page that contains the printed image, use the **Top-Left** setting. The **Top-Left** setting is selected by default.
+1. From the Print dialog, choose the position where you want the annotations and review status to be displayed on the PDF. For example, to print the annotations and status at the top-right of the page that contains the printed image, use the **Top-Left** setting. The system selects the **Top-Left** setting by default.
 
    
 
@@ -711,13 +717,13 @@ To print the annotations and review status, select the **[!UICONTROL Print]** ic
 
    
 
-   To modify the appearance of the rendered PDF file — for example, the font color, size, and style, or the background color of the comments and statuses — open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. This lets you standardize how statuses and comments appear across printed reviews. For information about changing the font color of annotations, see [Annotating](/help/assets/manage-digital-assets.md#annotating).
+   To modify the appearance of the rendered PDF file, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. This lets you standardize how statuses and comments appear across printed reviews. For information about changing the font color of annotations, see [Annotating](/help/assets/manage-digital-assets.md#annotating).
 
    Return to the rendered PDF file and refresh it. The refreshed PDF reflects the changes you made.
 
 ## Asset versioning {#asset-versioning}
 
-**Asset versioning** creates a **snapshot** of a digital asset at a specific point in time. Each version preserves the exact state of the asset so it can be **restored to a previous state** whenever needed. This enables non-destructive editing: to undo a change made to an asset, simply restore the unedited version, because the earlier snapshot remains intact and recoverable. As a result, versioning safeguards original content against accidental overwrites and supports reliable rollback across collaborative workflows.
+**Asset versioning** creates a **snapshot** of a digital asset at a specific point in time. Each version preserves the exact state of the asset so it can be **restored to a previous state** whenever needed. This enables non-destructive editing: to undo a change made to an asset, restore the unedited version, because the earlier snapshot remains intact and recoverable. As a result, versioning safeguards original content against accidental overwrites and supports reliable rollback across collaborative workflows.
 
 ### When versions are created
 
@@ -761,7 +767,7 @@ The versioning functionality lets you:
 
 <!--![chlimage_1-251](assets/chlimage_1-251.png)-->
 
-1. To view the new version, open the **[!UICONTROL Show All]** list in the timeline from the asset details page or the [!DNL Assets] UI, and choose **[!UICONTROL Versions]**. All versions created for an asset are listed under the timeline tab. You can filter the list to show only versions by clicking the drop arrow and selecting **[!UICONTROL Versions]** from the list.
+1. To view the new version, open the **[!UICONTROL Show All]** list in the timeline from the asset details page or the [!DNL Assets] UI, and choose **[!UICONTROL Versions]**. All versions created for an asset are listed under the timeline tab. To show only versions, click the drop arrow and select **[!UICONTROL Versions]** from the list.
 
    ![versions_option](assets/versions_option.png)
 
@@ -769,7 +775,7 @@ The versioning functionality lets you:
 
    ![select_version](assets/select_version.png)
 
-1. Add a label and comment for the version to revert to that particular version in the [!DNL Assets] UI.
+1. To revert to that particular version in the [!DNL Assets] UI, add a label and comment for the version.
 
    ![save_version](assets/save_version.png)
 
@@ -809,7 +815,7 @@ Starting a workflow on an asset lets you apply a defined, repeatable process—s
 
 1. (Optional) Specify a title for the workflow. This title identifies and references the specific workflow instance, making it easier to locate and track later.
 
-1. Select **[!UICONTROL Start]** and then select **[!UICONTROL Proceed]** in the confirmation dialog to begin the workflow. Each step of the workflow is displayed in the timeline as an event, allowing you to monitor progress and confirm that each stage completes as expected.
+1. Select **[!UICONTROL Start]** and then select **[!UICONTROL Proceed]** in the confirmation dialog to begin the workflow. Each step of the workflow is displayed in the timeline as an event. This lets you monitor progress and confirm that each stage completes as expected.
 
 <!--![chlimage_1-256](assets/chlimage_1-256.png)-->
 
@@ -824,9 +830,9 @@ To know details of Collection management, see [manage Collections](/help/assets/
 
 ## Hide expired assets when viewing assets in desktop app or Adobe Asset Link {#hide-expired-assets-via-acp-api}
 
-[!DNL Experience Manager] desktop app provides access to the **Digital Asset Management (DAM)** repository from Windows or Mac desktop. Adobe Asset Link provides access to assets from within the supported [!DNL Creative Cloud] desktop applications.
+The [!DNL Experience Manager] desktop app provides access to the **Digital Asset Management (DAM)** repository from Windows or Mac desktop. Adobe Asset Link provides access to assets from within the supported [!DNL Creative Cloud] desktop applications.
 
-Within the [!DNL Experience Manager] user interface, expired assets are hidden from view by default. This default behavior does not extend automatically to external access points. As a result, expired assets may still be viewed, searched, and fetched when users browse the repository through the desktop app and Adobe Asset Link. Hiding expired assets across these entry points supports consistent asset lifecycle governance, ensuring that content past its expiration is no longer surfaced to users regardless of how they connect to the DAM.
+Within the [!DNL Experience Manager] user interface, the system hides expired assets from view by default. This default behavior does not extend automatically to external access points. As a result, users still view, search, and fetch expired assets when they browse the repository through the desktop app and Adobe Asset Link. Hiding expired assets across these entry points supports consistent asset lifecycle governance, ensuring that content past its expiration is no longer surfaced to users regardless of how they connect to the DAM.
 
 To prevent the viewing, searching, and fetching of expired assets when browsing from the desktop app and Asset Link, administrators apply the configuration below. **This configuration works for all users, irrespective of administrator privilege** — it operates at the repository configuration level rather than per-user, so a single setting governs the behavior for every account that accesses assets.
 
@@ -847,103 +853,8 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 
 Once applied, expired assets are excluded from browsing, search, and fetch operations across the desktop app and Adobe Asset Link, matching the behavior already present in the [!DNL Experience Manager] user interface.
 
-To know more, see how to [browse DAM assets using desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) and [how to use Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
+Learn how to [browse DAM Assets using desktop app](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/get-started#browse-search-preview-assets).
 
-## Permission model for move or publish operations {#permission-model}
-
-Moving an asset or Content Fragment in **Adobe [!DNL Experience Manager] (AEM)** requires **replicate** permission, not merely write access to the source and destination folders. Write access alone is insufficient; the **replicate** permission is mandatory for a move or publish operation to complete.
-
-A user who lacks **replicate** access does not receive an outright failure. Instead, the move enters a **pending approval** workflow state. The operation then waits for an administrator, defined as a user who holds the **replicate** permission, to approve or complete it. This is **expected, by-design behavior**, and not a defect or bug.
-
-AEM intentionally gates replication-triggering actions behind the **replicate** permission. This ensures that only authorized users push content changes to publish environments, protecting content integrity and preventing unauthorized or accidental publication.
-
-|Operation|Minimum permission needed|What happens if missing|
-|--- |--- |--- |
-|Move a folder or asset within the Digital Asset Management (DAM)|Write on the source, destination, and a destination folder explicitly selected in the **[!UICONTROL Select Destination]** dialog box.|The **[!UICONTROL Move]** button stays disabled until a destination folder checkbox is actually checked. This is a common false alarm reported as **Move button not working**.|
-|Move or copy an asset or Content Fragment that triggers the replication|**replicate** permission|The move or copy operation starts a workflow that pauses in a pending state awaiting administrator approval, rather than failing with an error.|
-|View a folder marked private|You must own the folder, or you must be an explicit member (owner or editor or viewer) of that private folder.|Private folder settings override standard ACLs, hence a user or group with `jcr:read` access can still see the folder, but sharing is restricted to owners or members only.|
-|Use **Share Link** on a private folder|Explicit membership (owner or editor or viewer) on the private folder, in addition to `jcr:modifyAccessControl` or edit ACL and link share configuration.|Plain read access is not sufficient, a group with `jcr:read` on a folder that is later marked private loses the ability to generate share links even though they can still browse the folder.|
-
-### Stuck or pending move-replicate workflow {#stuck-pending}
-
-A move or copy workflow that appears **stuck or pending** is almost always caused by a missing **replicate permission** on the target path, not by a system defect. In **Adobe [!DNL Experience Manager] (AEM)**, moving or copying content triggers a replication event, and the platform enforces a **permission gate** that pauses the workflow whenever the initiating user lacks the required access. Resolve it by confirming the permission and completing the approval, as follows:
-
-1. Identify the user who initiated the move or copy, and check whether that user holds the **replicate permission** on the target path.
-2. If the initiating user does not hold this permission, either grant the **replicate permission** when that is the intended long-term access level, or ask an administrator who already holds the **replicate permission** to approve or complete the pending workflow and unblock it.
-3. Do not treat the stuck workflow as a system defect before completing this check. This is the **standard AEM behavior** enforcing the **replicate permission gate**, a deliberate safeguard that ensures only authorized users publish or propagate content. Because the workflow simply pauses at this permission check, the underlying content is neither corrupted nor lost — it remains fully intact and resumes as soon as the permission requirement is satisfied.
-
-### Disabled Move button {#move-button}
-
-**The [!UICONTROL Move] button in the [!DNL Assets] UI stays grayed out until a destination folder checkbox is selected in the [!UICONTROL Select Destination] dialog box.** If the **[!UICONTROL Move]** action appears grayed out or unresponsive, the most common cause is that no destination has been chosen yet.
-
-**How to enable the Move button:**
-
-1. Open the **[!UICONTROL Select Destination]** dialog box.
-2. Select or check the **destination folder checkbox** for the target folder where the asset should go.
-3. Confirm that a specific destination is highlighted or checked — not merely browsed to.
-4. The **[!UICONTROL Move]** button activates once a valid destination folder is confirmed.
-
-**Why the Move button stays disabled:** The **[!UICONTROL Move]** action requires a confirmed target folder before it can run. As a result, the button remains inactive whenever the **[!UICONTROL Select Destination]** dialog is open but no folder checkbox has been selected. This ensures the Move operation always has a valid destination and prevents assets from being moved without a target.
-
-Selecting the **destination folder checkbox** is easy to overlook, since simply navigating into or clicking a folder does not always register it as the confirmed destination. Verify that the checkbox for the folder is actually checked, and the **[!UICONTROL Move]** button becomes active and clickable.
-
-### Private folders versus standard ACLs {#private-folders-versus-standard-ACLs}
-
-Private folders use a **membership-based model** that layers on top of and effectively overrides the standard Access Control List (ACL)–based sharing for the **Share Link** feature specifically. In practice, only the folder's **owner** and **explicitly added members** can generate shared links or otherwise use sharing features on a private folder — even when the underlying group ACL is unchanged.
-
-#### How the override works
-
-Read access through the group ACL still lets group members browse a private folder, so members retain visibility into the folder's contents. Sharing capability, however, is governed separately by the private-folder membership list rather than by the group ACL. This layered model ensures that browsing and sharing are controlled independently: a user can see a private folder because of read-level ACL access, yet remain unable to share it because they are not on the folder's explicit membership list.
-
-#### Troubleshooting restricted sharing
-
-When investigating why a specific group can no longer share the folder, follow these steps:
-
-1. **Check whether the folder was recently converted to private.** Conversion to a private folder is the most common cause of newly restricted sharing.
-2. **Confirm the group ACL is unchanged.** If read access still works but link generation fails, the ACL is not the source of the problem.
-3. **Verify the private-folder membership list.** Confirm whether the affected users are listed as the owner or as explicitly added members.
-
-Because private-folder membership overrides ACL-based sharing, a recent conversion to private directly explains restricted sharing even when the group ACL remains unchanged. As a result, restoring sharing requires adding the relevant users as explicit members of the private folder rather than modifying the group ACL.
-
-### Folder structure and performance guidance {#folder-structure-and-performance-guidance}
-
-**Adobe [!DNL Experience Manager] (AEM) recommends keeping the number of direct children under any single folder to roughly 1,000 for optimal performance and usability.** While AEM does not enforce a hard technical limit on the number of subfolders or assets stored under a single folder, staying near this practical ceiling keeps content operations responsive.
-
-In this context, **direct children** are the combined count of subfolders and assets immediately under a single folder.
-
-**Why the ~1,000 threshold matters:** As the number of direct children grows into the several-thousand range, AEM must enumerate, sort, and index a much larger set of items each time the folder is accessed. Because of this larger workload, folders with several thousand direct children typically exhibit degraded performance across common operations, including:
-
-- **Listing** — browsing or paginating the folder's contents becomes slower.
-- **Moving** — relocating folders or assets takes longer as more items must be processed.
-- **Workflow operations** — automated processes running against the folder's contents complete less efficiently.
-
-**Best practice: subdivide proactively.** If a folder is expected to grow beyond roughly **1,000 direct children**, introduce additional grouping or subfolder levels before performance issues appear rather than after. Establishing a logical hierarchy in advance distributes items across multiple smaller folders, keeping each folder's child count within the responsive range and preventing the listing, moving, and workflow slowdowns associated with oversized folders.
-
-### Known UI behavior {#known-UI-behavior}
-
-**Avoid using slashes (/) in folder titles in the [!DNL Assets] UI.** This is a documented behavior, not a bug in the underlying repository.
-
-A **slash (/) in a folder title** interferes with the **[!UICONTROL Column View]** rendering logic. As a result, the affected folder's subfolders fail to display in **[!UICONTROL Column View]**, even though the subfolders still exist in the repository and remain intact.
-
-#### Cause
-
-The rendering logic in **[!UICONTROL Column View]** treats the slash character as a path separator. Because a slash inside a folder title collides with how the interface parses hierarchy, the view cannot resolve and draw the child folders beneath that title. The children are not lost — they are simply hidden from the **[!UICONTROL Column View]** display.
-
-#### Troubleshooting steps
-
-If **[!UICONTROL Column View]** unexpectedly shows an empty folder that actually has children, work through the following checks before assuming a deeper indexing or permissions problem:
-
-1. **Inspect the folder titles along that path for slashes (/).** A single slash in any title on the path is the most common cause of the empty-view symptom.
-2. **Rename any offending folders** to remove the slash from the title, which allows **[!UICONTROL Column View]** to resolve and render the child folders correctly.
-3. **Only escalate to indexing or permissions investigation** after confirming that no folder titles under that path contain slashes, since those are far less likely explanations for this specific behavior.
-
-### Troubleshooting checklist {#troubleshooting-checklist}
-
-1. **Move or copy workflow stuck in pending**: Check the initiating user's **replicate permission**. Obtain approval from an administrator if the workflow is expected to remain pending, or grant **replicate access** when the initiating user legitimately requires it, because move and copy operations depend on replicate permission to complete.
-2. **Move button disabled**: Confirm a **destination folder** is actually checked or selected in the destination picker. The Move button remains disabled until a valid target is selected, because the operation requires an explicit destination.
-3. **Group can see a folder but cannot share it**: Check whether the folder is marked private. **Private folders** restrict sharing to owners or explicitly added members, regardless of the read **Access Control Lists (ACLs)**. This is because private status overrides read permissions, allowing a group to view a folder without being able to share it.
-4. **Column View shows a folder as empty when it has children**: Check for slashes in the child folder titles, because a slash character in a folder title can break the path resolution that Column View uses to display children.
-5. **Folder operations feel slow at scale**: Count the direct children under the folder. When the child count reaches the thousands, introduce an additional subfolder grouping, because a large number of direct children increases the processing load for folder operations and slows performance.
 
 **See also**
 
@@ -961,4 +872,4 @@ If **[!UICONTROL Column View]** unexpectedly shows an empty folder that actually
 * [Search facets](/help/assets/search-facets.md)
 * [Manage collections](/help/assets/manage-collections.md)
 * [Bulk metadata import](/help/assets/metadata-import-export.md)
-* [Publish [!DNL Assets] to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

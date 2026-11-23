@@ -1,6 +1,6 @@
 ---
-title: Universal Editor 2026.10.22 Release Notes
-description: These are the release notes for the 2026.10.22 release of the Universal Editor.
+title: Universal Editor 2026.11.19 Release Notes
+description: These are the release notes for the 2026.11.19 release of the Universal Editor.
 feature: Release Information
 role: Admin
 product_v2:
@@ -17,9 +17,9 @@ role_v2:
     internal-label: Admin
 ---
 
-# Universal Editor 2026.10.22 Release Notes {#release-notes}
+# Universal Editor 2026.11.19 Release Notes {#release-notes}
 
-These are the release notes for the 22 October 2026 release of the Universal Editor.
+These are the release notes for the 19 November 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -29,7 +29,12 @@ These are the release notes for the 22 October 2026 release of the Universal Edi
 >
 >For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
+## What's New {#what-is-new}
+
+* Native WebMCP support was added so the editor’s tools (including new undo and redo tools) are registered through `document.modelContext` when the browser provides it, alongside the existing integration.
+* A variables dropdown is now available in the rich text editor for [inserting variables into rich text fields](/help/implementing/universal-editor/configure-rte.md#variables) for Content Fragments.
+
 ## Other Improvements {#other-improvements}
 
-* The browser back/forward navigation was fixed by setting up the browser history state before the editor renders.
-* The WebMCP update content tool now prefers delivery URLs over author DAM paths for approved delivery assets.
+* The editor now clears a selection whose component no longer exists after navigating to a new page and keeps selections whose components appear in a later repaint.
+* Native AEM header buttons now stay available on pages that contain nested Experience Fragments or Content Fragments.

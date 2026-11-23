@@ -138,7 +138,7 @@ To assess a whole project first, prompt *"Review my code for AEMaaCS migration."
 
 Supported patterns include Sling Scheduler, ResourceChangeListener, Replication API, OSGi EventListener and EventHandler, Assets API, Guava cache to Caffeine swaps, HTL lint fixes, OSGi config conversion with Cloud Manager secrets and environment variable extraction, legacy UI dialog migration (Classic UI/Coral 2 to Coral 3), custom design widget migration, static-to-editable template modernization, and AMS or on-premise Dispatcher configuration conversion.
 
-The skill pairs with the [Cloud Migration MCP](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md) to fetch findings directly from [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md). Without the MCP configured, the skill falls back to a local [BPA](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) CSV export, or you can point it at specific files manually.
+The skill uses the [AEM MCP Server's Cloud Migration capabilities](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md) to fetch findings directly from [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md). Without the AEM MCP Server configured, the skill falls back to a local [BPA](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) CSV export, or you can point it at specific files manually.
 
 For full setup instructions and pattern reference, see [AI-Assisted Code Migration to AEM as a Cloud Service](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md).
 
@@ -161,9 +161,15 @@ The dispatcher skill handles orchestration and advisory guidance. The Dispatcher
 
 ### Use the Code-assessment Skill {#use-the-code-assessment-skill}
 
+>[!TIP]
+>
+>For the complete guide to this skill, including all supported checks, how to read the report, how fixes are applied and verified, worked examples, and limitations, see [Code Assessment Skill](/help/ai-in-aem/code-assessment-skill.md).
+
 The `code-assessment` skill detects, reviews, and fixes code-quality and correctness issues in an AEM as a Cloud Service project entirely within your local workspace. Describe the issue, and the skill routes the request to the appropriate remediation workflow.
 
-Supported checks include modernizing Sling Model dependency injection, updating outdated Maven dependencies, adding missing timeouts to outbound HTTP calls, bounding unbounded queries, Sling schedulers, resource change listeners, the Replication and Assets APIs, and JCR or OSGi event handling, plus scanning and fixing usage of [deprecated and removed AEM APIs](/help/release-notes/deprecated-removed-features.md), with more added over time. Depending on the issue, the skill either applies a mechanical fix directly or guides you through one that needs a judgment call.
+Supported checks include modernizing Sling Model dependency injection, updating outdated Maven dependencies, adding missing timeouts to outbound HTTP calls, bounding unbounded queries, checking whether JCR queries are served by an Oak index, Sling schedulers, resource change listeners, the Replication and Assets APIs, and JCR or OSGi event handling, plus scanning and fixing usage of [deprecated and removed AEM APIs](/help/release-notes/deprecated-removed-features.md), with more added over time. Depending on the issue, the skill either applies a mechanical fix directly or guides you through one that needs a judgment call.
+
+The skill can also check whether your JCR queries are served by an Oak index and propose index definition changes. See [Check Query Index Coverage](/help/ai-in-aem/code-assessment-skill.md#check-query-index-coverage).
 
 For a broad or first-time review, ask the skill to assess the whole project: it runs every detector, reports all findings, and applies code fixes one pattern at a time.
 
@@ -334,4 +340,3 @@ Other IDEs can be configured in a similar manner. The SDK's `docs/DispatcherMCP.
 |`tail_logs`|Tails relevant Dispatcher and HTTPD runtime logs|
 
 The MCP surface intentionally exposes only these seven tools; prompts and resources remain in the skill layer. Full reference documentation is available in `docs/DispatcherMCP.md` inside the extracted Dispatcher SDK.
-

@@ -27,14 +27,15 @@ Content Fragments are designed for [Headless delivery using GraphQL](/help/sites
 
 Experience Manager (AEM) provides several methods of viewing and analyzing the structure of your fragments.
 
-## References {#references}
+## Nested Content {#nested-content}
 
-The multi-layered structure is built up using References:
+A multi-layered structure can be built up using Fragment References, Content References and the Composite Data Type:
 
-* [Data types for References are defined in the Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#using-references-to-form-nested-content)
+* [Data types for nested content are defined in the Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#nested-content)
 * When authoring you can:
-  * [Manage these references](/help/sites-cloud/administering/content-fragments/authoring.md##manage-references)
+  * [Manage references](/help/sites-cloud/administering/content-fragments/authoring.md#manage-references)
   * [Find Parent References of your Fragment](/help/sites-cloud/administering/content-fragments/managing.md#parent-references-fragment)
+  * [Edit Composite fields](/help/sites-cloud/administering/content-fragments/authoring.md#edit-a-composite-field)
 
 ## Structure tree {#structure-tree}
 
