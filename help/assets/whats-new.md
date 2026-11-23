@@ -29,6 +29,14 @@ The release date of Content Hub feature release (2026.11.0) is November 19, 2026
 
 ## November 2026 release features {#november-2026-release-features}
 
+### Download & Link Sharing Insights {#download-and-link-sharing-insights}
+
+* **Download Insights**: Track total downloads, unique downloaders, download trends over time, top-performing assets ranked by downloads, and detailed logs displaying the asset download details .
+
+* **Link Sharing Insights**: Monitor total links created and viewed, broken down by public and private links, with trends showing link creation and views over time.
+
+   >[!VIDEO](https://delivery-p149891-e1546481.adobeaemcloud.com/adobe/assets/urn:aaid:aem:d0eb8765-12a2-4094-8b8f-6fecd2cde9c7/play?isletterboxed=true)
+
 ### Introducing an Enhanced Asset Browsing Experience {#enhanced-browsing-experience}
 
 Browse and manage assets in Content Hub with more ease and flexibility. The modernized browsing experience introduces new capabilities to help you find, review, and organize assets more efficiently.
