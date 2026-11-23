@@ -23,11 +23,16 @@ role_v2:
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_download"
 >title="Download"
->abstract="The Content Transfer Tool can be downloaded as a zip file from the Software Distribution Portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance. Make sure to download the latest version."
+>abstract="The Content Transfer Tool can be downloaded as a zip file from the Software Distribution Portal. Download the package that matches your source Adobe Experience Manager (AEM) version, then install it via Package Manager on your source AEM instance. Make sure to download the latest version."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Release Notes"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
-The Content Transfer Tool can be downloaded as a zip file from the Software Distribution Portal. You can install the package by way of [Package Manager](/help/implementing/developing/tools/package-manager.md) on your source Adobe Experience Manager (AEM) instance. Make sure to download the latest version. For more details on the latest version, see [Release Notes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html).
+The Content Transfer Tool can be downloaded as a zip file from the Software Distribution Portal. Separate packages are available for Adobe Experience Manager (AEM) 6.5 LTS and for other supported AEM versions. Download the package that matches your source AEM instance:
+
+* **AEM 6.5 LTS**: `AEM65-lts-content-transfer.all`
+* **AEM 6.3, 6.4, and 6.5**: `content-transfer.all`
+
+You can install the package by way of [Package Manager](/help/implementing/developing/tools/package-manager.md) on your source AEM instance. Make sure to download the latest version. For more details on the latest version, see [Release Notes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html).
 
 Only version 2.0.0 and higher is supported, and it is advisable to use the most recent version.
 
