@@ -371,7 +371,7 @@ To disable publishing Dispatcher packages, add the following configuration to yo
   <activation>
     <property>
       <name>env.IGNORE_DISPATCHER_PACKAGES</name>
-      <value>[!NOTE]rue</value>
+      <value>true</value>
     </property>
   </activation>
   <modules>
