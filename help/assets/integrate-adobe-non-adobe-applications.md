@@ -27,6 +27,8 @@ Adobe Experience Manager (AEM) Assets also integrates natively with Adobe Expres
 
 * Access to an AEM Assets as a Cloud Service environment.
 
+* You must be a Collaborator user, Power user, or Administrator to access Content Advisor. Limited users cannot access Content Advisor. See [Available user types and privileges](/help/assets/assets-ultimate-overview.md#available-user-types).
+
 * Access to an AEM Sites environment with authored Content Fragments (required only for working with Content Fragments). This is not required for accessing binary assets or AEM Assets.
 
 ## Intelligent asset discovery with Content Advisor {#intelligent-asset-discovery-content-advisor}
