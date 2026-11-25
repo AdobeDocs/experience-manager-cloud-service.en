@@ -16,10 +16,7 @@ role_v2:
 Create a link to selected assets and collections to share them with others easily. As an authorized [!DNL Content Hub] user, select one or more assets and collections available in your [!DNL Content Hub] environment, generate a link, and send it to other private or public users.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
-
->[!IMPORTANT]
->
->This feature is available as a Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment. 
+ 
 
 ## Prerequisites {#prerequisites}
 

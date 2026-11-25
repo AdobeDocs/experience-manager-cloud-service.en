@@ -19,7 +19,7 @@ role_v2:
 
 # Security Health {#security-health}
 
-AEM as a Cloud Service automatically scans your production environments for common security issues and surfaces the results in Experience Hub. Security Health helps administrators find and resolve issues, such as vulnerable third-party libraries and overly permissive access control entries, without waiting for a scheduled security audit.
+AEM as a Cloud Service automatically scans your production environments for common security issues and surfaces the results in Experience Hub. Security Health helps administrators find and resolve issues, such as vulnerable third-party libraries, outdated AEM releases with missing security fixes, and overly permissive access control entries, without waiting for a scheduled security audit.
 
 ## Access Security Health {#access-security-health}
 
@@ -56,7 +56,7 @@ When issues are detected, Security Health shows key performance indicators for v
 
 ## Types of Findings {#types-of-findings}
 
-Security Health reports on three types of issues, aligned with the [OWASP Top 10](https://owasp.org/Top10/2025/).
+Security Health reports on four types of issues, aligned with the [OWASP Top 10](https://owasp.org/Top10/2025/).
 
 ### Vulnerabilities in Third-Party Libraries {#vulnerabilities-in-third-party-libraries}
 
@@ -88,6 +88,18 @@ When vulnerabilities come from nested dependencies of a bundle, Security Health 
 When a single library has a known vulnerability, Security Health lists that library on its own, along with the related CVE.
 
 ![A single library with its own vulnerability details](./assets/security-health/vulnerabilities-single-library.png)
+
+### Outdated AEM Releases {#outdated-aem-releases}
+
+Corresponds to OWASP Top 10 category A03:2025 (Software Supply Chain Failures).
+
+Security Health compares the AEM release running in an environment with the latest available release. If newer AEM releases contain fixes for known vulnerabilities, Security Health creates a finding that recommends updating AEM.
+
+The detail view shows the current and latest AEM releases and their release dates. It also lists the affected CVEs, including each CVE's severity, CVSS score, related Adobe security bulletin, and bulletin publication date. You can follow the bulletin links for more information or export the list as a CSV file.
+
+![Outdated AEM release details with affected CVEs and security bulletins](./assets/security-health/outdated-aem-release.png)
+
+To get the latest AEM release or enroll in automatic updates, contact your Adobe representative. For more information about the update process, see [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md).
 
 ### Redundant Permissions {#redundant-permissions}
 

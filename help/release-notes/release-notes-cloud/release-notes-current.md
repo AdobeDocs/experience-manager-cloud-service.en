@@ -34,7 +34,7 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2026.10.0) is October 29, 2026. The next feature release (2026.11.0) is planned for November 19, 2026.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2026.11.0) is November 19, 2026. The next feature release (2026.12.0) is planned for December 10, 2026.
 
 ## Maintenance Release Notes {#maintenance}
 
@@ -52,16 +52,17 @@ Have a look at the May 2026 Release Overview video for a summary of the features
 
 ## Release Overview {#overview}
 
-The 2026.10.0 release of [!DNL Experience Manager] as a [!DNL Cloud Service] highlights new and recently available capabilities across Sites, Assets, Forms, and Foundation, alongside updates to developer tools and platform guidance.
+The 2026.11.0 release of [!DNL Experience Manager] as a [!DNL Cloud Service] brings new capabilities across Sites, Assets, Forms, and Foundation, with a focus on conversational experiences, asset governance, and developer readiness.
 
 **Highlights of this release**
 
-* **More flexible content and media experiences:** Sites prerelease adds a Composite data type for Content Fragments. Assets highlights include multilingual video captions and audio tracks, branded video playback, and a GIF-based countdown timer for Dynamic Media email templates.
-* **AI-assisted governance and troubleshooting:** The AEM Governance Agent can help prioritize vulnerability findings, while new capabilities in CX Enterprise Coworker let developers inspect workflows and investigate Dispatcher behavior using natural-language prompts.
-* **Expanded developer and migration tooling:** The Cloud Migration Agent skill adds migration patterns and beta validation, and the unified AEM MCP Server now supports Cloud Migration capabilities.
-* **Platform changes to prepare for:** The AEM Cloud Service SDK supports Java 25 for local development. Review the notices on CDN egress IP allowlists, the transition from built-in New Relic APM to OpenTelemetry, and deprecated Java APIs.
+* **Sites experiences in LLM conversations:** Adobe LLM Apps lets brands create interactive experiences from their existing websites and publish them to ChatGPT and Claude.
+* **Smarter asset governance and insight:** AI-powered Digital Rights Management extracts usage rights from license documents, while the unified Assets Insights dashboard brings asset usage and performance data together.
+* **Faster communication authoring:** Forms authors can create and refine Interactive Communications through natural-language requests in CX Enterprise Coworker, and create reusable XDP templates and fragments in the Interactive Communication Editor.
+* **Java 25 support:** AEM Cloud Service now supports Java 25 for builds and runtime. Teams can use the SDK and opt-in runtime configuration to validate applications ahead of the planned environment upgrades.
+* **Platform changes to prepare for:** Review the notices on new Adobe-managed CDN egress IP addresses, the transition from built-in New Relic APM to OpenTelemetry, and the removal of deprecated Java APIs.
 
-A range of beta, early adopter, and Limited Availability programs are also available this release. See the sections below for details.
+Beta, Limited Availability, and prerelease capabilities are identified in the sections below.
 
 ## AEM Beta Programs {#aem-beta-programs}
 
@@ -112,6 +113,14 @@ See [AEM Assets beta programs](#assets-beta-program-features).
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
+### Adobe LLM Apps {#llm-apps}
+
+Adobe LLM Apps, a new capability in Experience Manager Sites, lets brands bring their own experience into LLM conversations and turn LLMs into a measurable marketing channel. Authors enter their brand's domain, and within about 15 minutes LLM Apps suggests an app generated from the existing website, with no custom build or new backend required. Each app is made of actions, which carry out tasks such as checking stock or building a cart, and widgets, which show the results as interactive, visual experiences inside the chat, with real product images, pricing, and availability. Brands build once and publish to ChatGPT and Claude, with Gemini to follow, and manage the app with the same content, workflows, and governance as the rest of their AEM Sites experiences. App events flow to Adobe Analytics and Customer Journey Analytics, so brands can see the intent behind consumer prompts and track the journey from first prompt to conversion, whether it happens in the chat or on the brand's own site.
+
+>[!IMPORTANT]
+>
+>LLM Apps is available to all AEM Sites Cloud Service customers to develop and manage their own apps. Once metering begins, each app invocation will count toward the customer's AEM Sites Content Requests. Adobe will announce the metering rate and start date before metering takes effect.
+
 ### New features in Experience Manager Sites Prerelease {#prerelease-sites}
 
 #### Composite data type for Content Fragments
@@ -124,44 +133,75 @@ This section highlights new and recently available capabilities for [!DNL Experi
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets General Availability Features {#assets-general-availability-features}
 
-#### Dynamic Media with OpenAPI capabilities: Multi-caption and multi-audio track support for videos {#multi-caption-multi-audio}
+#### Unified Insights dashboard for AEM Assets {#unified-insights-dashboard}
 
-Dynamic Media with OpenAPI capabilities now support [multiple captions and multiple audio tracks for video assets](/help/assets/multi-audio-multi-caption.md). It enables organizations to deliver localized and accessible video experiences to global audiences by associating multiple language-specific caption and audio tracks with a single primary video. Authors can efficiently manage these tracks from a unified interface, simplifying multilingual content delivery and supporting regional accessibility requirements.
+Adobe Experience Manager Assets introduces a [unified Insights dashboard](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/aem-assets-activation-report) that provides visibility into asset usage, team activity, and content performance across Author, Content Hub, Dynamic Media, and Content Advisor. The dashboard is organized in four distinct sections: Activation Overview, Manage & Govern (Author), Discovery & Share (Content Hub), and Transform & Deliver (Dynamic Media). Customers can now track asset downloads, sharing activity, approvals, and publishing, along with asset delivery requests, usage trends, and performance. Detailed insights into top-performing assets, user activity, link sharing, and delivery errors help administrators understand content adoption, optimize asset usage, and make informed decisions to drive value of assets managed in their DAM to their organization.
 
-#### Dynamic Media with OpenAPI capabilities: AI-generated video captions {#ai-generated-video-captions} 
 
-AI-generated video captions in Dynamic Media with OpenAPI capabilities [use artificial intelligence to generate captions automatically for video content](/help/assets/generate-translate-captions.md). This feature is designed to improve accessibility and enhance the user experience by providing accurate, real-time captions. The AI analyzes the video's audio track to transcribe speech and create captions, which can be edited for accuracy or customization. These captions help meet accessibility requirements and improve video engagement for audiences who rely on or prefer text-based video support.
+#### Brand Aware Metadata (BAM) {#brand-aware-metadata}
 
-#### Dynamic Media: GIF-based countdown timer {#gif-based-countdown-timer}
+AEM Assets now supports [Brand Aware Metadata, an AI-powered capability that automatically generates custom metadata for assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/best-practices/brand-aware-metadata-best-practices) when uploaded or re-processed. This reduces the need for manual entry by orders of magnitude, helping teams find assets and deliver new experiences much faster. Customers maintain a library of prompts that define how AI should populate any given metadata field, tailored to their own brand vocabulary and taxonomy. This prompt library includes a playground to preview results and a prompt optimizer that automatically drafts suggested improvements.
 
-AEM Dynamic Media now brings a [GIF-based countdown timer to email templates, creating urgency at the moment of open and driving click-through on time-sensitive offers](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-templates). Administrators can configure a Days/Hours/Mins/Secs display, a custom suffix, post-expiry fallback text, and a clickable destination URL.
+#### Content Advisor integration in Figma {#content-advisor-figma-integration}
 
-#### Dynamic Media: Branded video viewer and customizable presets {#new-video-viewer-presets}
+Updated the Adobe Experience Manager (AEM) Assets Connector for Figma to use the [embedded Content Advisor experience](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integration-figma/integrate-aem-assets-with-figma). The updated connector brings the latest Content Advisor capabilities into Figma, including enhanced asset browsing, breadcrumb-based folder navigation, importing assets to Figma canvases, and exporting assets to the AEM Assets repository.
 
-Dynamic Media [Branded video viewer delivers a performant, accessible, and fully customizable playback experience](/help/assets/dynamic-media/new-video-viewer.md). Configurable playback modifiers, including autoplay, loop, and muted, give you complete control over viewer behavior. Custom CSS support and reusable [branded video viewer presets](/help/assets/dynamic-media/branded-video-viewer-presets.md) let you customize player colors, controls, button styles, playback speeds, and video presentation settings for a consistent, on-brand experience across desktop, tablet, and phone layouts. Apply presets to videos in asset details, AEM Sites components, or playback URLs. Actionable analytics track views, watch time, completion rate, and engagement score, providing meaningful insights into video performance.
+#### Adobe Express integration {#assets-express-integration}
 
-#### Content Hub: AI Search {#ai-search-content-hub}
+Adobe Express integration with Assets helps all users create and edit on-brand content and increase content reuse. In this release, we have introduced support for:
 
-AEM Assets Content Hub now includes [AI Search, an advanced search capability that understands the meaning and intent behind user queries instead of relying only on exact keyword matches](/help/assets/search-assets-content-hub.md#ai-search-aem-assets-content-hub). AI Search delivers more accurate and context relevant results by recognizing relationships between words, concepts, and user intent. It supports multilingual queries, handles misspellings and typos, understands synonyms, and surfaces relevant assets even when users do not use exact metadata terms. 
+**Asset view UI - "Open in Express"** to import an asset into a new Express document in the embedded Express editor:
 
-For example, a search for `Woman drinking coffee` can also return assets tagged with related terms such as `Lady`, `Girl`, `Latte`, or `Cappuccino`. 
+* **Support opening read-only assets** for creating variants to be saved into a different location, where the user has access. This helps protect hero assets from unwanted modification (e.g., Photoshop assets from the global studio), while allowing users to open them safely, modify a copy in Express, and then save to a location in AEM, where they have write access. The capability works for "Open in Express" and for the Express Quick Actions. 
 
-Administrators can enable or disable AI Search in Content Hub using the Configurations menu by selecting either AI Search or traditional keyword search.
+* **Users with free membership for Express can now access the integration**. Organizations with access to the [Creative Cloud for enterprise - free membership](https://helpx.adobe.com/business/enterprise/products-entitlements/special-programs-plans/cce-free-overview.html) can now assign AEM users to the free membership for Express included in these special plans, and these users will have access to Express integration with AEM. Please note that the free membership for Express supports a subset of the features of the full, premium Express entitlement. 
 
-#### Content Hub: Custom Sorting options {#custom-sorting-options-content-hub}
+**Assets plugin in Adobe Express** to import an asset into the current Express document:
 
-Content Hub now allows administrators to [enable custom metadata fields as sorting options on the Content Hub home page](/help/assets/search-assets-content-hub.md#configure-sorting-aem-assets-content-hub). In addition to the default sorting options, Size, Modified, Name, and Relevance, administrators can configure business-specific metadata fields such as Channel, Region, SKU, or Campaign to help users organize search results more effectively.
+* **.ai** Added support for Adobe Illustrator assets
 
-#### Content Hub: Smart Collections {#smart-collections}
+#### Frame.io integration {#frame-io-integration}
 
-Smart Collections enable you to [automatically organize assets based on defined search criteria](/help/assets/smart-collection-content-hub.md).
-When you create a Smart Collection, the collection stores the search query and filter criteria instead of storing individual assets. Assets that match the configured criteria are automatically displayed in the collection.
+Users in [Frame.io](https://frame.io/) can export assets or folders from [!DNL Frame.io] directly to [!DNL Experience Manager Assets]. The integration improves users' efficiency and shortens the time from approved assets in [!DNL Frame.io] to content ready to be activated from AEM Assets. The prerequisite is Frame.io V4 managed in Adobe Admin Console. For more details, see [this article](https://help.frame.io/en/articles/15647440-export-frame-io-assets-to-adobe-experience-manager-assets). 
 
-Smart Collections automatically remain up to date. When newly approved assets satisfy the configured search criteria, they are automatically added to the collection.
+#### Content Automation by Firefly Services {#content-automation-by-ffs}
 
->[!VIDEO](https://video.tv.adobe.com/v/3503809)
+[Content Automation by Firefly Services](/help/assets/cc-api-integration.md) offers AEM Assets customers access to automated content transformation and creation based on selected operations from the Adobe Firefly Services APIs, specifically from the [Photoshop API V2](https://developer.adobe.com/firefly-services/docs/photoshop/). These operations include background removal (cutout), image masks, Photoshop smart object replacement, Photoshop actions, Lightroom presets, auto-tone and auto-straighten for images.
+
+This release updates all the supported API operations to be executed against the latest Photoshop API V2, which includes auto-tone, auto-straighten, and applying Lightroom presets which were formerly leveraging the now-deprecated Lightroom API. The name of the add-on to [!DNL Assets] in [!DNL Cloud Manager] is updated to [!DNL Content Automation by Firefly Services], from the previous [!DNL Content Automation]; customers who deployed the previous [!DNL Content Automation] add-on retain access to these capabilities.
+
+#### New features in Content Hub {#new-features-content-hub}
+
+##### Enhanced public link sharing and governance {#enhanced-public-link-sharing}
+
+Content Hub lets you [share multiple assets and collections through public links and update existing links by adding or removing assets and collections at any time](/help/assets/share-assets-content-hub.md). Administrators can manage shared links with controls for password protection, expiration, and link revocation to help govern external access. Branded recipient experiences help maintain brand consistency when sharing assets with external stakeholders.
+
+##### Introducing an Enhanced Asset Browsing Experience {#enhanced-asset-browsing-experience}
+
+Browse and manage assets in Content Hub with more ease and flexibility. The modernized browsing experience introduces new capabilities to help you find, review, and organize assets more efficiently.
+
+What's New:
+
+* **Select All Assets**: Quickly select all assets in the current view to perform bulk actions with ease.
+
+* **Customizable Card Size**: Adjust the size of asset cards to suit your browsing preferences, whether you want to see more assets at once or focus on larger previews.
+
+* **List View**: Switch between card and list views when browsing search results, giving you greater flexibility in how you explore assets.
+
+These enhancements make asset discovery and management more intuitive, efficient, and tailored to the way you work.
+
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Limited Availability Features {#assets-limited-availability-features}
+
+#### AI-powered Digital Rights Management (DRM) service {#ai-powered-digital-rights-management}
+
+AI automatically [processes license documents, extracts usage rights and stores them as metadata](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/drm-assets-view). This drives significant efficiencies and remove manual effort involved.
+
+Additionally, confidence scores for every extraction allows for human in the loop workflows. This enables customers to maintain a centralized, reusable library of license records and associate licenses with multiple assets. Updates to license details automatically apply to all associated assets, simplifying rights management and reducing manual effort. This capability helps organizations maintain consistent usage-rights information, improve governance, and ensure compliance with licensing terms and restrictions.
+
+>[!IMPORTANT]
+>
+>DRM service is available as a Limited Availability feature for selected customers in North America. During this phase, Adobe is validating the experience with participating customers. There will be a phased rollout with broader General Availability planned for January 2027. Availability and timing may be updated as the rollout progresses.
 
 #### Native Dynamic Media Template component in Adobe Journey Optimizer {#dynamic-media-component-ajo}
 
@@ -177,11 +217,15 @@ Dynamic Media with OpenAPI capabilities can now generate barcode and QR code ima
 
 To request enablement, open an Adobe Customer Support ticket.
 
-#### Content Hub: Enhanced public link sharing and governance {#enhanced-public-link-sharing}
-
-Content Hub lets you [share multiple assets and collections through public links and update existing links by adding or removing assets and collections at any time](/help/assets/share-assets-content-hub.md). Administrators can manage shared links with controls for password protection, expiration, and link revocation to help govern external access. Branded recipient experiences help maintain brand consistency when sharing assets with external stakeholders.
-
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Assets Beta Features {#assets-beta-program-features}
+
+#### Content Automation agentic skills: Background removal {#agentic-content-automation-bg-removal}
+
+Get access to content automation skills interactively, using natural language prompts in [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview), powered by [Adobe Firefly Services APIs](https://developer.adobe.com/firefly-services/docs/guides/). This gives users additional ways to adapt and create content based on approved assets in AEM and increases users' efficiency and productivity. 
+
+The first content operation available as an agentic skill is background removal (in other words, cutout). Customers interested in accessing the beta would have to have CX Coworker enabled and have access to the Firefly Services [Photoshop API](https://developer.adobe.com/firefly-services/docs/photoshop/), for example, via Assets [Content Automation](/help/assets/cc-api-integration.md) add-on. 
+
+To participate or learn more, send an email to `aem-agent-content-optimization-feedback@adobe.com`.
 
 #### Content Advisor browser extension {#content-advisor-browser-extension}
 
@@ -201,6 +245,10 @@ For more information, see [Use AEM Content Advisor with the browser extension](/
 
 
 To send feedback, participate or learn more, send an email to `aem-content-advisor-feedback@adobe.com`.
+
+#### Website exclusion controls in Content Advisor browser extension {#website-exclusion-controls}
+
+The AEM Content Advisor browser extension now lets users [disable the floating Content Advisor widget on specific websites](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-advisor/content-advisor-browser-extension#content-advisor-browser-extension-exclusion-rules) where asset recommendations are not needed. This provides greater control over the extension's visibility, helping users tailor their browsing experience to their workflows while retaining Content Advisor functionality across other supported websites.
 
 #### Dynamic Media with OpenAPI capabilities: Video Interactivity {#video-interactivity}
 
@@ -249,13 +297,6 @@ Customers can leverage existing stable extension points by following Adobe's dev
 Additionally, Adobe has developed a **GenAI-powered extension generation tool** currently available in an internal early adoption phase. This tool can significantly accelerate extension development time. Customers participating in this beta program will receive access to the tool and are encouraged to share feedback to help shape its evolution.
 To participate or learn more, send an email to `ASSETSVIEWUIEXTENSIBILITY@adobe.com`.
 
-#### Brand Aware Metadata (BAM) {#brand-aware-metadata-beta}
-
-AEM Assets now supports Brand Aware Metadata, an AI-powered capability that automatically generates custom metadata for assets when uploaded or re-processed. This reduces the need for manual entry by orders of magnitude, helping teams find assets and deliver new experiences much faster. Customers maintain a library of prompts that define how AI should populate any given metadata field, tailored to their own brand vocabulary and taxonomy. This prompt library includes a playground to preview results and a prompt optimizer that automatically drafts suggested improvements.
-
-Adobe is actively expanding BAM's capabilities through direct co-innovation with customers. Where a specific use case is not yet supported, Adobe works with participating customers to understand their needs and may deliver expanded capabilities as the beta progresses. Customers in this program gain early access to new features as they ship and are encouraged to share feedback that directly shapes the roadmap.
-
-To participate or learn more, send an email to `AEM-ASSETS-BRANDAWAREMETADATA@adobe.com`.
 
 <!--
 
@@ -291,13 +332,10 @@ To participate or learn more, send an email to `AEM-Assets-Sourcing-Portal@adobe
 
 Adobe Express integration with Assets helps all users create and edit on-brand content and increase content reuse. We have worked on supporting a growing list of asset / file types to be supported by the integration, and some of them are available early to customers  interested in using them:
 
-**Asset view UI - "Open in Express"** to import an asset into a new Express document in the embedded Express editor:
-
-* **.mp4** video assets
-
 **Assets plugin in Adobe Express** to import an asset into the current Express document:
 
-* **.ai** Adobe Illustrator assets
+* **video assets** increased file size support to up to 4.5 GB (new in 2026.11 beta)
+* **.m4a** audio assets (new in 2026.11 beta)
 * **.indd** Adobe InDesign assets
 * **.mov** video assets
 * **.mp3** audio assets
@@ -309,174 +347,72 @@ To participate or learn more, send an email to `aem-assets-express@adobe.com`.
 
 ### New features in AEM Forms {#forms-new-features}
 
-#### Adaptive Form authoring in CX Coworker {#adaptive-form-authoring-improvements}
+#### Interactive Communications authoring in CX Coworker {#ic-authoring-coworker}
 
-Authors can reuse existing designs, connect services, and refine form logic through chat in Adobe CX Enterprise Coworker. These capabilities bring Adaptive Form authoring actions into Coworker:
+Create and refine customer communications such as account statements, renewal notices, and service records through **natural-language requests** in Adobe CX Enterprise Coworker. Communication authors and template authors can describe the changes they need instead of configuring each document component manually.
 
-* **Import PDF or XDP into an Adaptive Form:** Ask Coworker to import Portable Document Format (PDF) or XML Data Package (XDP) documents from AEM Assets to use existing designs as a starting point for an Adaptive Form.
-* **Call services from form rules:** Create rules in CX Coworker using natural language to invoke external services, receive data, and take action based on the response. For example, a form can call an external service to generate and send a one-time password (OTP), then call a service to validate the OTP entered by the user.
-* **Create and edit REST API integrations:** Create rules in CX Coworker using natural language to connect to a Representational State Transfer (REST) application programming interface (API) and take action based on the response. For example, when a user enters a product code, a form can call a product catalog API to retrieve the product name and price, then populate the corresponding form fields.
-* **Edit existing rules:** Describe changes in natural language to Coworker to refine existing form rules as requirements change.
-* **Code mode for rule authoring:** Author form rules in code mode when you need to work directly with rule code.
-* **Authoring latency optimizations:** Latency optimizations support a more responsive form authoring experience.
+* **Create communications:** Start from a brief, an enabled template, an image, or a PDF.
+* **Edit document content:** Add sections and tables, rename or remove fields, and update layout and appearance in the open communication.
+* **Connect existing data:** Bind supported nonrepeating fields to an attached data model.
 
-Example prompts in CX Coworker (replace the example asset path and field names with your own):
+For details, see [Interactive Communications agentic capabilities](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/interactive-communication-use-cases.md).
 
-| Capability | Example prompt |
-| --- | --- |
-| Import a PDF | "Convert the PDF at `/content/dam/formsanddocuments/application.pdf` into a Core Components Adaptive Form named Application." |
-| Call a service from a rule | "When Product Code changes, use the configured product REST API integration to look up that code and populate Product Name and Unit Price from the response." |
-| Create a REST API integration | "Create an integration using this cURL command and sample JSON response." |
-| Edit an existing rule | "Change the rule on Company so it is shown when Employee Type is Contractor or Partner." |
+![Interactive Communication Editor showing a service introduction added to a communication through a natural-language request in the Coworker chat panel](../../ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/assets/coworker-ic-content-editing.png)
 
-#### CAPTCHA v3 support {#captcha-v3-support}
+#### Exclude file attachments from the Submission PDF {#exclude-attachments-submission-pdf}
 
-Use Completely Automated Public Turing test to tell Computers and Humans Apart (CAPTCHA) v3 support to help protect forms from automated submissions.
+Authors can exclude uploaded file attachments from the Submission PDF (Document of Record) for Adaptive Forms based on Core Components. This option can reduce the size of the Submission PDF when files are delivered separately through the configured submit action. For details, see [Exclude file attachments from the Submission PDF](/help/forms/generate-document-of-record-core-components.md#exclude-file-attachments).
 
-#### Forms Manager improvements {#forms-manager-improvements}
+#### XDP templates and fragments in the Interactive Communication Editor {#xdp-templates-fragments-ic-editor}
 
-Manage mixed form collections and move reusable forms between environments with improvements to folder deletion, downloads, and theme management:
+Authors can now create XML Data Package (XDP) templates and fragments in Forms Manager and edit them directly in the Interactive Communication (IC) Editor, without first authoring them in Designer. Teams can build shared layouts and reusable content in one place:
 
-* **Delete folders containing different form types:** Delete folders containing both Core Components based Adaptive Forms and Edge Delivery Services forms while preserving shared Edge Delivery Services configurations, so other forms that use those configurations continue to work.
-* **Download forms with their fragments:** Download an Edge Delivery Services form together with its referenced fragments in the same package, reducing the need to collect dependencies separately when transferring forms.
-* **Keep theme references current:** Frontend theme redeployment automatically updates the form's saved theme reference, so Forms Manager continues to show the correct theme rather than reverting to Canvas in the theme picker.
+* **Create reusable base layouts:** Create XDP templates with headers, footers, master pages, and bound fields that multiple Interactive Communications can share.
+* **Reuse common content:** Create XDP fragments for content such as signature blocks or standard disclosures, and reference them across templates instead of recreating the content.
+* **Bind data during creation:** Optionally bind a template or fragment to a Form Data Model or an XML Schema Definition (XSD) file, or add the data connection later in the editor.
+* **Preview PDF output:** Preview generated PDF output with no data, local XML data, or Form Data Model sample data.
 
-#### Table component for Core Components based Adaptive Forms {#table-core-components}
+For details, see [Create an XDP template](/help/forms/interactive-communication/create-xdp-template.md) and [Create an XDP fragment](/help/forms/interactive-communication/create-xdp-fragment.md).
 
-The [Table component](/help/forms/adaptive-forms-tables-core-components.md) is now generally available for Adaptive Forms based on Core Components. Authors can configure rows and columns, merge and split cells, enable column sorting, and let users add or remove rows at runtime. Tables also support calculations and rendering in the Submission PDF (Document of Record).
-
-#### Visual Rule Editor enhancements {#visual-rule-editor-enhancements}
-
-The following capabilities are now generally available in the Visual Rule Editor for Core Components based Adaptive Forms:
-
-* **Navigate To with event payload support:** Use `EVENT_PAYLOAD` in the Invoke Service handlers to configure navigation based on event responses. See [Use Event Payload in Navigate To Action](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
-* **Functions and mathematical expressions in input parameters:** Pass dynamically computed values directly as input parameters. See [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
-* **Retrieve values from a JSON array:** Use a custom function to extract values from an API response and bind them to form fields. See [Retrieve Property Values from a JSON array](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array).
-
-Direct API integration without a Form Data Model remains available through the Early Adopter program. See [Integrating API in Rule Editor](/help/forms/api-integration-in-rule-editor.md).
-
-#### Accessibility improvements for Adaptive Forms Core Components {#adaptive-forms-accessibility}
-
-Checkbox groups, radio button groups, and panels now use `<fieldset>` and `<legend>` elements to associate group labels with their controls. These generally available improvements help screen readers interpret grouped form controls. See [Creating accessible Adaptive Forms](/help/forms/creating-accessible-adaptive-forms.md).
-
-#### Locale support in Interactive Communication Editor {#ic-locale-support}
-
-[Locale configuration](/help/forms/interactive-communication/support-localization.md) is now generally available in Interactive Communication Editor. Authors can select a locale to apply language and regional formatting conventions for dates, numbers, currencies, and other locale-sensitive content.
-
-#### Forms Service APIs {#forms-service-apis}
-
-Forms Service APIs are now generally available for rendering interactive PDF forms from XDP templates, importing and exporting form data, and validating submitted data. See the [AEM Forms API reference](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/).
-
-#### Document Conversion APIs {#document-conversion-apis}
-
-The following [Document Conversion APIs](/help/forms/aem-forms-communication-api-overview.md#document-conversion-apis) are now generally available:
-
-* **HTML to PDF:** Convert HTML documents to PDF while preserving layout and styling.
-* **PostScript to PDF:** Convert PostScript documents to PDF.
-* **PDF to Image:** Convert PDF documents into one or more image files.
-* **PDF to PostScript:** Convert PDF documents to PostScript format.
-* **Flatten Transparency:** Flatten transparent objects in PDF documents for printing and downstream processing.
-
-#### Direct upload of generated PDFs to Azure Blob Storage {#direct-pdf-upload-azure-blob-storage}
-
-Direct upload of generated PDFs to Azure Blob Storage through the Document Generation API is now generally available. Applications can upload PDFs as part of document generation without a separate file-transfer step. See [Document Generation](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-generation).
+<!--
 
 ### Early Adopter Features in AEM Forms
 
 The following capabilities are available through the AEM Forms Early Adopter program. To request access, email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address and include your organization ID, program details, and the capabilities you want to use.
 
-#### Interactive Communication Editor enhancements {#ic-editor-enhancements}
-
-Authors can create reusable document designs, add digital signature fields, and configure accessibility properties in the Interactive Communication (IC) Editor:
-
-* **Add a Sign component:** Place a digital signature field in a document and configure which fields are locked after signing, including fields in a named collection. Recipients can sign the generated PDF in Adobe Acrobat, helping teams protect completed document content.
-* **Configure accessibility while authoring:** Set accessibility roles, screen reader text and precedence, and navigation order, then generate tagged PDF output. These controls help authors prepare communications for readers who use assistive technologies.
-* **Create XDP templates:** Create and update existing XDP templates  directly in the Interactive Communication editor, configure data bindings, and reuse fragments across document designs. Preview generated PDF output while refining the design.
-
 #### Theme Editor for Core Components based Adaptive Forms {#theme-editor-core-components}
 
-Style Core Components based Adaptive Forms visually in the Theme Editor and preview changes as you work. Customize colors, typography, borders, and spacing, then reuse themes across forms to maintain a consistent appearance.
+Style Core Components based Adaptive Forms visually in the Theme Editor and preview changes as you work. Customize colors, typography, borders, and spacing, then reuse themes across forms to maintain a consistent appearance. For details, see [Customizing Adaptive Form themes using the Theme Editor](/help/forms/customizing-themes-using-theme-editor.md).
 
-#### Dynamic Media images in Adaptive Forms {#dynamic-media-images-adaptive-forms}
+![Theme Editor showing the background color selector with RGB sliders, color swatches, and the styled Adaptive Form preview](../../forms/assets/custom-theme-form-level-styling.png)
 
-Authors can select Dynamic Media assets for the Image component in an Adaptive Form. The component resolves the selected asset reference to its Dynamic Media delivery URL, enabling teams to reuse centrally managed images in forms rather than uploading separate copies.
-
-#### Custom submit actions in Universal Editor {#custom-submit-actions-universal-editor}
-
-Authors can select and configure custom submit actions for Edge Delivery Services Adaptive Forms in the Universal Editor's Form Properties interface. Supported action-specific configuration fields appear when the action is selected, enabling teams to connect forms to custom submission processes without switching authoring experiences.
+-->
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation New Features {#foundation-new}
 
-#### Vulnerability assessment with AEM Governance Agent {#vulnerability}
+#### Java 25 {#java25-sdk}
 
-The AEM Governance Agent can list known vulnerabilities across one or more AEM instances, including their severity and affected components. You can filter findings by CVE, severity, environment, or component to prioritize remediation. See [AEM Governance Agent use cases](/help/ai-in-aem/agentic-capabilities/brand-governance/use-cases.md).
+AEM Cloud Service now supports Java 25, both for build and runtime so you can take advantage of performance improvements and modern Java features. Use the AEM Cloud Service SDK to validate your code for Java 25. Your AEM license entitles you to download Oracle Java 25 from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=java*+25*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=8).
 
-#### Java 25 for Local Development {#java25-sdk}
+Starting in January, lower environments will be upgraded to the Java 25 runtime so you can validate that your applications work as expected. Staging and production environments will be upgraded in May 2027. Adobe recommends validating proactively and as early as possible by configuring the opt-in Cloud Manager [environment variable](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#java-25-runtime-opt-in). Report any issues early, while you can still temporarily revert to the Java 21 runtime.
 
-The AEM Cloud Service SDK now supports building and running projects with Java 25 for local development and validation. Your AEM license entitles you to download Oracle Java 25 from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=java*+25*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=8).
+The Java 25 **runtime** will be applied to all environments by May 2027, but **building** with Java 25 remains optional. Learn more about [Java 25 support](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#java-25-support).
 
-This is the first step toward Java 25 support in AEM as a Cloud Service. In the November release, Cloud Manager environments will let you opt in to Java 25 for the runtime, the project build, or both, so you can take advantage of performance improvements and modern Java features. Use the SDK now to validate your code and prepare for that release.
+#### CDN-level OpenID Connect (OIDC) Authentication for Edge Delivery Services {#cdn-level-authentication}
+
+Generally Available in **early December** for Edge Delivery Services using the Adobe-managed CDN, CDN-level OIDC authentication lets you require sign-in with your identity provider (IdP) before selected pages are served. Authentication is enforced at the CDN, so unauthenticated requests are redirected to the IdP and never reach your content. Restricting access by user group is not supported.
+
+Learn more in the [CDN OIDC authentication documentation](https://www.aem.live/developer/byo-cdn-adobe-managed-cdn-config#cdn-oidc-authentication) and the thorough step-by-step [tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/edge-delivery-services/authentication/cdn-oidc-authentication).
+
+AEM as a Cloud Service implementations that serve content from the Publish tier should use the separate [OIDC on Publish Tier](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier) feature, which supports user groups. 
 
 #### OpenTelemetry for Application Performance Monitoring (APM) (Limited Availability) {#otel}
 
 Now in Limited Availability (see note below for access), AEM as a Cloud Service supports [OpenTelemetry](/help/implementing/developing/introduction/opentelemetry-apm-integration.md). OTel is an open, industry-standard way to get traces, metrics, and logs together, sent to the APM provider of your choice. Also see advanced [custom instrumentation](/help/implementing/developing/introduction/opentelemetry-custom-instrumentation.md) documentation and [tutorials](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/observability-via-opentelemetry/opentelemetry-in-aem).
 
 To get on the list for access, email [aemcs-otel-access@adobe.com](mailto:aemcs-otel-access@adobe.com), describing where you intend to ingest the data.
-
-#### Server-to-Server OAuth Credentials in AEM Developer Console (JWT Credentials are deprecated) {#devconsole-oauth}
-
-Service Account (JWT) credentials in the AEM Developer Console are deprecated in favor of OAuth Server-to-Server credentials. 
-
-You can create OAuth Server-to-Server technical accounts in the AEM Developer Console. Your server-side application exchanges its client ID and client secret for an access token, so there is no JWT to sign and no private key or certificate to renew each year. Although they are deprecated, the JWT-style credentials will be supported for the foreseeable future. For details, see [Generating Access Tokens for Server-Side APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md).
-
-#### Dispatcher Insights and Workflow Inspection Agentic Capabilities in CX Enterprise Coworker {#capabilities-cx}
-
-Two new developer-related agentic capabilities are now generally available in [Coworker Chat](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/overview). Developers and administrators can use them to investigate workflow activity and dispatcher behavior in AEM as a Cloud Service in plain language, without opening the user interface or searching log files by hand.
-
-[**AEM Workflow Inspection**](/help/ai-in-aem/agentic-capabilities/brand-experience/development/use-cases.md#aem-workflow-inspection) lets you check on workflow activity directly from Coworker. Ask which workflows are running or suspended, get a status summary, see what's waiting in your workflow inbox, or find out why a workflow failed. You can look up a specific workflow, browse available workflow models, and ask follow-up questions as you troubleshoot.
-
-Example prompts:
-
-- *What workflows are running?*
-- *Are any running or suspended workflows showing recorded errors?*
-- *What's in my workflow inbox?*
-
-[**AEM Dispatcher Insights**](/help/ai-in-aem/agentic-capabilities/brand-experience/development/use-cases.md#aem-dispatcher-insights) helps you understand how your Dispatcher and Apache web tier handle requests. Coworker can analyze cache performance, investigate traffic and delivery issues, and review your security configuration. It covers three areas:
-
-- **Caching and performance:** includes Dispatcher cache hit ratio insights, query-parameter caching, cache headers and expiration, stale content and invalidation, and slow responses.
-- **Traffic and request handling:** includes traffic patterns and bots, 4xx and 5xx errors, filter and endpoint routing, multi-site and hostname routing, redirects and vanity URLs, and header forwarding.
-- **Security:** includes sensitive-path exposure, security headers, permission-sensitive caching, and an overall review of your Dispatcher configuration.
-
-Example prompts:
-
-- *Summarize Dispatcher cache performance for production today and compare it with yesterday.*
-- *Why is this page still showing old content after publication?*
-- *Investigate the intermittent 502 and 503 responses in production between 10:00 and 11:00 UTC today.*
-
-#### New Capabilities in Cloud Migration Agent Skill {#cloud-migration-skill}
-
-The [AI-Assisted Code Migration](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md) skill migrates AEM 6.5 (or earlier) Java-stack projects to AEM as a Cloud Service in the IDE.
-
-The skill now includes these patterns:
-
-* InputStream usage: `java.io.InputStream` findings are triaged by risk. Unclosed streams are fixed automatically, while memory, filesystem, and binary-streaming issues are proposed for your review.
-* Oak index conversion (beta): legacy `_oak_index` definitions convert to Cloud Service-compatible Oak index definitions using Adobe's Index Converter, are renamed to the Cloud Service versioned index naming (`<name>-custom-<n>`), and are checked for datatype compatibility.
-
-The skill also adds migration validation (beta), which builds and deploys migrated code to a local AEM as a Cloud Service SDK and checks the migration contract and bundle and component state. It never edits your source code.
-
-Existing supported patterns include Legacy UI (Classic UI, ExtJS, and Coral 2 dialogs to Coral 3), template modernization, Guava cache to Caffeine, Dispatcher configuration conversion, unsupported run mode (URC) detection, Vault package dependency detection, Sling Scheduler, ResourceChangeListener, Replication API, OSGi EventListener and EventHandler, Assets API, HTL lint fixes, and OSGi configuration conversion.
-
-For more information, see [AI-Assisted Code Migration to AEM as a Cloud Service](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md).
-
-#### AEM MCP Server support for Cloud Migration Capabilities {#aem-mcp-cloud-migration}
-
-[The AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) allows you to configure a single URL in your chat application or coding agent to access a growing set of capabilities. It is also used by the [AEM Claude Connector](/help/ai-in-aem/mcp-support/setup-claude.md#install-adobe-experience-manager-connector) and [AEM ChatGPT Plugin](/help/ai-in-aem/mcp-support/setup-chatgpt.md#install-adobe-experience-manager-plugin).
-
-The AEM MCP Server now supports the Cloud Migration capabilities, used by the Cloud Migration Agent skill described earlier, which migrates AEM 6.5 (or earlier) Java-stack projects to AEM as a Cloud Service in the IDE.
-
-With this addition, the AEM MCP Server has reached parity with the domain-specific MCP servers, which are now considered deprecated. Configure your MCP clients to use the unified AEM MCP Server going forward.
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
@@ -495,7 +431,7 @@ If you don't allowlist the CDN's IP addresses, no action is required.
 
 #### Mandatory migration from Adobe's built-in APM integration (New Relic) to OpenTelemetry {#otel-migration}
 
-OpenTelemetry (OTel) is replacing Adobe's built-in APM integration (New Relic), which will be disabled at the end of **November 2026**. If your organization is using the built-in New Relic APM integration, see the [FAQ](/help/implementing/developing/introduction/opentelemetry-apm-integration.md#faq) for more information.
+OpenTelemetry (OTel) is replacing Adobe's built-in APM integration (New Relic), which will be disabled at the end of **November 2026**. If your organization is using the built-in New Relic APM integration, see the [FAQ](/help/implementing/developing/introduction/opentelemetry-apm-integration.md#faq) or [tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/observability-via-opentelemetry/opentelemetry-in-aem) for more information.
 
 #### Deprecation of Domain-specific AEM MCP Server {#domain-mcp-deprecation}
 
@@ -565,12 +501,6 @@ mTLS for Log Forwarding is in beta. To join the Beta Program, email [aemcs-logfo
 Customers licensing Extended Security can configure traffic filter rules with CAPTCHA challenges – at the origin – to block unwanted bots. In addition, you can log or block requests at the origin that match specific types of bots using a new set of WAF Flags.
 
 To participate in the beta, email [aemcs-waf-adopter@adobe.com](mailto:aemcs-waf-adopter@adobe.com).
-
-#### Edge Authentication for Edge Delivery Services (Beta Program) {#edge-authentication}
-
-Edge Authentication lets you restrict access to Edge Delivery Services pages to only those who have authenticated with your identity provider (IdP). This is achieved by deploying an OpenID Connect (OIDC) configuration YAML file.
-
-If interested, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case and any questions you may have.
 
 #### CX Enterprise Coworker: Developer-Focused Capabilities (Beta Program) {#coworker-ai-troubleshooting-beta}
 

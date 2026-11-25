@@ -42,6 +42,7 @@ You can:
 * [Use locale-specific custom XDP templates for Submission PDF](#locale-specific-custom-xdp-templates-for-document-of-record)
 * [Generate an Acroform-based (Acrobat Form PDF) Submission PDF](#generate-an-Acroform-based-document-of-record)
 * [Auto generate a Submission PDF](#auto-generate-a-document-of-record)
+* [Exclude file attachments from the Submission PDF](#exclude-file-attachments)
 * [Configure Submission PDF for forms embedded in AEM Sites pages](#configure-document-of-record-for-forms-embedded-in-aem-sites)
 
 ## Before you start {#components-to-automatically-generate-a-document-of-record}
@@ -126,6 +127,21 @@ Perform the following steps to configure an Adaptive Form to automatically gener
 1. In the Document of Record Template Configuration section of the Form Model tab, select **Generate Document of Record**.
 1. Click **[!UICONTROL Done]**
 
+## Exclude file attachments from the Submission PDF {#exclude-file-attachments}
+
+You can exclude files uploaded to an Adaptive Form from its Submission PDF. This option applies to Adaptive Forms based on Core Components and can help reduce the size of the PDF. When attachments are excluded, their size and number do not affect PDF generation time.
+
+1. Open the Adaptive Form for editing.
+1. Select the **[!UICONTROL Adaptive Form Container]** and select its configure icon to open the container properties.
+1. Open the **[!UICONTROL Document of Record]** tab.
+1. Select **[!UICONTROL Generate Document of Record]** or **[!UICONTROL Associate form template as the Document of Record template]**.
+1. Select **[!UICONTROL Exclude file attachments from Document of Record]**.
+1. Select **[!UICONTROL Done]** and save the form.
+
+![Document of Record settings with Generate Document of Record selected and Exclude file attachments from Document of Record enabled.](assets/exclude-file-attachments-from-submission-pdf.png)
+
+This setting excludes uploaded files from the Submission PDF. Delivery of the submitted files separately depends on the configured submit action.
+
 ## Bind Adaptive Form components with template fields {#bind-adaptive-form-components-with-template-fields}
 
  Bind Adaptive Form fields with template fields to display captured form data in corresponding Submission PDF field. To bind Adaptive Form components with corresponding Submission PDF template fields:
@@ -173,7 +189,7 @@ You can configure and generate a Submission PDF (Document of Record) for Adaptiv
     * **Generate Document of Record** — Automatically generate a Submission PDF.
     * **Associate form template as the Document of Record template** — Use a custom XDP or AcroForm template. Browse and select the template from your AEM Forms instance.
 
-1. (Optional) Select **Exclude file attachments from Document of Record** to omit uploaded attachments from the Submission PDF.
+1. (Optional) Select **Exclude file attachments from Document of Record** to omit uploaded attachments from the Submission PDF. For details, see [Exclude file attachments from the Submission PDF](#exclude-file-attachments).
 1. Click **[!UICONTROL Done]**.
 
 ### Customize Document of Record properties
@@ -322,7 +338,7 @@ The following table describes Adaptive Form components and corresponding XFA com
    <td>File Attachment</td>
    <td> </td>
    <td>false</td>
-   <td>Not available in Submission PDF template. Only available in Submission PDF through attachments.</td>
+   <td>Not available in the Submission PDF template. Uploaded files are included as PDF attachments unless the form is configured to exclude them.</td>
   </tr>
  </tbody>
 </table>
@@ -431,10 +447,10 @@ To localize the branding information that you enter in the Document of Record ta
 
     1. **Form Field Properties**: 
 
-       * **For Check Box and Radio Button components, show only the selected values**: Setting the property displays only selected values of check box and radio button in [!UICONTROL Document of Record].
-       * **Separator for multiple value(s)**: You can choose any separator such as comma or line break to display multiple values.
-       * **Options Alignment**: You can select the desired alignment (Horizontal, Vertical, Same as adaptive Form) to set the alignment for the fields such as check box or radio button to be displayed on [!UICONTROL Document of Record]. By default, the vertical alignment is set for the fields in [!UICONTROL Document of Record]. Setting the properties from the [!UICONTROL Form Field Properties] of DoR overwrites the properties set in the [!UICONTROL Item Alignment] for the fields on an Adaptive Form. In case, you select [!UICONTROL Same as Aaptive form] option, the alignment as configured in an Adaptive Form author instance is used for [!UICONTROL Document of Record] fields.  
-       * **Number of options for horizontal alignment**:You can set the number of options to be displayed on the Submission PDF for the horizontal alignment. 
+        * **For Check Box and Radio Button components, show only the selected values**: Setting the property displays only selected values of check box and radio button in [!UICONTROL Document of Record].
+        * **Separator for multiple value(s)**: You can choose any separator such as comma or line break to display multiple values.
+        * **Options Alignment**: You can select the desired alignment (Horizontal, Vertical, Same as adaptive Form) to set the alignment for the fields such as check box or radio button to be displayed on [!UICONTROL Document of Record]. By default, the vertical alignment is set for the fields in [!UICONTROL Document of Record]. Setting the properties from the [!UICONTROL Form Field Properties] of DoR overwrites the properties set in the [!UICONTROL Item Alignment] for the fields on an Adaptive Form. In case, you select [!UICONTROL Same as Aaptive form] option, the alignment as configured in an Adaptive Form author instance is used for [!UICONTROL Document of Record] fields.  
+        * **Number of options for horizontal alignment**:You can set the number of options to be displayed on the Submission PDF for the horizontal alignment. 
 
        **Display labels for multi-select dropdown**
 
@@ -444,12 +460,12 @@ To localize the branding information that you enter in the Document of Record ta
 
     1. **Master Page Properties**:
 
-       * **Logo Image**: You can either choose to use the logo image from the Adaptive Form, choose one from DAM, or upload one from your computer.
-       * **Form Title**: Title of the DoR.
-       * **Header Text**: Text that appears at the header section of the Submission PDF.
-       * **Disclaimer Label**: Label of disclaimer.
-       * **Disclaimer**: Text which specifies the scope of rights and obligations on the Submission PDF.
-       * **Disclaimer Text**: Text of disclaimer.
+        * **Logo Image**: You can either choose to use the logo image from the Adaptive Form, choose one from DAM, or upload one from your computer.
+        * **Form Title**: Title of the DoR.
+        * **Header Text**: Text that appears at the header section of the Submission PDF.
+        * **Disclaimer Label**: Label of disclaimer.
+        * **Disclaimer**: Text which specifies the scope of rights and obligations on the Submission PDF.
+        * **Disclaimer Text**: Text of disclaimer.
 
 1. To save the branding changes, select **[!UICONTROL Done]**.
 
@@ -509,4 +525,3 @@ Setting of the Document of Record component are available under its properties. 
 **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.
 
 -->
-

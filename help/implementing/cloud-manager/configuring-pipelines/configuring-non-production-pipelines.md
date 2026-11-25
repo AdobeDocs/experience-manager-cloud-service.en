@@ -167,7 +167,12 @@ The steps to complete the creation of your non-production, targeted deployment p
       >See [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md) so you can learn how to add and manage repositories in Cloud Manager.
 
    * **Git Branch** - This option defines the branch from which the selected pipeline retrieves the code. Enter the first few characters of the branch name and use the auto-complete feature of this field. It finds the matching branches that you can select.
-   * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline retrieves the code.
+   * **Code Location** - Defines the path in the branch of the selected repository from which the pipeline retrieves the code. The default is `/`, which is the root folder of the repository.
+     * For **Web Tier Config** pipelines, set **Code Location** to the folder that contains the `conf.d`, `conf.dispatcher.d`, and `opt-in` directories. For projects generated from the AEM Project Archetype with an unmodified structure, this folder is `/dispatcher/src`.
+
+     >[!IMPORTANT]
+     >
+     >If **Code Location** is `/` and your Dispatcher configuration is in a subfolder, a Web Tier Config pipeline fails. For example, the build can fail with the error `Opt-in file //opt-in/USE_SOURCES_DIRECTLY is not present`. To resolve the error, change **Code Location** to the folder that contains your Dispatcher configuration, such as `/dispatcher/src`. For more information, see [Web Tier pipeline failing with "Opt-in file //opt-in/USE_SOURCES_DIRECTLY is not present" Error](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-20890).
 
 <!--
    * **Pipeline** - For front-end non-production pipelines, you have the option to enable **[Experience Audit](/help/implementing/cloud-manager/reports/report-experience-audit.md)**.
@@ -366,7 +371,7 @@ To disable publishing Dispatcher packages, add the following configuration to yo
   <activation>
     <property>
       <name>env.IGNORE_DISPATCHER_PACKAGES</name>
-      <value>[!NOTE]rue</value>
+      <value>true</value>
     </property>
   </activation>
   <modules>

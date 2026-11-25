@@ -420,7 +420,7 @@ query {
 }
 ```
 
-### Sample Query - Full Details of a Company's CEO and Employees {#sample-full-details-company-ceos-employees}
+### Sample Query - Full Details of a Company's CEO and Employees (Fragment Reference) {#sample-full-details-company-ceos-employees-fragment-reference}
 
 Using the structure of the referenced fragments, this query returns the full details of a company's CEO and all its employees.
 
@@ -525,6 +525,130 @@ query {
           "name": "NextStep Inc.",
           "ceo": {
             "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
+            "name": "Jobs",
+            "firstName": "Steve",
+            "awards": []
+          },
+          "employees": [
+            {
+              "name": "Smith",
+              "firstName": "Joe",
+              "awards": []
+            },
+            {
+              "name": "Lincoln",
+              "firstName": "Abraham",
+              "awards": []
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+### Sample Query - Full Details of a Company's CEO and Employees (Composite){#sample-full-details-company-ceos-employees-composite}
+
+Using the structure of Composite data, this query returns the full details of a company's CEO and all its employees.
+
+**Sample Query**
+
+```graphql
+query {
+  companyList {
+    items {
+      name
+      ceo {
+        name
+        firstName
+        awards {
+        id
+          title
+        }
+      }
+      employees {
+       name
+        firstName
+       awards {
+         id
+          title
+        }
+      }
+    }
+  }
+}
+```
+
+**Sample Results**
+
+```json
+{
+  "data": {
+    "companyList": {
+      "items": [
+        {
+          "name": "Apple Inc.",
+          "ceo": {
+            "name": "Jobs",
+            "firstName": "Steve",
+            "awards": []
+          },
+          "employees": [
+            {
+              "name": "Marsh",
+              "firstName": "Duke",
+              "awards": []
+            },
+            {
+              "name": "Caulfield",
+              "firstName": "Max",
+              "awards": [
+                {
+                  "id": "GB",
+                  "title": "Gameblitz"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Little Pony, Inc.",
+          "ceo": {
+            "name": "Smith",
+            "firstName": "Adam",
+            "awards": []
+          },
+          "employees": [
+            {
+              "name": "Croft",
+              "firstName": "Lara",
+              "awards": [
+                {
+                  "id": "GS",
+                  "title": "Gamestar"
+                }
+              ]
+            },
+            {
+              "name": "Slade",
+              "firstName": "Cutter",
+              "awards": [
+                {
+                  "id": "GB",
+                  "title": "Gameblitz"
+                },
+                {
+                  "id": "GS",
+                  "title": "Gamestar"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NextStep Inc.",
+          "ceo": {
             "name": "Jobs",
             "firstName": "Steve",
             "awards": []
