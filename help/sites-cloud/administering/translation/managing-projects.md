@@ -344,8 +344,6 @@ To configure recurring translation:
 
 Repeat Translation controls recurring job creation and execution. It is different from [Update Translation Memory](#updating-translation-memory), which sends edits to translated text back to the translation provider without creating translation jobs. For the separate setting that controls update-only submissions, see **Disable Update-Only Translation** in [Sites Configuration Properties](integration-framework.md#sites-configuration-properties).
 
-<!-- CQDOC-23613 review draft: Engineering must confirm supported repeat frequencies, when the first and subsequent runs occur, which source content each run selects, handling of unchanged content and unfinished jobs, and the effect of changing the frequency to None on scheduled and active jobs. Confirm the interaction with Disable Update-Only Translation before documenting scheduled content-selection behavior. -->
-
 ### Monitoring the Status of a Translation Job {#monitoring-the-status-of-a-translation-job}
 
 The translation job tile of a translation project provides the status of a translation job, and the number of pages and assets in the job.
