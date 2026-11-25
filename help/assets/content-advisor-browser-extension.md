@@ -109,7 +109,6 @@ To configure the extension, select the **Settings** icon in the AEM Content Advi
 
 <!--
 | **Asset reference** | Specifies how an asset is referenced when it is used in supported applications. Select **Local (DAM path)** to use the asset's AEM Assets path, or **Remote (delivery)** to use the asset's delivery URL. |
-
 -->
 
 ### Disable AEM Content Advisor on specific websites {#content-advisor-browser-extension-exclusion-rules}

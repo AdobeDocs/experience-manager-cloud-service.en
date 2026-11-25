@@ -60,7 +60,6 @@ Assets as a Cloud Service Ultimate includes the following key capabilities:
 
 The operations that you can perform within Assets as a Cloud Service depends on your user type. See [Available user types](#available-user-types) for more information.
 
-
 ## What are available user types and privileges? {#available-user-types}
 
 Assets as a Cloud Service offers four user types. Each user type provides a different set of privileges. The user types include:
