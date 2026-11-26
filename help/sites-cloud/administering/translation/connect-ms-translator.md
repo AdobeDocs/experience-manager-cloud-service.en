@@ -57,3 +57,16 @@ The following procedure creates a Microsoft Translator configuration.
 ## Publishing the Translator Service Configurations {#publishing-the-translator-service-configurations}
 
 As a final step, please publish your Microsoft Translator configurations to support published translated content, using the [publishing a tree](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-and-unpublishing-a-tree) action.  
+
+## Microsoft Translator API field mapping {#microsoft-translator-api-field-mapping}
+
+The [Microsoft Translator v3 API](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/reference/v3/translate) provides the translation endpoint `https://api.cognitive.microsofttranslator.com/translate?api-version=3.0`. The following table relates the AEM configuration fields to Microsoft Translator API concepts.
+
+| AEM field | AEM usage | Microsoft Translator API usage |
+|---|---|---|
+| Workspace ID | Identifies the customized Microsoft Translator engine to use. | Custom translation systems are selected through the `category` request parameter. Microsoft requires the Category ID from the Custom Translator project. |
+| Translation Label | The display name for the translation service. | No corresponding translation request parameter. |
+| Translation Attribution | Optional attribution displayed next to translated user-generated content. | No corresponding translation request parameter. |
+| Subscription Key | Authenticates access to your Microsoft Translator subscription. | Passed in the `Ocp-Apim-Subscription-Key` header when requesting an access token. The token is then passed in the `Authorization: Bearer <access-token>` header for translation requests. |
+
+For a global Microsoft Translator resource, the token endpoint is `https://api.cognitive.microsoft.com/sts/v1.0/issueToken`. Regional and multi-service resources use region-specific token endpoints. See [Microsoft Translator authentication](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/reference/authentication) for the requirements for each resource type.

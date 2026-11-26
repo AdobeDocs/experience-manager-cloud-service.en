@@ -54,26 +54,25 @@ The `barcode` parameter accepts the barcode value and an optional barcode type.
 
 Use the following syntax:
 
-\`\`\`text
+```text
 codevalue[,type]
-\`\`\`
+```
 
 * `codevalue` specifies the content to encode in the barcode.
 * `type` specifies the barcode type and is optional. If you omit it, the default type is `code128`.
 
 Separate the barcode value and type with a comma when specifying the type.
-
 For example:
 
-\`\`\`http
+```http
 barcode=DEMO123%2Ccode128
-\`\`\`
+```
 
 To use the default barcode type, specify only the barcode value:
 
-\`\`\`http
+```http
 barcode=DEMO123
-\`\`\`
+```
 
 The supported barcode types are:
 
@@ -110,9 +109,9 @@ Request parameter locking protects the query parameters specified in the locked-
 
 The lock token uses the following structure:
 
-\`\`\`text
+```text
 lock:<signature>[:<field-list>[:<keyId>]]
-\`\`\`
+```
 
 The `lock` prefix and signature are mandatory. The field list and `keyId` are optional.
 
@@ -124,13 +123,13 @@ To protect the barcode request, include `barcode` in the field list.
 
 Examples of barcode-locking tokens:
 
-\`\`\`text
+```text
 token=lock:<signature>:barcode
-\`\`\`
+```
 
-\`\`\`text
+```text
 token=lock:<signature>:barcode:<keyId>
-\`\`\`
+```
 
 When `barcode` is included in the locked-field list, the lock protects its complete value, including the barcode type when specified.
 

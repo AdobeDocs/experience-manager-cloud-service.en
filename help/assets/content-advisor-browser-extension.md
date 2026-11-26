@@ -33,6 +33,8 @@ Use the power of AEM Content Advisor for AEM Assets, in the application of your 
 
 * You must sign in with an Adobe ID that has access to the required AEM Assets repository.
 
+* You must be a Collaborator user, Power user, or Administrator to access Content Advisor through the browser extension. Limited users cannot access Content Advisor. See [Available user types and privileges](/help/assets/assets-ultimate-overview.md#available-user-types).
+
 * A valid Dynamic Media license to view Dynamic Media renditions.
 
 ## Install and use the extension {#content-advisor-browser-extension-install}
@@ -107,7 +109,6 @@ To configure the extension, select the **Settings** icon in the AEM Content Advi
 
 <!--
 | **Asset reference** | Specifies how an asset is referenced when it is used in supported applications. Select **Local (DAM path)** to use the asset's AEM Assets path, or **Remote (delivery)** to use the asset's delivery URL. |
-
 -->
 
 ### Disable AEM Content Advisor on specific websites {#content-advisor-browser-extension-exclusion-rules}

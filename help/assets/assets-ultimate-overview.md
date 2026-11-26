@@ -60,7 +60,6 @@ Assets as a Cloud Service Ultimate includes the following key capabilities:
 
 The operations that you can perform within Assets as a Cloud Service depends on your user type. See [Available user types](#available-user-types) for more information.
 
-
 ## What are available user types and privileges? {#available-user-types}
 
 Assets as a Cloud Service offers four user types. Each user type provides a different set of privileges. The user types include:
@@ -98,6 +97,7 @@ The following table summarizes the available AEM Assets user types, the privileg
 | Access brand approved assets on the Content Hub portal |&#10003; | &#10003;|   &#10003;  |&#10003;|
 | Create and edit assets using built-in Adobe Express and Firefly    | &minus; |  &#10003; | &#10003;   |&#10003;|
 | Integration of assets within your organization with Adobe and non-Adobe applications     |  &minus; |   &#10003; |     &#10003;   | &#10003;|
+| Access AEM Content Advisor | &minus; | &#10003; | &#10003; | &#10003;|
 | Access all AEM Assets capabilities, such as, managing assets, metadata and the overall governance and automation        | &minus; | &minus; |    &#10003;   |&#10003;|
 | Manage permissions on content in AEM Assets author environment        | &minus; | &minus; |    &minus;   |&#10003;|
 | **User needs to be in these product profiles (Admin Console)**|||||
