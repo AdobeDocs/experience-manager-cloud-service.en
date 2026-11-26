@@ -39,3 +39,4 @@ These **preview** release notes are provided as a convenience so you know what c
 * Show a neutral toast when content changes break MSM inheritance for a component.
 * “Open in Site Admin” for Adaptive Forms and Form Fragments now opens Forms & Documents on the parent folder instead of a 404 in the Sites console. 
 * Fixed the extensible modal’s resize throttle, which was being reset on every render and so never throttled.
+* Enabled editable grid lists in the properties renderer behind the `ftSites57398` feature flag, which is off by default.
