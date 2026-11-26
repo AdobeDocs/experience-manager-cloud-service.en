@@ -34,4 +34,8 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming Features {#upcoming-features}
 
-
+* Integrated the unique content fragment validator, which checks uniqueness through the UES `/validate` endpoint, and added an end-to-end test for it
+* Fixed the legacy asset renderer so remote assets that UES returns as plain delivery URLs no longer show as broken in the properties rail. This must be deployed before or together with the UES change.
+* Show a neutral toast when content changes break MSM inheritance for a component.
+* “Open in Site Admin” for Adaptive Forms and Form Fragments now opens Forms & Documents on the parent folder instead of a 404 in the Sites console. 
+* Fixed the extensible modal’s resize throttle, which was being reset on every render and so never throttled.
