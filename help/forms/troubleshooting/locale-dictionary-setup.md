@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot Custom Locale Dictionaries
-description: Learn how to troubleshoot custom locale dictionaries for Adaptive Forms based on Core Components, including missing translations and dictionary request errors.
+title: Troubleshoot AEM Forms custom locale dictionaries
+description: Learn how to troubleshoot custom locale dictionaries for multilingual forms in AEM Forms based on Core Components, with dictionary loading and message errors.
 feature: Adaptive Forms, Core Components
 role: Developer
 level: Intermediate
@@ -9,56 +9,64 @@ hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms."
 ---
 
-# Troubleshoot custom locale dictionaries {#troubleshoot-custom-locale-dictionaries}
+# Troubleshoot AEM Forms custom locale dictionaries {#troubleshoot-custom-locale-dictionaries}
 
-Use this article to diagnose custom locale dictionary problems in Adaptive Forms based on Core Components in Adobe Experience Manager Forms (AEM Forms) as a Cloud Service. For the complete setup procedure, see [Add a locale for Adaptive Forms based on Core Components](/help/forms/supporting-new-language-localization-core-components.md).
+Custom locale dictionaries supply translated runtime messages, such as required-field validation messages, for Adaptive Forms based on Core Components in Adobe Experience Manager Forms (AEM Forms) as a Cloud Service. To use a new locale, register it with the Guide Localization Service and load the project dictionary through a `LOCALE_CONFIG` callback.
+
+Use the checks below when the form remains in the default language or locale resources fail to load. For the complete setup procedure, see [Add a locale for Adaptive Forms based on Core Components](/help/forms/supporting-new-language-localization-core-components.md).
 
 ## Issue
 
-Getting labels, validation messages, and formats (dates, numbers, currency) to localize correctly for a new locale on a Core Components Adaptive Form requires two things done together: registering the locale with the Guide Localization Service, and deploying a matching locale client library. Doing only one half, or getting the fallback/ordering rules wrong, leaves the form silently falling back to the default language or throwing 404s for missing locale resources.
+After adding a new locale, the form still renders in its default language, validation messages remain untranslated, or the browser reports HTTP 404 for locale resources.
+
+Check the form model's returned `lang` and the project's dictionary request separately. A missing built-in dictionary does not by itself establish that the project dictionary failed to load.
 
 ## Cause
 
-Localizing a Core Components Adaptive Form's own labels, validation messages, and formats
-(dates, numbers, currency) for a new locale requires two separate pieces of configuration to be
-done together:
+Runtime messages for a new locale depend on both server-side locale registration and a matching client library and dictionary:
 
 1. The locale code must be registered in `Guide Localization Service.cfg.json`'s
-   `supportedLocales` array. Otherwise the server answers the form's request for its
-   `<locale>` JSON with another, supported language.
+   `supportedLocales` array. If the returned model's `lang` differs from the requested locale,
+   check this configuration before diagnosing the client-side dictionary loader.
 1. A matching locale client library (based on the `clientlib-it-custom-locale` sample in the
    `aem-core-forms-components` GitHub repository) must be deployed, whose `languageinit.js`
    registers a `LOCALE_CONFIG` function that loads this project's own dictionary
    (`FormView.LanguageUtils.loadLang(lang, <this project's dictionary URL>)`), together with the
-   dictionary file itself - the runtime ships dictionaries for only ten languages.
+   dictionary file itself. Check which dictionaries are included with your installed runtime
+   rather than assuming a fixed set across versions.
 
-Doing only one half reproduces the "still renders in the original language" or "404 on locale
-resources" symptom. AEM's locale resolution also has a defined fallback order - full locale to
-bare language code to the form's authoring-language dictionary - so adding, removing, or
-reordering `supportedLocales` entries changes which dictionary *every* related locale variant
-resolves to, not just the one being added. This is what produces the second symptom, where an
-unrelated locale starts behaving differently after an edit meant only to add a new one.
+The form's authored labels use the separate [form translation workflow](/help/forms/supporting-new-language-localization-core-components.md#preview-an-adaptive-form-with-newly-added-locale). Loading a runtime dictionary alone does not establish that all labels or date, number, and currency formats are localized.
+
+If existing locale variants behave differently after a configuration change, compare requested and returned model languages, `supportedLocales` values, and dictionary paths before and after the change. The checks described here do not establish an exact fallback sequence or that reordering the array causes every related variant to change.
+
+>[!NOTE]
+>
+>On a local Cloud Service SDK with Forms 2026.10.6.04 and Core Components 3.0.172, requesting `ar-ae` returned `lang=en` before registration and `lang=ar-ae` after registration. The project dictionary returned HTTP 200 and supplied a translated required-field message even though the built-in `ar-ae.json` request returned HTTP 404. This verified dictionary loading and that validation message only, not complete label or date, number, and currency localization, or hosted Cloud Service delivery through Dispatcher and CDN.
 
 ## Resolution
 
-1. Add the new locale's code to `supportedLocales` in `Guide Localization Service.cfg.json`
+1. [Add the new locale's code to the Guide Localization Service](/help/forms/supporting-new-language-localization-core-components.md#add-the-new-locale-to-the-guide-localization-service) in `supportedLocales` in `Guide Localization Service.cfg.json`
    (correct ISO 639-1 code, plus country code for regional variants), keeping the file valid
-   JSON.
+   JSON. Merge the locale into the existing list and preserve its other values.
 1. Clone `aem-core-forms-components` from GitHub and copy its `clientlib-it-custom-locale`
    sample client library into the project's own `ui.apps` clientlibs, renamed/re-categorized for
    the project and locale.
-1. Update the `aemLangUrl` path inside the copied `languageinit.js`'s `LOCALE_CONFIG` function to
+1. Follow [Integrate the sample client library](/help/forms/supporting-new-language-localization-core-components.md#integrate-the-sample-client-library) to update the `aemLangUrl` path inside the copied `languageinit.js`'s `LOCALE_CONFIG` function to
    the project's own deployed dictionary (the client library needs `allowProxy` so
-   `/etc.clientlibs` serves it), add that dictionary with every key of the runtime's `en.json`
-   translated, and add the locale to `/etc/languages` as Adobe's guide describes.
-1. Deploy through the pipeline and validate by requesting the form with `afAcceptLang` set to
-   the new locale code (or the `[locale]` URL selector): the network panel should show the request
-   for the project's dictionary - and re-check any existing, closely related locale to confirm its
-   fallback behavior did not change.
+   `/etc.clientlibs` serves it). Ensure the callback returns or awaits `FormView.LanguageUtils.loadLang` so language initialization waits for the dictionary.
+
+   [Create the locale dictionary](/help/forms/supporting-new-language-localization-core-components.md#create-a-file-for-your-new-locale) with every key of your installed runtime's `en.json` translated, preserving its structure and substitution placeholders. Follow [Add locale support to the dictionary](/help/forms/supporting-new-language-localization-core-components.md#add-locale-support-to-the-dictionary) for any required `/etc/languages` configuration, preserving existing values.
+1. [Deploy the locale through your project's pipeline](/help/forms/supporting-new-language-localization-core-components.md#deploy-the-newly-created-locale-to-your-aem-environment) and request the form with `afAcceptLang` set to the new locale code (or the `[locale]` URL selector).
+
+   Confirm that the model returns the intended `lang`, the custom locale callback runs, and the project's dictionary request returns HTTP 200 with the expected JSON. For a project dictionary 404, check the exact deployed path; a built-in dictionary 404 alone does not prove that the project request failed.
+
+   Wait for language initialization to complete, then trigger required-field validation and check the rendered message. Re-check existing, closely related locales to identify regressions rather than assuming their fallback behavior.
 
 ## Code samples
 
 The following examples use the same paths and category as the downloadable project source. Replace `myproject` with your application ID. Merge the configuration into your existing project rather than replacing its supported locales.
+
+The translated JSON snippet is illustrative, not a complete deployable dictionary. Before deployment, translate the full template, reconcile its keys and structure with your installed runtime, and preserve substitution placeholders.
 
 >[!BEGINTABS]
 
