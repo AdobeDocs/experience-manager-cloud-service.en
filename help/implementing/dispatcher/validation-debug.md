@@ -88,7 +88,7 @@ You can have one or more of these files. They contain `<VirtualHost>` entries th
 
 >[!NOTE]
 >
->In flexible mode, you should use relative paths instead of absolute paths.
+>In flexible mode, use relative paths instead of absolute paths.
 
 Ensure that at least one virtual host is always available that matches ServerAlias `\*.local`, `localhost`, and `127.0.0.1` which are needed for the Dispatcher invalidation. The server aliases `*.adobeaemcloud.net` and `*.adobeaemcloud.com` are also required in at least one vhost configuration and are needed for internal Adobe processes. 
 
@@ -131,7 +131,7 @@ mklink wknd.vhost ..\available_vhosts\wknd.vhost
 
 >[!NOTE]
 >
-> When working with symbolic links under Windows, you should be running in an elevated command prompt, in the Windows Subsystem for Linux or have the [Create symbolic links](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) privilege assigned.
+> When working with symbolic links on Windows, run in an elevated command prompt, use the Windows Subsystem for Linux, or assign the [Create symbolic links](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) privilege.
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -169,7 +169,7 @@ mklink wknd.farm ..\available_farms\wknd.farm
 
 >[!NOTE]
 >
-> When working with symbolic links under Windows, you should be running in an elevated command prompt, in the Windows Subsystem for Linux or have the [Create symbolic links](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) privilege assigned.
+> When working with symbolic links on Windows, run in an elevated command prompt, use the Windows Subsystem for Linux, or assign the [Create symbolic links](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) privilege.
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -185,17 +185,21 @@ The file is included from inside your `.farm` files. It has a set of rules that 
 
 * `conf.dispatcher.d/virtualhosts/virtualhosts.any`
 
-The file is included from inside your `.farm` files. It has a list of host names or URI paths to be matched by glob matching. This matching determines what backend to use to serve a request.
+The file is included from inside your `.farm` files. It has a list of host names or URI paths that glob matching matches. This matching determines what backend to use to serve a request.
 
 * `opt-in/USE_SOURCES_DIRECTLY`
 
 This file enables a more flexible Dispatcher configuration and removes previous limitations around the number and size of files. It also causes the SDK and runtime to validate and deploy the configuration in an improved way.
 
-The above files reference the immutable configuration files listed below. Changes to the immutable files are not processed by Dispatchers in Cloud environments.
+>[!NOTE]
+>
+>If you deploy your Dispatcher configuration with a Web Tier Config pipeline in Cloud Manager, set **Code Location** to the folder that contains the `opt-in` directory. For projects generated from the AEM Project Archetype, this folder is `/dispatcher/src`. If **Code Location** is `/`, the build fails with the error `Opt-in file //opt-in/USE_SOURCES_DIRECTLY is not present`. See [Add a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment) and [Add a non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment).
+
+The above files reference the immutable configuration files listed below. Dispatchers in Cloud environments do not process changes to the immutable files.
 
 **Immutable Configuration Files**
 
-These files are part of the base framework and enforce standards and best practices. The files are considered immutable because modifying or deleting them locally has no impact on your deployment, because they do not get transferred to your Cloud instance.
+These files are part of the base framework and enforce standards and established procedures. The files are considered immutable because modifying or deleting them locally has no impact on your deployment, because they do not get transferred to your Cloud instance.
 
 It is recommended that the above files reference the immutable files listed below, followed by any additional statements or overrides. When Dispatcher configuration is deployed to a cloud environment, the latest version of the immutable files is used, regardless of what version was used in local development.
 
@@ -220,7 +224,7 @@ Contains a sample Dispatcher farm. For your own farm, create a copy of this file
 
 * `conf.dispatcher.d/cache/default_invalidate.any`
 
-Part of the base framework, gets generated on startup. You are **required** to include this file in every farm you define, in the `cache/allowedClients` section.
+Part of the base framework, gets generated on startup. You are **required** to include this file in the `cache/allowedClients` section of every farm you define.
 
 * `conf.dispatcher.d/cache/default_rules.any`
 
@@ -240,7 +244,7 @@ Default filters suitable for a standard project. If you need customization, modi
 
 * `conf.dispatcher.d/renders/default_renders.any`
 
-Part of base framework, this file gets generated on startup. You are **required** to include this file in every farm you define, in the `renders` section.
+Part of base framework, this file gets generated on startup. You are **required** to include this file in the `renders` section of every farm you define.
 
 * `conf.dispatcher.d/virtualhosts/default_virtualhosts.any`
 
@@ -297,8 +301,8 @@ Phase 3 finished
 The script has the following three phases:
 
 1. It runs the validator. If the configuration is not valid, the script fails.
-2. It executes the `httpd -t` command to test if the syntax is correct such that Apache httpd can start. If successful, the configuration should be ready for deployment.
-3. Checks that the subset of the Dispatcher SDK configuration files, which are intended to be immutable as described in the [File structure section](##flexible-mode-file-structure), has not been modified and match the current SDK version.
+2. It executes the `httpd -t` command to test if the syntax is correct such that Apache httpd can start. If successful, the configuration is ready for deployment.
+3. Checks that the subset of the Dispatcher SDK configuration files has not been modified and matches the current SDK version. These files are intended to be immutable as described in the [File structure section](##flexible-mode-file-structure).
 
 During a Cloud Manager deployment, the `httpd -t` syntax check is run as well and any errors are included in the Cloud Manager `Build Images step failure` log.
 
@@ -310,8 +314,8 @@ During a Cloud Manager deployment, the `httpd -t` syntax check is run as well an
 
 If a directive is not allowlisted, the tool logs an error and returns a non-zero exit code. Also, it further scans all files with pattern `conf.dispatcher.d/enabled_farms/*.farm` and checks that:
 
-* No filter rule exists that uses allows via `/glob` (see [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957)) for more details.
-* No admin feature is exposed. For example, access to paths such as `/crx/de or /system/console`. 
+* No filter rule exists that uses allowlists via `/glob` (see [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/cve-2016-0957)) for more details.
+* No admin feature is exposed. For example, access to paths such as `/crx/de` or `/system/console`. 
 
 The validation tool reports only the prohibited use of Apache directives that have not been allowlisted. It does not report syntactical or semantic problems with your Apache configuration, as this information is only available to Apache modules in a running environment.
 
@@ -319,12 +323,12 @@ Presented below are troubleshooting techniques for debugging common validation e
 
 **Unable to locate a `conf.dispatcher.d` subfolder in the archive**
 
-Your archive should contain folders `conf.d` and `conf.dispatcher.d`. Note, that you should **not**
+Your archive should contain folders `conf.d` and `conf.dispatcher.d`. Do **not**
 use the prefix `etc/httpd` in your archive.
 
 **Unable to find any farm in `conf.dispatcher.d/enabled_farms`**
 
-Your enabled farms should be in the mentioned subfolder.
+Your enabled farms are in the mentioned subfolder.
 
 **File included (...) must be named: ...**
 
@@ -361,8 +365,7 @@ Alternatively, you can include the **default** version of those files, whose nam
 
 **Include statement at (...), outside any known location: ...**
 
-Apart from the six sections mentioned in the paragraphs above, you are not allowed
-to use the `$include` statement, for example, the following would generate this error:
+Apart from the six sections mentioned in the paragraphs above, you are forbidden to use the `$include` statement; for example, the following generates this error:
 
 ```
 /invalidate {
@@ -418,8 +421,7 @@ Note, that there is no default version of the variables files.
 **Deprecated configuration layout detected, enabling compatibility mode**
 
 This message indicates that your configuration has the deprecated version 1 layout, containing a complete
-Apache configuration and files with `ams_` prefixes. While this configuration is still supported for backwards
-compatibility, you should switch to the new layout.
+Apache configuration and files with `ams_` prefixes. While this configuration is still supported for backwards compatibility, switch to the new layout.
 
 The first phase can also be **run separately**, rather than from the wrapper `validate.sh` script.
 
@@ -460,7 +462,7 @@ During a Cloud Manager deployment, the `httpd -t` syntax check is also run and a
 
 ### Phase 3 {#third-phase}
 
-If there is a failure in this phase, it implies that Adobe has changed one or more immutable files. In such case, you must replace the corresponding immutable files with the new version delivered in the `src` directory of the SDK. The log sample bellow illustrates this issue:
+If there is a failure in this phase, it implies that Adobe has changed one or more immutable files. In such case, you must replace the corresponding immutable files with the new version delivered in the `src` directory of the SDK. The following log sample illustrates this issue:
 
 ```
 
@@ -476,7 +478,7 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 "x-requested-with"
 "If-Modified-Since"
 -"Authorization"
-** error: immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has been changed!
+error: immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has been changed!
   
 ```
 
@@ -496,7 +498,7 @@ Log levels for those modules are defined by the variables `DISP_LOG_LEVEL` and `
 
 ```
 
-# Log level for the dispatcher
+# Log level for the Dispatcher
 #
 # Possible values are: error, warn, info, debug and trace1
 # Default value: warn
@@ -508,7 +510,7 @@ Log levels for those modules are defined by the variables `DISP_LOG_LEVEL` and `
 # Possible values are: error, warn, info, debug and trace1 - trace8
 # Default value: warn
 #
-# To debug your RewriteRules, it is recommended to raise your log
+# To debug your RewriteRules, it is recommended to increase your log
 # level to trace2.
 #
 # More information can be found at:
@@ -553,7 +555,7 @@ Running script /docker_entrypoint.d/60-check-loglevel.sh
 Running script /docker_entrypoint.d/70-check-forwarded-host-secret.sh
 Running script /docker_entrypoint.d/80-frontend-domain.sh
 Running script /docker_entrypoint.d/zzz-import-sdk-config.sh
-WARN Mon Jul  4 09:53:54 UTC 2022: Pseudo symlink conf.d seems to point to a non-existing file!
+WARN Mon Jul  4 09:53:54 UTC 2022: Pseudo symlink conf.d points to a non-existing file!
 INFO Mon Jul  4 09:53:55 UTC 2022: Copied customer configuration to /etc/httpd.
 INFO Mon Jul  4 09:53:55 UTC 2022: Start testing
 Cloud manager validator 2.0.43

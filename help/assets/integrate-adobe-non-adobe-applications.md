@@ -22,10 +22,11 @@ Content Advisor brings intelligent, context-aware discovery directly into the au
 
 Adobe Experience Manager (AEM) Assets also integrates natively with Adobe Express, allowing you to discover, access, and use assets from AEM Assets directly within the Express interface using Content Advisor. For more information, see [Use Content Advisor to access AEM Assets in Adobe Express](/help/assets/native-integration-adobe-express.md).
 
-
 ## Prerequisites {#prerequisites}
 
 * Access to an AEM Assets as a Cloud Service environment.
+
+* You must be a Collaborator user, Power user, or Administrator to access Content Advisor. Limited users cannot access Content Advisor. See [Available user types and privileges](/help/assets/assets-ultimate-overview.md#available-user-types).
 
 * Access to an AEM Sites environment with authored Content Fragments (required only for working with Content Fragments). This is not required for accessing binary assets or AEM Assets.
 
