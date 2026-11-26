@@ -379,7 +379,7 @@ A container component type allows the grouping of components including multifiel
 
 #### Content Fragment {#content-fragment}
 
-The Content Fragment picker can be used to select a [Content Fragment](/help/sites-cloud/authoring/fragments/content-fragments.md) and its variations (if required) or create a new Content Fragment. If you create a new Content Fragment, only [Content Fragment models](/help/assets/content-fragments/content-fragments-models.md) marked as **Allow fragment creation** are available. The picker offers additional configurations.
+The Content Fragment picker can be used to select a [Content Fragment](/help/sites-cloud/administering/content-fragments/overview.md) and its variations (if required) or create a new Content Fragment. If you create a new Content Fragment, only [Content Fragment models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) marked as **Allow fragment creation** are available. The picker offers additional configurations.
 
 |Configuration|Value Type|Description|Required|
 |---|---|---|---|

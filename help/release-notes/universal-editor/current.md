@@ -31,6 +31,7 @@ These are the release notes for the 26 November 2026 release of the Universal Ed
 
 ## What's New {#what-is-new}
 
+* Authors can now [create a Content Fragment directly from the picker.](/help/implementing/universal-editor/field-types.md#content-fragment)
 * Authors can open a referenced page or Experience Fragment in its own editor using the reference field’s **Open** button.
   * Experience Fragments open the selected variation otherwise the main variation is opened if no variation is selected.
 * Remote asset URLs with query parameters are now kept intact in AEM as a Cloud Service and AEM 6.5 output.
