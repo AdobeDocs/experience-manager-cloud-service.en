@@ -41,4 +41,3 @@ These are the release notes for the 26 November 2026 release of the Universal Ed
 
 ## Other Improvements {#other-improvements}
 
-* 
