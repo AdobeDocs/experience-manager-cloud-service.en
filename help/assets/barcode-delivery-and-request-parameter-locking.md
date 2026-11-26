@@ -73,6 +73,7 @@ To use the default barcode type, specify only the barcode value:
 ```http
 barcode=DEMO123
 ```
+
 The supported barcode types are:
 
 * `code128`
