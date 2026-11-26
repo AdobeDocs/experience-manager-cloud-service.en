@@ -55,13 +55,13 @@ Both approaches are explored in the following sections.
 
 ### Automatically Creating a Translation Project Based on Content Path {#automatically-creating}
 
-For content owners who are also responsible for translation, it is often easier to have AEM automatically create the translation project automatically. To have AEM automatically create a translation project based on your content path:
+For content owners who are also responsible for translation, AEM can create a translation project based on the source content path. Select the source language root page in the **Sites** console, then use the **References** panel to create the translation project:
 
-1. Navigate to **Navigation** &gt; **Sites** and select your project.
-1. Locate the language root of your project. For example, if you language root is English, `/content/<your-project>/en`.
-   * Before the first translation that the other language folders are empty placeholders. These are normally created by the content architect.
-1. Locate the language root of your project.
-1. Select the rail selector and show the **References** panel.
+1. Navigate to **Navigation** &gt; **Sites** and open your site.
+1. Locate the language root page for the source language. For example, if the source language is English, the path might be `/content/<your-site>/en`.
+   * Before the first translation, the target language folders are empty placeholders. These are normally created by the content architect.
+1. Select the source language root page using its selection checkbox.
+1. Open the [side panel selector](/help/sites-cloud/authoring/sites-console/console-side-panel.md) at the upper left of the **Sites** console and select **References**.
 1. Select **Language Copies**.
 1. Check the **Language Copies** checkbox.
 1. Expand the section **Update Language Copies** at the bottom of the references panel.

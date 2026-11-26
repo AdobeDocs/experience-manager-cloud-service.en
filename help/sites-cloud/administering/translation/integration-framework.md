@@ -87,7 +87,7 @@ The **Sites** tab controls how the translation of page content is performed.
 |Translate Tags|This option enables translating tags that are associated with the page.|
 |Translate Page Assets|This property defines how to translate assets that are added to components from the file system or referenced from assets:<br>- Do not translate: Page assets are not translated.<br>- Using sites translation workflow: Assets are handled according to the configuration properties on the **Sites** tab.<br>- Using assets translation workflow: Assets are handled according to the properties configured on the **Assets** tab.|
 |Auto-Execute Translation|Enable this property to execute translation jobs automatically after translation projects are created. You do not have an opportunity to review and scope the translation job when you select this option.|
-|Disable Update-Only Translation|When this option is checked, updating the translation project submits all translatable fields for translation, not just the ones changed since last translation.|
+|Disable Update-Only Translation|When this option is selected, updating the translation project submits all translatable resources, rather than only resources changed since the last translation. AEM determines changes at the resource level, not for individual properties within a resource. Reuse of previously translated text is handled by the translation provider, depending on its translation-memory capabilities and configuration. |
 
 ### Assets Configuration Properties {#assets-configuration-properties}
 
@@ -104,7 +104,7 @@ Assets properties control how to configure assets. For more information about tr
 |Translate Metadata|Activate this property so you can translate asset metadata.|
 |Translate Tags|Activate this property so you can translate tags that are associated with the asset.|
 |Auto-Execute Translation|Select this property so you can run translation jobs automatically after translation projects are created. You do not have an opportunity to review or scope the translation job when you select this option.|
-|Disable Update-Only Translation|When this option is checked, updating the translation project submits all translatable fields for translation, not just the ones changed since last translation.|
+|Disable Update-Only Translation|When this option is selected, updating the translation project submits all translatable resources, rather than only resources changed since the last translation. AEM determines changes at the resource level, not for individual properties within a resource. Reuse of previously translated text is handled by the translation provider, depending on its translation-memory capabilities and configuration.|
 |Enable Content Model Fields for Translation|Enabling this option uses the **Translatable** field on [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) to determine if the field is translated and automatically creates [translation rules](rules.md) accordingly. This option supersedes any translation rules that you may have created.|
 
 ## Configuring Pages for Translation {#configuring-pages-for-translation}
