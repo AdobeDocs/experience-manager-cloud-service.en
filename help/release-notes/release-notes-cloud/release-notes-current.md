@@ -357,7 +357,7 @@ Create and refine customer communications such as account statements, renewal no
 
 For details, see [Interactive Communications agentic capabilities](/help/ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/interactive-communication-use-cases.md).
 
-![Interactive Communication Editor showing a service introduction added to a communication through a natural-language request in the Coworker chat panel](../../ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/assets/coworker-ic-content-editing.png)
+![SecurBank Service Record in the IC Editor, with Service introduction heading and text added through Coworker](../../ai-in-aem/agentic-capabilities/brand-experience/experience-production/forms/assets/coworker-ic-content-editing.png)
 
 #### Exclude file attachments from the Submission PDF {#exclude-attachments-submission-pdf}
 
