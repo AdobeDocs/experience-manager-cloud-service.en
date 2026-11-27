@@ -312,7 +312,7 @@ Depending on the field definition in the Content Fragment Model you can add a si
 * add additional entries with both the **Add entry** and **Select existing** actions
 
   * **Select existing** opens the Fragment Advisor directly
-  * **Add entry** allows you to directly enter a path to the fragment, to open the Fragment Advisor via **Browse content**, or to **Create Content Fragment** and reference the new fragment
+  * **Add entry** allows you to directly enter a path to the fragment, to open the Fragment Advisor via **Browse content**, or to **[Create Content Fragment](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)** and reference the new fragment
 
   The Fragment Advisor allows you to browse and select a Content Fragment:
 
