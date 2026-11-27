@@ -13,7 +13,7 @@ Use these capabilities for documents such as account statements, renewal notices
 
 >[!NOTE]
 >
->Have a question or a use case you'd like to discuss? For help understanding or using Interactive Communications in Coworker, or to share feedback, email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
+>Need help with Interactive Communications in Coworker? Email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) to ask questions, discuss a use case, or share feedback.
 
 
 ## Prerequisites {#prerequisites-ic}
