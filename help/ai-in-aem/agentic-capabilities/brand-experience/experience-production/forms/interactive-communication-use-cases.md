@@ -7,11 +7,13 @@ role: User, Developer
 
 # Interactive Communications agentic capabilities {#ic-agentic-capabilities}
 
-Interactive Communications agentic capabilities in Adobe Experience Manager (AEM) Forms let you create and edit [Interactive Communications (IC)](/help/forms/interactive-communication/introduction.md) through natural-language requests in Adobe CX Enterprise Coworker. Instead of configuring each component manually, you describe the content or change you need, review any proposed content choices, and inspect the resulting communication.
+Create and update [Interactive Communications (IC)](/help/forms/interactive-communication/introduction.md) in Adobe Experience Manager (AEM) Forms by telling Adobe CX Enterprise Coworker what you need in plain language, then refine the result through conversation. Start from a description, an approved brief, an enabled template, a PDF, or an image. Request bulk changes or insert sections between existing panels, then review and save the result in the IC Editor.
 
 Use these capabilities for documents such as account statements, renewal notices, and service records. For example, you can add a maintenance log to an existing service record and bind its fields to an attached data model. This article focuses on the print, or Document of Record, channel, rather than the data-collection forms covered in [Forms agentic capabilities](forms-use-cases.md).
 
-Create a new communication or open an existing one to update its content. The sections below explain how to start each task, with sample prompts and limitations.
+>[!NOTE]
+>
+>Have a question or a use case you'd like to discuss? For help understanding or using Interactive Communications in Coworker, or to share feedback, email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
 
 >[!IMPORTANT]
 >
