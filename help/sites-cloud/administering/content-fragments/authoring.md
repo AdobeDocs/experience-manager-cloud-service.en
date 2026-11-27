@@ -314,6 +314,8 @@ Depending on the field definition in the Content Fragment Model you can add a si
   * **Select existing** opens the Fragment Advisor directly
   * **Add entry** allows you to directly enter a path to the fragment, or to open the Fragment Advisor via **Browse content**
 
+  The Fragment Advisor allows you to browse and select a Content Fragment:
+
   ![Content Fragment Editor - Fragment Advisor](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-fragment-reference-advisor.png)
 
   >[!NOTE]
