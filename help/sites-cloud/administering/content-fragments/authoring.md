@@ -302,6 +302,8 @@ For example, a scenario where the variation content had been completely rewritte
 * create a reference to an existing Content Fragment
 * create a Content Fragment, and then reference it
 
+#### Add a Fragment Reference {#add-a-fragment-reference}
+
 Depending on the field definition in the Content Fragment Model you can add a single, or multiple (a predefined number) references:
 
 ![Content Fragment Editor - Add Fragment Reference options](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-fragment-references.png)
@@ -311,6 +313,8 @@ Depending on the field definition in the Content Fragment Model you can add a si
 
   * **Select existing** opens the Fragment Advisor directly
   * **Add entry** allows you to directly enter a path to the fragment, or to open the Fragment Advisor via **Browse content**
+
+  ![Content Fragment Editor - Fragment Advisor](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-fragment-reference-advisor.png)
 
   >[!NOTE]
   >
