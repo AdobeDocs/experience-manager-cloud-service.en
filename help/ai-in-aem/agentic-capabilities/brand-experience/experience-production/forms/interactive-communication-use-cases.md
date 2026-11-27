@@ -15,9 +15,6 @@ Use these capabilities for documents such as account statements, renewal notices
 >
 >Have a question or a use case you'd like to discuss? For help understanding or using Interactive Communications in Coworker, or to share feedback, email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
 
->[!IMPORTANT]
->
->See also [Adobe Experience Cloud Generative AI User Guidelines.](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
 ## Prerequisites {#prerequisites-ic}
 
@@ -29,6 +26,7 @@ To use these capabilities, you need:
 * A form data model containing the required fields for data-binding requests. See [Configure data binding](/help/forms/interactive-communication/configure-data-binding.md).
 
 For general environment setup, see [Onboard to AEM Forms as a Cloud Service](/help/forms/setup-forms-cloud-service.md).
+
 
 ## Skills {#skills-ic}
 
@@ -100,14 +98,16 @@ You do not need to open an existing IC to create one. Review reconstructed text 
 
 Sample prompts:
 
-* **Start empty:** Create a separate new Interactive Communication named service-record with the title Service Record.
+* **Start empty:** Create a new IC named securbank-service-record, titled SecurBank Service Record, in the securbank folder. Use the default template.
 * **Discover templates:** Which enabled Interactive Communication templates are available on my AEM environment?
 * **Use a named template:** Create a separate new IC titled Quarterly Statement from the Quarterly Statement template.
 * **Use a brief:** Create a separate new service record with a heading Service details and blank fields labeled Equipment name, Technician, and Inspection date. Leave all values empty.
 
 If a named template is unavailable, Coworker offers available alternatives rather than silently substituting one. For background on template authoring, see [Create an Interactive Communication template](/help/forms/interactive-communication/create-interactive-communication-template.md).
 
-![Coworker confirms a new Service Record IC and offers Open in editor.](assets/coworker-ic-creation.png)
+After creation, open the IC in the editor to review and refine it. The SecurBank example below includes subsequent branding and content edits.
+
+![Created SecurBank Service Record open in the IC Editor after adding branding and content.](assets/coworker-ic-creation.png)
 
 ### Build an IC from an image or PDF {#build-from-source-ic}
 
@@ -118,14 +118,14 @@ To start from a template, ask Coworker to create a new IC from an enabled templa
 Sample prompts:
 
 * **Create a communication:** Create a separate new IC from the attached PDF.
-* **Add missing content:** Use the attached image to add only the missing Service details section to the open IC. Preserve all existing content and formatting.
+* **Add missing content:** Add only Service details from this image below the header. Keep Technician and Inspection date blank; shift lower panels and preserve existing content.
 * **Limit the scope:** Update only the service introduction to match the attached PDF. Leave the equipment details and the rest of the communication unchanged.
 * **Use a template with an image:** In this IC created from the Service Record template, add only the missing Service details section from the attached image. Preserve the existing content, template headers and footers, and content and layout locks.
 * **Use a template with a PDF:** In this IC created from the Service Record template, update only the editable body content of Service details to match the attached PDF. Preserve the template headers, footers, and locked content. Do not modify the source template.
 
 Image and PDF workflows depend on usable source extraction. Review reconstructed text, component types, tables, and pagination; these examples do not promise an exact visual replica.
 
-![Service details reconstructed from an image, with blank Technician and Inspection date fields.](assets/coworker-ic-source-reconstruction.png)
+![SecurBank Service details reconstructed from an image, with blank Technician and Inspection date fields.](assets/coworker-ic-source-reconstruction.png)
 
 ### Inspect the current communication {#inspect-communication-ic}
 
@@ -133,11 +133,11 @@ Ask about the open document before planning an edit. Coworker can inspect its st
 
 Sample prompts:
 
-* What sections and fields are in this communication?
+* In the open IC, summarize section order, input fields and table size in three bullets. No IDs or measurements.
 * Which parts of this document are locked?
 * Which equipment detail fields already have data bindings?
 
-![Coworker lists sections, fields, and a five-column table with six blank rows in the open IC.](assets/coworker-ic-inspection.png)
+![Coworker lists SecurBank sections, five input fields, and a table with five columns and six blank body rows.](assets/coworker-ic-inspection.png)
 
 ### Add or edit document content {#edit-content-ic}
 
@@ -145,7 +145,8 @@ Add headings, fixed text, entry fields, choices, and grouped sections, or update
 
 Sample prompts:
 
-* Add a Maintenance summary section below Equipment details with blank fields for Technician, Work order code, and Inspection date.
+* **Add text:** Add this text above Equipment details: Use this record to document equipment maintenance. Preserve existing content.
+* **Add its heading:** Add a 12 pt bold charcoal (#171C28) heading Service introduction above that sentence. Keep the sentence and other content unchanged.
 * **Rename a field:** Rename the Equipment name field label to Machine name. Keep its value and data binding unchanged.
 * Add a Service window choice with Morning, Afternoon, and Overnight as the only options. Allow one choice and leave it unanswered.
 * Add a blank Signature field and a blank Date field below the approved declaration. Do not prefill either field.
@@ -155,7 +156,7 @@ Sample prompts:
 
 Deletion and changes to template-owned content remain subject to editor protections. If any target in a bulk request is blocked or its permissions are unclear, Coworker reports the restriction rather than silently changing only the eligible fields. See [Limitations](#limitations-ic) before requesting changes to locked or referenced content.
 
-![Service introduction heading and text added above Equipment details in the IC Editor.](assets/coworker-ic-content-editing.png)
+![Service introduction heading and text added above Equipment details in the SecurBank service record.](assets/coworker-ic-content-editing.png)
 
 ### Insert content between panels {#insert-between-panels-ic}
 
@@ -165,13 +166,14 @@ In a positioned layout, Coworker shifts the sections below the insertion point t
 
 Sample prompts:
 
-* **Insert between panels:** Add a Maintenance summary panel between Equipment details and Maintenance log, with blank Technician and Inspection date fields. Shift the content below it to make room, creating a page if needed. Preserve existing content, bindings, and panel order.
+* **Insert between panels:** Insert Maintenance summary between Equipment details and Maintenance log with one blank Technician field. Match existing styling; shift lower panels and preserve content and bindings.
+* **Clear a default value:** Clear only the Technician value in Maintenance summary. Keep its label and all other content unchanged. Read back the value.
 * **Insert above an existing section:** In the positioned layout, add a Maintenance summary section above Equipment details with a blank Technician field. Shift the sections below it to make room, creating a page if needed. Preserve their content and order.
 * **Append on a new page if needed:** Add a Follow-up notes section with one blank Notes field at the end of the open IC. If the last page has no space, create the next page and place the section there.
 
-Insertion remains subject to layout and content locks. Review the affected panels and page breaks before saving. Page creation here is a Coworker authoring action, not a change to the editor's manual text-overflow settings.
+Insertion remains subject to layout and content locks. Review new field values, affected panels, and page breaks before saving. Page creation here is a Coworker authoring action, not a change to the editor's manual text-overflow settings.
 
-![Maintenance summary inserted between Equipment details and Maintenance log, with a blank Technician field.](assets/coworker-ic-panel-insertion.png)
+![Maintenance summary inserted between SecurBank Equipment details and Maintenance log, with a blank Technician field.](assets/coworker-ic-panel-insertion.png)
 
 ### Create or update a table {#edit-table-ic}
 
@@ -179,11 +181,11 @@ Describe the column order, header, number of body rows, and whether cells should
 
 Sample prompts:
 
-* Add a Maintenance log below Equipment details with columns Date, Task, Technician, Outcome, and Notes. Use a bold header and exactly six blank body rows. Do not add sample records.
+* Add Maintenance log below Equipment details: Date, Task, Technician, Outcome, Notes. Use a bold header and six blank body rows.
 * Add one blank body row at the end of Maintenance log.
 * Remove the Notes column from Maintenance log.
 
-![Maintenance log table with five columns and six blank body rows in the IC Editor.](assets/coworker-ic-table-authoring.png)
+![SecurBank Maintenance log table with five columns and six blank body rows in the IC Editor.](assets/coworker-ic-table-authoring.png)
 
 For manual table authoring, see the [Table component](/help/forms/interactive-communication/table.md).
 
@@ -193,14 +195,14 @@ Request supported changes to typography, color, spacing, and component placement
 
 Sample prompts:
 
-* Make the Service introduction heading 12 pt, bold, and dark blue (#003366). Change nothing else.
-* **Bulk update:** Set the Service introduction, Equipment details, and Maintenance summary headings to 12 pt, bold, and dark blue (#003366). Preserve all other text, styling, bindings, and positions.
+* Make the Service introduction heading 12 pt, bold, and charcoal (#171C28). Change nothing else.
+* **Bulk update:** Make Equipment details, Maintenance summary and Maintenance log bold teal (#0296A6). Keep their 12 pt size and positions; change nothing else.
 * Put the Technician and Work order code fields side by side in Maintenance summary.
 * Change only the background fill of Maintenance summary to light gray (#F0F0F0).
 
 Layout and content locks can restrict these changes. If a target is blocked or its permissions are unclear, Coworker reports the restriction rather than silently updating only eligible components. Review the rendered result, especially when text length or placement affects page flow. For inserting sections and handling the resulting shifts, see [Insert content between panels](#insert-between-panels-ic).
 
-![Coworker bulk update makes Equipment details, Maintenance summary, and Maintenance log bold and teal at 12 pt.](assets/coworker-ic-bulk-update.png)
+![Coworker bulk update makes Equipment details, Maintenance summary, and Maintenance log bold SecurBank teal at 12 pt.](assets/coworker-ic-bulk-update.png)
 
 ### Bind fields to existing data {#bind-data-ic}
 
@@ -211,7 +213,7 @@ A data model describes the available data structure; it does not supply permissi
 Sample prompts:
 
 * Show the fields available in this communication's attached data model.
-* Bind the Technician field in Service details to /serviceRecord/technician in the attached data model. Keep its value blank.
+* Bind Technician in Service details to /serviceRecord/technician from the attached model. Keep it blank; change nothing else.
 * Bind the Customer name field to the Customer name property in the attached data model.
 * Add the Customer name and Renewal date fields from the attached data model in a Customer details section. Bind each field to its corresponding model property.
 * **Build from the attached model:** In the open IC, create a Service details section using the supported nonrepeating fields in the attached serviceRecord model. Bind each field to its corresponding model property, leave values blank, and preserve existing content. Show me the proposed field list before making changes.
@@ -220,7 +222,7 @@ Coworker needs an unambiguous match to a supported model field. Repeating groups
 
 The example below uses a synthetic model with the string property `/serviceRecord/technician`, not a live customer data source.
 
-![Coworker confirms the Technician field binding to serviceRecord.technician in the attached data model.](assets/coworker-ic-data-binding.png)
+![Coworker confirms binding the blank Technician field in SecurBank Service details to /serviceRecord/technician in the attached model.](assets/coworker-ic-data-binding.png)
 
 ### Develop content through guided discovery {#guided-discovery-ic}
 
@@ -228,11 +230,11 @@ Start with a business goal when you have not decided the content. Coworker can s
 
 Sample prompts:
 
-* Help me plan a service follow-up communication. Suggest useful sections, but do not build anything until I approve the complete draft.
+* In the open IC, plan a SecurBank service follow-up. Suggest sections; wait for my approval before building.
 * Keep the agreed Maintenance summary section, but replace the proposed preference choices with a single blank Notes field. Show the revised whole plan before making changes.
 * Pause this draft. Keep our agreed content, but do not add anything to the editor yet.
 
-![Coworker presents section choices for approval before editing a service follow-up communication.](assets/coworker-ic-guided-discovery.png)
+![Coworker pauses at Follow-up Summary choices for the SecurBank service follow-up before building.](assets/coworker-ic-guided-discovery.png)
 
 ## Results {#results-ic}
 
