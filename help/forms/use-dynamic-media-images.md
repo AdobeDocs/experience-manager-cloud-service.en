@@ -26,11 +26,11 @@ This guide covers administrator configuration and authoring with Foundation Comp
 
 Before you start, check that:
 
-- Your AEM Forms as a Cloud Service environment uses Forms release **29001** or above.
-- Dynamic Media with OpenAPI capabilities is enabled in the AEM Assets environment that stores your images.
+- Your environment uses AEM Forms version **29001** or later. To check the installed version, sign in to your AEM author environment, select **[!UICONTROL Help (?)]** > **[!UICONTROL About Adobe Experience Manager]**, and check the **Adobe Experience Manager Forms** version. See [how to view your AEM version](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk#accessing-the-aem-as-a-cloud-service-sdk).
+- Dynamic Media with OpenAPI capabilities is enabled in the source AEM Assets environment. In Cloud Manager, open the Assets environment details and confirm that **[!UICONTROL Environment Information]** > **[!UICONTROL Dynamic Media]** shows **[!UICONTROL OpenAPI capabilities are activated]**. See [Activate Dynamic Media with OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/enable-dynamic-media-prime-and-ultimate#activate-dynamic-media-with-openapi).
 - Your team has approved the images for **Delivery**, not only for Content Hub. See [Approve assets in Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets).
-- Form authors have permission to access that AEM Assets environment.
-- The AEM Forms editor uses HTTPS.
+- Form authors have permission to access the source AEM Assets environment. To check access, sign in with your author account and confirm that you can browse and select the required approved images in the remote asset selector. See [remote Assets access requirements](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/integrate-remote-approved-assets-with-sites#pre-requisites-sites-integration).
+- The AEM Forms editor uses HTTPS. AEM as a Cloud Service uses HTTPS by default. For local development, configure HTTPS by following [Use the SSL Wizard in AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard), then open the form editor using its `https://` URL.
 
 ## Configure the integration as an administrator {#configure-the-integration-as-an-administrator}
 
