@@ -15,7 +15,7 @@ Create a new communication or open an existing one to update its content. The se
 
 >[!IMPORTANT]
 >
->Review the [Adobe Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html) before using these capabilities.
+>See also [Adobe Experience Cloud Generative AI User Guidelines.](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
 ## Prerequisites {#prerequisites-ic}
 
@@ -80,11 +80,21 @@ If a brief leaves material choices open, review the complete proposed content be
 
 ## Common use cases and sample prompts {#use-cases-prompts-ic}
 
-Use these sample prompts as starting points and replace section and field names with those in your communication. Each use-case section includes an example screenshot.
+Explore the capabilities below, then use the sample prompts as starting points. Replace section and field names with those in your communication.
 
 ### Create an Interactive Communication {#create-communication-ic}
 
-Ask Coworker to create an empty IC, use an enabled template, or build from a brief. You do not need to open an existing IC to create one from a template. A brief can specify the exact content or start a discussion about what the communication should contain. Resolve any questions about the proposed content before approving creation.
+Create a new IC from the starting material you have:
+
+| Starting point | Creation capability |
+| --- | --- |
+| Description | Describe the communication and the content you need in natural language, or start with an empty IC. |
+| Brief | Supply an approved brief with the required sections, wording, and fields. If choices remain open, review the proposed content before approving creation. |
+| Enabled template | Create an IC directly from an enabled named template. Ask Coworker which templates are available if needed. |
+| PDF | Attach an existing PDF and use its content and layout as the starting point for a new IC. |
+| Image | Attach an image of the document design to reconstruct its content in a new IC. |
+
+You do not need to open an existing IC to create one. Review reconstructed text and layout when starting from a PDF or image; see [Build an IC from an image or PDF](#build-from-source-ic) for source requirements and the template-plus-source workflow.
 
 Sample prompts:
 
@@ -145,6 +155,22 @@ Deletion and changes to template-owned content remain subject to editor protecti
 
 ![Service introduction heading and text added above Equipment details in the IC Editor.](assets/coworker-ic-content-editing.png)
 
+### Insert content between panels {#insert-between-panels-ic}
+
+Add a section between existing panels without rebuilding the communication. Identify the panels before and after the insertion point, describe the new content, and specify what must remain unchanged.
+
+In a positioned layout, Coworker shifts the sections below the insertion point to make room. The shifts cascade through subsequent sections, and Coworker creates a page if needed while preserving the existing content and order.
+
+Sample prompts:
+
+* **Insert between panels:** Add a Maintenance summary panel between Equipment details and Maintenance log, with blank Technician and Inspection date fields. Shift the content below it to make room, creating a page if needed. Preserve existing content, bindings, and panel order.
+* **Insert above an existing section:** In the positioned layout, add a Maintenance summary section above Equipment details with a blank Technician field. Shift the sections below it to make room, creating a page if needed. Preserve their content and order.
+* **Append on a new page if needed:** Add a Follow-up notes section with one blank Notes field at the end of the open IC. If the last page has no space, create the next page and place the section there.
+
+Insertion remains subject to layout and content locks. Review the affected panels and page breaks before saving. Page creation here is a Coworker authoring action, not a change to the editor's manual text-overflow settings.
+
+![Maintenance summary inserted between Equipment details and Maintenance log, with a blank Technician field.](assets/coworker-ic-panel-insertion.png)
+
 ### Create or update a table {#edit-table-ic}
 
 Describe the column order, header, number of body rows, and whether cells should display supplied content or accept input. State explicitly when rows should remain blank.
@@ -161,23 +187,18 @@ For manual table authoring, see the [Table component](/help/forms/interactive-co
 
 ### Change layout or appearance {#change-layout-ic}
 
-Request supported changes to typography, color, spacing, and component placement. Name the target and the properties to change rather than asking for an undefined brand refresh.
-
-When you insert a section above existing sections in a positioned layout, Coworker shifts the sections below it to make room. The shifts cascade through subsequent sections, and Coworker creates a page if needed.
-
-If you append a section when the last page has no space, Coworker creates the next page and places the section there. These are Coworker authoring actions, not a change to the editor's manual text-overflow settings.
+Request supported changes to typography, color, spacing, and component placement. Use **bulk update** to apply specified changes to multiple components in the open IC in one request. Name every target or define the target group precisely, and state which properties to change rather than asking for an undefined brand refresh. Bulk updates apply within one communication, not across multiple IC assets.
 
 Sample prompts:
 
 * Make the Service introduction heading 12 pt, bold, and dark blue (#003366). Change nothing else.
+* **Bulk update:** Set the Service introduction, Equipment details, and Maintenance summary headings to 12 pt, bold, and dark blue (#003366). Preserve all other text, styling, bindings, and positions.
 * Put the Technician and Work order code fields side by side in Maintenance summary.
 * Change only the background fill of Maintenance summary to light gray (#F0F0F0).
-* **Insert above existing sections:** In the positioned layout, add a Maintenance summary section above Equipment details with a blank Technician field. Shift the sections below it to make room, creating a page if needed. Preserve their content and order.
-* **Append on a new page if needed:** Add a Follow-up notes section with one blank Notes field at the end of the open IC. If the last page has no space, create the next page and place the section there.
 
-Layout and content locks can restrict these changes. Review the rendered result, especially when text length or placement affects page flow.
+Layout and content locks can restrict these changes. If a target is blocked or its permissions are unclear, Coworker reports the restriction rather than silently updating only eligible components. Review the rendered result, especially when text length or placement affects page flow. For inserting sections and handling the resulting shifts, see [Insert content between panels](#insert-between-panels-ic).
 
-![Service introduction heading styled dark blue, bold, and 12 pt in the IC Editor.](assets/coworker-ic-appearance.png)
+![Coworker bulk update makes Equipment details, Maintenance summary, and Maintenance log bold and teal at 12 pt.](assets/coworker-ic-bulk-update.png)
 
 ### Bind fields to existing data {#bind-data-ic}
 
@@ -253,26 +274,34 @@ These capabilities have the following limitations:
 
 ## FAQ {#faq-ic}
 
-These questions clarify the workflow boundaries illustrated by the sample prompts.
+These questions summarize supported authoring capabilities and the review steps needed to use them.
 
-**Can Coworker create an IC from a PDF?**
+**What can I use to create an IC?**
 
-Yes. Ask Coworker to create a new communication from the attached PDF. Requests started from the IC Editor update the open communication instead of creating a separate asset. Review reconstructed text, layout, and pagination.
+Start from a description, an approved brief, an enabled template, a PDF, or an image. You can also create an empty IC. Start creation in Coworker; requests started from the IC Editor update the open communication instead of creating a separate asset.
 
-**Does Coworker save my edits?**
+**Can I update several components in one request?**
 
-No. Coworker changes remain unsaved until you select **[!UICONTROL Save]** in the IC Editor.
+Yes. Bulk updates can change supported styles on multiple named components, rename several fields, or remove specified fields within the open IC. Identify the targets and preservation requirements. These operations do not update multiple IC assets or bypass component protections.
 
-**Can Coworker edit locked content?**
+**Can I insert a panel between existing panels?**
 
-No, not when the requested document edit is blocked by its effective protections. Coworker explains the restriction rather than changing locks or editing the source template as a workaround.
+Yes. Specify the insertion point and the new panel's content. In a positioned layout, Coworker shifts subsequent sections to make room and creates a page if needed. Review the resulting panel order and pagination before saving.
 
-**Can Coworker add conditional rules?**
+**Can Coworker create and edit tables?**
 
-No, not as executable IC rules through the current editor authoring tools. Rule and script assistance is limited to drafting and review; see [Limitations](#limitations-ic).
+Yes. Specify the columns, header, and number of body rows to create a table. You can also add a blank row or remove a column. State when cells should remain blank rather than contain sample records.
 
-**Must I decide everything first?**
+**Can Coworker use the attached data model?**
 
-No. You can begin with a business goal and review recommendations. Material content choices must be resolved and the complete proposed scope approved before Coworker builds an underspecified request.
+Yes. Coworker can bind existing fields to supported model properties or add content from nonrepeating scalar fields and simple groups in the attached model. Identify the intended fields and review their bindings; this workflow does not attach or replace the model or generate repeating tables from arrays.
+
+**Can Coworker help me plan the content?**
+
+Yes. Begin with a business goal and review suggested sections and content choices. Coworker can refine the plan with you before building. Resolve material choices and approve the complete proposed scope before editor changes begin.
+
+**How do I keep my edits?**
+
+Review the changed content and select **[!UICONTROL Save]** in the IC Editor. Coworker edits are not saved or published automatically. For restrictions on locked content, fragments, and executable rules, see [Limitations](#limitations-ic).
 
 To begin, choose the starting context in [How to access](#access-ic).
