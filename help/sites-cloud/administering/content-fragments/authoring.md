@@ -299,24 +299,32 @@ For example, a scenario where the variation content had been completely rewritte
 
 [Fragment References](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#fragment-reference) can be used to:
 
-* [create a reference to an existing Content Fragment](#create-reference-existing-content-fragment)
-* [create a Content Fragment, and then reference it](#create-reference-content-fragment)
+* create a reference to an existing Content Fragment
+* create a Content Fragment, and then reference it
 
-#### Create a reference to an existing Content Fragment {#create-reference-existing-content-fragment}
+#### Add a Fragment Reference {#add-a-fragment-reference}
 
-To create a reference to an existing Content Fragment:
+Depending on the field definition in the Content Fragment Model you can add a single, or multiple (a predefined number) references:
 
-1. Select the field.
-1. Select **Add existing fragment**. 
-1. Select your required fragment from the fragment selector.
+![Content Fragment Editor - Add Fragment Reference options](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-fragment-references.png)
 
-   >[!NOTE]
-   >
-   >You are allowed to select only one fragment at a time.
+* when the minimum requirements are not fulfilled a message is shown
+* add additional entries with both the **Add entry** and **Select existing** actions
 
-#### Create a Content Fragment, and reference {#create-reference-content-fragment}
+  * **Select existing** opens the Fragment Advisor directly
+  * **Add entry** allows you to directly enter a path to the fragment, or to open the Fragment Advisor via **Browse content**
 
-Alternatively you can [select **Create new fragment** to open the **Create** dialog](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment). Once created, this fragment will be referenced.
+  The Fragment Advisor allows you to browse and select a Content Fragment:
+
+  ![Content Fragment Editor - Fragment Advisor](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-fragment-reference-advisor.png)
+
+  >[!NOTE]
+  >
+  >You are allowed to select only one fragment at a time.
+
+* [select **Create new** to open the **Create** dialog](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment). Once created, this fragment will be referenced.
+
+* once the maximum number of references for a field is reached, the options are disabled
 
 ### Content References {#content-references}
 
@@ -356,8 +364,9 @@ In **Content Reference** fields you can:
 
 Depending on the field definition in the Content Fragment Model you can add a single, or multiple (a predefined number) references:
 
-![Content Fragment Editor - Add asset options](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-content-references.png)
+![Content Fragment Editor - Add Content Fragment options](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-content-references.png)
 
+* when the minimum requirements are not fulfilled a message is shown
 * add additional entries with both the **Add entry** and **Select existing** actions
 
   * **Select existing** opens the Content Advisor directly
