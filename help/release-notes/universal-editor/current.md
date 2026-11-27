@@ -1,6 +1,6 @@
 ---
-title: Universal Editor 2026.11.19 Release Notes
-description: These are the release notes for the 2026.11.19 release of the Universal Editor.
+title: Universal Editor 2026.11.26 Release Notes
+description: These are the release notes for the 2026.11.26 release of the Universal Editor.
 feature: Release Information
 role: Admin
 product_v2:
@@ -17,9 +17,9 @@ role_v2:
     internal-label: Admin
 ---
 
-# Universal Editor 2026.11.19 Release Notes {#release-notes}
+# Universal Editor 2026.11.26 Release Notes {#release-notes}
 
-These are the release notes for the 19 November 2026 release of the Universal Editor.
+These are the release notes for the 26 November 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -31,10 +31,15 @@ These are the release notes for the 19 November 2026 release of the Universal Ed
 
 ## What's New {#what-is-new}
 
-* Native WebMCP support was added so the editor’s tools (including new undo and redo tools) are registered through `document.modelContext` when the browser provides it, alongside the existing integration.
-* A variables dropdown is now available in the rich text editor for [inserting variables into rich text fields](/help/implementing/universal-editor/configure-rte.md#variables) for Content Fragments.
+* Authors can now [create a Content Fragment directly from the picker.](/help/implementing/universal-editor/field-types.md#content-fragment)
+* Authors can open a referenced page or Experience Fragment in its own editor using the reference field’s **Open** button.
+  * Experience Fragments open the selected variation otherwise the main variation is opened if no variation is selected.
+
 
 ## Other Improvements {#other-improvements}
 
-* The editor now clears a selection whose component no longer exists after navigating to a new page and keeps selections whose components appear in a later repaint.
-* Native AEM header buttons now stay available on pages that contain nested Experience Fragments or Content Fragments.
+* Remote asset URLs with query parameters are now kept intact in AEM as a Cloud Service and AEM 6.5 output.
+* Certain common service errors now report a clear cause instead of a 500.
+  * Replacing an object field with a text value no longer fails.
+  * Invalid connection URIs and URNs now return 400.
+  * AEM login pages and unreachable backends give descriptive errors.

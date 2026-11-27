@@ -379,17 +379,20 @@ A container component type allows the grouping of components including multifiel
 
 #### Content Fragment {#content-fragment}
 
-The Content Fragment picker can be used to select a [Content Fragment](/help/sites-cloud/authoring/fragments/content-fragments.md) and its variations (if required). It offers an additional configuration.
+The Content Fragment picker can be used to select a [Content Fragment](/help/sites-cloud/administering/content-fragments/overview.md) and its variations (if required) or create a new Content Fragment. If you create a new Content Fragment, only [Content Fragment models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) marked as **Allow fragment creation** are available. The picker offers additional configurations.
 
 |Configuration|Value Type|Description|Required|
 |---|---|---|---|
 |`variationName`|`string`|Variable name to store the selected variation. If undefined, no variation picker is displayed|No|
+|`allowFragmentCreation`|Boolean|Allows author to create a new Content Fragment from the field|No|
 
-It also offers an additional validation type.
+It also offers additional validation types.
 
 |Validation Type|Value Type|Description|Required|
 |---|---|---|---|
 |`rootPath`|`string`|Path that the content picker will open for the user to select the Content Fragment, limiting selection to that directory and subdirectories|No|
+|`allowedModels`|`[string]`|Paths of the Content Fragment models that can be selected or used to create a new Content Fragment|No|
+|`allowedModelTagIds`|`[string]`|Tag IDs that limit the Content Fragment models to those tagged with them, both when selecting a Content Fragment and in the model list of the Create Content Fragment dialog||
 
 >[!NOTE]
 >
@@ -413,7 +416,9 @@ It also offers an additional validation type.
         "valueType": "string",
         "variationName": "contentFragmentVariation",
         "validation": {
-            "rootPath": "/content/refresh"
+            "rootPath": "/content/refresh",
+            "allowedModels": ["/conf/wknd/settings/dam/cfm/models/article"],
+            "allowedModelTagIds": ["content-fragment-models:wknd"]
         }
       }
     ]
