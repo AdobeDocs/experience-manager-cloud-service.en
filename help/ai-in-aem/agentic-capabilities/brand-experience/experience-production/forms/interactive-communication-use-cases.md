@@ -27,6 +27,9 @@ To use these capabilities, you need:
 
 For general environment setup, see [Onboard to AEM Forms as a Cloud Service](/help/forms/setup-forms-cloud-service.md).
 
+>[!IMPORTANT]
+>
+>See also [Adobe Experience Cloud Generative AI User Guidelines.](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
 ## Skills {#skills-ic}
 
